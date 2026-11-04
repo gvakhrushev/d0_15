@@ -1,0 +1,1221 @@
+{
+  "schema": "d0-pr334-owner-delta-checker-replay-v2",
+  "owner_source_head": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+  "owner_source_base": "f8a1d89329e5f44a8f49118dac004d1bc46cc417",
+  "legacy_checker_replay_commit": "4cde6a71a8d4114830d3936f031fdfe485c67384",
+  "new_7er_checker_replay_commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+  "owner_changed_paths_4cde_to_e94": [
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+  ],
+  "legacy_replay_runtime": "3.13.5 (main, Jul 23 2025, 00:18:28) [Clang 20.1.4 ]",
+  "legacy_replay_packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "torch": "2.10.0"
+  },
+  "legacy_checker_count": 17,
+  "legacy_replay_aggregate": {
+    "all_exit_zero": true,
+    "all_stderr_empty": true,
+    "statuses_and_counts_match_where_recorded": true,
+    "checker_hashes_match_where_receipt_records_them": true,
+    "all_checker_code_blobs_unchanged_4cde_to_e94": true,
+    "saved_result_count": 16,
+    "checkers_without_saved_result": [
+      "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/check_source_prediction.py"
+    ],
+    "stdout_byte_matches_to_saved_results": 8
+  },
+  "legacy_replays": [
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_balanced_reflection_2026-10-29/check_balanced_reflection.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_balanced_reflection_2026-10-29/result.json",
+      "exit_code": 0,
+      "status": "PASS_CANONICAL_BALANCED_REFLECTION_SOURCE",
+      "expected_status": "PASS_CANONICAL_BALANCED_REFLECTION_SOURCE",
+      "status_matches": true,
+      "check_count": 277,
+      "expected_check_count": 277,
+      "check_count_matches": true,
+      "checker_sha256": "7dba9d6a6c14ae4f6e2fb8e060a6341c6450c4e7035dcf81a65e5efa1c58045d",
+      "owner_receipt_checker_sha256": "7dba9d6a6c14ae4f6e2fb8e060a6341c6450c4e7035dcf81a65e5efa1c58045d",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 5664,
+      "stdout_sha256": "09c87a9dbf37d8f036ededa57c334c6be07eb6342ffb9ae34a61603a4d5f2b8c",
+      "stdout_matches_saved_owner_result": false,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/check_energy_certificate.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/result.json",
+      "exit_code": 0,
+      "status": "PASS_ES_HYPERBOLIC_COEFFICIENT_AND_ENERGY_CERTIFICATE",
+      "expected_status": "PASS_ES_HYPERBOLIC_COEFFICIENT_AND_ENERGY_CERTIFICATE",
+      "status_matches": true,
+      "check_count": 99,
+      "expected_check_count": 99,
+      "check_count_matches": true,
+      "checker_sha256": "49453f9518321a836ef619711ff1091408d0af880de42eff2275f362256ad726",
+      "owner_receipt_checker_sha256": "49453f9518321a836ef619711ff1091408d0af880de42eff2275f362256ad726",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 2904,
+      "stdout_sha256": "886b4024d0815a4dcce904b199626eb0227700fab7aec7138e9d57a78ce83915",
+      "stdout_matches_saved_owner_result": true,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/check_source_prediction.py",
+      "owner_result_path": null,
+      "exit_code": 0,
+      "status": "PASS_SOURCE_ONLY_COMPACT_PREDICTION_CONTROLS",
+      "expected_status": null,
+      "status_matches": true,
+      "check_count": null,
+      "expected_check_count": null,
+      "check_count_matches": true,
+      "checker_sha256": "240880c7fc15d6e2ed0b34397b0f311324a9234f92b2a803f6af994852f6cf12",
+      "owner_receipt_checker_sha256": null,
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 10374,
+      "stdout_sha256": "1a49adbb25d066552486b437195c16bd469500ad80a7b9d2fbad63f525f90e83",
+      "stdout_matches_saved_owner_result": null,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_coherent_units_2026-10-31/check_coherent_units.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_coherent_units_2026-10-31/result.json",
+      "exit_code": 0,
+      "status": "PASS_COHERENT_CALIBRATION_SOURCE_COMPOSITION",
+      "expected_status": "PASS_COHERENT_CALIBRATION_SOURCE_COMPOSITION",
+      "status_matches": true,
+      "check_count": 71,
+      "expected_check_count": 71,
+      "check_count_matches": true,
+      "checker_sha256": "90e099bb95908fa3ae87b1923b01ae8fd808493d44631fd98822c83efa2a8885",
+      "owner_receipt_checker_sha256": "90e099bb95908fa3ae87b1923b01ae8fd808493d44631fd98822c83efa2a8885",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 3419,
+      "stdout_sha256": "3d31f24ee82f3afa1894585daad15ce0377dfe09eb4a700569037e0e9931243e",
+      "stdout_matches_saved_owner_result": false,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_final_regular_composition_review_2026-10-29/check_final_composition.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_final_regular_composition_review_2026-10-29/result.json",
+      "exit_code": 0,
+      "status": "PASS_FINAL_COMPOSITION_REVIEW",
+      "expected_status": "PASS_FINAL_COMPOSITION_REVIEW",
+      "status_matches": true,
+      "check_count": 266,
+      "expected_check_count": 266,
+      "check_count_matches": true,
+      "checker_sha256": "5b80c11842068bcb5759f778a49161463bb90a0a7a791433a9d0cda8edef451a",
+      "owner_receipt_checker_sha256": "5b80c11842068bcb5759f778a49161463bb90a0a7a791433a9d0cda8edef451a",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 5445,
+      "stdout_sha256": "d94aa503a06a756ecc33c9dcb096e11dab2a0d7159dfb78b130fb7dcba65dfca",
+      "stdout_matches_saved_owner_result": true,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/check_internal_clock.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/result.json",
+      "exit_code": 0,
+      "status": "PASS_INTERNAL_CLOCK_SOURCE_SEPARATION",
+      "expected_status": "PASS_INTERNAL_CLOCK_SOURCE_SEPARATION",
+      "status_matches": true,
+      "check_count": 48,
+      "expected_check_count": 48,
+      "check_count_matches": true,
+      "checker_sha256": "186a05078e421b301170c37effb758c83965577c0729bd03e56dee57b0cea736",
+      "owner_receipt_checker_sha256": "186a05078e421b301170c37effb758c83965577c0729bd03e56dee57b0cea736",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 3361,
+      "stdout_sha256": "76daebded2011b1a57b11ab46abccbb853f9fdffbcb7a5cc965a6b71ef58b220",
+      "stdout_matches_saved_owner_result": false,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/check_internal_reference.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/result.json",
+      "exit_code": 0,
+      "status": "PASS_SCOPED_INTERNAL_REFERENCE_AND_CROSS_CALIBRATION",
+      "expected_status": "PASS_SCOPED_INTERNAL_REFERENCE_AND_CROSS_CALIBRATION",
+      "status_matches": true,
+      "check_count": 246,
+      "expected_check_count": 246,
+      "check_count_matches": true,
+      "checker_sha256": "9b97528cbdcb5d23d2af965af076f1d81bef308a20852483ea65e51581bc071a",
+      "owner_receipt_checker_sha256": "9b97528cbdcb5d23d2af965af076f1d81bef308a20852483ea65e51581bc071a",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 9814,
+      "stdout_sha256": "a4c9f41c716892fda81a6ab98cc211724472602b5c11c949bd457d4dea8a42b9",
+      "stdout_matches_saved_owner_result": false,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_joint_source_balance_2026-10-31/check_joint_balance.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_joint_source_balance_2026-10-31/result.json",
+      "exit_code": 0,
+      "status": "CHECKED_MATRIX_STATIONARITY_AND_LOSS_OF_SHARED_FIELD_GAIN",
+      "expected_status": "CHECKED_MATRIX_STATIONARITY_AND_LOSS_OF_SHARED_FIELD_GAIN",
+      "status_matches": true,
+      "check_count": 47,
+      "expected_check_count": 47,
+      "check_count_matches": true,
+      "checker_sha256": "52ce05bb2077f99106c77d6256d1a39fe4eaa803f4d906b944b5c4fe23116ea2",
+      "owner_receipt_checker_sha256": "52ce05bb2077f99106c77d6256d1a39fe4eaa803f4d906b944b5c4fe23116ea2",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 5798,
+      "stdout_sha256": "78cde79e31064489192612e3b4cd83056caf818ec185f99ed96a98090214642e",
+      "stdout_matches_saved_owner_result": false,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/check_return_record_gate.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/result.json",
+      "exit_code": 0,
+      "status": "PASS_EXACT_ALGEBRA",
+      "expected_status": "PASS_EXACT_ALGEBRA",
+      "status_matches": true,
+      "check_count": 28,
+      "expected_check_count": 28,
+      "check_count_matches": true,
+      "checker_sha256": "a73d0cbc3ecf38b47b22c6ace9f9c44638827c9db977ba1e995a9b80f5cad1e6",
+      "owner_receipt_checker_sha256": null,
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 9510,
+      "stdout_sha256": "3d9587f897d12cb4c21c19fcbe7ec22098e363df6a87b01cc8cbf98a06ea4ef1",
+      "stdout_matches_saved_owner_result": true,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/check_native_tangent.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/result.json",
+      "exit_code": 0,
+      "status": null,
+      "expected_status": null,
+      "status_matches": true,
+      "check_count": 4692,
+      "expected_check_count": 4692,
+      "check_count_matches": true,
+      "checker_sha256": "60a58b99f1212d834a21599909ca445920dc13e53c65e623e0177a520451ff6e",
+      "owner_receipt_checker_sha256": "60a58b99f1212d834a21599909ca445920dc13e53c65e623e0177a520451ff6e",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 8215,
+      "stdout_sha256": "20b1228af0d3c0d0555643d1dc2bd6ce91f8748dfc5e4e2ce28dca74d4aaf921",
+      "stdout_matches_saved_owner_result": false,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/check_report_jet.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/result.json",
+      "exit_code": 0,
+      "status": "PASS_SCOPED_REPORT_FIRST_JET_UNIVERSALITY",
+      "expected_status": "PASS_SCOPED_REPORT_FIRST_JET_UNIVERSALITY",
+      "status_matches": true,
+      "check_count": 141,
+      "expected_check_count": 141,
+      "check_count_matches": true,
+      "checker_sha256": "2993f321773e9da4496cca3540627b2c27fb7031c19740c5eafdd122b3b3f13b",
+      "owner_receipt_checker_sha256": "2993f321773e9da4496cca3540627b2c27fb7031c19740c5eafdd122b3b3f13b",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 4927,
+      "stdout_sha256": "892c6a1a55e94137c03d12361eb599214f8ff78c8d0ce52b1c2b1d3886d4af4f",
+      "stdout_matches_saved_owner_result": false,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_einstein_pullback.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_einstein.json",
+      "exit_code": 0,
+      "status": "PASS",
+      "expected_status": "PASS",
+      "status_matches": true,
+      "check_count": 38,
+      "expected_check_count": 38,
+      "check_count_matches": true,
+      "checker_sha256": "bcba03e8bac2a7afb3fe0d481896f21e6471be64b75afdb796fb61ce43af7a58",
+      "owner_receipt_checker_sha256": null,
+      "checker_hash_matches_receipt": null,
+      "stdout_bytes": 1501,
+      "stdout_sha256": "4460ad718a37a8b81b45d168135d726e139058eb552de8896d969ac39e1be9dd",
+      "stdout_matches_saved_owner_result": true,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_fullstep_lie.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_fullstep.json",
+      "exit_code": 0,
+      "status": "PASS",
+      "expected_status": "PASS",
+      "status_matches": true,
+      "check_count": 26,
+      "expected_check_count": 26,
+      "check_count_matches": true,
+      "checker_sha256": "a70cf22d241f85789ed79733358b015e35e1727ebf3fec684be044920b763654",
+      "owner_receipt_checker_sha256": "a70cf22d241f85789ed79733358b015e35e1727ebf3fec684be044920b763654",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 2146,
+      "stdout_sha256": "d57515c54dff1d7c4fb07f2b6bf042ce8adedf08e4775868ad5bff91e082c635",
+      "stdout_matches_saved_owner_result": true,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_growing_clock.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_growing_clock.json",
+      "exit_code": 0,
+      "status": "PASS",
+      "expected_status": "PASS",
+      "status_matches": true,
+      "check_count": 41,
+      "expected_check_count": 41,
+      "check_count_matches": true,
+      "checker_sha256": "30d41b1d024d6a6c6cbfa387fd6f376d2176cfc91757043ee093a72d1ff9d2d8",
+      "owner_receipt_checker_sha256": "30d41b1d024d6a6c6cbfa387fd6f376d2176cfc91757043ee093a72d1ff9d2d8",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 3522,
+      "stdout_sha256": "17b74a79aa14919a49fe94115cb35e375ca6afd3244a34dba0ef2aa9b743863a",
+      "stdout_matches_saved_owner_result": true,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_raw_cylinder.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_raw_cylinder.json",
+      "exit_code": 0,
+      "status": "PASS",
+      "expected_status": "PASS",
+      "status_matches": true,
+      "check_count": 44,
+      "expected_check_count": 44,
+      "check_count_matches": true,
+      "checker_sha256": "afcede89aadd7e402fe6fea1fb9bc45a878f260c17e2a4499482df34d389eaf0",
+      "owner_receipt_checker_sha256": "afcede89aadd7e402fe6fea1fb9bc45a878f260c17e2a4499482df34d389eaf0",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 4331,
+      "stdout_sha256": "d25d0fd800c000cd771c39f52c9594c331b596bd1ad373d07830b28f9efb0f00",
+      "stdout_matches_saved_owner_result": true,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_source_concentration.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result.json",
+      "exit_code": 0,
+      "status": "PASS",
+      "expected_status": "PASS",
+      "status_matches": true,
+      "check_count": 63,
+      "expected_check_count": 63,
+      "check_count_matches": true,
+      "checker_sha256": "8d269db45b00d0eea235bad4423404af7c2bb5110658610a0f3381fc7a253b72",
+      "owner_receipt_checker_sha256": "8d269db45b00d0eea235bad4423404af7c2bb5110658610a0f3381fc7a253b72",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 4639,
+      "stdout_sha256": "eb77cdf1c5819296275ecc438f93620211da0aa0608a7f5a3a85704101752b7c",
+      "stdout_matches_saved_owner_result": true,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_spatial_heat_source_2026-11-03/check_spatial_source.py",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_spatial_heat_source_2026-11-03/result.json",
+      "exit_code": 0,
+      "status": "PASS_SCOPED_SPATIAL_HEAT_SOURCE_TEST",
+      "expected_status": "PASS_SCOPED_SPATIAL_HEAT_SOURCE_TEST",
+      "status_matches": true,
+      "check_count": null,
+      "expected_check_count": null,
+      "check_count_matches": true,
+      "checker_sha256": "e66f1d28cc7ab651fa0eb778cecc244ad02f9712565f47c8ec53526f93a45a97",
+      "owner_receipt_checker_sha256": "e66f1d28cc7ab651fa0eb778cecc244ad02f9712565f47c8ec53526f93a45a97",
+      "checker_hash_matches_receipt": true,
+      "stdout_bytes": 8987,
+      "stdout_sha256": "620af98854fc2fabe486e336098e91eeca8008a6d0e741b4385554846b601e70",
+      "stdout_matches_saved_owner_result": false,
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_code_unchanged_4cde_to_e94": true
+    }
+  ],
+  "latest_7er_replay": {
+    "source_head": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+    "runtime": {
+      "python": "3.12.13",
+      "owner_recorded_python": "3.12.14",
+      "numpy": "2.3.5",
+      "sympy": "1.14.0"
+    },
+    "status": "PASS",
+    "checks": 47,
+    "checker_sha256": "7a3ba5e3a80bbd1c8446d7223879db65d8b336c08411114468c406dc4fe68252",
+    "stdout_bytes": 2036,
+    "stdout_sha256": "3075896e9d6130f148f94ccd1dd3eb58b872ccff29074dafc2df50fd3e7f2430",
+    "matches_exact_embedded_owner_receipt": true,
+    "normal_and_optimized_stdout_byte_identical": true,
+    "stderr_empty": true,
+    "native_words_sha256": "79cc3cd36d6f275881b14da09ead03bd5e4c09528ca037b737a1dd4f2515945d"
+  },
+  "separate_oracle_composition_replay": {
+    "Lean_or_CI_run": false,
+    "boundaries": {
+      "exact_finite_stationarity_inferred": false,
+      "fixed_task_vs_unrestricted_X_N_identified": false,
+      "whole_physical_D0_GR_selected": false
+    },
+    "canonical_birth": {
+      "birth": "x -> x tensor (sqrt(p), p)",
+      "dimension_factor": 2,
+      "full_thermal_to_signal_ratio": "(2p)^(-K)",
+      "native_general_word_emitted": false,
+      "return_square": "p"
+    },
+    "check_names": [
+      "original Golden matrix is orthogonal",
+      "canonical raw birth is isometric on all old columns",
+      "one real birth plus one G has return sqrt(p), not unit return",
+      "old matrix unit 0,0 is retained",
+      "old matrix unit 0,1 is retained",
+      "old matrix unit 1,0 is retained",
+      "old matrix unit 1,1 is retained",
+      "2p>1 from exact Golden identity and p>0",
+      "nonzero singular old Gram accepted",
+      "old Gram and its actual derivative do not commute",
+      "actual normalized gain positive",
+      "positive weights sum to one",
+      "complete matrix derivative equals old+independent currents",
+      "derived old-history dual weight has trace one",
+      "derived dual weight remains positive with singular past",
+      "full product-domain dual norm retains independent signs",
+      "persistent current row cannot be diluted by repetition",
+      "weighted current mean has exact diagonal right inverse on all42 directions",
+      "dual l1 norm of common field covector is exactly preserved",
+      "all42 field rows recovered through the same norm-one lift",
+      "genuine relative-copy kernel has zero weighted mean",
+      "opposite independently free rows cannot pass a signed-sum test",
+      "extra repetition divisor would also delete the desired field source",
+      "Golden value enclosed by exact rational outward endpoints",
+      "actual reporter r_f has strictly positive certified lower bound",
+      "level1: true gain lower bound, no unit normalization",
+      "level1: certified off-shell weak/finite-difference error budget",
+      "level1: price interval precision uses actual gain",
+      "level1: kappa width without target-centering",
+      "off_shell level1: independent analytic limit agrees",
+      "off_shell level1: ledger projection is exact truncation",
+      "level2: true gain lower bound, no unit normalization",
+      "level2: certified off-shell weak/finite-difference error budget",
+      "level2: price interval precision uses actual gain",
+      "level2: kappa width without target-centering",
+      "off_shell level2: independent analytic limit agrees",
+      "off_shell level2: nested intervals preserve previous records",
+      "off_shell level2: ledger projection is exact truncation",
+      "level3: true gain lower bound, no unit normalization",
+      "level3: certified off-shell weak/finite-difference error budget",
+      "level3: price interval precision uses actual gain",
+      "level3: kappa width without target-centering",
+      "off_shell level3: independent analytic limit agrees",
+      "off_shell level3: nested intervals preserve previous records",
+      "off_shell level3: ledger projection is exact truncation",
+      "level4: true gain lower bound, no unit normalization",
+      "level4: certified off-shell weak/finite-difference error budget",
+      "level4: price interval precision uses actual gain",
+      "level4: kappa width without target-centering",
+      "off_shell level4: independent analytic limit agrees",
+      "off_shell level4: nested intervals preserve previous records",
+      "off_shell level4: ledger projection is exact truncation",
+      "level5: true gain lower bound, no unit normalization",
+      "level5: certified off-shell weak/finite-difference error budget",
+      "level5: price interval precision uses actual gain",
+      "level5: kappa width without target-centering",
+      "off_shell level5: independent analytic limit agrees",
+      "off_shell level5: nested intervals preserve previous records",
+      "off_shell level5: ledger projection is exact truncation",
+      "level6: true gain lower bound, no unit normalization",
+      "level6: certified off-shell weak/finite-difference error budget",
+      "level6: price interval precision uses actual gain",
+      "level6: kappa width without target-centering",
+      "off_shell level6: independent analytic limit agrees",
+      "off_shell level6: nested intervals preserve previous records",
+      "off_shell level6: ledger projection is exact truncation",
+      "level7: true gain lower bound, no unit normalization",
+      "level7: certified off-shell weak/finite-difference error budget",
+      "level7: price interval precision uses actual gain",
+      "level7: kappa width without target-centering",
+      "off_shell level7: independent analytic limit agrees",
+      "off_shell level7: nested intervals preserve previous records",
+      "off_shell level7: ledger projection is exact truncation",
+      "level8: true gain lower bound, no unit normalization",
+      "level8: certified off-shell weak/finite-difference error budget",
+      "level8: price interval precision uses actual gain",
+      "level8: kappa width without target-centering",
+      "off_shell level8: independent analytic limit agrees",
+      "off_shell level8: nested intervals preserve previous records",
+      "off_shell level8: ledger projection is exact truncation",
+      "level9: true gain lower bound, no unit normalization",
+      "level9: certified off-shell weak/finite-difference error budget",
+      "level9: price interval precision uses actual gain",
+      "level9: kappa width without target-centering",
+      "off_shell level9: independent analytic limit agrees",
+      "off_shell level9: nested intervals preserve previous records",
+      "off_shell level9: ledger projection is exact truncation",
+      "level10: true gain lower bound, no unit normalization",
+      "level10: certified off-shell weak/finite-difference error budget",
+      "level10: price interval precision uses actual gain",
+      "level10: kappa width without target-centering",
+      "off_shell level10: independent analytic limit agrees",
+      "off_shell level10: nested intervals preserve previous records",
+      "off_shell level10: ledger projection is exact truncation",
+      "level11: true gain lower bound, no unit normalization",
+      "level11: certified off-shell weak/finite-difference error budget",
+      "level11: price interval precision uses actual gain",
+      "level11: kappa width without target-centering",
+      "off_shell level11: independent analytic limit agrees",
+      "off_shell level11: nested intervals preserve previous records",
+      "off_shell level11: ledger projection is exact truncation",
+      "level12: true gain lower bound, no unit normalization",
+      "level12: certified off-shell weak/finite-difference error budget",
+      "level12: price interval precision uses actual gain",
+      "level12: kappa width without target-centering",
+      "off_shell level12: independent analytic limit agrees",
+      "off_shell level12: nested intervals preserve previous records",
+      "off_shell level12: ledger projection is exact truncation",
+      "nonzero source has finite separating witness",
+      "wrong source gain rejected by off-shell comparison",
+      "level1: true gain lower bound, no unit normalization",
+      "level1: certified off-shell weak/finite-difference error budget",
+      "level1: price interval precision uses actual gain",
+      "level1: kappa width without target-centering",
+      "structural_zero level1: independent analytic limit agrees",
+      "structural_zero level1: ledger projection is exact truncation",
+      "level2: true gain lower bound, no unit normalization",
+      "level2: certified off-shell weak/finite-difference error budget",
+      "level2: price interval precision uses actual gain",
+      "level2: kappa width without target-centering",
+      "structural_zero level2: independent analytic limit agrees",
+      "structural_zero level2: nested intervals preserve previous records",
+      "structural_zero level2: ledger projection is exact truncation",
+      "level3: true gain lower bound, no unit normalization",
+      "level3: certified off-shell weak/finite-difference error budget",
+      "level3: price interval precision uses actual gain",
+      "level3: kappa width without target-centering",
+      "structural_zero level3: independent analytic limit agrees",
+      "structural_zero level3: nested intervals preserve previous records",
+      "structural_zero level3: ledger projection is exact truncation",
+      "level4: true gain lower bound, no unit normalization",
+      "level4: certified off-shell weak/finite-difference error budget",
+      "level4: price interval precision uses actual gain",
+      "level4: kappa width without target-centering",
+      "structural_zero level4: independent analytic limit agrees",
+      "structural_zero level4: nested intervals preserve previous records",
+      "structural_zero level4: ledger projection is exact truncation",
+      "level5: true gain lower bound, no unit normalization",
+      "level5: certified off-shell weak/finite-difference error budget",
+      "level5: price interval precision uses actual gain",
+      "level5: kappa width without target-centering",
+      "structural_zero level5: independent analytic limit agrees",
+      "structural_zero level5: nested intervals preserve previous records",
+      "structural_zero level5: ledger projection is exact truncation",
+      "level6: true gain lower bound, no unit normalization",
+      "level6: certified off-shell weak/finite-difference error budget",
+      "level6: price interval precision uses actual gain",
+      "level6: kappa width without target-centering",
+      "structural_zero level6: independent analytic limit agrees",
+      "structural_zero level6: nested intervals preserve previous records",
+      "structural_zero level6: ledger projection is exact truncation",
+      "level7: true gain lower bound, no unit normalization",
+      "level7: certified off-shell weak/finite-difference error budget",
+      "level7: price interval precision uses actual gain",
+      "level7: kappa width without target-centering",
+      "structural_zero level7: independent analytic limit agrees",
+      "structural_zero level7: nested intervals preserve previous records",
+      "structural_zero level7: ledger projection is exact truncation",
+      "level8: true gain lower bound, no unit normalization",
+      "level8: certified off-shell weak/finite-difference error budget",
+      "level8: price interval precision uses actual gain",
+      "level8: kappa width without target-centering",
+      "structural_zero level8: independent analytic limit agrees",
+      "structural_zero level8: nested intervals preserve previous records",
+      "structural_zero level8: ledger projection is exact truncation",
+      "level9: true gain lower bound, no unit normalization",
+      "level9: certified off-shell weak/finite-difference error budget",
+      "level9: price interval precision uses actual gain",
+      "level9: kappa width without target-centering",
+      "structural_zero level9: independent analytic limit agrees",
+      "structural_zero level9: nested intervals preserve previous records",
+      "structural_zero level9: ledger projection is exact truncation",
+      "level10: true gain lower bound, no unit normalization",
+      "level10: certified off-shell weak/finite-difference error budget",
+      "level10: price interval precision uses actual gain",
+      "level10: kappa width without target-centering",
+      "structural_zero level10: independent analytic limit agrees",
+      "structural_zero level10: nested intervals preserve previous records",
+      "structural_zero level10: ledger projection is exact truncation",
+      "level11: true gain lower bound, no unit normalization",
+      "level11: certified off-shell weak/finite-difference error budget",
+      "level11: price interval precision uses actual gain",
+      "level11: kappa width without target-centering",
+      "structural_zero level11: independent analytic limit agrees",
+      "structural_zero level11: nested intervals preserve previous records",
+      "structural_zero level11: ledger projection is exact truncation",
+      "level12: true gain lower bound, no unit normalization",
+      "level12: certified off-shell weak/finite-difference error budget",
+      "level12: price interval precision uses actual gain",
+      "level12: kappa width without target-centering",
+      "structural_zero level12: independent analytic limit agrees",
+      "structural_zero level12: nested intervals preserve previous records",
+      "structural_zero level12: ledger projection is exact truncation",
+      "proved even fixture gives zero name, not a general zero decision",
+      "bad certificate intersection fails instead of overwriting with zero",
+      "small operator-value tolerance alone cannot kill a query source",
+      "nonzero finite residual can have exact zero limiting name"
+    ],
+    "checker_sha256": "dee4697552694f569d2b80abe4507b34dac521681eee8f0a07d926fbf814d185",
+    "complete_source": {
+      "actual_gain": "799763557460699/12138566529172182550265856",
+      "complete_dual_norm": "21939722174684/333290724767",
+      "exact_identity": true,
+      "scope": "exact structural rational source identity; eta need not equal the specific birth fixture",
+      "singular_old_Gram": true,
+      "source": "-21694222272036/333290724767",
+      "weights": [
+        "380640/1152103",
+        "387712/1152103",
+        "383751/1152103"
+      ]
+    },
+    "full_covector_retraction": {
+      "field_dual_norm_exactly_preserved": true,
+      "geometric_dimension": 42,
+      "independent_current_copies": 3,
+      "right_inverse_exact": true,
+      "unrestricted_query_rows_eliminated": false
+    },
+    "input_commit": "6e20be09b25e1d68ac19be032814ce8ab2ab7351",
+    "interval_assembly": {
+      "arithmetic": "outward dyadic rational, 256 bits, explicit log-series tails",
+      "native_GR_programme_emitted": false,
+      "prices": "full return determinant of the declared scalar reflection fixture; same-clock heat cancels by exact isospectrality",
+      "runs": [
+        {
+          "final_interval": {
+            "hi": "57896044622408169033972111414648714459211747978304950041628413987937497526547/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+            "lo": "57896044029676652752890808429459241652032033355531557293869401280565185538085/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+            "width_float": 5.118929282520125e-09
+          },
+          "first_zero_separation": 1,
+          "label": "off_shell",
+          "ledger_hashes": [
+            "6dc56dc9645994d7e216954c50ffaf3f45d26bdac1fc33cf93ae58c0a63e1344",
+            "cf0a9695caa382799d4bd06cbb8605fcd8686808596e351d66ca9e165eaf2357",
+            "cb2669fc8c4b533530dd7521df01bc31aeb5ba1801b855cfeff60da97756a5f1",
+            "c2709f84a5fbbb19233ebdc6c9c29528383b708bd2dad9b6a45d0dc3851fab57",
+            "67eeec8280f73a97af78e79b138d27ad2f10100197427a6211d03641b4b66d05",
+            "60a8b549b2ec9c85e55946bfe858399dd22c23a8a243c266419a9db5980660e2",
+            "8356750e598cb439e7ad9bdbe8b777420a01833ceb3c0fbc010a2437c341e6f4",
+            "fff2528a3eeb103428d45bdad32c15d3e8fb70103d3d80abe7ace986ce302a02",
+            "245524e90d6fb5e2b2600285e6da4e78a603ab8d89f37efa8cdeb46952643c80",
+            "ce9453bc21e54cb5583acbaa1e39f59094b78184abd8bf9142bf7c620ec37423",
+            "e91df182e8064fdd85ac04d2af5bcba94feda98eaccb3c66c5f5be4f7725ef36",
+            "39c8de1c13a371171fcadb235aef1ec0c67fab0c790d074b4e72badcdab5b3f4"
+          ],
+          "levels": [
+            {
+              "actual_gain_lower": "4147910759574601140302946270955447029111043375389125291101/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "129622211236706285634467070967357719659720105480910165347/3618502788666131106986593281521497120414687020801267626233049500247285301248",
+              "epsilon": "1/131072",
+              "k": 1,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "28948022945402318321580938304313765109492046821655423073492574199849357272953/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "57895864670306225662240812649977546634113555618421703595194132455448356426643/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 1.5650507699154561e-06
+              },
+              "proven_error_bound": "11167262834619925718894450712729634720218574481793126477061215637307939/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+              "source_comparison": {
+                "hi": "28947978276350979841878062726510914190953165947357495900986665954986808041197/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "57895954008408902621646563805583248471191317367017557940205948945173454890155/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.1972943694344905e-08
+              },
+              "t": "1/8192"
+            },
+            {
+              "actual_gain_lower": "518488844946829976523065340120163354427702205798468781713/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+              "actual_gain_upper": "2073955379787319906092261360480653417710808823193875126855/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/262144",
+              "k": 2,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "28948022945402318321580938304313765109492046821655423073492574199849357272953/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "28947975095992645636274955628279115577189581981073187577662856698717320745903/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 8.264711343901536e-07
+              },
+              "proven_error_bound": "22334521673241279241127874242702781226379010510984755239991529439131207/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "source_comparison": {
+                "hi": "7237000629775108250423224650160351445141610768417510476991894354824572333065/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+                "lo": "14473998715257159438777098378076679139985404180041849281209048345123379938555/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+                "width_float": 8.789177477737823e-08
+              },
+              "t": "1/16384"
+            },
+            {
+              "actual_gain_lower": "518488844946832393517062472423645426174162848074046177577/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "1036977689893664787034124944847290852348325696148092355157/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/524288",
+              "k": 3,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "28948022945402318321580938304313765109492046821655423073492574199849357272953/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "3618498724704518262748612245225818458578401370680844432880482023320461773409/7237005577332262213973186563042994240829374041602535252466099000494570602496",
+                "width_float": 5.725393917762923e-07
+              },
+              "proven_error_bound": "2791815084315752498274903585195175001278246876738455462993974850087305/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+              "source_comparison": {
+                "hi": "28948021319240939861392855466162409878132806183648345045791640007873089207327/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "7237000241224120841249722765355222112331804019608565604216427040615773634123/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+                "width_float": 3.5156709910951017e-07
+              },
+              "t": "1/32768"
+            },
+            {
+              "actual_gain_lower": "518488844946833602014410689619915424313591677508920302971/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "259244422473416801007205344809957712156795838754460151487/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "epsilon": "1/1048576",
+              "k": 4,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "28948022945402318321580938304313765109492046821655423073492574199849357272953/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "3618498724704518262748612245225818458578401370680844432880482023320461773409/7237005577332262213973186563042994240829374041602535252466099000494570602496",
+                "width_float": 5.725393917762923e-07
+              },
+              "proven_error_bound": "11167260212441376573373319714477157121334200779570379043005315757292877/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "7237014358596963907275276954740640599422366543130543510661780643425157734511/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+                "lo": "57895952034020059287693872458340497495149384501703749940754559446065955752277/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 1.4062683964380352e-06
+              },
+              "t": "1/65536"
+            },
+            {
+              "actual_gain_lower": "8101388202294284472862065796549729131644596094871504107/3618502788666131106986593281521497120414687020801267626233049500247285301248",
+              "actual_gain_upper": "259244422473417103131586105489591332212627075035888131427/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/2097152",
+              "k": 5,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "28948022945402318321580938304313765109492046821655423073492574199849357272953/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "3618498724704518262748612245225818458578401370680844432880482023320461773409/7237005577332262213973186563042994240829374041602535252466099000494570602496",
+                "width_float": 5.725393917762923e-07
+              },
+              "proven_error_bound": "2791815045309547491708554795795170765658679685403277313980527912340383/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "source_comparison": {
+                "hi": "28948182352269655516611251755332956384400765453494852281316622441540941714647/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "7236964170689587894059484385605924679805504232875381752335032307528358371059/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+                "width_float": 5.62507358575213e-06
+              },
+              "t": "1/131072"
+            },
+            {
+              "actual_gain_lower": "64811105618354313548446853106137418100124651925838422031/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "129622211236708627096893706212274836200249303851676844065/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/4194304",
+              "k": 6,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "28948022945402318321580938304313765109492046821655423073492574199849357272953/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "3618498724704518262748612245225818458578401370680844432880482023320461773409/7237005577332262213973186563042994240829374041602535252466099000494570602496",
+                "width_float": 5.725393917762923e-07
+              },
+              "proven_error_bound": "348976880419927219804640724458870888560726531784538253537979362835055/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+              "source_comparison": {
+                "hi": "57897344504888270112584148952202700013415726297795810817142920976004935020511/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "28947369574398919296085562007476780563696236022070936483669251370572907443033/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 2.2500294343008495e-05
+              },
+              "t": "1/262144"
+            },
+            {
+              "actual_gain_lower": "64811105618354332431222699385203556259534350979147119109/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "8101388202294291553902837423150444532441793872393389889/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+              "epsilon": "1/8388608",
+              "k": 7,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "57896044622408169033972111414648714459211747978304950041628413987937497526547/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "57896041823092983517706109585036081945267840012458796749386547997294453966995/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.417535778095395e-08
+              },
+              "proven_error_bound": "1395907521435947001911963321697474466062264530109955478780761930227487/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "14474010806625161899506277375671348190434320479010104982918233801793891824765/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+                "lo": "28948021609500252476826555748499701821371153037361663429671013389028192097241/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 6.477249606404834e-11
+              },
+              "t": "1/524288"
+            },
+            {
+              "actual_gain_lower": "32405552809177170936305396626392855874168351990005742567/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "16202776404588585468152698313196427937084175995002871285/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "epsilon": "1/16777216",
+              "k": 8,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "57896044622408169033972111414648714459211747978304950041628413987937497526547/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "57896043207750291048034464240829154411433396615329616517690708837523287967101/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 1.2217223882078788e-08
+              },
+              "proven_error_bound": "174488440171875884375544319846074144671082818544446145738077412593063/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+              "source_comparison": {
+                "hi": "57896043935704622313025985749733560181176729077118548086554971726957237256239/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "57896043905704051735538001743006433795729975299660890695475291789832938339353/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.590899842561933e-10
+              },
+              "t": "1/1048576"
+            },
+            {
+              "actual_gain_lower": "2025347050573573331040777589643408159219586386333335927/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+              "actual_gain_upper": "16202776404588586648326220717147265273756691090666687419/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/33554432",
+              "k": 9,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "57896044622408169033972111414648714459211747978304950041628413987937497526547/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "57896043860703195876923454388490018457815408533682420149449018796112823161283/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 6.578212537437961e-09
+              },
+              "proven_error_bound": "348976880339943040269958127356080291257754291151726688500890421034763/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "57896044329682358526818414653322846778513824269250021381482010711715224982925/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "28948022104840038108433247329224072906947849895718355650587853648501622098023/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 1.036359937024773e-09
+              },
+              "t": "1/2097152"
+            },
+            {
+              "actual_gain_lower": "4050694101147146809603246146687112729309114314142466897/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "8101388202294293619206492293374225458618228628284933797/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/67108864",
+              "k": 10,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "57896044622408169033972111414648714459211747978304950041628413987937497526547/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "57896044029676652752890808429459241652032033355531557293869401280565185538085/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 5.118929282520125e-09
+              },
+              "proven_error_bound": "87244220084747715067124969672608175998648408931475019525692126823783/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "source_comparison": {
+                "hi": "57896044684174222162193886479140231026760292575462138451615210941719685113393/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "57896044204165092922386238563709180997248385352828375156819440331949439185651/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 4.145439748099092e-09
+              },
+              "t": "1/4194304"
+            },
+            {
+              "actual_gain_lower": "4050694101147146883364091797113871370690568541492159283/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "2025347050573573441682045898556935685345284270746079643/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "epsilon": "1/134217728",
+              "k": 11,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "57896044622408169033972111414648714459211747978304950041628413987937497526547/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "57896044029676652752890808429459241652032033355531557293869401280565185538085/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 5.118929282520125e-09
+              },
+              "proven_error_bound": "87244220084688203883247090987829183846474155873964236716790761016631/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "14474011372858034026678138099334066762263362453374264176289112755493767735051/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+                "lo": "57896043571395619147482024863747719402809930151887322056731808362384645279033/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 1.658175899239637e-08
+              },
+              "t": "1/8388608"
+            },
+            {
+              "actual_gain_lower": "1012673525286786730061128666002225825091979572579437935/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "2025347050573573460122257332004451650183959145158875873/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/268435456",
+              "k": 12,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "57896044622408169033972111414648714459211747978304950041628413987937497526547/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "57896044029676652752890808429459241652032033355531557293869401280565185538085/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 5.118929282520125e-09
+              },
+              "proven_error_bound": "43622110042336663047777139524368714842411696483955883356626247048355/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "28948024207554510793954910198092733748421594265147363070769329863109005439005/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "57896040734962953750987838518102726738990317768230638001475914686187981122473/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 6.632703596958548e-08
+              },
+              "t": "1/16777216"
+            }
+          ],
+          "structural_y": "1/4"
+        },
+        {
+          "final_interval": {
+            "hi": "1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+            "lo": "-1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+            "width_float": 6.477249606405902e-11
+          },
+          "first_zero_separation": null,
+          "label": "structural_zero",
+          "ledger_hashes": [
+            "adb11de4a4a447fa9493fa7b79910041e8edeaffa150a7b0cdaff00048290ebf",
+            "2b55278cf6774ff728302c687da194ba3d2e1023e64ab323844ec533b34768f1",
+            "325ea5cf64fe083e69ed5da1c8c5b7c78864a9248e492ef6497b2d0e6b1df862",
+            "64b8b31643b77f1ae5b6053ac92ccb9aa525948d9017b6294524e52552ebe01a",
+            "acee32d1fc1f02d884ee23330fd10e5125f9b3074063d84764847d06929f4ffb",
+            "80929c950e60c1021a2d590afcec2f97297dfe9d47810a6863d9613b0be1a8c8",
+            "6df920ed61acf6b8c96222631f6513f537eee0c25b0b769401dc54e1c2601fc8",
+            "b27c5d3ca6e165dec43f2f9911d962e5517ead70f66be56809e8482b866a65a0",
+            "82b87e1f05ac9828c08418a942eef0a953dc0187c7cac7815c3dc96f56dc3d62",
+            "e214a1dd88644a21f47b44391fcbf63e6a32da195c46a2c64818a1d835fd21c3",
+            "94d2be2931c7c398d5cb94ec6af35d0925dfa3f23ee53ea8c61cfd0a69630929",
+            "373ef0376990a72bdc77fb763c9aa6cfc127f8b3377f703b4e9f3dc81bdf429b"
+          ],
+          "levels": [
+            {
+              "actual_gain_lower": "2073955379787339242047968030050152261650611440935084561749/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "4147910759574678484095936060100304523301222881870169123501/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/131072",
+              "k": 1,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.1972943873982074e-08
+              },
+              "proven_error_bound": "10400321619382239345220067232009416134673124594084548025222561/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "318036632132753642522473172660398093332305028384552697701840041071439/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+                "lo": "-318036632132753642522473172660398093332305028384552697701840041071439/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+                "width_float": 2.197294369434421e-08
+              },
+              "t": "1/8192"
+            },
+            {
+              "actual_gain_lower": "2073955379787339242047968030050152261650611440935084561749/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "259244422473417405255996003756269032706326430116885570219/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+              "epsilon": "1/262144",
+              "k": 2,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.1972943873982074e-08
+              },
+              "proven_error_bound": "325010050605694979531805727645501910554024067074099887987365/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "source_comparison": {
+                "hi": "2544293057062029140172905327574920373141172482300853060796746602983217/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-2544293057062029140172905327574920373141172482300853060796746602983217/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 8.789177477737684e-08
+              },
+              "t": "1/16384"
+            },
+            {
+              "actual_gain_lower": "518488844946834810511992007512538065412652860233771140437/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "1036977689893669621023984015025076130825305720467542280877/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/524288",
+              "k": 3,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.1972943873982074e-08
+              },
+              "proven_error_bound": "20313128162855936220688472248509566744352475809245242064883/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "source_comparison": {
+                "hi": "20354344456496233121376362566891097365806643267642897777410792377857279/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-20354344456496233121376362566891097365806643267642897777410792377857279/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 3.5156709910950736e-07
+              },
+              "t": "1/32768"
+            },
+            {
+              "actual_gain_lower": "129622211236708702627998001878134516353163215058442785109/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+              "actual_gain_upper": "518488844946834810511992007512538065412652860233771140439/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/1048576",
+              "k": 4,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.1972943873982074e-08
+              },
+              "proven_error_bound": "2539141020356992027585287379042847388351353640907780327861/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "81417377825984932485502010240710256575702362969056583557759175393621745/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-81417377825984932485502010240710256575702362969056583557759175393621745/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 1.4062683964380294e-06
+              },
+              "t": "1/65536"
+            },
+            {
+              "actual_gain_lower": "129622211236708702627998001878134516353163215058442785109/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "259244422473417405255996003756269032706326430116885570221/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/2097152",
+              "k": 5,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.1972943873982074e-08
+              },
+              "proven_error_bound": "79348156886156000862037216329382541621775970314437235847/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "source_comparison": {
+                "hi": "325669511303939729942006320949413959854180919226935555329981912044972707/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-325669511303939729942006320949413959854180919226935555329981912044972707/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 5.625073585752118e-06
+              },
+              "t": "1/131072"
+            },
+            {
+              "actual_gain_lower": "32405552809177175656999500469533629088290803764610696277/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+              "actual_gain_upper": "129622211236708702627998001878134516353163215058442785111/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/4194304",
+              "k": 6,
+              "log_terms": [
+                4,
+                4
+              ],
+              "nested_interval": {
+                "hi": "1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-1272146538931336189472132035861659605338636248211335384891908189508317/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.1972943873982074e-08
+              },
+              "proven_error_bound": "309953737836546878367331404477223580913816589860673543/3618502788666131106986593281521497120414687020801267626233049500247285301248",
+              "source_comparison": {
+                "hi": "651339022607879459884012211895471153096052629409770290746657312366929131/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-651339022607879459884012211895471153096052629409770290746657312366929131/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 2.250029434300847e-05
+              },
+              "t": "1/262144"
+            },
+            {
+              "actual_gain_lower": "64811105618354351313999000939067258176581607529221392553/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "16202776404588587828499750234766814544145401882305348139/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+              "epsilon": "1/8388608",
+              "k": 7,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 6.477249606405902e-11
+              },
+              "proven_error_bound": "309953737836546878367331220501045209376797254793904779/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "source_comparison": {
+                "hi": "234379457636624812427423440642230918667849158124762679266013533849/7237005577332262213973186563042994240829374041602535252466099000494570602496",
+                "lo": "-234379457636624812427423440642230918667849158124762679266013533849/7237005577332262213973186563042994240829374041602535252466099000494570602496",
+                "width_float": 6.477249606404832e-11
+              },
+              "t": "1/524288"
+            },
+            {
+              "actual_gain_lower": "8101388202294293914249875117383407272072700941152674069/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+              "actual_gain_upper": "32405552809177175656999500469533629088290803764610696279/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/16777216",
+              "k": 8,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 6.477249606405902e-11
+              },
+              "proven_error_bound": "19372108614784179897958199844001432058416877468819059/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "source_comparison": {
+                "hi": "15000285288743987995355100015422608300335310779644778853792147851151/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-15000285288743987995355100015422608300335310779644778853792147851151/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 2.5908998425619327e-10
+              },
+              "t": "1/1048576"
+            },
+            {
+              "actual_gain_lower": "8101388202294293914249875117383407272072700941152674069/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "16202776404588587828499750234766814544145401882305348141/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/33554432",
+              "k": 9,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 6.477249606405902e-11
+              },
+              "proven_error_bound": "2421513576848022487244774958042149420932846052593433/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "60001141154975951981420399968850347954138662145946084105215512089285/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "lo": "-60001141154975951981420399968850347954138662145946084105215512089285/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+                "width_float": 1.036359937024773e-09
+              },
+              "t": "1/2097152"
+            },
+            {
+              "actual_gain_lower": "8101388202294293914249875117383407272072700941152674069/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "1012673525286786739281234389672925909009087617644084259/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+              "epsilon": "1/67108864",
+              "k": 10,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 6.477249606405902e-11
+              },
+              "proven_error_bound": "37836149638250351363199608675545245666198412208727/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+              "source_comparison": {
+                "hi": "60001141154975951981420399957245337298240212919448630564948715130701/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+                "lo": "-60001141154975951981420399957245337298240212919448630564948715130701/28948022309329048855892746252171976963317496166410141009864396001978282409984",
+                "width_float": 4.145439748099092e-09
+              },
+              "t": "1/4194304"
+            },
+            {
+              "actual_gain_lower": "2025347050573573478562468779345851818018175235288168517/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+              "actual_gain_upper": "4050694101147146957124937558691703636036350470576337037/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "epsilon": "1/134217728",
+              "k": 11,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 6.477249606405902e-11
+              },
+              "proven_error_bound": "9459037409562587840799902167515582071678771620951/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "480009129239807615851363199646357687729933331165955543737617485602201/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-480009129239807615851363199646357687729933331165955543737617485602201/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 1.658175899239637e-08
+              },
+              "t": "1/8388608"
+            },
+            {
+              "actual_gain_lower": "2025347050573573478562468779345851818018175235288168517/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "actual_gain_upper": "253168381321696684820308597418231477252271904411021065/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+              "epsilon": "1/268435456",
+              "k": 12,
+              "log_terms": [
+                5,
+                5
+              ],
+              "nested_interval": {
+                "hi": "1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-1875035661093308453157224072016214680563294310207478231382902175571/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 6.477249606405902e-11
+              },
+              "proven_error_bound": "591189838097661740049993885459015056473273645771/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+              "source_comparison": {
+                "hi": "1920036516959230463405452798579628245591649215611472579786854566593747/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "lo": "-1920036516959230463405452798579628245591649215611472579786854566593747/57896044618658097711785492504343953926634992332820282019728792003956564819968",
+                "width_float": 6.632703596958548e-08
+              },
+              "t": "1/16777216"
+            }
+          ],
+          "structural_y": "0"
+        }
+      ],
+      "target_limit_used_to_construct_intervals": false,
+      "test_operand": "f(y)=y^2; software fixture only, not a GR replacement or full native history"
+    },
+    "new_check_count": 197,
+    "new_full_native_execution": false,
+    "status": "PASS_SCOPED_SOURCE_KAPPA_COMPOSITION",
+    "unrestricted_GR_closed": false
+  }
+}

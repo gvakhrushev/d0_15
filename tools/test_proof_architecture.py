@@ -2912,6 +2912,571 @@ class ProofArchitectureTests(unittest.TestCase):
             "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
         )
 
+    def test_pr334_latest_clock_credit_delta_is_exact_and_retrievable(self) -> None:
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "pr334-one-sided-clock-credit-and-retained-parry-record"
+        )
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "reports/pr334_latest_delta_2026-11-04_adc5bd97"
+        )
+        manifest = json.loads(
+            (report_dir / "owner_delta_manifest.json").read_text(encoding="utf-8")
+        )
+        owner_head = manifest["owner_head"]
+        self.assertEqual(
+            owner_head, "adc5bd97140caf18270b7b5e566a399946162039"
+        )
+        for artifact in manifest["owner_changed_paths_from_previous_checkpoint"]:
+            exact = subprocess.check_output(
+                ["git", "show", f"{owner_head}:{artifact['path']}"], cwd=proof.ROOT
+            )
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{owner_head}:{artifact['path']}"],
+                cwd=proof.ROOT, text=True,
+            ).strip()
+            self.assertEqual(blob, artifact["blob"])
+            self.assertEqual(len(exact), artifact["bytes"])
+            self.assertEqual(hashlib.sha256(exact).hexdigest(), artifact["sha256"])
+            if artifact["path"].startswith("00_WORK/tasks/"):
+                task_bytes = exact
+
+        source_path = manifest["owner_changed_paths_from_previous_checkpoint"][0]["path"]
+        source = subprocess.check_output(
+            ["git", "show", f"{owner_head}:{source_path}"], cwd=proof.ROOT
+        )
+        start_marker = b"### 7er.D. What a finite record-entropy interpretation would imply"
+        end_marker = b"### 7er.E. A literal finite receipt with the original complete clock"
+        excerpt = source[source.index(start_marker):source.index(end_marker)]
+        if excerpt.endswith(b"\n\n"):
+            excerpt = excerpt[:-1]  # Exclude the blank separator before the next heading.
+        section_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_pr334_paid_clock_credit_2026-11-04/"
+            "owner_section_7er_D_delta.md"
+        )
+        self.assertEqual(section_path.read_bytes(), excerpt)
+
+        task_marker = b"## 2026-11-04 review: actual Cost excess and the owned Golden"
+        task_excerpt = task_bytes[task_bytes.index(task_marker):]
+        task_excerpt_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_pr334_paid_clock_credit_2026-11-04/"
+            "owner_task_delta.md"
+        )
+        self.assertEqual(task_excerpt_path.read_bytes(), task_excerpt)
+
+        checker_marker = b"<!-- 7er CLOCK CREDIT CHECKER -->"
+        checker_start = source.index(b"```python\n", source.index(checker_marker)) + len(b"```python\n")
+        checker_end = source.index(b"\n```", checker_start)
+        checker = source[checker_start:checker_end] + b"\n"
+        local_checker = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_pr334_paid_clock_credit_2026-11-04/"
+            "check_paid_clock_credit.py"
+        ).read_bytes()
+        self.assertEqual(checker, local_checker)
+        self.assertEqual(
+            hashlib.sha256(checker).hexdigest(),
+            manifest["unchanged_7er_checker"]["sha256"],
+        )
+        receipt_marker = b"<!-- 7er CLOCK CREDIT RESULT -->"
+        receipt_start = source.index(b"```json\n", source.index(receipt_marker)) + len(b"```json\n")
+        receipt_end = source.index(b"\n```", receipt_start)
+        receipt = source[receipt_start:receipt_end] + b"\n"
+        local_receipt = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_pr334_paid_clock_credit_2026-11-04/"
+            "result.json"
+        ).read_bytes()
+        self.assertEqual(receipt, local_receipt)
+        self.assertEqual(
+            hashlib.sha256(receipt).hexdigest(),
+            manifest["unchanged_7er_checker"]["owner_receipt_sha256"],
+        )
+
+        hits_by_query = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        query_hits = list(zip(case["queries"], hits_by_query))
+        for required in case["required_sources"]:
+            status = cold_start._required_source_status(query_hits, required)
+            self.assertTrue(status["found"], f"latest #334 delta source not retrieved: {status}")
+        for reference in case["required_refs"]:
+            status = cold_start._required_source_status(query_hits, {"path": reference})
+            self.assertTrue(status["found"], f"latest #334 delta ref not retrieved: {reference}")
+
+    def test_pr334_af_paid_futures_delta_is_exact_and_retrievable(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "reports/pr334_af_paid_futures_delta_2026-11-04_e7e12c7"
+        )
+        manifest = json.loads(
+            (report_dir / "owner_delta_manifest.json").read_text(encoding="utf-8")
+        )
+        owner_head = manifest["owner_head"]
+        self.assertEqual(owner_head, "e7e12c70eca25f724c609d813bd09d8c85c44d5")
+        self.assertEqual(
+            manifest["previous_checkpoint"],
+            "adc5bd97140caf18270b7b5e566a399946162039",
+        )
+        self.assertEqual(len(manifest["changed_paths_from_previous_checkpoint"]), 2)
+
+        for artifact in manifest["changed_paths_from_previous_checkpoint"]:
+            exact = subprocess.check_output(
+                ["git", "show", f"{owner_head}:{artifact['path']}"], cwd=proof.ROOT
+            )
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{owner_head}:{artifact['path']}"],
+                cwd=proof.ROOT, text=True,
+            ).strip()
+            self.assertEqual(blob, artifact["blob"])
+            self.assertEqual(len(exact), artifact["bytes"])
+            self.assertEqual(hashlib.sha256(exact).hexdigest(), artifact["sha256"])
+
+        source_entry, task_entry = manifest["changed_paths_from_previous_checkpoint"]
+        source = subprocess.check_output(
+            ["git", "show", f"{owner_head}:{source_entry['path']}"], cwd=proof.ROOT
+        )
+        source_lines = source.splitlines(keepends=True)
+        for section in manifest["sections"][:2]:
+            excerpt = b"".join(
+                source_lines[section["start_line"] - 1:section["end_line"]]
+            )
+            local = (proof.ROOT / section["path"]).read_bytes()
+            if excerpt.endswith(b"\n\n"):
+                excerpt = excerpt[:-1]  # Exclude the blank separator before the next heading.
+            self.assertEqual(excerpt, local, section["section"])
+            self.assertEqual(hashlib.sha256(excerpt).hexdigest(), section["sha256"])
+
+        task = subprocess.check_output(
+            ["git", "show", f"{owner_head}:{task_entry['path']}"], cwd=proof.ROOT
+        )
+        task_section = manifest["sections"][2]
+        task_excerpt = b"".join(
+            task.splitlines(keepends=True)[task_section["start_line"] - 1:]
+        )
+        self.assertEqual(
+            task_excerpt,
+            (proof.ROOT / task_section["path"]).read_bytes(),
+        )
+        self.assertEqual(hashlib.sha256(task_excerpt).hexdigest(), task_section["sha256"])
+
+        for checker in manifest["checkers"]:
+            marker = checker["marker"].encode()
+            start = source.index(b"```python\n", source.index(marker)) + len(b"```python\n")
+            end = source.index(b"\n```", start)
+            embedded = source[start:end] + b"\n"
+            local_checker = (proof.ROOT / checker["path"]).read_bytes()
+            self.assertEqual(embedded, local_checker, checker["path"])
+            self.assertEqual(hashlib.sha256(embedded).hexdigest(), checker["sha256"])
+
+            result_marker = checker["result_marker"].encode()
+            result_start = source.index(
+                b"```json\n", source.index(result_marker)
+            ) + len(b"```json\n")
+            result_end = source.index(b"\n```", result_start)
+            result = source[result_start:result_end] + b"\n"
+            self.assertEqual(result, (proof.ROOT / checker["result_path"]).read_bytes())
+            self.assertEqual(hashlib.sha256(result).hexdigest(), checker["result_sha256"])
+
+        replay = json.loads(
+            (report_dir / "checker_replay.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(replay["owner_head"], owner_head)
+        self.assertEqual(replay["status"], "PASS")
+        self.assertEqual(len(replay["checkers"]), 4)
+        expected_checks = {
+            "coherent_af_cut": 52,
+            "full_growing_clock": 12,
+            "matched_native_future": 75,
+            "exact_heat_bound": 10,
+        }
+        for checker in replay["checkers"]:
+            self.assertEqual(checker["modes"]["ordinary"]["status"], "PASS")
+            self.assertEqual(
+                checker["modes"]["ordinary"]["checks"], expected_checks[checker["id"]]
+            )
+            self.assertTrue(checker["modes"]["ordinary"]["matches_embedded_owner_result"])
+            self.assertEqual(checker["modes"]["optimized"]["status"], "PASS")
+            self.assertTrue(checker["modes"]["optimized"]["matches_embedded_owner_result"])
+        clock_replay = next(
+            checker for checker in replay["checkers"]
+            if checker["id"] == "full_growing_clock"
+        )
+        self.assertTrue(clock_replay["modes"]["optimized"]["stderr_empty"])
+        self.assertEqual(
+            clock_replay["legacy_environment_observation"]["runtime_warning_count"], 9
+        )
+
+        for commit in (
+            "063f643d",
+            "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+            "adc5bd97140caf18270b7b5e566a399946162039",
+        ):
+            result = subprocess.run(
+                ["git", "merge-base", "--is-ancestor", commit, owner_head],
+                cwd=proof.ROOT, capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 0, f"{commit} is absent from #334 ancestry")
+
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "pr334-native-af-paid-futures-and-full-price-separation"
+        )
+        seven_report_case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "pr334-seven-report-prefix-source-and-retained-record-cut"
+        )
+        all_queries = case["queries"] + seven_report_case["queries"]
+        hits_by_query = proof.full_text_search_many(
+            proof.ROOT, all_queries, limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        offset = 0
+        for retrieval_case in (case, seven_report_case):
+            end = offset + len(retrieval_case["queries"])
+            query_hits = list(zip(retrieval_case["queries"], hits_by_query[offset:end]))
+            for required in retrieval_case["required_sources"]:
+                status = cold_start._required_source_status(query_hits, required)
+                self.assertTrue(
+                    status["found"],
+                    f"latest #334 source not retrieved for {retrieval_case['id']}: {status}",
+                )
+            for reference in retrieval_case["required_refs"]:
+                status = cold_start._required_source_status(query_hits, {"path": reference})
+                self.assertTrue(
+                    status["found"],
+                    f"latest #334 ref not retrieved for {retrieval_case['id']}: {reference}",
+                )
+            offset = end
+
+    def test_pr334_seven_report_prefix_delta_is_exact(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "reports/pr334_seven_report_prefix_delta_2026-11-04_6164fe5"
+        )
+        manifest = json.loads(
+            (report_dir / "owner_delta_manifest.json").read_text(encoding="utf-8")
+        )
+        owner_head = manifest["owner_head"]
+        self.assertEqual(owner_head, "6164fe50b875a4876f8c17eb22d814cdc7937377")
+        self.assertEqual(
+            manifest["previous_checkpoint"],
+            "e7e12c70eca25f724c609d813bd09d8c85c44d5",
+        )
+        self.assertEqual(len(manifest["changed_paths_from_previous_checkpoint"]), 2)
+
+        owner_files = {}
+        for artifact in manifest["changed_paths_from_previous_checkpoint"]:
+            exact = subprocess.check_output(
+                ["git", "show", f"{owner_head}:{artifact['path']}"], cwd=proof.ROOT
+            )
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{owner_head}:{artifact['path']}"],
+                cwd=proof.ROOT, text=True,
+            ).strip()
+            self.assertEqual(blob, artifact["blob"])
+            self.assertEqual(len(exact), artifact["bytes"])
+            self.assertEqual(hashlib.sha256(exact).hexdigest(), artifact["sha256"])
+            owner_files[artifact["path"]] = exact
+
+        source_entry, task_entry = manifest["changed_paths_from_previous_checkpoint"]
+        source = owner_files[source_entry["path"]]
+        source_lines = source.splitlines(keepends=True)
+        section = manifest["sections"][0]
+        excerpt = b"".join(source_lines[section["start_line"] - 1:section["end_line"]])
+        self.assertEqual(excerpt, (proof.ROOT / section["path"]).read_bytes())
+        self.assertEqual(hashlib.sha256(excerpt).hexdigest(), section["sha256"])
+
+        task = owner_files[task_entry["path"]]
+        task_section = manifest["sections"][1]
+        task_excerpt = b"".join(task.splitlines(keepends=True)[task_section["start_line"] - 1:])
+        self.assertEqual(task_excerpt, (proof.ROOT / task_section["path"]).read_bytes())
+        self.assertEqual(hashlib.sha256(task_excerpt).hexdigest(), task_section["sha256"])
+
+        source_dir = (
+            proof.ROOT / "02_REGISTRY/research/sources/d0_pr334_seven_report_prefix_2026-11-04"
+        )
+        inputs_bytes = (source_dir / "INPUTS.json").read_bytes()
+        self.assertEqual(
+            hashlib.sha256(inputs_bytes).hexdigest(), manifest["owner_input_manifest_sha256"]
+        )
+        inputs = json.loads(inputs_bytes)
+        self.assertEqual(inputs["base_head"], manifest["inputs_base_head"])
+        input_records = {record["path"]: record for record in manifest["input_pins"]}
+        self.assertEqual(set(input_records), set(inputs["files"]))
+        for path, expected_sha in inputs["files"].items():
+            data = subprocess.check_output(
+                ["git", "show", f"{inputs['base_head']}:{path}"], cwd=proof.ROOT
+            )
+            record = input_records[path]
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{inputs['base_head']}:{path}"],
+                cwd=proof.ROOT, text=True,
+            ).strip()
+            self.assertEqual(hashlib.sha256(data).hexdigest(), expected_sha, path)
+            self.assertEqual(blob, record["blob"], path)
+            self.assertEqual(len(data), record["bytes"], path)
+
+        for path, expected_sha in inputs["artifacts"].items():
+            artifact = source_dir / path
+            self.assertEqual(hashlib.sha256(artifact.read_bytes()).hexdigest(), expected_sha, path)
+            self.assertTrue(manifest["owner_declared_artifacts_verified"][path]["matches_owner_inputs"])
+
+        for checker in manifest["checkers"]:
+            marker = checker["marker"].encode()
+            code_start = source.index(b"```python\n", source.index(marker)) + len(b"```python\n")
+            code_end = source.index(b"\n```", code_start)
+            code = source[code_start:code_end] + b"\n"
+            self.assertEqual(code, (proof.ROOT / checker["path"]).read_bytes())
+            self.assertEqual(hashlib.sha256(code).hexdigest(), checker["sha256"])
+
+            result_marker = checker["result_marker"].encode()
+            result_start = source.index(
+                b"```json\n", source.index(result_marker)
+            ) + len(b"```json\n")
+            result_end = source.index(b"\n```", result_start)
+            result = source[result_start:result_end] + b"\n"
+            self.assertEqual(result, (proof.ROOT / checker["result_path"]).read_bytes())
+            self.assertEqual(hashlib.sha256(result).hexdigest(), checker["result_sha256"])
+
+        word_marker = b"<!-- 7eu NATIVE MARKER WORD -->"
+        word_start = source.index(b"```json\n", source.index(word_marker)) + len(b"```json\n")
+        word_end = source.index(b"\n```", word_start)
+        word = source[word_start:word_end] + b"\n"
+        self.assertEqual(word, (source_dir / "marker/native_word.json").read_bytes())
+        self.assertEqual(
+            hashlib.sha256(word).hexdigest(),
+            inputs["artifacts"]["marker/native_word.json"],
+        )
+
+        replay = json.loads(
+            (report_dir / "checker_replay.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(replay["owner_head"], owner_head)
+        self.assertEqual(replay["status"], "PASS")
+        self.assertTrue(replay["all_input_pins_verified"])
+        self.assertTrue(replay["all_owner_declared_artifacts_verified"])
+        self.assertTrue(replay["ordinary_and_optimized_outputs_identical"])
+        self.assertEqual(
+            {checker["id"]: checker["modes"]["ordinary"]["checks"]
+             for checker in replay["checkers"]},
+            {"prefix_source": 98, "native_marker": 37},
+        )
+        for checker in replay["checkers"]:
+            for mode in ("ordinary", "optimized"):
+                self.assertEqual(checker["modes"][mode]["status"], "PASS")
+                self.assertTrue(checker["modes"][mode]["matches_owner_output_hash"])
+
+        for commit in (
+            "063f643d",
+            "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+            "adc5bd97140caf18270b7b5e566a399946162039",
+            "e7e12c70eca25f724c609d813bd09d8c85c44d5",
+        ):
+            result = subprocess.run(
+                ["git", "merge-base", "--is-ancestor", commit, owner_head],
+                cwd=proof.ROOT, capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 0, f"{commit} is absent from #334 ancestry")
+
+    def test_pr334_retained_report_delta_is_exact_and_replayable(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "reports/pr334_retained_report_paid_decoder_delta_2026-11-04_89707e8"
+        )
+        manifest = json.loads(
+            (report_dir / "owner_delta_manifest.json").read_text(encoding="utf-8")
+        )
+        owner_head = "89707e8ad4787ace2da9d70b723b799094cee4d9"
+        self.assertEqual(manifest["owner_head"], owner_head)
+        self.assertEqual(manifest["previous_checkpoint"], "6164fe50b875a4876f8c17eb22d814cdc7937377")
+        self.assertEqual(len(manifest["changed_paths_from_previous_checkpoint"]), 2)
+
+        owner_files = {}
+        for artifact in manifest["changed_paths_from_previous_checkpoint"]:
+            exact = subprocess.check_output(
+                ["git", "show", f"{owner_head}:{artifact['path']}"], cwd=proof.ROOT
+            )
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{owner_head}:{artifact['path']}"],
+                cwd=proof.ROOT, text=True,
+            ).strip()
+            self.assertEqual(blob, artifact["blob"])
+            self.assertEqual(len(exact), artifact["bytes"])
+            self.assertEqual(hashlib.sha256(exact).hexdigest(), artifact["sha256"])
+            owner_files[artifact["path"]] = exact
+
+        source_entry, task_entry = manifest["changed_paths_from_previous_checkpoint"]
+        source = owner_files[source_entry["path"]]
+        task = owner_files[task_entry["path"]]
+        source_excerpt = (proof.ROOT / manifest["sections"][0]["path"]).read_bytes()
+        section = manifest["sections"][0]
+        source_lines = source.splitlines(keepends=True)
+        self.assertEqual(
+            b"".join(source_lines[section["start_line"] - 1:section["end_line"]]),
+            source_excerpt,
+        )
+        self.assertEqual(hashlib.sha256(source_excerpt).hexdigest(), section["sha256"])
+        task_section = manifest["sections"][1]
+        task_excerpt = b"".join(
+            task.splitlines(keepends=True)[task_section["start_line"] - 1:]
+        )
+        self.assertEqual(task_excerpt, (proof.ROOT / task_section["path"]).read_bytes())
+        self.assertEqual(hashlib.sha256(task_excerpt).hexdigest(), task_section["sha256"])
+
+        source_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_pr334_retained_report_paid_decoder_2026-11-04"
+        )
+        inputs_bytes = (source_dir / "INPUTS.json").read_bytes()
+        self.assertEqual(
+            hashlib.sha256(inputs_bytes).hexdigest(), manifest["owner_input_manifest_sha256"]
+        )
+        inputs = json.loads(inputs_bytes)
+        self.assertEqual(inputs["base_head"], manifest["inputs_base_head"])
+        input_records = {record["path"]: record for record in manifest["input_pins"]}
+        self.assertEqual(set(input_records), set(inputs["files"]))
+        for path, expected_sha in inputs["files"].items():
+            data = subprocess.check_output(
+                ["git", "show", f"{inputs['base_head']}:{path}"], cwd=proof.ROOT
+            )
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{inputs['base_head']}:{path}"],
+                cwd=proof.ROOT, text=True,
+            ).strip()
+            self.assertEqual(hashlib.sha256(data).hexdigest(), expected_sha, path)
+            self.assertEqual(blob, input_records[path]["blob"], path)
+            self.assertEqual(len(data), input_records[path]["bytes"], path)
+
+        owner_artifacts = source_dir / "owner_artifacts"
+        self.assertEqual(
+            set(inputs["artifacts"]), set(manifest["owner_declared_artifacts_verified"])
+        )
+        for path, expected_sha in inputs["artifacts"].items():
+            data = (owner_artifacts / path).read_bytes()
+            self.assertEqual(hashlib.sha256(data).hexdigest(), expected_sha, path)
+            self.assertTrue(
+                manifest["owner_declared_artifacts_verified"][path]["matches_owner_inputs"]
+            )
+
+        for checker in manifest["checkers"]:
+            marker = checker["marker"].encode()
+            code_start = source.index(b"```python\n", source.index(marker)) + len(b"```python\n")
+            code_end = source.index(b"\n```", code_start)
+            code = source[code_start:code_end] + b"\n"
+            local_code = (proof.ROOT / checker["path"]).read_bytes()
+            self.assertEqual(code, local_code, checker["id"])
+            self.assertEqual(hashlib.sha256(code).hexdigest(), checker["sha256"])
+            if checker.get("result_marker"):
+                result_marker = checker["result_marker"].encode()
+                result_start = source.index(
+                    b"```json\n", source.index(result_marker)
+                ) + len(b"```json\n")
+                result_end = source.index(b"\n```", result_start)
+                result = source[result_start:result_end] + b"\n"
+                self.assertEqual(result, (proof.ROOT / checker["result_path"]).read_bytes())
+                self.assertEqual(hashlib.sha256(result).hexdigest(), checker["result_sha256"])
+
+        replay = json.loads((source_dir / "replay/checker_replay.json").read_text())
+        self.assertEqual(replay["owner_head"], owner_head)
+        self.assertEqual(replay["status"], "PASS")
+        self.assertEqual(replay["total_check_count"], 409)
+        self.assertTrue(replay["ordinary_optimized_identical"])
+        expected_checks = {
+            "corner_base": 60, "corner_gain": 87, "full_heat": 53,
+            "native_preparation": 70, "paid_decoder": 60,
+            "computational_reader": 79,
+        }
+        for checker in replay["checkers"]:
+            self.assertEqual(checker["status"], "PASS")
+            self.assertEqual(
+                {mode["mode"]: mode["check_count"] for mode in checker["modes"]},
+                {"ordinary": expected_checks[checker["id"]],
+                 "optimized": expected_checks[checker["id"]]},
+            )
+            self.assertTrue(all(mode["stderr_empty"] for mode in checker["modes"]))
+
+        for commit in (
+            "063f643d", "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+            "adc5bd97140caf18270b7b5e566a399946162039",
+            "e7e12c70eca25f724c609d813bd09d8c85c44d5",
+            "6164fe50b875a4876f8c17eb22d814cdc7937377",
+        ):
+            result = subprocess.run(
+                ["git", "merge-base", "--is-ancestor", commit, owner_head],
+                cwd=proof.ROOT, capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 0, f"{commit} is absent from #334 ancestry")
+
+        case = next(
+            item for item in cold_start.CASES
+            if item["id"] == "pr334-retained-report-complete-price-paid-decoder"
+        )
+        hits_by_query = proof.full_text_search_many(
+            proof.ROOT, case["queries"], limit=cold_start.COLD_START_MIN_RESULT_WINDOW
+        )
+        query_hits = list(zip(case["queries"], hits_by_query))
+        for required in case["required_sources"]:
+            status = cold_start._required_source_status(query_hits, required)
+            self.assertTrue(status["found"], f"latest #334 source not retrieved: {status}")
+        for reference in case["required_refs"]:
+            status = cold_start._required_source_status(query_hits, {"path": reference})
+            self.assertTrue(status["found"], f"latest #334 ref not retrieved: {reference}")
+
+    def test_pr334_e94_owner_manifest_pins_all_68_changed_paths(self) -> None:
+        manifest_path = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "reports/pr334_owner_delta_2026-11-04_e94e518c/owner_delta_manifest.json"
+        )
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        self.assertEqual(manifest["source_head"], "e94e518c43b748e6c4fff1d4db364a6265bbf44d")
+        self.assertEqual(manifest["source_changed_path_count"], 68)
+        self.assertEqual(len(manifest["artifacts"]), 68)
+
+        over_limit = []
+        for artifact in manifest["artifacts"]:
+            commit = artifact["commit"]
+            path = artifact["path"]
+            data = subprocess.check_output(
+                ["git", "cat-file", "blob", f"{commit}:{path}"], cwd=proof.ROOT
+            )
+            blob = subprocess.check_output(
+                ["git", "rev-parse", f"{commit}:{path}"], cwd=proof.ROOT, text=True
+            ).strip()
+            self.assertEqual(blob, artifact["blob"], path)
+            self.assertEqual(len(data), artifact["bytes"], path)
+            self.assertEqual(hashlib.sha256(data).hexdigest(), artifact["sha256"], path)
+            if len(data) > 4_000_000:
+                over_limit.append(artifact)
+                self.assertEqual(
+                    artifact["retrieval_mode"], "exact-git-pin-only-over-search-limit", path
+                )
+            else:
+                self.assertEqual(artifact["retrieval_mode"], "exact-pinned-content", path)
+        self.assertEqual(len(over_limit), 1)
+        self.assertEqual(
+            over_limit[0]["path"],
+            "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+        )
+
+        for commit in (
+            "063f643d", "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+            "adc5bd97140caf18270b7b5e566a399946162039",
+        ):
+            result = subprocess.run(
+                ["git", "merge-base", "--is-ancestor", commit,
+                 "adc5bd97140caf18270b7b5e566a399946162039"],
+                cwd=proof.ROOT, capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 0, f"{commit} is not in current #334 ancestry")
+
     def test_current_cold_start_summary_covers_proper_lorentz_orbit_case(self) -> None:
         summary_path = (
             proof.ROOT

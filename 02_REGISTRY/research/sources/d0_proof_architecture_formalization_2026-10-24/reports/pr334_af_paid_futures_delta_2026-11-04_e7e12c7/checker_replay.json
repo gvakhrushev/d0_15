@@ -1,0 +1,157 @@
+{
+  "backend_warning_crosscheck": {
+    "R_gram_matches_einsum_exactly": true,
+    "R_times_U_matches_scalar_reference_exactly": true,
+    "clock_gram_matches_einsum_exactly": true,
+    "clock_unitarity_residual": 6.650599500050026e-16,
+    "environment": "Python 3.9.6 / NumPy 2.0.2 / Apple Accelerate",
+    "meaning": "diagnostic used only to locate the strict-warning environment issue; final clock replay is the clean NumPy 2.3.5 strict run",
+    "returned_products_finite": true
+  },
+  "checker_count": 4,
+  "checkers": [
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/check_native_af_cut.py",
+      "checker_sha256": "d7e8de7243c1d56fef88e3f492ddb5df05a5fec28af41f17b9b3e6bfe40cf7c3",
+      "id": "coherent_af_cut",
+      "modes": {
+        "optimized": {
+          "checks": 52,
+          "exit_code": 0,
+          "generated_outputs": {
+            "native_word.json": "f709669b0f282162ddb3afd4f392045955d444c8871e17458fbf180d70347117",
+            "receipt.json": "7b5bb3d71dfab3d98971a993367891c89a8f9e00d905def154d489bbb2da9923"
+          },
+          "matches_embedded_owner_result": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "7a52385bb57bb08cb88331dcebe22e1ce0b406915aeaf4ee8903444f632f8efd"
+        },
+        "ordinary": {
+          "checks": 52,
+          "exit_code": 0,
+          "generated_outputs": {
+            "native_word.json": "f709669b0f282162ddb3afd4f392045955d444c8871e17458fbf180d70347117",
+            "receipt.json": "7b5bb3d71dfab3d98971a993367891c89a8f9e00d905def154d489bbb2da9923"
+          },
+          "matches_embedded_owner_result": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "7a52385bb57bb08cb88331dcebe22e1ce0b406915aeaf4ee8903444f632f8efd"
+        }
+      },
+      "numpy": "2.0.2",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/check_native_af_cut_result.json",
+      "owner_result_sha256": "7a52385bb57bb08cb88331dcebe22e1ce0b406915aeaf4ee8903444f632f8efd",
+      "python": "Python 3.9.6",
+      "sympy": "1.14.0"
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/check_native_af_clock.py",
+      "checker_sha256": "554266f026d64d6459d2d058407ddb21b11e5c17864e0e2c5942afe5918ea44a",
+      "id": "full_growing_clock",
+      "legacy_environment_observation": {
+        "numpy": "2.0.2",
+        "optimized_strict_exit_code": 1,
+        "optimized_without_werror_exit_code": 0,
+        "optimized_without_werror_matches_owner_result": true,
+        "python": "3.9.6",
+        "resolution": "rerun ordinary and -O -Werror with NumPy 2.3.5; both clean and byte-identical",
+        "runtime_warning_count": 9
+      },
+      "modes": {
+        "optimized": {
+          "checks": 12,
+          "exit_code": 0,
+          "generated_outputs": {},
+          "matches_embedded_owner_result": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "10373abf50121db90170a20918a189f1bb2da7239397253fbed35ae6128912e9"
+        },
+        "ordinary": {
+          "checks": 12,
+          "exit_code": 0,
+          "generated_outputs": {},
+          "matches_embedded_owner_result": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "10373abf50121db90170a20918a189f1bb2da7239397253fbed35ae6128912e9"
+        }
+      },
+      "numpy": "2.3.5",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/check_native_af_clock_result.json",
+      "owner_result_sha256": "10373abf50121db90170a20918a189f1bb2da7239397253fbed35ae6128912e9",
+      "python": "Python 3.13.14"
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/check_native_future.py",
+      "checker_sha256": "fdc9c8b2e9cbd65d4b98ab3525b1fca4ce82748ed1d97f0540964d4634d613f6",
+      "id": "matched_native_future",
+      "modes": {
+        "optimized": {
+          "checks": 75,
+          "exit_code": 0,
+          "generated_outputs": {
+            "native_word.json": "dc72425a20b29e735c4a6c80431224114d1d79da4bea59e3b6ff67e48c9a5fe6",
+            "receipt.json": "1b42ed10b953c368a2534dccbf8f1cecb695b10b66b15e0652018bcbe2d3a5b3"
+          },
+          "matches_embedded_owner_result": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "97d4a9689d17cbc6acbd8419427fa73e03dba6346bf2d7d36e733d8408b1d88e"
+        },
+        "ordinary": {
+          "checks": 75,
+          "exit_code": 0,
+          "generated_outputs": {
+            "native_word.json": "dc72425a20b29e735c4a6c80431224114d1d79da4bea59e3b6ff67e48c9a5fe6",
+            "receipt.json": "1b42ed10b953c368a2534dccbf8f1cecb695b10b66b15e0652018bcbe2d3a5b3"
+          },
+          "matches_embedded_owner_result": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "97d4a9689d17cbc6acbd8419427fa73e03dba6346bf2d7d36e733d8408b1d88e"
+        }
+      },
+      "numpy": "2.0.2",
+      "owner_result_path": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/check_native_future_result.json",
+      "owner_result_sha256": "97d4a9689d17cbc6acbd8419427fa73e03dba6346bf2d7d36e733d8408b1d88e",
+      "python": "Python 3.9.6",
+      "sympy": "1.14.0"
+    },
+    {
+      "checker_path": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/check_exact_heat_bound.py",
+      "checker_sha256": "b42e993bb4985710ce17da2c3e75f1fa56b6a5196a830acdf95253ed376d61d0",
+      "id": "exact_heat_bound",
+      "modes": {
+        "optimized": {
+          "checks": 10,
+          "exit_code": 0,
+          "generated_outputs": {},
+          "matches_embedded_owner_result": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "83e8d0d4315ac469ec389b4a2a36c7cad5e5de0a0d6b3c6fe3b38c276833a05f"
+        },
+        "ordinary": {
+          "checks": 10,
+          "exit_code": 0,
+          "generated_outputs": {},
+          "matches_embedded_owner_result": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "83e8d0d4315ac469ec389b4a2a36c7cad5e5de0a0d6b3c6fe3b38c276833a05f"
+        }
+      },
+      "owner_result_path": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/check_exact_heat_bound_result.json",
+      "owner_result_sha256": "83e8d0d4315ac469ec389b4a2a36c7cad5e5de0a0d6b3c6fe3b38c276833a05f",
+      "python": "Python 3.9.6"
+    }
+  ],
+  "native_execution_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "owner_head": "e7e12c70eca25f724c609d813bd09d8c85c44d5",
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-pr334-af-paid-futures-checker-replay/1",
+  "status": "PASS"
+}

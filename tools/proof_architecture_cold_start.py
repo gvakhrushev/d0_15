@@ -2147,6 +2147,248 @@ CASES: list[dict[str, Any]] = [
 ]
 
 
+PR334_OWNER_DELTA_MANIFEST = (
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+    "reports/pr334_owner_delta_2026-11-04_e94e518c/owner_delta_manifest.json"
+)
+_pr334_owner_delta = json.loads((ROOT / PR334_OWNER_DELTA_MANIFEST).read_text(encoding="utf-8"))
+_pr334_delta_queries = _pr334_owner_delta["cold_start_queries"]
+_pr334_delta_sources = []
+for _artifact in _pr334_owner_delta["artifacts"]:
+    if _artifact.get("retrieval_mode") != "exact-pinned-content":
+        continue
+    _query_indexes = [
+        index for index, query in enumerate(_pr334_delta_queries)
+        if query in _artifact["queries"]
+    ]
+    _pr334_delta_sources.append({
+        "path": _artifact["path"],
+        "commit": _artifact["commit"],
+        "blob": _artifact["blob"],
+        "scope_query_indexes": _query_indexes,
+    })
+
+CASES.append({
+    "id": _pr334_owner_delta["cold_start_case_id"],
+    "queries": _pr334_delta_queries,
+    "required_refs": [
+        PR334_OWNER_DELTA_MANIFEST,
+        "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md",
+        "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md",
+        "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+        "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    ],
+    "required_sources": _pr334_delta_sources,
+    "scope_review": (
+        "This case pins all artifacts changed from the prior integrated #334 checkpoint "
+        "to the source PR head, including the 4 November paid-clock-credit continuation. "
+        "It retrieves exact source bytes and their proof/checker receipts; it does not "
+        "promote research calculations to Lean theorems, selected physical price, "
+        "same-execution admission, accepted GR composition, or GR closure. The "
+        "conditional kappa result keeps its exact hypotheses and unresolved B/D "
+        "application, and GR_closed=false."
+    ),
+})
+
+PR334_AF_PAID_FUTURES_DIR = (
+    "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04"
+)
+PR334_AF_PAID_FUTURES_REPORT = (
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+    "reports/pr334_af_paid_futures_delta_2026-11-04_e7e12c7"
+)
+_pr334_af_delta = json.loads(
+    (ROOT / PR334_AF_PAID_FUTURES_REPORT / "owner_delta_manifest.json")
+    .read_text(encoding="utf-8")
+)
+CASES.append({
+    "id": "pr334-native-af-paid-futures-and-full-price-separation",
+    "queries": [
+        "7es exact 32 call coherent AF cut 8G 16 SourceI 8CX all 64 native columns record Kraus pI pG4 apG4",
+        "7es full growing clock N34 D2096 890800 Hodge modes absolute heat H J code cost sqrt5 not 34 actual stages",
+        "two equally long native histories agree on the whole AF record distinct paid futures",
+        "7et exact rational heat bound complete Book H plus J gap greater than 4e-7 paid common future gap greater than 2e-6",
+        "2026-11-04 continuation actual coherent AF cut full clock source residual",
+        "native_execution.py 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c NativePaidClockCredit ER5 ER6",
+    ],
+    "required_refs": [
+        f"{PR334_AF_PAID_FUTURES_DIR}/owner_section_7es.md",
+        f"{PR334_AF_PAID_FUTURES_DIR}/owner_section_7et.md",
+        f"{PR334_AF_PAID_FUTURES_DIR}/owner_task_delta.md",
+        f"{PR334_AF_PAID_FUTURES_DIR}/PROOF_RU.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        "03_FORMALIZATION/D0/Research/NativePaidClockCredit.lean",
+    ],
+    "required_sources": [
+        {"path": f"{PR334_AF_PAID_FUTURES_DIR}/owner_section_7es.md",
+         "scope_query_indexes": [0, 1]},
+        {"path": f"{PR334_AF_PAID_FUTURES_DIR}/owner_section_7et.md",
+         "scope_query_indexes": [2, 3]},
+        {"path": f"{PR334_AF_PAID_FUTURES_DIR}/owner_task_delta.md",
+         "scope_query_indexes": [4]},
+        {"path": f"{PR334_AF_PAID_FUTURES_DIR}/PROOF_RU.md",
+         "scope_query_indexes": [4, 5]},
+        {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+         "scope_query_indexes": [5]},
+        {"path": "03_FORMALIZATION/D0/Research/NativePaidClockCredit.lean",
+         "scope_query_indexes": [5]},
+    ],
+    "scope_review": (
+        f"This case pins the two-path #334 continuation at {_pr334_af_delta['owner_head']}: "
+        "§7es realizes one exact 32-call coherent AF cut on all 64 columns and keeps its "
+        "growing clock and preparation/price residuals; §7et gives equal whole-AF records "
+        "with a paid future that separates the histories and a rational complete-price gap. "
+        "The finite counterexample rules out factoring the full price through that AF record "
+        "alone in this declared grammar. It does not select physical Info, bind primitive "
+        "Cost/work to the same admitted task, prove GR source transport, or close GR. The "
+        "Lean ER5/ER6 result remains conditional on explicit native price maps; GR_closed=false."
+    ),
+})
+
+PR334_SEVEN_REPORT_DIR = (
+    "02_REGISTRY/research/sources/d0_pr334_seven_report_prefix_2026-11-04"
+)
+PR334_SEVEN_REPORT = (
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+    "reports/pr334_seven_report_prefix_delta_2026-11-04_6164fe5"
+)
+_pr334_seven_report = json.loads(
+    (ROOT / PR334_SEVEN_REPORT / "owner_delta_manifest.json")
+    .read_text(encoding="utf-8")
+)
+CASES.append({
+    "id": "pr334-seven-report-prefix-source-and-retained-record-cut",
+    "queries": [
+        "actual seven-report prefix before the shared comparator seven coarse events READY REPORT",
+        "F_rec F0 Gamma sum pi_b I(Y_b) E readiness uniform M2/K 54272000000000/825564069",
+        "finite palette SAM tangent dπ π v dot w p cubed covariance p inverse right lift norm",
+        "full record D_prefix D rho E_SAM rho sum pi H(mu) F_rec one-bit SAM entropy derivative",
+        "born marker 13 calls 2G 4SourceI 7CX C_old C_keep cmin 52947/131072 retained REPORT baseline",
+        "7eu source result 98 controls native marker 37 check_marker normal optimized base e7e12c7 inputs hash",
+        "источник полного семиотчётного префикса цена удержания записи conditional report pinching increment",
+    ],
+    "required_refs": [
+        f"{PR334_SEVEN_REPORT_DIR}/owner_section_7eu.md",
+        f"{PR334_SEVEN_REPORT_DIR}/PROOF_RU.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+    ],
+    "required_sources": [
+        {"path": f"{PR334_SEVEN_REPORT_DIR}/owner_section_7eu.md",
+         "scope_query_indexes": [0, 1, 2, 3, 4, 5]},
+        {"path": f"{PR334_SEVEN_REPORT_DIR}/PROOF_RU.md",
+         "scope_query_indexes": [6]},
+        {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+         "scope_query_indexes": [5, 6]},
+    ],
+    "scope_review": (
+        f"This case pins the latest two-path #334 addition at {_pr334_seven_report['owner_head']}. "
+        "It retrieves the actual H.1 seven-event prefix differential, its finite-SAM right lift "
+        "and readiness-uniform remainder, plus the full SAM/SITE record increment and charged "
+        "retention marker. The source remains conditional on its declared H.1 maps and does not "
+        "bind complete physical Cost-Info-work, task admission or Einstein selection. No Lean "
+        "theorem for §7eu is claimed; GR_closed=false."
+    ),
+})
+
+PR334_RETAINED_REPORT_DIR = (
+    "02_REGISTRY/research/sources/d0_pr334_retained_report_paid_decoder_2026-11-04"
+)
+PR334_RETAINED_REPORT = (
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+    "reports/pr334_retained_report_paid_decoder_delta_2026-11-04_89707e8"
+)
+_pr334_retained_report = json.loads(
+    (ROOT / PR334_RETAINED_REPORT / "owner_delta_manifest.json")
+    .read_text(encoding="utf-8")
+)
+CASES.append({
+    "id": "pr334-retained-report-complete-price-paid-decoder",
+    "queries": [
+        "7ev actual raw REPORT failure branch beta0 C_keep (1-beta0)d0 d beta0 full source not assume beta0 r0",
+        "full growing clock determinant det(I-tF) det(I-(F+tQ)D_old) noncommuting age projectors full heat H J",
+        "three genuine 37-call equal-inventory record preparations nonzero full-price source paid decoder reactions",
+        "49-call paid decoder 11-call computational reader three 60-call same endpoint readout complete price all 64 columns",
+        "C_read sqrt(p) C_keep p C_drop feedback-source multiplier p squared one minus zeta full residual heat",
+        "7ev exact 256 fine outcomes checkers 87 53 70 60 79 ordinary optimized owner receipts 6164fe5",
+        "цена удержанного REPORT полный растущий clock оплаченный decoder 7ev β0 источник Эйнштейн не закрыт",
+    ],
+    "required_refs": [
+        f"{PR334_RETAINED_REPORT_DIR}/owner_section_7ev.md",
+        f"{PR334_RETAINED_REPORT_DIR}/PROOF_RU.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+    ],
+    "required_sources": [
+        {"path": f"{PR334_RETAINED_REPORT_DIR}/owner_section_7ev.md",
+         "scope_query_indexes": [0, 1, 2, 3, 4, 5]},
+        {"path": f"{PR334_RETAINED_REPORT_DIR}/PROOF_RU.md",
+         "scope_query_indexes": [6]},
+        {"path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+         "scope_query_indexes": [5, 6]},
+    ],
+    "scope_review": (
+        f"This case pins #334 §7ev at {_pr334_retained_report['owner_head']}: it carries the "
+        "retained REPORT failure marginal, complete original H+J and noncommuting growing-clock "
+        "heat, actual equal-inventory preparation sources, and paid decoder/reader constraints. "
+        "The proof substitutes only this record/decoder slice. Same-execution physical Cost-Info-work, "
+        "full-task admission, remaining source rows and Einstein selection remain open; no §7ev Lean "
+        "theorem or GR closure is claimed, GR_closed=false."
+    ),
+})
+
+PR334_LATEST_DELTA_DIR = (
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+    "reports/pr334_latest_delta_2026-11-04_adc5bd97"
+)
+PR334_LATEST_SOURCE_DIR = (
+    "02_REGISTRY/research/sources/d0_pr334_paid_clock_credit_2026-11-04"
+)
+_pr334_latest_delta = json.loads(
+    (ROOT / PR334_LATEST_DELTA_DIR / "owner_delta_manifest.json").read_text(encoding="utf-8")
+)
+CASES.append({
+    "id": "pr334-one-sided-clock-credit-and-retained-parry-record",
+    "queries": [
+        "polynomial records sublinear negative work limsup K_m/m≤0 does not imply K_m=o(m) matching lower bound signed Info very negative",
+        "registered stationary Parry prefix exact entropy H_phi(pi)+(n−1) Iter25",
+        "ER7b retained terminal fibre no-11 words F_(n+2) 144 histories dimension64",
+        "NativePaidClockCredit er5_required_net_credit er6_finite_telescoping_lower_bound ActionProtocol repeatedRoundTripCost ActionExcessProfile",
+        "entropy upper bound sublinear negative work imply only limsup I_m−W_m/m≤0 not two-sided o(m)",
+        "original_roundtrip_forces_paid_history distinguishable forward transition reverse two primitive action quanta",
+    ],
+    "required_refs": [
+        f"{PR334_LATEST_SOURCE_DIR}/owner_section_7er_D_delta.md",
+        f"{PR334_LATEST_SOURCE_DIR}/owner_task_delta.md",
+        f"{PR334_LATEST_SOURCE_DIR}/PROOF_RU.md",
+        "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+        "03_FORMALIZATION/D0/Research/NativePaidClockCredit.lean",
+        "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+    ],
+    "required_sources": [
+        {"path": f"{PR334_LATEST_SOURCE_DIR}/owner_section_7er_D_delta.md",
+         "scope_query_indexes": [1, 2]},
+        {"path": f"{PR334_LATEST_SOURCE_DIR}/owner_task_delta.md",
+         "scope_query_indexes": [4]},
+        {"path": f"{PR334_LATEST_SOURCE_DIR}/PROOF_RU.md",
+         "scope_query_indexes": [3]},
+        {"path": "03_FORMALIZATION/D0/Research/NativePaidClockCredit.lean",
+         "scope_query_indexes": [3]},
+        {"path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+         "scope_query_indexes": [5]},
+    ],
+    "scope_review": (
+        f"The current #334 owner snapshot {_pr334_latest_delta['owner_head']} corrects the earlier two-sided o(m) shorthand to the "
+        "one-sided limsup net-credit condition actually needed by ER5/ER6, preserves the "
+        "ActionExcessProfile freedom in full primitive Cost, and consumes the owned Parry "
+        "entropy-rate result only as a candidate whose same-stage record/preparation map is "
+        "still missing. A mutually distinguishable retained no-11 record also grows the "
+        "terminal fibre and changes the full heat price. NativePaidClockCredit formalizes "
+        "the conditional arithmetic from the existing ActionProtocol floor and explicit "
+        "same-history price/cost premises; it does not construct those physical maps, select "
+        "Info/work, prove admission, or close GR."
+    ),
+})
+
+
 def _path_matches(actual: str, expected: str) -> bool:
     actual = actual.replace("\\", "/").casefold()
     expected = expected.replace("\\", "/").casefold()

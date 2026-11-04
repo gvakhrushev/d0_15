@@ -1,0 +1,1138 @@
+{
+  "birth": {
+    "before_all_calls": true,
+    "from_dim": 32,
+    "new_wire": 4,
+    "to_dim": 64,
+    "vector": [
+      "sqrt(p)",
+      "p"
+    ]
+  },
+  "chronology": "P1(identity12); M_q(13); P_k(back12); P_(2-k)(decoder12)",
+  "schema": "d0.retained-record-paid-decoder-words/1",
+  "source_owner": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+  "source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "wire_roles": {
+    "P": 0,
+    "Spin": [
+      1,
+      2
+    ],
+    "actual_report": 3,
+    "born_record": 4,
+    "oldRIGHT": 5
+  },
+  "words": {
+    "back_minus": {
+      "blank_wires": [],
+      "gates": [
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            3,
+            0
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        }
+      ],
+      "old_right": [
+        5
+      ],
+      "profile": "G_CX_SOURCE_I",
+      "qubits": 6,
+      "report_bits": [
+        4
+      ],
+      "schema": "d0.native-execution/1",
+      "source_port": 0,
+      "source_spin": [
+        1,
+        2
+      ]
+    },
+    "back_plus": {
+      "blank_wires": [],
+      "gates": [
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            3,
+            0
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        }
+      ],
+      "old_right": [
+        5
+      ],
+      "profile": "G_CX_SOURCE_I",
+      "qubits": 6,
+      "report_bits": [
+        4
+      ],
+      "schema": "d0.native-execution/1",
+      "source_port": 0,
+      "source_spin": [
+        1,
+        2
+      ]
+    },
+    "back_zero": {
+      "blank_wires": [],
+      "gates": [
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            3,
+            0
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "G",
+          "wires": [
+            0
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "SourceI",
+          "wires": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            4,
+            0
+          ]
+        },
+        {
+          "op": "CX",
+          "wires": [
+            0,
+            4
+          ]
+        }
+      ],
+      "old_right": [
+        5
+      ],
+      "profile": "G_CX_SOURCE_I",
+      "qubits": 6,
+      "report_bits": [
+        4
+      ],
+      "schema": "d0.native-execution/1",
+      "source_port": 0,
+      "source_spin": [
+        1,
+        2
+      ]
+    }
+  }
+}

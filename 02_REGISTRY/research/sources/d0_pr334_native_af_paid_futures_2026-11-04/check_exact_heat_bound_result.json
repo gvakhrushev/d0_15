@@ -1,0 +1,44 @@
+{
+  "J_lower_rational": "177147/400000000000",
+  "checks": [
+    "exact Golden collar 3/5 < p < 5/8",
+    "beta=2p2=2(1-p) has strict collar 3/4 < beta < 4/5",
+    "actual common whole-clock dimension and all modes",
+    "strict full heat contrast below 1e-80",
+    "exact rational lower bound for J1-J0",
+    "full B1-B0 strictly exceeds 4e-7",
+    "complete pair plus common observer counts its extra54calls",
+    "paid-observer full heat contrast below 1e-170",
+    "1-2p5 is strictly greater than 3/4",
+    "full price contrast with paid54-call observer exceeds 2e-6"
+  ],
+  "full_price_gap_strict_lower": "4/10000000",
+  "heat_upper_rational": "2787593149816327892691964784081045188247552/485823830873208409132336346399781564720069326208737170582417493690363855779915471834462525890785400406457483768463134765625",
+  "observer_J_lower_rational": "6561/2560000000",
+  "observer_counts": {
+    "complete_D": 7792,
+    "complete_N": 123,
+    "complete_births": 2,
+    "complete_calls": 121,
+    "extra_calls": 54,
+    "full_Hodge_modes": 3311600,
+    "harmonic_offset": 2797328
+  },
+  "observer_full_price_gap_strict_lower": "2/1000000",
+  "observer_heat_upper_rational": "3618502788666131106986593281521497120414687020801267626233049500247285301248/132901382640917636911394748250757223567376896612104749416182374187985554396896631083501256225000718622851924330581825462461607182603574711098496414476451036516804893449731415190296213194513262565207727976113855593298662682855137973092496395111083984375",
+  "pair_counts": {
+    "D": 4336,
+    "N": 69,
+    "births": 2,
+    "calls": 67,
+    "full_Hodge_modes": 1842800,
+    "harmonic_offset": 1556624
+  },
+  "scope": {
+    "GR_closed": false,
+    "equal_inventory_means_equal_Cost": false,
+    "physical_Info_selected": false,
+    "universal_same_task_admission": false
+  },
+  "status": "PASS"
+}

@@ -677,6 +677,7 @@ import D0.Research.GoldenCurvatureKernel
 import D0.Research.GoldenCylinderOneStepBridge
 import D0.Research.MemoryTangentSpan
 import D0.Research.NativeHistoryActionResponse
+import D0.Research.NativePaidClockCredit
 import D0.Research.NativeWeightedDiracBoundary
 import D0.Research.NativeWeightedDiracFourierNullModes
 import D0.Research.NativeWeightedDiracLinearOperator

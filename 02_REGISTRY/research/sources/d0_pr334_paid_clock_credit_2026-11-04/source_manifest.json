@@ -1,0 +1,53 @@
+{
+  "schema": "d0-pr334-paid-clock-credit-source-v1",
+  "repository": "gvakhrushev/d0_15",
+  "pull_request": 334,
+  "owner_head": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+  "owner_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "owner_source_file": {
+    "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "blob": "22a8aa12f77cb264d1459b66e4804caab9e104d7",
+    "bytes": 5061506,
+    "sha256": "7f57fa2cbbd0112606905c6decf4831f96cc060ff7c9ea4de04f9924581a22c1",
+    "section": "§7er",
+    "section_line_start": 122055,
+    "section_line_end": 122583
+  },
+  "checker_extraction": {
+    "marker": "<!-- 7er CLOCK CREDIT CHECKER -->",
+    "source_line_start": 122293,
+    "source_line_end": 122444,
+    "local_path": "02_REGISTRY/research/sources/d0_pr334_paid_clock_credit_2026-11-04/check_paid_clock_credit.py",
+    "bytes": 8639,
+    "sha256": "7a3ba5e3a80bbd1c8446d7223879db65d8b336c08411114468c406dc4fe68252",
+    "exact_bytes_from_owner_fence": true
+  },
+  "owner_receipt": {
+    "marker": "<!-- 7er CLOCK CREDIT RESULT -->",
+    "local_path": "02_REGISTRY/research/sources/d0_pr334_paid_clock_credit_2026-11-04/result.json",
+    "bytes": 2036,
+    "sha256": "3075896e9d6130f148f94ccd1dd3eb58b872ccff29074dafc2df50fd3e7f2430",
+    "exact_bytes_from_owner_fence": true,
+    "status": "PASS",
+    "checks": 47,
+    "native_words_sha256": "79cc3cd36d6f275881b14da09ead03bd5e4c09528ca037b737a1dd4f2515945d"
+  },
+  "local_replay": {
+    "python": "3.12.13",
+    "owner_recorded_python": "3.12.14",
+    "numpy": "2.3.5",
+    "sympy": "1.14.0",
+    "ordinary_optimized_stdout_identical": true,
+    "stderr_empty": true,
+    "stdout_sha256": "3075896e9d6130f148f94ccd1dd3eb58b872ccff29074dafc2df50fd3e7f2430",
+    "matches_owner_embedded_receipt": true
+  },
+  "scope": {
+    "Info_selected": false,
+    "work_rebate_excluded_unconditionally": false,
+    "all_durations_same_physical_task_proved": false,
+    "clock_source_binding_proved": false,
+    "new_gravity_root": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "owner_head": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+  "checker_path": "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/oracle_check_composition.py",
+  "checker_sha256": "dee4697552694f569d2b80abe4507b34dac521681eee8f0a07d926fbf814d185",
+  "replay_sha256": "a98524d19afcf6bc9e332a56c53ce19d3f52cd3bd29c1404ea3c66ddf94a1bac",
+  "status": "PASS_SCOPED_SOURCE_KAPPA_COMPOSITION",
+  "named_check_count": 197,
+  "Lean_or_CI_run": false,
+  "scope": "source kappa composition only; no physical closure"
+}

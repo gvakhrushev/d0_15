@@ -14685,3 +14685,300 @@ The #334 owner added §7dy in [`f8a1d89329e5f44a8f49118dac004d1bc46cc417`](https
 §7dy replaces the supplied controlled-QUERY/programme inputs with an actual 17-call processor in the original `G/CX/SourceI` alphabet and three paid 12-call preparations. All four before/after histories have 47 calls and inventory `27 CX + 6 G + 14 SourceI`; the pure base retains the old37 prepared output on every protected input. The complete calculation retains thermal dimension 65,536, input rank 16 and 1,309,081,600 Hodge modes. Each one-sided preparation costs about `4.014779563459e-7` above the pure word; the coherent echo costs about `6.568449419144e-6` less with exact heat cancellation. The 47-call word also pays a positive absolute clock increment of about `0.313155728546` over the old37 word.
 
 The checker covers all 560 local real skew directions. All 24 independent preparation rows vanish, and the new controlled-`CX` source retracts to the existing QUERY source in its single selected local direction. Fourteen actual hardware-call cotangents remain nonzero, including each selected-branch `G_11` source at about `3.500306504324e-6`; all hardware sources are not solved. The abstract processor is now implemented and priced on this finite carrier, but the physical QUERY/hardware variation domain, primitive admission, physical law selecting a programme, and GR transport/refinement remain open. The 156-check replay is pinned in the intake; no Lean/CI replay or selector was added. `GR_closed=false`.
+
+## #334 current owner delta at `e94e518c` — exact pins and paid-clock credit
+
+The live #334 branch is
+[`e94e518c43b748e6c4fff1d4db364a6265bbf44d`](https://github.com/gvakhrushev/d0_15/commit/e94e518c43b748e6c4fff1d4db364a6265bbf44d)
+(`OPEN`, Draft, conflicting with `main`). It descends from the already
+integrated `f8a1d893` §7dy checkpoint by 68 commits and changes 68 paths.
+The exact path/commit/blob/byte-count/SHA-256 map is
+[owner_delta_manifest.json](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_owner_delta_2026-11-04_e94e518c/owner_delta_manifest.json).
+It carries 17 topic queries; 67 changed artifacts fit the search reader's
+4 MB content limit. The updated 5,061,506-byte cumulative source owner remains
+an exact Git pin without a duplicated full snapshot; its small current task
+excerpt and the independently extracted §7er checker remain directly
+searchable.
+
+The 13 new A4D result cards compose the following scoped work: canonical
+balanced reflection with its full heat and fixed intrinsic effect; coherent
+scalar-unit calibration; final regular κ-source composition; H12 Cauchy
+prediction/energy input; internal reference cross-calibration; report-jet
+universality; native-word normal source; shared-controller thermal stationarity
+and source loss; post-controller spatial-heat mismatch; internal material-clock
+versus Lorentz source; full retained-response concentration and Einstein
+pullback; the noncommuting native return/record source gate; and the scoped
+native κ contract. Their exact proof files, checkers, receipts and changed
+existing owner/task bytes are all individually pinned in the manifest.
+
+These outcomes are not interchangeable. In particular, the configured
+retained-response route gives a conditional κ transport on its declared
+regular full-CAR/ten-sign/READY-and-REPORT graph, with its full-source rows,
+norms and recovery hypotheses retained. The native-word result supplies a
+source on its stated endpoint-small fixed-task domain; its physical admission
+is still open. The post-controller spatial-heat test rejects that specific
+C² spatial-only repair. The joint thermal calculation finds source loss rather
+than an Einstein selector. The latest scoped contract records A as written,
+C as a conditional material construction, and B/D as open. No result selects
+the actual full physical task or discharges full Book03 Cost−Info/work binding.
+
+The latest owner addition, §7er, makes the missing price binding quantitative.
+On the existing paid `CX;CX` duration family, its exact checker exhibits two
+born WORK spectators whose common target readout distinguishes both steps.
+Once the genuine native `ActionProtocol`/Cost map applies, this gives
+`C_m ≥ 2m`; the original complete `H+J` master grows only logarithmically
+because the full `425 D_m` Hodge modes and unchanged `J_0` are retained. Under
+the still-hypothetical same-history binding
+`S_m=C_m−I_m+W_m=κB_m+b+e_m`, this forces
+
+\[
+I_m-W_m\ge 2m-\kappa J_0
+-\frac{\kappa}{\beta}\log\!\bigl(425(D_0+2md)\bigr)-b-e_m.
+\]
+
+This is a necessary credit, not a definition of Info, a ban on negative work
+rebates, or proof that differing durations belong to one admitted physical
+task. The finite `m=1024` gap above 1970 still assumes unit calibration, a
+full-carrier record-entropy cap and no extra work rebate. The result does not
+invalidate the existing fixed-graph κ theorem or its field equations. Its next
+parent application is to compute actual `I_m,W_m` on the same execution or to
+prove the native rule and boundary reaction that exclude these duration edges.
+The local extraction, exact owner receipt, and runtime caveat are recorded in
+[`d0_pr334_paid_clock_credit_2026-11-04`](sources/d0_pr334_paid_clock_credit_2026-11-04/PROOF_RU.md).
+
+The prior 17-checker suite was run at `4cde6a71`; all 17 checker blobs are
+unchanged through `e94e518c`, so this remains a precisely scoped replay rather
+than a claimed rerun on the newer source commit. Sixteen saved outputs match
+their statuses/counts and stored checker hashes where present; eight are
+byte-identical to saved output, and the rest include platform-sensitive
+floating diagnostics. One source-prediction checker has no saved JSON result.
+The separate source-composition oracle reports 197 named checks. The new §7er
+checker was extracted and freshly run at `e94e518c`: 47 checks, ordinary and
+`-O -W error` byte-identical, exact match to the embedded owner receipt, with
+Python 3.12.13/NumPy 2.3.5/SymPy 1.14.0. The owner records Python 3.12.14; the
+local replay is not represented as using that exact micro-version. See the
+[checker replay summary](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_owner_delta_2026-11-04_e94e518c/checker_replay_summary.json)
+and [oracle replay](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_owner_delta_2026-11-04_e94e518c/oracle_composition_replay.json).
+
+The nine-package archive at `063f643d` and the moving-cut source at `eebcb5e`
+are ancestors of this owner head and were already integrated and indexed in
+the preceding #402 record above; this intake adds no second archive copy.
+No Lean source, claims, assembly acceptance, or scientific status changed in
+the 68-path #334 delta. The extraction is replay evidence, not a Lean build or
+CI run. #334 remains open/Draft, the #402 task remains `IN_PROGRESS`, and
+`GR_closed=false`.
+
+## #334 owner continuation at `adc5bd9` — one-sided credit and retained-record price
+
+The next live owner snapshot is
+[`adc5bd97140caf18270b7b5e566a399946162039`](https://github.com/gvakhrushev/d0_15/commit/adc5bd97140caf18270b7b5e566a399946162039).
+Against the previously pinned `e94e518c` it changes exactly two existing
+owner paths: the current #334 task brief and the cumulative §7er source file.
+Their blob IDs, byte counts, whole-file SHA-256 values and the exact extracted
+§7er/task excerpts are in the
+[latest-delta manifest](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_latest_delta_2026-11-04_adc5bd97/owner_delta_manifest.json).
+The source owner is 5,066,426 bytes, so it remains an exact Git pin; the
+6,265-byte relevant §7er.D excerpt is separately searchable at
+[`owner_section_7er_D_delta.md`](sources/d0_pr334_paid_clock_credit_2026-11-04/owner_section_7er_D_delta.md).
+
+The owner corrects the prior shorthand: polynomially many retained states and
+sublinear negative work yield the one-sided bound
+`limsup (I_m-W_m)/m ≤ 0`, not two-sided `I_m-W_m=o(m)`. The same ER5/ER6
+consequence follows; signed Info could still be very negative. `ActionProtocol`
+supplies only the unit floor, while `ActionExcessProfile` leaves arbitrary
+nonnegative excess in actual primitive Cost. The complete-price conclusion
+therefore still requires the same-execution Cost/Info/work map and binding.
+
+§7er.D.1 reuses Book06 Iter25's stationary Parry law as a candidate record:
+for `p=φ⁻¹`, `P=[[p,p²],[1,0]]` and `π=(1,p²)/(1+p²)`, the owner gives
+`H_φ(R₀,…,R_(n−1))=H_φ(π)+(n−1)`. This is not assigned to Book Info or to
+each paid stage. The actual stage/record/preparation map, initial knowledge
+and seed conditioning remain open. If all legal length-`n` no-`11` words are
+mutually distinguishable terminal records, their terminal fibre has at least
+`F_(n+2)` states (144 at `n=10`). Under the same complete growing-clock/RAW
+construction, that carrier raises heat to at least
+`β⁻¹ log(359F_(n+2))`; for `n=2m+O(1)` it is linear in `m`, so this record
+cannot be combined with the original six-wire clock's logarithmic heat while
+keeping the old complete price. The extended feedback, primitive Cost, Info,
+work and joint source are not computed.
+
+I integrated the algebraic ER5/ER6 consequence in
+[`NativePaidClockCredit.lean`](../../03_FORMALIZATION/D0/Research/NativePaidClockCredit.lean).
+It calls the owned `ActionProtocol` round-trip theorem, derives the `2m`
+primitive floor for repeated distinguishable returns, and then proves the
+necessary net-credit inequality from explicit hypotheses for the actual Cost
+map, logarithmic Book bound, fixed `κ>0` and same-history complete-price
+binding. Its finite ER6 lemma takes only the one-sided change bounds on credit
+and Book price. Both the physical map into `ActionProtocol` and the full
+Info/work price remain caller-supplied premises; no Parry stage map or physical
+selector is formalized. Narrow Lean build passed under Lean 4.30.0. The module
+is registered as explicit support and included in generated `D0.All`;
+at the historical `adc5bd9` intake checkpoint, a full `D0.All` build and final
+integration checks had not yet been run.
+
+The current owner task reports independent analytical review, exact Parry
+stationarity/entropy-rate checks, and 144 admissible words at length 10. I
+verified both changed files against `git show adc5bd9`, extracted the exact
+updated §7er.D and task sections, and confirmed the embedded 47-checker code
+and receipt remain byte-identical to `e94e518c`. The checker was **not** rerun
+at `adc5bd9`; the earlier recorded 47-check replay remains specifically an
+`e94e518c` replay. The new #402 cold-start case checks retrieval of the
+corrected one-sided statement, its Lean conditional formalization and exact
+owner excerpt. No claim or assembly acceptance changes; #334 remains
+OPEN/Draft/conflicting, `GR_closed=false`, and the original full physical
+source/application premises remain open.
+
+## #334 continuation at `e7e12c7` — actual AF cut and paid-future counterexample
+
+The live #334 branch advanced from `adc5bd97140caf18270b7b5e566a399946162039` to
+[`e7e12c70eca25f724c609d813bd09d8c85c44d5`](https://github.com/gvakhrushev/d0_15/commit/e7e12c70eca25f724c609d813bd09d8c85c44d5).
+The exact two-path owner delta, complete §7es/§7et excerpts, task addendum,
+checker blocks and embedded receipts are pinned in the
+[owner-delta manifest](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_af_paid_futures_delta_2026-11-04_e7e12c7/owner_delta_manifest.json).
+The 5,145,240-byte cumulative mathematical owner remains a Git pin; it is not
+duplicated into this intake. The directly searchable source bundle and local
+integration summary are in
+[`d0_pr334_native_af_paid_futures_2026-11-04`](sources/d0_pr334_native_af_paid_futures_2026-11-04/PROOF_RU.md).
+
+§7es realizes a genuine 32-call `G/CX/SourceI` coherent AF cut after two
+paid births. It retains all 64 columns, arbitrary Spin and immutable oldRIGHT;
+the endpoint inventory is `8G+16SourceI+8CX`. The complete growing clock has
+34 stages, `D=2096`, input rank 16 and 890,800 Hodge modes. The checker gives
+12, and the exact cut checker gives 52 controls. The output code cost
+`2+p³=√5` is expressly not the cost of the 34-stage execution. Full preparation
+rows, the entropy source, and the total `dC_phys+dW+dA_AF−dH−dJ` residual are
+kept; no physical Info or primitive-price map is selected.
+
+§7et constructs two equal-duration, equal-inventory 67-call histories whose
+whole AF block restrictions agree on every input. One common, actual,
+54-call paid future distinguishes them. Exact rational heat-tail and feedback
+bounds give `Δ(H+J)>4·10⁻⁷`; pricing the common future gives a complete-clock
+gap `>2·10⁻⁶`. The pair uses `N=69`, `D=4336`; the comparison including the
+future has `N=123`, `D=7792`. The 75-control native-future checker and
+10-control exact-heat checker match their owner receipts in both ordinary
+and optimized warning-as-error runs.
+
+This consumes the endpoint-only AF transfer proposal with a finite
+counterexample: full Book price on this declared native grammar is not a
+function of the AF block state and inventory alone. It does not infer physical
+dephasing, same-task admission, a physical Info law, Cost/work binding, a GR
+source transport or continuum recovery. No new Lean theorem was claimed for
+these matrix witnesses; the previously integrated
+[`NativePaidClockCredit.lean`](../../03_FORMALIZATION/D0/Research/NativePaidClockCredit.lean)
+still formalizes only conditional ER5/ER6 credit consequences with the actual
+price and Cost maps explicit as premises.
+
+I replayed all four checker scripts against the exact `e7e12c7` source
+snapshot. Their 52+12+75+10 checks passed, and every stdout receipt is
+byte-identical to the corresponding embedded owner JSON. The strict clock
+replay was clean under Python 3.13.14 / NumPy 2.3.5. The older local Python
+3.9.6 / NumPy 2.0.2 / Apple Accelerate combination emitted `matmul`
+warnings; its non-strict output was still identical, and finite/scalar/`einsum`
+cross-checks matched exactly. Both environments and the warning investigation
+are preserved in the
+[checker replay report](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_af_paid_futures_delta_2026-11-04_e7e12c7/checker_replay.json).
+The local checker files and section/task extracts are independently guarded by
+the new exact-pin retrieval regression and included in the next complete
+cold-start run.
+
+The nine-package archive (`063f643d`) and moving-cut source (`eebcb5e`) remain
+ancestors and are integrated by the earlier intake; no second archive was
+created. Claims, assembly acceptance, lifecycle state, `positive_gr`, RAW216,
+full physical H+J+R selection and GR status are unchanged. #334 remains
+OPEN/Draft/CONFLICTING, #402 remains the existing IN_PROGRESS Draft PR, and
+`GR_closed=false`.
+
+## #334 continuation at `6164fe5` — seven-report source and charged record retention
+
+The latest fetched #334 head is
+[`6164fe50b875a4876f8c17eb22d814cdc7937377`](https://github.com/gvakhrushev/d0_15/commit/6164fe50b875a4876f8c17eb22d814cdc7937377),
+after the previously integrated `e7e12c7` checkpoint. The exact two-path
+delta, extracted §7eu, task append, six base-input hashes and owner checker
+receipts are pinned in the
+[§7eu owner manifest](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_seven_report_prefix_delta_2026-11-04_6164fe5/owner_delta_manifest.json).
+The 5,192,248-byte cumulative owner remains pinned without another full copy;
+the source bundle is
+[`d0_pr334_seven_report_prefix_2026-11-04`](sources/d0_pr334_seven_report_prefix_2026-11-04/PROOF_RU.md).
+
+The original seven READY∧REPORT events on one H.1 site now have an explicit
+conditional record functional. It decomposes into a fixed baseline, positive
+`Γ Σ_b π_b I(Y_b)` with the original field/matter ratio, and a finite-palette
+remainder. Its normalized second-derivative bound stays finite as the writer
+readiness tends to zero. The finite SAM preparation tangent and right lift are
+constructed, with moving density, preparation, quadrature, SITE and readiness
+rows retained. The late comparator contributes zero to this prefix observable,
+so the conditional prefix source passes that specific shared-response test.
+It is not yet the complete physical price.
+
+The full record increment also contains incoming SAM coherence and SITE
+entropy. A real one-bit SAM tangent has positive entropy derivative even
+where the current field source vanishes. The second finite checker constructs
+an all64-column 13-call marker plus a paid record birth; keeping one baseline
+REPORT bit changes the original cold return by more than
+`c_min α z I`, with `c_min>52947/131072` under the owner’s explicit original
+selector/port hypotheses. Reversing and erasing the record still costs its
+birth and clock. This blocks treating prefix readback/retention as an unpaid,
+unchanged ledger.
+
+I replayed both extracted checkers from the `6164fe5` owner with its pinned
+native input at base `e7e12c7`. All six input hashes and all eight owner
+artifacts match. Ordinary and `-O -Werror` runs are byte-identical: 98 source,
+normalization and right-lift controls; 37 native marker controls; the marker
+word and receipt also match their embedded hashes. The replay is on Python
+3.9.6 / SymPy 1.14.0. It does not execute the full H.1 bank or its full heat.
+There is no new Lean proof of §7eu; its conditional source, complete-record
+terms and finite marker remain explicit research/finite-check inputs. This
+intake is included in the final combined cold-start case set.
+
+The parent now has the actual geometric direction at this prefix, plus its
+full-record and return corrections. The remaining same-execution application
+must bind the selected readout, SAM/SITE/preparation, actuator Cost/work,
+record birth and whole clock to the original H+J+R and derive their joint
+stationary source. No task necessity, physical Info selection, GR admission
+or closure has been claimed. #334 remains OPEN/Draft/CONFLICTING, #402 remains
+the existing IN_PROGRESS Draft, and `GR_closed=false`.
+
+## #334 continuation at `89707e8` — complete price and actual decoder constraints
+
+The #334 owner advanced from `6164fe50b875a4876f8c17eb22d814cdc7937377` to
+[`89707e8ad4787ace2da9d70b723b799094cee4d9`](https://github.com/gvakhrushev/d0_15/commit/89707e8ad4787ace2da9d70b723b799094cee4d9).
+The exact two-path delta, task append, six base-input pins, all 22 declared
+artifacts and complete ordinary/optimized replay are recorded in the
+[§7ev owner manifest](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_retained_report_paid_decoder_delta_2026-11-04_89707e8/owner_delta_manifest.json).
+The cumulative source is retained as an exact Git pin; the 138,527-byte §7ev
+excerpt, task delta, checker source and outputs are in
+[`d0_pr334_retained_report_paid_decoder_2026-11-04`](sources/d0_pr334_retained_report_paid_decoder_2026-11-04/PROOF_RU.md).
+
+§7ev carries the actual raw REPORT failure marginal `β₀` into the retained
+corner `C_keep=(1−β₀)d₀` and its full differential, including `dβ₀`, the
+reference and readiness terms. It specializes to `β₀=r₀` only for the separately
+constructed independent fresh READY-flag implementation with its transport
+condition; the smaller representative is not silently promoted to the full
+bank. The full growing-clock determinant is reduced by an exact Schur identity
+with all old age projectors retained and no commutation assumption. The heat
+checker tests the identity and derivative on a rational budget matrix fixture;
+it does not diagonalize the full H.1 operator.
+
+The actual 37-call equal-inventory preparation witnesses expose a nonzero
+complete-price source row. A paid 49-call decoder solves the incoming,
+outgoing and decoder constraints through explicit reactions, while the linked
+`b/d` row has constant complete Book price. An additional paid 11-call
+computational reader is included in the endpoint, source and price: three
+60-call representatives then agree on the whole endpoint, readout and price.
+On the stated fixed-calibration chart the geometric source factor is bounded
+between `p` and `√p`, and the feedback-source multiplier between
+`p²(1−ζ)` and `p/(1−ζ)`; the report preserves its failure/reference residuals,
+readiness, measure and full heat terms.
+
+I replayed the six embedded checker packages on Python 3.9.6, normally and
+with `-O -W error`: 409 checks passed, all outputs matched the owner receipts,
+and generated 37-, 49- and 60-call words matched their declared SHA-256 values.
+The heat check is the owner-declared rational budget fixture, not a full H.1
+run. The result is a useful exact native-source and full-price application, but
+it does not yet bind physical Cost−Info/work to the same admitted task, prove
+all late controller/scene/bank rows, or provide the selected full Einstein
+source. No new Lean theorem is claimed for this checker bundle: its finite
+matrix and word-specific maps do not discharge those missing native interfaces.
+The existing `NativePaidClockCredit.lean` remains conditional on explicit
+physical price maps. #334 stays OPEN/Draft/CONFLICTING, #402 remains the same
+IN_PROGRESS Draft PR, and `GR_closed=false`.

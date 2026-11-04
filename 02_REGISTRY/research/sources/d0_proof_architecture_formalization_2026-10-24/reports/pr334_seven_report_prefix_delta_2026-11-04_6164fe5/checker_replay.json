@@ -1,0 +1,82 @@
+{
+  "all_input_pins_verified": true,
+  "all_owner_declared_artifacts_verified": true,
+  "checker_count": 2,
+  "checkers": [
+    {
+      "id": "prefix_source",
+      "modes": {
+        "optimized": {
+          "checks": 98,
+          "exit_code": 0,
+          "matches_owner_output_hash": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "ea62a28db9a574bd7eb7fc891afcbb13ec62177300cdd05ad1d0795ee493cdb0"
+        },
+        "ordinary": {
+          "checks": 98,
+          "exit_code": 0,
+          "matches_owner_output_hash": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "ea62a28db9a574bd7eb7fc891afcbb13ec62177300cdd05ad1d0795ee493cdb0"
+        }
+      },
+      "owner_receipt_path": "02_REGISTRY/research/sources/d0_pr334_seven_report_prefix_2026-11-04/check_prefix_source_result.json",
+      "owner_receipt_sha256": "ea62a28db9a574bd7eb7fc891afcbb13ec62177300cdd05ad1d0795ee493cdb0",
+      "path": "02_REGISTRY/research/sources/d0_pr334_seven_report_prefix_2026-11-04/check_prefix_source.py",
+      "sha256": "59c80c10e6eb6f30e4bd5cad8b46012a442158c391a401b0b20266215b12328c"
+    },
+    {
+      "id": "native_marker",
+      "modes": {
+        "optimized": {
+          "checks": 37,
+          "exit_code": 0,
+          "generated_files": {
+            "native_word.json": "56032fc200a204fd9d38b0ab4b359400083ae0bec59fb4199483476396e51734",
+            "receipt.json": "8064e486a6ed1d0489deef09b47f5086a5b03b6212d97b4a9ab490ec8880d396"
+          },
+          "matches_owner_output_hash": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "3df4bc5f2d913c3c020c8773094c700304211ead48f6894488d2b4f1c8da1425"
+        },
+        "ordinary": {
+          "checks": 37,
+          "exit_code": 0,
+          "generated_files": {
+            "native_word.json": "56032fc200a204fd9d38b0ab4b359400083ae0bec59fb4199483476396e51734",
+            "receipt.json": "8064e486a6ed1d0489deef09b47f5086a5b03b6212d97b4a9ab490ec8880d396"
+          },
+          "matches_owner_output_hash": true,
+          "status": "PASS",
+          "stderr_empty": true,
+          "stdout_sha256": "3df4bc5f2d913c3c020c8773094c700304211ead48f6894488d2b4f1c8da1425"
+        }
+      },
+      "owner_receipt_path": "02_REGISTRY/research/sources/d0_pr334_seven_report_prefix_2026-11-04/marker/receipt.json",
+      "owner_receipt_sha256": "8064e486a6ed1d0489deef09b47f5086a5b03b6212d97b4a9ab490ec8880d396",
+      "path": "02_REGISTRY/research/sources/d0_pr334_seven_report_prefix_2026-11-04/marker/check_marker.py",
+      "sha256": "37266e0a8c1290ad0a81ded11251c5229edfa935776fb9f86466b3b558fa06d0"
+    }
+  ],
+  "input_base_head": "e7e12c70eca25f724c609d813bd09d8c85c44d5c",
+  "input_pin_count": 6,
+  "native_execution_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "ordinary_and_optimized_outputs_identical": true,
+  "owner_declared_artifact_count": 8,
+  "owner_head": "6164fe50b875a4876f8c17eb22d814cdc7937377",
+  "python": "Python 3.9.6",
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-pr334-seven-report-prefix-checker-replay/1",
+  "scope": {
+    "GR_closed": false,
+    "full_physical_price_binding_proved": false,
+    "physical_info_selected": false,
+    "task_admission_forced": false
+  },
+  "status": "PASS",
+  "sympy": "1.14.0"
+}
