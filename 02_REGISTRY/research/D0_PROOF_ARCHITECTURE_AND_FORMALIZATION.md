@@ -17541,3 +17541,15 @@ bindings. The price curve and field chart are not constructed as one admitted
 physical execution; fixed A and the remaining heat, work, clock and source
 rows remain outside. The [independent review and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_field_0ca1_2026-11-05/SUMMARY_RU.md)
 retain the zero-gain and physical selection boundaries.
+
+### Completed full v3 retrieval replay on pinned `b30862d`
+
+The full 414-query replay completed on clean `b30862d47`; the v3 compactor
+then reran discovery with the same implementation and rechecked the bounded
+source pages. Its verified summary finds all 415 required sources in all 50
+search cases; the separate exact-source impact control passes. The raw replay
+itself marks discovery unattested; the verified status applies only after the
+rerun. Semantic review remains manual, and the corpus was checked at endpoints,
+not continuously. This historical result does not establish performance on
+later trees. The [complete split archive, summary and restore verifier](sources/d0_proof_architecture_formalization_2026-10-24/reports/cold_start_v3_full_b308_2026-11-05/SUMMARY_RU.md)
+retain exact provenance and do not establish C0 or GR acceptance.

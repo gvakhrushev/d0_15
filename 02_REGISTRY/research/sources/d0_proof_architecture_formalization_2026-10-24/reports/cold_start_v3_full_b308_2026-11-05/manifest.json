@@ -1,0 +1,31 @@
+{
+  "schema": "d0-v3-full-b308-split-archive-v1",
+  "snapshot_commit": "b30862d47a5972c346d6f6fe9b4cc985d2a86dc7",
+  "full_sha256": "f80fc9113204e48647806fe53ffa568594e833981c59c13677cc7b7aeda9e476",
+  "gzip_sha256": "d06c1f3ecfcebabc8ea4bfa2095a00691d82a20b819a7f731ef7eb2a59b971de",
+  "summary_sha256": "e8fe0ca5eb295e50c6bc22c13fc0675cd6d30ebde260e7525c73e809d0a5c2a9",
+  "search_cases_found_all_sources": 50,
+  "search_cases_total": 50,
+  "queries": 414,
+  "required_sources": 415,
+  "impact": "pass",
+  "discovery_validation": "batched_rerun_same_implementation",
+  "parts": [
+    {
+      "name": "part-000.gzchunk",
+      "bytes": 41943040,
+      "sha256": "96845a9bbaac2f5771c5952bae877faae69f5d1b2f0c331f437a355552de549b"
+    },
+    {
+      "name": "part-001.gzchunk",
+      "bytes": 41943040,
+      "sha256": "ebd2f12207201d754247445a9e17703753dcc3c1128715ed66ace1b2ac478cb7"
+    },
+    {
+      "name": "part-002.gzchunk",
+      "bytes": 41891453,
+      "sha256": "cca3f33f51e13f112af136f6be74cd20445db25587b2e89d0c8fa8e5637ca51b"
+    }
+  ],
+  "GR_closed": false
+}
