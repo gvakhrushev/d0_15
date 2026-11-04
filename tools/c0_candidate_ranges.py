@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify two declared C0 review candidate byte partitions.
+"""Verify pinned C0 review candidate byte partitions.
 
 The primary artifact and both books are read from Git objects through the
 existing c0_book_byte_partition reader supplied via --reader. This verifies
@@ -19,6 +19,7 @@ from typing import Any
 
 PRIMARY = "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
 TITLES = ("Book01 §01.1.8", "Book02 §02.3b")
+BOOK01_0116 = "Book01 §01.1.6"
 OID = re.compile(r"[0-9a-f]{40}\Z")
 SHA = re.compile(r"[0-9a-f]{64}\Z")
 RANGE = r"`\[(\d+),(\d+)\)`"
@@ -71,7 +72,7 @@ def exactly(pattern: str, text: str, label: str) -> tuple[str, ...]:
     return (value,) if isinstance(value, str) else tuple(value)
 
 
-def parse_primary(raw: bytes) -> list[dict[str, Any]]:
+def parse_primary(raw: bytes, *, include_book01_0116: bool = False) -> list[dict[str, Any]]:
     try:
         text = raw.decode("utf-8")
     except UnicodeError as exc:
@@ -79,10 +80,17 @@ def parse_primary(raw: bytes) -> list[dict[str, Any]]:
     header = re.compile(r"(?m)^### C0 source review candidate: ([^\r\n]+)\r?$")
     headings = list(header.finditer(text))
     names = [m.group(1) for m in headings]
-    if len(headings) != 2 or set(names) != set(TITLES):
-        raise VerificationError("expected exactly the two specified candidate sections")
+    expected = set(TITLES)
+    allowed = expected | {BOOK01_0116}
+    if (len(names) != len(set(names)) or not expected.issubset(names)
+            or not set(names).issubset(allowed)):
+        raise VerificationError("expected the specified candidate sections without duplicates")
+    if include_book01_0116 and BOOK01_0116 not in names:
+        raise VerificationError("the requested Book01 §01.1.6 candidate section is missing")
     candidates = []
     for match in headings:
+        if match.group(1) == BOOK01_0116 and not include_book01_0116:
+            continue
         rest = text[match.end():]
         next_heading = re.search(r"(?m)^#{1,3} ", rest)
         section = rest[:next_heading.start()] if next_heading else rest
@@ -90,7 +98,7 @@ def parse_primary(raw: bytes) -> list[dict[str, Any]]:
         commit, = exactly(r"\bsnapshot\s+`([0-9a-f]{40})`", section, "source snapshot")
         path, blob = exactly(r"`(01_BOOKS/BOOK_[^`\r\n]+\.md)`\s+has\s+Git\s+blob\s+`([0-9a-f]{40})`",
                              section, "source path and blob")
-        expected_prefix = "01_BOOKS/BOOK_01_" if title == "Book01 §01.1.8" else "01_BOOKS/BOOK_02_"
+        expected_prefix = "01_BOOKS/BOOK_01_" if title.startswith("Book01 ") else "01_BOOKS/BOOK_02_"
         if not path.startswith(expected_prefix):
             raise VerificationError("candidate title and book path disagree")
         start, end, checksum = exactly(
@@ -150,10 +158,11 @@ def verify_candidate(reader: Any, repo: Path, candidate: dict[str, Any]) -> dict
     rows = candidate["rows"]
     if not rows:
         raise VerificationError("candidate range table missing")
-    if candidate["title"] == "Book01 §01.1.8":
+    if candidate["title"] in ("Book01 §01.1.8", BOOK01_0116):
         hs, he, _ = rows[0]
         body = data[hs:he]
-        if hs != start or not re.fullmatch(rb"#{1,6} 01\.1\.8[ \t]+[^\r\n]+\n\n", body):
+        anchor = b"01.1.6" if candidate["title"] == BOOK01_0116 else b"01.1.8"
+        if hs != start or not re.fullmatch(rb"#{1,6} " + re.escape(anchor) + rb"[ \t]+[^\r\n]+\n\n", body):
             raise VerificationError("Book01 structural heading and LF are invalid")
         cursor = start
         for a, b, _ in rows:
@@ -190,18 +199,18 @@ def verify_candidate(reader: Any, repo: Path, candidate: dict[str, Any]) -> dict
             "source_path": candidate["path"], "source_blob": oid,
             "section": {"start": start, "end": end, "sha256": candidate["sha256"]},
             "table_ranges": [{"start": a, "end": b,
-                              "role": "structural" if candidate["title"] == "Book01 §01.1.8" and i == 0 else "candidate"}
+                              "role": "structural" if candidate["title"] in ("Book01 §01.1.8", BOOK01_0116) and i == 0 else "candidate"}
                              for i, (a, b, _) in enumerate(rows)],
             "structural_ranges": structural, "byte_coverage": "verified",
             "text_boundaries": "utf8_decodable",
             "semantic_classification": "not_assessed", "acceptance": "not_assessed"}
 
 
-def verify(reader: Any, repo: Path, snapshot: str) -> dict[str, Any]:
+def verify(reader: Any, repo: Path, snapshot: str, *, include_book01_0116: bool = False) -> dict[str, Any]:
     repo = Path(repo).resolve()
     reader._require_repo_root(repo)
     primary_blob, primary = object_at(reader, repo, snapshot, PRIMARY)
-    candidates = parse_primary(primary)
+    candidates = parse_primary(primary, include_book01_0116=include_book01_0116)
     result = [verify_candidate(reader, repo, item) for item in candidates]
     return {"schema": "d0-c0-candidate-range-v1", "snapshot_commit": snapshot,
             "primary_path": PRIMARY, "primary_blob": primary_blob,
@@ -218,12 +227,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", type=Path, required=True)
     parser.add_argument("--snapshot", required=True)
+    parser.add_argument("--include-book01-0116", action="store_true",
+                        help="also verify the separately declared Book01 §01.1.6 candidate range")
     parser.add_argument("--reader", type=Path, required=True,
                         help="path to the existing c0_book_byte_partition.py")
     args = parser.parse_args()
     try:
         reader = load_reader(args.reader)
-        result = verify(reader, args.repo, args.snapshot)
+        result = verify(reader, args.repo, args.snapshot, include_book01_0116=args.include_book01_0116)
     except (VerificationError, OSError, ImportError, ValueError, SyntaxError, AttributeError) as exc:
         result = {"schema": "d0-c0-candidate-range-v1", "status": "unresolved", "reason": str(exc)}
     except Exception as exc:

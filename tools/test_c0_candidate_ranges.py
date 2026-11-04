@@ -199,6 +199,42 @@ class CandidateRangeTests(unittest.TestCase):
         self.assertEqual(view["status"], "candidate_byte_coverage_verified")
         self.assertTrue(all(item["acceptance"] == "not_assessed" for item in view["candidates"]))
 
+    def test_book01_0116_is_explicit_and_checks_actual_source(self):
+        repo = Path(__file__).resolve().parent.parent
+        raw = (repo / check.PRIMARY).read_bytes()
+        default = check.parse_primary(raw)
+        selected = check.parse_primary(raw, include_book01_0116=True)
+        self.assertEqual({x["title"] for x in default}, set(check.TITLES))
+        third, = [x for x in selected if x["title"] == check.BOOK01_0116]
+        self.assertEqual(len(selected), 3)
+        result = check.verify_candidate(self.reader, repo, third)
+        self.assertEqual(result["acceptance"], "not_assessed")
+        self.assertEqual(result["semantic_classification"], "not_assessed")
+
+    def test_architecture_cli_opt_in_rejects_missing_third_section(self):
+        cli = Path(__file__).with_name("proof_architecture.py")
+        proc = subprocess.run([sys.executable, "-X", "utf8", str(cli),
+                               "--repo-root", str(self.root), "--json", "c0-ranges",
+                               "--snapshot", self.snapshot, "--include-book01-0116"],
+                              capture_output=True, text=True, encoding="utf-8")
+        self.assertEqual(proc.returncode, 1)
+        self.assertEqual(json.loads(proc.stdout)["status"], "unresolved")
+        self.assertNotIn("Traceback", proc.stderr)
+
+    def test_book01_0116_fails_closed_for_wrong_section_digest_or_source(self):
+        repo = Path(__file__).resolve().parent.parent
+        raw = (repo / check.PRIMARY).read_bytes()
+        third, = [x for x in check.parse_primary(raw, include_book01_0116=True)
+                  if x["title"] == check.BOOK01_0116]
+        for change in ({"title": "Book01 §01.1.8"},
+                       {"sha256": "0" * 64},
+                       {"blob": "0" * 40}):
+            with self.subTest(change=change):
+                with self.assertRaises(check.VerificationError):
+                    check.verify_candidate(self.reader, repo, {**third, **change})
+        with self.assertRaisesRegex(check.VerificationError, "missing"):
+            check.parse_primary(self.primary.encode(), include_book01_0116=True)
+
 
 if __name__ == "__main__":
     unittest.main()

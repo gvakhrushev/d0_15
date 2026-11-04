@@ -3821,8 +3821,10 @@ def main() -> int:
     c0.add_argument("--snapshot", default="HEAD", help="Git commit or ref to inspect (default: HEAD)")
     books = sub.add_parser("c0-books", help="partition tracked book bytes into unresolved review spans")
     books.add_argument("--snapshot", required=True, help="full Git commit SHA to inspect")
-    ranges = sub.add_parser("c0-ranges", help="verify the two declared book review ranges against pinned bytes")
+    ranges = sub.add_parser("c0-ranges", help="verify declared book review ranges against pinned bytes")
     ranges.add_argument("--snapshot", required=True, help="full Git commit SHA containing the primary artifact")
+    ranges.add_argument("--include-book01-0116", action="store_true",
+                        help="also verify the opt-in Book01 section 01.1.6 range")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -3837,7 +3839,10 @@ def main() -> int:
         else:
             import c0_book_byte_partition, c0_candidate_ranges
         try:
-            result = c0_candidate_ranges.verify(c0_book_byte_partition, root, args.snapshot)
+            result = c0_candidate_ranges.verify(
+                c0_book_byte_partition, root, args.snapshot,
+                include_book01_0116=args.include_book01_0116,
+            )
         except (c0_candidate_ranges.VerificationError, c0_book_byte_partition.EvidenceError,
                 OSError, UnicodeError, ValueError) as exc:
             result = {"schema": "d0-c0-candidate-range-v1",

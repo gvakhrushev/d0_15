@@ -692,6 +692,32 @@ BOOK01_PINS = KernelSectionPins(
     historical_inventory_path="", result_id="lean-verification-core-composition")
 
 
+BOOK01_0116_PINS = KernelSectionPins(
+    section_label="Book01 §01.1.6", source_anchor="01.1.6",
+    units_heading="C0 Book01 01.1.6 mathematical-unit candidates", require_unit_module=True,
+    primary_heading="C0 source review candidate: Book01 §01.1.6",
+    units_sha256="ca7095ac7b65fd27d3f44f29686b74705a1f6214d210e7bdef5bcabd5974d896",
+    primary_sha256="a9d283028959bbae0045e4c02f90c0697a955ac0878dbb1c00fbd1605e86f2e9",
+    source_commit="1eabcccbf7e115c667e9bb8c445ef300107b1493",
+    source_path="01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+    source_blob="eb2d8ea779189084cdaaca717326df88589ec918",
+    section_range=(11972, 13530),
+    section_sha256="ba3fc2c88b388bad890dfcbced2b22343f2019b72d78c927b9488c40ab69afac",
+    module="D0.Foundation.VerificationCore",
+    module_path="03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+    module_blob="01b02ebbe81a62464e81d5c397c101fd60fff4f9",
+    additional_modules=(
+        ("D0.Foundation.FutureExecution", "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+         "065a8f631e65bda8b9bc85a6ff6217de31bdd1f4"),
+        ("D0.Foundation.UncoupledCenterRawWitness", "03_FORMALIZATION/D0/Foundation/UncoupledCenterRawWitness.lean",
+         "bf1468824fe63fc5f2fed59d74d44d1377923fa6"),
+        ("D0.Foundation.FutureShortlexAdapter", "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean",
+         "a4a390673994ecbe7529ebae636ddd3fd6e2db7d")),
+    application_id="lean-verification-core-to-foundation",
+    application_sha256="d53a965e0b258f787078f1e197554f043ae035a5feda7a7b2aca3ad00d71ca8e",
+    historical_inventory_path="", result_id="lean-verification-core-composition")
+
+
 def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                               inventory_path=None, inventory_sha256=None) -> dict:
     """Reconcile one pinned kernel slice without inferring scientific acceptance.
@@ -713,6 +739,8 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
         },
         "authority": {}, "checks": {}, "issues": [], "units": [],
     }
+    if pins.source_anchor == "01.1.6":
+        result["scope"]["book01_01_1_6"] = "selected_for_reconciliation_not_accepted"
     data = {}
 
     def step(name, callback, dependencies=()):
@@ -965,7 +993,7 @@ def main():
     parser.add_argument("--snapshot", required=True, help="commit or ref to resolve once")
     parser.add_argument("--kernel-sections", action="store_true",
                         help="bounded kernel mathematical-atom view; defaults to Book02")
-    parser.add_argument("--kernel-book", choices=("book01", "book02"),
+    parser.add_argument("--kernel-book", choices=("book01", "book01-0116", "book02"),
                         help="select the pinned kernel slice; requires --kernel-sections")
     parser.add_argument("--kernel-inventory", help="tracked clean compiled inventory path")
     parser.add_argument("--kernel-inventory-sha256", help="exact SHA-256 of that inventory")
@@ -979,7 +1007,8 @@ def main():
     result = (reconcile_kernel_sections(
         args.repo, args.snapshot, inventory_path=args.kernel_inventory,
         inventory_sha256=args.kernel_inventory_sha256,
-        pins=BOOK01_PINS if args.kernel_book == "book01" else KernelSectionPins())
+        pins=({"book01": BOOK01_PINS, "book01-0116": BOOK01_0116_PINS}
+              .get(args.kernel_book, KernelSectionPins())))
         if args.kernel_sections else reconcile(args.repo, args.snapshot))
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
     return 0 if not result["issues"] else 1

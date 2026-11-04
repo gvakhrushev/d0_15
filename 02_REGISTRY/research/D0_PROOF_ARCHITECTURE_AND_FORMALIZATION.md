@@ -17061,3 +17061,175 @@ integration remains required on final inputs.
 `#print axioms` on the general bound, the `n=8` star bound, the algebraic
 attaining witness and the one-block negative control reports `propext`,
 `Classical.choice`, and `Quot.sound`; this uses the same cached dependencies.
+
+### C0 source review candidate: Book01 §01.1.6
+
+This is a source-occurrence and evidence candidate for C0 reconciliation, not
+an accepted scientific correction, an exhaustive C0 denominator or a physical
+no-hidden-variables theorem. In source snapshot
+`1eabcccbf7e115c667e9bb8c445ef300107b1493`,
+`01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md` has Git blob
+`eb2d8ea779189084cdaaca717326df88589ec918`. The complete section is the half-open byte range
+`[11972,13530)`, SHA-256
+`ba3fc2c88b388bad890dfcbced2b22343f2019b72d78c927b9488c40ab69afac`.
+The table covers the complete section, including separators:
+
+| Byte range | Candidate disposition and existing support |
+| --- | --- |
+| `[11972,12020)` | Heading and separator, structural context. |
+| `[12020,12189)` | The opening universal claim forbids adding an unobservable parameter; this is an ontological/admission claim, not a consequence of the abstract profile quotient. Retain unresolved. |
+| `[12189,12477)` | The source requires all admitted future tests and cites the hidden-bit control. `FutureExecution.profile` covers finite action words over a supplied test/action interface; equality with the full physical future-test class is not established. `FutureExecution.profile`, `hiddenBit_same_current` and `hiddenBit_different_future` are reused from §01.1.8; the code-level concrete control below uses a separately stated supplied realization. |
+| `[12477,12713)` | The no-change branch combines same outcomes, an obligatory canonizer and automatic elimination. The same-code implication is supported under explicit F/E/W inputs; the normative obligation and deletion/nonexistence of raw Y are not inferred. |
+| `[12713,12874)` | The changed-outcome branch combines a distinction, required History entry and code. Under supplied F/E/W the derived Boolean comparison reflects profile inequality, but insertion of an actual entry into physical History is not derived. |
+| `[12874,12992)` | The source gives the stronger alternative: the parameter does not exist or is in History/code. Quotient equality alone does not prove physical deletion or recording; retain as unresolved. |
+| `[12992,13059)` | The source adds that invisible parameters cannot steer the world past History. Its physical quantifiers and realization remain open; the raw-state witness is not a physical counterexample. |
+| `[13059,13293)` | CORE-FORCING status and the Book02 CKM downstream pointer are source declarations. Owner acceptance and the precise cross-book substitution require independent review. |
+| `[13293,13530)` | The int-versus-real worked case requires explicit comparison/typing predicates and a proved interpretation in the supplied interface; neither outcome is inferred from a type name alone. |
+
+The existing candidate identities `FutureExecution.profile`,
+`FutureExecution.futureSetoid`, `hiddenBit_same_current`,
+`hiddenBit_different_future`, `uncoupledCenter_profile_independent`,
+`representedRecord_eq_iff`, `representedComparison_iff`,
+`uncoupledCenter_records_equal` and `SigmaWitness.archiveCode_eq_iff`
+already occur in the §01.1.8 candidates. These are additional source
+occurrences and dependencies, not duplicate independent mathematical units.
+A supplied `FutureShortlexAdapter.stateCode_eq_iff` with `[LinearOrder Symbol]`,
+`[WellFoundedLT Symbol]`, and a profile-faithful decode/encode round trip
+supplies an alternate, noncomputable code realization;
+it does not select physical encoding or automatically instantiate a
+`SigmaWitness`. Existing compiled evidence and owner blobs are listed below.
+
+Separate open premises are retained: the physical admitted action/test family;
+the obligation/implementation and cost of native `D_min`; why a relevant
+distinction is actually written and read in the same History; identification
+of History and C* with the supplied abstract record/code; and the status of
+the original `GOLDEN THE 1.1.11.B` and `BOOK-I-ARCHITECTURE` source, not yet
+resolved. A raw abstract countermodel does not decide the latter source's
+physical or ontological premises. No new interpretation, semantic acceptance,
+source correction, task, coverage percentage or GR closure is asserted.
+
+The machine block is intentionally **candidate data**. Its opt-in consumer
+uses a separate third source selector; existing Book01 §01.1.8 and Book02
+§02.3b selectors and defaults retain their original meaning. The existing
+`lean-verification-core-to-foundation` application is a shared conditional
+consumer, not acceptance of these source classifications. Do not pass this as
+an accepted compiled reconciliation view. Historical
+inventories below individually verify the declaration names, exact module
+owners and normalized elaborated type hashes at their stated commits; their
+different Lean-source digests cannot be silently combined as one fresh compiled
+inventory. Final reconciliation needs one clean, pinned D0.All inventory of
+all four relevant owner modules and semantic/owner review.
+
+Owner blobs at the cited source snapshot:
+
+- `D0.Foundation.FutureExecution`: `065a8f631e65bda8b9bc85a6ff6217de31bdd1f4`.
+- `D0.Foundation.VerificationCore`: `01b02ebbe81a62464e81d5c397c101fd60fff4f9`.
+- `D0.Foundation.UncoupledCenterRawWitness`: `bf1468824fe63fc5f2fed59d74d44d1377923fa6`.
+- `D0.Foundation.FutureShortlexAdapter`: `a4a390673994ecbe7529ebae636ddd3fd6e2db7d`.
+
+Historical compiled declaration inventories (separate provenance):
+
+- `reports/book01_template_budget_2026-11-04/declarations.json`, inventory commit `c25c66780fa4d9adec99996d512645243bc5ba72`, SHA-256 `581fa2a994be99c6e596d4b27f8fc10a5ce0add6e6929043aded31b130a53eb2`.
+- `reports/proof_architecture_uncoupled_center_inventory_2026-11-04.json`, inventory commit `2669b054c4cbd62d8d21380b4513c83aa7fc0f8f`, SHA-256 `101e436042b711f80934088e83b5f2cbce6918c550cd75a321f90af57e30ced1`.
+- `reports/proof_architecture_future_adapter_declarations_2026-11-04.json`, inventory commit `593129552501368e6701fd39046a9d0745481968`, SHA-256 `ebc304706ddbf768ec7529a6051c4385e6ff3e450e0238188ea9ea68a4709a19`.
+
+All three inventories bind their selected owner module blobs to the same bytes
+as the source snapshot. Their standard axiom footprint is no stronger than
+`propext`, `Classical.choice`, `Quot.sound`; exact per-declaration footprints
+are in those inventories.
+
+### C0 Book01 01.1.6 mathematical-unit candidates
+
+The JSON is primary-owned candidate data; no semantic acceptance follows.
+
+```json
+{
+  "schema": "d0-c0-kernel-unit-candidates/2",
+  "units": [
+    {
+      "atom": "SigmaWitness.dmin_eq_iff",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        12477,
+        12713
+      ],
+      "hypotheses": "Supplied FutureExecution F, TheoryVerification E of F.futureEmpiricalTheory, and SigmaWitness W over E.",
+      "statement": "The canonical code W.dmin identifies two supplied states exactly when all finite future profiles agree. This is a property of the supplied representation, not a derivation of an obligatory native canonizer or deletion of a raw coordinate.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff",
+      "declaration_kind": "theorem",
+      "type_sha256": "dd7f3aaeca6e7eb0027de538fed57aa79ae3a8a60b7490cd02bd8619b1df2264",
+      "module": "D0.Foundation.VerificationCore"
+    },
+    {
+      "atom": "SigmaWitness.delta_dmin_iff",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        12713,
+        12873
+      ],
+      "hypotheses": "Supplied FutureExecution F, TheoryVerification E of F.futureEmpiricalTheory, and SigmaWitness W over E.",
+      "statement": "The supplied Boolean comparison of the two canonical codes is true exactly when their complete future profiles differ. This does not establish that a physical execution records the event or selects W.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.delta_dmin_iff",
+      "declaration_kind": "theorem",
+      "type_sha256": "3b4dcaa50666034de66a6500dc4ff993686efbedb9ca431b0622f0f2c3684e4b",
+      "module": "D0.Foundation.VerificationCore"
+    },
+    {
+      "atom": "UncoupledCenterRawWitness.distinct_raw_same_future",
+      "disposition": "negative_control",
+      "source_range": [
+        12874,
+        13059
+      ],
+      "hypotheses": "Concrete one-state unitExecution extended by an uncoupled Boolean coordinate; only the original action and test interface is available.",
+      "statement": "There are distinct raw states with identical complete future profiles in the explicit abstract extension. This controls inference from profile equality to raw-state equality; it is not a physical counterexample or a refutation of a separately established quotient ontology.",
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future",
+      "declaration_kind": "theorem",
+      "type_sha256": "c3361e83588b3bb0669c7453d2b0c868e3331f4c9ca05d08fe5bb1504cf50e9c",
+      "module": "D0.Foundation.UncoupledCenterRawWitness"
+    },
+    {
+      "atom": "UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+      "disposition": "negative_control",
+      "source_range": [
+        12477,
+        12713
+      ],
+      "hypotheses": "Supplied F, s : F.State, and TheoryVerification E of the future empirical theory of F.uncoupledCenter.",
+      "statement": "For the explicit uncoupled extension, distinct raw bit values have equal complete future profiles and equal represented records under the separately supplied E. E is not constructed for arbitrary F; raw-state nonexistence and native deletion do not follow.",
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+      "declaration_kind": "theorem",
+      "type_sha256": "d9fa95ddaebe58a3abce5ba05592e5598ebec276e82c9ce5983e7e30651613da",
+      "module": "D0.Foundation.UncoupledCenterRawWitness"
+    },
+    {
+      "atom": "UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+      "disposition": "negative_control",
+      "source_range": [
+        12477,
+        12713
+      ],
+      "hypotheses": "Concrete visibleBitSystem and its existing visibleBitVerification.",
+      "statement": "A nontrivial existing verified example has distinct raw states with equal complete profiles and equal represented records. Its supplied verification is not a proof of arbitrary-F existence or physical admission.",
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+      "declaration_kind": "theorem",
+      "type_sha256": "0534c7b6fbfa04d07ffdb45a3bbcf33f584b6b55e900f37146c033f41b268826",
+      "module": "D0.Foundation.UncoupledCenterRawWitness"
+    },
+    {
+      "atom": "FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+      "disposition": "negative_control",
+      "source_range": [
+        12189,
+        12477
+      ],
+      "hypotheses": "Concrete hiddenBitExecution with pairDecode and pairEncode, and its derived noncomputable shortlex state code.",
+      "statement": "The concrete states have the same current observation but different derived codes because the permitted future distinguishes their profiles. This supplements the previously counted current/future control; it does not establish automatic native erasure or a physically implemented code.",
+      "declaration": "D0.Foundation.FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+      "declaration_kind": "theorem",
+      "type_sha256": "a7b462e6fbd9466602c03ff51ae9484950e679433dd6e168aa6e35a11352ce87",
+      "module": "D0.Foundation.FutureShortlexAdapter"
+    }
+  ]
+}
+```

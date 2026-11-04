@@ -7,6 +7,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import subprocess
 import sys
 import tempfile
@@ -882,7 +883,8 @@ class KernelSectionTests(unittest.TestCase):
 
     def test_cli_selects_book01_and_preserves_book02_default(self):
         for args, anchor in (([], "02.3b"), (["--kernel-book", "book02"], "02.3b"),
-                             (["--kernel-book", "book01"], "01.1.8")):
+                             (["--kernel-book", "book01"], "01.1.8"),
+                             (["--kernel-book", "book01-0116"], "01.1.6")):
             with self.subTest(args=args), mock.patch.object(sys, "argv", [
                     "c0_reconciliation.py", "--repo", str(self.repo.root), "--snapshot", self.repo.snapshot,
                     "--kernel-sections", *args]), mock.patch.object(
@@ -890,6 +892,44 @@ class KernelSectionTests(unittest.TestCase):
                     mock.patch("sys.stdout", new_callable=io.StringIO):
                 self.assertEqual(c0.main(), 0)
                 self.assertEqual(run.call_args.kwargs["pins"].source_anchor, anchor)
+
+    def test_book01_0116_real_candidate_payload_and_owner_pins(self):
+        from tools.c0_kernel_units import parse_unit_candidates
+        pins = c0.BOOK01_0116_PINS
+        primary = (Path(c0.__file__).resolve().parent.parent / c0.PRIMARY).read_text(encoding="utf-8")
+        units = parse_unit_candidates(primary, pins.units_sha256, heading=pins.units_heading)
+        self.assertEqual(len(units), 6)
+        self.assertEqual(pins.section_range, (11972, 13530))
+        self.assertEqual(len(pins.additional_modules), 3)
+        self.assertEqual(pins.historical_inventory_path, "")
+        self.assertEqual(pins.application_id, c0.BOOK01_PINS.application_id)
+        allowed = {pins.module} | {m for m, _, _ in pins.additional_modules}
+        self.assertTrue(all(u["module"] in allowed for u in units))
+        sections = [s for s in re.split(r"(?m)^### ", primary)
+                    if s.split("\n", 1)[0].strip() == pins.primary_heading]
+        self.assertEqual(len(sections), 1)
+        self.assertEqual(c0.primary_section_sha256(sections[0]), pins.primary_sha256)
+
+    def test_book01_0116_requires_clean_inventory_and_retains_review_boundary(self):
+        self.repo.use_multiple_owners()
+        self.repo.pins = replace(self.repo.pins, source_anchor="01.1.6", section_label="Book01 §01.1.6 fixture")
+        view = c0.reconcile_kernel_sections(self.repo.root, self.repo.snapshot, pins=self.repo.pins)
+        self.assert_issue(view, "compiled_inventory", "requires a clean tracked inventory")
+        self.assertEqual(view["scope"]["book01_01_1_6"], "selected_for_reconciliation_not_accepted")
+        self.assertTrue(all(u["compiled_declaration"] is None and
+                            u["semantic_acceptance"] == "pending_independent_review" for u in view["units"]))
+        self.assertTrue(all("#01.1.6/" in u["source_unit_key"] for u in view["units"]))
+
+    def test_book01_0116_rejects_wrong_heading_owner_and_digest(self):
+        self.repo.use_multiple_owners()
+        self.repo.pins = replace(self.repo.pins, source_anchor="01.1.6", section_label="Book01 §01.1.6 fixture")
+        good = self.repo.pins
+        for pins, reason in ((replace(good, units_heading="C0 Book02 mathematical-unit candidates"), "candidate section"),
+                             (replace(good, section_sha256="0" * 64), "section"),
+                             (replace(good, additional_modules=((self.repo.second_module, self.repo.second_path, "0" * 40),)), "pin")):
+            with self.subTest(reason=reason):
+                self.repo.pins = pins
+                self.assert_issue(self.repo.view(), "source_and_primary", reason)
 
 
 if __name__ == "__main__":
