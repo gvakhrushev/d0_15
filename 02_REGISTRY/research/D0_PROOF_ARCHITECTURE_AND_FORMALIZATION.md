@@ -17512,3 +17512,13 @@ self-adjointness from real amplitudes and self-adjoint components. The
 [independent review and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_positive_chart_04f2_2026-11-05/SUMMARY_RU.md)
 retain physical maps, positive normalization, varying preparation, other
 price rows and admission as open; singular `A` remains allowed.
+
+### Matched branch resolvent trace weights
+
+`D0.Analysis.MatchedBranchResolventWeights` proves the noncommuting-projector
+trace reduction and normalized nonnegative weights from a nonzero PSD history
+and positive regularization. No commutation of individual projectors with the
+history is assumed. The [independently reviewed result](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_weights_596b_2026-11-05/SUMMARY_RU.md)
+normalizes unscaled `RA`: at `q = 0` the owner's `B = q AR` has zero trace,
+so its physical normalization and positive gain do not follow. Field maps,
+full R1/R2 and other price rows remain open.
