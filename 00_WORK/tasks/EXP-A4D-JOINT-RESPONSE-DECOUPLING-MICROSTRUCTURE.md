@@ -21228,3 +21228,73 @@ SR supplies the complete phase-sensitive task relation required by EY/EZ;
 EOQ exact finite roots retain their separate profile, PQ retains full
 contextual price equality, and RC's material clock applies on its original
 collar with every added reader paid and its genuine old-data rows kept.
+
+## 4 November 2026 — full XOR comparison and a source class for every fixed nonzero round trip
+
+Phase: native realization / final composition, existing #334. Input e6e46c805f8a51c6965aa6abbd8fc3e4b71a7d74.
+Same two write paths. Consumer: scoped task/source contract D/B and the
+SR/FN/CT/GENERAL common-family application.
+
+Exact parent substitution: replace SR's selected minus-character body
+by the FULL original reversible comparison F=C_E C_P on one canonically
+born shared flag. Both character sectors remain: F=I direct-sum WR_b.
+There is no selected phase state, discarded sector or extra thermal
+recipe. The first input comparison fixes the initialized bank; every
+full mark is (M_j tensor I_flag) C_P with its true reader transport.
+Birth the last spectator after all resources; all stages are paid.
+
+The actual shortest-clock trace is d_old times [dim B+Tr Z−2+4Q].
+The full flag doubles the old body dimension constant, which now uses
+d_final/d_old=2^(q+2), actual Z and actual L. The proper cold corner is
+s+(1−s)Q, s=2p sqrt p; CT retains its full feedback and old sources.
+
+Calibration correction: SOURCE's true complete report is Q=a_n bar r_h,
+not its conditional bar r_h. Thus g_h=a_n epsilon_h r_f. The earlier
+SR specialization is corrected in place; its generic actual-g_h
+source theorem is unchanged. Independent READY variations would add
+bar r_h D a_n and are not silently discarded.
+
+Stronger synthesis: every fixed nontrivial even word in the two original
+comparison involutions reduces at the target level to F^k or F^(-k).
+Its source factor is m_k(Q)=k U_(k−1)(2Q−1). The actual READY sequence
+a_n=2F_(n+1)p^(n+3), n>=20, and its limit prove a COMPUTABLE uniform
+positive lower bound for |m_k| for each fixed k. The proof uses exact
+algebraic conjugates and the nonintegral limiting field trace; no
+repetition census or new geometric root search is involved. Canceled
+calls remain in the real clock and all independent occurrence sources
+and FN reactions remain. A computed orientation handles the sign.
+
+Using the full actual gain and old SR/CT norm budgets, this entire
+comparison class has the same Einstein--two-CAR equation class and
+general regular kappa soundness/recovery through GENERAL. The actual
+material map, matter ratio, measure/PF distinction and one accumulating
+history are preserved. Independent echo legs are differentiated before
+matching. Later readings for repeated comparisons use their real
+suffix-transported readers. No new perfect flag record is assumed.
+
+Remaining application: the original reader/input comparison and its
+nontrivial even operation class are declared task data. The theorem
+does not make all D0 histories choose that task, equate different
+absolute word prices, solve freely admitted word-choice comparisons,
+or transport EOQ exact finite roots through an approximate compiler.
+No assembly/public promotion or parent retirement.
+
+Smallest decisive validation: one portable exact full-flag/native-reader/
+growing-clock check, plus bounded READY arithmetic inside the same
+checker; normal and optimized warnings-as-errors runs. Infinite-k and
+all-READY nonresonance are proved analytically. Reuse unchanged
+CT/FN/SOURCE/GENERAL and existing geometry/Lean owners.
+
+The EO/EOQ exact-pair application is also retained explicitly: multiplying
+the matrix centre by the born-input reflection preserves its adjoint and
+FP8 equal-price pairs with the original age/old-state hypotheses. The
+remaining application is an EXACT native word for that reflection,
+including its paid enlarged clock. Approximate SO compilation is not
+that theorem, and the full-flag age projectors do not allow its free reuse.
+
+Final validation: 61 exact conditions in normal/optimized warnings-as-
+errors runs, byte-identical receipts; the final Markdown extraction
+reproduces receipt 2dba5bc0a7e4c5bc7d2e3de4bbc9a7574d6a1ec37d203580fecc326944182c16.
+Work/protocol/assembly guards and whitespace checks pass. Independent
+bounded reviews are integrated. Template consumed; no independent
+acceptance, assembly discharge, Ready, retirement or merge is claimed.

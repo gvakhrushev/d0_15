@@ -154251,10 +154251,13 @@ heat of that smooth finite-matrix target. For actual compiled comparisons
 use Gamma_actual=16 d_old g_h L a_L/(beta Z_actual). CT controls the true
 ratio Z_actual/Z_target before source comparison. This is DB/Gamma, never
 D(B/Gamma), and neither normalizer is replaced by a truncated trace.
-For the original SOURCE_PROOF_RU.md (1)--(4), g_h=epsilon_h r_f and
-the original material coefficient is lambda=-r_q/r_f. If a later
-seven-call calibrated report is used, its own g_h must replace this one;
-no gain from a different report can be borrowed.
+For the conditional SOURCE_PROOF_RU.md (1)--(4) report bar r_h,
+the coefficient is epsilon_h r_f. The literal COMPLETE reader in its
+section 3 instead has Q=a_n bar r_h and g_h=a_n epsilon_h r_f;
+the original READY factor must be retained. The material coefficient
+is still lambda=-r_q/r_f. This corrects the earlier bare-report
+specialization, not the generic SR formulas with the actual g_h.
+Any different calibrated report requires its own actual g_h.
 
 ### 4. Compiler, all old rows, and feedback
 
@@ -154380,7 +154383,8 @@ Old saved finite comparisons retain CT23/CT25's literal supports,
 lengths and steps; a matrix derivative is not substituted for those
 comparisons. All generated-state adjoints and actual old-data rows remain.
 If CT25's paid comparison macros have length ell, use its true dimension
-and N<=N_b+K*ell+L, and choose L>=ell^2. Then N is at most
+and N<=N_b+K*ell+(q+1)+L, with N_b the pre-current prefix count,
+and choose L>=ell^2. Then N is at most
 O_h(L^(3/2)*log L); q>=3 still makes the displayed old tail vanish.
 Previously saved comparison words are not lengthened retrospectively.
 The all-occurrence compiler bound B_h*N*(L_r+1)*delta_r/g_h also tends
@@ -154765,3 +154769,839 @@ reader is appended to the full paid prefix before the next SR checkpoint;
 its gain, source and any actual D_z M term must then be retained and
 re-estimated. The fixed-descriptor D_z M=0 case above is not extended to
 such a field-dependent old-data reader without that calculation.
+
+## Full reversible comparison and an Einstein source class without character selection
+
+4 November 2026. Existing #334; native realization / final composition.
+Input: e6e46c805f8a51c6965aa6abbd8fc3e4b71a7d74. Consumer: SR/FN/KAPPA source and
+task admission, composed with GENERAL. This application removes the
+selected-character preparation and the need to pick one precise nonzero
+even comparison word. Both full flag sectors are paid. It also corrects
+the SR specialization to the original complete READY report: its gain
+includes a_n; the bare conditional report is not the actual full click.
+No action/Info term, new task, root search or scientific promotion is added.
+
+### XF1. Exact old definitions and the datum that can be removed
+
+Book00 00.3a (lines245--251) fixes exact comparison as [x!=y] and proves
+orthogonal supports for perfectly registered distinct outcomes.
+Book00 00.3e (lines279--291) requires persistent retention until independent
+inspection; it does not prescribe a quantum phase character.
+Book01 01.1.2 (lines104--109) fixes binary Delta, its reflexivity and
+internal Query_O; 01.1.5--6 (lines132--145) requires coded precision,
+calibration and observable parameters. Book01 line1676 expressly says
+capability support alone does not fix polarity.
+
+The OWNED reversible constructor is not just a probability effect:
+A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md 6.5 (31), lines620--633, and
+FiniteProtocolClock.register, lines71--82, give conditional Boolean XOR
+and its full linear permutation extension. For a projection A write
+
+    C_A=A tensor I_f+(I-A) tensor X_f.                         (XF1)
+
+Here f is ONE shared comparison flag. On basis predicates this adds
+not A to that flag, preserving the original input. Two calls add
+(not A) XOR (not B)=A XOR B: the two common polarity changes cancel.
+This is an ordinary reversible difference comparison. Independent
+inspection never requires choosing either character of the flag.
+
+The SR manuscript selected the two minus-character blocks to obtain
+W R_b. The following execution keeps the COMPLETE flag instead. Thus
+both character choices, their phase-state preparations and any claim
+that verification forces them are removed, rather than reclassified.
+
+### XF2. Full operator determined by the old reader and input
+
+Let B be the q original fresh WORK bits, INCLUDING the original loader,
+all report/READY helpers and the actual realification carrier. Let
+
+    b=v^tensor q, v=(sqrt p,p), P_b=|b><b|,
+    E(Y)=D(Y)* Pi_final,1 D(Y), W(Y)=I-2E(Y),
+    R_b=I-2P_b, Q(Y)=<b,E(Y)b>.
+
+D includes the actual original complete loader and report processor.
+Q is its actual initialized click. In SOURCE_PROOF 3's descriptor,
+where c=1-2 a_h bar r_h, this means Q=a_h bar r_h, not bare bar r_h.
+No READY visibility, baseline or gain is silently removed.
+
+Birth f canonically and, AFTER every B/f resource, birth a last spectator
+t. Execute the full target
+
+    F(Y)=C_E(Y) C_(P_b),       V(Y)=F(Y) tensor I_t.           (XF2)
+
+Both C matrices act on B tensor f. They are real orthogonal. Tensoring
+I_t makes det V=+1 regardless of the determinant on B tensor f, so the
+owned positive-G/CX compiler applies with its full errors, actual stages
+and oldRIGHT protection. All q+2 bits are present before the body.
+No inverse, basis change, sign gate or last spectator is free.
+
+For proof only put P_+=(I+X)/2, P_-=(I-X)/2. Direct algebra gives
+
+    C_A=I_B tensor P_+ +(2A-I_B) tensor P_-,
+    F=I_B tensor P_+ +W R_b tensor P_-,
+    Tr F=dim B+Tr(W R_b)
+        =dim B+Tr Z_final-2+4Q(Y).                            (XF3)
+
+No Hadamard/character basis change is physically executed or omitted:
+XF2 is the whole target matrix and all its sectors enter the actual price.
+In particular no trace conditional on the minus sector is used.
+
+The character content has no additional choice. Even if one considered
+a one-dimensional faithful real representation of Boolean XOR, the
+unique nontrivial character would be (-1)^bit; the trivial character
+does not distinguish the two values. But this fact is NOT used to
+select a physical sector: XF2 retains the regular two-dimensional flag.
+
+### XF3. Marks, records and the proper cold cut
+
+At the actual initial state,
+
+    C_(P_b)(b tensor eta)=b tensor eta
+
+for EVERY flag eta and every unknown old input column. Therefore all
+initialized original geometry states and mark probabilities during D
+are exactly the original ones, tensor the canonically born flag.
+Their complete all-column prefix maps are
+
+    M_j^full=(M_j tensor I_f) C_(P_b),                        (XF4)
+
+not projected-minus marks and not an assertion that C_(P_b)=I globally.
+
+Chronologically C_E=(D* tensor I_f) C_(Pi_final,1) (D tensor I_f).
+Thus the original D marks occur at their real retained stages before
+the conditional flag operation. Later access uses the actual remaining
+unitary's transported joint reader, as in the owned whole-history
+reader map. This does not erase the stage clock or introduce an
+unpriced physical inverse.
+
+The original fine output projectors commute with the final coarse
+report predicate; their D-transported effects also commute with C_E.
+Their probabilities remain readable. In particular the old report Q
+is unchanged on the initialized input. The new flag v and Xv are NOT
+orthogonal, so XF2 is not asserted to create an additional perfect
+classical copy of the report. That copy is not required by the task:
+the original complete records/readers and all intermediate history
+remain. If a separate exact flag record is actually requested, it
+needs its own preparation/readout and source transport.
+
+With s=<v,Xv>=2p sqrt p, the proper current corner is
+
+    <b tensor v,F(b tensor v)>=Q+s(1-Q)
+                            =s+(1-s)Q.                      (XF5)
+
+Consequently its norm is <=1. CT's old-prefix attenuation still gives
+the entire feedback-source bound with a^K; it does not need the former
+corner -(1-2Q). New births leave the original physical input rank
+unchanged. For an opaque initial Spin this rank remains4.
+
+### XF4. Direct substitution into the true-clock source
+
+The latest detail is
+
+    P_t=I_old tensor I_B tensor I_f tensor |w_t><w_t|.
+
+SR1 therefore gives, on the ACTUAL growing clock with L real body
+stages and no later birth,
+
+    Tr(P_t V)=d_old[dim B+Tr Z_final-2+4Q],
+    D Tr(P_t V)=4 d_old DQ,
+    Tr T^r=0 (r<L),  Tr T^L=L Tr(P_t V).                     (XF6)
+
+The extra term dim B is fixed at each finite comparison. It changes
+the full partition function, so use its actual Z and gain; it does
+not add a field source. The exact enlarged dimension ratio is
+
+    d_final/d_old=2^(q+2),
+
+not 2^(q+1). Every SR tail bound and native compiler count must use
+this larger carrier, the actual new L and actual positive gain.
+The leading gain is still 4g_h gamma_actual with g_h for ACTUAL Q.
+K is selected after the enlarged prefix/gain, exactly as in SR/CT.
+
+The full clock need not preserve the character sectors: P_+ and P_-
+need not commute with canonical flag-birth age projections. XF6 uses
+only the shortest-wrap theorem, which already permits age mixing.
+No exact EO finite-clock spectral equality is imported from XF3.
+
+For arbitrary unitary W, including separately perturbed forward/back
+slots, use the extension
+
+    L(W)=I tensor P_+ -W tensor P_-,
+    L(W) C_(P_b)=I tensor P_+ +W R_b tensor P_-.             (XF7)
+
+It remains unitary even when (I-W)/2 is not a projector. On the
+matched original reader it is exactly C_E C_(P_b).
+The lift is isometric in full operator norm:
+
+    ||F(W1)-F(W2)||=||W1-W2||.
+
+At a reflection centre Re Tr(delta W)=0 for every unitary tangent,
+so the owned SR full first-source calculation still applies without
+falsely declaring E a projector off that centre. All independent
+logical rows/normal reactions remain. This does not prove a new
+exact finite EO pair identity.
+
+### XF5. Concrete Book01/KAPPA task section
+
+Replace SR's old phase recipe by the fixed finite constructor XF2.
+The remaining descriptor c names the ORIGINAL complete reader family,
+its final predicate and the existing reversible XOR constructor.
+The input datum d contains the certified finite field-name prefix,
+prior history, actual births, compilation accuracy, chart/source bounds
+and prior ledger. There are no character labels or free flag seeds.
+
+Apply 7fa.D / EOQ10 and KAPPA6 directly:
+
+    (vartheta,x), vartheta=(c,d)
+        -> (vartheta,readout_vartheta(pi_N x))
+        -> finite interval/fine-outcome labels.
+
+The native constructor generates the literal enlarged word, marks XF4,
+actual cut/clock and price packet from these data. Its graph is the
+same complete-operation condition
+
+    E(word)=E(actual compiled reference(c,Y)),
+
+with EVERY regular field Y still free. It is not E(word)=E(old answer),
+nor admission by an Einstein equation. FN then transports the whole
+price and constraint reactions on that graph. Do not replace those
+reactions by free raw-gate Euler equations equal to zero.
+
+The six Book01 obligations have their existing 7fa witnesses: locally
+finite quotient; RAW R6 full operator/clock lift; original positive fine
+instrument and finite positive postprocessing; append-only protected
+old readout/actual suffix transport; finite native compiler halt; and
+the one original p,beta,z section with its actual central gain.
+The shared flag and last spectator are actual paid Hilbert factors.
+The task descriptor may be the declared datum in T allowed by KAPPA6;
+a separately physical program register is not silently added.
+
+### XF6. Exactly what history fixes and what remains a task datum
+
+Already fixed by the declared original comparison:
+the actual complete D(Y), its report labels, the canonical Born input
+and hence P_b; fixed XOR truth table; the full reversible constructor
+on all flag columns; preserved original marks and input rank; no
+character choice; no adjustable reference, visibility or flag seed.
+
+Generated from its finite execution descriptor:
+literal native stages, birth tree, all dimensions and counts; the
+GROWING_CLOCK G1--G5 incidence R and whole T; the actual Z, proper cut
+and source normalization. In this chosen native clock profile there
+is no independent closing phase or external per-stage scheduler.
+Canonical incidence matches each birth detail with its own retained
+address. A different closure that changes future tests is a different
+recorded operation, not an invisible parameter.
+
+Genuinely supplied by the scoped task rather than forced by all
+verification kernels:
+which old detector/output is to be compared with which actual input
+predicate; its permitted field chart and precision/continuation request;
+the native clock/price profile and the required finite literal ordering.
+Books00--01 give comparison, retention, code and naturality obligations;
+they do not prescribe the identical next experiment for every history.
+No such universal scheduler is required by scoped D.
+
+Thus a real premise IS removed: SR no longer needs a physically chosen
+minus-character sector or its preparation. The residual operational
+role is simply the original reader/input comparison implemented by the
+owned full reversible constructor. Availability alone does not prove
+that a weaker history requested it. Where that role is the retained
+task, the common-family proof can use XF2--XF7 with no extra thermal
+recipe, phase-selection datum or desired-source test.
+
+### XF8. All fixed nontrivial even comparison words
+
+#### 1. Exact complete-carrier trace, including the flag
+
+Let E be the original complete report projector on a d-dimensional bank,
+rank E=r, b its actual canonical born input, P=|b><b|,
+Q=<b,Eb>, W=I-2E and R=I-2P. The complete controlled XOR product is
+
+    C_A=A tensor I_flag+(I-A) tensor X_flag,
+    F=C_E C_P = I_B direct-sum W R.
+
+The direct sum uses the two flag characters for the proof only. Its
+minus blocks are -W and -R, whose signs cancel. No character projection
+or physical basis change is required; C_P fixes b tensor eta exactly.
+
+The flag is retained; its identity sector is included in every trace.
+For 0<Q<1 the two nonconstant eigenvalues of WR are exp(+-i theta),
+cos(theta)=x=2Q-1. Its other eigenvalues are -1 (multiplicity r-1)
+and +1 (multiplicity d-r-1). Therefore, for every integer k>=1,
+
+    Tr F^k = d+(r-1)(-1)^k+(d-r-1)+2 T_k(2Q-1),
+    D Tr F^k = 4 m_k(Q) DQ,
+    m_k(Q)=k U_(k-1)(2Q-1).                            (XR1)
+
+This is the same finite arena reused k times, not k independent fresh
+experiments or a discarded flag. All actual calls and their marks remain
+paid. A nontrivial even reduced word in C_E,C_P is F^k or its inverse;
+their real traces agree. The identity word and odd reflection words are
+not covered by the nonzero-source conclusion. Algebraically canceled
+calls remain in the actual clock. With approximate native involutions,
+these are target identities; actual errors still require the paid
+all-column/marked compiler bound.
+
+For k>1 the original final E probability is not asserted unchanged.
+The original geometry/fine marks are retained at their first actual D
+stages, and later access uses the owned complete suffix/joint-reader
+transport with its price. The trace identity is not a replacement for
+this actual marked-readout map.
+
+#### 2. The correct original READY baseline
+
+Write p^2+p=1, z=2^-20. The original bare-report baseline is
+
+    r0=z(152p-92)-z^2(1504-2432p).
+
+The COMPLETE original click is Q_h=a_n rbar_h, not rbar_h alone, with
+
+    a_n=2 F_(n+1) p^(n+3), n>=20,
+    1/3<a_n<7/20,
+    a_inf=(6p-2)/5,
+    a_n=a_inf[1-(-p^2)^(n+1)].                         (XR2)
+
+Consequently Q_0,n=a_n r0 and the original source gain is
+
+    g_h=a_n epsilon_h r_f>0,
+    DQ_h=g_h DI_h+e_h,  ||e_h||/g_h=O(epsilon_h).       (XR3)
+
+Here a_n is the registered READY descriptor at the fixed comparison.
+A separately admitted variation of READY itself contributes rbar_h Da_n;
+it is not part of XR3 and is not silently discarded. A generated READY
+implementation is handled by its declared operation graph and reactions.
+
+#### 3. Uniform nonresonance for every fixed repetition count
+
+Set y_n=4 a_n r0-2 and S_j(y)=U_j(y/2). The polynomials S_j are monic
+integer polynomials, S_0=1, S_1=y, S_(j+1)=y S_j-S_(j-1), and all their
+roots lie in (-2,2).
+
+Under the other embedding p'=-phi, r0'<-244z and
+
+    |a_n'|>2 F_21=21892  (n>=20),
+    |y_n'| >=4 |a_n' r0'|-2
+            >4*21892*244/2^20-2 >2.                  (XR4)
+
+If S_(k-1)(y_n)=0, the conjugate y_n' is also a root, contradicting
+XR4. Thus m_k(Q_0,n)=k S_(k-1)(y_n) is nonzero for every finite n>=20.
+
+At the limit y_inf=4 a_inf r0-2 the exact field trace is
+
+    Tr_Q(sqrt(5))/Q y_inf
+       =-4+3168z+50944z^2
+       =-4+12976327/2^32,                             (XR5)
+
+which is not an integer. Hence y_inf is not an algebraic integer and
+cannot be a root of a monic S_(k-1). The convergent sequence plus its
+limit is compact, so for each FIXED k>=1,
+
+    c_k=inf_(n>=20) |m_k(Q_0,n)| >0.                  (XR6)
+
+This lower bound is effective, without any new numerical root search:
+obtain a positive isolating bound for the nonzero algebraic limit value,
+use XR2 and any explicit coefficient bound on |S_(k-1)'| over [-2,2] to
+bound the tail, and bound the remaining finite list of nonzero algebraic
+values. No bound uniform in k is asserted.
+
+SOURCE normalization sum_x v_x rho_x=1 and its original uniform chart
+estimates give Q_h-Q_0,n=O(epsilon_h), uniformly in n. Thus, for each
+fixed k and sufficiently fine h on that chart,
+
+    |m_k(Q_h)|>=c_k/2.                               (XR7)
+
+The sign may be retained as sigma_(k,h)=sgn(m_k(Q_h)); a common sign for
+every finite n has not been proved or needed for equation-zero recovery.
+If n_h tends to infinity, the sign eventually equals the limit sign.
+Otherwise the computed sign is an explicit source orientation when an
+off-shell signed covector limit is stated. It is not a fitted action or
+a field-equation admission test.
+
+#### 4. Independent forward/backward source rows
+
+XR1 does not require identifying independent echo legs before variation.
+At the matched W=W*=W^-1, let delta W be ANY unitary tangent and write
+delta W=H+K with H Hermitian and K skew-Hermitian. Unitarity gives
+
+    {W,H}=0, [W,K]=0.
+
+The weight A_k=R(WR)^(k-1) is Hermitian (it is a palindrome).
+Thus Re Tr(A_k K)=0. The part H is a tangent to the fixed-rank reflection
+manifold, on which XR1 is an exact identity. Consequently
+
+    D Re Tr(WR)^k =4m_k(Q) delta Q,
+    delta Q=-(1/2) Re<b,delta W b>.                   (XR8)
+
+For k separately varied occurrences, each occurrence has coefficient
+4 U_(k-1)(2Q-1); summing shared field variations gives the factor k in
+XR1. The same argument applies on the full flag carrier to C_E and its
+rank-one counterpart C_P when the latter is held fixed. Arbitrary free
+calibration, C_P, cut or flag-control directions are not declared zero;
+the complete FN operation constraint/reaction must retain them.
+
+#### 5. Whole-price source and its exact scope
+
+Birth the last spectator after the entire F arena; its shortest actual
+age is L. With all older carriers included, use the actual full heat
+normalization
+
+    gamma_L=4 d_old L a_L/(beta Z_actual),
+    Gamma_(k,h)=4 g_h |m_k(Q_h)| gamma_L>0.            (XR9)
+
+The target shortest wrap reads d_old Tr F^k. Thus its leading normalized
+source is sigma_(k,h) DI_h, with original relative report error
+||e_h||/g_h. The additional clock tail in the physical test norm is bounded
+by the SR4 bound divided by 4g_h|m_k|, using the ACTUAL full derivative
+norm of F^k, not DQ alone. All fixed-k dimension, right-lift, derivative,
+marked-compiler and actual-duration constants remain in this bound.
+The actual/target Z ratio, old-prefix rows, feedback attenuation, finite
+endpoint price precision and complete FN reactions follow SR10 with
+the same extra 1/|m_k| factor. XR7 controls it uniformly as h refines.
+
+For native finite contrasts the central actual gain XR9 is used; target
+finite-difference remainders and compiler errors are divided by the true
+step and gain. No derivative of a discontinuous word compiler is used.
+Smooth matrix derivatives and literal finite comparisons remain different
+source modes. In particular, these estimates and XR1 do not imply exact
+finite native Euler zeros or a continuous native deformation ball.
+
+This removes a precise selector among all fixed nontrivial even reduced
+words of the SAME original two-comparison operation. It retains the
+original reader, prepared-cut and FN task premises, and gives regular
+kappa equation soundness/recovery with the original Einstein--CAR source.
+It is not a choice among arbitrary unrelated detectors or task laws.
+
+### XF9. Actual normalization, full source budget and common-family consumer
+
+For XR9 distinguish the smooth target and the actual compiled centre.
+The target identity uses its Q_target and Z_target. In the native central
+normalization use the actual complete report probability Q_actual at its
+retained marked readout and the entire Z_actual; the marked operator bound
+controls |Q_actual-Q_target|. XR7 therefore also bounds the actual
+|m_k(Q_actual)| away from zero once that error is below its computed
+collar. Both this ratio and Z_actual/Z_target remain in the source budget.
+The comparison gain is frozen at the centre: DB/Gamma, never D(B/Gamma).
+
+Writing A_(h,w) for the COMPLETE operator derivative norm of the chosen
+fixed word, the target higher-age error is at most
+
+    2^(q+2) exp(x) x A_(h,w)/(4 g_h |m_k(Q_target)| L),
+    x=beta/22, g_h=a_n epsilon_h r_f.                       (XF8)
+
+All marks and every original forward/backward occurrence count in
+A_(h,w) and in the compiler sum. With fixed h and word, use SR9
+(delta=exp(-r), |t|=exp(-r/2), actual polynomial L>=r), then choose
+the paid retention K after this actual layout/gain. Retain the original
+finite-comparison Taylor term, delta/|t|, N(L+1)delta, and old-source
+N(x/L)^q terms, each with its real norm and 1/(g_h c_k) factor. CT25
+comparison macros keep their actual length ell and
+N<=N_b+K ell+(q+2)+L, where N_b is the pre-current prefix count;
+L>=ell^2 and q>=3 give the same vanishing old-row bound. Extra inert
+current bits, if needed for q>=3, are actual canonical births.
+The proper feedback keeps the same original rank and the actual cold
+return; it is never dropped. For the smooth target repetitions,
+
+    c_cold,target=(1+s)/2+(1-s) T_k(2Q-1)/2 in [s,1],
+    s=2p sqrt(p).                                        (XF9)
+
+The actual compiled word need not preserve this identity exactly.
+Its complete endpoint error gives
+|c_cold,actual-c_cold,target|<=delta, and unitarity gives
+|c_cold,actual|<=1, which is all CT attenuation needs. Its actual
+value is used in J. This cold corner is distinct from XR6's positive
+source lower bound c_k; every 1/(g_h c_k) above refers to XR6.
+
+The FN implementation reaction remains Lambda=-D_E b, physical row
+(D_Y M)*D_E b, and old row D_z b+(D_z M)*D_E b. The second old term
+vanishes only for the stated old-spectator target at fixed descriptor;
+a physically executed old-data reader requires its own term and budget.
+Independent READY/cut/calibration data retain their real rows if admitted.
+The full comparator identity does not turn those rows into free zeros.
+
+After the actual material/right lifts, the outer h-diagonal gives
+
+    ||sigma_(k,h) ell_actual/Gamma_actual - D I_h|| -> 0,   (XF10)
+
+where ell_actual is the UNNORMALIZED whole finite-price covector. The
+computed sign is an explicit source orientation; the absolute gain is
+positive. Equivalently, without reorientation the source tends to
+sigma_(k,h) D I_h. Multiplication by this known nonzero sign preserves
+its zero set and norm. No change to the native action or its prices
+is made. There is no claimed bound uniform over unbounded word lengths.
+
+GENERAL now applies with its SAME material metric ehat=sqrt(m/det e)e,
+connection, two CAR fields, lambda=-r_q/r_f, measure row, PF remainder
+and original C3 test/C2 convergence bounds. Each fixed nontrivial even
+comparison word gives the same Einstein--two-CAR equation class, soundness
+for every admitted regular kappa-zero limit and recovery of every
+computable regular solution in the declared chart. FN resolves the
+faithful current implementation equations; CT appends the actual next
+segment to one preserved history. No Einstein equation is an admission
+test. This is a common-family source theorem, not equality of the
+absolute prices of different words or stationarity in their discrete
+choice. If that choice is freely compared, its genuine price differences
+remain. EOQ exact finite native roots keep their original profile;
+source convergence does not transport their exact finite zero sets.
+
+### XF10. Exact EO pair transport: its remaining native application
+
+The following separate substitution consumes the existing EO/EOQ
+finite-pair theorem and its original canonical past, not general SR
+compiler density. It concerns the SR unflagged body W R_b; it is
+not an identification of the full-flag clocks with that body.
+
+Let P be the entire passive old carrier after the current canonical births, E its first-port detail partner, and F the later detail space. At the exact EO centre,
+
+    W0 = [[cI,sI,0],[sI,-cI,0],[0,0,Q]],
+    D(xi) = diag(D_old(xi),xi^b I,D_F(xi)),
+    Q=Q*=Q^-1, [Q,D_F]=0.
+
+The SR fixed reflection is R=diag(-I_P,I_E,I_F). It commutes with D(xi). Set V0=W0 R. Its P/E block is [[-c,s],[-s,-c]]. Thus it is not an involution, and the earlier involution theorem must not be applied to it unchanged.
+
+Nevertheless the EO pair equalities persist:
+
+**Independent preparation adjoint pairs.** For any unitary W and real xi near zero, RD is Hermitian. Hence
+
+    det(I-W* R D) = conjugate(det(I-W R D)),
+
+by conjugation and det(I-AB)=det(I-BA). Therefore every real clock moment, and the complete original heat, agrees for W_+ R and W_- R. Compression to a physical input within P simply changes sign. The two proper-cut cold corners remain adjoints and have identical singular values, so original J agrees too. This uses the actual constructed EO past, not an arbitrary older Gram.
+
+**Faithful reflected FP8 pairs.** For L_A=diag(I_P,A), A acts on E⊕F, commutes with R, and
+
+    (L_A W0 L_A*) R = L_A V0 L_A*.
+
+Eliminating P gives
+
+    det(I-L_A V0 L_A* D)
+      = det(I+c D_old) det(I-A H'(xi) A* D_S),
+    H'(xi) = diag(-(cI+D_old)(I+cD_old)^-1,Q),
+    D_S = diag(xi^b I,D_F).
+
+For real xi, H' is Hermitian and commutes with D_S. Its simultaneous basis is the SAME old-age/Q basis used by FP8. For a single complex two-plane rotation in that basis, the second determinant depends only on cos²(theta), sin²(theta); the A/A* pairs have exactly equal full heat. Arbitrary simultaneous multi-plane inverse chords are not covered. The cold corner remains -cI. The FP8 tangent span and its genuine basis-to-native-norm constants are retained.
+
+**Old passive inverse pairs.** Extend U only on the old passive P, with identity on new details. Eliminating E⊕F yields the scalar transfer
+
+    k'(xi) = -(c+xi^b)/(1+c xi^b).
+
+The old determinant is det(I-k' U D_old). Since k' is real and D_old is Hermitian for real xi, U/U* again gives conjugate determinants. The proper-cut corners are -c i*U i and its adjoint, not necessarily scalar unitaries.
+
+**Last SR spectator.** Birth the extra t after the original bank and before the square body. In its born basis, the passive t=v slice has the old age exponents shifted uniformly; the t=w slice has a single common age L and the whole endpoint V0. The determinant factors into the preceding age-dependent determinant and det(I-xi^L V0). The latter is unchanged under FP8 conjugacy; the adjoint-pair argument applies with D=xi^L I. Thus the additional latest-detail carrier does not invalidate these exact matrix equalities.
+
+**Marks and kernel axes.** The actual mark is M_j R, not M_j on all uninitialized columns. On initialized columns it differs only by the common minus sign. Pay the new R before the original body. Endpoint-kernel prefixes V_±;V_±^-1;W0 remain paid and have the same final V0 after this precomposition. Keep the full original norms and all preserved oldRIGHT restrictions.
+
+**Decisive exact-native premise.** The above is an exact matrix/clock transport. It is a literal EO finite-root transport only if R_b⊗I_t has an EXACT word in the same original G/CX/SourceI native profile, with all added stages, inverse, birth order and transported marks recorded. The current SR positive SO compiler supplies approximation, not that exact word. Its error can converge to zero but cannot turn the displayed exact equalities into exact native finite zeros. EOQ's faithful implementation quotient applies after an actual exact descriptor has been supplied; it does not supply this missing exact synthesis. No nonexistence of such a word is asserted here.
+
+
+### XF11. Validation and provenance
+
+The bounded check below reuses the pinned RO arithmetic and SR native
+clock helpers without replaying their old suites. It checks the full
+flag, actual native-reader fixtures, original initialized and full marks,
+cold corner, one true growing clock, and finite illustrations of the
+trace recurrence. The all-k and all-READY proofs are XR4--XR7, not an
+inference from those finite illustrations. No full GR/native compiler
+or exact finite stationary history is claimed to have been emitted.
+
+Extract the following Python block verbatim and run with
+--root <repository> --out <receipt.json>. Its reused RO/SR blocks are
+SHA-pinned separately; their old test suites are not rerun.
+
+<!-- XF-FULL-COMPARISON-CHECK:BEGIN -->
+```python
+#!/usr/bin/env python3
+"""Exact bounded full-flag comparison; no full GR/native compiler is emitted."""
+from __future__ import annotations
+import argparse
+import ast
+from fractions import Fraction
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import re
+import sys
+import types
+
+PRIMARY = "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+NATIVE = "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+CLOCK = "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md"
+RO_HASH = "28af31ce262cafd8fa3ebe2b93922248961e0441fc582663f25857cccc83f99a"
+SR_HASH = "b785b3f595ea130e6d0b4dc85a8dd09f4b989f59a549dae5aa806d2fd8219048"
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def extract(text, marker, expected):
+    section = text.split("<!-- " + marker + ":BEGIN -->", 1)[1].split("<!-- " + marker + ":END -->", 1)[0]
+    match = re.search(r"^```python\r?\n(.*?)^```[ \t]*(?:\n|$)", section, re.S | re.M)
+    if match is None:
+        raise RuntimeError("Missing owned block " + marker)
+    code = match.group(1).replace("\r\n", "\n")
+    if sha(code.encode()) != expected:
+        raise RuntimeError("Changed owned block " + marker + ": " + sha(code.encode()))
+    return code
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--root", type=Path, default=Path.cwd())
+    ap.add_argument("--out", type=Path, required=True)
+    args = ap.parse_args()
+    root = args.root.resolve()
+    text = (root / PRIMARY).read_text(encoding="utf-8")
+    rocode = extract(text, "RO-NATIVE-GOLDEN-CHECK", RO_HASH)
+    srcode = extract(text, "SR-ORIGINAL-READER-CLOCK-CHECK", SR_HASH)
+    ro = types.ModuleType("owned_ro_for_full_flag")
+    ro.__file__ = str(root / PRIMARY) + "#RO-NATIVE-GOLDEN-CHECK"
+    sys.modules[ro.__name__] = ro
+    exec(compile(rocode, ro.__file__, "exec"), ro.__dict__)
+    spec = importlib.util.spec_from_file_location("owned_native_for_full_flag", root / NATIVE)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("Cannot import native owner")
+    native = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = native
+    spec.loader.exec_module(native)
+
+    K, zero, one, p = ro.K, ro.Z, ro.ONE, ro.p
+    eye, transpose, mul, scale = ro.eye, ro.transpose, ro.mul, ro.scale
+    add, kron, exact_gate, replay = ro.add, ro.kron, ro.exact_gate, ro.replay
+    v = ro.v
+    env = {"ro": ro, "native": native, "Fraction": Fraction, "K": K,
+           "zero": zero, "one": one, "v": v, "eye": eye, "transpose": transpose,
+           "mul": mul, "scale": scale, "add": add, "kron": kron, "exact_gate": exact_gate}
+    srmain = next(node for node in ast.parse(srcode).body if isinstance(node, ast.FunctionDef) and node.name == "main")
+    names = {"trace", "sub", "zeros", "put", "column_inner", "owner_word", "true_clock"}
+    functions = [node for node in srmain.body if isinstance(node, ast.FunctionDef) and node.name in names]
+    if {node.name for node in functions} != names:
+        raise RuntimeError("Owned SR helper interface changed")
+    exec(compile(ast.Module(body=functions, type_ignores=[]), str(root / PRIMARY) + "#SR-owned-helpers", "exec"), env)
+    trace, sub, inner = env["trace"], env["sub"], env["column_inner"]
+    checks = []
+
+    def check(name, condition):
+        if not condition:
+            raise RuntimeError("FAIL: " + name)
+        checks.append(name)
+
+    # Exact original READY calibration, including its limiting algebraic value.
+    z = K(Fraction(1, 2**20))
+    def report0(t):
+        ell = K(4)*t*t*(one-t*t)
+        aa = K(2)*ell-ell*ell
+        return one-(one-z*ell)*(one-z*aa)
+    r0 = z*(K(152)*p-K(92))-z*z*(K(1504)-K(2432)*p)
+    check("original bare-report baseline polynomial", report0(p) == r0)
+    pc = -one-p
+    ainf = K(Fraction(1,5))*(K(6)*p-K(2))
+    ainf_c = K(Fraction(1,5))*(K(6)*pc-K(2))
+    field_trace = K(4)*(ainf*r0+ainf_c*report0(pc))-K(4)
+    check("actual READY limiting field trace", field_trace == K(-4+Fraction(12976327,2**32)))
+    check("limiting trace is nonintegral", Fraction(12976327,2**32).denominator != 1)
+    check("all finite READY conjugates outside root interval", Fraction(4*21892*244,2**20)-2 > 2)
+
+    X = [[zero, one], [one, zero]]
+    Pplus = scale(K(Fraction(1, 2)), add(eye(2), X))
+    Pminus = scale(K(Fraction(1, 2)), sub(eye(2), X))
+    s = inner(v, mul(X, v))
+    check("canonical flag overlap is actual golden value", s == K(2)*p*ro.a)
+    check("both character sectors retained", add(Pplus, Pminus) == eye(2) and trace(Pplus) == one and trace(Pminus) == one)
+    check("character projector does not commute with actual flag birth", mul(Pplus, mul(v, transpose(v))) != mul(mul(v, transpose(v)), Pplus))
+
+    def comparator(A):
+        return add(kron(A, eye(2)), kron(sub(eye(len(A)), A), X))
+
+    def make_fixture(D, b, Zport, name):
+        d = len(D)
+        Pb = mul(b, transpose(b))
+        Rb = sub(eye(d), scale(K(2), Pb))
+        W = mul(mul(transpose(D), Zport), D)
+        E = scale(K(Fraction(1, 2)), sub(eye(d), W))
+        CP, CE = comparator(Pb), comparator(E)
+        F = mul(CE, CP)
+        u = kron(b, v)
+        Q = inner(b, mul(E, b))
+        char = add(kron(eye(d), Pplus), kron(mul(W, Rb), Pminus))
+        check(name + ": E is the full projector", mul(E, E) == E and transpose(E) == E)
+        check(name + ": both full flags are involutions", mul(CP, CP) == eye(2*d) and mul(CE, CE) == eye(2*d))
+        check(name + ": full F is orthogonal", mul(transpose(F), F) == eye(2*d))
+        check(name + ": full two-sector operator identity", F == char)
+        check(name + ": canonical input is unchanged by CP", mul(CP, u) == u)
+        check(name + ": full cold corner, no sector selection", inner(u, mul(F, u)) == s+(one-s)*Q)
+        check(name + ": complete trace retains source", trace(F) == K(d)+trace(Zport)-K(2)+K(4)*Q)
+        check(name + ": original report preserved", inner(mul(F, u), mul(kron(E, eye(2)), mul(F, u))) == Q)
+        direct = mul(mul(mul(kron(transpose(D), eye(2)), comparator(scale(K(Fraction(1, 2)), sub(eye(d), Zport)))), kron(D, eye(2))), CP)
+        check(name + ": literal complete comparison order", direct == F)
+        mark = mul(kron(D, eye(2)), CP)
+        check(name + ": initialized original marked geometry", mul(mark, u) == kron(mul(D, b), v))
+        check(name + ": full mark is a genuine precomposition", mark != kron(D, eye(2)))
+        V = kron(F, eye(2))
+        check(name + ": last-spectator target is SO", mul(transpose(V), V) == eye(4*d) and ro.det(V) == one)
+        repeated = eye(2*d)
+        x = K(2)*Q-one
+        cheb = [one, x, K(2)*x*x-one, K(4)*x*x*x-K(3)*x]
+        repeated_traces = []
+        for k in (1, 2, 3):
+            repeated = mul(repeated, F)
+            rhs = K(d)+K(2)*cheb[k]+K(d//2-1)*K(1+(-1)**k)
+            check(name + ": repeated full trace Chebyshev k=" + str(k), trace(repeated) == rhs)
+            repeated_traces.append(trace(repeated).encoded())
+        return V, {"name": name, "original_bank_dimension": d, "Q_actual": Q.encoded(),
+                   "cold_corner": inner(u, mul(F, u)).encoded(), "trace_F": trace(F).encoded(),
+                   "trace_F_power_1_2_3": repeated_traces}
+
+    bank = kron(v, v)
+    Z4 = [[(one if i < 2 else -one) if i == j else zero for j in range(4)] for i in range(4)]
+    words = [
+        ("native_G_CX_three", [("G", (0,)), ("CX", (0, 1)), ("G", (1,))]),
+        ("native_G_CX_six", [("G", (0,)), ("CX", (0, 1)), ("G", (1,)),
+                            ("G", (0,)), ("CX", (1, 0)), ("G", (1,))]),
+    ]
+    rows = []
+    for name, word in words:
+        D = replay(2, word)
+        check(name + ": unchanged native owner all-column match", D == env["owner_word"](word))
+        _, row = make_fixture(D, bank, Z4, name)
+        row["native_calls"] = len(word)
+        rows.append(row)
+    check("two actual native fixtures have different Q", rows[0]["Q_actual"] != rows[1]["Q_actual"])
+
+    # Smallest true clock: one original bank bit, one flag, last spectator.
+    # Use the SHA-pinned original SR G1--G6 constructor unchanged.
+    Z2 = [[one, zero], [zero, -one]]
+    Vsmall, smallrow = make_fixture(ro.G, v, Z2, "one_G_clock_bank")
+    T, R, dims, g, prefix = env["true_clock"](Vsmall, 2)
+    w = [[-p], [ro.a]]
+    Plast = kron(eye(4), mul(w, transpose(w)))
+    check("actual clock incidence isometry", mul(transpose(R), R) == eye(8))
+    check("full growing clock unitarity", mul(transpose(T), T) == eye(len(T)))
+    check("real intermediate G and final target retained", prefix != eye(8) and mul(g, prefix) == Vsmall)
+    check("no shorter clock wrap", trace(T) == zero)
+    check("shortest wrap reads full flag, not a character", trace(mul(T, T)) == K(2)*trace(mul(Plast, Vsmall)))
+    check("shortest trace equals complete repeated source", trace(mul(Plast, Vsmall)) == K(2)+trace(Z2)-K(2)+K(4)*K(smallrow["Q_actual"]))
+
+    receipt = {
+        "schema": "full-flag-original-comparison-exact-v1", "status": "PASS",
+        "field": "Q[a]/(a^4+a^2-1), a positive, p=a^2",
+        "arithmetic": "exact rational polynomial reduction; no floating tolerance",
+        "checks": len(checks), "check_names": checks,
+        "owners": [
+            {"path": PRIMARY, "block": "RO-NATIVE-GOLDEN-CHECK", "code_sha256": RO_HASH},
+            {"path": PRIMARY, "block": "SR-ORIGINAL-READER-CLOCK-CHECK", "code_sha256": SR_HASH,
+             "reused_functions": sorted(names)},
+            {"path": NATIVE, "sha256": sha((root / NATIVE).read_bytes())},
+            {"path": CLOCK, "sha256": sha((root / CLOCK).read_bytes())},
+        ],
+        "checker_sha256": sha(Path(__file__).read_bytes().replace(b"\r\n", b"\n")),
+        "native_reader_cases": rows, "small_clock_reader": smallrow,
+        "clock": {"stage_dimensions": dims, "clock_dimension": len(T), "L": 2,
+                  "trace_T": trace(T).encoded(), "trace_T_squared": trace(mul(T, T)).encoded()},
+        "scope": [
+            "Q is the actual fixture probability; no READY factor or GR source constant is invented.",
+            "Both full character sectors, canonical flag and last spectator remain in the target and clock.",
+            "The clock has three separate births, a nonidentity native G stage, and one ideal final target.",
+            "CP/CE and final targets are not claimed emitted exact native words; all GR compilation remains analytic.",
+            "k=1,2,3 illustrates the exact Chebyshev law; it does not numerically prove an infinite classification.",
+            "No old suite is rerun; only its SHA-pinned arithmetic/native/clock helper definitions are reused.",
+        ],
+    }
+    args.out.write_text(json.dumps(receipt, ensure_ascii=False, indent=2)+"\n", encoding="utf-8", newline="\n")
+    print(json.dumps({"status": "PASS", "checks": len(checks), "output": str(args.out.resolve()),
+                      "receipt_sha256": sha(args.out.read_bytes())}))
+
+
+if __name__ == "__main__":
+    main()
+```
+<!-- XF-FULL-COMPARISON-CHECK:END -->
+
+```json
+{
+  "input_ref": "e6e46c805f8a51c6965aa6abbd8fc3e4b71a7d74",
+  "input_primary_blob": "a62e7021769e2e624c389daea2d8bafb3a4bc845",
+  "checker_sha256": "a879ac7dabc3e3a9511796fa1771999100def36d59f383a7f6284ee67e8253d4",
+  "receipt_sha256": "2dba5bc0a7e4c5bc7d2e3de4bbc9a7574d6a1ec37d203580fecc326944182c16",
+  "checks": 61,
+  "normal_optimized_byte_identical": true,
+  "owners": [
+    {
+      "path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c"
+    },
+    {
+      "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "sha256": "450c736e06e50561c6f5b4e9b27a9744d79fb6b3e38cf7c6880ab12205f759c7"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean",
+      "sha256": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "sha256": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md",
+      "sha256": "320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md",
+      "sha256": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md",
+      "sha256": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1"
+    }
+  ],
+  "checker_owners": [
+    {
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "block": "RO-NATIVE-GOLDEN-CHECK",
+      "code_sha256": "28af31ce262cafd8fa3ebe2b93922248961e0441fc582663f25857cccc83f99a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "block": "SR-ORIGINAL-READER-CLOCK-CHECK",
+      "code_sha256": "b785b3f595ea130e6d0b4dc85a8dd09f4b989f59a549dae5aa806d2fd8219048",
+      "reused_functions": [
+        "column_inner",
+        "owner_word",
+        "put",
+        "sub",
+        "trace",
+        "true_clock",
+        "zeros"
+      ]
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md",
+      "sha256": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393"
+    }
+  ],
+  "scope": [
+    "Q is the actual fixture probability; no READY factor or GR source constant is invented.",
+    "Both full character sectors, canonical flag and last spectator remain in the target and clock.",
+    "The clock has three separate births, a nonidentity native G stage, and one ideal final target.",
+    "CP/CE and final targets are not claimed emitted exact native words; all GR compilation remains analytic.",
+    "k=1,2,3 illustrates the exact Chebyshev law; it does not numerically prove an infinite classification.",
+    "No old suite is rerun; only its SHA-pinned arithmetic/native/clock helper definitions are reused."
+  ]
+}
+```
+
+Final checkpoint validation: the one checker passes 61 exact conditions
+in normal and optimized warnings-as-errors runs with byte-identical
+receipts. A further execution extracted from this final Markdown gives
+the identical pinned receipt. Independent bounded reads checked the
+full flag/task map, independent preparation sources and READY-uniform
+nonresonance; their gain, actual/target cold-corner and literal birth-count
+corrections are incorporated. Work/protocol/assembly guards and
+whitespace validation pass. The assembly template was consumed; no
+acceptance digest or discharge is asserted. scientific_promotion=false.
+Unchanged geometry, full heat and Lean suites were not replayed.
