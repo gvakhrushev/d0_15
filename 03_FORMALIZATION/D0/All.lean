@@ -262,6 +262,7 @@ import D0.Foundation.DetectionCapabilityBoundary
 import D0.Foundation.EndogenousActionQuantum
 import D0.Foundation.EquivariantM1
 import D0.Foundation.FrobeniusDivision3D
+import D0.Foundation.FutureCodeVerdict
 import D0.Foundation.FutureExecution
 import D0.Foundation.FutureShortlexAdapter
 import D0.Foundation.GeneralComparisonGrammar

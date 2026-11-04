@@ -16643,3 +16643,25 @@ No encoder existence for arbitrary executions, computable canonicalizer,
 physical admission, finite physical alphabet or full Cost−Info/work/clock
 selection follows. This conditional adapter does not accept C0 as a whole or
 close the original physical GR obligations.
+
+### Boolean comparison with three outcomes — 4 November 2026
+
+Book01 §01.1.5 is the raw interval `[9948,11972)` of source blob
+`eb2d8ea779189084cdaaca717326df88589ec918`, SHA-256
+`b28cef7d265c5298df27f658fc875e2b7cb7e22a317713bc226dc3884e603b39`.
+`D0.Foundation.FutureCodeVerdict` composes the owned represented-comparison
+theorem with the conditional future-code adapter: a supplied comparison
+returns true exactly when the two canonical codes differ, for arbitrary
+execution outcome type. Its concrete execution has `State = Outcome = Fin 3`,
+a constructed `TheoryVerification`, independently specified encoder and
+decoder, three distinct future codes, both Boolean verdicts, and the same
+comparison theorem for both line labels. Direct Lean passed for blob
+`f7b3b3ecdb136620371d649a6b16c262054ae27e`; independent review checked the
+ternary carrier, source maps and comparison statement.
+
+The two line labels in this example have the same comparison function;
+physical or causal independence is not established. A Boolean verdict on a
+pair is not an injective single-bit encoding of all three outcomes. The
+execution and verification are mathematical inputs, canonical choice is
+classical, and no probability threshold, unique ontology, physical admission
+or semantic acceptance of the stronger source claims follows.
