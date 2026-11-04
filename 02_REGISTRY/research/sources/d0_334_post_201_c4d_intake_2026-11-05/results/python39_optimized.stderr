@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/private/tmp/d0-owner-7fh-intake/02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/check_transport.py", line 381, in <module>
+    main()
+  File "/private/tmp/d0-owner-7fh-intake/02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/check_transport.py", line 165, in main
+    p, k, dk, rows, drows = load_native_once(args.repo)
+  File "/private/tmp/d0-owner-7fh-intake/02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/check_transport.py", line 116, in load_native_once
+    k, dk = native_excerpt.native(np.log(2.0), 3.0 / 5.0,
+  File "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py", line 71, in native
+RuntimeWarning: divide by zero encountered in matmul
