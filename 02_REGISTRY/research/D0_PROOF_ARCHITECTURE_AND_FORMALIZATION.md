@@ -17678,3 +17678,11 @@ records that the conditional fixed-basis CKM theorem consumes supplied strict
 basis selectors; it does not derive them from Book01's general hidden-variable
 wording. The cited original locator and the physical source-to-CKM map remain
 unverified. This is an open gap, not acceptance of the source atom.
+
+### Independent source review: computable stored-code query
+
+The [Book01 §01.1.8 query review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0118_query_review_2026-11-05/SUMMARY_RU.md)
+checks computable positional access to an already supplied list of codes and
+its actual coded-core consumer. The absent-index control preserves the
+precondition of append retention; physical record creation, encoding and cost
+remain separate.
