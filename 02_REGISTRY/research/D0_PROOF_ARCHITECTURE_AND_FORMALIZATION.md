@@ -16785,6 +16785,103 @@ remains required. These are all finite action words and tests of the supplied
 abstract system; no physical memory implementation, cost, effective choice,
 or the source's broader necessity/falsifiability claims follow.
 
+### Memory bounds through an interpretation — 4 November 2026
+
+Book06's current synthesis on future memory is source blob
+`6ebf38ee1f10c94eda7ff752ceb0960253dc0199`, bytes `[1254,2263)`, SHA-256
+`dc08147274c9bcda27f0077816fa21e43d550eddeb2cb5233c739eff991ad4e6`.
+`D0.Foundation.InterpretedFutureMemoryBound` composes the owned injective
+map of source future classes with the sufficient-memory class injection.
+For a supplied `Interpretation F G`, a finite memory decoding every common
+profile on all `G.State` has at least as many values as the finite source
+future quotient. Neither a finite common quotient nor full native-context
+coverage is assumed.
+
+For `visibleBitInterpretation`, a first-bit encoder reaches the exact bound
+of two memory values for the common interface, but no decoder of that same
+encoding recovers all native profiles because an extra native test separates
+two collapsed states. The existing no-native-coverage result is reused.
+Direct Lean passed for blob `f6fb7a10d0ce5ca2a98eabc5b08ad8178173fe95`
+with the new dependency compiled separately and other cached objects;
+independent review checked the composed injections and example. Full
+provenance-checked integration remains required. This is a scoped application
+to supplied abstract systems, not a native memory cardinality of four,
+physical implementation, algorithmic cost, clock/work price or coverage proof.
+
+### Exact common versus native memory in the extra-bit example — 4 November 2026
+
+`D0.Foundation.ExtraBitNativeMemory` consumes the interpreted memory bound.
+In the supplied `extraBitTestSystem`, the empty action word and its two native
+test values distinguish both Boolean coordinates. The full native future
+quotient is therefore equivalent to `Bool × Bool` and has exactly four
+classes. Any finite memory decoding all native profiles on every state needs
+at least four values; an explicit pair encoder/decoder attains the bound.
+The previously constructed common interface has exactly two classes and its
+first-bit memory attains the lower bound two. Both claims concern the same
+abstract native state carrier and their own declared operation/test sets.
+
+Direct Lean passed for the reviewed original blob
+`2ee1b6ad2e4450f7a7eec6e3b0c0a875a484ba70`, using separately compiled new
+dependencies and existing cached objects; one proof-neutral comment was then
+clarified from Boolean outcomes to Boolean test values. Independent review
+checked the separation, quotient and attaining witnesses. Full
+provenance-checked integration of the published source remains required.
+These finite cardinalities do not establish physical admission, clock/work
+price, quantum dimension or computational optimality.
+
+### Capacity of retained future-class and line pairs — 4 November 2026
+
+For the existing archive-code result in Book01 §01.1.8, source blob
+`eb2d8ea779189084cdaaca717326df88589ec918`, interval `[16923,17382)`
+has SHA-256 `9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe`.
+`D0.Foundation.ArchivePairCapacity` composes the existing archive-code iff
+with a supplied exact pack/unpack round trip on every archive entry. Under
+finite future-class, line and memory carriers, memory must have at least
+`card FutureClass * card Line` values. It is not required to recover arbitrary
+word strings or distinguish raw states inside one future class.
+
+For the existing `finiteSigmaWitness visibleBitVerification`, there are two
+future classes and two line labels: the lower bound of four values is attained
+by an explicit pair memory on all supplied archive entries. Direct Lean
+passed for blob `a9f7c0e2b55bde2b6821d3b2c484453df2ecf141` using cached
+dependencies; independent review checked the injection, round-trip scope
+and attaining witness. Full provenance-checked integration remains required.
+The premise covers every formal class/line pair, not their physical joint
+reachability. Classical choice, causal independence, physical cost and the
+ability of a single verdict to store a line remain separate.
+
+### Optional early progress for batched search — 4 November 2026
+
+`D0_PROOF_SEARCH_PROGRESS=1` now reports opt-in JSON counters to stderr during
+corpus hashing, the shared ripgrep scan and candidate processing. Counters
+describe completed events and attempted document reads, including failures;
+a single long read or blocked subprocess may emit nothing until it returns.
+Tests compare outputs and corpus snapshots with progress enabled/disabled,
+verify one shared batched scan and exact mixed-event counts. Diagnostics do
+not alter a replay already running, prove continuous corpus stability or
+change the meaning of existing results. As before, failure to write an enabled
+stderr stream may interrupt the process.
+
+### Archive capacity: remaining physical application — 4 November 2026
+
+`ArchivePairCapacity` does not discharge the native archive apparatus binding
+in `A4D_NATIVE_VERIFIED_ARCHIVE_ACTUATION.md`, source blob
+`06de86d2793466d21f2ea0d2efa76f16a7f8a87a`, bytes `[3840,4253)`,
+SHA-256 `29df016dd0a677ae0f461d02aaeafc51161f8f45e0262d64641ea084123b1a21`.
+That consumer additionally needs the actual record encoding into its real
+Hilbert carrier, the source's operator and unit/norm equations, and comparison
+readback for the same admitted apparatus. The finite cardinality theorem
+does not construct those maps or equations. A valid substitution requires a
+reviewed binding of `W.archiveCode` to the execution's addressable record,
+preserving both future class and line with correct readback, together with
+the same execution's clock and work.
+
+Nor does the archive bound establish the injective update and common-reset
+premises already used by `PreparationMemoryBound.archive_capacity_bound`;
+its separate capacity theorem is not a proof of those premises. No physical
+selector, apparatus realization, independent line causality or cost is added
+by this comparison. The existing owners and physical obligations remain open.
+
 ### Actual ordered return-price derivative for one affine reporter
 
 `D0.Research.TaskFaithfulAffineReporterDerivative` applies the existing

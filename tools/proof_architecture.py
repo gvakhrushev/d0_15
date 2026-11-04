@@ -1660,6 +1660,9 @@ def _search_progress(stage: str, **details: Any) -> None:
               file=sys.stderr, flush=True)
 
 
+_SEARCH_PROGRESS_INTERVAL = 1000
+
+
 def _search_filesystem_path(path: pathlib.Path) -> pathlib.Path:
     """Use extended Windows paths for filesystem reads; preserve path checks."""
     if os.name != "nt":
@@ -1802,6 +1805,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         raise ValueError("offset must be between 0 and 4096")
     if not 1 <= ranked_pages <= 3 or (offset and ranked_pages != 1):
         raise ValueError("ranked_pages must be 1..3 and cannot be combined with offset")
+    _search_progress("search_started", query_count=len(queries))
     # The low-information filter limits corpus discovery only. Every discovered
     # file and exact pinned source is matched and scored against the raw query.
     terms_by_query = [_query_terms(query) for query in queries]
@@ -1839,30 +1843,44 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
     for term in unique_variants:
         rg_query.extend(["-e", term])
     content_groups_by_query: list[dict[str, set[str]]] = [{} for _ in queries]
+    _search_progress("prefilter_started", query_count=len(queries),
+                     unique_variants=len(unique_variants))
+    prefilter_events = 0
+    prefilter_matches = 0
     for event_text in _rg_text_lines([*rg_query, *roots], root):
+        prefilter_events += 1
         try:
-            event = json.loads(event_text)
-        except json.JSONDecodeError:
-            continue
-        if event.get("type") != "match":
-            continue
-        data = event.get("data", {})
-        raw_path = data.get("path", {}).get("text")
-        if not raw_path:
-            continue
-        if raw_path.replace("\\", "/").startswith(DERIVED_TEXT_EXCLUDED_PREFIXES):
-            continue
-        # ripgrep reports non-overlapping submatches. In a batched search, a
-        # shorter term from another query can hide an overlapping declaration
-        # name, so recover each query's terms from the whole matching line.
-        # Match every query variant in one pass over this line. This retains
-        # overlapping terms without rescanning the line for every query.
-        line_text = _fold(data.get("lines", {}).get("text", ""))
-        if not line_text:
-            continue
-        for index, matched_names in _multi_pattern_matches(line_text, matcher).items():
-            content_groups_by_query[index].setdefault(raw_path, set()).update(matched_names)
+            try:
+                event = json.loads(event_text)
+            except json.JSONDecodeError:
+                continue
+            if event.get("type") != "match":
+                continue
+            prefilter_matches += 1
+            data = event.get("data", {})
+            raw_path = data.get("path", {}).get("text")
+            if not raw_path:
+                continue
+            if raw_path.replace("\\", "/").startswith(DERIVED_TEXT_EXCLUDED_PREFIXES):
+                continue
+            # ripgrep reports non-overlapping submatches. In a batched search, a
+            # shorter term from another query can hide an overlapping declaration
+            # name, so recover each query's terms from the whole matching line.
+            # Match every query variant in one pass over this line. This retains
+            # overlapping terms without rescanning the line for every query.
+            line_text = _fold(data.get("lines", {}).get("text", ""))
+            if not line_text:
+                continue
+            for index, matched_names in _multi_pattern_matches(line_text, matcher).items():
+                content_groups_by_query[index].setdefault(raw_path, set()).update(matched_names)
+        finally:
+            if prefilter_events % _SEARCH_PROGRESS_INTERVAL == 0:
+                _search_progress("prefilter_running", events=prefilter_events,
+                                 match_events=prefilter_matches)
 
+    _search_progress("prefilter_complete", events=prefilter_events,
+                     match_events=prefilter_matches)
+    _search_progress("file_enumeration_started")
     all_files = subprocess.run(["rg", "--files", *text_globs, *roots], cwd=root,
                                capture_output=True, text=True, encoding="utf-8", errors="replace")
     if all_files.returncode not in (0, 1):
@@ -1873,6 +1891,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             DERIVED_TEXT_EXCLUDED_PREFIXES
         )
     ]
+    _search_progress("file_enumeration_complete", files=len(all_text_paths))
     # Cache only term sets, not document bodies. A file passing the informative
     # corpus/title prefilter is scanned once for all raw queries; broad terms on
     # other lines must still contribute to matching and ranking. The existing
@@ -1891,11 +1910,18 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                 if offset or ranked_pages > 1:
                     discovery_digests[raw_rel.replace("\\", "/")] = hashlib.sha256(data).hexdigest()
                 raw_content_matches[raw_rel] = _multi_pattern_matches(_fold(content), raw_matcher)
+            if len(raw_content_matches) % _SEARCH_PROGRESS_INTERVAL == 0:
+                _search_progress("document_reads_attempted", count=len(raw_content_matches))
         return raw_content_matches[raw_rel]
 
     candidates_by_query: list[list[tuple[float, str, dict[str, Any]]]] = [[] for _ in queries]
     for index, terms in enumerate(terms_by_query):
+        _search_progress("candidate_query_started", query_index=index,
+                         query_count=len(queries), document_reads_attempted=len(raw_content_matches))
         if not terms:
+            _search_progress("candidate_query_complete", query_index=index,
+                             query_count=len(queries), candidates=0,
+                             document_reads_attempted=len(raw_content_matches))
             continue
         pattern = patterns_by_query[index]
         content_groups = content_groups_by_query[index]
@@ -1909,7 +1935,12 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             if title_groups:
                 candidate_paths.add(raw_rel)
         min_hits = 1 if len(terms) <= 3 else max(2, (len(terms) + 3) // 4)
-        for raw_rel in sorted(candidate_paths):
+        for path_index, raw_rel in enumerate(sorted(candidate_paths), 1):
+            if path_index % _SEARCH_PROGRESS_INTERVAL == 0:
+                _search_progress("candidate_query_running", query_index=index,
+                                 query_count=len(queries), paths_started=path_index,
+                                 candidate_paths=len(candidate_paths),
+                                 document_reads_attempted=len(raw_content_matches))
             rel = raw_rel.replace("\\", "/")
             if (rel in {"tools/proof_architecture.py", "tools/proof_architecture_cold_start.py",
                         "tools/proof_architecture_cold_start_v3.py",
@@ -1934,6 +1965,9 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             }
             score = hits / len(terms) + _owner_bonus(rel) + _filename_bonus(rel, terms)
             candidates_by_query[index].append((score, rel, record))
+        _search_progress("candidate_query_complete", query_index=index,
+                         query_count=len(queries), candidates=len(candidates_by_query[index]),
+                         document_reads_attempted=len(raw_content_matches))
 
     pinned_cache: dict[tuple[str, str, str], tuple[str, bytes | None, str | None]] = {}
     _search_progress("corpus_candidates_ready", queries=len(queries),
