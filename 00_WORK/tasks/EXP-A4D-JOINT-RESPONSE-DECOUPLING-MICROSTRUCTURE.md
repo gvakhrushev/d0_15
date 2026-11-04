@@ -21002,3 +21002,61 @@ Independent readers checked the full-source inference, domain and norm
 boundaries. Affected structural guards run once on final inputs.
 No claim/assembly promotion, Ready, retirement or merge. GR_closed=false;
 the objective remains active.
+
+## 4 November 2026 checkpoint: exact finite centres on complete-operation task sections
+
+Phase: native realization / final composition, existing #334.
+Input: ce7a3c909d48154412cc4b6b31d74d74f6ff9f93. Write paths remain
+this brief and the primary same-representative artifact. Added section
+7fa, EOQ1–EOQ12. Consumer: the exact finite-source application of
+joint_nonlinear_solve and the scoped B/C/D task/source interface.
+
+The new parent substitution applies FN/RO's exact full-operation quotient
+to the ALREADY OWNED EO finite native centres. Each logical catalogue
+label keeps its actual complete tuple, word/layout, initial cut, gain,
+comparison step and basis map. All faithful complete-operation replacements
+have the identical ENTIRE H+J price, so every original finite pair equality
+and the whole finite covector remain exactly zero. All additional vertical
+comparisons are neutral. FP8 axes, four independent preparation legs and
+genuine old/input coordinates remain logical variables with their own
+equations; they are not frozen or renamed vertical. Normal reactions are
+retained. This is an exact implementation extension of a known root family,
+not a new root search or promotion of an approximate compiler to exactness.
+
+The actual price map now spells out the rank-one scene cut, zero
+degree-one cut, complete closing isometry, all 425D modes and the full
+source sign. Feedback reduces once to the proper rank-r return determinant,
+without a stage/scene/Hodge multiplier. Complete gauges lift to both Hodge
+degrees and preserve the full covector at the declared scope.
+
+The EO accumulating-history induction retains its paid inverse before
+sealing. Required readers are conjugated during that inverse and through
+later calls on the active SourceI apparatus; only genuinely sealed factors
+use static oldRIGHT protection. The inverse is part of the NEXT priced
+prefix. Arbitrary prior RO/CT attenuation histories and arbitrary repricing
+of past comparisons do not inherit exact canonicality.
+
+Book01/KAPPA task admission is instantiated explicitly by a finite packet
+over the task base T: finite quotient, actual operator lift, positive coarse
+response, retained records, finite halt and the original normalization.
+The complete descriptor is task data. A separately loaded physical programme
+register is not supplied by that theorem and cannot be inferred from RO1's
+stronger storage wording. Including Y in a packet does not freeze its
+variation: DM_c(Y), the normal reaction and reduced field source remain.
+
+EO and RO use the same full material-metric Jacobian and original CAR
+coupling. Their calibrated covectors agree in the physical kappa limit,
+with actual decoded fields and every lift/error bound retained. This does
+not equate their native profiles, words, prices, clocks, gains or finite
+zero sets. Exact roots here remain on EO's declared finite comparison frame
+and five-profile nonvacuum class; RO retains its broader asymptotic theorem.
+
+Validation: the existing growing-clock checker passed 41 exact conditions,
+including nonzero feedback and the incomplete-closure negative control.
+Its AF fixture tests the general operator identity, not an emitted EO/RO
+compiler. The new composition is analytic; unchanged EO/FN/CT/GENERAL
+calculations are consumed without another heavy replay. Independent bounded
+reviews checked the price, source mode, task section, active-port reader,
+tower and material-map boundaries. Structural guards run on final inputs.
+No scientific acceptance, registry promotion, Ready, retirement or merge.
+GR_closed=false; the full objective remains active.
