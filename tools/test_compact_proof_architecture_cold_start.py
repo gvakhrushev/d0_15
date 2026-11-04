@@ -107,6 +107,28 @@ def example_complete_replay(head):
 
 
 class ColdStartCompactorTests(unittest.TestCase):
+    def test_exact_pinned_content_outside_window_is_not_reported_as_lexical_miss(self):
+        path, commit, blob = "02_REGISTRY/research/owner.md", "a" * 40, "b" * 40
+        locator = {"source": "owner-index.md", "direct_content": True,
+                   "source_refs": [{"path": path, "commit": commit, "blob": blob,
+                                    "pin_status": "pinned_snapshot",
+                                    "content_status": "direct_content_match"}]}
+        required = {"path": path, "commit": commit, "blob": blob,
+                    "scope_query_indexes": [0]}
+
+        receipt = compact.cold_start._required_source_status([("owner query", [locator])],
+                                                              required)
+
+        self.assertFalse(receipt["found"])
+        self.assertEqual(receipt["status"], "verified_direct_content_outside_search_window")
+        self.assertIsNone(receipt["candidate_rank"])
+
+        locator["source_refs"][0]["content_status"] = "no_direct_content_match"
+        no_match = compact.cold_start._required_source_status([("owner query", [locator])],
+                                                               required)
+        self.assertFalse(no_match["found"])
+        self.assertEqual(no_match["status"], "pinned_source_loaded_no_content_match")
+
     def test_one_pinned_source_retains_distinct_scoped_queries(self):
         fixture, case = example_case()
         fixture["queries"].append("second query")

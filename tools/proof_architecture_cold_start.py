@@ -2466,6 +2466,9 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
             for reference in hit.get("source_refs", []):
                 if _path_matches(str(reference.get("path", "")), expected_path):
                     citation_refs.append(reference)
+    exact_pin_refs = [reference for reference in citation_refs
+                      if (expected_commit is None or reference.get("commit") == expected_commit)
+                      and (expected_blob is None or reference.get("blob") == expected_blob)]
     exact_candidates = []
     for query, rank, hit in direct_candidates:
         commit_ok = expected_commit is None or hit.get("source_commit") == expected_commit
@@ -2538,9 +2541,22 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
         status = "source_pin_mismatch"
         query, rank, hit = direct_candidates[0]
         source_origin = hit.get("source_origin")
-    elif any(ref.get("pin_status") in {"pinned_snapshot", "verified_no_content_match"}
-             for ref in citation_refs):
-        status, query, rank, source_origin = "pinned_source_loaded_no_content_match", None, None, "pinned_snapshot"
+    elif any(ref.get("content_status") == "direct_content_match" for ref in exact_pin_refs):
+        # The exact pinned text passed its direct-content query, but its ranked
+        # candidate fell outside this bounded result window.
+        status, query, rank, source_origin = (
+            "verified_direct_content_outside_search_window", None, None, "pinned_snapshot"
+        )
+    elif any(ref.get("content_status") == "no_direct_content_match" for ref in exact_pin_refs):
+        status, query, rank, source_origin = (
+            "pinned_source_loaded_no_content_match", None, None, "pinned_snapshot"
+        )
+    elif any(ref.get("pin_status") in {"pinned_snapshot", "not_followed_bounded_search",
+                                        "duplicate_pin_already_checked"}
+             for ref in exact_pin_refs):
+        status, query, rank, source_origin = (
+            "exact_pin_seen_but_content_check_incomplete", None, None, "pinned_snapshot"
+        )
     elif citation_refs:
         status, query, rank, source_origin = "external_reference_only", None, None, "citation_only"
     else:
@@ -2664,6 +2680,7 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
                      "evidence_lines": hit.get("evidence_lines", [])[:3],
                      "source_refs": [{"path": ref.get("path"), "commit": ref.get("commit"),
                                       "blob": ref.get("blob"), "pin_status": ref.get("pin_status"),
+                                      "content_status": ref.get("content_status"),
                                       "section_refs": ref.get("section_refs", [])}
                                      for ref in hit.get("source_refs", [])[:5]]}
                     for hit in hits

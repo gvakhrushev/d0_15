@@ -1724,6 +1724,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
 
     pinned_cache: dict[tuple[str, str, str], tuple[str, bytes | None, str | None]] = {}
     pinned_seen: list[set[tuple[str, str, str]]] = [set() for _ in queries]
+    pinned_content_status: list[dict[tuple[str, str, str], str]] = [{} for _ in queries]
     results = []
     for index, candidates in enumerate(candidates_by_query):
         candidates.sort(key=lambda row: (-row[0], row[1]))
@@ -1783,6 +1784,9 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                            str(reference.get("path") or ""),
                            str(reference.get("blob") or ""))
                 if pin_key in pinned_seen[index]:
+                    reference["content_status"] = pinned_content_status[index].get(
+                        pin_key, "duplicate_pin_already_checked"
+                    )
                     continue
                 pinned_seen[index].add(pin_key)
                 pin_status, pinned_bytes = _read_pinned_source(root, reference, pinned_cache)
@@ -1800,6 +1804,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                     if pinned_match is not None:
                         pinned_score, pinned_record = pinned_match
                         pinned_record["pin_status"] = "verified"
+                        reference["content_status"] = "direct_content_match"
                         pinned_lines = [pinned_text.splitlines()[row["line"] - 1]
                                         for row in pinned_record["evidence_lines"]
                                         if row.get("line") is not None]
@@ -1808,6 +1813,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                             (pinned_score, pinned_record["key"], pinned_record)
                         )
                     else:
+                        reference["content_status"] = "no_direct_content_match"
                         pinned_candidates.append((
                             score - 0.50, f"{pinned_rel}@{reference['commit']}",
                             {"kind": "text-candidate", "key": f"{pinned_rel}@{reference['commit']}",
@@ -1832,6 +1838,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                          "source_commit": reference.get("commit"),
                          "source_blob": reference.get("blob"), "evidence_lines": []}
                     ))
+                if reference.get("content_status"):
+                    pinned_content_status[index][pin_key] = str(reference["content_status"])
         combined = list(candidates)
         combined.extend(pinned_candidates)
         combined.sort(key=lambda row: (-row[0], row[1]))
