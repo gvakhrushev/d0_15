@@ -33,6 +33,7 @@ import D0.Algebra.SedenionTower
 import D0.Algebra.Sedenions
 import D0.Analysis.DirectFeedbackRowDerivative
 import D0.Analysis.GramMatrixOrder
+import D0.Analysis.MatchedBranchFieldSource
 import D0.Analysis.MatchedBranchNormalizedPrice
 import D0.Analysis.MatchedBranchResolventWeights
 import D0.Analysis.MatchedBranchReturnDerivative
