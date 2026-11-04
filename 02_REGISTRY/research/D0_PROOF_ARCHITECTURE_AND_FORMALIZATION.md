@@ -17746,3 +17746,10 @@ and archive-code consumers. The encoded tagged objects are represented states,
 not arbitrary raw states; negative controls preserve that distinction and the
 need for the decoder hypothesis. No physical encoder or full C0 acceptance is
 inferred.
+
+### Future code transition refactor
+
+The [code transition refactor and C0 receipts](sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_step_refactor_inventory_3616_2026-11-05/README.md)
+reuse `stateCode_eq_iff` in `codeStep_respects_profile`, with the same theorem
+statement and assumptions. Versioned provenance and compiled views remain
+technical evidence, not semantic acceptance or physical realization.
