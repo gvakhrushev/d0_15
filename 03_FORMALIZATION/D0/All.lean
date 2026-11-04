@@ -33,6 +33,7 @@ import D0.Algebra.SedenionTower
 import D0.Algebra.Sedenions
 import D0.Analysis.DirectFeedbackRowDerivative
 import D0.Analysis.GramMatrixOrder
+import D0.Analysis.MatchedWeightedMeanDerivative
 import D0.Analysis.MatrixDeterminantDerivative
 import D0.Analysis.MatrixMovingHeatFeedback
 import D0.Analysis.MatrixRelativeLogDetBound
