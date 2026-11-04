@@ -1,0 +1,740 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "05c0fa3a4662bda0204317b7c794cef280cdfe77",
+  "worktree_dirty": false,
+  "claim_registry_sha256": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
+  "lean_source_digest": "deb9e9f8d99b486bd1e1a36e2da8c8f79732ba4cc79635348ae617cfee6eb073",
+  "collector_sha256": "908cf541e7142ffeee3f5b0734ee120e89c32bead98c3375610b8fcff7ca2025",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "claim_id": "D0-CVFT-001A",
+    "mappings": [
+      {
+        "claim_id": "D0-CVFT-001A",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "theorem_atom": "Dynamics.internal_feedback_forced_by_split",
+        "candidate_names": [
+          "D0.Dynamics.InternalFeedbackResolvent.Dynamics.internal_feedback_forced_by_split",
+          "D0.Cosmology.FeedbackPartitionFunction.Dynamics.internal_feedback_forced_by_split",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Dynamics.internal_feedback_forced_by_split",
+          "D0.Dynamics.Dynamics.internal_feedback_forced_by_split",
+          "D0.Cosmology.Dynamics.internal_feedback_forced_by_split",
+          "D0.Dynamics.internal_feedback_forced_by_split"
+        ]
+      },
+      {
+        "claim_id": "D0-CVFT-001A",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "theorem_atom": "Dynamics.internal_feedback_resolvent_series",
+        "candidate_names": [
+          "D0.Dynamics.InternalFeedbackResolvent.Dynamics.internal_feedback_resolvent_series",
+          "D0.Cosmology.FeedbackPartitionFunction.Dynamics.internal_feedback_resolvent_series",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Dynamics.internal_feedback_resolvent_series",
+          "D0.Dynamics.Dynamics.internal_feedback_resolvent_series",
+          "D0.Cosmology.Dynamics.internal_feedback_resolvent_series",
+          "D0.Dynamics.internal_feedback_resolvent_series"
+        ]
+      },
+      {
+        "claim_id": "D0-CVFT-001A",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "theorem_atom": "Cosmology.feedback_determinant_return_cycles",
+        "candidate_names": [
+          "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_determinant_return_cycles",
+          "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_determinant_return_cycles",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_determinant_return_cycles",
+          "D0.Dynamics.Cosmology.feedback_determinant_return_cycles",
+          "D0.Cosmology.Cosmology.feedback_determinant_return_cycles",
+          "D0.Cosmology.feedback_determinant_return_cycles"
+        ]
+      },
+      {
+        "claim_id": "D0-CVFT-001A",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "theorem_atom": "Cosmology.feedback_variation_universal_source",
+        "candidate_names": [
+          "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_variation_universal_source",
+          "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_variation_universal_source",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_variation_universal_source",
+          "D0.Dynamics.Cosmology.feedback_variation_universal_source",
+          "D0.Cosmology.Cosmology.feedback_variation_universal_source",
+          "D0.Cosmology.feedback_variation_universal_source"
+        ]
+      },
+      {
+        "claim_id": "D0-CVFT-001A",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "theorem_atom": "Cosmology.feedback_pressure_trace_log",
+        "candidate_names": [
+          "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_pressure_trace_log",
+          "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_pressure_trace_log",
+          "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_pressure_trace_log",
+          "D0.Dynamics.Cosmology.feedback_pressure_trace_log",
+          "D0.Cosmology.Cosmology.feedback_pressure_trace_log",
+          "D0.Cosmology.feedback_pressure_trace_log"
+        ]
+      }
+    ]
+  },
+  "claim_locator_crosswalk": {
+    "summary": {
+      "resolved_in_declared_module": 5
+    },
+    "mappings": [
+      {
+        "claim_id": "D0-CVFT-001A",
+        "theorem_atom": "Dynamics.internal_feedback_forced_by_split",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "declared_modules": [
+          "D0.Dynamics.InternalFeedbackResolvent",
+          "D0.Cosmology.FeedbackPartitionFunction",
+          "D0.Cosmology.FiniteFeedbackEquationOfState"
+        ],
+        "resolution_status": "resolved_in_declared_module",
+        "matches": [
+          {
+            "name": "D0.Dynamics.internal_feedback_forced_by_split",
+            "module": "D0.Dynamics.InternalFeedbackResolvent",
+            "source_path": "03_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent.lean",
+            "owner_matches_locator": true
+          }
+        ]
+      },
+      {
+        "claim_id": "D0-CVFT-001A",
+        "theorem_atom": "Dynamics.internal_feedback_resolvent_series",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "declared_modules": [
+          "D0.Dynamics.InternalFeedbackResolvent",
+          "D0.Cosmology.FeedbackPartitionFunction",
+          "D0.Cosmology.FiniteFeedbackEquationOfState"
+        ],
+        "resolution_status": "resolved_in_declared_module",
+        "matches": [
+          {
+            "name": "D0.Dynamics.internal_feedback_resolvent_series",
+            "module": "D0.Dynamics.InternalFeedbackResolvent",
+            "source_path": "03_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent.lean",
+            "owner_matches_locator": true
+          }
+        ]
+      },
+      {
+        "claim_id": "D0-CVFT-001A",
+        "theorem_atom": "Cosmology.feedback_determinant_return_cycles",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "declared_modules": [
+          "D0.Dynamics.InternalFeedbackResolvent",
+          "D0.Cosmology.FeedbackPartitionFunction",
+          "D0.Cosmology.FiniteFeedbackEquationOfState"
+        ],
+        "resolution_status": "resolved_in_declared_module",
+        "matches": [
+          {
+            "name": "D0.Cosmology.feedback_determinant_return_cycles",
+            "module": "D0.Cosmology.FeedbackPartitionFunction",
+            "source_path": "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean",
+            "owner_matches_locator": true
+          }
+        ]
+      },
+      {
+        "claim_id": "D0-CVFT-001A",
+        "theorem_atom": "Cosmology.feedback_variation_universal_source",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "declared_modules": [
+          "D0.Dynamics.InternalFeedbackResolvent",
+          "D0.Cosmology.FeedbackPartitionFunction",
+          "D0.Cosmology.FiniteFeedbackEquationOfState"
+        ],
+        "resolution_status": "resolved_in_declared_module",
+        "matches": [
+          {
+            "name": "D0.Cosmology.feedback_variation_universal_source",
+            "module": "D0.Cosmology.FeedbackPartitionFunction",
+            "source_path": "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean",
+            "owner_matches_locator": true
+          }
+        ]
+      },
+      {
+        "claim_id": "D0-CVFT-001A",
+        "theorem_atom": "Cosmology.feedback_pressure_trace_log",
+        "module_locator": "D0.Dynamics.InternalFeedbackResolvent;D0.Cosmology.FeedbackPartitionFunction;D0.Cosmology.FiniteFeedbackEquationOfState",
+        "declared_modules": [
+          "D0.Dynamics.InternalFeedbackResolvent",
+          "D0.Cosmology.FeedbackPartitionFunction",
+          "D0.Cosmology.FiniteFeedbackEquationOfState"
+        ],
+        "resolution_status": "resolved_in_declared_module",
+        "matches": [
+          {
+            "name": "D0.Cosmology.feedback_pressure_trace_log",
+            "module": "D0.Cosmology.FiniteFeedbackEquationOfState",
+            "source_path": "03_FORMALIZATION/D0/Cosmology/FiniteFeedbackEquationOfState.lean",
+            "owner_matches_locator": true
+          }
+        ]
+      }
+    ]
+  },
+  "declarations": [
+    {
+      "exists": false,
+      "name": "D0.Dynamics.InternalFeedbackResolvent.Dynamics.internal_feedback_forced_by_split",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FeedbackPartitionFunction.Dynamics.internal_feedback_forced_by_split",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Dynamics.internal_feedback_forced_by_split",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.Dynamics.internal_feedback_forced_by_split",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.Dynamics.internal_feedback_forced_by_split",
+      "source_path": null
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "D0.Dynamics.RetainedTracedSplit"
+        }
+      ],
+      "conclusion_whnf": "(Nat.succ 0).le (D0.Dynamics.feedbackSlots s)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 52,
+            "line": 37
+          },
+          "start": {
+            "column": 0,
+            "line": 36
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 41,
+            "line": 36
+          },
+          "start": {
+            "column": 8,
+            "line": 36
+          }
+        }
+      },
+      "elaborated_type": "∀ (s : D0.Dynamics.RetainedTracedSplit), 0 < D0.Dynamics.feedbackSlots s",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Dynamics.InternalFeedbackResolvent",
+      "name": "D0.Dynamics.internal_feedback_forced_by_split",
+      "proof_dependencies": [
+        "D0.Dynamics.RetainedTracedSplit",
+        "D0.Dynamics.feedback_slots_positive"
+      ],
+      "type_dependencies": [
+        "D0.Dynamics.RetainedTracedSplit",
+        "D0.Dynamics.feedbackSlots",
+        "LT.lt",
+        "Nat",
+        "OfNat.ofNat",
+        "instLTNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.InternalFeedbackResolvent.Dynamics.internal_feedback_resolvent_series",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FeedbackPartitionFunction.Dynamics.internal_feedback_resolvent_series",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Dynamics.internal_feedback_resolvent_series",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.Dynamics.internal_feedback_resolvent_series",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.Dynamics.internal_feedback_resolvent_series",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "R",
+          "type": "D0.Dynamics.FiniteFeedbackOperator"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "R.constructedFromPQU = true"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "R.finiteResolvent = true"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "R.noExternalMirror = true"
+        }
+      ],
+      "conclusion_whnf": "(R.constructedFromPQU && R.finiteResolvent && decide (R.noExternalMirror = true)) = true",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 23,
+            "line": 45
+          },
+          "start": {
+            "column": 0,
+            "line": 39
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 42,
+            "line": 39
+          },
+          "start": {
+            "column": 8,
+            "line": 39
+          }
+        }
+      },
+      "elaborated_type": "∀ (R : D0.Dynamics.FiniteFeedbackOperator),\n  R.constructedFromPQU = true →\n    R.finiteResolvent = true →\n      R.noExternalMirror = true →\n        (R.constructedFromPQU && R.finiteResolvent && decide (R.noExternalMirror = true)) = true",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Dynamics.InternalFeedbackResolvent",
+      "name": "D0.Dynamics.internal_feedback_resolvent_series",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.and",
+        "Bool.and_self",
+        "Bool.true",
+        "D0.Dynamics.FiniteFeedbackOperator",
+        "D0.Dynamics.FiniteFeedbackOperator.constructedFromPQU",
+        "D0.Dynamics.FiniteFeedbackOperator.finiteResolvent",
+        "D0.Dynamics.FiniteFeedbackOperator.noExternalMirror",
+        "Decidable.decide",
+        "Decidable.decide.congr_simp",
+        "Eq",
+        "Eq.trans",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "decide_true",
+        "eq_self",
+        "instDecidableEqBool",
+        "instDecidableTrue",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.and",
+        "Bool.true",
+        "D0.Dynamics.FiniteFeedbackOperator",
+        "D0.Dynamics.FiniteFeedbackOperator.constructedFromPQU",
+        "D0.Dynamics.FiniteFeedbackOperator.finiteResolvent",
+        "D0.Dynamics.FiniteFeedbackOperator.noExternalMirror",
+        "Decidable.decide",
+        "Eq",
+        "instDecidableEqBool"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_determinant_return_cycles",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_determinant_return_cycles",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_determinant_return_cycles",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.Cosmology.feedback_determinant_return_cycles",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.Cosmology.feedback_determinant_return_cycles",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "Z",
+          "type": "D0.Cosmology.FeedbackPartitionFunction"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "Z.determinantFinite = true"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "Z.determinantNonzero = true"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "Z.returnCycleExpansion = true"
+        }
+      ],
+      "conclusion_whnf": "(Z.determinantFinite && Z.determinantNonzero && decide (Z.returnCycleExpansion = true)) = true",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 24,
+            "line": 31
+          },
+          "start": {
+            "column": 0,
+            "line": 24
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 42,
+            "line": 24
+          },
+          "start": {
+            "column": 8,
+            "line": 24
+          }
+        }
+      },
+      "elaborated_type": "∀ (Z : D0.Cosmology.FeedbackPartitionFunction),\n  Z.determinantFinite = true →\n    Z.determinantNonzero = true →\n      Z.returnCycleExpansion = true →\n        (Z.determinantFinite && Z.determinantNonzero && decide (Z.returnCycleExpansion = true)) = true",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Cosmology.FeedbackPartitionFunction",
+      "name": "D0.Cosmology.feedback_determinant_return_cycles",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.and",
+        "Bool.and_self",
+        "Bool.true",
+        "D0.Cosmology.FeedbackPartitionFunction",
+        "D0.Cosmology.FeedbackPartitionFunction.determinantFinite",
+        "D0.Cosmology.FeedbackPartitionFunction.determinantNonzero",
+        "D0.Cosmology.FeedbackPartitionFunction.returnCycleExpansion",
+        "Decidable.decide",
+        "Decidable.decide.congr_simp",
+        "Eq",
+        "Eq.trans",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "decide_true",
+        "eq_self",
+        "instDecidableEqBool",
+        "instDecidableTrue",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.and",
+        "Bool.true",
+        "D0.Cosmology.FeedbackPartitionFunction",
+        "D0.Cosmology.FeedbackPartitionFunction.determinantFinite",
+        "D0.Cosmology.FeedbackPartitionFunction.determinantNonzero",
+        "D0.Cosmology.FeedbackPartitionFunction.returnCycleExpansion",
+        "Decidable.decide",
+        "Eq",
+        "instDecidableEqBool"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_variation_universal_source",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_variation_universal_source",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_variation_universal_source",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.Cosmology.feedback_variation_universal_source",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.Cosmology.feedback_variation_universal_source",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "S",
+          "type": "D0.Cosmology.FeedbackVariationSource"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "S.resolventFinite = true"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "S.sourceFinite = true"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "S.sourceFromInternalFeedback = true"
+        }
+      ],
+      "conclusion_whnf": "(S.resolventFinite && S.sourceFinite && decide (S.sourceFromInternalFeedback = true)) = true",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 25,
+            "line": 45
+          },
+          "start": {
+            "column": 0,
+            "line": 38
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 43,
+            "line": 38
+          },
+          "start": {
+            "column": 8,
+            "line": 38
+          }
+        }
+      },
+      "elaborated_type": "∀ (S : D0.Cosmology.FeedbackVariationSource),\n  S.resolventFinite = true →\n    S.sourceFinite = true →\n      S.sourceFromInternalFeedback = true →\n        (S.resolventFinite && S.sourceFinite && decide (S.sourceFromInternalFeedback = true)) = true",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Cosmology.FeedbackPartitionFunction",
+      "name": "D0.Cosmology.feedback_variation_universal_source",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.and",
+        "Bool.and_self",
+        "Bool.true",
+        "D0.Cosmology.FeedbackVariationSource",
+        "D0.Cosmology.FeedbackVariationSource.resolventFinite",
+        "D0.Cosmology.FeedbackVariationSource.sourceFinite",
+        "D0.Cosmology.FeedbackVariationSource.sourceFromInternalFeedback",
+        "Decidable.decide",
+        "Decidable.decide.congr_simp",
+        "Eq",
+        "Eq.trans",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "decide_true",
+        "eq_self",
+        "instDecidableEqBool",
+        "instDecidableTrue",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.and",
+        "Bool.true",
+        "D0.Cosmology.FeedbackVariationSource",
+        "D0.Cosmology.FeedbackVariationSource.resolventFinite",
+        "D0.Cosmology.FeedbackVariationSource.sourceFinite",
+        "D0.Cosmology.FeedbackVariationSource.sourceFromInternalFeedback",
+        "Decidable.decide",
+        "Eq",
+        "instDecidableEqBool"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.InternalFeedbackResolvent.Cosmology.feedback_pressure_trace_log",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FeedbackPartitionFunction.Cosmology.feedback_pressure_trace_log",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.FiniteFeedbackEquationOfState.Cosmology.feedback_pressure_trace_log",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Dynamics.Cosmology.feedback_pressure_trace_log",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Cosmology.Cosmology.feedback_pressure_trace_log",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "P",
+          "type": "D0.Cosmology.FeedbackPressureLaw"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "P.pressureFromLogZDerivative = true"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "a._@._internal._hyg.0",
+          "type": "P.traceLogFinite = true"
+        }
+      ],
+      "conclusion_whnf": "(P.pressureFromLogZDerivative && decide (P.traceLogFinite = true)) = true",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 15,
+            "line": 22
+          },
+          "start": {
+            "column": 0,
+            "line": 17
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 35,
+            "line": 17
+          },
+          "start": {
+            "column": 8,
+            "line": 17
+          }
+        }
+      },
+      "elaborated_type": "∀ (P : D0.Cosmology.FeedbackPressureLaw),\n  P.pressureFromLogZDerivative = true →\n    P.traceLogFinite = true → (P.pressureFromLogZDerivative && decide (P.traceLogFinite = true)) = true",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Cosmology.FiniteFeedbackEquationOfState",
+      "name": "D0.Cosmology.feedback_pressure_trace_log",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.and",
+        "Bool.and_self",
+        "Bool.true",
+        "D0.Cosmology.FeedbackPressureLaw",
+        "D0.Cosmology.FeedbackPressureLaw.pressureFromLogZDerivative",
+        "D0.Cosmology.FeedbackPressureLaw.traceLogFinite",
+        "Decidable.decide",
+        "Decidable.decide.congr_simp",
+        "Eq",
+        "Eq.trans",
+        "True",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "decide_true",
+        "eq_self",
+        "instDecidableEqBool",
+        "instDecidableTrue",
+        "of_eq_true"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.and",
+        "Bool.true",
+        "D0.Cosmology.FeedbackPressureLaw",
+        "D0.Cosmology.FeedbackPressureLaw.pressureFromLogZDerivative",
+        "D0.Cosmology.FeedbackPressureLaw.traceLogFinite",
+        "Decidable.decide",
+        "Eq",
+        "instDecidableEqBool"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Cosmology/FiniteFeedbackEquationOfState.lean"
+    }
+  ]
+}

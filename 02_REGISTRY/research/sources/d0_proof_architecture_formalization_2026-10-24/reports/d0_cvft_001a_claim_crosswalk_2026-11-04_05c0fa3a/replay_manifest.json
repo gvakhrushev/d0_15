@@ -1,0 +1,94 @@
+{
+  "schema": "d0-claim-declaration-crosswalk-review-v1",
+  "repository": "gvakhrushev/d0_15",
+  "snapshot_commit": "05c0fa3a4662bda0204317b7c794cef280cdfe77",
+  "worktree_dirty": false,
+  "public_import_root": "D0.All",
+  "claim_id": "D0-CVFT-001A",
+  "claim_registry_source_status": {
+    "lean_status": "LEAN_PROVED",
+    "release_status": "CORE-FORMALIZED"
+  },
+  "crosswalk": {
+    "declared_theorem_atoms": 5,
+    "resolved_in_declared_module": 5,
+    "all_declared_names_resolve": true,
+    "owner_matches_locator": true
+  },
+  "actual_declarations": [
+    "Dynamics.internal_feedback_forced_by_split",
+    "Dynamics.internal_feedback_resolvent_series",
+    "Cosmology.feedback_determinant_return_cycles",
+    "Cosmology.feedback_variation_universal_source",
+    "Cosmology.feedback_pressure_trace_log"
+  ],
+  "axiom_footprint": [
+    "propext"
+  ],
+  "moving_projector_theorem_in_declared_atoms": false,
+  "lean_source_digest": "deb9e9f8d99b486bd1e1a36e2da8c8f79732ba4cc79635348ae617cfee6eb073",
+  "collector_sha256": "908cf541e7142ffeee3f5b0734ee120e89c32bead98c3375610b8fcff7ca2025",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/claims.csv",
+      "git_blob": "7ce1cdb35b4a34b286fb84c69ba106dc884d51af",
+      "sha256": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
+      "bytes": 882327
+    },
+    {
+      "path": "02_REGISTRY/formal_support.csv",
+      "git_blob": "98fcf53c522f141eb1c4e4531d8c3c9fdb8eee8d",
+      "sha256": "f76f9fbf89fc1797d400640c88822bc8183bb95d3e79389f68fd458de02f7f42",
+      "bytes": 48061
+    },
+    {
+      "path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
+      "git_blob": "d1f3d2edd70baf949392a6b7d865525186d1937c",
+      "sha256": "cfb5599d62a57ea115b22c24776f327c88204c1bc2f2b70af50dda348ef10256",
+      "bytes": 260659
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Dynamics/InternalFeedbackResolvent.lean",
+      "git_blob": "caa2f1d982a5d1f5125699ea0c5b7a5f7080b665",
+      "sha256": "239a0ce3145ab8e5c274fb5c90dcb9f816c4e7cb1423e7d4183ccc03c6b20e7e",
+      "bytes": 1467
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean",
+      "git_blob": "221b91aac7b8e1c1ec702c66495789542c9aa18c",
+      "sha256": "8408c562f0dade7a4732ca4e99054e4f1c6019fb7574751010a564464a425c55",
+      "bytes": 1301
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Cosmology/FiniteFeedbackEquationOfState.lean",
+      "git_blob": "2f82851eb2ad0e84fd2d868d4bf6b7ad81b84d3b",
+      "sha256": "132fae159623a5a23f889cd8378a310e5c79e9cdbd51e765b4ea179b18e9815d",
+      "bytes": 967
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Analysis/MovingProjectorBookPrice.lean",
+      "git_blob": "56d19de0e808f7eedc9b9b3445cd539290a44100",
+      "sha256": "0c0e5c6044455b3da882866b82f501750a233fc3a0b644b56019de67120fc478",
+      "bytes": 4812
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Analysis/MovingProjectorBookPriceDensityBridge.lean",
+      "git_blob": "5c9d58e4486e82cfcd8bbae0db4da685f4a6f701",
+      "sha256": "ead88e80427095f02ce8e0773fcbcf2f6a99f743f79ba90e0c624c530d967058",
+      "bytes": 4131
+    },
+    {
+      "path": "tools/lean_declaration_inventory.py",
+      "git_blob": "81203409e666787a855bea1ef1b766df2c6d0281",
+      "sha256": "ea485fda5903de89389fa26584050c76e8fd303b6b434238dbada85e8c987f76",
+      "bytes": 30590
+    }
+  ],
+  "artifact": {
+    "path": "claim_declarations.json",
+    "bytes": 26155,
+    "sha256": "31dd85a6ea02072392b9679b8cfcd25c1e89252c08390f586f95790d23a32e72"
+  },
+  "scope": "Name/module resolution and elaborated declaration signatures only. The existing claim note remains unchanged. This does not assign the finite moving-projector theorem to the native physical claim or accept its release status."
+}

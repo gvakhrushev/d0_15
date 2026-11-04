@@ -15044,3 +15044,23 @@ rows. This exact-name checkpoint does not add a claim-ID or assembly
 application binding, and therefore makes no semantic claim-level acceptance.
 The mathematical result remains finite matrix analysis; physical action
 selection and `GR_closed` remain open.
+
+## Claim-to-declaration boundary for `D0-CVFT-001A` — 4 November 2026
+
+The compiled claim resolver at `05c0fa3a4662bda0204317b7c794cef280cdfe77`
+resolves all five theorem atoms in the existing row to their declared modules.
+Their elaborated statements show that this is name/module resolution, not an
+operator/source proof: one declaration gives `1 ≤ feedbackSlots`; the other
+four take structures whose relevant Boolean fields are already supplied as
+true and return those field conjunctions. Exact signatures and source pins are
+preserved in
+[`d0_cvft_001a_claim_crosswalk_2026-11-04_05c0fa3a`](sources/d0_proof_architecture_formalization_2026-10-24/reports/d0_cvft_001a_claim_crosswalk_2026-11-04_05c0fa3a/SUMMARY_RU.md).
+
+The separately compiled moving-projector theorem is not one of those five
+claim atoms. It proves a finite matrix Book03 derivative, but no map from an
+admitted native `P_N` and its execution to the theorem's matrix curves has
+been constructed. The existing `D0-CVFT-001A` note and its
+`LEAN_PROVED`/`CORE-FORMALIZED` metadata were left unchanged; this checkpoint
+does not accept that release status or assign the finite theorem to the
+broader physical claim. The remaining application is an explicit typed
+carrier/source map and review against the exact claim scope.
