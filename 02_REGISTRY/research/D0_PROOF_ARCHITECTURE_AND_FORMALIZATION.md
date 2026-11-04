@@ -16911,3 +16911,6 @@ record 2,703 Lake jobs and the standard `propext`, `Classical.choice` and
 [full public-import build](sources/d0_proof_architecture_formalization_2026-10-24/reports/affine_reporter_narrow_2026-11-04/full_build_34d.json)
 subsequently passed 4,799 jobs on the exact recorded clean snapshot; its 1,329
 warnings remain in the preserved log. Later Lean changes require their own build.
+After integrating the concurrent memory modules, the [full build on `d2733f2bf`](sources/d0_proof_architecture_formalization_2026-10-24/reports/affine_reporter_narrow_2026-11-04/full_build_d273.json)
+passed 4,802 jobs. Its 1,329 warnings include five tactic-style warnings in
+the affine reporter module; the exact log is retained.
