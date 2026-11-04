@@ -28,7 +28,7 @@ SUMMARY_SCHEMA = "d0-proof-architecture-cold-start-paged-summary-v3"
 
 def compact(full_bytes: bytes, root: pathlib.Path = ROOT, *,
             verify_discovery: bool = False) -> dict[str, Any]:
-    root = root.resolve()
+    root = proof._search_run_root(root)
     full = json.loads(full_bytes)
     if not isinstance(full, dict) or full.get("schema") != paged.SCHEMA:
         raise ValueError("not a paged v3 replay")

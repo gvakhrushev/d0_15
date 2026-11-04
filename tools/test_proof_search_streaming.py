@@ -13,8 +13,11 @@ from tools import proof_architecture as proof
 # Small subprocess fixture for the two ripgrep operations used by these tests.
 # It searches the actual temporary files and emits rg's JSON match-line shape;
 # the production streaming and legacy capture paths both run real subprocesses.
+# On Windows the fixture assumes its temporary cwd is an ordinary local DOS
+# path; production UNC and already-extended roots are not exercised here.
 _FIXTURE_RG = r'''
 import json
+import os
 import pathlib
 import sys
 
@@ -30,18 +33,19 @@ while i < len(args):
         if not arg.startswith('-'):
             roots.append(arg)
         i += 1
-paths = sorted(p for root in roots for p in pathlib.Path(root).rglob('*')
+base = pathlib.Path(('\\\\?\\' + os.getcwd()) if os.name == 'nt' else os.getcwd())
+paths = sorted(p for root in roots for p in (base / root).rglob('*')
                if p.is_file() and any(p.match(g) for g in globs))
 found = False
 for path in paths:
     if '--files' in args:
-        print(path.as_posix())
+        print(path.relative_to(base).as_posix())
         found = True
         continue
     for line in path.read_text(encoding='utf-8').splitlines(keepends=True):
         if any(term.lower() in line.lower() for term in terms):
             print(json.dumps({'type': 'match', 'data': {
-                'path': {'text': path.as_posix()}, 'lines': {'text': line}}}))
+                'path': {'text': path.relative_to(base).as_posix()}, 'lines': {'text': line}}}))
             found = True
 sys.exit(0 if found else 1)
 '''

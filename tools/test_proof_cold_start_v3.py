@@ -4,7 +4,9 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import os
 import pathlib
+import shutil
 import subprocess
 import tempfile
 import unittest
@@ -119,6 +121,156 @@ class PagedColdStartTests(unittest.TestCase):
                  for hit in extended[0][:18]]
         self.assertEqual(first[0], clean)
 
+    @unittest.skipUnless(os.name == "nt", "requires Windows long-path filesystem behavior")
+    def test_windows_deep_corpus_candidate_locator_and_pages(self):
+        parent = self.research / "00_long_locator" / ("d" * 70) / ("e" * 70) / ("f" * 70)
+        locator = parent / "locator.md"
+        self.assertGreater(len(str(locator)), 260)
+        safe = proof._search_filesystem_path(locator)
+        safe.parent.mkdir(parents=True)
+        self.addCleanup(shutil.rmtree, proof._search_filesystem_path(self.research / "00_long_locator"))
+        safe.write_bytes(self.locator.read_bytes())
+        self.locator.unlink()
+        rel = locator.relative_to(self.root).as_posix()
+        self.assertIn(rel, paged.corpus_paths(self.root))
+        snapshot = paged.corpus_snapshot(self.root)
+        self.assertGreater(snapshot["file_count"], 0)
+        query = self.fixture["queries"][0]
+        hits = proof.full_text_search_many(self.root, [query], limit=18, ranked_pages=2)[0]
+        hit = next(item for item in hits if item["source"] == rel)
+        self.assertTrue(hit["direct_content"])
+        self.assertEqual(hit["source_sha256"], hashlib.sha256(safe.read_bytes()).hexdigest())
+        self.assertTrue(hit["source_refs"])
+        pages = paged.source_pages(self.root, query, hits)
+        self.assertTrue(any(page["locator_source"] == rel and page["candidates"] for page in pages))
+        result = {"query": query, "ranked_pages": paged._ranked_pages(hits), "source_pages": pages}
+        verified = paged.verified_query(self.root, query, result)
+        self.assertTrue(any(item["source"] == rel and item["direct_content"] for item in verified))
+
+    def test_snapshot_rejects_escape_after_path_resolution(self):
+        outside = self.root.parent / (self.root.name + "-outside.md")
+        outside.write_text("outside\n", encoding="utf-8")
+        self.addCleanup(outside.unlink, missing_ok=True)
+        with patch.object(paged, "corpus_paths", return_value=["../" + outside.name]):
+            with self.assertRaisesRegex(ValueError, "invalid search corpus path"):
+                paged.corpus_snapshot(self.root)
+        with patch.object(paged, "corpus_paths", return_value=["does-not-exist.md"]):
+            with self.assertRaises(FileNotFoundError):
+                paged.corpus_snapshot(self.root)
+        link = self.research / "escape.md"
+        try:
+            link.symlink_to(outside)
+        except OSError:
+            return  # On Windows symlink creation may require extra privileges.
+        with patch.object(paged, "corpus_paths", return_value=[link.relative_to(self.root).as_posix()]):
+            with self.assertRaisesRegex(ValueError, "invalid search corpus path"):
+                paged.corpus_snapshot(self.root)
+
+    @unittest.skipUnless(os.name == "nt", "requires Windows junctions and device paths")
+    def test_windows_rejects_external_junction_and_device_anchors(self):
+        for raw in (r"\\?\GLOBALROOT\Device\HarddiskVolume1\foo",
+                    r"\\?\Volume{00000000-0000-0000-0000-000000000000}\foo",
+                    r"\\.\PhysicalDrive0"):
+            with self.subTest(raw=raw), self.assertRaises(ValueError):
+                proof._search_filesystem_path(pathlib.Path(raw))
+        for rel in ("../repo2/escape.md", "D:/outside.md", "//other/share/outside.md",
+                    r"\\other\share\outside.md", "01/a/../../escape.md"):
+            with self.subTest(rel=rel), self.assertRaises(ValueError):
+                proof._search_relative_path(rel)
+        outside = self.root.with_name(self.root.name + "2")
+        outside.mkdir()
+        self.addCleanup(shutil.rmtree, outside)
+        outside_file = outside / "target.md"
+        outside_file.write_text("# amberquartz nativekappa\n", encoding="utf-8")
+        link = self.research / "external_junction"
+        created = subprocess.run(["cmd", "/c", "mklink", "/J", str(link), str(outside)],
+                                 capture_output=True, text=True)
+        if created.returncode:
+            self.fail("could not create Windows junction for containment control")
+        self.addCleanup(link.rmdir)
+        rel = (link / "target.md").relative_to(self.root).as_posix()
+        with patch.object(paged, "corpus_paths", return_value=[rel]):
+            with self.assertRaisesRegex(ValueError, "invalid search corpus path"):
+                paged.corpus_snapshot(self.root)
+        query = "amberquartz nativekappa"
+        candidate = proof._candidate_record(rel, outside_file.read_text(encoding="utf-8"),
+                                             proof._query_terms(query), origin="workspace")
+        score, hit = candidate
+        hit.update(rank_score=score, rank_sort_key=hit["key"])
+        result = {"query": query, "ranked_pages": paged._ranked_pages([hit]), "source_pages": []}
+        with self.assertRaisesRegex(ValueError, "invalid workspace candidate"):
+            paged.verified_query(self.root, query, result, {rel})
+
+    @unittest.skipUnless(os.name == "nt", "requires Windows case-sensitive directories")
+    def test_windows_case_distinct_sibling_junction_is_not_contained(self):
+        base = self.root / "case_sensitive"
+        base.mkdir()
+        result = subprocess.run(["fsutil", "file", "setCaseSensitiveInfo", str(base), "enable"],
+                                capture_output=True, text=True)
+        if result.returncode:
+            self.skipTest("filesystem cannot enable case-sensitive directory")
+        local = proof._search_filesystem_path(base / "repo")
+        other = proof._search_filesystem_path(base / "REPO")
+        local.mkdir()
+        other.mkdir()
+        (other / "secret.md").write_text("external bytes", encoding="utf-8")
+        link = local / "jump"
+        result = subprocess.run(["cmd", "/c", "mklink", "/J", str(link), str(other)],
+                                capture_output=True, text=True)
+        if result.returncode:
+            self.fail("could not create case-sensitive sibling junction")
+        self.addCleanup(link.rmdir)
+        resolved_root = local.resolve(strict=True)
+        resolved_file = (link / "secret.md").resolve(strict=True)
+        self.assertFalse(proof._search_same_directory(resolved_root, other.resolve(strict=True)))
+        self.assertFalse(proof._search_contains_file(resolved_root, resolved_file))
+        with patch.object(paged, "corpus_paths", return_value=["jump/secret.md"]):
+            with self.assertRaisesRegex(ValueError, "invalid search corpus path"):
+                paged.corpus_snapshot(local)
+
+    @unittest.skipUnless(os.name == "nt", "requires Windows extended filename semantics")
+    def test_windows_extended_reads_do_not_trim_trailing_dot_or_space(self):
+        for suffix in (".", " "):
+            name = "distinct" + suffix
+            special = proof._search_filesystem_path(self.research / name)
+            ordinary = self.research / "distinct"
+            special.write_bytes(b"special")
+            ordinary.write_bytes(b"ordinary")
+            try:
+                self.assertEqual(special.resolve(strict=True).read_bytes(), b"special")
+                rel = (self.research / name).relative_to(self.root).as_posix()
+                expected = hashlib.sha256(rel.encode("utf-8") + b"\0" +
+                                          hashlib.sha256(b"special").digest() + b"\0").hexdigest()
+                with patch.object(paged, "corpus_paths", return_value=[rel]):
+                    self.assertEqual(paged.corpus_snapshot(self.root)["sha256"], expected)
+            finally:
+                special.unlink()
+                ordinary.unlink()
+
+    @unittest.skipUnless(os.name == "nt", "requires Windows extended filename semantics")
+    def test_windows_ambiguous_repository_root_fails_closed(self):
+        for suffix in (".", " "):
+            special = proof._search_filesystem_path(self.root / ("ambiguous" + suffix))
+            ordinary = self.root / "ambiguous"
+            special.mkdir()
+            ordinary.mkdir()
+            try:
+                with self.assertRaisesRegex(ValueError, "root changes"):
+                    proof._search_run_root(self.root / ("ambiguous" + suffix))
+                with patch.object(proof, "load_dataset") as load, \
+                     patch.object(subprocess, "run") as process:
+                    with self.assertRaisesRegex(ValueError, "root changes"):
+                        paged.run(special)
+                    load.assert_not_called()
+                    process.assert_not_called()
+                with patch.object(subprocess, "run") as process:
+                    with self.assertRaisesRegex(ValueError, "root changes"):
+                        compactor.compact(b"{}", special)
+                    process.assert_not_called()
+            finally:
+                special.rmdir()
+                ordinary.rmdir()
+
     def test_large_unread_evidence_is_not_promoted_in_any_mode(self):
         target = self.research / "large_amberquartz.md"
         target.write_text("# amberquartz nativekappa\n" + "x" * 4_000_010,
@@ -145,7 +297,7 @@ class PagedColdStartTests(unittest.TestCase):
             count = 0
             def fail_evidence_read(path):
                 nonlocal count
-                if path == target:
+                if path == proof._search_filesystem_path(target):
                     count += 1
                     if count >= 2:
                         raise OSError("unreadable after discovery")

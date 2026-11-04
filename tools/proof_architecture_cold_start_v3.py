@@ -54,9 +54,11 @@ def corpus_snapshot(root: pathlib.Path) -> dict[str, Any]:
     """Hash the current rg-visible corpus, including untracked visible files."""
     names = corpus_paths(root)
     h = hashlib.sha256()
+    resolved_root = proof._search_filesystem_path(proof._search_filesystem_path(root).resolve(strict=True))
     for name in names:
-        path = (root / name).resolve(strict=True)
-        if not path.is_relative_to(root.resolve()) or not path.is_file():
+        path = proof._search_filesystem_path(
+            proof._search_filesystem_path(root / proof._search_relative_path(name)).resolve(strict=True))
+        if not proof._search_contains_file(resolved_root, path) or not path.is_file():
             raise ValueError("invalid search corpus path")
         h.update(name.encode("utf-8")); h.update(b"\0")
         h.update(hashlib.sha256(path.read_bytes()).digest()); h.update(b"\0")
@@ -139,8 +141,10 @@ def verified_query(root: pathlib.Path, query: str, result: dict[str, Any],
                 "tools/proof_architecture_cold_start.py", "tools/proof_architecture_cold_start_v3.py",
                 "tools/compact_proof_architecture_cold_start_v3.py"} or rel.startswith("tools/test_")):
             raise ValueError("candidate was not in the searchable workspace corpus")
-        path = (root / rel).resolve(strict=True)
-        if not path.is_relative_to(root.resolve()) or not path.is_file():
+        path = proof._search_filesystem_path(
+            proof._search_filesystem_path(root / proof._search_relative_path(rel)).resolve(strict=True))
+        resolved_root = proof._search_filesystem_path(proof._search_filesystem_path(root).resolve(strict=True))
+        if not proof._search_contains_file(resolved_root, path) or not path.is_file():
             raise ValueError("invalid workspace candidate")
         data = path.read_bytes()
         text = data.decode("utf-8-sig", errors="replace")
@@ -301,7 +305,7 @@ def _requirements(case: dict[str, Any], pairs: list[tuple[str, list[dict[str, An
 
 
 def run(root: pathlib.Path) -> dict[str, Any]:
-    root = root.resolve()
+    root = proof._search_run_root(root)
     before = proof.load_dataset(root)
     if before["worktree_dirty"]:
         raise ValueError("paged replay requires a clean checkout")

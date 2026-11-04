@@ -16740,3 +16740,25 @@ fixtures cover an oversized source, wrong blob, duplicate and fabricated
 ranks, untraced pin, stale corpus, query isolation, and sources after 64
 references. No 50-case v3 replay has yet been run, and no improvement to
 those historical counts is claimed.
+
+### Windows long-path and physical containment correction — 4 November 2026
+
+The first paged-v3 run on `7776ac15efb518b5753025a19f941775757aec63`
+failed before discovery: a real 273-character Windows path was visible to
+`rg` but ordinary Python path resolution failed. No 50-case result was
+produced. Search and v3 snapshot/evidence reads now use extended paths on
+Windows while strictly resolving and checking physical root containment.
+Ambiguous roots and filesystems without usable identity information fail
+closed; data is read through the resolved extended path.
+
+On Windows, targeted tests cover a real long path, distinct trailing-dot
+names, unreadable/missing files, traversal, outside junctions including
+case-sensitive sibling directories, both ambiguous-root spellings and stale
+file races. The independently reviewed patch passed 77 targeted tests; its
+full one-time corpus snapshot read 4,297 files with SHA-256
+`2da8e31ccc12f6e0ab180d0c066e063f1d3d3150ee2246576cdc5b803055bfc1`.
+An actual network UNC share was not tested. The check is not atomic against
+changes between resolution, identity checks and reading, and the v3 endpoint
+snapshots do not attest continuous immutability. A complete paged replay on
+the corrected committed inputs remains required; no coverage result is
+asserted from the failed run or the one-time snapshot.

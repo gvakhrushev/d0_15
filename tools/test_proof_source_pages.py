@@ -182,7 +182,7 @@ class ProofSourcePagesTests(unittest.TestCase):
                 def racing_read(path):
                     nonlocal count
                     value = original_read(path)
-                    if path == target:
+                    if path == proof._search_filesystem_path(target):
                         count += 1
                         if count == mutation_read:
                             target.write_text("unrelated changed\n", encoding="utf-8")

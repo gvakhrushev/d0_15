@@ -1660,6 +1660,81 @@ def _search_progress(stage: str, **details: Any) -> None:
               file=sys.stderr, flush=True)
 
 
+def _search_filesystem_path(path: pathlib.Path) -> pathlib.Path:
+    """Use extended Windows paths for filesystem reads; preserve path checks."""
+    if os.name != "nt":
+        return path
+    path = pathlib.Path(path)
+    if not path.is_absolute():
+        if path.drive or path.root:
+            raise ValueError("unsupported Windows drive-relative path")
+        path = pathlib.Path.cwd() / path
+    absolute = os.fspath(path)
+    if absolute.startswith("\\\\.\\"):
+        raise ValueError("unsupported Windows device path")
+    if absolute.startswith("\\\\?\\"):
+        if not (re.match(r"^\\\\\?\\[A-Za-z]:\\", absolute) or
+                re.match(r"^\\\\\?\\UNC\\[^\\]+\\[^\\]+(?:\\|$)", absolute, re.IGNORECASE)):
+            raise ValueError("unsupported Windows extended path")
+        return pathlib.Path(absolute)
+    if absolute.startswith("\\\\"):
+        if not re.match(r"^\\\\[^\\]+\\[^\\]+(?:\\|$)", absolute):
+            raise ValueError("unsupported Windows network path")
+        return pathlib.Path("\\\\?\\UNC\\" + absolute[2:])
+    if not re.match(r"^[A-Za-z]:\\", absolute):
+        raise ValueError("unsupported Windows absolute path")
+    return pathlib.Path("\\\\?\\" + absolute)
+
+
+def _search_relative_path(rel: str) -> pathlib.Path:
+    """Reject traversal and Windows alternate/device paths before resolution."""
+    if (not isinstance(rel, str) or not rel or rel.startswith("/") or
+            any(part in {"", ".", ".."} for part in rel.split("/")) or
+            (os.name == "nt" and ("\\" in rel or ":" in rel))):
+        raise ValueError("invalid search corpus path")
+    return pathlib.Path(*rel.split("/"))
+
+
+def _search_same_directory(first: pathlib.Path, second: pathlib.Path) -> bool:
+    """Compare filesystem identities, not case-folded Windows path strings."""
+    try:
+        first_stat = first.stat()
+        second_stat = second.stat()
+        return (first.is_dir() and second.is_dir() and first_stat.st_ino != 0 and
+                second_stat.st_ino != 0 and os.path.samestat(first_stat, second_stat))
+    except OSError:
+        return False
+
+
+def _search_contains_file(root: pathlib.Path, path: pathlib.Path) -> bool:
+    """Require the resolved root identity among the resolved file's parents."""
+    parent = path.parent
+    while True:
+        if _search_same_directory(root, parent):
+            return True
+        next_parent = parent.parent
+        if next_parent == parent:
+            return False
+        parent = next_parent
+
+
+def _search_run_root(root: pathlib.Path) -> pathlib.Path:
+    """Reject a Windows root if legacy process APIs name different bytes."""
+    if os.name != "nt":
+        return root.resolve(strict=True)
+    original = _search_filesystem_path(_search_filesystem_path(root).resolve(strict=True))
+    real = os.fspath(original)
+    # subprocess cwd and Git can reinterpret extended filenames as ordinary
+    # Win32 paths, so diagnose the same resolved DOS/UNC root without prefix.
+    ordinary_name = ("\\\\" + real[8:] if real[:8].casefold() == "\\\\?\\unc\\"
+                     else real[4:])
+    ordinary = pathlib.Path(ordinary_name).resolve(strict=True)
+    normalized = _search_filesystem_path(_search_filesystem_path(ordinary).resolve(strict=True))
+    if not _search_same_directory(original, normalized):
+        raise ValueError("Windows repository root changes under ordinary path normalization")
+    return ordinary
+
+
 def _hydrate_ranked_candidate(root: pathlib.Path, record: dict[str, Any],
                               terms: list[tuple[str, tuple[str, ...]]],
                               pattern: re.Pattern[str], expected_digest: str | None) -> None:
@@ -1673,7 +1748,7 @@ def _hydrate_ranked_candidate(root: pathlib.Path, record: dict[str, Any],
                       source_refs=[], label="", source_freshness="changed_or_unreadable")
         record.pop("source_header_owner_declarations", None)
 
-    path = root / pathlib.Path(record["source"])
+    path = _search_filesystem_path(root / pathlib.Path(record["source"]))
     try:
         if path.stat().st_size > 4_000_000:
             invalidate()
@@ -1808,7 +1883,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
     def document_matches(raw_rel: str) -> dict[int, set[str]]:
         if raw_rel not in raw_content_matches:
             try:
-                data = (root / pathlib.Path(raw_rel)).read_bytes()
+                data = _search_filesystem_path(root / pathlib.Path(raw_rel)).read_bytes()
                 content = data.decode("utf-8-sig", errors="replace")
             except OSError:
                 raw_content_matches[raw_rel] = {}
@@ -1876,7 +1951,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         pin_window = candidates[:max(MIN_PIN_VERIFICATION_WINDOW, limit)]
         pinned_candidates: list[tuple[float, str, dict[str, Any]]] = []
         for pin_window_rank, (score, rel, record) in enumerate(pin_window, 1):
-            path = root / pathlib.Path(rel)
+            path = _search_filesystem_path(root / pathlib.Path(rel))
             try:
                 if path.stat().st_size > 4_000_000:
                     continue
@@ -2066,7 +2141,7 @@ def expand_source_pages(root: pathlib.Path, query: str,
         raise ValueError("source page offset must be between 0 and 512")
     if len(returned_hits) > 64:
         raise ValueError("source expansion accepts at most 64 returned locators")
-    root = root.resolve()
+    root = _search_filesystem_path(_search_filesystem_path(root).resolve(strict=True))
     terms = _query_terms(query)
     pattern = _term_pattern(terms)
     cache: dict[tuple[str, str, str], tuple[str, bytes | None, str | None]] = {}
@@ -2078,8 +2153,11 @@ def expand_source_pages(root: pathlib.Path, query: str,
                 or not locator.get("source_refs")):
             continue
         rel = str(locator.get("source", ""))
-        path = (root / rel).resolve()
-        if not path.is_relative_to(root) or not path.is_file():
+        try:
+            path = _search_filesystem_path((root / _search_relative_path(rel)).resolve(strict=True))
+        except (OSError, ValueError):
+            continue
+        if not _search_contains_file(root, path) or not path.is_file():
             continue
         try:
             if path.stat().st_size > 4_000_000:
