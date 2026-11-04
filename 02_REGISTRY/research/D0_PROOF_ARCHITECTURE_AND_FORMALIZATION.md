@@ -16762,3 +16762,25 @@ changes between resolution, identity checks and reading, and the v3 endpoint
 snapshots do not attest continuous immutability. A complete paged replay on
 the corrected committed inputs remains required; no coverage result is
 asserted from the failed run or the one-time snapshot.
+
+### Sufficient memory for future classes — 4 November 2026
+
+The Drop History fragment of Book01 §01.1.1 is byte interval `[5584,5807)`
+of blob `eb2d8ea779189084cdaaca717326df88589ec918`, SHA-256
+`17fb2fd18ee2a1c58f5351909077597d58e66cab4ed100128c9cf245cc8e24c8`.
+As a scoped mathematical interpretation,
+`D0.Foundation.FutureMemoryQuotientBound` reuses the existing
+`sufficient_memory_reflects_future`: a finite memory with a decoder correct
+for every complete supplied future profile has at least as many values as
+the finite quotient of future-equivalent states. Its proof classically
+chooses representatives; it does not require the encoder to be constant on
+classes or all raw states to have different futures.
+
+For the existing `visibleBitSystem`, four raw states form exactly two future
+classes; an explicitly defined one-bit encoder/decoder attains the bound.
+Direct Lean passed for blob `0306cd284c2d11b00f6130a8bfbe5e77c8fa8f14`
+using the shared cached dependencies, and independent review checked the
+quotient, assumptions and example. Final provenance-checked integration
+remains required. These are all finite action words and tests of the supplied
+abstract system; no physical memory implementation, cost, effective choice,
+or the source's broader necessity/falsifiability claims follow.
