@@ -17476,3 +17476,8 @@ matching is necessary. It supplies the one-real-parameter mean-map component
 of the pinned #334 matched-source synthesis; it does not supply the full
 source covector, physical weights, charts or admission. The independent
 review and narrow/full cached builds are in the [integration receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_weighted_mean_de28_2026-11-04/SUMMARY_RU.md).
+
+The merged CAR boost/static Julia modules and matched-mean theorem passed the
+same complete public Lean build. Independent source review, the bounded
+Python checks and their macOS warnings, and the Windows provenance test boundary
+are recorded in the [merged validation receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/merged_julia_boost_5096_2026-11-04/SUMMARY_RU.md).
