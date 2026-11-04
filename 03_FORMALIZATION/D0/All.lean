@@ -297,6 +297,7 @@ import D0.Foundation.M1Predicate
 import D0.Foundation.M1RepairObservationalQuotient
 import D0.Foundation.M1RieszRepresentationGap
 import D0.Foundation.M1Universality
+import D0.Foundation.NativeCoverageSufficiencyCounterexample
 import D0.Foundation.ObservableCompletionCanonicity
 import D0.Foundation.Omega8Center
 import D0.Foundation.PartitionAlgebra
