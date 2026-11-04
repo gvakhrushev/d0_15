@@ -20726,3 +20726,59 @@ Remaining application: admit this designated independently readable instrument a
 Smallest decisive validation: exact full-column native recorder/inverse and gain/source/constraint identities, independent hostile review of the global controller and proper-cut/bus maps, then structural integration guards. The primary artifact includes a portable bounded recorder replay. No unchanged heavy geometry/clock suite, new task, claim promotion, assembly acceptance, Ready or retirement. GR_closed=false; objective remains active.
 
 Final structural checks pass: validate_work, validate_agent_protocol, gr_assembly check and git diff --check. Assembly remains 98 results / 22 obligations / 5 discharged with scientific_promotion=false. The portable all-column recorder replay passes.
+
+
+## 4 November 2026 checkpoint: quantitative positive Golden history synthesis
+
+Phase: native realization / final composition, existing #334 owner.
+Input pin: cfea4c2ed2c4aafb5179d67e5530064e2230cdf5.
+Added research section: **Positive Golden history compilation: remove
+SourceI, retain the joint reader, and recover the complete current source**
+in the existing same-representative paid-source research artifact.
+
+Exact parent substitution: prior SourceI-free density and RAW R3–R7 already
+provided complete marked-bank transport on canonical binary births, but did
+not control native length times source error. A real-Pauli Eulerian inverse
+refinement gives positive G/CX compilation of every SO(2^q), q>=3, target
+with length polylog(1/epsilon), at fixed dimension. No exact native Paulis,
+G inverse, SourceI port or free phase eigenstate is assumed. Direct polar
+control is computed from the stored actual body/cut. Joint body/codec and
+controller precision retains and suppresses the nonzero off-cut defect;
+all independent controller occurrences satisfy GH9–GH11 with actual old
+Gram and determinant gain. This removes the extra inverse/phase capability
+premise from that application, not the actual continuation law.
+
+The complete real CAR/seven-reference/42-direction source is consumed
+through existing RAW/SOURCE owners; opaque initial Spin and sealed oldRIGHT
+are untouched. Its full425-mode clock price is computed from the new actual
+words. Exact native identity words of lengths2 and5 provide common-length
+finite comparisons, after matching birth layouts and corresponding marked
+segments. Output compiler length does not price an actually executed
+compiler/interpreter automatically; that prefix remains in the full action.
+
+Whole-history reader transport shows that a separate copy of every coherent
+internal report is not forced by Book00 verification. The optional RP copy
+retains its real overlap source if executed. Omitting it prospectively uses
+the original unmarked word and its own gain, not the RP polar gain. A general
+compiled copy requires the full actual reader conjugation. Positive inverse
+readback has controlled finite error and paid stages; exact native decoding
+is not inferred, and births or growing-clock history are not reversed.
+
+Carrier/norm/source: original raw binary carrier, canonical Golden births,
+WORK-only all-column operator norm, original rank-four old input/old Gram,
+original full Book H+J and original marked C1/finite-contrast source norm.
+The complete preparation, independent calibration/reference/record rows,
+DA_old, actual compiler/readback and heat sources remain.
+
+Smallest decisive checks: portable SO8 exact Euler derivative and length2/5
+identities, quadratic remainder with a first-order hostile control, and
+exact rational source bounds in all28 controller directions with noncentral
+old Gram. Full old geometry/CAR/clock and Lean suites are consumed, not
+replayed for this synthesis. Integration: validate_work,
+validate_agent_protocol, gr_assembly check, and diff whitespace check.
+
+Remaining parent application: derive the actual same-initial field-and-price
+continuation/stationary law and its genuine admitted domain, including the
+retained nongeometric rows. Admissible history-computable control is not
+physical selection of that continuation. No new task/registry/CORE claim,
+no exact finite joint root, and no physical GR closure promotion.
