@@ -17694,3 +17694,10 @@ checks `finiteSigmaWitness` and its visible archive consumer at the supplied
 finite protocol hypotheses. The invalid-code control does not invalidate the
 round trip for represented objects. Physical alphabet, raw-state encoding and
 work remain separate; complete C0 acceptance is not implied.
+
+### Independent source review: comparison lines and catalogues
+
+The [Book01 §01.1.8 comparison review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0118_catalogue_review_2026-11-05/SUMMARY_RU.md)
+checks catalogue/line invariance under the supplied universally correct
+verification contract. The privileged-catalogue control shows why that input
+matters; it is not a physical no-go or a construction of the contract.
