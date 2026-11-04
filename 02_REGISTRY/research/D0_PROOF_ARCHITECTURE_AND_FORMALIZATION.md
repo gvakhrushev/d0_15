@@ -17304,3 +17304,12 @@ coverage or physical execution. The represented-state compatibility lemma is
 an important supporting declaration not separately listed by the current
 candidate atomization. The [focused review and checked declarations](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_023b_image_transport_review_2026-11-04/SUMMARY_RU.md)
 do not accept the complete C0 partition.
+
+### Source intake: #334 recorded operation and scalar clock
+
+The [pinned #334 continuation](sources/d0_pr334_recorded_clock_delta_2026-11-04/README.md)
+records the complete `89707e8..05cc38dc` source delta and independently
+replayed bounded controls. Owner-reported recorded-operation and clock
+constructions retain their task guards, source rows and physical premises;
+weaker-task negative controls remain in the same packet. This is a research
+intake, not independent acceptance, a complete native replay, or GR closure.
