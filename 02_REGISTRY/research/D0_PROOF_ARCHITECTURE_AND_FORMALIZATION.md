@@ -17304,3 +17304,39 @@ coverage or physical execution. The represented-state compatibility lemma is
 an important supporting declaration not separately listed by the current
 candidate atomization. The [focused review and checked declarations](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_023b_image_transport_review_2026-11-04/SUMMARY_RU.md)
 do not accept the complete C0 partition.
+
+### Original elementary CAR creators and typed Fock states
+
+`D0.Geometry.OriginalBookCreatorBridge` explicitly constructs a bijection
+between original integer states `0..15` and `ArchiveFockState`, with role-to-bit
+map `A,B,C,D → 0,2,3,1`. It proves equality of all four elementary creator
+matrices with the existing CAR interface and equality of occupation parity.
+The finite Lean proof uses kernel `decide`, split by the 16 ket states; it does
+not use `native_decide`. A direct check with the existing cache passed, and
+`#print axioms` for the creator theorem, real interface, bijection and parity
+reported `propext`, `Classical.choice`, `Quot.sound`. Final integration and
+independent cache provenance remain to be checked.
+
+`tools/check_original_creator_mapping.py` checks the pinned source copies' Git
+blob hashes before executing the complete uniform-source module and an AST
+block of the modular checker. It checks all 16 states and parity signs, plus
+1024 entries from each creator construction, the latter modulo 1009 for the
+modular source. This script needs NumPy, SciPy and SymPy. Running these pinned
+source bytes is code execution, and the correspondence between the Python
+checker and the separate Lean transcription is supported by source review, not
+a machine-checked cross-language extraction. Both original files are included
+byte-for-byte, so a shallow checkout need not contain the historical Git object.
+The source commit is `eebcb5e467742df3e9cf7fa9702042d7294aa742` and blobs are
+`ee8de4635d24c668949ac9a0186616ab7d59f2ed` and
+`d111c5bfeae3c384a4fe725f4a6d19277ea0005a`.
+
+This resolves only the elementary creator reindexing. It does not yet
+formalize the original 128 Kraus operators, their effect span, the identification
+with the abstract matrix-pair algebra, physical admission or clock/work. Owner
+#334 is preserved and `GR_closed=false`.
+
+A separately prepared source-only build attempt on snapshot `24363981` stopped
+at strict dependency preflight with Windows path-resolution error before Lean
+was run. Its independently reviewed, anonymized diagnostics are in
+`reports/isolated_build_probe_24363981_2026-11-04`; it is not a successful
+build receipt and does not invalidate the earlier scoped successful build.

@@ -1,0 +1,15 @@
+{
+  "scope": "temporary user junction to a separate existing volume directory; build checkout unchanged",
+  "create_exit": 0,
+  "junction_reparse": true,
+  "read_text": "probe",
+  "junction_resolve_error": {
+    "type": "FileNotFoundError",
+    "winerror": 3
+  },
+  "file_resolve_error": {
+    "type": "FileNotFoundError",
+    "winerror": 3
+  },
+  "junction_removed": true
+}
