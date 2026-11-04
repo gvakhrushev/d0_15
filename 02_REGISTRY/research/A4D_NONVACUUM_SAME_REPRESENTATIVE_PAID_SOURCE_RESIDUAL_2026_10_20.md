@@ -137250,6 +137250,1064 @@ Observed normal and optimized receipt:
 }
 ```
 
+## 7fh. Original full128 to canonical native births: the complete record map and its finite-price covector transport
+
+5 November 2026. Existing #334, native realization / final composition.
+Input 201ee52c792b7c1f3819224358c3d289756172c0. Consumer: contract C's
+single-execution map from the original priced full128 instrument into
+RAW native words, retaining B/D's actual preparation, record and clock
+equations. After §7fg's shared-return obstruction, this application
+uses the already owned MATRIX price operator and full recorded channel.
+
+The new substitution is explicit: the original complete U2048, its
+one-sided canonical-born input correction, every original record
+projection/post-state, and the existing all-column native compiler.
+It transports the known port price and any actually specified finite-
+cap CQ-gain price, with a quantitative finite-covector error. It does
+not equate a four-dimensional fullStep with full128, select Book03 Info,
+or identify the resulting programme with the current XF history.
+The complete physical price and Einstein-source match remain open.
+`GR_closed=false`; no scoped terminal is proposed.
+
+### 7fh.A. The original full operator and its genuinely paid component
+
+Consume the original CAR16/Julia/Walsh constructor, §7cx(861), and the
+all128 causal/Naimark owner. Let its 64 SELECT rows be N_j, with
+sum_j N_j N_j*=I_16. Put A_0=N_0 and Lambda=A_0* A_0. Lambda is the
+original SELECT contraction effect; it is NOT the RAW growing-clock
+Hodge Laplacian or an already identified continuum curvature source.
+
+Use the original fine order z=2j+b. In that order define the 2048-by-16
+isometry L by blocks L_(2j)=p N_j*, L_(2j+1)=a N_j*, with
+p=phi^-1, a=sqrt(p), p+p^2=1. Then the specified complete operator is
+
+    L*L=I_16, U=I_2048-2LL*, U*U=I_2048,
+    U J_0^complex=sum_z |z> tensor K_z,
+    K_(2j)=delta_(j0)I-2p^2 N_j* A_0,
+    K_(2j+1)=-2pa N_j* A_0.                            (NT1)
+
+This is the literal original reflection, including all unused columns,
+not an arbitrary extension of its prepared isometry. The fixed port/
+address permutation is only the stated z order. All128 slots remain.
+Every original field jet is retained through
+DU=-2[(DL)L*+L(DL)*], including both noncommuting Julia-root legs.
+
+The already owned port code charges c_z=1+b. Its full input effect and
+source are exactly
+
+    F_c=sum_z c_z K_z*K_z=I+4p^3 Lambda,
+    C_1=Tr(rho F_c),
+    DC_1=Tr[(D rho)F_c]+4p^3 Tr[rho D Lambda].           (NT2)
+
+For normalized input the first term is 4p^3 Tr[(D rho)Lambda]. This
+supplies an actual nonconstant matrix charge and its independent input
+row. It does not price preparation, fine-label writing, comparators or
+work by implication. No extra charge is inferred from 128-slot counting.
+
+For clarity, the original cost-marked map also transports, not just its
+one-round mean. Set B_j=N_j* A_0, R(X)=sum_j B_j X B_j*, x=exp(-t).
+
+    Phi_t(X)=sum_(j,b) x^(1+b) K_(j,b)X K_(j,b)*
+      =x[X-2p^2{Lambda,X}+4p^2(p^2+p x)R(X)],
+    Phi_t*(I)=x[I+4p^3(x-1)Lambda].                    (NT3)
+
+Its gate, preparation and marker derivatives remain those of this
+operator. In particular Z_1 at t=ln(phi) is
+p-4p^6 Tr(rho Lambda), not the unmarked normalization one.
+The genuine recycling R survives at later rounds; no scalar survival
+power or reset is substituted.
+
+### 7fh.B. One explicit all-column target with the actual born input
+
+Use the owned realification
+
+    R_real(X)=[[Re X,-Im X],[Im X,Re X]].
+
+It preserves products, adjoints and operator norm. Fix the tensor
+permutation from phase/record/DATA to record/phase/DATA, and express
+U_R=R_real(U) in this order. It lies in SO(4096), since
+det R_real(U)=|det U|^2=1. The active arena is seven record bits,
+one live phase bit and four DATA bits. The phase bit remains active
+between complex operations; it is not a discarded or sealed helper.
+
+Let J_0 x=|0^7> tensor x on real encoded DATA dimension32, and let
+Pi_z=|z><z| tensor I_32. With J_z the corresponding block injection,
+
+    Pi_z U_R J_0=J_z R_real(K_z).                        (NT4)
+
+Canonical RAW births supply v=(a,p), not zero blanks. Put
+
+    B_rec=G^tensor7 tensor I_32,
+    G=[[a,-p],[p,a]], J_v=B_rec J_0,
+    U_sharp=U_R B_rec^T in SO(4096).
+
+The explicit one-sided map therefore satisfies
+
+    U_sharp J_v=U_R J_0,
+    Pi_z U_sharp J_v=J_z R_real(K_z) for ALL128 z.        (NT5)
+
+The encoded DATA input is arbitrary and unchanged by the birth-frame
+correction. The original computational record PVM is unchanged too;
+no unpriced rotated reader is needed. B_rec^T is part of the whole
+computed target, not an executed inverse primitive. These identities
+hold on every input column, with any untouched reference, and with
+every original parameter derivative.
+
+Apply the existing GH/RAW all-column compiler to this PARTICULAR
+U_sharp, tensor the actual helper identities. It returns a finite
+positive G/CX word at any certified operator tolerance. The fullStep
+compiler is an alternative alphabet implementation: each fullStep
+is only CX(G tensor I), costs two current RAW stages, and is not the
+full128 instrument. Its dirty helper, actual routing and every stage
+remain in the full carrier/cut/price. No unknown protected source-Spin
+is relabelled as actively addressable DATA.
+
+A finite comparison catalogue uses the owned common-layout/marked
+compilation, with every chunk error summed. The result is an effective
+family of finite native words, not a printed/executed 4096-column
+word in this check, exact finite synthesis, or a dimension-uniform
+runtime claim. Each actual output word constructs its OWN complete
+growing clock. Equality of the instrument does not equate that clock's
+heat or full price with the one-stage reflection or the existing XF word.
+
+The operator construction also applies at each fixed original periodic
+mesh of the owned smooth strict-Julia chart: H_h=l2((Z/LZ)^4) tensor
+CAR16 has d=16L^4, and the SAME64 original Walsh/Julia rows in M_d obey
+the row-completeness identity. The original operator is U_(128d), and
+the real target has dimension 256d. For dyadic L=2^m its core has
+12+4m active bits; all compiler/controller helpers are additional paid
+factors. NT1--11's operator identities and finite-cap estimates use
+these actual dimensions, with their stated preparation, support and
+mixing hypotheses retained. This is a fixed-h application, not a
+mesh-uniform compiler, preparation, gap or Einstein-source theorem.
+
+### 7fh.C. Complete record and charge transport, before source limits
+
+Let W be one actually chosen compiled unitary with
+||W-U_sharp||op<=delta on the entire arena. Restriction to J_v gives
+the same isometry error. For arbitrary normalized input entangled with
+any reference, the output half-trace distance is <=delta; therefore
+the complete 128-record instrument has diamond distance <=2delta.
+The estimate is JOINT over all outcomes, not 128 separately summed
+errors. Apply the same actual record PVM, retain conditional DATA,
+all helpers and every structural zero slot. Any physically executed
+approximate reader contributes its own error before this estimate.
+
+For C_record=sum_z c_z Pi_z the exact price diagram is
+
+    J_v^T U_sharp^T C_record U_sharp J_v=R_real(F_c),
+    ||J_v^T W^T C_record W J_v-R_real(F_c)||<=4delta.     (NT6)
+
+The corresponding expected charge differs by at most 2delta from
+the charge-range bound (the displayed operator estimate is a safe
+looser bound). Genuine variations of the costs add sum_z q_z Dc_z.
+Canonical J_v is fixed by the birth rule; an independently moving
+preparation keeps its state and embedding derivatives. NT6 is not a
+license to freeze them.
+
+Compose any fixed finite complete tree of these instruments and its
+declared match/abort controller, without resetting DATA. If n_max is
+the actual cap and delta_j bounds each FULL controlled chunk/reader,
+a hybrid argument and trace-distance contraction give
+
+    tau_out <= tau_in+sum_(j=1)^n_max delta_j.            (NT7)
+
+The statement includes adaptive decisions through the complete
+registered channel, not conditioning on successful branches. Exact
+logical stopping and fixed-depth coherent unrolling have the same
+declared leaf instrument only when their controller/flag map is
+actually included. Their running-time prices need not agree. The
+compiled physical calls, canonical births, aborts and retained padding
+are paid separately unless the original complete ledger includes them.
+No direct term or boundary source disappears from an acyclic clock.
+
+### 7fh.D. Information transport requires the real input and the real algebra
+
+For a supplied density Omega on the original DATA and scored reference,
+the normalized real representative is Omega_R=R_real(Omega)/2.
+Every Hermitian expectation is preserved. Each eigenvalue is duplicated
+and halved, so S(Omega_R)=S(Omega)+ln2. For unnormalized leaf X_gamma,
+
+    S(R_real(X_gamma)/2)
+       =S(X_gamma)+Tr(X_gamma)ln2.
+
+Completeness sums the extra term to ln2. Consequently the DECLARED
+CQ entropy GAIN is exactly preserved, including its moving-input jet:
+
+    S(Gamma_R)-S(Omega_R)=S(Gamma)-S(Omega).              (NT8)
+
+This is a matrix representation identity, not a free physical conversion
+of unknown protected input into real encoded DATA. Omega_R must be the
+actual supplied/generated input on that representation, with its real
+preparation ledger. Counting heat traces do not enjoy NT8's cancellation.
+
+In particular, canonical newly born DATA is pure. It is not the faithful
+stationary rho_*=Lambda^-1/Tr Lambda^-1 used by the stopped owner.
+The owned no-reset warmup can approximate that marginal on a regular
+mixing chart; its entire prefix, finite error, records and preparation
+source remain. A retained pure purification is another real execution
+interface, not permission to discard its reference. On an efficient
+stopped tree it has joint CQ gain H(P), while the mixed-DATA gain is
+H(P)+sum_gamma P_gamma S(rho_gamma)-S(rho). On the stationary return,
+
+    Price_joint-Price_DATA=-chi_T/ell,
+    DPrice_joint-DPrice_DATA=-Dchi_T/ell.                (NT9)
+
+The entropy of the full coherent output instead has zero isometric
+gain. All three statements retain their distinct observable algebras.
+Faithful formulas containing log rho are not evaluated at a pure born
+input by continuity without the actual rank-stratum justification.
+
+There is an owned positive record-algebra application. The original
+full128 complete-record subtheory declares orthogonal stored pointers
+and finite-cylinder readings; on its specified regular fixture the
+future DATA algebra is the owned even algebra M8 direct_sum M8. Its
+archive/DATA algebra is Diag(pointer) tensor A_even, retaining past
+labels. Transport these SAME tests through NT5 and the stated reader
+maps; pointer pinching then preserves every one of those future laws.
+With the full declared block information fixed, its tracial conditional
+expectation is the unique maximum-entropy representative. This consumes
+Book06's descriptive quotient; it is not physical record destruction.
+
+The RAW gate ban on old_right alone does not prove exhaustion of all
+future observations: report_bits is metadata, not an exhaustive observe
+semantics. A larger admitted reader family keeps its extra tests. The
+same-test subtheory map just described does not select Book03 Info from
+the maximum-entropy representative or delete an available coherent test.
+
+### 7fh.E. A quantitative full finite-cap price/source comparison
+
+Use an ACTUALLY specified capped charge C and CQ gain on that same
+scored input/output, with 0<=C<=Cmax. For original port charges alone
+Cmax=2n_max. Let D_out and D_in be the full scored dimensions, including
+the phase wire, actual references, helper factors, flags and aborts;
+structurally zero branches are kept. Additional physical charges must
+be supplied rather than inferred from this bound. Embed the target on
+the SAME scored carrier with its specified actual helper/reference
+input. Pure canonical helper extensions are entropy-neutral; a new
+correlated scored helper requires the actual enlarged target CQ price.
+Put
+
+    f_D(tau)=tau log(D-1)+h_2(tau).
+
+For half-trace errors <=1/2, the owned entropy-continuity theorem yields
+for P_cap=E C-[S(Gamma_cap)-S(Omega)]/ell
+
+    |P_compiled-P_target|<=omega,
+    omega=2 Cmax tau_out
+              +[f_Dout(tau_out)+f_Din(tau_in)]/ell.       (NT10)
+
+For a one-dimensional scored factor its entropy modulus is zero. The
+input term is mandatory unless the input is exactly common. No lower
+floor on individual probabilities or Hessian of entropy at a dark rank
+birth is assumed. This is the complete SPECIFIED CQ price, not the
+unknown entire physical Cost–Info of the compiled programme.
+
+For two actual same-layout endpoint words y+/-tV, whose price errors
+are each <=omega, and a supplied positive physical consumer gain Gamma>0,
+
+    |delta_t P_compiled-delta_t P_target|/Gamma
+                                      <=omega/(|t|Gamma). (NT11)
+
+Use Gamma=1 for an unnormalized source comparison. Include every true
+basis, marked-control and physical-lift constant before precision
+selection. On a C1 target chart add its genuine finite-difference
+remainder; a C3 restriction with third derivative bound M3 gives
+M3 t^2/(6Gamma). Dark-rank births may lack that stronger smoothness;
+NT10–11 and the actual finite comparisons still apply.
+
+At fixed cap, active arena and source norms the native compiler can
+meet the displayed budget, e.g. total endpoint/input errors O(t^3)
+give O(t^2|log t|) before the fixed normalization. If the cap, dimension,
+gain or preparation grows, their ACTUAL values stay in NT10–11. No
+uncapped or mesh-uniform source theorem follows without the owned
+transience, support, domination and preparation estimates. There is no
+derivative of a word index or equality of exact finite stationary sets.
+
+### 7fh.F. What has been substituted, and what is still required
+
+The literal original full operator now has an explicit RAW-born target,
+unchanged computational fine records, all-input post-state transport,
+its actual matrix port-price source, and a fixed-cap complete specified
+CQ-covector budget. This removes a concrete operator/compilation-type
+gap; a separate abstract Stinespring-existence claim is unnecessary.
+
+It does not identify Lambda(Y) and its preparation with the current
+XF reporter's material/geometry map. Nor does it show that the complete
+stopped full128 price has the Einstein covector after all genuine
+nuisance equations. The original stopped preparation cotangent,
+terminal/work/clock ledgers and any retained reference correction are
+still required. A nonzero component of a fine-record source is not a
+lower bound on the derivative of their total sum.
+
+The next positive application is the SAME selected full weighted-price
+map, with its actual N_j(Y), preparation, tested algebra and stopping
+history, followed by the full covector comparison in NT11's true norm.
+One may append the compiled instrument on a retained native history,
+but must recompute that entire history's own Book03 tuple and price.
+No prior XF/full128 source is transferred merely by naming both native.
+The unchanged A–D contract, original owners and claims remain intact;
+no new execution/task, independent acceptance or closure is asserted.
+
+
+### 7fh.G. Bounded original-operator check and reviewed input snapshot
+
+The reproducible script consumes ONE original native-constructor call
+at theta=log(2), nu=3/5 and phases (i,i,-1,-i). Its six definitions are
+extracted by AST from the exact pinned source; the original64 SELECT
+rows and their jets are captured at its return without changing its
+calculations or replaying an old suite. The source is pinned by SHA256
+and Git blob. The original low-rank reflection is applied implicitly;
+no alternative unitary completion or dense4096-square matrix is used.
+
+All128 prepared blocks, original effects and posterior DATA jets are
+compared, retaining an independently moving input and every structural
+zero slot. The one-sided birth correction, known matrix charge,
+cost-marked operator and its absolute normalizer are checked directly.
+Realification entropy shifts are computed from nonnegative singular
+squares, without a branch-probability cutoff. The declared CQ gain
+keeps both input and output terms. Its faithful nonstationary fixture
+does not pretend to be the actual canonical native preparation.
+
+The hostile two-sided birth-frame conjugation changes the original
+record-cost effect by approximately0.37083. Thus equality of a globally
+rotated operator does not reproduce the original declared reader.
+The maximum nominal floating residual is below9.8e-15; these numerical
+controls are NOT interval certificates. The analytical identities and
+norm estimates NT1--11 are proved above, not inferred from a fixture.
+
+There are65 explicit conditions:45 nominal numerical,11 exact symbolic,
+5 exact structural and4 provenance. Every label is classified in the
+observed receipt; conditions raise explicit exceptions and survive -O.
+Normal and optimized Python3.12.14 / NumPy2.3.5 / SciPy1.16.3 /
+SymPy1.14.0 runs with warnings as errors produced identical receipts.
+No expected repository evidence was rewritten. No large native word,
+physical preparation, full Info law, PDE or Lean proof was generated.
+
+Three bounded reviews pin the final analytic text, including positive
+Gamma>0, full scored helper/reference inputs and the fixed-site scope.
+They verify operator/source transport, price typing and admission
+boundaries. Their mathematical approval is not independent positive
+assembly acceptance. Existing physical A--D obligations remain open.
+
+Extract the Python block into scratch check_transport.py and run with
+the recorded library versions:
+
+```text
+python3 -Werror /absolute/scratch/check_transport.py --repo /absolute/repository
+python3 -O -Werror /absolute/scratch/check_transport.py --repo /absolute/repository
+```
+
+The script prints observed JSON and writes no repository files.
+Owner hashes refer to the pre-insertion commit. This two-file insertion
+preserves every old byte and the unchanged A--D acceptance contract.
+
+```json
+{
+  "GR_closed": false,
+  "check_counts_by_kind": {
+    "exact_structural": 5,
+    "exact_symbolic": 11,
+    "nominal_numeric": 45,
+    "provenance": 4
+  },
+  "checker_sha256": "cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c",
+  "checks": 65,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "input_head": "201ee52c792b7c1f3819224358c3d289756172c0",
+  "normal_and_optimized_byte_identical": true,
+  "normal_optimized_receipt_sha256": "2ab0caca679c299e3097a15bc7651dd619f92568ab2c544bdd09a1bf46517c03",
+  "not_claimed": [
+    "large compiled native word emitted or executed",
+    "nominal floating checks are intervals",
+    "unknown protected input physically converted or freely prepared",
+    "all RAW future tests exhausted by old_right gate ban",
+    "Book03 Info or complete Cost-Info selected",
+    "original full128 clock equals its compiled native clock or the XF clock",
+    "finite source error is mesh-uniform or uncapped",
+    "full reduced Einstein source, joint native root or reverse recovery established",
+    "independent positive assembly acceptance"
+  ],
+  "original_constructor_calls_per_run": 1,
+  "owner_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "afd25564dce6401901cca68a9299ea52ff043c7372a6ae27e5d8f135906aa687",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+    "02_REGISTRY/research/A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md": "5607d7fe34d5309e7db5705bb68fcfce8ae9a2406f8d7ca829c937216f69aebf",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "4d79522dd72b76d4eba72f15701f4e922466f7ab3454a346db5ff869117d57c5",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_THREE_TICK_CANONICAL_FUTURE_EVEN_ALGEBRA_2026_10_22.md": "b5c25996ad8d0742532c67429bba77c5a1899a68410b6ca6a0f1d883fc927b37",
+    "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_HALMOS_NAIMARK_ALL128_CAUSAL_BOOK_WELD_2026_10_22.md": "7c791b59dfbc26f8172287e029731e948a7451f5b490157121660e6321269f0c",
+    "02_REGISTRY/research/A4D_Q8_REAL_BOOK_SOURCE_INTERFACE_2026_10_21.md": "2673de5c0424ed057164d2b154977a6a7c246bf24d08b845fa5386f58fcf255f",
+    "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+    "02_REGISTRY/research/sources/d0_diagonal_paid_source_2026-10-21/author_packet/PROOF.md": "8b14bc9272494c204ddd6d5c61615f87b308a6044b8420e3786409e6e8a77b1f",
+    "02_REGISTRY/research/sources/d0_native65_causal_source_2026-10-22/THEOREM.md": "eef383ca58e6bce715b2b76f27a1abcdcab3ac668a4b09187bf1238cc4976436",
+    "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_SOURCE.md": "f1ee97765d7c8a82ff65f4ab81f46cb626e6780856fac34684efa8d4cac92d51",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/QUANTUM_RETURN_BALANCE.md": "99b82adf58c874f88f42681268b889b4d153b68db5fb4e81127df38d8b84b2f0",
+    "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/STATIONARY_SOURCE_CONSUMER.md": "2190b37e35b9a707de6da00edf7544d0425bfae45530300e4dab9126954a4056",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/FULL128_HEAT_PRICE_RECYCLING_BRIDGE.md": "a8cdbd52e52275cb7e41aa84b8bd69e9fb36170f75d8481c6568fb3ea1a2bce0",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/SMOOTH_BULK_FULL128_C1_HEAT_HISTORY_TRANSFER.md": "6fc9fc4445416b37550a04ced580c447b137b0bdbd8e71243e19606699cc6e21"
+  },
+  "run_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "scientific_promotion": false,
+  "scope": "Original complete full128 operator, same computational records, native born-frame target, known matrix charge and specified finite-cap CQ source transport",
+  "scratch_proof_sha256": {
+    "CHECK_RECEIPT.md": "262ee6df9b8da4e59e52d0531ac1d13aa70d77c8875c2586a16563ee62d5a69a",
+    "admission-final.md": "cdd0634dac3cb5a138410c8e0cb5504e6426a1cead896798ad6ea3b514b10a5d",
+    "admission.md": "c6762572525b6317d69bf3910ac99e2380e1c7147b6495f5b05e76eb86738af3",
+    "brief.md": "b92e2efba8f66cd17cf466ca963e688fe657f1bf67d6ae6583aa06e27f7576e4",
+    "price-final.md": "72006c3060ef3a164682de5501c8b1cb1d4e2ed78a07380f8d1aaca2e76a91e2",
+    "price.md": "8dd4a54416a515a6ab1d26a417228e7e8d605d729017c1cf3b020c796bf6c39b",
+    "proof.md": "0cf9e5d3376729ee3ae016039101cb093dd2e0d1f936d61e4b2a9ff80a75b5b6",
+    "source-final.md": "4fbff2a2c3ea398cfe9545836a4b8a934fc4f462043419bf05d392cfbcab84a9",
+    "source.md": "31f9410e9b7fa34fc762f5a42153d66736022e9797ddfb2eda78ca2ace3d5ab6"
+  }
+}
+```
+
+#### 7fh.G1. check_transport.py
+
+```python
+#!/usr/bin/env python3
+"""Bounded original full128 -> RAW real target/price transport.
+
+One pinned native constructor call; no old suite and no dense 4096x4096 U.
+Numerical residuals are nominal floating checks, not interval certificates.
+No compiled native word or physical Info selection is asserted.
+"""
+from __future__ import annotations
+import os
+for thread_option in ('OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS'):
+    os.environ[thread_option] = '1'
+import argparse
+import ast
+import hashlib
+import json
+from pathlib import Path
+from types import SimpleNamespace
+import platform
+import numpy as np
+import scipy
+import sympy as sp
+from scipy.linalg import expm, solve_sylvester
+
+OWNER = '02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py'
+OWNER_SHA256 = '1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9'
+OWNER_BLOB = 'ee8de4635d24c668949ac9a0186616ab7d59f2ed'
+CHECKS = []
+RESIDUALS = {}
+TOL = 3e-11
+JET_TOL = 3e-10
+ENTROPY_TOL = 3e-12
+
+
+def need(condition, label):
+    if not bool(condition):
+        raise ArithmeticError(label)
+    CHECKS.append(label)
+
+
+def close(actual, expected, label, tolerance=TOL):
+    error = float(np.max(np.abs(np.asarray(actual) - np.asarray(expected))))
+    RESIDUALS[label] = error
+    need(np.isfinite(error) and error <= tolerance, label)
+
+
+def adj(matrix):
+    return matrix.conj().T
+
+
+def realify(matrix):
+    return np.block([[matrix.real, -matrix.imag], [matrix.imag, matrix.real]])
+
+
+def real_blocks(blocks):
+    return np.vstack([realify(block) for block in blocks])
+
+
+def entropy_from_amplitude(amplitude):
+    # Squared singular values are nonnegative even for deficient-rank blocks.
+    # No outcome or positive singular square is clipped.
+    spectrum = np.linalg.svd(amplitude, compute_uv=False) ** 2
+    positive = spectrum[spectrum > 0]
+    return float(-np.sum(positive * np.log(positive)))
+
+
+def sqrt_density(density, label):
+    eig, vec = np.linalg.eigh(density)
+    need(float(eig.min()) > 0, label)
+    return (vec * np.sqrt(eig)) @ adj(vec)
+
+
+def kron_power(matrix, count):
+    result = np.ones((1, 1), dtype=matrix.dtype)
+    for _ in range(count):
+        result = np.kron(result, matrix)
+    return result
+
+
+def load_native_once(repo):
+    source = (repo / OWNER).read_bytes()
+    need(hashlib.sha256(source).hexdigest() == OWNER_SHA256,
+         'original constructor SHA256 pin')
+    blob = hashlib.sha1(b'blob ' + str(len(source)).encode() + b'\0' + source).hexdigest()
+    need(blob == OWNER_BLOB, 'original constructor Git blob pin')
+    wanted = ('adj', 'herm', 'tr', 'root', 'creators', 'native')
+    parsed = ast.parse(source.decode(), filename=OWNER)
+    functions = [node for node in parsed.body
+                 if isinstance(node, ast.FunctionDef) and node.name in wanted]
+    need(tuple(node.name for node in functions) == wanted,
+         'only six pinned definitions extracted; no historical suite')
+    captured = {}
+
+    def capture(answer, rows, drows):
+        captured['calls'] = captured.get('calls', 0) + 1
+        captured['rows'] = np.asarray(rows).copy()
+        captured['drows'] = np.asarray(drows).copy()
+        return answer
+
+    class CaptureNativeReturn(ast.NodeTransformer):
+        def visit_Return(self, node):
+            return ast.copy_location(ast.Return(value=ast.Call(
+                func=ast.Name(id='_capture_original_return', ctx=ast.Load()),
+                args=[node.value, ast.Name(id='rows', ctx=ast.Load()),
+                      ast.Name(id='drows', ctx=ast.Load())], keywords=[])), node)
+
+    # Capture original local SELECT rows at the sole return. All calculations,
+    # returned K/dK, and their original ordering remain unchanged.
+    functions[-1] = CaptureNativeReturn().visit(functions[-1])
+    module = ast.fix_missing_locations(ast.Module(body=functions, type_ignores=[]))
+    p = (np.sqrt(5.0) - 1.0) / 2.0
+    namespace = dict(np=np, expm=expm, solve_sylvester=solve_sylvester,
+                     P=p, EYE=np.eye(16, dtype=complex),
+                     _capture_original_return=capture)
+    exec(compile(module, OWNER, 'exec'), namespace)
+    native_excerpt = SimpleNamespace(native=namespace['native'])
+    k, dk = native_excerpt.native(np.log(2.0), 3.0 / 5.0,
+                                 (1j, 1j, -1.0, -1j))
+    need(captured['calls'] == 1, 'exactly one original native call')
+    return p, k, dk, captured['rows'], captured['drows']
+
+
+def exact_checks():
+    p, x = sp.symbols('p x', positive=True)
+    modulus = p**2 + p - 1
+
+    def reduce(expression):
+        return sp.rem(sp.Poly(sp.expand(expression), p),
+                      sp.Poly(modulus, p)).as_expr().expand()
+
+    need(reduce(p**4 + p**3 - p**2) == 0,
+         'EXACT Golden total Kraus recycling coefficient')
+    # Port0: I - 4p² Delta + 4p⁴ Delta; port1: 4p³ Delta.
+    need(reduce(-4*p**2 + 4*p**4 + 4*p**3) == 0,
+         'EXACT total fine effect is identity')
+    need(reduce(-4*p**2 + 4*p**4 + 8*p**3 - 4*p**3) == 0,
+         'EXACT paid cost effect is I plus 4p³ Delta')
+    need(sp.expand(4*p**4 + 4*p**3*x - 4*p**2*(p**2+p*x)) == 0,
+         'EXACT marked-map recycling coefficient')
+    need(reduce(-4*p**2 + 4*p**4 + 4*p**3*x - 4*p**3*(x-1)) == 0,
+         'EXACT marked adjoint identity effect')
+    need(reduce(p*4*p**3*(p-1) + 4*p**6) == 0,
+         'EXACT Golden-mark one-round normalizer coefficient')
+    need(sp.Integer(2)*sp.Integer(2) == 4,
+         'EXACT isometry cost-effect error coefficient 2 norm(C)=4')
+    lam = sp.symbols('lambda', positive=True)
+    entropy_shift = -2*(lam/2)*sp.log(lam/2) + lam*sp.log(lam)
+    need(sp.simplify(entropy_shift - lam*sp.log(2)) == 0,
+         'EXACT duplicated-halved eigenvalue entropy shift')
+    m_out, m_in, dm_out, dm_in = sp.symbols('m_out m_in dm_out dm_in', real=True)
+    gain_shift = sp.log(2)*(m_out-m_in)
+    jet_shift = sp.log(2)*(dm_out-dm_in)
+    need(gain_shift.subs(m_out, m_in) == 0,
+         'EXACT complete CQ gain shift cancels at equal total mass')
+    need(jet_shift.subs(dm_out, dm_in) == 0,
+         'EXACT moving-preparation CQ gain jet shift cancels')
+    q, old_s, conditional_s = sp.symbols('H_old S_input S_conditional', real=True)
+    need(sp.expand(q - (q+conditional_s-old_s) - (old_s-conditional_s)) == 0,
+         'EXACT retained-purifier versus mixed-DATA gain difference')
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--repo', type=Path, default=Path.cwd())
+    args = parser.parse_args()
+    p, k, dk, rows, drows = load_native_once(args.repo)
+    a = np.sqrt(p)
+    eye16, eye32 = np.eye(16), np.eye(32)
+    need(k.shape == dk.shape == (128, 16, 16), 'all128 original K and dK slots')
+    need(rows.shape == drows.shape == (64, 16, 16), 'all64 original SELECT rows and jets')
+    need(all(np.all(np.isfinite(value)) for value in (k, dk, rows, drows)),
+         'every original operator and jet entry is finite')
+    delta = adj(rows[0]) @ rows[0]
+    ddelta = adj(drows[0]) @ rows[0] + adj(rows[0]) @ drows[0]
+    close(rows[0], adj(rows[0]), 'original blank SELECT row is Hermitian')
+    close(sum(row @ adj(row) for row in rows), eye16, 'original SELECT row coisometry')
+    close(sum(adj(row) @ row for row in rows), eye16, 'original SELECT column isometry')
+    close(sum(drow @ adj(row) + row @ adj(drow) for row, drow in zip(rows, drows)),
+          np.zeros((16, 16)), 'original SELECT coisometry jet', JET_TOL)
+
+    # Original U=I-2LL*, represented in computational record z=2j+b order.
+    l_blocks = np.asarray([factor*adj(row) for row in rows for factor in (p, a)])
+    dl_blocks = np.asarray([factor*adj(row) for row in drows for factor in (p, a)])
+    lr, dlr = real_blocks(l_blocks), real_blocks(dl_blocks)
+    close(lr.T @ lr, eye32, 'original real reflection rank32 isometry')
+    close(dlr.T @ lr + lr.T @ dlr, np.zeros((32, 32)),
+          'original full-reflection tangent constraint', JET_TOL)
+    j0 = np.zeros((4096, 32))
+    j0[:32] = eye32
+
+    def apply_u(value):
+        return value - 2*lr @ (lr.T @ value)
+
+    def apply_du(value):
+        return -2*(dlr @ (lr.T @ value) + lr @ (dlr.T @ value))
+
+    vr = apply_u(j0)
+    dvr = apply_du(j0)
+    expected_vr, expected_dvr = real_blocks(k), real_blocks(dk)
+    need(vr.shape == (4096, 32), 'complete real prepared carrier is 4096 by32')
+    close(vr, expected_vr, 'ALL128 computational record posterior blocks')
+    close(dvr, expected_dvr, 'ALL128 computational record posterior jets', JET_TOL)
+    close(vr.T @ vr, eye32, 'complete realified instrument isometry')
+    close(dvr.T @ vr + vr.T @ dvr, np.zeros((32, 32)),
+          'complete realified instrument isometry jet', JET_TOL)
+    probes = np.sin(np.arange(4096*3).reshape(4096, 3)+1) / np.sqrt(4096)
+    close(apply_u(apply_u(probes)), probes, 'original implicit reflection full-carrier probe')
+    close(apply_du(apply_u(probes)) + apply_u(apply_du(probes)),
+          np.zeros_like(probes), 'original implicit reflection orthogonality jet', JET_TOL)
+    need(32 % 2 == 0, 'EXACT original real reflection determinant is positive')
+
+    structural = np.asarray([(z//4) % 2 == 1 for z in range(128)])
+    need(int(structural.sum()) == 64, 'exact duplicated-Walsh structural zero-slot count')
+    need(np.all(k[structural] == 0) and np.all(dk[structural] == 0),
+         'every structural zero slot and its jet retained exactly')
+    need(np.all(np.linalg.norm(k[~structural], axis=(1, 2)) > 1e-10),
+         'every other original slot nonzero on this fixture')
+
+    vb = vr.reshape(128, 32, 32)
+    dvb = dvr.reshape(128, 32, 32)
+    effect_errors, effect_jet_errors, posterior_errors = [], [], []
+    rho = np.diag(np.arange(1., 17.)) / 136.
+    rho = rho.astype(complex)
+    rho[0, 1], rho[1, 0] = 0.001j, -0.001j
+    drho = np.zeros((16, 16), complex)
+    drho[0, 0], drho[1, 1] = 0.01, -0.01
+    drho[0, 1] = drho[1, 0] = 0.001
+    rhor, drhor = realify(rho)/2, realify(drho)/2
+    close(np.trace(rho), 1., 'faithful fixture density normalized')
+    close(np.trace(drho), 0., 'independent preparation jet trace zero')
+    srho = sqrt_density(rho, 'faithful complex fixture input')
+    srhor = sqrt_density(rhor, 'faithful normalized real fixture input')
+    effects, deffects = [], []
+    xc, xr, dxc, dxr = [], [], [], []
+    for z in range(128):
+        f = vb[z].T @ vb[z]
+        df = dvb[z].T @ vb[z] + vb[z].T @ dvb[z]
+        fc = adj(k[z]) @ k[z]
+        dfc = adj(dk[z]) @ k[z] + adj(k[z]) @ dk[z]
+        effect_errors.append(np.max(np.abs(f-realify(fc))))
+        effect_jet_errors.append(np.max(np.abs(df-realify(dfc))))
+        effects.append(f)
+        deffects.append(df)
+        xz = k[z] @ rho @ adj(k[z])
+        dxz = dk[z] @ rho @ adj(k[z]) + k[z] @ drho @ adj(k[z]) + k[z] @ rho @ adj(dk[z])
+        xrz = vb[z] @ rhor @ vb[z].T
+        dxrz = dvb[z] @ rhor @ vb[z].T + vb[z] @ drhor @ vb[z].T + vb[z] @ rhor @ dvb[z].T
+        posterior_errors.append(np.max(np.abs(xrz-realify(xz)/2)))
+        xc.append(xz); xr.append(xrz); dxc.append(dxz); dxr.append(dxrz)
+    close(max(effect_errors), 0., 'ALL128 original computational effects')
+    close(max(effect_jet_errors), 0., 'ALL128 original computational effect jets', JET_TOL)
+    close(max(posterior_errors), 0., 'ALL128 posterior DATA realification with normalized density')
+    close(max(np.max(np.abs(dxr[z]-realify(dxc[z])/2)) for z in range(128)),
+          0., 'ALL128 posterior DATA jets include preparation', JET_TOL)
+    costs = np.array([1+z%2 for z in range(128)])
+    cost_effect = sum(costs[z]*effects[z] for z in range(128))
+    dcost_effect = sum(costs[z]*deffects[z] for z in range(128))
+    target_cost = eye32 + 4*p**3*realify(delta)
+    target_dcost = 4*p**3*realify(ddelta)
+    close(cost_effect, target_cost, 'original port price effect I plus4p³ realDelta')
+    close(dcost_effect, target_dcost, 'original port price effect full jet', JET_TOL)
+    expected_cost_jet = np.trace(drhor @ cost_effect + rhor @ dcost_effect)
+    summed_cost_jet = sum(costs[z]*np.trace(dxr[z]) for z in range(128))
+    close(expected_cost_jet, summed_cost_jet, 'actual charge source includes independent preparation')
+    close(sum(np.trace(x) for x in xc), 1., 'complete complex output mass')
+    close(sum(np.trace(x) for x in xr), 1., 'complete real output mass')
+    close(sum(np.trace(x) for x in dxc), 0., 'complete complex output mass jet', JET_TOL)
+    close(sum(np.trace(x) for x in dxr), 0., 'complete real output mass jet', JET_TOL)
+    need(float(np.linalg.norm(sum(xc)-rho, 2)) > 1e-6,
+         'fixture input is not silently a stationary DATA section')
+
+    # No dense B_rec (4096 squared): seven-bit record basis is only 128 squared.
+    g = np.array([[a, -p], [p, a]])
+    b7 = kron_power(g, 7)
+    born = b7[:, 0]
+    jv = np.kron(born[:, None], eye32)
+
+    def record_action(matrix, value):
+        value3 = value.reshape(128, 32, value.shape[1])
+        return np.einsum('ij,jkn->ikn', matrix, value3).reshape(4096, value.shape[1])
+
+    close(b7.T @ b7, np.eye(128), 'seven actual Golden birth-frame factors orthogonal')
+    close(record_action(b7.T, jv), j0, 'one-sided birth frame sends actual Jv to J0')
+    born_output = apply_u(record_action(b7.T, jv))
+    born_jet = apply_du(record_action(b7.T, jv))
+    close(born_output, expected_vr, 'Usharp Jv equals original complete V_R')
+    close(born_jet, expected_dvr, 'Usharp Jv jet equals original complete dV_R', JET_TOL)
+    close(born_output.T @ born_output, eye32, 'actual born-frame prepared target isometry')
+    bad_output = record_action(b7, born_output)
+    bad_cost = sum(costs[z]*(bad_output[32*z:32*(z+1)].T @ bad_output[32*z:32*(z+1)])
+                   for z in range(128))
+    bad_gap = float(np.linalg.norm(bad_cost-target_cost, 2))
+    need(bad_gap > 1e-3, 'NEGATIVE two-sided born conjugation changes original record cost')
+
+    complex_entropy, real_entropy, entropy_block_errors = [], [], []
+    for z in range(128):
+        sc = entropy_from_amplitude(k[z] @ srho)
+        sr = entropy_from_amplitude(vb[z] @ srhor)
+        mass = float(np.trace(xc[z]).real)
+        complex_entropy.append(sc)
+        real_entropy.append(sr)
+        entropy_block_errors.append(abs(sr-sc-mass*np.log(2)))
+    s_in_c, s_in_r = entropy_from_amplitude(srho), entropy_from_amplitude(srhor)
+    s_out_c, s_out_r = sum(complex_entropy), sum(real_entropy)
+    close(max(entropy_block_errors), 0., 'ALL128 unnormalized block entropy shifts', ENTROPY_TOL)
+    close(s_in_r-s_in_c, np.log(2), 'faithful input realification entropy shift ln2', ENTROPY_TOL)
+    close(s_out_r-s_out_c, np.log(2), 'complete CQ output realification entropy shift ln2', ENTROPY_TOL)
+    close(s_out_r-s_in_r, s_out_c-s_in_c, 'actual complete CQ gain has no realification shift', ENTROPY_TOL)
+    need(abs(s_out_r-s_out_c) > 0.6,
+         'NEGATIVE absolute CQ entropy does retain ln2')
+
+    # Marked map checked against independent Kraus summation, not an old suite.
+    mark = np.log((1+np.sqrt(5.))/2)
+    x = np.exp(-mark)
+    bj = [adj(row) @ rows[0] for row in rows]
+    dbj = [adj(drow) @ rows[0] + adj(row) @ drows[0]
+           for row, drow in zip(rows, drows)]
+    recycling = sum(b @ rho @ adj(b) for b in bj)
+    drecycling = sum(db @ rho @ adj(b)+b @ drho @ adj(b)+b @ rho @ adj(db)
+                    for b, db in zip(bj, dbj))
+    marked = sum(x**costs[z]*xc[z] for z in range(128))
+    dmarked = sum(x**costs[z]*dxc[z] for z in range(128))
+    formula = x*(rho-2*p**2*(delta@rho+rho@delta)+4*p**2*(p**2+p*x)*recycling)
+    dformula = x*(drho-2*p**2*(ddelta@rho+delta@drho+drho@delta+rho@ddelta)
+                  +4*p**2*(p**2+p*x)*drecycling)
+    close(marked, formula, 'actual cost-marked Phi operator formula')
+    close(dmarked, dformula, 'actual cost-marked Phi full input/gate jet', JET_TOL)
+    close(np.trace(marked), p-4*p**6*np.trace(rho@delta),
+          'actual Golden-mark absolute normalizer')
+    exact_checks()
+    provenance_labels = {
+        'original constructor SHA256 pin', 'original constructor Git blob pin',
+        'only six pinned definitions extracted; no historical suite',
+        'exactly one original native call',
+    }
+    structural_labels = {
+        'all128 original K and dK slots', 'all64 original SELECT rows and jets',
+        'complete real prepared carrier is 4096 by32',
+        'exact duplicated-Walsh structural zero-slot count',
+        'EXACT original real reflection determinant is positive',
+    }
+    check_kinds = {
+        label: ('provenance' if label in provenance_labels else
+                'exact_structural' if label in structural_labels else
+                'exact_symbolic' if label.startswith('EXACT ') else
+                'nominal_numeric')
+        for label in CHECKS
+    }
+    result = {
+        'scope': 'nominal bounded full128 real target, original completion, charge and CQ-gain transport; no compiled word or Info selection',
+        'owner': {'path': OWNER, 'sha256': OWNER_SHA256, 'git_blob': OWNER_BLOB,
+                  'native_calls': 1, 'old_suite_executed': False,
+                  'original_SELECT_rows_captured_without_reexecution': True},
+        'environment': {'python': platform.python_version(), 'numpy': np.__version__,
+                        'scipy': scipy.__version__, 'sympy': sp.__version__},
+        'fixture': {'theta': 'log(2)', 'nu': '3/5', 'phases': ['i','i','-1','-i'],
+                    'record_slots': 128, 'structural_zero_slots': 64,
+                    'real_prepared_shape': [4096,32], 'dense_4096_completion_allocated': False,
+                    'input': 'specified faithful nonstationary density; not a native stationary preparation'},
+        'tolerances_nominal_not_intervals': {'matrix': TOL, 'jet': JET_TOL, 'entropy': ENTROPY_TOL},
+        'check_count': len(CHECKS), 'checks': CHECKS,
+        'check_kinds': check_kinds,
+        'check_counts_by_kind': {kind: list(check_kinds.values()).count(kind)
+                                for kind in sorted(set(check_kinds.values()))},
+        'max_residual': format(max(RESIDUALS.values()), '.16e'),
+        'residuals': {name: format(value, '.16e') for name, value in RESIDUALS.items()},
+        'values': {'complex_CQ_gain': format(s_out_c-s_in_c, '.16e'),
+                   'real_CQ_gain': format(s_out_r-s_in_r, '.16e'),
+                   'charge_source': format(float(expected_cost_jet.real), '.16e'),
+                   'wrong_two_sided_record_cost_gap': format(bad_gap, '.16e')},
+        'preserved_boundaries': ['full128 posterior maps and all record effects',
+                                'one-sided actual born frame; no free rotated readout',
+                                'independent preparation source',
+                                'absolute entropy shift versus gain cancellation',
+                                'original cost marker normalizer',
+                                'no physical compiled word, Gibbs preparation, full Info selection, or GR closure'],
+    }
+    print(json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2))
+
+
+if __name__ == '__main__':
+    main()
+```
+
+Observed normal and optimized receipt:
+
+```json
+{
+  "check_count": 65,
+  "check_counts_by_kind": {
+    "exact_structural": 5,
+    "exact_symbolic": 11,
+    "nominal_numeric": 45,
+    "provenance": 4
+  },
+  "check_kinds": {
+    "ALL128 computational record posterior blocks": "nominal_numeric",
+    "ALL128 computational record posterior jets": "nominal_numeric",
+    "ALL128 original computational effect jets": "nominal_numeric",
+    "ALL128 original computational effects": "nominal_numeric",
+    "ALL128 posterior DATA jets include preparation": "nominal_numeric",
+    "ALL128 posterior DATA realification with normalized density": "nominal_numeric",
+    "ALL128 unnormalized block entropy shifts": "nominal_numeric",
+    "EXACT Golden total Kraus recycling coefficient": "exact_symbolic",
+    "EXACT Golden-mark one-round normalizer coefficient": "exact_symbolic",
+    "EXACT complete CQ gain shift cancels at equal total mass": "exact_symbolic",
+    "EXACT duplicated-halved eigenvalue entropy shift": "exact_symbolic",
+    "EXACT isometry cost-effect error coefficient 2 norm(C)=4": "exact_symbolic",
+    "EXACT marked adjoint identity effect": "exact_symbolic",
+    "EXACT marked-map recycling coefficient": "exact_symbolic",
+    "EXACT moving-preparation CQ gain jet shift cancels": "exact_symbolic",
+    "EXACT original real reflection determinant is positive": "exact_structural",
+    "EXACT paid cost effect is I plus 4p³ Delta": "exact_symbolic",
+    "EXACT retained-purifier versus mixed-DATA gain difference": "exact_symbolic",
+    "EXACT total fine effect is identity": "exact_symbolic",
+    "NEGATIVE absolute CQ entropy does retain ln2": "nominal_numeric",
+    "NEGATIVE two-sided born conjugation changes original record cost": "nominal_numeric",
+    "Usharp Jv equals original complete V_R": "nominal_numeric",
+    "Usharp Jv jet equals original complete dV_R": "nominal_numeric",
+    "actual Golden-mark absolute normalizer": "nominal_numeric",
+    "actual born-frame prepared target isometry": "nominal_numeric",
+    "actual charge source includes independent preparation": "nominal_numeric",
+    "actual complete CQ gain has no realification shift": "nominal_numeric",
+    "actual cost-marked Phi full input/gate jet": "nominal_numeric",
+    "actual cost-marked Phi operator formula": "nominal_numeric",
+    "all128 original K and dK slots": "exact_structural",
+    "all64 original SELECT rows and jets": "exact_structural",
+    "complete CQ output realification entropy shift ln2": "nominal_numeric",
+    "complete complex output mass": "nominal_numeric",
+    "complete complex output mass jet": "nominal_numeric",
+    "complete real output mass": "nominal_numeric",
+    "complete real output mass jet": "nominal_numeric",
+    "complete real prepared carrier is 4096 by32": "exact_structural",
+    "complete realified instrument isometry": "nominal_numeric",
+    "complete realified instrument isometry jet": "nominal_numeric",
+    "every original operator and jet entry is finite": "nominal_numeric",
+    "every other original slot nonzero on this fixture": "nominal_numeric",
+    "every structural zero slot and its jet retained exactly": "nominal_numeric",
+    "exact duplicated-Walsh structural zero-slot count": "exact_structural",
+    "exactly one original native call": "provenance",
+    "faithful complex fixture input": "nominal_numeric",
+    "faithful fixture density normalized": "nominal_numeric",
+    "faithful input realification entropy shift ln2": "nominal_numeric",
+    "faithful normalized real fixture input": "nominal_numeric",
+    "fixture input is not silently a stationary DATA section": "nominal_numeric",
+    "independent preparation jet trace zero": "nominal_numeric",
+    "one-sided birth frame sends actual Jv to J0": "nominal_numeric",
+    "only six pinned definitions extracted; no historical suite": "provenance",
+    "original SELECT coisometry jet": "nominal_numeric",
+    "original SELECT column isometry": "nominal_numeric",
+    "original SELECT row coisometry": "nominal_numeric",
+    "original blank SELECT row is Hermitian": "nominal_numeric",
+    "original constructor Git blob pin": "provenance",
+    "original constructor SHA256 pin": "provenance",
+    "original full-reflection tangent constraint": "nominal_numeric",
+    "original implicit reflection full-carrier probe": "nominal_numeric",
+    "original implicit reflection orthogonality jet": "nominal_numeric",
+    "original port price effect I plus4p³ realDelta": "nominal_numeric",
+    "original port price effect full jet": "nominal_numeric",
+    "original real reflection rank32 isometry": "nominal_numeric",
+    "seven actual Golden birth-frame factors orthogonal": "nominal_numeric"
+  },
+  "checks": [
+    "original constructor SHA256 pin",
+    "original constructor Git blob pin",
+    "only six pinned definitions extracted; no historical suite",
+    "exactly one original native call",
+    "all128 original K and dK slots",
+    "all64 original SELECT rows and jets",
+    "every original operator and jet entry is finite",
+    "original blank SELECT row is Hermitian",
+    "original SELECT row coisometry",
+    "original SELECT column isometry",
+    "original SELECT coisometry jet",
+    "original real reflection rank32 isometry",
+    "original full-reflection tangent constraint",
+    "complete real prepared carrier is 4096 by32",
+    "ALL128 computational record posterior blocks",
+    "ALL128 computational record posterior jets",
+    "complete realified instrument isometry",
+    "complete realified instrument isometry jet",
+    "original implicit reflection full-carrier probe",
+    "original implicit reflection orthogonality jet",
+    "EXACT original real reflection determinant is positive",
+    "exact duplicated-Walsh structural zero-slot count",
+    "every structural zero slot and its jet retained exactly",
+    "every other original slot nonzero on this fixture",
+    "faithful fixture density normalized",
+    "independent preparation jet trace zero",
+    "faithful complex fixture input",
+    "faithful normalized real fixture input",
+    "ALL128 original computational effects",
+    "ALL128 original computational effect jets",
+    "ALL128 posterior DATA realification with normalized density",
+    "ALL128 posterior DATA jets include preparation",
+    "original port price effect I plus4p³ realDelta",
+    "original port price effect full jet",
+    "actual charge source includes independent preparation",
+    "complete complex output mass",
+    "complete real output mass",
+    "complete complex output mass jet",
+    "complete real output mass jet",
+    "fixture input is not silently a stationary DATA section",
+    "seven actual Golden birth-frame factors orthogonal",
+    "one-sided birth frame sends actual Jv to J0",
+    "Usharp Jv equals original complete V_R",
+    "Usharp Jv jet equals original complete dV_R",
+    "actual born-frame prepared target isometry",
+    "NEGATIVE two-sided born conjugation changes original record cost",
+    "ALL128 unnormalized block entropy shifts",
+    "faithful input realification entropy shift ln2",
+    "complete CQ output realification entropy shift ln2",
+    "actual complete CQ gain has no realification shift",
+    "NEGATIVE absolute CQ entropy does retain ln2",
+    "actual cost-marked Phi operator formula",
+    "actual cost-marked Phi full input/gate jet",
+    "actual Golden-mark absolute normalizer",
+    "EXACT Golden total Kraus recycling coefficient",
+    "EXACT total fine effect is identity",
+    "EXACT paid cost effect is I plus 4p³ Delta",
+    "EXACT marked-map recycling coefficient",
+    "EXACT marked adjoint identity effect",
+    "EXACT Golden-mark one-round normalizer coefficient",
+    "EXACT isometry cost-effect error coefficient 2 norm(C)=4",
+    "EXACT duplicated-halved eigenvalue entropy shift",
+    "EXACT complete CQ gain shift cancels at equal total mass",
+    "EXACT moving-preparation CQ gain jet shift cancels",
+    "EXACT retained-purifier versus mixed-DATA gain difference"
+  ],
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "fixture": {
+    "dense_4096_completion_allocated": false,
+    "input": "specified faithful nonstationary density; not a native stationary preparation",
+    "nu": "3/5",
+    "phases": [
+      "i",
+      "i",
+      "-1",
+      "-i"
+    ],
+    "real_prepared_shape": [
+      4096,
+      32
+    ],
+    "record_slots": 128,
+    "structural_zero_slots": 64,
+    "theta": "log(2)"
+  },
+  "max_residual": "9.7699626167013776e-15",
+  "owner": {
+    "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+    "native_calls": 1,
+    "old_suite_executed": false,
+    "original_SELECT_rows_captured_without_reexecution": true,
+    "path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+    "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9"
+  },
+  "preserved_boundaries": [
+    "full128 posterior maps and all record effects",
+    "one-sided actual born frame; no free rotated readout",
+    "independent preparation source",
+    "absolute entropy shift versus gain cancellation",
+    "original cost marker normalizer",
+    "no physical compiled word, Gibbs preparation, full Info selection, or GR closure"
+  ],
+  "residuals": {
+    "ALL128 computational record posterior blocks": "1.3877787807814457e-17",
+    "ALL128 computational record posterior jets": "6.9388939039072284e-18",
+    "ALL128 original computational effect jets": "1.3010426069826053e-18",
+    "ALL128 original computational effects": "3.4694469519536142e-18",
+    "ALL128 posterior DATA jets include preparation": "5.4210108624275222e-20",
+    "ALL128 posterior DATA realification with normalized density": "6.9388939039072284e-18",
+    "ALL128 unnormalized block entropy shifts": "4.4408920985006262e-16",
+    "Usharp Jv equals original complete V_R": "2.4424906541753444e-15",
+    "Usharp Jv jet equals original complete dV_R": "9.0205620750793969e-17",
+    "actual Golden-mark absolute normalizer": "5.5511151250183231e-16",
+    "actual born-frame prepared target isometry": "4.8849813083506888e-15",
+    "actual charge source includes independent preparation": "1.7347234759768071e-18",
+    "actual complete CQ gain has no realification shift": "4.4408920985006262e-16",
+    "actual cost-marked Phi full input/gate jet": "6.0715326275867459e-18",
+    "actual cost-marked Phi operator formula": "2.0816681713511339e-16",
+    "complete CQ output realification entropy shift ln2": "5.5511151231257827e-16",
+    "complete complex output mass": "7.7715611758669177e-16",
+    "complete complex output mass jet": "3.9980808933732648e-18",
+    "complete real output mass": "7.7715611723760958e-16",
+    "complete real output mass jet": "5.3464719630691437e-18",
+    "complete realified instrument isometry": "9.7699626167013776e-15",
+    "complete realified instrument isometry jet": "1.0842021724855044e-17",
+    "faithful fixture density normalized": "0.0000000000000000e+00",
+    "faithful input realification entropy shift ln2": "1.1102230246251565e-16",
+    "independent preparation jet trace zero": "0.0000000000000000e+00",
+    "one-sided birth frame sends actual Jv to J0": "2.4424906541753444e-15",
+    "original SELECT coisometry jet": "3.9031278209478160e-17",
+    "original SELECT column isometry": "8.8817841970012523e-16",
+    "original SELECT row coisometry": "8.8817841970012523e-16",
+    "original blank SELECT row is Hermitian": "0.0000000000000000e+00",
+    "original full-reflection tangent constraint": "7.7697551635437557e-17",
+    "original implicit reflection full-carrier probe": "6.1582683397176652e-17",
+    "original implicit reflection orthogonality jet": "9.5409791178724390e-18",
+    "original port price effect I plus4p³ realDelta": "1.5543122344752192e-15",
+    "original port price effect full jet": "5.6378512969246231e-18",
+    "original real reflection rank32 isometry": "4.8849813083506888e-15",
+    "seven actual Golden birth-frame factors orthogonal": "2.4424906541753444e-15"
+  },
+  "scope": "nominal bounded full128 real target, original completion, charge and CQ-gain transport; no compiled word or Info selection",
+  "tolerances_nominal_not_intervals": {
+    "entropy": 3e-12,
+    "jet": 3e-10,
+    "matrix": 3e-11
+  },
+  "values": {
+    "charge_source": "8.4686674750000107e-04",
+    "complex_CQ_gain": "1.3793452646353899e-01",
+    "real_CQ_gain": "1.3793452646353943e-01",
+    "wrong_two_sided_record_cost_gap": "3.7083050788293420e-01"
+  }
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

@@ -21562,3 +21562,77 @@ Status: exact scoped obstruction to this parent substitution, with the
 stationary alternatives stated. Contract C and physical acceptance of
 B/D remain open; `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` unproposed,
 `scientific_promotion=false`, `GR_closed=false`; goal active.
+
+## 2026-11-05 checkpoint: original full128 to one native recorded programme
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `201ee52c792b7c1f3819224358c3d289756172c0`.
+Result location: §7fh of the existing full-source primary artifact.
+Write paths remain that artifact and this brief; no new scientific
+execution, task, branch, Ready/retirement, merge or claims promotion.
+
+Exact parent substitution: contract C's full128/native-word operator
+map, retaining the complete record instrument and its actual matrix
+charge rather than the shared scalar return obstructed by §7fg.
+Inputs: original 64 SELECT rows, literal full reflection §7cx(861),
+all128 causal/record owner, GH/RAW all-column compiler, original stopped
+CQ source, same-history price composition and full-record even algebra.
+
+For the original isometry L the ENTIRE operator is `U=I-2LL*`, including
+every column. Realification gives SO(4096). Actual Golden-born record
+inputs require the one-sided target `U_sharp=R(U) B_rec^T`; it maps
+`J_v` to the original prepared isometry and preserves the computational
+PVM, every one of the 128 labels and conditional DATA states. No free
+inverse, rotated readout, unknown protected-input conversion, or
+identification of a four-dimensional fullStep with full128 is used.
+The same construction applies at each fixed original periodic mesh,
+with d=16L^4 and real target dimension256d, retaining original hypotheses.
+
+The original port charge transports as the MATRIX effect
+`F_c=I+4p^3 Lambda`, with its full input/field derivative. Its exact
+cost-marked map retains actual recycling and absolute normalizer.
+All-column compiler error delta gives complete-instrument diamond
+error <=2delta and port-effect error <=4delta. Fixed-cap sequential
+composition retains all controller, abort and post-state branches.
+Its actual native clock and additional charges remain to be computed.
+
+Carrier/norm/source convention: all-input operator norm, joint
+instrument trace norm, same original computational record projection,
+live phase bit, actual helper/reference factors and full scored
+input/output CQ carrier. Positive consumer gain Gamma and every
+material/basis lift stay explicit. NT10--11 give the finite-source
+budget for the COMPLETE SPECIFIED capped CQ price, including both
+input and output entropy moduli; no lower probability cutoff or
+unproved entropy Hessian is used. Compiled word indices have no
+assumed differential calculus.
+
+Preparation/admission boundary: normalized realification adds ln2 to
+both full CQ output and input entropies, so their declared gain agrees.
+The actual supplied/generated input must still realize that state.
+Canonical pure birth, faithful stationary DATA, and retained purification
+are different interfaces. The retained-purifier price correction is
+`-chi_T/ln(phi)` with its actual derivative. Transport of the original
+finite-cylinder/even test algebra does not prove that RAW old_right
+metadata exhausts all future readers or select physical Book03 Info.
+
+Smallest decisive verification: one pinned original native constructor
+call, 65 explicit checks separated into nominal numerical, exact
+symbolic/structural and provenance classes. All128 blocks, posterior
+jets, independent preparation, original marked price and CQ gain are
+tested. A wrong two-sided birth-frame conjugation changes the declared
+cost effect by about0.37083. Normal and optimized warnings-as-errors
+receipts agree exactly. The numerical residuals are not interval
+certificates; no large native word is printed or physically executed.
+
+Remaining application: bind actual N_j(Y), preparation, stopping,
+retained tests, clock/work/terminal charges and full Cost--Info on ONE
+admitted history; then reduce all genuine nuisance equations and compare
+its full covector with the owned kappa/Einstein source in NT11's norm.
+The component map removes an operator-type gap, not this complete
+physical-price obligation. Three bounded reviews pin the analytic text;
+affected integration checks run on final inserted inputs.
+
+Status: concrete conditional operator/finite-price source transport.
+Contract C and independent B/D physical acceptance remain open;
+`SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` remains unproposed,
+`scientific_promotion=false`, `GR_closed=false`; goal active.
