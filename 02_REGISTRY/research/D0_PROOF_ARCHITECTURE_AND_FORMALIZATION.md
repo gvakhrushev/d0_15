@@ -15604,3 +15604,47 @@ source review checked the finite mapping and prompted the no-coverage
 correction above. This review does not accept full C0 membership, Book01
 overlap decisions, semantic coverage or physical admission. Those obligations
 remain explicit, and the programme remains in progress.
+
+## Actual return-product and price error composition — 4 November 2026
+
+This increment formalizes the finite comparison in equations (10)–(12) of
+the existing [task-faithful source proof](sources/d0_task_faithful_source_2026-10-28/PROOF_RU.md#5).
+The owner remains #334, commit `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`,
+blob `c99e90a8c8e96bae70e700fa88d1c2d824a1831b`, SHA-256
+`9f2354817860f9024a597dba4bd14c0580cc021de5c473925740b46b0e8f96e5`.
+The tracked proof bytes match that pin. It consumes the previously compiled
+full-input effect/compression bound; it introduces no new scientific execution.
+
+The shared Analysis modules separate ordered operator products, Hilbert-space
+Gram order, positive-matrix logdet monotonicity, exact spectral price/gain
+identities and the scalar comparison estimate. Three Research consumers bind
+those results to the existing `taskReturnCompression` and actual return words:
+
+| Compiled consumer | Exact mathematical conclusion and retained inputs |
+| --- | --- |
+| `taskReturnProduct_history_sq_bounds` | From the same isometric preparations, exact scalar reference corners, full-input effect errors and `δⱼ=2εⱼ/cⱼ<1`, derive the `exp(±2η) T` squared-norm bounds after an arbitrary common history `K`. Order and repeated blocks are retained; no commutation or inverse of `K` is required. |
+| `taskReturnProduct_price_bound` | The actual product's Gram inequalities give `abs(Jhat-J) ≤ (exp(2η)-1) w(T)` for `0≤z<1`. The gain is the real resolvent trace of the same `zT K†K`; no endpoint-price or Gram-sandwich premise is inserted. |
+| `taskReturnProduct_price_contrast_bound` | Derive both endpoint errors, bind their exact scales by `Tₖ=qₖT₀`, and obtain equation (12) with one common `K`, explicit `ηₖ≤η`, `qₖ≤exp θ`, positive baseline gain, `t≠0` and `Λ>0`. Endpoint words may differ. |
+
+The full matrix price is `-log(det.re)` on a proved positive pencil. Its exact
+spectral sum and real trace-resolvent identity are compiled; a separate
+functional-calculus identity for the trace of a matrix logarithm is not claimed.
+Singular or zero history is allowed for the unnormalized bound. Positive gain
+excludes the zero case in the normalized contrast. `T₀` is an explicit positive
+baseline scale, not a newly constructed physical central execution. The common
+upper budgets generalize the source's maximum/log-displacement choices.
+
+Narrow builds passed for the generic and actual consumers. Independent source
+review checked the actual map/basis/scale/gain bindings, noncommuting order,
+singular cases and absence of assumed endpoint errors. Public imports are
+generated from the existing `formal_support.csv`; no claim or application
+acceptance is added. Final full-build and declaration evidence is recorded in
+the companion [checkpoint report](sources/d0_proof_architecture_formalization_2026-10-24/reports/return_product_price_2026-11-04/SUMMARY_RU.md).
+
+This does not formalize all of source §5: the uniform-template compiler-budget
+corollary, explicit logarithmic derivative/gain-ratio lemmas and literal
+minimum-singular-value notation remain separate work. The vector bounds
+already supply the operator comparison used here. Value tolerance is not a
+derivative bound. Heat, measurement and independent preparation/source errors
+remain their own contributions. C0 membership/acceptance and the rest of the
+formalization/refactoring programme remain open; `GR_closed=false`.

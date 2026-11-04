@@ -30,8 +30,11 @@ import D0.Algebra.SedenionClifford8
 import D0.Algebra.SedenionTower
 import D0.Algebra.Sedenions
 import D0.Analysis.DirectFeedbackRowDerivative
+import D0.Analysis.GramMatrixOrder
 import D0.Analysis.MatrixDeterminantDerivative
 import D0.Analysis.MatrixMovingHeatFeedback
+import D0.Analysis.MatrixRelativeLogDetBound
+import D0.Analysis.MatrixRelativeLogDetContrast
 import D0.Analysis.MatrixThermalDensityBridge
 import D0.Analysis.MatrixThermalTrace
 import D0.Analysis.MatrixTraceExponentialDerivative
@@ -40,6 +43,9 @@ import D0.Analysis.MovingCutQueryDerivativeAdapter
 import D0.Analysis.MovingProjectorBookPrice
 import D0.Analysis.MovingProjectorBookPriceDensityBridge
 import D0.Analysis.MovingProjectorVariableParameters
+import D0.Analysis.NoncommutingPerturbationProduct
+import D0.Analysis.PositiveMatrixLogDet
+import D0.Analysis.RelativeLogDetScaleBound
 import D0.Born
 import D0.Bridge.AdlerWeissBridge
 import D0.Bridge.Assumptions.BellissardGapLabel
@@ -688,6 +694,9 @@ import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
 import D0.Research.TaskFaithfulReporterEffect
 import D0.Research.TaskFaithfulReturnBound
+import D0.Research.TaskFaithfulReturnContrast
+import D0.Research.TaskFaithfulReturnPrice
+import D0.Research.TaskFaithfulReturnProduct
 import D0.SelfReading.PrimitiveMinimalityFromRawFunctor
 import D0.SelfReading.RawCanonicalSelfReadingFunctor
 import D0.SelfReading.RawHistoryCategory
