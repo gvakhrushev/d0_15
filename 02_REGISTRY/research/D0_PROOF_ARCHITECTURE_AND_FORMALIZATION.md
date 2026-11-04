@@ -17293,3 +17293,14 @@ local effect/statistics families; neither supplies physical admission or the
 complete physical source. Independent review and the narrow/full builds,
 including their cached-build boundary and warnings, are pinned in the
 [repeated-reporter integration receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/repeated_reporter_transfer_c666_2026-11-04/SUMMARY_RU.md).
+
+### Independent source review: common image and represented run
+
+Book02 §02.3b bytes `[13647,14273)` were independently compared with the
+common-sector profile equivalence, empirical image and verified represented-run
+bridge. The reviewed bridge requires supplied `Interpretation` and
+`TheoryVerification`; it equates classes and does not establish all-native
+coverage or physical execution. The represented-state compatibility lemma is
+an important supporting declaration not separately listed by the current
+candidate atomization. The [focused review and checked declarations](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_023b_image_transport_review_2026-11-04/SUMMARY_RU.md)
+do not accept the complete C0 partition.

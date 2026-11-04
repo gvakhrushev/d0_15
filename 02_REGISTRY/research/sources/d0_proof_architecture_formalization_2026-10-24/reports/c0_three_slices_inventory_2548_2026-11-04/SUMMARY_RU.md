@@ -7,3 +7,5 @@
 ```sh
 python3 tools/lean_declaration_inventory.py --module D0.Foundation.FutureExecution --module D0.Foundation.VerificationCore --module D0.Foundation.UncoupledCenterRawWitness --module D0.Foundation.FutureShortlexAdapter --module D0.Foundation.VerifiabilityNecessity --module D0.Foundation.TheoryTransfer --output /tmp/d0-c0-three-slices-inventory-254890361.json
 ```
+
+На чистом `e4cfb339dbb6ef3362cbb5f18518daf6eab83b0c` три сверки вернули 6, 44 и 30 кандидатов соответственно, без технических замечаний. Они проверяют заявленные compiled metadata и сами Lean не пересобирают.
