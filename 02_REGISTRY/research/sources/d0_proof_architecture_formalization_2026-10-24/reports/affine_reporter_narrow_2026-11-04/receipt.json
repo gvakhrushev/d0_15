@@ -11,5 +11,7 @@
   "axioms_log_sha256": "5def12a373cbc5927022dd695579f24a1a96533453eade0dc22968bd7b30f92d",
   "independent_review": "Conditional source and API reviewed; nonradial and physical admission remain open.",
   "full_build": "pending after integration",
-  "GR_closed": false
+  "GR_closed": false,
+  "narrow_log_path": "narrow.log.gz",
+  "narrow_log_gzip_sha256": "b71bc56b26952ae4b11c868103d9d028d800a1383cb4544e12c0b994d898970f"
 }
