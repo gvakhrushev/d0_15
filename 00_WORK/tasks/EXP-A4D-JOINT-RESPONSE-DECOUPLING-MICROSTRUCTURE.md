@@ -21154,3 +21154,77 @@ is claimed to have been numerically emitted. Independent bounded reviews
 checked the compact-domain, true time derivative, readout and price maps.
 Affected structural guards run once on final inputs. No registry or claim
 promotion, Ready, retirement or merge. GR_closed=false; goal remains active.
+
+## 4 November 2026 — original-reader comparison replaces the thermal recipe
+
+Phase: native realization / final composition in existing #334, same two
+write paths. Input: 991eb3140ec36cfaa2cd7c52311a39517becaa50.
+Added research section: “Original-reader closed comparison: the full
+growing clock supplies the Einstein source” (SR1–SR11).
+
+Exact parent substitution: RO's separately prescribed I_h-to-arccos thermal
+operation is replaced by the ORIGINAL complete report reflection W=D*ZD
+and its genuine canonical born-input projector P_b. Use the paid body
+V=[W(I−2P_b)] tensor I_last. Its shortest growing-clock trace is
+L*d_old*(Tr Z−2+4Q), where Q is the actual original prepared-bank report.
+No scalar action or Einstein equation is evaluated to pick a terminal angle.
+
+The fixed input reflection is the sign lift of the existing reversible
+Boolean-cylinder preparation/registration constructor, transported through
+the canonical birth basis. It is computed from retained birth data and is
+compiled on the enlarged carrier AFTER the last spectator is born. Full
+marks become M_j(I−2P_b), not unchanged operators on uninitialized columns;
+their original initialized observations differ only by a common phase.
+All helpers, gates, decoder transport and errors remain paid.
+
+Shortest-cycle coefficient extraction works for arbitrary mixing of birth
+layers. The full source has error O(A_h/(g_h L)) from longer current ages,
+plus the unchanged SOURCE, compiler and full old-row budgets. A_h is the
+whole operator derivative, not the small report derivative. The true gain is
+Gamma_actual=16*d_old*g_h*L*a_L/(beta*Z_actual), with all 425D modes and the
+target/native normalizer ratio retained. A literal prepared-bank compression
+cannot be identified with a full last-bit trace; the fixed second reflection
+is precisely what supplies the missing map.
+
+FN solves the current implementation normals off shell through the actual
+complete-operation graph. CT's compiler-first/retention-second schedule
+controls the full feedback, old source and finite-comparison rows. The
+extra source term (D_z M)*D_E b is zero for the stated old-spectator target
+at fixed descriptor; it is explicitly retained for any extension that
+actually re-reads independently varied old data.
+
+The resulting source feeds GENERAL's material map, Ward equations and
+sampling theorem directly. Soundness and recovery now hold for any computable
+regular Einstein–two-CAR solution in the declared chart, with all16+24+2
+rows, true measure and distinct PF density, actual physical right lift and
+one accumulating history. The earlier nonzero-matter witness is consumed.
+No new geometric root or special involution centre is needed.
+
+Remaining scope: the retained task compares the original complete reader
+with its actual input reference. Necessity of this next comparison from a
+weaker history is not inferred merely from its computability. The additional
+field-dependent thermal recipe has been removed, but no universal scheduler,
+exact joint-critical finite native word, unrelated HJR/Cost−Info transport
+or public/assembly closure is claimed. The price is exactly RAW R6/Book03
+§03.25 on this same actual word and generated cut.
+
+Smallest decisive validation: one exact native Born/two-reflection/shortest-
+clock check with an omitted-reference hostile control, embedded in the
+primary artifact with pinned inputs. Independent analytical reviews checked
+the full source/gain, prepared-input versus full-column distinction, marked
+operator transport and retained-input constructor. Reuse unchanged CT/FN/
+SOURCE/GENERAL proofs; no heavy or Lean replay and no lifecycle promotion.
+
+Final integration: the extracted SR checker passed 59 exact checks in
+normal and optimized Python with warnings as errors, with byte-identical
+receipt `30a5c02c586b1d2d6fdd514a640ab2a996084a0025706fa8c5476055cda6cecc`.
+Work/protocol/assembly guards and diff whitespace validation passed;
+scientific promotion remains false. The bounded independent read
+corrections are integrated; this does not constitute registered physical
+acceptance or retire the parent task.
+
+Concurrent integration preserves all 7ey–7fc updates through `05cc38dc6283f45995a4c86fb69067c87734bb4c`.
+SR supplies the complete phase-sensitive task relation required by EY/EZ;
+EOQ exact finite roots retain their separate profile, PQ retains full
+contextual price equality, and RC's material clock applies on its original
+collar with every added reader paid and its genuine old-data rows kept.

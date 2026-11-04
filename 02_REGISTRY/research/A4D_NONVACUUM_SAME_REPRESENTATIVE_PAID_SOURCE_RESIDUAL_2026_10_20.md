@@ -154108,3 +154108,660 @@ validate_work, validate_agent_protocol and gr_assembly check pass; the
 assembly remains 98 results / 22 obligations / 5 discharged with
 scientific_promotion=false. No unchanged heavy mathematical or Lean suite
 was replayed. Only the existing primary artifact and task brief changed.
+
+## Original-reader closed comparison: the full growing clock supplies the Einstein source
+
+4 November 2026. Existing #334; native realization / final composition.
+Input: `991eb3140ec36cfaa2cd7c52311a39517becaa50`.
+
+The new parent substitution removes RO10's separately prescribed thermal
+operation. The source is obtained from the ORIGINAL complete reader and a
+fixed comparison with its canonical input. No geometric action or Einstein
+residual is evaluated to choose a terminal phase. The same FN/CT/GENERAL
+composition then gives general regular Einstein–CAR kappa soundness/recovery.
+Native selection of a comparison task and broader physical closure retain
+the exact boundaries below. No action term or Info convention is changed.
+
+### 1. The shortest-cycle formula does not require invariant birth layers
+
+Use GROWING_CLOCK_RU.md G1--G6 and RAW_SPECTRAL_SUFFIX_STATIONARITY.md
+ST1--ST3, with their actual stage indexing. Write ell_j=N-j and
+
+    det(I-xi T)=det(I-K(xi)),
+    K(xi)=sum_j xi^ell_j U_j Pi_j.
+
+After the last canonical birth, execute L actual square stages including
+the closing gate, with no further birth. Its detail projection is P_t;
+the suffix is the entire current body V. All other nonzero layers have
+age at least L+1. Therefore
+
+    K(xi)=xi^L V P_t+O(xi^(L+1)).
+
+The formal identities logdet(I-xi T)=-sum_r xi^r Tr(T^r)/r and
+logdet(I-K)=-sum_m Tr(K^m)/m prove exactly
+
+    Tr T^r=0 (r<L),
+    Tr T^L=L Tr(P_t V).                              (SR1)
+
+This holds for an arbitrary body V, including one mixing every birth
+layer. No product-of-independent-age-cycles factorization is needed.
+Two-wrap terms start at 2L. All one-wrap older-age terms start at L+1.
+
+### 2. The literal source-bank reflection needs a fixed second reflection
+
+It is NOT correct to identify the last-bit block with the initialized
+source-bank effect. The last-bit projection has identity on every earlier
+WORK column. In the literal report W=R_load* T_report* Z_port T_report R_load,
+R_load acts on the earlier bank and commutes with that projection. Thus
+its compressed full trace can lose the entire loader dependence.
+
+The following exact repair uses the original reflection and only its
+already fixed canonical born-input projector, not a scalar action encoder.
+
+Let B be the whole fresh current WORK on which the original report acts.
+Its canonical input is b=v^tensor q, with v=(sqrt(p),p). Let
+
+    P_b=|b><b|,  R_b=I_B-2P_b,
+    W(Y)=D(Y)* Z_port D(Y),
+    Q(Y)=<b|D(Y)* Pi_port,1 D(Y)|b>.
+
+All unknown old columns are protected spectators, so these operators are
+tensored with I_old. W is the ORIGINAL full-column report reflection;
+Tr W=Tr Z_port is constant and <b|W|b>=1-2Q.
+
+Birth one last spectator t after every bank/helper bit. The body target is
+
+    V(Y)=[W(Y) R_b] tensor I_t.                       (SR2)
+
+Both factors are orthogonal on the real-history realization. The tensor
+I_t gives det V=(det(W R_b))^2=1, so the owned positive-G/CX SO compiler
+applies on the actual current WORK. The last t is born BEFORE compiling
+R_b tensor I_t itself: R_b alone has determinant -1 and is not silently
+compiled on B before that extension. All segments use the enlarged carrier.
+R_b depends only on canonical births,
+not Y, I_h, or an Einstein equation. It is a paid fixed operation.
+
+The last detail is P_t=I_old tensor I_B tensor |w_t><w_t|. Consequently
+
+    Tr(P_t V)
+       =d_old[Tr W-2<b|W|b>]
+       =d_old[Tr Z_port-2+4Q(Y)],
+    D Tr(P_t V)=4 d_old DQ(Y).                        (SR3)
+
+If R_b is executed first, it sends the initialized current WORK to -b.
+The subsequent original geometry/bank experiment has precisely the same
+initialized physical state and effects, with one common phase. All original
+registered marks are transported as M_j R_b (tensor I_t), at their paid
+actual addresses. These are exact full-operator precompositions by the
+known input reflection; they are NOT the unchanged original M_j on
+uninitialized columns. Their actual native errors and decoder map remain
+in the FN task. Realification adds no extra factor to Q.
+
+For independently varied forward/back legs, W is a reflection on the
+matched graph, not throughout their free product. At such a centre, however,
+Re Tr(delta W)=0 for EVERY unitary tangent: delta W=W X with X skew and
+W Hermitian. Hence the complete FIRST-source identity has no missing trace
+term. Genuine changes of the required comparison retain their FN normal
+reactions; their raw source is not declared zero.
+
+The proper current cold corner is -(1-2Q). It need not be field constant:
+the original K-prefix attenuation controls its full feedback source.
+
+This is a two-reflection trace identity. It never computes acos(I_h/(2M))
+or assigns a new geometric action to a terminal rotation.
+
+### 3. Uniform full-source remainder
+
+Keep CT8's ENTIRE original heat, including all 425D modes:
+
+    Z=359D+2D a_0+4 sum_(r>=1) a_r Re Tr T^r,
+    H=log Z/beta,
+    gamma_target=4 d_old L a_L/(beta Z_target).
+
+For an endpoint tangent delta V, moving all actual body letters to the
+endpoint by the already owned internal clock gauge is legitimate. This
+does not assert a smooth dependence of compiled native words on Y.
+
+    |D Tr T^r| <= r d_final ||delta V||,
+    d_final/d_old=2^(q+1).
+
+The unchanged CT7 adjacent-coefficient bound, with x=beta/22, gives
+
+    |DH/gamma_target - d_old^-1 D ReTr(P_t V)|
+       <=2^(q+1) e^x (x/L) ||delta V||.               (SR4)
+
+Thus for a smooth target family with ||D_Y V||<=A_h in the true physical
+test norm, the RHS is <=2^(q+1)e^x x A_h/L. The constant A_h includes
+the actual full bank/geometry/observer/right-lift derivatives. It is not
+replaced by the derivative of the small scalar Q alone.
+
+If the SOURCE owner gives DQ=g_h DI_h+e_h with g_h>0 and
+||e_h||/g_h ->0, choose the target gain
+
+    Gamma_target=4 g_h gamma_target.
+
+Then
+
+    ||DH/Gamma_target-DI_h||
+       <= ||e_h||/g_h
+          +2^(q+1)e^x x A_h/(4g_h L).                (SR5)
+
+SR4--SR5 are analytic TARGET-source identities; Z_target is the complete
+heat of that smooth finite-matrix target. For actual compiled comparisons
+use Gamma_actual=16 d_old g_h L a_L/(beta Z_actual). CT controls the true
+ratio Z_actual/Z_target before source comparison. This is DB/Gamma, never
+D(B/Gamma), and neither normalizer is replaced by a truncated trace.
+For the original SOURCE_PROOF_RU.md (1)--(4), g_h=epsilon_h r_f and
+the original material coefficient is lambda=-r_q/r_f. If a later
+seven-call calibrated report is used, its own g_h must replace this one;
+no gain from a different report can be borrowed.
+
+### 4. Compiler, all old rows, and feedback
+
+CT10--CT11 require only the minimum loop length L, not invariant detail.
+Hence endpoint error delta gives normalized finite-price error O_h(delta),
+first-source error O_h(L delta), and finite-contrast error O_h(delta/t).
+After the geometric normalization these bounds include the displayed
+factor 1/(4g_h), plus every true basis/lift constant.
+
+An old gate before the q+1 current births affects only suffixes born no
+later than that gate. Therefore D_old K has valuation >=L+q+1, even when
+V mixes all ages. Multiplication by (I-K)^-1 cannot decrease valuation:
+
+    D_old Tr T^r=0 for r<L+q+1.                       (SR6)
+
+CT17's conservative old-row bound O_h(N(x/L)^q) remains valid. A direct
+tail estimate actually retains exponent q+1 before the coarse CT bound.
+No old row is declared zero above its first possible winding.
+
+The body remains identity on the sealed K factor and oldRIGHT. Its cold
+return is a^K c_actual C_< with |c_actual|<=1, so CT18--CT19 and the
+proper original input rank apply unchanged, whether or not V preserves
+the born current ray. The complete feedback-source bound is O(N a^K).
+
+At each fixed h/prefix, first compile the full marked original experiment
+and fixed R_b factor at accuracy delta, obtaining the actual q and L;
+then choose K using the positive lower bound for Gamma_actual. The new
+O_h(1/L) term tends to zero, while the former CT schedule controls old
+heat, feedback and compilation. All constants are at fixed h; the outer
+kappa diagonal chooses the next precision after seeing those constants.
+
+### 5. Current implementation normals and conclusion
+
+Unlike the old CT involution-centre lemma, arbitrary current gate and
+preparation rows need not vanish. They must be solved by the SAME FN
+complete-operation task and its derived constraint reactions. The task
+records the original geometric/report operation plus the fixed canonical
+input reflection R_b; no I_h value or Einstein equation is an admission
+test. Every original independent field coordinate remains free.
+
+On that declared task, SR1--SR6 replace RO's separate scalar trace recipe
+by a source extracted from the original prepared-bank report itself.
+They supply a full regular kappa-source transport, subject to the existing
+FN native-admission/complete-mark map and GENERAL consistency. They do
+not prove an exact stationary native word at each finite resolution,
+nor identify unrelated Cost--Info or spatial/full128 HJR prices.
+
+### 6. The reference operation is determined by the retained input predicate
+
+The input reflection has an existing operational constructor, not a new
+field-dependent control value. `A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md`
+§6.5, (31), gives the full reversible preparation/registration flag
+
+    W_P = [[P,I-P],[I-P,P]],  W_P*=W_P, W_P^2=I.
+
+On the minus flag character it acts as 2P-I=-R_P. For the literal
+zero-cylinder, this is the owned reversible Boolean registration map,
+bound to `FiniteProtocolClock.register`. On the actual canonical input,
+
+    b_q=v^tensor q,  B_q=G^tensor q,
+    P_b=B_q |0^q><0^q| B_q*,  R_b=I-2P_b.             (SR7)
+
+This identifies the predicate and its sign lift. All basis changes,
+flag/phase implementations and native approximation are paid on the
+actual enlarged carrier; the flag theorem alone is not an arbitrary
+projector actuator. Here the projector is completely known from births.
+On the full reader carrier E=D*Pi_port,1 D is itself a projector, and
+its same comparison flag gives 2E-I=-W. The two ordered phase-comparison
+calls therefore give EXACTLY (-W)(-R_b)=W R_b on the two minus-character
+blocks. The full flag operators have additional character sectors and
+are not identified globally with W R_b. No global minus sign is
+silently discarded from the heat. The native target compiles this whole
+operator; physical minus-flag preparation is not assumed free.
+The positive-G/CX compiler supplies its full matrix realization after
+the final spectator birth, including the fixed sign convention in SR2.
+For another canonical birth Jx=x tensor v,
+
+    R_(b,q+1) J=J R_(b,q).                            (SR8)
+
+Thus the reference is natural under the actual birth embedding and does
+not introduce an independently chosen reference state, visibility or
+thermal scalar. It is a fixed function of the retained initial predicate.
+
+The retained task now needs the original complete detector word, its
+report projector, the actual born input and its comparison with that
+input. These data determine SR2 before any Einstein solution or I_h value
+is known. The operator input D(Y), its original free fields and its true
+source norm are the SOURCE owner's objects. The full marked task uses
+the transported operators M_j R_b and their actual compiled tuple, so
+FN admission and reactions apply without identifying differently priced
+words merely because one prepared output agrees.
+
+This is a positive replacement of RO's separately prescribed
+I_h-to-thermal-angle operation. It is not a theorem that every weaker
+history must choose this comparison as its next experiment. Where that
+comparison task is not already retained, its physical selection remains
+a premise. No universal scheduler is required, and computability alone
+is not called necessity.
+
+### 7. Joint diagonal and the full general Einstein--CAR consumer
+
+At fixed h and retained prefix keep q>=3 fixed, with enough WORK for the
+original detector, and let A_h,A2_h bound its COMPLETE first and second
+operator derivatives on the finite regular comparison chart.
+Let B_h collect the actual marked-decoder, physical-lift and finite-basis
+constants. They are finite effective bounds on the regular chart.
+
+Choose target accuracy delta_r=exp(-r), comparison steps
+|t_r|=exp(-r/2), and a common real native layout L_r growing polynomially
+in r, with L_r>=r. Paid exact padding uses the owned zero-G 2/5 loops;
+there are no free identity ticks. Increase r until
+
+    B_h*2^(q+1)*e^x*x*A_h/(4*g_h*L_r) -> 0,
+    B_h*L_r*delta_r/g_h -> 0,
+    B_h*delta_r/(g_h*|t_r|) -> 0,
+    B_h*((L_r+1)*A_h^2+A2_h)*|t_r|/g_h -> 0.          (SR9)
+
+After this layout is fixed, choose the genuine retention K by CT21.
+It has the original O_h(L_r log L_r) bound and makes the complete feedback
+source small relative to Gamma_actual. The old thermal rows have bound
+O_h(B_h*(N_b+K+L_r)*(x/L_r)^q/g_h), which tends to zero for q>=3.
+Old saved finite comparisons retain CT23/CT25's literal supports,
+lengths and steps; a matrix derivative is not substituted for those
+comparisons. All generated-state adjoints and actual old-data rows remain.
+If CT25's paid comparison macros have length ell, use its true dimension
+and N<=N_b+K*ell+L, and choose L>=ell^2. Then N is at most
+O_h(L^(3/2)*log L); q>=3 still makes the displayed old tail vanish.
+Previously saved comparison words are not lengthened retrospectively.
+The all-occurrence compiler bound B_h*N*(L_r+1)*delta_r/g_h also tends
+to zero under this schedule. With independent old coordinates z, FN's
+remaining row is D_z b+(D_z M)^*D_E b. Here the current target is
+I_old tensor V(Y) at fixed retained descriptor, hence D_z M=0. If an
+extension actually re-reads or varies old data inside V, its displayed
+additional term must be bounded separately; sealing a tensor factor
+does not by itself remove that logical dependence.
+
+The target/native normalizer ratio and all original calibration errors
+are part of the same source budget. An outer h-diagonal, chosen after
+these constants are known, gives on the physical source space, with
+ell_actual denoting the UNNORMALIZED finite-price covector here,
+
+    ||ell_actual/Gamma_actual - D I_h||
+        <= C_h*epsilon_h + E_age,h + E_CT,h
+                             + E_marks,h -> 0.       (SR10)
+
+Each error here is in the original dual norm after its actual physical
+right lift; none is inferred from closeness of scalar heat values.
+The original I_h is read OFF SHELL from the fixed report via SOURCE
+(1)--(5): I_h=sum h^4(F+lambda Q), F=m f_mom, Q=m q_mom,
+lambda=-r_q/r_f. The coordinate measure occurs once. Its genuine measure
+row and the separate PF sampling-density remainder are retained.
+
+Now apply the existing GENERAL C1 consistency, its explicit material map
+ehat=sqrt(m/det e)*e, ghat=(m/det e)*g, its inverse/right lift, and its
+sampling theorem. The full joint limit is
+
+    D_omega ehat=0,
+    G(ghat)=-lambda T,
+    Box_ghat Psi_0=Box_ghat Psi_15=0,
+    T_mn=2 sum_A partial_m Psi_A partial_n Psi_A
+                   -ghat_mn sum_A |dPsi_A|_ghat^2.    (SR11)
+
+The declared collar, positivity gaps, C3 source bounds and C2 convergence
+are unchanged. Soundness covers all admitted regular on-shell limits.
+Recovery applies to ANY computable regular solution of SR11 in that chart:
+GENERAL supplies its finite samples and actual decoded centres; SR9--SR10
+control the full source, FN solves every current faithful implementation
+normal off shell, and CT24 appends the next real segment to ONE preserved
+history. The existing nonzero-matter example supplies nonemptiness.
+No new geometric root, null-only restriction or special involution centre
+is needed.
+
+The price binding remains exactly RAW R6/Book03 §03.25, with both Hodge
+degrees, all 425D heat modes and the proper generated degree-zero cut.
+This theorem changes the native realization of the source; it neither
+adds a Cost/Info term nor transports a different HJR carrier by its name.
+The original positive_gr finite-root and raw216 requirements remain
+distinct. The result is research for independent acceptance, not a public
+or assembly promotion.
+
+### 8. Smallest decisive check and provenance
+
+The one bounded exact check below tests the original native Born input,
+the actual full-column G/CX-derived detector reflection, its fixed input
+reflection and the shortest-cycle identity in a small genuine growing
+clock. The omitted-input-reflection control keeps the whole reflection
+trace constant despite changing the measured probability. This isolates
+the new operator map. It is not a new heat-spectrum, geometry or Lean
+replay; CT/FN/SOURCE/GENERAL are consumed with the stated maps and norms.
+
+
+Portable check: extract the following Python block verbatim and run with
+`--root <repository> --out <receipt.json>`. It reuses the SHA-pinned RO
+exact arithmetic block already embedded above and the unchanged native
+owner; the complete deterministic output is pinned by the receipt digest.
+
+<!-- SR-ORIGINAL-READER-CLOCK-CHECK:BEGIN -->
+```python
+#!/usr/bin/env python3
+"""Exact bounded original-reader/input-comparison and true-clock check.
+
+This checks finite targets and the G1--G6 clock, not an emitted exact native
+reflection, the full geometry, an asymptotic q>=3 estimate, or free ticks.
+Arithmetic is Q[a]/(a^4+a^2-1), from the unchanged embedded RO owner.
+"""
+from __future__ import annotations
+import argparse
+from fractions import Fraction
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import re
+import sys
+import types
+
+PRIMARY = "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+NATIVE = "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+CLOCK = "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md"
+RO_HASH = "28af31ce262cafd8fa3ebe2b93922248961e0441fc582663f25857cccc83f99a"
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--root", type=Path, default=Path.cwd())
+    parser.add_argument("--out", type=Path, required=True)
+    args = parser.parse_args()
+    root = args.root.resolve()
+    text = (root / PRIMARY).read_text(encoding="utf-8")
+    begin = "<!-- RO-NATIVE-GOLDEN-CHECK:BEGIN -->"
+    end = "<!-- RO-NATIVE-GOLDEN-CHECK:END -->"
+    section = text.split(begin, 1)[1].split(end, 1)[0]
+    match = re.search(r"```python\r?\n(.*?)```", section, re.S)
+    if match is None:
+        raise RuntimeError("Missing owned RO Python block")
+    code = match.group(1).replace("\r\n", "\n")
+    if sha(code.encode()) != RO_HASH:
+        raise RuntimeError("Owned RO exact arithmetic code hash changed")
+    ro = types.ModuleType("owned_ro_exact_arithmetic")
+    ro.__file__ = str(root / PRIMARY) + "#RO-NATIVE-GOLDEN-CHECK"
+    sys.modules[ro.__name__] = ro
+    exec(compile(code, ro.__file__, "exec"), ro.__dict__)
+    K, zero, one, a, p = ro.K, ro.Z, ro.ONE, ro.a, ro.p
+    eye, transpose, mul, scale = ro.eye, ro.transpose, ro.mul, ro.scale
+    add, kron, exact_gate, replay = ro.add, ro.kron, ro.exact_gate, ro.replay
+    v = ro.v
+
+    spec = importlib.util.spec_from_file_location("owned_native_for_input_clock", root / NATIVE)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("Cannot load native owner")
+    native = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = native
+    spec.loader.exec_module(native)
+    checks = []
+
+    def check(name, condition):
+        if not condition:
+            raise RuntimeError("FAIL: " + name)
+        checks.append(name)
+
+    def trace(matrix):
+        return sum((matrix[j][j] for j in range(len(matrix))), zero)
+
+    def sub(left, right):
+        return add(left, scale(-one, right))
+
+    def zeros(rows, cols):
+        return [[zero for _ in range(cols)] for _ in range(rows)]
+
+    def put(dst, block, row, col):
+        for i, values in enumerate(block):
+            for j, value in enumerate(values):
+                dst[row+i][col+j] += value
+
+    def column_inner(left, right):
+        return mul(transpose(left), right)[0][0]
+
+    def owner_word(word):
+        gates = tuple(native.Gate(op, tuple(wires)) for op, wires in word)
+        execution = native.Execution(qubits=2, blank_wires=(0, 1), old_right=(), gates=gates, profile=native.G_CX)
+        native.validate_execution(execution, max_qubits=2, max_expanded_stages=100)
+        actual = native.word_matrix(execution, max_qubits=2, max_expanded_stages=100)
+        result = zeros(4, 4)
+        for i in range(4):
+            for j in range(4):
+                coeff = list(reversed(native.GOLDEN_FIELD.from_sympy(actual[i, j]).to_list()))
+                result[i][j] = K([Fraction(int(x.numerator), int(x.denominator)) for x in coeff])
+        return result
+
+    check("golden defining polynomial", a**4 + a*a == one)
+    check("canonical birth normalized", column_inner(v, v) == one)
+    b = kron(v, v)
+    Pb = mul(b, transpose(b))
+    Rb = sub(eye(4), scale(K(2), Pb))
+    Zport = [[(one if i < 2 else -one) if i == j else zero for j in range(4)] for i in range(4)]
+    check("input reflection all columns", mul(Rb, Rb) == eye(4))
+    check("input reflection fixes born ray up to minus", mul(Rb, b) == scale(-one, b))
+    check("input reflection determinant minus one", ro.det(Rb) == -one)
+    Jbank = kron(eye(4), v)
+    b3 = kron(b, v)
+    Rb3 = sub(eye(8), scale(K(2), mul(b3, transpose(b3))))
+    check("input comparison natural under actual birth", mul(Rb3, Jbank) == mul(Jbank, Rb))
+
+    words = {
+        "identity": [],
+        "one_G": [("G", (0,))],
+        "G_CX_six": [("G", (0,)), ("CX", (0, 1)), ("G", (1,)),
+                     ("G", (0,)), ("CX", (1, 0)), ("G", (1,))],
+    }
+    wlast = [[-p], [a]]
+    Plast = kron(eye(4), mul(wlast, transpose(wlast)))
+    check("latest detail normalized and orthogonal", column_inner(wlast, wlast) == one and column_inner(v, wlast) == zero)
+    reader_rows = []
+    endpoints = {}
+    for name, word in words.items():
+        D = replay(2, word)
+        check(name + ": native all-column replay", D == owner_word(word))
+        check(name + ": orthogonal reader word", mul(transpose(D), D) == eye(4))
+        W = mul(mul(transpose(D), Zport), D)
+        Db = mul(D, b)
+        Q = sum((Db[i][0]**2 for i in range(2, 4)), zero)
+        V = kron(mul(W, Rb), eye(2))
+        Vbad = kron(W, eye(2))
+        expected = trace(Zport) - K(2) + K(4)*Q
+        check(name + ": reflection and full trace constant", mul(W, W) == eye(4) and transpose(W) == W and trace(W) == trace(Zport))
+        check(name + ": two-reflection compressed trace", trace(mul(Plast, V)) == expected)
+        check(name + ": omission hostile trace constant", trace(mul(Plast, Vbad)) == trace(Zport))
+        check(name + ": all initialized marks phase transport", mul(V, b3) == scale(-one, mul(Vbad, b3)))
+        check(name + ": full target SO", mul(transpose(V), V) == eye(8) and ro.det(V) == one)
+        endpoints[name] = V
+        reader_rows.append({"word": name, "native_calls": len(word), "Q": Q.encoded(),
+                            "full_trace_W": trace(W).encoded(), "latest_trace_WRb": expected.encoded()})
+    check("actual report probability nonconstant", reader_rows[0]["Q"] != reader_rows[1]["Q"])
+    check("two-reflection trace retains report variation", reader_rows[0]["latest_trace_WRb"] != reader_rows[1]["latest_trace_WRb"])
+
+    V = endpoints["G_CX_six"]
+    Vmix = mul(exact_gate(3, "G", (2,)), V)
+    check("age-mixing target is orthogonal", mul(transpose(Vmix), Vmix) == eye(8))
+    check("age-mixing target really mixes latest detail", mul(Plast, Vmix) != mul(Vmix, Plast))
+    check("mixed target does not inherit two-reflection source identity", trace(mul(Plast, Vmix)) != trace(mul(Plast, V)))
+
+    def true_clock(endpoint, L):
+        # THREE separate births, L-1 nonidentity native G stages, final target.
+        dims = [1, 2, 4] + [8]*L
+        nstage = len(dims)
+        passive = [kron(eye(1), v), kron(eye(2), v), kron(eye(4), v)]
+        steps = passive.copy()
+        prefix = eye(8)
+        intermediate = [exact_gate(3, "G", (0,))]
+        if L == 3:
+            intermediate.append(exact_gate(3, "G", (2,)))
+        for gate in intermediate:
+            if gate == eye(8):
+                raise RuntimeError("A purported literal body stage is identity")
+            steps.append(gate)
+            passive.append(eye(8))
+            prefix = mul(gate, prefix)
+        g = mul(endpoint, transpose(prefix))
+        if mul(g, prefix) != endpoint:
+            raise RuntimeError("Final ideal target did not give the stated endpoint")
+        offsets = []
+        total = 0
+        for dimension in dims:
+            offsets.append(total)
+            total += dimension
+        B = [None]*nstage
+        B[-1] = eye(8)
+        for j in range(nstage-2, -1, -1):
+            B[j] = mul(B[j+1], passive[j])
+        R = zeros(total, 8)
+        for j in range(nstage):
+            detail = eye(dims[j]) if j == 0 else sub(eye(dims[j]), mul(passive[j-1], transpose(passive[j-1])))
+            put(R, mul(detail, transpose(B[j])), offsets[j], 0)
+        T = zeros(total, total)
+        for j, gate in enumerate(steps):
+            put(T, gate, offsets[j+1], offsets[j])
+        put(T, mul(R, g), 0, offsets[-1])
+        return T, R, dims, g, prefix
+
+    clock_rows = []
+    for name, endpoint in [("WRb", V), ("age_mixing", Vmix)]:
+        for L in (2, 3):
+            T, R, dims, g, prefix = true_clock(endpoint, L)
+            label = name + ": L=" + str(L)
+            check(label + ": actual incidence isometry G4", mul(transpose(R), R) == eye(8))
+            check(label + ": true growing clock unitary G6", mul(transpose(T), T) == eye(len(T)))
+            check(label + ": actual final stage orthogonal", mul(transpose(g), g) == eye(8))
+            check(label + ": all body stages retained in endpoint", mul(g, prefix) == endpoint)
+            power = eye(len(T))
+            traces = []
+            for r in range(1, L+1):
+                power = mul(power, T)
+                tr = trace(power)
+                traces.append(tr.encoded())
+                if r < L:
+                    check(label + ": no shorter wrap r=" + str(r), tr == zero)
+                else:
+                    check(label + ": shortest wrap exact coefficient", tr == K(L)*trace(mul(Plast, endpoint)))
+            clock_rows.append({"target": name, "L": L, "stage_dimensions": dims,
+                               "clock_dimension": len(T), "trace_powers_1_to_L": traces,
+                               "latest_partial_trace": trace(mul(Plast, endpoint)).encoded()})
+
+    receipt = {
+        "schema": "original-reader-input-true-clock-exact-v1", "status": "PASS",
+        "field": "Q[a]/(a^4+a^2-1), a positive, p=a^2",
+        "arithmetic": "exact rational polynomial reduction; no floating tolerance",
+        "checks": len(checks), "check_names": checks,
+        "owners": [
+            {"path": PRIMARY, "block": "RO-NATIVE-GOLDEN-CHECK", "code_sha256": RO_HASH},
+            {"path": NATIVE, "sha256": sha((root / NATIVE).read_bytes())},
+            {"path": CLOCK, "sha256": sha((root / CLOCK).read_bytes())},
+        ],
+        "checker_sha256": sha(Path(__file__).read_bytes().replace(b"\r\n", b"\n")),
+        "reader_cases": reader_rows, "clock_cases": clock_rows,
+        "scope": [
+            "Original native G/CX D words checked on every column against unchanged native_execution.py.",
+            "Rb and final closing g are ideal full real targets; no emitted exact native reflection is asserted.",
+            "q=2 bounded clock fixture is not the asymptotic q>=3 source theorem or full geometry replay.",
+            "Three separate births and every nontrivial intermediate G stage are retained and counted.",
+            "Age mixing obeys shortest-wrap identity; invariant-age factorization is not assumed.",
+            "No free identity tick, measurement, record register, erased complement, or physical inverse is introduced.",
+        ],
+    }
+    args.out.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    print(json.dumps({"status": "PASS", "checks": len(checks), "output": str(args.out.resolve()),
+                      "receipt_sha256": sha(args.out.read_bytes())}))
+
+
+if __name__ == "__main__":
+    main()
+```
+<!-- SR-ORIGINAL-READER-CLOCK-CHECK:END -->
+
+```json
+{
+  "input_ref": "991eb3140ec36cfaa2cd7c52311a39517becaa50",
+  "input_primary_blob": "7c51f9638a91d70fc0465054cbab4a2bae1779e2",
+  "checker_sha256": "b785b3f595ea130e6d0b4dc85a8dd09f4b989f59a549dae5aa806d2fd8219048",
+  "receipt_sha256": "30a5c02c586b1d2d6fdd514a640ab2a996084a0025706fa8c5476055cda6cecc",
+  "source_owners": [
+    {
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "block": "RO-NATIVE-GOLDEN-CHECK",
+      "code_sha256": "28af31ce262cafd8fa3ebe2b93922248961e0441fc582663f25857cccc83f99a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md",
+      "sha256": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "sha256": "32442eac8d018cb764f6b47ee41f5fc7f1579e12f401491863ffc9d1162501bd"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md",
+      "sha256": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md",
+      "sha256": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1"
+    }
+  ],
+  "checks": 59,
+  "arithmetic": "exact rational polynomial reduction; no floating tolerance",
+  "normal_optimized_byte_identical": true,
+  "scope": [
+    "Original native G/CX D words checked on every column against unchanged native_execution.py.",
+    "Rb and final closing g are ideal full real targets; no emitted exact native reflection is asserted.",
+    "q=2 bounded clock fixture is not the asymptotic q>=3 source theorem or full geometry replay.",
+    "Three separate births and every nontrivial intermediate G stage are retained and counted.",
+    "Age mixing obeys shortest-wrap identity; invariant-age factorization is not assumed.",
+    "No free identity tick, measurement, record register, erased complement, or physical inverse is introduced."
+  ]
+}
+```
+
+Integration checkpoint (4 November 2026): the checker extracted from the
+final primary artifact passed all 59 exact checks under normal and
+optimized Python, both with warnings treated as errors; its two receipts
+are byte-identical and have the digest recorded above. `validate_work`,
+`validate_agent_protocol`, `gr_assembly check` and `git diff --check`
+passed on these final inputs. Assembly scientific promotion remains false.
+The bounded independent source read was incorporated: target/actual gains,
+minus-character block scope and the raw-price covector are explicit.
+This read is not a registered physical acceptance. No expensive geometry,
+heat-spectrum or Lean replay was required for the unchanged owners.
+
+Concurrent integration base: `05cc38dc6283f45995a4c86fb69067c87734bb4c`. The remote
+7ey–7fc results are preserved. SR supplies the specific linked operation
+that EY/EZ correctly require: complete phase-sensitive comparisons and
+all transported marks, not equality of probability effects alone.
+The two fixed minus-character choices belong to this comparison task;
+their availability does not make the task compulsory for weaker data.
+EOQ exact finite centres remain on their own native profile; no equality
+of EOQ/SR words, prices or finite zero sets is inferred. PQ contextual
+price equality applies to faithful complete-operation replacements.
+On RC's timelike CAR collar its existing material clock/readout map uses
+the same GENERAL metric and matter fields. A physically executed new
+reader is appended to the full paid prefix before the next SR checkpoint;
+its gain, source and any actual D_z M term must then be retained and
+re-estimated. The fixed-descriptor D_z M=0 case above is not extended to
+such a field-dependent old-data reader without that calculation.
