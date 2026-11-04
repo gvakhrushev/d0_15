@@ -16533,6 +16533,43 @@ The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/repor
 has content SHA-256 `36f93af1232f44914075982273edb8cde0ccc8184bf048528f29836099521de4`.
 This validates the formal build, not physical admission or C0 acceptance.
 
+### Radial scalar-corner application — 4 November 2026
+
+`D0.Research.TaskFaithfulRadialPriceDerivative` applies the fixed-history
+log-scale theorem by chain rule to a positive differentiable scalar `c`,
+showing the price derivative is `−2(c′/c)` times the gain for the same
+fixed PSD history. Its second theorem specializes that history to a fixed
+scaled Gram matrix `z other² Gram(K)` with `0≤z<1`; singular or zero history
+and zero gain are permitted. Direct Lean checking passed for blob
+`60fb259331ed1608150c6a861487d3cd88001ad9`, and independent review checked
+the sign and hypotheses against #334 source §4–§5.
+
+The `other` parameter is supplied: this module does not identify it with the
+product of actual remaining blocks, prove a real scalar compression path, or
+derive its variation from a reporter. The identification `c′=−2α` and the
+normalized source require separate hypotheses; zero gain does not define the
+normalized density. This is not the general operator variation, physical
+admission, preparation contribution or complete heat/clock/work price.
+
+### Shortlex existence from an assigned decoder — 4 November 2026
+
+Book01 §01.1.4 in source blob `eb2d8ea779189084cdaaca717326df88589ec918`
+has raw byte interval `[8822,9948)` with SHA-256
+`4eb14531aa42dc350e3863ac615ff7c3316d6012405e19e42d0656eca3764411`.
+`D0.Foundation.ShortlexCodeExistence` uses Mathlib's well-founded shortlex
+order to prove a minimum of any nonempty word set over a well-founded linear
+alphabet, including finite alphabets. Given a decoder with every fibre
+nonempty, its classical choice constructor supplies the minimum-code field of
+the existing `CodePresentation`. Direct Lean checking passed for blob
+`9e6258b926796e371f960f2e0de1533915f5b827`; independent review checked the
+minimality relation and the constructor's hypotheses.
+
+The decoder and inhabited fibres are inputs. Classical choice gives no
+algorithm, and neither an actual physical equivalence nor the source's
+stronger single-ontology argument follows. Original GOLDEN references and
+the source's mixed types and comparison assumptions remain unresolved; this
+result is not semantic acceptance of the entire section or a new C0 count.
+
 ### Search evidence performance and retained retrieval boundary — 4 November 2026
 
 A full replay on `7a7e9ed24a52265b067b3fd38ca091934c9758e0` was interrupted
