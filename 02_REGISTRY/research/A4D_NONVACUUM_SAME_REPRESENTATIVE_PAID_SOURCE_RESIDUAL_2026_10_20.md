@@ -138308,6 +138308,1194 @@ Observed normal and optimized receipt:
 }
 ```
 
+## 7fi. Canonical-born full128 histories: initial-source removal and an exact repeated-readout reduction
+
+5 November 2026. Existing #334, native realization / final composition.
+Input c4dfd283348093ede9c1ebacefa731abad75d3bd. Consumer: A--D contracts
+B/C/D after §7fh, specifically the supplied initial-state premise and
+the independent record equations of ONE complete recorded execution.
+The owned strong CQ-rate theorem is CONSUMED, not proved again.
+
+Two concrete substitutions are obtained. Canonical native births give
+an actual pure input for the entire original full128 history; the
+complete specified CQ price and its intensive covector then transport
+to native words without a supplied stationary bank. Independent output
+pair controls have a nonvanishing full temporal source, which can be
+solved exactly for this price component. Their elimination changes the
+field source by a calculated term. This does not identify that source
+with Einstein or choose this CQ functional as the whole physical price.
+`GR_closed=false`; the original closure contract is unchanged.
+
+### 7fi.A. An actual input and every retained branch
+
+Put p=phi^-1, a=sqrt(p), v=(a,p), ell=ln(phi). Four canonical DATA
+births and one canonical live phase birth give, in the fixed layout,
+
+    psi=v^tensor4, x=v_phase tensor psi
+        =enc((a+i p)psi), enc(z)=(Re z,Im z),
+    R(A)enc(z)=enc(Az), ||enc(z)||=||z||.                (BC1)
+
+These are five actual growing-history births. No phase gate, initial
+mixed state, reset or conversion of an unknown protected input is used.
+At each original tick append seven actual fresh record births, apply
+§7fh's PARTICULAR corrected all-column target, and retain every old
+record. The same live phase/DATA is reused. For every original word
+gamma, including zero-probability words,
+
+    x_gamma=R(K_gamma)x=enc(K_gamma(a+i p)psi),
+    p_gamma=||x_gamma||^2=||K_gamma psi||^2.             (BC2)
+
+All quantum posterior states, future original continuations, charges
+and parameter derivatives are retained. Any actual compiler helpers
+are included in the carrier and in the ideal identity extension. An
+unknown protected initial system remains an untouched PRODUCT factor
+Omega_R; it may contain its own internal correlations. This construction
+does not address or prepare an unknown correlated DATA/RIGHT input.
+
+For the actual pure active input, each complete fine-record branch is
+pure on DATA, phase and ALL retained helpers. The protected factor has
+the same entropy in every branch and at input. Thus the complete stated
+CQ entropy GAIN is exactly H(P_n), and the known price is
+
+    P_n=sum_gamma p_gamma c_gamma
+              +ell^-1 sum_gamma p_gamma ln p_gamma,
+    c_gamma=sum_(t=1)^n (1+port(z_t)), n<=c_gamma<=2n.   (BC3)
+
+BC3 is exactly the old port-CQ component on this actual input, not an
+assignment of the remaining native primitive/clock/work price. All fine
+labels are included. Full coherent entropy, before the declared pointer
+cut, is a different quantity. Helpers are retained rather than traced.
+
+An arbitrary real pure initial x is the encoding of a normalized complex
+z. Hence every real tangent on that preparation sphere is represented.
+A fixed finite prepared auxiliary may be included before encoding, with
+K_gamma tensor its actual identity; entangling preparation tangents stay.
+For E_gamma=K_gamma* K_gamma define, on positive word probabilities,
+
+    A_n=sum_gamma (c_gamma+ell^-1 ln p_gamma) E_gamma,
+    D_x P_n[dx]=2 dx^T R(A_n)x, x^T dx=0,
+    initial criticality: R(A_n)x=P_n x.                (BC4)
+
+At a zero amplitude the first entropy derivative is zero; that branch's
+gradient contribution uses this extension. A C2 entropy Hessian is not
+inferred. Code-tariff variations add sum p_gamma D c_gamma. The global
+complex-phase tangent is null for BC3. Other preparation rows are not
+set to zero by saying the input is born or marginally stationary.
+
+The actual pure real state differs from R(|psi><psi|)/2. A fresh native
+reader v followed by one CX controlled by the live phase distinguishes
+them: its outcome-1 probabilities are 2p^3 and 1/2, respectively. The
+reader and its birth are paid if used. Therefore phase is not discarded
+as a universal native gauge; BC2 transports the specified original
+tests, while extra native tests retain their distinctions and sources.
+
+### 7fi.B. Native finite words converge in the actual rate-source norm
+
+Consume §8 of the owned ORIGINAL_FULL128_UNIQUE_STATIONARY_CQ_RATE
+theorem. On its compact primitive CAR16 chart, use bounded C1 original
+Kraus jets, the proved uniform three-step mixing, a faithful stationary
+rho_*, and bounded C1 initial-purification jets with fixed finite passive
+reference. The constant pure state BC1 satisfies these initial hypotheses.
+All n recorded ticks, their prefix, terminal DATA and port charges remain.
+The already proved statement is
+
+    s_*=cbar_*-h_*/ell in C1,
+    ||D(P_n/n)-Ds_*|| <= C_U/sqrt(n),
+    cbar_*=1+4p^3 d/Tr(Lambda^-1), d=16.                (BC5)
+
+Here h_* is the full fine-word Shannon rate, and Lambda is the ORIGINAL
+SELECT effect from §7fh, not the RAW clock Laplacian. Initial-only
+preparation parameters have zero derivative in s_* and satisfy the
+BC5 bound. This is limiting source control, not BC4 at finite n.
+The rate theorem is on its specified parameter norm, not automatically
+all independent gates of a growing native word or all spatial meshes.
+
+There is a sharper native transport bound than §7fh's general quantum
+dimension estimate. For complete chunk errors delta_t, the joint output
+half-trace distance, and hence full word total variation, is bounded by
+tau<=sum_t delta_t. Both the target and compiled executions have pure
+conditional active states, with all helpers retained. For tau<=1/2,
+
+    |P_native,n/n-P_n/n| <= epsilon_n,
+    epsilon_n=tau+[tau ln(128^n-1)+h2(tau)]/(n ell)
+             <=tau(1+ln128/ell)+h2(tau)/(n ell).         (BC6)
+
+The cost bound uses its range [n,2n]. Conditional purity removes the
+helper dimension from this entropy modulus without removing helpers.
+There are no additional measured factory/controller labels in this
+fixed-horizon comparison. A different real task must include those
+labels/aborts and charges, or use §7fh's full scored-carrier modulus.
+Unknown mixed or correlated active helper inputs do not satisfy BC6.
+
+Compile both same-layout finite endpoints Y+/-tV, using the owned marked
+catalogue and the same canonical initial state. With a supplied positive
+consumer gain Gamma and actual material lift norm L, integrate BC5 along
+the segment and use the C1 modulus of Ds_*:
+
+    |delta_t(P_native,n/n)-Ds_*[V]|/Gamma
+      <=epsilon_n/(|t|Gamma)+C_U L/(Gamma sqrt(n))
+                         +modulus_(Ds_*,V)(|t|)/Gamma. (BC7)
+
+Use Gamma=L=1 for the raw source in the original parameter norm. For a
+supplied C1 physical-to-instrument map chi_h, the stencil is instead
+chi_h(Y+/-tV), the target is D(s_* composed chi_h)[V], and
+L=sup||D chi_h|| in the actual norms. Use the PULLBACK C1 modulus,
+including variation of D chi_h; a lift norm alone supplies no source map.
+For a full finite basis include its basis-to-dual constant and reading errors.
+No word index is differentiated and no uniform third derivative is
+invented. An explicit fixed-chart schedule is
+
+    n_r=r^2, t_r=exp(-r/2), delta_t=exp(-r)/n_r,
+    epsilon_(n_r)/|t_r|
+      <=exp(-r/2)[1+ln128/ell+(r+1)/(r^2 ell)].          (BC8)
+
+Thus BC7 tends to zero, with rate error C_U L/(Gamma r). Every n_r is
+fixed during that comparison. The original tick count n_r is not the
+number of actual compiler calls: all seven fresh record births per tick,
+every gate, order and growing clock remain on the paid history. No
+complete-price equality follows from the source approximation alone.
+At varying mesh/gain/lift/primitive gap all constants stay in BC7; if a
+gain depends on eventual compiler length its noncircular budget must
+be proved. Neither the one-block primitive hypothesis nor an inverse
+on its trace-zero space transfers automatically to momentum sectors or
+reference zero modes of the full spatial carrier.
+
+### 7fi.C. A repeated real record control survives initial-source decay
+
+Consume the original native65 pair identity and the owned controlled-X
+price countercontrol. For every j>0, including dark rows, the ORIGINAL
+operators have (K_(2j),K_(2j+1))=(p M_j,a M_j), while the j=0 pair is
+unchanged. Apply the SO(2) output rotation R(theta_t) to each ordinary
+pair at tick t, BEFORE the same computational pointer is committed.
+The actual two amplitudes and probability are
+
+    u_0=p cos(theta_t)-a sin(theta_t),
+    u_1=p sin(theta_t)+a cos(theta_t), b_t=u_1^2,
+    u_0^2+u_1^2=1.                                    (BR1)
+
+This is a specified all-column output target; §7fh's compiler can
+approximate its realification and finite comparisons. It is not a new
+continuous primitive or a zero-cost gate. Whether it is an allowed
+variation of the SAME reporting task is an explicit admission question.
+It changes the fine-bit law, although each merged operation, Phi and
+the entire future DATA channel remain EXACTLY unchanged.
+
+Let the ordinary-pair probability at the actual non-reset tick be
+
+    E_NB=sum_(j>0) M_j* M_j=4p^2 Lambda(I-Lambda),
+    w_t=Tr[E_NB Phi^(t-1)(rho_0)].                     (BR2)
+
+Every coarse record history has the same conditional quantum state in
+the two programmes. Its fine-bit law factors into the displayed scalar
+splits at the ticks where j>0. This proves for the ENTIRE fine CQ price,
+with any same actual input/reference and all past records retained,
+
+    P_n(theta)-P_n(0)=sum_t w_t [f(b_t)-f(p)],
+    f(b)=1+b+[b ln b+(1-b)ln(1-b)]/ell.                (BR3)
+
+It includes conditional quantum information, not only an isolated
+one-round Shannon approximation. For moving fields, differentiate
+both w_t and b_t; all upstream preparation and gate jets remain.
+Fixed horizon is essential: a PORT-dependent stopping rule changes
+its actual tree and is not covered by BR3 without recomputation.
+
+At the original theta_t=0, f'(p)=2 and b'_t=2pa. Therefore
+
+    partial_(theta_t) P_n=4pa w_t,
+    ||D_theta(P_n/n)||_(max norm)*=4pa sum_t w_t/n
+                     ->4pa w_*,
+    w_*=Tr(E_NB rho_*)
+        =4p^2 [d/Tr Lambda^-1] [1-Tr Lambda/d]>0.      (BR4)
+
+Strict positivity holds on the stated regular original chart with
+0<Lambda<I. The finite dual norm is the SUM over all actual independent
+rotors. BC5's decaying initial row cannot remove this bulk source;
+small individual 1/n rows do not make their full dual norm small.
+For physically lifted controls the actual lift norm and gain are
+retained. BR4 is not an assertion that these rows are already admitted
+or that other components of the full physical price vanish.
+
+### 7fi.D. Solve this nuisance section and keep its field correction
+
+For each positive w_t the regular minimum of the component BR3 is
+unique in probability: b_t=p^2. An explicit constant SO(2) target is
+
+    cos(theta_*)=2pa, sin(theta_*)=p^2-p=-p^3,
+    R(theta_*)(p,a)=(a,p),
+    f(p)=p^3, f(p^2)=0,
+    partial^2_(theta_t) P_n at theta_* =4w_t/ell>0.    (BR5)
+
+The rotor Hessian has no mixed tick entries for this component. Ticks
+with w_t=0 are degenerate and retain their zero-weight alternative.
+This stationary section has the SAME recorded density law as the
+owned conditional-X endpoint; that old exact price difference is
+consumed rather than relabelled as a new field source theorem.
+The eliminated specified price and its field source are now explicit:
+
+    P_red,n=P_n(0)-p^3 sum_t w_t,
+    D(P_red,n/n) -> Ds_*-p^3 D w_*.                    (BR6)
+
+The original mixing/source bounds give the last occupation boundary
+error O(1/n) on the fixed regular chart, with the moving initial input
+retained. The remaining source is not claimed zero or Einstein. Thus
+solving this actual class of internal equations CHANGES the field
+covector; it cannot be replaced by the unreduced Ds_*.
+
+Suppose the same physical execution has a full price P_full,n=P_n+Z_n,
+where Z_n is its actual remaining ledger (or the exact difference to
+the selected full price, if such a binding is proved). If the rotations
+are free admissible variables, stationarity at the original orientation
+requires EVERY row
+
+    partial_(theta_t) Z_n=-4pa w_t,
+    ||D_theta(Z_n/n)||_(max norm)*=4pa sum_t w_t/n.      (BR7)
+
+This is a necessary quantitative source payment. No unknown ledger is
+assigned this value. At theta_* the component rows vanish, so the full
+price needs D_theta Z_n=0 there; otherwise its section must be solved
+again and BR6 alone is not its reduced source. The actual native clock
+and implementation prices cannot be set to zero because Phi is fixed.
+If the task guards the original fine registration, these rotations are
+comparison programmes, not free nuisance rows. The guard and its true
+reaction must then be established from that task, not from unchanged
+DATA/channel geometry or a smaller chosen observation algebra.
+
+### 7fi.E. Variable status and exact remaining parent application
+
+| Variable | Status for this composition and its source |
+|---|---|
+| Initial phase/DATA | Generated by actual births BC1; independently admitted preparation words retain BC4 and their paid prefix. Only the fixed-dimensional initial component decays by BC5. |
+| Original field Y and K(Y) | Y varies on the declared chart; K is generated by its original map. A common geometric writer, material lift and actual gain remain required. |
+| Fresh record input | Canonical seven-bit births each tick. Additional real preparer variations are separate rows. |
+| Fine output registration | Fixed computational readout in BC2. If pair controls are admitted, BR4--7 apply; if guarded, prove the task restriction and reaction. |
+| Protected reference and helpers | All retained. The protected product factor is untouched; helper purity justifies BC6, not neutrality of their clock/work price. |
+| Horizon, stage order, layout and scene | Fixed only within each declared comparison. Any physically free clock/scene or changing stop policy keeps its own full-price equation. |
+| rho_* and a warmup split | Derived limiting marginal/proof objects, not new actual inputs. All prefix records and source boundaries remain. |
+| Compiler and implementation choices | Real finite words with their own complete clock, heat, cut and charges. Endpoint equivalence does not eliminate implementation variations. |
+
+This removes the supplied pure/stationary input premise for the stated
+native intensive component and computes one exact independent-record
+reduction, in the full temporal norm. It neither closes all preparation
+rows nor forces the full128 reporting task from M1. The next comparison
+must use the genuinely selected full-price section, including Z_n and
+any other admitted reactions, and its COMMON material/source map to the
+owned kappa/Einstein carrier. Off-shell non-screening and reverse recovery
+must be checked for that reduced source, not imported from the old field
+component. A--D remain open at their existing physical scope; no new
+task, independent positive acceptance or scoped terminal is asserted.
+
+
+### 7fi.F. Actual born-history calculation and reviewed input snapshot
+
+The bounded script consumes ONE original constructor call. It extracts
+only the pinned loader from the already published §7fh.G1 Python block
+in this repository, checks its exact SHA256, and changes only the fixture
+argument to the original rational proper boost r=1/9, namely
+theta=2 arctanh(1/9). The original returned field jet is d/dtheta;
+d/dr has factor2/(1-r^2). The constructor's own source SHA256 and Git
+blob stay pinned. No previous suite or scratch dependency is executed.
+
+The actual five-bit born vector is checked against its complex encoding.
+All128 one-tick and all16384 two-tick word vectors, probabilities and
+original noncommuting field jets are retained, including structural
+zero slots. A real initial DATA-bit rotation supplies an independent
+preparation tangent. Its two-tick component row is approximately
+-0.00186465: the finite preparation equation is not assumed solved.
+The full two-tick literal cost/source is compared with a separate
+CP-adjoint ledger, not a reset or iid law.
+
+The two independent output-pair rows are computed from the entire
+recorded price and agree with4pa w_t, approximately0.0406765 and0.0406759.
+The solved SO(2) section preserves every entry of Phi, zeros those rows,
+and has the predicted diagonal Hessians4w_t/ell, approximately0.173976
+and0.173973. Its actual price and original field jet agree with BR6;
+the mixed rotor Hessian is zero. Symbolic checks verify the Golden
+identities, section, probability convexity and quantum-block refinement.
+
+There are65 explicit conditions:42 nominal numerical,11 exact symbolic,
+8 structural and4 provenance. Every condition is labelled by kind and
+uses an explicit exception. The maximum nominal residual is below5.4e-15;
+this is not an interval certificate. Normal and optimized runs with
+warnings as errors in Python3.12.14 / NumPy2.3.5 / SciPy1.16.3 /
+SymPy1.14.0 produce identical receipts. The asymptotic C1 theorem,
+compiler existence and all-n BR3--7 statements are analytical/consumed
+results, not conclusions extrapolated from these two horizons.
+
+Three bounded reviews pin the final analytic proof. They check the
+actual born input and retained test boundary, the helper-pure entropy
+budget, the typed chi_h pullback and actual norm, and the all-history
+rotor source/reduced-price calculation. No full-price selection or
+independent positive assembly acceptance is added by those reviews.
+
+Extract the Python block below into scratch check_born_history.py:
+
+```text
+python3 -Werror /absolute/scratch/check_born_history.py --repo /absolute/repository
+python3 -O -Werror /absolute/scratch/check_born_history.py --repo /absolute/repository
+```
+
+It reads the existing §7fh.G1 block and original constructor from that
+repository and prints observed JSON; it writes no repository files.
+Owner hashes below refer to the pre-insertion commit. This insertion
+and the brief append preserve all previous bytes and the A--D contract.
+
+```json
+{
+  "GR_closed": false,
+  "check_counts_by_kind": {
+    "exact_symbolic": 11,
+    "nominal_numeric": 42,
+    "provenance": 4,
+    "structural": 8
+  },
+  "checker_sha256": "85af76b7882f26a7ad9f03f9948c23fce66acde23c684bf4986e7d2af1abf0ee",
+  "checks": 65,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "input_head": "c4dfd283348093ede9c1ebacefa731abad75d3bd",
+  "normal_and_optimized_byte_identical": true,
+  "normal_optimized_receipt_sha256": "6a07233d4d5d40ccd6a40f2899993698b949ca9e6885c9ad6557ed3e3d131238",
+  "not_claimed": [
+    "large native word emitted or physically executed",
+    "nominal floating controls are interval certificates",
+    "free stationary or mixed realification bank",
+    "initial source decay erases the full temporal nuisance norm",
+    "output rotations already admitted as free variables of the same task",
+    "primitive-port price equals the full compiled Book price",
+    "one-block mixing applies to all spatial or reference sectors",
+    "reduced full physical source equals Einstein with reverse recovery",
+    "independent positive assembly acceptance"
+  ],
+  "original_constructor_calls_per_run": 1,
+  "owner_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "6fe026dfe72ce793847cd32bbf9b4f7a5740033ca61b82efc8673f8b5abb8360",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_COMPLETE_NATIVE_FIRST_MATCH_ENTROPIC_POISSON_PREPARATION_AND_HESSIAN_2026_10_22.md": "de0c6df82eb2ab11d57ea8c8dfa389840735a807c820d5ee990518a2d2585f80",
+    "02_REGISTRY/research/A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md": "5607d7fe34d5309e7db5705bb68fcfce8ae9a2406f8d7ca829c937216f69aebf",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "05c5ab09718b3d2bf140ac2524f6cd99cee6d8642da55e23ffb41d1d81f405cc",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_GOLDEN_POINTER_X_INVARIANT_BOOK_DIFFERENT_PRICE_2026_10_22.md": "82caf5e7fdf3aa75ea1dedf1edd159369bd1dc78649cbe69457927a46778f443",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_THREE_TICK_CANONICAL_FUTURE_EVEN_ALGEBRA_2026_10_22.md": "b5c25996ad8d0742532c67429bba77c5a1899a68410b6ca6a0f1d883fc927b37",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_THREE_TICK_PRIMITIVE_SELF_PREPARATION_AND_EINSTEIN_SOURCE_GATE_2026_10_22.md": "d35d73fb6c3e8647483f7d3bef093aada914d5312ad24f64052e1f9bba3234c8",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_UNIQUE_STATIONARY_CQ_RATE_AND_FINITE_ENTROPY_BRACKETS_2026_10_22.md": "667d7c55d2d0e390c7b04454a5d84181237263466870bb06d73deff3b42704b7",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+    "02_REGISTRY/research/sources/d0_native65_causal_source_2026-10-22/THEOREM.md": "eef383ca58e6bce715b2b76f27a1abcdcab3ac668a4b09187bf1238cc4976436",
+    "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_SOURCE.md": "f1ee97765d7c8a82ff65f4ab81f46cb626e6780856fac34684efa8d4cac92d51",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md": "4001c3adb8b5c7bbcea95b1795d6d847e4386191e9129e43e5c611994b64a99f",
+    "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/STATIONARY_SOURCE_CONSUMER.md": "2190b37e35b9a707de6da00edf7544d0425bfae45530300e4dab9126954a4056",
+    "02_REGISTRY/research/sources/d0_original_full128_future_even_algebra_2026-10-22/HISTORY_C1_SOURCE_REVIEW.md": "9b3fcd0e25c0ffc0f1a76b73693901be88093e502e3c7f4783810d1db62f7c5a",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9"
+  },
+  "predecessor_checker_sha256": "cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c",
+  "predecessor_checker_source": "same primary artifact, section7fh.G1",
+  "run_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "scientific_promotion": false,
+  "scope": "Actual canonical-born native full-history CQ rate-source composition and exact independent repeated-readout component reduction",
+  "scratch_proof_sha256": {
+    "CHECK_RECEIPT.md": "a64c686ef2816afc73decb83eaad75a583346fb55f58cc830ac82a618fab067c",
+    "admission-final.md": "a3c7daef42ed4ced812bc9a54ef19b6386277b4730fb47e3baf586dc592a0f87",
+    "admission.md": "6b03e6d815d711847d61a49f2dc51cce16d2e6a55e6affbc942fdeff4be8b476",
+    "brief.md": "79db7d7d1d55adb0f346f4bc6a2c1e05f87d9ec8e4b7cdc73fa53a3194475264",
+    "price-final.md": "9899fc9e45abfb5c00832fc67782df1092d7f7cabc6260b5dab7aab1571b7073",
+    "price.md": "93cca4f3a521ee6fd3dc99b5ec1efb6a42ee2a5374c0756daadaf1c81d03088b",
+    "proof.md": "f69096c91f2b4f82fc6da39cdebccadc483eda559384ab6d37d37239254849b5",
+    "source-final.md": "57206297ae2c59051d800ec8d34cd4ecae844fff29ab3aaa15db770fe9317cc5",
+    "source.md": "fffb94dd1019b34fd21906c08dbad14051d094e5dc03a176018a08a7a0f1e7c4"
+  }
+}
+```
+
+#### 7fi.F1. check_born_history.py
+
+```python
+#!/usr/bin/env python3
+"""One pinned full128 call, actual born input, two full fine histories.
+
+Numerics are nominal, never intervals. The smooth output controls are an
+explicit comparison family, not a claimed continuously adjustable native gate.
+No compiled-word cost or physically selected Info is supplied by this checker.
+"""
+from __future__ import annotations
+import os
+for thread_option in ('OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS'):
+    os.environ[thread_option] = '1'
+import argparse
+import ast
+import hashlib
+import json
+from pathlib import Path
+import platform
+from types import SimpleNamespace
+import numpy as np
+import scipy
+import sympy as sp
+from scipy.linalg import expm, solve_sylvester
+
+OWNER = '02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py'
+OWNER_SHA256 = '1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9'
+OWNER_BLOB = 'ee8de4635d24c668949ac9a0186616ab7d59f2ed'
+PREDECESSOR_SHA256 = 'cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c'
+PRIMARY = '02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+TOL = 4e-11
+JET_TOL = 4e-10
+CHECKS = []
+RESIDUALS = {}
+
+
+def need(condition, label, kind='structural'):
+    if not bool(condition):
+        raise ArithmeticError(label)
+    if label in ('original constructor SHA256 pin', 'original constructor Git blob pin'):
+        kind = 'provenance'
+    CHECKS.append({'label': label, 'kind': kind})
+
+
+def close(actual, expected, label, tolerance=TOL):
+    error = float(np.max(np.abs(np.asarray(actual)-np.asarray(expected))))
+    RESIDUALS[label] = error
+    need(np.isfinite(error) and error <= tolerance, label, 'nominal_numeric')
+
+
+def adj(matrix):
+    return matrix.conj().T
+
+
+def realify(matrix):
+    return np.block([[matrix.real, -matrix.imag], [matrix.imag, matrix.real]])
+
+
+def tensor_power(value, count):
+    result = np.ones(1)
+    for _ in range(count):
+        result = np.kron(result, value)
+    return result
+
+
+def pinned_loader(repo):
+    previous = PRIMARY+':7fh.G1/check_transport.py'
+    primary = (repo/PRIMARY).read_text()
+    sections = primary.split('#### 7fh.G1. check_transport.py\n')
+    opening = '\n```python\n'
+    need(len(sections) == 2 and sections[1].startswith(opening),
+         'unique published 7fh.G1 Python block in repository primary', 'provenance')
+    source = (sections[1][len(opening):].split('\n```', 1)[0]+'\n').encode()
+    need(hashlib.sha256(source).hexdigest() == PREDECESSOR_SHA256,
+         'previous bounded AST loader SHA256 pin', 'provenance')
+    parsed = ast.parse(source.decode(), filename=previous)
+    function = next(node for node in parsed.body
+                    if isinstance(node, ast.FunctionDef) and node.name == 'load_native_once')
+    changed = []
+
+    class FixtureArgument(ast.NodeTransformer):
+        def visit_Call(self, node):
+            node = self.generic_visit(node)
+            if (isinstance(node.func, ast.Attribute) and node.func.attr == 'native'
+                    and isinstance(node.func.value, ast.Name)
+                    and node.func.value.id == 'native_excerpt'):
+                expected = ast.parse('np.log(2.0)', mode='eval').body
+                need(ast.dump(node.args[0]) == ast.dump(expected),
+                     'previous loader has the pinned single fixture argument')
+                node.args[0] = ast.parse('2.0*np.arctanh(1.0/9.0)', mode='eval').body
+                changed.append(1)
+            return node
+
+    function = FixtureArgument().visit(function)
+    need(len(changed) == 1, 'only native boost argument changed to r=1/9')
+    module = ast.fix_missing_locations(ast.Module(body=[function], type_ignores=[]))
+    namespace = dict(globals())
+    exec(compile(module, previous, 'exec'), namespace)
+    return namespace['load_native_once'](repo)
+
+
+def probabilities(vectors, jets):
+    q = np.sum(np.abs(vectors)**2, axis=-1)
+    dq = 2*np.real(np.sum(vectors.conj()*jets, axis=-1))
+    return q, dq
+
+
+def score(vectors, jets, cost, ell):
+    q, dq = probabilities(vectors, jets)
+    positive = q > 0
+    if np.any(dq[~positive] != 0):
+        raise ArithmeticError('nonzero probability jet at exact zero amplitude')
+    entropy = -float(np.sum(q[positive]*np.log(q[positive])))
+    entropy_jet = -float(np.sum(dq[positive]*(np.log(q[positive])+1)))
+    expenditure = float(np.sum(cost*q))
+    expenditure_jet = float(np.sum(cost*dq))
+    return dict(price=expenditure-entropy/ell,
+                source=expenditure_jet-entropy_jet/ell,
+                cost=expenditure, entropy=entropy,
+                cost_source=expenditure_jet, entropy_source=entropy_jet,
+                positive_slots=int(np.count_nonzero(positive)))
+
+
+def pair_rotation(k, cosine, sine):
+    result = k.copy()
+    result[2::2] = cosine*k[2::2]-sine*k[3::2]
+    result[3::2] = sine*k[2::2]+cosine*k[3::2]
+    return result
+
+
+def pair_tangent(k):
+    result = np.zeros_like(k)
+    result[2::2] = -k[3::2]
+    result[3::2] = k[2::2]
+    return result
+
+
+def pair_second(k):
+    result = np.zeros_like(k)
+    result[2:] = -k[2:]
+    return result
+
+
+def two(first, second, vector):
+    return np.einsum('bij,aj->abi', second, first@vector)
+
+
+def superoperator(k):
+    return np.einsum('zik,zjl->ijkl', k, k.conj()).reshape(256, 256)
+
+
+def symbolic_checks():
+    p = (sp.sqrt(5)-1)/2
+    a, ell = sp.sqrt(p), -sp.log(p)
+    b, theta = sp.symbols('b theta', real=True)
+    f = 1+b+(b*sp.log(b)+(1-b)*sp.log(1-b))/ell
+    # Positive p has 1-p=p² and ln(p²)=2ln(p); make the exact domain explicit.
+    fp = 1+sp.log(p/p**2)/ell
+    need(sp.simplify(sp.expand_log(fp, force=True)-2) == 0,
+         'EXACT original fine-pair price derivative f_prime(p)=2', 'exact_symbolic')
+    bt = (p*sp.sin(theta)+a*sp.cos(theta))**2
+    need(sp.simplify(sp.diff(bt, theta).subs(theta, 0)-2*p*a) == 0,
+         'EXACT output-rotation probability derivative 2pa', 'exact_symbolic')
+    need(sp.simplify(1+p+(p+2*p**2)*sp.log(p)/ell-p**3) == 0,
+         'EXACT original pair price f(p)=p_cubed', 'exact_symbolic')
+    need(sp.simplify(1+p**2+(2*p**2+p)*sp.log(p)/ell) == 0,
+         'EXACT Kraft pair price f(p_squared)=0', 'exact_symbolic')
+    need(sp.simplify(1+sp.expand_log(sp.log(p**2/p), force=True)/ell) == 0,
+         'EXACT Kraft pair stationary row at b=p_squared', 'exact_symbolic')
+    fbb = sp.diff(f, b, 2)
+    need(sp.simplify(fbb-1/(ell*b*(1-b))) == 0,
+         'EXACT pair price strictly convex in probability on zero-one interval', 'exact_symbolic')
+    c, s = 2*p*a, p**2-p
+    need(sp.simplify(c*c+s*s-1) == 0,
+         'EXACT stationary output section lies in SO2', 'exact_symbolic')
+    need(sp.simplify(c*p-s*a-a) == 0 and sp.simplify(s*p+c*a-p) == 0,
+         'EXACT stationary section sends p_a to a_p', 'exact_symbolic')
+    need(sp.simplify(s+p**3) == 0,
+         'EXACT stationary section sine equals minus p_cubed', 'exact_symbolic')
+    need(sp.simplify((2*p*a)**2/(ell*p**2*p)-4/ell) == 0,
+         'EXACT rotor Hessian at stationary section is 4w_over_ell', 'exact_symbolic')
+    q, eigenvalue = sp.symbols('q lambda', positive=True)
+    refined_eta = sp.expand_log(q*eigenvalue*sp.log(q*eigenvalue), force=True)
+    need(sp.expand(refined_eta-q*eigenvalue*sp.log(eigenvalue)-q*sp.log(q)*eigenvalue) == 0,
+         'EXACT scalar branch refinement retains the same quantum-block term', 'exact_symbolic')
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--repo', type=Path, default=Path.cwd())
+    args = parser.parse_args()
+    p, k, dk, rows, drows = pinned_loader(args.repo)
+    a, ell = np.sqrt(p), -np.log(p)
+    need(k.shape == dk.shape == (128, 16, 16), 'all128 operators and original boost jets retained')
+    structural = np.asarray([(z//4) % 2 == 1 for z in range(128)])
+    need(np.all(k[structural] == 0) and np.all(dk[structural] == 0),
+         'all original structural zero operators and jets retained exactly')
+    close(np.einsum('zji,zjk->ik', k.conj(), k), np.eye(16), 'full128 trace-preserving effect')
+    close(np.einsum('zji,zjk->ik', dk.conj(), k)+np.einsum('zji,zjk->ik', k.conj(), dk),
+          np.zeros((16, 16)), 'full128 original boost trace-preserving jet', JET_TOL)
+    close(k[2::2]/p, k[3::2]/a, 'all63 original proportional pair operators')
+    close(dk[2::2]/p, dk[3::2]/a, 'all63 original proportional pair boost jets', JET_TOL)
+
+    v = np.array([a, p])
+    psi = tensor_power(v, 4).astype(complex)
+    born = tensor_power(v, 5)
+    phase = a+1j*p
+    close(np.vdot(psi, psi), 1, 'four canonical born DATA bits normalized')
+    close(abs(phase)**2, 1, 'canonical born ubit gives unit-modulus complex phase')
+    close(born[:16]+1j*born[16:], phase*psi, 'five real born bits equal phased complex canonical DATA')
+    g = np.array([[a, -p], [p, a]])
+    record_frame = tensor_power(g, 7)
+    record_born = tensor_power(v, 7)
+    e0 = np.zeros(128); e0[0] = 1
+    close(record_frame.T@record_born, e0, 'one-sided seven-bit born frame gives computational input zero')
+    j = np.array([[0., -1.], [1., 0.]])
+    prep_generator = np.kron(np.eye(8), j)
+    dpsi = prep_generator@psi
+    close(np.vdot(psi, dpsi).real, 0, 'DATA bit0 real preparation tangent preserves norm')
+
+    v1, dv1 = k@psi, dk@psi
+    v2 = two(k, k, psi)
+    dv2 = two(dk, k, psi)+two(k, dk, psi)
+    prep1, prep2 = k@dpsi, two(k, k, dpsi)
+    kr, dkr = np.asarray([realify(x) for x in k]), np.asarray([realify(x) for x in dk])
+    rv1, rdv1 = kr@born, dkr@born
+    rv2 = two(kr, kr, born)
+    rdv2 = two(dkr, kr, born)+two(kr, dkr, born)
+    close(rv1[..., :16]+1j*rv1[..., 16:], phase*v1, 'all128 actual real born posterior vectors')
+    close(rdv1[..., :16]+1j*rdv1[..., 16:], phase*dv1, 'all128 actual real born posterior boost jets', JET_TOL)
+    close(rv2[..., :16]+1j*rv2[..., 16:], phase*v2, 'all16384 actual real born posterior vectors')
+    close(rdv2[..., :16]+1j*rdv2[..., 16:], phase*dv2, 'all16384 actual real born posterior boost jets', JET_TOL)
+
+    q1, dq1 = probabilities(v1, dv1)
+    q2, dq2 = probabilities(v2, dv2)
+    close(probabilities(rv1, rdv1)[0], q1, 'all128 real and complex history probabilities')
+    close(probabilities(rv1, rdv1)[1], dq1, 'all128 real and complex probability boost jets', JET_TOL)
+    close(probabilities(rv2, rdv2)[0], q2, 'all16384 real and complex history probabilities')
+    close(probabilities(rv2, rdv2)[1], dq2, 'all16384 real and complex probability boost jets', JET_TOL)
+    close([q1.sum(), q2.sum()], [1., 1.], 'one and two complete histories normalized')
+    close([dq1.sum(), dq2.sum()], [0., 0.], 'one and two total probability boost jets vanish', JET_TOL)
+    dead2 = structural[:, None] | structural[None, :]
+    need(np.all(q1[structural] == 0) and np.all(dq1[structural] == 0)
+         and np.all(q2[dead2] == 0) and np.all(dq2[dead2] == 0),
+         'all exact zero history slots and probability jets remain in full arrays')
+    need(v2.shape == (128, 128, 16), 'entire 128-squared chronological tree retained')
+    cost1 = 1+np.arange(128)%2
+    cost2 = cost1[:, None]+cost1[None, :]
+    score1, score2 = score(v1, dv1, cost1, ell), score(v2, dv2, cost2, ell)
+
+    # Pure initial state + one actual Kraus per full word gives rank-one CQ
+    # blocks. Any pure retained helper factors must remain in the block.
+    # Numerically check all block scalar spectra through column singular values.
+    sv1 = np.linalg.svd(v1[..., None], compute_uv=False)[..., 0]**2
+    sv2 = np.linalg.svd(v2[..., None], compute_uv=False)[..., 0]**2
+    close(sv1, q1, 'all128 pure CQ block nonzero eigenvalues equal probabilities')
+    close(sv2, q2, 'all16384 pure CQ block nonzero eigenvalues equal probabilities')
+    close(-np.sum(sv1[sv1>0]*np.log(sv1[sv1>0])), score1['entropy'], 'one-round pure joint CQ entropy equals fine Shannon')
+    close(-np.sum(sv2[sv2>0]*np.log(sv2[sv2>0])), score2['entropy'], 'two-round pure joint CQ entropy equals fine Shannon')
+
+    prep_score = score(v2, prep2, cost2, ell)
+    weight = np.zeros_like(q2)
+    positive = q2 > 0
+    weight[positive] = cost2[positive]+(np.log(q2[positive])+1)/ell
+    backward = np.einsum('bij,abi,ab->aj', k.conj(), v2, weight)
+    gpsi = np.einsum('aij,ai->j', k.conj(), backward)
+    prep_adjoint = float(2*np.real(np.vdot(dpsi, gpsi)))
+    close(prep_score['source'], prep_adjoint, 'independent real preparation row equals full history adjoint', JET_TOL)
+    need(abs(prep_adjoint) > 1e-10, 'nominal actual pure preparation row is nonzero', 'nominal_numeric')
+
+    delta = adj(rows[0])@rows[0]
+    ddelta = adj(drows[0])@rows[0]+adj(rows[0])@drows[0]
+    e_nb = np.einsum('zji,zjk->ik', k[2:].conj(), k[2:])
+    de_nb = np.einsum('zji,zjk->ik', dk[2:].conj(), k[2:])+np.einsum('zji,zjk->ik', k[2:].conj(), dk[2:])
+    close(e_nb, 4*p*p*(delta-delta@delta), 'original ordinary-pair effect 4p_squared Delta_one_minus_Delta')
+    close(de_nb, 4*p*p*(ddelta-ddelta@delta-delta@ddelta), 'ordinary-pair effect original boost jet', JET_TOL)
+    c_effect, dc_effect = np.eye(16)+4*p**3*delta, 4*p**3*ddelta
+    two_cost_effect = c_effect+np.einsum('zji,jk,zkl->il', k.conj(), c_effect, k)
+    two_cost_jet = (dc_effect
+                    +np.einsum('zji,jk,zkl->il', dk.conj(), c_effect, k)
+                    +np.einsum('zji,jk,zkl->il', k.conj(), dc_effect, k)
+                    +np.einsum('zji,jk,zkl->il', k.conj(), c_effect, dk))
+    close(np.vdot(psi, two_cost_effect@psi), score2['cost'],
+          'full two-round literal marked cost equals independent CP-adjoint ledger')
+    close(np.vdot(psi, two_cost_jet@psi), score2['cost_source'],
+          'full two-round marked cost source equals independent CP-adjoint jet', JET_TOL)
+    w = np.array([q1[2:].sum(), q2[:, 2:].sum()])
+    dw = np.array([dq1[2:].sum(), dq2[:, 2:].sum()])
+    close(w, [q2[2:, :].sum(), q2[:, 2:].sum()], 'actual no-reset pair occupations at both temporal positions')
+    dkr_out = pair_tangent(k)
+    channel_jet = (np.einsum('zik,zjl->ijkl', dkr_out, k.conj())
+                   +np.einsum('zik,zjl->ijkl', k, dkr_out.conj())).reshape(256, 256)
+    close(channel_jet, np.zeros((256, 256)), 'all-entry full CP map output-rotation tangent is zero', JET_TOL)
+    test_angle = 1/7
+    k_test = pair_rotation(k, np.cos(test_angle), np.sin(test_angle))
+    close(superoperator(k_test), superoperator(k), 'finite output rotation preserves entire CP map')
+    control_jets = [two(dkr_out, k, psi), two(k, dkr_out, psi)]
+    controls = [score(v2, derivative, cost2, ell) for derivative in control_jets]
+    close([item['source'] for item in controls], 4*p*a*w, 'both independent temporal price rows equal 4pa occupation', JET_TOL)
+    close(sum(item['source'] for item in controls)/2, 4*p*a*w.mean(), 'two-round intensive temporal dual norm retains positive row', JET_TOL)
+
+    # The stationary SO2 section changes the specified measured price only.
+    cosine, sine = 2*p*a, p*p-p
+    ks, dks = pair_rotation(k, cosine, sine), pair_rotation(dk, cosine, sine)
+    close(ks[2::2], k[3::2], 'stationary SO2 first output amplitude equals original costly twin')
+    close(ks[3::2], k[2::2], 'stationary SO2 second output amplitude equals original cheap twin')
+    close(superoperator(ks), superoperator(k), 'stationary output section preserves entire CP map')
+    vs = two(ks, ks, psi)
+    dvs = two(dks, ks, psi)+two(ks, dks, psi)
+    ss = score(vs, dvs, cost2, ell)
+    close(ss['price'], score2['price']-p**3*w.sum(), 'exact two-round eliminated price equals original minus pair bill')
+    close(ss['source'], score2['source']-p**3*dw.sum(), 'exact two-round eliminated field source retains occupation derivative', JET_TOL)
+    dks_out, ddks_out = pair_tangent(ks), pair_second(ks)
+    section_jets = [two(dks_out, ks, psi), two(ks, dks_out, psi)]
+    section_seconds = [two(ddks_out, ks, psi), two(ks, ddks_out, psi)]
+    close([score(vs, jet, cost2, ell)['source'] for jet in section_jets], [0., 0.],
+          'both independent output rows vanish at the specified stationary section', JET_TOL)
+    qs, _ = probabilities(vs, dvs)
+    live = qs > 0
+    beta = np.zeros_like(qs)
+    beta[live] = cost2[live]+(np.log(qs[live])+1)/ell
+    hessian = []
+    for jet, second in zip(section_jets, section_seconds):
+        _, dqs = probabilities(vs, jet)
+        ddqs = 2*np.real(np.sum(jet.conj()*jet+vs.conj()*second, axis=-1))
+        hessian.append(float(np.sum(beta*ddqs)+np.sum(dqs[live]**2/qs[live])/ell))
+    close(hessian, 4*w/ell, 'stationary independent rotor Hessians are 4 occupation over ell', JET_TOL)
+    mixed_vector = two(dks_out, dks_out, psi)
+    mixed_q = 2*np.real(np.sum(section_jets[0].conj()*section_jets[1]+vs.conj()*mixed_vector, axis=-1))
+    qjet0 = probabilities(vs, section_jets[0])[1]
+    qjet1 = probabilities(vs, section_jets[1])[1]
+    mixed_hessian = float(np.sum(beta*mixed_q)+np.sum(qjet0[live]*qjet1[live]/qs[live])/ell)
+    close(mixed_hessian, 0., 'distinct temporal rotor rows have zero mixed Hessian', JET_TOL)
+
+    symbolic_checks()
+    kinds = {kind: sum(item['kind'] == kind for item in CHECKS)
+             for kind in sorted({item['kind'] for item in CHECKS})}
+    result = dict(schema='d0.full128-born-history-joint-source/1', status='PASS',
+                  checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                  owner_sha256=OWNER_SHA256, owner_blob=OWNER_BLOB,
+                  predecessor_loader_sha256=PREDECESSOR_SHA256,
+                  runtime=dict(python=platform.python_version(), numpy=np.__version__,
+                               scipy=scipy.__version__, sympy=sp.__version__),
+                  fixture=dict(r='1/9', theta='2 arctanh(1/9)', nu='3/5',
+                               phases=['i', 'i', '-1', '-i'],
+                               native_jet='d/dtheta', dr_factor='2/(1-r^2)',
+                               data_input='(sqrt(p),p)^tensor4',
+                               real_input='(sqrt(p),p)^tensor5',
+                               complex_phase='sqrt(p)+i p',
+                               preparation_tangent='I8 tensor [[0,-1],[1,0]] on complex DATA'),
+                  check_count=len(CHECKS), classifications=kinds, checks=CHECKS,
+                  tolerances=dict(nominal=TOL, nominal_jet=JET_TOL),
+                  max_nominal_residual=max(RESIDUALS.values()), residuals=RESIDUALS,
+                  one_round=score1, two_round=score2,
+                  pure_preparation_source=prep_adjoint,
+                  pair_occupations=w.tolist(), pair_occupation_theta_jets=dw.tolist(),
+                  temporal_sources=[item['source'] for item in controls],
+                  reduced_two_round=ss, stationary_rotor_hessian=hessian,
+                  scope=dict(all128_and_all16384_slots_retained=True,
+                             nominal_not_interval=True,
+                             pure_joint_CQ_Shannon_identity='analytic for efficient complete words and all pure retained helpers',
+                             continuous_native_controls_admitted=False,
+                             actual_compiled_word_price_computed=False,
+                             physical_Info_selected=False, GR_closed=False))
+    print(json.dumps(result, ensure_ascii=False, sort_keys=True, indent=2))
+
+
+if __name__ == '__main__':
+    main()
+```
+
+Observed normal and optimized receipt:
+
+```json
+{
+  "check_count": 65,
+  "checker_sha256": "85af76b7882f26a7ad9f03f9948c23fce66acde23c684bf4986e7d2af1abf0ee",
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "unique published 7fh.G1 Python block in repository primary"
+    },
+    {
+      "kind": "provenance",
+      "label": "previous bounded AST loader SHA256 pin"
+    },
+    {
+      "kind": "structural",
+      "label": "previous loader has the pinned single fixture argument"
+    },
+    {
+      "kind": "structural",
+      "label": "only native boost argument changed to r=1/9"
+    },
+    {
+      "kind": "provenance",
+      "label": "original constructor SHA256 pin"
+    },
+    {
+      "kind": "provenance",
+      "label": "original constructor Git blob pin"
+    },
+    {
+      "kind": "structural",
+      "label": "only six pinned definitions extracted; no historical suite"
+    },
+    {
+      "kind": "structural",
+      "label": "exactly one original native call"
+    },
+    {
+      "kind": "structural",
+      "label": "all128 operators and original boost jets retained"
+    },
+    {
+      "kind": "structural",
+      "label": "all original structural zero operators and jets retained exactly"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "full128 trace-preserving effect"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "full128 original boost trace-preserving jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all63 original proportional pair operators"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all63 original proportional pair boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "four canonical born DATA bits normalized"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "canonical born ubit gives unit-modulus complex phase"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "five real born bits equal phased complex canonical DATA"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "one-sided seven-bit born frame gives computational input zero"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "DATA bit0 real preparation tangent preserves norm"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 actual real born posterior vectors"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 actual real born posterior boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 actual real born posterior vectors"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 actual real born posterior boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 real and complex history probabilities"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 real and complex probability boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 real and complex history probabilities"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 real and complex probability boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "one and two complete histories normalized"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "one and two total probability boost jets vanish"
+    },
+    {
+      "kind": "structural",
+      "label": "all exact zero history slots and probability jets remain in full arrays"
+    },
+    {
+      "kind": "structural",
+      "label": "entire 128-squared chronological tree retained"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 pure CQ block nonzero eigenvalues equal probabilities"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 pure CQ block nonzero eigenvalues equal probabilities"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "one-round pure joint CQ entropy equals fine Shannon"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "two-round pure joint CQ entropy equals fine Shannon"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "independent real preparation row equals full history adjoint"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "nominal actual pure preparation row is nonzero"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "original ordinary-pair effect 4p_squared Delta_one_minus_Delta"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "ordinary-pair effect original boost jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "full two-round literal marked cost equals independent CP-adjoint ledger"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "full two-round marked cost source equals independent CP-adjoint jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual no-reset pair occupations at both temporal positions"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all-entry full CP map output-rotation tangent is zero"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "finite output rotation preserves entire CP map"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "both independent temporal price rows equal 4pa occupation"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "two-round intensive temporal dual norm retains positive row"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "stationary SO2 first output amplitude equals original costly twin"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "stationary SO2 second output amplitude equals original cheap twin"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "stationary output section preserves entire CP map"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "exact two-round eliminated price equals original minus pair bill"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "exact two-round eliminated field source retains occupation derivative"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "both independent output rows vanish at the specified stationary section"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "stationary independent rotor Hessians are 4 occupation over ell"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "distinct temporal rotor rows have zero mixed Hessian"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT original fine-pair price derivative f_prime(p)=2"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT output-rotation probability derivative 2pa"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT original pair price f(p)=p_cubed"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT Kraft pair price f(p_squared)=0"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT Kraft pair stationary row at b=p_squared"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT pair price strictly convex in probability on zero-one interval"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT stationary output section lies in SO2"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT stationary section sends p_a to a_p"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT stationary section sine equals minus p_cubed"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT rotor Hessian at stationary section is 4w_over_ell"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT scalar branch refinement retains the same quantum-block term"
+    }
+  ],
+  "classifications": {
+    "exact_symbolic": 11,
+    "nominal_numeric": 42,
+    "provenance": 4,
+    "structural": 8
+  },
+  "fixture": {
+    "complex_phase": "sqrt(p)+i p",
+    "data_input": "(sqrt(p),p)^tensor4",
+    "dr_factor": "2/(1-r^2)",
+    "native_jet": "d/dtheta",
+    "nu": "3/5",
+    "phases": [
+      "i",
+      "i",
+      "-1",
+      "-i"
+    ],
+    "preparation_tangent": "I8 tensor [[0,-1],[1,0]] on complex DATA",
+    "r": "1/9",
+    "real_input": "(sqrt(p),p)^tensor5",
+    "theta": "2 arctanh(1/9)"
+  },
+  "max_nominal_residual": 5.37178808379668e-15,
+  "one_round": {
+    "cost": 1.0131178543938668,
+    "cost_source": -0.0004975872888551721,
+    "entropy": 0.13774041056675407,
+    "entropy_source": -0.0036166510497713327,
+    "positive_slots": 64,
+    "price": 0.7268813086695521,
+    "source": 0.007018127956345569
+  },
+  "owner_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "owner_sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+  "pair_occupation_theta_jets": [
+    -0.0007870539152514056,
+    -0.0007887415262127682
+  ],
+  "pair_occupations": [
+    0.02092981303989651,
+    0.02092948534827253
+  ],
+  "predecessor_loader_sha256": "cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c",
+  "pure_preparation_source": -0.0018646500556371848,
+  "reduced_two_round": {
+    "cost": 2.0163538605973805,
+    "cost_source": -0.0006242520382282245,
+    "entropy": 0.2754798986238635,
+    "entropy_source": -0.007237172562814314,
+    "positive_slots": 4096,
+    "price": 1.4438826862039784,
+    "source": 0.014415221611277191
+  },
+  "residuals": {
+    "DATA bit0 real preparation tangent preserves norm": 0.0,
+    "actual no-reset pair occupations at both temporal positions": 1.3877787807814457e-17,
+    "all-entry full CP map output-rotation tangent is zero": 1.5152185993940876e-20,
+    "all128 actual real born posterior boost jets": 2.4532694666933987e-18,
+    "all128 actual real born posterior vectors": 6.206335383118183e-17,
+    "all128 pure CQ block nonzero eigenvalues equal probabilities": 1.1102230246251565e-16,
+    "all128 real and complex history probabilities": 1.1102230246251565e-16,
+    "all128 real and complex probability boost jets": 3.2526065174565133e-19,
+    "all16384 actual real born posterior boost jets": 2.168404344971009e-18,
+    "all16384 actual real born posterior vectors": 6.206335383118183e-17,
+    "all16384 pure CQ block nonzero eigenvalues equal probabilities": 2.6020852139652106e-18,
+    "all16384 real and complex history probabilities": 1.1102230246251565e-16,
+    "all16384 real and complex probability boost jets": 8.673617379884035e-19,
+    "all63 original proportional pair boost jets": 6.938893903907228e-18,
+    "all63 original proportional pair operators": 1.3877787807814457e-17,
+    "both independent output rows vanish at the specified stationary section": 9.367506770274758e-17,
+    "both independent temporal price rows equal 4pa occupation": 1.1102230246251565e-16,
+    "canonical born ubit gives unit-modulus complex phase": 0.0,
+    "distinct temporal rotor rows have zero mixed Hessian": 1.0258575691844983e-18,
+    "exact two-round eliminated field source retains occupation derivative": 6.938893903907228e-18,
+    "exact two-round eliminated price equals original minus pair bill": 4.440892098500626e-16,
+    "finite output rotation preserves entire CP map": 1.6653345369377348e-15,
+    "five real born bits equal phased complex canonical DATA": 6.206335383118183e-17,
+    "four canonical born DATA bits normalized": 4.440892098500626e-16,
+    "full two-round literal marked cost equals independent CP-adjoint ledger": 1.7763568398275733e-15,
+    "full two-round marked cost source equals independent CP-adjoint jet": 1.0963315984298679e-18,
+    "full128 original boost trace-preserving jet": 9.599935265639418e-18,
+    "full128 trace-preserving effect": 3.774758286585258e-15,
+    "independent real preparation row equals full history adjoint": 5.37178808379668e-15,
+    "one and two complete histories normalized": 4.440892098500626e-16,
+    "one and two total probability boost jets vanish": 6.505213034913027e-19,
+    "one-round pure joint CQ entropy equals fine Shannon": 1.1102230246251565e-16,
+    "one-sided seven-bit born frame gives computational input zero": 2.220446049250313e-16,
+    "ordinary-pair effect original boost jet": 9.599276156377502e-18,
+    "original ordinary-pair effect 4p_squared Delta_one_minus_Delta": 5.2042441315149596e-17,
+    "stationary SO2 first output amplitude equals original costly twin": 1.3877787807814457e-17,
+    "stationary SO2 second output amplitude equals original cheap twin": 6.938893903907228e-18,
+    "stationary independent rotor Hessians are 4 occupation over ell": 1.6653345369377348e-16,
+    "stationary output section preserves entire CP map": 1.734723475976807e-18,
+    "two-round intensive temporal dual norm retains positive row": 1.0408340855860843e-16,
+    "two-round pure joint CQ entropy equals fine Shannon": 0.0
+  },
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.full128-born-history-joint-source/1",
+  "scope": {
+    "GR_closed": false,
+    "actual_compiled_word_price_computed": false,
+    "all128_and_all16384_slots_retained": true,
+    "continuous_native_controls_admitted": false,
+    "nominal_not_interval": true,
+    "physical_Info_selected": false,
+    "pure_joint_CQ_Shannon_identity": "analytic for efficient complete words and all pure retained helpers"
+  },
+  "stationary_rotor_hessian": [
+    0.17397588296841307,
+    0.17397315908170133
+  ],
+  "status": "PASS",
+  "temporal_sources": [
+    0.04067652835953699,
+    0.04067589149968496
+  ],
+  "tolerances": {
+    "nominal": 4e-11,
+    "nominal_jet": 4e-10
+  },
+  "two_round": {
+    "cost": 2.026235500507436,
+    "cost_source": -0.0009962468810480573,
+    "entropy": 0.2754798986238635,
+    "entropy_source": -0.007237172562814316,
+    "positive_slots": 4096,
+    "price": 1.453764326114034,
+    "source": 0.014043226768457363
+  }
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

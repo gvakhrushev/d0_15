@@ -21636,3 +21636,77 @@ Status: concrete conditional operator/finite-price source transport.
 Contract C and independent B/D physical acceptance remain open;
 `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` remains unproposed,
 `scientific_promotion=false`, `GR_closed=false`; goal active.
+
+## 2026-11-05 checkpoint: born history and the independent readout quotient
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `c4dfd283348093ede9c1ebacefa731abad75d3bd`.
+Result location: §7fi of the existing full-source primary artifact.
+Write paths remain that artifact and this brief; no new scientific
+execution, task, branch, Ready/retirement, merge or claims promotion.
+
+Exact parent substitution: apply §7fh to the owned strong original
+full128 CQ-rate theorem using an ACTUAL canonical-born initial state;
+then solve an explicit repeated-record nuisance family in the whole
+temporal norm. This consumes the prior all-column transport, native65
+pair identity, controlled-X price difference, complete CQ calculus and
+already-proved C1 rate convergence. It does not repeat their proofs.
+
+Five actual phase/DATA births give
+`x=v tensor v^tensor4=enc((sqrt(p)+i p)v^tensor4)`.
+Seven fresh record births per tick and the original corrected operator
+produce every full128 history, with all old records and posterior states
+retained. No mixed realification bank, stationary reset, unknown-input
+conversion or free phase preparation is required. Every pure initial
+real tangent remains, with its actual finite preparation equation.
+
+For the pure active input, full conditional states remain pure including
+ALL compiler helpers. The unchanged protected product reference entropy
+cancels. Hence the complete specified CQ gain is the full word Shannon
+entropy. The compiler price modulus uses only the 128^n word alphabet,
+not a growing helper dimension. The concrete schedule n=r², t=exp(-r/2),
+total operator error<=exp(-r) transports the original intensive first
+source Ds_* with the actual positive gain, lift and C1 continuity modulus.
+All physical compiler ticks, births, heat and other charges remain paid.
+
+Carrier/norm/source convention: original compact primitive CAR16 chart,
+actual canonical pure input, unchanged computational record PVM and
+all128 labels, complete native output operator norm, retained-CQ gain,
+original charges1/2, and finite source comparisons rather than a derivative
+of a word index. The rate theorem's initial-boundary rows vanish only
+in its stated intensive norm; no whole-mesh gap or full-price selection
+is inferred. Extra real phase readers can distinguish pure encoding from
+normalized mixed realification and are not quotiented away.
+
+Decisive independent-record calculation: for the original ordinary pairs
+`(K_j0,K_j1)=(p M_j,sqrt(p) M_j)`, output rotation theta_t changes only
+their fine split. The complete CQ-price difference is exactly
+`sum_t w_t [f(b_t)-f(p)]`, where `w_t=Tr[E_NB Phi^(t-1)rho_0]` and
+`E_NB=4p² Lambda(I-Lambda)`. Its normalized temporal gate-max dual norm
+at the original orientation tends to `4p sqrt(p) w_*>0`, despite exact
+unchanged Phi and disappearing initial-preparation influence.
+
+The regular component stationary section is explicit: b_t=p², with
+rotor Hessian `4w_t/ln(phi)>0` when w_t>0. Its reduced price is
+`P_red,n=P_n-p³ sum_t w_t`; its limiting FIELD source is
+`Ds_*-p³ D w_*`. Solving nuisance rows therefore changes the source used
+by the parent. This is not an Einstein identification or complete-price
+stationarity. At the original orientation, any actually selected remaining
+ledger must supply each opposite rotor row if those controls are free;
+a task guard instead requires its own admission and true reaction.
+
+Validation: bounded original r=1/9 constructor fixture with actual born
+pure inputs, complete one- and two-tick histories, independent initial
+and original field jets, exact Golden rotor identities and direct full
+CQ-price control. Numerical diagnostics are distinguished from exact
+symbolic identities. Normal and optimized warnings-as-errors receipts,
+full script, owner hashes and three pinned analytic reviews are embedded
+in §7fi. No existing geometry/root/Lean suite is replayed.
+
+Remaining application: actual full Cost--Info on this same history and
+its real internal equations, same-task output-control admission, and
+the common material/source map comparing the resulting reduced covector
+with kappa/Einstein off shell and in reverse. The native component now
+has a genuine initial realization and an explicit record reduction;
+the missing physical-price/source binding has not been renamed away.
+`scientific_promotion=false`, `GR_closed=false`; goal active.
