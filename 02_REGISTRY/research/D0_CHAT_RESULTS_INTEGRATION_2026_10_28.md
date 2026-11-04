@@ -25,8 +25,9 @@ pinned in successive delta packets.
 The nine packages below are preserved as 74 individually readable UTF-8 files
 (650,121 bytes) under [the source intake](sources/d0_chat_intake_2026-10-28/README.md),
 with their original paths and bytes. Original upstream inventory and manifest
-are preserved. The 41 compressed source parts stay on #334 rather than being
-duplicated; their restore was independently run in normal and optimized modes.
+are preserved. The 41 compressed source parts and original restore script are
+now also preserved at their [original paths](sources/d0_chat_snapshot_2026-10-27/README.md);
+their restore is independently checked in normal and optimized modes.
 The [local verifier](sources/d0_chat_intake_2026-10-28/verify_intake.py) checks
 every member against the pinned inventory, rejects mismatches and does not run
 archived code. The original nine ZIP files were not available for independent

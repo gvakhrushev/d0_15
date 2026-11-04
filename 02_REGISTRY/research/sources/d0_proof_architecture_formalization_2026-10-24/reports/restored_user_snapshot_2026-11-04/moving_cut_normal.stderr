@@ -1,0 +1,24 @@
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:39: RuntimeWarning: divide by zero encountered in matmul
+  C=Q@U@P;F=C.conj().T@C
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:39: RuntimeWarning: overflow encountered in matmul
+  C=Q@U@P;F=C.conj().T@C
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:39: RuntimeWarning: invalid value encountered in matmul
+  C=Q@U@P;F=C.conj().T@C
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:43: RuntimeWarning: divide by zero encountered in matmul
+  dF=dC.conj().T@C+C.conj().T@dC
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:43: RuntimeWarning: overflow encountered in matmul
+  dF=dC.conj().T@C+C.conj().T@dC
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:43: RuntimeWarning: invalid value encountered in matmul
+  dF=dC.conj().T@C+C.conj().T@dC
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:30: RuntimeWarning: divide by zero encountered in matmul
+  F=C.conj().T@C
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:30: RuntimeWarning: overflow encountered in matmul
+  F=C.conj().T@C
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:30: RuntimeWarning: invalid value encountered in matmul
+  F=C.conj().T@C
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:88: RuntimeWarning: divide by zero encountered in matmul
+  R=np.linalg.inv(np.eye(n)-z*C.conj().T@C)
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:88: RuntimeWarning: overflow encountered in matmul
+  R=np.linalg.inv(np.eye(n)-z*C.conj().T@C)
+/private/tmp/d0-repeated-transfer-358/02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py:88: RuntimeWarning: invalid value encountered in matmul
+  R=np.linalg.inv(np.eye(n)-z*C.conj().T@C)

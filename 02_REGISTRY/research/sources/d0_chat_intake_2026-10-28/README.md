@@ -6,8 +6,8 @@ PR [#334](https://github.com/gvakhrushev/d0_15/pull/334), commit
 [`eebcb5e467742df3e9cf7fa9702042d7294aa742`](https://github.com/gvakhrushev/d0_15/tree/eebcb5e467742df3e9cf7fa9702042d7294aa742).
 The nine packages contain 74 files, totalling 650,121 bytes. The files under
 [`upstream/`](upstream/) are the original pinned `MANIFEST.json`, `FILES.md`
-and `VERIFICATION.json`; the original xz payload parts remain in #334 and
-are not duplicated here.
+and `VERIFICATION.json`. The original xz payload parts and restore script are
+also preserved at the [upstream snapshot path](../d0_chat_snapshot_2026-10-27/README.md).
 
 Run the local read-only verifier from the repository root:
 

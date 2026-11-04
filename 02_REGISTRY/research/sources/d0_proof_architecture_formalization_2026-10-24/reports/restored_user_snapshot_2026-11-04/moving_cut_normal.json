@@ -1,0 +1,44 @@
+{
+  "GR_closed": false,
+  "lean_or_ci_run": false,
+  "max_covariance_identity_error": 2.482534153247273e-16,
+  "max_fd_error": 7.00670077513621e-12,
+  "max_pure_reencoding_source": 2.3953061756287755e-16,
+  "moving_cut_control_source": 0.06218198611141448,
+  "native_full42_replayed": false,
+  "projector_frozen_incorrect_control_source": 0.0,
+  "random_seed": 20261028,
+  "samples": [
+    {
+      "bound": 0.6036221354003678,
+      "dimension": 3,
+      "finite_difference": 0.09252014331108739,
+      "rank": 1,
+      "source": 0.09252014331069432
+    },
+    {
+      "bound": 1.6865435327144076,
+      "dimension": 4,
+      "finite_difference": -0.21073441608130775,
+      "rank": 2,
+      "source": -0.21073441607872861
+    },
+    {
+      "bound": 1.6358514292909843,
+      "dimension": 6,
+      "finite_difference": -0.12693807022142362,
+      "rank": 3,
+      "source": -0.12693807021561476
+    },
+    {
+      "bound": 2.987006923860082,
+      "dimension": 8,
+      "finite_difference": 0.08913903503003176,
+      "rank": 4,
+      "source": 0.08913903503703846
+    }
+  ],
+  "scope": "Fixed rank, beta and z; finite structural matrix controls, not native field realization",
+  "source_owner": "Book03 section 03.25; F=P U^* (I-P) U P",
+  "status": "PASS_FULL_BOOTSTRAP_MOVING_CUT"
+}
