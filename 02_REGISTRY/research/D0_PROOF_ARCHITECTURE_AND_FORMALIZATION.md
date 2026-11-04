@@ -14982,3 +14982,34 @@ matrix and word-specific maps do not discharge those missing native interfaces.
 The existing `NativePaidClockCredit.lean` remains conditional on explicit
 physical price maps. #334 stays OPEN/Draft/CONFLICTING, #402 remains the same
 IN_PROGRESS Draft PR, and `GR_closed=false`.
+
+## PR #402 cold-start and Lean integration on `b3c93862` — 4 November 2026
+
+The complete retrieval runner was executed on clean PR #402 snapshot
+`b3c9386221fa7c382ff98479f447e61d70b4c68a`. At the existing result window of
+18 it found all required sources in 49/50 scenarios; all 51 benchmark controls,
+including the exact-source-versus-unrelated-prose impact regression, passed.
+The only incomplete scenario is `pr334-native-kappa-owner-delta`.
+
+That case now has 17/17 exact query-to-pin locator files. Of its 67 searchable
+owner artifacts, 23 are surfaced by strict direct-content search and 44 are
+loaded from their exact owner pins without enough matching query terms. The
+separate owner-manifest regression verifies all 68 changed paths by
+`commit:path` Git blob, byte count and SHA-256; the over-limit memo remains
+pin-only. Exact pin availability is not counted as content discovery, so the
+44-source gap remains visible rather than being treated as a retrieval pass.
+
+The moving-projector Book03 density bridge builds narrowly as
+`D0.Analysis.MovingProjectorBookPriceDensityBridge` (3279 Lake jobs, Lean
+4.30.0). The final-build wrapper recognized the existing successful `D0.All`
+receipt for the identical Lean-source digest
+`deb9e9f8d99b486bd1e1a36e2da8c8f79732ba4cc79635348ae617cfee6eb073`, dependency
+digest `a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e` and
+environment digest `c0db61419aa16f391029b4ce85fed428739da0c9ed3166296772aa22cd86068b`;
+it returned the exact-receipt skip without claiming a fresh rebuild. The
+receipt and retrieval report are under
+[`pr402_cold_start_refresh_2026-11-04_b3c93862`](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr402_cold_start_refresh_2026-11-04_b3c93862/SUMMARY_RU.md).
+
+This formalizes and integrates the finite moving-cut price on its declared
+matrix chart. It does not select a physical price, admitted execution, or GR
+source. #334 remains unchanged and `GR_closed=false`.
