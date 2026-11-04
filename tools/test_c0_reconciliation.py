@@ -15,6 +15,7 @@ from pathlib import Path
 from unittest import mock
 
 from tools import c0_reconciliation as c0
+from tools import lean_declaration_inventory as inventory_tool
 
 
 class RepositoryFixture:
@@ -574,7 +575,7 @@ class KernelSectionFixture:
         self.second_path = "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
         self.write(self.second_path, "-- second owner fixture source\n")
         self.write("03_FORMALIZATION/lean-toolchain", "fixture-toolchain\n")
-        self.write("tools/lean_declaration_inventory.py", "# fixture collector\n")
+        self.write("tools/lean_declaration_inventory.py", Path(inventory_tool.__file__).read_text())
         self.write(self.review_path, "Existing application review, not C0 acceptance.\n")
         self.source_commit = self.commit("source and prior review")
         self.source_blob = self.git("rev-parse", f"HEAD:{self.source_path}")
@@ -603,7 +604,9 @@ class KernelSectionFixture:
                           "snapshot_commit": self.source_commit, "worktree_dirty": False,
                           "public_import_root": "D0.All", "inventory_mode": "owning_module_enumeration",
                           "toolchain": "fixture-toolchain", "lean_source_digest": "1" * 64,
-                          "collector_sha256": hashlib.sha256(b"# fixture collector\n").hexdigest(),
+                          "requested_modules": [self.module], "module_prefix": None,
+                          "collector_sha256": hashlib.sha256(inventory_tool.lean_module_collector(
+                              [self.module], "D0.All").encode()).hexdigest(),
                           "declarations": [{"name": self.unit["declaration"], "exists": True,
                                             "internal_name": False, "module": self.module,
                                             "source_path": self.module_path, "declaration_kind": "theorem",
@@ -644,6 +647,9 @@ class KernelSectionFixture:
         self.units = [self.unit, second]
         self.inventory["declarations"].append(dict(self.inventory["declarations"][0],
             name=second["declaration"], module=self.second_module, source_path=self.second_path))
+        self.inventory["requested_modules"].append(self.second_module)
+        self.inventory["collector_sha256"] = hashlib.sha256(inventory_tool.lean_module_collector(
+            self.inventory["requested_modules"], "D0.All").encode()).hexdigest()
         blob = self.git("rev-parse", f"{self.source_commit}:{self.second_path}")
         self.pins = replace(self.pins, section_label="Book01 fixture", source_anchor="01.1.8",
                             units_heading="C0 Book01 mathematical-unit candidates",
@@ -841,9 +847,31 @@ class KernelSectionTests(unittest.TestCase):
                 ref = self.repo.update_inventory(lambda i: i["declarations"][0].update(change))
                 self.assert_issue(self.repo.view(ref), "compiled_inventory", "complete proof metadata")
 
-    def test_reported_collector_digest_is_checked_against_source_bytes(self):
+    def test_reported_collector_digest_is_checked_against_generated_script(self):
         ref = self.repo.update_inventory(lambda i: i.update(collector_sha256="2" * 64))
         self.assert_issue(self.repo.view(ref), "compiled_inventory", "collector digest differs")
+
+    def test_python_source_hash_is_not_a_lean_collector_hash(self):
+        digest = hashlib.sha256(Path(inventory_tool.__file__).read_bytes()).hexdigest()
+        ref = self.repo.update_inventory(lambda i: i.update(collector_sha256=digest))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "generated Lean collector")
+
+    def test_bulk_omitted_proof_collector_is_not_full_proof_evidence(self):
+        digest = hashlib.sha256(inventory_tool.lean_module_collector(
+            [self.repo.module], "D0.All", include_proof_details=False).encode()).hexdigest()
+        ref = self.repo.update_inventory(lambda i: i.update(collector_sha256=digest))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "generated Lean collector")
+
+    def test_generator_used_to_check_digest_must_match_snapshot(self):
+        other = self.repo.root / "different_generator.py"
+        other.write_text("# not the pinned generator\n")
+        with mock.patch.object(inventory_tool, "__file__", str(other)):
+            self.assert_issue(self.repo.view(), "compiled_inventory", "running collector generator differs")
+
+    def test_inventory_request_cannot_omit_secondary_owner(self):
+        self.repo.use_multiple_owners()
+        ref = self.repo.update_inventory(lambda i: i.update(requested_modules=[self.repo.module]))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "enumerate every pinned owner")
 
     def test_cli_book_selector_requires_kernel_mode(self):
         proc = subprocess.run([sys.executable, str(Path(c0.__file__)), "--repo", str(self.repo.root),

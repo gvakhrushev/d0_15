@@ -12,7 +12,10 @@ import subprocess
 import tempfile
 from typing import Any
 
-import lean_task_build
+try:
+    from tools import lean_task_build
+except ModuleNotFoundError:
+    import lean_task_build
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FORMAL = ROOT / "03_FORMALIZATION"

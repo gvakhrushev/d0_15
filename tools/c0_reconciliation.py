@@ -868,11 +868,28 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             for field in ("lean_source_digest", "collector_sha256"):
                 if not isinstance(inv.get(field), str) or not re.fullmatch(r"[0-9a-f]{64}", inv[field]):
                     raise MissingEvidence("kernel inventory " + field + " is malformed")
-            if inv["collector_sha256"] != hashlib.sha256(git.data(old, collector_path)).hexdigest():
-                raise MissingEvidence("kernel inventory collector digest differs from tracked collector")
+            # collector_sha256 authenticates generated Collect.lean, not this
+            # Python source file. Recreate only that text, never invoke Lake.
+            try:
+                from tools import lean_declaration_inventory as collector
+            except ModuleNotFoundError:
+                import lean_declaration_inventory as collector
+            generator_bytes = Path(collector.__file__).read_bytes()
+            if generator_bytes != git.data(snapshot, collector_path):
+                raise MissingEvidence("running collector generator differs from selected snapshot")
+            modules = inv.get("requested_modules")
+            if (not isinstance(modules, list) or not modules
+                    or any(not isinstance(m, str) for m in modules)
+                    or inv.get("module_prefix") is not None
+                    or not set(data["source_and_primary"]["owners"]).issubset(modules)):
+                raise MissingEvidence("kernel inventory must enumerate every pinned owner explicitly")
+            generated = collector.lean_module_collector(modules, "D0.All", include_proof_details=True)
+            if inv["collector_sha256"] != hashlib.sha256(generated.encode("utf-8")).hexdigest():
+                raise MissingEvidence("kernel inventory collector digest differs from generated Lean collector")
             evidence.update(state="reported_compiled_metadata_consistent_not_replayed",
                             tracked_lean_inputs="unchanged_between_snapshots",
                             toolchain=expected_toolchain, collector_source="unchanged_between_snapshots",
+                            collector_script="regenerated_text_matches_digest_not_executed",
                             lean_source_digest=inv["lean_source_digest"],
                             collector_sha256=inv["collector_sha256"])
             declarations = inv["declarations"]
