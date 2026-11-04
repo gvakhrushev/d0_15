@@ -3477,6 +3477,45 @@ class ProofArchitectureTests(unittest.TestCase):
             )
             self.assertEqual(result.returncode, 0, f"{commit} is not in current #334 ancestry")
 
+    def test_pr334_e94_owner_delta_search_index_is_manifest_exact(self) -> None:
+        report_dir = (
+            proof.ROOT
+            / "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+            "reports/pr334_owner_delta_2026-11-04_e94e518c"
+        )
+        manifest = json.loads((report_dir / "owner_delta_manifest.json").read_text(encoding="utf-8"))
+        index_dir = proof.ROOT / cold_start.PR334_OWNER_DELTA_SEARCH_INDEX_DIR
+        rendered = cold_start.render_pr334_owner_delta_search_indexes(manifest)
+        self.assertEqual(
+            {path.relative_to(proof.ROOT).as_posix() for path in index_dir.glob("*.md")},
+            set(rendered),
+        )
+        for relative, expected_text in rendered.items():
+            self.assertEqual((proof.ROOT / relative).read_text(encoding="utf-8"), expected_text)
+
+        searchable = [
+            artifact for artifact in manifest["artifacts"]
+            if artifact["retrieval_mode"] == "exact-pinned-content"
+        ]
+        pin_only = [
+            artifact for artifact in manifest["artifacts"]
+            if artifact["retrieval_mode"] == "exact-git-pin-only-over-search-limit"
+        ]
+        self.assertEqual(len(searchable), 67)
+        self.assertEqual(len(pin_only), 1)
+        self.assertEqual(len(rendered), 17)
+        all_index_text = "\n".join(rendered.values())
+        self.assertEqual(all_index_text.count("Search anchor:"), 17)
+        self.assertNotIn(pin_only[0]["path"], all_index_text)
+
+        case = next(row for row in cold_start.CASES
+                    if row["id"] == "pr334-native-kappa-owner-delta")
+        self.assertEqual(case["required_refs"], list(rendered))
+        self.assertEqual(
+            {row["path"] for row in case["required_sources"]},
+            {artifact["path"] for artifact in searchable},
+        )
+
     def test_current_cold_start_summary_covers_proper_lorentz_orbit_case(self) -> None:
         summary_path = (
             proof.ROOT

@@ -2151,8 +2151,48 @@ PR334_OWNER_DELTA_MANIFEST = (
     "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
     "reports/pr334_owner_delta_2026-11-04_e94e518c/owner_delta_manifest.json"
 )
+PR334_OWNER_DELTA_SEARCH_INDEX_DIR = (
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+    "pr334_owner_delta_query_indexes_2026-11-04"
+)
 _pr334_owner_delta = json.loads((ROOT / PR334_OWNER_DELTA_MANIFEST).read_text(encoding="utf-8"))
 _pr334_delta_queries = _pr334_owner_delta["cold_start_queries"]
+
+
+def render_pr334_owner_delta_search_indexes(
+        manifest: dict[str, Any]) -> dict[str, str]:
+    """Render one filename-ranked locator per query, without copying owner files."""
+    rendered: dict[str, str] = {}
+    for index, query in enumerate(manifest["cold_start_queries"]):
+        matching = [
+            artifact for artifact in manifest["artifacts"]
+            if artifact.get("retrieval_mode") == "exact-pinned-content"
+            and query in artifact.get("queries", [])
+        ]
+        if not matching:
+            continue
+        slug = re.sub(r"[^a-z0-9]+", "_", query.casefold()).strip("_")
+        relative = f"{PR334_OWNER_DELTA_SEARCH_INDEX_DIR}/query_{index:02d}_{slug}.md"
+        lines = [
+            f"# Exact PR #334 owner pins for query {index}",
+            "",
+            f"Search anchor: {query}.",
+            f"Owner branch: `{manifest['source_branch']}`; head: `{manifest['source_head']}`.",
+            "The rows below point to exact owner commit/path/blob snapshots. "
+            "This locator does not copy or semantically accept those sources.",
+            "",
+        ]
+        for artifact in matching:
+            lines.append(
+                f"Query anchor: {query}; exact owner source path: `{artifact['path']}`; "
+                f"commit: {artifact['commit']}; blob: {artifact['blob']}."
+            )
+        lines.append("")
+        rendered[relative] = "\n".join(lines)
+    return rendered
+
+
+_pr334_delta_search_indexes = render_pr334_owner_delta_search_indexes(_pr334_owner_delta)
 _pr334_delta_sources = []
 for _artifact in _pr334_owner_delta["artifacts"]:
     if _artifact.get("retrieval_mode") != "exact-pinned-content":
@@ -2171,18 +2211,16 @@ for _artifact in _pr334_owner_delta["artifacts"]:
 CASES.append({
     "id": _pr334_owner_delta["cold_start_case_id"],
     "queries": _pr334_delta_queries,
-    "required_refs": [
-        PR334_OWNER_DELTA_MANIFEST,
-        "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md",
-        "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md",
-        "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
-        "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
-    ],
+    "required_refs": list(_pr334_delta_search_indexes),
     "required_sources": _pr334_delta_sources,
     "scope_review": (
-        "This case pins all artifacts changed from the prior integrated #334 checkpoint "
-        "to the source PR head, including the 4 November paid-clock-credit continuation. "
-        "It retrieves exact source bytes and their proof/checker receipts; it does not "
+        "This case uses 17 filename-ranked query-to-pin locator files, each checked against "
+        "the exact owner commit/path/blob manifest for the 67 under-limit artifacts changed "
+        "from the prior integrated #334 checkpoint, including the 4 November paid-clock-credit "
+        "continuation. The cold-start report keeps direct-content hits distinct from exact "
+        "pin-loaded snapshots; only direct-content hits count as found. The remaining "
+        "5,061,506-byte owner memo is Git-pin-only because it exceeds the text-search limit; "
+        "the owner pin regression checks it with the other changed paths. This does not "
         "promote research calculations to Lean theorems, selected physical price, "
         "same-execution admission, accepted GR composition, or GR closure. The "
         "conditional kappa result keeps its exact hypotheses and unresolved B/D "
