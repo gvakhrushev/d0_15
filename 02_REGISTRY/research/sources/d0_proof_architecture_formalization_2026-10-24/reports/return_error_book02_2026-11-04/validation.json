@@ -1,0 +1,53 @@
+{
+  "schema": "d0-bounded-formalization-checkpoint/1",
+  "source_commit": "107b155f44fb58050d56ecd6d9f9968da87a5035",
+  "worktree_dirty_at_inventory": false,
+  "lean_source_digest": "930bd44c15b594d76e81fe387d6857aeb38548bca97536273718c8e3cac1f5a0",
+  "public_import": "D0.All",
+  "files": {
+    "declarations.json": {
+      "bytes": 585236,
+      "sha256": "db0d5f759b0932713e18a53c10029229843765f6fc9825847f5a5ca6f9e5125c"
+    },
+    "build_receipt.json": {
+      "bytes": 3102,
+      "sha256": "99201673929d3dab2e3a30690d85ea9fe92e66f76017f184e012534c011608cd"
+    }
+  },
+  "validation": {
+    "narrow_return_bound": "PASS",
+    "full_D0_All": {
+      "result": "PASS",
+      "lake_jobs": 4776,
+      "warning_scope": "existing unrelated Lean warnings"
+    },
+    "c0_reconciliation_tests": {
+      "passed": 64,
+      "new_kernel_tests": 17,
+      "final_kernel_rerun_passed": 17
+    },
+    "targeted_search_tests": {
+      "passed": 14,
+      "overlap_with_compactor_suite": true
+    },
+    "full_compactor_suite": {
+      "passed": 108
+    },
+    "structural": [
+      "validate_repo",
+      "generate_lean_views --check",
+      "check_no_sorry_in_core --all",
+      "formalization_debt_audit --check",
+      "git diff --check"
+    ],
+    "full_cold_start_replayed": false
+  },
+  "scope": {
+    "new_lean_theorems": 10,
+    "relative_price_10_to_12_formalized": false,
+    "c0_slice": "30 Book02 02.3b candidates; Book01 and full C0 remain pending",
+    "c0_frozen": false,
+    "c0_semantic_acceptance": false,
+    "GR_closed": false
+  }
+}
