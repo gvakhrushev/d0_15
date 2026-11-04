@@ -81,7 +81,8 @@ finite fixture has five births, 46 native calls, 51 stages, `D=623`, and
 not a numerical replay or independent proof of the owner's `q≥3` asymptotic
 argument, CT4–7/CT23–25, XF9, SC13/FN, §7fd/§7fg or §7fj.
 
-Four independent bounded executions passed with `-Werror` and `-O -Werror`:
+Four bounded executions of the same owner checker passed with `-Werror` and
+`-O -Werror`; these are not independent implementations:
 
 - Python 3.12.13 / NumPy 2.5.4 / SciPy 1.18.1 / SymPy 1.14.0: normal and
   optimized stdout are byte-identical, SHA-256
@@ -98,8 +99,9 @@ The owner reported Python 3.12.14 / NumPy 2.3.5 / SciPy 1.16.3 / SymPy
 1.14.0. Full local stdout/stderr, exact environments and hashes are in
 [results](results/) and [comparison.json](results/comparison.json).
 
-Verify stored bytes and local Git-object provenance without executing the
-owner checker:
+Verify the stored patch, source snapshots, checker, proof, compact owner
+receipt and local Git-object provenance without executing owner code. This
+command does not verify the separately recorded `results/` files:
 
 ```sh
 python3 02_REGISTRY/research/sources/d0_334_post_afd_3fd_intake_2026-11-05/verify_intake.py --verify-source-objects
