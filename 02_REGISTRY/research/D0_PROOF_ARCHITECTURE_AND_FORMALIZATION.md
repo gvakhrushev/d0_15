@@ -17024,3 +17024,40 @@ The module and its two immediate dependencies passed direct Lean checks in
 scratch; other cached dependencies were not independently attested by that
 run. Independent read-only review checked the two eventual hypotheses and
 transport. A clean final integration build remains required on final inputs.
+
+
+### Faithful two-block representation gives a memory lower bound
+
+`D0.Algebra.FaithfulMatrixPairBound` proves the reusable algebraic part of the
+owned three-tick DATA-memory result. For `n > 0`, an injective unital complex
+algebra homomorphism from `M_n(ℂ) × M_n(ℂ)` into endomorphisms of a
+finite-dimensional complex vector space forces `2*n ≤ finrank ℂ V`. The proof
+constructs nonzero corner seeds from injectivity and proves independence of
+the `2*n` vectors by the matrix-unit relations; neither dimension nor
+independence is an input. A supplied faithful unital *-representation on a
+finite-dimensional complex inner-product space yields the same bound, and the
+`n=8` specialization yields `16 ≤ finrank ℂ V`.
+
+The explicit standard pair action is injective and attains `2*n` in the
+**algebra-homomorphism** class; the projection to one block is non-injective
+for `n > 0`. The current witness has not established *-preservation, so it
+does not alone establish sharpness in the *-representation class. The source's
+identification of the algebra of all actual future effects, including the
+original 128 Kraus operators and its exact modular-rank input, has not been
+transported into this Lean theorem. This slice does not select a physical
+execution, resource, clock or work; scientific owner #334 remains open and
+`GR_closed=false`.
+
+Source: #334
+`A4D_ORIGINAL_THREETICK_FUTURE_CAR16_SHARP_MINIMAL_QUANTUM_MEMORY_2026_10_26.md`,
+commit `eebcb5e467742df3e9cf7fa9702042d7294aa742`, blob
+`73af383e07a72a19df7efda2788950003ce73d0b`, section 2. Its upstream operator
+span is a separate input at the same commit, blob
+`08b9b07eb01b1c59643aec1d484d165146762f6d`. The exact Lean module passed direct
+checking with an existing Mathlib cache and received an independent read-only
+review. That check did not attest all cached dependencies; clean final
+integration remains required on final inputs.
+
+`#print axioms` on the general bound, the `n=8` star bound, the algebraic
+attaining witness and the one-block negative control reports `propext`,
+`Classical.choice`, and `Quot.sound`; this uses the same cached dependencies.
