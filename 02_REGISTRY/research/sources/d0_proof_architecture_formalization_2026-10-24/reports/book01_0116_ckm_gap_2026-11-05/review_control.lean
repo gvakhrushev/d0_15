@@ -1,0 +1,11 @@
+import D0.Matter.CKMBasisOrigin
+import D0.Matter.CKMOverlapUnderdeterminationNoGo
+
+#check D0.Matter.ckm_origin_candidate_matrix_unique
+#check D0.Matter.ckm_no_free_matrix_at_fixed_basis_origin
+#check D0.Matter.CKMOverlapUnderdeterminationNoGo.ckm_overlap_underdetermination_nogo
+#check D0.Matter.CKMOverlapUnderdeterminationNoGo.overlap_invariants_differ
+#print axioms D0.Matter.ckm_origin_candidate_matrix_unique
+#print axioms D0.Matter.ckm_no_free_matrix_at_fixed_basis_origin
+#print axioms D0.Matter.CKMOverlapUnderdeterminationNoGo.ckm_overlap_underdetermination_nogo
+#print axioms D0.Matter.CKMOverlapUnderdeterminationNoGo.overlap_invariants_differ

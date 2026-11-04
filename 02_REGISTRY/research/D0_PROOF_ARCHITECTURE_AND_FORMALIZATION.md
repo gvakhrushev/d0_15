@@ -17670,3 +17670,11 @@ stack. An independently exposed checker-substitution false-PASS was fixed;
 standalone replay now checks the pinned checker before each run and rejects
 stderr, with hostile controls in CI. The local manifest remains trusted and
 the replay is not a sandbox. No full native execution or GR closure follows.
+
+### Open Book01 link to CKM guardrail
+
+The [pinned CKM gap](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0116_ckm_gap_2026-11-05/SUMMARY_RU.md)
+records that the conditional fixed-basis CKM theorem consumes supplied strict
+basis selectors; it does not derive them from Book01's general hidden-variable
+wording. The cited original locator and the physical source-to-CKM map remain
+unverified. This is an open gap, not acceptance of the source atom.
