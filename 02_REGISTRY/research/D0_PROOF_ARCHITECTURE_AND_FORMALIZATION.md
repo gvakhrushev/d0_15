@@ -17349,3 +17349,10 @@ replayed bounded controls. Owner-reported recorded-operation and clock
 constructions retain their task guards, source rows and physical premises;
 weaker-task negative controls remain in the same packet. This is a research
 intake, not independent acceptance, a complete native replay, or GR closure.
+
+The original creator bridge was independently reviewed against both pinned
+Python sources; the checker now also runs on Python 3.9. Its narrow build and
+the merged public build are recorded with exact source and cache boundaries in
+[the integrated receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/creator_bridge_integrated_d2d_2026-11-04/SUMMARY_RU.md).
+The Python-to-Lean correspondence is a checked manual transcription, not an
+extracted formal semantics of Python.
