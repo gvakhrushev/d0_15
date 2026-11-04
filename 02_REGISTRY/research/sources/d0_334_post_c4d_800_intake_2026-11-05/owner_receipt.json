@@ -1,0 +1,401 @@
+{
+  "check_count": 65,
+  "checker_sha256": "85af76b7882f26a7ad9f03f9948c23fce66acde23c684bf4986e7d2af1abf0ee",
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "unique published 7fh.G1 Python block in repository primary"
+    },
+    {
+      "kind": "provenance",
+      "label": "previous bounded AST loader SHA256 pin"
+    },
+    {
+      "kind": "structural",
+      "label": "previous loader has the pinned single fixture argument"
+    },
+    {
+      "kind": "structural",
+      "label": "only native boost argument changed to r=1/9"
+    },
+    {
+      "kind": "provenance",
+      "label": "original constructor SHA256 pin"
+    },
+    {
+      "kind": "provenance",
+      "label": "original constructor Git blob pin"
+    },
+    {
+      "kind": "structural",
+      "label": "only six pinned definitions extracted; no historical suite"
+    },
+    {
+      "kind": "structural",
+      "label": "exactly one original native call"
+    },
+    {
+      "kind": "structural",
+      "label": "all128 operators and original boost jets retained"
+    },
+    {
+      "kind": "structural",
+      "label": "all original structural zero operators and jets retained exactly"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "full128 trace-preserving effect"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "full128 original boost trace-preserving jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all63 original proportional pair operators"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all63 original proportional pair boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "four canonical born DATA bits normalized"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "canonical born ubit gives unit-modulus complex phase"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "five real born bits equal phased complex canonical DATA"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "one-sided seven-bit born frame gives computational input zero"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "DATA bit0 real preparation tangent preserves norm"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 actual real born posterior vectors"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 actual real born posterior boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 actual real born posterior vectors"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 actual real born posterior boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 real and complex history probabilities"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 real and complex probability boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 real and complex history probabilities"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 real and complex probability boost jets"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "one and two complete histories normalized"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "one and two total probability boost jets vanish"
+    },
+    {
+      "kind": "structural",
+      "label": "all exact zero history slots and probability jets remain in full arrays"
+    },
+    {
+      "kind": "structural",
+      "label": "entire 128-squared chronological tree retained"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 pure CQ block nonzero eigenvalues equal probabilities"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 pure CQ block nonzero eigenvalues equal probabilities"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "one-round pure joint CQ entropy equals fine Shannon"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "two-round pure joint CQ entropy equals fine Shannon"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "independent real preparation row equals full history adjoint"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "nominal actual pure preparation row is nonzero"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "original ordinary-pair effect 4p_squared Delta_one_minus_Delta"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "ordinary-pair effect original boost jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "full two-round literal marked cost equals independent CP-adjoint ledger"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "full two-round marked cost source equals independent CP-adjoint jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual no-reset pair occupations at both temporal positions"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all-entry full CP map output-rotation tangent is zero"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "finite output rotation preserves entire CP map"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "both independent temporal price rows equal 4pa occupation"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "two-round intensive temporal dual norm retains positive row"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "stationary SO2 first output amplitude equals original costly twin"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "stationary SO2 second output amplitude equals original cheap twin"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "stationary output section preserves entire CP map"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "exact two-round eliminated price equals original minus pair bill"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "exact two-round eliminated field source retains occupation derivative"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "both independent output rows vanish at the specified stationary section"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "stationary independent rotor Hessians are 4 occupation over ell"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "distinct temporal rotor rows have zero mixed Hessian"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT original fine-pair price derivative f_prime(p)=2"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT output-rotation probability derivative 2pa"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT original pair price f(p)=p_cubed"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT Kraft pair price f(p_squared)=0"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT Kraft pair stationary row at b=p_squared"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT pair price strictly convex in probability on zero-one interval"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT stationary output section lies in SO2"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT stationary section sends p_a to a_p"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT stationary section sine equals minus p_cubed"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT rotor Hessian at stationary section is 4w_over_ell"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "EXACT scalar branch refinement retains the same quantum-block term"
+    }
+  ],
+  "classifications": {
+    "exact_symbolic": 11,
+    "nominal_numeric": 42,
+    "provenance": 4,
+    "structural": 8
+  },
+  "fixture": {
+    "complex_phase": "sqrt(p)+i p",
+    "data_input": "(sqrt(p),p)^tensor4",
+    "dr_factor": "2/(1-r^2)",
+    "native_jet": "d/dtheta",
+    "nu": "3/5",
+    "phases": [
+      "i",
+      "i",
+      "-1",
+      "-i"
+    ],
+    "preparation_tangent": "I8 tensor [[0,-1],[1,0]] on complex DATA",
+    "r": "1/9",
+    "real_input": "(sqrt(p),p)^tensor5",
+    "theta": "2 arctanh(1/9)"
+  },
+  "max_nominal_residual": 5.37178808379668e-15,
+  "one_round": {
+    "cost": 1.0131178543938668,
+    "cost_source": -0.0004975872888551721,
+    "entropy": 0.13774041056675407,
+    "entropy_source": -0.0036166510497713327,
+    "positive_slots": 64,
+    "price": 0.7268813086695521,
+    "source": 0.007018127956345569
+  },
+  "owner_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "owner_sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+  "pair_occupation_theta_jets": [
+    -0.0007870539152514056,
+    -0.0007887415262127682
+  ],
+  "pair_occupations": [
+    0.02092981303989651,
+    0.02092948534827253
+  ],
+  "predecessor_loader_sha256": "cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c",
+  "pure_preparation_source": -0.0018646500556371848,
+  "reduced_two_round": {
+    "cost": 2.0163538605973805,
+    "cost_source": -0.0006242520382282245,
+    "entropy": 0.2754798986238635,
+    "entropy_source": -0.007237172562814314,
+    "positive_slots": 4096,
+    "price": 1.4438826862039784,
+    "source": 0.014415221611277191
+  },
+  "residuals": {
+    "DATA bit0 real preparation tangent preserves norm": 0.0,
+    "actual no-reset pair occupations at both temporal positions": 1.3877787807814457e-17,
+    "all-entry full CP map output-rotation tangent is zero": 1.5152185993940876e-20,
+    "all128 actual real born posterior boost jets": 2.4532694666933987e-18,
+    "all128 actual real born posterior vectors": 6.206335383118183e-17,
+    "all128 pure CQ block nonzero eigenvalues equal probabilities": 1.1102230246251565e-16,
+    "all128 real and complex history probabilities": 1.1102230246251565e-16,
+    "all128 real and complex probability boost jets": 3.2526065174565133e-19,
+    "all16384 actual real born posterior boost jets": 2.168404344971009e-18,
+    "all16384 actual real born posterior vectors": 6.206335383118183e-17,
+    "all16384 pure CQ block nonzero eigenvalues equal probabilities": 2.6020852139652106e-18,
+    "all16384 real and complex history probabilities": 1.1102230246251565e-16,
+    "all16384 real and complex probability boost jets": 8.673617379884035e-19,
+    "all63 original proportional pair boost jets": 6.938893903907228e-18,
+    "all63 original proportional pair operators": 1.3877787807814457e-17,
+    "both independent output rows vanish at the specified stationary section": 9.367506770274758e-17,
+    "both independent temporal price rows equal 4pa occupation": 1.1102230246251565e-16,
+    "canonical born ubit gives unit-modulus complex phase": 0.0,
+    "distinct temporal rotor rows have zero mixed Hessian": 1.0258575691844983e-18,
+    "exact two-round eliminated field source retains occupation derivative": 6.938893903907228e-18,
+    "exact two-round eliminated price equals original minus pair bill": 4.440892098500626e-16,
+    "finite output rotation preserves entire CP map": 1.6653345369377348e-15,
+    "five real born bits equal phased complex canonical DATA": 6.206335383118183e-17,
+    "four canonical born DATA bits normalized": 4.440892098500626e-16,
+    "full two-round literal marked cost equals independent CP-adjoint ledger": 1.7763568398275733e-15,
+    "full two-round marked cost source equals independent CP-adjoint jet": 1.0963315984298679e-18,
+    "full128 original boost trace-preserving jet": 9.599935265639418e-18,
+    "full128 trace-preserving effect": 3.774758286585258e-15,
+    "independent real preparation row equals full history adjoint": 5.37178808379668e-15,
+    "one and two complete histories normalized": 4.440892098500626e-16,
+    "one and two total probability boost jets vanish": 6.505213034913027e-19,
+    "one-round pure joint CQ entropy equals fine Shannon": 1.1102230246251565e-16,
+    "one-sided seven-bit born frame gives computational input zero": 2.220446049250313e-16,
+    "ordinary-pair effect original boost jet": 9.599276156377502e-18,
+    "original ordinary-pair effect 4p_squared Delta_one_minus_Delta": 5.2042441315149596e-17,
+    "stationary SO2 first output amplitude equals original costly twin": 1.3877787807814457e-17,
+    "stationary SO2 second output amplitude equals original cheap twin": 6.938893903907228e-18,
+    "stationary independent rotor Hessians are 4 occupation over ell": 1.6653345369377348e-16,
+    "stationary output section preserves entire CP map": 1.734723475976807e-18,
+    "two-round intensive temporal dual norm retains positive row": 1.0408340855860843e-16,
+    "two-round pure joint CQ entropy equals fine Shannon": 0.0
+  },
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.full128-born-history-joint-source/1",
+  "scope": {
+    "GR_closed": false,
+    "actual_compiled_word_price_computed": false,
+    "all128_and_all16384_slots_retained": true,
+    "continuous_native_controls_admitted": false,
+    "nominal_not_interval": true,
+    "physical_Info_selected": false,
+    "pure_joint_CQ_Shannon_identity": "analytic for efficient complete words and all pure retained helpers"
+  },
+  "stationary_rotor_hessian": [
+    0.17397588296841307,
+    0.17397315908170133
+  ],
+  "status": "PASS",
+  "temporal_sources": [
+    0.04067652835953699,
+    0.04067589149968496
+  ],
+  "tolerances": {
+    "nominal": 4e-11,
+    "nominal_jet": 4e-10
+  },
+  "two_round": {
+    "cost": 2.026235500507436,
+    "cost_source": -0.0009962468810480573,
+    "entropy": 0.2754798986238635,
+    "entropy_source": -0.007237172562814316,
+    "positive_slots": 4096,
+    "price": 1.453764326114034,
+    "source": 0.014043226768457363
+  }
+}

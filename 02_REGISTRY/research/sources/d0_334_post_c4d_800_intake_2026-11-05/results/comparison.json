@@ -1,0 +1,118 @@
+{
+  "different_owner_receipt_fields": [
+    "max_nominal_residual",
+    "one_round",
+    "pair_occupation_theta_jets",
+    "reduced_two_round",
+    "residuals",
+    "runtime",
+    "two_round"
+  ],
+  "execution_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "files": {
+    "python312_normal.json": {
+      "bytes": 13611,
+      "sha256": "f1c8d9edaf6dee7842a40a406d4b8fec6e166ec9e04a96ad49fc91ec9971cf40"
+    },
+    "python312_normal.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python312_optimized.json": {
+      "bytes": 13611,
+      "sha256": "f1c8d9edaf6dee7842a40a406d4b8fec6e166ec9e04a96ad49fc91ec9971cf40"
+    },
+    "python312_optimized.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_normal.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_normal.stderr": {
+      "bytes": 938,
+      "sha256": "976c5c2a82466c2e0c65850fe8275c679aa6ffe0a3bd50c3bd6cdc880f49ce03"
+    },
+    "python39_optimized.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_optimized.stderr": {
+      "bytes": 938,
+      "sha256": "976c5c2a82466c2e0c65850fe8275c679aa6ffe0a3bd50c3bd6cdc880f49ce03"
+    }
+  },
+  "local_check_count": 65,
+  "local_check_counts_by_kind": {
+    "exact_symbolic": 11,
+    "nominal_numeric": 42,
+    "provenance": 4,
+    "structural": 8
+  },
+  "local_environment": {
+    "numpy": "2.5.4",
+    "python": "3.12.13",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0"
+  },
+  "local_selected_values": {
+    "max_nominal_residual": 5.373739647707154e-15,
+    "pure_preparation_source": -0.0018646500556371848,
+    "stationary_rotor_hessian": [
+      0.17397588296841307,
+      0.17397315908170133
+    ],
+    "temporal_sources": [
+      0.04067652835953699,
+      0.04067589149968496
+    ]
+  },
+  "machine": "arm64",
+  "normal_optimized_byte_identical": true,
+  "numeric_scope": "42 nominal floating checks, not interval certificates",
+  "owner_check_count": 65,
+  "owner_check_counts_by_kind": {
+    "exact_symbolic": 11,
+    "nominal_numeric": 42,
+    "provenance": 4,
+    "structural": 8
+  },
+  "owner_environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "owner_receipt_byte_identical": false,
+  "owner_selected_values": {
+    "max_nominal_residual": 5.37178808379668e-15,
+    "pure_preparation_source": -0.0018646500556371848,
+    "stationary_rotor_hessian": [
+      0.17397588296841307,
+      0.17397315908170133
+    ],
+    "temporal_sources": [
+      0.04067652835953699,
+      0.04067589149968496
+    ]
+  },
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python312_modes_exit_code": 0,
+  "python39_environment": {
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0"
+  },
+  "python39_failure": "RuntimeWarning divide by zero encountered in original constructor matmul, promoted to error; the 65 checks did not complete",
+  "python39_modes_exit_code": 1,
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}
