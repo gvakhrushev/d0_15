@@ -16784,3 +16784,26 @@ quotient, assumptions and example. Final provenance-checked integration
 remains required. These are all finite action words and tests of the supplied
 abstract system; no physical memory implementation, cost, effective choice,
 or the source's broader necessity/falsifiability claims follow.
+
+### Memory bounds through an interpretation — 4 November 2026
+
+Book06's current synthesis on future memory is source blob
+`6ebf38ee1f10c94eda7ff752ceb0960253dc0199`, bytes `[1254,2263)`, SHA-256
+`dc08147274c9bcda27f0077816fa21e43d550eddeb2cb5233c739eff991ad4e6`.
+`D0.Foundation.InterpretedFutureMemoryBound` composes the owned injective
+map of source future classes with the sufficient-memory class injection.
+For a supplied `Interpretation F G`, a finite memory decoding every common
+profile on all `G.State` has at least as many values as the finite source
+future quotient. Neither a finite common quotient nor full native-context
+coverage is assumed.
+
+For `visibleBitInterpretation`, a first-bit encoder reaches the exact bound
+of two memory values for the common interface, but no decoder of that same
+encoding recovers all native profiles because an extra native test separates
+two collapsed states. The existing no-native-coverage result is reused.
+Direct Lean passed for blob `f6fb7a10d0ce5ca2a98eabc5b08ad8178173fe95`
+with the new dependency compiled separately and other cached objects;
+independent review checked the composed injections and example. Full
+provenance-checked integration remains required. This is a scoped application
+to supplied abstract systems, not a native memory cardinality of four,
+physical implementation, algorithmic cost, clock/work price or coverage proof.

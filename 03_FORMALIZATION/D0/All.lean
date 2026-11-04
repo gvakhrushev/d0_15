@@ -272,6 +272,7 @@ import D0.Foundation.GraphSpaceNoIsometry
 import D0.Foundation.IndependentDetectionRepairGrammar
 import D0.Foundation.IndependentDetectionSideSymmetryBoundary
 import D0.Foundation.InformationConnectivity
+import D0.Foundation.InterpretedFutureMemoryBound
 import D0.Foundation.InvariantAlgebraDegree
 import D0.Foundation.InvariantMinimal
 import D0.Foundation.IsotropizationResidual
