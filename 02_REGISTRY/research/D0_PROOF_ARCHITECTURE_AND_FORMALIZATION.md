@@ -16807,3 +16807,24 @@ independent review checked the composed injections and example. Full
 provenance-checked integration remains required. This is a scoped application
 to supplied abstract systems, not a native memory cardinality of four,
 physical implementation, algorithmic cost, clock/work price or coverage proof.
+
+### Exact common versus native memory in the extra-bit example — 4 November 2026
+
+`D0.Foundation.ExtraBitNativeMemory` consumes the interpreted memory bound.
+In the supplied `extraBitTestSystem`, the empty action word and its two native
+test values distinguish both Boolean coordinates. The full native future
+quotient is therefore equivalent to `Bool × Bool` and has exactly four
+classes. Any finite memory decoding all native profiles on every state needs
+at least four values; an explicit pair encoder/decoder attains the bound.
+The previously constructed common interface has exactly two classes and its
+first-bit memory attains the lower bound two. Both claims concern the same
+abstract native state carrier and their own declared operation/test sets.
+
+Direct Lean passed for the reviewed original blob
+`2ee1b6ad2e4450f7a7eec6e3b0c0a875a484ba70`, using separately compiled new
+dependencies and existing cached objects; one proof-neutral comment was then
+clarified from Boolean outcomes to Boolean test values. Independent review
+checked the separation, quotient and attaining witnesses. Full
+provenance-checked integration of the published source remains required.
+These finite cardinalities do not establish physical admission, clock/work
+price, quantum dimension or computational optimality.
