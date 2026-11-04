@@ -69,7 +69,10 @@ worktree_dirty=false. Source digest совпадает с общей сборк�
 только стандартные Classical.choice, Quot.sound, propext.
 Типы и владельцы всех 44+30 книжных кандидатов повторно сверены без
 расхождений. Это число записей, не процент покрытия или C0 acceptance.
-Read-only книжные views выполняются после фиксации tracked inventory. Ни один такой view сам не запускает Lean
+Обе read-only сверки на snapshot `aa878117bc00b7bcd9b7f8cf27815889f89d51ea`
+прошли без issues: [Book01 — 44](book01_view.json), [Book02 — 30](book02_view.json).
+[validation.json](validation.json) фиксирует область, исправление checker и хеши.
+Полный тестовый вывод сохранён в [tool_tests.log](tool_tests.log). Ни один такой view сам не запускает Lean
 и не принимает научные приложения или глобальный состав C0.
 
 Исправление, найденное реальной сверкой: collector_sha256 удостоверяет
@@ -79,3 +82,23 @@ Lean-текст с теми же параметрами, без запуска L
 после этого изменения имеет те же 535 деклараций. Отдельные регрессии
 проверяют эту разницу, режим без proof details и неполный запрос владельцев.
 Полный связанный набор tooling tests прошёл: 119 тестов.
+
+## Повторение
+
+На указанном implementation/report snapshot, с той же версией генератора:
+
+```bash
+python3 tools/c0_reconciliation.py --repo . \
+  --snapshot aa878117bc00b7bcd9b7f8cf27815889f89d51ea \
+  --kernel-sections --kernel-book book01 \
+  --kernel-inventory 02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_template_budget_2026-11-04/declarations.json \
+  --kernel-inventory-sha256 581fa2a994be99c6e596d4b27f8fc10a5ce0add6e6929043aded31b130a53eb2
+```
+
+Для второго фрагмента заменяется только `--kernel-book book01` на `book02`.
+Для сборки: `python3 tools/lean_task_build.py narrow D0.Research.TaskFaithfulReturnTemplateBudget`,
+затем `python3 tools/lean_task_build.py final`. Для полного выбранного набора
+tooling tests используется команда из validation.json. Инвентарь повторяется
+с семью `--module`, перечисленными в его `requested_modules`; он должен
+извлекаться на чистой совместимой рабочей копии. Старый успешный receipt
+не удостоверяет изменённые источники или другую версию генератора.

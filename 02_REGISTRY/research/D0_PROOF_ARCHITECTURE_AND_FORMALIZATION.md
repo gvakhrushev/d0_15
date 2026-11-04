@@ -16368,3 +16368,14 @@ hostile owner/proof/source substitutions. The [checkpoint report](sources/d0_pro
 records exact build/compiled/view evidence. No full cold-start or historical
 #334 certificate replay is attributed to this increment. The entire
 formalization/refactoring programme remains active; `GR_closed=false`.
+
+The final clean public inventory is pinned at implementation commit
+`c25c66780fa4d9adec99996d512645243bc5ba72`, with the same Lean-source digest
+as the full build. At report snapshot `aa878117bc00b7bcd9b7f8cf27815889f89d51ea`,
+both views reconcile without issues: 44 Book01 and 30 Book02 candidate entries.
+The initial integration exposed a checker error: `collector_sha256` identifies
+the generated Lean collector, not its Python generator. The final checker
+independently pins the Python bytes and regenerates the exact Lean script
+before comparing its digest. It does not run Lake. The corrected extraction
+has unchanged declaration records; the failed check was not bypassed by
+rewriting an expected hash. Dedicated negative regressions retain this case.

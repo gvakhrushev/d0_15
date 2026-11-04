@@ -1,0 +1,84 @@
+{
+  "scope": "Finite Book01/Book02 source reconciliation and actual return-template tolerance; not full programme completion",
+  "implementation_commit": "c25c66780fa4d9adec99996d512645243bc5ba72",
+  "report_snapshot": "aa878117bc00b7bcd9b7f8cf27815889f89d51ea",
+  "lean_source_digest": "97b499af27d62fb54eaf1c9e0d9274a471f4ce74371533d5a58198e3b1f9954e",
+  "full_build": {
+    "command": "python3 tools/lean_task_build.py final",
+    "returncode": 0,
+    "lake_jobs": 4788,
+    "source_matches_inventory": true,
+    "warning_lines": 1323,
+    "new_module_warning_lines": 0
+  },
+  "compiled_inventory": {
+    "worktree_dirty": false,
+    "public_import_root": "D0.All",
+    "records": 535,
+    "new_named_budget_theorems": 7,
+    "new_budget_generated_helpers": 7,
+    "collector_script_sha256": "72704cc03a16d1d08e1c1977b147e6f735c19d580464771e9c12a40a4420ea63",
+    "new_budget_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "selected_book01_and_book02_signature_issues": []
+  },
+  "views": {
+    "book01": {
+      "snapshot": "aa878117bc00b7bcd9b7f8cf27815889f89d51ea",
+      "candidate_entries": 44,
+      "issues": [],
+      "collector_script": "regenerated_text_matches_digest_not_executed",
+      "semantic_acceptance": false
+    },
+    "book02": {
+      "snapshot": "aa878117bc00b7bcd9b7f8cf27815889f89d51ea",
+      "candidate_entries": 30,
+      "issues": [],
+      "collector_script": "regenerated_text_matches_digest_not_executed",
+      "semantic_acceptance": false
+    }
+  },
+  "tests": {
+    "command": "python3 -m unittest tools.test_c0_reconciliation tools.test_c0_book_byte_partition tools.test_lean_declaration_inventory",
+    "count": 119,
+    "returncode": 0
+  },
+  "guards": {
+    "repository": "PASS claims=889 assumptions=31 aliases=58 formal_support=253 lean_closure=976 warnings=0",
+    "generated_views": "PASS stale=0",
+    "no_shortcuts": "PASS",
+    "debt_non_growth": "PASS findings=5 baseline=5",
+    "diff": "PASS"
+  },
+  "independent_reviews": {
+    "book01_source_correspondence": "PASS on exact source, 44 candidates, owner/signature/hypothesis bindings, exclusions and Book02 reuse; not full C0 acceptance",
+    "template_budget": "PASS constants, positive denominators, finite horizon and actual-product application; not physical normalization selection",
+    "tooling": "PASS after producer-side collector field meaning was corrected; semantic acceptance remains pending"
+  },
+  "integration_correction": {
+    "initial_snapshot": "4271e81c47bd0578d10d04a2a5c42f88e2d4ac6d",
+    "both_initial_views_rejected": "collector_sha256 was incorrectly compared with Python generator bytes",
+    "corrected_at": "c25c66780fa4d9adec99996d512645243bc5ba72",
+    "method": "check exact pinned Python generator source, regenerate Collect.lean with identical owner order/root/proof mode, compare its digest; no Lake execution by the view",
+    "regressions": "Python-source hash rejected as Lean-script hash; omitted-proof script, running generator mismatch, omitted owner request rejected",
+    "declarations_unchanged_after_refresh": true
+  },
+  "not_rerun": [
+    "full cold-start suite",
+    "historical scientific #334 certificate checks"
+  ],
+  "programme_complete": false,
+  "c0_accepted": false,
+  "GR_closed": false,
+  "evidence_sha256": {
+    "declarations.json": "581fa2a994be99c6e596d4b27f8fc10a5ce0add6e6929043aded31b130a53eb2",
+    "build_receipt.json": "4c0af0b732f03b3c969537ce6055203369692da1b5727986558fdf5ce1eafd90",
+    "build.log.gz": "0709c866ca07baa3c857f138c7c8afac4f89a616631dacf29fb42da74960db23",
+    "book01_view.json": "fc084e28b7b67455e73968e55e48973e58d0bd43787dcb9fe7ff523002bac7e8",
+    "book02_view.json": "0b0c42e792469fc5a45e90ef9fed97acd350c3e69e8cd226d3f312219b5c38b7",
+    "tool_tests.log": "cf1c118e3d135a9754e5cae334880e5e6baa75e6e9030e8228bf455a25101188"
+  }
+}
