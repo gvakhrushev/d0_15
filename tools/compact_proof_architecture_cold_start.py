@@ -98,7 +98,7 @@ def _same_candidate_location(receipt: dict[str, Any], rank: int,
 def _direct_candidates(result: dict[str, Any], required: dict[str, Any]) -> list[tuple[int, dict[str, Any]]]:
     return [(hit["candidate_rank"], hit) for hit in _query_candidates(result)
             if cold_start._path_matches(str(hit.get("source", "")), required["path"]) and
-            hit.get("direct_content") is True and
+            cold_start._has_direct_evidence(hit) and
             (required.get("commit") is None or hit.get("source_commit") == required["commit"]) and
             (required.get("blob") is None or hit.get("source_blob") == required["blob"])]
 

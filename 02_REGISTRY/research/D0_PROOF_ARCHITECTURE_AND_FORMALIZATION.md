@@ -16687,6 +16687,104 @@ Thus the encoder/decoder premise in the prior adapter is substantial, not a
 consequence of an arbitrary `FutureExecution`. Classical choice and absence
 of a computable canonicalizer retain their previously stated scope.
 
+### Opt-in continuation of source search — 4 November 2026
+
+The strict cold-start on snapshot `c743de710753cd9868f53ba13fd16adfd1affc9c`
+found all required sources in 36 of 50 cases; its full recoverable report and
+14 unresolved cases are recorded in `reports/cold_start_strict_c743_2026-11-04`.
+The earlier strict 44/50 replay used a different snapshot. These results are
+not amended by the following retrieval feature.
+
+`search --paginate --offset N` explicitly continues the ranked results after
+the unchanged first window. `--continue-sources --source-pages P
+--source-page-offset N` explicitly opens additional locator references beyond
+the former 64-reference scan. The returned pages include actual reference
+spans and an exhausted-page outcome; exact commit/blob and direct-content
+checks remain required. Changed or unreadable workspace files are not treated
+as fresh direct-content evidence. Alias resolution has a separate bounded
+per-locator call budget, reported alongside the page budget and any
+unresolved alias pairs.
+
+These offsets rerun search: they are not durable cursors across changes to
+the corpus, query, limits or available Git objects. The existing cold-start
+and compactor intentionally validate the legacy format only; a separately
+versioned benchmark and verifier are required to consume these pages. Neither
+the six earlier nor the fourteen later misses are claimed fixed without a
+new measured replay. Independent review checked stale-file races, short or
+empty first pages, pins and budget accounting; the affected 28 direct tests
+and 23 portable CI tests passed locally. This is retrieval infrastructure,
+not semantic C0 or physical GR acceptance.
+
+### Versioned paged cold-start and fail-closed evidence — 4 November 2026
+
+The opt-in `tools/proof_architecture_cold_start_v3.py` uses one batched corpus
+discovery for all existing cases, two bounded ranked pages and up to twelve
+source pages per locator in bounded calls. The separate
+`tools/compact_proof_architecture_cold_start_v3.py` verifies observed bytes,
+query evidence, locator references, exact pins, page spans and budgets, and
+endpoint corpus snapshots. Its default result records verified evidence but
+leaves discovery unattested, `found=false` and overall counts unavailable.
+The explicit `--verify-discovery` mode reruns the full batched discovery and
+compares ranked pages before it can credit a discovery. This is a replay of
+the same implementation, not an independent search implementation. Endpoint
+hashes do not prove the corpus stayed unchanged between the endpoints or
+authenticate tool binaries, external Git availability or scientific truth.
+
+The default producer now marks files without a readable SHA and direct line
+evidence as unverified rather than direct; legacy runner and compactor also
+require the shape of a SHA and direct evidence before counting a hit. That
+legacy shape check does not verify actual bytes or the query. The preserved
+2bc and c743 full outputs were structurally re-compacted without changing
+their 44/50 and 36/50 results; that operation is not another search. Adversarial
+fixtures cover an oversized source, wrong blob, duplicate and fabricated
+ranks, untraced pin, stale corpus, query isolation, and sources after 64
+references. No 50-case v3 replay has yet been run, and no improvement to
+those historical counts is claimed.
+
+### Windows long-path and physical containment correction — 4 November 2026
+
+The first paged-v3 run on `7776ac15efb518b5753025a19f941775757aec63`
+failed before discovery: a real 273-character Windows path was visible to
+`rg` but ordinary Python path resolution failed. No 50-case result was
+produced. Search and v3 snapshot/evidence reads now use extended paths on
+Windows while strictly resolving and checking physical root containment.
+Ambiguous roots and filesystems without usable identity information fail
+closed; data is read through the resolved extended path.
+
+On Windows, targeted tests cover a real long path, distinct trailing-dot
+names, unreadable/missing files, traversal, outside junctions including
+case-sensitive sibling directories, both ambiguous-root spellings and stale
+file races. The independently reviewed patch passed 77 targeted tests; its
+full one-time corpus snapshot read 4,297 files with SHA-256
+`2da8e31ccc12f6e0ab180d0c066e063f1d3d3150ee2246576cdc5b803055bfc1`.
+An actual network UNC share was not tested. The check is not atomic against
+changes between resolution, identity checks and reading, and the v3 endpoint
+snapshots do not attest continuous immutability. A complete paged replay on
+the corrected committed inputs remains required; no coverage result is
+asserted from the failed run or the one-time snapshot.
+
+### Sufficient memory for future classes — 4 November 2026
+
+The Drop History fragment of Book01 §01.1.1 is byte interval `[5584,5807)`
+of blob `eb2d8ea779189084cdaaca717326df88589ec918`, SHA-256
+`17fb2fd18ee2a1c58f5351909077597d58e66cab4ed100128c9cf245cc8e24c8`.
+As a scoped mathematical interpretation,
+`D0.Foundation.FutureMemoryQuotientBound` reuses the existing
+`sufficient_memory_reflects_future`: a finite memory with a decoder correct
+for every complete supplied future profile has at least as many values as
+the finite quotient of future-equivalent states. Its proof classically
+chooses representatives; it does not require the encoder to be constant on
+classes or all raw states to have different futures.
+
+For the existing `visibleBitSystem`, four raw states form exactly two future
+classes; an explicitly defined one-bit encoder/decoder attains the bound.
+Direct Lean passed for blob `0306cd284c2d11b00f6130a8bfbe5e77c8fa8f14`
+using the shared cached dependencies, and independent review checked the
+quotient, assumptions and example. Final provenance-checked integration
+remains required. These are all finite action words and tests of the supplied
+abstract system; no physical memory implementation, cost, effective choice,
+or the source's broader necessity/falsifiability claims follow.
+
 ### Actual ordered return-price derivative for one affine reporter
 
 `D0.Research.TaskFaithfulAffineReporterDerivative` applies the existing

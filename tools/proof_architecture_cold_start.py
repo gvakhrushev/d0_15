@@ -2595,6 +2595,19 @@ def _query_hits_with_source_pages(query: str, hits: list[dict[str, Any]],
     return combined
 
 
+def _has_direct_evidence(hit: dict[str, Any]) -> bool:
+    """Check digest and evidence shape only; source bytes are not revalidated."""
+    digest = hit.get("source_sha256")
+    evidence = hit.get("evidence_lines")
+    return (hit.get("direct_content") is True and isinstance(digest, str) and
+            bool(re.fullmatch(r"[0-9a-f]{64}", digest)) and isinstance(evidence, list) and
+            any(isinstance(row, dict) and row.get("kind") == "direct_content" and
+                type(row.get("line")) is int and row["line"] > 0 and
+                isinstance(row.get("text"), str) and bool(row["text"]) and
+                isinstance(row.get("matched_terms"), list) and bool(row["matched_terms"])
+                for row in evidence))
+
+
 def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
                             required: dict[str, Any]) -> dict[str, Any]:
     """A path counts only when its own exact source content is searchable."""
@@ -2611,7 +2624,7 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
     for query, hits in considered:
         for rank, hit in enumerate(hits, start=1):
             if _path_matches(str(hit.get("source", "")), expected_path):
-                if hit.get("direct_content"):
+                if _has_direct_evidence(hit):
                     direct_candidates.append((query, _candidate_location(hit, rank)["candidate_rank"], hit))
             for reference in hit.get("source_refs", []):
                 if _path_matches(str(reference.get("path", "")), expected_path):
@@ -2642,7 +2655,7 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
         direct = [(query, _candidate_location(hit, rank)["candidate_rank"], hit)
                   for rank, hit in enumerate(hits, start=1)
                   if _path_matches(str(hit.get("source", "")), expected_path)
-                  and hit.get("direct_content")]
+                  and _has_direct_evidence(hit)]
         exact = [(query, rank, hit) for query, rank, hit in direct
                  if (expected_commit is None or hit.get("source_commit") == expected_commit)
                  and (expected_blob is None or hit.get("source_blob") == expected_blob)]

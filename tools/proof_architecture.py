@@ -1330,7 +1330,8 @@ def _filename_bonus(rel: str, terms: list[tuple[str, tuple[str, ...]]]) -> float
 
 def _source_references(lines: list[str],
                        terms: list[tuple[str, tuple[str, ...]]] | None = None,
-                       pattern: re.Pattern[str] | None = None) -> list[dict[str, Any]]:
+                       pattern: re.Pattern[str] | None = None, *,
+                       limit: int | None = 64) -> list[dict[str, Any]]:
     """Expose exact path/commit/blob pins present in matched source lines."""
     path_pattern = re.compile(
         r"(?<![\w])(?:[\w.-]+[\\/])*[\w.-]+\.(?:md|lean|json|csv|py)(?:#[^\s,;]*)?",
@@ -1402,7 +1403,7 @@ def _source_references(lines: list[str],
             -len(_matched_term_names(_fold(item.get("context", "")), pattern, terms)),
             -bool(item.get("pin_complete")), str(item.get("path", "")),
         ))
-        return references[:64]
+        return references if limit is None else references[:limit]
     return references[:12]
 
 
@@ -1659,12 +1660,148 @@ def _search_progress(stage: str, **details: Any) -> None:
               file=sys.stderr, flush=True)
 
 
+def _search_filesystem_path(path: pathlib.Path) -> pathlib.Path:
+    """Use extended Windows paths for filesystem reads; preserve path checks."""
+    if os.name != "nt":
+        return path
+    path = pathlib.Path(path)
+    if not path.is_absolute():
+        if path.drive or path.root:
+            raise ValueError("unsupported Windows drive-relative path")
+        path = pathlib.Path.cwd() / path
+    absolute = os.fspath(path)
+    if absolute.startswith("\\\\.\\"):
+        raise ValueError("unsupported Windows device path")
+    if absolute.startswith("\\\\?\\"):
+        if not (re.match(r"^\\\\\?\\[A-Za-z]:\\", absolute) or
+                re.match(r"^\\\\\?\\UNC\\[^\\]+\\[^\\]+(?:\\|$)", absolute, re.IGNORECASE)):
+            raise ValueError("unsupported Windows extended path")
+        return pathlib.Path(absolute)
+    if absolute.startswith("\\\\"):
+        if not re.match(r"^\\\\[^\\]+\\[^\\]+(?:\\|$)", absolute):
+            raise ValueError("unsupported Windows network path")
+        return pathlib.Path("\\\\?\\UNC\\" + absolute[2:])
+    if not re.match(r"^[A-Za-z]:\\", absolute):
+        raise ValueError("unsupported Windows absolute path")
+    return pathlib.Path("\\\\?\\" + absolute)
+
+
+def _search_relative_path(rel: str) -> pathlib.Path:
+    """Reject traversal and Windows alternate/device paths before resolution."""
+    if (not isinstance(rel, str) or not rel or rel.startswith("/") or
+            any(part in {"", ".", ".."} for part in rel.split("/")) or
+            (os.name == "nt" and ("\\" in rel or ":" in rel))):
+        raise ValueError("invalid search corpus path")
+    return pathlib.Path(*rel.split("/"))
+
+
+def _search_same_directory(first: pathlib.Path, second: pathlib.Path) -> bool:
+    """Compare filesystem identities, not case-folded Windows path strings."""
+    try:
+        first_stat = first.stat()
+        second_stat = second.stat()
+        return (first.is_dir() and second.is_dir() and first_stat.st_ino != 0 and
+                second_stat.st_ino != 0 and os.path.samestat(first_stat, second_stat))
+    except OSError:
+        return False
+
+
+def _search_contains_file(root: pathlib.Path, path: pathlib.Path) -> bool:
+    """Require the resolved root identity among the resolved file's parents."""
+    parent = path.parent
+    while True:
+        if _search_same_directory(root, parent):
+            return True
+        next_parent = parent.parent
+        if next_parent == parent:
+            return False
+        parent = next_parent
+
+
+def _search_run_root(root: pathlib.Path) -> pathlib.Path:
+    """Reject a Windows root if legacy process APIs name different bytes."""
+    if os.name != "nt":
+        return root.resolve(strict=True)
+    original = _search_filesystem_path(_search_filesystem_path(root).resolve(strict=True))
+    real = os.fspath(original)
+    # subprocess cwd and Git can reinterpret extended filenames as ordinary
+    # Win32 paths, so diagnose the same resolved DOS/UNC root without prefix.
+    ordinary_name = ("\\\\" + real[8:] if real[:8].casefold() == "\\\\?\\unc\\"
+                     else real[4:])
+    ordinary = pathlib.Path(ordinary_name).resolve(strict=True)
+    normalized = _search_filesystem_path(_search_filesystem_path(ordinary).resolve(strict=True))
+    if not _search_same_directory(original, normalized):
+        raise ValueError("Windows repository root changes under ordinary path normalization")
+    return ordinary
+
+
+def _hydrate_ranked_candidate(root: pathlib.Path, record: dict[str, Any],
+                              terms: list[tuple[str, tuple[str, ...]]],
+                              pattern: re.Pattern[str], expected_digest: str | None) -> None:
+    """Verify a continued workspace result; never follow or invent pins here."""
+    if record.get("source_origin") != "workspace":
+        return
+    earlier_digest = record.get("source_sha256")
+
+    def invalidate() -> None:
+        record.update(direct_content=False, source_sha256=None, evidence_lines=[],
+                      source_refs=[], label="", source_freshness="changed_or_unreadable")
+        record.pop("source_header_owner_declarations", None)
+
+    path = _search_filesystem_path(root / pathlib.Path(record["source"]))
+    try:
+        if path.stat().st_size > 4_000_000:
+            invalidate()
+            return
+        data = path.read_bytes()
+    except OSError:
+        invalidate()
+        return
+    digest = hashlib.sha256(data).hexdigest()
+    if (expected_digest is None or digest != expected_digest or
+            (earlier_digest is not None and earlier_digest != expected_digest)):
+        invalidate()
+        return
+    record["source_freshness"] = "verified_after_ranking"
+    if earlier_digest is not None:
+        return
+    content = data.decode("utf-8-sig", errors="replace")
+    checked = _candidate_record(record["source"], content, terms, origin="workspace",
+                                pattern=pattern,
+                                content_sha256=digest)
+    if checked is None:
+        invalidate()
+        return
+    _, candidate = checked
+    record["direct_content"] = bool(record["direct_content"] and candidate["direct_content"])
+    for key in ("source_sha256", "evidence_lines", "label", "source_header_owner_declarations"):
+        if key in candidate:
+            record[key] = candidate[key]
+    matching_lines = [line for line in content.splitlines() if pattern.search(_fold(line))]
+    refs = _source_references(matching_lines, terms, pattern)
+    refs.sort(key=lambda item: (
+        -len(_matched_term_names(_fold(str(item.get("context", ""))), pattern, terms)),
+        -sum(any(variant in _fold(str(item.get("path", ""))) for variant in variants)
+             for _, variants in terms),
+        -bool(item.get("pin_complete")), str(item.get("path", "")),
+    ))
+    for reference in refs:
+        reference["pin_status"] = "not_followed_bounded_search"
+    record["source_refs"] = refs
+
+
 def full_text_search_many(root: pathlib.Path, queries: list[str],
                           limit: int = MAX_SEARCH_RESULTS, *,
-                          pin_reference_limit: int = 8) -> list[list[dict[str, Any]]]:
+                          pin_reference_limit: int = 8,
+                          offset: int = 0,
+                          ranked_pages: int = 1) -> list[list[dict[str, Any]]]:
     """Search text and verify pins; explicit owner checks may follow up to 64 refs."""
     if not 1 <= pin_reference_limit <= 64:
         raise ValueError("pin_reference_limit must be between 1 and 64")
+    if not 0 <= offset <= 4096:
+        raise ValueError("offset must be between 0 and 4096")
+    if not 1 <= ranked_pages <= 3 or (offset and ranked_pages != 1):
+        raise ValueError("ranked_pages must be 1..3 and cannot be combined with offset")
     # The low-information filter limits corpus discovery only. Every discovered
     # file and exact pinned source is matched and scored against the raw query.
     terms_by_query = [_query_terms(query) for query in queries]
@@ -1741,15 +1878,18 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
     # other lines must still contribute to matching and ranking. The existing
     # bounded evidence/pin read below keeps its separate 4 MB limit.
     raw_content_matches: dict[str, dict[int, set[str]]] = {}
+    discovery_digests: dict[str, str] = {}
 
     def document_matches(raw_rel: str) -> dict[int, set[str]]:
         if raw_rel not in raw_content_matches:
             try:
-                content = (root / pathlib.Path(raw_rel)).read_bytes().decode(
-                    "utf-8-sig", errors="replace")
+                data = _search_filesystem_path(root / pathlib.Path(raw_rel)).read_bytes()
+                content = data.decode("utf-8-sig", errors="replace")
             except OSError:
                 raw_content_matches[raw_rel] = {}
             else:
+                if offset or ranked_pages > 1:
+                    discovery_digests[raw_rel.replace("\\", "/")] = hashlib.sha256(data).hexdigest()
                 raw_content_matches[raw_rel] = _multi_pattern_matches(_fold(content), raw_matcher)
         return raw_content_matches[raw_rel]
 
@@ -1771,7 +1911,9 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         min_hits = 1 if len(terms) <= 3 else max(2, (len(terms) + 3) // 4)
         for raw_rel in sorted(candidate_paths):
             rel = raw_rel.replace("\\", "/")
-            if (rel in {"tools/proof_architecture.py", "tools/proof_architecture_cold_start.py"}
+            if (rel in {"tools/proof_architecture.py", "tools/proof_architecture_cold_start.py",
+                        "tools/proof_architecture_cold_start_v3.py",
+                        "tools/compact_proof_architecture_cold_start_v3.py"}
                     or rel.startswith("tools/test_")):
                 continue
             content_groups_here = document_matches(raw_rel).get(index, set())
@@ -1808,8 +1950,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         # pass its exact commit/path/blob and direct-content checks.
         pin_window = candidates[:max(MIN_PIN_VERIFICATION_WINDOW, limit)]
         pinned_candidates: list[tuple[float, str, dict[str, Any]]] = []
-        for score, rel, record in pin_window:
-            path = root / pathlib.Path(rel)
+        for pin_window_rank, (score, rel, record) in enumerate(pin_window, 1):
+            path = _search_filesystem_path(root / pathlib.Path(rel))
             try:
                 if path.stat().st_size > 4_000_000:
                     continue
@@ -1818,6 +1960,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             except OSError:
                 continue
             record["source_sha256"] = hashlib.sha256(source_bytes).hexdigest()
+            if ranked_pages > 1 and discovery_digests.get(rel) != record["source_sha256"]:
+                raise ValueError("workspace source changed between discovery and pin-window read")
             header_owner_declarations = _source_header_owner_declarations(content)
             if header_owner_declarations:
                 record["source_header_owner_declarations"] = header_owner_declarations
@@ -1865,6 +2009,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                 pin_status, pinned_bytes = _read_pinned_source(root, reference, pinned_cache)
                 reference["pin_status"] = pin_status
                 pinned_rel = str(reference.get("path") or "")
+                before_candidate_count = len(pinned_candidates)
                 if pinned_bytes is not None:
                     pinned_text = pinned_bytes.decode("utf-8-sig", errors="replace")
                     pinned_match = _candidate_record(
@@ -1916,24 +2061,66 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                     ))
                 if reference.get("content_status"):
                     pinned_content_status[index][pin_key] = str(reference["content_status"])
+                if ranked_pages > 1 and len(pinned_candidates) > before_candidate_count:
+                    pinned_candidates[-1][2]["pin_discovery"] = {
+                        "locator_source": rel,
+                        "locator_sha256": record["source_sha256"],
+                        "pin_window_rank": pin_window_rank,
+                        "reference_rank": followed,
+                    }
         combined = list(candidates)
         combined.extend(pinned_candidates)
         combined.sort(key=lambda row: (-row[0], row[1]))
-        results.append([record for _, _, record in combined[:limit]])
+        if ranked_pages > 1:
+            # A commit-only and an explicit-blob citation can select the same
+            # candidate. Keep one occurrence per displayed identity in v3.
+            unique = []
+            seen = set()
+            for entry in combined:
+                identity = (entry[2].get("kind"), entry[2].get("key"))
+                if identity not in seen:
+                    unique.append(entry)
+                    seen.add(identity)
+            combined = unique
+        selected = combined[offset:offset + limit * ranked_pages]
+        page = [record for _, _, record in selected]
+        if ranked_pages > 1:
+            for (score, sort_key, _), record in zip(selected, page):
+                record["rank_score"] = score
+                record["rank_sort_key"] = sort_key
+        if offset or ranked_pages > 1:
+            for position, record in enumerate(page):
+                if not offset and position < limit:
+                    continue  # Preserve the existing first page on stable inputs.
+                _hydrate_ranked_candidate(root, record, terms, pattern,
+                                          discovery_digests.get(record.get("source", "")))
+        # Ranking may include a >4 MB or unreadable workspace document whose
+        # text was counted but never read for direct line evidence. Preserve
+        # its rank in every mode, without promoting it to a direct source hit.
+        for record in page:
+            if (record.get("direct_content") is True and
+                    (not record.get("source_sha256") or not record.get("evidence_lines"))):
+                record["direct_content"] = False
+                record["source_freshness"] = "unverified_missing_evidence"
+        results.append(page)
         _search_progress("global_page_ready", query_index=index,
                          query_count=len(queries), returned=len(results[-1]))
     return results
 
 
 def full_text_search(root: pathlib.Path, query: str,
-                     limit: int = MAX_SEARCH_RESULTS) -> list[dict[str, Any]]:
+                     limit: int = MAX_SEARCH_RESULTS, *,
+                     offset: int = 0) -> list[dict[str, Any]]:
     """Return bounded text candidates from books, registry, and Lean sources."""
-    return full_text_search_many(root, [query], limit)[0]
+    if not offset:
+        return full_text_search_many(root, [query], limit)[0]
+    return full_text_search_many(root, [query], limit, offset=offset)[0]
 
 
 def expand_source_pages(root: pathlib.Path, query: str,
                         returned_hits: list[dict[str, Any]], *,
-                        page_size: int = 8, pages_per_locator: int = 1
+                        page_size: int = 8, pages_per_locator: int = 1,
+                        page_offset: int = 0, continue_references: bool = False
                         ) -> list[dict[str, Any]]:
     """Open bounded source pages behind locators actually returned by search.
 
@@ -1942,12 +2129,19 @@ def expand_source_pages(root: pathlib.Path, query: str,
     from matching lines, and return only exact pinned, content-matching sources.
     A pin or a filename match alone is never a source-page candidate. Nothing
     from a benchmark's expected paths enters this operation.
+
+    In continuation mode, per locator and per invocation, alias resolution can
+    additionally call the pin reader at most 64 times; the page batch can call
+    it at most page_size * pages_per_locator times. An uncached reader call can
+    execute up to two Git commands. These are separate, reported budgets.
     """
     if not 1 <= page_size <= 8 or not 1 <= pages_per_locator <= 8:
         raise ValueError("source pages require size 1..8 and pages_per_locator 1..8")
+    if not 0 <= page_offset <= 512:
+        raise ValueError("source page offset must be between 0 and 512")
     if len(returned_hits) > 64:
         raise ValueError("source expansion accepts at most 64 returned locators")
-    root = root.resolve()
+    root = _search_filesystem_path(_search_filesystem_path(root).resolve(strict=True))
     terms = _query_terms(query)
     pattern = _term_pattern(terms)
     cache: dict[tuple[str, str, str], tuple[str, bytes | None, str | None]] = {}
@@ -1959,8 +2153,11 @@ def expand_source_pages(root: pathlib.Path, query: str,
                 or not locator.get("source_refs")):
             continue
         rel = str(locator.get("source", ""))
-        path = (root / rel).resolve()
-        if not path.is_relative_to(root) or not path.is_file():
+        try:
+            path = _search_filesystem_path((root / _search_relative_path(rel)).resolve(strict=True))
+        except (OSError, ValueError):
+            continue
+        if not _search_contains_file(root, path) or not path.is_file():
             continue
         try:
             if path.stat().st_size > 4_000_000:
@@ -1976,32 +2173,95 @@ def expand_source_pages(root: pathlib.Path, query: str,
                                     pattern=pattern)
         if matched is None or not matched[1]["direct_content"]:
             continue
-        refs = _source_references(
-            [line for line in content.splitlines() if pattern.search(_fold(line))],
-            terms, pattern,
-        )
-        reference_set_may_be_truncated = len(refs) == 64
-        refs = [ref for ref in refs if ref.get("pin_complete")]
+        matching_lines = [line for line in content.splitlines() if pattern.search(_fold(line))]
+        expanded = continue_references or bool(page_offset)
+        refs = _source_references(matching_lines, terms, pattern,
+                                  limit=None if expanded else 64)
+        reference_set_may_be_truncated = not expanded and len(refs) == 64
+        alias_resolution_calls = 0
+        unresolved_alias_pairs: set[tuple[str, str]] = set()
         # A commit:path citation and its explicit-blob spelling identify one
         # immutable source. Keep explicit pins (including conflicting ones),
         # rather than returning the same derived blob twice after loading it.
-        explicit_pairs = {(ref["path"], ref["commit"]) for ref in refs if ref.get("blob")}
-        refs = [ref for ref in refs if ref.get("blob") or
-                (ref["path"], ref["commit"]) not in explicit_pairs]
+        def complete_dedup(rows):
+            rows = [ref for ref in rows if ref.get("pin_complete")]
+            explicit_pairs = {(ref["path"], ref["commit"]) for ref in rows if ref.get("blob")}
+            return [ref for ref in rows if ref.get("blob") or
+                    (ref["path"], ref["commit"]) not in explicit_pairs]
+
+        if expanded:
+            # Keep the exact old first 64-reference window as a prefix, then
+            # continue past it without allowing later aliases to shift page 1.
+            prefix, tail = complete_dedup(refs[:64]), complete_dedup(refs[64:])
+            seen = {(r["path"], r["commit"], r.get("blob")) for r in prefix}
+            implicit = {(r["path"], r["commit"]): r for r in prefix if not r.get("blob")}
+            explicit = {(r["path"], r["commit"]) for r in prefix if r.get("blob")}
+            resolved_aliases = {}
+            continuation = []
+            for ref in tail:
+                key = (ref["path"], ref["commit"], ref.get("blob"))
+                pair = key[:2]
+                if key in seen or (not key[2] and pair in explicit):
+                    continue
+                if key[2] and pair in implicit:
+                    if pair not in resolved_aliases:
+                        previous = dict(implicit[pair])
+                        status, _ = _read_pinned_source(root, previous, cache)
+                        resolved_aliases[pair] = (status, previous.get("blob"))
+                        alias_resolution_calls += 1
+                    status, resolved_blob = resolved_aliases[pair]
+                    if status != "pinned_snapshot" or not resolved_blob:
+                        unresolved_alias_pairs.add(pair)
+                    if status == "pinned_snapshot" and resolved_blob == key[2]:
+                        continue
+                continuation.append(ref)
+                seen.add(key)
+            refs = prefix + continuation
+        else:
+            refs = complete_dedup(refs)
         for page_index in range(pages_per_locator):
-            start = page_index * page_size
-            batch = refs[start:start + page_size]
-            if not batch:
+            page_number = page_offset + page_index
+            if expanded:
+                # Keep even a short or empty legacy prefix as whole pages. A
+                # naive page_number * page_size would skip the start of tail.
+                legacy_pages = max(1, (len(prefix) + page_size - 1) // page_size)
+                if page_number < legacy_pages:
+                    start = min(page_number * page_size, len(prefix))
+                    end = min(start + page_size, len(prefix))
+                else:
+                    start = len(prefix) + (page_number - legacy_pages) * page_size
+                    end = min(start + page_size, len(refs))
+            else:
+                start = page_number * page_size
+                end = min(start + page_size, len(refs))
+            batch = refs[start:end]
+            empty_prefix_page = expanded and page_number == 0 and not prefix and bool(refs)
+            exhausted_page = expanded and not batch and not empty_prefix_page
+            if exhausted_page:
+                # Even an out-of-range request may have paid alias-resolution
+                # reads; return one explicit outcome and its cost metadata.
+                start = end = len(refs)
+            if not batch and not empty_prefix_page and not exhausted_page:
                 break
             page: dict[str, Any] = {
                 "query": query, "locator_source": rel, "locator_sha256": digest,
-                "locator_rank": locator_rank, "page_number": page_index + 1,
+                "locator_rank": locator_rank, "page_number": page_number + 1,
                 "page_size": page_size, "total_references": len(refs),
-                "remaining_references": max(0, len(refs) - start - len(batch)),
-                "reference_scan_limit": 64,
+                "remaining_references": max(0, len(refs) - end),
+                "reference_scan_limit": None if expanded else 64,
                 "reference_set_may_be_truncated": reference_set_may_be_truncated,
                 "candidates": [], "reference_statuses": [],
             }
+            if expanded:
+                page["page_exhausted"] = exhausted_page
+                page["reference_start"] = start
+                page["reference_end_exclusive"] = end
+                page["alias_resolution_read_calls"] = alias_resolution_calls
+                page["alias_resolution_read_limit"] = 64
+                page["unresolved_alias_pairs"] = len(unresolved_alias_pairs)
+                page["alias_dedup_may_be_incomplete"] = bool(unresolved_alias_pairs)
+                page["page_pin_read_limit"] = page_size * pages_per_locator
+                page["pin_read_budget_scope"] = "per_locator_per_invocation"
             for ref in batch:
                 status, source_bytes = _read_pinned_source(root, ref, cache)
                 receipt = {"path": ref["path"], "commit": ref.get("commit"),
@@ -2026,6 +2286,8 @@ def expand_source_pages(root: pathlib.Path, query: str,
                 receipt["content_status"] = "direct_content_match"
                 page["candidates"].append({**record, "pin_status": "verified"})
             pages.append(page)
+            if exhausted_page:
+                break
     return pages
 
 
@@ -2211,6 +2473,8 @@ def _search_candidate_summary(item: dict[str, Any],
             summary[key] = item[key]
     if item.get("pin_status"):
         summary["pin_status"] = item["pin_status"]
+    if item.get("source_freshness"):
+        summary["source_freshness"] = item["source_freshness"]
     if item.get("source_header_owner_declarations"):
         summary["source_header_owner_declarations"] = item[
             "source_header_owner_declarations"
@@ -3287,6 +3551,14 @@ def main() -> int:
                         help="global result window, 1..64 (default: 5)")
     search.add_argument("--source-pages", type=int, default=0,
                         help="open 0..8 pages of eight exact sources per returned locator")
+    search.add_argument("--offset", type=int, default=0,
+                        help="continue the same ranked window from this zero-based result")
+    search.add_argument("--paginate", action="store_true",
+                        help="show pagination metadata on the first ranked page")
+    search.add_argument("--source-page-offset", type=int, default=0,
+                        help="continue locator references from this zero-based page")
+    search.add_argument("--continue-sources", action="store_true",
+                        help="page complete locator references beyond the original scan window")
     show = sub.add_parser("show", help="show an exact claim/result/application/obligation key")
     show.add_argument("key")
     show.add_argument("--lean", action="store_true",
@@ -3379,11 +3651,14 @@ def main() -> int:
     else:
         data = load_dataset(root)
         if args.command == "search":
-            if not 1 <= args.limit <= 64 or not 0 <= args.source_pages <= 8:
-                parser.error("search needs --limit 1..64 and --source-pages 0..8")
+            if (not 1 <= args.limit <= 64 or not 0 <= args.source_pages <= 8
+                    or not 0 <= args.offset <= 4096 or not 0 <= args.source_page_offset <= 512
+                    or ((args.source_page_offset or args.continue_sources) and not args.source_pages)):
+                parser.error("invalid search limit, offset, or source-page budget")
             query = " ".join(args.query)
             structured = structured_search(data, query)
-            text_hits = full_text_search(root, query, args.limit)
+            text_hits = (full_text_search(root, query, args.limit, offset=args.offset)
+                         if args.offset else full_text_search(root, query, args.limit))
             seen = {(x["kind"], x["key"]) for x in structured}
             result = {"query": query, "structured_matches": [_search_summary(x) for x in structured],
                       "text_candidates": [_search_candidate_summary(x, data) for x in text_hits
@@ -3391,9 +3666,24 @@ def main() -> int:
                       "snapshot_commit": data["snapshot_commit"],
                       "source_digests": data["source_digests"],
                       "warning": "Text matches are retrieval candidates, not accepted mathematical relations."}
+            if args.offset or args.paginate:
+                result["text_offset"] = args.offset
+                result["text_page_may_have_more"] = len(text_hits) == args.limit
+            if args.offset or args.paginate or args.source_page_offset or args.continue_sources:
+                result["pagination_scope"] = (
+                    "Each page reruns against the current corpus. Offsets are not durable "
+                    "cursors: compare only on the same unchanged corpus, query, limits and Git objects."
+                )
             if args.source_pages:
-                pages = expand_source_pages(root, query, text_hits,
-                                            pages_per_locator=args.source_pages)
+                if args.source_page_offset or args.continue_sources:
+                    pages = expand_source_pages(root, query, text_hits,
+                                                pages_per_locator=args.source_pages,
+                                                page_offset=args.source_page_offset,
+                                                continue_references=args.continue_sources)
+                    result["source_page_offset"] = args.source_page_offset
+                else:
+                    pages = expand_source_pages(root, query, text_hits,
+                                                pages_per_locator=args.source_pages)
                 result["source_pages"] = [
                     {**page, "candidates": [_search_candidate_summary(hit, data)
                                            for hit in page["candidates"]]}

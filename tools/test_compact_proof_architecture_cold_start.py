@@ -16,7 +16,21 @@ from tools.test_c0_reconciliation import ReconciliationFixtureTests
 from tools.test_c0_book_byte_partition import BytePartitionTests, GitEvidenceTests
 from tools.test_c0_candidate_ranges import CandidateRangeTests
 from tools.test_proof_search_streaming import StreamingTextTests, fixture_rg
+from tools import test_proof_source_pages as source_page_tests
+from tools import test_proof_cold_start_v3 as paged_cold_start_tests
 from tools import test_proof_architecture as proof_tests
+
+
+class PortableSourcePagesTests(source_page_tests.ProofSourcePagesTests):
+    def setUp(self):
+        super().setUp()
+        self.enterContext(fixture_rg())
+
+
+class PortablePagedColdStartTests(paged_cold_start_tests.PagedColdStartTests):
+    def setUp(self):
+        super().setUp()
+        self.enterContext(fixture_rg())
 
 
 class DirectContentThresholdTests(unittest.TestCase):
@@ -28,6 +42,8 @@ class DirectContentThresholdTests(unittest.TestCase):
 def example_case():
     path = "02_REGISTRY/research/example.md"
     commit, blob = "a" * 40, "b" * 40
+    evidence = {"line": 5, "text": "example direct evidence", "kind": "direct_content",
+                "matched_terms": ["example"]}
     fixture = {
         "id": "example", "queries": ["example query"],
         "required_refs": [path],
@@ -38,18 +54,18 @@ def example_case():
     scoped = {"query_index": 0, "query": "example query", "found": True,
               "status": "found_direct_content", "required_sections": [],
               "sections_found": [], "missing_sections": [], "candidate_rank": 2,
-              "evidence_lines": [{"line": 5, "text": "direct evidence"}]}
+              "evidence_lines": [evidence]}
     receipt = {"path": path, "status": "found_direct_content", "found": True,
                "source_origin": "pinned_snapshot", "expected_commit": commit,
                "expected_blob": blob, "required_sections": [], "sections_found": [],
                "missing_sections": [], "scoped_queries": [scoped],
                "candidate_rank": 2, "query": "example query",
-               "evidence_lines": [{"line": 5, "text": "direct evidence"}],
+               "evidence_lines": [evidence],
                "citation_only_refs": []}
     hit = {"path": path, "direct_content": True, "source_origin": "pinned_snapshot",
            "source_commit": commit, "source_blob": blob, "matched_terms": 1,
            "matched_term_names": ["example"], "query_terms": 1, "source_sha256": "c" * 64,
-           "pin_status": "pinned_snapshot", "evidence_lines": [], "source_refs": []}
+           "pin_status": "pinned_snapshot", "evidence_lines": [evidence], "source_refs": []}
     unrelated = {**hit, "path": "unrelated", "direct_content": False}
     case = {"id": "example", "queries": fixture["queries"],
             "required_sources": {path: receipt}, "found_all_required_sources": True,
@@ -82,20 +98,22 @@ def example_complete_replay(head):
             required.update(sections=sections, scope_query_sections={str(index): sections})
         fixture["required_sources"].append(required)
         rank = len(results[index]["top_candidates"]) + 1
+        evidence = {"line": 5, "text": f"query {index} direct evidence", "kind": "direct_content",
+                    "matched_terms": ["query"]}
         hit = {"path": path, "matched_terms": 1, "matched_term_names": ["query"],
                "query_terms": 1, "source_sha256": "c" * 64, "source_origin": "pinned_snapshot",
                "direct_content": True, "source_commit": commit, "source_blob": blob,
-               "pin_status": "pinned_snapshot", "evidence_lines": [], "source_refs": []}
+               "pin_status": "pinned_snapshot", "evidence_lines": [evidence], "source_refs": []}
         results[index]["top_candidates"].append(hit)
         scoped = {"query_index": index, "query": queries[index], "found": True,
                   "status": "found_direct_content", "required_sections": sections,
                   "sections_found": sections, "missing_sections": [], "candidate_rank": rank,
-                  "evidence_lines": []}
+                  "evidence_lines": [evidence]}
         receipt = {"path": path, "status": "found_direct_content", "found": True,
                    "source_origin": "pinned_snapshot", "expected_commit": commit,
                    "expected_blob": blob, "required_sections": sections,
                    "sections_found": sections, "missing_sections": [], "scoped_queries": [scoped],
-                   "candidate_rank": rank, "query": queries[index], "evidence_lines": [],
+                   "candidate_rank": rank, "query": queries[index], "evidence_lines": [evidence],
                    "citation_only_refs": []}
         key = path if path not in receipts else f"{path}@{commit}"
         receipts[key] = receipt
@@ -333,7 +351,9 @@ class ColdStartCompactorTests(unittest.TestCase):
                     "scope_query_indexes": [0, 1]}
         owner = {"source": path, "direct_content": True,
                  "source_commit": commit, "source_blob": blob,
-                 "source_origin": "pinned_snapshot"}
+                 "source_origin": "pinned_snapshot", "source_sha256": "c" * 64,
+                 "evidence_lines": [{"line": 1, "text": "matching query", "kind": "direct_content",
+                                     "matched_terms": ["matching"]}]}
         locator = {"source": "owner-index.md", "direct_content": True,
                    "source_refs": [{"path": path, "commit": commit, "blob": blob,
                                     "pin_status": "pinned_snapshot",

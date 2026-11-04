@@ -127,6 +127,277 @@ class ProofSourcePagesTests(unittest.TestCase):
         with patch.object(proof, "_read_pinned_source", side_effect=AssertionError("pin read")):
             self.assertEqual(proof.expand_source_pages(self.root, "amberquartz", []), [])
 
+    def test_ranked_continuation_keeps_first_window_and_scoped_evidence(self) -> None:
+        query = "amberquartz nativekappa"
+        other = "ornatecobalt"
+        for index in range(23):
+            (self.research / f"a_top_{index:02d}.md").write_text(
+                "# amberquartz nativekappa\nBoth matched in the actual content.\n",
+                encoding="utf-8")
+        target = self.research / "sources" / "z_retained" / "replay.py"
+        target.parent.mkdir(parents=True)
+        target.write_text("# amberquartz nativekappa\nactual retained source\n", encoding="utf-8")
+        filename_only = self.research / "sources" / "z_retained" / "amberquartz_nativekappa.py"
+        filename_only.write_text("# unrelated prose\n", encoding="utf-8")
+        initial = proof.full_text_search_many(self.root, [query, other], limit=18)
+        repeated = proof.full_text_search_many(self.root, [query, other], limit=18, offset=0)
+        later = proof.full_text_search_many(self.root, [query, other], limit=18, offset=18)
+        self.assertEqual(initial, repeated)
+        target_path = target.relative_to(self.root).as_posix()
+        self.assertNotIn(target_path, [h["source"] for h in initial[0]])
+        selected = next(h for h in later[0] if h["source"] == target_path)
+        self.assertTrue(selected["direct_content"])
+        self.assertEqual(selected["source_sha256"], hashlib.sha256(target.read_bytes()).hexdigest())
+        self.assertTrue(selected["evidence_lines"])
+        filename_hit = next(h for h in initial[0] + later[0]
+                            if h["source"] == filename_only.relative_to(self.root).as_posix())
+        self.assertFalse(filename_hit["direct_content"])
+        required = {"path": target_path, "scope_query_indexes": [0, 1]}
+        pairs = [(query, initial[0] + later[0]), (other, initial[1] + later[1])]
+        status = cold_start._required_source_status(pairs, required)
+        self.assertFalse(status["found"])
+        self.assertEqual([r["found"] for r in status["scoped_queries"]], [True, False])
+
+    def test_continued_candidate_rejects_changed_discovery_bytes(self) -> None:
+        path = self.research / "source.md"
+        path.write_text("amberquartz original\n", encoding="utf-8")
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        path.write_text("amberquartz changed later\n", encoding="utf-8")
+        record = {"source": path.relative_to(self.root).as_posix(),
+                  "source_origin": "workspace", "direct_content": True, "source_sha256": None}
+        terms = proof._query_terms("amberquartz")
+        proof._hydrate_ranked_candidate(self.root, record, terms, proof._term_pattern(terms), digest)
+        self.assertFalse(record["direct_content"])
+        self.assertIsNone(record["source_sha256"])
+
+    def test_ranked_continuation_rechecks_both_mutation_points(self) -> None:
+        first, target = self.research / "a1.md", self.research / "a2.md"
+        original_read = pathlib.Path.read_bytes
+        for mutation_read in (1, 2):
+            with self.subTest(mutation_read=mutation_read):
+                first.write_text("amber original\n", encoding="utf-8")
+                target.write_text("amber original\n", encoding="utf-8")
+                count = 0
+
+                def racing_read(path):
+                    nonlocal count
+                    value = original_read(path)
+                    if path == proof._search_filesystem_path(target):
+                        count += 1
+                        if count == mutation_read:
+                            target.write_text("unrelated changed\n", encoding="utf-8")
+                    return value
+
+                with patch.object(pathlib.Path, "read_bytes", racing_read):
+                    result = proof.full_text_search_many(self.root, ["amber"], limit=1, offset=1)[0]
+                self.assertGreaterEqual(count, 3)
+                self.assertEqual(len(result), 1)
+                self.assertEqual(result[0]["source"], target.relative_to(self.root).as_posix())
+                self.assertFalse(result[0]["direct_content"])
+                self.assertIsNone(result[0]["source_sha256"])
+                self.assertEqual(result[0]["evidence_lines"], [])
+                self.assertEqual(result[0]["source_refs"], [])
+                self.assertEqual(result[0]["source_freshness"], "changed_or_unreadable")
+
+    def test_alias_resolution_and_page_read_budgets_are_separately_reported(self) -> None:
+        query = "amberquartz"
+        path = self.research / "budget_locator.md"
+        path.write_text("# Amberquartz\n", encoding="utf-8")
+        hit = {"source": path.relative_to(self.root).as_posix(),
+               "source_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+               "source_origin": "workspace", "direct_content": True,
+               "source_refs": [{"path": "fixture.md"}]}
+        implicit = [{"path": f"source_{i:02d}.md", "commit": f"{i:040x}",
+                     "blob": None, "pin_complete": True} for i in range(64)]
+        explicit = [{**ref, "blob": "a" * 40} for ref in implicit]
+        references = implicit + explicit
+
+        def source_refs(*args, limit=64, **kwargs):
+            return copy.deepcopy(references if limit is None else references[:limit])
+
+        calls = []
+        def reader(root, reference, cache):
+            calls.append((reference["path"], reference.get("blob")))
+            if reference.get("blob") is None:
+                reference["blob"] = "a" * 40
+            return "pinned_snapshot", b"Amberquartz actual source.\n"
+
+        with patch.object(proof, "_source_references", side_effect=source_refs), \
+             patch.object(proof, "_read_pinned_source", side_effect=reader):
+            pages = proof.expand_source_pages(self.root, query, [hit], page_size=1,
+                                              continue_references=True)
+        self.assertEqual(len(calls), 65)
+        self.assertEqual(pages[0]["alias_resolution_read_calls"], 64)
+        self.assertEqual(pages[0]["alias_resolution_read_limit"], 64)
+        self.assertEqual(pages[0]["page_pin_read_limit"], 1)
+        self.assertEqual(pages[0]["pin_read_budget_scope"], "per_locator_per_invocation")
+        self.assertEqual(pages[0]["total_references"], 64)
+        self.assertFalse(pages[0]["alias_dedup_may_be_incomplete"])
+        calls.clear()
+        with patch.object(proof, "_source_references", side_effect=source_refs), \
+             patch.object(proof, "_read_pinned_source", side_effect=reader):
+            exhausted = proof.expand_source_pages(self.root, query, [hit], page_size=1,
+                                                  page_offset=512, continue_references=True)
+        self.assertEqual(len(calls), 64)
+        self.assertEqual(len(exhausted), 1)
+        self.assertTrue(exhausted[0]["page_exhausted"])
+        self.assertEqual(exhausted[0]["reference_start"], 64)
+        self.assertEqual(exhausted[0]["reference_end_exclusive"], 64)
+        self.assertEqual(exhausted[0]["remaining_references"], 0)
+        self.assertEqual(exhausted[0]["reference_statuses"], [])
+        self.assertEqual(exhausted[0]["alias_resolution_read_calls"], 64)
+        self.assertEqual(exhausted[0]["alias_resolution_read_limit"], 64)
+        self.assertEqual(exhausted[0]["page_pin_read_limit"], 1)
+
+    def test_unresolved_alias_keeps_both_and_reports_incomplete_dedup(self) -> None:
+        query = "amberquartz"
+        path = self.research / "unresolved_locator.md"
+        path.write_text("# Amberquartz\n", encoding="utf-8")
+        hit = {"source": path.relative_to(self.root).as_posix(),
+               "source_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+               "source_origin": "workspace", "direct_content": True,
+               "source_refs": [{"path": "fixture.md"}]}
+        implicit = {"path": "source.md", "commit": "b" * 40,
+                    "blob": None, "pin_complete": True}
+        incomplete = [{"path": f"missing_{i}.md", "commit": None, "blob": None,
+                       "pin_complete": False} for i in range(63)]
+        references = [implicit, *incomplete, {**implicit, "blob": "a" * 40}]
+
+        def source_refs(*args, limit=64, **kwargs):
+            return references if limit is None else references[:limit]
+
+        with patch.object(proof, "_source_references", side_effect=source_refs), \
+             patch.object(proof, "_read_pinned_source", return_value=("external_reference_only", None)):
+            pages = proof.expand_source_pages(self.root, query, [hit], page_size=1,
+                                              pages_per_locator=2, continue_references=True)
+        self.assertEqual(len(pages), 2)
+        self.assertEqual(pages[0]["total_references"], 2)
+        self.assertEqual(pages[0]["unresolved_alias_pairs"], 1)
+        self.assertTrue(pages[0]["alias_dedup_may_be_incomplete"])
+        self.assertEqual(sum(len(page["candidates"]) for page in pages), 0)
+
+    def test_continuation_past_64_preserves_exact_pins_and_page_one(self) -> None:
+        query = "amberquartz"
+        refs = self.archive({
+            f"02_REGISTRY/research/sources/owner_{i:02d}.md": f"Amberquartz result {i}.\n"
+            for i in range(75)
+        })
+        invalid = copy.deepcopy(refs)
+        invalid[70]["blob"] = "f" * 40
+        locator = self.locator(query, invalid)
+        path = self.root / locator
+        hits = [{"source": locator, "source_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                 "source_origin": "workspace", "direct_content": True, "source_refs": [refs[0]]}]
+        original = proof.expand_source_pages(self.root, query, hits)
+        same = proof.expand_source_pages(self.root, query, hits, page_offset=0)
+        self.assertEqual(original, same)
+        self.assertEqual(original[0]["reference_scan_limit"], 64)
+        self.assertTrue(original[0]["reference_set_may_be_truncated"])
+        first = proof.expand_source_pages(self.root, query, hits, pages_per_locator=4,
+                                          continue_references=True)
+        self.assertEqual(len(first), 4)
+        self.assertIsNone(first[0]["reference_scan_limit"])
+        self.assertFalse(first[0]["reference_set_may_be_truncated"])
+        self.assertEqual(first[0]["candidates"], original[0]["candidates"])
+        self.assertEqual(first[0]["reference_statuses"], original[0]["reference_statuses"])
+        last = proof.expand_source_pages(self.root, query, hits, pages_per_locator=2,
+                                         page_offset=8, continue_references=True)
+        self.assertEqual([p["page_number"] for p in last], [9, 10])
+        statuses = {r["path"]: r for page in last for r in page["reference_statuses"]}
+        self.assertEqual(statuses[refs[70]["path"]]["pin_status"], "pin_mismatch")
+        candidate = next(r for r in self.candidates(last) if r["source"] == refs[74]["path"])
+        self.assert_exact_candidate(candidate, refs[74])
+
+    def test_continuation_filters_incomplete_before_applying_page_budget(self) -> None:
+        query = "amberquartz nativekappa"
+        refs = self.archive({
+            f"02_REGISTRY/research/sources/valid_{i:02d}.md":
+                "Amberquartz nativekappa actual source.\n"
+            for i in range(4)
+        })
+        path = self.research / "noisy_locator.md"
+        lines = [f"# {query}"]
+        lines += [f"{query}: `00_unpinned_{i:02d}.md`." for i in range(70)]
+        lines += [f"amberquartz: `{r['path']}`; commit: {r['commit']}; blob: {r['blob']}."
+                  for r in refs]
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        hit = {"source": path.relative_to(self.root).as_posix(),
+               "source_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+               "source_origin": "workspace", "direct_content": True, "source_refs": [refs[0]]}
+        self.assertEqual(proof.expand_source_pages(self.root, query, [hit]), [])
+        expanded = proof.expand_source_pages(self.root, query, [hit], pages_per_locator=2,
+                                              continue_references=True)
+        self.assertEqual(expanded[0]["reference_statuses"], [])
+        self.assertEqual(expanded[0]["remaining_references"], 4)
+        self.assertEqual({x["source"] for x in self.candidates(expanded)}, {r["path"] for r in refs})
+        for ref in refs:
+            self.assert_exact_candidate(next(x for x in self.candidates(expanded)
+                                             if x["source"] == ref["path"]), ref)
+
+    def test_short_or_empty_legacy_prefix_does_not_skip_tail(self) -> None:
+        query = "amberquartz"
+        refs = self.archive({
+            f"02_REGISTRY/research/sources/continuation_{i:02d}.md": "Amberquartz actual source.\n"
+            for i in range(17)
+        })
+        path = self.research / "prefix_locator.md"
+        path.write_text("# Amberquartz\n", encoding="utf-8")
+        hit = {"source": path.relative_to(self.root).as_posix(),
+               "source_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+               "source_origin": "workspace", "direct_content": True, "source_refs": [refs[0]]}
+        for prefix_count in (0, 1):
+            with self.subTest(prefix_count=prefix_count):
+                prefix = [dict(r, pin_complete=True) for r in refs[:prefix_count]]
+                invalid = [{"path": f"missing_{i}.md", "commit": None, "blob": None,
+                            "pin_complete": False} for i in range(64 - prefix_count)]
+                tail = [dict(r, pin_complete=True) for r in refs[1:]]
+                all_refs = prefix + invalid + tail
+
+                def source_refs(*args, limit=64, **kwargs):
+                    return all_refs if limit is None else all_refs[:limit]
+
+                with patch.object(proof, "_source_references", side_effect=source_refs):
+                    legacy = proof.expand_source_pages(self.root, query, [hit])
+                    first = proof.expand_source_pages(self.root, query, [hit], continue_references=True)
+                    continued = proof.expand_source_pages(self.root, query, [hit], page_offset=1,
+                                                          pages_per_locator=2, continue_references=True)
+                self.assertEqual(len(self.candidates(legacy)), prefix_count)
+                self.assertEqual(first[0]["reference_start"], 0)
+                self.assertEqual(first[0]["reference_end_exclusive"], prefix_count)
+                self.assertEqual(first[0]["remaining_references"], 16)
+                self.assertEqual([page["reference_start"] for page in continued],
+                                 [prefix_count, prefix_count + 8])
+                self.assertEqual({x["source"] for x in self.candidates(continued)},
+                                 {r["path"] for r in refs[1:]})
+
+    def test_continuation_deduplicates_implicit_pin_but_keeps_wrong_blob(self) -> None:
+        query = "amberquartz nativekappa"
+        refs = self.archive({
+            f"02_REGISTRY/research/sources/owner_{i:02d}.md":
+                "Amberquartz nativekappa actual source.\n"
+            for i in range(64)
+        })
+        alias = refs[0]
+        path = self.research / "alias_locator.md"
+        lines = [f"# {query}", f"{query}: `{alias['path']}`; commit: {alias['commit']}."]
+        lines += [f"{query}: `{r['path']}`; commit: {r['commit']}; blob: {r['blob']}."
+                  for r in refs[1:]]
+        lines += [f"amberquartz: `{alias['path']}`; commit: {alias['commit']}; blob: {alias['blob']}.",
+                  f"amberquartz: `{alias['path']}`; commit: {alias['commit']}; blob: {'f' * 40}."]
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        hit = {"source": path.relative_to(self.root).as_posix(),
+               "source_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+               "source_origin": "workspace", "direct_content": True, "source_refs": [alias]}
+        first = proof.expand_source_pages(self.root, query, [hit])
+        self.assertTrue(any(r["path"] == alias["path"] and r["pin_status"] == "pinned_snapshot"
+                            for r in first[0]["reference_statuses"]))
+        last = proof.expand_source_pages(self.root, query, [hit], page_offset=8,
+                                         continue_references=True)
+        statuses = [r for page in last for r in page["reference_statuses"]]
+        self.assertEqual(len(statuses), 1)
+        self.assertEqual(statuses[0]["pin_status"], "pin_mismatch")
+        self.assertEqual(statuses[0]["blob"], "f" * 40)
+
     def test_changed_locator_hash_fails_before_reading_pins(self) -> None:
         query = "amberquartz"
         refs = self.archive({"02_REGISTRY/research/owner.md": "Amberquartz identity.\n"})
@@ -321,6 +592,28 @@ class ProofSourcePagesTests(unittest.TestCase):
         self.assertEqual(rendered["text_candidates"][-1]["source"], hits[-1]["source"])
         self.assertEqual(rendered["source_pages"][-1]["locator_source"],
                          pages[-1]["locator_source"])
+
+    def test_cli_exposes_explicit_continuation_and_snapshot_boundary(self) -> None:
+        dataset = {"snapshot_commit": "a" * 40, "worktree_dirty": False,
+                   "source_digests": {}}
+        output = io.StringIO()
+        with patch.object(proof, "load_dataset", return_value=dataset), \
+             patch.object(proof, "structured_search", return_value=[]), \
+             patch.object(proof, "full_text_search", return_value=[]) as search, \
+             patch.object(proof, "expand_source_pages", return_value=[]) as expand, \
+             patch("sys.argv", ["proof_architecture.py", "--repo-root", str(self.root),
+                                "search", "amberquartz", "--limit", "18", "--offset", "18",
+                                "--source-pages", "4", "--continue-sources",
+                                "--source-page-offset", "8"]), \
+             patch("sys.stdout", output):
+            self.assertEqual(proof.main(), 0)
+        search.assert_called_once_with(self.root, "amberquartz", 18, offset=18)
+        expand.assert_called_once_with(self.root, "amberquartz", [], pages_per_locator=4,
+                                       page_offset=8, continue_references=True)
+        rendered = json.loads(output.getvalue())
+        self.assertEqual(rendered["text_offset"], 18)
+        self.assertEqual(rendered["source_page_offset"], 8)
+        self.assertIn("not durable", rendered["pagination_scope"])
 
 
 if __name__ == "__main__":
