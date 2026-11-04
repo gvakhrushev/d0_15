@@ -1,0 +1,46 @@
+D0.Foundation.VerificationCore.sufficient_memory_preserves_record {F : FutureExecution}
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) {Memory : Type}
+  (encode : F.State → Memory) (decode : Memory → List F.Action → F.Test → F.Outcome)
+  (correct : ∀ (s : F.State), decode (encode s) = F.profile s) {s t : F.State} (h : encode s = encode t) :
+  representedRecord E s = representedRecord E t
+D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.sufficient_memory_reflects_future (F : FutureExecution)
+  {C : Type} (encode : F.State → C) (decode : C → List F.Action → F.Test → F.Outcome)
+  (correct : ∀ (s : F.State), decode (encode s) = F.profile s) {s t : F.State} (heq : encode s = encode t) : ⟦s⟧ = ⟦t⟧
+D0.Foundation.VerificationCore.representedRecord_eq_iff {F : FutureExecution}
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (s t : F.State) :
+  representedRecord E s = representedRecord E t ↔ F.profile s = F.profile t
+D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff_record {Symbol : Type} [LinearOrder Symbol] [WellFoundedLT Symbol]
+  (F : FutureExecution) (dec : List Symbol → F.State) (enc : F.State → List Symbol)
+  (correct : ∀ (s : F.State), F.profile (dec (enc s)) = F.profile s)
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (s t : F.State) :
+  stateCode F dec enc s = stateCode F dec enc t ↔ representedRecord E s = representedRecord E t
+D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_same_current :
+  hiddenBitExecution.observe (false, false) () = hiddenBitExecution.observe (false, true) ()
+D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_different_future :
+  hiddenBitExecution.profile (false, false) ≠ hiddenBitExecution.profile (false, true)
+D0.Foundation.VerificationCore.hiddenBit_records_distinct
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification hiddenBitExecution.futureEmpiricalTheory) :
+  representedRecord E (false, false) ≠ representedRecord E (false, true)
+D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent (F : FutureExecution)
+  (s : F.State) (b b' : Bool) : F.uncoupledCenter.profile (s, b) = F.uncoupledCenter.profile (s, b')
+D0.Foundation.VerificationCore.uncoupledCenter_records_equal (F : FutureExecution)
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.uncoupledCenter.futureEmpiricalTheory) (s : F.State)
+  (b b' : Bool) : representedRecord E (s, b) = representedRecord E (s, b')
+'D0.Foundation.VerificationCore.sufficient_memory_preserves_record' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff_record' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_same_current' does not depend on any axioms
+'D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_different_future' depends on axioms: [propext]
+'D0.Foundation.VerificationCore.hiddenBit_records_distinct' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent' depends on axioms: [Quot.sound]
+'D0.Foundation.VerificationCore.uncoupledCenter_records_equal' depends on axioms: [propext, Quot.sound]
+theorem D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff_record : ∀ {Symbol : Type} [inst : LinearOrder Symbol]
+  [inst_1 : WellFoundedLT Symbol] (F : FutureExecution) (dec : List Symbol → F.State) (enc : F.State → List Symbol),
+  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) →
+    ∀ (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (s t : F.State),
+      stateCode F dec enc s = stateCode F dec enc t ↔ representedRecord E s = representedRecord E t :=
+fun {Symbol} [LinearOrder Symbol] [WellFoundedLT Symbol] F dec enc correct E s t =>
+  {
+    mp := fun h =>
+      sufficient_memory_preserves_record E (stateCode F dec enc) (fun code => F.profile (dec code))
+        (fun x => Eq.trans (canon_profile F dec (enc x)) (correct x)) h,
+    mpr := fun h => (stateCode_eq_iff F dec enc correct s t).mpr ((representedRecord_eq_iff E s t).mp h) }

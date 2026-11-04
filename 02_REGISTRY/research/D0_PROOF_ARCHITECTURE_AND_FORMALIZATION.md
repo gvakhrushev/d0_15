@@ -17718,3 +17718,12 @@ checks the precise state-independent context/readout witness and the full
 profile equivalence on represented states. Older reviews retain their text
 and now link an explicit sufficiency correction; neither witness necessity nor
 physical selection is inferred.
+
+### Independent source review: sufficient future memory
+
+The [Book01 §01.1.8 memory review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0118_sufficient_memory_review_2026-11-05/SUMMARY_RU.md)
+checks the supplied profile-decoder hypothesis, represented records and the
+actual shortlex-code consumer. Existing hidden-bit and uncoupled-bit controls
+retain the boundary of the supplied tests; a sufficient memory may still
+retain extra raw distinctions. Physical memory, cost, admission and full C0
+acceptance are not inferred.
