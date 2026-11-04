@@ -1,0 +1,235 @@
+{
+  "schema": "d0-repeated-reporter-transfer-integration-v1",
+  "snapshot_commit": "c6666a6bbf9c044df83e644d6e7505c633cc6c19",
+  "worktree_dirty": false,
+  "lean_source_digest": "d5809e0d4ad3bf094571fbcbbaa566a7e94b84fcf3963b2f6ec7bee7cc51baa9",
+  "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+  "narrow_jobs": 2707,
+  "full_jobs": 4808,
+  "full_warning_count": 1340,
+  "new_module_warnings": 1,
+  "independent_review": "No mathematical regression; all three theorem axioms are propext, Classical.choice, Quot.sound. Review used compiled cache.",
+  "logs": {
+    "narrow": {
+      "sha256": "a786dacce93f3298b0e152ce2ce7e796b883f516950ce2feeb1387668011dabd",
+      "gzip_sha256": "0e612fdaa9284e790750e35300667cd7f6104c70aa398c3b1fd352b65faf74db",
+      "build_receipt": {
+        "command": [
+          "lake",
+          "build",
+          "D0.Research.TaskFaithfulRepeatedReporterTransfer"
+        ],
+        "dependencies": {
+          "boundary": "point-in-time source checks; generated .lake/build caches (except Lean source), .lake/build.barrel[.trace] and widget/package-lock.json.hash not authenticated",
+          "checks": "git HEAD, exact tracked checkout bytes and modes against index blobs, index flags, symlink targets, untracked/ignored files outside listed caches, Lean sources inside build cache",
+          "manifest_sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+          "packages": [
+            {
+              "name": "Cli",
+              "revision": "6b907cf12b2e445ccb7c24bc208ef04a1f39e84c"
+            },
+            {
+              "name": "LeanSearchClient",
+              "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+            },
+            {
+              "name": "Qq",
+              "revision": "a6e6c34c4ef182f83b219a3a5a385f51f44bdc4c"
+            },
+            {
+              "name": "aesop",
+              "revision": "558915ae105bfd8074e22d597613d1961822adc2"
+            },
+            {
+              "name": "batteries",
+              "revision": "32dc18cde3684679f3c003de608743b57498c56f"
+            },
+            {
+              "name": "importGraph",
+              "revision": "515cf9d0c00ece5e661f6de4326a53dedc1e8ea1"
+            },
+            {
+              "name": "mathlib",
+              "revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7"
+            },
+            {
+              "name": "plausible",
+              "revision": "a456461b368b71d2accd95234832cd9c174b5437"
+            },
+            {
+              "name": "proofwidgets",
+              "revision": "a84b3e2475d5c5ab979567b1ad8aea21b764bcf8"
+            }
+          ],
+          "schema": "d0-lake-dependency-provenance-v1"
+        },
+        "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+        "environment_sha256": "ee0e17d653f3cfc96784755a17c136c4b26ac9864b67f7a3303e63043d528411",
+        "schema": "d0-lean-build-receipt-v1",
+        "source_sha256": "d5809e0d4ad3bf094571fbcbbaa566a7e94b84fcf3963b2f6ec7bee7cc51baa9",
+        "target": "D0.Research.TaskFaithfulRepeatedReporterTransfer",
+        "toolchain": {
+          "boundary": "selected executable bytes and reported versions at two snapshots; dynamic libraries, kernel, external settings and generated caches are not authenticated",
+          "elan": {
+            "resolved_path": "/Users/grigorijvahrusev/.elan/bin/elan",
+            "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+          },
+          "lake_version": {
+            "command": [
+              "/Users/grigorijvahrusev/.elan/bin/lake",
+              "--version"
+            ],
+            "stderr": "",
+            "stdout": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)"
+          },
+          "launchers": {
+            "lake": {
+              "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lake",
+              "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+            },
+            "lean": {
+              "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lean",
+              "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+            }
+          },
+          "lean_version": {
+            "command": [
+              "/Users/grigorijvahrusev/.elan/bin/lake",
+              "env",
+              "lean",
+              "--version"
+            ],
+            "stderr": "",
+            "stdout": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)"
+          },
+          "resolution": "elan which",
+          "selected": {
+            "lake": {
+              "resolution_stderr": "",
+              "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lake",
+              "sha256": "9a89b2af1bddb7e6d5a8dbb2c715288bcb4f24b9129132640cee950734366bcb"
+            },
+            "lean": {
+              "resolution_stderr": "",
+              "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+              "sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997"
+            }
+          }
+        }
+      }
+    },
+    "final": {
+      "sha256": "e84fdf2db7172203731cb6676b71ce54ef48ddbd1ab367a0e01aabf586aecf76",
+      "gzip_sha256": "25d5b0586e49f72f2184a023b13e9e2494aff48973434fa91c002c422d39caea",
+      "build_receipt": {
+        "command": [
+          "lake",
+          "build",
+          "D0.All"
+        ],
+        "dependencies": {
+          "boundary": "point-in-time source checks; generated .lake/build caches (except Lean source), .lake/build.barrel[.trace] and widget/package-lock.json.hash not authenticated",
+          "checks": "git HEAD, exact tracked checkout bytes and modes against index blobs, index flags, symlink targets, untracked/ignored files outside listed caches, Lean sources inside build cache",
+          "manifest_sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+          "packages": [
+            {
+              "name": "Cli",
+              "revision": "6b907cf12b2e445ccb7c24bc208ef04a1f39e84c"
+            },
+            {
+              "name": "LeanSearchClient",
+              "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+            },
+            {
+              "name": "Qq",
+              "revision": "a6e6c34c4ef182f83b219a3a5a385f51f44bdc4c"
+            },
+            {
+              "name": "aesop",
+              "revision": "558915ae105bfd8074e22d597613d1961822adc2"
+            },
+            {
+              "name": "batteries",
+              "revision": "32dc18cde3684679f3c003de608743b57498c56f"
+            },
+            {
+              "name": "importGraph",
+              "revision": "515cf9d0c00ece5e661f6de4326a53dedc1e8ea1"
+            },
+            {
+              "name": "mathlib",
+              "revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7"
+            },
+            {
+              "name": "plausible",
+              "revision": "a456461b368b71d2accd95234832cd9c174b5437"
+            },
+            {
+              "name": "proofwidgets",
+              "revision": "a84b3e2475d5c5ab979567b1ad8aea21b764bcf8"
+            }
+          ],
+          "schema": "d0-lake-dependency-provenance-v1"
+        },
+        "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+        "environment_sha256": "ee0e17d653f3cfc96784755a17c136c4b26ac9864b67f7a3303e63043d528411",
+        "schema": "d0-lean-build-receipt-v1",
+        "source_sha256": "d5809e0d4ad3bf094571fbcbbaa566a7e94b84fcf3963b2f6ec7bee7cc51baa9",
+        "target": "D0.All",
+        "toolchain": {
+          "boundary": "selected executable bytes and reported versions at two snapshots; dynamic libraries, kernel, external settings and generated caches are not authenticated",
+          "elan": {
+            "resolved_path": "/Users/grigorijvahrusev/.elan/bin/elan",
+            "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+          },
+          "lake_version": {
+            "command": [
+              "/Users/grigorijvahrusev/.elan/bin/lake",
+              "--version"
+            ],
+            "stderr": "",
+            "stdout": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)"
+          },
+          "launchers": {
+            "lake": {
+              "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lake",
+              "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+            },
+            "lean": {
+              "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lean",
+              "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+            }
+          },
+          "lean_version": {
+            "command": [
+              "/Users/grigorijvahrusev/.elan/bin/lake",
+              "env",
+              "lean",
+              "--version"
+            ],
+            "stderr": "",
+            "stdout": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)"
+          },
+          "resolution": "elan which",
+          "selected": {
+            "lake": {
+              "resolution_stderr": "",
+              "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lake",
+              "sha256": "9a89b2af1bddb7e6d5a8dbb2c715288bcb4f24b9129132640cee950734366bcb"
+            },
+            "lean": {
+              "resolution_stderr": "",
+              "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+              "sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997"
+            }
+          }
+        }
+      }
+    },
+    "axioms": {
+      "sha256": "0a0a6ef3a75364c502ccd7c81a4ad9f3d876c7e66ca9ef0f09f677c349d0edf7",
+      "gzip_sha256": "15f8a5508bf0baa067dcfe3e46e9d82a0de5f9e1f414064c0a949a4ef6102041"
+    }
+  },
+  "GR_closed": false
+}

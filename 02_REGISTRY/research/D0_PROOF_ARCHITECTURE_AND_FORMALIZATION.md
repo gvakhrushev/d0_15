@@ -17282,3 +17282,14 @@ The saved types and axioms use an existing compiled cache. Full native-context
 coverage and physical clock, work, admission and GR remain separate. This review
 does not accept the complete C0 partition or denominator. See
 [`book02_023b_word_transport_review_2026-11-04`](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_023b_word_transport_review_2026-11-04/SUMMARY_RU.md).
+
+### Repeated reporter: actual-price transfer and common lemma
+
+`D0.Research.TaskFaithfulRepeatedReporterTransfer` composes the existing
+ordered repeated-effect derivative with actual reporter statistics. Its
+parameterized local price-equality lemma is shared by the multiplicity formula
+and the weaker absent-label zero control. Both require the explicitly bound
+local effect/statistics families; neither supplies physical admission or the
+complete physical source. Independent review and the narrow/full builds,
+including their cached-build boundary and warnings, are pinned in the
+[repeated-reporter integration receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/repeated_reporter_transfer_c666_2026-11-04/SUMMARY_RU.md).
