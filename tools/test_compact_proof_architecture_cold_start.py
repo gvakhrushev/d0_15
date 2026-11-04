@@ -18,6 +18,7 @@ from tools.test_c0_candidate_ranges import CandidateRangeTests
 from tools.test_proof_search_streaming import StreamingTextTests, fixture_rg
 from tools import test_proof_source_pages as source_page_tests
 from tools import test_proof_cold_start_v3 as paged_cold_start_tests
+from tools import test_proof_search_progress as progress_tests
 from tools import test_proof_architecture as proof_tests
 
 
@@ -28,6 +29,12 @@ class PortableSourcePagesTests(source_page_tests.ProofSourcePagesTests):
 
 
 class PortablePagedColdStartTests(paged_cold_start_tests.PagedColdStartTests):
+    def setUp(self):
+        super().setUp()
+        self.enterContext(fixture_rg())
+
+
+class PortableSearchProgressTests(progress_tests.SearchProgressTests):
     def setUp(self):
         super().setUp()
         self.enterContext(fixture_rg())

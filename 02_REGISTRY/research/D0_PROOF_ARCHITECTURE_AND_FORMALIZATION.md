@@ -16828,3 +16828,36 @@ checked the separation, quotient and attaining witnesses. Full
 provenance-checked integration of the published source remains required.
 These finite cardinalities do not establish physical admission, clock/work
 price, quantum dimension or computational optimality.
+
+### Capacity of retained future-class and line pairs — 4 November 2026
+
+For the existing archive-code result in Book01 §01.1.8, source blob
+`eb2d8ea779189084cdaaca717326df88589ec918`, interval `[16923,17382)`
+has SHA-256 `9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe`.
+`D0.Foundation.ArchivePairCapacity` composes the existing archive-code iff
+with a supplied exact pack/unpack round trip on every archive entry. Under
+finite future-class, line and memory carriers, memory must have at least
+`card FutureClass * card Line` values. It is not required to recover arbitrary
+word strings or distinguish raw states inside one future class.
+
+For the existing `finiteSigmaWitness visibleBitVerification`, there are two
+future classes and two line labels: the lower bound of four values is attained
+by an explicit pair memory on all supplied archive entries. Direct Lean
+passed for blob `a9f7c0e2b55bde2b6821d3b2c484453df2ecf141` using cached
+dependencies; independent review checked the injection, round-trip scope
+and attaining witness. Full provenance-checked integration remains required.
+The premise covers every formal class/line pair, not their physical joint
+reachability. Classical choice, causal independence, physical cost and the
+ability of a single verdict to store a line remain separate.
+
+### Optional early progress for batched search — 4 November 2026
+
+`D0_PROOF_SEARCH_PROGRESS=1` now reports opt-in JSON counters to stderr during
+corpus hashing, the shared ripgrep scan and candidate processing. Counters
+describe completed events and attempted document reads, including failures;
+a single long read or blocked subprocess may emit nothing until it returns.
+Tests compare outputs and corpus snapshots with progress enabled/disabled,
+verify one shared batched scan and exact mixed-event counts. Diagnostics do
+not alter a replay already running, prove continuous corpus stability or
+change the meaning of existing results. As before, failure to write an enabled
+stderr stream may interrupt the process.

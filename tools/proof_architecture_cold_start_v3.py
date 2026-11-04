@@ -52,16 +52,22 @@ def corpus_paths(root: pathlib.Path) -> list[str]:
 
 def corpus_snapshot(root: pathlib.Path) -> dict[str, Any]:
     """Hash the current rg-visible corpus, including untracked visible files."""
+    proof._search_progress("corpus_enumeration_started")
     names = corpus_paths(root)
     h = hashlib.sha256()
     resolved_root = proof._search_filesystem_path(proof._search_filesystem_path(root).resolve(strict=True))
-    for name in names:
+    proof._search_progress("corpus_snapshot_started", files=len(names))
+    for index, name in enumerate(names, 1):
         path = proof._search_filesystem_path(
             proof._search_filesystem_path(root / proof._search_relative_path(name)).resolve(strict=True))
         if not proof._search_contains_file(resolved_root, path) or not path.is_file():
             raise ValueError("invalid search corpus path")
         h.update(name.encode("utf-8")); h.update(b"\0")
         h.update(hashlib.sha256(path.read_bytes()).digest()); h.update(b"\0")
+        if index % proof._SEARCH_PROGRESS_INTERVAL == 0:
+            proof._search_progress("corpus_snapshot_running", files_hashed=index,
+                                   files_total=len(names))
+    proof._search_progress("corpus_snapshot_complete", files_hashed=len(names))
     return {"sha256": h.hexdigest(), "file_count": len(names),
             "scope": "rg-visible search roots, checked before and after; no continuous or toolchain attestation"}
 

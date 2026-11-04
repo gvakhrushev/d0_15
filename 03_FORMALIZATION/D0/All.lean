@@ -238,6 +238,7 @@ import D0.Extensions.X5.Lepton
 import D0.Extensions.X5.Phason
 import D0.Extensions.X5.Synthesis
 import D0.Foundation.AdmissibleComparisonGrammar
+import D0.Foundation.ArchivePairCapacity
 import D0.Foundation.BranchSymplecticForcing
 import D0.Foundation.CanonicalSelectorNoGo
 import D0.Foundation.CascadeCarriedAssembly
