@@ -16665,3 +16665,24 @@ pair is not an injective single-bit encoding of all three outcomes. The
 execution and verification are mathematical inputs, canonical choice is
 classical, and no probability threshold, unique ontology, physical admission
 or semantic acceptance of the stronger source claims follows.
+
+### Cardinality boundary for future-profile codes — 4 November 2026
+
+`D0.Foundation.FutureProfileCountability` proves that a supplied total word
+decoder and encoder with profile-correct round trip cover at most countably
+many realized full future profiles when the alphabet is countable. The direct
+coverage theorem requires no ordering of the alphabet; a separate theorem
+reuses the shortlex adapter to inject profiles into canonical words under its
+ordered-alphabet hypotheses.
+
+An abstract execution with `State = Outcome = ℝ` and exact real-valued
+readout has uncountably many future profiles. It admits no such total round
+trip over any countable alphabet. The proof makes no claim that this ideal
+readout is physically admitted, or that approximate, restricted or differently
+encoded physical executions have the same obstruction. Direct Lean passed
+for blob `3e399bec19c1c027410970c72f5e8831c3451472`; independent review
+checked the direct coverage argument and the negative example.
+
+Thus the encoder/decoder premise in the prior adapter is substantial, not a
+consequence of an arbitrary `FutureExecution`. Classical choice and absence
+of a computable canonicalizer retain their previously stated scope.
