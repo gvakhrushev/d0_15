@@ -1,0 +1,366 @@
+{
+  "schema": "d0-c0-candidate-range-v1",
+  "snapshot_commit": "4fafa9ea90ecb2ddc1dbdb917c229dfff1a1e011",
+  "primary_path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+  "primary_blob": "7f3f29421915bb8f9d61c997cdcd3f59573337b1",
+  "status": "candidate_byte_coverage_verified",
+  "candidates": [
+    {
+      "title": "Book02 §02.3b",
+      "source_commit": "a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38",
+      "source_path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "source_blob": "00d7c597abb99856719b274bb86b115b17af139f",
+      "section": {
+        "start": 12086,
+        "end": 15801,
+        "sha256": "612be4ee853d2f03469e3877a41cb16490a0cb6e5328fead13b2dbcb5346c7c8"
+      },
+      "table_ranges": [
+        {
+          "start": 12154,
+          "end": 12728,
+          "role": "candidate"
+        },
+        {
+          "start": 12729,
+          "end": 13109,
+          "role": "candidate"
+        },
+        {
+          "start": 13110,
+          "end": 13646,
+          "role": "candidate"
+        },
+        {
+          "start": 13647,
+          "end": 14273,
+          "role": "candidate"
+        },
+        {
+          "start": 14274,
+          "end": 14759,
+          "role": "candidate"
+        },
+        {
+          "start": 14760,
+          "end": 15284,
+          "role": "candidate"
+        },
+        {
+          "start": 15285,
+          "end": 15800,
+          "role": "candidate"
+        }
+      ],
+      "structural_ranges": [
+        {
+          "kind": "heading",
+          "start": 12086,
+          "end": 12153
+        },
+        {
+          "kind": "LF_separator",
+          "start": 12153,
+          "end": 12154
+        },
+        {
+          "kind": "LF_separator",
+          "start": 12728,
+          "end": 12729
+        },
+        {
+          "kind": "LF_separator",
+          "start": 13109,
+          "end": 13110
+        },
+        {
+          "kind": "LF_separator",
+          "start": 13646,
+          "end": 13647
+        },
+        {
+          "kind": "LF_separator",
+          "start": 14273,
+          "end": 14274
+        },
+        {
+          "kind": "LF_separator",
+          "start": 14759,
+          "end": 14760
+        },
+        {
+          "kind": "LF_separator",
+          "start": 15284,
+          "end": 15285
+        },
+        {
+          "kind": "LF_separator",
+          "start": 15800,
+          "end": 15801
+        }
+      ],
+      "byte_coverage": "verified",
+      "text_boundaries": "utf8_decodable",
+      "semantic_classification": "not_assessed",
+      "acceptance": "not_assessed",
+      "active_source_version": {
+        "version": "corrected",
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "section_range": [
+          12086,
+          15810
+        ],
+        "section_sha256": "beb708ff66633cd5a184268fa17febfc683a400b37c5b27ce7f9212a46bbae91",
+        "semantic_acceptance": "not_assessed",
+        "mapped_candidate": {
+          "title": "Book02 §02.3b",
+          "source_commit": "4fafa9ea90ecb2ddc1dbdb917c229dfff1a1e011",
+          "source_path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+          "source_blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+          "section": {
+            "start": 12086,
+            "end": 15810,
+            "sha256": "beb708ff66633cd5a184268fa17febfc683a400b37c5b27ce7f9212a46bbae91"
+          },
+          "table_ranges": [
+            {
+              "start": 12154,
+              "end": 12728,
+              "role": "candidate"
+            },
+            {
+              "start": 12729,
+              "end": 13109,
+              "role": "candidate"
+            },
+            {
+              "start": 13110,
+              "end": 13646,
+              "role": "candidate"
+            },
+            {
+              "start": 13647,
+              "end": 14273,
+              "role": "candidate"
+            },
+            {
+              "start": 14274,
+              "end": 14759,
+              "role": "candidate"
+            },
+            {
+              "start": 14760,
+              "end": 15293,
+              "role": "candidate"
+            },
+            {
+              "start": 15294,
+              "end": 15809,
+              "role": "candidate"
+            }
+          ],
+          "structural_ranges": [
+            {
+              "kind": "heading",
+              "start": 12086,
+              "end": 12153
+            },
+            {
+              "kind": "LF_separator",
+              "start": 12153,
+              "end": 12154
+            },
+            {
+              "kind": "LF_separator",
+              "start": 12728,
+              "end": 12729
+            },
+            {
+              "kind": "LF_separator",
+              "start": 13109,
+              "end": 13110
+            },
+            {
+              "kind": "LF_separator",
+              "start": 13646,
+              "end": 13647
+            },
+            {
+              "kind": "LF_separator",
+              "start": 14273,
+              "end": 14274
+            },
+            {
+              "kind": "LF_separator",
+              "start": 14759,
+              "end": 14760
+            },
+            {
+              "kind": "LF_separator",
+              "start": 15293,
+              "end": 15294
+            },
+            {
+              "kind": "LF_separator",
+              "start": 15809,
+              "end": 15810
+            }
+          ],
+          "byte_coverage": "verified",
+          "text_boundaries": "utf8_decodable",
+          "semantic_classification": "not_assessed",
+          "acceptance": "not_assessed"
+        }
+      }
+    },
+    {
+      "title": "Book01 §01.1.8",
+      "source_commit": "a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38",
+      "source_path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "source_blob": "eb2d8ea779189084cdaaca717326df88589ec918",
+      "section": {
+        "start": 14123,
+        "end": 18478,
+        "sha256": "bd468ba86fc3eb70004871d2bb5777c40afbfb7f92394d33c52b46759692ea9f"
+      },
+      "table_ranges": [
+        {
+          "start": 14123,
+          "end": 14190,
+          "role": "structural"
+        },
+        {
+          "start": 14190,
+          "end": 14686,
+          "role": "candidate"
+        },
+        {
+          "start": 14686,
+          "end": 15020,
+          "role": "candidate"
+        },
+        {
+          "start": 15020,
+          "end": 15503,
+          "role": "candidate"
+        },
+        {
+          "start": 15503,
+          "end": 16028,
+          "role": "candidate"
+        },
+        {
+          "start": 16028,
+          "end": 16656,
+          "role": "candidate"
+        },
+        {
+          "start": 16656,
+          "end": 16923,
+          "role": "candidate"
+        },
+        {
+          "start": 16923,
+          "end": 17382,
+          "role": "candidate"
+        },
+        {
+          "start": 17382,
+          "end": 17786,
+          "role": "candidate"
+        },
+        {
+          "start": 17786,
+          "end": 18069,
+          "role": "candidate"
+        },
+        {
+          "start": 18069,
+          "end": 18478,
+          "role": "candidate"
+        }
+      ],
+      "structural_ranges": [
+        {
+          "kind": "heading_and_separator",
+          "start": 14123,
+          "end": 14190
+        }
+      ],
+      "byte_coverage": "verified",
+      "text_boundaries": "utf8_decodable",
+      "semantic_classification": "not_assessed",
+      "acceptance": "not_assessed"
+    },
+    {
+      "title": "Book01 §01.1.6",
+      "source_commit": "1eabcccbf7e115c667e9bb8c445ef300107b1493",
+      "source_path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "source_blob": "eb2d8ea779189084cdaaca717326df88589ec918",
+      "section": {
+        "start": 11972,
+        "end": 13530,
+        "sha256": "ba3fc2c88b388bad890dfcbced2b22343f2019b72d78c927b9488c40ab69afac"
+      },
+      "table_ranges": [
+        {
+          "start": 11972,
+          "end": 12020,
+          "role": "structural"
+        },
+        {
+          "start": 12020,
+          "end": 12189,
+          "role": "candidate"
+        },
+        {
+          "start": 12189,
+          "end": 12477,
+          "role": "candidate"
+        },
+        {
+          "start": 12477,
+          "end": 12713,
+          "role": "candidate"
+        },
+        {
+          "start": 12713,
+          "end": 12874,
+          "role": "candidate"
+        },
+        {
+          "start": 12874,
+          "end": 12992,
+          "role": "candidate"
+        },
+        {
+          "start": 12992,
+          "end": 13059,
+          "role": "candidate"
+        },
+        {
+          "start": 13059,
+          "end": 13293,
+          "role": "candidate"
+        },
+        {
+          "start": 13293,
+          "end": 13530,
+          "role": "candidate"
+        }
+      ],
+      "structural_ranges": [
+        {
+          "kind": "heading_and_separator",
+          "start": 11972,
+          "end": 12020
+        }
+      ],
+      "byte_coverage": "verified",
+      "text_boundaries": "utf8_decodable",
+      "semantic_classification": "not_assessed",
+      "acceptance": "not_assessed"
+    }
+  ],
+  "scope": "Only source bytes, UTF-8 boundaries, lexical heading-section boundaries and declared range coverage were checked; the heading scanner is not a full Markdown parser. Merged or split rows do not establish a mathematical-unit count. No semantic classification, scientific acceptance, C0 coverage or freeze is inferred. Candidate metadata is supplied input; arbitrary complete metadata or path replacement is not authenticated by this byte-only verifier."
+}
