@@ -2336,6 +2336,15 @@ def _workspace_page_relative_path(value: str) -> str:
     return value
 
 
+def workspace_page_safe_open_supported() -> bool:
+    """Whether the required no-follow, directory-relative OS APIs exist.
+
+    Capability alone does not assert that a particular source was opened.
+    """
+    return (hasattr(os, "O_NOFOLLOW") and hasattr(os, "O_DIRECTORY") and
+            os.open in os.supports_dir_fd)
+
+
 def _workspace_page_read(root: pathlib.Path, relative: str) -> tuple[str, bytes | None]:
     """Open every component relative to root without following any symlink.
 
@@ -2344,8 +2353,7 @@ def _workspace_page_read(root: pathlib.Path, relative: str) -> tuple[str, bytes 
     The stat comparison detects ordinary concurrent modification during read;
     it is not an operating-system snapshot or attestation of later bytes.
     """
-    if (not hasattr(os, "O_NOFOLLOW") or not hasattr(os, "O_DIRECTORY") or
-            os.open not in os.supports_dir_fd):
+    if not workspace_page_safe_open_supported():
         return "unsupported_safe_open", None
     try:
         parts = _workspace_page_relative_path(relative).split("/")
@@ -3922,6 +3930,11 @@ def main() -> int:
                     for page in pages
                 ]
             if args.workspace_source_pages:
+                if not workspace_page_safe_open_supported():
+                    result["workspace_source_access"] = {
+                        "status": "unsupported_safe_open",
+                        "scope": "workspace source pages only; no locator or target was opened by this feature",
+                    }
                 pages = expand_workspace_source_pages(
                     root, query, text_hits, pages_per_locator=args.workspace_source_pages,
                     page_offset=args.workspace_page_offset,

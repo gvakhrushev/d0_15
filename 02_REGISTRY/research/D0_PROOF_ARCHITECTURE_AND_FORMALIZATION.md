@@ -17061,3 +17061,21 @@ integration remains required on final inputs.
 `#print axioms` on the general bound, the `n=8` star bound, the algebraic
 attaining witness and the one-block negative control reports `propext`,
 `Classical.choice`, and `Quot.sound`; this uses the same cached dependencies.
+
+
+### Workspace-source safe-open diagnostic
+
+On systems lacking the no-follow, directory-relative open APIs required by
+workspace-source pages, a search that requests these pages now explicitly
+reports `unsupported_safe_open`; this does not imply that ranked or pinned
+channels failed. A verifier on such a system rejects nonempty workspace pages
+that it cannot safely reopen. An empty page gives no source credit. The v3
+compactor reports the capability of its **current** verification environment
+when a workspace-page budget is present; it does not infer the platform of a
+historical producer. Receipts without that budget retain their earlier shape.
+
+This is an honest diagnostic, not an implementation of Windows safe-open and
+not a full-search result. Existing locator/target checks, exact-pin distinction
+and physical/C0 acceptance boundaries remain unchanged. Three targeted tests
+passed on Windows, plus the existing v3 `verify_discovery=True` control. The
+mocked supported-API case does not attest real safe-open on another platform.

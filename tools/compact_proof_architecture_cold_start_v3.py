@@ -154,6 +154,11 @@ def compact(full_bytes: bytes, root: pathlib.Path = ROOT, *,
                                     "bounded evidence rechecked; discovery and ranks unattested; corpus checked only at endpoints")}
     if has_workspace_pages:
         summary["workspace_source_page_budget"] = workspace_budget
+        if not proof.workspace_page_safe_open_supported():
+            summary["workspace_source_verification"] = {
+                "status": "unsupported_safe_open",
+                "scope": "current verification only; workspace-page locators and targets were not opened; other evidence is checked separately",
+            }
     return summary
 
 
