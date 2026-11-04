@@ -17727,3 +17727,13 @@ actual shortlex-code consumer. Existing hidden-bit and uncoupled-bit controls
 retain the boundary of the supplied tests; a sufficient memory may still
 retain extra raw distinctions. Physical memory, cost, admission and full C0
 acceptance are not inferred.
+
+### #334 §7fj: same-clock price source contrast
+
+The [pinned §7fj intake](sources/d0_334_post_800_afd_intake_2026-11-05/README.md)
+preserves the same-clock Book/CQ defect identity and its scoped source
+separation under the stated fixed positive gain and regular chart. The two
+marked-report endings are different tasks under the specified complete report,
+not established free variations within one faithful task. The bounded replay
+includes 34 nominal numeric checks; it does not prove the full physical price,
+admission, source map or GR.
