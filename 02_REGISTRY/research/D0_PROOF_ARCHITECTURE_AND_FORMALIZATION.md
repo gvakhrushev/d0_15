@@ -17763,3 +17763,12 @@ return block, determinant and physical source map are not yet bound to those
 interfaces; their possible equivalence is not rejected. The Lean derivative has
 fixed β and z, while the owner's full identity allows varying β. No new
 conditional wrapper, physical selection or GR closure is claimed.
+
+### #334 §7fj: full clock versus compressed return
+
+The [bounded block review](sources/d0_proof_architecture_formalization_2026-10-24/reports/owner_7fj_full_clock_block_review_2026-11-05/SUMMARY_RU.md)
+checks why `B₀f* g A_f` need not be unitary, including an exact canonical
+birth/CX control. The owner's full unitary clock retains the missing birth
+complement and yields G9–G10. The generic unitary Gram identity and its
+positive-chart consumer already exist in Lean; their binding to this clock,
+the full Hodge carrier and actual source remains to be proved.
