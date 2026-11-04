@@ -16617,3 +16617,29 @@ choice. It gives neither a computable minimization algorithm nor the missing
 code/state map and proof that this relation matches equality of complete
 `FutureExecution` profiles. It does not establish a single physical ontology,
 native admission or semantic acceptance of the whole source section.
+
+### Shortlex codes for supplied future executions — 4 November 2026
+
+`D0.Foundation.FutureShortlexAdapter` consumes the word-setoid presentation
+and the existing complete-future profile. Given a `FutureExecution` and a
+total decoder from words to states, it identifies canonical words exactly
+when their decoded complete future profiles agree. Given additionally an
+encoder whose decode/encode round trip preserves every state's profile,
+state codes identify exactly equal profiles, one-step code transitions respect
+profile equivalence and commute with the existing actions. Equal represented
+records are equivalent to equal codes only with a separately supplied
+`TheoryVerification` of this same future theory.
+
+Concrete applications reuse the owned `visibleBitSystem` and
+`hiddenBitExecution`: a permanently unobserved bit can be identified, while
+a bit exposed by an allowed future action remains distinct even when current
+observations agree. Direct Lean checking passed for blob
+`a4a390673994ecbe7529ebae636ddd3fd6e2db7d`; independent review checked the
+profile, transition and record hypotheses and the examples.
+
+The decoder, encoder and profile fidelity for every state are inputs; a
+total decoder supplies a state for every word, including the empty word.
+No encoder existence for arbitrary executions, computable canonicalizer,
+physical admission, finite physical alphabet or full Cost−Info/work/clock
+selection follows. This conditional adapter does not accept C0 as a whole or
+close the original physical GR obligations.
