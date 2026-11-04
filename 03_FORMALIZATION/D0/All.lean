@@ -707,6 +707,7 @@ import D0.Research.SourceReflectionKernel
 import D0.Research.TaskFaithfulAffineReporterDerivative
 import D0.Research.TaskFaithfulRadialPriceDerivative
 import D0.Research.TaskFaithfulReporterEffect
+import D0.Research.TaskFaithfulReporterProductEquality
 import D0.Research.TaskFaithfulReturnBound
 import D0.Research.TaskFaithfulReturnContrast
 import D0.Research.TaskFaithfulReturnPrice

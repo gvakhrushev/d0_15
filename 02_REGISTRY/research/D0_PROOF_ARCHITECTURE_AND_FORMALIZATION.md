@@ -16939,3 +16939,34 @@ The legacy missing-source diagnostic now labels an unversioned citation
 historical v3 diagnostic is preserved as executed; its AF q4 label
 `exact_pin_seen_but_content_check_incomplete` included such an unversioned
 reference and did not establish a Git pin. Both labels retain `found=false`.
+
+
+### Same-task reporter equality through the ordered return product
+
+`D0.Research.TaskFaithfulReporterProductEquality` consumes the owned task-faithful
+reporter effect and return-price results. For each label occurring in the actual
+word, equality of the selected reporter statistic on **every unit input**, with
+the same input preparation and readout, yields equal full pulled-back effects.
+With the same return preparations it therefore yields equal compression blocks,
+and then equal products in the original order, including repeated labels. The
+same retained-history map and orthonormal basis give equal Gram matrices and
+equal values of the specified regularized price function for every real `z`.
+This equality of a total function does not establish the physical logarithm
+domain or positive gain.
+
+The nonempty one-label example distinguishes `id` and `-id` as linear maps but
+only uses their common quadratic statistics; it may have zero history or gain.
+It does not establish different admitted physical programmes, physical
+preparation or readout, equality of other observables, or full Cost−Info. The
+all-unit-input hypothesis, actual same-execution realization, clock, work and
+independent internal equations remain open. The scientific owner #334 is
+preserved and `GR_closed=false`.
+
+Source: #334 task-faithful proof, commit
+`fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`, blob
+`c99e90a8c8e96bae70e700fa88d1c2d824a1831b`, section 3 bytes `[9199,10610)`,
+SHA-256 `9a8508f1fa7d5b1310070fdeb823881d2fd72e531d573dd918bdd190dcbcc010`.
+The module was checked directly with Lean using existing cached dependencies;
+the cache provenance was not independently attested. An independent read-only
+review checked the hypotheses, ordered product, repeated labels and example.
+A clean final integration build remains required on the final inputs.
