@@ -79,5 +79,49 @@ theorem actualReporter_price_repeated_affine_derivative
           (actualReport t) readout returnPrepare w K basis z hb).symm
     _ = _ := by rw [hprod]
 
+
+omit [CompleteSpace I] [CompleteSpace X] in
+/-- An absent label has zero slope under the same local reporter bindings,
+without scalar-corner, positivity, or nonzero-gain hypotheses. -/
+theorem actualReporter_price_absent_label
+    {n : Type*} [Fintype n] [DecidableEq n]
+    (inputPrepare : J → I →ₗ[ℂ] M) (readout : J → O →ₗ[ℂ] O)
+    (returnPrepare : J → X →ₗᵢ[ℂ] I)
+    (referenceReport actualReport : ℝ → J → M →ₗ[ℂ] O)
+    (reference : J → I →ₗ[ℂ] I) (direction : I →ₗ[ℂ] I)
+    (w : List J) (j : J) (hj : j ∉ w)
+    (K : V →L[ℂ] X) (basis : OrthonormalBasis n ℂ V) (z : ℝ)
+    (affineEffect : ∀ᶠ t in 𝓝 (0 : ℝ), ∀ k ∈ w,
+      reporterEffectFamily inputPrepare (referenceReport t) readout k =
+        Function.update reference j (reference j + (t : ℂ) • direction) k)
+    (sameTask : ∀ᶠ t in 𝓝 (0 : ℝ), ∀ k ∈ w,
+      sameUnitReporterStatistics (inputPrepare k)
+        (referenceReport t k) (actualReport t k) (readout k)) :
+    HasDerivAt
+      (fun t => actualReporterReturnPrice inputPrepare (actualReport t) readout returnPrepare
+        w K basis z) 0 0 := by
+  have h := taskReturnProduct_price_absent_label returnPrepare reference direction w j hj K basis z
+  apply h.congr_of_eventuallyEq
+  filter_upwards [affineEffect, sameTask] with t ha hb
+  have hprod :
+      taskReturnProduct returnPrepare (reporterEffectFamily inputPrepare (referenceReport t) readout) w =
+        taskReturnProduct returnPrepare
+          (Function.update reference j (reference j + (t : ℂ) • direction)) w := by
+    unfold taskReturnProduct
+    apply congrArg List.prod
+    apply List.map_congr_left
+    intro k hk
+    rw [ha k hk]
+  change D0.Analysis.regularizedReturnPrice (1-z) ((z : ℂ) • D0.Analysis.gramMatrix
+      (taskReturnProduct returnPrepare (reporterEffectFamily inputPrepare (actualReport t) readout)
+        w ∘L K).toLinearMap basis) = _
+  calc
+    _ = D0.Analysis.regularizedReturnPrice (1-z) ((z : ℂ) • D0.Analysis.gramMatrix
+      (taskReturnProduct returnPrepare (reporterEffectFamily inputPrepare (referenceReport t) readout)
+        w ∘L K).toLinearMap basis) :=
+        (taskReturnProduct_price_eq_of_sameUnitStatistics inputPrepare (referenceReport t)
+          (actualReport t) readout returnPrepare w K basis z hb).symm
+    _ = _ := by rw [hprod]
+
 end D0.Research
 end
