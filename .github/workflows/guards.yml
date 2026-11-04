@@ -99,6 +99,8 @@ jobs:
           python tools/test_research_input_closure.py
           python -m tools.test_compact_proof_architecture_cold_start
           python -m unittest tools.test_check_original_static_julia_roots tools.test_lean_provenance_guid
+          python 02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/test_replay_bounded.py
+          python -O 02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/test_replay_bounded.py
           python tools/test_ci_replay_reuse.py
 
       - name: Check unchanged scientific inputs against a successful Ready run
