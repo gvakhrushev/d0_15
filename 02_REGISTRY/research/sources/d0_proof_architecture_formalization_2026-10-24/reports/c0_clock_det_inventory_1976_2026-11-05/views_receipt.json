@@ -1,0 +1,27 @@
+{
+  "views_snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+  "actual_build_snapshot": "8761f9000",
+  "inventory_snapshot": "1976ecb28",
+  "inventory_sha256": "174d95c5aaba7a73444d4d3956d55e90926c1d4ba7737f4bac006f07e991e514",
+  "lean_source_sha256": "881c81b9f281b08269103e05f5078522ec71009bb8cf1db3685fc97bbb02b410",
+  "lean_final_uncompressed_sha256": "71a2e60463b836c11f953ca6b1f44ac38da32325b8c03588bae2190aff5afc58",
+  "views": {
+    "view_book01-0116.json": {
+      "sha256": "61b2772c122d0e07e23c797579a64ba2d4ef8df6b8536d5ec251dda6ffd3de52",
+      "units": 6,
+      "issues": []
+    },
+    "view_book01.json": {
+      "sha256": "d39a6d0fae0031e5e4ba3339d2ab8b544d453c4b47523bc205f1cb1f78577674",
+      "units": 44,
+      "issues": []
+    },
+    "view_book02.json": {
+      "sha256": "e7041bece3ba9dc902d22cab41c88a902c262c9047d10631b21b05feb5fbab8c",
+      "units": 30,
+      "issues": []
+    }
+  },
+  "semantic_acceptance": "not_assessed",
+  "GR_closed": false
+}

@@ -1,0 +1,43 @@
+D0.Algebra.IsometricClockDeterminant.det_one_sub_split_embedding.{u_1, u_2, u_3} {κ : Type u_1} {ι : Type u_2}
+  {R : Type u_3} [Fintype κ] [DecidableEq κ] [Fintype ι] [DecidableEq ι] [CommRing R] (J : Matrix κ ι R)
+  (L : Matrix ι κ R) (D : Matrix ι ι R) (h : L * J = 1) : (1 - J * D * L).det = (1 - D).det
+D0.Algebra.IsometricClockDeterminant.det_one_sub_isometric_embedding.{u_1, u_2} {κ : Type u_1} {ι : Type u_2}
+  [Fintype κ] [DecidableEq κ] [Fintype ι] [DecidableEq ι] (J : Matrix κ ι ℂ) (D : Matrix ι ι ℂ)
+  (hJ : J.conjTranspose * J = 1) : (1 - J * D * J.conjTranspose).det = (1 - D).det
+D0.Algebra.IsometricClockDeterminant.det_clock_defect.{u_1, u_2} {κ : Type u_1} {ι : Type u_2} [Fintype κ]
+  [DecidableEq κ] [Fintype ι] [DecidableEq ι] (J : Matrix κ ι ℂ) (C : Matrix ι ι ℂ) (z : ℂ)
+  (hJ : J.conjTranspose * J = 1) :
+  (1 - z • (J * (1 - C.conjTranspose * C) * J.conjTranspose)).det = ((1 - z) • 1 + z • (C.conjTranspose * C)).det
+'D0.Algebra.IsometricClockDeterminant.det_one_sub_split_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Algebra.IsometricClockDeterminant.det_one_sub_isometric_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Algebra.IsometricClockDeterminant.det_clock_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem D0.Algebra.IsometricClockDeterminant.det_clock_defect.{u_1, u_2} : ∀ {κ : Type u_1} {ι : Type u_2}
+  [inst : Fintype κ] [inst_1 : DecidableEq κ] [inst_2 : Fintype ι] [inst_3 : DecidableEq ι] (J : Matrix κ ι ℂ)
+  (C : Matrix ι ι ℂ) (z : ℂ),
+  J.conjTranspose * J = 1 →
+    (1 - z • (J * (1 - C.conjTranspose * C) * J.conjTranspose)).det = ((1 - z) • 1 + z • (C.conjTranspose * C)).det :=
+fun {κ} {ι} [Fintype κ] [DecidableEq κ] [Fintype ι] [DecidableEq ι] J C z hJ =>
+  have h := D0.Algebra.IsometricClockDeterminant.det_one_sub_isometric_embedding J (z • (1 - C.conjTranspose * C)) hJ;
+  have hleft :=
+    of_eq_true
+      (Eq.trans
+        (congrFun'
+          (congrArg Eq
+            (Eq.trans (congrFun' (congrArg HMul.hMul (Matrix.mul_smul J z (1 - C.conjTranspose * C))) J.conjTranspose)
+              (Matrix.smul_mul z (J * (1 - C.conjTranspose * C)) J.conjTranspose)))
+          (z • (J * (1 - C.conjTranspose * C) * J.conjTranspose)))
+        (eq_self (z • (J * (1 - C.conjTranspose * C) * J.conjTranspose))));
+  have hright :=
+    Eq.mpr
+      (id
+        (congr (congrArg Eq (congrArg (HSub.hSub 1) (smul_sub z 1 (C.conjTranspose * C))))
+          (congrFun'
+            (congrArg HAdd.hAdd (Eq.trans (sub_smul 1 z 1) (congrFun' (congrArg HSub.hSub (one_smul ℂ 1)) (z • 1))))
+            (z • (C.conjTranspose * C)))))
+      (D0.Algebra.IsometricClockDeterminant.det_clock_defect._abel_1_1 C z);
+  Eq.mp (congrArg (fun _a => (1 - z • (J * (1 - C.conjTranspose * C) * J.conjTranspose)).det = _a.det) hright)
+    (Eq.mp (congrArg (fun _a => (1 - _a).det = (1 - z • (1 - C.conjTranspose * C)).det) hleft) h)

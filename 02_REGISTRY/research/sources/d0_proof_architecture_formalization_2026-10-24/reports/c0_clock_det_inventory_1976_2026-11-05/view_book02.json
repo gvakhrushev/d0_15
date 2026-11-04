@@ -1,0 +1,1395 @@
+{
+  "authority": {
+    "active_source_version": {
+      "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+      "section_range": [
+        12086,
+        15810
+      ],
+      "section_sha256": "beb708ff66633cd5a184268fa17febfc683a400b37c5b27ce7f9212a46bbae91",
+      "semantic_acceptance": "not_assessed",
+      "version": "corrected"
+    },
+    "application": {
+      "consumer_location": "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md#7-next-physical-substitution-one-admitted-process-and-complete-price",
+      "decision": {
+        "path": "02_REGISTRY/gr_assembly/reviews/lean-operational-transfer-to-theory-transfer.md",
+        "ref": "4aa19a667387b3250d310d00c511bd1dd315bbb0",
+        "sha256": "2b5ee6947b223eda12fbaa1ebd10328ce68429ea4b055e5a4ca9346ff97ca250"
+      },
+      "hypothesis_map": {
+        "additional_native_contexts": {
+          "target_hypothesis": "additional_native_contexts"
+        },
+        "assertion_regime": {
+          "target_hypothesis": "assertion_regime"
+        },
+        "foundation_representation": {
+          "target_hypothesis": "foundation_representation"
+        },
+        "operational_interpretation": {
+          "target_hypothesis": "operational_interpretation"
+        }
+      },
+      "id": "lean-operational-transfer-to-theory-transfer",
+      "interpretation": "existing application only; not acceptance of these C0 atoms",
+      "path": "02_REGISTRY/gr_assembly/applications.json",
+      "record_sha256": "f9626b7fde77f911bdfef4d7d669dc6ab30cc0cf0c37b6b2fe7a14e6b4779da9",
+      "recorded_review_state": "accepted"
+    },
+    "compiled_inventory": {
+      "blob": "bc25c730811f1bb349d1dc5f059111621163b28b",
+      "collector_script": "regenerated_text_matches_digest_not_executed",
+      "collector_sha256": "d9678fbc51c8c8fa22bf8b5f3bddd4a6e2612a7aadb035d2de16fa579d306291",
+      "collector_source": "unchanged_between_snapshots",
+      "current_build_replayed": false,
+      "lean_source_digest": "881c81b9f281b08269103e05f5078522ec71009bb8cf1db3685fc97bbb02b410",
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_clock_det_inventory_1976_2026-11-05/declarations.json",
+      "semantic_correspondence": "pending_review",
+      "sha256": "174d95c5aaba7a73444d4d3956d55e90926c1d4ba7737f4bac006f07e991e514",
+      "snapshot_commit": "1976ecb28e73bab7d1e49e3465fe80daadd94e8f",
+      "source_digest_status": "reported_not_recomputed",
+      "state": "reported_compiled_metadata_consistent_not_replayed",
+      "toolchain": "leanprover/lean4:v4.30.0",
+      "tracked_lean_inputs": "unchanged_between_snapshots"
+    },
+    "source": {
+      "blob": "00d7c597abb99856719b274bb86b115b17af139f",
+      "commit": "a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38",
+      "module_blob": "a882f38aa1caf4d619c6e1f84c73ebe97e4b127a",
+      "module_path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "owner_modules": [
+        {
+          "active_blob": "a882f38aa1caf4d619c6e1f84c73ebe97e4b127a",
+          "blob": "a882f38aa1caf4d619c6e1f84c73ebe97e4b127a",
+          "historical_blob": "a882f38aa1caf4d619c6e1f84c73ebe97e4b127a",
+          "module": "D0.Foundation.TheoryTransfer",
+          "path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean"
+        }
+      ],
+      "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "primary_path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "primary_section_sha256": "325ebf56d196460c71d305c37a7caf849d649db595d683470ee3e4e7164d200b",
+      "section_range": [
+        12086,
+        15801
+      ],
+      "section_sha256": "612be4ee853d2f03469e3877a41cb16490a0cb6e5328fead13b2dbcb5346c7c8"
+    }
+  },
+  "checks": {
+    "compiled_inventory": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "existing_application": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "snapshot": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "source_and_primary": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    }
+  },
+  "context_dispositions": {
+    "acceptance": "not_authenticated_by_this_view",
+    "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+    "pinned_text": "C0 source review candidate: Book02 §02.3b\n\nOn snapshot `a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38`,\n`01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md` has\nGit blob `00d7c597abb99856719b274bb86b115b17af139f`. The complete section is\nthe half-open byte range `[12086,15801)`, SHA-256\n`612be4ee853d2f03469e3877a41cb16490a0cb6e5328fead13b2dbcb5346c7c8`.\nThese are review candidates and explicit scope decisions, not accepted C0\nunits. An independent reading checked every byte of this section, the listed\nLean owners and their stated hypotheses. The heading `[12086,12153)` and the\none-byte LF separators between the following ranges are structural, not\nseparate assertions; the final separator is included in the section range.\n\n| Byte range | Candidate disposition and existing support |\n| --- | --- |\n| `[12154,12728)` | Navigation and the connection to Book01 §01.1.8. The bridge requires a supplied `E : TheoryVerification F.futureEmpiricalTheory`; existence of such an `E` is not derived from an arbitrary interpretation. |\n| `[12729,13109)` | Definition of `Interpretation F G`: total executions, state/action/test maps, an injective outcome map and primitive step/observation equations. These are interface inputs. |\n| `[13110,13646)` | Finite-word run and profile transport, append and composition: `Interpretation.run_commutes`, `profile_commutes`, `compile_append`, `comp_compile`. They apply to a supplied valid interpretation. |\n| `[13647,14273)` | Future-profile equivalence and the image construction on `commonExecution`, with `imageEquiv`, `imageStep`, `imageEquiv_step` and the verified-state bridge when `E` is supplied. The common sector does not assert coverage of all native tests or states. |\n| `[14274,14759)` | Conditional translation and theorem reuse via `Interpretation.translate` and `transfer_theorem`/`transfer_from_premises`; the source proof and all indexed premises remain inputs and the conclusion is on `EmpiricalImage`. |\n| `[14760,15284)` | `NativeContextCoverage` is an explicit universal context and readout condition on represented source states. The visible/extra-bit example is a concrete counterexample to inferring that condition automatically, not a general physical no-go. |\n| `[15285,15800)` | Open physical-operation, full-source, clock and refinement obligations and navigation; no physical selection or GR theorem is proved here. |\n\nThe Lean owner is `D0.Foundation.TheoryTransfer`, source blob\n`a882f38aa1caf4d619c6e1f84c73ebe97e4b127a`; its research derivation is\n`D0_THEORY_TRANSFER_2026_10_20.md`, blob\n`46a66f7dfcf04843058ec042fcc9a0519c34c02b`. The existing accepted assembly\napplication `lean-operational-transfer-to-theory-transfer` has review ref\n`4aa19a667387b3250d310d00c511bd1dd315bbb0` and review SHA-256\n`2b5ee6947b223eda12fbaa1ebd10328ce68429ea4b055e5a4ca9346ff97ca250`.\nIts concrete visible-bit consumer is a finite example, not physical\nadmission. Existing application acceptance is not independent acceptance of\nthis C0 classification; semantic overlap with Book01 remains to be reviewed.\n\n",
+    "section": "C0 source review candidate: Book02 §02.3b",
+    "section_sha256": "325ebf56d196460c71d305c37a7caf849d649db595d683470ee3e4e7164d200b"
+  },
+  "interpretation": "This is a proposed finite Book02 §02.3b atomization, not the C0 denominator. Shared source ranges are evidence for distinct assertions, not disjoint byte units. Definitions, conditional theorems and negative controls remain distinct. Existing accepted application metadata does not accept these source classifications. All unselected slices and full C0 acceptance remain unresolved. Exact reported compiled signatures do not establish semantic correspondence or replay the build.",
+  "issues": [],
+  "schema": "d0-c0-kernel-section-view/1",
+  "scope": {
+    "all_other_c0_candidates": "not_enumerated_unresolved",
+    "book01_01_1_8": "outside_selected_slice_pending_independent_reconciliation",
+    "c0_acceptance_assessment": "not_evaluated",
+    "coverage_reported": false,
+    "finite_slice_only": true,
+    "running_reconciliation_helper": "current_runtime_not_authenticated_against_selected_snapshot",
+    "scientific_status_changed": false,
+    "sections": [
+      "Book02 §02.3b"
+    ],
+    "this_view_does_not_freeze_or_accept": true
+  },
+  "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+  "units": [
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          12729,
+          13109
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "c68ddb307ed757dac7c319fb5b5805db944bcc6d9fd57a1d151b2633151b381b",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "Let `F` and `G` be two declared execution systems. An `Interpretation F G`\nsupplies a state map `i`, a map `c` from each source action to a **finite\nnative word**, a test map `j`, and an injective outcome encoding `e`. It\nrequires only the primitive equations\n\n\\[\ni(F_a(s))=\\operatorname{run}_G(c(a),i(s)),\\qquad\n\\operatorname{read}_G(i(s),j(q))=e(\\operatorname{read}_F(s,q)).\n\\]\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution →\n  D0.Foundation.EmpiricalTheoryFactorization.FutureExecution → Type",
+        "kind": "inductive",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation",
+      "disposition": "definition",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "Total executions F and G; supplied state, finite action-word, test and injective outcome maps; primitive step and observation commutation.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Let `F` and `G` be two declared execution systems. An `Interpretation F G`\nsupplies a state map `i`, a map `c` from each source action to a **finite\nnative word**, a test map `j`, and an injective outcome encoding `e`. It\nrequires only the primitive equations\n\n\\[\ni(F_a(s))=\\operatorname{run}_G(c(a),i(s)),\\qquad\n\\operatorname{read}_G(i(s),j(q))=e(\\operatorname{read}_F(s,q)).\n\\]\n",
+      "source_excerpt_sha256": "c68ddb307ed757dac7c319fb5b5805db944bcc6d9fd57a1d151b2633151b381b",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        12729,
+        13109
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation",
+      "statement": "The operational interpretation interface contains exactly these maps and primitive equations."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13110,
+          13646
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.compile",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "{F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  D0.Foundation.TheoryTransfer.Interpretation F G → List F.Action → List G.Action",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.compile",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.compile",
+      "disposition": "definition",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "A supplied I : Interpretation F G and a finite source word.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n",
+      "source_excerpt_sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.compile",
+      "statement": "Compile a source word by concatenating the native word assigned to each action."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13110,
+          13646
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.run_commutes",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (w : List F.Action) (s : F.State),\n  I.stateMap (F.run w s) = G.run (I.compile w) (I.stateMap s)",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.run_commutes",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.run_commutes",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G, every finite word w and source state s.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n",
+      "source_excerpt_sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.run_commutes",
+      "statement": "I.stateMap (F.run w s) = G.run (I.compile w) (I.stateMap s)."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13110,
+          13646
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.profile_commutes",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (s : F.State) (w : List F.Action) (t : F.Test),\n  G.profile (I.stateMap s) (I.compile w) (I.testMap t) = I.outcomeMap (F.profile s w t)",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.profile_commutes",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.profile_commutes",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G, every source state s, word w and test t.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n",
+      "source_excerpt_sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.profile_commutes",
+      "statement": "The native profile after compiled actions and mapped test equals the encoded source profile."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13110,
+          13646
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.compile_append",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (u v : List F.Action),\n  I.compile (u ++ v) = I.compile u ++ I.compile v",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.compile_append",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.compile_append",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G and finite source words u, v.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n",
+      "source_excerpt_sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.compile_append",
+      "statement": "I.compile (u ++ v) = I.compile u ++ I.compile v."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13110,
+          13646
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.comp",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F G H : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  D0.Foundation.TheoryTransfer.Interpretation F G →\n    D0.Foundation.TheoryTransfer.Interpretation G H → D0.Foundation.TheoryTransfer.Interpretation F H",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.comp",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.comp",
+      "disposition": "construction",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "Supplied interpretations I : Interpretation F G and J : Interpretation G H.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n",
+      "source_excerpt_sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.comp",
+      "statement": "Compose interpretations by compiling the intermediate primitive words; the primitive equations remain proved."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13110,
+          13646
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.comp_compile",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G H : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (J : D0.Foundation.TheoryTransfer.Interpretation G H)\n  (w : List F.Action), (I.comp J).compile w = J.compile (I.compile w)",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.comp_compile",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.comp_compile",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G, J : Interpretation G H and source word w.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Induction over a source word derives the full execution equation\n\n\\[\ni(\\operatorname{run}_F(w,s))\n=\\operatorname{run}_G(c(w),i(s)).\n\\]\n\n`run_commutes` and `profile_commutes` prove these execution and observation\nidentities; `compile_append` and `comp_compile` prove compatibility with\nconcatenation and successive interpretations. Preservation of whole runs is\ntherefore a consequence of the primitive maps, not an extra assumed field.\nThe map need not be injective on raw states: only distinguishable future\nprofiles must be retained.\n",
+      "source_excerpt_sha256": "dc1b2778774b460330ff1b8d3eb559387fbf2d02748dc628ae86442edae1c939",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.comp_compile",
+      "statement": "(I.comp J).compile w = J.compile (I.compile w)."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13647,
+          14273
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.commonExecution",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "{F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  D0.Foundation.TheoryTransfer.Interpretation F G → D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.commonExecution",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.commonExecution",
+      "disposition": "definition",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "A supplied I : Interpretation F G.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n",
+      "source_excerpt_sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.commonExecution",
+      "statement": "Keep the full native state type and expose precisely compiled source actions and mapped source tests."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13647,
+          14273
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.common_profile_eq_iff",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (s t : F.State),\n  I.commonExecution.profile (I.stateMap s) = I.commonExecution.profile (I.stateMap t) ↔ F.profile s = F.profile t",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G and source states s, t; outcome injectivity is part of I.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n",
+      "source_excerpt_sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.common_profile_eq_iff",
+      "statement": "Common-sector native profiles of I.stateMap s and I.stateMap t agree iff their source profiles agree."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13647,
+          14273
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.EmpiricalImage",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  D0.Foundation.TheoryTransfer.Interpretation F G → Type",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage",
+      "disposition": "definition",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "A supplied I : Interpretation F G.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n",
+      "source_excerpt_sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.EmpiricalImage",
+      "statement": "The empirical image consists of common-execution future classes attained by the quotient state map."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13647,
+          14273
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.imageEquiv",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) → F.FutureClass ≃ I.EmpiricalImage",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.imageEquiv",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.imageEquiv",
+      "disposition": "construction",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "A supplied I : Interpretation F G; no all-native state or context coverage.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n",
+      "source_excerpt_sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.imageEquiv",
+      "statement": "Construct an equivalence from F.FutureClass onto I.EmpiricalImage."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13647,
+          14273
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.imageStep",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) → F.Action → I.EmpiricalImage → I.EmpiricalImage",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.imageStep",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.imageStep",
+      "disposition": "construction",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G and a source action a.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n",
+      "source_excerpt_sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.imageStep",
+      "statement": "The represented empirical image is closed under the interpreted action."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13647,
+          14273
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.imageEquiv_step",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (a : F.Action) (q : F.FutureClass),\n  I.imageEquiv (F.quotientStep a q) = I.imageStep a (I.imageEquiv q)",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.imageEquiv_step",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.imageEquiv_step",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G, source action a and future class q.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n",
+      "source_excerpt_sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.imageEquiv_step",
+      "statement": "The image equivalence intertwines F.quotientStep with I.imageStep."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13647,
+          14273
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.verifiedStateImageEquiv",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) →\n    (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) →\n      E.protocol.State ≃ I.EmpiricalImage",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv",
+      "disposition": "construction",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G and supplied E : TheoryVerification F.futureEmpiricalTheory.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n",
+      "source_excerpt_sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.verifiedStateImageEquiv",
+      "statement": "Construct E.protocol.State equivalent to the same I.EmpiricalImage via the existing foundation representation."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          13647,
+          14273
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.verifiedRun_image",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G)\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (w : List F.Action)\n  (s : F.State),\n  ↑((I.verifiedStateImageEquiv E)\n        (D0.Foundation.VerificationCore.representedRun E w (D0.Foundation.VerificationCore.representedState E s))) =\n    ⟦G.run (I.compile w) (I.stateMap s)⟧",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.verifiedRun_image",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.verifiedRun_image",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G; supplied E : TheoryVerification F.futureEmpiricalTheory; source word w and raw state s.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The common execution uses the full native state type with the compiled\nsource actions and mapped source tests. On its represented empirical image,\n\n\\[\n\\Phi_{G|I}(i(s))=\\Phi_{G|I}(i(t))\n\\quad\\Longleftrightarrow\\quad\\Phi_F(s)=\\Phi_F(t).\n\\]\n\nThe resulting `imageEquiv` identifies the source future quotient with this\nexplicit image, which is closed under the interpreted actions. Composing it\nwith the actual Book 01 verification representation gives\n`verifiedStateImageEquiv` and `verifiedRun_image`. The same represented\nexecution, rather than a newly chosen abstract state, reaches the class of\nits compiled native execution.\n",
+      "source_excerpt_sha256": "ddc86754206aa524fe3d4155c8d5872bbd2fd55238555f9769691f331e6f8b56",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.verifiedRun_image",
+      "statement": "The actual represented run maps to the class of G.run (I.compile w) (I.stateMap s)."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14274,
+          14759
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.translate",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) → (F.FutureClass → Prop) → I.EmpiricalImage → Prop",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.translate",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate",
+      "disposition": "definition",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G and assertion P : F.FutureClass -> Prop.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n",
+      "source_excerpt_sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.translate",
+      "statement": "Translate P to I.EmpiricalImage by the inverse of the constructed image equivalence."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14274,
+          14759
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.transfer_theorem",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (H P : F.FutureClass → Prop),\n  (∀ (q : F.FutureClass), H q → P q) → ∀ (q : I.EmpiricalImage), I.translate H q → I.translate P q",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.transfer_theorem",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.transfer_theorem",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G; H and P on source future classes; supplied source proof forall q, H q -> P q.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n",
+      "source_excerpt_sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.transfer_theorem",
+      "statement": "For every q : I.EmpiricalImage, translated H q implies translated P q; H is not discharged."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14274,
+          14759
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.transfer_from_premises",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) {ι : Type u_1} (A : ι → F.FutureClass → Prop)\n  (P : F.FutureClass → Prop),\n  (∀ (q : F.FutureClass), (∀ (i : ι), A i q) → P q) →\n    ∀ (q : I.EmpiricalImage), (∀ (i : ι), I.translate (A i) q) → I.translate P q",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.transfer_from_premises",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.transfer_from_premises",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I; indexed premises A; source proof forall q, (forall i, A i q) -> P q; image q and all translated premises.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n",
+      "source_excerpt_sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.transfer_from_premises",
+      "statement": "The translated conclusion P holds at q with every indexed premise retained."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14274,
+          14759
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.translate_conjunction",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P Q : F.FutureClass → Prop) (q : I.EmpiricalImage),\n  I.translate (fun x => P x ∧ Q x) q ↔ I.translate P q ∧ I.translate Q q",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.translate_conjunction",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate_conjunction",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I; source assertions P, Q and image q.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n",
+      "source_excerpt_sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.translate_conjunction",
+      "statement": "Translation commutes with conjunction at q."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14274,
+          14759
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.translate_negation",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P : F.FutureClass → Prop) (q : I.EmpiricalImage),\n  I.translate (fun x => ¬P x) q ↔ ¬I.translate P q",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.translate_negation",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate_negation",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I; source assertion P and image q.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n",
+      "source_excerpt_sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.translate_negation",
+      "statement": "Translation commutes with negation at q."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14274,
+          14759
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.translate_forall",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) {ι : Type u_1} (P : ι → F.FutureClass → Prop)\n  (q : I.EmpiricalImage), I.translate (fun x => ∀ (i : ι), P i x) q ↔ ∀ (i : ι), I.translate (P i) q",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.translate_forall",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate_forall",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I; arbitrary index type, source assertion family P and image q.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n",
+      "source_excerpt_sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.translate_forall",
+      "statement": "Translation commutes with universal indexed premises at q."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": false,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14274,
+          14759
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "Interpretation.translate_future_observation",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (w : List F.Action) (t : F.Test) (o : F.Outcome)\n  (q : I.EmpiricalImage),\n  I.translate (fun p => F.quotientProfile p w t = o) q ↔ I.commonExecution.quotientProfile (↑q) w t = I.outcomeMap o",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.Interpretation.translate_future_observation",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate_future_observation",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I; source word w, test t, outcome o and image q.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For assertions `H` and `P` on source future classes, a supplied proof\n`forall q, H(q) -> P(q)` then transfers to the image as\n`translate(H) -> translate(P)`. The construction preserves conjunction,\nnegation and indexed premises, and connects translated observations to the\nactual common readout. No premise of `H` disappears during translation.\nThe formal assertion system here is semantic entailment on empirical\nclasses; it does not silently implement every external proof calculus.\n",
+      "source_excerpt_sha256": "e5c7c4382b188129c410ae5c4206023d2b95c3a2d752e1c5be3879b2562d8647",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/Interpretation.translate_future_observation",
+      "statement": "Translation of a source quotient observation equals the actual common quotient readout with I.outcomeMap o."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": true,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14760,
+          15293
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e872c201a5f3d2c3b36d1aec66db5b2afb495f54ca9d823faf89c1a7b035b8f0",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "NativeContextCoverage",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "{F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  D0.Foundation.TheoryTransfer.Interpretation F G → Type",
+        "kind": "inductive",
+        "name": "D0.Foundation.TheoryTransfer.NativeContextCoverage",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.NativeContextCoverage",
+      "disposition": "definition",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "I : Interpretation F G; every finite native word/test and represented source state.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. Full-native equivalence\nrequires `NativeContextCoverage`: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n",
+      "source_excerpt_sha256": "80e213e67ceeffb17168838933a101f11df3f415724f8044dc4ff49079550741",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/NativeContextCoverage",
+      "statement": "Coverage supplies a source experiment and a readout map reproducing each full-native observation on represented states."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": true,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14760,
+          15293
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e872c201a5f3d2c3b36d1aec66db5b2afb495f54ca9d823faf89c1a7b035b8f0",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "NativeContextCoverage.native_profile_eq_iff",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {I : D0.Foundation.TheoryTransfer.Interpretation F G} (C : D0.Foundation.TheoryTransfer.NativeContextCoverage I)\n  (s t : F.State), G.profile (I.stateMap s) = G.profile (I.stateMap t) ↔ F.profile s = F.profile t",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "Supplied C : NativeContextCoverage I and source states s, t. C is sufficient for this theorem; no converse or necessary characterization is asserted.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. Full-native equivalence\nrequires `NativeContextCoverage`: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n",
+      "source_excerpt_sha256": "80e213e67ceeffb17168838933a101f11df3f415724f8044dc4ff49079550741",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/NativeContextCoverage.native_profile_eq_iff",
+      "statement": "Full-native profiles of represented states agree iff their source profiles agree."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": true,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14760,
+          15293
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e872c201a5f3d2c3b36d1aec66db5b2afb495f54ca9d823faf89c1a7b035b8f0",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "visibleBitSystem",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.visibleBitSystem",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.visibleBitSystem",
+      "disposition": "construction",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "Finite Bool x Bool state; identity steps; only the first bit can be tested.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. Full-native equivalence\nrequires `NativeContextCoverage`: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n",
+      "source_excerpt_sha256": "80e213e67ceeffb17168838933a101f11df3f415724f8044dc4ff49079550741",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/visibleBitSystem",
+      "statement": "Construct the concrete source execution of the extra-test counterexample."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": true,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14760,
+          15293
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e872c201a5f3d2c3b36d1aec66db5b2afb495f54ca9d823faf89c1a7b035b8f0",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "extraBitTestSystem",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.extraBitTestSystem",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.extraBitTestSystem",
+      "disposition": "construction",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "Finite Bool x Bool state; identity steps; a Boolean test selects first or second bit.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. Full-native equivalence\nrequires `NativeContextCoverage`: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n",
+      "source_excerpt_sha256": "80e213e67ceeffb17168838933a101f11df3f415724f8044dc4ff49079550741",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/extraBitTestSystem",
+      "statement": "Construct the concrete native execution with an extra observable bit."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": true,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14760,
+          15293
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e872c201a5f3d2c3b36d1aec66db5b2afb495f54ca9d823faf89c1a7b035b8f0",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "visibleBitInterpretation",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.TheoryTransfer.Interpretation D0.Foundation.TheoryTransfer.visibleBitSystem\n  D0.Foundation.TheoryTransfer.extraBitTestSystem",
+        "kind": "definition",
+        "name": "D0.Foundation.TheoryTransfer.visibleBitInterpretation",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.visibleBitInterpretation",
+      "disposition": "construction",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "The specified visible-bit and extra-test systems.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. Full-native equivalence\nrequires `NativeContextCoverage`: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n",
+      "source_excerpt_sha256": "80e213e67ceeffb17168838933a101f11df3f415724f8044dc4ff49079550741",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/visibleBitInterpretation",
+      "statement": "Identity state/outcome maps, a singleton compiled word and first-bit test satisfy the primitive interpretation equations."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": true,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14760,
+          15293
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e872c201a5f3d2c3b36d1aec66db5b2afb495f54ca9d823faf89c1a7b035b8f0",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "visibleBit_same_all_source_futures",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "D0.Foundation.TheoryTransfer.visibleBitSystem.profile (false, false) =\n  D0.Foundation.TheoryTransfer.visibleBitSystem.profile (false, true)",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures",
+      "disposition": "negative_control_component",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "The two concrete source states (false,false) and (false,true).",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. Full-native equivalence\nrequires `NativeContextCoverage`: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n",
+      "source_excerpt_sha256": "80e213e67ceeffb17168838933a101f11df3f415724f8044dc4ff49079550741",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/visibleBit_same_all_source_futures",
+      "statement": "These states agree in every source future experiment."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": true,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14760,
+          15293
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e872c201a5f3d2c3b36d1aec66db5b2afb495f54ca9d823faf89c1a7b035b8f0",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "extraBit_different_native_futures",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.TheoryTransfer.extraBitTestSystem.profile (false, false) ≠\n  D0.Foundation.TheoryTransfer.extraBitTestSystem.profile (false, true)",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.extraBit_different_native_futures",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.extraBit_different_native_futures",
+      "disposition": "negative_control_component",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "The same two concrete states in extraBitTestSystem.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. Full-native equivalence\nrequires `NativeContextCoverage`: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n",
+      "source_excerpt_sha256": "80e213e67ceeffb17168838933a101f11df3f415724f8044dc4ff49079550741",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/extraBit_different_native_futures",
+      "statement": "The extra native test distinguishes these states."
+    },
+    {
+      "active_source_excerpt": {
+        "blob": "77d67c6fc1c14a08e2a3475843be745c27e57637",
+        "contains_correction": true,
+        "mapping": "byte_range_mapped_from_historical_candidate",
+        "range": [
+          14760,
+          15293
+        ],
+        "semantic_correspondence": "not_assessed",
+        "sha256": "e872c201a5f3d2c3b36d1aec66db5b2afb495f54ca9d823faf89c1a7b035b8f0",
+        "snapshot": "4150ff061b4a55917464fb7c1790f7ec9fefd4a2",
+        "text": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n"
+      },
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "extra_native_test_prevents_coverage",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "¬Nonempty (D0.Foundation.TheoryTransfer.NativeContextCoverage D0.Foundation.TheoryTransfer.visibleBitInterpretation)",
+        "kind": "theorem",
+        "name": "D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage",
+      "disposition": "negative_control",
+      "existing_application": "lean-operational-transfer-to-theory-transfer",
+      "hypotheses": "The concrete visibleBitInterpretation, whose primitive equations hold.",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "There is a sharp boundary to the word “faithful.” Native `G` may have extra\nactions or tests outside the common interface. Full-native equivalence\nrequires `NativeContextCoverage`: every native finite experiment has a\nspecified source experiment and a correct readout map on the represented\nstates. The built-in extra-bit example obeys all the common-sector diagrams\nwhile an additional native test distinguishes states the source identifies.\nIt proves that coverage cannot be inferred from primitive commutation alone.\n",
+      "source_excerpt_sha256": "80e213e67ceeffb17168838933a101f11df3f415724f8044dc4ff49079550741",
+      "source_excerpt_version": "historical_source_pin",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md#02.3b/extra_native_test_prevents_coverage",
+      "statement": "There is no NativeContextCoverage for the concrete visibleBitInterpretation."
+    }
+  ]
+}
