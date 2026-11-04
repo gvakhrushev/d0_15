@@ -17653,3 +17653,9 @@ coverage-implies-equivalence theorem and extra-native-test control remain
 valid. The [source review, independent proof check and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_coverage_necessity_counterexample_2026-11-05/SUMMARY_RU.md)
 retain the original pinned wording, its ambiguity and the corrected scope;
 no complete C0 acceptance or physical claim follows.
+
+The active Book02 wording now states coverage as sufficient, preserving the
+historical pinned source and its evidence. The [versioned correction and
+compatibility receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_coverage_correction_9d38_2026-11-05/SUMMARY_RU.md)
+records both exact source versions, mapped ranges, hostile controls and the
+explicit limits of the byte-only verifier. C0 semantic acceptance remains open.

@@ -1,0 +1,9 @@
+extra_source ranges PASS rejected source changed beyond the pinned Book02 correction
+extra_source reconcile PASS rejected source changed beyond the pinned Book02 correction
+changed_primary_pin ranges PASS rejected source blob does not match declared Git blob
+changed_primary_pin reconcile PASS rejected Book02 §02.3b primary review section digest mismatch
+extra_source_blob 3ba3011c308e0c9b0273e6815489f6781adba7c6 primary_blob bed8c0307da61a12526a1cd296155d722acdeca0
+changed_historical_commit ranges PASS rejected git command failed: cat-file
+changed_historical_commit reconcile PASS rejected Book02 §02.3b primary review section digest mismatch
+changed_historical_path ranges PASS rejected tracked path is missing or ambiguous: 01_BOOKS/BOOK_02_UNREVIEWED.md
+changed_historical_path reconcile PASS rejected Book02 §02.3b primary review section digest mismatch
