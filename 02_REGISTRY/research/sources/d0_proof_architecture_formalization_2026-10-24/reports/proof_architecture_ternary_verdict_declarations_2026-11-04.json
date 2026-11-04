@@ -1,0 +1,1419 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "3b2694e0822b7ad354f224d5f28f6a728e697bc0",
+  "worktree_dirty": false,
+  "lean_source_digest": "a51d3efa7418bbb504f80653ae375ca157899ee2746e6d2bd8b1adebf3ba7571",
+  "collector_sha256": "c2d7a9f957ac9aace604a81888254366a748916d9b745698cd762562a02d6c49",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Foundation.FutureCodeVerdict"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureCodeVerdict.652752659._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureCodeVerdict.652752659._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), F.profile (dec (enc s)) = F.profile s"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "E",
+          "type": "D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "l",
+          "type": "E.protocol.3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "cat",
+          "type": "E.protocol.4"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "F.1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "F.1"
+        }
+      ],
+      "conclusion_whnf": "E.protocol.compare l cat (D0.Foundation.VerificationCore.representedRecord E s)\n      (D0.Foundation.VerificationCore.representedRecord E t) =\n    true ↔\n  D0.Foundation.FutureShortlexAdapter.stateCode F dec enc s ≠ D0.Foundation.FutureShortlexAdapter.stateCode F dec enc t",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 63,
+            "line": 34
+          },
+          "start": {
+            "column": 0,
+            "line": 24
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 36,
+            "line": 26
+          },
+          "start": {
+            "column": 8,
+            "line": 26
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State)\n  (enc : F.State → List Symbol),\n  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) →\n    ∀ (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (l : E.protocol.Line)\n      (cat : E.protocol.Catalogue) (s t : F.State),\n      E.protocol.compare l cat (D0.Foundation.VerificationCore.representedRecord E s)\n            (D0.Foundation.VerificationCore.representedRecord E t) =\n          true ↔\n        D0.Foundation.FutureShortlexAdapter.stateCode F dec enc s ≠\n          D0.Foundation.FutureShortlexAdapter.stateCode F dec enc t",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.comparison_true_iff_codes_ne",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Catalogue",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Line",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.compare",
+        "D0.Foundation.VerificationCore.representedComparison_iff",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.mpr",
+        "Iff",
+        "Iff.symm",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Ne",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "congrArg",
+        "id",
+        "instDistribLatticeOfLinearOrder",
+        "not_congr",
+        "propext"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Catalogue",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Line",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.compare",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Iff",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Ne",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a._@._internal._hyg.0",
+          "type": "List (Fin 3)"
+        }
+      ],
+      "conclusion_whnf": "Fin 3",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 15,
+            "line": 103
+          },
+          "start": {
+            "column": 0,
+            "line": 101
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 17,
+            "line": 101
+          },
+          "start": {
+            "column": 4,
+            "line": 101
+          }
+        }
+      },
+      "elaborated_type": "List (Fin 3) → Fin 3",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternaryDecode",
+      "proof_dependencies": [
+        "D0.Foundation.FutureCodeVerdict.ternaryDecode._proof_1",
+        "D0.Foundation.FutureCodeVerdict.ternaryDecode.match_1",
+        "Fin",
+        "Fin.instOfNat",
+        "List",
+        "Nat",
+        "OfNat.ofNat",
+        "Unit",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Fin",
+        "List",
+        "Nat",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "NeZero (2 + 1)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "NeZero (2 + 1)",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternaryDecode._proof_1",
+      "proof_dependencies": [
+        "Nat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "NeZero",
+        "OfNat.ofNat",
+        "Zero.ofOfNat0",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "motive",
+          "type": "List (Fin 3) → Sort u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x._@.D0.Foundation.FutureCodeVerdict.3766644966._hygCtx.17.D0.Foundation.FutureCodeVerdict.3766644966._hygCtx._hyg.29",
+          "type": "List (Fin 3)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_1",
+          "type": "Unit → motive []"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h_2",
+          "type": "(a : Fin 3) → (tail : List (Fin 3)) → motive (a :: tail)"
+        }
+      ],
+      "conclusion_whnf": "motive x✝",
+      "declaration_kind": "definition",
+      "declaration_ranges": null,
+      "elaborated_type": "(motive : List (Fin 3) → Sort u_1) →\n  (x : List (Fin 3)) → (Unit → motive []) → ((a : Fin 3) → (tail : List (Fin 3)) → motive (a :: tail)) → motive x",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternaryDecode.match_1",
+      "proof_dependencies": [
+        "Fin",
+        "List",
+        "List.casesOn",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "OfNat.ofNat",
+        "Unit",
+        "Unit.unit",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Fin",
+        "List",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "OfNat.ofNat",
+        "Unit",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Fin 3"
+        }
+      ],
+      "conclusion_whnf": "List (Fin 3)",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 51,
+            "line": 105
+          },
+          "start": {
+            "column": 0,
+            "line": 105
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 17,
+            "line": 105
+          },
+          "start": {
+            "column": 4,
+            "line": 105
+          }
+        }
+      },
+      "elaborated_type": "Fin 3 → List (Fin 3)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternaryEncode",
+      "proof_dependencies": [
+        "Fin",
+        "List.cons",
+        "List.nil",
+        "Nat",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Fin",
+        "List",
+        "Nat",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 25,
+            "line": 45
+          },
+          "start": {
+            "column": 0,
+            "line": 38
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 20,
+            "line": 39
+          },
+          "start": {
+            "column": 4,
+            "line": 39
+          }
+        }
+      },
+      "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.mk",
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "Unit",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.FutureCodeVerdict.ternaryExecution =\n  { State := Fin 3, Action := Unit, Test := Unit, Outcome := Fin 3, step := fun x s => s, observe := fun s x => s }",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "D0.Foundation.FutureCodeVerdict.ternaryExecution =\n  { State := Fin 3, Action := Unit, Test := Unit, Outcome := Fin 3, step := fun x s => s, observe := fun s x => s }",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternaryExecution.eq_1",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq.refl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.mk",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "Unit",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.TheoryVerification\n  D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 46,
+            "line": 99
+          },
+          "start": {
+            "column": 0,
+            "line": 82
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 83
+          },
+          "start": {
+            "column": 18,
+            "line": 83
+          }
+        }
+      },
+      "elaborated_type": "D0.Foundation.VerifiabilityNecessity.TheoryVerification\n  D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternaryVerification",
+      "proof_dependencies": [
+        "Bool",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "D0.Foundation.FutureCodeVerdict.ternaryVerification._proof_1",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.mk",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.mk",
+        "Decidable.decide",
+        "Eq",
+        "Fin",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Unit",
+        "_private.D0.Foundation.FutureCodeVerdict.0.D0.Foundation.FutureCodeVerdict.ternaryEmpiricalRepresentation",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableNot",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.VerifiabilityNecessity.VerificationContract\n  { State := Fin 3, Record := Fin 3, Line := Bool, Catalogue := Unit, stateDecidableEq := instDecidableEqFin 3,\n    record := id, compare := fun x x_1 x_2 y => decide (x_2 ≠ y) }",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "D0.Foundation.VerifiabilityNecessity.VerificationContract\n  { State := Fin 3, Record := Fin 3, Line := Bool, Catalogue := Unit, stateDecidableEq := instDecidableEqFin 3,\n    record := id, compare := fun x x_1 x_2 y => decide (x_2 ≠ y) }",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternaryVerification._proof_1",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.false",
+        "Bool.true",
+        "D0.Foundation.VerifiabilityNecessity.VerificationContract.mk",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Catalogue",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Line",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.State",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.compare",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.mk",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.record",
+        "Decidable.decide",
+        "Eq",
+        "Eq.refl",
+        "Exists",
+        "Exists.intro",
+        "Fin",
+        "Fin.instOfNat",
+        "Nat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Nonempty.intro",
+        "Nontrivial.mk",
+        "OfNat.ofNat",
+        "Unit",
+        "Unit.unit",
+        "id",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableNot",
+        "instOfNatNat",
+        "of_decide_eq_true"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "D0.Foundation.VerifiabilityNecessity.VerificationContract",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.mk",
+        "Decidable.decide",
+        "Eq",
+        "Fin",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Unit",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableNot",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "∀ ⦃a₁ a₂ : D0.Foundation.FutureCodeVerdict.ternaryExecution.State⦄,\n  D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.FutureCodeVerdict.ternaryExecution\n        D0.Foundation.FutureCodeVerdict.ternaryDecode D0.Foundation.FutureCodeVerdict.ternaryEncode a₁ =\n      D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.FutureCodeVerdict.ternaryExecution\n        D0.Foundation.FutureCodeVerdict.ternaryDecode D0.Foundation.FutureCodeVerdict.ternaryEncode a₂ →\n    a₁ = a₂",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 58,
+            "line": 125
+          },
+          "start": {
+            "column": 0,
+            "line": 120
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 121
+          },
+          "start": {
+            "column": 8,
+            "line": 121
+          }
+        }
+      },
+      "elaborated_type": "Function.Injective\n  (D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.FutureCodeVerdict.ternaryExecution\n    D0.Foundation.FutureCodeVerdict.ternaryDecode D0.Foundation.FutureCodeVerdict.ternaryEncode)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternary_codes_injective",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureCodeVerdict.ternaryDecode",
+        "D0.Foundation.FutureCodeVerdict.ternaryEncode",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "D0.Foundation.FutureCodeVerdict.ternary_profile_eq_iff",
+        "D0.Foundation.FutureCodeVerdict.ternary_roundtrip",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Fin",
+        "Fin.Lt.isWellOrder",
+        "Fin.instLinearOrder",
+        "Iff.mp",
+        "IsWellOrder.toIsWellFounded",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "List",
+        "Nat",
+        "OfNat.ofNat",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "instDistribLatticeOfLinearOrder",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.FutureCodeVerdict.ternaryDecode",
+        "D0.Foundation.FutureCodeVerdict.ternaryEncode",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "DistribLattice.toLattice",
+        "Fin",
+        "Fin.Lt.isWellOrder",
+        "Fin.instLinearOrder",
+        "Function.Injective",
+        "IsWellOrder.toIsWellFounded",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "List",
+        "Nat",
+        "OfNat.ofNat",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "instDistribLatticeOfLinearOrder",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "l",
+          "type": "Bool"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "cat",
+          "type": "PUnit.{1}"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Fin 3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "Fin 3"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureCodeVerdict.ternaryVerification.protocol.compare l cat\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification s)\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification t) =\n    true ↔\n  D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.FutureCodeVerdict.ternaryExecution\n      D0.Foundation.FutureCodeVerdict.ternaryDecode D0.Foundation.FutureCodeVerdict.ternaryEncode s ≠\n    D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.FutureCodeVerdict.ternaryExecution\n      D0.Foundation.FutureCodeVerdict.ternaryDecode D0.Foundation.FutureCodeVerdict.ternaryEncode t",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 84,
+            "line": 118
+          },
+          "start": {
+            "column": 0,
+            "line": 110
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 39,
+            "line": 112
+          },
+          "start": {
+            "column": 8,
+            "line": 112
+          }
+        }
+      },
+      "elaborated_type": "∀ (l : D0.Foundation.FutureCodeVerdict.ternaryVerification.protocol.Line)\n  (cat : D0.Foundation.FutureCodeVerdict.ternaryVerification.protocol.Catalogue)\n  (s t : D0.Foundation.FutureCodeVerdict.ternaryExecution.State),\n  D0.Foundation.FutureCodeVerdict.ternaryVerification.protocol.compare l cat\n        (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification s)\n        (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification t) =\n      true ↔\n    D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.FutureCodeVerdict.ternaryExecution\n        D0.Foundation.FutureCodeVerdict.ternaryDecode D0.Foundation.FutureCodeVerdict.ternaryEncode s ≠\n      D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.FutureCodeVerdict.ternaryExecution\n        D0.Foundation.FutureCodeVerdict.ternaryDecode D0.Foundation.FutureCodeVerdict.ternaryEncode t",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternary_comparison_iff_codes_ne",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.FutureCodeVerdict.comparison_true_iff_codes_ne",
+        "D0.Foundation.FutureCodeVerdict.ternaryDecode",
+        "D0.Foundation.FutureCodeVerdict.ternaryEncode",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "D0.Foundation.FutureCodeVerdict.ternaryVerification",
+        "D0.Foundation.FutureCodeVerdict.ternary_roundtrip",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Catalogue",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Line",
+        "DistribLattice.toLattice",
+        "Fin",
+        "Fin.Lt.isWellOrder",
+        "Fin.instLinearOrder",
+        "IsWellOrder.toIsWellFounded",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "Nat",
+        "OfNat.ofNat",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "instDistribLatticeOfLinearOrder",
+        "instOfNatNat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Bool",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.FutureCodeVerdict.ternaryDecode",
+        "D0.Foundation.FutureCodeVerdict.ternaryEncode",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "D0.Foundation.FutureCodeVerdict.ternaryVerification",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Catalogue",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.Line",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.compare",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Fin",
+        "Fin.Lt.isWellOrder",
+        "Fin.instLinearOrder",
+        "Iff",
+        "IsWellOrder.toIsWellFounded",
+        "LT.lt",
+        "Lattice.toSemilatticeInf",
+        "List",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "instDistribLatticeOfLinearOrder",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.FutureCodeVerdict.ternaryVerification.protocol.compare false ()\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification 0)\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification 1) =\n    true ∧\n  D0.Foundation.FutureCodeVerdict.ternaryVerification.protocol.compare false ()\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification 0)\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification 0) =\n    false",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 14,
+            "line": 144
+          },
+          "start": {
+            "column": 0,
+            "line": 127
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 128
+          },
+          "start": {
+            "column": 8,
+            "line": 128
+          }
+        }
+      },
+      "elaborated_type": "D0.Foundation.FutureCodeVerdict.ternaryVerification.protocol.compare false ()\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification 0)\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification 1) =\n    true ∧\n  D0.Foundation.FutureCodeVerdict.ternaryVerification.protocol.compare false ()\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification 0)\n      (D0.Foundation.VerificationCore.representedRecord D0.Foundation.FutureCodeVerdict.ternaryVerification 0) =\n    false",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternary_comparison_nontrivial",
+      "proof_dependencies": [
+        "And.intro",
+        "Bool",
+        "Bool.casesOn",
+        "Bool.false",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "D0.Foundation.FutureCodeVerdict.ternaryVerification",
+        "D0.Foundation.FutureCodeVerdict.ternary_profile_eq_iff",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.compare",
+        "D0.Foundation.VerificationCore.representedComparison_iff",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "Decidable.decide",
+        "Eq",
+        "Eq.mp",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "False.elim",
+        "Fin",
+        "Fin.instOfNat",
+        "Iff.mp",
+        "Iff.mpr",
+        "List",
+        "Nat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Not",
+        "OfNat.ofNat",
+        "True",
+        "Unit.unit",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableNot",
+        "instOfNatNat",
+        "not_true_eq_false",
+        "of_decide_eq_true",
+        "of_eq_true",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "And",
+        "Bool",
+        "Bool.false",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "D0.Foundation.FutureCodeVerdict.ternaryVerification",
+        "D0.Foundation.VerifiabilityNecessity.TheoryVerification.protocol",
+        "D0.Foundation.VerifiabilityNecessity.VerificationProtocol.compare",
+        "D0.Foundation.VerificationCore.representedRecord",
+        "Eq",
+        "Fin",
+        "Fin.instOfNat",
+        "Nat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "Unit.unit",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Fin 3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "Fin 3"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureCodeVerdict.ternaryExecution.profile s =\n    D0.Foundation.FutureCodeVerdict.ternaryExecution.profile t ↔\n  s = t",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 7,
+            "line": 61
+          },
+          "start": {
+            "column": 0,
+            "line": 53
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 30,
+            "line": 53
+          },
+          "start": {
+            "column": 8,
+            "line": 53
+          }
+        }
+      },
+      "elaborated_type": "∀ (s t : D0.Foundation.FutureCodeVerdict.ternaryExecution.State),\n  D0.Foundation.FutureCodeVerdict.ternaryExecution.profile s =\n      D0.Foundation.FutureCodeVerdict.ternaryExecution.profile t ↔\n    s = t",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternary_profile_eq_iff",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "Eq.casesOn",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "HEq",
+        "HEq.refl",
+        "Iff.intro",
+        "List",
+        "List.nil",
+        "Unit.unit",
+        "congrFun",
+        "id"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "Iff",
+        "List"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Fin 3"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureCodeVerdict.ternaryExecution.profile\n    (D0.Foundation.FutureCodeVerdict.ternaryDecode (D0.Foundation.FutureCodeVerdict.ternaryEncode s)) =\n  D0.Foundation.FutureCodeVerdict.ternaryExecution.profile s",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 98,
+            "line": 108
+          },
+          "start": {
+            "column": 0,
+            "line": 107
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 25,
+            "line": 107
+          },
+          "start": {
+            "column": 8,
+            "line": 107
+          }
+        }
+      },
+      "elaborated_type": "∀ (s : D0.Foundation.FutureCodeVerdict.ternaryExecution.State),\n  D0.Foundation.FutureCodeVerdict.ternaryExecution.profile\n      (D0.Foundation.FutureCodeVerdict.ternaryDecode (D0.Foundation.FutureCodeVerdict.ternaryEncode s)) =\n    D0.Foundation.FutureCodeVerdict.ternaryExecution.profile s",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternary_roundtrip",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureCodeVerdict.ternaryDecode",
+        "D0.Foundation.FutureCodeVerdict.ternaryEncode",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "List",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureCodeVerdict.ternaryDecode",
+        "D0.Foundation.FutureCodeVerdict.ternaryEncode",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "List"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "List D0.Foundation.FutureCodeVerdict.ternaryExecution.Action"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Fin 3"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.FutureCodeVerdict.ternaryExecution.run w s = s",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 27,
+            "line": 51
+          },
+          "start": {
+            "column": 0,
+            "line": 47
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 19,
+            "line": 47
+          },
+          "start": {
+            "column": 8,
+            "line": 47
+          }
+        }
+      },
+      "elaborated_type": "∀ (w : List D0.Foundation.FutureCodeVerdict.ternaryExecution.Action)\n  (s : D0.Foundation.FutureCodeVerdict.ternaryExecution.State),\n  D0.Foundation.FutureCodeVerdict.ternaryExecution.run w s = s",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "D0.Foundation.FutureCodeVerdict.ternary_run",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "Eq.refl",
+        "List",
+        "List.nil",
+        "List.rec"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "List"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "binders": [],
+      "conclusion_whnf": "Fin 3 ≃\n  D0.Foundation.EmpiricalTheoryFactorization.EmpiricalState\n    D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 78,
+            "line": 80
+          },
+          "start": {
+            "column": 0,
+            "line": 77
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 56,
+            "line": 77
+          },
+          "start": {
+            "column": 26,
+            "line": 77
+          }
+        }
+      },
+      "elaborated_type": "Fin 3 ≃\n  D0.Foundation.EmpiricalTheoryFactorization.EmpiricalState\n    D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "_private.D0.Foundation.FutureCodeVerdict.0.D0.Foundation.FutureCodeVerdict.ternaryEmpiricalRepresentation",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalState",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.minimalPresentationEquiv",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Equiv.symm",
+        "_private.D0.Foundation.FutureCodeVerdict.0.D0.Foundation.FutureCodeVerdict.ternaryEmpiricalRepresentation._proof_1",
+        "_private.D0.Foundation.FutureCodeVerdict.0.D0.Foundation.FutureCodeVerdict.ternary_encoding_faithful",
+        "_private.D0.Foundation.FutureCodeVerdict.0.D0.Foundation.FutureCodeVerdict.ternary_encoding_sound",
+        "id"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalState",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Equiv",
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "Fin 3"
+        }
+      ],
+      "conclusion_whnf": "∃ a, id a = x",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (x : D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory.State), ∃ a, id a = x",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "_private.D0.Foundation.FutureCodeVerdict.0.D0.Foundation.FutureCodeVerdict.ternaryEmpiricalRepresentation._proof_1",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "Exists.intro",
+        "id",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "Exists",
+        "id"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Fin 3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "Fin 3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "s = t"
+        }
+      ],
+      "conclusion_whnf": "D0.Foundation.EmpiricalTheoryFactorization.signature\n    D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory s =\n  D0.Foundation.EmpiricalTheoryFactorization.signature\n    D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory t",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 75
+          },
+          "start": {
+            "column": 0,
+            "line": 71
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 41,
+            "line": 71
+          },
+          "start": {
+            "column": 16,
+            "line": 71
+          }
+        }
+      },
+      "elaborated_type": "∀ (s t : D0.Foundation.FutureCodeVerdict.ternaryExecution.State),\n  s = t →\n    D0.Foundation.EmpiricalTheoryFactorization.signature\n        D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory s =\n      D0.Foundation.EmpiricalTheoryFactorization.signature\n        D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory t",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "_private.D0.Foundation.FutureCodeVerdict.0.D0.Foundation.FutureCodeVerdict.ternary_encoding_faithful",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Catalogue",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.signature",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "Eq.casesOn",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "HEq",
+        "HEq.refl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Catalogue",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.signature",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "s",
+          "type": "Fin 3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "Fin 3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "h",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.signature\n    D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory s =\n  D0.Foundation.EmpiricalTheoryFactorization.signature\n    D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory t"
+        }
+      ],
+      "conclusion_whnf": "s = t",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 84,
+            "line": 69
+          },
+          "start": {
+            "column": 0,
+            "line": 63
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 38,
+            "line": 63
+          },
+          "start": {
+            "column": 16,
+            "line": 63
+          }
+        }
+      },
+      "elaborated_type": "∀ (s t : D0.Foundation.FutureCodeVerdict.ternaryExecution.State),\n  D0.Foundation.EmpiricalTheoryFactorization.signature\n        D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory s =\n      D0.Foundation.EmpiricalTheoryFactorization.signature\n        D0.Foundation.FutureCodeVerdict.ternaryExecution.futureEmpiricalTheory t →\n    s = t",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.FutureCodeVerdict",
+      "name": "_private.D0.Foundation.FutureCodeVerdict.0.D0.Foundation.FutureCodeVerdict.ternary_encoding_sound",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Catalogue",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.signature",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq",
+        "List",
+        "List.nil",
+        "Prod.mk",
+        "Unit.unit",
+        "congrFun",
+        "id"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Catalogue",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "D0.Foundation.EmpiricalTheoryFactorization.signature",
+        "D0.Foundation.FutureCodeVerdict.ternaryExecution",
+        "Eq"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureCodeVerdict.lean"
+    }
+  ]
+}
