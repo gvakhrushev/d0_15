@@ -17701,3 +17701,12 @@ The [Book01 §01.1.8 comparison review](sources/d0_proof_architecture_formalizat
 checks catalogue/line invariance under the supplied universally correct
 verification contract. The privileged-catalogue control shows why that input
 matters; it is not a physical no-go or a construction of the contract.
+
+### #334 §7fi: born history and rotor-source boundary
+
+The [pinned §7fi intake](sources/d0_334_post_c4d_800_intake_2026-11-05/README.md)
+retains both the conditional born-history construction and the nonvanishing
+independent fine-record rotor rows. The stated componentwise stationary
+section changes the field source and does not establish full stationarity or
+Einstein identification. The independently replayed finite checker includes
+42 nominal floating checks; actual execution, full price and GR remain open.

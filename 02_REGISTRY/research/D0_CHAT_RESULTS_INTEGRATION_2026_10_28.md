@@ -1313,3 +1313,27 @@ the corrected replay checks its pinned checker before each run and rejects
 stderr, with hostile controls in CI. It trusts the local manifest, is not a
 sandbox or a continuous race-free attestation, and does not accept the owner
 analytical/physical claims. `GR_closed=false`.
+
+## PR #334 §7fi: born history and independent rotor rows
+
+The [pinned `c4dfd283..800701f8` continuation](sources/d0_334_post_c4d_800_intake_2026-11-05/README.md)
+preserves both owner blobs, full diff, 19 input pins and the two exact source
+dependencies used by the bounded checker. On the declared family the owner
+reports a canonical-born input with fine records and a conditional intensive
+source approximation; it does not execute the complete large native word or
+establish the full physical price.
+
+The independent fine-record rotor rows remain nonzero in the stated limiting
+regime; the owner's componentwise stationary section changes the field source
+from `Ds_*` to `Ds_*−p³ D w_*`. This is not an Einstein identification or
+complete stationarity, and actual same-task rotor admission, its constraint
+reaction, and the other price/clock/work/preparation rows remain open. The
+prior §7fg retention obstruction is not silently removed.
+
+The independently reproduced checker reports 65 bounded conditions, including
+42 nominal floating comparisons, not interval certificates. Local receipts
+use a different numerical stack from the owner and differ in floating values;
+Python 3.9 `-Werror` failures are retained. The hardened replay checks three
+source hashes before each run and rejects stderr, but trusts the local
+manifest and is not a sandbox or continuous race-free attestation. No physical
+or scientific promotion follows; `GR_closed=false`.
