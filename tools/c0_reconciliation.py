@@ -788,9 +788,18 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                 raise MissingEvidence(pins.section_label + " primary review section lacks exact source/application pin")
         if git.blob(pins.source_commit, pins.source_path) != pins.source_blob:
             raise MissingEvidence(pins.section_label + " source blob mismatch at pinned commit")
-        if git.blob(snapshot, pins.source_path) != pins.source_blob:
-            raise MissingEvidence(pins.section_label + " source changed in selected snapshot")
         raw = git.data(pins.source_commit, pins.source_path)
+        current_blob = git.blob(snapshot, pins.source_path)
+        active_version = None
+        try:
+            from tools import c0_book02_version as book02_version
+        except ModuleNotFoundError:
+            import c0_book02_version as book02_version
+        if pins.source_path == book02_version.PATH and pins.source_blob == book02_version.ORIGINAL_BLOB:
+            active_version = book02_version.classify(
+                raw, pins.source_blob, git.data(snapshot, pins.source_path), current_blob)
+        elif current_blob != pins.source_blob:
+            raise MissingEvidence(pins.section_label + " source changed in selected snapshot")
         start, end = pins.section_range
         if not 0 <= start < end <= len(raw):
             raise MissingEvidence(pins.section_label + " section range is outside pinned source")
@@ -816,6 +825,11 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             "module_path": pins.module_path, "module_blob": pins.module_blob,
             "owner_modules": [{"module": m, "path": p, "blob": b} for m, p, b in module_pins],
         }
+        if active_version is not None:
+            # Units and byte ranges below still refer to the historical source.
+            # The corrected version is an exact mapped derivative, not acceptance
+            # or a semantic reclassification of either source version.
+            result["authority"]["active_source_version"] = active_version
         # Keep context/duplicate/open-obligation dispositions in their existing
         # owning prose instead of copying a second classification into code.
         result["context_dispositions"] = {
@@ -823,7 +837,9 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             "section_sha256": pins.primary_sha256, "pinned_text": section,
             "acceptance": "not_authenticated_by_this_view",
         }
-        return {"raw": raw, "units": units, "owners": owners}
+        return {"raw": raw, "units": units, "owners": owners,
+                "active_version": active_version,
+                "active_raw": (git.data(snapshot, pins.source_path) if active_version else None)}
 
     step("source_and_primary", source_and_primary)
 
@@ -976,6 +992,25 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                        compiled_declaration=data.get("compiled_inventory", {}).get(u["declaration"]),
                        existing_application=(pins.application_id if "existing_application" in data else None),
                        application_scope="shared conditional application; no per-atom semantic acceptance inferred")
+            active = data["source_and_primary"]["active_version"]
+            if active is not None:
+                row["source_excerpt_version"] = "historical_source_pin"
+                if active["version"] == "corrected":
+                    try:
+                        from tools import c0_book02_version as book02_version
+                    except ModuleNotFoundError:
+                        import c0_book02_version as book02_version
+                    aa, bb = book02_version.translate_offset(a), book02_version.translate_offset(b)
+                    excerpt = data["source_and_primary"]["active_raw"][aa:bb]
+                    row["active_source_excerpt"] = {
+                        "snapshot": snapshot, "blob": active["blob"], "range": [aa, bb],
+                        "text": excerpt.decode("utf-8"),
+                        "sha256": hashlib.sha256(excerpt).hexdigest(),
+                        "mapping": "byte_range_mapped_from_historical_candidate",
+                        "semantic_correspondence": "not_assessed",
+                        "contains_correction": (a < book02_version.OFFSET + len(book02_version.ORIGINAL)
+                                                and b > book02_version.OFFSET),
+                    }
             result["units"].append(row)
     result["interpretation"] = (
         f"This is a proposed finite {pins.section_label} atomization, not the C0 denominator. Shared source ranges "

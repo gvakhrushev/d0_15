@@ -15,6 +15,7 @@ from tools.test_receipt_freshness import ReceiptFreshnessTests
 from tools.test_c0_reconciliation import ReconciliationFixtureTests
 from tools.test_c0_book_byte_partition import BytePartitionTests, GitEvidenceTests
 from tools.test_c0_candidate_ranges import CandidateRangeTests
+from tools.test_c0_book02_version import Book02VersionTests
 from tools.test_proof_search_streaming import StreamingTextTests, fixture_rg
 from tools import test_proof_source_pages as source_page_tests
 from tools import test_proof_cold_start_v3 as paged_cold_start_tests

@@ -231,8 +231,7 @@ The formal assertion system here is semantic entailment on empirical
 classes; it does not silently implement every external proof calculus.
 
 There is a sharp boundary to the word “faithful.” Native `G` may have extra
-actions or tests outside the common interface. Full-native equivalence
-requires `NativeContextCoverage`: every native finite experiment has a
+actions or tests outside the common interface. `NativeContextCoverage` is sufficient for full-native equivalence: every native finite experiment has a
 specified source experiment and a correct readout map on the represented
 states. The built-in extra-bit example obeys all the common-sector diagrams
 while an additional native test distinguishes states the source identifies.

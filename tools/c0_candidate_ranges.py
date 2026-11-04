@@ -4,7 +4,9 @@
 The primary artifact and both books are read from Git objects through the
 existing c0_book_byte_partition reader supplied via --reader. This verifies
 byte provenance and coverage only, not mathematical classification, review,
-acceptance or completeness of C0.
+acceptance or completeness of C0. Candidate metadata itself is supplied input;
+this byte-only verifier does not authenticate an arbitrary replacement of the
+full metadata/path. Use the separately pinned reconciliation for that boundary.
 """
 from __future__ import annotations
 
@@ -212,13 +214,40 @@ def verify(reader: Any, repo: Path, snapshot: str, *, include_book01_0116: bool 
     primary_blob, primary = object_at(reader, repo, snapshot, PRIMARY)
     candidates = parse_primary(primary, include_book01_0116=include_book01_0116)
     result = [verify_candidate(reader, repo, item) for item in candidates]
+    try:
+        from tools import c0_book02_version as book02_version
+    except ModuleNotFoundError:
+        import c0_book02_version as book02_version
+    for candidate, historical in zip(candidates, result):
+        if candidate["path"] != book02_version.PATH:
+            continue
+        if candidate["blob"] != book02_version.ORIGINAL_BLOB:
+            raise VerificationError("Book02 candidate must retain its historical source pin")
+        old_oid, old_bytes = object_at(reader, repo, candidate["commit"], candidate["path"])
+        current_oid, current_bytes = object_at(reader, repo, snapshot, candidate["path"])
+        try:
+            version = book02_version.classify(old_bytes, old_oid, current_bytes, current_oid)
+            if version["version"] == "corrected":
+                translate = book02_version.translate_offset
+                active = dict(candidate, commit=snapshot, blob=current_oid,
+                    start=translate(candidate["start"]), end=translate(candidate["end"]),
+                    sha256=version["section_sha256"],
+                    heading=tuple(translate(pos) for pos in candidate["heading"]),
+                    rows=[(translate(a), translate(b), description)
+                          for a, b, description in candidate["rows"]])
+                version["mapped_candidate"] = verify_candidate(reader, repo, active)
+        except ValueError as exc:
+            raise VerificationError(str(exc)) from exc
+        historical["active_source_version"] = version
     return {"schema": "d0-c0-candidate-range-v1", "snapshot_commit": snapshot,
             "primary_path": PRIMARY, "primary_blob": primary_blob,
             "status": "candidate_byte_coverage_verified", "candidates": result,
             "scope": "Only source bytes, UTF-8 boundaries, lexical heading-section boundaries and declared "
                      "range coverage were checked; the heading scanner is not a full Markdown parser. "
                      "Merged or split rows do not establish a mathematical-unit count. No semantic "
-                     "classification, scientific acceptance, C0 coverage or freeze is inferred."}
+                     "classification, scientific acceptance, C0 coverage or freeze is inferred. "
+                     "Candidate metadata is supplied input; arbitrary complete metadata or path "
+                     "replacement is not authenticated by this byte-only verifier."}
 
 
 def main() -> int:
