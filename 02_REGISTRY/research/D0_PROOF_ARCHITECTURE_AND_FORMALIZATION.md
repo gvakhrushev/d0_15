@@ -17562,3 +17562,13 @@ defect, alongside the explicitly conditional Gibbs comparison. Source blobs,
 failed environment attempts and four bounded checker replays are preserved.
 This is not acceptance of a complete physical price, a physical preparation
 selector or GR closure; later owner commits are not included in this pin.
+
+### #334 §7ff: quadratic memory and initial-cut boundary
+
+The [pinned §7ff intake](sources/d0_334_post_290_567_intake_2026-11-05/README.md)
+retains the owner's conditional quadratic-memory source transport and its
+independently replayed finite checker. Its original initial-cut control has a
+zero field source for `L < N` on the specified preparation, unlike the full
+trace. The complete initial/terminal valuation and independent physical source
+rows remain open; this is not a general no-go, scientific promotion or GR
+closure.

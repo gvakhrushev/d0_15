@@ -1256,3 +1256,21 @@ proves the complete Cost−Info binding, physical selection, equal absolute
 prices, finite joint-root recovery or GR. Distinct full-output, flag and report
 entropies and the independent heat/preparation/work variations remain visible.
 `GR_closed=false`.
+
+## PR #334 §7ff: quadratic memory and initial-cut boundary
+
+The [pinned `2900145f..567e3806` continuation](sources/d0_334_post_290_567_intake_2026-11-05/README.md)
+preserves both changed owner blobs, their complete diff, input pins and an
+independently reproduced 42-condition finite checker. The owner presents a
+conditional normalized source transport for a specified forward-memory
+operator and paid history family; fixed positive tariffs, carrier, gain,
+nuisance reactions and error bounds retain their own hypotheses.
+
+The same packet preserves the negative initial-cut control: at the specified
+prepared cut with fixed scene, input, layout and tariffs and `L < N`, the
+quadratic response's field source vanishes while the full trace detects the
+specified birth-detail loop. It does not rule out other horizons, terminal
+effects or separately derived valuations. The original full initial/terminal
+Cost−Info valuation, independent tariff/work/clock/preparation/record rows and
+physical source equivalence remain open. This bounded replay does not accept
+the analytical source transport or promote Contract C; `GR_closed=false`.
