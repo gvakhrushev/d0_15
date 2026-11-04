@@ -16380,6 +16380,49 @@ before comparing its digest. It does not run Lake. The corrected extraction
 has unchanged declaration records; the failed check was not bypassed by
 rewriting an expected hash. Dedicated negative regressions retain this case.
 
+### Book01 §01.1.6: future quotient and raw-coordinate boundary
+
+The source at `aa5361abe98ffe14572223d3b7d5c37cfe6a63f3`,
+`01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md`, blob
+`eb2d8ea779189084cdaaca717326df88589ec918`, section bytes `[11972,13530)`,
+SHA-256 `ba3fc2c88b388bad890dfcbced2b22343f2019b72d78c927b9488c40ab69afac`,
+contains both an operational future-test distinction and stronger statements
+about the nonexistence or automatic elimination of an invisible parameter.
+These statements have different proof obligations and remain distinct C0
+candidates. The section itself remains at its existing source status; this
+note does not accept a scientific correction or change its owner.
+
+The existing `FutureExecution.uncoupledCenter` is a scoped mathematical
+control: its raw state contains an added Boolean left unchanged by each step,
+while `uncoupledCenter_profile_independent` equates the complete available
+future profiles of `(s,false)` and `(s,true)`. With a separately supplied
+`TheoryVerification` witness, `uncoupledCenter_records_equal` equates their
+represented records. Thus equality in this empirical quotient alone does not
+prove equality or nonexistence of raw coordinates. Conversely, the existing
+hidden-bit example has identical current observations but a permitted future
+action distinguishes the profiles; its sufficient-memory statement retains
+the required decoder for all future tests.
+
+This is not a counterexample to a physical D0 theory or to a separately proved
+canonical ontology. The admitted physical future interface, automatic native
+deletion, and actual History/code recording require their own arguments. The
+existing `lean-verification-core-to-foundation` application retains its
+supplied execution, verification and coding hypotheses and does not itself
+accept the stronger ontological sentence. Independent source and Lean review
+confirmed this distinction. The cited `GOLDEN THE 1.1.11.B,
+BOOK-I-ARCHITECTURE` locator has not yet been resolved to a separately checked
+original source; its exact content and any owner-accepted correction remain
+open.
+
+The read-only command `python tools/proof_architecture.py --json c0-ranges
+--snapshot <published-primary-commit>` verifies the two declared Book01
+§01.1.8 and Book02 §02.3b review tables against their pinned source blobs,
+section hashes, lexical heading boundaries and UTF-8 byte ranges. It checks
+the declared structural heading and separators and reports missing, invalid
+or overlapping coverage as unresolved. The check does not determine the
+number or truth of mathematical units, establish semantic review, or accept
+any C0 result; splitting or joining rows can preserve byte coverage.
+
 ## Bounded retrieval of sources behind discovered documents — 4 November 2026
 
 The search producer now retains every original query term for content matching,

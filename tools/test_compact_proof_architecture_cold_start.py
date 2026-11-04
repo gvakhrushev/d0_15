@@ -14,6 +14,7 @@ from tools import compact_proof_architecture_cold_start as compact
 from tools.test_receipt_freshness import ReceiptFreshnessTests
 from tools.test_c0_reconciliation import ReconciliationFixtureTests
 from tools.test_c0_book_byte_partition import BytePartitionTests, GitEvidenceTests
+from tools.test_c0_candidate_ranges import CandidateRangeTests
 
 
 def example_case():

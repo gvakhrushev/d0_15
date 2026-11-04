@@ -3278,6 +3278,8 @@ def main() -> int:
     c0.add_argument("--snapshot", default="HEAD", help="Git commit or ref to inspect (default: HEAD)")
     books = sub.add_parser("c0-books", help="partition tracked book bytes into unresolved review spans")
     books.add_argument("--snapshot", required=True, help="full Git commit SHA to inspect")
+    ranges = sub.add_parser("c0-ranges", help="verify the two declared book review ranges against pinned bytes")
+    ranges.add_argument("--snapshot", required=True, help="full Git commit SHA containing the primary artifact")
     impact = sub.add_parser("impact", help="show declared impact, or assembly impact since a Git base")
     impact.add_argument("key", nargs="?")
     impact.add_argument("--base")
@@ -3286,7 +3288,18 @@ def main() -> int:
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
     root = args.repo_root.resolve()
-    if args.command == "c0-books":
+    if args.command == "c0-ranges":
+        if __package__:
+            from . import c0_book_byte_partition, c0_candidate_ranges
+        else:
+            import c0_book_byte_partition, c0_candidate_ranges
+        try:
+            result = c0_candidate_ranges.verify(c0_book_byte_partition, root, args.snapshot)
+        except (c0_candidate_ranges.VerificationError, c0_book_byte_partition.EvidenceError,
+                OSError, UnicodeError, ValueError) as exc:
+            result = {"schema": "d0-c0-candidate-range-v1",
+                      "status": "unresolved", "reason": str(exc)}
+    elif args.command == "c0-books":
         if __package__:
             from . import c0_book_byte_partition
         else:
@@ -3398,10 +3411,11 @@ def main() -> int:
     print(_render_text(
         result,
         complete_arrays=(args.command == "crosswalk" and args.all_current)
-        or args.command in {"search", "claim-sources", "alias-sources", "c0-books"},
+        or args.command in {"search", "claim-sources", "alias-sources", "c0-books", "c0-ranges"},
         complete_strings=args.command == "c0-books",
     ))
     return 1 if ((args.command == "c0-pilot" and result.get("issues")) or
+                 (args.command == "c0-ranges" and result.get("status") != "candidate_byte_coverage_verified") or
                  (args.command == "c0-books" and result.get("capture_status") !=
                   "expected_book_blob_bytes_reconstructed")) else 0
 
