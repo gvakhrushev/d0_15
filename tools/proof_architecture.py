@@ -16,6 +16,7 @@ import os
 import pathlib
 import re
 import subprocess
+import tempfile
 import sys
 from typing import Any
 
@@ -1615,6 +1616,26 @@ def _candidate_record(rel: str, content: str, terms: list[tuple[str, tuple[str, 
     return score, record
 
 
+def _rg_text_lines(command: list[str], root: pathlib.Path):
+    """Consume ripgrep stdout incrementally; retain stderr without pipe deadlock."""
+    with tempfile.TemporaryFile(mode="w+t", encoding="utf-8", errors="replace") as stderr:
+        process = subprocess.Popen(command, cwd=root, stdout=subprocess.PIPE, stderr=stderr,
+                                   text=True, encoding="utf-8", errors="replace")
+        try:
+            assert process.stdout is not None
+            yield from process.stdout
+            code = process.wait()
+            if code not in (0, 1):
+                stderr.seek(0)
+                raise RuntimeError(f"rg text search failed ({code}): {stderr.read()}")
+        finally:
+            if process.poll() is None:
+                process.kill()
+                process.wait()
+            if process.stdout is not None:
+                process.stdout.close()
+
+
 def full_text_search_many(root: pathlib.Path, queries: list[str],
                           limit: int = MAX_SEARCH_RESULTS, *,
                           pin_reference_limit: int = 8) -> list[list[dict[str, Any]]]:
@@ -1657,15 +1678,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
     rg_query = ["rg", "--json", "--ignore-case", "--fixed-strings", *text_globs]
     for term in unique_variants:
         rg_query.extend(["-e", term])
-    text_matches = subprocess.run(
-        [*rg_query, *roots], cwd=root, capture_output=True,
-        text=True, encoding="utf-8", errors="replace",
-    )
-    if text_matches.returncode not in (0, 1):
-        raise RuntimeError(f"rg text search failed ({text_matches.returncode}): {text_matches.stderr}")
-
     content_groups_by_query: list[dict[str, set[str]]] = [{} for _ in queries]
-    for event_text in text_matches.stdout.splitlines():
+    for event_text in _rg_text_lines([*rg_query, *roots], root):
         try:
             event = json.loads(event_text)
         except json.JSONDecodeError:
