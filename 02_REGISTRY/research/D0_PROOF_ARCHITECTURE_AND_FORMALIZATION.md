@@ -15641,6 +15641,19 @@ generated from the existing `formal_support.csv`; no claim or application
 acceptance is added. Final full-build and declaration evidence is recorded in
 the companion [checkpoint report](sources/d0_proof_architecture_formalization_2026-10-24/reports/return_product_price_2026-11-04/SUMMARY_RU.md).
 
+Full local `D0.All` passed with 4,786 Lake jobs and source digest
+`e29d141659b19bb9dd707ebfe5213242a1662364214aebc3ac56e27a86432bbd`.
+The public-import inventory at clean implementation commit
+`7062d1c9e9fe21bf6373e494d169566d9b6505ba` has the same digest. Its 93
+new-module records include generated declarations; all resolve with complete
+proof details and only the standard `Classical.choice`, `Quot.sound`, `propext`
+footprint. The complete inventory also retains TheoryTransfer/ReturnBound
+for the existing Book02 view. At report snapshot
+`6bc481de80e80f37da40e3c996ae52d70398ff94`, that read-only view checks the
+same 30 candidates without issues, using the new tracked inventory. This
+authenticates neither C0 semantics nor membership; the view itself does not
+replay Lean. All exact receipts and their hashes are in the report.
+
 This does not formalize all of source §5: the uniform-template compiler-budget
 corollary, explicit logarithmic derivative/gain-ratio lemmas and literal
 minimum-singular-value notation remain separate work. The vector bounds

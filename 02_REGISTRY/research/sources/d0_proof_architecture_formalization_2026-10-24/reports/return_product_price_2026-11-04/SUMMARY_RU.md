@@ -75,3 +75,21 @@ python3 tools/formalization_debt_audit.py --check
 собран из совместимых исходников и зависимостей; старый receipt сам по себе
 не удостоверяет новую рабочую копию. Полный cold-start и исторические
 математические проверки #334 в этом Lean-проходе не перезапускались.
+
+## Совместимость Book02 после изменения Lean-входов
+
+На report snapshot `6bc481de80e80f37da40e3c996ae52d70398ff94` read-only
+C0 view с новым инвентарём проверил прежние 30 кандидатов Book02 без issues.
+[c0_book02_view.json](c0_book02_view.json) сохраняет точный результат;
+[validation.json](validation.json) — область проверок и хеши свидетельств.
+Это проверка источников, сигнатур и совместимости tracked inputs. Сам view
+не запускает Lean и не принимает семантику или состав C0. Общая сборка
+проверена отдельно, как указано выше. Прежний Book02-инвентарь сохраняет
+свою историческую область, но не выдаётся за актуальный после новых модулей.
+
+```bash
+python3 tools/c0_reconciliation.py --repo . \
+  --snapshot 6bc481de80e80f37da40e3c996ae52d70398ff94 --kernel-sections \
+  --kernel-inventory 02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/return_product_price_2026-11-04/declarations.json \
+  --kernel-inventory-sha256 e265774da7e2ecaeeac6f8af6b521736b4ed0df56be60628c1c3ef4d26e9c8b0
+```
