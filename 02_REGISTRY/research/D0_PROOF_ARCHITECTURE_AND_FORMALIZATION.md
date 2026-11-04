@@ -17619,3 +17619,11 @@ and archive interfaces. Different supplied future profiles yield different
 codes, but creation of a physical history event and its cost remain separate.
 The logical empty-archive control is not a physical countermodel. This review
 does not accept the full C0 partition or denominator.
+
+### Independent source review: conditional theorem reuse
+
+The [focused Book02 §02.3b review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_023b_theorem_reuse_review_2026-11-05/SUMMARY_RU.md)
+checks source bytes `[14274,14759)` against translation, supplied source proofs,
+indexed premises and the actual common readout. Additional native tests need
+separate coverage; the extra-bit control does not assert a physical test. This
+is not acceptance of the complete C0 partition.
