@@ -1,0 +1,337 @@
+{
+  "GR_closed": false,
+  "change_impact_regression": {
+    "declared_application": "native-result-to-obligation",
+    "id": "exact-source-vs-unrelated-prose",
+    "source_hash_changed": true,
+    "status": "pass",
+    "unrelated_prose_left_source_hash": true
+  },
+  "command": "python3 tools/proof_architecture_cold_start.py",
+  "compact_summary": {
+    "bytes": 2559915,
+    "path": "cold_start_summary.json",
+    "sha256": "4bcd52d6710cd96ff72239879a60c5a62b0a7a6e8ef185f136ea6152a8c93cc4"
+  },
+  "compactor_git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
+  "compactor_sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
+  "full_output": {
+    "bytes": 25119434,
+    "committed": false,
+    "retained_path_local": "/tmp/d0_pr402_cold_start_42132ba53.json",
+    "sha256": "e4997ab46e9e5e9ac60baae25ef88005a94de9998dccd8e83e0f2c8a53feecba"
+  },
+  "owner_pin_test": {
+    "checked_paths": 68,
+    "checks": [
+      "commit:path Git blob",
+      "byte count",
+      "SHA-256"
+    ],
+    "source_commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+    "status": "PASS",
+    "test": "test_pr334_e94_owner_manifest_pins_all_68_changed_paths"
+  },
+  "remaining_search_gap": {
+    "case_id": "pr334-native-kappa-owner-delta",
+    "missing_paths": [
+      {
+        "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+        "status": "source_pin_mismatch"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_CANONICAL_BALANCED_REFLECTION_SOURCE_2026_10_29.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_COHERENT_CALIBRATION_SOURCE_COMPOSITION_2026_10_31.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_FINAL_REGULAR_SOURCE_COMPOSITION_REVIEW_2026_10_29.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_INITIAL_DATA_ENERGY_TO_KAPPA_CLOSURE_2026_10_30.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_INTERNAL_CLOCK_LORENTZ_SOURCE_TEST_2026_11_03.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_INTERNAL_REFERENCE_CROSS_CALIBRATION_SOURCE_2026_10_31.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_JOINT_THERMAL_STATIONARITY_AND_SHARED_SOURCE_LOSS_2026_10_31.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_NATIVE_WORD_NORMAL_SOURCE_2026_10_31.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_POST_CONTROLLER_SPATIAL_HEAT_SOURCE_TEST_2026_11_03.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_REPORT_JET_UNIVERSALITY_AND_AMPLITUDE_DESCENT_2026_10_30.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_RETAINED_RESPONSE_CONCENTRATION_GENERAL_EINSTEIN_2026_10_28.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_balanced_reflection_2026-10-29/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_balanced_reflection_2026-10-29/check_balanced_reflection.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_balanced_reflection_2026-10-29/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/check_energy_certificate.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/check_source_prediction.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/oracle_check_composition.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_coherent_units_2026-10-31/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_coherent_units_2026-10-31/check_coherent_units.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_coherent_units_2026-10-31/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_final_regular_composition_review_2026-10-29/REVIEW_RECEIPT.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_final_regular_composition_review_2026-10-29/check_final_composition.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_final_regular_composition_review_2026-10-29/result.json",
+        "status": "external_reference_only"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/check_internal_clock.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/check_internal_reference.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_joint_source_balance_2026-10-31/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_joint_source_balance_2026-10-31/check_joint_balance.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_joint_source_balance_2026-10-31/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/REVIEW.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/VALIDATION.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/check_return_record_gate.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/check_native_tangent.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/check_report_jet.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/result.json",
+        "status": "external_reference_only"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_einstein_pullback.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_fullstep_lie.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_growing_clock.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_raw_cylinder.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_source_concentration.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_einstein.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_fullstep.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_growing_clock.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_raw_cylinder.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_spatial_heat_source_2026-11-03/PROOF_RU.md",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_spatial_heat_source_2026-11-03/check_spatial_source.py",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_spatial_heat_source_2026-11-03/result.json",
+        "status": "not_found"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_owner_delta_2026-11-04_e94e518c/owner_delta_manifest.json",
+        "status": "external_reference_only"
+      }
+    ],
+    "missing_source_count": 68,
+    "missing_status_counts": {
+      "external_reference_only": 3,
+      "not_found": 64,
+      "source_pin_mismatch": 1
+    },
+    "required_source_count": 69
+  },
+  "repository": "gvakhrushev/d0_15",
+  "runner_git_blob": "f65b9235b8122a5c55084e767c59a1bf891be1e2",
+  "runner_sha256": "3829d1bcab9bed578dc6e7f8c3fa8a23e2fcf9baac8f379710cb822882947215",
+  "schema": "d0-pr402-cold-start-refresh-v1",
+  "search": {
+    "benchmark_cases_total": 51,
+    "cases_found_all_sources": 49,
+    "cases_total": 50,
+    "required_source_ref_count": 400,
+    "window": 18
+  },
+  "search_engine_git_blob": "4eb2c8371e0fd2c563e7af0e7f3639c8846788e4",
+  "search_engine_sha256": "4ef5b51ac318c376c18ccf4c6abb983a3e76e53687d11514cc2cceb4988325b4",
+  "snapshot_commit": "42132ba53d306d0ce1104d21435661545807add0",
+  "target_pull_request": 402,
+  "test_git_blob": "34837a29b2b6ea7876fed617d402452bbdc3e8b5",
+  "test_sha256": "740e736ea79a9cfaf6883595c822e585dbe70bc1225483926a38df01bac732b1",
+  "worktree_dirty": false
+}
