@@ -17785,3 +17785,12 @@ integration receipts](sources/d0_proof_architecture_formalization_2026-10-24/rep
 retain the counterexample without isometry. Constructing the actual owner
 `J_f`, identifying the generated-clock source and its physical variation
 remain separate applications; no physical admission or GR closure is inferred.
+
+### #334 §7fk: open retention collar
+
+The [pinned §7fk intake](sources/d0_334_post_afd_3fd_intake_2026-11-05/README.md)
+retains the conditional full-feedback bound on an open collar with ordered
+shared helpers, and the nonzero finite retention rows and prior §7fg
+obstruction. The bounded checker uses one finite `q=0` fixture; it is not a
+proof of the owner's `q>=3` asymptotic argument, independent physical task,
+complete price or GR closure.
