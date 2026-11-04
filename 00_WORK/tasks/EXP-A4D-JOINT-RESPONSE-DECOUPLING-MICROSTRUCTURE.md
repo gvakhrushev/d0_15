@@ -20854,3 +20854,79 @@ and git diff --check pass. The assembly remains 98 results / 22 obligations /
 5 discharged, scientific_promotion=false. Both final embedded checks pass
 normally and with -O; their receipts are byte-identical. No unchanged
 mathematical or Lean suite was replayed.
+
+## 4 November 2026 — recorded-operation/general-source composition
+
+Phase: native realization / final composition, within existing #334 and the
+same two write paths. Input: 79a2a63f626fc81e2b5656134ac21503db08d664.
+Added research section: “Recorded-operation synthesis: autonomous full
+Book source and general Einstein–CAR kappa dynamics” (RO1–RO9).
+
+Parent substitution: the former current-body stationarity problem is removed
+on the declared complete-operation task. FN1–FN9 factor the FULL original
+master price through segment products and complete marks; their constraint
+reaction solves every current implementation normal OFF SHELL. CT's old
+source, full clock, feedback and precision estimates therefore apply to
+arbitrary regular geometric fields, without a special involutive centre.
+This is a composition with an actual application, not a new generic quotient.
+
+Admission is a native-valid word with the actual saved layout and the same
+complete operation tuple as the actual compiled canonical word. Its field
+domain includes non-Einstein fields. Native Born/G interference on an
+invertible tensor frame distinguishes complete operators, including their
+sign and unprepared columns. Controlled probe matrices are GH targets;
+physically run probes/compilers retain their actual helpers and stage price.
+The existing finite clock stores the stages internally, and CT24 appends to
+one growing retained history. Unitary stages need not increase WORK width,
+but do increase the complete history clock dimension.
+
+The exact finite action is GENERAL's original I_h=sum h^4(F+lambda Q),
+with coordinate measure included once and lambda=-r_q/r_f unchanged.
+M equal-angle rotations with theta=acos(I_h/(2M)) give trace I_h+constant
+on the complete regular chart. The ideal FULL price has field derivative
+Gamma_target*mu_L(I_h)*D I_h, where Gamma_target>0 and mu_L>1/2 for a
+computable L. The scalar Chebyshev identity gives this relation exactly;
+the actual native gain uses its actual Z and the ratio is included in CT's
+error. No cancellation of an exponentially small gain is assumed.
+
+Combining the exact off-shell quotient, native error control and GENERAL's
+C1 consistency now gives soundness AND recovery for ANY computable regular
+Einstein–two-CAR solution in the declared chart. The physical metric is
+g_hat=(m/det e)g, with its explicit inverse/right lift retained. All 16+24+2
+field equations, the true measure row, separate PF density, old independent
+sources and full CAR/observer transport retain their original norms and
+assumptions. This extends recovery beyond the earlier primary/Brinkmann
+family; its nonzero-matter example is consumed, not re-solved.
+
+Price binding: Book03 §03.25 supplies the master functional and its stated
+stationarity law. RAW R6 constructs its actual d_T, both Hodge degrees,
+generated cut and feedback operator from the SAME birth/gate history; R7
+keeps all 425D modes. This is the literal original master price, not a named
+proxy. The theorem does not identify it with a separately defined full-stack
+HJR or pathwise Cost−Info profile without the corresponding transport.
+
+Quantifier correction: architectural/SCOPED contracts require one admitted
+common family, not one mandatory scheduler for all D0 worlds. The complete
+operation descriptor (including the thermal recipe) is explicitly retained
+initial/task data. Geometry-only marks do not force that recipe. These
+boundaries are visible in the theorem rather than hidden as missing rows.
+RO1–RO8 is a candidate scoped A–D composition for this exact master-law
+regime; independent scientific acceptance is still required. Exact native
+finite joint roots, unchanged positive_gr/joint_nonlinear_solve, raw216 and
+broader physical selection are not promoted by kappa recovery.
+
+Smallest new check: one portable exact Golden operator-tomography/Chebyshev
+check, embedded in the primary artifact with its provenance ledger. It
+matches all columns against the unchanged native owner and includes hostile
+probability-only, prepared-column and untraced-derivative controls. Reuse
+the prior CT/FN/general-source proofs; no unchanged heavy or Lean replay.
+Independent bounded reviews checked the source/price composition and the
+native operator reduction; their corrections are incorporated in RO1–RO8.
+
+Final-input validation: the extracted check passes 270 exact conditions
+under normal and optimized Python 3.11 execution with warnings as errors;
+the complete receipts are byte-identical and match the pinned digest.
+validate_work, validate_agent_protocol and gr_assembly check pass; the
+assembly remains 98 results / 22 obligations / 5 discharged with
+scientific_promotion=false. No unchanged heavy mathematical or Lean suite
+was replayed. Only the existing primary artifact and task brief changed.
