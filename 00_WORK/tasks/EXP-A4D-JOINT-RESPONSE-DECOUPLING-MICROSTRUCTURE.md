@@ -21492,3 +21492,73 @@ Status: supporting conditional source bridge with an exact boundary
 test; C remains open and B/D gain no independent physical acceptance.
 `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` remains unproposed;
 `scientific_promotion=false`, `GR_closed=false`; goal active.
+
+## 2026-11-05 checkpoint: original-input return and the real retention equation
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `567e3806c58861eeebadf57ae34e8c4b2142141a`.
+Result location: §7fg of the existing full-source primary artifact.
+Write paths remain that artifact and this brief; no new scientific
+execution, task, branch, Ready/retirement, merge or claims promotion.
+
+Exact parent substitution: test contract C's original-input/terminal
+replacement for §7ff's full trace, retaining contract B's independently
+admitted internal equations. Change ONLY the evaluation horizon of the
+same `M(u,v)` to the first possible original return N. Inputs are the
+same RAW/GROWING tuple, XF5 cold corner, CT23/CT25 real old controls,
+FN task-reaction boundary and original weighted-continuation source.
+
+At the actual original prepared input the full quadratic effect is
+`D_N(A) tensor I+(uv)^N A^N tensor(C_N+C_N*)`, with
+`C_N=a^K [s+(1-s)Q] C_<`. This removes the earlier short-horizon zero
+FIELD response on a nonzero scene/old-return collar. Its actual gain
+retains the old sign, `a^K`, READY coefficient, and actual normalizer.
+Every independent preparation/old-row derivative remains.
+
+Smallest decisive test: the actual paid retention-G slot has
+`c_j(theta)=a cos(theta)-p sin(theta)`, so the oriented normalized row is
+`-p[s+(1-s)Q]/[a(1-s)g_h]`, nonzero even at Einstein centres and
+independent of K. It is an admitted CT row, not an added shared scalar.
+The field covector factors through that row for ANY smooth function of
+this same scalar return. The result rules out the attempted FULL source
+substitution on the unchanged canonical CT family, not the existing
+master source or every possible continuation valuation.
+
+Carrier/norm/source convention: actual growing native clock and original
+cut, full prepared coherent response, signed orientation and positive
+actual central gain; the same physical material/lift map for the field,
+and the temporal gate-max dual norm for all genuine retention controls.
+All fine records and physically executed helpers remain. A six-call
+G/CX comparison on three born wires gives literal all-column endpoints
+I,G,G^2 with cold scalars 1,a,p^3. Equal call counts do not establish an
+uncomputed complete-price equality. The owned small-step compilation
+and actual price-reading budgets preserve a strict nonzero row margin.
+
+Stationary-section alternative: nonzero field gain plus all zero rotor
+rows forces every `|c_j|=1`, removing the a^K attenuation. The complete
+norm strengthens this: `-log|product c_j| <= (sum|c'_j/c_j|)^2/2`, so
+full normalized nuisance decay cannot hide contraction among many
+individually small rows. A redesigned section needs new honest master
+feedback/old-row bounds. Guarding the row instead changes the actual
+task domain and must retain its justified reaction.
+
+Remaining positive application: compute the actual complete weighted
+memory/terminal source, with dependence independent of this shared
+return, or prove a genuinely changed joint section with every required
+bound. The original quantum continuation and its full forward/adjoint
+source remain the consumer. No Info/counterterm or desired residual is
+assigned; a deeper horizon alone does not supply full Cost–Info binding.
+
+Validation: 58 exact symbolic conditions, including all-column native
+macros, the complete 55-dimensional actual clock (nine stages), all 100
+quadratic history pairs, source factorization, signs and error margins.
+Normal and optimized warnings-as-errors receipts are byte-identical.
+The finite fixture is not a compiled XF Einstein solution; the analytic
+proof and three bounded reviews retain that distinction. Final affected
+integration guards run on the inserted result; no unchanged Lean/root
+suite is replayed.
+
+Status: exact scoped obstruction to this parent substitution, with the
+stationary alternatives stated. Contract C and physical acceptance of
+B/D remain open; `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` unproposed,
+`scientific_promotion=false`, `GR_closed=false`; goal active.

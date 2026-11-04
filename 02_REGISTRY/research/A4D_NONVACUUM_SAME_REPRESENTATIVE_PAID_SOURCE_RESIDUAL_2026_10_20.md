@@ -136398,6 +136398,858 @@ Observed normal and optimized receipt:
 }
 ```
 
+## 7fg. Full original return: a real field source, its independent retention equation and the stationary-section alternative
+
+5 November 2026. Existing #334, native realization / final composition.
+Input 567e3806c58861eeebadf57ae34e8c4b2142141a. Consumer: unchanged
+contract C's same-history weighted-memory/absolute-price application,
+and B's requirement that the field survive ALL genuine internal rows.
+This section evaluates §7ff's SAME M(u,v) at the first possible original
+input return N, instead of the youngest detail age L<N. It computes the
+full prepared effect and its genuine retention-control equations.
+
+The field component now has the expected source on a nonzero cold-return
+collar. However, one already admitted retention-G equation stays nonzero
+after normalization, including at Einstein fields. This persists for
+any smooth scalar function of this same return. Solving those equations
+on a different nonzero-gain section removes the attenuation used by CT.
+Thus moving the horizon alone cannot transport the full master source
+through the original prepared boundary. The mathematical master theorem
+and §7ff's full-trace theorem remain intact at their own scopes.
+
+No new price, Info, native angle, external controller or stationary
+finite root is selected. `GR_closed=false`; goal active.
+
+### 7fg.A. Exact effect at the first possible original return
+
+Keep the full RAW/GROWING clock T on K, its original stage-zero injection
+i_0, the original scene adjacency A, and fixed positive u,v. A finite
+declared horizon is allowed by the owned finite-future theorem; choosing
+N here does not prove a compulsory horizon or change the actual clock
+price. All physical stages and every fine record remain in the tuple.
+At this actual layout,
+
+    i_0* T^r i_0=0 (0<|r|<N),
+    C_N=i_0* T^N i_0=B_(0,f)* g A_f.                    (FR1)
+
+Use the proper-cut compression when the input is supported on P_0.
+The identity does not assume that C_N is nonzero. Expand the SAME full
+quadratic amplitude M(u,v)^N, with all coherent pairs retained. Setting
+J_in=I_scene tensor i_0 gives the operator identity
+
+    H_N=J_in* (M^N)*M^N J_in
+       =D_N(A) tensor I+(uv)^N A^N tensor (C_N+C_N*),
+    D_N(A)=sum_(j=0)^N binom(N,j)^2
+                              u^(2N-2j)v^(2j) A^(2N-2j). (FR2)
+
+Indeed the compressed clock moment vanishes for every unequal pair
+except (0,N),(N,0); diagonal pairs give the identity. There is no
+physical inverse instruction and no deletion of a terminal complement.
+
+For the declared product input xi tensor rho_0, both normalized,
+
+    R_N=Tr[(xi tensor rho_0)H_N]
+       =b_N+2 k_N ReTr(rho_0 C_N),
+    b_N=Tr[xi D_N(A)], k_N=(uv)^N Tr(xi A^N),
+    S_N=-log R_N/(2 ell), ell=log phi.                  (FR3)
+
+For a correlated input use FR2's joint expectation, not the product
+formula. Since A is self-adjoint and xi positive, Cauchy–Schwarz and
+the j=0,N terms imply b_N>=2|k_N| and b_N>=v^(2N)>0.
+The moment Tr(xi A^N) can be zero, and can be negative for odd N.
+Its sign is not fixed by the full-trace closed-walk count of §7ff.
+All logarithms below use the actual strictly positive response collar;
+the canonical attenuated section has one for K>=1 by FR5 below.
+
+### 7fg.B. The complete old corner and the actual field gain
+
+Consume CT/XF's true proper return, including its full initial cut:
+
+    C_N=P c(Q) C_<, P=product_(j=1)^K c_j,
+    c(Q)=s+(1-s)Q, s=2pa,
+    p=phi^-1, a=sqrt(p), a^2+p^2=1,
+    alpha=ReTr(rho_0 C_<), |alpha|<=1,
+    Q=a_n bar r_h, DQ=g_h DI_h+e_h,
+    g_h=a_n epsilon_h r_f>0.                            (FR4)
+
+At the original CT section c_j=a and P=a^K. Because a!=p and both
+are positive, 0<s<1; the actual report probability obeys 0<=Q<=1,
+so s<=c(Q)<=1. No READY coefficient or old scalar has been omitted.
+
+    R_target=b_N+2 k_N alpha P c(Q),
+    R_target>=b_N(1-a^K)>0 on the canonical section,
+    D_Y R_target=2 k_N alpha P(1-s) DQ.                 (FR5)
+
+If k_N alpha P=0, this field channel has zero gain. Otherwise declare
+sigma=sign(k_N alpha P) on the actual nonzero collar and use
+
+    Gamma_ret,actual=|k_N alpha P|(1-s)g_h
+                                      /(ell R_actual)>0,
+    -sigma D_Y S_target/Gamma_ret,target=DQ/g_h.         (FR6)
+
+The actual central normalizer and its target ratio must be retained.
+As always the gain is frozen in each finite comparison; no derivative
+of S/Gamma and no exchange of finite zero sets with kappa is made.
+For all genuine old preparation and controls,
+
+    Dalpha=ReTr[(D rho_0)C_<+rho_0 D C_<].
+
+At fixed scene, tariffs, flag profile and layout, the FULL restricted
+target differential is
+
+    -sigma DS_N/Gamma_ret
+      =DQ/g_h+c(Q)/[(1-s)g_h]
+                         [Dalpha/alpha+sum_j Dc_j/c_j]. (FR7)
+
+The attenuation P cancels in every normalized old term. Independently
+admitted scene, tariff, moving-cut, terminal, duration and reader
+variations retain their additional derivatives; FR7 does not set them
+to zero. Canonical new WORK/flag states remain generated XF data.
+No independently variable original input is invented to obtain the
+obstruction: the paid retention controls already suffice.
+
+### 7fg.C. A genuine native retention row, not a free scalar substitute
+
+The original gate and born input are
+
+    G=[[a,-p],[p,a]], v=(a,p)^T=G e_0.
+
+In particular G^T v=e_0, not Gv=e_0. On one existing retention occurrence
+use the unit-speed real tangent G(theta)=R(theta)G, where
+R(theta)=[[cos theta,-sin theta],[sin theta,cos theta]]. Directly,
+
+    c_j(theta)=v^T R(theta)Gv=a cos theta-p sin theta,
+    c_j(0)=a, c'_j(0)=-p, ||G'(0)||_op=1.               (FR8)
+
+CT23 explicitly retains this independent old retention-G row; CT25/GH
+provide support-preserving common-layout native comparisons, including
+the truly born helpers and all their stages. The tangent is a smooth
+comparison direction, not a claim that an arbitrary angle is one native
+primitive. FN's task-preserving compensated implementation variations
+are a different subspace and cannot delete this independent CT row.
+
+On the canonical CT section, FR7 gives exactly
+
+    (-sigma DS_N/Gamma_ret)[V_j]
+       =-p c(Q)/[a(1-s)g_h],
+    magnitude >=m_h:=p s/[a(1-s)g_h]>0.                 (FR9)
+
+There is no factor a^K left. Even at an Einstein centre, where the
+physical field residual vanishes, this real internal row is nonzero.
+In the temporal gate-max dual norm the K independent canonical rotor
+rows have total magnitude K p c(Q)/[a(1-s)g_h]. One row alone already
+prevents normalized full-source convergence at fixed h. This also
+applies to the favorable empty old prefix C_<=I, alpha=1: it does not
+depend on a hostile initial state or a sign-changing old return.
+
+The obstruction is independent of the chosen smooth scalar aggregation.
+For ANY differentiable F(R_N), at this same section,
+
+    E_Y[F(R_N)]
+      =-a(1-s)/[p c(Q)] DQ E_theta_j[F(R_N)].           (FR10)
+
+This follows by differentiating FR5 and FR8; the same F'(R_N) multiplies
+both rows. If the free retention equation is zero here, the field
+equation is screened. Setting F'=0 also kills the field. This is a
+same-execution factorization through a REAL native control, not a
+postulated shared scalar. Independent terms in the actual complete
+price may break it; this theorem neither supplies nor excludes them.
+
+### 7fg.D. Literal finite contrasts and the nonzero source margin
+
+There is a small exact native witness on three actually born live bits.
+Let I2 be CX01;CX01 and I5 be
+CX01;CX12;CX01;CX12;CX02, in chronological order. Both are identities
+on ALL eight columns. The following words have six actual calls each:
+
+    W_minus=I2;I2;I2,
+    W_zero=G0;I5,
+    W_plus=G0;G0;I2;I2.                                 (FR11)
+
+Their endpoints are I,G0,G0^2. On the original born input their cold
+scalars are 1,a,a^2-p^2=p^3. Helpers are restored on all columns; no
+inverse or zero-cost tick is executed. Equal call counts establish a
+common finite clock, not equality of an uncomputed complete Cost–Info.
+After these macros are included, compute N and the whole clock anew.
+Earlier records remain on their own actual prefixes.
+
+For arbitrarily small native comparisons consume the existing fixed-
+arena compiler. On the favorable k_N alpha>0 collar at theta=+/-t,
+0<t<=1, write
+
+    R_plus=A_t-B_t, R_minus=A_t+B_t,
+    A_t=b_N+2 k_N alpha a^K c(Q) cos t,
+    B_t=2 k_N alpha a^(K-1)p c(Q) sin t.
+
+Put m_0=p c(Q)/[a(1-s)g_h]. Positivity, R_0/A_t>=1,
+log((1+x)/(1-x))>=2x and sin(t)/t>=5/6 imply
+
+    -delta_t S_target/Gamma_target<=-(5/6)m_0.          (FR12)
+
+For K>=2, the other K-1 retention factors stay intact for the changed
+bounded-support slot. Every actual/target response obeys
+R_min>=b_N(1-a)>b_N/5, R_center<2b_N, since a<4/5.
+Let delta be the COMPLETE endpoint error of the fresh body and changed
+macro, including all real marked occurrences. On this old-spectator
+comparison their cold error is <=a^(K-1)|alpha| delta. Consequently
+
+    |delta_t S_actual-delta_t S_target|/Gamma_actual
+       <=10 delta/[a(1-s)g_h |t|],
+    |R_actual/R_target-1|<2delta at the centre.          (FR13)
+
+Choose delta<=1/16 and delta/|t|<=p c(Q)/80. The central ratio is
+at least 7/8 and the endpoint error at most m_0/8, leaving
+-delta_t S_actual/Gamma_actual<=-(29/48)m_0. Even an additional
+normalized price-reading error m_0/16 leaves a strict margin below
+-m_0/2. The source survives native compilation and certified price
+reading; it is not a Taylor or numerical artifact.
+
+The owned fixed-prefix/fixed-arena schedule uses t=exp(-r/2) and
+complete polynomial-occurrence errors times exp(-r). It meets FR13
+before the outer h-diagonal. Absolute price-reading precision is still
+chosen relative to |t|Gamma_actual. Arbitrary old-prefix changes retain
+their true alpha conditioning and lift constants. No unrestricted
+old-fibre finite chord or precision-growing arena is assumed here.
+
+### 7fg.E. Solving the retention equations changes the attenuation
+
+The canonical-section failure is NOT a global no-go for every possible
+stationary section. Write cos(theta_G)=a, sin(theta_G)=p. Then
+c_j=cos(theta_j+theta_G), and c_j^2+(c'_j)^2=1.
+At nonzero field gain all c_j are nonzero. Exact rotor stationarity of
+S_N therefore forces c'_j=0 in every slot, so
+
+    |c_j|=1 for all j, |P|=1.                           (FR14)
+
+The retained contraction a^K has disappeared. Such a section needs a
+new estimate of the original proper-cut J and all old master-source
+rows; CT19–23 cannot be reused with their old attenuation unchanged.
+For nonzero k_N alpha, exactly one zero c_j is not rotor-stationary,
+since its derivative has magnitude one and all other factors survive.
+Two or more zero slots make these rotor rows zero but also kill the
+field gain. This classifies the rotor equations; other independent
+equations remain and no native joint root is inferred.
+
+The full norm excludes hiding attenuation in an increasing number of
+small rows. Put t_j=c'_j/c_j and T_1=sum_j |t_j|. On the independent
+unit-rotor subspace the normalized dual norm is
+c(Q) T_1/[(1-s)g_h]. Since |c_j|=(1+t_j^2)^(-1/2),
+
+    -log|P|=(1/2)sum_j log(1+t_j^2)<=T_1^2/2.           (FR15)
+
+Thus at fixed h, vanishing COMPLETE normalized rotor norm forces
+|P|->1, even if K grows. More quantitatively, keeping |P|<=r<1 forces
+T_1>=sqrt(2 log(1/r)). Coordinatewise smallness cannot replace this
+gate-max dual norm. The same implication holds on a diagonal with
+bounded g_h and c(Q)>=s. No unproved uniform lower bound on alpha is
+used in this exact normalized identity.
+
+### 7fg.F. Full-price consumer and the route changed by this result
+
+The actual weighted quantum continuation remains the owned operator
+map, with every fine outcome and the actual terminal:
+
+    Phi_j(X)=sum_b k_(j,b) A_(j,b) X A_(j,b)*,
+    rho_j=Phi_j(rho_(j-1)), H_n=E_terminal,
+    H_(j-1)=Phi_j*(H_j), Z=Tr(rho_0 H_0).
+
+Its exact full source is
+
+    dZ=Tr[(d rho_0)H_0]+Tr[rho_n dE_terminal]
+                       +sum_j Tr[H_j(dPhi_j)(rho_(j-1))]. (FR16)
+
+Actual weight, memory/Kraus, preparation, work and moving-boundary
+derivatives must all be supplied. The known scalar-stage-weight case
+with a complete isometric native instrument and terminal I has
+H_0=(product_j k_j)I and zero field source, as already proved in §7fe.
+Increasing its horizon does not turn it into FR3. A coherent virtual
+memory sum and that CP sum require the actual weighted intertwiner;
+their cross terms cannot be identified from equal output probabilities.
+
+For a genuine terminal E in the quadratic representation, the response
+is Z_E=Tr[rho J_in*(M^N)*E M^N J_in]. Its derivative retains d rho,
+dJ_in, both d(M^N) legs and dE; d(M^N) is the full ordered insertion
+sum. A normalized probability Z_E/Z_I has BOTH logarithmic sources.
+This consumes BOOK_SOURCE_BINDING, rather than choosing Info to cancel
+FR9 or dropping the absolute denominator.
+
+The exact parent result is now sharper: evaluating the same operator
+at full initial return removes the short-horizon zero FIELD response,
+but fails the existing CT family's FULL nuisance-source comparison.
+Neither a different smooth function of this scalar return nor more
+canonical attenuation repairs it. A nonzero-gain stationary rotor
+section loses that attenuation and requires a changed full-price proof.
+Guarding a previously free rotor instead changes the task graph and
+must justify its real constraint reaction; it is not an unrecorded fix.
+
+The remaining positive step is the actual complete weighted-memory/
+terminal source with dependence independent of this shared return, or
+a genuinely justified changed joint section with all source estimates.
+This is a named missing application of the existing price/interface
+owners, not permission to add a compensator or open another root census.
+The original A–D contract is unchanged; its terminal remains unproposed.
+No independent positive assembly acceptance or claims promotion occurs.
+
+
+### 7fg.G. Exact native control and reviewed input snapshot
+
+The script below has 58 exact conditions in Q(a), a>0, a^4+a^2=1.
+It first verifies the three six-call native words on every one of the
+eight columns, their actual born-input cold corners and the absence
+of an executed inverse or extra primitive. It constructs the COMPLETE
+GROWING clock of three canonical births followed by W_zero, with
+actual widths 1,2,4,8,8,8,8,8,8, nine stages and dimension 55. Its last
+real CX is the closing gate; all birth complements and old columns
+remain. Full unitarity and the first nine compressed initial moments
+are checked exactly: eight zeros, followed by a.
+
+All 100 quadratic history pairs at that true return depth are then
+expanded on the original 33-vertex/718-directed-edge scene, with symbolic
+positive weights. The illustrative coordinate-vertex scene is declared;
+it is not inferred to be every possible original scene cut. Further
+checks verify the actual retention rotation sign, independent source
+factorization, old/preparation rows, zero-factor alternatives and the
+rational finite-error margins. FR15's all-K logarithmic inequality is
+proved analytically above; a three-variable square identity in the
+checker is supporting algebra, not a finite-census proof of that result.
+
+Normal and optimized Python 3.12.14 / SymPy 1.14.0 runs with warnings
+as errors passed with byte-identical receipts. Conditions use explicit
+exceptions and remain active under optimization. No expected repository
+evidence was rewritten. The small fixture is not an emitted full XF
+Einstein word, a computed physical Info law, or a joint stationary root.
+
+Three bounded reviews pin the final 292-line analytic text. They check
+the general source orientation, actual-gain ratio and native comparison
+margin, the CT23/CT25 free-row versus FN constraint distinction, the
+complete preparation/terminal source, and the stationary alternatives.
+The scoped obstruction does not become independent positive assembly
+acceptance. No unchanged geometry/root/Lean suite was replayed.
+
+Extract the Python block into scratch check_return_source.py:
+
+```text
+python3 -Werror /absolute/scratch/check_return_source.py
+python3 -O -Werror /absolute/scratch/check_return_source.py
+```
+
+The script prints observed JSON and writes no repository files.
+Owner hashes refer to the pre-insertion commit. This two-file insertion
+preserves every old byte and the unchanged A–D acceptance contract.
+
+```json
+{
+  "GR_closed": false,
+  "checker_sha256": "6eda502ec0b8324d6033af750ae4ab59bcae4ddee3f42f4035947ab4af9d60b8",
+  "exit_codes": [
+    0,
+    0
+  ],
+  "input_head": "567e3806c58861eeebadf57ae34e8c4b2142141a",
+  "new_exact_checks": 58,
+  "normal_and_optimized_byte_identical": true,
+  "normal_optimized_receipt_sha256": "bc2c30acd1250940b45555d69b13b09f819dc1b20a0d75afa7d92c3fa3d8f0e6",
+  "not_claimed": [
+    "full Cost-Info or absolute prepared half-log selected",
+    "all future valuations or all stationary sections excluded",
+    "free CT row silently guarded by a changed task",
+    "equal complete price from equal native call counts",
+    "full XF field history emitted by the small fixture",
+    "new exact joint native roots",
+    "new PDE or Lean proof",
+    "independent positive assembly acceptance"
+  ],
+  "owner_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "be4bddb7e5ad96251d623a3cc00443d731164487251ca1d78511b85c3cc16b0c",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "14bb2c078a66ccee53407d84312c725311acca7079b061b5f0125a1884fa794e",
+    "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+    "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+  },
+  "run_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scientific_promotion": false,
+  "scope": "Actual original-input return, native independent retention source, scalar factorization and stationary-section attenuation boundary",
+  "scratch_proof_sha256": {
+    "admission-final.md": "ac30d24e99569e541ec66a77ec68912128c4e52039fb961cf55dec2eea5d667d",
+    "admission.md": "3e83373fe99677bb8e9c64c66b6b9d590987a9a03c1efad5adc738f125acf4fe",
+    "brief.md": "9d12ecff2e69b22eead9f71e49466890f396635dd32e1e8420e84315c4d5ddac",
+    "price-final.md": "8d2c0978f46f8c33a4d251c992f35bb243061d553c5d3b17a70cc51d79d2b3f3",
+    "price.md": "0715372033431935756fe948bf84f17caf11b28189980a1f65cf8939d496d403",
+    "proof.md": "20dacfa211bf538e80e36496579d403d7253cc73293d722900674bde2ff68eba",
+    "source-final.md": "4b323222ecc9ffd43edca954bb542be269c7b94c7d34c2923bd1b6498d05bb5e",
+    "source.md": "fc8ab49162a1664613aeca5b7fcf75927e05558525a9022df837b2ca9356c7be"
+  }
+}
+```
+
+#### 7fg.G1. check_return_source.py
+
+```python
+#!/usr/bin/env python3
+"""Exact bounded native retention controls and their original growing clock.
+Only canonical births, G, CX are executed. No inverse or continuous gate.
+This is a fixture, not a full XF compile or a selected physical valuation.
+"""
+import hashlib
+import json
+from math import comb
+from pathlib import Path
+import sympy as s
+
+checks = []
+def need(condition, label):
+    if not bool(condition):
+        raise ArithmeticError(label)
+    checks.append(label)
+
+a = s.symbols('a', positive=True)
+p = a*a
+modulus = a**4+a**2-1
+
+def red(x):
+    if x == 0:
+        return s.S.Zero
+    num, den = s.fraction(s.cancel(x))
+    num = s.rem(num, modulus, a)
+    den = s.rem(den, modulus, a)
+    return s.rem(s.expand(num*s.invert(den, modulus, a)), modulus, a)
+
+def reduced(M):
+    return M.applyfunc(red)
+
+def equal(A, B):
+    return A.shape == B.shape and all(red(x) == 0 for x in A-B)
+
+v = s.Matrix([a,p])
+G = s.Matrix([[a,-p],[p,a]])
+need(red((v.T*v)[0]-1) == 0, 'original canonical birth vector is normalized')
+need(equal(G.T*G,s.eye(2)), 'original Golden G is orthogonal over its exact field')
+
+# At the final 3-bit carrier use little-endian labels. The first two
+# canonical births create the helpers; the third creates retention bit 0.
+# Each physical birth is still the original J:x -> x tensor v.
+def cx(control, target):
+    M = s.zeros(8)
+    for col in range(8):
+        row = col ^ (1 << target) if col & (1 << control) else col
+        M[row, col] = 1
+    return M
+
+def gate(op):
+    if op[0] == 'G':
+        bit = op[1]
+        M = s.zeros(8)
+        for col in range(8):
+            M[col,col] = a
+            M[col ^ (1 << bit), col] = -p if col & (1 << bit) else p
+        return M
+    if op[0] == 'CX':
+        return cx(op[1],op[2])
+    raise ValueError('unsupported native instruction')
+
+def execute(word):
+    U = s.eye(8)
+    for op in word:
+        U = reduced(gate(op)*U)
+    return U
+
+I2 = [('CX',0,1),('CX',0,1)]
+I5 = [('CX',0,1),('CX',1,2),('CX',0,1),('CX',1,2),('CX',0,2)]
+words = {
+    'minus': I2*3,
+    'zero': [('G',0)]+I5,
+    'plus': [('G',0),('G',0)]+I2*2,
+}
+need(equal(execute(I2),s.eye(8)), 'I2 identity is exact on all eight columns')
+need(equal(execute(I5),s.eye(8)), 'chronological I5 identity is exact on all eight columns')
+for label, word in words.items():
+    need(len(word) == 6, label+' macro has exactly six actual native calls')
+    need(all(op[0] in ('G','CX') for op in word),
+         label+' macro uses no inverse, reset, measurement or new primitive')
+U = {label: execute(word) for label, word in words.items()}
+G0 = gate(('G',0))
+need(equal(U['minus'],s.eye(8)), 'minus endpoint is identity on every column')
+need(equal(U['zero'],G0), 'zero endpoint is original G on retention and identity on helpers')
+need(equal(U['plus'],G0*G0), 'plus endpoint is G squared on retention and identity on helpers')
+born = s.kronecker_product(v,v,v)
+expected = {'minus':s.S.One, 'zero':a, 'plus':red(p**3)}
+for label in words:
+    need(red((born.T*U[label]*born)[0]-expected[label]) == 0,
+         label+' initialized proper return equals '+str(expected[label]))
+
+# Actual before-step spaces for three distinct births followed by all six
+# stages of W_zero. The sixth native call is the real final closing g.
+dims = [1,2,4]+[8]*6
+N = len(dims)
+D = sum(dims)
+starts = [sum(dims[:j]) for j in range(N)]
+need((N,D) == (9,55), 'literal original clock has N=9 stages and D=55 without padding fibres')
+J0 = v
+J1 = s.kronecker_product(s.eye(2),v)
+J2 = s.kronecker_product(s.eye(4),v)
+F = [J0,J1,J2]+[gate(op) for op in words['zero'][:-1]]
+g = gate(words['zero'][-1])
+need(len(F) == N-1 and words['zero'][-1] == ('CX',0,2),
+     'last real CX is retained as closing gate, not a free closing identity')
+for j, Fj in enumerate(F):
+    need(Fj.shape == (dims[j+1],dims[j]) and equal(Fj.T*Fj,s.eye(dims[j])),
+         'actual chronological prefix step '+str(j)+' is an isometry on its true spaces')
+
+passive = [J0,J1,J2]+[s.eye(8) for _ in range(N-4)]
+B = [None]*N
+B[-1] = s.eye(8)
+for j in range(N-2,-1,-1):
+    B[j] = reduced(B[j+1]*passive[j])
+details = [s.eye(1)]
+for j in range(1,N):
+    details.append(reduced(s.eye(dims[j])-passive[j-1]*passive[j-1].T))
+Rblocks = [B[0].T]+[reduced(details[j]*B[j].T) for j in range(1,N)]
+R = s.Matrix.vstack(*Rblocks)
+need(equal(R.T*R,s.eye(8)), 'full original closure R retains every final birth complement')
+need(equal(R*R.T,s.diag(*details)), 'closure range is initial carrier plus complete birth-detail blocks')
+T = s.zeros(D)
+for j,Fj in enumerate(F):
+    T[starts[j+1]:starts[j+1]+dims[j+1],starts[j]:starts[j]+dims[j]] = Fj
+T[:,starts[-1]:starts[-1]+dims[-1]] += reduced(R*g)
+T = reduced(T)
+need(equal(T.T*T,s.eye(D)), 'complete 55-dimensional original growing clock is unitary on all columns')
+state = s.zeros(D,1)
+state[0] = 1
+states = [state]
+compressed = []
+for r in range(1,N+1):
+    state = reduced(T*state)
+    states.append(state)
+    compressed.append(red(state[0]))
+    if r < N:
+        need(compressed[-1] == 0, 'original initial cut has no return at positive depth '+str(r))
+need(red(compressed[-1]-a) == 0,
+     'first possible full original return at N=9 has its actual coefficient a')
+
+# All coherent pairs of this actual prepared clock at its true return depth.
+zones = [0]*9+[1]*11+[2]*13
+A_scene = s.Matrix(33,33,lambda i,j:int(zones[i]!=zones[j]))
+need(sum(A_scene)==718, 'full original scene retains all 718 directed edges')
+Ap = [s.eye(33)]
+for j in range(1,2*N+1):
+    Ap.append(Ap[-1]*A_scene)
+u, w = s.symbols('u w',positive=True)
+full_prepared = 0
+survivors = []
+for i in range(N+1):
+    for j in range(N+1):
+        cij = red((states[i].T*states[j])[0])
+        if i!=j and cij!=0:
+            survivors.append((i,j))
+        full_prepared += comb(N,i)*comb(N,j)*u**(2*N-i-j)*w**(i+j)*Ap[2*N-i-j][0,0]*cij
+bdiag = sum(comb(N,j)**2*u**(2*N-2*j)*w**(2*j)*Ap[2*N-2*j][0,0]
+            for j in range(N+1))
+moment = Ap[N][0,0]
+expected_prepared = bdiag+2*(u*w)**N*moment*a
+need(survivors==[(0,N),(N,0)],
+     'all one hundred prepared quadratic pairs leave exactly two full-return cross terms')
+need(all(red(x)==0 for x in s.Poly(s.expand(full_prepared-expected_prepared),u,w).coeffs()),
+     'actual N=9 prepared response equals its exact diagonal plus full-return formula')
+need(moment>0, 'the illustrative original coordinate-vertex scene cut has positive N-return moment')
+
+# Owned XF scalar corner; identities include its independent retention row.
+theta=s.symbols('theta',real=True)
+rot=s.Matrix([[s.cos(theta),-s.sin(theta)],[s.sin(theta),s.cos(theta)]])
+corner=a*s.cos(theta)-p*s.sin(theta)
+need(equal(G.T*v,s.Matrix([1,0])), 'the original transpose G, not G, undoes the canonical born vector')
+need(all(red(x)==0 for x in s.Poly(s.expand((v.T*rot*G*v)[0]-corner),s.cos(theta),s.sin(theta)).coeffs()),
+     'actual retention corner has the exact minus-sine sign')
+need(red(s.diff(corner,theta).subs(theta,0)+p)==0,
+     'actual unit retention derivative at the canonical G is minus p')
+need(red(s.trigsimp(corner**2+s.diff(corner,theta)**2)-1)==0,
+     'retention corner and its derivative obey the unit-circle identity')
+bb,kk,old,other,Q,ss,gg,ell=s.symbols('bb kk old other Q ss gg ell',positive=True)
+f=ss+(1-ss)*Q
+response=bb+2*kk*old*other*corner*f
+rcenter=response.subs(theta,0)
+score=-s.log(response)/(2*ell)
+gain=kk*old*other*a*(1-ss)*gg/(ell*rcenter)
+need(s.simplify(-s.diff(score,Q).subs(theta,0)*gg/gain-1)==0,
+     'full prepared target has its true positive field gain when old and scene signs are positive')
+need(s.simplify(-s.diff(score,theta).subs(theta,0)/gain+p*f/(a*(1-ss)*gg))==0,
+     'normalized retention source is independent of all attenuation and old-overlap factors')
+need(s.simplify(s.diff(response,Q).subs(theta,0)
+                +a*(1-ss)*s.diff(response,theta).subs(theta,0)/(p*f))==0,
+     'field derivative factors through the genuine retention row for every scalar aggregation')
+need(s.simplify(-s.diff(score,old).subs(theta,0)/gain-f/((1-ss)*gg*old))==0,
+     'true independent old preparation and corner source survives normalization')
+need(s.simplify(-s.diff(score,other).subs(theta,0)/gain-f/((1-ss)*gg*other))==0,
+     'all other retention factors keep their actual normalized row')
+
+# Exact algebra underlying stationary-section and finite-contrast bounds.
+c1,c2,c3=s.symbols('c1 c2 c3',real=True)
+product=c1*c2*c3
+need(s.diff(product,c1).subs(c1,0)==c2*c3,
+     'one zero retention factor leaves its own nonzero derivative when the others survive')
+need(all(s.diff(product,x).subs({c1:0,c2:0})==0 for x in (c1,c2,c3)),
+     'two zero retention factors screen every rotor derivative and the field product')
+t1,t2,t3=s.symbols('t1 t2 t3',nonnegative=True)
+need(s.expand((t1+t2+t3)**2-(t1*t1+t2*t2+t3*t3)-2*(t1*t2+t1*t3+t2*t3))==0,
+     'full row-sum norm controls the sum of squares in the attenuation bound')
+need(s.Rational(5,6)*s.Rational(7,8)-s.Rational(1,8)==s.Rational(29,48),
+     'compiled finite-source margin retains the central normalization correction')
+need(s.Rational(29,48)-s.Rational(1,16)>s.Rational(1,2),
+     'certified price-reading error leaves a strict half-margin')
+need(s.Rational(4,5)**4+s.Rational(4,5)**2-1>0,
+     'positive-root monotonicity gives the used bound a less than four fifths')
+need(red((1-2*p*a)-(a-p)**2)==0,
+     'one minus the full comparison baseline equals a strictly positive square')
+
+result = {
+    'status':'PASS', 'number_of_checks':len(checks), 'checks':checks,
+    'arithmetic':'Q[a]/(a^4+a^2-1), a positive and p=a^2; exact symbolic reduction',
+    'macros':words,
+    'same_layout':{'native_calls_each':6,'wire_count':3,'endpoints':['I','G','G^2'],
+                   'cold_scalars':['1','a','p^3']},
+    'clock':{'word':'birth;birth;birth;G0;CX01;CX12;CX01;CX12;CX02',
+             'stage_widths':dims,'N':N,'D':D,
+             'initial_compressed_moments':[str(x) for x in compressed]},
+    'input_head':'567e3806c58861eeebadf57ae34e8c4b2142141a',
+    'not_claimed':['full XF compiled','unchanged bare-one-G clock price',
+                   'equal G/CX inventory or physical native tariffs',
+                   'a continuous primitive is admitted','full Cost-Info or GR closure'],
+    'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+}
+print(json.dumps(result,sort_keys=True,indent=2))
+```
+
+Observed normal and optimized receipt:
+
+```json
+{
+  "arithmetic": "Q[a]/(a^4+a^2-1), a positive and p=a^2; exact symbolic reduction",
+  "checker_sha256": "6eda502ec0b8324d6033af750ae4ab59bcae4ddee3f42f4035947ab4af9d60b8",
+  "checks": [
+    "original canonical birth vector is normalized",
+    "original Golden G is orthogonal over its exact field",
+    "I2 identity is exact on all eight columns",
+    "chronological I5 identity is exact on all eight columns",
+    "minus macro has exactly six actual native calls",
+    "minus macro uses no inverse, reset, measurement or new primitive",
+    "zero macro has exactly six actual native calls",
+    "zero macro uses no inverse, reset, measurement or new primitive",
+    "plus macro has exactly six actual native calls",
+    "plus macro uses no inverse, reset, measurement or new primitive",
+    "minus endpoint is identity on every column",
+    "zero endpoint is original G on retention and identity on helpers",
+    "plus endpoint is G squared on retention and identity on helpers",
+    "minus initialized proper return equals 1",
+    "zero initialized proper return equals a",
+    "plus initialized proper return equals 2*a**2 - 1",
+    "literal original clock has N=9 stages and D=55 without padding fibres",
+    "last real CX is retained as closing gate, not a free closing identity",
+    "actual chronological prefix step 0 is an isometry on its true spaces",
+    "actual chronological prefix step 1 is an isometry on its true spaces",
+    "actual chronological prefix step 2 is an isometry on its true spaces",
+    "actual chronological prefix step 3 is an isometry on its true spaces",
+    "actual chronological prefix step 4 is an isometry on its true spaces",
+    "actual chronological prefix step 5 is an isometry on its true spaces",
+    "actual chronological prefix step 6 is an isometry on its true spaces",
+    "actual chronological prefix step 7 is an isometry on its true spaces",
+    "full original closure R retains every final birth complement",
+    "closure range is initial carrier plus complete birth-detail blocks",
+    "complete 55-dimensional original growing clock is unitary on all columns",
+    "original initial cut has no return at positive depth 1",
+    "original initial cut has no return at positive depth 2",
+    "original initial cut has no return at positive depth 3",
+    "original initial cut has no return at positive depth 4",
+    "original initial cut has no return at positive depth 5",
+    "original initial cut has no return at positive depth 6",
+    "original initial cut has no return at positive depth 7",
+    "original initial cut has no return at positive depth 8",
+    "first possible full original return at N=9 has its actual coefficient a",
+    "full original scene retains all 718 directed edges",
+    "all one hundred prepared quadratic pairs leave exactly two full-return cross terms",
+    "actual N=9 prepared response equals its exact diagonal plus full-return formula",
+    "the illustrative original coordinate-vertex scene cut has positive N-return moment",
+    "the original transpose G, not G, undoes the canonical born vector",
+    "actual retention corner has the exact minus-sine sign",
+    "actual unit retention derivative at the canonical G is minus p",
+    "retention corner and its derivative obey the unit-circle identity",
+    "full prepared target has its true positive field gain when old and scene signs are positive",
+    "normalized retention source is independent of all attenuation and old-overlap factors",
+    "field derivative factors through the genuine retention row for every scalar aggregation",
+    "true independent old preparation and corner source survives normalization",
+    "all other retention factors keep their actual normalized row",
+    "one zero retention factor leaves its own nonzero derivative when the others survive",
+    "two zero retention factors screen every rotor derivative and the field product",
+    "full row-sum norm controls the sum of squares in the attenuation bound",
+    "compiled finite-source margin retains the central normalization correction",
+    "certified price-reading error leaves a strict half-margin",
+    "positive-root monotonicity gives the used bound a less than four fifths",
+    "one minus the full comparison baseline equals a strictly positive square"
+  ],
+  "clock": {
+    "D": 55,
+    "N": 9,
+    "initial_compressed_moments": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "a"
+    ],
+    "stage_widths": [
+      1,
+      2,
+      4,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "word": "birth;birth;birth;G0;CX01;CX12;CX01;CX12;CX02"
+  },
+  "input_head": "567e3806c58861eeebadf57ae34e8c4b2142141a",
+  "macros": {
+    "minus": [
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ]
+    ],
+    "plus": [
+      [
+        "G",
+        0
+      ],
+      [
+        "G",
+        0
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ]
+    ],
+    "zero": [
+      [
+        "G",
+        0
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        1,
+        2
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        1,
+        2
+      ],
+      [
+        "CX",
+        0,
+        2
+      ]
+    ]
+  },
+  "not_claimed": [
+    "full XF compiled",
+    "unchanged bare-one-G clock price",
+    "equal G/CX inventory or physical native tariffs",
+    "a continuous primitive is admitted",
+    "full Cost-Info or GR closure"
+  ],
+  "number_of_checks": 58,
+  "same_layout": {
+    "cold_scalars": [
+      "1",
+      "a",
+      "p^3"
+    ],
+    "endpoints": [
+      "I",
+      "G",
+      "G^2"
+    ],
+    "native_calls_each": 6,
+    "wire_count": 3
+  },
+  "status": "PASS"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
