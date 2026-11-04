@@ -41,7 +41,8 @@ class VersionedOwnerTests(unittest.TestCase):
                "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean",
                "a4a390673994ecbe7529ebae636ddd3fd6e2db7d")
         self.assertEqual(c0.VERSIONED_OWNER_BLOBS[key], frozenset((key[2],
-            "b4ec8b60a52aaa1bb3e5b1fcc40b57ba1087d43b")))
+            "b4ec8b60a52aaa1bb3e5b1fcc40b57ba1087d43b",
+            "4ecbb048faabcdd4b2a5a2b50141e86663d731de")))
 
     def test_old_and_exact_active_owner_with_matching_inventory(self):
         historic = self.repo.view(self.historical_snapshot, expected_sha=self.historical_inventory_sha)
@@ -56,6 +57,27 @@ class VersionedOwnerTests(unittest.TestCase):
         self.assertEqual(view["scope"]["running_reconciliation_helper"],
                          "current_runtime_not_authenticated_against_selected_snapshot")
         self.assertEqual(view["units"][0]["semantic_acceptance"], "pending_independent_review")
+
+    def test_two_reviewed_active_versions_keep_separate_inventory_pins(self):
+        previous_ref = self.final
+        previous_digest = hashlib.sha256(
+            (self.repo.root / self.repo.inventory_path).read_bytes()).hexdigest()
+        self.repo.write(self.repo.module_path, "-- second reviewed proof-only fixture\n")
+        next_ref = self.repo.commit("second reviewed owner")
+        next_blob = self.repo.git("rev-parse", f"{next_ref}:{self.repo.module_path}")
+        key = (self.repo.module, self.repo.module_path, self.old)
+        with mock.patch.dict(c0.VERSIONED_OWNER_BLOBS,
+                             {key: frozenset((self.old, self.new, next_blob))}):
+            previous = self.repo.view(previous_ref, expected_sha=previous_digest)
+            self.assertEqual(previous["issues"], [])
+            self.assertEqual(previous["authority"]["source"]["owner_modules"][0]["active_blob"], self.new)
+            self.repo.inventory["snapshot_commit"] = next_ref
+            next_view = self.repo.view(self.repo.update_inventory(lambda inv: None))
+            self.assertEqual(next_view["issues"], [])
+            self.assertEqual(next_view["authority"]["source"]["owner_modules"][0]["active_blob"], next_blob)
+            self.assertEqual(next_view["scope"]["c0_acceptance_assessment"], "not_evaluated")
+            self.repo.write(self.repo.module_path, "-- unknown fourth version\n")
+            self.issue(self.repo.commit("unknown owner"), "source_and_primary", "pinned reviewed module")
 
     def test_third_owner_blob_fails_closed(self):
         self.repo.write(self.repo.module_path, "-- unreviewed third version\n")

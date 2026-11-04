@@ -693,7 +693,7 @@ BOOK01_PINS = KernelSectionPins(
 
 
 # Versioned proof-only owner: historical source pin is never replaced. The
-# active snapshot may use only the reviewed old blob or this exact refactor.
+# active snapshot may use only the reviewed historical and exact refactor blobs.
 # This verifies provenance, not semantic acceptance or execution of this
 # Python helper from the selected snapshot.
 VERSIONED_OWNER_BLOBS = {
@@ -701,7 +701,8 @@ VERSIONED_OWNER_BLOBS = {
      "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean",
      "a4a390673994ecbe7529ebae636ddd3fd6e2db7d"):
         frozenset(("a4a390673994ecbe7529ebae636ddd3fd6e2db7d",
-                   "b4ec8b60a52aaa1bb3e5b1fcc40b57ba1087d43b")),
+                   "b4ec8b60a52aaa1bb3e5b1fcc40b57ba1087d43b",
+                   "4ecbb048faabcdd4b2a5a2b50141e86663d731de")),
 }
 
 

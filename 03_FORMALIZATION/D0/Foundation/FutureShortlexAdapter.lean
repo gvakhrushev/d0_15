@@ -67,10 +67,9 @@ theorem codeStep_respects_profile (F : FutureExecution) (dec : List Symbol → F
     (a : F.Action) (c d : List Symbol)
     (h : F.profile (dec c) = F.profile (dec d)) :
     codeStep F dec enc a c = codeStep F dec enc a d := by
-  change canon F dec (enc (F.step a (dec c))) = canon F dec (enc (F.step a (dec d)))
-  apply (canon_eq_iff F dec _ _).2
-  rw [correct, correct]
-  exact F.profile_step_congr h a
+  change stateCode F dec enc (F.step a (dec c)) =
+    stateCode F dec enc (F.step a (dec d))
+  exact (stateCode_eq_iff F dec enc correct _ _).2 (F.profile_step_congr h a)
 
 /-- Every supplied native action commutes with its derived code transition. -/
 theorem codeStep_stateCode (F : FutureExecution) (dec : List Symbol → F.State)
