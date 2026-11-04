@@ -17627,3 +17627,11 @@ checks source bytes `[14274,14759)` against translation, supplied source proofs,
 indexed premises and the actual common readout. Additional native tests need
 separate coverage; the extra-bit control does not assert a physical test. This
 is not acceptance of the complete C0 partition.
+
+### Independent source review: raw-parameter dichotomy
+
+The [Book01 §01.1.6 dichotomy review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0116_dichotomy_review_2026-11-05/SUMMARY_RU.md)
+checks source bytes `[12874,12992)` against an uncoupled raw-state witness and
+its conditional code composition. Equality of profiles and represented codes
+does not itself establish raw nonexistence or physical recording. The control
+is abstract, and the complete original dichotomy and C0 acceptance remain open.
