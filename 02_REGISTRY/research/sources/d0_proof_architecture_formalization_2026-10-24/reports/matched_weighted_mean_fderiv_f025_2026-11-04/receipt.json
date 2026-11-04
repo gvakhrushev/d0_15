@@ -1,0 +1,235 @@
+{
+  "schema": "d0-matched-weighted-mean-fderiv-v1",
+  "snapshot_commit": "f02529016ae52ac6d0f28921a76275cd8ad6c6e4",
+  "worktree_dirty": false,
+  "lean_source_digest": "8160cbb6faccf39f5cf87252a2be17d9439c30bdf880cfe35c9f102a57779f34",
+  "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+  "narrow_jobs": 3007,
+  "full_jobs": 4814,
+  "full_warning_count": 1340,
+  "new_module_warnings": 0,
+  "independent_review": "Full Frechet derivative of mean and 1D specialization checked; physical source R1/R2 and admission remain open.",
+  "logs": {
+    "narrow": {
+      "sha256": "abf323ce3bf1c4b37ad9c77bad651a810450ed314434e50a8b0ae53fdc947461",
+      "gzip_sha256": "2ba28f9821664670d49b8fdeaea77b899d34add5e2bcd8e4794411d3207b5b25",
+      "build_receipt": {
+        "command": [
+          "lake",
+          "build",
+          "D0.Analysis.MatchedWeightedMeanFDeriv"
+        ],
+        "dependencies": {
+          "boundary": "point-in-time source checks; generated .lake/build caches (except Lean source), .lake/build.barrel[.trace] and widget/package-lock.json.hash not authenticated",
+          "checks": "git HEAD, exact tracked checkout bytes and modes against index blobs, index flags, symlink targets, untracked/ignored files outside listed caches, Lean sources inside build cache",
+          "manifest_sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+          "packages": [
+            {
+              "name": "Cli",
+              "revision": "6b907cf12b2e445ccb7c24bc208ef04a1f39e84c"
+            },
+            {
+              "name": "LeanSearchClient",
+              "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+            },
+            {
+              "name": "Qq",
+              "revision": "a6e6c34c4ef182f83b219a3a5a385f51f44bdc4c"
+            },
+            {
+              "name": "aesop",
+              "revision": "558915ae105bfd8074e22d597613d1961822adc2"
+            },
+            {
+              "name": "batteries",
+              "revision": "32dc18cde3684679f3c003de608743b57498c56f"
+            },
+            {
+              "name": "importGraph",
+              "revision": "515cf9d0c00ece5e661f6de4326a53dedc1e8ea1"
+            },
+            {
+              "name": "mathlib",
+              "revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7"
+            },
+            {
+              "name": "plausible",
+              "revision": "a456461b368b71d2accd95234832cd9c174b5437"
+            },
+            {
+              "name": "proofwidgets",
+              "revision": "a84b3e2475d5c5ab979567b1ad8aea21b764bcf8"
+            }
+          ],
+          "schema": "d0-lake-dependency-provenance-v1"
+        },
+        "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+        "environment_sha256": "ee0e17d653f3cfc96784755a17c136c4b26ac9864b67f7a3303e63043d528411",
+        "schema": "d0-lean-build-receipt-v1",
+        "source_sha256": "8160cbb6faccf39f5cf87252a2be17d9439c30bdf880cfe35c9f102a57779f34",
+        "target": "D0.Analysis.MatchedWeightedMeanFDeriv",
+        "toolchain": {
+          "boundary": "selected executable bytes and reported versions at two snapshots; dynamic libraries, kernel, external settings and generated caches are not authenticated",
+          "elan": {
+            "resolved_path": "/Users/grigorijvahrusev/.elan/bin/elan",
+            "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+          },
+          "lake_version": {
+            "command": [
+              "/Users/grigorijvahrusev/.elan/bin/lake",
+              "--version"
+            ],
+            "stderr": "",
+            "stdout": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)"
+          },
+          "launchers": {
+            "lake": {
+              "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lake",
+              "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+            },
+            "lean": {
+              "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lean",
+              "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+            }
+          },
+          "lean_version": {
+            "command": [
+              "/Users/grigorijvahrusev/.elan/bin/lake",
+              "env",
+              "lean",
+              "--version"
+            ],
+            "stderr": "",
+            "stdout": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)"
+          },
+          "resolution": "elan which",
+          "selected": {
+            "lake": {
+              "resolution_stderr": "",
+              "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lake",
+              "sha256": "9a89b2af1bddb7e6d5a8dbb2c715288bcb4f24b9129132640cee950734366bcb"
+            },
+            "lean": {
+              "resolution_stderr": "",
+              "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+              "sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997"
+            }
+          }
+        }
+      }
+    },
+    "final": {
+      "sha256": "196c021237066a531182f8014cdc2883adb288fc519ee9d79a07a0e02c50f55f",
+      "gzip_sha256": "c2cfb01a07b20097da661ca7d525f9e0fb6a451fe1de6a3882aa9c82618c1e4f",
+      "build_receipt": {
+        "command": [
+          "lake",
+          "build",
+          "D0.All"
+        ],
+        "dependencies": {
+          "boundary": "point-in-time source checks; generated .lake/build caches (except Lean source), .lake/build.barrel[.trace] and widget/package-lock.json.hash not authenticated",
+          "checks": "git HEAD, exact tracked checkout bytes and modes against index blobs, index flags, symlink targets, untracked/ignored files outside listed caches, Lean sources inside build cache",
+          "manifest_sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+          "packages": [
+            {
+              "name": "Cli",
+              "revision": "6b907cf12b2e445ccb7c24bc208ef04a1f39e84c"
+            },
+            {
+              "name": "LeanSearchClient",
+              "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+            },
+            {
+              "name": "Qq",
+              "revision": "a6e6c34c4ef182f83b219a3a5a385f51f44bdc4c"
+            },
+            {
+              "name": "aesop",
+              "revision": "558915ae105bfd8074e22d597613d1961822adc2"
+            },
+            {
+              "name": "batteries",
+              "revision": "32dc18cde3684679f3c003de608743b57498c56f"
+            },
+            {
+              "name": "importGraph",
+              "revision": "515cf9d0c00ece5e661f6de4326a53dedc1e8ea1"
+            },
+            {
+              "name": "mathlib",
+              "revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7"
+            },
+            {
+              "name": "plausible",
+              "revision": "a456461b368b71d2accd95234832cd9c174b5437"
+            },
+            {
+              "name": "proofwidgets",
+              "revision": "a84b3e2475d5c5ab979567b1ad8aea21b764bcf8"
+            }
+          ],
+          "schema": "d0-lake-dependency-provenance-v1"
+        },
+        "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+        "environment_sha256": "ee0e17d653f3cfc96784755a17c136c4b26ac9864b67f7a3303e63043d528411",
+        "schema": "d0-lean-build-receipt-v1",
+        "source_sha256": "8160cbb6faccf39f5cf87252a2be17d9439c30bdf880cfe35c9f102a57779f34",
+        "target": "D0.All",
+        "toolchain": {
+          "boundary": "selected executable bytes and reported versions at two snapshots; dynamic libraries, kernel, external settings and generated caches are not authenticated",
+          "elan": {
+            "resolved_path": "/Users/grigorijvahrusev/.elan/bin/elan",
+            "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+          },
+          "lake_version": {
+            "command": [
+              "/Users/grigorijvahrusev/.elan/bin/lake",
+              "--version"
+            ],
+            "stderr": "",
+            "stdout": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)"
+          },
+          "launchers": {
+            "lake": {
+              "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lake",
+              "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+            },
+            "lean": {
+              "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lean",
+              "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+            }
+          },
+          "lean_version": {
+            "command": [
+              "/Users/grigorijvahrusev/.elan/bin/lake",
+              "env",
+              "lean",
+              "--version"
+            ],
+            "stderr": "",
+            "stdout": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)"
+          },
+          "resolution": "elan which",
+          "selected": {
+            "lake": {
+              "resolution_stderr": "",
+              "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lake",
+              "sha256": "9a89b2af1bddb7e6d5a8dbb2c715288bcb4f24b9129132640cee950734366bcb"
+            },
+            "lean": {
+              "resolution_stderr": "",
+              "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+              "sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997"
+            }
+          }
+        }
+      }
+    },
+    "independent_axioms": {
+      "sha256": "c70578da296a175163d70ee57c72ab115778635b107bf889acb56cb9988a3e9c",
+      "gzip_sha256": "32fea1861f132ad04fabfdf5196ca7bf2f8f539a84d032c58566dd37eb064f89"
+    }
+  },
+  "GR_closed": false
+}

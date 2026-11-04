@@ -17481,3 +17481,13 @@ The merged CAR boost/static Julia modules and matched-mean theorem passed the
 same complete public Lean build. Independent source review, the bounded
 Python checks and their macOS warnings, and the Windows provenance test boundary
 are recorded in the [merged validation receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/merged_julia_boost_5096_2026-11-04/SUMMARY_RU.md).
+
+### Matched weighted mean: full Fréchet derivative
+
+`D0.Analysis.MatchedWeightedMeanFDeriv` proves the full continuous linear
+Fréchet derivative of the finite locally normalized mean at matched branch
+values on arbitrary real normed input and output spaces, and derives the
+one-dimensional statement as a corollary. The result supplies `dΦ`, not the
+original source identity, physical maps, heat/clock/work or admission. Its
+[independent review and cached build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_weighted_mean_fderiv_f025_2026-11-04/SUMMARY_RU.md)
+retain those application premises.
