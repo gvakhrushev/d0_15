@@ -20930,3 +20930,75 @@ validate_work, validate_agent_protocol and gr_assembly check pass; the
 assembly remains 98 results / 22 obligations / 5 discharged with
 scientific_promotion=false. No unchanged heavy mathematical or Lean suite
 was replayed. Only the existing primary artifact and task brief changed.
+
+## 4 November 2026 checkpoint: full-price preparation test and programme nuisance quotient
+
+Phase: native realization / final composition, existing Draft #334.
+Integration input: 991eb3140ec36cfaa2cd7c52311a39517becaa50; EZ consumes
+79a2a63f626fc81e2b5656134ac21503db08d664 and incoming RO1–RO9. The EY
+calculation originally consumed 89dcb2c853d1578819ec3ac2e72f1a20cbc5f004.
+Write paths remain this brief and the primary same-representative artifact.
+New sections: 7ey and 7ez. Consume EX's independent preparation theorem,
+the actual EV/EW record reader and CL whole-heat estimate, then the incoming
+matched-source/RP/GH/CT programme synthesis. No new task or geometry search.
+
+Exact parent substitution, EY: test whether EX's probability-effect
+fidelity can select the original comparator field source. The central
+native phase K*=S Zq preserves even the all-column joint probability
+effects and has zero independent relative-preparation rows, including
+heat. On the stated independent-full-flag chart its proper return loses
+the comparator source. Two literal equally extended AA/AB programmes
+have the same paid layout/inventory; the ENTIRE H+J price gap is >2^-27.
+The full baseline-projector heat residual remains with its actual gain
+and right-lift norm. This is not a comparison with a shorter unpadded
+word. A paid Golden coherence future distinguishes the phase change.
+The separate equal-86-call relocation fixture fails the original
+immediate-pre-sign mark; it is retained only as a hostile control.
+
+Exact parent substitution, EZ: evaluate the newer CT programme AFTER
+independent nuisance variation. On the enlarged domain with a free late
+encoder, keep the entire geometric excursion/echo and replace U(Y) by
+the fixed involution U0. Its whole ideal H+J is constant in the geometric
+mark. CT5 solves every independent current temporal row there for any Y;
+CT17–CT25 control real old/feedback/compiler residuals at the SAME gain.
+This gives a screened kappa section even at non-Einstein marks. It blocks
+promoting linked-chart recovery to universal nuisance-quotient soundness.
+CT's positive theorem on its explicitly linked U=U_h(Y) graph is preserved.
+
+The actual free/generated/guarded list is now explicit, including READY,
+P0/visibility, seed, preparation, record, sealed support, clock/cut and
+scene. Book03 already supplies stationarity. Remaining positive B/D
+application for a weaker geometry-only task: derive the relation binding
+the late source encoder to the original marked writer, or calculate an
+actual interaction that removes the screened section. A weighted transport of the same full
+price retains that zero; its full primitive/terminal diagram and all
+implementation-fibre weights cannot be replaced by scalar odds.
+
+Incoming RO supplies a DIFFERENT, explicitly retained complete-operation
+task. EZ6–EZ8 consume its native nonempty graph, FN quotient and derived
+normal reactions: the reduced full source is Gamma_target mu_L DI_h with
+positive actual factors, and its general Einstein–two-CAR soundness/recovery
+uses the owned physical map and norms. Our screened section is excluded
+by that actual operation guard, not a counterexample inside RO. Scoped D
+allows retained task data for one admitted family; universal selection of
+one scheduler is not added as a prerequisite. The RO scoped candidate
+therefore survives this review. Its independent scientific acceptance,
+broader selection and unchanged full terminals remain separate. RO's
+270 owned checks are consumed, not replayed or counted among our 148.
+
+Carrier/norm/source: original paid native words, proper physical cut,
+entire growing-clock H+J, the actual source gain, finite-comparison
+steps/basis constants and physical right lift. Arbitrary scene or
+rank/chronology controls remain outside the CT profile. Native legality
+does not itself establish physical X_N admission; no Info is assigned.
+
+Smallest decisive validation: 148 exact checks (35 full-price arithmetic,
+75 native phase/history checks INCLUDING their 40-check predecessor,
+38 full-clock marked-echo checks). Normal and optimized runs with
+warnings as errors have identical receipts. The new 23-dimensional
+clock witness retains all 9775 Hodge modes and shows equal complete
+price with distinct intermediate probabilities; it is not a GR compiler.
+Independent readers checked the full-source inference, domain and norm
+boundaries. Affected structural guards run once on final inputs.
+No claim/assembly promotion, Ready, retirement or merge. GR_closed=false;
+the objective remains active.
