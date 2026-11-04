@@ -15013,3 +15013,34 @@ receipt and retrieval report are under
 This formalizes and integrates the finite moving-cut price on its declared
 matrix chart. It does not select a physical price, admitted execution, or GR
 source. #334 remains unchanged and `GR_closed=false`.
+
+## Compiled declaration cross-check for the moving-projector source — 4 November 2026
+
+The declaration collector queried eight exact names from the compiled public
+import `D0.All` at clean snapshot `56f095dcdbb9eef66a002d612ed45727e58f481c`.
+It records each elaborated type, binders, normalized conclusion, source range,
+type dependencies, proof dependencies and axiom closure. The current Lean-source
+digest is `deb9e9f8d99b486bd1e1a36e2da8c8f79732ba4cc79635348ae617cfee6eb073`;
+the collector is pinned in the report
+[`moving_projector_declaration_inventory_2026-11-04_56f095dc`](sources/d0_proof_architecture_formalization_2026-10-24/reports/moving_projector_declaration_inventory_2026-11-04_56f095dc/SUMMARY_RU.md).
+
+The compiled fixed-parameter theorem ranges over any finite nonempty matrix
+carrier and differentiable curves `Δ`, `P`, and `U`. Its explicit assumptions
+include `β ≠ 0`, `Δ` Hermitian at the evaluation point, local projector
+idempotence and self-adjointness, and the determinant slit-plane chart. Its
+actual conclusion is the derivative of the existing finite Book03 price, with
+`K=[dP,P]`, `C=(I−P)UP`, and both sources using the same relative variations
+`dΔ−[K,Δ]` and `(I−P)(dU−[K,U])P`. The concrete proof dependencies include
+the shared thermal log-partition derivative, the feedback real-logdet
+derivative and the thermal-state trace normalization. The isometric-cut
+corollary derives the determinant chart from `0 ≤ z < 1` and `U†U=I`.
+
+The current-source variable-parameter theorem also varies `β` and `z`; its
+source adds the proved `β'` heat coefficient and `z'` resolvent coefficient.
+All eight queried declarations report the standard footprint
+`Classical.choice`, `Quot.sound`, and `propext`; none is presented as
+axiom-free. The three modules already have module-level `formal_support.csv`
+rows. This exact-name checkpoint does not add a claim-ID or assembly
+application binding, and therefore makes no semantic claim-level acceptance.
+The mathematical result remains finite matrix analysis; physical action
+selection and `GR_closed` remain open.

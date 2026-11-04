@@ -1,0 +1,83 @@
+{
+  "schema": "d0-lean-declaration-review-v1",
+  "repository": "gvakhrushev/d0_15",
+  "snapshot_commit": "56f095dcdbb9eef66a002d612ed45727e58f481c",
+  "worktree_dirty": false,
+  "public_import_root": "D0.All",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "command": "python3 tools/lean_declaration_inventory.py --name <8 exact names> --output /tmp/d0_moving_projector_current_declarations.json",
+  "lean_source_digest": "deb9e9f8d99b486bd1e1a36e2da8c8f79732ba4cc79635348ae617cfee6eb073",
+  "collector_sha256": "eaca24662aaac57575c8ca9d1071f8e3df07039f50b02d57fa945cf1fa6d430b",
+  "declaration_count": 8,
+  "declarations": [
+    "D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price",
+    "D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price_of_isometric_cut",
+    "D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price",
+    "D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price_of_isometric_cut",
+    "D0.Analysis.MovingProjectorBookPrice.matrixThermalState_eq_density",
+    "D0.Analysis.MovingProjectorBookPrice.matrix_book_thermal_source_real",
+    "D0.Analysis.MovingProjectorBookPrice.matrixThermalState_trace_normalization",
+    "D0.Analysis.MovingProjectorBookPrice.variable_parameter_trace_coefficients_real"
+  ],
+  "axiom_footprint": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "formal_support_rows": [
+    "D0.Analysis.MovingProjectorBookPrice",
+    "D0.Analysis.MovingProjectorBookPriceDensityBridge",
+    "D0.Analysis.MovingProjectorVariableParameters"
+  ],
+  "claim_id_crosswalk": "none emitted by exact-name inventory; no claim ID or assembly application is assigned by this checkpoint",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/claims.csv",
+      "git_blob": "7ce1cdb35b4a34b286fb84c69ba106dc884d51af",
+      "sha256": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
+      "bytes": 882327
+    },
+    {
+      "path": "02_REGISTRY/formal_support.csv",
+      "git_blob": "98fcf53c522f141eb1c4e4531d8c3c9fdb8eee8d",
+      "sha256": "f76f9fbf89fc1797d400640c88822bc8183bb95d3e79389f68fd458de02f7f42",
+      "bytes": 48061
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Analysis/MovingProjectorBookPrice.lean",
+      "git_blob": "56d19de0e808f7eedc9b9b3445cd539290a44100",
+      "sha256": "0c0e5c6044455b3da882866b82f501750a233fc3a0b644b56019de67120fc478",
+      "bytes": 4812
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Analysis/MovingProjectorBookPriceDensityBridge.lean",
+      "git_blob": "5c9d58e4486e82cfcd8bbae0db4da685f4a6f701",
+      "sha256": "ead88e80427095f02ce8e0773fcbcf2f6a99f743f79ba90e0c624c530d967058",
+      "bytes": 4131
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Analysis/MovingProjectorVariableParameters.lean",
+      "git_blob": "5af6f658d73e630170b6432b8b7a896c3232e7a4",
+      "sha256": "940087c0ed12f809b9998023959000d77025a50f2684960d14665ed84451708a",
+      "bytes": 12711
+    },
+    {
+      "path": "03_FORMALIZATION/D0/All.lean",
+      "git_blob": "220a3b9f555670c99346a649a5e2687890626bb2",
+      "sha256": "dcc219cb82fe9738302e419897ffc88957c0d25e9ab54c89ea247701a0194b00",
+      "bytes": 37537
+    },
+    {
+      "path": "tools/lean_declaration_inventory.py",
+      "git_blob": "81203409e666787a855bea1ef1b766df2c6d0281",
+      "sha256": "ea485fda5903de89389fa26584050c76e8fd303b6b434238dbada85e8c987f76",
+      "bytes": 30590
+    }
+  ],
+  "inventory_artifact": {
+    "path": "lean_declaration_inventory.json",
+    "bytes": 119438,
+    "sha256": "e590e46262c1e3507c3b7720a29dc39a06b3ba81ff855c29fda7aaca61881b39"
+  },
+  "scope": "Elaborated signatures, binders, weak-head-normalized conclusions, declaration source ranges, type dependencies, proof dependencies and axiom closure. The result is finite-matrix mathematics and does not establish an admitted physical execution or GR source selection."
+}
