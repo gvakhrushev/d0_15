@@ -17357,6 +17357,116 @@ the merged public build are recorded with exact source and cache boundaries in
 The Python-to-Lean correspondence is a checked manual transcription, not an
 extracted formal semantics of Python.
 
+
+### Original CAR generator and rational modular boost
+
+`D0.Geometry.OriginalBookBoost` uses the original creator reindexing to build
+the concrete generator `G=c₀c₁†+c₁c₀†` from roles A and D. It proves its
+eight-entry sparse form, the diagonal projector `G²` and `G³=G` over the
+integers and rationals. It constructs the exact modular-source matrix
+`U=I+G²/40+9G/40` and four complex operands with `ν=3/5` and phases
+`(i,i,-1,-i)` in the original bit order, placing `U` on the right only for
+mode 1 (role D). The coefficient identity records `r=1/9` as the half-angle
+parameter, while `tanh(theta)=9/41`; the separate uniform numerical fixture
+uses `theta=.08`. These parameter settings are not interchangeable.
+
+The exact finite Lean proof and axiom check passed with the existing scratch
+cache, without `native_decide`, `sorry` or heartbeat overrides; the checked
+theorems report `propext`, `Classical.choice`, and `Quot.sound`. Independent
+read-only review verified the entries, phases and ordering against the pinned
+source. The rational module alone did not establish its analytic exponential identity;
+the separate analytic module below proves that identity. Neither constructs the original 128
+Kraus words, prove their effect span or identify it with the abstract matrix
+pair. Physical admission, clock/work and owner #334 remain open, with
+`GR_closed=false`.
+
+`tools/check_original_boost_mapping.py` checks the two pinned source blob
+hashes before executing the uniform module and the modular generator/boost AST
+fragment. At modulus 1009 it compares all 256 entries of each of G and U and
+checks G³=G; this finite field check does not establish analytic exponentiation
+or the full 128-Kraus result. Like the creator check, it executes trusted
+pinned upstream code and requires NumPy, SciPy and SymPy.
+The modular fragment here receives the uniform creator matrices reduced modulo
+1009; their agreement with the modular creator block is separately checked by
+`check_original_creator_mapping.py`. The Python sparse reconstruction is not
+a machine extraction of the Lean matrix.
+
+
+### Windows GUID-volume provenance fallback
+
+`tools/lean_task_build.py` retains ordinary strict resolution and, only on
+Windows WinError 3, obtains existing physical paths using an open handle and
+the volume-GUID name. It checks physical directory identities and containment,
+normalizes mixed DOS/GUID names with repeated object identity checks, and
+keeps Git checkout, tracked target, source-byte, toolchain and before/after
+checks. Other errors fail closed. Eleven targeted Windows tests passed,
+including mixed namespaces, identity changes during normalization, a
+case-sensitive sibling, an external junction and an untracked symlink target.
+Independent review found no static containment bypass in the candidate.
+
+On the source-only clone of snapshot `24363981` on an additional volume, the
+candidate passed the full provenance preflight with all nine dependency pins;
+the handle fallback was invoked 21 times. It did not run Lean or produce a
+build receipt. This is point-in-time provenance, not atomic confinement against
+a concurrent adversary: handles close before subsequent stat/read/write. The
+installed Lean/Lake binaries were hashed, not independently built from source.
+On this Windows environment 16 of 19 existing helper tests passed after disabling
+Git autocrlf for the fixtures; the remaining three errors (OS symlink privilege
+and two POSIX executable stubs) also occurred on the unmodified base.
+
+
+### Analytic exponential at the original modular parameter
+
+`D0.Geometry.OriginalBookAnalyticBoost` proves in a complete real normed
+algebra that `g³=g` implies
+`exp(tg)=1+sinh(t)g+(cosh(t)-1)g²`. It derives this from the common ODE and
+the value at zero, rather than assuming the desired identity. Specializing to
+`theta=log(5/4)` proves `tanh(theta/2)=1/9`, `sinh(theta)=9/40` and
+`cosh(theta)=41/40`. The theorem applies to the actual real and complex
+creator-built matrices from the preceding module, establishes
+`exp(theta G)=I+G²/40+9G/40`, and matches the four analytic Julia operands
+with their polynomial counterparts while retaining the original order and
+phases. This is the modular special angle; it does not replace the uniform
+source's separate numerical fixture at `theta=.08`.
+
+Exact source bytes passed a narrow Lean check and independent read-only
+review; `#print axioms` on the general and specialized results reports only
+`propext`, `Classical.choice`, and `Quot.sound`. No `native_decide`, `sorry`
+or heartbeat override is used. This proves the mathematical exponential
+identity, not execution of SciPy. Julia square roots, the 128 Kraus operators,
+their effect span and its CAR block identification, physical admission,
+clock/work and owner #334 remain open; `GR_closed=false`. Full final
+integration on this module is still required.
+
+
+### Exact positive Julia roots for the original static branches
+
+`D0.Geometry.OriginalBookStaticJuliaRoots` proves that a Hermitian projector
+`P` has the principal positive CFC root
+`sqrt(I−9P/25)=I−P/5`, including strict positive definiteness of the defect.
+The proof constructs positivity and uses `CFC.sqrt_unique`; the desired root
+is not an assumption. Kernel finite checks establish the CAR relations for
+all four original creator matrices. The module derives both baseline roots
+for all four roles, and both live phased roots for A/B/C with `ν=3/5`,
+preserving the source's phases and ordering. The moved D live roots are not
+covered by this static result.
+
+The exact source passed narrow Lean checking and independent read-only review.
+Ten checked results use `propext`, `Classical.choice`, `Quot.sound`; no
+`native_decide`, `sorry` or heartbeat override is used.
+`tools/check_original_static_julia_roots.py` checks pinned source hashes then
+executes the original uniform module, comparing 14 roots with the proved
+formula in floating point; its wrong-sign control is rejected. This execution
+trusts the pinned upstream code and requires NumPy, SciPy and SymPy, and it is
+not a formal verification of the numerical root routine. The full moved D
+roots, 128 Kraus, future-effect span and identification with the abstract
+block algebra remain open; physical admission, clock/work and #334 are
+unchanged, and `GR_closed=false`. Final integration remains required.
+
+The numerical checker fails closed on nonfinite roots, eigenvalues and errors;
+three independent NaN injection controls passed after review identified the
+original comparison weakness.
+
 ### Matched finite weighted mean: derivative and negative control
 
 `D0.Analysis.MatchedWeightedMeanDerivative` formalizes the cancellation of

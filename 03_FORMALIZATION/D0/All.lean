@@ -517,7 +517,10 @@ import D0.Geometry.LucasVoronoiMarkovPartition
 import D0.Geometry.MovingCutQueryCancellation
 import D0.Geometry.NonvacuumBrinkmannStencil
 import D0.Geometry.OppositeCutPairing
+import D0.Geometry.OriginalBookAnalyticBoost
+import D0.Geometry.OriginalBookBoost
 import D0.Geometry.OriginalBookCreatorBridge
+import D0.Geometry.OriginalBookStaticJuliaRoots
 import D0.Geometry.PhaseReturnBranchCount
 import D0.Geometry.PhaseUnfoldingQuasicrystal
 import D0.Geometry.PhysicalCarrierInventory
