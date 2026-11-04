@@ -21424,3 +21424,71 @@ Three bounded reviews pin the final text. Affected structural checks run
 once on final inputs; no unchanged heavy geometry or Lean replay.
 No registry/assembly acceptance, Ready, retirement or merge. GR_closed=false;
 the original objective remains active.
+
+## 2026-11-05 checkpoint: quadratic virtual memory on the same paid history
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `2900145fe674629b61949587917a3a2ea5188797`.
+Result location: §7ff of
+`02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`.
+Write paths remain that artifact and this brief; no new task/branch,
+assembly acceptance, claims change, Ready/retirement or merge.
+
+Exact parent obligation: unchanged A–D contract C, weighted-memory and
+full Cost–Info valuation on the same admitted comparison history, after
+§7fe's actual prepared-price defect. Inputs: original Book03 memory sum
+and quadratic response, BOOK_SOURCE_BINDING, RAW/GROWING, SR/XF k=1,
+FN/CT, GENERAL/SOURCE/KAPPA, §7fd's nonzero off-shell source test.
+
+The new exact bridge uses one operator
+`M(u,v)=u A_scene tensor I+v I tensor T` on the actual original 33D
+scene/clock carrier. Its full quadratic response is
+`R=D b_L(u,v)+2(uv)^L Tr(A_scene^L) ReTr(T^L)`.
+All cross histories are retained. For the existing full comparison,
+its oriented half-log source has the actual positive gain
+`Gamma_Q=4(uv)^L Tr(A_scene^L) d_old L g_h/(ln(phi) R_actual)`.
+Rank three of the ORIGINAL adjacency gives `b_L>6(uv)^L Tr(A_scene^L)`;
+normalizer ratio <2 and all normalized compiler estimates are uniform
+over fixed positive u,v. No exact unit tariff or fitted coefficient is
+needed for this equation class, and no exponential tariff-ratio loss
+appears when the actual paid L grows.
+
+Carrier/norm/source convention: same literal paid XF word and RAW tuple,
+the full SC2 master with 425D modes and proper-cut J, separate actual
+central gains and fixed minus orientation for the half-log score,
+GENERAL material Jacobian/inverse and physical C^3 test lifts, complete
+owned FN/CT nuisance norm and one accumulating-history kappa completion.
+Each functional has its OWN constraint reaction. The shared task graph
+does not imply equality of those multipliers or of absolute prices.
+Source soundness, recovery and the nonzero §7fd witness transfer at
+this scope; no exact finite root or unrestricted scene/duration theorem
+is inferred.
+
+Smallest decisive boundary test: on the SAME operator and horizon L<N,
+`i0* T^r i0=0` for `0<|r|<=L`. The original prepared quadratic response
+is the positive diagonal sum and has EXACTLY ZERO current field source.
+The full trace has the nonzero normalized Einstein–two-CAR source.
+Thus the initial/terminal valuation map is a substantive source debt,
+not a normalization convention. This does not forbid a genuinely
+derived virtual future valuation or require a physical Gibbs sampler.
+
+Remaining application: derive the original virtual domain, actual
+complete weights and memory representation, and the absolute
+initial/terminal half-log valuation or a controlled full-source
+equivalence. Keep work/clock/preparation/record normalizers and all
+admitted extra rows. A common tariff scale alpha has the real row
+`-L/(alpha ln(phi))`; fixed positive weights cannot justify erasing it.
+No new Info definition or hidden all-input preparation is supplied.
+
+Validation: 42 exact symbolic conditions on the original 33-vertex
+adjacency and one literal Golden birth;G;G;G clock, in normal and optimized
+Python with warnings as errors; byte-identical observed receipts are
+embedded with input hashes and the complete script in §7ff. Three bounded
+reviews check the analytic source, price type and admission boundary.
+The finite fixture is not an emitted XF Einstein history or a PDE proof.
+Final affected integration guards run on the inserted result.
+
+Status: supporting conditional source bridge with an exact boundary
+test; C remains open and B/D gain no independent physical acceptance.
+`SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` remains unproposed;
+`scientific_promotion=false`, `GR_closed=false`; goal active.

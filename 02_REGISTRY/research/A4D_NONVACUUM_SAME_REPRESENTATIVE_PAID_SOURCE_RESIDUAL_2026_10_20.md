@@ -135718,6 +135718,686 @@ Observed normal and optimized receipt:
 }
 ```
 
+## 7ff. Same-history quadratic memory source: tariff-stable Einstein transport and the exact initial-cut boundary
+
+5 November 2026. Existing #334, native realization / final composition.
+Input 2900145fe674629b61949587917a3a2ea5188797. Consumer: the unchanged
+scoped A–D contract, specifically C's complete Cost–Info binding after
+the prepared-price defect of §7fe. This section constructs ONE forward
+virtual-memory operator from the existing XF k=1 paid history. Its full
+quadratic response has the same normalized source as the entire Book03
+master functional, including the owned nuisance reduction and recovery
+on their declared domain. Uniform positive scalar tariffs do not change
+that equation class. The SAME operator at the original initial cut has
+exactly zero field source at this depth. Thus a quadratic-response rule
+alone cannot supply the missing initial/terminal valuation map.
+
+This is a conditional source-transport theorem, not full native-price
+selection. No new physical inverse, sampler, Gibbs preparation, Info
+assignment or Einstein residual is inserted. Contract C is NOT discharged;
+`SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` remains unproposed and `GR_closed=false`.
+
+### 7ff.A. One actual tuple and one forward-memory operator
+
+Use precisely §7fd's nonempty regular Cauchy/material-clock family,
+actual XF k=1 comparison and complete RAW/GROWING tuple. Let
+K=direct_sum H_j, D=dim K and T be its full unitary growing clock.
+Its youngest birth-detail loop has length L>=2; the original initial
+input cannot return before N>L actual stages. Retain the entire prefix,
+birth complements, both flag sectors, all marked readers, failure labels
+and the original initial cut. For its actual current compiled body V,
+SR/XF prove
+
+    Tr T^r=0 (0<|r|<L),
+    Tr T^L=L Tr(P_latest V_actual).                       (VQ1)
+
+The negative-r identity follows by adjoint. It does not require a
+physically executed inverse. Let A be the ORIGINAL unweighted 33-by-33
+adjacency of K(9,11,13), with all 718 directed edges. This is distinct
+from the normalized adjacency in the Hodge differential. Put
+
+    c_m=Tr A^m, c_0=33, c_2=718, c_3=7722,
+    M(u,v)=u A tensor I_K + v I_33 tensor T, u,v>0.       (VQ2)
+
+Here u and v are fixed scalar weights for the two letter classes in
+the declared comparison. They are NOT selected physical tariffs. If
+the original complete net costs are uniform C_scene,C_clock, the
+corresponding weights would be phi^(-C_scene),phi^(-C_clock). A field-
+dependent or independently varied cost is not covered by fixing u,v.
+
+There is an explicit finite formal-memory representation: each scene
+edge i->j carries E_ji tensor I, and the forward clock letter at vertex i
+carries E_ii tensor T. Sum ALL length-L interleavings with their ordered
+products and the stated weights. Its represented amplitude is M(u,v)^L.
+The formal labels and native tape remain available for future tests.
+This proves a matrix path representation; it does not prove that these
+added virtual clock letters, weights and valuation are the original
+Book03 Gamma_D. T is derived clock incidence on the actual tuple, not
+an additional physical gate executing the whole history on fresh WORK.
+
+Use the complete QUADRATIC response, not a scalar linear-trace amplitude:
+
+    R=Tr[(M^L)* M^L]=||M^L||_HS^2,
+    S_Q=-(2 ell)^(-1) log R, ell=log phi.                 (VQ3)
+
+All coherent cross-history pairs are retained before taking this trace.
+The adjoint is the response pairing, not a second virtual instruction.
+R is an unnormalized positive response, not automatically a probability
+or the original full physical price. The factor one-half is the owned
+amplitude-to-quadratic-log convention of BOOK_SOURCE_BINDING, not a
+choice of field coupling. That owner expressly distinguishes this
+log-normalizer source from the differential of an expected net price.
+For u=v=p=phi^-1, VQ3 is exactly
+S_Q=L-log(||M(1,1)^L||_HS^2)/(2 ell); the factor p is counted once.
+
+### 7ff.B. Exact full response, positive gain and uniform tariff bounds
+
+The two tensor summands commute, A=A*, and T*T=I. Expanding both powers
+in VQ3 gives the full sum
+
+    R=sum_(i,j=0)^L binom(L,i)binom(L,j)
+      u^(2L-i-j)v^(i+j)c_(2L-i-j) Tr T^(j-i).
+
+By VQ1 all off-diagonal pairs vanish except (0,L) and (L,0). Therefore
+for EVERY actual compiled body on this layout,
+
+    b=sum_j binom(L,j)^2 u^(2L-2j)v^(2j)c_(2L-2j),
+    k=(uv)^L c_L,
+    R=D b+2 k ReTr T^L
+     =D b+2 k L ReTr(P_latest V_actual).                 (VQ4)
+
+The image of A consists of vectors constant on each of the three zones,
+so A has rank three and thirty zero modes. Cauchy–Schwarz on its three
+nonzero real eigenvalues gives c_(2L)>=c_L^2/3. Closed walks of lengths
+two and three exist; extending a closed walk by a backtrack gives
+c_(m+2)>=20 c_m. Hence c_L>=718 for every L>=2. Keeping the j=0,L terms
+of b and using AM–GM proves
+
+    b>=u^(2L)c_(2L)+33v^(2L)
+      >=2 sqrt(33 c_(2L))(uv)^L
+      >=2 sqrt(11) k >6k.
+    R_min=D(b-2k)>4Dk>0,
+    R_max=D(b+2k), R_max/R_min<2.                         (VQ5)
+
+These bounds are UNIFORM over all positive u,v and L>=2. Independently,
+the thirty zero modes contribute 30D v^(2L)>0 to R. No positivity of
+individual coherent memory entries is assumed. L=1 is excluded because
+c_1=0 and the proposed field gain then vanishes.
+
+On the matched smooth XF target, with the unchanged generated bank,
+
+    Tr(P_latest V_target)
+       =d_old[dim B+Tr Z_final-2+4Q(Y)],
+    Q=a_n bar r_h, DQ=g_h DI_h+e_h,
+    g_h=a_n epsilon_h r_f>0.
+
+All READY factors remain. Thus, at fixed layout and fixed tariffs,
+
+    D R_target=8 k d_old L DQ,
+    Gamma_Q,actual=4 k d_old L g_h/(ell R_actual)>0,
+    -D S_Q,target/Gamma_Q,target=DQ/g_h.                 (VQ6)
+
+The sign is fixed. Every finite comparison uses the ACTUAL compiled
+central R and holds its gain constant. This is a covector divided by
+its gain, never differentiation of S_Q/Gamma_Q. Neither equality of
+absolute prices nor an exact native finite stationary point follows.
+
+### 7ff.C. Actual native contrasts and the common physical source norm
+
+Let delta bound the COMPLETE current-body endpoint error, including
+all required marked occurrences. With q bank bits plus the actual flag
+and last spectator, the owned dimensions are
+
+    r_latest=d_old 2^(q+1),
+    d_final=d_old 2^(q+2), D>=L d_final=2L r_latest.
+
+VQ4 and VQ5 give the actual-to-target bounds
+
+    |R_actual-R_target|<=2 k L r_latest delta,
+    |R_actual/R_target-1|<delta/4,
+    Gamma_Q,target/Gamma_Q,actual=R_actual/R_target.      (VQ7)
+
+For the symmetric finite contrast delta_t f=[f(+t)-f(-t)]/(2t), the
+mean-value inequality for log, followed by VQ5, gives
+
+    |delta_t S_Q,actual-delta_t S_Q,target|/Gamma_Q,actual
+       <=[r_latest/(4d_old)](R_center/R_min)
+                                      delta/(g_h |t|)
+       <2^q delta/(g_h |t|).                            (VQ8)
+
+For target Q first/second derivative bounds A1,A2 on the actual test
+chart, the normalized second derivative is bounded by a fixed constant
+times (A2+A1^2)/g_h: the nonlinear coefficient obeys
+8k d_old L/R_min<2d_old L/D<=2^(-q-1)<1. The target finite-difference
+error is consequently O_h(|t|). The occurrence, marked-decoder, material
+inverse, finite basis and physical lift constants are retained before
+precision selection. The central normalization ratio in VQ7 adds at
+most delta A1/(4g_h) to the normalized target first source. Precisely,
+choose the existing common CT refinement so these constants times
+2^q delta/(g_h|t|), delta A1/g_h and O_h(|t|) tend to zero.
+The owned SR §7 fixes q>=3, the retained prefix and chart constants
+BEFORE r. Its delta_r=exp(-r), |t_r|=exp(-r/2), polynomial paid L_r
+and polynomial all-occurrence count satisfy these requirements; then
+the actual retention length K is chosen and the outer h-diagonal taken.
+Helpers already belong to this fixed arena. A physically executed
+precision-growing arena is an extension and must instead verify the
+displayed budgets with its actual q(r) and constants; no uniform
+dimension-free compiler or free classical computation is asserted.
+No exponential factor (u/v)^L survives this normalized estimate.
+This is the same native comparison family; it does not differentiate
+a discrete word index or pretend that each finite source is exactly zero.
+
+The master price B is still the ENTIRE original functional SC2,
+with all 425D Hodge modes, actual Z_heat, proper-cut determinant J,
+oldRIGHT/preparation and true cold-return contributions. Its actual gain
+and the exact ratio of the two gains are
+
+    Gamma_B=16 d_old L g_h a_L/(beta Z_heat),
+    Gamma_B/Gamma_Q
+       =4 ell a_L R_actual/(beta Z_heat k)>0.            (VQ9)
+
+The 33D virtual memory response is not equated to the 425D Hodge
+operator or to the initial density. Both covectors are pulled back
+through the SAME actual word/tuple map. Apply GENERAL's full material
+Jacobian and inverse, decoded-field interpolation and C^3 test lifts
+to both. Writing eta_B and eta_Q for their achieved FULL normalized
+errors on the owned comparison domain, the triangle inequality gives
+
+    || D B/Gamma_B - (-D S_Q/Gamma_Q) || <=eta_B+eta_Q,
+    both oriented sources -> D S_ES.                    (VQ10)
+
+For actual words D denotes the owned finite-contrast source followed
+by kappa completion. eta_B retains all heat-tail, J and old-row bounds;
+eta_Q retains SOURCE, compiler, lift and geometric approximation errors.
+The two-CAR Einstein action and coupling are exactly GENERAL's. Its
+soundness and reverse recovery, including the nonempty §7fd Cauchy/
+clock class and one accumulating CT paid history, therefore transfer
+to this oriented virtual source on the SAME declared domain. This
+does not transport EO roots or identify finite and completed zero sets.
+
+The §7fd.SC12–13 off-shell test lies inside this family and pairs
+D S_ES with -sigma_*, sigma_*>0. Choosing eta_Q below sigma_*/2 gives
+(-D S_Q/Gamma_Q)[V_test]<=-sigma_*/2. Thus the reduced source is not
+identically zero or screened by solved implementation rows. No claim
+against arbitrarily unbounded nuisance multipliers is inferred.
+
+### 7ff.D. Nuisance equations: what this map actually retains
+
+Use the same faithful-operation graph E(w)=M_c(Y,n). For each scalar
+functional f separately, its constrained reaction and reduced rows are
+
+    Lambda_f=-D_E f,
+    E_Y,f=(D_Y M_c)^*D_E f,
+    E_n,f=D_n f+(D_n M_c)^*D_E f.                        (VQ11)
+
+The two prices generally have DIFFERENT Lambda_f. FN's stage conjugacy
+T'=V_gauge T V_gauge* conjugates the entire M by I_scene tensor V_gauge,
+so R and S_Q are exactly invariant on the faithful implementation fibre.
+Field-dependent conjugacies retain their chain-rule terms, which cancel
+by this exact invariance. Generated state and adjoint equations are
+retained; a nonzero raw normal is balanced by its actual constraint
+reaction and is not declared a free Euler zero.
+
+| Operand | Status and equation in this application |
+|---|---|
+| Current field, links, two CAR fields and required logical controls | VQ6–10, with the full material map and test norm. |
+| Canonical newborn WORK, READY, reference and flag generated by XF | The existing task graph and its causal adjoints; no extra independent blank is introduced. |
+| Genuine old preparation, old gates and cut on an old-spectator body | VQ4 is exactly independent of these on the fixed layout; the master retains and controls their full old-row norm. This is a property of the trace valuation, not a proof that the original price lacks such rows. |
+| Current reader of independently varying old data | Retain (D_n M_c)^*D_E f; the preceding exact-zero assertion does not apply. |
+| Scene, beta/z, common layout and specified comparison request | Fixed primitive/request data in the owned theorem. An admitted change requires its genuine equation or finite price comparison; this section supplies no free-scene or variable-duration stationarity theorem. |
+| Records, later tests and physical readbacks | Retained on the actual tape; physically appended readers enter the prefix before the next CT bounds are chosen. There is no unpriced terminal STORE. |
+| Uniform tariffs u,v | Fixed only for VQ6–10. If they are admitted controls, retain their derivatives; their rows are not neutral. |
+
+For example, varying a common scalar weight alpha gives exactly
+S_Q(alpha u,alpha v)=S_Q(u,v)-L log_phi alpha, with derivative
+-L/(alpha ell). Uniform positive tariffs remove the need to tune their
+NUMERICAL values to obtain this equation class. They do not justify
+freezing independently selectable costs or field-dependent Info.
+
+### 7ff.E. The exact same-operator initial-cut test
+
+Let i_0 inject the original initial H_0 into K. For r<N, before the
+first possible initial-stage return, causal propagation gives
+T^r i_0=i_r A_r, with the actual isometric prefix A_r=F_(r-1)...F_0. Since
+different stage summands are orthogonal and L<N,
+
+    i_0* T^r i_0=0 for 0<|r|<=L.                        (VQ12)
+
+For the original normalized initial density rho_0 and scene density xi,
+apply the SAME complete amplitude, keeping all cross terms:
+
+    R_prepared=Tr[(xi tensor i_0 rho_0 i_0*) (M^L)* M^L]
+      =sum_j binom(L,j)^2 u^(2L-2j)v^(2j)
+                                      Tr[xi A^(2L-2j)]
+      >=v^(2L)>0.                                      (VQ13)
+
+VQ12 kills every unequal i,j term as an OPERATOR. Thus VQ13 also holds
+for correlated scene/initial states with xi their scene reduction.
+At fixed scene, normalized initial input, layout and scalar tariffs,
+the prepared response is exactly independent of EVERY current native
+gate and field. Its half-log field source and literal native field
+contrasts are zero. Independent scene or weight variations still have
+their real derivatives; no claim that all sources vanish is made.
+
+In contrast, VQ10 has the strictly nonzero normalized off-shell witness
+above on this same history. The full trace sees youngest-detail cycles
+that the stage-zero input cannot reach and return from within L steps.
+Therefore identifying these two valuation boundaries without additional
+structure fails the required source comparison, even after allowing
+arbitrary fixed positive tariffs. This is not a no-go for all virtual
+future valuations, deeper horizons, or a genuinely derived different
+terminal effect. Nor does it demand a physical Gibbs preparation merely
+to evaluate a trace. It localizes the missing map to the actual domain
+of virtual histories and its initial/terminal absolute valuation.
+
+### 7ff.F. Exact parent substitution and remaining price application
+
+The result removes the positive-response/type obstruction for this ONE
+forward operator, proves a nonzero reduced source on the owned graph,
+and gives common-history normalized transport and reverse recovery.
+It also removes exact unit tariff as an equation-class prerequisite.
+The original 718-edge unit-Cost/zero-Info owner covers scene walks;
+it does not already price added virtual clock letters or select their
+half-log aggregate. T itself contains native Golden amplitudes: a scalar
+factor attached to its letter must come from the actual net price and
+cannot be charged a second time by notation.
+
+The remaining contract-C application is ONE weighted-memory and
+valuation binding: identify the original virtual history domain and its
+complete represented memory/weights with this same tuple (or prove
+source-equivalent transport), then derive the actual initial/terminal
+absolute valuation and complete Cost–Info first source, including its
+normalizer, work, clock, preparation and record reactions. The exact
+test is VQ10 in the full retained norm, including every newly admitted
+row. Neither matching normalized output probabilities nor assigning
+Info to force VQ3 proves that application. VQ13 forbids silently using
+the original prepared response as the required full trace at depth L.
+
+The original Book03 amplitude -> quadratic response -> normalized
+readout is consumed at its stated types. It does not alone choose a
+log-normalizer as the variational full price rather than an expected
+net price; BOOK_SOURCE_BINDING already proves their derivative
+difference. No unique microscopic action or universal scheduler is
+demanded: a faithful full-source equivalence suffices if proved.
+
+The written A–D contract is unchanged. This section supplies a concrete
+conditional bridge and a decisive boundary test, not admission of a
+new native price or independent acceptance of B/C/D. Global extension,
+broader matter and Lean are not substituted for this remaining physical
+application. No new research execution, root search or claims promotion
+is opened. Goal active; `GR_closed=false`.
+
+
+### 7ff.G. Exact bounded check and reviewed input snapshot
+
+The 42-condition script below uses exact arithmetic in Q(a), a>0,
+a^4+a^2=1, and independent symbolic positive tariffs u,v. It constructs
+one literal birth;G;G;G clock with actual stage widths 1,2,2,2, dimension
+7, shortest detail return L=3 and initial return N=4. It retains the
+original full 33-by-33 adjacency and all 718 directed edges, expands
+every quadratic history pair, and checks the full-trace and original-cut
+identities. The target coefficient and gains are algebra checks of XF's
+owned smooth target, not a claim that this small fixture emits that
+Einstein comparison. The all-L rank-three proof is VQ5; no finite list
+of tariffs is used to infer its uniformity.
+
+The same script also checks the nonzero independent common-tariff row,
+the rank-three sum-of-squares and AM–GM identities, the uniform extrema
+and compiler-ratio bounds. Normal and optimized Python 3.12.14 / SymPy
+1.14.0 runs, with warnings as errors, passed with byte-identical receipts.
+Checks remain active under optimization. No expected repository evidence
+was rewritten, and no unchanged geometry/root/Lean suite was rerun.
+
+Three bounded reviews pin the final 309-line analytic text. The source
+review checks actual dimension and normalization constants, fixed-arena
+compiler scheduling, full gains and recovery scope. The price review
+checks the amplitude/quadratic/half-log distinction and missing absolute
+valuation. The admission review checks every nuisance category, retained
+records and the original-cut control. Its wording correction makes clear
+that N is the first POSSIBLE initial return, not a claimed nonzero return
+coefficient for every body. These are scoped reviews, not independent
+physical assembly acceptance.
+
+Extract the Python block below into scratch check_virtual_source.py:
+
+```text
+python3 -Werror /absolute/scratch/check_virtual_source.py
+python3 -O -Werror /absolute/scratch/check_virtual_source.py
+```
+
+It prints observed JSON and writes no repository files. Owner hashes
+refer to the pre-insertion commit. The two-file insertion preserves every
+pre-existing byte and the original A–D acceptance boundary.
+
+```json
+{
+  "GR_closed": false,
+  "checker_sha256": "9d7e7cdd2e6bd02a070a4327e556b513618f51c756fd46fa1b572b4a883968fe",
+  "exit_codes": [
+    0,
+    0
+  ],
+  "input_head": "2900145fe674629b61949587917a3a2ea5188797",
+  "new_exact_checks": 42,
+  "normal_and_optimized_byte_identical": true,
+  "normal_optimized_receipt_sha256": "9c475bad9680141457ca6c4a519e02716ea1072aac3486cd0c4e6929145c3881",
+  "not_claimed": [
+    "actual virtual clock tariff or complete path domain selected",
+    "full Cost-Info aggregation or absolute trace valuation selected",
+    "a free tariff, scene or duration equation has been erased",
+    "unchanged scoped A-D terminal",
+    "new exact finite native roots",
+    "new PDE integration",
+    "independent assembly acceptance"
+  ],
+  "owner_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "7e7e49e1fd29bda5c0c3f32945a7c4f7fd0ad94915b00e406763c3cc4a2c0d14",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "ca97b9e2111d242e0f1f95a04ea85acbcd70e59075fb769f76cbb9dcf556c7d4",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+  },
+  "run_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scientific_promotion": false,
+  "scope": "Same-XF quadratic forward-memory response, uniform positive tariffs, source transport and exact original-cut boundary",
+  "scratch_proof_sha256": {
+    "admission-final.md": "aa5543db48b65f81ee54027328e0bec20d22a2bb8f555c0dd44715b682079932",
+    "brief.md": "d8edb036028dbb10f9289fc8a11d873a405bf3805e651665390c4366674c7846",
+    "price-final.md": "d4b49b033d497c5db31b540f82d516188d608f5d17998a503fa77dda7ca73b8f",
+    "price.md": "59356a695a83bace30e22f7c38137f3c7ed0728aeda2e1de0e9c7563c6b1f0a2",
+    "proof.md": "c98d86b23574da3c8989d0ac9d0bc5e9036b200785d96cdac957eaee68fad252",
+    "source-final.md": "62a4d346d4e14c8648003b2709a3f6bca93db075667e918acc5048581df3fae7",
+    "source.md": "1a2f9ca7392aaaec425623153ebe2c49ee9d1c99b51c4bb4f61120106ebe1cd8",
+    "virtual-clock-audit.md": "e2607a25a66b2e9d1374cb550dde330eb257ee5b00d0e5460787390d68663dce"
+  }
+}
+```
+
+#### 7ff.G1. check_virtual_source.py
+
+```python
+#!/usr/bin/env python3
+"""Exact forward-memory quadratic source identities on the original scene/clock.
+This constructs no native probability law or new physical price.
+"""
+import hashlib
+import json
+from math import comb
+from pathlib import Path
+import sympy as s
+checks=[]
+def need(ok,label):
+    if not bool(ok): raise ArithmeticError(label)
+    checks.append(label)
+a=s.symbols('a',positive=True); p=a*a; poly=a**4+a**2-1
+def red(x):
+    num,den=s.fraction(s.cancel(x)); num=s.rem(num,poly,a); den=s.rem(den,poly,a)
+    return s.rem(s.expand(num*s.invert(den,poly,a)),poly,a)
+def zero(x):
+    return all(red(v)==0 for v in x) if isinstance(x,s.MatrixBase) else red(x)==0
+v=s.Matrix([a,p]); G=s.Matrix([[a,-p],[p,a]])
+# Literal birth; G; G; G. No inverse is executed.
+D=7; L=3; N=4
+R=s.zeros(D,2); R[0:1,:]=v.T; R[1:3,:]=s.eye(2)-v*v.T
+T=s.zeros(D); T[1:3,0:1]=v; T[3:5,1:3]=G; T[5:7,3:5]=G; T[:,5:7]+=R*G
+need(zero(T.T*T-s.eye(D)),'literal complete growing clock is unitary')
+powers=[s.eye(D)]
+for j in range(1,2*L+1): powers.append((powers[-1]*T).applyfunc(red))
+need(all(zero(s.trace(powers[j])) for j in range(1,L)),
+     'actual shortest newborn return age is at least L')
+need(not zero(s.trace(powers[L])),'shortest newborn trace is nonzero in literal fixture')
+need(all(zero(powers[j][0,0]) for j in range(1,L+1)),
+     'initial prepared cut has no return at depths one through L')
+need(not zero(powers[N][0,0]),'actual initial return first occurs later at N')
+# Original 33 vertices and all 718 directed edges, no quotient substituted.
+zones=[0]*9+[1]*11+[2]*13
+A=s.Matrix(33,33,lambda i,j:int(zones[i]!=zones[j]))
+need(sum(A)==718,'original scene retains all 718 directed edges')
+Ap=[s.eye(33)]
+for j in range(1,2*L+1): Ap.append(Ap[-1]*A)
+c=[s.trace(x) for x in Ap]
+need(c[2]==718 and c[3]==7722,'original two and three step closed trace counts')
+need(A.rank()==3,'original scene has thirty zero modes')
+# Independent binomial expansion of the actual Hilbert-Schmidt quadratic form.
+full=0; initial=0; surviving=[]
+for i in range(L+1):
+    for j in range(L+1):
+        K=(powers[i].T*powers[j]).applyfunc(red)
+        tr=red(s.trace(K)); prepared=red(K[0,0]); coeff=comb(L,i)*comb(L,j)
+        full+=coeff*c[2*L-i-j]*tr
+        # Scene preparation is the actual fixed coordinate vertex 0.
+        initial+=coeff*Ap[2*L-i-j][0,0]*prepared
+        if i!=j and tr!=0: surviving.append((i,j))
+need(surviving==[(0,L),(L,0)],'all mixed history pairs retained, only opposite full wraps survive')
+b=sum(comb(L,j)**2*c[2*L-2*j] for j in range(L+1))
+expected=D*b+2*c[L]*s.trace(powers[L])
+need(zero(full-expected),'full quadratic forward-memory trace identity')
+expected_initial=sum(comb(L,j)**2*Ap[2*L-2*j][0,0] for j in range(L+1))
+need(zero(initial-expected_initial),'same initial-cut quadratic response loses every field cross term')
+need(expected_initial>0,'prepared-cut response remains positive despite source absence')
+# Fixed-layout target trace from the full original XF comparison.
+Q,dold,g,ell,beta,Zheat,heatcoef=s.symbols('Q dold g ell beta Zheat heatcoef',positive=True)
+const=s.symbols('const',real=True)
+full_target=D*b+2*c[L]*dold*L*(const+4*Q)
+need(s.diff(full_target,Q)==8*c[L]*dold*L,'full flag report supplies correct quadratic trace coefficient')
+S=-s.log(full_target)/(2*ell)
+gamma=4*c[L]*dold*L*g/(ell*full_target)
+need(s.simplify(-s.diff(S,Q)*g/gamma)==1,'half-log price has the positive oriented report gain')
+gamma_heat=16*dold*g*L*heatcoef/(beta*Zheat)
+need(s.simplify(gamma_heat/gamma-4*ell*heatcoef*full_target/(beta*Zheat*c[L]))==0,
+     'master and virtual gains compared with actual normalizers')
+# Conservative all-L analytic bounds use only original dimensions and c_L>=718.
+x=s.symbols('x',real=True)
+need(s.expand(x*x/s.Integer(33)+33-2*x-(x-33)**2/s.Integer(33))==0,
+     'full quadratic positivity bound retains all thirty-three scene modes')
+need(s.Rational(33*718,(718-33)**2)<s.Rational(1,19),
+     'actual-to-target normalizer error is below delta over nineteen')
+need((s.Rational(718**2,33)+33+2*718)/(s.Rational(718**2,33)+33-2*718)<2,
+     'uniform extrema normalizer ratio below two at conservative threshold')
+need(s.Rational(33,718)<1,'L at least two excludes the zero c1 source')
+
+# Symbolic fixed-tariff refinement on this same literal clock.
+u, v, alpha = s.symbols('u v alpha', positive=True)
+
+def polynomial_zero(expr):
+    # u,v are genuine independent symbolic positive tariffs; only the
+    # original Golden coefficient field is reduced by the owned polynomial.
+    return all(red(t) == 0 for t in s.Poly(s.expand(expr), u, v).coeffs())
+
+full, prepared, survivors = 0, 0, []
+for i in range(L + 1):
+    for j in range(L + 1):
+        clock_pair = (powers[i].T * powers[j]).applyfunc(red)
+        tr = red(s.trace(clock_pair))
+        cut = red(clock_pair[0, 0])
+        weight = comb(L, i) * comb(L, j) * u**(2*L-i-j) * v**(i+j)
+        full += weight * c[2*L-i-j] * tr
+        prepared += weight * Ap[2*L-i-j][0, 0] * cut
+        if i != j and tr != 0:
+            survivors.append((i, j))
+
+b = sum(comb(L, j)**2 * u**(2*L-2*j) * v**(2*j) * c[2*L-2*j]
+        for j in range(L + 1))
+k = (u*v)**L * c[L]
+full_expected = D*b + 2*k*red(s.trace(powers[L]))
+prepared_expected = sum(comb(L, j)**2 * u**(2*L-2*j) * v**(2*j)
+                        * Ap[2*L-2*j][0, 0] for j in range(L + 1))
+need(survivors == [(0, L), (L, 0)],
+     'positive tariffs retain all cross terms and the same two full-trace windings')
+need(polynomial_zero(full-full_expected),
+     'exact symbolic weighted full quadratic expansion equals D b plus 2 k ReTr T^L')
+need(polynomial_zero(prepared-prepared_expected),
+     'exact symbolic weighted original prepared cut has only diagonal pairs')
+need(all(t >= 0 for t in s.Poly(prepared_expected-v**(2*L), u, v).coeffs()),
+     'weighted prepared response is at least v^(2L) and has no current clock-body source')
+need(polynomial_zero(full.subs(v, u)-u**(2*L)*full.subs({u: 1, v: 1})),
+     'common positive tariff occurs once at amplitude level and twice in response')
+need(polynomial_zero(u*s.diff(full, u)+v*s.diff(full, v)-2*L*full),
+     'full response is homogeneous of degree 2L in the two tariffs')
+need(polynomial_zero(u*s.diff(prepared, u)+v*s.diff(prepared, v)-2*L*prepared),
+     'prepared response has the same common tariff degree despite zero field source')
+
+Q, dold, gain, ell, beta, Zheat, heatcoef = s.symbols(
+    'Q dold gain ell beta Zheat heatcoef', positive=True)
+const = s.symbols('const', real=True)
+target = D*b + 2*k*dold*L*(const+4*Q)
+S = -s.log(target)/(2*ell)
+Gamma = 4*k*dold*L*gain/(ell*target)
+need(s.simplify(s.diff(target, Q)-8*k*dold*L) == 0,
+     'weighted complete flag coefficient is exactly 8 k d_old L')
+need(s.simplify(-s.diff(S, Q)*gain/Gamma-1) == 0,
+     'weighted half-log source has exact fixed minus orientation and actual target gain')
+Gamma_heat = 16*dold*L*gain*heatcoef/(beta*Zheat)
+need(s.simplify(Gamma_heat/Gamma-4*ell*heatcoef*target/(beta*Zheat*k)) == 0,
+     'master-to-weighted gain retains both actual positive normalizers')
+
+r, l = s.symbols('r l', positive=True)
+scaled_score = -s.log(alpha**(2*L)*r)/(2*ell)
+need(s.simplify(s.diff(scaled_score, alpha)+L/(ell*alpha)) == 0,
+     'independent common tariff scale has genuine nonzero alpha source -L/(alpha ell)')
+need(s.simplify(s.expand_log(scaled_score+s.log(r)/(2*ell))
+                +L*s.log(alpha)/ell) == 0,
+     'exact common-scale score shift is -L log_phi(alpha)')
+need(s.simplify(-(u*s.diff(target,u)+v*s.diff(target,v))/(2*ell*target)+L/ell) == 0,
+     'the same nonzero scale row follows directly from the full target response')
+
+# Rank-three bound is certified structurally, not by tariff sampling.
+x1, x2, x3 = s.symbols('x1 x2 x3', real=True)
+need(s.expand(3*(x1*x1+x2*x2+x3*x3)-(x1+x2+x3)**2
+              -((x1-x2)**2+(x1-x3)**2+(x2-x3)**2)) == 0,
+     'rank-three Cauchy-Schwarz identity holds for all real nonzero eigenvalues')
+need(A.rank() == 3 and 3*c[2*L]-c[L]**2 >= 0,
+     'the actual original 33-vertex scene satisfies rank-three moment bound')
+need(s.simplify(u**(2*L)*c[2*L]+33*v**(2*L)
+                -2*s.sqrt(33*c[2*L])*(u*v)**L
+                -(s.sqrt(c[2*L])*u**L-s.sqrt(33)*v**L)**2) == 0,
+     'weighted endpoint AM-GM gap is exactly a square for symbolic positive tariffs')
+need(all(t >= 0 for t in s.Poly(b-u**(2*L)*c[2*L]-33*v**(2*L),u,v).coeffs()),
+     'discarding only intermediate nonnegative diagonal terms gives the endpoint bound')
+cc, residual = s.symbols('cc residual', positive=True)
+need(s.expand(33*(cc**2/3+residual)-11*cc**2-33*residual) == 0,
+     'rank-three bound gives sqrt(33 c_2L) at least sqrt(11) c_L')
+need(2*s.sqrt(11) > 6,
+     'uniform positive tariff bound b at least 2 sqrt(11) k is strictly stronger than 6 k')
+
+dimension, kk, excess = s.symbols('dimension kk excess', positive=True)
+bb = 6*kk+excess
+Rmin, Rmax = dimension*(bb-2*kk), dimension*(bb+2*kk)
+need(s.simplify(Rmin-4*dimension*kk-dimension*excess) == 0,
+     'strict rank-three bound yields R_min greater than 4 D k')
+need(s.simplify(2*Rmin-Rmax-dimension*excess) == 0,
+     'the same bound gives R_max/R_min less than two for every positive tariff ratio')
+length, rank, delta = s.symbols('length rank delta', positive=True)
+error_bound = 2*kk*length*rank*delta/Rmin
+need(s.simplify(length*rank*delta/(2*dimension)-error_bound
+                -length*rank*delta*excess/(2*dimension*(4*kk+excess))) == 0,
+     'normalized endpoint error has no exponential tariff ratio factor')
+need(s.simplify((length*rank*delta/(2*dimension)).subs(dimension,2*length*rank)-delta/4) == 0,
+     'actual dimension bound D at least 2 L r_latest gives relative error at most delta/4')
+
+result={'status':'PASS','number_of_checks':len(checks),'checks':checks,
+ 'input_head':'2900145fe674629b61949587917a3a2ea5188797',
+ 'native_fixture':{'word':'birth;G;G;G','stage_widths':[1,2,2,2],'L':L,'N':N},
+ 'original_scene':{'vertices':33,'directed_edges':718,'c2':int(c[2]),'c3':int(c[3])},
+ 'not_claimed':['virtual clock tariff is selected','full Cost-Info aggregation',
+ 'new native XF history emitted','a Gibbs state is prepared','Einstein closure'],
+ 'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+print(json.dumps(result,sort_keys=True,indent=2))
+```
+
+Observed normal and optimized receipt:
+
+```json
+{
+  "checker_sha256": "9d7e7cdd2e6bd02a070a4327e556b513618f51c756fd46fa1b572b4a883968fe",
+  "checks": [
+    "literal complete growing clock is unitary",
+    "actual shortest newborn return age is at least L",
+    "shortest newborn trace is nonzero in literal fixture",
+    "initial prepared cut has no return at depths one through L",
+    "actual initial return first occurs later at N",
+    "original scene retains all 718 directed edges",
+    "original two and three step closed trace counts",
+    "original scene has thirty zero modes",
+    "all mixed history pairs retained, only opposite full wraps survive",
+    "full quadratic forward-memory trace identity",
+    "same initial-cut quadratic response loses every field cross term",
+    "prepared-cut response remains positive despite source absence",
+    "full flag report supplies correct quadratic trace coefficient",
+    "half-log price has the positive oriented report gain",
+    "master and virtual gains compared with actual normalizers",
+    "full quadratic positivity bound retains all thirty-three scene modes",
+    "actual-to-target normalizer error is below delta over nineteen",
+    "uniform extrema normalizer ratio below two at conservative threshold",
+    "L at least two excludes the zero c1 source",
+    "positive tariffs retain all cross terms and the same two full-trace windings",
+    "exact symbolic weighted full quadratic expansion equals D b plus 2 k ReTr T^L",
+    "exact symbolic weighted original prepared cut has only diagonal pairs",
+    "weighted prepared response is at least v^(2L) and has no current clock-body source",
+    "common positive tariff occurs once at amplitude level and twice in response",
+    "full response is homogeneous of degree 2L in the two tariffs",
+    "prepared response has the same common tariff degree despite zero field source",
+    "weighted complete flag coefficient is exactly 8 k d_old L",
+    "weighted half-log source has exact fixed minus orientation and actual target gain",
+    "master-to-weighted gain retains both actual positive normalizers",
+    "independent common tariff scale has genuine nonzero alpha source -L/(alpha ell)",
+    "exact common-scale score shift is -L log_phi(alpha)",
+    "the same nonzero scale row follows directly from the full target response",
+    "rank-three Cauchy-Schwarz identity holds for all real nonzero eigenvalues",
+    "the actual original 33-vertex scene satisfies rank-three moment bound",
+    "weighted endpoint AM-GM gap is exactly a square for symbolic positive tariffs",
+    "discarding only intermediate nonnegative diagonal terms gives the endpoint bound",
+    "rank-three bound gives sqrt(33 c_2L) at least sqrt(11) c_L",
+    "uniform positive tariff bound b at least 2 sqrt(11) k is strictly stronger than 6 k",
+    "strict rank-three bound yields R_min greater than 4 D k",
+    "the same bound gives R_max/R_min less than two for every positive tariff ratio",
+    "normalized endpoint error has no exponential tariff ratio factor",
+    "actual dimension bound D at least 2 L r_latest gives relative error at most delta/4"
+  ],
+  "input_head": "2900145fe674629b61949587917a3a2ea5188797",
+  "native_fixture": {
+    "L": 3,
+    "N": 4,
+    "stage_widths": [
+      1,
+      2,
+      2,
+      2
+    ],
+    "word": "birth;G;G;G"
+  },
+  "not_claimed": [
+    "virtual clock tariff is selected",
+    "full Cost-Info aggregation",
+    "new native XF history emitted",
+    "a Gibbs state is prepared",
+    "Einstein closure"
+  ],
+  "number_of_checks": 42,
+  "original_scene": {
+    "c2": 718,
+    "c3": 7722,
+    "directed_edges": 718,
+    "vertices": 33
+  },
+  "status": "PASS"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
