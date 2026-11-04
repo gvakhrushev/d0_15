@@ -17374,8 +17374,8 @@ The exact finite Lean proof and axiom check passed with the existing scratch
 cache, without `native_decide`, `sorry` or heartbeat overrides; the checked
 theorems report `propext`, `Classical.choice`, and `Quot.sound`. Independent
 read-only review verified the entries, phases and ordering against the pinned
-source. This formalization does not yet prove that the rational matrix equals
-the analytic matrix exponential; it does not construct the original 128
+source. The rational module alone did not establish its analytic exponential identity;
+the separate analytic module below proves that identity. Neither constructs the original 128
 Kraus words, prove their effect span or identify it with the abstract matrix
 pair. Physical admission, clock/work and owner #334 remain open, with
 `GR_closed=false`.
@@ -17413,3 +17413,27 @@ installed Lean/Lake binaries were hashed, not independently built from source.
 On this Windows environment 16 of 19 existing helper tests passed after disabling
 Git autocrlf for the fixtures; the remaining three errors (OS symlink privilege
 and two POSIX executable stubs) also occurred on the unmodified base.
+
+
+### Analytic exponential at the original modular parameter
+
+`D0.Geometry.OriginalBookAnalyticBoost` proves in a complete real normed
+algebra that `g³=g` implies
+`exp(tg)=1+sinh(t)g+(cosh(t)-1)g²`. It derives this from the common ODE and
+the value at zero, rather than assuming the desired identity. Specializing to
+`theta=log(5/4)` proves `tanh(theta/2)=1/9`, `sinh(theta)=9/40` and
+`cosh(theta)=41/40`. The theorem applies to the actual real and complex
+creator-built matrices from the preceding module, establishes
+`exp(theta G)=I+G²/40+9G/40`, and matches the four analytic Julia operands
+with their polynomial counterparts while retaining the original order and
+phases. This is the modular special angle; it does not replace the uniform
+source's separate numerical fixture at `theta=.08`.
+
+Exact source bytes passed a narrow Lean check and independent read-only
+review; `#print axioms` on the general and specialized results reports only
+`propext`, `Classical.choice`, and `Quot.sound`. No `native_decide`, `sorry`
+or heartbeat override is used. This proves the mathematical exponential
+identity, not execution of SciPy. Julia square roots, the 128 Kraus operators,
+their effect span and its CAR block identification, physical admission,
+clock/work and owner #334 remain open; `GR_closed=false`. Full final
+integration on this module is still required.
