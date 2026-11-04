@@ -59,8 +59,8 @@ BCP10 не объявляет их нулевыми.
 `C` действует на `Im P₀` как сжатая возвращающая часть; Lean `cut` —
 переход в дополнительное пространство. Для применения нужно на **одном и
 том же** carrier построить связь с возвращающим блоком и, если применимо,
-доказать унитарное блочное тождество, связывающее его Gram с `cut*cut`,
-вместе с равенством ограниченного и полного определителей и их вариаций.
+применить существующее унитарное Gram-тождество к полным `T,P`,
+вместе с переносом определителей и их вариаций для конкретной стадии.
 Возможность такой конструкции не отвергается; одно сходство записи её не
 доказывает. Отдельно нужна проверенная идентификация полного 425D теплового
 оператора и `matrixHeatPartition` (включая множитель `359D` и две копии
@@ -110,8 +110,8 @@ Lean, а `R_rec` в BCP10 относится к другой, записанно
 их равенство не утверждается. Вклад `dz` включён у владельца в полный
 `dJ`, и само наличие двух параметрических коэффициентов не доказывает
 относительно-энтропийное тождество BCP9–10. Сохраняются построение полного
-425D clock/lift, determinant transport G9–G10, общая физическая полевая
-карта и реализация/регулярность всех остальных членов.
+425D clock/lift, конкретное применение G9–G10 к `J_f,F_clock`, общая
+физическая полевая карта и реализация/регулярность всех остальных членов.
 
 `D0.Analysis.regularizedReturnPrice_contrast_bound` и конкретный потребитель
 `D0.Research.taskReturnProduct_price_contrast_bound` — действительные
@@ -165,5 +165,8 @@ Quot.sound]`. Проверка с кодом 0 использовала суще
 `69969158614944627e6c06cecd59ec2e350c4c5d0a447e8f3d2332864a9e6d88`.
 Это не полная холодная сборка и не интеграция фактических параметров §7fj.
 
-The Lean derivative theorem does not assume `0 < z < 1`: `z` is a fixed real,
-with admissibility expressed separately by the determinant hypothesis.
+The fixed-parameter Lean derivative theorem does not assume `0 < z < 1`:
+`z` is a fixed real, with admissibility expressed by the determinant hypothesis.
+The newer `det_clock_defect` theorem proves the abstract determinant transport
+when the clock defect representation and rectangular isometry are supplied;
+constructing and binding the owner's concrete `J_f` and `F_clock` remains open.
