@@ -290,6 +290,7 @@ import D0.Foundation.RelationalRepairClosure
 import D0.Foundation.SceneCountReduction
 import D0.Foundation.SceneStepParity
 import D0.Foundation.ShortlexCodeExistence
+import D0.Foundation.ShortlexSetoidCodes
 import D0.Foundation.TheoryTransfer
 import D0.Foundation.UncoupledCenterRawWitness
 import D0.Foundation.VerifiabilityNecessity

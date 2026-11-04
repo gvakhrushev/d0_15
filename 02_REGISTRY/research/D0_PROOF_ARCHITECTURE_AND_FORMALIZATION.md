@@ -16600,3 +16600,20 @@ The [diagnostic package](sources/d0_proof_architecture_formalization_2026-10-24/
 retains the complete compressed target output, input hashes, matcher measurements,
 62-test log and interrupted full-replay trace. Its replay entrypoint records
 the caller's actual checkout and never overwrites an existing output.
+
+### Supplied word-equivalence application — 4 November 2026
+
+`D0.Foundation.ShortlexSetoidCodes` applies `ShortlexCodeExistence` to the
+quotient map for an arbitrary given setoid on words over a well-founded
+linearly ordered alphabet. The selected word belongs to its original class,
+is shortlex-minimal there, and two selected words are equal if and only if
+the originals are related by the given setoid. A concrete equal-length setoid
+identifies distinct `[true]` and `[false]`. Direct Lean checking passed for
+blob `dfc7322459220f96aa37608ac6f296b47e02e4b9`; independent review checked
+the quotient maps, minimality and equivalence directions.
+
+This is a mathematical application of a supplied relation using classical
+choice. It gives neither a computable minimization algorithm nor the missing
+code/state map and proof that this relation matches equality of complete
+`FutureExecution` profiles. It does not establish a single physical ontology,
+native admission or semantic acceptance of the whole source section.
