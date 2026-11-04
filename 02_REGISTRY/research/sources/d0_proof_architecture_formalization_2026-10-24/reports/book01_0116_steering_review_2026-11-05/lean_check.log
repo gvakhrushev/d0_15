@@ -1,0 +1,31 @@
+D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_step_congr (F : FutureExecution) {s t : F.State}
+  (h : F.profile s = F.profile t) (a : F.Action) : F.profile (F.step a s) = F.profile (F.step a t)
+D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientStep (F : FutureExecution) (a : F.Action) :
+  F.FutureClass → F.FutureClass
+D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_run (F : FutureExecution) (u : List F.Action)
+  (s : F.State) (v : List F.Action) (t : F.Test) : F.profile (F.run u s) v t = F.profile s (u ++ v) t
+D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff {F G : FutureExecution}
+  {I : Interpretation F G} (C : NativeContextCoverage I) (s t : F.State) :
+  G.profile (I.stateMap s) = G.profile (I.stateMap t) ↔ F.profile s = F.profile t
+D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_same_current :
+  hiddenBitExecution.observe (false, false) () = hiddenBitExecution.observe (false, true) ()
+D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_different_future :
+  hiddenBitExecution.profile (false, false) ≠ hiddenBitExecution.profile (false, true)
+D0.Foundation.VerificationTransferApplication.visible_only_memory_cannot_decode_hiddenBit_futures
+  (decode : Bool → List hiddenBitExecution.Action → hiddenBitExecution.Test → hiddenBitExecution.Outcome)
+  (correct : ∀ (s : hiddenBitExecution.State), decode s.1 = hiddenBitExecution.profile s) : False
+D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures :
+  visibleBitSystem.profile (false, false) = visibleBitSystem.profile (false, true)
+D0.Foundation.TheoryTransfer.extraBit_different_native_futures :
+  extraBitTestSystem.profile (false, false) ≠ extraBitTestSystem.profile (false, true)
+D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage :
+  ¬Nonempty (NativeContextCoverage visibleBitInterpretation)
+'D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_step_congr' depends on axioms: [Quot.sound]
+'D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientStep' depends on axioms: [Quot.sound]
+'D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_run' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_same_current' does not depend on any axioms
+'D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_different_future' depends on axioms: [propext]
+'D0.Foundation.VerificationTransferApplication.visible_only_memory_cannot_decode_hiddenBit_futures' depends on axioms: [propext,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage' depends on axioms: [propext, Quot.sound]

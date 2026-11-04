@@ -17635,3 +17635,11 @@ checks source bytes `[12874,12992)` against an uncoupled raw-state witness and
 its conditional code composition. Equality of profiles and represented codes
 does not itself establish raw nonexistence or physical recording. The control
 is abstract, and the complete original dichotomy and C0 acceptance remain open.
+
+### Independent source review: influence beyond History
+
+The [Book01 §01.1.6 steering review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0116_steering_review_2026-11-05/SUMMARY_RU.md)
+checks source bytes `[12992,13059)`. Equal complete profiles imply equal
+observations for the same word/test of the supplied interface; additional
+native contexts require their own coverage proof. The global physical wording,
+complete History and physical admissibility remain open.
