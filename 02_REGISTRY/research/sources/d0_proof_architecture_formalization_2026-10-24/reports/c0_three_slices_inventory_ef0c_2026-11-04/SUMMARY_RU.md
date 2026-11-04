@@ -5,3 +5,5 @@
 ```sh
 python3 tools/lean_declaration_inventory.py --module D0.Foundation.FutureExecution --module D0.Foundation.VerificationCore --module D0.Foundation.UncoupledCenterRawWitness --module D0.Foundation.FutureShortlexAdapter --module D0.Foundation.VerifiabilityNecessity --module D0.Foundation.TheoryTransfer --output /tmp/d0-c0-three-slices-inventory-ef0c2561b.json
 ```
+
+На чистом `8f30a0094f0527deef33375848d5d6b19933e81f` три view содержат 6, 44 и 30 кандидатов, технических замечаний нет. Сверка читает записанные compiled metadata и не повторяет Lean; это не семантическое принятие.
