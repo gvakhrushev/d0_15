@@ -21788,3 +21788,69 @@ retaining the explicit defect balance and a proved common geometric
 source map with reverse recovery. Other genuine source equivalences keep
 their hypotheses. `scientific_promotion=false`, `GR_closed=false`;
 the original goal remains active.
+
+## 2026-11-05 checkpoint: open retention controls and uniform full-master reduction
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `afd99daf54d26ef7e1b47a94f380557213e9c6d5`.
+Result location: §7fk of the existing full-source primary artifact.
+Write paths remain that artifact and this brief; no new task, branch,
+Ready/retirement, merge, accepted claim or scientific promotion.
+
+Parent substitution: CT/XF/SC's original real retention-control estimates
+extend from canonical G endpoints to an explicit open product domain
+of full SO(8) local operations on each new retention bit and the SAME
+two shared helpers. Every actual primitive source row remains. Helpers
+can stay entangled across all K slots; none is reset or discarded.
+
+The actual compression is B_j=(v* tensor I4)U_j(v tensor I4), with
+||B_j||<=cbar<1 on an algebraically certifiable collar. The proper cold
+return contains the ORDERED product B_K...B_1, giving ||C||<=cbar^K
+and the complete feedback-source sum <=C_prefix N cbar^(2K-1).
+Independent retention rows are nonzero at finite stages. READY/report
+fidelity alone does not guard them; FN fibres must be over (Y,u).
+
+The original full425D heat, generated cut and true last gate remain in
+B=H+J. The old-winding chronology is unchanged on this open domain,
+so its full normalized heat bound is uniform. The same actual positive
+XF gain uses Z_actual at each centre. Choose the paid macro/body layout
+first and K last: K=O(L log L), N=O(L^(3/2)log L), and q>=3 controls
+bounded sections. All old prefix/chart constants are recomputed before
+the next append of the one retained history.
+
+The collective feedback endpoint bound now permits ALL K local blocks
+to change while both endpoints stay in the collar. Its separate heat
+bound and actual basis/(2|t_min|) requirement remain explicit; arbitrary
+far endpoints labelled by exponentially small t are not covered by a
+polynomial-length schedule. Global controls bypassing the sealed local
+product remain outside this proved extension.
+
+For a genuine field-dependent nuisance section retain (Du)*q_u. A known
+polynomial lift bound of degree d is controlled by choosing the real
+current arena with q>1.5(d+1) before compilation and tightening the
+feedback/compiler budgets. A merely subexponential-in-K lift is not
+enough for the polynomial heat tail. The actual physical sample-map
+pairing of SC13 keeps a sigma/4 off-shell separating margin after this
+pullback. The same full-norm Einstein--two-CAR recovery is uniform on
+the enlarged collar; no exact finite stationary section is asserted.
+
+The rank-one product scene feedback cut has exactly zero orientation
+source at fixed incidence. This does not eliminate initial P0, scene
+weights, beta/z, rank/duration or new current calibration equations.
+Any free current target-changing preparation retains its leading row.
+
+Decisive validation: two actual positive G/CX local macros with
+noncommuting helper compressions, exact Golden admission/cold-return
+identities, a hostile scalar-product/reset control, full small native
+birth/clock closure and low-winding checks, and the noncommuting
+logdet derivative. The tiny clock is explicitly q=0 and does not replace
+the analytic q>=3 asymptotic proof. Normal/optimized warnings-as-errors
+receipts, source hashes and independent reviews are embedded; affected
+integration guards run once on final inputs. No geometry/root/Lean replay.
+
+This removes a canonical-retention-centre restriction in the master-law
+application and retains all real controls. Full Cost-Info/weighted-law
+binding and the remaining physical task admission are still open.
+No Gibbs/Poisson sampler, new Info or extra action has been inserted.
+`GR_closed=false`, `scientific_promotion=false`; the original goal remains
+active under the unchanged A--D contract.
