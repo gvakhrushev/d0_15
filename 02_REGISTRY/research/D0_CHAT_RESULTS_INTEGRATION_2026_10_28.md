@@ -1274,3 +1274,21 @@ effects or separately derived valuations. The original full initial/terminal
 Cost−Info valuation, independent tariff/work/clock/preparation/record rows and
 physical source equivalence remain open. This bounded replay does not accept
 the analytical source transport or promote Contract C; `GR_closed=false`.
+
+## PR #334 §7fg: first return and independent retention source
+
+The [pinned `567e3806..201ee52c` continuation](sources/d0_334_post_567_201_intake_2026-11-05/README.md)
+retains the full owner diff, both resulting source blobs, 15 input pins and
+independently reproduced 58-condition finite checks. The owner reports a
+nonzero original-cut field source at the first possible return on its declared
+nonzero cold-return collar, resolving only the shorter-horizon zero-source
+control at that scope.
+
+The independent paid retention row remains nonzero on the canonical attenuated
+CT section, including the stated Einstein centres; the same-return scalar
+factorization does not make it vanish. Exact stationarity of all such rows with
+nonzero field gain forces unit-magnitude retention factors in the owner's
+setting. Different sections, constraints or independent complete-price terms
+require their own full source and error analysis: this is not a universal
+no-go for them. The actual initial/terminal valuation, full Cost−Info, physical
+admission and other source rows remain open; `GR_closed=false`.

@@ -17591,3 +17591,13 @@ per-copy field-derivative correspondence and resolvent weight binding remain
 explicit. The price curve and field chart are not constructed as one admitted
 physical execution. The [independent review and cached build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_amplitude_field_3068_2026-11-05/SUMMARY_RU.md)
 retain the complete price and physical selection boundaries.
+
+### #334 §7fg: original return and independent retention row
+
+The [pinned §7fg intake](sources/d0_334_post_567_201_intake_2026-11-05/README.md)
+retains the owner's conditional nonzero cold-return field source and the
+nonzero independent CT retention source at the same time. The 58-condition
+finite checker was independently reproduced, without acceptance of the full
+analytical or physical claim. Other price terms, constraints, physical
+admission and complete Cost−Info remain open; no general no-go or GR closure
+is inferred.
