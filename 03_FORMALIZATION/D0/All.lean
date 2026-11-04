@@ -709,6 +709,7 @@ import D0.Research.SourceReflectionKernel
 import D0.Research.TaskFaithfulAffineReporterDerivative
 import D0.Research.TaskFaithfulRadialPriceDerivative
 import D0.Research.TaskFaithfulRepeatedReporterDerivative
+import D0.Research.TaskFaithfulRepeatedReporterTransfer
 import D0.Research.TaskFaithfulReporterAffineTransfer
 import D0.Research.TaskFaithfulReporterEffect
 import D0.Research.TaskFaithfulReporterProductEquality
