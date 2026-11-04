@@ -101,6 +101,8 @@ jobs:
           python -m unittest tools.test_check_original_static_julia_roots tools.test_lean_provenance_guid
           python 02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/test_replay_bounded.py
           python -O 02_REGISTRY/research/sources/d0_334_post_201_c4d_intake_2026-11-05/test_replay_bounded.py
+          python 02_REGISTRY/research/sources/d0_334_post_c4d_800_intake_2026-11-05/test_replay_bounded.py
+          python -O 02_REGISTRY/research/sources/d0_334_post_c4d_800_intake_2026-11-05/test_replay_bounded.py
           python tools/test_ci_replay_reuse.py
 
       - name: Check unchanged scientific inputs against a successful Ready run

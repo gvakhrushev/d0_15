@@ -70,7 +70,9 @@ python3 02_REGISTRY/research/sources/d0_334_post_c4d_800_intake_2026-11-05/verif
 
 Replay executes pinned owner code in scratch, **not a sandbox**; checker and
 both dependency hashes are checked before each invocation, nonempty stderr
-fails the run, and normal/optimized receipts must match:
+fails the run, and normal/optimized receipts must match. Replay trusts the
+local manifest; verify provenance separately with `--verify-source-objects`
+and a trusted Git snapshot. This is not continuous race-free attestation:
 
 ```sh
 uv run --offline --python 3.12 --with numpy --with scipy --with sympy python 02_REGISTRY/research/sources/d0_334_post_c4d_800_intake_2026-11-05/replay_bounded.py
