@@ -1457,12 +1457,29 @@ def _read_pinned_source(root: pathlib.Path, reference: dict[str, Any],
     return status, cached_bytes
 
 
-def _term_pattern(terms: list[tuple[str, tuple[str, ...]]]) -> re.Pattern[str]:
+@functools.lru_cache(maxsize=256)
+def _compiled_term_pattern(
+        terms: tuple[tuple[str, tuple[str, ...]], ...],
+) -> tuple[re.Pattern[str], dict[str, str]]:
+    """Cache literal alternatives and their first semantic owner together.
+
+    Preserve the original term/variant order and non-overlapping regex matches.
+    Capturing groups inhibit CPython's literal-prefix optimization. Semantic
+    terms belong in the cache key: distinct names can share a compiled regex.
+    """
     alternatives = []
-    for index, (_, variants) in enumerate(terms):
-        values = sorted(set(variants), key=lambda value: (-len(value), value))
-        alternatives.append(f"(?P<t{index}>" + "|".join(re.escape(value) for value in values) + ")")
-    return re.compile("|".join(alternatives)) if alternatives else re.compile(r"(?!)")
+    literal_names: dict[str, str] = {}
+    for name, variants in terms:
+        values = sorted(set(variants), key=lambda value: (-len(value), value)) or [""]
+        for value in values:
+            alternatives.append(re.escape(value))
+            literal_names.setdefault(value, name)
+    pattern = re.compile("|".join(alternatives)) if alternatives else re.compile(r"(?!)")
+    return pattern, literal_names
+
+
+def _term_pattern(terms: list[tuple[str, tuple[str, ...]]]) -> re.Pattern[str]:
+    return _compiled_term_pattern(tuple(terms))[0]
 
 
 def _build_multi_pattern_matcher(
@@ -1520,9 +1537,8 @@ def _multi_pattern_matches(
 
 def _matched_term_names(text: str, pattern: re.Pattern[str],
                         terms: list[tuple[str, tuple[str, ...]]]) -> set[str]:
-    group_names = {f"t{index}": name for index, (name, _) in enumerate(terms)}
-    return {group_names[match.lastgroup] for match in pattern.finditer(text)
-            if match.lastgroup in group_names}
+    literal_names = _compiled_term_pattern(tuple(terms))[1]
+    return {literal_names[match.group(0)] for match in pattern.finditer(text)}
 
 
 def _line_evidence(content: str, terms: list[tuple[str, tuple[str, ...]]],
@@ -1634,6 +1650,13 @@ def _rg_text_lines(command: list[str], root: pathlib.Path):
                 process.wait()
             if process.stdout is not None:
                 process.stdout.close()
+
+
+def _search_progress(stage: str, **details: Any) -> None:
+    """Optional replay diagnostics; never part of candidate or receipt data."""
+    if os.environ.get("D0_PROOF_SEARCH_PROGRESS") == "1":
+        print(json.dumps({"proof_search_progress": stage, **details}),
+              file=sys.stderr, flush=True)
 
 
 def full_text_search_many(root: pathlib.Path, queries: list[str],
@@ -1771,6 +1794,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             candidates_by_query[index].append((score, rel, record))
 
     pinned_cache: dict[tuple[str, str, str], tuple[str, bytes | None, str | None]] = {}
+    _search_progress("corpus_candidates_ready", queries=len(queries),
+                     candidates=sum(len(rows) for rows in candidates_by_query))
     pinned_seen: list[set[tuple[str, str, str]]] = [set() for _ in queries]
     pinned_content_status: list[dict[tuple[str, str, str], str]] = [{} for _ in queries]
     results = []
@@ -1895,6 +1920,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         combined.extend(pinned_candidates)
         combined.sort(key=lambda row: (-row[0], row[1]))
         results.append([record for _, _, record in combined[:limit]])
+        _search_progress("global_page_ready", query_index=index,
+                         query_count=len(queries), returned=len(results[-1]))
     return results
 
 

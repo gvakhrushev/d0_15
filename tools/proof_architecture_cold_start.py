@@ -2786,10 +2786,15 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
     all_hits = proof.full_text_search_many(
         root, queries, max(limit, COLD_START_MIN_RESULT_WINDOW)
     )
-    all_pages = [proof.expand_source_pages(
-        root, query, hits, page_size=SOURCE_PAGE_SIZE,
-        pages_per_locator=SOURCE_PAGES_PER_LOCATOR,
-    ) for query, hits in zip(queries, all_hits)]
+    all_pages = []
+    for index, (query, hits) in enumerate(zip(queries, all_hits)):
+        pages = proof.expand_source_pages(
+            root, query, hits, page_size=SOURCE_PAGE_SIZE,
+            pages_per_locator=SOURCE_PAGES_PER_LOCATOR,
+        )
+        all_pages.append(pages)
+        proof._search_progress("source_pages_ready", query_index=index,
+                               query_count=len(queries), pages=len(pages))
     offset = 0
     cases = []
     for case in CASES:

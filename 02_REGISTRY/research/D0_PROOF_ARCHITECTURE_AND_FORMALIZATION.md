@@ -16532,3 +16532,34 @@ query succeeded. The authenticated `D0.All` helper replay then passed all
 The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-11-04_return_price.json)
 has content SHA-256 `36f93af1232f44914075982273edb8cde0ccc8184bf048528f29836099521de4`.
 This validates the formal build, not physical admission or C0 acceptance.
+
+### Search evidence performance and retained retrieval boundary — 4 November 2026
+
+A full replay on `7a7e9ed24a52265b067b3fd38ca091934c9758e0` was interrupted
+after 3,200.67 seconds wall / 918.77 seconds CPU. Its stack was in repeated
+`_line_evidence` / `_matched_term_names` extraction; it produced no completed
+receipt and is not a successful replay. The subsequently integrated streaming
+reader addresses captured-output memory separately.
+
+The matcher now flattens the same ordered literal alternatives, preserving
+the first semantic owner and non-overlapping match positions. A bounded cache
+includes the complete semantic term tuple, so equal literal patterns cannot
+mix names from different queries. Comparisons on three actual queries and all
+16,534 lines of the then-current primary artifact returned exactly the same
+ranked evidence; extraction was 3.26–5.95 times faster in that measurement.
+Seeded overlap, Unicode, punctuation, empty-term and cache-collision controls
+retain the old matcher as the independent expected implementation. No timing
+threshold is used as a correctness test.
+
+The 17-query native-kappa diagnostic with the stricter content-only threshold
+finds all 67 exact source files and all 17 locators (84/84 requirements), in
+57.47 seconds on the measured local run. That diagnostic is not a full clean
+50-case replay. `D0_PROOF_SEARCH_PROGRESS=1` optionally writes phase/query
+progress to stderr without changing returned candidates. Full retrieval
+acceptance remains open until the complete final snapshot finishes; the
+earlier 49/50 receipt remains historical. `GR_closed=false`.
+
+The [diagnostic package](sources/d0_proof_architecture_formalization_2026-10-24/reports/source_pages_matcher_2026-11-04/SUMMARY_RU.md)
+retains the complete compressed target output, input hashes, matcher measurements,
+62-test log and interrupted full-replay trace. Its replay entrypoint records
+the caller's actual checkout and never overwrites an existing output.

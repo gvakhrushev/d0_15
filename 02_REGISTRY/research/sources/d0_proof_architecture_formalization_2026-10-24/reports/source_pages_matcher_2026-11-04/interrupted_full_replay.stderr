@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/tools/proof_architecture_cold_start.py", line 2872, in <module>
+    raise SystemExit(main())
+  File "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/tools/proof_architecture_cold_start.py", line 2867, in main
+    print(json.dumps(run(root), ensure_ascii=False, indent=2))
+  File "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/tools/proof_architecture_cold_start.py", line 2786, in run
+    all_hits = proof.full_text_search_many(
+  File "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/tools/proof_architecture.py", line 1783, in full_text_search_many
+    evidence = _line_evidence(content, terms, pattern)
+  File "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/tools/proof_architecture.py", line 1536, in _line_evidence
+    matched_names = _matched_term_names(folded_line, pattern, terms)
+  File "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/tools/proof_architecture.py", line 1523, in _matched_term_names
+    return {group_names[match.lastgroup] for match in pattern.finditer(text)
+  File "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/tools/proof_architecture.py", line 1523, in <setcomp>
+    return {group_names[match.lastgroup] for match in pattern.finditer(text)
+KeyboardInterrupt
+time: command terminated abnormally
+real 3200.67
+user 918.77
+sys 19.54
