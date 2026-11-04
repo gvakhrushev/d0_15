@@ -20593,3 +20593,52 @@ polynomials and source margins pass normal and optimized/warnings-as-errors
 checks with matching receipts. Independent readers checked the paid
 decoder graph, actual birth/cut typing, full-price equality and retained
 source boundaries. Unchanged geometry/Lean work is not replayed.
+
+## 2026-11-04 continuation: actual calibration readback, source constraints and paid future
+
+Input89707e8ad4787ace2da9d70b723b799094cee4d9; existing#334, same two
+owned write paths. Phase: native realization / final composition.
+Consumer: §7ev.A/F and closure B–D. Primary proof/replays: §7ew.
+Changed input: the actual retained record, computational reader and
+failure/reference covector now exist. The missing application is the
+operational test of those calibration coordinates on the SAME history.
+
+The real old-WORK future B;S transforms G_R^-1 B* S M B into
+G_R^-1 M B without touching saved R. Every original prefix observable
+commuting with baseline REPORT is read exactly, including the actual
+conditional beta and chi=E[READY0(event_y+−event_y−)]=alpha²Delta_r.
+The statement survives sealing/dephasing of R as an observable identity.
+A paid native noncommuting test loses exactly2p³, so this is not full
+context coverage or an unchanged coherent prefix.
+
+The exact retained-reader source residual now factors through d beta
+and d chi on its stated common-law/fixed-lambda/r0 chart. Supplied
+calibration-profile guards yield explicit feedback reactions and retain
+the positive corner/source gain. Indexed data and all moving weights
+are retained; averaged calibration alone is insufficient. Mere ability
+to read the current values does not require fixing them. Genuinely free
+calibration inputs retain their equations; full heat need not factor
+through these two coordinates even on their tangent kernel.
+
+Three literal80-call histories and their actual89-call continuations
+verify the map on all64columns. All old32 input columns remain in the
+return. For this full-cut witness J is exactly unchanged, while the
+complete original growing-clock H+J increases by MORE THAN1/8. The
+exact characteristic polynomials retain both birth ages and every
+Hodge mode. No primitive-count charge, detector fee or Info is invented.
+The continuation cancels S, so its terminal price/source is not the
+baseline geometric price/source; proper-cut transfer is not inferred.
+
+This supplies a concrete test/price map needed for the declared task's
+variation graph. It does not force H.1 or its numerical calibration
+profile from M1, solve every free internal source, or supply full
+Cost−Info/Einstein binding. Shared-c reducibility remains if that
+controller is genuinely admitted. GR_closed=false; objective active.
+No new task, claim, assembly acceptance, Ready or retirement.
+
+Validation: exact source/conditional-profile identities, whole-clock
+determinants and all64-column native words run normally and optimized
+with warnings as errors and matching receipts. Independent readers
+reviewed effects, reactions, conditional averaging, cut and price.
+Affected structural guards run once on final owned inputs; unchanged
+geometric/Lean certificates are not replayed.
