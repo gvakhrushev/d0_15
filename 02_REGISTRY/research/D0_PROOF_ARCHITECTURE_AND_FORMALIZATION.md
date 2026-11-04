@@ -16363,7 +16363,7 @@ remain as stated.
 Narrow builds and independent mathematical review passed. Full local
 `D0.All` passed 4,788 Lake jobs, source digest
 `97b499af27d62fb54eaf1c9e0d9274a471f4ce74371533d5a58198e3b1f9954e`.
-The C0 reconciliation and byte-partition suites passed 97 tests, including
+The C0 reconciliation, byte-partition and declaration-inventory suites passed 119 tests, including
 hostile owner/proof/source substitutions. The [checkpoint report](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_template_budget_2026-11-04/SUMMARY_RU.md)
 records exact build/compiled/view evidence. No full cold-start or historical
 #334 certificate replay is attributed to this increment. The entire

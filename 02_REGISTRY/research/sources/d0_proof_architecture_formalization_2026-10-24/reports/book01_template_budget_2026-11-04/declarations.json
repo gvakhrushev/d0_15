@@ -1,6 +1,6 @@
 {
   "schema": "d0-lean-declaration-inventory-v1",
-  "snapshot_commit": "f66ca0817b6199c7f82301b7b26b8b7cb44c34ce",
+  "snapshot_commit": "c25c66780fa4d9adec99996d512645243bc5ba72",
   "worktree_dirty": false,
   "lean_source_digest": "97b499af27d62fb54eaf1c9e0d9274a471f4ce74371533d5a58198e3b1f9954e",
   "collector_sha256": "72704cc03a16d1d08e1c1977b147e6f735c19d580464771e9c12a40a4420ea63",
