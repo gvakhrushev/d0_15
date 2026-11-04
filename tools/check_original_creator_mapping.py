@@ -66,7 +66,7 @@ def main() -> None:
         if len(set(states)) != 16:
             raise ValueError("bit/role map is not bijective")
         for bits, state in enumerate(states):
-            if (sum(state) % 2) != (bits.bit_count() % 2):
+            if (sum(state) % 2) != (bin(bits).count("1") % 2):
                 raise ValueError(f"parity mismatch at {bits}")
         checked = 0
         for role_index, mode in enumerate(MODES):
