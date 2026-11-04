@@ -607,8 +607,8 @@ class ProofSourcePagesTests(unittest.TestCase):
                                 "--source-page-offset", "8"]), \
              patch("sys.stdout", output):
             self.assertEqual(proof.main(), 0)
-        search.assert_called_once_with(self.root, "amberquartz", 18, offset=18)
-        expand.assert_called_once_with(self.root, "amberquartz", [], pages_per_locator=4,
+        search.assert_called_once_with(self.root.resolve(), "amberquartz", 18, offset=18)
+        expand.assert_called_once_with(self.root.resolve(), "amberquartz", [], pages_per_locator=4,
                                        page_offset=8, continue_references=True)
         rendered = json.loads(output.getvalue())
         self.assertEqual(rendered["text_offset"], 18)
