@@ -289,6 +289,7 @@ import D0.Foundation.RelationalRepairClosure
 import D0.Foundation.SceneCountReduction
 import D0.Foundation.SceneStepParity
 import D0.Foundation.TheoryTransfer
+import D0.Foundation.UncoupledCenterRawWitness
 import D0.Foundation.VerifiabilityNecessity
 import D0.Foundation.VerificationCore
 import D0.Foundation.VerificationTransferApplication

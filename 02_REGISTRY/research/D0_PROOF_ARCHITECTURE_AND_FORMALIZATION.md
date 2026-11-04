@@ -16414,6 +16414,23 @@ BOOK-I-ARCHITECTURE` locator has not yet been resolved to a separately checked
 original source; its exact content and any owner-accepted correction remain
 open.
 
+`D0.Foundation.UncoupledCenterRawWitness` makes this boundary executable. A
+one-state execution yields distinct raw states `((),false)` and `((),true)`
+with identical complete future profiles. For arbitrary `F` and `s`, a
+separately supplied `TheoryVerification F.uncoupledCenter.futureEmpiricalTheory`
+also yields equal represented records for the corresponding distinct pair.
+A second concrete example uses the existing nontrivial `visibleBitVerification`;
+it does not claim that such a witness is automatically available for arbitrary
+`F`. Independent mathematical review checked these scopes. The module does not
+establish physical admission or resolve the original Golden ontology.
+
+The narrow build and the complete `D0.All` build passed, the latter with
+4,789 Lake jobs at Lean source digest
+`78c9b3daa863a996163b01d200a46c68e3d03dea73710239467973262216661b`.
+The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-11-04_raw_witness.json)
+has content SHA-256 `3458f406768116974825ae75f5c23719c305d10c75c9d00adb1fa549649d0ed5`.
+Existing warnings in other modules remain.
+
 The read-only command `python tools/proof_architecture.py --json c0-ranges
 --snapshot <published-primary-commit>` verifies the two declared Book01
 §01.1.8 and Book02 §02.3b review tables against their pinned source blobs,
