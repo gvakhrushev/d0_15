@@ -17572,3 +17572,12 @@ zero field source for `L < N` on the specified preparation, unlike the full
 trace. The complete initial/terminal valuation and independent physical source
 rows remain open; this is not a general no-go, scientific promotion or GR
 closure.
+
+### Matched branch amplitude derivative
+
+`D0.Analysis.MatchedBranchAmplitudeDerivative` derives the independent-copy
+product derivative used in the conditional field-source composition. Local
+binding to the actual amplitude and the link of each scalar action derivative
+to the physical field map remain inputs. Empty-copy and zero-corner controls
+are retained. The [independent review and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_amplitude_c912_2026-11-05/SUMMARY_RU.md)
+do not establish native admission or the complete price.
