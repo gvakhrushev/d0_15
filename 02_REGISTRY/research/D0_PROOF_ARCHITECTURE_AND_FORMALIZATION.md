@@ -17601,3 +17601,12 @@ finite checker was independently reproduced, without acceptance of the full
 analytical or physical claim. Other price terms, constraints, physical
 admission and complete Cost−Info remain open; no general no-go or GR closure
 is inferred.
+
+### Independent source review: unobservable Book01 parameter
+
+The [focused Book01 §01.1.6 review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0116_nochange_review_2026-11-05/SUMMARY_RU.md)
+compares bytes `[12477,12713)` with `SigmaWitness.dmin_eq_iff`, its coded-core
+consumer and an uncoupled raw-state witness. Equal finite future profiles give
+equal codes under the supplied presentation; they do not by themselves erase a
+raw coordinate or construct a physically executed code. The stronger original
+wording and complete C0 acceptance remain unresolved.
