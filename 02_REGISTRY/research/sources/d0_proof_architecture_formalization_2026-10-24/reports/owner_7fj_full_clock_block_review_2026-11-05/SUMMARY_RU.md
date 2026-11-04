@@ -140,8 +140,11 @@ G10: `det_K(I−z F_clock)=det_(P₀H₀)((1−z)I_r+z C*C)`. Для форма�
 `T`, `P`, последнюю утечку `J_f`, restricted-vs-ambient determinant и
 отсутствующие единичные факторы. Отдельно — полный 425D lift и равенство
 thermal trace, локально дифференцируемые реальные `Δ,P,T`, сохранение
-projector-условий, chart и все исходные variations. При переменной β/z
-нужны дополнительные производные, не покрываемые fixed-parameter теоремой.
+projector-условий, chart и все исходные variations. Fixed-parameter теорема
+не покрывает изменение β/z, однако отдельная уже существующая
+`hasDerivAt_variable_moving_projector_book03_price` доказывает эти вклады
+на одном заданном конечном matrix carrier. Связь её кривой с фактической
+кривой §7fj и с CQ-источником остаётся открытой; см. [исправленную сверку](../owner_7fj_lean_binding_gap_2026-11-05/SUMMARY_RU.md).
 Конкретный full128 execution, выбранный CQ/Book источник, physical
 admission, полная цена, clock/work и GR не получены этим контролем.
 `scientific_promotion=false`, `GR_closed=false`.

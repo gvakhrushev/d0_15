@@ -17760,8 +17760,11 @@ The [pinned source-to-Lean gap review](sources/d0_proof_architecture_formalizati
 compares the full same-clock Book/CQ source identity with the existing finite
 moving-projector derivative and return-contrast interfaces. The owner carrier,
 return block, determinant and physical source map are not yet bound to those
-interfaces; their possible equivalence is not rejected. The Lean derivative has
-fixed β and z, while the owner's full identity allows varying β. No new
+interfaces; their possible equivalence is not rejected. The fixed-parameter
+derivative has fixed β and z. A separate existing variable-parameter theorem
+already proves both β and z contributions for its finite matrix curve; its
+application to the full owner clock and CQ identity remains unproved. The
+earlier gap review omitted this theorem and has been corrected. No new
 conditional wrapper, physical selection or GR closure is claimed.
 
 ### #334 §7fj: full clock versus compressed return

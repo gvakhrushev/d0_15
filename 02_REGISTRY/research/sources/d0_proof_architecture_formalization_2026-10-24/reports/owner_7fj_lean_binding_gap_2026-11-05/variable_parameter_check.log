@@ -1,0 +1,88 @@
+D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_heat_log_partition.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] [Nonempty ι] {β : ℝ → ℝ} {Δ : ℝ → Matrix ι ι ℂ} {dβ : ℝ} {dΔ K : Matrix ι ι ℂ} {t : ℝ}
+  (hβ : HasDerivAt β dβ t) (hβne : β t ≠ 0) (hΔ : HasDerivAt Δ dΔ t) (hHerm : star (Δ t) = Δ t) :
+  have Z := D0.Analysis.matrixHeatPartition (β t) (Δ t);
+  have ρ := D0.Analysis.MovingProjectorBookPrice.matrixThermalState (β t) (Δ t);
+  HasDerivAt (fun s => (β s)⁻¹ * Real.log (D0.Analysis.matrixHeatPartition (β s) (Δ s)))
+    (-(ρ * (dΔ - D0.Algebra.MovingProjectorTransport.comm K (Δ t))).trace.re +
+      (-Real.log Z / β t ^ 2 - (ρ * Δ t).trace.re / β t) * dβ)
+    t
+D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_feedback_logdet.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] {z : ℝ → ℝ} {P U : ℝ → Matrix ι ι ℂ} {dz : ℝ} {dP dU : Matrix ι ι ℂ} {t : ℝ} (hz : HasDerivAt z dz t)
+  (hP : HasDerivAt P dP t) (hU : HasDerivAt U dU t) (hIdem : ∀ᶠ (s : ℝ) in nhds t, P s * P s = P s)
+  (hSelf : ∀ᶠ (s : ℝ) in nhds t, star (P s) = P s)
+  (hSlit :
+    (1 -
+          ↑(z t) •
+            (star (D0.Algebra.MovingProjectorTransport.cut (P t) (U t)) *
+              D0.Algebra.MovingProjectorTransport.cut (P t) (U t))).det ∈
+      Complex.slitPlane) :
+  have C := D0.Algebra.MovingProjectorTransport.cut (P t) (U t);
+  have F := star C * C;
+  have R := (1 - ↑(z t) • F)⁻¹;
+  have V :=
+    (1 - P t) *
+        (dU - D0.Algebra.MovingProjectorTransport.comm (D0.Algebra.MovingProjectorTransport.generator (P t) dP) (U t)) *
+      P t;
+  HasDerivAt
+    (fun s =>
+      -Real.log
+          (1 -
+                ↑(z s) •
+                  (star (D0.Algebra.MovingProjectorTransport.cut (P s) (U s)) *
+                    D0.Algebra.MovingProjectorTransport.cut (P s) (U s))).det.re)
+    (z t * (2 * (R * star C * V).trace.re) + dz * (R * F).trace.re) t
+D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price.{u_1} {ι : Type u_1} [Fintype ι]
+  [DecidableEq ι] [Nonempty ι] {β z : ℝ → ℝ} {P U Δ : ℝ → Matrix ι ι ℂ} {dβ dz : ℝ} {dP dU dΔ : Matrix ι ι ℂ} {t : ℝ}
+  (hβ : HasDerivAt β dβ t) (hβne : β t ≠ 0) (hz : HasDerivAt z dz t) (hP : HasDerivAt P dP t) (hU : HasDerivAt U dU t)
+  (hΔ : HasDerivAt Δ dΔ t) (hHerm : star (Δ t) = Δ t) (hIdem : ∀ᶠ (s : ℝ) in nhds t, P s * P s = P s)
+  (hSelf : ∀ᶠ (s : ℝ) in nhds t, star (P s) = P s)
+  (hSlit :
+    (1 -
+          ↑(z t) •
+            (star (D0.Algebra.MovingProjectorTransport.cut (P t) (U t)) *
+              D0.Algebra.MovingProjectorTransport.cut (P t) (U t))).det ∈
+      Complex.slitPlane) :
+  HasDerivAt (fun s => D0.Analysis.MovingProjectorBookPrice.matrixBook03Price (β s) (z s) Δ P U s)
+    (D0.Analysis.MovingProjectorBookPrice.variableMovingProjectorBook03Source (β t) (z t) (P t) (U t) (Δ t) dβ dz dP dU
+      dΔ)
+    t
+D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price_of_isometric_cut.{u_1}
+  {ι : Type u_1} [Fintype ι] [DecidableEq ι] [Nonempty ι] {β z : ℝ → ℝ} {P U Δ : ℝ → Matrix ι ι ℂ} {dβ dz : ℝ}
+  {dP dU dΔ : Matrix ι ι ℂ} {t : ℝ} (hβ : HasDerivAt β dβ t) (hβne : β t ≠ 0) (hz : HasDerivAt z dz t) (hz0 : 0 ≤ z t)
+  (hz1 : z t < 1) (hP : HasDerivAt P dP t) (hU : HasDerivAt U dU t) (hΔ : HasDerivAt Δ dΔ t) (hHerm : star (Δ t) = Δ t)
+  (hIdem : ∀ᶠ (s : ℝ) in nhds t, P s * P s = P s) (hSelf : ∀ᶠ (s : ℝ) in nhds t, star (P s) = P s)
+  (hIsometry : star (U t) * U t = 1) :
+  HasDerivAt (fun s => D0.Analysis.MovingProjectorBookPrice.matrixBook03Price (β s) (z s) Δ P U s)
+    (D0.Analysis.MovingProjectorBookPrice.variableMovingProjectorBook03Source (β t) (z t) (P t) (U t) (Δ t) dβ dz dP dU
+      dΔ)
+    t
+'D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_heat_log_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_feedback_logdet' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Analysis.MovingProjectorBookPrice.hasDerivAt_variable_moving_projector_book03_price_of_isometric_cut' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+def D0.Analysis.MovingProjectorBookPrice.variableMovingProjectorHeatSource.{u_1} : {ι : Type u_1} →
+  [Fintype ι] → [DecidableEq ι] → ℝ → Matrix ι ι ℂ → ℝ → Matrix ι ι ℂ → Matrix ι ι ℂ → Matrix ι ι ℂ → ℝ :=
+fun {ι} [Fintype ι] [DecidableEq ι] β Δ dβ dP dΔ P =>
+  have K := D0.Algebra.MovingProjectorTransport.generator P dP;
+  have Z := D0.Analysis.matrixHeatPartition β Δ;
+  have ρ := D0.Analysis.MovingProjectorBookPrice.matrixThermalState β Δ;
+  -(ρ * (dΔ - D0.Algebra.MovingProjectorTransport.comm K Δ)).trace.re +
+    (-Real.log Z / β ^ 2 - (ρ * Δ).trace.re / β) * dβ
+def D0.Analysis.MovingProjectorBookPrice.variableMovingProjectorFeedbackSource.{u_1} : {ι : Type u_1} →
+  [Fintype ι] → [DecidableEq ι] → ℝ → Matrix ι ι ℂ → Matrix ι ι ℂ → ℝ → Matrix ι ι ℂ → Matrix ι ι ℂ → ℝ :=
+fun {ι} [Fintype ι] [DecidableEq ι] z P U dz dP dU =>
+  have K := D0.Algebra.MovingProjectorTransport.generator P dP;
+  have C := D0.Algebra.MovingProjectorTransport.cut P U;
+  have F := star C * C;
+  have R := (1 - ↑z • F)⁻¹;
+  have V := (1 - P) * (dU - D0.Algebra.MovingProjectorTransport.comm K U) * P;
+  z * (2 * (R * star C * V).trace.re) + dz * (R * F).trace.re
