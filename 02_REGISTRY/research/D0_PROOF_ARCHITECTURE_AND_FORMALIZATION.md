@@ -16686,3 +16686,31 @@ checked the direct coverage argument and the negative example.
 Thus the encoder/decoder premise in the prior adapter is substantial, not a
 consequence of an arbitrary `FutureExecution`. Classical choice and absence
 of a computable canonicalizer retain their previously stated scope.
+
+### Actual ordered return-price derivative for one affine reporter
+
+`D0.Research.TaskFaithfulAffineReporterDerivative` applies the existing
+task-faithful source at owner commit `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`,
+`PROOF_RU.md` blob `c99e90a8c8e96bae70e700fa88d1c2d824a1831b`, §4–5, to
+the actual ordered `taskReturnProduct`. For one label `j` occurring exactly
+once in the chosen word, fix the preparations and the other reference effects,
+and vary the full-input effect affinely as `E_j(t)=E_j+t·direction`. Positive
+scalar reference corners and the explicit protected-compression hypothesis
+`R_j† direction R_j = α I` yield the derivative
+`(4α / c_j) · regularizedReturnGain` at `t=0`, with the same Gram history and
+the actual product of all other corners. The proof derives the nearby scalar
+corners, the product factor, and equality of actual and reference prices before
+applying the existing radial derivative. The named zero-compressed-direction
+corollary yields zero derivative without requiring zero history or positive gain.
+
+This is the scalar-compressed subcase, not the general nonradial reporter
+variation. Self-adjointness and effect bounds along the affine family, native
+admission, changing preparation and independent heat, clock and work terms
+remain separate obligations. In particular `α=0` does not imply that the full
+input direction is zero. Independent review confirmed the stated conditional
+scope; no new physical selection or GR closure follows.
+
+The [narrow-build receipt and axiom check](sources/d0_proof_architecture_formalization_2026-10-24/reports/affine_reporter_narrow_2026-11-04/receipt.json)
+record 2,703 Lake jobs and the standard `propext`, `Classical.choice` and
+`Quot.sound` axioms for the main results and zero-direction control. The
+complete public-import build remains a separate integration check.

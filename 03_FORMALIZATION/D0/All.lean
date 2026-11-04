@@ -700,6 +700,7 @@ import D0.Research.NativeWeightedDiracNyquistApplication
 import D0.Research.PrimitiveJetComposition
 import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
+import D0.Research.TaskFaithfulAffineReporterDerivative
 import D0.Research.TaskFaithfulRadialPriceDerivative
 import D0.Research.TaskFaithfulReporterEffect
 import D0.Research.TaskFaithfulReturnBound
