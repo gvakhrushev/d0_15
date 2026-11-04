@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only, single-pilot C0 reconciliation view over an immutable Git snapshot.
+"""Read-only, pinned-slice C0 reconciliation view over an immutable Git snapshot.
 
 No source decisions or scientific statuses are created here. The tool reads the
 existing architecture artifact, scientific owner, support registry, dependency
@@ -641,6 +641,11 @@ def reconcile(repo: Path, ref: str, *, pins: PilotPins = DEFAULT_PINS) -> dict:
 class KernelSectionPins:
     """Selectors for one existing review section, not accepted C0 membership."""
 
+    section_label: str = "Book02 §02.3b"
+    source_anchor: str = "02.3b"
+    units_heading: str = "C0 Book02 mathematical-unit candidates"
+    require_unit_module: bool = False
+    additional_modules: tuple = ()
     primary_heading: str = "C0 source review candidate: Book02 §02.3b"
     units_sha256: str = "206943122c0f0c1f4db2749b31c1f1e79ba250b506f54b3bc7945319af8991a0"
     primary_sha256: str = "325ebf56d196460c71d305c37a7caf849d649db595d683470ee3e4e7164d200b"
@@ -662,9 +667,34 @@ class KernelSectionPins:
     result_id: str = "lean-operational-theory-transfer"
 
 
+BOOK01_PINS = KernelSectionPins(
+    section_label="Book01 §01.1.8", source_anchor="01.1.8",
+    units_heading="C0 Book01 mathematical-unit candidates", require_unit_module=True,
+    primary_heading="C0 source review candidate: Book01 §01.1.8",
+    units_sha256="7e57599211725623450085baa888770950c98ba0523d84d5a71113b3d07959bf",
+    primary_sha256="94516f450237cbb7e0cbccd831ffe9e7b9b2542a1ad92b8e04bf89985e796f8e",
+    source_path="01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+    source_blob="eb2d8ea779189084cdaaca717326df88589ec918",
+    section_range=(14123, 18478),
+    section_sha256="bd468ba86fc3eb70004871d2bb5777c40afbfb7f92394d33c52b46759692ea9f",
+    module="D0.Foundation.VerificationCore",
+    module_path="03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+    module_blob="01b02ebbe81a62464e81d5c397c101fd60fff4f9",
+    additional_modules=(
+        ("D0.Foundation.FutureExecution", "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+         "065a8f631e65bda8b9bc85a6ff6217de31bdd1f4"),
+        ("D0.Foundation.VerifiabilityNecessity", "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean",
+         "f0dbfcf6e99a24346fa1d9407b4ed49cc784a2e1")),
+    application_id="lean-verification-core-to-foundation",
+    application_sha256="d53a965e0b258f787078f1e197554f043ae035a5feda7a7b2aca3ad00d71ca8e",
+    # This section has no complete historical owner inventory. Do not silently
+    # substitute Book02's diagnostic crosswalk for missing Book01 evidence.
+    historical_inventory_path="", result_id="lean-verification-core-composition")
+
+
 def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                               inventory_path=None, inventory_sha256=None) -> dict:
-    """Reconcile Book02 atoms without inferring C0 or scientific acceptance.
+    """Reconcile one pinned kernel slice without inferring scientific acceptance.
 
     Clean inventory overrides are exact tracked artifacts, not paths to host
     files. The historical crosswalk remains diagnostic: its dirty source tree
@@ -674,8 +704,9 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
     result = {
         "schema": "d0-c0-kernel-section-view/1", "snapshot": None,
         "scope": {
-            "sections": ["Book02 §02.3b"], "finite_slice_only": True,
-            "book01_01_1_8": "candidate_ranges_exist_atom_reconciliation_pending",
+            "sections": [pins.section_label], "finite_slice_only": True,
+            "book01_01_1_8": ("selected_for_reconciliation_not_accepted" if pins.source_anchor == "01.1.8"
+                              else "outside_selected_slice_pending_independent_reconciliation"),
             "all_other_c0_candidates": "not_enumerated_unresolved",
             "c0_acceptance_assessment": "not_evaluated", "coverage_reported": False,
             "this_view_does_not_freeze_or_accept": True, "scientific_status_changed": False,
@@ -708,28 +739,38 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             from tools.c0_kernel_units import parse_unit_candidates
         except ModuleNotFoundError:
             from c0_kernel_units import parse_unit_candidates
-        units = parse_unit_candidates(text, pins.units_sha256)
+        units = parse_unit_candidates(text, pins.units_sha256, heading=pins.units_heading)
+        module_pins = ((pins.module, pins.module_path, pins.module_blob),) + pins.additional_modules
+        if len({m for m, _, _ in module_pins}) != len(module_pins):
+            raise MissingEvidence("duplicate pinned owner module")
+        owners = {m: (path, blob) for m, path, blob in module_pins}
+        for u in units:
+            if pins.require_unit_module and "module" not in u:
+                raise MissingEvidence("mathematical atom lacks explicit owner module")
+            if u.get("module", pins.module) not in owners:
+                raise MissingEvidence("mathematical atom names unpinned owner module")
         section = one([b for b in re.split(r"(?m)^### ", text)
                        if b.split("\n", 1)[0].strip() == pins.primary_heading],
-                      "Book02 primary review section")
+                      pins.section_label + " primary review section")
         if primary_section_sha256(section) != pins.primary_sha256:
-            raise MissingEvidence("Book02 primary review section digest mismatch")
+            raise MissingEvidence(pins.section_label + " primary review section digest mismatch")
         for token in (pins.source_commit, pins.source_blob, pins.section_sha256,
-                      pins.application_id, pins.module_blob):
+                      pins.application_id, *(blob for _, _, blob in module_pins)):
             if token not in section:
-                raise MissingEvidence("Book02 primary review section lacks exact source/application pin")
+                raise MissingEvidence(pins.section_label + " primary review section lacks exact source/application pin")
         if git.blob(pins.source_commit, pins.source_path) != pins.source_blob:
-            raise MissingEvidence("Book02 source blob mismatch at pinned commit")
+            raise MissingEvidence(pins.section_label + " source blob mismatch at pinned commit")
         if git.blob(snapshot, pins.source_path) != pins.source_blob:
-            raise MissingEvidence("Book02 source changed in selected snapshot")
+            raise MissingEvidence(pins.section_label + " source changed in selected snapshot")
         raw = git.data(pins.source_commit, pins.source_path)
         start, end = pins.section_range
         if not 0 <= start < end <= len(raw):
-            raise MissingEvidence("Book02 section range is outside pinned source")
+            raise MissingEvidence(pins.section_label + " section range is outside pinned source")
         if hashlib.sha256(raw[start:end]).hexdigest() != pins.section_sha256:
-            raise MissingEvidence("Book02 source section digest mismatch")
-        if git.blob(snapshot, pins.module_path) != pins.module_blob:
-            raise MissingEvidence("TheoryTransfer source differs from pinned reviewed module")
+            raise MissingEvidence(pins.section_label + " source section digest mismatch")
+        for module, path, blob in module_pins:
+            if git.blob(snapshot, path) != blob or git.blob(pins.source_commit, path) != blob:
+                raise MissingEvidence("source differs from pinned reviewed module: " + module)
         if len({u["atom"] for u in units}) != len(units):
             raise MissingEvidence("duplicate mathematical atom key")
         for u in units:
@@ -745,6 +786,7 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             "section_range": [start, end], "section_sha256": pins.section_sha256,
             "primary_path": PRIMARY, "primary_section_sha256": pins.primary_sha256,
             "module_path": pins.module_path, "module_blob": pins.module_blob,
+            "owner_modules": [{"module": m, "path": p, "blob": b} for m, p, b in module_pins],
         }
         # Keep context/duplicate/open-obligation dispositions in their existing
         # owning prose instead of copying a second classification into code.
@@ -753,7 +795,7 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             "section_sha256": pins.primary_sha256, "pinned_text": section,
             "acceptance": "not_authenticated_by_this_view",
         }
-        return {"raw": raw, "units": units}
+        return {"raw": raw, "units": units, "owners": owners}
 
     step("source_and_primary", source_and_primary)
 
@@ -761,7 +803,7 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
         path = "02_REGISTRY/gr_assembly/applications.json"
         obj = parse_json(git.data(snapshot, path), "applications")
         app = one([a for a in obj["applications"] if a["id"] == pins.application_id],
-                  "existing TheoryTransfer application")
+                  "existing kernel application")
         digest = hashlib.sha256(json.dumps(app, ensure_ascii=False, sort_keys=True,
                                            separators=(",", ":")).encode()).hexdigest()
         if digest != pins.application_sha256:
@@ -784,6 +826,8 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
         units = data["source_and_primary"]["units"]
         if bool(inventory_path) != bool(inventory_sha256):
             raise MissingEvidence("inventory override requires both tracked path and SHA-256")
+        if inventory_path is None and not pins.historical_inventory_path:
+            raise MissingEvidence("this section requires a clean tracked inventory override")
         path = inventory_path or pins.historical_inventory_path
         digest = inventory_sha256 or pins.historical_inventory_sha256
         if not re.fullmatch(r"[0-9a-f]{64}", digest):
@@ -803,7 +847,7 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             if old != pins.historical_inventory_snapshot or inv.get("worktree_dirty") is not True:
                 raise MissingEvidence("historical kernel inventory provenance differs from pin")
             row = one([r for r in inv["results"] if r["result_id"] == pins.result_id],
-                      "historical TheoryTransfer result")
+                      "historical kernel result")
             declarations = row["compiled_declarations"]
             evidence["state"] = "historical_dirty_snapshot_diagnostic_only"
         else:
@@ -811,7 +855,8 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                     or inv.get("inventory_mode") != "owning_module_enumeration"
                     or inv.get("worktree_dirty") is not False):
                 raise MissingEvidence("current kernel inventory must be clean owning-module enumeration")
-            if (git.blob(old, pins.module_path) != pins.module_blob
+            if (any(git.blob(old, path) != blob
+                    for path, blob in data["source_and_primary"]["owners"].values())
                     or not git.unchanged_lean_inputs(old, snapshot)):
                 raise MissingEvidence("kernel inventory snapshot no longer matches tracked Lean inputs or symlink targets")
             expected_toolchain = git.data(snapshot, "03_FORMALIZATION/lean-toolchain").decode().strip()
@@ -823,6 +868,8 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             for field in ("lean_source_digest", "collector_sha256"):
                 if not isinstance(inv.get(field), str) or not re.fullmatch(r"[0-9a-f]{64}", inv[field]):
                     raise MissingEvidence("kernel inventory " + field + " is malformed")
+            if inv["collector_sha256"] != hashlib.sha256(git.data(old, collector_path)).hexdigest():
+                raise MissingEvidence("kernel inventory collector digest differs from tracked collector")
             evidence.update(state="reported_compiled_metadata_consistent_not_replayed",
                             tracked_lean_inputs="unchanged_between_snapshots",
                             toolchain=expected_toolchain, collector_source="unchanged_between_snapshots",
@@ -835,8 +882,10 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
         for u in units:
             dec = one([d for d in declarations if d.get("name") == u["declaration"]],
                       "compiled declaration " + u["declaration"])
+            owner = u.get("module", pins.module)
+            owner_path, _ = data["source_and_primary"]["owners"][owner]
             if (dec.get("exists") is not True or dec.get("internal_name") is not False
-                    or dec.get("module") != pins.module or dec.get("source_path") != pins.module_path
+                    or dec.get("module") != owner or dec.get("source_path") != owner_path
                     or dec.get("declaration_kind") != u["declaration_kind"]):
                 raise MissingEvidence("kernel declaration metadata mismatch: " + u["declaration"])
             typ = dec.get("elaborated_type")
@@ -845,6 +894,11 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                 raise MissingEvidence("kernel declaration signature mismatch: " + u["declaration"])
             axioms = dec.get("axioms")
             if inventory_path is not None:
+                if dec.get("proof_details_status") != "collected" or any(
+                        not isinstance(dec.get(field), list) or
+                        any(not isinstance(x, str) or not x for x in dec[field])
+                        for field in ("proof_dependencies", "type_dependencies")):
+                    raise MissingEvidence("kernel declaration lacks complete proof metadata: " + u["declaration"])
                 if not isinstance(axioms, list) or any(not isinstance(a, str) or not a for a in axioms):
                     raise MissingEvidence("kernel declaration lacks axiom audit: " + u["declaration"])
                 if any(a not in ("propext", "Classical.choice", "Quot.sound") for a in axioms):
@@ -869,7 +923,7 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             a, b = u["source_range"]
             row = {k: v for k, v in u.items() if k not in ("declaration_kind", "type_sha256")}
             row.update(source_unit_key=(f"source:{pins.source_commit}:{pins.source_path}"
-                                        f"#02.3b/{u['atom']}"),
+                                        f"#{pins.source_anchor}/{u['atom']}"),
                        source_excerpt=raw[a:b].decode("utf-8"),
                        source_excerpt_sha256=hashlib.sha256(raw[a:b]).hexdigest(),
                        classification_state="proposed_atomization_of_existing_review_ranges",
@@ -879,10 +933,10 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                        application_scope="shared conditional application; no per-atom semantic acceptance inferred")
             result["units"].append(row)
     result["interpretation"] = (
-        "This is a proposed finite Book02 atomization, not the C0 denominator. Shared source ranges "
+        f"This is a proposed finite {pins.section_label} atomization, not the C0 denominator. Shared source ranges "
         "are evidence for distinct assertions, not disjoint byte units. Definitions, conditional theorems "
         "and negative controls remain distinct. Existing accepted application metadata does not accept "
-        "these source classifications. Book01 and the remainder of C0 are unresolved. Exact reported "
+        "these source classifications. All unselected slices and full C0 acceptance remain unresolved. Exact reported "
         "compiled signatures do not establish semantic correspondence or replay the build."
     )
     return result
@@ -893,7 +947,9 @@ def main():
     parser.add_argument("--repo", type=Path, required=True)
     parser.add_argument("--snapshot", required=True, help="commit or ref to resolve once")
     parser.add_argument("--kernel-sections", action="store_true",
-                        help="bounded Book02 mathematical-atom view; Book01 remains pending")
+                        help="bounded kernel mathematical-atom view; defaults to Book02")
+    parser.add_argument("--kernel-book", choices=("book01", "book02"),
+                        help="select the pinned kernel slice; requires --kernel-sections")
     parser.add_argument("--kernel-inventory", help="tracked clean compiled inventory path")
     parser.add_argument("--kernel-inventory-sha256", help="exact SHA-256 of that inventory")
     args = parser.parse_args()
@@ -901,9 +957,12 @@ def main():
         parser.error("--kernel-inventory and --kernel-inventory-sha256 must be supplied together")
     if args.kernel_inventory and not args.kernel_sections:
         parser.error("--kernel-inventory requires --kernel-sections")
+    if args.kernel_book and not args.kernel_sections:
+        parser.error("--kernel-book requires --kernel-sections")
     result = (reconcile_kernel_sections(
         args.repo, args.snapshot, inventory_path=args.kernel_inventory,
-        inventory_sha256=args.kernel_inventory_sha256)
+        inventory_sha256=args.kernel_inventory_sha256,
+        pins=BOOK01_PINS if args.kernel_book == "book01" else KernelSectionPins())
         if args.kernel_sections else reconcile(args.repo, args.snapshot))
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
     return 0 if not result["issues"] else 1

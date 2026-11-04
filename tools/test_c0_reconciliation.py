@@ -570,6 +570,9 @@ class KernelSectionFixture:
         self.review_path = "02_REGISTRY/gr_assembly/reviews/kernel.md"
         self.write(self.source_path, "Source theorem\n")
         self.write(self.module_path, "-- fixture source\n")
+        self.second_module = "D0.Foundation.FutureExecution"
+        self.second_path = "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+        self.write(self.second_path, "-- second owner fixture source\n")
         self.write("03_FORMALIZATION/lean-toolchain", "fixture-toolchain\n")
         self.write("tools/lean_declaration_inventory.py", "# fixture collector\n")
         self.write(self.review_path, "Existing application review, not C0 acceptance.\n")
@@ -600,11 +603,13 @@ class KernelSectionFixture:
                           "snapshot_commit": self.source_commit, "worktree_dirty": False,
                           "public_import_root": "D0.All", "inventory_mode": "owning_module_enumeration",
                           "toolchain": "fixture-toolchain", "lean_source_digest": "1" * 64,
-                          "collector_sha256": "2" * 64,
+                          "collector_sha256": hashlib.sha256(b"# fixture collector\n").hexdigest(),
                           "declarations": [{"name": self.unit["declaration"], "exists": True,
                                             "internal_name": False, "module": self.module,
                                             "source_path": self.module_path, "declaration_kind": "theorem",
-                                            "elaborated_type": "FixtureType", "axioms": ["propext"]}]}
+                                            "elaborated_type": "FixtureType", "axioms": ["propext"],
+                                            "proof_details_status": "collected",
+                                            "proof_dependencies": [], "type_dependencies": []}]}
         self.write(self.inventory_path, json.dumps(self.inventory))
         self.snapshot = self.commit("kernel metadata")
         self.pins = c0.KernelSectionPins(
@@ -630,6 +635,34 @@ class KernelSectionFixture:
         callback(self.inventory)
         self.write(self.inventory_path, json.dumps(self.inventory))
         return self.commit("changed inventory")
+
+    def use_multiple_owners(self):
+        """Schema-2 fixture whose second namespace deliberately differs from its owner."""
+        self.unit["module"] = self.module
+        second = dict(self.unit, atom="other_owner", declaration="D0.DifferentNamespace.run",
+                      module=self.second_module)
+        self.units = [self.unit, second]
+        self.inventory["declarations"].append(dict(self.inventory["declarations"][0],
+            name=second["declaration"], module=self.second_module, source_path=self.second_path))
+        blob = self.git("rev-parse", f"{self.source_commit}:{self.second_path}")
+        self.pins = replace(self.pins, section_label="Book01 fixture", source_anchor="01.1.8",
+                            units_heading="C0 Book01 mathematical-unit candidates",
+                            require_unit_module=True, historical_inventory_path="",
+                            additional_modules=((self.second_module, self.second_path, blob),))
+        self.write(self.inventory_path, json.dumps(self.inventory))
+        return self.write_multi_primary()
+
+    def write_multi_primary(self):
+        payload = json.dumps({"schema": "d0-c0-kernel-unit-candidates/2", "units": self.units})
+        review = (self.pins.primary_heading + "\n\n" + self.source_commit + "\n" +
+                  self.source_blob + "\n" + self.section_sha + "\n" + self.pins.application_id +
+                  "\n" + self.pins.module_blob + "\n" + self.pins.additional_modules[0][2])
+        self.write(c0.PRIMARY, "# Primary\n\n### " + review +
+                   "\n\n### " + self.pins.units_heading + "\n\n```json\n" + payload + "\n```\n")
+        self.pins = replace(self.pins, primary_sha256=c0.primary_section_sha256(review),
+                            units_sha256=hashlib.sha256(payload.encode()).hexdigest())
+        self.snapshot = self.commit("multiple pinned owners")
+        return self.snapshot
 
 
 class KernelSectionTests(unittest.TestCase):
@@ -746,6 +779,89 @@ class KernelSectionTests(unittest.TestCase):
         self.repo.write(c0.PRIMARY, text + '\n```json\n{}\n```\n')
         view = self.repo.view(self.repo.commit("second candidate block"))
         self.assert_issue(view, "source_and_primary", "exactly one primary kernel JSON block")
+
+    def test_multiple_actual_owners_do_not_follow_namespace(self):
+        self.repo.use_multiple_owners()
+        view = self.repo.view()
+        self.assertEqual(view["issues"], [])
+        self.assertEqual(len(view["units"]), 2)
+        self.assertEqual(view["units"][1]["module"], self.repo.second_module)
+        self.assertIn("#01.1.8/", view["units"][1]["source_unit_key"])
+        self.assertEqual(view["scope"]["sections"], ["Book01 fixture"])
+        self.assertFalse(view["scope"]["coverage_reported"])
+
+    def test_schema_two_requires_per_atom_owner(self):
+        self.repo.use_multiple_owners()
+        self.repo.units[1].pop("module")
+        view = self.repo.view(self.repo.write_multi_primary())
+        self.assert_issue(view, "source_and_primary", "candidate fields")
+
+    def test_wrong_but_allowed_owner_does_not_inherit_another_declaration(self):
+        self.repo.use_multiple_owners()
+        self.repo.units[0]["module"] = self.repo.second_module
+        view = self.repo.view(self.repo.write_multi_primary())
+        self.assert_issue(view, "compiled_inventory", "metadata mismatch")
+        self.assertIsNone(view["units"][0]["compiled_declaration"])
+
+    def test_unpinned_owner_is_rejected_before_inventory(self):
+        self.repo.use_multiple_owners()
+        self.repo.units[1]["module"] = "D0.UnpinnedOwner"
+        view = self.repo.view(self.repo.write_multi_primary())
+        self.assert_issue(view, "source_and_primary", "unpinned owner")
+        self.assertEqual(view["units"], [])
+
+    def test_additional_owner_blob_mutation_invalidates_slice(self):
+        self.repo.use_multiple_owners()
+        self.repo.write(self.repo.second_path, "-- changed owner\n")
+        view = self.repo.view(self.repo.commit("second owner changed"))
+        self.assert_issue(view, "source_and_primary", "pinned reviewed module")
+        self.assertEqual(view["units"], [])
+
+    def test_missing_second_owner_declaration_fails_closed(self):
+        self.repo.use_multiple_owners()
+        ref = self.repo.update_inventory(lambda i: i["declarations"].pop())
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "expected one, found 0")
+
+    def test_wrong_candidate_section_cannot_be_substituted(self):
+        self.repo.use_multiple_owners()
+        self.repo.pins = replace(self.repo.pins, units_heading="C0 Book02 mathematical-unit candidates")
+        self.assert_issue(self.repo.view(), "source_and_primary", "exactly one primary kernel candidate section")
+
+    def test_multiple_owner_section_requires_clean_inventory_override(self):
+        self.repo.use_multiple_owners()
+        view = c0.reconcile_kernel_sections(self.repo.root, self.repo.snapshot, pins=self.repo.pins)
+        self.assert_issue(view, "compiled_inventory", "requires a clean tracked inventory")
+
+    def test_proof_details_and_dependency_lists_are_required(self):
+        for change in ({"proof_details_status": "omitted"}, {"proof_dependencies": None},
+                       {"type_dependencies": [""]}):
+            with self.subTest(change=change):
+                self.repo.inventory["declarations"][0].update(
+                    proof_details_status="collected", proof_dependencies=[], type_dependencies=[])
+                ref = self.repo.update_inventory(lambda i: i["declarations"][0].update(change))
+                self.assert_issue(self.repo.view(ref), "compiled_inventory", "complete proof metadata")
+
+    def test_reported_collector_digest_is_checked_against_source_bytes(self):
+        ref = self.repo.update_inventory(lambda i: i.update(collector_sha256="2" * 64))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "collector digest differs")
+
+    def test_cli_book_selector_requires_kernel_mode(self):
+        proc = subprocess.run([sys.executable, str(Path(c0.__file__)), "--repo", str(self.repo.root),
+                               "--snapshot", self.repo.snapshot, "--kernel-book", "book01"],
+                              capture_output=True, text=True)
+        self.assertEqual(proc.returncode, 2)
+        self.assertIn("--kernel-book requires --kernel-sections", proc.stderr)
+
+    def test_cli_selects_book01_and_preserves_book02_default(self):
+        for args, anchor in (([], "02.3b"), (["--kernel-book", "book02"], "02.3b"),
+                             (["--kernel-book", "book01"], "01.1.8")):
+            with self.subTest(args=args), mock.patch.object(sys, "argv", [
+                    "c0_reconciliation.py", "--repo", str(self.repo.root), "--snapshot", self.repo.snapshot,
+                    "--kernel-sections", *args]), mock.patch.object(
+                    c0, "reconcile_kernel_sections", return_value={"issues": []}) as run, \
+                    mock.patch("sys.stdout", new_callable=io.StringIO):
+                self.assertEqual(c0.main(), 0)
+                self.assertEqual(run.call_args.kwargs["pins"].source_anchor, anchor)
 
 
 if __name__ == "__main__":

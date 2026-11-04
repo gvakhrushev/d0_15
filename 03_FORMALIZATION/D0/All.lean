@@ -46,6 +46,7 @@ import D0.Analysis.MovingProjectorVariableParameters
 import D0.Analysis.NoncommutingPerturbationProduct
 import D0.Analysis.PositiveMatrixLogDet
 import D0.Analysis.RelativeLogDetScaleBound
+import D0.Analysis.ReturnTemplateErrorBudget
 import D0.Born
 import D0.Bridge.AdlerWeissBridge
 import D0.Bridge.Assumptions.BellissardGapLabel
@@ -697,6 +698,7 @@ import D0.Research.TaskFaithfulReturnBound
 import D0.Research.TaskFaithfulReturnContrast
 import D0.Research.TaskFaithfulReturnPrice
 import D0.Research.TaskFaithfulReturnProduct
+import D0.Research.TaskFaithfulReturnTemplateBudget
 import D0.SelfReading.PrimitiveMinimalityFromRawFunctor
 import D0.SelfReading.RawCanonicalSelfReadingFunctor
 import D0.SelfReading.RawHistoryCategory

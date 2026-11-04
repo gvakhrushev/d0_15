@@ -12550,8 +12550,15 @@ the scope and Lean hypotheses; source ranges may contain several units.
 | `[17786,18069)` | `finiteSigmaWitness` requires supplied `E` and finite protocol state and line types. Computability statements about codes do not provide a computable encoder for arbitrary raw states. |
 | `[18069,18478)` | Source ownership, existing application and open physical conditions; this is provenance/scope rather than a new mathematical result. |
 
-The owner is `D0.Foundation.VerificationCore` together with
-`D0.Foundation.EmpiricalTheoryFactorization`. The previously accepted
+The selected declarations are owned by `D0.Foundation.VerificationCore`
+(blob `01b02ebbe81a62464e81d5c397c101fd60fff4f9`),
+`D0.Foundation.FutureExecution` (blob `065a8f631e65bda8b9bc85a6ff6217de31bdd1f4`)
+and `D0.Foundation.VerifiabilityNecessity`
+(blob `f0dbfcf6e99a24346fa1d9407b4ed49cc784a2e1`). These bytes are identical
+at the pinned source commit and the current implementation checkpoint.
+The `EmpiricalTheoryFactorization` namespace does not imply ownership by
+that source file: its generic quotient API remains an imported dependency
+(blob `8d5a0d565504d3f0e16de0ea716bf452f45c1d96`). The previously accepted
 `lean-verification-core-to-foundation` application has review ref
 `4aa19a667387b3250d310d00c511bd1dd315bbb0` and review SHA-256
 `0f2d369c951408ae0c692447d09eccf172f42d1a83365ad125cc091de6a6b9a5`.
@@ -15580,7 +15587,7 @@ The independently reviewable block is pinned by SHA-256
 }
 ```
 
-## Current compiled evidence for the Book02 slice — 4 November 2026
+## Compiled evidence at the Book02 checkpoint — 4 November 2026
 
 The public `D0.All` collector on clean code snapshot
 `107b155f44fb58050d56ecd6d9f9968da87a5035` enumerated `TheoryTransfer` and
@@ -15661,3 +15668,703 @@ already supply the operator comparison used here. Value tolerance is not a
 derivative bound. Heat, measurement and independent preparation/source errors
 remain their own contributions. C0 membership/acceptance and the rest of the
 formalization/refactoring programme remain open; `GR_closed=false`.
+
+### C0 Book01 mathematical-unit candidates
+
+This schema-2 candidate block is owned here, not in the reconciliation tool.
+Each atom binds its actual declaration owner separately from its namespace.
+Source ref/path/bytes and all owner blobs are pinned by the earlier Book01
+source-review section. The 44 entries separate definitions, constructions,
+conditional theorems and negative controls; overlapping source ranges may
+support distinct assertions. Their count is not the C0 denominator.
+
+The displayed record/run equations and their following named restatement
+are counted once. Equality of future profiles implies equality of current
+observations by the empty-word definition; strictness belongs to the concrete
+hidden-bit control, not every supplied execution. Headings, navigation,
+physical-status statements and bundled restatements are not additional units.
+Auxiliary code implementation equations, canon idempotence and archive length
+are proof dependencies, not separately asserted statements in this section.
+
+`TheoryVerification` supplies E; no arbitrary-F existence is inferred.
+`SigmaWitness` separately supplies its finite alphabet, round-trip, shortlex
+minimality and Computable witnesses. `finiteSigmaWitness` requires finite
+protocol State and Line; code computation does not supply a computable encoder
+for arbitrary raw states. Positional append retention requires an existing
+index; list order is not yet a physical clock.
+
+The overlap with Book02 is concrete reuse: `verifiedStateFutureEquiv E`
+composes `E.represents` with `F.futureClassEquivEmpirical.symm`;
+Book02's `verifiedStateImageEquiv` then composes this with `I.imageEquiv`.
+Book02's `verifiedRun_image` consumes Book01's `representedRun_state` and
+`I.run_commutes`. The resulting image-state equation is a distinct conclusion,
+not a second independent proof of the fixed-F run equation. Neither supplied
+E nor these maps establishes Book02's all-native-context coverage.
+
+These classifications and exclusions remain candidates for the global C0
+composition. The full denominator and semantic acceptance are not inferred
+from an existing assembly application or from matching declaration types.
+The exact clean compiled inventory and bounded independent source review
+are recorded at the associated implementation checkpoint.
+
+```json
+{
+  "schema": "d0-c0-kernel-unit-candidates/2",
+  "units": [
+    {
+      "atom": "FutureExecution",
+      "disposition": "definition",
+      "source_range": [
+        14190,
+        14555
+      ],
+      "hypotheses": "Supplied State, Action, Test and Outcome types, a total primitive step map and an observation map.",
+      "statement": "The fixed operational interface packages its state/action/test/outcome carriers and primitive maps; it does not prove physical admission or completeness of an action/test family.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+      "declaration_kind": "inductive",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "3d867f457fe030792644131457f9c1673c41b31e69560c7d928d2f31e57e31a5"
+    },
+    {
+      "atom": "FutureExecution.run",
+      "disposition": "definition",
+      "source_range": [
+        14190,
+        14686
+      ],
+      "hypotheses": "F : FutureExecution; a finite word w : List F.Action and a raw state s.",
+      "statement": "Execute the supplied primitive steps in list order by foldl, including the empty word returning s.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "95b19590755c55fd2c1a2c6d771a24a93f1a2609ec5ca3d97737589524d498aa"
+    },
+    {
+      "atom": "FutureExecution.profile",
+      "disposition": "definition",
+      "source_range": [
+        14557,
+        14686
+      ],
+      "hypotheses": "F : FutureExecution; raw state s, arbitrary finite word w and test q.",
+      "statement": "The complete profile is observe F (run F w s) q. Empty-word profiles include current observations; all finite supplied future words are retained.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "2be4c39547709782e4109d0c41976591d863c1f6da3a4b12ee0e9eb89e1c120e"
+    },
+    {
+      "atom": "FutureExecution.futureSetoid",
+      "disposition": "definition",
+      "source_range": [
+        14686,
+        15020
+      ],
+      "hypotheses": "One fixed supplied F : FutureExecution.",
+      "statement": "Raw states are equivalent exactly when their full future profiles are equal.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureSetoid",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "f79f6214d1abe2595a2e542deb3b3c1c6b758b7308dad6eb5be542b1e8b14fe7"
+    },
+    {
+      "atom": "FutureExecution.FutureClass",
+      "disposition": "definition",
+      "source_range": [
+        14686,
+        15020
+      ],
+      "hypotheses": "One fixed supplied F : FutureExecution and its futureSetoid.",
+      "statement": "Construct the quotient of raw states by equality of every supplied finite-future profile.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.FutureClass",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "107884f4efc5acc42ead5ccfe3e2a33376ba0099242bac7906ca640760aedb85"
+    },
+    {
+      "atom": "FutureExecution.profile_step_congr",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        14686,
+        15020
+      ],
+      "hypotheses": "F; raw states s,t with F.profile s = F.profile t; any supplied primitive a.",
+      "statement": "Applying the same primitive to equal-profile states preserves equality of their complete future profiles.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_step_congr",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "0955a90397af1a82b134cb8b5c59b65bcd772b3702d712fa4110295dc6cf3902"
+    },
+    {
+      "atom": "FutureExecution.quotientStep",
+      "disposition": "construction",
+      "source_range": [
+        14686,
+        15020
+      ],
+      "hypotheses": "F : FutureExecution and a supplied primitive a.",
+      "statement": "Use the proved profile congruence to descend the primitive step to a well-defined map on F.FutureClass.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientStep",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "b06277904a9c12927052701f8cb84760f8d5cbaab478c40e1496d7e35906b7b3"
+    },
+    {
+      "atom": "FutureExecution.futureEmpiricalTheory",
+      "disposition": "construction",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "hypotheses": "One fixed supplied F : FutureExecution.",
+      "statement": "The empirical theory on F.State uses test pairs (finite word, original test), Unit catalogue and the complete future profile as observation.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "49532b069811ea413f2c3f4c056733cdccd2205f62a59ff8645d64231340df1b"
+    },
+    {
+      "atom": "TheoryVerification",
+      "disposition": "definition",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "hypotheses": "An empirical theory T is supplied; Book01 specializes T to F.futureEmpiricalTheory.",
+      "statement": "A TheoryVerification consists of a verification protocol, its VerificationContract, and an equivalence from protocol states to the empirical quotient. This is supplied E, not an existence theorem for arbitrary F.",
+      "declaration": "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+      "declaration_kind": "inductive",
+      "module": "D0.Foundation.VerifiabilityNecessity",
+      "type_sha256": "501ae668d60c24420842931f50b929b3944a1bb335598c66643db189082ad08b"
+    },
+    {
+      "atom": "FutureExecution.futureClassEquivEmpirical",
+      "disposition": "construction",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "hypotheses": "F : FutureExecution; no verification witness E is needed for this quotient-to-quotient construction.",
+      "statement": "Construct an equivalence F.FutureClass to EmpiricalState F.futureEmpiricalTheory from the same defining future profiles. The equivalence itself is not assumed.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureClassEquivEmpirical",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "3be7c42d743b7e6c646a560ebcf68f026146a3096003c8f360c434f159521d9a"
+    },
+    {
+      "atom": "verifiedStateFutureEquiv",
+      "disposition": "construction",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "hypotheses": "F and supplied E : TheoryVerification F.futureEmpiricalTheory.",
+      "statement": "Compose E.represents with the constructed empirical/future quotient bridge to identify the supplied protocol state carrier with F.FutureClass.",
+      "declaration": "D0.Foundation.VerificationCore.verifiedStateFutureEquiv",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "42cc1f68598711ab1999e34ced06a6773200c3d394f34037424a5a956b658aaa"
+    },
+    {
+      "atom": "representedState",
+      "disposition": "definition",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "hypotheses": "F; supplied E : TheoryVerification F.futureEmpiricalTheory; raw state s.",
+      "statement": "Represent s by applying E.represents.symm to its class in the same future empirical quotient.",
+      "declaration": "D0.Foundation.VerificationCore.representedState",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "01ebe54669d28929ade4acb28064db0ddca3a2631b1ec4561b9a59ce2841180b"
+    },
+    {
+      "atom": "representedStep",
+      "disposition": "definition",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "hypotheses": "F; supplied E; a supplied primitive a; protocol state p.",
+      "statement": "Transport the empirical action through E.represents to define the primitive on the same protocol state carrier.",
+      "declaration": "D0.Foundation.VerificationCore.representedStep",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "a8a894f552357ad127c5715c73cbe68f377c1d55da7a153aac82a10200f9f6f9"
+    },
+    {
+      "atom": "representedRun",
+      "disposition": "definition",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "hypotheses": "F; supplied E; a finite primitive word w; protocol state p.",
+      "statement": "Execute the transported primitive steps in list order on E.protocol.State.",
+      "declaration": "D0.Foundation.VerificationCore.representedRun",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "5d77ce02f5cde98b4014efaf5a1ed353dfa06884d7f2661bd544effb59231642"
+    },
+    {
+      "atom": "representedRecord",
+      "disposition": "definition",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "hypotheses": "F; supplied E; raw state s.",
+      "statement": "Use E.protocol.record on representedState E s to obtain the actual record of that represented state.",
+      "declaration": "D0.Foundation.VerificationCore.representedRecord",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "07a04a30619c9fdcd9080d98356be4aed46c2f3aaf87e8e9810e30d9bc982b47"
+    },
+    {
+      "atom": "representedRecord_eq_iff",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        15354,
+        15503
+      ],
+      "hypotheses": "F; supplied E including its actual protocol contract and quotient representation; raw states s,t.",
+      "statement": "The two represented records are equal if and only if F.profile s = F.profile t. Record injectivity comes from the owned verification-contract theorem.",
+      "declaration": "D0.Foundation.VerificationCore.representedRecord_eq_iff",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "c2a6ee08bd18a26b30c1b54e8f3d7fe21cb7860c0f437b4bd8f6692dd41e8964"
+    },
+    {
+      "atom": "representedRun_state",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        15354,
+        15503
+      ],
+      "hypotheses": "F; supplied E; arbitrary finite word w and raw state s.",
+      "statement": "Running w on representedState E s equals representedState E (F.run w s), on the same supplied representation.",
+      "declaration": "D0.Foundation.VerificationCore.representedRun_state",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "8a47034c6895c141c8ab0a527341d0d711f92e1ed9eea7e86aaac5f9beae94d6"
+    },
+    {
+      "atom": "representedComparison_iff",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        15503,
+        16028
+      ],
+      "hypotheses": "F; supplied E; registered line l, catalogue c and raw states s,t.",
+      "statement": "The actual protocol comparison on the represented records returns true if and only if the full future profiles differ.",
+      "declaration": "D0.Foundation.VerificationCore.representedComparison_iff",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "ad467cf0ad312e07dba3addf5eb3897005ba8082d8214d54dd453242287f46ce"
+    },
+    {
+      "atom": "representedComparison_catalogue_independent",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        15503,
+        16028
+      ],
+      "hypotheses": "F; supplied E; registered lines l,l', catalogue values c,c' and raw states s,t.",
+      "statement": "Comparing the same represented records gives the same Boolean result across both registered lines and both catalogue values. No physical causal-independence conclusion is added.",
+      "declaration": "D0.Foundation.VerificationCore.representedComparison_catalogue_independent",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "bfd7f4140bfb633cab718fad654a38f7ab42746b270dd9cd126289566acfadee"
+    },
+    {
+      "atom": "sufficient_memory_preserves_record",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "hypotheses": "F; supplied E; Memory; encode : F.State -> Memory and decode : Memory -> List F.Action -> F.Test -> F.Outcome; correct : for every s, decode (encode s) = F.profile s; encode s = encode t.",
+      "statement": "Any such lossless profile memory equality implies equality of the same represented protocol records. Neither the memory decoder nor its correctness is inferred from E.",
+      "declaration": "D0.Foundation.VerificationCore.sufficient_memory_preserves_record",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "c72d11c999e49c49d0a0a16eeb4938e15c6effe21d767b278295078c1faf7bde"
+    },
+    {
+      "atom": "hiddenBitExecution",
+      "disposition": "construction",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "hypotheses": "Specified finite carrier Bool x Bool, Bool actions, Unit tests and Bool outcomes.",
+      "statement": "Construct the control whose current detector reads the first bit and whose true action copies the retained second bit into the visible position. This is a supplied finite interface, not an arbitrary physical action.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "979e815674b3bc968cdc9e6f0aac53dffd6c957f27abc002706cc052bc1c15d3"
+    },
+    {
+      "atom": "hiddenBit_same_current",
+      "disposition": "negative_control_component",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "hypotheses": "The concrete hiddenBitExecution and states (false,false), (false,true).",
+      "statement": "The current Unit-test observations of these two states agree.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_same_current",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "edc752cbca9620e13f8342557fb379aa32f01571707558f448a5ddbc0468e864"
+    },
+    {
+      "atom": "hiddenBit_different_future",
+      "disposition": "negative_control_component",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "hypotheses": "The same concrete hiddenBitExecution and states; the finite word [true] is an allowed action word of that interface.",
+      "statement": "The complete future profiles of the two equal-current-observation states differ; the admitted one-step word supplies the witness.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_different_future",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "e7762f716bdb88064fc4aa8e6cd62d9d8d80be6221433fff5e921870c212ef0e"
+    },
+    {
+      "atom": "hiddenBit_records_distinct",
+      "disposition": "negative_control",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "hypotheses": "Supplied E : TheoryVerification hiddenBitExecution.futureEmpiricalTheory.",
+      "statement": "Every such supplied verification realization gives distinct records to (false,false) and (false,true). Existence of E is not constructed by this theorem.",
+      "declaration": "D0.Foundation.VerificationCore.hiddenBit_records_distinct",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "73cb20b303bca6530908315a93da1ed3c2579737ec29bad05b62de0bbc428f02"
+    },
+    {
+      "atom": "FutureExecution.uncoupledCenter",
+      "disposition": "construction",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "hypotheses": "An arbitrary supplied F : FutureExecution.",
+      "statement": "Adjoin a Boolean state coordinate while retaining the original action/test/outcome types; steps and observations act on the original coordinate and never read the added bit.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "f69d77d8e07ef22f79e40203efc118637b8078d0c82b1b7f4f89f10a47dd80b3"
+    },
+    {
+      "atom": "FutureExecution.uncoupledCenter_profile_independent",
+      "disposition": "negative_control_component",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "hypotheses": "Any supplied F, original state s and added Boolean values b,b' in F.uncoupledCenter.",
+      "statement": "The complete future profiles of (s,b) and (s,b') agree for every finite word of the unchanged original actions and all unchanged original tests.",
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.FutureExecution",
+      "type_sha256": "46679062c7cc9fbcffc93afab3deaf58b4b1c660a4c6bbbfc35efcac2edb457f"
+    },
+    {
+      "atom": "uncoupledCenter_records_equal",
+      "disposition": "negative_control",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "hypotheses": "Any F; supplied E : TheoryVerification F.uncoupledCenter.futureEmpiricalTheory; original state s and Boolean values b,b'.",
+      "statement": "The represented records of (s,b) and (s,b') coincide. Adding tests that read the bit changes the interface and is outside this control.",
+      "declaration": "D0.Foundation.VerificationCore.uncoupledCenter_records_equal",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "037a2dd8bdd60536771eceee5c9c8565af4da8e47d6a1bc8d842705033f47d92"
+    },
+    {
+      "atom": "SigmaObject",
+      "disposition": "definition",
+      "source_range": [
+        16656,
+        16923
+      ],
+      "hypotheses": "F and supplied E : TheoryVerification F.futureEmpiricalTheory.",
+      "statement": "The common tagged semantic code carrier is E.protocol.State plus (E.protocol.State x E.protocol.Line), retaining the line coordinate within the object.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaObject",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "7f41e594e540bb56615348bba49838138b890637309227fcd53fa3950708b73c"
+    },
+    {
+      "atom": "CodePresentation",
+      "disposition": "definition",
+      "source_range": [
+        16656,
+        16923
+      ],
+      "hypotheses": "Symbol and Object types with LinearOrder Symbol; encoding and decoding functions are supplied.",
+      "statement": "A presentation supplies encode, partial decode, decode(encode x)=some x and shortlex minimality of encode x among codes decoding to x. The round trip and minimality are witness fields, not consequences of E.",
+      "declaration": "D0.Foundation.VerificationCore.CodePresentation",
+      "declaration_kind": "inductive",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "53da1f1db4d33bc438bccee0f087631dc3904eb0be486796239ffcd815db4158"
+    },
+    {
+      "atom": "SigmaWitness",
+      "disposition": "definition",
+      "source_range": [
+        16656,
+        16923
+      ],
+      "hypotheses": "F and supplied E; additionally a finite linearly ordered Primcodable symbol type and a CodePresentation of SigmaObject E are supplied.",
+      "statement": "The witness also supplies actual Mathlib Computable canonicalization and Computable2 code comparison. These effective witnesses and code properties are hypotheses, not extracted from abstract verifiability.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness",
+      "declaration_kind": "inductive",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "148ac1564c7f993c49e6f498fc747aa4166fcf151ba5d8657547f489916f53c1"
+    },
+    {
+      "atom": "CodePresentation.encode_injective",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "Symbol and Object with LinearOrder Symbol; supplied K : CodePresentation Symbol Object, including decode_encode.",
+      "statement": "The supplied encoder is injective because applying the decoder to equal encoded strings recovers equal objects; finiteness and E are not needed for this implication.",
+      "declaration": "D0.Foundation.VerificationCore.CodePresentation.encode_injective",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "6551b41500d1080a05e8115f2081a31c56dc2c2f17788ecf673fcaac111081bc"
+    },
+    {
+      "atom": "SigmaWitness.dmin",
+      "disposition": "definition",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W : SigmaWitness E; raw state s.",
+      "statement": "Encode the state tag Sum.inl (representedState E s) in the supplied common code presentation.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "e79539fc26bd40e582191128371c925e5592d832ec095306f3e8b0967cc90334"
+    },
+    {
+      "atom": "SigmaWitness.dmin_canonical",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W : SigmaWitness E; raw state s.",
+      "statement": "Canonicalizing W.dmin s leaves that valid encoded state string unchanged.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin_canonical",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "8720c472c0f0cbb45104a776dae7b7570b0463a54db9e1612151f924ca4a3107"
+    },
+    {
+      "atom": "SigmaWitness.dmin_minimal",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W; raw state s and a code c with W.coding.decode c = some (Sum.inl (representedState E s)).",
+      "statement": "W.dmin s is ShortlexLE c by the supplied code presentation's shortlex-minimality field. No global optimization over alternative alphabets or physical work follows.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin_minimal",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "88db8d2e98f7b18371d68b16e60a08f149b94085f2b8dc4c4c9dbf5870cd605a"
+    },
+    {
+      "atom": "SigmaWitness.archiveCode",
+      "disposition": "definition",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W; entry (raw state s, registered line l).",
+      "statement": "Encode Sum.inr (representedState E s,l), retaining both represented state and registered line identity in the semantic object.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.archiveCode",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "7738479e3b68c08579dadf622fca974238892aa841c7d5fdbe6dcc4e8606d95c"
+    },
+    {
+      "atom": "SigmaWitness.archive",
+      "disposition": "definition",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W; a finite ordered list of raw-state/registered-line entries.",
+      "statement": "Map archiveCode over the original list to obtain the stored code list in the same registration order.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.archive",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "b0676d1934b5ba3ab42fc8e1dff4ed7a0cb976df055590f3f84ea924859f266e"
+    },
+    {
+      "atom": "SigmaWitness.historyFrame",
+      "disposition": "definition",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W; an existing code list history and index n.",
+      "statement": "The prefix frame is the set of codes occurring in history.take (n+1); the original ordered list is retained separately. Its index is not a calibrated physical time.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.historyFrame",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "bfb1ce12cc43857611514fea60511dc66733df29d3d496ba20273721cfc67c88"
+    },
+    {
+      "atom": "SigmaWitness.query",
+      "disposition": "definition",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W; an already stored code list history and natural index n.",
+      "statement": "Read history[n]? as an optional stored code by its recorded position, without computing a raw-state encoder.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.query",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "5fd478b68e96c49e6b919fb8d3fab5dd957a5b8f1ee6e9a4b38dea3ab1f2492f"
+    },
+    {
+      "atom": "SigmaWitness.query_computable",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W : SigmaWitness E, with the supplied primitive coding on the finite symbol type.",
+      "statement": "Positional query of the stored list is Computable2 by Mathlib list access; this does not establish computability of W.dmin on arbitrary raw states.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.query_computable",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "4490551daf67f084e043a71142713328d1ac3d05b4d9f64c345eac4a324ae4b8"
+    },
+    {
+      "atom": "SigmaWitness.archiveCode_eq_iff",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        17272,
+        17382
+      ],
+      "hypotheses": "F; supplied E and W; raw states s,t and registered lines l,l'.",
+      "statement": "archiveCode(s,l)=archiveCode(t,l') if and only if F.profile s = F.profile t and l=l'. Both complete future distinctions and line provenance survive the same encoder.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.archiveCode_eq_iff",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "61fc27ed40c1bb78b4633877a65de84a27b21808ccb4458ef484d24427dc61a2"
+    },
+    {
+      "atom": "SigmaWitness.archive_preserves_line",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        17382,
+        17786
+      ],
+      "hypotheses": "F; supplied E and W; one raw state s and distinct registered line labels l,l'.",
+      "statement": "The two archive codes for that same state but distinct line labels are different, even though the registered detector verdicts can agree.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.archive_preserves_line",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "51d95e40f8799ba5201fec2350175abd3a793d6669443e1677b298939305e5e6"
+    },
+    {
+      "atom": "SigmaWitness.query_archive",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        17382,
+        17786
+      ],
+      "hypotheses": "F; supplied E and W; finite raw-entry history and arbitrary natural index n.",
+      "statement": "Querying the coded archive at n equals mapping archiveCode over the optional original entry history[n]?; out-of-range access remains none.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.query_archive",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "aec04b8e4f16c15d2b51b0f39aa62dbbbe9e13034690c97d93ebea009149ad46"
+    },
+    {
+      "atom": "SigmaWitness.query_append_retains",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        17382,
+        17786
+      ],
+      "hypotheses": "F; supplied E and W; stored code lists history and later; n < history.length.",
+      "statement": "Querying history ++ later at the earlier valid index n equals querying history at n. This is list-order retention, not a physical-clock theorem.",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.query_append_retains",
+      "declaration_kind": "theorem",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "d185b4e2d77c350cfbf4789849ca28281453248c51156c2db8eb65439f2b4f0f"
+    },
+    {
+      "atom": "finiteSigmaWitness",
+      "disposition": "construction",
+      "source_range": [
+        17786,
+        18069
+      ],
+      "hypotheses": "F; supplied E : TheoryVerification F.futureEmpiricalTheory; Fintype E.protocol.State and Fintype E.protocol.Line.",
+      "statement": "Construct SigmaWitness E using singleton codes over a finite enumeration of SigmaObject E. Its canonicalization and code comparison are proved computable; the semantic enumeration is noncomputable and no encoder on arbitrary raw states is inferred.",
+      "declaration": "D0.Foundation.VerificationCore.finiteSigmaWitness",
+      "declaration_kind": "definition",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "aa5b3f8a3908119cb0acaba2b3a57b007475bdf5883a2e49495140f2216fe642"
+    }
+  ]
+}
+```
+
+## Book01 reconciliation and actual finite template budget — 4 November 2026
+
+The Book01 candidate block above supplies 44 source-keyed units for the
+previously unprocessed §01.1.8 slice. Independent review checked the complete
+pinned source, definitions, theorem hypotheses, repeated assertions and the
+actual Book02 composition. The selected source owner is bound per atom;
+namespace spelling is not an owner locator. The shared reconciliation tool
+now accepts `--kernel-book book01`, while the default remains Book02 and the
+historical single-pilot view is preserved. Both consume primary-owned data,
+not a second classification table in code. A wrong allowed owner, changed
+additional-owner source, missing declaration, wrong book block, missing proof
+metadata or forged collector hash cannot acquire a successful compiled link.
+C0 semantic acceptance and the full denominator remain outside these views.
+
+The source's finite compiler-budget corollary after equation (12) is now
+formalized in `D0.Analysis.ReturnTemplateErrorBudget` and applied directly in
+`D0.Research.TaskFaithfulReturnTemplateBudget`. The actual consumer derives
+both endpoint error budgets from full-input effect errors and exact scalar
+reference corners, with `M>0` actual factors at each endpoint. Under
+`0≤d<1/2` and `d≤min(1/(2M), e*abs(t)*lam/(4*exp(θ+2)))`, the normalized
+return-price contrast is at most `e`. The proof supplies `η≤2Md`, the finite
+exponential bound and the exact `Λ=M*lam` normalization. The positive scale
+`lam`, common `K/T₀`, actual baseline gain and nonzero `t` remain explicit;
+physical selection of these data and separate heat/preparation/work/clock or
+measurement errors are not derived. No compiler count is hidden in a constant.
+The earlier dated section's open compiler-budget item is discharged at this
+finite conditional scope; its log-derivative, gain-ratio and other exclusions
+remain as stated.
+
+Narrow builds and independent mathematical review passed. Full local
+`D0.All` passed 4,788 Lake jobs, source digest
+`97b499af27d62fb54eaf1c9e0d9274a471f4ce74371533d5a58198e3b1f9954e`.
+The C0 reconciliation and byte-partition suites passed 97 tests, including
+hostile owner/proof/source substitutions. The [checkpoint report](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_template_budget_2026-11-04/SUMMARY_RU.md)
+records exact build/compiled/view evidence. No full cold-start or historical
+#334 certificate replay is attributed to this increment. The entire
+formalization/refactoring programme remains active; `GR_closed=false`.
