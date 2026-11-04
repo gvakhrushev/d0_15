@@ -21060,3 +21060,50 @@ reviews checked the price, source mode, task section, active-port reader,
 tower and material-map boundaries. Structural guards run on final inputs.
 No scientific acceptance, registry promotion, Ready, retirement or merge.
 GR_closed=false; the full objective remains active.
+
+## 4 November 2026 checkpoint: contextual programme quotient and explicit unscreened source
+
+Phase: native realization / final composition, existing #334.
+Input: ee1debce5b694988cd86062e5f1855713d46d0b3. Same two owned write
+paths; new primary section 7fb, PQ1–PQ11. Consumer: scoped B/C/D,
+FN's complete-history implementation map and RO's faithful-source test.
+The user's b42db3d review is consumed against the later RO/EOQ inputs.
+
+The new contextual application proves full price equality after ANY
+common literal admissible suffix on the final physical carrier, including
+new births and all retained outputs. The former closing gate becomes an
+interior edge; the new complete closure, cuts and both Hodge degrees are
+conjugated explicitly. The suffix is fully repriced. Different logical
+plus/minus equalities and old gains are not thereby preserved. Fixed new
+tests at formerly unmarked old stages retain their actual response.
+
+A compact scalar perturbation of the owned nonvacuum solution, preserving
+its collar, gives the explicit physical Einstein-source margin
+k0(2 a0 epsilon+epsilon^2)(256 l/315)^4/nu>0. The complete material inverse
+Jacobian lifts its test to the real coframe; RO's actual decoded-centre,
+normalizer and source bounds give half this margin in the native normalized
+source. Exact fibre price equality makes it independent of every faithful
+implementation at the same full logical data. This does not classify
+stationary sections after adding new independent logical operands.
+
+The nuisance ledger retains field, four preparation, FP8, old input,
+measure/PF and observer rows separately from generated/guarded objects.
+It names the fixed scene/clock/task regime. No previously independent
+control is silently frozen or replaced by a reaction labelled Euler zero.
+
+The optional scalar path-law transport remains a distinct application.
+An actual four-word CX catalogue has complete-operation fibre sizes
+2,1,1. Even hypothetical per-word Book weights have unequal multiplicity
+factors after summing those fibres. No path law, new entropy fee or sampler
+is inferred from the full master-price identity.
+
+Validation: 57 new exact native clock/closure/cut/terminal/fibre checks and
+52 exact local source/material-Jacobian checks, normally and with Python
+optimization, with identical receipts per checker. Their executable text
+and receipts are embedded in the primary artifact. The 63-dimensional
+native clock keeps 26775 Hodge modes; no large heat diagonalization or GR
+compiler/root search is claimed. Independent bounded reviews checked the
+variable ledger, continuation boundary and physical source normalization.
+Affected structural guards run on final inputs once. No scientific
+acceptance, registry promotion, Ready, retirement or merge. GR_closed=false;
+the full goal remains active.
