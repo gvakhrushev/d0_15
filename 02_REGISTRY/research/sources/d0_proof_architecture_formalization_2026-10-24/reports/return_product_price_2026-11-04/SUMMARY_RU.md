@@ -32,7 +32,14 @@ source digest `e29d141659b19bb9dd707ebfe5213242a1662364214aebc3ac56e27a86432bbd`
 В выводе 1323 предупреждения из неизменённых модулей; в девяти новых
 модулях предупреждений нет. Проверки repository, generated views, no-sorry,
 debt non-growth и diff прошли; существующий debt baseline равен 5.
-Компилируемый инвентарь извлекается отдельно после фиксации чистого кода.
+[declarations.json](declarations.json) извлечён через публичный D0.All на чистом
+коммите `7062d1c9e9fe21bf6373e494d169566d9b6505ba` (`worktree_dirty=false`).
+Его source digest совпадает с общей сборкой. В нём 239 деклараций, включая
+93 записи девяти новых модулей и 146 записей прежних TheoryTransfer/ReturnBound
+для повторной проверки Book02. Числа включают сгенерированные Lean-декларации
+и не являются числом принятых результатов C0. Все записи новых модулей
+разрешены и содержат полные proof details; footprint ограничен
+Classical.choice, Quot.sound, propext.
 
 ## Граница результата
 
@@ -49,3 +56,22 @@ T₀ — заданный положительный базовый масшта
 коэффициентов. Тепло, измерительные ошибки и независимые подготовительные
 источники не удалены; допуск значений не превращён в оценку производных.
 C0 не принят, вся программа формализации не завершена; GR_closed=false.
+
+## Повторение проверок
+
+```bash
+python3 tools/lean_task_build.py narrow D0.Research.TaskFaithfulReturnContrast
+python3 tools/lean_task_build.py narrow D0.Analysis.MatrixRelativeLogDetContrast
+python3 tools/lean_task_build.py final
+python3 tools/validate_repo.py
+python3 tools/generate_lean_views.py --check
+python3 03_FORMALIZATION/tools/check_no_sorry_in_core.py --all
+python3 tools/formalization_debt_audit.py --check
+```
+
+Для повторного инвентаря используются все одиннадцать модулей из
+`requested_modules` в declarations.json; каждый передаётся отдельным
+`--module` в tools/lean_declaration_inventory.py. Результат должен быть
+собран из совместимых исходников и зависимостей; старый receipt сам по себе
+не удостоверяет новую рабочую копию. Полный cold-start и исторические
+математические проверки #334 в этом Lean-проходе не перезапускались.
