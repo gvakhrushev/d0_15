@@ -17040,8 +17040,8 @@ finite-dimensional complex inner-product space yields the same bound, and the
 
 The explicit standard pair action is injective and attains `2*n` in the
 **algebra-homomorphism** class; the projection to one block is non-injective
-for `n > 0`. The current witness has not established *-preservation, so it
-does not alone establish sharpness in the *-representation class. The source's
+for `n > 0`. That algebraic witness alone did not establish *-preservation; the separate
+star witness below now establishes sharpness in the abstract *-representation class. The source's
 identification of the algebra of all actual future effects, including the
 original 128 Kraus operators and its exact modular-rank input, has not been
 transported into this Lean theorem. This slice does not select a physical
@@ -17079,3 +17079,24 @@ not a full-search result. Existing locator/target checks, exact-pin distinction
 and physical/C0 acceptance boundaries remain unchanged. Three targeted tests
 passed on Windows, plus the existing v3 `verify_discovery=True` control. The
 mocked supported-API case does not attest real safe-open on another platform.
+
+
+### Sharpness for faithful abstract star representations
+
+`D0.Algebra.FaithfulMatrixPairStarWitness` now constructs the missing attaining
+witness in the *-representation class: block-diagonal inclusion into
+`M_(2n)(ℂ)`, followed by the standard action on the complex Euclidean space
+`ℂ^(Fin n ⊕ Fin n)`. Both maps preserve the algebra and star operations; the
+composition is injective and its carrier has complex dimension `2*n`. For
+`n=8` it supplies a faithful sixteen-dimensional star representation, so the
+preceding lower bound is sharp for this abstract pair algebra. Projection to
+the first block remains a unital star representation on an eight-dimensional
+space, but is non-injective; it is an explicit negative control.
+
+This construction does not identify the original CAR future-effect algebra,
+transport its 128 Kraus operators or establish physical admission, clock or
+work. The #334 scientific owner and these inputs remain open; `GR_closed=false`.
+The independently reviewed source and its bound dependency passed direct Lean
+checks with the existing Mathlib cache; the final published text changes only
+`actual` to `abstract` in a comment after that review. Full dependency-cache
+provenance and final integration for this added module remain to be checked.
