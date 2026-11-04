@@ -15579,3 +15579,28 @@ The independently reviewable block is pinned by SHA-256
   ]
 }
 ```
+
+## Current compiled evidence for the Book02 slice — 4 November 2026
+
+The public `D0.All` collector on clean code snapshot
+`107b155f44fb58050d56ecd6d9f9968da87a5035` enumerated `TheoryTransfer` and
+`TaskFaithfulReturnBound` with complete type and proof-dependency information.
+All ten new return-bound theorems report only `Classical.choice`, `Quot.sound`
+and `propext`. The Lean-source digest matches the successful full build:
+`930bd44c15b594d76e81fe387d6857aeb38548bca97536273718c8e3cac1f5a0`.
+
+At report snapshot `ebfdc7550389d592c696601468691462779fb24f`,
+`c0_reconciliation.py --kernel-sections` with that tracked clean inventory
+checks all 30 Book02 candidates without provenance/signature issues. The
+default historical dirty inventory still reports unresolved current compiled
+evidence. This preserves the distinction between an old receipt and evidence
+compatible with current tracked Lean inputs. Source and semantic fields come
+from the primary-owned candidate block, not a second table in Python.
+
+The [replay instructions, inventory, build receipt and validation record](sources/d0_proof_architecture_formalization_2026-10-24/reports/return_error_book02_2026-11-04/SUMMARY_RU.md)
+retain the exact inputs. The 64 C0 tests include hostile source, signature,
+axiom, collector, dependency and application mutations; all pass. Independent
+source review checked the finite mapping and prompted the no-coverage
+correction above. This review does not accept full C0 membership, Book01
+overlap decisions, semantic coverage or physical admission. Those obligations
+remain explicit, and the programme remains in progress.

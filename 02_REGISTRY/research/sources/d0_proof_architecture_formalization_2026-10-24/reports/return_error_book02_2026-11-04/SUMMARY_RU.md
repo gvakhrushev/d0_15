@@ -25,14 +25,18 @@ Draft PR #402. Выгрузка выполнена из чистой рабоч�
 достаточной гипотезой; необходимость не доказана. Нарушение полного native
 различения подтверждают явные компоненты контрпримера.
 
-Воспроизведение из корня репозитория:
+Точное воспроизведение проверенного представления из корня репозитория:
 
 ```bash
-python3 tools/c0_reconciliation.py --repo . --snapshot HEAD \
+python3 tools/c0_reconciliation.py --repo . --snapshot ebfdc7550389d592c696601468691462779fb24f \
   --kernel-sections \
   --kernel-inventory 02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/return_error_book02_2026-11-04/declarations.json \
   --kernel-inventory-sha256 db0d5f759b0932713e18a53c10029229843765f6fc9825847f5a5ca6f9e5125c
 ```
+
+Этот запуск проверил все 30 кандидатов без ошибок связности и сигнатур.
+Для проверки совместимости с более поздним коммитом можно заменить snapshot
+на `HEAD`; изменение Lean-входов потребует новой выгрузки.
 
 Полная локальная сборка `D0.All` прошла 4 776 заданий; её точные входы
 сохранены в [build_receipt.json](build_receipt.json). Целевые проверки поиска,

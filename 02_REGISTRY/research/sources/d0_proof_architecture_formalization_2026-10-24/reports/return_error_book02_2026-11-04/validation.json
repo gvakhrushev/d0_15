@@ -40,7 +40,17 @@
       "formalization_debt_audit --check",
       "git diff --check"
     ],
-    "full_cold_start_replayed": false
+    "full_cold_start_replayed": false,
+    "kernel_reconciliation": {
+      "snapshot_commit": "ebfdc7550389d592c696601468691462779fb24f",
+      "units": 30,
+      "issues": [],
+      "stdout_sha256": "3d562a6ca47094859c196753ed4d7a53a779f8dfaeac24f433d06ab590d30236",
+      "stdout_bytes": 74077,
+      "replay_command_in": "SUMMARY_RU.md",
+      "raw_output": "derived view; not duplicated in Git",
+      "semantic_acceptance": false
+    }
   },
   "scope": {
     "new_lean_theorems": 10,
