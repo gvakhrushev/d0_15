@@ -1,0 +1,24 @@
+{
+  "schema": "d0-repeated-reporter-direct-v1",
+  "base_commit": "29543a7a0379a283ab2cb04f52320331f30ffedf",
+  "source_module_sha256": "5d89c1b5c27fd8cda3ae3e8aeee2d88e8237be4a36765e598f6a47d528c6bb95",
+  "source_module_blob": "627ab7771232ad3cdc15e696928bfa2cee2b259f",
+  "scratch_source_sha256": "7902d6cb04f09a3517da5a122b0263597f4ecbda45e1d5ff06d156c76df5fd12",
+  "direct_lean_exit": 0,
+  "scratch_lean_exit": 0,
+  "scratch_axiom_checks": 6,
+  "axiom_scope": "propext, Classical.choice, Quot.sound",
+  "review": "independent conditional math/source review, not physical admission",
+  "build_boundary": "Direct Lean invocations against cached dependencies; cache provenance not independently authenticated. Clean public-import build remains pending.",
+  "logs": {
+    "direct": {
+      "raw_sha256": "590d568b0961bb91661ca4511775cf5c3bdb158cc4b223bf3338a83e30a11a13",
+      "gzip_sha256": "80237223f12f25d85398cb0568c4c753e321bad42532ab73862720e33511d418"
+    },
+    "scratch_axioms": {
+      "raw_sha256": "4cbf91ce9dd5dc3d490ff9fca4f014dead1a1418207b563d6013ebd1f21ac4c2",
+      "gzip_sha256": "f27bb5fe2d32456ef64f21c84c23240c051bb8220796e5dceb1471ba3a73e415"
+    }
+  },
+  "GR_closed": false
+}

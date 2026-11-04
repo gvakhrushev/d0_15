@@ -16970,3 +16970,24 @@ The module was checked directly with Lean using existing cached dependencies;
 the cache provenance was not independently attested. An independent read-only
 review checked the hypotheses, ordered product, repeated labels and example.
 A clean final integration build remains required on the final inputs.
+
+### Repeated tied reporter labels in the ordered price
+
+`D0.Research.TaskFaithfulRepeatedReporterDerivative` extends the existing
+one-occurrence affine reporter theorem to an arbitrary word. For one typed
+label `j`, all occurrences share the same fixed preparation, effect and affine
+direction. If `m = w.count j`, the derivative of the actual ordered
+`taskReturnProduct` price is `(4mα/c_j)·gain`. The proof derives the exact
+word-product factor, local positivity and log-scale derivative from the
+existing scalar compression and exact price identity. Separate exported
+controls cover absence (`m=0`, without scalarity or positivity assumptions),
+`m=1` and `m=2`. No positive gain or inverse retained history is required.
+
+This is a conditional tied-label theorem. Repeated names in a physical gate
+word do not establish a common preparation or variation; independent forward
+and reverse variations remain independent. Effect bounds, physical admission,
+changing preparation, nonradial directions and heat/clock/work terms are not
+derived; `GR_closed=false`. The exact module was checked by a direct Lean
+invocation against the current cached dependencies, and an independent review
+checked the factor, the source substitution and scope. This is not yet a
+clean public-import build for the final integrated source.
