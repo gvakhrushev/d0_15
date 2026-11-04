@@ -17775,3 +17775,13 @@ birth/CX control. The owner's full unitary clock retains the missing birth
 complement and yields G9–G10. The generic unitary Gram identity and its
 positive-chart consumer already exist in Lean; their binding to this clock,
 the full Hodge carrier and actual source remains to be proved.
+
+### Determinant transport for an embedded clock defect
+
+`D0.Algebra.IsometricClockDeterminant.det_clock_defect` now proves the finite
+ambient-to-restricted determinant identity for an explicitly supplied
+rectangular isometry and clock-defect representation. The [proof and C0
+integration receipts](sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_clock_det_inventory_1976_2026-11-05/README.md)
+retain the counterexample without isometry. Constructing the actual owner
+`J_f`, identifying the generated-clock source and its physical variation
+remain separate applications; no physical admission or GR closure is inferred.
