@@ -16484,3 +16484,21 @@ path enters the producer. Existing source requirements, scoped query edges and
 the oversized memo's pin-only boundary remain unchanged. These changes concern
 rediscovery of evidence; they do not accept mathematical scope, freeze C0 or
 discharge native physical premises. `GR_closed=false`.
+
+### Direct-content threshold correction — 4 November 2026
+
+The search candidate threshold previously combined filename and content hits,
+then marked any content hit as `direct_content`. A filename hit could therefore
+supply part of the threshold for an allegedly direct content match. Candidate
+selection and ranking retain the combined score, but `direct_content` now
+requires the content alone to meet the threshold, both for workspace search
+and pinned candidate retrieval. A two-term threshold negative control checks
+a one-term filename plus one-term body, and a two-term body positive control
+checks both paths. Previously recorded benchmark results are historical and
+are not evidence of unchanged coverage under this stricter classification.
+
+The complete cold-start replay with this correction was attempted twice in an
+isolated checkout and did not complete: the `rg` output capture exhausted
+memory before result processing. Its final coverage remains unresolved until a
+successful replay; no expected result has been changed. This infrastructure
+error is separate from the scoped mathematical claims and physical premises.

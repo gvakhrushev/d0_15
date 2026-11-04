@@ -1709,6 +1709,33 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertEqual(hits[0]["source_origin"], "filename_only")
         self.assertEqual(hits[0]["evidence_lines"][0]["kind"], "filename_only")
 
+    def test_direct_content_requires_content_alone_to_meet_threshold(self) -> None:
+        query = "quantum gravity entropy metric"
+        terms = proof._query_terms(query)
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            path = research / "quantum.md"
+            path.write_text("gravity", encoding="utf-8")
+            hit = proof.full_text_search(root, query)[0]
+            self.assertEqual(hit["matched_term_names"], ["quantum", "gravity"])
+            self.assertFalse(hit["direct_content"])
+            self.assertEqual(hit["source_origin"], "workspace")
+            pinned = proof._candidate_record(
+                "quantum.md", "gravity", terms, origin="pinned_snapshot",
+                commit="a" * 40, blob="b" * 40,
+            )[1]
+            self.assertFalse(pinned["direct_content"])
+            self.assertEqual(pinned["source_origin"], "pinned_snapshot")
+
+            path.write_text("gravity entropy", encoding="utf-8")
+            self.assertTrue(proof.full_text_search(root, query)[0]["direct_content"])
+            self.assertTrue(proof._candidate_record(
+                "quantum.md", "gravity entropy", terms, origin="pinned_snapshot",
+                commit="a" * 40, blob="b" * 40,
+            )[1]["direct_content"])
+
     def test_english_scope_query_finds_russian_full_tangent_source(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

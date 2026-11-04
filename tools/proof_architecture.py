@@ -1588,13 +1588,15 @@ def _candidate_record(rel: str, content: str, terms: list[tuple[str, tuple[str, 
         evidence = [{"line": None, "heading": "", "matched_terms": [
             name for name, _ in terms if name in title_matches],
             "text": f"Filename: {file_title}", "kind": "filename_only"}]
-    direct = bool(content_matches)
+    # A title may help find and rank a candidate, but it cannot supply the
+    # lexical evidence required to classify the file's contents as a match.
+    direct = len(content_matches) >= min_hits
     record = {"kind": "text-candidate", "key": rel if origin == "workspace" else f"{rel}@{commit}",
               "label": " | ".join(row["text"] for row in evidence[:3])[:MAX_SNIPPET],
               "source": rel, "source_sha256": content_sha256 or hashlib.sha256(content.encode("utf-8")).hexdigest(),
               "source_refs": source_refs or [], "matched_terms": hits,
               "matched_term_names": [name for name, present in term_present.items() if present],
-              "query_terms": len(terms), "source_origin": origin if direct else "filename_only",
+              "query_terms": len(terms), "source_origin": origin if content_matches else "filename_only",
               "direct_content": direct, "evidence_lines": evidence}
     header_owner_declarations = _source_header_owner_declarations(content)
     if header_owner_declarations:
@@ -1749,7 +1751,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                 "matched_term_names": [name for name, _ in terms if name in present],
                 "query_terms": len(terms),
                 "source_origin": "workspace" if content_groups_here else "filename_only",
-                "direct_content": bool(content_groups_here), "evidence_lines": [],
+                "direct_content": len(content_groups_here) >= min_hits, "evidence_lines": [],
             }
             score = hits / len(terms) + _owner_bonus(rel) + _filename_bonus(rel, terms)
             candidates_by_query[index].append((score, rel, record))
