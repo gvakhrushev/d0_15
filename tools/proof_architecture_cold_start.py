@@ -15,6 +15,8 @@ from typing import Any
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 COLD_START_MIN_RESULT_WINDOW = 18
+SOURCE_PAGE_SIZE = 8
+SOURCE_PAGES_PER_LOCATOR = 1
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
@@ -2465,6 +2467,134 @@ def _missing_pin_content_status(citation_refs: list[dict[str, Any]],
     return "not_found", None
 
 
+def _candidate_location(hit: dict[str, Any] | None, rank: int | None) -> dict[str, Any]:
+    """Keep ranks local to their returned page; legacy hits are first-page hits."""
+    hit = hit or {}
+    return {
+        "candidate_rank": hit.get("candidate_rank", rank),
+        "candidate_stage": hit.get("candidate_stage", "top_candidates") if rank is not None else None,
+        "candidate_locator_source": hit.get("candidate_locator_source"),
+        "candidate_page_number": hit.get("candidate_page_number"),
+    }
+
+
+def _query_hits_with_source_pages(query: str, hits: list[dict[str, Any]],
+                                  pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Validate actual returned source pages before exposing them to evaluation.
+
+    Expected fixture paths never enter this adapter. Page candidates must have
+    their own exact pin and direct source evidence, behind an observed locator.
+    This validates replay structure, not the truth/authenticity of a replay.
+    """
+    combined = [{**hit, **_candidate_location(None, rank)}
+                for rank, hit in enumerate(hits, 1)]
+    if not isinstance(pages, list):
+        raise ValueError("source_pages must be a list")
+    seen_pages: set[tuple[int, int]] = set()
+    for page in pages:
+        if not isinstance(page, dict):
+            raise ValueError("invalid source page")
+        locator_rank, number = page.get("locator_rank"), page.get("page_number")
+        size, total, remaining = (page.get(key) for key in
+                                  ("page_size", "total_references", "remaining_references"))
+        if (page.get("query") != query or type(locator_rank) is not int or
+                not 1 <= locator_rank <= len(hits) or type(number) is not int or
+                not 1 <= number <= SOURCE_PAGES_PER_LOCATOR or
+                type(size) is not int or not 1 <= size <= SOURCE_PAGE_SIZE or
+                type(total) is not int or not 1 <= total <= 64 or
+                type(remaining) is not int or remaining < 0 or
+                page.get("reference_scan_limit") != 64 or
+                not isinstance(page.get("reference_set_may_be_truncated"), bool) or
+                (total == 64 and not page["reference_set_may_be_truncated"]) or
+                (locator_rank, number) in seen_pages):
+            raise ValueError("invalid source-page bounds or query")
+        seen_pages.add((locator_rank, number))
+        locator = hits[locator_rank - 1]
+        digest = page.get("locator_sha256")
+        if (locator.get("direct_content") is not True or
+                locator.get("source_origin") != "workspace" or
+                page.get("locator_source") != locator.get("source") or
+                not isinstance(digest, str) or not re.fullmatch(r"[0-9a-f]{64}", digest) or
+                digest != locator.get("source_sha256")):
+            raise ValueError("source page has no matching returned workspace locator")
+        refs = locator.get("source_refs", [])
+        if not isinstance(refs, list) or any(
+                not isinstance(ref, dict) or not isinstance(ref.get("path"), str) or
+                any(ref.get(key) is not None and not isinstance(ref[key], str)
+                    for key in ("commit", "blob")) for ref in refs):
+            raise ValueError("invalid source-page locator references")
+        observed_pins = {(ref.get("path"), ref.get("commit"), ref.get("blob"))
+                         for ref in refs if isinstance(ref, dict)}
+        statuses, candidates = page.get("reference_statuses"), page.get("candidates")
+        expected_count = min(size, max(0, total - (number - 1) * size))
+        if (not isinstance(statuses, list) or len(statuses) != expected_count or
+                not isinstance(candidates, list) or len(candidates) > len(statuses) or
+                remaining != max(0, total - number * size)):
+            raise ValueError("incomplete source-page records")
+        checked_pins = {}
+        for ref in statuses:
+            if (not isinstance(ref, dict) or not isinstance(ref.get("path"), str) or
+                    any(ref.get(key) is not None and not isinstance(ref[key], str)
+                        for key in ("commit", "blob"))):
+                raise ValueError("invalid source-page reference status")
+            pin = (ref.get("path"), ref.get("commit"), ref.get("blob"))
+            if ((pin not in observed_pins and (pin[0], pin[1], None) not in observed_pins) or
+                    pin in checked_pins or
+                    not isinstance(ref.get("pin_status"), str) or
+                    ref.get("content_status") not in
+                    {"not_loaded", "no_direct_content_match", "direct_content_match"}):
+                raise ValueError("source-page reference was not observed in its locator")
+            checked_pins[pin] = ref
+        candidate_pins = set()
+        for rank, candidate in enumerate(candidates, 1):
+            fields = {"kind", "key", "label", "source", "source_sha256", "source_commit",
+                      "source_blob", "source_origin", "direct_content", "pin_status",
+                      "matched_terms", "matched_term_names", "query_terms",
+                      "evidence_lines", "source_refs"}
+            if not isinstance(candidate, dict) or not fields <= candidate.keys():
+                raise ValueError("incomplete source-page candidate record")
+            if any(not isinstance(candidate[key], str) for key in
+                   ("source", "source_commit", "source_blob", "key", "label")):
+                raise ValueError("invalid source-page candidate record")
+            pin = (candidate["source"], candidate["source_commit"], candidate["source_blob"])
+            evidence, names = candidate["evidence_lines"], candidate["matched_term_names"]
+            if (pin not in checked_pins or pin in candidate_pins or
+                    checked_pins[pin]["content_status"] != "direct_content_match" or
+                    checked_pins[pin]["pin_status"] != "pinned_snapshot" or
+                    candidate["kind"] != "text-candidate" or
+                    candidate["source_origin"] != "pinned_snapshot" or
+                    candidate["direct_content"] is not True or candidate["pin_status"] != "verified" or
+                    any(not isinstance(candidate[key], str) or
+                        not re.fullmatch(r"[0-9a-f]{40}", candidate[key])
+                        for key in ("source_commit", "source_blob")) or
+                    not isinstance(candidate["source_sha256"], str) or
+                    not re.fullmatch(r"[0-9a-f]{64}", candidate["source_sha256"]) or
+                    type(candidate["matched_terms"]) is not int or
+                    type(candidate["query_terms"]) is not int or
+                    not 1 <= candidate["matched_terms"] <= candidate["query_terms"] or
+                    candidate["matched_terms"] < (1 if candidate["query_terms"] <= 3 else
+                                                   max(2, (candidate["query_terms"] + 3) // 4)) or
+                    not isinstance(names, list) or len(names) != candidate["matched_terms"] or
+                    any(not isinstance(name, str) or not name for name in names) or
+                    not isinstance(candidate["source_refs"], list) or
+                    not isinstance(evidence, list) or not any(
+                        isinstance(row, dict) and row.get("kind") == "direct_content" and
+                        type(row.get("line")) is int and row["line"] > 0 and
+                        isinstance(row.get("text"), str) and bool(row["text"]) and
+                        isinstance(row.get("matched_terms"), list) and bool(row["matched_terms"])
+                        for row in evidence)):
+                raise ValueError("source-page candidate lacks exact direct-content evidence")
+            candidate_pins.add(pin)
+            combined.append({**candidate, "candidate_stage": "source_page",
+                             "candidate_rank": rank,
+                             "candidate_locator_source": page["locator_source"],
+                             "candidate_page_number": number})
+        if candidate_pins != {pin for pin, ref in checked_pins.items()
+                              if ref["content_status"] == "direct_content_match"}:
+            raise ValueError("source-page content status has no returned candidate")
+    return combined
+
+
 def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
                             required: dict[str, Any]) -> dict[str, Any]:
     """A path counts only when its own exact source content is searchable."""
@@ -2482,7 +2612,7 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
         for rank, hit in enumerate(hits, start=1):
             if _path_matches(str(hit.get("source", "")), expected_path):
                 if hit.get("direct_content"):
-                    direct_candidates.append((query, rank, hit))
+                    direct_candidates.append((query, _candidate_location(hit, rank)["candidate_rank"], hit))
             for reference in hit.get("source_refs", []):
                 if _path_matches(str(reference.get("path", "")), expected_path):
                     citation_refs.append(reference)
@@ -2509,7 +2639,8 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
             })
             continue
         query, hits = query_hits[index]
-        direct = [(query, rank, hit) for rank, hit in enumerate(hits, start=1)
+        direct = [(query, _candidate_location(hit, rank)["candidate_rank"], hit)
+                  for rank, hit in enumerate(hits, start=1)
                   if _path_matches(str(hit.get("source", "")), expected_path)
                   and hit.get("direct_content")]
         exact = [(query, rank, hit) for query, rank, hit in direct
@@ -2540,8 +2671,9 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
             "required_sections": query_sections,
             "sections_found": sorted(found_for_query),
             "missing_sections": query_missing,
-            "candidate_rank": exact[0][1] if exact else
-                              direct[0][1] if direct else None,
+            **(_candidate_location(exact[0][2], exact[0][1]) if exact else
+               _candidate_location(direct[0][2], direct[0][1]) if direct else
+               _candidate_location(None, None)),
             "evidence_lines": query_evidence[:3],
         })
     scoped_queries_found = (all(item["found"] for item in scoped_queries)
@@ -2574,7 +2706,7 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
             status, source_origin = "mixed_scoped_query_failures", None
         elif scoped_statuses:
             status = next(iter(scoped_statuses))
-        query, rank = None, None
+        query, rank, hit = None, None, None
     # Prefer evidence inside the required sections so the summary shows the
     # passage that justifies its status instead of earlier, unrelated hits.
     prioritized_evidence: list[dict[str, Any]] = []
@@ -2592,7 +2724,7 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
         "required_sections": required_sections,
         "sections_found": sorted(sections_found), "missing_sections": missing_sections,
         "scoped_queries": scoped_queries,
-        "candidate_rank": rank, "query": query,
+        **_candidate_location(hit, rank), "query": query,
         "evidence_lines": prioritized_evidence[:10],
         "citation_only_refs": citation_refs[:3],
     }
@@ -2654,14 +2786,23 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
     all_hits = proof.full_text_search_many(
         root, queries, max(limit, COLD_START_MIN_RESULT_WINDOW)
     )
+    all_pages = [proof.expand_source_pages(
+        root, query, hits, page_size=SOURCE_PAGE_SIZE,
+        pages_per_locator=SOURCE_PAGES_PER_LOCATOR,
+    ) for query, hits in zip(queries, all_hits)]
     offset = 0
     cases = []
     for case in CASES:
         query_hits = []
+        query_pages = []
         for query in case["queries"]:
             query_hits.append(all_hits[offset])
+            query_pages.append(all_pages[offset])
             offset += 1
-        query_pairs = list(zip(case["queries"], query_hits))
+        query_pairs = [
+            (query, _query_hits_with_source_pages(query, hits, pages))
+            for query, hits, pages in zip(case["queries"], query_hits, query_pages)
+        ]
         required_status = {}
         for required in case.get("required_sources", []):
             key = required["path"]
@@ -2682,7 +2823,7 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
             "required_sources": required_status,
             "found_all_required_sources": all(x["found"] for x in required_status.values()),
             "query_results": [
-                {"query": query, "top_candidates": [
+                {"query": query, "source_pages": pages, "top_candidates": [
                     {"path": hit["source"], "matched_terms": hit["matched_terms"],
                      "matched_term_names": hit.get("matched_term_names", []),
                      "query_terms": hit["query_terms"], "source_sha256": hit.get("source_sha256"),
@@ -2692,14 +2833,16 @@ def run(root: pathlib.Path, limit: int = 5) -> dict[str, Any]:
                      "source_blob": hit.get("source_blob"),
                      "pin_status": hit.get("pin_status"),
                      "evidence_lines": hit.get("evidence_lines", [])[:3],
-                     "source_refs": [{"path": ref.get("path"), "commit": ref.get("commit"),
+                    "source_refs": [{"path": ref.get("path"), "commit": ref.get("commit"),
                                       "blob": ref.get("blob"), "pin_status": ref.get("pin_status"),
                                       "content_status": ref.get("content_status"),
                                       "section_refs": ref.get("section_refs", [])}
-                                     for ref in hit.get("source_refs", [])[:5]]}
+                                     for ref in (hit.get("source_refs", []) if any(
+                                         page["locator_source"] == hit["source"] for page in pages
+                                     ) else hit.get("source_refs", [])[:5])]}
                     for hit in hits
                 ]}
-                for query, hits in zip(case["queries"], query_hits)
+                for query, hits, pages in zip(case["queries"], query_hits, query_pages)
             ],
             "scope_review": case["scope_review"],
         })

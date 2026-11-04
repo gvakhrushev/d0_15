@@ -79,9 +79,25 @@ def _expected_requirements(fixture: dict[str, Any]) -> dict[str, dict[str, Any]]
     return expected
 
 
+def _query_candidates(result: dict[str, Any]) -> list[dict[str, Any]]:
+    top = [{**hit, "source": hit.get("path", "")} for hit in result["top_candidates"]]
+    return cold_start._query_hits_with_source_pages(
+        result["query"], top, result.get("source_pages", []))
+
+
+def _same_candidate_location(receipt: dict[str, Any], rank: int,
+                             hit: dict[str, Any]) -> bool:
+    expected = cold_start._candidate_location(hit, rank)
+    # Old receipts predate pages and can only refer to ordinary top candidates.
+    return (receipt.get("candidate_rank") == expected["candidate_rank"] and
+            receipt.get("candidate_stage", "top_candidates") == expected["candidate_stage"] and
+            receipt.get("candidate_locator_source") == expected["candidate_locator_source"] and
+            receipt.get("candidate_page_number") == expected["candidate_page_number"])
+
+
 def _direct_candidates(result: dict[str, Any], required: dict[str, Any]) -> list[tuple[int, dict[str, Any]]]:
-    return [(rank, hit) for rank, hit in enumerate(result["top_candidates"], 1)
-            if cold_start._path_matches(str(hit.get("path", "")), required["path"]) and
+    return [(hit["candidate_rank"], hit) for hit in _query_candidates(result)
+            if cold_start._path_matches(str(hit.get("source", "")), required["path"]) and
             hit.get("direct_content") is True and
             (required.get("commit") is None or hit.get("source_commit") == required["commit"]) and
             (required.get("blob") is None or hit.get("source_blob") == required["blob"])]
@@ -110,6 +126,7 @@ def _summarize_case(case: dict[str, Any], fixture: dict[str, Any], limit: int) -
                not isinstance(hit.get("source_refs"), list)
                for hit in result["top_candidates"]):
             raise ValueError(f"incomplete candidate records: {case_id}")
+        _query_candidates(result)  # Fail closed on malformed/ungrounded source pages.
     requirements = _expected_requirements(fixture)
     receipts = case.get("required_sources")
     if not isinstance(receipts, dict) or set(receipts) != set(requirements):
@@ -151,7 +168,7 @@ def _summarize_case(case: dict[str, Any], fixture: dict[str, Any], limit: int) -
                 raise ValueError(f"invalid scoped-query receipt: {case_id}: {key}")
             if row["found"]:
                 hits = _direct_candidates(results[index], required)
-                if not hits or row.get("candidate_rank") != hits[0][0]:
+                if not hits or not _same_candidate_location(row, *hits[0]):
                     raise ValueError(f"scoped success has no matching direct hit: {case_id}: {key}")
         if receipt["found"] and (receipt["status"] != "found_direct_content" or
                                  receipt.get("missing_sections") or
@@ -160,7 +177,7 @@ def _summarize_case(case: dict[str, Any], fixture: dict[str, Any], limit: int) -
         if receipt["found"]:
             matched = [(rank, hit) for result in results if result["query"] == receipt["query"]
                        for rank, hit in _direct_candidates(result, required)
-                       if rank == receipt["candidate_rank"]]
+                       if _same_candidate_location(receipt, rank, hit)]
             if not matched or matched[0][1].get("source_origin") != receipt["source_origin"]:
                 raise ValueError(f"source success has no matching direct hit: {case_id}: {key}")
     found_all = all(row["found"] for row in receipts.values())
@@ -173,6 +190,7 @@ def _summarize_case(case: dict[str, Any], fixture: dict[str, Any], limit: int) -
         "all_required_sources_found": found_all,
         "missing_paths": [row["path"] for row in receipts.values() if not row["found"]],
         "scope_review": case["scope_review"],
+        "source_page_count": sum(len(result.get("source_pages", [])) for result in results),
         # Keep the runner's full per-source receipts, including pin, section,
         # scoped-query, rank, evidence and negative/citation-only statuses.
         "required_sources": receipts,
@@ -202,7 +220,7 @@ def _exact_retrieval(case: dict[str, Any], fixture: dict[str, Any],
     matches = _direct_candidates(query_result, required)
     if scoped["found"] and not matches:
         raise ValueError(f"scoped success has no exact pinned hit: {suffix}")
-    if matches and scoped.get("candidate_rank") != matches[0][0]:
+    if matches and not _same_candidate_location(scoped, *matches[0]):
         raise ValueError(f"scoped candidate rank disagrees with the full replay: {suffix}")
     return {
         "path": required["path"], "commit": required.get("commit"),
@@ -211,6 +229,10 @@ def _exact_retrieval(case: dict[str, Any], fixture: dict[str, Any],
         "status": scoped["status"],
         "source_origin": matches[0][1].get("source_origin") if matches else None,
         "candidate_rank": scoped.get("candidate_rank"),
+        "candidate_stage": scoped.get("candidate_stage", "top_candidates")
+                           if scoped.get("candidate_rank") is not None else None,
+        "candidate_locator_source": scoped.get("candidate_locator_source"),
+        "candidate_page_number": scoped.get("candidate_page_number"),
         "required_sections": scoped.get("required_sections", []),
         "sections_found": scoped.get("sections_found", []),
         "missing_sections": scoped.get("missing_sections", []),

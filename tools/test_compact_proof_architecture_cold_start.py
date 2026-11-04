@@ -106,7 +106,177 @@ def example_complete_replay(head):
     return fixture, full, authority
 
 
+def example_paged_case():
+    fixture, case = example_case()
+    result = case["query_results"][0]
+    owner = result["top_candidates"][1]
+    native = {**owner, "source": owner["path"], "kind": "text-candidate",
+              "key": owner["path"] + "@" + owner["source_commit"],
+              "label": "example direct evidence", "pin_status": "verified",
+              "evidence_lines": [{"line": 5, "text": "example direct evidence",
+                                  "matched_terms": ["example"], "kind": "direct_content"}]}
+    del native["path"]
+    ref = {"path": owner["path"], "commit": owner["source_commit"],
+           "blob": owner["source_blob"], "pin_status": "pinned_snapshot",
+           "content_status": "direct_content_match"}
+    locator = {**owner, "path": "02_REGISTRY/research/locator.md",
+               "source_origin": "workspace", "source_commit": None, "source_blob": None,
+               "pin_status": None, "source_refs": [ref]}
+    result["top_candidates"] = [locator]
+    result["source_pages"] = [{
+        "query": result["query"], "locator_source": locator["path"],
+        "locator_sha256": locator["source_sha256"], "locator_rank": 1,
+        "page_number": 1, "page_size": 8, "total_references": 1,
+        "remaining_references": 0, "reference_scan_limit": 64,
+        "reference_set_may_be_truncated": False,
+        "candidates": [native], "reference_statuses": [ref],
+    }]
+    hits = compact._query_candidates(result)
+    receipt = compact.cold_start._required_source_status(
+        [(result["query"], hits)], fixture["required_sources"][0])
+    case["required_sources"] = {owner["path"]: receipt}
+    return fixture, case
+
+
 class ColdStartCompactorTests(unittest.TestCase):
+    def test_source_page_receipt_has_its_own_stage_rank_and_locator(self):
+        fixture, case = example_paged_case()
+        summary = compact._summarize_case(case, fixture, 18)
+        self.assertTrue(summary["all_required_sources_found"])
+        self.assertEqual(summary["source_page_count"], 1)
+        retrieval = compact._exact_retrieval(case, fixture, "example.md", 0)
+        self.assertEqual(retrieval["candidate_rank"], 1)
+        self.assertEqual(retrieval["candidate_stage"], "source_page")
+        self.assertEqual(retrieval["candidate_locator_source"],
+                         "02_REGISTRY/research/locator.md")
+        self.assertEqual(retrieval["candidate_page_number"], 1)
+        self.assertEqual(len(case["query_results"][0]["top_candidates"]), 1)
+
+    def test_source_page_success_cannot_be_presented_as_top_window_success(self):
+        fixture, case = example_paged_case()
+        for field, value in (("candidate_stage", "top_candidates"),
+                             ("candidate_locator_source", "different.md"),
+                             ("candidate_page_number", 2), ("candidate_rank", 2)):
+            with self.subTest(field=field):
+                forged = copy.deepcopy(case)
+                receipt = next(iter(forged["required_sources"].values()))
+                receipt["scoped_queries"][0][field] = value
+                with self.assertRaisesRegex(ValueError, "scoped success has no matching direct hit"):
+                    compact._summarize_case(forged, fixture, 18)
+
+    def test_source_page_requires_actual_candidate_not_content_status(self):
+        fixture, case = example_paged_case()
+        case["query_results"][0]["source_pages"][0]["candidates"] = []
+        with self.assertRaisesRegex(ValueError, "content status has no returned candidate"):
+            compact._summarize_case(case, fixture, 18)
+
+    def test_source_page_rejects_incomplete_filename_only_or_wrong_pin_records(self):
+        fixture, case = example_paged_case()
+        mutations = [
+            ("source_sha256", None), ("source_blob", "f" * 40),
+            ("source_commit", "f" * 40), ("direct_content", False),
+            ("source_origin", "filename_only"), ("evidence_lines", []),
+            ("evidence_lines", [{"line": None, "text": "Filename: example",
+                                 "kind": "filename_only", "matched_terms": ["example"]}]),
+        ]
+        for field, value in mutations:
+            with self.subTest(field=field, value=value):
+                forged = copy.deepcopy(case)
+                forged["query_results"][0]["source_pages"][0]["candidates"][0][field] = value
+                with self.assertRaisesRegex(ValueError, "source-page candidate"):
+                    compact._summarize_case(forged, fixture, 18)
+        del case["query_results"][0]["source_pages"][0]["candidates"][0]["kind"]
+        with self.assertRaisesRegex(ValueError, "incomplete source-page candidate"):
+            compact._summarize_case(case, fixture, 18)
+
+    def test_source_page_must_come_from_an_observed_unchanged_workspace_locator(self):
+        fixture, case = example_paged_case()
+        for field, value in (("locator_rank", 2), ("locator_source", "unseen.md"),
+                             ("locator_sha256", "e" * 64), ("query", "other query")):
+            with self.subTest(field=field):
+                forged = copy.deepcopy(case)
+                forged["query_results"][0]["source_pages"][0][field] = value
+                with self.assertRaises(ValueError):
+                    compact._summarize_case(forged, fixture, 18)
+        case["query_results"][0]["top_candidates"][0]["source_refs"] = []
+        with self.assertRaisesRegex(ValueError, "reference was not observed"):
+            compact._summarize_case(case, fixture, 18)
+
+    def test_source_page_accepts_commit_only_locator_after_exact_blob_resolution(self):
+        fixture, case = example_paged_case()
+        # The exact blob is resolved from the pinned commit/path by the producer.
+        case["query_results"][0]["top_candidates"][0]["source_refs"] = [
+            {**case["query_results"][0]["top_candidates"][0]["source_refs"][0], "blob": None}]
+        compact._summarize_case(case, fixture, 18)
+
+    def test_source_page_keeps_truncation_flag_after_unpinned_references_filtered(self):
+        fixture, case = example_paged_case()
+        case["query_results"][0]["source_pages"][0]["reference_set_may_be_truncated"] = True
+        compact._summarize_case(case, fixture, 18)
+
+    def test_source_page_budget_and_duplicates_are_rejected(self):
+        fixture, case = example_paged_case()
+        for field, value in (("page_number", 2), ("page_size", 9),
+                             ("remaining_references", 1), ("total_references", 65)):
+            with self.subTest(field=field):
+                forged = copy.deepcopy(case)
+                forged["query_results"][0]["source_pages"][0][field] = value
+                with self.assertRaises(ValueError):
+                    compact._summarize_case(forged, fixture, 18)
+        pages = case["query_results"][0]["source_pages"]
+        pages.append(copy.deepcopy(pages[0]))
+        with self.assertRaisesRegex(ValueError, "bounds or query"):
+            compact._summarize_case(case, fixture, 18)
+
+    def test_source_page_for_one_query_does_not_cover_another_scoped_query(self):
+        fixture, case = example_paged_case()
+        required = fixture["required_sources"][0]
+        required["scope_query_indexes"] = [0, 1]
+        fixture["queries"].append("unmatched query")
+        case["query_results"].append({"query": "unmatched query", "top_candidates": [],
+                                      "source_pages": []})
+        pairs = [(row["query"], compact._query_candidates(row)) for row in case["query_results"]]
+        receipt = compact.cold_start._required_source_status(pairs, required)
+        case["required_sources"] = {required["path"]: receipt}
+        case["found_all_required_sources"] = False
+        self.assertEqual(receipt["status"], "missing_scoped_query")
+        self.assertEqual([row["found"] for row in receipt["scoped_queries"]], [True, False])
+        self.assertEqual(receipt["scoped_queries"][0]["candidate_stage"], "source_page")
+        compact._summarize_case(case, fixture, 18)
+
+    def test_runner_expands_actual_returned_hits_without_expected_paths(self):
+        fixture, case = example_paged_case()
+        query_result = case["query_results"][0]
+        native_hits = [{**row, "source": row["path"]} for row in query_result["top_candidates"]]
+        pages = query_result["source_pages"]
+        for index in range(2, 8):
+            ref = {"path": f"source/missing{index}.md", "commit": "a" * 40,
+                   "blob": "b" * 40, "pin_status": "missing_commit", "content_status": "not_loaded"}
+            native_hits[0]["source_refs"].append(ref)
+        pages[0]["total_references"] = 7
+        # The fixture starts with shared lists; clone to show all seven refs
+        # survive runner serialization, including those beyond the old limit5.
+        pages[0]["reference_statuses"] = copy.deepcopy(native_hits[0]["source_refs"])
+        native_hits.extend({**native_hits[0], "source": f"unrelated{index}.md",
+                            "direct_content": False, "source_refs": []}
+                           for index in range(17))
+        dataset = {"snapshot_commit": "a" * 40, "worktree_dirty": False, "source_digests": {}}
+        cold = compact.cold_start
+        with patch.object(cold, "CASES", [fixture]), \
+                patch.object(cold.proof, "full_text_search_many", return_value=[native_hits]), \
+                patch.object(cold.proof, "expand_source_pages", return_value=pages) as expand, \
+                patch.object(cold.proof, "load_dataset", return_value=dataset), \
+                patch.object(cold, "_case10_change_impact_regression", return_value={}):
+            replay = cold.run(pathlib.Path("/unused"))
+        expand.assert_called_once_with(pathlib.Path("/unused"), fixture["queries"][0],
+                                       native_hits, page_size=8, pages_per_locator=1)
+        returned = replay["cases"][0]
+        self.assertTrue(returned["found_all_required_sources"])
+        self.assertEqual(returned["query_results"][0]["source_pages"], pages)
+        self.assertEqual(len(returned["query_results"][0]["top_candidates"]), 18)
+        self.assertEqual(len(returned["query_results"][0]["top_candidates"][0]["source_refs"]), 7)
+        compact._summarize_case(returned, fixture, 18)
+
     def test_exact_pinned_content_outside_window_is_not_reported_as_lexical_miss(self):
         path, commit, blob = "02_REGISTRY/research/owner.md", "a" * 40, "b" * 40
         locator = {"source": "owner-index.md", "direct_content": True,

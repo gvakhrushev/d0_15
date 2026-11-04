@@ -16379,3 +16379,39 @@ independently pins the Python bytes and regenerates the exact Lean script
 before comparing its digest. It does not run Lake. The corrected extraction
 has unchanged declaration records; the failed check was not bypassed by
 rewriting an expected hash. Dedicated negative regressions retain this case.
+
+## Bounded retrieval of sources behind discovered documents — 4 November 2026
+
+The search producer now retains every original query term for content matching,
+thresholds, ranking and exact pinned-source checks. Low-information words limit
+only the initial corpus prefilter. English broad words use exact token equality,
+so a technical identifier such as `fullStep` is not discarded as `full`.
+Broad words on other lines of a shortlisted document remain part of its score.
+
+The first global result page remains bounded (CLI default five; cold-start
+eighteen). A separate operation opens the exact source references of documents
+actually returned on that page. For example:
+
+```bash
+python3 tools/proof_architecture.py search --limit 18 --source-pages 1 \
+  retained response fullStep compilation growing clock heat budget
+```
+
+Each returned locator supplies at most eight references per source page, with
+an explicit page budget and remaining-reference count. The command permits
+at most eight pages per locator; the cold-start replay uses one. The locator
+is re-read at its observed SHA-256, and its references are derived from its
+matching text. Actual immutable commit/path/blob content must pass the original
+lexical threshold and provide direct line evidence. Filename-only matches,
+invalid pins, stale locators and bare citation statuses do not become source
+results. Implicit and explicit blob spellings of one commit/path are deduplicated
+before paging; contradictory explicit pins retain their failure diagnostics.
+The reference scan itself is capped at 64, with possible truncation reported.
+
+The runner preserves the global page and source pages separately. Its receipts
+record each source's retrieval stage, local rank, locator and page; the compactor
+checks those records against the returned direct content. No expected benchmark
+path enters the producer. Existing source requirements, scoped query edges and
+the oversized memo's pin-only boundary remain unchanged. These changes concern
+rediscovery of evidence; they do not accept mathematical scope, freeze C0 or
+discharge native physical premises. `GR_closed=false`.

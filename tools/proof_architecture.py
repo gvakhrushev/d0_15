@@ -1619,16 +1619,27 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
     """Search text and verify pins; explicit owner checks may follow up to 64 refs."""
     if not 1 <= pin_reference_limit <= 64:
         raise ValueError("pin_reference_limit must be between 1 and 64")
-    raw_terms_by_query = [_query_terms(query) for query in queries]
-    terms_by_query = []
-    for terms in raw_terms_by_query:
-        informative = [item for item in terms
-                       if not any(item[0].startswith(broad) for broad in _LOW_INFORMATION_TERMS)]
+    # The low-information filter limits corpus discovery only. Every discovered
+    # file and exact pinned source is matched and scored against the raw query.
+    terms_by_query = [_query_terms(query) for query in queries]
+    prefilter_terms_by_query = []
+    for terms in terms_by_query:
+        informative = [item for item in terms if not any(
+            item[0] == broad if broad.isascii() else item[0].startswith(broad)
+            for broad in _LOW_INFORMATION_TERMS
+        )]
         min_hits = 1 if len(terms) <= 3 else max(2, (len(terms) + 3) // 4)
-        terms_by_query.append(informative if len(informative) >= min_hits else terms)
+        prefilter_terms_by_query.append(informative if len(informative) >= min_hits else terms)
     patterns_by_query = [_term_pattern(terms) for terms in terms_by_query]
-    variant_queries: dict[str, list[tuple[int, str]]] = {}
+    prefilter_patterns_by_query = [_term_pattern(terms) for terms in prefilter_terms_by_query]
+    raw_variant_queries: dict[str, list[tuple[int, str]]] = {}
     for index, terms in enumerate(terms_by_query):
+        for name, variants in terms:
+            for variant in variants:
+                raw_variant_queries.setdefault(variant, []).append((index, name))
+    raw_matcher = _build_multi_pattern_matcher(raw_variant_queries)
+    variant_queries: dict[str, list[tuple[int, str]]] = {}
+    for index, terms in enumerate(prefilter_terms_by_query):
         for name, variants in terms:
             for variant in variants:
                 variant_queries.setdefault(variant, []).append((index, name))
@@ -1686,6 +1697,23 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             DERIVED_TEXT_EXCLUDED_PREFIXES
         )
     ]
+    # Cache only term sets, not document bodies. A file passing the informative
+    # corpus/title prefilter is scanned once for all raw queries; broad terms on
+    # other lines must still contribute to matching and ranking. The existing
+    # bounded evidence/pin read below keeps its separate 4 MB limit.
+    raw_content_matches: dict[str, dict[int, set[str]]] = {}
+
+    def document_matches(raw_rel: str) -> dict[int, set[str]]:
+        if raw_rel not in raw_content_matches:
+            try:
+                content = (root / pathlib.Path(raw_rel)).read_bytes().decode(
+                    "utf-8-sig", errors="replace")
+            except OSError:
+                raw_content_matches[raw_rel] = {}
+            else:
+                raw_content_matches[raw_rel] = _multi_pattern_matches(_fold(content), raw_matcher)
+        return raw_content_matches[raw_rel]
+
     candidates_by_query: list[list[tuple[float, str, dict[str, Any]]]] = [[] for _ in queries]
     for index, terms in enumerate(terms_by_query):
         if not terms:
@@ -1696,7 +1724,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         for raw_rel in all_text_paths:
             stem = pathlib.PurePosixPath(raw_rel.replace("\\", "/")).stem
             title_groups = _matched_term_names(
-                _fold(stem.replace("_", " ").replace("-", " ")), pattern, terms,
+                _fold(stem.replace("_", " ").replace("-", " ")),
+                prefilter_patterns_by_query[index], prefilter_terms_by_query[index],
             )
             if title_groups:
                 candidate_paths.add(raw_rel)
@@ -1706,7 +1735,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             if (rel in {"tools/proof_architecture.py", "tools/proof_architecture_cold_start.py"}
                     or rel.startswith("tools/test_")):
                 continue
-            content_groups_here = content_groups.get(raw_rel, set())
+            content_groups_here = document_matches(raw_rel).get(index, set())
             file_title = pathlib.PurePosixPath(rel).stem.replace("_", " ").replace("-", " ")
             title_groups = _matched_term_names(_fold(file_title), pattern, terms)
             present = content_groups_here | title_groups
@@ -1857,6 +1886,104 @@ def full_text_search(root: pathlib.Path, query: str,
                      limit: int = MAX_SEARCH_RESULTS) -> list[dict[str, Any]]:
     """Return bounded text candidates from books, registry, and Lean sources."""
     return full_text_search_many(root, [query], limit)[0]
+
+
+def expand_source_pages(root: pathlib.Path, query: str,
+                        returned_hits: list[dict[str, Any]], *,
+                        page_size: int = 8, pages_per_locator: int = 1
+                        ) -> list[dict[str, Any]]:
+    """Open bounded source pages behind locators actually returned by search.
+
+    This is a separate retrieval step, not an increase of the global ranking
+    window. Re-read the locator at its observed digest, derive its references
+    from matching lines, and return only exact pinned, content-matching sources.
+    A pin or a filename match alone is never a source-page candidate. Nothing
+    from a benchmark's expected paths enters this operation.
+    """
+    if not 1 <= page_size <= 8 or not 1 <= pages_per_locator <= 8:
+        raise ValueError("source pages require size 1..8 and pages_per_locator 1..8")
+    if len(returned_hits) > 64:
+        raise ValueError("source expansion accepts at most 64 returned locators")
+    root = root.resolve()
+    terms = _query_terms(query)
+    pattern = _term_pattern(terms)
+    cache: dict[tuple[str, str, str], tuple[str, bytes | None, str | None]] = {}
+    candidate_cache: dict[tuple[str, str, str], dict[str, Any] | None] = {}
+    pages: list[dict[str, Any]] = []
+    for locator_rank, locator in enumerate(returned_hits, 1):
+        if (locator.get("source_origin") != "workspace"
+                or locator.get("direct_content") is not True
+                or not locator.get("source_refs")):
+            continue
+        rel = str(locator.get("source", ""))
+        path = (root / rel).resolve()
+        if not path.is_relative_to(root) or not path.is_file():
+            continue
+        try:
+            if path.stat().st_size > 4_000_000:
+                continue
+            data = path.read_bytes()
+        except OSError:
+            continue
+        digest = hashlib.sha256(data).hexdigest()
+        if digest != locator.get("source_sha256"):
+            continue  # A stale search result cannot authorize different pins.
+        content = data.decode("utf-8-sig", errors="replace")
+        matched = _candidate_record(rel, content, terms, origin="workspace",
+                                    pattern=pattern)
+        if matched is None or not matched[1]["direct_content"]:
+            continue
+        refs = _source_references(
+            [line for line in content.splitlines() if pattern.search(_fold(line))],
+            terms, pattern,
+        )
+        reference_set_may_be_truncated = len(refs) == 64
+        refs = [ref for ref in refs if ref.get("pin_complete")]
+        # A commit:path citation and its explicit-blob spelling identify one
+        # immutable source. Keep explicit pins (including conflicting ones),
+        # rather than returning the same derived blob twice after loading it.
+        explicit_pairs = {(ref["path"], ref["commit"]) for ref in refs if ref.get("blob")}
+        refs = [ref for ref in refs if ref.get("blob") or
+                (ref["path"], ref["commit"]) not in explicit_pairs]
+        for page_index in range(pages_per_locator):
+            start = page_index * page_size
+            batch = refs[start:start + page_size]
+            if not batch:
+                break
+            page: dict[str, Any] = {
+                "query": query, "locator_source": rel, "locator_sha256": digest,
+                "locator_rank": locator_rank, "page_number": page_index + 1,
+                "page_size": page_size, "total_references": len(refs),
+                "remaining_references": max(0, len(refs) - start - len(batch)),
+                "reference_scan_limit": 64,
+                "reference_set_may_be_truncated": reference_set_may_be_truncated,
+                "candidates": [], "reference_statuses": [],
+            }
+            for ref in batch:
+                status, source_bytes = _read_pinned_source(root, ref, cache)
+                receipt = {"path": ref["path"], "commit": ref.get("commit"),
+                           "blob": ref.get("blob"), "pin_status": status,
+                           "content_status": "not_loaded"}
+                page["reference_statuses"].append(receipt)
+                if source_bytes is None:
+                    continue
+                key = (ref["commit"], ref["path"], ref["blob"])
+                if key not in candidate_cache:
+                    source_text = source_bytes.decode("utf-8-sig", errors="replace")
+                    candidate = _candidate_record(
+                        ref["path"], source_text, terms, origin="pinned_snapshot",
+                        commit=ref["commit"], blob=ref["blob"], pattern=pattern,
+                        content_sha256=hashlib.sha256(source_bytes).hexdigest(),
+                    )
+                    candidate_cache[key] = candidate[1] if candidate else None
+                record = candidate_cache[key]
+                if record is None or not record["direct_content"]:
+                    receipt["content_status"] = "no_direct_content_match"
+                    continue
+                receipt["content_status"] = "direct_content_match"
+                page["candidates"].append({**record, "pin_status": "verified"})
+            pages.append(page)
+    return pages
 
 
 def _search_summary(item: dict[str, Any]) -> dict[str, Any]:
@@ -3113,6 +3240,10 @@ def main() -> int:
     sub = parser.add_subparsers(dest="command", required=True)
     search = sub.add_parser("search", help="search structured authorities and bounded full-text candidates")
     search.add_argument("query", nargs="+")
+    search.add_argument("--limit", type=int, default=MAX_SEARCH_RESULTS,
+                        help="global result window, 1..64 (default: 5)")
+    search.add_argument("--source-pages", type=int, default=0,
+                        help="open 0..8 pages of eight exact sources per returned locator")
     show = sub.add_parser("show", help="show an exact claim/result/application/obligation key")
     show.add_argument("key")
     show.add_argument("--lean", action="store_true",
@@ -3192,9 +3323,11 @@ def main() -> int:
     else:
         data = load_dataset(root)
         if args.command == "search":
+            if not 1 <= args.limit <= 64 or not 0 <= args.source_pages <= 8:
+                parser.error("search needs --limit 1..64 and --source-pages 0..8")
             query = " ".join(args.query)
             structured = structured_search(data, query)
-            text_hits = full_text_search(root, query)
+            text_hits = full_text_search(root, query, args.limit)
             seen = {(x["kind"], x["key"]) for x in structured}
             result = {"query": query, "structured_matches": [_search_summary(x) for x in structured],
                       "text_candidates": [_search_candidate_summary(x, data) for x in text_hits
@@ -3202,6 +3335,14 @@ def main() -> int:
                       "snapshot_commit": data["snapshot_commit"],
                       "source_digests": data["source_digests"],
                       "warning": "Text matches are retrieval candidates, not accepted mathematical relations."}
+            if args.source_pages:
+                pages = expand_source_pages(root, query, text_hits,
+                                            pages_per_locator=args.source_pages)
+                result["source_pages"] = [
+                    {**page, "candidates": [_search_candidate_summary(hit, data)
+                                           for hit in page["candidates"]]}
+                    for page in pages
+                ]
         elif args.command == "show":
             if args.lean:
                 import lean_declaration_inventory as lean_inventory
@@ -3257,7 +3398,7 @@ def main() -> int:
     print(_render_text(
         result,
         complete_arrays=(args.command == "crosswalk" and args.all_current)
-        or args.command in {"claim-sources", "alias-sources", "c0-books"},
+        or args.command in {"search", "claim-sources", "alias-sources", "c0-books"},
         complete_strings=args.command == "c0-books",
     ))
     return 1 if ((args.command == "c0-pilot" and result.get("issues")) or
