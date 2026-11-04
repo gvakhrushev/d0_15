@@ -17272,3 +17272,13 @@ The JSON is primary-owned candidate data; no semantic acceptance follows.
   ]
 }
 ```
+
+### Independent source review: Book02 finite-word transport
+
+The focused review of Book02 §02.3b bytes `[13110,13646)` checks the exact
+primitive interpretation assumptions, finite-word run/readout equations,
+compilation composition and common-sector raw-state boundary against Lean.
+The saved types and axioms use an existing compiled cache. Full native-context
+coverage and physical clock, work, admission and GR remain separate. This review
+does not accept the complete C0 partition or denominator. See
+[`book02_023b_word_transport_review_2026-11-04`](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_023b_word_transport_review_2026-11-04/SUMMARY_RU.md).
