@@ -20782,3 +20782,75 @@ continuation/stationary law and its genuine admitted domain, including the
 retained nongeometric rows. Admissible history-computable control is not
 physical selection of that continuation. No new task/registry/CORE claim,
 no exact finite joint root, and no physical GR closure promotion.
+
+## 4 November 2026 checkpoint: common-age thermal full-source recovery on one retained history
+
+Phase: native realization / final composition, existing Draft #334.
+Input pin: 3a2d3f19db0f703b686b93ceb75c9bad8cf5e43b.
+Added research section: **Common-age thermal synthesis: the native clock
+closes the signed-source compilation loop**, CT1–CT25, in the existing
+same-representative paid-source artifact. Write paths remain this brief
+and that artifact; no new task, carrier registry or acceptance.
+
+Exact parent substitution: BG6 left a clock-dependent signed germ with
+uncontrolled inverse calibration and actual native/compiler conditioning.
+Both signs now live in ONE latest birth-detail. A direct-sum rotation
+encoder has exact trace difference I_h, independently of its eventual
+clock length. The original scene satisfies r a_r=beta(b_(r-1)-b_(r+1))
+with 0<=b_r<=a_r/22. Its resulting relative tail/moment bounds remove the
+inverse-small-thermal-coefficient loss from native source approximation.
+GH positive G/CX compilation, marked original geometry/CAR transport and
+the full actual clock are composed, not rederived.
+
+The current programme is compiled before choosing the paid earlier K
+birth;G attenuation slots. Every old/current unitary occurrence, padding
+and approximate echo is retained. Actual old heat tails, feedback and
+compiler defects all vanish after calibration by the SAME finite positive
+gain. The original source covers all coframe/link/CAR coordinates on the
+linked writer chart. All independent current WORK rows vanish at the
+ideal primary centre, not merely along a linked geometric velocity.
+
+The application now admits a literal stored real G/CX prefix: its actual
+final fibre dimension d_b, clock dimension D_b, source count N_b and proper
+return C_< determine the next construction. Initial physical rank r0 is
+not reset to d_b. No lower return bound or inverse of C_< is needed.
+CT24 appends the next segment to ONE accumulating history, preserves old
+effects/records exactly, and recomputes the new whole clock and gain.
+Adaptive precision absorbs every finite previous-prefix constant.
+
+Carrier/norm/source: original raw binary Golden births and real
+scene-commuting WORK profile, original H+J and proper initial cut, all
+425D heat modes, full gate-max dual source and original marked
+operator/C1 or finite-contrast field norm. CT22 covers the declared
+finite-matrix differential source. Support-preserving native finite
+comparisons have a separate CT23 feedback bound; arbitrary whole-old-fibre
+finite chords are not inferred from a small derivative. CT25 supplies a
+paid three-bit local comparison compiler using two earlier born helpers,
+with its true K*ell stage cost and clock dimension. Previously retained
+comparison words/layouts/steps stay literal; they are not repadded later.
+
+Law correction: Book03 §§03.8 and 03.25 ALREADY state stationarity.
+The application consumes that law through §7eh.E/KAPPA. It does not need
+another derivation of stationarity from prospective scalar probabilities.
+The positive result is full temporal-source kappa recovery of the primary
+nonvacuum family along this execution, with soundness on the linked field
+chart. It is not exact finite joint roots, compulsory selection of this
+encoding, metric-only descent of every ambient off-shell source, or
+stationarity across changes of rank/length/chronology. Other scene/stack
+source obligations and the original raw216 terminal retain their scope.
+
+Smallest decisive checks: the actual 33-scene coefficient recurrence and
+signed trace encoder; actual growing clocks with a Golden old prefix,
+all current SO(16) generators and a retained nonzero old source; hostile
+same-phase, noninvolutive and inter-layer-mixing controls. Both portable
+checks are embedded in the primary artifact. Floating diagnostics are
+not interval-certified; analytic bounds carry the theorem. Independent
+reviews supplied the rank/prefix and finite-chord corrections above.
+Affected structural guards run on final inputs. No unchanged heavy
+geometry or Lean replay; no Ready, retirement or GR_closed promotion.
+
+Final integration: validate_work, validate_agent_protocol, gr_assembly check
+and git diff --check pass. The assembly remains 98 results / 22 obligations /
+5 discharged, scientific_promotion=false. Both final embedded checks pass
+normally and with -O; their receipts are byte-identical. No unchanged
+mathematical or Lean suite was replayed.
