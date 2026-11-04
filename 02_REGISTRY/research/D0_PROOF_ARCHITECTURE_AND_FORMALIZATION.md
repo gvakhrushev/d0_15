@@ -17610,3 +17610,12 @@ consumer and an uncoupled raw-state witness. Equal finite future profiles give
 equal codes under the supplied presentation; they do not by themselves erase a
 raw coordinate or construct a physically executed code. The stronger original
 wording and complete C0 acceptance remain unresolved.
+
+### Independent source review: distinguishability and recording
+
+The [focused Book01 review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0116_changed_review_2026-11-05/SUMMARY_RU.md)
+checks the changed-parameter atom `[12713,12874)` against the coded comparison
+and archive interfaces. Different supplied future profiles yield different
+codes, but creation of a physical history event and its cost remain separate.
+The logical empty-archive control is not a physical countermodel. This review
+does not accept the full C0 partition or denominator.
