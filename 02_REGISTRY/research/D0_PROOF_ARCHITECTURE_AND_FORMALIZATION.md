@@ -16991,3 +16991,36 @@ derived; `GR_closed=false`. The exact module was checked by a direct Lean
 invocation against the current cached dependencies, and an independent review
 checked the factor, the source substitution and scope. This is not yet a
 clean public-import build for the final integrated source.
+
+### Local affine derivative transferred to a supplied reporter family
+
+`D0.Research.TaskFaithfulReporterAffineTransfer` composes the preceding
+ordered reporter-price equality with `TaskFaithfulAffineReporterDerivative`.
+On a neighbourhood of zero it requires, separately, (A) the reference reporter
+effects at every label of the same nonempty word to equal the specified
+one-label affine update and (B) the reference and actual reporter statistics to
+coincide on every unit input at those labels. It preserves the original unique
+selected label, positive scalar corners, scalar direction compression, common
+preparations, retained history and basis, and `0 ≤ z < 1`. From these explicit
+inputs it transfers the original derivative and coefficient to the supplied
+actual reporter family. The sign-family corollary derives B for `-reference`
+but still assumes A and all the original corner inputs. It does not establish
+the existence of an admitted physical family or a nonzero gain.
+
+Neither smoothness of the reporter nor invertibility of the history is
+introduced; this conclusion concerns the selected price, not the complete
+physical Cost−Info source. The local equality is stronger than equality only at
+zero. Independent preparation, other readouts, effect admissibility, heat,
+clock/work, normalization by a possibly vanishing gain and GR selection remain
+open. The owner #334 is unchanged and `GR_closed=false`.
+
+Source: #334 task-faithful proof at
+`fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`, blob
+`c99e90a8c8e96bae70e700fa88d1c2d824a1831b`; theorem 1 bytes `[9199,10610)`
+SHA-256 `9a8508f1fa7d5b1310070fdeb823881d2fd72e531d573dd918bdd190dcbcc010`,
+scalar-corner derivative bytes `[11171,14061)` SHA-256
+`aadc5880cf2aa28dde011c8de6df7261628d56eb73605f74ee77cc747b423189`.
+The module and its two immediate dependencies passed direct Lean checks in
+scratch; other cached dependencies were not independently attested by that
+run. Independent read-only review checked the two eventual hypotheses and
+transport. A clean final integration build remains required on final inputs.
