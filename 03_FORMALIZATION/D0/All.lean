@@ -289,6 +289,7 @@ import D0.Foundation.Q8Anisotropy
 import D0.Foundation.RelationalRepairClosure
 import D0.Foundation.SceneCountReduction
 import D0.Foundation.SceneStepParity
+import D0.Foundation.ShortlexCodeExistence
 import D0.Foundation.TheoryTransfer
 import D0.Foundation.UncoupledCenterRawWitness
 import D0.Foundation.VerifiabilityNecessity
@@ -695,6 +696,7 @@ import D0.Research.NativeWeightedDiracNyquistApplication
 import D0.Research.PrimitiveJetComposition
 import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
+import D0.Research.TaskFaithfulRadialPriceDerivative
 import D0.Research.TaskFaithfulReporterEffect
 import D0.Research.TaskFaithfulReturnBound
 import D0.Research.TaskFaithfulReturnContrast
