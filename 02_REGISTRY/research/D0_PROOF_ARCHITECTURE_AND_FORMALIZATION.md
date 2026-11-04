@@ -15064,3 +15064,30 @@ been constructed. The existing `D0-CVFT-001A` note and its
 does not accept that release status or assign the finite theorem to the
 broader physical claim. The remaining application is an explicit typed
 carrier/source map and review against the exact claim scope.
+
+## Corrected PR #402 bounded-search classification on `a8ca4d897` — 4 November 2026
+
+The preceding `b3c93862` cold-start receipt accurately reported 23/67 owner
+texts in the returned top-18 window, but described all 44 remaining entries as
+lexical misses. The pin reader retained only `pin_status`, which did not say
+whether an exact loaded source had passed the query-content check. The search
+now records that distinct result as `content_status`, preserving the existing
+pin provenance field and all search thresholds.
+
+The complete replay on clean snapshot `a8ca4d8974b14ee332554268fce275f58ebbf6c3`
+still finds all required sources in 49/50 scenarios, with 51 benchmark
+controls passing and the same result window of 18. The kappa case remains
+incomplete: 23/67 owner texts are surfaced directly in-window, 40/67 exact
+pinned texts pass direct-content matching but rank outside the returned
+window, and 4/67 fail the existing lexical threshold. The 40 out-of-window
+sources remain `found=false`; exact pins do not count as search discovery.
+All 17 locator indexes remain present, and the separate 68-path owner-pin
+regression passes exact `commit:path`, byte-count, and SHA-256 checks. The
+oversized memo remains pin-only.
+
+The complete runner output, compacted receipt, validation record and exact
+input hashes are preserved in
+[`pr402_cold_start_pin_window_recheck_2026-11-04_a8ca4d89`](sources/d0_proof_architecture_formalization_2026-10-24/reports/pr402_cold_start_pin_window_recheck_2026-11-04_a8ca4d89/SUMMARY_RU.md).
+This corrects only the retrieval diagnosis. It does not change the Lean
+theorem scope, native physical selection, or any claim metadata; PR #334 is
+unchanged and `GR_closed=false`.
