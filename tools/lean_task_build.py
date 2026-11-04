@@ -27,6 +27,122 @@ LOCK = LAKE / "d0-task-build.lock"
 STAMP = LAKE / "d0-final-build-receipt.json"
 
 
+def _windows_handle_guid_path(path: pathlib.Path) -> pathlib.Path:
+    """Resolve an existing Windows path through its open handle, using volume GUID form.
+
+    Unlike the normal DOS-name lookup this also works when a volume has no
+    permanent mount point. Follow reparse points; callers must verify physical
+    containment after resolving. No lexical-path fallback is permitted.
+    """
+    if os.name != "nt":
+        raise OSError("Windows handle path resolution is unavailable")
+    import ctypes
+    from ctypes import wintypes
+
+    kernel = ctypes.WinDLL("kernel32", use_last_error=True)
+    create = kernel.CreateFileW
+    create.argtypes = [wintypes.LPCWSTR, wintypes.DWORD, wintypes.DWORD,
+                       ctypes.c_void_p, wintypes.DWORD, wintypes.DWORD, wintypes.HANDLE]
+    create.restype = wintypes.HANDLE
+    final = kernel.GetFinalPathNameByHandleW
+    final.argtypes = [wintypes.HANDLE, wintypes.LPWSTR, wintypes.DWORD, wintypes.DWORD]
+    final.restype = wintypes.DWORD
+    close = kernel.CloseHandle
+    close.argtypes = [wintypes.HANDLE]
+    close.restype = wintypes.BOOL
+    # FILE_READ_ATTRIBUTES, all sharing, OPEN_EXISTING, BACKUP_SEMANTICS.
+    handle = create(os.fspath(path), 0x80, 0x7, None, 3, 0x02000000, None)
+    if handle == wintypes.HANDLE(-1).value:
+        raise ctypes.WinError(ctypes.get_last_error())
+    try:
+        # VOLUME_NAME_GUID. Do not silently accept a lexical or device path.
+        size = final(handle, None, 0, 1)
+        if not size:
+            raise ctypes.WinError(ctypes.get_last_error())
+        buf = ctypes.create_unicode_buffer(size + 1)
+        written = final(handle, buf, len(buf), 1)
+        if not written or written >= len(buf):
+            raise ctypes.WinError(ctypes.get_last_error())
+        resolved = pathlib.Path(buf.value)
+        if not re.match(r"^\\\\\?\\Volume\{[0-9A-Fa-f-]+\}\\", str(resolved)):
+            raise OSError("unexpected Windows final handle path")
+        return resolved
+    finally:
+        close(handle)
+
+
+def _strict_physical_path(path: pathlib.Path) -> pathlib.Path:
+    """Use the ordinary resolver first; Windows GUID handles are fail-closed fallback."""
+    try:
+        return path.resolve(strict=True)
+    except OSError as exc:
+        # WinError 3 is the observed missing DOS volume-name lookup. Access
+        # denied and other failures must not be converted into another mode.
+        if os.name != "nt" or getattr(exc, "winerror", None) != 3:
+            raise
+        return _windows_handle_guid_path(path)
+
+
+def _windows_same_directory(first: pathlib.Path, second: pathlib.Path) -> bool:
+    """Compare real directory identities, not Windows case-folded path strings."""
+    try:
+        a, b = first.stat(), second.stat()
+        return (stat.S_ISDIR(a.st_mode) and stat.S_ISDIR(b.st_mode) and
+                a.st_dev != 0 and b.st_dev != 0 and a.st_ino != 0 and b.st_ino != 0 and
+                os.path.samestat(a, b))
+    except OSError:
+        return False
+
+
+def _windows_directory_contains(root: pathlib.Path, child: pathlib.Path) -> bool:
+    """Physical ancestor check for already resolved directories, failing closed."""
+    while True:
+        if _windows_same_directory(root, child):
+            return True
+        parent = child.parent
+        if parent == child:
+            return False
+        child = parent
+
+
+def _windows_same_file(first: pathlib.Path, second: pathlib.Path) -> bool:
+    """Compare existing regular-file identities, failing closed if unavailable."""
+    try:
+        a, b = first.stat(), second.stat()
+        return (stat.S_ISREG(a.st_mode) and stat.S_ISREG(b.st_mode) and
+                a.st_dev != 0 and b.st_dev != 0 and a.st_ino != 0 and b.st_ino != 0 and
+                os.path.samestat(a, b))
+    except OSError:
+        return False
+
+
+def _contained_file(root: pathlib.Path, target: pathlib.Path) -> tuple[pathlib.Path, pathlib.Path]:
+    """Return an existing file and relative path only inside the physical root."""
+    resolved_root = _strict_physical_path(root)
+    resolved_target = _strict_physical_path(target)
+    if os.name == "nt" and not _windows_directory_contains(resolved_root, resolved_target.parent):
+        raise ValueError("target is outside physical root")
+    try:
+        relative = resolved_target.relative_to(resolved_root)
+    except ValueError:
+        if os.name != "nt":
+            raise
+        # The same physical subtree can be named in different DOS/GUID forms.
+        # Resolve both through handles and prove the objects did not change;
+        # never infer containment from case-folded spelling.
+        guid_root = _windows_handle_guid_path(resolved_root)
+        guid_target = _windows_handle_guid_path(resolved_target)
+        if (not _windows_same_directory(resolved_root, guid_root) or
+                not _windows_same_file(resolved_target, guid_target) or
+                not _windows_directory_contains(guid_root, guid_target.parent)):
+            raise ValueError("GUID normalization changed physical containment")
+        resolved_root, resolved_target = guid_root, guid_target
+        relative = resolved_target.relative_to(resolved_root)
+    if not resolved_target.is_file():
+        raise OSError("resolved target is not a file")
+    return resolved_target, relative
+
+
 def _tracked_lean_symlink_targets() -> dict[str, tuple[bytes, pathlib.Path]]:
     """Return project Lean symlink entries and their checked-in target text.
 
@@ -57,12 +173,11 @@ def _tracked_lean_symlink_targets() -> dict[str, tuple[bytes, pathlib.Path]]:
         )
         link_target = pathlib.Path(os.fsdecode(link_text))
         link_path = ROOT / pathlib.Path(relative)
-        target_path = (link_path.parent / link_target).resolve(strict=True)
         try:
-            target_path.relative_to(ROOT.resolve())
-        except ValueError as exc:
+            target_path, _ = _contained_file(ROOT, link_path.parent / link_target)
+        except (OSError, ValueError) as exc:
             raise RuntimeError(
-                f"tracked Lean symlink escapes the repository: {relative} -> {link_target}"
+                f"tracked Lean symlink escapes or is missing: {relative} -> {link_target}"
             ) from exc
         if not target_path.is_file():
             raise RuntimeError(
@@ -237,6 +352,14 @@ def dependency_provenance() -> dict:
     package_root = (FORMAL / package_dir).resolve()
     if not package_root.is_relative_to(root):
         raise DependencyProvenanceError("package directory escapes formalization root")
+    if os.name == "nt":
+        try:
+            physical_root = _strict_physical_path(root)
+            physical_package_root = _strict_physical_path(package_root)
+        except OSError as exc:
+            raise DependencyProvenanceError("cannot resolve package directory physically") from exc
+        if not _windows_directory_contains(physical_root, physical_package_root):
+            raise DependencyProvenanceError("package directory escapes physical formalization root")
     verified = []
     names = set()
     for record in packages:
@@ -251,8 +374,15 @@ def dependency_provenance() -> dict:
         package = (package_root / name).resolve()
         if not package.is_relative_to(package_root) or not package.is_dir():
             raise DependencyProvenanceError(f"missing or escaped dependency checkout: {name}")
+        if os.name == "nt":
+            try:
+                physical_package = _strict_physical_path(package)
+            except OSError as exc:
+                raise DependencyProvenanceError(f"cannot resolve dependency physically: {name}") from exc
+            if not _windows_directory_contains(physical_package_root, physical_package):
+                raise DependencyProvenanceError(f"dependency escapes physical package root: {name}")
         top = pathlib.Path(os.fsdecode(_git_bytes(package, "rev-parse", "--show-toplevel").strip())).resolve()
-        if top != package:
+        if top != package or (os.name == "nt" and not _windows_same_directory(top, package)):
             raise DependencyProvenanceError(f"not an independent git checkout: {name}")
         head = _git_bytes(package, "rev-parse", "--verify", "HEAD").decode("ascii").strip().lower()
         if head != revision.lower():
@@ -316,8 +446,8 @@ def dependency_provenance() -> dict:
         for path, blob in links:
             link_text = os.fsdecode(_git_bytes(package, "cat-file", "blob", os.fsdecode(blob)))
             try:
-                target = ((package / path).parent / link_text).resolve(strict=True)
-                target_name = target.relative_to(package).as_posix()
+                target, target_relative = _contained_file(package, (package / path).parent / link_text)
+                target_name = target_relative.as_posix()
             except (OSError, ValueError) as exc:
                 raise DependencyProvenanceError(f"dependency symlink escapes or is missing: {name}/{path}") from exc
             if target_name not in tracked or not target.is_file():

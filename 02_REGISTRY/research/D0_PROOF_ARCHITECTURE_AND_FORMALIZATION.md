@@ -17390,3 +17390,26 @@ The modular fragment here receives the uniform creator matrices reduced modulo
 1009; their agreement with the modular creator block is separately checked by
 `check_original_creator_mapping.py`. The Python sparse reconstruction is not
 a machine extraction of the Lean matrix.
+
+
+### Windows GUID-volume provenance fallback
+
+`tools/lean_task_build.py` retains ordinary strict resolution and, only on
+Windows WinError 3, obtains existing physical paths using an open handle and
+the volume-GUID name. It checks physical directory identities and containment,
+normalizes mixed DOS/GUID names with repeated object identity checks, and
+keeps Git checkout, tracked target, source-byte, toolchain and before/after
+checks. Other errors fail closed. Eleven targeted Windows tests passed,
+including mixed namespaces, identity changes during normalization, a
+case-sensitive sibling, an external junction and an untracked symlink target.
+Independent review found no static containment bypass in the candidate.
+
+On the source-only clone of snapshot `24363981` on an additional volume, the
+candidate passed the full provenance preflight with all nine dependency pins;
+the handle fallback was invoked 21 times. It did not run Lean or produce a
+build receipt. This is point-in-time provenance, not atomic confinement against
+a concurrent adversary: handles close before subsequent stat/read/write. The
+installed Lean/Lake binaries were hashed, not independently built from source.
+On this Windows environment 16 of 19 existing helper tests passed after disabling
+Git autocrlf for the fixtures; the remaining three errors (OS symlink privilege
+and two POSIX executable stubs) also occurred on the unmodified base.
