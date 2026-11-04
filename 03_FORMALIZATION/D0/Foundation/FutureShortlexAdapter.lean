@@ -93,7 +93,15 @@ theorem stateCode_eq_iff_record (F : FutureExecution) (dec : List Symbol → F.S
     (E : TheoryVerification F.futureEmpiricalTheory) (s t : F.State) :
     stateCode F dec enc s = stateCode F dec enc t ↔
       representedRecord E s = representedRecord E t := by
-  rw [stateCode_eq_iff F dec enc correct, representedRecord_eq_iff]
+  constructor
+  · intro h
+    apply sufficient_memory_preserves_record E (stateCode F dec enc)
+      (fun code => F.profile (dec code)) ?_ h
+    intro x
+    exact (canon_profile F dec (enc x)).trans (correct x)
+  · intro h
+    exact (stateCode_eq_iff F dec enc correct s t).2
+      ((representedRecord_eq_iff E s t).1 h)
 
 /-! ## Concrete two-bit examples on existing executions -/
 
