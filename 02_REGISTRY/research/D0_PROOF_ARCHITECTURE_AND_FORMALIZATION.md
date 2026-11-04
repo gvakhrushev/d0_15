@@ -17531,3 +17531,13 @@ amplitude coefficient is signed and can vanish; the original owner's scaled
 normalization and physical source require additional nonzero factors and field
 maps. The [independent review and receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_normalized_2788_2026-11-05/SUMMARY_RU.md)
 retain the self-adjoint path, other price rows and admission boundaries.
+
+### Conditional matched field-source composition
+
+`D0.Analysis.MatchedBranchFieldSource` composes the finite one-curve price
+with the full Fréchet derivative of the branch/copy mean. It derives the
+owner coefficient after explicitly supplied amplitude-variation and weight
+bindings. The price curve and field chart are not constructed as one admitted
+physical execution; fixed A and the remaining heat, work, clock and source
+rows remain outside. The [independent review and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_field_0ca1_2026-11-05/SUMMARY_RU.md)
+retain the zero-gain and physical selection boundaries.
