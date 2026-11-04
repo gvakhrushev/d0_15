@@ -17737,3 +17737,12 @@ marked-report endings are different tasks under the specified complete report,
 not established free variations within one faithful task. The bounded replay
 includes 34 nominal numeric checks; it does not prove the full physical price,
 admission, source map or GR.
+
+### Independent source review: code presentation injectivity
+
+The [Book01 §01.1.8 code review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book01_0118_code_injective_review_2026-11-05/SUMMARY_RU.md)
+checks injection from the supplied decoder round trip and its actual state-code
+and archive-code consumers. The encoded tagged objects are represented states,
+not arbitrary raw states; negative controls preserve that distinction and the
+need for the decoder hypothesis. No physical encoder or full C0 acceptance is
+inferred.
