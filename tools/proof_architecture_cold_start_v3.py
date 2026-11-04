@@ -449,11 +449,15 @@ def run(root: pathlib.Path) -> dict[str, Any]:
     if len(all_hits) != len(queries):
         raise ValueError("incomplete batched discovery")
     results = []
-    for query, hits in zip(queries, all_hits):
+    for index, (query, hits) in enumerate(zip(queries, all_hits)):
         result = {"query": query, "ranked_pages": _ranked_pages(hits),
                   "source_pages": source_pages(root, query, hits),
                   "workspace_source_pages": workspace_source_pages(root, query, hits, allowed_paths)}
         results.append((result, verified_query(root, query, result, allowed_paths)))
+        proof._search_progress("verified_paged_query_ready", query_index=index,
+                               query_count=len(queries),
+                               source_pages=len(result["source_pages"]),
+                               workspace_pages=len(result["workspace_source_pages"]))
     cases = []
     offset = 0
     for fixture in legacy.CASES:
