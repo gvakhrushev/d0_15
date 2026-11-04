@@ -22,22 +22,29 @@ from tools import test_proof_search_progress as progress_tests
 from tools import test_proof_architecture as proof_tests
 
 
+def _enter_fixture_rg(test: unittest.TestCase) -> None:
+    """Enter the fixture on Python 3.9 as well as newer unittest versions."""
+    context = fixture_rg()
+    context.__enter__()
+    test.addCleanup(context.__exit__, None, None, None)
+
+
 class PortableSourcePagesTests(source_page_tests.ProofSourcePagesTests):
     def setUp(self):
         super().setUp()
-        self.enterContext(fixture_rg())
+        _enter_fixture_rg(self)
 
 
 class PortablePagedColdStartTests(paged_cold_start_tests.PagedColdStartTests):
     def setUp(self):
         super().setUp()
-        self.enterContext(fixture_rg())
+        _enter_fixture_rg(self)
 
 
 class PortableSearchProgressTests(progress_tests.SearchProgressTests):
     def setUp(self):
         super().setUp()
-        self.enterContext(fixture_rg())
+        _enter_fixture_rg(self)
 
 
 class DirectContentThresholdTests(unittest.TestCase):

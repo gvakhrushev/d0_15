@@ -16914,3 +16914,28 @@ warnings remain in the preserved log. Later Lean changes require their own build
 After integrating the concurrent memory modules, the [full build on `d2733f2bf`](sources/d0_proof_architecture_formalization_2026-10-24/reports/affine_reporter_narrow_2026-11-04/full_build_d273.json)
 passed 4,802 jobs. Its 1,329 warnings include five tactic-style warnings in
 the affine reporter module; the exact log is retained.
+### Observed workspace links in bounded source pages
+
+The paged search can also open a literal relative Markdown link actually
+present on a query-matching line of a returned workspace locator. The
+locator's digest is rechecked, and the target must be in the searchable
+corpus, be a regular file of at most 4 MB, and meet the content-only threshold
+with its own evidence. Each page retains the observed citation, locator,
+target path and target SHA-256. Pages of workspace sources are distinct from
+Git-pin pages: a workspace file cannot satisfy a requirement for an exact
+historical commit or blob. Neither expected fixture paths nor citation status
+alone enter the producer as a returned source.
+
+The local-link page uses a bounded 64-reference scan and explicit page limits.
+It rejects path traversal and symbolic links, and fails closed on platforms
+without the required safe-open operations. The v3 verifier reproduces pages
+from observed locator bytes and independently checks their target evidence;
+historical receipts without this new field are not retroactively expanded.
+Search and reporting establish retrieval candidates, not semantic C0
+acceptance or physical admission. `GR_closed=false`.
+
+The legacy missing-source diagnostic now labels an unversioned citation
+`workspace_reference_unchecked` rather than calling it an exact pin. The
+historical v3 diagnostic is preserved as executed; its AF q4 label
+`exact_pin_seen_but_content_check_incomplete` included such an unversioned
+reference and did not establish a Git pin. Both labels retain `found=false`.

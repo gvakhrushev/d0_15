@@ -1591,6 +1591,19 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("8.4", refs)
         self.assertIn("8.4.2", refs)
 
+    def test_unversioned_reference_is_not_reported_as_an_exact_pin(self) -> None:
+        source = "02_REGISTRY/research/sources/owner/PROOF_RU.md"
+        hit = {"source": "locator.md", "direct_content": True,
+               "source_refs": [{"path": source, "commit": None, "blob": None,
+                                "pin_status": "not_followed_bounded_search"}]}
+        receipt = cold_start._required_source_status([("source", [hit])], {"path": source})
+        self.assertFalse(receipt["found"])
+        self.assertEqual(receipt["status"], "workspace_reference_unchecked")
+        hit["source_refs"][0]["commit"] = "a" * 40
+        pinned = cold_start._required_source_status([("source", [hit])], {"path": source})
+        self.assertFalse(pinned["found"])
+        self.assertEqual(pinned["status"], "exact_pin_seen_but_content_check_incomplete")
+
     def test_text_citation_alone_does_not_satisfy_required_source(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)

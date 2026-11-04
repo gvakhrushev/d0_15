@@ -44,6 +44,13 @@ def compact(full_bytes: bytes, root: pathlib.Path = ROOT, *,
                                                "pages_per_locator": paged.SOURCE_PAGES,
                                                "pages_per_call": paged.SOURCE_PAGES_PER_CALL}):
         raise ValueError("paged replay budgets do not match the v3 contract")
+    # Preserve historical v3 reports: their absent workspace budget means no
+    # workspace-page results, rather than retroactively opening more sources.
+    has_workspace_pages = "workspace_source_page_budget" in full
+    workspace_budget = {"size": paged.WORKSPACE_SOURCE_SIZE,
+                        "pages_per_locator": paged.WORKSPACE_SOURCE_PAGES}
+    if has_workspace_pages and full["workspace_source_page_budget"] != workspace_budget:
+        raise ValueError("workspace source-page budget does not match the v3 contract")
     corpus = paged.corpus_snapshot(root)
     if full.get("corpus_snapshot") != corpus:
         raise ValueError("paged replay corpus differs from current checkout")
@@ -68,6 +75,19 @@ def compact(full_bytes: bytes, root: pathlib.Path = ROOT, *,
         query_results = case.get("query_results")
         if not isinstance(query_results, list) or len(query_results) != len(fixture["queries"]):
             raise ValueError("incomplete paged query set")
+        for result in query_results:
+            if not isinstance(result, dict) or (not has_workspace_pages and
+                                                "workspace_source_pages" in result):
+                raise ValueError("workspace source-page records and budget disagree")
+            if has_workspace_pages and "workspace_source_pages" not in result:
+                ranked = result.get("ranked_pages")
+                if not isinstance(ranked, list) or any(
+                        not isinstance(page, dict) or not isinstance(page.get("candidates"), list)
+                        for page in ranked):
+                    raise ValueError("workspace source pages lack valid ranked locators")
+                hits = [hit for page in ranked for hit in page["candidates"]]
+                if paged.workspace_source_pages(root, result.get("query", ""), hits, allowed_paths):
+                    raise ValueError("workspace source pages were omitted from the replay")
         if replayed is not None:
             for result, hits in zip(query_results, replayed[replay_offset:replay_offset + len(query_results)]):
                 if not isinstance(result, dict) or result.get("ranked_pages") != paged._ranked_pages(hits):
@@ -84,14 +104,18 @@ def compact(full_bytes: bytes, root: pathlib.Path = ROOT, *,
         if verify_discovery:
             required = paged._requirements(fixture, pairs, discovery_attested=True)
             found_all = all(row["found"] for row in required.values())
-        summary_cases.append({"id": fixture["id"], "query_count": len(query_results),
+        summary_case = {"id": fixture["id"], "query_count": len(query_results),
                               "required_source_count": len(required),
                               "all_required_sources_found": found_all,
                               "missing_paths": ([row["path"] for row in required.values() if not row["found"]]
                                                 if verify_discovery else None),
                               "discovery_unattested_paths": ([] if verify_discovery else list(required)),
                               "scope_review": fixture["scope_review"], "required_sources": required,
-                              "source_page_count": sum(len(row["source_pages"]) for row in query_results)})
+                              "source_page_count": sum(len(row["source_pages"]) for row in query_results)}
+        if has_workspace_pages:
+            summary_case["workspace_source_page_count"] = sum(
+                len(row.get("workspace_source_pages", [])) for row in query_results)
+        summary_cases.append(summary_case)
     if (full.get("search_cases_total") != len(cases) or
             full.get("benchmark_cases_total") != len(cases) + 1 or
             full.get("search_cases_found_all_sources") is not None or
@@ -113,7 +137,7 @@ def compact(full_bytes: bytes, root: pathlib.Path = ROOT, *,
             after["source_digests"] != dataset["source_digests"] or
             paged.corpus_snapshot(root) != corpus):
         raise ValueError("checkout changed during paged compaction")
-    return {"schema": SUMMARY_SCHEMA, "snapshot_commit": head, "worktree_dirty": False,
+    summary = {"schema": SUMMARY_SCHEMA, "snapshot_commit": head, "worktree_dirty": False,
             "authority_source_digests": dataset["source_digests"], "corpus_snapshot": corpus,
             "ranking": full["ranking"], "source_page_budget": full["source_page_budget"],
             "cases": summary_cases, "search_cases_total": len(cases),
@@ -128,6 +152,9 @@ def compact(full_bytes: bytes, root: pathlib.Path = ROOT, *,
                                     "corpus checked only at endpoints; no independent implementation or continuous snapshot attestation"
                                     if verify_discovery else
                                     "bounded evidence rechecked; discovery and ranks unattested; corpus checked only at endpoints")}
+    if has_workspace_pages:
+        summary["workspace_source_page_budget"] = workspace_budget
+    return summary
 
 
 def main() -> int:

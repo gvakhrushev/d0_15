@@ -2452,7 +2452,8 @@ def _missing_pin_content_status(citation_refs: list[dict[str, Any]],
                                 expected_blob: str | None) -> tuple[str, str | None]:
     """Describe pin evidence without counting a citation as a returned source."""
     exact_refs = [reference for reference in citation_refs
-                  if (expected_commit is None or reference.get("commit") == expected_commit)
+                  if re.fullmatch(r"[0-9a-f]{40}", str(reference.get("commit") or ""))
+                  and (expected_commit is None or reference.get("commit") == expected_commit)
                   and (expected_blob is None or reference.get("blob") == expected_blob)]
     if any(ref.get("content_status") == "direct_content_match" for ref in exact_refs):
         return "verified_direct_content_outside_search_window", "pinned_snapshot"
@@ -2462,6 +2463,9 @@ def _missing_pin_content_status(citation_refs: list[dict[str, Any]],
                                      "duplicate_pin_already_checked"}
            for ref in exact_refs):
         return "exact_pin_seen_but_content_check_incomplete", "pinned_snapshot"
+    if (expected_commit is None and expected_blob is None and not exact_refs and
+            any(not reference.get("commit") for reference in citation_refs)):
+        return "workspace_reference_unchecked", "citation_only"
     if citation_refs:
         return "external_reference_only", "citation_only"
     return "not_found", None

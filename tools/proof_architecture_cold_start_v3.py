@@ -30,6 +30,8 @@ RANK_PAGES = 2
 SOURCE_PAGES = 12
 SOURCE_PAGES_PER_CALL = 4
 SOURCE_SIZE = legacy.SOURCE_PAGE_SIZE
+WORKSPACE_SOURCE_SIZE = 8
+WORKSPACE_SOURCE_PAGES = 8
 
 
 def corpus_paths(root: pathlib.Path) -> list[str]:
@@ -99,6 +101,19 @@ def source_pages(root: pathlib.Path, query: str, hits: list[dict[str, Any]]) -> 
             if not batch or batch[-1].get("page_exhausted") or not batch[-1]["remaining_references"]:
                 break
     return pages
+
+
+def workspace_source_pages(root: pathlib.Path, query: str, hits: list[dict[str, Any]],
+                           allowed_paths: set[str]) -> list[dict[str, Any]]:
+    """Open observed workspace links, bounded independently of Git-pin pages.
+
+    The only allowed-path input is the enumerated corpus, never expected
+    benchmark sources; its bytes are covered by the caller's endpoint hashes.
+    """
+    return proof.expand_workspace_source_pages(
+        root, query, hits, page_size=WORKSPACE_SOURCE_SIZE,
+        pages_per_locator=WORKSPACE_SOURCE_PAGES, allowed_paths=allowed_paths,
+    )
 
 
 def verified_query(root: pathlib.Path, query: str, result: dict[str, Any],
@@ -284,6 +299,118 @@ def verified_query(root: pathlib.Path, query: str, result: dict[str, Any],
             combined.append({**candidate, "candidate_stage": "source_page", "candidate_rank": rank,
                              "candidate_locator_source": page["locator_source"],
                              "candidate_page_number": page["page_number"]})
+    # Old v3 receipts have no workspace-page field. Do not silently expand
+    # their historical search; new receipts explicitly opt into this surface.
+    if "workspace_source_pages" in result:
+        actual_workspace = workspace_source_pages(root, query, hits, allowed_paths)
+        workspace_pages = result["workspace_source_pages"]
+        if (not isinstance(workspace_pages, list) or
+                len(workspace_pages) > len(hits) * WORKSPACE_SOURCE_PAGES or
+                workspace_pages != actual_workspace):
+            raise ValueError("workspace source pages do not reproduce from locator bytes")
+        seen_workspace_pages = set()
+        observed_links: dict[str, set[tuple[int, str]]] = {}
+        for page in workspace_pages:
+            if not isinstance(page, dict):
+                raise ValueError("invalid workspace source page")
+            locator_rank = page.get("locator_rank")
+            if type(locator_rank) is not int or not 1 <= locator_rank <= len(hits):
+                raise ValueError("workspace page locator is not a returned candidate")
+            number, total, remaining = (page.get(k) for k in
+                                         ("page_number", "total_references", "remaining_references"))
+            if (page.get("query") != query or type(number) is not int or
+                    not 1 <= number <= WORKSPACE_SOURCE_PAGES or
+                    page.get("page_size") != WORKSPACE_SOURCE_SIZE or
+                    type(total) is not int or not 1 <= total <= 64 or
+                    type(remaining) is not int or remaining < 0 or
+                    page.get("reference_scan_limit") != 64 or
+                    type(page.get("reference_set_may_be_truncated")) is not bool or
+                    (locator_rank, number) in seen_workspace_pages):
+                raise ValueError("invalid workspace page bounds")
+            seen_workspace_pages.add((locator_rank, number))
+            locator = hits[locator_rank - 1]
+            if (locator.get("source_origin") != "workspace" or
+                    locator.get("direct_content") is not True or
+                    locator.get("source") != page.get("locator_source") or
+                    locator.get("source_sha256") != page.get("locator_sha256")):
+                raise ValueError("workspace page has no observed direct locator")
+            locator_bytes, locator_text, _, _, _ = workspace(page["locator_source"])
+            if hashlib.sha256(locator_bytes).hexdigest() != page["locator_sha256"]:
+                raise ValueError("workspace locator changed after discovery")
+            locator_lines = locator_text.splitlines()
+            if page["locator_source"] not in observed_links:
+                links: set[tuple[int, str]] = set()
+                fence_char, fence_length = None, 0
+                markdown = re.compile(r"(?<!!)(?<!\\)\[[^\]\n]*\]\(([^\s)]+)\)")
+                for line_number, line_text in enumerate(locator_lines, 1):
+                    fence_char, fence_length, fence_line = proof._markdown_fence_transition(
+                        line_text, fence_char, fence_length)
+                    if (fence_line or fence_char is not None or len(line_text) > 4096 or
+                            not pattern.search(proof._fold(line_text))):
+                        continue
+                    for match in markdown.finditer(line_text):
+                        if line_text[:match.start()].count("`") % 2 == 0:
+                            links.add((line_number, match.group(1)))
+                observed_links[page["locator_source"]] = links
+            statuses = page.get("reference_statuses")
+            candidates = page.get("candidates")
+            expected_count = min(WORKSPACE_SOURCE_SIZE,
+                                 max(0, total - (number - 1) * WORKSPACE_SOURCE_SIZE))
+            if (not isinstance(statuses, list) or not isinstance(candidates, list) or
+                    len(statuses) != expected_count or len(candidates) > len(statuses) or
+                    remaining != max(0, total - number * WORKSPACE_SOURCE_SIZE)):
+                raise ValueError("invalid workspace page records")
+            matched_statuses = set()
+            for status in statuses:
+                if not isinstance(status, dict):
+                    raise ValueError("invalid workspace reference status")
+                line, literal, text = (status.get("citation_line"), status.get("citation_path"),
+                                       status.get("citation_text"))
+                if (type(line) is not int or not 1 <= line <= len(locator_lines) or
+                        not isinstance(literal, str) or not literal or
+                        text != locator_lines[line - 1] or
+                        (line, literal) not in observed_links[page["locator_source"]]):
+                    raise ValueError("workspace reference is not in the observed locator line")
+                if status.get("content_status") == "direct_content_match":
+                    matched_statuses.add((line, literal, status.get("source")))
+            seen_candidates = set()
+            for rank, candidate in enumerate(candidates, 1):
+                if not isinstance(candidate, dict):
+                    raise ValueError("invalid workspace candidate")
+                rel = candidate.get("source")
+                if not isinstance(rel, str):
+                    raise ValueError("workspace candidate source is not a path")
+                key = (candidate.get("citation_line"), candidate.get("citation_path"), rel)
+                if (key not in matched_statuses or key in seen_candidates or
+                        candidate.get("locator_source") != page["locator_source"] or
+                        candidate.get("source_commit") is not None or
+                        candidate.get("source_blob") is not None or
+                        candidate.get("source_origin") != "workspace" or
+                        candidate.get("direct_content") is not True or
+                        candidate.get("citation_text") != locator_lines[key[0] - 1]):
+                    raise ValueError("invalid workspace source provenance")
+                literal = candidate["citation_path"]
+                parts = literal.split("/")
+                if (not literal or any(part in {"", ".", ".."} for part in parts) or
+                        any(char in literal for char in ("%", "?", "#", ":", "\\")) or
+                        any(ord(char) < 32 or ord(char) == 127 for char in literal) or
+                        f"]({literal})" not in candidate["citation_text"] or
+                        (pathlib.PurePosixPath(page["locator_source"]).parent / literal).as_posix() != rel):
+                    raise ValueError("workspace candidate does not resolve from its observed link")
+                target_bytes, target_text, _, _, _ = workspace(rel)
+                checked = proof._candidate_record(rel, target_text, terms, origin="workspace",
+                                                  pattern=pattern,
+                                                  content_sha256=hashlib.sha256(target_bytes).hexdigest())
+                if (checked is None or not checked[1].get("direct_content") or
+                        any(candidate.get(k) != value for k, value in checked[1].items())):
+                    raise ValueError("workspace source content evidence does not match bytes")
+                seen_candidates.add(key)
+                combined.append({**candidate, "candidate_stage": "workspace_source_page",
+                                 "candidate_rank": rank,
+                                 "candidate_locator_source": page["locator_source"],
+                                 "candidate_page_number": page["page_number"]})
+            if seen_candidates != matched_statuses:
+                raise ValueError("workspace reference status lacks returned direct evidence")
     return combined
 
 
@@ -324,7 +451,8 @@ def run(root: pathlib.Path) -> dict[str, Any]:
     results = []
     for query, hits in zip(queries, all_hits):
         result = {"query": query, "ranked_pages": _ranked_pages(hits),
-                  "source_pages": source_pages(root, query, hits)}
+                  "source_pages": source_pages(root, query, hits),
+                  "workspace_source_pages": workspace_source_pages(root, query, hits, allowed_paths)}
         results.append((result, verified_query(root, query, result, allowed_paths)))
     cases = []
     offset = 0
@@ -351,6 +479,8 @@ def run(root: pathlib.Path) -> dict[str, Any]:
             "ranking": {"window": RANK_SIZE, "pages": RANK_PAGES, "batched_scan_count": 1},
             "source_page_budget": {"size": SOURCE_SIZE, "pages_per_locator": SOURCE_PAGES,
                                    "pages_per_call": SOURCE_PAGES_PER_CALL},
+            "workspace_source_page_budget": {"size": WORKSPACE_SOURCE_SIZE,
+                                              "pages_per_locator": WORKSPACE_SOURCE_PAGES},
             "cases": cases, "search_cases_total": len(cases),
             "search_cases_found_all_sources": None,
             "benchmark_cases_total": len(cases) + 1, "change_impact_regression": impact,

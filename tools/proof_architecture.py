@@ -15,6 +15,7 @@ import json
 import os
 import pathlib
 import re
+import stat
 import subprocess
 import tempfile
 import sys
@@ -2325,6 +2326,195 @@ def expand_source_pages(root: pathlib.Path, query: str,
     return pages
 
 
+def _workspace_page_relative_path(value: str) -> str:
+    """Accept literal canonical relative paths, not URIs or path syntax aliases."""
+    if (not isinstance(value, str) or not value or value.startswith("/") or
+            any(ch in value for ch in "\\:%?#") or
+            any(ord(ch) < 32 or ord(ch) == 127 for ch in value) or
+            any(part in {"", ".", ".."} for part in value.split("/"))):
+        raise ValueError("unsafe workspace reference")
+    return value
+
+
+def _workspace_page_read(root: pathlib.Path, relative: str) -> tuple[str, bytes | None]:
+    """Open every component relative to root without following any symlink.
+
+    The stronger no-symlink policy prevents escapes even when components are
+    replaced concurrently. Fail closed where dir_fd/O_NOFOLLOW are missing.
+    The stat comparison detects ordinary concurrent modification during read;
+    it is not an operating-system snapshot or attestation of later bytes.
+    """
+    if (not hasattr(os, "O_NOFOLLOW") or not hasattr(os, "O_DIRECTORY") or
+            os.open not in os.supports_dir_fd):
+        return "unsupported_safe_open", None
+    try:
+        parts = _workspace_page_relative_path(relative).split("/")
+    except ValueError:
+        return "invalid_or_unsafe_reference", None
+    descriptors: list[int] = []
+    try:
+        directory_flags = os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW
+        fd = os.open(root, directory_flags)
+        descriptors.append(fd)
+        for part in parts[:-1]:
+            fd = os.open(part, directory_flags, dir_fd=fd)
+            descriptors.append(fd)
+        file_flags = os.O_RDONLY | os.O_NOFOLLOW | getattr(os, "O_NONBLOCK", 0)
+        file_fd = os.open(parts[-1], file_flags, dir_fd=fd)
+        descriptors.append(file_fd)
+        before = os.fstat(file_fd)
+        if not stat.S_ISREG(before.st_mode):
+            return "invalid_or_unsafe_reference", None
+        if before.st_size > 4_000_000:
+            return "oversized", None
+        chunks = []
+        remaining = 4_000_001
+        while remaining:
+            part = os.read(file_fd, min(remaining, 262144))
+            if not part:
+                break
+            chunks.append(part)
+            remaining -= len(part)
+        data = b"".join(chunks)
+        after = os.fstat(file_fd)
+        fingerprint = lambda s: (s.st_dev, s.st_ino, s.st_size, s.st_mtime_ns, s.st_ctime_ns)
+        if len(data) > 4_000_000:
+            return "oversized", None
+        if fingerprint(before) != fingerprint(after) or len(data) != after.st_size:
+            return "changed_during_read", None
+        return "workspace_content_loaded", data
+    except OSError:
+        # Includes missing files, symlinks rejected by O_NOFOLLOW, and file
+        # system errors. No target bytes are returned on any such failure.
+        return "missing_or_unreadable", None
+    finally:
+        for descriptor in reversed(descriptors):
+            os.close(descriptor)
+
+
+def expand_workspace_source_pages(root: pathlib.Path, query: str,
+                                  returned_hits: list[dict[str, Any]], *,
+                                  page_size: int = 8, pages_per_locator: int = 1,
+                                  page_offset: int = 0,
+                                  allowed_paths: set[str] | None = None
+                                  ) -> list[dict[str, Any]]:
+    """Open bounded Markdown-relative workspace sources behind returned hits.
+
+    Only query-matching lines outside Markdown fences are inspected. Literal
+    paths have no traversal or URI syntax and are resolved relative to the
+    observed locator. Every path component must be symlink-free. Workspace
+    content is identified by its observed SHA-256, never by an inferred Git
+    commit. No expected-result or benchmark paths are inputs to this function.
+    """
+    if (not 1 <= page_size <= 8 or not 1 <= pages_per_locator <= 8 or
+            not 0 <= page_offset <= 7 or len(returned_hits) > 64):
+        raise ValueError("workspace source pages require size/pages 1..8, offset 0..7, and at most 64 hits")
+    root = _search_filesystem_path(_search_filesystem_path(root).resolve(strict=True))
+    if allowed_paths is None:
+        roots = [name for name in TEXT_ROOTS if (root / name).is_dir()]
+        if not roots:
+            return []
+        globs = ["-g", "*.md", "-g", "*.lean", "-g", "*.json", "-g", "*.csv",
+                 "-g", "*.py", "-g", "*.toml"]
+        result = subprocess.run(["rg", "--files", *globs, *roots], cwd=root,
+                                capture_output=True, text=True, encoding="utf-8", errors="replace")
+        if result.returncode not in (0, 1):
+            raise RuntimeError(f"rg file listing failed ({result.returncode}): {result.stderr}")
+        allowed_paths = {path.replace("\\", "/") for path in result.stdout.splitlines()}
+    terms = _query_terms(query)
+    pattern = _term_pattern(terms)
+    markdown = re.compile(r"(?<!!)(?<!\\)\[[^\]\n]*\]\(([^\s)]+)\)")
+    cache: dict[str, tuple[str, bytes | None]] = {}
+    pages: list[dict[str, Any]] = []
+    for locator_rank, locator in enumerate(returned_hits, 1):
+        if (locator.get("source_origin") != "workspace" or
+                locator.get("direct_content") is not True or not locator.get("source_refs")):
+            continue
+        locator_rel = str(locator.get("source", ""))
+        status, locator_bytes = _workspace_page_read(root, locator_rel)
+        if status != "workspace_content_loaded" or locator_bytes is None:
+            continue
+        digest = hashlib.sha256(locator_bytes).hexdigest()
+        if digest != locator.get("source_sha256"):
+            continue
+        content = locator_bytes.decode("utf-8-sig", errors="replace")
+        own_match = _candidate_record(locator_rel, content, terms, origin="workspace", pattern=pattern)
+        if own_match is None or not own_match[1]["direct_content"]:
+            continue
+        references_by_citation = {}
+        fence_char = None
+        fence_length = 0
+        for line_number, line in enumerate(content.splitlines(), 1):
+            fence_char, fence_length, fence_line = _markdown_fence_transition(line, fence_char, fence_length)
+            if fence_line or fence_char is not None or len(line) > 4096 or not pattern.search(_fold(line)):
+                continue
+            for match in markdown.finditer(line):
+                if line[:match.start()].count("`") % 2:
+                    continue
+                citation = match.group(1)
+                score = len(_matched_term_names(_fold(line), pattern, terms))
+                previous = references_by_citation.get(citation)
+                if previous is None or score > previous[0]:
+                    references_by_citation[citation] = (score, citation, line_number, line)
+        references = list(references_by_citation.values())
+        references.sort(key=lambda row: (-row[0], row[1], row[2]))
+        truncated = len(references) > 64
+        references = references[:64]
+        for page_index in range(page_offset, min(8, page_offset + pages_per_locator)):
+            start = page_index * page_size
+            batch = references[start:start + page_size]
+            if not batch:
+                break
+            page: dict[str, Any] = {
+                "query": query, "locator_source": locator_rel, "locator_sha256": digest,
+                "locator_rank": locator_rank, "page_number": page_index + 1,
+                "page_size": page_size, "total_references": len(references),
+                "remaining_references": max(0, len(references) - start - len(batch)),
+                "reference_scan_limit": 64, "reference_set_may_be_truncated": truncated,
+                "reference_statuses": [], "candidates": [],
+            }
+            for _, citation, line_number, line in batch:
+                receipt: dict[str, Any] = {"citation_path": citation, "citation_line": line_number,
+                                           "citation_text": line, "source": None,
+                                           "content_status": "invalid_or_unsafe_reference"}
+                page["reference_statuses"].append(receipt)
+                try:
+                    relative = _workspace_page_relative_path(citation)
+                    source = (pathlib.PurePosixPath(locator_rel).parent / relative).as_posix()
+                    _workspace_page_relative_path(source)
+                except ValueError:
+                    continue
+                receipt["source"] = source
+                if (source.split("/", 1)[0] not in TEXT_ROOTS or
+                        pathlib.PurePosixPath(source).suffix.casefold() not in
+                        {".md", ".lean", ".json", ".csv", ".py", ".toml"} or
+                        source in {"tools/proof_architecture.py", "tools/proof_architecture_cold_start.py",
+                                   "tools/proof_architecture_cold_start_v3.py",
+                                   "tools/compact_proof_architecture_cold_start_v3.py"} or
+                        source.startswith("tools/test_") or
+                        source.startswith(DERIVED_TEXT_EXCLUDED_PREFIXES) or source not in allowed_paths):
+                    receipt["content_status"] = "unsearchable_target"
+                    continue
+                if source not in cache:
+                    cache[source] = _workspace_page_read(root, source)
+                status, data = cache[source]
+                if data is None:
+                    receipt["content_status"] = status
+                    continue
+                matched = _candidate_record(source, data.decode("utf-8-sig", errors="replace"),
+                                            terms, origin="workspace", pattern=pattern,
+                                            content_sha256=hashlib.sha256(data).hexdigest())
+                if matched is None or not matched[1]["direct_content"]:
+                    receipt["content_status"] = "no_direct_content_match"
+                    continue
+                receipt["content_status"] = "direct_content_match"
+                page["candidates"].append({**matched[1], "citation_path": citation,
+                                           "citation_line": line_number, "citation_text": line,
+                                           "locator_source": locator_rel})
+            pages.append(page)
+    return pages
+
+
 def _search_summary(item: dict[str, Any]) -> dict[str, Any]:
     """Expose typed fields from exact authority matches; use `show` for detail."""
     record = item.get("record", {})
@@ -3585,6 +3775,10 @@ def main() -> int:
                         help="global result window, 1..64 (default: 5)")
     search.add_argument("--source-pages", type=int, default=0,
                         help="open 0..8 pages of eight exact sources per returned locator")
+    search.add_argument("--workspace-source-pages", type=int, default=0,
+                        help="open 0..8 pages of observed local Markdown links per returned locator")
+    search.add_argument("--workspace-page-offset", type=int, default=0,
+                        help="continue local-link pages from this zero-based page, 0..7")
     search.add_argument("--offset", type=int, default=0,
                         help="continue the same ranked window from this zero-based result")
     search.add_argument("--paginate", action="store_true",
@@ -3686,6 +3880,9 @@ def main() -> int:
         data = load_dataset(root)
         if args.command == "search":
             if (not 1 <= args.limit <= 64 or not 0 <= args.source_pages <= 8
+                    or not 0 <= args.workspace_source_pages <= 8
+                    or not 0 <= args.workspace_page_offset <= 7
+                    or (args.workspace_page_offset and not args.workspace_source_pages)
                     or not 0 <= args.offset <= 4096 or not 0 <= args.source_page_offset <= 512
                     or ((args.source_page_offset or args.continue_sources) and not args.source_pages)):
                 parser.error("invalid search limit, offset, or source-page budget")
@@ -3703,7 +3900,8 @@ def main() -> int:
             if args.offset or args.paginate:
                 result["text_offset"] = args.offset
                 result["text_page_may_have_more"] = len(text_hits) == args.limit
-            if args.offset or args.paginate or args.source_page_offset or args.continue_sources:
+            if (args.offset or args.paginate or args.source_page_offset or args.continue_sources
+                    or args.workspace_page_offset):
                 result["pagination_scope"] = (
                     "Each page reruns against the current corpus. Offsets are not durable "
                     "cursors: compare only on the same unchanged corpus, query, limits and Git objects."
@@ -3721,6 +3919,20 @@ def main() -> int:
                 result["source_pages"] = [
                     {**page, "candidates": [_search_candidate_summary(hit, data)
                                            for hit in page["candidates"]]}
+                    for page in pages
+                ]
+            if args.workspace_source_pages:
+                pages = expand_workspace_source_pages(
+                    root, query, text_hits, pages_per_locator=args.workspace_source_pages,
+                    page_offset=args.workspace_page_offset,
+                )
+                result["workspace_page_offset"] = args.workspace_page_offset
+                result["workspace_source_pages"] = [
+                    {**page, "candidates": [
+                        {**_search_candidate_summary(hit, data),
+                         "citation_path": hit["citation_path"], "citation_line": hit["citation_line"],
+                         "locator_source": hit["locator_source"]}
+                        for hit in page["candidates"]]}
                     for page in pages
                 ]
         elif args.command == "show":
