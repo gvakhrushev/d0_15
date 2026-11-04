@@ -1095,7 +1095,7 @@ CASES: list[dict[str, Any]] = [
         "id": "native-stationary-recording-seed-whole-word-source",
         "queries": [
             "native stationary recording seed whole word source full Book 496 real skew directions",
-            "full word cotangent actual stage suffix transport stationary prefix positive return source matrix endpoint",
+            "whole word source adjoint wrong untransported source",
             "full_Book_price five_point_full_price_error full_modes 578 stationary seed result",
             "ancestral marker pullback zero return source scalar future T QUERY positive saddle",
         ],
@@ -1664,7 +1664,7 @@ CASES: list[dict[str, Any]] = [
             "52 call preparation alternative same inventory changes retained report complete price decrease 0.0000072042261899642877793",
             "all512 active columns all34 actual suffixes 93 exact checks full physical rank16 thermal dimension65536",
             "literal Book03.25 H+J no additional Shannon von Neumann fitted Info term correction 7ds",
-            "ordinary optimized repeat byte identical published receipt stderr empty replay manifest Python 3.9.6",
+            "replay_whole_book_price ordinary optimized receipt stderr",
             "source_manifest.json d0-native16-whole-book-price-graph-intake-v1 inputs/upstream_receipts.md d6dbe367a71f4e0aff666aad2eb963134296d0ba18f99821539ba27e476173a4 frozen_receipt_inputs",
             "A1_34 estimate corrected exact rational bound 1.92095 whole heat remains 93 checks full endpoint cotangents all34 suffix pullbacks",
             "D0_PROOF_ARCHITECTURE_AND_FORMALIZATION supporting compiler price graph physical admission X_N Cost-Info Lean CI GR_closed false",
