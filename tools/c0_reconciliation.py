@@ -692,6 +692,19 @@ BOOK01_PINS = KernelSectionPins(
     historical_inventory_path="", result_id="lean-verification-core-composition")
 
 
+# Versioned proof-only owner: historical source pin is never replaced. The
+# active snapshot may use only the reviewed old blob or this exact refactor.
+# This verifies provenance, not semantic acceptance or execution of this
+# Python helper from the selected snapshot.
+VERSIONED_OWNER_BLOBS = {
+    ("D0.Foundation.FutureShortlexAdapter",
+     "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean",
+     "a4a390673994ecbe7529ebae636ddd3fd6e2db7d"):
+        frozenset(("a4a390673994ecbe7529ebae636ddd3fd6e2db7d",
+                   "b4ec8b60a52aaa1bb3e5b1fcc40b57ba1087d43b")),
+}
+
+
 BOOK01_0116_PINS = KernelSectionPins(
     section_label="Book01 §01.1.6", source_anchor="01.1.6",
     units_heading="C0 Book01 01.1.6 mathematical-unit candidates", require_unit_module=True,
@@ -736,6 +749,7 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             "all_other_c0_candidates": "not_enumerated_unresolved",
             "c0_acceptance_assessment": "not_evaluated", "coverage_reported": False,
             "this_view_does_not_freeze_or_accept": True, "scientific_status_changed": False,
+            "running_reconciliation_helper": "current_runtime_not_authenticated_against_selected_snapshot",
         },
         "authority": {}, "checks": {}, "issues": [], "units": [],
     }
@@ -771,7 +785,8 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
         module_pins = ((pins.module, pins.module_path, pins.module_blob),) + pins.additional_modules
         if len({m for m, _, _ in module_pins}) != len(module_pins):
             raise MissingEvidence("duplicate pinned owner module")
-        owners = {m: (path, blob) for m, path, blob in module_pins}
+        historical_owners = {m: (path, blob) for m, path, blob in module_pins}
+        owners = dict(historical_owners)
         for u in units:
             if pins.require_unit_module and "module" not in u:
                 raise MissingEvidence("mathematical atom lacks explicit owner module")
@@ -806,8 +821,13 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
         if hashlib.sha256(raw[start:end]).hexdigest() != pins.section_sha256:
             raise MissingEvidence(pins.section_label + " source section digest mismatch")
         for module, path, blob in module_pins:
-            if git.blob(snapshot, path) != blob or git.blob(pins.source_commit, path) != blob:
+            if git.blob(pins.source_commit, path) != blob:
+                raise MissingEvidence("historical source differs from pinned reviewed module: " + module)
+            active_blob = git.blob(snapshot, path)
+            allowed = VERSIONED_OWNER_BLOBS.get((module, path, blob), frozenset((blob,)))
+            if active_blob not in allowed:
                 raise MissingEvidence("source differs from pinned reviewed module: " + module)
+            owners[module] = (path, active_blob)
         if len({u["atom"] for u in units}) != len(units):
             raise MissingEvidence("duplicate mathematical atom key")
         for u in units:
@@ -823,7 +843,9 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             "section_range": [start, end], "section_sha256": pins.section_sha256,
             "primary_path": PRIMARY, "primary_section_sha256": pins.primary_sha256,
             "module_path": pins.module_path, "module_blob": pins.module_blob,
-            "owner_modules": [{"module": m, "path": p, "blob": b} for m, p, b in module_pins],
+            "owner_modules": [{"module": m, "path": p, "blob": b,
+                               "historical_blob": b, "active_blob": owners[m][1]}
+                              for m, p, b in module_pins],
         }
         if active_version is not None:
             # Units and byte ranges below still refer to the historical source.
