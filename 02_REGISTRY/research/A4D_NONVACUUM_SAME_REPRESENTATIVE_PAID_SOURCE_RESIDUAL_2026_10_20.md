@@ -139496,6 +139496,1353 @@ Observed normal and optimized receipt:
 }
 ```
 
+## 7fj. One actual clock, two priced readouts: the complete Book/CQ comparison and its nonzero source defect
+
+5 November 2026. Existing #334, native realization / final composition.
+Input 800701f84b0d8b2970556421afd2b0887be68561. Consumer: §7fi BR7 and
+unchanged contract C's complete-price map, retaining B/D's real record
+controls and reporting-task boundary.
+
+The changed mathematical input is §7fi's ACTUAL born full128 history,
+transported by §7fh into native words, with the full RAW/GROWING clock.
+The comparison below includes all425D Hodge modes, its generated cut,
+and the complete final quantum state before and after recording. It
+does not reuse the older minimal-incidence Book as this execution.
+The unknown remainder is replaced by explicitly determined same-clock
+relative-entropy, cost and energy quantities. The difference between
+the master and CQ sources does NOT vanish in the intensive comparison.
+`GR_closed=false`; no physical price or scoped terminal is promoted.
+
+### 7fj.A. Keep the one original master and its full carrier
+
+Book03 §03.25 defines the single master B=H+J. The Book amplitude-binding
+owner distinguishes expected cost-information, amplitude action and
+log-normalizer. Neither that definition nor §03.8 identifies §7fi's P_n
+as an additional summand of B. In particular no action B+P_n is used.
+
+For each actual native word on the owned K(9,11,13) scene, consume the
+RAW/GROWING tuple, including every birth complement and last real gate:
+
+    T=S+R g E_f, D=sum_j dim H_j,
+    Delta0=I-B_s tensor I-C_s tensor(T+T*),
+    Z=359D+2 Tr_(33D) exp(-beta Delta0), H=ln Z/beta,
+    C=P0 B_(0,f)* g A_f P0,
+    J=-ln det_ImgP0[(1-z)I+z C*C].                    (BCP1)
+
+Here beta>0, 0<z<1 and the original cut rank r0 are the actual declared
+parameters. The temporal operator is fully unitary. The actual born
+active programme has initial rank one, or the retained fixed protected
+multiplicity r0; pure births do not multiply that cut rank. The feedback
+has only the initial-rank determinant in BCP1, although all other modes
+remain in heat. A different rank scaling must be retained explicitly.
+
+The owned bounds 0<=Delta0<=2I and 0<=C*C<=I give
+
+    D[359+66 exp(-2beta)]<=Z<=425D,
+    0<=J<=-r0 ln(1-z).
+
+Thus ANY two actual native words on the SAME birth/stage layout obey
+
+    |B_+-B_-|<=M_B,
+    M_B=beta^-1 ln[425/(359+66 exp(-2beta))]
+                           -r0 ln(1-z).              (BCP2)
+
+This preserves the entire425D carrier. The common beta^-1 ln D cancels
+between the prices; it is not subtracted from the action. No equality of
+endpoints, DATA channels, stage spectra or heat is assumed. Equal final
+width alone would not give the required equal D/layout.
+
+### 7fj.B. Two literal native endings on the same paid layout
+
+Keep the current seven record wires live until commitment. Let c be
+the least significant row bit j mod2, b the port, and h a different
+existing row bit. They are distinct current wires, not oldRIGHT. Set
+A=CX(c,b), B=CX(b,h), Cx=CX(c,h). The chronological words are
+
+    I5=A;B;A;B;Cx=I,
+    X5=A;A;A;A;A=A.                                  (BCP3)
+
+Both have five genuine forward CX calls, the same births/marks, no new
+helper, inverse or continuous-angle primitive. The dirty h is restored
+on every column. Append the alternatives AFTER the same actual §7fh
+native prefix and BEFORE its final computational fine record. Repeat
+at each current tick if required; all previously sealed records remain
+untouched. Both prices include these five real stages. There is no
+claim of equality to the unextended clock or of a free identity block.
+
+X5 swaps exactly the odd-j port pairs, fixing j=0. For the original
+targets define Lambda=N0* N0 and the actual coefficient-column effect
+
+    Q_odd=sum_(j odd) N_j N_j*,
+    E_odd=4p^2 N0* Q_odd N0,
+    w_odd,t=Tr[E_odd Phi^(t-1)(rho0)].                 (BCP4)
+
+Walsh Parseval on the original32 duplicated words gives
+
+    Q_odd=(1/16)sum_(r=0)^3
+      [L(P_r)^2+R(P_r)^2+L(C_r)^2+R(C_r)^2].          (BCP5)
+
+These are the original Julia defects. On a strict chart with each
+displayed squared defect >=kappa I, Q_odd>=kappa I. Consequently
+E_odd>=4p^2 kappa Lambda>0 on the regular faithful chart. This selected
+bit is genuinely live; it is not the duplicated Walsh bit whose rows
+can all be dark. All zero slots remain in the operator sums.
+
+The literal permutation preserves the full fine-history entropy and
+conditional quantum information, including every retained helper and
+reference. With the same fixed n-tick, non-reset experiment, the exact
+original target prices satisfy
+
+    P_I,n-P_X,n=p^3 sum_t w_odd,t.                     (BCP6)
+
+All real field and preparation derivatives act on that expression.
+For an arbitrary ACTUAL approximating native prefix, entropy equality
+is still exact: the entire fine word is merely permuted. Its exact
+price difference is the expectation of the summed signed odd-port
+observable, whose values lie in [-n,n]. If the complete word law is
+within TV tau of the original target, its difference from BCP6 is at
+most2n tau. No iid reset or equality of different physical clocks is used.
+
+At a fixed regular primitive original chart, sum_t w_odd,t/n tends to
+w_odd,*=Tr(E_odd rho_*)>0 from the actual born input. Therefore, along
+native approximations with tau->0,
+
+    (P_I,n-P_X,n)/n ->p^3 w_odd,*>0,
+    |B_I,n-B_X,n|/n <=M_B/n ->0.                      (BCP7)
+
+This is a concrete comparison with actual all-column G/CX endings.
+Their equal resource counts do not equate the original port tariff
+with the complete physical action. A PORT-dependent stopping policy
+changes its tree and is not silently substituted for this fixed horizon.
+
+### 7fj.C. The explicit same-clock information and price map
+
+Let rho_f be the actual coherent final state of the FULL execution,
+and Gamma_f its declared fine-pointer pinching, on that SAME final
+carrier. Keep all quantum work, protected systems and all records.
+Efficient isometric execution gives S(rho_f)=S(Omega). The specified
+old port-CQ component is P_n=E C_n-[S(Gamma_f)-S(Omega)]/ell.
+
+Use the original fixed rank-one scene state eta and inject the final
+work fibre into its degree-zero clock stage. The resulting rhohat and
+Gammahat have the same nonzero density spectra as rho_f and Gamma_f.
+This is a diagnostic isometric map, not an additional physical state
+preparation or a change of the feedback cut. On the SAME full Hodge
+operator put
+
+    sigma_B=exp(-beta Delta)/Z,
+    D_coh=D(rhohat||sigma_B), D_rec=D(Gammahat||sigma_B),
+    R_coh=Tr(rhohat Delta), R_rec=Tr(Gammahat Delta).    (BCP8)
+
+The faithful reference sigma_B is determined by this actual master;
+it is not a Gibbs input selected for the process. Direct substitution
+of log sigma_B=-beta Delta-ln Z proves
+
+    I_CQ=D_coh-D_rec+beta(R_rec-R_coh),
+    ell P_n=ell E C_n+D_rec-beta R_rec-beta H+S(Omega).
+                                                               (BCP9)
+
+This computes an exact comparison map for the complete recorded
+price. At every smooth actual variation, including preparations,
+scene and pointer/cut motion, its full source identity is
+
+    ell dP_n+beta dB
+      =ell dE C_n+dD_rec-beta dR_rec+beta dJ
+                      +dS(Omega)-(R_rec+H)d beta.     (BCP10)
+
+For discrete native words use the exact value identity BCP9 at both
+endpoints. Neither defect is adjustable, and neither is set to zero.
+The MINUS heat sign is part of the identity. There is no permission
+to add the two candidate prices or fit Info from a desired residual.
+
+### 7fj.D. The actual final-stage energy check and feedback reaction
+
+For the final-stage lift the real GROWING block is T_ff=D_f g. Hence
+
+    R_rec=Tr[eta(I-B_s)]
+      -Tr(eta C_s) Tr[Gamma_f(D_f g+g*D_f)].            (BCP11)
+
+The coherent generated-prefix support condition cannot automatically
+be copied after pointer pinching. BCP11 retains this possible energy
+correction and its derivative. For BOTH actual five-CX endings BCP3,
+the last interstage edge is square, so D_f=0 and T_ff=0 exactly. Thus
+the actual post-last-gate output and its fine pinching both have
+
+    R_coh=R_rec=e_s=Tr[eta(I-B_s)],
+    I_CQ=D_coh-D_rec.                                 (BCP12)
+
+At fixed original scene de_s=0; genuine scene variations restore its
+source. No unpaid idle stage is inserted. The full protected initial
+entropy remains in BCP9--10 and is zero only for a pure full input.
+For the literal I5/X5 pair, S(Gamma_I)=S(Gamma_X), so the actual defects
+satisfy D_rec,I-D_rec,X=beta(H_I-H_X). This precisely cancels the heat
+difference in BCP9; the genuine code-price contrast BCP6 remains.
+
+The proper-cut feedback can also be computed before compilation. Put
+r_j=(v^tensor6)_j, M_j=-2p N_j* N0, Mbar=sum_(j>0)r_j M_j and s=2pa.
+For §7fi's all-ordinary-pair rotation the actual born-record contraction is
+
+    A(theta)=a^7(I-4p^2 Lambda)
+                    +[s cos(theta)-p^3 sin(theta)] Mbar,
+    c_n=Re<psi,A(theta_n)...A(theta_1)psi>,
+    J_n=-r0 ln(1-z+z c_n^2),
+    partial_t J_n=-2zr0 c_n partial_t c_n/(1-z+z c_n^2).
+                                                               (BCP13)
+
+The real part and initial rank are essential for the actual pure phase
+birth. Old-input/preparation variations differentiate both endpoint
+vectors, and original field variations differentiate every A. For
+compiled endpoint error delta the actual scalar cold error is <=delta
+and the feedback value error is <=2zr0 delta/(1-z). BCP2 needs no such
+approximation and already controls the entire native master.
+
+### 7fj.E. A nonzero full-price source defect on the same native comparisons
+
+For the simultaneous direction theta_t=+/-u, §7fi BR3 gives exactly
+
+    delta_u(P_n/n)= [sum_t w_t/n]
+                   [f(b(u))-f(b(-u))]/(2u)
+                    ->4pa w_*>0.                    (BCP14)
+
+Here w_t is the actual ordinary-pair occupation, all histories are
+retained, and the limit uses u->0, n->infinity on the fixed regular
+original chart. This direction does not need an iid or entropy-rate
+derivative approximation; its finite-history price identity is exact.
+
+Use actual native common-layout compilations with
+
+    n_k=k^2, u_k=1/k, per-round error<=exp(-k)/n_k.
+
+The §7fi pure-history modulus gives an intensive CQ finite-source error
+at most k exp(-k)(1+ln128/ell)+(k+1)exp(-k)/(k ell), which tends to zero.
+On these SAME actual paid endpoint words, for a supplied fixed Gamma>0,
+
+    |delta_(u_k)(B_native,n_k/n_k)|/Gamma
+                              <=M_B/(2k Gamma)->0,
+    delta_(u_k)(P_native,n_k/n_k)/Gamma
+                              ->4pa w_*/Gamma>0.      (BCP15)
+
+Thus the unmodified intensive master and CQ sources do not identify
+in this actual direction and norm regime. If B is the selected full
+law, its difference from the specified CQ component has the determined
+comparison limit -4pa w_*/Gamma. This is not an independently selected
+extra ledger or an assigned compensator. BCP9--10 give its explicit
+cost/defect/energy/feedback map on the same history.
+
+The earlier exponential comparison step of §7fi BC8 would not make
+the master bound small at n=k^2; the polynomial step above is used.
+At varying rank, beta, z or gain retain the ACTUAL condition
+M_B,k/(n_k |u_k| Gamma_k)->0. This result does not apply by declaration
+to the vanishing CT/XF geometric gain. One simultaneous finite direction
+also does not prove all independent clock rows vanish. Exact finite
+stationarity, other normalizations and the existing Einstein sector
+are not excluded by this scoped source separation.
+
+### 7fj.F. Admission and the consuming route after this comparison
+
+Native syntax admits BCP3 on the current live wires; prior records and
+oldRIGHT remain protected. Under the owned FN/RO task asking for the
+original COMPLETE marked full128 report, a changed fine target is not
+a vertical implementation change. That precise supplied task has an
+effective guard. A simultaneous transport of record and reader would
+preserve the old labels and tariff, and would not give BCP6 or BR3.
+
+If the actual task permits different encoders, the compared sources
+are relevant to its independent record equations. If it fixes the
+original report, these are comparisons of valuations/requests and do
+not refute stationarity inside its faithful implementation fibre.
+Neither syntax nor unchanged Phi forces which task M1 selected.
+
+The missing application is now precise. Use the ACTUAL selected full
+price and complete operation/task graph; compare its reduced covector
+through a proved common physical map with the owned kappa/Einstein
+source. The particular shortcut P_n/n = B_n/n in the fixed-gain regime
+has failed on this full clock. It cannot be restored by deleting the
+computed defects or adding P_n to B. Other physical gains, genuine
+source-equivalence balances and independently justified full-price
+bindings retain their own hypotheses. No new task, root, geometry,
+positive assembly acceptance, Info law or GR closure is asserted.
+
+
+### 7fj.G. Reproducible literal clock and original code-source check
+
+The bounded script consumes ONE original full128 constructor call at
+r=1/9, nu=3/5, with the actual theta=2 arctanh(1/9) field jet. It reads
+only the pinned loader from the published §7fh.G1 block and the pinned
+original constructor/creator definitions. No sibling scratch package,
+old suite, or generated expected result is a scientific input.
+
+All128 operator slots and every two-tick word remain. The odd-row
+permutation preserves the entire channel, its field jet and the entire
+fine CQ entropy. Original Walsh Parseval is independently checked against
+all four Julia defects, including the actual first derivative and strict
+positive margin. The two-tick code-price gap is approximately0.00820944,
+with theta-source gap approximately-0.000384158. These are nominal
+controls, not interval evidence or a geometric source identification.
+
+The SAME literal five-CX words are checked on all three-bit columns.
+The tiny real native history contains three canonical births followed
+by those five gates: true widths1,2,4,8,8,8,8,8, N=8 and D=47. Its complete
+closing map retains every birth detail. Both full clocks are exactly
+unitary in Golden algebra, with final detail zero, first possible return
+at the actual eighth stage, and the entire generated-cut feedback reduced
+to its proved rank-one defect. The cold values are1 and p+2ap^3.
+This is an actual small native clock, not the enormous full128 compiled
+history; the all-word theorem BCP2 supplies that latter comparison.
+
+The original33-vertex/359-edge scene is reconstructed exactly. Both
+Hodge degrees count19,975 modes, including the16,873 excess harmonic
+modes. The numerical heat check diagonalizes all47 clock cosine values
+and every associated33-dimensional scene block; it does not replace the
+heat by the final endpoint or omit zero modes. At diagnostic beta=1 and
+the original z=2^-20, the actual full master difference is approximately
+2.04473e-8, within the analytical bound0.144191635. Both actual postgate
+coherent and fine-pinched final energies are1 on the declared scene
+coordinate. The proof's value/source identities apply on the full carrier,
+not only this fixture. The original PLUS sign H=+ln Z/beta is used.
+
+All90 conditions use explicit exceptions:39 exact Golden-algebra,
+6 exact integer,34 nominal numerical,7 provenance and4 structural.
+Normal and optimized runs with warnings as errors in Python3.12.14 /
+NumPy2.3.5 / SciPy1.16.3 / SymPy1.14.0 produced identical receipts.
+No nominal result is presented as an interval certificate. The check
+contains no physical gate-angle primitive or same-task acceptance rule.
+
+Three bounded reviews pin the final text and verify the full425D bound,
+initial-rank feedback, same-layout normalization, genuine output-state
+energy condition, all beta/preparation/scene reactions, and the strict
+free-versus-guarded reporting boundary. These reviews are not independent
+positive assembly acceptance. Existing physical closure obligations remain.
+
+Extract the block into scratch check_clock_price.py and use the recorded
+library versions:
+
+```text
+python3 -Werror /absolute/scratch/check_clock_price.py --repo /absolute/repository
+python3 -O -Werror /absolute/scratch/check_clock_price.py --repo /absolute/repository
+```
+
+The script prints observed JSON and writes no repository files. Owner
+hashes refer to the pre-insertion commit. This two-file insertion preserves
+all prior bytes and the original A--D acceptance contract.
+
+```json
+{
+  "GR_closed": false,
+  "check_counts_by_kind": {
+    "exact_golden": 39,
+    "exact_integer": 6,
+    "nominal_numeric": 34,
+    "provenance": 7,
+    "structural": 4
+  },
+  "checker_sha256": "6362d9709e6026019976981e3615868bf39e89b8abbf68dbf0e44c8ee5f76974",
+  "checks": 90,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "input_head": "800701f84b0d8b2970556421afd2b0887be68561",
+  "normal_and_optimized_byte_identical": true,
+  "normal_optimized_receipt_sha256": "85d7c369546a85ce1903d7a8582f495918a96c03268812ae39c00c53618044bf",
+  "not_claimed": [
+    "large native word emitted or physically executed",
+    "nominal floating controls are interval certificates",
+    "free stationary or mixed realification bank",
+    "source comparison proves every independent temporal row vanishes",
+    "output rotations already admitted as free variables of the same task",
+    "known port-CQ score is added to H+J as a new action",
+    "fixed-gain separation excludes the vanishing CT/XF geometric gain",
+    "reduced full physical source equals Einstein with reverse recovery",
+    "independent positive assembly acceptance"
+  ],
+  "original_constructor_calls_per_run": 1,
+  "owner_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "f5f07bafa397b5a674dead5082c684478bc6453a0e92912f321f91f4a0207473",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_03.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_CLOCK_WORK_RETURN_SOURCE_SYNTHESIS_2026_10_21.md": "7184e3cd94ff501e5ac213f6d632dbf6c465ea70d3eb363b5eadd91b30761ad5",
+    "02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md": "4b035f3b0d75753184c7fbd1149a7ab614c2bccfa449d67f677ce853266a766d",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "1e4b044947e61a137ec8d91720e3f0f034e349c91254fbe13253a23a29e162e6",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_GOLDEN_POINTER_X_INVARIANT_BOOK_DIFFERENT_PRICE_2026_10_22.md": "82caf5e7fdf3aa75ea1dedf1edd159369bd1dc78649cbe69457927a46778f443",
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_UNIQUE_STATIONARY_CQ_RATE_AND_FINITE_ENTROPY_BRACKETS_2026_10_22.md": "667d7c55d2d0e390c7b04454a5d84181237263466870bb06d73deff3b42704b7",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+    "02_REGISTRY/research/sources/d0_native65_causal_source_2026-10-22/THEOREM.md": "eef383ca58e6bce715b2b76f27a1abcdcab3ac668a4b09187bf1238cc4976436",
+    "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_SOURCE.md": "f1ee97765d7c8a82ff65f4ab81f46cb626e6780856fac34684efa8d4cac92d51",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9"
+  },
+  "predecessor_checker_sha256": "cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c",
+  "predecessor_checker_source": "same primary artifact, section7fh.G1",
+  "run_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "scientific_promotion": false,
+  "scope": "Actual whole-clock Book/CQ defect map, literal equal-length native control and fixed-gain intensive source separation",
+  "scratch_proof_sha256": {
+    "CHECK_RECEIPT.md": "d8cc8fabdfe2e195e10601a6684bb2519fedc4358a583a10a12bf07635827fa5",
+    "admission-final.md": "7ffada828b0f0782290eb739d6596ecef91a14d1b3a44f3c790fb457f5d7b9df",
+    "admission.md": "cafc219acfe50a72157f68b09a5e5c57ad68e2e15266dcfd1fbf3c2ce7624a5a",
+    "brief.md": "54cc1ba578ff3711dd76b1f0cd0d3224fb7044c2f32ff0d6a206eace3b6404c7",
+    "price-final.md": "dc44b967f24c74e5c97e26f18ee6756ffae46f5095b97d7711d922d506bc1f40",
+    "price.md": "efcde532f433c998931333ebee116d180fa574ff0556dbb2a11889eb5cf95402",
+    "proof.md": "daaa26fb87f28f53b45ff26b21962e7f72b58fe541d15fcf24b439904cbcc7c6",
+    "source-final.md": "14d5b41293d4b818602fefbf1f9f8071e69a2b601b6c5320462917736c113eab",
+    "source.md": "74dbc298cc0aff7e4509ea723021c50cae7358197b8302d1e5e7861688ed0c74"
+  }
+}
+```
+
+#### 7fj.G1. check_clock_price.py
+
+```python
+#!/usr/bin/env python3
+"""Literal equal-length record controls, one native call, exact tiny clock.
+
+Exact Golden algebra and nominal matrix checks are explicitly distinguished.
+No full128 native word, large heat matrix, same-task rotor admission or full
+physical Cost-Info identification is asserted.
+"""
+from __future__ import annotations
+import os
+for thread_option in ('OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS'):
+    os.environ[thread_option] = '1'
+import argparse
+import ast
+import hashlib
+import json
+from pathlib import Path
+import platform
+from types import SimpleNamespace
+import numpy as np
+import scipy
+import sympy as sp
+from scipy.linalg import expm, solve_sylvester
+
+PRIMARY = '02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md'
+OWNER = '02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py'
+OWNER_SHA256 = '1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9'
+OWNER_BLOB = 'ee8de4635d24c668949ac9a0186616ab7d59f2ed'
+PREDECESSOR_SHA256 = 'cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c'
+CHECKS: list[dict[str, str]] = []
+RESIDUALS: dict[str, float] = {}
+TOL = 4e-11
+JET_TOL = 4e-10
+
+def need(condition: object, label: str, kind: str = 'structural') -> None:
+    if not bool(condition):
+        raise ArithmeticError(label)
+    if label in ('original constructor SHA256 pin', 'original constructor Git blob pin'):
+        kind = 'provenance'
+    CHECKS.append({'label': label, 'kind': kind})
+
+def close(actual: object, expected: object, label: str, tolerance: float = TOL) -> None:
+    error = float(np.max(np.abs(np.asarray(actual)-np.asarray(expected))))
+    RESIDUALS[label] = error
+    need(np.isfinite(error) and error <= tolerance, label, 'nominal_numeric')
+
+def adj(matrix: np.ndarray) -> np.ndarray:
+    return matrix.conj().T
+
+def pinned_loader(repo: Path) -> tuple:
+    previous = PRIMARY+':7fh.G1/check_transport.py'
+    primary = (repo/PRIMARY).read_text()
+    sections = primary.split('#### 7fh.G1. check_transport.py\n')
+    opening = '\n```python\n'
+    need(len(sections) == 2 and sections[1].startswith(opening),
+         'unique published 7fh.G1 loader block', 'provenance')
+    source = (sections[1][len(opening):].split('\n```', 1)[0]+'\n').encode()
+    need(hashlib.sha256(source).hexdigest() == PREDECESSOR_SHA256,
+         'published previous AST loader SHA256', 'provenance')
+    parsed = ast.parse(source.decode(), filename=previous)
+    function = next(node for node in parsed.body
+                    if isinstance(node, ast.FunctionDef) and node.name == 'load_native_once')
+    changed: list[int] = []
+    class FixtureArgument(ast.NodeTransformer):
+        def visit_Call(self, node: ast.Call) -> ast.AST:
+            node = self.generic_visit(node)
+            if (isinstance(node.func, ast.Attribute) and node.func.attr == 'native'
+                    and isinstance(node.func.value, ast.Name)
+                    and node.func.value.id == 'native_excerpt'):
+                expected = ast.parse('np.log(2.0)', mode='eval').body
+                need(ast.dump(node.args[0]) == ast.dump(expected),
+                     'pinned loader has original fixture argument', 'provenance')
+                node.args[0] = ast.parse('2.0*np.arctanh(1.0/9.0)', mode='eval').body
+                changed.append(1)
+            return node
+    function = FixtureArgument().visit(function)
+    need(len(changed) == 1, 'only one native fixture argument changed', 'provenance')
+    module = ast.fix_missing_locations(ast.Module(body=[function], type_ignores=[]))
+    namespace = dict(globals())
+    exec(compile(module, previous, 'exec'), namespace)
+    return namespace['load_native_once'](repo)
+
+def original_creators(repo: Path) -> list[np.ndarray]:
+    source = (repo/OWNER).read_bytes()
+    need(hashlib.sha256(source).hexdigest() == OWNER_SHA256,
+         'same pinned source for creator definition', 'provenance')
+    parsed = ast.parse(source.decode(), filename=OWNER)
+    function = next(node for node in parsed.body
+                    if isinstance(node, ast.FunctionDef) and node.name == 'creators')
+    module = ast.fix_missing_locations(ast.Module(body=[function], type_ignores=[]))
+    namespace: dict = {'np': np}
+    exec(compile(module, OWNER, 'exec'), namespace)
+    return namespace['creators']()
+
+def two(first: np.ndarray, second: np.ndarray, psi: np.ndarray) -> np.ndarray:
+    return np.einsum('bij,aj->abi', second, np.einsum('aij,j->ai', first, psi))
+
+def score(vectors: np.ndarray, jets: np.ndarray, costs: np.ndarray, ell: float) -> dict:
+    q = np.sum(np.abs(vectors)**2, axis=-1)
+    dq = 2*np.real(np.sum(vectors.conj()*jets, axis=-1))
+    live = q > 0
+    need(np.all(dq[~live] == 0), 'zero amplitude branches have zero first probability jet')
+    entropy = -float(np.sum(q[live]*np.log(q[live])))
+    dentropy = -float(np.sum(dq[live]*(np.log(q[live])+1)))
+    cost = float(np.sum(q*costs))
+    dcost = float(np.sum(dq*costs))
+    return dict(price=cost-entropy/ell, source=dcost-dentropy/ell,
+                cost=cost, cost_source=dcost, entropy=entropy,
+                entropy_source=dentropy, positive_slots=int(np.count_nonzero(live)))
+
+def native_checks(repo: Path) -> dict:
+    p, k, dk, rows, drows = pinned_loader(repo)
+    a, ell = np.sqrt(p), np.log((1+np.sqrt(5.0))/2)
+    close(np.einsum('aji,ajk->ik', k.conj(), k), np.eye(16), 'all128 CPTP completeness')
+    perm = np.array([z ^ 1 if ((z//2) & 1) else z for z in range(128)], dtype=int)
+    need(sorted(perm.tolist()) == list(range(128)) and np.array_equal(perm[perm], np.arange(128)),
+         'active128 odd-j port map is an involutive permutation', 'exact_integer')
+    need(perm[0] == 0 and perm[1] == 1 and np.count_nonzero(perm != np.arange(128)) == 64,
+         'j0 pair fixed and exactly64 fine slots permuted', 'exact_integer')
+    ks, dks = k[perm], dk[perm]
+    # Complete CP tensor, not one prepared probability.
+    phi = np.einsum('aij,akl->ikjl', k, k.conj())
+    phis = np.einsum('aij,akl->ikjl', ks, ks.conj())
+    close(phis, phi, 'entire DATA channel unchanged by literal pointer permutation')
+    dphi = np.einsum('aij,akl->ikjl', dk, k.conj())+np.einsum('aij,akl->ikjl', k, dk.conj())
+    dphis = np.einsum('aij,akl->ikjl', dks, ks.conj())+np.einsum('aij,akl->ikjl', ks, dks.conj())
+    close(dphis, dphi, 'entire channel boost derivative unchanged', JET_TOL)
+    close(k[2::4]/p, k[3::4]/a, 'every odd-j original pair has actual proportional amplitudes')
+    close(dk[2::4]/p, dk[3::4]/a, 'every odd-j original pair derivative retains proportionality', JET_TOL)
+
+    A, dA = rows[0], drows[0]
+    lam = adj(A)@A
+    qodd = np.einsum('aij,akj->ik', rows[1::2], rows[1::2].conj())
+    dqodd = (np.einsum('aij,akj->ik', drows[1::2], rows[1::2].conj())
+             +np.einsum('aij,akj->ik', rows[1::2], drows[1::2].conj()))
+    cs = original_creators(repo)
+    theta, nu = 2*np.arctanh(1/9), 3/5
+    gen = cs[0]@adj(cs[1])+cs[1]@adj(cs[0])
+    u = expm(theta*gen)
+    qsum = np.zeros((16,16), dtype=complex)
+    dqsum = qsum.copy()
+    margins = []
+    for role, c in enumerate(cs):
+        C = nu*c
+        P = C@(u if role == 1 else np.eye(16))
+        dP = C@u@gen if role == 1 else np.zeros_like(C)
+        qsum += 4*np.eye(16)-P@adj(P)-adj(P)@P-C@adj(C)-adj(C)@C
+        dqsum -= dP@adj(P)+P@adj(dP)+adj(dP)@P+adj(P)@dP
+        margins.extend((1-float(np.linalg.norm(P,2))**2, 1-float(np.linalg.norm(C,2))**2))
+    close(qodd, qsum/16, 'Walsh odd coefficient slice equals original four-defect sum over16')
+    close(dqodd, dqsum/16, 'Walsh odd coefficient normalization retains true field derivative', JET_TOL)
+    epsilon = min(margins)
+    need(epsilon > 0, 'actual fixed fixture is strictly Julia contractive', 'nominal_numeric')
+    need(float(np.linalg.eigvalsh(qodd).min()) >= epsilon-TOL,
+         'actual odd-row bank has positive Julia margin', 'nominal_numeric')
+    need(float(np.linalg.eigvalsh(lam).min()) > 0,
+         'actual original Lambda is faithful', 'nominal_numeric')
+    eodd = 4*p*p*adj(A)@qodd@A
+    deodd = 4*p*p*(adj(dA)@qodd@A+adj(A)@dqodd@A+adj(A)@qodd@dA)
+    odd = np.array([z for z in range(128) if (z//2)&1], dtype=int)
+    close(eodd, np.einsum('aji,ajk->ik', k[odd].conj(), k[odd]),
+          'positive odd event effect uses all actual selected fine branches')
+    close(deodd, np.einsum('aji,ajk->ik', dk[odd].conj(), k[odd])
+          +np.einsum('aji,ajk->ik', k[odd].conj(), dk[odd]),
+          'odd event first source includes every original row jet', JET_TOL)
+
+    psi = np.ones(1)
+    for _ in range(4):
+        psi = np.kron(psi, [a,p])
+    rho = np.outer(psi, psi)
+    rho1 = np.einsum('aij,jk,alk->il', k, rho, k.conj())
+    drho1 = np.einsum('aij,jk,alk->il', dk, rho, k.conj())+np.einsum('aij,jk,alk->il', k, rho, dk.conj())
+    w = np.array([np.trace(eodd@rho).real, np.trace(eodd@rho1).real])
+    dw = np.array([np.trace(deodd@rho).real, np.trace(deodd@rho1+eodd@drho1).real])
+    need(bool(np.all(w > 0)), 'both actual nonreset odd-j occupations are positive', 'nominal_numeric')
+    vectors, svectors = two(k,k,psi), two(ks,ks,psi)
+    jets = two(dk,k,psi)+two(k,dk,psi)
+    sjets = two(dks,ks,psi)+two(ks,dks,psi)
+    close(svectors, vectors[perm][:,perm], 'all16384 pure posterior amplitudes retained by path permutation')
+    close(sjets, jets[perm][:,perm], 'all16384 posterior field jets retained', JET_TOL)
+    cost = (1+np.arange(128)%2)[:,None]+(1+np.arange(128)%2)[None,:]
+    old, new = score(vectors,jets,cost,ell), score(svectors,sjets,cost,ell)
+    close(old['entropy'],new['entropy'], 'entire two-round fine CQ entropy unchanged on pure retained branches')
+    close(old['entropy_source'],new['entropy_source'], 'entire two-round entropy field source unchanged', JET_TOL)
+    close(old['price']-new['price'], p**3*w.sum(), 'exact original two-round code contrast is p cubed times odd occupations')
+    close(old['source']-new['source'], p**3*dw.sum(), 'same two-round contrast retains complete field derivative', JET_TOL)
+    return dict(odd_occupations=w.tolist(), odd_occupation_theta_jets=dw.tolist(),
+                julia_margin=epsilon, Qodd_min=float(np.linalg.eigvalsh(qodd).min()),
+                Lambda_min=float(np.linalg.eigvalsh(lam).min()),
+                original_two_round=old, swapped_two_round=new)
+
+def exact_clock_checks() -> dict:
+    a = sp.symbols('a', positive=True)
+    p = a*a
+    modulus = a**4+a**2-1
+    def red(value: sp.Expr) -> sp.Expr:
+        if value == 0:
+            return sp.S.Zero
+        num, den = sp.fraction(sp.cancel(value))
+        return sp.rem(sp.expand(sp.rem(num,modulus,a)*sp.invert(sp.rem(den,modulus,a),modulus,a)),modulus,a)
+    def reduced(matrix: sp.MatrixBase) -> sp.MatrixBase:
+        return matrix.applyfunc(red)
+    def equal(left: sp.MatrixBase, right: sp.MatrixBase) -> bool:
+        return left.shape == right.shape and all(red(x) == 0 for x in left-right)
+    def exact(condition: object, label: str) -> None:
+        need(condition,label,'exact_golden')
+    v = sp.Matrix([a,p])
+    def cx(control: int, target: int) -> sp.Matrix:
+        matrix = sp.zeros(8)
+        for col in range(8):
+            row = col ^ (1 << (2-target)) if col & (1 << (2-control)) else col
+            matrix[row,col] = 1
+        return matrix
+    words = {'identity': [(0,1),(1,2),(0,1),(1,2),(0,2)],
+             'swapped': [(0,1)]*5}
+    endpoints = {}
+    for name, word in words.items():
+        U = sp.eye(8)
+        for pair in word:
+            U = cx(*pair)*U
+        endpoints[name] = U
+        exact(len(word) == 5, name+' literal word has five native CX calls')
+    exact(endpoints['identity'] == sp.eye(8), 'I5 equals identity on every three-bit column')
+    exact(endpoints['swapped'] == cx(0,1), 'five identical CX equal one CX on every column')
+    exact(equal(v.T*v,sp.ones(1)), 'three births use the actual normalized Golden vector')
+    born = sp.kronecker_product(v,v,v)
+    cold_alt = red(p+2*a*p**3)
+    expected = {'identity': sp.S.One, 'swapped': cold_alt}
+    dims = [1,2,4]+[8]*5
+    N, D = len(dims), sum(dims)
+    starts = [sum(dims[:j]) for j in range(N)]
+    exact((N,D) == (8,47), 'three births plus five CX have true N8 D47')
+    births = [v,sp.kronecker_product(sp.eye(2),v),sp.kronecker_product(sp.eye(4),v)]
+    passive = births+[sp.eye(8)]*(N-4)
+    B = [sp.zeros(1)]*N
+    B[-1] = sp.eye(8)
+    for j in range(N-2,-1,-1):
+        B[j] = reduced(B[j+1]*passive[j])
+    details = [sp.eye(1)]+[reduced(sp.eye(dims[j])-passive[j-1]*passive[j-1].T) for j in range(1,N)]
+    R = sp.Matrix.vstack(B[0].T, *(reduced(details[j]*B[j].T) for j in range(1,N)))
+    exact(equal(R.T*R,sp.eye(8)), 'complete closure retains every birth complement')
+    exact(equal(R*R.T,sp.diag(*details)), 'closure range is the full birth-detail sum')
+    exact(details[-1] == sp.zeros(8), 'last interstage CX makes final birth-detail projector zero')
+    outputs = {}
+    numeric_clocks = {}
+    a_float = float(np.sqrt((np.sqrt(5.0)-1)/2))
+    for name, word in words.items():
+        F = births+[cx(*pair) for pair in word[:-1]]
+        g = cx(*word[-1])
+        T = sp.zeros(D)
+        A = sp.eye(1)
+        cuts = [A*A.T]
+        for j,Fj in enumerate(F):
+            exact(equal(Fj.T*Fj,sp.eye(dims[j])), name+f' actual stage{j} is isometric')
+            T[starts[j+1]:starts[j+1]+dims[j+1], starts[j]:starts[j]+dims[j]] = Fj
+            A = reduced(Fj*A)
+            cuts.append(reduced(A*A.T))
+        T[:,starts[-1]:starts[-1]+8] += reduced(R*g)
+        T = reduced(T)
+        exact(equal(T.T*T,sp.eye(D)), name+' complete47dim growing clock is unitary')
+        exact(red(sp.trace(T)) == 0, name+' actual clock trace vanishes with final detail zero')
+        exact(T[starts[-1]:,starts[-1]:] == sp.zeros(8), name+' entire final-stage clock diagonal block is zero')
+        cold = red((B[0].T*g*A)[0])
+        exact(red(cold-expected[name]) == 0, name+' original physical cold return is exact')
+        P = sp.diag(*cuts)
+        leakage = reduced((sp.eye(D)-P)*T*P)
+        feedback = reduced(leakage.T*leakage)
+        defect = red(1-cold*cold)
+        exact(red(sp.trace(feedback)-defect) == 0, name+' full feedback trace equals original cold defect')
+        exact(equal(feedback*feedback,defect*feedback), name+' all feedback modes give only the true rankone defect')
+        state = sp.zeros(D,1)
+        state[0] = 1
+        moments = []
+        for step in range(1,N+1):
+            state = reduced(T*state)
+            moments.append(red(state[0]))
+        exact(all(m == 0 for m in moments[:-1]) and red(moments[-1]-cold) == 0,
+              name+' initialized clock has its first possible return at actual N8')
+        outputs[name] = dict(cold=str(cold), defect=str(defect),
+                            feedback='-log(1-z+z*cold^2)', trace_T='0')
+        numeric_clocks[name] = (np.asarray(T.subs(a,a_float),dtype=float),
+                               np.asarray((g*A).subs(a,a_float),dtype=float).reshape(-1),
+                               float(cold.subs(a,a_float)))
+
+    # Exactly the original scene; no heat matrix of dimension425D is built.
+    zones = [0]*9+[1]*11+[2]*13
+    adjacency = sp.Matrix(33,33,lambda i,j:int(zones[i] != zones[j]))
+    edges = [(i,j) for i in range(33) for j in range(i+1,33) if adjacency[i,j]]
+    incidence, signless = sp.zeros(len(edges),33),sp.zeros(len(edges),33)
+    for edge,(i,j) in enumerate(edges):
+        incidence[edge,i],incidence[edge,j] = 1,-1
+        signless[edge,i],signless[edge,j] = 1,1
+    degrees = [sum(adjacency[i,j] for j in range(33)) for i in range(33)]
+    degree = sp.diag(*degrees)
+    need(len(edges) == 359 and sum(degrees) == 718, 'actual K9,11,13 has359 edges and718 directed incidences','exact_integer')
+    need(incidence.T*incidence == degree-adjacency, 'actual oriented scene Gram is D-A','exact_integer')
+    need(signless.T*signless == degree+adjacency, 'actual signless scene Gram is D+A','exact_integer')
+    Rs = sp.diag(*[1/sp.sqrt(d+2) for d in degrees])
+    Cs = Rs*Rs
+    exact(equal(Rs*(degree+2*sp.eye(33))*Rs,sp.eye(33)), 'original scene normalization identity')
+    exact(equal(Rs*degree*Rs+2*Cs,sp.eye(33)), 'positive and complementary Gram bounds retain the original clock normalization')
+    need((33+359+33)*D == 425*D and (359+33-33)*D == 359*D,
+         'both complete Hodge degrees give425D modes and359D excess zeros','exact_integer')
+    beta, z = 1.0, 2.0**-20
+    scene_a = np.asarray(adjacency,dtype=float)
+    scene_r = 1/np.sqrt(np.asarray(degrees,dtype=float)+2)
+    scene_b = scene_r[:,None]*scene_a*scene_r[None,:]
+    scene_c = np.diag(scene_r**2)
+    master_values = {}
+    for name,(Tn,postgate,cold_n) in numeric_clocks.items():
+        mu = np.linalg.eigvalsh(Tn+Tn.T)
+        close(Tn.T@Tn,np.eye(D),name+' numeric evaluation retains exact tiny-clock unitarity')
+        need(float(mu.min()) >= -2-TOL and float(mu.max()) <= 2+TOL,
+             name+' all47 real clock cosine eigenvalues lie in[-2,2]','nominal_numeric')
+        spectrum = np.concatenate([np.linalg.eigvalsh(np.eye(33)-scene_b-m*scene_c) for m in mu])
+        need(len(spectrum) == 33*D and float(spectrum.min()) >= -TOL and float(spectrum.max()) <= 2+TOL,
+             name+' all1551 vertex-clock eigenvalues retained in[0,2]','nominal_numeric')
+        partition = 359*D+2*float(np.exp(-beta*spectrum).sum())
+        need(D*(359+66*np.exp(-2*beta)) <= partition <= 425*D+TOL,
+             name+' full19975-mode partition obeys original zero-mode bounds','nominal_numeric')
+        heat = np.log(partition)/beta
+        feedback = -np.log1p(-z*(1-cold_n*cold_n))
+        master_values[name] = float(heat+feedback)
+        # Same original coordinate scene vertex0 and actual postgate final stage.
+        temporal = Tn[starts[-1]:,starts[-1]:]+Tn[starts[-1]:,starts[-1]:].T
+        coherent_energy = 1-scene_b[0,0]-scene_c[0,0]*float(postgate@temporal@postgate)
+        pinched_energy = 1-scene_b[0,0]-scene_c[0,0]*float(np.trace(temporal@np.diag(postgate**2)))
+        close(np.dot(postgate,postgate),1.,name+' actual postgate terminal state remains normalized')
+        close(coherent_energy,1.,name+' coherent postgate terminal energy is fixed at scene vertex0')
+        close(pinched_energy,1.,name+' full computational pinching retains the same terminal energy')
+        outputs[name]['heat_diagnostic'] = dict(beta=beta,z=z,partition=partition,
+            H=float(heat),J=float(feedback),master=float(heat+feedback),
+            vertex_clock_min=float(spectrum.min()),vertex_clock_max=float(spectrum.max()),
+            coherent_terminal_energy=float(coherent_energy),pinched_terminal_energy=float(pinched_energy))
+    bound = np.log(425/(359+66*np.exp(-2*beta)))/beta-np.log1p(-z)
+    master_difference = master_values['swapped']-master_values['identity']
+    need(abs(master_difference) <= bound,
+         'two complete tiny-clock master values obey the analytic fixed-cut oscillation bound','nominal_numeric')
+    return dict(N=N,D=D,widths=dims,words=words,clocks=outputs,
+                hodge=dict(total_modes=425*D,harmonic_excess=359*D,
+                           heat='Z=359D+2 Tr_(33D) exp(-beta Delta0)',
+                           spectral_interval='0<=Delta0<=2I by the two exact scene Grams',
+                           full_price_oscillation='beta^-1 log(425/(359+66 exp(-2beta)))-r log(1-z)',
+                           diagnostic_master_difference=float(master_difference),
+                           diagnostic_bound=float(bound)))
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--repo', type=Path, default=Path('/Users/grigorijvahrusev/.codex/worktrees/gr-native-source-20261024/d0-main-assembly-audit'))
+    args = parser.parse_args()
+    native_result = native_checks(args.repo)
+    clock_result = exact_clock_checks()
+    kinds = {kind:sum(item['kind']==kind for item in CHECKS) for kind in sorted({item['kind'] for item in CHECKS})}
+    print(json.dumps(dict(schema='d0.literal-full128-clock-control/1',status='PASS',
+          checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+          owner_sha256=OWNER_SHA256,owner_blob=OWNER_BLOB,
+          predecessor_loader_sha256=PREDECESSOR_SHA256,
+          runtime=dict(python=platform.python_version(),numpy=np.__version__,scipy=scipy.__version__,sympy=sp.__version__),
+          check_count=len(CHECKS),classifications=kinds,checks=CHECKS,
+          tolerances=dict(nominal=TOL,nominal_jet=JET_TOL),
+          max_nominal_residual=max(RESIDUALS.values()),residuals=RESIDUALS,
+          native=native_result,tiny_clock=clock_result,
+          scope=dict(native_constructor_calls=1,full128_native_word_replayed=False,
+                     huge_heat_matrix_computed=False,continuous_rotor_primitive=False,
+                     same_fixed_report_task=False,whole_Cost_Info_selected=False,GR_closed=False)),
+          ensure_ascii=False,sort_keys=True,indent=2))
+
+if __name__ == '__main__':
+    main()
+```
+
+Observed normal and optimized receipt:
+
+```json
+{
+  "check_count": 90,
+  "checker_sha256": "6362d9709e6026019976981e3615868bf39e89b8abbf68dbf0e44c8ee5f76974",
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "unique published 7fh.G1 loader block"
+    },
+    {
+      "kind": "provenance",
+      "label": "published previous AST loader SHA256"
+    },
+    {
+      "kind": "provenance",
+      "label": "pinned loader has original fixture argument"
+    },
+    {
+      "kind": "provenance",
+      "label": "only one native fixture argument changed"
+    },
+    {
+      "kind": "provenance",
+      "label": "original constructor SHA256 pin"
+    },
+    {
+      "kind": "provenance",
+      "label": "original constructor Git blob pin"
+    },
+    {
+      "kind": "structural",
+      "label": "only six pinned definitions extracted; no historical suite"
+    },
+    {
+      "kind": "structural",
+      "label": "exactly one original native call"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 CPTP completeness"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "active128 odd-j port map is an involutive permutation"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "j0 pair fixed and exactly64 fine slots permuted"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "entire DATA channel unchanged by literal pointer permutation"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "entire channel boost derivative unchanged"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "every odd-j original pair has actual proportional amplitudes"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "every odd-j original pair derivative retains proportionality"
+    },
+    {
+      "kind": "provenance",
+      "label": "same pinned source for creator definition"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "Walsh odd coefficient slice equals original four-defect sum over16"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "Walsh odd coefficient normalization retains true field derivative"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual fixed fixture is strictly Julia contractive"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual odd-row bank has positive Julia margin"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual original Lambda is faithful"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "positive odd event effect uses all actual selected fine branches"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "odd event first source includes every original row jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "both actual nonreset odd-j occupations are positive"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 pure posterior amplitudes retained by path permutation"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 posterior field jets retained"
+    },
+    {
+      "kind": "structural",
+      "label": "zero amplitude branches have zero first probability jet"
+    },
+    {
+      "kind": "structural",
+      "label": "zero amplitude branches have zero first probability jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "entire two-round fine CQ entropy unchanged on pure retained branches"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "entire two-round entropy field source unchanged"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "exact original two-round code contrast is p cubed times odd occupations"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "same two-round contrast retains complete field derivative"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity literal word has five native CX calls"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped literal word has five native CX calls"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "I5 equals identity on every three-bit column"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "five identical CX equal one CX on every column"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "three births use the actual normalized Golden vector"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "three births plus five CX have true N8 D47"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "complete closure retains every birth complement"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "closure range is the full birth-detail sum"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "last interstage CX makes final birth-detail projector zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage0 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage1 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage2 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage3 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage4 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage5 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage6 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity complete47dim growing clock is unitary"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual clock trace vanishes with final detail zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity entire final-stage clock diagonal block is zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity original physical cold return is exact"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity full feedback trace equals original cold defect"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity all feedback modes give only the true rankone defect"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity initialized clock has its first possible return at actual N8"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage0 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage1 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage2 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage3 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage4 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage5 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage6 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped complete47dim growing clock is unitary"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual clock trace vanishes with final detail zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped entire final-stage clock diagonal block is zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped original physical cold return is exact"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped full feedback trace equals original cold defect"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped all feedback modes give only the true rankone defect"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped initialized clock has its first possible return at actual N8"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "actual K9,11,13 has359 edges and718 directed incidences"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "actual oriented scene Gram is D-A"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "actual signless scene Gram is D+A"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "original scene normalization identity"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "positive and complementary Gram bounds retain the original clock normalization"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "both complete Hodge degrees give425D modes and359D excess zeros"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity numeric evaluation retains exact tiny-clock unitarity"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity all47 real clock cosine eigenvalues lie in[-2,2]"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity all1551 vertex-clock eigenvalues retained in[0,2]"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity full19975-mode partition obeys original zero-mode bounds"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity actual postgate terminal state remains normalized"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity coherent postgate terminal energy is fixed at scene vertex0"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity full computational pinching retains the same terminal energy"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped numeric evaluation retains exact tiny-clock unitarity"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped all47 real clock cosine eigenvalues lie in[-2,2]"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped all1551 vertex-clock eigenvalues retained in[0,2]"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped full19975-mode partition obeys original zero-mode bounds"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped actual postgate terminal state remains normalized"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped coherent postgate terminal energy is fixed at scene vertex0"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped full computational pinching retains the same terminal energy"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "two complete tiny-clock master values obey the analytic fixed-cut oscillation bound"
+    }
+  ],
+  "classifications": {
+    "exact_golden": 39,
+    "exact_integer": 6,
+    "nominal_numeric": 34,
+    "provenance": 7,
+    "structural": 4
+  },
+  "max_nominal_residual": 3.774758286585258e-15,
+  "native": {
+    "Lambda_min": 0.013262918217834799,
+    "Qodd_min": 0.8136718750000004,
+    "julia_margin": 0.60355,
+    "odd_occupation_theta_jets": [
+      -0.0008125434966888658,
+      -0.0008147755758841163
+    ],
+    "odd_occupations": [
+      0.017388067708565845,
+      0.017387667109412124
+    ],
+    "original_two_round": {
+      "cost": 2.026235500507436,
+      "cost_source": -0.0009962468810480565,
+      "entropy": 0.2754798986238635,
+      "entropy_source": -0.007237172562814316,
+      "positive_slots": 4096,
+      "price": 1.453764326114034,
+      "source": 0.01404322676845736
+    },
+    "swapped_two_round": {
+      "cost": 2.018026063122887,
+      "cost_source": -0.0006120889588389199,
+      "entropy": 0.2754798986238635,
+      "entropy_source": -0.007237172562814316,
+      "positive_slots": 4096,
+      "price": 1.4455548887294847,
+      "source": 0.014427384690666496
+    }
+  },
+  "owner_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "owner_sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+  "predecessor_loader_sha256": "cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c",
+  "residuals": {
+    "Walsh odd coefficient normalization retains true field derivative": 1.3877787807814457e-17,
+    "Walsh odd coefficient slice equals original four-defect sum over16": 1.1102230246251565e-15,
+    "all128 CPTP completeness": 3.774758286585258e-15,
+    "all16384 posterior field jets retained": 0.0,
+    "all16384 pure posterior amplitudes retained by path permutation": 0.0,
+    "entire DATA channel unchanged by literal pointer permutation": 6.133173666733497e-19,
+    "entire channel boost derivative unchanged": 4.84869951806108e-19,
+    "entire two-round entropy field source unchanged": 0.0,
+    "entire two-round fine CQ entropy unchanged on pure retained branches": 0.0,
+    "every odd-j original pair derivative retains proportionality": 6.938893903907228e-18,
+    "every odd-j original pair has actual proportional amplitudes": 1.3877787807814457e-17,
+    "exact original two-round code contrast is p cubed times odd occupations": 3.0184188481996443e-16,
+    "identity actual postgate terminal state remains normalized": 0.0,
+    "identity coherent postgate terminal energy is fixed at scene vertex0": 0.0,
+    "identity full computational pinching retains the same terminal energy": 0.0,
+    "identity numeric evaluation retains exact tiny-clock unitarity": 2.5445560331069017e-16,
+    "odd event first source includes every original row jet": 9.16154845364896e-18,
+    "positive odd event effect uses all actual selected fine branches": 4.510337834805836e-17,
+    "same two-round contrast retains complete field derivative": 7.589415207398531e-19,
+    "swapped actual postgate terminal state remains normalized": 0.0,
+    "swapped coherent postgate terminal energy is fixed at scene vertex0": 0.0,
+    "swapped full computational pinching retains the same terminal energy": 0.0,
+    "swapped numeric evaluation retains exact tiny-clock unitarity": 2.5445560331069017e-16
+  },
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.literal-full128-clock-control/1",
+  "scope": {
+    "GR_closed": false,
+    "continuous_rotor_primitive": false,
+    "full128_native_word_replayed": false,
+    "huge_heat_matrix_computed": false,
+    "native_constructor_calls": 1,
+    "same_fixed_report_task": false,
+    "whole_Cost_Info_selected": false
+  },
+  "status": "PASS",
+  "tiny_clock": {
+    "D": 47,
+    "N": 8,
+    "clocks": {
+      "identity": {
+        "cold": "1",
+        "defect": "0",
+        "feedback": "-log(1-z+z*cold^2)",
+        "heat_diagnostic": {
+          "H": 9.80050145859199,
+          "J": 0.0,
+          "beta": 1.0,
+          "coherent_terminal_energy": 1.0,
+          "master": 9.80050145859199,
+          "partition": 18042.790371936615,
+          "pinched_terminal_energy": 1.0,
+          "vertex_clock_max": 1.615922466723622,
+          "vertex_clock_min": -2.8707069603483594e-16,
+          "z": 9.5367431640625e-07
+        },
+        "trace_T": "0"
+      },
+      "swapped": {
+        "cold": "4*a**3 + a**2 - 2*a",
+        "defect": "12*a**3 - 51*a**2 - 8*a + 32",
+        "feedback": "-log(1-z+z*cold^2)",
+        "heat_diagnostic": {
+          "H": 9.800501458559317,
+          "J": 2.047997760355632e-08,
+          "beta": 1.0,
+          "coherent_terminal_energy": 1.0,
+          "master": 9.800501479039294,
+          "partition": 18042.790371347095,
+          "pinched_terminal_energy": 1.0,
+          "vertex_clock_max": 1.615922466723622,
+          "vertex_clock_min": -2.8707069603483594e-16,
+          "z": 9.5367431640625e-07
+        },
+        "trace_T": "0"
+      }
+    },
+    "hodge": {
+      "diagnostic_bound": 0.14419163433787685,
+      "diagnostic_master_difference": 2.0447304294179958e-08,
+      "full_price_oscillation": "beta^-1 log(425/(359+66 exp(-2beta)))-r log(1-z)",
+      "harmonic_excess": 16873,
+      "heat": "Z=359D+2 Tr_(33D) exp(-beta Delta0)",
+      "spectral_interval": "0<=Delta0<=2I by the two exact scene Grams",
+      "total_modes": 19975
+    },
+    "widths": [
+      1,
+      2,
+      4,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "words": {
+      "identity": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "swapped": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "tolerances": {
+    "nominal": 4e-11,
+    "nominal_jet": 4e-10
+  }
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

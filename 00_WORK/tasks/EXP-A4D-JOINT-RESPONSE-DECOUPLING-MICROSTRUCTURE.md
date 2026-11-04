@@ -21710,3 +21710,81 @@ with kappa/Einstein off shell and in reverse. The native component now
 has a genuine initial realization and an explicit record reduction;
 the missing physical-price/source binding has not been renamed away.
 `scientific_promotion=false`, `GR_closed=false`; goal active.
+
+## 2026-11-05 checkpoint: full same-clock price comparison and explicit defect
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `800701f84b0d8b2970556421afd2b0887be68561`.
+Result location: §7fj of the existing full-source primary artifact.
+Write paths remain that artifact and this brief; no new scientific
+execution, task, branch, Ready/retirement, merge or claims promotion.
+
+Exact parent substitution: evaluate §7fi's missing complete-price map
+on the ACTUAL native RAW/GROWING history, with every425D Hodge mode,
+original generated cut, all birth details and actual final coherent/CQ
+states. The older controlled-X incidence comparison is an input, not a
+substitute for this full scene/clock. Source normalization is explicit.
+
+The same-layout full master has exact bounded oscillation
+`M_B=beta^-1 ln[425/(359+66 exp(-2beta))]-r0 ln(1-z)`.
+Its large `ln D/beta` is common, not removed from the action. The
+feedback rank is the ORIGINAL initial rank r0, not the number of
+subsequently generated stage cuts. Real pure births preserve this rank.
+
+There is a literal native control: five forward CX calls implementing
+identity versus five calls implementing CX(coefficient-bit,port).
+They act on current live record wires, restore the other dirty row bit,
+retain every column, and have the same actual stage/birth layout.
+The alternative swaps exactly odd-j pairs; original Walsh/Julia Parseval
+gives a strictly positive effect E_odd on the regular chart. Full recorded
+CQ entropy is exactly preserved by relabelling, including actual compiled
+prefixes, while the ideal port-price difference is `p³ sum_t w_odd,t`.
+The bounded operator transport controls the actual native approximation.
+
+The same-clock comparison is now explicit, not an assigned unknown Z:
+`ell P=ell E C+D_rec-beta R_rec-beta H+S(Omega)`.
+Here D_rec is relative entropy of the actual full recorded state against
+the mathematical Gibbs reference of that same full Hodge operator.
+The recorded Info is `D_coh-D_rec+beta(R_rec-R_coh)`.
+Neither reference state is physically prepared; neither defect is set
+to zero. Actual preparation, beta, scene, cut and record variations are
+retained by the exact differentiated identity. No action H+J+P is added.
+
+The five real CX endings ensure final D_f=0, so coherent and pinched
+states have the same true terminal Hodge energy on the fixed scene.
+For arbitrary other endings the pointer-energy correction remains.
+The original scalar real cold return and its proper-cut J reaction are
+also computed with the true born phase and initial rank; no full DATA
+rank or complex cold scalar replaces that cut.
+
+Decisive source comparison: with n=k², u=1/k and complete compiler error
+<=exp(-k), the actual master intensive contrast tends to0, while the
+full CQ record contrast tends to `4pa w_*>0`. For any supplied fixed
+positive gain the same separation remains after normalization. With
+varying rank, beta, z or gain use the actual condition
+`M_B,k/(n_k |u_k| Gamma_k)->0`. This does not cover the vanishing CT/XF
+gain by assertion and does not bound every independent clock row.
+
+Admission: the two native suffixes are syntactically valid before record
+commitment. Under the original complete-report FN/RO task they change
+the specified target and are not vertical implementation freedoms.
+If encoder choice is really free, its actual complete-price equations
+must be solved. Neither unchanged Phi nor gate availability selects the
+task. The result separates these interpretations instead of erasing a row.
+
+Validation: exact native suffix/Golden and small47-dimensional full-clock
+checks; all19,975 Hodge modes counted through47 complete33-dimensional
+scene blocks and the harmonic offset; one pinned original full128
+constructor call with complete two-tick code/entropy/source comparison.
+Symbolic and nominal floating controls are distinguished. Normal and
+optimized warnings-as-errors receipts and source hashes are embedded
+with the script. Three bounded reviews pin the final proof; affected
+integration guards run once. No old root/geometry/Lean suite is replayed.
+
+Route change: the unmodified intensive port-CQ source cannot be imported
+as the full native master source at this fixed-gain normalization.
+Continue from the actual selected full-price law and its admitted task,
+retaining the explicit defect balance and a proved common geometric
+source map with reverse recovery. Other genuine source equivalences keep
+their hypotheses. `scientific_promotion=false`, `GR_closed=false`;
+the original goal remains active.
