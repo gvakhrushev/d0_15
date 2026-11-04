@@ -16686,3 +16686,31 @@ checked the direct coverage argument and the negative example.
 Thus the encoder/decoder premise in the prior adapter is substantial, not a
 consequence of an arbitrary `FutureExecution`. Classical choice and absence
 of a computable canonicalizer retain their previously stated scope.
+
+### Opt-in continuation of source search — 4 November 2026
+
+The strict cold-start on snapshot `c743de710753cd9868f53ba13fd16adfd1affc9c`
+found all required sources in 36 of 50 cases; its full recoverable report and
+14 unresolved cases are recorded in `reports/cold_start_strict_c743_2026-11-04`.
+The earlier strict 44/50 replay used a different snapshot. These results are
+not amended by the following retrieval feature.
+
+`search --paginate --offset N` explicitly continues the ranked results after
+the unchanged first window. `--continue-sources --source-pages P
+--source-page-offset N` explicitly opens additional locator references beyond
+the former 64-reference scan. The returned pages include actual reference
+spans and an exhausted-page outcome; exact commit/blob and direct-content
+checks remain required. Changed or unreadable workspace files are not treated
+as fresh direct-content evidence. Alias resolution has a separate bounded
+per-locator call budget, reported alongside the page budget and any
+unresolved alias pairs.
+
+These offsets rerun search: they are not durable cursors across changes to
+the corpus, query, limits or available Git objects. The existing cold-start
+and compactor intentionally validate the legacy format only; a separately
+versioned benchmark and verifier are required to consume these pages. Neither
+the six earlier nor the fourteen later misses are claimed fixed without a
+new measured replay. Independent review checked stale-file races, short or
+empty first pages, pins and budget accounting; the affected 28 direct tests
+and 23 portable CI tests passed locally. This is retrieval infrastructure,
+not semantic C0 or physical GR acceptance.
