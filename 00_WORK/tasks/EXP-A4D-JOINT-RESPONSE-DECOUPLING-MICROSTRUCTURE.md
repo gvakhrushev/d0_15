@@ -20642,3 +20642,56 @@ with warnings as errors and matching receipts. Independent readers
 reviewed effects, reactions, conditional averaging, cut and price.
 Affected structural guards run once on final owned inputs; unchanged
 geometric/Lean certificates are not replayed.
+
+## 2026-11-04 continuation: independent relative preparations are stationary for the entire retained-reader price
+
+Input724a5a1b8fb00ee065337a719508c9fbfc4e0048; same#334 and two owned
+write paths. Phase: native realization / final composition.
+Consumer: §7ew.B–D and the retained-reader joint equations, closure B–D.
+Primary proof and pinned replays: §7ex. Changed input: the actual
+conditional test map exists; solve the full preparation source left
+after it without linking independent forward/backward operations first.
+
+For full-column preservation of the joint actual comparator-click and
+REPORT effects, all banks are exactly K_l B with K_l in their joint
+commutant. The two independent legs leave relative K=K_b* K_f in the
+true completed-reader endpoint. Ordinary control flags alone do not
+give this commutant: the original comparator has non-diagonal port
+blocks. Prepared-cut equality is also weaker than all-column equality.
+
+The complete old-age Schur determinant proves H(K*)=H(K), retaining
+unequal noncommuting old ages, the scalar last-record age, every mode
+and the absolute clock anchor. On the actual proper input cut,
+C(K*)=C(K)* gives J(K*)=J(K). Therefore the ENTIRE original H+J is
+even along each relative commutant generator. Both independent first
+rows vanish at a matched pair, for every field value in the declared
+chart. This is a solved stationary section, not an imposed inverse
+link. Its effective field source remains the original retained-reader
+source. A quantitative quadratic bound supplies the actual native
+endpoint-small comparison error, divided by its real step and gain.
+
+Even prepared-only joint-profile fidelity solves the two feedback
+rows directly, without a constant-rank assumption. It does not control
+unused-column heat. A birth-compatible complement example preserves
+input and return corners but changes the full clock polynomial; no
+weighted full-heat source is inferred from that fact alone.
+
+An actual equal-inventory negative control uses16-call slots ZqZq and
+ZqZs, each12CX+4SourceI. They preserve the all-column effects but give
+strictly different J on the positive H.1 scalar/commuting blocks.
+Thus first-source stationarity is not fibrewise price constancy or a
+minimum. The finite whole heat still has its own actual comparison.
+
+The literal Book03§03.25 functional is already the entire H+J; no
+additional Info/R is required solely because a record exists. Broader
+Cost−Info/stack claims retain their actual source/domain transport.
+Physical task selection, prepared-complement/full-input coverage,
+other calibration/scene/layout equations and the full GR composition
+remain. GR_closed=false; objective active. No new task, claim,
+assembly acceptance, Ready or retirement.
+
+Validation:91 exact complete-clock/feedback checks and34 native/profile
+checks pass normally and optimized with warnings as errors and identical
+receipts. Independent readers checked the actual comparator algebra,
+proper-cut equations, full heat symmetry, field-section consequence and
+finite-word boundary. Affected structural guards run on final inputs.
