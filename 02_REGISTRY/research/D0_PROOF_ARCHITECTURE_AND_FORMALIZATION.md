@@ -17356,3 +17356,13 @@ the merged public build are recorded with exact source and cache boundaries in
 [the integrated receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/creator_bridge_integrated_d2d_2026-11-04/SUMMARY_RU.md).
 The Python-to-Lean correspondence is a checked manual transcription, not an
 extracted formal semantics of Python.
+
+### Matched finite weighted mean: derivative and negative control
+
+`D0.Analysis.MatchedWeightedMeanDerivative` formalizes the cancellation of
+weight derivatives at a matched point for locally normalized finite weighted
+families, with no positivity requirement. A two-branch control shows why
+matching is necessary. It supplies the one-real-parameter mean-map component
+of the pinned #334 matched-source synthesis; it does not supply the full
+source covector, physical weights, charts or admission. The independent
+review and narrow/full cached builds are in the [integration receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_weighted_mean_de28_2026-11-04/SUMMARY_RU.md).
