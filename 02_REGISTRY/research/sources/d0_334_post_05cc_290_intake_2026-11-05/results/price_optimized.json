@@ -1,0 +1,42 @@
+{
+  "checker_sha256": "c34cd7740cba0cca4a3d67e6d8877fa4519cfc3886e45c85077fa86e43ed737f",
+  "checks": [
+    "canonical born state normalized",
+    "original Golden gate orthogonal",
+    "full comparison flag overlap complement equals p^6",
+    "whole flag density has trace one",
+    "actual flag determinant, both nonorthogonal states retained",
+    "computational flag readout differs from original report",
+    "full current comparator state normalized",
+    "full current density remains pure, unlike its flag marginal",
+    "distinct pointer eigenweights produce the exact antisymmetric part",
+    "pointer frame invertible and overlapping: self-adjoint weights must agree",
+    "complete growing clock is unitary on all birth complements",
+    "every actual diagonal stage block vanishes",
+    "generated prefix isometry 0",
+    "generated prefix isometry 1",
+    "generated prefix isometry 3",
+    "generated prefix isometry 5",
+    "true-prefix occupation density normalized",
+    "occupation energy sees no clock offdiagonal source",
+    "zone coefficients retain 26,24,22 denominators",
+    "full Gibbs grade-one mass lower bound uses t<=33D",
+    "grade separation exceeds nine tenths",
+    "canonical prepared Cost-Info energy cancels heat only with its full defect",
+    "prepared relative-entropy defect retains the entire heat first source",
+    "free Gibbs minimum has minus-heat sign, distinct from prepared state"
+  ],
+  "input_head": "cfe6755a0ddf5174698f003db59531a1ebd93fa1",
+  "native_fixture": "birth;G;G;G, widths [1,2,2,2], full unitary clock dimension 7",
+  "not_claimed": [
+    "Info forced by primitives",
+    "physical Gibbs preparation",
+    "native price equals an assigned entropy",
+    "approximate Gibbs construction",
+    "new Einstein root",
+    "GR closure"
+  ],
+  "number_of_checks": 24,
+  "scope": "Exact native/flag/grade/defect identities; source and entropy theorems are analytic",
+  "status": "PASS"
+}

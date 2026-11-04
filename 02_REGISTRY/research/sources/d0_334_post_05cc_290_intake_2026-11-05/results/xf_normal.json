@@ -1,0 +1,261 @@
+{
+  "schema": "full-flag-original-comparison-exact-v1",
+  "status": "PASS",
+  "field": "Q[a]/(a^4+a^2-1), a positive, p=a^2",
+  "arithmetic": "exact rational polynomial reduction; no floating tolerance",
+  "checks": 61,
+  "check_names": [
+    "original bare-report baseline polynomial",
+    "actual READY limiting field trace",
+    "limiting trace is nonintegral",
+    "all finite READY conjugates outside root interval",
+    "canonical flag overlap is actual golden value",
+    "both character sectors retained",
+    "character projector does not commute with actual flag birth",
+    "native_G_CX_three: unchanged native owner all-column match",
+    "native_G_CX_three: E is the full projector",
+    "native_G_CX_three: both full flags are involutions",
+    "native_G_CX_three: full F is orthogonal",
+    "native_G_CX_three: full two-sector operator identity",
+    "native_G_CX_three: canonical input is unchanged by CP",
+    "native_G_CX_three: full cold corner, no sector selection",
+    "native_G_CX_three: complete trace retains source",
+    "native_G_CX_three: original report preserved",
+    "native_G_CX_three: literal complete comparison order",
+    "native_G_CX_three: initialized original marked geometry",
+    "native_G_CX_three: full mark is a genuine precomposition",
+    "native_G_CX_three: last-spectator target is SO",
+    "native_G_CX_three: repeated full trace Chebyshev k=1",
+    "native_G_CX_three: repeated full trace Chebyshev k=2",
+    "native_G_CX_three: repeated full trace Chebyshev k=3",
+    "native_G_CX_six: unchanged native owner all-column match",
+    "native_G_CX_six: E is the full projector",
+    "native_G_CX_six: both full flags are involutions",
+    "native_G_CX_six: full F is orthogonal",
+    "native_G_CX_six: full two-sector operator identity",
+    "native_G_CX_six: canonical input is unchanged by CP",
+    "native_G_CX_six: full cold corner, no sector selection",
+    "native_G_CX_six: complete trace retains source",
+    "native_G_CX_six: original report preserved",
+    "native_G_CX_six: literal complete comparison order",
+    "native_G_CX_six: initialized original marked geometry",
+    "native_G_CX_six: full mark is a genuine precomposition",
+    "native_G_CX_six: last-spectator target is SO",
+    "native_G_CX_six: repeated full trace Chebyshev k=1",
+    "native_G_CX_six: repeated full trace Chebyshev k=2",
+    "native_G_CX_six: repeated full trace Chebyshev k=3",
+    "two actual native fixtures have different Q",
+    "one_G_clock_bank: E is the full projector",
+    "one_G_clock_bank: both full flags are involutions",
+    "one_G_clock_bank: full F is orthogonal",
+    "one_G_clock_bank: full two-sector operator identity",
+    "one_G_clock_bank: canonical input is unchanged by CP",
+    "one_G_clock_bank: full cold corner, no sector selection",
+    "one_G_clock_bank: complete trace retains source",
+    "one_G_clock_bank: original report preserved",
+    "one_G_clock_bank: literal complete comparison order",
+    "one_G_clock_bank: initialized original marked geometry",
+    "one_G_clock_bank: full mark is a genuine precomposition",
+    "one_G_clock_bank: last-spectator target is SO",
+    "one_G_clock_bank: repeated full trace Chebyshev k=1",
+    "one_G_clock_bank: repeated full trace Chebyshev k=2",
+    "one_G_clock_bank: repeated full trace Chebyshev k=3",
+    "actual clock incidence isometry",
+    "full growing clock unitarity",
+    "real intermediate G and final target retained",
+    "no shorter clock wrap",
+    "shortest wrap reads full flag, not a character",
+    "shortest trace equals complete repeated source"
+  ],
+  "owners": [
+    {
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "block": "RO-NATIVE-GOLDEN-CHECK",
+      "code_sha256": "28af31ce262cafd8fa3ebe2b93922248961e0441fc582663f25857cccc83f99a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "block": "SR-ORIGINAL-READER-CLOCK-CHECK",
+      "code_sha256": "b785b3f595ea130e6d0b4dc85a8dd09f4b989f59a549dae5aa806d2fd8219048",
+      "reused_functions": [
+        "column_inner",
+        "owner_word",
+        "put",
+        "sub",
+        "trace",
+        "true_clock",
+        "zeros"
+      ]
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md",
+      "sha256": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393"
+    }
+  ],
+  "checker_sha256": "a879ac7dabc3e3a9511796fa1771999100def36d59f383a7f6284ee67e8253d4",
+  "native_reader_cases": [
+    {
+      "name": "native_G_CX_three",
+      "original_bank_dimension": 4,
+      "Q_actual": [
+        "-4",
+        "0",
+        "8",
+        "0"
+      ],
+      "cold_corner": [
+        "-4",
+        "-16",
+        "8",
+        "26"
+      ],
+      "trace_F": [
+        "-14",
+        "0",
+        "32",
+        "0"
+      ],
+      "trace_F_power_1_2_3": [
+        [
+          "-14",
+          "0",
+          "32",
+          "0"
+        ],
+        [
+          "1352",
+          "0",
+          "-2176",
+          "0"
+        ],
+        [
+          "-93838",
+          "0",
+          "151840",
+          "0"
+        ]
+      ],
+      "native_calls": 3
+    },
+    {
+      "name": "native_G_CX_six",
+      "original_bank_dimension": 4,
+      "Q_actual": [
+        "357",
+        "64",
+        "-577",
+        "-104"
+      ],
+      "cold_corner": [
+        "21",
+        "1218",
+        "-33",
+        "-1970"
+      ],
+      "trace_F": [
+        "1430",
+        "256",
+        "-2308",
+        "-416"
+      ],
+      "trace_F_power_1_2_3": [
+        [
+          "1430",
+          "256",
+          "-2308",
+          "-416"
+        ],
+        [
+          "6974296",
+          "2650368",
+          "-11284640",
+          "-4288384"
+        ],
+        [
+          "32005938102",
+          "20156843264",
+          "-51786695684",
+          "-32614457504"
+        ]
+      ],
+      "native_calls": 6
+    }
+  ],
+  "small_clock_reader": {
+    "name": "one_G_clock_bank",
+    "original_bank_dimension": 2,
+    "Q_actual": [
+      "-4",
+      "0",
+      "8",
+      "0"
+    ],
+    "cold_corner": [
+      "-4",
+      "-16",
+      "8",
+      "26"
+    ],
+    "trace_F": [
+      "-16",
+      "0",
+      "32",
+      "0"
+    ],
+    "trace_F_power_1_2_3": [
+      [
+        "-16",
+        "0",
+        "32",
+        "0"
+      ],
+      [
+        "1348",
+        "0",
+        "-2176",
+        "0"
+      ],
+      [
+        "-93840",
+        "0",
+        "151840",
+        "0"
+      ]
+    ]
+  },
+  "clock": {
+    "stage_dimensions": [
+      1,
+      2,
+      4,
+      8,
+      8
+    ],
+    "clock_dimension": 23,
+    "L": 2,
+    "trace_T": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "trace_T_squared": [
+      "-32",
+      "0",
+      "64",
+      "0"
+    ]
+  },
+  "scope": [
+    "Q is the actual fixture probability; no READY factor or GR source constant is invented.",
+    "Both full character sectors, canonical flag and last spectator remain in the target and clock.",
+    "The clock has three separate births, a nonidentity native G stage, and one ideal final target.",
+    "CP/CE and final targets are not claimed emitted exact native words; all GR compilation remains analytic.",
+    "k=1,2,3 illustrates the exact Chebyshev law; it does not numerically prove an infinite classification.",
+    "No old suite is rerun; only its SHA-pinned arithmetic/native/clock helper definitions are reused."
+  ]
+}

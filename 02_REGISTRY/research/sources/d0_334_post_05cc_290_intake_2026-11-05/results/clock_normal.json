@@ -1,0 +1,29 @@
+{
+  "checker_sha256": "ac11be45b2cec5581abb05bd1de8973d4ea9d8283a1f31ddab1ea6b65fcf84e8",
+  "checks": [
+    "unit clock normal after division by positive X",
+    "clock stress pairs with its unit normal to X",
+    "full stress change when only one scalar is scaled",
+    "fixed metric background cancels only the old stress",
+    "half-R source pairing has the original sign and factor",
+    "full coframe witness gives covariant metric variation",
+    "particular raw material lift restores the physical clock test",
+    "owned clock collar volume density exceeds 99 over 100"
+  ],
+  "hypotheses": [
+    "X>0; certified clock collar has X>1/20",
+    "compatible background solves unchanged Einstein-two-CAR source",
+    "cutoff equals one on test support; initial collar unchanged",
+    "normal-frame calculation transports by the owned Lorentz/material identities"
+  ],
+  "input_head": "66edbcfd458daecd133baca3b44528931e2ebfc5",
+  "not_claimed": [
+    "new exact native root",
+    "PDE solution emitted",
+    "native compiler run",
+    "finite stationary nuisance section"
+  ],
+  "number_of_checks": 8,
+  "source_pairing": "-kappa epsilon (2+epsilon) integral(chi X dvol)/(2 nu)",
+  "status": "PASS"
+}

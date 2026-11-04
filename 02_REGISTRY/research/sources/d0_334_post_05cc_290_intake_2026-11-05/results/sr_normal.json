@@ -1,0 +1,304 @@
+{
+  "schema": "original-reader-input-true-clock-exact-v1",
+  "status": "PASS",
+  "field": "Q[a]/(a^4+a^2-1), a positive, p=a^2",
+  "arithmetic": "exact rational polynomial reduction; no floating tolerance",
+  "checks": 59,
+  "check_names": [
+    "golden defining polynomial",
+    "canonical birth normalized",
+    "input reflection all columns",
+    "input reflection fixes born ray up to minus",
+    "input reflection determinant minus one",
+    "input comparison natural under actual birth",
+    "latest detail normalized and orthogonal",
+    "identity: native all-column replay",
+    "identity: orthogonal reader word",
+    "identity: reflection and full trace constant",
+    "identity: two-reflection compressed trace",
+    "identity: omission hostile trace constant",
+    "identity: all initialized marks phase transport",
+    "identity: full target SO",
+    "one_G: native all-column replay",
+    "one_G: orthogonal reader word",
+    "one_G: reflection and full trace constant",
+    "one_G: two-reflection compressed trace",
+    "one_G: omission hostile trace constant",
+    "one_G: all initialized marks phase transport",
+    "one_G: full target SO",
+    "G_CX_six: native all-column replay",
+    "G_CX_six: orthogonal reader word",
+    "G_CX_six: reflection and full trace constant",
+    "G_CX_six: two-reflection compressed trace",
+    "G_CX_six: omission hostile trace constant",
+    "G_CX_six: all initialized marks phase transport",
+    "G_CX_six: full target SO",
+    "actual report probability nonconstant",
+    "two-reflection trace retains report variation",
+    "age-mixing target is orthogonal",
+    "age-mixing target really mixes latest detail",
+    "mixed target does not inherit two-reflection source identity",
+    "WRb: L=2: actual incidence isometry G4",
+    "WRb: L=2: true growing clock unitary G6",
+    "WRb: L=2: actual final stage orthogonal",
+    "WRb: L=2: all body stages retained in endpoint",
+    "WRb: L=2: no shorter wrap r=1",
+    "WRb: L=2: shortest wrap exact coefficient",
+    "WRb: L=3: actual incidence isometry G4",
+    "WRb: L=3: true growing clock unitary G6",
+    "WRb: L=3: actual final stage orthogonal",
+    "WRb: L=3: all body stages retained in endpoint",
+    "WRb: L=3: no shorter wrap r=1",
+    "WRb: L=3: no shorter wrap r=2",
+    "WRb: L=3: shortest wrap exact coefficient",
+    "age_mixing: L=2: actual incidence isometry G4",
+    "age_mixing: L=2: true growing clock unitary G6",
+    "age_mixing: L=2: actual final stage orthogonal",
+    "age_mixing: L=2: all body stages retained in endpoint",
+    "age_mixing: L=2: no shorter wrap r=1",
+    "age_mixing: L=2: shortest wrap exact coefficient",
+    "age_mixing: L=3: actual incidence isometry G4",
+    "age_mixing: L=3: true growing clock unitary G6",
+    "age_mixing: L=3: actual final stage orthogonal",
+    "age_mixing: L=3: all body stages retained in endpoint",
+    "age_mixing: L=3: no shorter wrap r=1",
+    "age_mixing: L=3: no shorter wrap r=2",
+    "age_mixing: L=3: shortest wrap exact coefficient"
+  ],
+  "owners": [
+    {
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "block": "RO-NATIVE-GOLDEN-CHECK",
+      "code_sha256": "28af31ce262cafd8fa3ebe2b93922248961e0441fc582663f25857cccc83f99a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md",
+      "sha256": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393"
+    }
+  ],
+  "checker_sha256": "b785b3f595ea130e6d0b4dc85a8dd09f4b989f59a549dae5aa806d2fd8219048",
+  "reader_cases": [
+    {
+      "word": "identity",
+      "native_calls": 0,
+      "Q": [
+        "1",
+        "0",
+        "-1",
+        "0"
+      ],
+      "full_trace_W": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "latest_trace_WRb": [
+        "2",
+        "0",
+        "-4",
+        "0"
+      ]
+    },
+    {
+      "word": "one_G",
+      "native_calls": 1,
+      "Q": [
+        "-4",
+        "0",
+        "8",
+        "0"
+      ],
+      "full_trace_W": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "latest_trace_WRb": [
+        "-18",
+        "0",
+        "32",
+        "0"
+      ]
+    },
+    {
+      "word": "G_CX_six",
+      "native_calls": 6,
+      "Q": [
+        "357",
+        "64",
+        "-577",
+        "-104"
+      ],
+      "full_trace_W": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "latest_trace_WRb": [
+        "1426",
+        "256",
+        "-2308",
+        "-416"
+      ]
+    }
+  ],
+  "clock_cases": [
+    {
+      "target": "WRb",
+      "L": 2,
+      "stage_dimensions": [
+        1,
+        2,
+        4,
+        8,
+        8
+      ],
+      "clock_dimension": 23,
+      "trace_powers_1_to_L": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "2852",
+          "512",
+          "-4616",
+          "-832"
+        ]
+      ],
+      "latest_partial_trace": [
+        "1426",
+        "256",
+        "-2308",
+        "-416"
+      ]
+    },
+    {
+      "target": "WRb",
+      "L": 3,
+      "stage_dimensions": [
+        1,
+        2,
+        4,
+        8,
+        8,
+        8
+      ],
+      "clock_dimension": 31,
+      "trace_powers_1_to_L": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "4278",
+          "768",
+          "-6924",
+          "-1248"
+        ]
+      ],
+      "latest_partial_trace": [
+        "1426",
+        "256",
+        "-2308",
+        "-416"
+      ]
+    },
+    {
+      "target": "age_mixing",
+      "L": 2,
+      "stage_dimensions": [
+        1,
+        2,
+        4,
+        8,
+        8
+      ],
+      "clock_dimension": 23,
+      "trace_powers_1_to_L": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-832",
+          "2852",
+          "1344",
+          "-4616"
+        ]
+      ],
+      "latest_partial_trace": [
+        "-416",
+        "1426",
+        "672",
+        "-2308"
+      ]
+    },
+    {
+      "target": "age_mixing",
+      "L": 3,
+      "stage_dimensions": [
+        1,
+        2,
+        4,
+        8,
+        8,
+        8
+      ],
+      "clock_dimension": 31,
+      "trace_powers_1_to_L": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1248",
+          "4278",
+          "2016",
+          "-6924"
+        ]
+      ],
+      "latest_partial_trace": [
+        "-416",
+        "1426",
+        "672",
+        "-2308"
+      ]
+    }
+  ],
+  "scope": [
+    "Original native G/CX D words checked on every column against unchanged native_execution.py.",
+    "Rb and final closing g are ideal full real targets; no emitted exact native reflection is asserted.",
+    "q=2 bounded clock fixture is not the asymptotic q>=3 source theorem or full geometry replay.",
+    "Three separate births and every nontrivial intermediate G stage are retained and counted.",
+    "Age mixing obeys shortest-wrap identity; invariant-age factorization is not assumed.",
+    "No free identity tick, measurement, record register, erased complement, or physical inverse is introduced."
+  ]
+}
