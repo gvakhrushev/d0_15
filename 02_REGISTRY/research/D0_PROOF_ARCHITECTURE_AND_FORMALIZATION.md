@@ -16714,3 +16714,29 @@ new measured replay. Independent review checked stale-file races, short or
 empty first pages, pins and budget accounting; the affected 28 direct tests
 and 23 portable CI tests passed locally. This is retrieval infrastructure,
 not semantic C0 or physical GR acceptance.
+
+### Versioned paged cold-start and fail-closed evidence — 4 November 2026
+
+The opt-in `tools/proof_architecture_cold_start_v3.py` uses one batched corpus
+discovery for all existing cases, two bounded ranked pages and up to twelve
+source pages per locator in bounded calls. The separate
+`tools/compact_proof_architecture_cold_start_v3.py` verifies observed bytes,
+query evidence, locator references, exact pins, page spans and budgets, and
+endpoint corpus snapshots. Its default result records verified evidence but
+leaves discovery unattested, `found=false` and overall counts unavailable.
+The explicit `--verify-discovery` mode reruns the full batched discovery and
+compares ranked pages before it can credit a discovery. This is a replay of
+the same implementation, not an independent search implementation. Endpoint
+hashes do not prove the corpus stayed unchanged between the endpoints or
+authenticate tool binaries, external Git availability or scientific truth.
+
+The default producer now marks files without a readable SHA and direct line
+evidence as unverified rather than direct; legacy runner and compactor also
+require the shape of a SHA and direct evidence before counting a hit. That
+legacy shape check does not verify actual bytes or the query. The preserved
+2bc and c743 full outputs were structurally re-compacted without changing
+their 44/50 and 36/50 results; that operation is not another search. Adversarial
+fixtures cover an oversized source, wrong blob, duplicate and fabricated
+ranks, untraced pin, stale corpus, query isolation, and sources after 64
+references. No 50-case v3 replay has yet been run, and no improvement to
+those historical counts is claimed.

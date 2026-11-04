@@ -1718,12 +1718,15 @@ def _hydrate_ranked_candidate(root: pathlib.Path, record: dict[str, Any],
 def full_text_search_many(root: pathlib.Path, queries: list[str],
                           limit: int = MAX_SEARCH_RESULTS, *,
                           pin_reference_limit: int = 8,
-                          offset: int = 0) -> list[list[dict[str, Any]]]:
+                          offset: int = 0,
+                          ranked_pages: int = 1) -> list[list[dict[str, Any]]]:
     """Search text and verify pins; explicit owner checks may follow up to 64 refs."""
     if not 1 <= pin_reference_limit <= 64:
         raise ValueError("pin_reference_limit must be between 1 and 64")
     if not 0 <= offset <= 4096:
         raise ValueError("offset must be between 0 and 4096")
+    if not 1 <= ranked_pages <= 3 or (offset and ranked_pages != 1):
+        raise ValueError("ranked_pages must be 1..3 and cannot be combined with offset")
     # The low-information filter limits corpus discovery only. Every discovered
     # file and exact pinned source is matched and scored against the raw query.
     terms_by_query = [_query_terms(query) for query in queries]
@@ -1810,7 +1813,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             except OSError:
                 raw_content_matches[raw_rel] = {}
             else:
-                if offset:
+                if offset or ranked_pages > 1:
                     discovery_digests[raw_rel.replace("\\", "/")] = hashlib.sha256(data).hexdigest()
                 raw_content_matches[raw_rel] = _multi_pattern_matches(_fold(content), raw_matcher)
         return raw_content_matches[raw_rel]
@@ -1833,7 +1836,9 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         min_hits = 1 if len(terms) <= 3 else max(2, (len(terms) + 3) // 4)
         for raw_rel in sorted(candidate_paths):
             rel = raw_rel.replace("\\", "/")
-            if (rel in {"tools/proof_architecture.py", "tools/proof_architecture_cold_start.py"}
+            if (rel in {"tools/proof_architecture.py", "tools/proof_architecture_cold_start.py",
+                        "tools/proof_architecture_cold_start_v3.py",
+                        "tools/compact_proof_architecture_cold_start_v3.py"}
                     or rel.startswith("tools/test_")):
                 continue
             content_groups_here = document_matches(raw_rel).get(index, set())
@@ -1870,7 +1875,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
         # pass its exact commit/path/blob and direct-content checks.
         pin_window = candidates[:max(MIN_PIN_VERIFICATION_WINDOW, limit)]
         pinned_candidates: list[tuple[float, str, dict[str, Any]]] = []
-        for score, rel, record in pin_window:
+        for pin_window_rank, (score, rel, record) in enumerate(pin_window, 1):
             path = root / pathlib.Path(rel)
             try:
                 if path.stat().st_size > 4_000_000:
@@ -1880,6 +1885,8 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             except OSError:
                 continue
             record["source_sha256"] = hashlib.sha256(source_bytes).hexdigest()
+            if ranked_pages > 1 and discovery_digests.get(rel) != record["source_sha256"]:
+                raise ValueError("workspace source changed between discovery and pin-window read")
             header_owner_declarations = _source_header_owner_declarations(content)
             if header_owner_declarations:
                 record["source_header_owner_declarations"] = header_owner_declarations
@@ -1927,6 +1934,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                 pin_status, pinned_bytes = _read_pinned_source(root, reference, pinned_cache)
                 reference["pin_status"] = pin_status
                 pinned_rel = str(reference.get("path") or "")
+                before_candidate_count = len(pinned_candidates)
                 if pinned_bytes is not None:
                     pinned_text = pinned_bytes.decode("utf-8-sig", errors="replace")
                     pinned_match = _candidate_record(
@@ -1978,14 +1986,47 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                     ))
                 if reference.get("content_status"):
                     pinned_content_status[index][pin_key] = str(reference["content_status"])
+                if ranked_pages > 1 and len(pinned_candidates) > before_candidate_count:
+                    pinned_candidates[-1][2]["pin_discovery"] = {
+                        "locator_source": rel,
+                        "locator_sha256": record["source_sha256"],
+                        "pin_window_rank": pin_window_rank,
+                        "reference_rank": followed,
+                    }
         combined = list(candidates)
         combined.extend(pinned_candidates)
         combined.sort(key=lambda row: (-row[0], row[1]))
-        page = [record for _, _, record in combined[offset:offset + limit]]
-        if offset:
-            for record in page:
+        if ranked_pages > 1:
+            # A commit-only and an explicit-blob citation can select the same
+            # candidate. Keep one occurrence per displayed identity in v3.
+            unique = []
+            seen = set()
+            for entry in combined:
+                identity = (entry[2].get("kind"), entry[2].get("key"))
+                if identity not in seen:
+                    unique.append(entry)
+                    seen.add(identity)
+            combined = unique
+        selected = combined[offset:offset + limit * ranked_pages]
+        page = [record for _, _, record in selected]
+        if ranked_pages > 1:
+            for (score, sort_key, _), record in zip(selected, page):
+                record["rank_score"] = score
+                record["rank_sort_key"] = sort_key
+        if offset or ranked_pages > 1:
+            for position, record in enumerate(page):
+                if not offset and position < limit:
+                    continue  # Preserve the existing first page on stable inputs.
                 _hydrate_ranked_candidate(root, record, terms, pattern,
                                           discovery_digests.get(record.get("source", "")))
+        # Ranking may include a >4 MB or unreadable workspace document whose
+        # text was counted but never read for direct line evidence. Preserve
+        # its rank in every mode, without promoting it to a direct source hit.
+        for record in page:
+            if (record.get("direct_content") is True and
+                    (not record.get("source_sha256") or not record.get("evidence_lines"))):
+                record["direct_content"] = False
+                record["source_freshness"] = "unverified_missing_evidence"
         results.append(page)
         _search_progress("global_page_ready", query_index=index,
                          query_count=len(queries), returned=len(results[-1]))
