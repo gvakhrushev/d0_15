@@ -17581,3 +17581,13 @@ binding to the actual amplitude and the link of each scalar action derivative
 to the physical field map remain inputs. Empty-copy and zero-corner controls
 are retained. The [independent review and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_amplitude_c912_2026-11-05/SUMMARY_RU.md)
 do not establish native admission or the complete price.
+
+### Matched product directly supplies conditional field-source inputs
+
+`D0.Analysis.MatchedBranchAmplitudeFieldComposition` consumes the independent
+product derivative and derives the matched amplitude and derivative inputs of
+the existing conditional field-source composition. Its local product binding,
+per-copy field-derivative correspondence and resolvent weight binding remain
+explicit. The price curve and field chart are not constructed as one admitted
+physical execution. The [independent review and cached build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_amplitude_field_3068_2026-11-05/SUMMARY_RU.md)
+retain the complete price and physical selection boundaries.
