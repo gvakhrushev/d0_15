@@ -1,0 +1,26 @@
+{
+  "snapshot": "69431c43bd9b164e45c945bf10300cf18655616e",
+  "inventory_snapshot": "361691711324c1852b6e861837307d21ec37e417",
+  "inventory_sha256": "001e026d7b616117aa3ae7f2e47ec37d6baabaf4607e47cea2bd34ddb0639778",
+  "lean_source_sha256": "4e2106a9741628dda4a1ab1b25d9ae24df1c2d5e20a612945cbd4b6172db2988",
+  "lean_final_uncompressed_sha256": "ec9f9533e04bae4182787766fd76cf44719d102646b7caa30f86cd5441810dac",
+  "views": {
+    "view_book01-0116.json": {
+      "sha256": "669464d45da79900c3287eb9e0d6d503fe38c600b18f9cbcda9a86a5af848e87",
+      "units": 6,
+      "issues": []
+    },
+    "view_book01.json": {
+      "sha256": "281e7abf8c9786660f2bee6cf2ce5f422eaf35aac33eb04eacbcb51983ea20b5",
+      "units": 44,
+      "issues": []
+    },
+    "view_book02.json": {
+      "sha256": "e167b3c919801156a18a7e62bc8af630a533c5b0e9a831cd1d1a06197e61545e",
+      "units": 30,
+      "issues": []
+    }
+  },
+  "semantic_acceptance": "not_assessed",
+  "GR_closed": false
+}
