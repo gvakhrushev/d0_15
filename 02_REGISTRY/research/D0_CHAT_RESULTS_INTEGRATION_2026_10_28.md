@@ -1235,3 +1235,24 @@ all relevant variations, refinement and independent scientific acceptance
 remain open at their declared interfaces. The RO claim is a candidate scoped
 composition, not an accepted generic GR or unique native selection result.
 `GR_closed=false`.
+
+## PR #334 continuation `05cc38dc..2900145f`: comparison and prepared-price defect
+
+The [pinned four-commit continuation](sources/d0_334_post_05cc_290_intake_2026-11-05/README.md)
+preserves all versions of the two changed owner files, their exact diff,
+source slices, trusted checker inputs, successful and failed environment
+receipts. Four bounded checkers were replayed in normal and optimized modes;
+the full scientific and native executions were not independently replayed.
+This is a historical source pin: the research owner can advance further.
+
+The owner retains the original fixed comparison, both flag sectors and full
+READY factor, and a conditional same-family clock/source synthesis. The newer
+prepared-price calculation keeps a nonzero relative-entropy first-source
+defect for the actual preparation. A freely optimized Gibbs state cannot be
+substituted merely because it exists: the owner also records a conditional
+source comparison if that state is actually selected and paid on the same
+admitted execution and the required feedback source vanishes. Neither branch
+proves the complete Cost−Info binding, physical selection, equal absolute
+prices, finite joint-root recovery or GR. Distinct full-output, flag and report
+entropies and the independent heat/preparation/work variations remain visible.
+`GR_closed=false`.

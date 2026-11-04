@@ -50,6 +50,11 @@ do not overwrite the active task brief or source memo.
   an established native operation. The neutral full quantum continuation
   and the different flag, full-output and report entropies remain distinct;
   no particular Info law, sampler, marginal or new physical price is selected.
+  The owner also retains the conditional PB6 comparison: if the same admitted
+  execution actually selects and pays for the Gibbs variational state and the
+  normalized feedback source vanishes, its source can match the original B
+  after the declared sign conversion. The variational minimum alone does not
+  prove that preparation or equality of absolute prices.
   The proposed next consumer is the existing full price effect with its
   preparation, effect, residual and work variations intact.
 

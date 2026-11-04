@@ -17553,3 +17553,12 @@ rerun. Semantic review remains manual, and the corpus was checked at endpoints,
 not continuously. This historical result does not establish performance on
 later trees. The [complete split archive, summary and restore verifier](sources/d0_proof_architecture_formalization_2026-10-24/reports/cold_start_v3_full_b308_2026-11-05/SUMMARY_RU.md)
 retain exact provenance and do not establish C0 or GR acceptance.
+
+### #334 continuation: prepared-price source defect
+
+The [pinned `05cc38dc..2900145f` source intake](sources/d0_334_post_05cc_290_intake_2026-11-05/README.md)
+retains the original comparison and a nonzero prepared-price first-source
+defect, alongside the explicitly conditional Gibbs comparison. Source blobs,
+failed environment attempts and four bounded checker replays are preserved.
+This is not acceptance of a complete physical price, a physical preparation
+selector or GR closure; later owner commits are not included in this pin.
