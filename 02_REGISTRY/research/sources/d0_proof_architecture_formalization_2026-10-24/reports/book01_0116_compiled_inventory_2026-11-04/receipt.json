@@ -1,0 +1,76 @@
+{
+  "schema": "d0-book01-0116-inventory-v1",
+  "snapshot_commit": "7faff5faefe90960652d38f0e11957acab3ed03a",
+  "source_digest": "ed951680be53bdd24ccee4de9e02c0534c55e836d3c09f28047ed221c5e840b1",
+  "collector_sha256": "1baa3a045fec65b6d5ffb549a4f0852bb61b7919b0880d7bbc2fd81c927b94a9",
+  "inventory_sha256": "826365cb7e37c15adde422ab02e2094fc4cbb26f3824933c59623a6670148064",
+  "declarations_total": 198,
+  "selected": [
+    {
+      "atom": "SigmaWitness.dmin_eq_iff",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "dd7f3aaeca6e7eb0027de538fed57aa79ae3a8a60b7490cd02bd8619b1df2264",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "atom": "SigmaWitness.delta_dmin_iff",
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.delta_dmin_iff",
+      "module": "D0.Foundation.VerificationCore",
+      "type_sha256": "3b4dcaa50666034de66a6500dc4ff993686efbedb9ca431b0622f0f2c3684e4b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "atom": "UncoupledCenterRawWitness.distinct_raw_same_future",
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future",
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "type_sha256": "c3361e83588b3bb0669c7453d2b0c868e3331f4c9ca05d08fe5bb1504cf50e9c",
+      "axioms": [
+        "Quot.sound"
+      ]
+    },
+    {
+      "atom": "UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "type_sha256": "d9fa95ddaebe58a3abce5ba05592e5598ebec276e82c9ce5983e7e30651613da",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "atom": "UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "type_sha256": "0534c7b6fbfa04d07ffdb45a3bbcf33f584b6b55e900f37146c033f41b268826",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "atom": "FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+      "declaration": "D0.Foundation.FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "type_sha256": "a7b462e6fbd9466602c03ff51ae9484950e679433dd6e168aa6e35a11352ce87",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "reconciliation": "pending integrated third-slice selector and current semantic/owner review",
+  "semantic_acceptance": false,
+  "GR_closed": false
+}
