@@ -17659,3 +17659,14 @@ historical pinned source and its evidence. The [versioned correction and
 compatibility receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_coverage_correction_9d38_2026-11-05/SUMMARY_RU.md)
 records both exact source versions, mapped ranges, hostile controls and the
 explicit limits of the byte-only verifier. C0 semantic acceptance remains open.
+
+### #334 §7fh: original full128 transport and replay hardening
+
+The [pinned §7fh intake](sources/d0_334_post_201_c4d_intake_2026-11-05/README.md)
+retains the conditional all-column operator transport, the separate retention
+obstruction and all physical input/price boundaries. Its 65 bounded checks
+include 45 nominal floating comparisons and were reproduced on a different
+stack. An independently exposed checker-substitution false-PASS was fixed;
+standalone replay now checks the pinned checker before each run and rejects
+stderr, with hostile controls in CI. The local manifest remains trusted and
+the replay is not a sandbox. No full native execution or GR closure follows.

@@ -1292,3 +1292,24 @@ setting. Different sections, constraints or independent complete-price terms
 require their own full source and error analysis: this is not a universal
 no-go for them. The actual initial/terminal valuation, full Cost−Info, physical
 admission and other source rows remain open; `GR_closed=false`.
+
+## PR #334 §7fh: full128 native transport and retained boundary
+
+The [pinned `201ee52c..c4dfd283` intake](sources/d0_334_post_201_c4d_intake_2026-11-05/README.md)
+preserves the full owner diff, both resulting source blobs, 22 input pins and
+the original constructor used by its checker. The owner describes a
+conditional all-column transport of the original full128 operator, record
+input and matrix charge with a finite-cap price/source budget. It does not
+construct or execute the large native word, prove mesh-uniform compilation or
+select the full physical price. The §7fg independent retention-row obstruction,
+actual paid input and old/heat/work/clock/preparation rows remain open.
+
+The checker was reproduced in two modes on a different library stack: all 65
+conditions passed, including 45 nominal floating comparisons, not interval
+certificates. Local numerical receipts differ from the owner's environment;
+Python 3.9 `-Werror` attempts failed on a recorded NumPy warning. Independent
+review identified a standalone replay false-PASS under checker substitution;
+the corrected replay checks its pinned checker before each run and rejects
+stderr, with hostile controls in CI. It trusts the local manifest, is not a
+sandbox or a continuous race-free attestation, and does not accept the owner
+analytical/physical claims. `GR_closed=false`.
