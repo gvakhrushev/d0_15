@@ -17794,3 +17794,12 @@ shared helpers, and the nonzero finite retention rows and prior §7fg
 obstruction. The bounded checker uses one finite `q=0` fixture; it is not a
 proof of the owner's `q>=3` asymptotic argument, independent physical task,
 complete price or GR closure.
+
+### #334 §7fl: paid pointer and full-history boundary
+
+The [pinned §7fl intake](sources/d0_334_post_3fd_076_intake_2026-11-05/README.md)
+retains the conditional paid one-birth, one-CX pointer construction and its
+source comparison. The finite checkers do not select the CQ algebra or prove
+the complete price; pointer coherence, free control rows, actual STOP/work
+and physical admission remain open. Reconstructed owner result objects are
+identified as such and the unavailable review texts are not claimed recovered.
