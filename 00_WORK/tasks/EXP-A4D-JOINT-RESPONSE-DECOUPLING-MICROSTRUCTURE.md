@@ -21298,3 +21298,67 @@ reproduces receipt 2dba5bc0a7e4c5bc7d2e3de4bbc9a7574d6a1ec37d203580fecc326944182
 Work/protocol/assembly guards and whitespace checks pass. Independent
 bounded reviews are integrated. Template consumed; no independent
 acceptance, assembly discharge, Ready, retirement or merge is claimed.
+
+## 4 November 2026 — one full-comparison clock family, primitive interpretation and nonscreening
+
+Phase: native realization / final composition, existing #334 and its same
+two write paths. Input 66edbcfd458daecd133baca3b44528931e2ebfc5.
+Primary addition: §7fd, SC1–SC13. Consumer: the explicit operational-map
+and common-family nonzero-source premises in the existing A–D application.
+No new task, geometric root, gate, action or scientific acceptance.
+
+Consume the new FULL reversible reader/input comparison XF k=1, including
+both flag sectors, canonical flag/spectator births, actual all-column marks
+and suffix readers. Its true gain is
+16 d_old a_n epsilon_h r_f L a_L/(beta Z_actual), with all 425D heat modes.
+The separately prescribed RO action-to-angle recipe is not used. Current
+implementation normals keep FN reactions; every genuine old/preparation
+row, full feedback and paid-reader source retains its actual norm budget.
+The unchanged material map transports all 16+24+2 field equations.
+
+New parent substitution 1: explicit primitive Interpretation into the
+accepted TheoryTransfer owner. Its state is the graph of the finite
+available packet over the ENTIRE native state/history; each action maps
+to its real word, each test to the original complete positive instrument
+with finite postprocessing, and the outcome map is the identity on full
+labelled laws. Fixed task parameters do not freeze current Y/u/records.
+Formal refusal totalizes ill-typed requests outside the physical regime;
+ordinary checkpoints remain appendable. The elementary graph alone proves
+no gravity; it makes the existing source, Cauchy and clock assertions an
+actual application of the common-sector transfer theorem.
+
+New parent substitution 2: a strict off-shell source witness INSIDE that
+same timelike-clock Cauchy family. Perturb only one scalar, supported away
+from the initial/boundary collar. The original metric and connection stay
+fixed, both original matter rows remain independent, and the physical
+coframe test uses the entire inverse material map. Its source pairing is
+-kappa epsilon(2+epsilon) integral(chi X dvol)/(2 nu)<0.
+The certified higher jets, strict clock/regularity margins and actual
+native source budgets give a signed native bound <=-sigma/2, uniformly
+on the faithful implementation fibre. No exact finite nuisance zero or
+unbounded-multiplier exclusion is inferred from a kappa-small row.
+
+Together with XF/CT/GENERAL and the owned energy theorem, this is one
+master-law source/admission/clock composition with soundness and reverse
+for the declared computable regular class. Each datum has its own compact
+class and constants; the known nonvacuum control supplies the separating
+witness. All native records/tests remain; universal NativeContextCoverage
+is not silently imposed on the common-sector theorem.
+
+The ORIGINAL scoped contract C explicitly retains complete Cost-Info
+binding. The master-law theorem does not discharge that clause. Therefore
+SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED remains UNPROPOSED by this addition,
+not merely qualified into acceptance. The named remaining application is
+the already owned complete-history weighted/terminal or full-source price
+transport on this same XF family, including every admitted preparation,
+record and clock row. Exact joint finite roots, older stack/raw216 and
+full architectural closure likewise retain their original scope.
+
+Smallest decisive validation: eight exact algebraic checks of the timelike
+stress/coframe/material-lift/volume witness, normal and optimized Python
+with warnings as errors and byte-identical receipts. The embedded script
+and inputs are pinned. Three bounded reviews inspected the final source,
+price and operational maps; this is not independent assembly acceptance.
+Affected structural guards run once on final inputs. No Lean change,
+unchanged geometric replay, registry promotion, Ready, retirement or merge.
+GR_closed=false; the original goal remains active.

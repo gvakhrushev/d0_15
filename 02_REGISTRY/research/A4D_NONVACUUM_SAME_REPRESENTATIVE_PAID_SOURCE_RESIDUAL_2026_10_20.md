@@ -134614,6 +134614,593 @@ Observed normal and optimized receipt:
 }
 ```
 
+## 7fd. One full-comparison clock family: primitive interpretation and a nonscreened master-law Einstein source
+
+4 November 2026. Existing #334, final composition.
+Input 66edbcfd4 (full input object is pinned below). Consumer: the A–D
+scoped native-kappa contract, using the accepted kernel/TheoryTransfer
+at its DECLARED common-sector quantifier. The original assembly action,
+exact-joint and raw216 contracts are unchanged.
+
+This is a composed theorem for the
+**recorded full-comparison task / Book03 §03.25 master law / kappa**.
+It does NOT yet propose `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` under the
+unchanged A–D contract: C explicitly retains full Cost-Info binding,
+which a qualifier on a master-law theorem cannot discharge.
+The new parent substitutions are the explicit primitive operational map
+below and an off-shell separating source INSIDE the same clock family.
+The rest is a composition of the already owned theorems, with no new root,
+price, field, native instruction or unproved equality of distinct carriers.
+
+### 7fd.A. The common witness and exact theorem
+
+Let d range over the certified computable high-regularity initial data of
+the existing Cauchy/energy theorem for which the material-clock collar of
+RC1 is certified. Keep both real CAR components, the declared initial
+constraints, boundary/initial labels and harmonic/coframe representation.
+Each datum has its OWN constructed positive T_*(d), effective compact
+K_clock(d), higher-jet bounds and source/lift constants. Choose each certified upper
+regularity bound with strict rational margin BEFORE generating its catalogues.
+No unrestricted
+union of these classes is asserted to be effectively compact. The owned
+control gamma=I, K=I, Psi_A=0,
+pi_0=pi_15=sqrt(3/(2 kappa)), 23<kappa=-lambda<24,
+proves nonemptiness with nonzero matter. The energy certificate, not a
+supplied future solution, gives its development and clock margins.
+
+Consume the incoming SR/XF source theorem on the SAME clock class. Fix
+one complete descriptor c: original real G/CX profile, canonical births
+and initial cut, scene/beta/z, the original complete reader D(Y), its
+original final predicate, the full reversible XOR comparison constructor,
+marked decoder and actual finite comparison/layout rules. Choose the
+shortest nontrivial round trip (XF k=1). In XF's notation its whole body is
+
+    V(Y)=[C_E(Y) C_(P_b)] tensor I_last,
+    C_A=A tensor I_flag+(I-A) tensor X_flag.
+
+The shared flag and last spectator are actual canonical births. Both flag
+sectors remain in the price. No chosen character or I_h-to-angle recipe
+remains. The input predicate P_b comes from the actual born input; the
+initial reader is part of the declared comparison task. This selection
+does not assert that every weaker history must request that experiment.
+For all
+finite OFF-SHELL field catalogues in K_clock(d), admission is
+
+    native_valid(w), same_actual_layout(w,W_r(c,Y)),
+    E(w)=E(W_r(c,Y)).                                     (SC1)
+
+W_r now compiles that full XF body, with its real marked prefixes and
+enlarged clock. Equality is not to an unrepresentable
+ideal target, and no source or Einstein equation is used to decide SC1.
+Every catalogue label has its canonical witness and all faithful
+implementations. Finite task data have EOQ's Book01 section type; that
+argument does not import EO's gates, null-clock family or finite roots.
+
+Use exactly the full master price of the SAME actual list:
+
+    B=beta^-1 log[359D+2 Tr_(33D) exp(-beta Delta_0)]
+            -Tr_r log[(1-z)I+z C* C],                    (SC2)
+
+with D=sum_j dim H_j, the complete unitary closure, generated prefixes/cut,
+rank-r original input, original rank-one scene cut and all 425D Hodge modes.
+RAW R6 binds these arguments to the stated Book03 §03.25 functional and
+its stationarity law. No Shannon term or path-weight sampler is assigned.
+
+THEOREM, in the declared kappa source interpretation. On this common
+family the full constrained master-source zero condition has Einstein–
+two-CAR soundness and recovery, with the original coupling and physical
+material metric. Its independent internal equation is E_n^kappa=0;
+its reduced field source is DS_ES. Every computable regular development
+in the stated class is recovered by one accumulating paid history with
+its actual finite comparisons, errors and retained records. Conversely,
+every regular on-shell decoded limit with those initial data is that
+Einstein–two-CAR development, in the declared gauge/physical quotient.
+Its finite source/field/event/duration observations have the operational
+interpretation in C below and converge with the existing explicit budgets.
+
+The theorem concerns exact zeros of the completed SOURCE expression.
+It neither exchanges completion with finite zero sets nor asserts
+E_n,h=0 for each native word. This is precisely the owned §7eh.E/KAPPA
+interpretation of the equation, not a new definition of stationarity
+introduced for this proposal. No EO exact-finite root is used in this theorem.
+
+### 7fd.B. Full nuisance reduction, norms and both directions
+
+Split the complete logical data into current physical/logical variables
+Y and genuine inherited operands u; do not duplicate a field as an
+independent seed. FN/RO/PQ give the exact full-price factorization
+
+    B(w,u)=b(E(w),u), E(w)=M_c(Y,u),
+    Lambda=-D_E b,
+    E_Y,red=(D_Y M_c)^*D_E b,
+    E_u,red=D_u b+(D_u M_c)^*D_E b.                       (SC3)
+
+Every faithful implementation section has this same source before any
+field equation is imposed. The derived normal reaction is retained;
+a nonzero unconstrained normal is not renamed an Euler zero. Independent
+old preparations/cuts, actual PF/observer/measure rows and field-changing
+logical controls retain their real equations. READY, reference baseline,
+visibility, canonical born WORK and internal generated states have the
+already proved task/constructor status and causal adjoints. Scene/layout
+parameters are explicitly fixed primitive/request data for this comparison,
+not new admitted variables suppressed after variation. The complete PQ
+ledger and its extension boundary are consumed.
+
+The smooth XF target on the actual enlarged layout satisfies XF6
+
+    D Tr(P_last V)=4 d_old DQ,
+    Q=a_n bar r_h, g_h=a_n epsilon_h r_f>0,
+    Gamma_act=16 d_old g_h L a_L/(beta Z_act)>0.
+
+The gain Gamma_act uses the actual COMPILED clock and Z_act; the exact
+trace identity above belongs to the smooth target. The common enlarged
+layout has d_final/d_old=2^(q+2).
+The original full READY factor a_n is retained. At k=1 the comparison
+source orientation is +1. The leading normalized target source is DI_h,
+with the SOURCE remainder and the XF8 full-operator higher-age bound
+
+    2^(q+2) exp(x) x A_h/(4 g_h L), x=beta/22,
+
+not RO's separately prescribed scalar trace recipe. For actual contrasts
+Gamma_act is held at the central word. The ratio
+Gamma_tar/Gamma_act=Z_act/Z_tar and all compiler/contrast, old/current,
+decoder and physical lift constants enter the actual budget.
+The actual current cold factor is retained in J; its target is s+(1-s)Q,
+s=2p sqrt(p), and CT uses only its unitary bound. The ENTIRE rank-r
+cold corner C in SC2 also retains a^K and C_<. Full old-row control
+uses SR9/XF9: q>=3, delta=exp(-r), |t|=exp(-r/2), actual polynomial
+paid L, then K; finite retention macros keep their real length ell and
+L>=ell^2. No old source is frozen.
+This is DB/Gamma, not D(B/Gamma). After the task reactions the full source
+splits as field + genuine nuisance + exactly neutral implementation fibre;
+the FULL nuisance dual norm tends to zero, not just each fixed ageing row.
+
+Equation (XF10) in XF9, followed by GENERAL and RO15's unchanged
+actual-centre argument, gives
+at the ACTUAL decoded centre Z_h
+
+    ||q_field,h DSample_h-DS_ES(Z_h)||_(C3)*
+          <= C(h+epsilon_h+h^4)+tau_h ->0.                (SC4)
+
+The material map is the original full sixteen-dimensional involution
+
+    ehat=sqrt(m/det e)e,
+    J_e[v]=a[v-(e/2)tr(e^-1 v)],
+    J_e^-1[w]=a^-1[w-(e/2)tr(e^-1 w)].                   (SC5)
+
+No volume direction, connection component or second scalar equation is
+removed. Genuine measure dependence follows its owned identity; PF sampling
+is a different operand. Finite chart right lifts and basis norms are retained.
+For the continuum use the corrected fixed-test dense lifts: for every fixed
+dense physical test v, ||l_h,v||<=C_v and A_h l_h,v->v. A finite grid is not
+asserted surjective onto the whole infinite-dimensional C3 space. The bound
+
+    |DS_ES(Z)[v]| <= C_v(||q_h||+eta_h)
+               +||DS_ES(Z)|| ||A_h l_h,v-v||              (SC6)
+
+and density give soundness. XF/SR/CT gives full norm recovery in the reverse
+direction for each declared regular solution. Its next word is appended to
+the actual past, whose complete prefix/clock/source constants are computed
+before choosing precision; no old initial state is reprepared.
+
+GENERAL then gives torsion zero, the original Einstein source
+G=-lambda T, both independent scalar wave equations and the Lorentz/
+diffeomorphism Ward identities. The four initial Hamiltonian/momentum
+constraints and harmonic/integrability conditions propagate by the already
+consumed Cauchy theorem. Compact source exclusion with the energy certificate
+computes the future field name from d; weak source convergence alone is not
+called finite-step energy stability.
+
+### 7fd.C. The explicit operational interpretation retains the whole history
+
+The accepted `D0/Foundation/TheoryTransfer.lean` needs primitive state,
+action-word, test and injective outcome maps. A readout arrow alone does not
+supply these. We now instantiate them on the actual retained-history graph.
+
+For each fixed task datum vartheta=(c,d_init,request_recipe), construct
+the following Interpretation. Current off-shell field/catalogue values,
+genuine inherited operands u and evolving finite records remain in H;
+fixing vartheta does not freeze them. Here d_init is the fixed Cauchy/
+boundary datum, not the entire varying input packet. testMap is the fixed
+postprocessing rule for that datum.
+
+Let N=(vartheta,H) be the native state with that task base. H is the
+COMPLETE physical state/history: initial input, live quantum
+carrier/state, executed instructions/births/cuts/clock and retained fine
+records. It is not just an opcode list. The task base is not a new unpaid
+Hilbert factor. For the total `FutureExecution.step` type, totalize the
+addressed syntax formally on both sides: a well-typed active request
+executes the original step; an ill-typed request returns a tagged refusal state, which remains
+absorbing under further requests. A completed physical checkpoint remains
+appendable; it is not a refusal state. This is a semantic completion
+outside the admitted physical regime, not an additional executed gate,
+birth, tick or price stage. Physical continuations are the original
+decidably well-typed words.
+
+Define P_fin(N) from the already available finite code/task/registered-
+readout projection. At a completed declared mark it gives the actual finite
+source/field/event packet with its certificates; elsewhere it retains the
+old record and gives tagged pending, failure or out-of-declared-regime
+status. Failure or out-of-regime tags require a finite witness; otherwise
+the rule returns pending. This is a TOTAL finite packet rule on the stated
+native process.
+It reads no unknown amplitude, no unperformed measurement and no future
+solution. In particular it never decides an infinite-source zero. Any
+physically executed calculator is already included in H and SC2.
+
+Use the graph state carrier and maps
+
+    F.State={(N,P): P=P_fin(N)},    stateMap(N,P)=N,
+    F.step(g,(N,P))=(G.step(g,N),P_fin(G.step(g,N))),
+    actionWord(g)=[g].                                    (SC7)
+
+The state diagram is exact by substitution. If a literal expanded macro w
+is used as an action parameter, actionWord(w)=w is fixed before execution.
+An adaptive algorithm CHOOSES the next literal word; it is not claimed to
+be one primitive compiling to different words depending on an unknown state.
+All actually executed instructions remain in the paid list. Interior
+computation steps can leave the displayed physical packet pending.
+
+On that valid regime, for a declared finite test let v include its genuine
+fine outcome and the
+finite prior registered data that its postprocessing actually uses. On the
+finite quotient the rule f(v,vartheta) has KAPPA's positive effect map.
+Retain the fine label and use
+
+    output=(tag,v,f(v,vartheta)),
+    E_(v,f(v,vartheta))=E_v.                              (SC8)
+
+These effects retain the complete total response and every failure branch.
+The generic owner's observe is deterministic. Define its Outcome here
+to be the ENTIRE finite response law on these same tagged labels; this is
+not one random sample. Use the same labelled-law type on F and its native
+interpretation, so outcomeMap is the identity and injective. testMap is
+the original registered instrument with this permitted finite
+postprocessing. On refusal states or unsupported test requests, both observations
+are the same formal refusal law; this adds no physical test execution. Thus
+
+    G.observe(stateMap(S),testMap(t))
+           =outcomeMap(F.observe(S,t)).                  (SC9)
+
+This is the equality of full outcome laws; it does not identify a single
+random sample with an exact metric value. Discarding v would give
+RC6's coarser report but is not done to the retained physical record.
+The postprocessing depends only on available v and task data, not hidden H.
+
+SC7–SC9 are exactly the primitive diagrams of the generic owner. Its
+run_commutes, profile_commutes and common_profile_eq_iff now apply to
+EVERY finite continuation in this declared common experiment sector.
+Canonical births/GH12 and literal old-record retention provide the same
+history used by RC's event protocol. Physically performed readers use the
+common address/branch catalogues and the next-prefix price/source transport
+of RC7, including every genuine reader row and zero old cold return.
+In particular XF4's complete marks are (M_j tensor I_flag) C_(P_b);
+only their initialized observations agree with the former marks. Later
+tests use the real suffix-transported reader. No perfect copy in the
+nonorthogonal canonical flag states is assumed: v is the original genuine
+fine record, plus any actually executed extra reading. For a new target
+that physically rereads independently varying old data, retain the full
+(D_u M)^*D_E b term and RC7's C_read epsilon_old+epsilon_reader budget.
+That term vanishes only for XF's stated old-spectator target.
+
+The elementary graph construction by itself proves no gravitational law.
+The substantive translated assertion is SC4–SC6 plus the independent
+Cauchy/energy proof and RC1–RC6: the actual finite packets enclose and
+converge to Einstein–two-CAR fields, the timelike scalar-flow events and
+proper duration. Source stationarity is a hypothesis of this resulting
+physical law, not a condition defining F.State, P_fin or native admission.
+A field-only map that erased microscopic histories would not have proved
+SC7. This is the named missing operational map, rather than a new primitive.
+
+### 7fd.D. Three different equivalence relations and actual observables
+
+Keep these relations distinct throughout the final composition:
+
+1. FN's same-operation implementation fibre preserves the complete PRICE
+   and required operation tuple. Different raw histories can still be
+   distinguished by native tests.
+2. TheoryTransfer's common future-test quotient uses exactly the compiled
+   actions and mapped tests in SC7–SC9. Their empirical distinctions are
+   preserved AND reflected by injectivity of the outcome encoding.
+3. The continuum physical quotient applies to decoded solutions and their
+   declared covariant observations, under local Lorentz and initial/collar-
+   compatible diffeomorphism changes. Canonical Cauchy/Cholesky representatives
+   are fixed only after deriving the full source equations.
+
+The mapped observations are the existing material metric, proper connection/
+curvature and BOTH scalar tests, together with RC's initial-labelled events
+and proper-duration intervals. Their local propagating operator is the
+already derived common Einstein/two-scalar wave system, with the constraints
+listed in B. No compiler/heat coordinate is declared a gravitational mode,
+and no unsupported global numerical mode count is inferred on T3.
+
+All extra native states, records and tests stay in G. The generic owner's
+`NativeContextCoverage` is an OPTIONAL stronger premise for equivalence
+under every native experiment. Universal Lorentz locality of arbitrary
+native interventions is therefore not a new prerequisite of the A–D
+common-family theorem. It is also not a theorem of this composition.
+The full architectural target still has its own unremoved requirements.
+
+### 7fd.E. Non-screening inside the SAME clock class
+
+PQ's pp-wave witness is not the timelike-clock Cauchy control. To avoid
+combining unrelated witnesses, take the genuine nonvacuum development
+Z_* supplied by the OWNED CONTROL datum d_* above and its energy certificate.
+This member is enough to prove nonidentity of the source on the whole
+family; its reference collar bounds are not asserted for arbitrary other d.
+Keep its metric,
+compatible independent connection and Psi_15 fixed. Choose smooth computable
+b,chi supported away from the initial/boundary collar, with b=1 on supp chi,
+chi>=0 nonzero. Set
+
+    Psi_0,epsilon=Psi_0+epsilon(Psi_0-s_*)b,
+    epsilon>0 sufficiently small.                        (SC10)
+
+s_* is any fixed computable scalar constant. Let C_U>=1 be a rational bound on the change of the first-order state
+per unit epsilon. Choose 0<epsilon<1/(4000 C_U), and epsilon C_reg less
+than half the regularity margin fixed in A. Since the background has the
+1/2000 collar, the perturbation lies strictly inside the SAME 1/1000
+clock collar and effective compact chart, with the exact same initial data.
+This contains off-shell fields; it is not a new source-null admission rule.
+On supp chi, dPsi_0,epsilon=(1+epsilon)dPsi_0.
+
+At the unchanged background let X=|dPsi_0|_g^2>1/20 and
+n=grad_g Psi_0/sqrt(X). Choose delta g^{mu nu}=chi n^mu n^nu.
+For this one scalar T_0=2dPsi_0 tensor dPsi_0-gX, T_0(n,n)=X.
+Since the background satisfies the ORIGINAL equation with BOTH scalars,
+
+    (G-kappa T_new)(n,n)=-kappa epsilon(2+epsilon)X,
+    DS_ES(Z_epsilon)[delta g]
+       =-kappa epsilon(2+epsilon)/2 integral chi X dvol_g.
+                                                               (SC11)
+
+The factor 1/2 is GENERAL's R/2 convention. The independent connection
+row stays zero; no scalar-wave equation in the cutoff transition is assumed.
+The full physical test is V_test=(w,0_connection,0_scalars), where
+w=-(chi/2)(ehat n) tensor n_flat; apply the ENTIRE inverse SC5 to obtain
+the actual raw coframe variation. It is not the identity even when det e=m.
+
+The test is genuinely C3 with a computable norm: the actual H12 development
+has the energy proof's mixed jets through order five, and n is an algebraic
+function of its metric/first-derivative state with X bounded below. This
+regularity is not inferred for every arbitrary C3,1 candidate. Choose a
+certified rational nu>=max(1,||V_test||_C3) and divide by nu. SC5 enters
+the native lift, not this physical test norm. The strict margin
+
+    sigma=kappa epsilon(2+epsilon)/(2nu)
+                  integral chi X dvol_g >0               (SC12)
+
+is computable. On the reference 1/1000 collar dvol_g>(99/100)d^4x,
+so a positive rational lower bound follows from X>1/20 and a certified
+positive integral of chi. Continuity from Z_epsilon to its ACTUAL decoded
+native centres and SC4, each within a quarter-sigma budget, give
+
+    q_field,h DSample_h[V_test/nu]<=-sigma/2,
+    hence |q_field,h DSample_h[V_test/nu]|>=sigma/2.       (SC13)
+
+This holds for every faithful implementation at the same complete logical
+data. The reduced source cannot factor through the exactly solved vertical
+rows. For kappa-small genuine nuisance rows the exclusion retains the
+actual condition ||L_h|| ||E_u/Gamma_h||->0; arbitrary divergent formal
+multipliers are not ruled out merely by small E_u. Thus B's non-screening
+test now uses the very family carrying the clocks and reverse recovery.
+
+### 7fd.F. A–D application boundary and the remaining full objective
+
+| Scoped obligation | Same-family substitution and its boundary |
+| --- | --- |
+| A: admitted nonempty regular family, joint law and reverse | SC1–SC6, XF/GENERAL and the data-dependent energy/Cauchy class for the master law. The control certifies nonzero matter. Internal zero means E_n^kappa=0. Complete Cost-Info application still needs C. |
+| B: full reduced source survives all stated nuisance equations | SC3–SC6, the complete PQ ledger and SC10–SC13 inside K_clock. No shared free controller changes the guarded operation without changing the task. |
+| C: one actual word, entire price, covector, norm and refinement | SC2, RAW R6/GROWING/FN and XF/SR/CT's actual Gamma/Z/basis/lift schedule supply the entire literal §03.25 master. C's explicit full Cost-Info binding is STILL OPEN. |
+| D: task admission, generated inputs, real reactions, clock and records | SC1, XF5–6/EOQ's general Book01 task section, PQ ledger, RC readout/paid-prefix map and the new primitive interpretation SC7–SC9. No Einstein predicate is in admission; the comparison request remains declared task data. |
+
+These rows jointly establish the master-law theorem at the stated assumptions,
+including soundness and reverse, rather than merely citing separate
+existential examples. It is one common application with explicit inputs, maps, norms and equations,
+not fulfillment of the entire unchanged A–D contract.
+The bounded independent price/source/admission reviews are pinned below;
+they do not themselves register an assembly acceptance.
+
+The original scoped C itself and the unchanged `native-programme-v1`
+action contract include complete
+Cost-Info, while its joint_nonlinear_solve application asks for exact joint
+finite solutions on a refining family. Neither is supplied by substituting
+this master-law kappa theorem; EO's different exact centres do not fill the
+RO finite-root premise. The distinct pathwise/stack transports, original
+raw216 and the full architectural objective remain open. No new requirement
+that every native programme be Lorentz-local is inserted as an excuse to
+withhold this scoped result, and no unrestricted implication is inferred.
+
+The remaining C application is concrete: instantiate the ALREADY owned
+complete-history C1–C4 weighted/terminal map, or a proved full-source
+price-equivalence alternative, on these XF comparison words and ALL their
+admitted preparation/record/clock contrasts. The genuine fibre sums,
+coherent Gram terms, terminal factors and normalizer sources must enter.
+PQ10–PQ11 already exclude inferring that map from faithful full-price
+conjugacy alone. No new Gibbs sampler, entropy correction or assignment
+Info=Cost-B is made here. This is the retained original price premise,
+not a universal demand to classify every possible history law.
+
+`SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` remains UNPROPOSED by this result.
+The master-law source/operational composition is a research result with
+its retained assumptions. No registry or public claim is promoted;
+no Ready, task retirement or merge. GR_closed=false; the original goal
+remains active.
+
+### 7fd.G. Bounded validation, corrected review and exact reproduction
+
+Three bounded reviews checked the final 412-line analytic text, pinned by
+its SHA below. The source review required the full XF gain/READY factor,
+actual enlarged carrier, distinction between target identities and actual
+compiled normalizer, higher-jet clock test and same-control volume bound.
+The operational review required a total formal action/test convention,
+appendable physical checkpoints, law-valued deterministic observations and
+a fixed task parameter that does not freeze the current field. The price
+review corrected the attempted terminal inference: the original scoped C
+explicitly retains complete Cost-Info binding. All these corrections are
+integrated above. These reviews are bounded analytical checks, not an
+assembly acceptance, a new formalization or complete independent replay.
+
+The exact checker verifies the timelike stress change, its R/2 pairing,
+full coframe direction, the material involution on this witness and the
+reference collar volume inequality. All eight checks passed in normal and
+optimized Python 3.12.14 / SymPy 1.14.0 with warnings as errors; both output
+receipts are byte-identical. The checker does not solve the Cauchy problem,
+compile a new native history, prove the operational diagram or bind
+Cost-Info. Those analytic maps and their original owners are identified
+above. No unchanged geometric/energy/large-compiler suite was rerun.
+
+Extract the Python block below to a scratch check_clock_source.py and run:
+
+```text
+python3 -Werror /absolute/scratch/check_clock_source.py
+python3 -O -Werror /absolute/scratch/check_clock_source.py
+```
+
+All checks remain active under optimization. The script prints observed
+JSON and writes no repository files. The input owner hashes refer to the
+pre-insertion commit, preserving SR/XF and every prior result verbatim.
+
+```json
+{
+  "GR_closed": false,
+  "checker_sha256": "ac11be45b2cec5581abb05bd1de8973d4ea9d8283a1f31ddab1ea6b65fcf84e8",
+  "exit_codes": [
+    0,
+    0
+  ],
+  "input_head": "66edbcfd458daecd133baca3b44528931e2ebfc5",
+  "new_exact_checks": 8,
+  "normal_and_optimized_byte_identical": true,
+  "normal_optimized_receipt_sha256": "438255ae32ea69621bda16b514e184dc173409c7228568c0fade4b0440a6fb18",
+  "not_claimed": [
+    "full Cost-Info binding",
+    "unchanged scoped A-D terminal",
+    "independent assembly acceptance",
+    "new exact finite native roots",
+    "new PDE integration or native history generation",
+    "arbitrary native context coverage"
+  ],
+  "owner_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "3bc1ac2079b912707e5d0f6fcf250ee6dd469a092262add21f157011ac525116",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/gr_assembly/contract.json": "8d36f06b71b7b897b06b82fec0261ea63da2f61b01e750e6f81a9b22be82b4a8",
+    "02_REGISTRY/research/A4D_INITIAL_DATA_ENERGY_TO_KAPPA_CLOSURE_2026_10_30.md": "6337acf1bf25e30dad37be924a997ad8bf465b98773c3874c6a504e7fa1838fb",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "49da61f9ad48ad2388790fc262845dfd1a74849608f6058a656539eb0fdfb854",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/PROOF_RU.md": "aea8d31d9da6d4dac1ee3dc54332ed4f46d4d5c953bbc7a66fd95ab38fef7558",
+    "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/PROOF_RU.md": "0febee7186e95a1aaeb5717b607b63056f17d87a4f410430c5458740f0050c0f",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3",
+    "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203"
+  },
+  "run_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scientific_promotion": false,
+  "scope": "XF k=1 full-comparison master law; same Cauchy clock family; primitive common-sector interpretation and strict off-shell source witness",
+  "scratch_proof_sha256": {
+    "admission-final.md": "1ea076762d550ab1d7dd7d3bceb32e0d96f2eb2797bf669faef6b955ab73f8dc",
+    "brief.md": "0641294afdddd210289484037abb99d355e4648033009a1b9d5ff9f6ada9a6e7",
+    "price-final.md": "d786df2c43361021d12a1d3480ad03f31f0c63d654019bc15cc5e637ac74e9f4",
+    "proof.md": "bcd66dcc362d81adc4f508760745e3315325919dae4f798470504e7620df1064",
+    "source-final.md": "ede0dde235b857229a2bfb33a524cc6540d75418f80d870118df2f21eb7199bf"
+  }
+}
+```
+
+#### 7fd.G1. check_clock_source.py
+
+```python
+#!/usr/bin/env python3
+"""Exact timelike-clock source witness; no root, PDE or compiler search."""
+from fractions import Fraction as F
+import hashlib
+import json
+from pathlib import Path
+import sympy as s
+
+checks=[]
+def need(ok,label):
+    if not bool(ok): raise ArithmeticError(label)
+    checks.append(label)
+def zero(x):
+    if isinstance(x,s.MatrixBase): return all(s.factor(t)==0 for t in x)
+    return s.factor(x)==0
+
+a=s.Matrix(s.symbols('a0:4',real=True)); eta=s.diag(1,-1,-1,-1)
+k,eps,chi=s.symbols('k eps chi',positive=True)
+X=(a.T*eta*a)[0]
+T=2*a*a.T-eta*X
+n=eta*a # sqrt(X)*unit normal; clears radicals in every identity.
+need(zero((n.T*eta*n)[0]-X),'unit clock normal after division by positive X')
+need(zero((n.T*T*n)[0]-X**2),'clock stress pairs with its unit normal to X')
+Ta=2*((1+eps)*a)*((1+eps)*a).T-eta*(1+eps)**2*X
+need(zero(Ta-T-eps*(2+eps)*T),'full stress change when only one scalar is scaled')
+residual=k*T-k*Ta
+need(zero(residual+k*eps*(2+eps)*T),'fixed metric background cancels only the old stress')
+need(zero((n.T*residual*n)[0]/(2*X)+k*eps*(2+eps)*X/2),
+     'half-R source pairing has the original sign and factor')
+w=-chi*n*(eta*n).T/(2*X)
+dgcov=-chi*(eta*n)*(eta*n).T/X
+need(zero(w.T*eta+eta*w-dgcov),'full coframe witness gives covariant metric variation')
+J=lambda v:v-s.eye(4)*s.trace(v)/2
+need(zero(J(J(w))-w),'particular raw material lift restores the physical clock test')
+need(F(249,250)**2>F(99,100), 'owned clock collar volume density exceeds 99 over 100')
+result={'status':'PASS','checks':checks,'number_of_checks':len(checks),
+ 'input_head':'66edbcfd458daecd133baca3b44528931e2ebfc5',
+ 'source_pairing':'-kappa epsilon (2+epsilon) integral(chi X dvol)/(2 nu)',
+ 'hypotheses':['X>0; certified clock collar has X>1/20',
+ 'compatible background solves unchanged Einstein-two-CAR source',
+ 'cutoff equals one on test support; initial collar unchanged',
+ 'normal-frame calculation transports by the owned Lorentz/material identities'],
+ 'not_claimed':['new exact native root','PDE solution emitted','native compiler run','finite stationary nuisance section'],
+ 'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+print(json.dumps(result,sort_keys=True,indent=2))
+```
+
+Observed normal and optimized receipt:
+
+```json
+{
+  "checker_sha256": "ac11be45b2cec5581abb05bd1de8973d4ea9d8283a1f31ddab1ea6b65fcf84e8",
+  "checks": [
+    "unit clock normal after division by positive X",
+    "clock stress pairs with its unit normal to X",
+    "full stress change when only one scalar is scaled",
+    "fixed metric background cancels only the old stress",
+    "half-R source pairing has the original sign and factor",
+    "full coframe witness gives covariant metric variation",
+    "particular raw material lift restores the physical clock test",
+    "owned clock collar volume density exceeds 99 over 100"
+  ],
+  "hypotheses": [
+    "X>0; certified clock collar has X>1/20",
+    "compatible background solves unchanged Einstein-two-CAR source",
+    "cutoff equals one on test support; initial collar unchanged",
+    "normal-frame calculation transports by the owned Lorentz/material identities"
+  ],
+  "input_head": "66edbcfd458daecd133baca3b44528931e2ebfc5",
+  "not_claimed": [
+    "new exact native root",
+    "PDE solution emitted",
+    "native compiler run",
+    "finite stationary nuisance section"
+  ],
+  "number_of_checks": 8,
+  "source_pairing": "-kappa epsilon (2+epsilon) integral(chi X dvol)/(2 nu)",
+  "status": "PASS"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
