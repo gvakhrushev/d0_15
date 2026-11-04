@@ -1,0 +1,130 @@
+{
+  "snapshot_commit": "2bc79af4ae8bf4bc493d1f801be9db72c2905227",
+  "worktree_dirty": false,
+  "receipt": {
+    "command": [
+      "lake",
+      "build",
+      "D0.All"
+    ],
+    "dependencies": {
+      "boundary": "point-in-time source checks; generated .lake/build caches (except Lean source), .lake/build.barrel[.trace] and widget/package-lock.json.hash not authenticated",
+      "checks": "git HEAD, exact tracked checkout bytes and modes against index blobs, index flags, symlink targets, untracked/ignored files outside listed caches, Lean sources inside build cache",
+      "manifest_sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+      "packages": [
+        {
+          "name": "Cli",
+          "revision": "6b907cf12b2e445ccb7c24bc208ef04a1f39e84c"
+        },
+        {
+          "name": "LeanSearchClient",
+          "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+        },
+        {
+          "name": "Qq",
+          "revision": "a6e6c34c4ef182f83b219a3a5a385f51f44bdc4c"
+        },
+        {
+          "name": "aesop",
+          "revision": "558915ae105bfd8074e22d597613d1961822adc2"
+        },
+        {
+          "name": "batteries",
+          "revision": "32dc18cde3684679f3c003de608743b57498c56f"
+        },
+        {
+          "name": "importGraph",
+          "revision": "515cf9d0c00ece5e661f6de4326a53dedc1e8ea1"
+        },
+        {
+          "name": "mathlib",
+          "revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7"
+        },
+        {
+          "name": "plausible",
+          "revision": "a456461b368b71d2accd95234832cd9c174b5437"
+        },
+        {
+          "name": "proofwidgets",
+          "revision": "a84b3e2475d5c5ab979567b1ad8aea21b764bcf8"
+        }
+      ],
+      "schema": "d0-lake-dependency-provenance-v1"
+    },
+    "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+    "environment_sha256": "a7ff9e6ac3d152834deea585ab011e45596dbd3f00e62ef9ede79ade2f43dcbe",
+    "schema": "d0-lean-build-receipt-v1",
+    "source_sha256": "01a607cb3bec36162ca73fae8c24a87875932fcb548258533138e972f3aa3308",
+    "target": "D0.All",
+    "toolchain": {
+      "boundary": "selected executable bytes and reported versions at two snapshots; dynamic libraries, kernel, external settings and generated caches are not authenticated",
+      "elan": {
+        "resolved_path": "/Users/grigorijvahrusev/.elan/bin/elan",
+        "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+      },
+      "lake_version": {
+        "command": [
+          "/Users/grigorijvahrusev/.elan/bin/lake",
+          "--version"
+        ],
+        "stderr": "",
+        "stdout": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)"
+      },
+      "launchers": {
+        "lake": {
+          "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lake",
+          "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+        },
+        "lean": {
+          "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lean",
+          "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+        }
+      },
+      "lean_version": {
+        "command": [
+          "/Users/grigorijvahrusev/.elan/bin/lake",
+          "env",
+          "lean",
+          "--version"
+        ],
+        "stderr": "",
+        "stdout": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)"
+      },
+      "resolution": "elan which",
+      "selected": {
+        "lake": {
+          "resolution_stderr": "",
+          "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lake",
+          "sha256": "9a89b2af1bddb7e6d5a8dbb2c715288bcb4f24b9129132640cee950734366bcb"
+        },
+        "lean": {
+          "resolution_stderr": "",
+          "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+          "sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997"
+        }
+      }
+    }
+  },
+  "build_log_sha256": "195d8d7dc82f0638f24f65fee4754f59b64c87b5aa51e7a015cca6a892491441",
+  "build_log_bytes": 507787,
+  "warnings": 1324,
+  "jobs": 4793,
+  "logs": {
+    "all-final.log.gz": {
+      "compressed_sha256": "7b65fa16cc5982876b989f9603f6c5a441a220a9e86b98b4f81941d2478ac910",
+      "original_sha256": "195d8d7dc82f0638f24f65fee4754f59b64c87b5aa51e7a015cca6a892491441",
+      "original_bytes": 507787
+    },
+    "shortlex-narrow.log.gz": {
+      "compressed_sha256": "bc6d073ac3f20715063947e12287e9a336880cba6f960b045d9847aeb29eb60d",
+      "original_sha256": "17e5b08358a387bc37098303bc5a9b21c12223c09a6baeb3d1f97e026ecdf586",
+      "original_bytes": 4074
+    },
+    "radial-narrow.log.gz": {
+      "compressed_sha256": "59e7d1bd9e90014d2502ee385d63bcdec96415a4ccbecf3a1516ebbc4b010be6",
+      "original_sha256": "ccee56245a1a6bfa9ae5ee7c83fcfdf914f01550b1fa57148aba63d90a78e5f7",
+      "original_bytes": 3681
+    }
+  },
+  "note": "Independent local replay at the named snapshot. Warnings include one tactic-style warning in TaskFaithfulRadialPriceDerivative. No physical selection, admission or GR closure is established."
+}
