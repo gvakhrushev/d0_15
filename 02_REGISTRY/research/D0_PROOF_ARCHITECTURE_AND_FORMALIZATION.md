@@ -16811,4 +16811,6 @@ scope; no new physical selection or GR closure follows.
 The [narrow-build receipt and axiom check](sources/d0_proof_architecture_formalization_2026-10-24/reports/affine_reporter_narrow_2026-11-04/receipt.json)
 record 2,703 Lake jobs and the standard `propext`, `Classical.choice` and
 `Quot.sound` axioms for the main results and zero-direction control. The
-complete public-import build remains a separate integration check.
+[full public-import build](sources/d0_proof_architecture_formalization_2026-10-24/reports/affine_reporter_narrow_2026-11-04/full_build_34d.json)
+subsequently passed 4,799 jobs on the exact recorded clean snapshot; its 1,329
+warnings remain in the preserved log. Later Lean changes require their own build.
