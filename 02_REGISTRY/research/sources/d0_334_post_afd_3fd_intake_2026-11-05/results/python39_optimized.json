@@ -1,0 +1,762 @@
+{
+  "arithmetic": "Q[a]/(a^4+a^2-1), exact rational isolating interval; nominal sparse-clock residuals labelled",
+  "check_count": 140,
+  "checker_sha256": "943f409d2c931b524acecc21eeb2a37eb21a5d92430177c24709c0eba80105be",
+  "checks": [
+    {
+      "kind": "exact_golden",
+      "label": "exact polynomial isolator finds one positive real root"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "rational interval isolates the unique positive Golden root"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "original G and its canonical birth are normalized"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "positive nineteen-call power has the exact rotation form"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "nineteen-call cosine and sine normalize exactly"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "exact rational collar proves norm(G^19-I)<one tenth"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "actual one-tenth operator collar implies strict compression bound nine tenths"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "nineteen-call sine is strictly positive on the exact root collar"
+    },
+    {
+      "kind": "structural",
+      "label": "all comparison macros have exactly22 positive native calls"
+    },
+    {
+      "kind": "structural",
+      "label": "there is no inverse reset or continuously adjustable primitive"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "paid22-call first baseline has full endpoint G_ret tensor I_helpers"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "paid22-call second baseline has full endpoint G_ret tensor I_helpers"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "first actual macro compresses to a cn I-p sn Z on helper0"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "second actual macro compresses to a cn I-p sn X and leaves earlier sealed retention untouched"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "shared-helper compression operators genuinely do not commute"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "both exact compression eigenvalues lie strictly inside cbar, sign -1"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "both exact compression eigenvalues lie strictly inside cbar, sign 1"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "complete cold helper map is the ordered noncommutative product B2 B1"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "reset/product-of-expectations replacement is false"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "missing helper correlation is exactly minus2 a p^6 sin(19alpha)^2"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "noncommuting actual clock has N51 D623 and five separate births"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "noncommuting complete canonical birth closure obeys R*R=I exactly"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "noncommuting final actual G follows a square stage and D_final=0"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "noncommuting every actual stage is exactly isometric on its own carrier"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "noncommuting each exact stage range is the complement of its actual birth detail"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "noncommuting full sparse623-clock is unitary on every column"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "noncommuting exact conservative graph has zero complete final clock diagonal block"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "noncommuting age1 cannot return through the actual old retention variation"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "noncommuting age2 cannot return through the actual old retention variation"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "noncommuting age3 cannot return through the actual old retention variation"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "noncommuting age4 cannot return through the actual old retention variation"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "noncommuting all checked low-winding old-source traces vanish"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "structural",
+      "label": "literal CX address is valid"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "canonical actual clock has N51 D623 and five separate births"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "canonical complete canonical birth closure obeys R*R=I exactly"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "canonical final actual G follows a square stage and D_final=0"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "canonical every actual stage is exactly isometric on its own carrier"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "canonical each exact stage range is the complement of its actual birth detail"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "canonical full sparse623-clock is unitary on every column"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "canonical exact conservative graph has zero complete final clock diagonal block"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "canonical age1 cannot return through the actual old retention variation"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "canonical age2 cannot return through the actual old retention variation"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "canonical age3 cannot return through the actual old retention variation"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "canonical age4 cannot return through the actual old retention variation"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "canonical all checked low-winding old-source traces vanish"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual different retained prefixes have identical checked short-winding clock traces"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "moved scene projector is an exact rank-one projection"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "entire feedback determinant is independent of the rank-one scene orientation"
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "full noncommuting return obeys dJ=-z Tr[D^-1(dC* C+C* dC)]"
+    }
+  ],
+  "classifications": {
+    "exact_golden": 28,
+    "exact_integer": 12,
+    "exact_symbolic": 1,
+    "nominal_numeric": 5,
+    "structural": 94
+  },
+  "clocks": {
+    "canonical": {
+      "D": 623,
+      "N": 51,
+      "birth_count": 5,
+      "exact_support_entries": 1030,
+      "instruction_count": 46,
+      "low_winding_traces": [
+        0.0,
+        7.55417527999327,
+        0.0,
+        1.783298880026919
+      ],
+      "old_source_traces": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "profile": "q=0 diagnostic; not the q>=3 asymptotic theorem",
+      "sparse_entries": 1030,
+      "support_origin": "exact Golden stage and closure supports; conservative integer products",
+      "widths": [
+        1,
+        2,
+        4,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        32,
+        32
+      ]
+    },
+    "noncommuting": {
+      "D": 623,
+      "N": 51,
+      "birth_count": 5,
+      "exact_support_entries": 1486,
+      "instruction_count": 46,
+      "low_winding_traces": [
+        0.0,
+        7.55417527999327,
+        0.0,
+        1.783298880026919
+      ],
+      "old_source_traces": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "profile": "q=0 diagnostic; not the q>=3 asymptotic theorem",
+      "sparse_entries": 1486,
+      "support_origin": "exact Golden stage and closure supports; conservative integer products",
+      "widths": [
+        1,
+        2,
+        4,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16,
+        32,
+        32
+      ]
+    }
+  },
+  "collar": {
+    "actual_cold": "243432423720756114*a**3 + 259519134130985199*a**2 - 150449511823193420*a - 160391645623891758",
+    "cbar": "9/10",
+    "cosine": "100508628*a**3 - 62117747*a",
+    "false_product": "-1068269525781955992*a**3 + 259519134130985199*a**2 + 660226876078980894*a - 160391645623891758",
+    "n": 19,
+    "near_margin_interval": [
+      "2761587848950361153438778385087785932828694007927229353123705898645892825579082470414983/1829932720659355568070563574495193233157503830019467564421721168302188215925639106549565500",
+      "1730685975183881204997631561097962465602665444696590862759711954616218945989786512829077/1146818087419878560963492923277249601176045278077824676547690094158928349916487282161260200"
+    ],
+    "sine": "79014996 - 127848949*a**2"
+  },
+  "max_nominal_residual": 4.440892098500626e-16,
+  "residuals": {
+    "actual different retained prefixes have identical checked short-winding clock traces": 0.0,
+    "canonical all checked low-winding old-source traces vanish": 0.0,
+    "canonical full sparse623-clock is unitary on every column": 4.440892098500626e-16,
+    "noncommuting all checked low-winding old-source traces vanish": 0.0,
+    "noncommuting full sparse623-clock is unitary on every column": 4.440892098500626e-16
+  },
+  "runtime": {
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.open-retention-collar/1",
+  "scope": {
+    "GR_closed": false,
+    "continuous_native_primitive": false,
+    "full_Cost_Info_selected": false,
+    "helpers_reset": false,
+    "same_task_forcing": false,
+    "tiny_clock_replaces_CT_asymptotic": false
+  },
+  "status": "PASS"
+}

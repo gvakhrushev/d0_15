@@ -1,0 +1,108 @@
+{
+  "files": {
+    "python312_normal.json": {
+      "bytes": 18443,
+      "sha256": "5fc6027dc3e711560d57064fb97b123ccdce58e26ae950a20d3dfa0a58bdad1a"
+    },
+    "python312_normal.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python312_optimized.json": {
+      "bytes": 18443,
+      "sha256": "5fc6027dc3e711560d57064fb97b123ccdce58e26ae950a20d3dfa0a58bdad1a"
+    },
+    "python312_optimized.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_normal.json": {
+      "bytes": 18441,
+      "sha256": "b28396104c99a85ce47dd27e059a44bf9e8ceb7f0e0d5e77f390766bfb818f78"
+    },
+    "python39_normal.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_optimized.json": {
+      "bytes": 18441,
+      "sha256": "b28396104c99a85ce47dd27e059a44bf9e8ceb7f0e0d5e77f390766bfb818f78"
+    },
+    "python39_optimized.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "local_stacks": {
+    "python312": {
+      "check_count": 140,
+      "classifications": {
+        "exact_golden": 28,
+        "exact_integer": 12,
+        "exact_symbolic": 1,
+        "nominal_numeric": 5,
+        "structural": 94
+      },
+      "equals_owner_stdout_hash": false,
+      "max_nominal_residual": 4.440892098500626e-16,
+      "normal_and_optimized_byte_identical": true,
+      "normal_exit": 0,
+      "normal_stderr_bytes": 0,
+      "optimized_exit": 0,
+      "optimized_stderr_bytes": 0,
+      "runtime": {
+        "numpy": "2.5.4",
+        "python": "3.12.13",
+        "scipy": "1.18.1",
+        "sympy": "1.14.0"
+      },
+      "stdout_sha256": "5fc6027dc3e711560d57064fb97b123ccdce58e26ae950a20d3dfa0a58bdad1a"
+    },
+    "python39": {
+      "check_count": 140,
+      "classifications": {
+        "exact_golden": 28,
+        "exact_integer": 12,
+        "exact_symbolic": 1,
+        "nominal_numeric": 5,
+        "structural": 94
+      },
+      "equals_owner_stdout_hash": false,
+      "max_nominal_residual": 4.440892098500626e-16,
+      "normal_and_optimized_byte_identical": true,
+      "normal_exit": 0,
+      "normal_stderr_bytes": 0,
+      "optimized_exit": 0,
+      "optimized_stderr_bytes": 0,
+      "runtime": {
+        "numpy": "2.0.2",
+        "python": "3.9.6",
+        "scipy": "1.13.1",
+        "sympy": "1.14.0"
+      },
+      "stdout_sha256": "b28396104c99a85ce47dd27e059a44bf9e8ceb7f0e0d5e77f390766bfb818f78"
+    }
+  },
+  "machine": "arm64",
+  "nominal_numeric_not_interval": true,
+  "owner_full_stdout_available": false,
+  "owner_max_nominal_residual": 4.440892098500626e-16,
+  "owner_runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "owner_stdout_sha256": "edbf1780ba2b4c274fec494075f33110dc701db12615f6c7caf713a5fef02799",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "scope": "bounded q=0 fixture; no independent proof of q>=3 asymptotic",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}
