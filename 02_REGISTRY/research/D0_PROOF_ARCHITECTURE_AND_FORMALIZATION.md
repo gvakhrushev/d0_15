@@ -16861,3 +16861,23 @@ verify one shared batched scan and exact mixed-event counts. Diagnostics do
 not alter a replay already running, prove continuous corpus stability or
 change the meaning of existing results. As before, failure to write an enabled
 stderr stream may interrupt the process.
+
+### Archive capacity: remaining physical application — 4 November 2026
+
+`ArchivePairCapacity` does not discharge the native archive apparatus binding
+in `A4D_NATIVE_VERIFIED_ARCHIVE_ACTUATION.md`, source blob
+`06de86d2793466d21f2ea0d2efa76f16a7f8a87a`, bytes `[3840,4253)`,
+SHA-256 `29df016dd0a677ae0f461d02aaeafc51161f8f45e0262d64641ea084123b1a21`.
+That consumer additionally needs the actual record encoding into its real
+Hilbert carrier, the source's operator and unit/norm equations, and comparison
+readback for the same admitted apparatus. The finite cardinality theorem
+does not construct those maps or equations. A valid substitution requires a
+reviewed binding of `W.archiveCode` to the execution's addressable record,
+preserving both future class and line with correct readback, together with
+the same execution's clock and work.
+
+Nor does the archive bound establish the injective update and common-reset
+premises already used by `PreparationMemoryBound.archive_capacity_bound`;
+its separate capacity theorem is not a proof of those premises. No physical
+selector, apparatus realization, independent line causality or cost is added
+by this comparison. The existing owners and physical obligations remain open.
