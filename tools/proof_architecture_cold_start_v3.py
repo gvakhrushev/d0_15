@@ -302,6 +302,8 @@ def verified_query(root: pathlib.Path, query: str, result: dict[str, Any],
     # Old v3 receipts have no workspace-page field. Do not silently expand
     # their historical search; new receipts explicitly opt into this surface.
     if "workspace_source_pages" in result:
+        if result["workspace_source_pages"] and not proof.workspace_page_safe_open_supported():
+            raise ValueError("workspace source pages cannot be reverified: unsupported_safe_open")
         actual_workspace = workspace_source_pages(root, query, hits, allowed_paths)
         workspace_pages = result["workspace_source_pages"]
         if (not isinstance(workspace_pages, list) or
