@@ -17643,3 +17643,13 @@ checks source bytes `[12992,13059)`. Equal complete profiles imply equal
 observations for the same word/test of the supplied interface; additional
 native contexts require their own coverage proof. The global physical wording,
 complete History and physical admissibility remain open.
+
+### Book02 native coverage: sufficiency, not necessity
+
+`D0.Foundation.NativeCoverageSufficiencyCounterexample` constructs equal full
+source/native profiles without a `NativeContextCoverage` witness, disproving
+literal necessity of that specific single-context witness. The existing
+coverage-implies-equivalence theorem and extra-native-test control remain
+valid. The [source review, independent proof check and build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_coverage_necessity_counterexample_2026-11-05/SUMMARY_RU.md)
+retain the original pinned wording, its ambiguity and the corrected scope;
+no complete C0 acceptance or physical claim follows.
