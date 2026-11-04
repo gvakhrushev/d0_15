@@ -20695,3 +20695,17 @@ checks pass normally and optimized with warnings as errors and identical
 receipts. Independent readers checked the actual comparator algebra,
 proper-cut equations, full heat symmetry, field-section consequence and
 finite-word boundary. Affected structural guards run on final inputs.
+
+## 4 November: off-shell matched-source composition and global rigidity
+
+Same Draft #334, native realization / final composition; input 89dcb2c853d1578819ec3ac2e72f1a20cbc5f004. The primary artifact now contains "Matched-source synthesis: one stationary programme section, the original input cut, and global Einstein rigidity". Consume §§7ee H18–H22, 7ei EI6–EI12, 7ex EX1–EX9 and the owned Golden blow-up/source theorem; no new task, carrier or acceptance. Write paths remain this brief and the existing primary same-representative artifact.
+
+The exact new application is off shell: with identical finite actions in all matched branch/copy banks, the ORIGINAL determinant is J_red=F_A(I_h), with derived Gamma=F_A'>0. All independent branch and slope rows factor through the explicit weighted physical mean; its relative directions form a stationary section without requiring DI_h=0. A local mean/relative chart has a norm-one material right lift and no inverse-weight singularity. Proper-Lorentz links use local coordinates, and genuine measure variation is included by the material change of variables.
+
+A prepared-CODE version uses actual Born weights, keeps the original physical input rank, and makes the feedback rows of BOTH independent CODE-only preparation legs vanish separately at matching. All new code/work dimensions stay in the complete heat. No neutrality of arbitrary other WORK preparations is inferred.
+
+The explicit variable-Jacobian coframe lift gives the physical pullback metric while retaining fixed coordinate measure. It composes exactly; finite lattice/native errors retain their actual norms and gains. The Golden and Ward consumers can therefore act on the operationally normalized source class. The raw nonlinear Book price need not itself be homogeneous, and dividing its covector by Gamma is not differentiating J/Gamma. The same positive multiplier must cover the entire gravitational/connection/matter source.
+
+The full-cylinder alternative consumes the existing prospective weighted-law theorem: one common actual law at each horizon determines all price differences up to b_N, so the equal-duration §7eo covector can transfer without separately reconstructing Cost and Info or equating retained endpoints. The actual weighted primitive/continuation intertwining is still required; separate experiments leave moving normalizers, different durations leave b_N-b_M, and coherent Born response keeps its Gram/phase and exponent conventions.
+
+Parent substitution: strengthen the source-descent and internal-stationary-section application on the existing matched palette. Remaining physical application: bind that section and its decoder to the SAME admitted complete execution, including the marked-reader profile/record normals and other genuine controls; retain full heat/old-source errors divided by the actual gain. No claim of full A–D closure or new physical selection. Independent read-only review checked the differential and chart; unchanged expensive mathematics is not replayed.
