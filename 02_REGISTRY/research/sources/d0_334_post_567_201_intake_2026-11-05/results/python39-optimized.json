@@ -1,0 +1,210 @@
+{
+  "arithmetic": "Q[a]/(a^4+a^2-1), a positive and p=a^2; exact symbolic reduction",
+  "checker_sha256": "6eda502ec0b8324d6033af750ae4ab59bcae4ddee3f42f4035947ab4af9d60b8",
+  "checks": [
+    "original canonical birth vector is normalized",
+    "original Golden G is orthogonal over its exact field",
+    "I2 identity is exact on all eight columns",
+    "chronological I5 identity is exact on all eight columns",
+    "minus macro has exactly six actual native calls",
+    "minus macro uses no inverse, reset, measurement or new primitive",
+    "zero macro has exactly six actual native calls",
+    "zero macro uses no inverse, reset, measurement or new primitive",
+    "plus macro has exactly six actual native calls",
+    "plus macro uses no inverse, reset, measurement or new primitive",
+    "minus endpoint is identity on every column",
+    "zero endpoint is original G on retention and identity on helpers",
+    "plus endpoint is G squared on retention and identity on helpers",
+    "minus initialized proper return equals 1",
+    "zero initialized proper return equals a",
+    "plus initialized proper return equals 2*a**2 - 1",
+    "literal original clock has N=9 stages and D=55 without padding fibres",
+    "last real CX is retained as closing gate, not a free closing identity",
+    "actual chronological prefix step 0 is an isometry on its true spaces",
+    "actual chronological prefix step 1 is an isometry on its true spaces",
+    "actual chronological prefix step 2 is an isometry on its true spaces",
+    "actual chronological prefix step 3 is an isometry on its true spaces",
+    "actual chronological prefix step 4 is an isometry on its true spaces",
+    "actual chronological prefix step 5 is an isometry on its true spaces",
+    "actual chronological prefix step 6 is an isometry on its true spaces",
+    "actual chronological prefix step 7 is an isometry on its true spaces",
+    "full original closure R retains every final birth complement",
+    "closure range is initial carrier plus complete birth-detail blocks",
+    "complete 55-dimensional original growing clock is unitary on all columns",
+    "original initial cut has no return at positive depth 1",
+    "original initial cut has no return at positive depth 2",
+    "original initial cut has no return at positive depth 3",
+    "original initial cut has no return at positive depth 4",
+    "original initial cut has no return at positive depth 5",
+    "original initial cut has no return at positive depth 6",
+    "original initial cut has no return at positive depth 7",
+    "original initial cut has no return at positive depth 8",
+    "first possible full original return at N=9 has its actual coefficient a",
+    "full original scene retains all 718 directed edges",
+    "all one hundred prepared quadratic pairs leave exactly two full-return cross terms",
+    "actual N=9 prepared response equals its exact diagonal plus full-return formula",
+    "the illustrative original coordinate-vertex scene cut has positive N-return moment",
+    "the original transpose G, not G, undoes the canonical born vector",
+    "actual retention corner has the exact minus-sine sign",
+    "actual unit retention derivative at the canonical G is minus p",
+    "retention corner and its derivative obey the unit-circle identity",
+    "full prepared target has its true positive field gain when old and scene signs are positive",
+    "normalized retention source is independent of all attenuation and old-overlap factors",
+    "field derivative factors through the genuine retention row for every scalar aggregation",
+    "true independent old preparation and corner source survives normalization",
+    "all other retention factors keep their actual normalized row",
+    "one zero retention factor leaves its own nonzero derivative when the others survive",
+    "two zero retention factors screen every rotor derivative and the field product",
+    "full row-sum norm controls the sum of squares in the attenuation bound",
+    "compiled finite-source margin retains the central normalization correction",
+    "certified price-reading error leaves a strict half-margin",
+    "positive-root monotonicity gives the used bound a less than four fifths",
+    "one minus the full comparison baseline equals a strictly positive square"
+  ],
+  "clock": {
+    "D": 55,
+    "N": 9,
+    "initial_compressed_moments": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "a"
+    ],
+    "stage_widths": [
+      1,
+      2,
+      4,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "word": "birth;birth;birth;G0;CX01;CX12;CX01;CX12;CX02"
+  },
+  "input_head": "567e3806c58861eeebadf57ae34e8c4b2142141a",
+  "macros": {
+    "minus": [
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ]
+    ],
+    "plus": [
+      [
+        "G",
+        0
+      ],
+      [
+        "G",
+        0
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        0,
+        1
+      ]
+    ],
+    "zero": [
+      [
+        "G",
+        0
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        1,
+        2
+      ],
+      [
+        "CX",
+        0,
+        1
+      ],
+      [
+        "CX",
+        1,
+        2
+      ],
+      [
+        "CX",
+        0,
+        2
+      ]
+    ]
+  },
+  "not_claimed": [
+    "full XF compiled",
+    "unchanged bare-one-G clock price",
+    "equal G/CX inventory or physical native tariffs",
+    "a continuous primitive is admitted",
+    "full Cost-Info or GR closure"
+  ],
+  "number_of_checks": 58,
+  "same_layout": {
+    "cold_scalars": [
+      "1",
+      "a",
+      "p^3"
+    ],
+    "endpoints": [
+      "I",
+      "G",
+      "G^2"
+    ],
+    "native_calls_each": 6,
+    "wire_count": 3
+  },
+  "status": "PASS"
+}

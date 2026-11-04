@@ -1,0 +1,90 @@
+{
+  "GR_closed": false,
+  "base": "567e3806c58861eeebadf57ae34e8c4b2142141a",
+  "changed_blobs": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": {
+      "base_blob": "c6996ca35921cf852c9b0de6d35af048ccbdced6",
+      "base_sha256": "be4bddb7e5ad96251d623a3cc00443d731164487251ca1d78511b85c3cc16b0c",
+      "head_blob": "960925b93dbdfb83a0fb4d63b03f25106bf0f877",
+      "head_sha256": "afd25564dce6401901cca68a9299ea52ff043c7372a6ae27e5d8f135906aa687",
+      "snapshot": "snapshots/task.xz"
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "base_blob": "dcd90e410d9ef75f75f1c5fd0ddc980aef80c546",
+      "base_sha256": "14bb2c078a66ccee53407d84312c725311acca7079b061b5f0125a1884fa794e",
+      "head_blob": "66d18a1fea068695e8007d2dd0dc032d5d35a308",
+      "head_sha256": "4d79522dd72b76d4eba72f15701f4e922466f7ab3454a346db5ff869117d57c5",
+      "snapshot": "snapshots/memo.xz"
+    }
+  },
+  "checker_sha256": "6eda502ec0b8324d6033af750ae4ab59bcae4ddee3f42f4035947ab4af9d60b8",
+  "head": "201ee52c792b7c1f3819224358c3d289756172c0",
+  "head_parent": "567e3806c58861eeebadf57ae34e8c4b2142141a",
+  "owner_expected_stdout_sha256": "bc2c30acd1250940b45555d69b13b09f819dc1b20a0d75afa7d92c3fa3d8f0e6",
+  "owner_inputs": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": {
+      "blob": "c6996ca35921cf852c9b0de6d35af048ccbdced6",
+      "sha256": "be4bddb7e5ad96251d623a3cc00443d731164487251ca1d78511b85c3cc16b0c"
+    },
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "blob": "dcd90e410d9ef75f75f1c5fd0ddc980aef80c546",
+      "sha256": "14bb2c078a66ccee53407d84312c725311acca7079b061b5f0125a1884fa794e"
+    },
+    "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md": {
+      "blob": "de8341a8b33d53bd4b26e044a1560c47c51e2745",
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014"
+    },
+    "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md": {
+      "blob": "038061d0ae52323bd655dc07943b5b175536f61f",
+      "sha256": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01"
+    },
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": {
+      "blob": "f0f74d206dbf79913f9aa95f0e53177de6d12ab5",
+      "sha256": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469"
+    },
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": {
+      "blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": {
+      "blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea"
+    },
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md": {
+      "blob": "1e186511782f52cdf0b6bee8c01a93beb5d5cb37",
+      "sha256": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": {
+      "blob": "64ba098e77d71dfc14be632e9b50add50e3eac8a",
+      "sha256": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md": {
+      "blob": "58ab58d03e5b983182b1d5ea2548698a25e39fb5",
+      "sha256": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": {
+      "blob": "370e8fb572e85fedeebe2e72531c01d5b68b0a91",
+      "sha256": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md": {
+      "blob": "65f4bdf04fac4640bc83f272c56ba938fa73d9a0",
+      "sha256": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": {
+      "blob": "4c01fc5bf00971c866dbc22233b64ce7b3077c33",
+      "sha256": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": {
+      "blob": "37d85ba5d6fef9f7cbc9f2893f86c2c2898691f1",
+      "sha256": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+    }
+  },
+  "owner_receipt_sha256": "72447454bb36956b7843903d50f07bcbb388d0a274f449853e7858a53eaa2862",
+  "patch_sha256": "bef7fc0a74925f2222a6a451961d5ea2695ccc218fe732a070c29a420c4fe554",
+  "scientific_promotion": false,
+  "scope": "pinned owner input; no scientific acceptance"
+}

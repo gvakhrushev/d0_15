@@ -1,0 +1,59 @@
+{
+  "GR_closed": false,
+  "checker_sha256": "6eda502ec0b8324d6033af750ae4ab59bcae4ddee3f42f4035947ab4af9d60b8",
+  "exit_codes": [
+    0,
+    0
+  ],
+  "input_head": "567e3806c58861eeebadf57ae34e8c4b2142141a",
+  "new_exact_checks": 58,
+  "normal_and_optimized_byte_identical": true,
+  "normal_optimized_receipt_sha256": "bc2c30acd1250940b45555d69b13b09f819dc1b20a0d75afa7d92c3fa3d8f0e6",
+  "not_claimed": [
+    "full Cost-Info or absolute prepared half-log selected",
+    "all future valuations or all stationary sections excluded",
+    "free CT row silently guarded by a changed task",
+    "equal complete price from equal native call counts",
+    "full XF field history emitted by the small fixture",
+    "new exact joint native roots",
+    "new PDE or Lean proof",
+    "independent positive assembly acceptance"
+  ],
+  "owner_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "be4bddb7e5ad96251d623a3cc00443d731164487251ca1d78511b85c3cc16b0c",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "14bb2c078a66ccee53407d84312c725311acca7079b061b5f0125a1884fa794e",
+    "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014",
+    "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+  },
+  "run_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scientific_promotion": false,
+  "scope": "Actual original-input return, native independent retention source, scalar factorization and stationary-section attenuation boundary",
+  "scratch_proof_sha256": {
+    "admission-final.md": "ac30d24e99569e541ec66a77ec68912128c4e52039fb961cf55dec2eea5d667d",
+    "admission.md": "3e83373fe99677bb8e9c64c66b6b9d590987a9a03c1efad5adc738f125acf4fe",
+    "brief.md": "9d12ecff2e69b22eead9f71e49466890f396635dd32e1e8420e84315c4d5ddac",
+    "price-final.md": "8d2c0978f46f8c33a4d251c992f35bb243061d553c5d3b17a70cc51d79d2b3f3",
+    "price.md": "0715372033431935756fe948bf84f17caf11b28189980a1f65cf8939d496d403",
+    "proof.md": "20dacfa211bf538e80e36496579d403d7253cc73293d722900674bde2ff68eba",
+    "source-final.md": "4b323222ecc9ffd43edca954bb542be269c7b94c7d34c2923bd1b6498d05bb5e",
+    "source.md": "fc8ab49162a1664613aeca5b7fcf75927e05558525a9022df837b2ca9356c7be"
+  }
+}
