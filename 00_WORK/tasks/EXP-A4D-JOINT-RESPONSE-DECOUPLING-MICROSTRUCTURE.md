@@ -21854,3 +21854,79 @@ binding and the remaining physical task admission are still open.
 No Gibbs/Poisson sampler, new Info or extra action has been inserted.
 `GR_closed=false`, `scientific_promotion=false`; the original goal remains
 active under the unchanged A--D contract.
+
+## 2026-11-05 checkpoint: one paid terminal pointer and its complete joint source
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `3fdd6ec652d70af9cd9000c6431e94df6d3a1136`.
+Result location: §7fl of the existing full-source primary artifact.
+Write paths remain that artifact and this brief; no new task, branch,
+Ready/retirement, merge, accepted claim or scientific promotion.
+
+Parent substitution: XF3's missing paid terminal-reader map is now an
+explicit next segment on the same retained history: one canonical
+pointer birth before the last spectator and ONE literal CX(f,r) as
+the true final gate. The pointer stays exactly untouched throughout
+the preceding actual body. Every old/current bank, helper, flag and
+failure column remains; no inverse, blank reset or physical pinching
+is inserted. The mathematical XF target still uses its owned native
+compiler and complete source error, not an asserted exact finite word.
+
+The full trace source survives this paid reader exactly. Recompute the
+actual clock, dimension, proper-cut cold return and positive master
+gain: d_final/d_old=2^(q+3) and Gamma_B=16 d_old g_h L a_L/(beta Z_act).
+The original all425D Hodge modes, generated cut, feedback rank and
+final CX remain. The §7fk open retention and real old-control bounds
+apply with that changed layout; choose K after compilation/layout.
+
+The actual reader channel is q_r=p^2+p^3 Pr_actual(f=1). At the target
+it gives q_r=(1+p^6)/2-p^6 Q. This is a noisy nonzero-gain reading,
+not a copied classical bit. For a specified pointer CQ algebra the
+COMPLETE conditional current outputs are pure; arbitrary mixed old
+memory is kept and its entropy cancels exactly. With the separately
+supplied original terminal charges 1+j, the component price is
+f(q_r)=1+q_r-h(q_r)/ln(phi), with positive actual gain
+gamma_r=p^6 f'(q_r)g_h and controlled all-column compiler error.
+
+After their respective complete-operation reactions, its oriented
+field-plus-old-nuisance source and the full master source have the
+same normalized kappa-Einstein--two-CAR limit and reverse recovery.
+This is a comparison of normalized equation classes on the declared
+graph. It neither equates their prices nor adds this price to H+J.
+
+Every independent current control keeps its real row. The final
+pointer rotor has partial_theta q_r=2ap; the upstream flag row is
+2ap p^3 only at the target. Free current preparation with its generated
+reference moving has norm 2p^6 f'(q_r)sqrt(Q(1-Q)). Solving a truly
+free pointer row for this binary component alone reaches its zero
+minimum and screens it. The actual task reaction or other full-price
+rows must resolve that control; neither is supplied by declaring it
+vertical. Old-input cancellation does not remove current equations.
+
+Previously committed current fine records add their explicit mutual-
+information/conditional-entropy source. Required earlier coherent
+effects need their true suffix transport. The original fine output
+projectors pass; X_f transports to X_f X_r and does not. The generated
+cut distinguishes coherent and pinched states by 2q_r(1-q_r), but that
+value gap alone is not a full-master source difference, and a price
+operand is not automatically a registered future observation.
+
+The original Book amplitude law imposes the explicit two-branch Info
+gap and nonconstant normalization debt PRD23--24. The single CX does
+not emit the variable-length 0/10 code or determine STOP, primitive
+work, prefix valuation or the complete retained-test algebra. These
+are the remaining weighted-law/admission applications; no Info value,
+sampler, action or controller has been assigned to satisfy them.
+
+Decisive validation: 34 exact Golden target/cut checks and 25 exact
+generic-projector reader/transport checks, with noncommuting input and
+field projectors and hostile perfect-copy/retained-reader controls.
+Normal and optimized warnings-as-errors receipts are byte-identical
+for each checker. Scripts, hashes, final proof and three bounded
+review pins are embedded; affected integration guards run once.
+There is no new dense heat, root, geometry or Lean replay.
+
+The paid readout/source transport is removed as a missing map on this
+family. Complete native Cost-Info binding and physical admission of
+its full task/test algebra remain open. `GR_closed=false`,
+`scientific_promotion=false`; the original goal and A--D stay active.

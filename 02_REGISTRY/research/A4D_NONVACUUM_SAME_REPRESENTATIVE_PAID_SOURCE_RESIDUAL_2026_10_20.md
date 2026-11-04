@@ -141589,6 +141589,788 @@ print(json.dumps(result,sort_keys=True,ensure_ascii=False,indent=2))
 }
 ```
 
+## 7fl. One paid pointer on the full master history: retained-record source and the exact valuation boundary
+
+5 November 2026. Existing #334, native realization / final composition.
+Input `3fdd6ec652d70af9cd9000c6431e94df6d3a1136`. Consumer: scoped
+contract C and XF3's missing paid terminal-reader transport. This proves
+a concrete operation/source map on an enlarged next segment of the SAME
+retained history. It does not equate its terminal CQ component with the
+entire native Cost-Info price or close A--D.
+
+Owned inputs: primary §7fe.A,E (actual coherent continuation and the distinction among record algebras), XF1–XF9 (the complete reversible comparison, original READY gain and actual clock), §7fk (open shared-helper retention), and the original efficient CQ convention in `A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md`, §3. The new result is a PAID final native pointer with its complete joint output price, not another computation of the reduced flag marginal entropy.
+
+### 7fl.A. A literal one-CX read operation on one enlarged actual history
+
+Let B be the original q-bit fresh XF bank, including every actual current compiler/helper and realification factor. Its canonical input is b. Keep the same full target
+
+    F(Y)=C_E(Y) C_(P_b),
+    C_E=E tensor I_f+(I-E) tensor X_f,
+    Q=<b,Eb>,  E=D* Pi_final,1 D, P_b=|b><b|.
+
+Birth one extra pointer r canonically, BEFORE the existing last spectator t. Keep r literally untouched during the native implementation of F on B,f,t. Then append the ONE actual native gate
+
+    R0=CX(f,r)
+
+as the last real stage. The smooth full endpoint is
+
+    V_read=[(I_B tensor R0)(F tensor I_r)] tensor I_t.   (PRD1)
+
+All columns and both flag sectors remain. No inverse, blank preparation, phase character, conditional success or physical dephasing is executed. The actual body before R0 is compiled on its original live arena with identity on r, by relabelling the permitted wires; therefore this identity on r is exact at the native-word level. Every helper birth and every compiled primitive remains paid. Tensoring the final spectator makes the full real target special orthogonal, so the owned positive G/CX compiler applies. R0 itself has no approximation error.
+
+The new pointer birth and final gate change the actual layout. Recompute its D, last-detail age L, full Z and gain; do not reuse the former clock or multiply its gain by a guessed constant. This is an enlarged next segment constructed with the original retained prefix, not an insertion into an already executed past.
+
+### 7fl.B. Exact full trace and original proper-cut return
+
+Write `P_+=(I+X)/2`, `P_-=(I-X)/2` for a mathematical calculation only. The entire XF matrix is
+
+    F=I_B tensor P_+ + W R_b tensor P_-,
+    W=I-2E,  R_b=I-2P_b.
+
+The literal reader has `Tr_r R0=2 Pi_(f,0)`, while both characters have diagonal entry 1/2. Hence on ALL columns
+
+    Tr_((B,f,r))[(I_B tensor R0)(F tensor I_r)]=Tr_(B,f)F,
+    D Tr(P_last V_read)=4 d_old DQ.                   (PRD2)
+
+This remains an exact trace multiplier identity for the owned unitary extension `F(W)=I tensor P_+ + W R_b tensor P_-`. At a reflection centre its independent W tangents inherit the already owned real-first-source identity; no arbitrary non-reflection family is silently treated as a projection family.
+
+The full actual master now has
+
+    d_final/d_old=2^(q+3),
+    Gamma_B,act=16 d_old g_h L a_L/(beta Z_act)>0,
+    g_h=a_n epsilon_h r_f.                            (PRD3)
+
+The factor in the numerator is unchanged, but L,a_L,Z,D are those of the NEW paid clock. The SR/XF higher-age field-source bound becomes
+
+    2^(q+3) exp(x) x A_h/(4 g_h L), x=beta/22,          (PRD4)
+
+with the complete endpoint derivative norm A_h and all genuine material/right-lift constants. R0 is fixed and unitary, so the derivative norm of its left multiplication is one. All marked compiler errors and the actual/target Z ratio remain. The literal R0 is the true final gate; no closing identity is inserted.
+
+For the initialized current input, with `a=sqrt(p)` and `s=2ap`, the actual born cold corner is
+
+    c_read(Q)=ap+2p^3+p^4(1-a)Q
+      =ap+2p^3+[p+2ap^3-ap-2p^3]Q.                   (PRD5)
+
+The endpoints are the genuine overlaps `ap+2p^3` and `p+2ap^3`, not an assigned coefficient. Its absolute value is at most one by unitarity. The full original cut remains `C=c_ret c_read C_<` at the target, or its actual compiled contraction; its original rank is unchanged. The open three-bit shared-helper retention theorem §7fk therefore still applies, with the new actual layout and gain (PRD3). Choose K after this layout. No old row is frozen, and no old initial state is re-prepared.
+
+### 7fl.C. The complete joint output, not a marginal entropy
+
+The old memory Omega_< may be arbitrary, mixed and internally correlated; it includes all earlier retained records, protected reference and retention helpers. The current arena is freshly born pure, independent of it, and every current body letter is identity on that old factor. At the target define bank vectors
+
+    u0=a E b+p(I-E)b,
+    u1=p E b+a(I-E)b.
+
+After the literal reader the full fresh state is
+
+    zeta0 tensor |0>_r + zeta1 tensor |1>_r,
+    zeta0=a u0 tensor |0>_f+p u1 tensor |1>_f,
+    zeta1=p u0 tensor |0>_f+a u1 tensor |1>_f,           (PRD6)
+
+with the spectator and all other bank/helper factors retained. The computational pointer law is
+
+    q:=Pr(r=1)=p^2+p^3 Pr(f=1)
+      =p^2+p^4-p^6 Q=(1+p^6)/2-p^6 Q.                (PRD7)
+
+The FIRST equality is exact for ANY actual preceding native state, since the pointer was untouched and born in v. Only the second equality uses the exact XF target. This is a known noisy reading, not a perfect copy: its noise channel has the nonzero gain p^3, and its composed Q gain is p^6.
+
+For a supplied computational pointer CQ output, the COMPLETE final state is
+
+    Gamma_out=direct_sum_(j=0,1)
+           Omega_< tensor |zeta_j><zeta_j|,
+
+including the spectator and every quantum output. Each normalized conditional current state is pure, so
+
+    S(Gamma_out)=S(Omega_<)+h2(q),
+    S(input)=S(Omega_<),
+    I_CQ=S(Gamma_out)-S(input)=h2(q).                  (PRD8)
+
+This holds for every actual compiled word too, with its ACTUAL q: the current input is pure, its execution is unitary/isometric, and conditioning on one rank-one pointer outcome leaves a pure state on the entire remaining current arena. No helper dimension enters this identity. Old quantum entropy cancels exactly, even when that entropy or old preparation changes. It is not necessary to differentiate the entropy of a singular old state to prove that cancellation.
+
+The physical coherent state is retained. Before any chosen restriction of the observable algebra, it has entropy S(Omega_<), and the pointer has the NONZERO off-diagonal entry `ap`. Thus CX alone has not executed a measurement or pinching. PRD8 is the state on the specified pointer-diagonal CQ algebra, equivalently its canonical block representation. Admission/selection of that final record algebra and its compatibility with required future tests must be supplied; they are not inferred from its entropy formula.
+
+### 7fl.D. Complete terminal CQ price, source and genuine preparation rows
+
+If BOTH pointer values are terminal report letters with the original fixed charges `c_j=1+j`, their full quantum-CQ price is
+
+    P_r=1+q-h2(q)/ell=f(q), ell=ln(phi),
+    f'(q)=1+ln(q/(1-q))/ell,
+    DP_r=-p^6 f'(q) DQ                               (PRD9)
+
+on the target. DQ is the complete preparation-and-effect derivative, not only a field derivative. At the actual word `DP_r=f'(q_act) Dq_act` wherever the chosen matrix differential applies; finite words use their actual finite comparisons.
+
+Since `p^6<(2/5)^3=8/125`, the target q lies in `[117/250,133/250]` for every `0<=Q<=1`. In particular it lies strictly inside `[9/20,11/20]`, where
+
+    1/2<f'(q)<3/2,  0<f''(q)<5/ell.                  (PRD10)
+
+For the first inequality use `phi>8/5>(11/9)^2`; no floating sign test is needed. If Q<=1/2, the stronger lower bound f'(q)>=1 holds. Thus
+
+    gamma_r,act=p^6 f'(q_act) g_h>0,
+    -DP_r/gamma_r -> DI_h.                           (PRD11)
+
+The limit PRD11 is on the declared field lift / guarded field-plus-old-nuisance graph. It is not a zero-source assertion on independent current preparation or readout controls.
+
+The old normalized input, sealed retention, reference and helper-preparation rows are exactly zero for this component on the old-spectator graph: the output probabilities are independent of Omega_< and its entropy cancels in PRD8. Current faithful complete-operation implementations also have identical P_r, with their own actual constraint reaction `-D_E P_r`. That reaction need not equal the master's reaction `-D_E B`.
+
+Independently free current preparation, flag/pointer input, readout or calibration controls retain their actual rows. More generally, for any genuinely different mixed/correlated complete input Omega and efficient binary instrument, define
+
+    chi=S(Omega)-sum_j q_j S(Omega_j).
+
+Then the exact price is `f(q)+chi/ell`, and its source retains `Dchi/ell`, all input/effect derivatives and `sum_j q_j Dc_j` if tariffs vary. For a jointly pure current-plus-reference input the full conditional states are still pure; for an arbitrary mixed correlated active input chi need not vanish. One cannot discard it by tracing away or renaming that reference.
+
+This is the complete terminal CQ component on the specified execution. It is not yet the full native Cost-Info price unless the genuine primitive/work/continuation ledger and the terminal `1+j` coding law have been bound. In particular, if one label is STOP and the other continues, its future tree and cost are additional operands; PRD9 is not the price of that stopping process.
+
+### 7fl.E. Previously committed fine records: the exact correction
+
+An old archive independent of the current born arena causes no correction: it is already inside Omega_<. A CURRENT fine record alpha physically committed before the pointer may instead be correlated with it. For the complete retained conditional experiment,
+
+    I_gain=H(r|alpha)-sum_alpha p_alpha chi_alpha,
+    P_increment=f(q)
+           +[I(alpha:r)+sum_alpha p_alpha chi_alpha]/ell. (PRD12)
+
+Thus the full source has the additional derivatives of those actual terms. If the current fine alpha resolves the predicate E and its efficient conditional current states are pure, `chi_alpha=0`. The two conditional pointer probabilities are `r_*=(1+p^6)/2` and `1-r_*`, so
+
+    H(r|alpha)=h2(r_*),
+    I(alpha:r)=h2(q)-h2(r_*),
+    P_increment=f(r_*)-p^6 Q,
+    DP_increment=-p^6 DQ.                            (PRD13)
+
+This is still a nonscreened terminal increment, but its coefficient and value differ from PRD9. The earlier alpha record's OWN price and source remain in the total action. RAW marked prefixes and required mathematical readout effects are not automatically such physical dephasings. The actual record history determines which case applies.
+
+### 7fl.F. Actual error, source normalization and the common equation class
+
+Let delta bound the COMPLETE all-column error of the current XF body on its original active arena. The final native CX contributes no error. The current joint output trace distance gives a flag probability error at most delta; the exact noisy channel in PRD7 improves this to
+
+    |q_act-q_tar|<=p^3 delta.                         (PRD14)
+
+The weaker delta bound suffices. For delta<=1/100 the actual q remains in `[9/20,11/20]`, and hence
+
+    |P_act-P_tar|<=(3/2)delta,
+    gamma_r,act>=p^6 g_h/2,
+    |gamma_r,tar/gamma_r,act-1|<=10delta/ell.          (PRD15)
+
+For central same-layout field comparisons at nonzero step t, the compiler contribution to the oriented normalized source is at most
+
+    3delta/[p^6 g_h |t|].                             (PRD16)
+
+Retain the target C1/Taylor remainder, probability/price reading errors and actual physical/material basis and right-lift constants. At fixed h choose delta=exp(-r), |t|=exp(-r/2), then refine h only after these constants are known. No derivative of a discrete compiler index is used, and no uniform-in-mesh constant is asserted.
+
+On this SAME new actual history, XF with PRD2–4 and §7fk controls the full master reduced source, while PRD8–16 controls the terminal CQ reduced source. Therefore, in their common declared field-plus-old-nuisance norm and after their respective exact FN reactions,
+
+    || -E_r,red/gamma_r,act
+                         -E_B,red/Gamma_B,act || ->0. (PRD17)
+
+Both calibrations are their actual positive central values. This compares equation classes with the explicit negative orientation of the CQ source. It does not equate prices, add P_r to B, or transfer one price's raw normal reaction to the other. Unbounded gain ratios are not hidden: each side's errors are divided by its own actual gain before taking the difference. Current target-changing free controls beyond the guarded comparison retain their real equations and cannot be removed by PRD17.
+
+All original bank-only fine report projectors commute with the final reader and remain readable. A general earlier coherent observable instead requires its exact suffix transport `O -> R0(O tensor I_r)R0`; that reader can contain off-diagonal pointer operators. A task that seals r to a diagonal-only future algebra cannot silently claim coverage of such incompatible tests. Keep the underlying coherent state and the entire reader map, and make any restricted valuation/test domain explicit. This is a remaining task/record-algebra premise, not an erasure justified by the CQ source.
+
+### 7fl.G. The retained-test algebra is checked, not inferred from a sealed address
+
+The actual coherent endpoint, all its bank/flag/pointer columns and the
+whole proper-cut price are kept throughout. A restriction to the pointer
+CQ algebra is a separate operation on its DESCRIPTION. Book06's
+maximum-entropy rule selects a representative only after the retained
+tests and loss quotient are supplied.
+
+If every subsequent primitive is identity on r and all new observations
+are computational r projectors with the declared live-bank effects,
+all their pulled-back effects are block diagonal in r. This follows
+by composing I_r tensor V, including later canonical births. On a real
+bank the owned SO compiler gives real rank-one test coverage; it does
+not give unrestricted complex tomography without the realification map.
+Keep the actual unchanged old reference algebra separately.
+
+If those are the COMPLETE retained tests, their specified diagonal
+blocks have the unique maximum-entropy representative Delta_r(rho):
+
+    S(Delta_r rho)-S(rho)=D(rho || Delta_r rho)>=0.       (PRD18)
+
+No physical dephasing has been executed by the single CX. In particular,
+`report_bits` in the finite grammar is metadata, not an added measurement
+or an exhaustive definition of future observations.
+
+Required earlier marks need their true suffix transport. For an earlier
+effect A on bank+f, the exact reader after the paid copy is
+
+    R0(A tensor I_r)R0
+      =sum_ij Pi_f,i A Pi_f,j tensor X_r^(i xor j).      (PRD19)
+
+It is diagonal in r exactly when [A,Z_f]=0. The original fine OUTPUT
+projectors commute and pass. A general old bank mark A transported
+through C_E has the off-diagonal-f term
+
+    [E A(I-E)+(I-E)A E] tensor X_f;
+
+it passes precisely when [A,E]=0. An actual prior classical log is
+instead retained as that log, with the conditioning correction PRD12;
+it is not conflated with an arbitrary future quantum reader. The
+counterexample X_f -> X_f X_r shows why a fresh pointer birth alone
+cannot establish compatibility of every earlier required effect.
+
+There is an explicit diagnostic using the ORIGINAL generated cut.
+GROWING P_f is the cut BEFORE the last real gate g=R0. Its transported
+output predicate is P_out=g P_f g*. On the current pure factor this is
+|Psi_read><Psi_read|, with the earlier support retained. Its acceptance
+in the actual coherent state is one, whereas pointer pinching gives
+
+    Tr[P_out Delta_r(rho)]=q^2+(1-q)^2,
+    loss=2q(1-q)>=99/200  when q in [9/20,11/20].       (PRD20)
+
+Thus pinching is not a cut-expectation-preserving replacement of the
+actual full history. The value gap alone does not compute a full H+J
+first-source difference. The generated cut is a mandatory PRICE operand, but RAW R6
+lists {A_j,P_j} separately from actually registered {O_nu,t_nu}; GH5
+likewise does not register every projector in a coherent computation.
+Consequently PRD20 is a decisive incompatibility IF preserving this
+proper-cut expectation is required of a proposed quotient. It is not a
+proof that a diagonal-only future profile already admits the necessary
+cut test after sealing. Any physically executed inverse/reader needs
+its own allowed calls and clock. The original coherent master and its
+proper cut have not been changed.
+
+### 7fl.H. Actual independent current controls and the absolute Book price test
+
+The source comparison PRD17 uses the stated full-operation task reactions.
+It does not set a free current apparatus derivative to zero. The actual
+paid-reader branches satisfy <zeta0,zeta1>=ap. A real unit-speed rotor
+on the final pointer therefore gives
+
+    partial_theta q|0=2ap,
+    partial_theta f(q)|0=2ap f'(q)>0.                    (PRD21)
+
+This is a smooth finite-matrix companion with the existing local native
+finite-comparison compiler, not a continuously adjustable primitive.
+At the XF target a rotor on f immediately BEFORE the CX instead has
+partial_theta q=2ap p^3. For a general actual compiled prefix this row
+is 2p^3 Re<u0_actual,u1_actual>; its genuine target error remains. If b is an independently variable normalized
+current preparation at fixed E WITH its generated reference P_b=|b><b|
+updated along it, its sphere-dual row is
+
+    ||D_b f(q)||=2p^6 f'(q) sqrt(Q(1-Q))                 (PRD22)
+
+for 0<Q<1. These are real nonzero rows, even at a field source zero.
+They are distinct from the exactly neutral protected old-input rows.
+A separately fixed or independently varied reference uses its full
+actual response derivative, not PRD22 by assumption.
+
+If a task truly admits the final pointer rotor, its accessible Bloch
+interval contains p^2: the off-diagonal component is 2ap and
+(2ap)^2>p^6=(1-2p^2)^2. The binary code component f(q) has its unique
+minimum f(p^2)=0. At a crossing its rotor Hessian is
+(q'(theta_*))^2/(ell p^3)>0. Thus solving THAT free row with no other
+price reaction screens the binary field component. This does not
+assert that the complete master or whole Cost-Info price has that
+reduction: their genuine work/reactions remain. Under the stated
+complete recorded task the rotor changes the required response and
+needs the actual constraint reaction. It cannot be silently called
+both a free control and a faithful vertical.
+
+The complete branch valuation is also a testable operand. A single CX
+does not emit the original variable-length direct0/return10 code. The
+conditional charges 1+j in PRD9 must come from an actual encoder or a
+proved existing code transport, including its STOP/continuation rule.
+Fixed gate counts do not identify canonical description costs or the
+whole work ledger.
+
+For clarity apply BOOK_SOURCE_BINDING's already owned absolute-amplitude
+theorem to the TWO normalized conditional pointer vectors at this same
+complete prefix. Their branch isometries are I_old tensor nu_j, so an
+arbitrary mixed Omega_< remains allowed without a newly supplied
+purification. If the supplied terminal charges are c_j=1+j, the
+Book amplitudes phi^(-c_j+I_j) reproduce their full normalized coherent
+state only if, for a common real normalization J_r,
+
+    I_j=c_j+ln(q_j)/(2ell)+J_r,
+    I_1-I_0=1+ln(q/(1-q))/(2ell).                        (PRD23)
+
+The common prefix amplitude and its physical cost remain outside this
+conditional identity. On Q<1/2 the last gap is strictly greater than
+one. Pointwise surprisal has the opposite-sign gap; equal information
+assigned to both outcomes has gap zero. Neither is the required
+amplitude binding.
+
+If one ADDITIONALLY assumes the current conditional mean information
+sum_j q_j I_j=h2(q)/ell, then the existing uniqueness theorem gives
+
+    J_r=3h2(q)/(2ell)-(1+q),
+    -ln||Q_Book,r||^2/(2ell)=1+q-3h2(q)/(2ell),
+    d[-ln||Q_Book,r||^2/(2ell)]
+             =d f(q)-d h2(q)/(2ell),
+    d h2(q)/(2ell)=p^6 ln(q/(1-q)) DQ/(2ell).           (PRD24)
+
+No extra choice remains in this conditional calculation, but the
+additional assumption has NOT been derived from the original vertex
+law. Its nonconstant normalization/source debt cannot be set to zero
+by matching the Born probabilities. A scalar-probability binding or an
+extra marker on an already executed Kraus amplitude has the different
+coefficients of the owned theorem. They are not the same typed price.
+
+### 7fl.I. Exact parent substitution and what remains to close
+
+The new paid operation removes XF3's missing terminal readout map on
+this declared full-history family. It has one genuine extra birth and
+one original CX, an exact positive response gain, the true changed cold
+return, all new Hodge/clock modes and the same full Einstein--two-CAR
+source after the owned normalization and error budgets. Reverse recovery
+uses that same enlarged execution and the already proved field/source
+maps; no replacement geometry or finite root is used.
+
+The complete JOINT terminal CQ calculation now has an actual operand,
+all conditional quantum outputs, its exact old-input cancellation and
+its field/current-control source. It is usable by a complete-price
+consumer; it does not by itself supply the remaining prefix/work bill,
+actual 0/10 encoder/stopper, selected retained-test algebra or original
+Book vertex aggregation. Equations PRD12, PRD19--20 and PRD23--24 give
+specific tests for those remaining applications. A freely chosen Info,
+unpaid sampler, external controller or addition of this component to
+H+J would not discharge them.
+
+No claim that all earlier marks fail the pointer quotient is made, and
+no claim that they all pass is made. Their finite inherited list must
+be checked if that quotient is used. The full coherent master result
+needs no such pinching. `GR_closed=false`, `scientific_promotion=false`;
+the original active goal and A--D requirements remain unchanged.
+
+
+### 7fl.J. Bounded exact validation and portable reproduction
+
+The two independent standalone scripts below check the declared reader
+and the complete smooth XF target. The final reader itself is ONE
+literal native CX. They do not assert that the generic smooth target
+is one exact finite positive G/CX word; its actual finite compilation
+and full-source errors are the analytic ones retained above.
+
+The first script has 34 exact Golden-field conditions, including the
+full sixteen-column spectator embedding, actual born cold return,
+nonzero field derivative and the transported generated-cut diagnostic.
+The second has 25 exact conditions over a generic rational projector
+which does not commute with the born input projector. It checks the
+full trace/source, joint conditional report law and an incompatible
+inherited reader. The noisy-pointer and off-diagonal-reader controls
+prevent accidental perfect-copy or unrestricted-CQ interpretations.
+
+Every condition remains active under Python optimization. The checks
+use exact symbolic arithmetic, not numerical tolerances. They contain
+no full-clock heat diagonalization or numerical certification of a
+large GR word. New-clock normalization and all Hodge-mode accounting
+are analytic consequences of the original full-clock map in §B, with
+its actual constants and §7fk old-control estimates.
+
+Save the two fenced scripts under their displayed filenames. In the
+Python 3.12.14 / SymPy 1.14.0 environment the executed replay modes were:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -Werror source_check.py > source_check_normal.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -O -Werror source_check.py > source_check_optimized.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -Werror check_reader_algebra.py > READER.normal.json
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -O -Werror check_reader_algebra.py > READER.optimized.json
+```
+
+Both modes exited successfully and produced identical bytes for each
+checker. The complete result objects, script/result hashes and final
+proof review pins follow. The three reviews accepted the preceding
+proof through §I at its declared scope: source/gain and errors, complete
+price/preparation rows, and native reader/test-algebra typing. They do
+not select the full price or constitute a scientific promotion.
+Affected repository integration guards are run on the final insertion.
+
+#### 7fl.J1. Standalone `source_check.py`
+
+```python
+"""Exact Golden-field target algebra for the literal final CX reader.
+
+The final reader is one actual native CX. F is the owned smooth XF target;
+the check does not assert that every F has an exact finite positive word.
+All predicates remain active with python -O.
+"""
+import json
+import sympy as s
+
+a = s.Symbol('a', real=True)
+p = a*a
+minimal = s.Poly(a**4+a*a-1, a, domain=s.QQ)
+checks = []
+
+def red(x):
+    return s.rem(s.Poly(s.expand(x), a, domain=s.QQ), minimal).as_expr()
+
+def matred(m):
+    return m.applyfunc(red)
+
+def zero(x, label):
+    good = all(red(t) == 0 for t in x) if isinstance(x, s.MatrixBase) else red(x) == 0
+    if not good:
+        raise RuntimeError(label)
+    checks.append(label)
+
+I = s.eye(2)
+X = s.Matrix([[0, 1], [1, 0]])
+P0 = s.diag(1, 0)
+P1 = s.diag(0, 1)
+G = s.Matrix([[a, -p], [p, a]])
+v = s.Matrix([a, p])
+Pb = matred(v*v.T)
+E = P1
+ce = s.kronecker_product(E, I)+s.kronecker_product(I-E, X)
+cp = s.kronecker_product(Pb, I)+s.kronecker_product(I-Pb, X)
+F = matred(ce*cp)
+CX = s.kronecker_product(P0, I)+s.kronecker_product(P1, X)
+reader = s.kronecker_product(I, CX)
+U = matred(reader*s.kronecker_product(F, I))
+V = s.kronecker_product(U, I)  # last spectator t, retained in full
+born = s.kronecker_product(v, v, v, v)
+out = matred(V*born)
+Q = red((v.T*E*v)[0])
+q = red(p*p+p**4-p**6*Q)
+flag_event = s.kronecker_product(I, P1, I, I)
+pointer_event = s.kronecker_product(I, I, P1, I)
+
+zero(G.T*G-I, 'Golden G is orthogonal on the actual field')
+zero((v.T*v)[0]-1, 'canonical birth is normalized')
+zero((v.T*G*v)[0]-a, 'actual Golden cold amplitude is a')
+zero(CX.T*CX-s.eye(4), 'literal final CX is all-column orthogonal')
+zero(F.T*F-s.eye(4), 'full XF target is orthogonal')
+zero(U.T*U-s.eye(8), 'complete read target is all-column orthogonal')
+zero(V.T*V-s.eye(16), 'last spectator and every target column retained')
+zero(red(F.det())-1, 'fixture XF determinant is plus one')
+zero(CX.det()+1, 'local two-bit CX determinant is minus one')
+zero(CX.det()**4-1, 'even bank and spectator multiplicity give SO target')
+zero((out.T*out)[0]-1, 'complete initialized output is normalized')
+
+partial_trace_reader = s.Matrix([[sum(CX[2*i+r, 2*j+r] for r in range(2))
+                                  for j in range(2)] for i in range(2)])
+zero(partial_trace_reader-2*P0, 'reader partial trace is exactly two P0')
+zero(s.trace(U)-s.trace(F), 'complete newest-detail trace unchanged by paid CX read')
+zero(s.trace(V)-2*s.trace(F), 'full spectator trace multiplicity retained')
+zero((out.T*flag_event*out)[0]-(p-p**3*Q), 'flag probability is unchanged by pointer read')
+zero((out.T*pointer_event*out)[0]-q, 'actual pointer law p2 plus p4 minus p6 Q')
+zero(q-((1+p**6)/2-p**6*Q), 'pointer law has symmetric interval about one half')
+zero(q-(p*p+p**3*(p-p**3*Q)), 'literal noisy-channel composition has gain p3')
+
+cold = red((born.T*out)[0])
+cold_formula = a*p+2*p**3+p**4*(1-a)*Q
+zero(cold-cold_formula, 'original born cold corner after the literal reader')
+zero(cold_formula-(a*p+2*p**3+(p+2*a*p**3-a*p-2*p**3)*Q),
+     'both stated cold formulas agree')
+
+# Original projection varies by a genuine real orthogonal conjugation.
+generator = s.Matrix([[0, -1], [1, 0]])
+dE = generator*E-E*generator
+dQ = red((v.T*dE*v)[0])
+dce = s.kronecker_product(dE, I-X)
+dF = matred(dce*cp)
+dU = matred(reader*s.kronecker_product(dF, I))
+dV = s.kronecker_product(dU, I)
+dout = matred(dV*born)
+zero(s.trace(dF)-4*dQ, 'XF full trace source is four DQ')
+zero(s.trace(dU)-4*dQ, 'paid reader retains the full trace source')
+zero(2*(out.T*pointer_event*dout)[0]+p**6*dQ,
+     'full pointer derivative is minus p6 DQ')
+zero((born.T*dout)[0]-p**4*(1-a)*dQ,
+     'full cold derivative retains its true coefficient')
+if dQ == 0:
+    raise RuntimeError('nonzero source fixture')
+checks.append('nonzero original-projection tangent in the same fixture')
+
+# Hostile controls: no perfect copy is alleged; omitted read and unretained
+# full state cannot be silently identified with the new pointer.
+if red(q-(p-p**3*Q)) == 0:
+    raise RuntimeError('noisy pointer differs from original flag')
+checks.append('negative control: pointer is noisy and differs from original flag')
+for bit, proj in enumerate((s.eye(16)-pointer_event, pointer_event)):
+    branch = matred(proj*out)
+    weight = red((branch.T*branch)[0])
+    zero(weight-(1-q if bit == 0 else q), f'full branch {bit} has correct weight')
+    rho = matred(branch*branch.T)
+    zero(rho*rho-weight*rho, f'full retained branch {bit} is rank-one before normalization')
+
+rho_coherent = matred(out*out.T)
+rho_pinched = matred(pointer_event*rho_coherent*pointer_event
+                    +(s.eye(16)-pointer_event)*rho_coherent*(s.eye(16)-pointer_event))
+prelast = matred(s.kronecker_product(F, I, I)*born)
+g_last = s.kronecker_product(reader, I)
+zero(g_last*(prelast*prelast.T)*g_last.T-rho_coherent,
+     'output predicate is the original generated cut transported by the real last CX')
+zero(s.trace(rho_coherent*rho_coherent)-1,
+     'coherent output has unit expectation in its generated predicate')
+zero(s.trace(rho_coherent*rho_pinched)-(q*q+(1-q)**2),
+     'pinched output has the exact nonunit proper-cut expectation')
+if red(1-s.trace(rho_coherent*rho_pinched)) == 0:
+    raise RuntimeError('proper-cut distinction was erased')
+checks.append('negative control: full generated predicate distinguishes coherent and CQ states')
+
+payload = {
+    'scope': 'Exact Golden target/readout algebra; last reader is a literal CX; compilation and complete-price selection are separate.',
+    'field': 'QQ[a]/(a^4+a^2-1), positive real root a=sqrt(phi^-1)',
+    'checks': checks,
+    'check_count': len(checks),
+    'fixture_Q': str(Q),
+    'fixture_DQ': str(dQ),
+    'fixture_pointer_probability': str(q),
+    'fixture_cold': str(cold),
+    'full_target_dimension': 16,
+    'literal_final_reader_calls': 1,
+    'full_Cost_Info_selected': False,
+    'GR_closed': False,
+}
+print(json.dumps(payload, ensure_ascii=False, sort_keys=True, indent=2))
+```
+
+#### 7fl.J2. Standalone `check_reader_algebra.py`
+
+```python
+#!/usr/bin/env python3
+"""Exact XF reader application; no entropy/physical-price selection asserted."""
+from __future__ import annotations
+import hashlib
+import json
+from pathlib import Path
+import sympy as s
+
+a,t=s.symbols('a t',real=True)
+p=a*a
+poly=a**4+a*a-1
+v=s.Matrix([a,p]); G=s.Matrix([[a,-p],[p,a]])
+X=s.Matrix([[0,1],[1,0]]); Z=s.diag(1,-1)
+checks=[]
+def need(ok,label):
+    if not bool(ok): raise ArithmeticError(label)
+    checks.append(label)
+def red(e):
+    num,den=s.fraction(s.cancel(e))
+    return s.cancel(s.rem(num,poly,a)/s.rem(den,poly,a)) if not den.has(a) else s.rem(s.rem(num,poly,a)*s.invert(s.rem(den,poly,a),poly,a),poly,a)
+def mat(M): return M.applyfunc(red)
+def eq(A,B): return A.shape==B.shape and all(red(e)==0 for e in A-B)
+def kron(*M): return s.kronecker_product(*M)
+def power(n):
+    out=s.eye(2)
+    for _ in range(n): out=mat(G*out)
+    return out
+I2=s.eye(2); I4=s.eye(4)
+q0=s.diag(1,0);q1=I2-q0
+CX=kron(q0,I2)+kron(q1,X)
+Evec=s.Matrix([(1-t*t)/(1+t*t),2*t/(1+t*t)])
+E=Evec*Evec.T; P=v*v.T
+need(eq(E*E,E),'generic rational real field projector is idempotent')
+need(not eq(E*P,P*E),'field projector and actual born input projector are not generically commuting')
+def controlled(A): return kron(A,I2)+kron(I2-A,X)
+F=mat(controlled(E)*controlled(P)); Q=red((v.T*E*v)[0])
+need(eq(F.T*F,I4),'full XF comparison is exactly orthogonal for generic field')
+need(eq(F*kron(v,v),kron(E*v,v)+kron((I2-E)*v,X*v)),
+     'actual initialized XF output retains both nonorthogonal flag sectors')
+R0=kron(I2,CX)
+need(eq(R0.T*R0,s.eye(8)),'literal single-CX reader is orthogonal on all8 columns')
+need(eq(R0*R0,s.eye(8)),'actual CX reader inverse is the same paid primitive')
+need(red(s.trace(R0*kron(F,I2))-s.trace(F))==0,
+     'actual one-CX reader full trace equals original XF full trace')
+need(red(s.diff(s.trace(R0*kron(F,I2)),t)-4*s.diff(Q,t))==0,
+     'all-column trace field derivative remains exactly4 DQ')
+state=mat(R0*kron(F,I2)*kron(v,v,v))
+blocks=[s.Matrix([state[2*j+i] for j in range(4)]) for i in range(2)]
+probs=[red((w.T*w)[0]) for w in blocks]
+bflag0=red(p*p+p**3*Q)
+q1=red(p*p+p**4-p**6*Q)
+need(red(sum(probs)-1)==0,'both actual pointer outcomes exhaust the initialized state')
+need(red(probs[1]-q1)==0,'actual pointer-one law is p2+p4-p6 Q')
+need(red(probs[1]-(p*p*bflag0+p*(1-bflag0)))==0,
+     'actual pointer law keeps canonical-born noise conditioned on the real flag')
+need(red(s.diff(probs[1],t)+p**6*s.diff(Q,t))==0,
+     'actual pointer field source is exactly minus p6 DQ')
+need(red((v.T*X*v)[0]-2*a*p)==0,
+     'conditional fresh-pointer vectors remain nonorthogonal; no perfect copy is claimed')
+cold=red((kron(v,v,v).T*state)[0]); overlap=2*a*p
+need(red(cold-Q*(p+p*p*overlap)-(1-Q)*a*p*(1+overlap))==0,
+     'full prepared return includes actual born pointer and every bank/flag amplitude')
+need(red(s.diff(cold,t)-(p+p*p*overlap-a*p*(1+overlap))*s.diff(Q,t))==0,
+     'complete prepared cold first-source keeps the real reader coefficient')
+oldX=kron(I2,X,I2)
+transported=mat(R0*oldX*R0.T)
+need(eq(transported,kron(I2,X,X)),
+     'pointer initially spectator acquires joint X reader for inherited flag-X mark')
+need(not eq(transported*kron(I4,Z),kron(I4,Z)*transported),
+     'pointer freshness alone does not make inherited transported marks diagonal')
+oldE=kron(E,I2,I2)
+need(eq(R0*oldE*R0.T,oldE),'original commuting fine report effects stay pointer diagonal')
+need(eq(kron(R0,I2).T*kron(R0,I2),s.eye(16)),
+     'actual last-spectator embedding is orthogonal on all16 columns')
+need(red(s.trace(kron(R0*kron(F,I2),I2))-2*s.trace(F))==0,
+     'actual last spectator doubles trace without selecting a flag sector')
+# Refine by the original bank report E.  Every branch retains B, f, r.
+branch_probs=[]
+for bank_effect in (E,I2-E):
+    branch=mat(kron(bank_effect,I2,I2)*state)
+    branch_probs.append([red(sum(branch[2*j+i]**2 for j in range(4))) for i in range(2)])
+k=red(p*p+p**4-p**6)
+need(red(branch_probs[0][1]-Q*k)==0 and red(branch_probs[1][1]-(1-Q)*(1-k))==0,
+     'original report-conditioned pointer-one probabilities are complementary fixed laws')
+need(red(k-2*p**3)==0,
+     'conditional pointer-one parameter for original E report is exactly2 p3')
+need(red(probs[1]-(Q*k+(1-Q)*(1-k)))==0,
+     'all original report and pointer branches are kept in the joint law')
+lo,hi=[ab for ab,m in s.Poly(poly,a).intervals(eps=s.Rational(1,10**40)) if ab[0]>0 and m==1][0]
+need(lo>0 and hi<1,'positive Golden root gives a strictly nonzero pointer gain p6')
+need(red((p*p+p**4-p**6/s.Integer(2))-s.Rational(1,2))==0,
+     'on Q from0 to1/2 the actual pointer probability runs from p2+p4 to1/2')
+print(json.dumps(dict(status='PASS',check_count=len(checks),checks=checks,
+    checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    literal_reader=dict(g_calls=0,cx_calls=1,births=1,chronology='CX(f,r)',free_inverse=False),
+    exact=dict(pointer_one='p^2+p^4-p^6 Q',pointer_gain='-p^6',
+               conditional_pointer_one='2p^3 on E; 1-2p^3 on complement',
+               prepared_cold='Q(p+p^2 s)+(1-Q)ap(1+s), s=2ap',trace_gain='1'),
+    scope=dict(generic_real_field=True,all_columns=True,complete_Cost_Info_selected=False,
+               pointer_algebra_exhaustion_proved=False,GR_closed=False)),sort_keys=True,indent=2))
+```
+
+#### 7fl.J3. Executed receipts and final proof pins
+
+```json
+{
+  "GR_closed": false,
+  "brief_sha256": "f631969ac5dbc2323536615205e4e44969a658d5586a938e9ce56c40b0483ae4",
+  "checkers": [
+    {
+      "arithmetic": "exact Golden algebra; second checker also generic rational field parameter",
+      "check_count": 34,
+      "checker_sha256": "7e1d156d26159500dbdd3d7d0bf7a0fc5fdba8fac277b8e28311a1b66eb2cd88",
+      "normal_optimized_identical": true,
+      "normal_result": "source_check_normal.json",
+      "normal_result_sha256": "5dd7c0a9d3fdb529c29317e026b85c8306d855f3ae6c1385034bbb5aadb12824",
+      "optimized_result": "source_check_optimized.json",
+      "optimized_result_sha256": "5dd7c0a9d3fdb529c29317e026b85c8306d855f3ae6c1385034bbb5aadb12824",
+      "result": {
+        "GR_closed": false,
+        "check_count": 34,
+        "checks": [
+          "Golden G is orthogonal on the actual field",
+          "canonical birth is normalized",
+          "actual Golden cold amplitude is a",
+          "literal final CX is all-column orthogonal",
+          "full XF target is orthogonal",
+          "complete read target is all-column orthogonal",
+          "last spectator and every target column retained",
+          "fixture XF determinant is plus one",
+          "local two-bit CX determinant is minus one",
+          "even bank and spectator multiplicity give SO target",
+          "complete initialized output is normalized",
+          "reader partial trace is exactly two P0",
+          "complete newest-detail trace unchanged by paid CX read",
+          "full spectator trace multiplicity retained",
+          "flag probability is unchanged by pointer read",
+          "actual pointer law p2 plus p4 minus p6 Q",
+          "pointer law has symmetric interval about one half",
+          "literal noisy-channel composition has gain p3",
+          "original born cold corner after the literal reader",
+          "both stated cold formulas agree",
+          "XF full trace source is four DQ",
+          "paid reader retains the full trace source",
+          "full pointer derivative is minus p6 DQ",
+          "full cold derivative retains its true coefficient",
+          "nonzero original-projection tangent in the same fixture",
+          "negative control: pointer is noisy and differs from original flag",
+          "full branch 0 has correct weight",
+          "full retained branch 0 is rank-one before normalization",
+          "full branch 1 has correct weight",
+          "full retained branch 1 is rank-one before normalization",
+          "output predicate is the original generated cut transported by the real last CX",
+          "coherent output has unit expectation in its generated predicate",
+          "pinched output has the exact nonunit proper-cut expectation",
+          "negative control: full generated predicate distinguishes coherent and CQ states"
+        ],
+        "field": "QQ[a]/(a^4+a^2-1), positive real root a=sqrt(phi^-1)",
+        "fixture_DQ": "-2*a**3",
+        "fixture_Q": "1 - a**2",
+        "fixture_cold": "9*a**3 - 4*a**2 - 5*a + 3",
+        "fixture_pointer_probability": "17*a**2 - 10",
+        "full_Cost_Info_selected": false,
+        "full_target_dimension": 16,
+        "literal_final_reader_calls": 1,
+        "scope": "Exact Golden target/readout algebra; last reader is a literal CX; compilation and complete-price selection are separate."
+      },
+      "script": "source_check.py"
+    },
+    {
+      "arithmetic": "exact Golden algebra; second checker also generic rational field parameter",
+      "check_count": 25,
+      "checker_sha256": "0a4f1247457170da07e9e4563e5243011e536f0c2ebc87253493a5cc138af659",
+      "normal_optimized_identical": true,
+      "normal_result": "READER.normal.json",
+      "normal_result_sha256": "9dded1613bf8eba0226ff36a13b06b6e4b9efdb09cebf23b9ea78894a4a2ec8c",
+      "optimized_result": "READER.optimized.json",
+      "optimized_result_sha256": "9dded1613bf8eba0226ff36a13b06b6e4b9efdb09cebf23b9ea78894a4a2ec8c",
+      "result": {
+        "check_count": 25,
+        "checker_sha256": "0a4f1247457170da07e9e4563e5243011e536f0c2ebc87253493a5cc138af659",
+        "checks": [
+          "generic rational real field projector is idempotent",
+          "field projector and actual born input projector are not generically commuting",
+          "full XF comparison is exactly orthogonal for generic field",
+          "actual initialized XF output retains both nonorthogonal flag sectors",
+          "literal single-CX reader is orthogonal on all8 columns",
+          "actual CX reader inverse is the same paid primitive",
+          "actual one-CX reader full trace equals original XF full trace",
+          "all-column trace field derivative remains exactly4 DQ",
+          "both actual pointer outcomes exhaust the initialized state",
+          "actual pointer-one law is p2+p4-p6 Q",
+          "actual pointer law keeps canonical-born noise conditioned on the real flag",
+          "actual pointer field source is exactly minus p6 DQ",
+          "conditional fresh-pointer vectors remain nonorthogonal; no perfect copy is claimed",
+          "full prepared return includes actual born pointer and every bank/flag amplitude",
+          "complete prepared cold first-source keeps the real reader coefficient",
+          "pointer initially spectator acquires joint X reader for inherited flag-X mark",
+          "pointer freshness alone does not make inherited transported marks diagonal",
+          "original commuting fine report effects stay pointer diagonal",
+          "actual last-spectator embedding is orthogonal on all16 columns",
+          "actual last spectator doubles trace without selecting a flag sector",
+          "original report-conditioned pointer-one probabilities are complementary fixed laws",
+          "conditional pointer-one parameter for original E report is exactly2 p3",
+          "all original report and pointer branches are kept in the joint law",
+          "positive Golden root gives a strictly nonzero pointer gain p6",
+          "on Q from0 to1/2 the actual pointer probability runs from p2+p4 to1/2"
+        ],
+        "exact": {
+          "conditional_pointer_one": "2p^3 on E; 1-2p^3 on complement",
+          "pointer_gain": "-p^6",
+          "pointer_one": "p^2+p^4-p^6 Q",
+          "prepared_cold": "Q(p+p^2 s)+(1-Q)ap(1+s), s=2ap",
+          "trace_gain": "1"
+        },
+        "literal_reader": {
+          "births": 1,
+          "chronology": "CX(f,r)",
+          "cx_calls": 1,
+          "free_inverse": false,
+          "g_calls": 0
+        },
+        "scope": {
+          "GR_closed": false,
+          "all_columns": true,
+          "complete_Cost_Info_selected": false,
+          "generic_real_field": true,
+          "pointer_algebra_exhaustion_proved": false
+        },
+        "status": "PASS"
+      },
+      "script": "check_reader_algebra.py"
+    }
+  ],
+  "full_Cost_Info_selected": false,
+  "git_input": "3fdd6ec652d70af9cd9000c6431e94df6d3a1136",
+  "primary_sha256": "c61cd95b87fddcc70acacf93cb396e18c76c4b87d34632caaf754ccfb53a7e90",
+  "proof_sha256": "908bfaf7486a12fb97bf7389e4fd54e22cd3cd0f3027c00ffb895e3d68d350f7",
+  "review_sha256": {
+    "admission-review.md": "49a258a09d537dfd6de0b6730f0ccd92974f318a9e3899bb887e8e5aa6611c78",
+    "price-review.md": "27225d91519b8a6adc43031e8ab70e139f52d5cab0b51b874e9c1bfcbbb00023",
+    "source-review.md": "0b2258d174b2bcd9c458bc60366ad7bbbc30e0d3158d2b4e240749182c5a641d"
+  },
+  "reviews": "Three bounded final-proof reviews approved source, price scope and admission typing; not assembly acceptance.",
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0-paid-one-cx-reader-v1",
+  "scientific_promotion": false
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
