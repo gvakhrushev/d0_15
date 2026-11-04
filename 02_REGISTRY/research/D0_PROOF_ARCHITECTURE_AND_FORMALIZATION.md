@@ -17522,3 +17522,12 @@ history is assumed. The [independently reviewed result](sources/d0_proof_archite
 normalizes unscaled `RA`: at `q = 0` the owner's `B = q AR` has zero trace,
 so its physical normalization and positive gain do not follow. Field maps,
 full R1/R2 and other price rows remain open.
+
+### Normalized matched branch price on one curve
+
+`D0.Analysis.MatchedBranchNormalizedPrice` composes the exact independent
+branch price derivative with nonnegative normalized resolvent weights. Its
+amplitude coefficient is signed and can vanish; the original owner's scaled
+normalization and physical source require additional nonzero factors and field
+maps. The [independent review and receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/matched_branch_normalized_2788_2026-11-05/SUMMARY_RU.md)
+retain the self-adjoint path, other price rows and admission boundaries.
