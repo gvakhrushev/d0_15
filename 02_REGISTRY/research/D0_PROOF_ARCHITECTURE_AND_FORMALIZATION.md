@@ -2,7 +2,7 @@
 
 ## Status
 
-Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe starting inputs, not the C0 denominator. At the start of the current increment, the latest integrated source checkpoint was the open Draft #334 head `1dce9b709109c3fc2921c97ff75a31b3bcb09d6c`; the current fetched head `4a57cfd948226704b9561dec287d7f60154985ea`, exact eight-commit source range and limits are recorded in the final dated section.
+Primary integration artifact for WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION, registered in #401 and executed in Draft #402. The broad objective remains active. C0 is not frozen or independently accepted, so no formalization coverage percentage is reported. Counts below describe individual inputs and checked slices, not the C0 denominator. Dated sections retain each exact source checkpoint and its validation scope; historical branch heads are not current-head assertions. The remaining programme includes source-keyed mathematical-unit classification, formalization of established results, concrete theorem applications, library refactoring and affected integration validation. Physical native selection remains with #334; `GR_closed=false`.
 
 ## Book and registry maintenance checkpoint — 28 October 2026
 
@@ -15091,3 +15091,491 @@ input hashes are preserved in
 This corrects only the retrieval diagnosis. It does not change the Lean
 theorem scope, native physical selection, or any claim metadata; PR #334 is
 unchanged and `GR_closed=false`.
+
+## Task-faithful operator error transport — 4 November 2026
+
+[`D0.Research.TaskFaithfulReturnBound`](../../03_FORMALIZATION/D0/Research/TaskFaithfulReturnBound.lean)
+continues the existing reporter-effect formalization with the operator-norm
+input to equation (9) of the
+[owned proof](sources/d0_task_faithful_source_2026-10-28/PROOF_RU.md).
+The exact source is #334 commit
+`fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`, proof blob
+`c99e90a8c8e96bae70e700fa88d1c2d824a1831b`, SHA-256
+`9f2354817860f9024a597dba4bd14c0580cc021de5c473925740b46b0e8f96e5`.
+
+For the same preparation `R`, the full effect difference gives exactly
+`C(R,E₁) − C(R,E₂) = −2 R†(E₁−E₂)R` and hence
+`‖C(R,E₁)−C(R,E₂)‖ ≤ 2‖R‖²‖E₁−E₂‖` in the ordinary operator norm.
+The reusable theorem is on bounded operators over complex Hilbert spaces.
+The finite-dimensional adapter proves equality with the existing
+`taskReturnCompression`, so the new estimate applies to its actual definition.
+For an isometric preparation, an effect tolerance `ε` gives a compression
+tolerance `2ε`, including a zero-dimensional protected input. At a supplied
+scalar corner this is precisely the initial estimate used in (9).
+For `c > 0`, the same compression has the exact factorization `C = c(I+B)`
+with `B = c⁻¹C − I` and `‖B‖ ≤ 2ε/c`. Thus the next product estimate can
+consume the actual normalized defect rather than assuming an unrelated
+perturbation operator.
+
+The phase is formalization of established finite mathematics. The consumer
+is the subsequent noncommuting product estimate, not a physical selection
+rule. Full-input operator error, the same preparation and the scalar-corner
+identity remain explicit hypotheses. The norm bound cannot turn a tolerance
+on values into a tangent constraint or derivative estimate. Equations
+(10)–(12), mixed-density trace tomography and the full return-price source
+remain separate formalization work; native admission and `GR_closed` are
+unchanged.
+
+The narrow module build passes. After registering the module in
+`formal_support.csv` and regenerating the public import, the complete
+`D0.All` build passes 4,776 Lake jobs. Repository validation, generated-view
+consistency, the all-module no-shortcuts scan and formalization-debt
+non-growth checks pass. Existing warnings in unrelated Lean modules remain.
+
+## Search diagnostics: filename and scoped-query controls — 4 November 2026
+
+Independent review identified two diagnostic defects in the preceding
+pin-window change. A pinned filename-only candidate could be labelled as a
+direct-content match, and a content match in one required query could mask a
+lexical miss in another. The producer now tests `direct_content` explicitly;
+the consumer retains each scoped query's reason and reports mixed failures.
+Neither case is accepted as a found source. Negative controls exercise the
+actual producer with filename-only text, missing commits and incorrect blobs.
+
+The cyclic-AF regression now separates ordinary source discovery from actual
+retrieval of owner commit `d53ef61c8c578c5a6cf16b88d17f8576ced0f64d`, blob
+`069f16ed168c43e483dc5b6bc5eaabbac6e848fa`. The latter checks a returned
+direct-content candidate and rejects a wrong commit or blob; it uses an
+explicit window of 32 and at most 64 followed references per locator. The
+production default remains eight followed references, and the default-window
+discovery test remains separate. Existence of a Git blob alone is no longer
+used as a substitute for this retrieval check.
+
+Fourteen targeted tests pass, followed by all 108 compactor tests. The full
+cold-start runner is not replayed for this diagnostic correction, so its last
+complete result remains the dated `a8ca4d897` receipt above. An independent
+read of the exact blobs for its 40 outside-window sources confirmed that all
+40 really match content; that historical 23/40/4 split is not invalidated by
+the filename-only bug. This does not turn the remaining failed search case
+into success or complete the formalization programme.
+
+### C0 Book02 mathematical-unit candidates
+
+This finite candidate block refines the seven previously reviewed Book02
+§02.3b source ranges into distinct assertions and constructions. The source
+commit, section and owner remain those of the preceding review candidate.
+This block owns the semantic fields consumed by `--kernel-sections`; tools
+validate its exact digest and derive their view from it. It is not a new
+scientific registry, accepted C0 membership, or a coverage denominator.
+Shared byte ranges are evidence for several mathematical atoms, not separate
+copies of the paragraph. Existing application acceptance does not accept this
+classification. Book01 §01.1.8 remains an explicit unreconciled remainder.
+
+`NativeContextCoverage` is a sufficient supplied hypothesis of the formal
+full-native equivalence theorem. The book's word “requires” is not used here
+to assert a general converse or necessity theorem. Physical admission and
+all full-source, clock and refinement obligations remain with their owners.
+The concrete failure of full-native profile equivalence uses the separate
+source-equality and native-inequality atoms; the final no-coverage theorem
+asserts only the absence of a coverage witness.
+
+The independently reviewable block is pinned by SHA-256
+`206943122c0f0c1f4db2749b31c1f1e79ba250b506f54b3bc7945319af8991a0`.
+
+```json
+{
+  "schema": "d0-c0-kernel-unit-candidates/1",
+  "units": [
+    {
+      "atom": "Interpretation",
+      "disposition": "definition",
+      "source_range": [
+        12729,
+        13109
+      ],
+      "hypotheses": "Total executions F and G; supplied state, finite action-word, test and injective outcome maps; primitive step and observation commutation.",
+      "statement": "The operational interpretation interface contains exactly these maps and primitive equations.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation",
+      "declaration_kind": "inductive",
+      "type_sha256": "3672cd3028e0450b3851a36db492b56db965ffcb1b6e99d08cdedba22b11184a"
+    },
+    {
+      "atom": "Interpretation.compile",
+      "disposition": "definition",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "hypotheses": "A supplied I : Interpretation F G and a finite source word.",
+      "statement": "Compile a source word by concatenating the native word assigned to each action.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.compile",
+      "declaration_kind": "definition",
+      "type_sha256": "703ee599914bab197ae661254417c18999f8f18d2d0766e05d06c5a5c7fe9021"
+    },
+    {
+      "atom": "Interpretation.run_commutes",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "hypotheses": "I : Interpretation F G, every finite word w and source state s.",
+      "statement": "I.stateMap (F.run w s) = G.run (I.compile w) (I.stateMap s).",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.run_commutes",
+      "declaration_kind": "theorem",
+      "type_sha256": "48bc951df0a0673d8bf1ff3066505020d34f75fa21316e892ed601d5e56d3d69"
+    },
+    {
+      "atom": "Interpretation.profile_commutes",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "hypotheses": "I : Interpretation F G, every source state s, word w and test t.",
+      "statement": "The native profile after compiled actions and mapped test equals the encoded source profile.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.profile_commutes",
+      "declaration_kind": "theorem",
+      "type_sha256": "4d5eb9ab44d37de41f648b318f9b930bbb2bb3006938ef3efd88df45b43dbac7"
+    },
+    {
+      "atom": "Interpretation.compile_append",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "hypotheses": "I : Interpretation F G and finite source words u, v.",
+      "statement": "I.compile (u ++ v) = I.compile u ++ I.compile v.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.compile_append",
+      "declaration_kind": "theorem",
+      "type_sha256": "e71f38f016b8416846aa751a06a6f4f377b8de9863a52cbe746602625d0148a0"
+    },
+    {
+      "atom": "Interpretation.comp",
+      "disposition": "construction",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "hypotheses": "Supplied interpretations I : Interpretation F G and J : Interpretation G H.",
+      "statement": "Compose interpretations by compiling the intermediate primitive words; the primitive equations remain proved.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.comp",
+      "declaration_kind": "definition",
+      "type_sha256": "e1e24ac4958170bdc3e34c5ab1753394a25d5f09e31d004695c3a89e77146754"
+    },
+    {
+      "atom": "Interpretation.comp_compile",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        13110,
+        13646
+      ],
+      "hypotheses": "I : Interpretation F G, J : Interpretation G H and source word w.",
+      "statement": "(I.comp J).compile w = J.compile (I.compile w).",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.comp_compile",
+      "declaration_kind": "theorem",
+      "type_sha256": "cc9f4a3d423053f64c14262d199789ed092b784c05632632f957f843dd32d548"
+    },
+    {
+      "atom": "Interpretation.commonExecution",
+      "disposition": "definition",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "hypotheses": "A supplied I : Interpretation F G.",
+      "statement": "Keep the full native state type and expose precisely compiled source actions and mapped source tests.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.commonExecution",
+      "declaration_kind": "definition",
+      "type_sha256": "1adb5a7cb853184d54e11530d1dd953cd9ecb6adb88743be3f8d1ff6c26b9339"
+    },
+    {
+      "atom": "Interpretation.common_profile_eq_iff",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "hypotheses": "I : Interpretation F G and source states s, t; outcome injectivity is part of I.",
+      "statement": "Common-sector native profiles of I.stateMap s and I.stateMap t agree iff their source profiles agree.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff",
+      "declaration_kind": "theorem",
+      "type_sha256": "0453124878fa9825788fb4ee4a91d5b65f399828e75123a3e25fea5f6206ea57"
+    },
+    {
+      "atom": "Interpretation.EmpiricalImage",
+      "disposition": "definition",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "hypotheses": "A supplied I : Interpretation F G.",
+      "statement": "The empirical image consists of common-execution future classes attained by the quotient state map.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage",
+      "declaration_kind": "definition",
+      "type_sha256": "1070f6110a08f22ecebae27d06b6c7ed5196a972903e99cb2f8d3d1c58caa1e9"
+    },
+    {
+      "atom": "Interpretation.imageEquiv",
+      "disposition": "construction",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "hypotheses": "A supplied I : Interpretation F G; no all-native state or context coverage.",
+      "statement": "Construct an equivalence from F.FutureClass onto I.EmpiricalImage.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.imageEquiv",
+      "declaration_kind": "definition",
+      "type_sha256": "14771a34135674f214d5ba07efa7ac912c10458a67e6544c320856c6235a1779"
+    },
+    {
+      "atom": "Interpretation.imageStep",
+      "disposition": "construction",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "hypotheses": "I : Interpretation F G and a source action a.",
+      "statement": "The represented empirical image is closed under the interpreted action.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.imageStep",
+      "declaration_kind": "definition",
+      "type_sha256": "9fb3cd0d873eb54d74ccbbd59efa4ff8ae216dc7b01fea9ab6584520d4bafafc"
+    },
+    {
+      "atom": "Interpretation.imageEquiv_step",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "hypotheses": "I : Interpretation F G, source action a and future class q.",
+      "statement": "The image equivalence intertwines F.quotientStep with I.imageStep.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.imageEquiv_step",
+      "declaration_kind": "theorem",
+      "type_sha256": "956ba2118157c3eaca3af4727271cfff00aa549e705328f48030e64a3d5bd7a7"
+    },
+    {
+      "atom": "Interpretation.verifiedStateImageEquiv",
+      "disposition": "construction",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "hypotheses": "I : Interpretation F G and supplied E : TheoryVerification F.futureEmpiricalTheory.",
+      "statement": "Construct E.protocol.State equivalent to the same I.EmpiricalImage via the existing foundation representation.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv",
+      "declaration_kind": "definition",
+      "type_sha256": "2bc06bc330e6e8fd8b18e05686f55d072f8a9e0dd62e00ee40de3a76b8412a4b"
+    },
+    {
+      "atom": "Interpretation.verifiedRun_image",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        13647,
+        14273
+      ],
+      "hypotheses": "I : Interpretation F G; supplied E : TheoryVerification F.futureEmpiricalTheory; source word w and raw state s.",
+      "statement": "The actual represented run maps to the class of G.run (I.compile w) (I.stateMap s).",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.verifiedRun_image",
+      "declaration_kind": "theorem",
+      "type_sha256": "af881a6c3dd74c792b09aeffd2a80a103f126dd7dfb9ac6e230d0d5ae9c41861"
+    },
+    {
+      "atom": "Interpretation.translate",
+      "disposition": "definition",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "hypotheses": "I : Interpretation F G and assertion P : F.FutureClass -> Prop.",
+      "statement": "Translate P to I.EmpiricalImage by the inverse of the constructed image equivalence.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate",
+      "declaration_kind": "definition",
+      "type_sha256": "1bd4fa1c916a2b4947ae34a4517f5bea400822dfa72c57283ed2133060f83827"
+    },
+    {
+      "atom": "Interpretation.transfer_theorem",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "hypotheses": "I : Interpretation F G; H and P on source future classes; supplied source proof forall q, H q -> P q.",
+      "statement": "For every q : I.EmpiricalImage, translated H q implies translated P q; H is not discharged.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.transfer_theorem",
+      "declaration_kind": "theorem",
+      "type_sha256": "7746133d092dcb37e86c23728865a8623819595553bd875475741738ab8d2fd7"
+    },
+    {
+      "atom": "Interpretation.transfer_from_premises",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "hypotheses": "I; indexed premises A; source proof forall q, (forall i, A i q) -> P q; image q and all translated premises.",
+      "statement": "The translated conclusion P holds at q with every indexed premise retained.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.transfer_from_premises",
+      "declaration_kind": "theorem",
+      "type_sha256": "dcb9953f067f7e10cd1bd1399417aed33a2b0db99172681b9c47e5bcdc8c4e08"
+    },
+    {
+      "atom": "Interpretation.translate_conjunction",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "hypotheses": "I; source assertions P, Q and image q.",
+      "statement": "Translation commutes with conjunction at q.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate_conjunction",
+      "declaration_kind": "theorem",
+      "type_sha256": "a1b2de3aa501335cd918a2bb16a2da5ee8e999a9e8fd68fe9304e13dc863ddca"
+    },
+    {
+      "atom": "Interpretation.translate_negation",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "hypotheses": "I; source assertion P and image q.",
+      "statement": "Translation commutes with negation at q.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate_negation",
+      "declaration_kind": "theorem",
+      "type_sha256": "ce9b60f79c47459479e823b929b1253c72ca23f67abffd4c2b5e9783909ca92a"
+    },
+    {
+      "atom": "Interpretation.translate_forall",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "hypotheses": "I; arbitrary index type, source assertion family P and image q.",
+      "statement": "Translation commutes with universal indexed premises at q.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate_forall",
+      "declaration_kind": "theorem",
+      "type_sha256": "ac49a111134a22f0475d1806d8f456c3febaeb00311b1e548abbd35c2756a18a"
+    },
+    {
+      "atom": "Interpretation.translate_future_observation",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        14274,
+        14759
+      ],
+      "hypotheses": "I; source word w, test t, outcome o and image q.",
+      "statement": "Translation of a source quotient observation equals the actual common quotient readout with I.outcomeMap o.",
+      "declaration": "D0.Foundation.TheoryTransfer.Interpretation.translate_future_observation",
+      "declaration_kind": "theorem",
+      "type_sha256": "a6854b9191be7fa759428a0d0d471152e634824658cc9e143faa28c53a4dd900"
+    },
+    {
+      "atom": "NativeContextCoverage",
+      "disposition": "definition",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "hypotheses": "I : Interpretation F G; every finite native word/test and represented source state.",
+      "statement": "Coverage supplies a source experiment and a readout map reproducing each full-native observation on represented states.",
+      "declaration": "D0.Foundation.TheoryTransfer.NativeContextCoverage",
+      "declaration_kind": "inductive",
+      "type_sha256": "1070f6110a08f22ecebae27d06b6c7ed5196a972903e99cb2f8d3d1c58caa1e9"
+    },
+    {
+      "atom": "NativeContextCoverage.native_profile_eq_iff",
+      "disposition": "conditional_theorem",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "hypotheses": "Supplied C : NativeContextCoverage I and source states s, t. C is sufficient for this theorem; no converse or necessary characterization is asserted.",
+      "statement": "Full-native profiles of represented states agree iff their source profiles agree.",
+      "declaration": "D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff",
+      "declaration_kind": "theorem",
+      "type_sha256": "c90433e530100a7dda07024723cef6aa25911e1ed9614521e10898b6258abdef"
+    },
+    {
+      "atom": "visibleBitSystem",
+      "disposition": "construction",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "hypotheses": "Finite Bool x Bool state; identity steps; only the first bit can be tested.",
+      "statement": "Construct the concrete source execution of the extra-test counterexample.",
+      "declaration": "D0.Foundation.TheoryTransfer.visibleBitSystem",
+      "declaration_kind": "definition",
+      "type_sha256": "979e815674b3bc968cdc9e6f0aac53dffd6c957f27abc002706cc052bc1c15d3"
+    },
+    {
+      "atom": "extraBitTestSystem",
+      "disposition": "construction",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "hypotheses": "Finite Bool x Bool state; identity steps; a Boolean test selects first or second bit.",
+      "statement": "Construct the concrete native execution with an extra observable bit.",
+      "declaration": "D0.Foundation.TheoryTransfer.extraBitTestSystem",
+      "declaration_kind": "definition",
+      "type_sha256": "979e815674b3bc968cdc9e6f0aac53dffd6c957f27abc002706cc052bc1c15d3"
+    },
+    {
+      "atom": "visibleBitInterpretation",
+      "disposition": "construction",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "hypotheses": "The specified visible-bit and extra-test systems.",
+      "statement": "Identity state/outcome maps, a singleton compiled word and first-bit test satisfy the primitive interpretation equations.",
+      "declaration": "D0.Foundation.TheoryTransfer.visibleBitInterpretation",
+      "declaration_kind": "definition",
+      "type_sha256": "2d337c0339c0c38f76a09492725ecfcde6d45b275a9cb56ca3d3708f5813657b"
+    },
+    {
+      "atom": "visibleBit_same_all_source_futures",
+      "disposition": "negative_control_component",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "hypotheses": "The two concrete source states (false,false) and (false,true).",
+      "statement": "These states agree in every source future experiment.",
+      "declaration": "D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures",
+      "declaration_kind": "theorem",
+      "type_sha256": "8457284e5878df5b09c53eab1dec4125662cebcc83be68589bdd718b62465ad2"
+    },
+    {
+      "atom": "extraBit_different_native_futures",
+      "disposition": "negative_control_component",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "hypotheses": "The same two concrete states in extraBitTestSystem.",
+      "statement": "The extra native test distinguishes these states.",
+      "declaration": "D0.Foundation.TheoryTransfer.extraBit_different_native_futures",
+      "declaration_kind": "theorem",
+      "type_sha256": "5848bf3b0527c73ab831cf1b453befbdc8c4c27f08910d5a9cb8cb9e9cece13d"
+    },
+    {
+      "atom": "extra_native_test_prevents_coverage",
+      "disposition": "negative_control",
+      "source_range": [
+        14760,
+        15284
+      ],
+      "hypotheses": "The concrete visibleBitInterpretation, whose primitive equations hold.",
+      "statement": "There is no NativeContextCoverage for the concrete visibleBitInterpretation.",
+      "declaration": "D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage",
+      "declaration_kind": "theorem",
+      "type_sha256": "0df773191ca8ecb0793be75f0f2b60cbfff5ffa5936292aceb4dcd2e67954b88"
+    }
+  ]
+}
+```

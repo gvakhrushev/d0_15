@@ -129,6 +129,45 @@ class ColdStartCompactorTests(unittest.TestCase):
         self.assertFalse(no_match["found"])
         self.assertEqual(no_match["status"], "pinned_source_loaded_no_content_match")
 
+    def test_content_receipt_for_wrong_exact_pin_is_not_an_outside_window_match(self):
+        path, commit, blob = "02_REGISTRY/research/owner.md", "a" * 40, "b" * 40
+        required = {"path": path, "commit": commit, "blob": blob,
+                    "scope_query_indexes": [0]}
+        for field in ("commit", "blob"):
+            with self.subTest(wrong_pin=field):
+                reference = {"path": path, "commit": commit, "blob": blob,
+                             "pin_status": "pinned_snapshot",
+                             "content_status": "direct_content_match", field: "c" * 40}
+                locator = {"source": "owner-index.md", "direct_content": True,
+                           "source_refs": [reference]}
+                receipt = compact.cold_start._required_source_status(
+                    [("owner query", [locator])], required
+                )
+                self.assertFalse(receipt["found"])
+                self.assertEqual(receipt["status"], "external_reference_only")
+                self.assertEqual(receipt["scoped_queries"][0]["status"],
+                                 "external_reference_only")
+
+    def test_returned_owner_in_one_query_does_not_cover_another_query(self):
+        path, commit, blob = "02_REGISTRY/research/owner.md", "a" * 40, "b" * 40
+        required = {"path": path, "commit": commit, "blob": blob,
+                    "scope_query_indexes": [0, 1]}
+        owner = {"source": path, "direct_content": True,
+                 "source_commit": commit, "source_blob": blob,
+                 "source_origin": "pinned_snapshot"}
+        locator = {"source": "owner-index.md", "direct_content": True,
+                   "source_refs": [{"path": path, "commit": commit, "blob": blob,
+                                    "pin_status": "pinned_snapshot",
+                                    "content_status": "no_direct_content_match"}]}
+        receipt = compact.cold_start._required_source_status(
+            [("matching query", [owner]), ("unmatched query", [locator])], required
+        )
+        self.assertFalse(receipt["found"])
+        self.assertEqual(receipt["status"], "missing_scoped_query")
+        self.assertEqual([query["found"] for query in receipt["scoped_queries"]], [True, False])
+        self.assertEqual([query["status"] for query in receipt["scoped_queries"]],
+                         ["found_direct_content", "pinned_source_loaded_no_content_match"])
+
     def test_one_pinned_source_retains_distinct_scoped_queries(self):
         fixture, case = example_case()
         fixture["queries"].append("second query")

@@ -2445,6 +2445,26 @@ def _section_refs(hit: dict[str, Any]) -> set[str]:
     return found
 
 
+def _missing_pin_content_status(citation_refs: list[dict[str, Any]],
+                                expected_commit: str | None,
+                                expected_blob: str | None) -> tuple[str, str | None]:
+    """Describe pin evidence without counting a citation as a returned source."""
+    exact_refs = [reference for reference in citation_refs
+                  if (expected_commit is None or reference.get("commit") == expected_commit)
+                  and (expected_blob is None or reference.get("blob") == expected_blob)]
+    if any(ref.get("content_status") == "direct_content_match" for ref in exact_refs):
+        return "verified_direct_content_outside_search_window", "pinned_snapshot"
+    if any(ref.get("content_status") == "no_direct_content_match" for ref in exact_refs):
+        return "pinned_source_loaded_no_content_match", "pinned_snapshot"
+    if any(ref.get("pin_status") in {"pinned_snapshot", "not_followed_bounded_search",
+                                     "duplicate_pin_already_checked"}
+           for ref in exact_refs):
+        return "exact_pin_seen_but_content_check_incomplete", "pinned_snapshot"
+    if citation_refs:
+        return "external_reference_only", "citation_only"
+    return "not_found", None
+
+
 def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
                             required: dict[str, Any]) -> dict[str, Any]:
     """A path counts only when its own exact source content is searchable."""
@@ -2466,9 +2486,6 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
             for reference in hit.get("source_refs", []):
                 if _path_matches(str(reference.get("path", "")), expected_path):
                     citation_refs.append(reference)
-    exact_pin_refs = [reference for reference in citation_refs
-                      if (expected_commit is None or reference.get("commit") == expected_commit)
-                      and (expected_blob is None or reference.get("blob") == expected_blob)]
     exact_candidates = []
     for query, rank, hit in direct_candidates:
         commit_ok = expected_commit is None or hit.get("source_commit") == expected_commit
@@ -2508,13 +2525,18 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
             query_evidence.extend(hit.get("evidence_lines", []))
         query_missing = sorted(set(query_sections) - found_for_query)
         query_found = bool(exact) and not query_missing
+        query_refs = [reference for hit in hits for reference in hit.get("source_refs", [])
+                      if _path_matches(str(reference.get("path", "")), expected_path)]
+        query_pin_status, _ = _missing_pin_content_status(
+            query_refs, expected_commit, expected_blob
+        )
         scoped_queries.append({
             "query_index": index, "query": query, "found": query_found,
             "status": ("found_direct_content" if query_found else
                        "missing_required_section" if exact else
                        "source_pin_mismatch" if direct and
                        (expected_commit is not None or expected_blob is not None) else
-                       "not_found"),
+                       query_pin_status),
             "required_sections": query_sections,
             "sections_found": sorted(found_for_query),
             "missing_sections": query_missing,
@@ -2541,26 +2563,18 @@ def _required_source_status(query_hits: list[tuple[str, list[dict[str, Any]]]],
         status = "source_pin_mismatch"
         query, rank, hit = direct_candidates[0]
         source_origin = hit.get("source_origin")
-    elif any(ref.get("content_status") == "direct_content_match" for ref in exact_pin_refs):
-        # The exact pinned text passed its direct-content query, but its ranked
-        # candidate fell outside this bounded result window.
-        status, query, rank, source_origin = (
-            "verified_direct_content_outside_search_window", None, None, "pinned_snapshot"
-        )
-    elif any(ref.get("content_status") == "no_direct_content_match" for ref in exact_pin_refs):
-        status, query, rank, source_origin = (
-            "pinned_source_loaded_no_content_match", None, None, "pinned_snapshot"
-        )
-    elif any(ref.get("pin_status") in {"pinned_snapshot", "not_followed_bounded_search",
-                                        "duplicate_pin_already_checked"}
-             for ref in exact_pin_refs):
-        status, query, rank, source_origin = (
-            "exact_pin_seen_but_content_check_incomplete", None, None, "pinned_snapshot"
-        )
-    elif citation_refs:
-        status, query, rank, source_origin = "external_reference_only", None, None, "citation_only"
     else:
-        status, query, rank, source_origin = "not_found", None, None, None
+        status, source_origin = _missing_pin_content_status(
+            citation_refs, expected_commit, expected_blob
+        )
+        # A source required by multiple queries can fail for different reasons.
+        # Preserve each reason instead of attributing every failure to one pin.
+        scoped_statuses = {item["status"] for item in scoped_queries}
+        if len(scoped_statuses) > 1:
+            status, source_origin = "mixed_scoped_query_failures", None
+        elif scoped_statuses:
+            status = next(iter(scoped_statuses))
+        query, rank = None, None
     # Prefer evidence inside the required sections so the summary shows the
     # passage that justifies its status instead of earlier, unrelated hits.
     prioritized_evidence: list[dict[str, Any]] = []

@@ -1614,8 +1614,11 @@ def _candidate_record(rel: str, content: str, terms: list[tuple[str, tuple[str, 
 
 
 def full_text_search_many(root: pathlib.Path, queries: list[str],
-                          limit: int = MAX_SEARCH_RESULTS) -> list[list[dict[str, Any]]]:
-    """Search bilingual text once, then verify exact pins for ranked candidates."""
+                          limit: int = MAX_SEARCH_RESULTS, *,
+                          pin_reference_limit: int = 8) -> list[list[dict[str, Any]]]:
+    """Search text and verify pins; explicit owner checks may follow up to 64 refs."""
+    if not 1 <= pin_reference_limit <= 64:
+        raise ValueError("pin_reference_limit must be between 1 and 64")
     raw_terms_by_query = [_query_terms(query) for query in queries]
     terms_by_query = []
     for terms in raw_terms_by_query:
@@ -1777,7 +1780,7 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
             # never counts as direct source content.
             followed = 0
             for reference in refs:
-                if not reference.get("pin_complete") or followed >= 8:
+                if not reference.get("pin_complete") or followed >= pin_reference_limit:
                     continue
                 followed += 1
                 pin_key = (str(reference.get("commit") or ""),
@@ -1804,7 +1807,10 @@ def full_text_search_many(root: pathlib.Path, queries: list[str],
                     if pinned_match is not None:
                         pinned_score, pinned_record = pinned_match
                         pinned_record["pin_status"] = "verified"
-                        reference["content_status"] = "direct_content_match"
+                        reference["content_status"] = (
+                            "direct_content_match" if pinned_record["direct_content"]
+                            else "no_direct_content_match"
+                        )
                         pinned_lines = [pinned_text.splitlines()[row["line"] - 1]
                                         for row in pinned_record["evidence_lines"]
                                         if row.get("line") is not None]

@@ -687,6 +687,7 @@ import D0.Research.PrimitiveJetComposition
 import D0.Research.SchurStationaryTransfer
 import D0.Research.SourceReflectionKernel
 import D0.Research.TaskFaithfulReporterEffect
+import D0.Research.TaskFaithfulReturnBound
 import D0.SelfReading.PrimitiveMinimalityFromRawFunctor
 import D0.SelfReading.RawCanonicalSelfReadingFunctor
 import D0.SelfReading.RawHistoryCategory

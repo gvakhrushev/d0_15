@@ -1450,6 +1450,102 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         self.assertEqual(status["status"], "found_direct_content")
 
+    def test_pinned_filename_match_and_invalid_pins_do_not_claim_content(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            source_rel = "02_REGISTRY/research/ornatecobalt.md"
+            source = root / source_rel
+            source.write_text("Entirely unrelated prose.\n", encoding="utf-8")
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "add", source_rel], cwd=root, check=True)
+            subprocess.run(["git", "-c", "user.name=Proof Test", "-c",
+                            "user.email=test@example.invalid", "commit", "-q", "-m", "fixture"],
+                           cwd=root, check=True)
+            commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root,
+                                             text=True).strip()
+            blob = subprocess.check_output(["git", "rev-parse", f"HEAD:{source_rel}"],
+                                           cwd=root, text=True).strip()
+            source.unlink()  # Only the exact historical pin can supply this source.
+            locator = research / "index.md"
+            required = {"path": source_rel, "commit": commit, "blob": blob,
+                        "scope_query_indexes": [0]}
+            for label, cited_commit, cited_blob in (
+                ("filename_only", commit, blob),
+                ("wrong_blob", commit, "f" * 40),
+                ("missing_commit", "e" * 40, blob),
+            ):
+                with self.subTest(label=label):
+                    locator.write_text(
+                        f"ornatecobalt: {source_rel}; commit {cited_commit}; blob {cited_blob}.\n",
+                        encoding="utf-8",
+                    )
+                    hits = proof.full_text_search_many(root, ["ornatecobalt"], limit=12)[0]
+                    receipt = cold_start._required_source_status([("ornatecobalt", hits)], required)
+                    self.assertFalse(receipt["found"])
+                    refs = [ref for hit in hits for ref in hit.get("source_refs", [])
+                            if ref.get("path") == source_rel]
+                    self.assertTrue(refs)
+                    self.assertFalse(any(ref.get("content_status") == "direct_content_match"
+                                         for ref in refs))
+                    if label == "filename_only":
+                        pinned = next(hit for hit in hits if hit.get("source_commit") == commit)
+                        self.assertFalse(pinned["direct_content"])
+                        self.assertEqual(pinned["source_origin"], "filename_only")
+                        self.assertEqual(receipt["status"], "pinned_source_loaded_no_content_match")
+                        self.assertTrue(any(ref.get("content_status") == "no_direct_content_match"
+                                            for ref in refs))
+                    else:
+                        self.assertNotEqual(receipt["status"],
+                                            "verified_direct_content_outside_search_window")
+                        self.assertFalse(any(hit.get("direct_content")
+                                             for hit in hits if hit["source"] == source_rel))
+
+    def test_pin_reference_limit_is_bounded(self) -> None:
+        for limit in (0, 65):
+            with self.subTest(limit=limit), self.assertRaises(ValueError):
+                proof.full_text_search_many(proof.ROOT, [], pin_reference_limit=limit)
+
+    def test_pinned_source_diagnostics_preserve_mixed_query_failures(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = pathlib.Path(temp)
+            research = root / "02_REGISTRY" / "research"
+            research.mkdir(parents=True)
+            source_rel = "02_REGISTRY/research/ornatecobalt.md"
+            source = root / source_rel
+            source.write_text("Exact amberquartz source content.\n", encoding="utf-8")
+            subprocess.run(["git", "init", "-q"], cwd=root, check=True)
+            subprocess.run(["git", "add", source_rel], cwd=root, check=True)
+            subprocess.run(["git", "-c", "user.name=Proof Test", "-c",
+                            "user.email=test@example.invalid", "commit", "-q", "-m", "fixture"],
+                           cwd=root, check=True)
+            commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root,
+                                             text=True).strip()
+            blob = subprocess.check_output(["git", "rev-parse", f"HEAD:{source_rel}"],
+                                           cwd=root, text=True).strip()
+            source.unlink()
+            (research / "index.md").write_text(
+                f"amberquartz ornatecobalt: {source_rel}; commit {commit}; blob {blob}.\n",
+                encoding="utf-8",
+            )
+            queries = ["amberquartz", "ornatecobalt"]
+            results = proof.full_text_search_many(root, queries, limit=12)
+
+        # Retain the actual producer's locator receipts in a window without the
+        # owner result; the two queries must keep their different content checks.
+        query_pairs = [(query, [hit for hit in hits if hit["source"] != source_rel])
+                       for query, hits in zip(queries, results)]
+        receipt = cold_start._required_source_status(
+            query_pairs, {"path": source_rel, "commit": commit, "blob": blob,
+                          "scope_query_indexes": [0, 1]},
+        )
+        self.assertFalse(receipt["found"])
+        self.assertEqual(receipt["status"], "mixed_scoped_query_failures")
+        self.assertEqual([item["status"] for item in receipt["scoped_queries"]],
+                         ["verified_direct_content_outside_search_window",
+                          "pinned_source_loaded_no_content_match"])
+
     def test_text_search_resolves_github_commit_path_links(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = pathlib.Path(temp)
@@ -7690,7 +7786,7 @@ class ProofArchitectureTests(unittest.TestCase):
         self.assertIn("scoped weak-convergence obstruction", case["scope_review"])
         self.assertIn("does not rule out other readouts", case["scope_review"])
 
-    def test_cyclic_af_return_source_is_retrievable_at_its_pinned_owner_head(self) -> None:
+    def test_cyclic_af_default_window_preserves_source_discovery(self) -> None:
         case = next(
             item for item in cold_start.CASES
             if item["id"] == "cyclic-af-return-without-extra-blank-flag"
@@ -7709,27 +7805,34 @@ class ProofArchitectureTests(unittest.TestCase):
         )
         status = cold_start._required_source_status(query_pairs, owner_source)
         self.assertTrue(status["found"], f"cold-start missed #334 source content: {status}")
-        owner_path = owner_source["path"]
-        pins = [
-            reference
-            for _, query_results in query_pairs
-            for hit in query_results
-            for reference in hit.get("source_refs", [])
-            if reference.get("path", "").endswith(owner_path)
-            and reference.get("commit") == "d53ef61c8c578c5a6cf16b88d17f8576ced0f64d"
-        ]
-        self.assertTrue(pins, "the surfaced owner source must retain its exact #334 commit/blob pin")
-        resolved_blob = subprocess.check_output(
-            ["git", "rev-parse", f"{pins[0]['commit']}:{pins[0]['path']}"],
-            cwd=proof.ROOT, text=True,
-        ).strip()
-        self.assertEqual(resolved_blob, "069f16ed168c43e483dc5b6bc5eaabbac6e848fa")
-        if pins[0].get("blob") is None:
-            self.assertEqual(pins[0].get("pin_status"), "not_followed_bounded_search")
-        else:
-            self.assertEqual(pins[0]["blob"], resolved_blob)
         self.assertIn("Physical AF port admission", case["scope_review"])
         self.assertIn("GR_closed=false", case["scope_review"])
+
+    def test_cyclic_af_return_source_is_retrievable_at_its_pinned_owner_head(self) -> None:
+        case = next(item for item in cold_start.CASES
+                    if item["id"] == "cyclic-af-return-without-extra-blank-flag")
+        owner = next(source for source in case["required_sources"]
+                     if source["path"].endswith(
+                         "A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"))
+        query = case["queries"][0]
+        required = {"path": owner["path"], "scope_query_indexes": [0],
+                    "commit": "d53ef61c8c578c5a6cf16b88d17f8576ced0f64d",
+                    "blob": "069f16ed168c43e483dc5b6bc5eaabbac6e848fa"}
+        hits = proof.full_text_search_many(proof.ROOT, [query], limit=32,
+                                           pin_reference_limit=64)[0]
+        receipt = cold_start._required_source_status([(query, hits)], required)
+        self.assertTrue(receipt["found"], f"exact #334 owner was not retrieved: {receipt}")
+        pinned = hits[receipt["candidate_rank"] - 1]
+        self.assertEqual(pinned["source_commit"], required["commit"])
+        self.assertEqual(pinned["source_blob"], required["blob"])
+        self.assertEqual(pinned["source_origin"], "pinned_snapshot")
+        self.assertTrue(pinned["direct_content"])
+        for field in ("commit", "blob"):
+            with self.subTest(wrong_pin=field):
+                wrong = dict(required, **{field: "f" * 40})
+                rejected = cold_start._required_source_status([(query, hits)], wrong)
+                self.assertFalse(rejected["found"])
+                self.assertEqual(rejected["status"], "source_pin_mismatch")
 
     def test_source_port_preparation_consumes_shared_tensor_api(self) -> None:
         inventory_path = (

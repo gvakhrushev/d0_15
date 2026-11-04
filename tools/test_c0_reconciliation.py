@@ -554,5 +554,199 @@ class ReconciliationFixtureTests(unittest.TestCase):
         self.assertIn("unresolved or blocked", view["interpretation"])
 
 
+class KernelSectionFixture:
+    """A complete isolated source/primary/inventory/application chain."""
+
+    def __init__(self, directory):
+        self.root = Path(directory)
+        self.git("init", "-q")
+        self.git("config", "user.email", "fixture@example.invalid")
+        self.git("config", "user.name", "Fixture")
+        self.source_path = "01_BOOKS/kernel.md"
+        self.module_path = "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean"
+        self.module = "D0.Foundation.TheoryTransfer"
+        self.inventory_path = "02_REGISTRY/research/sources/test/kernel_inventory.json"
+        self.applications_path = "02_REGISTRY/gr_assembly/applications.json"
+        self.review_path = "02_REGISTRY/gr_assembly/reviews/kernel.md"
+        self.write(self.source_path, "Source theorem\n")
+        self.write(self.module_path, "-- fixture source\n")
+        self.write("03_FORMALIZATION/lean-toolchain", "fixture-toolchain\n")
+        self.write("tools/lean_declaration_inventory.py", "# fixture collector\n")
+        self.write(self.review_path, "Existing application review, not C0 acceptance.\n")
+        self.source_commit = self.commit("source and prior review")
+        self.source_blob = self.git("rev-parse", f"HEAD:{self.source_path}")
+        module_blob = self.git("rev-parse", f"HEAD:{self.module_path}")
+        raw = (self.root / self.source_path).read_bytes()
+        self.section_sha = hashlib.sha256(raw).hexdigest()
+        app = {"id": "existing-kernel-application", "consumer_location": "existing-consumer",
+               "hypothesis_map": {"interpretation": {"target_hypothesis": "interpretation"}},
+               "review": {"state": "accepted", "decision": {
+                   "ref": self.source_commit, "path": self.review_path,
+                   "sha256": hashlib.sha256((self.root / self.review_path).read_bytes()).hexdigest()}}}
+        self.write(self.applications_path, json.dumps({"applications": [app]}))
+        self.unit = {"atom": "Interpretation.run_commutes", "disposition": "conditional_theorem",
+                     "source_range": [0, len(raw)], "hypotheses": "A supplied interpretation.",
+                     "statement": "The fixture run diagram commutes.",
+                     "declaration": self.module + ".Interpretation.run_commutes",
+                     "declaration_kind": "theorem",
+                     "type_sha256": hashlib.sha256(b"FixtureType").hexdigest()}
+        payload = json.dumps({"schema": "d0-c0-kernel-unit-candidates/1", "units": [self.unit]}, indent=2)
+        review_section = ("Fixture source review\n\n" + self.source_commit + "\n" +
+                          self.source_blob + "\n" + self.section_sha + "\n" + app["id"] +
+                          "\n" + module_blob)
+        self.write(c0.PRIMARY, "# Primary\n\n### " + review_section +
+                   "\n\n### C0 Book02 mathematical-unit candidates\n\n```json\n" + payload + "\n```\n")
+        self.inventory = {"schema": "d0-lean-declaration-inventory-v1",
+                          "snapshot_commit": self.source_commit, "worktree_dirty": False,
+                          "public_import_root": "D0.All", "inventory_mode": "owning_module_enumeration",
+                          "toolchain": "fixture-toolchain", "lean_source_digest": "1" * 64,
+                          "collector_sha256": "2" * 64,
+                          "declarations": [{"name": self.unit["declaration"], "exists": True,
+                                            "internal_name": False, "module": self.module,
+                                            "source_path": self.module_path, "declaration_kind": "theorem",
+                                            "elaborated_type": "FixtureType", "axioms": ["propext"]}]}
+        self.write(self.inventory_path, json.dumps(self.inventory))
+        self.snapshot = self.commit("kernel metadata")
+        self.pins = c0.KernelSectionPins(
+            primary_heading="Fixture source review",
+            primary_sha256=c0.primary_section_sha256(review_section),
+            units_sha256=hashlib.sha256(payload.encode()).hexdigest(),
+            source_commit=self.source_commit, source_path=self.source_path,
+            source_blob=self.source_blob, section_range=(0, len(raw)), section_sha256=self.section_sha,
+            module=self.module, module_path=self.module_path, module_blob=module_blob,
+            application_id=app["id"], application_sha256=hashlib.sha256(
+                json.dumps(app, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest())
+
+    git = RepositoryFixture.git
+    write = RepositoryFixture.write
+    commit = RepositoryFixture.commit
+
+    def view(self, ref=None, *, expected_sha=None):
+        digest = expected_sha or hashlib.sha256((self.root / self.inventory_path).read_bytes()).hexdigest()
+        return c0.reconcile_kernel_sections(self.root, ref or self.snapshot, pins=self.pins,
+                                            inventory_path=self.inventory_path, inventory_sha256=digest)
+
+    def update_inventory(self, callback):
+        callback(self.inventory)
+        self.write(self.inventory_path, json.dumps(self.inventory))
+        return self.commit("changed inventory")
+
+
+class KernelSectionTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory(prefix="d0-kernel-fixture-")
+        self.addCleanup(self.tmp.cleanup)
+        self.repo = KernelSectionFixture(self.tmp.name)
+
+    def assert_issue(self, view, check, text):
+        self.assertEqual(view["checks"][check]["state"], "unresolved")
+        self.assertIn(text, view["checks"][check]["reason"])
+        self.assertFalse(view["scope"]["coverage_reported"])
+        self.assertEqual(view["scope"]["c0_acceptance_assessment"], "not_evaluated")
+
+    def test_clean_kernel_slice_retains_acceptance_boundary(self):
+        view = self.repo.view()
+        self.assertEqual(view["issues"], [])
+        self.assertEqual(len(view["units"]), 1)
+        unit = view["units"][0]
+        self.assertEqual(unit["semantic_acceptance"], "pending_independent_review")
+        self.assertEqual(unit["classification_state"], "proposed_atomization_of_existing_review_ranges")
+        self.assertEqual(unit["compiled_declaration"]["axioms"], ["propext"])
+        self.assertEqual(unit["existing_application"], "existing-kernel-application")
+        self.assertIn(self.repo.source_commit, unit["source_unit_key"])
+        self.assertFalse(view["scope"]["coverage_reported"])
+        self.assertIn("pending", view["scope"]["book01_01_1_8"])
+
+    def test_primary_semantic_edit_cannot_silently_diverge(self):
+        text = (self.repo.root / c0.PRIMARY).read_text().replace(
+            "A supplied interpretation.", "No interpretation needed.")
+        self.repo.write(c0.PRIMARY, text)
+        view = self.repo.view(self.repo.commit("scope inflation"))
+        self.assert_issue(view, "source_and_primary", "block digest mismatch")
+        self.assertEqual(view["units"], [])
+
+    def test_source_drift_is_not_formalized_by_same_lean_name(self):
+        self.repo.write(self.repo.source_path, "Changed theorem\n")
+        view = self.repo.view(self.repo.commit("source changed"))
+        self.assert_issue(view, "source_and_primary", "source changed")
+        self.assertEqual(view["units"], [])
+
+    def test_wrong_inventory_digest_suppresses_compiled_evidence(self):
+        view = self.repo.view(expected_sha="0" * 64)
+        self.assert_issue(view, "compiled_inventory", "digest mismatch")
+        self.assertIsNone(view["units"][0]["compiled_declaration"])
+
+    def test_missing_declaration_does_not_become_coverage(self):
+        ref = self.repo.update_inventory(lambda i: i.update(declarations=[]))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "expected one, found 0")
+
+    def test_duplicate_declaration_fails_closed(self):
+        ref = self.repo.update_inventory(lambda i: i["declarations"].append(dict(i["declarations"][0])))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "expected one, found 2")
+
+    def test_signature_change_fails_after_repinning_inventory(self):
+        ref = self.repo.update_inventory(lambda i: i["declarations"][0].update(elaborated_type="ChangedType"))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "signature mismatch")
+
+    def test_axiom_and_missing_audit_fail_closed(self):
+        for axioms in (["sorryAx"], ["UnreviewedAxiom"], None):
+            with self.subTest(axioms=axioms):
+                ref = self.repo.update_inventory(lambda i: i["declarations"][0].update(axioms=axioms))
+                self.assert_issue(self.repo.view(ref), "compiled_inventory", "axiom")
+
+    def test_dirty_inventory_is_not_current_compilation(self):
+        ref = self.repo.update_inventory(lambda i: i.update(worktree_dirty=True))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "must be clean")
+
+    def test_toolchain_mismatch_fails_closed(self):
+        ref = self.repo.update_inventory(lambda i: i.update(toolchain="other-toolchain"))
+        self.assert_issue(self.repo.view(ref), "compiled_inventory", "toolchain differs")
+
+    def test_transitive_lean_input_change_invalidates_inventory(self):
+        self.repo.write("03_FORMALIZATION/D0/Other.lean", "-- changed dependency\n")
+        view = self.repo.view(self.repo.commit("new Lean input"))
+        self.assert_issue(view, "compiled_inventory", "no longer matches tracked Lean inputs")
+
+    def test_collector_change_invalidates_inventory(self):
+        self.repo.write("tools/lean_declaration_inventory.py", "# changed collector\n")
+        view = self.repo.view(self.repo.commit("collector changed"))
+        self.assert_issue(view, "compiled_inventory", "collector changed")
+
+    def test_application_drift_does_not_inherit_acceptance(self):
+        obj = json.loads((self.repo.root / self.repo.applications_path).read_text())
+        obj["applications"][0]["hypothesis_map"] = {}
+        self.repo.write(self.repo.applications_path, json.dumps(obj))
+        view = self.repo.view(self.repo.commit("application changed"))
+        self.assert_issue(view, "existing_application", "record differs")
+        self.assertIsNone(view["units"][0]["existing_application"])
+
+    def test_parser_rejects_repeated_atom_even_with_matching_payload_pin(self):
+        from tools.c0_kernel_units import parse_unit_candidates
+        payload = json.dumps({"schema": "d0-c0-kernel-unit-candidates/1",
+                              "units": [self.repo.unit, self.repo.unit]})
+        text = "### C0 Book02 mathematical-unit candidates\n```json\n" + payload + "\n```\n"
+        with self.assertRaisesRegex(ValueError, "duplicate kernel candidate atom"):
+            parse_unit_candidates(text, hashlib.sha256(payload.encode()).hexdigest())
+
+    def test_cli_rejects_unpaired_inventory_options(self):
+        proc = subprocess.run([sys.executable, str(Path(c0.__file__)), "--repo", str(self.repo.root),
+                               "--snapshot", self.repo.snapshot, "--kernel-sections",
+                               "--kernel-inventory", self.repo.inventory_path],
+                              capture_output=True, text=True)
+        self.assertEqual(proc.returncode, 2)
+        self.assertIn("must be supplied together", proc.stderr)
+
+    def test_later_h2_json_is_outside_candidate_section(self):
+        text = (self.repo.root / c0.PRIMARY).read_text()
+        self.repo.write(c0.PRIMARY, text + '\n## Later unrelated report\n\n```json\n{}\n```\n')
+        self.assertEqual(self.repo.view(self.repo.commit("later report"))["issues"], [])
+
+    def test_second_json_block_inside_candidate_section_is_ambiguous(self):
+        text = (self.repo.root / c0.PRIMARY).read_text()
+        self.repo.write(c0.PRIMARY, text + '\n```json\n{}\n```\n')
+        view = self.repo.view(self.repo.commit("second candidate block"))
+        self.assert_issue(view, "source_and_primary", "exactly one primary kernel JSON block")
+
+
 if __name__ == "__main__":
     unittest.main()
