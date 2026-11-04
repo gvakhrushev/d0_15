@@ -16524,6 +16524,11 @@ remain unchanged.
 The module passed a direct Lean invocation on the separately reviewed blob
 `2cb856f5c92a19c60d3dda5704836620b5c12866`. The local `narrow` build
 compiled all 2,694 jobs, but its post-build toolchain snapshot failed, so the
-repository build helper reported `INVALID_BUILD`; the compiled jobs alone do
+repository build helper reported `INVALID_BUILD`; the compiled jobs alone did
 not constitute an accepted build receipt. A subsequent independent toolchain
-query succeeded. An authenticated helper replay remains outstanding.
+query succeeded. The authenticated `D0.All` helper replay then passed all
+4,790 jobs, including the post-build provenance checks, at Lean source digest
+`c6aaaa711701edf45826e64e00c979506e0f650e9478c70971ba60d7ad11018e`.
+The [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-11-04_return_price.json)
+has content SHA-256 `36f93af1232f44914075982273edb8cde0ccc8184bf048528f29836099521de4`.
+This validates the formal build, not physical admission or C0 acceptance.
