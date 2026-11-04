@@ -21362,3 +21362,65 @@ price and operational maps; this is not independent assembly acceptance.
 Affected structural guards run once on final inputs. No Lean change,
 unchanged geometric replay, registry promotion, Ready, retirement or merge.
 GR_closed=false; the original goal remains active.
+
+## 5 November 2026 — compute the actual prepared-price defect on the full XF carrier
+
+Phase: native realization / final composition, existing #334 and the same
+two write paths. Input cfe6755a0ddf5174698f003db59531a1ebd93fa1.
+Primary addition §7fe, PB1–PB17. Consumer: original scoped contract C's
+complete Cost-Info binding, now on the common clock/source family of §7fd.
+No new native price, Info law, program sampler, geometry or root is selected.
+
+Changed mathematical input: the full comparator XF and the SAME-clock
+strict off-shell source witness SC10–SC13 allow a decisive first-source
+check of the canonical initial and actual-prefix Gibbs substitutions.
+This is not another comparison of normalized probabilities or action values.
+
+For the actual GROWING operator Delta0=I−B_s tensor I−C_s tensor(T+T*),
+the genuine prefix occupation rho_occ has exactly constant field energy
+Tr eta(I−B_s) and entropy S(eta)+H(w)+S(rho0). All generated prefix
+derivatives are included; even a final diagonal D_f g block contributes
+zero because the generated input is orthogonal to the birth complement.
+Thus, with the full425D Gibbs comparison sigma,
+
+    D(rho_occ||sigma)/beta = H+W,
+    A_rho_occ = J+W.
+
+On fixed-input current-field comparisons dW=0, while independent initial
+preparation, scene, beta, occupation weights and changed clocks retain W's
+true derivative/difference. These are exact identities also for literal
+native same-layout contrasts. The proper general derivative is d[D/beta].
+The known normalized source witness gives q_(D/beta)<=−3sigma_*/8 after
+retaining the actual feedback budget. The Gibbs defect therefore carries
+the entire surviving heat source; it cannot be dropped as negligible.
+A free Gibbs minimum is source-equivalent after sign reversal only if that
+entire prepared variational problem is genuinely admitted and paid. It is
+not the native preparation. The original degree-zero cut is uniformly far
+from full Gibbs: trace distance at least 392/425. This value gap is kept
+separate from the actual first-source proof.
+
+The actual full quantum continuation and FN gauge transport are also
+written explicitly. A complete neutral terminal with fixed scalar per-call
+weights has zero field source. The born flag has an exact marginal entropy
+coefficient and terminal-weight formula, but its full coherent output has
+constant entropy; its pointer vectors are nonorthogonal. These identities
+prevent importing a classical program lottery or declaring a chosen
+marginal to be the whole native Info.
+
+The precise remaining consumer is the original full price effect and its
+complete preparation derivative, PB16–PB17, using the true event/terminal/
+work ledger on the original report. The new result changes the route by
+excluding the tested neutral and canonical-Gibbs shortcuts on this carrier;
+it does not close contract C or negate the existing master-law Einstein
+soundness/recovery theorem. No full128 or AF entropy law is imported.
+
+Smallest decisive validation: 24 exact checks, including the original
+canonical-birth/G/G/G full growing clock, prefix occupation cancellation,
+full comparator flag, positive-pointer-weight obstruction, Hodge grade
+bound and defect signs. Normal and optimized warnings-as-errors receipts
+are identical. The general source, finite-contrast and preparation claims
+are analytical; no new Gibbs state or native Einstein history is emitted.
+Three bounded reviews pin the final text. Affected structural checks run
+once on final inputs; no unchanged heavy geometry or Lean replay.
+No registry/assembly acceptance, Ready, retirement or merge. GR_closed=false;
+the original objective remains active.

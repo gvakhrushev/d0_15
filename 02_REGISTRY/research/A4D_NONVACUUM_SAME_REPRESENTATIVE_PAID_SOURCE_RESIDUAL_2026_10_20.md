@@ -135201,6 +135201,523 @@ Observed normal and optimized receipt:
 }
 ```
 
+## 7fe. The actual prepared-price defect: complete quantum continuation, generated occupation and the surviving source
+
+4 November 2026. Existing #334; native realization / final composition.
+Input cfe6755a0ddf5174698f003db59531a1ebd93fa1. Consumer: original scoped
+contract C's complete Cost-Info binding, on the SAME full-comparison XF k=1
+family used in SC1–SC13. No new execution, Gibbs sampler, information law,
+physical state variable or gravitational root is selected here.
+
+The missing price map can now be tested against actual operands. The
+canonical input and the full generated-prefix occupation have an EXACT
+relative-entropy first source equal to the entire heat source. It is
+nonzero after the original physical normalization. Thus eliminating that
+term by replacing the actual preparation with a free Gibbs optimum would
+remove the Einstein source we need to preserve. This is a computed failure
+of that price identification, not a no-go for the original master theorem
+or for every possible native Cost-Info law.
+
+### 7fe.A. Actual quantum continuation, without a lottery over programs
+
+The literal native grammar supplies one chronological word, canonical
+isometric births and unitary G/CX calls. It supplies no reset, measurement,
+postselection or random choice among faithful implementation words.
+`report_bits` is metadata, not an extra measurement. Computational paths
+inside a G product are coherent terms, not separately recorded outcomes.
+The original actual fine instruments/readers remain available with their
+paid execution and full outcome laws, as in SC7–SC9.
+
+For actual stage F_j the full Heisenberg continuation is
+
+    L_j^*(A)=F_j^* A F_j,  L_j^*(I)=I.                    (PB1)
+
+For a genuinely supplied complete terminal instrument {E_b},
+q_b=Tr[rho_0 L_0^* ... L_(N-1)^*(E_b)] and sum_b E_b=I. These formulas
+keep every coherent column and failure effect. If genuine scalar stage
+weights omega_j are supplied, the weighted map is
+L_(j,omega)^*(A)=omega_j F_j^* A F_j. A true recorded instrument instead
+uses its actual Kraus/terminal-weight sum; intermediate WORK is not
+silently dephased to manufacture that instrument.
+
+FN does supply a constructive conditional weighted transport. With
+F'_j=V_(j+1) F_j V_j^*, R_j(A)=V_j^* A V_j, identical actual omega_j,
+and chi'=V_N chi V_N^*,
+
+    R_j L'_(j,omega)^*=L_(j,omega)^* R_(j+1),
+    R_N chi'=chi.                                       (PB2)
+
+Composition gives all finite suffix partitions and their derivatives,
+including the moving V_j. The missing operands are the true weight and
+terminal law, not another unweighted observation map. No ensemble over
+the set of compiler words is inferred from FN's equality of their prices.
+If that ensemble is physically supplied, PQ10–PQ11 still require its whole
+fibre sum or coherent Gram expression.
+
+For the complete neutral terminal chi=I and field-independent scalar
+weights on a common paid layout, the exact partition is
+
+    L_(0,omega)^* ... L_(N-1,omega)^*(I)
+                  =(product_j omega_j) I.              (PB3)
+
+Its field source is zero. SC13 gives a nonzero master source on the same
+family. Thus this neutral weighted continuation does not instantiate C.
+This excludes that precise choice of operands; it does not assume all
+physical net prices must be field-independent.
+
+### 7fe.B. Gibbs algebra with its entire defect and the original sign
+
+On the ACTUAL full Hodge carrier of the same XF word, set
+
+    Z=Tr exp(-beta Delta), H=log(Z)/beta,
+    J=-logdet(I-z Fhat), B=H+J,
+    sigma=exp(-beta Delta)/Z.                            (PB4)
+
+All S, H_Shannon and H_2 below use natural logarithms; their Book
+log_phi conversion is not silently identified. There are all 425D modes.
+The following is an application of the already
+owned finite Gibbs identity, with sigma as a comparison density. It does
+not identify a spectral energy with edge Cost or choose entropy as Info.
+For every trace-one rho, including nonfaithful rho,
+
+    D(rho||sigma)=-S(rho)+beta Tr(rho Delta)+beta H.
+
+Consequently the mathematical energy-minus-entropy candidate is exactly
+
+    A_rho=Tr(rho Delta)-S(rho)/beta+J
+         =J-H+D(rho||sigma)/beta.                       (PB5)
+
+Units and the conversion to the Book's log_phi information price would
+also need their real binding; PB5 grants the usual thermal convention only
+to TEST the proposed shortcut. The negative result below for a fixed-input
+field source also holds for any fixed coefficients multiplying its energy
+and entropy, so it is not caused by a fitted choice of units.
+
+Minimization over the entire unconstrained density simplex gives sigma
+and A_*=J-H. The positive master heat has the OPPOSITE sign. Nevertheless
+there is a useful conditional source equivalence:
+
+    -dA_*-dB=-2dJ,
+    -dA_rho-dB=-2dJ-d[D(rho||sigma)/beta].              (PB6)
+
+XF/SR/CT controls the entire normalized feedback source dJ/Gamma to zero.
+Thus a genuinely selected, paid Gibbs variational realization WOULD have
+the same kappa source as B after a fixed sign reversal. No equality of
+absolute prices or added counterterm is required. For an actually supplied
+rho the LAST term in PB6 must be retained with its full preparation and
+reference derivatives. Stationarity in an unadmitted auxiliary density
+is not a native preparation equation.
+
+### 7fe.C. Exact defect on the real initial and generated-prefix lifts
+
+Use the original GROWING scene formula
+
+    Delta_0=I-B_s tensor I-C_s tensor(T+T*),
+    C_s=R_s^2,  C_s|zones=(1/26,1/24,1/22).              (PB7)
+
+The number 1/22 is a norm bound, not a replacement for C_s. Let i_j be
+stage injections, A_j the ACTUAL isometric executed prefixes, rho_0 the
+initial density and eta a scene density. On the fixed layout choose
+positive stage weights w_j summing to one and define the canonical lift
+
+    rho_occ=[sum_j w_j eta tensor
+                    i_j A_j rho_0 A_j* i_j*] direct-sum 0_grade1.
+                                                               (PB8)
+
+This is a typed density constructed from the actual retained prefixes.
+It is not declared to be a new physically prepared Hodge ensemble. The
+initial lift rho_in has only stage zero and the same eta,rho_0. The
+normalized generated cut is the particular case rho_0=P_0/r, w_j=1/N,
+with a rank-one scene cut.
+
+For j<f, T_jj=0. At the final stage, the only possible diagonal block is
+D_f g, with D_f the canonical birth complement. The generated state
+rho_f=A_f rho_0 A_f* satisfies rho_f D_f=D_f rho_f=0: after a birth
+A_f lies in its image, and otherwise D_f=0. Hence even this last trace
+vanishes. This proves, with ALL prefix dependence retained,
+
+    R:=Tr(rho_occ Delta)=Tr eta(I-B_s),
+    S(rho_occ)=S(eta)+H_Shannon(w)+S(rho_0).              (PB9)
+
+The entropy formula follows from the orthogonal stage blocks and the
+isometry of each A_j. For rho_in omit H_Shannon(w). All eigenvalue zeros
+are included by 0 log 0=0. No differentiation of an unknown compiler is
+used: PB9 is an exact identity for each actual word on the common layout.
+
+Put W=R-beta^-1[S(eta)+H_Shannon(w)+S(rho_0)]. Equations PB5 and PB9 give
+
+    D(rho_occ||sigma)/beta=H+W,
+    A_rho_occ=J+W,
+    d[D(rho_occ||sigma)/beta]=dH+dW.                       (PB10)
+
+The brackets retain the extra -D d(beta)/beta^2 term if beta varies.
+On genuine current field/gate comparisons with eta,w,rho_0 and beta fixed,
+dW=0. This is also an EXACT equality of literal finite price differences,
+not only a target derivative. Generated preparation prefixes may vary;
+their adjoints are already included by differentiating PB9. Independent
+initial preparation, occupation weights, scene and beta instead retain
+the actual dW. Changed duration/layout retains its finite W difference.
+None of those rows is declared zero by a field-only calculation.
+
+Consume the SAME off-shell clock witness and fixed unit C3 test V/nu of
+SC10–SC13. Write q_X,h for the actual central-gain-normalized finite
+covector of X, with the actual physical sampling/right lift understood.
+For all sufficiently refined admitted comparisons,
+
+    q_B,h[V/nu]<=-sigma_*/2,
+    ||q_J,h||<=sigma_*/8,
+    q_(D/beta),h[V/nu]=q_H,h[V/nu]
+             =q_B,h[V/nu]-q_J,h[V/nu]<=-3sigma_*/8.      (PB11)
+
+Here sigma_*>0 is SC12's margin, not the Gibbs density sigma in PB4.
+CT permits the feedback budget after all actual prefix/lift constants.
+The strict comparison holds uniformly over the faithful implementation
+fibre. At the same time q_A_rho,h=q_J,h tends to zero on these field rows.
+Therefore the canonical prepared-state Gibbs defect is NOT negligible
+in the exact source norm required by C: it contains the surviving
+Einstein source. Small or large scalar entropy gaps are not being used
+as a proxy for this first-source calculation.
+
+### 7fe.D. A uniform support obstruction, separate from the source proof
+
+Let t=Tr_(33D) exp(-beta Delta_0). The full Hodge identity gives
+Z=2t+359D and Tr_grade1 exp(-beta Delta_1)=t+359D. Since 0<t<=33D,
+
+    Tr(P_grade1 sigma)=(t+359D)/(2t+359D)>=392/425.       (PB12)
+
+Every rho supported on the original degree-zero cut has zero grade-one
+mass. Thus (1/2)||rho-sigma||_1>=392/425. Since sigma is block diagonal,
+its degree-zero conditional state sigma_0/q_0 obeys
+D(rho||sigma)=D(rho||sigma_0/q_0)-log(q_0), with q_0<=33/425. Hence
+D(rho||sigma)>=log(425/33). The unchanged cut cannot even approximate
+the full Gibbs density in trace norm. Enlarging the independently
+prepared state to all Hodge modes requires a genuinely different paid
+preparation map and its source; minimization alone does not implement it.
+PB11, not this positive value bound, is the derivative obstruction.
+
+### 7fe.E. The actual flag supplies a computable source, but no selected full Info
+
+For the SAME smooth XF target (not an exact identity for an approximate
+compiler), C_(P_b) fixes the born current input. The whole fresh state is
+
+    Psi=E b tensor v+(I-E)b tensor Xv,
+    Q=<b,Eb>, v=(sqrt(p),p), s=<v,Xv>=2p sqrt(p)>0.
+
+The original bank components are orthogonal. Retain both flag sectors and
+all old input columns. The target flag marginal is
+
+    rho_flag=Q vv*+(1-Q)Xvv*X,
+    det rho_flag=(1-s^2)Q(1-Q)=p^6 Q(1-Q),
+    r(Q)=sqrt(1-4p^6 Q(1-Q)), lambda_±=(1±r)/2.          (PB13)
+
+For 0<Q<1/2 its entropy derivative is strictly positive:
+
+    dS_flag=[p^6(1-2Q)/r] log[(1+r)/(1-r)] dQ.           (PB14)
+
+A supplied valuation using this marginal would therefore have an actual
+nonzero source coefficient, without fitting an Einstein residual. But
+S(bank)=S(flag), mutual information=2S(flag), and entropy of the ENTIRE
+current coherent output is zero. With an arbitrary unchanged old input,
+full entropy is exactly its old entropy; every isometric native execution
+preserves it. The original report Shannon entropy is H_2(Q); the measured
+computational flag entropy is H_2(p^2+p^3 Q). These are distinct record
+algebras/valuations, not interchangeable readings of a computed full Info.
+No equality in PB13–PB14 selects one of them or drops the original records.
+
+The exact initialized pullback of any supplied flag weight A is
+Q<v,Av>+(1-Q)<Xv,A Xv>. For computational weights alpha_0,alpha_1 it is
+
+    Z_alpha=alpha_1+(alpha_0-alpha_1)(p^2+p^3 Q),
+    dZ_alpha=(alpha_0-alpha_1)p^3 dQ                     (PB15)
+
+when those weights are fixed. Their genuine derivatives remain otherwise.
+Neutral complete retention has alpha_0=alpha_1=1 and no source. A
+positive/self-adjoint flag weight preserving both pointer vectors with
+eigenweights u_1,u_0 satisfies
+(u_1-u_0)<v,Xv>=0, so u_1=u_0. The flag is not a perfect orthogonal
+branch-price register. A general noisy flag observable, or the original
+orthogonal report effects, is allowed with its REAL weight/readout law.
+No new measurement or successful-branch conditioning is inserted here.
+
+### 7fe.F. Exact route change and remaining consumer
+
+This application replaces two formerly untested price shortcuts by their
+computed defects: the neutral full quantum continuation PB3 has zero
+source, and the canonical input/prefix Gibbs replacement loses the
+nonzero source PB11. The original master-law Einstein result survives.
+The flag marginal supplies the explicit PB14–PB15 map, but calling that
+marginal the whole Info would be a constitutive input still to prove.
+
+The constructive next consumer is the ALREADY owned preparation-safe
+full price effect of BOOK_SOURCE_BINDING §5.1 on the original full report:
+
+    G_price=s_c I+delta_s E_report+R,
+    R=sum_b xi_b K_b* K_b.                               (PB16)
+
+For the scalar price Tr(rho G_price)+W_work its full derivative is
+
+    ds_c+delta_s[Tr((d rho)E_report)+Tr(rho dE_report)]
+      +Q d(delta_s)+Tr(rho dR)+Tr((d rho)R)+dW_work.      (PB17)
+
+Thus dQ means its full preparation-and-effect derivative. On XF's stated
+old-spectator input the compressed report effect is Q I_old, so that
+particular normalized old-input row is zero; a genuinely new independent
+reader/preparation need not have this property. All terminal/failure
+records remain. W_work is the genuine native work ledger, not PB10's
+auxiliary W. Neither R=0 nor its weights follow from a normalized Born law. PB2 now gives the
+literal quantum continuation transport when those physical operands
+are supplied; PB10–PB11 exclude replacing them with a free Gibbs state.
+The old full128/AF entropy conventions are not imported by name.
+
+Contract C, exact joint finite roots and unrestricted D0-to-GR closure
+remain open. No native Info, sampler or action is created by assigning it
+the desired master residual. This is a bounded source-level route change
+inside the existing owner, not a public claim or assembly acceptance.
+GR_closed=false; the original goal remains active.
+
+### 7fe.G. Exact bounded check and reviewed input snapshot
+
+The new 24-check script verifies the original canonical born vector and
+Golden gate, the actual full comparison flag state and pointer-weight
+obstruction, one literal birth;G;G;G growing clock with all complements,
+its true generated-prefix occupation, the Hodge grade inequality and Gibbs
+defect signs. It uses exact arithmetic in Q(a), a>0, a^4+a^2=1. The
+finite clock has actual widths 1,2,2,2 and dimension7; it is a constructor
+check, not an emitted XF Einstein history or a replacement scene.
+
+Normal and optimized Python 3.12.14 / SymPy 1.14.0 runs with warnings as
+errors passed with byte-identical receipts. No expected repository evidence
+was rewritten. A first checker draft had an incorrect factor in the grade
+identity and then a structural-expression equality instead of algebraic
+simplification; both implementation errors were corrected before the final
+runs. The bound itself is proved by PB12 independently of that checker.
+
+Three bounded reviews pin the final 273-line analytic text. They checked
+PB2's gauge indices, the final D_f g trace cancellation, full generated
+preparation variation, actual finite contrasts, the normalized source
+margin, beta's full quotient derivative, and PB17's full input/effect/work
+source. In particular all entropy logarithms are natural and physical
+log_phi units remain a separate binding. The reviews do not select Info,
+claim independent assembly acceptance, or replace the general proof with
+the finite fixture. No unchanged geometric/root/Lean suite was rerun.
+
+Extract the Python block below into scratch check_prepared_price.py:
+
+```text
+python3 -Werror /absolute/scratch/check_prepared_price.py
+python3 -O -Werror /absolute/scratch/check_prepared_price.py
+```
+
+It prints observed JSON and writes no repository files. Checks remain
+active under optimization. Owner hashes refer to the pre-insertion commit.
+
+```json
+{
+  "GR_closed": false,
+  "checker_sha256": "c34cd7740cba0cca4a3d67e6d8877fa4519cfc3886e45c85077fa86e43ed737f",
+  "exit_codes": [
+    0,
+    0
+  ],
+  "input_head": "cfe6755a0ddf5174698f003db59531a1ebd93fa1",
+  "new_exact_checks": 24,
+  "normal_and_optimized_byte_identical": true,
+  "normal_optimized_receipt_sha256": "db13c0b3acfd35c52340206abd00ffbe71161d4e1fc90941a1b10edf18364b2d",
+  "not_claimed": [
+    "native Info selected",
+    "full Cost-Info binding",
+    "Gibbs preparation executed",
+    "unchanged scoped A-D terminal",
+    "new exact finite native roots",
+    "new PDE integration",
+    "independent assembly acceptance"
+  ],
+  "owner_sha256": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "09615cdb04db4b3eaea7d885bac8729e7c56981ea182011c887488cf5fe2d3de",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "655dafcaeb72b5bc9b46d24dbae1787c7e14c5331353b62bb8982f1781ea6812",
+    "02_REGISTRY/research/A4D_RENEWAL_GIBBS_HEAT_AND_NATIVE_NONLINEAR_ENTROPY_BRIDGE_2026_10_22.md": "d899f710ab3e5eed35dee8aa39532d24bb17678b56f568ac8251b5f6eb28266d",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_coherent_af_cost_info_2026-10-14/RESULT.md": "bb918a2f27548632de3a42114ab4ed4ed3e8ade5637b853d1928e678a228a05a",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+  },
+  "run_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "scientific_promotion": false,
+  "scope": "Same-XF actual quantum continuation, canonical generated preparation defect and strict normalized heat-source obstruction",
+  "scratch_proof_sha256": {
+    "admission-final.md": "03f97c74cece27b76106867dc9d72ca9d8b32d59e83341e6056c7a4d2beb7f3c",
+    "admission.md": "7f90546d4b7ae86350d9f6551588c245ee7c36dcb4f4c459dde500835ee3e6e1",
+    "brief.md": "9b7ea09cfc191d620fb20eb5c09a8e2044574494a37141e5bd119065d36cd9f9",
+    "price-final.md": "6a2c3e94a17f770ec07b79aec5fb9487447b28d2bb3a8e4e0cb55dcd8e17829f",
+    "price.md": "b963e3cf19d3bc4c364d4aef54b00b0ea57b444f7adcfc3a5b8df462aac3d842",
+    "proof.md": "21df9fc91d3b3f098b2fa5ce11a1436e606f630ae33a866d93aecaea8ee8cb48",
+    "source-final.md": "1efbfbf10cf399525db0e69349d74e80d61d2f9bec3cacb755814b162469816d",
+    "source.md": "77689471799dc7e0e85768ac78458f954b5743c527fab76ffa3a08c8ef3c5cb2"
+  }
+}
+```
+
+#### 7fe.G1. check_prepared_price.py
+
+```python
+#!/usr/bin/env python3
+"""Exact prepared-state/entropy diagnostics on the original Golden constructor.
+No Gibbs preparation, Info choice or physical closure is inferred.
+"""
+import hashlib
+import json
+from pathlib import Path
+import sympy as s
+
+checks=[]
+def need(ok,label):
+    if not bool(ok): raise ArithmeticError(label)
+    checks.append(label)
+a=s.symbols('a',positive=True)
+# a=sqrt(p), p=phi^-1. Work in Q(a), a^4+a^2-1=0.
+poly=a**4+a**2-1
+p=a*a
+
+def red(x):
+    num,den=s.fraction(s.cancel(x))
+    num=s.rem(num,poly,a)
+    den=s.rem(den,poly,a)
+    return s.rem(s.expand(num*s.invert(den,poly,a)),poly,a)
+def zero(x):
+    if isinstance(x,s.MatrixBase): return all(red(v)==0 for v in x)
+    return red(x)==0
+v=s.Matrix([a,p]); G=s.Matrix([[a,-p],[p,a]]); X=s.Matrix([[0,1],[1,0]])
+need(zero((v.T*v)[0]-1),'canonical born state normalized')
+need(zero(G.T*G-s.eye(2)),'original Golden gate orthogonal')
+ss=(v.T*X*v)[0]
+need(zero(1-ss**2-p**6),'full comparison flag overlap complement equals p^6')
+Q=s.symbols('Q',real=True)
+rho_f=Q*v*v.T+(1-Q)*X*v*v.T*X
+need(zero(s.trace(rho_f)-1),'whole flag density has trace one')
+need(zero(rho_f.det()-p**6*Q*(1-Q)),'actual flag determinant, both nonorthogonal states retained')
+need(zero(rho_f[0,0]-(p**2+p**3*Q)),'computational flag readout differs from original report')
+# Whole Schmidt state: orthogonal E b and (I-E)b in a two-dimensional span.
+u=s.symbols('u',positive=True)
+q_u=1/(1+u*u)
+psi=s.Matrix.vstack(v,u*X*v)/s.sqrt(1+u*u)
+need(zero((psi.T*psi)[0]-1),'full current comparator state normalized')
+P=psi*psi.T
+need(zero(P*P-P),'full current density remains pure, unlike its flag marginal')
+# Positive self-adjoint flag weighting preserving both pointer vectors.
+w0,w1=s.symbols('w0 w1',real=True)
+frame=s.Matrix.hstack(v,X*v)
+W=frame*s.diag(w1,w0)*frame.inv()
+need(zero((W[0,1]-W[1,0])*frame.det()+ss*(w1-w0)),
+     'distinct pointer eigenweights produce the exact antisymmetric part')
+need(zero(frame.det()-p**3) and not zero(ss),
+     'pointer frame invertible and overlapping: self-adjoint weights must agree')
+# Actual growing stage layout: birth; G; G; G, widths 1,2,2,2.
+# Closure depends only on canonical birth, not on executed prefix Gs.
+off=[0,1,3,5]; widths=[1,2,2,2]; D=7
+R=s.zeros(D,2); R[0:1,:]=v.T; R[1:3,:]=s.eye(2)-v*v.T
+S=s.zeros(D); S[1:3,0:1]=v; S[3:5,1:3]=G; S[5:7,3:5]=G
+T=S.copy(); T[:,5:7]+=R*G
+need(zero(T.T*T-s.eye(D)),'complete growing clock is unitary on all birth complements')
+need(all(zero(T[o:o+d,o:o+d]) for o,d in zip(off,widths)),
+     'every actual diagonal stage block vanishes')
+A=[s.ones(1),v,G*v,G*G*v]
+weights=[s.Rational(1,10),s.Rational(2,10),s.Rational(3,10),s.Rational(4,10)]
+rho=s.zeros(D)
+for o,d,Aj,w in zip(off,widths,A,weights):
+    need(zero((Aj.T*Aj)[0]-1),'generated prefix isometry '+str(o))
+    rho[o:o+d,o:o+d]=w*Aj*Aj.T
+need(zero(s.trace(rho)-1),'true-prefix occupation density normalized')
+need(zero(s.trace(rho*(T+T.T))),
+     'occupation energy sees no clock offdiagonal source')
+# This is the actual 33-vertex spatial normalization, not a 1/22 scalar replacement.
+need(s.Rational(1,26)<s.Rational(1,24)<s.Rational(1,22),
+     'zone coefficients retain 26,24,22 denominators')
+t,d=s.symbols('t d',positive=True)
+q1=(t+359*d)/(2*t+359*d)
+need(s.simplify(q1-s.Rational(392,425)-359*(33*d-t)/(425*(359*d+2*t)))==0,
+     'full Gibbs grade-one mass lower bound uses t<=33D')
+need(s.Rational(392,425)>s.Rational(9,10),'grade separation exceeds nine tenths')
+# Gibbs sign and full relative-entropy defect differentiated as independent symbols.
+H,J,R0,E0,beta=s.symbols('H J R0 E0 beta',positive=True)
+Drel=beta*R0-E0+beta*H
+ACI=J-H+Drel/beta
+need(s.simplify(ACI-(J+R0-E0/beta))==0,
+     'canonical prepared Cost-Info energy cancels heat only with its full defect')
+need(s.diff(Drel,H)/beta==1,
+     'prepared relative-entropy defect retains the entire heat first source')
+need(s.diff(J-H,H)==-1,
+     'free Gibbs minimum has minus-heat sign, distinct from prepared state')
+result={'status':'PASS','number_of_checks':len(checks),'checks':checks,
+ 'input_head':'cfe6755a0ddf5174698f003db59531a1ebd93fa1',
+ 'native_fixture':'birth;G;G;G, widths [1,2,2,2], full unitary clock dimension 7',
+ 'scope':'Exact native/flag/grade/defect identities; source and entropy theorems are analytic',
+ 'not_claimed':['Info forced by primitives','physical Gibbs preparation','native price equals an assigned entropy',
+                'approximate Gibbs construction','new Einstein root','GR closure'],
+ 'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+print(json.dumps(result,sort_keys=True,indent=2))
+```
+
+Observed normal and optimized receipt:
+
+```json
+{
+  "checker_sha256": "c34cd7740cba0cca4a3d67e6d8877fa4519cfc3886e45c85077fa86e43ed737f",
+  "checks": [
+    "canonical born state normalized",
+    "original Golden gate orthogonal",
+    "full comparison flag overlap complement equals p^6",
+    "whole flag density has trace one",
+    "actual flag determinant, both nonorthogonal states retained",
+    "computational flag readout differs from original report",
+    "full current comparator state normalized",
+    "full current density remains pure, unlike its flag marginal",
+    "distinct pointer eigenweights produce the exact antisymmetric part",
+    "pointer frame invertible and overlapping: self-adjoint weights must agree",
+    "complete growing clock is unitary on all birth complements",
+    "every actual diagonal stage block vanishes",
+    "generated prefix isometry 0",
+    "generated prefix isometry 1",
+    "generated prefix isometry 3",
+    "generated prefix isometry 5",
+    "true-prefix occupation density normalized",
+    "occupation energy sees no clock offdiagonal source",
+    "zone coefficients retain 26,24,22 denominators",
+    "full Gibbs grade-one mass lower bound uses t<=33D",
+    "grade separation exceeds nine tenths",
+    "canonical prepared Cost-Info energy cancels heat only with its full defect",
+    "prepared relative-entropy defect retains the entire heat first source",
+    "free Gibbs minimum has minus-heat sign, distinct from prepared state"
+  ],
+  "input_head": "cfe6755a0ddf5174698f003db59531a1ebd93fa1",
+  "native_fixture": "birth;G;G;G, widths [1,2,2,2], full unitary clock dimension 7",
+  "not_claimed": [
+    "Info forced by primitives",
+    "physical Gibbs preparation",
+    "native price equals an assigned entropy",
+    "approximate Gibbs construction",
+    "new Einstein root",
+    "GR closure"
+  ],
+  "number_of_checks": 24,
+  "scope": "Exact native/flag/grade/defect identities; source and entropy theorems are analytic",
+  "status": "PASS"
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:
