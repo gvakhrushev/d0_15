@@ -17937,3 +17937,24 @@ comparison does not formally verify the numerical backend and requires NumPy,
 SciPy and SymPy. Walsh, the 128 Kraus operators, CPTP, future-effect span and
 physical admission/clock/work remain open; #334 remains owner and
 `GR_closed=false`. Final integration for this module remains required.
+
+
+### Original five-bit Walsh transform
+
+`D0.Geometry.OriginalBookWalsh` applies the source five-bit Walsh sign and
+`1/32` factor to the actual 32 Julia pairs. It proves the flattening and
+reconstruction of 64 `(label, endpoint)` rows and, using the established
+adjacent duplicates, proves all 32 rows with odd labels vanish. It does not
+infer that the remaining rows are nonzero. Low- and high-bit controls retain
+the full five-bit convention.
+
+The exact module and six axiom checks passed narrow Lean with only
+`propext`, `Classical.choice`, `Quot.sound`; independent review also ran the
+numerical regression. `tools/check_original_walsh_rows.py` verifies both
+pinned source hashes, executes trusted source code and its AST prefix, and
+checks 1024 signs and all 16384 entries of the 64 rows. Its one nonzero anchor
+and endpoint-swap control are scoped, not a rank proof. Three NaN/overflow
+controls passed. The numerical check requires NumPy, SciPy and SymPy and does
+not formally verify the backend. The 128 Kraus, CPTP, effect span, physical
+admission and clock/work remain open; #334 is preserved and `GR_closed=false`.
+Final integration for this added module remains required.
