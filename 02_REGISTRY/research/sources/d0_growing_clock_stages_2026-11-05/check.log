@@ -1,0 +1,33 @@
+D0.Algebra.GrowingClockFrame.stageFrame.{u_1, u_2} {n : ℕ} {H : Fin (n + 1) → Type u_1} {r : Type u_2}
+  (A : (j : Fin (n + 1)) → Matrix (H j) r ℂ) (j : Fin (n + 1)) : Matrix ((k : Fin (n + 1)) × H k) r ℂ
+D0.Algebra.GrowingClockFrame.stageFrame_orthogonal.{u_1, u_2} {n : ℕ} {H : Fin (n + 1) → Type u_1}
+  [(j : Fin (n + 1)) → Fintype (H j)] {r : Type u_2} [DecidableEq r] (A : (j : Fin (n + 1)) → Matrix (H j) r ℂ)
+  (hA : ∀ (j : Fin (n + 1)), (A j).conjTranspose * A j = 1) (i j : Fin (n + 1)) :
+  (D0.Algebra.GrowingClockFrame.stageFrame A i).conjTranspose * D0.Algebra.GrowingClockFrame.stageFrame A j =
+    if i = j then 1 else 0
+D0.Algebra.GrowingClockFrame.transported_isometry.{u_1, u_2, u_3} {n : ℕ} {H : Fin (n + 1) → Type u_1}
+  [(j : Fin (n + 1)) → Fintype (H j)] {r : Type u_2} [DecidableEq r] {h0 : Type u_3} [Fintype h0] [DecidableEq h0]
+  (A : (j : Fin (n + 1)) → Matrix (H j) h0 ℂ) (V : Matrix h0 r ℂ)
+  (hA : ∀ (j : Fin (n + 1)), (A j).conjTranspose * A j = 1) (hV : V.conjTranspose * V = 1) (j : Fin (n + 1)) :
+  (A j * V).conjTranspose * (A j * V) = 1
+D0.Algebra.GrowingClockFrame.stage_clock_determinant.{u_1, u_2, u_3} {n : ℕ} {H : Fin (n + 1) → Type u_1}
+  [(j : Fin (n + 1)) → Fintype (H j)] {r : Type u_2} [Fintype r] [DecidableEq r] {h0 : Type u_3} [Fintype h0]
+  [DecidableEq h0] [(j : Fin (n + 1)) → DecidableEq (H j)] (A : (j : Fin (n + 1)) → Matrix (H j) h0 ℂ)
+  (V : Matrix h0 r ℂ) (hA : ∀ (j : Fin (n + 1)), (A j).conjTranspose * A j = 1) (hV : V.conjTranspose * V = 1)
+  (T : Matrix ((j : Fin (n + 1)) × H j) ((j : Fin (n + 1)) × H j) ℂ) (hT : T.conjTranspose * T = 1)
+  (hstep :
+    ∀ (j : Fin n),
+      T * D0.Algebra.GrowingClockFrame.stageFrame (fun k => A k * V) j.castSucc =
+        D0.Algebra.GrowingClockFrame.stageFrame (fun k => A k * V) j.succ)
+  (z : ℂ) :
+  have J := D0.Algebra.GrowingClockFrame.stageFrame fun k => A k * V;
+  have P := D0.Algebra.GrowingClockFrame.frameProjector J;
+  have C := D0.Algebra.GrowingClockFrame.frameReturn J T;
+  (1 -
+        z •
+          ((D0.Algebra.MovingProjectorTransport.cut P T).conjTranspose *
+            D0.Algebra.MovingProjectorTransport.cut P T)).det =
+    ((1 - z) • 1 + z • (C.conjTranspose * C)).det
+'D0.Algebra.GrowingClockFrame.stageFrame_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Algebra.GrowingClockFrame.transported_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Algebra.GrowingClockFrame.stage_clock_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]
