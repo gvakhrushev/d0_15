@@ -21930,3 +21930,80 @@ The paid readout/source transport is removed as a missing map on this
 family. Complete native Cost-Info binding and physical admission of
 its full task/test algebra remain open. `GR_closed=false`,
 `scientific_promotion=false`; the original goal and A--D stay active.
+
+## 2026-11-05 checkpoint: exact native code and two free current-control rows
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `076a59468b4927c72307e051eb3ff8d55c32339a`.
+Result location: §7fm of the existing full-source primary artifact.
+Write paths remain that artifact and this brief. No new task/branch,
+Ready/retirement, merge, accepted claim or scientific promotion.
+
+Parent substitution: §7fl's original 0/10 code map no longer needs a
+supplied zero blank. A canonical tail v followed by CX(r,t);G_t;CX(r,t)
+has complete endpoint Pi_r0 tensor G+Pi_r1 tensor G^-1. The inverse
+is synthesized by those positive calls. It maps |0>v to |0>Gv and
+|1>v to |10>; the direct branch's unused tail remains quantum WORK.
+The original parser accepts EVERY initialized pointer/reference
+input exactly. Dirty/failure columns stay in the full matrix and heat.
+
+The all-input original code-length effect is I+Pi_r1. The full tail
+trace is 2aI and its canonical compression is aI, so both the actual
+clock source and the true proper-cut return have explicit transport.
+At the three-call anchor C_code=a C_read, with unchanged feedback
+parameter and rank. The new all425D heat uses its own actual clock.
+This is a code container; variable-time serial emission is not inferred.
+
+Code validity alone permits a real unread-tail variation. The native
+chronology G_t^k;CX;G_t^(k+1);CX gives Pi_r0 G^(2k+1)+Pi_r1 G^-1.
+A pre-encoder even G_r power also preserves exact code validity.
+Their dense smooth comparison family has two logical controls
+(alpha,theta), full trace M(alpha,theta)TrF, and
+M=(cos(alpha)+a)cos(theta)+(a-cos(alpha))sin(theta).
+
+Its joint stationary section is alpha=0,
+cos(theta*)=(1+a)/sqrt(2(1+p)),
+sin(theta*)=(a-1)/sqrt(2(1+p)). At this section M*=sqrt(2(1+p))>0;
+both leading nuisance rows and mixed field/nuisance rows vanish.
+The nuisance Hessian is negative and nondegenerate. This is a
+stationary section, not a minimum/prospective selection theorem.
+
+With actual central gain 16 d_old M_c g_h L a_L/(beta Z_act),
+where M_c tends to M*, full H+J, its own FN implementation reactions
+and the open old-retention budget have joint kappa source (DQ/g_h,0,0). The existing off-shell
+separating test, physical norm/right lift and two-way Einstein--two-CAR
+recovery consume that same enlarged execution. No exact finite
+stationary G/CX word or classification of all current rows is claimed.
+
+Finite comparisons use certified odd/even powers and their ACTUAL
+lengths, with no efficiency claim. All common body padding precedes
+the final retention choice. Angle search error, XF contrast error,
+full-occurrence error, central actual/target Z ratio and price-reading
+precision have separate normalized budgets. No native word index is
+differentiated or imaginary free stage inserted.
+
+The parsed code/CQ component retains its own current equations.
+On Q<=1/2 its field gain is positive at the section, but its pointer
+row remains nonzero while the normalized full-master row vanishes.
+The actual central gain and its explicit error are retained. An
+additionally measured tail has a further nonzero entropy row; an
+unread quantum tail does not. The same-clock Gibbs defect gives the
+exact remaining cost/entropy/master source balance. No counterterm
+or arbitrary Info is chosen to enforce it.
+
+Validation: 25 exact source/section identities plus a 44-condition
+native encoder check (30 exact algebra,6 parser,3 native syntax and
+5 provenance checks). The latter executes the original pinned native
+loader, with one k1/m2 comparison and real common-clock padding.
+Normal and optimized warnings-as-errors outputs agree byte for byte.
+Scripts, full results and three final-proof reviews are embedded;
+affected integration guards run once on final inputs. No heavy heat,
+new root, geometry or Lean replay is performed.
+
+The canonical-birth code map and this two-control master-source
+application are now proved. CompleteTaskPrice, original Book vertex
+aggregation, serial stop/work, selection of the task/test algebra and
+the other genuine current equations remain open. Code validity is
+weaker than fixed-complete-operation FN fidelity; the two are not
+silently identified. `GR_closed=false`, `scientific_promotion=false`;
+the full goal and unchanged A--D contract remain active.
