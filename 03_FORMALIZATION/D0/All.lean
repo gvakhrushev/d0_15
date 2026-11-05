@@ -20,6 +20,7 @@ import D0.Algebra.FiniteGramTangent
 import D0.Algebra.FiniteHermitianAdjoint
 import D0.Algebra.FiniteMatrixPartialTrace
 import D0.Algebra.FiniteMatrixTensorProduct
+import D0.Algebra.FiniteSpecialization
 import D0.Algebra.FiniteWeightedAdjoint
 import D0.Algebra.GaloisComposite
 import D0.Algebra.GaloisPhiNontrivial
@@ -31,6 +32,7 @@ import D0.Algebra.MovingProjectorPositiveChart
 import D0.Algebra.MovingProjectorTransport
 import D0.Algebra.OriginalBookLocalBoost
 import D0.Algebra.OriginalBookLocalCreators
+import D0.Algebra.OriginalBookLocalMovedRoots
 import D0.Algebra.OriginalBookLocalStaticRoots
 import D0.Algebra.OriginalBookRadicalField
 import D0.Algebra.OriginalBookRadicalLocal
