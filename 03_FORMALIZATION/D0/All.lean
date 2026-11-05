@@ -31,6 +31,7 @@ import D0.Algebra.MovingProjectorCalculus
 import D0.Algebra.MovingProjectorPositiveChart
 import D0.Algebra.MovingProjectorTransport
 import D0.Algebra.OriginalBookJuliaLagrange1009
+import D0.Algebra.OriginalBookJuliaLagrangeApplication
 import D0.Algebra.OriginalBookLocalBoost
 import D0.Algebra.OriginalBookLocalCreators
 import D0.Algebra.OriginalBookLocalMovedRoots
