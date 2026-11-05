@@ -31,6 +31,7 @@ import D0.Algebra.MovingProjectorPositiveChart
 import D0.Algebra.MovingProjectorTransport
 import D0.Algebra.OriginalBookLocalBoost
 import D0.Algebra.OriginalBookLocalCreators
+import D0.Algebra.OriginalBookLocalStaticRoots
 import D0.Algebra.OriginalBookRadicalField
 import D0.Algebra.OriginalBookRadicalLocal
 import D0.Algebra.OriginalBookRadicalMod1009
