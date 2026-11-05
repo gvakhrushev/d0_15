@@ -143381,6 +143381,1353 @@ print(json.dumps(dict(schema='d0.canonical-born-code-tail/1',status='PASS',
 }
 ```
 
+## 7fn. Complete local code controls and the exact terminal-price screening boundary
+
+5 November 2026. Existing #334, native realization / final composition.
+Input `f58795bd700520cccba06a93fc3fb40f1716da59`. Consumer: the
+remaining local encoder/control premise of §7fm and the same-execution
+full-price gate of A--D. This classifies EVERY real two-qubit SO(4)
+encoder that sends every canonically initialized pointer input into
+valid original code0/10. It does not classify arbitrary larger-bank
+controls or claim complete physical task/price selection.
+
+The old two-control section is not promoted to this larger class.
+A missing fourth direction has a nonzero source there. A new
+field-independent stationary section handles the complete local
+class, with exact-code-valid positive native approximants. Separately,
+a concrete encoder makes the COMPLETE terminal code/CQ price attain
+zero for every incoming state while its full master field multiplier
+stays positive. This gives a precise price/task boundary; no fitted
+Info, new action or new geometry is used.
+
+Owned inputs are §7fm's canonical-birth code and full-clock estimate,
+§7fk's open old-retention reduction, the original RAW/CT/XF/SC maps,
+and `sources/d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md`.
+All unused columns, protected past, generated cuts and actual stage
+lengths remain. The original0/10 parser still distinguishes raw
+DIRECT/RETURN letters from their encoded binary digits.
+
+### 7fn.A. Faithful encoders and the previously missing dark row
+
+Use p=phi^-1, a=sqrt(p), v=(a,p), w=(-p,a)=G|1>,
+j=I_r tensor |v>, j_perp=I_r tensor |w>, P_j=jj*,
+and R_beta a real plane rotation with generator [[0,-1],[1,0]].
+The connected SO(4) encoders with
+
+    E j|0> = |0> tensor R_alpha v,
+    E j|1> = |10>
+
+are exactly
+
+    E_(alpha,beta)=E_alpha K_beta,
+    E_alpha=Pi_r0 tensor R_alpha+Pi_r1 tensor G^-1,
+    K_beta=P_j+j_perp R_beta j_perp*.                    (CV1)
+
+Indeed E_alpha* E fixes j pointwise; its orthogonal complement is a real
+two-plane, on which SO(4) fixes the orientation and leaves exactly SO(2).
+Conversely every displayed matrix has the required all-input map.
+This is the connected faithful, sharp-effect family. A possible opposite
+fixed real sign on the return branch is another component; it is not
+silently varied continuously. K_beta j=j exactly, so this dark operation
+changes neither complete initialized output nor original cold map.
+
+After the free pre-encoder pointer rotation O_theta, write m(alpha,theta)
+for §7fm NC9's multiplier. Since both v and w have rotation expectation
+cos(alpha),
+
+    Tr_t(E_alpha K_beta)=diag(cos(alpha),a)(I+R_beta),
+    M_3(alpha,beta,theta)
+      =[m(alpha,theta)+m(alpha,theta+beta)]/2
+      =cos(beta/2)m(alpha,theta+beta/2).                  (CV2)
+
+Thus at the old section alpha=beta=0,
+cos(theta_0)=(1+a)/mu_0, sin(theta_0)=(a-1)/mu_0,
+mu_0=sqrt(2(1+p)), all THREE leading rows vanish. Its theta/beta
+Hessian block is -mu_0[[1,1/2],[1/2,1/2]], while the alpha entry is
+-2/mu_0. The dark row by itself does not defeat the old section.
+
+### 7fn.B. Validity is weaker than faithfulness: the fourth direction defeats it
+
+Let z=|11>, S=z-perp=span{|00>,|01>,|10>}. The complete local validity
+domain is
+
+    C={U in SO(4): z*Uj=0}.                             (CV3)
+
+U includes the pre-pointer rotation. The all-input decoded-return effect
+j*U*|10><10|Uj has rank at most one and eigenvalue lambda<=1; mere code
+validity does not force lambda=1. C is a compact smooth four-dimensional
+manifold: U* z lies on the unit circle in j_perp, and each fibre is SO(3).
+Equivalently the map U -> z*Uj has rank two along C: if k=U*z in j_perp,
+the skew tangents mixing k with the two j-columns span its two outputs.
+
+At the old section let w_0=|0> tensor w, e=|10>, and
+
+    K_chi=|e><w_0|-|w_0><e|,
+    U_chi=exp(chi K_chi) E_(alpha=0)(O_(theta_0) tensor I).
+
+This is an allowed rotation wholly inside S. Direct all-column trace gives
+
+    M(U_chi)=mu_0(1+cos chi)/2-(p/mu_0)sin chi,
+    D_chi M|0=-p/mu_0 !=0.                              (CV4)
+
+The initialized code-one probability changes by cos^2 chi, so its first
+chi row at zero is zero. The original born cold first row is also zero
+there: the new output derivative is in |0,w>, orthogonal to the born
+tail v in its zero-pointer branch. Thus the nonzero row in CV4 is an
+actual full-column heat source, invisible to those first prepared
+statistics. Its leading normalized master value is
+-p T(Y)/(4 mu_0^2 g_h), not a suppressed old feedback residual.
+
+The prior section remains correct on its declared smaller family; it
+cannot be promoted to stationarity on C. An exact strict improvement is
+obtained at tan chi=-p^2, cos chi>0:
+
+    M(U_chi)=mu_0/2+sqrt(3p/2)>mu_0>0,                 (CV5)
+
+because p>1/2. This is a single analytic hostile witness, not a census.
+
+### 7fn.C. The full constrained trace and a field-independent maximizer
+
+For an ARBITRARY local matrix U on r,t, not just a faithful encoder, put
+P=P_(+,r) tensor I_t. The two flag-diagonal traces of the full XF
+comparison are equal. Therefore
+
+    Tr_((B,f,r,t))[(I_Bf tensor U)(R0 tensor I_t)
+                                    (F(Y) tensor I_r,t)]
+       =T(Y) M(U),
+    M(U)=Tr(U P), T(Y)=2^q-2+4Q(Y).                     (CV6)
+
+No prepared-state replacement enters this identity. P has rank two, so
+|M(U)|<=2 and |M(U)-M(V)|<=2||U-V||. The field dependence stays only in
+the original F(Y); the feasible set C and M have no geometry operand.
+
+Compactness yields a maximizer U_* in C, with
+
+    mu_*=M(U_*)>=mu_0/2+sqrt(3p/2)>0,
+    DM(U_*)[A]=0 for EVERY A in T_(U_*)C.              (CV7)
+
+This is stationarity of the derived leading full-master trace on ALL
+four local code-valid directions. It is not a new action or a premise
+that the whole physical process must minimize a selected price.
+
+There is a constructive one-dimensional Procrustes description. In the
+orthonormal basis (+v,+w,-v,-w),
+
+    P=diag(1,1,0,0), j_perp=span(e_2,e_4),
+    z=(p,a,-p,-a)/sqrt(2).
+
+Fix k=U* z in j_perp and write u=k_2 in[-1,1]. The constraint is Uk=z.
+On the remaining three-planes the objective is an SO(3) Procrustes
+problem. The fixed scalar part is a u/sqrt(2). For
+A=(I-zz*)P(I-kk*) the two nonzero singular values obey
+
+    sigma_1^2+sigma_2^2=3/2-(1-p/2)u^2,
+    sigma_1 sigma_2=sqrt((1-u^2)/2).
+
+The zero third singular value allows an orientation-preserving completion
+without decreasing the optimum. Hence the conditional maximum is exactly
+
+    f(u)=a u/sqrt(2)+sqrt(g(u)),
+    g(u)=3/2-(1-p/2)u^2+sqrt(2)sqrt(1-u^2).             (CV8)
+
+g is positive on[-1,1] and strictly concave inside; g''<0. Thus f is
+strictly concave, f'(0)=a/sqrt(2)>0, f'(1-)=-infinity, and f(-u)<f(u)
+for u>0. Its unique scalar maximizer u_* lies in(0,1). Bisection using
+exact algebraic signs of f' at rational arguments computes u_* with
+certified error. No numerical gravity root or catalogue is needed.
+
+Choose k=u_* e_2+sqrt(1-u_*^2)e_4, then take the rank-two polar/SVD
+completion between k-perp and z-perp, with its final one-dimensional
+orientation chosen in SO(3). This constructs a computable U_*.
+The positive rank-two singular values and the strict interior bracket
+give effective continuity bounds for its approximation. Multiplicity of
+other global maximizers is irrelevant: fix this one once, independently
+of Y. No full finite-price Hessian or exact finite stationary word is
+needed for the first-source result.
+
+### 7fn.D. Exact-code-valid positive native approximants cover the entire manifold
+
+Let E_0 be §7fm's original three-call canonical-birth encoder. Every U in C
+can be written
+
+    U=L E_0(O_theta tensor I_t),
+    L in SO(S), Lz=z.                                  (CV9)
+
+To prove this, U*z lies in the j_perp circle. Choose theta such that
+[E_0(O_theta tensor I)]*z=U*z; E_0*z=|1> tensor w. Then
+L=U[E_0(O_theta tensor I)]* fixes z and lies in SO(4), hence restricts to
+SO(3) on S. This is also the complete four-dimensional parametrization;
+three independent left SO(3) directions and the right circle direction
+give every local tangent.
+
+The chronological positive echo
+
+    G_r^k ; CX(t,r) ; G_r^k ; CX(t,r)
+
+rotates the plane |00>,|10> by 2k theta_G and fixes |01>,|11> EXACTLY.
+The exchanged r/t word similarly rotates |00>,|01> and fixes |10>,|11>.
+These are two coordinate rotation axes of SO(S). Three Euler factors
+cover SO(3), and even Golden powers are dense in every required angle.
+Each finite echo preserves S on ALL columns. An even positive pointer
+power, the exact three-call E_0, and these echoes therefore approximate
+every U in C while every native approximant is exactly code-valid on
+every initialized pointer input. There is no failure leakage or new blank.
+
+The chronological family G_r^m; E_0; A_k1; B_k2; A_k3 has
+m+2(k1+k2+k3)+9 calls, comprising m+2(k1+k2+k3)+1 G and eight CX.
+Here m is even and every k is nonnegative. Every such word has odd
+total length. Complete paid CX pairs make a finite
+catalogue common length, with its actual last gate still CX. The final
+preceding stage is square. Use the actual chronology, not a reordered
+endpoint-equivalent clock. Every code-tail letter occurs after all births;
+the tail is literally untouched before its encoder. Keep the old marks
+with their complete suffix transports. Exact validity does not prove that
+every earlier coherent reader is compatible with a later sealed CQ algebra.
+
+The faithful dark subgroup in CV1 need not be realized EXACTLY by each
+approximation; exact preservation of C is what this full local task asks.
+Its target and all current code probability sources are compared with their
+actual finite matrix errors, rather than redefining them to be the target.
+
+### 7fn.E. Full original master price, norm and native finite contrasts
+
+Retain the same field reader, READY gain g_h=a_n epsilon_h r_f, proper
+input rank and §7fk's independently varied open retention product. The
+new body target is (I_Bf tensor U_*)(R0 tensor I_t)(F tensor I_r,t)
+with the last spectator s, and d_final/d_old=2^(q+4). All actual encoder,
+Euler-echo, padding and final-gate stages enter the new L,D,Z,a_L.
+
+For a central actual native U_c in the positive collar M(U_c)>0 use
+
+    Gamma_act=16 d_old M(U_c) g_h L a_L/(beta Z_act)>0.    (CV10)
+
+It is frozen at that central word. Keep the actual ratio mu_*/M(U_c),
+bounded using |M(U_c)-mu_*|<=2||U_c-U_*||. At a smooth target point with
+central target M_c, the leading covector is
+
+    (Z_c/Z)[(M(U)/M_c)DQ/g_h+T DM(U)/(4M_c g_h)].          (CV11)
+
+All 425D modes and the original cut remain. CT/SR's full higher-age source
+bound before the normalizer ratio is exactly
+
+    2^(q+4) exp(x)x A/(4M_c g_h L), x=beta/22,            (CV12)
+
+with A the COMPLETE field/local-control endpoint Jacobian in the declared
+physical and tangent norm. Four local control directions are taken in a
+regular chart around U_*; its basis constants and all material/right-lift
+factors are retained. Compactness provides finite bounds on that chart.
+At U_*, all four leading rows DM vanish while the field row is DQ/g_h.
+
+For arbitrary code-valid U, its full initialized cold factor and derivatives
+are contractions, so §7fk applies without requiring sharp decoded effect
+or scalar cold visibility. If the full old helper product has norm
+<=cbar^K, each unit local endpoint direction satisfies
+|D J|<=2r0 z cbar^(2K)/(1-z), times its actual tangent/lift norm.
+All old primitive, old-preparation and generated-cut derivatives keep the
+full O(N cbar^(2K-1)) budget. The old heat tails retain their true minimum
+age and O_h(N(x/L)^q/g_h) bound with the additional bounded 1/M_c factor.
+No current independent input/reference or scene/beta/z variation is
+declared zero by these estimates.
+
+For each fixed h/prefix and finite physical/control test catalogue, first
+choose target steps, then the exact-code-valid positive angle words with
+all-column error eta=o(t_min) against the actual 1/g_h and norm constants.
+Record their actual lengths. Choose the separate marked XF error delta_F
+so BOTH B_h delta_F/(g_h|t_min|) and B_h N(L+1)delta_F/g_h vanish under
+the actual CT bound on N. Its compiler has polynomial log(1/delta_F)
+length at fixed width; no rate is assigned to the Golden power search.
+Complete all necessary body padding before choosing K; reselect K after
+any layout change. All old saved comparisons retain their literal support,
+actual steps and §7fk collective bounds.
+
+Integrate CV12 along the target comparison paths. The central target ratio
+obeys
+|log(Z_target(u)/Z_target(0))|
+ <=4 d_final L a_L exp(x) A |u|/(359D),
+so it tends to one without requiring L|t_min|->0. Keep separately the
+compiler-controlled actual-central/target-central ratio. Endpoint price
+error contributes at most
+(425/359)2^(q+4)exp(x)(eta+delta_F)/(4M_c g_h|t_min|)
+before the saved basis/lift constants. Actual price-reading errors must
+be o(|t_min|Gamma_act). These choices are sequential and effective; the
+outer h diagonal is made only after the fixed-h constants are supplied.
+
+After exact FN reactions for faithful implementations at fixed logical
+(Y,U), the full reduced source therefore has the joint kappa limit
+
+    (E_Y,E_local-code)/Gamma_act -> (DI_h,0_4)            (CV13)
+
+on this complete local code-valid domain. U_* is constant in Y, so its
+pullback adds no hidden field-dependent nuisance reaction. The existing
+GENERAL/SC source consistency, physical off-shell test and reverse recovery
+apply after this same calibration. A signed test <=-sigma/2 survives as
+<=-sigma/4 once the full new normalized budget is <=sigma/4. Neither
+preparation equality alone nor a shortened endpoint trace proves CV13;
+CV10–12, the original feedback and the exact native code-valid family do.
+
+### 7fn.F. The complete terminal code/CQ price has a screened global minimum
+
+This section uses the ACTUAL original decoded length and the specified
+complete code-CQ algebra, with the direct tail retained quantum. It
+still does not identify that component with the entire primitive,
+clock, work and Book03 history price.
+
+For U in C put W=Uj. The return effect on the pointer is
+
+    A_1=W* |10><10| W=lambda |u><u|,
+    0<=lambda<=1,
+    A_0=I-A_1.                                         (CV14)
+
+The rank-one form follows from the one-dimensional return subspace.
+The entire valid output retains all conditional quantum states.
+A mathematical input rho may include any old/reference correlations.
+For its efficient two-outcome instrument let q be the return weight,
+rho_b the normalized COMPLETE conditional states, and define
+
+    chi=S(rho)-sum_b q_b S(rho_b),
+    P_codeCQ=1+q-h(q)/ell+chi/ell,
+    ell=ln(phi).                                       (CV15)
+
+The previous pure-current calculation is the chi=0 case. In general
+chi>=0: mathematically purify rho, apply the actual efficient branch
+maps to the original factor, and use equality of the two marginal
+entropies in each conditional pure state. Completeness leaves the
+average reference marginal unchanged. Entropy concavity therefore
+gives S(rho)>=sum_b q_b S(rho_b). This proof introduces no physically
+prepared purification or paid operation.
+
+With the original Golden code reference pi=(p,p^2), p+p^2=1,
+
+    ell P_codeCQ=D((1-q,q)||pi)+chi>=0.                (CV16)
+
+This is an exact lower bound for this WHOLE terminal component,
+including all incoming preparation and conditional quantum entropy.
+It is not a lower bound for an unknown whole programme price obtained
+by assigning its remaining terms to zero.
+
+There is a concrete, field-independent valid encoder attaining the
+bound on the very same paid-reader family. Put
+
+    R=1/2+ap, lambda_0=p^2/R,
+    s_0=sqrt(lambda_0), c_0=sqrt(1-lambda_0),
+    x=|+> tensor v, y=|-> tensor v,
+    z_0=|+> tensor w, t_0=|-> tensor w.
+
+Define U_zero by its complete four columns in this input basis:
+
+    U_zero x=c_0|00>+s_0|10>,
+    U_zero y=|01>,
+    U_zero z_0=-s_0|00>+c_0|10>,
+    U_zero t_0=-|11>.                                  (CV17)
+
+The input and output orthonormal bases both have determinant -1 in
+the standard basis, so U_zero belongs to SO(4). Its prepared image
+is valid and its return effect is lambda_0 P_+. Its full trace factor
+is strictly positive:
+
+    M(U_zero)=[(a-p)c_0+(a+p)s_0]/sqrt(2)>0.            (CV18)
+
+Here a>p>0 and 0<lambda_0<1; these constants use only the original
+Golden birth/code data, not a field residual.
+
+The original reader is R0=CX(f,r), with r freshly born in v. For
+EVERY incoming flag/bank state, with arbitrary reference extension,
+
+    (I_f tensor <v|) R0* (I_f tensor P_+) R0
+                                    (I_f tensor |v>)=R I_f,
+
+because P_+ commutes with X. Composing the actual reader and U_zero
+therefore gives the operator identities
+
+    K_1* K_1=p^2 I_in,
+    K_0* K_0=p I_in.                                    (CV19)
+
+Both complete branches are scaled isometries on the ENTIRE incoming
+carrier. Their normalized output spectra equal those of rho; hence
+chi=0, q=p^2 and P_codeCQ=0 for every incoming density, including
+mixed/correlated preparations. No input is re-prepared or traced out.
+The full quantum record retains its distinctions even though the
+classical code outcome is independent of them.
+
+Thus U_zero attains the global minimum of this terminal component.
+Every regular admitted first variation of that component vanishes
+there. At entropy support changes use the actual value/limit law,
+not an asserted differentiable entropy at zero eigenvalues. This is
+stronger than a pure-state or field-only cancellation. It does not
+make the independently paid encoder/work/clock price vanish.
+
+On the same target, CV6 and CV18 leave the full master field
+coefficient nonzero. Its other internal rows have not been solved at
+U_zero: the all-control master section is U_* from CV7, not U_zero.
+These two encoders must not be identified. The complete terminal
+price alone therefore cannot supply the same full off-shell source
+as the master on this freely code-valid domain. In particular a
+vanishing derivative of f at q=p^2 is not an admissible positive
+Einstein calibration.
+
+The exact target is effectively approximated by the EXACT-code-valid
+native words of CV9. For a pure complete input an all-column error
+eta bounds the pointer probability error by2eta. On a fixed positive
+collar of p^2, f(p^2)=f'(p^2)=0 and bounded f'' give a quadratic price
+error O(eta^2); at a genuinely mixed input keep the actual additional
+chi error. Finite source comparisons must divide all actual endpoint
+price errors by their own nonzero step and stated calibration.
+No recurrence estimate is used to assert eta^2=o(|t|Gamma_master)
+when that full-clock gain vanishes. The exact matrix counterexample,
+the master-native recovery theorem and an arbitrary stronger native
+price-equivalence claim are distinct statements. No exact finite
+native critical word or singular source rescaling is inferred.
+
+### 7fn.G. Exact parent substitution and the remaining physical gate
+
+The local completion/control gap is now handled on its full declared
+four-dimensional domain, with exact code validity for every native
+approximant, every local source row and the actual full-clock gain.
+The earlier section fails under the new fourth variation, and is
+replaced by U_*. Its completed source remains (DQ/g_h,0_4), with the
+existing off-shell physical test and reverse recovery. This is a
+stationary maximum of the derived leading trace, not a prospective
+minimum principle or a proof of exact finite stationary words.
+
+The same full local control domain also admits the exact globally
+minimal terminal code/CQ construction CV17--19. Therefore code
+validity and retained quantum distinctions alone do not force that
+terminal record to carry the required comparison information. A task
+that demands a specified informative record may exclude U_zero, but
+must prove its actual response constraint and keep the real reaction.
+The stronger faithful task is not derived merely from the parser.
+
+CompleteTaskPrice still requires the genuine primitive/continuation
+ledger, original Book vertex aggregation and their weighted transport.
+Other independently admitted current preparation/reference, larger
+bank, clock/scene/beta/z variations keep their equations. Serial
+emission, stopping and any newly registered tail observations retain
+actual stages and costs. No B+P_codeCQ action or chosen compensator is
+introduced. `GR_closed=false`, `scientific_promotion=false`; the
+unchanged full A--D objective remains active.
+
+
+### 7fn.H. Bounded exact validation, provenance and reproduction
+
+Three separate scripts test the decisive new interfaces. None searches
+for a gravity root, diagonalizes a large heat clock, or promotes a
+terminal price to the complete physical Book law.
+
+The source checker has20 exact conditions in the Golden algebraic
+field. It verifies the dark-completion trace, the fourth-direction
+counterrow, the unchanged first probability/cold rows, the strict
+improvement coefficient and independent rank-two Procrustes invariants.
+The compact maximum and its strict-concavity/computability argument
+are analytic proofs above, not an extrapolation from sampled maxima.
+
+The control checker has40 conditions:35 exact algebraic,3 native syntax
+and2 provenance checks. It executes the ORIGINAL pinned native owner
+on one actual19-call word (11G,8CX), including an unknown protected
+old bank, and checks an exact unsharp effect, all dirty columns,
+zero initialized invalid amplitude, prior-mark suffix transport and
+real same-length padding. The dark stabilizer is an exact target;
+its finite approximants are not declared exact faithful FN verticals.
+The complete local statement is on SO(4). Disconnected orthogonal
+components and larger-bank operations are not globally optimized here.
+
+The screened-price checker has30 conditions:28 exact symbolic,one
+native syntax andone provenance check. It verifies the complete
+four-column SO(4) target, its code effects and positive full trace,
+then consumes the actual original one-CX reader to obtain pI/p^2I
+on ALL inputs, including arbitrary reference extension. It checks
+the original code/entropy identity. U_zero itself is a mathematical
+computable target; the script does not emit an exact finite native
+word for it or prove a tiny-gain mixed-input approximation theorem.
+
+Every check remains active with Python optimization and uses explicit
+exceptions. There are83 symbolic/algebraic conditions,4 syntax checks
+and3 input-provenance checks in total; these are not90 discharged
+physical premises. The full growing-clock norm/error transport,
+positive gain and old-control reduction consume the owned analytical
+estimates with the actual new layout.
+
+Normal and optimized warnings-as-errors results agree byte for byte
+for each checker. The runtime was Python3.12.14 and SymPy1.14.0.
+Save the following scripts under their displayed names. Equivalent
+replay from the repository root with the pinned source bytes is:
+
+```sh
+python -Werror source_check.py > source_check.normal.json
+python -O -Werror source_check.py > source_check.optimized.json
+python -Werror check_code_valid_controls.py --repo . > CONTROL.normal.json
+python -O -Werror check_code_valid_controls.py --repo . > CONTROL.optimized.json
+python -Werror check_screened_code.py --repo . > screened.normal.json
+python -O -Werror check_screened_code.py --repo . > screened.optimized.json
+```
+
+The complete results and their script/source/result hashes follow.
+Three bounded reviews pin the exact preceding proof through G and
+approve source, native-admission and full-terminal-price scope. They
+are not independent assembly acceptance or physical closure. Affected
+repository integration guards run once on this final insertion.
+
+#### 7fn.H1. Standalone `source_check.py`
+
+```python
+"""Exact new local-control identities; no root search or whole-price replacement."""
+import json
+import sympy as s
+
+a, u, h, mu, ca, sa, cb, sb, ct, st = s.symbols('a u h mu ca sa cb sb ct st', real=True)
+p=a*a
+parameters=(u,h,mu,ca,sa,cb,sb,ct,st)
+domain=s.QQ.frac_field(*parameters)
+poly=s.Poly(a**4+a*a-1,a,domain=domain)
+checks=[]
+
+def red(x):
+    return s.rem(s.Poly(s.expand(x),a,domain=domain),poly).as_expr()
+
+def mr(x): return x.applyfunc(red)
+
+def zero(x,label):
+    ok=all(red(v)==0 for v in x) if isinstance(x,s.MatrixBase) else red(x)==0
+    if not ok: raise RuntimeError(label)
+    checks.append(label)
+
+def constrained(x):
+    x=s.rem(s.Poly(s.expand(x),h,domain=s.QQ.frac_field(a,u)),s.Poly(h*h+u*u-1,h,domain=s.QQ.frac_field(a,u))).as_expr()
+    return red(x)
+
+I=s.eye(2); J=s.Matrix([[0,-1],[1,0]])
+P0=s.diag(1,0); P1=s.diag(0,1); X=s.Matrix([[0,1],[1,0]])
+v=s.Matrix([a,p]); w=s.Matrix([-p,a]); G=s.Matrix([[a,-p],[p,a]])
+j=s.kronecker_product(I,v); jp=s.kronecker_product(I,w)
+Pj=mr(j*j.T); P=s.kronecker_product((I+X)/2,I)
+E=s.kronecker_product(P0,ca*I+sa*J)+s.kronecker_product(P1,G.T)
+Kb=mr(Pj+jp*(cb*I+sb*J)*jp.T)
+zero(Kb*j-j, 'all initialized pointer inputs are fixed by the dark completion')
+zero(jp.T*jp-I,'the unused input columns have their true orthonormal basis')
+EU=mr(E*Kb)
+ptr=s.Matrix([[sum(EU[2*r+t,2*k+t] for t in range(2)) for k in range(2)] for r in range(2)])
+zero(ptr-s.diag(ca,a)*(I+cb*I+sb*J),'full dark partial trace is D times I plus Rbeta')
+Ot=ct*I+st*J
+mt=(ca+a)*ct+(a-ca)*st
+ctb=ct*cb-st*sb; stb=st*cb+ct*sb
+mtb=(ca+a)*ctb+(a-ca)*stb
+zero(s.trace(mr(EU*s.kronecker_product(Ot,I))*P)-(mt+mtb)/2,'full three-angle trace multiplier is the average of the two sharp multipliers')
+
+# New validity-only direction at the old stationary section.
+Ostar=s.Matrix([[1+a,1-a],[a-1,1+a]])/mu
+Esharp=s.kronecker_product(P0,I)+s.kronecker_product(P1,G.T)
+Ustar=mr(Esharp*s.kronecker_product(Ostar,I))
+w0=s.kronecker_product(s.Matrix([1,0]),w)
+e10=s.Matrix([0,0,1,0]); e11=s.Matrix([0,0,0,1])
+Kchi=mr(e10*w0.T-w0*e10.T)
+Pplane=mr(w0*w0.T+e10*e10.T)
+zero(Kchi.T+Kchi,'chi generator is a real skew tangent')
+zero(Kchi*e11,'chi generator fixes the invalid output column')
+zero(e11.T*Ustar*j,'the old section is code valid on every initialized input')
+zero(mu*s.trace(Ustar*P)-2*(1+p),'old full-trace coefficient is mu0')
+zero(mu*s.trace(Kchi*Ustar*P)+p,'new chi full-trace first row is minus p over mu0')
+zero(mu*s.trace(Pplane*Ustar*P)-(1+p),'chi cosine coefficient is mu0 over two')
+zero(s.kronecker_product(v,v).T*Kchi*Ustar*j,'new cold first row vanishes on every initialized pointer input')
+Pe=e10*e10.T
+zero(j.T*Ustar.T*(Kchi.T*Pe+Pe*Kchi)*Ustar*j,'new decoded-return effect first row vanishes')
+if all(red(x)==0 for x in Kchi*Ustar*j):
+    raise RuntimeError('chi must change the complete prepared state')
+checks.append('hostile control: chi changes the prepared quantum state despite zero probability and cold first rows')
+zero((1+p)**2+p*p-3,'strict improvement amplitude reduces to sqrt(3p/2)')
+zero(p-(1+p)*p*p,'the strict improvement angle has tangent minus p squared, with positive denominator cleared')
+
+# Independent fixed-k Procrustes invariants in (+v,+w,-v,-w).
+Pdiag=s.diag(1,1,0,0)
+z=s.Matrix([p,a,-p,-a])/s.sqrt(2)
+k=s.Matrix([0,u,0,h])
+A=(s.eye(4)-z*z.T)*Pdiag*(s.eye(4)-k*k.T)
+Gram=A.T*A
+frob=constrained(s.trace(Gram))
+prod=constrained((s.trace(Gram)**2-s.trace(Gram*Gram))/2)
+zero(frob-(s.Rational(3,2)-(1-p/2)*u*u),'rank-two Procrustes squared norm is the displayed polynomial')
+zero(prod-(1-u*u)/2,'rank-two Procrustes squared singular product is one half times one minus u squared')
+zero(s.sqrt(2)*(z.T*Pdiag*k)[0]-a*u,'fixed scalar trace term is a u over sqrt two')
+zero((z.T*z)[0]-1,'the physical invalid vector is normalized in the adapted basis')
+zero((z.T*Pdiag*z)[0]-s.Rational(1,2),'physical invalid vector has exactly one half in the trace subspace')
+
+print(json.dumps({
+    'scope':'exact local valid-code trace, sharp-fibre completion, new chi counterrow, and full Procrustes invariants',
+    'check_count':len(checks),'checks':checks,
+    'maximizer_computed_numerically':False,
+    'GR_closed':False,'exact_finite_stationary_native_word_claimed':False,
+},ensure_ascii=False,sort_keys=True,indent=2))
+```
+
+#### 7fn.H2. Standalone `check_code_valid_controls.py`
+
+```python
+#!/usr/bin/env python3
+"""Exact positive native echoes in the complete code-valid domain."""
+from __future__ import annotations
+import argparse
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import platform
+import sys
+import sympy as sp
+
+parser=argparse.ArgumentParser()
+parser.add_argument('--repo',type=Path,default=Path('/Users/grigorijvahrusev/.codex/worktrees/gr-native-source-20261024/d0-main-assembly-audit'))
+args=parser.parse_args()
+pins={
+ '02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py':'222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c',
+ '02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md':'27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71'}
+checks=[]
+def need(ok,label,kind='exact_algebra'):
+    if not bool(ok): raise ArithmeticError(label)
+    checks.append(dict(label=label,kind=kind))
+for name,digest in pins.items():
+    need(hashlib.sha256((args.repo/name).read_bytes()).hexdigest()==digest,
+         'pinned repository input '+name,'provenance')
+owner=args.repo/next(iter(pins))
+spec=importlib.util.spec_from_file_location('owned_code_control_native',owner)
+if spec is None or spec.loader is None: raise RuntimeError('native owner loader unavailable')
+ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+G=sp.Matrix(ne.G_LOCAL);a=ne.A;p=ne.P
+I=sp.eye(2);P0=sp.diag(1,0);P1=sp.diag(0,1)
+v=sp.Matrix([a,p]);w=sp.Matrix([-p,a])
+kron=sp.kronecker_product
+def eq(A,B): return ne.exact_matrix_equal(A,B)
+def canon(M):
+    return sp.Matrix(M).applyfunc(lambda x:ne.GOLDEN_FIELD.to_sympy(ne.GOLDEN_FIELD.from_sympy(x)))
+def gates_g(q,k): return (ne.Gate('G',(q,)),)*k
+def echo(target,control,k):
+    return gates_g(target,k)+(ne.Gate('CX',(control,target)),)+gates_g(target,k)+(ne.Gate('CX',(control,target)),)
+def execution(word): return ne.Execution(2,(),(),tuple(word),profile=ne.G_CX,report_bits=(0,1))
+def matrix(word):
+    return sp.Matrix(ne.word_matrix(execution(word),max_qubits=2,max_expanded_stages=len(word)))
+e0word=(ne.Gate('CX',(0,1)),ne.Gate('G',(1,)),ne.Gate('CX',(0,1)))
+E0=matrix(e0word);A1=matrix(echo(0,1,1));B2=matrix(echo(1,0,2))
+need(eq(E0,kron(P0,G)+kron(P1,G.T)),'original three-call anchor on every column')
+need(eq(A1,kron(G**2,P0)+kron(I,P1)),'positive A1 echo rotates only valid00/10 plane')
+need(eq(B2,kron(P0,G**4)+kron(P1,I)),'positive B2 echo rotates only valid00/01 plane')
+n=sp.Matrix([0,0,0,1]);S=sp.eye(4)-n*n.T
+for label,U in [('A1',A1),('B2',B2)]:
+    need(eq(U.T*U,sp.eye(4)),label+' retains all four orthogonal columns')
+    need(eq(U*n,n) and eq(U*S,S*U),label+' exactly fixes invalid11 and preserves valid space')
+    need(ne.GOLDEN_FIELD.from_sympy(U.det())==ne.GOLDEN_FIELD.one,label+' has positive determinant')
+j=kron(I,v);jp=kron(I,w)
+need(eq(j.T*j,I) and eq(jp.T*jp,I) and eq(j.T*jp,sp.zeros(2)),
+     'actual canonical birth and its full detail are orthogonal isometries')
+need(eq(j*j.T+jp*jp.T,sp.eye(4)),'initialized and unused input columns exhaust full carrier')
+need(eq(n.T*E0*j,sp.zeros(1,2)),'anchor code validity holds on every initialized pointer input')
+
+# One genuine four-control word; no angle/rank census.
+word=gates_g(0,2)+e0word+echo(0,1,1)+echo(1,0,2)+echo(0,1,1)
+ex=execution(word);ne.validate_execution(ex,max_qubits=2,max_expanded_stages=19)
+inv=ne.inventory(ex,max_qubits=2,max_expanded_stages=19)
+need((len(word),inv.g_count,inv.cx_count,inv.source_i_count)==(19,11,8,0),
+     'actual complete word has19 calls11G8CX with no SourceI','native_syntax')
+U=matrix(word)
+need(eq(U,A1*B2*A1*E0*kron(G**2,I)),'literal chronology has the claimed complete all-column endpoint')
+need(eq(U.T*U,sp.eye(4)),'complete control word is orthogonal on all prepared and dirty columns')
+need(ne.GOLDEN_FIELD.from_sympy(U.det())==ne.GOLDEN_FIELD.one,'complete endpoint belongs to SO4')
+V=canon(U*j)
+need(eq(V.T*V,I),'arbitrary initialized pointer state retains its complete norm')
+need(eq(n.T*V,sp.zeros(1,2)),'every finite control word outcome is EXACTLY valid without postselection')
+need(not eq(n.T*U,sp.zeros(1,4)),'invalid dirty input columns remain present in full unitary')
+F0=kron(P0,I);F1=sp.diag(0,0,1,0);Fbad=n*n.T
+need(eq(F0+F1+Fbad,sp.eye(4)),'direct return and invalid parser effects exhaust complete carrier')
+Ereturn=canon(V.T*F1*V)
+need(eq(V.T*F0*V+Ereturn,I),'original direct0/return10 effects exhaust initialized outputs')
+need(not eq(Ereturn**2,Ereturn),'actual positive valid word realizes an unsharp return effect')
+need(ne.GOLDEN_FIELD.from_sympy(Ereturn.det())==ne.GOLDEN_FIELD.zero,'return effect has rank at most one')
+need(not eq(Ereturn,sp.zeros(2)),'actual return effect is not zero')
+need(eq(V.T*(F0+2*F1)*V,I+Ereturn),'same original parsed code-length pullback keeps changed return effect')
+
+# Exact target dark stabilizer and its SO3 x SO2 factorization.
+R=G**2;K=canon(j*j.T+jp*R*jp.T);UK=canon(E0*K)
+need(eq(K*j,j),'target dark rotation fixes ALL initialized pointer vectors exactly')
+need(eq(K.T*K,sp.eye(4)) and not eq(K,sp.eye(4)),
+     'target dark rotation is a genuine complete orthogonal change')
+need(eq(n.T*UK*j,sp.zeros(1,2)) and eq(UK*j,E0*j),
+     'target completion keeps exact initialized code and coherent final state')
+O=kron(R,I);L=canon(UK*(E0*O).T)
+need(eq(L*n,n) and eq(L.T*L,sp.eye(4)),'target dark rotation factors through valid-space SO3')
+need(eq(L*E0*O,UK),'exact full-column SO3 times anchor times pointer factorization')
+need(eq(UK.T*n,jp*R.T*sp.Matrix([0,1])),
+     'factorization uses exact invalid preimage in canonical birth detail')
+
+# Unknown old input: no native call addresses it; all entanglement is allowed.
+wideword=tuple(ne.Gate(g.op,tuple(q+1 for q in g.wires)) for g in word)
+wide=ne.Execution(3,(),(0,),wideword,profile=ne.G_CX,report_bits=(1,2))
+ne.validate_execution(wide,max_qubits=3,max_expanded_stages=19)
+UW=sp.Matrix(ne.word_matrix(wide,max_qubits=3,max_expanded_stages=19))
+need(eq(UW,kron(I,U)),'actual grammar preserves every protected old-bank input column')
+VW=canon(UW*kron(I,j))
+need(eq(kron(I,n.T)*VW,sp.zeros(2,4)),
+     'exact code validity extends to arbitrary entangled old-bank/pointer input')
+need(eq(VW.T*kron(I,F1)*VW,kron(I,Ereturn)),
+     'complete return effect preserves unknown old correlations')
+M=canon(j*sp.Matrix([[0,1],[1,0]])*j.T)
+transport=canon(U*M*U.T)
+need(eq(V.T*transport*V,j.T*M*j),'actual suffix transport preserves a coherent required past mark')
+need(not eq(U.T*F1*U,E0.T*F1*E0),
+     'fixed all-column current FN effect is not silently treated as unchanged')
+
+padword=e0word+(ne.Gate('CX',(0,1)),)*16
+need(len(padword)==len(word) and eq(matrix(padword),E0),
+     'actually paid CX pairs give a common19-call anchor layout','native_syntax')
+need(word[-1].op=='CX' and word[-2].op=='G' and padword[-1].op=='CX',
+     'last gate and preceding square stage are actual paid gates','native_syntax')
+print(json.dumps(dict(schema='d0.exact-code-valid-controls/1',status='PASS',
+    source_commit='f58795bd700520cccba06a93fc3fb40f1716da59',source_sha256=pins,
+    checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    runtime=dict(python=platform.python_version(),sympy=sp.__version__),
+    check_count=len(checks),checks=checks,
+    classifications={k:sum(c['kind']==k for c in checks) for k in sorted({c['kind'] for c in checks})},
+    actual=dict(G=11,CX=8,calls=19,all_column_dimension=4,old_bank_dimension=8,
+                added_births=0,helper_qubits=0,invalid_probability_exactly_zero=True),
+    scope=dict(full_code_valid_domain_dense=True,exact_dark_stabilizer_word_claimed=False,
+               finite_words_are_fixed_faithful_FN_fibre=False,full_clock_replayed=False,
+               physical_Cost_Info_selected=False,GR_closed=False)),
+    ensure_ascii=False,sort_keys=True,indent=2))
+```
+
+#### 7fn.H3. Standalone `check_screened_code.py`
+
+```python
+#!/usr/bin/env python3
+"""Exact four-column screened-code target and original one-CX all-input map.
+
+The screened SO(4) matrix is a mathematical target, not an emitted native word.
+Only the reader CX is evaluated through the pinned original native owner.
+No heat diagonalization, root search, or physical Info selection is performed.
+"""
+from __future__ import annotations
+import argparse
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import platform
+import sys
+import sympy as sp
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--repo', type=Path, required=True)
+args = parser.parse_args()
+owner_rel = '02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+owner_sha = '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+checks = []
+
+def need(ok, label, kind='exact_symbolic'):
+    if not bool(ok):
+        raise ArithmeticError(label)
+    checks.append({'label': label, 'kind': kind})
+
+owner = args.repo / owner_rel
+need(hashlib.sha256(owner.read_bytes()).hexdigest() == owner_sha,
+     'pinned original native execution owner', 'provenance')
+spec = importlib.util.spec_from_file_location('screened_code_native_owner', owner)
+if spec is None or spec.loader is None:
+    raise RuntimeError('native owner loader unavailable')
+ne = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = ne
+spec.loader.exec_module(ne)
+
+# p,a retain their original Golden polynomial and positive branches. s,c are
+# positive square roots with s^2=lambda0 and c^2=1-lambda0, reduced exactly.
+a, p, s, c = sp.symbols('a p s c', positive=True)
+rt2 = sp.sqrt(2)
+base = sp.groebner([a*a-p, p*p+p-1], a, p, extension=rt2)
+lam = 2*p*p/(1+2*a*p)
+
+def normal(expr):
+    expr = sp.expand(expr)
+    expr = sp.rem(sp.Poly(expr, c, domain='EX'),
+                  sp.Poly(c*c+s*s-1, c, domain='EX')).as_expr()
+    expr = sp.rem(sp.Poly(expr, s, domain='EX'),
+                  sp.Poly(s*s-lam, s, domain='EX')).as_expr()
+    numerator, denominator = sp.together(expr).as_numer_denom()
+    # Denominators are powers of 1+2ap and rational constants, all nonzero
+    # on the explicitly pinned positive Golden branch.
+    terms = sp.Poly(sp.expand(numerator), s, c, domain="EX").terms()
+    reduced = sum(base.reduce(sp.expand(coef))[1] * s**mon[0] * c**mon[1]
+                  for mon, coef in terms)
+    return sp.expand(reduced) / denominator
+
+def eq(A, B):
+    A, B = sp.Matrix(A), sp.Matrix(B)
+    return A.shape == B.shape and all(normal(x) == 0 for x in A-B)
+
+def kron(*xs):
+    return sp.kronecker_product(*xs)
+
+I2 = sp.eye(2)
+e0, e1 = sp.Matrix([1, 0]), sp.Matrix([0, 1])
+v, w = sp.Matrix([a, p]), sp.Matrix([-p, a])
+plus, minus = (e0+e1)/rt2, (e0-e1)/rt2
+P0, P1, Pplus = e0*e0.T, e1*e1.T, plus*plus.T
+need(ne.exact_matrix_equal(sp.Matrix(ne.G_LOCAL),
+                          sp.Matrix([[ne.A, -ne.P], [ne.P, ne.A]])),
+     'symbolic Golden convention agrees with pinned original G')
+need(bool((ne.P-sp.Rational(1, 2)).is_positive) and bool((1-ne.P).is_positive)
+     and bool(ne.A.is_positive), 'original positive branches have 1/2<p<1 and a>0')
+need(normal((sp.Rational(1, 2)+a*p-p*p)-(a*p+p-sp.Rational(1, 2))) == 0,
+     'lambda denominator exceeds p2 by the positive sum ap+p-1/2')
+need(normal((a-p)*(a+p)-p**3) == 0,
+     'a exceeds p because (a-p)(a+p)=p3 and a+p is positive')
+need(eq(sp.Matrix.hstack(v, w).T*sp.Matrix.hstack(v, w), I2),
+     'canonical born and unused orthogonal tail columns form the full frame')
+
+x, y, z, t = kron(plus, v), kron(minus, v), kron(plus, w), kron(minus, w)
+B = sp.Matrix.hstack(x, y, z, t)
+b00, b01, b10, b11 = [sp.eye(4)[:, i] for i in range(4)]
+C = sp.Matrix.hstack(c*b00+s*b10, b01, -s*b00+c*b10, -b11)
+U = C*B.T
+need(eq(B.T*B, sp.eye(4)) and normal(B.det()+1) == 0,
+     'ordered complete input basis is orthogonal with orientation minus one')
+need(eq(C.T*C, sp.eye(4)) and normal(C.det()+1) == 0,
+     'ordered complete output basis is orthogonal with orientation minus one')
+need(eq(U.T*U, sp.eye(4)) and normal(U.det()-1) == 0,
+     'full four-column screened target is special orthogonal')
+need(eq(U*x, c*b00+s*b10) and eq(U*y, b01)
+     and eq(U*z, -s*b00+c*b10) and eq(U*t, -b11),
+     'all four specified target columns, including the dirty complement, are retained')
+
+J = kron(I2, v)
+W = U*J
+F0, F1, Fail = kron(P0, I2), kron(P1, P0), kron(P1, P1)
+need(eq(F0+F1+Fail, sp.eye(4)) and eq(F0*F1, sp.zeros(4))
+     and eq(F0*Fail, sp.zeros(4)) and eq(F1*Fail, sp.zeros(4)),
+     'direct return and invalid effects exhaust all four output columns')
+need(eq(W.T*W, I2), 'complete initialized screened code is an isometry')
+need(eq(Fail*W, sp.zeros(4, 2)), 'every incoming pointer state produces valid code without postselection')
+need(not eq(Fail*U, sp.zeros(4)), 'invalid dirty full columns are not removed from the target')
+A1, A0 = W.T*F1*W, W.T*F0*W
+need(eq(A1, lam*Pplus), 'full return effect is lambda0 times Pplus on every input')
+need(eq(A0, I2-lam*Pplus), 'full direct effect is the complete complement of the return effect')
+L = F0+2*F1
+need(eq(W.T*L*W, I2+lam*Pplus), 'original valid code-length effect is I plus return effect')
+M = sp.trace(U*kron(Pplus, I2))
+M_claim = ((a-p)*c+(a+p)*s)/rt2
+need(normal(M-M_claim) == 0,
+     'full trace coefficient is ((a-p)c+(a+p)s)/sqrt2 with positive factors')
+
+# Actual original literal reader, all f/r/t columns. Tail is untouched.
+reader_word = (ne.Gate('CX', (0, 1)),)
+reader_ex = ne.Execution(3, (), (), reader_word, profile=ne.G_CX, report_bits=(1, 2))
+ne.validate_execution(reader_ex, max_qubits=3, max_expanded_stages=1)
+reader = sp.Matrix(ne.word_matrix(reader_ex, max_qubits=3, max_expanded_stages=1))
+need(ne.inventory(reader_ex, max_qubits=3, max_expanded_stages=1).cx_count == 1,
+     'pinned native grammar executes exactly one CX reader and no new helper', 'native_syntax')
+CXfr = kron(P0, I2)+kron(P1, sp.Matrix([[0, 1], [1, 0]]))
+need(eq(reader, kron(CXfr, I2)), 'literal native reader acts as CX(f,r) and identity on the entire tail')
+Jread = kron(I2, v, v)
+V = kron(I2, U)*reader*Jread
+Pdirect, Preturn, Pinvalid = kron(I2, F0), kron(I2, F1), kron(I2, Fail)
+need(eq(V.T*V, I2), 'composed actual reader and target code retain a complete two-column input isometry')
+need(eq(Pinvalid*V, sp.zeros(8, 2)), 'composed reader-code has no invalid branch for any f input')
+K1, K0 = Preturn*V, Pdirect*V
+need(eq(K1.T*K1, p*p*I2), 'composed full return effect is exactly p2 I on the entire f input')
+need(eq(K0.T*K0, p*I2), 'composed full direct effect is exactly p I on the entire f input')
+need(eq(K1.T*K1+K0.T*K0, I2), 'all initialized outcome mass is retained without normalization or selection')
+need(eq(V.T*kron(I2, L)*V, (1+p*p)*I2),
+     'actual original code cost is exactly (1+p2)I on every input')
+# Tensor identities explicitly retain an arbitrary two-dimensional old/reference.
+Vref = kron(I2, V)
+need(eq(Vref.T*kron(I2, Preturn)*Vref, p*p*sp.eye(4))
+     and eq(Vref.T*kron(I2, Pdirect)*Vref, p*sp.eye(4)),
+     'scalar outcome effects preserve arbitrary old-reference coherences and entanglement')
+need(eq((K0/sp.sqrt(p)).T*(K0/sp.sqrt(p)), I2)
+     and eq((K1/p).T*(K1/p), I2),
+     'both normalized complete conditional branches are isometries, including mixed inputs')
+need(normal(p+2*p*p-(1+p*p)) == 0,
+     'Golden outcome entropy in log-phi units equals the actual 1+p2 code charge')
+q, ell = sp.symbols('q ell', positive=True)
+f = 1+q+((1-q)*sp.log(1-q)+q*sp.log(q))/ell
+Dover = ((1-q)*(sp.log(1-q)+ell)+q*(sp.log(q)+2*ell))/ell
+need(sp.simplify(Dover-f) == 0,
+     'specified binary code-minus-Shannon price is the relative entropy to (p,p2) divided by ell')
+
+summary = {
+    'schema': 'd0.screened-code-all-input-check/1',
+    'status': 'PASS',
+    'checker_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    'source_inputs': {owner_rel: owner_sha},
+    'runtime': {'python': platform.python_version(), 'sympy': sp.__version__},
+    'check_count': len(checks),
+    'classifications': {kind: sum(c['kind'] == kind for c in checks)
+                        for kind in sorted({c['kind'] for c in checks})},
+    'checks': checks,
+    'target': {
+        'lambda0': 'p^2/(1/2+ap)',
+        'born_input': 'v=(a,p), a^2=p, p^2+p=1; positive branches',
+        'return_effect': 'p^2 I on the entire pre-reader f input and every retained reference',
+        'direct_effect': 'p I on the same complete input',
+        'full_trace': '((a-p)c+(a+p)s)/sqrt(2)>0, s^2=lambda0, c^2=1-lambda0',
+        'terminal_price': '0 for the specified full binary CQ convention, all input density matrices',
+    },
+    'scope': {
+        'screened_target_native_word_emitted': False,
+        'original_reader_executed': True,
+        'all_target_columns_retained': True,
+        'physical_Info_selected': False,
+        'complete_native_Cost_binding': False,
+        'master_internal_stationarity': False,
+        'native_normalized_approximation_gate_proved_here': False,
+        'mixed_input_approximate_chi_control_proved_here': False,
+        'GR_closed': False,
+    },
+}
+print(json.dumps(summary, sort_keys=True, indent=2))
+```
+
+#### 7fn.H4. Executed receipts and final proof pins
+
+```json
+{
+  "GR_closed": false,
+  "brief_sha256": "38fa57fa22300eb2ab6eb8b8ae9c0e7c419d23578d47be603581aaf35c419379",
+  "checkers": [
+    {
+      "arithmetic": "exact Golden algebra and section identities; native/provenance checks are classified separately in the respective results",
+      "check_count": 20,
+      "checker_sha256": "0bd58cfde0895d82f4287778b00c438b88ac8a82a40f8db3c8e31218db9cbb76",
+      "normal_optimized_identical": true,
+      "normal_result": "source_check.normal.json",
+      "normal_result_sha256": "e834a2fa9e7d21a816a813d044eb3c51199e90524a52f2c993ed3512a583638e",
+      "optimized_result": "source_check.optimized.json",
+      "optimized_result_sha256": "e834a2fa9e7d21a816a813d044eb3c51199e90524a52f2c993ed3512a583638e",
+      "result": {
+        "GR_closed": false,
+        "check_count": 20,
+        "checks": [
+          "all initialized pointer inputs are fixed by the dark completion",
+          "the unused input columns have their true orthonormal basis",
+          "full dark partial trace is D times I plus Rbeta",
+          "full three-angle trace multiplier is the average of the two sharp multipliers",
+          "chi generator is a real skew tangent",
+          "chi generator fixes the invalid output column",
+          "the old section is code valid on every initialized input",
+          "old full-trace coefficient is mu0",
+          "new chi full-trace first row is minus p over mu0",
+          "chi cosine coefficient is mu0 over two",
+          "new cold first row vanishes on every initialized pointer input",
+          "new decoded-return effect first row vanishes",
+          "hostile control: chi changes the prepared quantum state despite zero probability and cold first rows",
+          "strict improvement amplitude reduces to sqrt(3p/2)",
+          "the strict improvement angle has tangent minus p squared, with positive denominator cleared",
+          "rank-two Procrustes squared norm is the displayed polynomial",
+          "rank-two Procrustes squared singular product is one half times one minus u squared",
+          "fixed scalar trace term is a u over sqrt two",
+          "the physical invalid vector is normalized in the adapted basis",
+          "physical invalid vector has exactly one half in the trace subspace"
+        ],
+        "exact_finite_stationary_native_word_claimed": false,
+        "maximizer_computed_numerically": false,
+        "scope": "exact local valid-code trace, sharp-fibre completion, new chi counterrow, and full Procrustes invariants"
+      },
+      "script": "source_check.py"
+    },
+    {
+      "arithmetic": "exact Golden algebra and section identities; native/provenance checks are classified separately in the respective results",
+      "check_count": 40,
+      "checker_sha256": "d4462f89c6216f7c50fe58d08cb21478587d3446d300e61b33415905e00ad13e",
+      "normal_optimized_identical": true,
+      "normal_result": "CONTROL.normal.json",
+      "normal_result_sha256": "ea299731ae75053a18dcf2efaa4ecd1939a0ec2c55b1c92d49298b90812b02b4",
+      "optimized_result": "CONTROL.optimized.json",
+      "optimized_result_sha256": "ea299731ae75053a18dcf2efaa4ecd1939a0ec2c55b1c92d49298b90812b02b4",
+      "result": {
+        "actual": {
+          "CX": 8,
+          "G": 11,
+          "added_births": 0,
+          "all_column_dimension": 4,
+          "calls": 19,
+          "helper_qubits": 0,
+          "invalid_probability_exactly_zero": true,
+          "old_bank_dimension": 8
+        },
+        "check_count": 40,
+        "checker_sha256": "d4462f89c6216f7c50fe58d08cb21478587d3446d300e61b33415905e00ad13e",
+        "checks": [
+          {
+            "kind": "provenance",
+            "label": "pinned repository input 02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+          },
+          {
+            "kind": "provenance",
+            "label": "pinned repository input 02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "original three-call anchor on every column"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "positive A1 echo rotates only valid00/10 plane"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "positive B2 echo rotates only valid00/01 plane"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "A1 retains all four orthogonal columns"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "A1 exactly fixes invalid11 and preserves valid space"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "A1 has positive determinant"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "B2 retains all four orthogonal columns"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "B2 exactly fixes invalid11 and preserves valid space"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "B2 has positive determinant"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "actual canonical birth and its full detail are orthogonal isometries"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "initialized and unused input columns exhaust full carrier"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "anchor code validity holds on every initialized pointer input"
+          },
+          {
+            "kind": "native_syntax",
+            "label": "actual complete word has19 calls11G8CX with no SourceI"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "literal chronology has the claimed complete all-column endpoint"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "complete control word is orthogonal on all prepared and dirty columns"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "complete endpoint belongs to SO4"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "arbitrary initialized pointer state retains its complete norm"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "every finite control word outcome is EXACTLY valid without postselection"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "invalid dirty input columns remain present in full unitary"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "direct return and invalid parser effects exhaust complete carrier"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "original direct0/return10 effects exhaust initialized outputs"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "actual positive valid word realizes an unsharp return effect"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "return effect has rank at most one"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "actual return effect is not zero"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "same original parsed code-length pullback keeps changed return effect"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "target dark rotation fixes ALL initialized pointer vectors exactly"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "target dark rotation is a genuine complete orthogonal change"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "target completion keeps exact initialized code and coherent final state"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "target dark rotation factors through valid-space SO3"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "exact full-column SO3 times anchor times pointer factorization"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "factorization uses exact invalid preimage in canonical birth detail"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "actual grammar preserves every protected old-bank input column"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "exact code validity extends to arbitrary entangled old-bank/pointer input"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "complete return effect preserves unknown old correlations"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "actual suffix transport preserves a coherent required past mark"
+          },
+          {
+            "kind": "exact_algebra",
+            "label": "fixed all-column current FN effect is not silently treated as unchanged"
+          },
+          {
+            "kind": "native_syntax",
+            "label": "actually paid CX pairs give a common19-call anchor layout"
+          },
+          {
+            "kind": "native_syntax",
+            "label": "last gate and preceding square stage are actual paid gates"
+          }
+        ],
+        "classifications": {
+          "exact_algebra": 35,
+          "native_syntax": 3,
+          "provenance": 2
+        },
+        "runtime": {
+          "python": "3.12.14",
+          "sympy": "1.14.0"
+        },
+        "schema": "d0.exact-code-valid-controls/1",
+        "scope": {
+          "GR_closed": false,
+          "exact_dark_stabilizer_word_claimed": false,
+          "finite_words_are_fixed_faithful_FN_fibre": false,
+          "full_clock_replayed": false,
+          "full_code_valid_domain_dense": true,
+          "physical_Cost_Info_selected": false
+        },
+        "source_commit": "f58795bd700520cccba06a93fc3fb40f1716da59",
+        "source_sha256": {
+          "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+          "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71"
+        },
+        "status": "PASS"
+      },
+      "script": "check_code_valid_controls.py"
+    },
+    {
+      "arithmetic": "exact Golden algebra and section identities; native/provenance checks are classified separately in the respective results",
+      "check_count": 30,
+      "checker_sha256": "ba941bd90e8e6f24a9d07dc13fdee515b3c9a35753584516168331b3b8185c8b",
+      "normal_optimized_identical": true,
+      "normal_result": "screened.normal.json",
+      "normal_result_sha256": "1bf1ed870b3dc1b4acfac15fdbcfa53da98be0b042ada2417caafe000ac6dc32",
+      "optimized_result": "screened.optimized.json",
+      "optimized_result_sha256": "1bf1ed870b3dc1b4acfac15fdbcfa53da98be0b042ada2417caafe000ac6dc32",
+      "result": {
+        "check_count": 30,
+        "checker_sha256": "ba941bd90e8e6f24a9d07dc13fdee515b3c9a35753584516168331b3b8185c8b",
+        "checks": [
+          {
+            "kind": "provenance",
+            "label": "pinned original native execution owner"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "symbolic Golden convention agrees with pinned original G"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "original positive branches have 1/2<p<1 and a>0"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "lambda denominator exceeds p2 by the positive sum ap+p-1/2"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "a exceeds p because (a-p)(a+p)=p3 and a+p is positive"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "canonical born and unused orthogonal tail columns form the full frame"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "ordered complete input basis is orthogonal with orientation minus one"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "ordered complete output basis is orthogonal with orientation minus one"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "full four-column screened target is special orthogonal"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "all four specified target columns, including the dirty complement, are retained"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "direct return and invalid effects exhaust all four output columns"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "complete initialized screened code is an isometry"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "every incoming pointer state produces valid code without postselection"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "invalid dirty full columns are not removed from the target"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "full return effect is lambda0 times Pplus on every input"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "full direct effect is the complete complement of the return effect"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "original valid code-length effect is I plus return effect"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "full trace coefficient is ((a-p)c+(a+p)s)/sqrt2 with positive factors"
+          },
+          {
+            "kind": "native_syntax",
+            "label": "pinned native grammar executes exactly one CX reader and no new helper"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "literal native reader acts as CX(f,r) and identity on the entire tail"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "composed actual reader and target code retain a complete two-column input isometry"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "composed reader-code has no invalid branch for any f input"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "composed full return effect is exactly p2 I on the entire f input"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "composed full direct effect is exactly p I on the entire f input"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "all initialized outcome mass is retained without normalization or selection"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "actual original code cost is exactly (1+p2)I on every input"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "scalar outcome effects preserve arbitrary old-reference coherences and entanglement"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "both normalized complete conditional branches are isometries, including mixed inputs"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "Golden outcome entropy in log-phi units equals the actual 1+p2 code charge"
+          },
+          {
+            "kind": "exact_symbolic",
+            "label": "specified binary code-minus-Shannon price is the relative entropy to (p,p2) divided by ell"
+          }
+        ],
+        "classifications": {
+          "exact_symbolic": 28,
+          "native_syntax": 1,
+          "provenance": 1
+        },
+        "runtime": {
+          "python": "3.12.14",
+          "sympy": "1.14.0"
+        },
+        "schema": "d0.screened-code-all-input-check/1",
+        "scope": {
+          "GR_closed": false,
+          "all_target_columns_retained": true,
+          "complete_native_Cost_binding": false,
+          "master_internal_stationarity": false,
+          "mixed_input_approximate_chi_control_proved_here": false,
+          "native_normalized_approximation_gate_proved_here": false,
+          "original_reader_executed": true,
+          "physical_Info_selected": false,
+          "screened_target_native_word_emitted": false
+        },
+        "source_inputs": {
+          "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+        },
+        "status": "PASS",
+        "target": {
+          "born_input": "v=(a,p), a^2=p, p^2+p=1; positive branches",
+          "direct_effect": "p I on the same complete input",
+          "full_trace": "((a-p)c+(a+p)s)/sqrt(2)>0, s^2=lambda0, c^2=1-lambda0",
+          "lambda0": "p^2/(1/2+ap)",
+          "return_effect": "p^2 I on the entire pre-reader f input and every retained reference",
+          "terminal_price": "0 for the specified full binary CQ convention, all input density matrices"
+        }
+      },
+      "script": "check_screened_code.py"
+    }
+  ],
+  "full_Cost_Info_selected": false,
+  "git_input": "f58795bd700520cccba06a93fc3fb40f1716da59",
+  "primary_sha256": "0137a8394f3d27ef804d2afd66068b2fc409c61b603cd2e9f4de4dd1a176b8a6",
+  "proof_sha256": "7dcb63feb8202cd4e7fc5182e5e7c830506ddf2ec1016cc0d23ba28d1aadae0d",
+  "review_sha256": {
+    "admission-review.md": "9d963e87bda851a4a042660d9758b9bb98c6a285e40b3a4dde4f7ea096cc5306",
+    "price-review.md": "1c1bf6b2deb69d7bc3793b7c0dd013fdf5119c2eb180a30666dbbc84c193cfa8",
+    "source-review.md": "9c93b3ba58c97523fd65de712c75fbbba9e8a9cc89b435af59f526684d3be39e"
+  },
+  "reviews": "Three bounded final-proof reviews approved source, price scope and admission typing; not assembly acceptance.",
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0-complete-local-code-control-v1",
+  "scientific_promotion": false
+}
+```
+
 ## 8. Reproduction
 
 Run from this directory:

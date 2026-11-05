@@ -22078,3 +22078,85 @@ was consumed without claiming independent acceptance or discharge.
 Final extracted-check replay matches the published receipt hash. Work, agent,
 assembly and whitespace guards pass; assembly remains 98 results / 22
 obligations / 5 discharged, scientific_promotion=false.
+
+## 2026-11-05 checkpoint: complete local code controls and terminal-price screening
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `f58795bd700520cccba06a93fc3fb40f1716da59`.
+Integration base: `e8ce3b743f65b37402afca044de408a614ebca44`.
+Concurrent JZ exact finite recovery in the EO family is preserved;
+its transport to this enlarged code-control family is not assumed.
+Result location: §7fn of the existing full-source primary artifact.
+Write paths remain that artifact and this brief; no new task/branch,
+Ready/retirement, merge, accepted claim or scientific promotion.
+
+Parent substitution: the previous two-control encoder application is
+extended to the COMPLETE local real two-qubit SO(4) code-valid domain,
+not merely another selected angle. Let j=I_r tensor v_t and z=|11>.
+The domain is C={U in SO4:z*Uj=0}; it has four independent directions.
+Full all-input faithfulness is a stronger task than mere code validity.
+
+The unused-column completion K_beta fixes j pointwise and adds a
+third real row. That row vanishes at the old section. A fourth,
+unsharp output rotation has a nonzero full-master row there:
+D_chi M=-p/mu0, even though its first code-probability and cold rows
+vanish. Thus the old scoped result cannot be promoted unchanged.
+
+The full domain factors exactly as SO3(valid outputs) times SO2:
+U=L E0(O_theta tensor I), where E0 is the actual three-call encoder.
+Two positive G/CX echo families rotate the valid00/10 and00/01 planes
+and fix11 exactly. Three Euler echoes and an even pointer power give
+all-column dense coverage while EVERY finite word is exactly valid
+for every initialized pointer/reference state. No failure is selected
+away, no zero blank/inverse/helper is supplied, and all dirty columns
+remain in heat. Native words need not preserve the stronger faithful
+FN effect exactly. Their actual counts and padding are retained.
+
+For every U in C the full trace factorizes as T(Y)M(U), with
+T=2^q-2+4Q and M=Tr[U(P_+ tensor I)]. Compactness gives a positive
+field-independent maximizer U*, stationary on all four local rows.
+An exact strict-improvement witness proves its multiplier exceeds
+the old one. A strictly concave one-dimensional Procrustes formula
+and certified bisection construct the constant U*; no gravity root
+or numerical census is used. No nondegenerate finite Hessian or exact
+stationary native word is claimed.
+
+The full H+J, actual gain 16 d_old M(U_c)g_h L a_L/(beta Z_act),
+actual/target ratios, all425D modes, proper cut, inherited old rows
+and separate native error budgets yield (DQ/g_h,0_4) in the original
+kappa norm after the respective full-operation reactions. Existing
+off-shell separation, physical lift and Einstein--two-CAR reverse
+recovery consume this same enlarged paid history. All body padding
+precedes retention selection; no power-search efficiency is assumed.
+
+The full terminal code/CQ component has a distinct exact result.
+For any incoming density and efficient complete instrument its price
+is [D((1-q,q)||(p,p^2))+chi]/ln(phi)>=0, with chi the genuine
+conditional-quantum entropy reduction. A fixed Golden encoder U_zero
+has return effect [p^2/(1/2+ap)]P_+. Composed with the actual born
+pointer reader, its full branch effects are pI and p^2I. Both branches
+are scaled isometries, so the WHOLE terminal component equals zero
+for every mixed/correlated incoming state, and all regular first rows
+vanish. Its full-master field multiplier is nevertheless positive.
+
+U_zero and the stationary master U* are different constructions;
+the master's internal rows are not solved at U_zero. Native-valid
+approximants exist, but their terminal error is not declared small
+relative to an arbitrarily vanishing master gain. This is an exact
+target/component screening theorem and an explicit remaining
+native-normalization gate, not equality of the two full prices.
+
+Validation is bounded exact source/control/price algebra with original
+native-loader provenance, protected-input and dirty-column checks.
+The native fixture executes one complete19-call word and real padding.
+Normal/optimized warnings-as-errors receipts, source hashes and three
+final-proof reviews are embedded; affected integration guards run
+once. No full heat, geometry, root or Lean replay is added.
+
+This removes the complete LOCAL code-control premise. CompleteTaskPrice,
+the informative task/record constraint and its reactions, original
+Book vertex/primitive-work aggregation, serial stopping, and other
+current-bank/preparation/clock/scene equations remain open. The target
+minimum shows why valid code plus retained quantum distinctions alone
+does not select an informative record. `GR_closed=false`,
+`scientific_promotion=false`; the full A--D goal remains active.
