@@ -18151,3 +18151,24 @@ containment of the actual effects in the parity-even sector. Its finite
 dimension bound, lower rank, CAR algebra identification, physical admission,
 clock/work and GR selection are not supplied by this module. #334 is
 preserved, `GR_closed=false`, and final integration remains required.
+
+
+### Upper dimension bound for the actual future-effect span
+
+`D0.Geometry.OriginalBookEffectSpanUpper` defines the complex linear span of
+`sourceEffect path` over all finite paths, including the empty path. The
+previous parity theorem places every such effect in the commutant of the
+actual source Fock parity. Its positive and negative state sets have eight
+elements each; commuting with P forces mixed entries to vanish. Reading the
+two diagonal 8×8 complex blocks is injective, and therefore
+`finrank ℂ (span (range sourceEffect)) ≤ 128`. No rank or equality is assumed.
+
+The exact file passed narrow Lean and axiom checks; independent read-only
+review checked the parity states, mixed-entry argument, block injection and
+all-path span. Checked results use `propext`, `Classical.choice`,
+`Quot.sound`. This proves only the upper bound. The modular finite-field
+certificate cannot itself be transferred to ℂ without a suitable proved
+specialization/independence argument; lower bound, equality and identification
+with `M₈(ℂ) ⊕ M₈(ℂ)` remain open in this Lean chain. Physical admission,
+clock/work and #334 are unchanged, and `GR_closed=false`. A final integration
+build for this added module is still required.
