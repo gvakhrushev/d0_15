@@ -1,0 +1,18 @@
+{
+  "consumer_sha256": "78687e88a7f9184b47c52b614ea58d15aff293720c3eb02e03ed62bfb0e7397d",
+  "cpu_affinity_limit": false,
+  "diagnostics": [
+    "consumer zero_ne_one application failed to synthesize NeZero 1",
+    "axiom output includes sorryAx because consumer did not elaborate"
+  ],
+  "elapsed_seconds": 104.016,
+  "exit_code": 1,
+  "job_memory_limit_bytes": 3221225472,
+  "kind": "numerical-det-consumer-check",
+  "module_source_sha256": "353879d776b8275e2bdf9244b621373c882bc27af0b1c6548349c5c80ddef5d0",
+  "raw_log_sha256": "8de55b9d7a03e55e596e76c989da505fe41f1caad01ad2419155d98df2705c89",
+  "resolved_module": "exact freshly built numerical module verified using lean --deps",
+  "resolved_module_olean_sha256": "8d01cc32441d4a07321990043128a4d17192db7000d00f6f4acc533123557b3f",
+  "scope": "No determinant theorem proven; numerical inverse uses native_decide trust, source bridge and dependency-cache provenance remain open.",
+  "status": "failed"
+}

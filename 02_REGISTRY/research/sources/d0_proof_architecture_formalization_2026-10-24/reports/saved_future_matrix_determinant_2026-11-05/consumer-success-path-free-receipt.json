@@ -1,0 +1,21 @@
+{
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound",
+    "D0.Algebra.SavedFutureMatrixPacked.all_rows_right_inverse._native.native_decide.ax_1_1"
+  ],
+  "consumer_sha256": "e2e5d41317c6bece4ac1d74ff7155573ec6992b25c02e9f1a07f314d698f86b5",
+  "cpu_affinity_limit": false,
+  "elapsed_seconds": 26.0,
+  "exit_code": 0,
+  "job_memory_limit_bytes": 3221225472,
+  "kind": "numerical-det-consumer",
+  "module_source_sha256": "353879d776b8275e2bdf9244b621373c882bc27af0b1c6548349c5c80ddef5d0",
+  "raw_log_sha256": "f53c7ffef41415b1c0fa2a54ee0390cb67944c0e081d946da9eb1e35d567a742",
+  "resolved_module": "exact pinned numerical module verified using lean --deps",
+  "resolved_module_olean_sha256": "8d01cc32441d4a07321990043128a4d17192db7000d00f6f4acc533123557b3f",
+  "scope": "Nonzero determinant of saved numerical matrix only; source bridge and dependency-cache provenance remain open.",
+  "status": "success",
+  "trust": "native computation axiom inherited from numerical inverse theorem; the zero-not-one fact uses kernel decide"
+}
