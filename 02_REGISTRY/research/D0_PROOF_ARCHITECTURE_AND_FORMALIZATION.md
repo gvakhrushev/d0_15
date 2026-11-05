@@ -17815,3 +17815,19 @@ matter. Concrete owner stage embeddings, their identification with `J_f,C`,
 the 425D lift, field variations and physical admission remain open. [C0 and
 cached build receipts](sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_growing_frame_inventory_d9eb_2026-11-05/README.md)
 do not assert semantic acceptance or GR closure.
+
+### Full v3 producer replay on `fbbeb02b`
+
+The full 50-case / 414-query v3 producer replay completed with exit 0 on the
+clean pinned snapshot `fbbeb02bb1cb36da0f173adc614400dbe81154e9`. Its public
+`reports/cold_start_v3_fbbeb02b_2026-11-04` checkpoint contains only a minimal
+producer-asserted overview: discovery is unattested, the top-level success
+count is null, and the per-case false flags do not establish failed searches.
+The original 468947808-byte report remains local because it contains local
+absolute paths; its operator-recorded SHA-256 is
+`adf9b4549f50aea8f56f03511abd3bcf0e5ad84367366fea4fc0c80834f7c059`.
+Without those bytes the public summary cannot independently attest source
+evidence or producer authenticity. Independent compaction failed because source
+pages did not reproduce from locator bytes and pins; its root cause remains
+under investigation. This overview is not a verified 50-case pass, C0
+acceptance or physical GR selection.

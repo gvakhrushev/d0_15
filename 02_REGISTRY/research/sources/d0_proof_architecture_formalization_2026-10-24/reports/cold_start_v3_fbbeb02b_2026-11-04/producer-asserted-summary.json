@@ -1,0 +1,29 @@
+{
+  "schema": "d0-v3-producer-asserted-overview-v1",
+  "source": "sanitized copy of producer replay; NOT compactor output or acceptance",
+  "producer_snapshot_commit": "fbbeb02bb1cb36da0f173adc614400dbe81154e9",
+  "producer_worktree_dirty": false,
+  "producer_declared_search_cases_total": 50,
+  "producer_declared_benchmark_cases_total": 51,
+  "producer_query_count": 414,
+  "producer_case_flags": {
+    "true": 0,
+    "false": 50
+  },
+  "producer_required_status_counts": {
+    "evidence_verified_discovery_unattested": 404,
+    "external_reference_only": 3,
+    "missing_scoped_query": 1,
+    "source_pin_mismatch": 7
+  },
+  "producer_discovery_validation": "unattested",
+  "producer_top_level_success_count": null,
+  "producer_change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "limitation": "Counts are producer assertions from the report, not independent confirmation of discovery, source attribution, evidence or mathematical truth. Case false flags reflect unattested discovery and are not necessarily search failures. Redacted evidence cannot be reverified as original bytes."
+}
