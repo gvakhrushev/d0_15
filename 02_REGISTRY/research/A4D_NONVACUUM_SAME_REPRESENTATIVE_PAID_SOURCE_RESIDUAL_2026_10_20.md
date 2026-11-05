@@ -173736,3 +173736,839 @@ Executed complete bounded receipt:
 Final extraction replay reproduces the executed receipt SHA256 exactly.
 Work, agent, assembly and whitespace guards pass; assembly remains98
 results /22 obligations /5 discharged, scientific_promotion=false.
+
+## Whole-history truthful recovery: a global apparatus optimum and the original Einstein source
+
+Research synthesis in existing PR334, source pin be48932026ebbc2c07cfbd3c0732c15b4edba4b0.
+Phase: native realization and final composition. Consumer: the original SER/EO
+Book source, specifically the previously unsolved fixed-effect implementation
+rows of the complete retained-record instrument. The geometric reporter and its
+upstream calibration rows remain those of their existing owners. This is a whole-instrument theorem, not a
+replacement of the proper cut by an intermediate output carrier.
+
+### 1. Use the EARLIEST true input and preserve every completed label
+
+Let H_in be the original unknown input, including every genuine initially
+unknown old factor. An untouched reference may be entangled with it.
+All generated history is an actual isometry into H_out. Its completed, mutually
+orthogonal record-label subspaces have projectors P_omega. They include every
+earlier serial label; no old label is summed away or reset.
+
+Write the complete instrument, from THIS earliest input, as K_omega, and assume
+
+    range K_omega <= range P_omega,
+    K_omega* K_omega=q_omega I_in,  q_omega>0,
+    sum_omega q_omega=1.                                  (G1)
+
+For the matched fresh-bank SER tower, the owned all-old scalar-effect theorem
+gives q_omega=product_i q_i,b_i. It permits arbitrary mixed/entangled input;
+it does not prepare or clone that input. If an earlier event or current
+alternative has a nonscalar effect, G1 must not be inferred from its mean
+probability. Its separate operator-effect source must be retained.
+
+Let J_born:H_in->H_out be the ACTUAL canonical initial embedding used by the
+proper return cut. The physical rank is dim H_in, e.g. the original Spin4,
+not the dimension of current WORK. For the actual label spaces require
+
+    J_born* P_omega J_born=mu_omega I_in,   mu_omega>0.     (G2)
+
+This follows when labels act on the generated code factors and are independent
+of the original unknown input. Define the known normalized born projections
+
+    j_omega=P_omega J_born/sqrt(mu_omega).
+    j_omega* j_omega=I_in,    j_omega* j_nu=0 (omega!=nu).  (G3)
+
+Every other generated BANK direction remains in the full carrier. It is
+returned to its actual canonical born state by the construction below, not
+deleted. Any required additional fixed output mark must be included in
+P_omega/G2 or in the actual task constraints before applying the theorem.
+
+### 2. Conditional polar recovery exists on all columns
+
+V_omega=K_omega/sqrt(q_omega) and j_omega are isometries with the same finite
+input dimension and output sector. Extend their orthonormal columns to full
+bases of range P_omega. This constructs a unitary U_omega satisfying
+
+    U_omega V_omega=j_omega.
+
+Choose the full output unitary U to act as U_omega inside every P_omega sector
+and as identity on the remaining invalid/unreachable output sectors.
+It is block diagonal in EVERY retained label, so it preserves each old and
+current record exactly. The resulting whole instrument is
+
+    K_omega,opt=sqrt(q_omega) j_omega,
+    V_opt=sum_omega sqrt(q_omega) j_omega.                (G4)
+
+This is an all-input identity. Tensoring every map with identity on an
+arbitrary external reference proves preservation of entanglement and of the
+entire unknown input. The construction uses the known complete operators,
+their positive scalar norms and finite basis completion; it does not inspect
+the unknown state or an Einstein residual.
+
+The proper cold corner is now exactly
+
+    C_opt=J_born* V_opt=c I_in,
+    c=sum_omega sqrt(mu_omega q_omega)>0.                  (G5)
+
+No postselection occurs. Usually sum mu_omega<1: the canonical born cut has
+support on invalid-code sectors, which remain in the physical carrier and
+clock. Consequently c<=sqrt(sum mu_omega)<=1; neither this attenuation nor
+the physical input rank is divided away.
+
+### 3. Global optimum and every fixed-effect control row
+
+For ANY other complete Stinespring realization K'_omega having the SAME full
+effects q_omega I and the same output-label spaces, put
+
+    X_omega=j_omega* K'_omega/sqrt(q_omega),  ||X_omega||<=1.
+
+Its actual proper corner is
+
+    C'=sum_omega sqrt(mu_omega q_omega) X_omega,
+    C'^* C' <= c^2 I.                                    (G6)
+
+Thus G4 simultaneously maximizes every cold singular value and minimizes
+the original positive-feedback cost
+
+    J(C)=-Tr log[(1-z)I+z C* C],     0<z<1.
+
+For any genuine smooth two-sided fixed-effect Stinespring/control tangent,
+differentiate K_omega* K_omega=q_omega I at G4:
+
+    Herm(j_omega* delta K_omega)=0,
+    Herm delta C=sum_omega sqrt(mu_omega)
+                         Herm(j_omega*delta K_omega)=0.   (G7)
+
+At C=cI, delta(C*C)=2c Herm delta C=0. Therefore DJ=0 on EVERY such
+direction, including arbitrary complex phases, preparation/completion
+directions, conditional BANK recovery and correlations with the unknown
+input. This is stronger than solving five selected local coordinates.
+It is fixed-EFFECT stationarity; it does not declare every effect-changing
+or initial-cut-changing direction zero.
+
+The proof is on the complete earliest-input instrument. It does not use the
+generally invalid intermediate factorization
+
+    i_<* C_current A_< = C_current C_<.
+
+For a lone appended block with arbitrary old mixing, a skew delta C_current
+can change ReTr[C_<* i_<* delta C_current A_<]. Optimizing the WHOLE-prefix
+joint instrument as in G1-G7 is the explicit repair. Every completed old
+label remains a separate block in that repair.
+
+### 4. The actual SER masses and sequential realization
+
+For each actual SER code block retain cursor0. Let the false label be
+r=0, cursor=0, with its inactive tail unrestricted. Let the true label be
+r=1, cursor=0, tail=0. With canonical born v=(sqrt(p),p),
+
+    mu_0 = p*p = p^2,
+    mu_1 = p^2*p*p = p^4.                               (G8)
+
+The false tail contributes its full born vector, not a trace or discarded
+state. The true tail0 is required by code10. The cursor0 requirement is
+part of this declared completion. Other newly generated BANK registers
+contribute1 when recovered to their ACTUAL born vector.
+
+Thus the target record vectors are
+
+    u_0=|0>_r |0>_cursor v_tail,
+    u_1=|1>_r |0>_cursor |0>_tail,
+
+and one block has
+
+    f(q)=p sqrt(1-q)+p^2 sqrt(q).                         (G9)
+
+When every block restores its inherited quantum input and appends its new
+record, its complete isometry is I_old tensor the indicated record state
+(and all recovered born WORK). Earlier record registers remain in I_old.
+The complete fixed-sequence tower therefore has
+
+    q_omega=product_i q_i,b_i,
+    mu_omega=product_i mu_b_i,
+    c_total=product_i f(q_i).                            (G10)
+
+This is an induction through actual conditional unitaries, not a reset of
+the previous record or the earlier true cut. It starts on the original
+unknown input, which remains arbitrary throughout. Fields/programmes are
+supplied by the same fixed computable task; an outcome-dependent change of
+the logical field sequence would require its actual conditional law.
+
+One can equivalently construct U directly on every full joint-label sector
+using G2-G4. That form makes the complete old fixed-effect tangent statement
+transparent, even when the original conditional old output was correlated.
+
+### 5. Full terminal information and source: the two signs reinforce
+
+Because U is block diagonal in the complete record algebra,
+
+    D_record(U rho_out U*)=U D_record(rho_out) U*.
+
+Thus it preserves the ENTIRE recorded CQ entropy, not merely a final
+probability. At G4 each block has nonzero spectrum q_omega spectrum(rho_in),
+including an untouched reference. Hence the information GAIN is
+
+    I_end=H(q_omega)=sum_i h(q_i).                       (G11)
+
+The coherent global state still contains the inter-label amplitudes.
+The CQ state is the actual declared observable-algebra restriction, not
+a physical deletion of the other quantum history.
+
+Arrange the actual recovery/reader word to end with a square native stage.
+The owned final-grade-zero identity then gives E_end=e_scene exactly at
+fixed scene. This is terminal spectral energy, not accumulated traversal work. Every primitive of recovery, inversion, any readback and
+padding remains in its real growing clock.
+
+The original Book03 section03.25 states B=H+J and its stationary law.
+For a specialization accepting that law, J below is its actual original
+feedback, not an independently selected replacement. The full H is handled
+on this new paid clock at the end of section6. A separate primitive tariff
+is not an extra premise of simply APPLYING the stated Book law; deriving
+that law from Books00-01 remains the stronger physical-selection obligation.
+
+For information compatibility, an already fixed lambda>=0 gives the precisely
+typed comparison valuation
+
+    P_end=J_actual+e_scene-lambda I_end,
+    J_actual=-r log[(1-z)+z c_total^2],  r=dim H_in.       (G12)
+
+Let
+
+    q_mu=mu_1/(mu_0+mu_1)=p^2/(1+p^2),
+    f'(q)=-p/[2sqrt(1-q)]+p^2/[2sqrt(q)].
+
+Then f'(q)>0 exactly for q<q_mu. The actual original Q collar
+Q<=4p^7 lies strictly below q_mu<1/2. On that collar J decreases with q,
+and -lambda h(q) also decreases with q. Explicitly,
+
+    D P_end = D e_scene - sum_i L_i Dq_i,
+    L_i= [2 r z c_total^2/((1-z)+z c_total^2)] f'(q_i)/f(q_i)
+                               +lambda h'(q_i) >0.      (G13)
+
+There is NO cancellation of the geometric coefficient. On a fixed original
+finite chart Dq_i=g_i A_pre,i* DI_h+error, g_i>0, use the ACTUAL gain
+
+    Gamma_i=L_i g_i
+
+and the existing physical norm/right lift. This gives the same full
+Einstein-CAR field source on the declared logical field graph. For a shared
+field across blocks, sum the actual positive gains and keep each original
+map/error; equality of their field representations must actually be proved.
+The four occurrence slots are not equated: fixed-effect occurrence rows
+vanish by G7 and effect-changing rows use their actual Dq map.
+
+At regular Einstein recovery points DI_h tends to0, both the field rows and
+the solved fixed-effect rows vanish in the declared normalized limit.
+This paragraph asserts kappa/source realization; a generic approximate
+native recovery is not an exact finite native stationary point.
+
+Old parameters that change q_i are retained in G13. Initial input entropy
+cancels as information gain, while scene variables, z, lambda, true cut,
+valid-code definition and an independently varied rank keep their own
+actual sources. For non-product joint q_omega use G5 and H(q_omega)
+directly; the product formula is not silently imposed on adaptive histories.
+
+In particular, the original reporter calibration is upstream of this
+optimization. Its owned PC/CS identity contains
+
+    Dq = 4 D(lambda_vis) + the original field/reference terms.
+
+At an Einstein field the geometric part may vanish while this calibration
+row remains. Since L_i>0, its contribution to DP_end is still nonzero whenever
+the actual D(lambda_vis) is nonzero. The apparatus optimum neither selects
+the original geometric reporter nor freezes its visibility/reference inputs.
+It removes the fixed-effect implementation sources, not every source capable
+of changing the instrument itself.
+
+For genuinely unequal future branches, the classical affinity can be
+computed without a product assumption: with terminal F_leaf=1,
+
+    F_s=sum_b sqrt(mu_sb q_sb) F_sb.
+
+All moving future F_sb sources remain. The single-node stationary ratio for
+this affinity is q_sb proportional to mu_sb F_sb^2, so the simple threshold
+q_mu in G13 applies only when the two complete future affinities coincide,
+as they do for the stated fixed-sequence fresh-block product construction.
+
+
+### 5a. Operator-effect rows and the original master normalization
+
+At a scalar section but for arbitrary Hermitian effect changes,
+completeness gives sum_omega DE_omega=0 and
+
+    Herm DC = (1/2) sum_omega sqrt(mu_omega/q_omega) DE_omega,
+    DJ = -[2 z c/((1-z)+z c^2)] Tr(Herm DC),
+    D I_end = -sum_omega log(q_omega) Tr(rho_in DE_omega). (G14)
+
+No non-scalar effect is replaced by its mean. The feedback trace and
+state-weighted information trace need not coincide on such a direction.
+The same-sign scalar conclusion uses the proved fresh native scalar-effect
+family, not arbitrary operator-valued changes to its measurement.
+
+For the ORIGINAL master B=H+J, set the additional information coefficient
+to zero in the feedback source calculation; keep H as the actual full
+heat, not e_scene. Thus, with D=(1-z)+z c_total^2 and g_i=gamma_i s_i/2,
+
+    Gamma_J,i = g_i [2 r z c_total^2/D] f_i'(q_i)/f_i(q_i)>0. (G15)
+
+The owned SER/EO field map and physical right lift give the complete
+Einstein-CAR covector multiplied by -Gamma_J,i. Native realization below
+controls the fixed-effect hardware rows as well. Its errors and the NEW
+full-clock CL error are divided by this actual Gamma_J,i, including the
+whole past product; a larger added information coefficient cannot pay the
+master's error. Upstream effect/calibration motions still use G14/G13.
+
+For an initialized-map approximation error epsilon<=1, put d=1-z. The
+feedback bounds needed by the finite native implementation are
+
+    |J(C)-J(cI)| <= (r z/d)(2 epsilon+epsilon^2),
+    |DJ[fixed-effect X]| <=
+        2 r z (2/d+3z/d^2) epsilon ||X||.             (G16)
+
+The second bound compares the same allowed Stinespring tangent at the
+nearby map and at the optimum. It follows from the resolvent identity and
+the unitary product rule. For the raw occurrence max norm, its endpoint
+Jacobian pays the ACTUAL word length N, so the debt is C N epsilon,
+not merely C epsilon. Directions that violate the preserved effects/labels
+are not fixed-effect tangents; their genuine normals remain.
+
+For adaptive futures also retain the complete entropy recursion
+H_s=h(q)+(1-q)H_s0+q H_s1. Its partial current derivative is
+h'(q)+H_s1-H_s0. Both this debt and the child affinity sources in G13
+remain; equal minimum future prices do not establish either equality.
+
+### 6. Native compilation and error/clock schedule
+
+The conditional recoveries are finite, known matrix targets on the actual
+retained carrier. The original primitive algebra has opaque initial Spin:
+it is I_Spin tensor A+L_i tensor B, not arbitrary gates on individual Spin
+bits. Where the actual branch maps have this algebra, their polar isometries
+and basis completions can be taken in the same complex-linear algebra.
+Protected genuine spectator inputs are left untouched.
+
+Use the owned exact-support controlled plane/compiler to implement each
+known target inside its retained-label sector, with unused columns completing
+the determinant as needed. Invalid sectors are retained. All native
+approximants are unitary and commute with the label projectors EXACTLY;
+therefore their FULL effects q_omega I and recorded probabilities are
+unchanged exactly, even when the recovery target is approximated.
+
+A determinant-compatible unused completion must exist on the actual finite
+carrier; if a target uses an additional helper, birth and retain it before
+final scheduling, use its real born embedding and recompute G2. Do not assert
+an exact polar inverse or new controlled square-root primitive.
+
+At each finite chart: compute the actual complete branch operators, q/mu,
+source norm and positive gains; compute the targets; choose approximation
+and finite-reading errors after those constants; compile all full words and
+their literal inverses; choose paid clock padding LAST. All-column norm
+error epsilon gives ||C_actual-cI||<=epsilon. Fixed-effect first rows at an
+approximate target have the corresponding continuity bound, including the
+full actual occurrence/control norm. Native finite price contrasts use both
+endpoint errors divided by their true displacement and Gamma_i.
+
+For using the original master H+J, its complete thermal source must also
+obey the owned CL bound on THIS changed clock, normalized by the actual
+feedback gain, which may decay as product_i f(q_i)^2. P_end's larger Info
+gain cannot pay that different master error. No exact finite thermal-root
+transport follows merely from the endpoint optimization.
+
+### 7. Necessary history/task map; what this construction changes
+
+The conditional output instrument is changed. In general U_omega K_omega
+is not the old K_omega, even though it has exactly the same labelled effect
+and preserves every unknown input column isometrically.
+
+The task needed for this construction fixes:
+- the original all-input registered effects and every completed label;
+- faithful retention of the complete unknown quantum information;
+- the actual permitted transport of its prior/future readers.
+
+The inverse/recovery word is part of the retained finite execution descriptor.
+The later reader is one generic paid reverse-word procedure taking that
+descriptor as its actual operand, not a separately fitted Y-dependent table.
+If this word/descriptor is not retained, the scalar output probabilities alone
+do not retain the original many-component geometry or its full marked jets.
+
+For a full conditional old effect H, the transported reader is U H U*.
+A future old operation T is transported to U T U*, or implemented by the
+literal paid readback U*, followed by T and any required restoration.
+For actual native approximants use their actual unitary and actual inverse,
+not the ideal matrix. Earlier geometry marks already occurred in the
+retained clock; their required later inspections use this concrete transport.
+The old labels themselves need no transport because [U,P_omega]=0.
+
+This is the standard exact TheoryTransfer primitive diagram and hence
+commutes with every finite supplied future test word. It preserves the
+verification distinctions and arbitrary reference entanglement. It does not
+erase a history by quotienting a physical inverse to an empty clock.
+
+If the task instead fixes the original conditional backaction K_omega or
+the SAME untransported future quantum test/operation on its output, this
+recovery is not an admitted implementation of that stronger task unless
+it separately satisfies that fixed-operation equation. Event truthfulness
+alone permits the new backaction; it does not prove that an already stored
+stronger complete-operation descriptor permits it.
+
+Thus this is a constructive common-family theorem under an exact observable/
+information transport contract. It supplies the full fixed-effect stationary
+section and a noncancelling field source. It does not select that contract
+from an unspecified weaker history or identify P_end with Book03's B=H+J.
+
+### Owners reused
+
+- SER sharp all-input event and complete CQ tower, including every true
+  input/reference, actual57 stages, proper cut and birth support.
+- Original full native exact-support control/commutant compilation; no
+  individual opaque Spin-bit access is added.
+- WT1 complete coherent future effects; TheoryTransfer primitive diagrams.
+- TE3 final square-stage energy; EO CL full growing-clock thermal bound.
+- Original NG/SER field map, full source norm, finite contrast errors and
+  right lift. Incoming7fp's code-valid domain is not substituted for the
+  stronger truthful-effect/transport domain used here.
+
+
+### 8. Explicit same-history native recovery, exact labels and paid source convergence
+
+Owned inputs:
+* `sources/d0_native_readiness_amplification_2026-10-24/READINESS_AMPLIFICATION.md`
+  A1--A7f: exact equal-phase recursion, expanded counts and full source bound.
+* Its `PHASE_COMPILER.md`: exact all-column predicate rotations, positive
+  inverse macros and the common stable native phase.
+* Primary `A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`
+  RP4, lines167487--167510 at this input: inverse-closed compact semisimple
+  Solovay--Kitaev compiler, with DeWitt Theorem2 and Dawson--Nielsen sources.
+  GH2, lines167914ff / GH3--GH6, also supplies a direct real-group polylog
+  compiler. No density-only length inference is used below.
+* Actual SER Kraus K0=A_b^*Pi0 A_f i and K1=-A_b^*Pi1 A_f i, its
+  complete old input, recorded word, exact inverses and source-port domain.
+
+#### 1. Correct unknown-input subspace; existing record is not reversed
+
+Let P0=i i^* fix only the original fresh processor WORK in its actual
+canonical born frame, with identity on the complete unknown old input.
+Put A=A_f, q_b I=i^*A^*Pi_b A i, and
+
+    V_b=Pi_b A i/sqrt(q_b), V_b^*V_b=I.                (NR1)
+
+The assumption is q_b>=q_min>0 on the declared collar. It is supplied by
+the original scalar-effect SER interface, not by postselecting an input.
+
+The stored external record r is already present; its value b labels the
+actual event. It is distinct from the processor event bit inside Pi_b.
+Leave r and the serialized cursor/tail untouched. First execute the
+recorded A_b word on the payload to undo its later A_b^* exactly. Execute
+the native Z_r sign correction to remove the b=1 Kraus minus sign. To
+keep r literally control-only, use the physical source port a and execute
+
+    [SourceI_a; CX(r,a); SourceI_a^3; CX(r,a)]^2.
+
+On any source-port column y its Spin exponent is
+2[y-(y xor r)], hence this is exactly (-1)^r I on ALL unknown port/Spin
+columns. It costs8 SourceI plus4 CX; r is never a target. A cheaper routed
+Z using SWAPs is not used to justify the control-only assertion. No
+earlier dephased record is inverted and no input/reference is cloned.
+The payload is now sqrt(q_b)V_b on each retained record branch.
+
+Only P0 and Pi_b are needed. In particular,
+
+    Pi_b A P0 A^* Pi_b V_b=q_b V_b,
+    P0 A^* V_b=sqrt(q_b)i.                             (NR2)
+
+This is the invariant Jordan two-plane on V_b H_old and i H_old.
+There is NO scalar-success assertion on the larger space Pi_b H and no
+physical gate for V_b V_b^* is introduced. OldRIGHT is identity at every
+native instruction, as required by the underlying word domain.
+
+#### 2. Exact native fixed-point amplification, reused rather than replaced
+
+Use one born phase rebit and the OWNED common native phase t=exp(i beta)
+with 1/2<cos beta<17/32. Write b0=2cos beta-1 in(0,1/16), a0=1-b0.
+The two predicates are P0 and Pi_equal, where Pi_equal compares the
+processor event bit with the external record r. Pi_equal is the sum of
+the two disjoint computational predicates (event,r)=(0,0),(1,1).
+Implement its phase by the two exact matched predicate words. P0's born
+frame is converted by the already paid exact G inverse/conjugation.
+Neither predicate includes the phase rebit or tests unknown old data.
+
+With matrix order, A0=A and
+
+    A_(n+1)=A_n R_P0 A_n^* R_equal A_n.                (NR3)
+
+This is one block-diagonal word in r: A and A^* do not touch r, and all
+predicate implementations use r only as a control. On record b, the
+owned proof applies on the FULL original input P0 and gives
+
+    Pi_b A_n i=z_n(q_b)V_b,
+    z_0(q)=sqrt(q),
+    eps_0=1-q, eps_(n+1)=eps_n(b0+a0 eps_n)^2,
+    z_(n+1)=z_n t(t+a0 eps_n), |z_n|^2=1-eps_n.       (NR4)
+
+Execute A_n^* as recovery, not the successful Kraus inverse. NR2/NR4 imply
+
+    P0 A_n^* V_b=conj(z_n(q_b)) i,
+    ||(I-P0)A_n^*V_b||=sqrt(eps_n(q_b)).               (NR5)
+
+Every failure vector remains in the full output. No projective success
+test, reset or rejection is performed. Equations NR4--5 hold on every
+unknown input, with arbitrary reference correlations.
+
+The pi/2 suggestion does give eps' =eps(2eps-1)^2, but near zero it has
+eps_n~1/(4n), incompatible with exponentially growing recursive words.
+The already owned stable phase avoids this problem. After a finite uniform
+warmup R(q_min), for k>=0,
+
+    eps_(R+k)<=eps_R 144^(-k),
+    |d(1-eps_(R+k))/dq|<=3^R 96^(-k),
+    N_(R+k)<=C_h 5^k.                                 (NR6)
+
+The last count is LITERAL expanded G/CX/SourceI count, not oracle calls;
+its fixed constant includes 5^R and both exact phase predicates. The
+actual birth count is fixed before increasing n, and WORK is reused.
+
+#### 3. Phase alignment with exact record support and polylog price
+
+NR4 preserves a q-dependent good phase. Do not call its inverse the
+phase-corrected polar inverse. At the actual centre q_b^*, choose the
+target correction on the phase rebit R(arg z_n(q_b^*)). It cancels the
+conjugate phase in NR5. Both values are computed from the actual retained
+word and recursion, not from an Einstein condition or fitted target law.
+
+Add two further canonical-born helper bits, making a three-bit SO(8)
+phase arena. There is an exact-support native generator set for each r=b:
+for every hypercube edge (x,x xor e_j) of this arena, the owned parity-Walsh
+formula with controls r and the other two arena bits, k=1, gives rotation
+by 8theta ONLY on that edge inside r=b and identity everywhere else.
+Here G=exp(theta J); 8theta/pi is irrational by the owned Golden-angle
+result. Every inverse is the actual positive native inverse macro.
+
+These finitely many supported generators are dense in SO(8): their cyclic
+closures give the edge one-parameter rotations, and connected-edge Lie
+brackets generate every elementary skew matrix. Apply the OWNED
+inverse-closed SK result to this fixed supported alphabet. The correction
+R_hat_(n,b) obeys
+
+    ||R_hat_(n,b)-[R(arg z_n(q_b^*)) tensor I4]||<=delta_k,
+    N_phase<=C_h[1+log(1/delta_k)]^alpha_h.             (NR7)
+
+Record support is EXACT, not approximate. Each complete macro is identity
+on all other record blocks, and r is never a gate target. Protected old
+data and source spin are identity at the real macro endpoints. This small
+SO(8) application needs no arbitrary complex phase on unknown Spin.
+Its source-port routing and availability retain the original domain.
+
+The three phase helpers can start in their actual born vectors: the
+amplification identity is uniform on its entire phase-rebit leg. Equally,
+one may execute the owner's explicit paid conversion to zero and back.
+Do not change the physical Book cut to an identity on these helpers.
+
+For delta_k<=12^(-k), on each conditional encoded input the final recovery
+approximates i tensor the unchanged born helpers by
+
+    e_k<=2sqrt(eps_(R+k))+delta_k<=C_h 12^(-k),
+    N_total<=C_h5^k+C_h(1+k)^alpha_h,
+    N_total e_k ->0.                                  (NR8)
+
+All compilation constants are fixed at the finite carrier; no mesh-uniform
+constant is asserted. They and the actual physical source gain remain in
+the cofinal schedule. A physically executed classical phase/word compiler
+has its own prefix and price, as in RP4/GH2; output-word length is not a
+claim that such a compiler is free.
+
+#### 4. Exact q-matched cold comparisons and genuine hardware normals
+
+Keep the phase correction word fixed at the centre across each comparison
+catalogue. It acts only on the phase arena and r, so commutes with P0.
+Consequently the exact born-helper compression after recovery is
+
+    d_(n,b)(q_b) I_old,
+    d_(n,b)(q)=<e|R_hat_(n,b)
+                    [Re conj(z_n(q)) I+Im conj(z_n(q)) J]|e>,    (NR9)
+
+with the understood identity on the other two helpers and actual born e.
+The failed P0-complement does not enter this compression. Thus NR9 depends
+ONLY on q, exactly, despite approximate phase correction. If two original
+q-matched finite endings use the corresponding copied A/A^* words, they
+have EXACTLY the same cold response after this whole recovery. This is not
+an assertion for arbitrary independently altered controller words.
+
+For the GLOBAL valid-code optimum, the false code r=0 allows arbitrary
+tail, whereas the true code requires tail=0; cursor remains0 in both.
+Therefore keep the owned exact zero preparation of cursor/tail, then add
+a supported correction ONLY in r=0 with target G_tail. Compile it in the
+SO(8) arena (tail and the two extra phase helpers) by exactly the supported
+generator construction of NR7. It approximates G_tail tensor I4, with
+error delta_k, and is EXACTLY identity on r=1 at its completed endpoint.
+Record r is never changed, cursor is never a target, and true tail=0
+remains exact at the final code boundary. No generic dense compiler is
+assumed to preserve this support. Intermediate unmeasured implementation
+states are not asserted to be already valid terminal codes.
+
+Let F_hat_b be the FIXED product of its private phase correction and this
+false-only tail correction, and e the actual three-helper born vector.
+The exact scalar compression is
+
+    dtilde_b(q)=<v_tail tensor e| F_hat_b
+        [Re conj(z_n(q)) I+Im conj(z_n(q)) J_h]
+        |0_tail tensor e>,
+    c_n=sum_b <v_r|b> a sqrt(q_b) dtilde_b(q_b), a=sqrt(p).     (NR10)
+
+All failed processor P0-complement vectors remain retained and do not
+enter NR10, since every private correction commutes with processor P0.
+NR10 depends ONLY on q_b, exactly, even at finite native accuracy.
+
+This takes false tail towards its actual born vector while leaving true
+tail0. At the aligned centre dtilde_0 tends1 and dtilde_1 tends a. The
+actual ideal born overlaps are w0=p and w1=p^2, so
+
+    mu=(p^2,p^4),
+    c_opt=p sqrt(1-q)+p^2 sqrt(q).                    (NR10a)
+
+The product of the supported private words has polylog(delta_k^-1)
+length and endpoint error at most the SUM of their accuracies; choose
+each at most delta_k and absorb this fixed finite factor into NR8.
+The source factor is the
+derivative of NR10a, positive for q<p^2/(1+p^2), which contains the SER
+collar. Keeping false tail0 as well would instead give the smaller limit
+p[a sqrt(1-q)+p sqrt(q)]; that is only a contrast, not the global optimum.
+All helper targets return their own actual born vectors;
+there is no free phase-rebit0 preparation.
+
+The field derivative needs a separate phase estimate. Write
+theta_n(q)=arg z_n(q) continuously on the positive collar. NR4 yields
+
+    theta_n'(q)=Im sum_(j<n) a0 eps_j'(q)/(t+a0 eps_j(q)).     (NR11)
+
+The denominators have modulus at least 1-a0 eps_max>0. The first R
+derivatives are bounded by 3^j, and the remainder is bounded by
+3^R96^(-(j-R)); their sum is finite, uniformly in n. Hence
+|theta_n'|<=C_h. Keep the phase correction fixed at q_b^*. The ideal
+real born compression is w_tail,b sqrt(F_n(q))
+cos(theta_n(q)-theta_n(q_b^*)), with w_tail=(1,a).
+At q_b^* the phase derivative contributes zero exactly. A private-word
+operator error delta changes its derivative by at most C_h delta. Thus
+
+    |dtilde_b'(q_b^*)-w_tail,b F_n'(q_b^*)/(2sqrt(F_n(q_b^*)))|
+        <=C_h delta,
+    |c_n'(q^*)-c_opt'(q^*)|
+        <=C_h[max_b eps_n(q_b^*)+max_b |F_n'(q_b^*)|+delta].    (NR12)
+
+This proves the actual nonzero physical field-gain convergence; it is
+stronger than endpoint-norm approximation alone. The exact normalization
+q_0=1-q, q_1=q is included when differentiating c_n.
+
+At an ideal truthful recovery, the fixed-effects hardware first source of
+the cold Gram is zero by the global instrument-optimum theorem. At the
+actual word, smoothness of the genuine positive Book feedback pencil and
+the unitary telescoping bound give a full independent controller covector
+error <=C_h N_total e_k in the original gate-max norm. The factor C_h
+retains the actual old matrix, positive pencil margin and price gain.
+After division by gamma_h s and the actual nonzero scalar source factor,
+choose k cofinally so the normalized error tends to zero. Do not identify
+independently varied physical occurrences merely because their nominal
+words were cached in NR3. Their count is precisely why NR8 is required.
+
+A fixed residual q-dependent phase has imaginary first variation at the
+real aligned centre; it drops out of the Hermitian feedback source. The
+small phase/recovery error is included in NR8. This does not claim uniform
+C1 convergence of the COMPLEX recovery amplitude to identity off shell.
+For actual small finite hardware edits keep the usual quadratic remainder
+C_h r_edit^2; normalized price-reading errors are divided by the ACTUAL
+comparison displacement and gain. Exact q-matched NR9 needs no Taylor
+substitute. Both outcomes and all unsuccessful sectors are always retained.
+
+#### 5. Full execution/price boundary
+
+The recovery is a unitary within each retained classical record sector;
+it preserves the exact label law and conditional quantum spectrum, hence
+the complete SER information statistic. It adds three real births, every
+expanded A/A^* call, sign, predicate phase, phase-correction and inverse
+stage to the actual growing clock. P_book fixes their generated physical
+inputs and retains the original unknown-input rank; P_ref used for phase
+algebra is not substituted for it. All dark/helper columns remain.
+
+Recompute H and J from THIS complete word. NR8 bounds the fixed-effects
+recovery normal of feedback/information; it does not set the new thermal,
+compiler, primitive-work, cut or freely moving-record sources to zero.
+Apply the already owned actual-clock/source estimates at these new counts,
+or retain those terms. No exact finite global stationary optimum or complete
+physical Cost-minus-Info selection is asserted merely from recovery.
+
+### 9. Bounded decisive verification and reproducible receipt
+
+The new calculation checks the whole-cut bound and complex fixed-effect
+tangents, the actual SER masses and field-source sign, complete mixed and
+entangled-input entropy, unequal-future continuation, and the owned
+amplification/phase application. Ordinary and optimized Python give the
+same receipt. These are bounded algebra/numerical checks of the displayed
+proof; the large amplified native word, old GR equations, full heat matrix
+and Lean suites were not replayed. The native exact-support identities and
+compiler theorems are reused at their stated interfaces.
+
+Input head: `be48932026ebbc2c07cfbd3c0732c15b4edba4b0`.
+- `02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/READINESS_AMPLIFICATION.md`: SHA256 `8d161314c96b145c2392d473a01576e32ce5238e168625b7d20bb0f46b0a2775`.
+- `02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/PHASE_COMPILER.md`: SHA256 `f46c18b831bd5741b56950a780b97ce917e12611b45f54ccd715548c8ef47af1`.
+- `02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py`: SHA256 `222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c`.
+
+Checker SHA256: `fa94b58f55fc9d7a91d6074980683530ff27a7f19adbc08f682f0e6f238e7cea`. Canonical LF receipt SHA256: `76927b35e5405f55cde26ff9542ed35cb92b09479be202e7413f5bcf36aa659c`.
+
+```python
+"""Bounded algebra/source checks for the whole truthful-record optimum.
+Not a replay of the large native recovery compiler or GR equations.
+"""
+import json, math, hashlib
+from pathlib import Path
+import numpy as np
+import mpmath as mp
+mp.mp.dps = 70
+checks=[]
+def check(name, condition):
+    if not bool(condition):
+        raise RuntimeError(name)
+    checks.append(name)
+p=(math.sqrt(5)-1)/2
+a=math.sqrt(p)
+mu=np.array([p*p,p**4])
+prior=mu[1]/mu.sum()
+qmax=4*p**7
+check('original collar below truthful Born prior', 0<qmax<prior<.5)
+r=2
+born=np.kron(np.kron([a,p],[a,p]),[a,p])
+j=np.kron(born[:,None],np.eye(r))
+inds=[np.array([0,1,2,3]),np.array([8,9])]
+Vs=[]
+for b in range(2):
+    v=np.zeros_like(j); v[inds[b]]=j[inds[b]]/math.sqrt(mu[b]); Vs.append(v)
+    check('actual code projector Gram '+str(b),np.linalg.norm(v.T@v-np.eye(r))<1e-13)
+z=.37
+rng=np.random.default_rng(334)
+def corner(q,vs): return j.T@(math.sqrt(1-q)*vs[0]+math.sqrt(q)*vs[1])
+def price(C):
+    M=(1-z)*np.eye(r)+z*C.conj().T@C
+    return -np.linalg.slogdet(M)[1]
+def f(q): return p*math.sqrt(1-q)+p*p*math.sqrt(q)
+def fp(q): return -.5*p/math.sqrt(1-q)+.5*p*p/math.sqrt(q)
+def jp(c): return -2*r*z*c/(1-z+z*c*c)
+def entropy(M):
+    eig=np.linalg.eigvalsh(M); eig=eig[eig>1e-14]
+    return float(-sum(eig*np.log(eig)))
+for q in [1/30,.1,qmax]:
+    C=corner(q,Vs); c=f(q)
+    check('attained full true-cut scalar '+str(q),np.linalg.norm(C-c*np.eye(r))<1e-13)
+    for k in range(24):
+        vv=[]
+        for b in range(2):
+            d=len(inds[b]); X=rng.normal(size=(d,d))+1j*rng.normal(size=(d,d))
+            U=np.linalg.qr(X)[0]; v=Vs[b].astype(complex).copy(); v[inds[b]]=U@v[inds[b]]; vv.append(v)
+        Cx=corner(q,vv)
+        check('global operator bound %s/%s'%(q,k),np.linalg.eigvalsh(c*c*np.eye(r)-Cx.conj().T@Cx).min()>-2e-13)
+        check('regularized determinant global minimum %s/%s'%(q,k),price(Cx)>=price(C)-2e-13)
+    for b in range(2):
+        d=len(inds[b])
+        for x in range(d):
+            for y in range(x,d):
+                for imag in ([False] if x==y else [False,True]):
+                    H=np.zeros((d,d),complex)
+                    H[x,y]=1j if imag else 1
+                    H[y,x]=np.conj(H[x,y])
+                    dv=np.zeros_like(j,dtype=complex); dv[inds[b]]=1j*H@Vs[b][inds[b]]
+                    dc=math.sqrt([1-q,q][b])*j.T@dv
+                    dM=z*(dc.conj().T@C+C.T@dc)
+                    derivative=-np.trace(np.linalg.solve((1-z)*np.eye(r)+z*C.T@C,dM)).real
+                    check('all complex fixed-effect tangent %s/%s/%s/%s/%s'%(q,b,x,y,imag),abs(derivative)<2e-13)
+    step=1e-6
+    numeric=(price(corner(q+step,Vs))-price(corner(q-step,Vs)))/(2*step)
+    exact=jp(c)*fp(q)
+    check('field source derivative '+str(q),abs(numeric-exact)<2e-8)
+    hp=math.log((1-q)/q)
+    for lam in [0,1,1/math.log(1/p),3]:
+        check('no information cancellation %s/%s'%(q,lam),exact-lam*hp<0)
+    check('actual Golden terminal code orientation '+str(q),1-hp/math.log(1/p)<0)
+    rho=np.array([[.27,.07],[.07,.73]])
+    sigma=np.zeros((32,32),complex)
+    for b in range(2):
+        sl=slice(16*b,16*(b+1)); sigma[sl,sl]=[1-q,q][b]*Vs[b]@rho@Vs[b].T
+    h=-q*math.log(q)-(1-q)*math.log(1-q)
+    check('complete mixed unknown input entropy '+str(q),abs(entropy(sigma)-entropy(rho)-h)<2e-12)
+    epr=np.array([1,0,0,1])/math.sqrt(2)
+    ent=np.zeros((64,64),complex)
+    for b in range(2):
+        out=np.kron(Vs[b],np.eye(2))@epr; sl=slice(32*b,32*(b+1))
+        ent[sl,sl]=[1-q,q][b]*np.outer(out,out)
+    check('entangled reference preserved '+str(q),abs(entropy(ent)-h)<2e-12)
+# Joint histories: use actual complete path masses, not marginal entropy.
+q0=.08; qa=.02; qb=.12
+paths=np.array([(1-q0)*(1-qa),(1-q0)*qa,q0*(1-qb),q0*qb])
+mu_paths=np.kron(mu,mu)
+F=float(np.sqrt(paths*mu_paths).sum())
+F_recursive=math.sqrt(mu[0]*(1-q0))*f(qa)+math.sqrt(mu[1]*q0)*f(qb)
+check('whole history affinity recursion',abs(F-F_recursive)<1e-14)
+wrong_product=f(q0)*f(qa)
+check('unequal futures cannot be replaced by equal continuation',abs(F-wrong_product)>1e-4)
+thresh=mu[1]*f(qb)**2/(mu[0]*f(qa)**2+mu[1]*f(qb)**2)
+check('actual continuation-weight threshold',q0<thresh)
+# Fixed exact native phase from the already owned readiness construction.
+pp=(mp.sqrt(5)-1)/2; theta=mp.acos(mp.sqrt(pp)); cc=mp.cos(624*theta)
+bb=2*cc-1; aa=1-bb
+check('owned exact native stable phase interval',mp.mpf('.5')<cc<mp.mpf(17)/32)
+e=mp.mpf('.9'); warm=0
+while e>mp.mpf(1)/48:
+    e=e*(bb+aa*e)**2; warm+=1
+    if warm>10000: raise RuntimeError('warmup')
+for n in range(18):
+    nxt=e*(bb+aa*e)**2
+    check('paid length versus recovery contraction '+str(n),5*mp.sqrt(nxt/e)<mp.mpf(5)/12)
+    e=nxt
+# Exact algebra behind the phase recursion, including its good phase.
+for qq in [mp.mpf('.1'),mp.mpf('.9')]:
+    tt=mp.e**(1j*624*theta); ee=1-qq
+    good=tt+(tt-1)*(tt*qq+ee)
+    bad=1+(tt-1)*(tt*qq+ee)
+    check('good phase must be retained '+str(qq),abs(good-tt*(tt+aa*ee))<mp.mpf('1e-60'))
+    check('unitary two-projector recursion '+str(qq),abs(qq*abs(good)**2+ee*abs(bad)**2-1)<mp.mpf('1e-60'))
+    check('failure polynomial '+str(qq),abs(ee*abs(bad)**2-ee*(bb+aa*ee)**2)<mp.mpf('1e-60'))
+# The q-dependent phase cannot supply a hidden first real source at the centre.
+for qq in [mp.mpf('.1'),mp.mpf('.9')]:
+    tt=mp.e**(1j*624*theta); ee=1-qq; ep=-mp.mpf(1)
+    zz=mp.sqrt(qq); zp=1/(2*mp.sqrt(qq))
+    for n in range(12):
+        fac=tt*(tt+aa*ee)
+        zp_new=zp*fac+zz*tt*aa*ep
+        zz=zz*fac; zp=zp_new
+        ep=ep*(bb+aa*ee)*(bb+3*aa*ee)
+        ee=ee*(bb+aa*ee)**2
+        correction=zz/abs(zz)
+        real_derivative=mp.re(mp.conj(zp)*correction)
+        target=-ep/(2*mp.sqrt(1-ee))
+        check('phase aligned real source %s/%s'%(qq,n),abs(real_derivative-target)<mp.mpf('1e-55'))
+    check('uniform phase derivative sample '+str(qq),abs(mp.im(zp/zz))<100)
+result={'scope':'whole truthful-record optimum; bounded algebra and source checks only','checks':len(checks),'actual_valid_label_masses':mu.tolist(),'normalized_prior_one':prior,'original_q_collar_upper':qmax,'stable_phase_cos':mp.nstr(cc,28),'warmup_rounds':warm,'large_native_recovery_executed':False,'full_cost_info_selected':False,'GR_closed':False}
+print(json.dumps(result,sort_keys=True,indent=2))
+```
+
+```json
+{
+  "GR_closed": false,
+  "actual_valid_label_masses": [
+    0.3819660112501052,
+    0.14589803375031551
+  ],
+  "checks": 288,
+  "full_cost_info_selected": false,
+  "large_native_recovery_executed": false,
+  "normalized_prior_one": 0.27639320225002106,
+  "original_q_collar_upper": 0.13776741499453218,
+  "scope": "whole truthful-record optimum; bounded algebra and source checks only",
+  "stable_phase_cos": "0.5034790572251378116633439196",
+  "warmup_rounds": 4
+}
+```
+
+The substituted mathematical premise is the WHOLE fixed-effect hardware
+optimum, together with a record-preserving native recovery family and its
+full occurrence-source estimate. It does not substitute the original
+reporter/calibration selection, the stronger fixed-backaction admission,
+unequal prospective future weights, or the Books00-01 derivation of the
+complete physical action. The original Book law can be applied with its
+own new full clock under that declared specialization. This remains
+research in the existing owner: GR_closed=false, positive_gr=false.

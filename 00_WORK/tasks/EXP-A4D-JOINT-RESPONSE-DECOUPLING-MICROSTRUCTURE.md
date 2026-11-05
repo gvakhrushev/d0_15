@@ -22392,3 +22392,58 @@ Concurrent 8ad92906bb3393f07f18dc31ad44b0bd38209599 /7fp is preserved.
 Its genuine five-control joint obstruction is not canceled by the new
 sharp informative task or by the four-slot coordinate transport. On an
 enlarged encoder/preparation domain all of those rows remain required.
+
+### Whole-history truthful recovery and a global apparatus optimum — 5 November 2026
+
+Phase: native realization and final composition, same existing PR334 owner.
+Input: be48932026ebbc2c07cfbd3c0732c15b4edba4b0 and the owned SER/EO,
+readiness-amplification, exact-support phase and RP4/GH compiler interfaces.
+The primary artifact now contains **Whole-history truthful recovery: a
+global apparatus optimum and the original Einstein source**.
+
+Exact supporting substitution: for the complete retained joint instrument
+from its EARLIEST true input, K_omega* K_omega=q_omega I and actual valid-code
+Born masses mu_omega imply C*C <= (sum sqrt(mu_omega q_omega))^2 I.
+Conditional polar recovery preserves every label and unknown/reference
+column and ATTAINS this bound. It globally minimizes the ORIGINAL positive
+Book feedback and zeros ALL fixed-effect implementation rows, including
+conditional BANK and complex phase directions. This removes arbitrary
+freezing of a few chosen reader settings. It does not zero effect-changing
+or task-violating raw-gate directions.
+
+On the recovered fresh SER tower, actual mu=(p^2,p^4), so
+c_total=product_i[p sqrt(1-q_i)+p^2 sqrt(q_i)]. On the original q<=4p^7
+collar, the feedback and complete recorded-information sources have the same
+sign. The primary gives the actual positive field gain with every past
+return factor retained, the full non-scalar effect derivative, and the
+unequal-future affinity/entropy recursions. The complete Einstein-CAR source
+is consumed through the existing physical map/right lift; it is not
+re-derived from a new geometric expansion.
+
+The constructive native continuation takes the ACTUAL retained word as its
+operand. It uses its exact inverse and two actual projectors, the owned
+stable native-phase amplification, and exact-label supported SO8 compilation
+for phase/tail corrections. No unknown input is inspected or reset and no
+success branch is discarded. Literal length grows at most C5^k+poly(k),
+recovery error at most C12^-k, hence the FULL occurrence-source debt N*error
+vanishes. Actual helpers, births, dark columns, inverses, readback and clock
+remain paid. The q-only cold compression preserves inherited q-matched
+finite feedback comparisons exactly; full hardware and thermal stationarity
+is a kappa/source result, not a new exact finite whole-price root.
+
+Remaining application: the actual task must admit preserving the full
+registered effects plus paid transport of unknown quantum futures. A task
+fixing the original untransported conditional backaction needs its separate
+map. Upstream reporter/calibration rows changing q remain genuine equations,
+as do independently changed scene/cut parameters. A physically executed
+classical controller/compiler prefix retains its actual price. Book03.25
+already states B=H+J; using that law requires this execution's actual H/F/cut
+and tangent, whereas deriving its selection from Books00-01 remains the
+stronger obligation. Terminal Hodge expectation is not cumulative work.
+No new task, claim promotion or physical GR closure is asserted.
+
+Smallest decisive check: embedded whole_truthful_record_optimum_check.py,
+288 checks; ordinary and optimized Python receipts identical. Covers the
+global true-cut bound, all complex tangent basis directions in the bounded
+witness, actual source sign, unknown/reference entropy, unequal futures and
+native phase/source algebra. No unchanged heavy GR/heat/Lean replay.
