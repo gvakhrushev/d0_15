@@ -22160,3 +22160,71 @@ current-bank/preparation/clock/scene equations remain open. The target
 minimum shows why valid code plus retained quantum distinctions alone
 does not select an informative record. `GR_closed=false`,
 `scientific_promotion=false`; the full A--D goal remains active.
+
+## 2026-11-05 checkpoint: actual pre-sign writer and programme weight quotient
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `b31cd0ad1bf96ec019bd43f6be8500e94e31f413`.
+Result location: §7fo of the existing full-source primary artifact.
+Write paths remain that artifact and this brief. No new task, branch,
+registry result, acceptance, Ready, retirement or merge.
+
+Parent premise: programme-source C4's missing same-history weight map
+and the original EO/H.1 informative report operation. The incoming
+complete local code-valid domain is weaker than that original task;
+its screened U_zero is not an H.1 counterexample. An explicit ledger
+distinguishes free controls, generated operands and task guards, keeping
+the actual state, preparation, past and response reactions. H.1 means
+§7eh.H.1; §7eo.H.1 is instead clock padding.
+
+Changed mathematical input: the original event is marked before the
+central sign and then uncomputed; EO had no executed terminal0/10.
+The new history births a real canonical pointer and tail, inserts
+CX(event,pointer) before the original Z, executes the original reverse
+body, and then the literal three-call encoder. On matched legs its
+complete operator is W tensor P_plus + I tensor P_minus before encoding.
+Independent legs instead retain BOTH W=A_b* Z A_f and V=A_b* A_f.
+The pointer code has q=p^2+p^3 Q and the proper cold is
+C=sqrt(p)[1-2(1/2+p sqrt(p))Q]. All failures/unused columns remain.
+
+The full terminal component, cost-weighted Born transform and Book
+amplitude-marked transform are calculated separately with their actual
+normalizers. No extra Info or sum H+J+CQ is selected. The inherited
+four skew preparation rows remain in the transformed feedback/terminal
+calculation at the original centres; an off-shell stationary nuisance
+section for this extension is still required. A newly free pointer
+rotation has a nonzero real row;
+the cold/record Jacobian is nonsingular. Thus one actual history now
+supplies two independent response coordinates, while the stationary
+section of the selected entire price is still required.
+
+The changed full heat is bounded with the existing arbitrary-unitary
+growing-clock CL theorem, at the actual new dimensions and425D modes.
+The new positive feedback gain, complete occurrence constants and right
+lift are retained. Padding is chosen last and does not attenuate this
+gain. Optional free padding gates use the owned spectator-supported
+argument; other added couplings keep their equations. No original EO
+exact finite root is imported into this new word.
+
+The complete FN fibre has an exact terminal/future weighted transport.
+Two literal ten-CX identity words provide a decisive actual application:
+same full operator and H+J, while unspecified scalar primitive weights
+leave their true product ratio and its full derivative. A full retained
+tree telescoping identity gives the actual primitive, terminal and
+preparation defect, and its source budget after gain/right lift. Equal
+total partitions alone do not establish the required cylinder law.
+
+Validation: bounded original-loader native executions and exact Golden
+source/price algebra, normal and optimized warnings-as-errors receipts,
+plus independent proof reviews and one final affected integration pass.
+The finite fixtures are not execution of the huge geometric compiler;
+its dimension-independent map and owned estimates are used explicitly.
+The existing assembly template is consumed as a reporting contract,
+without an independent acceptance or discharge claim.
+
+Remaining application: actual complete Book primitive/vertex weights,
+terminal and stopping/work law, physical task binding and the joint
+new readout/other independent rows. These cannot be reconstructed by
+assigning Info from the desired H+J price. This checkpoint removes the
+missing pre-sign operation/source map, not the full A--D premise.
+GR_closed=false; scientific_promotion=false; goal active.

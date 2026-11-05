@@ -144728,6 +144728,3606 @@ print(json.dumps(summary, sort_keys=True, indent=2))
 }
 ```
 
+## 7fo. Paid pre-sign record, independent response coordinates and the complete weighted-transfer gate
+
+5 November 2026. Existing #334 / constitutive / native-programme-v1.
+Scientific input: `b31cd0ad1bf96ec019bd43f6be8500e94e31f413`.
+Phase: native realization and final composition. Consumer: the original
+EO/FN programme quotient and programme-source C4, then EO1/EO3 in the
+unchanged scoped A--D contract. No new task, geometry, field root or
+acceptance edge is introduced.
+
+The attached b42db3d programme review asks for one nuisance graph and one
+weighted full-history map. The current input is newer: §7fn already
+classifies the complete local code-valid family and exposes a screened
+terminal component. The present application first distinguishes that
+weaker family from the original informative H.1 descriptor. It then
+CONSTRUCTS the missing physical operation: a native pointer copies the
+original pre-sign event before its paid uncomputation, and the actual
+three-call 0/10 writer records that pointer. Its complete operator,
+independent forward/backward rows, proper cold return and terminal
+price operands are calculated on this one extended history.
+
+On the matched original reflection W=A* Z A, put E=(I-W)/2 and let
+the original prepared effect be j*Ej=Q I. The new full pre-code operator
+is W tensor P_plus + I tensor P_minus. With the actual canonical pointer
+and tail, its terminal return probability and proper cold are
+
+    q=p^2+p^3 Q,
+    C=a[1-2R Q],  a=sqrt(p), R=1/2+ap.                 (PS0)
+
+The full terminal CQ component has the genuine conditional-entropy
+formula, the original code-weighted effect has an independently
+computed absolute normalizer, and the full H+J feedback has a positive
+field gain on the declared regular Q collar. Paid clock padding bounds
+the changed complete heat in the original norm. No old exact finite
+EO zero or unmodified clock price is transferred to the extended word.
+
+The new pointer has real variations. A post-reader rotation yields
+C_theta=a p^3 Q and q_theta=2ap, so the two response coordinates have
+strictly nonzero Jacobian with the original event coordinate Q. This
+is an actual same-history failure of shared-scalar factorization,
+not a fitted Einstein residual. It does not declare a stationary
+pointer for an unknown full price. Its raw row or the reaction of a
+genuinely specified response constraint is retained.
+
+The full operator-preserving FN fibre also now has a concrete weighted
+application on literal native words and every retained future effect.
+An exact primitive-weight defect and a full-tree source/error identity
+state what still has to be computed for the selected Book weights.
+Neither this terminal component nor equality of two implementation
+operators supplies the missing entire Cost--Info binding.
+
+Parent substitution: the physical pre-sign reader/writer map, its
+complete response/cold derivatives and the heat transport are supplied;
+the weight transport on the already admitted implementation fibre is
+made explicit. The surviving application is the SAME complete native
+weight/price law and the joint new readout/clock/scene rows under its
+actual task. `GR_closed=false`; the A--D goal remains active.
+
+
+### 7fo.A. Original EO nuisance graph and the actual informative-record boundary
+
+5 November 2026. Read-only #334 input
+`b31cd0ad1bf96ec019bd43f6be8500e94e31f413`.
+Consumer: the requested programme quotient and weighted continuation
+application on the original §7eo graph, not a replacement by §7fn's
+later two-qubit code family. No repository/task/status changes.
+
+Source abbreviation **P** below means
+`02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`
+at this input. Section/equation labels are the durable references;
+the quoted line addresses identify the inspected snapshot.
+
+#### 1. The two H.1 references and the three different domains
+
+The fixed writer graph called “H.1” in EO is **§7eh.H.1**
+(P:154728): canonical fresh WORK/SITE checkpoint, the original complete
+writer and its designated free incoming SAM control. **§7eo.H.1**
+(P:159387) instead inserts actually paid CX-squared clock padding.
+It does not define the input/preparation graph.
+
+Three domains must remain separate:
+
+* **Original H.1 / EO:** the original geometric bank, pre-sign marks,
+  reflected return, independent preparation occurrences and the stated
+  effect/prepared-mark fidelity. Its thermal statements use EO's actual
+  centre identities, FP8 comparisons and CL estimates.
+* **Full-operation FN:** at fixed logical p, complete segment and
+  marked-prefix products obey `E(w)=M(p)` on one actual birth/mark
+  layout. FN2--FN7 give exact full-clock/cut price conjugacy. EO's
+  complete identity slots consume this result; not every nontrivial
+  FP8 axis belongs to this smaller fibre.
+* **Later code-valid family:** §7fn's `U in SO(4), <11|Uj=0` fixes only
+  code validity, not the original informative response. U_zero belongs
+  there. No map makes it an H.1 implementation merely because both
+  descriptions contain a report.
+
+P:157078 expressly keeps the incoming FN task at its stronger scope and
+does **not** append §7em.F2's terminal STORE to EO's canonical endpoint.
+P:159161--159181 likewise says that H.1's bank/pre-sign marks do not
+automatically include the complete terminal `WJ`.
+
+#### 2. Exhaustive ledger of the coordinates declared in this original graph
+
+“Guarded” below means fixed by the explicit declared task/input regime;
+it does not mean the kernel forces every process to use that regime.
+“Generated” means its actual derivative follows the paid construction.
+No reaction is described as an unconstrained Euler zero.
+
+| Operand | Status on the original graph | Actual row or guard, with source |
+| --- | --- | --- |
+| Geometric/coframe/link/CAR variables and free SAM | Independent logical controls. Y varies in the entire regular chart; SAM is not optional programme CODE. | H.1 T1--T10 and EO.C preserve all 16+24+2 directions, actual sampling gain and right lift. Do not freeze Y by recording its input label, or count a second unrelated Y in the baseline. P:154739--154773, 154880--154932; RAW R13--R15. |
+| Four preparation occurrences `P_f,P_b,Q_f,Q_b` | Independent, on the permitted SAM/live-DATA supports and specified inner commutants. | CD3(1) keeps `P_b* B_s* Q_b S Q_f* B_s P_f`; each centre derivative is compressed skew-adjoint and solves its own H and J row. Their matched finite comparisons, not arbitrary chords, give EO1's exact finite zeros. P:159049ff; EO.E FP7/FP8 and EO.I.2. |
+| Actual initial cut `P_0`, input embedding and density | The actual EO tower starts with SourceSpin `H_0=C^4`, `P_0=I_4`; an optional protected factor stays unknown. This is distinct from the reporter's reference `P_0` below. | EO.C does not admit arbitrary G/CX rotation of Spin or a freely chosen new cut. Unknown density on that fixed full input is source-independent. If a normalized embedding i was already admitted, CD3(3) uses its generated reference and `C_phys=cI_r` to give `D_i C_phys=0` at the canonical centre; this does not create a new native cut control. P:157616--157635, 159067ff. |
+| Per-call READY registers and readiness | Generated by the fixed complete writer; separate fine carriers have the same owned calibration. | H.1 uses the actual full-processor alpha_h, not the smaller scalar apparatus's n20 count without a map. Independent READY/failure outcomes remain. If independent READY loaders are genuinely added, CD4 gives `delta Q=lambda_vis sum mu r_0 Delta(delta a_f+delta a_q-2delta a_0)`, generally nonzero. P:154730--154735, 157340--157352, 159122ff. |
+| Reference call `P_0` and the seven linked source/reference banks | Generated from the original common-law bank recipe; no separate mutable scalar reference is supplied. | H.1 T2--T5 fixes the genuine source banks, same SITE and comparator. An independent reference change has `delta Q_0=-lambda_vis(Delta_y+Delta_x)delta P_0`. Shared-law cancellation at the primary point is only CD3(5)'s explicitly conditional extension; fixed-bank compilation does not realize a new finite shared-u family. P:154781--154838, 159085--159117. |
+| Comparator visibility and predicate | Guarded by the actual fixed positive word, hence generated kappa512 p^7; not a free normalization. | SC6--SC7 counts the actual predicate and SourceI calls. If visibility is added as a free current variable, CD4 retains `delta Q_vis=4 delta lambda_vis`. No reaction from fidelity can call that raw normal zero. P:113496--113535, 159122ff. |
+| SITE, PF and density | SITE is fresh generated WORK with paid loader/unloader, shared by all seven calls at each SAM label. Density/PF coordinates remain independent when included in Y. | Average the comparator products once after forming Xi at the same site. `Xi delta mu=0` and `sum delta mu=0` are centre identities, not off-shell freezing of measure. H.1 T2--T5 and CD3(5); P:154763--154770, 154811--154838. |
+| Centre/resolution name, seed/frame and calibration | The finite chart/catalogue and actual writer recipe are task data for each comparison. Their loaders, marked maps and actual field lift are generated and paid. | A separately supplied free seed/frame is not eliminated by naming it a baseline: retain its Jacobian and current source. Optional live CODE is a different register with its separate programme-family theorem. P:154756--154762, 158995--159012; EO.I.6. |
+| Compiler, preparation implementation and compensated STORE/echo changes | Independent inside the explicitly stated fidelity constraints. Effect fidelity is weaker than complete FN fidelity. | On H.1, `delta F_o=0` gives `delta C_o=0`; the thermal centre uses CD3, not an unconditional equality of arbitrary finite implementations. On full FN, `F'_j=V_(j+1)F_jV_j*`, with V identity at complete marks/births, conjugates T, generated cuts and both Hodge degrees. Normal rows have reaction `Lambda=-D_E b`, not zero raw source. P:120235--120324, 159058ff. |
+| Generated states, cuts, reports and readout records | Generated by actual prefixes and recurrences; required marked responses are guarded as functions of the free logical input. | RAW R6 has `P_j=A_jP_0 A_j*`. CD4/RAW R14 retain state adjoints and `D Q* B_r`; the constraint is `r=Q(Y)`, never `Q(Y)=r_old`. Old reader transport is required. No terminal binary code or new physical read is inferred from a marked effect. P:159117--159142; RAW §§3,8. |
+| Old gates, protected records and reference correlations | Sealed oldRIGHT is guarded by the native address rule. The canonical-old centre has explicitly generated endpoint I; admitted active old directions remain distinct. | CD3(4) keeps the actual skew old endpoint variation and full weighted thermal/return traces. Fixed recorded past has `lambda_past=-D_h B_red`; a genuinely free old state/preparation outside the canonical hypothesis retains its row. EO's paid inverse before the next seal builds the hypothesis, rather than assuming arbitrary past is identity. P:159078ff, 157119--157131; RO4 old-z row. |
+| Scene, beta, z and spatial incidence | Fixed original scene/calibration of this declared task; no equation for independently varied versions is supplied by the EO reduction. | FN conjugacy uses INTERNAL placement and the fixed scene. CD1, CL12 and CL6 retain all modes and absolute price. If these are made free, their derivatives must be added; thermal padding does not suppress them. P:158995ff, 120299--120324, 159521--159579. |
+| Clock layout, births, mark addresses, padding and retention | Generated from the finite paid word; common discrete layout is guarded within a comparison. Different duration/birth layouts are different priced comparisons. | CL1 adds literal CX pairs: `D_m=D+2md`, cold/gain unchanged, heat changed. If padding gates are free on two spectator supports, CL.H.6 proves their separate return first rows zero; heat is bounded including all occurrences. Couplings to reporter/data are not covered. The original late-retention resource and its actual old-source theorem cannot be replaced by padding by name. P:159387--159424, 159521--159579. |
+
+This table describes the stated graph. A separate current rho/Delta HJR
+term, free query generator, new terminal encoder or arbitrary larger-bank
+action is not silently included and then declared neutral. EO.I.4 keeps
+those complete-price/source transports separate.
+
+#### 3. The exact quotient that can already be used
+
+On a full FN fibre at fixed layout and actual old data z,
+
+    E(w)=M(p), B(w,z)=b(E(w),z),
+    dB|admitted= D_E b DM dp + D_z b dz.              (PQ1)
+
+If M also depends on z, the genuine old-data row is
+`D_z b+(D_z M)*D_E b`, exactly as RO4 states. For
+`L=B+Lambda(E-M)`, `Lambda=-D_E b` solves every implementation row
+and leaves those logical/old rows. Generated-state adjoints are still
+present. This is a price factorization at fixed layout, not an empirical
+identification of distinct raw logs or intermediate states.
+
+For H.1's weaker effect/prepared-mark fibre, PQ1 is not automatically an
+exact complete-price quotient. EO supplies its own centre proof and FP8
+finite comparisons, and its off-shell heat remainder is bounded by CL.
+The genuinely response-changing logical +/- field/preparation comparisons
+are not vertical FN pairs. A weighted transport within an implementation
+fibre must not be substituted for their nonzero source.
+
+#### 4. Which report exists on this history
+
+The literal scalar comparator owner specifies
+
+    T=V G_port^-1,
+    W=R_load* T* Z_port T R_load.                    (PQ2)
+
+Its event is marked **immediately before the central sign**, not at the
+terminal port (P §7ef.C:113518--113535). The sign is actual SourceI²,
+with routing when required. H.1's larger geometric writer carries the
+same complete-bank/pre-sign interface; its actual readiness, dimension
+and source banks replace the scalar fixture's counts. At the real marked
+input the effect E_event gives
+
+    c=I-2E_event;  c_b=1-2Q_b.                       (PQ3)
+
+A per-call READY-and-REPORT conjunction is an input to the comparator;
+it is not this final sign or its terminal measured output (PC13,
+P:157340--157352). The following inverse uncomputes the pre-sign body.
+
+No literal §7fm canonical-tail 0/10 writer is executed in the original
+EO history. The EO introduction explicitly declines the different
+terminal STORE appendage. RAW R6 separately records generated cuts and
+registered `{O_nu,t_nu}`; a computed positive effect is not by itself an
+executed output instrument. Therefore neither `C_code=1+Q_b`, terminal
+`chi=0`, nor the 0/10 weighted effect `pI-p^3 E_event` is already an
+operand of this H.1 execution.
+
+The smallest missing terminal application is thus concrete: execute
+and price a reader/writer of **this pre-sign event**, carrying its actual
+input, complete branch operators, retained record and required prior
+readers into the next complete history. The later one-CX reader and
+canonical-tail encoder are reusable components, but their copied/noisy
+event and altered cold/clock source must be computed on PQ2. They cannot
+be transplanted as a free label or as the original unmodified E_event.
+
+#### 5. Informative task admission: what the kernel can actually enforce
+
+Book01/KAPPA already permits the explicit descriptor as task datum
+`vartheta=(c,d)`; §7fa.D EOQ10 checks the six finite-section obligations.
+No new universal scheduler or physical programme-register theorem is
+needed for that regime. Once c specifies the original off-shell report
+map and the relevant complete marks, a replacement must satisfy that
+map at each FREE Y. This is an informative response guard, not an
+Einstein predicate. It excludes U_zero if a same-carrier implementation
+of that fixed response is being claimed.
+
+The stronger requirement does not follow from code validity alone or
+from the future-profile kernel. `FutureExecutionCompleteness.lean:28--40`
+provides a distinguishing admitted future test for a pair whose complete
+profiles differ. `VerificationCore.lean:172--185` identifies retained
+records with complete future profiles. Neither theorem says that one
+designated terminal code bit must carry the distinction. U_zero keeps
+all quantum output distinctions through scaled isometries even though
+its classical code is field-independent. Thus it does not contradict
+future completeness. `ProspectiveExecution.lean:147--156` also takes
+the goal and full price as explicit inputs.
+
+A concrete native discriminator shows that the response guard is
+operational, not merely a name. On the later pointer/tail carrier, the
+faithful writer has return effect Pi_1, while U_zero has
+`lambda_0 P_+`, `lambda_0=p^2/(1/2+ap)`. These agree on the canonical
+pointer v. Apply one actual G to that fresh pointer before testing the
+known writer. Since `Gv=(p^3,2ap)`, their return probabilities differ by
+
+    4p^3-lambda_0(1/2+2ap^4)
+      =p^2(4p-1+4ap)/(1+2ap)>0.                     (PQ4)
+
+No computational-zero preparation is used. This is a diagnostic future
+experiment with its actual paid G/reader stages, not an uncharged
+addition to EO. The complete FN operator condition is stronger still.
+The missing bridge for the requested weighted EO application is the
+actual terminal-event writer/branch map of §4 and its assigned full
+Book weights, not proof that any observable can distinguish U_zero.
+
+#### 6. Exact weighted defect on the already proved FN map
+
+The matrix part of the primitive diagram is already explicit:
+
+    F'_j V_j=V_(j+1) F_j.                           (PQ5)
+
+For genuinely supplied Book amplitude coefficients alpha_j, the same
+primitive weighted diagram has defect
+
+    alpha'_j F'_j V_j-V_(j+1) alpha_j F_j
+         =(alpha'_j-alpha_j)F'_j V_j.               (PQ6)
+
+At square unitary stages its operator norm is exactly
+`|alpha'_j-alpha_j|`. Equality of full H+J prices on the fibre does not
+provide those coefficients or make PQ6 zero. The corresponding
+quadratic/CP diagram uses the squared amplitude factors; a scalar
+positive path law is a different typed binding. Actual terminal effects
+and any boundary calibration must also intertwine. Logical +/- source
+comparisons need their own diagram; PQ5 only covers the fixed-operation
+implementation fibre.
+
+Book-source owner
+`sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md`
+§§1--3 defines the memory-valued weighted sum before the quadratic
+response, with actual supplied Cost-Info and all Gram terms. It does not
+assign net unit tariff to each G/CX slot. The exact native gate count
+is therefore not a proof that alpha_j=phi^-1. Conversely choosing
+alpha_j from the desired H+J price would define the requested binding
+rather than prove it.
+
+The existing `FOUNDATIONAL_WEIGHT_BRIDGES.md` §2 gives the precise
+consumer: actual primitive weighted intertwining, terminal-effect
+transport, and, for many implementation words over one source history,
+the sum of their complete weights rather than equality of one chosen
+word's price. The deterministic compiler instruction list alone does
+not create a stochastic ensemble of those alternatives. Raw logs and
+all actual failure/record branches stay retained.
+
+**Parent substitution:** use the ledger and PQ1 for the exact constrained
+master quotient that is already proved; use PQ2--3 to identify the actual
+report mark; and test PQ6 plus the actual terminal writer/effect on the
+same paid history. This is the smallest remaining admission/valuation
+interface. It preserves the existing Einstein source theorem and does
+not claim the full Cost-Info binding or GR closure.
+
+### 7fo.B. Exact paid 0/10 extension of the original EO pre-sign event
+
+5 November 2026. Existing #334; input
+`b31cd0ad1bf96ec019bd43f6be8500e94e31f413`.
+Consumer: the missing terminal-event application identified in
+§7fo.A.4. This constructs the extension on the original event,
+not on a transplanted XF scalar. It is a newly planned complete history
+from the same retained old prefix; it is not the unmodified EO word or
+an exact FN replacement of its old complete endpoint.
+
+#### 1. The actual word and its address/birth conditions
+
+The original EO segment is the literal reflected word
+
+    A; Z_e; A*,       W=A* Z_e A,
+    A=T R_load,      T=V G_port^-1.                  (NPS1)
+
+Here e is the actual live sign port, and Z_e is the original paid
+SourceI-squared operation (with its owned routing when necessary).
+The per-call READY/report registers and the comparator's pre-sign
+event remain those of §7eh.H.1/T2--T3 and §7ef.C. No scalar fixture's
+wire count or readiness is copied into the full geometric bank.
+
+Preserve the original output/source PORT as the first current birth,
+the entire old front-birth order and the original SourceSpin addresses.
+Plan two new canonical births, pointer r and tail t, after those
+existing front births and before the square A body. Both are born in
+`v=(a,p)`, `a=sqrt(p)`, `p=phi^-1`. Extend every original A/A* gate by
+the exact identity on r,t. Execute chronologically
+
+    A; CX(e,r); Z_e; A*; CX(r,t); G_t; CX(r,t).       (NPS2)
+
+The final three calls are the exact §7fm encoder E_0. Relative to the
+old segment there are two genuine births and four added square calls:
+three CX and one G. The original A, Z_e and paid A* calls remain.
+Every original stage after the new births carries the extra factors;
+the complete history dimension must be recomputed, not increased by
+only the four gate slots. The final carrier has four times the old
+segment's final dimension. The actual final gate is CX, preceded by G.
+
+The native address rules are satisfied when e,r,t are live non-Spin
+ports. Neither added CX nor G touches protected oldRIGHT or individual
+SourceSpin coordinates. The original SourceI frame/routing is unchanged.
+No inverse gate is introduced: A* is the already paid native reverse
+word in the declared SourceI-capable profile. The new local calls need
+only G/CX. There is no zero blank, reset, postselection, helper deletion
+or free Boolean copy. This is executable by the unchanged original
+finite native grammar on every input column.
+
+The true initialized inclusion is `j_ext=j tensor v_r tensor v_t`.
+Its rank equals the original proper input rank: these births are
+isometries, not new arbitrary initial-state factors. The original
+unknown H_0 and every untouched reference correlation remain present;
+no newly added primitive addresses them. This does not assume that
+the original SourceI-mediated interaction is identity at intermediate
+stages. Its real calls and all old input columns are retained.
+
+#### 2. Full operator identity, before any prepared-state reduction
+
+Let `P_+=(I+X_r)/2`, `P_-=(I-X_r)/2`. Since
+
+    Z_e CX(e,r)=Z_e tensor P_+ + I tensor P_-,
+
+the complete pre-code endpoint of NPS2 is exactly
+
+    U_read=W tensor P_+ + I tensor P_-.              (NPS3)
+
+All bank, source, dirty, old and reference columns remain. NPS3 is an
+identity for the actual native endpoint, not an instruction to execute
+a controlled unknown black box. The actual instruction is CX(e,r)
+inserted at the known pre-sign address.
+
+Write `R=1/2+ap`, so `0<R<1`. Born-pointer compression gives
+
+    (I tensor <v|)U_read(I tensor |v>)=R W+(1-R)I.    (NPS4)
+
+The actual E_0 acts only on r,t and satisfies its all-column and born
+identities `Tr_t E_0=2a I_r`, `<v_t|E_0|v_t>=a I_r`.
+Thus for any original input isometry j and C=j*Wj,
+
+    C_ext=a[R C+(1-R)I].                             (NPS5)
+
+If the original actual physical corner is `C=(1-2Q)I`, this becomes
+
+    C_ext=a(1-2R Q)I.                               (NPS6)
+
+For the whole pre-code bank trace, NPS3 instead gives
+`Tr U_read=Tr W+dim(H_bank)`; appending E_0 multiplies this by 2a.
+This is not equality to the old complete thermal spectrum. The actual
+new stages and birth details must be used in RAW/GROWING.
+
+#### 3. Actual terminal branch maps and exact validity
+
+After the original pointer is born in v, project its computational
+output. Define
+
+    u=(a+p)/2, d=(a-p)/2,
+    K_0=u W+d I, K_1=u W-d I.                        (NPS7)
+
+The complete code output is the coherent isometry
+
+    psi -> K_0 psi tensor |0>_r Gv_t
+                +K_1 psi tensor |1>_r |0>_t.        (NPS8)
+
+Gv=(p^3,2ap). The direct tail remains quantum WORK; it is not tested
+for zero or discarded. The three parser effects are
+`Pi_r0 tensor I_t`, `|10><10|` and `|11><11|`. Every initialized
+pointer input to E_0 is exactly valid, so NPS8 has no invalid component,
+even with arbitrary old/reference entanglement. All invalid dirty
+columns nevertheless remain in the complete unitary and heat carrier.
+
+Because W is a reflection, its actual effects are
+
+    K_1* K_1=(I-p^3 W)/2,
+    K_0* K_0=(I+p^3 W)/2,
+    K_0* K_1=ap I.                                  (NPS9)
+
+Let `E=j*A*Pi_e1 A j=(I-C)/2` be the original pre-sign event effect
+on the actual input. Then the written return-code effect is
+
+    E_code,1=p^2 I+p^3 E,
+    E_code,0=I-E_code,1.                             (NPS10)
+
+For scalar E=Q I, the exact code probability is `q=p^2+p^3 Q`.
+This is an informative noisy copy, not the false identification q=Q.
+The affine inverse is a calibrated statistic; it is not declared a
+new positive outcome effect. No failure probability has been removed.
+
+The original code's parsed-length effect pulls back to
+`I+E_code,1`. Its two symbols therefore have lengths1 and2, but the
+fixed native container has the same executed duration on both branches.
+A serial emitter/cursor, measured record, stopping routine or extra
+decoder work is not supplied merely by this coherent container.
+
+On a scalar-effect input fibre, the two complete K_b j maps are scaled
+isometries and preserve every incoming conditional quantum spectrum.
+That proves chi=0 for the specified efficient two-label CQ component
+on THAT fibre, with the whole bank retained. It is not a statement
+about all off-fibre preparations or an assignment of Book03 vertex Info.
+If the unread direct tail is registered separately, its extra conditional
+entropy and real readout work must be retained as in §7fm.
+
+#### 4. Independent forward/back preparations are not tied together
+
+The preceding reflection formulas describe the matched target. To keep
+the original four independent preparation occurrences, absorb them into
+two independent complete bank maps A_f,A_b. The actual chronological
+word is
+
+    A_f; CX(e,r); Z_e; A_b*; E_0(r,t).
+
+Put
+
+    W_bf=A_b* Z_e A_f, V_bf=A_b* A_f.
+
+Its ALL-COLUMN endpoint before E_0 is
+
+    U_bf=W_bf tensor P_+ + V_bf tensor P_-.          (NPS11)
+
+Hence the genuine cold map, including its independent first variation,
+is
+
+    C_ext=a[R C_W+(1-R)C_V],
+    D C_ext=a[R D C_W+(1-R)D C_V],                  (NPS12)
+    C_W=j*W_bf j, C_V=j*V_bf j.
+
+Variations of j restore its two additional product-rule terms. Canonical
+birth constants a,R are fixed original primitives; any newly admitted
+preparation changing them has its own actual gate derivative, not zero
+by notation. V_bf=I holds at the matched target, not throughout the
+independent-preparation domain.
+
+More explicitly the branch maps are now `K_0=uW_bf+dV_bf` and
+`K_1=uW_bf-dV_bf`. Unitarity gives
+
+    K_1* K_1=[I-p^3 A_f*Z_e A_f]/2,
+    K_0* K_1=ap I.                                  (NPS13)
+
+Thus the terminal probabilities depend on A_f and are independent of
+A_b, whereas the actual cold map NPS12 depends on both. Reconstructing
+the full master source from the terminal q alone would erase a real
+preparation row.
+
+At a matched real scalar corner, tangent variations of A_b* A_f are
+skew-adjoint. Their compressed D C_V is likewise skew, so its real
+first feedback trace vanishes separately in each unitary preparation
+direction there. This is a proved centre property of that return term;
+it neither sets D C_V=0 as an operator nor proves the corresponding
+new full thermal row zero. All full-clock equations and finite
+comparison symmetries must be recomputed or transported for NPS2.
+
+#### 5. Marks, faithful constraints and the exact remaining premises
+
+The old prefix is unchanged. On newly planned stages before the added
+CX, original bank/source/pre-sign marks extend by identity on r,t and
+keep their values at the actual shifted addresses. After CX the live
+state has changed. Original post-sign/current-output projections cannot
+be reused without their actual suffix transports. The original old
+complete endpoint W is not the new endpoint; NPS2 is therefore not a
+vertical FN implementation of the unmodified EO descriptor.
+
+Define the extended task descriptor by the explicit word constructor,
+births, canonical input checkpoint, actual marks and final code effects
+above. Keep the original logical field and four independent preparation
+arguments. The full new target tuple is M_ext(Y,p), not the old M(Y)
+with the extra gates ignored. The exact faithful implementation predicate
+on a fixed new layout is `E_ext(w)=M_ext(Y,p)`. FN's existing conjugacy
+and real normal reaction then apply to its implementation fibre. They
+do not solve logical response-changing directions by freezing them.
+
+The proposed report relation is generated:
+`E_code,1=p^2 I+p^3 E_f(Y,p_f)`, not a requirement that its old numerical
+value remain constant. Its adjoint source is retained. A genuinely free
+pointer preparation or code-control variation enlarges this logical
+task and keeps its own row; §7fn shows why mere 0/10 validity is
+insufficient to guard it. If the task instead requires this specified
+reader/writer response, its exact operator constraint and reaction must
+be declared and justified through the existing Book01 task-data regime.
+
+The construction removes the executable-event-writer premise: it is
+now an exact original positive/native extension with no zero blank.
+The remaining price inputs are precise: evaluate RAW R6 on the new
+history; retain NPS12's full preparation equations and all old/source
+norm budgets; supply the actual complete Book branch/amplitude weights
+and terminal/readout convention; and prove their weighted primitive
+and boundary transport. Neither the code-length pullback nor the
+specified CQ entropy selects those weights. No additive master-plus-code
+action, primitive unit tariff, full Cost-Info binding or GR closure is
+claimed here.
+
+#### 6. One original-loader all-column witness
+
+The standalone `check_presign_native.py` imports the pinned original
+`native_execution.py`. Start with the arbitrary SourceSpin carrier
+H_0=C^4 on wires0,1. Birth e=2 first as the original source PORT,
+then bank b=3, pointer r=4 and tail t=5, all canonically in v. Choose
+the actual native `A=CX(b,e)`, whose inverse is the same real CX. Run
+
+    CX(b,e); CX(e,r); SourceI(e,0,1); SourceI(e,0,1);
+    CX(b,e); CX(r,t); G_t; CX(r,t).                   (NPS14)
+
+This is eight original square calls: one G, five CX and two SourceI.
+There are four births. All 64 final columns are retained. No G/CX
+touches SourceSpin, and the two actual SourceI calls give exactly
+Z_e tensor I_Spin without asserting that their intermediate action
+is identity. The body endpoint is exactly the full NPS3/NPS8 operator.
+
+For this genuine prepared bank,
+
+    Q=2p^3<1/2,
+    q_code=p^2+2p^6,
+    C_ext=a[1-4(1/2+ap)p^3] I_4>0.                  (NPS15)
+
+The checker proves the effects and cold map on every arbitrary initial
+Spin column, including reference entanglement. It also verifies that
+the old sign port's TERMINAL computational probability is p^2, whereas
+its pre-copy/pre-sign probability is Q. This prevents confusing the
+original marked event with a later port readout.
+
+The true before-stage dimensions are
+
+    4,8,16,32,64,64,64,64,64,64,64,64.
+
+Consequently N=12, D=572, the complete Hodge mode count is425D=243100,
+and the harmonic offset is359D=205348. The final closing gate is the
+actual last CX, with a square G stage immediately before it. No old
+stage is padded to dimension64. The checker validates the stage and
+local-operator identities; it does not diagonalize the entire clock
+or claim that this small bank is the full geometric EO compiler.
+
+Both warnings-as-errors runs pass 37 explicit conditions (normal and
+optimized modes), with identical JSON. Exact pins and reproduction
+are in `PRESIGN_CHECK_RECEIPT.md`. This is one finite macro witness,
+not a census or a physical complete-price selection theorem.
+
+### 7fo.C. The actual pre-sign writer: cold and record sources on one execution
+
+5 November 2026, existing #334, snapshot
+`b31cd0ad1bf96ec019bd43f6be8500e94e31f413`.
+This applies the terminal operand in §7fo.F to the actual newly specified
+extension of the original EO event. It does not install a complete Info law.
+
+#### A. Complete execution and independent echo legs
+
+The inherited old execution has forward `A_f`, backward `A_b*`, and its
+already paid central sign `Z=I-2Pi_e1`. Born pointer `r` and tail `t` in the
+canonical `v=(a,p)` are present before these operations, with `a²=p`,
+`p+p²=1`. The new chronological part is
+
+    A_f; CX(e,r); Z_e; A_b*; CX(r,t); G_t; CX(r,t).
+
+The inserted reader and literal encoder add four positive G/CX calls and
+two canonical births. Their actual clock, full carrier, helper ages and
+proper generated cut must be recomputed; no old full-price gain is reused.
+Define the independent complete old operators
+
+    W=A_b* Z A_f, V=A_b* A_f, Pplus/minus=(I±X_r)/2.
+
+Direct all-column multiplication gives
+
+    U_pre=W tensor Pplus + V tensor Pminus.         (PPS1)
+
+This holds before imposing an echo constraint. Setting `V=I` is permitted
+on the matched graph `A_b=A_f`, not in independent variations. Every old
+record/work subsystem remains in W and V. Nothing is copied from an
+unknown quantum amplitude: the new reader is the actual controlled-X.
+
+For pointer `r=v`, the two pointer branch maps on the complete old carrier
+are
+
+    B0=((a+p)W+(a-p)V)/2,
+    B1=((a+p)W-(a-p)V)/2.                           (PPS2)
+
+Let `E_f=A_f* Pi_e1 A_f`. Unitarity gives, without a matched-leg assumption,
+
+    B0*B0=pI-p³E_f,
+    B1*B1=p²I+p³E_f,
+    B0*B1=ap I.                                    (PPS3)
+
+Both output branches are retained. After the literal encoder, the branch
+tails are `Gv=(p³,2ap)` for 0 and `G^Tv=e0` for 10. Their states are not
+discarded; the invalid `11` subspace is present on the full carrier and
+has zero weight only for this initialized execution. The code instrument
+has the same effects (PPS3), with its branchwise pure tails adjoined.
+
+#### B. Complete CQ component and regular entropy reactions
+
+Let `i` be the original protected-input embedding and suppose the existing
+event theorem supplies the all-input effect
+
+    i* E_f i=Q I_r.                                (PPS4)
+
+Then `K_b=B_b i` satisfies `K_b*K_b=q_b I_r`, where
+
+    q=q1=p²+p³Q, q0=p-p³Q.                         (PPS5)
+
+For EVERY protected density operator rho, each conditional retained state
+is an isometric copy of rho (tensored with its pure branch tail). Thus
+`S(rho_b)=S(rho)`. Under the specified two-label CQ record convention and all retained
+old bank/helpers, the CQ entropy increase is exactly `h(q)`. This is not
+an entropy of a discarded marginal and uses no favorable-outcome selection.
+
+The actual parsed length has expectation `1+q`. Under the specified CQ
+entropy convention its TERMINAL component is therefore
+
+    P_term=1+q-h(q)/ell=f(q), ell=ln(phi),
+    f'(q)=1+ln(q/(1-q))/ell,
+    D P_term=p³ f'(q) DQ.                          (PPS6)
+
+At `Q=0`, `q=p²` is the Kraft minimum and `f=f'=0`. For `0<Q<=1`,
+`p²<q<=p` and `f'(q)>0`. This is a positive field-source component of the
+actual new code, not a proof that the whole primitive execution price is
+P_term, nor a license to add P_term to H+J.
+
+There is a stronger full-source fact at PPS4. For any nearby efficient
+complete two-outcome instrument define
+
+    chi=S(rho)-sum_b q_b S(rho_b),
+    P_term=f(q)+chi/ell.                            (PPS7)
+
+Purifying rho mathematically gives a reference ensemble whose average is
+rho; concavity proves `chi>=0`. At scaled isometries chi=0. For rho faithful
+on its fixed support and `q_b>0`, chi is differentiable in all regular
+instrument/input directions: the nonzero branch spectra equal the spectra
+of `sqrt(rho)K_b*K_b sqrt(rho)/q_b` on that fixed input support. There are
+no new small eigenvalues because the branch maps remain injective there.
+Consequently `Dchi=0` at PPS4 even in directions leaving the scaled-isometry
+submanifold. Thus `DP_term=f'(q)Dq` on these real regular directions.
+Support births/rank changes require separate continuity estimates. This
+proof does not presume a physically supplied purifier.
+
+For a free trace-zero protected input variation at fixed PPS4,
+`Dq=Tr(D rho qI)=0`. For preparation/field variations moving i or A_f,
+
+    Dq=Tr(D rho i*(p²I+p³E_f)i)
+       +p³ Tr(rho D(i*E_f i)).                     (PPS8)
+
+The derivative of i is retained. Existing upstream zeros may be consumed
+only after this actual pullback. An independent backward-leg variation
+changes neither E_f nor q; it can still change the full master price below.
+
+#### C. Raw Book-cost markers and the full cold compression
+
+The literal code-Cost probability marker is `pF0+p²F1+chi_fail Ffail`.
+On the complete old input its exact effect is
+
+    H_cost=p B0*B0+p² B1*B1
+          =(p²+p⁴)I-p⁶E_f.                        (PPS9)
+
+On PPS4 its absolute mass is `Z1=p²+p⁴-p⁶Q`, with `DZ1=-p⁶DQ`.
+The extra amplitude marker `p^{length}` on already executed native
+amplitudes gives `H2=H_cost-p³I`, `Z2=Z1-p³`, `DZ2=-p⁶DQ`.
+Neither same unnormalized derivative nor same normalized event law
+identifies `-ln Z1/ell`, `-ln Z2/(2ell)`, P_term or the master action.
+The corresponding log derivatives have their actual separate denominators.
+
+Because `<v|G|v>=<v|G^T|v>=a`, the full encoder compresses over its tail
+to `aI_r`. Put `R=<v|Pplus|v>=1/2+ap`. On the complete old carrier the
+new canonical cold is
+
+    C_code=a[R W+(1-R)V],
+    C_protected=a[R C_W+(1-R)C_V],
+    C_W=i*Wi, C_V=i*Vi.                            (PPS10)
+
+For matched legs and the original all-input scalar cold
+`C_W=(1-2Q)I_r`, `C_V=I_r`, this becomes
+
+    C=a(1-2RQ), DC=-2aR DQ.                        (PPS11)
+
+For the actual RAW proper-cut feedback
+`J=-ln det[(1-z)I_r+z C_protected*C_protected]`, its field derivative on
+this matched scalar chart is
+
+    DJ = 4r z a R C/[1-z+z C²] DQ.                 (PPS12)
+
+The rank r is the complete protected rank. This coefficient is positive
+on the declared positive-cold chart. In a general independent variation
+the first source instead uses `-2z C ReTr(DC_protected)/(1-z+z C²)`, with
+both terms in PPS10 and all preparation derivatives. The new heat term and
+full clock normalization are separate required calculations; PPS12 alone
+does not prove master stationarity.
+
+#### D. Two actual pointer insertions, not one free scalar
+
+Keep the physical input/cut canonical and insert a real target rotation
+`O_theta` either immediately AFTER U_pre, before the fixed encoder, or
+immediately BEFORE U_pre. These are different operation slots. At theta=0,
+the complete independent-leg derivatives are
+
+    post: Dtheta E1=2ap I,
+          Dtheta C_code=(ap³/2)(V-W);
+    pre:  Dtheta E1=2ap(I-2E_f),
+          Dtheta C_code=(ap³/2)(W-V).               (PPS13)
+
+On the matched scalar chart they give respectively
+
+    post: q_theta=2ap, C_theta=+ap³Q,
+    pre:  q_theta=2ap(1-2Q), C_theta=-ap³Q.          (PPS14)
+
+An independently varied physical birth state and its generated moving cut
+is yet another map; PPS13 does not freeze that cut. A canonical native birth
+by itself does not admit a freely chosen rotation. A finite native
+realization requires the existing compiler and its actual price/mark
+constraints, not treating O_theta as a new free gate.
+
+If the post-reader direction is admitted, its terminal CQ row at the
+matched section is `2ap f'(q)>0` for Q>0. The older preparation zeros do
+not cancel this new row. Neither setting only the field row to zero nor
+adding CQ and H+J without a binding supplies a joint stationary execution.
+
+There is nevertheless a decisive structural positive result. On this ONE
+execution, the cold and recorded responses have Jacobian
+
+    [ C_Q     C_theta ] = [ -2aR    ap³Q ],
+    [ q_Q     q_theta ]   [  p³     2ap  ],
+    det=-4p²R-ap⁶Q < 0 for Q>=0.                    (PPS15)
+
+Thus these two actual responses do not factor through one shared scalar.
+For any GENUINELY BOUND smooth price F(C,q), if its post-reader row vanishes
+at this chart point and there are no additional terms in that two-variable
+pullback, exact elimination gives
+
+    E_Q = F_C det/(2ap).                            (PPS16)
+
+This does not assert existence of such a stationary point or assign F.
+It says the shared-scalar Schur-kill mechanism does not follow for this
+two-response execution: a nonzero F_C survives the stated one-row
+elimination. Additional real rows and full price terms remain required.
+
+#### E. What is actually substituted
+
+The old H.1 pre-sign event has now been mapped, by an explicit paid native
+extension, to its literal0/10 instrument, full code weight, cold corner and
+all-input branch equations. PPS15 supplies a non-factorizing two-response
+operand for the user's independent-channel obligation. It is neither
+§7fn's weaker-task screened apparatus nor a fitted Einstein residual.
+
+The exact remaining price application is the complete primitive
+Cost−Info/Book weighted continuation on this extended graph, including the
+new births/calls, all failure/record futures and actual initial/terminal
+valuation. The original Book03 master remains ONE action, not H+J+CQ.
+The actual complete source and admission of new control slots determine
+whether PPS16 is usable. Full GR closure is not asserted.
+
+`check_presign_price.py` consumes the pinned original native owner, checks
+the four new positive G/CX calls, complete eight-column carrier, arbitrary
+protected input branch identities, independent-leg and pointer reactions,
+absolute code weights and PPS15–16. Its central sign is inherited from EO;
+the fixture does not claim a free Z or arbitrary continuous native gate.
+
+### 7fo.D. Paid original pre-sign report: the full nonreflection heat and feedback source
+
+Bounded continuation on input `b31cd0ad1bf96ec019bd43f6be8500e94e31f413`,
+existing #334. This applies the original EO reporter and §7eo.H CL1–12
+to the NEW actual record/code history. It removes a supplied report-map
+premise; it does not identify that terminal component with whole Cost-Info.
+The original exact finite EO critical centres are not transported without
+checking this changed full clock.
+
+#### 1. Full paid map, including independent legs
+
+Let the original forward processor be A, its pre-sign effect Pi_e1,
+Z_e=I-2Pi_e1, W=A* Z_e A, and Q the original physical prepared event.
+Canonically birth pointer r and tail t BEFORE the original A. Keep them
+untouched through A. Execute CX(e,r) immediately before the original
+sign Z_e, then execute the original backward processor A*, then the
+literal code writer E0=CX(r,t);G_t;CX(r,t). All these calls and births
+enter the actual stage list. No physical inverse is added by a formula;
+the original owner's paid backward implementation is retained.
+
+For the complete endpoint, on all current and protected columns,
+
+    U_read=W tensor P_+ + I tensor P_-,
+    U_code=(I tensor E0)(U_read tensor I_t),
+    P_±=(I±X_r)/2.                                    (HPS1)
+
+With independent forward/backward legs the correct formula is instead
+
+    U_bf=(A_b* Z_e A_f) tensor P_+
+                    +(A_b* A_f) tensor P_-.             (HPS2)
+
+The second term cannot be replaced by identity before differentiation.
+At matching it is identity. The event marginal before encoding is
+q_r=p^2+p^3 Q; the code writer preserves this pointer value and emits
+valid 0/10. All quantum outputs and the actual invalid dirty columns stay
+in the complete operator. No measurement or pinching is inserted.
+
+Old marks BEFORE the insertion remain their actual effects tensored with
+identity on the new registers, at their NEW paid addresses. Required later
+marks need their true suffix transports. An old complete W-operation task
+is not the unchanged U_code task merely because the pre-sign event agrees.
+This constructs a next programme on the retained prefix; it does not
+retrospectively insert operations into a history that already ran.
+
+#### 2. Original proper cut and its actual positive gain
+
+Put R=<v,P_+v>=1/2+ap, a=sqrt(p). Let C_W and C_V denote the
+original proper-input compressions, retaining all rank-r0 protected
+columns and their actual preparation embedding. The literal code identity
+<v_t|E0|v_t>=a I_r gives on that complete physical input carrier
+
+    C_code=a[R C_W+(1-R)C_V].                          (HPS3)
+
+On a regular field slice with the original scalar physical corner
+C_W=c I and matched C_V=I,
+c=1-2Q. Thus
+
+    C_code=C I, C=a(1-2RQ),
+    J_new=-r0 log[(1-z)+z C^2],
+    D J_new=gamma_Q DQ,
+    gamma_Q=4r0 z a R C/[(1-z)+z C^2].                 (HPS4)
+
+This is the original GROWING G9–10 determinant on its original rank-r0
+cut. No new price parameter or cut is introduced. On a declared compact
+regular Q chart with Q<=Q_max<1/(2R), C has a positive lower bound and
+gamma_Q>0. Retain the original geometric calibration
+DQ=g_h DI_h+e_h; the actual feedback field gain is
+
+    Gamma_new,act=gamma_Q,act g_h>0,                    (HPS5)
+
+frozen at the actual central native word. Hence the feedback FIELD-PULLBACK source
+is DI_h+e_h/g_h, with the target/actual coefficient ratio and original
+physical right lift retained. This is D J/Gamma, not D(J/Gamma).
+
+For a genuinely nonidentity old corner with Gram A_old, the exact formula
+is instead -Tr log[(1-z)I+z C^2 A_old]; its Q gain contains
+Tr[A_old((1-z)I+z C^2 A_old)^-1]. Its independent old-Gram derivative
+remains. It is not set to zero by HPS4. The original EO old-canonical-
+identity premise supplies the scalar case and its original input result.
+
+For a matched field variation, HPS1 has operator derivative
+E0[(DW) tensor P_+ tensor I_t]. Its norm is exactly ||DW||; the new
+fixed reader/code map has Lipschitz norm one in the full W operand.
+For independent legs HPS2 instead has both DW and DV, with norm at most
+max(||DW||,||DV||), before the actual parameter/occurrence lift. Every
+physical, material, marked-prefix and preparation Jacobian remains.
+
+#### 3. The full heat is controlled without endpoint reflection
+
+Build the actual GROWING clock from the new birth/gate list. Let d be its
+final dimension, D the sum of stage dimensions, L its shortest detail age,
+and keep the original scene and beta. The complete heat is still
+
+    Z=359D+2 Tr_(33D) exp(-beta Delta_0), H=log Z/beta.    (HPS6)
+
+All 425D modes are present. E0 makes the endpoint generally NONREFLECTION;
+the old exact TF13 thermal first-row cancellation cannot be imported.
+
+The owned CL2–7 estimate does not need reflection, layer preservation or
+equal birth ages. For arbitrary completed endpoint W_can and its unit
+variation it gives
+
+    |D H|<=A_L ||D W_can||,
+    A_L=4/(359 beta L) sum_(n>=L) n a_n,                (HPS7)
+
+with the original Fourier coefficients. At the original beta the owned
+rational factorial CL8 bound applies. For an actual finite same-layout
+pair,
+
+    |H_+-H_-|<=A_L ||W_can,+-W_can,-||.                (HPS8)
+
+Insert m literal paid CX;CX pairs before the actual final gate. CL1 gives
+W_can,m=W_can, C_m=C, L_m=L+2m, D_m=D+2md. Thus HPS5 is unchanged by the
+padding. There is NO p^m attenuation of the feedback gain. The full
+heat uses the changed D_m and ages, not the former clock.
+
+If the declared full norm gives
+||D W_can||<=C_h(m)||variation||_full, the complete normalized heat obeys
+
+    ||D H/Gamma_new,act||_*<=A_(L+2m) C_h(m)/Gamma_new,act.
+                                                             (HPS9)
+
+CL11 includes every independently varied forward, reverse, old and
+padding occurrence. In a gate-max norm C_h(m) grows at most linearly
+for fixed primitive-lift bounds, and factorial decay wins. For actual
+finite comparisons also retain
+max ||W_can,+-W_can,-||/(2|t_alpha|) and use HPS8 divided by the actual
+Gamma. Fix the reporter, all marked/native comparison words, their common
+paid layout, steps, positive gain and lift constants FIRST, then choose m.
+Common length is provided by the original compiler; CX pairs alone are
+not asserted to fix arbitrary parity differences.
+
+Added padding controls retain their real return rows. If only the literal
+padding instruction is task data, no new gate coordinate was introduced.
+If its individual gates are free, CL H.6 provides an honest alternative:
+use two genuine front-loaded spectator WORK bits untouched by A/read/code,
+with every birth and their whole carrier retained. At the identity-pair
+centre each gate's own two-bit variation has skew spectator return and
+exact DJ=0 independently. Cross-couplings to the reporter and arbitrary
+new preparation resources are not covered by that argument. Thermal
+smallness is never substituted for their missing feedback equations.
+
+#### 4. What happens to the original four preparation equations
+
+The original CD3 proof has stronger content than an old heat-zero label:
+AT ITS CONSTRUCTED PRIMARY CENTRES, each of its four INDEPENDENT
+preparation occurrences gives a skew-adjoint compressed derivative DC_W,
+using its stated
+commutation/address hypotheses. At A_f=A_b, each independent unitary
+leg also gives skew DC_V; with A*delta A=X and X*=-X, the full derivative
+of A_b*A_f is X_f-X_b. Therefore HPS3 gives
+
+    DC_code=a[R DC_W+(1-R)DC_V],
+    DC_code*+DC_code=0.                               (HPS10)
+
+Since the central C is real scalar, every such feedback row vanishes
+exactly AT THOSE CENTRES. The whole-old compression and proper physical cut are retained;
+this is not a statement about one selected column. The new full heat rows
+are only bounded by HPS9. Thus these preparations have kappa stationarity
+at the recovered centres, not automatically the original exact finite
+thermal zeros or an off-shell stationary section.
+
+This qualification is essential. EO NG7–11 retains a response-changing
+radial component proportional to the original d*_j away from the primary
+critical fields. Only d*=0 forces the exact commutant identity NG10; CD5
+explicitly uses that fact for the centre cancellations. EO3 is a full
+source transport to A_h* DI_h, not an assertion that the four preparation
+rows vanish at every off-shell Y. Some of these directions carry the
+physical field lift and are genuinely nonzero off shell. A scalar proper
+physical corner also does not make the larger SAM/whole-old table scalar;
+NG11 displays that table's off-shell response terms explicitly.
+
+The different §7ey/EX reader has its own off-shell joint-effect commutant
+section and full endpoint/cut. It does not supply the same CW,CV diagram
+for this newly inserted pre-sign code. Its stationarity cannot be imported
+without that additional transport.
+
+The same old-canonical-identity and normalized generated-reference premise
+retains the original input-embedding and old first-row arguments for J.
+An arbitrary nonidentity accumulated past still has its actual old-Gram
+source; padding alone does not erase it. Genuine implementation directions
+at fixed complete NEW logical operation use their exact FN reactions,
+including the new marks. Generated states use the real unequal-fibre
+adjoint recurrence. Existing conditional shared-writer hypotheses keep
+their original scope and are not strengthened here.
+
+For the terminal pointer law, independent backward-unitary changes cancel
+exactly by norm preservation. The forward prepared event has its actual
+original derivative. At the original skew-preparation section its real
+expectation is zero, so those declared first terminal rows also vanish.
+This does not equate terminal and master prices, or identify their normal
+constraint reactions.
+
+#### 5. A newly free readout control must not be hidden in that result
+
+The preceding statement keeps the actual specified code operation E0.
+If a REAL pointer rotation O_theta is independently allowed before E0,
+its born return is
+
+    C(theta)=a<v|O_theta[cP_++P_-]|v>,
+    partial_theta C(0)=a p^3 Q.                       (HPS11)
+
+Consequently, for r0>0,z>0,C>0 and Q>0,
+
+    partial_theta J(0)
+      =-2r0 z C a p^3 Q/[(1-z)+z C^2] !=0,
+    partial_theta J/Gamma_new,act
+      =-p^3 Q/(2R g_h).                               (HPS12)
+
+HPS9 cannot remove this feedback row. The original four preparation rows
+do not include it. A complete-operation task can constrain this change
+only with its actual response equation and reaction; parser validity
+alone allows it. No new alignment selector is installed to bypass it.
+The same qualification applies to additional code-tail/completion
+controls, independently variable current inputs, scene/beta/z and
+different-duration choices.
+
+#### 6. Exact transport of the included current feedback covector
+
+There is a stronger positive statement than a field-only chain rule,
+without declaring the off-shell preparation rows zero. Work at a matched
+regular chart point with actual proper corners C_W=cI, C_V=I, fixed z,
+canonical pointer/tail births, and the original canonical old past. The
+allowed tangent map must supply Re Tr(DC_V)=0. This follows for each of
+the included independent unitary forward/backward occurrences from their
+skew derivative at the matched identity. A normalized moving physical
+input embedding likewise contributes zero to DC_V. Included old-unitary
+directions must obey this same actual prefix map; no arbitrary old Gram
+or independent past modification is silently substituted.
+
+Let d_old=(1-z)+zc^2, d_new=(1-z)+zC^2 and C=a[Rc+(1-R)]. The ORIGINAL
+current feedback and the new feedback have full differentials
+
+    D J_old=-(2zc/d_old) Re Tr(DC_W),
+    D J_new=-(2zaC/d_new)
+                       Re Tr[R DC_W+(1-R)DC_V].         (HPS13a)
+
+These formulae keep the full rank-r0 matrix differential; DC_W need not
+be scalar or skew. Therefore on every tangent just specified,
+
+    D J_new=eta D J_old,
+    eta=a R C d_old/(c d_new).                          (HPS13b)
+
+This includes NONZERO off-shell preparation/field components and every
+included old/current coordinate for which the actual map satisfies the
+displayed premise. On the original small-Q chart Q<1/2, c=1-2Q>0 and
+C>0, so eta>0. More generally positivity requires cC>0 and the formula
+requires c!=0. With the transported frozen calibration
+Gamma_new=eta Gamma_old, the normalized current feedback covectors agree.
+If the old convention uses a different orientation, retain that actual
+orientation; do not replace it by a guessed positive multiplier.
+
+The equality is about J and those included coordinates. It does not
+identify old and new H, remove the heat remainder HPS9, or solve the new
+pointer/code directions in HPS11–12. Independent pointer/tail preparation,
+z, an untransported old Gram, or any coordinate violating the DC_V premise
+retains its additional source. At the primary centres HPS10 makes the four
+old preparation rows zero; away from them HPS13b transports their real
+nonzero values. No off-shell stationary nuisance section has been inferred.
+
+#### 7. Separated field, centre and conditional off-shell conclusions
+
+On the regular scalar-corner FIELD SLICE, extended by the literal fixed
+reader/code and its legitimate implementation task, let iota_h denote its
+ACTUAL map into the complete execution variables. Then
+
+    iota_h* D(H+J_new)/Gamma_new,act
+       =DI_h + original source/decoder errors + heat remainder (HPS9).
+                                                             (HPS13)
+
+This is a field pullback, not an assertion that every component of the
+unrestricted full covector is zero except the field component. At the
+original primary centres, HPS10 separately controls the four old
+preparation rows, with heat only kappa-small. The same original centre
+hypotheses give the stated input/old-row conclusion; the remaining actual
+generated-state and constraint reactions stay present.
+
+An OFF-SHELL nuisance-stationary extension requires a further proved
+section n_*(Y) on which, for every retained nuisance direction,
+DC_W and DC_V are skew at the real scalar central corner (or their exact
+weighted feedback trace combination vanishes), and the same actual
+marks, physical Jacobian and heat bound hold. Only then may HPS13 be
+promoted to that section's full reduced covector, including the genuine
+envelope term (Dn_*)*E_n. The present old-centre calculation does not
+establish this premise for all off-shell Y.
+
+Native
+operator/price errors still use their actual finite steps and HPS5. The
+new fixed operations have no approximation error; all original A/A*
+compilation, marks and source errors remain. Source consistency and
+reverse recovery consume the SAME physical norm and full material lift,
+after padding is chosen against those constants, for the field map and
+the verified centre rows separately. In a reverse application every other
+free row of the declared enlarged graph must still be accounted for; a
+global off-shell nuisance reduction is not inferred from HPS13. There is
+no transplantation of old exact finite roots and no zeroing of newly free
+current-code controls.
+
+This removes the missing actual pre-sign-report-to-original-code operation
+map and controls its full nonreflection heat. It does not prove the
+programme's weighted cylinder law: the actual primitive/vertex weights,
+terminal/failure continuation and their complete WT residual still must
+bind that law to this same H+J source. No full Cost-Info or A–D closure is
+claimed; `GR_closed=false`.
+
+### 7fo.E. An actual native interval: exact future transport and the unprovided weight product
+
+Existing #334, input `b31cd0ad1bf96ec019bd43f6be8500e94e31f413`.
+Consumer: programme-source C4's weighted primitive application, then its
+C2 full finite-source transport to the owned EO/FN source. This is a bounded
+application on actual positive G/CX words, not a new scalar weighting law.
+No G/CX net tariff or Info=0 is assigned.
+
+Owners consumed: primary §7en FN2–7, §7eo opening and H CL1–7, programme
+source C1–4; `sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md`
+§2; its `book_source/BOOK_SOURCE_BINDING.md` §§1,3.3; and
+`A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md` §2.
+The original code terminal is the already executed native 0/10 writer,
+not a free suffix appended to the distinct EO pre-sign experiment.
+
+#### 1. One genuine equal-length implementation pair
+
+On three admitted live WORK bits let
+
+    A=CX(0,1), B=CX(1,2), C=CX(0,2).
+
+All calls are original positive native primitives. The chronological
+five-call relation A;B;A;B;C has complete operator I. Compare the two
+TEN-call intervals
+
+    w=A^10,
+    w'=(A;B;A;B;C)^2.                                  (WQ1)
+
+They are different retained instruction words and both act as identity on
+every unknown input column, including arbitrary entanglement with an old
+spectator. Births precede the interval; complete marks are its boundaries.
+Additional fixed intermediate tests are not assumed equal.
+
+For prefixes P_j,P'_j define V_j=P'_j P_j*. Then V_0=V_10=I and every
+actual primitive obeys F'_j=V_(j+1)F_j V_j*. At canonical birth boundaries
+the stage gauge is identity. Thus the exact FN transport applies on the
+real unequal-fibre clock, with all its retained old data:
+
+    T'=V T V*, P'=V P V*, B'=B,
+    B=beta^-1 log Z_01-logdet(I-zF).                    (WQ2)
+
+No identity stage or inverse primitive was executed. The clock dimensions
+and every actual call match. The intermediate raw instruction and state
+logs are not erased by this price identity.
+
+The independent checker uses the pinned original native loader, one
+arbitrary protected input bit and three true canonical births. It checks
+every prefix gauge on all sixteen final columns, the birth landing
+conditions and generated cuts. It appends the SAME actual one-CX reader
+and three-call code writer to both words. That fixture has fourteen gate
+calls (one G, thirteen CX), seventeen actual stages including births,
+and total stage dimension D=238. The full clock proof uses FN's exact
+block identities; no dense heat diagonalization or large EO replay occurs.
+
+#### 2. Positive application: EVERY downstream terminal effect transports
+
+Let K be any genuinely supplied common continuation on the SAME final
+quantum carrier, including identical retained physical factors and all
+its outputs. For a common full terminal effect H on that carrier,
+
+    (K w')* H (K w')=(K w)* H(K w).                    (WQ3)
+
+Changed raw instruction labels remain distinct. A continuation or readout
+chosen from those different logs needs its own explicitly transported
+policy/readout or a stated relabelling. WQ3 does not equate complete
+native future profiles or erase the logs.
+
+This is an operator identity before choosing an input density. It carries
+all input, reference, effect and common-continuation derivatives. It holds
+for coherent future effects as well as diagonal report effects. An effect
+inside the changed interval instead needs its actual V_j transport; a
+fixed untransported intermediate test can distinguish the two histories.
+
+For the original code writer retain the full output partition
+
+    F0=Pi_r0 tensor I_t,
+    F1=|10><10|,
+    Fbad=|11><11|,
+    F0+F1+Fbad=I.
+
+The known terminal cost marker is
+
+    E_cost=p F0+p^2 F1+chi_bad Fbad.                    (WQ4)
+
+Here the malformed-output continuation chi_bad remains its actual operand,
+not a discarded zero column. WQ3 holds separately for F0,F1,Fbad and for
+every chosen future continuation on those blocks. The initialized native
+writer has zero malformed amplitude, but the complete failure/dark
+operator is still present. The exact final CX and preceding square stage
+remain in the actual clock. Thus the entire supplied terminal component
+and its complete first source are constant on this FN interval fibre.
+
+This is a positive weighted application with a known operand: the original
+decoded terminal-cost observable propagates through the actual native
+implementation gauge. It does NOT price every upstream call. A coherent
+Book amplitude with weights w has quadratic cross terms w_gamma w_delta;
+WQ4 instead marks an already executed response. The owned amplitude/type
+distinction is retained, as are any fine current records and their true
+conditional effects.
+
+#### 3. The primitive-weight diagram has an exact scalar boundary defect
+
+Suppose the actual weighted-primitive operands on the same two intervals
+are supplied as positive scalars x_j and x'_j, multiplying each full
+unitary adjoint map:
+
+    L_j(H)=x_j F_j* H F_j,
+    L'_j(H)=x'_j F'_j* H F'_j.                          (WQ5)
+
+These symbols are unresolved physical inputs. They may depend on the whole
+retained prefix and all genuine field/preparation/clock variables. The
+actual operator-valued or branching case uses WT2's full map residual;
+it is not reduced to scalar tariffs by this calculation.
+
+Set Q_j(H')=V_j* H' V_j, r_0=1 and
+
+    r_(j+1)=r_j x'_j/x_j.
+
+Then the EXACT weighted primitive diagram is
+
+    L_j (r_(j+1) Q_(j+1))=(r_j Q_j) L'_j.              (WQ6)
+
+It is a positive scalar prefix coboundary on this very native interval.
+In the push-forward convention C_j=Q_j^-1 used in the parent's WT2, the
+rescaling is instead C_j/r_j. No physical operation is executed by this
+mathematical transport.
+
+The remaining endpoint factor is
+
+    R=r_10=product_j x'_j/product_j x_j,
+    L'_0 ... L'_9(H)=R L_0 ... L_9(H)                 (WQ7)
+
+for EVERY future H, not only the identity. With the same fixed terminal
+effect and normalized matched initial input, exact weighted equality
+holds precisely when R=1. To absorb R otherwise one must REALLY change
+the terminal operand by R^-1 or the initial normalization by R. Neither
+change is supplied by full-operator equality or by FN. If the terminal
+archive depends on bulk fields, the derivative of such a boundary factor
+is not automatically a spacetime boundary variation.
+
+For the explicitly limited specialization in which each letter has one
+transported scalar weight a_w,b_w,c_w throughout this interval,
+
+    R=b_w^4 c_w^2/a_w^6,
+    D log R=4 D log b_w+2 D log c_w-6 D log a_w.        (WQ8)
+
+Uniform per-call scalar weights give R=1 on this equal-length pair.
+This is a useful CONDITIONAL positive sufficient case. The original
+sources do not identify the real G/CX net ledger with that case. In a
+history-dependent law WQ7, not a per-letter count, is the correct formula.
+The symbolic assignment a_w=b_w=1,c_w=2 gives R=4 and is only an exact
+logical countermodel to inference from endpoint equality; it is not a
+claim about native physical costs. The derivative in WQ8 must be retained
+even when a supplied R happens to equal one at a single point.
+
+Thus there is no theorem that WQ2 alone implies complete weighted-history
+equality. There IS a concrete all-future transport whose only remaining
+scalar operand on this pair is the actual endpoint weight product and its
+full first jet. Branch, failure or matrix-valued weights require their
+actual WT2 residual rather than WQ8.
+
+#### 4. Paid identities cannot erase the clock coordinate
+
+The same-clock qualification is substantive. A formal indeterminate u
+marking each actually executed call distinguishes a word from that word
+with m literal CX;CX pairs: the open marked operator acquires u^(2m),
+even though the endpoint product is unchanged. Its logarithmic count
+derivative is 2m. This is a generating marker for the true call count,
+not an assertion that every call has physical net price one.
+
+On the full growing clock the exact owned ST3/CL1 identities make this
+equally explicit. With final detail projections Pi_r and ages ell_r,
+
+    det(I-u T)=det(I-W sum_r u^(ell_r) Pi_r),
+    det(I-u T_padded)
+      =det(I-u^(2m) W sum_r u^(ell_r) Pi_r).             (WQ9)
+
+The same W and same cold return coexist with new ages ell_r+2m and new
+stage dimension D+2m d. The complete absolute heat changes. Acyclic
+elimination of the added stages keeps its open-boundary factor and direct
+terms; determinant one of the eliminated internal block does not remove
+them. Hence variable-duration weighted transport needs its actual clock
+pressure/terminal normalization. The fixed-layout positive application
+above does not silently cover it.
+
+#### 5. Full source consumer after the actual weighted map is supplied
+
+If WQ5 are the genuinely selected scalar weights and the continuation is
+the same, then log Z'-log Z=log R and its entire first source is D log R.
+No preparation source is lost: the operator identity WQ7 holds before
+expectation, while any actual preparation mismatch must also be included.
+For the original scalar price reconstruction, the price-difference defect
+on a paired finite comparison is -log R/ln(phi). Its contribution to the
+EO physical source norm is bounded by the actual basis/right-lift factor
+times
+
+    |log R|/[2 ln(phi) |t_alpha| Gamma_h],              (WQ10)
+
+or its corresponding complete differential bound when a smooth source is
+the supplied operand. The true positive Gamma and all independent old and
+current variations remain. A constant-looking boundary term cannot be
+dropped merely because the two endpoints implement the same field map.
+
+For the full programme the parent WT1–7 calculation propagates each actual
+primitive and terminal residual on the clock-expanded retained tree. It
+also requires the actual initial-state transport. Taking terminal effects
+that select every original comparison cylinder then instantiates C2 if
+those residuals vanish or meet its normalized bounds. No many-programme
+fibre sum follows from a single chosen representative; all complete
+implementation weights and coherent Gram terms retain their original type.
+
+The substituted premise here is the concrete FN-to-all-future weighted
+terminal transport, plus its explicit primitive-weight boundary defect on
+actual native intervals. The actual complete edge/vertex weights, their
+field/preparation jets, failure/terminal operands and relation to the
+Book memory amplitude remain the missing C4 application. H+J has its
+owned reduced source; stationarity or equivalence for an unspecified
+whole Cost-Info price is not inferred. `GR_closed=false`.
+
+### 7fo.F. Actual terminal cost operand and its full-future transport
+
+Bounded #334 calculation; read-only repository snapshot
+`b31cd0ad1bf96ec019bd43f6be8500e94e31f413`, 5 November 2026.
+This removes a concrete algebraic operand from the weighted-diagram debt;
+it does not supply the complete Book Cost−Info weighting.
+
+#### 1. The original task and the added terminal writer are distinct
+
+PRIMARY means
+`02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`.
+Its §7ef.C, lines 113518–113531, defines `W=R* T* Z_port T R`
+and explicitly places the event immediately BEFORE the central sign.
+Its §7eo introduction, lines 157074–157083, explicitly does not append
+§7em.F2's terminal STORE. The original H.1 task has the full completed-bank
+and pre-sign marked interface. Therefore the terminal writer below is an
+actually executed extension, never an identification with the old endpoint.
+All new births, calls, clock stages and complete future-reader transport
+must accompany an application. The separate `presign-price.md` applies the
+same algebra to the newly specified literal pre-sign extension.
+
+The screened §7fn code-valid apparatus is a weaker task. It is not an
+allowed replacement of H.1's informative event or of the full FN marks.
+
+#### 2. Exact cost marker on the literal native 0/10 code
+
+Write `p=phi^-1`, `a=sqrt(p)`, `v=(a,p)`, `ell=ln(phi)`;
+`p+p²=1`. The actual three positive calls `CX(r,t);G_t;CX(r,t)` give
+
+    U_E = Pi_r0 tensor G + Pi_r1 tensor G^T,
+    Gv=(p³,2ap),       G^T v=e0.
+
+For canonical tail embedding `j=I_r tensor v_t`, put `W=U_E j` and retain
+the COMPLETE terminal projectors
+
+    F0=Pi_r0 tensor I_t, F1=Pi_r1 tensor Pi_t0,
+    Ffail=Pi_r1 tensor Pi_t1, F0+F1+Ffail=I4.
+
+`Ffail W=0` but `Ffail U_E` is nonzero. No physical failure column is deleted.
+The original parsed lengths on valid support are one and two:
+`L=F0+2F1`, `W*LW=I+Pi_r1`. The unread branch-zero tail remains quantum.
+An invalid-code tariff, when required on the full input domain, must be
+supplied as terminal data rather than interpreted as a free failure.
+
+More generally any code-valid isometry with return effect `E=W*F1W`
+has `W*F0W=I-E`. The raw code-Cost Laplace marker at `t=ell` is
+
+    chi_C=p F0+p² F1+chi_fail Ffail,
+    H1=W*chi_C W=p I-p³ E.                         (PW1)
+
+Here `chi_fail>=0` is arbitrary stated terminal data; it drops out only on
+the proved initialized valid support. This is a raw code-Cost component,
+not primitive execution cost and not a definition of Info.
+
+Multiplying the already executed amplitudes by the square-root marker
+`M1=aF0+pF1+sqrt(chi_fail)Ffail` gives the same positive effect. Multiplying
+those amplitudes instead by `p^{length}` gives
+
+    H2=p²(I-E)+p⁴E=p²I-p³E,   H1-H2=p³I.            (PW2)
+
+The Golden identity makes the unnormalized field derivatives coincide;
+the ABSOLUTE masses and their log-source normalizations differ.
+For actual return probability `q`,
+
+    Z1=p-p³q, Z2=p²-p³q,
+    Z1(q_tilt-q)=-p³q(1-q), q_tilt=p²q/Z1.
+
+Thus the marker changes the actual normalized law when `0<q<1`. By contrast,
+the expected code length is `-partial_t Z(t)|_(t=0)=1+q`, not a log at
+`t=ell`. Applying Book coefficients to normalized conditional vectors
+instead of actual Kraus amplitudes is yet another typed operation.
+
+#### 3. Full-input source of the actual one-CX reader
+
+Let `CX(f,r)` act with `r=v` before the literal writer. Its exact return
+effect on the entire incoming flag is
+
+    B_sharp=p² Pi_f0+p Pi_f1,
+    H_sharp=pI-p³B_sharp=I/2+(p⁶/2)Z_f.             (PW3)
+
+It cannot intertwine with a scalar weighted operand on all inputs:
+the best scalar operator-norm error is `p⁶/2`. This is an all-input algebraic
+statement; it does not assert arbitrary flag preparations are physically
+admitted. If a trace-zero incoming preparation tangent is admitted, its
+actual weight source is
+
+    Tr(D rho H_sharp)=(p⁶/2)Tr(D rho Z_f).           (PW4)
+
+That source cannot be erased by keeping only the field coordinate. On a
+full FN-mark-preserving fibre the physical input and its permitted transport
+are constrained, so PW4 is applied only to the real preparation directions.
+
+On the previous XF fixed-bank family, `Pr(f=1)=p-p³Q`, hence
+
+    q_r=p²+p⁴-p⁶Q,
+    Z1=1/2+p⁹(Q-1/2), Z2=Z1-p³,
+    DZ1=DZ2=p⁹ DQ,  D mean_cost=-p⁶ DQ.             (PW5)
+
+For clarity the two distinct log-source conventions would give
+
+    D[-ln Z1/ell]=-p⁹ DQ/(ell Z1),
+    D[-ln Z2/(2ell)]=-p⁹ DQ/(2ell Z2).
+
+These are positive computable field gains after explicitly stating the
+orientation; no one of them is thereby the full physical price or the CQ
+mean Cost−Info source. Actual normalizers must remain in a comparison.
+
+For the WEAKER task control `E=lambda Pplus`,
+`lambda=p²/(1/2+ap)`, the same reader gives `B_screen=p²I` and
+`H_screen=(p-p⁵)I`, not `I`. Explicitly,
+`H_sharp-H_screen=-p⁶ Pi_f1`, with H_sharp the effect in PW3.
+This diagnoses dropping the informative mark; it does not refute H.1.
+
+#### 4. Coherent future effects cannot be replaced by diagonal branch tests
+
+For record-diagonal futures `H_b`, the weighted adjoint is
+`sum_b w_b A_b* H_b A_b`. For coherent futures retain the weighted map
+
+    V_w=sum_b sqrt(w_b)|b> tensor A_b,
+    Phi_w(H)=V_w* H V_w.                            (PW6)
+
+Its off-diagonal Gram terms are part of the retained quantum future.
+Positive weighted Born histories in PW6 do not select the original Book
+amplitude convention `phi^{-Cost+Info}`.
+
+There is a concrete native quantum-future witness. After the sharp writer,
+the projector read following an actual `G_r` is
+`H=(G^T Pi_1 G)_r tensor I_t`. Keep its complementary outcome too. Then
+
+    W*M1 H M1 W=p³ I_r+p⁶ X_r,
+    W*M1 Pinch_code(H) M1 W=p³ I_r.                 (PW7)
+
+The omitted term is exactly `p⁶ X_r`. Summing both future outcomes recovers
+PW1. This is a future-effect calculation; physically adding that G/readout
+requires the actual admitted and paid continuation.
+
+#### 5. Exact positive transport on the full FN fibre
+
+At matched stage boundaries suppose the full actual operation transport is
+`F'_j=V_(j+1) F_j V_j*`; birth-boundary maps include the canonical embeddings.
+Transport a complete future effect by `R_j(H)=V_j H V_j*`. Then
+
+    F'_j* R_(j+1)(H) F'_j = R_j(F_j* H F_j).        (PW8)
+
+The same identity applies to PW6, hence to all coherent future effects,
+and to every original marked branch when its full mark is transported.
+At the initial boundary the state transports contragrediently. All sources
+follow by differentiating this EXACT equality, including `DV_j`, moving
+preparation, terminal effects and constraints. No gauge is frozen.
+
+This consumes FN's full-operator fixed-layout theorem, not equality of a
+selected output probability. The checker uses actual `CX01;CX01` and
+`CX10;CX10`, complete four-column matrices, all sixteen matrix-unit future
+tests, and a moving stage-gauge tangent whose two price reactions cancel.
+
+Prefix propagation here is unweighted propagation of an already specified
+terminal component. Weight one does NOT mean native gates cost zero.
+One-word/full-operator transport does not sum the many native fibres.
+
+#### 6. The exact remaining weighted continuation application
+
+On the original complete programme graph, let `L_N,j*`, `L_B,j*` be the
+ACTUAL weighted maps with every pending/failure/clock/terminal record.
+For proposed transport `R_j` and actual terminal effects set
+
+    D_j=L_N,j* R_(j+1)-R_j L_B,j*,
+    delta_n=chi_N-R_n chi_B,
+    delta_j=L_N,j* delta_(j+1)+D_j H_B,j+1.          (PW9)
+
+This exact recurrence accounts for every propagated primitive defect and
+terminal defect. `delta_0=0` plus transported initial state proves absolute
+finite weight equality. The full source difference is
+`Tr(D rho delta_0)+Tr(rho D delta_0)`, with extra initial-transport defect if
+the prepared states do not match. A value bound alone does not bound this
+source. Native comparisons retain the actual `2t Gamma`, full dual norm,
+and all independent preparation/controller/record reactions.
+
+For a variable-length compiler the graph must be clock-expanded; its direct
+term and both boundary vectors survive elimination. Any fibre sum must sum
+all actual implementations and records. No branchwise scalar residual may
+be discarded because its unweighted channel is trace-preserving.
+
+The simplest exact terminal compatibility equation is already restrictive:
+with diagonal future credits `chi0,chi1`,
+
+    H=p chi0 I+(p²chi1-p chi0)E.
+
+For a nontrivial E, requiring `H=I` fixes `chi0=1/p, chi1=1/p²`.
+Those reciprocal weights are missing continuation data, not licensed Info
+credits. Original H+J cannot be identified by assigning them after the fact.
+
+#### 7. Authoritative owners and status
+
+`FOUNDATIONAL_WEIGHT_BRIDGES.md` in
+`02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/`,
+§2 lines 100–174, supplies the finite weighted diagram, clock expansion and
+fibre-sum requirement; its full128 cost-marked transfer is distinct from the
+new literal terminal operator PW1. `BOOK_SOURCE_BINDING.md` in the sibling
+`book_source/`, §3.1–3.3 lines 109–169, distinguishes absolute amplitude,
+probability and extra-marker binding; §4 lines 212–241 retains the absolute
+factor and the half exponent for amplitude cost markers. Its §5.2 lines
+349–389 requires the actual0/10 encoder, not a flag merely named REPORT.
+Book03 lines 1127–1137 retains its single full `H+J` master action.
+
+PW1–PW8 are exact actual-code/source operands and full-fibre transports.
+PW9 names a computable complete native/Book application. Neither primitive
+Info, full weighted programme selection, the complete Cost−Info binding,
+nor GR closure is installed. No extra price is added to H+J.
+
+### 7fo.G. Full retained-transfer defect and the physical source budget
+
+Input: b31cd0ad1bf96ec019bd43f6be8500e94e31f413; existing #334 only.
+Consumer: the missing weighted primitive application in the programme-source
+section C4, followed by EO1/EO3 in the SAME original full norm.
+
+This calculation does not choose primitive prices or Info. Its application
+is the actual FN implementation transport, including canonical births and
+the original complete marked outcomes. It provides the exact remainder to
+compute when the primitive weight map is supplied; no vanishing remainder
+is inferred from the unweighted diagram.
+
+#### 1. Which weighted operator and which memory algebra
+
+On one finite clock-expanded tree/DAG, let A_{k,b}:H_k -> H_{k+1,b}
+be the actual branch maps, with all failure/abort/unresolved branches
+included. A birth is its actual rectangular isometry. A coherent gate is
+one branch. At a classical retained record cut a positive weighted
+continuation acts on the FULL future effect in each block by
+
+    L_k(H) = sum_b w_{k,b} A_{k,b}* H_b A_{k,b}.          (WT1)
+
+Here w are genuinely supplied weights, not assigned from the desired
+H+J action. In particular w=1 in a gate-prefix calculation means that
+only the specified downstream component is being propagated; it is not
+a declaration that all upstream physical costs vanish. For a coherent
+retained record use V_w=sum_b sqrt(w_b)|b> tensor A_b and
+H -> V_w* H V_w instead; H may have off-diagonal record blocks. A
+diagonal sum does not represent those coherent future tests. If the
+Book coefficient is an amplitude w, its quadratic response instead
+contains w_b w_c and the actual memory Gram blocks, as in the existing
+BOOK_SOURCE_BINDING owner. Replacing those amplitudes by sqrt(w) is not
+an identification theorem.
+
+An actual full carrier transport gives C_k(H)=V_k H V_k*, where V_k
+is the FN stage gauge (identity at each complete mark and birth boundary).
+For fixed labels, the primitive question is
+
+    Delta_k = L'_k C_{k+1} - C_k L_k.                    (WT2)
+
+Direct sums over retained labels make (WT2) meaningful on every whole
+future effect, including tests selecting one fine cylinder. No division
+by a READY probability or deletion of a failed branch is involved.
+The terminal discrepancy is d_T=chi' - C_N chi.
+
+#### 2. An exact full-tree residual, not only a partition test
+
+Put P_{a:b}=L_a ... L_b and P'_{a:b}=L'_a ... L'_b, with an
+empty product the identity. Then the exact operator discrepancy at the
+original input is
+
+    R = P'_{0:N-1} chi' - C_0 P_{0:N-1} chi
+      = P'_{0:N-1} d_T
+        + sum_{k=0}^{N-1}
+          P'_{0:k-1} Delta_k P_{k+1:N-1} chi.            (WT3)
+
+Proof: insert chi'=C_N chi+d_T and telescope each consecutive
+L'_k C_{k+1}-C_k L_k. This uses the complete clock-expanded maps;
+it does not eliminate their boundary or direct terms. The same
+identity applies to each retained cylinder terminal test, rather than
+only to the terminal identity. Equality of the scalar total partition
+alone would not establish a cylinder-law identity.
+
+Differentiate (WT3) with respect to EVERY genuinely free coordinate.
+Each occurrence of L, L', C, chi, and d_T is differentiated, as well
+as the initial state in its eventual expectation. In particular the
+derivative of a moving FN gauge is present in D Delta. It cancels in
+an exact diagram; it cannot be deleted in an approximate one.
+
+For explicit operator-norm accounting assume ||chi||<=1. Write
+a_j=max(1,||L_j||,||L'_j||), b_j=max(||D L_j||,||D L'_j||),
+M=product_j a_j, and B=||D chi||+sum_j b_j/a_j. Norms of D are
+the declared complete physical dual norms, before any quotient.
+Let e_k>=||Delta_k||, f_k>=||D Delta_k||,
+e_T>=||d_T||, f_T>=||D d_T||. Then
+
+    ||R|| <= E0 := M (e_T+sum_k e_k),
+    ||D R|| <= E1 := M [f_T+sum_k f_k
+                              +B(e_T+sum_k e_k)].        (WT4)
+
+For WT3 each omitted product is bounded by M, and differentiating
+any retained factor replaces a_j by b_j; differentiating chi is
+bounded by ||D chi||. This proves the deliberately conservative bound.
+No stochastic contraction is assumed for a paid weighted transfer.
+
+Let rho' be the ACTUAL primed initial density and require
+rho'=V_0 rho V_0*, including its differentiated relation. Define
+Z=Tr[rho' C_0(P_{0:N-1} chi)]>0 and delta=Tr(rho' R).
+For ||D rho'||_1<=r1, |delta|<=E0 and
+||D delta||<=E1+r1 E0. An actual preparation not satisfying that
+map has a separate preparation defect; edge/terminal intertwining
+does not remove it. If Z>=m>E0,
+
+    D log(Z+delta)-D log Z
+       = [D delta-(delta/Z)D Z]/(Z+delta),
+    norm <= [E1+r1 E0+E0 ||D Z||/m]/(m-E0).             (WT5)
+
+This is a bound on an analysis log partition. It is not a declaration
+that -log Z/ln(phi) equals the complete physical action. If a selected
+price law DOES use that expression, its source bound carries the
+additional 1/ln(phi). To feed the owned Einstein consumer, the full
+bound must also be multiplied by ||R_h||/Gamma_h with the actual
+positive gain and right lift. A small unnormalized defect is not enough.
+
+#### 3. Application to the programme finite-comparison consumer
+
+The existing programme-source C1-C4 consumes a SAME complete-horizon
+law, the same terminal chi, and an actual law proportional to
+chi phi^(-kappa B), with kappa a fixed positive multiplier in this
+application. Its conclusion is coordinatewise equality of
+complete prices up to the common horizon constant, not an assertion
+that every operator partition is itself that price.
+
+To use WT3 there, retain the programme/whole-history label and apply
+it to the terminal projector selecting EACH actual comparison word.
+Suppose its unprimed positive mass is m_gamma and its discrepancy
+obeys |delta_gamma|<=r_gamma m_gamma, r_gamma<1. Then
+
+    |log[(m_gamma+delta_gamma)/m_gamma]|
+                          <= r_gamma/(1-r_gamma).       (WT6)
+
+For a +/- pair the resulting error in the EXPONENT price S=kappa B
+difference reconstructed by the owned scalar law is at most
+
+    (1/ln(phi)) [r_plus/(1-r_plus)+r_minus/(1-r_minus)].  (WT7)
+
+The common normalizer cancels ONLY for alternatives of one law with
+the same terminal weights and horizon. Feed WT7 into EO1 with the
+actual 2|t_alpha| Gamma_h of the reconstructed price, the complete
+basis-map constant and right lift. For S=kappa B with kappa>0 this
+gain is kappa Gamma_B, not silently Gamma_B. Equivalently divide
+WT7 by kappa before using B's gain. If kappa is a genuinely free
+coordinate, its additional B Dkappa source must be retained; this
+fixed-multiplier application does not remove it. Independent
+preparation/scene experiments or different durations
+retain their normalizer/clock terms as in the existing C3. This does
+not require enumerating 128^N histories: backward propagation of the
+retained-cylinder terminal effects gives the actual operands.
+
+#### 4. What the present application establishes
+
+On the original fixed-layout complete-mark FN fibre, the unweighted
+primitive diagrams and canonical-birth diagrams are exact. The new
+native ten-CX witness and terminal-code calculation apply those maps
+to complete retained future effects and expose the missing weight
+product explicitly. Thus an implementation change alone cannot be
+used to screen a required informative response or its proven terminal
+component. Conversely, equality of its full operator, growing-clock
+H+J and all downstream terminal effects does not identify its primitive
+weight product: that is an additional operand in WT2.
+
+The original EO event is a pre-sign mark of a reflected/uncomputed
+programme. The later literal 0/10 writer is not executed on that EO
+history. The separate pre-sign construction in this checkpoint
+executes that added reader/writer and recomputes its operator, cold
+source and price components. It does not claim that the extended
+word has the old EO absolute price or exact finite roots.
+
+After this substitution, the missing C4 application is sharply local:
+actual native weighted edge/vertex maps and terminal/failure effects
+on the original EO graph must make WT2 and d_T zero, or satisfy WT4-WT7
+after actual gain/right-lift normalization. The current sources do not
+supply those weights. The source remains the existing H+J source only
+conditionally on that binding. No complete Cost-Info, nuisance-stationary
+section for that unknown full price, B/D discharge or scoped terminal
+is asserted. GR_closed=false.
+
+### 7fo.H. Bounded exact replay, provenance and reproducible extraction
+
+The four checkers below are the complete executable sources. They use the
+original native loader with its pinned hash and explicit exceptions; -O
+cannot disable their conditions. They check the supplied finite algebra and
+native words, not physical task/Info selection or the huge EO compiler.
+The analytical heat and source estimates consume the owned proofs at the
+precise hypotheses above; no unchanged geometry or Lean replay is needed.
+
+To replay, extract each named Python fence below into a temporary directory,
+then run it from the repository root with Python3.12/SymPy1.14, first with
+`-Werror` and then with `-O -Werror`. Every checker accepts `--repo PATH`.
+The corresponding JSON fence is the executed receipt; normal/optimized
+outputs are byte-identical. Use the pinned source files, not an inferred
+counter or a rewritten expected output.
+
+#### 7fo.H. `check_source.py` — 74 conditions
+
+Checker SHA256: `d525b14755fbc772b0a43aaa41eed684cbafcd9f4c327e34774ed21bbe4c29be`. Receipt SHA256: `ce9bdb94f7c21dd8ee6ca7c94d99a072eb593dbf1a14b2aee571b592a3f644ae`.
+
+```python
+"""Original-loader all-column FN interval and its symbolic weighted defect.
+
+The scalar weights are unresolved operands, not assigned native Cost-Info.
+No full heat diagonalization or large EO execution is replayed.
+"""
+import argparse
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import platform
+import sys
+import sympy as s
+
+parser=argparse.ArgumentParser()
+parser.add_argument('--repo',type=Path,default=Path('/Users/grigorijvahrusev/.codex/worktrees/gr-native-source-20261024/d0-main-assembly-audit'))
+args=parser.parse_args()
+owner_rel='02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+owner=args.repo/owner_rel
+expected='222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+checks=[]
+def need(ok,label,kind='exact_algebra'):
+    if not bool(ok): raise ArithmeticError(label)
+    checks.append({'label':label,'kind':kind})
+need(hashlib.sha256(owner.read_bytes()).hexdigest()==expected,'pinned original native owner','provenance')
+spec=importlib.util.spec_from_file_location('weighted_interval_native',owner)
+if spec is None or spec.loader is None: raise RuntimeError('owner loader')
+ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+def eq(A,B): return ne.exact_matrix_equal(s.Matrix(A),s.Matrix(B))
+def execution(word): return ne.Execution(4,(),(0,),tuple(word),profile=ne.G_CX,report_bits=(2,3))
+def matrices(word):
+    ex=execution(word); ne.validate_execution(ex,max_qubits=4,max_expanded_stages=len(word))
+    return [s.Matrix(ne.gate_matrix(ex,g,max_qubits=4,max_expanded_stages=len(word))) for g in word]
+def prefixes(mats):
+    out=[s.eye(16)]
+    for F in mats: out.append(F*out[-1])
+    return out
+
+A=ne.Gate('CX',(1,2)); B=ne.Gate('CX',(2,3)); C=ne.Gate('CX',(1,3))
+words=[(A,)*10,(A,B,A,B,C)*2]
+suffix=(ne.Gate('CX',(1,2)),ne.Gate('CX',(2,3)),ne.Gate('G',(3,)),ne.Gate('CX',(2,3)))
+ms=[matrices(w) for w in words]; ps=[prefixes(m) for m in ms]
+for i in range(2):
+    inv=ne.inventory(execution(words[i]+suffix),max_qubits=4,max_expanded_stages=14)
+    need((inv.gate_count,inv.g_count,inv.cx_count,inv.source_i_count)==(14,1,13,0),f'word {i} has actual fourteen calls one G thirteen CX','native_syntax')
+    need(eq(ps[i][-1],s.eye(16)),f'word {i} is exact identity on all sixteen columns')
+need(eq(ms[1][4]*ms[1][3]*ms[1][2]*ms[1][1]*ms[1][0],s.eye(16)),'literal chronological five-CX relation is identity')
+need(words[0]!=words[1],'the actual retained instruction words are different','native_syntax')
+V=[ps[1][j]*ps[0][j].T for j in range(11)]
+need(eq(V[0],s.eye(16)) and eq(V[-1],s.eye(16)),'both complete segment marks have identity gauge')
+for j in range(10):
+    need(eq(ms[1][j],V[j+1]*ms[0][j]*V[j].T),f'all-column native prefix gauge on interval edge {j}')
+need(any(not eq(v,s.eye(16)) for v in V),'intermediate gauges are nontrivial')
+for j,vj in enumerate(V):
+    need(eq(vj,s.kronecker_product(s.eye(2),vj[:8,:8])),f'prefix {j} preserves arbitrary protected old factor')
+
+# Real canonical birth embeddings precede the interval. Their identity
+# gauges verify the R landing condition without forming a dense 238 clock.
+a=ne.A;p=ne.P; born=s.Matrix([a,p]); I2=s.eye(2)
+births=[s.kronecker_product(s.eye(d),born) for d in (2,4,8)]
+for j,J in enumerate(births):
+    need(eq(J.T*J,s.eye(J.cols)),f'canonical birth {j} is an actual full isometry')
+    need(eq(s.eye(J.rows)*J,J*s.eye(J.cols)),f'prefix gauge fixes canonical birth {j}')
+    D=s.eye(J.rows)-J*J.T
+    need(eq(D*J,s.zeros(J.rows,J.cols)),f'full birth detail {j} is retained and orthogonal')
+need(sum((2,4,8)+(16,)*14)==238,'actual stage dimension includes all three births and fourteen gates')
+
+full=[matrices(w+suffix) for w in words]
+fullp=[prefixes(m) for m in full]
+need(eq(fullp[0][-1],fullp[1][-1]),'same actual paid reader and code suffix have equal complete endpoints')
+for j in range(10,15):
+    need(eq(fullp[1][j]*fullp[0][j].T,s.eye(16)),f'every downstream prefix {j} is unchanged')
+need((words[0]+suffix)[-1].op=='CX' and suffix[-2].op=='G','true final and preceding square gates are retained','native_syntax')
+
+# A generic complete initial old cut is not collapsed to one prepared row.
+Jall=births[2]*births[1]*births[0]
+P0=s.diag(1,0)
+for j in (0,1,2,5,10):
+    old=s.Matrix(ps[0][j]*Jall*P0*Jall.T*ps[0][j].T)
+    new=s.Matrix(ps[1][j]*Jall*P0*Jall.T*ps[1][j].T)
+    need(eq(new,V[j]*old*V[j].T),f'actual generated proper cut is transported at interval prefix {j}')
+
+# All three terminal parser effects, including invalid dirty columns.
+F0=s.kronecker_product(s.eye(4),s.diag(1,1,0,0))
+F1=s.kronecker_product(s.eye(4),s.diag(0,0,1,0))
+Fbad=s.kronecker_product(s.eye(4),s.diag(0,0,0,1))
+need(eq(F0+F1+Fbad,s.eye(16)),'direct return and invalid effects exhaust the full carrier')
+for label,F in [('code0',F0),('code10',F1),('invalid',Fbad)]:
+    need(eq(fullp[0][-1].T*F*fullp[0][-1],fullp[1][-1].T*F*fullp[1][-1]),f'all-input future terminal effect {label} pulls back identically')
+Ecost=p*F0+p*p*F1
+need(eq(fullp[0][-1].T*Ecost*fullp[0][-1],fullp[1][-1].T*Ecost*fullp[1][-1]),'original decoded cost-weighted terminal effect transports exactly')
+need(eq(Jall.T*fullp[0][-1].T*Fbad*fullp[0][-1]*Jall,s.zeros(2)),'invalid output is absent on actual canonical input without deleting its full effect')
+terminal_matrix=s.Matrix([[i*16+j for j in range(16)] for i in range(16)])
+terminal_matrix=terminal_matrix+terminal_matrix.T
+need(eq(fullp[0][-1].T*terminal_matrix*fullp[0][-1],fullp[1][-1].T*terminal_matrix*fullp[1][-1]),'an independent coherent future effect is also transported')
+need(not eq(ps[0][2].T*Fbad*ps[0][2],ps[1][2].T*Fbad*ps[1][2]),'hostile control: a fixed untransported intermediate test can distinguish the raw histories')
+
+# Actual weight operands remain symbolic. This is the exact scalar case
+# of the quantum weighted-map interface, not a claimed physical ledger.
+wa,wb,wc=s.symbols('w_A w_B w_C',positive=True)
+w0=[wa]*10; w1=[wa,wb,wa,wb,wc]*2
+r=[s.Integer(1)]
+for x,y in zip(w0,w1): r.append(s.cancel(r[-1]*y/x))
+for j in range(10):
+    need(s.cancel(w0[j]*r[j+1]-r[j]*w1[j])==0,f'weighted scalar prefix coboundary at edge {j}')
+ratio=s.cancel(r[-1])
+need(s.cancel(ratio-wb**4*wc**2/wa**6)==0,'the full weighted terminal defect is b4 c2 over a6')
+need(s.cancel(ratio.subs({wb:wa,wc:wa})-1)==0,'uniform per-call weights give exact common-length cancellation conditionally')
+need(s.simplify(s.diff(s.log(ratio),wa)+6/wa)==0 and s.simplify(s.diff(s.log(ratio),wb)-4/wb)==0 and s.simplify(s.diff(s.log(ratio),wc)-2/wc)==0,'full logarithmic jet retains every primitive-weight derivative')
+need(s.cancel(ratio.subs({wa:1,wb:1,wc:2})-4)==0,'hostile symbolic weight assignment defeats weighted equality despite equal full operator')
+
+print(json.dumps({
+ 'schema':'d0.programme-weighted-interval/1','status':'PASS',
+ 'source_commit':'b31cd0ad1bf96ec019bd43f6be8500e94e31f413',
+ 'source_sha256':{owner_rel:expected},
+ 'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'runtime':{'python':platform.python_version(),'sympy':s.__version__},
+ 'check_count':len(checks),'checks':checks,
+ 'classifications':{k:sum(c['kind']==k for c in checks) for k in sorted({c['kind'] for c in checks})},
+ 'actual':{'protected_input_dimension':2,'canonical_births':3,'final_dimension':16,'stage_dimension':238,'gate_calls':14,'G':1,'CX':13},
+ 'scope':{'actual_gate_net_tariffs_assigned':False,'whole_weighted_Book_law_proved':False,'full_heat_spectrum_replayed':False,'GR_closed':False},
+},ensure_ascii=False,sort_keys=True,indent=2))
+```
+
+```json
+{
+  "actual": {
+    "CX": 13,
+    "G": 1,
+    "canonical_births": 3,
+    "final_dimension": 16,
+    "gate_calls": 14,
+    "protected_input_dimension": 2,
+    "stage_dimension": 238
+  },
+  "check_count": 74,
+  "checker_sha256": "d525b14755fbc772b0a43aaa41eed684cbafcd9f4c327e34774ed21bbe4c29be",
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "pinned original native owner"
+    },
+    {
+      "kind": "native_syntax",
+      "label": "word 0 has actual fourteen calls one G thirteen CX"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "word 0 is exact identity on all sixteen columns"
+    },
+    {
+      "kind": "native_syntax",
+      "label": "word 1 has actual fourteen calls one G thirteen CX"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "word 1 is exact identity on all sixteen columns"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "literal chronological five-CX relation is identity"
+    },
+    {
+      "kind": "native_syntax",
+      "label": "the actual retained instruction words are different"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "both complete segment marks have identity gauge"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 0"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 1"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 2"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 3"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 4"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 5"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 6"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 7"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 8"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-column native prefix gauge on interval edge 9"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "intermediate gauges are nontrivial"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 0 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 1 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 2 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 3 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 4 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 5 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 6 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 7 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 8 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 9 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix 10 preserves arbitrary protected old factor"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "canonical birth 0 is an actual full isometry"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix gauge fixes canonical birth 0"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "full birth detail 0 is retained and orthogonal"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "canonical birth 1 is an actual full isometry"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix gauge fixes canonical birth 1"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "full birth detail 1 is retained and orthogonal"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "canonical birth 2 is an actual full isometry"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "prefix gauge fixes canonical birth 2"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "full birth detail 2 is retained and orthogonal"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual stage dimension includes all three births and fourteen gates"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "same actual paid reader and code suffix have equal complete endpoints"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "every downstream prefix 10 is unchanged"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "every downstream prefix 11 is unchanged"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "every downstream prefix 12 is unchanged"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "every downstream prefix 13 is unchanged"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "every downstream prefix 14 is unchanged"
+    },
+    {
+      "kind": "native_syntax",
+      "label": "true final and preceding square gates are retained"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual generated proper cut is transported at interval prefix 0"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual generated proper cut is transported at interval prefix 1"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual generated proper cut is transported at interval prefix 2"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual generated proper cut is transported at interval prefix 5"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual generated proper cut is transported at interval prefix 10"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "direct return and invalid effects exhaust the full carrier"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-input future terminal effect code0 pulls back identically"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-input future terminal effect code10 pulls back identically"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all-input future terminal effect invalid pulls back identically"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "original decoded cost-weighted terminal effect transports exactly"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "invalid output is absent on actual canonical input without deleting its full effect"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "an independent coherent future effect is also transported"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "hostile control: a fixed untransported intermediate test can distinguish the raw histories"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 0"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 1"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 2"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 3"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 4"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 5"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 6"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 7"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 8"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "weighted scalar prefix coboundary at edge 9"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "the full weighted terminal defect is b4 c2 over a6"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "uniform per-call weights give exact common-length cancellation conditionally"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "full logarithmic jet retains every primitive-weight derivative"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "hostile symbolic weight assignment defeats weighted equality despite equal full operator"
+    }
+  ],
+  "classifications": {
+    "exact_algebra": 69,
+    "native_syntax": 4,
+    "provenance": 1
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.programme-weighted-interval/1",
+  "scope": {
+    "GR_closed": false,
+    "actual_gate_net_tariffs_assigned": false,
+    "full_heat_spectrum_replayed": false,
+    "whole_weighted_Book_law_proved": false
+  },
+  "source_commit": "b31cd0ad1bf96ec019bd43f6be8500e94e31f413",
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "status": "PASS"
+}
+```
+
+#### 7fo.H. `check_price.py` — 32 conditions
+
+Checker SHA256: `aef0507c3f54bf5af6fdcd4e851d4e3768dc5c087e5fa64103a1d64e03ad7820`. Receipt SHA256: `f70438df43a361cd174203d900700493481b18ff9092832d58c45bad5b9fbf5c`.
+
+```python
+#!/usr/bin/env python3
+"""Exact terminal code-cost operands; no complete Book price is assigned.
+
+The actual 0/10 writer is an explicitly appended operation. Original H.1/EO
+has a pre-sign event mark, not this terminal writer. All input columns and
+the invalid-code projector are retained. The screened effect is a control
+in the weaker code-valid task, never an H.1 substitution.
+"""
+import argparse
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+
+import sympy as sp
+
+
+OWNER = Path("02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py")
+OWNER_SHA256 = "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--repo", type=Path, default=Path.cwd())
+    args = parser.parse_args()
+    owner = args.repo / OWNER
+    rows = []
+
+    def require(label, condition, kind="exact_symbolic"):
+        if condition is not True:
+            raise RuntimeError("FAILED: " + label)
+        rows.append({"label": label, "kind": kind, "pass": True})
+
+    require("pinned_actual_native_owner", hashlib.sha256(owner.read_bytes()).hexdigest() == OWNER_SHA256,
+            "provenance")
+    spec = importlib.util.spec_from_file_location("weighted_price_native", owner)
+    ne = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = ne
+    spec.loader.exec_module(ne)
+    p, a = ne.P, ne.A
+    eye = sp.eye
+    kron = sp.kronecker_product
+    G = sp.Matrix(ne.G_LOCAL)
+    v = sp.Matrix([a, p])
+    P0, P1 = sp.diag(1, 0), sp.diag(0, 1)
+    X = sp.Matrix([[0, 1], [1, 0]])
+    Z = sp.diag(1, -1)
+    J = sp.Matrix([[0, -1], [1, 0]])
+
+    def zero(expr):
+        expr = sp.expand(expr)
+        symbols = sorted(expr.free_symbols, key=str)
+        coeffs = sp.Poly(expr, *symbols, domain="EX").coeffs() if symbols else [expr]
+        return all(ne.GOLDEN_FIELD.from_sympy(c) == ne.GOLDEN_FIELD.zero for c in coeffs)
+
+    def equal(left, right):
+        if isinstance(left, sp.MatrixBase) or isinstance(right, sp.MatrixBase):
+            diff = sp.Matrix(left) - sp.Matrix(right)
+            return all(zero(e) for e in diff)
+        return zero(left - right)
+
+    def word(qubits, gates):
+        execution = ne.Execution(qubits, (), (), tuple(ne.Gate(op, wires) for op, wires in gates),
+                                 profile=ne.G_CX)
+        ne.validate_execution(execution, max_qubits=qubits, max_expanded_stages=len(gates))
+        return sp.Matrix(ne.word_matrix(execution, max_qubits=qubits, max_expanded_stages=len(gates)))
+
+    UE = word(2, [("CX", (0, 1)), ("G", (1,)), ("CX", (0, 1))])
+    require("actual_three_call_writer_all_four_columns", equal(UE, kron(P0, G) + kron(P1, G.T)),
+            "native_exact")
+    require("writer_orthogonal", equal(UE.T * UE, eye(4)))
+    require("canonical_born_and_two_exact_tail_outputs", equal(v.T * v, eye(1)) and
+            equal(G * v, sp.Matrix([p**3, 2*a*p])) and equal(G.T * v, sp.Matrix([1, 0])))
+    F0, F1, FF = kron(P0, eye(2)), kron(P1, P0), kron(P1, P1)
+    require("complete_code_and_failure_partition", equal(F0 + F1 + FF, eye(4)))
+    j = kron(eye(2), v)
+    W = UE * j
+    require("prepared_code_valid_but_failure_columns_retained", equal(FF * W, sp.zeros(4, 2)) and
+            not equal(FF * UE, sp.zeros(4, 4)))
+    require("sharp_return_effect_all_input", equal(W.T * F1 * W, P1))
+    require("actual_expected_code_length", equal(W.T * (F0 + 2*F1) * W, eye(2) + P1))
+    chi = sp.Symbol("chi_failure", nonnegative=True)
+    cost1 = W.T * (p*F0 + p**2*F1 + chi*FF) * W
+    cost2 = W.T * (p**2*F0 + p**4*F1 + chi*FF) * W
+    require("raw_cost_probability_weight_effect", equal(cost1, p*eye(2) - p**3*P1))
+    require("extra_Book_exponent_on_existing_amplitude_effect", equal(cost2, p**2*eye(2) - p**3*P1))
+    require("same_unnormalized_jet_distinct_absolute_mass", equal(cost1 - cost2, p**3*eye(2)))
+    q = sp.Symbol("q", real=True)
+    Z1, Z2 = p - p**3*q, p**2 - p**3*q
+    require("actual_probability_tilt_is_not_preserved", zero(p**2*q - q*Z1 + p**3*q*(1-q)))
+    require("two_normalized_source_factors_are_distinct", not zero(2*Z2 - Z1))
+    reader = word(2, [("CX", (0, 1))])
+    jr = kron(eye(2), v)
+    Bsharp = jr.T * reader.T * kron(eye(2), P1) * reader * jr
+    require("literal_CX_reader_all_input_return", equal(Bsharp, p**2*P0 + p*P1), "native_exact")
+    Hsharp = p*eye(2) - p**3*Bsharp
+    require("non_scalar_weighted_operand", equal(Hsharp, sp.Rational(1, 2)*eye(2) + p**6*Z/2))
+    require("exact_scalar_intertwining_gap", equal(Hsharp[0, 0] - Hsharp[1, 1], p**6))
+    dr, ds = sp.symbols("dr ds", real=True)
+    D_rho = sp.Matrix([[dr, ds], [ds, -dr]])
+    require("complete_free_preparation_source", equal(sp.trace(D_rho*Hsharp), p**6*sp.trace(D_rho*Z)/2))
+    Q = sp.Symbol("Q", real=True)
+    qf = p - p**3*Q
+    qr = p**2*(1-qf) + p*qf
+    z1field = p - p**3*qr
+    z2field = p**2 - p**3*qr
+    require("actual_XF_reader_probability", equal(qr, p**2+p**4-p**6*Q))
+    require("absolute_field_mass_and_both_first_sources", equal(z1field, sp.Rational(1, 2)+p**9*(Q-sp.Rational(1, 2)))
+            and equal(sp.diff(z1field, Q), p**9) and equal(sp.diff(z2field, Q), p**9))
+    require("mean_code_cost_first_source_not_log_mass", equal(sp.diff(1+qr, Q), -p**6))
+    M = a*F0 + p*F1  # failure coefficient is immaterial ONLY after M W; FF W=0 above
+    Hfuture = kron(G.T*P1*G, eye(2))
+    weighted_future = W.T * M * Hfuture * M * W
+    Hpinched = F0*Hfuture*F0 + F1*Hfuture*F1 + FF*Hfuture*FF
+    weighted_pinched = W.T * M * Hpinched * M * W
+    require("actual_coherent_G_future_has_Gram_term", equal(weighted_future, p**3*eye(2)+p**6*X))
+    require("record_diagonal_future_drops_nonzero_term", equal(weighted_pinched, p**3*eye(2)) and
+            equal(weighted_future-weighted_pinched, p**6*X))
+    require("both_future_outcomes_retained", equal(weighted_future+W.T*M*(eye(4)-Hfuture)*M*W, cost1))
+    lam = p**2/(sp.Rational(1, 2)+a*p)
+    E_screen = lam*(eye(2)+X)/2
+    Bscreen = jr.T*reader.T*kron(eye(2), E_screen)*reader*jr
+    require("weaker_task_screen_control_all_input", equal(Bscreen, p**2*eye(2)))
+    Hscreen = p*eye(2)-p**3*Bscreen
+    require("screened_absolute_mass_not_unit", equal(Hscreen, (p-p**5)*eye(2)) and
+            not equal(Hscreen, eye(2)))
+    require("informative_vs_weaker_task_weight_gap", equal(Hsharp-Hscreen, -p**6*P1))
+    A = reader
+    B = word(2, [("CX", (1, 0))])
+    V = B*A
+    require("same_layout_full_operator_fibre", equal(A*A, eye(4)) and equal(B*B, eye(4)) and
+            equal(B, V*A) and equal(B, A*V.T), "native_exact")
+    matrix_units = []
+    for m in range(4):
+        for n in range(4):
+            H = sp.zeros(4)
+            H[m, n] = 1
+            matrix_units.append(H)
+    require("stage1_all_quantum_effects_transport", all(equal(B.T*(V*H*V.T)*B, A.T*H*A) for H in matrix_units))
+    require("stage2_all_quantum_effects_transport", all(equal(B.T*H*B, V*(A.T*H*A)*V.T) for H in matrix_units))
+    require("complete_fibre_weighted_future_transport", equal((A*A).T*(M*Hfuture*M)*(A*A),
+                                                             (B*B).T*(M*Hfuture*M)*(B*B)))
+    S = kron(J, eye(2))
+    dF1, dF2 = S*A, -A*S
+    require("moving_stage_gauge_total_endpoint_jet", equal(dF2*A+A*dF1, sp.zeros(4)))
+    C = A.T*(M*Hfuture*M)*A
+    dC = dF2.T*(M*Hfuture*M)*A + A.T*(M*Hfuture*M)*dF2
+    require("moving_gauge_weighted_adjoint_jet_cancels", equal(dF1.T*C*A+A.T*dC*A+A.T*C*dF1, sp.zeros(4)))
+    counts = {}
+    for row in rows:
+        counts[row["kind"]] = counts.get(row["kind"], 0) + 1
+    print(json.dumps({
+        "schema": "d0.programme-weighted-terminal-cost/1",
+        "owner_sha256": OWNER_SHA256,
+        "checks": rows, "check_count": len(rows), "classifications": counts,
+        "all_pass": True,
+        "scope": {
+            "actual_three_call_0_10_writer": True,
+            "all_columns_and_failure_projector_retained": True,
+            "original_H1_EO_has_this_terminal_writer": False,
+            "prepared_screen_is_H1_replacement": False,
+            "coherent_future_is_record_diagonal_only": False,
+            "raw_code_Cost_marker_is_complete_Cost_minus_Info": False,
+            "unweighted_prefix_transport_means_free_primitive_cost": False,
+            "Book_amplitude_weight_bound_to_marker": False,
+            "GR_closed": False,
+        }}, sort_keys=True, indent=2))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+```json
+{
+  "all_pass": true,
+  "check_count": 32,
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "pinned_actual_native_owner",
+      "pass": true
+    },
+    {
+      "kind": "native_exact",
+      "label": "actual_three_call_writer_all_four_columns",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "writer_orthogonal",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "canonical_born_and_two_exact_tail_outputs",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "complete_code_and_failure_partition",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "prepared_code_valid_but_failure_columns_retained",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "sharp_return_effect_all_input",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "actual_expected_code_length",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "raw_cost_probability_weight_effect",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "extra_Book_exponent_on_existing_amplitude_effect",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "same_unnormalized_jet_distinct_absolute_mass",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "actual_probability_tilt_is_not_preserved",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "two_normalized_source_factors_are_distinct",
+      "pass": true
+    },
+    {
+      "kind": "native_exact",
+      "label": "literal_CX_reader_all_input_return",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "non_scalar_weighted_operand",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "exact_scalar_intertwining_gap",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "complete_free_preparation_source",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "actual_XF_reader_probability",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "absolute_field_mass_and_both_first_sources",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "mean_code_cost_first_source_not_log_mass",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "actual_coherent_G_future_has_Gram_term",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "record_diagonal_future_drops_nonzero_term",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "both_future_outcomes_retained",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "weaker_task_screen_control_all_input",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "screened_absolute_mass_not_unit",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "informative_vs_weaker_task_weight_gap",
+      "pass": true
+    },
+    {
+      "kind": "native_exact",
+      "label": "same_layout_full_operator_fibre",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "stage1_all_quantum_effects_transport",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "stage2_all_quantum_effects_transport",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "complete_fibre_weighted_future_transport",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "moving_stage_gauge_total_endpoint_jet",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "moving_gauge_weighted_adjoint_jet_cancels",
+      "pass": true
+    }
+  ],
+  "classifications": {
+    "exact_symbolic": 28,
+    "native_exact": 3,
+    "provenance": 1
+  },
+  "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "schema": "d0.programme-weighted-terminal-cost/1",
+  "scope": {
+    "Book_amplitude_weight_bound_to_marker": false,
+    "GR_closed": false,
+    "actual_three_call_0_10_writer": true,
+    "all_columns_and_failure_projector_retained": true,
+    "coherent_future_is_record_diagonal_only": false,
+    "original_H1_EO_has_this_terminal_writer": false,
+    "prepared_screen_is_H1_replacement": false,
+    "raw_code_Cost_marker_is_complete_Cost_minus_Info": false,
+    "unweighted_prefix_transport_means_free_primitive_cost": false
+  }
+}
+```
+
+#### 7fo.H. `check_presign_native.py` — 37 conditions
+
+Checker SHA256: `2409fc4d7a751e749a6d0095ada2bd8840c91e4eb8492fcbce35340eb0813f56`. Receipt SHA256: `d8d4e6efe4b99813950bcfde591ff2681728381a54b2ce7ec2d6c7569cb3fc29`.
+
+```python
+#!/usr/bin/env python3
+"""One exact original-loader witness of the EO pre-sign code extension."""
+from __future__ import annotations
+import argparse
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import platform
+import sys
+import sympy as sp
+
+parser=argparse.ArgumentParser()
+parser.add_argument('--repo',type=Path,default=Path('/Users/grigorijvahrusev/.codex/worktrees/gr-native-source-20261024/d0-main-assembly-audit'))
+args=parser.parse_args()
+pins={
+ '02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py':'222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c',
+ '02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md':'24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393',
+ '02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md':'81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9'}
+checks=[]
+def need(ok,label,kind='exact_algebra'):
+    if not bool(ok): raise ArithmeticError(label)
+    checks.append(dict(label=label,kind=kind))
+for name,digest in pins.items():
+    need(hashlib.sha256((args.repo/name).read_bytes()).hexdigest()==digest,
+         'pinned original input '+name,'provenance')
+owner=args.repo/next(iter(pins))
+spec=importlib.util.spec_from_file_location('owned_presign_native',owner)
+if spec is None or spec.loader is None: raise RuntimeError('native owner unavailable')
+ne=importlib.util.module_from_spec(spec);sys.modules[spec.name]=ne;spec.loader.exec_module(ne)
+a=ne.A;p=ne.P;G=sp.Matrix(ne.G_LOCAL)
+v=sp.Matrix([a,p]);zero=sp.Matrix([1,0]);one=sp.Matrix([0,1])
+I=sp.eye(2);X=sp.Matrix([[0,1],[1,0]]);Z=sp.diag(1,-1)
+P0=sp.diag(1,0);P1=sp.diag(0,1);plus=(I+X)/2;minus=(I-X)/2
+kron=sp.kronecker_product
+def eq(A,B): return ne.exact_matrix_equal(A,B)
+def canon(M):
+    return sp.Matrix(M).applyfunc(lambda x:ne.GOLDEN_FIELD.to_sympy(ne.GOLDEN_FIELD.from_sympy(x)))
+# Initial arbitrary SourceSpin wires0,1; canonical births e2,b3,r4,t5.
+e,b,r,t=2,3,4,5
+A=ne.Gate('CX',(b,e));copy=ne.Gate('CX',(e,r));S=ne.Gate('SourceI',(e,0,1))
+enc=(ne.Gate('CX',(r,t)),ne.Gate('G',(t,)),ne.Gate('CX',(r,t)))
+word=(A,copy,S,S,A)+enc
+ex=ne.Execution(6,(),(),word,profile=ne.G_CX_SOURCE_I,source_port=e,source_spin=(0,1),report_bits=(r,t))
+ne.validate_execution(ex,max_qubits=6,max_expanded_stages=8)
+inv=ne.inventory(ex,max_qubits=6,max_expanded_stages=8)
+need((len(word),inv.g_count,inv.cx_count,inv.source_i_count)==(8,1,5,2),
+     'literal eight-call inventory1G5CX2SourceI','native_syntax')
+need(all(not set(g.wires).intersection({0,1}) for g in word if g.op!='SourceI'),
+     'no G or CX individually addresses initial unknown SourceSpin','native_syntax')
+need(ex.blank_wires==() and ex.report_bits==(r,t),
+     'square-word owner receives no supplied computational zero blanks','native_syntax')
+U=sp.Matrix(ne.word_matrix(ex,max_qubits=6,max_expanded_stages=8))
+Sfull=sp.Matrix(ne.gate_matrix(ex,S,max_qubits=6,max_expanded_stages=8))
+need(eq(Sfull*Sfull,kron(sp.eye(4),Z,sp.eye(8))),
+     'two actual SourceI calls are Z_e identity on all unknown Spin columns')
+need(not eq(Sfull,kron(sp.eye(4),Sfull[:16,:16])),
+     'single intermediate SourceI interaction is not falsely called Spin identity')
+Abank=ne.Gate('CX',(3,2));Sbank=ne.Gate('SourceI',(2,0,1))
+bankword=(Abank,Sbank,Sbank,Abank)
+bankex=ne.Execution(4,(),(),bankword,profile=ne.G_CX_SOURCE_I,source_port=2,source_spin=(0,1))
+W=sp.Matrix(ne.word_matrix(bankex,max_qubits=4,max_expanded_stages=4))
+need(eq(W,kron(sp.eye(4),Z,Z)),'actual bank Astar Z A is the e,b parity sign on every column')
+need(eq(W.T,W) and eq(W*W,sp.eye(16)),'actual bank endpoint is a complete reflection')
+E0=kron(P0,G)+kron(P1,G.T)
+Uread=kron(W,plus,I)+kron(sp.eye(16),minus,I)
+need(eq(U,kron(sp.eye(16),E0)*Uread),
+     'actual64-column chronology equals encoder times W/Pplus and I/Pminus')
+need(eq(U.T*U,sp.eye(64)),'all64 final input columns remain unitary')
+need(eq(U,kron(sp.eye(4),U[:16,:16])),
+     'complete paired SourceI word restores every initial Spin column at endpoint')
+
+u=(a+p)/2;d=(a-p)/2
+K0=canon(u*W+d*sp.eye(16));K1=canon(u*W-d*sp.eye(16))
+Jrt=kron(sp.eye(16),v,v)
+V=canon(U*Jrt)
+expected=kron(K0,zero,G*v)+kron(K1,one,zero)
+need(eq(V,expected),'all16 bank inputs have exact coherent0/10 branch map with unread tail retained')
+need(eq(K0.T*K0+K1.T*K1,sp.eye(16)),'complete efficient branch effects sum to identity')
+need(eq(K1.T*K1,(sp.eye(16)-p**3*W)/2),'actual code-one effect keeps original event plus Golden noise')
+need(eq(K0.T*K1,a*p*sp.eye(16)),'cross-code coherence apI is retained')
+Fbad=kron(sp.eye(16),P1,P1);Fcode1=kron(sp.eye(16),P1,P0)
+need(eq(Fbad*V,sp.zeros(64,16)),'invalid11 amplitude is exactly zero for every bank input')
+need(not eq(Fbad*U,sp.zeros(64)),'dirty invalid columns are not deleted from full carrier')
+R=sp.Rational(1,2)+a*p
+need(eq(Jrt.T*U*Jrt,a*(R*W+(1-R)*sp.eye(16))),
+     'actual canonical pointer and tail cold compression is a times R W plus1minusR')
+
+Jbank=kron(sp.eye(4),v,v);J=kron(Jbank,v,v)
+Q=2*p**3;q=p**2+2*p**6;c=a*(1-4*R*p**3)
+need(eq(J.T*J,sp.eye(4)),'four actual births preserve arbitrary rank4 SourceSpin input')
+need(eq(Jbank.T*W*Jbank,(1-2*Q)*sp.eye(4)),
+     'original canonical event is Q=2p3 for every old input column')
+need(eq(J.T*U*J,c*sp.eye(4)),'complete actual encoded cold is a times1minus4R p3 on all4 inputs')
+need(eq(J.T*U.T*Fcode1*U*J,q*sp.eye(4)),
+     'original-loader code return probability is p2plus2p6 on every input')
+Fcode0=kron(sp.eye(16),P0,I)
+need(eq(J.T*U.T*(Fcode0+2*Fcode1)*U*J,(1+q)*sp.eye(4)),
+     'actual parsed code-length observable pulls back to1plusq')
+need(bool(sp.simplify(Q<sp.Rational(1,2))),
+     'exact original event lies strictly below one half','exact_real_algebra')
+need(bool(sp.simplify(R<1)) and bool(sp.simplify(R>0)),
+     'canonical noisy-reader coefficient is strictly between zero and one','exact_real_algebra')
+need(bool(sp.simplify(a>0)) and bool(sp.simplify(1-4*p**3>0)),
+     'positive cold follows from1minus4Rp3 greater than1minus4p3','exact_real_algebra')
+
+Af=sp.Matrix(ne.gate_matrix(ex,A,max_qubits=6,max_expanded_stages=8))
+Pe=kron(sp.eye(4),P1,sp.eye(8))
+need(eq(J.T*Af.T*Pe*Af*J,Q*sp.eye(4)),
+     'original registered event is at the actual pre-copy prefix')
+need(eq(J.T*U.T*Pe*U*J,p**2*sp.eye(4)) and not eq(Q*sp.eye(4),p**2*sp.eye(4)),
+     'pre-sign event is not silently identified with terminal old-port readout')
+
+birth_dimensions=[]
+dimension=4
+for label in ('e','b','r','t'):
+    B=kron(sp.eye(dimension),v)
+    need(eq(B.T*B,sp.eye(dimension)),label+' is an actual canonical isometric birth')
+    birth_dimensions.append(dimension);dimension*=2
+widths=birth_dimensions+[64]*len(word)
+need(widths==[4,8,16,32]+[64]*8 and sum(widths)==572 and len(widths)==12,
+     'genuine stage widths give N12 and D572 without padding old fibres','exact_integer')
+need(word[-1].op=='CX' and word[-2].op=='G',
+     'closing stage is the actual last encoderCX with preceding squareG','native_syntax')
+need(425*sum(widths)==243100 and 359*sum(widths)==205348,
+     'new complete mode count and harmonic offset retain every stage','exact_integer')
+print(json.dumps(dict(schema='d0.presign-native-code-extension/1',status='PASS',
+    source_commit='b31cd0ad1bf96ec019bd43f6be8500e94e31f413',source_sha256=pins,
+    checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+    runtime=dict(python=platform.python_version(),sympy=sp.__version__),
+    check_count=len(checks),checks=checks,
+    classifications={k:sum(c['kind']==k for c in checks) for k in sorted({c['kind'] for c in checks})},
+    actual=dict(initial_Spin_dimension=4,birth_order=['e','b','r','t'],
+                final_dimension=64,proper_input_rank=4,G=1,CX=5,SourceI=2,
+                square_calls=8,birth_calls=4,N=12,D=572,full_modes=243100,
+                harmonic_offset=205348,stage_dimensions=widths,
+                original_event='2p^3',code_return='p^2+2p^6',cold='a[1-4(1/2+ap)p^3]'),
+    scope=dict(full_geometric_EO_bank_executed=False,full_clock_diagonalized=False,
+               exact_old_EO_FN_replacement=False,code_length_is_primitive_duration=False,
+               Book_weight_binding_selected=False,GR_closed=False)),
+    ensure_ascii=False,sort_keys=True,indent=2))
+```
+
+```json
+{
+  "actual": {
+    "CX": 5,
+    "D": 572,
+    "G": 1,
+    "N": 12,
+    "SourceI": 2,
+    "birth_calls": 4,
+    "birth_order": [
+      "e",
+      "b",
+      "r",
+      "t"
+    ],
+    "code_return": "p^2+2p^6",
+    "cold": "a[1-4(1/2+ap)p^3]",
+    "final_dimension": 64,
+    "full_modes": 243100,
+    "harmonic_offset": 205348,
+    "initial_Spin_dimension": 4,
+    "original_event": "2p^3",
+    "proper_input_rank": 4,
+    "square_calls": 8,
+    "stage_dimensions": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ]
+  },
+  "check_count": 37,
+  "checker_sha256": "2409fc4d7a751e749a6d0095ada2bd8840c91e4eb8492fcbce35340eb0813f56",
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "pinned original input 02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+    },
+    {
+      "kind": "provenance",
+      "label": "pinned original input 02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md"
+    },
+    {
+      "kind": "provenance",
+      "label": "pinned original input 02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md"
+    },
+    {
+      "kind": "native_syntax",
+      "label": "literal eight-call inventory1G5CX2SourceI"
+    },
+    {
+      "kind": "native_syntax",
+      "label": "no G or CX individually addresses initial unknown SourceSpin"
+    },
+    {
+      "kind": "native_syntax",
+      "label": "square-word owner receives no supplied computational zero blanks"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "two actual SourceI calls are Z_e identity on all unknown Spin columns"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "single intermediate SourceI interaction is not falsely called Spin identity"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual bank Astar Z A is the e,b parity sign on every column"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual bank endpoint is a complete reflection"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual64-column chronology equals encoder times W/Pplus and I/Pminus"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all64 final input columns remain unitary"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "complete paired SourceI word restores every initial Spin column at endpoint"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "all16 bank inputs have exact coherent0/10 branch map with unread tail retained"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "complete efficient branch effects sum to identity"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual code-one effect keeps original event plus Golden noise"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "cross-code coherence apI is retained"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "invalid11 amplitude is exactly zero for every bank input"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "dirty invalid columns are not deleted from full carrier"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual canonical pointer and tail cold compression is a times R W plus1minusR"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "four actual births preserve arbitrary rank4 SourceSpin input"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "original canonical event is Q=2p3 for every old input column"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "complete actual encoded cold is a times1minus4R p3 on all4 inputs"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "original-loader code return probability is p2plus2p6 on every input"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "actual parsed code-length observable pulls back to1plusq"
+    },
+    {
+      "kind": "exact_real_algebra",
+      "label": "exact original event lies strictly below one half"
+    },
+    {
+      "kind": "exact_real_algebra",
+      "label": "canonical noisy-reader coefficient is strictly between zero and one"
+    },
+    {
+      "kind": "exact_real_algebra",
+      "label": "positive cold follows from1minus4Rp3 greater than1minus4p3"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "original registered event is at the actual pre-copy prefix"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "pre-sign event is not silently identified with terminal old-port readout"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "e is an actual canonical isometric birth"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "b is an actual canonical isometric birth"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "r is an actual canonical isometric birth"
+    },
+    {
+      "kind": "exact_algebra",
+      "label": "t is an actual canonical isometric birth"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "genuine stage widths give N12 and D572 without padding old fibres"
+    },
+    {
+      "kind": "native_syntax",
+      "label": "closing stage is the actual last encoderCX with preceding squareG"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "new complete mode count and harmonic offset retain every stage"
+    }
+  ],
+  "classifications": {
+    "exact_algebra": 25,
+    "exact_integer": 2,
+    "exact_real_algebra": 3,
+    "native_syntax": 4,
+    "provenance": 3
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.presign-native-code-extension/1",
+  "scope": {
+    "Book_weight_binding_selected": false,
+    "GR_closed": false,
+    "code_length_is_primitive_duration": false,
+    "exact_old_EO_FN_replacement": false,
+    "full_clock_diagonalized": false,
+    "full_geometric_EO_bank_executed": false
+  },
+  "source_commit": "b31cd0ad1bf96ec019bd43f6be8500e94e31f413",
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9"
+  },
+  "status": "PASS"
+}
+```
+
+#### 7fo.H. `check_presign_price.py` — 33 conditions
+
+Checker SHA256: `13fc0a7df4742bb4c3a71901ae169dba5ee4b35f99dee21fcbaf1bc52f93a9a3`. Receipt SHA256: `0c88b0f083b7f314e7c0ac171a37d806406d47e0d8181fe131ab1f0a94190cfe`.
+
+```python
+#!/usr/bin/env python3
+"""Exact paid pre-sign writer/encoder operands, with independent echo legs.
+
+The inherited central sign is an original EO operation, not a new G/CX
+primitive. Only the new CX and three-call code writer use the pinned native
+owner. The all-column algebra and source formulas select no new Info law.
+"""
+import argparse
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+import sympy as sp
+
+OWNER = Path("02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py")
+OWNER_SHA256 = "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--repo", type=Path, default=Path.cwd())
+    args = parser.parse_args()
+    owner = args.repo / OWNER
+    rows = []
+
+    def require(label, condition, kind="exact_symbolic"):
+        if condition is not True:
+            raise RuntimeError("FAILED: " + label)
+        rows.append({"label": label, "kind": kind, "pass": True})
+
+    require("pinned_native_G_CX_owner", hashlib.sha256(owner.read_bytes()).hexdigest() == OWNER_SHA256,
+            "provenance")
+    spec = importlib.util.spec_from_file_location("presign_price_native", owner)
+    ne = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = ne
+    spec.loader.exec_module(ne)
+    p, a = ne.P, ne.A
+    G = sp.Matrix(ne.G_LOCAL)
+    eye, kron = sp.eye, sp.kronecker_product
+    P0, P1 = sp.diag(1, 0), sp.diag(0, 1)
+    X, Z = sp.Matrix([[0, 1], [1, 0]]), sp.diag(1, -1)
+    J = sp.Matrix([[0, -1], [1, 0]])
+    PP, PM = (eye(2)+X)/2, (eye(2)-X)/2
+    v = sp.Matrix([a, p])
+    e0, e1 = sp.Matrix([1, 0]), sp.Matrix([0, 1])
+
+    def zero(expr):
+        expr = sp.expand(expr)
+        symbols = sorted(expr.free_symbols, key=str)
+        coeffs = sp.Poly(expr, *symbols, domain="EX").coeffs() if symbols else [expr]
+        return all(ne.GOLDEN_FIELD.from_sympy(c) == ne.GOLDEN_FIELD.zero for c in coeffs)
+
+    def equal(left, right):
+        if isinstance(left, sp.MatrixBase) or isinstance(right, sp.MatrixBase):
+            return all(zero(e) for e in (sp.Matrix(left)-sp.Matrix(right)))
+        return zero(left-right)
+
+    def word(n, gates):
+        ex = ne.Execution(n, (), (), tuple(ne.Gate(op, wires) for op, wires in gates), profile=ne.G_CX)
+        ne.validate_execution(ex, max_qubits=n, max_expanded_stages=len(gates))
+        return sp.Matrix(ne.word_matrix(ex, max_qubits=n, max_expanded_stages=len(gates)))
+
+    CX = word(2, [("CX", (0, 1))])
+    UE = word(2, [("CX", (0, 1)), ("G", (1,)), ("CX", (0, 1))])
+    require("literal_added_CX_and_three_positive_call_encoder", equal(CX, kron(P0, eye(2))+kron(P1, X)) and
+            equal(UE, kron(P0, G)+kron(P1, G.T)), "native_exact")
+    Af, Ab = G, G*G
+    W, V = Ab.T*Z*Af, Ab.T*Af
+    Upre = kron(Ab.T, eye(2))*kron(Z, eye(2))*CX*kron(Af, eye(2))
+    require("independent_legs_exact_all_column_extension", equal(Upre, kron(W, PP)+kron(V, PM)))
+    require("full_extension_is_unitary", equal(Upre.T*Upre, eye(4)))
+    jv = kron(eye(2), v)
+    B0, B1 = kron(eye(2), e0.T)*Upre*jv, kron(eye(2), e1.T)*Upre*jv
+    require("complete_conditional_branch_maps", equal(B0, ((a+p)*W+(a-p)*V)/2) and
+            equal(B1, ((a+p)*W-(a-p)*V)/2))
+    Ef = Af.T*P1*Af
+    E1 = B1.T*B1
+    require("return_effect_only_forward_event", equal(E1, p**2*eye(2)+p**3*Ef))
+    require("nonreturn_effect_and_complete_sum", equal(B0.T*B0, p*eye(2)-p**3*Ef) and
+            equal(B0.T*B0+E1, eye(2)))
+    require("full_cross_branch_Gram_retained", equal(B0.T*B1, a*p*eye(2)))
+    Ucode = kron(eye(2), UE)*kron(Upre, eye(2))
+    jrt = kron(eye(2), v, v)
+    full0, full1, fullfail = kron(eye(2), P0, eye(2)), kron(eye(2), P1, P0), kron(eye(2), P1, P1)
+    require("all_eight_columns_and_terminal_partition", equal(Ucode.T*Ucode, eye(8)) and
+            equal(full0+full1+fullfail, eye(8)))
+    require("prepared_valid_code_no_failure_column_deleted", equal(fullfail*Ucode*jrt, sp.zeros(8, 2)) and
+            not equal(fullfail*Ucode, sp.zeros(8)))
+    require("code_preserves_complete_return_effect", equal(jrt.T*Ucode.T*full1*Ucode*jrt, E1))
+    cold = jrt.T*Ucode*jrt
+    R = sp.Rational(1, 2)+a*p
+    require("exact_cold_with_independent_V_leg", equal(cold, a*(R*W+(1-R)*V)))
+    chi = sp.Symbol("chi_failure", nonnegative=True)
+    Hcost = jrt.T*Ucode.T*(p*full0+p**2*full1+chi*fullfail)*Ucode*jrt
+    require("full_raw_code_weighted_effect", equal(Hcost, (p**2+p**4)*eye(2)-p**6*Ef))
+    require("actual_expected_code_cost_effect", equal(jrt.T*Ucode.T*(full0+2*full1)*Ucode*jrt,
+                                                       (1+p**2)*eye(2)+p**3*Ef))
+    H2 = jrt.T*Ucode.T*(p**2*full0+p**4*full1+chi*fullfail)*Ucode*jrt
+    require("absolute_amplitude_marker_difference", equal(Hcost-H2, p**3*eye(2)))
+    dAf, dAb = J*Af, J*Ab
+    dEf = dAf.T*P1*Af+Af.T*P1*dAf
+    dWf, dVf = Ab.T*Z*dAf, Ab.T*dAf
+    dB1f = ((a+p)*dWf-(a-p)*dVf)/2
+    require("forward_full_return_first_source", equal(dB1f.T*B1+B1.T*dB1f, p**3*dEf))
+    dWb, dVb = dAb.T*Z*Af, dAb.T*Af
+    dB1b = ((a+p)*dWb-(a-p)*dVb)/2
+    require("independent_backward_terminal_reaction_exact_zero", equal(dB1b.T*B1+B1.T*dB1b, sp.zeros(2)))
+    require("backward_cold_reaction_cannot_be_dropped", not equal(a*(R*dWb+(1-R)*dVb), sp.zeros(2)))
+    require("nonzero_literal_forward_preparation_source", equal((v.T*dEf*v)[0], 4*a*p**4) and
+            not zero((v.T*dEf*v)[0]))
+    dUpost = kron(eye(2), J)*Upre
+    dUprior = Upre*kron(eye(2), J)
+    dBpost = kron(eye(2), e1.T)*dUpost*jv
+    dBprior = kron(eye(2), e1.T)*dUprior*jv
+    require("post_reader_pointer_rotation_return_row", equal(dBpost.T*B1+B1.T*dBpost, 2*a*p*eye(2)))
+    require("pre_reader_pointer_rotation_return_row", equal(dBprior.T*B1+B1.T*dBprior, 2*a*p*(eye(2)-2*Ef)))
+    require("post_reader_cold_rotation_sign_and_independent_legs", equal(a*jv.T*dUpost*jv, a*p**3*(V-W)/2))
+    require("pre_reader_cold_rotation_opposite_sign", equal(a*jv.T*dUprior*jv, a*p**3*(W-V)/2))
+    # Matched protected input: old work is canonical v, a two-dimensional
+    # arbitrary protected system is tensored through every retained branch.
+    Wm = Z
+    B0m, B1m = a*P0-p*P1, p*P0-a*P1
+    im = kron(v, eye(2))
+    K0, K1 = kron(B0m, eye(2))*im, kron(B1m, eye(2))*im
+    Qm = p**2
+    q0m, q1m = p-p**3*Qm, p**2+p**3*Qm
+    require("arbitrary_protected_input_scaled_isometries", equal(K0.T*K0, q0m*eye(2)) and
+            equal(K1.T*K1, q1m*eye(2)))
+    h0, h1, h2 = sp.symbols("h0 h1 h2", real=True)
+    rho = sp.Matrix([[h0, h1], [h1, 1-h0]])
+    require("all_protected_density_branch_masses", equal(sp.trace(K0*rho*K0.T), q0m) and
+            equal(sp.trace(K1*rho*K1.T), q1m))
+    drho = sp.Matrix([[h0, h2], [h2, -h0]])
+    require("free_protected_input_mass_first_source_zero", zero(sp.trace(drho*K1.T*K1)))
+    Q, dQ, dCw, dCv = sp.symbols("Q dQ dCw dCv", real=True)
+    q = p**2+p**3*Q
+    Z1, Z2 = p-p**3*q, p**2-p**3*q
+    C = a*(1-2*R*Q)
+    require("matched_field_return_and_absolute_weight_jets", equal(sp.diff(q, Q), p**3) and
+            equal(Z1, p**2+p**4-p**6*Q) and equal(sp.diff(Z1, Q), -p**6) and equal(sp.diff(Z2, Q), -p**6))
+    require("matched_field_cold_source", equal(sp.diff(C, Q), -2*a*R))
+    CQ, Ctheta, qQ, qtheta = -2*a*R, a*p**3*Q, p**3, 2*a*p
+    determinant = CQ*qtheta-Ctheta*qQ
+    require("independent_cold_and_record_response_jacobian", equal(determinant, -4*p**2*R-a*p**6*Q))
+    FC = sp.Symbol("F_C", real=True)
+    require("conditional_single_row_elimination_retains_cold_source", equal(
+        FC*CQ-FC*Ctheta*qQ/qtheta, FC*determinant/qtheta))
+    # Cross-multiplied exact J source avoids logarithmic simplification.
+    rank, z = sp.symbols("rank z", real=True)
+    numerator = -rank*2*z*C*sp.diff(C, Q)
+    require("full_proper_cut_feedback_source_sign_coefficient", equal(numerator, 4*rank*z*a*R*C))
+    # Actual pointer-preparation tangent b'=Jv; do not declare it admitted.
+    db = J*v
+    qprepprime = 2*v[1]*db[1]*(1-Q)+2*v[0]*db[0]*Q
+    require("new_born_pointer_free_tangent_if_admitted", equal(qprepprime, 2*a*p*(1-2*Q)))
+    require("golden_Kraft_minimum_of_actual_code_component", zero(p+p**2-1) and
+            equal(q.subs(Q, 0), p**2))
+    counts = {}
+    for row in rows:
+        counts[row["kind"]] = counts.get(row["kind"], 0)+1
+    print(json.dumps({"schema": "d0.actual-presign-code-price/1", "owner_sha256": OWNER_SHA256,
+        "all_pass": True, "check_count": len(rows), "classifications": counts, "checks": rows,
+        "scope": {
+            "central_sign_is_inherited_EO_operation": True,
+            "new_reader_plus_code_has_four_positive_G_CX_calls": True,
+            "two_new_canonical_births_must_be_charged": True,
+            "independent_forward_backward_legs_retained": True,
+            "matched_CQ_entropy_gain_proved_by_scaled_isometries": True,
+            "complete_physical_Info_law_selected": False,
+            "old_H_heat_or_Gamma_reused_after_extension": False,
+            "all_new_internal_master_rows_proved_zero": False,
+            "GR_closed": False}}, sort_keys=True, indent=2))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+```json
+{
+  "all_pass": true,
+  "check_count": 33,
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "pinned_native_G_CX_owner",
+      "pass": true
+    },
+    {
+      "kind": "native_exact",
+      "label": "literal_added_CX_and_three_positive_call_encoder",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "independent_legs_exact_all_column_extension",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "full_extension_is_unitary",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "complete_conditional_branch_maps",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "return_effect_only_forward_event",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "nonreturn_effect_and_complete_sum",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "full_cross_branch_Gram_retained",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "all_eight_columns_and_terminal_partition",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "prepared_valid_code_no_failure_column_deleted",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "code_preserves_complete_return_effect",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "exact_cold_with_independent_V_leg",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "full_raw_code_weighted_effect",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "actual_expected_code_cost_effect",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "absolute_amplitude_marker_difference",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "forward_full_return_first_source",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "independent_backward_terminal_reaction_exact_zero",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "backward_cold_reaction_cannot_be_dropped",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "nonzero_literal_forward_preparation_source",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "post_reader_pointer_rotation_return_row",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "pre_reader_pointer_rotation_return_row",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "post_reader_cold_rotation_sign_and_independent_legs",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "pre_reader_cold_rotation_opposite_sign",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "arbitrary_protected_input_scaled_isometries",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "all_protected_density_branch_masses",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "free_protected_input_mass_first_source_zero",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "matched_field_return_and_absolute_weight_jets",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "matched_field_cold_source",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "independent_cold_and_record_response_jacobian",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "conditional_single_row_elimination_retains_cold_source",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "full_proper_cut_feedback_source_sign_coefficient",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "new_born_pointer_free_tangent_if_admitted",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "golden_Kraft_minimum_of_actual_code_component",
+      "pass": true
+    }
+  ],
+  "classifications": {
+    "exact_symbolic": 31,
+    "native_exact": 1,
+    "provenance": 1
+  },
+  "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "schema": "d0.actual-presign-code-price/1",
+  "scope": {
+    "GR_closed": false,
+    "all_new_internal_master_rows_proved_zero": false,
+    "central_sign_is_inherited_EO_operation": true,
+    "complete_physical_Info_law_selected": false,
+    "independent_forward_backward_legs_retained": true,
+    "matched_CQ_entropy_gain_proved_by_scaled_isometries": true,
+    "new_reader_plus_code_has_four_positive_G_CX_calls": true,
+    "old_H_heat_or_Gamma_reused_after_extension": false,
+    "two_new_canonical_births_must_be_charged": true
+  }
+}
+```
+
+The 176 bounded conditions all pass. Two actual native fixtures
+retain arbitrary protected input columns: the same-layout14-call comparison
+has stage dimension238, and the new eight-call pre-sign writer has64 final
+columns,12 true stages and stage dimension572. The tests do not replace the
+full-domain analytical source theorem. Physical binding of the entire
+weighted programme and every added independent row remains open.
+
+### 7fo.I. Frozen review and integration boundary
+
+Scientific proof SHA256 (sections7fo.A--H including opening):
+`733e00ea157c1218ed53a35171465969d488cfc84383f37e1199dd92f6428de6`.
+
+Three bounded reviews checked the final shared argument and its
+interface boundaries. These are research reviews, not independent
+assembly acceptance or a physical-price discharge. The exact final
+review records follow, with their own byte hashes.
+
+#### `admission-review.md`
+
+SHA256: `7684d66ada6f38f12b46bccbe352fc53f372923b2c6a2f324312992df3f160e5`.
+
+```text
+# Final bounded admission and source-scope review
+
+5 November 2026. Existing #334; scientific input
+`b31cd0ad1bf96ec019bd43f6be8500e94e31f413`.
+Reviewer: `relative_phase_admission`. Repository and root proof were
+read-only throughout this review.
+
+| Reviewed artifact | SHA256 |
+| --- | --- |
+| Final combined `proof.md` | `733e00ea157c1218ed53a35171465969d488cfc84383f37e1199dd92f6428de6` |
+| Final `brief.md` | `d2e30003f90d22d4251f683226ca2730ec6ec8930e3b49a24aba87c5675d4a75` |
+
+**APPROVED at the stated scope. No mandatory correction remains.**
+The final assembly was read after the centre-only source correction,
+the independent-current feedback transport, the raw-log qualification
+and the exponent-price calibration correction were incorporated.
+NPS/PPS/HPS equation renaming preserves the reviewed statements.
+
+## Actual native operation and the original task
+
+The opening and brief correctly identify the new result as a paid
+extension of the original pre-sign event. They do not identify that
+event with the old terminal port or pretend that EO already executed
+the added 0/10 writer. The original H.1 graph, stronger complete FN
+fibre and weaker later code-valid family are kept separate.
+
+The actual extension preserves the original first PORT birth, original
+SourceSpin addresses and original front-birth order, then adds r,t in
+their canonical birth states before the square body. Its added calls
+are one CX at the real pre-sign address and the three-call E_0 encoder.
+All calls act on live permitted supports. The original paid reverse
+body is retained; no new inverse or zero blank is supplied.
+
+The all-column identities, code branch maps and proper cut are correct.
+The new initialized cut retains the original rank and unknown/reference
+columns. The direct tail remains quantum WORK; the invalid dirty
+columns remain in the complete unitary even though the initialized
+invalid outcome is exactly zero. Actual stage dimensions and the true
+last CX are used, with no constant-width padding of earlier fibres.
+
+Every pre-insertion mark keeps its actual extended operator and shifted
+address. Later marks require their true suffix transport. The new full
+endpoint is not an FN replacement of the old W. A faithful implementation
+constraint is applied only to the newly specified complete tuple, with
+its real normal reaction and generated-state adjoints.
+
+## Independent variables and the exact source scope
+
+Independent forward/back occurrences retain both
+`W=A_b* Z A_f` and `V=A_b* A_f`. In particular,
+`C_ext=a[R C_W+(1-R)C_V]`; V is not set to I before differentiation.
+The terminal probability depends on the forward event, while the
+return keeps both legs. Thus the entire price source is not reconstructed
+from the terminal probability alone.
+
+The four original preparation zeros are now expressly limited to
+their constructed CD3 centres. The source section does not infer an
+off-shell stationary nuisance section from those zeros. The added
+exact identity `DJ_new=eta DJ_old` keeps nonzero off-shell components
+on precisely the tangent map satisfying `Re Tr(DC_V)=0`, at the stated
+scalar corners and fixed z. The positive eta and transported frozen
+gain have their actual denominators. Extra input/old-Gram/pointer rows
+outside those hypotheses remain.
+
+The matched field pullback and the verified centre rows are separately
+stated. The full nonreflection heat is controlled by the original
+arbitrary-unitary clock estimate, with every new dimension, occurrence
+and normalized lift retained. No old exact finite thermal zero or
+finite EO root is transplanted to the changed word.
+
+The post-reader pointer derivative and the nonzero two-response
+Jacobian are correct. They supply an independent cold/record operand;
+they do not prove an admitted nuisance stationary section or select a
+full price F(C,q). The compiled-control and task-reaction caveats are
+present. Merely valid code cannot remove this real current row.
+
+## Terminal information and weighted continuation
+
+The terminal CQ calculation retains the whole conditional bank and
+reference states. Chi=0 is proved on the actual scaled-isometry fibre.
+The stronger first-derivative statement uses chi>=0 and the stated
+fixed-support, positive-branch regularity; it is not an off-fibre
+identity or a supplied physical purification. Changed support requires
+the separate continuity gate.
+
+Parsed length, probability cost marker, additional amplitude marker,
+terminal CQ component and H+J remain different typed quantities with
+their separate absolute normalizers. No primitive unit tariff or
+Book03 Info is assigned by calling the instruction list paid.
+
+The ten-CX FN example transports the supplied terminal operator on the
+same final quantum carrier. The final WQ3 qualification keeps raw
+instruction labels distinct and requires a separate map for policies
+or readouts chosen from differing logs. It is not an equivalence of
+all native future profiles. All coherent future effects and intermediate
+mark transports remain explicit in the correct contextual diagram.
+
+The primitive weight product and full-tree residual keep the terminal,
+initial-state, boundary, gauge and derivative defects. The corrected
+WT7 bounds the exponent price S=kappa B; comparison with B uses either
+the gain kappa Gamma_B or division by kappa. A genuinely variable kappa
+retains B Dkappa. Equal total partitions alone are not claimed to prove
+the full retained-cylinder law.
+
+## Validation and exact parent substitution
+
+The bounded original-loader pre-sign fixture was executed in both
+normal and optimized warnings-as-errors modes: 37 explicit conditions,
+identical JSON. It retains all64 final columns and arbitrary initial
+SourceSpin C^4, with eight square calls, four births, N=12 and D=572.
+Its exact pins and timings are in `PRESIGN_CHECK_RECEIPT.md`.
+The combined proof includes the four supplied checker/receipt blocks
+(176 conditions total). No checker was rerun merely for this prose
+and scope review; this receipt does not claim a full geometric compiler
+or growing-clock diagonalization was executed.
+
+The positive parent substitutions are the actual pre-sign event writer,
+its full response/cold map, independent-leg current feedback transport,
+changed-heat control and explicit weighted implementation-fibre diagram.
+The actual complete Book weights/price binding and a joint stationary
+section for all genuinely admitted new controls remain open. The final
+proof and brief preserve the original A--D objective and
+`GR_closed=false`; no terminal or scientific promotion is approved.
+```
+
+#### `price-review.md`
+
+SHA256: `16adbf224df3711eabc4a1d1509aefdebcd2cfe4af5dbb9b7ddbb057d144664a`.
+
+```text
+# Independent price/source review of combined §7fo
+
+Reviewed 5 November 2026, bounded read-only #334 review.
+Initial combined proof SHA-256:
+`3d91d8ceb7a2d243529add00638517b7cb0d29b35f49b555802efa7ccc953692`.
+Initial brief SHA-256:
+`d2e30003f90d22d4251f683226ca2730ec6ec8930e3b49a24aba87c5675d4a75`.
+The review covers the opening/brief, §§A–G, source typing and their claimed
+consumer. Embedded checker calculations were not replayed: the existing
+final normal/optimized receipts are the unchanged mathematical inputs.
+
+## Findings and verdict
+
+The main new substitution is valid: an actual event-controlled CX plus
+the exact three-call canonical-tail encoder maps the original EO pre-sign
+event to a retained terminal code on a new, fully charged history. It is
+not a vertical FN replacement of the old EO endpoint. The opening and brief
+correctly preserve this distinction and keep the complete weighted-price
+application and new nuisance equations open.
+
+One mandatory sign clarification is needed in §F.3: after the weaker-task
+screen control, replace the ambiguous sentence “Its difference from PW3 is
+−p⁶Pi_f1” with the explicit equality
+
+    H_sharp − H_screen = −p⁶ Pi_f1.
+
+The checker and underlying algebra already use this correct orientation.
+No mathematical replay is needed for that sentence.
+
+Two useful precision edits:
+
+* In §C.B use “Under the specified two-label CQ record convention” in place
+  of “For the actual committed record algebra.” §B correctly says the
+  unitary code container alone supplies neither a physical measurement,
+  serial emitter/cursor nor the complete readout work. The CQ calculation
+  is exact under its stated convention and should not sound as though an
+  additional physical commit was silently executed.
+* In §G after WT7 explicitly identify Gamma_h as the actual gain of the
+  reconstructed price: for S=κB this is κ Gamma_B. WT7 itself bounds
+  δS−κδB and correctly has 1/ell, without another 1/κ. If the comparison
+  is instead expressed in B units both the error and gain must be divided
+  by κ. The old C2 owner states this same source-scaling boundary.
+
+§D.6 still requires the source reviewer's centre-only qualification:
+HPS10 proves preparation rows at the owned matched centre, not a newly
+proved off-shell nuisance-stationary section. That correction is assigned
+to the source reviewer and is not supplied by the terminal-price proof.
+After those integrated qualifications the price/source composition is
+acceptable at the stated scope; final snapshot acceptance is pinned below.
+
+## Checked scientific points
+
+1. **Independent legs and the actual cold.** The complete extension is
+   `W tensor Pplus + V tensor Pminus`, with W=A_b*ZA_f and V=A_b*A_f.
+   Its protected cold is `a[R C_W+(1−R)C_V]`. Setting V=I before independent
+   differentiation would be false; the draft does not do that. The
+   scalar-corner formula and feedback denominator/rank are correct. The
+   born-reference compression, whole-carrier trace and proper initial cut
+   are distinguished. Actual new dimensions and heat gain replace the old
+   values. For a nonidentity accumulated past its Gram source is retained.
+
+2. **Complete conditional output, not a chosen marginal.** The actual branch
+   maps obey B0*B0=pI−p³E_f, B1*B1=p²I+p³E_f and B0*B1=apI. On
+   i*E_f i=QI, both normalized branch maps are isometries for every incoming
+   protected density, with old/reference correlations and pure branch tails
+   retained. Thus the full specified CQ entropy gain is h(q), not an entropy
+   obtained by discarding inconvenient work. This does not select Book03
+   vertex Info or a physical readout/commit convention.
+
+3. **Full regular entropy first source.** The χ argument is sound:
+   χ=Sρ−sum q_b Sρ_b≥0 by a mathematical purification and concavity; χ=0
+   at the scalar-effect section. For faithful rho on fixed support and
+   positive q_b, compression to `sqrtρ K_b*K_b sqrtρ/q_b` proves local
+   differentiability despite the larger output space. Hence Dχ=0 in all
+   regular directions at that section, including directions leaving it.
+   This does not assert χ=0 off section, nor handle new support births.
+
+4. **New controls and non-factorization.** Post-reader and pre-reader
+   rotations have opposite cold signs and different q rows. The draft
+   keeps their physical slot and cut interpretation distinct. The
+   determinant `−4p²R−ap⁶Q` is strictly negative for Q≥0. The elimination
+   identity E_Q=F_C det/(2ap) is conditional on a genuinely bound F(C,q)
+   and the indicated stationary row. It proves neither existence of that
+   row's zero nor neutrality of all other controls. Continuous target
+   rotations are not declared free native primitives.
+
+5. **Absolute weighting.** The actual code effect is pI−p³E. An additional
+   p^{length} amplitude marker gives a different absolute mass, even when
+   a Golden identity makes its unnormalized derivative agree. Raw Cost
+   expectation, marked Born partition, Book amplitude quadratic response,
+   mean terminal CQ price and H+J stay distinct. No H+J+CQ action is added.
+
+6. **Complete future tests and FN.** Stage conjugacy transports every full
+   future effect, with moving gauges and preparations differentiated.
+   The record-diagonal adjoint and coherent weighted map are correctly
+   separated; the concrete p⁶X Gram term prevents accidentally pinching
+   the latter. The weaker U_zero task is not used as an H.1 counterexample.
+   FN proves the fixed-operation fibre transport, not a weighted sum of
+   all native implementations or a field-changing comparison identity.
+
+7. **Weighted remainder.** WT3 telescopes with the correct operator order.
+   WT4 is a valid conservative full-norm bound; WT5 retains preparation
+   derivative, positive absolute mass and logarithmic denominator. WT6–7
+   apply to every retained comparison cylinder, not merely the total
+   partition. Primitive/vertex weights, terminal/failure operands and the
+   actual scalar-versus-amplitude binding remain genuine inputs.
+
+No full Cost−Info binding, off-shell new nuisance section, exact finite
+extended EO root, A–D discharge or GR closure is accepted by this review.
+
+## Final corrected snapshot — accepted
+
+Final combined proof SHA-256, independently read from disk:
+`733e00ea157c1218ed53a35171465969d488cfc84383f37e1199dd92f6428de6`.
+Final brief SHA-256, independently read from disk:
+`d2e30003f90d22d4251f683226ca2730ec6ec8930e3b49a24aba87c5675d4a75`.
+
+All listed price corrections are present: the explicit H_sharp−H_screen
+orientation, the specified CQ convention, and WT7's exponent-price/gain
+scaling with the additional B Dκ reaction when κ is free. The common-future
+statement now explicitly requires the same quantum carrier and a transported
+policy/readout for differing raw logs. It does not identify full retained
+future profiles by ignoring those logs.
+
+The revised §D.6–7 is also sound at its explicit assumptions. At the matched
+scalar corner and on actual tangents satisfying ReTr(DC_V)=0,
+
+    DJ_new=eta DJ_old,
+    eta=a R C[(1-z)+zc²] / {c[(1-z)+zC²]}.
+
+This follows by comparing the two complete trace differentials, without
+assuming DC_W is skew or scalar. It therefore transports the included
+nonzero off-shell current components as stated. Positive eta requires
+cC>0 and c≠0; both the stronger small-Q sufficient chart and the general
+condition are explicit. The calibrated normalization is frozen at the
+actual word. Coordinates violating the DC_V premise, old-Gram changes,
+new pointer/tail controls and z changes retain their own rows. Old and new
+heat are not identified. The separate field pullback, centre preparation
+zeros and unproved off-shell stationary nuisance section are now clearly
+separated, including the actual envelope term.
+
+**Verdict: approve the corrected combined proof and brief at their stated
+scope. No outstanding price/source correction is required.** This approval
+accepts the new native operation/response map and the conditional weighted
+transport gates; it does not discharge the remaining complete-price or
+joint-nuisance premises. No unchanged tests were rerun for this review.
+```
+
+#### `source-review.md`
+
+SHA256: `0760631ce0c734dcc330bbf0d7ddafc60b3a50662a13fe37b9a49aaa2b3e9bea`.
+
+```text
+# Final bounded source review — §7fo
+
+Reviewed 5 November 2026 by the source/heat lane, within existing #334.
+
+- Scientific input: `b31cd0ad1bf96ec019bd43f6be8500e94e31f413`.
+- Reviewed `proof.md`: SHA256 `733e00ea157c1218ed53a35171465969d488cfc84383f37e1199dd92f6428de6`, 3256 lines.
+- Reviewed `brief.md`: SHA256 `d2e30003f90d22d4251f683226ca2730ec6ec8930e3b49a24aba87c5675d4a75`.
+- Verdict: **approved at the stated scope; no mandatory mathematical correction found**.
+- Review only: no repository edits, no new claim/status, and no repeat of unchanged tests. The four existing finite receipts are not promoted to an execution of the large EO compiler or a physical weight-selection proof.
+
+## Source and normalization checks
+
+1. **Actual pre-sign extension.** NPS3/NPS11 and HPS1–3 retain both independent legs: `W=A_b* Z A_f` and `V=A_b* A_f`. The second term becomes identity only at matching. Canonical births and the four new calls are paid, all old columns stay present, and this is explicitly a new history rather than a vertical FN replacement of the original endpoint. The branch law `q=p²+p³Q` and cold `C=a(1−2RQ)` use this history, not the earlier XF reader law.
+
+2. **Positive feedback source.** HPS4–5 have the correct coefficient `gamma_Q=4r0 z a R C/[(1−z)+zC²]`. The gain is frozen at the actual central word and retains the target/actual ratio, `g_h`, error and physical right lift. There is no derivative of a normalized action `J/Gamma`. Nonidentity old Gram and independent calibration derivatives remain separate.
+
+3. **New exact eta identity.** HPS13a–b is correct on the explicitly declared tangent map. At `C_W=cI, C_V=I`, differentiating the full rank-r0 determinant gives `DJ_old=−2zc ReTr(DC_W)/d_old` and `DJ_new=−2zaC ReTr[R DC_W+(1−R)DC_V]/d_new`. Under `ReTr(DC_V)=0`, their ratio is exactly `eta=a R C d_old/(c d_new)`. It is positive for `cC>0`, in particular the original `Q<1/2` chart. No scalar or skew assumption on `DC_W` is needed. Thus nonzero off-shell preparation components really are transported, not discarded. The explicit exclusions of new pointer/tail, z and untransported old-Gram directions are necessary and present.
+
+4. **Centre versus off-shell scope.** HPS10 is restricted to the original CD3 primary centres; the text correctly retains the NG7–11 radial terms and EO3's full `A_h* DI_h` source off shell. The distinct §7ey/EX reader is not silently imported. HPS13 is a field pullback. A global nuisance-stationary section and its envelope term remain unproved unless their actual additional conditions are supplied. The brief and opening preserve this boundary.
+
+5. **Full heat.** HPS6 retains `359D+2 Tr_(33D)` and hence all 425D modes. HPS7–9 consume the owned arbitrary-endpoint CL theorem, not the old reflection cancellation. The new dimensions/ages, all occurrence and finite-comparison constants, frozen positive gain, and padding-last resource order remain explicit. Padding does not attenuate this feedback gain. Spectator-supported return rows are distinguished from arbitrary new couplings; no new exact finite root is asserted.
+
+6. **New independent response.** PPS15's determinant is `−4p²R−ap⁶Q`, strictly negative on the stated chart. This establishes two independent response coordinates on the actual extension. PPS16 is correctly conditional on a genuinely bound two-variable price and its admitted pointer row. HPS12 retains the nonzero new pointer feedback row, so no joint stationarity follows merely from the response Jacobian.
+
+## Weighted implementation and source-error checks
+
+7. WQ3 carries common future effects only on the same quantum carrier with identical retained factors or an explicit raw-log relabelling. A policy chosen from different raw logs is not identified. Coherent future effects, intermediate transported tests, invalid columns and actual final gates remain present.
+
+8. WQ6 has the correct pullback scalar coboundary and the push-forward convention uses its reciprocal. WQ7 retains the endpoint weight ratio and its jet; neither a uniform G/CX net tariff nor Info=0 is asserted. WQ9 separately retains the actual clock change under paid identity padding. Fixed-layout transport does not cover variable duration by omission.
+
+9. WT3 telescopes in the correct operator order on complete retained effects. WT4 is conservative and valid with the stated induced derivative norms. WT5 includes the transported initial density and its derivative, positive mass margin `m>E0`, and the actual denominator. An unmatched preparation needs its own defect. Coherent amplitude weights are not replaced by a diagonal Born law.
+
+10. WT6–7 retain each cylinder rather than just a total partition. The reconstructed price is `S=kappa B`, so its actual gain is `kappa Gamma_B`; the text states this explicitly and retains a new source if kappa becomes free. Finite-step, basis and right-lift factors survive. None of these conditional error identities supplies the missing primitive weights.
+
+## Accepted parent substitution and retained debts
+
+The checked substitution is the paid pre-sign-to-code operation, its full cold/branch differential, positive current-feedback transport, and bounded changed heat, together with the concrete fixed-layout weighted implementation diagram. It is not full Cost–Info selection, a global off-shell nuisance reduction, exact finite stationarity of the new history, or A–D/GR closure. The joint new readout/clock/scene rows and the actual complete weighted continuation law remain explicit. `GR_closed=false` is consistent with the result.
+```
+
+Only the existing primary artifact and task brief are changed.
+The complete previous byte content is preserved. No claim, queue,
+assembly edge, lifecycle or raw216 contract is modified. Final
+affected work/protocol/assembly/repository/whitespace guards are
+run on these final files before publication. GR_closed=false.
+
 ## 8. Reproduction
 
 Run from this directory:
