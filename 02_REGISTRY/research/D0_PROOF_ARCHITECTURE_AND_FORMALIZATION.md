@@ -17803,3 +17803,15 @@ source comparison. The finite checkers do not select the CQ algebra or prove
 the complete price; pointer coherence, free control rows, actual STOP/work
 and physical admission remain open. Reconstructed owner result objects are
 identified as such and the unavailable review texts are not claimed recovered.
+
+### Growing clock frame leakage and determinant
+
+The [finite stage-frame proof](sources/d0_growing_clock_frame_2026-11-05/README.md)
+derives the projector, support of leakage on the last frame, its Gram
+factorization and the clock determinant from mutually orthogonal isometric
+frames, an isometric transition and exact internal stage steps. The leakage
+identity is not an input. A negative control shows why stage transitions
+matter. Concrete owner stage embeddings, their identification with `J_f,C`,
+the 425D lift, field variations and physical admission remain open. [C0 and
+cached build receipts](sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_growing_frame_inventory_d9eb_2026-11-05/README.md)
+do not assert semantic acceptance or GR closure.
