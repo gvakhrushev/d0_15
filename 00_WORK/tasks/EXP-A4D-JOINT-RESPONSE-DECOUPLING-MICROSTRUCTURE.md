@@ -22792,3 +22792,63 @@ Final work/agent/assembly and whitespace guards pass on the integrated
 6a4624c5 input. Assembly remains 98 results / 22 obligations / 5 discharged,
 scientific_promotion=false. Incoming FD/VCP proof/checker/receipt blocks are
 preserved unchanged. Only the existing primary and task brief change.
+
+## 2026-11-05 checkpoint: full informative-history A–D closure assembly
+
+Phase: native realization / final composition. Existing Draft #334 only.
+Input advances from 8ad92906b through be4893202 to
+`6a4624c5a644d6022c069d112dd883084713fa27` and `bf1cff04c`; every incoming result is preserved.
+Result location: §7fq of the existing primary source artifact. The same
+two write paths remain; no new task, registry result, scientific promotion,
+Ready transition, retirement or merge.
+
+Parent application: compose the actual original informative query, all
+independent controls, one literal paid history, the complete selected
+Book03 master and the existing full Einstein–two-CAR source/recovery.
+This is a full A–D attempt, not another finite root or local-source claim.
+
+The original NPS10 all-input guard retains the full informative fibre and
+its real normal reactions. Literal native words and all-column checks
+supply exact informative examples. The incoming whole-instrument optimum
+is applied with the noisy writer's ACTUAL born masses (p,p³), including
+its unread direct tail and invalid mass p⁴. No sharp57-stage serializer,
+its masses or finite roots are transplanted.
+
+The full-domain proof includes historical h, independent current fields
+and four preparations per copy, and the entire actually available
+fixed-effect apparatus. A paid birth plus three-CX SWAP restores the live
+source port while retaining old state and return. Current-only recovery
+keeps oldRIGHT untouched and transports quantum futures with the actual
+word/inverse. Independent copies retain their full physical lift and
+source norm; equality of their centres is not an admission guard.
+The complete current/history and compiler/clock estimates are given in
+the final composition, including the actual inverse-gain constants.
+
+Admission is proved for the declared original H.1 constructor and its
+faithful effect/future interface through Book01's six descent conditions.
+READY, reference, visibility, scene and clock statuses come from that
+input signature. A universal scheduler or necessity of this query in all
+D0 histories is not asserted. The old fixed-prefix continuation is only
+a separate boundary corollary, not deletion of full historical rows.
+
+The C test constructs the full half-density/operator continuation map,
+all coherent future effects, genuine complements and archive entropy
+chain rule. It also tests amplitude, conditional-expectation and posterior
+interpretations without adding an Info convention. The selected B=H+J
+is already complete on its literal RAW/GROWING tuple; no CQ term is
+automatically added to it.
+
+Remaining physical application: derive the actual complete Cost−Info
+source's membership in the proved positive source cone, or bound its
+full same-history residual after normalization and the physical right
+lift. Parsed lengths, native call counts and entropy preservation do not
+provide the primitive-work/vertex-Info identification. A proved complete
+normalization/gauge transport is accepted; no absolute amplitude jet or
+exact equality of microscopic prices is imposed unnecessarily.
+
+This packet therefore does not establish the unchanged physical scoped
+terminal. `GR_closed=false`; `scientific_promotion=false`; goal active.
+Bounded checks, final extracted replay and independent review are pinned
+in §7fq. Unchanged large geometry/heat/Lean suites are not replayed.
+
+Final extraction replay: all173 changed native/price/composition checks pass normally and with optimized Python; all three stdout receipts exactly match the reviewed embedded bytes. Three bounded cross-reviews approve the stated selected-master/admission scope, with physical C still open.
