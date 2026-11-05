@@ -156380,6 +156380,832 @@ missing substitution. No Ready, retirement, merge, raw216 or registry
 promotion is made. This correction changes no computational theorem;
 unchanged mathematical/Lean suites need no replay.
 
+## 7fv. Complete-record description sources and the exact limit of rare-event amplification
+
+6 November 2026 (Europe/Moscow). Existing #334, input
+`31047f3156134fb75bc580ae9320487950bd73f9`. Phase: native information
+realization / final composition. Consumer: physical binding C in the
+unchanged scoped native kappa contract. Same two write paths; no new task.
+
+**Conclusion.** The existing universal-code theorem can be connected to
+complete quantum information by a joint relative-entropy estimate on
+arbitrary adaptive efficient instruments. This supplies a finite-comparison
+criterion without a differentiable native word selector or a fixed input
+rank. It does not select physical vertex Info. A second, exact result shows
+that an actually registered CQ herald, with fixed probability, neutral
+overhead and a genuinely branch-additive ledger, cannot improve the useful
+source relative to an unknown active-branch work source. Within those
+hypotheses it cannot turn the noisy §7fq price components into the sharp
+§7ft entropy cone.
+
+This is an application and bounded extension of existing mathematics, not
+a new universal-coding or Shannon theorem. The genuinely missing physical
+Cost/Info map identified in §7fu remains missing after this calculation.
+
+### FV1. Owned inputs and the exact distinction being tested
+
+Reuse the following results at their original hypotheses:
+
+* `A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md`, §§2–5:
+  competitive injective descriptions, Golden Kraft defect, the universal
+  competitor, and full score/Fisher first-source bounds. It ALREADY avoids
+  differentiating integer code lengths. Its semantic decoder condition (12)
+  is essential.
+* BCPR12–13 and §7ft ES10 in this primary: the complete Shannon/CQ gap is
+  quadratic near scalar effects on the owned common-CODE instrument. No
+  new claim is made for that existing case.
+* `A4D_COHERENT_COMPILATION_COST_DESCENT.md`, equations (10)–(14):
+  isometric code transport preserves a supplied full price only with its
+  actual cost intertwiner or evaluated mismatch operator.
+* §7fq CD13 / §7fr FCLOSE1 and §7fu: the remaining comparison is of the
+  COMPLETE physical source, divided by the actual gain and controlled
+  after multiplication by the actual physical right lift.
+
+The added estimate below does not require a common commuting CODE
+decomposition. All genuinely retained outcomes and the whole conditional
+quantum bank remain. It concerns a description statistic, not an unpaid
+replacement of the already executed physical reporter.
+
+### FV2. One joint debt for adaptive records and their quantum bank
+
+Write ell=log(phi), and measure both entropies and relative entropies in
+Golden units when marked with a subscript phi. Start with any finite
+normalized density rho, including actual old memory and physical reference
+systems. Each complete binary step is efficient: conditional on its fully
+retained outcome b, one rectangular Kraus map K_b carries ALL surviving
+quantum systems and satisfies K_0* K_0+K_1* K_1=I. This is not permission to
+hide finer Kraus labels or trace out an uncharged environment.
+
+At each actual retained prefix, require
+
+    E_1=K_1* K_1=q I+D,  E_0=(1-q)I-D,
+    ||D||op<=delta,  0<q<1,  delta<min(q,1-q).          (FV1)
+
+The maps and input may depend on the prefix and on every admitted physical
+coordinate. No independence of successive outputs, fixed rank, commuting
+effects or fixed preparation is assumed. The reference q is a comparison
+number for this estimate, not a newly selected physical prior.
+
+Let X be the COMPLETE M-bit record, P its actual classical law, and
+
+    I_Q=S_phi(direct_sum_x K_x rho K_x*)-S_phi(rho),
+    P_q(x)=q^(#1(x)) (1-q)^(M-#1(x)).
+
+Then the following JOINT bound holds:
+
+    0 <= D_phi(P || P_q)+H_phi(P)-I_Q
+      <= M delta^2/[ell q(1-q)].                        (FV2)
+
+**Proof at one step.** Purify the conditional input mathematically; this
+does not introduce a physically supplied reference. On its support, the
+reference/output state has blocks
+
+    sigma_b=(sqrt(rho) E_b sqrt(rho))^T,
+    tau_b=q_b rho^T,  (q_0,q_1)=(1-q,q).
+
+Its relative entropy decomposes exactly into the classical divergence of
+the actual outcome probabilities from (1-q,q) plus their mutual information
+with the purifying reference. The latter is the conditional input entropy
+reduction. For any density matrices sigma,tau with the needed support,
+
+    D(sigma||tau) <= log Tr(sigma^2 tau^+) <= Tr(sigma^2 tau^+)-1.
+
+The first inequality follows directly by diagonalizing sigma and tau and
+applying scalar concavity of log to weights s_i |<i|j>|^2; tau^+ is the
+inverse on its support. Compress E_b to supp(rho) when necessary. Direct
+multiplication gives
+
+    Tr(sigma^2 tau^+)-1
+      = Tr[rho (E_1-qI)^2]/[q(1-q)] <= delta^2/[q(1-q)]
+
+on that compressed support. If uncompressed effects are used, the equality
+is replaced by the corresponding upper bound. The argument is uniform in
+rank and dimension. Apply it to every actual conditional input and sum
+with its real prefix probability. The classical divergence chain rule and
+the efficient-instrument entropy chain rule give (FV2). In particular,
+the classical-law debt and quantum-information debt use ONE budget; adding
+their two separate worst-case bounds is unnecessary.
+
+The same proof allows prefix-dependent q_j and delta_j, with the expected
+sum of their actual bounds. The simple universal type code below uses one
+q for a repeated block. A fixed finite palette can be coded in separately
+specified groups, retaining the sum of their overheads.
+
+An exact noncommuting control shows why the quantum term must remain.
+Start with rho=I_2/2 and apply the two efficient Lueder instruments with
+E_1=I/2+(1/8)Z and E_2=I/2+(1/8)X, retaining both binary outcomes.
+All four complete records have probability 1/4. Nevertheless each final
+conditional quantum state has eigenvalues (16+sqrt(31))/32 and
+(16-sqrt(31))/32. Consequently H_phi(X)-I_Q is strictly positive, although
+the classical record law is unchanged from two fair bits. FV2 bounds this
+term; replacing I_Q by the record's entropy without it fails. This is an
+exact matrix countercontrol, not an additional admitted native gate.
+
+### FV3. Consume the old code-class theorem with an explicit integer codec
+
+Use the declared Golden token language F=0, R=10 with costs 1,2. The number
+A_l of words of exact cost l obeys A_0=A_1=1 and
+A_l=A_(l-1)+A_(l-2). Put l(n)=min{l:A_l>=n}. A fixed encoder for an M-bit
+record x with k ones stores:
+
+    a fixed-cost Golden rank for k among M+1 types;
+    a fixed-cost Golden rank for x among binom(M,k) words.
+
+Thus its actual description length is
+
+    c_M(x)=l(M+1)+l(binom(M,k)),
+    c_M(x)<=-log_phi Q_M(x)+4,
+    Q_M(x)=1/[(M+1) binom(M,k)].                        (FV3)
+
+Indeed A_l>=phi^(l-1) for l>=1, hence l(n)<=log_phi(n)+2.
+The decoder knows M, reads the fixed-cost type header, then its specified
+rank suffix. Every outcome is retained. Codewords are prefix-free. This
+is a concrete rank/unrank realization of the already owned universal
+competitor; it is not a newly proved physical native codec or a claim that
+its execution costs c_M.
+
+The code describes only the classical label x. Its entire conditional
+quantum bank remains untouched. Applying D_min to a complete physical
+history still requires the decoder interpretation to preserve that bank,
+its correlations, all demanded future comparisons and their actual costs.
+
+Let K_M be ANY fixed injective Golden description of the SAME record,
+with one fixed decoder and the actually justified competitive inequality
+
+    K_M(x)<=c_M(x)+d_M,  d_M>=0.
+
+For actual D_min this inequality still requires the old semantic-decoder
+condition (12); shortest naming does not establish it by itself. Define
+
+    a_M=log_phi(M+1)+4+d_M,
+    U_M=ceil(M log_phi(2)+a_M),  b_M=log_phi(U_M+1).
+
+No prefix hypothesis is imposed on K_M: the already owned word count gives
+sum_x phi^(-K_M(x))<=U_M+1. Also P_q(x)<= (M+1)Q_M(x).
+For ANY actual P, including correlated/adaptive records, these facts imply
+
+    -b_M <= E_P K_M-H_phi(P)
+         <= a_M+D_phi(P||P_q).
+
+Combining with (FV2) gives
+
+    -b_M <= E_P K_M-I_Q
+         <= a_M+M delta^2/[ell q(1-q)].                 (FV4)
+
+No smallest probability of a complete history appears. The rank and number
+of old quantum-memory states do not appear. An ordinary unrestricted
+binary code language has capacity log(2), not log(phi); changing units
+without changing the actual language is invalid.
+
+### FV4. Full finite comparisons, actual gain and the remaining semantic map
+
+Consider two actual finite words at a declared signed displacement +/-t,
+with the SAME M, description decoder, Golden cost convention and complete
+record interface. Their quantum carriers or input ranks may differ. Suppose
+both satisfy (FV1) about the same comparison q, with the larger bound delta.
+Define delta_t f=(f_+-f_-)/(2t). From (FV4),
+
+    |delta_t E K_M-delta_t I_Q| / Gamma_M
+      <= [a_M+b_M+M delta^2/(ell q(1-q))]
+         /[2 |t| Gamma_M].                             (FV5)
+
+This is a statement about actual finite endpoint quantities; no continuous
+selector of native words or entropy derivative at a rank birth is used.
+If Gamma_M=M g is the ACTUAL source calibration and delta<=L|t|, the
+right side is
+
+    (a_M+b_M)/(2M|t|g)+L^2|t|/[2ell q(1-q)g].          (FV6)
+
+An implementation error nu must stay inside delta<=L|t|+nu. For a finite
+basis, multiply (FV5) by its actual reconstruction constant and by the
+physical right-lift norm before claiming a complete-source limit. These
+constants, g and d_M may depend on the physical request and on M. No
+convergence is asserted solely from choosing a large M if any of them
+grows too fast. For fixed constants and d_M=O(log M), for example,
+|t|=M^(-2/3), nu=o(|t|) makes (FV6) tend to zero. This is a sufficient
+mathematical schedule, not a proved native resource schedule.
+
+On a genuinely smooth scalar-effect envelope, the old score theorem is
+usually stronger and is reused rather than replaced. If every actual
+conditional probability derivative is bounded by L in the physical unit
+ball, its martingale Fisher norm is at most sqrt(M)L/sqrt(q(1-q)). The
+existing code-class bound is therefore O(log M/sqrt(M)) after division by
+Mg, with its exact constants and actual right lift. The quantum first
+source agrees at the scalar centre by (FV2). This conditional analytic
+statement does not create a native comparison basis or its price.
+
+**Parent substitution.** Given an admitted same-record decoder and its
+price interface, (FV5) transports a minimal-record-description contribution
+to the complete CQ source used by the existing sharp-history owner. It
+removes a need for a fixed-rank differentiable-law proof in that supporting
+application. It does not establish that physical Book Info is this
+description contribution. It does not replace accumulated report cost
+M+#1 by the shorter archive code or refund its already incurred charge.
+
+For an actually executed encoder T, the existing physical test remains
+
+    Delta_T=T* C_out T-C_in-kI,
+    D(price difference)=D Tr(rho Delta_T).              (FV7)
+
+Here k is genuinely constant on the admitted comparison; otherwise its
+additional Dk term remains in the price differential.
+The actual Info account, all decoder/work/clock contributions and the
+weighted continuation/terminal map must still be evaluated. Reversible
+encoding preserves full-state entropy; a code theorem cannot select its
+physical cut. The exact literal-Can counterexample in the old code-class
+owner remains in force. Thus FV5 is not physical C acceptance.
+
+### FV5. A retained rare flag has an exact source cancellation
+
+Test a different possible route: make an active source rare and use its
+large marginal entropy slope to overwhelm an unknown work term. Let a
+fixed independent herald R, with success probability epsilon, choose between
+the whole inactive and active registered states Omega_0 and Omega_1. Retain
+R, all failures, the old memory and the conditional quantum banks. Exactly,
+
+    Omega_epsilon=(1-epsilon)Omega_0 direct_sum epsilon Omega_1,
+    I_epsilon=h_phi(epsilon)+(1-epsilon)I_0+epsilon I_1. (FV8)
+
+Here I_i=S_phi(Omega_i)-S_phi(rho) uses the SAME payload input rho in
+both branches. The displayed total increment assumes the newly registered
+herald resource starts pure, as for the canonical born-vector realization.
+If a preexisting mixed herald is used instead, subtract its ACTUAL initial
+entropy and retain any correlations and source. The orthogonal-sum output
+identity itself does not assign the herald's physical information price.
+A coherent unmeasured control is not this registered direct-sum state and
+cannot be substituted into FV8 without its actual readout/retention map.
+
+For an ACTUALLY branch-additive full cost and fixed a>0, put S_i=C_i-a I_i.
+Then
+
+    S_epsilon=C_herald-a h_phi(epsilon)
+                +(1-epsilon)S_0+epsilon S_1.           (FV9)
+
+If the generated epsilon and the genuine inactive/herald sources are field
+constant, DS_epsilon=epsilon DS_1. For
+
+    DS_1=Gamma A* E_Einstein+R_work,
+
+both the useful gain and the active work defect acquire epsilon:
+
+    Gamma_epsilon=epsilon Gamma,
+    R_epsilon/Gamma_epsilon=R_work/Gamma.               (FV10)
+
+The same physical right lift therefore gives EXACTLY the same normalized
+error. One herald can gate an entire correlated M-report experiment; no
+independence of that experiment is required. Extra overhead sources instead
+appear divided by epsilon Gamma. If epsilon is actually independent, its
+additional row is
+
+    [S_1-S_0-a h_phi'(epsilon)] D epsilon+D C_herald.    (FV11)
+
+Do not add this row when epsilon is generated by a fixed native request.
+Do not apply branch-additive FV9 to a different clock spectral functional;
+that functional retains its own full source.
+
+The smallest exact witness uses q=1/3 for an active binary report. The
+complete three probabilities are (1-epsilon,epsilon(1-q),epsilon q).
+For epsilon=1/4 they are (3/4,1/6,1/12); for epsilon=1/16 they are
+(15/16,1/24,1/48). The actual two parsed 0/10 records are 00,100,1010,
+with complete costs 2,3,4. Therefore
+
+    D_q C_complete=epsilon,
+    D_q H_phi(R,X)=epsilon log(2)/ell,
+    (D_q C_complete)/(D_q H_phi(R,X))=ell/log(2)         (FV12)
+
+at BOTH rarities. Looking only at X gives instead the larger apparent
+information slopes log(11)/(4ell) and log(47)/(16ell). The omitted term is
+exactly D H_phi(R|X); it cancels the apparent improvement. No inequality or
+asymptotic approximation is involved.
+
+**Actual noisy/sharp consumer.** At the already owned noisy centre,
+L(q_N)=log((1-q_N)/q_N)/ell lies strictly between 2/3 and 3/4.
+The SPECIFIED full-record mean and amplitude price components of §7ft ES6,
+under their original Born/GAIN and ledger hypotheses, retain source factors
+
+    epsilon[1-L(q_N)]>0,
+    epsilon[1-(3/2)L(q_N)]<0                            (FV13)
+
+for every epsilon>0. This does not identify the unknown complete physical
+H.1 price with either specified component. Native canonical heralds may
+use k registered born
+bits and the all-success event epsilon=p^(2k); keep the entire k-bit tape.
+Its entropy is k h_phi(p^2), and its field derivative is zero. The active
+record still contributes epsilon D h_phi(q_N). Thus retained herald
+thinning cannot identify the noisy source with the sharp entropy cone.
+This is a concrete route exclusion, not a no-go for intrinsic rare queries
+or for D0 gravity.
+
+### FV6. Smooth coherent work need not have a bounded rare-probability slope
+
+For an intrinsic coherent rare query, consider the mathematical retained
+state sqrt(1-q)|00>+sqrt(q)|11> and the positive Golden projector onto
+sqrt(p)|00>+p|11>, p+p^2=1. Its response and derivative are
+
+    W(q)=p-p^3 q+2p sqrt(p) sqrt(q(1-q)),
+    W'(q)=-p^3+p sqrt(p)(1-2q)/sqrt(q(1-q)).             (FV14)
+
+Hence W'(q)/log(1/q) tends to infinity as q decreases to zero. Finite
+matrices, positivity and smooth dependence on native amplitudes do not
+imply a bounded derivative in q. This observation is NOT asserted to be
+an alternative admitted full physical price for H.1: the coherent future
+test may violate its readonly-record guard. It supplies a negative control
+for that proposed regularity inference, and nothing broader.
+
+### FV7. Verification, synthesis and physical status
+
+The embedded checker below implements the explicit integer Fibonacci
+rank/unrank codec with its decoder, checks every record for M=1,...,9,
+and evaluates finite description contrasts up to M=2048. It also checks
+adaptive noncommuting four-step instruments with rank-1, rank-2 and rank-4
+inputs, both exact rational herald tables, and the coherent rare-query
+negative control. Integer/Fraction codec calculations are exact; floating
+quantum and entropy values are diagnostics of the analytical proof, not
+interval certificates or a new replay of all42 geometry.
+
+The scientific conclusions are FV2/FV5 (a supporting complete-record
+description/CQ transport) and FV10/FV13 (no normalized source improvement
+from an independently retained herald). The old universal-code,
+common-CODE quantum and Einstein source results are reused at their
+original scope. All incoming proof bytes remain.
+
+No actual physical Cost/Info-valued continuation map has been supplied by
+these arguments. The complete pricing objection of §7fu stands. The
+joint proof required for SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED is absent;
+GR_closed=false. No assembly promotion, Ready transition, retirement,
+merge or change to raw216 is made. A conditional decoder theorem, a rare
+marginal entropy and a fixed gate inventory are not physical closure.
+
+The next admissible consumption is specific: instantiate the SAME
+physical Info account and decoder/cost intertwiner in equation (FV7), or evaluate
+the actual weighted continuation/full-current map in §7fq CD13. No further
+geometry or entropy coding census is needed for this substitution.
+
+#### Bounded checker and its receipt
+
+```python
+"""Bounded checks for the complete-record finite-comparison synthesis.
+
+The proofs are analytic. Exact integer/Fraction checks concern the explicit
+Golden codec; floating quantum checks are diagnostics, not interval proofs.
+No native physical Cost/Info identification or GR closure is asserted.
+"""
+from bisect import bisect_left
+from fractions import Fraction
+from itertools import product
+from math import comb, log, sqrt
+import json
+import numpy as np
+from scipy.stats import binom
+
+PHI = (1.0 + sqrt(5.0)) / 2.0
+ELL = log(PHI)
+P = 1.0 / PHI
+FIB = [1, 1]
+CHECKS = {}
+
+
+def require(name, condition):
+    if not bool(condition):
+        raise RuntimeError(name)
+    CHECKS[name] = CHECKS.get(name, 0) + 1
+
+
+def capacity_length(n):
+    if n < 1:
+        raise ValueError("positive code cardinality required")
+    while FIB[-1] < n:
+        FIB.append(FIB[-1] + FIB[-2])
+    return bisect_left(FIB, n)
+
+
+def golden_unrank(length, rank):
+    if not 0 <= rank < FIB[length]:
+        raise ValueError("invalid Golden rank")
+    out = []
+    while length:
+        left = FIB[length - 1]
+        if rank < left:
+            out.append("0")
+            length -= 1
+        else:
+            out.append("10")
+            rank -= left
+            length -= 2
+    return "".join(out)
+
+
+def golden_rank(word):
+    length, cursor, rank = len(word), 0, 0
+    while length:
+        if word[cursor] == "0":
+            length -= 1
+            cursor += 1
+        elif length >= 2 and word[cursor:cursor + 2] == "10":
+            rank += FIB[length - 1]
+            length -= 2
+            cursor += 2
+        else:
+            raise ValueError("not a word in the declared Golden token grammar")
+    return rank
+
+
+def type_rank(bits):
+    ones, rank = sum(bits), 0
+    for i, bit in enumerate(bits):
+        remaining = len(bits) - i - 1
+        if bit:
+            rank += comb(remaining, ones) if ones <= remaining else 0
+            ones -= 1
+    return rank
+
+
+def type_unrank(size, ones, rank):
+    if not 0 <= rank < comb(size, ones):
+        raise ValueError("invalid type rank")
+    bits = []
+    for remaining in range(size - 1, -1, -1):
+        zero_count = comb(remaining, ones) if ones <= remaining else 0
+        if rank < zero_count:
+            bits.append(0)
+        else:
+            bits.append(1)
+            rank -= zero_count
+            ones -= 1
+    return tuple(bits)
+
+
+def encode(bits):
+    size, ones = len(bits), sum(bits)
+    head_len = capacity_length(size + 1)
+    tail_len = capacity_length(comb(size, ones))
+    return golden_unrank(head_len, ones) + golden_unrank(tail_len, type_rank(bits))
+
+
+def decode(size, code):
+    head_len = capacity_length(size + 1)
+    ones = golden_rank(code[:head_len])
+    if ones > size:
+        raise ValueError("unused type header")
+    tail_len = capacity_length(comb(size, ones))
+    if len(code) != head_len + tail_len:
+        raise ValueError("wrong complete code length")
+    return type_unrank(size, ones, golden_rank(code[head_len:]))
+
+
+def binary_entropy(q):
+    return -(q * log(q) + (1.0 - q) * log(1.0 - q)) / ELL
+
+
+def entropy(rho):
+    ev = np.linalg.eigvalsh((rho + rho.conj().T) / 2.0)
+    ev = ev[ev > 1e-13]
+    return -float(np.dot(ev, np.log(ev))) / ELL
+
+
+def positive_sqrt(matrix):
+    ev, vec = np.linalg.eigh(matrix)
+    return (vec * np.sqrt(np.maximum(ev, 0.0))) @ vec.conj().T
+
+
+codec_rows = []
+for size in range(1, 10):
+    words = list(product((0, 1), repeat=size))
+    codes = [encode(bits) for bits in words]
+    require("all_exact_code_roundtrips", all(decode(size, code) == bits
+            for bits, code in zip(words, codes)))
+    ordered = sorted(codes)
+    require("all_prefix_free", all(not b.startswith(a) for a, b in zip(ordered, ordered[1:])))
+    q = Fraction(1, 3)
+    expected = sum(Fraction(len(code)) * q**sum(bits) * (1-q)**(size-sum(bits))
+                   for bits, code in zip(words, codes))
+    actual = float(expected)
+    target = size * binary_entropy(float(q))
+    upper = log(size + 1) / ELL + 4.0
+    require("explicit_code_entropy_band", -1e-11 <= actual-target <= upper+1e-11)
+    codec_rows.append({"M": size, "codes": len(codes), "max_cost": max(map(len, codes)),
+                       "mean_cost_at_one_third": str(expected)})
+
+
+def expected_code(size, q):
+    lengths = np.array([capacity_length(size + 1) + capacity_length(comb(size, k))
+                        for k in range(size + 1)], dtype=float)
+    return float(np.dot(binom.pmf(np.arange(size + 1), size, q), lengths))
+
+
+finite_rows = []
+t, centre = 0.01, 0.25
+entropy_source = (binary_entropy(centre+t)-binary_entropy(centre-t))/(2*t)
+for size in (8, 32, 128, 512, 2048):
+    contrast = (expected_code(size, centre+t)-expected_code(size, centre-t))/(2*t*size)
+    bound = (log(size+1)/ELL+4.0)/(2*t*size)
+    require("finite_code_contrast_bound", abs(contrast-entropy_source) <= bound+1e-9)
+    finite_rows.append({"M": size, "code_source_per_report": contrast,
+                        "entropy_source_per_report": entropy_source,
+                        "absolute_error": abs(contrast-entropy_source), "proved_bound": bound})
+
+
+# Every quantum branch and reference is retained. All matrices are small;
+# each varied conditional effect stays within delta of the SAME q I.
+q, delta, size = 1.0/3.0, 0.04, 4
+sigma_x = np.array([[0.0, 1.0], [1.0, 0.0]], dtype=complex)
+sigma_y = np.array([[0.0, -1j], [1j, 0.0]], dtype=complex)
+sigma_z = np.diag([1.0, -1.0]).astype(complex)
+bell = np.array([1.0, 0.0, 0.0, 1.0], dtype=complex) / sqrt(2)
+pure = np.outer(bell, bell.conj())
+inputs = [pure, 0.7*pure+0.3*np.eye(4)/4,
+          np.diag([0.6, 0.4, 0.0, 0.0]).astype(complex)]
+quantum_rows = []
+for input_index, rho0 in enumerate(inputs):
+    branches = [((), 1.0, rho0)]
+    for stage in range(size):
+        new = []
+        for bits, weight, rho in branches:
+            axis = (sigma_x, sigma_y, sigma_z)[(stage + sum(bits)) % 3]
+            effect = q*np.eye(4) + delta*np.kron(axis, np.eye(2))
+            for bit, eff in ((0, np.eye(4)-effect), (1, effect)):
+                kraus = positive_sqrt(eff)
+                unnormalized = kraus @ rho @ kraus.conj().T
+                probability = float(np.trace(unnormalized).real)
+                new.append((bits+(bit,), weight*probability, unnormalized/probability))
+        branches = new
+    hrecord = -sum(weight*log(weight)/ELL for _, weight, _ in branches)
+    information = hrecord + sum(weight*entropy(rho) for _, weight, rho in branches)-entropy(rho0)
+    divergence = sum(weight*(log(weight)-sum(bits)*log(q)-(size-sum(bits))*log(1-q))/ELL
+                     for bits, weight, _ in branches)
+    total_debt = divergence + hrecord - information
+    bound = size*delta**2/(ELL*q*(1-q))
+    require("complete_quantum_joint_quadratic_bound", -1e-11 <= total_debt <= bound+1e-10)
+    mean_code = sum(weight*len(encode(bits)) for bits, weight, _ in branches)
+    code_bound = log(size+1)/ELL+4.0+bound
+    require("complete_code_quantum_information_bound", -1e-10 <= mean_code-information <= code_bound+1e-10)
+    quantum_rows.append({"input_rank": int(np.linalg.matrix_rank(rho0)),
+                         "classical_record_entropy": hrecord,
+                         "complete_cq_information": information,
+                         "combined_relative_entropy_debt": total_debt, "proved_bound": bound})
+
+
+# Same complete classical record law, genuinely different quantum information.
+noncommuting_branches = [(1.0, np.eye(2)/2)]
+for axis in (sigma_z, sigma_x):
+    next_branches = []
+    for weight, rho in noncommuting_branches:
+        for sign in (-1, 1):
+            kraus = positive_sqrt(np.eye(2)/2+sign*axis/8)
+            raw = kraus @ rho @ kraus.conj().T
+            probability = float(np.trace(raw).real)
+            next_branches.append((weight*probability, raw/probability))
+    noncommuting_branches = next_branches
+exact_eigenvalues = np.array([(16-sqrt(31))/32, (16+sqrt(31))/32])
+require("same_classical_law_noncommuting_control", all(abs(w-0.25)<1e-12 for w, _ in noncommuting_branches))
+require("exact_noncommuting_conditional_spectra", all(np.max(np.abs(np.linalg.eigvalsh(rho)-exact_eigenvalues))<1e-12
+        for _, rho in noncommuting_branches))
+quantum_deficit = log(2)/ELL + float(np.dot(exact_eigenvalues, np.log(exact_eigenvalues)))/ELL
+require("classical_code_does_not_erase_quantum_debt", quantum_deficit > 0)
+
+
+herald_rows = []
+q = Fraction(1, 3)
+for eps in (Fraction(1, 4), Fraction(1, 16)):
+    joint = (1-eps, eps*(1-q), eps*q)
+    mean_cost = sum(prob*cost for prob, cost in zip(joint, (2, 3, 4)))
+    dcost = eps
+    full = float(eps)*log(2)/ELL
+    marginal = float(eps)*log((1-float(eps*q))/float(eps*q))/ELL
+    conditional = float(eps)*(log(2)-log((1-float(eps*q))/float(eps*q)))/ELL
+    require("retained_flag_source_identity", abs(full-marginal-conditional) < 1e-12)
+    require("normalized_work_debt_not_improved", abs(float(dcost)/full-ELL/log(2)) < 1e-12)
+    herald_rows.append({"epsilon": str(eps), "full_probabilities": list(map(str, joint)),
+                        "complete_parsed_mean_cost": str(mean_cost),
+                        "complete_cost_derivative": str(dcost), "full_info_derivative": full,
+                        "marginal_info_derivative": marginal,
+                        "cost_to_full_info_source_ratio": float(dcost)/full})
+
+
+# Positive coherent response: smooth in amplitudes, not uniformly C1 in q.
+coherent_rows = []
+for q in (1e-2, 1e-4, 1e-8):
+    work_derivative = -P**3+P*sqrt(P)*(1-2*q)/sqrt(q*(1-q))
+    entropy_derivative = log((1-q)/q)/ELL
+    coherent_rows.append({"q": q, "positive_work_to_entropy_slope": work_derivative/entropy_derivative})
+require("coherent_rare_work_beats_log_slope", coherent_rows[-1]["positive_work_to_entropy_slope"] > 100)
+require("literal_minimality_not_entropy_semantics", 1.0 != log(1.0)/ELL)
+
+result = {"exact_codec": codec_rows, "finite_contrasts": finite_rows,
+          "quantum_diagnostics": quantum_rows, "retained_herald": herald_rows,
+          "noncommuting_same_record_law": {"probabilities": [w for w, _ in noncommuting_branches],
+              "conditional_eigenvalues": exact_eigenvalues.tolist(), "quantum_information_deficit": quantum_deficit},
+          "coherent_rare_negative_control": coherent_rows,
+          "checks_by_family": CHECKS,
+          "scope": "Exact finite codec checks; analytic general proofs; floating quantum diagnostics only. Existing code-class owner reused. No physical native codec cost or Book Info identification.",
+          "physical_info_identified": False, "native_codec_work_bound_proved": False,
+          "GR_closed": False}
+print(json.dumps(result, indent=2, sort_keys=True, allow_nan=False))
+```
+
+```json
+{
+  "GR_closed": false,
+  "checks_by_family": {
+    "all_exact_code_roundtrips": 9,
+    "all_prefix_free": 9,
+    "classical_code_does_not_erase_quantum_debt": 1,
+    "coherent_rare_work_beats_log_slope": 1,
+    "complete_code_quantum_information_bound": 3,
+    "complete_quantum_joint_quadratic_bound": 3,
+    "exact_noncommuting_conditional_spectra": 1,
+    "explicit_code_entropy_band": 9,
+    "finite_code_contrast_bound": 5,
+    "literal_minimality_not_entropy_semantics": 1,
+    "normalized_work_debt_not_improved": 2,
+    "retained_flag_source_identity": 2,
+    "same_classical_law_noncommuting_control": 1
+  },
+  "coherent_rare_negative_control": [
+    {
+      "positive_work_to_entropy_slope": 0.4764269385092498,
+      "q": 0.01
+    },
+    {
+      "positive_work_to_entropy_slope": 2.525824399835853,
+      "q": 0.0001
+    },
+    {
+      "positive_work_to_entropy_slope": 126.91941073726822,
+      "q": 1e-08
+    }
+  ],
+  "exact_codec": [
+    {
+      "M": 1,
+      "codes": 2,
+      "max_cost": 2,
+      "mean_cost_at_one_third": "2"
+    },
+    {
+      "M": 2,
+      "codes": 4,
+      "max_cost": 5,
+      "mean_cost_at_one_third": "35/9"
+    },
+    {
+      "M": 3,
+      "codes": 8,
+      "max_cost": 7,
+      "mean_cost_at_one_third": "6"
+    },
+    {
+      "M": 4,
+      "codes": 16,
+      "max_cost": 9,
+      "mean_cost_at_one_third": "604/81"
+    },
+    {
+      "M": 5,
+      "codes": 32,
+      "max_cost": 11,
+      "mean_cost_at_one_third": "85/9"
+    },
+    {
+      "M": 6,
+      "codes": 64,
+      "max_cost": 12,
+      "mean_cost_at_one_third": "7885/729"
+    },
+    {
+      "M": 7,
+      "codes": 128,
+      "max_cost": 14,
+      "mean_cost_at_one_third": "8699/729"
+    },
+    {
+      "M": 8,
+      "codes": 256,
+      "max_cost": 16,
+      "mean_cost_at_one_third": "93398/6561"
+    },
+    {
+      "M": 9,
+      "codes": 512,
+      "max_cost": 17,
+      "mean_cost_at_one_third": "46/3"
+    }
+  ],
+  "finite_contrasts": [
+    {
+      "M": 8,
+      "absolute_error": 0.085849983181574,
+      "code_source_per_report": 2.197654691888029,
+      "entropy_source_per_report": 2.283504675069603,
+      "proved_bound": 53.53764785736599
+    },
+    {
+      "M": 32,
+      "absolute_error": 0.09337028393984204,
+      "code_source_per_report": 2.190134391129761,
+      "entropy_source_per_report": 2.283504675069603,
+      "proved_bound": 17.603197864816988
+    },
+    {
+      "M": 128,
+      "absolute_error": 0.004357345693495329,
+      "code_source_per_report": 2.2791473293761078,
+      "entropy_source_per_report": 2.283504675069603,
+      "proved_bound": 5.507465858265525
+    },
+    {
+      "M": 512,
+      "absolute_error": 0.000714011963132144,
+      "code_source_per_report": 2.282790663106471,
+      "entropy_source_per_report": 2.283504675069603,
+      "proved_bound": 1.657015197143382
+    },
+    {
+      "M": 2048,
+      "absolute_error": 0.0010113683150403396,
+      "code_source_per_report": 2.2824933067545627,
+      "entropy_source_per_report": 2.283504675069603,
+      "proved_bound": 0.4845125839299555
+    }
+  ],
+  "native_codec_work_bound_proved": false,
+  "noncommuting_same_record_law": {
+    "conditional_eigenvalues": [
+      0.3260073636615618,
+      0.6739926363384382
+    ],
+    "probabilities": [
+      0.24999999999999994,
+      0.24999999999999994,
+      0.24999999999999994,
+      0.24999999999999994
+    ],
+    "quantum_information_deficit": 0.12849267431360234
+  },
+  "physical_info_identified": false,
+  "quantum_diagnostics": [
+    {
+      "classical_record_entropy": 5.291629743902949,
+      "combined_relative_entropy_debt": 7.111974238682706e-05,
+      "complete_cq_information": 5.2916297439029485,
+      "input_rank": 1,
+      "proved_bound": 0.05984890333156879
+    },
+    {
+      "classical_record_entropy": 5.29162974390295,
+      "combined_relative_entropy_debt": 0.016052736237143428,
+      "complete_cq_information": 5.275648127408193,
+      "input_rank": 4,
+      "proved_bound": 0.05984890333156879
+    },
+    {
+      "classical_record_entropy": 5.34158224232386,
+      "combined_relative_entropy_debt": 0.007335488012687463,
+      "complete_cq_information": 5.3415822423238595,
+      "input_rank": 2,
+      "proved_bound": 0.05984890333156879
+    }
+  ],
+  "retained_herald": [
+    {
+      "complete_cost_derivative": "1/4",
+      "complete_parsed_mean_cost": "7/3",
+      "cost_to_full_info_source_ratio": 0.6942419136306174,
+      "epsilon": "1/4",
+      "full_info_derivative": 0.3601050226031391,
+      "full_probabilities": [
+        "3/4",
+        "1/6",
+        "1/12"
+      ],
+      "marginal_info_derivative": 1.2457587012233982
+    },
+    {
+      "complete_cost_derivative": "1/16",
+      "complete_parsed_mean_cost": "25/12",
+      "cost_to_full_info_source_ratio": 0.6942419136306174,
+      "epsilon": "1/16",
+      "full_info_derivative": 0.09002625565078477,
+      "full_probabilities": [
+        "15/16",
+        "1/24",
+        "1/48"
+      ],
+      "marginal_info_derivative": 0.50005883599613
+    }
+  ],
+  "scope": "Exact finite codec checks; analytic general proofs; floating quantum diagnostics only. Existing code-class owner reused. No physical native codec cost or Book Info identification."
+}
+```
+
+Independent mathematical review accepted the bounded statement at proof-text SHA256
+`6d1127da9833637fcf7437779b18252134c31d83379b0d703d98462cec5b54f7`.
+Its independent warnings-as-errors replay reproduced the receipt byte-for-byte,
+SHA256 `158324dc279aa5dcbb0e6b3854226caa51f3c6be82d5e098d1a2db1261562886`.
+The separately reviewed physical scope preserves actual decoder/Info/cost
+binding and GR_closed=false. These are supporting-proof reviews, not
+assembly acceptance or physical C acceptance.
+
 ## 8. Reproduction
 
 Run from this directory:

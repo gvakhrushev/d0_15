@@ -23049,3 +23049,55 @@ Incoming 7757f0192 is preserved. Its sharp entropy-cone result retains
 the physical binding hypotheses (ES6); its inherited references to a
 §7fs C closure are superseded by PRIMARY §7fu, without changing that
 separate sharp-history proof or identifying its carrier with §7fq.
+
+
+## 2026-11-06 checkpoint: complete-record code/CQ transport and retained-herald source test
+
+Input 31047f3156134fb75bc580ae9320487950bd73f9; same Draft #334 and
+native-programme-v1. Phase: native information realization / final
+composition. Consumer: physical binding C of the unchanged scoped contract.
+Write surface remains this brief and the existing primary source.
+
+Primary section 7fv reuses the existing complete-code-class source theorem
+and BCPR13/ES10. Its added joint relative-entropy estimate applies to
+adaptive efficient binary instruments without a common commuting CODE
+ensemble. It bounds classical-law and complete quantum-information debts
+together, including arbitrary retained quantum banks and singular inputs.
+An explicit integer Fibonacci type/rank codec and the old injective
+competitive-code condition give a finite-comparison description/CQ bound.
+The physical gain, full basis reconstruction factor and actual right-lift
+remain in the normalized bound; no native resource schedule is inferred
+from a scalar convergence statement.
+
+The exact noncommuting control has four equiprobable records but conditional
+quantum eigenvalues (16 plus or minus sqrt(31))/32, so the classical record
+entropy cannot replace complete CQ information away from scalar effects.
+The codec describes only classical labels and does not erase, measure or
+reprice the retained quantum bank. It does not refund original report cost.
+
+A second exact result rules out retained-herald thinning as an automatic
+source improvement: with an actually registered CQ flag, fixed epsilon,
+neutral overhead and an actual branch-additive ledger, both useful gain
+and active work defect scale by epsilon. The normalized work defect and
+its physical right-lift norm are unchanged. The noisy ES6 mean/amplitude
+component signs therefore remain opposite; a rare marginal click cannot
+be used to identify the noisy and sharp histories. Coherent unmeasured
+flags and unrelated spectral/clock prices are outside that direct-sum
+argument and retain their actual operands.
+
+Verification: all 1022 record codes at M=1,...,9 decode exactly and are
+prefix-free; finite code contrasts through M=2048 and adaptive quantum
+rank-1/2/4 fixtures satisfy the displayed bounds. Integer/Fraction codec
+checks are exact; quantum/entropy numbers are diagnostics of the analytic
+proof. Independent mathematical review and warnings-as-errors replay
+accepted the bounded packet and reproduced the embedded receipt. Separate
+semantic review preserves the original physical boundary.
+
+No proof that physical vertex Info equals this description statistic,
+no native codec work/price intertwiner, and no actual Cost-Info weighted
+continuation map are supplied. The useful next application is equation
+FV7 or the actual full-current CP13/CD13 transport, not another geometry,
+code-universality or rare-event census. This is supporting mathematics
+and a precise route exclusion, not physical C acceptance.
+SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED is not established; GR_closed=false.
+No lifecycle, assembly, raw216 or shared-entry status change.
