@@ -177806,3 +177806,776 @@ print(json.dumps(result,ensure_ascii=False,sort_keys=True,separators=(',',':')))
 <!-- END VCP INTEGRATOR RUN RECEIPT -->
 
 Final targeted structural verification: the unmodified pinned task-brief validator passes for this changed brief; assembly metadata is unchanged, both existing file prefixes are preserved byte-for-byte, and appended lines pass whitespace and conflict-marker checks. Embedded checker, result and integrator receipt match the reviewed files. Full repository work, agent and assembly guards were not rerun in this partial snapshot; no unchanged mathematical or Lean suite was replayed.
+
+## Same-execution synthesis: full retained-history source and native amplitude weights
+
+5 November 2026. Existing Draft #334; native realization / final composition.
+Scientific input 90e5dd4fe8766577ae13f4a800162bd6fed31401; publication base
+6a4624c5a644d6022c069d112dd883084713fa27. Incoming FD/VCP results are
+preserved and VCP5--VCP10 are consumed by P12--P16 below.
+The first application removes
+the old cold-return/factorization and polar-optimization premises from a
+FIXED-POSITIVE-INFO full source realization and extends it to the incoming
+VCP cone wherever c_P>0, retaining a genuinely fixed earlier ledger.
+The second computes the actual
+native amplitude side of the remaining Book comparison. They are different
+valuation interfaces: neither supplies an unproved equality between the
+physical Cost--Info mean and an amplitude pressure. The original bare H+J
+route and all prior physical-selection boundaries remain unchanged.
+
+## BCPR: one complete source limit from exact serial support and positive Info
+
+5 November 2026. Bounded application inside existing PR334. Input `90e5dd4fe8766577ae13f4a800162bd6fed31401`. Existing owner; no new task or physical-price selection.
+
+### Conclusion and exact scope
+
+For the specified valuation
+
+    B_lambda = H_clock + J - lambda I_complete,   lambda>0 FIXED,
+
+one actual retained-history sequence has its complete admitted normalized source converging to the owned all42 Einstein–two-CAR source. This includes both independent loader legs, the declared faithful apparatus, paid clock padding and an arbitrary fixed earlier prefix in the same INTERNAL clock domain. The J and H estimates cover every independently varied native occurrence. The Info conclusion uses the stated CODE/effect-preserving fibre and the actual source-bearing field map, not arbitrary effect-changing gates.
+
+The new substitution does not require a nonzero old cold return, a global optimum after arbitrary old A, every-competitor cut factorization, or polar-recovery accuracy. Exact retained SER validity makes the entire J source small; positive complete quantum Info carries the field source. All clock stages remain paid and enter one joint length choice.
+
+The physical law selecting THIS complete valuation remains a premise. This is not derivation of physical Cost, primitive weighted continuation, an amplitude/mean-action identity or full physical GR closure. A fixed lambda=1/log(phi) is covered if the actual law uses phi information units; no tunable lambda is introduced.
+
+### Inputs and the admitted current map
+
+At the input head, the primary file is `02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`.
+
+- SER1–SER9, lines 172615–172785: actual sharp event, serial cursor/tail, all four current slots, A_pre R_diag=I, and the original physical source/right lift.
+- G1–G10, lines 173751–173925: complete unknown input, born overlaps mu=(p^2,p^4), retained fine labels and sequential fresh records.
+- NR1, around 174148: P0 fixes ONLY fresh processor WORK and is identity on the complete unknown old input; the literal sign correction restores every unknown SourceI-port/Spin column. NR4's false-tail correction, lines 174294–174305, is exactly identity on r=1, never changes r or targets cursor, and preserves true tail0 at the final boundary.
+- RCP9–RCP19, lines 174754–174966: full mixed-input CQ information, joint CODE-conditioned effects, positive derivative weights and the dimension-free near-scalar bound.
+- BCPR1–BCPR19, lines 175240–175596: actual born CODE, known paid loader/unloader, compressed POVM, common-field constructor and real nonlinear remainder.
+- GROWING_CLOCK_RU.md G9–G14 in `sources/d0_retained_response_concentration_2026-10-28`: genuine earliest cut, whole-history isometry and complete growing-clock heat.
+- CL1–CL12, primary lines 165426–165612: paid identity pairs, whole occurrence norm and full unequal-fibre heat. FN/GH common-slot compiler/padding transports are retained when forming native comparison catalogues.
+
+Fix the complete old prefix. Its actual terminal arena H_o includes the active SourceI apparatus, every old record and any unknown/reference correlations. Current CODE loading, processing and unloading use the supplied ALL-input interface on H_o; the physical determinant remains on the original earliest rank r. A mere prepared-column theorem would not supply this map.
+
+Require every current operation to preserve the OLD retained record algebra exactly: leaving old record wires untouched suffices; control-only use is allowed. This is stronger than approximate old return or preservation of some sealed factors. The fresh-resource construction supplies this restriction, while the one active SourceI port remains live under its real routing rule. An arbitrary loader E that rotates old record labels is outside this application.
+
+The actual CODE-preserving current effects are scalar within CODE blocks. For M fresh reports,
+
+    E_(b,j)=sum_theta q_(theta,j,b) Pi_theta,
+    E_omega=sum_theta [product_j q_(theta,j,b_j)] Pi_theta.
+
+The joint product identity needs no exact restoration of DATA: each Kraus map intertwines CODE, so K_1* E_2 K_1=E_2 K_1*K_1, and induction applies. Conditional DATA backaction and retained recovery leakage do not change that identity. The paid loader/unloader gives the actual compressed POVM M_theta=E*Pi_theta E; sum M_theta=I. Unknown CODE is not measured or cloned.
+
+All source-bearing controls use the existing common-field map and its real calibration/right lift. Current implementation controls that preserve BOTH the specified effects AND the same common CODE PVM have EXACT zero Info derivative. Fixed effects alone do not prevent a changed CODE backaction from changing later effects. Additional effect-changing faults or independently writable branch fields are not silently included in that faithful fibre; their own source/reaction remains.
+
+### 1. Exact whole-history suppression of J from the actual code
+
+For each fresh serial triple put
+
+    P_valid,j = |0><0|_r tensor |0><0|_cursor tensor I_tail
+              + |1><1|_r tensor |0><0|_cursor tensor |0><0|_tail,
+    P_valid = product_j P_valid,j,
+    rho_f = sqrt(p^2+p^4) < 1.
+
+The actual serializer finishes inside this space. NR's optional supported recovery also preserves it exactly: its failed vectors stay in processor/helper complements; only the false tail may move. Current loaders act on a disjoint arena, later blocks preserve prior records, and final padding is record-disjoint. Thus for the ENTIRE actual history isometry V_total and the true canonical initial embedding J_born,
+
+    P_valid V_total = V_total,
+    J_born* P_valid J_born = (p^2+p^4)^M I_true,
+    C_total = J_born* V_total,
+    ||C_total|| <= rho_f^M.                              (P1)
+
+The middle identity factors only the NEW canonical born triples. The old prefix is arbitrary and contributes identity. The born mass p^2 of false code and p^4 of true code is exactly G8. Invalid born sectors are retained in the physical clock; there is no postselection. P1 is valid at every native precision and without a polar optimum.
+
+For a=1-z>0,
+
+    J=-Tr log(aI+z C*C),
+    |DJ[v]| <= (2zr/a) ||C|| ||DC[v]||.                 (P2)
+
+At fixed canonical births/cut, product differentiation of the actual stages gives ||DC[v]||<=N_total ||v||_gate-max. It covers leaked born complements and independent old/current/recovery/padding variations. No factorization of their varied corners is assumed. Actual finite source/right-lift constants are retained in the other owned norms.
+
+There is an equally direct native finite-comparison bound:
+
+    0 <= -r log(a)-J(C)
+      = Tr log[I+(z/a) C*C] <= (zr/a) rho_f^(2M).       (P3)
+
+Two actual valid words of the same true rank therefore differ in J by at most the right side. Divide by the actual 2|t| and source gain. No smooth native interpolation is assumed.
+
+### 2. Complete quantum Info supplies the positive all42 source
+
+Fix the actual collar 0<q_min<=q_theta,j<=q_max<1/2 and define
+
+    ell_min=log((1-q_max)/q_max)>0,
+    ell_max=log((1-q_min)/q_min).
+
+BCPR6–7 supplies on the owned regular common-field chart
+
+    q_theta,j = q_j*(Y)+r_theta,j,
+    q_j*(Y)=q0,j+g_j I_h(Y),
+    |r_theta,j|+||Dr_theta,j||<=C_reg g_j nu.           (P4)
+
+For one fixed reporter core with its finite CODE palette repeated M times, let g>0 be its slope per report and L=Mg. If a fixed cycle has several reports, M denotes the TOTAL report count and g is the average slope per report; choose whole cycles. The constants absorb that fixed cycle size. The original joint quantum derivative gives
+
+    Gamma_I=sum_(theta,j) u_theta,j g_j,
+    ell_min L <= Gamma_I <= ell_max L.                (P5)
+
+This is valid for arbitrary mixed/entangled input and the actual noncommuting compressed POVM. Positive normalized block weights sum to one, so the max norm on independent repeated blocks incurs no extra M factor in the geometric/reporter error.
+
+At the scalar-effect ideal, the old/new archive chain rule is
+
+    I_complete=I_old+sum_j h(q_j*).                    (P6)
+
+At the actual nonlinear effects, condition on every old record and apply RCP15 to its true conditional state. Exact preservation of the old record algebra makes this legitimate. Since that estimate is uniform over state and rank, averaging gives
+
+    |(I_complete-I_old)-sum_j h(q_j*)|
+             <=C_reg ell_max L nu.                 (P7)
+
+No number of old records or dimension of DATA multiplies this bound. In particular forward-loader, CODE-basis and input-state finite comparisons have normalized residual <=C nu/|t|, with their real finite basis/lift constants. The backward loader is a record-disjoint output unitary and is exactly Info-neutral. Both legs are independently varied; they are not tied before differentiation. Rank-changing inputs use P7 at both endpoints, not an assumed entropy derivative at a zero eigenvalue.
+
+One may normalize by the known reference Gamma_I,*=sum_j g_j h'(q_j*). Applying RCP12's log-monotonic proof to each tight interval [q_j*-delta_j,q_j*+delta_j], delta_j=max_theta|r_theta,j|, gives
+
+    |Gamma_I-Gamma_I,*| <= C_collar sum_j g_j delta_j.
+
+Their relative difference is O(max delta_j), uniformly in M and input rank. Large-M learning of CODE does not spoil this per-event conditional bound. An exact state measurement is not required to choose the error schedule.
+
+For a fixed old prefix with genuine Info source bound B_old,I,
+
+    ||D I_old||/Gamma_I <= B_old,I/(ell_min M g).       (P8)
+
+For native/rank-changing comparisons use their finite contrast bound instead. The finite old alphabet has a finite entropy bound; actual nonzero steps and the fixed old basis give a finite B_old,I. This is not a claim of unrestricted C1 differentiability through arbitrary support births.
+
+### 3. A single joint diagonal choice with no hidden padding debt
+
+At stage n, fix the real preceding prefix and target tau_n->0.
+
+1. Fix the parent mesh/regular chart, finite palette, actual loader and old-record-preserving interface, original source/right-lift norms and marked tests. Fix the finite per-core comparison catalogue and its nonzero field/loader/old chords. Use the owned geometric convergence. Choose nu_n so P4/P7's normalized reporter and preparation errors, including the real basis constants and 1/|t|, are <=tau_n. Compile that finite core, compute its actual positive g_n and collar, and KEEP this core fixed while M is increased. The original nu=epsilon+delta^2 and g proportional to delta epsilon is allowed. There is no requirement Lnu<<1 in this positive-Info route.
+
+2. Repeat that core M times with fresh record triples, preserving all old record wires. Polar recovery is NOT needed for this price-source argument. Without it the actual pre-padding count obeys N_b<=C_n M, including the fixed old prefix, both loader legs, literal inverses, any required finite compiler/controller prefix, marks and helpers. Only the actual emitted word is counted as such; a physically executed additional compiler must have its own actual cost/count bound.
+
+3. For a finite +/- catalogue FIRST equalize the literal lengths in each matched birth-free slot using the owned exact identity-word padding. This fixes a common birth/mark layout and one common N_b (at least the maximal actual count), before invoking CL10. Per-core equalization has a fixed finite overhead and keeps N_b=O_n(M). Do not pad each complete word to its own different length and then claim equal heat carriers.
+
+4. Append exactly m=N_b literal CX;CX pairs before the actual closing gate, on admitted record-disjoint live helpers. Any needed spectator births were already included in the core. Then
+
+       N_total=3N_b=O_n(M),  L_clock>=1+2N_b.
+
+   Every independently admitted padding occurrence is included in the J and H gate-max bounds. The selected endpoint, valid support, Info and its gain are unchanged.
+
+5. Put Gamma_lambda=lambda Gamma_I>=lambda ell_min M g. P1–P2 imply
+
+       ||DJ||/Gamma_lambda <=K_n rho_f^M/g ->0.      (P9)
+
+   The full growing-clock CL12, with x=2/55, gives
+
+       A_l<=C_CL x^l/l!,
+       C_CL=(176/359)/[(1-x^2)(1-x)],
+       ||DH||/Gamma_lambda
+         <=3 C_CL N_b x^(2N_b)/(lambda ell_min M g) ->0. (P10)
+
+   Actual norm/lift factors multiply the fixed stage-n constants. CL includes all 425D modes and the 359D denominator; no dimension term was dropped. For N_b>=M, n x^(2n) decreases, so this is bounded by a fixed multiple of x^(2M)/g. P3/CL10 give the actual finite-contrast counterparts. For the repeated fixed-core local catalogue the number of occurrence axes/basis factor is at most O_n(M), which is still dominated by both exponential bounds; all actual chords remain in the estimate.
+
+6. Increase M_n until P8–P10 and the finite-contrast budgets are <=tau_n. All coefficients are positive, finite and already fixed, so an effective finite search terminates. Append that concrete word to the history and retain its whole archive as the next stage's fixed prefix. The next stage chooses its own larger M only after accounting for that real prefix.
+
+If the additional BCPR polar-optimum approximation is desired, retain the existing local native recovery and choose k=floor(sqrt M). Its literal count is N_b<=C_n M5^k (polynomial-in-k additions absorbed). Again choose m=N_b, so N_total=3N_b. Exact validity P1 still holds, and P9 becomes O_n(rho_f^M 5^sqrt(M)/g)->0. CL is smaller still. NR's N e debt is O_n(M(5/12)^sqrt(M))->0. This OPTIONAL cofinal recovery preserves the price limit, but is not used to prove it.
+
+The ordinary source bound covers all independent occurrences in the stated gate-max domain. Native finite-source statements refer to the owned fixed finite per-core comparison construction and its retained norm transport, not to arbitrary unpriced global-unitary compilations of increasing dimension or differentiation of native word indices.
+
+### Parent substitution and retained premises
+
+For the actual unnormalized full covector L_n and owned pullback A_n,
+
+    || -L_n(B_lambda)/Gamma_lambda,n
+                         -A_n* D I_ES ||_full,* ->0.       (P11)
+
+Its errors are the geometric/marked-source errors, P4/P7, old Info P8, whole J P9 and whole heat P10. A_n R_diag=I with the original calibration bounds retains all16 coframe,24 proper-Lorentz and2 matter directions. The existing all42 source soundness and nonvacuum recovery owner can therefore consume this selected-price realization at its original hypotheses.
+
+What remains physical, rather than proved here:
+
+- Selection of the complete valuation H+J-lambda I_complete with fixed lambda>0, the actual CQ convention, primitive weights and any additional work. No free coefficient variation is erased. With lambda=0 the argument has no positive Info gain and the earlier bare-master old-cut/normalization premises remain.
+- The genuine all-input CODE/scalar-effect interface, truthful serial marks, old-record nondemolition, known paid source-port-safe loader and all exact support constraints. These are stated task relations, not conclusions from approximate return or a desired Einstein field.
+- The actual admitted domain: common-field constructor, faithful implementation fibre and owned source-bearing inputs. Additional independent effect-changing fields, untransported future readers or free banks retain their rows.
+- Fixed canonical birth/closure construction and INTERNAL scene,beta,z within each comparison. Varying temperature, scene, birth maps, rank or extra physical work requires their real sources.
+- The original metric/readout/right-lift, regularity and physical refinement/recovery hypotheses. General complete Cost-Info selection and GR closure are not asserted.
+
+A positive Info term cannot be suppressed after normalization by the old Gamma_J: ideally Gamma_J decays like rho_f^(2M)L whereas Gamma_I grows like L. The appropriate fixed-positive-Info normalization instead carries the same all42 equation class and suppresses the entire old/current feedback and thermal covectors without apparatus optimization.
+
+
+### Application to the incoming VCP cone (remote 6a4624c5)
+
+Consume the SAME primary artifact at remote `6a4624c5a644d6022c069d112dd883084713fa27`, VCP5–VCP9. This is its next parent-source application, not a repetition of its code/CQ identity or positivity proof. The exact validity bound P1 also consumes VCP2's actual born mass `sum mu_omega=(p^2+p^4)^M`.
+
+For every FIXED pair `c_J>=0, c_P>0`, keep the incoming valuation
+
+    S_cone=c_J(H_actual+J_actual)+c_P P_code,
+    P_code=C_code-I_rec/ell, ell=log(phi).
+
+Here C_code is exactly the parsed Golden 0/10 registration charge of VCP1–4. It is not total primitive work. Preserve VCP5's actual collar and weights
+
+    a_theta,j=u_theta,j/ell-r_theta,
+    d_min r_theta<=a_theta,j<=d_max r_theta,
+    Gamma_P=sum_theta,j g_j a_theta,j>=d_min M g>0.  (P12)
+
+The common-right-lift composition is precisely VCP9 with these positive weights. Use the actual normalization `Gamma_+=c_P Gamma_P`; a master optimum or a value for Gamma_J is unnecessary. The whole actual H+J covector, rather than just a thermal remainder at the polar section, is bounded by P9–P10:
+
+    c_J ||DJ||/Gamma_+ <=(c_J/c_P) K_cone,n rho_f^M/g ->0,
+    c_J ||DH||/Gamma_+ <=(c_J/c_P)
+        3 C_CL N_b x^(2N_b)/(d_min M g) ->0.         (P13)
+
+Here K_cone,n is a new stage-n constant independent of c_J,c_P and the
+previous lambda: take (2zr/a)C_n/d_min times the actual norm transport.
+It is not the lambda-dependent constant in P9.
+
+Use the same no-recovery common-slot construction `N_b=O_n(M), m=N_b`. The actual output support, quantum effects and code length are unchanged by record-disjoint padding. For every fixed coefficient ratio the joint finite M search terminates. This does not claim uniformity as c_P approaches the pure-master axis with uncontrolled c_J/c_P.
+
+To retain an actual old ledger, suppose its already incurred charge C_old is supplied, in the same declared ledger units, with a finite source/comparison bound. Price the whole retained archive as
+
+    S_hist=c_J(H+J)
+             +c_P[C_old+C_code,new-I_complete/ell].
+
+Old-record nondemolition and the actual CQ chain rule give the EXACT decomposition
+
+    S_hist=c_J(H+J)+c_P[P_old+P_new_cond],
+    P_old=C_old-I_old/ell,
+    P_new_cond=C_code,new-(I_complete-I_old)/ell.      (P14)
+
+P_new_cond is the average of VCP's current code/CQ component over the actual old conditional states. Its common-field scalar comparator is the SAME sum `sum_j[1+q_j*-h(q_j*)/ell]`. Applying VCP8 before averaging gives
+
+    |P_new_cond-sum_j[1+q_j*-h(q_j*)/ell]|
+                         <=C_reg d_max M g nu.      (P15)
+
+Thus the normalized loader/basis/input finite-source error is exactly the inherited `C_reg(d_max/d_min)nu/|t|`, with the actual basis/right-lift constants. The averaged VCP5 weights still sum to one in r_theta, so P12 and VCP9's right lift survive unknown mixed old conditional states. No old record is treated as an independent new measurement and no old input entropy is subtracted twice.
+
+Let `B_old=||D P_old||` in the genuine old norm, or its actual finite-contrast counterpart. Then
+
+    c_P ||D P_old||/Gamma_+<=B_old/(d_min M g)->0.    (P16)
+
+This includes any arbitrary but already FIXED earlier retained charge C_old for which the finite bound is supplied. It must be independent of the appended duration and word. Ongoing storage or any new per-repeat work is not a fixed old ledger and is not suppressed by this argument. More generally one may add any supplied fixed weighted L_old directly to the cone; its retained estimate is ||D L_old||/(c_P d_min M g). The next diagonal stage fixes the entire newly completed prefix and its real ledger before choosing its next M.
+
+Consequently P11 extends to this incoming cone with `Gamma_+` and the inherited `A_P`/common right lift. Unlike the earlier VCP9 application, this proof needs neither polar recovery nor an arbitrary-old-A optimum, nonzero old return, every-competitor cold-cut factorization, or tiny-Gamma_J precision. It still requires the exact history-retention map, common CODE-PVM plus fixed-effect faithful fibre, and genuine source-bearing Dq map specified above. Those conditions are not replaced by small return. The pure J axis c_P=0 remains under its earlier owner and is NOT upgraded.
+
+No identification `C_code=physical work` has been made. Selection of the cone as the full physical price, any additional current work/reference source, and independently varying c_J,c_P retain VCP10's exact residual and coefficient terms. This is a complete-source realization for the declared positive cone, not physical Cost-Info selection or GR closure.
+
+
+## Actual native amplitude representation and terminal-source substitution
+
+5 November 2026. Bounded positive application in existing #334.
+Input 90e5dd4fe8766577ae13f4a800162bd6fed31401 (published BCPR).
+This is an amplitude-representation substitution, not an
+assignment of vertex Info or a new physical tariff.
+
+### A. Exact represented-amplitude substitution and its boundary
+
+For the already admitted native G/CX/SourceI execution, the numerical
+amplitude coefficients of every primitive are already given. An explicit
+amplitude representation of this word needs no second multiplier attached
+to its native Kraus operators. Multiplying by the SAME amplitude coefficients
+again would double-count them. A separately specified physical Cost/Info
+weight is a DIFFERENT operand and is not excluded by this observation.
+
+The concrete representation below has the finite coherent path-sum form
+of Book03 and represents the actual complete native word. It proves the
+primitive/composition diagram for THIS representation and all its actual
+suffixes. It does not identify that representation's logarithmic exponents
+with the original physical S_Book=sum Cost-sum Info. In particular the
+existing physical WT/PW9 map sum phi^(-Cost) A^* H A is not established equal
+to the native map by extracting exponents from native entries. Its physical
+weight-identification premise is not discharged here.
+
+This statement does NOT assert that minimum test-code length, accumulated
+physical work, conditional CQ gain and NET amplitude exponent are the same
+quantity. Nor does it identify the mean of Cost-Info with an amplitude
+pressure. Those distinctions are not needed to construct this amplitude
+diagram, and remain necessary for any separate mean-price application.
+
+### B. Direct original evidence
+
+Book03 section 03.3.0, lines 140-160, uses
+
+    Z_D(k)=sum_gamma phi^(-S_gamma) [q(gamma)].
+
+Section 03.10(c), lines 450-457, explicitly specifies a sum over alternative
+paths with products of phi-exponents and their ordered holonomy/memory
+classes, and squares only at readout. Thus a coherent path expansion does
+not require measuring every internal path or appending a classical record
+of all intermediate configurations.
+
+Section 03.26 gives the actual Golden gate
+
+    G=[[sqrt(p),-p],[p,sqrt(p)]], p=phi^(-1), p+p^2=1.
+
+The unchanged native_execution.py fixes exactly this G_LOCAL,
+SOURCE_I_LOCAL=diag(I4,L_i), and the addressed basis-CX. Its support
+validation forbids individual G/CX access to source_spin and any operation
+on sealed oldRIGHT. Its inverse_word supplies the real expanded inverse.
+
+The p,p^2 binary weights in Book03 03.10(b) and the sqrt(p),p transition
+amplitudes of 03.26 must retain their Born factor of two. No literal
+one/two-letter probability charge is inserted a second time as an
+amplitude multiplier.
+
+Book03 03.1 also explicitly warns that the quaternion representation is
+faithful on Q8 group elements, not on the whole group algebra:
+L_1+L_(-1)=0. That representation boundary is kept below.
+
+### C. Operational path alphabet and primitive table
+
+Fix ONE actual finite native word, its addressed WORK wires, canonical
+birth schedule, physical source port/Spin frame and retained output
+registers. Its instructions and addresses are those of the supplied
+recorded programme. Every macro, controller, inverse, arithmetic operation,
+recovery and padding interval is expanded into the actual primitive list.
+
+Use computational WORK configurations x as path vertices. Do not project or
+measure the four Spin coordinates. Spin stays an opaque operator factor.
+On the source-I profile, every nonzero WORK block of a primitive has form
+
+    g_j[y,x]=p^(s_e) U_e,
+
+where U_e is a signed quaternion operator (in this profile the subgroup
+generated by L_i) and s_e is given by the following exact table:
+
+    instruction / local transition       s_e       U_e
+    G: 0 -> 0 or 1 -> 1                  1/2        I
+    G: 0 -> 1                            1          I
+    G: 1 -> 0                            1         -I
+    CX: its specified reversible map     0          I
+    SourceI, source port 0               0          I
+    SourceI, source port 1               0          L_i
+    canonical golden birth, new bit 0    1/2        I
+    canonical golden birth, new bit 1     1          I
+
+All other blocks are zero and are absent edges, not infinite-cost events
+silently kept with positive weight. The central minus sign is memory
+phase, not a negative probability. Products retain chronological operator
+order. The table covers the actual i-subgroup of Q8; it does not add new
+j/k source primitives.
+
+If a specific execution uses computational-zero birth coordinates, use
+its actual zero-embedding and its paid born-frame conversion. Do not count
+the raw golden birth and that coordinate description twice. At rectangular
+birth steps the same table is interpreted as a rectangular block map.
+
+The s_e are NET AMPLITUDE exponents, determined by
+s_e=-log_phi |g_j[y,x]| in the specified actual block representation.
+A zero exponent on a deterministic CX/SourceI block does not say that its
+execution has zero physical Cost. Its stage, work and clock are retained.
+Likewise half-integer s_e is not asserted to equal an integer test-code
+description length.
+
+### D. Exact path-sum representation, with no classical pinching
+
+For a compatible WORK path gamma=(x0,...,xN), define
+
+    S_amp(gamma)=sum_(e in gamma) s_e,
+    U_gamma=U_(N-1) ... U_0.
+
+Then block multiplication proves, exactly,
+
+    (g_(N-1)...g_0)[xN,x0]
+       =sum_(gamma:x0->xN) p^(S_amp(gamma)) U_gamma.       (AMP1)
+
+Actual rectangular births are included at their true chronological
+positions. The same identity holds for every prefix and every suffix.
+
+Equivalently form the stagewise matrix-unit path algebra with Q8-valued
+memory factors and its actual representation
+
+    pi(|y><x| tensor [q])=|y><x| tensor L_q.
+
+The primitive Book amplitude is the sum of the table's
+p^(s_e)|y><x| tensor [q_e]. Its representation is EXACTLY g_j.
+The represented complete Book amplitude is therefore the actual native
+word, with no additional normalization or scalar tariff.
+
+This is a direct finite representation with Book03's multiplicative
+amplitude form. It fixes S_amp for the actual represented word. The equation
+S_amp=S_Book is a separate physical identification when S_Book is defined
+through the original Cost/Info ledger. Neither the two allocations nor that
+identification is derived by AMP1; they are not needed to prove AMP1 itself.
+
+The formal path labels are alternative coherent contributions. They are
+NOT thereby additional physical classical records. Existing output/cursor/
+tail/compiler records remain exactly the actual ones. Cross terms between
+unmeasured paths remain in every quadratic response.
+
+The representation pi may have a kernel on the formal Q[Q8] memory algebra.
+AMP1 claims equality in the ALREADY ADMITTED physical Spin representation,
+not faithfulness on every abstract formal memory sum or a reduction of all
+Book memory to four coordinates. Any broader physical regular-memory
+carrier and its additional observable modes require their existing
+representation/terminal map. None is discarded from an asserted heat trace.
+
+### E. Weighted continuation and its complete terminal effect
+
+Let V be the actual complete initialized map of the known word, including
+all births, so V^*V=I on the true initial H0. Let chi be an actual declared
+terminal effect, including any real paid suffix by backward propagation.
+
+For a coherent primitive, the represented amplitude continuation is
+
+    H -> g_j^* H g_j.                                    (AMP2)
+
+All p-exponents in the primitive table are ALREADY inside g_j. In WT1 notation
+the representation with A_j=g_j has no further multiplier. This is not a
+claim that native Cost=0; it says where its NET AMPLITUDE coefficients have
+already entered.
+
+If instead one factors a primitive into unit-magnitude path blocks B_e,
+the exact map is
+
+    H -> sum_(e,f) p^(s_e+s_f) B_e^* H B_f.               (AMP3)
+
+The e != f terms cannot be dropped. A diagonal sum with weights p^(2s_e)
+is valid only at an actually recorded/decohered path cut or for a terminal
+which genuinely removes those cross terms. No new such cut is inserted.
+
+The explicit represented path amplitudes and native primitive matrices
+are identical. Consequently their coherent adjoint maps and matching terminal
+effects are identical. The corresponding REPRESENTATION defect vanishes:
+
+    Delta_j^rep=0, d_T^rep=0, delta_0^rep=0.              (AMP4)
+
+This uses the algebraic propagation identity of PW9/WT. It does NOT set the
+original physical Cost/Info-weighted Delta_j to zero. Those operands coincide
+only after the additional actual physical-weight identification is proved.
+
+For a nonfaithful representation, this is the diagram in the represented
+physical algebra; it is not an invertible relabelling of the entire formal
+path space. Actual FN stage gauges may then be applied with their existing
+birth/mark transport. A physically appended suffix is part of the word
+and carries its own primitive table, output test and clock.
+
+Thus THIS native amplitude representation has no unspecified numerical
+primitive coefficients. The original physical Book history/weight,
+terminal and aggregation binding retains its existing scope. The useful
+substitution is an explicit known amplitude operator and its terminal-source
+map, not a new dependency edge claiming the original weighted-price premise
+has been discharged.
+
+### F. The same word has distinct actual terminal responses
+
+The all-record terminal identity gives
+
+    V^* I_out V=I_H0.                                   (AMP5)
+
+Its absolute complete Born mass is one and its first source is zero.
+No loop response or feedback action is recovered by taking the log of that
+constant normalizer.
+
+For the actual canonical return embedding j_ret of H0 into the final
+arena, put P_born=j_ret j_ret^* and C=j_ret^* V. Then
+
+    V^* P_born V=C^*C,
+    V^*(I-P_born)V=I-C^*C.                              (AMP6)
+
+Both outcomes remain on the actual carrier. Choosing a terminal return
+effect is a comparison/readout of that same complete history; it does not
+erase its nonreturn amplitude or remove those modes from heat.
+
+The projector is the already specified born-return operand used by the
+original Book feedback. If a literal new measurement apparatus is executed,
+its known frame inverse, equality predicate, pointer and other stages must
+be added to the word and clock; AMP6 does not grant a free physical tester.
+
+On the exact BCPR COMMON-field scalar section, C=t(Y) I_r, t>0.
+The physical input rank r is unchanged by born CODE and helpers; a purely
+mathematical purifying reference does not automatically increase that rank.
+For every normalized input density the return probability is t^2. Define
+its amplitude pressure
+
+    A_ret=-(1/(2 log(phi))) log(t^2)=-log_phi t.          (AMP7)
+
+This is a terminal amplitude pressure, not the mean of microscopic path
+exponents or of separately supplied Cost-Info charges.
+
+For the original feedback, with a=1-z and the actual eta=z p^K if an owned
+paid retention tail is present,
+
+    J=-r log(a+eta t^2),
+    D J=[2r eta log(phi)t^2/(a+eta t^2)] D A_ret.         (AMP8)
+
+The multiplier is strictly positive for eta>0. At fixed a,eta this is an
+EXACT equality of all current field covectors. Since
+t=product_j f(q_j), f(q)=p sqrt(1-q)+p^2 sqrt(q),
+
+    D A_ret=-(1/log(phi)) sum_j [f'(q_j)/f(q_j)] Dq_j.    (AMP9)
+
+It consumes the existing nonscreened all42 pre-sign/Einstein source map.
+There is no fitted Einstein coefficient.
+
+Moving a, eta, duration, initial cut or scene retains its actual extra
+source. Native finite approximants use their actual C and BCPR's error
+budget; arbitrary off-shell finite words are not asserted to have exactly
+scalar C. A nonscalar born-compressed optimum does not automatically
+optimize this prepared scalar pressure for every rho.
+
+The full Book03.25 heat term is not omitted. It is computed from the actual
+entire clock/Hodge operator and retained by the already owned CL/CT bounds.
+AMP8 is the exact feedback-source bridge, not an identity between a
+prepared return experiment and the entire full-carrier thermal trace.
+
+### G. Source meaning, fixed q, and the precise remaining obligations
+
+AMP1--AMP4 are polynomial/matrix identities on the actual word and its
+specified primitive matrices. Differentiating a supplied smooth operator
+comparison preserves them with derivatives of ALL matrix entries. It is
+not legitimate to deform a native G infinitesimally while claiming its
+half-integer table remains fixed.
+
+The native alphabet itself is discrete. Actual finite +/- native
+comparisons satisfy AMP1 separately and exactly; their source germs and
+limits use the existing compilation, chord and full occurrence norms.
+No C1 family of integer word indices or uncharged analogue oracle is used.
+
+The scalar q_j determine the optimized cold feedback source on the common
+field graph. They do NOT determine every earlier readable compiler
+descriptor, the complete operator on unprepared columns, every extra
+terminal effect, or the full heat. Those data are already present in the
+actual word/terminal/clock maps and must be used, rather than replaced by
+fresh arbitrary cost symbols.
+
+For an ACTUAL suffix with terminal effect chi_s, the exact response is
+V^* chi_s V (or the identical backward product of the matrices in AMP2).
+Thus a consumer of this explicitly represented amplitude has no missing
+numerical primitive exponent. A consumer of the ORIGINAL physical weighted
+Book map still needs its actual relation to this operator. A supplied
+physical mean-work/CQ ledger can have additional rows; they are not removed
+or recast as known coefficients by AMP1.
+
+Proved substitutions available to a correctly typed amplitude consumer:
+1. the actual primitive coefficient table and complete native path sum;
+2. its represented coherent diagram and exact finite suffix composition;
+3. reconstruction of those amplitudes without assigning local Info;
+4. the feedback-source comparison on the scalar born-CODE section, by AMP8.
+
+These do not discharge the original physical WT weight premise. They supply
+the concrete native amplitude side of that comparison and change what must
+be compared: a second use of the same native amplitudes is not needed, while
+a separately claimed physical Cost/Info weighting must be identified honestly.
+
+Retained:
+1. the declared native source-port, task/reference, actual history/terminal
+   and broader Book representation admission;
+2. any separate claim that net amplitude exponents equal the required
+   physical mean Cost-Info ledger, or that CQ gain is selected Book Info;
+3. the Born factor of two and pressure-versus-mean distinction;
+4. selection of the terminal/return valuation, full Book03 master and
+   physical continuation/stationarity/refinement, at their existing scope;
+5. all actual independent clock/cut/scene/preparation rows outside the
+   scalar/current interface.
+
+In particular, s_e=0 for a deterministic unitary instruction does not
+discharge an ActionProtocol Cost floor. It is the instruction's represented
+amplitude exponent. Its full physical execution and any distinct claimed
+Cost-Info decomposition remain subject to their actual owner.
+
+This is a positive amplitude-representation and terminal-source substitution.
+It is not a closure of the original physical Cost/Info-weighted WT diagram,
+a new Shannon assignment, or full D0-to-GR closure.
+
+### H. Smallest decisive native check
+
+The embedded check pins the input 90e5dd4f and imports the unchanged
+native_execution.py. It uses the actual five-stage word
+
+    G_1; CX(1,0); SourceI_0; G_0; CX(0,1)
+
+with Spin coordinates 2,3 and immutable oldRIGHT coordinate 4. It expands
+the literal paid inverse through inverse_word, and compares all 32 native
+columns to the WORK-block path expansion with opaque Spin L_i factors.
+Both actual golden births and the true rank-eight cut are checked.
+A diagonal classical path sum is tested against the same complete coherent
+word as a negative control. No large compiler, old GR checker, rank scan or
+new physical tariff is involved.
+
+Observed exact check: 5 forward + 21 inverse = 26 unitary primitive stages;
+two explicit golden birth isometries are checked separately, not silently
+counted as part of that 26-stage list. Full dimension 32, physical input
+rank 8. There are 16 forward and 64 complete weighted path terms. The
+classical-minus-coherent born output probability for WORK 00 is exactly
+702-314 sqrt(5), approximately -0.125344934933964672480532.
+The embedded checker is check_native_amplitude_path_application.py. Run it
+from the repository root, or pass that root as its sole argument. It checks
+the native owner hash before importing it; a later checkpoint with the same
+owner can therefore replay the evidence without pretending to be the input
+HEAD. Ordinary and optimized Python executions produced byte-identical
+stdout. The receipt below is their explicit LF-normalized serialization.
+
+Exact evidence pins: native_execution.py SHA256
+222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+Checker SHA256
+cab2dec1fe43c356fa1c011135c8e078d93a1aa5fac3885ab385371f0ccf65db.
+Canonical LF receipt SHA256 72c4a956e7ffde9c207f75a257d999dd4ddac92386711984e71484417ce76437.
+
+
+<!-- BEGIN AMPN NATIVE AMPLITUDE CHECKER -->
+```python
+"""Bounded exact native amplitude/path compatibility check; read-only repository."""
+import importlib.util, hashlib, json, pathlib, subprocess, sys
+import sympy as s
+from sympy.polys.matrices import DomainMatrix
+
+ROOT=pathlib.Path(sys.argv[1] if len(sys.argv)>1 else ".").resolve()
+OWNER=ROOT/"02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+HEAD=subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip()
+PIN="90e5dd4fe8766577ae13f4a800162bd6fed31401"
+OWNER_SHA="222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+if hashlib.sha256(OWNER.read_bytes()).hexdigest()!=OWNER_SHA:
+    raise RuntimeError("native owner differs from pinned input")
+spec=importlib.util.spec_from_file_location("native_amp_owner",OWNER)
+n=importlib.util.module_from_spec(spec); sys.modules[spec.name]=n; spec.loader.exec_module(n)
+p,a=n.P,n.A
+K=s.QQ.algebraic_field(a)
+def dm(x): return DomainMatrix.from_Matrix(s.Matrix(x)).convert_to(K)
+def eq(x,y,label):
+    if not (dm(x)-dm(y)).is_zero_matrix: raise AssertionError(label)
+checks=[]
+def need(ok,label):
+    if not ok: raise AssertionError(label)
+    checks.append(label)
+forward=(n.Gate("G",(1,)),n.Gate("CX",(1,0)),
+         n.Gate("SourceI",(0,2,3)),n.Gate("G",(0,)),n.Gate("CX",(0,1)))
+ex=n.Execution(5,(),(4,),forward,n.G_CX_SOURCE_I,0,(2,3))
+inverse=n.inverse_word(ex,max_qubits=5,max_expanded_stages=100)
+whole=forward+inverse
+def edges(g):
+    out=[]
+    for x in range(4):
+        bits=[(x>>1)&1,x&1]
+        if g.op=="G":
+            w=g.wires[0]
+            for value in (0,1):
+                yy=bits.copy(); yy[w]=value
+                k=1 if value==bits[w] else 2
+                phase=2 if bits[w]==1 and value==0 else 0
+                out.append((2*yy[0]+yy[1],x,k,phase))
+        elif g.op=="CX":
+            yy=bits.copy(); yy[g.wires[1]]^=yy[g.wires[0]]
+            out.append((2*yy[0]+yy[1],x,0,0))
+        else:
+            out.append((x,x,0,bits[0]))
+    return out
+def path_sum(word):
+    # Key retains total native exponent and opaque Q8 i-power.
+    paths={(x,x,0,0):1 for x in range(4)}
+    for g in word:
+        nxt={}
+        for y,x,k,ph in edges(g):
+            for (mid,start,oldk,oldph),count in paths.items():
+                if mid==x:
+                    key=(y,start,k+oldk,(ph+oldph)%4)
+                    nxt[key]=nxt.get(key,0)+count
+        paths=nxt
+    result=s.zeros(16)
+    for (end,start,k,ph),count in paths.items():
+        block=count*a**k*(n.L_I**ph)
+        for u in range(4):
+            for v in range(4): result[4*end+u,4*start+v]+=block[u,v]
+    return s.kronecker_product(result,s.eye(2)),paths
+def native_word(word):
+    out=DomainMatrix.eye((32,32),K)
+    for g in word:
+        out=dm(n.gate_matrix(ex,g,max_qubits=5,max_expanded_stages=100)).matmul(out)
+    return out.to_Matrix()
+for g in (n.Gate("G",(0,)),n.Gate("G",(1,)),n.Gate("CX",(1,0)),
+          n.Gate("CX",(0,1)),n.Gate("SourceI",(0,2,3))):
+    mat,_=path_sum((g,))
+    eq(mat,n.gate_matrix(ex,g,max_qubits=5,max_expanded_stages=100),"primitive")
+need(True,"each primitive path table equals the full native matrix, Spin opaque")
+wf=native_word(forward); pf,paths_f=path_sum(forward)
+eq(wf,pf,"forward word")
+need(True,"coherent weighted forward paths reproduce all 32 columns")
+wall=native_word(whole); pall,paths_all=path_sum(whole)
+eq(wall,pall,"whole inverse")
+eq(wall,s.eye(32),"paid inverse identity")
+need(True,"actual expanded inverse and coherent path sum equal identity on all columns")
+v=s.Matrix([a,p]); j=s.kronecker_product(v,v,s.eye(4),s.eye(2))
+eq(j.T*j,s.eye(8),"born normalization")
+eq(wall*j,j,"born complete word")
+eq(j.T*wall*j,s.eye(8),"true born corner")
+need(True,"both actual golden births and true rank-eight cut retained")
+# Explicit birth-edge coefficients are a^(2+popcount(work)).
+jb=s.zeros(32,8)
+for work in range(4):
+    coeff=a**(2+int(work).bit_count())
+    for k in range(8): jb[8*work+k,k]=coeff
+eq(jb,j,"literal birth table")
+eq(pf*jb,wf*j,"birth plus paths")
+need(True,"actual birth-edge exponents reproduce complete initialized operator")
+# Illicit diagonal path sum removes the phases and all cross-path terms.
+markov=s.eye(4)
+for g in whole:
+    step=s.zeros(4)
+    for y,x,k,ph in edges(g): step[y,x]+=p**k
+    markov=step*markov
+initial=s.Matrix([p**2,p**3,p**3,p**4])
+classical=markov*initial
+delta=s.simplify(classical[0]-initial[0])
+need(delta!=0 and abs(float(s.N(delta,30)))>s.Rational(1,100),
+     "classical path pinching changes actual born output despite coherent identity")
+out={
+ "source_head":PIN,
+ "checker_sha256":hashlib.sha256(pathlib.Path(__file__).read_bytes()).hexdigest(),
+ "native_owner_sha256":hashlib.sha256(OWNER.read_bytes()).hexdigest(),
+ "forward_stages":len(forward),"inverse_stages":len(inverse),"whole_stages":len(whole),
+ "full_dimension":32,"physical_initial_rank":8,
+ "forward_path_terms":sum(paths_f.values()),"whole_path_terms":sum(paths_all.values()),
+ "primitive_amplitude_exponents":{"G_diagonal":"1/2","G_offdiagonal":"1",
+                                 "CX":"0","SourceI":"0","golden_birth":"1/2 or 1"},
+ "classical_minus_coherent_work00":str(delta),
+ "classical_minus_coherent_work00_decimal":str(s.N(delta,24)),
+ "checks":checks,
+ "scope":{"Spin_individually_measured":False,"all_paths_classically_recorded":False,
+          "physical_Info_assigned":False,"mean_Cost_Info_equals_return_price":False,
+          "GR_closed":False}
+}
+print(json.dumps(out,indent=2))
+```
+<!-- END AMPN NATIVE AMPLITUDE CHECKER -->
+
+<!-- BEGIN AMPN NATIVE AMPLITUDE RECEIPT -->
+```json
+{
+  "source_head": "90e5dd4fe8766577ae13f4a800162bd6fed31401",
+  "checker_sha256": "cab2dec1fe43c356fa1c011135c8e078d93a1aa5fac3885ab385371f0ccf65db",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "forward_stages": 5,
+  "inverse_stages": 21,
+  "whole_stages": 26,
+  "full_dimension": 32,
+  "physical_initial_rank": 8,
+  "forward_path_terms": 16,
+  "whole_path_terms": 64,
+  "primitive_amplitude_exponents": {
+    "G_diagonal": "1/2",
+    "G_offdiagonal": "1",
+    "CX": "0",
+    "SourceI": "0",
+    "golden_birth": "1/2 or 1"
+  },
+  "classical_minus_coherent_work00": "702 - 314*sqrt(5)",
+  "classical_minus_coherent_work00_decimal": "-0.125344934933964672480532",
+  "checks": [
+    "each primitive path table equals the full native matrix, Spin opaque",
+    "coherent weighted forward paths reproduce all 32 columns",
+    "actual expanded inverse and coherent path sum equal identity on all columns",
+    "both actual golden births and true rank-eight cut retained",
+    "actual birth-edge exponents reproduce complete initialized operator",
+    "classical path pinching changes actual born output despite coherent identity"
+  ],
+  "scope": {
+    "Spin_individually_measured": false,
+    "all_paths_classically_recorded": false,
+    "physical_Info_assigned": false,
+    "mean_Cost_Info_equals_return_price": false,
+    "GR_closed": false
+  }
+}
+```
+<!-- END AMPN NATIVE AMPLITUDE RECEIPT -->
+
+The serial-support/source theorem has a written generic proof and an
+independent audit of its earliest cut, joint effects, full source norm,
+old-record preservation and common-layout clock schedule. The amplitude
+application has an exact all-column native replay with its actual expanded
+inverse and a coherent-versus-classical control. Neither check replaces
+the missing physical price/task/continuation selection. GR_closed=false.
+
+Final work/agent/assembly and whitespace guards pass on the integrated
+6a4624c5 input. Assembly remains 98 results / 22 obligations / 5 discharged,
+scientific_promotion=false. Incoming FD/VCP proof/checker/receipt blocks are
+preserved unchanged. Only the existing primary and task brief change.

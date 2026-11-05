@@ -22724,3 +22724,71 @@ retirement or raw216 change is made. Complete physical Cost--Info binding
 and the existing broader closure obligations remain. `GR_closed=false`.
 
 Final targeted structural verification: the unmodified pinned task-brief validator passes for this changed brief; assembly metadata is unchanged, both existing file prefixes are preserved byte-for-byte, and appended lines pass whitespace and conflict-marker checks. Embedded checker, result and integrator receipt match the reviewed files. Full repository work, agent and assembly guards were not rerun in this partial snapshot; no unchanged mathematical or Lean suite was replayed.
+
+## 2026-11-05 checkpoint: complete source through arbitrary retained past
+
+Input 90e5dd4fe8766577ae13f4a800162bd6fed31401; existing Draft #334, same
+two write paths. Phase: native realization / final composition. Consumer:
+the complete selected-price source and its original Einstein--two-CAR
+application, plus the native amplitude side of the Book comparison.
+Primary additions: fixed-positive-Info P1--P11 and native AMP1--AMP9.
+
+Changed input/substitution: the actual retained SER 0/10 validity projector
+has canonical born mass (p^2+p^4)^M. Its exact support gives
+||C_total||<=(p^2+p^4)^(M/2) on the TRUE original input for every fixed
+earlier prefix. Invalid born sectors remain in the clock. This directly
+bounds the ENTIRE J covector and finite J contrasts, even for raw occurrence
+variations that do not remain in the valid support. No old nonzero return,
+every-competitor cut factorization or polar-recovery error is required.
+
+For the stated valuation H+J-lambda I_complete, lambda>0 fixed, the complete
+CQ field gain is >=lambda ell_min M g. The original CODE-preserving SER
+blocks already have the required joint effects with arbitrary conditional
+DATA backaction; polar recovery is unnecessary. Old records are preserved
+exactly. The single choice m=N_b paid CX;CX pairs gives N_total=3N_b=O(M),
+so all J and full heat rows vanish after the actual Info normalization,
+including the extra padding occurrences. Old Info rows vanish as 1/(Mg).
+Current information retains the full 16+24+2 covector through the owned
+common-field/right-lift map. Finite comparisons use one genuine matched
+birth/mark layout and their actual chords; no smooth compiler index exists.
+
+This removes those old-history/optimization premises ONLY for this selected
+positive-Info valuation. Lambda=0 retains the original bare-master route.
+The faithful Info fibre preserves effects AND the common CODE-PVM; extra
+effect-changing controls need their actual source map or reactions. Scene,
+birth, closure and coefficient selectors are not erased. The complete
+physical Cost--Info selection and its continuation law remain open.
+
+The second application writes every actual G/CX/SourceI/birth block as its
+fixed golden amplitude times opaque Spin memory and composes the complete
+native word exactly. Coherent cross-path terms are retained. It computes
+the actual native amplitude and terminal effect, including the positive
+return-pressure-to-J source ratio on BCPR's scalar section. The represented
+amplitude diagram has zero defect against the native word; this does NOT
+set the ORIGINAL physical Cost/Info-weighted WT defect to zero. The equality
+S_amp=S_Book, compulsory terminal/master and physical selection are still
+separate obligations. No stage is assigned a free physical tariff.
+
+Validation: written generic source proof and independent native-interface
+audit; exact native replay of five forward and 21 paid inverse stages on
+all 32 columns, including two explicit golden births and true rank 8 cut.
+Ordinary and optimized Python stdout are byte-identical; source/owner/LF
+receipt hashes are embedded. A classical pinching control changes the
+actual coherent output, as required. Unchanged GR/heat/Lean owners are
+consumed at their stated scope. No new task, claim promotion or retirement.
+
+Incoming remote 9b35e11a/6a4624c5 was read and preserved before integration.
+P12--P16 now consumes VCP5/8/9 directly on its c_P>0 cone: use the exact
+conditional component C_new-(I_complete-I_old)/log(phi), so old entropy
+is not subtracted twice. Its Gamma_P>=d_min M g replaces tiny Gamma_J.
+Every genuinely fixed earlier charge/source is retained and concentrated
+as 1/(Mg); new work or ongoing storage during the appended word is NOT
+an old charge. Constants retain the fixed c_J/c_P ratio. The pure-master
+axis c_P=0 and VCP10 physical residual remain unchanged. This application
+removes VCP9 old-return/polar-recovery premises on that open cone, while
+keeping the actual history-retention, CODE, field and clock interfaces.
+
+Final work/agent/assembly and whitespace guards pass on the integrated
+6a4624c5 input. Assembly remains 98 results / 22 obligations / 5 discharged,
+scientific_promotion=false. Incoming FD/VCP proof/checker/receipt blocks are
+preserved unchanged. Only the existing primary and task brief change.
