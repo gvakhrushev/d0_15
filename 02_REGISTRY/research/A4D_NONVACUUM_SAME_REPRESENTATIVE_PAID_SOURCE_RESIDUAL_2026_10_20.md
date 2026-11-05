@@ -155317,6 +155317,12 @@ geometry, heat, compiler or Lean suite was replayed for this decision.
 
 ## 7fs. One execution, its original statistical price, and the complete Einstein source
 
+> **6 November independent-review correction; see §7fu.** The complete
+> operator-statistical source theorem below survives review. Its claim to
+> discharge the unchanged physical Cost−Info obligation C does not. The
+> scoped A–D terminal proposal is withdrawn pending that valuation map;
+> this is not merely the stronger kernel-only-law question.
+
 5 November 2026. Existing #334; input
 `094562a4c3e71c5c915a8da59d0de5827ef4fb65`. Phase: final composition.
 Consumer: the unchanged scoped A–D contract, using the original Book02/03
@@ -156234,6 +156240,145 @@ Prepared on 5 November and integrated on 6 November 2026 (Europe/Moscow).
 Only the existing primary and task brief change; every prior byte remains.
 The former stopping conclusion is superseded for this original statistical
 route, while the broader D0-to-GR objective remains open.
+
+## 7fu. Independent completion review: retain the composed theorem, withdraw the physical terminal proposal
+
+6 November 2026. Existing #334; exact reviewed input
+`e016f4056ee38c761b8263c0bbcb4da739d4e09b`. Phase: final composition.
+Consumer: the unchanged A–D contract, in particular its actual full-price
+binding C. Same two write paths. No new task, action, selector or geometry.
+
+**Decision.** Two fresh independent reviews agree on the whole-source
+mathematics. The semantic review rejects the assertion that §7fs has
+removed physical C. I accept that correction: the statements in §7fs's
+opening, §7fs.A and §7fs.C that C is discharged and an unchanged A–D
+terminal can be proposed are superseded here. Prior proof bytes and
+receipts remain for provenance. Neither review is an assembly acceptance.
+
+### What is proved on the one admitted history
+
+The original H.1 guard/domain and its independent old/current controls,
+four preparation slots, actual clock/record/scene dependencies and real
+constraint reactions have the stated §7fq witnesses. The scoped family
+does not require every observer or scheduler to select the same task.
+The complete mathematical source theorem is retained:
+
+    A_stat = −log(Z_H det(I−zF)^−1)/ell,  ell=log(phi),
+    −ell D A_stat = D B +(beta−1)D H,
+    Gamma_stat = Gamma_J/ell > 0,
+    E_stat <= E_B+p³ E_heat,
+    E_stat ->0,  ||R_h|| E_stat ->0.
+
+Here beta=2p², beta−1=−p³ and all source norms, actual finite comparison
+maps, proper cuts, birth complements and all425D heat modes are those
+already proved. The common-field recovery section does not identify its
+independent variation slots. Soundness and reverse recovery concern EVERY
+computable effectively C3-regular Einstein–two-CAR solution in the declared
+compact chart with the stated collar, nondegeneracy and material/Julia
+slack. They do not assert arbitrary smooth/global solutions, minima or
+exact finite roots. A/D and this conditional B theorem are not reopened.
+
+### Why this does not yet supply physical C
+
+Book03:147–172 defines the memory-valued history sum with ORIGINAL
+weights phi^(−S(gamma)), where S is the actual edge Cost minus vertex Info.
+Book03:234 gives a verbal determinant/history identification; :474 gives
+the scalar feedback partition and :1129–1137 selects the bootstrap B.
+Section7fs supplies a precise expansion and source of the latter graph
+functional. Its SR4–7 coefficients are derived from that functional;
+they have not been obtained by pushing forward the former physically
+valued history object. A graph family free energy and the price/source of
+the admitted physical execution cannot be identified solely because the
+same graph occurs in both formulas.
+
+This is the obligation expressly retained by
+`A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md`, C:55–56. It is not a new
+requirement for unique gate tariffs, a physically executed Gibbs sampler,
+an exact equality of microscopic actions or derivation of every law from
+the verification kernel alone. A proved complete source equivalence or
+controlled residual on this execution would suffice, as in §7fq CD13.
+
+### Constructive synthesis attempts and their exact outcome
+
+The return-only route is sufficient in principle because the full thermal
+source is already controlled. Three attempts were tested against C:
+
+* **Forgetting loop labels.** An ordinary pushforward sums weights in a
+  fibre. The factors1/k and1/n! in the determinant arise from cyclic and
+  symmetric/groupoid evaluation; forgetting labels does not by itself
+  establish that physical valuation. Native ordered memory and its future
+  tests cannot be removed by using trace cyclicity. No actual weighted
+  one-return/terminal intertwiner was obtained by this construction.
+* **Constrained entropy price.** With q=p²+p³Q and the actual parsed
+  costs1,2, the specified CQ functional is exactly
+  `1+q−h(q)/ell = D_KL(Bern(q)||Bern(p²))/ell`.
+  It has positive derivative on the informative collar q>p². The guard
+  prevents replacing q by its unconstrained Gibbs minimizer p². This
+  consumes the existing positive CQ source; it does not identify all
+  physical Info with that entropy or make current work source-constant.
+  The two physical substitutions in §7fq CD10 remain unproved.
+* **Universality of the return first source.** At F=f I_r, any C1
+  unitary-conjugation-invariant RETURN valuation V has
+  `DV(F)[K]=v'(f) Tr(K)/r`, where v(f)=V(f I_r), on every ambient Hermitian
+  direction K. Invariance makes the gradient at f I_r commute with every
+  unitary, so it is scalar; differentiation along I_r fixes its coefficient.
+  Thus determinant coefficients need not be unique for
+  source equivalence. Fixed positive rooted-loop weights with a nonconstant
+  locally C1-convergent sum at f>0 supply a positive slope for that sum
+  or its logarithm; the negative-log price reverses the global orientation.
+  This does not show that the FULL physical price descends to that class.
+  Actual moving weights, terminal/clock normalizers and nonreturn work
+  retain their source rows; a different valuation also needs its own
+  finite-word derivative bounds and actual gain/lift error budget.
+
+Minimizing a supplied price over an implementation fibre cannot fill the
+last gap: it proves neither nonzero field gain nor a smooth stationary
+section for the actual admitted words. In addition, the forward
+preparation in LC9 is a source-bearing physical coordinate. Minimizing it
+at fixed externally named Y would erase a physical direction. Only the
+actual fixed-effect/marked-map nuisance fibre is eligible for elimination.
+The existing polar optimum supplies that fibre for the SELECTED price;
+it does not select the physical Cost−Info law.
+
+These attempts narrow the useful next application to the actual weighted
+one-return/full-current map; none removes C. The existing CD13 criterion
+and all its independent rows remain unchanged. No universal no-go or pair
+of distinct admissible complete physical valuations has been established.
+
+
+The incoming `7757f0192` sharp-history entropy-cone theorem in §7ft was
+also inspected before integration. It removes the mean/amplitude/scalar
+aggregation choice within its stated fixed-coefficient class, while ES6
+explicitly retains physical Born/GAIN and traversal-work/vertex-Info
+binding. It neither identifies that sharp carrier with the noisy §7fq
+history nor supplies the missing physical map. Its references to §7fs
+having closed C are therefore superseded by this correction. Its
+mathematical proof and checker bytes are preserved without replay.
+
+### Independent receipt and status
+
+The source reviewer checked LC12–16, actual return calibration, full-dual
+and lift-weighted estimates, growing-clock heat, finite comparisons and
+the every-solution recovery application at the exact input above. The
+scope reviewer independently checked the Book definitions, six admission
+witnesses and unchanged A–D obligations. Their reports are pinned by:
+
+    independent-source-acceptance.md
+    SHA256 40b8c6c003a38d6ddb7d42d95fccd4a16e684a3e7d40b8a4a61aaf2b4ea72b43
+    independent-scope-audit.txt
+    SHA256 7f9de9f7227a79c49946e945ed949962d1330ff23c16e7215bd9b59b11033317
+
+The source report's accepted theorem is the mathematical statement printed
+above; its retained price-law hypothesis is not a physical C acceptance.
+The scope review's decisive objection and constructive test outcomes are
+recorded here rather than replacing a missing proof with a PASS count.
+
+`SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` is NOT established.
+`GR_closed=false`. The full goal remains active; physical Cost−Info
+binding, rather than the already composed source geometry, is the current
+missing substitution. No Ready, retirement, merge, raw216 or registry
+promotion is made. This correction changes no computational theorem;
+unchanged mathematical/Lean suites need no replay.
 
 ## 8. Reproduction
 

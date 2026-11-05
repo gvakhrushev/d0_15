@@ -22883,6 +22883,10 @@ approved the stated decision scope, not physical acceptance.
 
 ## 2026-11-06 checkpoint: one-history statistical price and full scoped Einstein source
 
+> **Superseded scope conclusion:** the independent review below and PRIMARY
+> §7fu retain this source theorem but withdraw its claim to discharge
+> physical C and propose the unchanged A–D terminal.
+
 Input 094562a4c3e71c5c915a8da59d0de5827ef4fb65; existing Draft #334 only.
 Phase: final composition. Primary §7fs consumes the complete §7fq source
 and the ORIGINAL Book02/03 partition law on that SAME RAW/GROWING tuple.
@@ -22921,6 +22925,7 @@ wrong determinant power and moving beta/unit controls. Normal and optimized
 outputs agree. Three cross-reviews approved the final proof pin in §7fs.E
 with its explicit original-law premise. Unchanged GR/heat/Lean suites were
 consumed at their existing scope rather than replayed.
+
 
 
 
@@ -23008,3 +23013,39 @@ root, unconditional D0-to-GR closure, Ready transition or retirement is
 declared. The broader `GR_closed=true` claim is not established.
 
 Affected repo/work/agent-protocol/assembly and whitespace checks pass; embedded source and receipt bytes are exact. Independent isolated replay passes111 controls with an identical receipt. Assembly remains98 results/22 obligations/5 discharged and scientific_promotion=false. Both e016f405 file prefixes are unchanged.
+
+
+## 2026-11-06 checkpoint: independent completion review and corrected physical boundary
+
+Input e016f4056ee38c761b8263c0bbcb4da739d4e09b; existing Draft #334.
+Phase: final composition. Primary §7fu records two fresh independent
+reviews of the actual whole-source composition and the unchanged A–D
+contract. Same two write paths; no new scientific task.
+
+The complete operator-statistical theorem passes at the original noisy H.1
+regular scope, including actual positive gain, independent nuisance rows,
+both full-source/lift limits and reverse recovery of every computable
+regular Einstein–two-CAR solution in the declared chart. Admission does
+not need an arbitrary-task or universal-scheduler extension.
+
+The physical C conclusion of the preceding checkpoint is withdrawn.
+The registry evaluates the already selected graph partition; it does not
+yet transport the original Cost−Info-valued history object to that
+partition or bound their complete physical source defect. This obligation
+was inside the unchanged contract, not an extra kernel-only-law demand.
+
+The attempted return-only quotient, constrained Gibbs/CQ reduction and
+return first-source universality do not supply that missing application.
+The last route can avoid unique determinant coefficients, but still needs
+the actual weighted one-return map, retained terminal/clock/work rows and
+its true gain/lift estimates. No new physical Info or tariff is assigned.
+
+The selected-price theorem is preserved; SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED
+is not established. GR_closed=false; goal active. No assembly promotion,
+Ready transition, task retirement, merge or raw216 change. Only structural
+guards apply to this correction; unchanged proof suites are not replayed.
+
+Incoming 7757f0192 is preserved. Its sharp entropy-cone result retains
+the physical binding hypotheses (ES6); its inherited references to a
+§7fs C closure are superseded by PRIMARY §7fu, without changing that
+separate sharp-history proof or identifying its carrier with §7fq.
