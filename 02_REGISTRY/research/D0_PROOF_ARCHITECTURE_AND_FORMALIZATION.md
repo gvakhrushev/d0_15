@@ -18061,3 +18061,23 @@ the separate degree-3 `boundary_nilpotency2` field: the existing generic
 statement is context, not a proof of that missing instance or physical GR.
 Metric selection, dynamics, sources, clock/work and #334 remain open;
 `GR_closed=false`.
+
+
+### Completeness of the original 128 Golden Kraus matrices
+
+`D0.Geometry.OriginalBookGoldenCompleteness` proves for the actual source
+family, at its fixed parameters, `Σ_{slot<128} K_slot† K_slot = I`. The proof
+consumes the constructed Julia roots and source Walsh Parseval: for
+`V_j=N_j†a`, the established `Σ N_j N_j†=I` yields
+`Σ V_j†V_j=a†a=V_0`. It then uses the actual Golden coefficients and
+`p²+p=1` to cancel the anchor cross-terms, and the proved flattening covers
+all 128 slots. Completeness is a conclusion, not a premise. In the standard
+Kraus interpretation this identity supplies trace preservation; a separate
+Lean channel/CPTP interface theorem is not asserted here.
+
+The exact module passed narrow Lean and axiom checking; independent read-only
+review checked operator order, anchor, scalar factors and full indexing. Its
+checked results use `propext`, `Classical.choice`, `Quot.sound`. The source
+word effect normalization is a subsequent application; rank and effect span,
+physical admission, clock/work and #334 remain open, and `GR_closed=false`.
+A final integration build for this module remains required.
