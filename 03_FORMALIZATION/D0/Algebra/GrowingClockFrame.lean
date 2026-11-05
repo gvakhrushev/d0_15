@@ -9,6 +9,11 @@ clock which advances every non-final frame force leakage to be supported at
 its final frame. No desired leakage factorization is assumed. These are
 algebraic hypotheses: the concrete GROWING stage spaces, closure, field
 curves and physical admission remain to be constructed separately.
+
+Intended source: #334 `afd99daf54d26ef7e1b47a94f380557213e9c6d5`,
+`GROWING_CLOCK_RU.md` §§1–3, blob `370e8fb572e85fedeebe2e72531c01d5b68b0a91`.
+This formalizes a finite frame consequence, not an implementation of that
+source's stage maps, 425D lift or an accepted physical execution.
 -/
 
 noncomputable section
@@ -195,6 +200,56 @@ theorem clock_cut_determinant
   rw [clock_cut_gram_factorization J hJ T hT hstep]
   apply D0.Algebra.IsometricClockDeterminant.det_clock_defect
   simpa using hJ (Fin.last n) (Fin.last n)
+
+
+/-! A finite control: the frame and isometry conditions alone do not force
+G9. The actual stage-advance premise is indispensable. -/
+private def controlFrames (i : Fin 2) : Matrix (Fin 2) (Fin 1) ℂ :=
+  if i = 0 then !![1; 0] else !![0; 1]
+
+private theorem controlFrames_orthogonal :
+    ∀ i j, (controlFrames i)ᴴ * controlFrames j = if i = j then 1 else 0 := by
+  intro i j
+  ext x y
+  fin_cases i <;> fin_cases j <;> fin_cases x <;> fin_cases y <;>
+    norm_num [controlFrames, Matrix.mul_apply, Matrix.conjTranspose_apply,
+      Fin.sum_univ_one, Fin.sum_univ_two]
+
+private theorem identity_not_advance :
+    ¬ ∀ j : Fin 1, (1 : Matrix (Fin 2) (Fin 2) ℂ) * controlFrames j.castSucc =
+      controlFrames j.succ := by
+  intro h
+  have hh := h 0
+  have hv := congrArg (fun M : Matrix (Fin 2) (Fin 1) ℂ => M 0 0) hh
+  norm_num [controlFrames, Matrix.mul_apply, Fin.sum_univ_two] at hv
+
+/-- Without the real stage advance, even isometric T and orthogonal frames
+can fail the last-frame leakage factorization. -/
+example :
+    (∀ i j, (controlFrames i)ᴴ * controlFrames j = if i = j then 1 else 0) ∧
+    ((1 : Matrix (Fin 2) (Fin 2) ℂ)ᴴ * 1 = 1) ∧
+    (¬ ∀ j : Fin 1, (1 : Matrix (Fin 2) (Fin 2) ℂ) * controlFrames j.castSucc =
+      controlFrames j.succ) ∧
+    (cut (frameProjector controlFrames) (1 : Matrix (Fin 2) (Fin 2) ℂ))ᴴ *
+      cut (frameProjector controlFrames) (1 : Matrix (Fin 2) (Fin 2) ℂ) ≠
+      controlFrames (Fin.last 1) *
+        (1 - (frameReturn controlFrames 1)ᴴ * frameReturn controlFrames 1) *
+        (controlFrames (Fin.last 1))ᴴ := by
+  refine ⟨controlFrames_orthogonal, by simp, identity_not_advance, ?_⟩
+  have hP : frameProjector controlFrames = (1 : Matrix (Fin 2) (Fin 2) ℂ) := by
+    change (∑ i : Fin 2, controlFrames i * (controlFrames i)ᴴ) = 1
+    rw [Fin.sum_univ_two]
+    ext i j
+    fin_cases i <;> fin_cases j <;>
+      norm_num [controlFrames,
+        Matrix.mul_apply, Matrix.conjTranspose_apply, Fin.sum_univ_one,
+        Matrix.vecMul, dotProduct, map_ofNat]
+  intro h
+  simp only [hP, cut, sub_self, Matrix.zero_mul, Matrix.conjTranspose_zero] at h
+  have hv := congrArg (fun M : Matrix (Fin 2) (Fin 2) ℂ => M 1 1) h
+  norm_num [frameReturn, controlFrames,
+    Matrix.mul_apply, Matrix.conjTranspose_apply, Fin.sum_univ_one,
+    Fin.sum_univ_two, Matrix.vecMul, dotProduct] at hv
 
 end D0.Algebra.GrowingClockFrame
 end
