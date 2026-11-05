@@ -17958,3 +17958,27 @@ controls passed. The numerical check requires NumPy, SciPy and SymPy and does
 not formally verify the backend. The 128 Kraus, CPTP, effect span, physical
 admission and clock/work remain open; #334 is preserved and `GR_closed=false`.
 Final integration for this added module remains required.
+
+
+### Original 128 Golden Kraus matrices
+
+`D0.Geometry.OriginalBookGoldenKraus` constructs the two source Golden branches
+from all 64 published Walsh rows, with `p=(sqrt(5)−1)/2`, the source anchor
+and the original product order. It proves the flattening between
+`Fin 64 × Fin 2` and `Fin 128`, and proves 64 explicitly marked slots vanish
+from the odd-label Walsh zeros. It does not claim that the other 64 are
+nonzero, that the construction is trace-preserving, or that any particular
+effect span or rank follows. The source ordering is retained.
+
+Exact-file narrow Lean and nine axiom checks passed, using only
+`propext`, `Classical.choice`, `Quot.sound`; an independent reviewer checked
+the formulas and marked slots. `tools/check_original_golden_kraus.py` verifies
+both pinned blob hashes before executing trusted upstream code and its
+`native` AST prefix, and compares all 32768 entries of the 128 slots at the
+fixed source fixture. The expected matrices are recomputed from the same
+source rows; this is a floating-point formula regression, not an execution of
+Lean values or a formal verification of the numerical backend. Identity and
+product-order controls and three NaN/overflow tests passed. NumPy, SciPy and
+SymPy are required. Source-word effects, CPTP, the effect span, physical
+admission, clock/work and #334 remain open; `GR_closed=false`. Final
+integration for this added module remains required.
