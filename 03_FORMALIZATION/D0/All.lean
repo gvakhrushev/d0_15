@@ -30,6 +30,7 @@ import D0.Algebra.MovingProjectorCalculus
 import D0.Algebra.MovingProjectorPositiveChart
 import D0.Algebra.MovingProjectorTransport
 import D0.Algebra.OriginalBookRadicalField
+import D0.Algebra.OriginalBookRadicalLocal
 import D0.Algebra.SedenionBrownS3
 import D0.Algebra.SedenionClifford8
 import D0.Algebra.SedenionTower
