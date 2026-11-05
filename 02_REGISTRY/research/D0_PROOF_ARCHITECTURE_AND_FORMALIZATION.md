@@ -18026,3 +18026,38 @@ These are ingredients for, not yet a proof of, matrix-valued Parseval and
 completeness of the 128 Kraus matrices. Rank, effect span, physical admission,
 clock/work and #334 remain open; `GR_closed=false`. Full integration of these
 new modules remains required.
+
+
+### Operator-valued Parseval for the actual Walsh rows
+
+`D0.Geometry.OriginalBookWalshParseval` composes the original five-bit sign
+orthogonality with the 32 proven Julia-pair identities. It proves
+`Σ_{row<64} N_row N_row† = I` for the actual complex 16×16 source rows, with
+the source `1/32` normalization and conjugation in the correct factor. The
+proof does not take this normalization as a premise. Narrow Lean and axiom
+checks passed; independent read-only review checked the sum, scalar factors,
+conjugation and application. The checked theorem uses `propext`,
+`Classical.choice`, `Quot.sound`. This is not yet completeness of the 128
+Golden Kraus matrices, a rank or span proof, or physical admission. Final
+integration on the new module remains required.
+
+### Bounded existing scene-incidence application
+
+For the existing `D0-GRADED-BIANCHI-EXACT-001` source chain, Book 06 §06.32.1
+(blob `6ebf38ee1f10c94eda7ff752ceb0960253dc0199` at
+`ed819df103adac4f0cee0ff7ce4aded913dd0dc7`) states the graded-incidence
+closure; its ungraded flat residual remains a separate negative result. The
+existing `SceneCochainComplex.scene_d1_d0_zero` is a concrete, reusable
+**two-boundary** application on rational `K(9,11,13)`: it constructs its
+cochain incidence maps and obtains `d1 (d0 A)=0` from the generic proved
+`GenericTripartiteHomology.boundary_squared_zero` through
+`Topology.discrete_exact_bianchi`. The scene has 33 vertices, 359 edges and
+1287 triangles. Source, exact module blobs and application were independently
+read-reviewed; this is not a new C0 acceptance or claim-status change.
+
+This concrete application does not instantiate `GradedCellComplex3` or prove
+the separate degree-3 `boundary_nilpotency2` field: the existing generic
+`Gauge.graded_bianchi_exact` consumes that field. Book 07 §07.2's compatibility
+statement is context, not a proof of that missing instance or physical GR.
+Metric selection, dynamics, sources, clock/work and #334 remain open;
+`GR_closed=false`.

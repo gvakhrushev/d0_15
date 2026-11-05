@@ -540,6 +540,7 @@ import D0.Geometry.OriginalBookMovedJuliaRight
 import D0.Geometry.OriginalBookStaticJuliaRoots
 import D0.Geometry.OriginalBookWalsh
 import D0.Geometry.OriginalBookWalshOrthogonality
+import D0.Geometry.OriginalBookWalshParseval
 import D0.Geometry.PhaseReturnBranchCount
 import D0.Geometry.PhaseUnfoldingQuasicrystal
 import D0.Geometry.PhysicalCarrierInventory
