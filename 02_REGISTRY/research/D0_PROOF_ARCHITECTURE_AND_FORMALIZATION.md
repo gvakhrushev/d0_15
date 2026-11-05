@@ -18081,3 +18081,23 @@ checked results use `propext`, `Classical.choice`, `Quot.sound`. The source
 word effect normalization is a subsequent application; rank and effect span,
 physical admission, clock/work and #334 remain open, and `GR_closed=false`.
 A final integration build for this module remains required.
+
+
+### Source-word continuation and trace normalization
+
+`D0.Geometry.OriginalBookSourceNormalization` applies the established
+`sourceKraus_complete` to the actual chronological effects. For every finite
+source path, summing the effects of its 128 one-slot continuations
+`path ++ [slot]` gives the original path effect. Independently, the finite
+forward sum `Σ K_slot ρ K_slot†` preserves `trace ρ` for every complex 16×16
+matrix `ρ`; no density or positivity assumption on `ρ` is needed for that
+algebraic equality. The generic continuation theorem takes completeness as an
+explicit input, and the concrete source theorem supplies the already proved
+witness, not a new source assumption.
+
+The exact module passed narrow Lean and axiom checking; independent read-only
+review verified chronology, all 128 indices and trace order. Both checked
+results use `propext`, `Classical.choice`, `Quot.sound`. Probability
+interpretation and physical preparation/admission require their own inputs;
+rank/span, clock/work, GR selection and scientific owner #334 remain open.
+`GR_closed=false`. A final integration build on these inputs remains required.

@@ -538,6 +538,7 @@ import D0.Geometry.OriginalBookJuliaRowCompleteness
 import D0.Geometry.OriginalBookJuliaWords
 import D0.Geometry.OriginalBookMovedJuliaLeft
 import D0.Geometry.OriginalBookMovedJuliaRight
+import D0.Geometry.OriginalBookSourceNormalization
 import D0.Geometry.OriginalBookStaticJuliaRoots
 import D0.Geometry.OriginalBookWalsh
 import D0.Geometry.OriginalBookWalshOrthogonality
