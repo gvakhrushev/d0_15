@@ -174572,3 +174572,645 @@ unequal prospective future weights, or the Books00-01 derivation of the
 complete physical action. The original Book law can be applied with its
 own new full clock under that declared specialization. This remains
 research in the existing owner: GR_closed=false, positive_gr=false.
+
+
+## Complete retained-programme synthesis: off-shell recovery and the full quantum-information source
+
+5 November 2026. Existing Draft #334, native realization / final composition.
+Input: e6298e8c7781a663a026d396c6ac5b9091d85e4a. Consumer: the
+independent apparatus/programme/preparation application in scoped contract B/D,
+and the same-source composition with the full Einstein--two-CAR owner.
+
+The changed mathematical input is the ENTIRE coherent programme palette already
+constructed in 7ee.Proof II and the exactly controlled support of 7eh.H.3.
+The preceding G1--G16 theorem required scalar effects on the complete unknown
+input. That premise holds at matched centres, but generally fails off shell
+when the same retained CODE selects different honest reporters. The following
+operator-valued profile removes that scalarity premise on the declared
+CODE-preserving carrier. It also computes the actual mixed-input, correlated
+joint-record information source; replacing it by a sum of binary entropies
+would be wrong away from the scalar locus.
+
+This consumes the existing all42 source, native recovery and physical metric
+map. It does not choose one reporter after seeing an Einstein solution, invent
+a new field action, or reprove the geometry. The physical full Cost--Info
+binding remains open; the precisely specified Book03.25 master and the separate
+information comparison retain their distinct meanings.
+
+### RCP1. A real retained CODE, every joint label, and the earliest true cut
+
+Let H be the actual earliest input, with its retained CODE projectors Pi_theta.
+CODE may be in an arbitrary unknown state entangled with DATA or a reference.
+Its readable values are preserved by the declared task. This means an actual
+nondemolition intertwiner, not merely commuting input effects:
+
+    K_omega Pi_theta = Pi_theta^out K_omega,
+    j Pi_theta = Pi_theta^out j.                          (RCP1)
+
+Here j is the actual born embedding, P_omega are the COMPLETE mutually
+orthogonal retained outcome subspaces, and [P_omega,Pi_theta^out]=0. All true
+input columns and invalid born-code sectors stay present. Use
+
+    j* P_omega j=mu_omega I, mu_omega>0,
+    E_omega=K_omega* K_omega
+           =sum_theta q_(omega,theta) Pi_theta,
+    q_(omega,theta)>0, sum_omega q_(omega,theta)=1.        (RCP2)
+
+RCP1 is supplied by the existing controlled CODE grammar and by its faithful
+implementation constraint. A raw fault changing a protected code value is a
+constraint normal with its real reaction; it is not called a zero free Euler
+row. Actual changes to the code basis, effect or input preparation are retained
+below. The same operation task must allow the conditional reversible recovery
+and paid future-reader transport used by G4/NR. Fixing an untransported
+conditional backaction is a different task.
+
+The full-CODE input in 7ee.Proof I is explicit. A CODE born later in one fixed
+vector has a rank-one initial compression instead. It cannot be promoted to
+RCP1's full input by including its unused columns in a determinant. Such a
+born CODE keeps its actual compression and preparation source. This theorem
+does not silently change the original Spin-only cut into a wider one.
+
+### RCP2. Global operator optimum, including nonscalar effects off shell
+
+Set j_omega=P_omega j/sqrt(mu_omega). On each joint CODE/outcome sector,
+K_omega Pi_theta/sqrt(q_(omega,theta)) and j_omega Pi_theta are isometries.
+Complete their columns to bases WITHIN that sector. The resulting conditional
+unitary preserves CODE and every recorded label and gives
+
+    K_omega,opt=j_omega sqrt(E_omega),
+    C_opt=j* sum_omega K_omega,opt
+         =F=sum_theta f_theta Pi_theta,
+    f_theta=sum_omega sqrt(mu_omega q_(omega,theta))>0.   (RCP3)
+
+This is an all-input statement, tensoring with identity on every unknown
+reference. Neither the unknown code amplitudes nor DATA are measured, copied
+or reset. The original complete conditional operations determine the recovery.
+
+For EVERY other instrument obeying RCP1--RCP2, its cold corner C is block
+diagonal in CODE. In sector theta it is a sum of contractions with positive
+coefficients sqrt(mu_omega q_(omega,theta)). Consequently
+
+    C* C <= F^2.                                         (RCP4)
+
+The order is on the entire actual input; F is generally NOT scalar. Therefore
+RCP3 globally minimizes the original J=-Tr log[(1-z)I+z C*C] on this whole
+fixed-effect, CODE-preserving instrument fibre. The old G theorem is its
+one-sector specialization. The proof optimizes the complete instrument from
+the earliest cut, not a chosen list of hardware coordinates.
+
+At RCP3 a two-sided fixed-effect tangent has Herm(j_omega*delta K_omega)=0
+in each CODE block, hence delta(C*C)=0. Every such apparatus, completion and
+complex-phase first row of J vanishes. Effect-changing rows do not vanish.
+The full CQ information is invariant under the same record-conditional
+unitaries, so those fixed-effect rows vanish for it too.
+
+Dropping output CODE preservation invalidates RCP4: commuting effects alone
+allow a conditional unitary to mix output code values. The checker includes
+an actual two-outcome instrument of this kind. This is why the retained
+programme observable is a real part of the task and is not an arbitrary
+choice of a diagonal basis after optimization.
+
+### RCP3. Arbitrary old coherences: a typed corollary, not a new cut
+
+When the actual chronological interface proves C_total=C C_< for EVERY
+competitor under consideration, set A=C_< C_<*>=0, a=1-z, eta>0. Retain any
+rectangular absolute dimension term from 7ee H1r. Then
+
+    J(C)=-Tr log[aI+eta C A C*]+constant,
+    J(C)>=J(F).                                          (RCP5)
+
+Indeed Sylvester's determinant identity rewrites the nonconstant determinant
+as det[aI+eta A^(1/2) C*C A^(1/2)], and RCP4 orders it below the corresponding
+expression with F^2. No commutation between A and CODE is used, and A may be
+singular. At the optimum the same delta(C*C)=0 gives every fixed-effect row.
+
+The quantifier EVERY competitor matters. If j_< is an earlier birth embedding,
+F_live j_<=j_< F proves only the target identity
+j_<*F_live A_<=F C_<. A competitor may still act on earlier unsealed WORK.
+For example a previous rank-one input can be prepared as (1/2,sqrt(3)/2);
+a suffix returning that known WORK to its birth improves the old return
+while preserving the current effects. Optimizer-only intertwining does not
+make RCP5 a global theorem over such suffixes.
+
+A sufficient actual interface has C_live j_<=j_< C and its adjoint counterpart
+for every admitted competitor, for example identity on the genuinely protected
+earlier generated WORK with CODE and active DATA among the true input factors.
+A live SourceI port is not automatically protected; its actual boundary marks
+or full earliest-input treatment must be retained. Thus RCP5 applies to the
+owned factorizing interface with that condition, whereas RCP1--RCP4 need no
+old-source factorization at all. No unsupported transfer between those scopes
+is counted as progress.
+
+### RCP4. The actual SER masses and the whole honest reporter palette
+
+For the actual retained SER code, G8 supplies
+
+    mu_0=p^2, mu_1=p^4, p=phi^-1,
+    f(q)=p sqrt(1-q)+p^2 sqrt(q),
+    q_mu=p^2/(1+p^2).                                   (RCP6)
+
+For a fixed sequence of M fresh blocks, sharing ONE retained CODE,
+q_(omega,theta)=product_j q_(theta,j),b_j and the born masses also multiply.
+Therefore f_theta=product_j f(q_theta,j). This does not resample CODE at every
+block, and the unconditional outcomes are generally correlated.
+
+The existing seven-call predicate has Q_theta=kappa p^7(4+Xi_theta), with
+
+    Xi_theta=(P_y+-P_y-)(P_f-P_0)
+             +(P_x+-P_x-)(P_q-P_0).
+
+Every original probability lies in [0,1], so |Xi_theta|<=2. For fixed positive
+native visibility the entire honest palette has
+
+    0<2 kappa p^7<=Q_theta<=6 kappa p^7
+                               <=6p^7<q_mu<1/2.         (RCP7)
+
+Thus f'(q)>0 throughout this palette, not only at an Einstein centre or an
+entropy-tuned reporter. Use the actual current nine-control visibility
+kappa9=sin^2(512 theta_G) for 7eh/SER. The older 7ee example's
+sin^2(128 theta_G) has its own word and cannot supply this execution's gain or
+count. All comparisons below use a compact actual collar
+0<q_min<=q_theta,j<=q_max<q_mu. Native approximation errors are charged and
+chosen smaller than that real margin; no approximate q is declared exact.
+
+For the genuine old interface of RCP5 put
+
+    D=aI+eta F A F, B=eta F A F D^-1>=0,
+    w_theta=Tr(Pi_theta B)>=0, w=sum_theta w_theta>0.
+
+At fixed CODE basis, the exact current differential is
+
+    D J=-2 sum_(theta,j) w_theta f'(q_theta,j)/f(q_theta,j) Dq_theta,j
+         -eta Tr(D^-1 F (DA) F).                        (RCP8)
+
+The basis differential DF=[Z,F] has its own two anticommutator terms in
+D(FAF); it is zero at scalar F, not off shell. Changes of a,eta,cut and scene
+remain separate. The weights are derived from the actual old return, not
+assigned programme probabilities. They are positive on precisely the sectors
+with Tr(Pi_theta A)>0. Invisible old sectors do not acquire individual equations
+from a positive aggregate weight. With the whole earliest-input A=I all
+nonempty input sectors have positive J weight.
+
+### RCP5. Full quantum information, including unknown mixed CODE--DATA
+
+Let rho be any normalized input state, including arbitrary CODE--DATA
+correlations. Take the full efficient retained instrument, retaining every
+conditional Kraus label if an earlier description grouped several. At RCP3
+(and at every equivalent record-conditional unitary realization) its complete
+CQ entropy GAIN is exactly
+
+    I_rec=sum_omega S(rho^(1/2) E_omega rho^(1/2))-S(rho),
+    S(X)=-Tr X log X.                                    (RCP9)
+
+This is not H(q_omega) in general. Equivalently it is H(record|reference) for
+a purification of the actual input; the reference is untouched, not supplied
+as an extra primitive. All old input entropy is subtracted once as the stated
+information gain. No physical dephasing of the coherent history is asserted.
+
+For ONE binary effect Q, B_1=rho^(1/2)Qrho^(1/2),
+B_0=rho^(1/2)(I-Q)rho^(1/2). On the support of rho both are strictly positive.
+For arbitrary Hermitian DQ at fixed rho,
+
+    D_Q I_rec=Tr(W_rho DQ),
+    W_rho=rho^(1/2)(log B_0-log B_1)rho^(1/2).           (RCP10)
+
+No commutation between rho and Q is required. The identity follows by
+differentiating the traces in RCP9; the two identity terms cancel. With
+l_min=log[(1-q_max)/q_max] and l_max=log[(1-q_min)/q_min],
+
+    l_min rho <= W_rho <= l_max rho,  l_min>0.            (RCP11)
+
+For example B_0>=((1-q_max)/q_max)B_1, and operator monotonicity of log gives
+the lower bound. That monotonicity follows directly by integrating the
+resolvent order for positive matrices. The upper bound is identical. Logs
+on the fixed support cover singular rho; DQ does not change that support.
+
+Thus every positive operator change of the event has positive information
+source on populated input directions. Positivity of a matrix coefficient
+is not a claim that an arbitrary indefinite field variation has positive
+scalar derivative. Actual field variations are substituted through DQ.
+
+### RCP6. No independence shortcut for the entire joint archive
+
+All Q_j=sum_theta q_theta,j Pi_theta commute with one another. The rho need
+not commute with any of them. For fixed j, let beta be the string of all
+other outcomes and put
+
+    T_beta=product_(k!=j) [Q_k if b_k=1 else I-Q_k],
+    t_(theta,beta)=its CODE-theta eigenvalue,
+    B_(beta,b)=rho^(1/2) T_beta [Q_j if b=1 else I-Q_j] rho^(1/2).
+
+Differentiating the FULL joint entropy in RCP9 gives
+
+    D_(q_theta,j) I_rec=u_theta,j,
+    u_theta,j=sum_beta t_(theta,beta)
+       Tr[Pi_theta rho^(1/2)(log B_(beta,0)-log B_(beta,1))rho^(1/2)],
+    l_min Tr(Pi_theta rho)<=u_theta,j<=l_max Tr(Pi_theta rho).       (RCP12)
+
+The two logarithms have the same support, because every q is strictly inside
+(0,1). RCP11 applies to each beta; sum_beta t_(theta,beta)=1 proves the last
+line. This handles all correlations caused by one coherent programme and all
+joint outcomes. There is no replacement by sum_j h(sum_theta p_theta q_theta,j)
+or by sum_theta p_theta sum_j h(q_theta,j).
+
+The fixed sequence is important. A physically branch-dependent choice of later
+fields, time, operation or work has additional conditional-future sources, as
+in G16. RCP12 does not set them equal by renaming the schedule fixed.
+
+Together RCP8/RCP12 give the q-only differential at FIXED A, rho, CODE
+basis, a and eta, for a specified lambda>=0 comparison valuation,
+
+    D_current(J-lambda I_rec)
+       =-sum_(theta,j) L_theta,j Dq_theta,j,
+    L_theta,j=2w_theta f'(q_theta,j)/f(q_theta,j)+lambda u_theta,j>=0. (RCP13)
+
+Every J-visible sector, and every populated-information sector when lambda>0,
+has strictly positive weight.
+The two sources reinforce throughout the actual collar, including off shell
+and nonscalar E. Lambda is not selected here; bare Book03.25 uses lambda=0.
+A separate source from genuine work or the full physical Info convention
+must still be supplied rather than inferred from this comparison.
+
+### RCP7. Initial-state, code-basis and preparation equations are retained
+
+For fixed effects, the full rho differential on a faithful fixed-support
+chart is obtained from the equivalent blocks sqrt(E_omega)rho sqrt(E_omega):
+
+    D_rho I_rec=Tr(G_rho D rho),
+    G_rho=log rho-sum_omega sqrt(E_omega)
+              log[sqrt(E_omega)rho sqrt(E_omega)]sqrt(E_omega).  (RCP14)
+
+At E_omega=q_omega I this is H(q) times the identity on supp(rho), hence
+zero on every trace-preserving
+preparation direction. In fact RCP9 is then H(q) for every rho of any rank,
+so the exact statement needs no hidden full-rank initial state. CODE basis
+variations also vanish there because Q_j and F are scalar. Off this locus
+RCP14, the RCP8 old row and the actual basis row remain real sources.
+
+There is a useful uniform finite-comparison bound which avoids differentiating
+entropy across a changing rank. If |q_theta,j-q_j*|<=delta_j and the segment
+stays in the stated collar, integrate RCP12 to obtain, for EVERY rho,
+
+    |I_rec(Q,rho)-sum_j h(q_j*)|<=l_max sum_j delta_j.     (RCP15)
+
+No CODE dimension, number of joint outcomes or inverse eigenvalue of rho
+multiplies this bound. Two arbitrary preparation/basis endpoints with the
+same scalar comparison therefore differ by at most twice this amount, plus
+their actual native errors. A symmetric chord of size t divides that difference
+by 2|t|. This is the actual finite-source rule, not a fictitious derivative of
+a compiler index. Extra input and effect changes must both be included.
+
+### RCP8. Substitute the original all42 source and its positive metric map
+
+Use the actual pre-sign effect from SER and the 7eh full writer, including
+its forward input/field preparation. On its inherited regular chart,
+
+    Dq_theta,j=g_j A_pre,theta,j* D I_h^sigma_theta,j + r_theta,j,
+    ||r_theta,j||<=g_j epsilon_h, g_j>0.                 (RCP16)
+
+The same original full-CAR moment action, two independent material fields,
+16 coframes, 24 proper links, density/measure and reference reactions remain.
+A_pre and its existing bounded right lift are not replaced by an arbitrary
+identity; the forward/backward occurrence slots keep SER's real chronology.
+No field variable encoded in an initial state is varied as an operator by fiat:
+its actual D rho, DQ and generated-state adjoints are included in RCP14--16.
+
+For independently varied branch fields, RCP13 gives each visible branch its
+original pulled-back source with a positive actual gain. For a shared field,
+its source is the positive sum of the original branch pullbacks. At the ideal
+7ee H4--H10 level, I_theta,j=sum_x mu_jx sigma_theta,jx ell_jx. The original
+independent radial coframe direction has D ell_jx=-2 ell_jx. As in H9,
+these are partial current variations on the actual admitted lift holding rho,
+A, the CODE PVM, measure and reporter slopes fixed; j labels independent
+current blocks. If the actual causal graph supplies no such lift, that
+critical-set implication is not established. Consequently
+vanishing of all current coframe rows of RCP13 forces ell_jx=0 wherever the
+actual aggregate weight is positive. This statement uses the already proved
+physical variation lift; it does not invent an Einstein admission test.
+
+At ell=0 every q_theta,j equals its common q0,j. All weights in the FIRST
+covector are evaluated there; changes of those weights multiply ell and
+cannot create a missing term. The remaining current equations are the existing
+original source with history-derived positive mean slope. Its material metric
+is precisely 7ee H13, and branch recovery uses
+
+    e_theta=sqrt(sigma_theta) E,
+    (m sigma_theta/det e_theta) g(e_theta)
+                          =(m/det E)g(E).               (RCP17)
+
+The source normalization, right lift and inverse norm remain those of that
+map. Positive slopes and actual weights give a nonzero source; they are not
+converted into a freely fitted Einstein coefficient. Scalar-centre programme
+basis/preparation rows vanish as in RCP7, and the original slope/measure rows
+are the coframe-radial equations already owned by H13--H14.
+
+Actual nonlinear reporters have 7ee's C1 remainder. They need not agree
+exactly at a generic finite Einstein discretization. RCP15 handles their
+near-scalar information/preparation comparison directly. With
+|q_theta,j-q_j*|<=C g_j nu, its value error is <=C l_max nu sum_j g_j;
+the added-information contribution to a normalized finite source is bounded by
+C lambda l_max nu sum_j g_j / (Gamma_actual |t|). Retain the ACTUAL positive
+gain for the selected valuation. It is zero for bare H+J (lambda=0); an added
+Info term cannot borrow a small master gain without paying this ratio. Choose
+nu and the existing compilation/clock schedule so this bound meets the desired
+finite-source budget. This does not incur an extra number-of-joint-records
+penalty or assume pure unknown CODE.
+
+For the valid old interface, the unchanged concentration estimate still uses
+real M g growth. At a common centre, F=f(q0)^M I, put
+s=eta f(q0)^(2M)/a and k=f'(q0)/f(q0)>0. Then
+
+    Gamma_J=2 M g k Tr B>0,
+    |D_A J|/Gamma_J
+       <=(1+s||A||)||DA||_1/[2 M g k Tr A].              (RCP18)
+
+It follows from Tr B>=s Tr A/(1+s||A||). The entire old source is bounded,
+not set to zero. Invisible branches cannot be recovered from an aggregate
+normalization; their field visibility/lift conditions remain explicit.
+
+### RCP9. Native recovery, all current occurrences, and actual work
+
+At each fixed finite palette use the same original known controlled word,
+its actual inverse and processor born/equality projectors as NR1--NR12.
+The CODE bits are additional EXACT controls in the existing Boolean/Gray
+support construction. The amplification itself never changes them. The
+phase and false-tail corrections are controlled by the actual CODE label
+and retained outcome; all invalid sectors remain included.
+
+Each sector's q is computable from the recorded complete finite operator,
+not learned exactly from a finite random sample. The compiled phases are
+frozen within the given comparison. With the positive uniform q collar,
+the finite-palette constants are finite and the previous rates become
+
+    e_k<=C_palette 12^(-k),
+    N_k<=C_palette 5^k+poly(k), N_k e_k -> 0.             (RCP19)
+
+Thus the construction supplies source germs around arbitrary regular base
+points, not only Einstein centres. It does not assert one globally complex-C1
+family of native word indices. Extra controls increase the actual constants,
+word length, helpers and dimension; no older seven-control predicate's gain or inventory
+is reused for the nine-control writer. Independent current occurrences are
+paid in N_k e_k as in the owned full-source norm.
+
+At the native level exact code support comes from the controlled compiler,
+not from a small all-column norm error alone. This same support is essential
+for the exact RCP4 inequality. The ideal recovery and error estimates keep all
+conditional input/reference information; any required future comparison is
+co-transported with the actual paid inverse/reader. This is the same task
+boundary as G/NR, not permission to change a fixed future observable for free.
+
+After constructing this actual word, apply the existing CL/CT full-clock
+bounds at its actual prefix, cut, dimensions, input rank and positive Gamma_J.
+Every CODE sector, preparation, repeated block, failure component, recovery,
+phase helper and padding stage stays in both Hodge degrees and the heat trace.
+Neither terminal spectral energy nor a constant primitive-call inventory is
+identified with accumulated physical Cost.
+
+### RCP10. Exact parent substitution and the remaining physical application
+
+The new substitution is an OFF-SHELL apparatus profile for the existing
+retained coherent programme family, with the complete nonscalar operator
+effects and full mixed-input joint information. It removes the previous need
+for full-input scalar effects when proving implementation optimality away
+from matched centres. The scalar-effect theorem already allowed arbitrary
+mixed or entangled input; that earlier scope is preserved. RCP16--18 consume the original full source,
+metric map and recovery instead of proposing a new gravitational action.
+
+The original arbitrary-prefix/factorization restriction is preserved, as are
+the distinction between genuine initial CODE and later born CODE, actual
+programme/reference/visibility admission, and all independently selected
+cut/clock/scene rows. A completely unrestricted future task is not derived.
+The physical full Cost--Info law from Books00--01 is not selected by positivity
+of RCP13. Book03.25 is the specified master when that specialization is used;
+adding Shannon gain or a gate tariff still needs the actual same-execution
+binding. The HKT investigation also remains separate: neither Book price nor
+this fixed-effect optimum has been identified as its normal Hamiltonian.
+
+Thus this is a proved composition removing a concrete current-body source
+premise on the stated carrier, not SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED or full
+D0-to-GR. No task retirement, acceptance edge, public promotion or raw216
+status change is made. GR_closed=false.
+
+### RCP11. Changed validation and independent review
+
+The generic proofs are RCP1--19. Three bounded read-only reviews checked the
+operator/determinant argument, full CQ source, true-cut quantifiers and native
+support/rates. Their proper-cut and born-CODE corrections are incorporated
+above; a target-only factorization was NOT retained as a global theorem.
+
+The following deterministic checker tests the changed finite-matrix identities
+and hostile controls only. It uses complex coherent CODE--DATA density matrices,
+noncommuting singular old A, arbitrary conditional isometries, full correlated
+joint archives and pure rank-one inputs. Exact Golden and skew-tangent identities
+are also checked. Numeric source differences are diagnostics supporting the
+written proofs, not substitutes for their universal statements. It does not
+execute the enormous compiled word, choose a physical tariff, or replay the
+unchanged GR, heat or Lean owners.
+
+The checker passes 501 bounded checks in normal and optimized Python;
+the receipts are byte-identical. Checker SHA256 dfb61b3babc901b3eac4660116f9bb8465dce1a40a7f28e2bea4baa998814668;
+receipt SHA256 0e628bd77f35eb5f9397d39299516ece0dbc4de79209e7b2eed7c01c502b1f1b.
+
+<!-- BEGIN RCP RETAINED CODE CHECKER -->
+```python
+"""Bounded checks of retained-CODE profile; generic statements are proved in text.
+No native giant word, tariff, physical selection or GR-closure claim.
+"""
+import itertools, json, math, hashlib
+from pathlib import Path
+from collections import Counter
+import numpy as np
+import sympy as sp
+checks=[]
+def require(ok,name):
+    if not bool(ok): raise ArithmeticError(name)
+    checks.append(name)
+def close(a,b,name,tol=2e-8):
+    require(np.max(np.abs(np.asarray(a)-np.asarray(b)))<tol,name)
+def herm(a): return (a+a.conj().T)/2
+def fun(a,f):
+    w,v=np.linalg.eigh(herm(a)); return (v*f(w))@v.conj().T
+def root(a): return fun(a,lambda w:np.sqrt(np.maximum(w,0)))
+def logm(a):
+    w,v=np.linalg.eigh(herm(a))
+    require(w.min()>0,'strict log support')
+    return (v*np.log(w))@v.conj().T
+def entropy(a):
+    w=np.linalg.eigvalsh(herm(a)); w=w[w>1e-14]
+    return float(-np.dot(w,np.log(w)))
+def jcost(c,a,z=.17,eta=.11):
+    d=(1-z)*np.eye(c.shape[0])+eta*c@a@c.conj().T
+    sign,val=np.linalg.slogdet(d)
+    require(abs(sign-1)<1e-10,'positive determinant')
+    return -float(val)
+p=(math.sqrt(5)-1)/2
+qmax=6*p**7
+qmin=.02
+qm=p*p/(1+p*p)
+require(qmax<qm<.5,'full palette below polar and information thresholds')
+x=sp.symbols('x',positive=True)
+phi=(1+sp.sqrt(5))/2
+pp=1/phi
+require(bool(sp.simplify(pp+pp**2-1)==0),'exact Golden relation')
+require(bool(sp.simplify(6*pp**7-pp**2/(1+pp**2))<0),'exact full palette strict polar margin')
+f=lambda q:p*np.sqrt(1-q)+p*p*np.sqrt(q)
+fp=lambda q:-p/(2*np.sqrt(1-q))+p*p/(2*np.sqrt(q))
+rng=np.random.default_rng(540629)
+P=[np.diag([1,1,0,0]),np.diag([0,0,1,1])]
+r=4
+labels=list(itertools.product([0,1],repeat=2))
+mu=np.array([np.prod([p**2 if b==0 else p**4 for b in w]) for w in labels])
+mu=np.append(mu,1-mu.sum())
+require(mu.min()>0,'invalid Born sector retained')
+# Four true joint-record sectors plus one invalid sector, two code sectors,
+# two environmental coordinates and two genuinely unknown DATA columns.
+j=np.zeros((40,r),complex)
+for k in range(5):
+    for th in range(2):
+        j[k*8+th*4:k*8+th*4+2,th*2:th*2+2]=math.sqrt(mu[k])*np.eye(2)
+close(j.conj().T@j,np.eye(r),'true initial embedding rank4')
+def effects(q):
+    return [np.diag(np.repeat(np.prod([q[:,i] if b else 1-q[:,i]
+                     for i,b in enumerate(w)],axis=0),2)) for w in labels]
+def info(q,rho):
+    rh=root(rho)
+    return sum(entropy(rh@e@rh) for e in effects(q))-entropy(rho)
+def weights(q,rho):
+    rh=root(rho); out=np.zeros_like(q)
+    for k in range(2):
+        other=1-k
+        for b in [0,1]:
+            tv=q[:,other] if b else 1-q[:,other]
+            t=np.diag(np.repeat(tv,2))
+            qk=np.diag(np.repeat(q[:,k],2))
+            b0=rh@t@(np.eye(r)-qk)@rh
+            b1=rh@t@qk@rh
+            w=rh@(logm(b0)-logm(b1))@rh
+            for th in range(2):
+                out[th,k]+=tv[th]*np.trace(P[th]@w).real
+    return out
+for sample in range(12):
+    q=rng.uniform(.035,.19,size=(2,2))
+    es=effects(q)
+    ff=np.prod(f(q),axis=1); F=np.diag(np.repeat(ff,2))
+    ks=[]; kopt=[]
+    for k,e in enumerate(es):
+        kk=np.zeros((40,r),complex); ko=kk.copy()
+        for th in range(2):
+            z=rng.normal(size=(4,2))+1j*rng.normal(size=(4,2))
+            v=np.linalg.qr(z)[0]
+            val=math.sqrt(e[2*th,2*th])
+            kk[k*8+th*4:k*8+th*4+4,th*2:th*2+2]=val*v
+            ko[k*8+th*4:k*8+th*4+2,th*2:th*2+2]=val*np.eye(2)
+        close(kk.conj().T@kk,e,'all-input operator effect')
+        ks.append(kk); kopt.append(ko)
+    C=j.conj().T@sum(ks); CO=j.conj().T@sum(kopt)
+    close(CO,F,'entire joint instrument attains operator bound')
+    require(np.linalg.eigvalsh(herm(F@F-C.conj().T@C)).min()>-1e-12,
+            'operator bound on complete code-preserving fibre')
+    a0=rng.normal(size=(r,3))+1j*rng.normal(size=(r,3))
+    A=a0@a0.conj().T; A/=np.linalg.norm(A,2)
+    require(np.linalg.norm(A@F-F@A)>1e-5,'old source is genuinely noncommuting')
+    require(jcost(C,A)>=jcost(F,A)-1e-12,'conditional factorizing-interface determinant optimum')
+    d=.83*np.eye(r)+.11*F@A@F
+    B=.11*F@A@F@np.linalg.inv(d)
+    ww=np.array([np.trace(pt@B).real for pt in P])
+    gj=-2*ww[:,None]*fp(q)/f(q)
+    rr=rng.normal(size=(r,r))+1j*rng.normal(size=(r,r))
+    rho=rr@rr.conj().T+.1*np.eye(r); rho/=np.trace(rho)
+    gi=weights(q,rho)
+    pop=np.array([np.trace(pt@rho).real for pt in P])
+    lower=math.log((1-qmax)/qmax); upper=math.log((1-qmin)/qmin)
+    require(np.all(gi>=lower*pop[:,None]-1e-10),'joint Info positive lower bound with coherent CODE')
+    require(np.all(gi<=upper*pop[:,None]+1e-10),'joint Info upper bound independent of rho spectrum')
+    for th in range(2):
+        for k in range(2):
+            dq=np.zeros_like(q); dq[th,k]=1e-6
+            fm=np.diag(np.repeat(np.prod(f(q-dq),axis=1),2))
+            fp1=np.diag(np.repeat(np.prod(f(q+dq),axis=1),2))
+            close((jcost(fp1,A)-jcost(fm,A))/2e-6,gj[th,k],
+                  'noncommuting full J derivative')
+            close((info(q+dq,rho)-info(q-dq,rho))/2e-6,gi[th,k],
+                  'full correlated joint Info derivative',2e-7)
+    require(np.all(gj-gi<0),'feedback and minus Info reinforce in every populated code sector')
+    qs=np.array([[.08,.13],[.08,.13]])
+    hs=sum(-t*math.log(t)-(1-t)*math.log(1-t) for t in qs[0])
+    close(info(qs,rho),hs,'matched scalar instruments erase initial entropy only as gain')
+    vec=rng.normal(size=r)+1j*rng.normal(size=r); vec/=np.linalg.norm(vec)
+    pure=np.outer(vec,vec.conj())
+    probs=np.array([np.trace(pure@e).real for e in es])
+    hprob=-float(np.dot(probs,np.log(probs)))
+    close(info(q,pure),hprob,'singular pure entangled input retains full joint entropy')
+    require(abs(info(q,rho)+sum(float(np.trace(rho@e).real)*math.log(float(np.trace(rho@e).real)) for e in es))>1e-7,
+            'negative control mixed-input Holevo correction is not zero')
+    err=upper*np.sum(np.max(np.abs(q-qs),axis=0))
+    require(abs(info(q,rho)-hs)<=err+1e-12,'dimension-free matched-centre information error')
+# Exact diagonal-block tangent identities: positive F commutes with every
+# fixed-CODE skew tangent, so d(C*C)=0 even for noncommuting old A.
+a,b,u,v=sp.symbols('a b u v',real=True)
+Fs=sp.diag(a,a,b,b)
+Xs=sp.Matrix([[0,u,0,0],[-u,0,0,0],[0,0,0,sp.I*v],[0,0,sp.I*v,0]])
+require(Fs*Xs+Xs.conjugate().T*Fs==sp.zeros(4),'exact complete block skew first row')
+# Deliberate inadmissible CODE mixing: block effects alone do not imply bound.
+qq=np.array([.05,.18]); sw=np.array([[0.,1.],[1.,0.]])
+cb=p*np.diag(np.sqrt(1-qq))+p*p*sw@np.diag(np.sqrt(qq))
+fb=np.diag(f(qq))
+require(np.linalg.eigvalsh(fb@fb-cb.T@cb).min()<-1e-4,
+        'negative control actual fixed-effect instrument with output CODE flip defeats operator bound')
+# Proper-cut countercontrol: a suffix may recover previous unsealed WORK.
+psi=np.array([.5,math.sqrt(3)/2]); rot=np.array([[.5,math.sqrt(3)/2],[-math.sqrt(3)/2,.5]])
+close(rot@psi,[1,0],'known earlier WORK can be recovered if genuinely accessible')
+require(.5*f(.1)<f(.1),'optimizer-only cut intertwining is not an every-candidate theorem')
+result={'schema':'d0.retained-code-operator-profile/1','status':'PASS',
+        'checks':len(checks),'check_groups':dict(Counter(checks)),
+        'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+        'scope':'generic proof in text; bounded matrix checks, no native emission or full physical price selection',
+        'GR_closed':False}
+print(json.dumps(result,ensure_ascii=False,sort_keys=True,indent=2))
+```
+<!-- END RCP RETAINED CODE CHECKER -->
+
+<!-- BEGIN RCP RETAINED CODE RECEIPT -->
+```json
+{
+  "GR_closed": false,
+  "check_groups": {
+    "all-input operator effect": 48,
+    "conditional factorizing-interface determinant optimum": 12,
+    "dimension-free matched-centre information error": 12,
+    "entire joint instrument attains operator bound": 12,
+    "exact Golden relation": 1,
+    "exact complete block skew first row": 1,
+    "exact full palette strict polar margin": 1,
+    "feedback and minus Info reinforce in every populated code sector": 12,
+    "full correlated joint Info derivative": 48,
+    "full palette below polar and information thresholds": 1,
+    "invalid Born sector retained": 1,
+    "joint Info positive lower bound with coherent CODE": 12,
+    "joint Info upper bound independent of rho spectrum": 12,
+    "known earlier WORK can be recovered if genuinely accessible": 1,
+    "matched scalar instruments erase initial entropy only as gain": 12,
+    "negative control actual fixed-effect instrument with output CODE flip defeats operator bound": 1,
+    "negative control mixed-input Holevo correction is not zero": 12,
+    "noncommuting full J derivative": 48,
+    "old source is genuinely noncommuting": 12,
+    "operator bound on complete code-preserving fibre": 12,
+    "optimizer-only cut intertwining is not an every-candidate theorem": 1,
+    "positive determinant": 120,
+    "singular pure entangled input retains full joint entropy": 12,
+    "strict log support": 96,
+    "true initial embedding rank4": 1
+  },
+  "checker_sha256": "dfb61b3babc901b3eac4660116f9bb8465dce1a40a7f28e2bea4baa998814668",
+  "checks": 501,
+  "schema": "d0.retained-code-operator-profile/1",
+  "scope": "generic proof in text; bounded matrix checks, no native emission or full physical price selection",
+  "status": "PASS"
+}
+```
+<!-- END RCP RETAINED CODE RECEIPT -->
+
+Final affected structural checks pass: validate_work, validate_agent_protocol,
+gr_assembly check (98 results, 22 obligations, 5 discharged; promotion false),
+and git diff --check. Only this primary artifact and the existing task brief
+change. No unchanged heavy mathematical or Lean replay was performed.

@@ -22447,3 +22447,61 @@ Smallest decisive check: embedded whole_truthful_record_optimum_check.py,
 global true-cut bound, all complex tangent basis directions in the bounded
 witness, actual source sign, unknown/reference entropy, unequal futures and
 native phase/source algebra. No unchanged heavy GR/heat/Lean replay.
+
+
+## 2026-11-05 checkpoint: entire coherent programme profile and full correlated information
+
+Input e6298e8c7781a663a026d396c6ac5b9091d85e4a; existing Draft #334 and the
+same two write paths. Phase: native realization / final composition.
+Consumer: scoped B/D independent apparatus/programme/preparation source,
+with the original full Einstein--two-CAR source and physical metric lift.
+Primary addition: "Complete retained-programme synthesis", RCP1--RCP19.
+
+Changed input: the actual retained CODE palette of 7ee.Proof II and exact
+controlled support of 7eh.H.3. The previous whole-instrument optimum assumed
+scalar effects on its entire unknown input. The new operator-valued theorem
+works off shell for E_omega=sum_theta q_(omega,theta)Pi_theta, with an actual
+CODE-preserving intertwiner and every complete record label retained.
+It proves C*C<=F^2 and attains it by conditional native recovery, where
+F=sum_theta[sum_omega sqrt(mu_omega q_(omega,theta))]Pi_theta.
+All fixed-effect apparatus rows vanish throughout this declared fibre.
+
+The actual SER masses remain (p^2,p^4). The entire honest reporter palette
+has 0<Q<=6p^7<p^2/(1+p^2)<1/2, so the original optimized feedback and minus
+full CQ-information sources have the same sign. RCP9--RCP15 treat arbitrary
+mixed/entangled CODE--DATA and every joint outcome. They retain the genuine
+Holevo correction and prove dimension-free positive derivative bounds;
+independence or a sum of binary entropies is not assumed. The full initial
+state, code-basis and old-source rows are written explicitly. At scalar
+centres they vanish or have their original normalized concentration bound.
+
+RCP16--18 apply these exact positive weights to the owned 16+24+2 field
+source, radial coframe identity and physical metric. The current native
+nine-control visibility is used; older seven-control gains/counts are not
+transported unchanged. The finite-palette recovery inherits exact CODE
+support and N_k e_k ->0, including all actual occurrence, prefix and clock
+costs. This removes the full-input scalar-effect premise away from matched
+centres; the previous theorem already allowed arbitrary unknown input.
+
+The whole-earliest-input theorem and old-history corollary are kept distinct.
+Arbitrary noncommuting old A is allowed ONLY when the real chronological
+factorization holds for EVERY competitor. An optimizer-only intertwiner is
+insufficient; its explicit hostile control is retained. Later born CODE is
+not promoted to a full input cut, and the live SourceI port is not called
+protected merely because its chosen macro restores it.
+
+Physical application still required: actual task/reference/calibration and
+input-cut admission, all genuine scene/clock rows, and the selected complete
+Cost--Info binding. The literal Book03.25 master is retained at its own scope;
+no primitive tariff is assigned from equal call counts. No full GR closure,
+raw216 promotion, task retirement or independent assembly acceptance follows.
+
+Validation: generic proof plus three bounded independent reviews; the embedded
+checker tests complex full-input instruments, noncommuting old return,
+correlated joint CQ derivatives, singular-input entropy, true-cut and CODE
+hostile controls. 501 bounded checks pass normally and with -O with identical
+receipts. This does not emit the enormous native word or replay unchanged
+GR/heat/Lean owners. Checker/receipt hashes and scope are in the primary.
+
+Final work/agent/assembly and whitespace guards pass. Assembly remains
+98 results / 22 obligations / 5 discharged, scientific_promotion=false.
