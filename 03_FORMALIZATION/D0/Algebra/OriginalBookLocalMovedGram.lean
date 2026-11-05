@@ -14,6 +14,8 @@ open D0.Algebra.OriginalBookLocalBoost
 open D0.Algebra.OriginalBookLocalStaticRoots
 open D0.Algebra.OriginalBookLocalMovedOperand
 open D0.Algebra.OriginalBookJuliaRightGram1009
+open D0.Algebra.OriginalBookJuliaLagrange1009
+open D0.Algebra.OriginalBookLocalMovedRoots
 
 namespace D0.Algebra.OriginalBookLocalMovedGram
 
@@ -65,5 +67,23 @@ theorem localMoved_rightGram_mod :
     localMovedOperand_minus_forty, localMovedOperand_plus_forty]
   simp only [Matrix.transpose_smul, smul_mul_smul, sourceRightGramMod]
   congr 1
+
+theorem localMoved_rightGram_mod_minus :
+    (localMovedOperandᴴ * localMovedOperand).map redMinus = sourceRightGramMod := by
+  rw [Matrix.map_mul, localMovedOperand_dagger_mod_minus,
+    localMovedOperand_plus_forty, localMovedOperand_minus_forty]
+  simp only [Matrix.transpose_smul, smul_mul_smul, sourceRightGramMod]
+  congr 1
+
+/-- The original modular Lagrange polynomial agrees with the local right root. -/
+theorem localMoved_rightLagrange_mod :
+    sourceLagrange ((localMovedOperandᴴ * localMovedOperand).map redPlus) =
+      localMovedRight.map redPlus := by
+  rw [localMoved_rightGram_mod, sourceRightGramMod_lagrange, localMovedRight_mod]
+
+theorem localMoved_rightLagrange_mod_minus :
+    sourceLagrange ((localMovedOperandᴴ * localMovedOperand).map redMinus) =
+      localMovedRight.map redMinus := by
+  rw [localMoved_rightGram_mod_minus, sourceRightGramMod_lagrange, localMovedRight_mod_minus]
 
 end D0.Algebra.OriginalBookLocalMovedGram
