@@ -35,6 +35,7 @@ import D0.Algebra.OriginalBookJuliaLagrangeApplication
 import D0.Algebra.OriginalBookJuliaRightGram1009
 import D0.Algebra.OriginalBookLocalBoost
 import D0.Algebra.OriginalBookLocalCreators
+import D0.Algebra.OriginalBookLocalMovedOperand
 import D0.Algebra.OriginalBookLocalMovedRoots
 import D0.Algebra.OriginalBookLocalStaticRoots
 import D0.Algebra.OriginalBookRadicalField
