@@ -18117,3 +18117,19 @@ This starts the source-specific upper-bound route; parity of the roots, Kraus
 and all effects, the dimension bound and the lower-rank transfer are not yet
 proved here. Physical admission, clock/work and #334 remain open;
 `GR_closed=false`. Final integration remains required.
+
+
+### Parity of original Julia operands and roots
+
+`D0.Geometry.OriginalBookJuliaParity` extends the actual creator parity through
+the original fixed source construction. The creator-built generator and its
+`exp(log(5/4) G)` boost commute with P; the phased live and baseline operands
+anticommute with P. Both live and baseline left/right positive CFC roots
+commute with P, using functional calculus rather than an assumed spectrum.
+The exact module passed narrow Lean and axiom checks; independent read-only
+review checked signs, phases and CFC application. Checked results use only
+`propext`, `Classical.choice`, `Quot.sound`.
+
+Walsh/Kraus parity, evenness and dimension of all future effects, lower-bound
+rank transfer, physical admission and clock/work remain open at this checkpoint.
+Owner #334 is unchanged, `GR_closed=false`, and final integration remains due.

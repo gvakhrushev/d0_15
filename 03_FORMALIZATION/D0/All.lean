@@ -535,6 +535,7 @@ import D0.Geometry.OriginalBookCreatorParity
 import D0.Geometry.OriginalBookEffectWords
 import D0.Geometry.OriginalBookGoldenCompleteness
 import D0.Geometry.OriginalBookGoldenKraus
+import D0.Geometry.OriginalBookJuliaParity
 import D0.Geometry.OriginalBookJuliaRowCompleteness
 import D0.Geometry.OriginalBookJuliaWords
 import D0.Geometry.OriginalBookMovedJuliaLeft
