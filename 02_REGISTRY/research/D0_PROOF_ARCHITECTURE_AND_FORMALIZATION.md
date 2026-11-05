@@ -17831,3 +17831,30 @@ evidence or producer authenticity. Independent compaction failed because source
 pages did not reproduce from locator bytes and pins; its root cause remains
 under investigation. This overview is not a verified 50-case pass, C0
 acceptance or physical GR selection.
+
+
+### Positive left Julia root for the moved original D input
+
+`D0.Geometry.OriginalBookMovedJuliaLeft` uses the concrete creator and boost
+at `theta=log(5/4)`, `ν=3/5` and the original phase `i`, with the boost on
+the right. It derives the twelve nonzero entries of `W=40 c_D U`, then its
+left Gram diagonal directly from these matrices, without an assumed spectrum.
+The actual complex left defect has diagonal values `1`, `16/25` and
+`12071/20000`. The module proves strict positive definiteness and uses
+`CFC.sqrt_unique` to identify its positive principal root with diagonal values
+`1`, `4/5` and `sqrt(12071/20000)` in the corresponding positions. The
+previously open **left** moved-D root is thereby supplied at this exact source
+point; the right root, derivatives, 128 Kraus and future-effect span are
+still open. This is not physical admission, clock/work or GR selection.
+
+The exact source passed full-file narrow Lean checking and independent
+read-only review; nine checked results report `propext`, `Classical.choice`,
+`Quot.sound`, without `native_decide`, `sorry` or heartbeat override.
+`tools/check_original_moved_julia_left.py` verifies both pinned source blob
+hashes before executing the trusted uniform module and compares all entries of
+W, the analytic boost, source numerical root and positive branch at tolerance
+`1e-12`. It uses its own SciPy `expm`, not a literal call of the source's
+`native` function; it does not formally verify SciPy. Three injected NaN
+controls and a negative-branch control pass by rejection. The script requires
+NumPy, SciPy and SymPy. #334 remains the scientific owner, and
+`GR_closed=false`; a final integration build on this added module remains due.
