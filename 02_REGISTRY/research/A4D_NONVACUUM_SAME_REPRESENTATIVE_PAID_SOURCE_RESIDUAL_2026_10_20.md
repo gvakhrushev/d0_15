@@ -176205,3 +176205,640 @@ Final affected work/agent/assembly and whitespace guards pass. Assembly
 remains 98 results / 22 obligations / 5 discharged, promotion false. Only
 the existing primary and task brief change; unchanged GR/heat/Lean owners
 were not replayed.
+
+
+## Full-instrument determinant synthesis: unrestricted apparatus rows and the paid-clock Einstein source
+
+5 November 2026. Existing Draft #334, native realization / final composition.
+Input: `cd1c0f38e4f9a3d723b0a7d152c537bb4d3a0505`. Consumers: RCP2/RCP9,
+CL H.6, and the independent implementation/clock part of scoped B/D.
+
+The new observation is that the original action needs a DETERMINANT bound,
+not the stronger operator order RCP4. Its previous CODE-mixing counterexample
+does not obstruct the determinant. A block determinant proof removes output
+CODE preservation from the whole-earliest-input apparatus optimum. Combining
+this with CL's actual identity words controls the complete H+J source without
+return attenuation, including independently varied padding cross-couplings.
+The original field source and physical metric are then consumed unchanged.
+
+### FD1. Same true input and effects; no output CODE restriction
+
+Use RCP1's actual earliest input H, complete mutually orthogonal outcome
+spaces P_omega, and actual born embedding j. All initially unknown columns
+and every generated record remain. Assume, on the positive valid outcomes,
+
+    j* P_omega j = mu_omega I,    mu_omega>0,
+    K_omega* K_omega = E_omega = sum_theta q_omega,theta Pi_theta,
+    q_omega,theta>0,    sum_omega E_omega=I,
+    range K_omega <= range P_omega.                       (FD1)
+
+The input effects commute because this is the actual retained programme
+family. There is NO condition K_omega Pi_theta=Pi_theta^out K_omega.
+The declared operation task fixes the original full effects and allows
+record-conditional reversible recovery with the required paid future-reader
+transport. A task additionally fixing the untransported conditional
+backaction is a different domain, as already recorded in G/RCP.
+
+Put j_omega=P_omega j/sqrt(mu_omega), C=j*sum_omega K_omega, and
+
+    f_theta=sum_omega sqrt(mu_omega q_omega,theta),
+    F=sum_theta f_theta Pi_theta,    X=C*C,
+    P(X)=sum_theta Pi_theta X Pi_theta.                   (FD2)
+
+For x in H_theta, the triangle inequality gives ||Cx||<=f_theta||x||.
+Therefore P(X)<=F^2, even though X<=F^2 can fail. For a>0 and eta>0,
+
+    det(aI+eta X)
+      <= product_theta det(a I_theta+eta X_theta,theta)
+      <= product_theta (a+eta f_theta^2)^dim(H_theta)
+       = det(aI+eta F^2).                                (FD3)
+
+The first inequality follows by successive positive Schur complements:
+det[[B,T],[T*,D]]=det(B)det(D-T*B^-1T)<=det(B)det(D).
+The second uses P(X)<=F^2. Thus no external matrix-classification premise
+is needed. The already constructed instrument
+
+    K_omega,*=j_omega sqrt(E_omega),    C_*=F              (FD4)
+
+attains the bound. Its isometries have the same Gram as the original ones;
+unitary completion WITHIN each recorded outcome implements the recovery.
+This acts correctly on all unknown/reference columns without reading or
+resetting their state. The previous exact-support NR/RCP native construction
+already supplies this chosen target; broadening competitors needs no new
+native target or stronger compiler.
+
+Consequently J=-Tr log[(1-z)I+zC*C], 0<z<1, has this GLOBAL minimum on the
+entire fixed-effect instrument fibre. Output CODE mixing is included.
+The input effect algebra and original outcome marks are still real data.
+No mathematical pinching P is physically performed.
+
+### FD2. Equality, stability, and every apparatus first row
+
+Here ||C||<=1 and F^2<=I. Write Delta=F^2-P(X)>=0. Splitting the logarithm
+through (1-z)I+zP(X) gives the quantitative bound
+
+    J(C)-J(F) >= z Tr Delta + (z^2/2)||X-P(X)||_HS^2.     (FD5)
+
+For the first term integrate the log-determinant derivative along Delta;
+the inverse matrix is >=I. For the second use the Hessian
+Tr(B^-1 T B^-1 T)>=||T||_HS^2 on 0<B<=I. Its linear term vanishes because
+the reference inverse is block diagonal and T is off diagonal. In particular,
+
+    J(C)-J(F)<=epsilon
+       => ||C*C-F^2||_HS <= (epsilon+sqrt(2epsilon))/z.    (FD6)
+
+The optimal GRAM is uniquely F^2; the complete instrument need not be unique.
+For example a common output unitary can give C=UF. Its required future
+observations retain their own physical transport.
+
+All smooth two-sided fixed-effect apparatus first rows vanish at FD4.
+For the enlarged tangent class it is generally FALSE that delta(C*C)=0.
+Only its diagonal Pi_theta blocks vanish. The logarithmic first-source
+weight is block diagonal, so it annihilates the remaining off-diagonal
+derivative. This includes complex phases, CODE mixing, conditional recovery
+and independent occurrences that leave the specified complete effects fixed.
+
+The full efficient CQ information depends only on E_omega and the actual
+input rho, as in RCP9. It is unchanged by these conditional isometries,
+even for mixed or entangled input and correlated joint outcomes.
+
+The same optimum holds for Tr chi(C*C) for every convex decreasing scalar
+chi: trace convexity under block pinching gives Tr chi(X)>=Tr chi(P(X)),
+and eigenvalue monotonicity gives Tr chi(P(X))>=Tr chi(F^2). Operator
+convexity is unnecessary. This is a class of compatible spectral prices,
+not a proof that an unspecified physical Cost belongs to that class.
+
+### FD3. Explicit reactions preserve the field source
+
+Set M=(1-z)I+zF^2. On the positive valid-effect domain the constrained
+Lagrangian and its DERIVED multipliers are
+
+    L=J+sum_omega Tr[Lambda_omega(K_omega*K_omega-E_omega(Y))],
+    Lambda_omega=z sqrt(mu_omega) E_omega^(-1/2) F M^-1. (FD7)
+
+All displayed factors commute and Lambda_omega is positive. At FD4,
+2K_omega,* Lambda_omega cancels the J-gradient
+-2z sqrt(mu_omega) j_omega F M^-1. Thus every apparatus equation,
+including its constraint normal, has its actual response. The remaining
+logical-field covector is
+
+    D_Y L=-sum_omega Tr[Lambda_omega D_Y E_omega].        (FD8)
+
+It is not zero off shell. Differentiating the profile J(F(E)) gives
+exactly the same expression, so optimizing the apparatus has not screened
+the field. For a changing common input basis E_omega -> U E_omega U*,
+the earliest-input J profile is spectrally invariant even off shell.
+Information/preparation sources retain their separate RCP14 formula.
+
+Invalid outcome sectors with zero effect are retained in j and the clock.
+They satisfy the LINEAR support condition K_invalid=0. The quadratic
+equation K_invalid*K_invalid=0 has a zero differential at the centre and
+must not be used to erase its normal. A linear reaction cancels the actual
+gradient there. NR/RCP supplies exact record support; there is no discarded
+failure branch or fictitious inverse of a zero effect.
+
+### FD4. Complete clock and approximate native sources: padding without attenuation
+
+Apply the existing CL1--CL12 to the actual recovered native word. AFTER
+its last birth and BEFORE its final closing gate insert m literal pairs
+CX(a,b);CX(a,b) on actual admitted live WORK wires. There are no new births.
+Their full endpoint is identity, so C, E_omega, j, and the feedback-derived
+positive field gain Gamma_h are exactly unchanged. The real clock instead
+has L_m=L+2m, D_m=D+2md and all 425D_m heat modes. This is paid operation
+length, not a free idle instruction.
+
+For the actual original beta/scene, CL proves
+
+    ||D H/Gamma_h||_(full,*) <= A_(L+2m) C_h(m)/Gamma_h,
+    A_L <= (176/359) (x^L/L!)/[(1-x^2)(1-x/L)], x=2/55,
+    C_h(m)<=C_base,h+2m C_pad,h.                         (FD9)
+
+This is uniform for arbitrary INTERNAL unitary endpoints on that fixed
+birth layout and original scene factorization. The full occurrence norm includes forward/reverse operations, recovery, old
+prefix occurrences and independently varied padding gates. The exact
+finite-price version CL10 applies to actual equal-layout comparisons.
+
+CL H.6 previously made only spectator-supported padding return-neutral.
+FD3 now supplies the missing return argument for EVERY added direction
+tangent to the true fixed-effect task, including cross-couplings to CODE
+and DATA. Their ideal DJ is zero by FD2; their full DH is bounded by FD9.
+Effect-changing normals retain FD7/FD8; arbitrary new input/cut/scene
+variations are not set to zero. The return-neutral result is a first-source
+statement at the profiled centre, not equality of all perturbed endpoints.
+
+There is an explicit joint native schedule. At a fixed finite field chart,
+the owned exact-support recovery has e_k<=C_h 12^(-k) and
+N_k<=C_h 5^k+poly(k), including all actual calls. Use m_k=k+m_0, where
+m_0 is any required finite layout offset. Positive q margins and the real
+finite field lift bound the ideal/actual tangent comparison constants.
+The current actual gain Gamma_(h,k) tends to the positive Gamma_(h,*) on
+this FIXED finite chart by the inherited recovery-source estimates, and
+is exactly independent of the padding m. It therefore remains bounded
+below once the approximation is sufficiently accurate. Then
+
+    ||D J_vertical/Gamma_h||
+          <= C_h (N_k+2m_k)e_k/Gamma_h -> 0,
+    ||D H/Gamma_h||
+          <= A_(L_k+2m_k) C_h(N_k+2m_k)/Gamma_h -> 0.   (FD10)
+
+The first limit uses 5/12<1; the factorial in A_L dominates the exponential
+occurrence growth in the second. For the first estimate one may compare
+the log-gradient at C and F and differentiate the ACTUAL fixed-effect
+equation at K=K_*+O(e_k); the remaining diagonal source is O(e_k) times
+the actual occurrence norm, with the positive joint-effect margin retained.
+This is the NR/RCP occurrence-source budget on the enlarged tangent class.
+
+At each geometric h all chart, true-input, norm and inverse-gain constants
+are fixed FIRST. Choose a finite k meeting the desired normalized error;
+then proceed to the next h. There is no mesh-uniform positive gain assumption
+and no division by an unestimated vanishing gain. When finite chords replace
+derivatives, retain the actual chord-size, price-error and basis constants
+from FA5/CL10 and choose the comparison precision accordingly.
+
+No late attenuation p^K is used. Appending an unguarded born-work attenuation
+after a global recovery would require re-optimizing that whole new history:
+its undo can preserve the effects while improving return. FD9--FD10 avoid
+that issue with the already owned endpoint-preserving words.
+
+This proves normalized current H+J source control, not an exact finite heat
+zero or an exact joint-critical native word. Canonical births, the fixed
+primitive scene/beta/z and the same-layout comparison task are explicit.
+A separately free change of those data needs its actual source.
+
+### FD5. Substitute the original Einstein--two-CAR source
+
+For the actual fixed sequence of SER blocks with one input programme,
+mu_0=p^2, mu_1=p^4, f(q)=p sqrt(1-q)+p^2 sqrt(q), and
+f_theta=product_j f(q_theta,j). On the entire honest palette,
+
+    0<q_theta,j<=6p^7 < p^2/(1+p^2) < 1/2,
+    D J_profile=-sum_theta,j L^J_theta,j Dq_theta,j,
+    L^J_theta,j=2 dim(H_theta) z f_theta^2
+            /[(1-z)+z f_theta^2] * f'(q_theta,j)/f(q_theta,j)>0. (FD11)
+
+Thus the apparatus and clock reduction leaves a strictly nonzero source.
+Insert the EXISTING RCP16--17 pre-sign field/preparation lift, the radial
+coframe identity, the full 16+24+2 moment source and the MATERIAL metric
+map. The independent current field rows give the same general
+Einstein--two-CAR equations at the already proved regular kappa limit.
+The inherited partial field lift holds the specified independent operands
+fixed and is not inferred merely from a causal graph or a positive weight.
+The right lift, inverse norm, boundary conditions, actual gain and complete
+native errors remain those of that source theorem. There is no new action
+fit, curvature expansion, extra scalar, or assumption of a field minimum.
+
+The new substitution is the entire independent implementation/clock block:
+its remaining normalized source tends to zero while FD8/FD11 remains.
+General Einstein soundness/recovery is inherited through the existing
+common map, with its regular computable class and same-recorded-task scope.
+Fixed-effect implementation optimality does not make the field action a
+minimum. The original source can still be an indefinite stationary action.
+
+### FD6. Actual serial code and complete information have the same source sign
+
+One further exact compatibility statement uses no fitted information
+coefficient. For M full serial 0/10 records, let l(omega)=M+#1(omega).
+The actual prefix-code prior is pi_code(omega)=p^l(omega), and sums to one
+because p+p^2=1. Its expected PARSED length is
+
+    C_code=M+sum_j Tr(rho Q_j).
+
+Use the full joint state sigma_(Omega R)=direct_sum_omega
+rho^(1/2)E_omega rho^(1/2) on the formal purification reference. Its marginal
+is rho, and its conditional entropy is precisely RCP9's I_rec. Hence
+
+    (ln phi) C_code-I_rec
+       =D(sigma_(Omega R) || pi_code tensor rho).        (FD12)
+
+This includes all CODE--DATA correlations and the Holevo correction. It
+does not physically dephase the retained coherent history or add a new
+reference primitive. Writing p_theta=Tr(Pi_theta rho) and using RCP12,
+
+    D(C_code-I_rec/ln phi)=-sum_theta,j L^code_theta,j Dq_theta,j,
+    L^code_theta,j=u_theta,j/ln phi-p_theta
+       >= c_code p_theta,
+    c_code=ln[(1-6p^7)/(6p^7)]/ln phi-1
+          =1.79550715185...>0.                          (FD13)
+
+Thus the actual complete code score reinforces the original optimized
+feedback source throughout the honest collar, even when the joint records
+are correlated. FD13 is the partial q differential at FIXED rho and input
+PVM. Away from a scalar centre, retain D_rho C_code=sum_j Tr[(D rho)Q_j],
+the actual basis row and RCP14's information preparation source. At scalar
+matched effects the input-state/basis rows vanish
+exactly, for every input rank. If |q_theta,j-q_j,*|<=delta_j, the complete
+code-score value error is at most (1+l_max/ln phi)sum_j delta_j: the 1
+comes from the parsed-cost term and the other term from RCP15. Two arbitrary
+preparation endpoints contribute at most twice this bound, divided by the
+real 2|t|Gamma in a symmetric finite-source comparison, plus native errors.
+
+The code prior (p,p^2) and born-return masses (p^2,p^4) are DIFFERENT actual
+objects. Their respective preferred probabilities p^2 and p^2/(1+p^2)
+both lie above the honest reporter collar; that is why the signs agree.
+FD12 is a parsed-record identity. It does NOT identify all executed edge
+Cost, compiler work or whole-history weights with parsed code length, and
+does not add J and this score to the physical action by definition.
+
+### FD7. True-cut boundary and the exact parent conclusion
+
+FD3 applies at the actual earliest input, with no separate old-return
+factorization premise. An old A commuting with all input Pi_theta also
+permits the same determinant proof. For arbitrary noncommuting old A the
+broader theorem is false: the exact checker below exhibits a fixed-effect
+CODE-mixing direction with DJ<0 at the aligned point. Keep RCP3 at its
+original CODE-preserving scope when that separate chronological interface
+is used. A later born rank-one CODE is never promoted to a full input cut.
+
+The original Book03.25 H+J and its stationary law are legitimate stated
+inputs for this specialization; deriving them again from Books00--01 is
+not required merely to APPLY them. Likewise the architecture needs one
+admitted recorded task family, not a universal scheduler choosing that
+family in every possible history. The task's truthful original effects,
+generated references/visibility and allowed reader transport must actually
+be justified. FD7's reactions apply to this effect task; FN's stronger
+full-operation price quotient is not silently transferred to it.
+
+What is newly proved is a wider global apparatus profile, its explicit
+reaction and stable Gram, and a complete current H+J source diagonal using
+unattenuated paid clocks. The existing native source and metric then remain
+available after including all fixed-effect implementation directions.
+Physical full Cost--Info binding for the stronger original contract,
+unproved task enlargements, and exact finite joint-root obligations are
+not established by this composition. `GR_closed=false`; no raw216, claim,
+task-lifecycle or assembly-acceptance promotion is made.
+
+
+### FD7a. Consume the concurrent actual-born-CODE result at its own true cut
+
+Concurrent input `90e5dd4fe8766577ae13f4a800162bd6fed31401` and its
+BCPR1--BCPR19 are preserved. The unattenuated clock construction also
+applies to its ACTUAL whole word A -> middle processor/recovery -> A*,
+with true input rank r, both independently varied loading legs and every
+born helper. After the last birth, before the actual final gate, insert
+m_k=k+m_0 literal paid CX;CX pairs. The complete endpoint, compressed
+corner C_E, original effects and actual field gain remain unchanged.
+
+On BCPR's OWN declared fibre, BCPR4/6 supplies fixed-loader, fixed-effect,
+CODE-preserving middle-instrument stationarity. BCPR9/15/19 separately
+supplies both independent loader legs, basis rows and their normalized
+nonlinear debt. The complete current-master error is bounded by
+
+    inherited field error + actual BCPR19 loader/basis debt
+      + C_h(N_k+2m_k)e_k/Gamma_h
+      + A_(L_k+2m_k) C_h(N_k+2m_k)/Gamma_h.             (FD14)
+
+Choose the reporter remainder against the REAL loader/basis occurrence
+norms, then use the owned recovery and FD10 diagonal. A loader fixed before
+that choice is already allowed by BCPR7. If its norms grow with the
+construction, their growth remains in the choice; it cannot be discarded.
+This supplies the same full paid-clock application without a fictitious
+full-CODE input or late attenuation.
+
+The compressed effects generally do NOT commute. FD3 therefore does not
+automatically remove BCPR's middle CODE-preservation premise. Its distinct
+competitor class and the noncommuting-old exclusion remain intact. The
+new common point is the actual full clock/source construction, not an
+unproved identification of the two instrument theorems.
+
+
+### FD8. Independent review and bounded checks
+
+The determinant/gap/reaction proof and the full-clock composition were
+reviewed separately. The decisive finite controls include the old RCP
+CODE-flip (operator order fails while the determinant optimum survives),
+an exact noncommuting-old failure, arbitrary complex outcome instruments,
+the actual Golden code margin, full correlated CQ relative entropy, and
+the occurrence/thermal schedule. The written arguments prove the generic
+claims; finite checks do not emit the enormous native word or prove an
+unspecified physical valuation. The checker and receipt follow.
+
+The changed checker passes 3163 bounded checks. The generic analytic proof
+is FD1--FD14. Checks retain the original z=2^-20 and a strict noncommuting
+old-return counterexample. The schedule entries are rational bound fixtures,
+not observed costs of an emitted native compiler.
+
+<!-- BEGIN FD FULL INSTRUMENT CHECKER -->
+```python
+import numpy as np, sympy as sp, json, math, hashlib
+from collections import Counter
+from pathlib import Path
+rng=np.random.default_rng(20261105)
+p=(np.sqrt(5)-1)/2
+checks=[]
+def req(c,n):
+    if not c: raise AssertionError(n)
+    checks.append(n)
+def unitary(n):
+    x=rng.normal(size=(n,n))+1j*rng.normal(size=(n,n))
+    u,r=np.linalg.qr(x)
+    return u @ np.diag(np.diag(r)/np.abs(np.diag(r)))
+def ld(x):
+    a,b=np.linalg.slogdet(x)
+    req(abs(a-1)<1e-10,'positive determinant')
+    return b
+for dims in ([1,1],[2,1],[1,2,3]):
+    n=sum(dims); codes=np.repeat(np.arange(len(dims)),dims)
+    for m in (1,2):
+        for trial in range(30):
+            qs=rng.uniform(.025,.22,size=(len(dims),m))
+            mu=[]; ev=[]
+            for b in range(2**m):
+                bits=[(b>>j)&1 for j in range(m)]
+                mu.append(np.prod([p**(4 if bb else 2) for bb in bits]))
+                qth=np.prod([qs[:,j] if bb else 1-qs[:,j] for j,bb in enumerate(bits)],axis=0)
+                ev.append(qth[codes])
+            mu=np.array(mu); ev=np.array(ev)
+            ff=np.sum(np.sqrt(mu[:,None]*ev),axis=0)
+            F=np.diag(ff); B0=F@F
+            UU=[unitary(n) for _ in mu]
+            C=sum(np.sqrt(m0)*uu@np.diag(np.sqrt(ee)) for m0,uu,ee in zip(mu,UU,ev))
+            B=C.conj().T@C
+            a=.71; eta=.29
+            req(ld(a*np.eye(n)+eta*B)<=ld(a*np.eye(n)+eta*B0)+2e-12,'Fischer global determinant bound without output CODE preservation')
+            D=np.zeros_like(B)
+            for th in range(len(dims)):
+                ii=np.where(codes==th)[0]; D[np.ix_(ii,ii)]=B[np.ix_(ii,ii)]
+            slack=B0-D; off=B-D
+            gap=ld(a*np.eye(n)+eta*B0)-ld(a*np.eye(n)+eta*B)
+            gaplower=eta*np.trace(slack).real+eta**2*np.linalg.norm(off,'fro')**2/2
+            req(gap>=gaplower-2e-12,'quantitative logdet coercivity gap')
+            req(np.linalg.norm(B-B0,'fro')<=gap/eta+np.sqrt(max(0,2*gap))/eta+2e-12,'near-optimum Gram recovery bound')
+            for th in range(len(dims)):
+                ii=np.where(codes==th)[0]
+                req(np.linalg.eigvalsh(B0[np.ix_(ii,ii)]-B[np.ix_(ii,ii)]).min()>-1e-12,'per-input-sector Gram bound')
+            # Independent old return commuting with input sectors. Internal matrices need not be scalar.
+            A=np.zeros((n,n),complex)
+            for th in range(len(dims)):
+                ii=np.where(codes==th)[0]; z=rng.normal(size=(len(ii),len(ii)))+1j*rng.normal(size=(len(ii),len(ii)))
+                at=z@z.conj().T; at/=np.linalg.norm(at,2); A[np.ix_(ii,ii)]=at
+            eig,Q=np.linalg.eigh(A); As=(Q*np.sqrt(np.maximum(eig,0)))@Q.conj().T
+            req(ld(a*np.eye(n)+eta*As@B@As)<=ld(a*np.eye(n)+eta*As@B0@As)+2e-12,'commuting old Gram extension')
+            # Arbitrary fixed-effect complex tangent at aligned recovery.
+            Z=[]
+            for _ in mu:
+                z=rng.normal(size=(n,n))+1j*rng.normal(size=(n,n)); Z.append(z-z.conj().T)
+            dC=sum(np.sqrt(m0)*z@np.diag(np.sqrt(ee)) for m0,z,ee in zip(mu,Z,ev))
+            dB=F@dC+dC.conj().T@F
+            deriv=-eta*np.trace(np.linalg.solve(a*np.eye(n)+eta*B0,dB))
+            req(abs(deriv)<2e-12,'all complex fixed-effect apparatus first rows vanish')
+            # Derived effect-constraint reactions solve ambient apparatus rows.
+            Minv=np.linalg.inv(a*np.eye(n)+eta*B0)
+            for mu0,ee in zip(mu,ev):
+                Lam=eta*np.sqrt(mu0)*np.diag(1/np.sqrt(ee))@F@Minv
+                reaction=2*np.diag(np.sqrt(ee))@Lam
+                grad=-2*eta*np.sqrt(mu0)*F@Minv
+                req(np.linalg.norm(grad+reaction)<2e-12,'derived apparatus reaction retains effect source')
+            # General decreasing convex spectral price chi(x)=exp(-x), same optimum.
+            req(np.exp(-np.linalg.eigvalsh(B)).sum()>=np.exp(-np.diag(B0)).sum()-2e-12,'decreasing convex spectral price profile')
+# Reuse the prior RCP hostile output-CODE flip: operator order fails but determinant survives.
+qflip=np.array([.05,.18]); swap=np.array([[0.,1.],[1.,0.]])
+cf=p*np.diag(np.sqrt(1-qflip))+p*p*swap@np.diag(np.sqrt(qflip))
+ff=p*np.sqrt(1-qflip)+p*p*np.sqrt(qflip)
+bf=cf.T@cf; f2=np.diag(ff*ff)
+req(np.linalg.eigvalsh(f2-bf).min()<-1e-4,'original CODE-flip control violates Loewner order')
+gf=ld(.71*np.eye(2)+.29*f2)-ld(.71*np.eye(2)+.29*bf)
+req(gf>0,'original CODE-flip control respects global determinant optimum')
+df=np.diag(np.diag(bf))
+req(gf>=.29*np.trace(f2-df)+.29**2*np.linalg.norm(bf-df,'fro')**2/2-1e-12,'original CODE-flip satisfies coercive bound')
+# Exact hostile state: original SER masses and two q values within the polar collar.
+x=(sp.sqrt(5)-1)/2
+q1=sp.Rational(25,169); q2=sp.Rational(49,625)
+F=sp.diag(x*sp.Rational(12,13)+x**2*sp.Rational(5,13),x*sp.Rational(24,25)+x**2*sp.Rational(7,25))
+W=sp.Matrix([[0,-1],[1,0]])
+dC=x**2*W*sp.diag(sp.Rational(5,13),sp.Rational(7,25))
+dB=sp.simplify(F*dC+dC.T*F)
+req(sp.simplify(dB[0,1]-36*x**3/325)==0,'exact nonzero offdiagonal Gram tangent')
+req(dB[0,0]==0 and dB[1,1]==0,'exact diagonal Gram tangent zero')
+req(sp.simplify(dB.det())<0,'Loewner tangent has both signs')
+A=sp.Matrix([[sp.Rational(1,2),sp.Rational(1,4)],[sp.Rational(1,4),sp.Rational(1,2)]])
+a=sp.Rational(1,2); eta=sp.Rational(1,2)
+B=F*F
+T=a*a+a*eta*sp.trace(A*B)+eta*eta*A.det()*B.det()
+deriv=sp.simplify(-2*a*eta*A[0,1]*dB[0,1]/T)
+req(deriv<0,'noncommuting old Gram breaks the proposed optimum')
+
+# The original physical z is also checked, rather than borrowed from a large-z fixture.
+z0=2**-20
+actual_gap=ld((1-z0)*np.eye(2)+z0*f2)-ld((1-z0)*np.eye(2)+z0*bf)
+req(actual_gap>0,'original z=2^-20 determinant control')
+# A zero-effect invalid outcome needs a linear support condition. Its quadratic
+# effect has zero first differential while a coherent born-return normal survives.
+mu_invalid=1-p*p-p**4
+invalid_normal=-2*z0*np.sqrt(mu_invalid)*np.sum(ff/((1-z0)+z0*ff*ff))
+req(invalid_normal<0,'invalid-support normal is not erased by its zero quadratic differential')
+# Exact Golden margins for the full honest palette.
+qmax=6*x**7
+qmu=x*x/(1+x*x)
+req(bool(sp.simplify(qmu-qmax)>0),'exact honest palette below return optimum')
+req(bool(sp.simplify(x*x-qmax)>0),'exact honest palette below code-prior optimum')
+code_margin=math.log((1-float(qmax))/float(qmax))/math.log((1+math.sqrt(5))/2)-1
+req(code_margin>1.79,'strict complete-code information margin')
+# Full correlated CQ states, including a singular input; no binary-entropy sum.
+def hmat(a,fn,eps=1e-13):
+    w,v=np.linalg.eigh((a+a.conj().T)/2)
+    return (v*fn(np.maximum(w,eps)))@v.conj().T
+def entropy(a):
+    w=np.linalg.eigvalsh((a+a.conj().T)/2); w=w[w>1e-13]
+    return -np.dot(w,np.log(w))
+def joint(q):
+    out=[]
+    for b in range(4):
+        bits=[(b>>j)&1 for j in range(2)]
+        out.append(np.diag(np.repeat(np.prod([q[:,j] if bb else 1-q[:,j]
+                                            for j,bb in enumerate(bits)],axis=0),2)))
+    return out
+q=np.array([[.05,.18],[.13,.07]])
+r=rng.normal(size=(4,4))+1j*rng.normal(size=(4,4)); rho=r@r.conj().T+.2*np.eye(4); rho/=np.trace(rho)
+v=rng.normal(size=4)+1j*rng.normal(size=4); v/=np.linalg.norm(v)
+inputs=[rho,np.outer(v,v.conj())]
+logphi=math.log(1/p)
+labels=[[(b>>j)&1 for j in range(2)] for b in range(4)]
+lengths=np.array([2+sum(bits) for bits in labels])
+prior=p**lengths
+req(abs(prior.sum()-1)<1e-14,'complete serial code prior is normalized')
+def score(q,rho):
+    root=hmat(rho,np.sqrt); blocks=[root@e@root for e in joint(q)]
+    probs=np.array([np.trace(b).real for b in blocks])
+    inf=sum(entropy(b) for b in blocks)-entropy(rho)
+    cost=float(np.dot(probs,lengths))
+    return cost-inf/logphi,blocks,probs,inf,cost
+for ir,rho1 in enumerate(inputs):
+    value,blocks,probs,inf,cost=score(q,rho1)
+    kl=-sum(entropy(b) for b in blocks)-float(np.dot(probs,np.log(prior)))+entropy(rho1)
+    req(abs(kl-logphi*value)<2e-11,'complete quantum relative-entropy code identity')
+    req(kl>=-1e-12,'complete code relative entropy nonnegative')
+    pop=np.array([np.trace(rho1[:2,:2]).real,np.trace(rho1[2:,2:]).real])
+    for th in range(2):
+        for j in range(2):
+            dq=np.zeros_like(q); dq[th,j]=1e-6
+            der=(score(q+dq,rho1)[0]-score(q-dq,rho1)[0])/2e-6
+            req(der<=-code_margin*pop[th]+2e-7,'complete correlated code source reinforces feedback')
+    qs=np.array([[.08,.12],[.08,.12]])
+    expected=2+.08+.12-sum(-t*np.log(t)-(1-t)*np.log(1-t) for t in qs[0])/logphi
+    req(abs(score(qs,rho1)[0]-expected)<2e-11,'scalar-centre code score independent of input rank')
+# Exact rational schedule fixtures consume CL8, rather than replaying its clock theorem.
+xx=sp.Rational(2,55)
+def A(L): return sp.Rational(176,359)*xx**L/sp.factorial(L)/((1-xx**2)*(1-xx/L))
+schedule=[]
+for k in (1,2,3,4,6,8):
+    N=5**k; m=k; L=1+2*m
+    body=sp.Rational(N+2*m,12**k)
+    thermal=A(L)*(N+2*m)
+    req(body<=2*sp.Rational(5,12)**k,'noncircular total-occurrence error bound')
+    if schedule:
+        req(float(thermal)<schedule[-1]['heat_bound'],'padded full-source factorial estimate decreases')
+    schedule.append({'k':k,'fixture_occurrences':N+2*m,'L':L,'occurrence_error':float(body),'heat_bound':float(thermal)})
+CX=sp.Matrix([[1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,1,0]])
+req(CX*CX==sp.eye(4),'actual two-call padding endpoint identity')
+out={'schema':'d0.full-instrument-determinant-clock-synthesis/1','status':'PASS',
+     'checks':len(checks),'groups':dict(Counter(checks)),
+     'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+     'exact_offdiagonal_gram_tangent':str(sp.simplify(dB[0,1])),
+     'noncommuting_old_derivative':str(deriv),'noncommuting_old_derivative_numeric':float(deriv),
+     'original_CODE_flip_logdet_gap_large_z':float(gf),'original_z_logdet_gap':float(actual_gap),
+     'code_information_margin':code_margin,'schedule_fixtures':schedule,
+     'scope':'analytic proof plus bounded exact and numerical controls; no giant native-word emission, unrestricted physical price law or finite GR-root claim',
+     'GR_closed':False}
+print(json.dumps(out,sort_keys=True,indent=2))
+```
+<!-- END FD FULL INSTRUMENT CHECKER -->
+
+<!-- BEGIN FD FULL INSTRUMENT RECEIPT -->
+```json
+{
+  "GR_closed": false,
+  "checker_sha256": "b150a79c46d4fe0e80b827641f108381df00465a82ec7df37d0c335a5c46d269",
+  "checks": 3163,
+  "code_information_margin": 1.7955071518527301,
+  "exact_offdiagonal_gram_tangent": "-72/325 + 36*sqrt(5)/325",
+  "groups": {
+    "Fischer global determinant bound without output CODE preservation": 180,
+    "Loewner tangent has both signs": 1,
+    "actual two-call padding endpoint identity": 1,
+    "all complex fixed-effect apparatus first rows vanish": 180,
+    "commuting old Gram extension": 180,
+    "complete code relative entropy nonnegative": 2,
+    "complete correlated code source reinforces feedback": 8,
+    "complete quantum relative-entropy code identity": 2,
+    "complete serial code prior is normalized": 1,
+    "decreasing convex spectral price profile": 180,
+    "derived apparatus reaction retains effect source": 540,
+    "exact diagonal Gram tangent zero": 1,
+    "exact honest palette below code-prior optimum": 1,
+    "exact honest palette below return optimum": 1,
+    "exact nonzero offdiagonal Gram tangent": 1,
+    "invalid-support normal is not erased by its zero quadratic differential": 1,
+    "near-optimum Gram recovery bound": 180,
+    "noncircular total-occurrence error bound": 6,
+    "noncommuting old Gram breaks the proposed optimum": 1,
+    "original CODE-flip control respects global determinant optimum": 1,
+    "original CODE-flip control violates Loewner order": 1,
+    "original CODE-flip satisfies coercive bound": 1,
+    "original z=2^-20 determinant control": 1,
+    "padded full-source factorial estimate decreases": 5,
+    "per-input-sector Gram bound": 420,
+    "positive determinant": 1084,
+    "quantitative logdet coercivity gap": 180,
+    "scalar-centre code score independent of input rank": 2,
+    "strict complete-code information margin": 1
+  },
+  "noncommuting_old_derivative": "10923010800/146044489621 - 5435904240*sqrt(5)/146044489621",
+  "noncommuting_old_derivative_numeric": -0.008436063579095654,
+  "original_CODE_flip_logdet_gap_large_z": 0.10159092609718634,
+  "original_z_logdet_gap": 2.7111867110116295e-07,
+  "schedule_fixtures": [
+    {
+      "L": 3,
+      "fixture_occurrences": 7,
+      "heat_bound": 2.787647916244213e-05,
+      "k": 1,
+      "occurrence_error": 0.5833333333333334
+    },
+    {
+      "L": 5,
+      "fixture_occurrences": 29,
+      "heat_bound": 7.598295903280787e-09,
+      "k": 2,
+      "occurrence_error": 0.2013888888888889
+    },
+    {
+      "L": 7,
+      "fixture_occurrences": 131,
+      "heat_bound": 1.07836735184361e-12,
+      "k": 3,
+      "occurrence_error": 0.07581018518518519
+    },
+    {
+      "L": 9,
+      "fixture_occurrences": 633,
+      "heat_bound": 9.558672571442865e-17,
+      "k": 4,
+      "occurrence_error": 0.03052662037037037
+    },
+    {
+      "L": 13,
+      "fixture_occurrences": 15637,
+      "heat_bound": 2.4030205505004253e-25,
+      "k": 6,
+      "occurrence_error": 0.005236799661351166
+    },
+    {
+      "L": 17,
+      "fixture_occurrences": 390641,
+      "heat_bound": 1.836438347257216e-34,
+      "k": 8,
+      "occurrence_error": 0.00090850611464168
+    }
+  ],
+  "schema": "d0.full-instrument-determinant-clock-synthesis/1",
+  "scope": "analytic proof plus bounded exact and numerical controls; no giant native-word emission, unrestricted physical price law or finite GR-root claim",
+  "status": "PASS"
+}
+```
+<!-- END FD FULL INSTRUMENT RECEIPT -->
+
+Final extraction replay with warnings treated as errors reproduces the embedded
+receipt byte-for-byte. Work, agent-protocol, assembly and whitespace guards
+pass. The assembly remains 98 results / 22 obligations / 5 discharged with
+scientific_promotion=false. Only the existing primary artifact and task brief
+are changed; the concurrent actual-born-CODE result is preserved.

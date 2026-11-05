@@ -22565,3 +22565,68 @@ Final affected work/agent/assembly and whitespace guards pass. Assembly
 remains 98 results / 22 obligations / 5 discharged, promotion false. Only
 the existing primary and task brief change; unchanged GR/heat/Lean owners
 were not replayed.
+
+
+## 2026-11-05 checkpoint: full-instrument determinant and unattenuated paid-clock source
+
+Input cd1c0f38e4f9a3d723b0a7d152c537bb4d3a0505; same existing Draft334,
+primary artifact and task. Phase: native realization / final composition.
+Consumer: RCP2/RCP9 and CL H.6 independent implementation/clock block of
+scoped B/D, with the unchanged original Einstein--two-CAR source/lift.
+
+The new FD1--FD14 proof removes OUTPUT CODE preservation from the true
+whole-input global feedback optimum. Although C*C<=F^2 fails for a CODE
+mixing instrument, its input diagonal blocks are <=f_theta^2. Positive
+Schur complements give det(aI+eta C*C)<=det(aI+eta F^2). The existing native
+conditional recovery attains it. Its optimal Gram is unique with an explicit
+coercive gap; all fixed-effect apparatus rows vanish, including mixing and
+complex phases. Derived effect multipliers retain the nonzero field source;
+invalid zero-effect sectors keep their linear support normals. Full CQ
+information is invariant on this larger implementation fibre.
+
+Compose that global profile with the OWNED CL1--CL12 true-clock bound.
+After the last birth insert m_k=k+m0 actual CX;CX pairs before the final
+gate. The endpoint, cold cut, effects and actual source gain remain unchanged.
+The full paid heat has its factorial source bound. NR/RCP's e_k=O(12^-k),
+N_k=O(5^k+poly(k)) give both (N_k+2m_k)e_k->0 and the complete normalized
+thermal error->0. All declared INTERNAL unitary occurrences, including
+independent padding cross-couplings tangent to the true effect task, are
+included. No late return attenuation, free identity tick, or exact finite
+heat zero is assumed. The fixed scene, canonical births and layout remain
+explicit. The full 16+24+2 source and material metric are consumed through
+the existing field/preparation right lift, not reconstructed from a new action.
+
+The actual serial 0/10 parsed-length minus complete CQ-information score
+also equals a full quantum relative entropy to its normalized Golden code
+prior. Its q-source has the same sign throughout the honest palette, with
+strict margin >1.7955 per populated input weight. Correlated joint outcomes,
+singular input, and separate preparation/basis rows remain accounted for.
+Parsed code length is not identified with all physical traversal work.
+
+The earliest-input theorem does not inherit an arbitrary noncommuting old
+Gram: an exact counterexample is retained. A later born CODE is not widened
+to a full input, and a task fixing untransported backaction needs its own map.
+Applying the stated Book03 master does not require re-deriving that law,
+and one declared family does not require universal scheduler selection.
+The stronger complete Cost--Info binding and exact finite joint-root gates
+remain open; no scientific/assembly/lifecycle promotion, GR_closed=false.
+
+Three independent bounded reviews checked the determinant/reactions, full
+source/clock diagonal and code-information identity. The embedded checker
+and receipt cover 3163 bounded exact/numerical checks, including the original
+z and hostile matrix/cut controls. No unchanged geometry/heat/Lean replay or
+giant native-word emission is claimed. Affected structural guards follow.
+
+Concurrent 90e5dd4fe8766577ae13f4a800162bd6fed31401 is preserved. FD7a
+applies the same unattenuated paid-clock diagonal to its actual born-CODE
+loader/middle/unloader word, at the TRUE input rank. BCPR's own middle
+CODE-preserving fibre and both independently varied loader legs retain their
+separate source estimates. Compressed noncommuting effects are not assigned
+FD3's larger competitor theorem. Actual BCPR19 norm growth stays in the
+reporter/native precision schedule.
+
+Final extraction replay with warnings treated as errors reproduces the embedded
+receipt byte-for-byte. Work, agent-protocol, assembly and whitespace guards
+pass. The assembly remains 98 results / 22 obligations / 5 discharged with
+scientific_promotion=false. Only the existing primary artifact and task brief
+are changed; the concurrent actual-born-CODE result is preserved.
