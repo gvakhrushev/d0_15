@@ -17913,3 +17913,27 @@ numerical root; it is a tolerance-based regression, not formal SciPy
 verification. Julia derivatives, the 128 Kraus words, their span and the
 physical admission, clock/work and scientific owner #334 remain open.
 `GR_closed=false`. A final integration build for the new module remains due.
+
+
+### Original 32 paired Julia words
+
+`D0.Geometry.OriginalBookJuliaWords` composes the proven static and moved-D
+principal roots into the original 32 ordered pairs of complex 16×16 operators.
+It preserves mode order `A,D,B,C`, four source rows per mode and adjacent
+duplication, with index `8*mode+2*row+duplicate`. Both coordinate recovery
+and reconstruction are proved; all four live/baseline left/right roots and
+strict positivity of their defects are linked to the actual source inputs.
+A concrete control distinguishes the first live pair from baseline; it does
+not establish sensitivity to every possible permutation.
+
+The exact module and eight axiom checks passed narrow Lean with only
+`propext`, `Classical.choice`, `Quot.sound`; an independent reviewer checked
+the source ordering and proofs. The source regression
+`tools/check_original_julia_words.py` hashes both pinned blobs before executing
+trusted source code and the extracted `native` prefix. It checks all 16384
+matrix entries at the specified parameter, adjacent duplication and one
+live/baseline swap; three NaN/overflow tests passed. Its floating-point
+comparison does not formally verify the numerical backend and requires NumPy,
+SciPy and SymPy. Walsh, the 128 Kraus operators, CPTP, future-effect span and
+physical admission/clock/work remain open; #334 remains owner and
+`GR_closed=false`. Final integration for this module remains required.
