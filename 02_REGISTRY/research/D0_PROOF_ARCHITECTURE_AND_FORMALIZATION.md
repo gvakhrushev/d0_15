@@ -17982,3 +17982,25 @@ product-order controls and three NaN/overflow tests passed. NumPy, SciPy and
 SymPy are required. Source-word effects, CPTP, the effect span, physical
 admission, clock/work and #334 remain open; `GR_closed=false`. Final
 integration for this added module remains required.
+
+
+### Chronological effects of the original Kraus words
+
+`D0.Geometry.OriginalBookEffectWords` applies the constructed source Kraus
+family to actual indexed histories. The empty history has effect `I`; for
+`j::tail`, the effect is `K_j† effect(tail) K_j`. A generic theorem identifies
+this recursion with the original reverse loop, and a noncommuting 2×2 control
+shows that changing order changes the result. The concrete effects are
+positive semidefinite without assuming CPTP, and any word containing a
+previously marked zero slot has zero effect. This is not a rank or span proof.
+
+The exact source passed narrow Lean and seven axiom checks with only
+`propext`, `Classical.choice`, `Quot.sound`; independent review checked order,
+positivity and marked zeros. `tools/check_original_effect_words.py` validates
+pinned source hashes and executes trusted source code; at modulus 1009 it
+compares six original finite-field paths, including the source order witness
+`(0,2)` vs `(2,0)` and a zero-slot history. Four negative tests passed. The
+original finite-field constructor itself tests its own completeness, but this
+module does not transport that check to complex CPTP. This is not verification
+of SciPy, effect-span rank, physical admission, clock/work or GR selection;
+#334 remains owner and `GR_closed=false`. Final integration remains required.

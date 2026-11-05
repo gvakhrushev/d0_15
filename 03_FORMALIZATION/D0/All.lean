@@ -531,6 +531,7 @@ import D0.Geometry.OppositeCutPairing
 import D0.Geometry.OriginalBookAnalyticBoost
 import D0.Geometry.OriginalBookBoost
 import D0.Geometry.OriginalBookCreatorBridge
+import D0.Geometry.OriginalBookEffectWords
 import D0.Geometry.OriginalBookGoldenKraus
 import D0.Geometry.OriginalBookJuliaWords
 import D0.Geometry.OriginalBookMovedJuliaLeft
