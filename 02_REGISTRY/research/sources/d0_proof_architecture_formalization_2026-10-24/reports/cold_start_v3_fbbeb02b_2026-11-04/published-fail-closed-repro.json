@@ -1,0 +1,20 @@
+{
+  "git_version": "git version 2.52.0.windows.1",
+  "producer_snapshot": "fbbeb02bb1cb36da0f173adc614400dbe81154e9",
+  "reader_git_blob": "bc711614d56c1506c27eb4fda0a1d32358663d3e",
+  "result": {
+    "case_id": "labelled-native-raising-inverse",
+    "case_index": 0,
+    "commit": "3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9",
+    "event": "transient",
+    "path_sha256": "29e9e41a2cf1998e475d970e932dbfc546d6191113d4afd898751922a0a6af7a",
+    "queries_completed": 0,
+    "query_index": 0,
+    "saved_receipt_count": 1,
+    "saved_receipt_pin_statuses": [
+      "external_reference_only"
+    ],
+    "stage": "pinned source Git blob size was malformed"
+  },
+  "scope": "Saved pages only, fbb source-pages code and published 50a7db9a pinned-source reader; no full search. New semantics are not byte-compatible with old. Historical failure reason unknown. No lazy fetch on tested Git 2.52.0."
+}
