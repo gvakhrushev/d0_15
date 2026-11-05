@@ -17889,3 +17889,27 @@ corrupt commit, redirected Git environment and partial clone. The no-lazy-fetch
 control was exercised with the installed Windows Git 2.52. Full replay and
 independent discovery were not rerun for this patch. This status describes
 local Git availability, not authoritative global nonexistence or C0 acceptance.
+
+
+### Positive right Julia root for the moved original D input
+
+`D0.Geometry.OriginalBookMovedJuliaRight` completes the previously open right
+root at the same exact source point. Starting from the concrete `W=40 c_D U`,
+it proves `WᵀW=1600A+J`, `J²=1762J` and `AJ=JA=0`. The Hermitian matrices
+`A` and `J/1762` are orthogonal projectors derived from the source entries,
+not assumed spectral data. The actual complex right defect is strictly
+positive definite and its principal CFC root is
+`I−A/5+(sqrt(12071/20000)−1)J/1762`. Together with the left theorem this
+formalizes both moved-D roots for `theta=log(5/4)`, `ν=3/5` and source phase;
+it does not cover arbitrary parameter values or the separate `.08` fixture.
+
+The exact module passed narrow Lean and axiom checks; nine checked results
+use `propext`, `Classical.choice`, `Quot.sound`, without `native_decide`,
+`sorry` or heartbeat override. Independent review checked the proof and
+separately ran the floating-point source regression and three NaN controls.
+`tools/check_original_moved_julia_right.py` verifies both pinned source hashes
+before executing trusted upstream code and uses SciPy `expm` and the original
+numerical root; it is a tolerance-based regression, not formal SciPy
+verification. Julia derivatives, the 128 Kraus words, their span and the
+physical admission, clock/work and scientific owner #334 remain open.
+`GR_closed=false`. A final integration build for the new module remains due.

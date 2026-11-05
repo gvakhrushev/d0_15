@@ -532,6 +532,7 @@ import D0.Geometry.OriginalBookAnalyticBoost
 import D0.Geometry.OriginalBookBoost
 import D0.Geometry.OriginalBookCreatorBridge
 import D0.Geometry.OriginalBookMovedJuliaLeft
+import D0.Geometry.OriginalBookMovedJuliaRight
 import D0.Geometry.OriginalBookStaticJuliaRoots
 import D0.Geometry.PhaseReturnBranchCount
 import D0.Geometry.PhaseUnfoldingQuasicrystal
