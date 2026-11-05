@@ -122,5 +122,79 @@ theorem cut_supported_on_final
       · intro h
         exact (h (Finset.mem_univ _)).elim
 
+
+/-- GROWING's final leakage factorization follows from orthogonal frames,
+isometry and internal stage advances, without assuming the factorization. -/
+theorem clock_cut_gram_factorization
+    (hJ : ∀ i j, (J i)ᴴ * J j = if i = j then 1 else 0)
+    (T : Matrix κ κ ℂ) (hT : Tᴴ * T = 1)
+    (hstep : ∀ j : Fin n, T * J j.castSucc = J j.succ) :
+    let P := frameProjector J
+    let C := frameReturn J T
+    let Jf := J (Fin.last n)
+    (cut P T)ᴴ * cut P T = Jf * (1 - Cᴴ * C) * Jfᴴ := by
+  let P := frameProjector J
+  let Jf := J (Fin.last n)
+  let C := frameReturn J T
+  let L := cut P T
+  let X := T * Jf
+  have hP : P * P = P := frame_projector_idempotent J hJ
+  have hPH : Pᴴ = P := frame_projector_selfAdjoint J
+  have hPJ : P * Jf = Jf := frame_projector_apply J hJ (Fin.last n)
+  have hJf : Jfᴴ * Jf = 1 := by simpa [Jf] using hJ (Fin.last n) (Fin.last n)
+  have hJ0 : (J 0)ᴴ * J 0 = 1 := by simpa using hJ 0 0
+  have hprojection : P * X = J 0 * C := by
+    simpa [P, X, Jf, C, Matrix.mul_assoc] using final_return_projection J hJ T hT hstep
+  have hX : Xᴴ * X = 1 := by
+    calc
+      Xᴴ * X = Jfᴴ * (Tᴴ * T) * Jf := by simp [X, Matrix.conjTranspose_mul, Matrix.mul_assoc]
+      _ = 1 := by rw [hT]; simpa using hJf
+  have hcomp : (1 - P)ᴴ * (1 - P) = 1 - P := by
+    rw [Matrix.conjTranspose_sub, Matrix.conjTranspose_one, hPH]
+    calc
+      (1 - P) * (1 - P) = 1 - P - P + P * P := by noncomm_ring
+      _ = 1 - P := by rw [hP]; noncomm_ring
+  have hLX : L * Jf = (1 - P) * X := by
+    simp [L, cut, X, Matrix.mul_assoc, hPJ]
+  have hPX : Xᴴ * P * X = Cᴴ * C := by
+    calc
+      Xᴴ * P * X = (P * X)ᴴ * (P * X) := by
+        simp only [Matrix.conjTranspose_mul, hPH, Matrix.mul_assoc]
+        rw [← Matrix.mul_assoc P P X, hP]
+      _ = Cᴴ * C := by
+        rw [hprojection]
+        simp only [Matrix.conjTranspose_mul, Matrix.mul_assoc]
+        rw [← Matrix.mul_assoc ((J 0)ᴴ) (J 0) C, hJ0, Matrix.one_mul]
+  have hgram : (L * Jf)ᴴ * (L * Jf) = 1 - Cᴴ * C := by
+    calc
+      (L * Jf)ᴴ * (L * Jf) = Xᴴ * ((1 - P)ᴴ * (1 - P)) * X := by
+        rw [hLX]
+        simp [Matrix.conjTranspose_mul, Matrix.mul_assoc]
+      _ = Xᴴ * X - Xᴴ * P * X := by
+        rw [hcomp]
+        simp [Matrix.mul_sub, Matrix.sub_mul, Matrix.mul_assoc]
+      _ = 1 - Cᴴ * C := by rw [hX, hPX]
+  have hsupport : L = (L * Jf) * Jfᴴ := by
+    simpa [L, P, Jf] using cut_supported_on_final J hJ T hstep
+  calc
+    Lᴴ * L = ((L * Jf) * Jfᴴ)ᴴ * ((L * Jf) * Jfᴴ) := by rw [← hsupport]
+    _ = Jf * ((L * Jf)ᴴ * (L * Jf)) * Jfᴴ := by
+      simp [Matrix.conjTranspose_mul, Matrix.mul_assoc]
+    _ = Jf * (1 - Cᴴ * C) * Jfᴴ := by rw [hgram]
+
+/-- The derived clock defect consumes the existing rectangular determinant theorem. -/
+theorem clock_cut_determinant
+    (hJ : ∀ i j, (J i)ᴴ * J j = if i = j then 1 else 0)
+    (T : Matrix κ κ ℂ) (hT : Tᴴ * T = 1)
+    (hstep : ∀ j : Fin n, T * J j.castSucc = J j.succ) (z : ℂ) :
+    let P := frameProjector J
+    let C := frameReturn J T
+    (1 - z • ((cut P T)ᴴ * cut P T)).det =
+      ((1 - z) • (1 : Matrix ι ι ℂ) + z • (Cᴴ * C)).det := by
+  dsimp only
+  rw [clock_cut_gram_factorization J hJ T hT hstep]
+  apply D0.Algebra.IsometricClockDeterminant.det_clock_defect
+  simpa using hJ (Fin.last n) (Fin.last n)
+
 end D0.Algebra.GrowingClockFrame
 end
