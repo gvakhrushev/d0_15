@@ -18004,3 +18004,25 @@ original finite-field constructor itself tests its own completeness, but this
 module does not transport that check to complex CPTP. This is not verification
 of SciPy, effect-span rank, physical admission, clock/work or GR selection;
 #334 remains owner and `GR_closed=false`. Final integration remains required.
+
+
+### Julia-pair normalization and exact Walsh orthogonality
+
+`D0.Geometry.OriginalBookJuliaRowCompleteness` proves for each of the 32
+actual source pairs `(x,y)` the identity `x x† + y y† = I`. It consumes the
+previously constructed input-specific principal CFC roots and positive defects;
+the normalization is not passed as a hypothesis. The 32-word sequence
+contains each of the 16 source pairs twice, in its original order.
+
+`D0.Geometry.OriginalBookWalshOrthogonality` proves from the actual five-bit
+`walshSign` that the sum over all 32 labels of `χ(label,j)χ(label,k)` is
+32 when `j=k` and zero otherwise. The 1024 finite cases use kernel `decide`,
+not `native_decide` or a supplied orthogonality condition. The source's Walsh
+normalization remains `1/32`. Both exact modules passed narrow Lean and
+independent read-only review; checked results use only `propext`,
+`Classical.choice`, `Quot.sound`.
+
+These are ingredients for, not yet a proof of, matrix-valued Parseval and
+completeness of the 128 Kraus matrices. Rank, effect span, physical admission,
+clock/work and #334 remain open; `GR_closed=false`. Full integration of these
+new modules remains required.
