@@ -22852,3 +22852,31 @@ Bounded checks, final extracted replay and independent review are pinned
 in §7fq. Unchanged large geometry/heat/Lean suites are not replayed.
 
 Final extraction replay: all173 changed native/price/composition checks pass normally and with optimized Python; all three stdout receipts exactly match the reviewed embedded bytes. Three bounded cross-reviews approve the stated selected-master/admission scope, with physical C still open.
+
+## 2026-11-05 checkpoint: final physical C decision
+
+Input a78831869dd73d99a92558e58eca674ef794353a; existing Draft #334.
+Phase: final composition. Consumer: unchanged A–D closure via §7fq CD13.
+Primary record: §7fr. Same two write paths; all earlier bytes preserved.
+
+The selected Book03 master is already complete on the constructed native
+history. This decision does not reopen it by adding hypothetical unknown
+charges. The unresolved premise is the original Cost−Info weighted
+continuation's physical equivalence to that operator source, allowing
+normalization/gauge equivalence and a controlled full-source remainder.
+
+The cited original GOLDEN source supplies no new binding. An exact
+all-input calculation on the actual CX reader separates measured parsed
+code increment from an unassigned execution tariff. Record-preserving
+controls retain the central source. Normalized supplied responses and
+mathematical polar factors do not themselves supply the physical
+weighted-edge-to-clock map. These checks rule out the tested substitutions;
+they do not prove impossibility of a constitutive derivation.
+
+The strongest remaining target is a forced representation/source theorem
+on this existing carrier. A new definition requires its own derivation
+or explicit status as an added model; it cannot be declared an original
+D0 consequence. The physical scoped terminal remains unproved.
+No task retirement, Ready transition, assembly acceptance or claim
+promotion occurs; GR_closed=false. Three bounded independent reviews
+approved the stated decision scope, not physical acceptance.

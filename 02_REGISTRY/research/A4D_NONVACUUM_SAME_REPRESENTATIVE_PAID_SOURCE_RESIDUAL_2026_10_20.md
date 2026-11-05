@@ -155154,6 +155154,167 @@ The reviewed conclusion is the complete selected-master kappa source and two-way
 
 Final extraction replay from the integrated PRIMARY reproduced all three embedded receipts byte-for-byte, normally and with optimized Python, with warnings treated as errors. All 173 changed checks pass. The existing native owner and reused original-Q receipt pins are unchanged. No unchanged large mathematical or Lean suite was replayed.
 
+## 7fr. Final C decision after the complete informative-history assembly
+
+5 November 2026. Input `a78831869dd73d99a92558e58eca674ef794353a`;
+same owner #334, same two write paths. Phase: final composition.
+Consumer: the unchanged A–D physical closure contract, through §7fq CD13.
+This is a decision on the complete attempt, not a new root, research lane,
+independent acceptance or theorem that D0 cannot realize GR.
+
+**Outcome:** §7fq supplies the admitted informative history, its independent
+control/source equations and the selected Book03 master-to-Einstein–two-CAR
+soundness/recovery at its declared regular scope. The physical Cost−Info
+application C remains unproved. The scoped physical terminal and
+`GR_closed=true` are therefore not asserted.
+
+### 7fr.1. Do not strengthen or weaken the outstanding obligation
+
+Book03 §03.25 already selects the complete scalar master B=H+J. RAW/GROWING
+build its tuple on the actual native history; §7fq composes the full source.
+There is no missing aggregation functional for THAT theorem. Requiring an
+extra identity B=mean(Cost−Info), an automatically added CQ term, a unique
+microscopic tariff or an absolute amplitude jet would be an overconstraint.
+
+The unchanged physical contract also requires the Book weighted
+continuation/terminal law on that same history. This was not discharged by
+the selected-master theorem. The remaining application accepts either a
+proved full operator/source intertwiner, including its normalization, or
+the actual complete-source comparison
+
+    R_phys = D S_phys − [c_B D B + c_P D P_code,full],
+    c_B,c_P >= 0, not both zero,
+    ||right_lift|| ||R_phys|| / Gamma -> 0.             (FCLOSE1)
+
+Here the coefficients, common physical lift and gain are the real ones;
+moving coefficients retain B Dc_B+P_code,full Dc_P. Gauge equivalence and
+a controlled remainder suffice. No equality of microscopic actions is
+necessary. FCLOSE1 is §7fq CD13, not a new acceptance condition.
+
+### 7fr.2. The cited original GOLDEN source adds no missing price operand
+
+The exact Book-II source cited by Book03 was read at commit
+`4f99c2c46e646d21ae5b9b0491da17bd1b094da0`, path
+`99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/books/BOOK_II_MECHANISM_GOLDEN_PASS30.txt`,
+blob `19701354c459014fb88e33aace667e0904409f17`, SHA256
+`42224fdbfb6e474e2025d38da45d01bf1c9e17132c182e82d8875868df62c9b0`.
+It is the same source already pinned by the native Info-contract audit,
+not a newly discovered theorem.
+
+Its lines627–630 define Cost(T)=|D_min(T)| for a finite test; lines410–413
+define the minimal description of a path. Lines775–780 name edge traversal
+Cost and vertex distinguishability gain Info, without defining a functional
+for that gain or an edge-to-native-instruction valuation map. Multiplicative
+weights/additive supplied action at lines763–770 do not compute those
+operands. The posterior at lines658–672 is a conditional measure, not a
+definition of vertex Info or the full weighted clock/Hodge construction.
+
+Original Book I lines411–429 supplies a subadditive description bound and
+an explicitly conditional intensive-limit bridge. It does not equate the
+minimal description of an execution with the sum of constant per-call
+friction charges. These source checks add no changed mathematical input
+to §7fq's positive source/recovery theorem.
+
+### 7fr.3. The remaining operand is concrete on the actual reader
+
+It is possible to calculate the original parsed code price without
+assigning that price to a different physical object. For the actual
+reader V=CX(e,r), write
+
+    V=(I−E) tensor I + E tensor X,
+    C_r=I+Pi_1,  v=(sqrt(p),p),  p+p²=1.
+
+Since X Pi_1 X=I−Pi_1 and E is a projector, direct multiplication gives
+
+    V* (I tensor C_r) V − I tensor C_r = E tensor Z.
+
+On the original canonical pointer, <v|Z|v>=p−p²=p³; hence for the actual
+event probability Q the increment is p³Q and its field source is p³ DQ.
+The original subsequent canonical-tail writer preserves the pointer and
+has zero invalid-code effect on this initialized input. Thus this is the
+same noisy 0/10 reader of §7fq, with all its unread tails retained.
+
+This calculation does NOT refute a possible constant traversal tariff.
+It shows that the measured code increment cannot be substituted for such
+a tariff: the former varies while the instruction stays fixed. Nor does
+the fixed descriptor of CX identify the friction of executing CX on its
+complete state/history. That missing equality cannot be inferred from
+the instruction count or from a lower bound on nontrivial transitions.
+
+Faithful label-preserving controls cannot erase this observable:
+U*P_1 U=P_1 preserves q and Dq, including field-dependent U. Even granting
+the strongest within-record mathematical twirl, a supplied linear work
+operator reduces to w_0 P_0+w_1 P_1 on the valid output and retains
+
+    D W_red=(w_1−w_0)Dq+(1−q)Dw_0+q Dw_1.           (FCLOSE2)
+
+No physical twirl is assumed executed. FCLOSE2 follows by differentiating
+its displayed expectation; it neither supplies the actual work operator
+nor chooses its coefficients. A fresh retained birth preserves P_1 by
+J*(P_1 tensor I)J=P_1. Repeating current charges M times does not make
+them a fixed old-prefix charge: their source can scale with the same M
+as the useful gain. Thus refinement and repetition do not establish
+FCLOSE1 for an unspecified current work/Info operand.
+
+### 7fr.4. Whole-memory normalization does not complete the missing arrow
+
+A square native G/CX/SourceI instruction can legitimately be represented
+as its whole unitary. The owned cylinder half-density map also gives the
+actual born column (sqrt(p),p); neither fact is rejected here.
+
+For a supplied K_j=alpha_j F_j with alpha_j a positive scalar on the ENTIRE
+input, normalized state response removes that scalar. To use §7fq's
+CP11a for the full master still requires the physical Book edge to have
+that form and the physical clock/Hodge construction to use that same
+per-stage normalization. A history/address-dependent factor need not be
+scalar on a coherently retained programme carrier.
+
+Book01 §01.17.1 and Book02 §02.22.1 normalize supplied responses; Book06's
+Phi(rho)/Tr Phi(rho) normalizes a supplied update. None is the missing
+weighted-edge-to-clock construction. In particular the strongest relevant
+owner, `sources/d0_full128_normalization_closure_2026-10-21/PROOF.md`,
+lines79–82, explicitly distinguishes its mathematical polar isometry from
+an actually executed hardware map; lines112–114 retain the geometry/cut
+application. RAW R6 starts from actual F_j, not from an identified
+Cost−Info weighted K_j whose physical normalization yields F_j.
+
+Consequently whole-memory packaging, like entropy telescoping and the
+posterior construction already tested in §7fq, leaves FCLOSE1 open.
+
+### 7fr.5. Closure decision and the exact resumption condition
+
+No further untested executable binding was found in the inspected original
+definitions and owned applications. This is an evidence boundary, not a
+proof that no constitutive derivation can exist. No pair of physically
+admitted complete alternative D0 valuations on this same history has
+been constructed, so a universal physical underdetermination/no-go theorem
+would also be unwarranted.
+
+The absent operand is the operational Cost/Info-weighted continuation of
+this actual admitted history, or a theorem determining its complete source
+modulo the allowed normalization. A formula created to fill that slot is
+a new model unless its derivation/admission from the original rules is
+proved. The user's permission to create missing definitions does not by
+itself make those definitions consequences of D0.
+
+The strongest remaining constructive target is precisely such a forced
+representation/source theorem from the kernel's future-distinction and
+refinement requirements, on this existing carrier. It must supply the
+physical valuation link rather than restating conditional normalization
+or native amplitude expansion. Another local root, apparatus census or
+replay of unchanged κ geometry cannot supply it.
+
+All prior results and incoming bytes are preserved. This closure decision
+changes no claim, assembly acceptance, lifecycle, raw terminal or physical
+status. The unchanged full physical objective remains unmet; the
+selected-master theorem remains available at exactly its proved scope.
+
+Bounded review receipt: three independent read-only cross-reviews approved
+the stated source, normalization and closure scope of the preceding payload,
+SHA256 `ab647912e739d612da200ac93ba24eefbecae0bc827b03e3b00bec4c14b3b0a7`.
+These reviews are not independent physical acceptance. No unchanged
+geometry, heat, compiler or Lean suite was replayed for this decision.
+
 ## 8. Reproduction
 
 Run from this directory:
