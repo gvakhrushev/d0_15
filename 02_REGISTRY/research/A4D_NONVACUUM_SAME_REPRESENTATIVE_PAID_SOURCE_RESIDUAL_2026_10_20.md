@@ -184032,3 +184032,866 @@ Final work/agent/assembly and whitespace guards pass on the integrated
 6a4624c5 input. Assembly remains 98 results / 22 obligations / 5 discharged,
 scientific_promotion=false. Incoming FD/VCP proof/checker/receipt blocks are
 preserved unchanged. Only the existing primary and task brief change.
+
+
+## 7ft. One sharp native history for mean action, amplitude pressure and scalar pressure
+
+5 November 2026. Mathematical input
+`094562a4c3e71c5c915a8da59d0de5827ef4fb65`; integration baseline
+`e016f4056ee38c761b8263c0bbcb4da739d4e09b`. Same scientific owner #334
+and the same two write paths. Phase: native realization / final composition.
+Consumer: robustness of the VCP / P1--P16 sharp SER full source under the
+already owned mean/amplitude/scalar aggregation conventions.
+
+The new baseline's §7fs.B PS2--PS7 supplies the ORIGINAL Book statistical
+partition's complete source bridge on the actual noisy §7fq RAW/GROWING
+history. At its stated original-Book-law scope, §7fs.C supports the scoped
+Einstein terminal proposal and supersedes §7fr's earlier C stopping
+rationale. The present §7ft proves a separate entropy-cone robustness
+result on the SHARP history. These histories are not identified, and
+neither theorem substitutes its operator tuple or verification for the other.
+
+**Result.** The older mean-action, amplitude-pressure and scalar-pressure
+formulae now have ONE common full Einstein--two-CAR source application on
+that history. More generally, any fixed nonnegative combination of full
+CQ information and full classical record entropy, with total coefficient
+at least one in Golden units, has the same source-zero class. The complete
+source estimates and retained-history schedule can be chosen uniformly
+over those coefficients. The proof uses the actual common right lift;
+it does not assert proportionality of different occurrence covectors.
+
+The three aggregation formulae, their Born/GAIN hypotheses, the quantum
+log bounds, native compiler, paid clock, and Einstein geometry are OWNED
+inputs. The new result is their composed application, with a uniform
+coefficient bound and a direct classical-joint-entropy source proof.
+The microscopic identification of this sharp registration ledger with
+all literal traversal Cost and vertex Info remains an explicit condition
+when applying this entropy cone to that stronger physical claim. This is
+separate from the original-statistical C bridge already supplied by §7fs.
+No bare-kernel derivation of every Book law, unconditional `GR_closed=true`,
+independent assembly acceptance or lifecycle promotion is asserted here.
+
+### ES1. Reuse the actual sharp recorder and its true input
+
+Use VCP1--3 and P1--P16 on their original sharp SER task. The actual born
+return masses are `(p^2,p^4)`, the fixed coding probabilities are `(p,p^2)`,
+and `p=phi^-1`, `ell=log(phi)`. These are distinct operands. In particular,
+the noisy 7fq masses `(p,p^3)` are not substituted for them.
+
+On the true unknown input, let
+
+    M_theta=E*Pi_theta E, sum_theta M_theta=I,
+    r_theta=Tr(rho M_theta),
+    P_theta(omega)=product_j q_(theta,j),b_j,
+    G_omega=sum_theta P_theta(omega) M_theta,
+    B_omega=sqrt(rho)G_omega sqrt(rho),
+    P_omega=Tr(B_omega).
+
+The M_theta need not commute. The complete joint records need not be
+independent after compression. Every actual conditional quantum output,
+old record and invalid born sector remains in its stated owner. Define
+
+    C_code=M+sum_theta,j r_theta q_theta,j,
+    I_Q=sum_omega S(B_omega)-S(rho),
+    H_C=-sum_omega P_omega log(P_omega),
+    P_b=C_code-(b_Q I_Q+b_C H_C)/ell,
+    b_Q,b_C>=0, a=b_Q+b_C>=1.                         (ES1)
+
+These coefficients index comparison functionals, not new adjustable
+physical controls. The matrix estimates hold for all fixed real
+coefficients; finite-halt kappa evaluation uses rational or effectively
+supplied coefficients, as for the three rational aggregations below.
+I_Q and H_C are different off section. H_C is the
+entropy of the whole ACTUALLY registered record, not a sum of marginal
+entropies or a newly measured latent programme/fine quantum path.
+No positivity of P_b is asserted when a>1.
+
+Use the actual relaxed collar from VCP3:
+
+    0<q_min<=q_theta,j<=q_max<q_mu=p^2/(1+p^2),
+    L_min=log((1-q_max)/q_max)/ell,
+    L_max=log((1-q_min)/q_min)/ell.                    (ES2)
+
+The ideal cap is 6p^7<q_mu. The exact identities p^7=13p-8 and
+q_mu=(2-p)/5 prove the gap. Since `(1-q_mu)/q_mu=phi^2`,
+L_min>2. Actual compiled probabilities use the relaxed collar, not the
+numerical ideal margin without an error budget.
+
+### ES2. Both complete entropies have the required full source sign
+
+Let u_Q,theta,j=partial_(q_theta,j) I_Q. The owned BCPR operator-log
+theorem gives
+
+    L_min r_theta <= u_Q,theta,j/ell <= L_max r_theta.
+
+The analogous statement for CLASSICAL joint entropy follows directly,
+without identifying it with CQ information. Fix j and let beta denote
+all the OTHER actual report labels. Put
+
+    p_theta(beta)=product_(k!=j) q_(theta,k),b_k,
+    P_b,beta=sum_theta r_theta p_theta(beta) q_(theta,j),b.
+
+Then differentiation of the complete entropy gives
+
+    u_C,theta,j=r_theta sum_beta p_theta(beta)
+                       log(P_0,beta/P_1,beta).        (ES3)
+
+P(1|beta) is a convex combination of the q_theta,j. Its odds lie in
+the ES2 interval, and `sum_beta p_theta(beta)=1`. Hence
+
+    L_min r_theta <= u_C,theta,j/ell <= L_max r_theta.
+
+This retains all correlations. A zero populated r_theta contributes
+zero; it is not assigned an independent equation by division by zero.
+Together the two bounds imply
+
+    D_q P_b=-sum_theta,j w_b,theta,j Dq_theta,j,
+    w_b,theta,j=(b_Q u_Q,theta,j+b_C u_C,theta,j)/ell-r_theta,
+    d_min(a)r_theta<=w_b,theta,j<=d_max(a)r_theta,
+    d_min(a)=a L_min-1>2a-1>=1,
+    d_max(a)=a L_max-1.                               (ES4)
+
+Thus every nonzero visible weight has the same sign. The genuine extra
+parsed digit is present in the `-r_theta` term; it has not been erased.
+
+### ES3. All physical and occurrence equations use the same right lift
+
+Apply the EXISTING common-physical-field constructor and its full source
+maps, including the generated calibration derivative, all sixteen coframes,
+twenty-four independent proper links, and two original CAR fields:
+
+    q_theta,j*=q_j*(s)=q_0,j+g_j s, s=I_h(Y), g_j>0,
+    Dq_theta,j=g_j A_theta,j* E_h, E_h=DI_h,
+    A_theta,j R=I.                                   (ES5)
+
+This is the owner's ideal scalar profile and leading source, not a new
+claim of exact scalarity for every nonlinear finite word. Its actual
+nonlinear and compilation errors remain below.
+
+At this section both complete entropies equal `sum_j h(q_j*)`, where
+`h(q)=-q log q-(1-q)log(1-q)`. Their effect first differentials also agree
+there, including arbitrary M_theta and input-state variations. Write
+`L(q)=log((1-q)/q)/ell`. Therefore
+
+    Phi_a(s)=sum_j[1+q_j*(s)-a h(q_j*(s))/ell],
+    Phi_a'(s)=-Gamma_a,
+    Gamma_a=sum_j g_j[a L(q_j*)-1]>0.                 (ES6)
+
+Consequently `D_Y Phi_a(I_h(Y))=0 iff DI_h(Y)=0` on the full declared
+regular chart. Gamma is the derivative of the WHOLE reduced function;
+no action was divided by a field-dependent gain before differentiation.
+
+For the complete occurrence/input covector, rather than only its physical
+diagonal pullback, set
+
+    A_a=sum_theta,j
+        r_theta g_j[a L(q_j*)-1] A_theta,j / Gamma_a.
+
+Its weights are nonnegative and total one, so `A_a R=I`. Thus
+
+    F_b/Gamma_a=-A_a* E_h+epsilon_b.                  (ES7)
+
+Here F_b is the full admitted CURRENT covector of P_b, after the actual
+generated-state and constraint reactions are accounted for. ES5 extends
+it to the complete S_hist covector; that normalization includes its actual
+factor c_P as well as the calibrated gain described in ES4.
+
+A_a can vary with a. Equality or scalar proportionality of full covectors
+at different a is unnecessary and generally false. The common right lift
+is what preserves ALL physical source components. For example,
+
+    ||E_h|| <= ||R|| (||F_b/Gamma_a||+||epsilon_b||).
+
+A fixed positive combination with the existing sharp H+J source also
+retains this right lift, at that source's own stated hypotheses. A
+different decoder or larger variation domain is not introduced by ES7.
+
+### ES4. Internal rows and a single precision budget for every coefficient
+
+The faithful current fibre preserves the COMPLETE effects and the common
+CODE PVM as required by P1--P16. Both entropies and C_code are invariant
+under its actual conditional-output isometries. Every such apparatus row
+vanishes. At scalar effects both entropies are independent of any normalized
+input, its rank and CODE basis. Both independently varied loading legs
+retain BCPR's separate all-input argument; no tied variation is imposed.
+The original informative constraints, normal reactions and generated-state
+adjoints remain. This assertion does not enlarge the admitted fibre to
+arbitrary effect-changing gates or independently variable scenes.
+
+For actual reports with `|q_theta,j-q_j*|<=delta_j<=C g_j nu`, integrate
+the COMBINED derivative bound ES4 along the same collar at fixed input:
+
+    |P_b(Q,rho)-sum_j[1+q_j*-a h(q_j*)/ell]|
+                       <=d_max(a)sum_j delta_j.       (ES8)
+
+The comparison scalar is independent of the input. Applying ES8 separately
+at two endpoints handles arbitrary preparation/basis changes, including
+rank changes, without differentiating entropy at a zero eigenvalue. After
+the true chord, gain, basis and physical-lift constants are retained, the
+normalized contribution is bounded by
+
+    C [d_max(a)/d_min(a)] nu/|t|.
+
+The useful uniform inequality is
+
+    d/da [(a L_max-1)/(a L_min-1)]
+                 =(L_min-L_max)/(a L_min-1)^2<=0,
+    d_max(a)/d_min(a)<=(L_max-1)/(L_min-1), a>=1.     (ES9)
+
+Also `a/d_min(a)<=1/(L_min-1)`. Thus the same componentwise source and
+price-reading accuracies work for the entire comparison family. This
+uniform statement is about a fixed coefficient in each evaluation; a
+physically changing coefficient would contribute its own independent
+`-I_Q Db_Q/ell-H_C Db_C/ell` source.
+
+Distinguish the ideal Gamma_a of ES6 from the actual effect gain
+`Gamma_b,eff=sum_theta,j g_j w_b,theta,j`. ES4 gives
+`Gamma_b,eff>=d_min(a)sum_j g_j` on the actual collar. Applying the
+same log bounds on the narrower intervals around each q_j* controls its
+relative difference from Gamma_a by `C a/d_min(a) max_j delta_j`.
+Use the owner's actual gain estimate Gamma_hat with certified relative
+error zeta<1, and retain the factor `1/(1-zeta)` in divided errors.
+Taking zeta->0 also absorbs its leading-source calibration remainder on
+the bounded regular chart. ES7 uses this calibrated comparison; it does
+not silently substitute an ideal gain for an uncomputed actual one.
+
+The already owned quadratic bound gives an additional consistency check:
+
+    0<=H_C-I_Q<=sum_j delta_j^2/[q_j*(1-q_j*)].        (ES10)
+
+It follows, for instance, by applying data processing to the ensemble
+`sqrt(rho)M_theta sqrt(rho)` and then bounding the classical conditional
+record divergence against the scalar product law. The relative-entropy
+chain rule yields a sum of binary divergences, each at most
+`delta_j^2/[q_j*(1-q_j*)]`. Hidden theta is only a mathematical proof
+index; no physical measurement of it occurs. ES10 proves equality of all
+first sources on the scalar section, not equality of the two entropies
+off section. ES3--9 already provide the direct finite-source proof for
+each, so no unproved derivative of the ES10 remainder is needed.
+
+### ES5. Whole retained history and the actual paid clock
+
+For a supplied actual earlier ledger, write the comparison functional
+
+    S_hist=c_B B_actual+c_P[C_old+C_code,new
+                         -(b_Q I_Q,complete+b_C H_C,complete)/ell],
+    c_B>=0, c_P>0,                                   (ES11)
+
+with fixed coefficients. Decompose each COMPLETE entropy into its old
+part and its actual conditional new part exactly once. Old-record
+nondemolition and P6--P7/P14--P16 apply to every true old conditional
+state; the classical chain rule supplies the corresponding H_C statement.
+The new scalar comparator is ES6. There is no double subtraction of old
+input entropy and no replacement of joint information by marginal sums.
+
+Let B_C, B_Q, B_H be separate finite source/contrast bounds for the
+already incurred old cost and two old entropies. A uniform old bound is
+
+    [B_C+a max(B_Q,B_H)/ell]/[(a L_min-1) M g].        (ES12)
+
+Its coefficient decreases with a: the derivative of
+`(B_C+a B_I)/(a L_min-1)` is
+`-(L_min B_C+B_I)/(a L_min-1)^2<=0`. A cancellation-based bound for
+the old a=1 price alone would NOT justify ES12; use its separate operands.
+
+Consume the SAME sharp support `||C_total||<=(p^2+p^4)^(M/2)` and the
+P12--P16 full-source schedule. At each fixed mesh/core/prefix, equalize
+the actual matched slots, take N_b=O(M), and use exactly N_b paid CX;CX
+pairs before the closing gate. Then N_total=3N_b. This is an actual
+finite native word with every added occurrence and all growing-clock
+modes retained. Its normalized whole J and heat bounds vanish with M,
+with actual effect gain `c_P Gamma_b,eff>=c_P d_min(a)Mg` and the
+preceding Gamma_hat calibration factor. They are no larger than the
+corresponding a=1 bounds, up to that retained factor, for any fixed c_B/c_P. Polar
+recovery, a nonzero old return and an arbitrary-old-prefix determinant
+optimum are not required in this positive-information application.
+
+Choose the reporter, native finite-comparison, gain-calibration and full
+clock budgets with the owner's real norms and right-lift constants.
+ES9/ES12 make ONE sequence work uniformly for all the fixed entropy
+coefficients in ES1, at any fixed supplied c_B/c_P. Explicitly the whole
+history comparison has
+
+    D S_hist/(c_P Gamma_hat)=-A_a* E_h+epsilon_b,h,
+    ||R_h|| ||epsilon_b,h|| ->0,
+
+with the actual finite-source interpretation of D and all old/internal
+rows included. The reference/actual gain difference remains part of the
+calibrated error, rather than being discarded. Existing GENERAL/KAPPA
+then supplies soundness and recovery for every computable regular
+Einstein--two-CAR solution in its stated class.
+
+This is a uniform source realization for the specified comparison
+functionals. New per-repeat work or storage is not an old charge and
+is not suppressed by ES12. The pure-master axis c_P=0 keeps its previous
+owner; ES11 supplies no upgrade on that axis. Exact finite source zeros
+are not inferred by exchanging a limit with taking a zero set.
+
+### ES6. The older aggregation ambiguity now has a concrete consumer
+
+Consume the previously proved formulae in
+`A4D_AMPLITUDE_BORN_BOOK03_BELLMAN_INFORMATION_AND_SOURCE_WELD_2026_10_22.md`,
+the scalar Born/GAIN owner and the 21 October half-entropy owner:
+
+| Previously owned aggregation, on its actual recorded tree | Formula | ES1 choice |
+| --- | --- | --- |
+| Mean path action | C-H_C/ell | b_Q=0, b_C=1 |
+| Quadratic-amplitude pressure | C-(3/2)H_C/ell | b_Q=0, b_C=3/2 |
+| Scalar-probability pressure | C-2H_C/ell | b_Q=0, b_C=2 |
+| Complete specified CQ registration price | C-I_Q/ell | b_Q=1, b_C=0 |
+
+Where their actual Cost is this same registration ledger plus supplied
+old/boundary operands satisfying ES12 or the existing normalized full-source
+residual budget, and their original Born/GAIN binding and record
+interpretation apply, ES1--ES12 now place all four in the SAME full
+Einstein-source class. The coefficient 3/2 is inherited from the old
+quadratic Born proof, not fitted to gravity. No new entropy functional
+or physical tariff is defined here.
+
+This removes the demand to resolve the mean-versus-pressure choice in
+order to obtain the source equations on this carrier. It does NOT remove
+the original physical hypotheses of the Bellman theorem, signed-gain
+admission, or the identification of actual traversal work/vertex Info.
+An unregistered coherent memory sum is not silently replaced by an
+orthogonal complete record tree. The distinction between these premises
+and the aggregation choice is exactly the parent substitution.
+
+### ES7. The noisy writer cannot inherit this positive cone
+
+There is a decisive control using the actual centres, not a generic toy
+price. With theta_G=asin(p), kappa_512=sin^2(512 theta_G),
+
+    Q_0=4 kappa_512 p^7=0.12921646400972442269...,
+    q_N=p^2+p^3 Q_0=0.41246988056855516190....
+
+For the sharp event, `L(Q_0)=3.9647911988364039...`; the three price
+slopes `1-a L(Q_0)` for a=1,3/2,2 are all strictly negative. For the
+noisy 7fq record, the owned exact receipt gives
+
+    2/3<L(q_N)<3/4,
+    L(q_N)=0.73515301805469778...,
+    P_1'(q_N)>0, P_(3/2)'(q_N)<0.                    (ES13)
+
+In fact `xi=3-2/L(q_N)` lies strictly between zero and one, and
+
+    D_q [xi P_1+(1-xi)P_(3/2)] at q_N = 0.          (ES14)
+
+Here xi is FIXED at this centre when differentiating. This is a hostile
+mathematical cancellation test, not an assertion that two full physical
+tariffs or that fitted mixture are admitted. It shows why the stronger
+aggregation-independent positive-cone conclusion belongs to the existing
+SHARP task. The distinct noisy §7fq history retains its selected-master
+source theorem and the original-statistical source transfer of §7fs.
+Neither requires this aggregation-independent positive cone.
+
+### ES8. Physical scope after the original-statistical source bridge
+
+The earlier §7fr C stopping conclusion is superseded for the original
+Book statistical route. On §7fq's actual noisy RAW/GROWING tuple at
+fixed original `beta=2p^2`, §7fs.B PS4 proves
+`-ell D A_stat=D B-p^3 D H` for the ENTIRE admitted covector,
+and PS7 bounds its normalized error by `epsilon_B+p^3 eta_H`, with both
+complete-norm and lift-weighted errors tending to zero. This consumes the
+original partition law with its actual determinant power and beta; §7fs.C
+therefore supports the scoped terminal proposal under that Book-law premise.
+It does not require a separately prepared Gibbs state or a new gate tariff.
+An independently varied beta retains the additional `H D beta` row of PS5.
+
+ES1--ES14 independently close the aggregation comparison on the SHARP
+SER history. To identify one of these sharp comparison functionals with
+a complete microscopic Cost--Info ledger, its actual traversal/work and
+vertex-information operands must obey the stated ES6 conditions, or a
+genuine weighted-map/full-source residual proof must supply the binding.
+Any new state-dependent charge, coherent memory term, per-repeat work
+source or independent coefficient remains in that application. Closed
+memory alone does not select those first derivatives. These are conditions
+of the entropy-cone application and of a stronger kernel-only derivation;
+they are not a renewed obstruction to §7fs's original-statistical C result.
+
+Likewise, §7fs.B explicitly leaves a faithful dictionary from EVERY literal
+memory-algebra history with separately defined edge Cost and vertex Info
+to its spectral/loop accounting types as a stronger upstream assertion.
+The present entropy theorem does not construct that dictionary. It does
+not identify the sharp entropy paths or their `(p^2,p^4)` return masses
+with the noisy RAW partition history or its `(p,p^3)` masses. Source
+comparison on either history cannot be used to assert that identification.
+
+The new conclusion here is uniform full-source robustness for the stated
+sharp entropy class. The original-statistical scoped terminal proposal
+remains owned by §7fs. No new primitive or physical price, exact finite
+native root, independent assembly acceptance, unconditional D0-to-GR
+closure, or derivation of every Book law from the bare kernel is asserted.
+
+### ES9. Changed verification and independent review
+
+The embedded checker uses the existing VCP seven-stage native G/CX loader
+fixture with two real born CODE wires and two live DATA ports. It verifies
+the changed CQ and classical source bounds, genuine noncommuting effects,
+mixed/entangled and rank-one inputs, common right lifts, unequal full
+occurrence covectors, rank-changing finite-comparison estimates, the
+quadratic Shannon/CQ difference, and noisy-carrier cancellation. Exact
+rational Golden inequalities accompany floating matrix diagnostics;
+Decimal centre values are diagnostics, not new interval certificates.
+The full general statements are the analytic proof above.
+
+No unchanged geometry, native compiler, huge word, heat or Lean suite is
+replayed. The same-field source maps and full 16+24+2 equations are
+consumed from their owners, not certified by the two-coordinate lift
+fixture. Three independent bounded reviews checked the complete-source,
+entropy-type and uniform retained-history applications before integration.
+
+The checker retains its mathematical implementation and input pin
+`094562a4c3e71c5c915a8da59d0de5827ef4fb65`. Its section label and
+diagnostic-scope wording follow the integration rename from §7fs to §7ft;
+normal and optimized replay produce byte-identical receipts. The baseline
+update to `e016f405` changes the integration/status prose. These diagnostics
+do not claim to verify the separate §7fs partition route.
+
+The checker is self-contained: extract the following Python block into
+a scratch directory and run `python -W error check_entropy_source_class.py`.
+It writes `entropy_source_class_result.json` alongside itself. The source
+and receipt hashes below refer to canonical LF bytes.
+
+Canonical LF proof SHA256: `b10f496527c17eecf653d1eb749747fc4a0fb80101c715d8346ea40eeea4aa7d`.
+
+Canonical LF checker SHA256: `3d71d77b2790d32d11772aeddabdca2af016826bba038a55d448ce27e75e5598`.
+
+Canonical LF receipt SHA256: `77a6cb781bd38d40fadbadf210c1a587a3abbe5d479211708b10d6c21e577057`.
+
+Author replay: Python3.12.14, NumPy2.3.5, SciPy1.17.0; 111 changed checks pass normally and with optimized Python, with warnings treated as errors and byte-identical stdout. Maximum normalized matrix finite-difference diagnostic error: 3.29196669924e-11. Three bounded reviews approve the stated entropy-source scope. The original-statistical source transfer and corrected C status are consumed separately from the integration baseline, without transplanting the two native histories.
+
+<!-- BEGIN ES ENTROPY SOURCE CLASS CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Changed §7ft diagnostic on the existing VCP born-input fixture.
+
+Exact rational/Decimal bounds accompany bounded floating matrix diagnostics.
+This is not a native GR replay, physical Cost/Info identification, or a new
+hardware compiler. G/CX act on the fixture's live DATA ports, not SourceSpin.
+"""
+from decimal import Decimal, localcontext
+from fractions import Fraction as F
+from itertools import product
+import json
+import math
+from pathlib import Path
+
+import numpy as np
+
+checks = []
+def need(ok, label):
+    if not bool(ok):
+        raise RuntimeError(label)
+    checks.append(label)
+
+def herm(x):
+    return (x + x.conj().T) / 2
+
+def tr(x):
+    return float(np.trace(x).real)
+
+def spectral(x, fun):
+    w, v = np.linalg.eigh(herm(x))
+    need_positive = float(w.min())
+    if need_positive < -2e-11:
+        raise RuntimeError("negative matrix spectrum")
+    keep = w > 1e-13
+    return (v[:, keep] * fun(w[keep])) @ v[:, keep].conj().T
+
+def entropy(x):
+    w = np.linalg.eigvalsh(herm(x))
+    if w.min() < -2e-11:
+        raise RuntimeError("negative entropy spectrum")
+    w = w[w > 1e-13]
+    return float(-w @ np.log(w))
+
+# Exact Golden comparison: p^7=13p-8 and q_mu=(2-p)/5.
+def gmul(x, y):
+    a, b = x
+    c, d = y
+    return a*c+b*d, a*d+b*c-b*d
+
+p7 = (F(1), F(0))
+for _ in range(7):
+    p7 = gmul(p7, (F(0), F(1)))
+plo, phi = F(3, 5), F(6181, 10000)
+need(plo*plo+plo-1 < 0 < phi*phi+phi-1, "rational Golden root bracket")
+need(p7 == (-8, 13), "exact seventh power")
+need(gmul((F(2,5), F(-1,5)), (2,-1)) == (1,-1),
+     "exact return-equilibrium expression")
+need((242-391*phi)/5 > 0 and (3-4*phi)/5 > 0,
+     "exact sharp cap below return and code equilibria")
+need(F(1,4) < (2-phi)/5 and 6*(13*phi-8) < F(1,4),
+     "actual diagnostic relaxed collar q_max one quarter")
+
+# Exact comparison algebra for arbitrary a>=1. The cross-multiplied
+# numerator of R(a2)-R(a1) is (a2-a1)(Lmin-Lmax).
+lm, lx = F(9,4), F(6)
+for a1, a2 in ((F(1), F(3,2)), (F(3,2), F(2)), (F(2), F(1000))):
+    num = (a2*lx-1)*(a1*lm-1)-(a1*lx-1)*(a2*lm-1)
+    need(num == (a2-a1)*(lm-lx) < 0, "uniform combined-source ratio " + str(a2))
+    bc, bi = F(5), F(7)
+    old_num = (bc+a2*bi)*(a1*lm-1)-(bc+a1*bi)*(a2*lm-1)
+    need(old_num == -(a2-a1)*(bc*lm+bi) < 0,
+         "uniform old-ledger bound with separate component norms " + str(a2))
+
+p = (math.sqrt(5)-1)/2
+ell = math.log(1/p)
+G = np.array([[math.sqrt(p), -p], [p, math.sqrt(p)]])
+vborn = np.array([math.sqrt(p), p])
+def gate1(u, bit):
+    out = np.ones((1,1))
+    for j in range(4):
+        out = np.kron(out, u if j == bit else np.eye(2))
+    return out
+
+def cx(control, target):
+    out = np.zeros((16,16))
+    for col in range(16):
+        bit = (col >> (3-control)) & 1
+        row = col ^ ((1 << (3-target)) if bit else 0)
+        out[row,col] = 1
+    return out
+
+# Exactly the previously owned seven-stage VCP fixture, two born CODE
+# wires and two genuinely live unknown DATA ports. Spin is not addressed.
+U = np.eye(16)
+for f in (cx(2,0), gate1(G,2), cx(2,1), cx(3,0),
+          gate1(G,3), cx(3,1), gate1(G,0)):
+    U = f @ U
+J = np.kron(np.kron(vborn,vborn)[:,None],np.eye(4))
+E = U @ J
+Ms = [herm(E[4*t:4*t+4].conj().T @ E[4*t:4*t+4]) for t in range(4)]
+need(np.linalg.norm(E.conj().T@E-np.eye(4)) < 3e-14,
+     "true born-input rank-four all-column isometry")
+need(np.linalg.norm(sum(Ms)-np.eye(4)) < 3e-14,
+     "complete compressed programme POVM")
+commutator = max(np.linalg.norm(x@y-y@x) for x in Ms for y in Ms)
+need(commutator > .001, "compressed programme effects do not commute")
+
+psi = np.array([1,0,0,np.exp(.37j)])/math.sqrt(2)
+chi = np.array([.3,.4j,.5,.7j],dtype=complex)
+chi /= np.linalg.norm(chi)
+pure = np.outer(psi,psi.conj())
+rho = .65*pure+.15*np.outer(chi,chi.conj())+.20*np.eye(4)/4
+pt = rho.reshape(2,2,2,2).transpose(0,3,2,1).reshape(4,4)
+need(np.linalg.eigvalsh(pt).min() < -.1,
+     "genuinely entangled mixed input")
+
+words = list(product((0,1), repeat=3))
+theta_g = math.atan2(p,math.sqrt(p))
+kappa9 = math.sin(512*theta_g)**2
+xis = np.array([[-1.1,.5,-.2],[1.,-.7,1.2],[.4,1.4,-1.2],[-.6,.1,.8]])
+qs = kappa9*p**7*(4+xis)
+qmin, qmax = 1/16, 1/4
+Lmin = math.log((1-qmax)/qmax)/ell
+Lmax = math.log((1-qmin)/qmin)/ell
+need(qmin < qs.min() < qs.max() < qmax and Lmin > 2,
+     "strict relaxed actual probability collar")
+
+def cq_data(q, state):
+    sr = spectral(state,np.sqrt)
+    blocks = []
+    for word in words:
+        coeff = np.prod(np.where(np.array(word)[None,:],q,1-q),axis=1)
+        eff = sum(c*x for c,x in zip(coeff,Ms))
+        blocks.append(herm(sr@eff@sr))
+    probs = np.array([tr(x) for x in blocks])
+    iq = sum(entropy(x) for x in blocks)-entropy(state)
+    hc = -float(probs @ np.log(probs))
+    cost = sum((3+sum(word))*z for word,z in zip(words,probs))
+    return cost, iq, hc, probs
+
+def gradients(q,state):
+    sr = spectral(state,np.sqrt)
+    uq, uh = np.zeros_like(q),np.zeros_like(q)
+    for j in range(3):
+        others = [k for k in range(3) if k != j]
+        for beta in product((0,1),repeat=2):
+            coeff = np.ones(4)
+            for k,b in zip(others,beta):
+                coeff *= q[:,k] if b else 1-q[:,k]
+            b0 = herm(sr@sum(c*(1-q[t,j])*Ms[t] for t,c in enumerate(coeff))@sr)
+            b1 = herm(sr@sum(c*q[t,j]*Ms[t] for t,c in enumerate(coeff))@sr)
+            ld = spectral(b0,np.log)-spectral(b1,np.log)
+            lc = math.log(tr(b0)/tr(b1))
+            for t in range(4):
+                uq[t,j] += coeff[t]*tr(sr@Ms[t]@sr@ld)
+                uh[t,j] += coeff[t]*tr(state@Ms[t])*lc
+    return uq,uh
+
+def price(q,bq,bh,state=rho):
+    c,iq,hc,_ = cq_data(q,state)
+    return c-(bq*iq+bh*hc)/ell
+
+def derivative(fun,q,v,step=2e-5):
+    return (fun(q-2*step*v)-8*fun(q-step*v)
+            +8*fun(q+step*v)-fun(q+2*step*v))/(12*step)
+
+mixtures = ((1.,0.),(0.,1.),(1.5,0.),(0.,1.5),(.5,1.),
+            (0.,2.),(1.,1.),(10.,0.),(0.,50.),(300.,700.))
+max_fd_error = 0.
+for state_name,state in (("mixed",rho),("rank-one",pure)):
+    uq,uh = gradients(qs,state)
+    rt = np.array([tr(state@x) for x in Ms])[:,None]
+    for name,u in (("CQ",uq),("Shannon",uh)):
+        need(np.all(u/ell >= Lmin*rt-2e-12)
+             and np.all(u/ell <= Lmax*rt+2e-12),
+             "complete conditional slope bounds "+state_name+" "+name)
+    for bq,bh in mixtures:
+        aa = bq+bh
+        weights = (bq*uq+bh*uh)/ell-rt
+        need(np.all(weights >= (aa*Lmin-1)*rt-3e-10)
+             and np.all(weights <= (aa*Lmax-1)*rt+3e-10),
+             "full entropy-cone weights "+state_name+" "+str((bq,bh)))
+        err = 0.
+        for t,j in ((0,0),(1,2),(3,1)):
+            v = np.zeros_like(qs)
+            v[t,j] = 1
+            fd = derivative(lambda q: price(q,bq,bh,state)/aa,qs,v)
+            err = max(err,abs(fd+weights[t,j]/aa))
+        max_fd_error = max(max_fd_error,err)
+        need(err < 3e-8,"full mixed-entropy source differential "+state_name+" "+str((bq,bh)))
+
+c,iq,hc,pr = cq_data(qs,rho)
+need(hc-iq > 1e-5,"classical record entropy is not full CQ information off section")
+means = np.array([sum(tr(rho@Ms[t])*qs[t,j] for t in range(4)) for j in range(3)])
+sum_h = -float(np.sum(means*np.log(means)+(1-means)*np.log(1-means)))
+need(sum_h-hc > 1e-7,"correlated joint record is not independent marginals")
+
+common = np.tile(np.array([.09,.13,.17]),(4,1))
+gains = np.array([.03,.05,.07])
+rr = np.array([[1.,0],[0,1],[0,0],[0,0]])
+maps = np.array([[np.array([[1.,0,.2*(t+1)+.1*j,-.07*(j-t)],
+                            [0,1,.05*(t-j),.3*j-.2*t]])
+                  for j in range(3)] for t in range(4)])
+need(all(np.array_equal(m@rr,np.eye(2)) for row in maps for m in row),
+     "all source maps share the physical right inverse")
+target = np.array([.7,-.2])
+normal_covectors = []
+u0q,u0h = gradients(common,rho)
+need(np.linalg.norm(u0q-u0h) < 2e-13,"all Shannon and CQ effect first sources agree at scalar section")
+rt = np.array([tr(rho@x) for x in Ms])[:,None]
+for bq,bh in mixtures:
+    aa = bq+bh
+    ww = gains[None,:]*((bq*u0q+bh*u0h)/ell-rt)
+    gamma = ww.sum()
+    abar = sum(ww[t,j]*maps[t,j] for t in range(4) for j in range(3))/gamma
+    need(gamma > 0 and np.linalg.norm(abar@rr-np.eye(2)) < 3e-14,
+         "positive mixture keeps actual common right lift "+str((bq,bh)))
+    source = -abar.T@target
+    normal_covectors.append(source)
+    errs = []
+    for axis in range(4):
+        dq = np.array([[gains[j]*(target@maps[t,j,:,axis]) for j in range(3)] for t in range(4)])
+        fd = derivative(lambda q: price(q,bq,bh)/gamma,common,dq)
+        errs.append(abs(fd-source[axis]))
+    need(max(errs)<3e-8 and np.linalg.norm(-rr.T@source-target)<3e-14,
+         "complete occurrence covector and physical separation "+str((bq,bh)))
+need(np.linalg.norm(normal_covectors[0]-normal_covectors[2]) > 1e-5,
+     "different normalized occurrence covectors are not falsely identified")
+
+signs = np.array([[1,-.7,.2],[-.5,.8,-1],[.3,-.2,.9],[-1,.5,-.4]])
+nu = .01
+near1 = common+nu*gains[None,:]*signs
+near2 = common-nu*gains[None,:]*signs[::-1]
+delta = np.maximum(np.max(abs(near1-common),axis=0),np.max(abs(near2-common),axis=0))
+ratio1 = (Lmax-1)/(Lmin-1)
+for bq,bh in mixtures:
+    aa=bq+bh
+    ratio=(aa*Lmax-1)/(aa*Lmin-1)
+    need(ratio<=ratio1+2e-14,"uniform all-coefficient preparation ratio "+str((bq,bh)))
+    diff=abs(price(near1,bq,bh,rho)-price(near2,bq,bh,pure))
+    need(diff<=2*(aa*Lmax-1)*delta.sum()+2e-9,
+         "finite preparation endpoint bound including rank change "+str((bq,bh)))
+for q,state in ((near1,rho),(near2,pure)):
+    _,ii,hh,_=cq_data(q,state)
+    chi_bound=float(np.sum(np.max(abs(q-common),axis=0)**2/(common[0]*(1-common[0]))))
+    need(-2e-13<=hh-ii<=chi_bound+2e-13,
+         "whole-record quantum-classical difference has quadratic bound")
+
+# High-precision diagnostics at the actual nine-control centre. Logistic
+# recurrence evaluates sin^2(512 theta_G) without an ill-conditioned
+# expanded Golden polynomial. Signs also follow from the owned rational
+# 2/3<L(noisy)<3/4 receipt; Decimal values are diagnostics, not a new interval proof.
+with localcontext() as ctx:
+    ctx.prec=90
+    D=Decimal
+    pp=(D(5).sqrt()-1)/2
+    ll=(1/pp).ln()
+    kk=pp*pp
+    for _ in range(9):
+        kk=4*kk*(1-kk)
+    sharp=4*kk*pp**7
+    noisy=pp**2+pp**3*sharp
+    def slope(q): return ((1-q)/q).ln()/ll
+    ls,ln=slope(sharp),slope(noisy)
+    need(D(2)/3<ln<D(3)/4,"actual noisy-centre orientation bracket")
+    need(1-ln>0 and 1-D('1.5')*ln<0,"noisy mean and amplitude pressure have opposite sources")
+    mix=3-2/ln
+    cancel=mix*(1-ln)+(1-mix)*(1-D('1.5')*ln)
+    need(0<mix<1 and abs(cancel)<D('1e-85'),"hostile noisy positive-mixture cancellation")
+    need(all(1-aa*ls<0 for aa in (D(1),D('1.5'),D(2))),
+         "all three original aggregations have same sharp source orientation")
+    table={"sharp_q":str(sharp),"noisy_q":str(noisy),
+           "sharp_entropy_slope":str(ls),"noisy_entropy_slope":str(ln),
+           "noisy_cancel_mean_weight":str(mix),
+           "ideal_sharp_cap":str(6*pp**7),
+           "ideal_minimum_margin":str(slope(6*pp**7)-1)}
+
+result={"status":"PASS_ENTROPY_SOURCE_CLASS_COMPOSITION",
+        "input_commit":"094562a4c3e71c5c915a8da59d0de5827ef4fb65",
+        "checks":len(checks),"labels":checks,
+        "largest_normalized_effect_fd_error":max_fd_error,
+        "noncommuting_povm_commutator_norm":commutator,
+        "relaxed_collar":{"q_min":qmin,"q_max":qmax,"L_min":Lmin,"L_max":Lmax},
+        "centre_diagnostics":table,
+        "scope":"Analytic composition of existing Bellman aggregations with VCP/P on the same sharp recorder; exact Golden inequalities and bounded numeric noncommuting checks. No microscopic Bellman traversal-work binding, new native compiler, exact finite GR root, whole-geometry replay or scientific promotion. The original operator-statistical source transfer is owned separately by section7fs."}
+out=json.dumps(result,ensure_ascii=False,sort_keys=True,indent=2)+"\n"
+Path(__file__).with_name("entropy_source_class_result.json").write_text(out)
+print(out,end="")
+```
+<!-- END ES ENTROPY SOURCE CLASS CHECKER -->
+
+<!-- BEGIN ES ENTROPY SOURCE CLASS RECEIPT -->
+```json
+{
+  "centre_diagnostics": {
+    "ideal_minimum_margin": "1.79550715185272981534149680835946920429749849090277409700264504586636984638380677042361770",
+    "ideal_sharp_cap": "0.206651122491798159957773080519773182184116024849503246564992571010316099874391077162161929",
+    "noisy_cancel_mean_weight": "0.27947794420780915877246519723309065866098998204988089958485689175540794829206516801340174",
+    "noisy_entropy_slope": "0.735153018054697781965339694015996173608579317276499563567129387738222092153908234104562656",
+    "noisy_q": "0.412469880568555161907002522844837073367884747966877087833034992850875239874557738347713932",
+    "sharp_entropy_slope": "3.96479119883640391148839608471054324846300005913387043861878847095087739142009557613477903",
+    "sharp_q": "0.129216464009724422695003110517705782272277694863628550787344754660639309513238616528810516"
+  },
+  "checks": 111,
+  "input_commit": "094562a4c3e71c5c915a8da59d0de5827ef4fb65",
+  "labels": [
+    "rational Golden root bracket",
+    "exact seventh power",
+    "exact return-equilibrium expression",
+    "exact sharp cap below return and code equilibria",
+    "actual diagnostic relaxed collar q_max one quarter",
+    "uniform combined-source ratio 3/2",
+    "uniform old-ledger bound with separate component norms 3/2",
+    "uniform combined-source ratio 2",
+    "uniform old-ledger bound with separate component norms 2",
+    "uniform combined-source ratio 1000",
+    "uniform old-ledger bound with separate component norms 1000",
+    "true born-input rank-four all-column isometry",
+    "complete compressed programme POVM",
+    "compressed programme effects do not commute",
+    "genuinely entangled mixed input",
+    "strict relaxed actual probability collar",
+    "complete conditional slope bounds mixed CQ",
+    "complete conditional slope bounds mixed Shannon",
+    "full entropy-cone weights mixed (1.0, 0.0)",
+    "full mixed-entropy source differential mixed (1.0, 0.0)",
+    "full entropy-cone weights mixed (0.0, 1.0)",
+    "full mixed-entropy source differential mixed (0.0, 1.0)",
+    "full entropy-cone weights mixed (1.5, 0.0)",
+    "full mixed-entropy source differential mixed (1.5, 0.0)",
+    "full entropy-cone weights mixed (0.0, 1.5)",
+    "full mixed-entropy source differential mixed (0.0, 1.5)",
+    "full entropy-cone weights mixed (0.5, 1.0)",
+    "full mixed-entropy source differential mixed (0.5, 1.0)",
+    "full entropy-cone weights mixed (0.0, 2.0)",
+    "full mixed-entropy source differential mixed (0.0, 2.0)",
+    "full entropy-cone weights mixed (1.0, 1.0)",
+    "full mixed-entropy source differential mixed (1.0, 1.0)",
+    "full entropy-cone weights mixed (10.0, 0.0)",
+    "full mixed-entropy source differential mixed (10.0, 0.0)",
+    "full entropy-cone weights mixed (0.0, 50.0)",
+    "full mixed-entropy source differential mixed (0.0, 50.0)",
+    "full entropy-cone weights mixed (300.0, 700.0)",
+    "full mixed-entropy source differential mixed (300.0, 700.0)",
+    "complete conditional slope bounds rank-one CQ",
+    "complete conditional slope bounds rank-one Shannon",
+    "full entropy-cone weights rank-one (1.0, 0.0)",
+    "full mixed-entropy source differential rank-one (1.0, 0.0)",
+    "full entropy-cone weights rank-one (0.0, 1.0)",
+    "full mixed-entropy source differential rank-one (0.0, 1.0)",
+    "full entropy-cone weights rank-one (1.5, 0.0)",
+    "full mixed-entropy source differential rank-one (1.5, 0.0)",
+    "full entropy-cone weights rank-one (0.0, 1.5)",
+    "full mixed-entropy source differential rank-one (0.0, 1.5)",
+    "full entropy-cone weights rank-one (0.5, 1.0)",
+    "full mixed-entropy source differential rank-one (0.5, 1.0)",
+    "full entropy-cone weights rank-one (0.0, 2.0)",
+    "full mixed-entropy source differential rank-one (0.0, 2.0)",
+    "full entropy-cone weights rank-one (1.0, 1.0)",
+    "full mixed-entropy source differential rank-one (1.0, 1.0)",
+    "full entropy-cone weights rank-one (10.0, 0.0)",
+    "full mixed-entropy source differential rank-one (10.0, 0.0)",
+    "full entropy-cone weights rank-one (0.0, 50.0)",
+    "full mixed-entropy source differential rank-one (0.0, 50.0)",
+    "full entropy-cone weights rank-one (300.0, 700.0)",
+    "full mixed-entropy source differential rank-one (300.0, 700.0)",
+    "classical record entropy is not full CQ information off section",
+    "correlated joint record is not independent marginals",
+    "all source maps share the physical right inverse",
+    "all Shannon and CQ effect first sources agree at scalar section",
+    "positive mixture keeps actual common right lift (1.0, 0.0)",
+    "complete occurrence covector and physical separation (1.0, 0.0)",
+    "positive mixture keeps actual common right lift (0.0, 1.0)",
+    "complete occurrence covector and physical separation (0.0, 1.0)",
+    "positive mixture keeps actual common right lift (1.5, 0.0)",
+    "complete occurrence covector and physical separation (1.5, 0.0)",
+    "positive mixture keeps actual common right lift (0.0, 1.5)",
+    "complete occurrence covector and physical separation (0.0, 1.5)",
+    "positive mixture keeps actual common right lift (0.5, 1.0)",
+    "complete occurrence covector and physical separation (0.5, 1.0)",
+    "positive mixture keeps actual common right lift (0.0, 2.0)",
+    "complete occurrence covector and physical separation (0.0, 2.0)",
+    "positive mixture keeps actual common right lift (1.0, 1.0)",
+    "complete occurrence covector and physical separation (1.0, 1.0)",
+    "positive mixture keeps actual common right lift (10.0, 0.0)",
+    "complete occurrence covector and physical separation (10.0, 0.0)",
+    "positive mixture keeps actual common right lift (0.0, 50.0)",
+    "complete occurrence covector and physical separation (0.0, 50.0)",
+    "positive mixture keeps actual common right lift (300.0, 700.0)",
+    "complete occurrence covector and physical separation (300.0, 700.0)",
+    "different normalized occurrence covectors are not falsely identified",
+    "uniform all-coefficient preparation ratio (1.0, 0.0)",
+    "finite preparation endpoint bound including rank change (1.0, 0.0)",
+    "uniform all-coefficient preparation ratio (0.0, 1.0)",
+    "finite preparation endpoint bound including rank change (0.0, 1.0)",
+    "uniform all-coefficient preparation ratio (1.5, 0.0)",
+    "finite preparation endpoint bound including rank change (1.5, 0.0)",
+    "uniform all-coefficient preparation ratio (0.0, 1.5)",
+    "finite preparation endpoint bound including rank change (0.0, 1.5)",
+    "uniform all-coefficient preparation ratio (0.5, 1.0)",
+    "finite preparation endpoint bound including rank change (0.5, 1.0)",
+    "uniform all-coefficient preparation ratio (0.0, 2.0)",
+    "finite preparation endpoint bound including rank change (0.0, 2.0)",
+    "uniform all-coefficient preparation ratio (1.0, 1.0)",
+    "finite preparation endpoint bound including rank change (1.0, 1.0)",
+    "uniform all-coefficient preparation ratio (10.0, 0.0)",
+    "finite preparation endpoint bound including rank change (10.0, 0.0)",
+    "uniform all-coefficient preparation ratio (0.0, 50.0)",
+    "finite preparation endpoint bound including rank change (0.0, 50.0)",
+    "uniform all-coefficient preparation ratio (300.0, 700.0)",
+    "finite preparation endpoint bound including rank change (300.0, 700.0)",
+    "whole-record quantum-classical difference has quadratic bound",
+    "whole-record quantum-classical difference has quadratic bound",
+    "actual noisy-centre orientation bracket",
+    "noisy mean and amplitude pressure have opposite sources",
+    "hostile noisy positive-mixture cancellation",
+    "all three original aggregations have same sharp source orientation"
+  ],
+  "largest_normalized_effect_fd_error": 3.2919666992370367e-11,
+  "noncommuting_povm_commutator_norm": 0.0041472516194919025,
+  "relaxed_collar": {
+    "L_max": 5.62756370495839,
+    "L_min": 2.28301182858928,
+    "q_max": 0.25,
+    "q_min": 0.0625
+  },
+  "scope": "Analytic composition of existing Bellman aggregations with VCP/P on the same sharp recorder; exact Golden inequalities and bounded numeric noncommuting checks. No microscopic Bellman traversal-work binding, new native compiler, exact finite GR root, whole-geometry replay or scientific promotion. The original operator-statistical source transfer is owned separately by section7fs.",
+  "status": "PASS_ENTROPY_SOURCE_CLASS_COMPOSITION"
+}
+```
+<!-- END ES ENTROPY SOURCE CLASS RECEIPT -->
+
+An independent isolated replay of the updated section7ft checker using Python -I -Werror passes all111 controls with empty stderr and byte-identical receipt. The extracted embedded source and receipt match their pinned files exactly. Final affected validate_repo (warnings0), validate_work, validate_agent_protocol, gr_assembly check and whitespace checks pass. Assembly remains98 results /22 obligations /5 discharged, scientific_promotion=false. Both inherited e016f405 file prefixes are preserved byte-for-byte.

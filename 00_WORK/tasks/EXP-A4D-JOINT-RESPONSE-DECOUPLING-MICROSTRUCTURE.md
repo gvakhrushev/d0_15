@@ -22921,3 +22921,90 @@ wrong determinant power and moving beta/unit controls. Normal and optimized
 outputs agree. Three cross-reviews approved the final proof pin in §7fs.E
 with its explicit original-law premise. Unchanged GR/heat/Lean suites were
 consumed at their existing scope rather than replayed.
+
+
+
+
+## 2026-11-05 checkpoint: one sharp full source for all three original aggregations
+
+Mathematical input `094562a4c3e71c5c915a8da59d0de5827ef4fb65`;
+integration baseline `e016f4056ee38c761b8263c0bbcb4da739d4e09b`.
+Existing Draft #334, same two write paths and native-programme-v1 owner.
+Phase: native realization / final composition. Primary addition renamed
+to section7ft ES1--ES9 after the baseline's new original-partition §7fs.
+Consumer: robustness of the VCP / P1--P16 sharp SER full source under the
+already owned mean/amplitude/scalar aggregation conventions.
+
+The new §7fs.B PS2--PS7 supplies the original Book statistical partition's
+complete source equivalence on the actual noisy §7fq RAW/GROWING tuple
+at fixed original `beta=2p^2`: `-ell D A_stat=D B-p^3 D H`, with normalized full/lift-weighted error
+controlled by `epsilon_B+p^3 eta_H`. Under the originally selected Book
+partition law, §7fs.C supports the scoped Einstein terminal proposal and
+supersedes the former §7fr C stopping rationale. The added entropy-cone
+result below is a distinct sharp-history robustness theorem.
+
+The older Bellman/half-entropy owners already distinguish mean Cost--Info,
+quadratic-amplitude pressure and scalar-probability pressure, with entropy
+coefficients1,3/2,2 and explicit Born/GAIN/cost hypotheses. The new result
+applies ALL THREE to ONE original sharp SER current/history source. It
+does not rediscover those formulae or assert their physical binding.
+
+More generally, use C_code-(b_Q I_CQ+b_C H_record)/log(phi), with fixed
+nonnegative b_Q,b_C and a=b_Q+b_C>=1. Classical entropy is the full actual
+joint-record entropy; it is not identified with CQ entropy off section.
+The actual generally noncommuting born-input POVM gives positive complete
+effect-source weights in [a L_min-1,a L_max-1], L_min>2 on the real relaxed
+sharp collar. Every normalized occurrence map retains the SAME physical
+right lift. Its full physical critical class is the original all16+24+2
+Einstein--two-CAR class; different occurrence covectors are not falsely
+declared proportional.
+
+The key uniform bound is that (a L_max-1)/(a L_min-1) decreases with a.
+Independent preparation/basis and rank-changing finite comparisons,
+actual gain calibration, separate old-cost/entropy norms and every paid
+clock occurrence therefore admit ONE source/error schedule for all fixed
+coefficients. P1--P16 supplies arbitrary retained past and the actual
+N_total=3N_b schedule without polar recovery or nonzero old return. New
+per-repeat work is not counted as a fixed old charge.
+
+This source cone belongs to the SHARP recorder. On the distinct noisy7fq
+centre the exact inherited 2/3<L(q_N)<3/4 makes the mean and amplitude
+pressure slopes opposite; an explicit positive mixture cancels. This
+control forbids transplanting the new cone to that task and preserves its
+separate selected-master proof and §7fs original-statistical source transfer.
+The sharp entropy paths, return masses and ledger are not identified with
+the noisy RAW partition history. No changed reporter is imposed on7fq.
+
+Three bounded independent reviews checked the complete mixed-entropy
+source, same-word refinement/old-ledger application and Bellman/noisy
+types. The new embedded checker covers111 changed exact/numerical checks
+on the existing actual seven-stage G/CX born-input fixture. Normal and
+optimized Python with warnings as errors give identical LF receipts.
+The mathematical theorems are analytic; floating diagnostics are not
+interval proofs or a replay of all42 geometry. Unchanged native compiler,
+large heat, geometry and Lean owners are consumed at their stated scope.
+
+The checker retains its mathematical implementation and original input
+pin. Its section label and diagnostic-scope wording follow section7ft;
+normal and optimized replay produce byte-identical receipts. Recording
+`e016f405` changes integration/status prose; these diagnostics do not replay
+or certify the separate original-partition implementation and receipts.
+
+The removed premise is the need to select one of the three already owned
+aggregation conventions to obtain the sharp source equations. To identify
+this SHARP entropy cone with a complete microscopic Cost--Info ledger,
+actual traversal/work and vertex-information operands must satisfy the
+stated binding conditions or a genuine full-source residual proof. The
+old Born/GAIN, record-domain and signed-gain assumptions remain explicit.
+A faithful dictionary from EVERY literal edge-Cost/vertex-Info history to
+the spectral/loop accounting types, and derivation of every Book law from
+the bare kernel, remain stronger upstream assertions. They do not reopen
+the original-statistical C bridge now supplied by §7fs.
+
+The original-statistical scoped terminal proposal remains owned by §7fs;
+this entropy-cone addition makes no independent terminal/assembly acceptance
+or lifecycle transition. No new price or primitive, exact finite native
+root, unconditional D0-to-GR closure, Ready transition or retirement is
+declared. The broader `GR_closed=true` claim is not established.
+
+Affected repo/work/agent-protocol/assembly and whitespace checks pass; embedded source and receipt bytes are exact. Independent isolated replay passes111 controls with an identical receipt. Assembly remains98 results/22 obligations/5 discharged and scientific_promotion=false. Both e016f405 file prefixes are unchanged.
