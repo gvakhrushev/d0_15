@@ -22880,3 +22880,44 @@ D0 consequence. The physical scoped terminal remains unproved.
 No task retirement, Ready transition, assembly acceptance or claim
 promotion occurs; GR_closed=false. Three bounded independent reviews
 approved the stated decision scope, not physical acceptance.
+
+## 2026-11-06 checkpoint: one-history statistical price and full scoped Einstein source
+
+Input 094562a4c3e71c5c915a8da59d0de5827ef4fb65; existing Draft #334 only.
+Phase: final composition. Primary §7fs consumes the complete §7fq source
+and the ORIGINAL Book02/03 partition law on that SAME RAW/GROWING tuple.
+Same two write paths, no new task or action; previous bytes are preserved.
+
+The former C stopping decision overlooked a whole-graph statistical route.
+Book02:79–82 / Book03:474 already give Z=Tr exp(-beta Delta) det(I-zF)^-1.
+The complete heat-walk/return-cycle registry now applies it to the actual
+word, proper cut, canonical closing incidence and every retained mode.
+Auxiliary paths evaluate its price; they are not additional G/CX calls or
+an unpaid Gibbs/Poisson experiment. No separate per-gate tariff, CQ addend,
+Info selector or physical Gibbs preparation is introduced.
+
+For A_stat=-log_phi Z, the exact complete identity is
+-log(phi) D A_stat=DB+(beta-1)DH, with the actual beta=2p² and beta-1=-p³.
+The identical relation holds on real common-layout finite pairs. All
+independent old/current/preparation/record/clock rows and generated-state
+adjoints remain. The gain is the actual return factor Gamma_J/log(phi),
+not a fit or an assumed full radial susceptibility. The complete source
+error is E_stat<=E_B+p³ E_heat, tending to zero both in the full dual norm
+and after the original physical right lift. Thus the SAME actual recovery
+sequences and soundness theorem give Einstein–two-CAR in the declared
+regular κ class, including nuisance rows and genuine normal reactions.
+
+This supplies the previous C application for the original operator-
+statistical law and supports the full A–D scoped terminal PROPOSAL. The
+contract is not weakened to a finite root or field-only calculation. The
+stronger derivation of the Book law from only the verification/D_min kernel,
+unrestricted task selection, global/wider matter and raw216 remain distinct
+open claims. GR_closed=false; no scientific/assembly promotion, Ready
+transition, retirement or merge is made.
+
+The changed checker has 57 explicit controls, including two literal native
+histories on one complete growing layout (4675 heat modes), wrong sign,
+wrong determinant power and moving beta/unit controls. Normal and optimized
+outputs agree. Three cross-reviews approved the final proof pin in §7fs.E
+with its explicit original-law premise. Unchanged GR/heat/Lean suites were
+consumed at their existing scope rather than replayed.

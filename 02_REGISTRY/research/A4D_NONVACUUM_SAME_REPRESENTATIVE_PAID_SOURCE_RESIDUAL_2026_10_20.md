@@ -155315,6 +155315,926 @@ SHA256 `ab647912e739d612da200ac93ba24eefbecae0bc827b03e3b00bec4c14b3b0a7`.
 These reviews are not independent physical acceptance. No unchanged
 geometry, heat, compiler or Lean suite was replayed for this decision.
 
+## 7fs. One execution, its original statistical price, and the complete Einstein source
+
+5 November 2026. Existing #334; input
+`094562a4c3e71c5c915a8da59d0de5827ef4fb65`. Phase: final composition.
+Consumer: the unchanged scoped A–D contract, using the original Book02/03
+operator-statistical law and the complete informative-history theorem §7fq.
+Same two write paths; no new action, task, geometry, primitive or selector.
+
+**The missing synthesis is a distinction between two kinds of history.**
+The actual paid instruction history W builds its complete RAW/GROWING
+operator graph. The paths and cycles that evaluate the statistical price
+of that graph are terms in its original operator functional; they are not
+extra physical calls. Assigning Cost−Info separately to every G/CX call,
+or physically preparing a Gibbs/Poisson sampling apparatus for those
+terms, was an unnecessarily strong prerequisite for this application.
+
+Book02:79–82 and Book03:474 already give the statistical partition
+
+    Z_N(W)=Tr exp(−beta Delta(W)) det(I−zF(W))^(−1).
+
+Book03 §03.3.2 identifies the history partition and feedback determinant
+at their two scene scales, while §03.25 selects the master B=H+J. The
+registry below supplies the actual same-graph application of these laws,
+including ordered memory, proper cut, closing incidence, every birth
+complement and all 425D heat modes. It never replaces the physical output
+law by this partition, or equates a scalar trace with an unevaluated
+memory-algebra element.
+
+For the original effective partition exponent A_stat=−log_phi Z_N,
+
+    −log(phi) D A_stat = D B +(beta−1)D H.          (SYN1)
+
+This is exact on the entire declared fixed-beta domain and on actual
+finite comparison pairs. Here beta=2p², so beta−1=−p³; no coefficient is
+fitted and beta is not set to1. All actual dependencies of Delta and F
+are differentiated. A genuinely variable beta would add H D beta.
+
+Use the actual return-channel gain Gamma_J already computed in §7fq,
+Gamma_stat=Gamma_J/log(phi)>0, and its SAME physical decoder/right lift.
+Then the complete oriented statistical source has error
+
+    E_stat,h <= E_B,h + p³ E_heat,h,
+    E_stat,h ->0,   ||R_h|| E_stat,h ->0.          (SYN2)
+
+The existing full heat estimate, including every historical/current
+occurrence and all compiler/padding factors, supplies both limits.
+Generated-state adjoints and real constraint reactions transform with
+the same exact linear identity. No preparation or record variable is
+frozen and no shared scalar controller is added. Normalizing a source
+by its measured channel gain is not differentiating a gain-divided price.
+
+**Composed result.** On §7fq's nonempty regular original H.1 informative
+family, with its declared Einstein–two-CAR matter and boundary/gauge class,
+the original statistical price has full joint κ-source soundness and
+reverse recovery on the same paid histories. A κ-zero full source gives
+the owned Einstein–two-CAR equations; every solution of the declared class
+has the already constructed native recovery sequence whose full source,
+including nuisance rows, tends to zero. The fixed global sign in SYN1
+preserves stationarity, not minimum/maximum classification. No exact
+finite whole-price root is asserted.
+
+This removes the earlier C stopping rationale for the ORIGINAL
+operator-statistical law and permits a scoped terminal proposal against
+A–D. It does not derive that original law from only the abstract
+verification/minimal-description kernel, nor settle unrestricted native
+task selection, wider/global matter dynamics, or raw216. Those are
+different remaining claims; no `GR_closed=true`, assembly acceptance,
+Ready transition or task retirement is made here.
+
+**Correction of prior status.** The §7fq.C/§7fr stopping decision overlooked
+this application of the original statistical law. Their acceptance test
+already allowed complete source equivalence; the present argument supplies
+that alternative, with a declared global Euler orientation. The failed
+gatewise candidates are therefore no longer barriers to this route. Their
+exact controls about code length, raw coordinates, normalization and actual
+sampler preparation retain their stated scope. This proof neither assigns
+vertex Info from the desired Einstein equation nor adds an unknown charge
+to the already complete B. The original partition and its actual operands
+are fixed before the geometric theorem is used.
+
+The proof components below give the whole registry, full source transfer,
+domain/acceptance audit and bounded changed verification. Their original
+law premise is explicit throughout; the stronger kernel-only derivation
+is not silently relabelled as completed.
+
+
+### 7fs.A. Same-graph statistical registry for the complete informative history
+
+5 November 2026. Existing #334; read-only input
+`094562a4c3e71c5c915a8da59d0de5827ef4fb65`. Application: the actual §7fq
+informative history, including its retained past, current repetitions,
+recovery, canonical births and final padding. No new execution or price.
+
+**Correction to the earlier C blocker.** A Book history in the statistical
+action need not be one physical G/CX instruction or one chronological
+compiler programme. The original operator-statistical law evaluates the
+scene/return paths of an already specified execution. At that scope its
+complete weighted registry is constructed below from the actual RAW tuple.
+No separate tariff for every gate, Shannon interpretation of Info, new
+physical Poisson/Fock sampler, or identity with mean terminal CQ price is
+needed. Deriving this already stated operator-statistical law from only
+`D_min`/verification primitives is a distinct stronger upstream question;
+this calculation does not discharge that question.
+
+#### 1. Original premises and the precise semantic distinction
+
+All paths below are relative to the repository root stated above.
+
+* `01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md`,
+  §§03.1.1/03.1.3, lines50–105: path reversal supplies the involution;
+  order/phase memory is carried algebraically before a response is read.
+* The same Book, §03.3.2, lines225–236, specifies
+  `F=P U* Q U P`, `J=-logdet(I-zF)`, and explicitly identifies the
+  history partition and feedback determinant as the same admissible
+  object at two scene scales. This is the original statistical-action
+  identification being applied, not a derived gate-price dictionary.
+* Book03:474 and `BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md`:
+  79–82 explicitly give
+  `Z_N=Tr exp(-beta Delta_N) det(I-zF_N)^(-1)`;
+  Book02:2578–2586 and Book03:1127–1137 select the complete master
+  `B=beta^(-1)log Z_H-logdet(I-zF)` and its stationary law.
+* PRIMARY §7bf, lines15782–15803, applies precisely this original complete
+  bootstrap without an additional Shannon, generic gate fee or imported R.
+  §7bh, lines16481–16498, distinguishes a direct bootstrap application
+  from the STRONGER derivation of that stationary law from `D_min`.
+* `A4D_CLOSED_FEEDBACK_NO_RETURN_PROBABILITY_AND_CANONICAL_RECIPROCAL_DUALITY_2026_10_25.md`,
+  §2, lines32–74, owns the exact symmetric-return partition and all
+  noncommuting first derivatives. Its physical-sampler warning does not
+  prohibit using the formula as a valuation of the original operator.
+
+Thus the original law supplies the statistical evaluation, while RAW
+must supply its actual operands. It would be circular to use the expansion
+below as a new proof of the original identification from M1 alone. It is
+not circular to apply that already stated law to the now constructed
+same-execution operands. Neither `Z_N` nor its loop histories is being
+identified with the normalized probability of the final physical 0/10 record.
+
+#### 2. One actual retained graph and one proper cut
+
+Consume `RAW_CYLINDER_REALIZATION_RU.md` R6–R7, lines112–160, and
+`GROWING_CLOCK_RU.md` G1–G14, in
+`02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/`.
+Let the actual stage spaces be H_j, actual internal isometries F_j,
+last actual gate g, and K=direct_sum_j H_j, D=dim K. The canonical closure
+R sends each final detail to its own birth-stage complement. With the
+actual shift S and last-stage projection E_f,
+
+    T=S+R g E_f,             T*T=TT*=I_K.                 (SR1)
+
+The proof uses every birth complement; replacing R by the prepared-input
+coisometry is not permitted. R is the original clock incidence, not an
+additional physically executed inverse word. Generated cuts are
+P_j=A_j P_0 A_j*, A_j=F_(j-1)...F_0. The full graded proper-cut return
+operator is the RAW operand
+
+    Fhat=Phat That* (I-Phat) That Phat,   0<=Fhat<=Phat.  (SR2)
+
+All zero/leakage/failure columns and all old quantum/reference factors
+remain. G10 reduces its determinant to the original input corner, with
+no artificial stage-count multiplier. This is an identity, not deletion
+of the other clock/Hodge modes. In §7fq the spatial cut is the same fixed
+rank-one scene cut and the unknown initial Spin rank is unchanged.
+
+For the original scene put R_s=(D_s+2I)^(-1/2), B_s=R_s A_s R_s,
+C_s=R_s^2. G12–G14 give
+
+    d_T=[(partial_s R_s) tensor I ; R_s tensor (I-T)],
+    Delta_0=I-M,
+    M=B_s tensor I+C_s tensor T+C_s tensor T*,
+    Delta_1=d_T d_T*,              ||M||<=1,
+    Z_H=359D+2 Tr_(33D) exp(-beta Delta_0).              (SR3)
+
+The last equality retains all 425D modes, including the harmonic modes.
+There is no transplantation from the different full128 or sharp-SER carrier.
+
+#### 3. Explicit heat registry and its evaluation map
+
+Expand M into its actual block edges indexed by scene vertex and stage.
+Scene edges have the fixed degree weights from B_s; temporal edges have
+the fixed C_s weights and the actual blocks of T or T*. A word of n such
+edges is composable exactly when their intermediate indices agree.
+Its memory is their ORDERED operator product. The expansion of T includes
+the full R g closing blocks, not just the successful prepared path.
+
+Let [gamma] denote the formal composable word, and let ev([gamma]) be that
+ordered block product. This is the concrete represented finite response/path
+algebra on the existing carrier. It is NOT claimed faithful on a free
+infinite path algebra: distinct formal words can have the same represented
+operator. Path reversal maps to the adjoint. For fixed n this is a finite
+exact distributive expansion of M^n, before any trace is taken:
+
+    M^n=sum_(length gamma=n) c_gamma ev([gamma]).       (SR4)
+
+The scalar c_gamma contains only the already fixed scene normalization;
+matrix signs, relative phases, cut operators and retained memory stay in
+ev([gamma]). No assertion that each traced walk is a positive classical
+probability is made. Open words, full operator entries and inserted future
+effects can be evaluated by the same map. Trace closure evaluates the
+selected action; it never erases or dephases the actual retained memories
+or alters their physical future operations.
+
+The exact selected heat evaluation is therefore
+
+    Z_H=359D+2 exp(-beta) sum_(n>=0) beta^n/n!
+                    sum_(closed gamma, length n) c_gamma Tr ev([gamma]). (SR5)
+
+The empty-word term is included. This is the actual same-graph memory
+registry: scalar coefficients, ordered memory, and the original full trace
+have all been specified. It is not a prescription to execute the virtual
+reverse edges or n successive physical copies. The exponential-series
+factor is inherited from the original heat functional, not installed as
+a new physical Poisson clock or chosen Info.
+
+#### 4. Explicit return registry, including its true boundary
+
+Write F=Fhat restricted to its actual proper retained space; let r be that
+space's dimension (zero modes may instead be kept throughout). Each power
+F^m is a closed response word built from the SAME P, Q=I-P and That.
+All its native gates/cuts can be expanded using their actual ordered
+products. The original closed-loop owner gives the basis-independent sum
+
+    h_m(F)=Tr_(Sym^m ran P)(Sym^m F),  h_0=1,
+    h_m=(1/m) sum_(k=1)^m Tr(F^k) h_(m-k),
+    Z_J=sum_(m>=0) z^m h_m(F)
+       =exp[sum_(k>=1) z^k Tr(F^k)/k]
+       =det(I-zF)^(-1).                               (SR6)
+
+Equivalently SR6 is the cycle-collection expansion: a collection with
+n_k rooted k-cycle trace factors has coefficient
+product_k z^(k n_k)/(k^(n_k) n_k!). These coefficients follow from the
+exponential and cyclic trace, not an independent price assignment.
+Every response loop carries its full ordered P/Q/That memory before
+trace evaluation. The terminal operand is the actual closed trace with
+the proper P/Q boundary; it is not a postselected 0/10 outcome.
+
+The symmetric spaces are an algebraic way to evaluate the selected
+partition. No new symmetric/Fock register is appended to the paid carrier.
+If such a sampler/readout were physically executed, it would instead be
+a different enlarged word with its own full price. Nothing here does so.
+
+The product of the two virtual registries, with the two prescribed trace
+evaluations, is exactly the original whole-statistical object:
+
+    Z_N=Z_H Z_J.                                      (SR7)
+
+SR7 uses the original two scalar trace evaluations. It does NOT assert a
+scalar equality with the UNEVALUATED algebra-valued Z_D of §03.3.0. The
+original scene-scale statistical law supplies this scalar reading; the
+current construction instantiates its graph, operators and full boundary.
+
+This product represents a heat walk together with a collection of return
+response loops ON ONE ACTUAL execution tuple. It does not equate those
+virtual histories with a lottery over alternative native instruction words.
+No multiplicity of such a different lottery has been discarded or supplied.
+
+#### 5. Complete first-source identity and finite evaluation
+
+At fixed finite layout/scene/beta/z, all actual occurrence, field,
+preparation and generated-cut variations differentiate SR1–SR7. In
+particular D(F^m) is the sum of all m ordered insertions; cyclicity gives
+D Tr F^m=m Tr(F^(m-1) DF) without assuming [F,DF]=0. Hence
+
+    D log Z_N=-beta Tr(rho_H D Delta)
+                 +z Tr[(I-zF)^(-1) DF]
+              =D B+(beta-1)D H,                      (SR8)
+
+where rho_H=exp(-beta Delta)/Z_H on the FULL graded carrier and
+H=beta^(-1)log Z_H. Nothing sets the independent forward/backward bank,
+old-history, record, input or implementation rows to zero. Their actual
+derivatives enter D Delta and DF; §7fq supplies the corresponding adjoints,
+constraints, gain and normalized estimates. Moving stage gauges carry
+their derivatives too. If beta is a genuinely free input, SR8 has the
+additional H D beta term; the current task fixes it.
+
+The registry is effectively evaluable at finite precision. The heat tail
+after n=L has absolute bound
+
+    2 exp(-beta)(33D) sum_(n>L) beta^n/n!,
+
+and its fixed-beta directional derivative is bounded by
+
+    2 exp(-beta)(33D)||DM|| sum_(n>L) beta^n/(n-1)!.
+
+The full heat denominator satisfies Z_H>=359D>0. Thus these tails also
+control log/source evaluation. The feedback logarithm tail after k=L is
+at most r z^(L+1)/[(L+1)(1-z)], with derivative tail at most
+r z^(L+1)||DF||/(1-z), as in the owned SR6 theorem. Absolute and local
+uniform C1 convergence justify the identities for all finite occurrence
+variations. Actual chart/Jacobian/right-lift factors and division by the
+true positive gain must be applied to any finite numerical truncation;
+they are not replaced by operator norm alone. The infinite notation is an
+exact convergent functional calculus, not an infinite physical execution.
+
+#### 6. What this application closes, and what it does not prove
+
+The primitive weighted-each-G/CX demand was unnecessarily strong for
+the ORIGINAL operator-statistical action. SR1–SR7 now give its explicit
+same-graph weighted representation, full boundary and normalization.
+The full-source transfer uses SR8 and §7fq's actual heat estimate; it
+does not require B=mean(Cost-Info), B=CQ, or new physical instructions.
+This supplies the C application at that original operator-statistical
+scope, taking Book03's own identification and selected master law as
+the owned premises they are. Its exact scope should be stated positively.
+
+The following is a DIFFERENT stronger theorem and is not established:
+derive the operator-statistical law itself, or every coefficient in its
+statistical history valuation, solely from minimal description/verification
+axioms without using Book03 §§03.3.2/03.25. SR4–SR7 do not reconstruct a
+unique edge Cost and vertex Info ledger, identify a scalar partition with
+an unevaluated algebra element, or force a physical sampling law on all
+compiler-programme alternatives. Earlier countercontrols comparing native
+Born histories, CQ mean prices and ideal surprisal retain their stated
+scope; none refutes this same-graph statistical evaluation.
+
+No complete physical or GR terminal is stamped by this note; final
+composition and independent acceptance must explicitly retain the above
+original-law premise instead of silently claiming the stronger kernel-only
+derivation. No unchanged checker was replayed; the changed result is the
+exact application of the existing series identities to the full §7fq tuple.
+
+Source-pin check: at HEAD `094562a4c3e71c5c915a8da59d0de5827ef4fb65`,
+Book02 lines2578–2586 contain the displayed master stationary functional
+and its heat/return interpretation exactly as cited above.
+
+### 7fs.B. Original joint partition consumes the complete §7fq source
+
+5 November 2026. Existing #334, final composition; input `094562a4c3e71c5c915a8da59d0de5827ef4fb65`. Repository read-only. Named consumer: C's complete same-execution source equivalence, not new geometry or a microscopic tariff.
+
+#### 1. The original partition, with its actual coefficients
+
+Book02 lines79–82 already defines
+```
+Z_N=Tr exp(-beta Delta_N) det(I-z F_N)^(-1),
+P_fb=beta^(-1) partial_V log Z_N.
+```
+Book03 §03.3.2 lines226–234 gives the determinant source and describes its relation to the statistical-history partition; §03.10 line474 distinguishes this SAME feedback partition from the geometry-diagram sum. Book03 §03.25 lines1127–1137 separately selects
+```
+Z_H=Tr exp(-beta Delta), J=-logdet(I-z F),
+H=log Z_H/beta, B=H+J.
+```
+
+Substitute §7fq's ACTUAL RAW/GROWING tuple, including its final gate, canonical closing incidence, original cut, all births, retained old records and all 425D Hodge modes. No new Delta,F, clock, Gibbs preparation or determinant exponent is chosen. For the Golden scalar partition valuation put
+```
+ell=log(phi), A=-log Z_N/ell,
+log Z_N=beta H+J.                                    (PS1)
+```
+The minus-log_phi convention is the existing finite-future value P1/P4, not the mean of an invented per-G/CX price. It is essential that the original determinant power is -1: generally Z_N is NOT exp(beta B).
+
+#### 2. Exact full source and finite-pair identity
+
+For fixed original beta,
+```
+-ell DA=DB+(beta-1)DH.                               (PS2)
+```
+This is an identity of the ENTIRE covector of the actual execution, including every preparation, old-history, current occurrence, record/cut/closing and field argument of Delta,F. It is not only a field restriction. No derivative of an unknown compiler index is invoked.
+
+For any actual two finite histories W+,W- at the same declared comparison request and fixed beta,
+```
+-ell [A(W+)-A(W-)]=[B(W+)-B(W-)]
+                         +(beta-1)[H(W+)-H(W-)].    (PS3)
+```
+Thus it applies directly to the inherited native finite comparisons. The true initial state, all records, layout, denominator 2t, basis and actual central gain are precisely those of §7fq; approximate numerical evaluation has its own original reading-error bound.
+
+For the actual beta=2p^2 and p+p^2=1,
+```
+beta-1=-p^3,   -ell DA=DB-p^3 DH.                    (PS4)
+```
+This coefficient is fixed by the original model. It is not chosen to match Einstein or to cancel a particular mode.
+
+If beta is instead independently varied, the exact identity is
+```
+-ell DA=DB+(beta-1)DH+H D beta.                      (PS5)
+```
+The last term cannot be dropped. If ell also varies, the explicit identity is
+```
+-ell DA=DB+(beta-1)DH+H D beta+A D ell.
+```
+The current original constructor fixes beta, phi, z and scene exactly as §7fq. Variation of z or scene at fixed beta satisfies PS2 algebraically but still requires the corresponding source/nuisance and heat estimates; no free extension of those controls is claimed. Different durations retain their actual finite price difference: the convergence proof below uses the existing common-layout comparison domain.
+
+#### 3. Full normalized theorem on §7fq, not merely a partition identity
+
+Consume the already proved §7fq family, with ACTUAL frozen gain Gamma_B>0, full independent norm and physical right lift R_h:
+```
+ell_B,h = DB_h/Gamma_B,h
+        =(A_h^* E_Einstein+twoCAR,0_nuisance)+r_B,h,
+||r_B,h||full,* <= epsilon_B,h,
+A_h R_h=I,
+(1+||R_h||) epsilon_B,h ->0.
+```
+Here differential notation also denotes the owned finite-comparison source, with its actual same-initial endpoints. Historical rows are retained by §7fq's M construction; current fixed-effect rows and normals use its full-instrument recovery, not a three-angle restriction.
+
+The §7fq convention is load-bearing: Gamma_B is the ACTUAL return-factor channel calibration Gamma_J, computed from the actual cold and reporter susceptibility (LC13 and §B.6 item4), while the heat source is a controlled remainder. It is not the entire radial derivative of H+J. The actual ideal/finite gain comparison and its certified relative error zeta<1 are already included there. Since log Z_return=J exactly in the ORIGINAL partition, the present Gamma_A=Gamma_J/ell is precisely that same actual channel calibration in Golden units. No gain is fitted to the physical source. If one instead names the full radial derivative as the gain, it must be recalibrated with the additional heat contribution and its certified relative-error factor; that different convention is not used below.
+
+Use the SAME full CL estimate on those same words:
+```
+||DH_h/Gamma_B,h||full,* <= eta_H,h,
+eta_H,h <= A_(L_h+2m_h) C_clock,h/Gamma_B,h
+                  +E_heat_reading,h,
+(1+||R_h||) eta_H,h ->0.                            (PS6)
+```
+All 425D modes, old/current/padding occurrences and all actual norm constants occur here. Both the complete-norm error and its lift-weighted value tend to zero; a lift-product limit alone would not imply nuisance convergence. The §7fq joint accuracy/padding schedule already supplies these two limits; no new late attenuation or Gibbs state is required.
+
+Write A_stat,h for the scalar price on level h, keeping A_h exclusively for the inherited physical decoder. Define Gamma_A,h=Gamma_B,h/ell>0 and fix the GLOBAL source orientation
+```
+ell_A,h^or := -D A_stat,h/Gamma_A,h.
+```
+PS2 gives the complete theorem
+```
+ell_A,h^or
+ =(A_h^* E_Einstein+twoCAR,0_nuisance)+r_A,h,
+||r_A,h||full,* <= epsilon_B,h+|beta-1| eta_H,h
+                = epsilon_B,h+p^3 eta_H,h,           (PS7)
+E_A,h := epsilon_B,h+p^3 eta_H,h,
+E_A,h ->0,    ||R_h|| E_A,h ->0.
+```
+Every source coordinate has the SAME sign reversal and Golden conversion. This is direct full-source equivalence, not membership of DA itself in a positive cone with DB. It preserves stationarity and the equation class; it does NOT preserve minimum/maximum classification and proves no field minimum.
+
+Generated-state adjoints and actual task-normal reactions transport linearly under PS2. If lambda_B and lambda_H denote the corresponding adjoints for the same recurrence/constraint graph, lambda_A=-(lambda_B+(beta-1)lambda_H)/ell gives their exact combination. Independently operated inputs remain independent. A generated bookkeeping distribution introduced below does not freeze or replace any such native input.
+
+Soundness: require the complete oriented A-source to vanish in both inherited senses, ||ell_A,h^or||full,* ->0 and ||R_h|| ||ell_A,h^or||full,* ->0. Applying the same R_h to PS7 then makes every original metric/link/matter residual tend to zero, while the complete-norm estimate retains nuisance convergence. The owned GENERAL/JZ theorem yields the original Einstein–two-CAR equations on the declared regular class.
+
+Reverse: for every solution in the same nonempty class, use §7fq's actual native recovery sequence, with its M copies, paid handoffs, exact-label recovery and joint precision/padding diagonal. No word or previous record is replaced. PS7 and the inherited recovery estimate make the ENTIRE A-source tend to zero, including all historical and current nuisance rows, in the complete norm and after multiplication by ||R_h||. This is not exact finite stationarity and does not transplant EO/SER roots.
+
+For finite reading errors, if H and J have absolute errors e_H,e_J, then A can be evaluated as -(beta H+J)/ell with error at most (beta e_H+e_J)/ell. Divide the sum of endpoint errors by 2|t|Gamma_A and apply the actual basis/lift constants. No free evaluation operation is asserted if a physical arithmetic reader is executed.
+
+#### 4. Exact joint envelope: generated accounting, not a physical sampler
+
+The original positive partition also has a single joint variational representation. This corrects the sign/coefficient problem in using only the heat Gibbs identity plus a separately retained J.
+
+On the actual proper feedback cut (or equivalently the entire F with its zero modes), define
+```
+mu_k=z^k Tr(F^k)/k >=0,
+sum_(k>=1) mu_k=J,
+sigma=exp(-beta Delta)/Z_H.
+```
+The owned positive loop/void theorem supplies these intensities, including all noncommuting derivatives. Their sum is finite because z<1 and 0<=F<=I. Let Pi_mu be the product Poisson law on finite-support loop-count configurations n; almost surely only finitely many counts occur. Its unnormalized weights are product mu_k^(n_k)/n_k!, and their sum is exp J.
+
+First take a joint classical-quantum density Omega on the loop configurations and the FULL heat carrier for which the displayed entropy and energy/log-weight expectations are finite. This domain includes finite-support densities supported on positive loop types. On this domain the functional is
+```
+Phi(Omega)
+ =S(Omega)-beta Tr(Omega Delta)
+  + E_Omega[sum_k(n_k log mu_k-log(n_k!))]
+ =log Z_N-D(Omega || sigma tensor Pi_mu).            (PS8)
+```
+Use the usual support convention for zero mu; on §7fq's strict positive-return/leakage collar the nonzero loop types are regular. On general joint densities define the extended functional by the right-hand relative-entropy expression, rather than an undefined difference of infinities. The generated product optimizer has finite displayed entropy and expectations: the heat carrier is finite and the nonzero mu_k have exponential tails for finite F and z<1. Finite truncations followed by their convergent limit therefore give the same identity and a unique mathematical optimizer Omega_*=sigma tensor Pi_mu, with
+```
+sup Phi=log Z_N,     A=-(sup Phi)/ell.                (PS9)
+```
+Correlations are permitted in the variational domain. Product structure is a conclusion for this accounting measure, not an assumption that the native physical state or histories factorize.
+
+The auxiliary variable is GENERATED by the already fixed Delta,F; it is not an independent incoming native density or controller. Evaluating log Z_N never requires preparing Omega_* physically. If one were actually to prepare or sample it, those operations and their costs would belong to a different enlarged execution; that is not this theorem.
+
+The envelope derivative at fixed beta,z is
+```
+D log Z_N=-beta Tr(sigma DDelta)+sum_k Dmu_k
+         =beta DH+DJ.                               (PS10)
+```
+All dependence of Delta,F on the actual initial cut, old records, preparations and closing/clock maps is retained. Differentiating an unnormalized density or freezing the moving reference would be incorrect. At a nonoptimal accounting Omega the exact discrepancy is D D(Omega||Omega_*); it is not silently set to zero. At the GENERATED Omega_* this relative entropy is identically zero and has zero full derivative, with no assumed physical optimization policy.
+
+The older §7fe prepared-occupation mismatch is therefore not an obstruction to PS8–PS10: it concerns substituting the actual prepared state for sigma. No such substitution is made here. The full grade-one mass is present, and no physical Gibbs preparation premise is imposed.
+
+For finite loop truncation R on an r-dimensional proper cut, the owned bounds give
+```
+0<=J-J_R<=r z^(R+1)/[(R+1)(1-z)],
+|D(J-J_R)|<=r z^(R+1)||DF_cut||/(1-z).               (PS11)
+```
+Their ACTUAL occurrence/gain/lift constants are still required for a finite source approximation. Heat remains the full finite trace; it is not replaced by a zero-mode or prepared-state expectation.
+
+#### 5. What this does and does not settle about C
+
+There is now an unconditional source application of the ORIGINAL scalar feedback partition on the §7fq word. It is stronger than a conditional Gibbs identity: the original coefficient mismatch between log Z_N and B is computed, and the ENTIRE mismatch is controlled by an already proved same-word full-source bound. The old need to prepare a Gibbs state or execute a Poisson sampler was excessive for this virtual valuation. Likewise no per-G/CX tariff, replacement det^(-beta), assigned Info, or extra action is required for PS1–PS7.
+
+At the scope where the original Book feedback partition is the admitted statistical valuation, its C source bridge to the existing Einstein source is supplied by PS7. It is the original Z_N evaluated on the actual native operator tuple, not a newly selected ensemble or gravity-fit functional. The auxiliary envelope only explains/evaluates that given partition.
+
+In particular this operator-statistical law is an input already stated in Book02/03, not an extra auxiliary-ensemble premise introduced here. Consuming it on the actual admitted §7fq tuple is the positive scoped application. Requiring the bookkeeping measure to be the physically prepared state, or separately rederiving every elementary tariff before accepting this originally selected partition, would strengthen that scoped application.
+
+A logically stronger claim remains distinct: deriving a faithful dictionary from EVERY literal memory-algebra history gamma with separately defined edge Cost and vertex Info to the spectral/loop accounting types of PS8. Neither PS8 nor entropy positivity constructs that dictionary. Book03 line234 asserts their statistical relation but does not display that all-history map. If acceptance explicitly requires that upstream microscopic derivation rather than the original selected scalar valuation and its full physical source, it cannot be discharged by renaming the accounting energy as the primitive Cost. No such renaming is made here.
+
+Thus the integrator should consume the actual positive statement PS7, not repeat the prepared-Gibbs objection. Whether it completes the stated physical terminal depends on the precise original-law premise being consumed: the selected Book scalar-partition law is already in the sources; a further derivation of that law from unresolved path-weight operands is a separate, stronger assertion. Absolute microscopic price equality is unnecessary in either case.
+
+#### Validation
+
+The companion small checker tests PS2/PS5 and their wrong-sign, missing-beta-row and heat-only controls symbolically; it also evaluates two literal original G/CX histories on one true growing-clock layout, with the complete 425D heat formula and proper cut. This fixture checks the new price identity, not GR, a new root or a physical Gibbs/Poisson preparation. Existing §7fq suites are not replayed.
+
+
+### 7fs.C. A–D audit: the original same-graph statistical price
+
+5 November 2026. Read-only input `094562a4c`. Existing #334; final composition, no new task. This audit re-examines the former C stopping claim rather than assuming it.
+
+**Verdict.** There is a valid constructive route to discharge C at the UNCHANGED scoped contract: use the original Book03 feedback partition on the very operator graph already constructed in §7fq, and prove its complete source equivalence to the selected master. A separate tariff on each literal G/CX instruction is not a prerequisite. The source equivalence below is exact up to a thermal term that the existing FULL covector estimate controls. Once the same-graph partition construction and its quantitative error/gain application are included, this supports proposing `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` for the stated original Book03 law, informative task and regular κ sector. It does not establish kernel-only derivation of every Book law, exact finite stationary roots, an unrestricted task union, or unconditional `GR_closed=true`.
+
+#### 1. The relevant categorical distinction
+
+There are two different histories in this application:
+
+1. A physical native execution W, with its actual births, instructions, retained old/current records, proper cut and clock. RAW/GROWING maps W to the complete finite operator tuple `R(W)=(Delta(W),F(W),...)`.
+2. The auxiliary paths/cycles used to evaluate a statistical function of that SAME finite graph. They are terms in operator multiplication, traces, heat and determinant expansions. They are not additional instructions that must physically execute on oldRIGHT, and not additional measured records.
+
+Book03 §03.3.0 uses an algebra-valued history sum; §03.3.2, line234, expressly relates the feedback determinant to that history-sum object. Section03.8 defines dynamics on the finite operator complex. Section03.10(f), line474, names the feedback partition
+
+    Z_N = Tr exp(−beta Delta_N) det(I−z F_N)^−1,       (PA1)
+
+and explicitly distinguishes it from the DIFFERENT geometry sum `mathcal Z_k`. Section03.25, lines1127–1138, selects the single master B. This is an original law, not a task datum newly declaring an Einstein-shaped objective.
+
+The correct composition is therefore
+
+    admitted complete W -> R(W) -> original Z_N(R(W)) -> its price/source.
+
+It is not necessary to force every elementary matrix entry of W to be a literal parsed 0/10 traversal weight. F already contains adjoints and return/complement operators without asserting that those adjoints are extra physically executed calls. The same distinction applies to auxiliary heat and loop paths. The earlier reader/code-cost countercontrol remains true but does not obstruct this graph-price route.
+
+#### 2. Exact net-price/source bridge on the whole actual domain
+
+Let `ell=log(phi)>0`, `Z_H=Tr exp(−beta Delta)`,
+
+    H=beta^−1 log Z_H,
+    J=−logdet(I−zF),
+    B=H+J,
+    A_stat=−ell^−1 log(Z_H exp J).                   (PA2)
+
+`A_stat` is the EFFECTIVE net price of the original graph-history partition. It is not the action of one literal instruction path, the mean parsed code length, or the CQ entropy of the physical output. It imports no separate Info selector: the entire partition is already specified by PA1 on the actual tuple. The construction of its path representation must retain complete graph indices, phases and normalization; it must not replace PA1 by a successful-branch or prepared-cut trace.
+
+For EVERY real admitted variation, before any nuisance elimination,
+
+    −ell D A_stat = D B +(beta−1)D H + H D beta.      (PA3)
+
+This follows from the exact scalar identity `log Z_N=beta H+J`; it is not an asymptotic or value-only assertion. In the actual RAW/H.1 task beta is fixed, hence
+
+    −ell D A_stat − D B = (beta−1)D H.               (PA4)
+
+All physical dependence of Delta and F remains on both sides. In particular this includes the old historical parameters, each independent Y_i, four independent preparations per copy, the entire fixed-effect instrument fibre, every paid gate occurrence, generated-state/cut/report pullbacks and the actual permitted scene dependence. No row is set to zero merely by calling it an auxiliary variable.
+
+The minus sign is a global action/source convention. Stationarity is unchanged by multiplication by the nonzero constant `−ell`. A final theorem must print this orientation, rather than claim a positive proportionality of A_stat and B or infer a minimum. One may compare `−ell D A_stat` to the existing positively calibrated master source; this uses the same original normalization rule and does not fit a physical coefficient.
+
+The displayed log partition is also the canonical effective net exponent under coarse summation: a completed graph family of weight Z has exponent `−log_phi Z`. This does not require separating each virtual path's exponent into a uniquely identifiable Cost and Info. The original contract permits source equivalence and does not require that microscopic split to be unique.
+
+#### 3. Why this is a complete source estimate, not another local match
+
+Section7fq LC15–16 already bounds the full thermal source after all current/old occurrence maps and in the actual dual norm. Write the available bound as
+
+    (1+||R_h||) ||D H_h||_(full,*) / Gamma_hat_h <= eta_h,
+    eta_h -> 0,                                    (PA5)
+
+with the finite-comparison/readout errors included where that is the actual realization. Delta contains all425D modes; the proper cut and every birth complement are those of the same W. For fixed original beta, PA4 gives
+
+    (1+||R_h||) ||−ell D A_stat,h − D B_h|| / Gamma_hat_h
+        <= |beta−1| eta_h -> 0.                     (PA6)
+
+The factor1 separately proves convergence of the FULL normalized source, including nuisance rows; the factor `||R_h||` proves its lift-weighted convergence. A product-only bound would not suffice if the lift norm could shrink. This matches LC15's two requirements `E_h->0` and `||R_material,h||E_h->0`.
+
+Thus the original owned B soundness AND reverse recovery transfer to A_stat. The nuisance zeros remain κ limits, with their original normal reactions; no exact finite full root is inferred. If the task uses a known beta_h at each finite request, the actual budget must instead ensure `|beta_h−1| eta_h ->0`. This is a computable accuracy requirement, not a choice beta=1 to make the identity trivial.
+
+The PRIMARY gain choice is the already calibrated actual return-channel gain Gamma_hat_h. The identity `log Z_J=J` is exact, so its contribution to `−ell D A_stat` has exactly the same gain; the heat stays in the controlled remainder PA6. This is the actual history's return-channel calibration, not an ideal target gain or the full radial susceptibility renamed after the fact.
+
+Only if a theorem instead uses the ACTUAL full radial susceptibility of A_stat as a SECONDARY calibration, let v_h be the owned calibration direction with `D J_h[v_h]=Gamma_hat_h`. The exact formula is
+
+    −ell D A_stat,h[v_h]=Gamma_hat_h+beta D H_h[v_h].
+
+Consequently certify
+
+    |beta D H_h[v_h]| <= zeta_h Gamma_hat_h,
+    zeta_h<1.
+
+Then its correctly oriented susceptibility satisfies
+
+    Gamma_A,h >= (1−zeta_h) Gamma_hat_h / ell >0,
+
+and source/error bounds acquire the corresponding `1/(1−zeta_h)` factor. The target/ideal limiting gain cannot replace this calculation. No new calibration experiment is required when the existing actual price-reading/source procedure computes these same finite quantities.
+
+#### 4. Free beta, z, scene and layout are not silently removed
+
+RAW §5 and §7fq.A's source-bound ledger fix the original processor scene, beta,z and primitive constants. Their status comes from that task/constructor; they are not held fixed solely for the estimate. Under this scope `D beta=D z=0` on smooth control rows.
+
+If beta is actually made independent, PA3 has the extra `H D beta` and PA6 alone is insufficient. At Delta,F independent of beta,
+
+    −ell partial_beta A_stat = −Tr(rho_beta Delta).
+
+This need not vanish. If z is independent, its exact common partition/master row is `Tr[(I−zF)^−1F]`; it is not eliminated by this synthesis. A new scene/clock calibration domain must carry all of its actual rows. No such extension is claimed.
+
+The physical field/scene data already included in Y_i, separately admitted frame/loader controls, old coordinates and full clock occurrences remain free exactly as in §7fq.A. Different durations/ranks use the original finite comparisons and their actual graphs; equal endpoint operators do not identify their prices. PA2–4 apply to each such graph individually. The existing source theorem is on the declared common-layout comparisons, not on an unproved smooth derivative of an integer dimension.
+
+#### 5. A–D audit and exact remaining validation
+
+| Obligation | Current substitution and scope |
+| --- | --- |
+| A: one nonempty declared physical family | §7fq.A constructs X_(N,c) from the original Spin cut, canonical births, original H.1 query, actual pre-sign reader/canonical-tail encoder, paid current recovery and archive handoff. The logical chart is off shell. No Einstein predicate, universal scheduler or external fitted controller is introduced. |
+| B: full independent source, actual gain/lift, two-way recovery | §7fq.B LC12–16 retains old h, independent current copies/preparations and full current apparatus fibre; M suppresses old rows without freezing them. The actual positive gain and full right lift are retained. PA6 transfers the whole result, including nuisance rows, to the original statistical price. |
+| C: same execution, weights/normalization, price and full covector | W is mapped once to its actual RAW/GROWING tuple. PA1 is the original feedback partition, with its full heat trace and proper return determinant. The exact same-graph partition construction plus PA3–6 provides the previously missing net-price/source binding. It adds neither a CQ term nor a price attached to each native call. |
+| D: genuine guards and reactions | §7fq.A gives the retained-query/mark/effect guard, full physical fixed-effect fibre, six descent witnesses and explicit independent/generated/guarded ledger. Changing the price from B to A_stat changes the reaction values through their standard adjoint formulas but not the domain or derivative chain. Every retained physical reader is still the original paid transport. |
+
+The C row is an APPLICATION of the original partition law. A bare definition of an unrelated partition from a desired Einstein residual would fail it. Here both the tuple and PA1 are fixed before the geometric theorem is used. The same-graph source/registry component must explicitly show that its Z is PA1, including `Tr` multiplicities, determinant exponent, actual cut, all zero/failure modes and the beta convention. A positive diagonalized representation may be used as a way to evaluate the same operator invariant; it must not be promoted to an actually prepared Gibbs state or a newly sampled execution.
+
+The claimed theorem concerns the existing regular informative section on the declared full control domain. It does not classify every stationary branch of every other task or assert that every possible native protocol yields Einstein. Independent variations are retained even though the constructed recovery section relates their centres. This is the quantifier allowed by the scoped A–D contract, not a new weakening.
+
+#### 6. Terminal and goal boundary
+
+With the same-graph partition proof and PA6 budget integrated, the former C blocker is removed for the unchanged scoped native κ contract. It is not merely another theorem conditional on an unspecified physical price: its price is the original Book03 statistical/operator law on the actual admitted history. The appropriate next status is a **scoped terminal proposal for independent acceptance**, with the precise original law, regular class, matter, task, norm and source orientation printed.
+
+The statement is: the admitted one-history family, under the original Book03 finite statistical/operator stationarity law, has the owned complete κ joint-source soundness and reverse recovery for the declared Einstein–two-CAR class, with all permitted preparation/record/clock/scene rows and real reactions. The original proper-time/operational interpretation is consumed at its existing declared event-protocol scope; no new causal claim about every native tick is added.
+
+What does NOT follow: a derivation of every original Book03 constitutive statement solely from the abstract verification kernel; unrestricted D0 task selection; global spacetime or matter extensions; exact finite whole-price roots; or raw216 closure. Those are distinct claims. Requiring the present application to rederive the original Book03 law from no physical law at all would strengthen this scoped contract. Conversely simply renaming a new objective “Book” would not satisfy it; the original PA1 and same physical tuple are essential here.
+
+This corrects the earlier C stopping rationale. The prior warning about unknown literal gate tariffs remains correct but is not a necessary premise of the original operator/statistical route. No independent physical Cost/Info branch table should be added to the already single Book03 action merely because that table was not supplied.
+
+Repository and existing proofs were not edited; no unchanged tests were replayed. This is a composition/admission audit, not independent acceptance of the final integrated source proof.
+
+### 7fs.D. Bounded changed verification and reproduction
+
+#### Receipt
+
+Date: 2026-11-05. Repository input: 094562a4c3e71c5c915a8da59d0de5827ef4fb65.
+
+Changed checker run from the repository root using the existing Python 3.12.14 / SymPy 1.14.0 / NumPy 2.3.5 runtime, once with `-Werror` and once with `-O -Werror`. Both exited 0. Their JSON output is byte-identical.
+
+Result: PASS, 57 explicit controls. The native owner is hash-checked before import. No assertions are stripped in optimized mode.
+
+The new checks cover the original partition coefficient/sign, moving beta and Golden units, and two literal native histories on one growing layout. Both keep the full 4675 Hodge modes and true proper cut. The fixture is not a GR execution or root; it does not assert microscopic tariff identification or prepare an auxiliary Gibbs/Poisson state. Existing §7fq suites were not replayed.
+
+| File | SHA256 |
+|---|---|
+| source.md | 27d1fa983e885ecce9fe689915ae9b5048588a13804e4c45c70f3317a02a24f5 |
+| check_partition_source.py | b390005629309e4d72a7848d4a7f2304f1189aac9cfa874f741d614abd776552 |
+| source.normal.json | cf903c1e2b03f46cf28464a76537661d0c9eb4866032516d556abca60c03bbb4 |
+| source.optimized.json | cf903c1e2b03f46cf28464a76537661d0c9eb4866032516d556abca60c03bbb4 |
+
+Native owner SHA256: `222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c`.
+
+The source theorem requires both complete-dual error convergence and lift-weighted convergence, uses the actual return-factor calibration `Gamma_A=Gamma_J/log(phi)`, and distinguishes the scalar `A_stat,h` from the physical decoder `A_h`.
+
+Final prose precision: the entropy form of PS8 is first stated on its finite-integrability domain and extended by relative entropy. The generated optimizer has finite terms from the finite heat carrier and exponential loop tail. The checker and its unchanged receipts were not rerun for this domain clarification.
+
+
+Run the following extracted checker from the repository root with the
+recorded Python/SymPy/NumPy environment. The independent fixture is small;
+its role is to distinguish the exact partition identity from wrong signs,
+wrong determinant power and lost free-parameter rows, not to prove GR.
+
+<!-- BEGIN PARTITION_SOURCE_CHECKER -->
+```python
+"""Bounded original-partition/master source comparison. Not a GR or sampler test."""
+from pathlib import Path
+import hashlib
+import importlib.util
+import json
+import sys
+import numpy as np
+import sympy as s
+
+sys.dont_write_bytecode = True
+REPO=Path.cwd()
+OWNER=REPO/"02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+EXPECTED_OWNER_SHA256="222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+if hashlib.sha256(OWNER.read_bytes()).hexdigest() != EXPECTED_OWNER_SHA256:
+    raise RuntimeError("native owner hash mismatch; run from the pinned repository root")
+spec=importlib.util.spec_from_file_location("partition_native_owner",OWNER)
+native=importlib.util.module_from_spec(spec)
+sys.modules[spec.name]=native
+spec.loader.exec_module(native)
+checks=[]
+def need(ok,label):
+    if not bool(ok):
+        raise ArithmeticError(label)
+    checks.append(label)
+def zero(x): return s.simplify(s.expand(x)) == 0
+
+t=s.symbols("t",real=True)
+b,l=s.symbols("beta ell",positive=True)
+H=s.Function("H")(t); J=s.Function("J")(t)
+B=H+J; L=b*H+J; A=-L/l
+need(zero(-l*s.diff(A,t)-s.diff(B,t)-(b-1)*s.diff(H,t)),
+     "exact fixed-beta whole covector identity")
+bm=s.Function("beta")(t)
+Am=-(bm*H+J)/l
+need(zero(-l*s.diff(Am,t)-s.diff(B,t)-(bm-1)*s.diff(H,t)-H*s.diff(bm,t)),
+     "moving-beta identity keeps H D beta")
+omitted=s.simplify(-l*s.diff(Am,t)-s.diff(B,t)-(bm-1)*s.diff(H,t))
+need(zero(omitted-H*s.diff(bm,t)) and omitted != 0,
+     "hostile omission of the independent beta row is detected")
+lm=s.Function("ell")(t)
+Aml=-(bm*H+J)/lm
+need(zero(-lm*s.diff(Aml,t)-s.diff(B,t)-(bm-1)*s.diff(H,t)
+          -H*s.diff(bm,t)-Aml*s.diff(lm,t)),
+     "moving Golden unit keeps the positive A D ell term")
+need(zero(L-b*B-(1-b)*J),
+     "original determinant has exponent minus one, not minus beta")
+need(s.simplify((1-b)*J) != 0,
+     "hostile replacement Z by exp(beta B) is detected")
+need(zero((-l*s.diff(A,t)).subs(J,0)-b*s.diff(H,t)),
+     "heat-only control has beta times the heat source")
+need(zero((-l*s.diff(A,t)).subs(H,0)-s.diff(J,t)),
+     "feedback-only control preserves its entire source")
+need(s.simplify((l*s.diff(A,t)-s.diff(B,t)-(b-1)*s.diff(H,t))) != 0,
+     "hostile un-reversed free-energy sign is detected")
+p=native.P
+need(zero(2*p*p-1+p**3),"original beta-minus-one is exactly minus p cubed")
+x,y,mu=s.symbols("x y mu",real=True)
+zh=s.exp(-b*x)+s.exp(-b*y)
+logjoint=s.log(zh)+mu
+need(zero(s.diff(logjoint,x)+b*s.exp(-b*x)/zh),
+     "two-mode heat envelope keeps its normalized moving Gibbs weight")
+need(s.diff(logjoint,mu)==1,
+     "loop pressure derivative retains the generated intensity")
+need(zero(-l*s.diff(-logjoint/l,x)-s.diff(logjoint,x)),
+     "joint envelope has the declared fixed global orientation")
+
+pn=float(s.N(native.P,18)); an=float(s.N(native.A,18))
+beta=2*pn*pn; ell=np.log(1/pn); z=2.0**-20
+v=np.array([[an],[pn]])
+dims=[1,2,4,4]; offsets=np.cumsum([0]+dims); D=sum(dims)
+j0=v; j1=np.kron(np.eye(2),v)
+passives=[j0,j1,np.eye(4)]
+back=[None]*4; back[3]=np.eye(4)
+for j in range(2,-1,-1): back[j]=back[j+1]@passives[j]
+details=[np.eye(1)]+[np.eye(dims[j])-passives[j-1]@passives[j-1].T for j in range(1,4)]
+R=np.vstack([back[0].T]+[details[j]@back[j].T for j in range(1,4)])
+need(np.linalg.norm(R.T@R-np.eye(4),ord=2)<2e-14,
+     "full actual birth-complement closing is isometric")
+zone=[0]*9+[1]*11+[2]*13
+adj=np.array([[float(i!=j) for j in zone] for i in zone])
+deg=adj.sum(axis=1)
+rs=np.diag(1/np.sqrt(deg+2))
+Bs=rs@adj@rs; Cs=rs@rs
+need(int(adj.sum())==718,"actual INTERNAL scene has all 718 directed edges")
+need(D==11 and 425*D==4675,"actual pre-stage dimensions retain all 4675 heat modes")
+
+def fixture(name,gates):
+    ex=native.Execution(2,(),(),tuple(gates))
+    native.validate_execution(ex,max_qubits=2,max_expanded_stages=2)
+    inv=native.inventory(ex,max_qubits=2,max_expanded_stages=2)
+    need(inv.gate_count==2,name+": two literal native calls, no free closing gate")
+    mats=[np.array(native.gate_matrix(ex,g,max_qubits=2,max_expanded_stages=2).evalf(18),dtype=float) for g in gates]
+    fs=[j0,j1,mats[0]]; last=mats[1]
+    T=np.zeros((D,D))
+    for j,F in enumerate(fs):
+        T[offsets[j+1]:offsets[j+2],offsets[j]:offsets[j+1]]=F
+    T[:,offsets[-2]:offsets[-1]]+=R@last
+    need(np.linalg.norm(T.T@T-np.eye(D),ord=2)<4e-14,name+": true entire growing clock is unitary")
+    prefixes=[np.eye(1)]
+    for F in fs: prefixes.append(F@prefixes[-1])
+    P=np.zeros((D,D))
+    for j,Q in enumerate(prefixes): P[offsets[j]:offsets[j+1],offsets[j]:offsets[j+1]]=Q@Q.T
+    need(np.linalg.norm(P@P-P,ord=2)<4e-14,name+": generated cut uses the original input")
+    leak=(np.eye(D)-P)@T@P; Fhat=leak.T@leak
+    cold=float((back[0].T@last@prefixes[-1])[0,0])
+    sign,logdet=np.linalg.slogdet(np.eye(D)-z*Fhat)
+    need(sign==1,name+": actual complete feedback determinant is positive")
+    jj=-float(logdet)
+    need(abs(jj+np.log1p(-z*(1-cold*cold)))<5e-14,
+         name+": full-stage determinant equals its true rank-one proper cut")
+    ev=np.linalg.eigvals(T)
+    need(np.max(np.abs(np.abs(ev)-1))<4e-14,name+": clock eigenvalues retain unit-circle spectrum")
+    heat_sum=0.0
+    for e in ev:
+        Delta=np.eye(33)-Bs-2*float(e.real)*Cs
+        lam=np.linalg.eigvalsh(Delta)
+        need(float(lam.min())>-2e-14,name+": every scene/clock Hodge block is nonnegative")
+        heat_sum+=float(np.exp(-beta*lam).sum())
+    ZH=359*D+2*heat_sum
+    hh=np.log(ZH)/beta
+    bb=hh+jj
+    # Independent partition construction: heat partition times inverse feedback determinant.
+    aa=-(np.log(ZH)-logdet)/ell
+    need(abs(-ell*aa-bb-(beta-1)*hh)<2e-14,
+         name+": full original partition/master values have the correct coefficients")
+    return dict(name=name,N=4,D=D,full_hodge_modes=425*D,cold=cold,H=hh,J=jj,B=bb,A=aa)
+f0=fixture("G0 then G1",[native.Gate("G",(0,)),native.Gate("G",(1,))])
+f1=fixture("CX then CX",[native.Gate("CX",(0,1)),native.Gate("CX",(0,1))])
+dh=f0["H"]-f1["H"]; dj=f0["J"]-f1["J"]
+db=f0["B"]-f1["B"]; da=f0["A"]-f1["A"]
+need(abs(dj)>1e-8,"native pair has a resolved nonzero proper-feedback contrast")
+need(abs(dh)>1e-10,"native pair has a resolved nonzero full-heat contrast")
+need(abs(-ell*da-db-(beta-1)*dh)<1e-13,
+     "actual same-layout finite price contrast obeys the complete source identity")
+need(abs(-ell*da-db)>1e-11,
+     "native hostile heat-coefficient omission is detected")
+need(abs(ell*da-db-(beta-1)*dh)>1e-8,
+     "native hostile free-energy sign is detected")
+out=dict(schema="d0.original-partition-source-application/1",status="PASS",
+         check_count=len(checks),checks=checks,
+         native_owner_sha256=hashlib.sha256(OWNER.read_bytes()).hexdigest(),
+         checker_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+         symbolic="exact SymPy identities",
+         numeric_tolerance=1e-13,
+         fixtures=[f0,f1],contrast=dict(dH=dh,dJ=dj,dB=db,dA=da),
+         scope=dict(same_execution_operator_partition=True,
+                    auxiliary_Gibbs_or_Poisson_preparation=False,
+                    fixture_is_GR_execution=False,
+                    microscopic_Cost_Info_binding_proved=False,
+                    exact_GR_root_claimed=False))
+print(json.dumps(out,ensure_ascii=False,sort_keys=True,indent=2))
+
+```
+<!-- END PARTITION_SOURCE_CHECKER -->
+
+<!-- BEGIN PARTITION_SOURCE_RESULT -->
+```json
+{
+  "check_count": 57,
+  "checker_sha256": "b390005629309e4d72a7848d4a7f2304f1189aac9cfa874f741d614abd776552",
+  "checks": [
+    "exact fixed-beta whole covector identity",
+    "moving-beta identity keeps H D beta",
+    "hostile omission of the independent beta row is detected",
+    "moving Golden unit keeps the positive A D ell term",
+    "original determinant has exponent minus one, not minus beta",
+    "hostile replacement Z by exp(beta B) is detected",
+    "heat-only control has beta times the heat source",
+    "feedback-only control preserves its entire source",
+    "hostile un-reversed free-energy sign is detected",
+    "original beta-minus-one is exactly minus p cubed",
+    "two-mode heat envelope keeps its normalized moving Gibbs weight",
+    "loop pressure derivative retains the generated intensity",
+    "joint envelope has the declared fixed global orientation",
+    "full actual birth-complement closing is isometric",
+    "actual INTERNAL scene has all 718 directed edges",
+    "actual pre-stage dimensions retain all 4675 heat modes",
+    "G0 then G1: two literal native calls, no free closing gate",
+    "G0 then G1: true entire growing clock is unitary",
+    "G0 then G1: generated cut uses the original input",
+    "G0 then G1: actual complete feedback determinant is positive",
+    "G0 then G1: full-stage determinant equals its true rank-one proper cut",
+    "G0 then G1: clock eigenvalues retain unit-circle spectrum",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: every scene/clock Hodge block is nonnegative",
+    "G0 then G1: full original partition/master values have the correct coefficients",
+    "CX then CX: two literal native calls, no free closing gate",
+    "CX then CX: true entire growing clock is unitary",
+    "CX then CX: generated cut uses the original input",
+    "CX then CX: actual complete feedback determinant is positive",
+    "CX then CX: full-stage determinant equals its true rank-one proper cut",
+    "CX then CX: clock eigenvalues retain unit-circle spectrum",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: every scene/clock Hodge block is nonnegative",
+    "CX then CX: full original partition/master values have the correct coefficients",
+    "native pair has a resolved nonzero proper-feedback contrast",
+    "native pair has a resolved nonzero full-heat contrast",
+    "actual same-layout finite price contrast obeys the complete source identity",
+    "native hostile heat-coefficient omission is detected",
+    "native hostile free-energy sign is detected"
+  ],
+  "contrast": {
+    "dA": 2.313066703862887e-05,
+    "dB": -1.4752477206059211e-05,
+    "dH": -1.5341880521546614e-05,
+    "dJ": 5.894033154811065e-07
+  },
+  "fixtures": [
+    {
+      "A": -17.38216949809894,
+      "B": 10.949279676954513,
+      "D": 11,
+      "H": 10.949279087551197,
+      "J": 5.894033154811065e-07,
+      "N": 4,
+      "cold": 0.6180339887498948,
+      "full_hodge_modes": 4675,
+      "name": "G0 then G1"
+    },
+    {
+      "A": -17.382192628765978,
+      "B": 10.949294429431719,
+      "D": 11,
+      "H": 10.949294429431719,
+      "J": -0.0,
+      "N": 4,
+      "cold": 1.0,
+      "full_hodge_modes": 4675,
+      "name": "CX then CX"
+    }
+  ],
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "numeric_tolerance": 1e-13,
+  "schema": "d0.original-partition-source-application/1",
+  "scope": {
+    "auxiliary_Gibbs_or_Poisson_preparation": false,
+    "exact_GR_root_claimed": false,
+    "fixture_is_GR_execution": false,
+    "microscopic_Cost_Info_binding_proved": false,
+    "same_execution_operator_partition": true
+  },
+  "status": "PASS",
+  "symbolic": "exact SymPy identities"
+}
+```
+<!-- END PARTITION_SOURCE_RESULT -->
+
+### 7fs.E. Final integration and cross-review scope
+
+The preceding proof/checker/result payload has SHA256
+`d2e27e1bf8dc51d42e2db21ee56d526e17312c58589adc94f0cc23ef73af9359`.
+Three bounded cross-reviews approved that exact final pin for the original
+Book-law scoped A–D terminal proposal. Review corrected the optional full
+radial calibration to Gamma_J+beta DH and restricted the expanded entropy
+formula to its defined domain, with the general relative-entropy extension.
+The main source-channel gain and both complete/lift-weighted limits remain.
+These cross-reviews do not themselves constitute registry/physical terminal
+acceptance or a derivation of the Book law from the bare kernel.
+
+Prepared on 5 November and integrated on 6 November 2026 (Europe/Moscow).
+Only the existing primary and task brief change; every prior byte remains.
+The former stopping conclusion is superseded for this original statistical
+route, while the broader D0-to-GR objective remains open.
+
 ## 8. Reproduction
 
 Run from this directory:
