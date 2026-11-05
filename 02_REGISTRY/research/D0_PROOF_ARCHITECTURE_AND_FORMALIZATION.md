@@ -18101,3 +18101,19 @@ results use `propext`, `Classical.choice`, `Quot.sound`. Probability
 interpretation and physical preparation/admission require their own inputs;
 rank/span, clock/work, GR selection and scientific owner #334 remain open.
 `GR_closed=false`. A final integration build on these inputs remains required.
+
+
+### Original creator parity
+
+`D0.Geometry.OriginalBookCreatorParity` identifies the diagonal source parity
+operator with the already linked Fock parity, proves `P†=P` and `P²=I`, and
+proves `P c_r = −c_r P` for each of the four actual source creators. The
+finite matrix argument uses kernel `decide`, without assumed anticommutation,
+`native_decide` or heartbeat override. Exact-file narrow Lean and axiom checks
+passed with `propext`, `Classical.choice`, `Quot.sound`; independent read-only
+review confirmed the bit convention, conjugation and four cases.
+
+This starts the source-specific upper-bound route; parity of the roots, Kraus
+and all effects, the dimension bound and the lower-rank transfer are not yet
+proved here. Physical admission, clock/work and #334 remain open;
+`GR_closed=false`. Final integration remains required.
