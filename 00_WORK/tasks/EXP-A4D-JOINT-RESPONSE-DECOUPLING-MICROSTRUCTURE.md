@@ -22505,3 +22505,63 @@ GR/heat/Lean owners. Checker/receipt hashes and scope are in the primary.
 
 Final work/agent/assembly and whitespace guards pass. Assembly remains
 98 results / 22 obligations / 5 discharged, scientific_promotion=false.
+
+## 2026-11-05 checkpoint: actual born CODE and shared off-shell field
+
+Input cd1c0f38e4f9a3d723b0a7d152c537bb4d3a0505; existing Draft #334, same
+two write paths. Phase: native realization / final composition. Consumer:
+scoped B/D's actual programme preparation and independent current apparatus
+source, joined to the owned full Einstein--two-CAR field source.
+Primary addition: "Actual born programme and one shared physical field",
+BCPR1--BCPR19.
+
+Changed input/application: use the already owned known all-column native
+loader, actually born CODE and paid inverse on the TRUE rank-r input.
+The middle corner becomes E*CE; its programme effects form a generally
+noncommuting POVM. A new exterior-power argument proves the global
+fixed-loader/fixed-effect feedback optimum at H=E*FE even though the
+uncompressed Gram-order shortcut fails. The exact polar target attains
+the mathematical optimum; the actual finite native recovery retains its
+full N_k e_k error, stage counts, helpers and clock.
+
+The same original calibrated bank constructor now takes ONE retained
+finite physical field input on the entire regular off-shell chart.
+Its branch coframes sqrt(sigma_theta)e give the same physical metric and
+leading reporter source without testing an Einstein equation. The ideal
+profile is scalar throughout this graph. Both independently varied loader
+legs and fixed-effect current apparatus rows vanish there. The physical
+writer pullback is -Gamma_field DI_h, Gamma_field>0, in all 16+24+2
+directions, with its actual right-lift norm. Nonlinear reporter, preparation,
+compiled-corner and complete heat errors remain explicitly controlled.
+This removes the artificial full-CODE input premise and the centre-only
+programme-source application for this declared graph. The original task
+with independently writable branch fields is preserved.
+
+The complete true-input CQ information is retained. Positive q-source
+weights survive noncommuting compressed effects. A uniform quadratic bound
+on H(record)-I_rec transfers ALL Shannon/CQ first sources at scalar effects,
+even with rank-changing preparations. This supplies an entropy-source
+premise to the weighted/Bellman owner, not its actual primitive weights.
+
+Remaining application: actual complete physical Cost--Info selection,
+task/reference/scene/clock admission and the appropriate whole-history
+refinement interface. The arbitrary-old-prefix determinant extension is
+false and has an explicit countercontrol; the separate scalar cut transport
+keeps its real protected-record and every-competitor hypotheses. No native
+stage is assigned a unit physical tariff. No full GR closure, raw216
+promotion, task retirement or independent assembly acceptance follows.
+
+Validation: generic proofs and three bounded independent reviews. The
+embedded checker verifies the actual born-cut matrix identity, all forward
+and reverse loader tangent rows, noncommuting POVM source, quadratic
+entropy bound and hostile Gram/old-prefix shortcuts. Its 1510 grouped
+checks pass normally and with -O; the LF receipt is identical after
+explicit Windows newline normalization. Canonical source/receipt hashes
+are in the primary. This is not an emission of the enormous native word
+or an unchanged GR/heat/Lean replay. The previous RCP receipt hash is
+clarified as Windows stdout versus Git LF; its JSON evidence is unchanged.
+
+Final affected work/agent/assembly and whitespace guards pass. Assembly
+remains 98 results / 22 obligations / 5 discharged, promotion false. Only
+the existing primary and task brief change; unchanged GR/heat/Lean owners
+were not replayed.

@@ -175009,7 +175009,10 @@ unchanged GR, heat or Lean owners.
 
 The checker passes 501 bounded checks in normal and optimized Python;
 the receipts are byte-identical. Checker SHA256 dfb61b3babc901b3eac4660116f9bb8465dce1a40a7f28e2bea4baa998814668;
-receipt SHA256 0e628bd77f35eb5f9397d39299516ece0dbc4de79209e7b2eed7c01c502b1f1b.
+canonical LF receipt SHA256 11129835ca01c77c8bbbee6f2256b78af9f41bef91ec2c005fd3676850cb299e.
+The original Windows CRLF stdout hash is
+0e628bd77f35eb5f9397d39299516ece0dbc4de79209e7b2eed7c01c502b1f1b;
+Git stores the LF form embedded below. Both contain exactly the same JSON.
 
 <!-- BEGIN RCP RETAINED CODE CHECKER -->
 ```python
@@ -175214,3 +175217,991 @@ Final affected structural checks pass: validate_work, validate_agent_protocol,
 gr_assembly check (98 results, 22 obligations, 5 discharged; promotion false),
 and git diff --check. Only this primary artifact and the existing task brief
 change. No unchanged heavy mathematical or Lean replay was performed.
+
+## Actual born programme and one shared physical field: global recovery on the true cut
+
+5 November 2026. Existing Draft #334; native realization / final composition.
+Input cd1c0f38e4f9a3d723b0a7d152c537bb4d3a0505. Consumer: scoped B/D's
+actual programme preparation, independent current controls and off-shell
+reduced-source application, using the original all42 Einstein--two-CAR owner.
+
+RCP correctly required a genuine full-CODE initial interface. It did not
+supply that interface by widening a later born register. The following
+application removes the need for that widening: it uses the already owned
+7ee known loader, ACTUAL born CODE and paid inverse, retaining the original
+physical input rank. A stronger matrix argument is needed because the
+compressed CODE effects no longer commute and RCP's Gram order is false.
+
+The second composition uses the existing calibration map on EVERY regular
+shared field input. The earlier recovery-centre restriction is unnecessary
+for this constructor: each programme is a different representation of the
+same input field, not an independently chosen physical field. This gives an
+explicit off-shell current-body section, while preserving the older task
+with independently writable branch banks and all its genuine equations.
+
+### BCPR1. The actual word, loader, programme observable and physical input
+
+Let H0 be the true unknown input, rank r, and j0 its actual canonical birth
+embedding into the live CODE/DATA/loader-helper arena S. Let A be a KNOWN
+admitted all-column native loader, with E=A j0. Fresh current outcome,
+cursor and tail registers W are disjoint from A. The existing RCP processor
+and recovery have current cold corner C on S. Execute the actual A* after
+that processor, acting only on S. Its true initial-to-initial corner is
+
+    C_E=j0* A* C A j0=E* C E.                           (BCPR1)
+
+This equality holds for every middle competitor in the stated task, not
+only for its optimizer. It is a literal product of the complete paid word.
+No intermediate cold projection is inserted into an arbitrary old history.
+The physical determinant remains on H0; every unused CODE/helper column
+stays in the full clock and heat but does not multiply r.
+
+This is already an available native interface: 7ee.Proof II explicitly
+contains a known preparation, one final paid unpreparation, all-column
+controlled reporters, and the optional entangled isometry E (at the input
+head: primary lines 158674, 158698, 158730 and 158810--158829). It does not
+claim every abstract isometry is a native primitive. A CODE-only loader
+already supplies a nonempty case. Entangling loaders must obey the actual
+SourceI/Spin support rules and exact identity on sealed oldRIGHT.
+
+In the owned G_CX_SOURCE_I profile, inverse_word expands CX^-1 as one CX,
+SourceI^-1 as three SourceI, and G^-1 as SourceI^2;G;SourceI^2 at the source
+port, or the routed eleven-stage version on another live wire. Thus a
+known loader has a literal paid inverse of length at most eleven times
+its own length. Bare G_CX is not assigned this inverse for free.
+All loader helpers, births, old state and new work remain physical.
+
+The middle CODE projectors Pi_theta are co-transported to A*Pi_theta A
+on the full live output. They remain projectors and commute with the fresh
+record projectors. A future test uses the actual paid reader/transport.
+This does not preserve an arbitrarily fixed UNtransported future reader.
+On H0 the compressed operators
+
+    X_theta=Pi_theta E,
+    M_theta=X_theta*X_theta>=0, sum_theta M_theta=I       (BCPR2)
+
+are generally a noncommuting POVM, not sharp initial CODE values. No
+unknown state is copied, inferred from finite samples or reset.
+
+### BCPR2. Global determinant optimum after entangled compression
+
+The original all-live-CODE effects and retained-programme task are those
+of RCP1--RCP4. In each middle CODE block every faithful fixed-effect
+instrument satisfies C_theta=f_theta T_theta, ||T_theta||<=1, with
+
+    f_theta=sum_omega sqrt(mu_omega q_(omega,theta))>0.
+
+The exact all-column polar target attains every T_theta=I in the
+mathematical instrument fibre. Its finite native realization carries the
+separate NR/N_k e_k error below; exact finite native attainment is not
+asserted. Put
+
+    F=sum_theta f_theta Pi_theta,
+    H=E*F E=sum_theta f_theta M_theta>0.
+
+Set V_theta=sqrt(f_theta)X_theta H^(-1/2). Then sum V_theta*V_theta=I and
+
+    T=sum_theta V_theta* T_theta V_theta, ||T||<=1,
+    C_E=H^(1/2) T H^(1/2).                              (BCPR3)
+
+For EVERY a>0 and eta>=0 this implies
+
+    det(aI+eta C_E*C_E)<=det(aI+eta H^2).                (BCPR4)
+
+Here is a direct proof. For k=0,...,r let B_k=exterior^k H>=0 and
+S_k=exterior^k T, with ||S_k||<=1. Functoriality and Hilbert--Schmidt
+Cauchy--Schwarz give
+
+    ||exterior^k C_E||_HS^2
+       =Tr(B_k S_k* B_k S_k)
+       <=||B_k||_HS ||S_k* B_k S_k||_HS
+       <=Tr(B_k^2).                                    (BCPR5)
+
+The last step uses ||UXV||_HS<=||U|| ||X||_HS ||V||. Cauchy--Binet expands
+the left determinant as
+sum_k a^(r-k) eta^k ||exterior^k C_E||_HS^2. The right determinant has
+coefficients Tr(B_k^2). Each coefficient is ordered, proving BCPR4.
+At T_theta=I equality holds. No external classification, matrix
+commutation or positive smallest eigenvalue of an old Gram is assumed.
+
+Thus the original J=-Tr log(aI+eta C_E*C_E) has its GLOBAL minimum over
+the whole declared fixed-loader, fixed-effect, CODE-preserving middle
+instrument at C_E=H. This is not a minimum over independently changing
+loaders, fields or tasks. Nor is it automatically the larger fibre of
+all cold-input instruments with only the compressed effects fixed: that
+larger fibre need not preserve the actual generated programme observable.
+
+Crucially C_E*C_E<=H^2 is NOT asserted. It can fail: take a positive
+nonscalar diagonal H and T a swap. After compression a fixed-effect tangent
+has delta C_E skew-Hermitian, but
+
+    delta(C_E*C_E)=[H,delta C_E]
+
+need not vanish. Nevertheless
+
+    delta J=-eta Tr[(aI+eta H^2)^(-1)[H,delta C_E]]=0,     (BCPR6)
+
+because the resolvent commutes with H. This accounts for all such current
+hardware directions, including complex and unknown-input correlations,
+without copying RCP's stronger uncompressed Gram claim.
+
+### BCPR3. True-rank source and all loader reactions
+
+For the physical source take 0<z<1. Use a=1-z and eta=z, or the actual
+eta=z p^K when the already owned paid
+retention tail is present. There is no adjustable Einstein coefficient.
+For D=aI+eta H^2,
+
+    J_prof=-Tr_H0 log D,
+    DJ_prof=-2eta Tr[H D^(-1) DH],
+    DH=E*(DF)E+(DE)*F E+E*F(DE).                        (BCPR7)
+
+The CODE-basis, loader, initial-cut, a/eta and genuine scene rows remain.
+For the fixed sequence of M actual SER blocks, f_theta=product_j f(q_theta,j),
+where f(q)=p sqrt(1-q)+p^2 sqrt(q). At fixed E and CODE basis define
+
+    b_theta=eta f_theta Tr[M_theta H D^(-1)]>=0,
+    w=sum_theta b_theta=eta Tr(H^2 D^(-1))>0.
+
+Then the q-only source is
+
+    DJ_prof=-2 sum_(theta,j) b_theta
+                  [f'(q_theta,j)/f(q_theta,j)] Dq_theta,j. (BCPR8)
+
+The actual collar q<=6p^7<p^2/(1+p^2) gives f'>0. A nonzero M_theta
+has positive b_theta even when all M_theta fail to commute. A zero
+loaded sector supplies no individual field equation; its unused modes
+are still physical. At a common f_theta=t the weights are
+eta t^2 Tr(M_theta)/(a+eta t^2). Their sum uses r, not the CODE dimension.
+
+### BCPR4. Both independent preparation legs, without tied variations
+
+The constructed reverse is the actual inverse at the reference word.
+Its primitive occurrences are nevertheless independent coordinates when
+the task admits such variation. Write their genuine two-leg corner as
+
+    C_fb=E_b* F E_f, E_f=E_b=E at the reference.
+
+At F=tI, a forward-only or backward-only variation gives, separately,
+
+    delta_f C_fb=t E*delta E_f,
+    delta_b C_fb=t delta E_b*E.                         (BCPR9)
+
+Each is skew by its own isometry normalization. Since C_fb=tI, each J
+first row vanishes independently. The same conclusion holds for every
+propagated primitive occurrence in either word. The proof did not impose
+delta E_f=delta E_b. A CODE-basis change has delta F=[Z,F]=0 there.
+
+The forward physical outcome effects are E_f* Q_omega E_f. When all
+Q_omega=q_omega I, they are q_omega I for every forward isometry.
+The inverse loader is an output unitary commuting with the outcome
+projectors, so it preserves their conditional spectra at ANY Q_omega.
+Thus both preparation information rows vanish separately at scalar
+current effects. Heat and independently selected work rows are not
+identified with these endpoint calculations.
+
+### BCPR5. Complete quantum information on the actual born input
+
+For any normalized rho on H0, including a singular or mixed input with
+an untouched reference, the full efficient joint-record information gain is
+
+    I_rec=sum_omega S(rho^(1/2) G_omega rho^(1/2))-S(rho),
+    G_omega=E* Q_omega E=sum_theta P_theta(omega) M_theta. (BCPR10)
+
+All fine conditional Kraus labels are retained. This is not an entropy
+on fictitious unknown CODE columns. The output inverse and conditional
+recovery preserve its spectra.
+
+For one block j and other-outcome string beta, let t_(theta,beta) be the
+product of the other conditional probabilities. Define
+
+    B_(beta,b)=rho^(1/2)
+       [sum_theta t_(theta,beta) q_(theta,j),b M_theta]rho^(1/2).
+
+On 0<q_min<=q_theta,j<=q_max<1/2 the two matrices have common support
+supp(rho), and B_beta,0 is between
+[(1-q_max)/q_max] B_beta,1 and [(1-q_min)/q_min] B_beta,1.
+Differentiating the ENTIRE joint CQ entropy and using log monotonicity gives
+
+    u_theta,j=partial_(q_theta,j) I_rec
+      =sum_beta t_(theta,beta) Tr[rho^(1/2)M_theta rho^(1/2)
+                          (log B_beta,0-log B_beta,1)],
+    l_min Tr(rho M_theta)<=u_theta,j<=l_max Tr(rho M_theta),
+    l_min=log[(1-q_max)/q_max]>0,
+    l_max=log[(1-q_min)/q_min].                          (BCPR11)
+
+Only positivity and sum M_theta=I are needed. No latent CODE measurement,
+commuting input or independence of the unconditional records is inserted.
+For a specified J-lambda I_rec comparison, lambda>=0, its q weights are
+2b_theta f'/f+lambda u_theta,j. The signs reinforce. This does not select
+lambda or the full physical price; bare Book03.25 has lambda=0.
+Moving E, rho or basis retains its actual additional source off the scalar
+locus, including any physically required field/preparation adjoint.
+
+There is also an EXACT application to the prior Shannon/weighted owner.
+Let W denote the complete record. With tau_theta=(sqrt(rho)M_theta sqrt(rho))^T
+on a purifying reference, its actual marginal is
+
+    rho_WR=sum_(theta,omega) P_theta(omega)
+                         |omega><omega| tensor tau_theta.     (BCPR12)
+
+The auxiliary classical theta gives an analysis Markov extension W<-theta->R;
+it is NOT a newly executed measurement. The efficient-instrument entropy
+identity says I_rec=H(W|R). Data processing and any product comparison
+P*=product_j Bern(q_j*) give
+
+    0<=H(W)-I_rec=I(W:R)
+      <=I(W:theta)<=sum_theta Tr(tau_theta) D(P_theta||P*)
+      <=sum_j delta_j^2/[q_j*(1-q_j*)],
+    delta_j=max_theta |q_theta,j-q_j*|.                 (BCPR13)
+
+The last inequality uses the binary relative-entropy bound from log x<=x-1.
+It is uniform in CODE dimension, joint-record count and input rank.
+At scalar effects delta_j=0, Shannon and true CQ gain have identical ALL
+first sources; along any regular effect path the difference is O(t^2),
+even with rank-changing input preparation. The first-source transfer does
+not require an entropy derivative at a zero eigenvalue. Near the locus,
+a finite comparison keeps its actual chord and selected source gain in
+this bound. P* is only a mathematical comparison for the estimate, never
+a selected physical prior or a desired-output Info assignment.
+
+### BCPR6. One original native constructor for a common field, off shell
+
+The input now consumed is the actual 7ee.Proof II all-column CODE-conditional
+bank constructor, original mixed-report calibration and the owned identity
+
+    I_h^sigma(e,U,Psi)=I_h(e/sqrt(sigma),U,Psi).
+
+Its proof is the original pointwise coframe degree -2 and does not use an
+Einstein equation (7ee.Proof II, primary lines 158756--158793). Let Y=(e,U,Psi) be one known retained finite field-data
+code in the existing regular chart. The recorded reporter descriptors give
+positive computable sigma_theta, or charged certified approximations.
+Precompose the SAME constructor with
+
+    (Y,{sigma_theta}) ->
+       {e_theta=sqrt(sigma_theta)e, U_theta=U, Psi_theta=Psi}.    (BCPR14)
+
+The known controlled matrices and data preparations are then compiled on
+ALL live CODE/DATA/helper columns, with their real marks, arithmetic,
+references, inverses, error budget and clock. This is the owned finite
+catalogue/source-germ construction, not a globally smooth word-index map. No unknown quantum field is
+cloned, and a finite random sample is not an exact calibration oracle.
+
+Let q_j*(Y)=q0,j+g_j I_h(Y) denote the common AFFINE/LEADING reporter
+proxy inherited from 7ee's c*_j=c0-gamma ell. Homogeneity identifies
+this proxy; it does not identify the exact nonlinear probabilities.
+For EVERY regular off-shell Y, the ideal original source satisfies
+
+    I_h^sigma_theta(e_theta,U,Psi)=I_h(e,U,Psi),
+    q_theta,j*=q_j*(Y),
+    F*=t(Y)I, H*=t(Y)I,
+    t=product_j f(q_j*(Y)).                             (BCPR15)
+
+Consequently the ideal fixed-effect current apparatus section, BOTH
+independent CODE-loader rows, middle CODE-basis rows and pure input-state
+rows are stationary OFF SHELL. This is stronger than a coincidence confined
+to Einstein recovery points. The physical field source remains
+
+    DJ_prof=-2r eta t^2/(a+eta t^2)
+                 sum_j [f'(q_j*)/f(q_j*)] Dq_j*,
+    DI_rec=sum_j h'(q_j*) Dq_j*.                        (BCPR16)
+
+Insert the actual original pre-sign Dq_j*=g_j A_pre,j* DI_h, keeping its
+source norm, gain, right lift, forward/backward slots and all42 directions.
+In the original occurrence coordinates the common writer uses the owned
+R_diag, with A_pre,j R_diag=I (SER7--8), and the branch calibration map
+BCPR17. For one common physical variation v this gives
+
+    DJ[DWriter(v)]=-Gamma_field DI_h[v],
+    Gamma_field=2r eta t^2/(a+eta t^2)
+                    sum_j g_j f'(q_j*)/f(q_j*)>0.      (BCPR16a)
+
+The actual raw/physical right-lift constants include the calibrated bank
+map and remain in the error norm. In the declared ideal source convention
+the field source is not identically screened off shell: its zeros coincide
+with those of the owned all42 source. Neither independent Lorentz nor
+matter equations were removed by programme preparation.
+
+For moving calibration the actual generated bank obeys
+
+    D e_theta=sqrt(sigma_theta) D e
+                    +e Dsigma_theta/(2sqrt(sigma_theta)),
+    D(e_theta/sqrt(sigma_theta))=D e.                   (BCPR17)
+
+This is the causal preparation reaction, not a frozen selectable bank.
+The physical metric is the existing one on every branch:
+(m sigma_theta/det e_theta)g(e_theta)=(m/det e)g(e).
+Genuine measure, PF, density, clock and initial-boundary variables retain
+their actual maps and sources; they are not identified by this formula.
+
+This is an explicit SINGLE-INPUT-FIELD writer graph. Correct generation of
+its branch banks is a property of the executed constructor on the whole
+chart; admission never tests DI_h=0. If the task instead admits independent
+branch-field writing, those variations remain and the previous 7ee/RCP
+variant is preserved. The new graph does not retroactively remove them.
+Independent raw bank faults also retain their declared task reactions or
+physical sources; the constructor is not permission to ignore its failure.
+
+Here Y has the owner's known finite-code/preparation-parameter type. If an
+unknown coherent FIELD register is retained instead, t(Yhat) is only block
+scalar in FIELD. Neutrality then requires the actual field-code
+intertwiner. Mixing different physical Y values is a field-changing row,
+not a neutral apparatus direction. All field comparison data, preparation
+and actual finite-word alternatives remain in the price.
+
+### BCPR7. Nonlinear native reports: no assertion of exact finite neutrality
+
+The honest original reporter has the owned uniform C1 remainder
+
+    |q_theta,j-q_j*|+||D(q_theta,j-q_j*)||<=C g_j nu.
+
+Use the actual nine-control visibility and complete current word, not the
+older seven-control gain. On a compact q collar write
+k_min<=f'/f<=k_max, L=sum_j g_j, and t*=product_j f(q_j*). Then
+
+    delta=exp(C k_max L nu)-1,
+    ||F/t*-I||<=delta, ||H/t*-I||<=delta.                (BCPR18)
+
+For delta<1/2 the exact-profile feedback weight w=eta Tr(H^2 D^-1),
+computed from the actual reported q, and its aggregate
+source gain Gamma=2sum_(theta,j)b_theta g_j(f'/f)(q_theta,j) obey
+
+    2 k_min L w<=Gamma<=2 k_max L w.
+
+For a simultaneous loader isometry variation, the scalar part cancels
+and ||DH||<=2t*delta||DE||. For EACH independent forward/reverse leg,
+its scalar skew part has zero trace against the resolvent even at this
+nonscalar positive H; only the remainder contributes. Hence
+
+    |D_E J|/Gamma<=2delta/[k_min L(1-delta)] ||DE||,
+    |D_leg J|/Gamma<=delta/[k_min L(1-delta)] ||DE_leg||.  (BCPR19)
+
+CODE-basis sources have the analogous O(nu) bound. These are real
+normalized source estimates, not exact finite Euler zeros. The native
+occurrence norm multiplies them by the actual loader/basis/lift factors.
+A known CODE loader can be fixed before choosing nu. If any of those
+factors grows with the construction, its dependence must be included,
+not treated as a constant after taking the limit.
+
+The full quantum-information finite comparisons use BCPR11--13/RCP15
+with their actual 1/|t_chord| and Gamma for the selected valuation. A
+separately added Info price does not inherit a bare-master error budget.
+Use the existing order L large, nu sufficiently small, M chosen by the
+real g_j, then all-column native recovery and its N_k e_k bound, followed
+by the full-clock choice on the ACTUAL finished prefix. Every forward,
+inverse and recovery occurrence, failure, dark sector and helper is kept.
+The actual compiled-corner and gain errors are added separately to these
+exact-profile estimates. The full heat is bounded at its own physical
+rank and gain; endpoint
+stationarity is not used to set its source to zero.
+
+### BCPR8. Earlier histories, exact substitution and remaining closure
+
+BCPR4 is a determinant theorem on the genuine born-input echo. It is NOT
+an inequality after inserting arbitrary old A into C_E A C_E*. A concrete
+positive two-sector loader countercontrol is included below. Unlike RCP4,
+no Gram order survives that extra insertion.
+
+There is a valid separate scalar application: if the complete current
+shared-field block has initialized cold t(Y)I on the actual old input and
+all required older generated WORK/records are genuinely protected, then
+C_total=t(Y)C_< follows directly at the earliest cut. The old-source
+concentration theorem applies with the new t, true rank and actual gain.
+An optimization claim over competitors also needs the real cut transport
+for EVERY competitor. A live SourceI port is not made protected by a
+chosen macro restoring it. Nonlinear remainders retain the real prefix
+constants. No old arbitrary-prefix gap is erased by notation.
+
+The concrete parent substitution is now: actual born programme + known
+paid loader/unloader + the original shared-field conditional constructor
+-> a global middle-instrument feedback optimum on the TRUE cut, with an
+off-shell ideal stationary section for both independent loading legs and
+all current faithful apparatus directions, and controlled native source
+errors. Its full q-only field source is the existing nonscreened all42
+source. This removes the fictitious full-CODE input requirement and the
+centre-only programme-source application for this declared family.
+
+The source still belongs to the stated Book03.25 master specialization.
+BCPR13 removes an actual entropy-source premise of the weighted/Bellman
+owner, but does not supply its absolute primitive weights or equate mean
+action, amplitude pressure and master price. Complete physical Cost--Info
+selection, actual task/reference/clock/scene admission and the appropriate
+whole-history refinement map retain their existing scope. Counts of paid
+native stages do not assign a unit physical tariff. No compulsory universal
+scheduler or arbitrary inverse of an unknown past has been introduced.
+
+GR_closed=false. This is a positive native/source application in the
+existing owner, not full D0-to-GR, raw216 or scoped-terminal acceptance.
+
+### BCPR9. Review and changed verification
+
+The generic compression, determinant, source and entropy arguments are
+proved above. Three bounded independent reviews checked the matrix proof,
+actual native inverse/cut, independent legs, common-field constructor and
+source normalization. The false Gram-order and arbitrary-old-A extensions
+were excluded before integration. The checker below verifies the changed
+finite identities, noncommuting POVM information and explicit negative
+controls; it is not an execution of the enormous native compiler or a
+physical Cost--Info selection. The finite matrix fixture uses a
+born-adapted basis and a generic positive probability collar; it does not
+claim its 30-dimensional unitary is a literal native word or reuse it as
+the actual SER thermal carrier. Unchanged GR/heat/Lean owners are reused.
+
+
+Changed checker: `born_code_actual_cut_check.py`. Python 3.11, NumPy 2.2.6,
+SymPy 1.12.1; 1510 grouped checks / 44 named groups. Normal Python and -O
+stdout are byte-identical. After explicit CRLF-to-LF serialization they
+match the saved receipt byte-for-byte. The hashes below apply to the
+canonical LF code blocks, including their final newline.
+
+Checker SHA256: caf6f9c256a07b47699b5b2a435c00c261743a2826291ea7240a5249ffddc728.
+Receipt SHA256: ea547813a1884c63f77fcaeea7d4b3bce1b0b089647b75077711966936d389ec.
+
+<!-- BEGIN BCPR BORN CODE CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Bounded matrix checks for BC1--12; the generic proof is primary.
+
+No giant native word, physical tariff, weighted-history selection or GR closure.
+Run normally or with -O; all guards are explicit, never removable asserts.
+"""
+from __future__ import annotations
+import argparse
+import hashlib
+import itertools
+import json
+from pathlib import Path
+import numpy as np
+import sympy as sp
+
+GROUPS: dict[str, int] = {}
+ERRORS: dict[str, float] = {}
+RNG = np.random.default_rng(3340511)
+
+
+def require(ok, group):
+    if not bool(ok):
+        raise ArithmeticError(group)
+    GROUPS[group] = GROUPS.get(group, 0) + 1
+
+
+def close(x, y, group, tol=2e-10):
+    error = float(np.linalg.norm(np.asarray(x) - np.asarray(y)))
+    ERRORS[group] = max(ERRORS.get(group, 0.0), error)
+    require(error <= tol, group)
+
+
+def adj(x):
+    return x.conj().T
+
+
+def herm(x):
+    return (x + adj(x)) / 2
+
+
+def randh(n):
+    z = RNG.normal(size=(n, n)) + 1j * RNG.normal(size=(n, n))
+    return herm(z)
+
+
+def expi(h):
+    values, vectors = np.linalg.eigh(herm(h))
+    return (vectors * np.exp(1j * values)) @ adj(vectors)
+
+
+def posfun(x, function):
+    values, vectors = np.linalg.eigh(herm(x))
+    out = np.zeros_like(values)
+    positive = values > 1e-12
+    out[positive] = function(values[positive])
+    return (vectors * out) @ adj(vectors)
+
+
+def sqrt(x):
+    return posfun(x, np.sqrt)
+
+
+def log(x):
+    return posfun(x, np.log)
+
+
+def entropy(x):
+    values = np.linalg.eigvalsh(herm(x))
+    return float(-sum(v * np.log(v) for v in values if v > 1e-12))
+
+
+def logdet(x):
+    sign, value = np.linalg.slogdet(x)
+    require(abs(sign - 1) < 1e-9, 'positive determinant domain')
+    return float(value)
+
+
+def exterior_coefficient(x, k):
+    if k == 0:
+        return 1.0
+    indices = list(itertools.combinations(range(x.shape[0]), k))
+    return float(sum(abs(np.linalg.det(x[np.ix_(u, v)])) ** 2
+                     for u in indices for v in indices))
+
+
+def generators(n):
+    """Entire real basis of u(n), not selected real rotations only."""
+    out = []
+    for i in range(n):
+        x = np.zeros((n, n), complex); x[i, i] = 1j; out.append(x)
+        for j in range(i + 1, n):
+            x = np.zeros((n, n), complex); x[i, j] = 1; x[j, i] = -1; out.append(x)
+            x = np.zeros((n, n), complex); x[i, j] = 1j; x[j, i] = 1j; out.append(x)
+    return out
+
+
+def complete_isometry(v):
+    q, _ = np.linalg.qr(v, mode='complete')
+    q[:, :v.shape[1]] = v
+    close(adj(q) @ q, np.eye(q.shape[0]), 'explicit unitary completion')
+    return q
+
+
+p_exact = (sp.sqrt(5) - 1) / 2
+p = float(p_exact)
+qmin, qmax = 0.07, 0.22
+q_mu = p ** 2 / (1 + p ** 2)
+require(sp.simplify(p_exact + p_exact ** 2 - 1) == 0, 'exact Golden identities')
+require(bool(sp.simplify(p_exact ** 2 / (1 + p_exact ** 2) - sp.Rational(22, 100)) > 0),
+        'exact positive polar slope collar')
+require(0 < qmin < qmax < q_mu < 0.5, 'actual probability collar')
+
+
+def f(q):
+    return p * np.sqrt(1 - q) + p ** 2 * np.sqrt(q)
+
+
+def fp(q):
+    return -p / (2 * np.sqrt(1 - q)) + p ** 2 / (2 * np.sqrt(q))
+
+
+# Reuse the previously checked small complex sandwich cases.
+largest_gap = -np.inf
+for n in (2, 3, 4):
+    ambient = 3 * n
+    loader = expi(randh(ambient)); E = loader[:, :n]
+    vals = f(np.array([0.08, 0.14, 0.21])) ** 2
+    F = np.diag(np.repeat(vals, n)); H = adj(E) @ F @ E
+    close(adj(E) @ E, np.eye(n), 'true born loader isometry')
+    close(H, sum(vals[t] * adj(E[t*n:(t+1)*n]) @ E[t*n:(t+1)*n]
+                 for t in range(3)), 'actual compressed H')
+    eig = np.linalg.eigvalsh(H)
+    require(eig.min() >= f(qmin) ** 2 - 1e-12 and eig.max() <= f(qmax) ** 2 + 1e-12,
+            'actual positive F and H interval')
+    for _ in range(20):
+        C = np.zeros((ambient, ambient), complex)
+        Ts = []
+        for th in range(3):
+            T = (expi(randh(n)) + expi(randh(n))) / 2
+            Ts.append(T); C[th*n:(th+1)*n, th*n:(th+1)*n] = vals[th] * T
+        CE = adj(E) @ C @ E
+        ih = np.linalg.inv(sqrt(H))
+        Vs = [np.sqrt(vals[t]) * E[t*n:(t+1)*n] @ ih for t in range(3)]
+        T = sum(adj(V) @ S @ V for V, S in zip(Vs, Ts))
+        close(sum(adj(V) @ V for V in Vs), np.eye(n), 'BC2 dilation isometry')
+        require(np.linalg.norm(T, 2) <= 1 + 1e-12, 'BC2 compressed contraction')
+        close(CE, sqrt(H) @ T @ sqrt(H), 'BC2 exact sandwich')
+        for k in range(n + 1):
+            require(exterior_coefficient(CE, k) <= exterior_coefficient(H, k) + 1e-10,
+                    'BC4 every exterior coefficient')
+        for a, eta in ((1., .3), (.01, 2.), (3., .03)):
+            gap = logdet(a*np.eye(n) + eta*adj(CE)@CE) - logdet(a*np.eye(n) + eta*H@H)
+            largest_gap = max(largest_gap, gap)
+            require(gap <= 1e-10, 'BC3 full determinant bound')
+
+# One explicit entire two-round instrument and its square completion.
+n, d, sectors, rounds = 3, 6, 3, 2
+L = expi(randh(d)); j0 = np.eye(d, n); E = L @ j0
+P = [np.diag([int(k // 2 == th) for k in range(d)]) for th in range(sectors)]
+X = [pt @ E for pt in P]
+M = [adj(x) @ x for x in X]
+close(sum(M), np.eye(n), 'noncommuting physical POVM normalization')
+require(np.linalg.norm(M[0]@M[1] - M[1]@M[0]) > 1e-5, 'physical POVM really noncommutes')
+q = np.array([[.08, .12], [.13, .16], [.18, .21]])
+bits = list(itertools.product((0, 1), repeat=rounds))
+mu = np.array([np.prod([p**4 if b else p**2 for b in row]) for row in bits])
+mu_all = np.append(mu, 1 - sum(mu))
+require(np.min(mu_all) > 0, 'actual SER joint born masses and invalid sector')
+require(abs(sum(mu) - (p**2 + p**4)**rounds) < 1e-12, 'actual joint mass multiplicity')
+J = np.vstack([np.sqrt(m) * np.eye(d) for m in mu_all])
+J0 = J @ j0
+effects = [sum(np.prod(np.where(np.array(row), q[th], 1-q[th])) * P[th]
+               for th in range(sectors)) for row in bits]
+V = np.vstack([sqrt(eff) for eff in effects] + [np.zeros((d, d))])
+close(adj(V)@V, np.eye(d), 'entire current instrument isometry')
+U = complete_isometry(V) @ adj(complete_isometry(J))
+close(adj(U)@U, np.eye(U.shape[0]), 'entire square instrument unitarity')
+close(U@J, V, 'square instrument realizes every initial column')
+W = np.kron(np.eye(len(mu_all)), adj(L)) @ U @ J @ E
+close(adj(W)@W, np.eye(n), 'actual loader body inverse full isometry')
+F = sum(np.sqrt(m) * sqrt(eff) for m, eff in zip(mu, effects))
+fs = np.prod(f(q), axis=1)
+close(F, sum(fs[t]*P[t] for t in range(sectors)), 'actual joint polar F')
+require(np.min(fs) >= f(qmin)**rounds and np.max(fs) <= f(qmax)**rounds,
+        'actual positive F and H interval')
+H = adj(E) @ F @ E
+close(adj(J0)@W, H, 'actual earliest born cut equals H')
+close(adj(np.kron(W, np.eye(2))) @ np.kron(W, np.eye(2)), np.eye(2*n),
+      'reference identity and all unknown input columns')
+for k, eff in enumerate(effects):
+    Wk = W[k*d:(k+1)*d]
+    close(adj(Wk)@Wk, adj(E)@eff@E, 'actual complete physical branch effects')
+
+# Entire logical CODE/record fixed-effect tangent basis on this bounded fixture.
+resolvent = np.linalg.inv(np.eye(n) + H@H)
+nonzero_gram = 0
+for omega, eff in enumerate(effects):
+    for th in range(sectors):
+        for g2 in generators(2):
+            g = np.zeros((d, d), complex); g[2*th:2*th+2, 2*th:2*th+2] = g2
+            dc = np.sqrt(mu[omega]) * adj(E) @ g @ sqrt(eff) @ E
+            close(dc + adj(dc), np.zeros((n, n)), 'every fixed-effect cold tangent skew')
+            dg = H@dc + adj(dc)@H
+            nonzero_gram += int(np.linalg.norm(dg) > 1e-8)
+            close(-np.trace(resolvent@dg).real, 0., 'BC6 every fixed-effect J row')
+require(nonzero_gram > 0, 'hostile Gram tangent is not zero')
+
+# Independently varied FORWARD and REVERSE paid loaders at scalar effects.
+qs = np.array([.11, .17])
+ps = np.array([np.prod(np.where(np.array(row), qs, 1-qs)) for row in bits])
+Vs = np.vstack([np.sqrt(pr)*np.eye(d) for pr in ps] + [np.zeros((d, d))])
+Ws = np.kron(np.eye(len(mu_all)), adj(L)) @ Vs @ E
+hs = np.prod(f(qs)); Hs = hs*np.eye(n)
+close(adj(J0)@Ws, Hs, 'scalar F true born compression')
+Rs = np.linalg.inv(np.eye(n)+Hs@Hs)
+for g in generators(d):
+    dWf = np.kron(np.eye(len(mu_all)), adj(L)) @ Vs @ g @ E
+    dWr = -np.kron(np.eye(len(mu_all)), adj(L)@g) @ Vs @ E
+    for dw in (dWf, dWr):
+        dc = adj(J0)@dw
+        close(-np.trace(Rs@(Hs@dc+adj(dc)@Hs)).real, 0.,
+              'all independent forward reverse loader J rows at scalar F')
+        for k in range(len(bits)):
+            wk, dkw = Ws[k*d:(k+1)*d], dw[k*d:(k+1)*d]
+            close(adj(wk)@dkw+adj(dkw)@wk, np.zeros((n,n)),
+                  'all independent loader joint effect Info rows at scalar F')
+
+# The full loader source off shell, including E-dependent compression.
+g = generators(d)[3]; dE = g@E
+dH = adj(dE)@F@E + adj(E)@F@dE
+step = 1e-6
+def profile_loader(t):
+    Et = expi((-1j*t)*g)@E
+    ht = adj(Et)@F@Et
+    return -logdet(np.eye(n)+ht@ht)
+close((profile_loader(step)-profile_loader(-step))/(2*step),
+      -2*np.trace(H@resolvent@dH).real, 'BC7 BC8 actual loader source', 2e-7)
+
+
+def phys_effects(qvalue):
+    return [sum(np.prod(np.where(np.array(row), qvalue[th], 1-qvalue[th]))*M[th]
+                for th in range(sectors)) for row in bits]
+
+
+def info(qvalue, rho):
+    sr = sqrt(rho)
+    return sum(entropy(sr@eff@sr) for eff in phys_effects(qvalue))-entropy(rho)
+
+
+def profile_effect(qvalue):
+    hh = sum(np.prod(f(qvalue[t]))*M[t] for t in range(sectors))
+    return -logdet(np.eye(n)+hh@hh)
+
+
+z = RNG.normal(size=(n,n))+1j*RNG.normal(size=(n,n))
+rho = z@adj(z); rho /= np.trace(rho)
+sr = sqrt(rho); population = np.array([np.trace(rho@m).real for m in M])
+probabilities = np.array([np.trace(rho@eff).real for eff in phys_effects(q)])
+hjoint = -sum(probabilities*np.log(probabilities))
+marginals = population@q
+hmarginals = -sum(marginals*np.log(marginals)+(1-marginals)*np.log(1-marginals))
+hconditioned = -sum(population[t]*sum(q[t]*np.log(q[t])+(1-q[t])*np.log(1-q[t]))
+                    for t in range(sectors))
+require(hjoint-info(q,rho) > 1e-7, 'negative Shannon equals mixed CQ shortcut')
+require(hmarginals-hjoint > 1e-7, 'negative unconditional outcome independence shortcut')
+require(info(q,rho)-hconditioned > 1e-7, 'negative unmeasured CODE made classical shortcut')
+for j in range(rounds):
+    weights = np.zeros(sectors)
+    for b in (0, 1):
+        coeff = q[:,1-j] if b else 1-q[:,1-j]
+        e1 = sum(coeff[t]*q[t,j]*M[t] for t in range(sectors))
+        e0 = sum(coeff[t]*(1-q[t,j])*M[t] for t in range(sectors))
+        wr = sr@(log(sr@e0@sr)-log(sr@e1@sr))@sr
+        weights += coeff*np.array([np.trace(m@wr).real for m in M])
+    for th in range(sectors):
+        require(np.log((1-qmax)/qmax)*population[th]-1e-10 <= weights[th]
+                <= np.log((1-qmin)/qmin)*population[th]+1e-10,
+                'BC11 joint Info bounds noncommuting POVM')
+        dq = np.zeros_like(q); dq[th,j] = step
+        close((info(q+dq,rho)-info(q-dq,rho))/(2*step), weights[th],
+              'BC11 every physical joint Info row', 2e-7)
+        gj = 2*fs[th]*fp(q[th,j])/f(q[th,j])*np.trace(M[th]@H@resolvent).real
+        require(gj > 0, 'BC9 true-cut J weight positive')
+        close((profile_effect(q+dq)-profile_effect(q-dq))/(2*step), -gj,
+              'BC9 every true-cut J source row', 2e-7)
+
+# Scalar-centre and quadratic bound for arbitrary physical input rank.
+qstar = np.array([.11,.17]); direction = np.array([[.13,-.17],[-.11,.08],[.04,.13]])
+quadratic_rows = []
+for rank in (1,2,3):
+    basis = expi(randh(n)); rv = np.arange(1,rank+1,dtype=float); rv /= sum(rv)
+    rr = basis@np.diag(list(rv)+[0.]*(n-rank))@adj(basis)
+    close(info(np.tile(qstar,(sectors,1)),rr),
+          -sum(qstar*np.log(qstar)+(1-qstar)*np.log(1-qstar)),
+          'scalar physical Info at every input rank')
+    pops = np.array([np.trace(rr@m).real for m in M])
+    for eps in (.04,.02,.01,.005):
+        qq = qstar+eps*direction
+        cond = np.array([np.prod(np.where(np.array(row)[None,:],qq,1-qq),axis=1)
+                         for row in bits]).T
+        pw = pops@cond
+        hrecord = -sum(pw*np.log(pw)); chi = hrecord-info(qq,rr)
+        classical = sum(pops[t]*sum(cond[t]*np.log(cond[t]/pw)) for t in range(sectors))
+        kl = sum(pops[t]*sum(qq[t]*np.log(qq[t]/qstar)+(1-qq[t])*np.log((1-qq[t])/(1-qstar)))
+                 for t in range(sectors))
+        bound = sum(np.max(np.abs(qq-qstar),axis=0)**2/(qstar*(1-qstar)))
+        require(-2e-11 <= chi <= classical+2e-11 and classical <= kl+2e-11
+                and kl <= bound+2e-11, 'BC12 complete quadratic entropy chain')
+        quadratic_rows.append({'rank':rank,'epsilon':eps,'chi':float(chi),'bound':float(bound)})
+
+# Hostile controls: valid matrix examples, not claimed literal native words.
+hh = np.diag([.8,.4]); swap = np.array([[0.,1.],[1.,0.]])
+ce = sqrt(hh)@swap@sqrt(hh)
+require(np.linalg.eigvalsh(hh@hh-adj(ce)@ce).min() < -.01,
+        'negative Gram Loewner shortcut')
+m0 = np.diag([.51,.49]); m1 = np.eye(2)-m0
+ec = np.vstack([sqrt(m0),sqrt(m1)])
+f0,f1 = f(qmax)**rounds,f(qmin)**rounds
+fc = np.diag([f0,f0,f1,f1]); cc = np.zeros((4,4))
+cc[:2,:2]=f0*swap; cc[2:,2:]=f1*swap
+hc=adj(ec)@fc@ec; cec=adj(ec)@cc@ec; old=np.diag([.001,1.])
+oldgap=logdet(np.eye(2)+cec@old@adj(cec))-logdet(np.eye(2)+hc@old@hc)
+close(adj(ec)@ec,np.eye(2),'actual loader in old Gram negative control')
+require(oldgap > 1e-6, 'negative arbitrary old Gram extension')
+
+result={
+ 'schema':'d0.born-code-actual-cut-check/1',
+ 'source_sha':'cd1c0f38e4f9a3d723b0a7d152c537bb4d3a0505',
+ 'checker_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+ 'scope':'Bounded complex matrix/entropy controls; generic exterior-power proof is primary.',
+ 'check_count':sum(GROUPS.values()), 'groups':GROUPS,
+ 'maximum_errors':ERRORS,
+ 'actual_fixture':{'physical_input_rank':n,'loaded_space_dimension':d,
+                   'CODE_sectors':sectors,'joint_outcomes':len(bits),
+                   'retained_invalid_sectors':1,'full_unitary_dimension':int(U.shape[0]),
+                   'scalar_loader_basis_size':len(generators(d)),
+                   'loader_slots_tested_independently':['forward','reverse'],
+                   'polar_f_interval':[float(f(qmin)**rounds),float(f(qmax)**rounds)]},
+ 'largest_logdet_gap':float(largest_gap),'nonzero_fixed_effect_Gram_tangents':nonzero_gram,
+ 'old_Gram_counterexample_logdet_gain':float(oldgap),
+ 'quadratic_entropy_controls':quadratic_rows,
+ 'flags':{'generic_proof_primary':True,'exact_native_giant_word_executed':False,
+          'full_physical_Cost_Info_selected':False,'whole_heat_stationarity_claimed':False,
+          'arbitrary_old_prefix_closed':False,'counterexample_is_literal_native_word':False,
+          'GR_closed':False},
+ 'status':'PASS'}
+text=json.dumps(result,sort_keys=True,indent=2)+'\n'
+parser=argparse.ArgumentParser();parser.add_argument('--write',action='store_true');args=parser.parse_args()
+if args.write:
+    Path(__file__).with_name('born_code_actual_cut_receipt.json').write_text(text,encoding='utf-8',newline='\n')
+print(text,end='')
+```
+<!-- END BCPR BORN CODE CHECKER -->
+
+<!-- BEGIN BCPR BORN CODE RECEIPT -->
+```json
+{
+  "actual_fixture": {
+    "CODE_sectors": 3,
+    "full_unitary_dimension": 30,
+    "joint_outcomes": 4,
+    "loaded_space_dimension": 6,
+    "loader_slots_tested_independently": [
+      "forward",
+      "reverse"
+    ],
+    "physical_input_rank": 3,
+    "polar_f_interval": [
+      0.485905333098947,
+      0.5256116303290191
+    ],
+    "retained_invalid_sectors": 1,
+    "scalar_loader_basis_size": 36
+  },
+  "check_count": 1510,
+  "checker_sha256": "caf6f9c256a07b47699b5b2a435c00c261743a2826291ea7240a5249ffddc728",
+  "flags": {
+    "GR_closed": false,
+    "arbitrary_old_prefix_closed": false,
+    "counterexample_is_literal_native_word": false,
+    "exact_native_giant_word_executed": false,
+    "full_physical_Cost_Info_selected": false,
+    "generic_proof_primary": true,
+    "whole_heat_stationarity_claimed": false
+  },
+  "groups": {
+    "BC11 every physical joint Info row": 6,
+    "BC11 joint Info bounds noncommuting POVM": 6,
+    "BC12 complete quadratic entropy chain": 12,
+    "BC2 compressed contraction": 60,
+    "BC2 dilation isometry": 60,
+    "BC2 exact sandwich": 60,
+    "BC3 full determinant bound": 180,
+    "BC4 every exterior coefficient": 240,
+    "BC6 every fixed-effect J row": 48,
+    "BC7 BC8 actual loader source": 1,
+    "BC9 every true-cut J source row": 6,
+    "BC9 true-cut J weight positive": 6,
+    "actual SER joint born masses and invalid sector": 1,
+    "actual complete physical branch effects": 4,
+    "actual compressed H": 3,
+    "actual earliest born cut equals H": 1,
+    "actual joint mass multiplicity": 1,
+    "actual joint polar F": 1,
+    "actual loader body inverse full isometry": 1,
+    "actual loader in old Gram negative control": 1,
+    "actual positive F and H interval": 4,
+    "actual probability collar": 1,
+    "all independent forward reverse loader J rows at scalar F": 72,
+    "all independent loader joint effect Info rows at scalar F": 288,
+    "entire current instrument isometry": 1,
+    "entire square instrument unitarity": 1,
+    "every fixed-effect cold tangent skew": 48,
+    "exact Golden identities": 1,
+    "exact positive polar slope collar": 1,
+    "explicit unitary completion": 2,
+    "hostile Gram tangent is not zero": 1,
+    "negative Gram Loewner shortcut": 1,
+    "negative Shannon equals mixed CQ shortcut": 1,
+    "negative arbitrary old Gram extension": 1,
+    "negative unconditional outcome independence shortcut": 1,
+    "negative unmeasured CODE made classical shortcut": 1,
+    "noncommuting physical POVM normalization": 1,
+    "physical POVM really noncommutes": 1,
+    "positive determinant domain": 376,
+    "reference identity and all unknown input columns": 1,
+    "scalar F true born compression": 1,
+    "scalar physical Info at every input rank": 3,
+    "square instrument realizes every initial column": 1,
+    "true born loader isometry": 3
+  },
+  "largest_logdet_gap": -0.002609323117116258,
+  "maximum_errors": {
+    "BC11 every physical joint Info row": 4.617397575401583e-10,
+    "BC2 dilation isometry": 3.0862909935029583e-15,
+    "BC2 exact sandwich": 2.418279345192791e-16,
+    "BC6 every fixed-effect J row": 8.809142651444724e-18,
+    "BC7 BC8 actual loader source": 6.860967718437527e-11,
+    "BC9 every true-cut J source row": 2.6954413701041346e-10,
+    "actual complete physical branch effects": 1.4903990596320996e-15,
+    "actual compressed H": 1.304428140907986e-16,
+    "actual earliest born cut equals H": 2.048936516098116e-16,
+    "actual joint polar F": 1.5700924586837752e-16,
+    "actual loader body inverse full isometry": 3.744197605746763e-15,
+    "actual loader in old Gram negative control": 1.1102230246251565e-16,
+    "all independent forward reverse loader J rows at scalar F": 9.488851183185732e-18,
+    "all independent loader joint effect Info rows at scalar F": 1.7209947867052661e-15,
+    "entire current instrument isometry": 0.0,
+    "entire square instrument unitarity": 1.3406449282854898e-15,
+    "every fixed-effect cold tangent skew": 5.174079108319079e-17,
+    "explicit unitary completion": 1.2457750302439016e-15,
+    "noncommuting physical POVM normalization": 1.716587549445839e-15,
+    "reference identity and all unknown input columns": 5.292959812740578e-15,
+    "scalar F true born compression": 7.956053555957815e-16,
+    "scalar physical Info at every input rank": 7.771561172376096e-16,
+    "square instrument realizes every initial column": 7.884071091279166e-16,
+    "true born loader isometry": 2.81593980900429e-15
+  },
+  "nonzero_fixed_effect_Gram_tangents": 48,
+  "old_Gram_counterexample_logdet_gain": 0.00023776933430691427,
+  "quadratic_entropy_controls": [
+    {
+      "bound": 0.0006039110476635855,
+      "chi": 0.0,
+      "epsilon": 0.04,
+      "rank": 1
+    },
+    {
+      "bound": 0.0001509777619158961,
+      "chi": -1.1102230246251565e-16,
+      "epsilon": 0.02,
+      "rank": 1
+    },
+    {
+      "bound": 3.7744440478974174e-05,
+      "chi": 2.220446049250313e-16,
+      "epsilon": 0.01,
+      "rank": 1
+    },
+    {
+      "bound": 9.436110119743376e-06,
+      "chi": 3.3306690738754696e-16,
+      "epsilon": 0.005,
+      "rank": 1
+    },
+    {
+      "bound": 0.0006039110476635855,
+      "chi": 4.193398702900808e-05,
+      "epsilon": 0.04,
+      "rank": 2
+    },
+    {
+      "bound": 0.0001509777619158961,
+      "chi": 1.0508066664915994e-05,
+      "epsilon": 0.02,
+      "rank": 2
+    },
+    {
+      "bound": 3.7744440478974174e-05,
+      "chi": 2.6301184949950596e-06,
+      "epsilon": 0.01,
+      "rank": 2
+    },
+    {
+      "bound": 9.436110119743376e-06,
+      "chi": 6.579192693978442e-07,
+      "epsilon": 0.005,
+      "rank": 2
+    },
+    {
+      "bound": 0.0006039110476635855,
+      "chi": 7.783253269122437e-05,
+      "epsilon": 0.04,
+      "rank": 3
+    },
+    {
+      "bound": 0.0001509777619158961,
+      "chi": 1.9497208533225674e-05,
+      "epsilon": 0.02,
+      "rank": 3
+    },
+    {
+      "bound": 3.7744440478974174e-05,
+      "chi": 4.8792763668314976e-06,
+      "epsilon": 0.01,
+      "rank": 3
+    },
+    {
+      "bound": 9.436110119743376e-06,
+      "chi": 1.2204465078546889e-06,
+      "epsilon": 0.005,
+      "rank": 3
+    }
+  ],
+  "schema": "d0.born-code-actual-cut-check/1",
+  "scope": "Bounded complex matrix/entropy controls; generic exterior-power proof is primary.",
+  "source_sha": "cd1c0f38e4f9a3d723b0a7d152c537bb4d3a0505",
+  "status": "PASS"
+}
+```
+<!-- END BCPR BORN CODE RECEIPT -->
+
+Final affected work/agent/assembly and whitespace guards pass. Assembly
+remains 98 results / 22 obligations / 5 discharged, promotion false. Only
+the existing primary and task brief change; unchanged GR/heat/Lean owners
+were not replayed.
