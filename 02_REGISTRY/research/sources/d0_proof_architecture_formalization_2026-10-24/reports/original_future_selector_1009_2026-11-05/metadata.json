@@ -1,0 +1,43 @@
+{
+  "available_memory_at_start_bytes": 5787381760,
+  "canonical_words_sha256": "7da6c5e307a8afac819f4096a8c173576b2498f9faede3e316ec21e7b0485e3a",
+  "kind": "single-pinned-selector-extraction",
+  "numpy": "2.2.6",
+  "prime": 1009,
+  "prime_tuple": [
+    1009,
+    244,
+    626,
+    226,
+    278,
+    469
+  ],
+  "process_cpu_seconds": 0.5625,
+  "python": "3.11.9",
+  "ranks_cumulative": {
+    "1": 11,
+    "2": 122,
+    "3": 128
+  },
+  "resources_note": "The selected build lock is held; direct Lake and other checkouts require external coordination.",
+  "scope": "One pinned 1009 selector replay; no eight-prime replay or complex Lean proof.",
+  "selector_git_blob": "d111c5bfeae3c384a4fe725f4a6d19277ea0005a",
+  "selector_sha256": "1b1e75a8c46135eac9495bc47f9239b83ed36713c268d118d017ab176b95f3a5",
+  "serialization": "UTF-8 json.dumps(words,separators=(',',':')); no trailing newline",
+  "source_commit": "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+  "thread_limits": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "uniform_git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "uniform_sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+  "wall_seconds": 0.7200349001213908,
+  "word_count": 128,
+  "word_length_histogram": {
+    "1": 11,
+    "2": 111,
+    "3": 6
+  }
+}
