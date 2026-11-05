@@ -22630,3 +22630,97 @@ receipt byte-for-byte. Work, agent-protocol, assembly and whitespace guards
 pass. The assembly remains 98 results / 22 obligations / 5 discharged with
 scientific_promotion=false. Only the existing primary artifact and task brief
 are changed; the concurrent actual-born-CODE result is preserved.
+
+
+## 2026-11-05 checkpoint: global full-field valuation cone on the actual born input
+
+Input `9b35e11a11796ae6ebd31cf02c9d2aea0a5f78c6`; existing Draft #334,
+`EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`. Phase: native
+realization / final composition. Write paths remain this task brief and
+its primary same-representative source artifact. Addition VCP1--VCP10
+consumes the incoming BCPR true-cut loader/POVM theorem, FD6's prior
+commuting-input code/CQ identity and FD7a's unattenuated same-cut clock,
+RCP complete joint information, SER actual 0/10 record, and the original
+all42 GENERAL/SOURCE/KAPPA maps. None of those incoming results is
+re-proved or represented as a new construction here.
+
+Exact parent substitution: replace a specially calibrated relative
+feedback/terminal-information valuation by a proved positive source cone
+on the SAME complete recovered native word. For fixed nonnegative
+c_J,c_P, not both zero, consider the comparison valuation
+c_J(H_actual+J_actual)+c_P P_code. P_code is the complete specified current
+registration component, subtracting old input entropy once; it is not
+all earlier charges or accumulated primitive work. The original Book03.25
+master itself remains c_J=1,c_P=0, with no added physical term.
+
+The actual born input retains its original rank and generally noncommuting
+programme POVM. FD6 already supplies the code relative-entropy identity and
+source sign for the commuting-input archive. Its extension here uses the
+actual born noncommuting effects, followed by the common-physical-source
+cone and uniform gain theorem; the generic identity is not claimed anew.
+The complete CQ identity is ln(phi) P_code=D(Omega || direct_sum pi_omega rho),
+with fixed original 0/10 code reference pi_omega=p^L(omega). The actual born return masses are
+mu_omega=pi_omega^2, not this normalized reference. The full quantum
+operator-log bounds imply every code-price effect coefficient has strict
+negative margin d_min>1 on the real relaxed collar q_max<q_mu. All outcomes,
+conditional quantum outputs and singular/mixed/entangled input cases stay
+present; no sum of marginal entropies is substituted.
+
+On BCPR's original common-PHYSICAL-field constructor, the ideal current
+reduced price is Phi(I_h), with Phi'=-Gamma<0 throughout the regular
+off-shell chart. Consequently its entire16+24+2 current critical set is
+exactly the original one for EVERY nonzero valuation in the cone. Both
+independent loader legs and all faithful fixed-effect apparatus rows use
+the same ideal current stationary section. The physical metric and matter
+coupling remain the existing BCPR17/GENERAL map. Full occurrence covectors
+can have different feedback and input-state weights; their source maps
+are not declared proportional. They share the actual right lift R, so
+any positive normalized mixture still obeys AR=I.
+
+The nonlinear preparation finite-source error has the uniform bound
+C(d_max/d_min) nu/|t|, independent of CODE dimension, joint-record count,
+number of blocks, relative valuation coefficient and small feedback gain.
+The actual master heat bound transfers because c_J/Gamma<=1/Gamma_J.
+Compiled/estimated gains retain their real errors and the factor
+1/(1-zeta) for certified relative calibration error zeta<1. Applying the
+owned BCPR occurrence/loader bounds and FD7a's full-clock schedule then
+gives actual native kappa soundness/recovery with the real old-source and
+physical-right-lift hypotheses. Paid CX;CX pairs after the last birth and
+before the final gate preserve the true compressed corner and field gain;
+there is no late born-work attenuation. This consumes FD7a on BCPR's own
+middle CODE-preserving fibre, not FD3's wider commuting-input competitor
+class. Ideal current stationarity is not an exact finite whole-master
+Euler root or an interchange of completion with taking zero sets.
+
+Every added padding row stays in its actual admitted middle fibre or keeps
+the separate loader/basis debt with all added occurrences. A fixed reporter
+accuracy is not declared uniform in unbounded padding.
+
+Remaining physical application, scoped contract C: derive the actual
+full-price membership in this cone, or bound its SAME-word residual
+D S_phys-[c_J D(H+J)+c_P D P_code] after normalization and all independent
+internal equations. The result eliminates the need for one exact
+coefficient or equality of absolute prices; it does not supply missing
+primitive/work/continuation tariffs or identify CQ registration with
+Book vertex Info. SER's57 physical added stages run on both outcomes;
+parsed lengths1 and2 alone do not price them. Field-dependent charges,
+free coefficient rows, scene/calibration/cut changes and unsupported
+old-prefix transports retain their actual equations. A co-moving matched
+reference is a different valuation and cannot replace the fixed code law.
+
+Validation: analytic composed proof plus a bounded independent checker,
+27 checks. Its native G/CX loader fixture has two live DATA ports and two
+born CODE bits, a true four-dimensional input, noncommuting compressed
+POVM and complete joint CQ records. Exact Golden inequalities accompany
+floating operator diagnostics. Common-right-lift, unequal-weight,
+wrong-marginal, outside-collar and moving-work controls remain. No
+unchanged geometry, enormous native compiler, exact native-root, Lean
+or CI suite is claimed replayed by these checks. Incoming FD6/FD7a proofs
+and their validation are consumed, not replayed or counted as this checker.
+
+This is supporting full-source composition. No new task, independent
+scientific acceptance, registry/status promotion, Ready transition,
+retirement or raw216 change is made. Complete physical Cost--Info binding
+and the existing broader closure obligations remain. `GR_closed=false`.
+
+Final targeted structural verification: the unmodified pinned task-brief validator passes for this changed brief; assembly metadata is unchanged, both existing file prefixes are preserved byte-for-byte, and appended lines pass whitespace and conflict-marker checks. Embedded checker, result and integrator receipt match the reviewed files. Full repository work, agent and assembly guards were not rerun in this partial snapshot; no unchanged mathematical or Lean suite was replayed.

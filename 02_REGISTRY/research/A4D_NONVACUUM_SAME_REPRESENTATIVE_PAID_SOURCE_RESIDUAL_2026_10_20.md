@@ -176842,3 +176842,967 @@ receipt byte-for-byte. Work, agent-protocol, assembly and whitespace guards
 pass. The assembly remains 98 results / 22 obligations / 5 discharged with
 scientific_promotion=false. Only the existing primary artifact and task brief
 are changed; the concurrent actual-born-CODE result is preserved.
+
+
+## Global full-field valuation cone on the actual born input cut
+
+5 November 2026. Existing Draft #334, native realization / final composition.
+Input: `9b35e11a11796ae6ebd31cf02c9d2aea0a5f78c6`, FD6/FD7a and the
+preserved BCPR1--BCPR19; RCP1--RCP19; SER1--SER12; 7ee H4--H22;
+GENERAL/SOURCE/KAPPA. The incoming born-CODE construction, prior commuting
+code/CQ identity and unattenuated paid-clock application are consumed unchanged.
+
+**Exact parent substitution.** On the SAME declared complete recovered
+word, actual born input and full physical field/control map, the remaining
+valuation need not have one specially calibrated feedback/information
+coefficient. In the ideal current model, a positive cone has the entire
+original Einstein--two-CAR critical set and one common current internal
+stationary section. The complete actual native words inherit kappa
+soundness/recovery only through the retained compiler, old-source, full-heat
+and physical-right-lift budgets proved below. P_code is the complete specified
+CURRENT registration component after subtracting old input entropy, not all
+historical charges. The actual complete physical price must still enter this cone,
+or its remaining source controlled. No primitive tariff is assigned, no
+Info is added to Book03.25 by fiat, and parsed-output length is not equated
+with accumulated work.
+
+### VCP1. Actual input, full joint effects, and distinct Golden references
+
+Use BCPR's true unknown input H0 of rank r, canonical-born CODE, known
+paid loader `E=A j0`, actual paid inverse and transported programme
+observable. On H0 the programme operators are the generally NONCOMMUTING
+POVM `M_theta=E*Pi_theta E>=0`, `sum M_theta=I`. For the fixed sequence of
+M actual binary blocks and any normalized possibly singular/entangled
+input rho, put
+
+    P_theta(omega)=product_j q_(theta,j),b_j,
+    G_omega=sum_theta P_theta(omega) M_theta,
+    G_j=sum_theta q_theta,j M_theta,
+    B_omega=sqrt(rho) G_omega sqrt(rho),
+    Omega=direct_sum_omega B_omega,
+    ell=log(phi), p=phi^-1.
+
+`G_omega` is the actual complete joint input effect. It is NOT generally
+`product_j G_j` or a product of compressed marginals. The same programme
+is retained through all blocks; its unconditional records are correlated.
+All conditional quantum outputs are retained in the same specified CQ
+record algebra as BCPR10. No physical pinching of the coherent global
+history, measurement of latent theta, or reset of unknown input is used.
+Full initial CODE is the special case in which the M_theta are sharp.
+
+The actual serializer emits `0` or `10`, so its parsed length and normalized
+coding reference are
+
+    L(omega)=sum_j(1+b_j),
+    pi_omega=p^L(omega), sum_omega pi_omega=1.             (VCP1)
+
+The born overlaps used by the original feedback optimum are DIFFERENT:
+
+    mu_0=p^2, mu_1=p^4,
+    mu_omega=pi_omega^2,
+    sum_omega mu_omega=(p^2+p^4)^M<1.                     (VCP2)
+
+The unused born sectors remain in the native carrier and full heat. Their
+mass is not conditioned away. The one-block equilibria are
+
+    q_code=p^2,
+    q_return=p^2/(1+p^2)=:q_mu<q_code.                    (VCP3)
+
+### VCP2. Exact full quantum code/CQ identity
+
+The specified complete current registration/code-CQ component in phi-code
+units, subtracting its actual old input entropy once, is
+
+    C_code=Tr(rho sum_omega L(omega)G_omega)
+          =M+sum_j Tr(rho G_j),
+    I_rec=sum_omega S(B_omega)-S(rho),
+    P_code=C_code-I_rec/ell.
+
+On the support of rho, direct expansion gives
+
+    ell P_code=D(Omega || direct_sum_omega pi_omega rho). (VCP4)
+
+Indeed `sum B_omega=rho`, `log(pi_omega rho)=log pi_omega+log rho`, and
+`-log pi_omega=ell L(omega)`. This includes the full quantum correlation
+correction, without replacing joint entropy by a sum of binary marginal
+entropies. It proves P_code>=0. Equality means
+`sqrt(rho)(G_omega-pi_omega I)sqrt(rho)=0` for every complete outcome;
+scalarity on unused input support is not inferred.
+
+FD6 already proves this complete code/CQ identity and sign on the earlier
+commuting-input archive, with CV16 its binary predecessor. The calculation
+above applies it to the actual born noncommuting POVM; neither the generic
+relative-entropy identity nor FD6's commuting case is claimed anew. The
+parent substitution below is the true-cut valuation cone, common physical
+lift and coefficient-uniform error. This identifies the specified terminal
+component, not the unknown whole physical Cost--Info price. Previously incurred charges and accumulated
+work are not identified with this incremental registration component.
+
+The reference pi in VCP4 is the FIXED original Golden 0/10 code law. The
+scalar q_j* used later for error comparisons is not substituted for it.
+A co-moving matched reference pi_omega(Y)=Pr_Y(omega) would make the
+relative entropy zero on a scalar profile and remove this source; it is a
+different valuation. An actually varying reference would contribute its
+real term -sum_omega Pr_Y(omega) D log(pi_omega)/ell. Internal storage of
+a reference does not authorize discarding that term or changing the
+fixed coding law.
+
+### VCP3. A strict uniform sign margin for every effect coefficient
+
+The ideal honest palette obeys `Q<=6p^7<q_mu`. Fix a common strict collar
+
+    0<q_min<=q_theta,j<=q_max<q_mu.
+
+For actual nonlinear/compiled reports choose the accuracy after a margin
+`6p^7<q_max<q_mu` (and a positive actual lower bound), as permitted by
+BCPR7. Do not claim their approximate probabilities satisfy the unrelaxed
+ideal upper bound exactly.
+
+Let `r_theta=Tr(rho M_theta)`. The existing BCPR11 operator-log theorem for
+the ENTIRE joint archive gives
+
+    l_min r_theta<=u_theta,j<=l_max r_theta,
+    u_theta,j=partial_(q_theta,j) I_rec,
+    l_min=log((1-q_max)/q_max),
+    l_max=log((1-q_min)/q_min).
+
+Consequently
+
+    partial_(q_theta,j)P_code=r_theta-u_theta,j/ell,
+    -d_max r_theta<=partial P_code<=-d_min r_theta,
+    d_min=l_min/ell-1, d_max=l_max/ell-1.                 (VCP5)
+
+At q_mu the odds equal phi^2. Thus the actual strict collar gives the
+stronger exact margin
+
+    d_min>1.                                           (VCP6)
+
+The genuine extra parsed digit is dominated by the full information
+source throughout this collar, even for noncommuting compressed effects
+and arbitrary mixed/entangled input. A zero populated weight r_theta gives
+no independent information equation in that sector.
+
+### VCP4. Positive cone of valuations on the same complete word
+
+Consume BCPR2's global middle-instrument determinant optimum on the TRUE
+born input. To avoid confusing its positive operator with heat, write
+
+    f(q)=p sqrt(1-q)+p^2 sqrt(q),
+    f_theta=product_j f(q_theta,j),
+    H_c=sum_theta f_theta M_theta>0,
+    D=a0 I+eta H_c^2, a0=1-z>0, eta>0,
+    w_theta=eta f_theta Tr(M_theta H_c D^-1)>=0.
+
+BCPR7--8 gives
+
+    D_q J=-sum_theta,j 2w_theta k_theta,j Dq_theta,j,
+    k_theta,j=f'(q_theta,j)/f(q_theta,j)>0.
+
+For fixed `c_J,c_P>=0`, not both zero, consider
+
+    S_cone=c_J (H_actual+J_actual)+c_P P_code.
+
+These are comparison valuations on the SAME recovered word, retained
+outputs and true physical cut. Applying Book03.25 itself means c_J=1,
+c_P=0; the construction does not install another physical term. Before
+its separately retained full thermal and old-source residual, the exact
+current effect part is
+
+    D_q(c_J J+c_P P_code)=-sum_theta,j Lambda_theta,j Dq_theta,j,
+    Lambda_theta,j=2c_J w_theta k_theta,j
+                    +c_P(u_theta,j/ell-r_theta).        (VCP7)
+
+Every coefficient is nonnegative, and strictly positive on the sectors
+visible to an active component. No numerical calibration of c_J/c_P is
+needed. The false Gram-order claim `C_E*C_E<=H_c^2` is not used; BCPR's
+determinant proof supplies the optimum and first-source neutrality.
+For the unattenuated FD7a application use eta=z: no late born-work
+attenuation is appended after recovery. An arbitrary old A cannot be
+inserted into that theorem. A separate
+scalar earliest-cut composition consumes BCPR8 only with its actual
+protection and every-competitor transport hypotheses.
+
+### VCP5. Global all42 critical-set equivalence on the original constructor
+
+BCPR14--17 constructs `e_theta=sqrt(sigma_theta)e` for EVERY regular
+one-input-field datum Y, before imposing an equation of motion. Its
+actual differential retains the generated calibration term and satisfies
+`D(e_theta/sqrt(sigma_theta))=De`. The original homogeneous density gives
+
+    I_h^sigma_theta(e_theta,U,Psi)=I_h(Y),
+    q_theta,j*=q_j*(s)=q0,j+g_j s, s=I_h(Y), g_j>0,
+    F*=t(s)I, H_c*=t(s)I_H0,
+    t(s)=product_j f(q_j*(s)).
+
+These are the owned ideal AFFINE reporter proxies. The nonlinear native
+probabilities retain their BCPR18--19 C1 and compilation errors; no exact
+finite native scalarity is inferred from this leading model.
+
+The ideal reduced current valuation is the single explicit function
+
+    Phi(s)=-c_J r log[a0+eta t(s)^2]
+           +c_P sum_j [1+q_j*(s)-h(q_j*(s))/ell],
+    Phi'(s)=-Gamma(s),
+    Gamma_J=2r eta t^2/(a0+eta t^2)
+                    sum_j g_j f'(q_j*)/f(q_j*),
+    Gamma_P=sum_j g_j [log((1-q_j*)/q_j*)/ell-1],
+    Gamma=c_J Gamma_J+c_P Gamma_P>0.                    (VCP8)
+
+It follows on the WHOLE regular chart that
+
+    D_Y Phi(I_h(Y))=0  iff  D_Y I_h(Y)=0.
+
+All sixteen coframes, twenty-four independent connection components and
+both CAR matter fields are included. This consumes the original physical
+material metric and coupling ratio. It is neither a Taylor match at one
+solution nor a newly fitted Einstein coefficient. Gamma is the derivative
+of the entire reduced function; no price is divided before variation.
+
+The current apparatus section and BOTH independent loading-leg rows are
+those already proved in BCPR2--6. The constructor processes calibration
+and field inputs on the whole chart, without testing DI_h=0. A different
+task allowing independently writable branch fields retains that larger
+domain and the earlier H9/RCP theorem; the present graph does not delete
+those variations retroactively. Full heat, previous rows and finite native
+errors are included by VCP9, not silently declared zero in VCP8.
+
+### VCP6. One right lift for the entire occurrence/control covector
+
+VCP8 alone would not justify calling the full occurrence covectors
+proportional. Keep BCPR16a, SER7--8 and the actual calibrated bank maps.
+On the ideal common-field section their full source maps obey
+
+    Dq_theta,j=g_j A_theta,j* E_h,
+    E_h=DI_h,
+    A_theta,j R=I,
+
+with the SAME actual simultaneous physical lift R. In the inherited
+material product-max chart it is the norm-one diagonal lift. In raw
+coframe/occurrence norms its calibration, basis and geometric constants
+are retained. Let `l_j=log((1-q_j*)/q_j*)`, `k_j=f'(q_j*)/f(q_j*)`, and set
+
+    A_J=sum_theta,j (2w_theta g_j k_j/Gamma_J) A_theta,j,
+    A_P=sum_theta,j
+        [r_theta g_j(l_j/ell-1)/Gamma_P] A_theta,j.       (VCP9)
+
+The coefficients of each sum are nonnegative and total one. At a scalar
+profile on the true born cut,
+`w_theta=eta t^2 Tr(M_theta)/(a0+eta t^2)`, whereas
+`r_theta=Tr(rho M_theta)`. These are different weights, so A_J and A_P
+need not be equal. No proportionality on arbitrary independent input
+variations is claimed.
+
+Nevertheless `A_J R=A_P R=I`. Hence
+
+    A=(c_J Gamma_J A_J+c_P Gamma_P A_P)/Gamma
+
+has `AR=I` and the actual component-map norm bound. The complete current
+covector is `D_current(c_J J+c_P P_code)/Gamma=-A*E_h`.
+A convex mixture cannot hide a residual component when all its maps have
+this common right lift. This covers the entire admitted occurrence/control
+domain, not merely the physical diagonal pullback. A different field
+decoder or inaccessible variation does not inherit R by notation.
+
+### VCP7. The same internal section for the whole cone
+
+BCPR2 globally optimizes J over its actual fixed-loader middle instrument
+at fixed complete effects. Every two-sided faithful fixed-effect tangent
+has zero DJ. Full CQ entropy and parsed code length depend only on those
+effects and the input, so their fixed-effect implementation rows vanish
+exactly. Their cone uses the same section and retains every actual
+operational constraint reaction.
+
+At the common scalar profile, for every normalized rho of any rank,
+
+    I_rec=sum_j h(q_j*),
+    P_code=sum_j [1+q_j*-h(q_j*)/ell].
+
+Thus the normalized-input preparation row is exactly zero, including
+rank-changing finite comparisons; CODE-basis rows also vanish. BCPR9
+solves each forward and reverse loader row independently: its own isometry
+normalization makes the relevant scalar-corner variation skew-Hermitian.
+The forward effects stay scalar under any normalized loader, while the
+reverse is a record-preserving output unitary. Tying their variations is
+unnecessary. The full heat and independently selected accumulated-work
+rows are not replaced by these endpoint identities.
+
+Native recovery retains BCPR/RCP's exact CODE support, real future-reader
+transport and `N_k e_k ->0`, counting every actual occurrence. Approximate
+native recovery is not an exact finite whole-master stationary word.
+
+### VCP8. Uniform source budget despite small feedback gain
+
+If `|q_theta,j-q_j*|<=delta_j` along the same collar, integrate VCP5 at fixed
+rho. The scalar comparison value is independent of rho, so for EVERY input
+
+    |P_code(Q,rho)-sum_j [1+q_j*-h(q_j*)/ell]|
+       <=d_max sum_j delta_j.
+
+Two arbitrary preparation/basis endpoints obey twice this bound. For the
+owned `delta_j<=C g_j nu`, their symmetric finite-source contribution,
+including its actual coefficient c_P, satisfies
+
+    C c_P d_max nu sum_j g_j/(|t_chord| Gamma)
+       <=C(d_max/d_min) nu/|t_chord|.
+
+For c_P=0 that contribution is absent. The bound is uniform in the CODE
+dimension, joint-record count, number of blocks, mixed/entangled input,
+relative valuation coefficient and possibly tiny feedback gain. Actual
+collar, comparison-step, occurrence and physical-lift constants remain.
+Choose nu/|t_chord| ->0 with these constants. This is a finite-comparison
+bound, not a derivative of a compiler index.
+
+These bounds use their stated positive central gain. If an implemented
+calibration Gamma_hat satisfies |Gamma_hat/Gamma-1|<=zeta<1, every divided
+error bound acquires the conservative factor 1/(1-zeta). The leading
+source calibration error is bounded by zeta/(1-zeta) times its original
+source norm; use zeta->0 on the declared bounded chart. The actual/ideal
+gain transport keeps its separate BCPR/native error. Neither an ideal gain
+substitution nor an inverse of a zero kappa-limit is implicit.
+
+### VCP9. Complete kappa soundness and recovery
+
+Apply VCP7--8, BCPR18--19 and the actual native recovery, then consume
+FD7a's unattenuated clock schedule on this SAME true-cut word
+`A -> middle processor/recovery -> A*`. After its last birth and before
+its actual final gate insert `m_k=k+m_0` paid literal CX;CX pairs. They
+add no births and leave its endpoint, compressed corner, original effects
+and actual field gain exactly unchanged. Their real stages and every
+independent allowed occurrence remain in the full clock.
+
+FD14 retains the inherited field error, the actual BCPR19 independent
+loader/basis debt, `C_h(N_k+2m_k)e_k/Gamma_h`, and
+`A_(L_k+2m_k) C_h(N_k+2m_k)/Gamma_h`. The reporter accuracy is chosen
+against the actual loader/basis occurrence norms. The existing recovery
+rate and FD10 factorial heat diagonal then give the prescribed finite
+source budget at each fixed chart before geometric refinement. No late
+return attenuation or mesh-uniform lower bound on gain is assumed.
+
+Every added padding row must belong to the actual admitted BCPR middle
+fibre or retain its BCPR19 loader/basis estimate with all 2m_k added
+occurrences. The joint precision schedule must make that real debt small;
+fixed reporter accuracy is not claimed uniform in unbounded padding.
+
+This uses FD7a on BCPR's OWN fixed-loader, fixed-effect, middle
+CODE-preserving fibre; BCPR9/15/19 separately supplies both loader legs.
+FD1--3's wider competitor class depends on commuting input effects and
+is not imported to the noncommuting compressed POVM. Retain every actual
+old comparison/protection hypothesis, source basis and GENERAL physical
+map; no arbitrary old Gram is inserted. These owned estimates yield the
+two complete source statements on the declared family:
+
+    F_J=-Gamma_J A_J* E_h+r_J,
+    F_P=-Gamma_P A_P* E_h+r_P,
+    ||r_i||/Gamma_i<=epsilon_i ->0.
+
+Here F_J is the complete H+J covector with its real reactions and old rows.
+Its full heat is in r_J, not replaced by terminal spectral energy. F_P
+keeps all current information/preparation and actual finite-comparison
+errors. A new independently free scene, calibration, rank, tariff or
+arbitrary old-prefix direction is not imported into those owned estimates.
+
+For the cone,
+
+    (c_J F_J+c_P F_P)/Gamma=-A*E_h+r,
+    ||r||<=max(epsilon_J,epsilon_P), AR=I.
+
+Zero coefficients remove their components. In particular
+`c_J ||DH||/Gamma<=||DH||/Gamma_J` whenever c_J>0, so the actual master
+heat budget transfers uniformly; no added information credit pays for an
+uncontrolled master error. The true physical right-lift constant C_h
+requires `C_h max epsilon_i ->0`, as in the existing scoped contract.
+
+The source-relative observable divides each finite contrast by its actual
+positive gain BEFORE kappa completion, retaining the prescribed relative
+precision. Bare unnormalized nullity is insufficient: a_h=Gamma_h->0
+does not imply a_h/Gamma_h->0. This consumes the interpretation already
+declared in 7eh.E; it does not construct division on an unnormalized
+quotient with vanishing gain.
+
+Stationary normalized sources then force the original Einstein--CAR
+source to vanish by the common R. Conversely every computable regular
+Einstein--two-CAR solution in the original chart is recovered by this
+same constructor: its sampled geometric residual and all normalized
+complete errors tend to zero. The original metric, matter coupling,
+Ward identities and refinement hypotheses are reused unchanged. This
+proves the equation class for the whole cone without an exact relative
+coefficient. It does not interchange kappa completion with the exact
+zero set of every finite native Euler problem.
+
+### VCP10. More general actual charges and the remaining physical source
+
+For an actual fixed complete-record charge C(omega), its effect derivative
+is `r_theta c_theta,j`, where
+
+    c_theta,j=E_(other bits|theta)[C(1,beta)-C(0,beta)].
+
+The same argument gives a sufficient positive-cone test whenever these
+GENUINE conditional differences lie strictly below the corresponding
+full information/feedback slope. For example fixed additive differences
+`tau_j<=tau_max<l_min/ell` retain the information margin
+`l_min/ell-tau_max>0`; no precise tariff tuning is necessary. This is a
+bound to prove from the real ledger, not from equal call inventories.
+
+If the charges depend on fields, programme, preparation or time, the full
+source additionally contains
+
+    sum_omega Tr(rho G_omega) D C_omega.
+
+CODE-dependent charges also have genuine preparation/basis rows; VCP7's
+neutrality does not cover them. For one binary continuation SER12 reads
+
+    D C_body+(1-q)D c_0+q D c_1
+       +[(c_1-c_0)-h'(q)/ell]Dq.
+
+The actual57-stage serializer executes all57 added stages on BOTH
+outcomes. Parsed lengths1 and2 do not prove a state-independent primitive
+tariff or accumulated-work law. The information here is the specified
+full CQ registration gain; equality to Book vertex Info still requires
+its native binding.
+
+If c_J or c_P is an independently varying physical parameter, then
+`D(c_J B+c_P P)=c_J DB+c_P DP+B D c_J+P D c_P`.
+Those extra rows are not solved by coefficient positivity.
+
+For the actual physical valuation the remaining object is its SAME-word
+source difference, computed rather than postulated:
+
+    R_phys=D S_phys-[c_J D(H+J)+c_P D P_code].
+
+It is enough to prove genuine membership in the positive source cone, or
+`||rightlift|| ||R_phys||/Gamma ->0`, including all independent internal
+rows. Equality of absolute microscopic prices and a uniquely calibrated
+coefficient are unnecessary. Membership is still a real missing physical
+application: no arbitrary residual or missing ledger can be assigned to
+zero. Book03.25 already has its specified-master realization. Original
+complete Cost--Info selection, broader admission and independent physical
+acceptance, exact finite joint roots and raw216 retain their prior scopes.
+No task retirement or status promotion is made. `GR_closed=false`.
+
+### VCP11. Independent review and changed verification
+
+Two independent reviews checked the true-input operator/CQ identity,
+strict coefficient sign, common physical decoder and right lift, native
+source composition and small-gain normalization. Their scope is the
+conditional theorem above, not an independent physical acceptance of C.
+The opening explicitly separates ideal current critical-set equivalence
+from complete native kappa soundness/recovery under the retained budgets.
+The arbitrary-old-prefix determinant extension and false compressed Gram
+order remain excluded. No previously missing work or Info charge is
+assigned by this theorem.
+
+The scientific checker remains pinned to the unchanged BCPR input at
+90e5dd4f. The incoming 9b35e11a commit appends only its source and task
+checkpoint; it preserves that input and the checker assumptions exactly.
+FD6 and FD7a are now consumed as prior analytic results with their own
+scopes. Their unchanged checker is not replayed here.
+
+The bounded checker below was rerun by the integrator using Python 3.12.14,
+NumPy 2.3.5 and SciPy 1.17.0, with `-W error` in both normal and optimized
+Python. Its JSON stdout is byte-identical and stderr is empty. The general
+statements are analytic; floating calculations are diagnostics, not an
+interval or formal certificate. Exact Golden inequalities use rational
+arithmetic. No unchanged geometry/heat/Lean suite or enormous native word
+was replayed.
+
+The live fixture has two mutable DATA ports and two genuinely born CODE
+bits. It does not address opaque SourceSpin4 as two qubits. Keeping that
+original spin module as an identity spectator retains its actual rank and
+trace multiplicity. The common-lift fixture has two physical coordinates;
+all16+24+2 field rows are supplied by the analytic composition with the
+existing GENERAL/BCPR constructor, not by this small numeric fixture.
+
+Diagnostic countercontrols retain: false classical marginal information,
+false independence of the joint archive, false scalar proportionality of
+different occurrence covectors, cancellation outside the strict collar,
+parsed length versus equal primitive-call count, moving branch tariffs,
+and an independent body-work row. A tiny feedback gain example around
+2.13e-241 tests the uniform normalization across coefficient scales.
+
+To reproduce only this changed check, extract the fenced Python block as
+`check_price_cone.py` in a scratch directory and run:
+
+```bash
+python3 -W error check_price_cone.py
+python3 -O -W error check_price_cone.py
+```
+
+The checker writes `price_cone_result.json` alongside itself. It neither
+mutates repository claims nor performs any remote operation.
+
+Canonical LF proof draft SHA256: `9e2b750b7c090055c3b9bce3237b03efa29f3c01361aca992beee3c749b0a03d`.
+
+Canonical LF embedded checker SHA256: `b1ca09d5bf6657a0cfe3e92efeb132d90f952e219e64e0f198fb8faa6484e297`.
+
+Canonical LF pretty JSON result SHA256: `7e4f19b8917c9c00c4f6d6955404c25615b6178b321201645d3a81b3357f78a1`.
+
+<!-- BEGIN VCP FULL PRICE CONE CHECKER -->
+```python
+#!/usr/bin/env python3
+"""Bounded full-CQ 0/10 price-cone checks with a genuine born-input compression.
+
+The general source/gain proof is analytic.  This checks one native G/CX loader,
+noncommuting compressed effects, correlated joint records, and hostile controls.
+It does not bind parsed-code cost to physical primitive Cost or replay GR/Lean.
+"""
+from decimal import Decimal, localcontext
+from fractions import Fraction as Fr
+from itertools import product
+import json
+import math
+from pathlib import Path
+import numpy as np
+from scipy.linalg import block_diag
+
+HERE = Path(__file__).resolve().parent
+labels = []
+def need(ok, label):
+    if not bool(ok):
+        raise RuntimeError(label)
+    labels.append(label)
+
+def herm(a):
+    return (a + a.conj().T) / 2
+
+def spectral(a, fun):
+    vals, vecs = np.linalg.eigh(herm(a))
+    if vals.min() < -2e-11:
+        raise RuntimeError("nonpositive matrix")
+    keep = vals > 1e-13
+    return (vecs[:, keep] * fun(vals[keep])) @ vecs[:, keep].conj().T
+
+def entropy(a):
+    vals = np.linalg.eigvalsh(herm(a))
+    if vals.min() < -2e-11:
+        raise RuntimeError("negative entropy spectrum")
+    vals = vals[vals > 1e-13]
+    return float(-np.sum(vals * np.log(vals)))
+
+def trace(a):
+    return float(np.trace(a).real)
+
+def golden_mul(x, y):
+    a, b = x
+    c, d = y
+    return (a*c+b*d, a*d+b*c-b*d)
+
+# Exact rational certificate: p is the positive root of p²+p−1.
+plo, phi = Fr(3, 5), Fr(6181, 10000)
+need(plo*plo+plo-1 < 0 < phi*phi+phi-1,
+     "exact Golden root enclosure")
+p7 = (Fr(1), Fr(0))
+for _ in range(7):
+    p7 = golden_mul(p7, (Fr(0), Fr(1)))
+need(p7 == (Fr(-8), Fr(13)), "exact p seventh power")
+need(golden_mul((Fr(2,5), Fr(-1,5)), (Fr(2), Fr(-1)))
+     == (Fr(1), Fr(-1)), "exact q_mu identity")
+gap_lower = (Fr(242)-391*phi)/5
+need(gap_lower > 0 and (3-4*phi)/5 > 0 and plo-Fr(1,2) > 0,
+     "exact 6p7 less q_mu less p_squared less one_half")
+
+p = (math.sqrt(5)-1)/2
+ell = math.log(1/p)
+gg = np.array([[math.sqrt(p), -p], [p, math.sqrt(p)]])
+vborn = np.array([math.sqrt(p), p])
+nbit, rtrue, ntheta, mblocks = 4, 4, 4, 3
+
+def single_gate(mat, bit):
+    out = np.array([[1.0]])
+    for j in range(nbit):
+        out = np.kron(out, mat if j == bit else np.eye(2))
+    return out
+
+def cx(control, target):
+    out = np.zeros((2**nbit, 2**nbit))
+    for col in range(2**nbit):
+        row = col ^ ((1 << (nbit-1-target)) if
+                     ((col >> (nbit-1-control)) & 1) else 0)
+        out[row, col] = 1
+    return out
+
+# CODE bits 0,1 are really born; bits 2,3 model two mutable live DATA ports.
+# They are NOT a decomposition of the opaque SourceSpin4 into addressed qubits.
+# The latter can remain an identity spectator; adding it multiplies the input
+# rank and feedback trace by four.  This is a bounded interface calculation,
+# not a new claim that the original Spin-only initial cut is four DATA columns.
+loader = np.eye(16)
+for gate in (cx(2,0), single_gate(gg,2), cx(2,1), cx(3,0),
+             single_gate(gg,3), cx(3,1), single_gate(gg,0)):
+    loader = gate @ loader
+j0 = np.kron(np.kron(vborn, vborn)[:, None], np.eye(rtrue))
+embedding = loader @ j0
+povm = [herm(embedding[4*t:4*t+4].conj().T @ embedding[4*t:4*t+4])
+        for t in range(ntheta)]
+need(np.linalg.norm(embedding.conj().T@embedding-np.eye(rtrue)) < 2e-14,
+     "born loader isometry and bounded DATA-interface input rank four")
+need(np.linalg.norm(sum(povm)-np.eye(rtrue)) < 2e-14
+     and min(np.linalg.eigvalsh(x).min() for x in povm) > -1e-14,
+     "actual compressed CODE is a complete positive POVM")
+comm = max(np.linalg.norm(x@y-y@x) for x in povm for y in povm)
+need(comm > 1e-3, "compressed programme effects genuinely noncommute")
+
+psi = np.array([1,0,0,np.exp(.37j)])/math.sqrt(2)
+chi = np.array([.3,.4j,.5,.7j], dtype=complex)
+chi /= np.linalg.norm(chi)
+rho = .65*np.outer(psi,psi.conj())+.15*np.outer(chi,chi.conj())+.20*np.eye(4)/4
+rho_pure = np.outer(psi,psi.conj())
+pt = rho.reshape(2,2,2,2).transpose(0,3,2,1).reshape(4,4)
+need(np.linalg.eigvalsh(pt).min() < -.1
+     and max(np.linalg.norm(rho@x-x@rho) for x in povm) > .01,
+     "mixed input is entangled and noncommuting with programme POVM")
+
+theta_g = math.atan2(p, math.sqrt(p))
+kappa9 = math.sin(512*theta_g)**2
+qmin, qmax = 2*kappa9*p**7, 6*kappa9*p**7
+lmin, lmax = math.log((1-qmax)/qmax), math.log((1-qmin)/qmin)
+dmin, dmax = lmin/ell-1, lmax/ell-1
+xis = np.array([[-1.1,.5,-.2],[1.,-.7,1.2],[.4,1.4,-1.2],[-.6,.1,.8]])
+qs = kappa9*p**7*(4+xis)
+need(qmin < qs.min() < qs.max() < qmax and dmin > 1,
+     "fixture inside the actual nine-control collar")
+words = list(product((0,1), repeat=mblocks))
+pi = np.array([p**(mblocks+sum(w)) for w in words])
+need(abs(pi.sum()-1) < 2e-14, "complete 0/10 Golden reference normalized")
+
+def cq_data(q, state, effects=povm):
+    sr = spectral(state, np.sqrt)
+    gs, blocks = [], []
+    for word in words:
+        coeff = np.prod(np.where(np.array(word)[None,:], q, 1-q), axis=1)
+        effect = sum(c*x for c,x in zip(coeff,effects))
+        gs.append(effect)
+        blocks.append(herm(sr@effect@sr))
+    probs = np.array([trace(x) for x in blocks])
+    irec = sum(entropy(x) for x in blocks)-entropy(state)
+    cost = sum((mblocks+sum(word))*prob for word,prob in zip(words,probs))
+    return blocks, probs, irec, cost
+
+def price(q, state=rho):
+    _, _, info, cost = cq_data(q, state)
+    return cost-info/ell
+
+identity_errors = []
+for state in (rho, rho_pure):
+    blocks, probs, info, cost = cq_data(qs, state)
+    omega = block_diag(*blocks)
+    sigma = block_diag(*(x*state for x in pi))
+    rel = trace(omega@(spectral(omega,np.log)-spectral(sigma,np.log)))
+    identity_errors.append(abs(rel/ell-(cost-info/ell)))
+    need(abs(trace(omega)-1) < 3e-14 and identity_errors[-1] < 3e-11,
+         "full CQ relative entropy identity " + ("mixed" if state is rho else "singular"))
+
+def info_gradient(q, state=rho):
+    sr = spectral(state,np.sqrt)
+    out = np.zeros_like(q)
+    for j in range(mblocks):
+        others = [k for k in range(mblocks) if k != j]
+        for beta in product((0,1), repeat=len(others)):
+            coeff = np.ones(ntheta)
+            for k,b in zip(others,beta):
+                coeff *= q[:,k] if b else 1-q[:,k]
+            b0 = sr@sum(c*(1-q[t,j])*povm[t] for t,c in enumerate(coeff))@sr
+            b1 = sr@sum(c*q[t,j]*povm[t] for t,c in enumerate(coeff))@sr
+            logdiff = spectral(b0,np.log)-spectral(b1,np.log)
+            for t in range(ntheta):
+                out[t,j] += coeff[t]*trace(sr@povm[t]@sr@logdiff)
+    return out
+
+def derivative(fun, q, direction, step=2e-5):
+    return (fun(q-2*step*direction)-8*fun(q-step*direction)
+            +8*fun(q+step*direction)-fun(q+2*step*direction))/(12*step)
+
+u = info_gradient(qs)
+ptheta = np.array([trace(rho@x) for x in povm])
+gradp = ptheta[:,None]-u/ell
+need(np.all(u >= lmin*ptheta[:,None]-1e-12)
+     and np.all(u <= lmax*ptheta[:,None]+1e-12),
+     "BCPR full joint quantum source Loewner bounds")
+fd_errors = []
+for t in range(ntheta):
+    for j in range(mblocks):
+        direction = np.zeros_like(qs)
+        direction[t,j] = 1
+        fd_errors.append(abs(derivative(price,qs,direction)-gradp[t,j]))
+need(max(fd_errors) < 2e-8, "full joint price derivatives match operator log formula")
+
+blocks, probs, info, cost = cq_data(qs,rho)
+marginal = -float(np.sum(probs*np.log(probs)))
+def wrong_price(q):
+    _,pr,_,c = cq_data(q,rho)
+    return c+float(np.sum(pr*np.log(pr)))/ell
+wrong_grad_gap = max(abs(derivative(wrong_price,qs,np.eye(qs.size)[i].reshape(qs.shape))
+                        -gradp.flat[i]) for i in range(qs.size))
+need(marginal-info > 1e-5 and wrong_grad_gap > 1e-4,
+     "hostile marginal entropy changes full source")
+qmeans = sum(ptheta[t]*qs[t] for t in range(ntheta))
+independent_h = -float(np.sum(qmeans*np.log(qmeans)+(1-qmeans)*np.log(1-qmeans)))
+need(independent_h-marginal > 1e-7,
+     "shared programme joint archive is not independent Bernoulli")
+
+z = 2.0**-20
+a = 1-z
+def profile(q):
+    f = p*np.sqrt(1-q)+p*p*np.sqrt(q)
+    k = (-p/(2*np.sqrt(1-q))+p*p/(2*np.sqrt(q)))/f
+    ftheta = np.prod(f,axis=1)
+    hh = sum(ff*x for ff,x in zip(ftheta,povm))
+    dinv = np.linalg.inv(a*np.eye(rtrue)+z*hh@hh)
+    bb = np.array([z*ff*trace(x@hh@dinv) for ff,x in zip(ftheta,povm)])
+    return hh, bb, k
+def jprice(q):
+    hh,_,_ = profile(q)
+    eig = np.linalg.eigvalsh(hh)
+    return -rtrue*math.log(a)-float(np.sum(np.log1p((z/a)*eig*eig)))
+hh, bb, kk = profile(qs)
+jgrad = -2*bb[:,None]*kk
+jerrors = []
+for t,j in ((0,0),(1,2),(3,1)):
+    direction = np.zeros_like(qs)
+    direction[t,j] = 1
+    jerrors.append(abs(derivative(jprice,qs,direction)-jgrad[t,j]))
+need(min(bb) > 0 and max(jerrors) < 2e-13,
+     "true-rank compressed feedback source formula")
+
+# Different occurrence maps with the SAME right inverse.  Their weighted
+# source is not falsely identified with one scalar multiple of any fixed map.
+rr = np.array([[1.,0],[0,1],[0,0],[0,0]])
+maps = [np.array([[1.,0,x,0],[0,1,0,y]])
+        for x,y in ((1,0),(0,2),(-.5,1),(.4,-.8))]
+need(all(np.array_equal(mat@rr,np.eye(2)) for mat in maps),
+     "distinct occurrence maps have one common physical right lift")
+common = np.tile(np.array([.11,.13,.15]), (ntheta,1))
+gains = np.array([.01,.02,.03])
+_, b0, k0 = profile(common)
+u0 = info_gradient(common)
+aa, bcoef = 1.7, .6
+weights = gains[None,:]*(2*aa*b0[:,None]*k0+bcoef*(u0/ell-ptheta[:,None]))
+gamma = weights.sum()
+abar = sum(weights[t].sum()*maps[t] for t in range(ntheta))/gamma
+need(gamma > 0 and np.linalg.norm(abar@rr-np.eye(2)) < 2e-14,
+     "positive-cone weighted map retains the same right lift")
+target_e = np.array([.7,-.2])
+expected = -gamma*abar.T@target_e
+coupled_fd = []
+for c in range(4):
+    qdir = np.array([gains*(target_e@mat[:,c]) for mat in maps])
+    coupled_fd.append(derivative(lambda q: aa*jprice(q)+bcoef*price(q),common,qdir))
+need(np.linalg.norm(np.array(coupled_fd)-expected) < 3e-8
+     and np.linalg.norm(rr.T@(expected/(-gamma))-target_e) < 1e-14,
+     "complete mixed source matches weighted pullback on the common two-dimensional interface")
+one = maps[0].T@target_e
+mix = abar.T@target_e
+best_scalar = (one@mix)/(one@one)
+need(np.linalg.norm(mix-best_scalar*one) > .02,
+     "hostile universal scalar proportionality across occurrence maps rejected")
+
+# Near-scalar finite preparation comparisons: unknown input rank may change.
+nu, chord = 1e-4, .003
+signs = np.array([[1,-.7,.2],[-.5,.8,-1],[.3,-.2,.9],[-1,.5,-.4]])
+near1 = common+nu*gains[None,:]*signs
+near2 = common-nu*gains[None,:]*signs[::-1]
+prep_difference = abs(price(near1,rho)-price(near2,rho_pure))
+need(prep_difference <= 2*dmax*nu*gains.sum()+2e-11,
+     "near-scalar full price preparation bound including rank change")
+
+with localcontext() as ctx:
+    ctx.prec = 90
+    dd = Decimal
+    pp = (dd(5).sqrt()-1)/2
+    ll = (1/pp).ln()
+    q = dd('0.12')
+    ff = pp*(1-q).sqrt()+pp*pp*q.sqrt()
+    kval = (-pp/(2*(1-q).sqrt())+pp*pp/(2*q.sqrt()))/ff
+    nlarge, gj = 800, dd('0.01')
+    zz = dd(2)**-20
+    tt2 = ff**(2*nlarge)
+    ww = 4*zz*tt2/(1-zz+zz*tt2)
+    gjj = 2*nlarge*gj*kval*ww
+    dscalar = ((1-q)/q).ln()/ll-1
+    gpp = nlarge*gj*dscalar
+    dn, dt = dd('0.0001'), dd('0.003')
+    def p_scalar(x):
+        h = -x*x.ln()-(1-x)*(1-x).ln()
+        return nlarge*(1+x-h/ll)
+    terminal_chord = abs(p_scalar(q+dn*gj)-p_scalar(q-dn*gj))/(2*dt)
+    ratio_records = []
+    bound = dd(str(dmax/dmin))*dn/dt
+    for bc in (dd(0), dd(2)**-1500, dd('1e-100'), dd(1), dd('1e100')):
+        total_gain = gjj+bc*gpp
+        residual = bc*terminal_chord/total_gain
+        ratio_records.append({'b':str(bc), 'normalized_preparation':str(residual)})
+    need(all(Decimal(x['normalized_preparation']) <= bound for x in ratio_records)
+         and gjj < dd('1e-200'),
+         "uniform gain ratio survives exponentially tiny feedback and all nonnegative coefficients")
+    tiny_gain = str(gjj)
+
+# The collar is mathematically essential: between q_mu and p² the two
+# positive price components have opposite sources and can cancel.
+qmu = p*p/(1+p*p)
+qbad = (qmu+p*p)/2
+f_bad = p*math.sqrt(1-qbad)+p*p*math.sqrt(qbad)
+k_bad = (-p/(2*math.sqrt(1-qbad))+p*p/(2*math.sqrt(qbad)))/f_bad
+w_bad = rtrue*z*f_bad*f_bad/(a+z*f_bad*f_bad)
+d_bad = math.log((1-qbad)/qbad)/ell-1
+b_bad = -2*w_bad*k_bad/d_bad
+need(k_bad < 0 < d_bad and b_bad > 0
+     and abs(2*w_bad*k_bad+b_bad*d_bad) < 1e-20,
+     "hostile outside-collar positive-cone cancellation")
+count_derivative = (57*(1-(.1+1e-4))+57*(.1+1e-4)
+                    -57*(1-(.1-1e-4))-57*(.1-1e-4))/(2e-4)
+parsed_derivative = ((1+(.1+1e-4))-(1+(.1-1e-4)))/(2e-4)
+need(abs(count_derivative) < 1e-9 and abs(parsed_derivative-1) < 1e-9,
+     "hostile equal primitive-call count is not parsed 0/10 work")
+qheld = qmeans[0]
+def with_actual_work(coords):
+    c0, c1, body = coords
+    return body+(1-qheld)*c0+qheld*c1-info/ell
+work0 = np.array([1.0,2.0,57.0])
+work_jac = [(with_actual_work(work0+1e-4*np.eye(3)[i])
+             -with_actual_work(work0-1e-4*np.eye(3)[i]))/(2e-4)
+            for i in range(3)]
+need(np.linalg.norm(np.array(work_jac[:2])-np.array([1-qheld,qheld])) < 1e-9
+     and min(work_jac[:2]) > .01,
+     "hostile moving branch tariffs retain q Dc1 and one-minus-q Dc0")
+need(abs(work_jac[2]-1) < 1e-9,
+     "hostile extra body work has its independent nonzero row")
+
+result = {
+    'status':'PASS_FULL_CQ_PRICE_CONE_AND_UNIFORM_GAIN',
+    'source_head':'90e5dd4fe8766577ae13f4a800162bd6fed31401',
+    'checks':len(labels), 'labels':labels,
+    'bounded_interface_cut':{'mutable_DATA_input_rank':rtrue,'live_loader_dimension':16,
+                  'programme_povm_count':ntheta,'joint_record_count':len(words),
+                  'max_povm_commutator_norm':comm},
+    'exact_golden_gap_lower':str(gap_lower),
+    'collar':{'kappa9':kappa9,'qmin':qmin,'qmax':qmax,
+              'dmin':dmin,'dmax':dmax,'ratio':dmax/dmin},
+    'observed':{'relative_entropy_identity_max_error':max(identity_errors),
+                'full_price_gradient_max_error':max(fd_errors),
+                'feedback_gradient_max_error':max(jerrors),
+                'wrong_marginal_source_gap':wrong_grad_gap,
+                'correlated_joint_entropy_gap':independent_h-marginal,
+                'preparation_price_difference':prep_difference,
+                'tiny_feedback_gain':tiny_gain,
+                'gain_ratio_examples':ratio_records},
+    'scope':'Generic proof is analytic; the four-dimensional input fixture uses '
+            'two mutable live DATA ports, not two gates on opaque SourceSpin4. '
+            'SourceSpin4 remains an identity spectator if included, multiplying '
+            'the input rank and feedback trace by four. The right-lift test is '
+            'a two-dimensional interface, not an all42 geometry replay. '
+            'Floating operator checks are diagnostic, '
+            'not interval certificates. Golden inequalities use exact rationals. '
+            'No physical Cost/Info binding, exact native roots, GR/Lean/CI replay '
+            'or remote changes are asserted.'
+}
+(HERE/'price_cone_result.json').write_text(json.dumps(result,ensure_ascii=False,sort_keys=True,indent=2)+'\n')
+print(json.dumps(result,ensure_ascii=False,sort_keys=True,separators=(',',':')))
+```
+<!-- END VCP FULL PRICE CONE CHECKER -->
+
+<!-- BEGIN VCP FULL PRICE CONE RESULT -->
+```json
+{
+  "bounded_interface_cut": {
+    "joint_record_count": 8,
+    "live_loader_dimension": 16,
+    "max_povm_commutator_norm": 0.0041472516194919025,
+    "mutable_DATA_input_rank": 4,
+    "programme_povm_count": 4
+  },
+  "checks": 27,
+  "collar": {
+    "dmax": 4.55394417275151,
+    "dmin": 1.961995158094774,
+    "kappa9": 0.9379319777093327,
+    "qmax": 0.1938246960145859,
+    "qmin": 0.06460823200486197,
+    "ratio": 2.321078191229426
+  },
+  "exact_golden_gap_lower": "3229/50000",
+  "labels": [
+    "exact Golden root enclosure",
+    "exact p seventh power",
+    "exact q_mu identity",
+    "exact 6p7 less q_mu less p_squared less one_half",
+    "born loader isometry and bounded DATA-interface input rank four",
+    "actual compressed CODE is a complete positive POVM",
+    "compressed programme effects genuinely noncommute",
+    "mixed input is entangled and noncommuting with programme POVM",
+    "fixture inside the actual nine-control collar",
+    "complete 0/10 Golden reference normalized",
+    "full CQ relative entropy identity mixed",
+    "full CQ relative entropy identity singular",
+    "BCPR full joint quantum source Loewner bounds",
+    "full joint price derivatives match operator log formula",
+    "hostile marginal entropy changes full source",
+    "shared programme joint archive is not independent Bernoulli",
+    "true-rank compressed feedback source formula",
+    "distinct occurrence maps have one common physical right lift",
+    "positive-cone weighted map retains the same right lift",
+    "complete mixed source matches weighted pullback on the common two-dimensional interface",
+    "hostile universal scalar proportionality across occurrence maps rejected",
+    "near-scalar full price preparation bound including rank change",
+    "uniform gain ratio survives exponentially tiny feedback and all nonnegative coefficients",
+    "hostile outside-collar positive-cone cancellation",
+    "hostile equal primitive-call count is not parsed 0/10 work",
+    "hostile moving branch tariffs retain q Dc1 and one-minus-q Dc0",
+    "hostile extra body work has its independent nonzero row"
+  ],
+  "observed": {
+    "correlated_joint_entropy_gap": 2.896551710884765e-05,
+    "feedback_gradient_max_error": 1.4466608055054204e-17,
+    "full_price_gradient_max_error": 4.9304851867937316e-11,
+    "gain_ratio_examples": [
+      {
+        "b": "0",
+        "normalized_preparation": "0E+240"
+      },
+      {
+        "b": "2.85106096489670585936790172741528654512809650736638236933850035329940427037265352817500109E-452",
+        "normalized_preparation": "1.11842256858677297113938200573594317425741861598800380590068837230562442725946663284081026E-211"
+      },
+      {
+        "b": "1E-100",
+        "normalized_preparation": "0.0333333333335838785036497264691701670375224266444222235898018048513230574990750121651645535"
+      },
+      {
+        "b": "1",
+        "normalized_preparation": "0.0333333333335838785036497264691701670375224266444222235898018048513230574990750121651645535"
+      },
+      {
+        "b": "1E+100",
+        "normalized_preparation": "0.0333333333335838785036497264691701670375224266444222235898018048513230574990750121651645535"
+      }
+    ],
+    "preparation_price_difference": 1.974949044303287e-07,
+    "relative_entropy_identity_max_error": 4.440892098500626e-16,
+    "tiny_feedback_gain": "2.13481496565957996056618799866802394044307866967578274123945275421047594175381970043707274E-241",
+    "wrong_marginal_source_gap": 0.008395215172586568
+  },
+  "scope": "Generic proof is analytic; the four-dimensional input fixture uses two mutable live DATA ports, not two gates on opaque SourceSpin4. SourceSpin4 remains an identity spectator if included, multiplying the input rank and feedback trace by four. The right-lift test is a two-dimensional interface, not an all42 geometry replay. Floating operator checks are diagnostic, not interval certificates. Golden inequalities use exact rationals. No physical Cost/Info binding, exact native roots, GR/Lean/CI replay or remote changes are asserted.",
+  "source_head": "90e5dd4fe8766577ae13f4a800162bd6fed31401",
+  "status": "PASS_FULL_CQ_PRICE_CONE_AND_UNIFORM_GAIN"
+}
+```
+<!-- END VCP FULL PRICE CONE RESULT -->
+
+<!-- BEGIN VCP INTEGRATOR RUN RECEIPT -->
+```json
+{
+  "checker_sha256": "b1ca09d5bf6657a0cfe3e92efeb132d90f952e219e64e0f198fb8faa6484e297",
+  "checks": 27,
+  "normal_optimized_byte_identical": true,
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "receipt_json_sha256": "7e4f19b8917c9c00c4f6d6955404c25615b6178b321201645d3a81b3357f78a1",
+  "scipy": "1.17.0",
+  "scope": "Bounded changed source interface; generic claims are analytic, not a full GR or native-word replay.",
+  "status": "PASS",
+  "stderr_bytes": 0,
+  "stdout_sha256": "02f86bfbf667fab37f06af3e4873bfb669f212676ffe65fcd791876df3b3c7e8",
+  "verified_by": "root"
+}
+```
+<!-- END VCP INTEGRATOR RUN RECEIPT -->
+
+Final targeted structural verification: the unmodified pinned task-brief validator passes for this changed brief; assembly metadata is unchanged, both existing file prefixes are preserved byte-for-byte, and appended lines pass whitespace and conflict-marker checks. Embedded checker, result and integrator receipt match the reviewed files. Full repository work, agent and assembly guards were not rerun in this partial snapshot; no unchanged mathematical or Lean suite was replayed.
