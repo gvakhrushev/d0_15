@@ -18133,3 +18133,21 @@ review checked signs, phases and CFC application. Checked results use only
 Walsh/Kraus parity, evenness and dimension of all future effects, lower-bound
 rank transfer, physical admission and clock/work remain open at this checkpoint.
 Owner #334 is unchanged, `GR_closed=false`, and final integration remains due.
+
+
+### Parity of all source Kraus histories
+
+`D0.Geometry.OriginalBookEffectParity` transports the proven source Julia
+parity through the actual Walsh endpoint rows, anchor, V matrices and both
+Golden branches. Every actual `sourceKraus slot` is even or odd with respect
+to the source P; zero matrices may satisfy both conditions. Induction through
+the original chronological effect then proves `P E(path)=E(path) P` for
+every finite source history, without assuming this commutation.
+
+Exact-file narrow Lean and axiom checks passed with `propext`,
+`Classical.choice`, `Quot.sound`; independent read-only review checked source
+indices, anchor, both branches, zeros and the induction. This proves
+containment of the actual effects in the parity-even sector. Its finite
+dimension bound, lower rank, CAR algebra identification, physical admission,
+clock/work and GR selection are not supplied by this module. #334 is
+preserved, `GR_closed=false`, and final integration remains required.

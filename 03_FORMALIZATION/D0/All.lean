@@ -532,6 +532,7 @@ import D0.Geometry.OriginalBookAnalyticBoost
 import D0.Geometry.OriginalBookBoost
 import D0.Geometry.OriginalBookCreatorBridge
 import D0.Geometry.OriginalBookCreatorParity
+import D0.Geometry.OriginalBookEffectParity
 import D0.Geometry.OriginalBookEffectWords
 import D0.Geometry.OriginalBookGoldenCompleteness
 import D0.Geometry.OriginalBookGoldenKraus
