@@ -158399,6 +158399,11 @@ recovery beyond the stated class still needs its own constructive argument;
 the already owned GENERAL source/recovery theorem has its separate broader
 asymptotic scope.
 
+Subsequent application JZ1--JZ11, "General exact-native recovery by certified
+rounding of the original cold jet" below, supplies that constructive
+extension for the SAME EO task and inherited regular norm. It does not
+identify its exact finite covector with the original lattice Euler map.
+
 #### I. 4. Full H+J master versus other complete-price interpretations
 
 Book03 03.25's literal action is
@@ -164372,3 +164377,810 @@ corrections are incorporated. Work/protocol/assembly guards and
 whitespace validation pass. The assembly template was consumed; no
 acceptance digest or discharge is asserted. scientific_promotion=false.
 Unchanged geometry, full heat and Lean suites were not replayed.
+
+## General exact-native recovery by certified rounding of the original cold jet
+
+5 November 2026. Native realization / final composition in existing Draft #334.
+Scientific input: 66edbcfd458daecd133baca3b44528931e2ebfc5; concurrent
+integration through f58795bd700520cccba06a93fc3fb40f1716da59 is preserved.
+Consumer: the constructive extension explicitly left open in EO.I.3,
+composed with the scoped A--D contract's recovery requirement. The result
+uses the same EO complete H+J task and provides general exact finite-source
+recovery in its declared regular class; it does not identify another full
+Cost--Info profile with that task.
+
+The exact parent substitution is: the original lattice samples need not
+already have zero discrete Euler covector. One off-shell finite-accuracy
+compiler yields exact native comparison-source roots recovering EVERY
+computable regular Einstein--two-CAR solution in the inherited chart.
+The converse uses the SAME family's full off-shell source estimate.
+The actual price, unknown input, all independent comparison rows, physical
+norm, marks, actual decoded centres and retained clock remain in the proof.
+
+### 1. Exact consumed interface and the changed application
+
+Primary `A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`:
+§7eo.B PC8--PC20, §7eo.C NG1--NG20 and §7eo.G FA3--FA5
+(at the pinned scientific input above; their sections survive the concurrent intake).
+The relevant exact facts are:
+
+* NG1 constructs an ACTUAL canonical endpoint U_n and base bank psi0;
+  its sign support and radial susceptibility a satisfy |a|>0.
+* NG4--NG5 construct the complete horizontal prepared jet K_j psi0=u_j,
+  [K_j,S]=0, where S=D*RD is the actual compiled reflection.
+* NG7 restores the original cold jet d*=D c_*(Y0) through radial angles
+  theta_b=(s/a) d*(v_b). The original c_* is NG8's finite seven-call
+  expression, not an Einstein residual supplied from outside the reader.
+* §C.5 preceding NG10 explicitly permits a sufficiently small NONZERO radial target to
+  compile to exact zero. Horizontal compilation commutes with R exactly.
+* If all radial words are the paid zero words, the exact NG10 conclusion
+  holds: Bhat_s* S Bhat_s=I_SAM tensor U_n on ALL columns. Its proof uses
+  only radial identity, not an independent proof that d*=0.
+* NG12/NG18 and §7eh.I retain the full nonquotient control norm, all four
+  independent legs, and the isometric physical right lift. In particular
+  ||A_h*ell||=||ell||_(V_h*) for the actual normalized history state.
+* EO's canonical-centre/FP8/old-pair/common-catalogue results then make
+  the ENTIRE declared finite-basis H+J source exactly zero. Generated
+  state/report equations and fixed-past rows use their actual adjoints.
+
+The previous primary proof invokes d*=0 as a sufficient condition for
+the compiler to output those radial identity words. The present application
+uses the already permitted finite-accuracy zero region instead. It does
+not claim exact lattice Euler zeros at the sampled continuum solution.
+
+### 2. One effective off-shell rule, including overlapping certificates
+
+At every regular Y0 retain the same d*, gamma_h>0 from NG16 and the SAME
+finite physical norm V_h. Define a finite computable majorant
+
+    q_h(Y0)=sum_i b_i |(-d*/gamma_h)_i|
+                >=||d*/gamma_h||_(V_h*),                  (JZ1)
+
+where b_i are the EXISTING computable coordinate bounds |v_i|<=b_i||v||_V.
+Use their displayed local C0 bounds for coframe/scalar coordinates and the
+O(h) bound for raw log-link coordinates, not a coarse growing global basis
+constant. For normalized PF directions use the baseline-subtracted ambient
+covector representative; its restriction is the same functional.
+They retain the material and physical link Jacobians (delta xi=h delta omega
+at the leading logarithmic scale, with the actual local derivative used).
+This is a finite weighted l1 computation, not a redefinition of V_h.
+Absolute values of computable real coefficients have computable intervals.
+Section6 proves that this stronger majorant also tends to zero on every
+recovered solution. No computability of an arbitrary norm-unit-ball
+optimization, or diverging interpolation estimate, is assumed.
+
+Given a positive requested source tolerance tau_h, run the two open
+certificate searches in parallel:
+
+    ZERO:     q_h(Y0)<tau_h,
+    ORDINARY: q_h(Y0)>tau_h/2.                            (JZ2)
+
+Their union covers every nonnegative q_h. Use a fixed deterministic
+tie-breaking/dovetail convention. No equality test of computable reals is
+needed. When q_h<=tau_h/4, only ZERO can succeed. When q_h=0, the original
+exact-primary construction is unchanged.
+
+On ORDINARY use the unchanged NG7--NG20 compiler. On ZERO keep the actual
+base B0, the actual processor D, every horizontal K_j and their native
+commuting compilers, but request the radial exponent zero in EVERY SAM
+branch. Execute their actual common padded identity networks.
+
+The decision is made ONCE for the centre and its full comparison catalogue.
+All four leg comparisons, faithful axes, old axes and kernel loops use
+that same stored table and common zero-coordinate word. Do not decide the
+branch anew at opposite endpoints of a comparison. No derivative of the
+compiler index is taken. The seed Y0 has exactly its existing EO status;
+it is not duplicated as a new independent physical field. Any separately
+admitted seed/input continues to require its original Jacobian/source.
+
+This is a numerical approximation rule for the original finite operation,
+defined for ALL off-shell fields. No field is rejected, and no Einstein
+equation is queried for admission. The original d* is used only to certify
+the actual accuracy of its cold-jet approximation.
+
+### 3. Full operator values and complete prepared jets remain accurate
+
+Let R_V,h=max_b ||v_b||_(V_h), using the actual coordinate-to-physical map.
+All quantities are finite at the fixed chart. On ZERO,
+
+    |theta_b| <= s gamma_h tau_h R_V,h/|a| =: T_h,
+    ||exp(theta_b L)-I|| <= |theta_b|.                    (JZ3)
+
+Thus the complete branch-bank operator differs from the unchanged NG7
+target by at most eta_H+T_h. The old zero-preserving radial compiler can
+be invoked with eta_N=4T_h: every angle is strictly inside its zero-only
+region. Alternatively the certified zero request is its identical output.
+Choose s only AFTER the finite R_V,h and requested operator/mark accuracy
+are known, so eta_H+T_h meets that absolute accuracy and s R_V,h stays in
+the chart. This never increases an initial rank or introduces a blank.
+
+Let wtilde be NG9's restored prepared jet and u its horizontal part. Exactly,
+
+    u(v)=wtilde(v)-[d*(v)/a] L psi0,
+    ||u-D psi_*||_(V_h -> Hilbert)
+        <= E_jet + gamma_h tau_h/|a|.                    (JZ4)
+
+Consequently NG13's actual marked-isometry estimate is retained with the
+additional term gamma_h tau_h/|a|, plus its original s-remainder and
+eta_H/s errors. It holds on ALL protected old columns, including an
+entangled unknown reference. It is not a new all-unitary-column jet claim.
+Operator values use JZ3; physical field jets use JZ4. Their different norms
+must not be collapsed into a single crude bound.
+
+### 4. Why no C_h R_V loss or compiler-length circle occurs
+
+The raw estimate C_h eta_N/(gamma_h s) from NG19 is a sufficient generic
+matrix-error bound. It is unnecessary for the structural ZERO output.
+There the actual table is exactly c_n I and the actual complete finite
+source is exactly zero, including all independent forward/backward legs,
+their admitted correlations, faithful implementation directions and the
+supplied old/generated/boundary rows. Therefore, directly,
+
+    ||0-A_h*D I_h||_(full,*)
+      <= ||d*/gamma_h||_(V_h*)+epsilon_rep,h
+      < tau_h+epsilon_rep,h.                            (JZ5)
+
+Here zero means the original complete constrained comparison covector on
+the admitted tangent. Generated preparation/record constraints retain their
+actual normal reactions; their unconstrained ambient gradients are not
+individually renamed zero. The owned FN/causal adjoint supplies those
+equations on this same operation graph.
+
+No matrix-to-field inverse and no C_h R_V,h multiplies the right side.
+No kernel is quotiented out. The true positive centre gain is still NG17,
+Gamma_h=2 w gamma_h s/c_n, with the actual c_n, original input rank and
+old matrix. It is positive even when the field source vanishes, exactly
+as at the previously owned primary centres.
+
+ORDINARY retains NG20 with its chosen full error budget. Combining the
+two branches gives one off-shell source-consistent finite-source family,
+with error bounded by tau_h plus the old report, geometry, mark and ordinary
+compiler errors. Literal padding, all inverses, the endpoint-kernel lift
+and all comparison-price readings remain fully paid. On ZERO the exact
+symmetries prove finite equality before any numerical price evaluation.
+
+### 5. Existing reference calibration pays the extra marked-jet error
+
+PC14--PC19 allow EVERY 0<d<=d_max=F_max/(4 s_ref^2 k0), not just their
+displayed upper-endpoint choice. Set delta=epsilon_h d and
+
+    a_ref=Delta_y(delta)/(2 r_f),
+    F_h(v_ref)=s_ref^2 a_ref/epsilon_h.
+
+PC17 gives 0<T<=F_max/2, so the same strict monotone bracket proves the
+unique geometric reference. The genuine material amplitudes s_ref sqrt(d)
+only decrease. The common reference envelope, Lambda_h, nu_h and epsilon_h
+were fixed BEFORE this choice; shrinking d introduces no normalization
+circle and stays in the same full bank/readout interface.
+
+The current field banks Z_f=(e,U,0) and Z_q=(e,I,Psi) do not depend on delta.
+Their original marked factors, or fixed SITE/label-conditioned marginals,
+recover the current geometry. Normalized reference factors are traced in
+these readouts; the decoder never divides by the final Delta_y contrast.
+The corresponding finite current-field decoder/interpolator bound
+C_mark,h can therefore be fixed uniformly over 0<delta<=delta_max. It
+still includes the actual site probability, h-link and inverse-coframe
+constants; none is silently one.
+
+The exact shared-reference cancellation gives, OFF SHELL as well,
+
+    c_*=c_ref-2 lambda_vis a_ready^2 Delta_y(delta)
+           sum_x v_x rho_x [r(epsilon f_x/rho_x,0)
+                            +r(0,-epsilon q_x/rho_x)-2r0],
+    c_ref=1-8 lambda_vis,
+    gamma_h=2 lambda_vis a_ready^2 epsilon_h r_f
+                            Delta_y(delta)>0.             (JZ6)
+
+Hence the normalized functional d*/gamma_h is INDEPENDENT of delta.
+This uses generated constant reference arguments and normalized PF weights;
+it does not freeze an independently admitted reference input. The baseline
+c_ref and small original chart give uniform sign/support margins and thus
+|a|>=a_min>0 in the actual Golden-anchor search.
+
+After fixing C_mark,h and tau_h, choose the genuine positive delta so that
+
+    C_mark,h gamma_h tau_h/a_min <= h.                     (JZ7)
+
+This is effective because Delta_y(delta)->0 with a positive derivative.
+It changes neither JZ1 nor the continuum coupling. Choose actual bank and
+horizontal precision next; choose actual word length/padding LAST as in
+NG20. Every small gain is positive and is paid in the real relative price
+precision. No hypothetical uniform compiler length is used.
+
+The actual decoded Jacobian on the existing calibrated field lift is
+I+O(h), after including JZ7 and the old native/mark budgets. Its finite
+Neumann inverse supplies a genuine right lift with the original physical
+operator bound increased by at most a factor two (still of order C_h/s).
+Thus the small cold-jet correction removes no physical field coordinate
+and introduces no quotient or changed field norm.
+
+The chosen centre Y0 is not relabeled as the actual decoded centre Y_act.
+Retain the existing s, anchor and readout choices so that, with their real
+finite constants, C_source,h||Y_act-Y0||<=h and M_h eta_h<=h. Here M_h is
+the owned interpolation bound. These value/centre errors are separate
+from the deleted first-jet debt in JZ7. They transport JZ5 to the actual
+decoded fields with an additional O(h) source error and give the owned
+bounded-C3/C2 recovery. All required full-operation/off-diagonal mark
+targets are compiled at their actual delta with their actual precision;
+their values are not declared delta-independent. Only the geometric
+inverse uses the delta-independent current-field marginals.
+
+### 6. Strong native geometric residual from the OWNED weak source theorem
+
+For the literal PC8 finite action, f is the sum over the six fixed based
+plaquettes of -Tr_16[dGamma(N) Lambda(P)]/(8 nu_h^2 h^2); q uses only forward
+differences divided by h. Lambda(P), dGamma(N) and the adjugate remainder
+are finite polynomial maps. Inverse coframes are analytic on the supplied
+gap. The nu_h^2 factor cancels exactly. No checkerboard/site-parity selector
+remains in this leading I_h. Reference oscillations, if present in an older
+reference realization, belong to the separately controlled report remainder.
+
+Use the SAME physical link coordinates (log U)/h and their actual Jacobian.
+On a bounded regular C3 background and away from the fixed boundary collar,
+each scaled mesh Euler density has a finite local expansion
+
+    h^-4 partial_(Y_A(x)) I_h
+       =sum_(j=-J)^0 h^j E_(j,A)(jet Z(x))+O(h), J<=2.      (JZ8)
+
+The stencil radius is fixed, and the remainder is uniform with computable
+chart bounds. Three derivatives suffice for the h^-2 scalar difference;
+the physical link Jacobian reduces the link pole to at most h^-1. Ordered
+edge holonomies have the corresponding finite Taylor expansions. This is
+a finite Taylor statement, not analyticity of arbitrary smooth fields.
+
+GENERAL §5 proves weak C1 convergence for ALL regular backgrounds and
+compact smooth tests, not only Einstein fields. Multiply that convergence
+by h^J. Riemann summation and the fundamental lemma force E_(-J,A)=0 for
+every background. Repeat after removing that identically zero coefficient.
+All negative coefficients vanish; the constant coefficient is exactly the
+continuum Palatini/two-scalar Euler density fixed by GENERAL (3)--(9).
+Thus JZ8 is a uniform strong O(h) Euler estimate. This structural argument
+computes no new curvature coefficient and assumes no equation on Z.
+
+For the unchanged regular physical norms from SOURCE §1 (C3 coframe/matter,
+C2 connection), and any already declared equivalent norm with the same
+bound,
+
+    sum_(x,A) h^4 |v_A(x)| <= C_V ||v||_(V_h),              (JZ9)
+
+with a chart-uniform C_V. It follows that the strong residual is small in
+the ACTUAL V_h* norm, without multiplying by a diverging interpolation
+constant. This does not cover an arbitrary different UV/raw216 norm.
+Fixed collar values retain their original boundary reactions.
+
+The normalized reporter in JZ6 has the exact first variation
+
+    D[T_h/(epsilon_h r_f)]
+       =sum_x h^4 [(1+A_x) D f_x+(lambda+B_x) D q_x
+                    +C_x D rho_x],
+
+Here A_x,B_x=O(epsilon_h) in the spatial C1 norm when the positive PF
+density has a uniform C1 bound; the regular field moments have the required
+uniform C1 bounds on the original C3 chart. If only the owner's positive
+upper/lower PF bounds are supplied, retain the weaker difference bound
+|D^+ A|+|D^+ B|=O(epsilon_h/h) instead. No extra smoothness of the PF
+density is silently assumed.
+The PF coefficient is algebraic O(epsilon_h): subtracting 2r0 gives
+[r(x,0)+r(0,y)-2r0-x r_x-y r_y]/(epsilon_h r_f), whose constant and linear
+terms cancel. Use its normalized-PF tangent representative. Discrete
+summation by parts puts the link and scalar variations into first
+differences of their bounded physical momenta; multiplying those momenta
+by A_x or B_x therefore changes each physical Euler density by O(epsilon_h)
+in the smooth-PF case, or O(epsilon_h/h) under the weaker PF bounds. The
+coframe and PF rows are algebraic O(epsilon_h). The owned positivity
+bound epsilon_h<=C h^2 makes even the weaker error O(h). This is a coefficientwise
+estimate, not an inference from a weak or V_h* remainder bound and not a
+naive high-pole expansion of powers of f_h.
+
+Combining this strong report estimate with JZ8--JZ9 gives an effective
+chart-uniform B_h=O(h+epsilon_h/h+h^4)->0 (and the sharper O(epsilon_h)
+report term for smooth PF) such that, for samples of any
+regular continuum Einstein--two-CAR solution in that chart,
+
+    ||d*/gamma_h||_(V_h*) <= q_h(Y_h) <= B_h.               (JZ10)
+
+One must use this strong application, not infer JZ10 from weak convergence
+on a few tests. The other genuinely admitted source coordinates retain
+their previously supplied estimates/reactions.
+
+### 7. General exact finite recovery on one fixed-initial history
+
+Choose one positive off-shell tolerance schedule, for example
+
+    tau_h=4(B_h+h),                                       (JZ11)
+
+using the uniform chart truncation/reporter bounds, not a measured Einstein
+residual. Every sampled continuum solution satisfying the common regular
+chart has q_h<=tau_h/4, so its finite compiler necessarily takes ZERO.
+At EVERY sufficiently fine mesh its actual complete declared finite-basis
+source is therefore EXACTLY zero, not merely O(h). JZ3--JZ7 and the existing
+decoder precision give the original full marked geometry/first-jet recovery.
+
+The actual endpoint is U_n. Execute its paid exact inverse before any next
+birth, retaining all intermediate marks. The old canonical endpoint is I;
+TF14 and EO's exact old-pair proofs apply at the next level. This constructs
+one retained tower from the SAME initial unknown SourceSpin input of rank
+four. The old apparatus port remains active with its paid routing; no old
+RIGHT wire or initial blank is reassigned.
+
+Conversely the combined off-shell source bound JZ5/NG20 and GENERAL imply
+that every regular decoded kappa limit of exact roots in this ONE family
+solves the same Einstein--two-CAR equations. Exact finite field samples or
+exact finite roots of the original lattice action I_h are not asserted.
+The physical finite roots are those of the declared complete native
+comparison source, whose rounding precision tends to zero.
+
+The new substituted premise is exact native recovery BEYOND EO's five-
+profile exact lattice representatives, with the original norms and full
+finite price. The remaining scoped task/Book03 master-law regime is exactly
+EO/FN's original one. No compulsory universal scheduler, arbitrary-past
+canonicalization, or equality to a separately defined Cost--Info/HJR action
+has been supplied by this construction.
+
+### 8. Decisive check, provenance and acceptance boundary
+
+The portable check below uses a rational 32-column matrix fixture with a
+small NONZERO complete cold jet. After whole-functional rounding it checks
+the exact all-column endpoint, nontrivial horizontal geometry and all four
+independent old-correlated cold rows. Each row is nonzero skew while its
+original feedback derivative is zero. It also checks the direct contraction
+estimate, the nonzero deleted geometric jet, overlapping threshold cases,
+and negative controls for entrywise rounding and weak checkerboard cancellation.
+
+This is not execution of the huge native compiler or a new full-heat proof.
+The unchanged native construction and exact EO heat/old/faithful pair theorems
+apply because the actual endpoint and their hypotheses are the same. The
+strong local-Euler argument and arbitrary-solution recovery are analytical,
+not inferred from the bounded fixture. Both normal and optimized runs use
+warnings as errors; their 75 checks have byte-identical executed receipts.
+The code below is UTF-8/LF; the executed Windows stdout hash and its canonical
+LF hash are both recorded. No expensive unchanged suite is repeated.
+
+Incoming sections 7fd--7fm remain at their exact scopes. In particular their
+extra pointer/code/retention variables and complete-price defects are not
+silently transferred to EO. The remaining task/price-selection and any
+additional genuinely independent input rows stay with their original owners.
+JZ removes the general exact-recovery premise within EO; it does not by
+itself discharge the entire A--D contract, positive_gr or raw216. This is a
+positive research application awaiting independent pinned acceptance, with
+no registry promotion, task retirement or claim that the global goal is met.
+
+#### Portable exact check
+
+<!-- JZ-WHOLE-ZERO-CHECK:BEGIN -->
+```python
+"""Exact rational check of the EO whole-functional zero zone.
+
+This is a matrix fixture, NOT a literal Golden/native compiler certificate.
+The existing EO exact full-heat pair theorem is consumed, not rerun here.
+"""
+from __future__ import annotations
+
+import json
+
+import sympy as sp
+
+
+CHECKS: list[str] = []
+
+
+def require(condition: bool, name: str) -> None:
+    if not bool(condition):
+        raise ArithmeticError(name)
+    CHECKS.append(name)
+
+
+def equal(left: object, right: object, name: str) -> None:
+    if isinstance(left, sp.MatrixBase) or isinstance(right, sp.MatrixBase):
+        delta = sp.Matrix(left) - sp.Matrix(right)
+        ok = all(sp.simplify(value) == 0 for value in delta)
+    else:
+        ok = sp.simplify(left - right) == 0
+    require(ok, name)
+
+
+def skew(size: int, i: int, j: int) -> sp.Matrix:
+    result = sp.zeros(size)
+    result[i, j] = -1
+    result[j, i] = 1
+    return result
+
+
+def exact_rules(value: sp.Expr, threshold: sp.Expr) -> dict[str, bool]:
+    return {
+        "zero_certificate": bool(value < threshold),
+        "ordinary_certificate": bool(value > threshold / 2),
+    }
+
+
+def run() -> dict[str, object]:
+    q = sp.Rational
+    i2 = sp.eye(2)
+    i4 = sp.eye(4)
+    j2 = skew(2, 0, 1)
+    reflection = sp.Matrix([[q(3, 5), q(4, 5)], [q(4, 5), -q(3, 5)]])
+    s_bank = sp.kronecker_product(i2, reflection)
+    psi = sp.Matrix([1, 0, 0, 0])
+    phi = sp.Matrix([q(1, 2)] * 4)
+    equal(reflection.T * reflection, i2, "rational reflection is unitary")
+    equal(s_bank, s_bank.T, "bank sign is Hermitian")
+
+    k1 = sp.kronecker_product(j2, i2)
+    k2 = sp.kronecker_product(j2, reflection)
+    for index, generator in enumerate((k1, k2)):
+        equal(generator.T, -generator, f"horizontal generator {index} skew")
+        equal(generator * s_bank, s_bank * generator,
+              f"horizontal generator {index} commutes with sign")
+    h1 = q(3, 5) * i4 + q(4, 5) * k1
+    h2 = q(5, 13) * i4 + q(12, 13) * k2
+    branches = (i4, h1, h2, h1 * h2)
+    for index, branch in enumerate(branches):
+        equal(branch.T * branch, i4, f"horizontal branch {index} orthogonal")
+        equal(branch.T * s_bank * branch, s_bank,
+              f"horizontal branch {index} exact report identity")
+    require(h1 * psi != psi and h2 * psi != psi,
+            "horizontal banks really change the prepared state")
+
+    # The norm is applied to the WHOLE nonzero functional, not each entry.
+    d_star = sp.Matrix([q(3, 500), q(4, 500)])
+    d_norm = sp.sqrt((d_star.T * d_star)[0])
+    threshold = q(1, 20)
+    equal(d_norm, q(1, 100), "whole nonzero physical dual norm")
+    rules = exact_rules(d_norm, threshold)
+    require(rules["zero_certificate"] and not rules["ordinary_certificate"],
+            "small nonzero whole functional necessarily enters zero zone")
+    radial_generator = sp.kronecker_product(i2, j2)
+    susceptibility = 2 * (psi.T * s_bank * radial_generator * psi)[0]
+    equal(susceptibility, q(8, 5), "actual nonzero radial susceptibility")
+    sampler_scale = q(1, 100)
+    vertices = ((-1, -1), (-1, 1), (1, -1), (1, 1))
+    requested_angles = [
+        sampler_scale * (sp.Matrix(v).dot(d_star)) / susceptibility
+        for v in vertices
+    ]
+    require(all(angle != 0 for angle in requested_angles),
+            "every requested radial angle is genuinely nonzero")
+    rounded_radials = tuple(i4.copy() for _ in vertices)
+    require(len(rounded_radials) == 4,
+            "one whole-functional decision rounds every radial factor")
+
+    # Tensor order SAM(4) x BANK(4) x OLD(2); all old columns are retained.
+    bank_table = sp.kronecker_product(sp.diag(*branches), i2)
+    sign_full = sp.kronecker_product(i4, s_bank, i2)
+    endpoint = bank_table.T * sign_full * bank_table
+    equal(endpoint, sign_full, "all-column equal-return endpoint exactly")
+    embedding = sp.kronecker_product(phi, psi, i2)
+    cold = embedding.T * endpoint * embedding
+    equal(cold, q(3, 5) * i2, "scalar cold corner on every old input")
+
+    # Independent CODE/OLD-correlated controls, acting as identity on BANK.
+    z_old = sp.diag(1, -1)
+    controls = []
+    for index in range(4):
+        sam_skew = skew(4, index % 4, (index + 1) % 4)
+        sam_diagonal = sp.diag(*(q(index + j + 1, index + 2) for j in range(4)))
+        control = (
+            sp.kronecker_product(sam_skew, i4, z_old)
+            + sp.kronecker_product(sam_diagonal, i4, j2)
+        )
+        equal(control.T, -control, f"independent correlated control {index} skew")
+        equal(control * sign_full, sign_full * control,
+              f"control {index} respects its original occurrence support")
+        controls.append(control)
+    x_f, x_b, y_f, y_b = controls
+    endpoint_rows = (
+        endpoint * x_f,
+        -x_b * endpoint,
+        -bank_table.T * sign_full * y_f * bank_table,
+        bank_table.T * y_b * sign_full * bank_table,
+    )
+    cold_rows = tuple(embedding.T * row * embedding for row in endpoint_rows)
+    old_return = sp.Matrix([[1, q(1, 3)], [0, q(1, 2)]])
+    zeta = q(1, 7)
+    total_cold = cold * old_return
+    denominator = (1 - zeta) * i2 + zeta * total_cold.T * total_cold
+    source_values = []
+    for index, row in enumerate(cold_rows):
+        equal(row.T, -row, f"independent cold row {index} is skew")
+        require(row != sp.zeros(2), f"cold row {index} is not discarded as zero")
+        total_row = row * old_return
+        gram_row = total_row.T * total_cold + total_cold.T * total_row
+        equal(gram_row, sp.zeros(2), f"independent Gram row {index} exactly zero")
+        dj = -sp.trace(denominator.inv() * zeta * gram_row)
+        equal(dj, 0, f"independent original J source {index} exactly zero")
+        source_values.append(str(dj))
+
+    # The original norm argument is contraction of mapped field vectors.
+    # These exact Euclidean identities witness the triangle/Cauchy argument;
+    # they do not replace the repository's physical V_h or drop its constants.
+    v_tables = (sp.diag(-1, -1, 1, 1), sp.diag(-1, 1, -1, 1))
+    rho = sp.Matrix([[q(2, 3), q(1, 6)], [q(1, 6), q(1, 3)]])
+    require(rho.det() > 0 and sp.trace(rho) == 1, "old trace state is positive")
+    mapped = []
+    for control in controls:
+        values = []
+        for v in v_tables:
+            v_full = sp.kronecker_product(v, i4, i2)
+            compressed = embedding.T * (v_full * control - control * v_full) * embedding
+            values.append(sp.trace(rho * compressed))
+        mapped.append(sp.Matrix(values))
+    field_average = (mapped[0] + mapped[1]) / 2
+    average_square = field_average.dot(field_average)
+    map_max_square = max(value.dot(value) for value in mapped)
+    require(average_square <= map_max_square,
+            "four-leg maximum controls the two-outer-leg average")
+    u1, u2, v1, v2 = sp.symbols("u1 u2 v1 v2", real=True)
+    equal(2 * (u1**2 + u2**2 + v1**2 + v2**2)
+          - ((u1 + v1)**2 + (u2 + v2)**2),
+          (u1 - v1)**2 + (u2 - v2)**2,
+          "exact contraction sum-of-squares identity")
+    a1, a2, b1, b2 = sp.symbols("a1 a2 b1 b2", real=True)
+    equal((a1**2 + a2**2) * (b1**2 + b2**2) - (a1*b1 + a2*b2)**2,
+          (a1*b2 - a2*b1)**2, "exact dual-source Cauchy identity")
+    target_source = d_star.dot(field_average)
+    require(target_source**2 <= d_norm**2 * map_max_square,
+            "zero-source error bounded by whole functional without C_h amplification")
+
+    # Removing the radial jet changes the actual prepared isometry.
+    deleted_jet = (radial_generator * psi) * d_star.T / susceptibility
+    jet_gram = deleted_jet.T * deleted_jet
+    equal(sp.trace(jet_gram), q(1, 160)**2, "nonzero deleted jet bound squared")
+    equal(jet_gram.det(), 0, "deleted jet is rank one")
+    require(deleted_jet != sp.zeros(4, 2), "deleted geometry jet remains a real debt")
+    for index, horizontal in enumerate((k1, k2)):
+        original_jet = horizontal * psi + deleted_jet[:, index]
+        equal(2 * (psi.T * s_bank * original_jet)[0], d_star[index],
+              f"original prepared jet {index} has requested nonzero source")
+        equal(2 * (psi.T * s_bank * horizontal * psi)[0], 0,
+              f"rounded prepared jet {index} is exactly horizontal")
+
+    cases = {}
+    for label, value in (
+        ("zero", q(0)), ("half_boundary", threshold/2),
+        ("overlap", 3*threshold/4), ("upper_boundary", threshold),
+        ("outside", 2*threshold),
+    ):
+        result = exact_rules(value, threshold)
+        require(any(result.values()), f"overlap rule halts at {label}")
+        cases[label] = result
+    require(cases["half_boundary"] == {"zero_certificate": True, "ordinary_certificate": False},
+            "half boundary has a strict zero certificate")
+    require(cases["upper_boundary"] == {"zero_certificate": False, "ordinary_certificate": True},
+            "upper boundary has a strict ordinary certificate")
+
+    # Negative control 1: entrywise small is not whole-functional small.
+    bad_d = sp.Matrix([q(3, 40), q(3, 40)])
+    bad_threshold = q(1, 10)
+    require(all(abs(value) < bad_threshold for value in bad_d)
+            and bad_d.dot(bad_d) > bad_threshold**2,
+            "negative control: coordinatewise test would falsely round")
+
+    # Negative control 2: weak cancellation is not strong Euler smallness.
+    checkerboards = []
+    for size in (4, 8, 16):
+        h = q(1, size)
+        values = [(-1)**j for j in range(size)]
+        weak_constant = sum(h * value for value in values)
+        weak_linear = sum(h * value * q(j, size) for j, value in enumerate(values))
+        strong_dual = sum(h * abs(value) for value in values)
+        equal(weak_constant, 0, f"checkerboard {size}: constant weak cancellation")
+        equal(abs(weak_linear), q(1, 2*size), f"checkerboard {size}: weak linear limit")
+        equal(strong_dual, 1, f"checkerboard {size}: full dual norm remains one")
+        checkerboards.append({"size": size, "weak_linear_abs": str(abs(weak_linear)),
+                              "weighted_l1_dual": str(strong_dual)})
+
+    return {
+        "status": "PASS",
+        "scope": "exact rational matrix fixture; not a literal native compiler or new heat proof",
+        "dimension": {"sam": 4, "bank": 4, "old": 2, "whole": 32},
+        "small_nonzero_d_star": [str(value) for value in d_star],
+        "whole_dual_norm": str(d_norm),
+        "zero_threshold": str(threshold),
+        "requested_nonzero_radial_angles": [str(value) for value in requested_angles],
+        "exact_current_J_rows": source_values,
+        "deleted_prepared_jet_operator_norm": "1/160",
+        "actual_decoder_debt": "C_mark,h * gamma_h * tau_h / |a| must tend to zero",
+        "norm_fact": "||A_h||<=1 in original four-leg maximum norm; no C_h multiplication on exact-zero branch",
+        "threshold_boundaries": cases,
+        "negative_checkerboards": checkerboards,
+        "heat": "existing EO theorem consumed from identical all-column endpoint; not rerun",
+        "checks": CHECKS,
+    }
+
+
+if __name__ == "__main__":
+    print(json.dumps(run(), sort_keys=True, indent=2))
+```
+<!-- JZ-WHOLE-ZERO-CHECK:END -->
+
+#### Executed receipt
+
+```json
+{
+  "actual_decoder_debt": "C_mark,h * gamma_h * tau_h / |a| must tend to zero",
+  "checks": [
+    "rational reflection is unitary",
+    "bank sign is Hermitian",
+    "horizontal generator 0 skew",
+    "horizontal generator 0 commutes with sign",
+    "horizontal generator 1 skew",
+    "horizontal generator 1 commutes with sign",
+    "horizontal branch 0 orthogonal",
+    "horizontal branch 0 exact report identity",
+    "horizontal branch 1 orthogonal",
+    "horizontal branch 1 exact report identity",
+    "horizontal branch 2 orthogonal",
+    "horizontal branch 2 exact report identity",
+    "horizontal branch 3 orthogonal",
+    "horizontal branch 3 exact report identity",
+    "horizontal banks really change the prepared state",
+    "whole nonzero physical dual norm",
+    "small nonzero whole functional necessarily enters zero zone",
+    "actual nonzero radial susceptibility",
+    "every requested radial angle is genuinely nonzero",
+    "one whole-functional decision rounds every radial factor",
+    "all-column equal-return endpoint exactly",
+    "scalar cold corner on every old input",
+    "independent correlated control 0 skew",
+    "control 0 respects its original occurrence support",
+    "independent correlated control 1 skew",
+    "control 1 respects its original occurrence support",
+    "independent correlated control 2 skew",
+    "control 2 respects its original occurrence support",
+    "independent correlated control 3 skew",
+    "control 3 respects its original occurrence support",
+    "independent cold row 0 is skew",
+    "cold row 0 is not discarded as zero",
+    "independent Gram row 0 exactly zero",
+    "independent original J source 0 exactly zero",
+    "independent cold row 1 is skew",
+    "cold row 1 is not discarded as zero",
+    "independent Gram row 1 exactly zero",
+    "independent original J source 1 exactly zero",
+    "independent cold row 2 is skew",
+    "cold row 2 is not discarded as zero",
+    "independent Gram row 2 exactly zero",
+    "independent original J source 2 exactly zero",
+    "independent cold row 3 is skew",
+    "cold row 3 is not discarded as zero",
+    "independent Gram row 3 exactly zero",
+    "independent original J source 3 exactly zero",
+    "old trace state is positive",
+    "four-leg maximum controls the two-outer-leg average",
+    "exact contraction sum-of-squares identity",
+    "exact dual-source Cauchy identity",
+    "zero-source error bounded by whole functional without C_h amplification",
+    "nonzero deleted jet bound squared",
+    "deleted jet is rank one",
+    "deleted geometry jet remains a real debt",
+    "original prepared jet 0 has requested nonzero source",
+    "rounded prepared jet 0 is exactly horizontal",
+    "original prepared jet 1 has requested nonzero source",
+    "rounded prepared jet 1 is exactly horizontal",
+    "overlap rule halts at zero",
+    "overlap rule halts at half_boundary",
+    "overlap rule halts at overlap",
+    "overlap rule halts at upper_boundary",
+    "overlap rule halts at outside",
+    "half boundary has a strict zero certificate",
+    "upper boundary has a strict ordinary certificate",
+    "negative control: coordinatewise test would falsely round",
+    "checkerboard 4: constant weak cancellation",
+    "checkerboard 4: weak linear limit",
+    "checkerboard 4: full dual norm remains one",
+    "checkerboard 8: constant weak cancellation",
+    "checkerboard 8: weak linear limit",
+    "checkerboard 8: full dual norm remains one",
+    "checkerboard 16: constant weak cancellation",
+    "checkerboard 16: weak linear limit",
+    "checkerboard 16: full dual norm remains one"
+  ],
+  "deleted_prepared_jet_operator_norm": "1/160",
+  "dimension": {
+    "bank": 4,
+    "old": 2,
+    "sam": 4,
+    "whole": 32
+  },
+  "exact_current_J_rows": [
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "heat": "existing EO theorem consumed from identical all-column endpoint; not rerun",
+  "negative_checkerboards": [
+    {
+      "size": 4,
+      "weak_linear_abs": "1/8",
+      "weighted_l1_dual": "1"
+    },
+    {
+      "size": 8,
+      "weak_linear_abs": "1/16",
+      "weighted_l1_dual": "1"
+    },
+    {
+      "size": 16,
+      "weak_linear_abs": "1/32",
+      "weighted_l1_dual": "1"
+    }
+  ],
+  "norm_fact": "||A_h||<=1 in original four-leg maximum norm; no C_h multiplication on exact-zero branch",
+  "requested_nonzero_radial_angles": [
+    "-7/80000",
+    "1/80000",
+    "-1/80000",
+    "7/80000"
+  ],
+  "scope": "exact rational matrix fixture; not a literal native compiler or new heat proof",
+  "small_nonzero_d_star": [
+    "3/500",
+    "1/125"
+  ],
+  "status": "PASS",
+  "threshold_boundaries": {
+    "half_boundary": {
+      "ordinary_certificate": false,
+      "zero_certificate": true
+    },
+    "outside": {
+      "ordinary_certificate": true,
+      "zero_certificate": false
+    },
+    "overlap": {
+      "ordinary_certificate": true,
+      "zero_certificate": true
+    },
+    "upper_boundary": {
+      "ordinary_certificate": true,
+      "zero_certificate": false
+    },
+    "zero": {
+      "ordinary_certificate": false,
+      "zero_certificate": true
+    }
+  },
+  "whole_dual_norm": "1/100",
+  "zero_threshold": "1/20"
+}
+```
+
+#### Provenance
+
+```json
+{
+  "scientific_input_commit": "66edbcfd458daecd133baca3b44528931e2ebfc5",
+  "scientific_primary_input_blob": "5b2238bb414557ddb42b2f6d26d937d138e99f0e",
+  "integration_base": "f58795bd700520cccba06a93fc3fb40f1716da59",
+  "consumed_inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md",
+      "sha256": "320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md",
+      "sha256": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md",
+      "sha256": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md",
+      "sha256": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469"
+    }
+  ],
+  "checker_sha256": "b8c1aa2407642bea5cba0ebe0b43ca50e9ebe3d5a92ca5209bec165e20ee833b",
+  "executed_stdout_sha256": "70beca3b31e8da1341fc7759e44ea79732d982011446e96d0c2759575e3daa27",
+  "canonical_lf_receipt_sha256": "5b65ad4783108a38648196cf0710dd31633c7770224ab7d86d79c8ac33c3c39b",
+  "normal_and_optimized_warnings_as_errors_byte_identical": true,
+  "scope": "Exact rational whole-functional rounding/independent-row fixture; analytic JZ1--JZ11 and owned EO/GENERAL carry native admission, full heat, strong consistency and all-solution recovery."
+}
+```
+
+Final integration validation: the checker extracted from this Markdown reproduces
+the executed receipt above. Work and agent guards pass; assembly reports
+98 results, 22 obligations, 5 discharged and scientific_promotion=false.
+Whitespace validation passes. No mathematical acceptance is inferred from
+these structural checks.

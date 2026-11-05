@@ -22007,3 +22007,74 @@ the other genuine current equations remain open. Code validity is
 weaker than fixed-complete-operation FN fidelity; the two are not
 silently identified. `GR_closed=false`, `scientific_promotion=false`;
 the full goal and unchanged A--D contract remain active.
+
+## 5 November 2026 — general exact finite recovery in the existing EO family
+
+Phase: native realization / final composition, existing #334. Scientific
+input 66edbcfd458daecd133baca3b44528931e2ebfc5; concurrent intake through
+f58795bd700520cccba06a93fc3fb40f1716da59 is preserved. Same two write paths.
+Consumer: EO.I.3's explicitly missing constructive extension beyond its
+five-profile exact lattice family, and the scoped A--D recovery requirement.
+
+JZ1--JZ11 substitute that premise: ONE off-shell compiler rounds the whole
+small original cold-jet functional to the paid radial identity, retaining
+all horizontal prepared jets and every independent comparison occurrence.
+Its branch test is a computable weighted full-source bound q_h, with the
+actual physical link Jacobian and original norm. Overlapping strict tests
+q_h<tau_h and q_h>tau_h/2 halt for every input; no Einstein membership test
+or equality oracle is used. Both branches are admitted.
+
+The rounded operator is EXACTLY the old EO endpoint on all columns even
+when the original cold jet is small and nonzero. Therefore the existing
+full-clock, independent four-leg, faithful-plane and canonical-old pair
+identities give an exact finite H+J comparison-source zero. Normal and
+causal reactions remain their original equations, not free rows discarded
+by declaration. The actual gain is NG17 with the true corner/rank/history.
+
+The global step uses the literal local CAR/plaquette/difference stencil.
+Its finite local Laurent expansion and the owned weak consistency for ALL
+backgrounds imply strong Euler consistency by the fundamental lemma.
+Physical link coefficients carry h^3 and their coordinate bounds carry h;
+coframe/scalar coefficients carry h^4. This gives a full weighted norm
+bound, not an extrapolation from smooth tests. For bounded, possibly rough
+PF weights the reporter remainder is O(epsilon_h/h), still O(h) under the
+original epsilon_h<=C h^2. No extra PF smoothness or new UV norm is assumed.
+
+The geometry debt is paid independently. Exact shared-reference calibration
+makes -D c_star/gamma_h independent of delta. The current-field geometric
+marginals and their actual decoder bounds are uniform in delta. Choose a
+positive smaller delta inside the old PC14--PC19 reference bracket so that
+C_mark,h gamma_h tau_h/a_min<=h, preserving epsilon, Lambda and the matter
+ratio. Actual centre/interpolation errors have their separate budgets; a
+Neumann correction retains the full field right lift.
+
+With tau_h=4(B_h+h), the same off-shell rule necessarily takes its exact-zero
+branch on samples of EVERY computable regular Einstein--two-CAR solution
+in the declared chart. Their actual decoded fields and full marked jets
+converge to that solution. Paid inverse completion before the next births
+gives ONE fixed-initial retained tower. Conversely every regular limit of
+exact roots in this same family solves the original equations by the common
+off-shell source bound. This is exact recovery of the native comparison
+source, not an assertion of exact lattice Euler zeros at noisy decoded data.
+
+Remaining assumptions/application: the original EO task graph, H+J master
+binding and its regular norm/collar remain. Incoming 7fd--7fm price defects
+and extra independent controls are preserved; their exact-root transports
+are not assumed. Full physical task/Cost--Info selection and the entire
+A--D contract still require their separate application and pinned acceptance.
+No new task, registry edge, promotion, Ready, retirement or merge.
+
+Smallest decisive check: portable rational whole-functional rounding
+fixture, 75 exact conditions, including all independent old-correlated
+rows and hostile norm controls. Normal and optimized warnings-as-errors
+runs are byte-identical. Checker SHA256:
+b8c1aa2407642bea5cba0ebe0b43ca50e9ebe3d5a92ca5209bec165e20ee833b.
+Executed receipt SHA256:
+70beca3b31e8da1341fc7759e44ea79732d982011446e96d0c2759575e3daa27.
+The general theorem, norm upgrade and native-clock application are analytic;
+the fixture is not a substitute for them. The existing assembly template
+was consumed without claiming independent acceptance or discharge.
+
+Final extracted-check replay matches the published receipt hash. Work, agent,
+assembly and whitespace guards pass; assembly remains 98 results / 22
+obligations / 5 discharged, scientific_promotion=false.
