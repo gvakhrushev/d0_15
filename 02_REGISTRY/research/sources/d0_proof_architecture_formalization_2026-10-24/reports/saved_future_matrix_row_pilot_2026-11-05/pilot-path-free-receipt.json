@@ -1,0 +1,17 @@
+{
+  "axiom_footprint": "invalid: diagnostic includes sorryAx due to preceding elaboration errors",
+  "cpu_affinity_limit": false,
+  "diagnostics": [
+    "maximum recursion depth while elaborating both matrix array literals",
+    "nested array indexing syntax error",
+    "native_decide could not evaluate due to preceding errors"
+  ],
+  "elapsed_seconds": 64.031,
+  "exit_code": 1,
+  "job_memory_limit_bytes": 3221225472,
+  "kind": "one-row-Lean-numerical-matrix-pilot",
+  "pilot_sha256": "2b95b21030cb794436abc6361c4524bd38f0cbaece04b6367608ce888c06212d",
+  "raw_log_sha256": "1a3bd88eb5fd00dcc7feada68747e7aecd2cd8c66c986d58d73866d0d58393ad",
+  "scope": "No valid theorem, no source-to-Lean or complex bridge; cached dependency environment",
+  "status": "failed"
+}
