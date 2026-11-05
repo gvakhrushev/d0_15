@@ -25,6 +25,7 @@ import D0.Algebra.FiniteWeightedAdjoint
 import D0.Algebra.GaloisComposite
 import D0.Algebra.GaloisPhiNontrivial
 import D0.Algebra.GrowingClockFrame
+import D0.Algebra.GrowingClockStages
 import D0.Algebra.HurwitzLocalBoundary
 import D0.Algebra.IsometricClockDeterminant
 import D0.Algebra.MovingProjectorCalculus
