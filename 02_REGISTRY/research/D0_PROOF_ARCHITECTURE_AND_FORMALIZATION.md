@@ -17858,3 +17858,34 @@ W, the analytic boost, source numerical root and positive branch at tolerance
 controls and a negative-branch control pass by rejection. The script requires
 NumPy, SciPy and SymPy. #334 remains the scientific owner, and
 `GR_closed=false`; a final integration build on this added module remains due.
+
+
+### Fail-closed pinned-source operational failures
+
+`tools/proof_architecture.py` now distinguishes a confirmed locally absent
+commit/path from an operational failure while reading a pinned source. It
+checks the commit and tree, validates the returned entry, type, size and blob
+bytes, and does not cache a timeout, launch error, corrupt/missing object or
+malformed Git response as `external_reference_only`. A verified mismatching
+blob remains `pin_mismatch`; oversized blobs get their own
+`pinned_source_too_large` status. Git replacement objects and lazy fetching
+are disabled for this check. Operational failures raise a diagnostic error
+and cannot turn an unavailable source into accepted evidence.
+
+This is a change in local evidence interpretation, not a retroactive rewrite
+of receipts or scientific status. On the current local object store, 22 unique
+references previously reported external in the `fbbeb02b` producer receipt
+now fail transiently because blob objects are unavailable; these occur in all
+50 cases, with 1929 repeated receipt rows. The remaining 6 previously external
+references retain that local status. This observation does not establish
+which event caused the failed historical compaction or verify discovery. Old
+receipts are not byte-for-byte compatible where a source is unavailable or too
+large. A single injected timeout can reproduce the same class of page
+mismatch, but it does not establish the historical cause.
+
+On the pinned implementation 12 focused tests, 23 existing source-page tests
+and two v3 integration tests passed; independent hostile review included a
+corrupt commit, redirected Git environment and partial clone. The no-lazy-fetch
+control was exercised with the installed Windows Git 2.52. Full replay and
+independent discovery were not rerun for this patch. This status describes
+local Git availability, not authoritative global nonexistence or C0 acceptance.

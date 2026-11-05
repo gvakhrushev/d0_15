@@ -1408,55 +1408,90 @@ def _source_references(lines: list[str],
     return references[:12]
 
 
+class PinnedSourceTransientError(ValueError):
+    """A pin could not be checked; this is not evidence of its absence."""
+
+
 def _read_pinned_source(root: pathlib.Path, reference: dict[str, Any],
                         cache: dict[tuple[str, str, str], tuple[str, bytes | None, str | None]]) -> tuple[str, bytes | None]:
-    """Read only a safely typed, exact same-repository commit/path/blob pin."""
+    """Read exact pinned bytes, distinguishing confirmed local absence from failures."""
     commit, path, blob = (reference.get("commit"), reference.get("path"), reference.get("blob"))
     key = (str(commit or ""), str(path or ""), str(blob or ""))
     if key in cache:
         status, cached_bytes, derived_blob = cache[key]
-        if derived_blob and blob is None:
+        if derived_blob and blob is None and status == "pinned_snapshot":
             reference["blob"] = derived_blob
             reference["pin_complete"] = True
         return status, cached_bytes
     if (not re.fullmatch(r"[0-9a-f]{40}", str(commit or ""))
             or (blob is not None and not re.fullmatch(r"[0-9a-f]{40}", str(blob)))
             or not isinstance(path, str) or not path or "\\" in path or ":" in path
+            or any(ord(ch) < 32 or ord(ch) == 127 for ch in path)
             or pathlib.PurePosixPath(path).is_absolute()
             or ".." in pathlib.PurePosixPath(path).parts
             or pathlib.PurePosixPath(path).as_posix() != path
             or pathlib.PurePosixPath(path).suffix.casefold() not in {".md", ".lean", ".json", ".csv", ".py", ".txt", ".toml"}):
         cache[key] = ("citation_only", None, None)
         return "citation_only", None
-    try:
-        git_env = os.environ.copy()
-        git_env["GIT_NO_LAZY_FETCH"] = "1"
-        oid = subprocess.run(["git", "rev-parse", f"{commit}:{path}"], cwd=root,
-                             capture_output=True, text=True, encoding="utf-8", timeout=5,
-                             env=git_env)
-        if oid.returncode:
-            cache[key] = ("external_reference_only", None, None)
-            return "external_reference_only", None
-        resolved_blob = oid.stdout.strip().lower()
-        if blob is not None and resolved_blob != blob.lower():
-            cache[key] = ("pin_mismatch", None, resolved_blob)
-            return "pin_mismatch", None
-        if blob is None:
-            reference["blob"] = resolved_blob
-            reference["pin_complete"] = True
-        data = subprocess.run(["git", "cat-file", "blob", f"{commit}:{path}"], cwd=root,
-                              capture_output=True, timeout=5, env=git_env)
-        if data.returncode or len(data.stdout) > 4_000_000:
-            cache[key] = ("external_reference_only", None, None)
-            return "external_reference_only", None
-        cache[key] = ("pinned_snapshot", data.stdout, resolved_blob)
-    except (OSError, subprocess.SubprocessError):
+    git_env = _receipt_git_env()
+
+    def run(stage: str, args: list[str], **kwargs: Any) -> subprocess.CompletedProcess:
+        try:
+            result = subprocess.run(args, cwd=root, capture_output=True, timeout=5,
+                                    env=git_env, **kwargs)
+        except (OSError, subprocess.SubprocessError) as exc:
+            raise PinnedSourceTransientError(f"pinned source Git {stage} unavailable for {commit}:{path}") from exc
+        if result.returncode:
+            raise PinnedSourceTransientError(f"pinned source Git {stage} failed for {commit}:{path}")
+        return result
+
+    # A missing path in a readable tree is different from a missing/corrupt
+    # tree: `cat-file --batch-check commit:path` alone prints `missing` for both.
+    check = run("commit lookup", ["git", "cat-file", "--batch-check"],
+                input=(commit + "\n").encode("ascii"))
+    if check.stdout == (commit + " missing\n").encode("ascii"):
+        if check.stderr:
+            raise PinnedSourceTransientError(f"pinned source Git commit lookup reported an error for {commit}:{path}")
         cache[key] = ("external_reference_only", None, None)
-    status, cached_bytes, derived_blob = cache[key]
-    if derived_blob and blob is None:
-        reference["blob"] = derived_blob
+        return "external_reference_only", None
+    header = re.fullmatch(rb"([0-9a-f]{40}) ([a-z]+) ([0-9]+)\n", check.stdout)
+    if not header or header.group(1).decode("ascii") != commit:
+        raise PinnedSourceTransientError(f"pinned source Git commit lookup returned malformed data for {commit}:{path}")
+    if header.group(2) != b"commit":
+        cache[key] = ("external_reference_only", None, None)
+        return "external_reference_only", None
+    listing = run("tree lookup", ["git", "--literal-pathspecs", "ls-tree", "-l", "-z", commit, "--", path])
+    if not listing.stdout:
+        cache[key] = ("external_reference_only", None, None)
+        return "external_reference_only", None
+    entries = listing.stdout.split(b"\0")
+    if len(entries) != 2 or entries[1]:
+        raise PinnedSourceTransientError(f"pinned source Git tree lookup returned malformed data for {commit}:{path}")
+    match = re.fullmatch(rb"([0-7]{6}) ([a-z]+) ([0-9a-f]{40})\s+([0-9]+|BAD|-)\t([^\0]+)", entries[0])
+    if not match or os.fsdecode(match.group(5)) != path:
+        raise PinnedSourceTransientError(f"pinned source Git tree lookup returned an unexpected entry for {commit}:{path}")
+    resolved_blob = match.group(3).decode("ascii")
+    if blob is not None and resolved_blob != blob:
+        cache[key] = ("pin_mismatch", None, resolved_blob)
+        return "pin_mismatch", None
+    if match.group(2) != b"blob":
+        cache[key] = ("pinned_source_not_blob", None, resolved_blob)
+        return "pinned_source_not_blob", None
+    size = match.group(4)
+    if not re.fullmatch(rb"[0-9]+", size):
+        raise PinnedSourceTransientError(f"pinned source Git blob size was malformed for {commit}:{path}")
+    byte_count = int(size)
+    if byte_count > 4_000_000:
+        cache[key] = ("pinned_source_too_large", None, resolved_blob)
+        return "pinned_source_too_large", None
+    data = run("blob read", ["git", "cat-file", "blob", resolved_blob]).stdout
+    if len(data) != byte_count or hashlib.sha1(b"blob " + str(len(data)).encode("ascii") + b"\0" + data).hexdigest() != resolved_blob:
+        raise PinnedSourceTransientError(f"pinned source Git blob bytes do not match for {commit}:{path}")
+    if blob is None:
+        reference["blob"] = resolved_blob
         reference["pin_complete"] = True
-    return status, cached_bytes
+    cache[key] = ("pinned_snapshot", data, resolved_blob)
+    return "pinned_snapshot", data
 
 
 @functools.lru_cache(maxsize=256)
