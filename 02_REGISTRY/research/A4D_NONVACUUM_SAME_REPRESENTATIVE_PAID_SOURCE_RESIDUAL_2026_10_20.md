@@ -148328,6 +148328,2460 @@ assembly edge, lifecycle or raw216 contract is modified. Final
 affected work/protocol/assembly/repository/whitespace guards are
 run on these final files before publication. GR_closed=false.
 
+## 7fp. Complete local readout reduction and the exact price/admission obstruction
+
+5 November 2026. Existing #334 / constitutive / native-programme-v1.
+Input: `d957be6054102077940ad93a8f403d4f23a1fa0b`.
+Phase: native realization / final composition. Consumer: §7fo's new
+pre-sign readout equations and its full-price/weighted-transfer gate,
+under the unchanged scoped A--D contract. No new geometry, action,
+task, field root or registry acceptance is introduced.
+
+The previous checkpoint supplied an actual paid event writer and its
+complete covectors, but left its independent readout rows unresolved.
+This application varies the WHOLE already classified four-dimensional
+real code-valid domain, then includes the genuinely different existing
+pre-reader preparation slot. It solves these five local feedback rows
+analytically, keeps the complete clock error and actual gain, and tests
+the resulting section against the specified terminal price and the
+original informative response. It does not substitute one chosen angle
+for the full local domain.
+
+There is a constructive positive result. Write s²=1-p⁴. A fixed actual
+target preparation O_+v=|+> and a fixed code-valid U_+ give
+
+    C_proper=s C_W,
+    D_local C_proper=0 on all FIVE local directions,
+    D J_new=eta_+ D J_old,
+    eta_+=s²[(1-z)+zc²]/[(1-z)+zs²c²]>0               (JR0)
+
+on the stated scalar old-corner chart. The first two statements are full
+matrix identities even with independent forward/backward W,V. Included
+old/preparation sources are transported, including their nonzero off-shell
+values. The five-control section is constant in the field and is a
+saddle with an explicit mixed negative direction. Positive native words
+approximate its targets; every finite postword remains exactly code-valid.
+Actual gain, finite differences, complete heat and right-lift errors are
+retained. Neither an exact finite Golden pole nor an exact native root is
+asserted.
+
+Two decisive compatibility tests prevent false closure. On EVERY
+unscreened joint-feedback critical point of this five-control family,
+
+    q_*=p²/(1+p²),
+    ||D_code P_CQ||_(operator-dual)=2/sqrt(5)>0,       (JR1)
+    q_original(Q)-q_*=p⁴/(1+p²)+p³Q>0.               (JR2)
+
+Thus the new stationary code is field-independent and does not implement
+the old informative response p²+p³Q. The specified complete terminal CQ
+component is not source-neutral on this master section. This is a
+same-history source mismatch with a real control witness; it is not an
+assertion that CQ must be added to H+J. The original Book master remains
+one price, and physical selection of a CQ/Info convention remains distinct.
+
+For the narrower canonical-preparation four-control domain, a certified
+rational collar around the ACTUAL original Q0=4 kappa512 p⁷ gives the
+uniform terminal gradient gap >6/25. No event probability or root is fitted.
+The full critical-set classification and actual normalized estimates
+exclude using C->0 or a vanishing pointer gain to evade either result
+within the declared heat-small kappa regime.
+
+Parent substitution: the local feedback nuisance section is now computed,
+not assumed. What it does NOT supply is the original informative-task
+transport or a common stationary section of the two price components.
+The shortcut 'stationarize the encoder, then call the remaining terminal
+component neutral' fails on the UNSCREENED critical set of the stated
+local domain and its proved heat-small normalized limit. Screened common
+stationary points are not excluded by that statement. The remaining
+positive work is the actual complete physical price/weighted map and its
+constraint reactions on an informative admitted task. A further isolated
+encoder angle, endpoint root or relabelled entropy cannot substitute for
+that calculation. `GR_closed=false`; the full A--D objective stays active.
+
+
+### 7fp.A. Full local code-valid feedback section on the actual pre-sign history
+
+5 November 2026. Existing #334, input `d957be605`. Bounded source application.
+Consumer: the newly open local readout-control rows of §7fo.D, using the
+actual paid pre-sign operation rather than the earlier XF trace objective.
+No new action, field root, native primitive or physical price selection.
+Sections 1–7 first solve the four-dimensional POST-READER code domain.
+Section 8 then solves the enlarged FIVE-control local domain, explicitly
+including the independent before-reader pointer rotation. The stationary
+section is a saddle of feedback, not a selected minimum or whole-price law.
+
+#### 1. One actual operator and the complete local domain
+
+Use §7fo.B–D's paid pre-sign reader. All old/bank columns, its independent
+forward and backward occurrences, and its canonical born pointer r and
+tail t remain. Before the local code unitary the complete endpoint is
+
+    W tensor P_+ + V tensor P_-,
+    W=A_b* Z A_f, V=A_b* A_f, P_±=(I±X_r)/2.             (JS1)
+
+Replace only the subsequent local encoder by U on the actual r,t carrier.
+Canonical constants are p=phi^-1, a=sqrt(p), v=(a,p), w=(-p,a),
+j=I_r tensor v_t and j_perp=I_r tensor w_t. Let z0=|11>,
+S=z0-perp, P_S=I-z0 z0^T, and xi=jv=(p,ap,ap,p²).
+The complete all-initialized-input code-valid class is
+
+    C={U in SO(4): z0^T Uj=0}.                         (JS2)
+
+This is exactly §7fn.CV3's compact smooth four-dimensional manifold.
+The constraint has rank two, not merely a zero probability at one pointer
+state. No sharp/projective return-effect constraint is added. In particular
+U includes pointer rotations, the dark completion and unsharp directions.
+The output code space is span{00,01,10}; 11 remains on the full carrier.
+
+On the original matched scalar proper-corner chart let
+C_W=c I_r0, C_V=I_r0, c=1−2Q. This is a statement about the actual proper
+physical input compression; it does not make the larger SAM table scalar.
+The full rank-r0 compression after U is C_U I_r0, where
+
+    C_U=xi^T U x_c, x_c=j h_c, h_c=(cP_++P_-)v,
+    R=v^T P_+v=1/2+ap,
+    n(c)²=||x_c||²=R c²+1−R,
+    s²=||P_S xi||²=1−p⁴.                              (JS3)
+
+For general independent old/current variations retain instead
+
+    C_proper(U)=alpha(U) C_W+beta(U) C_V,
+    alpha(U)=xi^T UjP_+v, beta(U)=xi^T UjP_-v.           (JS4)
+
+No independent leg is equated to its matched value before differentiating.
+
+#### 2. Global local maximum and explicit smooth section
+
+For every U in C, Ux_c belongs to S and has norm n(c)>0. Cauchy–Schwarz
+therefore gives |C_U|<=s n(c), with equality on the positive branch exactly
+when
+
+    U x_c/n(c)=y, y=P_S xi/s.                          (JS5)
+
+Such matrices exist in SO(4), not only O(4). Here is an explicit section.
+Let J90=[[0,−1],[1,0]], and define the orthonormal input frame
+
+    e1=j h_c/n, e2=j J90 h_c/n,
+    e3=j_perp (1,0), e4=j_perp (0,1).
+
+Its determinant is −1: [j e0,j e1,j_perp e0,j_perp e1] has determinant −1
+and the first-two-column change is an orientation-preserving rotation.
+Fix the output vectors
+
+    b=(0,1,−1,0)/sqrt(2),
+    d=(−sqrt(2)ap, p/sqrt(2), p/sqrt(2),0)/s.
+
+In S's ordered coordinates (00,01,10), d=y cross b. Hence
+[y,b,d,z0] has determinant +1. The matrix
+
+    U_*(c)=[y,b,d,−z0] [e1,e2,e3,e4]^T                 (JS6)
+
+has determinant +1, is orthogonal, maps j's whole image into S, and attains
+JS5. It is real analytic for every real c because n²>=1−R>0. In particular
+there is no choice of an Einstein residual or numerical root in this
+construction: c is the original measured-return coordinate.
+
+The maximizing fibre has dimension two. Once e1 maps to y, e2 may map to
+any unit vector in S intersect y-perp (one circle), and the two unused
+columns have an orientation-compatible SO(2) completion (one circle).
+Every point of this fibre is stationary in ALL four tangent directions
+of C. This does not assert an isolated or nondegenerate full-price minimum.
+The negative-C branch is another feedback minimum; fix JS6 consistently.
+
+For resource accounting, the explicit section satisfies
+
+    ||dU_*/dc||=sqrt(R(1−R))/n²=p³/(2n²),
+    ||dU_*/dQ||=p³/n².                                (JS7)
+
+Indeed only the angle of h_c/n rotates; its angular derivative has
+magnitude |det(h_c,dh_c/dc)|/n². This also supplies effective higher
+continuity bounds on every declared compact Q collar.
+
+#### 3. Exact local Euler reduction and the surviving field source
+
+Retain the original rank-r0 determinant, fixed z in (0,1), and fixed
+canonical old-past hypothesis. Write
+
+    d_*=(1−z)+z s² n²,
+    J_*=-r0 log d_*, C_*=s n>0.                        (JS8)
+
+For any U in C the proper feedback is
+J(U)=-r0 log[(1−z)+z C_U²]. Thus JS5 globally minimizes this feedback on
+the entire local class C. At U_*(c), every one of its four independent
+local tangent first sources is exactly zero. No individual pointer,
+code-zero tail, dark-column or unsharp row has been frozen.
+
+Differentiating the explicitly reduced expression gives
+
+    D J_* = [4r0 z s² R c/d_*] DQ.                    (JS9)
+
+On a compact original chart 0<=Q<=Qmax<1/2 the coefficient is strictly
+positive, with a computable lower bound; c>=1−2Qmax>0 is essential to
+this orientation and nonzero gain. At c=0 the field coefficient vanishes,
+and beyond it the sign changes. No positive-gain theorem is asserted
+across that boundary.
+
+The dependence of U_* on Q does not create a hidden feedback source:
+D_U J vanishes on the entire tangent of C, so its envelope term
+(DU_*)*D_U J is exactly zero. Equivalently,
+
+    alpha_*=s cR/n, beta_*=s(1−R)/n,
+    C_*=alpha_* c+beta_*;
+    c Dalpha_*+Dbeta_*=0.                             (JS10)
+
+The last equality is the direct envelope cancellation. It is not obtained
+by treating U_* as field-independent.
+
+#### 4. All included independent current/preparation rows
+
+At the selected point, for an arbitrary matrix-valued old/current tangent,
+JS4 gives, including an arbitrary tangent variation of U within C,
+
+    ReTr D C_proper
+      =(s/n) ReTr[cR D C_W+(1−R)D C_V].               (JS11)
+
+The U term is zero at the matched scalar corner. Hence the full included
+current feedback differential, with no scalar/skew assumption on DC_W, is
+
+    D J_new=−[2z s²/d_*]
+                    ReTr[cR DC_W+(1−R)DC_V].          (JS12)
+
+The original current feedback at this point is
+
+    D J_old=−[2zc/d_old] ReTr DC_W,
+    d_old=(1−z)+zc².
+
+Whenever the actual tangent map supplies ReTr DC_V=0, there is an exact
+positive source transport
+
+    D J_new=eta_* D J_old,
+    eta_*=s² R d_old/d_*>0.                           (JS13)
+
+For each included independent unitary forward/backward occurrence,
+D(A_b*A_f)=X_f−X_b is skew at matching. Its proper compression has zero
+real trace. A normalized moving input embedding contributes zero to the
+compression of identity as well. The same premise must actually hold for
+any included old coordinate; arbitrary old Gram changes are not covered.
+
+At the original CD3 primary centres, the four old independent preparation
+rows have skew DC_W. JS12 therefore preserves their exact feedback zeros,
+as well as the stated normalized-input/old-canonical rows. Off shell,
+JS13 transports their real nonzero values; it does not declare a global
+old-preparation stationary section. The nonscalar SAM/radial response in
+EO NG7–11 and its physical field lift remain. Only the newly solved FOUR
+local code controls are stationary on every point of this scalar-corner
+chart. Independent initial births/cuts, scene, beta, z, arbitrary past and
+additional global operations retain their equations or actual task guards.
+
+For a chosen family U_*(Q(Y)), JS11–13 include its envelope term exactly.
+If a physical old/current direction also changes Q, its U_* contribution
+still vanishes, but its genuine DC_W/DC_V components are retained.
+
+#### 5. Actual gain, full heat and unchanged source consumer
+
+With the owned event calibration DQ=g_h DI_h+e_h, the target feedback gain
+is
+
+    Gamma_*=4r0 z s² R c g_h/d_*=eta_* Gamma_old>0.      (JS14)
+
+This gain is frozen at the central comparison. It normalizes DJ, never
+D(J/Gamma). The same convention and physical/material right lift as the
+original EO source are required. On all included old/current directions
+JS13 preserves the original normalized feedback source; on the four new
+code directions it appends zero. It is not a new comparison between an
+unrelated terminal CQ source and H+J.
+
+Build the actual unequal-fibre growing clock with all native births,
+encoder calls, padding, final gate and required suffix readers. The endpoint
+need not be a reflection. The owned §7eo.H CL estimate used by HPS6–9 is
+
+    Z=359D+2 Tr_(33D) exp(−beta Delta_0),
+    ||DH||_*<=A_L C_h,
+    A_L=4/(359 beta L) sum_(k>=L) k a_k.                (JS15)
+
+All 425D modes remain. The declared norm constant C_h includes every
+independent occurrence, the four local tangent directions, the full
+material/right lift and the derivative JS7 of the chosen section. In a
+field variation of the new endpoint, for example, the direct bound is
+||D U_total||<=max(||DW||,||DV||)+||DU_*||. No field-dependent code derivative
+is dropped from the thermal term. Explicitly, a full joint residual bounded
+by epsilon pulls back to at most (1+||DU_*||)epsilon before the actual
+physical right lift; the selected section does not justify omitting this
+factor for heat or native finite errors.
+
+After all source/mark comparison targets and actual finite words have been
+fixed, append the same m genuine CX² pairs before the actual final gate.
+Their full endpoint, feedback, gain and code validity are unchanged; their
+clock has L_m=L+2m and D_m=D+2m d. The factorial CL bound makes
+
+    A_(L+2m) C_h(m)/Gamma_act -> 0                     (JS16)
+
+for the actual fixed-h constants, including the at-most-linear count of
+independently varied primitive occurrences. If padding gates are free,
+use only the already proved two-spectator support or retain their additional
+feedback rows. No suppression of a free scene/z/beta row is inferred.
+No actual finite heat row or exact finite joint stationary word is asserted.
+
+If the original H+J source rather than J alone is the stated consumer,
+keep BOTH thermal remainders: the source discrepancy is bounded by
+||DH_new||/Gamma_new+||DH_old||/Gamma_old, in addition to the original
+report/decoder error and actual finite comparison error. Consume the owned
+EO/GENERAL source theorem only on its actual map and norm. Its recovery
+conclusion gains the four local code rows, solved in kappa after JS16;
+it does not acquire unproved old/preparation or complete-price assumptions.
+
+#### 6. Exact-valid native implementations and finite-source errors
+
+§7fn.CV9 supplies positive native approximants to EVERY U in C, not merely
+a dense unrestricted SO4 compiler with approximate validity. Factor
+U=L E0(O_theta tensor I), L in SO(S). The positive echoes rotate the
+00/10 and 00/01 planes while fixing 11 exactly, and even pointer powers
+are dense. The resulting finite words are exactly code-valid on every
+initialized, possibly entangled pointer input. Their last gate is CX,
+the preceding stage is square, and their odd lengths can be completed to
+one finite comparison layout by paid CX² pairs. No rate is inferred from
+Golden-power density. This paragraph consumes the operator/compiler part
+of CV9 only, not the different XF thermal gain CV10–13.
+
+At a central actual native U_n, define computable coefficients
+
+    alpha_n=xi^T U_n jP_+v, beta_n=xi^T U_n jP_-v,
+    C_n=alpha_n c_n+beta_n,
+    Gamma_n=4r0 z alpha_n C_n g_h/
+                         [(1−z)+z C_n²].              (JS17)
+
+Here c_n is the certified actual scalar proper corner where available.
+Require/verify alpha_n C_n>0 and keep Gamma_n frozen. At the exact section
+alpha_* C_*=s²Rc>0, so this is an open computable collar. For fixed c,
+||U_n−U_*||<=delta implies |alpha_n−alpha_*|<=sqrt(R)delta and
+|C_n−C_*|<=n delta. Retain the independent actual c/mark errors too. A
+non-scalar original compiler-corner defect is part of the original source
+error budget; JS17 must not label that defect an exact scalar identity.
+If only a target scalar corner is certified, use its positive calibration
+with the separately proved actual/target source coefficient error, rather
+than claiming an unavailable exact native derivative.
+
+For any two actual cold contractions A,B on the SAME rank-r0 proper cut,
+
+    |J(A)−J(B)|<=L_J ||A−B||,
+    L_J=2r0 z/(1−z).                                  (JS18)
+
+This follows from A*A−B*B having norm at most 2||A−B|| and the logarithm's
+integral differential on matrices bounded below by (1−z)I. Thus native
+endpoint/cut errors epsilon_± on a target +/- pair contribute at most
+
+    L_J(epsilon_++epsilon_-)/(2|t_alpha| Gamma_n)        (JS19)
+
+before the declared finite-basis/right-lift factor. Use actual endpoint
+and generated-cut error, including all primitive occurrences, not a
+per-call error mislabeled as a total error. The finite heat pair satisfies
+the original same-layout CL inequality
+|H_+−H_-|<=A_L ||W_can,+−W_can,-||; divide by the same 2|t_alpha|Gamma_n.
+Actual price-reading errors require the same normalization.
+
+For each fixed h/prefix and finite full physical/control test catalogue:
+choose a regular local chart on C with all four tangent directions and
+save its basis norms; choose steps small enough for the target source
+modulus after gain normalization; choose exact-valid finite native words
+whose total cold/endpoint/mark errors make JS19 small; preserve their
+actual common marks and layout; finally choose padding using JS16.
+At each finite word FN reactions apply on the fibre of its ACTUAL complete
+logical tuple. An approximate continuum target is not made an exact
+finite FN target by notation. The outer h diagonal is taken only after
+these actual constants exist. There is no derivative of a word index.
+
+The resulting local-code conclusion on the declared field/current map is
+
+    (E_included-current, E_local-code)/Gamma_n
+       -> (the owned normalized current source, 0_4). (JS20)
+
+Original decoder/source errors, the two thermal remainders when needed,
+and every source-consistency/reverse premise remain. The new positive
+result is a computed stationary section for the FULL local code-valid
+class on the actual pre-sign history, including its moving-section envelope.
+It does not select the whole Book Cost–Info law, solve arbitrary global
+programme controls, or identify this local feedback minimum with the
+separate terminal CQ price. GR_closed=false.
+
+
+#### 7. Exhaustive local feedback critical points and the zero-cold escape test
+
+This classification concerns the same C, not a new action or root search.
+At fixed c, set M=s n>0 and u=Ux_c/n in the unit sphere of S. The map
+U->u is onto and its fibre has dimension two. Since C_U=M y^T u, in the
+ambient operator-norm tangent metric the exact dual norm is
+
+    ||D_U C_U||_*=sqrt(M²−C_U²).                       (JS21)
+
+The upper bound follows by differentiating a unit vector. Equality is
+attained by a left rotation in SO(S): rotate u towards the projection of
+y onto u-perp, with operator norm one, and fix z0. This is a genuine
+allowed local direction. Any declared coordinate/native test norm must
+retain its actual equivalence/right-lift constant when consuming JS21.
+
+The full local J differential is −2r0 z C_U/d_U times D_U C_U, where
+d_U=1−z+z C_U². Consequently its complete critical set is precisely
+
+    C_U=0, or C_U=+M, or C_U=−M.                       (JS22)
+
+The first set is a local feedback maximum in the C direction and has
+zero feedback field gain. It is not a nonzero-gain alternative to JS6.
+At either signed maximum the same coefficients satisfy alpha_U C_U=s²Rc;
+the negative branch has the same positive field gain when c>0.
+
+More strongly, wherever alpha_U C_U is nonzero, normalize by the actual
+feedback calibration Gamma_U=4r0 z alpha_U C_U g_h/d_U. Exact cancellation
+of the small cold factor gives
+
+    E_U J/Gamma_U=−D_U C_U/(2 alpha_U g_h),
+    ||E_U J/Gamma_U||_*
+       =sqrt(M²−C_U²)/(2|alpha_U|g_h),
+    |alpha_U|<=s sqrt(R).                             (JS23)
+
+Thus normalized nuisance smallness epsilon forces
+
+    M²−C_U² <=4 s² R g_h² epsilon².                   (JS24)
+
+If the normalized heat/finite residual is epsilon_H and the full normalized
+local master row is epsilon_B, use epsilon=epsilon_B+epsilon_H. Approaching
+C_U=0 cannot produce a normalized local stationary branch in this regime:
+at fixed h the JS23 lower bound tends to n/(2sqrt(R)g_h)>0. A mesh-uniform
+conclusion retains the actual bound on g_h and the norm equivalence
+constants; none is discarded merely because the unnormalized J row tends
+to zero. Exact C=0, or a deliberately heat-dominated calibration, is a
+different source route and is not ruled out by this statement.
+
+For use by the separate terminal-price lane: the positive and negative
+maximizing fibres have the same achievable code-probability range. Their
+initialized images are respectively (y,b) and (−y,b) on the input basis
+(e1,e2); replacing b by −b identifies all squared code probabilities.
+Therefore a verified separation between terminal-CQ critical points and
+the positive maximizing fibre applies to every nonzero-gain exact local
+feedback critical point. By continuity on compact C it also has a finite
+neighbourhood margin, once the actual spectral/probability gap is certified.
+This would disprove a demand that that known terminal component separately
+vanish on the feedback section. It would NOT disprove joint stationarity
+of a genuinely bound complete price: independent real components can
+balance. The full Book weight law must determine that balance.
+
+
+#### 8. Constructive stationary section for ALL FIVE local controls
+
+##### 8.1 The genuinely enlarged domain and the failed canonical section
+
+The pre-reader slot already displayed in §7fo.C PPS13 is independent of
+the four code controls. Insert O_beta AFTER the canonical pointer birth
+and BEFORE the reader, keeping the original physical input/cut canonical.
+Put b_beta=O_beta v in JS1's ket; the cold bra remains xi=jv. The full
+local domain is the product SO(2)_pre times C_post. Physically replacing
+the initial birth vector and moving its cut is a different variation and
+would also change xi; it is not substituted for this real gate slot.
+
+For arbitrary b=b_beta the preceding code maximum becomes
+
+    R_b=b^T P_+ b,
+    n_b²=c² R_b+1−R_b,
+    C_max²=s² n_b²,
+    d_b=1−z+z C_max².                                  (JS25)
+
+The feedback envelope derivative in this new slot is
+
+    D_beta J_*=r0 z s²(1−c²) D_beta R_b/d_b.             (JS26)
+
+At the former canonical b=v, R'_b=(a+p)(a−p)=p³. Therefore for 0<Q<1/2,
+
+    E_pre J/Gamma_*=p³(1−c²)/(4R c g_h)>0.             (JS27)
+
+The four-control section by itself is not five-control stationarity. Its
+moving encoder contribution is zero by stationarity and cannot cancel
+JS27. A canonical birth alone does not forbid a subsequent physical G_r.
+
+##### 8.2 Exact classification, then one explicit positive-gain section
+
+Fix 0<c<1. At a joint critical point, the four post-code rows first imply
+C_U=0 or C_U=±s n_b, by the same sphere proof as JS21–22. On a nonzero
+branch the independent pre-row then requires R'_b=0, hence R_b=0 or1.
+Thus the complete critical set is
+
+    C_U=0; or C_U=±s n_b with R_b in {0,1}.             (JS28)
+
+C=0 has zero feedback field gain. R_b=0 likewise has alpha=0, so its
+feedback field channel is screened. ALL nonzero-gain joint critical points
+therefore have R_b=1 and C_U=±s c. This is an exhaustive statement on the
+five-dimensional local domain, not on arbitrary larger programme controls.
+The c=1 endpoint is degenerate; the strict classification uses 0<c<1.
+
+Choose b_+=(1,1)/sqrt(2), b_perp=J90 b_+. The fixed positive-orientation
+preparation rotation
+
+    O_+=[[cos beta_*,−sin beta_*],[sin beta_*,cos beta_*]],
+    cos beta_*=(a+p)/sqrt(2), sin beta_*=(a−p)/sqrt(2)    (JS29)
+
+satisfies O_+ v=b_+. Use the same fixed y,b_out,d from JS6 (b_out was
+called b there), and set
+
+    U_+=[y,b_out,d,−z0]
+             [j b_+,j b_perp,j_perp e0,j_perp e1]^T.    (JS30)
+
+Both frames have determinant −1, hence U_+ lies in SO(4) and C. In
+particular U_+j b_+=y and U_+j b_perp=b_out perpendicular to xi. The pair
+(O_+,U_+) is CONSTANT in the field on the entire c>0 chart. It solves all
+five local first rows after those rows have actually been varied. No
+Einstein residual, field-dependent selector or numerical root is used.
+The negative branch is obtained by replacing U_+ by −U_+, still in SO(4).
+
+##### 8.3 Strong full-matrix statement, including independent old preparations
+
+Because P_- b_+=0, the entire prepared input of JS1 lies in its W branch.
+The exact proper cold, before any scalar old-corner specialization, is
+
+    C_proper(O_+,U_+)=s C_W.                           (JS31)
+
+This holds for arbitrary independent W=A_b*ZA_f and V=A_b*A_f, every old
+input column and the actual generated proper embedding. The V term is
+absent by a computed input projection, not by tying the two legs together.
+
+In fact ALL FIVE local derivatives of C_proper itself are zero matrices
+at this fixed section. For a post-code tangent, delta(Uj b_+) lies in
+S and perpendicular to y, so xi^T delta(Uj b_+)=0; the V coefficient stays
+zero because P_- b_+=0. For the pre-tangent, b'_+=b_perp lies wholly in the
+minus-X eigenspace and xi^T U_+ j b_perp=xi^T b_out=0. Thus no assumption
+that C_W or C_V is scalar is needed for these five local J rows to vanish.
+This stronger neutrality does not assert equality of old/new feedback
+sources at an arbitrary nonscalar C_W.
+
+On the actual matched scalar proper chart C_W=cI, define
+
+    d_+=1−z+z s²c²,
+    J_+=−r0 log d_+,
+    D J_new=eta_+ D J_old,
+    eta_+=s²[(1−z)+zc²]/d_+>0,
+    Gamma_+=4r0 z s² c g_h/d_+=eta_+ Gamma_old.          (JS32)
+
+The current-source equality holds for every included old/preparation
+matrix variation DC_W. It needs no extra DC_V real-trace premise because
+JS31 is exact. Original skew preparation zeros are preserved at their
+centres; nonzero off-shell old/preparation sources are multiplied by eta_+,
+not declared zero. Arbitrary nonscalar old Gram, free initial cuts, z,
+scene and other enlarged controls retain their actual separate source.
+
+There is no field-dependent section envelope here: DO_+=DU_+=0. If a
+different moving maximizing completion is selected, its exact J envelope
+vanishes but its thermal/finite-error pullback still carries the saved
+factor 1+||D section||. The source theorem does not differentiate a price
+that was divided by Gamma.
+
+The word 'saddle' is a JOINT statement. With U_+ held fixed, a pure small
+pre-angle delta gives C=s c cos delta and raises J; it is not the negative
+direction. Let a left allowed SO(S) rotation through lambda mix y,b_out.
+The genuine two-control family has
+
+    C(delta,lambda)=s[c cos delta cos lambda
+                            −sin delta sin lambda].    (JS33)
+
+Along lambda=−delta, C=s[c+(1−c)sin²delta]>s c for small nonzero delta,
+so J decreases. Pure output rotation raises J. This proves the saddle
+without a Hessian scan. The negative reduced-preparation curvature in
+JS26 refers to re-optimizing U, rather than holding U fixed.
+
+##### 8.4 Actual native implementation, gain and all-five source budgets
+
+Approximate O_+ by an even positive G_r power in the actual before-reader
+slot. Approximate U_+ by §7fn.CV9's exact-code-valid positive family in the
+post-reader slot. Every finite postword remains valid for EVERY pointer
+input, so an approximate pre-angle introduces no invalid-code leakage.
+Neither exact b_+ nor exact U_+ is asserted to be a finite Golden word.
+All pre/post calls, new ages and the true final CX remain paid. Preserve
+original pre-encoder bank marks and their actual addresses; the old fixed
+E0 response p²I+p³E_f is not an additional guard on this enlarged task.
+Common finite lengths use actual positive CX² padding and FN reactions,
+not omitted calls or independent unaccounted padding equations.
+
+At a central finite pair O_n,U_n put b_n=O_n v and compute
+
+    alpha_n=xi^T U_n jP_+b_n, beta_n=xi^T U_n jP_-b_n,
+    C_n=alpha_n c_n+beta_n,
+    Gamma_n=4r0 z alpha_n C_n g_h/(1−z+z C_n²).          (JS34)
+
+On an actually certified scalar corner this is the true fixed-code field
+coefficient; verify alpha_n C_n>0. The target values are alpha_+=s and
+C_+=s c, so a strict c>=c_min>0 collar gives a computable positive margin.
+Keep the actual/target coefficient ratio and any original nonscalar-corner
+error exactly as in JS17; an unavailable exact native scalar identity is
+not manufactured by the normalization.
+
+If total operator errors are delta_pre and delta_post, then at the same
+c in (0,1), the proper-cold error is at most delta_pre+delta_post, plus the
+actual old processor and generated-cut error. Hence JS18–19 controls
+EVERY one of the five native finite differences. First vary all five
+coordinates in a regular chart of SO(2) times C, retaining its basis and
+physical lift constants. Choose actual steps, then total endpoint/cut/mark
+errors small relative to |t|Gamma_n/L_J, then compile all actual words
+and record their lengths, then choose common paid padding last. Use JS15–16
+for the full 425D heat, with all five tangent norms and original old rows.
+The fixed chosen section has no extra field Jacobian. Price-reading
+errors and both thermal remainders when consuming an old H+J theorem
+retain their previous normalized budgets. No exact finite native critical
+point is claimed.
+
+Thus the constructed five-control section gives the actual kappa source
+extension (owned included-current source,0_5), under the same original
+source, physical norm and reverse-recovery hypotheses. Free old/current
+banks outside that owned map are not silently added and solved. This is
+a positive H+J local stationary saddle, not a full Book selection theorem.
+
+##### 8.5 Robust exclusion of screened limits under the same calibration
+
+There is also a direct normalized near-stationarity estimate; an exact
+maximum need not be assumed in advance. At a general nonzero-gain point
+let R=R_b>0, n²=c²R+1−R, H_c=cP_++P_-,
+k=j^T U^T xi, alpha=k^T P_+b, C=k^T H_cb, and
+
+    Delta=sqrt(s²n²−C²),
+    epsilon_U=||E_U J/Gamma||_*,
+    epsilon_beta=|E_beta J/Gamma|.
+
+All norms are the specified unit operator-norm tangents before actual
+coordinate/right-lift conversion. Then
+Delta=2|alpha|g_h epsilon_U, |alpha|<=s sqrt(R). With sigma=sign C,
+k_*=sigma s H_cb/n satisfies
+
+    ||k−k_*||<=sqrt(2)Delta/n.                         (JS35)
+
+Indeed ||k||<=s and k^T H_cb=C. Comparing C_beta=k^T H_cJ90b with
+(C_beta)_*=sigma s(c²−1)R'_b/(2n), and using
+|R'_b|=2sqrt(R(1−R)), gives the useful direct bound
+
+    (1−c²)sqrt(1−R)
+       <=2n g_h epsilon_beta+2sqrt(2)g_h epsilon_U.     (JS36)
+
+Division by sqrt(R) is legitimate because the nonzero field gain implies
+alpha!=0 and R>0. The full local H+J row can be used after adding the
+actual normalized heat/native error to epsilon_U and epsilon_beta. On a
+strict compact c collar inside (0,1), with the actual upper g_h and norm
+constants retained, normalized all-five stationarity forces R->1 and
+|C|->s c. Approaching R=0 or C=0 cannot exploit a vanishing gain to evade
+this conclusion. A different heat-dominated calibration remains a separate
+route; it is not excluded here.
+
+At every unscreened exact joint critical point the initialized code image
+is ±y, so the terminal return probability is universally
+
+    q_*=p³/s²=p²/(1+p²), f'(q_*)=−1.                  (JS37)
+
+The complete pure-conditional/scaled-isometry CQ identity gives its true
+local source −Dq. A unit left SO(S) rotation realizes
+||Dq||=2sqrt(q_*(1−q_*))=2/sqrt(5). Thus this specified terminal component
+is not source-neutral on the five-control H+J section. The independent
+price lane owns the full terminal-entropy proof and its same-history
+interpretation. Compactness and JS35–36 give a positive lower bound for
+the UNNORMALIZED CQ code source in the same approximate regime. To infer
+an obstruction to normalized CQ stationarity, its OWN actually supplied
+calibration must satisfy 0<Gamma_CQ<=M_CQ; it is not silently Gamma_J.
+At the exact five-control section the field-CQ gain is zero because q_*
+is field-independent, so no positive field-CQ gain is assigned there.
+This does not forbid balancing real
+components of a genuinely selected complete price; it shows why that
+price law and its actual independent rows must be computed, not identified
+with a component that has a different source. GR_closed=false.
+
+##### 8.6 An explicit same-history finite comparison
+
+The nonzero terminal row has a concrete unit tangent and a finite-pair
+formula. Put e=|10>, h=|0> tensor v=(a,p,0,0), and
+
+    K=e h^T-h e^T, ||K||_op=1, K|11>=0.
+
+Here h,e are orthonormal, K h=e, K e=-h, and
+y=(a/s)(h+p e). Keep the same actual target pre-reader O_+ and take the
+code-valid target family U(t)=exp(tK)U_+. Directly,
+
+    exp(tK)y=(a/s)[(cos t-p sin t)h
+                                +(sin t+p cos t)e],
+    C_proper(t)=s cos(t) C_W,                         (JS38)
+    J(+t)=J(-t).
+
+These are full matrix/determinant identities for arbitrary independent
+old W,V, including a nonscalar C_W. The minus branch remains absent;
+the feedback determinant depends on s^2 cos^2(t) C_W^* C_W. Every
+conditional terminal bank output is still a scaled isometry, so the
+whole specified terminal CQ component remains f(q), with
+
+    q(t)=(sin t+p cos t)^2/(1+p^2),
+    q'(0)=2p/(1+p^2)=2/sqrt(5),
+    lim_(t->0) [f(q(t))-f(q(-t))]/(2t)=-2/sqrt(5).   (JS39)
+
+Thus the same admissible local target pair has exactly equal feedback
+prices and a nonzero terminal CQ contrast. It retains every old branch
+and input; it is not an entropy computed after discarding the old bank.
+Its task is the enlarged code-valid task already declared above, not the
+old informative-response fibre contradicted by JS37.
+
+For the actual positive-word catalogue, exp(tK) is only a compilation
+target, not a free new primitive or an exact finite Golden rotation.
+For each real comparison step choose the two exact-code-valid native
+approximants and retain the same input, marks and fully paid layout.
+The CQ finite-difference error is bounded by
+(epsilon_CQ,+ + epsilon_CQ,-)/(2|t|), where each epsilon_CQ bounds the
+ACTUAL complete terminal-price/entropy error at that endpoint. Divide
+also by its own calibration when using a normalized CQ comparison.
+Apply JS18--19 separately to J and JS15--16 to the complete heat source;
+the heat bound does not pay the CQ error. With these real budgets tending
+to zero the finite witness survives. No exact native finite +/- price
+symmetry, physical full-price identification or new root is inferred.
+
+### 7fp.B. Actual pre-sign event: no common unscreened feedback/CQ stationary section
+
+5 November 2026. Existing #334; repository input
+`d957be6054102077940ad93a8f403d4f23a1fa0b`. Read-only bounded application.
+Consumer: the proposed common local stationary section of the original
+Book03 feedback and the specified complete terminal CQ component, on the
+new pre-sign history with the FULL code-valid SO(4) control domain.
+
+**Result.** On the actual original primary event, and on the rational
+collar `0.12921 <= Q <= 0.12922` containing it, no code control has both
+`D_code J=0` with nonzero feedback field gain and `D_code P_CQ=0`.
+At every positive or negative maximum-magnitude cold section,
+`||D_code P_CQ||_(operator-dual)>6/25`. This remains an obstruction to
+simultaneous normalized kappa stationarity when the actual normalized
+heat remainder tends to zero and the real local control norm is retained.
+
+This is a component/source compatibility result, not a no-go for the
+unknown complete physical price. In particular no price H+J+CQ is assumed.
+The enlarged code-valid domain is not the old fixed-E0 response fibre.
+Section6 gives a stronger exact five-control result when the actual
+pre-reader preparation rotation is also admitted: for every `0<c<1`,
+the unscreened joint-feedback critical branch has terminal CQ gradient
+exactly `2/sqrt(5)`, so the same component incompatibility remains.
+
+#### 1. The original event and the complete retained output
+
+Keep the original Golden constants `p=phi^-1`, `a=sqrt(p)`, canonical
+birth `v=(a,p)`, and actual native `G=[[a,-p],[p,a]]`. The original
+SC6–SC7/EO centre has the specified value
+
+    kappa512=sin²(512 theta_G), sin(theta_G)=p,
+    Q0=4 kappa512 p⁷, c0=1-2Q0.                    (JC1)
+
+There is no fitted event probability. The checker consumes the already
+published directed-rational kappa512 certificate in PRIMARY's unique
+`original_kappa9` JSON packet under `check_central_preparation_price.py`.
+Its canonical packet SHA-256 is
+`e5dc1217878c920c15b40149d7e9cc16befa416b8e8dafae10aa33f16cc39325`.
+The native G is independently bound to its pinned original owner.
+The consumed certificate gives
+
+    0.93793197770933667 < kappa512 < 0.93793197770933668,
+    0.12921646400972442 < Q0 < 0.12921646400972443,
+    0.74156707198055115 < c0 < 0.74156707198055116.    (JC2)
+
+These decimal endpoints are exact rational bounds. No floating evaluation
+or trigonometric root search enters the result.
+
+The actual pre-sign reader has the full operator
+`W tensor Pplus + I tensor Pminus`, where W is the original reflection
+and the prepared old corner is `i*Wi=cI`. The original complete old input
+density/reference remains arbitrary. In the pointer X eigenbasis put
+
+    alpha=(a+p)/sqrt(2), beta=(a-p)/sqrt(2),
+    R=alpha²=1/2+ap, S=beta²=1-R,
+    rho=[[R,c alpha beta],[c alpha beta,S]],
+    alpha beta=p³/2, RS=p⁶/4.                       (JC3)
+
+This is the actual reduced pointer state only for computing its terminal
+effect. No old bank or reference is discarded from the output instrument.
+For any code-valid U, the complete code branch effects on the protected
+input are qI and (1-q)I: they are quadratic combinations of I and W before
+compression. Hence both conditional full-output maps are scaled isometries,
+including their unread tail states. The specified complete two-label CQ
+entropy gain is h(q), for every protected input density, not merely a pure
+test input. Therefore along these code controls
+
+    P_CQ=f(q)=1+q-h(q)/ell,
+    f'(q)=1+ln(q/(1-q))/ell, ell=ln(phi).             (JC4)
+
+Its only interior stationary probability is q=p². This reuses §7fo's
+actual parsed0/10 convention and retained conditional-entropy proof. It
+does not select Book03 Info or supply physical registration/serial costs.
+
+#### 2. The entire maximum-cold manifold and its exact q range
+
+Let `j=I_r tensor v_t`, `S_valid=span{00,01,10}` and
+
+    Ccal={U in SO(4): <11|Uj=0},
+    xi=v_r tensor v_t=(p,ap,ap,p²),
+    s²=||P_valid xi||²=1-p⁴,
+    u=P_valid xi/s,
+    h_c=(cPplus+Pminus)v, N²=R c²+S,
+    C(U,Q)=<xi,U j h_c>.                            (JC5)
+
+The full maximum is `M=sN>0`. Its entire fibre obeys
+`U j n=u`, where in the X basis `n=(c alpha,beta)/N`.
+Choose `m=(-beta,c alpha)/N`. The other initialized column
+`w=U j m` is ANY unit vector in `S_valid intersect u^perp`; unused columns
+have their separate SO(2) completion freedom. That freedom is retained.
+It changes neither the prepared q nor C; its full heat is not declared
+identical at finite clock size.
+
+The choice of m is an orientation convention. It is the negative of
+the image of the standard computational Jn under the determinant-minus
+Hadamard change of basis; reversing m reverses k and the cross term below,
+without changing the range.
+
+Put `A=<10,u>=ap/s`, `k=<10,w>`. Then
+
+    A²=(1-1/sqrt(5))/2, K²=1-A², A²K²=1/5,
+    -K<=k<=K,
+    t=rho_mm=RS(1-c²)/(R c²+S),
+    b=rho_nm=-c R p³(1-c²)/[2(R c²+S)],
+    r=rho_nn=1-t,
+    q(k)=A²r+2Ak b+k²t.                            (JC6)
+
+Every k in that interval is attained by the valid output circle. Its
+vertex is `k0=-Ab/t=A c alpha/beta`. On the declared collar the exact
+inequality `A²c²R>K²S` proves k0>K, so q(k) decreases strictly from -K
+to K. Its sharp extrema are
+
+    q_min=A²+(t+2b)/sqrt(5),
+    q_max=A²+(t-2b)/sqrt(5).                        (JC7)
+
+At the actual Q0 the certified endpoint enclosures are
+
+    0.21898686442710212 < q_min < 0.21898686442710214,
+    0.34388166613545757 < q_max < 0.34388166613545759.
+
+Uniformly on `0.12921<=Q<=0.12922`, directed-rational arithmetic proves
+
+    0.218 < q <= 0.344, with the upper bound strict,
+    q_max < 0.344 < p².                            (JC8)
+
+The negative cold fibre has `U j n=-u`. Replacing `(A,k)` by `(-A,-k)`
+leaves JC6 invariant, so it has exactly the same range. In particular
+neither signed maximum fibre can reach the Kraft stationary probability.
+
+#### 3. Restricted-circle criticality is not full code stationarity
+
+q has critical endpoints on the flat maximum circle because k is at its
+extreme there. They are not critical in the complete code-valid domain.
+To see this, write the retained state in S_valid as
+
+    sigma=(Uj) rho (Uj)*.
+
+Its eigenvalues are `lambda_-,lambda_+,0`, where
+
+    lambda_±=[1±sqrt(1-p⁶(1-c²))]/2.
+
+The report is the fixed vector `e=|10>`, q=<e,sigma e>. Every real
+SO(S_valid) output rotation, fixing |11>, is an allowed target tangent
+of Ccal. Thus D_code q=0 precisely when e is an eigenvector of sigma;
+the only possible critical values are `0,lambda_-,lambda_+`. The same
+directed certificate gives, uniformly on the declared collar,
+
+    0<lambda_-<0.007, lambda_+>0.993.                (JC9)
+
+All three critical values lie outside JC8. This excludes the alternative
+`Dq=0` when f' is nonzero, on both signed cold fibres and for all unused
+column completions.
+
+There is a uniform explicit full-row witness. Set
+`v_perp=(I-ee*)sigma e`. Spectral support in `{0,lambda_-,lambda_+}` gives
+
+    ||v_perp||²=<e,sigma²e>-q²
+        >=(q-lambda_-)(lambda_+-q)
+        >(0.218-0.007)(0.993-0.344)>0.13.           (JC10)
+
+Indeed the polynomial `(x-lambda_-)(x-lambda_+)` is nonnegative on that
+three-point spectrum. The real skew output generator
+
+    K=(e v_perp* - v_perp e*)/||v_perp||
+
+has operator norm one, preserves S_valid and the invalid column, and
+gives `D_K q=2||v_perp||`. At a cold extremum `D_K C=0`.
+
+For q<0.344, the exact Golden inequality `(43/82)³<p⁴` implies
+`f'(q)<-1/3`, without approximating logarithms. Consequently
+
+    ||D_code P_CQ||_(op-dual)
+       >= |f'(q)| 2||v_perp||
+       > (2/3)sqrt(0.13) > 6/25.                   (JC11)
+
+This is a derivative in the full local target domain, not just along the
+flat maximizing circle. It preserves every physical output column and
+requires no additional helper or favorable-outcome selection.
+
+#### 4. Exhaustive feedback classification and the nonzero-gain obstruction
+
+At fixed Q the code-valid image Ujn ranges over S² in S_valid. Therefore
+the only critical points of C are `C=+M` and `C=-M`; more quantitatively
+
+    ||D_code C||_(op-dual)=sqrt(M²-C²).              (JC12)
+
+The actual proper-cut feedback is
+
+    J(C)=-r0 ln[(1-z)+z C²], 0<z<1, r0>0,
+    J_C=-2r0 z C/[(1-z)+z C²].                     (JC13)
+
+Hence every local solution of D_code J=0 is either C=0 or C=±M.
+At C=0 the feedback field source is zero. At C=±M on this positive-c
+collar the field gain is nonzero and positive in the original Q orientation:
+
+    J_Q=4r0 z s²R c/[(1-z)+z s²(Rc²+S)]>0.          (JC14)
+
+JC11 excludes D_code P_CQ=0 at every such point. This is the promised
+exhaustive obstruction on the whole four-dimensional local Ccal domain;
+it is not a no-go merely for one hand-picked section. A finite-clock heat
+term can move feedback critical points; its actual normalized remainder
+must then be used, as below.
+
+#### 5. Kappa limit with the real source normalization
+
+This implication uses the declared full code-control norm (or a proved
+native finite-comparison transport covering its tangent directions).
+Density of code-valid native words alone does not supply this norm map.
+Let Q_h stay in the compact rational collar, and let the actual geometric
+sampling satisfy `0<g_h<=G<infinity`. At every compared native centre require
+the genuine nonzero feedback calibration
+
+    Gamma_h=|J_C C_Q| g_h>0,
+    |C_Q|<=2s sqrt(R).                              (JC15)
+
+Suppose both the complete code row and its actual heat remainder satisfy
+
+    ||D_code(H+J)||/Gamma_h ->0,
+    ||D_code H||/Gamma_h ->0.
+
+Cancelling the same nonzero J_C in the true calibration gives
+
+    ||D_code C||
+      <=g_h |C_Q| [||D_code(H+J)||/Gamma_h
+                           +||D_code H||/Gamma_h] ->0. (JC16)
+
+Thus approaching C=0 cannot hide the code row by making its gain small.
+Compactness of Ccal and the Q collar forces every limit point onto one
+of the signed maximum-cold fibres. JC11 and continuity on their positive
+q collar then rule out `||D_code P_CQ||->0`. A normalized CQ-stationarity
+claim with a bounded positive calibration implies that unnormalized
+condition and is ruled out as well. The actual CQ gains are bounded on
+these limiting fibres because q is bounded away from0 and1 and the finite
+q_Q response is bounded. Do not exchange the two price calibrations or
+drop the original native right lift/finite-step error budgets.
+
+The arbitrary-unitary growing-clock heat bound can supply the second
+premise after actual paid padding; it does not itself supply the first
+or change the fixed terminal CQ law. Every new control/reaction and
+required marked-output constraint retains its declared domain.
+
+#### 6. Stronger exhaustive result with the fifth pre-reader control
+
+Now additionally admit an actually executed rotation O_beta before the
+pre-sign reader, with the canonical physical birth/cut/reference retained.
+Let its prepared pointer be b=O_beta v and `R_b=||Pplus b||²`. This is a
+different domain from the fixed canonical pointer; it is not obtained by
+silently differentiating a prescribed native birth. The maximum cold is
+
+    C_±(beta,Q)=±s sqrt(c²R_b+1-R_b).                (JC17)
+
+The four code rows still force C=0 or these signed maxima. For a nonzero
+gain, C cannot be zero. On a signed maximum, the actual beta derivative
+of C is its envelope derivative. Since `0<c<1` and
+`|D_beta R_b|=2sqrt(R_b(1-R_b))`, its only zeroes are `R_b=0,1`.
+The R_b=0 branch has `C=±s`, independent of Q, and therefore zero field
+gain. Every unscreened joint-feedback critical point of ALL FIVE local
+controls must consequently have
+
+    R_b=1, C=±s c.                                 (JC18)
+
+The pre-reader pointer is then an X eigenstate and remains pure after the
+reader; it is only accompanied by the retained unitary W on the old bank.
+The maximizing code sends its initialized vector to ±u. Thus its EXACT
+terminal probability and CQ slope are
+
+    q_*=u_10²=p³/(1-p⁴)=p²/(1+p²),
+    q_*/(1-q_*)=p², f'(q_*)=-1,
+    q_*(1-q_*)=1/5.                                (JC19)
+
+The full code-valid output rotation tangent has
+
+    ||D_code q||_(op-dual)=2sqrt(q_*(1-q_*)),
+    ||D_code P_CQ||_(op-dual)=2/sqrt(5)>0.           (JC20)
+
+All unused-column completions and the flat maximum circle remain included.
+This exactly excludes a common unscreened stationary point of the two
+specified components on the whole five-control domain, for EVERY 0<Q<1/2.
+It is stronger than selecting another favorable point of the two-dimensional
+flat code fibre. The canonical-four-control result above remains the
+explicit actual-Q0 checkpoint without adding this fifth control.
+
+It also gives an exact informative-response guard. The original specified
+pre-sign reader/encoder NPS10 requires `q_orig=p²+p³Q`, whereas the unscreened
+five-control stationary section has `q_*=p²/(1+p²)<p²`. Therefore
+
+    q_orig-q_*=p⁴/(1+p²)+p³Q
+                  >=p⁴/(1+p²)>0.                   (JC20a)
+
+That section cannot preserve the original informative response, even at
+Q=0. It belongs to the enlarged code-valid task, not to the original
+fixed-response implementation fibre. Neither code validity nor native
+compilability removes this response constraint or its genuine reaction.
+
+On the exact maximum-code envelope and R_b>0, the normalized beta row is
+
+    |D_beta J|/Gamma_h
+      = (1-c²)/(2c g_h) sqrt((1-R_b)/R_b).           (JC21)
+
+In particular a vanishing field gain at R_b→0 does not suppress that
+normalized reaction. Extending JC21 to approximate code sections requires
+the actual code-gradient/gain error control, as in JC16; density of native
+rotations alone is not enough. The source lane supplies that additional
+full-control transport. No unknown full-price stationarity is inferred.
+
+#### 7. Scope and parent route change
+
+The master feedback has an unscreened maximum-cold reduction, including
+its two flat control directions, on this enlarged code-valid task. The
+specified complete terminal CQ component fails to share that stationary
+section, even at the original primary Q0 and even after allowing every
+code-valid local control. The full regular price/current disagreement is
+therefore concrete; it is not just an unresolved choice of a marginal.
+
+This removes the proposed shortcut “the remaining flat maximum controls
+can simultaneously stationarize the old terminal CQ price.” It leaves
+the master-law section itself intact. Binding the actual full Book price
+requires its genuine weighted primitive/terminal map or its complete
+joint source. No additive B+P law, new Info, free gate, selected event Q,
+or negative statement about every possible full native price is inferred.
+`GR_closed=false`.
+
+The bounded checker uses exact Golden algebra, the existing certified
+kappa packet, and directed rational arithmetic. It checks no new geometric
+root and does not replay the huge EO processor or an old full test suite.
+
+### 7fp.C. Admission of the complete local pre-sign section and the remaining price binding
+
+5 November 2026. Read-only #334 input `d957be605`.
+Consumer: the four local code-control rows and the ALREADY PRESENT
+before-reader preparation row PPS13 of §7fo, then the unchanged A–D
+contract's full-price map. No new control family,
+kernel selector, primitive, action or repository status is introduced.
+
+`P` denotes
+`02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`.
+Line addresses below refer to the inspected input; section/equation labels
+are the durable references. The concurrent `source.md` JS1–17 supplies
+the feedback optimization, not an assumed physical price identification.
+
+#### A. The exact admitted family for this substitution
+
+Retain the literal §7fo.B pre-sign operation, its original bank, four
+independent forward/back preparation occurrences, actual SourceSpin and
+old reference factors. The fresh pointer r and tail t are born in the
+original canonical v, after the original front births and before the
+square bank body. Their births are paid isometries; they are not freely
+supplied zero blanks. Before the final local encoder the full endpoint is
+
+    W tensor P_+ + V tensor P_-,
+    W=A_b* Z_e A_f, V=A_b* A_f.                         (AJ1)
+
+The post-reader control is ONE U on r,t in the already classified manifold
+
+    C={U in SO(4): <11|U(I_r tensor v_t)=0}.             (AJ2)
+
+It has four dimensions. POST-reader pointer rotation, direct-tail direction, dark
+completion and unsharp direction are already included. No further
+POST-READER control beyond these four is needed; the separate pre-reader
+preparation is added below. AJ2 gives exact validity for EVERY
+initialized pointer input, including arbitrary entanglement with the
+original bank/reference. All four r,t columns still exist physically.
+
+For the four-row subfamily the extended descriptor is M_ext(Y,p,U), with U free in C and
+the old logical field/preparation variables still free on their original
+supports. A faithful implementation at fixed (Y,p,U) satisfies
+E_ext(word)=M_ext(Y,p,U); FN solves its vertical equations by the actual
+constraint reaction. It does not solve U's four logical rows. Those are
+the rows solved by JS5–13 for the feedback price and controlled separately
+for the full specified master heat.
+
+This is a declared enlargement of the former fixed E0 output task.
+§7fo.B.5, P:145191–145228, expressly distinguishes the generated response
+E_code,1=p²I+p³E_f and a genuinely free code-control enlargement. A general
+U_*(Q) need not retain that response or the former complete late endpoint.
+It is therefore not an FN implementation of the old fixed E0 descriptor.
+If that exact response is still required, membership must be proved;
+ordinary 0/10 validity is insufficient. This qualification also prevents
+using the new section as an unqualified counterexample to original H.1.
+
+Canonical r/t births and their prescribed untouched intervals are guards
+of this explicitly declared family. The birth alone does NOT forbid a
+subsequent G_r before the pre-sign CX. The stronger untouched-pointer or
+complete pre-reader target is the actual restriction needed here.
+§7fo.B NPS2 extends every original A/A* operation by identity on r,t;
+§7fo.B.5 expressly retains the row of a genuinely free pointer preparation.
+The pre-reader rotation is already present in §7fo.C PPS13, so it must
+not be called a new hypothetical control or silently included among the
+four post-reader rows. Its exact row is retained in C.1 below. The original
+independent preparation occurrences are not removed by this statement.
+Their actual source transport remains JS11–13 / §7fo.HPS13.
+
+The completed application includes that existing preparation as a free
+logical coordinate beta and uses M_ext(Y,p,beta,U). Its actual chronology
+is fixed in C.2; it is not moved through bank gates merely because those
+endpoint operators commute. This explicitly replaces the optional
+untouched-pointer guard, while preserving the canonical physical birth.
+Both beta and all four U directions are varied before choosing a section.
+
+#### B. Executability, smooth dependence and actual finite comparisons
+
+Consume §7fn.D CV9, P:143548–143590. Every U in C has
+
+    U=L E0(O_theta tensor I), L|S in SO(3), L|11>=|11>,
+    S=span{00,01,10}.
+
+The literal positive echoes G_r^k;CX(t,r);G_r^k;CX(t,r), and the exchanged
+r/t echoes, preserve S on all columns exactly. The three-factor SO3
+Euler construction and an even positive pointer power give dense native
+approximants while EVERY approximation remains exactly code-valid.
+The chronology G_r^m;E0;A_k1;B_k2;A_k3 has
+m+2(k1+k2+k3)+9 actual calls, one plus m+2 sum(k) G calls and eight CX.
+All lengths are odd; a finite catalogue is put on a common actual layout
+with paid CX² pairs. Preserve the final CX and actual preceding square
+stage. No free inverse, reset, discarded helper or rate for Golden-power
+search is imported. Field-dependent section targets need no new compiler.
+
+The explicit JS6 section is analytic in c=1−2Q because
+
+    n²=R c²+1−R >= 1−R > 0,
+    ||dU_*/dQ||=p³/n².                                (AJ3)
+
+On a declared compact collar 0<=Q<=Qmax<1/2, all needed derivatives and
+positive feedback gain have effective bounds. A supplied effective field
+name and the existing event evaluator compute the target matrix to each
+positive tolerance. This computation does not test an Einstein residual
+or require the unknown exact future solution. The fixed descriptor names
+the algorithm; finite field input data still vary, as §7fa.D EOQ10 requires.
+
+A target smooth section is not a new continuous native primitive. At each
+fixed physical resolution and finite test catalogue, choose the central
+and +/- targets from the full (Y,p,U) chart; compile finite exact-valid
+words with all-column errors small relative to their true comparison
+steps, source gain and physical right-lift norm. Record actual call counts,
+births, cuts and marked addresses before choosing the heat/padding bound.
+Complete the actual finite price comparisons before the outer refinement.
+Do not differentiate the integer-selected compiler index as if it were
+an unrecorded smooth gate. Endpoint approximation and source-comparison
+errors have separate controlled budgets, as CV10–13 and JS15–17 specify.
+
+#### C. The real derivative and the four-row scope
+
+First differentiate the price on the full admitted chart (Y,p,U). For any
+chosen price B and section U_*(Q(Y,p)), the source is
+
+    D(B o section)=E_(Y,p)+(DU_*)* E_U.                (AJ4)
+
+For the proper feedback J, JS5 globally maximizes C_U² and hence minimizes
+J at fixed Q on C. All FOUR tangent rows E_U^J vanish there, even though
+the maximizing fibre has two dimensions. Thus the second term in AJ4 is
+zero for J by a proved Euler statement, not by freezing U. The actual
+reduced expression is
+
+    C_*²=(1−p⁴)(R c²+1−R),
+    D J_*=[4 r0 z(1−p⁴)R c / ((1−z)+z C_*²)] DQ.      (AJ5)
+
+Its coefficient is positive on the stated c>0 collar. The c=0 boundary
+has zero gain and is excluded from this positive-source statement.
+
+The full master B=H+J still has E_U^H and (DU_*)*E_U^H. The existing CL
+bound must include the full endpoint Jacobian and AJ3. In a common product
+norm a safe section error bound is
+
+    ||epsilon_pullback|| <= ||epsilon_horizontal||
+                              +||DU_*|| ||epsilon_U||. (AJ6)
+
+Multiply by the actual physical right-lift norm before claiming kappa
+source equivalence. Compare the old and new master sources with BOTH
+thermal remainders and their respective actual gains. Neither finite
+heat rows nor an exact finite joint stationary word have thereby been
+proved zero. FN reactions remain separate from these local free rows.
+
+JS11–13 preserve the genuine independent upstream rows; their vanishing
+is consumed only at the original CD3 centres or another proved stationary
+section. Off shell, the real transported DC_W term need not vanish.
+No full all-nuisance off-shell stationary section is claimed by AJ5.
+
+##### C.1. The existing before-reader preparation is a separate real row
+
+Let the pointer be physically operated before CX to b_beta=O_beta v,
+while the physical initial cut remains the original canonical one.
+Optimize the same four post-reader controls, without freezing beta.
+Then the source owner's same Cauchy–Schwarz expression gives
+
+    R_beta=b_beta^T P_+ b_beta,
+    C_max²=s²(c² R_beta+1−R_beta), s²=1−p⁴,
+    d_beta R_beta|0=a²−p²=p³,
+    d_beta J_*|0=
+      r0 z s²(1−c²)p³ / [(1−z)+z s²(c²R+1−R)] >0      (AJ8)
+
+for 0<Q<1/2. This is an admitted upstream-row obstruction to claiming
+joint stationarity of the canonical-b four-control section whenever
+the existing PPS13 direction is included. It is not an extra entropy
+term, a new action or a global no-go for every stationary section.
+
+At fixed 0<c<1, the stationary pointer possibilities are R_beta=0 or 1.
+At R_beta=0, the minimized feedback has C_max²=s² independent of Q:
+the preparation minimum screens this field source. At R_beta=1,
+C_max²=s² c² and the field source survives. After optimizing the code,
+the resulting price is a maximum in the pointer-preparation direction;
+the unreduced feedback J has both positive code directions and a negative mixed
+preparation/code direction, hence is a saddle rather than a joint minimum.
+These statements are exact
+target/control statements. Native positive-power approximants and their
+real clock errors must still be consumed before a finite-source or kappa
+claim; an exact finite native beta critical word has not been asserted.
+
+Thus there are two legitimate scopes. Under the explicit pre-reader
+guard, AJ8 is a constrained normal direction with its real reaction;
+the four-row result applies. If PPS13 is free, retain AJ8 and solve its
+stationary alternatives in the actual larger family. Neither scope may
+be advertised as all readout/preparation rows solved at canonical b=v.
+
+##### C.2. The full five-row section and one actual paid compiler catalogue
+
+The completed calculation chooses the R_beta=1 stationary alternative,
+not the nonstationary canonical beta=0 value. Set
+
+    b_+=(1,1)/sqrt(2),
+    cos(beta_*)=(a+p)/sqrt(2),
+    sin(beta_*)=(a−p)/sqrt(2), O_beta* v=b_+.
+
+Choose U_+ in C taking j b_+ to y=P_S xi/s, with its other initialized
+column in S and its two remaining columns completed in SO(4). The same
+explicit JS6 frame provides it. For every 0<c<1, x=c j b_+, hence its
+normalized direction is constant. This particular U_+ and beta_* can
+therefore be chosen independent of Q. That fact follows AFTER varying
+all five coordinates; it is not a frozen-preparation argument.
+
+The complete local feedback section is
+
+    C_+=s c,
+    J_+=−r0 log d_+, d_+=(1−z)+z s² c²,
+    D_(beta,U)J|section=0_5,
+    D J_+=[4r0 z s² c/d_+] DQ,
+    Gamma_+=4r0 z s² c g_h/d_+ >0.                    (AJ9)
+
+These formulas require the original matched scalar proper corner and
+c>0. In particular they retain a positive field source on any compact
+0<=Q<=Qmax<1/2 collar. For 0<Q<1/2 the section is a saddle: the
+code-reduced price is a maximum in beta, while J has positive curvature
+in the two nonflat code directions and a two-dimensional flat code fibre.
+The negative direction is mixed, not a claim about the pure beta Hessian
+at fixed U. Indeed a paired input/output rotation has
+C=s[c cos(delta) cos(lambda)−sin(delta) sin(lambda)]; lambda=−delta
+increases C to second order when c<1 and hence decreases J. At fixed
+U, lambda=0, the pure beta perturbation instead decreases C. At Q=0
+the strict saddle argument degenerates; the stationary section and
+positive field gain still have their declared meaning. A joint minimum
+on the nonzero-Q collar is not claimed.
+
+For completeness, the source owner's same four-control classification
+leaves no omitted local critical branch on 0<c<1: either C_U=0, giving
+zero J covector, or U attains ±s n and the free beta row forces R_beta=0
+or 1. R_beta=0 screens the field; R_beta=1 gives AJ9. This is a bounded
+classification of the already included five-coordinate domain, not an
+assertion about arbitrary native operations or other price functionals.
+
+Both pieces have actual positive native implementations. For each finite
+central/+/- target choose an EVEN nonnegative integer m_beta so the
+literal G_r^m_beta approximates O_beta. Execute chronologically
+
+    A_f; G_r^m_beta; CX(e,r); Z_e; A_b*; W_U,           (AJ10)
+
+where W_U is the exact-valid CV9 post-encoder word in B. The G power is
+on the live pointer, and neither it nor the later encoder touches sealed
+oldRIGHT or an individual SourceSpin coordinate. The original SourceI
+sign and its paid reverse bank remain unchanged. The tail t is untouched
+until W_U. Since W_U is exactly valid for every initialized pointer input,
+every finite word AJ10 is exactly valid even though neither beta_* nor
+U_+ is assumed to have an exact finite Golden representation.
+
+Use one actual finite catalogue and preserve its internal mark addresses.
+First make all pre-reader blocks the same EVEN length M_beta by adding
+paid CX(e,r)^2 identity pairs BEFORE their G powers. These pairs restore
+the bank and pointer on all columns and do not touch t. Their intermediate
+stages are real and remain in RAW/GROWING. They are fixed complete-block
+implementation slots; their raw normal rows are carried by FN reactions,
+not claimed freely zero on reporter-coupled supports. Make all post blocks
+the same ODD length M_U using CV9's paid identity pairs and final-CX
+chronology. Total extra local length is the actual M_beta+M_U; retain
+the existing pre-sign CX, sign calls and every bank call separately.
+The actual final gate remains CX, preceded by a square stage. Any later
+CL clock padding is also executed and included in L,D and all 425D modes.
+
+The corresponding complete-operation constraint is
+E_ext(word)=M_ext(Y,p,beta,U). FN implementation reactions are taken at
+fixed LOGICAL beta,U and leave the five source rows in AJ9. A stronger
+old pointer-preparation mark fixing v immediately before CX would exclude
+this family; its new marked pointer state is the generated O_beta v.
+Original bank-only pre-sign effects extend by I_r and are unchanged by
+the new G powers. All later historical reader transports use AJ10's
+actual complete suffix. No old numerical endpoint or late full mark is
+silently reused.
+
+At a nearby actual native centre keep
+alpha_n=xi^T U_n j P_+ O_n v, beta_n=xi^T U_n j P_- O_n v and
+C_n=alpha_n c_n+beta_n. Use the same actual positive coefficient
+4r0 z alpha_n C_n g_h/[(1−z)+z C_n²] when the scalar native corner is
+certified; otherwise retain the target/actual source discrepancy rather
+than asserting an exact scalar compiler identity. At AJ9 the product
+alpha C=s²c>0. This is an open gain collar for sufficiently accurate
+finite approximants with the original mark/field errors included.
+
+For finite differences retain a regular product chart on SO(2)×C and
+its true norm. A unit beta tangent has ||D O_beta||=1; a joint endpoint
+variation obeys
+
+    ||D U_total|| <= ||D U||+||D O_beta||
+                             +max(||D W||,||D V||).   (AJ11)
+
+All independently varied bank occurrences and physical/right-lift
+constants still multiply this bound. The sum of the pre- and post-word
+endpoint errors is a valid telescoping error bound, together with the
+old bank/cut/mark errors. Apply JS18–19 to that TOTAL error divided by
+the true finite step and actual gain. The CL budget includes both
+new blocks and all padding. Here the chosen beta_*,U_+ section is
+field-independent; any alternative moving section must retain AJ4/AJ6.
+After both original and new thermal remainders vanish in the specified
+normalized norm, the existing current source gains five zero local rows.
+No exact finite native all-five critical word is claimed.
+
+The price agent's separate terminal-CQ diagnostic can now be tested on
+THIS same target: q_+=p³/s²=p²/(1+p²), so f'(q_+)=−1. The allowed
+unit-operator-norm left SO(S) direction rotating y toward the return
+coordinate gives ||D_code P_CQ||=2 sqrt(q_+(1−q_+))=2/sqrt(5), using the
+retained full-bank scaled-isometry/Dchi=0 argument. Thus the five-row
+feedback section does not solve this separately specified CQ price.
+This is a concrete price-binding test, not a premise that their sum
+is the physical action and not a refutation of the specified H+J law.
+
+#### D. Retained marks, readouts and variable ledger
+
+| Operand | Status in this application | Required treatment |
+| --- | --- | --- |
+| Y and original four preparation occurrences | Independent logical variables on original supports | Retain DC_W, DC_V, physical right lift and source adjoints; never tie the legs before differentiation. |
+| Local U | All four independent tangents of C | Solve for J, bound H; U_*(Q) is a solution section, not an admission guard that erases its rows. |
+| Pre-reader pointer rotation PPS13 | Genuinely free in the completed five-row family; optionally guarded only in the smaller four-row subfamily | Canonical birth alone is insufficient; AJ8 excludes the canonical-b section, while AJ9 solves the actual row at R_beta=1. This row is distinct from all four post-reader controls. |
+| Original source/bank/pre-sign marks | Retained original marks | New r/t factors are spectators at those marks; extend effects by identity and record their actual shifted addresses. |
+| Marked inputs and current proper cut | Generated from full actual prefixes | Recompute RAW cut; it is not the old cut with U omitted. Keep every generated-state adjoint. |
+| Earlier readable distinctions after the new suffix | Retained with actual suffix readers | For an active unitary suffix A_U, transport E to A_U E A_U*. This is a history-dependent specified effect, not equality of one fixed terminal E for all U. |
+| Terminal code | Exact 0/10 validity guarded; probabilities and conditional full states generated | Keep unread direct-tail quantum state, bank, references and all fine labels. Do not replace them by a selected two-label CQ algebra without its own convention. |
+| Native implementation coordinates | Independent within fixed logical complete-operation fibre | Exact FN conjugacy/reactions; no equality of raw logs or all unmarked intermediate tests is inferred. |
+| Births, scene, beta, z, layout and old protected history | Original declared task/input guards; execution data generated | All real calls, work dimensions and old data remain. Freely enlarging one of these requires its own row; heat suppression does not solve arbitrary scene/calibration variations. |
+
+Any newly executed suffix reader is paid. Availability of a transported
+future effect is not an assertion that its reader was already executed.
+Once r/t are sealed as oldRIGHT, no forbidden live-gate inverse is invoked
+to implement an unproved readout. Retained historical tests, generated
+proper-cut predicates and a newly imposed diagonal CQ record algebra must
+not be identified automatically. §7fn.D explicitly retains this boundary.
+
+#### E. Which physical-price input is actually missing
+
+There are three distinct, already specified interfaces:
+
+1. Book03 §03.25 literally defines the finite master
+   B=beta^-1 log Tr exp(−beta Delta)−logdet(I−zF), with stationarity DB=0.
+   The actual RAW/GROWING application retains all paid compiler stages,
+   original cut and all harmonic/clock modes. It is a complete specified
+   master-law problem, not a mere terminal probability objective.
+2. §7fo.C PPS6–7 specifies the terminal 0/10 CQ convention
+   P_term=1+q−h(q)/log(phi)+chi/log(phi), retaining the entire conditional
+   bank. This is a terminal component under that convention, not an
+   automatically additional term of B. `A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md`
+   §1 (lines39–46), §7eo.I.4 (P:163355–163393), and PPS6 expressly say so.
+3. Book03 §§03.3.0–a uses the memory-valued sum
+   sum_gamma phi^(−sum Cost+sum Info)[q_gamma] BEFORE the quadratic
+   response. §03.8 also names a stack of finite terms. Their actual
+   same-execution identification with the specified B remains an interface;
+   one may neither invent B+P_term nor declare one equal to the other.
+
+The Book03 §03.3.2 prose that the feedback determinant and statistical sum
+are the same admissible object at two scene scales does not instantiate
+the required native path map, memory representation, primitive weights
+or terminal boundary for AJ1. The existing binding owner gives the exact
+typed consumer instead: `BOOK_SOURCE_BINDING.md` §§1–3, including its
+factor-one versus factor-one-half distinction and full Gram terms.
+
+The smallest remaining input is therefore ONE actual weight-and-boundary
+map on this literal paid history: its supplied Cost/Info increments or
+equivalent native weighted continuation operators, its coherent memory
+representation and proper initial/readout boundary, and their primitive
+intertwining with the chosen physical-price realization. On an FN map the
+already computed primitive amplitude defect is exactly
+
+    alpha'_j F'_j V_j−V_(j+1) alpha_j F_j
+      =(alpha'_j−alpha_j)F'_j V_j.                     (AJ7)
+
+The unweighted matrix diagram and H+J price equality do not supply alpha.
+No owner assigns a universal net unit tariff to each G/CX call in this
+execution. If a source history has many implementation words, consume
+the SUM of their full weights, not one word's minimum or gate count.
+Actual terminal effects, initial amplitudes, abort/record branches and
+absolute normalizers must also intertwine. These are precisely §7fo.A.6
+PQ5–6 and `FOUNDATIONAL_WEIGHT_BRIDGES.md` §2's existing obligations.
+The 33-vertex scene Doob theorem is not already a map to these pointer
+letters: `EXACT_DOOB_BINDING_CRITERION.md` §§2,4 states that carrier limit.
+
+Once actual operands are supplied, the existing weighted-source error
+theorem applies without a new selection axiom. Its price must be the
+exponent it actually estimates: for a law phi^(−kappa B), the gain is
+kappa Gamma_B at fixed kappa, and a free kappa contributes B Dkappa.
+Normalized full future predictions alone do not fix that absolute factor;
+this is the already owned binding boundary, not a new no-go calculation.
+
+#### F. Exact conclusion for the unchanged A–D contract
+
+Book01/KAPPA's task-datum regime is sufficient to admit this explicit
+code-valid extension with its finite constructor, generated readouts,
+finite halt, protected history and actual error schedule. §7fa.D EOQ10
+(P:132841–132895) lists all six section witnesses. Field data still vary at
+fixed descriptor. No universal scheduler or physically stored programme
+register is an additional requirement here.
+
+It can therefore supply D for the declared family and permit the new
+local-control feedback/master-kappa result. It does NOT replace the binding
+in C. `A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md`, lines13–20 and
+47–56, expressly requires the actually selected complete physical price
+and says the declared H+J/fixed-writer results do not replace full
+Cost−Info binding. Calling B the objective in a task datum gives a valid
+conditional master-law theorem; it does not prove that missing identity.
+
+The concrete parent substitution is the completed five-control J saddle
+section AJ9 with the actual before-reader compiler AJ10 and the retained
+full heat/source norm AJ11. The smaller guarded four-control section and
+its moving-section budget remain valid at their stated scope. The original
+upstream/source and complete-price premises are not erased. A terminal-CQ
+first row computed on the same section
+is a useful test for a proposed price equivalence, not a licence to add
+CQ to B or to reject the stated master law solely because CQ differs.
+No original complete-price A–D terminal is established by this packet.
+
+Validation: bounded read-only source audit and direct chain-rule/domain
+check; no new numerical checker, native replay or census was needed.
+
+### 7fp.D. Exact bounded check and reproduction
+
+The standalone source and executed JSON below preserve the exact arithmetic
+and provenance. Extract the Python fence as `check_price.py` in a temporary
+directory, then run it from the repository root with Python3.12/SymPy1.14:
+`python -Werror check_price.py` and `python -O -Werror check_price.py`.
+It also accepts `--repo /absolute/repository/path`. Both executed outputs
+are byte-identical. Conditions use exceptions rather than assertions.
+
+The check consumes the existing certified original kappa512 packet instead
+of repeating its suite. Its lookup marker is assembled at runtime so that
+embedding this script does not create a second packet match. All bounds
+are exact symbolic, rational or outward-rounded rational intervals. No
+floating numerical root, expected evidence replacement, huge geometric
+compiler or unchanged Lean replay is used.
+
+The all-control maximum, matrix source transport and normalized-limit
+theorems are analytical arguments above; the finite check does not replace
+their domain and norm hypotheses. No physical price selection is inferred
+from its passing conditions.
+
+Checker SHA256: `b094707b0e769bfa01d6bdb2ebdfdcf5366940563e0146ea1b548f3dae8f8c0c`. Executed receipt SHA256: `37b2143dee4d8f870822be142db47fef3a7d26bc39b8aafa91850a41708452a6`.
+
+```python
+#!/usr/bin/env python3
+"""Bounded exact CQ obstruction on the original pre-sign cold-max fibre.
+
+Consumes the owned certified kappa512 packet; does not rerun its old suite,
+fit Q, search roots, or assign complete Book Info. All numeric-looking
+bounds are directed rational interval certificates, never float tests.
+"""
+import argparse
+from fractions import Fraction as F
+import hashlib
+import importlib.util
+import json
+from math import isqrt
+from pathlib import Path
+import sys
+import sympy as sp
+
+OWNER = Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py')
+OWNER_SHA = '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c'
+PRIMARY = Path('02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md')
+KAPPA_SHA = 'e5dc1217878c920c15b40149d7e9cc16befa416b8e8dafae10aa33f16cc39325'
+GRID = 2**160
+
+
+def floor_grid(x):
+    return F((x.numerator*GRID)//x.denominator, GRID)
+
+
+def ceil_grid(x):
+    return -floor_grid(-x)
+
+
+class I:
+    def __init__(self, lo, hi=None):
+        self.lo, self.hi = F(lo), F(lo if hi is None else hi)
+        if self.lo > self.hi:
+            raise ValueError('reversed interval')
+
+    @staticmethod
+    def cast(x):
+        return x if isinstance(x, I) else I(x)
+
+    @staticmethod
+    def rounded(lo, hi):
+        return I(floor_grid(lo), ceil_grid(hi))
+
+    def __add__(self, other):
+        other = I.cast(other)
+        return I.rounded(self.lo+other.lo, self.hi+other.hi)
+    __radd__ = __add__
+
+    def __neg__(self):
+        return I(-self.hi, -self.lo)
+
+    def __sub__(self, other):
+        return self + (-I.cast(other))
+
+    def __rsub__(self, other):
+        return I.cast(other) + (-self)
+
+    def __mul__(self, other):
+        other = I.cast(other)
+        values = [x*y for x in (self.lo,self.hi) for y in (other.lo,other.hi)]
+        return I.rounded(min(values),max(values))
+    __rmul__ = __mul__
+
+    def reciprocal(self):
+        if self.lo <= 0 <= self.hi:
+            raise ZeroDivisionError('interval crosses zero')
+        return I.rounded(1/self.hi, 1/self.lo)
+
+    def __truediv__(self, other):
+        return self * I.cast(other).reciprocal()
+
+    def __rtruediv__(self, other):
+        return I.cast(other) / self
+
+    def __pow__(self, exponent):
+        if type(exponent) is not int or exponent < 0:
+            raise ValueError('only nonnegative integer powers')
+        result = I(1)
+        for _ in range(exponent):
+            result = result*self
+        return result
+
+    def sqrt(self):
+        if self.lo < 0:
+            raise ValueError('negative square root')
+        lower = isqrt((self.lo.numerator*GRID**2)//self.lo.denominator)
+        upper = isqrt((self.hi.numerator*GRID**2)//self.hi.denominator)+1
+        return I(F(lower,GRID),F(upper,GRID))
+
+    def contains_inside(self, lo, hi):
+        return F(lo) < self.lo <= self.hi < F(hi)
+
+    def json(self):
+        return {'lower':str(self.lo), 'upper':str(self.hi)}
+
+
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--repo',type=Path,default=Path.cwd())
+    args=parser.parse_args()
+    rows=[]
+
+    def need(label,condition,kind='exact_symbolic'):
+        if condition is not True:
+            raise ArithmeticError('FAILED: '+label)
+        rows.append({'label':label,'kind':kind,'pass':True})
+
+    owner=args.repo/OWNER
+    need('pinned_original_native_G_owner',hashlib.sha256(owner.read_bytes()).hexdigest()==OWNER_SHA,'provenance')
+    spec=importlib.util.spec_from_file_location('joint_price_native',owner)
+    ne=importlib.util.module_from_spec(spec)
+    sys.modules[spec.name]=ne
+    spec.loader.exec_module(ne)
+    primary=(args.repo/PRIMARY).read_text()
+    marker=json.dumps('original_'+'kappa9')+': '+chr(123)
+    need('unique_owned_original_kappa_packet',primary.count(marker)==1,'provenance')
+    where=primary.index(marker)
+    begin=primary.rfind('```json',0,where)+len('```json')
+    end=primary.index('```',where)
+    packet=json.loads(primary[begin:end])['original_kappa9']
+    packet_bytes=json.dumps(packet,sort_keys=True,separators=(',',':')).encode()
+    need('owned_kappa_packet_exact_hash',hashlib.sha256(packet_bytes).hexdigest()==KAPPA_SHA,'provenance')
+    need('owned_packet_is_actual_512_native_angle',
+         packet['definition']=='sin^2(512 theta_G), sin(theta_G)=p' and
+         packet['intervals'][-1]['power']==512 and packet['rounding_denominator_bits']==128,'provenance')
+    last=packet['intervals'][-1]
+    kap=I(F(last['lower']),F(last['upper']))
+
+    p,a=ne.P,ne.A
+    def zero(expr):
+        numerator=sp.together(expr).as_numer_denom()[0]
+        numerator=sp.expand(numerator)
+        symbols=sorted(numerator.free_symbols,key=str)
+        coeffs=sp.Poly(numerator,*symbols,domain='EX').coeffs() if symbols else [numerator]
+        return all(ne.GOLDEN_FIELD.from_sympy(c)==ne.GOLDEN_FIELD.zero for c in coeffs)
+    G=sp.Matrix(ne.G_LOCAL)
+    need('actual_G_sine_and_cosine',zero(G[1,0]-p) and zero(G[0,0]-a) and zero(a*a-p))
+    need('owned_angle_doubling_law_matches_native_G',zero((G*G)[1,0]**2-4*p**2*(1-p**2)))
+    c,k,A=sp.symbols('c k A',real=True)
+    R=sp.Rational(1,2)+a*p
+    S=1-R
+    d=R*c*c+S
+    t=R*S*(1-c*c)/d
+    b=-c*R*p**3*(1-c*c)/(2*d)
+    r=1-t
+    A2=p**3/(1-p**4)
+    K2=1-A2
+    need('Golden_R_S_product',zero(R*S-p**6/4))
+    need('normalized_valid_report_coordinates',zero(A2-(sp.Rational(1,2)-sp.sqrt(5)/10)) and zero(A2*K2-sp.Rational(1,5)))
+    need('rho_n_m_offdiagonal_ratio',zero(b/t+c*(a+p)/(a-p)))
+    need('rho_n_m_determinant',zero(r*t-b*b-R*S*(1-c*c)))
+    need('quadratic_q_complete_square',zero(A*A*r+2*A*k*b+k*k*t-
+           (A*A*d+t*(k-A*c*(a+p)/(a-p))**2)))
+    need('exact_q_endpoint_pair',zero(A2*r+K2*t-(A2+t/sp.sqrt(5))) and
+         zero(2*sp.sqrt(sp.Rational(1,5))*b-2*b/sp.sqrt(5)))
+    # A unit output SO(3) tangent is constructed from e and v=(I-ee*)sigma e.
+    rr,bb,dd,tt,zz,ww=sp.symbols('rr bb dd tt zz ww',real=True)
+    sigma=sp.Matrix([[rr,bb,dd],[bb,tt,zz],[dd,zz,ww]])
+    ee=sp.Matrix([1,0,0]); vv=sp.Matrix([0,bb,dd])
+    skew=ee*vv.T-vv*ee.T
+    need('explicit_full_domain_report_gradient_witness',zero((ee.T*(skew*sigma-sigma*skew)*ee)[0]-2*(bb*bb+dd*dd)))
+    need('gradient_witness_has_operator_norm_squared_v_squared',all(zero(x) for x in skew**3+(bb*bb+dd*dd)*skew))
+
+    # New application of the owned interval, with directed rational arithmetic.
+    pi=(I(5).sqrt()-1)/2
+    ai=pi.sqrt()
+    need('Golden_interval_positive_root_isolation',pi.lo*pi.lo+pi.lo-1<0 and pi.hi*pi.hi+pi.hi-1>0,'certified_interval')
+    need('actual_kappa_512_tight_enclosure',kap.contains_inside(F(93793197770933667,10**17),F(93793197770933668,10**17)), 'certified_interval')
+    Qi=4*kap*pi**7
+    ci=1-2*Qi
+    need('actual_Q0_not_chosen',Qi.contains_inside(F(12921646400972442,10**17),F(12921646400972443,10**17)),'certified_interval')
+    need('actual_c_positive_regular',ci.contains_inside(F(74156707198055115,10**17),F(74156707198055116,10**17)),'certified_interval')
+    Ri=I(F(1,2))+ai*pi; Si=1-Ri
+    di=Ri*ci**2+Si
+    ti=Ri*Si*(1-ci**2)/di
+    bi=-ci*Ri*pi**3*(1-ci**2)/(2*di)
+    A2i=pi**3/(1-pi**4); K2i=1-A2i
+    need('strictly_positive_pointer_state',ti.lo>0 and Ri.lo>0 and Si.lo>0 and ci.hi<1,'certified_interval')
+    need('quadratic_vertex_strictly_outside_allowed_k',
+         (A2i*ci**2*Ri-K2i*Si).lo>0 and bi.hi<0,'certified_interval')
+    root5=I(5).sqrt()
+    qlo=A2i+(ti+2*bi)/root5
+    qhi=A2i+(ti-2*bi)/root5
+    need('sharp_fibre_lower_endpoint_enclosure',qlo.contains_inside(F(21898686442710212,10**17),F(21898686442710214,10**17)),'certified_interval')
+    need('sharp_fibre_upper_endpoint_enclosure',qhi.contains_inside(F(34388166613545757,10**17),F(34388166613545759,10**17)),'certified_interval')
+    need('entire_fibre_q_between_point218_and_point344',qlo.lo>F(109,500) and qhi.hi<F(43,125),'certified_interval')
+    need('Kraft_stationary_probability_unattainable',qhi.hi<(pi**2).lo,'certified_interval')
+    delta=Ri*Si*(1-ci**2)
+    discriminant=(1-4*delta).sqrt()
+    eiglo=(1-discriminant)/2; eighi=(1+discriminant)/2
+    need('pointer_eigenvalues_separated_from_entire_fibre',eiglo.hi<F(7,1000) and eighi.lo>F(993,1000),'certified_interval')
+    need('variance_uniform_lower_bound_point13',
+         (F(109,500)-F(7,1000))*(F(993,1000)-F(43,125))>F(13,100),'exact_rational')
+    need('negative_CQ_slope_less_than_minus_one_third',
+         F(43,82)**3<(pi**4).lo,'certified_interval')
+    need('unit_operator_tangent_CQ_gradient_exceeds_six_twentyfifths',
+         F(4,9)*F(13,100)>F(6,25)**2,'exact_rational')
+    need('both_signed_cold_maxima_have_same_q_range',zero(
+         A*A*r+2*A*k*b+k*k*t-((-A)**2*r+2*(-A)*(-k)*b+(-k)**2*t)))
+    need('five_control_unscreened_probability',zero(A2-p**2/(1+p**2)))
+    need('five_control_CQ_slope_exact_minus_one',zero(A2/(1-A2)-p**2))
+    need('five_control_full_CQ_gradient_squared_four_fifths',zero(4*A2*(1-A2)-sp.Rational(4,5)))
+    bx,by=sp.symbols('bx by',real=True)
+    dN2=2*(1-c*c)*bx*by
+    residual=sp.expand(dN2**2-4*(1-c*c)**2*bx**2*(1-bx**2))
+    need('five_control_envelope_criticality_on_actual_rotation_circle',zero(
+         residual-4*(1-c*c)**2*bx**2*(bx**2+by**2-1)))
+    Qcollar=I(F(12921,100000),F(6461,50000))
+    cc=1-2*Qcollar; dc=Ri*cc**2+Si
+    tc=Ri*Si*(1-cc**2)/dc
+    bc=-cc*Ri*pi**3*(1-cc**2)/(2*dc)
+    qlc=A2i+(tc+2*bc)/root5; qhc=A2i+(tc-2*bc)/root5
+    disc_c=(1-4*Ri*Si*(1-cc**2)).sqrt()
+    emin_c=(1-disc_c)/2; emax_c=(1+disc_c)/2
+    need('actual_Q0_strictly_inside_declared_rational_collar',
+         Qcollar.lo<Qi.lo<=Qi.hi<Qcollar.hi,'certified_interval')
+    need('same_complete_CQ_gap_on_whole_Q_collar',
+         (A2i*cc**2*Ri-K2i*Si).lo>0 and bc.hi<0 and
+         qlc.lo>F(109,500) and qhc.hi<F(43,125) and
+         emin_c.hi<F(7,1000) and emax_c.lo>F(993,1000),'certified_interval')
+    counts={}
+    for row in rows: counts[row['kind']]=counts.get(row['kind'],0)+1
+    print(json.dumps({'schema':'d0.presign-joint-component-price/1','all_pass':True,'check_count':len(rows),
+      'classifications':counts,'checks':rows,'owner_sha256':OWNER_SHA,'owned_kappa_packet_sha256':KAPPA_SHA,
+      'rational_intervals':{'p':pi.json(),'kappa512':kap.json(),'Q0':Qi.json(),'c0':ci.json(),
+       'rho_nn':(1-ti).json(),'rho_nm':bi.json(),'rho_mm':ti.json(),'q_min':qlo.json(),'q_max':qhi.json(),
+       'lambda_min':eiglo.json(),'lambda_max':eighi.json(),'Q_collar':Qcollar.json(),
+       'collar_q_min':qlc.json(),'collar_q_max':qhc.json()},
+      'scope':{'actual_original_Q0':True,'new_root_or_fitted_Q':False,
+       'terminal_CQ_component_only':True,'entire_local_code_valid_target_domain':True,
+       'full_unknown_price_is_H_plus_J_plus_CQ':False,'old_fixed_E0_fibre_replaced':False,
+       'native_approximation_source_budget_follows_from_density_alone':False,'GR_closed':False}},sort_keys=True,indent=2))
+
+
+if __name__=='__main__':
+    main()
+```
+
+```json
+{
+  "all_pass": true,
+  "check_count": 35,
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "pinned_original_native_G_owner",
+      "pass": true
+    },
+    {
+      "kind": "provenance",
+      "label": "unique_owned_original_kappa_packet",
+      "pass": true
+    },
+    {
+      "kind": "provenance",
+      "label": "owned_kappa_packet_exact_hash",
+      "pass": true
+    },
+    {
+      "kind": "provenance",
+      "label": "owned_packet_is_actual_512_native_angle",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "actual_G_sine_and_cosine",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "owned_angle_doubling_law_matches_native_G",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "Golden_R_S_product",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "normalized_valid_report_coordinates",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "rho_n_m_offdiagonal_ratio",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "rho_n_m_determinant",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "quadratic_q_complete_square",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "exact_q_endpoint_pair",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "explicit_full_domain_report_gradient_witness",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "gradient_witness_has_operator_norm_squared_v_squared",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "Golden_interval_positive_root_isolation",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "actual_kappa_512_tight_enclosure",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "actual_Q0_not_chosen",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "actual_c_positive_regular",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "strictly_positive_pointer_state",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "quadratic_vertex_strictly_outside_allowed_k",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "sharp_fibre_lower_endpoint_enclosure",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "sharp_fibre_upper_endpoint_enclosure",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "entire_fibre_q_between_point218_and_point344",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "Kraft_stationary_probability_unattainable",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "pointer_eigenvalues_separated_from_entire_fibre",
+      "pass": true
+    },
+    {
+      "kind": "exact_rational",
+      "label": "variance_uniform_lower_bound_point13",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "negative_CQ_slope_less_than_minus_one_third",
+      "pass": true
+    },
+    {
+      "kind": "exact_rational",
+      "label": "unit_operator_tangent_CQ_gradient_exceeds_six_twentyfifths",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "both_signed_cold_maxima_have_same_q_range",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "five_control_unscreened_probability",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "five_control_CQ_slope_exact_minus_one",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "five_control_full_CQ_gradient_squared_four_fifths",
+      "pass": true
+    },
+    {
+      "kind": "exact_symbolic",
+      "label": "five_control_envelope_criticality_on_actual_rotation_circle",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "actual_Q0_strictly_inside_declared_rational_collar",
+      "pass": true
+    },
+    {
+      "kind": "certified_interval",
+      "label": "same_complete_CQ_gap_on_whole_Q_collar",
+      "pass": true
+    }
+  ],
+  "classifications": {
+    "certified_interval": 14,
+    "exact_rational": 2,
+    "exact_symbolic": 15,
+    "provenance": 4
+  },
+  "owned_kappa_packet_sha256": "e5dc1217878c920c15b40149d7e9cc16befa416b8e8dafae10aa33f16cc39325",
+  "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "rational_intervals": {
+    "Q0": {
+      "lower": "188850073720321932708406223443371195709089419967/1461501637330902918203684832716283019655932542976",
+      "upper": "188850073720321932708406223443371196277127700161/1461501637330902918203684832716283019655932542976"
+    },
+    "Q_collar": {
+      "lower": "12921/100000",
+      "upper": "6461/50000"
+    },
+    "c0": {
+      "lower": "541900744945129526393436192914770313550838571327/730750818665451459101842416358141509827966271488",
+      "upper": "541900744945129526393436192914770314118876851521/730750818665451459101842416358141509827966271488"
+    },
+    "collar_q_max": {
+      "lower": "502575194319542681919297439352873358631387659315/1461501637330902918203684832716283019655932542976",
+      "upper": "502589341386093497314495357074729337566670258727/1461501637330902918203684832716283019655932542976"
+    },
+    "collar_q_min": {
+      "lower": "320043682074112204240495567148766648174308417735/1461501637330902918203684832716283019655932542976",
+      "upper": "320057829140663019635693484870622627109591017147/1461501637330902918203684832716283019655932542976"
+    },
+    "kappa512": {
+      "lower": "319161713385769977579879221819862708593/340282366920938463463374607431768211456",
+      "upper": "319161713385769977579879221819862709553/340282366920938463463374607431768211456"
+    },
+    "lambda_max": {
+      "lower": "1452279093088745355781942014297336210038268930291/1461501637330902918203684832716283019655932542976",
+      "upper": "726139546544372677890971007148668105031021900287/730750818665451459101842416358141509827966271488"
+    },
+    "lambda_min": {
+      "lower": "4611272121078781210871409209473404796944371201/730750818665451459101842416358141509827966271488",
+      "upper": "9222544242157562421742818418946809617663612685/1461501637330902918203684832716283019655932542976"
+    },
+    "p": {
+      "lower": "903257686484120154655273696409592283959795001195/1461501637330902918203684832716283019655932542976",
+      "upper": "225814421621030038663818424102398070989948750299/365375409332725729550921208179070754913983135744"
+    },
+    "q_max": {
+      "lower": "502583618105050158304481005070132654966693924965/1461501637330902918203684832716283019655932542976",
+      "upper": "125645904526262539576120251267533163879137427721/365375409332725729550921208179070754913983135744"
+    },
+    "q_min": {
+      "lower": "160024830457085110780660467790349838017081419611/730750818665451459101842416358141509827966271488",
+      "upper": "320049660914170221561320935580699676584018625141/1461501637330902918203684832716283019655932542976"
+    },
+    "rho_mm": {
+      "lower": "4118569934035998298780886587682979056853198055/365375409332725729550921208179070754913983135744",
+      "upper": "257410620877249893673805411730186192238635143/22835963083295358096932575511191922182123945984"
+    },
+    "rho_nm": {
+      "lower": "-51019792060105511756495111457451136420162311893/730750818665451459101842416358141509827966271488",
+      "upper": "-102039584120211023512990222914902272263497094691/1461501637330902918203684832716283019655932542976"
+    },
+    "rho_nn": {
+      "lower": "22578552462418108203258770099461735989885310841/22835963083295358096932575511191922182123945984",
+      "upper": "361256839398689731252140321591387775857129937689/365375409332725729550921208179070754913983135744"
+    }
+  },
+  "schema": "d0.presign-joint-component-price/1",
+  "scope": {
+    "GR_closed": false,
+    "actual_original_Q0": true,
+    "entire_local_code_valid_target_domain": true,
+    "full_unknown_price_is_H_plus_J_plus_CQ": false,
+    "native_approximation_source_budget_follows_from_density_alone": false,
+    "new_root_or_fitted_Q": false,
+    "old_fixed_E0_fibre_replaced": false,
+    "terminal_CQ_component_only": true
+  }
+}
+```
+
+All 35 conditions pass in both modes: 15 exact symbolic, 2 exact
+rational, 14 certified interval and 4 provenance. The original native
+owner and the canonical certificate-packet hashes are pinned by the code.
+The previous native validity/clock/retention proofs are consumed at their
+declared scope, not silently rerun or strengthened.
+
+### 7fp.E. Frozen review and integration boundary
+
+Scientific proof SHA256 (opening and sections7fp.A--D):
+`2ef419a43582e869cecb6084dfd8fdef7134c8cf0d2132c955062f0a47e1a225`.
+
+Appended task-brief SHA256: `3da25d2a98f9fda44f42c0dd4e84a2087b64122d0c235557046d58acaa78cfdb`.
+
+Three bounded reviews checked the combined argument and its final
+source, price and native-task boundaries. Their initial findings
+and final corrected-snapshot approvals are preserved below.
+These reviews are not independent assembly acceptance or a
+physical-price discharge. No unchanged large suite was replayed.
+
+#### `admission-review.md`
+
+SHA256: `fd9b844f8b4ac53580550445c6154289567581a56084d8e39896b8a14c5575c6`.
+
+````text
+# Bounded independent admission/source composition review
+
+5 November 2026. Existing #334; read-only repository.
+
+Inspected assembled proof:
+
+* `proof.md`, 1916 lines,
+  SHA256 `b451e158073a1ffaf3f846f081cad873377bd7ffddce57f604c199414ff55eba`.
+* `brief.md`, SHA256
+  `4166fd5d3c89b4e95c4f8199473486422d93cb19e7807fdf68c2ce7d21527fca`.
+
+Reviewed the full opening and brief; source §8 JS25–37; price §§5–7,
+especially JC18–21 and the exact informative-response gap; admission
+maps, original marks, native chronology, actual gain and norms; and the
+unchanged original contract C. No unchanged tests were rerun.
+
+## Mathematical and admission findings
+
+1. JS31 is a genuine full-matrix identity. At the chosen O_+,
+   P_- O_+v=0, and xi^T U_+j b_+=s. Thus C_proper=s C_W for independent
+   W,V. Every post-code tangent maps the unit vector in S perpendicular
+   to y, so its cold coefficient derivative vanishes. The actual before
+   tangent lies in the minus eigenspace and U_+ maps it to b_out
+   perpendicular to xi. Consequently all five local cold derivatives
+   vanish as matrices without a scalar-C_W premise. The scalar premise
+   is correctly retained for the multiplicative old/new feedback-source
+   comparison eta_+ and its positive calibrated gain.
+2. The five-control classification is exhaustive at its declared scope:
+   post-code sphere criticality gives C=0 or ±s n_b, and the independent
+   pre-row at a nonzero branch gives R_b=0 or1 for 0<c<1. Only R_b=1
+   has a nonzero field coefficient. The negative saddle direction is
+   correctly mixed, as JS33 states; pure beta at fixed U raises J.
+3. The normalized estimates JS35–36 retain alpha, actual g_h and the
+   control/right-lift norm. On the stated strict compact c collar they
+   force R_b→1 and |C|→s c under normalized near-stationarity. A small
+   gain cannot hide C→0 or R_b→0 in this specified heat-small calibration.
+   The text correctly excludes claims about other heat-dominated routes.
+4. On every unscreened exact five-control critical point the pointer
+   remains pure and the full old bank is retained. The terminal q_* and
+   scaled-isometry CQ derivative are correctly typed:
+   q_*=p²/(1+p²), f'(q_*)=−1 and the unit-operator-norm code tangent
+   has source magnitude 2/sqrt(5). The original response difference
+   p⁴/(1+p²)+p³Q is exact and strictly positive. It excludes membership
+   in the original informative fixed-response fibre, not admissibility
+   in every declared extended code-valid task.
+5. AJ10 implements the existing before-reader slot by actual even
+   positive G powers and the full post-reader C domain by the owned
+   exact-valid compiler. Every finite word preserves code validity for
+   all initialized, possibly entangled pointers. Common pre-block padding
+   is a real CX(e,r)^2 identity; it belongs to the stated complete-block
+   implementation fibre and retains FN normal reactions. No freely
+   stationary reporter-coupled padding row is invented. All durations,
+   actual marks, births, SourceI addresses, final CX and its preceding
+   square stage remain accounted for.
+6. Original bank-only pre-sign effects are unaffected by pointer-only
+   preparation, while the full pointer mark becomes generated O_beta v.
+   The old fixed E0 response/late endpoint is not silently preserved.
+   Historical tests keep their actual suffix reader transport. No
+   physical dephasing, free diagonal record quotient or erased tail is
+   inferred from code validity.
+7. Native finite differences retain total pre/post/bank/cut errors,
+   actual steps and the correct positive central gain. AJ11 includes
+   all five tangent rows and the physical lift. Neither a finite exact
+   Golden pole nor an exact finite all-five root is claimed.
+8. Full Cost−Info binding remains separate from declared master-law
+   admission. The text neither adds CQ to H+J nor uses task data to
+   discharge contract C. Original upstream rows outside the exact
+   source map and the broader physical family are expressly retained.
+
+## Required final wording corrections
+
+The proved obstruction is UNSCREENED; the full displayed local domain
+also contains screened zero-cold branches. Two summary sentences must
+retain that quantifier:
+
+* Opening: change the shortcut's failure “on the whole stated local
+  domain” to “on the whole stated unscreened local critical set,” or an
+  equivalent explicit nonzero-field-gain statement.
+* Brief, final route paragraph: qualify “make both components stationary
+  in this same domain” by “with nonzero field gain in the stated
+  heat-small calibration.” No general exclusion of screened common
+  stationary points has been established or is needed.
+
+The body already carries these restrictions. This is a summary scope
+correction, not a defect in the five-row construction or normalized proof.
+One minor consistency correction: admission F's “new four-row” should
+read “local-control” or “five-row” for the completed application.
+
+Verdict on the pinned snapshot: mathematical/admission composition
+approved subject to those two summary scope corrections; no additional
+scientific calculation, checker replay or broader native-control census
+is required. Full GR/complete-price closure is not established.
+
+## Final corrected snapshot and finite-pair approval
+
+The final assembled files were read and their hashes independently checked:
+
+* `proof.md`, SHA256
+  `2ef419a43582e869cecb6084dfd8fdef7134c8cf0d2132c955062f0a47e1a225`.
+* `brief.md`, SHA256
+  `3da25d2a98f9fda44f42c0dd4e84a2087b64122d0c235557046d58acaa78cfdb`.
+
+Both required summary qualifications are now explicit: UNSCREENED,
+nonzero field gain and the stated heat-small normalization. Screened
+common stationary points are expressly left outside the obstruction.
+The local-control/five-row wording is consistent with the completed
+application. The full Cost−Info and informative-response guard boundaries
+remain unchanged.
+
+The added JS38–39 finite pair has the correct native scope:
+
+1. With e=|10> and h=|0> tensor v, the vectors are orthonormal and their
+   plane lies entirely in S. K=e h^T−h e^T has operator norm one and
+   fixes |11>. Consequently exp(tK)U_+ stays in C for every real t.
+   The owned exact-valid compiler applies to each target; no unrestricted
+   SO4 approximation with invalid-code leakage is used.
+2. y=(a/s)(h+p e) lies in that plane. Thus the full matrix cold is
+   s cos(t) C_W and the two target feedback determinants agree EXACTLY,
+   including arbitrary nonscalar C_W and independent old W,V. The
+   absence of the V branch comes from the actual plus preparation.
+3. The full retained old bank factors from the pure local output along
+   this curve. Its terminal two-label price is therefore the stated
+   f(q(t)), with q(t)=(sin t+p cos t)^2/(1+p²). The central terminal
+   contrast tends to −2/sqrt(5). No bank, unread direct-tail state or
+   failure branch is discarded in obtaining that formula.
+4. Exact target feedback symmetry is explicitly NOT promoted to exact
+   symmetry of two compiled native words. The actual same-input finite
+   catalogue retains marks and paid layout, and carries total cold/cut,
+   CQ-price/entropy, finite-step and full-clock error budgets separately.
+   The target rotation is not declared a free primitive or exact Golden
+   word. The different original informative final response remains a
+   genuine guard that this enlarged local pair does not preserve.
+5. Approximate CQ separation is correctly stated first for its
+   unnormalized local source. A normalized consequence requires its OWN
+   actually supplied bounded positive calibration. The text expressly
+   states that its field gain is zero on the five-control section and
+   never substitutes the master feedback gain for it.
+
+Final verdict: **approved at the stated bounded research scope, with no
+remaining mandatory correction**. This removes the local feedback-section
+premise and supplies the actual source-compatibility witness. It does not
+establish full physical-price binding, informative-task equivalence,
+arbitrary-family stationarity or GR closure. No unchanged tests or native
+replays were rerun for this analytic/textual delta; repository untouched.
+````
+
+#### `price-review.md`
+
+SHA256: `ea2cfe023f260028a51f98c1d55a6949a46eabef3f179d6e32bcfabc7a36d118`.
+
+````text
+# Independent combined price/source review — §7fp
+
+5 November 2026. Bounded read-only review; no unchanged scientific tests run.
+Reviewed combined proof SHA-256:
+`b451e158073a1ffaf3f846f081cad873377bd7ffddce57f604c199414ff55eba`.
+Reviewed brief SHA-256:
+`4166fd5d3c89b4e95c4f8199473486422d93cb19e7807fdf68c2ce7d21527fca`.
+
+## Verdict and one normalization precision
+
+The combined argument is mathematically sound at the stated local target,
+native transport and full-norm hypotheses. The opening and brief correctly
+separate the constructive five-control master section, its terminal-CQ
+source mismatch, and the informative-response violation. The response
+constraint excludes this section from the original fixed-response task;
+the proof does not call native code validity a replacement for that guard.
+
+One explicit precision is needed at the end of §A.8.5: JS35–36 imply a
+positive lower bound for the **unnormalized** CQ code covector. To infer
+nonvanishing after a CQ normalization, separately require its actual
+supplied calibration `0<Gamma_CQ<=M_CQ`. It must not be silently identified
+with the feedback calibration Gamma in JS35–36. At the exact five-control
+section q_* is field-independent, so the fixed-section field-CQ gain is
+zero, and cannot itself be declared a positive calibration. §B.5 already
+states the bounded-positive CQ proviso for the four-control calculation;
+the five-control normalized conclusion should repeat or reference it.
+No new source calculation or test is required for that clarification.
+
+## Cross-checks
+
+1. **Full matrix stationary section.** JS31 is correct even for independent
+   old W,V. At b_+, P_-b_+=0, so C_proper=sC_W. Every post-code tangent
+   sends the initialized plus vector into S perpendicular to y, annihilated
+   by xi; the V coefficient stays zero. The pre-reader tangent lies in the
+   minus eigenspace and is mapped to b_out perpendicular to xi. Thus all
+   five local derivatives of the full cold matrix vanish without assuming
+   the old corner scalar. This is stronger than a scalar feedback trace
+   cancellation and is used correctly.
+
+2. **Included old source and gain.** At the stated scalar old corner, the
+   full old matrix differential transports by
+   `eta_+=s²[(1-z)+zc²]/[(1-z)+zs²c²]`. No DC_V trace premise is needed on
+   this section, since the V coefficient is exactly zero. The current
+   nonzero off-shell rows remain nonzero after multiplication. Actual
+   finite-word alpha_n,C_n and target/actual gain discrepancies are retained;
+   no nonscalar native corner is converted into a scalar one by notation.
+
+3. **Saddle rather than selected minimum.** The mixed family
+   `C=s[c cos(delta)cos(lambda)-sin(delta)sin(lambda)]` is correctly signed.
+   Pure preparation at fixed code raises J, whereas lambda=-delta lowers J
+   for 0<c<1. The opening and brief do not confuse this joint saddle with
+   the field-screening minimum at R_b=0 or with a physical selector.
+
+4. **Robust all-five estimate.** Let k_*=sign(C)sH_cb/n. From ||k||<=s,
+   `||k-k_*||²<=2(s²n²-C²)/n²`. The pre-row discrepancy is therefore at
+   most sqrt(2)Delta/n. Substituting
+   `Delta=2|alpha|g_h epsilon_U`, `|alpha|<=s sqrt(R)` and
+   `|R'|=2sqrt(R(1-R))` gives exactly JS36. Division by sqrt(R) is justified
+   by nonzero actual feedback gain. With c in a strict compact subinterval
+   of (0,1), bounded g_h and the stated norm conversion, normalized local
+   master/heat/native errors tending to zero force R->1 and |C|->sc.
+   Hence neither C->0 nor R->0 can hide an unsolved row through its vanishing
+   feedback gain. A different heat-dominated calibration is expressly open.
+
+5. **Whole terminal CQ component.** At these limit sections the initialized
+   code image is ±y, q_*=p²/(1+p²), and the retained conditional bank maps
+   are scaled isometries. Thus the specified whole two-label terminal
+   component has f'(q_*)=-1 and full code-source norm2/sqrt(5). It is not
+   an entropy of a discarded marginal. The four-control canonical Q0
+   certificate and its exact rational collar independently give the
+   >6/25 bound. Criticality only along a flat maximum circle is not used
+   as a substitute for full local stationarity.
+
+6. **Actual response guard.** The exact gap
+   `q_orig-q_*=p⁴/(1+p²)+p³Q>=p⁴/(1+p²)>0` proves this stationary code
+   cannot implement original NPS10, including at Q=0. This is a concrete
+   code-valid-task versus informative-task distinction; it is not a new
+   claim that the original task is impossible. Genuine guard reactions
+   must be retained if those directions are excluded.
+
+7. **Complete-price boundary.** Neither proof nor brief adds CQ to H+J.
+   The master is its specified full Book03 law. The scalar versus amplitude
+   weighting, coherent memory Gram terms, proper initial/terminal operands,
+   actual full native Cost−Info and weighted-fibre sums remain their real
+   separate binding requirements. The component incompatibility changes
+   this local route; it is not a no-go for every actual full physical price.
+
+## Embedded-source reproducibility check
+
+Without executing the checker again, extracted the Python fence and compared
+it byte for byte with the final standalone source. They match, SHA-256
+`b094707b0e769bfa01d6bdb2ebdfdcf5366940563e0146ea1b548f3dae8f8c0c`.
+The assembled proof contains zero literal packet-marker occurrences, and
+PRIMARY plus the full assembled proof contains exactly one. The runtime
+marker construction therefore remains safe after publication. The existing
+35-condition normal/optimized receipt is unchanged:
+`37b2143dee4d8f870822be142db47fef3a7d26bc39b8aafa91850a41708452a6`.
+
+Final corrected snapshot acceptance will be pinned below. No repository
+files were changed by this review.
+
+## Additional exact finite-pair witness checked algebraically
+
+The proposed §A.8.6 witness is correct. For `e=|10>`,
+`h=|0> tensor v=(a,p,0,0)`, the vectors are orthonormal and
+`K=e h^T-h e^T` has operator norm one, fixes |11>, and rotates their plane.
+Since `y=(a/s)(h+p e)`,
+
+    exp(tK)y=(a/s)[(cos t-p sin t)h+(sin t+p cos t)e].
+
+With O_+ fixed, `U(t)=exp(tK)U_+` therefore gives the matrix identity
+`C_proper(t)=s cos(t) C_W` for arbitrary independent W,V. The V branch
+remains absent. Thus J(+t)=J(-t) exactly, including a nonscalar old C_W,
+because the determinant depends only on `s²cos²(t) C_W* C_W`.
+
+The return probability is `(sin t+p cos t)²/(1+p²)`, so
+q'(0)=2/sqrt(5) and the terminal CQ contrast tends to -2/sqrt(5).
+All ideal branch conditional outputs remain scaled isometries for arbitrary
+old input and chi(t)=0. Native comparison words must separately control
+their actual operator/cut and full CQ price/entropy errors after division
+by the real `2|t|` and the selected calibration. The CL heat estimate does
+not replace that CQ error budget. The target exp(tK) is not a new free
+physical primitive. No scientific test rerun is needed for these identities.
+
+## Final corrected snapshot — approved
+
+Final combined proof SHA-256, verified from disk:
+`2ef419a43582e869cecb6084dfd8fdef7134c8cf0d2132c955062f0a47e1a225`.
+Final brief SHA-256, verified from disk:
+`3da25d2a98f9fda44f42c0dd4e84a2087b64122d0c235557046d58acaa78cfdb`.
+
+The own-CQ-calibration clarification is present in §A.8.5: the approximate
+argument first gives an unnormalized CQ lower bound; normalized CQ
+stationarity requires its separately supplied bounded positive calibration.
+The zero field-CQ gain on the exact constant-response section is explicit.
+The opening and brief now restrict the no-go to the unscreened critical set
+and the proved heat-small normalized regime. Screened common stationary
+points and other heat-dominated calibrations are not falsely excluded.
+
+The added JS38–39 finite witness matches the algebra reviewed above. Its
+nonscalar old-corner determinant equality is valid, and the native endpoint
+CQ-price/entropy errors, feedback errors, heat remainder and actual
+calibrations are kept separate. No exact finite native symmetry or a new
+free rotation is inferred.
+
+The final embedded checker is still byte-identical to the pinned standalone
+script. The complete prospective PRIMARY+proof text has exactly one packet
+marker. This was checked statically; unchanged scientific tests were not run.
+
+**Approve this corrected proof and brief at their stated scope. No mandatory
+price/source corrections remain.** This review accepts the computed local
+master section, its precise terminal-CQ incompatibility and response-guard
+consequence. It does not accept a full native Cost−Info binding, an added
+H+J+CQ action, original informative-task equivalence or GR closure.
+````
+
+#### `source-review.md`
+
+SHA256: `9701c8293a542bcc9eda39bad98275ac3124dd407fc7dc4ffe1547b8eba549f0`.
+
+````text
+# Bounded final source review of §7fp
+
+5 November 2026. Existing #334; source/heat lane. No repository edits and no
+unchanged checks rerun.
+
+Reviewed mathematical snapshot: `proof.md`, SHA256
+`b451e158073a1ffaf3f846f081cad873377bd7ffddce57f604c199414ff55eba`, 1916 lines.
+Reviewed `brief.md`, SHA256 `21c886605f9a6cb67b82104aac8390b88ce8979c5c953a90b47d89ea51e14658`.
+
+Verdict: the mathematics and source/normalization interfaces are approved.
+Two narrowly scoped wording corrections are required in the reviewed proof:
+
+1. Admission §C.1: replace “the full price has both positive code directions”
+   with “the unreduced feedback J has both positive code directions”. The
+   explicit saddle is proved for J. The H+J extension here proves first-source
+   kappa control, not an exact finite-master Hessian statement.
+2. Admission §A: replace “No fifth local control is needed or asserted” with
+   a statement that there is no further POST-READER control beyond the four;
+   the independent before-reader preparation is added below. The completed
+   theorem includes that genuine fifth coordinate.
+
+These changes do not alter an equation or require replay of the existing
+35-condition checker. The final corrected SHA should be pinned separately.
+Current on-disk proof SHA at review-file creation: `b451e158073a1ffaf3f846f081cad873377bd7ffddce57f604c199414ff55eba`.
+
+## Checked source content
+
+- JS31 is an exact full-matrix proper-cold identity: the fixed pre-rotation
+  sends v to the plus-X state, so the V branch is absent on the actual
+  prepared input. U_+ sends this initialized column to y=P_S xi/s. Therefore
+  C_proper=s C_W for arbitrary independent W,V and every original input
+  column, without tying the legs before differentiation.
+- All five local first variations of that matrix are zero. A code tangent
+  moves y within S orthogonally to y; the pre-tangent lands in the other
+  initialized column, orthogonal to xi. This proof does not require the
+  old compression itself to be scalar. It keeps the complete local domain,
+  including dark and unsharp directions, and adds the separate pre-slot.
+- The scalar-chart source transport still has its necessary narrower type:
+  at C_W=cI, eta_+=s²[(1−z)+zc²]/[(1−z)+zs²c²] is positive and transports
+  every included DC_W component. It preserves old centre zeros and nonzero
+  off-shell rows. No arbitrary nonscalar old-Gram source is thereby removed.
+- The explicit SO4 frame has the right orientation. O_+,U_+ are constant
+  in the field after all five coordinates have been varied. The mixed
+  path in JS33 proves the saddle; a pure pre-rotation at fixed code has
+  positive curvature and is correctly distinguished in the source text.
+- JS28 exhausts the local critical set for 0<c<1. C=0 and R_b=0 have zero
+  feedback field gain. The only unscreened branch has R_b=1, C=±sc. The
+  c=1 degeneracy and the limits of the declared local domain are retained.
+
+## Actual gain and finite-source control
+
+- JS34 uses the actual pre/post coefficients alpha_n,beta_n, actual c_n
+  where its scalar corner is certified, and the positive product alpha_n C_n.
+  Gamma_n is frozen, not differentiated. The target/actual ratio and any
+  nonscalar original compilation defect remain explicit. A finite Golden
+  word is not declared to hit the exact continuum pole.
+- Total pre/post endpoint errors telescope, with original processor/cut/mark
+  errors added. The 2r0 z/(1−z) feedback Lipschitz constant in JS18 gives the
+  correct sum-of-two-endpoint errors divided by 2|t|Gamma_n. Actual local
+  basis/material/right-lift and price-reading errors are retained.
+- Exact-valid postwords work on every pointer input, so approximate native
+  preparation introduces no invalid branch. All calls and stages remain;
+  common pre/post block lengths and later padding are genuine positive
+  native words. FN reacts to implementation constraints at fixed logical
+  beta,U; it does not delete their five logical equations.
+- The full 425D clock uses the arbitrary-endpoint CL theorem. Both old and
+  new thermal remainders are present when comparing H+J sources. Resource
+  order chooses the actual finite comparison catalogue before padding.
+  Constant chosen sections have no field derivative; any moving completion
+  retains its actual envelope norm. No exact finite thermal zero is asserted.
+- JS35 follows from ||k||<=s and k·H_cb=C. JS36 has the correct constants:
+  (1−c²)sqrt(1−R)<=2n g_h epsilon_beta+2sqrt(2)g_h epsilon_U. Nonzero gain
+  makes R>0, legitimating division. With the strict compact c collar and
+  actual g_h/norm bounds, normalized near-stationarity forces R->1 and
+  |C|->sc. Vanishing gain cannot hide the screened branches in this regime.
+
+## Price/admission composition
+
+At the unscreened branch the initialized code vector is ±y, giving exactly
+q_*=p²/(1+p²), f'(q_*)=−1 and code-gradient norm 2/sqrt(5). A left SO(S)
+rotation provides the actual local witness; unused completions do not
+remove it. The price lane retains all conditional quantum output and
+uses its stated efficient-CQ convention. Its four-control actual-Q0
+certificate is a separate, narrower checkpoint.
+
+The fixed-response gap q_original−q_*=p⁴/(1+p²)+p³Q is positive. Therefore
+this stationary section belongs to the enlarged code-valid descriptor;
+it is not automatically an implementation of the original informative
+E0 task. Actual guards retain reactions, and late readers use their true
+suffix transport. Canonical birth alone does not freeze an admitted
+before-reader gate.
+
+Opening and brief preserve the essential conclusion: this is a computed
+five-control master-kappa section and a component/source incompatibility,
+not an assertion that the physical action is H+J+CQ, not original-task
+admission, and not full Cost–Info or GR closure. Old rows are consumed only
+within their owned map; scene/calibration/other banks remain explicit.
+
+
+## Additional finite-pair witness checked analytically
+
+The parent's proposed §8.6 witness is correct. With h=(a,p,0,0), e=|10>,
+K=e h^T−h e^T, one has ||K||=1, Kh=e, Ke=−h and Kz0=0. The exact
+maximizer image is y=(a/s)h+(ap/s)e. Hence y^T exp(tK)y=cos t and, with
+O_+ fixed, the full proper cold is s cos(t) C_W for arbitrary independent
+W,V. The V branch remains absent. Its complete determinant feedback is
+exactly even in t, without requiring C_W to be scalar.
+
+The same prepared code has q(t)=(sin t+p cos t)²/(1+p²), q'(0)=2/sqrt(5),
+and f'(q*)=−1. Its central CQ difference therefore tends to −2/sqrt(5).
+These are target finite-pair identities, not equality of the two compiled
+native histories' complete thermal price. Native realization retains the
+actual complete endpoint/cut and CQ continuity errors, finite steps and
+separate true calibration/price-reading budgets, plus the full CL heat
+bound. It remains an enlarged code-valid task comparison, not an original
+informative-response implementation pair. No additional checker run was
+performed or needed for these two-dimensional analytic identities.
+
+
+## Final corrected snapshot — approved
+
+Inspected and pinned on 5 November 2026:
+
+- `proof.md`: SHA256 `2ef419a43582e869cecb6084dfd8fdef7134c8cf0d2132c955062f0a47e1a225`, 1969 lines.
+- `brief.md`: SHA256 `3da25d2a98f9fda44f42c0dd4e84a2087b64122d0c235557046d58acaa78cfdb`, 76 lines.
+
+**Final verdict: approved at the stated scope; no mandatory corrections remain.**
+Both wording corrections above are implemented: the saddle refers to the
+unreduced feedback J, and the four post-reader controls are explicitly
+separated from the fifth pre-reader coordinate. The route change now
+excludes only common stationarity with NONZERO field gain in the specified
+heat-small regime, not screened common stationary points.
+
+The added JS38–39 finite witness is exactly the analytic identity reviewed
+above. Its implementation paragraph keeps the actual whole terminal-CQ
+entropy/price error separately from the cold-operator and complete heat
+errors, each with its own actual calibration. The revised JS37 discussion
+correctly states the unnormalized CQ lower bound first, and requires a
+bounded positive CQ calibration before inferring a normalized obstruction.
+It expressly assigns no positive field-CQ gain where q_* is constant.
+
+No unchanged test, numerical certificate, large native execution or Lean
+module was rerun for these local corrections and analytic additions. This
+approval does not change the retained scientific/task/price scope or
+`GR_closed=false`.
+````
+
+Only the existing primary artifact and task brief are changed.
+The complete previous byte content is preserved. No claim, queue,
+assembly edge, lifecycle or raw216 contract is modified. The
+portable check is replayed after extraction against the final
+embedded context; final work/protocol/assembly/repository and
+whitespace guards are run before publication. GR_closed=false.
+
 ## 8. Reproduction
 
 Run from this directory:

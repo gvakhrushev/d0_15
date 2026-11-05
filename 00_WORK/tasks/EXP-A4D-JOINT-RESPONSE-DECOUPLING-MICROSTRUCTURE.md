@@ -22228,3 +22228,79 @@ new readout/other independent rows. These cannot be reconstructed by
 assigning Info from the desired H+J price. This checkpoint removes the
 missing pre-sign operation/source map, not the full A--D premise.
 GR_closed=false; scientific_promotion=false; goal active.
+
+## 2026-11-05 checkpoint: full local readout section and joint price obstruction
+
+Phase: native realization / final composition. Existing #334 only.
+Input: `d957be6054102077940ad93a8f403d4f23a1fa0b`.
+Result location: §7fp of the existing full-source primary artifact.
+Write paths remain that artifact and this brief. No new task, branch,
+registry result, acceptance, Ready, retirement, merge or public promotion.
+
+Parent premise: §7fo's unresolved local readout equations, followed by
+its complete price/task source map. Changed mathematical input: the actual
+pre-sign word has cold xi^T U j(cP_++P_-)v rather than the previous XF
+heat-trace functional. Reuse §7fn's complete four-dimensional SO4 code-
+valid domain and exact-valid positive compiler; no new control census.
+
+Its full cold maximum is sqrt(1-p^4) sqrt(Rc^2+1-R). A smooth section
+solves every local feedback row and has positive field gain. The actual
+source includes the moving section, all old/current variations, native
+finite-difference errors and all425D heat modes. This solves all four
+post-reader rows, not the distinct before-reader preparation by fiat.
+
+That actual fifth slot is included next. Its canonical preparation has
+a nonzero row. Exact joint classification shows that a nonzero field gain
+requires R_b=1. A CONSTANT pre/post target section then gives the full
+matrix identity C_proper=s C_W, s^2=1-p^4, with all FIVE local derivatives
+zero even for independent W,V. On scalar C_W=cI the old current feedback
+covector transports by eta_+=s^2 d_old/d_new>0. Old nonzero off-shell rows
+are not erased. The saddle's negative direction is mixed preparation/code;
+pure preparation at fixed code is not mislabeled negative.
+
+One actual positive-word catalogue supplies before-reader even G powers
+and post-reader exact-valid words with common paid blocks/marks. No exact
+finite pole is asserted. Actual alpha_n,C_n, Gamma_n, native errors and
+the complete occurrence/right-lift norm fix the budget before final paid
+padding. Full normalized estimates exclude screened C->0/R_b->0 limits;
+raw smallness from a vanishing gain is not accepted.
+
+The same execution fails two complete tests. Its only unscreened joint
+feedback branch writes q_*=p^2/(1+p^2), independent of the field, while
+the original informative writer requires p^2+p^3 Q. Their gap is at least
+p^4/(1+p^2)>0. The specified whole terminal two-label CQ component has
+f'(q_*)=-1 and an actual code tangent of source magnitude2/sqrt(5).
+It therefore cannot be declared a neutral remainder of H+J. With the
+canonical pre-input fixed, the actual original Q0 and a rational collar
+instead give a uniform full-code CQ source gap>6/25. Every critical code
+control is classified, including both signed maxima and zero-gain zeros.
+
+An explicit valid-code rotation K=e h^T-h e^T now realizes this source:
+C_proper(t)=s cos(t) C_W and J(+t)=J(-t), even for nonscalar old C_W,
+whereas the terminal CQ central contrast tends to -2/sqrt(5).
+The finite native comparison keeps separate operator, full CQ-price,
+clock and calibration budgets; it does not introduce a free rotation.
+
+Scope: these are component/source incompatibilities, not a new action
+H+J+CQ or a no-go for every native physical price. The existing Book03
+master is the complete specified master law. A task datum does not prove
+the separate full Cost--Info binding required by A--D C. If an informative
+response guard excludes a variation, retain its actual constraint reaction;
+canonical birth alone does not supply that guard.
+
+Smallest decisive verification: 35 exact symbolic/rational/certified-
+interval conditions using the pinned native Golden data and the existing
+original kappa512 certificate; normal and -O with warnings-as-errors are
+byte-identical. No old large suite, geometry or Lean replay. Full-domain,
+five-control and normalized-limit proofs are analytical, with bounded
+independent reviews; affected final integration guards run once.
+
+Route change: do not seek another local encoder to make both components
+stationary WITH NONZERO FIELD GAIN in this same domain and its stated
+heat-small normalization. Screened common stationary points are not
+excluded. Compute the actual complete weighted
+price and its full source/reactions on an informative admitted history;
+any extra compensating source must come from that execution, not be fitted.
+The old geometric and current-source theorems remain intact. The assembly
+template is consumed without independent acceptance/discharge.
+GR_closed=false; scientific_promotion=false; goal active.
