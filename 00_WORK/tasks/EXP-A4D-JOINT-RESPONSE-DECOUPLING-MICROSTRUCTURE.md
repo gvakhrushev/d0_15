@@ -22304,3 +22304,91 @@ any extra compensating source must come from that execution, not be fitted.
 The old geometric and current-source theorems remain intact. The assembly
 template is consumed without independent acceptance/discharge.
 GR_closed=false; scientific_promotion=false; goal active.
+
+## 5 November 2026 — sharp original-event history and complete information recovery
+
+Phase: native realization / final composition, existing #334. Scientific
+input e8ce3b743f65b37402afca044de408a614ebca44; integration preserves
+7fn/7fo through d957be6054102077940ad93a8f403d4f23a1fa0b. Only the existing
+full-source artifact and this brief change. Consumer: original H.1/EO's
+actual informative event, programme-source C4 and JZ general recovery.
+The existing assembly template is consumed without new status/acceptance.
+
+SER1--SER12 supply a sharp actual first registration of the ORIGINAL
+pre-sign event. A real canonical pointer birth followed by the owned
+paid inverse prepares0; CX(event,r) occurs before the sign. The old body
+reverses with r retained. Cursor/tail preparation and a validity slot
+then emit0 or10 according to the saved bit. Exactly57 extra stages split
+19 before the sign and38 after reversal; all branches pay every stage.
+A retained1 forces next emitted0. This derives the output continuation,
+not a universal scheduler or branch-dependent early halt.
+
+Full branches K0=(V+W)/2, K1=(W-V)/2 retain independent forward/backward
+operators. Their effects exactly equal the prescribed original event.
+Truthful all-input registration fixes that effect and excludes the later
+code-valid-only screened substitute on this original task. The coherent
+whole state and any required transported future effects remain.
+
+The complete generated-input CQ spectrum is q_b spectrum(rho), including
+all unknown original Spin, old correlations and unmeasured WORK. Thus the
+first record gain is exactly h(q), not a terminal-marginal guess. The
+larger scalar-centre chart has its full first derivative and a uniform
+Holevo remainder. No per-gate measurement or new environmental input is
+invented. Code repetitions and deterministic suffixes add zero new Info.
+
+Every independent current row is kept: A_pre=Lf. The invertible map
+T(x,b,y,z)=(x+b-y,x-b+y,b,z) obeys A_old T=A_pre, fixes the geometric lift
+and has norms at most3 and2. The oriented information source therefore
+has the same full current kappa Einstein--two-CAR covector, with actual
+Gamma_I=|log(q/(1-q))/log(phi)| gamma_h s/2. Each actual conditional Born
+surprise also has this equation class with its own positive gain; neither
+label is postselected. A mean score is not confused with entropy variation.
+
+At JZ ZERO the event effect is exactly scalar on all CODE/old inputs.
+The four original finite preparation pairs, FP8, kernel loops completed
+before the event and proper-cut old pairs preserve q EXACTLY. Hence JZ's
+one off-shell compiler gives exact finite INFORMATION-source roots for
+EVERY computable regular Einstein--two-CAR solution, with the same geometry
+budgets and converse limit theorem. Actual q is not the unapproximated
+ideal CAR target. The all-solution result is analytical, not the fixture.
+
+The fresh-block tower keeps every old record. The current initialized
+ZERO block is I_old tensor chi_n, and complete scalar effects give total
+joint information sum h(q_n). Earlier exact pairs keep the entire joint
+information unchanged. No bank-only inverse resets the recorded endpoint.
+Previous genuine work and independently varied old data retain their rows.
+
+The SAME new word has C_sharp=alpha C_V+b_rec C_W. Its full Book source
+uses the actual past-weighted j_h and gain -b_rec gamma_h s j_h'(c_sharp),
+including C_old squared; the true initial rank remains4. All new births,
+clock stages and modes enter CL's paid-padding estimate. On the inherited
+EO/FN graph this gives the original current Book kappa source, transported
+to the information source by T. Old-Gram sources remain explicit. Exact
+old finite thermal roots are NOT inferred for this augmented word.
+
+Remaining application: actual executed edge Cost, Book vertex Info and
+whole weighted continuation binding, with all true work/old/scene rows.
+The displayed complete ledger derivative and WT1--WT7 specify the residual
+to substitute into C4. F0 does not by itself supply opcode tariffs; same
+stage count does not prove their source equality. h(q) is not assigned as
+Book Info, and the Born/path-weight cocycle is a different premise. No
+new physical price or sum H+J+Info is inserted. Entire A--D acceptance,
+GR_closed and raw216 remain open; scientific_promotion=false, goal active.
+
+Decisive validation:417 exact bounded native/linear-algebra checks; normal
+and optimized warnings-as-errors receipts coincide. Source SHA256
+031626ac24f4d3fe81448e5a1a982d518b18a1b37c7252f22601a31fa54da701;
+executed receipt SHA256
+c9b6bac3a1e2e8fa3c32a178c60e3202a6bd115caa96cfea8c558738dd8d32cb.
+The full checker/receipt and review scope are embedded in SER8. Final
+extraction replay and the affected integration guards are run once; no
+unchanged geometry, huge heat, root or Lean replay is introduced.
+
+Final extraction replay reproduces the executed receipt SHA256 exactly.
+Work, agent, assembly and whitespace guards pass; assembly remains98
+results /22 obligations /5 discharged, scientific_promotion=false.
+
+Concurrent 8ad92906bb3393f07f18dc31ad44b0bd38209599 /7fp is preserved.
+Its genuine five-control joint obstruction is not canceled by the new
+sharp informative task or by the four-slot coordinate transport. On an
+enlarged encoder/preparation domain all of those rows remain required.

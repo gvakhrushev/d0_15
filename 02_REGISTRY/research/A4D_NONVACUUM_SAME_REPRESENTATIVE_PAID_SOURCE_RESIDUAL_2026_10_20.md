@@ -172585,3 +172585,1154 @@ the executed receipt above. Work and agent guards pass; assembly reports
 98 results, 22 obligations, 5 discharged and scientific_promotion=false.
 Whitespace validation passes. No mathematical acceptance is inferred from
 these structural checks.
+
+
+## Sharp original-event registration: a paid serial history with the complete Einstein information source
+
+5 November 2026. Existing #334 / native realization and final composition.
+Scientific inputs: JZ at e8ce3b743f65b37402afca044de408a614ebca44 and
+§7fo at d957be6054102077940ad93a8f403d4f23a1fa0b. No new research execution or
+selection principle is introduced. The consumer is §7fo's actual original
+pre-sign report and programme-source C4, together with EO/JZ recovery.
+
+The changed input is a PAID zero preparation of the new pointer. It makes
+the original pre-sign event an exact recorded bit, in place of §7fo's noisy
+canonical-born pointer. The serial continuation then follows from the
+retained bit and the original 0/10 grammar. Every conditional quantum output
+and every executed stage remain. This gives a complete information-source
+map on all four independent preparation occurrences, with a bounded
+invertible transport to the original Einstein source. It also transports
+JZ's exact finite record-price zeros for every regular Einstein--two-CAR
+solution. Neither an unexecuted intermediate measurement nor a free blank
+is used.
+
+This is a positive application of the original informative task. Its exact
+information source is not by itself the entire physical Cost--Info price.
+The final subsection retains the actual work and vertex-weight application
+needed for that further conclusion. The augmented Book clock is recalculated;
+its old exact finite thermal roots are not asserted unchanged.
+
+### SER1. One literal history, with a sharp original event and serial output
+
+Use the original actual pre-sign projector Pi_1 and complete forward and
+backward operators A_f,A_b from §7fo/PQ2. They remain independent. At their
+matched values define W=A* Z A, with Z=I-2Pi_1. Put a=sqrt(p), p+p^2=1.
+A canonical new wire is born in v=(a,p). The already owned paid inverse
+Z_x G_x Z_x maps v EXACTLY to0. For x distinct from the one fixed SourceI
+apparatus a_wire, its literal routing uses1 G,4 SourceI and12 CX calls;
+the apparatus and opaque Spin are restored on ALL columns. A birth plus
+this inverse costs18 real stages. The use of a for sqrt(p) below is not
+an additional apparatus address.
+
+Insert birth/zero-preparation of r and CX(event,r) immediately BEFORE the
+original central sign. This is19 extra stages. Finish the original sign
+and backward body while retaining r. No subsequent operation changes its
+Z_r record. Then append the following continuation:
+
+* birth cursor c, pay its zero preparation, and execute CX(r,c);
+  emit the first digit r, with active=c (38 extra stages in total);
+* birth tail t and pay its zero preparation; emit the second SLOT
+  (valid=c,symbol=t=0), at extra stage56;
+* execute CX(r,c), returning the cursor to0, at extra stage57.
+
+The valid-slot convention is part of this actual two-time output protocol.
+For r=0 the emitted word is0; for r=1 it is10. Both branches execute ALL57
+added stages, including the inactive second slot and final cursor cleanup.
+A first codeword can be complete before that cleanup; no physically earlier
+halt, shorter branch clock, or free invalid slot is inferred. The inventory
+is exactly3 births+3 G+12 SourceI+39 CX. All three new wires are distinct
+from the fixed apparatus; in the retained tower this is the relevant case.
+Only this interleaving of the57 stages is used: after reversal the source
+of the serializer is the preserved r, NOT the changed processor PORT.
+
+The parser states are start, pending1, complete0, complete10. The saved1
+has only one valid next digit,0; its deterministic suffix has zero new
+conditional information. This is a concrete next-output rule from retained
+history. It does not purport to select every primitive implementation of
+the rule or a universal scheduler. The actual microsteps above are supplied,
+charged and checked.
+
+### SER2. Full branch operators and task admission
+
+Retain V=A_b* A_f and W=A_b* Z A_f. After the paid pointer preparation,
+the two complete conditional old-output maps are
+
+    K_0=(V+W)/2,  K_1=(W-V)/2,
+    K_1* K_1=A_f* Pi_1 A_f,
+    K_0* K_0=A_f*(I-Pi_1)A_f.                         (SER1)
+
+Every backward occurrence cancels from the last two effects because it
+is unitary; it is NOT removed from the complete output, cold corner or
+price. The pointer and the serial suffix are a single first recording of
+the original event. Reading the saved bit again is not another h(q).
+
+For the task of truthfully recording this specified original event on
+EVERY live input, any admitted effect E_b must obey Tr(rho E_b)=Tr(rho Pi_b)
+for all rho at the mark. The trace pairing forces E_b=Pi_b. Thus a freely
+rotatable reader is not another faithful implementation of this task.
+The required response is a function of each free logical field input;
+it does not impose an Einstein equation or freeze that input. This is
+stronger than §7fn's code-valid-only domain, whose screened encoder has a
+different effect. Full-operation fidelity and weaker effect fidelity keep
+their distinct Book reactions, exactly as §7fo.A specifies.
+
+Globally the copied record remains coherent with ALL old/current WORK.
+The CQ state below is the restriction to the actual declared record algebra,
+not an assertion of irreversible global pinching. Required earlier readers
+must be transported through this new isometry. Future cross-record tests
+are not represented by a diagonal conditional sum; §7fo/WT1 remains binding.
+
+### SER3. The complete information gain, not just a terminal marginal
+
+Start from the actual fixed initial Spin4, with any genuine spectator
+reference, and compose the whole generated prefix. Every native word has
+form I_Spin tensor A+L_i tensor B with A,B real, L_i*=-L_i and L_i^2=-I.
+For each fixed computational output component its input Kraus matrix is
+uI+vL_i, hence its effect is(u^2+v^2)I. Summing over ALL unmeasured output
+components of one recorded event gives
+
+    K_b* K_b=q_b I on the TRUE initial carrier.         (SER2)
+
+Here K_b denotes the full generated map, including the actual initial
+embedding, not an arbitrary new input on an intermediate active WORK bank.
+For any initial mixed/entangled density rho, the conditional full-output
+block has nonzero spectrum q_b spectrum(rho). Consequently
+
+    I_rec := S(direct_sum_b K_b rho K_b*)-S(rho)
+           =h(q), q=q_1, h(q)=-q log q-(1-q)log(1-q).  (SER3)
+
+The entire old input entropy cancels; no unmeasured helper is discarded.
+All deterministic copied digits, cursor states and tail states add zero
+conditional entropy. This follows for the actual native words, including
+their generated old history, and not just for a continuum target.
+
+For a larger declared input chart whose effects are scalar only at its
+centre, the FIRST identity is still
+
+    D I_rec=h'(q)Dq.                                  (SER4)
+
+Indeed X_b=sqrt(rho)E_b sqrt(rho); at E_b=q_b I, sum D E_b=0 cancels every
+log(rho) term in D[-sum Tr X_b log X_b]. No inverse eigenvalue bound on
+rho is needed. Off centre the exact correction is
+I_rec=H(q)-chi, chi=sum_b q_b D(X_b/q_b || rho)>=0, and
+
+    chi <= Var_rho(E_1)/[q(1-q)].                       (SER5)
+
+This follows from D(sigma||rho)<=log Tr(sigma^2 rho^-1) and scalar log x<=x-1,
+on the support of rho. It supplies a uniform quadratic finite-comparison
+error near scalar effects, including singular old inputs. Its bound must
+be divided by the actual displacement and source gain in that larger chart.
+No physical source is obtained by choosing a convenient old density.
+
+### SER4. All four current rows and an invertible whole-source transport
+
+Use EO's actual radial table and whole original cold jet d*, with
+-d*/gamma_h=DI_h+r_rep in its original physical dual norm. Let M denote
+the full born-BANK compression of the matched reflection; its table is
+M=cI+sD+E_M, D=sum_j d*_j V_j. Keep all four old coordinates
+u=(X_f,X_b,Y_f,Y_b), with L as NG's original marked field map. The ACTUAL compiled inner
+Y_f controls commute with the central sign S exactly by their native
+CODE/protected profile; approximation to a commutant would not suffice.
+The backward occurrences are after
+the recorded event. Thus the exact record effect and its rows are
+
+    E_event=(I-M)/2 on full CODE at the matched table,
+    Dq[X_f]=-(1/2) Tr rho i* [M,X_f] i,
+    Dq[X_b]=Dq[Y_f]=Dq[Y_b]=0.                          (SER6)
+
+These zero rows result from the physical chronology/commutant, not an
+identification of the four independent inputs. Define A_pre(u)=L(X_f).
+The marked geometric lift R_diag(v)=(Rv,Rv,Rv,Rv) still satisfies
+A_pre R_diag=I. In the unchanged max-slot norm ||A_pre||<=1 and ||R_diag||=1.
+The off-shell record source is therefore
+
+    Dq=-(s/2) d*[A_pre]+error.                         (SER7)
+
+Compare with the ORIGINAL feedback map A_old=(L(X_f)+L(X_b))/2.
+On the full four-slot space the explicit change of coordinates
+
+    T_pre(x,b,y,z)=(x+b-y, x-b+y, b,z),
+    T_pre^-1(u,v,w,z)=((u+v)/2,w,(v-u)/2+w,z)           (SER8)
+
+obeys A_old T_pre=A_pre, T_pre R_diag=R_diag,
+||T_pre||<=3, ||T_pre^-1||<=2. This is an invertible transport of every
+current covector in the inherited norm, not a restriction to linked legs
+or deletion of backward/inner equations. On the actual effect-faithful
+implementation fibre the record price is exactly constant. Full-operation
+normal reactions and any truly free old/preparation rows remain their
+original equations. A weaker chart must use its actual remaining effect
+rows; its name does not make them vanish.
+
+For the definite information functional F_I=-I_rec/log(phi), write
+f'(q)=log(q/(1-q))/log(phi). The original fixed reference obeys
+q_ref=4 lambda_vis<=4p^7<1/2 and q_ref>0. Thus actual native anchors
+and their original reporter errors eventually lie in a compact subinterval
+of(0,1/2), without fitting a tariff or moving to an entropy equilibrium.
+With the ACTUAL central q and the original gamma_h,s, set
+
+    Gamma_I=|f'(q)| gamma_h s/2>0.
+    -D F_I/Gamma_I=A_pre* DI_h+error.                   (SER9)
+
+Equivalently this is the original full current Einstein covector transported
+by T_pre*. The reporter, compiled-table, decoder and whole-source norm
+errors have the old EO/JZ bounds with their actual gain; final finite price
+reading errors are the sum of BOTH endpoint errors divided by2|t|Gamma_I;
+the symmetric-contrast Taylor remainder has its own actual normalized bound. Choose
+all accuracies after the finite chart and right-lift constants. The same
+nonzero off-shell separation and physical lifting arguments then apply.
+An ambient or new independently free source is never called zero by this
+coordinate identity.
+
+### SER5. Exact finite record roots and global recovery
+
+At every actual JZ ZERO centre, the original exact commutant construction
+gives B_s* S B_s=I_CODE tensor U_n and its born-BANK effect is q_n I_CODE,
+q_n=(1-c_n)/2. This is an exact identity of the compiled word even when
+the original unrounded d* is small and nonzero. It is not an equality
+between the noisy decoded field and an exact lattice Euler solution.
+
+For every original finite outer-forward pair, conjugating this scalar CODE
+effect changes nothing. Backward pairs occur after recording, and inner
+pairs commute with S, so neither changes q. For the original FP8 faithful
+reflection pairs, the conjugating plane fixes the whole born input P;
+the initialized pre-sign state, hence q, is identical. For FP7 canonical
+old-passive pairs keep BOTH V and W: W=W_0 V_old^up and V=V_old^up imply
+V*W=(V_old^up)* W_0 V_old^up, whose true-cut compression is c_n I.
+The record probability is again identical; equality of cold singular
+values alone would not prove that. Endpoint-identity loops completed BEFORE the event, and genuinely
+spectator normalized input variations, retain their exact zero rows. A loop
+straddling the event need not preserve this new record; it requires its own
+marked-operation test.
+
+Therefore the full I_rec, and F_I, have exactly equal finite +/- values
+on these original native comparison pairs. SER3 keeps all quantum output
+and initial entropy, so this is not a marginal-entropy substitution.
+JZ's one off-shell zero-zone compiler and its geometry/jet budgets now
+recover EVERY computable regular Einstein--two-CAR solution by exact
+finite information-source roots of this actually recorded family.
+Conversely every regular limit of its exact roots satisfies the same
+original equations by SER9 and the physical right lift. The unchanged
+JZ calibration pays the marked-geometry loss of rounding.
+
+There is also a pathwise statement about EACH actual fixed recorded label,
+without choosing an entropy mean as the physical action. The conditional
+Born surprises are l_0=-log_phi(1-q), l_1=-log_phi q. With
+Gamma_0=gamma_h s/[2 log(phi)(1-q)] and Gamma_1=gamma_h s/[2 log(phi)q],
+Dl_0/Gamma_0 and -Dl_1/Gamma_1 have the same limit A_pre* DI_h.
+Both outcomes are retained, neither is selected away, and every finite
+q-equal pair preserves EACH l_b exactly. These are conditional likelihood
+sources, not yet Book path prices. In particular sum_b q_b Dl_b=0; this
+score average is not D H(q). A whole-path score with a shared field across
+several blocks may cancel and is not assigned a common gain here.
+
+This exact statement concerns the recorded information functional. It
+also holds for an entire task price whose additional executed-work and
+information terms are proved equal on those SAME pairs. It does not
+supply that missing work equality by calling the inventory common.
+
+A retained tower needs no erasure or old bank-only inverse. Choose every
+new logical PORT and WORK bank fresh, while the one fixed apparatus wire
+is only routed through macros that restore it on all columns. At a ZERO
+centre V=I and W=I_old tensor U_n. The complete initialized new block is
+therefore I_old tensor |chi_n>, and every old record is untouched. More
+generally, whenever its complete event effects are q_nb I_ALLold, composing
+the actual branch isometries gives
+
+    K_omega* K_omega=(product_n q_n,bn) I,
+    I_rec,total=sum_n h(q_n).                         (SER9a)
+
+The full joint CQ spectrum is product_n(q_n,bn) spectrum(rho_initial).
+The prefix may be rectangular and correlated: A_<*(qI)A_<=qI follows from
+A_<*A_<=I. Earlier ZERO comparison pairs preserve their q_n, and the later
+fresh scalar-effect blocks ignore every changed incoming conditional old
+state. Hence the ENTIRE cumulative recorded information has the exact
+finite-pair equality, not merely its newest marginal. For correlated
+old-DATA comparison controls use this exact ZERO identity; the Spin
+algebra alone does not prove a scalar effect on arbitrary old WORK. The
+fixed computable task generates the block/field sequence; outcomes govern
+the specified serial completion, not an unpriced adaptive field choice.
+Genuinely varied previous WORK prices still have their own rows and are
+not canceled by SER9a.
+
+### SER6. The same new word has its own full Book source
+
+The new r,t,c are genuinely born, so the true cold test retains their
+original born bras. Direct contraction of the actual word gives
+
+    C_sharp=alpha C_V+b_rec C_W,
+    alpha=p(a-p)/2, b_rec=p(a+p)/2.                    (SER10)
+
+At matched V=I and C_W=cI, put
+c_sharp=ap[1-(1+a)Q], Q=(1-c)/2. It is positive on0<=Q<=1/2.
+All current variations of V at V=I are skew-adjoint. Their real compression
+has zero feedback first source at the scalar corner; they are not deleted
+from the operator or from genuinely noncanonical old-input rows. Thus
+for the actual inherited past-weighted scalar feedback
+
+    j_h(x)=-Tr log[(1-z_h)I+z_h x^2 R_<],
+    R_<=C_<* C_<,
+
+the nonzero
+current source has gain
+
+    Gamma_B=-b_rec gamma_h s j_h'(c_sharp)>0,            (SER11)
+
+and map A_old. With R_<=k_<^2 I_r the formula is
+2r z k_<^2 b_rec c_sharp gamma_h s/(1-z+z k_<^2 c_sharp^2).
+The true initial rank stays4 (or its declared spectator multiple);
+neither code length nor growing output dimension replaces it.
+
+On the fresh retained tower C_total=c_sharp C_< exactly. At its ZERO
+centres C_<=product_previous(c_sharp,n) I_4 is nonzero; the physical gain
+may be small and is never normalized away before the error schedule.
+Every genuine old variation retains the additional R_< source
+-z_h c_sharp^2 Tr[((1-z_h)I+z_h c_sharp^2 R_<)^-1 D R_<].
+The old fixed-past reaction or an inherited zero-Gram statement is needed
+where applicable; appending a fresh block alone does not erase that row.
+
+This comparison uses the retained ORIGINAL EO four-slot/faithful graph
+and its FN complete-operation reactions, with the new specified reader
+and serial-operation recipe. It is not automatically a theorem for every
+operation having the same binary effect. A newly free backward BANK
+unitary or record phase can preserve the event law while changing the
+Book corner; it must preserve the actual retained operation descriptor
+or keep its genuine Book row. Truthful recording alone does not solve
+that larger implementation problem.
+
+All57 additional stages, their three births, original cut and all Hodge
+modes enter the new clock. Apply EO's arbitrary-unitary growing-clock CL
+estimate to THIS complete word, choosing paid CX;CX padding last with
+its actual dimension, occurrence bounds and Gamma_B. It yields the full
+H+J current kappa source with map A_old, with the displayed old-Gram row
+retained unless the owned fixed-past/adjoint hypotheses solve it. On that
+original declared graph it has the same current equation class
+as SER9 after T_pre. This is a controlled equivalence of sources, not an
+addition F_I+H+J or equality of their absolute prices.
+
+RO/FN full-operation and born-boundary intertwiners extend through the
+unchanged writer and give exact full-clock conjugacy with the appropriate
+augmented-price reactions. The weaker fixed-cold implementation fibre
+need not have that property. Nor is exact equality of old finite thermal
+pairs inherited merely from SER10: the new birth-age self-energies must
+be included. The full Book conclusion here is the controlled kappa source;
+SER5's exact finite information roots do not erase this distinction.
+
+### SER7. The remaining complete-price application is explicit
+
+Concurrent intake 8ad92906bb3393f07f18dc31ad44b0bd38209599 (§7fp) is
+preserved. Its five-control code-valid/preparation domain has a real joint
+price obstruction; this construction does not neutralize those extra
+encoder rows or claim a common free stationary encoder. SER fixes the
+actual sharp informative operation through its declared task/fidelity
+constraints and retains their reactions. Enlarging that graph to §7fp
+requires its genuine rows, not merely T_pre on the four original inputs.
+
+For actual additional branch works c_0,c_1, and all other work C_body, the
+reference-CQ ledger in phi-code units would be
+
+    F=C_body+c_0+(c_1-c_0)q-I_rec/log(phi),
+    DF=DC_body+(1-q)Dc_0+q Dc_1
+       +[(c_1-c_0)-h'(q)/log(phi)]Dq.                 (SER12)
+
+The displayed derivative retains every work row. The57-stage word has
+identical primitive calls on both branches; this implies equal paid work
+only under an actual state-independent tariff rule for the relevant
+labelled edges. Book01 F_0=|D_min(X)| gives integer description length for
+an object, but does not by itself identify edge Cost with that length or
+make total process work additive. No c_0=1,c_1=2, unit gate tariff or free
+clock is inserted. The code lengths1,2 remain parsed-output lengths.
+
+Likewise SER3 is the proved complete registration entropy. Identifying
+that quantity with the Book vertex Info/aggregation remains a physical
+binding. The owned branch-cocycle theorem uses the DIFFERENT premise
+that actual Born mass is the Book path weight; it then forces a likelihood
+cocycle, not this Shannon substitution. Operator amplitudes, their Born
+quadratic response and positive retained-tree weights remain distinct.
+
+The new actual K_b, canonical births, kept failure/output sectors and
+original event now provide concrete terminal and primitive operands for
+§7fo WT1--WT7. Compute those actual weighted maps and their full
+preparation/terminal defects, then normalize WT5/WT7 by the gain in
+SER9 or SER11 and the displayed bounded transport. Equality only of a
+total partition or of the unweighted complete operator does not prove
+that application. This is the precise remaining substitution into C4.
+
+The result removes the missing sharp original-event/serial-history map
+and transports the COMPLETE information source and general exact recovery.
+It preserves the original H+J and all existing price/control defects.
+The actual full Cost--Info law, its needed remaining current/scene rows
+and independent A--D acceptance remain open. GR_closed=false and
+scientific_promotion=false; the original goal stays active.
+
+### SER8. Decisive checks and publication evidence
+
+The portable checker below imports the unchanged original native execution
+owner, whose SHA256 is 222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c.
+It independently replays the57-stage serial segment on every initialized
+column and its full unitary extension. The separate75-stage post-echo
+fixture is retained only as a contrast/readout check; the actual new
+pre-sign construction uses the split19+38 stages of SER1. Its added
+all-input native pre-sign Kraus calculation, nonzero forward source,
+invertible four-slot transport and exact finite-pair fixtures test the
+new composition. It does not execute the huge geometric compiler or
+replace the analytic full-clock/source and general-recovery proofs.
+
+Normal -W error and optimized -O -W error runs pass417 exact conditions
+and produce byte-identical receipts. Script SHA256:
+031626ac24f4d3fe81448e5a1a982d518b18a1b37c7252f22601a31fa54da701.
+Executed Windows receipt SHA256:
+c9b6bac3a1e2e8fa3c32a178c60e3202a6bd115caa96cfea8c558738dd8d32cb.
+Canonical LF receipt SHA256:
+b32eb423229edc5cca26f9e92ab7abd0da6857cf3f4fb3080b721b3a682a2ece.
+The final Markdown extraction is replayed once on the unchanged inputs.
+
+Bounded proof reviews checked the whole-current coordinate map and signs,
+the literal paid operations/cold corner, the original event/task/four finite
+pairs, and the no-reset joint-information tower. The final text retains
+their scope corrections: true original input rather than arbitrary new
+WORK; exact native commutants; kernel completion before the event; old
+Gram/work rows; the original EO/FN graph for the Book comparison; and
+the distinction between exact information roots and kappa Book source.
+These reviews are not independent pinned assembly acceptance.
+
+<!-- SER-SHARP-CHECK:BEGIN -->
+```python
+#!/usr/bin/env python3
+"""Exact bounded EO ledger check; no dense clock and no physical-price selection.
+
+Field arithmetic is the small Q[a]/(a^4+a^2-1) kernel copied from
+native_golden_operator_tomography_check.py (same scratch provenance).
+The repository native_execution.py is imported UNCHANGED for primitive
+matrices and admission; the independent sparse replay tests all columns.
+"""
+from __future__ import annotations
+import argparse
+from collections import Counter
+from fractions import Fraction as F
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+
+OWNER = '02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py'
+
+
+class K:
+    __slots__ = ('c',)
+    def __init__(self, x=0):
+        if isinstance(x, K):
+            self.c = x.c
+            return
+        z = list(x) if isinstance(x, (list, tuple)) else [x]
+        z = [F(v) for v in z] + [F(0)] * max(0, 4-len(z))
+        for j in range(len(z)-1, 3, -1):
+            z[j-4] += z[j]
+            z[j-2] -= z[j]
+        self.c = tuple(z[:4])
+    def __add__(self, x):
+        return K([a+b for a, b in zip(self.c, K(x).c)])
+    __radd__ = __add__
+    def __neg__(self):
+        return K([-x for x in self.c])
+    def __sub__(self, x):
+        return self + (-K(x))
+    def __rsub__(self, x):
+        return K(x) - self
+    def __mul__(self, x):
+        z = [F(0)]*7
+        for i, u in enumerate(self.c):
+            for j, v in enumerate(K(x).c):
+                z[i+j] += u*v
+        return K(z)
+    __rmul__ = __mul__
+    def __pow__(self, n):
+        if n < 0:
+            raise ValueError('nonnegative power required')
+        z, b = K(1), self
+        while n:
+            if n & 1:
+                z = z*b
+            b, n = b*b, n//2
+        return z
+    def __eq__(self, x):
+        return self.c == K(x).c
+    def __bool__(self):
+        return any(self.c)
+
+
+zero, one, a = K(), K(1), K([0, 1])
+p = a*a
+G, Gi = [[a, -p], [p, a]], [[a, p], [-p, a]]
+
+
+def eye(n):
+    return [[K(i == j) for j in range(n)] for i in range(n)]
+
+
+def tr(A):
+    return list(map(list, zip(*A)))
+
+
+def mm(A, B):
+    return [[sum((x*y for x, y in zip(r, c)), zero) for c in zip(*B)] for r in A]
+
+
+def plus(A, B, s=1):
+    return [[x+s*y for x, y in zip(r, t)] for r, t in zip(A, B)]
+
+
+def kron(A, B):
+    return [[x*y for x in ar for y in br] for ar in A for br in B]
+
+
+def apply(state, n, gate):
+    op, wires = gate
+    out = {}
+    def emit(k, value):
+        out[k] = out.get(k, zero) + value
+    if op == 'birth':
+        for k, x in state.items():
+            emit(2*k, a*x)
+            emit(2*k+1, p*x)
+        return {k: x for k, x in out.items() if x}, n+1
+    mask = lambda w: 1 << (n-1-w)
+    for k, x in state.items():
+        if op in ('G', 'Gi'):
+            m = mask(wires[0]); j = int(bool(k & m)); U = G if op == 'G' else Gi
+            for i in range(2):
+                emit((k & ~m) | (m if i else 0), U[i][j]*x)
+        elif op == 'CX':
+            emit(k ^ (mask(wires[1]) if k & mask(wires[0]) else 0), x)
+        elif op == 'SourceI':
+            if k & mask(wires[0]):
+                emit(k ^ mask(wires[2]), -x if k & mask(wires[2]) else x)
+            else:
+                emit(k, x)
+        else:
+            raise ValueError(op)
+    return {k: x for k, x in out.items() if x}, n
+
+
+def replay(state, n, word):
+    for gate in word:
+        state, n = apply(state, n, gate)
+    return state, n
+
+
+def swap(x, y):
+    return [('CX', (x, y)), ('CX', (y, x)), ('CX', (x, y))]
+
+
+def inverse_g(x):
+    z = swap(2, x)+[('SourceI', (2, 0, 1))]*2+swap(2, x)
+    return z+[('G', (x,))]+z
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--root', type=Path, default=Path.cwd())
+    ap.add_argument('--out', type=Path, required=True)
+    args = ap.parse_args()
+    source = args.root.resolve()/OWNER
+    spec = importlib.util.spec_from_file_location('eo_ledger_native_owner', source)
+    native = importlib.util.module_from_spec(spec); sys.modules[spec.name] = native
+    spec.loader.exec_module(native)
+    checks = []
+    def check(name, value):
+        if not value:
+            raise ArithmeticError('FAILED: '+name)
+        checks.append(name)
+    check('field_and_G_orthogonality', a**4+a*a == 1 and mm(tr(G), G) == eye(2))
+    for label, n, gate, profile, port, spin in [
+        ('G', 1, ('G', (0,)), native.G_CX, None, None),
+        ('CX', 2, ('CX', (0, 1)), native.G_CX, None, None),
+        ('SourceI', 3, ('SourceI', (0, 1, 2)), native.G_CX_SOURCE_I, 0, (1, 2))]:
+        ex = native.Execution(n, (), (), (native.Gate(*gate),), profile, port, spin)
+        actual = native.word_matrix(ex, max_qubits=3, max_expanded_stages=1)
+        for j in range(1 << n):
+            col, _ = replay({j: one}, n, [gate])
+            converted = {}
+            for i in range(1 << n):
+                coeff = reversed(native.GOLDEN_FIELD.from_sympy(actual[i, j]).to_list())
+                x = K([F(int(v.numerator), int(v.denominator)) for v in coeff])
+                if x:
+                    converted[i] = x
+            check(label+'_owner_column_'+str(j), col == converted)
+    emitter = [('birth', (4,))]+inverse_g(4)+[('CX', (3, 4))]
+    emitter += [('birth', (5,))]+inverse_g(5)+[('CX', (4, 5))]
+    emitter += [('birth', (6,))]+inverse_g(6)+[('CX', (4, 5))]
+    word = inverse_g(3)+emitter+[('G', (3,))]
+    check('literal_lengths_17_57_75', len(inverse_g(3)) == 17 and len(emitter) == 57 and len(word) == 75)
+    check('three_actual_births_inventory', Counter(op for op, _ in word) == {'birth': 3, 'G': 5, 'SourceI': 16, 'CX': 51})
+    gates = [g for g in word if g[0] != 'birth']
+    ex = native.Execution(7, (4, 5, 6), (), tuple(native.Gate(*g) for g in gates), native.G_CX_SOURCE_I, 2, (0, 1), (4,))
+    native.validate_execution(ex, max_qubits=7, max_expanded_stages=72)
+    check('owner_admits_actual_72_gates_plus_3_births', native.inventory(ex, max_qubits=7, max_expanded_stages=72).gate_count == 72)
+    ideal = [('Gi', (3,)), ('Gi', (4,)), ('CX', (3, 4)), ('Gi', (5,)), ('Gi', (6,)), ('G', (3,))]
+    for j in range(128):
+        actual, _ = replay({j: one}, 7, gates)
+        wanted, _ = replay({j: one}, 7, ideal)
+        check('all_dirty_columns_Spin_apparatus_'+str(j), actual == wanted)
+        check('column_norm_'+str(j), sum((x*x for x in actual.values()), zero) == 1)
+    for old in range(8):
+        for bit in range(2):
+            state = {2*old+i: G[i][bit] for i in range(2)}; n = 4
+            for stage, gate in enumerate(word, 1):
+                state, n = apply(state, n, gate)
+                if stage in (55, 73, 74):
+                    want = (old << (n-3)) | (bit << (n-4)) | (bit << (n-5))
+                    if stage != 74:
+                        want |= bit << (n-6)
+                    check('serial_offset_'+str(stage)+'_'+str(old)+'_'+str(bit), state == {want: one})
+            expected = {(old << 4) | (j << 3) | (bit << 2): G[j][bit] for j in range(2)}
+            check('parsed_0_or_10_and_final_reset_'+str(old)+'_'+str(bit), state == expected)
+    def cold(state):
+        out = {}
+        for index, x in state.items():
+            factor = one
+            for wire in (3, 4, 5, 6):
+                factor *= p if index & (1 << (6-wire)) else a
+            old = index >> 4
+            out[old] = out.get(old, zero)+factor*x
+        return {k: v for k, v in out.items() if v}
+    for j in range(16):
+        output, _ = replay({j: one}, 4, word)
+        check('true_born_cold_row_'+str(j), cold(output) == {j >> 1: a**3*(p if j & 1 else a)})
+    hostile, _ = replay({0: -p, 1: a}, 4, word[:-1])
+    check('hostile_unrestored_G_has_nonzero_cold_on_w', cold(hostile) == {0: p**3})
+    T = [[1,0,0,0],[1,0,-1,1],[0,1,0,0],[0,0,1,0]]
+    Ti = [[1,0,0,0],[0,0,1,0],[0,0,0,1],[-1,1,0,1]]
+    check('T_and_inverse', mm(T, Ti) == eye(4) and mm(Ti, T) == eye(4))
+    check('Aold_T_Aq', mm([[F(1,2),F(1,2),0,0]], T) == [[1,0,F(-1,2),F(1,2)]])
+    check('fixed_diagonal_lift', mm(T, [[1]]*4) == [[1]]*4)
+    c, d = K(F(3,5)), K(F(4,5)); U0 = [[c,d],[d,-c]]
+    U = kron(eye(2), U0); J = [[0,-1],[1,0]]
+    V = [[-16,0],[0,9]]; X = kron(J, eye(2)); Z = kron(V, J)
+    b = [[K(F(3,5))],[zero],[K(F(4,5))],[zero]]
+    Q = kron(eye(2), [[0,0],[0,1]]); du = mm(U, plus(Z,Z))
+    tangent = [mm(U,X), mm(X,U), mm(U,X), mm(U,X)]
+    dr = [mm(du,X), mm(X,du), plus(mm(mm(U,Z),X),mm(mm(U,X),Z)), plus(mm(mm(U,Z),X),mm(mm(U,X),Z))]
+    values = []
+    for k in range(4):
+        sign = -1 if k in (1,3) else 1
+        val = 2*sign*(mm(mm(tr(mm(du,b)),Q),mm(tangent[k],b))[0][0]+mm(mm(tr(mm(U,b)),Q),mm(dr[k],b))[0][0])
+        values.append(val)
+    ell = mm(mm(tr([[K(F(3,5))],[K(F(4,5))]]),plus(mm(V,J),mm(J,V),-1)),[[K(F(3,5))],[K(F(4,5))]])[0][0]
+    lead = -4*c*d*ell
+    check('four_independent_mixed_rows', values == [lead,zero,lead*K(F(1,2)),-lead*K(F(1,2))] and lead != 0)
+    U8 = kron(U, eye(2)); Q8 = kron(Q, eye(2)); emb = [[K(i == 4*j) for j in range(2)] for i in range(8)]
+    M = mm(mm(tr(emb), U8), emb)
+    for j in range(8):
+        for k in range(j):
+            H = [[K(0) for _ in range(8)] for _ in range(8)]; H[j][k]=one; H[k][j]=-one
+            delta = mm(U8,H); dm = mm(mm(tr(emb),delta),emb)
+            dq = mm(mm(tr(emb),plus(mm(mm(tr(delta),Q8),U8),mm(mm(tr(U8),Q8),delta))),emb)
+            check('full_CODE_Gram_tangent_'+str(j)+'_'+str(k), plus(dq,plus(mm(tr(dm),M),mm(tr(M),dm))) == [[zero]*2 for _ in range(2)])
+    v = [[c],[d]]; chi = mm([[c,-d],[d,c]], [[K(F(5,13))],[K(F(12,13))]])
+    delta = mm(J,chi); dc = mm(tr(v),delta)[0][0]
+    check('hostile_bare_PORT_differs', 2*chi[1][0]*delta[1][0] != -2*K(F(5,13))*dc)
+    # Pre-sign extension: native forward/backward words, all data columns.
+    afword = [('G',(0,)),('SourceI',(0,1,2)),('G',(0,))]
+    abword = [('SourceI',(0,1,2)),('G',(0,)),('SourceI',(0,1,2))]
+    def matrix_word(wrd):
+        cols = [replay({j:one},3,wrd)[0] for j in range(8)]
+        return [[col.get(i,zero) for col in cols] for i in range(8)]
+    Af, Ab = matrix_word(afword), matrix_word(abword)
+    E1 = [[K(i == j and i >= 4) for j in range(8)] for i in range(8)]
+    E0 = plus(eye(8),E1,-1); Z8 = plus(eye(8),E1,-2)
+    VV, WW = mm(tr(Ab),Af), mm(mm(tr(Ab),Z8),Af)
+    K0, K1 = mm(mm(tr(Ab),E0),Af), mm(mm(tr(Ab),E1),Af)
+    K1 = [[-x for x in row] for row in K1]
+    check('presign_K0_VplusW', plus(K0,K0) == plus(VV,WW))
+    check('presign_K1_WminusV', plus(K1,K1) == plus(WW,VV,-1))
+    check('presign_effect_all_columns', mm(tr(K1),K1) == mm(mm(tr(Af),E1),Af))
+    invab = []
+    for op, wires in reversed(abword):
+        invab += [('Gi',wires)] if op == 'G' else [('SourceI',wires)]*3
+    # The zero here is the output of the already checked paid17 inverse.
+    recorded = afword+[('CX',(0,3))]+[('SourceI',(0,1,2))]*2+invab
+    for j in range(8):
+        out, _ = replay({2*j:one},4,recorded)
+        for bit, Kj in enumerate((K0,K1)):
+            check('literal_presign_record_column_'+str(j)+'_'+str(bit),
+                  {i//2:x for i,x in out.items() if i % 2 == bit} == {i:Kj[i][j] for i in range(8) if Kj[i][j]})
+    bornspin = [[(a if i < 4 else p)*K(i % 4 == j) for j in range(4)] for i in range(8)]
+    for bit, Kj in enumerate((K0,K1)):
+        E = mm(tr(mm(Kj,bornspin)),mm(Kj,bornspin)); q = E[0][0]
+        check('presign_scalar_effect_arbitrary_Spin_'+str(bit), E == [[q*K(i == j) for j in range(4)] for i in range(4)])
+    TP = [[1,1,-1,0],[1,-1,1,0],[0,1,0,0],[0,0,0,1]]
+    TPi = [[F(1,2),F(1,2),0,0],[0,0,1,0],[F(-1,2),F(1,2),1,0],[0,0,0,1]]
+    check('presign_full_coordinate_transport', mm(TP,TPi) == eye(4) and mm(TPi,TP) == eye(4)
+          and mm([[F(1,2),F(1,2),0,0]],TP) == [[1,0,0,0]] and mm(TP,[[1]]*4) == [[1]]*4)
+    EE = [[x*K(F(1,2)) for x in row] for row in plus(eye(4),U,-1)]
+    mixed = 2*(mm(mm(tr(mm(Z,b)),EE),mm(X,b))[0][0]+mm(mm(tr(b),EE),mm(mm(Z,X),b))[0][0])
+    check('presign_forward_mixed_row', mixed == -d*ell and mixed != 0)
+    RR = [[c,-d],[d,c]]; bank = kron(eye(2),RR); emb4 = [[K(i == 2*j) for j in range(2)] for i in range(4)]
+    for P in (kron(RR,eye(2)),kron(tr(RR),eye(2))):
+        for QQ in (kron(RR,eye(2)),kron(tr(RR),eye(2))):
+            forward = mm(mm(tr(QQ),bank),P)
+            effect = mm(mm(tr(mm(forward,emb4)),Q),mm(forward,emb4))
+            check('presign_finite_outer_inner_scalar_'+str(len(checks)), effect == [[d*d*K(i == j) for j in range(2)] for i in range(2)])
+    uu = [[zero],[one],[zero],[zero]]; vv = [[zero],[zero],[one],[zero]]
+    AA = plus(eye(4),plus(mm(uu,tr(uu)),mm(vv,tr(vv))),c-1)
+    AA = plus(AA,plus(mm(vv,tr(uu)),mm(uu,tr(vv)),-1),d)
+    for angle in (AA,tr(AA)):
+        fa = mm(bank,tr(angle)); eff = mm(mm(tr(fa),Q),fa)
+        check('presign_faithful_reflection_pair_'+str(len(checks)), eff[0][0] == d*d)
+    receipt = {'status':'PASS','checks':len(checks),'check_names':checks,'field':'Q[a]/(a^4+a^2-1)',
+               'scope':'exact all-column serial writer and bounded source algebra; no full clock or physical Cost-Info binding',
+               'owner':OWNER,'owner_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+               'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+               'stages':75,'births':3,'gate_count':72,'initial_dimension':16,'full_extension_dimension':128}
+    text = json.dumps(receipt, indent=2, sort_keys=True)+'\n'
+    args.out.write_text(text, encoding='utf-8')
+    print(text, end='')
+
+
+if __name__ == '__main__':
+    main()
+```
+<!-- SER-SHARP-CHECK:END -->
+
+Executed complete bounded receipt:
+
+```json
+{
+  "births": 3,
+  "check_names": [
+    "field_and_G_orthogonality",
+    "G_owner_column_0",
+    "G_owner_column_1",
+    "CX_owner_column_0",
+    "CX_owner_column_1",
+    "CX_owner_column_2",
+    "CX_owner_column_3",
+    "SourceI_owner_column_0",
+    "SourceI_owner_column_1",
+    "SourceI_owner_column_2",
+    "SourceI_owner_column_3",
+    "SourceI_owner_column_4",
+    "SourceI_owner_column_5",
+    "SourceI_owner_column_6",
+    "SourceI_owner_column_7",
+    "literal_lengths_17_57_75",
+    "three_actual_births_inventory",
+    "owner_admits_actual_72_gates_plus_3_births",
+    "all_dirty_columns_Spin_apparatus_0",
+    "column_norm_0",
+    "all_dirty_columns_Spin_apparatus_1",
+    "column_norm_1",
+    "all_dirty_columns_Spin_apparatus_2",
+    "column_norm_2",
+    "all_dirty_columns_Spin_apparatus_3",
+    "column_norm_3",
+    "all_dirty_columns_Spin_apparatus_4",
+    "column_norm_4",
+    "all_dirty_columns_Spin_apparatus_5",
+    "column_norm_5",
+    "all_dirty_columns_Spin_apparatus_6",
+    "column_norm_6",
+    "all_dirty_columns_Spin_apparatus_7",
+    "column_norm_7",
+    "all_dirty_columns_Spin_apparatus_8",
+    "column_norm_8",
+    "all_dirty_columns_Spin_apparatus_9",
+    "column_norm_9",
+    "all_dirty_columns_Spin_apparatus_10",
+    "column_norm_10",
+    "all_dirty_columns_Spin_apparatus_11",
+    "column_norm_11",
+    "all_dirty_columns_Spin_apparatus_12",
+    "column_norm_12",
+    "all_dirty_columns_Spin_apparatus_13",
+    "column_norm_13",
+    "all_dirty_columns_Spin_apparatus_14",
+    "column_norm_14",
+    "all_dirty_columns_Spin_apparatus_15",
+    "column_norm_15",
+    "all_dirty_columns_Spin_apparatus_16",
+    "column_norm_16",
+    "all_dirty_columns_Spin_apparatus_17",
+    "column_norm_17",
+    "all_dirty_columns_Spin_apparatus_18",
+    "column_norm_18",
+    "all_dirty_columns_Spin_apparatus_19",
+    "column_norm_19",
+    "all_dirty_columns_Spin_apparatus_20",
+    "column_norm_20",
+    "all_dirty_columns_Spin_apparatus_21",
+    "column_norm_21",
+    "all_dirty_columns_Spin_apparatus_22",
+    "column_norm_22",
+    "all_dirty_columns_Spin_apparatus_23",
+    "column_norm_23",
+    "all_dirty_columns_Spin_apparatus_24",
+    "column_norm_24",
+    "all_dirty_columns_Spin_apparatus_25",
+    "column_norm_25",
+    "all_dirty_columns_Spin_apparatus_26",
+    "column_norm_26",
+    "all_dirty_columns_Spin_apparatus_27",
+    "column_norm_27",
+    "all_dirty_columns_Spin_apparatus_28",
+    "column_norm_28",
+    "all_dirty_columns_Spin_apparatus_29",
+    "column_norm_29",
+    "all_dirty_columns_Spin_apparatus_30",
+    "column_norm_30",
+    "all_dirty_columns_Spin_apparatus_31",
+    "column_norm_31",
+    "all_dirty_columns_Spin_apparatus_32",
+    "column_norm_32",
+    "all_dirty_columns_Spin_apparatus_33",
+    "column_norm_33",
+    "all_dirty_columns_Spin_apparatus_34",
+    "column_norm_34",
+    "all_dirty_columns_Spin_apparatus_35",
+    "column_norm_35",
+    "all_dirty_columns_Spin_apparatus_36",
+    "column_norm_36",
+    "all_dirty_columns_Spin_apparatus_37",
+    "column_norm_37",
+    "all_dirty_columns_Spin_apparatus_38",
+    "column_norm_38",
+    "all_dirty_columns_Spin_apparatus_39",
+    "column_norm_39",
+    "all_dirty_columns_Spin_apparatus_40",
+    "column_norm_40",
+    "all_dirty_columns_Spin_apparatus_41",
+    "column_norm_41",
+    "all_dirty_columns_Spin_apparatus_42",
+    "column_norm_42",
+    "all_dirty_columns_Spin_apparatus_43",
+    "column_norm_43",
+    "all_dirty_columns_Spin_apparatus_44",
+    "column_norm_44",
+    "all_dirty_columns_Spin_apparatus_45",
+    "column_norm_45",
+    "all_dirty_columns_Spin_apparatus_46",
+    "column_norm_46",
+    "all_dirty_columns_Spin_apparatus_47",
+    "column_norm_47",
+    "all_dirty_columns_Spin_apparatus_48",
+    "column_norm_48",
+    "all_dirty_columns_Spin_apparatus_49",
+    "column_norm_49",
+    "all_dirty_columns_Spin_apparatus_50",
+    "column_norm_50",
+    "all_dirty_columns_Spin_apparatus_51",
+    "column_norm_51",
+    "all_dirty_columns_Spin_apparatus_52",
+    "column_norm_52",
+    "all_dirty_columns_Spin_apparatus_53",
+    "column_norm_53",
+    "all_dirty_columns_Spin_apparatus_54",
+    "column_norm_54",
+    "all_dirty_columns_Spin_apparatus_55",
+    "column_norm_55",
+    "all_dirty_columns_Spin_apparatus_56",
+    "column_norm_56",
+    "all_dirty_columns_Spin_apparatus_57",
+    "column_norm_57",
+    "all_dirty_columns_Spin_apparatus_58",
+    "column_norm_58",
+    "all_dirty_columns_Spin_apparatus_59",
+    "column_norm_59",
+    "all_dirty_columns_Spin_apparatus_60",
+    "column_norm_60",
+    "all_dirty_columns_Spin_apparatus_61",
+    "column_norm_61",
+    "all_dirty_columns_Spin_apparatus_62",
+    "column_norm_62",
+    "all_dirty_columns_Spin_apparatus_63",
+    "column_norm_63",
+    "all_dirty_columns_Spin_apparatus_64",
+    "column_norm_64",
+    "all_dirty_columns_Spin_apparatus_65",
+    "column_norm_65",
+    "all_dirty_columns_Spin_apparatus_66",
+    "column_norm_66",
+    "all_dirty_columns_Spin_apparatus_67",
+    "column_norm_67",
+    "all_dirty_columns_Spin_apparatus_68",
+    "column_norm_68",
+    "all_dirty_columns_Spin_apparatus_69",
+    "column_norm_69",
+    "all_dirty_columns_Spin_apparatus_70",
+    "column_norm_70",
+    "all_dirty_columns_Spin_apparatus_71",
+    "column_norm_71",
+    "all_dirty_columns_Spin_apparatus_72",
+    "column_norm_72",
+    "all_dirty_columns_Spin_apparatus_73",
+    "column_norm_73",
+    "all_dirty_columns_Spin_apparatus_74",
+    "column_norm_74",
+    "all_dirty_columns_Spin_apparatus_75",
+    "column_norm_75",
+    "all_dirty_columns_Spin_apparatus_76",
+    "column_norm_76",
+    "all_dirty_columns_Spin_apparatus_77",
+    "column_norm_77",
+    "all_dirty_columns_Spin_apparatus_78",
+    "column_norm_78",
+    "all_dirty_columns_Spin_apparatus_79",
+    "column_norm_79",
+    "all_dirty_columns_Spin_apparatus_80",
+    "column_norm_80",
+    "all_dirty_columns_Spin_apparatus_81",
+    "column_norm_81",
+    "all_dirty_columns_Spin_apparatus_82",
+    "column_norm_82",
+    "all_dirty_columns_Spin_apparatus_83",
+    "column_norm_83",
+    "all_dirty_columns_Spin_apparatus_84",
+    "column_norm_84",
+    "all_dirty_columns_Spin_apparatus_85",
+    "column_norm_85",
+    "all_dirty_columns_Spin_apparatus_86",
+    "column_norm_86",
+    "all_dirty_columns_Spin_apparatus_87",
+    "column_norm_87",
+    "all_dirty_columns_Spin_apparatus_88",
+    "column_norm_88",
+    "all_dirty_columns_Spin_apparatus_89",
+    "column_norm_89",
+    "all_dirty_columns_Spin_apparatus_90",
+    "column_norm_90",
+    "all_dirty_columns_Spin_apparatus_91",
+    "column_norm_91",
+    "all_dirty_columns_Spin_apparatus_92",
+    "column_norm_92",
+    "all_dirty_columns_Spin_apparatus_93",
+    "column_norm_93",
+    "all_dirty_columns_Spin_apparatus_94",
+    "column_norm_94",
+    "all_dirty_columns_Spin_apparatus_95",
+    "column_norm_95",
+    "all_dirty_columns_Spin_apparatus_96",
+    "column_norm_96",
+    "all_dirty_columns_Spin_apparatus_97",
+    "column_norm_97",
+    "all_dirty_columns_Spin_apparatus_98",
+    "column_norm_98",
+    "all_dirty_columns_Spin_apparatus_99",
+    "column_norm_99",
+    "all_dirty_columns_Spin_apparatus_100",
+    "column_norm_100",
+    "all_dirty_columns_Spin_apparatus_101",
+    "column_norm_101",
+    "all_dirty_columns_Spin_apparatus_102",
+    "column_norm_102",
+    "all_dirty_columns_Spin_apparatus_103",
+    "column_norm_103",
+    "all_dirty_columns_Spin_apparatus_104",
+    "column_norm_104",
+    "all_dirty_columns_Spin_apparatus_105",
+    "column_norm_105",
+    "all_dirty_columns_Spin_apparatus_106",
+    "column_norm_106",
+    "all_dirty_columns_Spin_apparatus_107",
+    "column_norm_107",
+    "all_dirty_columns_Spin_apparatus_108",
+    "column_norm_108",
+    "all_dirty_columns_Spin_apparatus_109",
+    "column_norm_109",
+    "all_dirty_columns_Spin_apparatus_110",
+    "column_norm_110",
+    "all_dirty_columns_Spin_apparatus_111",
+    "column_norm_111",
+    "all_dirty_columns_Spin_apparatus_112",
+    "column_norm_112",
+    "all_dirty_columns_Spin_apparatus_113",
+    "column_norm_113",
+    "all_dirty_columns_Spin_apparatus_114",
+    "column_norm_114",
+    "all_dirty_columns_Spin_apparatus_115",
+    "column_norm_115",
+    "all_dirty_columns_Spin_apparatus_116",
+    "column_norm_116",
+    "all_dirty_columns_Spin_apparatus_117",
+    "column_norm_117",
+    "all_dirty_columns_Spin_apparatus_118",
+    "column_norm_118",
+    "all_dirty_columns_Spin_apparatus_119",
+    "column_norm_119",
+    "all_dirty_columns_Spin_apparatus_120",
+    "column_norm_120",
+    "all_dirty_columns_Spin_apparatus_121",
+    "column_norm_121",
+    "all_dirty_columns_Spin_apparatus_122",
+    "column_norm_122",
+    "all_dirty_columns_Spin_apparatus_123",
+    "column_norm_123",
+    "all_dirty_columns_Spin_apparatus_124",
+    "column_norm_124",
+    "all_dirty_columns_Spin_apparatus_125",
+    "column_norm_125",
+    "all_dirty_columns_Spin_apparatus_126",
+    "column_norm_126",
+    "all_dirty_columns_Spin_apparatus_127",
+    "column_norm_127",
+    "serial_offset_55_0_0",
+    "serial_offset_73_0_0",
+    "serial_offset_74_0_0",
+    "parsed_0_or_10_and_final_reset_0_0",
+    "serial_offset_55_0_1",
+    "serial_offset_73_0_1",
+    "serial_offset_74_0_1",
+    "parsed_0_or_10_and_final_reset_0_1",
+    "serial_offset_55_1_0",
+    "serial_offset_73_1_0",
+    "serial_offset_74_1_0",
+    "parsed_0_or_10_and_final_reset_1_0",
+    "serial_offset_55_1_1",
+    "serial_offset_73_1_1",
+    "serial_offset_74_1_1",
+    "parsed_0_or_10_and_final_reset_1_1",
+    "serial_offset_55_2_0",
+    "serial_offset_73_2_0",
+    "serial_offset_74_2_0",
+    "parsed_0_or_10_and_final_reset_2_0",
+    "serial_offset_55_2_1",
+    "serial_offset_73_2_1",
+    "serial_offset_74_2_1",
+    "parsed_0_or_10_and_final_reset_2_1",
+    "serial_offset_55_3_0",
+    "serial_offset_73_3_0",
+    "serial_offset_74_3_0",
+    "parsed_0_or_10_and_final_reset_3_0",
+    "serial_offset_55_3_1",
+    "serial_offset_73_3_1",
+    "serial_offset_74_3_1",
+    "parsed_0_or_10_and_final_reset_3_1",
+    "serial_offset_55_4_0",
+    "serial_offset_73_4_0",
+    "serial_offset_74_4_0",
+    "parsed_0_or_10_and_final_reset_4_0",
+    "serial_offset_55_4_1",
+    "serial_offset_73_4_1",
+    "serial_offset_74_4_1",
+    "parsed_0_or_10_and_final_reset_4_1",
+    "serial_offset_55_5_0",
+    "serial_offset_73_5_0",
+    "serial_offset_74_5_0",
+    "parsed_0_or_10_and_final_reset_5_0",
+    "serial_offset_55_5_1",
+    "serial_offset_73_5_1",
+    "serial_offset_74_5_1",
+    "parsed_0_or_10_and_final_reset_5_1",
+    "serial_offset_55_6_0",
+    "serial_offset_73_6_0",
+    "serial_offset_74_6_0",
+    "parsed_0_or_10_and_final_reset_6_0",
+    "serial_offset_55_6_1",
+    "serial_offset_73_6_1",
+    "serial_offset_74_6_1",
+    "parsed_0_or_10_and_final_reset_6_1",
+    "serial_offset_55_7_0",
+    "serial_offset_73_7_0",
+    "serial_offset_74_7_0",
+    "parsed_0_or_10_and_final_reset_7_0",
+    "serial_offset_55_7_1",
+    "serial_offset_73_7_1",
+    "serial_offset_74_7_1",
+    "parsed_0_or_10_and_final_reset_7_1",
+    "true_born_cold_row_0",
+    "true_born_cold_row_1",
+    "true_born_cold_row_2",
+    "true_born_cold_row_3",
+    "true_born_cold_row_4",
+    "true_born_cold_row_5",
+    "true_born_cold_row_6",
+    "true_born_cold_row_7",
+    "true_born_cold_row_8",
+    "true_born_cold_row_9",
+    "true_born_cold_row_10",
+    "true_born_cold_row_11",
+    "true_born_cold_row_12",
+    "true_born_cold_row_13",
+    "true_born_cold_row_14",
+    "true_born_cold_row_15",
+    "hostile_unrestored_G_has_nonzero_cold_on_w",
+    "T_and_inverse",
+    "Aold_T_Aq",
+    "fixed_diagonal_lift",
+    "four_independent_mixed_rows",
+    "full_CODE_Gram_tangent_1_0",
+    "full_CODE_Gram_tangent_2_0",
+    "full_CODE_Gram_tangent_2_1",
+    "full_CODE_Gram_tangent_3_0",
+    "full_CODE_Gram_tangent_3_1",
+    "full_CODE_Gram_tangent_3_2",
+    "full_CODE_Gram_tangent_4_0",
+    "full_CODE_Gram_tangent_4_1",
+    "full_CODE_Gram_tangent_4_2",
+    "full_CODE_Gram_tangent_4_3",
+    "full_CODE_Gram_tangent_5_0",
+    "full_CODE_Gram_tangent_5_1",
+    "full_CODE_Gram_tangent_5_2",
+    "full_CODE_Gram_tangent_5_3",
+    "full_CODE_Gram_tangent_5_4",
+    "full_CODE_Gram_tangent_6_0",
+    "full_CODE_Gram_tangent_6_1",
+    "full_CODE_Gram_tangent_6_2",
+    "full_CODE_Gram_tangent_6_3",
+    "full_CODE_Gram_tangent_6_4",
+    "full_CODE_Gram_tangent_6_5",
+    "full_CODE_Gram_tangent_7_0",
+    "full_CODE_Gram_tangent_7_1",
+    "full_CODE_Gram_tangent_7_2",
+    "full_CODE_Gram_tangent_7_3",
+    "full_CODE_Gram_tangent_7_4",
+    "full_CODE_Gram_tangent_7_5",
+    "full_CODE_Gram_tangent_7_6",
+    "hostile_bare_PORT_differs",
+    "presign_K0_VplusW",
+    "presign_K1_WminusV",
+    "presign_effect_all_columns",
+    "literal_presign_record_column_0_0",
+    "literal_presign_record_column_0_1",
+    "literal_presign_record_column_1_0",
+    "literal_presign_record_column_1_1",
+    "literal_presign_record_column_2_0",
+    "literal_presign_record_column_2_1",
+    "literal_presign_record_column_3_0",
+    "literal_presign_record_column_3_1",
+    "literal_presign_record_column_4_0",
+    "literal_presign_record_column_4_1",
+    "literal_presign_record_column_5_0",
+    "literal_presign_record_column_5_1",
+    "literal_presign_record_column_6_0",
+    "literal_presign_record_column_6_1",
+    "literal_presign_record_column_7_0",
+    "literal_presign_record_column_7_1",
+    "presign_scalar_effect_arbitrary_Spin_0",
+    "presign_scalar_effect_arbitrary_Spin_1",
+    "presign_full_coordinate_transport",
+    "presign_forward_mixed_row",
+    "presign_finite_outer_inner_scalar_411",
+    "presign_finite_outer_inner_scalar_412",
+    "presign_finite_outer_inner_scalar_413",
+    "presign_finite_outer_inner_scalar_414",
+    "presign_faithful_reflection_pair_415",
+    "presign_faithful_reflection_pair_416"
+  ],
+  "checks": 417,
+  "field": "Q[a]/(a^4+a^2-1)",
+  "full_extension_dimension": 128,
+  "gate_count": 72,
+  "initial_dimension": 16,
+  "owner": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+  "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "scope": "exact all-column serial writer and bounded source algebra; no full clock or physical Cost-Info binding",
+  "script_sha256": "031626ac24f4d3fe81448e5a1a982d518b18a1b37c7252f22601a31fa54da701",
+  "stages": 75,
+  "status": "PASS"
+}
+```
+
+Final extraction replay reproduces the executed receipt SHA256 exactly.
+Work, agent, assembly and whitespace guards pass; assembly remains98
+results /22 obligations /5 discharged, scientific_promotion=false.
