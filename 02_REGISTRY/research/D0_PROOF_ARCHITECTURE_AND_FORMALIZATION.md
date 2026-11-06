@@ -18182,3 +18182,10 @@ mean-price field response and a constant Born-weighted scalar moment under joint
 classical surprisal. Explicit moving leaf work has its own normalized response.
 The physical Book03 continuation and full native gain/lift comparison in CD13
 remain open.
+
+The [finite, varying-dimension clock stage proof](sources/d0_growing_clock_stages_2026-11-05/README.md)
+constructs the orthogonal frames used in the existing determinant theorem.
+Its concrete application to the owner's physical clock still needs the
+actual stage maps and advances. The [historical cbe7 search archive](sources/d0_proof_architecture_formalization_2026-10-24/reports/cold_start_v3_cbe7_compact_2026-11-06/README.md)
+preserves all 752,668,795 bytes of the earlier run. The same implementation
+rediscovered 50 of 50 case results. Semantic acceptance remains separate.
