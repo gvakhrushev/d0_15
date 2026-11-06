@@ -23138,3 +23138,34 @@ Primary §7fx (input 8cd9552b6) realizes the Book06 Parry transition on the live
 The unvalidated reader has a nonzero independent cold row. A physically prepared and checked zero tail and its witness change the true born masses of 00,01,10 to p^4,p^5,p^6. The unrestricted bright redistribution at the feedback optimum is then precisely the Golden Gibbs row; the Parry support gives the deterministic other row. All allowed fixed-coarse-effect rows of the two component prices vanish at the same section, with positive coarse reactions and Einstein source gain on the original LC9 lift. The validator's 23 primitive calls were replayed on all 32 columns. LC12–LC16 receive the new cold, gain and resource substitutions, with the actual full-clock and lift budgets.
 
 This is a new declared validated task. The original full physical Cost−Info weighted continuation (including actual validation work and vertex Info) still has to satisfy CD13. The finite-weight and four-record controls demonstrate why mere additive balancing or matching a count cannot supply it. No scientific promotion, lifecycle change or unrestricted GR closure.
+
+### 6 November — a repeat of any archived word determines the paid source
+
+Primary §7fy, input 191eace4a, consumes LC9 and CD13. The original H.1
+wires already encode the Parry transition. Four timed port visits and
+six paid, retained archive bits implement the two-token read in 138 stages.
+The first independent repetition of any recorded k-bit word then halts
+by 2^k+1 as a consequence of the task. The both-click symbol uses two
+genuine reports, keeps both full fine records and has probability q²
+on the whole earlier collar. The comparison body retains each of the
+actual XOR receipts and pays every negative comparison.
+
+On the fresh measured interface, the mean word count and the mean
+all-pairs comparison work have positive logarithmic field slopes of
+order k. The proof bounds the dual norm over *every reached prefix*.
+An unknown marked-dependent whole word/pair tariff with positive
+comparable mean, bounded local score and o(k) relative direct jets has
+normalized residue O(k^(-1/2))+o(1), without requiring a small field
+source per comparison. The original common right lift gives both
+directions of the existing Einstein–two-CAR recovery under these
+conditions. The retained Golden flags also give a definite nonlinear
+weight E[p^tau] on the same history. The ordered transfer for the
+whole first repeat has a full-memory two-equal-word resolvent
+approximation with an explicit triple/double-collision bound. The
+unrestricted regular augmentation of the actual archive resets
+already fails the truthful zero-bit test for the AMP1 lift.
+
+The original Book weighted-price row, real shared-scene/clock/measurement
+work outside the proved regenerative or subcritical price classes, and
+physical selection of this verifiable task remain open. No restored
+shorter-word H+J, independent physical acceptance or GR promotion.
