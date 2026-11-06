@@ -18172,3 +18172,13 @@ specialization/independence argument; lower bound, equality and identification
 with `M₈(ℂ) ⊕ M₈(ℂ)` remain open in this Lean chain. Physical admission,
 clock/work and #334 are unchanged, and `GR_closed=false`. A final integration
 build for this added module is still required.
+
+## 6 November 2026 — actual two-report price comparison
+
+The [C1 ledger, C2 calculation and C3 decision](sources/d0_validated_parry_price_2026-11-06/README.md)
+apply the existing two-tick Golden identity to the validated noisy H.1 history
+of owner #334 at `191eace4a`. The two ordered reports together have a positive
+mean-price field response and a constant Born-weighted scalar moment under joint
+classical surprisal. Explicit moving leaf work has its own normalized response.
+The physical Book03 continuation and full native gain/lift comparison in CD13
+remain open.
