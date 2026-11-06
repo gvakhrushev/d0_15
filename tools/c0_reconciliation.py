@@ -732,6 +732,76 @@ BOOK01_0116_PINS = KernelSectionPins(
     historical_inventory_path="", result_id="lean-verification-core-composition")
 
 
+
+# Versioned source review: its tracked history activates the correction, so
+# querying an earlier snapshot retains its original output. The path and
+# digests authenticate bytes, not the review's scientific correctness.
+BOOK02_REVIEW_DIR = ("02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/"
+                     "reports/book02_023b_complete_review_2026-11-06/")
+BOOK02_REVIEW = BOOK02_REVIEW_DIR + "SUMMARY_RU.md"
+BOOK02_REVIEW_SHA256 = "5163ffef52bf71dfe64820d33c5e94b874fa2e0c2ddba9381eea821718c70e98"
+BOOK02_REVIEW_BASE = "a358e91e764655b16082bf7e6161a79df96a24a6"
+BOOK02_CONTROL = "d0-book02-represented-emptyword.lean"
+BOOK02_CONTROL_SHA256 = "9bb93ff0f4dd5d5a4b194cac1214ea85f19c978fc64d06cb0b773b5d47c67b38"
+
+
+def book02_reviewed_corrections(git, snapshot, pins, primary, active_version, units):
+    """Read proposed corrections from the pinned review; do not accept them.
+
+    Git history is consulted so that an ancestor's published review cannot be
+    silently dropped by deleting its current file or pointer. Older snapshots
+    without that history keep their byte-for-byte historical presentation.
+    """
+    if (pins.source_path != KernelSectionPins.source_path or
+            pins.units_sha256 != KernelSectionPins.units_sha256):
+        return None
+    # Search only after the review's recorded base. Besides preserving old
+    # outputs this avoids requiring unrelated, possibly pruned historic trees.
+    if snapshot == BOOK02_REVIEW_BASE:
+        return None
+    if git.git("merge-base", BOOK02_REVIEW_BASE, snapshot).decode("ascii").strip() != BOOK02_REVIEW_BASE:
+        return None
+    history = git.git("log", "--ancestry-path", "--format=%H", "-1",
+                      BOOK02_REVIEW_BASE + ".." + snapshot, "--", BOOK02_REVIEW).strip()
+    if not history:
+        return None
+    if active_version is None or active_version["version"] != "corrected":
+        raise MissingEvidence("reviewed Book02 correction requires corrected source")
+    pointer = "book02_023b_complete_review_2026-11-06/SUMMARY_RU.md"
+    if primary.count(pointer) != 1:
+        raise MissingEvidence("reviewed Book02 primary pointer missing or ambiguous")
+    raw = git.data(snapshot, BOOK02_REVIEW)
+    if hashlib.sha256(raw).hexdigest() != BOOK02_REVIEW_SHA256:
+        raise MissingEvidence("reviewed Book02 correction digest mismatch")
+    control = git.data(snapshot, BOOK02_REVIEW_DIR + BOOK02_CONTROL)
+    if hashlib.sha256(control).hexdigest() != BOOK02_CONTROL_SHA256:
+        raise MissingEvidence("reviewed Book02 dependency control digest mismatch")
+    text = raw.decode("utf-8")
+    section = one([x for x in re.split(r"(?m)^## ", text)
+                   if x.split("\n", 1)[0].strip() == "Machine-readable proposed corrections"],
+                  "reviewed Book02 correction block")
+    blocks = re.findall(r"(?s)```json\s*\n(.*?)\n```", section)
+    payload = parse_json(one(blocks, "reviewed Book02 correction JSON").encode("utf-8"), "Book02 corrections")
+    if payload.get("schema") != "book02-023b-reviewed-corrections/1":
+        raise MissingEvidence("unsupported Book02 corrections schema")
+    fixes = payload.get("corrections")
+    obs = "Interpretation.translate_future_observation"
+    run = "Interpretation.verifiedRun_image"
+    if not isinstance(fixes, dict) or set(fixes) != {obs, run}:
+        raise MissingEvidence("unexpected Book02 correction targets")
+    if not isinstance(fixes[obs], dict) or not isinstance(fixes[run], dict):
+        raise MissingEvidence("malformed Book02 correction records")
+    originals = {u["atom"]: u for u in units}
+    if (obs not in originals or run not in originals or
+            fixes[obs].get("historical_statement") != originals[obs]["statement"] or
+            not isinstance(fixes[obs].get("statement"), str) or not fixes[obs]["statement"] or
+            fixes[run].get("proof_dependency") !=
+                "D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv_representedState" or
+            fixes[run].get("control") != BOOK02_CONTROL or
+            not isinstance(fixes[run].get("role"), str) or not fixes[run]["role"]):
+        raise MissingEvidence("Book02 corrections do not match historical candidates")
+    return fixes
+
 def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                               inventory_path=None, inventory_sha256=None) -> dict:
     """Reconcile one pinned kernel slice without inferring scientific acceptance.
@@ -839,6 +909,14 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                        ("atom", "hypotheses", "statement", "disposition", "declaration")):
                 raise MissingEvidence("incomplete mathematical atom")
             raw[a:b].decode("utf-8")
+        corrections = book02_reviewed_corrections(git, snapshot, pins, text, active_version, units)
+        if corrections is not None:
+            result["authority"]["active_semantic_review"] = {
+                "path": BOOK02_REVIEW, "sha256": BOOK02_REVIEW_SHA256,
+                "control": BOOK02_REVIEW_DIR + BOOK02_CONTROL,
+                "control_sha256": BOOK02_CONTROL_SHA256,
+                "semantic_acceptance": "not_assessed",
+            }
         result["authority"]["source"] = {
             "commit": pins.source_commit, "path": pins.source_path, "blob": pins.source_blob,
             "section_range": [start, end], "section_sha256": pins.section_sha256,
@@ -861,7 +939,7 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
             "acceptance": "not_authenticated_by_this_view",
         }
         return {"raw": raw, "units": units, "owners": owners,
-                "active_version": active_version,
+                "corrections": corrections, "active_version": active_version,
                 "active_raw": (git.data(snapshot, pins.source_path) if active_version else None)}
 
     step("source_and_primary", source_and_primary)
@@ -1015,6 +1093,22 @@ def reconcile_kernel_sections(repo: Path, ref: str, *, pins=None,
                        compiled_declaration=data.get("compiled_inventory", {}).get(u["declaration"]),
                        existing_application=(pins.application_id if "existing_application" in data else None),
                        application_scope="shared conditional application; no per-atom semantic acceptance inferred")
+            corrections = data["source_and_primary"]["corrections"]
+            if corrections and u["atom"] in corrections:
+                correction = corrections[u["atom"]]
+                if "statement" in correction:
+                    row["historical_statement"] = row["statement"]
+                    row["statement"] = correction["statement"]
+                if "proof_dependency" in correction:
+                    row["reviewed_proof_dependency"] = {
+                        "declaration": correction["proof_dependency"],
+                        "role": correction["role"],
+                        "control": BOOK02_REVIEW_DIR + correction["control"],
+                    }
+                row["active_semantic_correction"] = {
+                    "review": BOOK02_REVIEW, "sha256": BOOK02_REVIEW_SHA256,
+                    "semantic_acceptance": "not_assessed",
+                }
             active = data["source_and_primary"]["active_version"]
             if active is not None:
                 row["source_excerpt_version"] = "historical_source_pin"

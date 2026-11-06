@@ -18217,3 +18217,16 @@ pair-comparison valuation gives recovery under the stated bounds on the paid
 graph, errors and right lift. The five bounded owner programs reproduced their
 published output hashes in ten runs. The actual Book valuation and remaining
 clock, work and physical task-selection premises stay with that owner.
+
+### Full bounded review of Book02 §02.3b — 6 November 2026
+
+The [full source-keyed review](sources/d0_proof_architecture_formalization_2026-10-24/reports/book02_023b_complete_review_2026-11-06/SUMMARY_RU.md)
+checks all 30 historical candidates, the corrected active source and every
+remaining section byte. It identifies `verifiedStateImageEquiv_representedState`
+as an explicit dependency of `verifiedRun_image`, also derivable from that
+candidate with the empty word, and corrects the candidate description of
+`translate_future_observation` to an equivalence of propositions. The
+historical candidate JSON and its pins remain unchanged. The review's stated
+independence limits and remaining physical/Book01 obligations apply; this
+is a proposed bounded classification, not CONTROL acceptance or a global C0
+denominator.
