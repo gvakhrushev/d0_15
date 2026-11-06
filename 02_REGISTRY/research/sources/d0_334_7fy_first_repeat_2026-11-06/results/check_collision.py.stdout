@@ -1,0 +1,54 @@
+[
+  {
+    "common_early_scan_slope": "233826/78125",
+    "common_word_count_slope": "98236/78125",
+    "fixed_reference_uncapped_words": "5",
+    "independent_prefixes": 195,
+    "k": 2,
+    "leaves_by_word_count": {
+      "2": 4,
+      "3": 24,
+      "4": 72,
+      "5": 96
+    },
+    "mean_early_scan_comparisons": "1264489/390625",
+    "mean_words": "1232354/390625",
+    "nonadjacent_repeat_probability": "167592/390625",
+    "nonreference_repeat_probability": "167592/390625",
+    "prefix_early_scan_row_l1": "3527026/390625",
+    "prefix_word_count_row_l1": "54252/15625",
+    "probability_by_word_count": {
+      "2": "169/625",
+      "3": "48/125",
+      "4": "103896/390625",
+      "5": "31104/390625"
+    },
+    "q": "2/5"
+  },
+  {
+    "common_early_scan_slope": "0",
+    "common_word_count_slope": "0",
+    "fixed_reference_uncapped_words": "5",
+    "independent_prefixes": 195,
+    "k": 2,
+    "leaves_by_word_count": {
+      "2": 4,
+      "3": 24,
+      "4": 72,
+      "5": 96
+    },
+    "mean_early_scan_comparisons": "217/64",
+    "mean_words": "103/32",
+    "nonadjacent_repeat_probability": "57/128",
+    "nonreference_repeat_probability": "57/128",
+    "prefix_early_scan_row_l1": "253/32",
+    "prefix_word_count_row_l1": "47/16",
+    "probability_by_word_count": {
+      "2": "1/4",
+      "3": "3/8",
+      "4": "9/32",
+      "5": "3/32"
+    },
+    "q": "1/2"
+  }
+]

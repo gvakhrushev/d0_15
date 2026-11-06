@@ -1,0 +1,72 @@
+{
+  "check_serializer.py": {
+    "normal": {
+      "exit_code": 0,
+      "stdout_sha256": "4c9a9d5ee91e84eb8af240363ae0a331015ef4b5c7b056f3680f9ea88bb7b74b",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    },
+    "optimized": {
+      "exit_code": 0,
+      "stdout_sha256": "4c9a9d5ee91e84eb8af240363ae0a331015ef4b5c7b056f3680f9ea88bb7b74b",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    }
+  },
+  "check_guard.py": {
+    "normal": {
+      "exit_code": 0,
+      "stdout_sha256": "2bd5c0a67f6345b01ba612c3eb7598e8fd09f21229a29656987890c351538c9d",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    },
+    "optimized": {
+      "exit_code": 0,
+      "stdout_sha256": "2bd5c0a67f6345b01ba612c3eb7598e8fd09f21229a29656987890c351538c9d",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    }
+  },
+  "check_collision.py": {
+    "normal": {
+      "exit_code": 0,
+      "stdout_sha256": "ab31d36a66c90472f700f8e550258e99d38e675414d5eacba46c5bfa33012fc3",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    },
+    "optimized": {
+      "exit_code": 0,
+      "stdout_sha256": "ab31d36a66c90472f700f8e550258e99d38e675414d5eacba46c5bfa33012fc3",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    }
+  },
+  "check_marked_cost.py": {
+    "normal": {
+      "exit_code": 0,
+      "stdout_sha256": "ace3b2e91a575878905722cb91898593182ad6b16ec2e7ce55b9de743f40c6ce",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    },
+    "optimized": {
+      "exit_code": 0,
+      "stdout_sha256": "ace3b2e91a575878905722cb91898593182ad6b16ec2e7ce55b9de743f40c6ce",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    }
+  },
+  "check_collision_transfer.py": {
+    "normal": {
+      "exit_code": 0,
+      "stdout_sha256": "09836c1d0a7bf65cea0cfe0883a13dace585baa9fe5ffd328ce1806687885565",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    },
+    "optimized": {
+      "exit_code": 0,
+      "stdout_sha256": "09836c1d0a7bf65cea0cfe0883a13dace585baa9fe5ffd328ce1806687885565",
+      "stderr_bytes": 0,
+      "stdout_matches_owner": true
+    }
+  }
+}
