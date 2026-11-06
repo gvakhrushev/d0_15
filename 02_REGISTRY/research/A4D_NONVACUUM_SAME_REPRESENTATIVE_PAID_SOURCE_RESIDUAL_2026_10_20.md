@@ -159911,6 +159911,1651 @@ if __name__ == "__main__":
 
 On the binary k=2 reference tree there are 196 terminal histories and 195 separately varied reachable bit prefixes. At y=2/5 the common duration derivative is 98236/78125. At y=1/2 it is zero although the independent-prefix norm is 47/16; the two-witness symbol avoids this degeneracy. A separate unequal-mark tariff and all-scan test at y=1/4 gives mean 6083/2048 comparisons and total paid marked-cost derivative 322813/8192. These rational fixtures test the operator and probability identities at their stated inputs.
 
+## 7fz. Test the original thermal law against the full recorded execution
+
+6 November 2026. Existing #334, input 9f76fd788. Final composition on
+native-programme-v1. The scientific question is whether the absolute
+Book03 weighted process can be identified with the observed native
+continuation and passed to the LC9 Einstein recovery. Use the first-repeat
+execution of §7fy, including its births, all pair receipts, independent
+preparation slots, two Hodge degrees and actual stopping times.
+
+There is now a separation test on the same physical tree. The probability
+that the first two words agree has a log slope proportional to word width.
+Reading those same addresses from the original Gibbs heat has bounded log
+slope on a fixed mesh with bounded stage jets (TH1–TH3). There is also a
+positive source result: keep the actual *entire quantum record* in the
+comparison with that same heat. Its relative entropy then has an explicit
+joint source with LC9 forward and reverse recovery in the stated norms
+(TH4–TH5). Positive comparison work, when physically paid at the scale of
+the actual pairs, can dominate even a contextual record-sized Info (TH6).
+The absolute partition can retain its field slope even when pair tolls
+strongly change the normalized record odds (TH7). Whether the original
+physical net price pays this distinguishability
+or an equivalent source remains a separate, testable question. The short
+receipt identities and truthful reset below restrict that remaining map.
+
+### What 2–4 real words determine, including the price of each comparison
+
+A letter below denotes a whole k-symbol execution. Write i for the
+complete *measured fine* word (including its flags) and b(i) for the
+symbol string used by the comparator. Distinct fine words can have
+the same b. Use positive support on a regular chart with at least
+three comparator strings, as happens for k>=2 in §7fy. Record all
+ordered earlier/later comparisons, including those after the equal
+receipt in the last round. Given a leaf h, there is exactly one equal
+pair (i,k') of comparator strings, while the corresponding fine words
+may differ. The symbol k' below is a fine word, not the block length.
+
+Suppose a candidate *absolute* positive physical leaf valuation has a
+regenerating word charge, a charge for each ordered pair, a first-word
+initial charge and a terminal charge on the actual equal pair. These
+are allowed to be arbitrary functions of the fine marks and chart.
+Subtract a specified comparison log weight, e.g. the product of the
+actual fine probabilities to a declared power. The resulting log
+defect has the form
+
+    d(h) = s_(first) + sum_visits u_i + sum_(a<c) v_(i_a,i_c)
+                       + t_(matched,final).                           (RI1)
+
+The sign convention is log weight; an additive Golden traversal price
+changes it by minus ln(phi) times the price. RI1 is an assumption on
+the complete *marked physical valuation* when applied to Book03. An
+unobserved coherent sum of many paths need not have a pair-additive
+logarithm. A measured quadratic row calibrated to the native law uses
+the probability comparison power one. A single norm-one class on each
+leaf read *quadratically* uses power one half for its pre-Born
+coefficient. Neither power is a discretionary conversion of the entire
+memory algebra into a scalar.
+
+Take i,k' with b(i)=b(k'). Choose j,l with the other two comparator
+strings, distinct from each other. Juxtaposition denotes a chronological
+*paid leaf*, with its actual full comparison receipts. Direct cancellation
+gives three observable contrasts:
+
+    v_jl = d(ijlk') - d(ijk') - d(ilk') + d(ik'),
+    u_j  = d(ijk') - d(ik') - v_ij - v_jk',
+    s_j-s_i = d(jik')-d(ijk')-v_ji+v_ij.                            (RI2)
+
+The first identity measures an actual intervening comparison while
+keeping both end marks fixed. The second then removes its two incident
+comparison charges. Any ordered unequal pair can be placed in the
+first formula by selecting a third comparator string. The third
+determines all first-word contrasts, including via an intermediate
+string if the two initial words have the same comparator label. Finally
+d(ik')=s_i+u_i+u_k'+v_ik'+t_ik' measures the single successful-close
+combination. No independence of the *numerical* unequal-pair prices,
+nor their symmetry under exchanging arguments, is needed.
+
+In particular if the physical and reference *normalized* full-record
+laws agree in these cylinders, all their absolute log defects on those
+cylinders equal some K. Then v_jl=0 for every unequal pair, u_j=0
+for every word, s_j=s is constant, and v_ik'+t_ik'=K-s for every
+possible matching pair. Conversely these equalities force d(h)=K
+on **every complete history**, even the longest. A shift of a paid
+equal-pair charge into its own terminal charge is genuinely invisible
+because both occur once on every corresponding run. A common initial
+or terminal factor exp K changes the absolute partition. It cannot
+be set equal to one using normalized outcome odds. The empty history
+is not an ending of the repeat task. An earlier stopped work/Info row
+cannot be silently imported as this anchor.
+
+RI2 is also a stable *inverse* at the actual scale of the measurements.
+If the short log defects differ from K by at most epsilon, the unequal
+pair errors are at most 4 epsilon, unary errors 10 epsilon and initial
+contrasts at most 10 epsilon across coarse classes or 20 epsilon within
+one class. At a differentiable common comparison on the same physical
+input the identical linear equations hold for covectors, with their true
+dual norms. Testing only their values at a tuned field would not prove
+this source statement. For κ finite pairs use the actual two words and
+their denominators. If the per-prefix controls are independent, RI2
+must intertwine the actual regeneration maps/controls across placements
+or the extra contextual rows must be bounded. Equal values at the
+homogeneous section do not identify otherwise unrelated variations.
+
+There is a quantitative reason to preserve absolute precision. Put
+m=2^k and give every unequal comparison a small extra *log weight*
+epsilon_k=m^(-1/2). The local log contrasts on 2–4 words vanish in
+the limit. A leaf of length m+1 accrues order epsilon_k m² while
+the probability that the first m iid original words are all distinct
+is m! product_x P_x. On the fixed positive Bernoulli collar its log
+is bounded below by -C k m. A fixed discount per word also costs
+only O(m) in log units. Thus a real positive pair tilt can transfer
+mass to the longest histories. Control of derivatives at an exactly
+matched baseline, a true tilted tail bound as in AR6, or an accuracy
+budget against the actual m² comparison count is needed. A separate
+terminal factor activated only on the fifth word is invisible on every
+short test. RI1 excludes that extra clock dependence; if present it
+has its own operand. These arguments also distinguish physical tests of
+rare individual cylinders from an uncharged marginal count.
+
+### Operator normalization from an inserted word
+
+There is a noncommutative version with a useful weaker conclusion.
+Suppose a common complete positive word instrument T_x acts on the
+reachable memory. Use the Heisenberg adjoint and let N>=0 be the
+*actual* total unnormalized end effect. If the normalized probabilities
+of the two full paid leaves yy, xyy (different comparator classes)
+agree with their original iid values for all physical input states,
+their effect identities are E_yy=P_y² N and E_xyy=P_x P_y² N.
+If the same suffix yy, including its complete subsequent price and
+proper cut, transports after x, then E_xyy=T_x^*(E_yy). Consequently
+
+    T_x^*(N)=P_x N.                                                    (RI3)
+
+No inversion of T_x or diagonalization of its memory is involved. A
+two-sided relative order tolerance epsilon<1 on both effects bounds
+T_x^*(N)/(P_x) between (1-epsilon)/(1+epsilon) N and its reciprocal
+multiple on the supported inputs. This works for a singular N. The
+flagged variant fixes the return row on (x,0) to p P_x N by keeping
+the actual Golden flags in both leaves. Separately priced cross-pair
+receipts change the suffix; RI2 shows exactly which factors to
+include if they are scalar. An arbitrary memory-dependent comparison
+map cannot be moved past T_x. Branch-label probabilities on a single
+prepared input would not establish these operator identities.
+
+On the **actual fresh scalar marked instrument** trace supplies N=I
+and nondemolition comparison receipts preserve that trace with their
+complements. RI3 then reproduces the AR5 marked mass on this very
+machine. This supplies a finite operational way to test a proposed
+original weighted return observer, including whether its normalization
+really regenerates. It does not establish that the positive trace of the
+marked CP experiment is the scalar valuation required of Book03's
+formal ordered memory. Book03 §§03.1.3, 03.3.0 and 03.10 distinguish
+the weighted class, its representation and the quadratic record readout.
+
+### Which part of the absolute price is fixed by a paid branch
+
+Let a physically read prefix flag choose one of two continuations. Write w
+for the complete common input and ξ₀,ξ₁ for the controls actually settable
+independently *after* the routing. Include the address/read/programming
+work, and keep both flag outcomes. Compare the joint unnormalized physical
+leaf weight W(a,h) with a fixed positive reference B(a,h), including its
+flag mass. For example B is the true joint fine probability, or a specified
+power of it. Suppose the short calibrated cylinders in both arms share the
+same ratio W/B=exp K on a rectangle of these controls. This follows from
+equality of the *joint* normalized laws of W and B there. Conditional odds
+normalized separately in each arm are insufficient. RI2 propagates this
+ratio to long leaves within RI1, with the true common reference. If the
+first flag is fixed in an arm, use only start labels with that flag:
+each comparator class has at least one such label. Every unequal-pair
+and unary contrast still has a legal start of a third class. Compare
+initial charges only among legal starts. For a matched fine i which
+cannot start that arm, the length-three leaf j i k′, with j a legal
+start of a different class, determines v_(i,k′)+t_(i,k′) after those
+known terms. This covers all leaves without sampling a forbidden flag.
+
+Choose one positive short leaf in the opposite arm. When its complete
+absolute path weight and its reference depend only on (w,ξ₁), their log
+ratio cannot vary under any change of ξ₀. Exchanging the arms gives
+
+    K(w,ξ₀,ξ₁)=K(w),    D_post K=0.                                    (RI4)
+
+This proof holds for finite changes, and needs neither a measured
+absolute tariff nor the value of K. With opposite-arm log errors at
+most ε, any isolated finite change has |ΔK|≤2ε. For a derivative one
+needs the corresponding jet error or the real finite denominator. The
+same argument works for complete effects on a fixed input: if E(a,h)
+and the strictly positive scalar reference B(a,h) are both independent
+of an unused control, the operator N=E(a,h)/B(a,h) is independent of
+that control on the compared input space. A single prepared density
+does not give this all-column identity.
+
+One implementation uses the first already specified Golden flag of §7fy:
+execute its birth and paid copy and read it *before* the first H.1
+preparation. Each accepted arm then runs the same repeat task with fresh,
+separately addressable preparation occurrences. At identical settings the
+distribution of τ and all archived marks is the original one; no second
+flag is inserted. A field already read into a common controller before the
+flag belongs to w. Two labels on copies of that same input do not implement
+the intervention rectangle. Neither Book cluster decomposition for
+disconnected graphs nor Born conditioning proves absolute cost locality
+on a connected controller. A physical transfer charging inactive programmes
+globally must instead keep that charge.
+
+There is an exact gauge at the common initial state: adding f(v)−f(v')
+to the log weight of each traversed edge and f(leaf) to its terminal log
+weight adds only f(root) on *every* complete history. All conditional
+fork tests still agree. An uncompensated toll charged at every visit is
+visible because visit counts differ. With a genuinely unchanged physically
+late-dispatched base arm of fixed width one can compare K_k to its fixed
+K_base and bound the common old jet relative to the growing gain; a width
+or target already programmed into the shared preparation has its own real
+reaction. At a fixed full old state, (RI4) removes the normalization
+premise on postflag controls alone.
+
+For a physically selected positive leaf *scalar* W=exp(K)P^σ, its actual
+Born mean negative log in Golden units is [σ H(P)−K]/ln φ. A normalized
+probability law W proportional to P has constant unmarked total at
+fixed w. Its marked events, however, carry the true signal: the probability
+of all Golden flags zero is §7fy AR5 at identical arm settings. A change
+on the unvisited arm has zero unnormalized marked weight derivative if
+the first flag excluded it. Statistical entropy, marked probability and
+full Book memory amplitude have separate readouts. The next calculation
+tests the selected whole-clock heat as a possible source of those weights.
+
+### The truthful native reset tests an actual path-price difference and the selected memory row
+
+For the two wrong-bit paths of the paid routed inverse (primary §7fy; locate via `positive_bit = a*p*(eye8 + central)`), write their positive **total** coefficients as A,B, in memory classes 1,z=−1. Let C>0 be the sum of the two right-bit coefficients with class 1. Any Born multiplicities, earlier fixed path factors or unequal terminal charges occurring before this comparison belong in these coefficients. The native Golden reference gives A=B=p sqrt(p), C=p+p²=1. The test below does not assume these values. The model assumes the original two-path support, ordinary positive class coefficients, the same linear readout H>=0 for the memory of each resolved bit, and the same source input. An additional path, differing bit-specific metrics or a recorded intermediate path has to be included separately.
+
+On the regular memory put Z=R_z, E±=(I±Z)/2, K=AI+BZ. The dark operator is (A+B)E₊+(A−B)E₋. For source density ρ the raw wrong/right masses are D=Tr(HKρK*) and G=C²Tr(Hρ). A normalized wrong probability at most ε<1 says D<=δG for δ=ε/(1−ε), without equating G to 1. These formulas require a common two-outcome quadratic readout. A probability normalized separately in each arm would not yield them.
+
+**All input columns.** Uniform normalized data over all admissible regular inputs with positive total response, including the zero-response directions by continuity, imply K*HK<=δ C² H. On E₊ and E₋ this gives [(A+B)²−δC²]E₊HE₊<=0 and [(A−B)²−δC²]E₋HE₋<=0. If A+B>C sqrt(δ), then E₊HE₊=0 exactly: positivity implies H=E₋HE₋. Any nonzero such H forces |A−B|<=C sqrt(δ). At exact darkness, for any H≠0 the necessary/sufficient conditions are A=B and H=E₋HE₋. Without a lower bound on (A+B)/C, approximate darkness alone allows an arbitrarily weak wrong channel. For an absolute bound ||K*HK||<=d one has ||E₊HE₊||<=d/(A+B)² and |A−B|<=sqrt(d/||H||) for H≠0 (use K inverse if A≠B). Positivity gives ||E₊HE₋||<=sqrt(d||H||)/(A+B). A normalized bound for one state does not imply these uniform operator inequalities.
+
+**A single calibrated unit-class input.** Let e denote that input, h=<e,He>>0, h_z=<Ze,HZe>>0, ξ=sqrt(h_z/h). By the reverse triangle inequality |A−Bξ|<=C sqrt(δ). Exact darkness thus forces A/B=ξ and H^(1/2)(e+ξ^(-1)Ze)=0. In particular when the two isolated class responses are calibrated equally, the exact identity
+```
+D/h=(A−B)²+4AB ||H^(1/2)E₊e||²/h
+```
+yields |A−B|/C<=sqrt(δ) and ||H^(1/2)E₊e||²/h<=δC²/(4AB). Here H need not commute with Z: equality of the two diagonal calibrated responses suffices. If (A+B)/C>=m>0 was separately established on this same execution, r=|A−B|/(A+B)<=sqrt(δ)/m. For r<1 the two total net path-price contrasts obey |log_phi(A/B)|<=2 atanh(r)/ln(phi). With unequal class calibration use A and Bξ, subtracting the known log_phi ξ before interpreting any path-price contrast. Zero-visibility classes require separate treatment. Without a bright or absolute path-total scale, A=2s, B=s, C=1, H=E₋ keep the path ratio 2 for arbitrarily small observed wrong fraction. A separately executed bright splitter with different physical traversal prices cannot provide the bound for free.
+
+A second single-input option tests Ke and ZKe with the same fixed H. If both wrong vectors have H-seminorm at most C sqrt(δ h), then (A+B)(A−B)e=A Ke−B ZKe gives |A−B|<=C sqrt(δ). Their sum gives ||H^(1/2)E₊e||/sqrt(h)<=C sqrt(δ)/(A+B). A paid central tag realizes this comparison only when its action on the proposed weighted memory, including any extra tariff, is known. Unequal path-specific gains of the tag need their own calibration. Alternatively central invariance Z*HZ=H implies the two equal isolated responses. A single dark vector without either calibration does not force weight equality: on span(e,Ze), the rank-one positive H with underlying vector (B,−A) yields darkness for any A,B>0 and nonzero correct success.
+
+**State versus readout.** With H=I, for one state D=(A+B)²Tr(E₊ρ)+(A−B)²Tr(E₋ρ). An absolute bound d yields even *state* mass <=d/(A+B)² and |A−B|<=sqrt(d) for normalized ρ. Conversely for fixed ρ>=λI, H>=0 and D<=d one has ||K*HK||<=d/λ. With general unknown H and ρ, the zero condition is just H^(1/2)Kρ^(1/2)=0. It does not individually locate either operand. Native physical Spin is four-dimensional and maps into odd regular memory by T*/sqrt(2), using TT*=2I and T*T=2E₄; its four independent inputs cover the odd subspace, not all eight class columns. On this interface the erroneous quadratic response relative to the correct one is simply (A−B)²/C² when correct is nonzero. This yields equality of the two effective prices at exact truth, or their difference relative to C at finite precision; it gives no constraint on H for even inputs that were never available. Book03 94–102 gives the class/regular intertwiners, reports equal isolated Spin sign responses and calibrates the bright/dark reference. Book03 1169–1175 and native_execution.py 36,116–121,313–325 give the single active SourceI and paid inverse. Its controlled square can supply a central sign on an occupied bit; i-translates, even when selected, span at most the C4 orbit of the regular unit. Arbitrary Q8 translations or initialized unit-class states are not implied by the native Spin input. The separate common-j experiment has its own stated interface.
+
+**What is fixed at source level.** If the same true reset and calibrated sign equality hold at every point of an open chart of actual admissible comparisons, exact darkness gives A=B pointwise, hence d log A=d log B in every direction there. More generally d log(A/B)=d log ξ for a transported moving calibration. At a single dark point the first derivative of the *probability* vanishes automatically because it is the squared seminorm of a zero response (with H fixed; also for a smooth positive H on two-sided tangents when the zero is readout-dark). This does not constrain d(A−B). On the odd state the Hessian of the wrong probability along a two-sided direction at A=B is 2[d(A−B)]²/C². Uniformly small darkness controls finite log contrasts by the displayed bound; actual two-sided differences need division by their step and gain. No C¹ estimate follows merely from a C⁰ tolerance. Multiplying A,B,C by the same positive factor leaves all normalized reset probabilities unchanged. After equality, (A,B,C)=(s,s,c) at varying positive s/c also gives zero wrong probability on the odd sector. This single task neither determines s/c nor selects the complete physical normalization. Book03 147–172 pins the positive history form and Cost−Info; Book01 1837–1885 specifies quadratic response after unit calibration. Neither by itself identifies the normalized Spin detector with every row of the Book path algebra.
+
+### Close the variable-length Book clock on the chronological tree
+
+Use the original [GROWING G1–G14 birth and Hodge construction](sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md)
+at every real node of the measured protocol. Keep a separate Hilbert
+space H_v for each actual prefix stage, and the full spaces for
+uninitialized, invalid and abort sectors. The last real gate of each
+finished branch is g_l. No idle stage is executed after stopping.
+At an interior node define the real isometry F_v:H_v→⊕_c H_c
+and reference embedding J_v at that node. A square raw call has
+J_v=I; a canonical birth has its original embedding. For an
+exhaustive measured router with orthogonal fixed projectors P_b use
+J_v x=(P_b x)_b and F_v x=(P_b U_v x)_b for its actual preceding
+unitary U_v. Both ranges are then the same. Additional child
+complements can be left in the child spaces. A general instrument
+with an unproved or moving range requires its actual dilation and
+transport. The measured controller, addresses and actual g_l are
+part of this application. This is an extension of the original
+clock incidence to this specified execution, rather than a derivation
+that every Book programme uses this router.
+
+Write B_v for the passive embedding from node v into the direct sum
+of the leaves below it. B_l=I and B_v=(⊕_c B_c)J_v. By induction
+the whole leaf space splits orthogonally into B_root H_root and
+(⊕_c B_c)ker J_v^* for every interior v, with the indicated subtree
+embeddings into the total leaf space. Indeed one step is the
+decomposition ran J_v ⊕ ker J_v^* at the children. Send each of
+these components back by its adjoint to the root, respectively to
+its true child-defect slots in the stage space. The resulting R
+satisfies R^*R=I_leaf and RR^*=I-SS^*, where S is the shift
+given by F_v from interior nodes and zero on leaves. Since
+S^*S=I-E_leaf^*E_leaf and S^*R=0,
+
+    T=S+R(⊕_l g_l)E_leaf is unitary.                                   (RC1)
+
+This closing incidence uses the actual last gate separately on each
+branch. It is not a physical inverse of earlier work. It reduces to
+G5 on a serial execution. Spectators commute with it whenever they
+are intertwined by the given gates/reference inclusions. The full
+two-degree Book scene now has 425D modes, D=sum_v dim H_v. Its exact
+heat trace is 2Tr exp[-beta(I-B_s⊗I-C_s⊗(T+T*))]+359D.
+On a common layout with fixed beta, reference and scene,
+
+    |dH| <= 2||C_s|| ||dT|| = (1/11)||dT||.                            (RC2)
+
+The thermal derivative uses a positive density with mass at most one.
+For fixed ranges, dS and R dg have orthogonal input and output
+spaces, so ||dT|| is at most the largest actual interior/last
+operator derivative. No factor counting the number of leaves appears.
+If the dimension, beta, scene, projectors or incidence varies, retain
+its actual derivative. In particular (log D)/beta cannot be cancelled
+between different layouts without proof. For same-D finite comparisons
+the full spectral range also bounds the absolute heat difference,
+which must be divided by the actual comparison step and gain.
+
+### The retained cut seals the actual records
+
+Impose G7 generation from the specified root cut P0 together with
+retention of the *classical* prefix address. At a node the smallest
+projection containing all reached input columns and reducing the
+already recorded addresses is the direct sum of their individual
+range projections. Indeed an address projector applied to each input
+column must still lie in that space. Let P_v be the range of the
+conditional prefix map on P0 (zero for a structurally impossible
+prefix), P=⊕ P_v, P_L its leaf sum, and r=rank P0. For the true
+square calls, births and orthogonal measured routers,
+F_v P_v maps into ⊕P_c, and ⊕P_c lies in ran J_v. For the
+router this follows from the distinct P_b-sector supports, not from
+isometry alone. Thus PR has only the original root component,
+ι_root P0 B_root^*. The whole leakage (I-P)TP comes from the
+actual leaves. On L=rank P_L retained leaf columns its Gram is
+I_L-C^*C, where C=P0 B_root^* g P_L maps to the rank-r root.
+Sylvester's determinant identity yields the exact original Book
+one-tick expression, for 0<z<1, including every other stage mode,
+
+    det(I-z P T^*(I-P)TP)
+       =(1-z)^(L-r) det_root[(1-z)I_r+z h],
+    h=C C^*=P0 B_root^* g P_L g^* B_root P0.                          (RC3)
+
+For the original rank-one scene cut in degree zero, the internal tick
+is identity on the spatial factor and the degree-one feedback cut is
+zero (G14). RC3 then enters the master exactly once. A fixed reducing
+scene cut of rank s gives its s-th power. Moving or mixing scene cuts
+require the actual compression. The total cut rank V_N is the sum of
+the retained node ranks times the applicable spatial multiplicity;
+L only counts retained leaf columns. The Book volume difference,
+other terms of the full stack, or a freely varied β are separate
+variations. The one-tick formulation here uses Book03 §§03.3.2 and
+03.25. No extra power of the tick or multiplicity from another
+fixed-cycle model is inserted.
+
+The potentially extensive contribution -L log(1-z) is part of J.
+At fixed L,z it has zero source. Its value is retained; changing
+the support rank or z is a separate physical variation. RC3 differs
+from coherently adding all leaf amplitudes first and then squaring a
+single root corner. In particular h depends on the normalized occupied
+leaf spaces. Positive scalar changes of their reach probabilities,
+with these spaces and the reference fixed, leave it exactly constant.
+The small Golden example below changes a true preparation and has two
+different stopping depths. Its coherent root cold square changes from
+13p-8 to 65-105p, while the marked-clock h equals p at both settings.
+It verifies the complete Hodge dimension of 4675 modes on D=11. Heat itself need not be
+strictly constant under the same variation.
+
+For the actual 138-stage recorder the six stored raw values are
+(r,t,r,t,t,r), with labels 00,01,10 legal. Their *joint* born masses
+including the original two wires are p^8,p^12,p^12; truthful but
+invalid 11 has p^16. The 252 inconsistent assignments to these eight
+bits remain in the carrier. The original two-wire marginal masses
+in §7fy are not these joint masses. For a single fine resolved probe
+with probabilities (1-q)(1-u),(1-q)u,q, a coherent pre-mark polar
+overlap uses the sum of square roots of joint mass times probability.
+A subsequent branchwise paid born comparison on a sealed transcript
+uses the sum of mass times probability. The range effect uses the
+sum of the occupied born masses on the corresponding polar section.
+For the coherent single-probe cold the bright optimum is
+u=p^4/(1+p^4); for the parsed entropy it is p². At the former, the
+parsed u-row is -3(1-q). These distinct effects cannot be substituted
+for RC3. The latter retains its own cut and all real varying rows.
+
+There is a uniform bound on the actual field-dependent part of RC3.
+Every reached legal termination has at least two complete comparator
+words, hence at least 4k distinct fine-probe sextets. Let Q select
+just the three legal sextet patterns on those mandatory probes,
+ignoring the old inputs and the remaining history. The entire
+valid marked range after the last real gate is contained in Q.
+When the passive inclusions are the above canonical births and
+the physical measured address routers test fixed computational
+marks, the backward reference cost of each legal sextet is
+
+    m6=p^6+2p^9 < 1/8,       B_root^* Q B_root <= m6^(4k) I.           (RC4)
+
+More precisely Q is zero on reference branches terminating before
+those probes or failing the selected support. Reference square gates
+are identity, each new bit is born in v, and complete diagonal readouts
+preserve any diagonal event when summed. Conditioning on a previously
+read bit cannot create mass on the other legal alternatives. Coupling
+the successive fresh births to an independent sequence before reading
+any of them bounds the *unconditional* mass of the intersection by
+the product, even when routing consumes earlier marks. It works on all
+root columns including entangled spectators, by the same backward
+positive-operator calculation. The closing g must preserve those
+already held marks or they must be explicitly transported. This is
+true of the comparison suffix addressing only public copies.
+Off-support abort sectors remain in the full heat. If extra abort
+histories are actually reached before two complete words their
+projection must be included separately, and RC4 does not price them.
+
+It follows that 0<=h<=m6^(4k)I and
+
+    |J+L log(1-z)| <= r z m6^(4k)/(1-z).                              (RC5)
+
+For a truthful fixed layout let W=gP_Lg^* with W=QWQ. For fixed
+reference and Q, ||dh||<=m6^(4k)||dW||. For arbitrary independent
+variation at each reached prefix a normalized leaf column can be
+differentiated visit by visit whenever each fresh positive fine
+outcome is a scalar multiple of an isometry on the whole inherited
+bank at the section and its relative local tangent is bounded.
+Cumulative derivative then grows at most linearly in the number of
+visits and actual calls, not as the inverse mass of the entire rare
+leaf. On the stated bounded local chart this gives at worst
+O_h(poly(k)4^k) for the specified all-pairs gate layout. The scalar
+lower bound must cover *every* varied positive mark, or its normalized
+map must be controlled separately. Variable public readers and active
+coherent old memory require their genuine transport. The product in
+RC5 still decays exponentially under that derivative bound. Finite
+contrasts with preserved rank have the direct value bound RC5 at each
+endpoint; their actual step and right-lift norm are required in CD13.
+
+Thus on this specified fixed marked incidence the entire old heat
+and feedback source is bounded relative to the extensive positive
+AR3 gain, with all thermal and leakage modes included. This removes
+the formerly uncomputed master contribution for that particular
+additive-price application when the stated tangent/contrast budgets
+hold. For the master alone its field gain has not been identified
+with AR3; in RC3 the occupancy contribution can vanish identically.
+A Book law selecting a different retained cut, an independent beta,
+a different stopping layout or changing support ranks must supply its
+actual extra rows.
+
+### One history, one Hodge operator, two experimentally distinct laws
+
+Can the missing joint record law be read directly from the *existing*
+Book heat? This question has a decisive answer on this same tree. Use
+the full operator Δ=Δ₀⊕Δ₁ of G12–G14 at fixed spatial scene and β>0.
+Let M_A be the projection onto an actual set A of stage addresses,
+on both grades and **all** their apparatus columns. Its Gibbs probability
+is μ(A)=Tr(M_A exp(−βΔ))/Z, Z=Tr exp(−βΔ). It need not commute with Δ.
+If d(A) is the sum of the hardware dimensions at those nodes, its rank is
+425 d(A). Since 0≤Δ≤2I, we have
+
+    425 e^(−2β) d(A) ≤ Z μ(A) ≤ 425 d(A).
+    |D log[μ(A)/μ(C)]| ≤ 2β e^(2β) ||DΔ||.                            (TH1)
+
+Here A,C are nonempty fixed projections. Integrate the Duhamel derivative
+of the exponential: both semigroup factors are contractions, so its
+operator norm is ≤β||DΔ||, and taking the projected trace costs at most
+the rank. The same bound holds for log μ(A) using the full carrier for
+C. It also holds if the Gibbs address law is conditioned on all true
+terminal addresses. On a fixed layout (G12), ||DΔ_i||≤2√2||R_s|| ||DT||
+on both grades, by differentiating d_T or its adjoint and ||d_T||≤√2.
+Together with RC2 the bound is uniform in the entire tree size when the
+maximum physical single-stage jet is bounded. If literal-word comparisons
+replace a common smooth path, the variation of log[μ(A)/μ(C)] between
+*any* two operators satisfying these spectral bounds and the same fixed
+address ranks is at most 4β before division by the actual step. It
+does not imply a uniform derivative as the step shrinks.
+
+Take A to be the terminal addresses 'the first two comparator words
+coincide', C all genuine terminal addresses. In the measured experiment
+its *unconditional* probability on the homogeneous correct section is
+
+    P(A)=[y²+(1−y)²]^k=b^k,       ∂_y log P(A)=k(4y−2)/b.             (TH2)
+
+The slope is separated from zero times k on the whole §7fy collar. For
+a common physical continuation with dy bounded away from zero and bounded
+single-stage jets at the fixed mesh, (TH1) and (TH2) have different
+first sources for sufficiently large k. More generally compare the
+displayed bounds with the actual dy, primitive jets and κ steps. Varying
+a frozen symbolic y without implementing its field lift is insufficient.
+Conditioning the heat on terminal leaves cannot fix this disparity.
+
+There is also a value test on the specified resource layout. For one
+actual comparator history of τ words the §7fy hardware alone has
+b_γ=[(2 b_h+13)k+2]τ+k τ(τ−1)/2 new binary registers, where b_h
+counts births in one H.1 body. The live leaf dimension is d₀ 2^b_γ.
+All such counts retain the real XOR comparison targets. At fixed mesh
+there are at most exp(C_h k) legal two-word fine addresses for the
+described finite per-probe mark alphabet. At least one legal positive
+history visits all m=2^k different strings before its final repeat.
+Using only that single long leaf in the denominator of (TH1) gives
+
+    μ(A)/μ(C) ≤ exp(C_h k+2β) 2^[−k(binomial(m+1,2)−1)].              (TH3)
+
+Extra births must keep this dimension inequality or be counted at their
+actual addresses. TH3 already compares the explicit fixed-layout tree.
+No uniform mass of the 359D harmonic modes at each separate address
+was assumed. Even on rare events the difference from (TH2) can therefore
+be computed without relying on an asymptotic derivative of a small
+probability. This excludes exactly the proposed thermal-address transport;
+another physical Book valuation can still have the correct marked mass.
+
+There is a positive source on the **same** closed clock. Embed the actual
+terminal recorded state Γ=⊕_γ K_γ ρ K_γ* at its true leaf addresses, with
+a grade-zero scene density η and zero on grade one; call the result ρ_T.
+Here each K_γ is the complete efficient conditional map on the inherited
+input, all fine marks and the remaining quantum hardware are retained,
+and Σ K_γ* K_γ=I. Stage-leaf coordinates precede the true last gate
+g_γ in RC1. If K_γ is the complete post-gate map, embed
+g_γ* K_γ ρ K_γ* g_γ there (equivalently conjugate the full clock
+and readouts to post-gate coordinates). This is an isometric
+identification including its derivatives; no inverse is executed.
+The previously priced GROWING Gibbs identity §7fe PB5
+can now be applied to *this* state. By RC3, P_L T P_L=0 in the stage
+space (embedded leaf cut): the closure sends its retained component to
+the root, which is distinct from every leaf. Thus the energy term is
+exact even when the terminal state fills many conditional leaf spaces.
+With σ_H=exp(−βΔ)/Z on the entire 425D carrier,
+
+    D(ρ_T || σ_H) = log Z + β Tr η(I−B_s) − S(η) − S(Γ).              (TH4)
+
+There is a stronger absolute comparison which removes the old normalization
+on this very clock without inferring it from outcome odds. Put the same
+input state at the true root in degree zero, calling it ρ_R. The
+nonterminal root has P_root T P_root=0. Thus its expected thermal energy
+equals the very same scene term, and the selected Gibbs endpoint difference is
+
+    D(ρ_T || σ_H) − D(ρ_R || σ_H) = −[S(Γ)−S(ρ)].                     (TH5)
+
+This holds pointwise, including for actual finite comparisons on their
+own clocks. All moving log Z and common spatial-energy derivatives then
+cancel identically. It also works for an initial joint scene–bank state
+with arbitrary correlations: use the actual instrument id_scene⊗K_γ,
+replace Γ and ρ inside the entropy difference by the joint output and
+input, and note its trace-preserving sum preserves the entire spatial
+marginal. If the operations act on the scene, keep β times its actual
+energy change. A different physical initial reference/readout or an
+extra terminal charge has its own contribution. Selection of this
+difference as a physical debit/credit remains part of C.
+
+Unlike the fixed-weight coherent prefix lift in PB9, the genuine fine
+terminal record here has a field-dependent Shannon entropy. On the
+whole-bank scalar/isometric section K_γ* K_γ=P_γ I,
+S(Γ)=H(P)+S(ρ). There is no undifferentiated assumption that independent
+instrument variations also remain isometric conditional on each mark.
+Purify ρ with a reference R. Each efficient conditional joint state is
+pure, so S(Γ)=H(P)+S(ρ)−I(R:γ), using the actual conditional reference
+states. I(R:γ)≥0 and is zero at that section because the mark effect is
+scalar. Its derivative vanishes there on differentiable two-sided paths,
+by a minimum; on a regular fixed input support this also follows directly
+by differentiating the finite entropy formula. For finite κ comparisons
+or a changing support its actual difference needs a bound. At regular
+finite endpoints, for each positive conditional mark with centre
+probability a, suppose (1−ε)aI≤E≤(1+ε)aI on the inherited input.
+The conditional reference state is between (1−ε)/(1+ε) and its
+reciprocal times the incoming reference state in positive order, by
+compressing E into a purification and dividing by its trace. Its
+relative entropy to that incoming reference state is at most
+log[(1+ε)/(1−ε)], by operator monotonicity of log on support.
+The chain rule over real prefixes then bounds I(R:γ) at either
+endpoint by O_h(k U_± ε) when only O(k) such fresh marks per word
+are read. Redundant deterministic comparisons contribute zero under
+their truthful guard. Thus ε=O_h(|t|), U_±=O_h(L) give a secant
+error O_h(kL) before division by the order k²L gain. Similarly, if
+each reached conditional word entropy at either endpoint differs
+from h_f by O_h(k|t|), the entropy chain rule bounds its difference
+from h_f U_± by O_h(k|t|U_±). Use the actual joint finite-comparison
+norm and lift; genuinely new fault marks need separate estimates. A discarded environment is a
+different operand. Moving β, η, cut and ρ keep their displayed terms.
+
+The entropy source in (TH4) has an explicit normalization. At the
+homogeneous regenerated section let h_f be the Shannon entropy of one
+complete fine word (with the paid flag). It is of order k on the collar.
+The stopping decision uses the recorded comparator, hence
+H(P)=U h_f, U=Eτ, by the conditional entropy chain rule; splitting the
+first flag into an arm still counts it once. This is a value identity.
+For independent physical word/probe controls, differentiate the chain
+rule at that section by holding the common value h_f fixed:
+D H(P)=h_f D U + Σ_prefix Pr(prefix) D H(next word | prefix).
+The sum runs over word starts. Under fresh positive fine laws with bounded
+per-probe conditional information jets on the whole-bank scalar section,
+the last term has full dual norm O_h(kU). For example a word made from
+the §7fy O(k) fresh finite-alphabet probes and a flag has the same
+conditional entropy at all earlier marks at a given probe position.
+Differentiating inside that word cancels the probability derivatives of
+these constants, and each local entropy jet is bounded on its regular
+positive support. No agreement of tangent directions at different
+prefixes is required. Context-dependent extra apparatus outcomes carry
+their actual conditional entropy and jets.
+
+Consequently the oriented source −D[D(ρ_T||σ_H)] on field directions has
+the leading term h_f D U, common gain g_y h_f U' at least c g_y k² L,
+and bounded normalized signed total variation by AR1–AR2. For TH5 the common thermal
+log and the spatial/input baseline already cancel. For TH4 the thermal
+log derivative is bounded by β RC2, and all the independent
+entropy rows just bounded are O_h(kU). These errors vanish relative to
+this gain and after the existing LC9 right lift on its resource diagonal
+if the displayed old-state, scene, implementation and finite-comparison
+budgets vanish there too. A fixed change of overall sign for the
+divergence changes no stationary equation. No term of the physical
+Cost−Info action is assigned this sign by fiat. This directly consumes
+the original two-way Einstein–two-CAR theorem for the specified
+divergence observable. It uses the same T, Γ, clocks, preparation and
+whole ambient Hodge scene in both directions. There is no equality
+between the thermal-address probabilities and the native ones in this
+proof. In particular replacing Γ by a maximally mixed state in each
+archive space would add fictitious entropy of order E b_γ.
+
+At the level of the original physical contract, Book03 §03.25 chooses
+the unconditional master B. It does not instruct this measured apparatus
+to pay either the terminal divergence or its change from the initial
+divergence as its entire original history price. TH4 computes that
+specific operand from both sides. It is a physically distinct proposal
+from merely reading heat probabilities, which TH1–TH3 reject. To use
+TH4 for C requires the actual physical work/Info law to include its
+source (or agree modulo CD13), including any other independently
+varying charges, with fixed sign and nonzero resulting gain. Keeping
+only log Z would remove the leading measured-record term. Taking a
+mean of per-leaf serial log traces would be a third, different price
+and would require separately realized complete serial clocks.
+
+### What a paid comparison can dominate in the full price
+
+There is an additional way to apply this computation to CD13. The number
+of fresh, informative reports is proportional to kτ. The number of actual
+XOR receipts is proportional to kτ(τ−1)/2. After conditioning on earlier
+records, the latter are deterministic. This separates the scales of work
+and information on *one history*. It is unnecessary to reconstruct a
+microscopic Info whenever these two scales can be proved for the real
+valuation.
+
+Precisely, use the product-max norm and LC9 map of AR3. Let W be the
+actual mean paid traversal on the archive, including preparation, record,
+address and controller work in its priced word and pair charges or stated
+residual. Assume it obeys AR3 with nonnegative word mean b₀ and strictly
+positive pair mean w₀, their actual envelopes and jet/remainder budgets.
+Let a possibly contextual further net debit or credit have realized value
+i(γ), in the same units, with |i(γ)|≤C_h(1+kτ) and fixed-mark direct
+derivative norm ≤C'_h(1+kτ). No additivity, regenerated Info, choice of
+entropy functional or positivity of i is assumed here. The exponential
+survival bound gives ||1+kτ||₂=O_h(kL) for L=1/sqrt(b^k), and AR3's
+complete stopped score has L² norm at most K_h sqrt(kU).
+Cauchy–Schwarz, including all adaptive directions, gives
+
+    ||D E i||_* ≤ C''_h [k^(3/2)L^(3/2)+kL].
+    Γ_work ≥ c g_y k(b₀ L+w₀ L²).                                     (TH6)
+
+In particular for w₀ bounded below, fixed per-mesh bounds and positive
+g_y, the ratio is O_h(sqrt(k/L)). Neither the sign nor cancellation of
+record-dependent charges can remove the leading comparison source in
+this regime. Use the displayed ratio, plus the original AR3 error,
+before and after the real lift when w₀ or any bound depends on width.
+The estimate also applies to a first-order conditional expectation
+with those value and direct-jet bounds. For actual finite comparisons
+even a nonsmooth account with |I_±|≤C_h(1+kU_±) has a price-contrast
+budget C_h[2+k(U_++U_−)]/(2|t|Γ_work). For U_±=O_h(L) it vanishes
+if the actual step, gain, widths and lift allow it. This is a bound
+on the stated pair; to pass to the full finite covector retain the
+true basis/reconstruction constant or a uniform directional estimate.
+It supplies no derivative from a bare C⁰ tolerance at fixed resources.
+
+The complete efficient quantum information gain just calculated obeys
+the finite *value* condition: 0≤S(Γ)−S(ρ)≤H(P)≤C_h kU, by purification,
+the entropy chain rule, and the bounded number of fresh fine labels
+per probe. The lower bound follows from I(R:γ)≤H(P); all redundant
+comparison bits are retained. Thus for a mean physical ledger the
+existing positive pair-work class can absorb this exact full quantum
+Info at actual finite precision even if a local entropy jet is awkward.
+A different assignation of order kV information to the mere copying of
+already known XOR marks, an unbounded work reader of the whole bank,
+or a nonadditive partition over priced amplitudes does not meet this
+application by default. In particular an integer description price per
+test is not yet a lower bound on the net per-pair traversal price in
+the ordered Book sum. TH6 isolates a sufficient physical alternative
+to TH5: positive, comparable paid comparison work dominates any
+record-sized information account. Both alternatives still require
+identifying which source the original physical execution pays.
+
+
+There is a precise compatibility check between a *mean* net price and
+the original finite weight. At positive support put
+Γ_γ=K_γρK_γ*/P_γ, including its classical leaf address. Then exactly
+
+    D(Γ_γ || Γ)=−log P_γ,
+    Σ_γ P_γ D(Γ_γ || σ)−D(Γ || σ)=H(P)
+
+for every faithful common reference σ on the same space. The first
+identity follows by restricting Γ to its γ-block; in the second the
+linear log σ terms cancel. These define two different individual
+payments despite their identical average information. If physical Info
+really is the former realized distinguishability in Golden units and
+the *same positive scalar* weights obey exp[−ell(C_γ−I_γ)]=exp(K)P_γ^s
+with s>0, then necessarily ell C_γ=−(1+s)log P_γ−K. On a regenerated
+full fine record its right-hand side is additive over fresh words apart
+from the common K. RI2 forces every additional unequal ordered-pair
+log tariff in a pair-additive C to vanish. There is a test even without
+that decomposition: compare a legal short history with one of length
+2^k+1. On a fixed regular positive per-probe alphabet their surprisal
+difference is O_h(k 2^k). A strictly positive per-pair work lower bound
+on the long run, nonnegative remaining charges and O_h(poly(k)) work
+on the short run give a traversal difference of order at least 4^k.
+The K cancels exactly. Thus those two proposed physical identifications
+cannot both hold for large width. This conclusion is specific to the
+actual scalarization and the per-history work bound. A mean lower bound
+alone is insufficient; an order-memory-valued coherent sum is a different
+left-hand side. Equal average information does not repair the contradiction.
+
+This observation need not kill the *absolute weighted* source. In the
+regenerated scalar case, suppose the genuine absolute price multiplies
+each actual fine probability by w_t>0 at its true stopping duration t,
+including any constant word and pair traversal prices, with w_(t+1)≤r w_t
+for some fixed r<1. No lower bound on w₂ or calibrated unit charge is
+required; all absolute weights, marks and the actual stopping time are
+retained. The finite partition and its absolute scale satisfy
+
+    Z_W=Σ_{t=2}^{m+1} w_t P(τ=t),
+    A_k=Σ_{t=2}^{m+1}(t−1)w_t,
+    Z_W=A_k b^k[1+O_r((λ/b)^k)],       λ=max(y³+(1−y)³,b²)<b.         (TH7)
+
+Indeed the union count (t−1)b^k for the final matching pair exceeds
+P(τ=t) by at most O(t³ λ^k), using the overlap witnesses of AR5. Since
+Σ t^j w_t≤C_(j,r) w₂ and A_k≥w₂, this is a *relative* bound even when
+the true cost makes w₂ exponentially small. Differentiating the overlap
+error with the real conditional probability scores gives an additional
+factor O_h(kt). For fixed physical tariffs along the calibrated field,
+∂_y log Z_W=k b'/b+O_h(k(λ/b)^k); the common field source survives
+even when the normalized priced duration law concentrates on two words.
+The total native independent probability score is O_h(k) in the tilted
+dual norm: the same pair upper bound yields E_tilt τ=O_r(1), and the
+actual conditional log scores per probe must be bounded. Use AR5 and
+the same diagonal LC9 lift. An example with fixed positive price per
+known binary birth and the original Golden all-zero flag gives weights
+of the form p^t exp(−c b_γ) under this scalar tariff hypothesis. This
+is a source computation without concluding that native births actually
+have that unit tariff. Work varying independently at fixed marks must
+include its exact tilted expectation of D log w_γ. Even if w is
+duration-only throughout a chart, D log A_k is a genuine source and
+can be of order k. A lower bound on paid work does not prove this direct
+jet negligible or prove a regenerative scalar row. For κ comparisons
+use absolute precision on Z_W relative to the actual A_k b^k. TH7 gives
+a finite-weight alternative when normalized short odds fail. It cannot
+be combined with a positive mean work term as an extra price without
+a physical rule specifying both.
+
+### The precise admission inherited from the verification kernel
+
+The leading event in TH2 and TH7 already has a kernel owner. Book00
+§00.3a specifies compare(x,y)=[x≠y] for physical registered records.
+Section 00.3c uses pair coincidences to test independence without an
+external catalogue. In this execution the first two words have both
+been fully recorded before their XOR comparison, irrespective of
+whether they agree. On positive registered supports H_x, any exact
+agreement effect 0≤E≤I is *forced* on all their products: expectation
+one on a faithful matching support implies (I−E) annihilates that
+support, and expectation zero on a disjoint-labelled pair implies E
+annihilates it. This follows by taking the square root of the positive
+operator and applies to all columns of the support. Thus E is exactly
+the sum of the matching product projections on the joint registered
+span. The actual all-zero XOR receipt implements this effect there.
+No further choice of detector basis, numerical closeness threshold or
+free scalar controller is needed for this part of D. Additional
+rotations changing this effect violate the actual comparison contract.
+The price of implementing E still has its own admissible variations.
+
+Independence is a distinct operational condition even for that unique
+effect. Let p_xy be the measured joint law of the first and second word,
+u,v its true marginals, m=2^k the alphabet size. Without discarding
+fine records one may take this classical marginal. With D_xy=p_xy−u_x v_y
+the Book00 independence defect is Δ_ind=Σ D_xy². Since D has zero row
+and column sums,
+
+    |P(agree)−Σ_x u_x v_x|
+       = |⟨I−11ᵀ/m,D⟩| ≤ sqrt((m−1) Δ_ind).                           (AD1)
+
+The constant is sharp: add ε(I−11ᵀ/m) to a strictly positive product
+law, with ε small enough for positivity. Both marginals stay fixed.
+At ε=0, DΔ_ind=0 but the agreement derivative is m−1. Thus even an
+exact zero of the independence statistic at the centre and zero first
+derivative of that statistic do not establish independent *source*
+variations. On an actually factored family AD1 has zero error. On true
+finite alternatives apply it to both endpoints: the error in log
+agreement is bounded by −log(1−d/s) at each, where s=Σu_x v_x and
+d=sqrt((m−1)Δ_ind)<s. Divide their summed errors by the actual
+comparison separation, gain and use the true lift. Estimating Δ_ind
+from four independently prepared pairs would itself require those
+preparations; it is not an extra free observation in the present run.
+
+This supplies the selection of the *comparison effect* in the common
+leading cylinder from the actual kernel. It does not select the H.1
+records to which it is applied, a mandatory stopping rule or a price
+for all pairs. On the declared first-repeat task the earliest possible
+sound positive witness is the first repeat; a dictionary could implement
+the weaker existential task without issuing all the later scan receipts.
+The extra paid comparison work of TH6 and any duration weights in TH7
+belong to the actual task that implements them.
+
+### What is now tested by the original Book valuation
+
+RI1–RI4 give finite comparisons on the real inputs for a proposed
+regenerating weighted law, including a causal way to remove the
+unknown normalizer on independently addressable postflag controls.
+The dark output of the genuine reset constrains the original memory
+representation and two local path prices before normalization. The
+original Gibbs address law fails the short-repeat test on the declared
+layout. The full quantum relative entropy and its endpoint difference (TH4–TH5) supply a positive
+oriented covector on the same paid history without making that false
+identification. No other new action is needed to compute either test.
+
+The physical acceptance question is whether the original edge Cost
+minus vertex Info, with its terminal weighting and shared preparation,
+selects this record-sensitive source or a source-equivalent traversal
+satisfying CD13. TH6 and TH7 give separate sufficient conditions for
+a mean ledger and for an absolute finite-weight readout. Book03 §§03.3.0, 03.10 and 03.25
+give the weighted paths, the represented readout and the scalar master.
+They do not specify that the whole terminal Gibbs divergence is paid.
+Distinct readouts are not alternative physically admitted laws solely
+by virtue of being computable. Book00 §00.3a does determine the agreement effect on the registered
+records (AD1 gives the finite independence-error budget). The extra first-repeat task,
+its classical conditional controller, the marked reducing cut, and
+any independent old/scene, comparator or termination charge outside
+the stated bounds still require their native admission/valuation.
+The earlier H.1 admitted chart and its two-way theorem keep their original
+scope. No physical scoped terminal or unrestricted closure is asserted.
+
+### Reproduction of this substitution
+
+The following scripts are extracted and executed together from the
+repository root with Python and SymPy 1.14. Algebraic identities,
+finite countercontrols and floating diagnostics have their indicated
+scopes. The dimension checks do not diagonalize a growing 425D clock.
+
+<details>
+<summary>check_receipt_inverse.py</summary>
+
+Source SHA256 5ea3cc3c66953f303ad3dceb924b859359f35462d56b9bd2020adab421e9841b. Output SHA256 de1d509d30b4efa91aaac7f47133e48ecc7267f3ba9076da8e5934f8cca10f42.
+
+```python
+"""Exact short-leaf inverse for all-pairs receipts; run with Python and SymPy.
+
+s_i starts the execution, u_i is the word defect from its chosen target,
+v_ij is the ordered pair receipt, t_ik closes its unique coarse match.
+K is the common complete-leaf offset. All are independent formal coordinates.
+"""
+from collections import Counter
+from functools import lru_cache
+from itertools import product
+import json
+
+import sympy as sp
+
+
+def check(ok, message):
+    if not ok:
+        raise ArithmeticError(message)
+
+
+# Two individually recorded words share class a. Four classes permit length five.
+words = ("a", "A", "b", "c", "d")
+classes = {x: x.lower() for x in words}
+pairs = list(product(words, repeat=2))
+same = [(x,y) for x,y in pairs if classes[x] == classes[y]]
+cross = [(x,y) for x,y in pairs if classes[x] != classes[y]]
+keys = ([("s",x) for x in words] + [("u",x) for x in words]
+        + [("v",x,y) for x,y in pairs] + [("t",x,y) for x,y in same] + [("K",)])
+index = {key:i for i,key in enumerate(keys)}
+
+
+@lru_cache(None)
+def coordinate(*key):
+    return sp.eye(len(keys))[index[key], :]
+
+
+@lru_cache(None)
+def row(tape):
+    previous = [classes[x] for x in tape[:-1]]
+    last = classes[tape[-1]]
+    check(len(set(previous)) == len(previous) and last in previous, "first collision")
+    mate = tape[previous.index(last)]
+    fees = [("s", tape[0]), ("t", mate, tape[-1])]
+    fees += [("u", x) for x in tape]
+    fees += [("v", x, y) for j, y in enumerate(tape) for x in tape[:j]]
+    counts = Counter(fees)
+    counts["K",] = -1
+    return sp.Matrix([[counts[key] for key in keys]])
+
+
+def enumerate_leaves(prefix=()):
+    known = {classes[x] for x in prefix}
+    for x in words:
+        extended = prefix + (x,)
+        if classes[x] in known:
+            yield extended
+        else:
+            yield from enumerate_leaves(extended)
+
+
+def check_inverse():
+    for j,l in cross:
+        for i,k in same:
+            if classes[i] in (classes[j], classes[l]):
+                continue
+            isolated = row((i,j,l,k))-row((i,j,k))-row((i,l,k))+row((i,k))
+            check(isolated == coordinate("v", j, l), "directed unequal pair")
+    for i,k in same:
+        for j in words:
+            if classes[j] == classes[i]:
+                continue
+            delta = row((i,j,k)) - row((i,k))
+            check(delta-coordinate("v",i,j)-coordinate("v",j,k) == coordinate("u",j),
+                  "word charge recovered")
+            delta = row((j,i,k)) - row((i,j,k))
+            check(delta-coordinate("v",j,i)+coordinate("v",i,j) ==
+                  coordinate("s",j)-coordinate("s",i), "start contrast")
+        check(row((i,k))-coordinate("s",i)-coordinate("u",i)-coordinate("u",k) ==
+              coordinate("v",i,k)+coordinate("t",i,k)-coordinate("K"),
+              "matched pair and terminal sum, including aliases")
+
+    leaves = tuple(enumerate_leaves())
+    lengths = Counter(map(len, leaves))
+    check(set(lengths) == {2,3,4,5}, "every possible duration reached")
+    short = sp.Matrix.vstack(*(row(w) for w in leaves if len(w) <= 4))
+    full = sp.Matrix.vstack(*(row(w) for w in leaves))
+    # Explicit independent gauges: common start vs terminal; K vs terminal;
+    # every individual same-class pair vs its one matching terminal.
+    gauges = [sum((coordinate("s",i) for i in words), sp.zeros(1,len(keys)))
+              -sum((coordinate("t",i,k) for i,k in same), sp.zeros(1,len(keys))),
+              coordinate("K")+sum((coordinate("t",i,k) for i,k in same), sp.zeros(1,len(keys)))]
+    gauges += [coordinate("v",i,k)-coordinate("t",i,k) for i,k in same]
+    G = sp.Matrix.vstack(*gauges).T
+    check(full*G == sp.zeros(len(leaves), len(gauges)), "all gauges on all true leaves")
+    rank = short.to_DM().rank()
+    check(rank == full.to_DM().rank() == len(keys)-len(gauges) and G.rank() == len(gauges),
+          "short and full maps have precisely the stated gauge kernel")
+    age_fee = sp.Matrix([int(len(w)==5) for w in leaves])
+    check(full.row_join(age_fee).to_DM().rank() == rank+1 and
+          short.row_join(sp.zeros(short.rows,1)).to_DM().rank() == rank,
+          "a new fifth-visit clock fee escapes every short test")
+    return dict(sorted(lengths.items())), rank, len(gauges)
+
+
+def check_return_row():
+    # Complete positive weighted CP transfers in a nontrivial terminal metric.
+    # In the native trace experiment one may take N=I instead.
+    Q = sp.Rational
+    N = sp.diag(Q(1,2), Q(1,2), Q(1,4))
+    p = dict(zip(words, [Q(1,8), Q(1,8), Q(1,4), Q(1,4), Q(1,4)]))
+    rotation = sp.Matrix([[Q(3,5), -Q(4,5), 0], [Q(4,5), Q(3,5), 0], [0,0,1]])
+    ops = dict(zip(words, [sp.diag(-1,1,1), rotation, sp.eye(3), rotation.T, sp.diag(1,-1,1)]))
+
+    def backward(x, effect):
+        return p[x]*ops[x].T*effect*ops[x]
+
+    def outcome(tape):
+        value = N
+        for x in reversed(tape):
+            value = backward(x, value)
+        return value
+
+    witness = sp.ones(3)/3
+    check(backward("a", backward("A",witness)) != backward("A", backward("a",witness)),
+          "ordered CP maps genuinely do not commute")
+    for x,y in cross:
+        target = outcome((y,y))
+        check(target == p[y]**2*N and outcome((x,y,y)) == p[x]*target,
+              "two- and three-word suffix cylinders")
+        check(backward(x, target)/p[y]**2 == backward(x,N) == p[x]*N,
+              "complete positive return row on every input")
+    ops["a"] = ops["a"]*sp.diag(Q(1,2),1,1)
+    wrong = outcome(("a","b","b")) - p["a"]*p["b"]**2*N
+    check(wrong[2,2]==0 and wrong != sp.zeros(3), "one prepared column misses a return defect")
+
+
+if __name__ == "__main__":
+    lengths, rank, gauges = check_inverse()
+    check_return_row()
+    print(json.dumps({"fine_words":len(words), "coarse_classes":len(set(classes.values())),
+                      "leaves_by_length":lengths, "independent_coordinates":len(keys),
+                      "short_and_full_rank":rank, "gauge_dimension":gauges,
+                      "all_state_return_row":"exact"}, sort_keys=True))
+```
+
+</details>
+
+<details>
+<summary>check_causal_anchor.py</summary>
+
+Source SHA256 a5b518aea057d78ace47268776cf4741e720342183659c9741062980d61410cc. Output SHA256 b9cea6a1ce1efd49a17cd9b952b7be4a0553e28024bcf085ad5bf332d30110d5.
+
+```python
+"""Two independently selectable continuations at an already paid archive mark."""
+from fractions import Fraction as Q
+from itertools import product
+from math import log
+import json
+
+
+def require(ok, label):
+    if not ok:
+        raise ArithmeticError(label)
+
+
+def leaves(y, width):
+    words = tuple(product((0, 1), repeat=width))
+    masses = {x: y**sum(x)*(1-y)**(width-sum(x)) for x in words}
+    answer = {}
+    def expand(history, weight):
+        for x, m in masses.items():
+            new = (*history, x)
+            if x in history:
+                answer[new] = weight*m
+            else:
+                expand(new, weight*m)
+    expand((), Q(1))
+    require(sum(answer.values()) == 1, 'complete stopped history')
+    return answer
+
+
+def observed(p0, p1, k0, k1):
+    prior = Q(3,5)
+    raw = {}
+    for branch, y, gain, pi in ((0,p0,k0,prior),(1,p1,k1,1-prior)):
+        for h, weight in leaves(y, 2).items():
+            raw[branch,h] = gain*pi*weight
+    normal = sum(raw.values())
+    return {x: z/normal for x,z in raw.items()}, normal
+
+
+old = Q(17,11)
+t0, t1 = Q(1,6), Q(1,5)
+obs, mass = observed(t0, t1, old, old)
+require(mass == old, 'absolute scale survives in prior')
+mark0, mark1 = ((0,0),(0,0)), ((1,0),(1,0))
+for angle in (Q(1,8), Q(1,7), Q(1,4)):
+    moved,mass1 = observed(angle,t1, old, old)
+    require(moved[1,mark1] == obs[1,mark1] and mass1 == old, 'untouched right arm')
+    distorted,mass2 = observed(angle,t1, old+angle-t0, old)
+    require(distorted[1,mark1] != obs[1,mark1] and mass2 != old, 'moving left toll visible at right')
+    left_cond = sum(p for (arm,h),p in distorted.items() if arm == 0)
+    require(distorted[0,mark0]/left_cond == leaves(angle,2)[mark0], 'conditional arm alone is blind')
+# A shared field setting can enter before the fork, leaving all normalized laws identical.
+bad, kbad = observed(t0,t1,old+t0,old+t0)
+require(bad == obs and kbad != mass, 'shared upstream price needs its own source')
+leaf = leaves(t1,2)
+u = sum(len(h)*prob for h,prob in leaf.items())
+entropy = -sum(float(prob)*log(float(prob)) for prob in leaf.values())
+hbit = -float(t1)*log(float(t1))-float(1-t1)*log(float(1-t1))
+require(abs(entropy-float(2*u)*hbit) < 1e-13, 'all-leaf entropy of stopped words')
+print(json.dumps({'words_per_arm':len(leaf), 'old_scale':str(mass),
+                  'unresolved_common_price':str(kbad), 'mean_stopped_words':str(u),
+                  'one_arm_price_visible_across_mark':True}, sort_keys=True))
+```
+
+</details>
+
+<details>
+<summary>check_reset_selection.py</summary>
+
+Source SHA256 fb1e27361dafac4faaf812b351c73873d854edaef16ec68a85844430ab046d62. Output SHA256 b89e119e94151aa243664c5996e003236813ce56114f1e0a135bfae7dfde96db.
+
+```python
+"""Exact dark reset, readout/initial-state and calibration countercontrols."""
+import json
+import sympy as s
+
+
+def need(ok, msg):
+    if not ok:
+        raise ArithmeticError(msg)
+
+
+A,B,C=s.symbols('A B C',positive=True)
+Z=s.zeros(8)
+for i in range(8):
+    Z[(i+4)%8,i]=1
+I=s.eye(8)
+even,odd=(I+Z)/2,(I-Z)/2
+K=A*I+B*Z
+need(K==(A+B)*even+(A-B)*odd,"central decomposition")
+need(even*odd==s.zeros(8) and even.rank()==odd.rank()==4,"central ranks")
+need(s.simplify(K.det()-(A+B)**4*(A-B)**4)==0,"invertible when unequal")
+e,ez=I[:,0],I[:,4]
+need(A*K*e-B*Z*K*e == (A**2-B**2)*e,"two translated probes")
+H=odd
+def form(v,H):
+    return (v.T*H*v)[0].expand()
+need(s.simplify(form(K*e,H)-((A-B)**2)*form(e,H))==0,"native odd response")
+need(s.simplify(form(C*e,H)-C*C/2)==0,"common right success normalization")
+a,b,h=s.symbols('a b h',real=True)
+H2=s.Matrix([[h,a+s.I*b],[a-s.I*b,h]])
+e0=s.Matrix([1,0]); e1=s.Matrix([0,1]); v=A*e0+B*e1
+D=(s.conjugate(v).T*H2*v)[0]
+hplus=((e0+e1).T*H2*(e0+e1))[0]/4
+need(s.simplify(D-(A-B)**2*h-4*A*B*hplus)==0,"single-input equal diagonals incl imaginary coherence")
+A0,B0=s.Rational(3),s.Rational(2)
+v0=s.Matrix([B0,-A0]);Hbad=v0*v0.T
+need(form(A0*e0+B0*e1,Hbad)==0 and form(e0,Hbad)==4 and form(e1,Hbad)==9,
+     "uncalibrated dark row with unequal tariffs")
+rho=e*e.T
+need(s.simplify(s.trace(K*rho*K.T)-(A+B)**2*s.trace(even*rho)-(A-B)**2*s.trace(odd*rho))==0,
+     "identity readout sees state parity")
+t=s.symbols('t',real=True)
+wrong=t*t/(1+t*t)
+need(wrong.subs(t,0)==s.diff(wrong,t).subs(t,0)==0 and s.diff(wrong,t,2).subs(t,0)==2,
+     "zero probability and first derivative permit nonzero amplitude jet")
+need(s.simplify(((2*t-t)**2/((2*t-t)**2+1))-wrong)==0,"vanishing wrong odds at path ratio two")
+p=(s.sqrt(5)-1)/2
+need(s.simplify(p**6+4*p**3-1)==0, "separate actually calibrated bright comparison")
+T=I[:4,:4].row_join(-I[:4,:4])
+need(T*T.T==2*s.eye(4) and T.T*T==2*odd and T*Z==-T,"all native Spin columns are odd")
+out={"regular_rank":8,"odd_rank":4,"calibrated_single_input":True,
+     "all_regular_columns_from_native_Spin":False,"unequal_dark_without_calibration":[3,2],
+     "dark_probability_derivative":0,"signed_amplitude_derivative_witness":1,
+     "global_absolute_price_selected":False}
+print(json.dumps(out,sort_keys=True))
+```
+
+</details>
+
+<details>
+<summary>check_tree_clock.py</summary>
+
+Source SHA256 823b38691703b8fffea1f21a3b6084b541d4d86c8d7340bdab0cc9c512a207fd. Output SHA256 c02896b9663336b59e0b037cb5de947a9d67e6950779e881937ae3e882790eb2.
+
+```python
+"""Exact branching extension of G1-G14 on a small Golden/marked fixture.
+
+H_root=R. A canonical birth v is followed by a square current gate U.
+The orthogonal readout router writes its complete two outcomes into
+disjoint child fibres, each retaining BOTH full columns. The short branch
+executes its terminal G immediately. The long branch first executes Z and
+then its terminal G. These are stages of the mathematical clock model;
+a routed primitive implementation has its separate true incidence/price.
+"""
+import json
+import sympy as s
+
+u, z = s.symbols("u z")
+minimal = u**4 + u**2 - 1       # real positive u=sqrt(phi**(-1))
+p = u**2
+I, zero = s.eye, s.zeros
+v = s.Matrix([u, p])
+G = s.Matrix([[u,-p],[p,u]])
+P0, P1 = s.diag(1,0), s.diag(0,1)
+Z = P0-P1
+nodes = ("r","a","b","L","c","W")
+dims = dict(r=1,a=2,b=2,L=2,c=2,W=2)
+D = sum(dims.values())
+
+
+def red(x):
+    return s.rem(x.expand(), minimal, u).expand()
+
+
+def mat(x):
+    return x.applyfunc(red)
+
+
+def need(ok, label):
+    if not ok:
+        raise RuntimeError(label)
+
+
+def eq(a, b, label):
+    if isinstance(a, s.MatrixBase):
+        need(a.shape == b.shape and all(red(e) == 0 for e in a-b), label)
+    else:
+        need(red(a-b) == 0, label)
+
+
+def place(total, offset, n):
+    return I(total)[:,offset:offset+n]
+
+
+occ = {}
+at = 0
+for name in nodes:
+    occ[name] = place(D,at,dims[name])
+    at += dims[name]
+leaf = {"L": place(4,0,2), "W": place(4,2,2)}
+leaf_emb = s.Matrix.hstack(occ["L"],occ["W"])
+children = {"r":("a",), "a":("b",), "b":("L","c"), "c":("W",)}
+J = {"r":v,"a":I(2),"b":s.Matrix.vstack(P0,P1),"c":I(2)}
+B = dict(leaf)
+R = zero(D,4)
+for parent in reversed(tuple(children)):
+    kids = children[parent]
+    to_leaf = s.Matrix.hstack(*(B[c] for c in kids))
+    into_stage = s.Matrix.hstack(*(occ[c] for c in kids))
+    j = J[parent]
+    eq(j.T*j,I(dims[parent]),"reference isometry "+parent)
+    R += into_stage*(I(j.rows)-j*j.T)*to_leaf.T
+    B[parent] = mat(to_leaf*j)
+R = mat(R + occ["r"]*B["r"].T)
+eq(R.T*R,I(4),"all leaf columns and birth details")
+
+def marked_fixture(U):
+    F = {**J,"a":U,"c":Z}
+    S = zero(D)
+    for parent,kids in children.items():
+        f, j = F[parent], J[parent]
+        eq(f.T*f,I(f.cols),"actual isometry "+parent)
+        eq(f*f.T,j*j.T,"fixed full outgoing range "+parent)
+        S += s.Matrix.hstack(*(occ[c] for c in kids))*f*occ[parent].T
+    g = s.diag(G,G)
+    T = mat(S + R*g*leaf_emb.T)
+    eq(S.T*S,I(D)-leaf_emb*leaf_emb.T,"open source defect")
+    eq(S*S.T,I(D)-R*R.T,"open range defect")
+    eq(T.T*T,I(D),"G5 all clock columns")
+    eq(T*T.T,I(D),"G6 all clock rows")
+    y = mat(U*v)
+    need(all(red(x) != 0 for x in y),"both initialized marks have nonzero mass")
+    P = s.diag(I(1),v*v.T,y*y.T,P0,P1,P1)
+    Pl = s.diag(P0,P1)
+    eq(P*P,P,"generated projection on every actual node")
+    eq(P*R,occ["r"]*B["r"].T,"only the root survives on the closure incidence")
+    eq((I(D)-P)*S*P,zero(D),"no interior leakage")
+    core = mat(P*T.T*(I(D)-P)*T*P)
+    h = mat(B["r"].T*g*Pl*g.T*B["r"])[0]
+    eq(h,p,"positive marked aggregate cold independent of the current gate")
+    V = s.Matrix.hstack(occ["L"][:,0],occ["W"][:,1])
+    f = mat(V.T*core*V)
+    eq(core,V*f*V.T,"true leaf-supported feedback on the entire clock")
+    det_graph = red((I(2)-z*f).det())
+    eq(det_graph,(1-z)*(1-z+z*h),"determinant and mandatory rank offset")
+    eq(f.trace(),2-h,"trace of graph return")
+    # Open-root propagation uses the actually oriented two branch amplitudes.
+    actual_root_to_leaves = s.Matrix.vstack(P0*y,Z*P1*y)
+    eq(actual_root_to_leaves.T*actual_root_to_leaves,I(1),"complete stopped scattering on the root")
+    cold = mat(B["r"].T*g*actual_root_to_leaves)[0]
+    return {"marked_cold":str(h),"coherent_root_cold":str(cold),
+            "coherent_root_cold_squared":str(red(cold*cold)),
+            "marked_graph_det":str(det_graph)}
+
+def hodge_dimensions():
+    # K(9,11,13), unnormalized spatial incidence in exact integer arithmetic.
+    zones = [0]*9+[1]*11+[2]*13
+    edges = [(i,j) for j in range(33) for i in range(j) if zones[i] != zones[j]]
+    signed = zero(len(edges),33); unsigned = signed.copy()
+    for n,(i,j) in enumerate(edges):
+        signed[n,i], signed[n,j] = -1,1
+        unsigned[n,i], unsigned[n,j] = 1,1
+    deg = s.diag(*[sum(x in pair for pair in edges) for x in range(33)])
+    need(len(edges)==359 and signed.T*signed+unsigned.T*unsigned==2*deg,
+         "exact spatial factorization")
+    # Together with unitary T, 0<=(I-T)^*(I-T)<=4I gives 0<=Delta0<=2I:
+    # 2(deg+2I)-(signed^T signed+4I)=unsigned^T unsigned.
+    n0,n1 = 33*D,(len(edges)+33)*D
+    need(n1-n0 == 359*D and n0+n1 == 425*D,"both original Hodge degrees")
+    return {"stage_dimension":D,"degree0":n0,"degree1":n1,
+            "harmonic_dimension_offset":n1-n0,"full_heat_modes":n1+n0,
+            "two_Cs_norm":str(s.Rational(2,min(deg.diagonal())+2))}
+
+if __name__ == "__main__":
+    base, moved = marked_fixture(I(2)), marked_fixture(G)
+    need(base["marked_graph_det"]==moved["marked_graph_det"],"marked source comparison")
+    need(base["coherent_root_cold_squared"]!=moved["coherent_root_cold_squared"],
+         "coherent and measured experiment differ across the same pair")
+    print(json.dumps({"native_u":"positive root of u^4+u^2=1",
+                      "root_rank":1,"sum_of_leaf_mark_ranks":2,
+                      "two_last_gate_depths":[3,4],
+                      "base":base,"moved":moved,"hodge":hodge_dimensions()},
+                      indent=2,sort_keys=True))
+```
+
+</details>
+
+<details>
+<summary>check_archive.py</summary>
+
+Source SHA256 f8bb5e9f7e2b45a3f3a584e2f3394b50f6e8eaab9efff93bc0a42ccc9de7df3c. Output SHA256 e7a60412d66bb89b45c3d7dafc13745be9190b76f00280c00b738444d44db1fa.
+
+```python
+"""Exact proper-cut diagnostics for the truthful six-bit Golden archive."""
+import hashlib
+import importlib.util
+import json
+import sys
+from itertools import product
+from pathlib import Path
+
+import sympy as sp
+
+
+def need(condition, label):
+    if not condition:
+        raise ArithmeticError(label)
+
+
+src = Path("02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py")
+need(hashlib.sha256(src.read_bytes()).hexdigest() ==
+     "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c", "native owner")
+spec = importlib.util.spec_from_file_location("archive_native", src)
+native = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = native
+spec.loader.exec_module(native)
+p, a, K = native.P, native.A, native.GOLDEN_FIELD
+
+
+def eq(lhs, rhs):
+    return K.from_sympy(lhs-rhs) == K.zero
+
+
+def same(lhs, rhs):
+    return native.exact_matrix_equal(lhs, rhs)
+
+
+def require_positive(expr, label):
+    need(bool(sp.simplify(expr) > 0), label)
+
+
+def archive(rt):
+    r, t = rt
+    return (r, t, r, t, t, r)
+
+
+pairs = list(product(range(2), repeat=2))
+valid = pairs[:3]
+records = list(product(range(2), repeat=6))
+# All eight independent born coordinates, with v=(sqrt(p),p). Compute counts
+# of each exponent to avoid taking 256 radicals through symbolic simplification.
+full = [0]*17
+bad = [0]*17
+truth = {}
+for rt in pairs:
+    for raw in records:
+        exponent = 8+sum(rt)+sum(raw)
+        full[exponent] += 1
+        if raw == archive(rt):
+            truth[rt] = exponent
+        else:
+            bad[exponent] += 1
+need([truth[rt] for rt in pairs] == [8, 12, 12, 16], "truthful sectors")
+need(sum(bad) == 252 and sum(full) == 256, "retain every inconsistent subspace")
+bad_mass = sum(n*p**i for i, n in enumerate(bad))
+need(eq(sum(n*p**i for i, n in enumerate(full)), 1), "full canonical bank normalized")
+need(eq(bad_mass, 1-p**8-2*p**12-p**16), "inconsistent born mass")
+mu = [p**truth[rt] for rt in valid]
+
+# Coherent properly compressed unitary: sqrt(P_x) times positive polar
+# branches. At fixed q the maximizer has bright P01/(P00+P01)=u_cold.
+u_cold = p**4/(1+p**4)
+u_code = p**2
+need(eq(u_cold, mu[1]/(mu[0]+mu[1])), "coherent optimum")
+need(eq((1-u_cold)/u_cold, p**-4), "parsed bright slope at cold optimum is -3(1-q)")
+need(eq((1-u_code)/u_code, p**-1), "parsed bright slope zero at golden u")
+require_positive(u_code-u_cold, "distinct bright optima")
+require_positive(p**3*a-p**5, "negative coherent amplitude slope at parsed optimum")
+# For a recorded branch with terminal original born projection, the
+# conditional return is mu_x and joint success is P_x mu_x.
+require_positive(mu[0]-mu[1], "measured return strictly decreases in free u")
+
+# A rank-one actual P0 and a resolving basis give the three different tests
+# on the originally calibrated homogeneous q=1/2 section.
+prob = ((1-u_code)/2, u_code/2, sp.Rational(1, 2))
+legs = [sp.sqrt(m*pi) for m,pi in zip(mu,prob)]
+coherent = sum(legs)**2
+measured = sum(m*pi for m,pi in zip(mu,prob))
+cross = 2*sum(l*r for i,l in enumerate(legs) for r in legs[i+1:])
+need(sp.expand(coherent-measured-cross) == 0 and all(bool(t>0) for t in legs),
+     "coherent proper Gram vs registered supported return")
+need(sum(prob).simplify() == 1, "ordinary stage readout total, all legal marks")
+
+# Product legal-archive support on the mandatory 4k probes. The born
+# compression of each support projection is a scalar m on initial columns.
+arc = sum(p**(6+sum(archive(rt))) for rt in valid)
+whole = sum(mu)
+need(eq(arc, p**6+2*p**9) and eq(whole, p**8+2*p**12), "legal support masses")
+require_positive(arc-whole, "checking r,t strengthens the projection")
+require_positive(1-4*arc**2, "exponential support margin even without marked tangent")
+for k in (1,2,3):
+    need(eq(arc**(4*k), (arc**(2*k))**2), "Gram vs amplitude bound")
+
+# Small CF range fixture with EARLIEST ROOT COLUMNS. B is the reference
+# isometry into the terminal direct sum. Fourth coordinate lumps all absent
+# generated records on this fixture only. g is its prescribed identity
+# terminal transport, and P_l is the sum of the *ranges* of nonzero
+# initialized branch maps, not their success probabilities. This algebra
+# checks the terminal factor after the CF no-interior-leakage hypothesis.
+B = sp.Matrix([p**4,p**6,p**6,sp.sqrt(1-whole)])
+P_l = sp.diag(1,1,1,0)
+g = sp.eye(4)
+h = (B.T*g*P_l*g.T*B)[0]
+need(sp.simplify((B.T*B)[0]-1) == 0 and eq(h,whole), "reference isometry and marked CF range factor")
+M = (g.T*B)[:3,:]
+feedback = sp.eye(3)-M*M.T
+# Distinct from h, the restricted feedback has two extra unit eigenvalues.
+need(same((sp.eye(3)-feedback)*M,h*M), "one physical cold factor")
+need((M*M.T).rank()==1 and eq(feedback.trace(),3-h), "two unit feedback eigenvalues")
+for aq in (sp.Rational(1,2),sp.Rational(2,5)):
+    law = ((1-aq)*(1-u_code),(1-aq)*u_code,aq)
+    cols = [sp.sqrt(w)*sp.eye(4)[:,i] for i,w in enumerate(law)]
+    reached = sum((v*v.T/w for v,w in zip(cols,law)),sp.zeros(4))
+    need(reached==P_l, "positive probabilities cancel from terminal range")
+    need(all(bool(w>0) for w in law) and sp.simplify(sum(law)-1)==0, "normed output")
+    scattered = sum(cols,sp.zeros(4,1))
+    open_gram = (B.T*scattered)[0]**2
+    marked_pass = sum(law_i*m for law_i,m in zip(law,mu))
+    need(bool(h-marked_pass>0) and bool(open_gram-marked_pass>0), "CF vs actual pass and scattering")
+# A fixed-support two-mark normalized measurement followed by its original
+# born projection has success p^2+p^4; an undisturbed v returns with value 1.
+need(eq((a*a+p*p)**2, 1) and eq(p*p+p**2*p**2, 1-2*p**3),
+     "order of registration and proper test")
+print(json.dumps({"truthful_exponents": [truth[x] for x in pairs], "inconsistent_sectors": sum(bad),
+                  "legal_archive_alone": "p^6+2p^9", "legal_joint": "p^8+2p^12",
+                  "coherent_bright_optimum":"p^4/(1+p^4)", "parsed_bright_optimum":"p^2",
+                  "measured_bright_optimum":0, "measured_joint_vs_coherent":"strict loss",
+                  "mandatory_probes":"4k", "fixed_born_Gram_bound":"(p^6+2p^9)^(4k)",
+                  "marked_CF_range_factor":"p^8+2p^12 in declared reference fixture",
+                  "fixed_leaf_range_field_slope":0, "extra_unit_feedback_modes":2,
+                  "actual_stopped_CF_reference_embedding_computed":False}, sort_keys=True))
+```
+
+</details>
+
+<details>
+<summary>check_thermal_record.py</summary>
+
+Source SHA256 b9c39d5ed9841e8db38467c5b4791b7fc86267d28f225fa3df15372b83a37316. Output SHA256 f8a413405876b0b74ff7dabe8c51ee7b0413fc86faef9088042c2b490653392f.
+
+```python
+"""Exact terminal energy, entropy source and marked Gibbs controls.
+
+Run beside check_tree_clock.py. The 11-dimensional Golden tree is the same
+fixture as that script. The commuting and rotating Gibbs examples are separate
+controls; neither substitutes a scalar clock for the tree's original Hodge map.
+"""
+import json
+import sympy as s
+import check_tree_clock as tree
+
+Q = s.Rational
+
+
+def check(ok, label):
+    if not ok:
+        raise ArithmeticError(label)
+
+
+def log_zero(x, label):
+    check(s.simplify(s.expand_log(x, force=True)) == 0, label)
+
+
+def terminal_energy(U):
+    F = {**tree.J, "a": U, "c": tree.Z}
+    shift = s.zeros(tree.D)
+    for parent, children in tree.children.items():
+        successors = s.Matrix.hstack(*(tree.occ[c] for c in children))
+        shift += successors * F[parent] * tree.occ[parent].T
+    T = tree.mat(shift + tree.R*s.diag(tree.G,tree.G)*tree.leaf_emb.T)
+    tree.eq(T.T*T, s.eye(tree.D), "complete clock isometry")
+    V = s.Matrix.hstack(tree.occ["L"][:,0], tree.occ["W"][:,1])
+    tree.eq(V.T*T*V, s.zeros(2), "occupied terminal compression")
+    root = tree.occ["r"]
+    tree.eq(root.T*T*root, s.zeros(1), "same-clock offered initial root compression")
+    all_leaf = tree.mat(tree.leaf_emb.T*T*tree.leaf_emb)
+    check(all_leaf != s.zeros(4), "full terminal fibres have extra columns")
+
+    # Real spatial K(9,11,13) vertices 0 and 9, in different zones.
+    B = s.Matrix([[0,1/s.sqrt(26*24)],[1/s.sqrt(26*24),0]])
+    C = s.diag(Q(1,26),Q(1,24))
+    temporal = tree.mat(V.T*(T+T.T)*V)
+    energy = s.eye(4)-s.kronecker_product(B,s.eye(2))-s.kronecker_product(C,temporal)
+    eta = s.ones(2)/2
+    root_temporal = tree.mat(root.T*(T+T.T)*root)[0]
+    root_energy = s.trace(eta*(s.eye(2)-B-C*root_temporal))
+    for gamma in (s.diag(1,0), s.diag(Q(1,3),Q(2,3))):
+        observed = s.trace(s.kronecker_product(eta,gamma)*energy)
+        check(s.simplify(observed-s.trace(eta*(s.eye(2)-B)))==0,
+              "terminal temporal energy vanishes, spatial coherence retained")
+        check(s.simplify(observed-root_energy)==0, "same Gibbs endpoint energy cancellation")
+    # An address retains both Hodge grades even when the prepared state is in grade zero.
+    rank_full = 33+392
+    check(sum(rank_full*d for d in tree.dims.values()) == 4675, "full Gibbs address dimension")
+
+
+def entropy_sources():
+    # Efficient marked Kraus maps at a scalar-effect section; the perturbation
+    # varies the effects noncommutatively, varies the input and rotates each output.
+    rho = s.diag(Q(1,3),Q(2,3))
+    drho = s.Matrix([[1,2],[2,-1]])
+    logrho = rho.applyfunc(lambda x: s.log(x) if x else 0)
+    H = s.Matrix([[3,1],[1,-1]])
+    skew = s.Matrix([[0,-1],[1,0]])
+    p = Q(2,5)
+    dblocks, dp = [], []
+    for mass, eprime, generator in ((p,H,skew),(1-p,-H,-2*skew)):
+        dblock = mass*drho + (eprime*rho+rho*eprime)/2 + mass*(generator*rho-rho*generator)
+        dblocks.append(dblock)
+        dp.append(s.trace(dblock))
+    check(dp[0] == s.trace(rho*H) and sum(dp)==0 and H*rho != rho*H,
+          "moving non-scalar effects on mixed input")
+    check(dblocks[0][0,1] != 0 and dp[0] != 0,
+          "conditional block rotates and address probability changes")
+    dS = -sum(s.trace(B*(s.log(m)*s.eye(2)+logrho)) for B,m in zip(dblocks,(p,1-p)))
+    dH = -sum(w*s.log(m) for w,m in zip(dp,(p,1-p)))
+    log_zero(dS-dH+s.trace(drho*logrho), "full mixed entropy derivative")
+
+    # Pure inputs stay pure on each nonzero efficient mark, including off section.
+    pure = s.ones(2)/2
+    kraus = (s.diag(Q(3,5),Q(4,5)),s.diag(Q(4,5),Q(3,5)))
+    check(sum((K.T*K for K in kraus),s.zeros(2)) == s.eye(2), "completed efficient marks")
+    for K in kraus:
+        B=K*pure*K.T
+        check(B.det()==0 and s.trace(B)>0, "full pure record entropy equals the address entropy")
+    posterior = [K*rho*K.T/s.trace(K*rho*K.T) for K in kraus]
+    check(posterior[0]!=posterior[1], "mixed equality need not continue away from scalar effects")
+
+
+def gibbs_checks():
+    # beta=ln(2), spectrum 0,1,2. Exact noncommuting thermal operator and tangent.
+    U=s.Matrix([[Q(3,5),-Q(4,5),0],[Q(4,5),Q(3,5),0],[0,0,1]])
+    J=s.Matrix([[0,-1,0],[1,0,0],[0,0,0]])
+    Delta=U*s.diag(0,1,2)*U.T
+    G=U*s.diag(1,Q(1,2),Q(1,4))*U.T
+    dG, dDelta = J*G-G*J, J*Delta-Delta*J
+    check(dDelta**2==s.diag(1,1,0) and Delta*dDelta!=dDelta*Delta, "unit norm noncommuting variation")
+    Z=s.trace(G)
+    for A in (s.diag(1,0,0), s.diag(0,1,1)):
+        count, mass=s.trace(A),s.trace(A*G)
+        check(count/4<=mass<=count, "full rank factor for unnormalized Gibbs numerator")
+        slope=s.trace(A*dG)/mass-s.trace(dG)/Z
+        # beta(1+e^(2beta)) >= 5/2 since ln(2)>=1/2.
+        check(0<abs(slope)<=Q(5,2), "fixed address log slope without a commutation assumption")
+
+    # Compute D(c||sigma) exactly from the three actual eigenvalues, on positive support.
+    c=(Q(1,3),Q(2,3),s.Integer(0)); eps=(0,1,2); beta=s.log(2)
+    S=-sum(x*s.log(x) for x in c if x)
+    rel=sum(x*s.log(x/(s.Integer(2)**(-e)/Z)) for x,e in zip(c,eps) if x)
+    log_zero(rel-(s.log(Z)+beta*sum(x*e for x,e in zip(c,eps))-S),
+             "absolute Gibbs normalization and complete state entropy")
+
+    # A uniform five-state Gibbs reference has addresses of dimensions 2 and 3.
+    # The physical conditional states each occupy one direction. The measured
+    # KL acquires a dimensional slope, canceled exactly by the conditional KL.
+    q=s.symbols("q", positive=True)
+    masses=(1-q,q); dims=(2,3)
+    measured=sum(x*s.log(x/(s.Integer(d)/5)) for x,d in zip(masses,dims))
+    conditional=sum(x*s.log(d) for x,d in zip(masses,dims))
+    entire=sum(x*s.log(5*x) for x in masses)
+    half={q:Q(1,2)}
+    log_zero((entire-measured-conditional).subs(half), "full/within-address dilution")
+    log_zero(s.diff(entire-measured-conditional,q).subs(half), "dilution source cancellation")
+    check(s.diff(entire,q).subs(half)==0 and s.diff(measured,q).subs(half)!=0,
+          "strict address source at a zero full source")
+    y=Q(1,5)
+    b=y*y+(1-y)**2
+    for width in (2,4,7):
+        words=[y**i*(1-y)**(width-i) for i in range(width+1)]
+        dr=sum(s.binomial(width,i)*2*m*m*(i/y-(width-i)/(1-y)) for i,m in enumerate(words))
+        check(dr/b**width==width*(4*y-2)/b,"two-draw first-repeat log response")
+
+
+if __name__=="__main__":
+    terminal_energy(s.eye(2))
+    terminal_energy(tree.G)
+    entropy_sources()
+    gibbs_checks()
+    print(json.dumps({"tree_stage_dimension": tree.D, "full_hodge_dimension": 4675,
+                      "occupied_terminal_columns": 2, "pure_mixed_and_nonscalar": True,
+                      "gibbs_rank_and_clock": "exact", "address_dilution": "checked"},
+                     sort_keys=True))
+```
+
+</details>
+
+<details>
+<summary>check_absolute.py</summary>
+
+Source SHA256 80f5fedde6283bf736f9425a76f0982a8f20e95602f8126b202c79af4429eab4. Output SHA256 bbd7b1675fff3574ed044514a66c8c000aa9eb8a2649bf9ffc7e47cb10e5284e.
+
+```python
+"""Exact stopped odds and finite-weight comparison with a true pair tariff."""
+from fractions import Fraction as Q
+from itertools import product
+from math import comb
+import json
+
+
+def require(condition, label):
+    if not condition:
+        raise ArithmeticError(label)
+
+
+def duration_law(width, y):
+    """Evaluate survival t! e_t and its derivative on every allowed duration."""
+    words = list(product(range(2), repeat=width))
+    elem = [Q(1)]+[Q(0)]*len(words)
+    deriv = [Q(0)]*len(elem)
+    for j, word in enumerate(words):
+        ones = sum(word)
+        mass = y**ones*(1-y)**(width-ones)
+        dmass = mass*(ones/y-(width-ones)/(1-y))
+        for t in range(j+1, 0, -1):
+            deriv[t] += dmass*elem[t-1] + mass*deriv[t-1]
+            elem[t] += mass*elem[t-1]
+    fact = 1
+    for t in range(1,len(elem)):
+        fact *= t
+        elem[t] *= fact
+        deriv[t] *= fact
+    elem.append(Q(0))
+    deriv.append(Q(0))
+    return [(t, elem[t-1]-elem[t], deriv[t-1]-deriv[t]) for t in range(2,len(elem))]
+
+
+# Book00 independence defect on two registered words. This perturbation
+# attains equality in the address bound while both marginals stay fixed.
+for m in (2,4,8):
+    eps = Q(1,3*m)
+    defect = [[eps*(int(i==j)-Q(1,m)) for j in range(m)] for i in range(m)]
+    require(all(sum(row)==0 for row in defect) and all(sum(col)==0 for col in zip(*defect)), 'preserved marginals')
+    require(all(Q(1,m*m)+x>0 for row in defect for x in row), 'positive joint law')
+    delta = sum(x*x for row in defect for x in row)
+    error = sum(defect[i][i] for i in range(m))
+    require(error==eps*(m-1) and error**2==(m-1)*delta, 'sharp Book00 independence budget')
+
+rows = []
+for width in (2,3,4):
+    y = Q(1,5)
+    b = y*y+(1-y)**2
+    base = b**width
+    overlap = max(y**3+(1-y)**3,b*b)**width
+    law = duration_law(width,y)
+    require(sum(mass for _,mass,_ in law)==1 and sum(d for _,_,d in law)==0, 'true probability law')
+    z = dz = anchor = err_bound = deriv_bound = Q(0)
+    for t, mass, dmass in law:
+        # Actual visit and ordered scan counts, positive per-word/compared-bit tariffs in the fixture.
+        weight = Q(1,2)**(t + width*t + width*comb(t,2))
+        first = (t-1)*base
+        dfirst = first*width*(4*y-2)/b
+        witness = (t-1)*comb(t-1,2)*overlap
+        require(0 <= first-mass <= witness, 'true collision deficit')
+        require(abs(dfirst-dmass)<=width*t/y*witness,'full differentiable overlap envelope')
+        z += weight*mass
+        dz += weight*dmass
+        anchor += weight*(t-1)
+        err_bound += weight*witness
+        deriv_bound += weight*width*t/y*witness
+    require(0 <= anchor*base-z <= err_bound,'absolute price relative to its real scale')
+    require(abs(anchor*base*width*(4*y-2)/b-dz)<=deriv_bound,'absolute price derivative')
+    require(dz<0 and z>0,'oriented finite source survives')
+    rows.append([width,str(z/anchor),str(dz/z)])
+
+# The price of the two physical visits to a matched pair cannot be
+# absorbed in a common scale for all durations. Equal-probability words
+# give an exact comparison independently of logarithm units.
+p_short=Q(1,4)**2
+p_long=Q(1,4)**5
+w_short=p_short*Q(1,2)**comb(2,2)
+w_long=p_long*Q(1,2)**comb(5,2)
+require(w_short/p_short != w_long/p_long,'normalized price has a genuine duration tilt')
+print(json.dumps({'full_duration_distributions':3, 'true_comparison_toll':True,
+                  'oriented_source_survives_all_widths':all(Q(rate)<0 for _,_,rate in rows),
+                  'matched_odds_common_scale':False},sort_keys=True))
+```
+
+</details>
+
+The regular receipt inversion checks 457 full fine histories. The shared
+normalization fixture includes 196 positive leaves per arm. These checks
+support the finite identities; the source and two-way limit require
+the stated analytic hypotheses. GR_closed=false.
+
 ## 8. Reproduction
 
 Run from this directory:

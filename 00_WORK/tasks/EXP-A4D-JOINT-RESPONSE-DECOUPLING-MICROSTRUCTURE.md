@@ -23169,3 +23169,50 @@ The original Book weighted-price row, real shared-scene/clock/measurement
 work outside the proved regenerative or subcritical price classes, and
 physical selection of this verifiable task remain open. No restored
 shorter-word H+J, independent physical acceptance or GR promotion.
+
+### 6 November — test the weighted continuation on the same stopped clock
+
+Primary §7fz, input 9f76fd788. Phase: final composition. The parent
+premise is CD13, a source-equivalent complete physical price on the
+original LC9 Einstein–two-CAR carrier, in the independent prefix
+dual norm before and after its common right lift.
+
+On the §7fy programme, TH1–TH3 separate the native first-repeat law
+from the Gibbs weight of the very same terminal addresses. On a fixed
+mesh with bounded real stage derivatives, the former has log slope
+proportional to the width k and the latter has uniformly bounded log
+slope. Both use the same full Hodge clock. For its actually reached
+terminal CQ state TH4 computes the entire relative entropy, including
+its energy, quantum bank and real record probabilities. Its difference
+from the root divergence equals minus the full quantum information gain
+exactly; all shared thermal and spatial terms cancel on this one clock
+(TH5). If physical comparisons incur the positive traversal of AR3,
+TH6 bounds even a contextual record-sized information term in the full
+source norm. Its suppression follows from the actual pair count. The oriented
+information
+source has positive gain and gives both directions of the
+existing regular κ recovery at the stated control/precision budgets.
+
+The original feedback determinant now includes the full marked clock.
+Short paid receipts identify regenerated word and pair charges up to a
+common endpoint normalization. Independent controls after an actual
+observed fork remove its current-field derivative. A truly dark bit in
+the native routed reset constrains the relative weights and positive
+memory observer on its two physical paths.
+
+For the absolute scalar weighted continuation TH7 retains the true
+width-dependent scale. A fixed positive traversal price can change the
+normalized duration law exponentially while preserving the oriented
+field source of the full partition. Its physical direct jets remain
+in CD13.
+
+Book00 already forces the agreement effect on the registered product
+supports. Its operational independence defect gives the sharp finite
+error in that leading coincidence test (AD1). This supplies a part of D
+without a new detector convention.
+
+Remaining for C and the first-repeat application of D: physical
+valuation of this record-sensitive price or an equivalent source,
+the shared initial charges and selection of the enlarged task/cut.
+The unconditional scalar master and the full observed Gibbs divergence
+remain distinct. GR_closed=false.
