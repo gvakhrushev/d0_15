@@ -1,0 +1,19 @@
+{
+  "schema": "d0-c0-three-slice-inventory-v1",
+  "snapshot_commit": "7c7056920689d816e95fcfd1de6afc1399fb3def",
+  "worktree_dirty": false,
+  "source_digest": "a29424355c33d9f5e5397f96a8d42ff07edb982533720df613b7fa06b0517cf7",
+  "requested_modules": [
+    "D0.Foundation.FutureExecution",
+    "D0.Foundation.VerificationCore",
+    "D0.Foundation.UncoupledCenterRawWitness",
+    "D0.Foundation.FutureShortlexAdapter",
+    "D0.Foundation.VerifiabilityNecessity",
+    "D0.Foundation.TheoryTransfer"
+  ],
+  "declarations": 482,
+  "inventory_sha256": "af2f26cbf75ec7bd7f6551695ebed230ffb2b69814374703791833684c27df5b",
+  "collector_sha256": "d9678fbc51c8c8fa22bf8b5f3bddd4a6e2612a7aadb035d2de16fa579d306291",
+  "semantic_acceptance": "not_assessed",
+  "GR_closed": false
+}

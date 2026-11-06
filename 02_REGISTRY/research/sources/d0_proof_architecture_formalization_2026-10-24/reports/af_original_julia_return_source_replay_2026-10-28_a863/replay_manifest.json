@@ -1,0 +1,314 @@
+{
+  "execution": {
+    "checker_sha256": "f58b22aab0342d4d595a4ece26b501c4780961c2f950eb174e6af570f656eeaf",
+    "new_checks": 587,
+    "normal_optimized_repeat_stdout_byte_identical": true,
+    "normal_stdout_bytes": 6086,
+    "normal_stdout_sha256": "324b4ac880aa4fb10c9ed84f9dd203ae65982ce88a973320fdf49799b075ba6e",
+    "numpy": "2.3.5",
+    "published_comparison": {
+      "max_abs_numeric_difference": 1.1921019726912618e-14,
+      "non_numeric_or_structural_differences": 0,
+      "numeric_differences": [
+        {
+          "abs_diff": 1.9721522630525295e-31,
+          "local": 2.220446049250315e-16,
+          "path": "$.max_errors.actual rotation block identity",
+          "published": 2.220446049250313e-16
+        },
+        {
+          "abs_diff": 7.711904209440611e-27,
+          "local": 9.419548474631182e-16,
+          "path": "$.max_errors.all 16384 parent record source",
+          "published": 9.419548474554063e-16
+        },
+        {
+          "abs_diff": 6.823646830161752e-28,
+          "local": 4.427014310693494e-15,
+          "path": "$.max_errors.all 16384 parent records original defect",
+          "published": 4.427014310692812e-15
+        },
+        {
+          "abs_diff": 2.4424906541753444e-15,
+          "local": 3.552713678800501e-15,
+          "path": "$.max_errors.all 32 canonical input columns retained",
+          "published": 1.1102230246251565e-15
+        },
+        {
+          "abs_diff": 5.851179490938994e-18,
+          "local": 2.2060001969597286e-17,
+          "path": "$.max_errors.all-column derivative isometry",
+          "published": 1.620882247865829e-17
+        },
+        {
+          "abs_diff": 8.470329472543003e-22,
+          "local": 4.1081097941833566e-20,
+          "path": "$.max_errors.complete original tape/AF price equality",
+          "published": 4.0234064994579266e-20
+        },
+        {
+          "abs_diff": 5.293955920339377e-23,
+          "local": 2.752857078576476e-21,
+          "path": "$.max_errors.complete original tape/AF source equality",
+          "published": 2.6999175193730823e-21
+        },
+        {
+          "abs_diff": 6.352747104407253e-22,
+          "local": 2.0964065444543933e-20,
+          "path": "$.max_errors.full ordinary trace multiplicity not trace normalization",
+          "published": 2.0328790734103208e-20
+        },
+        {
+          "abs_diff": 2.2204460495785916e-16,
+          "local": 4.440892098828905e-16,
+          "path": "$.max_errors.new DATA channel trace preserving",
+          "published": 2.220446049250313e-16
+        },
+        {
+          "abs_diff": 5.46870149886087e-22,
+          "local": 2.220451517951812e-16,
+          "path": "$.max_errors.new DATA channel unital",
+          "published": 2.220446049250313e-16
+        },
+        {
+          "abs_diff": 1.3877787807814454e-17,
+          "local": 2.7755575615628914e-17,
+          "path": "$.max_errors.original signed row reconstructs without lost spectral sign",
+          "published": 1.387778780781446e-17
+        },
+        {
+          "abs_diff": 5.293955920339377e-23,
+          "local": 1.5881867761018131e-22,
+          "path": "$.max_errors.same full return covector with true multiplicity",
+          "published": 1.0587911840678754e-22
+        },
+        {
+          "abs_diff": 5.293955920339377e-23,
+          "local": 3.0613228583568533e-07,
+          "path": "$.original_two_tick.full_source",
+          "published": 3.061322858356853e-07
+        },
+        {
+          "abs_diff": 2.0816681711721685e-17,
+          "local": 0.02572463880357183,
+          "path": "$.reduced_DATA_readout.controls[0].analytic_diamond_upper_bound",
+          "published": 0.02572463880357181
+        },
+        {
+          "abs_diff": 8.326672684688674e-17,
+          "local": 0.06008760846021483,
+          "path": "$.reduced_DATA_readout.controls[0].distance_divided_by_nu_power4",
+          "published": 0.06008760846021475
+        },
+        {
+          "abs_diff": 1.0408340855860843e-17,
+          "local": 0.007787354056443842,
+          "path": "$.reduced_DATA_readout.controls[0].normalized_Choi_trace_distance",
+          "published": 0.007787354056443831
+        },
+        {
+          "abs_diff": 1.6263032587282567e-19,
+          "local": 8.796044777672082e-05,
+          "path": "$.reduced_DATA_readout.controls[0].original_unitality_defect",
+          "published": 8.796044777672066e-05
+        },
+        {
+          "abs_diff": 1.3010426069826053e-18,
+          "local": 0.0016077899252232395,
+          "path": "$.reduced_DATA_readout.controls[1].analytic_diamond_upper_bound",
+          "published": 0.0016077899252232382
+        },
+        {
+          "abs_diff": 2.706168622523819e-16,
+          "local": 0.0574797334684841,
+          "path": "$.reduced_DATA_readout.controls[1].distance_divided_by_nu_power4",
+          "published": 0.05747973346848437
+        },
+        {
+          "abs_diff": 2.168404344971009e-18,
+          "local": 0.0004655858410947212,
+          "path": "$.reduced_DATA_readout.controls[1].normalized_Choi_trace_distance",
+          "published": 0.00046558584109472335
+        },
+        {
+          "abs_diff": 3.4728350837426314e-20,
+          "local": 5.1514853471987114e-06,
+          "path": "$.reduced_DATA_readout.controls[1].original_unitality_defect",
+          "published": 5.151485347198677e-06
+        },
+        {
+          "abs_diff": 8.131516293641283e-20,
+          "local": 0.00010048687032645247,
+          "path": "$.reduced_DATA_readout.controls[2].analytic_diamond_upper_bound",
+          "published": 0.00010048687032645239
+        },
+        {
+          "abs_diff": 1.0269562977782698e-15,
+          "local": 0.056948027517601196,
+          "path": "$.reduced_DATA_readout.controls[2].distance_divided_by_nu_power4",
+          "published": 0.05694802751760222
+        },
+        {
+          "abs_diff": 5.21772295508649e-19,
+          "local": 2.8829938930785604e-05,
+          "path": "$.reduced_DATA_readout.controls[2].normalized_Choi_trace_distance",
+          "published": 2.8829938930786126e-05
+        },
+        {
+          "abs_diff": 4.129285617864714e-21,
+          "local": 3.1761136835765885e-07,
+          "path": "$.reduced_DATA_readout.controls[2].original_unitality_defect",
+          "published": 3.176113683576547e-07
+        },
+        {
+          "abs_diff": 5.082197683525802e-21,
+          "local": 6.280429395403279e-06,
+          "path": "$.reduced_DATA_readout.controls[3].analytic_diamond_upper_bound",
+          "published": 6.280429395403274e-06
+        },
+        {
+          "abs_diff": 1.1921019726912618e-14,
+          "local": 0.05682085813059913,
+          "path": "$.reduced_DATA_readout.controls[3].distance_divided_by_nu_power4",
+          "published": 0.05682085813058721
+        },
+        {
+          "abs_diff": 3.7714141976497723e-19,
+          "local": 1.797847464288488e-06,
+          "path": "$.reduced_DATA_readout.controls[3].normalized_Choi_trace_distance",
+          "published": 1.7978474642881108e-06
+        },
+        {
+          "abs_diff": 1.0554824616176633e-21,
+          "local": 1.9785764337124837e-08,
+          "path": "$.reduced_DATA_readout.controls[3].original_unitality_defect",
+          "published": 1.9785764337123782e-08
+        }
+      ],
+      "numeric_leaf_differences": 29
+    },
+    "published_result_byte_identical": false,
+    "published_result_bytes": 6085,
+    "published_result_sha256": "12c2b0bd961a8104d75672aeb6c1e41c7ec62dce640d139f455458e230f20e1a",
+    "python": "3.13.5",
+    "replay_outputs": {
+      "normal": {
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 6086,
+        "stdout_sha256": "324b4ac880aa4fb10c9ed84f9dd203ae65982ce88a973320fdf49799b075ba6e"
+      },
+      "optimized": {
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 6086,
+        "stdout_sha256": "324b4ac880aa4fb10c9ed84f9dd203ae65982ce88a973320fdf49799b075ba6e"
+      },
+      "repeat": {
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_bytes": 6086,
+        "stdout_sha256": "324b4ac880aa4fb10c9ed84f9dd203ae65982ce88a973320fdf49799b075ba6e"
+      }
+    },
+    "scipy": "1.17.0",
+    "status": "PASS_AF_ORIGINAL_JULIA_RETURN_SOURCE_TRANSPORT",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0-af-original-julia-return-source-replay-v1",
+  "scope": {
+    "GR_closed": false,
+    "Lean_or_CI_run": false,
+    "all42_geometric_source_identified": false,
+    "full_heat_source_identified": false,
+    "full_history_record_laws_identified": false,
+    "native_G_CX_SourceI_word_emitted": false,
+    "physical_admission_proved": false,
+    "published_result_numeric_difference_paths": [
+      "$.max_errors.actual rotation block identity",
+      "$.max_errors.all 16384 parent record source",
+      "$.max_errors.all 16384 parent records original defect",
+      "$.max_errors.all 32 canonical input columns retained",
+      "$.max_errors.all-column derivative isometry",
+      "$.max_errors.complete original tape/AF price equality",
+      "$.max_errors.complete original tape/AF source equality",
+      "$.max_errors.full ordinary trace multiplicity not trace normalization",
+      "$.max_errors.new DATA channel trace preserving",
+      "$.max_errors.new DATA channel unital",
+      "$.max_errors.original signed row reconstructs without lost spectral sign",
+      "$.max_errors.same full return covector with true multiplicity",
+      "$.original_two_tick.full_source",
+      "$.reduced_DATA_readout.controls[0].analytic_diamond_upper_bound",
+      "$.reduced_DATA_readout.controls[0].distance_divided_by_nu_power4",
+      "$.reduced_DATA_readout.controls[0].normalized_Choi_trace_distance",
+      "$.reduced_DATA_readout.controls[0].original_unitality_defect",
+      "$.reduced_DATA_readout.controls[1].analytic_diamond_upper_bound",
+      "$.reduced_DATA_readout.controls[1].distance_divided_by_nu_power4",
+      "$.reduced_DATA_readout.controls[1].normalized_Choi_trace_distance",
+      "$.reduced_DATA_readout.controls[1].original_unitality_defect",
+      "$.reduced_DATA_readout.controls[2].analytic_diamond_upper_bound",
+      "$.reduced_DATA_readout.controls[2].distance_divided_by_nu_power4",
+      "$.reduced_DATA_readout.controls[2].normalized_Choi_trace_distance",
+      "$.reduced_DATA_readout.controls[2].original_unitality_defect",
+      "$.reduced_DATA_readout.controls[3].analytic_diamond_upper_bound",
+      "$.reduced_DATA_readout.controls[3].distance_divided_by_nu_power4",
+      "$.reduced_DATA_readout.controls[3].normalized_Choi_trace_distance",
+      "$.reduced_DATA_readout.controls[3].original_unitality_defect"
+    ]
+  },
+  "selected_results": {
+    "canonical_seed_future_return_source_per_spectator": 1.0880397534411411e-07,
+    "canonical_seed_max_old_return_source": 0.0,
+    "canonical_seed_old_left_directions": 233,
+    "data_channel_exact_equivalence": false,
+    "diamond_bound_nu_0_6": 0.02572463880357183,
+    "exact_original_julia_return_source_transport": true,
+    "new_checks": 587,
+    "normalized_choi_distance_nu_0_6": 0.007787354056443842,
+    "original_two_tick_per_copy_source": 1.5306614291784259e-07,
+    "original_two_tick_source": 3.0613228583568533e-07
+  },
+  "source_pins": [
+    {
+      "blob": "6ab2096af0b622e36e2ce15d9a03533c4c32b071",
+      "commit": "a8635c65a6af41c8fbafc605f7c43d0713b4591f",
+      "name": "owner_memo",
+      "path": "02_REGISTRY/research/A4D_CANONICAL_AF_ORIGINAL_JULIA_SOURCE_LIFT_2026_10_28.md",
+      "sha256": "a4c90a4a7cdaa5a0f5274bd9a71b193c66692d5072f6724eee26358ec189d9a0"
+    },
+    {
+      "blob": "d4e9c4e5e4e707612a7b368f5bc80f69ef31cfe2",
+      "commit": "3821e4035cae1c723daed8cf3c59dbeb99890ba8",
+      "name": "proof",
+      "path": "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/PROOF_RU.md",
+      "sha256": "e0da7a16676acc05c53f1f8a52c86d93fc7e8c3bcfe1ed04165997ec9343be2c"
+    },
+    {
+      "blob": "578dadf933f72cedbc484431519ac9e2dc8afc0f",
+      "commit": "3a5fe1111ed70f39eccbb24e6cf56384f6164609",
+      "name": "checker",
+      "path": "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/check_af_julia_lift.py",
+      "sha256": "f58b22aab0342d4d595a4ece26b501c4780961c2f950eb174e6af570f656eeaf"
+    },
+    {
+      "blob": "8a268b429a218a1c735e6ad4973bbde9dc07e39f",
+      "commit": "fcb2d797d36b9454ff974d88c01e1ed3bbac2656",
+      "name": "published_receipt",
+      "path": "02_REGISTRY/research/sources/d0_af_native_julia_source_lift_2026-10-28/result.json",
+      "sha256": "12c2b0bd961a8104d75672aeb6c1e41c7ec62dce640d139f455458e230f20e1a"
+    },
+    {
+      "blob": "9d313ec496f12ac61e118511d9ce706f19e675ae",
+      "commit": "110b672e09848893475db0c8fd786cc910a014f9",
+      "name": "original_retained_history_checker",
+      "path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py",
+      "sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a"
+    }
+  ],
+  "upstream": {
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "head": "a8635c65a6af41c8fbafc605f7c43d0713b4591f",
+    "pull_request": 334,
+    "repository": "gvakhrushev/d0_15"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "613fb03906632ef36a2ea269fa5b4170b06d1b32",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "22f535222b7fbf4f1c95b56f706125fb262b278972988ec6f96233e5fe8815fb",
+  "collector_sha256": "c3554173a54aa30b0a9434cdb5662c093177fa00e552276093b89ccc511fe40d",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveTwistedHodgeDirac",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "H",
+          "type": "D0.Role → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hunit",
+          "type": "∀ (r : D0.Role), star (H r) * H r = 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDiracTwisted N H ψ = (D0.Geometry.hodgeCarDiracTwistedLinear N H) ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 60,
+            "line": 985
+          },
+          "start": {
+            "column": 0,
+            "line": 975
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 57,
+            "line": 978
+          },
+          "start": {
+            "column": 8,
+            "line": 978
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (H : D0.Role → ℂ),\n  (∀ (r : D0.Role), star (H r) * H r = 1) →\n    ∀ (ψ : D0.Geometry.ArchiveCochainC N),\n      D0.Geometry.hodgeCarDiracTwisted N H ψ = (D0.Geometry.hodgeCarDiracTwistedLinear N H) ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveTwistedHodgeDirac",
+      "name": "D0.Geometry.hodgeCarDiracTwisted_eq_finiteHermitianHodgeDirac",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "Bool",
+        "Bool.fintype",
+        "CommRing.toNonUnitalCommRing",
+        "Complex",
+        "Complex.instAdd",
+        "Complex.instField",
+        "Complex.instMul",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.instSemiring",
+        "Complex.instStarRing",
+        "D0.Algebra.finiteHermitianAdjoint",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.dTwistedAdjoint",
+        "D0.Geometry.dTwistedAdjoint_eq_finiteHermitianAdjoint",
+        "D0.Geometry.dTwistedLinear",
+        "D0.Geometry.hodgeCarDiracTwisted",
+        "D0.Geometry.hodgeCarDiracTwistedLinear",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Field.toCommRing",
+        "Field.toSemifield",
+        "Fin.fintype",
+        "Fintype.decidablePiFintype",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "InvolutiveStar.toStar",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instAdd",
+        "Pi.instFintype",
+        "RingHom.id",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Star.star",
+        "StarAddMonoid.toInvolutiveStar",
+        "StarRing.toStarAddMonoid",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "congrArg",
+        "id",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "Complex",
+        "Complex.instMul",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.instSemiring",
+        "Complex.instStarRing",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.hodgeCarDiracTwisted",
+        "D0.Geometry.hodgeCarDiracTwistedLinear",
+        "D0.Role",
+        "DFunLike.coe",
+        "Eq",
+        "HMul.hMul",
+        "InvolutiveStar.toStar",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Star.star",
+        "StarAddMonoid.toInvolutiveStar",
+        "StarRing.toStarAddMonoid",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveTwistedHodgeDirac.lean"
+    }
+  ]
+}

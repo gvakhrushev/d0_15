@@ -1,4 +1,5 @@
 import Mathlib.Tactic
+import D0.Combinatorics.TripartiteVieta
 import D0.Synthesis.TopHodgeNormalizedQuotientSpectrum
 
 /-!
@@ -59,10 +60,13 @@ open D0.Synthesis.SceneInvariantReconstruction
 open D0.Synthesis.TopHodgeSpectralSceneReconstruction
 open D0.Synthesis.TopHodgeNormalizedQuotientSpectrum
 
-/-- The monic cubic whose root multiset is the three zone sizes. -/
-noncomputable def zoneRootPolynomial (a b c : ℚ) : Polynomial ℚ :=
-  (X - Polynomial.C a) * (X - Polynomial.C b) *
-    (X - Polynomial.C c)
+/-! The generic algebra now has one lower-level owner in
+`D0.Combinatorics.TripartiteVieta`. These declarations preserve the exact
+public locators used by the existing inverse-spectral claim. -/
+
+/-- Compatibility alias for the shared zone-root polynomial. -/
+noncomputable abbrev zoneRootPolynomial (a b c : ℚ) : Polynomial ℚ :=
+  D0.Combinatorics.TripartiteVieta.zoneRootPolynomial a b c
 
 /-- Vieta expansion of the zone-root polynomial. -/
 theorem zoneRootPolynomial_vieta (a b c : ℚ) :
@@ -70,8 +74,7 @@ theorem zoneRootPolynomial_vieta (a b c : ℚ) :
       X ^ 3 - Polynomial.C (tripartiteV a b c) * X ^ 2 +
         Polynomial.C (tripartiteE a b c) * X -
           Polynomial.C (tripartiteT a b c) := by
-  simp [zoneRootPolynomial, tripartiteV, tripartiteE, tripartiteT]
-  ring
+  exact D0.Combinatorics.TripartiteVieta.zoneRootPolynomial_vieta a b c
 
 /-- Equality of the three elementary symmetric invariants forces equality of
 the complete zone-root polynomials. -/
@@ -81,24 +84,14 @@ theorem zoneRootPolynomial_eq_of_VET_eq
     (hE : tripartiteE a b c = tripartiteE a' b' c')
     (hT : tripartiteT a b c = tripartiteT a' b' c') :
     zoneRootPolynomial a b c = zoneRootPolynomial a' b' c' := by
-  rw [zoneRootPolynomial_vieta, zoneRootPolynomial_vieta, hV, hE, hT]
+  exact D0.Combinatorics.TripartiteVieta.zoneRootPolynomial_eq_of_VET_eq
+    hV hE hT
 
 /-- The polynomial owner remembers the full root multiset, including repeated
 zone sizes. -/
 theorem zoneRootPolynomial_roots (a b c : ℚ) :
     (zoneRootPolynomial a b c).roots = ({a, b, c} : Multiset ℚ) := by
-  rw [zoneRootPolynomial,
-    Polynomial.roots_mul
-      (mul_ne_zero
-        (mul_ne_zero (Polynomial.X_sub_C_ne_zero a)
-          (Polynomial.X_sub_C_ne_zero b))
-        (Polynomial.X_sub_C_ne_zero c)),
-    Polynomial.roots_mul
-      (mul_ne_zero (Polynomial.X_sub_C_ne_zero a)
-        (Polynomial.X_sub_C_ne_zero b)),
-    Polynomial.roots_X_sub_C, Polynomial.roots_X_sub_C,
-    Polynomial.roots_X_sub_C]
-  rfl
+  exact D0.Combinatorics.TripartiteVieta.zoneRootPolynomial_roots a b c
 
 /-- **Generic Vieta rigidity.**  Three rational triples with equal elementary
 symmetric invariants have the same unordered multiset.  This is the missing
@@ -109,10 +102,8 @@ theorem unordered_triple_eq_of_VET_eq
     (hE : tripartiteE a b c = tripartiteE a' b' c')
     (hT : tripartiteT a b c = tripartiteT a' b' c') :
     ({a, b, c} : Multiset ℚ) = ({a', b', c'} : Multiset ℚ) := by
-  rw [← zoneRootPolynomial_roots a b c,
-    ← zoneRootPolynomial_roots a' b' c']
-  exact congrArg Polynomial.roots
-    (zoneRootPolynomial_eq_of_VET_eq hV hE hT)
+  exact D0.Combinatorics.TripartiteVieta.unordered_triple_eq_of_VET_eq
+    hV hE hT
 
 /-- Natural-number form of generic Vieta rigidity. -/
 theorem unordered_nat_triple_eq_of_VET_eq
@@ -124,9 +115,8 @@ theorem unordered_nat_triple_eq_of_VET_eq
     (hT :
       tripartiteT a b c = tripartiteT a' b' c') :
     ({a, b, c} : Multiset ℕ) = ({a', b', c'} : Multiset ℕ) := by
-  apply Multiset.map_injective
-    (Nat.cast_injective : Function.Injective (fun n : ℕ => (n : ℚ)))
-  simpa using unordered_triple_eq_of_VET_eq hV hE hT
+  exact D0.Combinatorics.TripartiteVieta.unordered_nat_triple_eq_of_VET_eq
+    hV hE hT
 
 /-! ## Inverse rigidity from the actual top-Hodge data -/
 
@@ -207,6 +197,31 @@ theorem topHodge_inverse_spectral_rigidity
           ((r' + 1 : ℕ) : ℚ) := by
     simpa [zoneSizeQ] using hT
   exact unordered_nat_triple_eq_of_VET_eq hV' hE' hT'
+
+/-- Concrete reuse of generic inverse-spectral rigidity at the frozen scene.
+The scene coordinates are proved from its actual top-Hodge operator in
+`TopHodgeSpectralSceneReconstruction`; this theorem applies the generic
+three-coordinate result to any positive complete-tripartite candidate with
+those same numerical readings. -/
+theorem scene_topHodge_inverse_spectral_rigidity_application
+    (p q r : ℕ)
+    (hD : topHodgeTriangleDimension p q r = 1287)
+    (hH : topHodgeHarmonicMultiplicity p q r = 960)
+    (hM2 : topHodgeSecondMoment p q r = 50193) :
+    ({p + 1, q + 1, r + 1} : Multiset ℕ) = ({9, 11, 13} : Multiset ℕ) := by
+  rcases scene_topHodge_spectral_coordinates with ⟨hD₀, hH₀, hM₂₀⟩
+  have hD' :
+      topHodgeTriangleDimension p q r =
+        topHodgeTriangleDimension 8 10 12 := by
+    rw [hD, hD₀]
+  have hH' :
+      topHodgeHarmonicMultiplicity p q r =
+        topHodgeHarmonicMultiplicity 8 10 12 := by
+    rw [hH, hH₀]
+  have hM₂' :
+      topHodgeSecondMoment p q r = topHodgeSecondMoment 8 10 12 := by
+    rw [hM2, hM₂₀]
+  simpa using topHodge_inverse_spectral_rigidity hD' hH' hM₂'
 
 /-- The theorem cannot and should not recover an ordering of the zones:
 permuting zone labels preserves all actual top-Hodge data. -/

@@ -1,0 +1,109 @@
+{
+  "checker_inputs": [
+    {
+      "blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "bytes": 17833,
+      "commit": "0f2e421fda2029df92b174c39f594160ce31294f",
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "blob": "8325834fc09fdd9cd8f278d3bcd6fbd97833253d",
+      "bytes": 43429,
+      "commit": "0f2e421fda2029df92b174c39f594160ce31294f",
+      "path": "02_REGISTRY/research/sources/d0_apparatus_cotangent_descent_2026-10-28/PROOF_RU.md",
+      "sha256": "1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254"
+    },
+    {
+      "blob": "c99e90a8c8e96bae70e700fa88d1c2d824a1831b",
+      "bytes": 33947,
+      "commit": "0f2e421fda2029df92b174c39f594160ce31294f",
+      "path": "02_REGISTRY/research/sources/d0_task_faithful_source_2026-10-28/PROOF_RU.md",
+      "sha256": "9f2354817860f9024a597dba4bd14c0580cc021de5c473925740b46b0e8f96e5"
+    },
+    {
+      "blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "bytes": 20552,
+      "commit": "0f2e421fda2029df92b174c39f594160ce31294f",
+      "path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    }
+  ],
+  "integrated_artifacts": {
+    "PROOF_RU.md": {
+      "bytes": 11090,
+      "sha256": "775e75cbf4528d0909e4b4d3b84b9a66e8ab4d19f320988d2efd9cf15753c464"
+    },
+    "check_return_record.py": {
+      "bytes": 21876,
+      "sha256": "ea01927ce92fbe64f80ca62395d13b28d56c4508626cd364603edd275f2000e8"
+    },
+    "expected_receipt.json": {
+      "bytes": 39977,
+      "sha256": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e"
+    },
+    "inputs/field_compiler_source.md": {
+      "bytes": 25868,
+      "sha256": "a4046500768bc3abcfc571f18aa749055449aae0d448ff041487a4fa2e538b34",
+      "upstream_memo_slice": "## 7cq. through before ### 9. Frozen changed code and actual receipt"
+    },
+    "inputs/upstream_receipts.md": {
+      "bytes": 49336,
+      "scope": "7dr published receipt reused from prior intake; exact unchanged 7do receipt; only source blocks read by checker",
+      "sha256": "057b2b0b1ae20678dbdea326688d266d9255031863535bdb6dceff1cd1370e7d"
+    },
+    "replay_manifest.json": {
+      "bytes": 1769,
+      "sha256": "4dd3875462eff5cbb639c4ad248301fe02bbfb34c45bbafab9172738af9de90e"
+    },
+    "replay_return_record.py": {
+      "bytes": 5274,
+      "sha256": "d915e5211996b5a0246e9fcba2e907e4255a2803de278ab5a0f32063c22597cf"
+    },
+    "upstream_section_7ds.md": {
+      "bytes": 83886,
+      "sha256": "08bf023af33ea7f72392963ca28d58ad358b5b2ecc1f15f3df1ffe2d85b11fcb"
+    }
+  },
+  "prior_result_inputs": [
+    {
+      "path": "../d0_native16_retained_report_fibre_2026-10-29/expected_receipt.json",
+      "role": "7dr published checker receipt",
+      "sha256": "c20bd62754ffaa4fb89a8ae16ab4b3f18c1c04f38112bcaa0e2e550058da3558"
+    },
+    {
+      "role": "unchanged full thermal coefficient 7do",
+      "sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba"
+    }
+  ],
+  "schema": "d0-native16-return-record-compiler-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "claim": "two paid CX layers preserve the original return corner and make the actual joint-record effect exact; at a reflection endpoint the fixed INTERNAL H+J endpoint source is the actual record source, and the specified upstream preparation source vanishes",
+    "does_not_establish": [
+      "physical admission of reserve blanks or execution selection",
+      "reserve mapping for every larger field compiler",
+      "zero heat covector for nonreflection endpoints",
+      "complete selected Book03 Cost-Info",
+      "independent clock or boundary equations",
+      "all42 physical source/refinement",
+      "Lean or CI",
+      "GR closure"
+    ],
+    "status": "supporting application of 7dr to a declared native binary compiler and same-boundary 37/55-call instances"
+  },
+  "upstream": {
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "checker_start_line": 102212,
+    "head": "0f2e421fda2029df92b174c39f594160ce31294f",
+    "memo_blob": "c1417beeb828773482bda67b6e9db146a5ce04d9",
+    "memo_bytes": 3673527,
+    "memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "memo_sha256": "37846d696a8da22baa02029f1043ccd5db873612d5c145bf6a4c09c000a23c82",
+    "pull_request": 334,
+    "receipt_end_line": 105123,
+    "section_start_line": 101808,
+    "task_blob": "2b10f402167e7c14c77db51887bff43419c506d7",
+    "task_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
+  }
+}

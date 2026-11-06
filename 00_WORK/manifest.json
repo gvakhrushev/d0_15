@@ -62,7 +62,7 @@
       "id": "WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION",
       "class": "WORKER",
       "parent": "CTRL-A4D-RESOLVED-AFFINE-PROGRAM-WAVE",
-      "state": "PLANNED",
+      "state": "IN_PROGRESS",
       "affected_claims": [
         "D0-LEAN-CORE-001",
         "D0-LEAN-BRIDGE-001"

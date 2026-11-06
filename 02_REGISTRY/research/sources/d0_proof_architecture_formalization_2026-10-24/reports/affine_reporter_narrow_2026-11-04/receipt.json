@@ -1,0 +1,17 @@
+{
+  "schema": "d0-affine-reporter-narrow-v1",
+  "parent_commit": "5eef2876fea9ddf3e51f62cad1de0663e5ce9912",
+  "worktree_dirty": true,
+  "scope": "Actual ordered taskReturnProduct; one nonrepeated scalar-compressed affine reporter, fixed preparations, positive reference corners.",
+  "lean_module_sha256": "c8b9041455a328f81d04b39961b01eedc6e40bd63b1966d38857735096832a29",
+  "lean_module_git_blob": "3a3d20360547d32581ae5a793bd7b57b8421eaa9",
+  "narrow_target": "D0.Research.TaskFaithfulAffineReporterDerivative",
+  "narrow_jobs": 2703,
+  "narrow_log_sha256": "b74ab8d962ec713270b5fc65f8a287befc70e79492cfddb8ef74dfa2badcdeb7",
+  "axioms_log_sha256": "5def12a373cbc5927022dd695579f24a1a96533453eade0dc22968bd7b30f92d",
+  "independent_review": "Conditional source and API reviewed; nonradial and physical admission remain open.",
+  "full_build": "pending after integration",
+  "GR_closed": false,
+  "narrow_log_path": "narrow.log.gz",
+  "narrow_log_gzip_sha256": "b71bc56b26952ae4b11c868103d9d028d800a1383cb4544e12c0b994d898970f"
+}

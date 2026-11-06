@@ -12,13 +12,13 @@ open D0.Topology
 
 theorem abelian_bianchi_exact
     (C : GradedCellComplex) (A : C.V -> Real) (f : C.F) :
-    d1 C (d0 C A) f = 0 := by
-  exact discrete_exact_bianchi C A f
+    d1 C (d0 C A) f = 0 :=
+  D0.Topology.discrete_exact_bianchi C A f
 
 theorem graded_bianchi_exact
     (C : GradedCellComplex3) (c : C.C3) (e : C.E) :
-    (Finset.univ.sum fun f => C.boundary3 c f * C.boundary2 f e) = 0 := by
-  exact D0.Topology.graded_bianchi_exact C c e
+    (Finset.univ.sum fun f => C.boundary3 c f * C.boundary2 f e) = 0 :=
+  D0.Topology.graded_bianchi_exact C c e
 
 def fin2SkewD : Matrix (Fin 2) (Fin 2) Real := fun i j =>
   if i.val = 0 /\ j.val = 1 then 1

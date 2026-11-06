@@ -1,0 +1,28 @@
+{
+  "schema": "d0-c0-three-slice-views-v1",
+  "snapshot_commit": "df5d2ac11d857b5899dc4bd96d1d6fe2a426858e",
+  "worktree_dirty": false,
+  "inventory_sha256": "af2f26cbf75ec7bd7f6551695ebed230ffb2b69814374703791833684c27df5b",
+  "views": {
+    "book01-0116": {
+      "units": 6,
+      "issues": [],
+      "sha256": "a3e3ed5d1e698c1461f7120a92eed4f7189fd1e6e707fd1f64388f32b25f1092",
+      "metadata_state": "reported_compiled_metadata_consistent_not_replayed"
+    },
+    "book01": {
+      "units": 44,
+      "issues": [],
+      "sha256": "94a224474458e4ad29e1cc6d591704e10863b2a0395b519f6c1e566c82711e3a",
+      "metadata_state": "reported_compiled_metadata_consistent_not_replayed"
+    },
+    "book02": {
+      "units": 30,
+      "issues": [],
+      "sha256": "680d3e3c6cd61c224b288473be3b4577f508537d222fa4af244fe54f2db5baa1",
+      "metadata_state": "reported_compiled_metadata_consistent_not_replayed"
+    }
+  },
+  "semantic_acceptance": "not_assessed",
+  "GR_closed": false
+}

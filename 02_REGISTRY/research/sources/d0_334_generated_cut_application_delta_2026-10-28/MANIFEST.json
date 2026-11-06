@@ -1,0 +1,97 @@
+{
+  "base_source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "extracted_checks_sha256": "42087ed114cd54a18c5a0b66dfdf8dfbfa3593a25d7d51d9da7aa018a85d6e1b",
+  "file_count": 6,
+  "files": [
+    {
+      "base_bytes": 1081431,
+      "base_git_blob": "65a996966d62b26592772e506b99eba6a44c5094",
+      "base_sha256": "1e9bed486cb7c421fc2d35830d00b99262ab908ebb720cec6efc2e09331d121e",
+      "base_snapshot_path": "02_REGISTRY/research/sources/d0_334_paid_source_delta_2026-10-28/upstream/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "base_source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "bytes": 1088673,
+      "git_blob": "431b60df3639d8102683bbad19966f44559e7689",
+      "patch_bytes": 8050,
+      "patch_path": "patches/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md.diff",
+      "patch_sha256": "ae8ba135e1262ca9ce39de474eb9fc5e2fc94c21590270abb2d3d849c829b557",
+      "sha256": "0741944099c6621d732377f4bb6585da06f063775ff8101453359c03aeea9ad1",
+      "storage": "patch",
+      "upstream_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
+    },
+    {
+      "base_bytes": 2697781,
+      "base_git_blob": "671f8712162b850b4299152bedac0165267b71a7",
+      "base_sha256": "5f8c04004e0332127681095ddc3678c2b7e0bec664c9b14ee3c1a63bdea414c4",
+      "base_snapshot_path": "02_REGISTRY/research/sources/d0_334_paid_source_delta_2026-10-28/upstream/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "base_source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "bytes": 2744025,
+      "git_blob": "8aea1a6225e80270d2ea005edfb51e580f16b567",
+      "patch_bytes": 48030,
+      "patch_path": "patches/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md.diff",
+      "patch_sha256": "5412a04dcb73d8a41527873c133be672e0ec0fb67fa0a3f730baad9feb122ebe",
+      "sha256": "cdd20ee8c35d8487d16878a548500e2b75d5b56ce94cc3e77a0b5c8183d8524f",
+      "storage": "patch",
+      "upstream_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+    },
+    {
+      "bytes": 5815,
+      "git_blob": "794f3797cba4a8f04376df5a2f192308e2dc2f7e",
+      "sha256": "aef8cc9dbf86e4b7eb0a1b4123c5055361105b90d3d43d2ff09c62c69262c1ac",
+      "snapshot_path": "upstream/02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_BOUNDARY_HESSIAN_2026_10_28.md",
+      "storage": "snapshot",
+      "upstream_path": "02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_BOUNDARY_HESSIAN_2026_10_28.md"
+    },
+    {
+      "bytes": 9894,
+      "git_blob": "d6edeaddc8927d0db16ed35e9781b27cc3804e3a",
+      "sha256": "cc94c4fe66a1614359f6d73b30ea9e1c8e58cf8430b7039fe48475d8b483d18d",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/QUERY_ORBIT_APPLICATION_RU.md",
+      "storage": "snapshot",
+      "upstream_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/QUERY_ORBIT_APPLICATION_RU.md"
+    },
+    {
+      "bytes": 5332,
+      "git_blob": "fac2d4717b13a1f87767ad3c9a06e7e1cf6be882",
+      "sha256": "eacd5d6456bacde02ddf3bab22f8ea7782ccdfcecce7afc232d928d9692f2fd9",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/check_query_cut_orbit.py",
+      "storage": "snapshot",
+      "upstream_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/check_query_cut_orbit.py"
+    },
+    {
+      "bytes": 3537,
+      "git_blob": "f9ef19b2ad8a5c8f54cb665741dcc3fed442c8e4",
+      "sha256": "272502430370992230f6575fa558d8681d0b90dd9f9c4cfa9106d4be35e4ecd6",
+      "snapshot_path": "upstream/02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/query_cut_result.json",
+      "storage": "snapshot",
+      "upstream_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/query_cut_result.json"
+    }
+  ],
+  "replay_input_file_count": 3,
+  "replay_input_files": [
+    {
+      "bytes": 17833,
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+    },
+    {
+      "bytes": 9896,
+      "git_blob": "fd77e022653e76180d48c67e4b97af5fdd182daa",
+      "sha256": "7c325fe6322298e13c2380522e9645cc228d8d5db2d7741368310690b80b095c",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/book_price.py",
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/book_price.py"
+    },
+    {
+      "bytes": 11768,
+      "git_blob": "a845c2e26eb01bb35e7ed3d5eaa000f2631e8ec3",
+      "sha256": "4950d36010bd75bd26df13d9f13ff27843980a4fd35aefaac7dd950059fc21ee",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/BOOK_MAP.md",
+      "upstream_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/BOOK_MAP.md"
+    }
+  ],
+  "schema": "d0-pr-source-delta-v2",
+  "source_commit": "5fe5203da2439d325dc9ef70f52c1111822fc22b",
+  "source_pr": 334,
+  "source_repository": "gvakhrushev/d0_15"
+}

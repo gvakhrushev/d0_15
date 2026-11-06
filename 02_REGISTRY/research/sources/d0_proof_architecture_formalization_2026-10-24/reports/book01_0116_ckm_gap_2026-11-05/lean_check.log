@@ -1,0 +1,19 @@
+D0.Matter.ckm_origin_candidate_matrix_unique {n : ℕ} {Op : Type} (O : D0.Matter.CKMBasisOrigin n Op)
+  (C : D0.Matter.CKMOriginCandidate O) : C.matrix = D0.Matter.ckmOriginMatrix O
+D0.Matter.ckm_no_free_matrix_at_fixed_basis_origin {n : ℕ} {Op : Type} (O : D0.Matter.CKMBasisOrigin n Op)
+  (M : Matrix (Fin n) (Fin n) ℚ) (hM : M ≠ D0.Matter.ckmOriginMatrix O) : ¬∃ C, C.matrix = M
+D0.Matter.CKMOverlapUnderdeterminationNoGo.ckm_overlap_underdetermination_nogo :
+  D0.Matter.CKMOverlapUnderdeterminationNoGo.VmixA * D0.Matter.CKMOverlapUnderdeterminationNoGo.VmixA.transpose = 1 ∧
+    D0.Matter.CKMOverlapUnderdeterminationNoGo.VmixB * D0.Matter.CKMOverlapUnderdeterminationNoGo.VmixB.transpose = 1 ∧
+      D0.Matter.CKMOverlapUnderdeterminationNoGo.VmixA 0 1 ^ 2 ≠
+        D0.Matter.CKMOverlapUnderdeterminationNoGo.VmixB 0 1 ^ 2
+D0.Matter.CKMOverlapUnderdeterminationNoGo.overlap_invariants_differ :
+  D0.Matter.CKMOverlapUnderdeterminationNoGo.VmixA 0 1 ^ 2 ≠ D0.Matter.CKMOverlapUnderdeterminationNoGo.VmixB 0 1 ^ 2
+'D0.Matter.ckm_origin_candidate_matrix_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Matter.ckm_no_free_matrix_at_fixed_basis_origin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Matter.CKMOverlapUnderdeterminationNoGo.ckm_overlap_underdetermination_nogo' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Matter.CKMOverlapUnderdeterminationNoGo.overlap_invariants_differ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

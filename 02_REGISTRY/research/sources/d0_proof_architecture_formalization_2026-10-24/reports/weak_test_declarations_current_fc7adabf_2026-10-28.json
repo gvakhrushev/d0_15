@@ -1,0 +1,137 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "fc7adabf9414f4de4f274267143797fc426ef7cb",
+  "worktree_dirty": false,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "d19513df16bc00ff285081b8470fb16df2eaed64f10d54c8c53a4a8ea77f5d40",
+  "collector_sha256": "08fbbf72f3dcb8ac9e62ae1787c154b439d34098422f5c85e827c2331b00f91d",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.archive_doubling_sine_weak_pairing_tendsto"
+  },
+  "claim_locator_crosswalk": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        }
+      ],
+      "conclusion_whnf": "∀ ⦃U : Set ℝ⦄,\n  U ∈ nhds (2 / Real.pi) →\n    U ∈\n      Filter.map\n        (fun N =>\n          D0.Geometry.archiveSineWeakPairing (N + (N + 2))\n            (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r)\n        Filter.atTop",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 34,
+            "line": 279
+          },
+          "start": {
+            "column": 0,
+            "line": 272
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 50,
+            "line": 274
+          },
+          "start": {
+            "column": 8,
+            "line": 274
+          }
+        }
+      },
+      "elaborated_type": "∀ (r : D0.Role),\n  Filter.Tendsto\n    (fun N =>\n      D0.Geometry.archiveSineWeakPairing (N + (N + 2))\n        (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r)\n    Filter.atTop (nhds (2 / Real.pi))",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveGradedRefinementWeakTest",
+      "name": "D0.Geometry.archive_doubling_sine_weak_pairing_tendsto",
+      "proof_dependencies": [
+        "D0.Geometry.archiveRepeatedGradedPullback",
+        "D0.Geometry.archiveSineWeakPairing",
+        "D0.Geometry.archiveUnitSingletonCochain",
+        "D0.Geometry.archive_doubling_weak_pairing_eq_half_sine",
+        "D0.Geometry.archive_half_sine_mean_tendsto",
+        "D0.Role",
+        "DivInvMonoid.toDiv",
+        "Eq",
+        "Eq.mpr",
+        "Filter",
+        "Filter.Tendsto",
+        "Filter.atTop",
+        "Finset.range",
+        "Finset.sum",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "Nat",
+        "Nat.cast",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Nat.instPreorder",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instDivInvMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.pi",
+        "Real.pseudoMetricSpace",
+        "Real.sin",
+        "UniformSpace.toTopologicalSpace",
+        "congrArg",
+        "congrFun'",
+        "funext",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "nhds"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.archiveRepeatedGradedPullback",
+        "D0.Geometry.archiveSineWeakPairing",
+        "D0.Geometry.archiveUnitSingletonCochain",
+        "D0.Role",
+        "DivInvMonoid.toDiv",
+        "Filter.Tendsto",
+        "Filter.atTop",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Nat.instPreorder",
+        "OfNat.ofNat",
+        "PseudoMetricSpace.toUniformSpace",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instNatCast",
+        "Real.pi",
+        "Real.pseudoMetricSpace",
+        "UniformSpace.toTopologicalSpace",
+        "instAddNat",
+        "instHAdd",
+        "instHDiv",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "nhds"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean"
+    }
+  ]
+}

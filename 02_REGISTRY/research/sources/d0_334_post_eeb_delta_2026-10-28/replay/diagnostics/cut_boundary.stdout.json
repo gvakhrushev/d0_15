@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "scope": "finite original-return endpoint mixed Hessian, not physical admission or GR",
+  "symbolic": {
+    "hermitian_coefficient_exact_polynomial": true,
+    "mode_gap_exact_polynomial": true
+  },
+  "derivative_checks": [
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 3.4029290496562226e-09
+    },
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 9.66639768229527e-10
+    },
+    {
+      "rank": 1,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 4.096455619162498e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 1.5245391615792414e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 2.805780940917657e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 3.99225141833881e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 1.562131979326864e-09
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 5.40546052363311e-10
+    },
+    {
+      "rank": 1,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 3.3499394369584934e-09
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 8.690257402577117e-10
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 1.351960904338867e-10
+    },
+    {
+      "rank": 2,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 1.1678003009052418e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 5.841477301871123e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 2.0251558208173037e-09
+    },
+    {
+      "rank": 2,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 2.7889330844743654e-09
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 3.5732905523389036e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 1.2536061078094463e-10
+    },
+    {
+      "rank": 2,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 1.9667451001126324e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "mixed",
+      "error": 1.810281369252209e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "hermitian",
+      "error": 1.940977933934107e-10
+    },
+    {
+      "rank": 3,
+      "z": 9.5367431640625e-07,
+      "mode": "antihermitian",
+      "error": 4.894409322275806e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "mixed",
+      "error": 3.1928509836021135e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "hermitian",
+      "error": 4.3851472453226847e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.2,
+      "mode": "antihermitian",
+      "error": 1.6167001071210052e-10
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "mixed",
+      "error": 1.0639905623222035e-11
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "hermitian",
+      "error": 8.058276268485542e-13
+    },
+    {
+      "rank": 3,
+      "z": 0.7,
+      "mode": "antihermitian",
+      "error": 4.21647716741802e-10
+    }
+  ],
+  "max_normalized_fd_error": 4.096455619162498e-09,
+  "golden_gain": {
+    "z": 9.5367431640625e-07,
+    "kappa_H": 4.5026495696419226e-07,
+    "kappa_A": 1.90734932760488e-06,
+    "inverse_norm": 2220914.56271052,
+    "condition": 4.236059897853796
+  },
+  "gluing_control": {
+    "composed_price": 9.005282737455358e-07,
+    "sum_step_prices": 7.28542482032253e-07,
+    "difference": 1.7198579171328276e-07,
+    "composed_mixed_hessian": 1.6947641750105534e-06,
+    "stationary_glued_mixed_hessian": -2.2513247848209623e-07
+  }
+}

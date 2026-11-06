@@ -1,0 +1,116 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "29ce093a9596089a522b9a066caa351af8a53fc6",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "089f0e6d888039facb2fc3354eec21f40be34530bb5fde39d32c6a5c67974768",
+  "collector_sha256": "74855c841cfd66f809ee0a3aaa849555a946fa18528b4b725ea60f401265a469",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveHodgeCARDiracSquare",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.hodgeCarDirac_sq"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = D0.Geometry.cochainDifferenceLaplacian N ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 65,
+            "line": 674
+          },
+          "start": {
+            "column": 0,
+            "line": 660
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 24,
+            "line": 661
+          },
+          "start": {
+            "column": 8,
+            "line": 661
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.hodgeCarDirac N (D0.Geometry.hodgeCarDirac N ψ) = D0.Geometry.cochainDifferenceLaplacian N ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveHodgeCARDiracSquare",
+      "name": "D0.Geometry.hodgeCarDirac_sq",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.cochainDifferenceLaplacian",
+        "D0.Geometry.dForward",
+        "D0.Geometry.dForwardₗ",
+        "D0.Geometry.hodgeCarDirac",
+        "D0.Geometry.hodgeCarDiracHermitian_square",
+        "D0.Geometry.hodgeCarDiracHermitianₗ",
+        "D0.Geometry.hodgeCarDirac_cross",
+        "D0.Geometry.hodgeCarDirac_eq_finiteHermitianHodgeDirac",
+        "D0.Geometry.hodgeCodifferential",
+        "D0.Geometry.hodgeCodifferentialₗ",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "HAdd.hAdd",
+        "LinearMap",
+        "LinearMap.comp",
+        "LinearMap.instAdd",
+        "LinearMap.instFunLike",
+        "Nat",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instAdd",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomCompTriple.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "Trans.trans",
+        "congrArg",
+        "id",
+        "instHAdd",
+        "instTransEq"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.cochainDifferenceLaplacian",
+        "D0.Geometry.hodgeCarDirac",
+        "Eq",
+        "Nat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean"
+    }
+  ]
+}

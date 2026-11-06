@@ -1,0 +1,18 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "input_commit": "28f2e2b0d6f96e073f20a8190f53c615a2a4a8eb",
+  "published_commit": "28811643e84b474384fb08cb31dce18ca050e30f",
+  "proof_path": "02_REGISTRY/research/A4D_PARITY_RESOLVED_GEOMETRIC_SOURCE_GLOBAL_2026_10_27.md",
+  "proof_blob": "9e48d91446bdcd2860185ae9181b7a4d04699e51",
+  "checker_path": "02_REGISTRY/research/certificates/a4d_parity_geometric_source_global_check.py",
+  "checker_blob": "00c790058764de10c3315728fb94c85b803d6c6d",
+  "receipt_path": "02_REGISTRY/research/certificates/a4d_parity_geometric_source_global_result_2026_10_27.json",
+  "receipt_blob": "4c5c601b9dd7461426a1c18758a4f9ff99058460",
+  "local_checker_matches_remote_blob": true,
+  "local_receipt_matches_remote_blob": true,
+  "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "sympy_version": "1.14.0",
+  "mode_receipts_identical": true,
+  "GR_closed": false
+}

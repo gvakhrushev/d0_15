@@ -1,0 +1,65 @@
+{
+  "producer_sha256": "9978dd29bacfcb5d51eab5ec40d418ed9027af5ddde3f1a7aa01eaf53cca70ff",
+  "primary_sha256": "9c309fbcc5fd7dc8995c53c74db3477d3510ea4a4f93effc784a72695817c898",
+  "primary_chars": 1106108,
+  "primary_lines": 16534,
+  "synthetic_exact_matches": 2011,
+  "semantic_alias_cache_pass": true,
+  "benchmarks": [
+    {
+      "case_id": "record-saturated-native-field-stencils",
+      "query_index": 0,
+      "query": "fixed Golden native source stencils with an actual retained record all expanded calls positive G CX SourceI large repeats specified not iterated or claimed run on hardware 42 variable test local Palatini jet not a lattice GR root or a runtime quantum field decoder",
+      "term_count": 39,
+      "variant_count": 48,
+      "seconds": {
+        "named": 0.690568917,
+        "flat": 0.08936987500000015,
+        "named_evidence": 0.7166630840000001,
+        "flat_evidence": 0.12042983299999999
+      },
+      "matcher_speedup": 7.727088316952427,
+      "evidence_speedup": 5.950876673556461,
+      "all_line_names_equal": true,
+      "full_ranked_evidence_equal": true,
+      "evidence_sha256": "14a099180865ff4bc682d5c651366a5e70e32b70578ed84554b3f7f6fca20ab8"
+    },
+    {
+      "case_id": "julia-query-principal-frame-coframe-recovery",
+      "query_index": 15,
+      "query": "правый Lorentz endpoint одновременно CAR Eq 27 и query Eq 28 один recovered endpoint null leg native raising operator inverse coframe",
+      "term_count": 18,
+      "variant_count": 43,
+      "seconds": {
+        "named": 0.24787212499999978,
+        "flat": 0.059850291000000055,
+        "named_evidence": 0.2643697079999998,
+        "flat_evidence": 0.08117395799999993
+      },
+      "matcher_speedup": 4.141535836475708,
+      "evidence_speedup": 3.2568290928970103,
+      "all_line_names_equal": true,
+      "full_ranked_evidence_equal": true,
+      "evidence_sha256": "614cba7d2c42a946e843b12bbc576e974a6145779bb66492629276dd420491ab"
+    },
+    {
+      "case_id": "native16-whole-book-price-graph",
+      "query_index": 0,
+      "query": "owner memo source pin path A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md commit 22b4e3f430ddb7d8dd7af6e734f5e63225edd056 blob 1e81dd0151eea362fedacc008293bcf4f0c7d806 one terminal record layer literal full Book price independent preparation 93 exact checks",
+      "term_count": 23,
+      "variant_count": 26,
+      "seconds": {
+        "named": 0.30464683300000006,
+        "flat": 0.0503340419999998,
+        "named_evidence": 0.32155233400000016,
+        "flat_evidence": 0.0722967080000001
+      },
+      "matcher_speedup": 6.052500870087113,
+      "evidence_speedup": 4.44767601313188,
+      "all_line_names_equal": true,
+      "full_ranked_evidence_equal": true,
+      "evidence_sha256": "9f3d6dfecbb343163e9ca9efaadc7a8929e463fb7123ffa132fe53f18ee6102f"
+    }
+  ],
+  "cache": "CacheInfo(hits=103530, misses=1716, maxsize=256, currsize=256)"
+}

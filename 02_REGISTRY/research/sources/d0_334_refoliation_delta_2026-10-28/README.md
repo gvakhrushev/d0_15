@@ -1,0 +1,11 @@
+# PR #334 refoliation-closure delta: root cut versus geometric closure
+
+This folder preserves the four files added to the current #334 head `c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a`, which is four commits ahead of the source snapshot `eebcb5e467742df3e9cf7fa9702042d7294aa742` already integrated above. Upstream file paths, Git blob IDs, byte counts and SHA-256 values are recorded in [MANIFEST.json](MANIFEST.json); the copies under `upstream/` are byte-identical to the files served by GitHub at that head.
+
+This result composes the previously integrated moving-cut source with a conditional root cut versus geometric closure calculation. Given a local canonical 3-metric/momentum sector, two scalar fields, the declared curvature potential and ultralocal kinetic class, and the strong hypersurface-deformation algebra for arbitrary lapse functions before imposing constraints, it derives the DeWitt gravitational kinetic term and the matched scalar kinetic structure. For the displayed constant-coefficient family the exact bracket requires `ab=1`, `lambda=1/2`, and `CD=I`. Legendre elimination yields a full Einstein-scalar/sigma-model action inside those assumptions.
+
+This does not construct the D0 symplectic form, native lapse generators, local continuum sector, or controlled bracket limit. It does not prove the premises arise from the original D0 execution. No Lean, original READY/full42 replay, scientific acceptance, or GR closure is claimed. The result keeps `GR_closed=false`.
+
+The source proof's §5 repeats the trace-coefficient (`lambda`) witness bullet once; its checker/result contain the three distinct intended witnesses (trace coefficient, gravity coefficient, matter matrix) and a separate quartic negative control. This is an editorial duplication, not an additional independent witness.
+
+The original PR #334 reported no GitHub CI checks at the time of review. The local replay in [replay/receipt.json](replay/receipt.json) ran the pinned Python/SymPy/NumPy versions and CPU PyTorch 2.10.0 in normal and optimized modes. Those outputs are byte-identical to each other and agree with the published parsed result within `1e-12` (maximum absolute float difference `7.22e-16`); source and replay bytes are separate.

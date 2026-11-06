@@ -1,0 +1,8 @@
+{
+  "checker_cwd": "isolated temporary root with only pinned source memo and checker inputs",
+  "normal_optimized_byte_identical": true,
+  "python": "3.9.6",
+  "python_executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "stderr_bytes_each": 0,
+  "sympy": "1.14.0"
+}

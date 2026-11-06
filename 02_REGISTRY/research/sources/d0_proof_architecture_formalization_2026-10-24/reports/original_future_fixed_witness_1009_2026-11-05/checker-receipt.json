@@ -1,0 +1,14 @@
+{
+  "checker_git_blob": "dd5ed4b31102cfab8209230b0791efefe5a48da3",
+  "checker_process_exit": 0,
+  "checker_sha256_executed_bytes": "bf097b6b5f04b0414dcace39bf31a1ffcf14a9783a4359ed3b672c7df00923d0",
+  "checker_sha256_git_blob_bytes": "dc54ba50af98cdec3dda82fad5ed9ac9a4de5495a98c5cde28ca4732abdfb426",
+  "checker_stdout": {
+    "reduced_det": 219,
+    "status": "success"
+  },
+  "input_git_tree": "5ad60febadf4ea987f66f2c9e7351bf0c65247e2",
+  "line_endings": "Executed working-copy CRLF bytes normalize to the identified Git LF blob.",
+  "metadata_sha256": "3397953e4f86ec5073439a470d0262d288a4cfed2f41920f6fe6db38f382e2a9",
+  "scope": "Independent saved-matrix arithmetic and elimination replay. No source re-execution, Lean proof, or physical admission."
+}

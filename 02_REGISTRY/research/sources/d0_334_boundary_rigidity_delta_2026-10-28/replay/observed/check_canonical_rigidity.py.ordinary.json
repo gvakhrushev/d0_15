@@ -1,0 +1,28 @@
+{
+  "GR_closed": false,
+  "native_D0_phase_space_constructed": false,
+  "scope": "conditional continuum canonical metric class; no native D0 bracket constructed",
+  "status": "PASS_EXACT_CANONICAL_AND_SCALAR_RIGIDITY_CONTROLS",
+  "sympy_version": "1.14.0",
+  "tests": [
+    "Ricci principal lapse contraction",
+    "symmetric output",
+    "selfadjoint Cz",
+    "identity evaluation",
+    "injective Z reconstruction",
+    "DeWitt Hessian composition",
+    "six-coordinate Frobenius adjoint convention",
+    "full six-by-six principal composition",
+    "trace drift completion",
+    "six Ricci components realized",
+    "Ricci-square hostile control",
+    "R-square anomaly coefficient",
+    "full scalar-gradient flux and off-diagonal factor",
+    "reciprocal scalar momentum source",
+    "full two-scalar Hessian reciprocity",
+    "nonlinear separated gradient anomaly",
+    "nonlinear separated gradient defect is nonzero",
+    "nonseparable exact HDA matter control",
+    "nonseparable control is actually mixed"
+  ]
+}

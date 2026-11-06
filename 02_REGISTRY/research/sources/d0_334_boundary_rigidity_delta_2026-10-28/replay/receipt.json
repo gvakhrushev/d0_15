@@ -1,0 +1,124 @@
+{
+  "schema": "d0-local-source-replay-v1",
+  "source_commit": "c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6",
+  "python": "3.13.14 (main, Jul 18 2026, 16:56:45) [Clang 22.1.3 ]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "torch": "2.10.0"
+  },
+  "checks": [
+    {
+      "script": "check_cut_boundary.py",
+      "status": "PASS",
+      "scope": "finite original-return endpoint mixed Hessian, not physical admission or GR",
+      "published_result": "CUT_RESULT.json",
+      "local_max_abs_numeric_difference": 3.488720423661107e-11,
+      "modes": [
+        {
+          "mode": "ordinary",
+          "exit_code": 0,
+          "stdout_sha256": "88d27e591f0174150bc29140f71e18115c5b8b57463d7e358b4096c6c21031a4",
+          "matches_published_run_log": false,
+          "matches_published_result_bytes": false,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "stdout_sha256": "88d27e591f0174150bc29140f71e18115c5b8b57463d7e358b4096c6c21031a4",
+          "matches_published_run_log": false,
+          "matches_published_result_bytes": false,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        }
+      ]
+    },
+    {
+      "script": "check_full_boundary_source.py",
+      "status": "PASS",
+      "scope": "full original heat Hessian and moving-cut terminal covector, exact word-adjoint chain; no physical HDA or GR claim",
+      "published_result": "FULL_SOURCE_RESULT.json",
+      "local_max_abs_numeric_difference": 2.749722671779864e-11,
+      "modes": [
+        {
+          "mode": "ordinary",
+          "exit_code": 0,
+          "stdout_sha256": "28d78535f8d961214c2dbc6d4b9c6d2fd018661c1098941ee05b02cd5c78d7fe",
+          "matches_published_run_log": false,
+          "matches_published_result_bytes": false,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "stdout_sha256": "28d78535f8d961214c2dbc6d4b9c6d2fd018661c1098941ee05b02cd5c78d7fe",
+          "matches_published_run_log": false,
+          "matches_published_result_bytes": false,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        }
+      ]
+    },
+    {
+      "script": "check_canonical_rigidity.py",
+      "status": "PASS_EXACT_CANONICAL_AND_SCALAR_RIGIDITY_CONTROLS",
+      "scope": "conditional continuum canonical metric class; no native D0 bracket constructed",
+      "published_result": "CLASSIFICATION_RESULT.json",
+      "local_max_abs_numeric_difference": 0.0,
+      "modes": [
+        {
+          "mode": "ordinary",
+          "exit_code": 0,
+          "stdout_sha256": "911f80cd5a1e06592ac4a24b98f281ff937ab6a4f0a287c254875a75f4a386e6",
+          "matches_published_run_log": true,
+          "matches_published_result_bytes": true,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "stdout_sha256": "911f80cd5a1e06592ac4a24b98f281ff937ab6a4f0a287c254875a75f4a386e6",
+          "matches_published_run_log": true,
+          "matches_published_result_bytes": true,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        }
+      ]
+    },
+    {
+      "script": "check_root_boundary.py",
+      "status": "PASS_ROOT_HESSIAN_AND_CONDITIONAL_BOUNDARY_REDUCTION",
+      "scope": "full spectral formula; structural matrix charts, not original D0 causal boundary",
+      "published_result": "result.json",
+      "local_max_abs_numeric_difference": 2.5264550396197905e-08,
+      "modes": [
+        {
+          "mode": "ordinary",
+          "exit_code": 0,
+          "stdout_sha256": "0689eeedad8a60ca46a38ae51aafd480b6e175d683a4dc073096cefc6b66b17e",
+          "matches_published_run_log": false,
+          "matches_published_result_bytes": false,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        },
+        {
+          "mode": "optimized",
+          "exit_code": 0,
+          "stdout_sha256": "0689eeedad8a60ca46a38ae51aafd480b6e175d683a4dc073096cefc6b66b17e",
+          "matches_published_run_log": false,
+          "matches_published_result_bytes": false,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_bytes": 0
+        }
+      ]
+    }
+  ],
+  "status": "PASS_ALL_FOUR_CHECKERS_NORMAL_AND_OPTIMIZED",
+  "scope": "bounded exact/symbolic and structural finite-matrix controls only; no full42 replay, actual D0 causal boundary, Lean, physical admission, scientific acceptance, or GR closure"
+}

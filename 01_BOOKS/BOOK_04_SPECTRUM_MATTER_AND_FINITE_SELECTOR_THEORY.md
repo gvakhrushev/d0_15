@@ -2110,6 +2110,90 @@ F_E=P_EU_E^\dagger Q_EU_EP_E,
 \operatorname{Tr}(F_E)=\frac{359}{\varphi^2}-\varphi^{-5}.
 \]
 The first term is the edge-channel phase-return contribution and the second term is the torus-boundary leakage contribution. This is a coefficient-origin operator target; QED running and external numerical comparison are passport layers.
+## 04.25 Finite CAR matter: covariance, source and retained records
+
+The finite matter program now includes an explicit distinction between a
+representation, its covariant change, and the complete source that enters
+the field equations. The four-mode CAR carrier has Hilbert dimension 16;
+its algebraic relations and finite spectra are useful inputs. They do not
+by themselves choose a material action, a physical Hodge map or the price
+of its preparation and retained record.
+
+### 04.25.1 What the moving matter calculus establishes
+
+The following registered owners describe the available finite calculus and
+the precise conclusions needed by later source applications.
+
+| Owner | Established content and retained premise |
+|---|---|
+| `D0-PRIMAL-DUAL-MOVING-ACTION-001` | A perfect pairing forces the dual of a supplied primal equivalence; in dot-product coordinates it is inverse transpose. Moving a supplied Hodge map covariantly is not a selection of that map. |
+| `D0-MOVING-D-PARENT-WARD-001` | The mixed parent action and constraint transform with every differential and constitutive product-rule term retained. A cancelled parent scalar does not remove independent connection/constitutive Euler equations or establish a conserved physical stress. |
+| `D0-A4D-SECOND-ORDER-ENERGY-COVARIANCE-001` | Exact product, inverse and chain-rule identities describe the full two-jet. An exponential acceleration is one specialization; equal flat values and first jets can still have different second-order reference weights. No unique constitutive Hessian follows. |
+| `D0-A4D-CROSSED-PATH-ALGEBRA-BOUNDARY-001` | Bare spatial words are not closed under the stated vertical action; the available first jet lies in an additive word sector, while horizontal composition and the flat first jet do not fix its quadratic dressing. |
+| `D0-A4D-CROSSED-DERIVATION-INTEGRABILITY-001` | For the specified scalar first-jet law at period at least three, preserving cycle and commutation relations forces zero cycle periods and the plaquette condition. The owned pure-gauge input satisfies them. Their conjunction is not promoted to a general exactness theorem. |
+
+These statements are fixed by the corresponding rows in
+[`claims.csv`](../02_REGISTRY/claims.csv) and the actual declarations, including
+[`ArchivePrimalDualMovingAction`](../03_FORMALIZATION/D0/Geometry/ArchivePrimalDualMovingAction.lean),
+[`A4DPathWordParentWard`](../03_FORMALIZATION/D0/Geometry/A4DPathWordParentWard.lean)
+and [`A4DCrossedDerivationIntegrability`](../03_FORMALIZATION/D0/Geometry/A4DCrossedDerivationIntegrability.lean).
+Their common lesson is constructive: one can transport a supplied field and
+differentiate its action without dropping terms. The further physical
+application must identify the supplied pairing, constitutive map, variation
+image and matter price with the same admitted execution used by gravity.
+Book 03 §03.27 gives the complete source interface; Book 07 keeps its
+independent field equations and source normalization.
+
+### 04.25.2 A simple scalar spectrum does not erase the future matter carrier
+
+The research [original CAR16 self-reading calculation](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_CAR16_TWO_EIGENVALUE_SELF_READING_AND_GR_SOURCE_GATE_2026_10_27.md),
+§§1–3, reduces the literal zero-Walsh-row matrix on the specified regular
+two-parameter CAR/Julia chart. For `A=N_0* N_0>0`, it gives
+
+\[
+A^2-sA+tI_{16}=0,\qquad \operatorname{Tr}A=8s,
+\qquad
+\rho_A=\frac{A^{-1}}{\operatorname{Tr}A^{-1}}
+=\frac18I_{16}-\frac{A}{\operatorname{Tr}A}.
+\]
+
+For distinct roots the two eigenvalues have multiplicity eight. This is an
+exact reduction of the stated source matrix and its stationary density, not
+a two-dimensional replacement of the physical DATA system or a map for all
+42 geometric/matter components at each site. Other admitted future
+observations can read distinctions that this one scalar spectrum omits.
+
+The [original-instrument resource comparison](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_FULL128_EXACT_CHOIRANK18_QUANTUM_VS_RECORDED_RESOURCE_2026_10_26.md),
+§§1–7, makes several otherwise easily conflated dimensions explicit:
+
+| Mathematical interface | Reported exact size and scope |
+|---|---|
+| Faithful coherent representation of the complete original DATA future-test algebra | Minimum Hilbert dimension 16, attained by the two eight-dimensional parity sectors; this is four fermionic modes, not 16 qubits. |
+| Original one-tick channel with its outcome unobserved | Choi rank 18 at the certified regular fixture, with the stated local regular-neighborhood scope. |
+| Recorded 24-class projective-ray instrument | Choi rank 24, with the exact conditional fine-label law retained for reconstruction. |
+| Recorded original fine instrument | Choi rank 64 at the stated fixture: 64 live labels within the literal 128-symbol alphabet; dark labels do not add Choi rank. |
+| Three genuine no-reset ticks of the unobserved channel | Kraus operator span and Choi rank 256 at the certified fixture. The two-tick value 144 is a proved lower bound, not a characteristic-zero upper bound. |
+
+These refer to different maps and tasks. An environment of minimum dimension
+18 for the unobserved channel is not the complete physical fine record, and
+a 24-class predictor does not execute the original fine apparatus at zero
+extra cost. The [24-ray hybrid construction](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_24_RAY_HYBRID_PARITY_FUTURE_COMPLETE_PREDICTOR_2026_10_26.md)
+preserves chronological conditional DATA/oldRIGHT states and reconstructs
+fine labels with their input-independent conditional weights. Its classical
+parity flag plus eight-level conditional quantum state has a different
+representation interface from a faithful unital coherent representation;
+it does not contradict the dimension-16 bound.
+
+Book 06 develops the future-test algebra, record distinctions and the fixed
+256-dimensional calculation of coherent archive entropy. A spectral or
+predictive reduction never authorizes erasing an actual retained record,
+resetting DATA between ticks or dropping preparation/clock charges. The
+research results in this subsection are pinned to published Draft PR #334
+at `eebcb5e467742df3e9cf7fa9702042d7294aa742`; they are explanatory research
+intake, not newly imported Lean owners or independently accepted physical
+claims. The complete physical price, admitted field map and general GR
+selection retain their open obligations.
+
 ## 04.v15 Active standard-language contract
 
 _This section is the active standard-language layer of BOOK_04 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._

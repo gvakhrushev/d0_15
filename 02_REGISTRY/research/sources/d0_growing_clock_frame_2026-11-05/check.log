@@ -1,0 +1,40 @@
+D0.Algebra.GrowingClockFrame.frame_projector_idempotent.{u_1, u_2} {κ : Type u_1} {ι : Type u_2} [Fintype κ]
+  [DecidableEq κ] [Fintype ι] [DecidableEq ι] {n : ℕ} (J : Fin (n + 1) → Matrix κ ι ℂ)
+  (hJ : ∀ (i j : Fin (n + 1)), (J i).conjTranspose * J j = if i = j then 1 else 0) :
+  D0.Algebra.GrowingClockFrame.frameProjector J * D0.Algebra.GrowingClockFrame.frameProjector J =
+    D0.Algebra.GrowingClockFrame.frameProjector J
+D0.Algebra.GrowingClockFrame.final_return_projection.{u_1, u_2} {κ : Type u_1} {ι : Type u_2} [Fintype κ]
+  [DecidableEq κ] [Fintype ι] [DecidableEq ι] {n : ℕ} (J : Fin (n + 1) → Matrix κ ι ℂ)
+  (hJ : ∀ (i j : Fin (n + 1)), (J i).conjTranspose * J j = if i = j then 1 else 0) (T : Matrix κ κ ℂ)
+  (hT : T.conjTranspose * T = 1) (hstep : ∀ (j : Fin n), T * J j.castSucc = J j.succ) :
+  D0.Algebra.GrowingClockFrame.frameProjector J * T * J (Fin.last n) =
+    J 0 * D0.Algebra.GrowingClockFrame.frameReturn J T
+D0.Algebra.GrowingClockFrame.cut_supported_on_final.{u_1, u_2} {κ : Type u_1} {ι : Type u_2} [Fintype κ] [DecidableEq κ]
+  [Fintype ι] [DecidableEq ι] {n : ℕ} (J : Fin (n + 1) → Matrix κ ι ℂ)
+  (hJ : ∀ (i j : Fin (n + 1)), (J i).conjTranspose * J j = if i = j then 1 else 0) (T : Matrix κ κ ℂ)
+  (hstep : ∀ (j : Fin n), T * J j.castSucc = J j.succ) :
+  D0.Algebra.MovingProjectorTransport.cut (D0.Algebra.GrowingClockFrame.frameProjector J) T =
+    D0.Algebra.MovingProjectorTransport.cut (D0.Algebra.GrowingClockFrame.frameProjector J) T * J (Fin.last n) *
+      (J (Fin.last n)).conjTranspose
+D0.Algebra.GrowingClockFrame.clock_cut_gram_factorization.{u_1, u_2} {κ : Type u_1} {ι : Type u_2} [Fintype κ]
+  [DecidableEq κ] [Fintype ι] [DecidableEq ι] {n : ℕ} (J : Fin (n + 1) → Matrix κ ι ℂ)
+  (hJ : ∀ (i j : Fin (n + 1)), (J i).conjTranspose * J j = if i = j then 1 else 0) (T : Matrix κ κ ℂ)
+  (hT : T.conjTranspose * T = 1) (hstep : ∀ (j : Fin n), T * J j.castSucc = J j.succ) :
+  have P := D0.Algebra.GrowingClockFrame.frameProjector J;
+  have C := D0.Algebra.GrowingClockFrame.frameReturn J T;
+  have Jf := J (Fin.last n);
+  (D0.Algebra.MovingProjectorTransport.cut P T).conjTranspose * D0.Algebra.MovingProjectorTransport.cut P T =
+    Jf * (1 - C.conjTranspose * C) * Jf.conjTranspose
+D0.Algebra.GrowingClockFrame.clock_cut_determinant.{u_1, u_2} {κ : Type u_1} {ι : Type u_2} [Fintype κ] [DecidableEq κ]
+  [Fintype ι] [DecidableEq ι] {n : ℕ} (J : Fin (n + 1) → Matrix κ ι ℂ)
+  (hJ : ∀ (i j : Fin (n + 1)), (J i).conjTranspose * J j = if i = j then 1 else 0) (T : Matrix κ κ ℂ)
+  (hT : T.conjTranspose * T = 1) (hstep : ∀ (j : Fin n), T * J j.castSucc = J j.succ) (z : ℂ) :
+  have P := D0.Algebra.GrowingClockFrame.frameProjector J;
+  have C := D0.Algebra.GrowingClockFrame.frameReturn J T;
+  (1 -
+        z •
+          ((D0.Algebra.MovingProjectorTransport.cut P T).conjTranspose *
+            D0.Algebra.MovingProjectorTransport.cut P T)).det =
+    ((1 - z) • 1 + z • (C.conjTranspose * C)).det
+'D0.Algebra.GrowingClockFrame.clock_cut_gram_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Algebra.GrowingClockFrame.clock_cut_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]

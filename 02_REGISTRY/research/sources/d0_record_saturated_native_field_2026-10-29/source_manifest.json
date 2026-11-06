@@ -1,0 +1,87 @@
+{
+  "input": {
+    "commit": "4b30fcb4dc743e7a04415c9701aae19a847e8dab",
+    "is_ancestor_of_owner_commit": true,
+    "meaning": "checker PIN: fixed Golden/native16 source configuration"
+  },
+  "integrated_artifacts": {
+    "PROOF_RU.md": {
+      "bytes": 4916,
+      "sha256": "dcfff36ebb261bf29a29de3b19f598175187c647591ef528418725e2b2a9752b"
+    },
+    "check_record_saturated_field.py": {
+      "bytes": 20330,
+      "sha256": "618d1d6267739e7468fea7c0108be22cff448c8d9abac28110081854ca502b65"
+    },
+    "programmes.json": {
+      "bytes": 85692,
+      "sha256": "8942154529f65a90ebe2de418ca374baa31d19b84509ffeda21de3d1ab624ef3"
+    },
+    "replay/optimized_stderr.log": {
+      "bytes": 13724,
+      "sha256": "604f2df54d4689f5a0a9dcb343ff79ad979abe942fdd547d5209b9c4fe33794c"
+    },
+    "replay/optimized_stdout.json": {
+      "bytes": 244,
+      "sha256": "cfc59207acaee0e86ef6c5fea642c0475035946ebf83ca0aae0d000f7d988334"
+    },
+    "replay/ordinary_stderr.log": {
+      "bytes": 13724,
+      "sha256": "604f2df54d4689f5a0a9dcb343ff79ad979abe942fdd547d5209b9c4fe33794c"
+    },
+    "replay/ordinary_stdout.json": {
+      "bytes": 244,
+      "sha256": "cfc59207acaee0e86ef6c5fea642c0475035946ebf83ca0aae0d000f7d988334"
+    },
+    "replay/repeat_stderr.log": {
+      "bytes": 13724,
+      "sha256": "604f2df54d4689f5a0a9dcb343ff79ad979abe942fdd547d5209b9c4fe33794c"
+    },
+    "replay/repeat_stdout.json": {
+      "bytes": 244,
+      "sha256": "cfc59207acaee0e86ef6c5fea642c0475035946ebf83ca0aae0d000f7d988334"
+    },
+    "replay_manifest.json": {
+      "bytes": 4310,
+      "sha256": "e2712570a5bd2fae673035615bd0d5b16b8b93acdc8141aaf9b57633d606b4e2"
+    },
+    "replay_record_saturated_field.py": {
+      "bytes": 11801,
+      "sha256": "cf1b39aac7d3cd9e38523fb308143c86131a6d40eb72e9deb99cefa6e2221b30"
+    },
+    "result.json": {
+      "bytes": 37597,
+      "sha256": "420600b819243cc02bab758b03c77d211f5f1ccaf4ac481027fa4cad901bb8f4"
+    }
+  },
+  "replay": {
+    "GR_closed": false,
+    "manifest": "replay_manifest.json",
+    "status": "PASS_WITH_CAPTURED_RUNTIME_WARNINGS",
+    "warning_resolved": false
+  },
+  "schema": "d0-record-saturated-native-field-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "parent_substitution": "A fixed-Golden, retained-record finite stencil compares the complete native source against the declared 42 pointwise Palatini-coordinate derivatives for one configured field point.",
+    "phase": "native realization supporting calculation",
+    "remaining": [
+      "resolve or reproduce without the captured local NumPy RuntimeWarnings",
+      "derive the admitted physical variation domain and runtime field compiler",
+      "prove all42 mesh/root and refinement transport",
+      "bind complete selected Book03 Cost-Info, clock and boundary equations",
+      "Lean formalization and CI",
+      "physical selection and GR closure"
+    ]
+  },
+  "upstream": {
+    "blob": "81d78ce6ebcc3e9d98bceaacbd61ed0328943da9",
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "commit": "418afd58c741713a60036a90f8246060d774fd56",
+    "commit_title": "test(#334): compile actual record-saturated Golden words and bound all42 source stencils",
+    "path": "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py",
+    "pull_request": 334,
+    "sha256": "618d1d6267739e7468fea7c0108be22cff448c8d9abac28110081854ca502b65",
+    "upstream_result_receipt_in_commit": false
+  }
+}

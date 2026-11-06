@@ -1,0 +1,46 @@
+D0.Foundation.VerificationCore.CodePresentation (Symbol Object : Type) [LinearOrder Symbol] : Type
+D0.Foundation.VerificationCore.CodePresentation.decode_encode {Symbol Object : Type} [LinearOrder Symbol]
+  (self : CodePresentation Symbol Object) (x : Object) : self.decode (self.encode x) = some x
+D0.Foundation.VerificationCore.CodePresentation.encode_injective {Symbol Object : Type} [LinearOrder Symbol]
+  (K : CodePresentation Symbol Object) : Function.Injective K.encode
+D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E)
+  (s t : F.State) : W.dmin s = W.dmin t ↔ F.profile s = F.profile t
+D0.Foundation.VerificationCore.SigmaWitness.archiveCode_eq_iff
+  {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E)
+  (s t : F.State) (l l' : E.protocol.Line) :
+  W.archiveCode (s, l) = W.archiveCode (t, l') ↔ F.profile s = F.profile t ∧ l = l'
+'D0.Foundation.VerificationCore.CodePresentation.encode_injective' depends on axioms: [propext]
+'D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.VerificationCore.SigmaWitness.archiveCode_eq_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+theorem D0.Foundation.VerificationCore.CodePresentation.encode_injective : ∀ {Symbol Object : Type}
+  [inst : LinearOrder Symbol] (K : CodePresentation Symbol Object), Function.Injective K.encode :=
+fun {Symbol Object} [LinearOrder Symbol] K ⦃x y⦄ h =>
+  have hd := congrArg K.decode h;
+  Option.some.inj
+    (Eq.mp (congrArg (fun _a => some x = _a) (K.decode_encode y))
+      (Eq.mp (congrArg (fun _a => _a = K.decode (K.encode y)) (K.decode_encode x)) hd))
+theorem D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff : ∀
+  {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E)
+  (s t : F.State), W.dmin s = W.dmin t ↔ F.profile s = F.profile t :=
+fun {F} {E} W s t =>
+  { mp := fun h => (representedState_eq_iff E s t).mp (Sum.inl.inj (CodePresentation.encode_injective W.coding h)),
+    mpr := fun h => congrArg (fun p => W.coding.encode (Sum.inl p)) ((representedState_eq_iff E s t).mpr h) }
+theorem D0.Foundation.VerificationCore.SigmaWitness.archiveCode_eq_iff : ∀
+  {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E)
+  (s t : F.State) (l l' : E.protocol.Line),
+  W.archiveCode (s, l) = W.archiveCode (t, l') ↔ F.profile s = F.profile t ∧ l = l' :=
+fun {F} {E} W s t l l' =>
+  {
+    mp := fun h =>
+      have hp := Sum.inr.inj (CodePresentation.encode_injective W.coding h);
+      ⟨(representedState_eq_iff E s t).mp (congrArg Prod.fst hp), congrArg Prod.snd hp⟩,
+    mpr := fun a =>
+      And.casesOn a fun hp hl =>
+        have hs := (representedState_eq_iff E s t).mpr hp;
+        congrArg (fun p => W.coding.encode (Sum.inr p)) (Prod.ext hs hl) }

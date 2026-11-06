@@ -1,0 +1,188 @@
+{
+  "schema": "d0-native-pairing-current-compatibility-v1",
+  "status": "PASS",
+  "scope": "Current Lean compatibility only; this does not validate the historical overlay or accept the scientific source-to-claim relation.",
+  "git_snapshot": "5873fad110e8b3c8c874c510b0d50f0ce0c101f5",
+  "worktree_dirty_before": false,
+  "worktree_dirty_after": false,
+  "git_status_sha256_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "git_status_sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_digest": "40b8842e1a891f8f8266f979db48f5e7dff205e7a69b2340f1090f6a7d0b9072",
+  "source_digest_before_build": "40b8842e1a891f8f8266f979db48f5e7dff205e7a69b2340f1090f6a7d0b9072",
+  "source_digest_after_build": "40b8842e1a891f8f8266f979db48f5e7dff205e7a69b2340f1090f6a7d0b9072",
+  "source_digest_after_query": "40b8842e1a891f8f8266f979db48f5e7dff205e7a69b2340f1090f6a7d0b9072",
+  "source_digest_scope": "Repository Lean sources, Lake configuration, manifest and toolchain as defined by lean_task_build.source_digest; package checkouts are excluded.",
+  "verifier_sha256": "ceaee2ce25c1099fafaecb364d9e4f78bc645ed93bd2f52f80c2d981969862f1",
+  "lean_build_helper_sha256": "2d4a7c7dae6f90b2fba97dddf76b5cd44bc5bc24f75e07c503ca8e24d8cbdcb3",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "lean_version": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+  "capsule_path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.lean",
+  "capsule_sha256": "65d1aff45f17907fcacdcbdc6da889bc0e44b3982b1590a5254f2e8e5ad38d10",
+  "build_command": [
+    "lake",
+    "build",
+    "D0.Geometry.ArchiveMetricMeasureHodgeLift",
+    "D0.Geometry.ArchiveRefinementHodgeWeights"
+  ],
+  "build_exit_code": 0,
+  "build_stdout_sha256": "6aa11b941e330fa832f706ba64a724693dbb25467e5dc31d4706e2a943025ad5",
+  "build_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "query_command": [
+    "lake",
+    "env",
+    "lean",
+    "/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.lean"
+  ],
+  "query_exit_code": 0,
+  "lean_stdout": "def D0.Geometry.hodgeMetricMeasureWeight : ℕ → ℝ → ℝ → ℝ :=\nfun k mu prod_c => mu ^ D0.Geometry.muExponent k * prod_c\ndef D0.Geometry.hodgeGramTraceDegree : ℕ → ℕ :=\nfun k => 3 ^ (4 - k)\ndef D0.Geometry.totalHodgeGramTraceSum : ℕ :=\n1 * 81 + 4 * 27 + 6 * 9 + 4 * 3 + 1 * 1\ntheorem D0.Geometry.archive_metric_measure_hodge_lift_owner : ∀ (mu c_r : ℝ),\n  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4 :=\nfun mu c_r =>\n  ⟨D0.Geometry.hodge_weight_0_eq_mu mu,\n    ⟨D0.Geometry.hodge_weight_1_eq_conductance mu c_r, ⟨D0.Geometry.card_archive_fock_state, D0.card_role⟩⟩⟩\ntheorem D0.Geometry.archive_refinement_hodge_weights_owner : D0.Geometry.hodgeGramTraceDegree 0 = 81 ∧\n  D0.Geometry.hodgeGramTraceDegree 4 = 1 ∧ D0.Geometry.totalHodgeGramTraceSum = 256 ∧ Fintype.card D0.Role = 4 :=\n⟨rfl, ⟨rfl, ⟨D0.Geometry.total_hodge_gram_trace_sum_eq, D0.card_role⟩⟩⟩\nD0.Geometry.archive_metric_measure_hodge_lift_owner (mu c_r : ℝ) :\n  D0.Geometry.hodgeMetricMeasureWeight 0 mu 1 = mu ∧\n    D0.Geometry.hodgeMetricMeasureWeight 1 mu c_r = c_r ∧\n      Fintype.card D0.Geometry.CubicalCellType = 16 ∧ Fintype.card D0.Role = 4\nD0.Geometry.archive_refinement_hodge_weights_owner :\n  D0.Geometry.hodgeGramTraceDegree 0 = 81 ∧\n    D0.Geometry.hodgeGramTraceDegree 4 = 1 ∧ D0.Geometry.totalHodgeGramTraceSum = 256 ∧ Fintype.card D0.Role = 4\nD0.Research.PairingRefinementSource.weighted_compressed_square.{u_1, u_2} {ι : Type u_1} {ν : Type u_2} [Fintype ι]\n  [Fintype ν] [DecidableEq ι] [DecidableEq ν] (J : Matrix ν ι ℝ) (C : Matrix ι ν ℝ) (D Gf Gfi : Matrix ν ν ℝ)\n  (Gci Dc : Matrix ι ι ℝ) (hCJ : C * J = 1) (hf : Gf * Gfi = 1)\n  (hC : C = D0.Research.PairingRefinementSource.rectAdjoint Gci Gf J) (hD : Gfi * D.transpose * Gf = D)\n  (hQ : Gfi * (1 - J * C).transpose * Gf = 1 - J * C) (hcomp : C * D * J = Dc) :\n  C * (D * D) * J =\n    Dc * Dc + D0.Research.PairingRefinementSource.rectAdjoint Gci Gf ((1 - J * C) * D * J) * ((1 - J * C) * D * J)\nD0.Research.PairingRefinementSource.orthogonal_square_intertwining_iff.{u_1, u_2} {ι : Type u_1} {ν : Type u_2}\n  [Fintype ι] [Fintype ν] [DecidableEq ι] [DecidableEq ν] (J : Matrix ν ι ℝ) (D : Matrix ν ν ℝ)\n  (hJ : J.transpose * J = 1) (hD : D.transpose = D) :\n  D * D * J = J * (J.transpose * D * J * (J.transpose * D * J)) ↔ D * J = J * (J.transpose * D * J)\nD0.Research.PairingRefinementSource.rectangular_adjoint_first_jet.{u_1, u_2} {ι : Type u_1} {ν : Type u_2} [Fintype ι]\n  [Fintype ν] [DecidableEq ι] [DecidableEq ν] (R E : Matrix ν ι ℝ) (Gci Gcdot : Matrix ι ι ℝ)\n  (Gf Gfi Gfdot : Matrix ν ν ℝ) (hi : Gf * Gfi = 1) :\n  -Gci * Gcdot * Gci * R.transpose * Gf + Gci * E.transpose * Gf + Gci * R.transpose * Gfdot =\n    D0.Research.PairingRefinementSource.rectAdjoint Gci Gf E -\n        Gci * Gcdot * D0.Research.PairingRefinementSource.rectAdjoint Gci Gf R +\n      D0.Research.PairingRefinementSource.rectAdjoint Gci Gf R * (Gfi * Gfdot)\nD0.Research.PairingRefinementSource.rectangular_balanced_adjoint.{u_1, u_2} {ι : Type u_1} {ν : Type u_2} [Fintype ι]\n  [Fintype ν] [DecidableEq ι] [DecidableEq ν] (R E : Matrix ν ι ℝ) (Gci Kc : Matrix ι ι ℝ) (Gf Kf : Matrix ν ν ℝ)\n  (hc : Gci * Kc.transpose = Kc * Gci) (hf : Kf.transpose * Gf = Gf * Kf) :\n  D0.Research.PairingRefinementSource.rectAdjoint Gci Gf (E + E + Kf * R - R * Kc) =\n    D0.Research.PairingRefinementSource.rectAdjoint Gci Gf E +\n          D0.Research.PairingRefinementSource.rectAdjoint Gci Gf E +\n        D0.Research.PairingRefinementSource.rectAdjoint Gci Gf R * Kf -\n      Kc * D0.Research.PairingRefinementSource.rectAdjoint Gci Gf R\n'D0.Research.PairingRefinementSource.isometric_readback_left_inverse' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.complement_projection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Research.PairingRefinementSource.chain_adjoint_readback' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Research.PairingRefinementSource.adjoint_compression' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Research.PairingRefinementSource.dirac_compression' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Research.PairingRefinementSource.leakage_is_intertwining_defect' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.compressed_square_reaction' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.compressed_square_complement' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.leakage_weighted_adjoint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.leakage_zero_iff_intertwining' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.weighted_complement_adjoint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.weighted_compressed_square' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.rectangular_adjoint_first_jet' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.reaction_first_jet' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Research.PairingRefinementSource.reaction_twice_balanced' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Research.PairingRefinementSource.rectangular_balanced_adjoint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.moving_complement_jet' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Research.PairingRefinementSource.rectangular_adjoint_basis_covariance' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.reaction_basis_covariance' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.reaction_diagonal_nonnegative' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.reaction_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Research.PairingRefinementSource.orthogonal_compressed_square' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.orthogonal_square_intertwining_iff' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.source_covector_correction' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.symmetric_reaction_contraction' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'D0.Research.PairingRefinementSource.source_internal_ward' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Geometry.archive_metric_measure_hodge_lift_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\n'D0.Geometry.archive_refinement_hodge_weights_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "lean_stdout_sha256": "d28cdf589d43f219a018257bd8fc51ce5591661acc967f75e579040774b0485c",
+  "lean_stderr": "",
+  "lean_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "axioms": {
+    "D0.Research.PairingRefinementSource.isometric_readback_left_inverse": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.complement_projection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.chain_adjoint_readback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.adjoint_compression": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.dirac_compression": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.leakage_is_intertwining_defect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.compressed_square_reaction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.compressed_square_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.leakage_weighted_adjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.leakage_zero_iff_intertwining": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.weighted_complement_adjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.weighted_compressed_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.rectangular_adjoint_first_jet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_first_jet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_twice_balanced": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.rectangular_balanced_adjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.moving_complement_jet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.rectangular_adjoint_basis_covariance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_basis_covariance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_diagonal_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.reaction_zero_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.orthogonal_compressed_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.orthogonal_square_intertwining_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.source_covector_correction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.symmetric_reaction_contraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Research.PairingRefinementSource.source_internal_ward": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.archive_metric_measure_hodge_lift_owner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D0.Geometry.archive_refinement_hodge_weights_owner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

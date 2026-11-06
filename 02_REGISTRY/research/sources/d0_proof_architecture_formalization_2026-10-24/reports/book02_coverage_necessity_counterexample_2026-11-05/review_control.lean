@@ -1,0 +1,17 @@
+import D0.Foundation.NativeCoverageSufficiencyCounterexample
+open D0.Foundation.NativeCoverageSufficiencyCounterexample
+
+#check interpretation
+#check source_run
+#check native_profile_eq_iff_source
+#check native_xor_truth_table
+#check xor_not_single_source_test
+#check no_single_context_coverage
+#check full_equivalence_without_coverage
+#print axioms interpretation
+#print axioms source_run
+#print axioms native_profile_eq_iff_source
+#print axioms native_xor_truth_table
+#print axioms xor_not_single_source_test
+#print axioms no_single_context_coverage
+#print axioms full_equivalence_without_coverage

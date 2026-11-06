@@ -1,0 +1,25 @@
+D0.Foundation.TheoryTransfer.Interpretation.run_commutes
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (w : List F.Action) (s : F.State) :
+  I.stateMap (F.run w s) = G.run (I.compile w) (I.stateMap s)
+D0.Foundation.TheoryTransfer.Interpretation.profile_commutes
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (s : F.State) (w : List F.Action) (t : F.Test) :
+  G.profile (I.stateMap s) (I.compile w) (I.testMap t) = I.outcomeMap (F.profile s w t)
+D0.Foundation.TheoryTransfer.Interpretation.compile_append
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (u v : List F.Action) :
+  I.compile (u ++ v) = I.compile u ++ I.compile v
+D0.Foundation.TheoryTransfer.Interpretation.comp_compile
+  {F G H : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (J : D0.Foundation.TheoryTransfer.Interpretation G H)
+  (w : List F.Action) : (I.comp J).compile w = J.compile (I.compile w)
+D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (s t : F.State) :
+  I.commonExecution.profile (I.stateMap s) = I.commonExecution.profile (I.stateMap t) ↔ F.profile s = F.profile t
+'D0.Foundation.TheoryTransfer.Interpretation.run_commutes' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.profile_commutes' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.compile_append' depends on axioms: [propext]
+'D0.Foundation.TheoryTransfer.Interpretation.comp_compile' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff' depends on axioms: [propext, Quot.sound]

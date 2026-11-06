@@ -1,0 +1,80 @@
+{
+  "GR_closed": false,
+  "environment": {
+    "machine": "arm64",
+    "numpy": "2.0.2",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "scipy": "1.13.1"
+  },
+  "published_comparison": {
+    "comparison_is_receipt_reconciliation_not_a_new_theorem_tolerance": true,
+    "exact_stdout_byte_match": false,
+    "local_value": 6.341593916658894e-13,
+    "maximum_absolute_numeric_difference": 4.652861429477184e-12,
+    "maximum_difference_path": "/whole_word_source/five_point_full_price_error",
+    "nonnumeric_fields_match": true,
+    "numeric_values_differ": 30,
+    "published_result_sha256": "6293f87b9b981d7f71b30bc267c3ef20500a57bc2430a1cb2178f42d6dffa4a1",
+    "published_value": 5.2870208211430736e-12,
+    "structure_match": true
+  },
+  "replay": {
+    "check_count": 578,
+    "local_stdout": {
+      "bytes": 4777,
+      "sha256": "372628ee341f3639d4365303e6a1704dc00787488d499ca6863a0d461f0b1263"
+    },
+    "normal_command": "python3 /tmp/d0_334_stationary_seed_replay/check_seed.py",
+    "normal_optimized_repeat_stdout_byte_identical": true,
+    "optimized_command": "python3 -O /tmp/d0_334_stationary_seed_replay/check_seed.py",
+    "repeat_command": "python3 /tmp/d0_334_stationary_seed_replay/check_seed.py",
+    "status": "PASS_WHOLE_WORD_SOURCE_AND_NATIVE_STATIONARY_SEED"
+  },
+  "schema": "d0-native-stationary-seed-publication-replay-v1",
+  "scope": {
+    "Lean_or_CI_run": false,
+    "full_variation_domain_derived": false,
+    "geometry_source_identified_at_seed": false,
+    "large_7do_preparation_replayed": false,
+    "native_physical_actuation_proved": false,
+    "stationary_minimum_proved": false,
+    "stationary_prefix_removed_only_for_chosen_alternative_initial_execution": true
+  },
+  "sources": {
+    "checker": {
+      "blob": "789dfebea5efa1e0b7fda64dfce8cb8c4ee8797b",
+      "commit": "aeb722a162c008e5e23a7fde39479eb62e3296cf",
+      "path": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/check_seed.py",
+      "sha256": "9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120"
+    },
+    "composition_memo": {
+      "blob": "1766cb44e82a276d14a5546257b85a59beeab506",
+      "commit": "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852",
+      "path": "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+      "sha256": "fc46ba02099953c4e152258f23fadc35ddd7a7eb3b8b35783db8971d821941f1"
+    },
+    "proof": {
+      "blob": "877fcb4c71a0a73afbbaff98e61e655ed88d606a",
+      "commit": "155b909851043762b7a78bb03700571029f96708",
+      "path": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/PROOF_RU.md",
+      "sha256": "140364b73af8263e621c4d0cf009522f9e48a071c02981858d5021ac522f30eb"
+    },
+    "published_result": {
+      "blob": "561f4a3b7a5ce1a058e6b380705e3ea60a96bc7f",
+      "bytes": 4770,
+      "commit": "24ca8e86271c1139e6386387ec1818890fe42549",
+      "path": "02_REGISTRY/research/sources/d0_native_stationary_seed_2026-10-28/result.json",
+      "sha256": "6293f87b9b981d7f71b30bc267c3ef20500a57bc2430a1cb2178f42d6dffa4a1"
+    }
+  },
+  "status": "PASS_LOCAL_REPLAY_REPRODUCED_PUBLISHED_NUMERIC_VARIANCE_RECORDED",
+  "stderr": {
+    "bytes": 10882,
+    "cause": "unresolved; warnings occur in matmul operations",
+    "normal_optimized_repeat_byte_identical": true,
+    "runtime_warning_lines": 78,
+    "sha256": "d6650333b8531faef365283b3d3b161f189d9520664edb1152ff91556d1aa074",
+    "suppressed": false
+  }
+}

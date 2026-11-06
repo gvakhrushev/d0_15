@@ -1,0 +1,91 @@
+{
+  "schema": "d0-pr402-cold-start-refresh-v2",
+  "repository": "gvakhrushev/d0_15",
+  "target_pull_request": 402,
+  "snapshot_commit": "b3c9386221fa7c382ff98479f447e61d70b4c68a",
+  "worktree_dirty": false,
+  "GR_closed": false,
+  "command": "python3 tools/proof_architecture_cold_start.py",
+  "full_output": {
+    "bytes": 25393708,
+    "sha256": "0be645fd64d35d304a565e17d73adcbf36b3b077f127db9287ab583c09c4c8f2",
+    "retained_path_local": "/tmp/d0_pr402_cold_start_2026-11-04_b3c93862.json",
+    "committed": false
+  },
+  "compact_summary": {
+    "path": "cold_start_summary.json",
+    "bytes": 2825869,
+    "sha256": "2f392ff91a0f1ebd583f368bdf01885dafd7e989a80861894a70589e6f0e35c8"
+  },
+  "search": {
+    "window": 18,
+    "cases_found_all_sources": 49,
+    "cases_total": 50,
+    "benchmark_cases_total": 51,
+    "required_source_ref_count": 415,
+    "change_impact_regression": "PASS"
+  },
+  "kappa_owner_delta": {
+    "case_id": "pr334-native-kappa-owner-delta",
+    "exact_owner_commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+    "query_indexes_found": 17,
+    "query_indexes_total": 17,
+    "owner_content_direct_found": 23,
+    "owner_content_required": 67,
+    "owner_content_pinned_loaded_no_content_match": 44,
+    "all_owner_pins_exactly_verified": true,
+    "oversized_owner_file": "pin only; excluded from direct text search"
+  },
+  "owner_pin_test": {
+    "test": "test_pr334_e94_owner_manifest_pins_all_68_changed_paths",
+    "checked_paths": 68,
+    "status": "PASS",
+    "checks": [
+      "commit:path Git blob",
+      "byte count",
+      "SHA-256"
+    ]
+  },
+  "lean": {
+    "narrow_build": "PASS",
+    "final_D0_All": "PASS_EXISTING_EXACT_RECEIPT",
+    "source_sha256": "deb9e9f8d99b486bd1e1a36e2da8c8f79732ba4cc79635348ae617cfee6eb073",
+    "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+    "environment_sha256": "c0db61419aa16f391029b4ce85fed428739da0c9ed3166296772aa22cd86068b",
+    "toolchain": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+    "receipt_path": "lean_build_receipt.json"
+  },
+  "inputs": [
+    {
+      "path": "tools/proof_architecture_cold_start.py",
+      "git_blob": "91340d2bb0db0fbed9eb05653d37fec09c5d3d49",
+      "sha256": "bb13da2c755eea3d2ddcc2bf6891ed5420fff8e08f3f3485f17cee9bbe9222cf",
+      "bytes": 188754
+    },
+    {
+      "path": "tools/proof_architecture.py",
+      "git_blob": "4eb2c8371e0fd2c563e7af0e7f3639c8846788e4",
+      "sha256": "4ef5b51ac318c376c18ccf4c6abb983a3e76e53687d11514cc2cceb4988325b4",
+      "bytes": 162051
+    },
+    {
+      "path": "tools/test_proof_architecture.py",
+      "git_blob": "0d0a53c70c96d0d76efb30d356be038a04ce8a67",
+      "sha256": "31e1803313eb7eb1b867849efc779c109bd4b1949ec8c7cd205ce71236ab648b",
+      "bytes": 437438
+    },
+    {
+      "path": "tools/compact_proof_architecture_cold_start.py",
+      "git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
+      "sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
+      "bytes": 20927
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_owner_delta_2026-11-04_e94e518c/owner_delta_manifest.json",
+      "git_blob": "94aa6c5a991fd3286c48eda99a060e6076cc2859",
+      "sha256": "de40cd7080c37c5adde45df84803b1b42d5be78337cb516f19c94aabbe30fa36",
+      "bytes": 40585
+    }
+  ],
+  "validation_limit": "The compactor preserves and checks the full runner output against this clean snapshot but does not rerun or authenticate the supplied replay. The exact owner pins are separate from direct content retrieval. The final D0.All success stamp covers the exact Lean source, dependency and environment digests shown above."
+}

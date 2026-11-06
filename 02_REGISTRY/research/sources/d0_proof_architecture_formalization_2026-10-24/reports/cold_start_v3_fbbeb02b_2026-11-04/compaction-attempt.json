@@ -1,0 +1,12 @@
+{
+  "schema": "d0-v3-default-compaction-attempt-v1",
+  "snapshot_commit": "fbbeb02bb1cb36da0f173adc614400dbe81154e9",
+  "input_original_sha256": "adf9b4549f50aea8f56f03511abd3bcf0e5ad84367366fea4fc0c80834f7c059",
+  "mode": "default bounded evidence recheck, without verify-discovery or full search rerun",
+  "exit_code": 1,
+  "stderr_sha256": "b9c5556c1d520f39b807f08bb57645626cc75cc3013ad99cf4d1987215ebcbc8",
+  "stderr_bytes": 95,
+  "diagnostic": "source pages do not reproduce from locator bytes and pins",
+  "compact_output_created": false,
+  "boundary": "Failed attempt; mismatch cause not yet established; no evidence verification, discovery acceptance or scientific conclusion."
+}

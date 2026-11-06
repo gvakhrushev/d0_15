@@ -1,0 +1,12 @@
+import D0.Analysis.MovingProjectorBookPrice
+import D0.Analysis.MatrixRelativeLogDetContrast
+import D0.Research.TaskFaithfulReturnContrast
+
+#check D0.Algebra.MovingProjectorTransport.cut
+#check D0.Analysis.MovingProjectorBookPrice.matrixBook03Price
+#check D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price
+#check D0.Analysis.regularizedReturnPrice_contrast_bound
+#check D0.Research.taskReturnProduct_price_contrast_bound
+#print axioms D0.Analysis.MovingProjectorBookPrice.hasDerivAt_moving_projector_book03_price
+#print axioms D0.Analysis.regularizedReturnPrice_contrast_bound
+#print axioms D0.Research.taskReturnProduct_price_contrast_bound

@@ -1,0 +1,53 @@
+{
+  "status": "PASS_EXACT_CAR_PARITY_GEOMETRIC_SOURCE",
+  "checks": 305,
+  "field": "rational characteristic zero plus symbolic rational r,t",
+  "creator_order": [
+    0,
+    2,
+    3,
+    1
+  ],
+  "carrier_dimension": 16,
+  "odd_rank": 8,
+  "coherent_parity_writer_full_columns_checked": 32,
+  "logical_CNOT_count_for_parity_flag": 4,
+  "symbolic_Lorentz_generators_checked": 6,
+  "coframe_rows_checked": 16,
+  "shared_link_rows_checked": 24,
+  "smooth_consistency_controls": [
+    {
+      "L": 4,
+      "global_error_over_h4": "0.01714401419820010496482053",
+      "source_k_over_h4": "0.04001226631043642789140611",
+      "source_l_over_h4": "0.08571560635746293657670156"
+    },
+    {
+      "L": 8,
+      "global_error_over_h4": "0.01714292945967318257072969",
+      "source_k_over_h4": "0.04000076663538040514231216",
+      "source_l_over_h4": "0.08571436827915008529945367"
+    },
+    {
+      "L": 16,
+      "global_error_over_h4": "0.01714286166266149327698504",
+      "source_k_over_h4": "0.04000004791467603156519557",
+      "source_l_over_h4": "0.0857142908746860875942752"
+    },
+    {
+      "L": 32,
+      "global_error_over_h4": "0.01714285742534492783623379",
+      "source_k_over_h4": "0.04000000299466711430139664",
+      "source_l_over_h4": "0.08571428603681111398500012"
+    }
+  ],
+  "four_vertex_local_Lorentz_test": true,
+  "ungraded_control": "-3/5",
+  "palatini_control": "-3/4",
+  "parity_correction": "-3/20",
+  "statement": "Exact all-SL4 value identity and every induced jet; finite CAR parity-weighted contraction",
+  "physical_parity_insertion_compiled": false,
+  "full_Book_price_selection_proved": false,
+  "all_size_lattice_roots_replayed": false,
+  "universal_GR_closed": false
+}

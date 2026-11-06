@@ -1,0 +1,54 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1995,
+      "path": "README.md",
+      "sha256": "959e4a41f9b8e356cd0485059f4194b0abb34a77d15f46b82e286941f18b7467"
+    },
+    {
+      "bytes": 1287,
+      "path": "normal.json",
+      "sha256": "6ffa3cb7ca675df7e4081f504d7ca18910a65299b97e41422e1289f56678515e"
+    },
+    {
+      "bytes": 1493,
+      "path": "normal.stderr",
+      "sha256": "67bb0f164557c0e03fbd723f8b7753670c8a99cb7590e218267ae94de19cb00e"
+    },
+    {
+      "bytes": 1287,
+      "path": "optimized.json",
+      "sha256": "6ffa3cb7ca675df7e4081f504d7ca18910a65299b97e41422e1289f56678515e"
+    },
+    {
+      "bytes": 1493,
+      "path": "optimized.stderr",
+      "sha256": "67bb0f164557c0e03fbd723f8b7753670c8a99cb7590e218267ae94de19cb00e"
+    },
+    {
+      "bytes": 6628,
+      "path": "verify_local_replay.py",
+      "sha256": "39f7f36dcca57a1007410934b4f3826def38091bd8833032bbf321ef5e8c783f"
+    }
+  ],
+  "checker_git_blob_sha1": "4ae220f71339dc82ddffc0771f4bd91e5f19646c",
+  "checker_path": "02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/check_root_moving_cut.py",
+  "checker_sha256": "da4df4d9c075b9b6cc01a4c74503ea1bb379d062bdbb74e5ddb02703f2f85d2c",
+  "local_environment": {
+    "numpy": "2.0.2",
+    "python": "3.9.6"
+  },
+  "owner_environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0"
+  },
+  "owner_max_numeric_drift": 1.3507694962555661e-11,
+  "owner_numeric_differences": 9,
+  "owner_result_git_blob_sha1": "39cedbaf8d6891bd1711ce1f13f49af37ce2b3d3",
+  "owner_result_path": "02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/result.json",
+  "owner_result_sha256": "b361bcba014c0a68f545a0167ae1a4be20ccc1386fe754bd389c472bd361dc8b",
+  "schema": "d0-local-replay-evidence-v1",
+  "source_commit": "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+  "warning_records_per_mode": 12
+}

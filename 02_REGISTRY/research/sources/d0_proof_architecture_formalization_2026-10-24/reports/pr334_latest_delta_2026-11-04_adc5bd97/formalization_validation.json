@@ -1,0 +1,68 @@
+{
+  "schema": "d0-pr402-native-paid-clock-credit-validation-v1",
+  "checkout": {
+    "branch": "wrk/d0-proof-architecture-formalization",
+    "pre_validation_head": "6fe6665bd7d0ce6a70078c0af16299d3289cfff5",
+    "worktree_was_dirty": true,
+    "base_snapshot": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54"
+  },
+  "lean": {
+    "toolchain": "Lean 4.30.0 (arm64-apple-darwin24.6.0, d024af099ca4bf2c86f649261ebf59565dc8c622)",
+    "lake": "Lake 5.0.0-src+d024af0",
+    "mathlib_revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7",
+    "manifest_sha256": "4ed211000f753c64b6c1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+    "environment_sha256": "c0db61419aa16f391029b4ce85fed428739da0c9ed3166296772aa22cd86068b",
+    "builds": [
+      {
+        "command": "python3 tools/lean_task_build.py narrow D0.Research.NativePaidClockCredit",
+        "target": "D0.Research.NativePaidClockCredit",
+        "status": "PASS",
+        "jobs": 2965,
+        "seconds": 10.5,
+        "source_sha256": "2cb5d990cfa6de19f4cbe8f77077f51dfd188aa0d01b3edd2313eaa52e9efb47"
+      },
+      {
+        "command": "python3 tools/lean_task_build.py final",
+        "target": "D0.All",
+        "status": "PASS",
+        "jobs": 4775,
+        "seconds": 23.7,
+        "source_sha256": "deb9e9f8d99b486bd1e1a36e2da8c8f79732ba4cc79635348ae617cfee6eb073"
+      }
+    ],
+    "axioms": {
+      "D0.Research.NativePaidClockCredit.repeated_roundtrip_cost_lower_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "D0.Research.NativePaidClockCredit.er5_required_net_credit": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "D0.Research.NativePaidClockCredit.er6_finite_telescoping_lower_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS work_validation",
+    "validate_agent_protocol": "PASS",
+    "gr_assembly_check": "PASS valid=true active_results=54 scientific_promotion=false",
+    "gr_assembly_render_check": "PASS",
+    "render_work_status_check": "PASS work_views stale=0",
+    "generate_lean_views_check": "PASS lean_views stale=0",
+    "git_diff_check": "PASS"
+  },
+  "scientific_boundary": {
+    "ActionProtocol_to_physical_execution_map_proved": false,
+    "same_history_Cost_Info_work_binding_proved": false,
+    "Parry_stage_record_preparation_map_proved": false,
+    "GR_closed": false
+  }
+}

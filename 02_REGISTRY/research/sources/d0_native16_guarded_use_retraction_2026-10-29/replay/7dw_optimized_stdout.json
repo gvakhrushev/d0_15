@@ -1,0 +1,448 @@
+{
+  "boundary": {
+    "SourceI_pairs_proved_on_all8_columns": true,
+    "active_columns": 1024,
+    "active_input_rank": 2,
+    "blank_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      16,
+      17
+    ],
+    "full_dimension": 262144,
+    "input_rank": 16,
+    "input_spectator": 8,
+    "old16_boundary_extended_by_real_blank_wires": [
+      16,
+      17
+    ],
+    "old_right": [
+      15
+    ],
+    "protected_Spin_prepared": false,
+    "record": [
+      7,
+      8,
+      9
+    ],
+    "source_spin": [
+      13,
+      14
+    ],
+    "thermal_spectator": 256,
+    "wires": 18,
+    "witness": [
+      10,
+      16,
+      17
+    ],
+    "work": [
+      0,
+      11,
+      12
+    ]
+  },
+  "checker_sha256": "e3ac0eb35ec9c4043cf51485f36d3145be3f9be988e28d38330c510599906fc3",
+  "checks": 73,
+  "complete_differences": {
+    "birth_fault_minus_good": [
+      "-0.0000008886816190131576745785972766734945491787",
+      "-0.0000008886816190131576745785972766734945491784"
+    ],
+    "rotate_minus_good": [
+      "0.0000004014779563458752156140831879299337158163",
+      "0.0000004014779563458752156140831879299337158166"
+    ]
+  },
+  "complete_prices": {
+    "birth_fault": [
+      "29.5237322011305094362323620093236094502458717370",
+      "29.5237322011305094362323620093236295800303448898"
+    ],
+    "good": [
+      "29.5237330898121284493900365879208861237404209155",
+      "29.5237330898121284493900365879209062535248940684"
+    ],
+    "rotate": [
+      "29.5237334912900847952652522020040740536741367320",
+      "29.5237334912900847952652522020040941834586098849"
+    ]
+  },
+  "heat": {
+    "A1_61_rational": "577013914587855514532463268246998028638073524406707120749960685195480060206758062369024256576828839581894325442928838915999738799766927144219152978621423244476318359375000000000/3758308457673040382620985432006204934347143518907155928600677911354297936434878334732983081417490671850101756579911768643423739641620992004171627299970529582464557978944845835563332669102217797714390161052904412517979350320206701612873937364977264917142776581658278199503826237201495123411834136799383968160180591322472309911972843110561370849976991",
+    "absolute_H": [
+      "29.5237182561877692539821992816713503245497812460",
+      "29.5237182561877692539821992816713704543342543989"
+    ],
+    "all_modes": 6796083200,
+    "unpaired_harmonics": 5740691456
+  },
+  "independent_birth_source": {
+    "actual_native_G_birth_fault_also_executed": true,
+    "formula": "-16 zeta p^3 (2p sqrt(p))/(1-zeta+zeta p^6)",
+    "interval": [
+      "-0.0000035003065043241630778818492924101755720609",
+      "-0.0000035003065043241630778818492924101755720606"
+    ],
+    "matrix_direction_not_claimed_native_angle": true
+  },
+  "input_commit": "9e80e0c015a8b8dc804ec55a837eda91164201fe",
+  "input_pins": {
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "literal_identity18": [
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    }
+  ],
+  "literal_mark": [
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        10
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        16
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        12,
+        17
+      ]
+    }
+  ],
+  "literal_rotate18": [
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    }
+  ],
+  "return_corners": {
+    "birth_fault": "sqrt(p)(4p-3) Q",
+    "good": "p^3 Q",
+    "rank_Q": 8,
+    "rotate": "p^6 Q"
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "same_use": {
+    "all_final_witness_rows_zero": true,
+    "all_independent_device_rows_zero_at_base": true,
+    "all_initial_witness_rows_zero": false,
+    "device_correctness_imposed_on_variations": false,
+    "device_occurrences": 1,
+    "good_endpoint_full_reflection": true,
+    "native_device_calls": 21,
+    "old_field_source_preserved": true,
+    "witness_readonly_during_device": true
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_physical_record_birth_constraints_derived": false,
+    "new_blank_availability_retained": true,
+    "new_fidelity_or_Info_penalty": false,
+    "one_original_H_plus_J": true,
+    "physical_X_N_identified": false,
+    "whole_price_global_minimum_claimed": false
+  },
+  "status": "PASS",
+  "whole_words": {
+    "birth_fault": {
+      "N": 61,
+      "inventory": {
+        "CX": 42,
+        "G": 5,
+        "SourceI": 14
+      },
+      "sha256": "107aa54d7ae3e665741727bc20796aa79cd85055938e4d18186725f598b0356c"
+    },
+    "good": {
+      "N": 61,
+      "inventory": {
+        "CX": 43,
+        "G": 4,
+        "SourceI": 14
+      },
+      "sha256": "06704aef8a367754bcff53df67b1540c03a349feedb5e0a10725270093f49d68"
+    },
+    "rotate": {
+      "N": 61,
+      "inventory": {
+        "CX": 43,
+        "G": 4,
+        "SourceI": 14
+      },
+      "sha256": "35de4c471bd961399b95cf1e2aece498acd0b0734aef33df9f6575dd3f100c8f"
+    }
+  }
+}

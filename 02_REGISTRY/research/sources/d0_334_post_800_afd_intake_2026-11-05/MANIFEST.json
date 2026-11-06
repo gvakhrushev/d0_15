@@ -1,0 +1,108 @@
+{
+  "GR_closed": false,
+  "base": "800701f84b0d8b2970556421afd2b0887be68561",
+  "changed_blobs": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": {
+      "base_blob": "51a93f69156b0ebfdc382fc2c396e935bdcd4518",
+      "base_sha256": "f5f07bafa397b5a674dead5082c684478bc6453a0e92912f321f91f4a0207473",
+      "head_blob": "5388a8cf7213fc0b157618be9968a1f32a5c1b9e",
+      "head_sha256": "f39c94533b9ae676761dd2ecf6420ce5409b48c043c30c41139beb6b111e1d8d",
+      "snapshot": "snapshots/task.xz"
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "base_blob": "d2e737997e51ad33b90cac0a72a31f2781f916b5",
+      "base_sha256": "1e4b044947e61a137ec8d91720e3f0f034e349c91254fbe13253a23a29e162e6",
+      "head_blob": "5e3fdb50ed0709abf9c4a8c827dd704d9ba116e6",
+      "head_sha256": "fba049e597761d8e0cc6232d43e33b6c7bf65e1aac75019e4adf80b5f0508481",
+      "snapshot": "snapshots/memo.xz"
+    }
+  },
+  "checker_sha256": "6362d9709e6026019976981e3615868bf39e89b8abbf68dbf0e44c8ee5f76974",
+  "comparison_sha256": "609712acf88e06b68a653d8ca39c6ee2de304345bb8a78e08a4cdc6616a01220",
+  "head": "afd99daf54d26ef7e1b47a94f380557213e9c6d5",
+  "head_parent": "800701f84b0d8b2970556421afd2b0887be68561",
+  "original_constructor_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "original_constructor_path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+  "original_constructor_sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+  "owner_counts": {
+    "exact_golden": 39,
+    "exact_integer": 6,
+    "nominal_numeric": 34,
+    "provenance": 7,
+    "structural": 4
+  },
+  "owner_inputs": {
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": {
+      "blob": "51a93f69156b0ebfdc382fc2c396e935bdcd4518",
+      "sha256": "f5f07bafa397b5a674dead5082c684478bc6453a0e92912f321f91f4a0207473"
+    },
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    "02_REGISTRY/gr_assembly/sources/d0_actionprotocol_book03_boundary_2026-10-19/BOOK_03.md": {
+      "blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_CLOCK_WORK_RETURN_SOURCE_SYNTHESIS_2026_10_21.md": {
+      "blob": "1a660bc859e536137bbc6fc7f38ab4c7cfa39d26",
+      "sha256": "7184e3cd94ff501e5ac213f6d632dbf6c465ea70d3eb363b5eadd91b30761ad5"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md": {
+      "blob": "84bf80e94c3d4fc672bd11b1f3322da9c1e9116f",
+      "sha256": "4b035f3b0d75753184c7fbd1149a7ab614c2bccfa449d67f677ce853266a766d"
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "blob": "d2e737997e51ad33b90cac0a72a31f2781f916b5",
+      "sha256": "1e4b044947e61a137ec8d91720e3f0f034e349c91254fbe13253a23a29e162e6"
+    },
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_GOLDEN_POINTER_X_INVARIANT_BOOK_DIFFERENT_PRICE_2026_10_22.md": {
+      "blob": "62df559c93ca59d948abfb0ed33db3b90b63bf80",
+      "sha256": "82caf5e7fdf3aa75ea1dedf1edd159369bd1dc78649cbe69457927a46778f443"
+    },
+    "02_REGISTRY/research/A4D_ORIGINAL_FULL128_UNIQUE_STATIONARY_CQ_RATE_AND_FINITE_ENTROPY_BRACKETS_2026_10_22.md": {
+      "blob": "35f4c4a2428e14c37eaa93124b8abd74427bbf29",
+      "sha256": "667d7c55d2d0e390c7b04454a5d84181237263466870bb06d73deff3b42704b7"
+    },
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": {
+      "blob": "f0f74d206dbf79913f9aa95f0e53177de6d12ab5",
+      "sha256": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469"
+    },
+    "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py": {
+      "blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+      "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9"
+    },
+    "02_REGISTRY/research/sources/d0_native65_causal_source_2026-10-22/THEOREM.md": {
+      "blob": "d34f0136543168ca6b8814d4baefdc10dd67b202",
+      "sha256": "eef383ca58e6bce715b2b76f27a1abcdcab3ac668a4b09187bf1238cc4976436"
+    },
+    "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_SOURCE.md": {
+      "blob": "cbd85b5173563f0f7bc5b17a31ddef7562916dff",
+      "sha256": "f1ee97765d7c8a82ff65f4ab81f46cb626e6780856fac34684efa8d4cac92d51"
+    },
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": {
+      "blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": {
+      "blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md": {
+      "blob": "64ba098e77d71dfc14be632e9b50add50e3eac8a",
+      "sha256": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": {
+      "blob": "370e8fb572e85fedeebe2e72531c01d5b68b0a91",
+      "sha256": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393"
+    },
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": {
+      "blob": "4c01fc5bf00971c866dbc22233b64ce7b3077c33",
+      "sha256": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9"
+    }
+  },
+  "owner_receipt_sha256": "85d7c369546a85ce1903d7a8582f495918a96c03268812ae39c00c53618044bf",
+  "patch_sha256": "13730a2e46883f69a3a109b7848a986c8d201d5b2bdd83e6a7dd131aa07a1594",
+  "predecessor_checker_sha256": "cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c",
+  "scientific_promotion": false
+}

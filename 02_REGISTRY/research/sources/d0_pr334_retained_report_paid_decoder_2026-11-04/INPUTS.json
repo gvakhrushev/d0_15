@@ -1,0 +1,44 @@
+{
+  "base_head": "6164fe50b875a4876f8c17eb22d814cdc7937377",
+  "files": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "c5bf694bf1f95395e10cb4fd1d7493c16634914c2574d220dcb60da654eff356",
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md": "19eaed309cfe68634cd6d57f3864c497453272a86ecc5fb937bd34291eaf03d4",
+    "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md": "665fcbc48d64e4e6fc4bf5fcc764845d86012a42683f5d3188b47158cda5a2b9",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "70da30184823746c040549b3182080326f30af9caba08c95c3a13da46bc8c294",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "artifacts": {
+    "corner/check_retained_corner.py": "b3e30df8587ebde0e3141bd7b74de145dcd557245135c2fcdd50cb51aa2ecfee",
+    "corner/check_retained_corner_v2.py": "c8001ffe0683d5decaae30f9be56eeccc9f05611a4238543c506e5a8e1426c93",
+    "corner/RESULT.v2.normal.json": "7c6921b15a51839e1d9b9b7ff85a10b5afddee94ab31dc3c0970600962028e55",
+    "heat/check_retained_record_heat_v2.py": "60e577350e8420d9f369330ec467e7ae104c4090254abd4fac22f21717516989",
+    "heat/result_v2.json": "5845421a34bceea84447c7e22af6b0467caf5676c11d7fc58c324a8beda5c022",
+    "native/check_record_preparation.py": "ab0ff20bbd22b77816320a33b686091afb03da0596a878452727952592bb0b20",
+    "native/receipt.json": "2efc6b98c22ea8933757013bd4f47f47dfda1e646a59fcf46235c2a5ff14532e",
+    "native/check_paid_decoder.py": "c733f6e0c4f0293a7951883546a24e049e24f14a9583269a9e5d6850dd0ef1ef",
+    "native/decoder/receipt.json": "57430fd4365b2e760179c52fcd5e7b1fed049cbd95ad1682c0a7166c96ea0e5b",
+    "native/check_paid_computational_reader.py": "50570009dddd9db60640e6a4aa52d484063937f7f20634803f147ddb9f2aa679",
+    "native/computational_reader/receipt.json": "f2eedbba36deee5d4af63ab4e2b1bb4cd184347c60a0fdee341aaf500af9d13e",
+    "corner/RESULT.v2.optimized.json": "7c6921b15a51839e1d9b9b7ff85a10b5afddee94ab31dc3c0970600962028e55",
+    "heat/result_v2_optimized.json": "5845421a34bceea84447c7e22af6b0467caf5676c11d7fc58c324a8beda5c022",
+    "native/normal.stdout.json": "b315fb659f699c47d4eef2de36c0ac11dac926d21be14d93517ad6f66d50e281",
+    "native/optimized.stdout.json": "b315fb659f699c47d4eef2de36c0ac11dac926d21be14d93517ad6f66d50e281",
+    "native/decoder/normal.stdout.json": "0011cf96d44033dcbb31fcf911c47353c8f4716b8d48c36641e1dd9a3032cb4e",
+    "native/decoder/optimized.stdout.json": "0011cf96d44033dcbb31fcf911c47353c8f4716b8d48c36641e1dd9a3032cb4e",
+    "native/computational_reader/normal.stdout.json": "37cacd5ead550418535a9cfc92925f7630a13db21ffe3dfe4c7a9c7e19446a40",
+    "native/computational_reader/optimized.stdout.json": "37cacd5ead550418535a9cfc92925f7630a13db21ffe3dfe4c7a9c7e19446a40",
+    "native/native_words.json": "74aaf7ed5f0f24225b3ca77a00371fd940796b4f5a8d0735548b7d3bad314f3a",
+    "native/decoder/native_words.json": "b466f4696b324cc517d4879c0ea2fd4a82dcd24c9c6564044b5b8ef8e0e2c2fd",
+    "native/computational_reader/native_words.json": "47abd939ccc0a5f29a6d1c23972ddfad4163923dbe932f7509a9146f993d6144"
+  },
+  "validation": {
+    "corner_gain_checks": 87,
+    "heat_checks": 53,
+    "native_preparation_checks": 70,
+    "native_decoder_checks": 60,
+    "native_reader_checks": 79,
+    "normal_optimized_identical": true,
+    "GR_closed": false
+  }
+}

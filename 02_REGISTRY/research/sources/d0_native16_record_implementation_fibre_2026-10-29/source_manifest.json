@@ -1,0 +1,120 @@
+{
+  "checker_inputs": [
+    {
+      "blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "commit": "0f2e421fda2029df92b174c39f594160ce31294f",
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "commit": "0f2e421fda2029df92b174c39f594160ce31294f",
+      "path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    }
+  ],
+  "frozen_receipt_inputs": {
+    "7do_paid_binary_input_sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+    "7ds_return_record_compiler_sha256": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e",
+    "7dt_one_sided_price_graph_sha256": "b4e52e9d777135388051c2e5908e99a3110816b256be7d5769315a985dffbfe3",
+    "fixture_sha256": "74c58d870bc89b737ab6c3d0418791c508dab7f89c75cfd5f4b63dc59009276e"
+  },
+  "integrated_artifacts": {
+    "PROOF_RU.md": {
+      "bytes": 4284,
+      "sha256": "f525ede8eb0189b7bf253d4f1064ed24f9c690149cb076351c4ed61d35054d7a"
+    },
+    "check_record_implementation_fibre.py": {
+      "bytes": 12270,
+      "sha256": "66a8f56d93358668c39f357c71c47fed4ad6075c1c40c39b7602adb971b3dc6f"
+    },
+    "expected_receipt.json": {
+      "bytes": 6214,
+      "sha256": "b5c6138e8ae5bd1d7cd23bc8cc9e8831448f6b6900f8ef609a84ae4154cf78b6"
+    },
+    "inputs/upstream_receipts.md": {
+      "bytes": 75404,
+      "sha256": "74c58d870bc89b737ab6c3d0418791c508dab7f89c75cfd5f4b63dc59009276e"
+    },
+    "replay/optimized_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/optimized_stdout.json": {
+      "bytes": 6214,
+      "sha256": "b5c6138e8ae5bd1d7cd23bc8cc9e8831448f6b6900f8ef609a84ae4154cf78b6"
+    },
+    "replay/ordinary_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/ordinary_stdout.json": {
+      "bytes": 6214,
+      "sha256": "b5c6138e8ae5bd1d7cd23bc8cc9e8831448f6b6900f8ef609a84ae4154cf78b6"
+    },
+    "replay/repeat_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/repeat_stdout.json": {
+      "bytes": 6214,
+      "sha256": "b5c6138e8ae5bd1d7cd23bc8cc9e8831448f6b6900f8ef609a84ae4154cf78b6"
+    },
+    "replay_manifest.json": {
+      "bytes": 2320,
+      "sha256": "17f823293e8d230363f33f676b8523dc432800e25f6d6f1dfb3a6d4d883f224a"
+    },
+    "replay_record_implementation_fibre.py": {
+      "bytes": 14915,
+      "sha256": "52d7d445966abb1b4af6f4f6b4ae1ad054a33cb9ff4ead3b341c4ed43e5fd1de"
+    },
+    "upstream_section_7du.md": {
+      "bytes": 34792,
+      "sha256": "169088d3c4918f1a306cb7ac213b3d4929216f5615c819b53364afd9eadc1627"
+    },
+    "upstream_task_7du.md": {
+      "bytes": 6235,
+      "sha256": "cdd1c15bf77d1fa5347517a1491b3818d9bd93d32aac03ae6bef2bd77625de73"
+    }
+  },
+  "replay": {
+    "GR_closed": false,
+    "exact_published_receipt_match": true,
+    "manifest": "replay_manifest.json",
+    "status": "PASS"
+  },
+  "schema": "d0-native16-record-implementation-fibre-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "parent_substitution": "For the declared native16 fixed-layout recorder, complete-map equality D j = C j classifies the same recording operation, including post-state; the admitted completion fibre has zero feedback derivative while retaining the complete heat and unchanged horizontal field source.",
+    "phase": "native realization and same-operation recorder application",
+    "remaining": [
+      "physical admission of the specified recorder and reserve layout",
+      "identify the actual full physical comparison domain X_N",
+      "bind the finite recorder predicate to the selected physical Book/task",
+      "derive the selected Cost-Info and independent clock/boundary equations",
+      "larger field/compiler/refinement admission",
+      "Lean formalization and CI",
+      "physical selection and GR closure"
+    ]
+  },
+  "upstream": {
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "checker_body_sha256": "9f99f3e931a080138d1780f4fce48fa4dd6fd7fac70702ef0b32454537369de2",
+    "checker_sha256": "66a8f56d93358668c39f357c71c47fed4ad6075c1c40c39b7602adb971b3dc6f",
+    "commit": "f23f9149c470051b35acc3fac42f3fecdba084ab",
+    "memo_blob": "21e07fc00279bd897baeefceba8317b1e898107a",
+    "memo_bytes": 3747121,
+    "memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "memo_sha256": "ffbaf16b13db8190573db5a8063ce9c53de76698b9e5527693681286d4195c10",
+    "pull_request": 334,
+    "receipt_body_sha256": "ab58ba5ce72e04eedcda6cade82588d3f2c8a7a876ce91c68f6027ce3769e9fb",
+    "receipt_sha256": "b5c6138e8ae5bd1d7cd23bc8cc9e8831448f6b6900f8ef609a84ae4154cf78b6",
+    "section_sha256": "169088d3c4918f1a306cb7ac213b3d4929216f5615c819b53364afd9eadc1627",
+    "task_blob": "8c5b36bbd6fe88ddbb700904204228d1985ca7c1",
+    "task_bytes": 1197383,
+    "task_excerpt_sha256": "cdd1c15bf77d1fa5347517a1491b3818d9bd93d32aac03ae6bef2bd77625de73",
+    "task_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "task_sha256": "1229452299a859167e15f5d6ed6620bd8c5e1c618c69fbe03705d6a5db4c14a0"
+  }
+}

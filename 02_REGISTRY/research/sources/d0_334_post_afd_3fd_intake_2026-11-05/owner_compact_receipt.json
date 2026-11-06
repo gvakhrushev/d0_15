@@ -1,0 +1,50 @@
+{
+  "arithmetic": "Q[a]/(a^4+a^2-1), exact rational isolating interval; nominal sparse-clock residuals labelled",
+  "brief_sha256": "f39c94533b9ae676761dd2ecf6420ce5409b48c043c30c41139beb6b111e1d8d",
+  "check_count": 140,
+  "checker_sha256": "943f409d2c931b524acecc21eeb2a37eb21a5d92430177c24709c0eba80105be",
+  "classifications": {
+    "exact_golden": 28,
+    "exact_integer": 12,
+    "exact_symbolic": 1,
+    "nominal_numeric": 5,
+    "structural": 94
+  },
+  "clock": {
+    "D": 623,
+    "N": 51,
+    "asymptotic_q_requirement": "q>=3 in proof; q=0 only in finite diagnostic",
+    "births": 5,
+    "full_Hodge_modes": 264775,
+    "harmonic_offset": 223657,
+    "native_calls": 46
+  },
+  "git_input": "afd99daf54d26ef7e1b47a94f380557213e9c6d5",
+  "max_nominal_residual": 4.440892098500626e-16,
+  "normal_optimized_identical": true,
+  "normal_result_sha256": "edbf1780ba2b4c274fec494075f33110dc701db12615f6c7caf713a5fef02799",
+  "optimized_result_sha256": "edbf1780ba2b4c274fec494075f33110dc701db12615f6c7caf713a5fef02799",
+  "primary_sha256": "fba049e597761d8e0cc6232d43e33b6c7bf65e1aac75019e4adf80b5f0508481",
+  "proof_sha256": "5e27429a1bff873e91fd274988bec250a1d2f408ded675f6c1676ca315c86624",
+  "review_sha256": {
+    "admission-review.md": "f561cffead29a7c6eedefc029bad3cbf2361d2fcd9675e170af4ed17421d3935",
+    "price-review.md": "ea45cb5e56a4d7c5748f2d2053910317b0a0781264049934c8f5d5545fe47b85",
+    "source-review.md": "9cf86e0827347fd98d45854bc11b58314c027280a94810ae2fce7bbbd9d930d9"
+  },
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.open-retention-collar/1",
+  "scope": {
+    "GR_closed": false,
+    "continuous_native_primitive": false,
+    "full_Cost_Info_selected": false,
+    "helpers_reset": false,
+    "same_task_forcing": false,
+    "tiny_clock_replaces_CT_asymptotic": false
+  },
+  "status": "PASS"
+}

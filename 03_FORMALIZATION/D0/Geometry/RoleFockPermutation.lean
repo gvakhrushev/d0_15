@@ -116,11 +116,7 @@ is only the multiplicative form of that same parity.
 -/
 
 lemma roleOrderIndex_injective : Function.Injective roleOrderIndex := by
-  intro r s hrs
-  match r, s with
-  | (a, b), (c, d) =>
-      fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
-        simp [roleOrderIndex, A, B, C, D] at hrs ⊢
+  exact _root_.D0.Geometry.roleOrderIndex_injective
 
 lemma roleOrderIndex_lt_of_ne {p q : Role} (hpq : p ≠ q) :
     roleOrderIndex p < roleOrderIndex q ∨ roleOrderIndex q < roleOrderIndex p := by

@@ -1,0 +1,7 @@
+19efc28da7d8214fea1cae154291f2ef847d8d0b	2026-10-28T16:01:38+03:00	test(#334): verify the complete retained-prefix covector without freezing its rows
+5bfd15a6f80f4401cf9cadc0cb49a0ef2a609185	2026-10-28T16:06:42+03:00	research(#334): include all finite-prefix variations in cumulative nonlinear source recovery
+aa19b47c41345cf16712af5a9ed14cdd6db1b1c4	2026-10-28T16:08:07+03:00	test(#334): retain observed full-prefix source and non-dilution controls
+697eb58588db190f386f912d36e59a671e298ca0	2026-10-28T16:09:21+03:00	research(#334): retain original all4096 joint-source exploration without root promotion
+e5ce2ec0a5a44fb01cf59d0135656994e4665862	2026-10-28T16:11:28+03:00	research(#334): preserve seven-scale candidate and all280 nonzero rows as exploration
+412e8aa0e6c09738c15eb56c3296799350c87f4b	2026-10-28T16:11:48+03:00	research(#334): retain failed all280 solve and its orientation-domain violation
+523d2cbcc0a9771ea40faa4a2eac84cc78704b0e	2026-10-28T16:13:06+03:00	research(#334): compose nonlinear GR recovery with every finite-prefix source row

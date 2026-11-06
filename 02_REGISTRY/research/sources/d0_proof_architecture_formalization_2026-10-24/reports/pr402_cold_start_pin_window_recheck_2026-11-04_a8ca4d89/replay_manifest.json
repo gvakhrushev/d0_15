@@ -1,0 +1,125 @@
+{
+  "schema": "d0-pr402-cold-start-pin-window-recheck-v1",
+  "repository": "gvakhrushev/d0_15",
+  "target_pull_request": 402,
+  "snapshot_commit": "a8ca4d8974b14ee332554268fce275f58ebbf6c3",
+  "worktree_dirty": false,
+  "GR_closed": false,
+  "command": "python3 tools/proof_architecture_cold_start.py",
+  "full_output": {
+    "bytes": 26168460,
+    "sha256": "149ed43fe9f30255220e5548ab9881814a1243ecf93fca72e34129e1eb5de910",
+    "retained_path_local": "/tmp/d0_pr402_cold_start_2026-11-04_a8ca4d89.json",
+    "committed": false
+  },
+  "compact_summary": {
+    "path": "cold_start_summary.json",
+    "bytes": 2834280,
+    "sha256": "9a835af703e7cc6b280441972fdd2a8fb460734bcf9b096e74d8a2dfd03ed65c"
+  },
+  "search": {
+    "window": 18,
+    "cases_found_all_sources": 49,
+    "cases_total": 50,
+    "benchmark_cases_total": 51,
+    "required_source_ref_count": 415,
+    "change_impact_regression": "PASS"
+  },
+  "kappa_owner_delta": {
+    "case_id": "pr334-native-kappa-owner-delta",
+    "exact_owner_commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+    "query_indexes_found": 17,
+    "query_indexes_total": 17,
+    "owner_content_required": 67,
+    "owner_content_direct_in_window": 23,
+    "owner_content_direct_outside_search_window": 40,
+    "owner_content_no_direct_match": 4,
+    "owner_content_found_all": false,
+    "all_owner_pins_exactly_verified": true,
+    "oversized_owner_file": "pin only; excluded from direct text search"
+  },
+  "required_source_statuses_all_cases": {
+    "found_direct_content": 40,
+    "verified_direct_content_outside_search_window": 40,
+    "pinned_source_loaded_no_content_match": 4
+  },
+  "owner_pin_test": {
+    "test": "test_pr334_e94_owner_manifest_pins_all_68_changed_paths",
+    "checked_paths": 68,
+    "status": "PASS",
+    "checks": [
+      "commit:path Git blob",
+      "byte count",
+      "SHA-256"
+    ]
+  },
+  "focused_tests": {
+    "receipt_compactor_search_suite": "PASS (106 tests)",
+    "cyclic_AF_exact_pin_boundary": "PASS",
+    "Julia_default_search_window": "PASS",
+    "owner_pin_and_locator_regressions": "PASS (2 tests)",
+    "git_diff_check": "PASS"
+  },
+  "broad_test_run": {
+    "status": "INTERRUPTED",
+    "note": "The broad tools.test_proof_architecture run was stopped while a long native16 retrieval test was active. The observed cyclic-AF exact-pin assertion was corrected to verify commit:path even when the search bound reports not_followed_bounded_search; the focused test passes."
+  },
+  "ci_checks": [
+    {
+      "name": "lean-build",
+      "status": "PASS",
+      "commit": "a8ca4d8974b14ee332554268fce275f58ebbf6c3",
+      "url": "https://github.com/gvakhrushev/d0_15/actions/runs/41768802196/job/126373391932"
+    },
+    {
+      "name": "guards",
+      "status": "PASS",
+      "commit": "a8ca4d8974b14ee332554268fce275f58ebbf6c3",
+      "url": "https://github.com/gvakhrushev/d0_15/actions/runs/41768802207/job/126373391612"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "tools/proof_architecture_cold_start.py",
+      "git_blob": "d9035adad725747f50b5e712b75b00224541a4fd",
+      "sha256": "bdb210f55e65e530d4e3ac65fcce70bf9e52a64213153f3a151f854321b8ff85",
+      "bytes": 189814
+    },
+    {
+      "path": "tools/proof_architecture.py",
+      "git_blob": "c1ece13430a793b6a5be0aa193a31dad1912d3f5",
+      "sha256": "855f024ad7b5a59c1d609e7f3c768a79ff8e62fd48c47e32852d453596f404ec",
+      "bytes": 162613
+    },
+    {
+      "path": "tools/test_proof_architecture.py",
+      "git_blob": "f3cfcebbc098f4911da9587dc2db9e1a3945a2ac",
+      "sha256": "d8231445affa9c81851d005a17d225c93cdeff96eefd495c1ef83683faf49e21",
+      "bytes": 437757
+    },
+    {
+      "path": "tools/compact_proof_architecture_cold_start.py",
+      "git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
+      "sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
+      "bytes": 20927
+    },
+    {
+      "path": "tools/test_compact_proof_architecture_cold_start.py",
+      "git_blob": "2789b83cd6e6ac3f5659baaa0c12f360ad5ceac8",
+      "sha256": "98c362f72f3d78b30095f880e552475ed39b31ca152c612fc0ced03b5b957bce",
+      "bytes": 13333
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/pr334_owner_delta_2026-11-04_e94e518c/owner_delta_manifest.json",
+      "git_blob": "94aa6c5a991fd3286c48eda99a060e6076cc2859",
+      "sha256": "de40cd7080c37c5adde45df84803b1b42d5be78337cb516f19c94aabbe30fa36",
+      "bytes": 40585
+    }
+  ],
+  "classification": {
+    "direct_content_match": "Exact pin content passed the query but the candidate was outside the returned bounded window; the scenario remains not found.",
+    "no_direct_content_match": "Exact pin content was inspected and failed the existing lexical threshold.",
+    "acceptance_boundary": "The 18-result window, strict direct-content requirement, and found flag are unchanged; exact pin availability is not promoted to search discovery."
+  },
+  "validation_limit": "The compactor checked the complete runner output against this clean snapshot and current source pins. The historical Lean source did not change in this code-only checkpoint; the CI Lean build passed on this commit. The search result remains a scoped retrieval result and does not establish physical selection or GR closure."
+}

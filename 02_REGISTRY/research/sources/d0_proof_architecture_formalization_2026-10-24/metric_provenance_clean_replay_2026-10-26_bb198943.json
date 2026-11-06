@@ -1,0 +1,27 @@
+{
+  "schema": "d0-crosswalk-clean-replay-v1",
+  "result_id": "metric-provenance",
+  "command": "python3 tools/proof_architecture.py crosswalk metric-provenance --import-root D0.All",
+  "snapshot_commit": "bb198943a18e9585fa9d2386327d763249f59fba",
+  "worktree_dirty": false,
+  "public_import_root": "D0.All",
+  "lean_source_digest": "7074e944b50cf71e632b4bb56a0f9a976d9409f61dfa38ed7aa8e245d78b376d",
+  "applications_sha256": "4165aef44623cbf61eabad3976ad44dd5262064aefed56c0d78c0c963ccbc7b9",
+  "explicit_declaration_locators": {
+    "resolved": 28,
+    "disposition": "all_resolved"
+  },
+  "claim_locator_disposition": "unresolved",
+  "semantic_relation_status": "unresolved",
+  "acceptance_inferred": false,
+  "replay_output_sha256": "3eb8a4afcf196af7d05e4f67252548ab68a8346f5b741fa3fc70148591b8bf7d",
+  "stored_crosswalk": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_c8a2a5b5.json",
+    "sha256": "fa40543f2ce189e57132515330ac901249cf779a4ed6dd37952fefb6643db21d",
+    "snapshot_commit": "c8a2a5b5f919dfaaddf6d4052f97b6aba537587c",
+    "worktree_dirty": true
+  },
+  "normalized_comparison": "identical after removing snapshot_commit and worktree_dirty",
+  "collector_sha256": "12eee83fd113b3183a6bd4879f30e870c5be6764eee39900206ecc807ac080f0",
+  "proof_detail_collector_sha256": "e941229939edeae52b0cead18a56bed3523f3274ca141cb335b99a88dfd7ab2f"
+}

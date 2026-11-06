@@ -1,0 +1,147 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "all42_geometric_source_identified": false,
+  "canonical_seed": {
+    "Spin4_oldRIGHT2_are_untouched_spectator_multiplicity": 8,
+    "coherent_reentry_product_mismatch": 1.0000000000000002,
+    "complete_return_price_per_spectator": 6.608545596426704e-06,
+    "final_level": 9,
+    "full_GNS_dimension": 10946,
+    "future_heat_stationarity_claimed": false,
+    "future_return_source_per_spectator": 1.0880397534411411e-07,
+    "input_rank": 13,
+    "max_old_return_source": 0.0,
+    "old_AF_level": 2,
+    "old_left_directions_checked": 233,
+    "seed_level": 5,
+    "with_spectators_full_dimension": 87568,
+    "with_spectators_input_rank": 104
+  },
+  "checker_sha256": "f58b22aab0342d4d595a4ece26b501c4780961c2f950eb174e6af570f656eeaf",
+  "domain_controls": {
+    "all_free_completion_controls_stationary": false,
+    "graph_source": 1.6741421759009318e-06,
+    "independent_completion_source": 2.205866029751835e-07
+  },
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "four_level_identity": {
+    "identity": "E_4(V(a))=I-2*p^2*a^2 for the same Hermitian original a",
+    "multiplicities": [
+      [
+        5,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "new_pure_flags": 0,
+    "paired_weight": "2*p^2",
+    "unmatched_weight": "p^3"
+  },
+  "full_heat_source_identified": false,
+  "full_history_record_laws_identified": false,
+  "input_commit": "d37bd1ecf9550034586f32426fac84aecaf43be0",
+  "max_errors": {
+    "Hermitian original row": 0.0,
+    "Hermitian row variation": 0.0,
+    "actual canonical isometry": 6.661338147750939e-16,
+    "actual rotation block identity": 2.220446049250315e-16,
+    "all 16384 parent record source": 9.419548474631182e-16,
+    "all 16384 parent records original defect": 4.427014310693494e-15,
+    "all 32 canonical input columns retained": 3.552713678800501e-15,
+    "all-column derivative isometry": 2.2060001969597286e-17,
+    "coherent reentry countercontrol": 2.220446049250313e-16,
+    "complete original tape/AF price equality": 4.1081097941833566e-20,
+    "complete original tape/AF source equality": 2.752857078576476e-21,
+    "complete seed+future input isometry": 6.661338147750939e-16,
+    "direct GNS complete source": 5.204170427937948e-18,
+    "direct GNS compression, no corner-product assumption": 7.771561172376096e-16,
+    "direct seed+future GNS compression": 0.0,
+    "exact original A0 archive-law structure": 0.0,
+    "four-level exact-source identity": 5.551115123125783e-16,
+    "four-level full first-jet identity": 5.551115123125783e-17,
+    "full AF lift first jet": 1.3698124093846057e-16,
+    "full AF lift unitary": 2.220446049250313e-16,
+    "full ordinary trace multiplicity not trace normalization": 2.0964065444543933e-20,
+    "independent full price finite difference": 1.6982613545754696e-18,
+    "new DATA channel trace preserving": 4.440892098828905e-16,
+    "new DATA channel unital": 2.220451517951812e-16,
+    "ordered noncommuting original history corner": 7.771561172376096e-16,
+    "ordered noncommuting original history source": 5.204170427937948e-18,
+    "original signed row reconstructs without lost spectral sign": 2.7755575615628914e-17,
+    "rotation blocks commute": 9.813077866773595e-18,
+    "same canonical archive-stationary seed": 2.220446049250313e-16,
+    "same full return covector with true multiplicity": 1.5881867761018131e-22,
+    "seed/future actual source pullback": 2.7755575615628914e-17,
+    "seed/future actual total-corner formula": 4.440892098500626e-16,
+    "true archive sector effect commutes with seed return": 0.0
+  },
+  "native_G_CX_SourceI_word_emitted": false,
+  "new_checks": 587,
+  "new_pure_prepared_ancillas": 0,
+  "original_two_tick": {
+    "GNS_times_DATA_dimension": 66896,
+    "canonical_input_columns": 32,
+    "fine_left_dimensions": [
+      55,
+      34
+    ],
+    "full_fine_instrument_equivalence_claimed": false,
+    "full_source": 3.0613228583568533e-07,
+    "native_constructor_sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a",
+    "new_AF_level": 8,
+    "old_AF_level": 0,
+    "old_DATA_dimension": 16,
+    "old_multiplicity": 2,
+    "original_fine_histories_checked": 16384,
+    "parent_constructor_checks": 116,
+    "per_old_copy_original_source": 1.5306614291784259e-07
+  },
+  "physical_variation_domain_proved": false,
+  "reduced_DATA_readout": {
+    "bound": "kappa*(2*deltaPsi*||a||^2+(1+2sqrt(2)/(sqrt(2)+1))*||a||^4)",
+    "composition_error_bound": "sum of the per-tick diamond bounds, for DATA-only intervening channels",
+    "controls": [
+      {
+        "analytic_diamond_upper_bound": 0.02572463880357183,
+        "distance_divided_by_nu_power4": 0.06008760846021483,
+        "normalized_Choi_trace_distance": 0.007787354056443842,
+        "nu": 0.6,
+        "original_unitality_defect": 8.796044777672082e-05
+      },
+      {
+        "analytic_diamond_upper_bound": 0.0016077899252232395,
+        "distance_divided_by_nu_power4": 0.0574797334684841,
+        "normalized_Choi_trace_distance": 0.0004655858410947212,
+        "nu": 0.3,
+        "original_unitality_defect": 5.1514853471987114e-06
+      },
+      {
+        "analytic_diamond_upper_bound": 0.00010048687032645247,
+        "distance_divided_by_nu_power4": 0.056948027517601196,
+        "normalized_Choi_trace_distance": 2.8829938930785604e-05,
+        "nu": 0.15,
+        "original_unitality_defect": 3.1761136835765885e-07
+      },
+      {
+        "analytic_diamond_upper_bound": 6.280429395403279e-06,
+        "distance_divided_by_nu_power4": 0.05682085813059913,
+        "normalized_Choi_trace_distance": 1.797847464288488e-06,
+        "nu": 0.075,
+        "original_unitality_defect": 1.9785764337124837e-08
+      }
+    ],
+    "deltaPsi_upper_bound": "(3/8)*nu^2*(7+||U_boost||^2)",
+    "exact_finite_DATA_channel_equivalence": false,
+    "future_access_scope": "DATA and external reference; not the original fine-record algebra"
+  },
+  "status": "PASS_AF_ORIGINAL_JULIA_RETURN_SOURCE_TRANSPORT"
+}

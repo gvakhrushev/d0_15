@@ -1,0 +1,24 @@
+D0.Foundation.VerifiabilityNecessity.VerificationContract.correct {P : VerificationProtocol}
+  (self : VerificationContract P) (l : P.Line) (c : P.Catalogue) (x y : P.State) :
+  P.compare l c (P.record x) (P.record y) = decide (x ≠ y)
+D0.Foundation.VerifiabilityNecessity.verification_lines_agree {P : VerificationProtocol} (V : VerificationContract P)
+  (l l' : P.Line) (c c' : P.Catalogue) (x y : P.State) :
+  P.compare l c (P.record x) (P.record y) = P.compare l' c' (P.record x) (P.record y)
+D0.Foundation.VerificationCore.representedComparison_catalogue_independent
+  {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} (E : TheoryVerification F.futureEmpiricalTheory)
+  (l l' : E.protocol.Line) (c c' : E.protocol.Catalogue) (s t : F.State) :
+  E.protocol.compare l c (representedRecord E s) (representedRecord E t) =
+    E.protocol.compare l' c' (representedRecord E s) (representedRecord E t)
+D0.Foundation.VerifiabilityNecessity.privileged_catalogue_can_distinguish :
+  privilegedCatalogueProtocol.compare false true (privilegedCatalogueProtocol.record false)
+      (privilegedCatalogueProtocol.record true) =
+    true
+D0.Foundation.VerifiabilityNecessity.privileged_catalogue_is_outcome_affecting :
+  CatalogueOutsourced privilegedCatalogueProtocol
+D0.Foundation.VerifiabilityNecessity.necessary_role_outsourced_loses_verifiability :
+  ¬VerificationContract privilegedCatalogueProtocol
+'D0.Foundation.VerifiabilityNecessity.verification_lines_agree' does not depend on any axioms
+'D0.Foundation.VerificationCore.representedComparison_catalogue_independent' depends on axioms: [Quot.sound]
+'D0.Foundation.VerifiabilityNecessity.privileged_catalogue_can_distinguish' does not depend on any axioms
+'D0.Foundation.VerifiabilityNecessity.privileged_catalogue_is_outcome_affecting' does not depend on any axioms
+'D0.Foundation.VerifiabilityNecessity.necessary_role_outsourced_loses_verifiability' depends on axioms: [Quot.sound]

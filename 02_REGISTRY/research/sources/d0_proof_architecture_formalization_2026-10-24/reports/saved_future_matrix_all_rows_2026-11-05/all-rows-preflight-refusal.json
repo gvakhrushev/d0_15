@@ -1,0 +1,9 @@
+{
+  "candidate_sha256": "353879d776b8275e2bdf9244b621373c882bc27af0b1c6548349c5c80ddef5d0",
+  "kind": "all-rows-Lean-packed-preflight",
+  "raw_log_created": false,
+  "reason": "available physical memory below 4 GiB at preflight",
+  "scope": "No Lean process was started and no theorem was checked.",
+  "status": "refused_before_Lean",
+  "threshold_bytes": 4294967296
+}

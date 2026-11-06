@@ -21,6 +21,20 @@
       "line": "396",
       "detail": "1000000",
       "reason": "Removing the local override and running the narrow target failed in simp at its commuting-sign theorem with the default 200000-heartbeat limit."
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracBoundary.lean",
+      "kind": "heartbeat-override",
+      "line": "20",
+      "detail": "0",
+      "reason": "This byte-identical public mirror preserves the source-pinned research capsule at 02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean (SHA-256 211f43dc97b9c809156bcb87939596757a7143b3e393d4dc4f3215c18d14cff6) and its explicit kernel-decision proof resource setting; this is not an axiom or physical premise."
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracBoundary.lean",
+      "kind": "heartbeat-override",
+      "line": "25",
+      "detail": "0",
+      "reason": "This byte-identical public mirror preserves the source-pinned research capsule at 02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean (SHA-256 211f43dc97b9c809156bcb87939596757a7143b3e393d4dc4f3215c18d14cff6) and its explicit kernel-decision proof resource setting; this is not an axiom or physical premise."
     }
   ]
 }

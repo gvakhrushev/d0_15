@@ -1,0 +1,82 @@
+{
+  "source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "memo_path": "02_REGISTRY/research/sources/d0_334_paid_source_delta_2026-10-28/upstream/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+  "extracted_checks": [
+    {
+      "script": "d0_unpadded_samechart_click_20261027.py",
+      "script_bytes": 6831,
+      "script_sha256": "bdde42db756f0c52230556db4b25cf5918a6ba29c7ce3332e0c4ad1ce6be6547",
+      "result": "d0_unpadded_samechart_click_20261027.json",
+      "result_bytes": 3884,
+      "result_sha256": "847471a4149a387876d304b8194fd1b8e685bf004f670f44bd8bdd306d934b9c"
+    },
+    {
+      "script": "d0_query_orbit_control_20261027.py",
+      "script_bytes": 3418,
+      "script_sha256": "b89cb0e9db410d1aef7bc209b1852e72b428a3e7c4d51c46e21a045e73751f40",
+      "result": "d0_query_orbit_control_20261027.json",
+      "result_bytes": 681,
+      "result_sha256": "a9a5c77e2688dafcc5a3dd9d113f297b317d6131b3455c2b5eb54f7877c71b01"
+    },
+    {
+      "script": "d0_query_cut_orbit_control_20261028.py",
+      "script_bytes": 1281,
+      "script_sha256": "53f23df9b628669caedd231eb4ed41f9dcda0407d2d2b318d9897d68f2ebdd33",
+      "result": "d0_query_cut_orbit_control_20261028.json",
+      "result_bytes": 434,
+      "result_sha256": "60151aac4e410c73bb1e8f0e274bf9f860ed17fa4314e9373768094f7819bdd9"
+    }
+  ],
+  "verification_boundary": "embedded scripts and expected result JSON are byte-exact extractions; seven replay input files are byte-pinned from the exact PR source head; all controls replayed normally and optimized in the temporary reconstructed source tree",
+  "replay_input_files": [
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/certified_unpadded.py",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/certified_unpadded.py",
+      "git_blob": "a8bcb1a32be09d1b45b8626278e014e7288bce2f",
+      "bytes": 1656,
+      "sha256": "30c670082ce1ee9e56d32a2d537b59bd35ea3ffed4bf27fe8aa41ec7de513246"
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/center_new.json",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/center_new.json",
+      "git_blob": "6b520fbd6218444601d90d7e30b738f8c828bd22",
+      "bytes": 3589,
+      "sha256": "d2c824b170b9aba1fd4d7195c231ce034e0d54f7ccd3bb2d9a7df7c40e283f39"
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json",
+      "git_blob": "0ac76b58522d84f5bcc787fb6b6da0c99e1211cd",
+      "bytes": 3260,
+      "sha256": "f5a7af22e4524d06c37bbc01c6f55c6250c0d1b643180f535f32350e5bd4a175"
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/check_unpadded42.py",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/check_unpadded42.py",
+      "git_blob": "2d441ee3bc656a6872c8865f5846ef90c4d58038",
+      "bytes": 7512,
+      "sha256": "6a033b87da3a3fb6f54edac9b7e3127482d2dc1ccdeb09ebf519b2ef457dba06"
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/certified_model.py",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/certified_model.py",
+      "git_blob": "6d5b41ce11a941fde95e722e708ebb02d689985c",
+      "bytes": 6583,
+      "sha256": "d617f2de4ffff8566705045091495e52d72d7df715113338c2234355a0e19ca6"
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/inputs.py",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/inputs.py",
+      "git_blob": "2c12d84fb3454dbf3cda6d71852d0cd4e57e1f65",
+      "bytes": 5495,
+      "sha256": "12c4077fa8125b10609590daa1bc6815ebbf3b22f48781b3b3148d41b066f641"
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "snapshot_path": "replay/inputs/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "bytes": 17833,
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  ]
+}

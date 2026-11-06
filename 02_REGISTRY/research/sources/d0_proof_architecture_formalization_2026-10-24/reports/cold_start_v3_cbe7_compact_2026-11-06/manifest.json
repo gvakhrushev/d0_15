@@ -1,0 +1,63 @@
+{
+  "schema": "d0-v3-cbe7-compact-evidence-v1",
+  "historical_snapshot": "cbe7de75dbc92273db10dfaabf7e3d31fdf9f204",
+  "full_raw": {
+    "sha256": "6e765423fd16c960576d60590ad9b7c9de461226b9560c6d86c23481135fda9c",
+    "bytes": 752668795,
+    "archive_in_this_packet": true
+  },
+  "case_count": 50,
+  "query_count": 414,
+  "required_rows": 415,
+  "found_all_case_count": 50,
+  "explicit_pinned_source_rows": 112,
+  "unique_explicit_pins_checked": 107,
+  "pinned_snapshot_rows_without_explicit_pair": 3,
+  "discovery_validation": "batched_rerun_same_implementation",
+  "corpus_snapshot": {
+    "sha256": "1f76fe69a1a5b99fb56bd96ab48ede471e36e96e8511b1a41a3e234f614770cc",
+    "file_count": 4396,
+    "scope": "rg-visible search roots, checked before and after; no continuous or toolchain attestation"
+  },
+  "files": {
+    "summary.json.gz": {
+      "uncompressed_sha256": "5b2c838b228bf57a3364e2e11265ffae54b7b9a96a17490511a7442132fe61dd",
+      "uncompressed_bytes": 3288234,
+      "compressed_sha256": "0e4bc822a94546ee10f92f284b58703e0dade55372607ccf4f70d64c45da792a",
+      "compressed_bytes": 369335
+    },
+    "producer_progress.jsonl.gz": {
+      "uncompressed_sha256": "72e4fc1918f81208e15f22f4574deeb3cc21a5d84050c8c49e73b948aecefdc9",
+      "uncompressed_bytes": 644997,
+      "compressed_sha256": "2d4e354102d9aece8725a9dfb2a57145cc96d827d724854b9ea931a421ef9d58",
+      "compressed_bytes": 32476
+    },
+    "compactor_progress.jsonl.gz": {
+      "uncompressed_sha256": "f98bf09f48349c401fa617f9c1a785d03e96a4c8fb0c2750445a01682261dcff",
+      "uncompressed_bytes": 587774,
+      "compressed_sha256": "42c2f0e7426b05602f81b03bbbffa7c91a8cf797638e9014d205b0d53c32ef1c",
+      "compressed_bytes": 29645
+    }
+  },
+  "GR_closed": false,
+  "source_git_head_at_packaging": "96aa095fe3436d75827a9f2d57c0d5c04b7ae1ae",
+  "archive_manifest_sha256": "dbccb1653910e00a56a88cd9296b7cbd3c039b845d15364a651fa0adf58cc787",
+  "historical_tools": {
+    "tools/proof_architecture_cold_start_v3.py": {
+      "blob": "1f5268babf97831318f6d827403ba2894f8ab00f",
+      "sha256": "e1a043eed230371d4ed946ec2ffa5d7b85fac0aacefdcf8c6dd577417164f4e2"
+    },
+    "tools/compact_proof_architecture_cold_start_v3.py": {
+      "blob": "73e8bb5a90b3c5a479ab65a9604c34dc4417397d",
+      "sha256": "86cf4f487b23ebafba6faedc6a387de8006bbbcc391d620816ac51840571e1df"
+    },
+    "tools/proof_architecture.py": {
+      "blob": "17c5f42c01fa8100a7c587949231fe0fc0dac582",
+      "sha256": "dc6e3da9760e914b769bafb0544ee11b668411681a8510badb2cda92007f56a2"
+    },
+    "tools/proof_architecture_cold_start.py": {
+      "blob": "df821b972b9b0dbe8c2015e528dc519a21fa0601",
+      "sha256": "51bc4c25c6aaead0e782ffb3db80fecd86498f80dcaa0929f33446a5c0e30b5c"
+    }
+  }
+}

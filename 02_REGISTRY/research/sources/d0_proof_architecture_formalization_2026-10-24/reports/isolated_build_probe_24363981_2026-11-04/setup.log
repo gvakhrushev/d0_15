@@ -1,0 +1,91 @@
+
+--- clone-project ---
+Cloning into '<isolated-repo>'...
+
+--- checkout-published ---
+HEAD is now at 24363981 Construct sharp faithful star memory witness
+
+--- configure-project-line-endings ---
+
+--- clone-source-mathlib ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\mathlib'...
+done.
+
+--- checkout-pin-mathlib ---
+HEAD is now at 6988106320 feat(Algebra): lift more algebraic classes for `Matrix` / `Pi` / `Prod` (#39457)
+
+--- configure-mathlib ---
+
+--- clone-source-plausible ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\plausible'...
+done.
+
+--- checkout-pin-plausible ---
+HEAD is now at a456461 chore: bump toolchain to v4.30.0 (#82)
+
+--- configure-plausible ---
+
+--- clone-source-LeanSearchClient ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\LeanSearchClient'...
+done.
+
+--- checkout-pin-LeanSearchClient ---
+HEAD is now at c5d5b8f fix typo in usage: "woould" -> "would" (#31)
+
+--- configure-LeanSearchClient ---
+
+--- clone-source-importGraph ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\importGraph'...
+done.
+
+--- checkout-pin-importGraph ---
+HEAD is now at 515cf9d chore: bump toolchain to v4.30.0 (#118)
+
+--- configure-importGraph ---
+
+--- clone-source-proofwidgets ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\proofwidgets'...
+done.
+
+--- checkout-pin-proofwidgets ---
+HEAD is now at a84b3e2 chore: bump toolchain to v4.30.0 (#174)
+
+--- configure-proofwidgets ---
+
+--- clone-source-aesop ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\aesop'...
+done.
+
+--- checkout-pin-aesop ---
+HEAD is now at 558915a chore: bump toolchain to v4.30.0 (#328)
+
+--- configure-aesop ---
+
+--- clone-source-Qq ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\Qq'...
+done.
+
+--- checkout-pin-Qq ---
+HEAD is now at a6e6c34 chore: bump toolchain to v4.30.0 (#142)
+
+--- configure-Qq ---
+
+--- clone-source-batteries ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\batteries'...
+done.
+
+--- checkout-pin-batteries ---
+HEAD is now at 32dc18cd chore: bump toolchain to v4.30.0 (#1820)
+
+--- configure-batteries ---
+
+--- clone-source-Cli ---
+Cloning into '<isolated-repo>\03_FORMALIZATION\.lake\packages\Cli'...
+done.
+
+--- checkout-pin-Cli ---
+HEAD is now at 6b907cf chore: bump toolchain to v4.30.0 (#84)
+
+--- configure-Cli ---
+
+--- project-status ---

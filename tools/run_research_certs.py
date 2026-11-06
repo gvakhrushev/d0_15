@@ -26,6 +26,8 @@ import time
 import uuid
 
 import native_checkpoint_inputs
+import historical_book_inputs
+import native_pairing_refinement_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 CERT_DIR = "02_REGISTRY/research/certificates"
@@ -48,7 +50,14 @@ def stop_process_group(process: subprocess.Popen) -> None:
 
 
 def git(repo: Path, *args: str) -> bytes:
-    return subprocess.check_output(["git", "-C", str(repo), *args], stderr=subprocess.PIPE)
+    repo = Path(repo).resolve()
+    command = ["git", "-C", str(repo)]
+    # A common core.worktree can point at another checkout. Bind every Git
+    # operation to the requested worktree, while preserving bare/init callers.
+    if (repo / ".git").exists():
+        command.append(f"--work-tree={repo}")
+    return subprocess.check_output(command + list(args), stderr=subprocess.PIPE,
+                                   env=native_pairing_refinement_inputs.clean_git_environment())
 
 
 def certificate_timeout(source: str) -> int:
@@ -94,6 +103,7 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
             sandbox = Path(temp).resolve() / "tree"
             try:
                 git(repo, "worktree", "add", "--detach", str(sandbox), commit)
+                sandbox_git_dir = native_pairing_refinement_inputs.linked_worktree_git_dir(sandbox)
                 source = sandbox / cert
                 if not source.resolve().is_relative_to(sandbox):
                     raise ValueError("Certificate must resolve inside its isolated worktree")
@@ -102,14 +112,25 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                 if cancelled.is_set():
                     raise CancelledError()
                 historical = native_checkpoint_inputs.apply(sandbox, cert)
+                if historical is None:
+                    historical = native_pairing_refinement_inputs.apply(
+                        sandbox, cert, isolation_parent=Path(temp))
                 if historical is not None:
                     result["historical_input"] = historical.provenance
                     (logs / "historical-input.json").write_text(
                         json.dumps(historical.provenance, indent=2) + "\n", encoding="utf-8")
+                historical_books = historical_book_inputs.apply(
+                    sandbox, cert, isolation_parent=Path(temp))
+                if historical_books is not None:
+                    result["historical_book_inputs"] = historical_books.provenance
+                    (logs / "historical-book-inputs.json").write_text(
+                        json.dumps(historical_books.provenance, indent=2) + "\n", encoding="utf-8")
                 with (logs / "stdout.log").open("wb") as stdout, (logs / "stderr.log").open("wb") as stderr:
                     process = subprocess.Popen(
                         [sys.executable, str(source)], cwd=sandbox,
-                        env={**os.environ, "PYTHONHASHSEED": "0"},
+                        env={**native_pairing_refinement_inputs.clean_git_environment(),
+                             "GIT_DIR": str(sandbox_git_dir), "GIT_WORK_TREE": str(sandbox),
+                             "PYTHONHASHSEED": "0"},
                         stdout=stdout, stderr=stderr, start_new_session=True,
                     )
                     try:
@@ -131,7 +152,9 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                     finally:
                         stop_process_group(process)
 
+                book_mutation = historical_books.restore() if historical_books is not None else False
                 overlay_mutation = historical.restore() if historical is not None else False
+                overlay_mutation = book_mutation or overlay_mutation
                 status = git(sandbox, "status", "--porcelain=v1", "--untracked-files=no")
                 head = git(sandbox, "rev-parse", "HEAD").decode().strip()
                 (logs / "tracked-status.txt").write_bytes(status)
@@ -141,7 +164,7 @@ def run_certificate(repo: Path, commit: str, cert: str, log_dir: Path,
                     git(sandbox, "diff", "--no-ext-diff", "--binary", "--cached", commit, "--"))
                 result["head_after"] = head
                 result["tracked_mutation"] = bool(status or head != commit or overlay_mutation)
-                if historical is not None:
+                if historical is not None or historical_books is not None:
                     result["historical_input_mutation"] = overlay_mutation
                 if result["tracked_mutation"]:
                     result["execution_status"] = result["status"]
@@ -191,6 +214,11 @@ def replay(repo: Path, commit: str, certs: list[str], workers: int, log_dir: Pat
                 if pin["mode"] == "HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE":
                     print(pin["mode"] + " " + pin["target_path"] + " sha256=" +
                           pin["historical_sha256"] + " source=" + pin["source_head"], flush=True)
+                elif pin["mode"] == native_pairing_refinement_inputs.SCOPE:
+                    print(pin["mode"] + " ledger=" + pin["target_path"] + " sha256=" +
+                          pin["historical_sha256"] + " source=" + pin["source_head"] +
+                          " overlaid=" + str(pin["overlaid_source_count"]) +
+                          "; maintained-source compatibility is a separate Lean check", flush=True)
                 else:
                     print("HISTORICAL_INPUT_REPLAY " + pin["target_path"] + " sha256=" +
                           pin["historical_sha256"] + " source=" + pin["source_head"] +
@@ -199,6 +227,10 @@ def replay(repo: Path, commit: str, certs: list[str], workers: int, log_dir: Pat
                     report = pin["report_input"]
                     print("HISTORICAL_REPORT_INPUT_NOT_CURRENT_ROUTE " + report["target_path"] +
                           " sha256=" + report["historical_sha256"] + " source=" + report["source_head"], flush=True)
+            if result.get("historical_book_inputs"):
+                pin = result["historical_book_inputs"]
+                print(pin["mode"] + " books=" + str(len(pin["books"])) +
+                      "; maintained book prose is not certified by this replay", flush=True)
             for name, stream in (("stdout.log", sys.stdout), ("stderr.log", sys.stderr)):
                 path = Path(result["logs"]) / name
                 if path.exists():

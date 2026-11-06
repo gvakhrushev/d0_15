@@ -1,0 +1,833 @@
+{
+  "boundary": "Elaborated declaration types, dependencies and axiom footprint from the compiled public import. This verifies Lean signatures and trust footprint, not semantic equivalence with research prose, physical admission, or GR closure.",
+  "collector_sha256": "66eab23575f4dcd6a276eed16c7a4fb05398e16a9bd0761810693138eb4aa141",
+  "declarations": [
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "R",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.MovingProjectorTransport.2036995147._hygCtx._hyg.3",
+          "type": "Ring R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "P",
+          "type": "R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dP",
+          "type": "R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "U",
+          "type": "R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dU",
+          "type": "R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hP",
+          "type": "P * P = P"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hT",
+          "type": "P * dP + dP * P = dP"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.MovingProjectorTransport.cutTangent P dP U dU -\n    D0.Algebra.MovingProjectorTransport.comm (D0.Algebra.MovingProjectorTransport.generator P dP)\n      (D0.Algebra.MovingProjectorTransport.cut P U) =\n  (1 - P) * (dU - D0.Algebra.MovingProjectorTransport.comm (D0.Algebra.MovingProjectorTransport.generator P dP) U) * P",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 37,
+            "line": 80
+          },
+          "start": {
+            "column": 0,
+            "line": 74
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 20,
+            "line": 75
+          },
+          "start": {
+            "column": 8,
+            "line": 75
+          }
+        }
+      },
+      "elaborated_type": "\u2200 {R : Type u_1} [inst : Ring R] (P dP U dU : R),\n  P * P = P \u2192\n    P * dP + dP * P = dP \u2192\n      D0.Algebra.MovingProjectorTransport.cutTangent P dP U dU -\n          D0.Algebra.MovingProjectorTransport.comm (D0.Algebra.MovingProjectorTransport.generator P dP)\n            (D0.Algebra.MovingProjectorTransport.cut P U) =\n        (1 - P) *\n            (dU - D0.Algebra.MovingProjectorTransport.comm (D0.Algebra.MovingProjectorTransport.generator P dP) U) *\n          P",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.MovingProjectorTransport",
+      "name": "D0.Algebra.MovingProjectorTransport.cut_relative",
+      "proof_dependencies": [
+        "D0.Algebra.MovingProjectorTransport.cut_relative_of_transport",
+        "D0.Algebra.MovingProjectorTransport.generator",
+        "D0.Algebra.MovingProjectorTransport.generator_transports",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Ring",
+        "Ring.toSemiring",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean",
+      "type_dependencies": [
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "D0.Algebra.MovingProjectorTransport.comm",
+        "D0.Algebra.MovingProjectorTransport.cut",
+        "D0.Algebra.MovingProjectorTransport.cutTangent",
+        "D0.Algebra.MovingProjectorTransport.generator",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HSub.hSub",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Ring",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "SubNegMonoid.toSub",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHSub"
+      ]
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "R",
+          "type": "Type u_1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.MovingProjectorTransport.3755792048._hygCtx._hyg.3",
+          "type": "Ring R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Algebra.MovingProjectorTransport.3755792048._hygCtx._hyg.6",
+          "type": "StarRing R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "P",
+          "type": "R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dP",
+          "type": "R"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hP",
+          "type": "star P = P"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hdP",
+          "type": "star dP = dP"
+        }
+      ],
+      "conclusion_whnf": "star (D0.Algebra.MovingProjectorTransport.generator P dP) = -D0.Algebra.MovingProjectorTransport.generator P dP",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 67,
+            "line": 29
+          },
+          "start": {
+            "column": 0,
+            "line": 24
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 26
+          },
+          "start": {
+            "column": 8,
+            "line": 26
+          }
+        }
+      },
+      "elaborated_type": "\u2200 {R : Type u_1} [inst : Ring R] [inst_1 : StarRing R] (P dP : R),\n  star P = P \u2192\n    star dP = dP \u2192\n      star (D0.Algebra.MovingProjectorTransport.generator P dP) = -D0.Algebra.MovingProjectorTransport.generator P dP",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Algebra.MovingProjectorTransport",
+      "name": "D0.Algebra.MovingProjectorTransport.generator_star_eq_neg",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddGroup.toSubNegMonoid",
+        "AddGroupWithOne.toAddGroup",
+        "D0.Algebra.MovingProjectorTransport.generator",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.trans",
+        "HMul.hMul",
+        "HSub.hSub",
+        "InvolutiveStar.toStar",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toNonAssocRing",
+        "Ring.toSemiring",
+        "Star.star",
+        "StarAddMonoid.toInvolutiveStar",
+        "StarMul.star_mul",
+        "StarMul.toInvolutiveStar",
+        "StarRing",
+        "StarRing.toStarAddMonoid",
+        "StarRing.toStarMul",
+        "SubNegMonoid.toAddMonoid",
+        "SubNegMonoid.toSub",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "True",
+        "congr",
+        "congrArg",
+        "eq_self",
+        "instDistribOfSemiring",
+        "instHMul",
+        "instHSub",
+        "neg_sub",
+        "of_eq_true",
+        "star_sub"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean",
+      "type_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "D0.Algebra.MovingProjectorTransport.generator",
+        "Eq",
+        "InvolutiveStar.toStar",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toNonAssocRing",
+        "Star.star",
+        "StarAddMonoid.toInvolutiveStar",
+        "StarRing",
+        "StarRing.toStarAddMonoid",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid"
+      ]
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.carCreateInt_degree_raise._native.native_decide.ax_1_1",
+        "D0.Geometry.carCreateInt_singleton_vacuum._native.native_decide.ax_1_1",
+        "D0.Geometry.carCreateInt_support._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "\u2115"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "t",
+          "type": "\u2115"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "\u03c8",
+          "type": "D0.Geometry.ArchiveCochainBasis N \u2192 \u211d"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.dForward (N + t) (D0.Geometry.archiveRepeatedGradedPullback N \u03c8 t) =\n  D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.dForward N \u03c8) t",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 43,
+            "line": 141
+          },
+          "start": {
+            "column": 0,
+            "line": 130
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 131
+          },
+          "start": {
+            "column": 8,
+            "line": 131
+          }
+        }
+      },
+      "elaborated_type": "\u2200 (N t : \u2115) (\u03c8 : D0.Geometry.ArchiveCochain N),\n  D0.Geometry.dForward (N + t) (D0.Geometry.archiveRepeatedGradedPullback N \u03c8 t) =\n    D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.dForward N \u03c8) t",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveGradedRefinementComposedReadout",
+      "name": "D0.Geometry.archive_repeated_graded_chain",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.archiveGradedCochainPullback",
+        "D0.Geometry.archiveRepeatedGradedPullback",
+        "D0.Geometry.archive_graded_cochain_chain",
+        "D0.Geometry.dForward",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.recAux",
+        "OfNat.ofNat",
+        "congrArg",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.archiveRepeatedGradedPullback",
+        "D0.Geometry.dForward",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "instAddNat",
+        "instHAdd"
+      ]
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "\u2115"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad \u00d7 D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "D0.Role \u2192 ZMod (D0.archiveFibers (N + (N + 2)))"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.oneFormComponent (N + (N + 2))\n    (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r y =\n  if \u2191((D0.Geometry.finZModEquiv (N + (N + 2))).symm (y r)) < N + 2 then 2 else 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 8,
+            "line": 156
+          },
+          "start": {
+            "column": 0,
+            "line": 143
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 44,
+            "line": 145
+          },
+          "start": {
+            "column": 8,
+            "line": 145
+          }
+        }
+      },
+      "elaborated_type": "\u2200 (N : \u2115) (r : D0.Role) (y : D0.Geometry.ArchiveRolePhaseGroup (N + (N + 2))),\n  D0.Geometry.oneFormComponent (N + (N + 2))\n      (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r y =\n    if \u2191((D0.Geometry.finZModEquiv (N + (N + 2))).symm (y r)) < N + 2 then 2 else 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveGradedRefinementComposedReadout",
+      "name": "D0.Geometry.archive_doubling_singleton_component",
+      "proof_dependencies": [
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddSemigroup",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddSemigroup.toAdd",
+        "Bool",
+        "CommGroupWithZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommGroupWithZero.toGroupWithZero",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.archiveRepeatedGradedPullback",
+        "D0.Geometry.archiveUnitSingletonCochain",
+        "D0.Geometry.archive_repeated_singleton_component",
+        "D0.Geometry.finZModEquiv",
+        "D0.Geometry.oneFormComponent",
+        "D0.Geometry.oneFormComponent.eq_1",
+        "D0.Geometry.singletonFockState",
+        "D0.Role",
+        "D0.archiveFibers",
+        "D0.archivePhaseIndex",
+        "DFunLike.coe",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Equiv",
+        "Equiv.instEquivLike",
+        "Equiv.symm",
+        "EquivLike.toFunLike",
+        "Field.toSemifield",
+        "Fin.val",
+        "GroupWithZero",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toMonoidWithZero",
+        "GroupWithZero.toNontrivial",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Int",
+        "Int.instNegInt",
+        "InvOneClass.toOne",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "IsOrderedAddMonoid.toAddLeftMono",
+        "LE.le",
+        "LT.lt",
+        "List.nil",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Meta.Positivity.pos_of_isNat",
+        "Mathlib.Tactic.FieldSimp.NF.atom_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.cons",
+        "Mathlib.Tactic.FieldSimp.NF.cons_eq_div_of_eq_div",
+        "Mathlib.Tactic.FieldSimp.NF.cons_ne_zero",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval\u2081",
+        "Mathlib.Tactic.FieldSimp.NF.eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval_cons_neg",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.one_div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.eq_div_of_eq_one_of_subst",
+        "Mathlib.Tactic.FieldSimp.eq_eq_cancel_eq",
+        "Mathlib.Tactic.FieldSimp.eq_mul_of_eq_eq_eq_mul",
+        "Mathlib.Tactic.FieldSimp.subst_add",
+        "Mathlib.Tactic.FieldSimp.zpow'",
+        "Mathlib.Tactic.FieldSimp.zpow'_one",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.ble",
+        "Nat.cast",
+        "Nat.cast_add",
+        "Nat.cast_nonneg'",
+        "Nat.decLt",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Ne",
+        "NeZero.one",
+        "Neg.neg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "PartialOrder.toPreorder",
+        "Preorder.toLE",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instAddCommSemigroup",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instIsOrderedAddMonoid",
+        "Real.instIsOrderedRing",
+        "Real.instNatCast",
+        "Real.instNontrivial",
+        "Real.instPreorder",
+        "Real.instRing",
+        "Real.instZero",
+        "Real.instZeroLEOneClass",
+        "Real.partialOrder",
+        "Real.semiring",
+        "Right.add_pos_of_nonneg_of_pos",
+        "Ring.toAddGroupWithOne",
+        "Semifield.toCommGroupWithZero",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "congr_arg\u2082",
+        "covariant_swap_add_of_covariant_add",
+        "div_one",
+        "id",
+        "inferInstance",
+        "instAddNat",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instIsCancelMulZero",
+        "instLTNat",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "ite",
+        "ne_of_gt",
+        "one_mul",
+        "one_ne_zero",
+        "rfl"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.archiveRepeatedGradedPullback",
+        "D0.Geometry.archiveUnitSingletonCochain",
+        "D0.Geometry.finZModEquiv",
+        "D0.Geometry.oneFormComponent",
+        "D0.Role",
+        "D0.archiveFibers",
+        "D0.archivePhaseIndex",
+        "DFunLike.coe",
+        "Eq",
+        "Equiv",
+        "Equiv.instEquivLike",
+        "Equiv.symm",
+        "EquivLike.toFunLike",
+        "Fin.val",
+        "HAdd.hAdd",
+        "LT.lt",
+        "Nat",
+        "Nat.decLt",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instNatCast",
+        "Real.instZero",
+        "ZMod",
+        "Zero.toOfNat0",
+        "instAddNat",
+        "instHAdd",
+        "instLTNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "ite"
+      ]
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "\u2115"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad \u00d7 D0.Dyad"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.archiveNormalizedSingletonL1 (N + (N + 2))\n      (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r =\n    1 \u2227\n  D0.Geometry.archiveNormalizedSingletonL2Squared (N + (N + 2))\n      (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r =\n    1",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 21,
+            "line": 212
+          },
+          "start": {
+            "column": 0,
+            "line": 193
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 47,
+            "line": 195
+          },
+          "start": {
+            "column": 8,
+            "line": 195
+          }
+        }
+      },
+      "elaborated_type": "\u2200 (N : \u2115) (r : D0.Role),\n  D0.Geometry.archiveNormalizedSingletonL1 (N + (N + 2))\n        (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r =\n      1 \u2227\n    D0.Geometry.archiveNormalizedSingletonL2Squared (N + (N + 2))\n        (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r =\n      1",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveGradedRefinementComposedReadout",
+      "name": "D0.Geometry.archive_doubling_fixed_component_errors",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoid.toNSMul",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toNatCast",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "And.intro",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.archiveNormalizedSingletonL1",
+        "D0.Geometry.archiveNormalizedSingletonL2Squared",
+        "D0.Geometry.archiveRepeatedGradedPullback",
+        "D0.Geometry.archiveSingletonComponentError",
+        "D0.Geometry.archiveUnitSingletonCochain",
+        "D0.Geometry.archive_doubling_singleton_abs_error",
+        "D0.Geometry.archive_doubling_singleton_sq_error",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "DivisionSemiring.toGroupWithZero",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toSemifield",
+        "Fin.fintype",
+        "Finset",
+        "Finset.card",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.sum_const",
+        "Finset.univ",
+        "Fintype.card",
+        "Fintype.card_pos_iff",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Iff.mpr",
+        "LT.lt",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.cast",
+        "Nat.cast_inj._simp_1",
+        "Nat.cast_zero",
+        "Nat.instPreorder",
+        "Ne",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonAssocSemiring.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "Nonempty",
+        "Nonempty.intro",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instFintype",
+        "Pi.instZero",
+        "RCLike.charZero_rclike",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instAddGroup",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instMonoid",
+        "Real.instNatCast",
+        "Real.instOne",
+        "Real.instRCLike",
+        "Real.instRing",
+        "Real.instZero",
+        "Real.lattice",
+        "Real.semiring",
+        "Ring.toAddGroupWithOne",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "ZMod",
+        "ZMod.commRing",
+        "ZMod.fintype",
+        "Zero.toOfNat0",
+        "abs",
+        "cast",
+        "congrArg",
+        "congrFun'",
+        "div_self",
+        "id",
+        "instAddNat",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instLTNat",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatNat",
+        "mul_one",
+        "ne_of_gt",
+        "nsmul_eq_mul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean",
+      "type_dependencies": [
+        "And",
+        "D0.Geometry.archiveNormalizedSingletonL1",
+        "D0.Geometry.archiveNormalizedSingletonL2Squared",
+        "D0.Geometry.archiveRepeatedGradedPullback",
+        "D0.Geometry.archiveUnitSingletonCochain",
+        "D0.Role",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Real",
+        "Real.instOne",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ]
+    }
+  ],
+  "lean_source_sha256": "765c08379fe7c14ea3cc0e9b058d6cb405b962069d2269cdf45e385899d48f52",
+  "public_import_root": "D0.All",
+  "schema": "d0-lean-declaration-receipt-v1",
+  "snapshot_commit": "30ffef0f5a4353874f8966a4b69d09e534f3c47d",
+  "status": "PASS_DECLARATION_EXTRACTION",
+  "worktree_dirty": true
+}

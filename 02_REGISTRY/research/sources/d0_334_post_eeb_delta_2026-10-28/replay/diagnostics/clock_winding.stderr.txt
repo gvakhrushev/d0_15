@@ -1,0 +1,6 @@
+/private/tmp/d0-334-pr334-head-7261923/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py:85: RuntimeWarning: divide by zero encountered in matmul
+  return R@Adj@R,R@R
+/private/tmp/d0-334-pr334-head-7261923/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py:85: RuntimeWarning: overflow encountered in matmul
+  return R@Adj@R,R@R
+/private/tmp/d0-334-pr334-head-7261923/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py:85: RuntimeWarning: invalid value encountered in matmul
+  return R@Adj@R,R@R

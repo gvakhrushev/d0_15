@@ -1,0 +1,171 @@
+{
+  "artifacts": [
+    {
+      "bytes": 142,
+      "path": "COMMITS.tsv",
+      "sha256": "b04a2cf131185c84564460b3366e5a631e97172e37ddf816f99f9ad3df5283d5"
+    },
+    {
+      "bytes": 2240,
+      "path": "README.md",
+      "sha256": "38d680065f0013a8bd109c440776f4ce45b6e0cea18425127cd7119040a77b17"
+    },
+    {
+      "bytes": 3053,
+      "path": "REPLAY_REPORT.md",
+      "sha256": "6b2c5f634596a389a971a1b0065e8db782016466a88f2ea970112c70c691f158"
+    },
+    {
+      "bytes": 14760,
+      "path": "UPSTREAM.patch.gz",
+      "sha256": "5e60826c267a69d0390927945992b8d5667e509c996775f1b53aa499a5c97384"
+    },
+    {
+      "bytes": 1336384,
+      "path": "UPSTREAM_SOURCES.zip",
+      "sha256": "fabcf34d38f919492dc0dd7f43f2c466f25cb923b987c5b16682844c9c3ca155"
+    },
+    {
+      "bytes": 12562,
+      "path": "checker/check_7dg.py",
+      "sha256": "b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba"
+    },
+    {
+      "bytes": 6646,
+      "path": "checker/owner_receipt.json",
+      "sha256": "d42766a5b0cbd1d174abf45b373d2f189a955ca686e974ecd63d497dd68b394a"
+    },
+    {
+      "bytes": 12562,
+      "path": "replay/check_7dg.py",
+      "sha256": "b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba"
+    },
+    {
+      "bytes": 6646,
+      "path": "replay/normal_output.json",
+      "sha256": "d42766a5b0cbd1d174abf45b373d2f189a955ca686e974ecd63d497dd68b394a"
+    },
+    {
+      "bytes": 0,
+      "path": "replay/normal_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6646,
+      "path": "replay/optimized_output.json",
+      "sha256": "d42766a5b0cbd1d174abf45b373d2f189a955ca686e974ecd63d497dd68b394a"
+    },
+    {
+      "bytes": 0,
+      "path": "replay/optimized_stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6646,
+      "path": "replay/owner_receipt.json",
+      "sha256": "d42766a5b0cbd1d174abf45b373d2f189a955ca686e974ecd63d497dd68b394a"
+    },
+    {
+      "bytes": 4901,
+      "path": "replay/repo/02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+      "sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee"
+    },
+    {
+      "bytes": 17833,
+      "path": "replay/repo/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "bytes": 9753,
+      "path": "verify_source_delta.py",
+      "sha256": "41678a32e0e07fa2f67f9e72df84f3e6ebb6da6b940a007aae0e3475ac9376c8"
+    }
+  ],
+  "commit_list": {
+    "path": "COMMITS.tsv",
+    "sha256": "b04a2cf131185c84564460b3366e5a631e97172e37ddf816f99f9ad3df5283d5"
+  },
+  "owner_pr": 334,
+  "replay": {
+    "checker": "checker/check_7dg.py",
+    "checker_sha256": "b96babe4bcbcf3ce14d601e4079736e244389a3db04bf3ae880d0aefd85871ba",
+    "checks": 101,
+    "normal_optimized_owner_bytes_identical": true,
+    "normal_output": "replay/normal_output.json",
+    "normal_output_sha256": "d42766a5b0cbd1d174abf45b373d2f189a955ca686e974ecd63d497dd68b394a",
+    "normal_stderr": "replay/normal_stderr.txt",
+    "optimized_output": "replay/optimized_output.json",
+    "optimized_stderr": "replay/optimized_stderr.txt",
+    "owner_output": "replay/owner_receipt.json",
+    "owner_receipt_sha256": "d42766a5b0cbd1d174abf45b373d2f189a955ca686e974ecd63d497dd68b394a",
+    "python": "3.9.6",
+    "status": "PASS",
+    "stderr_bytes": 0,
+    "sympy": "1.14.0"
+  },
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-pr-source-range-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "physical_AF_growth_cost_supplied": false,
+    "physical_AF_port_addressability_proved": false,
+    "wire_execution_domain_membership_claimed": false
+  },
+  "source_archive": {
+    "bytes": 1336384,
+    "member_count": 4,
+    "path": "UPSTREAM_SOURCES.zip",
+    "sha256": "fabcf34d38f919492dc0dd7f43f2c466f25cb923b987c5b16682844c9c3ca155"
+  },
+  "source_commits": [
+    {
+      "authored_at": "2026-10-28T16:47:28+03:00",
+      "sha": "15742b846f380b75e7d8f869faf7bc51623ed2a6",
+      "subject": "research(#334): factor canonical AF frames into explicit Golden port calls"
+    }
+  ],
+  "source_files": [
+    {
+      "archive_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "bytes": 1130215,
+      "head_git_blob_sha1": "320ec447c483582a8426dbb3e2757a5cbb519089",
+      "sha256": "fe331fb4edb86c9064918fe4e249e0110b9f7da5a127364e642d48ef191a990a"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "bytes": 3026319,
+      "head_git_blob_sha1": "a090fc24a51d28f67c13a1b3d29aade5a6f2230b",
+      "sha256": "590e692a1c16b25155394cdb391a047615a69d16a1919992cdfff0a6c1e824e2"
+    }
+  ],
+  "source_inputs": [
+    {
+      "archive_path": "inputs/a4d_native_fibonacci_record_activation.py",
+      "bytes": 4901,
+      "commit": "15742b846f380b75e7d8f869faf7bc51623ed2a6",
+      "git_blob_sha1": "47761f34bfffb4fe104ca66e0e1b61a509b9bc7a",
+      "repository_path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+      "sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee"
+    },
+    {
+      "archive_path": "inputs/native_execution.py",
+      "bytes": 17833,
+      "commit": "15742b846f380b75e7d8f869faf7bc51623ed2a6",
+      "git_blob_sha1": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "repository_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  ],
+  "source_patch": {
+    "bytes": 43110,
+    "path": "UPSTREAM.patch.gz",
+    "sha256": "4735d52b849600c961bbae9d827bbba1c6169ed299b24905d3808d90241706dc",
+    "storage_bytes": 14760,
+    "storage_sha256": "5e60826c267a69d0390927945992b8d5667e509c996775f1b53aa499a5c97384"
+  },
+  "source_range": {
+    "base_commit": "523d2cbcc0a9771ea40faa4a2eac84cc78704b0e",
+    "commits": 1,
+    "head_commit": "15742b846f380b75e7d8f869faf7bc51623ed2a6"
+  }
+}

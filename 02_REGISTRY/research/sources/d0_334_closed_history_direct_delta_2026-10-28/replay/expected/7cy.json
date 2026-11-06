@@ -1,0 +1,26 @@
+{
+  "Einstein_scalar_components_checked": 16,
+  "Klein_Gordon": "0",
+  "Lorentz_connection_and_torsion": "exact zero for all components",
+  "Ricci_scalar": "1/(3*tau)",
+  "compact_test_margin": "2/405",
+  "density_metric_at_witness": "g_tilde=g but full coframe sources differ",
+  "det_coframe": "1",
+  "direct_star_coframe_source": "fstar*transpose(inverse(e))",
+  "direct_star_metric_source": "-kappa*q*g/2",
+  "independent_Palatini_variation": "all 16 coframe rows checked at fixed omega from its curvature two-form",
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md": "320e342c43fd6d4d1f57d3cc288652d1d8b964d577ed55dc580bc3fac556210b",
+    "02_REGISTRY/research/A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md": "f23ef19ff9c09e51b9091fd5da8b3936d3a66ac243d157c7a016318c778d28af",
+    "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md": "10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05",
+    "02_REGISTRY/research/A4D_PARITY_RESOLVED_GEOMETRIC_SOURCE_GLOBAL_2026_10_27.md": "43e94708f85630c9c86e92c6b257eadd96f382acd5f2e462ef8fae58095ef6ee"
+  },
+  "matter_kinetic": "1/(6*kappa*tau)",
+  "metric": "diag((2tau)^-1,-(2tau)^(1/3),-(2tau)^(1/3),-(2tau)^(1/3))",
+  "native_kappa_for_orientation": "23.4164067518840749728955820649",
+  "native_ratio": "-r_y(0,0)/r_x(0,0)=kappa_native>20, exact polynomial and rational bounds",
+  "radial_source_density": "2/(3*tau)",
+  "scope": "exact continuum comparison on fixed uniform units/density; no discrete root, emitted GR word, physical source selection or GR closure",
+  "source_sha256": "6fb6f8aa620d5458e79c8d4566a8380075cb6a8e1d31e45b2184178429ad70b0",
+  "status": "PASS_NON_NULL_DENSITY_SOURCE_SEPARATION"
+}

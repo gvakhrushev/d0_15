@@ -1,0 +1,119 @@
+{
+  "key": "D0.Geometry.principalFrameJuliaEq26_blind_to_ABSignFlip_links",
+  "claim_mapping": {
+    "full_name": "D0.Geometry.principalFrameJuliaEq26_blind_to_ABSignFlip_links"
+  },
+  "elaborated_declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "_private.D0.Geometry.ArchiveJuliaRaisingOperatorReadout.0.D0.Geometry.archiveCreatorPermSign._native.native_decide.ax_1_1",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Role → D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "L",
+          "type": "D0.Role → D0.Role → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.principalFrameObservedQueryColumnMatrix\n      (D0.Geometry.principalFrameJuliaQueryFamily F L fun x => LinearEquiv.refl ℝ D0.Geometry.RoleSpace) =\n    D0.Geometry.principalFrameObservedQueryColumnMatrix\n      (D0.Geometry.principalFrameJuliaQueryFamily F L fun x => D0.Geometry.archiveJuliaABSignFlipEquiv) ∧\n  (fun x => LinearEquiv.refl ℝ D0.Geometry.RoleSpace) ≠ fun x => D0.Geometry.archiveJuliaABSignFlipEquiv",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 57,
+            "line": 336
+          },
+          "start": {
+            "column": 0,
+            "line": 318
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 57,
+            "line": 321
+          },
+          "start": {
+            "column": 8,
+            "line": 321
+          }
+        }
+      },
+      "elaborated_type": "∀ (F L : Matrix D0.Role D0.Role ℝ),\n  D0.Geometry.principalFrameObservedQueryColumnMatrix\n        (D0.Geometry.principalFrameJuliaQueryFamily F L fun x => LinearEquiv.refl ℝ D0.Geometry.RoleSpace) =\n      D0.Geometry.principalFrameObservedQueryColumnMatrix\n        (D0.Geometry.principalFrameJuliaQueryFamily F L fun x => D0.Geometry.archiveJuliaABSignFlipEquiv) ∧\n    (fun x => LinearEquiv.refl ℝ D0.Geometry.RoleSpace) ≠ fun x => D0.Geometry.archiveJuliaABSignFlipEquiv",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.A4DJuliaRecoveryComposition",
+      "name": "D0.Geometry.principalFrameJuliaEq26_blind_to_ABSignFlip_links",
+      "proof_dependencies": [
+        "And.intro",
+        "D0.A",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaABSignFlipEquiv",
+        "D0.Geometry.archiveJuliaABSignFlipEquiv_ne_refl",
+        "D0.Geometry.principalFrameColumnMatrix",
+        "D0.Geometry.principalFrameJuliaQueryFamily",
+        "D0.Geometry.principalFrameJuliaQueryFamily_columnMatrix",
+        "D0.Geometry.principalFrameObservedQueryColumnMatrix",
+        "D0.Role",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "LinearEquiv",
+        "LinearEquiv.refl",
+        "Matrix",
+        "Ne",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "congrArg",
+        "congrFun",
+        "id"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaABSignFlipEquiv",
+        "D0.Geometry.principalFrameJuliaQueryFamily",
+        "D0.Geometry.principalFrameObservedQueryColumnMatrix",
+        "D0.Role",
+        "Eq",
+        "LinearEquiv",
+        "LinearEquiv.refl",
+        "Matrix",
+        "Ne",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "RingHomInvPair.ids",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean"
+    }
+  ],
+  "collector_sha256": "3979a2be30f27d417e8513bc3c6ae3285b0e58e2b6f76f0891d7d54fe2cc6134",
+  "lean_source_digest": "0ed7f3982d6a4ae4a1000c0c32a4f4258e6a225605239c58c0e1df2bbbd6afde",
+  "snapshot_commit": "f04dba0ce54b9dd98929bc77ece06d71b117149f",
+  "public_import_root": "D0.All",
+  "worktree_dirty": true
+}

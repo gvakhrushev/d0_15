@@ -3,6 +3,7 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Algebra.BigOperators.Fin
 import Mathlib.Tactic
 import D0.Topology.GenericTripartiteHomology
+import D0.Topology.GradedIncidenceComplex
 
 /-!
 # D0.Geometry.SceneCochainComplex
@@ -44,13 +45,45 @@ def sceneBoundary1 : Matrix SceneVertex SceneEdge ℚ :=
 def sceneBoundary2 : Matrix SceneEdge SceneTriangle ℚ :=
   boundary2 (p := sceneP) (q := sceneQ) (r := sceneR)
 
+/-- The actual tripartite incidence matrices, read as a graded complex over ℚ.
+The transpose convention makes its generic `d₀` and `d₁` the scene cochain
+differentials `∂₁ᵀ` and `∂₂ᵀ`. -/
+noncomputable def sceneGradedComplex : D0.Topology.GradedCellComplex ℚ where
+  V := SceneVertex
+  E := SceneEdge
+  F := SceneTriangle
+  fintypeV := inferInstance
+  fintypeE := inferInstance
+  fintypeF := inferInstance
+  boundary1 := sceneBoundary1.transpose
+  boundary2 := sceneBoundary2.transpose
+  boundary_nilpotency := by
+    intro t v
+    have hboundary : sceneBoundary1 * sceneBoundary2 = 0 := by
+      simpa [sceneBoundary1, sceneBoundary2] using
+        (boundary_squared_zero (p := sceneP) (q := sceneQ) (r := sceneR))
+    calc
+      (Finset.univ.sum fun e : SceneEdge =>
+        sceneBoundary2 e t * sceneBoundary1 v e) =
+          Finset.univ.sum fun e : SceneEdge =>
+            sceneBoundary1 v e * sceneBoundary2 e t := by
+              apply Finset.sum_congr rfl
+              intro e _
+              ring
+      _ = (sceneBoundary1 * sceneBoundary2) v t := by
+            rw [Matrix.mul_apply]
+      _ = 0 := by rw [hboundary]; simp
+
+/-! The local differential names remain a compatibility API; their definitions
+delegate to the shared coefficient-generic incidence operator. -/
+
 /-- Literal cochain differential `d₀ = ∂₁ᵀ`. -/
-def d0 (A : SceneC0) : SceneC1 :=
-  sceneBoundary1.transpose.mulVec A
+noncomputable def d0 (A : SceneC0) : SceneC1 :=
+  D0.Topology.d0 sceneGradedComplex A
 
 /-- Literal cochain differential `d₁ = ∂₂ᵀ`. -/
-def d1 (B : SceneC1) : SceneC2 :=
-  sceneBoundary2.transpose.mulVec B
+noncomputable def d1 (B : SceneC1) : SceneC2 :=
+  D0.Topology.d1 sceneGradedComplex B
 
 /-- The actual specialized carrier cardinalities are derived from the generic
 finite tripartite types, not imported as physical inventory constants. -/
@@ -66,15 +99,7 @@ theorem scene_d1_d0_zero :
     ∀ A : SceneC0, d1 (d0 A) = 0 := by
   intro A
   funext f
-  unfold d1 d0
-  rw [Matrix.mulVec_mulVec]
-  rw [← Matrix.transpose_mul]
-  change ((sceneBoundary1 * sceneBoundary2)ᵀ *ᵥ A) f = 0
-  rw [show sceneBoundary1 * sceneBoundary2 =
-      boundary1 (p := sceneP) (q := sceneQ) (r := sceneR) *
-        boundary2 (p := sceneP) (q := sceneQ) (r := sceneR) by rfl]
-  rw [boundary_squared_zero (p := sceneP) (q := sceneQ) (r := sceneR)]
-  simp
+  exact D0.Topology.discrete_exact_bianchi sceneGradedComplex A f
 
 /-- The generic rank owners specialize to the literal scene ranks. -/
 theorem scene_boundary_ranks :

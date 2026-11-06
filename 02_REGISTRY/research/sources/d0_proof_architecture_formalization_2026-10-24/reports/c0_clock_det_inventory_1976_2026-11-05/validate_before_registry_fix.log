@@ -1,0 +1,3 @@
+claims=889 assumptions=31 aliases=58 formal_support=286 lean_closure=1009
+ERROR orphan Lean modules outside registry/support closure: D0/Algebra/IsometricClockDeterminant.lean
+FAIL errors=1 warnings=0

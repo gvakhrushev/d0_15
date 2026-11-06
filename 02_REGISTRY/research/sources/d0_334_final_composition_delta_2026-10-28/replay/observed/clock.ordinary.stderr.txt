@@ -1,0 +1,6 @@
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_final_composition_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py:85: RuntimeWarning: divide by zero encountered in matmul
+  return R@Adj@R,R@R
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_final_composition_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py:85: RuntimeWarning: overflow encountered in matmul
+  return R@Adj@R,R@R
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_final_composition_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py:85: RuntimeWarning: invalid value encountered in matmul
+  return R@Adj@R,R@R

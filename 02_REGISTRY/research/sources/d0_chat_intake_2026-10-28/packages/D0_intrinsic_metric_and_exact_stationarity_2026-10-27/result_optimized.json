@@ -1,0 +1,105 @@
+{
+  "status": "PASS_INTRINSIC_METRIC_HEAT_EQUIVALENCE_AND_C2_CONTROL",
+  "checks": 59,
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "mpmath_digits": 100,
+  "pinned_source": "c7708742bea04684ffd6aed16774cfdf1b94b129",
+  "metric_example": {
+    "det_e": "4",
+    "volume_density": "3/2",
+    "metric_factor_relative_to_g": "3/8",
+    "det_coordinate_J": "3"
+  },
+  "exact_thermal_bound": "111669149696/9598843598690745",
+  "whole_price_source_ratios": [
+    {
+      "r": "0.0",
+      "Bprime_over_Jprime": "0.999994494828723485857983587492"
+    },
+    {
+      "r": "1.8512395784882030763e-6",
+      "Bprime_over_Jprime": "0.999994494834083111477967279658"
+    },
+    {
+      "r": "0.01",
+      "Bprime_over_Jprime": "0.999994523420736470113863848437"
+    },
+    {
+      "r": "0.1",
+      "Bprime_over_Jprime": "0.999994749673631086585307144496"
+    },
+    {
+      "r": "0.25",
+      "Bprime_over_Jprime": "0.999995013223351550631684246524"
+    }
+  ],
+  "exact_finite_signal_kinetic_metric_controls": [
+    {
+      "eps": "2^-5",
+      "kinetic_density_factor": "0.99788633798785272492335213850600737",
+      "relative_metric_error_over_eps": "0.06763718438871280245273157"
+    },
+    {
+      "eps": "2^-7",
+      "kinetic_density_factor": "0.99946753576745914221358432236484249",
+      "relative_metric_error_over_eps": "0.06815542176522979666120674"
+    },
+    {
+      "eps": "2^-9",
+      "kinetic_density_factor": "0.99986663089627069542844195065257583",
+      "relative_metric_error_over_eps": "0.06828498110940394063772127"
+    },
+    {
+      "eps": "2^-11",
+      "kinetic_density_factor": "0.99996664190871804184432649107372698",
+      "relative_metric_error_over_eps": "0.06831737094545030281934628"
+    }
+  ],
+  "whole_price_C2_controls": [
+    {
+      "eps": "2^-4",
+      "errors_over_eps": [
+        "0.1425982670361057048695728",
+        "0.1185733734356391925639941",
+        "0.3606273221904600061309"
+      ]
+    },
+    {
+      "eps": "2^-6",
+      "errors_over_eps": [
+        "0.1425284983329141704732994",
+        "0.1160524305994797952138399",
+        "0.3517022141265457840255795"
+      ]
+    },
+    {
+      "eps": "2^-8",
+      "errors_over_eps": [
+        "0.1425171661472895528144838",
+        "0.1154348917097563910180103",
+        "0.3495244167956096397970667"
+      ]
+    },
+    {
+      "eps": "2^-10",
+      "errors_over_eps": [
+        "0.142514714973669407626105",
+        "0.115281304517173988234404",
+        "0.3489833316327493415477429"
+      ]
+    }
+  ],
+  "root_certificate_arithmetic": {
+    "K": "2",
+    "eta": "1/1000",
+    "delta": "1/100",
+    "L": "3",
+    "radius": "1/250",
+    "contraction": "11/250"
+  },
+  "structural_controls_not_native_executions": true,
+  "original_large_lattice_inverse_bound_established": false,
+  "native_compilation_and_full_valuation_identified": false,
+  "unconditional_GR_closed": false
+}

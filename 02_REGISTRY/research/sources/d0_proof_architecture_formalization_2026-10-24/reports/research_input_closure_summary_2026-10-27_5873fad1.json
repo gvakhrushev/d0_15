@@ -1,0 +1,729 @@
+{
+  "schema": "d0-research-input-closure-summary-v1",
+  "scope": "Read-only selection and provenance status; no scientific replay or completeness claim.",
+  "source_commit": "5873fad110e8b3c8c874c510b0d50f0ce0c101f5",
+  "base_commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+  "command": "python3 tools/research_input_closure.py --ref 5873fad110e8b3c8c874c510b0d50f0ce0c101f5 --base 8b94198c8dfbdf5983ad0b350b058fb30bb68a54 --report <new-file>",
+  "selector_git_blob": "b5f9db6cde080bdc534f7fe93d9dbd74a30bfb73",
+  "selected_count": 95,
+  "selected_with_unknown_dependency": 95,
+  "provenance_ok": true,
+  "provenance_status_counts": {
+    "match": 325,
+    "unpinned": 1211
+  },
+  "scientific_replay": false,
+  "selected": [
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_book03_feedback_variation_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_closure_packet_integration_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 3
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_complete_flag_source_minimum_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_external_g0_review_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_external_g0_supplement_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_finite_probe_palatini_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_global_result_composition_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_moving_preparation_control_intake_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_moving_preparation_golden_interferometer_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_af_scene_heat_comparison_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_af_trace_preparation_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_affine_history_scalar_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_affine_probe_nogo_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_autonomous_record_program_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 7
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_centered_metric_lift_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_clock_price_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 5
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_closed_record_engine_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 5
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_cochain_refinement_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_complete_price_selection_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 5
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_connection_action_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_constrained_price_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 12
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_coupled_hodge_scale_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 3
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_cyclic_history_price_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_cyclic_memory_minimum_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 4
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_dynamical_ownership_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "historical-report-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_edge_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_engine_correlated_current_extension_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_factor_imbalance_remainder_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 3
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_fock_record_binding_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_golden_cost_refinement_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_golden_fixed_calibration_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_golden_history_preparation_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_golden_hodge_state_separation_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_golden_program_compilation_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_gr_completion_synthesis_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 5
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_history_action_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "historical-report-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_history_response_descent_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_hodge_archive_metric_refinement_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_joint_field_minimum_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 5
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_jones_record_transport_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_logdet_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_matter_observer_pairing_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_measure_refinement_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_metric_compactness_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_check.py",
+      "reasons": [
+        "historical-pairing-input-binding",
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_parent_law_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_parent_source_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 3
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_positive_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_prepared_action_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_quadratic_gram_flux_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 3
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_recorded_observer_preparation_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 6
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_reference_weight_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_retained_record_admission_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_scene_payload_action_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_shared_scene_price_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_spectral_frame_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_stopped_all_cost_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_time_field_intertwiner_check.py",
+      "reasons": [
+        "historical-report-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_transported_connection_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_vector_source_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_verification_refinement_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_volume_fiber_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_ward_scene_constitutive_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_native_weighted_trace_lift_check.py",
+      "reasons": [
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_one_coordinate_exact_curved_sheet_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 4
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/a4d_same_history_price_composition_check.py",
+      "reasons": [
+        "unknown-dependency"
+      ],
+      "unknown_count": 4
+    },
+    {
+      "certificate": "02_REGISTRY/research/certificates/d0_native_tangent_source_preflight_check.py",
+      "reasons": [
+        "historical-input-binding",
+        "changed-input",
+        "unknown-dependency"
+      ],
+      "unknown_count": 2
+    }
+  ],
+  "full_report_sha256": "c6a7edd0e4ebec4240f5efb5ba4bd3def48d323a416b89053873600644bb7408",
+  "full_report_bytes": 1581325
+}

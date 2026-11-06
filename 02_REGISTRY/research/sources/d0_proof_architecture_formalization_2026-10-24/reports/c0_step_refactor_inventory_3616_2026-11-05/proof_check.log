@@ -1,0 +1,21 @@
+D0.Foundation.FutureShortlexAdapter.codeStep_respects_profile {Symbol : Type} [LinearOrder Symbol]
+  [WellFoundedLT Symbol] (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State)
+  (enc : F.State → List Symbol) (correct : ∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) (a : F.Action)
+  (c d : List Symbol) (h : F.profile (dec c) = F.profile (dec d)) :
+  D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a c =
+    D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a d
+'D0.Foundation.FutureShortlexAdapter.codeStep_respects_profile' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+theorem D0.Foundation.FutureShortlexAdapter.codeStep_respects_profile : ∀ {Symbol : Type} [inst : LinearOrder Symbol]
+  [inst_1 : WellFoundedLT Symbol] (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution)
+  (dec : List Symbol → F.State) (enc : F.State → List Symbol),
+  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) →
+    ∀ (a : F.Action) (c d : List Symbol),
+      F.profile (dec c) = F.profile (dec d) →
+        D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a c =
+          D0.Foundation.FutureShortlexAdapter.codeStep F dec enc a d :=
+fun {Symbol} [LinearOrder Symbol] [WellFoundedLT Symbol] F dec enc correct a c d h =>
+  id
+    ((D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff F dec enc correct (F.step a (dec c)) (F.step a (dec d))).mpr
+      (D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_step_congr F h a))

@@ -1,0 +1,608 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "eb405cbd36c591203efe867526ccef2e3e173a5c",
+  "worktree_dirty": false,
+  "claim_registry_sha256": "f6d0b25659f137fda4ba35f17dbfba00899ec384a42fbad601ebaf1feb4f2003",
+  "lean_source_digest": "8909eebca5df94b496915718cd6bd853f9c2147d2b1e3bd43fd6950433abe9a8",
+  "collector_sha256": "6488dd50771c225d45c7874452c9e54028486d358f9130e7ff146fdd360562a4",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Gauge.GradedBianchiIdentity",
+  "resolution_only": false,
+  "request": {
+    "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+    "mappings": [
+      {
+        "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "theorem_atom": "Topology.graded_nilpotency",
+        "candidate_names": [
+          "D0.Gauge.GradedBianchiIdentity.Topology.graded_nilpotency",
+          "D0.Gauge.Topology.graded_nilpotency",
+          "D0.Topology.graded_nilpotency"
+        ]
+      },
+      {
+        "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "theorem_atom": "Topology.discrete_exact_bianchi",
+        "candidate_names": [
+          "D0.Gauge.GradedBianchiIdentity.Topology.discrete_exact_bianchi",
+          "D0.Gauge.Topology.discrete_exact_bianchi",
+          "D0.Topology.discrete_exact_bianchi"
+        ]
+      },
+      {
+        "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "theorem_atom": "Topology.graded_bianchi_exact",
+        "candidate_names": [
+          "D0.Gauge.GradedBianchiIdentity.Topology.graded_bianchi_exact",
+          "D0.Gauge.Topology.graded_bianchi_exact",
+          "D0.Topology.graded_bianchi_exact"
+        ]
+      },
+      {
+        "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "theorem_atom": "Gauge.abelian_bianchi_exact",
+        "candidate_names": [
+          "D0.Gauge.GradedBianchiIdentity.Gauge.abelian_bianchi_exact",
+          "D0.Gauge.Gauge.abelian_bianchi_exact",
+          "D0.Gauge.abelian_bianchi_exact"
+        ]
+      },
+      {
+        "claim_id": "D0-GRADED-BIANCHI-EXACT-001",
+        "module_locator": "D0.Gauge.GradedBianchiIdentity",
+        "theorem_atom": "Gauge.graded_bianchi_exact",
+        "candidate_names": [
+          "D0.Gauge.GradedBianchiIdentity.Gauge.graded_bianchi_exact",
+          "D0.Gauge.Gauge.graded_bianchi_exact",
+          "D0.Gauge.graded_bianchi_exact"
+        ]
+      }
+    ]
+  },
+  "declarations": [
+    {
+      "exists": false,
+      "name": "D0.Gauge.GradedBianchiIdentity.Topology.graded_nilpotency",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.Topology.graded_nilpotency",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "D0.Topology.GradedCellComplex"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "C.3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "C.1"
+        }
+      ],
+      "conclusion_whnf": "∑ e, C.boundary2 f e * C.boundary1 e v = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 33,
+            "line": 37
+          },
+          "start": {
+            "column": 0,
+            "line": 35
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 25,
+            "line": 35
+          },
+          "start": {
+            "column": 8,
+            "line": 35
+          }
+        }
+      },
+      "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (f : C.F) (v : C.V), ∑ e, C.boundary2 f e * C.boundary1 e v = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.GradedIncidenceComplex",
+      "name": "D0.Topology.graded_nilpotency",
+      "proof_dependencies": [
+        "D0.Topology.GradedCellComplex",
+        "D0.Topology.GradedCellComplex.F",
+        "D0.Topology.GradedCellComplex.V",
+        "D0.Topology.GradedCellComplex.boundary_nilpotency"
+      ],
+      "type_dependencies": [
+        "D0.Topology.GradedCellComplex",
+        "D0.Topology.GradedCellComplex.E",
+        "D0.Topology.GradedCellComplex.F",
+        "D0.Topology.GradedCellComplex.V",
+        "D0.Topology.GradedCellComplex.boundary1",
+        "D0.Topology.GradedCellComplex.boundary2",
+        "D0.Topology.GradedCellComplex.fintypeE",
+        "Eq",
+        "Finset.sum",
+        "Finset.univ",
+        "HMul.hMul",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.GradedBianchiIdentity.Topology.discrete_exact_bianchi",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.Topology.discrete_exact_bianchi",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "D0.Topology.GradedCellComplex"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "A",
+          "type": "C.V → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "C.3"
+        }
+      ],
+      "conclusion_whnf": "D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 14,
+            "line": 70
+          },
+          "start": {
+            "column": 0,
+            "line": 39
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 30,
+            "line": 39
+          },
+          "start": {
+            "column": 8,
+            "line": 39
+          }
+        }
+      },
+      "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.GradedIncidenceComplex",
+      "name": "D0.Topology.discrete_exact_bianchi",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommSemiring.toSemiring",
+        "D0.Topology.GradedCellComplex",
+        "D0.Topology.GradedCellComplex.E",
+        "D0.Topology.GradedCellComplex.F",
+        "D0.Topology.GradedCellComplex.V",
+        "D0.Topology.GradedCellComplex.boundary1",
+        "D0.Topology.GradedCellComplex.boundary2",
+        "D0.Topology.GradedCellComplex.boundary_nilpotency",
+        "D0.Topology.GradedCellComplex.fintypeE",
+        "D0.Topology.GradedCellComplex.fintypeV",
+        "D0.Topology.d0",
+        "D0.Topology.d1",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_comm",
+        "Finset.sum_congr",
+        "Finset.sum_const_zero",
+        "Finset.sum_mul",
+        "Finset.univ",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "MulZeroClass.zero_mul",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instCommSemiring",
+        "Real.instMul",
+        "Real.instZero",
+        "Real.normedCommRing",
+        "Real.semiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Trans.trans",
+        "True",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instMulZeroClassOfSemiring",
+        "instTransEq",
+        "of_eq_true",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Topology.GradedCellComplex",
+        "D0.Topology.GradedCellComplex.F",
+        "D0.Topology.GradedCellComplex.V",
+        "D0.Topology.d0",
+        "D0.Topology.d1",
+        "Eq",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.GradedBianchiIdentity.Topology.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.Topology.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "D0.Topology.GradedCellComplex3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "C.2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "e",
+          "type": "C.toGradedCellComplex.2"
+        }
+      ],
+      "conclusion_whnf": "∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 34,
+            "line": 84
+          },
+          "start": {
+            "column": 0,
+            "line": 82
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 28,
+            "line": 82
+          },
+          "start": {
+            "column": 8,
+            "line": 82
+          }
+        }
+      },
+      "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex3) (c : C.C3) (e : C.E), ∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Topology.GradedIncidenceComplex",
+      "name": "D0.Topology.graded_bianchi_exact",
+      "proof_dependencies": [
+        "D0.Topology.GradedCellComplex.E",
+        "D0.Topology.GradedCellComplex3",
+        "D0.Topology.GradedCellComplex3.C3",
+        "D0.Topology.GradedCellComplex3.boundary_nilpotency2",
+        "D0.Topology.GradedCellComplex3.toGradedCellComplex"
+      ],
+      "type_dependencies": [
+        "D0.Topology.GradedCellComplex.E",
+        "D0.Topology.GradedCellComplex.F",
+        "D0.Topology.GradedCellComplex.boundary2",
+        "D0.Topology.GradedCellComplex.fintypeF",
+        "D0.Topology.GradedCellComplex3",
+        "D0.Topology.GradedCellComplex3.C3",
+        "D0.Topology.GradedCellComplex3.boundary3",
+        "D0.Topology.GradedCellComplex3.toGradedCellComplex",
+        "Eq",
+        "Finset.sum",
+        "Finset.univ",
+        "HMul.hMul",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Topology/GradedIncidenceComplex.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.GradedBianchiIdentity.Gauge.abelian_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.Gauge.abelian_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "D0.Topology.GradedCellComplex"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "A",
+          "type": "C.V → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "C.3"
+        }
+      ],
+      "conclusion_whnf": "D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 42,
+            "line": 16
+          },
+          "start": {
+            "column": 0,
+            "line": 13
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 13
+          },
+          "start": {
+            "column": 8,
+            "line": 13
+          }
+        }
+      },
+      "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex) (A : C.V → ℝ) (f : C.F), D0.Topology.d1 C (D0.Topology.d0 C A) f = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Gauge.GradedBianchiIdentity",
+      "name": "D0.Gauge.abelian_bianchi_exact",
+      "proof_dependencies": [
+        "D0.Topology.GradedCellComplex",
+        "D0.Topology.GradedCellComplex.F",
+        "D0.Topology.GradedCellComplex.V",
+        "D0.Topology.discrete_exact_bianchi",
+        "Real"
+      ],
+      "type_dependencies": [
+        "D0.Topology.GradedCellComplex",
+        "D0.Topology.GradedCellComplex.F",
+        "D0.Topology.GradedCellComplex.V",
+        "D0.Topology.d0",
+        "D0.Topology.d1",
+        "Eq",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Gauge/GradedBianchiIdentity.lean"
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.GradedBianchiIdentity.Gauge.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Gauge.Gauge.graded_bianchi_exact",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "C",
+          "type": "D0.Topology.GradedCellComplex3"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "C.2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "e",
+          "type": "C.toGradedCellComplex.2"
+        }
+      ],
+      "conclusion_whnf": "∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 40,
+            "line": 21
+          },
+          "start": {
+            "column": 0,
+            "line": 18
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 28,
+            "line": 18
+          },
+          "start": {
+            "column": 8,
+            "line": 18
+          }
+        }
+      },
+      "elaborated_type": "∀ (C : D0.Topology.GradedCellComplex3) (c : C.C3) (e : C.E), ∑ f, C.boundary3 c f * C.boundary2 f e = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Gauge.GradedBianchiIdentity",
+      "name": "D0.Gauge.graded_bianchi_exact",
+      "proof_dependencies": [
+        "D0.Topology.GradedCellComplex.E",
+        "D0.Topology.GradedCellComplex3",
+        "D0.Topology.GradedCellComplex3.C3",
+        "D0.Topology.GradedCellComplex3.toGradedCellComplex",
+        "D0.Topology.graded_bianchi_exact"
+      ],
+      "type_dependencies": [
+        "D0.Topology.GradedCellComplex.E",
+        "D0.Topology.GradedCellComplex.F",
+        "D0.Topology.GradedCellComplex.boundary2",
+        "D0.Topology.GradedCellComplex.fintypeF",
+        "D0.Topology.GradedCellComplex3",
+        "D0.Topology.GradedCellComplex3.C3",
+        "D0.Topology.GradedCellComplex3.boundary3",
+        "D0.Topology.GradedCellComplex3.toGradedCellComplex",
+        "Eq",
+        "Finset.sum",
+        "Finset.univ",
+        "HMul.hMul",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Gauge/GradedBianchiIdentity.lean"
+    }
+  ]
+}

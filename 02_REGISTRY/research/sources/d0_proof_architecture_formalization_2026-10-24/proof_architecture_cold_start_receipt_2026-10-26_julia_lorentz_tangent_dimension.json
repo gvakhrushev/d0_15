@@ -1,0 +1,40 @@
+{
+  "schema": "d0-proof-architecture-cold-start-receipt-v1",
+  "snapshot_commit": "60a2a98683141e56c80a1d76ebab0a0f01f7d314",
+  "worktree_dirty": false,
+  "case_id": "labelled-native-raising-inverse",
+  "case_queries": 15,
+  "required_sources_found": 10,
+  "required_sources_total": 10,
+  "query": "roleLorentzTangentParameters_finrank roleLorentzTangent_finrank four Julia links 24 coordinates",
+  "top_candidates": [
+    "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+    "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+    "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+    "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+    "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md"
+  ],
+  "summary": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_dimension.json",
+    "sha256": "a621d9cda1d348c6dbb03d2fc6c2347fd89c4c48e261e91bd92048cb54e3f86f"
+  },
+  "lean_inventory": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_dimension_reuse_declarations_2026-10-26.json",
+    "sha256": "26d30d6640e32a663a4c7f31225373a9bee0dc2a4b8502a3bedda0d01347fb4b",
+    "snapshot_commit": "7f281bfaebc727e1a4f2ad36aca1d7f0b306f53f",
+    "lean_source_digest": "d81a7ad4f011da75b64419ff8b688ee22e8e46d05904c6b7ba54870304a83133"
+  },
+  "full_output": {
+    "sha256": "0a2094f6cc39a184f5643040f6d3c1de46cd0aea33749a5ecdee380c9e8769a5",
+    "bytes": 8660976,
+    "stored": false
+  },
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true
+}

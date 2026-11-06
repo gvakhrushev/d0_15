@@ -1,0 +1,29 @@
+{
+  "schema": "d0-c0-book01-0116-candidate-intake-v1",
+  "base_commit": "21d0a66aae4e1c34f6ad86eeed302ece33f97a77",
+  "source_commit": "1eabcccbf7e115c667e9bb8c445ef300107b1493",
+  "source_blob": "eb2d8ea779189084cdaaca717326df88589ec918",
+  "source_bytes": [
+    11972,
+    13530
+  ],
+  "source_sha256": "ba3fc2c88b388bad890dfcbced2b22343f2019b72d78c927b9488c40ab69afac",
+  "selected_candidate_count": 6,
+  "tests": {
+    "count": 101,
+    "status": "PASS",
+    "log_sha256": "030974f72570351de5d3275db0d019832998bc6116a111e0076a5b76a1d0e583",
+    "gzip_sha256": "0e87170898a66cf5135b1795e765c6f642a3462738b5816acb0acc50d61b1901"
+  },
+  "input_sha256": {
+    "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md": "dcce20ecdb0061d9bdc5b863598be62c8d5fe1068386bf4b3a43c437149a79bf",
+    "tools/c0_candidate_ranges.py": "25a98dda68e2b0e19a63d023165688cc7761ec52aa6ee6cc61563b01808c497e",
+    "tools/c0_reconciliation.py": "39b67f9d8b5a19d895a025f1f237651f5fe1fdfd590cb4409a8a62f86848ef33",
+    "tools/proof_architecture.py": "e784e96a12239efaf1e81615bcf9917187245809754ab8f53687cdbe4de046c4",
+    "tools/test_c0_candidate_ranges.py": "928d518b6de8b9067ec66701845fcb5ef3d05a874fbee81bc2f18977c6bd8578",
+    "tools/test_c0_reconciliation.py": "44d1ff743cb6c4e007244cc4ffb6e6b7a80e1cc4e05b91190bdc67712d213701"
+  },
+  "reconciliation": "pending clean snapshot and fresh compiled inventory",
+  "semantic_acceptance": false,
+  "GR_closed": false
+}

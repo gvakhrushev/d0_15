@@ -1,0 +1,240 @@
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:41: RuntimeWarning: divide by zero encountered in matmul
+  GEN=CREATORS[0]@CREATORS[1].conj().T+CREATORS[1]@CREATORS[0].conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:41: RuntimeWarning: overflow encountered in matmul
+  GEN=CREATORS[0]@CREATORS[1].conj().T+CREATORS[1]@CREATORS[0].conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:41: RuntimeWarning: invalid value encountered in matmul
+  GEN=CREATORS[0]@CREATORS[1].conj().T+CREATORS[1]@CREATORS[0].conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:45: RuntimeWarning: divide by zero encountered in matmul
+  U=I+2*r/(1-r*r)*GEN+2*r*r/(1-r*r)*GEN@GEN
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:45: RuntimeWarning: overflow encountered in matmul
+  U=I+2*r/(1-r*r)*GEN+2*r*r/(1-r*r)*GEN@GEN
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:45: RuntimeWarning: invalid value encountered in matmul
+  U=I+2*r/(1-r*r)*GEN+2*r*r/(1-r*r)*GEN@GEN
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:46: RuntimeWarning: divide by zero encountered in matmul
+  dU=2*(1+r*r)/(1-r*r)**2*dr*GEN+4*r/(1-r*r)**2*dr*GEN@GEN
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:46: RuntimeWarning: overflow encountered in matmul
+  dU=2*(1+r*r)/(1-r*r)**2*dr*GEN+4*r/(1-r*r)**2*dr*GEN@GEN
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:46: RuntimeWarning: invalid value encountered in matmul
+  dU=2*(1+r*r)/(1-r*r)**2*dr*GEN+4*r/(1-r*r)**2*dr*GEN@GEN
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:64: RuntimeWarning: divide by zero encountered in matmul
+  left,dl=julia_root(x@x.conj().T,dx@x.conj().T+x@dx.conj().T)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:64: RuntimeWarning: overflow encountered in matmul
+  left,dl=julia_root(x@x.conj().T,dx@x.conj().T+x@dx.conj().T)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:64: RuntimeWarning: invalid value encountered in matmul
+  left,dl=julia_root(x@x.conj().T,dx@x.conj().T+x@dx.conj().T)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:51: RuntimeWarning: divide by zero encountered in matmul
+  S=(V*np.sqrt(vals))@V.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:51: RuntimeWarning: overflow encountered in matmul
+  S=(V*np.sqrt(vals))@V.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:51: RuntimeWarning: invalid value encountered in matmul
+  S=(V*np.sqrt(vals))@V.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:53: RuntimeWarning: divide by zero encountered in matmul
+  near(S@S,I-T,'complete Julia square root')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:53: RuntimeWarning: overflow encountered in matmul
+  near(S@S,I-T,'complete Julia square root')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:53: RuntimeWarning: invalid value encountered in matmul
+  near(S@S,I-T,'complete Julia square root')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:54: RuntimeWarning: divide by zero encountered in matmul
+  near(S@dS+dS@S,-dT,'complete Julia derivative')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:54: RuntimeWarning: overflow encountered in matmul
+  near(S@dS+dS@S,-dT,'complete Julia derivative')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:54: RuntimeWarning: invalid value encountered in matmul
+  near(S@dS+dS@S,-dT,'complete Julia derivative')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:65: RuntimeWarning: divide by zero encountered in matmul
+  right,drr=julia_root(x.conj().T@x,dx.conj().T@x+x.conj().T@dx)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:65: RuntimeWarning: overflow encountered in matmul
+  right,drr=julia_root(x.conj().T@x,dx.conj().T@x+x.conj().T@dx)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:65: RuntimeWarning: invalid value encountered in matmul
+  right,drr=julia_root(x.conj().T@x,dx.conj().T@x+x.conj().T@dx)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:66: RuntimeWarning: divide by zero encountered in matmul
+  l0,dl0=julia_root(b@b.conj().T,db@b.conj().T+b@db.conj().T)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:66: RuntimeWarning: overflow encountered in matmul
+  l0,dl0=julia_root(b@b.conj().T,db@b.conj().T+b@db.conj().T)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:66: RuntimeWarning: invalid value encountered in matmul
+  l0,dl0=julia_root(b@b.conj().T,db@b.conj().T+b@db.conj().T)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:67: RuntimeWarning: divide by zero encountered in matmul
+  r0,dr0=julia_root(b.conj().T@b,db.conj().T@b+b.conj().T@db)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:67: RuntimeWarning: overflow encountered in matmul
+  r0,dr0=julia_root(b.conj().T@b,db.conj().T@b+b.conj().T@db)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:67: RuntimeWarning: invalid value encountered in matmul
+  r0,dr0=julia_root(b.conj().T@b,db.conj().T@b+b.conj().T@db)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:59: RuntimeWarning: divide by zero encountered in matmul
+  x=phases[j]*(b@U if j==1 else b)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:59: RuntimeWarning: overflow encountered in matmul
+  x=phases[j]*(b@U if j==1 else b)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:59: RuntimeWarning: invalid value encountered in matmul
+  x=phases[j]*(b@U if j==1 else b)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:60: RuntimeWarning: divide by zero encountered in matmul
+  dx=phases[j]*(db@U+b@dU if j==1 else db)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:60: RuntimeWarning: overflow encountered in matmul
+  dx=phases[j]*(db@U+b@dU if j==1 else db)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:60: RuntimeWarning: invalid value encountered in matmul
+  dx=phases[j]*(db@U+b@dU if j==1 else db)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:72: RuntimeWarning: divide by zero encountered in matmul
+  A=a.conj().T@a;dA=da.conj().T@a+a.conj().T@da
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:72: RuntimeWarning: overflow encountered in matmul
+  A=a.conj().T@a;dA=da.conj().T@a+a.conj().T@da
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:72: RuntimeWarning: invalid value encountered in matmul
+  A=a.conj().T@a;dA=da.conj().T@a+a.conj().T@da
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:81: RuntimeWarning: divide by zero encountered in matmul
+  near(sum(v@v.conj().T for v in n),I,'original row completeness')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:81: RuntimeWarning: overflow encountered in matmul
+  near(sum(v@v.conj().T for v in n),I,'original row completeness')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:81: RuntimeWarning: invalid value encountered in matmul
+  near(sum(v@v.conj().T for v in n),I,'original row completeness')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:82: RuntimeWarning: divide by zero encountered in matmul
+  near(sum(v.conj().T@v for v in n),I,'original column completeness')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:82: RuntimeWarning: overflow encountered in matmul
+  near(sum(v.conj().T@v for v in n),I,'original column completeness')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:82: RuntimeWarning: invalid value encountered in matmul
+  near(sum(v.conj().T@v for v in n),I,'original column completeness')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:85: RuntimeWarning: divide by zero encountered in matmul
+  X=n[j].conj().T@a;dX=dn[j].conj().T@a+n[j].conj().T@da
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:85: RuntimeWarning: overflow encountered in matmul
+  X=n[j].conj().T@a;dX=dn[j].conj().T@a+n[j].conj().T@da
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:85: RuntimeWarning: invalid value encountered in matmul
+  X=n[j].conj().T@a;dX=dn[j].conj().T@a+n[j].conj().T@da
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:98: RuntimeWarning: divide by zero encountered in matmul
+  near(L.conj().T@L,I,'original2048 full reflection column algebra')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:98: RuntimeWarning: overflow encountered in matmul
+  near(L.conj().T@L,I,'original2048 full reflection column algebra')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:98: RuntimeWarning: invalid value encountered in matmul
+  near(L.conj().T@L,I,'original2048 full reflection column algebra')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:132: RuntimeWarning: divide by zero encountered in matmul
+  K=row2['C']@row1['C'];S=K.conj().T@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:132: RuntimeWarning: overflow encountered in matmul
+  K=row2['C']@row1['C'];S=K.conj().T@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:132: RuntimeWarning: invalid value encountered in matmul
+  K=row2['C']@row1['C'];S=K.conj().T@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:134: RuntimeWarning: divide by zero encountered in matmul
+  invsqrt=(V*(1/np.sqrt(eig)))@V.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:134: RuntimeWarning: overflow encountered in matmul
+  invsqrt=(V*(1/np.sqrt(eig)))@V.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:134: RuntimeWarning: invalid value encountered in matmul
+  invsqrt=(V*(1/np.sqrt(eig)))@V.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:139: RuntimeWarning: divide by zero encountered in matmul
+  dK=p2['dC']@p1['C']+p2['C']@p1['dC']
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:139: RuntimeWarning: overflow encountered in matmul
+  dK=p2['dC']@p1['C']+p2['C']@p1['dC']
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:139: RuntimeWarning: invalid value encountered in matmul
+  dK=p2['dC']@p1['C']+p2['C']@p1['dC']
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:140: RuntimeWarning: divide by zero encountered in matmul
+  dSs.append(dK.conj().T@K+K.conj().T@dK)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:140: RuntimeWarning: overflow encountered in matmul
+  dSs.append(dK.conj().T@K+K.conj().T@dK)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:140: RuntimeWarning: invalid value encountered in matmul
+  dSs.append(dK.conj().T@K+K.conj().T@dK)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:141: RuntimeWarning: divide by zero encountered in matmul
+  C=sum(la.norm(invsqrt@v@invsqrt,2) for v in dSs)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:141: RuntimeWarning: overflow encountered in matmul
+  C=sum(la.norm(invsqrt@v@invsqrt,2) for v in dSs)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:141: RuntimeWarning: invalid value encountered in matmul
+  C=sum(la.norm(invsqrt@v@invsqrt,2) for v in dSs)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:150: RuntimeWarning: divide by zero encountered in matmul
+  T=t**n;R=la.inv(a*I+z*T*S);tr=float(np.trace(R@S).real)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:150: RuntimeWarning: overflow encountered in matmul
+  T=t**n;R=la.inv(a*I+z*T*S);tr=float(np.trace(R@S).real)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:150: RuntimeWarning: invalid value encountered in matmul
+  T=t**n;R=la.inv(a*I+z*T*S);tr=float(np.trace(R@S).real)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:152: RuntimeWarning: divide by zero encountered in matmul
+  old=np.array([-z*T*np.trace(R@dS).real for dS in dSs])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:152: RuntimeWarning: overflow encountered in matmul
+  old=np.array([-z*T*np.trace(R@dS).real for dS in dSs])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:152: RuntimeWarning: invalid value encountered in matmul
+  old=np.array([-z*T*np.trace(R@dS).real for dS in dSs])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:163: RuntimeWarning: divide by zero encountered in matmul
+  kk=mod.rows(second[0],second[1])['C']@mod.rows(first[0]+x,first[1])['C']
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:163: RuntimeWarning: overflow encountered in matmul
+  kk=mod.rows(second[0],second[1])['C']@mod.rows(first[0]+x,first[1])['C']
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:163: RuntimeWarning: invalid value encountered in matmul
+  kk=mod.rows(second[0],second[1])['C']@mod.rows(first[0]+x,first[1])['C']
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:164: RuntimeWarning: divide by zero encountered in matmul
+  ev=la.eigvalsh(kk.conj().T@kk)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:164: RuntimeWarning: overflow encountered in matmul
+  ev=la.eigvalsh(kk.conj().T@kk)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:164: RuntimeWarning: invalid value encountered in matmul
+  ev=la.eigvalsh(kk.conj().T@kk)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:144: RuntimeWarning: divide by zero encountered in matmul
+  require(la.norm(one['A']@two['A']-two['A']@one['A'])>1e-10,
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:144: RuntimeWarning: overflow encountered in matmul
+  require(la.norm(one['A']@two['A']-two['A']@one['A'])>1e-10,
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:144: RuntimeWarning: invalid value encountered in matmul
+  require(la.norm(one['A']@two['A']-two['A']@one['A'])>1e-10,
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:110: RuntimeWarning: divide by zero encountered in matmul
+  for C,dC in zip(cs,dcs):dK=dC@K+C@dK;K=C@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:110: RuntimeWarning: overflow encountered in matmul
+  for C,dC in zip(cs,dcs):dK=dC@K+C@dK;K=C@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:110: RuntimeWarning: invalid value encountered in matmul
+  for C,dC in zip(cs,dcs):dK=dC@K+C@dK;K=C@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:119: RuntimeWarning: divide by zero encountered in matmul
+  K,dK=jet(cs,dcs);F=I-K.conj().T@K;R=la.inv(I-z*F)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:119: RuntimeWarning: overflow encountered in matmul
+  K,dK=jet(cs,dcs);F=I-K.conj().T@K;R=la.inv(I-z*F)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:119: RuntimeWarning: invalid value encountered in matmul
+  K,dK=jet(cs,dcs);F=I-K.conj().T@K;R=la.inv(I-z*F)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:120: RuntimeWarning: divide by zero encountered in matmul
+  g=-2*z*np.trace(R@K.conj().T@dK).real
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:120: RuntimeWarning: overflow encountered in matmul
+  g=-2*z*np.trace(R@K.conj().T@dK).real
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:120: RuntimeWarning: invalid value encountered in matmul
+  g=-2*z*np.trace(R@K.conj().T@dK).real
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:122: RuntimeWarning: divide by zero encountered in matmul
+  for C in cs:pref.append(C@pref[-1])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:122: RuntimeWarning: overflow encountered in matmul
+  for C in cs:pref.append(C@pref[-1])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:122: RuntimeWarning: invalid value encountered in matmul
+  for C in cs:pref.append(C@pref[-1])
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:125: RuntimeWarning: divide by zero encountered in matmul
+  V=pref[j]@R@K.conj().T@post
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:125: RuntimeWarning: overflow encountered in matmul
+  V=pref[j]@R@K.conj().T@post
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:125: RuntimeWarning: invalid value encountered in matmul
+  V=pref[j]@R@K.conj().T@post
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:127: RuntimeWarning: divide by zero encountered in matmul
+  post=post@cs[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:127: RuntimeWarning: overflow encountered in matmul
+  post=post@cs[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:127: RuntimeWarning: invalid value encountered in matmul
+  post=post@cs[j]
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:128: RuntimeWarning: divide by zero encountered in matmul
+  g2=2*z*KAPPA*sum(np.trace(W@x['dA']).real for W,x in zip(weights,items))
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:128: RuntimeWarning: overflow encountered in matmul
+  g2=2*z*KAPPA*sum(np.trace(W@x['dA']).real for W,x in zip(weights,items))
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:128: RuntimeWarning: invalid value encountered in matmul
+  g2=2*z*KAPPA*sum(np.trace(W@x['dA']).real for W,x in zip(weights,items))
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:156: RuntimeWarning: divide by zero encountered in matmul
+  e1=near(dF,-out['dK'].conj().T@out['K']-out['K'].conj().T@out['dK'],
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:156: RuntimeWarning: overflow encountered in matmul
+  e1=near(dF,-out['dK'].conj().T@out['K']-out['K'].conj().T@out['dK'],
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:156: RuntimeWarning: invalid value encountered in matmul
+  e1=near(dF,-out['dK'].conj().T@out['K']-out['K'].conj().T@out['dK'],
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:158: RuntimeWarning: divide by zero encountered in matmul
+  from_tape=ZETA*np.trace(out['R']@dF).real
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:158: RuntimeWarning: overflow encountered in matmul
+  from_tape=ZETA*np.trace(out['R']@dF).real
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:158: RuntimeWarning: invalid value encountered in matmul
+  from_tape=ZETA*np.trace(out['R']@dF).real
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:105: RuntimeWarning: divide by zero encountered in matmul
+  for C in cs: K=C@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:105: RuntimeWarning: overflow encountered in matmul
+  for C in cs: K=C@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:105: RuntimeWarning: invalid value encountered in matmul
+  for C in cs: K=C@K
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:162: RuntimeWarning: divide by zero encountered in matmul
+  K=product([x['C'] for x in its]);return price_from_F(I-K.conj().T@K)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:162: RuntimeWarning: overflow encountered in matmul
+  K=product([x['C'] for x in its]);return price_from_F(I-K.conj().T@K)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:162: RuntimeWarning: invalid value encountered in matmul
+  K=product([x['C'] for x in its]);return price_from_F(I-K.conj().T@K)
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:171: RuntimeWarning: divide by zero encountered in matmul
+  'noncommutation_norm':float(la.norm(one['A']@two['A']-two['A']@one['A'])),
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:171: RuntimeWarning: overflow encountered in matmul
+  'noncommutation_norm':float(la.norm(one['A']@two['A']-two['A']@one['A'])),
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/inputs/check_history_source.py:171: RuntimeWarning: invalid value encountered in matmul
+  'noncommutation_norm':float(la.norm(one['A']@two['A']-two['A']@one['A'])),
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:181: RuntimeWarning: divide by zero encountered in matmul
+  'nonnormality_norm':float(la.norm(K@K.conj().T-S)),
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:181: RuntimeWarning: overflow encountered in matmul
+  'nonnormality_norm':float(la.norm(K@K.conj().T-S)),
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_8da_delta_2026-10-28/replay/work/check_prefix_recovery.py:181: RuntimeWarning: invalid value encountered in matmul
+  'nonnormality_norm':float(la.norm(K@K.conj().T-S)),

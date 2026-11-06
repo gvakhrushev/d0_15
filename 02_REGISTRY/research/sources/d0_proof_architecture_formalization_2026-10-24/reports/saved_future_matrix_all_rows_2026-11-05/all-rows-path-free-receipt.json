@@ -1,0 +1,18 @@
+{
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound",
+    "D0.Algebra.SavedFutureMatrixPacked.all_rows_right_inverse._native.native_decide.ax_1_1"
+  ],
+  "cpu_affinity_limit": false,
+  "elapsed_seconds": 62.015,
+  "exit_code": 0,
+  "job_memory_limit_bytes": 3221225472,
+  "kind": "all-rows-Lean-packed-numerical-matrix",
+  "pilot_sha256": "353879d776b8275e2bdf9244b621373c882bc27af0b1c6548349c5c80ddef5d0",
+  "raw_log_sha256": "c002f1e1de12e78148fe354015e1d94be93cf76a35c1c0d67389117c30f3f147",
+  "scope": "A*B=I for all rows and columns of saved numerical matrices; cached dependency environment; no source-to-Lean or complex bridge",
+  "status": "success",
+  "trust": "native_decide introduces an explicit native-computation axiom, not kernel-only reduction"
+}

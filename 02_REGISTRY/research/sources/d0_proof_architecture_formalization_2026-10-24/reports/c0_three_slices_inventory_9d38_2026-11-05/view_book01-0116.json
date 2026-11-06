@@ -1,0 +1,303 @@
+{
+  "authority": {
+    "application": {
+      "consumer_location": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "decision": {
+        "path": "02_REGISTRY/gr_assembly/reviews/lean-verification-core-to-foundation.md",
+        "ref": "4aa19a667387b3250d310d00c511bd1dd315bbb0",
+        "sha256": "0f2d369c951408ae0c692447d09eccf172f42d1a83365ad125cc091de6a6b9a5"
+      },
+      "hypothesis_map": {
+        "coded_representation": {
+          "target_hypothesis": "coded_representation"
+        },
+        "execution_interface": {
+          "target_hypothesis": "execution_interface"
+        },
+        "verification_representation": {
+          "target_hypothesis": "verification_representation"
+        }
+      },
+      "id": "lean-verification-core-to-foundation",
+      "interpretation": "existing application only; not acceptance of these C0 atoms",
+      "path": "02_REGISTRY/gr_assembly/applications.json",
+      "record_sha256": "d53a965e0b258f787078f1e197554f043ae035a5feda7a7b2aca3ad00d71ca8e",
+      "recorded_review_state": "accepted"
+    },
+    "compiled_inventory": {
+      "blob": "907e37c2a074518ba53902782abe36e5d886cac4",
+      "collector_script": "regenerated_text_matches_digest_not_executed",
+      "collector_sha256": "d9678fbc51c8c8fa22bf8b5f3bddd4a6e2612a7aadb035d2de16fa579d306291",
+      "collector_source": "unchanged_between_snapshots",
+      "current_build_replayed": false,
+      "lean_source_digest": "14576c364aa1d2e58ce3244c88b6074f8d77bbca8a8cc6eafed4c41a7a6a8f6a",
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_three_slices_inventory_9d38_2026-11-05/declarations.json",
+      "semantic_correspondence": "pending_review",
+      "sha256": "a23bb1ba6ff7b99afcaf7140106a26267c31da1cb511b1286b4ae46b81fbf841",
+      "snapshot_commit": "9d386b41c7d3e1ddab0d21b58d49d64a76920a3b",
+      "source_digest_status": "reported_not_recomputed",
+      "state": "reported_compiled_metadata_consistent_not_replayed",
+      "toolchain": "leanprover/lean4:v4.30.0",
+      "tracked_lean_inputs": "unchanged_between_snapshots"
+    },
+    "source": {
+      "blob": "eb2d8ea779189084cdaaca717326df88589ec918",
+      "commit": "1eabcccbf7e115c667e9bb8c445ef300107b1493",
+      "module_blob": "01b02ebbe81a62464e81d5c397c101fd60fff4f9",
+      "module_path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+      "owner_modules": [
+        {
+          "blob": "01b02ebbe81a62464e81d5c397c101fd60fff4f9",
+          "module": "D0.Foundation.VerificationCore",
+          "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean"
+        },
+        {
+          "blob": "065a8f631e65bda8b9bc85a6ff6217de31bdd1f4",
+          "module": "D0.Foundation.FutureExecution",
+          "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+        },
+        {
+          "blob": "bf1468824fe63fc5f2fed59d74d44d1377923fa6",
+          "module": "D0.Foundation.UncoupledCenterRawWitness",
+          "path": "03_FORMALIZATION/D0/Foundation/UncoupledCenterRawWitness.lean"
+        },
+        {
+          "blob": "a4a390673994ecbe7529ebae636ddd3fd6e2db7d",
+          "module": "D0.Foundation.FutureShortlexAdapter",
+          "path": "03_FORMALIZATION/D0/Foundation/FutureShortlexAdapter.lean"
+        }
+      ],
+      "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "primary_path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "primary_section_sha256": "a9d283028959bbae0045e4c02f90c0697a955ac0878dbb1c00fbd1605e86f2e9",
+      "section_range": [
+        11972,
+        13530
+      ],
+      "section_sha256": "ba3fc2c88b388bad890dfcbced2b22343f2019b72d78c927b9488c40ab69afac"
+    }
+  },
+  "checks": {
+    "compiled_inventory": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "existing_application": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "snapshot": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "source_and_primary": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    }
+  },
+  "context_dispositions": {
+    "acceptance": "not_authenticated_by_this_view",
+    "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+    "pinned_text": "C0 source review candidate: Book01 §01.1.6\n\nThis is a source-occurrence and evidence candidate for C0 reconciliation, not\nan accepted scientific correction, an exhaustive C0 denominator or a physical\nno-hidden-variables theorem. In source snapshot\n`1eabcccbf7e115c667e9bb8c445ef300107b1493`,\n`01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md` has Git blob\n`eb2d8ea779189084cdaaca717326df88589ec918`. The complete section is the half-open byte range\n`[11972,13530)`, SHA-256\n`ba3fc2c88b388bad890dfcbced2b22343f2019b72d78c927b9488c40ab69afac`.\nThe table covers the complete section, including separators:\n\n| Byte range | Candidate disposition and existing support |\n| --- | --- |\n| `[11972,12020)` | Heading and separator, structural context. |\n| `[12020,12189)` | The opening universal claim forbids adding an unobservable parameter; this is an ontological/admission claim, not a consequence of the abstract profile quotient. Retain unresolved. |\n| `[12189,12477)` | The source requires all admitted future tests and cites the hidden-bit control. `FutureExecution.profile` covers finite action words over a supplied test/action interface; equality with the full physical future-test class is not established. `FutureExecution.profile`, `hiddenBit_same_current` and `hiddenBit_different_future` are reused from §01.1.8; the code-level concrete control below uses a separately stated supplied realization. |\n| `[12477,12713)` | The no-change branch combines same outcomes, an obligatory canonizer and automatic elimination. The same-code implication is supported under explicit F/E/W inputs; the normative obligation and deletion/nonexistence of raw Y are not inferred. |\n| `[12713,12874)` | The changed-outcome branch combines a distinction, required History entry and code. Under supplied F/E/W the derived Boolean comparison reflects profile inequality, but insertion of an actual entry into physical History is not derived. |\n| `[12874,12992)` | The source gives the stronger alternative: the parameter does not exist or is in History/code. Quotient equality alone does not prove physical deletion or recording; retain as unresolved. |\n| `[12992,13059)` | The source adds that invisible parameters cannot steer the world past History. Its physical quantifiers and realization remain open; the raw-state witness is not a physical counterexample. |\n| `[13059,13293)` | CORE-FORCING status and the Book02 CKM downstream pointer are source declarations. Owner acceptance and the precise cross-book substitution require independent review. |\n| `[13293,13530)` | The int-versus-real worked case requires explicit comparison/typing predicates and a proved interpretation in the supplied interface; neither outcome is inferred from a type name alone. |\n\nThe existing candidate identities `FutureExecution.profile`,\n`FutureExecution.futureSetoid`, `hiddenBit_same_current`,\n`hiddenBit_different_future`, `uncoupledCenter_profile_independent`,\n`representedRecord_eq_iff`, `representedComparison_iff`,\n`uncoupledCenter_records_equal` and `SigmaWitness.archiveCode_eq_iff`\nalready occur in the §01.1.8 candidates. These are additional source\noccurrences and dependencies, not duplicate independent mathematical units.\nA supplied `FutureShortlexAdapter.stateCode_eq_iff` with `[LinearOrder Symbol]`,\n`[WellFoundedLT Symbol]`, and a profile-faithful decode/encode round trip\nsupplies an alternate, noncomputable code realization;\nit does not select physical encoding or automatically instantiate a\n`SigmaWitness`. Existing compiled evidence and owner blobs are listed below.\n\nSeparate open premises are retained: the physical admitted action/test family;\nthe obligation/implementation and cost of native `D_min`; why a relevant\ndistinction is actually written and read in the same History; identification\nof History and C* with the supplied abstract record/code; and the status of\nthe original `GOLDEN THE 1.1.11.B` and `BOOK-I-ARCHITECTURE` source, not yet\nresolved. A raw abstract countermodel does not decide the latter source's\nphysical or ontological premises. No new interpretation, semantic acceptance,\nsource correction, task, coverage percentage or GR closure is asserted.\n\nThe machine block is intentionally **candidate data**. Its opt-in consumer\nuses a separate third source selector; existing Book01 §01.1.8 and Book02\n§02.3b selectors and defaults retain their original meaning. The existing\n`lean-verification-core-to-foundation` application is a shared conditional\nconsumer, not acceptance of these source classifications. Do not pass this as\nan accepted compiled reconciliation view. Historical\ninventories below individually verify the declaration names, exact module\nowners and normalized elaborated type hashes at their stated commits; their\ndifferent Lean-source digests cannot be silently combined as one fresh compiled\ninventory. Final reconciliation needs one clean, pinned D0.All inventory of\nall four relevant owner modules and semantic/owner review.\n\nOwner blobs at the cited source snapshot:\n\n- `D0.Foundation.FutureExecution`: `065a8f631e65bda8b9bc85a6ff6217de31bdd1f4`.\n- `D0.Foundation.VerificationCore`: `01b02ebbe81a62464e81d5c397c101fd60fff4f9`.\n- `D0.Foundation.UncoupledCenterRawWitness`: `bf1468824fe63fc5f2fed59d74d44d1377923fa6`.\n- `D0.Foundation.FutureShortlexAdapter`: `a4a390673994ecbe7529ebae636ddd3fd6e2db7d`.\n\nHistorical compiled declaration inventories (separate provenance):\n\n- `reports/book01_template_budget_2026-11-04/declarations.json`, inventory commit `c25c66780fa4d9adec99996d512645243bc5ba72`, SHA-256 `581fa2a994be99c6e596d4b27f8fc10a5ce0add6e6929043aded31b130a53eb2`.\n- `reports/proof_architecture_uncoupled_center_inventory_2026-11-04.json`, inventory commit `2669b054c4cbd62d8d21380b4513c83aa7fc0f8f`, SHA-256 `101e436042b711f80934088e83b5f2cbce6918c550cd75a321f90af57e30ced1`.\n- `reports/proof_architecture_future_adapter_declarations_2026-11-04.json`, inventory commit `593129552501368e6701fd39046a9d0745481968`, SHA-256 `ebc304706ddbf768ec7529a6051c4385e6ff3e450e0238188ea9ea68a4709a19`.\n\nAll three inventories bind their selected owner module blobs to the same bytes\nas the source snapshot. Their standard axiom footprint is no stronger than\n`propext`, `Classical.choice`, `Quot.sound`; exact per-declaration footprints\nare in those inventories.\n\n",
+    "section": "C0 source review candidate: Book01 §01.1.6",
+    "section_sha256": "a9d283028959bbae0045e4c02f90c0697a955ac0878dbb1c00fbd1605e86f2e9"
+  },
+  "interpretation": "This is a proposed finite Book01 §01.1.6 atomization, not the C0 denominator. Shared source ranges are evidence for distinct assertions, not disjoint byte units. Definitions, conditional theorems and negative controls remain distinct. Existing accepted application metadata does not accept these source classifications. All unselected slices and full C0 acceptance remain unresolved. Exact reported compiled signatures do not establish semantic correspondence or replay the build.",
+  "issues": [],
+  "schema": "d0-c0-kernel-section-view/1",
+  "scope": {
+    "all_other_c0_candidates": "not_enumerated_unresolved",
+    "book01_01_1_6": "selected_for_reconciliation_not_accepted",
+    "book01_01_1_8": "outside_selected_slice_pending_independent_reconciliation",
+    "c0_acceptance_assessment": "not_evaluated",
+    "coverage_reported": false,
+    "finite_slice_only": true,
+    "scientific_status_changed": false,
+    "sections": [
+      "Book01 §01.1.6"
+    ],
+    "this_view_does_not_freeze_or_accept": true
+  },
+  "snapshot": "4fafa9ea90ecb2ddc1dbdb917c229dfff1a1e011",
+  "units": [
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.dmin_eq_iff",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E) (s t : F.State), W.dmin s = W.dmin t ↔ F.profile s = F.profile t",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Supplied FutureExecution F, TheoryVerification E of F.futureEmpiricalTheory, and SigmaWitness W over E.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "1. **`Y` does not change `Δ`-outcomes.** Then `(s, Y₁)` and `(s, Y₂)` are indistinguishable for the Σ protocol, so `D_min` (canonization) is obliged to discard `Y` as description noise (synonyms). `Y` is eliminated automatically.\n",
+      "source_excerpt_sha256": "df864ae655a0955c4fb32d50a0ff3612bd5c7906ebb171aca0aa5656aed423db",
+      "source_range": [
+        12477,
+        12713
+      ],
+      "source_unit_key": "source:1eabcccbf7e115c667e9bb8c445ef300107b1493:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.6/SigmaWitness.dmin_eq_iff",
+      "statement": "The canonical code W.dmin identifies two supplied states exactly when all finite future profiles agree. This is a property of the supplied representation, not a derivation of an obligatory native canonizer or deletion of a raw coordinate."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.delta_dmin_iff",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E) (s t : F.State),\n  W.coding.delta (W.dmin s) (W.dmin t) = true ↔ F.profile s ≠ F.profile t",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.delta_dmin_iff",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.delta_dmin_iff",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Supplied FutureExecution F, TheoryVerification E of F.futureEmpiricalTheory, and SigmaWitness W over E.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "2. **`Y` changes `Δ`-outcomes.** Then a change of `Y` is itself a distinguishability event, so it must be written into History `R`, so `Y` has a code in `C*`.\n",
+      "source_excerpt_sha256": "58eeceaa5806b6602831da93e49794d5ac3b508f91d0c46eecb462d8f33fd715",
+      "source_range": [
+        12713,
+        12873
+      ],
+      "source_unit_key": "source:1eabcccbf7e115c667e9bb8c445ef300107b1493:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.6/SigmaWitness.delta_dmin_iff",
+      "statement": "The supplied Boolean comparison of the two canonical codes is true exactly when their complete future profiles differ. This does not establish that a physical execution records the event or selects W."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "UncoupledCenterRawWitness.distinct_raw_same_future",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "∃ x y,\n  x ≠ y ∧\n    D0.Foundation.UncoupledCenterRawWitness.unitExecution.uncoupledCenter.profile x =\n      D0.Foundation.UncoupledCenterRawWitness.unitExecution.uncoupledCenter.profile y",
+        "kind": "theorem",
+        "name": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future",
+      "disposition": "negative_control",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Concrete one-state unitExecution extended by an uncoupled Boolean coordinate; only the original action and test interface is available.",
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Either the parameter does not exist (canonized away by `D_min`) or it is part of the code (written into History `R`). There are no invisible parameters steering the world past History. ",
+      "source_excerpt_sha256": "6da520ff3c44e1e1a8d5d61d36bc047928ec722a33edc7bc7d3a28a34e9b104f",
+      "source_range": [
+        12874,
+        13059
+      ],
+      "source_unit_key": "source:1eabcccbf7e115c667e9bb8c445ef300107b1493:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.6/UncoupledCenterRawWitness.distinct_raw_same_future",
+      "statement": "There are distinct raw states with identical complete future profiles in the explicit abstract extension. This controls inference from profile equality to raw-state equality; it is not a physical counterexample or a refutation of a separately established quotient ontology."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (s : F.State)\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.uncoupledCenter.futureEmpiricalTheory),\n  ∃ x y,\n    x ≠ y ∧\n      F.uncoupledCenter.profile x = F.uncoupledCenter.profile y ∧\n        D0.Foundation.VerificationCore.representedRecord E x = D0.Foundation.VerificationCore.representedRecord E y",
+        "kind": "theorem",
+        "name": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+      "disposition": "negative_control",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Supplied F, s : F.State, and TheoryVerification E of the future empirical theory of F.uncoupledCenter.",
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "1. **`Y` does not change `Δ`-outcomes.** Then `(s, Y₁)` and `(s, Y₂)` are indistinguishable for the Σ protocol, so `D_min` (canonization) is obliged to discard `Y` as description noise (synonyms). `Y` is eliminated automatically.\n",
+      "source_excerpt_sha256": "df864ae655a0955c4fb32d50a0ff3612bd5c7906ebb171aca0aa5656aed423db",
+      "source_range": [
+        12477,
+        12713
+      ],
+      "source_unit_key": "source:1eabcccbf7e115c667e9bb8c445ef300107b1493:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.6/UncoupledCenterRawWitness.distinct_raw_same_future_and_record",
+      "statement": "For the explicit uncoupled extension, distinct raw bit values have equal complete future profiles and equal represented records under the separately supplied E. E is not constructed for arbitrary F; raw-state nonexistence and native deletion do not follow."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∃ x y,\n  x ≠ y ∧\n    D0.Foundation.TheoryTransfer.visibleBitSystem.profile x = D0.Foundation.TheoryTransfer.visibleBitSystem.profile y ∧\n      D0.Foundation.VerificationCore.representedRecord\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification x =\n        D0.Foundation.VerificationCore.representedRecord\n          D0.Foundation.VerificationTransferApplication.visibleBitVerification y",
+        "kind": "theorem",
+        "name": "D0.Foundation.UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+      "disposition": "negative_control",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Concrete visibleBitSystem and its existing visibleBitVerification.",
+      "module": "D0.Foundation.UncoupledCenterRawWitness",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "1. **`Y` does not change `Δ`-outcomes.** Then `(s, Y₁)` and `(s, Y₂)` are indistinguishable for the Σ protocol, so `D_min` (canonization) is obliged to discard `Y` as description noise (synonyms). `Y` is eliminated automatically.\n",
+      "source_excerpt_sha256": "df864ae655a0955c4fb32d50a0ff3612bd5c7906ebb171aca0aa5656aed423db",
+      "source_range": [
+        12477,
+        12713
+      ],
+      "source_unit_key": "source:1eabcccbf7e115c667e9bb8c445ef300107b1493:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.6/UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record",
+      "statement": "A nontrivial existing verified example has distinct raw states with equal complete profiles and equal represented records. Its supplied verification is not a proof of arbitrary-F existence or physical admission."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.observe (false, false) () =\n    D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.observe (false, true) () ∧\n  D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution\n      D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, false) ≠\n    D0.Foundation.FutureShortlexAdapter.stateCode D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution\n      D0.Foundation.FutureShortlexAdapter.pairDecode D0.Foundation.FutureShortlexAdapter.pairEncode (false, true)",
+        "kind": "theorem",
+        "name": "D0.Foundation.FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+      "disposition": "negative_control",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Concrete hiddenBitExecution with pairDecode and pairEncode, and its derived noncomputable shortlex state code.",
+      "module": "D0.Foundation.FutureShortlexAdapter",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For an execution interface, “does not change `Δ`” must include all its\nadmitted future tests, not only the current display. The future-profile\nconstruction below makes this quantifier explicit; its hidden-bit control\nshows why current-readout equality alone cannot justify erasure.\n\n",
+      "source_excerpt_sha256": "a5bb7da5048b9c7cb772a2d3a20847249fedc39a2b4bda0d85d22c7fcbce8028",
+      "source_range": [
+        12189,
+        12477
+      ],
+      "source_unit_key": "source:1eabcccbf7e115c667e9bb8c445ef300107b1493:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.6/FutureShortlexAdapter.hiddenBit_current_same_but_codes_different",
+      "statement": "The concrete states have the same current observation but different derived codes because the permitted future distinguishes their profiles. This supplements the previously counted current/future control; it does not establish automatic native erasure or a physically implemented code."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "schema": "d0-pairing-refinement-historical-replay-v1",
+  "scope": "Historical checker and pinned Lean receipt replay; not a current-source Lean build or physical acceptance.",
+  "replay_commit": "7629fc4d5c832771d85a1ef60a8f753d98418461",
+  "entrypoint": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_check.py",
+  "runner": "tools/run_research_certs.py",
+  "runner_git_blob": "902bb5c5418312277024abf83036603d3a4ec674",
+  "overlay_helper": "tools/native_pairing_refinement_inputs.py",
+  "overlay_helper_git_blob": "19edced82c0ed9054618457fcd15cd631415f4a3",
+  "status": "PASS",
+  "returncode": 0,
+  "tracked_mutation": false,
+  "historical_input_mutation": false,
+  "historical_input": {
+    "mode": "HISTORICAL_PINNED_SOURCE_CLOSURE_NOT_CURRENT_SOURCE_PROOF",
+    "entrypoint": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_check.py",
+    "target_path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_certificate.json",
+    "source_head": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
+    "replay_head": "7629fc4d5c832771d85a1ef60a8f753d98418461",
+    "historical_sha256": "fff8606d0a48cbb043fd960ac3661ca46bc8e81fb040c60e568c0efbe9e4fe3e",
+    "manifest": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/MANIFEST.json",
+    "manifest_sha256": "606b4774d19e103901f19ac639484b07044157ec8e141969d6e9cf1139e69989",
+    "ledger_input_count": 66,
+    "lean_receipt_input_count": 12,
+    "overlaid_source_count": 11,
+    "sources": [
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/A4DPathCovariantHodge.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/A4DPathCovariantHodge.lean",
+        "git_blob": "23a51617479210d82c339f8875e8dc1ffe63a4b5",
+        "historical_sha256": "49a1ceb61c338dfe54fb26c79d1ff83a9acfc544fac9215f5d9a4df2fe16b1f4",
+        "maintained_sha256": "68a3cb08564e06086de1e5aa94939de92aa777b30eb520eed288464b8b8a0aef",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean",
+        "git_blob": "92bed4cae87fc5e0bb0d71812b02107c09b6098d",
+        "historical_sha256": "4096e0a3b132841a60907f71bb48b726399c789231b804b869708249f7087438",
+        "maintained_sha256": "ad5402efd2d528c03fd56a2ae7f9cb2592c1cb9a08f8261db735268546da8a0f",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+        "git_blob": "11c4acfbdc76692f23cec996548aa56bc5401929",
+        "historical_sha256": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+        "maintained_sha256": "daedb152b6a8a2b68ff0079876c8fe0795700d86146e23297181d1f8a7ac783b",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean",
+        "git_blob": "53153baddfd22a23fdb9d7fb56ff23577618950c",
+        "historical_sha256": "4588589d0e7f018e3f036e2f42a0f002ad9256fdc5792a3c7d4f2026ca68c20e",
+        "maintained_sha256": "279372d21e1401375ddbd7c2b5b430622c069008486cfd964c4cdc9cb578a20c",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
+        "git_blob": "032cb37242abebee30f6a8715b90a61235bec348",
+        "historical_sha256": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388",
+        "maintained_sha256": "2babe6cfc64e7aa41e95f3aaf24e88fc119a3e4ce82c2ef6d2d1031f5ea8970a",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean",
+        "git_blob": "8ff68576d92ff67532733a0ca2646de9d50105e2",
+        "historical_sha256": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+        "maintained_sha256": "f6df04c0116b3b50182504a89bf68e9061c7b279a0fff5960e985d7f14fea368",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCochainCarrier.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveCubicalCochainCarrier.lean",
+        "git_blob": "007128ec72ad16d413f60def9945194cd6815a5d",
+        "historical_sha256": "ccfda1cb587c23dc98837c6a78490046e26dc606c0777804a4d7a10b0eddda5a",
+        "maintained_sha256": "46581561d017bce72a8faaf86a845ac753f172510f750882c0478da547964c36",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean",
+        "git_blob": "087afdd443ffc02701376e00728193c020da259d",
+        "historical_sha256": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967",
+        "maintained_sha256": "3ae1c1428d05200f68d558a7050ee4e413c50fe53720fbf07b0420ec5785e173",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementChainMap.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementChainMap.lean",
+        "git_blob": "909e2abdd36094c679898fd81a7c5c688c0d1f24",
+        "historical_sha256": "448af9b22c625fbc1ff07a0869ff888612199a1f29c0c75584708074c7955a76",
+        "maintained_sha256": "3adf4e36e43b80029a0014e99cb2d4f2a7a5ec9b8554e6e350fb9ce3784ac3a6",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean",
+        "git_blob": "a88cf03a379a9cdff256d5047c6693ef63d98679",
+        "historical_sha256": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+        "maintained_sha256": "c606b4b57a774f27683993925b3f5bc8c9a267df80db108d0d4c8b70b628263c",
+        "overlaid": true
+      },
+      {
+        "target_path": "03_FORMALIZATION/D0/Geometry/ArchiveRefinementHodgeWeights.lean",
+        "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveRefinementHodgeWeights.lean",
+        "git_blob": "4af216a4e9b37d93a4051d3d78e8fa1b2d892cd8",
+        "historical_sha256": "5d15086e27397d4dccf7bc1675e85aba086bcd2f61811a7fc0ef96203a6d8f8b",
+        "maintained_sha256": "0c14506b4f0044655c348e5715d628a34f844170e724f058b8ab771b68eeb73a",
+        "overlaid": true
+      }
+    ],
+    "current_source_compilation": "SEPARATE_REQUIRED_LEAN_COMPATIBILITY_CHECK"
+  },
+  "stdout": "PASS_NATIVE_PAIRING_REFINEMENT_SOURCE controls=588 mutants=32 native_admission=OPEN\n",
+  "stdout_sha256": "83cc3e93ffcf442a4fb86343ae0847c48f0b79cf9dc8425e2ec96770188b11b5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tracked_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "index_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

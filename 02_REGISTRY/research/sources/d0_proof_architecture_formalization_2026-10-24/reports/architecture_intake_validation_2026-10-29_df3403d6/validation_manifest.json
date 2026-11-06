@@ -1,0 +1,153 @@
+{
+  "schema": "d0-proof-architecture-intake-validation-v1",
+  "pull_request": 402,
+  "integrated_source_commit": "df3403d6e634789dea6ac66b9ae131df2ec0f440",
+  "validation_snapshot_commit": "df3403d6e634789dea6ac66b9ae131df2ec0f440",
+  "cold_start": {
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "raw_output_bytes": 18570794,
+    "raw_output_sha256": "30c22c44fd81267121d92ee7f8e174332fe97098b9f4cc8ea3dd03796b3c2282",
+    "summary_file": "cold_start_summary.json",
+    "summary_bytes": 1929944,
+    "summary_sha256": "48474be3819a3e755bdd7e4bd09ada2010a0ec7dff03f6581a11335c947ed667",
+    "runner_sha256": "3343abf4f3cac8a7207332ec6625f0be78bbc6ef55185c06b49ccdba197dc987",
+    "runner_git_blob": "06d33a57c883fa7930a64331a06ff95556f5915c",
+    "search_engine_sha256": "4ef5b51ac318c376c18ccf4c6abb983a3e76e53687d11514cc2cceb4988325b4",
+    "search_engine_git_blob": "4eb2c8371e0fd2c563e7af0e7f3639c8846788e4",
+    "compactor_sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
+    "compactor_git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
+    "snapshot_commit": "df3403d6e634789dea6ac66b9ae131df2ec0f440",
+    "worktree_dirty": false,
+    "search_cases_total": 40,
+    "search_cases_found_all_sources": 40,
+    "benchmark_cases_total": 41,
+    "required_source_ref_count": 259,
+    "search_limit": 18,
+    "semantic_scope_review_is_manual": true,
+    "full_output_sha256": "30c22c44fd81267121d92ee7f8e174332fe97098b9f4cc8ea3dd03796b3c2282",
+    "full_output_bytes": 18570794
+  },
+  "process_comparison": {
+    "command": "python3 tools/proof_architecture_process_comparison.py",
+    "file": "process_comparison.json",
+    "bytes": 179531,
+    "sha256": "97d2682aeb37f91eb28f5a9d0fc460d5ccca2c15a02db281a055038bd67128cf",
+    "snapshot_commit": "df3403d6e634789dea6ac66b9ae131df2ec0f440",
+    "runner_sha256": "b36748084ab2fd801c01552041fe53d4babb71929c4a0766ff9bed569055a31a",
+    "runner_git_blob": "6a20d8caaa197282514ca29cbd98dfbe4fb027af",
+    "query_fixture_sha256": "3343abf4f3cac8a7207332ec6625f0be78bbc6ef55185c06b49ccdba197dc987",
+    "metrics": {
+      "query_count": 40,
+      "query_count_with_explicit_source_scope": 24,
+      "expected_source_reference_count": 40,
+      "unique_expected_source_path_count": 22,
+      "current_scoped_queries_with_expected_source_assembly_owner_link": 1,
+      "current_expected_source_assembly_owner_link_count": 1,
+      "current_expected_source_references_with_assembly_owner_link": 1,
+      "current_expected_source_references_with_formal_support_locator": 15,
+      "current_expected_source_formal_support_locator_count": 61,
+      "current_unique_expected_source_paths_with_formal_support_locator": 5,
+      "current_expected_source_references_without_assembly_or_formal_support": 24,
+      "current_unique_expected_source_paths_without_assembly_or_formal_support": 16,
+      "current_scoped_queries_with_expected_source_header_owner_declaration": 1,
+      "current_expected_source_header_owner_declaration_count": 1,
+      "current_scoped_expected_sources_without_direct_assembly_owner_link": 39,
+      "legacy_scoped_queries_with_expected_source": 0,
+      "current_scoped_queries_with_expected_source": 23,
+      "legacy_serialized_answer_bytes_total": 80,
+      "current_serialized_answer_bytes_total": 891970,
+      "legacy_average_answer_bytes": 2.0,
+      "current_average_answer_bytes": 22299.2,
+      "legacy_owner_bearing_queries": 0,
+      "current_owner_bearing_queries": 12,
+      "semantic_review_required_for_all_queries": true
+    },
+    "current_expected_source_misses": [
+      {
+        "case_id": "paid-binary-input-full-same-execution-book-price",
+        "expected_sources": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        ]
+      },
+      {
+        "case_id": "canonical-af-stationary-family-archive-seed",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": []
+      },
+      {
+        "case_id": "canonical-af-original-julia-source-lift",
+        "expected_sources": [
+          "02_REGISTRY/research/A4D_CANONICAL_AF_ORIGINAL_JULIA_SOURCE_LIFT_2026_10_28.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": [
+          "02_REGISTRY/research/A4D_CANONICAL_AF_ORIGINAL_JULIA_SOURCE_LIFT_2026_10_28.md"
+        ]
+      },
+      {
+        "case_id": "canonical-af-native16-return-record-compiler",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_native16_return_record_compiler_2026-10-29/upstream_section_7ds.md"
+        ],
+        "current_expected_source_hits": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ]
+      },
+      {
+        "case_id": "record-saturated-native-field-stencils",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py"
+        ],
+        "current_expected_source_hits": [
+          "02_REGISTRY/research/sources/d0_record_saturated_native_field_2026-10-29/check_record_saturated_field.py"
+        ]
+      },
+      {
+        "case_id": "native16-whole-book-price-graph",
+        "expected_sources": [
+          "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+          "02_REGISTRY/research/sources/d0_native16_whole_book_price_graph_2026-10-29/PROOF_RU.md"
+        ],
+        "current_expected_source_hits": [
+          "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+        ]
+      },
+      {
+        "case_id": "canonical-archive-law-and-variation-domain",
+        "expected_sources": [
+          "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md",
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ],
+        "current_expected_source_hits": [
+          "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md"
+        ]
+      }
+    ],
+    "native16_whole_book_price_graph": {
+      "expected_sources": 3,
+      "current_expected_source_hits": [
+        "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+      ]
+    },
+    "interpretation": "Retrieval comparison only. The current five-candidate view misses the central architecture document for the canonical AF stationary-family query and the new one-query native16 case surfaces only its owner memo; the complete 40-case cold-start finds all required sources through its separately scoped query set. Search coverage does not establish theorem correctness, owner acceptance, or physical closure."
+  },
+  "status_boundaries": {
+    "full_cold_start_all_source_sets_found": true,
+    "all_current_expected_sources_found_in_process_comparison": false,
+    "process_comparison_scoped_queries": 24,
+    "process_comparison_current_expected_source_hits": 23,
+    "Lean_build_run_in_this_increment": false,
+    "physical_D0_admission_proved": false,
+    "GR_closed": false,
+    "WRK_D0_PROOF_ARCHITECTURE_FORMALIZATION_remains_IN_PROGRESS": true
+  }
+}

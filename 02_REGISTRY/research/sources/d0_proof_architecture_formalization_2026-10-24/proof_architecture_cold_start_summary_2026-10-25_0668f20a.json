@@ -1,0 +1,183 @@
+{
+  "schema": "d0-proof-architecture-cold-start-summary-v1",
+  "record_date": "2026-10-25",
+  "runtime": {
+    "python": "3.9.6",
+    "ripgrep": "ripgrep 15.2.0 (rev e89fff89ac)",
+    "runner_sha256": "762a3664ced0012ea56810836e7cc93c556d32778f4b96e2f2ae5018fadcfef0",
+    "search_engine_sha256": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262"
+  },
+  "snapshot_commit": "0668f20acf507fb58bb0d8cff586cd52136fd7d8",
+  "worktree_dirty": false,
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "c1bb2183581ca009694908c5b77e2632f9c4122eee2eaa1ba660ffcab80e7296",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "search_limit": 18,
+  "search_cases_found_all_sources": 20,
+  "search_cases_total": 20,
+  "benchmark_cases_total": 21,
+  "cases": [
+    {
+      "id": "labelled-native-raising-inverse",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "positive-nonvacuum-recovery",
+      "found_all_required_sources": true,
+      "required_source_count": 1,
+      "found_source_count": 1
+    },
+    {
+      "id": "golden-step-vs-internal-ratio",
+      "found_all_required_sources": true,
+      "required_source_count": 1,
+      "found_source_count": 1
+    },
+    {
+      "id": "fixedright-stationary-and-minimum-scopes",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "same-fields-do-not-fix-price-source",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "same-prefix-two-ending-prospective-price",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "clock-dirac-incidence-curvature",
+      "found_all_required_sources": true,
+      "required_source_count": 3,
+      "found_source_count": 3
+    },
+    {
+      "id": "gain-readiness-vs-trace-multiplicity",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "conditional-transfer-does-not-select-execution",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "verification-kernel-transfer-outside-gr",
+      "found_all_required_sources": true,
+      "required_source_count": 8,
+      "found_source_count": 8
+    },
+    {
+      "id": "car-scaffolds-vs-hodge-operator-claims",
+      "found_all_required_sources": true,
+      "required_source_count": 28,
+      "found_source_count": 28
+    },
+    {
+      "id": "top-hodge-inverse-spectral-outside-gr",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "dense-operator-scene-reconstruction-outside-gr",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "scoped-nogo-vs-positive-existence",
+      "found_all_required_sources": true,
+      "required_source_count": 2,
+      "found_source_count": 2
+    },
+    {
+      "id": "finite-affine-carrier-parameter-recovery",
+      "found_all_required_sources": true,
+      "required_source_count": 4,
+      "found_source_count": 4
+    },
+    {
+      "id": "finite-julia-null-chart-inverse",
+      "found_all_required_sources": true,
+      "required_source_count": 4,
+      "found_source_count": 4
+    },
+    {
+      "id": "julia-query-principal-frame-coframe-recovery",
+      "found_all_required_sources": true,
+      "required_source_count": 10,
+      "found_source_count": 10
+    },
+    {
+      "id": "finite-hermitian-adjoint-twisted-car-application",
+      "found_all_required_sources": true,
+      "required_source_count": 12,
+      "found_source_count": 12
+    },
+    {
+      "id": "real-unit-profile-weighted-hermitian-bridge",
+      "found_all_required_sources": true,
+      "required_source_count": 19,
+      "found_source_count": 19
+    },
+    {
+      "id": "native-weighted-dirac-matrix-application",
+      "found_all_required_sources": true,
+      "required_source_count": 13,
+      "found_source_count": 13
+    }
+  ],
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true,
+  "v3_source_view_integration": {
+    "case_id": "car-scaffolds-vs-hodge-operator-claims",
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
+    "status": "found_direct_content",
+    "query": "D0-ARCHIVE-CAR-ZERO-MODE-OWNER-001 literal claim ID source candidate view",
+    "candidate_rank": 1,
+    "source_sha256": "e30de22bf507c0f65f752f08b6f98c74941ff8ecd17670b4330e89f1ce083a21",
+    "semantic_scope_review_is_manual": true,
+    "direct_content": true
+  },
+  "finite_matrix_tensor_api_retrieval": {
+    "path": "03_FORMALIZATION/D0/Algebra/FiniteMatrixTensorProduct.lean",
+    "candidate_rank": 1,
+    "status": "found_direct_content",
+    "matched_terms": 9,
+    "source_sha256": "9de7277fcd33264cfb8d10e20a1535de253a27e3b8d19bdabb17ae70e16e0d55",
+    "case_id": "car-scaffolds-vs-hodge-operator-claims",
+    "query_index_zero_based": 10
+  },
+  "compiled_declaration_inventory": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json",
+    "snapshot_commit": "952b799dd6a85e38a39a3cca6f1a9f16c7121ba1",
+    "worktree_dirty": false,
+    "declarations": 36,
+    "lean_source_digest": "ae2dc4936267b987e3e543ccadd4b746de899ddeb949e362710ab6aeb2fb3d52",
+    "collector_sha256": "3c41633e10ad03c3bb0a8e440f94506a632630561697a6c44f6a76cda6155b2a",
+    "file_sha256": "476f074c18c6fa701cf512b5b5d28a1080aba4a31d903d198719f44787fda8d5"
+  }
+}

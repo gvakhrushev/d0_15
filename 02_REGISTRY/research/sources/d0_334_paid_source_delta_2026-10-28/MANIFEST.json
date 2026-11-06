@@ -1,0 +1,29 @@
+{
+  "schema": "d0-published-source-delta-v1",
+  "repository": "gvakhrushev/d0_15",
+  "pull_request": 334,
+  "base_source_commit": "c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6",
+  "source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "source_commit_count": 1,
+  "commit_subject": "research(#334): compute unpadded source row and complete QUERY cut balance",
+  "file_count": 2,
+  "files": [
+    {
+      "upstream_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "snapshot_path": "upstream/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "git_blob": "65a996966d62b26592772e506b99eba6a44c5094",
+      "bytes": 1081431,
+      "sha256": "1e9bed486cb7c421fc2d35830d00b99262ab908ebb720cec6efc2e09331d121e",
+      "base_blob": "5b8dc85991d400e333902b6fd6a26462eef9be84"
+    },
+    {
+      "upstream_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "snapshot_path": "upstream/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "git_blob": "671f8712162b850b4299152bedac0165267b71a7",
+      "bytes": 2697781,
+      "sha256": "5f8c04004e0332127681095ddc3678c2b7e0bec664c9b14ee3c1a63bdea414c4",
+      "base_blob": "5d899718decac49826db6ba10f975cd27bf1db1a"
+    }
+  ],
+  "verification_boundary": "full changed files copied from fetched commit tree; seven replay inputs and three embedded controls are pinned separately; local normal and optimized replays are in replay/receipt.json; no physical admission or GR closure implied"
+}

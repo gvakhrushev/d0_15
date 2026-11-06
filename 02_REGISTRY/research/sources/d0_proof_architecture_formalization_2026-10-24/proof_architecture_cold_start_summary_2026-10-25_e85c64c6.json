@@ -1,0 +1,1460 @@
+{
+  "schema": "d0-proof-architecture-cold-start-summary-v1",
+  "snapshot_commit": "e85c64c6e8a6f135b928679f213860c9cad5bb2f",
+  "worktree_dirty": false,
+  "search_cases_found_all_sources": 20,
+  "search_cases_total": 20,
+  "benchmark_cases_total": 21,
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "1edc5ddf0e53d46d72c7533beb0e7285dcb25b0d3cca0243d2f3d2c646899e1a",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "runner_sha256": "7da9ed4eec1fc1f0c6a1ec217cd89e9d09bfc05ae176384e364e0d5bdbe73285",
+  "search_engine_sha256": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
+  "verbose_output_sha256": "9078db77bf2524844795e2449dd528916f784f64be7067f18360e4392e86be04",
+  "verbose_output_git_pin": {
+    "commit": "88b336d3196d95e35f5646a423ea4e027e613815",
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-25_e85c64c6.json",
+    "blob": "de4aeb7ece8f4e9c556588ee0d67d723de1d8c4d"
+  },
+  "semantic_scope_review_is_manual": true,
+  "cases": [
+    {
+      "id": "labelled-native-raising-inverse",
+      "query_count": 7,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+          "expected_blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+          "required_sections": [
+            "5.1"
+          ],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+          "expected_blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+          "required_sections": [
+            "8.4",
+            "8.5"
+          ],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "positive-nonvacuum-recovery",
+      "query_count": 4,
+      "required_source_count": 3,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+          "expected_blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+          "required_sections": [
+            "7.1",
+            "7.2"
+          ],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_declarations_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "golden-step-vs-internal-ratio",
+      "query_count": 1,
+      "required_source_count": 1,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "fixedright-stationary-and-minimum-scopes",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": "4873b3c245a91bd8c9cb25bceeb82662e9f62944",
+          "expected_blob": "6395c736c54d0c0a704d22ffdf046dbfc2c6c84b",
+          "required_sections": [
+            "5"
+          ],
+          "missing_sections": []
+        },
+        {
+          "path": "A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "same-fields-do-not-fix-price-source",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "same-prefix-two-ending-prospective-price",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "A4D_NATIVE_FOUR_COPY_TO_CURVATURE_APPLICATION_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "clock-dirac-incidence-curvature",
+      "query_count": 4,
+      "required_source_count": 3,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "gain-readiness-vs-trace-multiplicity",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "A4D_NATIVE_AF_SCENE_HEAT_COMPARISON.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "A4D_NATIVE_FOUR_COPY_TO_CURVATURE_APPLICATION_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "conditional-transfer-does-not-select-execution",
+      "query_count": 1,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "verification-kernel-transfer-outside-gr",
+      "query_count": 8,
+      "required_source_count": 8,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/future_profile_memory_cardinality_declarations_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Bridge/ConnesReconstructionBridge.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Foundation/VerificationTransferApplication.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "car-scaffolds-vs-hodge-operator-claims",
+      "query_count": 28,
+      "required_source_count": 28,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/claims.csv",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_l2_zero_kernel_trivial_declaration_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_claim_declarations_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_l2_identity_declaration_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_dirac_square_l2_no_go_declaration_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_current_declaration_inventory_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_diagonal_transpose_current_declaration_inventory_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_hodge_transpose_current_declaration_inventory_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_spectrum_amplification_claim_declarations_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/car_zero_mode_claim_declarations_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/claim_source_candidates_current.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/dirac_heattrace_multiplicity_claim_declarations_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_kernel_declaration_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_l2_normalization_declaration_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_car_dirac_square_declaration_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_energy_limit_declaration_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_shell_rank_l2_control_declaration_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_spatial_shell_claim_declarations_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/hodge_square_backward_forward_declaration_followup_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteMatrixTensorProduct.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDirac.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracShell.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeSpatialShellOperator.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "top-hodge-inverse-spectral-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Synthesis/TopHodgeInverseSpectralRigidity.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "dense-operator-scene-reconstruction-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Synthesis/DenseOperatorSceneRigidity.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "scoped-nogo-vs-positive-existence",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "A4D_NATIVE_AFFINE_PROBE_NOGO.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "A4D_NATIVE_REALIZATION_CLOSURE.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "finite-affine-carrier-parameter-recovery",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/MEMO_A4D_AFFINE_SENSITIVE_SITE_MATTER_LINK.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DNilpotentAffineMatterLift.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "finite-julia-null-chart-inverse",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "julia-query-principal-frame-coframe-recovery",
+      "query_count": 16,
+      "required_source_count": 10,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+          "expected_blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+          "required_sections": [
+            "5.1"
+          ],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "pinned_snapshot",
+          "expected_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+          "expected_blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+          "required_sections": [
+            "8.4",
+            "8.5"
+          ],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_endpoint_inventory_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proper_role_lorentz_joint_recovery_inventory_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaNonNullGammaRecovery.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaPrincipalFrameRecovery.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "finite-hermitian-adjoint-twisted-car-application",
+      "query_count": 11,
+      "required_source_count": 12,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hermitian_right_adjoint_wrapper_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hermitian_self_adjoint_wrapper_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_hodge_laplacian_from_generic_square_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_linear_square_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_operator_adapter_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_pointwise_square_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_hodge_hermitian_self_adjoint_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteCoordinateBasis.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveTwistedHodgeDirac.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "real-unit-profile-weighted-hermitian-bridge",
+      "query_count": 18,
+      "required_source_count": 19,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_weighted_hodge_hermitian_bridge_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_equality_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_self_adjoint_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/cubical_unit_profile_hermitian_hodge_square_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_hermitian_hodge_dirac_self_adjoint_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_hermitian_hodge_dirac_square_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/finite_weighted_unit_profile_adjoint_bridge_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_counting_pairing_hermitian_adapter_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_canonical_map_refactor_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_generic_adjoint_self_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_hermitian_adjoint_self_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_square_from_generic_hermitian_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/real_hodge_car_unit_profile_adjoint_self_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteHermitianAdjoint.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracKernel.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveHodgeCARDiracSquare.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    },
+    {
+      "id": "native-weighted-dirac-matrix-application",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "required_sources": [
+        {
+          "path": "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_fourier_fiber_action_declarations_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_null_modes_declarations_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/weighted_cubical_hodge_standard_representative_claim_reuse_2026-10-25.json",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Algebra/FiniteWeightedAdjoint.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracFourierNullModes.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+          "found": true,
+          "status": "found_direct_content",
+          "source_origin": "workspace",
+          "expected_commit": null,
+          "expected_blob": null,
+          "required_sections": [],
+          "missing_sections": []
+        }
+      ]
+    }
+  ]
+}

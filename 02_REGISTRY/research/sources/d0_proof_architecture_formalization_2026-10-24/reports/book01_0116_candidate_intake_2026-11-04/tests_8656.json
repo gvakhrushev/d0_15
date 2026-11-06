@@ -1,0 +1,10 @@
+{
+  "snapshot_commit": "86564e5f01f20635a3cd0ecb2024d9c48bafe277",
+  "worktree_dirty": false,
+  "tests": 101,
+  "status": "PASS",
+  "log_sha256": "f705bfbab4b70a6874a959aabe0c81fa1799c96f4f85fac9e6571da9dbaa1806",
+  "log_gzip_sha256": "efa0ce5c742acb1fe8ea7f3cecd3a2a80aa0fb5020cee99d07d328c95a352517",
+  "semantic_acceptance": "not_assessed",
+  "GR_closed": false
+}

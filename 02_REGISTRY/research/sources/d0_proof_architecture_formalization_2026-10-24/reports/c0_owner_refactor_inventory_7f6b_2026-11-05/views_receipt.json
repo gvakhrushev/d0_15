@@ -1,0 +1,25 @@
+{
+  "snapshot": "b350424324b5cc74c86d4bc37d404acef2453129",
+  "inventory_snapshot": "7f6b25e9fce1487ca55c13d5f33d0b1db7ec40ae",
+  "inventory_sha256": "d9713060a84cb6d7fedb5c94541de73d5dd7da3f543d2e8ad65d46b41268542a",
+  "lean_source_sha256": "62dbee181487b71437960a8b4ddb5cbde515cde0d54671750e0e55df8e92448d",
+  "views": {
+    "view_book01-0116.json": {
+      "sha256": "2688cf98a09c22030478cb972f130fb74e9a685e9970e4dafab47ccbdfec8072",
+      "units": 6,
+      "issues": []
+    },
+    "view_book01.json": {
+      "sha256": "84a3f684dde49933e276fabd67763239965778d40884e62dce7a9f74d8e74d3f",
+      "units": 44,
+      "issues": []
+    },
+    "view_book02.json": {
+      "sha256": "d2a3f39689116aa07d7cf5e2f839fd173111b2895e55e4d2f624bce122b83e60",
+      "units": 30,
+      "issues": []
+    }
+  },
+  "semantic_acceptance": "not_assessed",
+  "GR_closed": false
+}

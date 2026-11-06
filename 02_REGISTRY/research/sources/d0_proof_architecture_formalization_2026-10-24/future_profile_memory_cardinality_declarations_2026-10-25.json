@@ -1,0 +1,632 @@
+{
+  "snapshot_commit": "b649e766d0adf049ddb3d263e30d83fd3fcc347f",
+  "worktree_dirty": true,
+  "public_import_root": "D0.Foundation.FutureExecution",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "lean_source_digest": "ae5f197c7d5043800c867a916c8fd6b1bb5e885e64e1b7b40047ddd1818158db",
+  "collector_sha256": "fc9aae28d37ec54fca3267ca2957f09893d2ea23f9ad9ddb4ff8b1ebe0667e14",
+  "source": {
+    "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+    "sha256": "22a3071bef687e2009ccb7ebfed6d6fad469c8f35be57cc2b0a7fa39a8d36da6"
+  },
+  "tool_source_sha256": {
+    "tools/lean_declaration_inventory.py": "5eeba9948c4338eb6fed1e6d3efc5031081f2f054bc68db720d0796b50881442"
+  },
+  "declaration_count": 6,
+  "declarations": [
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "C",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "encode",
+          "type": "F.State → C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "C → List F.Action → F.Test → F.Outcome"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), decode (encode s) = F.profile s"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "s",
+          "type": "F.1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "t",
+          "type": "F.1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "heq",
+          "type": "encode s = encode t"
+        }
+      ],
+      "conclusion_whnf": "⟦s⟧ = ⟦t⟧",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 72,
+            "line": 120
+          },
+          "start": {
+            "column": 0,
+            "line": 109
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 57,
+            "line": 111
+          },
+          "start": {
+            "column": 8,
+            "line": 111
+          }
+        }
+      },
+      "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) {C : Type} (encode : F.State → C)\n  (decode : C → List F.Action → F.Test → F.Outcome),\n  (∀ (s : F.State), decode (encode s) = F.profile s) → ∀ {s t : F.State}, encode s = encode t → ⟦s⟧ = ⟦t⟧",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureExecution",
+      "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.sufficient_memory_reflects_future",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureSetoid",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "Eq",
+        "Eq.symm",
+        "Eq.trans",
+        "List",
+        "Quotient.sound",
+        "congrArg"
+      ],
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureSetoid",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "Eq",
+        "List",
+        "Quotient",
+        "Quotient.mk"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "profile_injective",
+          "type": "∀ ⦃a₁ a₂ : F.State⦄, F.profile a₁ = F.profile a₂ → a₁ = a₂"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "C",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "encode",
+          "type": "F.State → C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "C → List F.Action → F.Test → F.Outcome"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), decode (encode s) = F.profile s"
+        }
+      ],
+      "conclusion_whnf": "∀ ⦃a₁ a₂ : F.State⦄, encode a₁ = encode a₂ → a₁ = a₂",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 67,
+            "line": 134
+          },
+          "start": {
+            "column": 0,
+            "line": 122
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 73,
+            "line": 124
+          },
+          "start": {
+            "column": 8,
+            "line": 124
+          }
+        }
+      },
+      "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution),\n  Function.Injective F.profile →\n    ∀ {C : Type} (encode : F.State → C) (decode : C → List F.Action → F.Test → F.Outcome),\n      (∀ (s : F.State), decode (encode s) = F.profile s) → Function.Injective encode",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureExecution",
+      "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.sufficient_encoder_injective_of_profile_injective",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureSetoid",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.sufficient_memory_reflects_future",
+        "Eq",
+        "Function.Injective",
+        "List",
+        "Quotient.exact"
+      ],
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "Eq",
+        "Function.Injective",
+        "List"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureExecution.1926896245._hygCtx._hyg.3",
+          "type": "Fintype F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "C",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureExecution.1926896245._hygCtx._hyg.7",
+          "type": "Fintype C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "profile_injective",
+          "type": "∀ ⦃a₁ a₂ : F.State⦄, F.profile a₁ = F.profile a₂ → a₁ = a₂"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "encode",
+          "type": "F.State → C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "C → List F.Action → F.Test → F.Outcome"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), decode (encode s) = F.profile s"
+        }
+      ],
+      "conclusion_whnf": "(Fintype.card F.State).le (Fintype.card C)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 46,
+            "line": 147
+          },
+          "start": {
+            "column": 0,
+            "line": 136
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 65,
+            "line": 138
+          },
+          "start": {
+            "column": 8,
+            "line": 138
+          }
+        }
+      },
+      "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) [inst : Fintype F.State] {C : Type}\n  [inst_1 : Fintype C],\n  Function.Injective F.profile →\n    ∀ (encode : F.State → C) (decode : C → List F.Action → F.Test → F.Outcome),\n      (∀ (s : F.State), decode (encode s) = F.profile s) → Fintype.card F.State ≤ Fintype.card C",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureExecution",
+      "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.sufficient_memory_cardinality_lower_bound",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.sufficient_encoder_injective_of_profile_injective",
+        "Eq",
+        "Fintype",
+        "Fintype.card_le_of_injective",
+        "Function.Injective",
+        "List"
+      ],
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "Eq",
+        "Fintype",
+        "Fintype.card",
+        "Function.Injective",
+        "LE.le",
+        "List",
+        "Nat",
+        "instLENat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "∀ ⦃a₁ a₂ : D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State⦄,\n  D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile a₁ =\n      D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile a₂ →\n    a₁ = a₂",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 241
+          },
+          "start": {
+            "column": 0,
+            "line": 225
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 41,
+            "line": 228
+          },
+          "start": {
+            "column": 8,
+            "line": 228
+          }
+        }
+      },
+      "elaborated_type": "Function.Injective D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureExecution",
+      "name": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_futureProfile_injective",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.true",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.mk",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.observe",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "Eq",
+        "Eq.casesOn",
+        "Eq.mp",
+        "Eq.ndrec",
+        "Eq.refl",
+        "Eq.symm",
+        "HEq",
+        "HEq.refl",
+        "List",
+        "List.cons",
+        "List.foldl",
+        "List.nil",
+        "Prod",
+        "Prod.casesOn",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Unit",
+        "Unit.unit",
+        "congr",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "eq_self",
+        "instDecidableEqBool",
+        "ite",
+        "ite_cond_eq_true"
+      ],
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "Function.Injective",
+        "List"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "C",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "encode",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State → C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "C →\n  List D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Action →\n    D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Test →\n      D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Outcome"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State),\n  decode (encode s) = D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile s"
+        }
+      ],
+      "conclusion_whnf": "∀ ⦃a₁ a₂ : D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State⦄, encode a₁ = encode a₂ → a₁ = a₂",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 59,
+            "line": 252
+          },
+          "start": {
+            "column": 0,
+            "line": 243
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 46,
+            "line": 245
+          },
+          "start": {
+            "column": 8,
+            "line": 245
+          }
+        }
+      },
+      "elaborated_type": "∀ {C : Type} (encode : D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State → C)\n  (decode :\n    C →\n      List D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Action →\n        D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Test →\n          D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Outcome),\n  (∀ (s : D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State),\n      decode (encode s) = D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile s) →\n    Function.Injective encode",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureExecution",
+      "name": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_sufficient_encoder_injective",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.sufficient_encoder_injective_of_profile_injective",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_futureProfile_injective",
+        "Eq",
+        "List"
+      ],
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "Eq",
+        "Function.Injective",
+        "List"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "C",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureExecution.3352923065._hygCtx._hyg.3",
+          "type": "Fintype C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "encode",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State → C"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "decode",
+          "type": "C →\n  List D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Action →\n    D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Test →\n      D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Outcome"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State),\n  decode (encode s) = D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile s"
+        }
+      ],
+      "conclusion_whnf": "Nat.le 4 (Fintype.card C)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 59,
+            "line": 266
+          },
+          "start": {
+            "column": 0,
+            "line": 254
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 44,
+            "line": 256
+          },
+          "start": {
+            "column": 8,
+            "line": 256
+          }
+        }
+      },
+      "elaborated_type": "∀ {C : Type} [inst : Fintype C] (encode : D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State → C)\n  (decode :\n    C →\n      List D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Action →\n        D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Test →\n          D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.Outcome),\n  (∀ (s : D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.State),\n      decode (encode s) = D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile s) →\n    4 ≤ Fintype.card C",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureExecution",
+      "name": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_minimum_future_memory_four",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.sufficient_memory_cardinality_lower_bound",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_futureProfile_injective",
+        "Eq",
+        "Eq.mpr",
+        "Fintype",
+        "Fintype.card",
+        "LE.le",
+        "List",
+        "Nat",
+        "OfNat.ofNat",
+        "Prod",
+        "ge_iff_le._simp_1",
+        "id",
+        "inferInstance",
+        "instFintypeProd",
+        "instLENat",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "Eq",
+        "Fintype",
+        "Fintype.card",
+        "LE.le",
+        "List",
+        "Nat",
+        "OfNat.ofNat",
+        "instLENat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+    }
+  ],
+  "interpretation": "Exact elaborated declarations and dependencies for the generic future-memory bound and its hidden-bit application. This inventory verifies availability and proof structure only; it creates no semantic claim or assembly acceptance edge."
+}

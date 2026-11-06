@@ -1,0 +1,168 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "checker_sha256": "9bd41ca8b58fb364fa00cedf9aee493d0fe03963c5b3fda92583def1fd192120",
+  "checks": 578,
+  "fixed_rank_clock_scene_beta_only": true,
+  "full_variation_domain_derived": false,
+  "geometry_source_identified_at_this_seed": false,
+  "input_commit": "7c079c0180de6e6e12edbd8e79c4628f5048deae",
+  "large_7do_preparation_replayed": false,
+  "native_physical_actuation_proved": false,
+  "seed": {
+    "active_factor_dimension": 32,
+    "complete_binary_dimension": 65536,
+    "complete_endpoint_multiplicities": {
+      "+1": 49152,
+      "-1": 16384
+    },
+    "complete_escape_rank": 8,
+    "full_Book_price": 24.434620836538727,
+    "full_clock": {
+      "H0_modes": 10813440,
+      "Z01": 127851946.74071562,
+      "full_modes": 139264000,
+      "harmonic_modes": 117637120
+    },
+    "heat": 24.434613207140558,
+    "history": [
+      {
+        "T": 1.0,
+        "gain_w": 7.62939453125e-06,
+        "return_source_operator_norm": 0.0
+      },
+      {
+        "T": 0.1,
+        "gain_w": 7.629401079617473e-07,
+        "return_source_operator_norm": 0.0
+      },
+      {
+        "T": 1e-12,
+        "gain_w": 7.629401807214552e-18,
+        "return_source_operator_norm": 0.0
+      },
+      {
+        "T": 1e-60,
+        "gain_w": 7.629401807214553e-66,
+        "return_source_operator_norm": 0.0
+      }
+    ],
+    "input_rank": 16,
+    "max_basis_source": 0.0,
+    "original_initial_unknown_wires": [
+      6,
+      13,
+      14,
+      15
+    ],
+    "original_zero_boundary_qubits": 12,
+    "perfect_return_rank": 8,
+    "phase_heat_source_norm": 2.327973979405192e-21,
+    "positive_gain": 7.62939453125e-06,
+    "raw_word": [
+      {
+        "gate": "CX",
+        "wires": [
+          6,
+          0
+        ]
+      },
+      {
+        "count": 4,
+        "gate": "SourceI",
+        "wires": [
+          0,
+          13,
+          14
+        ]
+      }
+    ],
+    "real_skew_basis_directions_tested": 496,
+    "return_price": 7.62939816923112e-06,
+    "return_source_norm": 0.0,
+    "unused_spectator_dimension": 2048
+  },
+  "stability": {
+    "exact_return_second_derivatives": [
+      "16*zeta",
+      "-16*zeta/(1-zeta)"
+    ],
+    "full_Book_saddle_on_declared_matrix_chart": true,
+    "full_heat_second_source_upper_bound": 2.6010467541362495e-10,
+    "full_heat_second_source_upper_bound_exact": "110411630209575534545056109385359425000000/424489217788939042315076529612877578190341472077889",
+    "new_QUERY_source_remains": true,
+    "return_Hessian_controls": {
+      "escape_to_return": -1.5258798526837896e-05,
+      "return_to_escape": 1.5258783975658895e-05
+    },
+    "robust_source_tests": [
+      {
+        "T": 1.0,
+        "bound": 0.08231146726469267,
+        "epsilon": 0.009999958333385418,
+        "normalized_seed_source": -7.856662319150787e-05
+      },
+      {
+        "T": 1e-09,
+        "bound": 0.08231131026810315,
+        "epsilon": 0.009999958333385418,
+        "normalized_seed_source": -7.856669494690526e-05
+      },
+      {
+        "T": 1e-90,
+        "bound": 0.08231131026810297,
+        "epsilon": 0.009999958333385418,
+        "normalized_seed_source": -7.85666949469053e-05
+      },
+      {
+        "T": 1.0,
+        "bound": 0.0008002278481583503,
+        "epsilon": 9.99999999583428e-05,
+        "normalized_seed_source": -7.883524063794849e-07
+      },
+      {
+        "T": 1e-09,
+        "bound": 0.0008002263218455876,
+        "epsilon": 9.99999999583428e-05,
+        "normalized_seed_source": -7.883531283680655e-07
+      },
+      {
+        "T": 1e-90,
+        "bound": 0.000800226321845586,
+        "epsilon": 9.99999999583428e-05,
+        "normalized_seed_source": -7.883531283680662e-07
+      },
+      {
+        "T": 1.0,
+        "bound": 8.00003788638703e-06,
+        "epsilon": 1.000000000008498e-06,
+        "normalized_seed_source": -7.883784962231926e-09
+      },
+      {
+        "T": 1e-09,
+        "bound": 8.000022627532999e-06,
+        "epsilon": 1.000000000008498e-06,
+        "normalized_seed_source": -7.883792182563696e-09
+      },
+      {
+        "T": 1e-90,
+        "bound": 8.000022627532982e-06,
+        "epsilon": 1.000000000008498e-06,
+        "normalized_seed_source": -7.883792182563699e-09
+      }
+    ],
+    "stationary_seed_does_not_imply_GR": true
+  },
+  "status": "PASS_WHOLE_WORD_SOURCE_AND_NATIVE_STATIONARY_SEED",
+  "whole_word_source": {
+    "five_point_full_price_error": 5.2870208211430736e-12,
+    "full_H0_modes": 396,
+    "full_Hodge_modes": 5100,
+    "matrix_size": 4,
+    "max_analytic_stage_source_error": 2.7755575615628914e-17,
+    "scene_vertices": 33,
+    "scope": "structural complex-matrix control, not newly admitted D0 gates",
+    "stages": 3,
+    "wrong_untransported_source_error": 0.05044791873909043
+  }
+}

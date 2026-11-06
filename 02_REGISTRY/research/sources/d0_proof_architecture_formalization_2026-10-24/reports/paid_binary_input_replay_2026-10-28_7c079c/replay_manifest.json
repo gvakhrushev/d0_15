@@ -1,0 +1,72 @@
+{
+  "GR_closed": false,
+  "checker_sha256": "d95b930757caad91091db3dc95218cafc70d5888caed5c4b9c39ad897197e821",
+  "environment": {
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.0.2",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "execution": {
+    "checks": 441,
+    "normal_command": "python3 check_7do.py",
+    "normal_exit_code": 0,
+    "normal_matches_published": true,
+    "normal_receipt_sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+    "normal_stderr_bytes": 0,
+    "optimized_command": "python3 -O check_7do.py",
+    "optimized_exit_code": 0,
+    "optimized_matches_normal": true,
+    "optimized_receipt_sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+    "optimized_stderr_bytes": 0,
+    "staging": "Temporary root populated from the pinned Git blob IDs listed above; the source files are not part of the #402 checkout."
+  },
+  "owner": {
+    "blob": "7cc94351706b15859d1719aed7160b77314ac4ca",
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "commit": "7c079c0180de6e6e12edbd8e79c4628f5048deae",
+    "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "pull_request": 334,
+    "section": "7do",
+    "sha256": "432d151e78dbedb56312f1caa27d1d35d2c1d460d176739d8797f538c87d641c",
+    "task_checkpoint": {
+      "blob": "3f96f1cb40c1e136d8a2aed336f86272b7a16780",
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "sha256": "9d3cebfdef25cf61abed5e75f5ca5e6d5b9a061ee7521a9fc59727434f705957"
+    }
+  },
+  "pinned_inputs": [
+    {
+      "git_blob": "dafb228c94468ff83b73f62e0d5792eba832b948",
+      "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py",
+      "sha256": "07c40e179d0446c52650e7a148c82ef33cd03d0349b0875b5b6af5acd7d9f3a5"
+    },
+    {
+      "git_blob": "52a9dd556782263ca64b9210c2a9d32cb5df045e",
+      "path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json",
+      "sha256": "bc2addf30982c3c8ba219358d63f7913485c6877763c3e65dd824766b3620f1a"
+    },
+    {
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "git_blob": "a845c2e26eb01bb35e7ed3d5eaa000f2631e8ec3",
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/BOOK_MAP.md",
+      "sha256": "4950d36010bd75bd26df13d9f13ff27843980a4fd35aefaac7dd950059fc21ee"
+    },
+    {
+      "git_blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    }
+  ],
+  "published_receipt_sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+  "receipt_bytes": 27350,
+  "receipt_sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+  "schema": "d0-paid-binary-input-replay-v1",
+  "scope": "Exact finite generated-input and complete same-execution Book-price calculation on the declared X_run sector. This is checker replay and source integration only; no hardware execution, physical admission, full physical Cost-Info selection, Lean proof, or GR closure.",
+  "status": "PASS_PAID_BINARY_INPUT_SAME_EXECUTION_SOURCE"
+}

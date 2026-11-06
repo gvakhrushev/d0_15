@@ -1,0 +1,139 @@
+{
+  "GR_closed": false,
+  "checker_sha256": "b5f46d9cc6bc23ad0030c71243e3924a3934329ed0dd9ef7652e0e5ca746cc43",
+  "checks": [
+    "consumed actual 358 retention inventory",
+    "consumed nonlinear dust owner retains absolute feedback baseline",
+    "consumed complete two-grade clock and excess harmonics",
+    "imported native grammar matches immutable owner",
+    "original beta lies strictly between 3/4 and 4/5",
+    "complete native base is unitary",
+    "complete appended native word is unitary",
+    "earlier stopping word keeps all unused work columns on the common carrier",
+    "earlier stopping word has the same complete initial cut",
+    "same complete old input has the exact attenuated corner",
+    "all nonreturn histories supply the positive append defect",
+    "endpoint input rank remains four",
+    "actual clock grows by three and full carrier by sixteen",
+    "unknown oldRIGHT is retained",
+    "positive uniform log denominator for every N>=3",
+    "all-endpoint absolute heat error is below 1e-5",
+    "one retained append raises full heat by more than three",
+    "(N+3) q_N decreases for every N>=3",
+    "same-carrier heat increment exceeds 7/[2(N+3)]",
+    "exact elementary logarithm lower bound used at 2",
+    "exact logarithm lower bound for unequal true clock lengths",
+    "exact positive feedback increment pencil",
+    "feedback does not decrease under an actual retained append",
+    "effective-z factorization retains its absolute baseline",
+    "dropping baseline misses positive cost even at zero old leakage"
+  ],
+  "coarser_strict_full_B_increment_lower": "3",
+  "common_carrier_strict_B_increment_lower": "7/[2(N+3)]",
+  "full_heat_dimensions": [
+    5100,
+    81600,
+    163200
+  ],
+  "heat_error_bounds": [
+    {
+      "N": 3,
+      "absolute_heat_error": "2129600/541314593019",
+      "diagnostic": "3.934126342544864e-06",
+      "q": "4/499125",
+      "relative_trace_error": "532400/180438730073"
+    },
+    {
+      "N": 6,
+      "absolute_heat_error": "2129600/1350933043619924019",
+      "diagnostic": "1.5763919685416687e-12",
+      "q": "4/1245628828125",
+      "relative_trace_error": "532400/450311014540507073"
+    },
+    {
+      "N": 26,
+      "absolute_heat_error": "4259200/92598558766404075253411208142402706932989700727933086454868316638519913",
+      "diagnostic": "4.599639623705776e-65",
+      "q": "8/85380570699997026619984351085947768529291893355548381805419921875",
+      "relative_trace_error": "1064800/30866186255468025084470402714134235644329900242644362151622772213904771"
+    }
+  ],
+  "input_commit": "c296829fc2e74d673a2a679baa1e10a49524b290",
+  "input_pins": {
+    "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md": {
+      "git_blob": "154b341f17adce88594b0b5e9df0d38c0283d288",
+      "sha256": "d2951e92a97c5d9ab088c27e0cd3af0989a613df57cf9d1546d2281b6eefa228"
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "git_blob": "202ec8cbb65ee7a3ec1932d0fc09f4290659fa3a",
+      "sha256": "f0e9cca2e1ccca5b43a2839cc92c3936de970fca7c0162e92e6996ae1d49fc77"
+    },
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": {
+      "git_blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    },
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": {
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  },
+  "literal_append": {
+    "blank_count": 4,
+    "cut_rank": 4,
+    "cx_count": 2,
+    "full_dimension": 64,
+    "g_count": 4,
+    "gate_count": 6,
+    "input_dimension": 4,
+    "qubits": 6,
+    "source_i_count": 0,
+    "unknown_wires": [
+      0,
+      1
+    ]
+  },
+  "literal_base": {
+    "blank_count": 0,
+    "cut_rank": 4,
+    "cx_count": 0,
+    "full_dimension": 4,
+    "g_count": 3,
+    "gate_count": 3,
+    "input_dimension": 4,
+    "qubits": 2,
+    "source_i_count": 0,
+    "unknown_wires": [
+      0,
+      1
+    ]
+  },
+  "literal_common_carrier_base": {
+    "blank_count": 4,
+    "cut_rank": 4,
+    "cx_count": 0,
+    "full_dimension": 64,
+    "g_count": 3,
+    "gate_count": 3,
+    "input_dimension": 4,
+    "qubits": 6,
+    "source_i_count": 0,
+    "unknown_wires": [
+      0,
+      1
+    ]
+  },
+  "literal_common_carrier_strict_B_increment_lower": "7/12",
+  "literal_feedback_increment_diagnostic": "0.0000014570849640645059491155073893549430",
+  "literal_feedback_increment_exact": "-4*log(sqrt(5)/2097152 + 2097149/2097152)",
+  "not_claimed": [
+    "physical admission of carrier growth",
+    "admissibility across horizons for a fixed task",
+    "a derivative in discrete K",
+    "failure of fixed-K Einstein-dust recovery",
+    "exact finite stationary roots",
+    "physical GR closure"
+  ],
+  "status": "PASS",
+  "uniform_N_ge_3_heat_increment_lower": "1804377717530/541314593019",
+  "uniform_heat_increment_lower_diagnostic": "3.333325465080648"
+}

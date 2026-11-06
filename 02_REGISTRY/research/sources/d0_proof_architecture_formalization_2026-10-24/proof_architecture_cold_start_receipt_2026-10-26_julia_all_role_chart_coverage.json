@@ -1,0 +1,72 @@
+{
+  "receipt": "d0-proof-architecture-cold-start/1",
+  "snapshot_commit": "1a9148afaf9fdb83dd47ef8f703d838baf4a46af",
+  "worktree_dirty": false,
+  "runner": {
+    "path": "tools/proof_architecture_cold_start.py",
+    "commit": "1a9148afaf9fdb83dd47ef8f703d838baf4a46af",
+    "git_blob": "0199fbcf97323097ed34b8656bed038ace94cefd",
+    "sha256": "3218c82dc6378c36a1d9e554099e85c3327ff8dd0c404f665f38f38cb8d48925"
+  },
+  "search_engine": {
+    "path": "tools/proof_architecture.py",
+    "git_blob": "c2549bd7ebbe10606976f28eb4b7f5b4eae6db6d",
+    "sha256": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
+    "test_path": "tools/test_proof_architecture.py",
+    "test_git_blob": "9797dd43a3146d8c808b4d0a60dc046fe2852533",
+    "test_sha256": "76273c1705cec67c5097be9d2a8cd761d98fb66d2678b5875682c21aa4720037"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "search_limit": 18,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "required_source_ref_count": 143,
+  "case_id": "julia-query-principal-frame-coframe-recovery",
+  "case_found_all_required_sources": true,
+  "case_required_source_count": 12,
+  "query_discovery": {
+    "query": "principalFrameJuliaQueryFamily_joint_coframe_all_role_endpoint_chart_coverage_of_proper_roleLorentz hα hShift",
+    "top_candidates": [
+      {
+        "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean",
+        "direct_content": true,
+        "matched_terms": 3
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json",
+        "direct_content": true,
+        "matched_terms": 3
+      }
+    ]
+  },
+  "compiled_inventory": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_all_role_coframe_endpoint_chart_declarations_2026-10-26.json",
+    "sha256": "2dd1f258e6e6137bd361b986c668d4a0f07c7173670e352436d5206b692c6fd7",
+    "snapshot_commit": "37ee0b7b9414962344addc84a06f95a105cd23df",
+    "public_import_root": "D0.All",
+    "worktree_dirty": false
+  },
+  "full_output": {
+    "sha256": "29df3dab2bf6da8350a35d9340b45e5be79561e1aca5d64dbd33fc5ede962238",
+    "bytes": 8058091,
+    "stored": false
+  },
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true,
+  "scope_review": "The same query family recovers the complete 16-entry coframe after fixed-link transport and exposes, for every role, Eq. (27) non-null or Eq. (28) null endpoint recovery under proper determinant-one maps, normalized covectors, and nonzero shifts. The result remains a static finite algebraic composition; it does not supply link-field derivatives, physical admission, full all-jet pullback, or C0 acceptance."
+}

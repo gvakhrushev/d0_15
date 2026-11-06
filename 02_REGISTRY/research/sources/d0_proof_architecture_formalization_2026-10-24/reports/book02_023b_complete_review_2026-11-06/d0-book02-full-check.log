@@ -1,0 +1,155 @@
+D0.Foundation.TheoryTransfer.Interpretation (F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) : Type
+D0.Foundation.TheoryTransfer.Interpretation.compile {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) : List F.Action → List G.Action
+D0.Foundation.TheoryTransfer.Interpretation.run_commutes
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (w : List F.Action) (s : F.State) :
+  I.stateMap (F.run w s) = G.run (I.compile w) (I.stateMap s)
+D0.Foundation.TheoryTransfer.Interpretation.profile_commutes
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (s : F.State) (w : List F.Action) (t : F.Test) :
+  G.profile (I.stateMap s) (I.compile w) (I.testMap t) = I.outcomeMap (F.profile s w t)
+D0.Foundation.TheoryTransfer.Interpretation.compile_append
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (u v : List F.Action) :
+  I.compile (u ++ v) = I.compile u ++ I.compile v
+D0.Foundation.TheoryTransfer.Interpretation.comp {F G H : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (J : D0.Foundation.TheoryTransfer.Interpretation G H) :
+  D0.Foundation.TheoryTransfer.Interpretation F H
+D0.Foundation.TheoryTransfer.Interpretation.comp_compile
+  {F G H : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (J : D0.Foundation.TheoryTransfer.Interpretation G H)
+  (w : List F.Action) : (I.comp J).compile w = J.compile (I.compile w)
+D0.Foundation.TheoryTransfer.Interpretation.commonExecution
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution
+D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (s t : F.State) :
+  I.commonExecution.profile (I.stateMap s) = I.commonExecution.profile (I.stateMap t) ↔ F.profile s = F.profile t
+D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) : Type
+D0.Foundation.TheoryTransfer.Interpretation.imageEquiv
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) : F.FutureClass ≃ I.EmpiricalImage
+D0.Foundation.TheoryTransfer.Interpretation.imageStep {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (a : F.Action) (q : I.EmpiricalImage) : I.EmpiricalImage
+D0.Foundation.TheoryTransfer.Interpretation.imageEquiv_step
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (a : F.Action) (q : F.FutureClass) :
+  I.imageEquiv (F.quotientStep a q) = I.imageStep a (I.imageEquiv q)
+D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G)
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) :
+  E.protocol.State ≃ I.EmpiricalImage
+D0.Foundation.TheoryTransfer.Interpretation.verifiedRun_image
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G)
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (w : List F.Action)
+  (s : F.State) :
+  ↑((I.verifiedStateImageEquiv E)
+        (D0.Foundation.VerificationCore.representedRun E w (D0.Foundation.VerificationCore.representedState E s))) =
+    ⟦G.run (I.compile w) (I.stateMap s)⟧
+D0.Foundation.TheoryTransfer.Interpretation.translate {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P : F.FutureClass → Prop) : I.EmpiricalImage → Prop
+D0.Foundation.TheoryTransfer.Interpretation.transfer_theorem
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (H P : F.FutureClass → Prop)
+  (source_proof : ∀ (q : F.FutureClass), H q → P q) (q : I.EmpiricalImage) : I.translate H q → I.translate P q
+D0.Foundation.TheoryTransfer.Interpretation.transfer_from_premises.{u_1}
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) {ι : Type u_1} (A : ι → F.FutureClass → Prop)
+  (P : F.FutureClass → Prop) (source_proof : ∀ (q : F.FutureClass), (∀ (i : ι), A i q) → P q) (q : I.EmpiricalImage)
+  (premises : ∀ (i : ι), I.translate (A i) q) : I.translate P q
+D0.Foundation.TheoryTransfer.Interpretation.translate_conjunction
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P Q : F.FutureClass → Prop) (q : I.EmpiricalImage) :
+  I.translate (fun x => P x ∧ Q x) q ↔ I.translate P q ∧ I.translate Q q
+D0.Foundation.TheoryTransfer.Interpretation.translate_negation
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P : F.FutureClass → Prop) (q : I.EmpiricalImage) :
+  I.translate (fun x => ¬P x) q ↔ ¬I.translate P q
+D0.Foundation.TheoryTransfer.Interpretation.translate_forall.{u_1}
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) {ι : Type u_1} (P : ι → F.FutureClass → Prop)
+  (q : I.EmpiricalImage) : I.translate (fun x => ∀ (i : ι), P i x) q ↔ ∀ (i : ι), I.translate (P i) q
+D0.Foundation.TheoryTransfer.Interpretation.translate_future_observation
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (w : List F.Action) (t : F.Test) (o : F.Outcome)
+  (q : I.EmpiricalImage) :
+  I.translate (fun p => F.quotientProfile p w t = o) q ↔ I.commonExecution.quotientProfile (↑q) w t = I.outcomeMap o
+D0.Foundation.TheoryTransfer.NativeContextCoverage {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) : Type
+D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  {I : D0.Foundation.TheoryTransfer.Interpretation F G} (C : D0.Foundation.TheoryTransfer.NativeContextCoverage I)
+  (s t : F.State) : G.profile (I.stateMap s) = G.profile (I.stateMap t) ↔ F.profile s = F.profile t
+D0.Foundation.TheoryTransfer.visibleBitSystem : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution
+D0.Foundation.TheoryTransfer.extraBitTestSystem : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution
+D0.Foundation.TheoryTransfer.visibleBitInterpretation :
+  D0.Foundation.TheoryTransfer.Interpretation D0.Foundation.TheoryTransfer.visibleBitSystem
+    D0.Foundation.TheoryTransfer.extraBitTestSystem
+D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures :
+  D0.Foundation.TheoryTransfer.visibleBitSystem.profile (false, false) =
+    D0.Foundation.TheoryTransfer.visibleBitSystem.profile (false, true)
+D0.Foundation.TheoryTransfer.extraBit_different_native_futures :
+  D0.Foundation.TheoryTransfer.extraBitTestSystem.profile (false, false) ≠
+    D0.Foundation.TheoryTransfer.extraBitTestSystem.profile (false, true)
+D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage :
+  ¬Nonempty (D0.Foundation.TheoryTransfer.NativeContextCoverage D0.Foundation.TheoryTransfer.visibleBitInterpretation)
+'D0.Foundation.TheoryTransfer.Interpretation' does not depend on any axioms
+'D0.Foundation.TheoryTransfer.Interpretation.compile' does not depend on any axioms
+'D0.Foundation.TheoryTransfer.Interpretation.run_commutes' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.profile_commutes' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.compile_append' depends on axioms: [propext]
+'D0.Foundation.TheoryTransfer.Interpretation.comp' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.comp_compile' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.commonExecution' does not depend on any axioms
+'D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.EmpiricalImage' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.imageEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.imageStep' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.imageEquiv_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.verifiedRun_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.transfer_theorem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.transfer_from_premises' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_conjunction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_negation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_forall' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_future_observation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.NativeContextCoverage' does not depend on any axioms
+'D0.Foundation.TheoryTransfer.NativeContextCoverage.native_profile_eq_iff' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.visibleBitSystem' does not depend on any axioms
+'D0.Foundation.TheoryTransfer.extraBitTestSystem' does not depend on any axioms
+'D0.Foundation.TheoryTransfer.visibleBitInterpretation' does not depend on any axioms
+'D0.Foundation.TheoryTransfer.visibleBit_same_all_source_futures' depends on axioms: [Quot.sound]
+'D0.Foundation.TheoryTransfer.extraBit_different_native_futures' does not depend on any axioms
+'D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage' depends on axioms: [propext, Quot.sound]
+D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv_representedState
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G)
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (s : F.State) :
+  (I.verifiedStateImageEquiv E) (D0.Foundation.VerificationCore.representedState E s) = I.imageEquiv ⟦s⟧
+'D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv_representedState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

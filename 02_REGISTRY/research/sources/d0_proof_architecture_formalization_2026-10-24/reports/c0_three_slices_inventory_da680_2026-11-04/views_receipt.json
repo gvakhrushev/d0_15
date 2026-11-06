@@ -1,0 +1,24 @@
+{
+  "schema": "d0-c0-three-views-e487-v1",
+  "snapshot_commit": "e48739e8826d810e29ad056961a33333cccfc770",
+  "inventory_sha256": "b659e2e5af038bf4a0498050c9646e6410ffeb22fff463c9a74f23e7865879e1",
+  "views": {
+    "book01-0116": {
+      "units": 6,
+      "sha256": "5892b720dea4396f5adbb573db837ab625ce7b0c435123c62d246aa60e972811",
+      "issues": []
+    },
+    "book01": {
+      "units": 44,
+      "sha256": "d7fbec5332560b5b6e5334b7cf1f4e0dd184e054f7d2afaf9675ddb2d3524de2",
+      "issues": []
+    },
+    "book02": {
+      "units": 30,
+      "sha256": "aea8505e204686c925d3b7ad0568ea341a626dbf3639ad16dab02b5fa0087000",
+      "issues": []
+    }
+  },
+  "semantic_acceptance": "not_assessed",
+  "GR_closed": false
+}

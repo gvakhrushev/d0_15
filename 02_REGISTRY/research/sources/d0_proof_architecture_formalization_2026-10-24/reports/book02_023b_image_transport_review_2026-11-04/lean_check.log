@@ -1,0 +1,43 @@
+D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} (I : Interpretation F G) (s t : F.State) :
+  I.commonExecution.profile (I.stateMap s) = I.commonExecution.profile (I.stateMap t) ↔ F.profile s = F.profile t
+D0.Foundation.TheoryTransfer.Interpretation.futureMap_injective
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} (I : Interpretation F G) :
+  Function.Injective I.futureMap
+D0.Foundation.TheoryTransfer.Interpretation.imageEquiv
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} (I : Interpretation F G) :
+  F.FutureClass ≃ I.EmpiricalImage
+D0.Foundation.TheoryTransfer.Interpretation.imageStep {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : Interpretation F G) (a : F.Action) (q : I.EmpiricalImage) : I.EmpiricalImage
+D0.Foundation.TheoryTransfer.Interpretation.imageEquiv_step
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} (I : Interpretation F G) (a : F.Action)
+  (q : F.FutureClass) : I.imageEquiv (F.quotientStep a q) = I.imageStep a (I.imageEquiv q)
+D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} (I : Interpretation F G)
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) :
+  E.protocol.State ≃ I.EmpiricalImage
+D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv_representedState
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} (I : Interpretation F G)
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (s : F.State) :
+  (I.verifiedStateImageEquiv E) (D0.Foundation.VerificationCore.representedState E s) = I.imageEquiv ⟦s⟧
+D0.Foundation.TheoryTransfer.Interpretation.verifiedRun_image
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} (I : Interpretation F G)
+  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (w : List F.Action)
+  (s : F.State) :
+  ↑((I.verifiedStateImageEquiv E)
+        (D0.Foundation.VerificationCore.representedRun E w (D0.Foundation.VerificationCore.representedState E s))) =
+    ⟦G.run (I.compile w) (I.stateMap s)⟧
+'D0.Foundation.TheoryTransfer.Interpretation.common_profile_eq_iff' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.futureMap_injective' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.imageEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.imageStep' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.imageEquiv_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.verifiedStateImageEquiv_representedState' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.verifiedRun_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

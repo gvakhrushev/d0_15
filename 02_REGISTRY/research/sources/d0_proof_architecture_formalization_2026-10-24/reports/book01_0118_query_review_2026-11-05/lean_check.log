@@ -1,0 +1,28 @@
+D0.Foundation.VerificationCore.SigmaWitness.query {F : FutureExecution} {E : TheoryVerification F.futureEmpiricalTheory}
+  (W : SigmaWitness E) (history : List (List W.Symbol)) (n : ℕ) : Option (List W.Symbol)
+D0.Foundation.VerificationCore.SigmaWitness.query_computable {F : FutureExecution}
+  {E : TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E) : Computable₂ W.query
+D0.Foundation.VerificationCore.SigmaWitness.query_archive {F : FutureExecution}
+  {E : TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E) (history : List (F.State × E.protocol.Line))
+  (n : ℕ) : W.query (W.archive history) n = Option.map W.archiveCode history[n]?
+D0.Foundation.VerificationCore.SigmaWitness.query_append_retains {F : FutureExecution}
+  {E : TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E) (history later : List (List W.Symbol)) (n : ℕ)
+  (hn : n < history.length) : W.query (history ++ later) n = W.query history n
+D0.Foundation.VerificationCore.SigmaWitness.coded_verification_core {F : FutureExecution}
+  {E : TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E) :
+  FunctionalTuple E.protocol ∧
+    (∀ (s t : F.State), W.dmin s = W.dmin t ↔ F.profile s = F.profile t) ∧
+      (∀ (s t : F.State), W.coding.delta (W.dmin s) (W.dmin t) = true ↔ F.profile s ≠ F.profile t) ∧
+        (∀ (s t : F.State) (l l' : E.protocol.Line),
+            W.archiveCode (s, l) = W.archiveCode (t, l') ↔ F.profile s = F.profile t ∧ l = l') ∧
+          Computable W.coding.canon ∧ Computable₂ W.coding.delta ∧ Computable₂ W.query
+'D0.Foundation.VerificationCore.SigmaWitness.query_computable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.VerificationCore.SigmaWitness.query_archive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.VerificationCore.SigmaWitness.query_append_retains' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.VerificationCore.SigmaWitness.coded_verification_core' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

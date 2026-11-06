@@ -1,0 +1,65 @@
+D0.Foundation.TheoryTransfer.Interpretation.translate {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P : F.FutureClass → Prop) : I.EmpiricalImage → Prop
+D0.Foundation.TheoryTransfer.Interpretation.translate_at_image
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P : F.FutureClass → Prop) (q : F.FutureClass) :
+  I.translate P (I.imageEquiv q) ↔ P q
+D0.Foundation.TheoryTransfer.Interpretation.translate_future_observation
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (w : List F.Action) (t : F.Test) (o : F.Outcome)
+  (q : I.EmpiricalImage) :
+  I.translate (fun p => F.quotientProfile p w t = o) q ↔ I.commonExecution.quotientProfile (↑q) w t = I.outcomeMap o
+D0.Foundation.TheoryTransfer.Interpretation.translate_conjunction
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P Q : F.FutureClass → Prop) (q : I.EmpiricalImage) :
+  I.translate (fun x => P x ∧ Q x) q ↔ I.translate P q ∧ I.translate Q q
+D0.Foundation.TheoryTransfer.Interpretation.translate_negation
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (P : F.FutureClass → Prop) (q : I.EmpiricalImage) :
+  I.translate (fun x => ¬P x) q ↔ ¬I.translate P q
+D0.Foundation.TheoryTransfer.Interpretation.translate_forall.{u_1}
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) {ι : Type u_1} (P : ι → F.FutureClass → Prop)
+  (q : I.EmpiricalImage) : I.translate (fun x => ∀ (i : ι), P i x) q ↔ ∀ (i : ι), I.translate (P i) q
+D0.Foundation.TheoryTransfer.Interpretation.assertionFaithful
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (H : F.FutureClass → Prop) :
+  D0.Foundation.M1Universality.Faithful (D0.Foundation.TheoryTransfer.sourceAssertionSystem F H)
+    (I.imageAssertionSystem H)
+D0.Foundation.TheoryTransfer.Interpretation.transfer_theorem
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) (H P : F.FutureClass → Prop)
+  (source_proof : ∀ (q : F.FutureClass), H q → P q) (q : I.EmpiricalImage) : I.translate H q → I.translate P q
+D0.Foundation.TheoryTransfer.Interpretation.transfer_from_premises.{u_1}
+  {F G : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}
+  (I : D0.Foundation.TheoryTransfer.Interpretation F G) {ι : Type u_1} (A : ι → F.FutureClass → Prop)
+  (P : F.FutureClass → Prop) (source_proof : ∀ (q : F.FutureClass), (∀ (i : ι), A i q) → P q) (q : I.EmpiricalImage)
+  (premises : ∀ (i : ι), I.translate (A i) q) : I.translate P q
+D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage :
+  ¬Nonempty (D0.Foundation.TheoryTransfer.NativeContextCoverage D0.Foundation.TheoryTransfer.visibleBitInterpretation)
+'D0.Foundation.TheoryTransfer.Interpretation.translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_at_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_future_observation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_conjunction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_negation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.translate_forall' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.assertionFaithful' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.transfer_theorem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.Interpretation.transfer_from_premises' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Foundation.TheoryTransfer.extra_native_test_prevents_coverage' depends on axioms: [propext, Quot.sound]

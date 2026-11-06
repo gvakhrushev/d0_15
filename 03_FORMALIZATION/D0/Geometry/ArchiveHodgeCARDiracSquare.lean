@@ -1,4 +1,5 @@
 import Mathlib.Tactic
+import D0.Algebra.FiniteHermitianAdjoint
 import D0.Geometry.ArchiveHodgeCARDirac
 import D0.Geometry.ArchiveRoleProductLaplacian
 
@@ -362,8 +363,28 @@ theorem hodgeCodifferential_add (N : ℕ) (ψ φ : ArchiveCochain N) :
   intro r _
   exact codiffDirection_add N r ψ φ
 
+theorem backwardAnnihilateDirection_smul (N : ℕ) (r : Role) (a : ℝ)
+    (ψ : ArchiveCochain N) :
+    backwardAnnihilateDirection N r (a • ψ) =
+      a • backwardAnnihilateDirection N r ψ := by
+  unfold backwardAnnihilateDirection
+  have hsite : backwardSite N r (a • ψ) = a • backwardSite N r ψ := by
+    funext p
+    simp only [backwardSite, backwardDifference_apply, Pi.smul_apply, smul_eq_mul]
+    ring
+  rw [hsite, annihilateAction_smul]
+
 theorem codiffDirection_eq_neg (N : ℕ) (r : Role) (ψ : ArchiveCochain N) :
     codiffDirection N r ψ = -backwardAnnihilateDirection N r ψ := rfl
+
+theorem hodgeCodifferential_smul (N : ℕ) (a : ℝ) (ψ : ArchiveCochain N) :
+    hodgeCodifferential N (a • ψ) = a • hodgeCodifferential N ψ := by
+  rw [hodgeCodifferential_eq_sum, hodgeCodifferential_eq_sum]
+  simp_rw [codiffDirection_eq_neg, backwardAnnihilateDirection_smul]
+  rw [Finset.smul_sum]
+  refine Finset.sum_congr rfl ?_
+  intro r _
+  simp [smul_neg]
 
 theorem backwardAnnihilateDirection_sum {ι : Type*} [Fintype ι] (N : ℕ) (r : Role)
     (F : ι → ArchiveCochain N) :
@@ -566,16 +587,91 @@ theorem hodgeCarDirac_cross (N : ℕ) (ψ : ArchiveCochain N) :
   simpa [Finset.sum_apply, Pi.neg_apply] using
     (congrFun (cochainDifferenceLaplacian_eq_backward_forward N ψ) p).symm
 
+private theorem cochainPairing_eq_finiteHermitianPairing_square (N : ℕ)
+    (ψ φ : ArchiveCochain N) :
+    cochainPairing N ψ φ = D0.Algebra.finiteHermitianPairing ψ φ := by
+  classical
+  unfold cochainPairing D0.Algebra.finiteHermitianPairing
+  rw [Fintype.sum_prod_type]
+  simp [star_trivial]
+
+/-- The real forward CAR differential as a typed finite linear operator on the
+actual site × Fock coordinate carrier. -/
+def dForwardₗ (N : ℕ) : ArchiveCochain N →ₗ[ℝ] ArchiveCochain N where
+  toFun := dForward N
+  map_add' := dForward_add N
+  map_smul' := dForward_smul N
+
+/-- The real counting codifferential as a typed finite linear operator on the
+same carrier. -/
+def hodgeCodifferentialₗ (N : ℕ) : ArchiveCochain N →ₗ[ℝ] ArchiveCochain N where
+  toFun := hodgeCodifferential N
+  map_add' := hodgeCodifferential_add N
+  map_smul' := hodgeCodifferential_smul N
+
+/-- Under the standard finite Hermitian pairing, the registered counting
+codifferential is exactly the adjoint of the registered forward differential. -/
+theorem finiteHermitianAdjoint_dForwardₗ_eq_hodgeCodifferentialₗ (N : ℕ) :
+    D0.Algebra.finiteHermitianAdjoint (dForwardₗ N) = hodgeCodifferentialₗ N := by
+  apply D0.Algebra.finiteHermitianAdjoint_unique
+  intro ψ φ
+  change D0.Algebra.finiteHermitianPairing (dForward N ψ) φ =
+    D0.Algebra.finiteHermitianPairing ψ (hodgeCodifferential N φ)
+  rw [← cochainPairing_eq_finiteHermitianPairing_square N (dForward N ψ) φ,
+    ← cochainPairing_eq_finiteHermitianPairing_square N ψ (hodgeCodifferential N φ)]
+  exact dForward_adjoint N ψ φ
+
+/-- The typed forward differential retains the exact nilpotency of its
+function-level CAR definition. -/
+theorem dForwardₗ_comp_self_eq_zero (N : ℕ) :
+    (dForwardₗ N).comp (dForwardₗ N) = 0 := by
+  apply LinearMap.ext
+  intro ψ
+  exact dForward_sq N ψ
+
+/-- The existing real Hodge/CAR operator expressed through the generic finite
+Hermitian Hodge--Dirac constructor. -/
+noncomputable def hodgeCarDiracHermitianₗ (N : ℕ) :
+    ArchiveCochain N →ₗ[ℝ] ArchiveCochain N :=
+  D0.Algebra.finiteHermitianHodgeDirac (dForwardₗ N)
+
+/-- Pointwise, the real Hodge/CAR function is the generic finite Hermitian
+Hodge--Dirac of its actual forward CAR differential. -/
+theorem hodgeCarDirac_eq_finiteHermitianHodgeDirac (N : ℕ)
+    (ψ : ArchiveCochain N) :
+    hodgeCarDirac N ψ = hodgeCarDiracHermitianₗ N ψ := by
+  change dForward N ψ + hodgeCodifferential N ψ =
+    dForward N ψ + D0.Algebra.finiteHermitianAdjoint (dForwardₗ N) ψ
+  rw [finiteHermitianAdjoint_dForwardₗ_eq_hodgeCodifferentialₗ]
+  rfl
+
+/-- The generic Hermitian square theorem specializes to the actual real
+Hodge/CAR operator and its forward/codifferential anticommutator. -/
+theorem hodgeCarDiracHermitian_square (N : ℕ) :
+    (hodgeCarDiracHermitianₗ N).comp (hodgeCarDiracHermitianₗ N) =
+      (dForwardₗ N).comp (hodgeCodifferentialₗ N) +
+        (hodgeCodifferentialₗ N).comp (dForwardₗ N) := by
+  unfold hodgeCarDiracHermitianₗ
+  have h := D0.Algebra.finiteHermitianHodgeDirac_square
+    (dForwardₗ N) (dForwardₗ_comp_self_eq_zero N)
+  rw [finiteHermitianAdjoint_dForwardₗ_eq_hodgeCodifferentialₗ] at h
+  exact h
+
 /-- Exact square: `D_H²` is the fibrewise oriented difference Laplacian. -/
 theorem hodgeCarDirac_sq (N : ℕ) (ψ : ArchiveCochain N) :
     hodgeCarDirac N (hodgeCarDirac N ψ) = cochainDifferenceLaplacian N ψ := by
-  have hsplit : hodgeCarDirac N ψ = dForward N ψ + hodgeCodifferential N ψ := rfl
-  rw [hsplit]
-  unfold hodgeCarDirac
-  rw [dForward_add, hodgeCodifferential_add]
-  rw [dForward_sq, hodgeCodifferential_sq]
-  abel_nf
-  exact hodgeCarDirac_cross N ψ
+  calc
+    hodgeCarDirac N (hodgeCarDirac N ψ) =
+        hodgeCarDiracHermitianₗ N (hodgeCarDiracHermitianₗ N ψ) := by
+          rw [hodgeCarDirac_eq_finiteHermitianHodgeDirac,
+            hodgeCarDirac_eq_finiteHermitianHodgeDirac]
+    _ = dForward N (hodgeCodifferential N ψ) +
+        hodgeCodifferential N (dForward N ψ) := by
+          have h := congrArg (fun L : ArchiveCochain N →ₗ[ℝ] ArchiveCochain N => L ψ)
+            (hodgeCarDiracHermitian_square N)
+          simpa [LinearMap.comp_apply, LinearMap.add_apply,
+            dForwardₗ, hodgeCodifferentialₗ] using h
+    _ = cochainDifferenceLaplacian N ψ := hodgeCarDirac_cross N ψ
 
 /-- The same identity read on one phase/Fock point: the Fock label is a spectator. -/
 theorem hodgeCarDirac_sq_fibre (N : ℕ) (ψ : ArchiveCochain N)

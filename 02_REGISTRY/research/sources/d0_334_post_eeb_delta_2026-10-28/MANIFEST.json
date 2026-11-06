@@ -1,0 +1,815 @@
+{
+  "change_summary": {
+    "added_lines": 15782,
+    "changed_paths": 70,
+    "deleted_lines": 0,
+    "snapshot_bytes": 4606489
+  },
+  "commit_list": {
+    "path": "COMMITS.tsv",
+    "sha256": "ab2ec3bd7078e05025627ddd3d1493baaba2436a43b58df3f0745c7560a67266"
+  },
+  "owner_pr": 334,
+  "owner_task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr_url": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-pr-source-range-intake-v2",
+  "scope": {
+    "GR_closed": false,
+    "current_head_checks_present_at_check": false,
+    "owner_checker_replay_claimed_by_packet_verifier": false,
+    "physical_admission": false,
+    "pr_334_open_draft_at_check": true,
+    "scientific_acceptance": false
+  },
+  "source_archive": {
+    "bytes": 1527630,
+    "format": "zip-deflate",
+    "member_count": 70,
+    "path": "UPSTREAM_SOURCES.zip",
+    "sha256": "abbc4125f8be39a36d9c6bdaef135f5e34a179403adbd577c228e9b6b34f164a"
+  },
+  "source_commits": [
+    {
+      "sha": "d8093df5c79db790b09c6c5f2cb85f194f9e5fc5",
+      "subject": "test(#334): verify conditional geometric closure from unreduced Hamiltonian brackets"
+    },
+    {
+      "sha": "c163f409dc0fcb950aef92b9346481db9813fcbb",
+      "subject": "research(#334): derive conditional geometric closure and distinguish it from moving-cut Ward"
+    },
+    {
+      "sha": "20ace871b5e4698460b6364caaa99c9f4a538983",
+      "subject": "test(#334): retain executed full-bracket and negative-control results"
+    },
+    {
+      "sha": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "subject": "research(#334): connect moving-cut boundary to explicit conditional Einstein law-selection test"
+    },
+    {
+      "sha": "48d6efd0ce590c35e8d1f7cd0b871b31bf797495",
+      "subject": "research(#334): derive original return boundary form and strengthen canonical closure"
+    },
+    {
+      "sha": "21bb087f63382dddc077275aa64ba78146ed9cc9",
+      "subject": "test(#334): verify full root spectral Hessian and conditional boundary source"
+    },
+    {
+      "sha": "cff09b65738d58c70a427259b9e4a241dd9de04b",
+      "subject": "research(#334): derive full root Hessian, stationary boundary relation and retained sewing"
+    },
+    {
+      "sha": "2b033784c4fdb24d4c32456f00557285f87fc7e5",
+      "subject": "test(#334): retain executed full spectral and boundary reduction controls"
+    },
+    {
+      "sha": "c80d3dd2a917bbb2db2e2b1ab61d5216877c05e6",
+      "subject": "research(#334): connect unchanged root source to conditional boundary canonical relation"
+    },
+    {
+      "sha": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+      "subject": "research(#334): compute unpadded source row and complete QUERY cut balance"
+    },
+    {
+      "sha": "b1dc05722ae669d11a0c6f734f788984b4cbce01",
+      "subject": "test(#334): apply boundary jet to same native QUERY and moving-cut orbit"
+    },
+    {
+      "sha": "c475077a45ad26f0b498e8a94014750bd206b7a9",
+      "subject": "research(#334): consume actual QUERY orbit with complete relative cut Hessian"
+    },
+    {
+      "sha": "0c03e5719bf600861ca86c44d239516b4793a3ef",
+      "subject": "test(#334): retain exact and full-column QUERY/cut jet controls"
+    },
+    {
+      "sha": "d4152317ed49153a34e6dc48b06b48657ecdd245",
+      "subject": "research(#334): apply root boundary formulas to concurrent same-QUERY cut balance"
+    },
+    {
+      "sha": "1d29848fa0775485f7d48ab63f4a6625f9b705ad",
+      "subject": "research(#334): apply closed-history source to existing clock and phase boundary"
+    },
+    {
+      "sha": "5fe5203da2439d325dc9ef70f52c1111822fc22b",
+      "subject": "research(#334): apply QUERY source to generated cuts and equal-inventory native words"
+    },
+    {
+      "sha": "8ff5da9fbdc6d2fcda345e8ffdb5437a3005f573",
+      "subject": "test(#334): replay native generated cuts and bound full clock heat beyond reflections"
+    },
+    {
+      "sha": "aa0ffca3426608314dcb4609a01bc5d4db888568",
+      "subject": "research(#334): bound whole native clock heat C1/C2 without reflective endpoints"
+    },
+    {
+      "sha": "e495b5b38177d0b72b79860c60d69ad2d09da945",
+      "subject": "test(#334): retain executed all-column clock winding source receipt"
+    },
+    {
+      "sha": "dd7f713cc0ec50c6f66871b3427e3a979d57ade0",
+      "subject": "research(#334): consume native cuts with uniform full heat source beyond reflection sector"
+    },
+    {
+      "sha": "22e729996b70a699710a2d1120a0caa7a08decf8",
+      "subject": "research(#334): test final native composition and derive archive phase descent"
+    },
+    {
+      "sha": "e120d891985e473e7e9e0e8a9da92b6d1fab7218",
+      "subject": "research(#334): derive original Book return input and source from native port history"
+    },
+    {
+      "sha": "f4123197391d54a8588a2db47f217a945c802a7b",
+      "subject": "research(#334): separate direct and density sources on a non-null Einstein field"
+    },
+    {
+      "sha": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+      "subject": "research(#334): simplify closed-history proof to the direct original Book source"
+    },
+    {
+      "sha": "39b9c847dbea952016a0f464e786ad817e96d4ad",
+      "subject": "research(#334): compose generated banks material metric and retained full source"
+    },
+    {
+      "sha": "110b672e09848893475db0c8fd786cc910a014f9",
+      "subject": "test(#334): replay original full128 retained histories and their noncommuting source"
+    },
+    {
+      "sha": "716387e3cb4c9ff08c44b5ac532db882ee1e394a",
+      "subject": "research(#334): apply direct original source to the complete noncommuting retained history"
+    },
+    {
+      "sha": "2b3d114479456d0c72078328b88ece9d89259ae8",
+      "subject": "research(#334): retain spectator multiplicity in every history-source derivation line"
+    },
+    {
+      "sha": "28f0443fca3df4b829f22497dea93253a97b27bb",
+      "subject": "test(#334): retain executed original full128 history-source receipt"
+    },
+    {
+      "sha": "5140d2ab86a9b5829ccab1be32d11f367e4dca43",
+      "subject": "research(#334): compose original chronological source with the true GR and heat budgets"
+    },
+    {
+      "sha": "9f23ec82c8e4e044121521658afec4a5e9b8c2f7",
+      "subject": "research(#334): pull original full history source through its own geometric map"
+    },
+    {
+      "sha": "c296829fc2e74d673a2a679baa1e10a49524b290",
+      "subject": "research(#334): compose nonlinear Einstein-dust with retained native source recovery"
+    },
+    {
+      "sha": "a17322e5ff5bed954b86adc0a47946f8291e7c07",
+      "subject": "research(#334): prove full original history scale-source reversal and balance"
+    },
+    {
+      "sha": "726192353504a81a9ab2b751f9b6c7866271e75a",
+      "subject": "research(#334): price actual retained continuation on the full common carrier"
+    }
+  ],
+  "source_files": [
+    {
+      "archive_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "bytes": 1110290,
+      "change_status": "M",
+      "git_blob_sha1": "6ef6c0eefc888b72225a1e1d4ea8dbe10365fdf1",
+      "lines": 17156,
+      "mode": "100644",
+      "sha256": "df2d13cf729f06234b825c32c78f437b63a0b5c441eee5743f36b773c2e73f1f"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_CLOSED_HISTORY_DIRECT_PROOF_2026_10_28.md",
+      "bytes": 23043,
+      "change_status": "A",
+      "git_blob_sha1": "c66b535dfcf41b87bcc97365eff8ef2930981db1",
+      "lines": 284,
+      "mode": "100644",
+      "sha256": "f27370a67034a47994a7544dc81468ae3012e00eeb1dbb1e8f2065c23c3eb194"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md",
+      "bytes": 55686,
+      "change_status": "A",
+      "git_blob_sha1": "154b341f17adce88594b0b5e9df0d38c0283d288",
+      "lines": 895,
+      "mode": "100644",
+      "sha256": "d2951e92a97c5d9ab088c27e0cd3af0989a613df57cf9d1546d2281b6eefa228"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_WINDING_FULL_SOURCE_2026_10_28.md",
+      "bytes": 5230,
+      "change_status": "A",
+      "git_blob_sha1": "2e2378f5a835deb27ebafa4eff3ffd158a899592",
+      "lines": 58,
+      "mode": "100644",
+      "sha256": "204e284695f243868aad6d9835738deaabc1b30ddf7d344bfb4f33d62bdcd574"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "bytes": 2907445,
+      "change_status": "M",
+      "git_blob_sha1": "cef5e08a689832ddc66355e53bd93a15cfdf73f4",
+      "lines": 89635,
+      "mode": "100644",
+      "sha256": "e0258819a36de242b4ff076f00b3a5cdd12eda11e905fde6789715d2bc4044a8"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_ORIGINAL_RETAINED_HISTORY_DIRECT_SOURCE_2026_10_28.md",
+      "bytes": 6010,
+      "change_status": "A",
+      "git_blob_sha1": "d8140df29ed6c0c7f28dd0551cdfda60faa01a86",
+      "lines": 66,
+      "mode": "100644",
+      "sha256": "d156c2142fc44dca94ab970c6db6208ab67cc2b286f4c7799c4898dd1a4f7def"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_ORIGINAL_RETURN_BOUNDARY_AND_CANONICAL_RIGIDITY_2026_10_28.md",
+      "bytes": 26174,
+      "change_status": "A",
+      "git_blob_sha1": "23be29da70f4305c6e92497a72d66f859c6dd07d",
+      "lines": 353,
+      "mode": "100644",
+      "sha256": "07804c518a108a2cd104ee0454e8feb016b264de3e65e8eb07ef16af6c97b17a"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_RETAINED_HISTORY_FINAL_COMPOSITION_2026_10_28.md",
+      "bytes": 31139,
+      "change_status": "A",
+      "git_blob_sha1": "063450255b3b4846faff31b7661a01b2c83fbca8",
+      "lines": 368,
+      "mode": "100644",
+      "sha256": "855b105a25e1b052fcb8240dfef926db32e3918e146456a1fa050c382ba3a0c2"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_BOUNDARY_HESSIAN_2026_10_28.md",
+      "bytes": 6820,
+      "change_status": "A",
+      "git_blob_sha1": "dcdd91584cf331f73029b2ab9ebc7ebfcd3df3a7",
+      "lines": 78,
+      "mode": "100644",
+      "sha256": "4cb6cfd1bfc9760d0681293b44e41bfaa2e497c294607251d08023461268167f"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/A4D_ROOT_CUT_TO_REFOLIATION_CLOSURE_2026_10_28.md",
+      "bytes": 5390,
+      "change_status": "A",
+      "git_blob_sha1": "033d1804c2db92ab4919ef655098ade04f8e6a71",
+      "lines": 56,
+      "mode": "100644",
+      "sha256": "8c21949c21f1e183bcb4bc751f531d6dd61d3f663828d11ad1645081cd577547"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_check.py",
+      "bytes": 5156,
+      "change_status": "A",
+      "git_blob_sha1": "62dc572f458b181d11e70b18d8787ac91b723422",
+      "lines": 126,
+      "mode": "100644",
+      "sha256": "78afc81c468e69e1cdfe54e3201cb54caa5bae379eaf623cc7367c84f5ed1e5f"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_result_2026_10_28.json",
+      "bytes": 766,
+      "change_status": "A",
+      "git_blob_sha1": "bfe63817512f11fb1c52616bfcf2d549ebdcaee0",
+      "lines": 24,
+      "mode": "100644",
+      "sha256": "313d3c52e511884f2a8abb453465cc08733c55d88d92ac53f7e5e518ca07a0f4"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/certificates/a4d_closed_history_direct_source_check.py",
+      "bytes": 6252,
+      "change_status": "A",
+      "git_blob_sha1": "5a84561f383642d55422ae55fffa68a1a7e825b4",
+      "lines": 146,
+      "mode": "100644",
+      "sha256": "b044b4939b8577a7289b0f8ef1c146bcead29a8c02274406ab20026e7d50361c"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/certificates/a4d_closed_history_direct_source_result_2026_10_28.json",
+      "bytes": 1827,
+      "change_status": "A",
+      "git_blob_sha1": "0a58374a43a7bd26ba1b6958a1ce4900bdb92d11",
+      "lines": 44,
+      "mode": "100644",
+      "sha256": "fd79347a33ef1d0a33438c5b382707c07549168ada6b213a15cee3c06ee489df"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_check.py",
+      "bytes": 8625,
+      "change_status": "A",
+      "git_blob_sha1": "33bdbbd1c276916211bc23ceaa05c7603dc6c424",
+      "lines": 226,
+      "mode": "100644",
+      "sha256": "9c6569fb3e13e2720508bf7b6b967834363a82c620e969cf0caebfcb0227437c"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_result_2026_10_28.json",
+      "bytes": 2892,
+      "change_status": "A",
+      "git_blob_sha1": "27b60e214668fb3362811962ecc664b98f6655a7",
+      "lines": 59,
+      "mode": "100644",
+      "sha256": "1c6d58b73c9071b6d5768da7cbda203e22742b23636a46cea80e58e7d134f19f"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "bytes": 20552,
+      "change_status": "A",
+      "git_blob_sha1": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "lines": 294,
+      "mode": "100644",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/check_clock_winding.py",
+      "bytes": 15224,
+      "change_status": "A",
+      "git_blob_sha1": "5aae8b506730b6d758939deb53a67c2e047bcda9",
+      "lines": 308,
+      "mode": "100644",
+      "sha256": "37adfe34424d64947ed7bbd29727696e9b1b584f878256f7b07ea47292fd5774"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/result.json",
+      "bytes": 6041,
+      "change_status": "A",
+      "git_blob_sha1": "d941031c937b5615aa234981e9ff4c1bfb39e87f",
+      "lines": 152,
+      "mode": "100644",
+      "sha256": "06c614c3b0fead54ffe94bc68e9cefca75c9ebba16602dba86fd407627c62b42"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/BRACKET_TRANSPORT.md",
+      "bytes": 16039,
+      "change_status": "A",
+      "git_blob_sha1": "3fe707d54540019190e4ca82b10eb0becc82464a",
+      "lines": 387,
+      "mode": "100644",
+      "sha256": "fae4bf970762476c502f7020953bc32a51737d8837b3b2e76745c3d26ec7ed40"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CANONICAL_RIGIDITY.md",
+      "bytes": 9344,
+      "change_status": "A",
+      "git_blob_sha1": "545004f770426f42af8d75b607c5a7b2c346668e",
+      "lines": 209,
+      "mode": "100644",
+      "sha256": "39e5085d8230bd2ef0ccf6ea67ed5730e1bb76c2e7aed32610fa0f3f2bff2934"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CLASSIFICATION_RESULT.json",
+      "bytes": 1022,
+      "change_status": "A",
+      "git_blob_sha1": "63de637226887dc4dc9d904ad09c4df9d019a9b3",
+      "lines": 28,
+      "mode": "100644",
+      "sha256": "911f80cd5a1e06592ac4a24b98f281ff937ab6a4f0a287c254875a75f4a386e6"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CUT_BOUNDARY.md",
+      "bytes": 14325,
+      "change_status": "A",
+      "git_blob_sha1": "2cbc8f056623199dbc518132d44e317f5390bf89",
+      "lines": 200,
+      "mode": "100644",
+      "sha256": "e86ad43b86377013443efc8fd61a36f64455361b41224dc3b718768a3b6221de"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/CUT_RESULT.json",
+      "bytes": 3909,
+      "change_status": "A",
+      "git_blob_sha1": "626799c184fbcc2415cdc996acc7bdc4cafa0d5c",
+      "lines": 187,
+      "mode": "100644",
+      "sha256": "706df3c0b05dafb5ed005da70d2c9f3fc317a9fe4fed8f7a6a59e1809acba811"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/FULL_SOURCE_RESULT.json",
+      "bytes": 3041,
+      "change_status": "A",
+      "git_blob_sha1": "46f4d09db49edc2b56196b158fbc676d2d644250",
+      "lines": 104,
+      "mode": "100644",
+      "sha256": "229068ed441f21099349fd2ec0fb586d6c69d7f0192f637ad9a384597202df49"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/MANIFEST.json",
+      "bytes": 4868,
+      "change_status": "A",
+      "git_blob_sha1": "f222a3b11b33e4f36bb21ddc82bfc20fb58782ef",
+      "lines": 105,
+      "mode": "100644",
+      "sha256": "403f0a6db5ca21a3a2850cd43e551afbbba04304a224d4d39b779326ce1acc2c"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/REVIEW.md",
+      "bytes": 4052,
+      "change_status": "A",
+      "git_blob_sha1": "cd17fc004f4bf0a54b407312ea98325e2ddc8f16",
+      "lines": 77,
+      "mode": "100644",
+      "sha256": "c54342365fa62bc3f2df54977dbb77647e88be44ed7b4bc201d9779bab215ac4"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/RUN_LOG.json",
+      "bytes": 4204,
+      "change_status": "A",
+      "git_blob_sha1": "2130b2eb1e6874cead72945c4da8fdaf625bcec5",
+      "lines": 88,
+      "mode": "100644",
+      "sha256": "59f225433cec431947c1f421fe9dbc9a4e165b2893fa19f7b38a444ad1dfb2ba"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/SCALAR_RIGIDITY.md",
+      "bytes": 7749,
+      "change_status": "A",
+      "git_blob_sha1": "9be66b834ba2b906f360d81d3cc8994126698398",
+      "lines": 178,
+      "mode": "100644",
+      "sha256": "538a487268d5b45215a80a464120af949a1f1b144f1d01e6deef5f600be05a1c"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/SOURCE_PINS.json",
+      "bytes": 3029,
+      "change_status": "A",
+      "git_blob_sha1": "779f44afb44b360514f909fc501f896a627fb32c",
+      "lines": 63,
+      "mode": "100644",
+      "sha256": "264ab91b028695fffd5ff67c90735031eb8b54639970334d878c5a85eac68def"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/VALIDATION.md",
+      "bytes": 2715,
+      "change_status": "A",
+      "git_blob_sha1": "63bd1fbf05da6ec277e33d060cac2cadf5752c93",
+      "lines": 48,
+      "mode": "100644",
+      "sha256": "0ecfcdef2ee777cb2777a7ca1c534a491dc5b65744c8337d78691d84e113e6db"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_canonical_rigidity.py",
+      "bytes": 5612,
+      "change_status": "A",
+      "git_blob_sha1": "c3a63b7825a2a562ec39acd37cf15f5a0fea943d",
+      "lines": 116,
+      "mode": "100644",
+      "sha256": "da8425efc34c4aa8d1c4381da0845034ef3d054ee9fe65c46815b10a35aad2cd"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_cut_boundary.py",
+      "bytes": 3391,
+      "change_status": "A",
+      "git_blob_sha1": "052c2409fb7b6ac894e6614c04e627d307e1aaf6",
+      "lines": 91,
+      "mode": "100644",
+      "sha256": "bce3a4e337fe8315bcc5d6591e82f0804e55c2eab96cd77311c1a2ce612dfe08"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_full_boundary_source.py",
+      "bytes": 5184,
+      "change_status": "A",
+      "git_blob_sha1": "d19b12cdb82eaa16318c5136716f8b39e3a086a3",
+      "lines": 143,
+      "mode": "100644",
+      "sha256": "54c6b0e1df17ea95fc6d850c1dc38666624254a662c5bbcec6b29e73d81e8602"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/GAUGE_MOMENT_BOUNDARY.md",
+      "bytes": 13024,
+      "change_status": "A",
+      "git_blob_sha1": "d5cb4f271a73cd0d88a3235dcc1e928b171807d7",
+      "lines": 271,
+      "mode": "100644",
+      "sha256": "e7fa8fe4f036b7ba600eb4da4c4f8d67fffc843761fb14cc2fb1ebd4c3aa6d4d"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/GAUGE_RESULT.json",
+      "bytes": 1645,
+      "change_status": "A",
+      "git_blob_sha1": "aa0f9296f596dc5bede1d00099673e05a0875f54",
+      "lines": 49,
+      "mode": "100644",
+      "sha256": "0a43a0ee306859a5273c5e65872daa80e342ce373de73a7fecc0f8be7e12e474"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/INCOMING_COMPATIBILITY.md",
+      "bytes": 4514,
+      "change_status": "A",
+      "git_blob_sha1": "056fd9bf55d3c4706ad285ee28bff0dad127b470",
+      "lines": 87,
+      "mode": "100644",
+      "sha256": "614383fee6e6d7eebb6ca3d2d33fb8f1e7e3fbe76c8bb6f3b47925b247cada6b"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/MANIFEST.json",
+      "bytes": 7710,
+      "change_status": "A",
+      "git_blob_sha1": "a3b66e1b5cc438864c239316f1a3260bae8e603d",
+      "lines": 166,
+      "mode": "100644",
+      "sha256": "9d499ce8dff81b59540e6d037fa38cadc56b8b459c5f580d7eff7a11c4c65e27"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/MEMORY_RESULT.json",
+      "bytes": 2117,
+      "change_status": "A",
+      "git_blob_sha1": "7d8c50e365dbb8bf5da840cff2e91645460b9a0b",
+      "lines": 51,
+      "mode": "100644",
+      "sha256": "2463f1e5b3a911bf4dd3e684387f5263b1deb8b342cb76b07445deedd4295b71"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/NATIVE_PHASE_RESULT.json",
+      "bytes": 2532,
+      "change_status": "A",
+      "git_blob_sha1": "7b8e49a99b95e2cfff80d45717db3e10fc753ac6",
+      "lines": 86,
+      "mode": "100644",
+      "sha256": "78cfabe965a54bc73d8cfc3de88f1f4f3a6087cc7515453b451007f8fde7ce89"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/NATIVE_PHASE_WITNESS.md",
+      "bytes": 6499,
+      "change_status": "A",
+      "git_blob_sha1": "7abe0ddf52f4f3248952b2f87c90d19fd1d4ba52",
+      "lines": 143,
+      "mode": "100644",
+      "sha256": "72f1cd1aea4ea90cb6f3ea66cc18491bdc781435de38f2d8529d2f06987a47b7"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/PHASE_DESCENT.md",
+      "bytes": 12678,
+      "change_status": "A",
+      "git_blob_sha1": "12bfc36c5bb13d91978aebacbc9b332e562b2a55",
+      "lines": 277,
+      "mode": "100644",
+      "sha256": "c606a164b88662d6e73f8e9ed078e3268e7c2ee91061287f21e9fffc84b035bc"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/PHASE_RESULT.json",
+      "bytes": 1530,
+      "change_status": "A",
+      "git_blob_sha1": "7833c21539985018532143f2bbe32019463aa8c5",
+      "lines": 43,
+      "mode": "100644",
+      "sha256": "3e8d63814a0c56688ad38b4f54d65a92f25db645c786e26df16c2aef74f517b6"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/QUERY_RESULT.json",
+      "bytes": 1629,
+      "change_status": "A",
+      "git_blob_sha1": "b9efa2e2b5c82390cabeb8f893b62eaab38d6834",
+      "lines": 63,
+      "mode": "100644",
+      "sha256": "50180a819f70e56e03fb9b139ef7a6fd5b2a7665583c3227fcb8b1fe91b937d4"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/QUERY_STATIONARY_REDUCTION.md",
+      "bytes": 10103,
+      "change_status": "A",
+      "git_blob_sha1": "cf0e7ae5ccce7807aaa0c0002248bbde22458688",
+      "lines": 193,
+      "mode": "100644",
+      "sha256": "f1b05ab296c75a1be266d7d6d0781c702b012742e3a3a97982dded4b934d79f4"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/RETAINED_MEMORY_LOCALITY.md",
+      "bytes": 9921,
+      "change_status": "A",
+      "git_blob_sha1": "5a14aac850f0388a27f6b099a0adedbe55378111",
+      "lines": 210,
+      "mode": "100644",
+      "sha256": "27e90941a32e7f01442a96149e3fe174a309a8203d4068e9da16a22cd678ffa7"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/REVIEW.md",
+      "bytes": 6014,
+      "change_status": "A",
+      "git_blob_sha1": "bf48010d372bbb02fdede1895d0012901b841c75",
+      "lines": 93,
+      "mode": "100644",
+      "sha256": "ba99a31dcb34c6cfaa141d616137ad3ca8822148a5747165ea2ac642f3359d44"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/RUN_LOG.json",
+      "bytes": 2475,
+      "change_status": "A",
+      "git_blob_sha1": "da249eae709080e91139b49156415dfdb1f543ca",
+      "lines": 64,
+      "mode": "100644",
+      "sha256": "836b7978951c55cb150b0e831e1032ec7c307ce48298178ec25463669343e13f"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/SOURCE_PINS.json",
+      "bytes": 6239,
+      "change_status": "A",
+      "git_blob_sha1": "0abf7898e0add65fe8bd998c154f198f4fe225d7",
+      "lines": 126,
+      "mode": "100644",
+      "sha256": "a7d438f2bf0e49b397025da4aa12faec6f9e305eac350c1ba18fd9057ff375ba"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/TERMINAL_RESULT.json",
+      "bytes": 1737,
+      "change_status": "A",
+      "git_blob_sha1": "78a4a2df5262b80813876fcc43301129915c7ded",
+      "lines": 46,
+      "mode": "100644",
+      "sha256": "bb94e800b55ac1a781ddd530dda981a909227d19c4ff13ebd31ed3cb7ad29766"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/VALIDATION.md",
+      "bytes": 4780,
+      "change_status": "A",
+      "git_blob_sha1": "21cec6dfabec9e6b80352d92419728ad6fd1869a",
+      "lines": 72,
+      "mode": "100644",
+      "sha256": "f486ac6a7b3ab4500fd5bb9b1f9c53deff2297b0326d8e5cc780d93042651f1a"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/VARIATIONAL_REDUCTION_AND_ALGEBRA.md",
+      "bytes": 8712,
+      "change_status": "A",
+      "git_blob_sha1": "fd5cfd3df039d102a2f4a5e9bc172614b52307a1",
+      "lines": 168,
+      "mode": "100644",
+      "sha256": "73b4b205dc92d8342cf3e89fcff72d6694454c84ad1bcf48997b78a49331c4cb"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_gauge_moment.py",
+      "bytes": 5130,
+      "change_status": "A",
+      "git_blob_sha1": "a610b7d2f3e7e81dcdd64d087da24c456c791c90",
+      "lines": 138,
+      "mode": "100644",
+      "sha256": "9b1759d91b6d48eced6929cb08222ccf678a488ae94bff517e7c6418396fb12b"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_phase_descent.py",
+      "bytes": 4527,
+      "change_status": "A",
+      "git_blob_sha1": "d86689b8d6297504535206f66367c390fe9813ae",
+      "lines": 112,
+      "mode": "100644",
+      "sha256": "15887b6661fb068badc7eb3d8d0a9785adbb48908381f5d5cd3b7639232f2b8d"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_query_stationarity.py",
+      "bytes": 7122,
+      "change_status": "A",
+      "git_blob_sha1": "a68a0466612ffeb7280f8c8ba8668040b818c725",
+      "lines": 145,
+      "mode": "100644",
+      "sha256": "000b017210e5485050b745dc833afcd72bf318b3fd3ef016fc0e3ebd76902bc2"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_retained_memory.py",
+      "bytes": 6586,
+      "change_status": "A",
+      "git_blob_sha1": "4f161e04b8ed94fbe5d999dd059d6a06d434ce46",
+      "lines": 145,
+      "mode": "100644",
+      "sha256": "b23bfb478e86324fe508e1a929b6f2eac08670369f9bcba8fb8cb70d5ee3f31d"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/check_terminal_graph.py",
+      "bytes": 4400,
+      "change_status": "A",
+      "git_blob_sha1": "75adbc77ec2272cdf38537e0df074d41c5e2b0f2",
+      "lines": 109,
+      "mode": "100644",
+      "sha256": "f18480d5beffbc2bac95853b0082539213ad1b80245a04b537678124a09da800"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_native_final_composition_2026-10-28/phase_native_check.py",
+      "bytes": 5742,
+      "change_status": "A",
+      "git_blob_sha1": "996e88ae41ec4bdeae51454d90e6d470022d4e21",
+      "lines": 108,
+      "mode": "100644",
+      "sha256": "265c8ef85d86d496a9312539890c09aebd123421d81fc47667ae7cab7f1d39c8"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/PROOF_RU.md",
+      "bytes": 25687,
+      "change_status": "A",
+      "git_blob_sha1": "394f757b77bb28ea590e22825fc6678580853732",
+      "lines": 247,
+      "mode": "100644",
+      "sha256": "d533d4581cfdb2a8e1b5466d7d30356154bce440013ba486a1da8cf83eabf31d"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py",
+      "bytes": 13505,
+      "change_status": "A",
+      "git_blob_sha1": "9d313ec496f12ac61e118511d9ce706f19e675ae",
+      "lines": 268,
+      "mode": "100644",
+      "sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/result.json",
+      "bytes": 4741,
+      "change_status": "A",
+      "git_blob_sha1": "370da28388ab569bc7de311304ae664f31758684",
+      "lines": 119,
+      "mode": "100644",
+      "sha256": "9da283dc3baa733a9d87a388db8c0c78359ceebd9796b338909c08cbc7b0952f"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_refoliation_closure_2026-10-28/PROOF_RU.md",
+      "bytes": 24215,
+      "change_status": "A",
+      "git_blob_sha1": "03ad9147c46411099667658871f847e9f3bee883",
+      "lines": 350,
+      "mode": "100644",
+      "sha256": "6155eb31068ffeeb72439dcb9860bd3b82dbd3072fbc2b75a1fe91276d2be71a"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_refoliation_closure_2026-10-28/check_refoliation_closure.py",
+      "bytes": 10056,
+      "change_status": "A",
+      "git_blob_sha1": "615e2b2a0421e11485c9f15497edaa47fd2b37e1",
+      "lines": 224,
+      "mode": "100644",
+      "sha256": "d2b83484e840b91e62b8ac2af4155d5fd8c8e5748ee3027f6cbea0b19263da33"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_refoliation_closure_2026-10-28/result.json",
+      "bytes": 3507,
+      "change_status": "A",
+      "git_blob_sha1": "334ab85094699082a71fa56db4c089c6a28e9e76",
+      "lines": 96,
+      "mode": "100644",
+      "sha256": "3b13c4146e3fdb3990572ac56db837d2badaf22794eca78ce7f72f159d791204"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/PROOF_RU.md",
+      "bytes": 22488,
+      "change_status": "A",
+      "git_blob_sha1": "cd4e0b36835c8ada48895221d14ff69c4a491926",
+      "lines": 323,
+      "mode": "100644",
+      "sha256": "85b4e384b219a15f480271570ca3077725ca6e5658662161f7990336a11b6821"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/QUERY_ORBIT_APPLICATION_RU.md",
+      "bytes": 9894,
+      "change_status": "A",
+      "git_blob_sha1": "d6edeaddc8927d0db16ed35e9781b27cc3804e3a",
+      "lines": 146,
+      "mode": "100644",
+      "sha256": "cc94c4fe66a1614359f6d73b30ea9e1c8e58cf8430b7039fe48475d8b483d18d"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/check_query_cut_orbit.py",
+      "bytes": 5332,
+      "change_status": "A",
+      "git_blob_sha1": "fac2d4717b13a1f87767ad3c9a06e7e1cf6be882",
+      "lines": 125,
+      "mode": "100644",
+      "sha256": "eacd5d6456bacde02ddf3bab22f8ea7782ccdfcecce7afc232d928d9692f2fd9"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/check_root_boundary.py",
+      "bytes": 11081,
+      "change_status": "A",
+      "git_blob_sha1": "bd7aacf768beb0b9be79b3e76c38161a7c8e76c7",
+      "lines": 262,
+      "mode": "100644",
+      "sha256": "226222ebc056869c4fbe2df916fa1ccaebf2ceb6a6e0190bdd3c15d764770e86"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/query_cut_result.json",
+      "bytes": 3537,
+      "change_status": "A",
+      "git_blob_sha1": "f9ef19b2ad8a5c8f54cb665741dcc3fed442c8e4",
+      "lines": 136,
+      "mode": "100644",
+      "sha256": "272502430370992230f6575fa558d8681d0b90dd9f9c4cfa9106d4be35e4ecd6"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_root_boundary_reduction_2026-10-28/result.json",
+      "bytes": 2034,
+      "change_status": "A",
+      "git_blob_sha1": "95b454f07beec518b6feae0f5e8338328b901074",
+      "lines": 57,
+      "mode": "100644",
+      "sha256": "94310fbd18e51708c8e91b5ceb74ccf09677911d93e4e428badeefb05ceb33dc"
+    }
+  ],
+  "source_patch": {
+    "bytes": 908143,
+    "path": "UPSTREAM.patch.gz",
+    "sha256": "a7ad8b29739dff5e2290c6a44f0804dede70251c2b5759ba83021e595d4dba63",
+    "storage_bytes": 315245,
+    "storage_encoding": "gzip",
+    "storage_sha256": "6009d742de448711aadf7b19a5cfb975867608bb194f536e29528a32e19a7b80"
+  },
+  "source_range": {
+    "base_commit": "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+    "head_commit": "726192353504a81a9ab2b751f9b6c7866271e75a",
+    "head_tree": "9b214ad5f4cfd83d91c29bdcc98163b7d1890ca2"
+  }
+}

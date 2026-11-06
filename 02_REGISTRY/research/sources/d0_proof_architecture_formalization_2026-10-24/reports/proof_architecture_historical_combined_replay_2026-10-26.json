@@ -1,0 +1,34 @@
+{
+  "schema": "d0-proof-architecture-historical-replay-audit-v1",
+  "source_commit": "1820d940d3b1b5ab61ef7ad505980eea077cf553",
+  "source_worktree_dirty": false,
+  "runtime": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "recorded_replay": {
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "runner_sha256": "52b3c30544fdc448ef21139a0b0f76094fc9a24b20b0508d34be3ad41583146e",
+    "search_engine_sha256": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
+    "full_output_sha256": "f54ba8b489f3cfb23172fe7b382a9b38b76051dc958f75543d790d9b28a519db"
+  },
+  "verification_replay": {
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "elapsed_seconds": 615.3,
+    "snapshot_commit": "1820d940d3b1b5ab61ef7ad505980eea077cf553",
+    "worktree_dirty": false,
+    "runner_sha256": "52b3c30544fdc448ef21139a0b0f76094fc9a24b20b0508d34be3ad41583146e",
+    "search_engine_sha256": "aaed4194af38484de97db60c821374955f90dc5cc290d20a6fb8e53f94624262",
+    "full_output_sha256": "8ed0d178a7cef93dcb0b8f7f61272d6a47a28026bb2e5d9bde1b2de9803e51da",
+    "full_output_bytes": 7099884,
+    "search_cases_found_all_sources": 20,
+    "search_cases_total": 20,
+    "required_source_ref_count": 123,
+    "benchmark_cases_total": 21,
+    "missing_required_sources": 0,
+    "authority_source_digests_match_recorded": true,
+    "matches_recorded_full_output_sha256": false
+  },
+  "interpretation": "The original replay record is preserved. This clean rerun uses the same source commit, runner digest, search-engine digest, authority digests, source counts, and benchmark counts, but its serialized full output has a different digest and size. The original receipt does not contain a full_output_bytes field; do not infer or replace it from this rerun.",
+  "source_summary_path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_cold_start_summary_2026-10-25_combined.json"
+}

@@ -1,0 +1,9 @@
+# Независимая сверка Book01 §01.1.8: вычислимое чтение записи
+
+Проверен аспект позиционного доступа в диапазоне `[16923,17382)` файла `01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md` на `1eabcccbf7e115c667e9bb8c445ef300107b1493`: blob `eb2d8ea779189084cdaaca717326df88589ec918`, SHA-256 диапазона `9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe`. Ранее этот же диапазон рассматривался для archiveCode/capacity; здесь отдельно проверяется вычислимость query.
+
+При заданных `F`, `E : TheoryVerification F.futureEmpiricalTheory` и `W : SigmaWitness E`, со структурой кодового алфавита, `SigmaWitness.query_computable` доказывает `Computable₂ W.query`: входы — **уже сохранённый** список списков символов и индекс Nat, выход — `Option` кода. `coded_verification_core` действительно потребляет это свидетельство. `query_archive` и `query_append_retains` — отдельные утверждения о заданной записи; последняя требует, чтобы индекс уже лежал в длине истории.
+
+Проверенный контроль даёт `query [] 0 = none`, но после добавления записи на ту же позицию — `some`. Следовательно сохранение ответа после добавления нельзя распространять на отсутствовавший индекс. Ни эта лемма, ни контроль не строят вычислимый encoder произвольного raw-состояния, физическую History, часы, плату или сложность чтения и не устанавливают admission. Условия supplied E/W и необходимые кодовые структуры сохраняются; semantic acceptance всего C0 не заявлено.
+
+`VerificationCore.lean` SHA-256 `382b2b506e17c6422623b6a2581756468e157def9ea783445f0943bd124a19d7`. `review_control.lean` SHA-256 `86ba5d05ad2eac5125dfb2d751e6a9b4d0ace64e6c438bcdd954d5430c90f717`, `lean_check.log` SHA-256 `0bc7a698a693eb6c6fbb330cf2d378a9df2d7a74d511710b465fbf2d1aa5772e`. Типы и аксиомы проверены с существующим кэшем, не холодной сборкой. `GR_closed=false`.

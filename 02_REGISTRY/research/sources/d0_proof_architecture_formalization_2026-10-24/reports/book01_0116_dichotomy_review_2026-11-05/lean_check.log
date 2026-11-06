@@ -1,0 +1,29 @@
+D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent (F : FutureExecution)
+  (s : F.State) (b b' : Bool) : F.uncoupledCenter.profile (s, b) = F.uncoupledCenter.profile (s, b')
+D0.Foundation.VerificationCore.uncoupledCenter_records_equal (F : FutureExecution)
+  (E : TheoryVerification F.uncoupledCenter.futureEmpiricalTheory) (s : F.State) (b b' : Bool) :
+  representedRecord E (s, b) = representedRecord E (s, b')
+D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff {F : FutureExecution}
+  {E : TheoryVerification F.futureEmpiricalTheory} (W : SigmaWitness E) (s t : F.State) :
+  W.dmin s = W.dmin t ↔ F.profile s = F.profile t
+D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future :
+  ∃ x y, x ≠ y ∧ unitExecution.uncoupledCenter.profile x = unitExecution.uncoupledCenter.profile y
+D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future_and_record (F : FutureExecution) (s : F.State)
+  (E : TheoryVerification F.uncoupledCenter.futureEmpiricalTheory) :
+  ∃ x y,
+    x ≠ y ∧ F.uncoupledCenter.profile x = F.uncoupledCenter.profile y ∧ representedRecord E x = representedRecord E y
+D0.Foundation.UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record :
+  ∃ x y,
+    x ≠ y ∧
+      D0.Foundation.TheoryTransfer.visibleBitSystem.profile x =
+          D0.Foundation.TheoryTransfer.visibleBitSystem.profile y ∧
+        representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification x =
+          representedRecord D0.Foundation.VerificationTransferApplication.visibleBitVerification y
+'D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent' depends on axioms: [Quot.sound]
+'D0.Foundation.VerificationCore.uncoupledCenter_records_equal' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.VerificationCore.SigmaWitness.dmin_eq_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future' depends on axioms: [Quot.sound]
+'D0.Foundation.UncoupledCenterRawWitness.distinct_raw_same_future_and_record' depends on axioms: [propext, Quot.sound]
+'D0.Foundation.UncoupledCenterRawWitness.concrete_distinct_raw_same_future_and_record' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

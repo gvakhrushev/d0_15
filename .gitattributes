@@ -1,0 +1,11 @@
+# This generated view preserves its existing CRLF convention.
+03_FORMALIZATION/D0/TheoremLedger/ClaimMap.lean whitespace=cr-at-eol
+# Historical source bytes are hash-pinned and remain available as text diffs.
+02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/** -text diff
+# Preserve original #334 moving-cut research source and receipt bytes.
+02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md -text diff
+02_REGISTRY/research/sources/d0_root_moving_cut_2026-10-28/** -text diff
+# Preserve the exact source files from the current #334 refoliation delta.
+02_REGISTRY/research/sources/d0_334_refoliation_delta_2026-10-28/upstream/** -text diff
+# Preserve the manifest-pinned upstream inventory bytes (including its final blank line).
+02_REGISTRY/research/sources/d0_chat_intake_2026-10-28/upstream/FILES.md whitespace=-blank-at-eof

@@ -1,0 +1,604 @@
+{
+  "schema": "d0-pr334-isolated-checker-replay-v1",
+  "source": {
+    "repository": "gvakhrushev/d0_15",
+    "pr": 334,
+    "remote_head": "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+    "snapshot_manifest_sha256": "53fb4d806c2cb2dbe4b044a55c8bcd0301b6967ff0e402fab2626d8bc6969c01",
+    "snapshot_restore_sha256": "f747ec2e21223eb10130b9be046d2a58b59cd1799b87fd6ec82cc201cab9e988",
+    "source_root": "/tmp/d0_pr334_check/restore-normal/packages"
+  },
+  "environment": {
+    "python": "3.9.6",
+    "python_executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1"
+  },
+  "restore": {
+    "normal_command": "python3 02_REGISTRY/research/sources/d0_chat_snapshot_2026-10-27/restore.py --extract /tmp/d0_pr334_check/restore-normal",
+    "optimized_command": "python3 -O 02_REGISTRY/research/sources/d0_chat_snapshot_2026-10-27/restore.py --extract /tmp/d0_pr334_check/restore-optimized",
+    "files_each": 74,
+    "file_bytes_each": 650121,
+    "byte_mismatches": 0,
+    "nine_package_member_counts": [
+      9,
+      8,
+      6,
+      9,
+      7,
+      12,
+      9,
+      6,
+      8
+    ]
+  },
+  "execution": {
+    "method": "isolated copied package for each mode; normal and -O runs; archived receipts never overwritten",
+    "driver_sha256": "57f4196ca6dc9bcd648bf73e600b150723f83aea846032cefb48ef0b9d41df6e",
+    "output_root": "/tmp/d0_pr334_check/replays",
+    "cases": [
+      {
+        "case": "closed",
+        "package": "D0_closed_source_cone_2026-10-27",
+        "original_script_sha256": "2ababde604b23660a0691edc73c46fdf26e64ea235793b98f0d8cb971f1b9647",
+        "original_receipt": "D0_closed_source_cone_2026-10-27/result.json",
+        "original_receipt_sha256": "602ea5ce60d31e263681ee03d10d3afc4b02adff23ce0d04ea01b562a755ed10",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_closed_source_cone.py"
+            ],
+            "cwd": "replays/normal/D0_closed_source_cone_2026-10-27",
+            "script_sha256": "2ababde604b23660a0691edc73c46fdf26e64ea235793b98f0d8cb971f1b9647",
+            "returncode": 0,
+            "seconds": 2.61,
+            "status": "PASS_CLOSED_SOURCE_CONE_AND_UNARY_ENSEMBLE",
+            "checks": 12423,
+            "stdout_path": "closed-normal.stdout",
+            "stdout_sha256": "17b56fc913470e8a0046ab9d5edefbdc27cf0d1b061c27301b87063f54fc338b",
+            "stderr_path": "closed-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_closed_source_cone.py"
+            ],
+            "cwd": "replays/optimized/D0_closed_source_cone_2026-10-27",
+            "script_sha256": "2ababde604b23660a0691edc73c46fdf26e64ea235793b98f0d8cb971f1b9647",
+            "returncode": 0,
+            "seconds": 2.62,
+            "status": "PASS_CLOSED_SOURCE_CONE_AND_UNARY_ENSEMBLE",
+            "checks": 12423,
+            "stdout_path": "closed-optimized.stdout",
+            "stdout_sha256": "17b56fc913470e8a0046ab9d5edefbdc27cf0d1b061c27301b87063f54fc338b",
+            "stderr_path": "closed-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": false,
+        "original_vs_new_differing_top_level_keys": [
+          "python"
+        ]
+      },
+      {
+        "case": "source",
+        "package": "D0_source_class_synthesis_2026-10-27",
+        "original_script_sha256": "f23999e1e9119cb2e5782023c4107a46e522fb97bd42e57790bf62cc67ae111a",
+        "original_receipt": "D0_source_class_synthesis_2026-10-27/result.json",
+        "original_receipt_sha256": "84166d83bf11e601e586a3774853378cd769978833a15f1dcd4637525a1cab96",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_source_class.py"
+            ],
+            "cwd": "replays/normal/D0_source_class_synthesis_2026-10-27",
+            "script_sha256": "f23999e1e9119cb2e5782023c4107a46e522fb97bd42e57790bf62cc67ae111a",
+            "returncode": 0,
+            "seconds": 1.36,
+            "status": "PASS_COMPLETE_HERALD_SOURCE_CLASS",
+            "checks": 10370,
+            "stdout_path": "source-normal.stdout",
+            "stdout_sha256": "b1e28779879d6ecafbbcfe75d449d211ecc3fe968d597073a42aa417b721b536",
+            "stderr_path": "source-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_source_class.py"
+            ],
+            "cwd": "replays/optimized/D0_source_class_synthesis_2026-10-27",
+            "script_sha256": "f23999e1e9119cb2e5782023c4107a46e522fb97bd42e57790bf62cc67ae111a",
+            "returncode": 0,
+            "seconds": 1.06,
+            "status": "PASS_COMPLETE_HERALD_SOURCE_CLASS",
+            "checks": 10370,
+            "stdout_path": "source-optimized.stdout",
+            "stdout_sha256": "b1e28779879d6ecafbbcfe75d449d211ecc3fe968d597073a42aa417b721b536",
+            "stderr_path": "source-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": false,
+        "original_vs_new_differing_top_level_keys": [
+          "python"
+        ],
+        "generated_thresholds_sha256": "de6c09bbecdc8f07827876f6b49e2be7a13001041fc8b38264f45235bb119a94",
+        "generated_thresholds_match_original": true
+      },
+      {
+        "case": "root",
+        "package": "D0_root_source_test_2026-10-27",
+        "original_script_sha256": "e0689fc6c99a690b450d931874a27cffd3a46c55fbdcf432ab7fcf351429343e",
+        "original_receipt": "D0_root_source_test_2026-10-27/result.json",
+        "original_receipt_sha256": "13dd3db75855b5ee71e1f91c9886a828db2784224be253980037e59e98aefd9b",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_root_source_universality.py"
+            ],
+            "cwd": "replays/normal/D0_root_source_test_2026-10-27",
+            "script_sha256": "e0689fc6c99a690b450d931874a27cffd3a46c55fbdcf432ab7fcf351429343e",
+            "returncode": 0,
+            "seconds": 1.22,
+            "status": "PASS_FIXED_INTERFACE_POLYNOMIAL_SOURCE_REALIZATION",
+            "checks": 4217,
+            "stdout_path": "root-normal.stdout",
+            "stdout_sha256": "13dd3db75855b5ee71e1f91c9886a828db2784224be253980037e59e98aefd9b",
+            "stderr_path": "root-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_root_source_universality.py"
+            ],
+            "cwd": "replays/optimized/D0_root_source_test_2026-10-27",
+            "script_sha256": "e0689fc6c99a690b450d931874a27cffd3a46c55fbdcf432ab7fcf351429343e",
+            "returncode": 0,
+            "seconds": 1.22,
+            "status": "PASS_FIXED_INTERFACE_POLYNOMIAL_SOURCE_REALIZATION",
+            "checks": 4217,
+            "stdout_path": "root-optimized.stdout",
+            "stdout_sha256": "13dd3db75855b5ee71e1f91c9886a828db2784224be253980037e59e98aefd9b",
+            "stderr_path": "root-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": true,
+        "original_vs_new_differing_top_level_keys": []
+      },
+      {
+        "case": "selection",
+        "package": "D0_final_selection_check_2026-10-27",
+        "original_script_sha256": "7531abf2c22cd7202ba44978b5c4c2f490a1aac1c971711eda2d1f9bc297dea8",
+        "original_receipt": "D0_final_selection_check_2026-10-27/result.json",
+        "original_receipt_sha256": "c43dd6ffbe0edd7882509aeb32bcd0a2c517ed9befc5f6b61b5f3cc83417e4ae",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_selection.py"
+            ],
+            "cwd": "replays/normal/D0_final_selection_check_2026-10-27",
+            "script_sha256": "7531abf2c22cd7202ba44978b5c4c2f490a1aac1c971711eda2d1f9bc297dea8",
+            "returncode": 0,
+            "seconds": 0.52,
+            "status": "PASS_EXACT_SAME_INVENTORY_CLOSED_SELECTION_TEST",
+            "checks": 59,
+            "stdout_path": "selection-normal.stdout",
+            "stdout_sha256": "c43dd6ffbe0edd7882509aeb32bcd0a2c517ed9befc5f6b61b5f3cc83417e4ae",
+            "stderr_path": "selection-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_selection.py"
+            ],
+            "cwd": "replays/optimized/D0_final_selection_check_2026-10-27",
+            "script_sha256": "7531abf2c22cd7202ba44978b5c4c2f490a1aac1c971711eda2d1f9bc297dea8",
+            "returncode": 0,
+            "seconds": 0.54,
+            "status": "PASS_EXACT_SAME_INVENTORY_CLOSED_SELECTION_TEST",
+            "checks": 59,
+            "stdout_path": "selection-optimized.stdout",
+            "stdout_sha256": "c43dd6ffbe0edd7882509aeb32bcd0a2c517ed9befc5f6b61b5f3cc83417e4ae",
+            "stderr_path": "selection-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": true,
+        "original_vs_new_differing_top_level_keys": []
+      },
+      {
+        "case": "arithmetic",
+        "package": "D0_final_selection_check_2026-10-27",
+        "original_script_sha256": "6ffab904613221a8368eb992a77b981c518a446e282355eb2440745e325e229f",
+        "original_receipt": "D0_final_selection_check_2026-10-27/arithmetic_result.json",
+        "original_receipt_sha256": "9cd5c489f973db49dbe4405bb6fafc9432dacb8032df2428105fbfec8004b642",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_arithmetic.py"
+            ],
+            "cwd": "replays/normal/D0_final_selection_check_2026-10-27",
+            "script_sha256": "6ffab904613221a8368eb992a77b981c518a446e282355eb2440745e325e229f",
+            "returncode": 0,
+            "seconds": 0.26,
+            "status": "PASS_EXACT_GOLDEN_ARITHMETIC_SCOPE",
+            "checks": 14,
+            "stdout_path": "arithmetic-normal.stdout",
+            "stdout_sha256": "9cd5c489f973db49dbe4405bb6fafc9432dacb8032df2428105fbfec8004b642",
+            "stderr_path": "arithmetic-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_arithmetic.py"
+            ],
+            "cwd": "replays/optimized/D0_final_selection_check_2026-10-27",
+            "script_sha256": "6ffab904613221a8368eb992a77b981c518a446e282355eb2440745e325e229f",
+            "returncode": 0,
+            "seconds": 0.25,
+            "status": "PASS_EXACT_GOLDEN_ARITHMETIC_SCOPE",
+            "checks": 14,
+            "stdout_path": "arithmetic-optimized.stdout",
+            "stdout_sha256": "9cd5c489f973db49dbe4405bb6fafc9432dacb8032df2428105fbfec8004b642",
+            "stderr_path": "arithmetic-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": true,
+        "original_vs_new_differing_top_level_keys": []
+      },
+      {
+        "case": "complete",
+        "package": "D0_complete_source_application_2026-10-27",
+        "original_script_sha256": "d58d5fce218dea0f8d8249d00a74daba72382d17b8b608ad1adbb29b86d3327f",
+        "original_receipt": "D0_complete_source_application_2026-10-27/complete_book_source_application_result.json",
+        "original_receipt_sha256": "590bc4fb0b3e0377e6ee7b1322aba035fdf75bb132619730e5c8cdc1c8204d89",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "complete_book_source_application_check.py"
+            ],
+            "cwd": "replays/normal/D0_complete_source_application_2026-10-27",
+            "script_sha256": "d58d5fce218dea0f8d8249d00a74daba72382d17b8b608ad1adbb29b86d3327f",
+            "returncode": 0,
+            "seconds": 0.25,
+            "status": "PASS_COMPLETE_CUT_SOURCE_AND_FIXED_INITIAL_LIFT",
+            "checks": null,
+            "stdout_path": "complete-normal.stdout",
+            "stdout_sha256": "590bc4fb0b3e0377e6ee7b1322aba035fdf75bb132619730e5c8cdc1c8204d89",
+            "stderr_path": "complete-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "complete_book_source_application_check.py"
+            ],
+            "cwd": "replays/optimized/D0_complete_source_application_2026-10-27",
+            "script_sha256": "d58d5fce218dea0f8d8249d00a74daba72382d17b8b608ad1adbb29b86d3327f",
+            "returncode": 0,
+            "seconds": 0.32,
+            "status": "PASS_COMPLETE_CUT_SOURCE_AND_FIXED_INITIAL_LIFT",
+            "checks": null,
+            "stdout_path": "complete-optimized.stdout",
+            "stdout_sha256": "590bc4fb0b3e0377e6ee7b1322aba035fdf75bb132619730e5c8cdc1c8204d89",
+            "stderr_path": "complete-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": true,
+        "original_vs_new_differing_top_level_keys": []
+      },
+      {
+        "case": "car",
+        "package": "D0_complete_source_application_2026-10-27",
+        "original_script_sha256": "4b39ddaa3abb29b9f2e1b3a557fd6152d3478758089d291d6aae998b699100e2",
+        "original_receipt": null,
+        "original_receipt_sha256": null,
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_original_car.py"
+            ],
+            "cwd": "replays/normal/D0_complete_source_application_2026-10-27",
+            "script_sha256": "4b39ddaa3abb29b9f2e1b3a557fd6152d3478758089d291d6aae998b699100e2",
+            "returncode": 0,
+            "seconds": 0.99,
+            "status": null,
+            "checks": null,
+            "stdout_path": "car-normal.stdout",
+            "stdout_sha256": "fd03a049cd7104efc406d316b9788473d23d0ecfef2ad4e247f560eb10042856",
+            "stderr_path": "car-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_original_car.py"
+            ],
+            "cwd": "replays/optimized/D0_complete_source_application_2026-10-27",
+            "script_sha256": "4b39ddaa3abb29b9f2e1b3a557fd6152d3478758089d291d6aae998b699100e2",
+            "returncode": 0,
+            "seconds": 0.95,
+            "status": null,
+            "checks": null,
+            "stdout_path": "car-optimized.stdout",
+            "stdout_sha256": "38b9c202fa13fa4a1cec738e4a26be38828ca9ab89aace1dbc845adb3f4016ef",
+            "stderr_path": "car-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": false,
+        "original_receipt_equals_new_normal": null,
+        "normal_optimized_diagnostic_equal_excluding_elapsed": true,
+        "diagnostic_scope": "No asserted PASS; stdout reported quadratic_bad_count=0 and trace_difference=0. Script has no saved expected receipt."
+      },
+      {
+        "case": "density",
+        "package": "D0_density_and_full_price_bridge_2026-10-27",
+        "original_script_sha256": "168209b98d64da98d16fa7515807fb56418fa99de314c6e74fcd6d67310b15ff",
+        "original_receipt": "D0_density_and_full_price_bridge_2026-10-27/result.json",
+        "original_receipt_sha256": "5a7604a57008c884956f17c2ac9ebf18db0adf240f7604f57c55c1105f30700e",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_density_price_bridge.py"
+            ],
+            "cwd": "replays/normal/D0_density_and_full_price_bridge_2026-10-27",
+            "script_sha256": "168209b98d64da98d16fa7515807fb56418fa99de314c6e74fcd6d67310b15ff",
+            "returncode": 0,
+            "seconds": 0.28,
+            "status": "PASS_DENSITY_INVOLUTION_AND_FULL_PRICE_C1_CONTROL",
+            "checks": 57,
+            "stdout_path": "density-normal.stdout",
+            "stdout_sha256": "5a7604a57008c884956f17c2ac9ebf18db0adf240f7604f57c55c1105f30700e",
+            "stderr_path": "density-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_density_price_bridge.py"
+            ],
+            "cwd": "replays/optimized/D0_density_and_full_price_bridge_2026-10-27",
+            "script_sha256": "168209b98d64da98d16fa7515807fb56418fa99de314c6e74fcd6d67310b15ff",
+            "returncode": 0,
+            "seconds": 0.27,
+            "status": "PASS_DENSITY_INVOLUTION_AND_FULL_PRICE_C1_CONTROL",
+            "checks": 57,
+            "stdout_path": "density-optimized.stdout",
+            "stdout_sha256": "5a7604a57008c884956f17c2ac9ebf18db0adf240f7604f57c55c1105f30700e",
+            "stderr_path": "density-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": true,
+        "original_vs_new_differing_top_level_keys": []
+      },
+      {
+        "case": "geometric",
+        "package": "D0_global_geometric_source_2026-10-27",
+        "original_script_sha256": "d9312063fe30ffabb934c8bde72d6273459970f213963eaa143573abe88d47c5",
+        "original_receipt": "D0_global_geometric_source_2026-10-27/result.json",
+        "original_receipt_sha256": "658c7fd031e32655c7f3f3a7b082c63c0aaddbf4504fae9b7b40b46d69d5fbb7",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_parity_bridge.py"
+            ],
+            "cwd": "replays/normal/D0_global_geometric_source_2026-10-27",
+            "script_sha256": "d9312063fe30ffabb934c8bde72d6273459970f213963eaa143573abe88d47c5",
+            "returncode": 0,
+            "seconds": 0.74,
+            "status": "PASS_EXACT_CAR_PARITY_GEOMETRIC_SOURCE",
+            "checks": 305,
+            "stdout_path": "geometric-normal.stdout",
+            "stdout_sha256": "658c7fd031e32655c7f3f3a7b082c63c0aaddbf4504fae9b7b40b46d69d5fbb7",
+            "stderr_path": "geometric-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_parity_bridge.py"
+            ],
+            "cwd": "replays/optimized/D0_global_geometric_source_2026-10-27",
+            "script_sha256": "d9312063fe30ffabb934c8bde72d6273459970f213963eaa143573abe88d47c5",
+            "returncode": 0,
+            "seconds": 0.75,
+            "status": "PASS_EXACT_CAR_PARITY_GEOMETRIC_SOURCE",
+            "checks": 305,
+            "stdout_path": "geometric-optimized.stdout",
+            "stdout_sha256": "658c7fd031e32655c7f3f3a7b082c63c0aaddbf4504fae9b7b40b46d69d5fbb7",
+            "stderr_path": "geometric-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": true,
+        "original_vs_new_differing_top_level_keys": []
+      },
+      {
+        "case": "secants",
+        "package": "D0_internal_clock_bridge_2026-10-27",
+        "original_script_sha256": "aafb12b6c5b5ae0416e33ef4906e11b7172128bfd5a464aa7f645e2d7d88493a",
+        "original_receipt": "D0_internal_clock_bridge_2026-10-27/golden_secants_result.json",
+        "original_receipt_sha256": "d3d6775b75c94f9e4430e16abb4da3d9b3181088f2e086b5b3d00f0f993953c9",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_finite_golden_secants.py"
+            ],
+            "cwd": "replays/normal/D0_internal_clock_bridge_2026-10-27",
+            "script_sha256": "aafb12b6c5b5ae0416e33ef4906e11b7172128bfd5a464aa7f645e2d7d88493a",
+            "returncode": 0,
+            "seconds": 0.49,
+            "status": "PASS_NATIVE_GOLDEN_ECHO_SECANTS",
+            "checks": 21,
+            "stdout_path": "secants-normal.stdout",
+            "stdout_sha256": "d3d6775b75c94f9e4430e16abb4da3d9b3181088f2e086b5b3d00f0f993953c9",
+            "stderr_path": "secants-normal.stderr",
+            "stderr_sha256": "be0582a85e402435831030d0d3c18bc5453991907bc45d99e553bb4d3ee033c9"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_finite_golden_secants.py"
+            ],
+            "cwd": "replays/optimized/D0_internal_clock_bridge_2026-10-27",
+            "script_sha256": "aafb12b6c5b5ae0416e33ef4906e11b7172128bfd5a464aa7f645e2d7d88493a",
+            "returncode": 0,
+            "seconds": 0.67,
+            "status": "PASS_NATIVE_GOLDEN_ECHO_SECANTS",
+            "checks": 21,
+            "stdout_path": "secants-optimized.stdout",
+            "stdout_sha256": "d3d6775b75c94f9e4430e16abb4da3d9b3181088f2e086b5b3d00f0f993953c9",
+            "stderr_path": "secants-optimized.stderr",
+            "stderr_sha256": "4497447ece535212c1886306ebb08b687876d7c875a21d94ad8eed24be18e00b"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": true,
+        "original_vs_new_differing_top_level_keys": []
+      },
+      {
+        "case": "clock",
+        "package": "D0_internal_clock_bridge_2026-10-27",
+        "original_script_sha256": "18a90e09f739a5cfba697849e3b65dcc59de2da4307766434bb41b805ec8da44",
+        "original_receipt": "D0_internal_clock_bridge_2026-10-27/result.json",
+        "original_receipt_sha256": "42755e8af451e056a72d2175c4d2aa2916a9daec8cedfd3236839000072d10d5",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_internal_clock_bridge.py"
+            ],
+            "cwd": "replays/normal/D0_internal_clock_bridge_2026-10-27",
+            "script_sha256": "18a90e09f739a5cfba697849e3b65dcc59de2da4307766434bb41b805ec8da44",
+            "returncode": 0,
+            "seconds": 16.25,
+            "status": "PASS_INTERNAL_CLOCK_REFLECTION_SOURCE_APPLICATION",
+            "checks": 26,
+            "stdout_path": "clock-normal.stdout",
+            "stdout_sha256": "42755e8af451e056a72d2175c4d2aa2916a9daec8cedfd3236839000072d10d5",
+            "stderr_path": "clock-normal.stderr",
+            "stderr_sha256": "17b55d0240b4bae85d57f6d4f44b516fc7ccddac1fd2982501e5f8004c737979"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_internal_clock_bridge.py"
+            ],
+            "cwd": "replays/optimized/D0_internal_clock_bridge_2026-10-27",
+            "script_sha256": "18a90e09f739a5cfba697849e3b65dcc59de2da4307766434bb41b805ec8da44",
+            "returncode": 0,
+            "seconds": 16.23,
+            "status": "PASS_INTERNAL_CLOCK_REFLECTION_SOURCE_APPLICATION",
+            "checks": 26,
+            "stdout_path": "clock-optimized.stdout",
+            "stdout_sha256": "42755e8af451e056a72d2175c4d2aa2916a9daec8cedfd3236839000072d10d5",
+            "stderr_path": "clock-optimized.stderr",
+            "stderr_sha256": "ba72a445e3c58957d4ec2f130466d728fa7c7e6c8ef534236ed351d6001b3220"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": true,
+        "original_vs_new_differing_top_level_keys": []
+      },
+      {
+        "case": "intrinsic",
+        "package": "D0_intrinsic_metric_and_exact_stationarity_2026-10-27",
+        "original_script_sha256": "e8f9f452b3516f5b5c3e233b58990fb41c2d3a0dc08e9baaeb8ff7ff5f6a5749",
+        "original_receipt": "D0_intrinsic_metric_and_exact_stationarity_2026-10-27/result.json",
+        "original_receipt_sha256": "a3314ab4691278e00ed9c1af0e2e6c059750fd04ce11087413d52da8af7f7715",
+        "runs": {
+          "normal": {
+            "command": [
+              "python3",
+              "check_intrinsic_metric_heat_recovery.py"
+            ],
+            "cwd": "replays/normal/D0_intrinsic_metric_and_exact_stationarity_2026-10-27",
+            "script_sha256": "e8f9f452b3516f5b5c3e233b58990fb41c2d3a0dc08e9baaeb8ff7ff5f6a5749",
+            "returncode": 0,
+            "seconds": 0.93,
+            "status": "PASS_INTRINSIC_METRIC_HEAT_EQUIVALENCE_AND_C2_CONTROL",
+            "checks": 59,
+            "stdout_path": "intrinsic-normal.stdout",
+            "stdout_sha256": "8999d62442e7b0e692b3cfb52ca38b7da2098844f7b5583bb3789537f87b874c",
+            "stderr_path": "intrinsic-normal.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "optimized": {
+            "command": [
+              "python3",
+              "-O",
+              "check_intrinsic_metric_heat_recovery.py"
+            ],
+            "cwd": "replays/optimized/D0_intrinsic_metric_and_exact_stationarity_2026-10-27",
+            "script_sha256": "e8f9f452b3516f5b5c3e233b58990fb41c2d3a0dc08e9baaeb8ff7ff5f6a5749",
+            "returncode": 0,
+            "seconds": 1.47,
+            "status": "PASS_INTRINSIC_METRIC_HEAT_EQUIVALENCE_AND_C2_CONTROL",
+            "checks": 59,
+            "stdout_path": "intrinsic-optimized.stdout",
+            "stdout_sha256": "8999d62442e7b0e692b3cfb52ca38b7da2098844f7b5583bb3789537f87b874c",
+            "stderr_path": "intrinsic-optimized.stderr",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "new_normal_equals_optimized": true,
+        "original_receipt_equals_new_normal": false,
+        "original_vs_new_differing_top_level_keys": [
+          "python"
+        ]
+      }
+    ],
+    "remaining_driver_sha256": "50b10fc4696e7e59b1bef52f9f2fed2632dc6ac315efa9dfe912151ba19077c9"
+  },
+  "scope": {
+    "actual_checker_processes": 24,
+    "lean_or_ci_replayed": false,
+    "native_circuit_executed": false,
+    "all_D0_requests_or_book_admission_proved": false,
+    "full_original_field_solver_replayed": false,
+    "unconditional_GR_closed": false,
+    "notes": "Each PASS applies only to its own assumptions and tested fixtures; mathematical and physical claims require independent review. The entire full-source original Book03 derivative and same-execution admission are not established by archive restore or these checks. Numerically evaluated diagnostics are not exact symbolic proof. The CAR diagnostic has no assertion and reports only its computed values; elapsed time varies.",
+    "standalone_scripts": 12
+  }
+}

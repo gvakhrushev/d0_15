@@ -1,0 +1,61 @@
+{
+  "receipt": "d0-proof-architecture-cold-start/1",
+  "snapshot_commit": "1d117546393323dfc0b88a3513282ba9ce6d040e",
+  "worktree_dirty": false,
+  "runner": {
+    "path": "tools/proof_architecture_cold_start.py",
+    "commit": "1d117546393323dfc0b88a3513282ba9ce6d040e",
+    "blob": "ed1c1124b3db23e208330c4535da63a7f3b207e8"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/formal_support.csv": "b538abd4bfbb919f948cbf619dbf2e24859223532e0443ece644c512d050568a",
+    "02_REGISTRY/gr_assembly/applications.json": "0d9218f0d618d56b2898b9cd34d4618234011aca6bb32ff49c4c503aa4f93016",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "search_limit": 18,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "required_source_ref_count": 141,
+  "case_id": "finite-gram-frechet-derivative",
+  "case_found_all_required_sources": true,
+  "case_sources": [
+    {
+      "path": "03_FORMALIZATION/D0/Algebra/FiniteGramDerivative.lean",
+      "status": "found_direct_content",
+      "candidate_rank": 5
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+      "status": "found_direct_content",
+      "candidate_rank": 6
+    },
+    {
+      "path": "02_REGISTRY/gr_assembly/applications.json",
+      "status": "found_direct_content",
+      "candidate_rank": 1
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/metric_provenance_crosswalk_2026-10-26_aaae64c2.json",
+      "status": "found_direct_content",
+      "candidate_rank": 6
+    }
+  ],
+  "full_output": {
+    "sha256": "75304e165b4b52d68e9fc23f597de0070a2bda2a4ed1727c155ddd16084760d9",
+    "bytes": 7944203,
+    "stored": false
+  },
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true
+  },
+  "semantic_scope_review_is_manual": true,
+  "scope_review": "Retrieval verifies discoverability of the generic finite-matrix derivative, its J2 consumer, the assembly application, and compiled crosswalk. It does not accept semantic scope, the selected-action-to-carrier map, physical source selection, continuum variation, or C0 membership."
+}

@@ -1,0 +1,253 @@
+{
+  "check_count": 34,
+  "checks": [
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "direct",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "direct",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "relative",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "relative",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "bound",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "bound",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "tangent_error",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "tangent_error",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "covariant_error",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "covariant_error",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "frechet",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "frechet",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "beta_partial",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "beta_partial",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "beta_fd",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "beta_fd",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "z_partial",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "z_partial",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "z_fd",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "z_fd",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "gauge",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "gauge",
+      "optimized": true
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "gap",
+      "optimized": false
+    },
+    {
+      "category": "numeric_outputs",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "gap",
+      "optimized": true
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "source_vs_frechet",
+      "optimized": false
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "source_vs_frechet",
+      "optimized": true
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "beta_partial_fd",
+      "optimized": false
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "beta_partial_fd",
+      "optimized": true
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "z_partial_fd",
+      "optimized": false
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "z_partial_fd",
+      "optimized": true
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "co_transport",
+      "optimized": false
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "co_transport",
+      "optimized": true
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "noncommuting_heat_gap",
+      "optimized": false
+    },
+    {
+      "category": "errors",
+      "exit_code": 1,
+      "expected_diagnostic_present": true,
+      "field": "noncommuting_heat_gap",
+      "optimized": true
+    }
+  ],
+  "input_script_sha256": "07279ced6d18bead715cd1249f5c43bec6d8e52c568f6715129d95d7a0e55b5f",
+  "scope": "Local numerical fail-closed controls; no native full42, Lean or physical acceptance.",
+  "source_checker_sha256": "da4df4d9c075b9b6cc01a4c74503ea1bb379d062bdbb74e5ddb02703f2f85d2c",
+  "status": "PASS_NAN_MUTATIONS",
+  "versions": {
+    "numpy": "2.3.5",
+    "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5",
+    "scipy": "1.17.0"
+  }
+}

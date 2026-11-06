@@ -1,0 +1,85 @@
+{
+  "artifact_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_PAIRING_REFINEMENT_SOURCE.md": "25b76bcb8d276dd45d32b207fa72b3a8c6aee7b5d4fba16426e3a73a71f9977a",
+    "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.lean": "65d1aff45f17907fcacdcbdc6da889bc0e44b3982b1590a5254f2e8e5ad38d10",
+    "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source.py": "b804b0a42aae5043efd11dc10ba96a5bf6049e7fcb4f0459ffc3366a554a5923",
+    "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_certificate.json": "fff8606d0a48cbb043fd960ac3661ca46bc8e81fb040c60e568c0efbe9e4fe3e",
+    "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_check.py": "3b1d03a3357773587746e9fe556857f7f07d7a2ae09ee707103198de5c117864",
+    "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_lean_output.txt": "e5713ea9be413879498983d96731db2c8441b8e83124df5a5c065d7dd0ea296f",
+    "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_lean_results.json": "112cd9614769d6c72081d16f9cbd041ece32b1e4b0fe7e33288968d5a7eee5d2"
+  },
+  "entrypoint": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_check.py",
+  "lean_receipt_path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_lean_results.json",
+  "ledger_path": "02_REGISTRY/research/certificates/a4d_native_pairing_refinement_source_certificate.json",
+  "schema": "d0-pairing-refinement-historical-input/1",
+  "scope": "HISTORICAL_PINNED_SOURCE_CLOSURE_NOT_CURRENT_SOURCE_PROOF",
+  "source_commit": "2f3360c5d3bfcb40d4791b23ade8e82e03f887c8",
+  "sources": [
+    {
+      "git_blob": "23a51617479210d82c339f8875e8dc1ffe63a4b5",
+      "sha256": "49a1ceb61c338dfe54fb26c79d1ff83a9acfc544fac9215f5d9a4df2fe16b1f4",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/A4DPathCovariantHodge.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DPathCovariantHodge.lean"
+    },
+    {
+      "git_blob": "92bed4cae87fc5e0bb0d71812b02107c09b6098d",
+      "sha256": "4096e0a3b132841a60907f71bb48b726399c789231b804b869708249f7087438",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DRawSolderFrameAction.lean"
+    },
+    {
+      "git_blob": "11c4acfbdc76692f23cec996548aa56bc5401929",
+      "sha256": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean"
+    },
+    {
+      "git_blob": "53153baddfd22a23fdb9d7fb56ff23577618950c",
+      "sha256": "4588589d0e7f018e3f036e2f42a0f002ad9256fdc5792a3c7d4f2026ca68c20e",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean"
+    },
+    {
+      "git_blob": "032cb37242abebee30f6a8715b90a61235bec348",
+      "sha256": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean"
+    },
+    {
+      "git_blob": "8ff68576d92ff67532733a0ca2646de9d50105e2",
+      "sha256": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean"
+    },
+    {
+      "git_blob": "007128ec72ad16d413f60def9945194cd6815a5d",
+      "sha256": "ccfda1cb587c23dc98837c6a78490046e26dc606c0777804a4d7a10b0eddda5a",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveCubicalCochainCarrier.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCochainCarrier.lean"
+    },
+    {
+      "git_blob": "087afdd443ffc02701376e00728193c020da259d",
+      "sha256": "69e7a9a0290ee08c748db03c62d5e331e23efdeb84fb6ffefe4165267b14c967",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveExteriorFrameLift.lean"
+    },
+    {
+      "git_blob": "909e2abdd36094c679898fd81a7c5c688c0d1f24",
+      "sha256": "448af9b22c625fbc1ff07a0869ff888612199a1f29c0c75584708074c7955a76",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementChainMap.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementChainMap.lean"
+    },
+    {
+      "git_blob": "a88cf03a379a9cdff256d5047c6693ef63d98679",
+      "sha256": "e1f4fc672a8f9f39b389e0a907082ddd82871f582a6d31c666010f764b0ce9bd",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean"
+    },
+    {
+      "git_blob": "4af216a4e9b37d93a4051d3d78e8fa1b2d892cd8",
+      "sha256": "5d15086e27397d4dccf7bc1675e85aba086bcd2f61811a7fc0ef96203a6d8f8b",
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_pairing_refinement_historical_2026-10-27/lean/03_FORMALIZATION/D0/Geometry/ArchiveRefinementHodgeWeights.lean",
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveRefinementHodgeWeights.lean"
+    }
+  ]
+}

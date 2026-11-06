@@ -1,0 +1,137 @@
+{
+  "schema": "d0-c0-three-slice-da680-inventory-v1",
+  "snapshot_commit": "da680a67baa0dd777556eb9c8c704a6ca087b0e0",
+  "worktree_dirty": false,
+  "lean_source_digest": "e3444e3c247072601b294b56df41c7342211cc7958ad761b4a4428e1de0cf0fd",
+  "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+  "full_build_jobs": 4807,
+  "full_build_warnings": 1339,
+  "build_receipt": {
+    "command": [
+      "lake",
+      "build",
+      "D0.All"
+    ],
+    "dependencies": {
+      "boundary": "point-in-time source checks; generated .lake/build caches (except Lean source), .lake/build.barrel[.trace] and widget/package-lock.json.hash not authenticated",
+      "checks": "git HEAD, exact tracked checkout bytes and modes against index blobs, index flags, symlink targets, untracked/ignored files outside listed caches, Lean sources inside build cache",
+      "manifest_sha256": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+      "packages": [
+        {
+          "name": "Cli",
+          "revision": "6b907cf12b2e445ccb7c24bc208ef04a1f39e84c"
+        },
+        {
+          "name": "LeanSearchClient",
+          "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+        },
+        {
+          "name": "Qq",
+          "revision": "a6e6c34c4ef182f83b219a3a5a385f51f44bdc4c"
+        },
+        {
+          "name": "aesop",
+          "revision": "558915ae105bfd8074e22d597613d1961822adc2"
+        },
+        {
+          "name": "batteries",
+          "revision": "32dc18cde3684679f3c003de608743b57498c56f"
+        },
+        {
+          "name": "importGraph",
+          "revision": "515cf9d0c00ece5e661f6de4326a53dedc1e8ea1"
+        },
+        {
+          "name": "mathlib",
+          "revision": "6988106320cbae4bcbd5d142075946f7fe08a7b7"
+        },
+        {
+          "name": "plausible",
+          "revision": "a456461b368b71d2accd95234832cd9c174b5437"
+        },
+        {
+          "name": "proofwidgets",
+          "revision": "a84b3e2475d5c5ab979567b1ad8aea21b764bcf8"
+        }
+      ],
+      "schema": "d0-lake-dependency-provenance-v1"
+    },
+    "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+    "environment_sha256": "bdf3ce4243dada4363ce5bfa3aaa8a962f99843ee46f1cd4eda8855e2a186b60",
+    "schema": "d0-lean-build-receipt-v1",
+    "source_sha256": "e3444e3c247072601b294b56df41c7342211cc7958ad761b4a4428e1de0cf0fd",
+    "target": "D0.All",
+    "toolchain": {
+      "boundary": "selected executable bytes and reported versions at two snapshots; dynamic libraries, kernel, external settings and generated caches are not authenticated",
+      "elan": {
+        "resolved_path": "/Users/grigorijvahrusev/.elan/bin/elan",
+        "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+      },
+      "lake_version": {
+        "command": [
+          "/Users/grigorijvahrusev/.elan/bin/lake",
+          "--version"
+        ],
+        "stderr": "",
+        "stdout": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)"
+      },
+      "launchers": {
+        "lake": {
+          "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lake",
+          "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+        },
+        "lean": {
+          "resolved_path": "/Users/grigorijvahrusev/.elan/bin/lean",
+          "sha256": "8754858b6549a9b06f4a019e7145a5e1e19f933983734388920a10781a7537db"
+        }
+      },
+      "lean_version": {
+        "command": [
+          "/Users/grigorijvahrusev/.elan/bin/lake",
+          "env",
+          "lean",
+          "--version"
+        ],
+        "stderr": "",
+        "stdout": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)"
+      },
+      "resolution": "elan which",
+      "selected": {
+        "lake": {
+          "resolution_stderr": "",
+          "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lake",
+          "sha256": "9a89b2af1bddb7e6d5a8dbb2c715288bcb4f24b9129132640cee950734366bcb"
+        },
+        "lean": {
+          "resolution_stderr": "",
+          "resolved_path": "/Users/grigorijvahrusev/.elan/toolchains/leanprover--lean4---v4.30.0/bin/lean",
+          "sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997"
+        }
+      }
+    }
+  },
+  "inventory_sha256": "b659e2e5af038bf4a0498050c9646e6410ffeb22fff463c9a74f23e7865879e1",
+  "inventory_modules": [
+    "D0.Foundation.FutureExecution",
+    "D0.Foundation.VerificationCore",
+    "D0.Foundation.UncoupledCenterRawWitness",
+    "D0.Foundation.FutureShortlexAdapter",
+    "D0.Foundation.VerifiabilityNecessity",
+    "D0.Foundation.TheoryTransfer"
+  ],
+  "declarations": 482,
+  "stale_inventory_control_sha256": "5eb83ebae219383198792a0473b8126b371931479e3dedbb44650d8cab92058a",
+  "independent_review": "Star witness proves abstract complex pair sharpness; actual CAR transport and physical selection remain open.",
+  "semantic_acceptance": "not_assessed",
+  "logs": {
+    "full": {
+      "sha256": "d16d57f42c269cd1a205783c7018569d3b2eddfce7ea5bc11aaa9d58255b077f",
+      "gzip_sha256": "6692bfe919034e57d117107247c65818a87e21e8a5dd2e7ad20af36bfe847ac5"
+    },
+    "star_narrow": {
+      "sha256": "8b0e3670f495c33838e57de35c5f193bd93ba289aaf12b8e39cd0f1d32ce161e",
+      "gzip_sha256": "a9432df68c16478f0c0d03b227372de226352f862daa22ce9b97351b07386ca6"
+    }
+  },
+  "GR_closed": false
+}

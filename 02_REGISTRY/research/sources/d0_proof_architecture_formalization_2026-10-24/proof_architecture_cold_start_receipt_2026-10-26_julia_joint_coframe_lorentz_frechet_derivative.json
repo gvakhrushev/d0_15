@@ -1,0 +1,1870 @@
+{
+  "receipt": "d0-proof-architecture-cold-start/1",
+  "snapshot_commit": "cca37bf75de14b7cfd109f7dd19a7901480e0d20",
+  "worktree_dirty": false,
+  "runner": {
+    "path": "tools/proof_architecture_cold_start.py",
+    "commit": "cca37bf75de14b7cfd109f7dd19a7901480e0d20",
+    "git_blob": "57db9afa84e8083d60b355538acac7a0cda9fb07",
+    "sha256": "dc97e48bd53217a798f3aab2aa049d842c0356009a1bf0f3b3e7283797b9602c"
+  },
+  "search_engine": {
+    "path": "tools/proof_architecture.py",
+    "git_blob": "6ffa238c447ece17329838b102f6b72a8c650a56",
+    "sha256": "901bd8a71217c3fc4c64b7057a44a0c9de0d13e46f3836494a0cfa2a432c2518",
+    "test_path": "tools/test_proof_architecture.py",
+    "test_git_blob": "391d867e5cf3123e9bd99781aa245ee40c5ee984",
+    "test_sha256": "5818d9d4a803b9e9bdeb0ff938b1fbeb0f8bd94cec8eedf93fb7eb9902de1749"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "2320a1f8d64ba8921dd22050222a13f0e13989179a5f3128b998218595416c4c",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "search_limit": 18,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "required_source_ref_count": 153,
+  "case_id": "labelled-native-raising-inverse",
+  "case_found_all_required_sources": true,
+  "case_query_count": 14,
+  "case_required_source_count": 8,
+  "query_discoveries": [
+    {
+      "query": "principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt hasFDerivAt_pi",
+      "top_candidates": [
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+          "matched_terms": 2
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
+          "matched_terms": 2
+        },
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "matched_terms": 1
+        }
+      ]
+    },
+    {
+      "query": "roleLorentzTangentEndpointFDeriv_apply julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26",
+      "top_candidates": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "matched_terms": 2
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+          "matched_terms": 1
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
+          "matched_terms": 1
+        }
+      ]
+    }
+  ],
+  "case_required_sources": {
+    "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md": {
+      "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+      "status": "found_direct_content",
+      "found": true,
+      "source_origin": "pinned_snapshot",
+      "expected_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+      "expected_blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+      "required_sections": [
+        "8.4",
+        "8.5"
+      ],
+      "sections_found": [
+        "1",
+        "6",
+        "6.1",
+        "6.10",
+        "6.12",
+        "6.13",
+        "6.15",
+        "6.19",
+        "6.2",
+        "6.22",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.29",
+        "6.30",
+        "6.34",
+        "6.36",
+        "6.42",
+        "6.46",
+        "6.47",
+        "6.48",
+        "6.49",
+        "6.50",
+        "6.51",
+        "6.52",
+        "6.55",
+        "6.58",
+        "6.61",
+        "6.64",
+        "6.68",
+        "6.69",
+        "6.7",
+        "6.74",
+        "6.80",
+        "6.82",
+        "6.9",
+        "8",
+        "8.10",
+        "8.11",
+        "8.12",
+        "8.14",
+        "8.15",
+        "8.20",
+        "8.22",
+        "8.29",
+        "8.30",
+        "8.31",
+        "8.33",
+        "8.34",
+        "8.4",
+        "8.5",
+        "8.8",
+        "8.9",
+        "85",
+        "9"
+      ],
+      "missing_sections": [],
+      "scoped_queries": [
+        {
+          "query_index": 0,
+          "query": "native raising operator inverse null leg",
+          "found": true,
+          "status": "found_direct_content",
+          "required_sections": [],
+          "sections_found": [
+            "1",
+            "6",
+            "6.13",
+            "6.19",
+            "6.24",
+            "6.26",
+            "6.34",
+            "6.36",
+            "6.48",
+            "6.49",
+            "6.51",
+            "6.64",
+            "6.82",
+            "8",
+            "8.12",
+            "8.14",
+            "8.15",
+            "8.20",
+            "8.8",
+            "9"
+          ],
+          "missing_sections": [],
+          "candidate_rank": 2,
+          "evidence_lines": [
+            {
+              "line": 3209,
+              "heading": "### 6.36. Полный scalar normal: ещё одно направление наблюдателя и точное ядро",
+              "matched_terms": [
+                "raising",
+                "leg"
+              ],
+              "text": "использует закреплённый original creator и все16 components.",
+              "kind": "direct_content"
+            },
+            {
+              "line": 3078,
+              "heading": "### 6.34. У actual joint root preparation lift уже существует; остаётся точная field matrix",
+              "matched_terms": [
+                "inverse",
+                "null"
+              ],
+              "text": "нулевого gap inverse. Эти w_k — те же полные веса root moments",
+              "kind": "direct_content"
+            },
+            {
+              "line": 1156,
+              "heading": "### 6.13. Точное LEFT-копирование исполняет нужный фиксированный разрез",
+              "matched_terms": [
+                "null",
+                "leg"
+              ],
+              "text": "Y codes сохранены; на legal blank input их вероятности нулевые.",
+              "kind": "direct_content"
+            }
+          ]
+        },
+        {
+          "query_index": 1,
+          "query": "точное восстановление тетрады из native raising operator при null leg",
+          "found": true,
+          "status": "found_direct_content",
+          "required_sections": [],
+          "sections_found": [
+            "6",
+            "6.22",
+            "6.25",
+            "6.26",
+            "6.34",
+            "6.36",
+            "6.42",
+            "6.50",
+            "6.55",
+            "6.58",
+            "6.7",
+            "6.80",
+            "6.82",
+            "6.9",
+            "8",
+            "8.12",
+            "8.22",
+            "8.30",
+            "8.5"
+          ],
+          "missing_sections": [],
+          "candidate_rank": 1,
+          "evidence_lines": [
+            {
+              "line": 7344,
+              "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+              "matched_terms": [
+                "inverse",
+                "coframe",
+                "из",
+                "при"
+              ],
+              "text": "имеет гладкий левый обратный R из §8.4 при независимых coframe rows",
+              "kind": "direct_content"
+            },
+            {
+              "line": 11327,
+              "heading": "### 6.82. Когерентная null-sideband preparation — точный flat equalizer, не полный root",
+              "matched_terms": [
+                "exact",
+                "coframe",
+                "null",
+                "leg"
+              ],
+              "text": "Это **точный constrained eigenstate старого flat preparation operator**. Для \\(\\Delta(k)=z^*[(d-o)I+o11^*]z\\,I_{16}\\) координатная перестановка \\(1\\leftrightarrow2\\) переводит \\(m\\) в \\(m'\\), поэтому \\(\\lambda(m)=\\lambda(m')\\) тождественно для всех конечных \\(N\\). Каждая ненулевая CAR-компонента \\(c\\) лежит в одной энергетической оболочке; у глобально нормированного одного CAR-столбца \\(\\Delta C=C\\lambda(m)I\\). Используется literal flat symbol §6.61, а не общий curved soldered operator.",
+              "kind": "direct_content"
+            },
+            {
+              "line": 2170,
+              "heading": "### 6.25. Equivariant compiler: точная Lorentz Ward строка при конечной ошибке",
+              "matched_terms": [
+                "exact",
+                "inverse",
+                "при"
+              ],
+              "text": "При доступном exact inverse G обе экспоненты ниже — completed",
+              "kind": "direct_content"
+            }
+          ]
+        },
+        {
+          "query_index": 2,
+          "query": "native raising operator transfer coframe null leg",
+          "found": true,
+          "status": "found_direct_content",
+          "required_sections": [],
+          "sections_found": [
+            "6",
+            "6.1",
+            "6.13",
+            "6.22",
+            "6.24",
+            "6.26",
+            "6.29",
+            "6.36",
+            "6.50",
+            "6.61",
+            "6.82",
+            "8",
+            "8.14",
+            "8.29",
+            "8.31",
+            "8.33",
+            "8.4",
+            "8.5",
+            "8.8"
+          ],
+          "missing_sections": [],
+          "candidate_rank": 2,
+          "evidence_lines": [
+            {
+              "line": 2369,
+              "heading": "### 6.26. Actual metric-kernel source: спектральная мода сохраняется в полном Dirac",
+              "matched_terms": [
+                "raising",
+                "coframe",
+                "leg"
+              ],
+              "text": "Типы различны: star использует h-scaled coframe legs, native creation",
+              "kind": "direct_content"
+            },
+            {
+              "line": 11327,
+              "heading": "### 6.82. Когерентная null-sideband preparation — точный flat equalizer, не полный root",
+              "matched_terms": [
+                "coframe",
+                "null",
+                "leg"
+              ],
+              "text": "Это **точный constrained eigenstate старого flat preparation operator**. Для \\(\\Delta(k)=z^*[(d-o)I+o11^*]z\\,I_{16}\\) координатная перестановка \\(1\\leftrightarrow2\\) переводит \\(m\\) в \\(m'\\), поэтому \\(\\lambda(m)=\\lambda(m')\\) тождественно для всех конечных \\(N\\). Каждая ненулевая CAR-компонента \\(c\\) лежит в одной энергетической оболочке; у глобально нормированного одного CAR-столбца \\(\\Delta C=C\\lambda(m)I\\). Используется literal flat symbol §6.61, а не общий curved soldered operator.",
+              "kind": "direct_content"
+            },
+            {
+              "line": 7362,
+              "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+              "matched_terms": [
+                "coframe",
+                "leg"
+              ],
+              "text": "coframe legs с её собственными h-факторами. Пусть",
+              "kind": "direct_content"
+            }
+          ]
+        },
+        {
+          "query_index": 3,
+          "query": "Перенос и тетрада восстанавливаются из самого native raising operator",
+          "found": true,
+          "status": "found_direct_content",
+          "required_sections": [],
+          "sections_found": [
+            "6",
+            "6.10",
+            "6.19",
+            "6.2",
+            "6.25",
+            "6.29",
+            "6.36",
+            "6.51",
+            "6.52",
+            "6.69",
+            "6.7",
+            "8",
+            "8.14",
+            "8.31",
+            "8.33",
+            "8.34",
+            "8.4",
+            "8.5",
+            "8.9"
+          ],
+          "missing_sections": [],
+          "candidate_rank": 1,
+          "evidence_lines": [
+            {
+              "line": 7239,
+              "heading": "### 8.4. Перенос и тетрада восстанавливаются из самого native raising operator",
+              "matched_terms": [
+                "перенос",
+                "coframe",
+                "восстанавливаются",
+                "из",
+                "самого",
+                "raising"
+              ],
+              "text": "### 8.4. Перенос и тетрада восстанавливаются из самого native raising operator",
+              "kind": "direct_content"
+            },
+            {
+              "line": 7371,
+              "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+              "matched_terms": [
+                "перенос",
+                "coframe",
+                "из"
+              ],
+              "text": "перенос тетрады и связи; физическая метрика не меняется. Matrix inverse",
+              "kind": "direct_content"
+            },
+            {
+              "line": 3168,
+              "heading": "### 6.36. Полный scalar normal: ещё одно направление наблюдателя и точное ядро",
+              "matched_terms": [
+                "coframe",
+                "из"
+              ],
+              "text": "scalar coframe basis состоит из",
+              "kind": "direct_content"
+            }
+          ]
+        },
+        {
+          "query_index": 4,
+          "query": "all 16 coframe 24 link directions at node not only null pp-wave ansatz variations",
+          "found": true,
+          "status": "found_direct_content",
+          "required_sections": [
+            "8.5"
+          ],
+          "sections_found": [
+            "6",
+            "6.10",
+            "6.12",
+            "6.13",
+            "6.15",
+            "6.30",
+            "6.34",
+            "6.46",
+            "6.47",
+            "6.49",
+            "6.82",
+            "8",
+            "8.11",
+            "8.12",
+            "8.31",
+            "8.33",
+            "8.5"
+          ],
+          "missing_sections": [],
+          "candidate_rank": 2,
+          "evidence_lines": [
+            {
+              "line": 7347,
+              "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+              "matched_terms": [
+                "16",
+                "coframe",
+                "24",
+                "link",
+                "direction",
+                "node"
+              ],
+              "text": "сохраняются все16 coframe и24 link направления на узел, а не только",
+              "kind": "direct_content"
+            },
+            {
+              "line": 304,
+              "heading": "## 6. Полный первый источник и искривлённые совместные корни",
+              "matched_terms": [
+                "16",
+                "coframe",
+                "24",
+                "link"
+              ],
+              "text": "- каждую из 16 тетрадных и 24 Lorentz-link строк в интерьере;",
+              "kind": "direct_content"
+            },
+            {
+              "line": 10731,
+              "heading": "### 8.33. Точный оставшийся Lorentz-link источник",
+              "matched_terms": [
+                "coframe",
+                "link",
+                "at",
+                "null"
+              ],
+              "text": "После (180) нельзя занулить link equations по coframe symmetry.",
+              "kind": "direct_content"
+            }
+          ]
+        },
+        {
+          "query_index": 5,
+          "query": "все 16 coframe 24 proper Lorentz directions tangent observer jets",
+          "found": true,
+          "status": "found_direct_content",
+          "required_sections": [
+            "8.5"
+          ],
+          "sections_found": [
+            "6",
+            "6.15",
+            "6.30",
+            "6.46",
+            "6.49",
+            "6.51",
+            "6.68",
+            "6.74",
+            "8",
+            "8.10",
+            "8.11",
+            "8.12",
+            "8.14",
+            "8.31",
+            "8.4",
+            "8.5",
+            "85"
+          ],
+          "missing_sections": [],
+          "candidate_rank": 4,
+          "evidence_lines": [
+            {
+              "line": 304,
+              "heading": "## 6. Полный первый источник и искривлённые совместные корни",
+              "matched_terms": [
+                "16",
+                "coframe",
+                "24",
+                "lorentz"
+              ],
+              "text": "- каждую из 16 тетрадных и 24 Lorentz-link строк в интерьере;",
+              "kind": "direct_content"
+            },
+            {
+              "line": 7347,
+              "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+              "matched_terms": [
+                "16",
+                "coframe",
+                "24",
+                "direction"
+              ],
+              "text": "сохраняются все16 coframe и24 link направления на узел, а не только",
+              "kind": "direct_content"
+            },
+            {
+              "line": 8151,
+              "heading": "### 8.11. Пространственная metric section: точное препятствие faithful ветви",
+              "matched_terms": [
+                "16",
+                "coframe",
+                "24",
+                "lorentz"
+              ],
+              "text": "всем16 coframe и24 независимым Lorentz-link columns и всем степеням r.",
+              "kind": "direct_content"
+            }
+          ]
+        }
+      ],
+      "candidate_rank": 2,
+      "query": "native raising operator inverse null leg",
+      "evidence_lines": [
+        {
+          "line": 7336,
+          "heading": "### 8.4. Перенос и тетрада восстанавливаются из самого native raising operator",
+          "matched_terms": [
+            "coframe",
+            "leg"
+          ],
+          "text": "coframe legs по (30a) ниже**, со всеми coframe/link/clock jets.",
+          "kind": "direct_content"
+        },
+        {
+          "line": 7239,
+          "heading": "### 8.4. Перенос и тетрада восстанавливаются из самого native raising operator",
+          "matched_terms": [
+            "перенос",
+            "coframe",
+            "восстанавливаются",
+            "из",
+            "самого",
+            "raising"
+          ],
+          "text": "### 8.4. Перенос и тетрада восстанавливаются из самого native raising operator",
+          "kind": "direct_content"
+        },
+        {
+          "line": 7279,
+          "heading": "### 8.4. Перенос и тетрада восстанавливаются из самого native raising operator",
+          "matched_terms": [
+            "proper",
+            "lorentz"
+          ],
+          "text": "из §8.2. CAR и proper Lorentz covariance дают",
+          "kind": "direct_content"
+        },
+        {
+          "line": 7344,
+          "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+          "matched_terms": [
+            "inverse",
+            "coframe",
+            "из",
+            "при"
+          ],
+          "text": "имеет гладкий левый обратный R из §8.4 при независимых coframe rows",
+          "kind": "direct_content"
+        },
+        {
+          "line": 7362,
+          "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+          "matched_terms": [
+            "coframe",
+            "leg"
+          ],
+          "text": "coframe legs с её собственными h-факторами. Пусть",
+          "kind": "direct_content"
+        },
+        {
+          "line": 7371,
+          "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+          "matched_terms": [
+            "перенос",
+            "coframe",
+            "из"
+          ],
+          "text": "перенос тетрады и связи; физическая метрика не меняется. Matrix inverse",
+          "kind": "direct_content"
+        },
+        {
+          "line": 7347,
+          "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+          "matched_terms": [
+            "16",
+            "coframe",
+            "24",
+            "link",
+            "direction",
+            "node"
+          ],
+          "text": "сохраняются все16 coframe и24 link направления на узел, а не только",
+          "kind": "direct_content"
+        },
+        {
+          "line": 7347,
+          "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+          "matched_terms": [
+            "16",
+            "coframe",
+            "24",
+            "direction"
+          ],
+          "text": "сохраняются все16 coframe и24 link направления на узел, а не только",
+          "kind": "direct_content"
+        },
+        {
+          "line": 7345,
+          "heading": "### 8.5. Полнота геометрического чтения и точная граница источника",
+          "matched_terms": [
+            "proper",
+            "lorentz",
+            "tangent"
+          ],
+          "text": "и proper Lorentz links. В частности `DR DΦ=I` на её полном касательном",
+          "kind": "direct_content"
+        },
+        {
+          "line": 3209,
+          "heading": "### 6.36. Полный scalar normal: ещё одно направление наблюдателя и точное ядро",
+          "matched_terms": [
+            "raising",
+            "leg"
+          ],
+          "text": "использует закреплённый original creator и все16 components.",
+          "kind": "direct_content"
+        }
+      ],
+      "citation_only_refs": [
+        {
+          "path": "A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [
+            "3",
+            "6",
+            "6.18"
+          ],
+          "pin_complete": false,
+          "context": "**Direct pinned mathematical inputs:** [selected six-plaquette Lorentz star and full independent 16+24 Euler](MEMO_A4D_STAR_DENSITY_VARIATION_PRESSURE.md); [one-global AF Book action](A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md) §§2–5; [golden-weight all-interior 40-row curved solutions](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md) §§2–5; [native five-outcome entropy/full preparation](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) §§3–6; and its **same-owned full Book-feedback** §6.18, (13at)–(13ax). The original physically selected full v8/AF history+matter price and original #216 raw \\(h^{-2}\\) refi"
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "hashes": [
+            "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+            "734e21ae6bc04ff3446ad15858936d417fdd2e55"
+          ],
+          "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+          "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+          "section_refs": [
+            "5.1"
+          ],
+          "pin_complete": true,
+          "context": "A useful cold-start reuse case is the native raising-operator inverse with a null leg: published #334 labelled-record source §§8.4-8.5, equations (26)-(31), with rational alternative §6.25 (13br1)-(13br2). Its selected source gate is satisfied at commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62. The concrete consumer is the exact AF radial coframe equivalence source §5.1, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55. At the earlier vacuum-only checkpoint, `D0.Geometry.ArchiveJuliaRaisingOperatorReadout` had an exact e",
+          "pin_status": "pinned_snapshot"
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+          "hashes": [
+            "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+            "734e21ae6bc04ff3446ad15858936d417fdd2e55"
+          ],
+          "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+          "blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+          "section_refs": [
+            "5.1"
+          ],
+          "pin_complete": true,
+          "context": "A useful cold-start reuse case is the native raising-operator inverse with a null leg: published #334 labelled-record source §§8.4-8.5, equations (26)-(31), with rational alternative §6.25 (13br1)-(13br2). Its selected source gate is satisfied at commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62. The concrete consumer is the exact AF radial coframe equivalence source §5.1, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55. At the earlier vacuum-only checkpoint, `D0.Geometry.ArchiveJuliaRaisingOperatorReadout` had an exact e",
+          "pin_status": "pinned_snapshot"
+        }
+      ]
+    },
+    "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md": {
+      "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+      "status": "found_direct_content",
+      "found": true,
+      "source_origin": "pinned_snapshot",
+      "expected_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+      "expected_blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+      "required_sections": [
+        "5.1"
+      ],
+      "sections_found": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "5.1",
+        "7"
+      ],
+      "missing_sections": [],
+      "scoped_queries": [
+        {
+          "query_index": 6,
+          "query": "AF radial coframe equivalence section 5.1 direct native Julia golden execution cubic Einstein vertex",
+          "found": true,
+          "status": "found_direct_content",
+          "required_sections": [
+            "5.1"
+          ],
+          "sections_found": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "5.1",
+            "7"
+          ],
+          "missing_sections": [],
+          "candidate_rank": 1,
+          "evidence_lines": [
+            {
+              "line": 253,
+              "heading": "### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source",
+              "matched_terms": [
+                "5.1",
+                "direct",
+                "julia",
+                "golden",
+                "execution",
+                "cubic",
+                "einstein",
+                "vertex"
+              ],
+              "text": "### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source",
+              "kind": "direct_content"
+            },
+            {
+              "line": 317,
+              "heading": "## 7. What exactly moves the whole D0⇒GR proof forward",
+              "matched_terms": [
+                "af",
+                "radial",
+                "coframe",
+                "section",
+                "golden",
+                "einstein"
+              ],
+              "text": "**A full finite, all-order nonlinear gravity law is now proved for the actually constructed golden-AF star geometry.** The proof consumes the selected Lorentz insertion, literal complete AF effects, the ORIGINAL five-outcome Book likelihood or existing full AF×scene feedback, and genuinely independent lattice coframe/link variations. Its nonlinear field equations are *exactly* the original selected finite WEIGHTED Palatini equations for EVERY fixed admissible t. The on-shell Phi-radial map is the identity; nonconstant weights still require the separate density/coframe normalization. Full 24-component Cartan yields \\(T=0\\) and the complete ten",
+              "kind": "direct_content"
+            },
+            {
+              "line": 236,
+              "heading": "## 5. Full nonlinear spin-2 bootstrap is ALREADY closed on this geometric carrier, at finite n",
+              "matched_terms": [
+                "af",
+                "radial",
+                "coframe",
+                "equivalence",
+                "direct"
+              ],
+              "text": "Consequently the **FULL coframe-plus-link Hessian**, its stationary/gauge kernel (transported through the actual tangent map), and its inertia agree with those of the original finite \\(\\star\\) theory up to this invertible field-coordinate change. A metric-only Schur matrix at *frozen original coframe* need NOT agree entrywise without transporting the operational metric readout: \\(D_U\\widetilde e\\) generally does not vanish. The vacuum on-shell metric DOES agree pointwise by (11). This is the precise nonlinear spin-2 equivalence, not a claim that a bare untransported lattice symbol is unchanged. The \\(t^2(df)^2\\) terms that appear when AF entr",
+              "kind": "direct_content"
+            }
+          ]
+        }
+      ],
+      "candidate_rank": 1,
+      "query": "AF radial coframe equivalence section 5.1 direct native Julia golden execution cubic Einstein vertex",
+      "evidence_lines": [
+        {
+          "line": 253,
+          "heading": "### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source",
+          "matched_terms": [
+            "5.1",
+            "direct",
+            "julia",
+            "golden",
+            "execution",
+            "cubic",
+            "einstein",
+            "vertex"
+          ],
+          "text": "### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source",
+          "kind": "direct_content"
+        },
+        {
+          "line": 276,
+          "heading": "### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source",
+          "matched_terms": [
+            "af",
+            "julia",
+            "golden",
+            "cubic"
+          ],
+          "text": "Combine (20b) with the **exact action equality** (5), not with an approximate curvature coefficient: on every fixed finite native operator chart the ideal graviton Hessian AND cubic native feedback response are those of the original Lorentz star in an invertible local field coordinate; the actually compiled query's first three source jets converge to that exact nonlinear relation with error controlled by (20b). This gives a concrete FULL16 all-ten spin-2 cubic construction using only the already-owned indexed native Julia/golden apparatus **under its stated addressed-access/work-return contract**. At any fixed finite lattice, a prescribed \\(\\",
+          "kind": "direct_content"
+        },
+        {
+          "line": 255,
+          "heading": "### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source",
+          "matched_terms": [
+            "coframe",
+            "julia",
+            "golden"
+          ],
+          "text": "This is a **positive operational consumer** of an already constructed native source chain, not a geometric oracle. [Actual full-CAR operator reconstruction §§8.4–8.5](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) recovers all four coframe legs and the original proper Lorentz links from the actual full16 raising/Julia entries \\(X_r=C(u_r)\\Lambda M_r\\), even at the pp-wave's NULL u-leg. The map admits a smooth left inverse on the full nondegenerate bounded window, with complete 16+24 jets and actual moving-clock/observer data. In particular, **the inserted f_x of (1) is an explicitly computable smooth function of existing Julia queries*",
+          "kind": "direct_content"
+        },
+        {
+          "line": 257,
+          "heading": "### 5.1. Direct native Julia/golden execution transfers the **cubic** Einstein vertex, not only the first source",
+          "matched_terms": [
+            "julia",
+            "golden"
+          ],
+          "text": "[Native coherent query construction §8.6](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) supplies a word realization of the required golden angle \\(\\theta_x=\\arcsin[p\\sqrt{1+t^2f_x}]-\\arcsin p\\) by finite entry-polynomial operations, real flag rotations, and addressed Julia/G/CNOT controls. It keeps the entire query/control complement, CAR16, full reference128 and paid work blank as a complete output; no intermediate postselection/tomography is used. Its published C² polynomial/Trotter approximation extends to **C³ on any fixed compact strict-interior chart**: the same rational maps, square roots and \\(\\arcsin\\) are analytic there, pol",
+          "kind": "direct_content"
+        },
+        {
+          "line": 317,
+          "heading": "## 7. What exactly moves the whole D0⇒GR proof forward",
+          "matched_terms": [
+            "af",
+            "radial",
+            "coframe",
+            "section",
+            "golden",
+            "einstein"
+          ],
+          "text": "**A full finite, all-order nonlinear gravity law is now proved for the actually constructed golden-AF star geometry.** The proof consumes the selected Lorentz insertion, literal complete AF effects, the ORIGINAL five-outcome Book likelihood or existing full AF×scene feedback, and genuinely independent lattice coframe/link variations. Its nonlinear field equations are *exactly* the original selected finite WEIGHTED Palatini equations for EVERY fixed admissible t. The on-shell Phi-radial map is the identity; nonconstant weights still require the separate density/coframe normalization. Full 24-component Cartan yields \\(T=0\\) and the complete ten",
+          "kind": "direct_content"
+        },
+        {
+          "line": 236,
+          "heading": "## 5. Full nonlinear spin-2 bootstrap is ALREADY closed on this geometric carrier, at finite n",
+          "matched_terms": [
+            "af",
+            "radial",
+            "coframe",
+            "equivalence",
+            "direct"
+          ],
+          "text": "Consequently the **FULL coframe-plus-link Hessian**, its stationary/gauge kernel (transported through the actual tangent map), and its inertia agree with those of the original finite \\(\\star\\) theory up to this invertible field-coordinate change. A metric-only Schur matrix at *frozen original coframe* need NOT agree entrywise without transporting the operational metric readout: \\(D_U\\widetilde e\\) generally does not vanish. The vacuum on-shell metric DOES agree pointwise by (11). This is the precise nonlinear spin-2 equivalence, not a claim that a bare untransported lattice symbol is unchanged. The \\(t^2(df)^2\\) terms that appear when AF entr",
+          "kind": "direct_content"
+        },
+        {
+          "line": 5,
+          "heading": "# D0 → nonlinear GR: EXACT finite golden-AF action = original Lorentz ⋆-action after an invertible native coframe dressing",
+          "matched_terms": [
+            "af",
+            "direct",
+            "golden",
+            "einstein"
+          ],
+          "text": "**Direct pinned mathematical inputs:** [selected six-plaquette Lorentz star and full independent 16+24 Euler](MEMO_A4D_STAR_DENSITY_VARIATION_PRESSURE.md); [one-global AF Book action](A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md) §§2–5; [golden-weight all-interior 40-row curved solutions](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md) §§2–5; [native five-outcome entropy/full preparation](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md) §§3–6; and its **same-owned full Book-feedback** §6.18, (13at)–(13ax). The original physically selected full v8/AF history+matter price and original #216 raw \\(h^{-2}\\) refi",
+          "kind": "direct_content"
+        },
+        {
+          "line": 251,
+          "heading": "## 5. Full nonlinear spin-2 bootstrap is ALREADY closed on this geometric carrier, at finite n",
+          "matched_terms": [
+            "af",
+            "radial",
+            "coframe",
+            "einstein"
+          ],
+          "text": "The target of [strategic §7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md) is the full native-price spin-2 Ward/Schur germ. Equations (18)–(19) **solve its all-order self-interaction algebra for the displayed AF gravity subprogram**, consuming the already proved selected \\(\\star\\) quadratic Fierz-Pauli/Einstein Schur owner. They do NOT infer that a different full128 literal programme or independent native matter has the same Hessian from matching one spectrum. On the continuum smooth chart the selected star tends to the full nonlinear Lorentz Palatini functional; its 24 spin-connection equations yield torsion zero and its tet",
+          "kind": "direct_content"
+        },
+        {
+          "line": 1,
+          "heading": "# D0 → nonlinear GR: EXACT finite golden-AF action = original Lorentz ⋆-action after an invertible native coframe dressing",
+          "matched_terms": [
+            "af",
+            "coframe",
+            "golden"
+          ],
+          "text": "# D0 → nonlinear GR: EXACT finite golden-AF action = original Lorentz ⋆-action after an invertible native coframe dressing",
+          "kind": "direct_content"
+        },
+        {
+          "line": 102,
+          "heading": "## 3. **Exact finite Palatini equations**, not just Crit-set coincidence",
+          "matched_terms": [
+            "radial",
+            "coframe",
+            "direct"
+          ],
+          "text": "There is a stronger literal vacuum statement in the original physical coframe coordinates. If ALL covered sitewise radial directions \\(Z_x\\) are admissible, (2),(3) give",
+          "kind": "direct_content"
+        }
+      ],
+      "citation_only_refs": [
+        {
+          "path": "A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [
+            "5.1"
+          ],
+          "pin_complete": false,
+          "context": "§5.1 of `A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`,",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "hashes": [
+            "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+            "734e21ae6bc04ff3446ad15858936d417fdd2e55"
+          ],
+          "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+          "blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+          "section_refs": [
+            "5.1"
+          ],
+          "pin_complete": true,
+          "context": "- Include unrepresented book assertions and published research explicitly cited by books, active registry, assembly, and selected current GR sources. Key each by exact source commit/path/section or equation. For #334, the task-pinned slice gate is now read and pinned: published commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62; read §§8.4–8.5, equations (26)–(31), and §6.25, equations (13br1)–(13br2). The owner states `DR DΦ=I` on its full tangent space and preserves all 16 coframe and 24 proper-Lorentz link directions,",
+          "pin_status": "pinned_snapshot"
+        },
+        {
+          "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md`,",
+          "pin_status": "not_followed_bounded_search"
+        }
+      ]
+    },
+    "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md": {
+      "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "status": "found_direct_content",
+      "found": true,
+      "source_origin": "workspace",
+      "expected_commit": null,
+      "expected_blob": null,
+      "required_sections": [],
+      "sections_found": [
+        "2026",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "334",
+        "4"
+      ],
+      "missing_sections": [],
+      "scoped_queries": [],
+      "candidate_rank": 13,
+      "query": "native raising operator inverse null leg",
+      "evidence_lines": [
+        {
+          "line": 205,
+          "heading": "## Scientific boundary and reuse vertical",
+          "matched_terms": [
+            "raising",
+            "inverse",
+            "null",
+            "leg"
+          ],
+          "text": "A useful cold-start reuse case is the native raising-operator inverse with a null leg: published #334 labelled-record source §§8.4-8.5, equations (26)-(31), with rational alternative §6.25 (13br1)-(13br2). Its selected source gate is satisfied at commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62. The concrete consumer is the exact AF radial coframe equivalence source §5.1, blob 734e21ae6bc04ff3446ad15858936d417fdd2e55. At the earlier vacuum-only checkpoint, `D0.Geometry.ArchiveJuliaRaisingOperatorReadout` had an exact e",
+          "kind": "direct_content"
+        },
+        {
+          "line": 1715,
+          "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
+          "matched_terms": [
+            "inverse",
+            "null",
+            "leg"
+          ],
+          "text": "with the null-leg inverse owned by published PR #334. The source is pinned at",
+          "kind": "direct_content"
+        },
+        {
+          "line": 85,
+          "heading": "### Pinned #334 raising-inverse retrieval key",
+          "matched_terms": [
+            "raising",
+            "inverse",
+            "null"
+          ],
+          "text": "- Include unrepresented book assertions and published research explicitly cited by books, active registry, assembly, and selected current GR sources. Key each by exact source commit/path/section or equation. For #334, the task-pinned slice gate is now read and pinned: published commit fe5cf335da04cac14e50407b03f98b96be17dc52, path 02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, blob 1c8d59e5533b443d9a015dc4512cfbc160ae7e62; read §§8.4–8.5, equations (26)–(31), and §6.25, equations (13br1)–(13br2). The owner states `DR DΦ=I` on its full tangent space and preserves all 16 coframe and 24 proper-Lorentz link directions,",
+          "kind": "direct_content"
+        },
+        {
+          "line": 68,
+          "heading": "### Pinned #334 raising-inverse retrieval key",
+          "matched_terms": [
+            "raising",
+            "inverse"
+          ],
+          "text": "### Pinned #334 raising-inverse retrieval key",
+          "kind": "direct_content"
+        },
+        {
+          "line": 1712,
+          "heading": "## Finite-carrier Julia null-block inverse (24 October 2026)",
+          "matched_terms": [
+            "inverse",
+            "null"
+          ],
+          "text": "## Finite-carrier Julia null-block inverse (24 October 2026)",
+          "kind": "direct_content"
+        },
+        {
+          "line": 2007,
+          "heading": "### Null-chart endpoint-map recovery (24 October 2026)",
+          "matched_terms": [
+            "inverse",
+            "null"
+          ],
+          "text": "constructor and consumes the existing finite-carrier null inverse.",
+          "kind": "direct_content"
+        },
+        {
+          "line": 374,
+          "heading": "## 24 October integrated retrieval and adapter checkpoint",
+          "matched_terms": [
+            "raising",
+            "inverse"
+          ],
+          "text": "prose impact control. For the pinned #334 raising-inverse owner, all six",
+          "kind": "direct_content"
+        },
+        {
+          "line": 4884,
+          "heading": "### Complete per-fibre kernel classification for the weighted Fourier operator (25 October 2026)",
+          "matched_terms": [
+            "inverse",
+            "null"
+          ],
+          "text": "worktree. The non-null inverse and null-kernel classification inherit the",
+          "kind": "direct_content"
+        },
+        {
+          "line": 2029,
+          "heading": "### Null-chart endpoint-map recovery (24 October 2026)",
+          "matched_terms": [
+            "inverse",
+            "null"
+          ],
+          "text": "full inverse or `D R D Φ = I`, compose the non-null chart (27), impose the",
+          "kind": "direct_content"
+        },
+        {
+          "line": 2548,
+          "heading": "### Row-action Lorentz endpoint adapter for Eq. (27) (25 October 2026)",
+          "matched_terms": [
+            "raising",
+            "null"
+          ],
+          "text": "`archiveJuliaSourceCARRaisingQuery_nonNull_recovery_of_proper_roleLorentz`",
+          "kind": "direct_content"
+        }
+      ],
+      "citation_only_refs": [
+        {
+          "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "          \"path\": \"02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md\",",
+          "pin_status": "not_followed_bounded_search"
+        }
+      ]
+    },
+    "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean": {
+      "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+      "status": "found_direct_content",
+      "found": true,
+      "source_origin": "workspace",
+      "expected_commit": null,
+      "expected_blob": null,
+      "required_sections": [],
+      "sections_found": [],
+      "missing_sections": [],
+      "scoped_queries": [],
+      "candidate_rank": 3,
+      "query": "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_properRoleLorentzPath pathwise link derivative Eq27 Eq28 Julia",
+      "evidence_lines": [
+        {
+          "line": 11,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "pathwise",
+            "link",
+            "julia"
+          ],
+          "text": "# Pathwise differential recovery for Julia endpoint links",
+          "kind": "direct_content"
+        },
+        {
+          "line": 44,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "eq27",
+            "julia"
+          ],
+          "text": "archiveJuliaSourceEq27EndpointMapReadout u (X r) x",
+          "kind": "direct_content"
+        },
+        {
+          "line": 444,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "/-- Full Fréchet derivative of the four-link Julia endpoint readout at the",
+          "kind": "direct_content"
+        },
+        {
+          "line": 393,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "link"
+          ],
+          "text": "links. -/",
+          "kind": "direct_content"
+        },
+        {
+          "line": 61,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "julia"
+          ],
+          "text": "archiveJuliaSourceLorentzForm x y)",
+          "kind": "direct_content"
+        },
+        {
+          "line": 134,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "julia"
+          ],
+          "text": "archiveJuliaProperRoleLorentzFamily",
+          "kind": "direct_content"
+        },
+        {
+          "line": 400,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "julia"
+          ],
+          "text": "(principalFrameJuliaQueryFamily F L",
+          "kind": "direct_content"
+        },
+        {
+          "line": 419,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "julia"
+          ],
+          "text": "archiveJuliaProperRoleLorentzFamily",
+          "kind": "direct_content"
+        },
+        {
+          "line": 517,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "julia"
+          ],
+          "text": "(principalFrameJuliaQueryFamily F L",
+          "kind": "direct_content"
+        },
+        {
+          "line": 121,
+          "heading": "# Pathwise differential recovery for Julia endpoint links",
+          "matched_terms": [
+            "julia"
+          ],
+          "text": "(archiveJuliaProperRoleLorentzFamily",
+          "kind": "direct_content"
+        }
+      ],
+      "citation_only_refs": [
+        {
+          "path": "A4DJuliaLinkPathDifferential.lean",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`A4DJuliaLinkPathDifferential.lean` second; the compiled declaration inventory",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "A4DJuliaLinkPathDifferential.lean",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`A4DJuliaLinkPathDifferential.lean` second; the compiled declaration inventory",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "          \"path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\",",
+          "pin_status": "not_followed_bounded_search"
+        }
+      ]
+    },
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json": {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json",
+      "status": "found_direct_content",
+      "found": true,
+      "source_origin": "workspace",
+      "expected_commit": null,
+      "expected_blob": null,
+      "required_sections": [],
+      "sections_found": [],
+      "missing_sections": [],
+      "scoped_queries": [],
+      "candidate_rank": 7,
+      "query": "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_properRoleLorentzPath pathwise link derivative Eq27 Eq28 Julia",
+      "evidence_lines": [
+        {
+          "line": 84,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 222,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 499,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 91,
+          "heading": "",
+          "matched_terms": [
+            "eq27",
+            "julia"
+          ],
+          "text": "\"D0.Geometry.archiveJuliaSourceEq27EndpointMapReadout\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 235,
+          "heading": "",
+          "matched_terms": [
+            "eq27",
+            "julia"
+          ],
+          "text": "\"D0.Geometry.archiveJuliaSourceEq27EndpointMapReadout\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 130,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 383,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 711,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 87,
+          "heading": "",
+          "matched_terms": [
+            "julia"
+          ],
+          "text": "\"D0.Geometry.ArchiveJuliaQueryOperator\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 119,
+          "heading": "",
+          "matched_terms": [
+            "julia"
+          ],
+          "text": "\"D0.Geometry.ArchiveJuliaQueryOperator\",",
+          "kind": "direct_content"
+        }
+      ],
+      "citation_only_refs": [
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "      \"path\": \"02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_endpoint_link_path_derivative_declarations_2026-10-26.json\",",
+          "pin_status": "not_followed_bounded_search"
+        }
+      ]
+    },
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json": {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
+      "status": "found_direct_content",
+      "found": true,
+      "source_origin": "workspace",
+      "expected_commit": null,
+      "expected_blob": null,
+      "required_sections": [],
+      "sections_found": [],
+      "missing_sections": [],
+      "scoped_queries": [],
+      "candidate_rank": 8,
+      "query": "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_properRoleLorentzPath pathwise link derivative Eq27 Eq28 Julia",
+      "evidence_lines": [
+        {
+          "line": 85,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 223,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 500,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 828,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 92,
+          "heading": "",
+          "matched_terms": [
+            "eq27",
+            "julia"
+          ],
+          "text": "\"D0.Geometry.archiveJuliaSourceEq27EndpointMapReadout\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 236,
+          "heading": "",
+          "matched_terms": [
+            "eq27",
+            "julia"
+          ],
+          "text": "\"D0.Geometry.archiveJuliaSourceEq27EndpointMapReadout\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 131,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 384,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 712,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 1029,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        }
+      ],
+      "citation_only_refs": [
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_link_path_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        }
+      ]
+    },
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json": {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
+      "status": "found_direct_content",
+      "found": true,
+      "source_origin": "workspace",
+      "expected_commit": null,
+      "expected_blob": null,
+      "required_sections": [],
+      "sections_found": [],
+      "missing_sections": [],
+      "scoped_queries": [],
+      "candidate_rank": 10,
+      "query": "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_properRoleLorentzPath pathwise link derivative Eq27 Eq28 Julia",
+      "evidence_lines": [
+        {
+          "line": 86,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 224,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 501,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 805,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 1076,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 93,
+          "heading": "",
+          "matched_terms": [
+            "eq27",
+            "julia"
+          ],
+          "text": "\"D0.Geometry.archiveJuliaSourceEq27EndpointMapReadout\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 237,
+          "heading": "",
+          "matched_terms": [
+            "eq27",
+            "julia"
+          ],
+          "text": "\"D0.Geometry.archiveJuliaSourceEq27EndpointMapReadout\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 132,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 385,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 713,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"source_path\": \"03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean\"",
+          "kind": "direct_content"
+        }
+      ],
+      "citation_only_refs": [
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_tangent_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        }
+      ]
+    },
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json": {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
+      "status": "found_direct_content",
+      "found": true,
+      "source_origin": "workspace",
+      "expected_commit": null,
+      "expected_blob": null,
+      "required_sections": [],
+      "sections_found": [],
+      "missing_sections": [],
+      "scoped_queries": [],
+      "candidate_rank": 9,
+      "query": "principalFrameJuliaEndpointChartReadout_hasDerivAt_of_properRoleLorentzPath pathwise link derivative Eq27 Eq28 Julia",
+      "evidence_lines": [
+        {
+          "line": 11,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"D0.Geometry.A4DJuliaLinkPathDifferential\"",
+          "kind": "direct_content"
+        },
+        {
+          "line": 49,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 136,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 256,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 340,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 413,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 519,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 666,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 1071,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 1349,
+          "heading": "",
+          "matched_terms": [
+            "link",
+            "julia"
+          ],
+          "text": "\"module\": \"D0.Geometry.A4DJuliaLinkPathDifferential\",",
+          "kind": "direct_content"
+        }
+      ],
+      "citation_only_refs": [
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        },
+        {
+          "path": "sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
+          "hashes": [],
+          "commit": null,
+          "blob": null,
+          "section_refs": [],
+          "pin_complete": false,
+          "context": "`sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json`.",
+          "pin_status": "not_followed_bounded_search"
+        }
+      ]
+    }
+  },
+  "declaration_inventory": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_joint_coframe_lorentz_frechet_derivative_declarations_2026-10-26.json",
+    "sha256": "bece356e44cb92045e217872298ac9ca2dc157f524c42e7b09e9c9ea69caed91",
+    "snapshot_commit": "40f086fa011eafd91b6ed2e2ed6c24ba7aaa2ee8",
+    "public_import_root": "D0.All",
+    "worktree_dirty": false,
+    "lean_source_digest": "afbf08818c7bd5c09f9926365cb4ce7e27ea636fee825d96b9898ab6157932a4",
+    "collector_sha256": "09641471b75f6769ccd7ad30f29417b05332e260b220904568a85d89b7c57415",
+    "declaration_names": [
+      "D0.Geometry.RoleLorentzTangentParameters",
+      "D0.Geometry.principalFrameJuliaEndpointChartReadoutAlongLorentzTangent",
+      "D0.Geometry.principalFrameJuliaEndpointChartReadoutAlongLorentzTangent.eq_1",
+      "D0.Geometry.principalFrameJuliaEndpointChartReadoutAlongLorentzTangent_hasFDerivAt",
+      "D0.Geometry.principalFrameJuliaEndpointChartReadout_hasDerivAt_of_jointCoframeAndLorentzTangent",
+      "D0.Geometry.roleLorentzTangentEndpointFDeriv",
+      "D0.Geometry.roleLorentzTangentEndpointFDeriv.eq_1",
+      "D0.Geometry.roleLorentzTangentEndpointFDeriv_apply",
+      "D0.Geometry.roleLorentzTangentSubmodule"
+    ]
+  },
+  "full_output": {
+    "sha256": "2a14dddfef5ea62596e7a7a00de8cbc9843f1a07e9ce369182fe0579ce1b7573",
+    "bytes": 8542419,
+    "stored": false
+  },
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true,
+  "scope_review": "Owner all-jet null-leg inverse and the concrete consumer are distinct. The compiled pathwise derivative composes its Eq. (27)/(28) endpoint readout with proper-Lorentz link paths on the finite CAR carrier. Its joint-path specialization allows coframe, column data and normalized covector to vary pointwise; exact recovery removes the need to assume differentiability of those paths. The tangent corollary integrates each rolewise Lorentz tangent by an exponential path, proves det = 1 along that path, and gives the endpoint derivative at t = 0. The Fréchet specialization proves the full derivative on the product of the four role-indexed Lorentz tangent subspaces, with its action exposed role by role. It does not prove that each tangent subspace has dimension six, construct a full six-coordinate chart, connect every determinant-one link to the identity, establish physical price selection, or close GR."
+}

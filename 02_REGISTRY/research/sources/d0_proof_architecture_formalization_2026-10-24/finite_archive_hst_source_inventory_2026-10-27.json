@@ -1,0 +1,98 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "dc5da7cad8a545f40fd8318fb44cdbb3fe4037e1",
+  "worktree_dirty": true,
+  "claim_registry_sha256": "84e38794e87ff52377424c0a0f4d8d59c0fdcbab2fad17bf24c656170c76baee",
+  "lean_source_digest": "3c949d1896d18aa51af7d809d7543cf7bb2cfdad4d2ff850979ad0f53992ef36",
+  "collector_sha256": "2daef4969b731f89870e4b85530ba92c89113a4767cefcfc950c9ae278a876a6",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "claim_id": "D0-HST-ARCHIVE-001",
+    "mappings": [
+      {
+        "claim_id": "D0-HST-ARCHIVE-001",
+        "module_locator": "D0.Probability.FiniteArchiveHSTInput",
+        "theorem_atom": "archive_stage_finite_hst_source_facts",
+        "candidate_names": [
+          "D0.Probability.FiniteArchiveHSTInput.archive_stage_finite_hst_source_facts",
+          "D0.Probability.archive_stage_finite_hst_source_facts",
+          "D0.archive_stage_finite_hst_source_facts"
+        ]
+      }
+    ]
+  },
+  "declarations": [
+    {
+      "exists": false,
+      "name": "D0.Probability.FiniteArchiveHSTInput.archive_stage_finite_hst_source_facts",
+      "source_path": null
+    },
+    {
+      "exists": false,
+      "name": "D0.Probability.archive_stage_finite_hst_source_facts",
+      "source_path": null
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "D0.FiniteArchiveHSTSourceFacts n",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 61,
+            "line": 22
+          },
+          "start": {
+            "column": 0,
+            "line": 13
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 45,
+            "line": 14
+          },
+          "start": {
+            "column": 8,
+            "line": 14
+          }
+        }
+      },
+      "elaborated_type": "∀ (n : ℕ), D0.FiniteArchiveHSTSourceFacts n",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Probability.FiniteArchiveHSTInput",
+      "name": "D0.archive_stage_finite_hst_source_facts",
+      "proof_dependencies": [
+        "D0.FiniteArchiveHSTSourceAdmissibility",
+        "D0.FiniteArchiveHSTSourceAdmissibility.centered",
+        "D0.FiniteArchiveHSTSourceAdmissibility.covarianceSlack",
+        "D0.FiniteArchiveHSTSourceAdmissibility.finiteSupport",
+        "D0.FiniteArchiveHSTSourceAdmissibility.notHyperplaneSupported",
+        "D0.FiniteArchiveHSTSourceFacts.mk",
+        "D0.finiteArchive_hst_source_admissibility",
+        "Nat",
+        "Nonempty.intro"
+      ],
+      "type_dependencies": [
+        "D0.FiniteArchiveHSTSourceFacts",
+        "Nat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Probability/FiniteArchiveHSTInput.lean"
+    }
+  ]
+}

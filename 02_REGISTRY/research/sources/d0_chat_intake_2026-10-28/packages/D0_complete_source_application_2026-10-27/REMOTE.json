@@ -1,0 +1,12 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "pull_request": 334,
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "checkpoint": "28f2e2b0d6f96e073f20a8190f53c615a2a4a8eb",
+  "proof": "02_REGISTRY/research/A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md",
+  "checker": "02_REGISTRY/research/certificates/a4d_complete_book_source_application_check.py",
+  "receipt": "02_REGISTRY/research/certificates/a4d_complete_book_source_application_result_2026_10_27.json",
+  "verified_checker_git_blob": "b1892884e8d473ebb3e2b7d10ed0995334588cd8",
+  "remote_proof_blob": "12fcc996c0f53122802cd6b30b4e156b5c1a2c66",
+  "note": "The local expanded proof and remote proof have the same mathematics; the remote file adds repository paths and validation hashes."
+}

@@ -1,0 +1,181 @@
+{
+  "key": "D0.Geometry.archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective",
+  "claim_mapping": {
+    "full_name": "D0.Geometry.archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective"
+  },
+  "elaborated_declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "_private.D0.Geometry.ArchiveJuliaRaisingOperatorReadout.0.D0.Geometry.archiveCreatorPermSign._native.native_decide.ax_1_1",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "u",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "M",
+          "type": "D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hIsoM",
+          "type": "∀ (x y : D0.Geometry.RoleSpace),\n  (D0.Geometry.archiveJuliaSourceLorentzForm (M x)) (M y) = (D0.Geometry.archiveJuliaSourceLorentzForm x) y"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hIsoN",
+          "type": "∀ (x y : D0.Geometry.RoleSpace),\n  (D0.Geometry.archiveJuliaSourceLorentzForm (N x)) (N y) = (D0.Geometry.archiveJuliaSourceLorentzForm x) y"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hDetM",
+          "type": "LinearMap.det ↑M = 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hDetN",
+          "type": "LinearMap.det ↑N = 1"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hq",
+          "type": "(D0.Geometry.archiveJuliaSourceLorentzForm u) u = 0 → False"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hQuery",
+          "type": "D0.Geometry.archiveJuliaCARRaisingQuery u M = D0.Geometry.archiveJuliaCARRaisingQuery u N"
+        }
+      ],
+      "conclusion_whnf": "M = N",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 43,
+            "line": 282
+          },
+          "start": {
+            "column": 0,
+            "line": 247
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 72,
+            "line": 250
+          },
+          "start": {
+            "column": 8,
+            "line": 250
+          }
+        }
+      },
+      "elaborated_type": "∀ (u : D0.Geometry.RoleSpace) (M N : D0.Geometry.RoleSpace ≃ₗ[ℝ] D0.Geometry.RoleSpace),\n  (∀ (x y : D0.Geometry.RoleSpace),\n      (D0.Geometry.archiveJuliaSourceLorentzForm (M x)) (M y) = (D0.Geometry.archiveJuliaSourceLorentzForm x) y) →\n    (∀ (x y : D0.Geometry.RoleSpace),\n        (D0.Geometry.archiveJuliaSourceLorentzForm (N x)) (N y) = (D0.Geometry.archiveJuliaSourceLorentzForm x) y) →\n      LinearMap.det ↑M = 1 →\n        LinearMap.det ↑N = 1 →\n          (D0.Geometry.archiveJuliaSourceLorentzForm u) u ≠ 0 →\n            D0.Geometry.archiveJuliaCARRaisingQuery u M = D0.Geometry.archiveJuliaCARRaisingQuery u N → M = N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.A4DJuliaRecoveryComposition",
+      "name": "D0.Geometry.archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Algebra.id",
+        "Algebra.to_smulCommClass",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveJuliaQueryOperator",
+        "D0.Geometry.ArchiveRoleBilinear",
+        "D0.Geometry.ArchiveRoleBilinear._proof_1",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveExteriorFrameLiftRoleReadout",
+        "D0.Geometry.archiveJuliaCARRaisingQuery",
+        "D0.Geometry.archiveJuliaLorentzGamma",
+        "D0.Geometry.archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_recovery_of_det_one",
+        "D0.Geometry.archiveJuliaSourceLorentzForm",
+        "D0.Geometry.archiveJuliaSourceVolumeEquiv",
+        "D0.Role",
+        "DFinsupp.instEquivLikeLinearEquiv",
+        "DFunLike.coe",
+        "DistribMulAction.toMulAction",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.symm",
+        "EquivLike.toFunLike",
+        "Function.smulCommClass",
+        "HSMul.hSMul",
+        "HSub.hSub",
+        "Inv.inv",
+        {
+          "_omitted_items": 63
+        }
+      ],
+      "type_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "CommRing.toCommSemiring",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRoleBilinear",
+        "D0.Geometry.ArchiveRoleBilinear._proof_1",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaCARRaisingQuery",
+        "D0.Geometry.archiveJuliaSourceLorentzForm",
+        "D0.Role",
+        "DFinsupp.instEquivLikeLinearEquiv",
+        "DFunLike.coe",
+        "Eq",
+        "EquivLike.toFunLike",
+        "LinearEquiv",
+        "LinearEquiv.toLinearMap",
+        "LinearMap",
+        "LinearMap.addCommMonoid",
+        "LinearMap.det",
+        "LinearMap.instFunLike",
+        "LinearMap.module",
+        "Module.End.instSemiring",
+        "MonoidHom",
+        "MonoidHom.instFunLike",
+        "MulOneClass.toMulOne",
+        "MulZeroOneClass.toMulOneClass",
+        "Ne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommGroup",
+        "Pi.addCommMonoid",
+        {
+          "_omitted_items": 13
+        }
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean"
+    }
+  ],
+  "collector_sha256": "ff6bdfb6ed9f13e5d7857c0a8c0c2f4f56fb4d7c5a5b37367f13fcf2ff7f0a9a",
+  "lean_source_digest": "0ed7f3982d6a4ae4a1000c0c32a4f4258e6a225605239c58c0e1df2bbbd6afde",
+  "snapshot_commit": "f04dba0ce54b9dd98929bc77ece06d71b117149f",
+  "public_import_root": "D0.All",
+  "worktree_dirty": true
+}

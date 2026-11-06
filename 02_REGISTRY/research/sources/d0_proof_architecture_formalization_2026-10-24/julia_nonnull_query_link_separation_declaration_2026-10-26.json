@@ -1,0 +1,112 @@
+{
+  "key": "D0.Geometry.principalFrameJuliaNonNullQuery_separates_ABSignFlip_links",
+  "claim_mapping": {
+    "full_name": "D0.Geometry.principalFrameJuliaNonNullQuery_separates_ABSignFlip_links"
+  },
+  "elaborated_declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "_private.D0.Geometry.ArchiveJuliaRaisingOperatorReadout.0.D0.Geometry.archiveCreatorPermSign._native.native_decide.ax_1_1",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.archiveJuliaCARRaisingQuery (D0.Geometry.archiveRoleBasis D0.A) (LinearEquiv.refl ℝ D0.Geometry.RoleSpace) =\n    D0.Geometry.archiveJuliaCARRaisingQuery (D0.Geometry.archiveRoleBasis D0.A)\n      D0.Geometry.archiveJuliaABSignFlipEquiv →\n  False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 55,
+            "line": 377
+          },
+          "start": {
+            "column": 0,
+            "line": 338
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 66,
+            "line": 342
+          },
+          "start": {
+            "column": 8,
+            "line": 342
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.archiveJuliaCARRaisingQuery (D0.Geometry.archiveRoleBasis D0.A) (LinearEquiv.refl ℝ D0.Geometry.RoleSpace) ≠\n  D0.Geometry.archiveJuliaCARRaisingQuery (D0.Geometry.archiveRoleBasis D0.A) D0.Geometry.archiveJuliaABSignFlipEquiv",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.A4DJuliaRecoveryComposition",
+      "name": "D0.Geometry.principalFrameJuliaNonNullQuery_separates_ABSignFlip_links",
+      "proof_dependencies": [
+        "AddCommGroup.toAddCommMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toCommSemiring",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.A",
+        "D0.A._proof_1",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRoleBilinear",
+        "D0.Geometry.ArchiveRoleBilinear._proof_1",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaABSignFlipEquiv",
+        "D0.Geometry.archiveJuliaABSignFlipEquiv_ne_refl",
+        "D0.Geometry.archiveJuliaABSignFlip_det_one",
+        "D0.Geometry.archiveJuliaABSignFlip_isRoleLorentz",
+        "D0.Geometry.archiveJuliaCARRaisingQuery",
+        "D0.Geometry.archiveJuliaProperRoleLorentzEquiv",
+        "D0.Geometry.archiveJuliaProperRoleLorentzEquiv_apply",
+        "D0.Geometry.archiveJuliaProperRoleLorentzEquiv_det_one",
+        "D0.Geometry.archiveJuliaProperRoleLorentzEquiv_form_isometry",
+        "D0.Geometry.archiveJuliaSourceCARRaisingQuery_nonNull_endpoint_map_injective",
+        "D0.Geometry.archiveJuliaSourceLorentzForm",
+        "D0.Geometry.archiveJuliaSourceLorentzForm_basis_basis",
+        "D0.Geometry.archiveJuliaSourceLorentzSign",
+        "D0.Geometry.archiveRoleBasis",
+        "D0.Role",
+        "DFinsupp.instEquivLikeLinearEquiv",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mp",
+        {
+          "_omitted_items": 78
+        }
+      ],
+      "type_dependencies": [
+        "D0.A",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.RoleSpace",
+        "D0.Geometry.archiveJuliaABSignFlipEquiv",
+        "D0.Geometry.archiveJuliaCARRaisingQuery",
+        "D0.Geometry.archiveRoleBasis",
+        "D0.Role",
+        "DFunLike.coe",
+        "LinearEquiv.refl",
+        "LinearMap",
+        "Module.Basis",
+        "Module.Basis.instFunLike",
+        "Ne",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/A4DJuliaRecoveryComposition.lean"
+    }
+  ],
+  "collector_sha256": "e31751212feda011ef3009869f7b2f0590107f47a85895fb99c984799e1eba24",
+  "lean_source_digest": "0ed7f3982d6a4ae4a1000c0c32a4f4258e6a225605239c58c0e1df2bbbd6afde",
+  "snapshot_commit": "f04dba0ce54b9dd98929bc77ece06d71b117149f",
+  "public_import_root": "D0.All",
+  "worktree_dirty": true
+}

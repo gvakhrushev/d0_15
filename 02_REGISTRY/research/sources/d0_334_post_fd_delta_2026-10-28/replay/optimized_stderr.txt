@@ -1,0 +1,60 @@
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:155: RuntimeWarning: divide by zero encountered in matmul
+  C=E.conj().T@U@E
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:155: RuntimeWarning: overflow encountered in matmul
+  C=E.conj().T@U@E
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:155: RuntimeWarning: invalid value encountered in matmul
+  C=E.conj().T@U@E
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:161: RuntimeWarning: divide by zero encountered in matmul
+  near(E0.conj().T@Rt.conj().T@U@Rt@E0,C,'fixed-cut complete programme echo is same compression')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:161: RuntimeWarning: overflow encountered in matmul
+  near(E0.conj().T@Rt.conj().T@U@Rt@E0,C,'fixed-cut complete programme echo is same compression')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:161: RuntimeWarning: invalid value encountered in matmul
+  near(E0.conj().T@Rt.conj().T@U@Rt@E0,C,'fixed-cut complete programme echo is same compression')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:162: RuntimeWarning: divide by zero encountered in matmul
+  near(E0.conj().T@U@Rt@E0,math.cos(a)*c*np.eye(8),'one-sided preparation is not same programme echo')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:162: RuntimeWarning: overflow encountered in matmul
+  near(E0.conj().T@U@Rt@E0,math.cos(a)*c*np.eye(8),'one-sided preparation is not same programme echo')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:162: RuntimeWarning: invalid value encountered in matmul
+  near(E0.conj().T@U@Rt@E0,math.cos(a)*c*np.eye(8),'one-sided preparation is not same programme echo')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:163: RuntimeWarning: divide by zero encountered in matmul
+  P=E@E.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:163: RuntimeWarning: overflow encountered in matmul
+  P=E@E.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:163: RuntimeWarning: invalid value encountered in matmul
+  P=E@E.conj().T
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:164: RuntimeWarning: divide by zero encountered in matmul
+  F=P@U.conj().T@(np.eye(64)-P)@U@P
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:164: RuntimeWarning: overflow encountered in matmul
+  F=P@U.conj().T@(np.eye(64)-P)@U@P
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:164: RuntimeWarning: invalid value encountered in matmul
+  F=P@U.conj().T@(np.eye(64)-P)@U@P
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:174: RuntimeWarning: divide by zero encountered in matmul
+  dE=H@E0
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:174: RuntimeWarning: overflow encountered in matmul
+  dE=H@E0
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:174: RuntimeWarning: invalid value encountered in matmul
+  dE=H@E0
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:175: RuntimeWarning: divide by zero encountered in matmul
+  dC=dE.conj().T@U@E0+E0.conj().T@U@dE
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:175: RuntimeWarning: overflow encountered in matmul
+  dC=dE.conj().T@U@E0+E0.conj().T@U@dE
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:175: RuntimeWarning: invalid value encountered in matmul
+  dC=dE.conj().T@U@E0+E0.conj().T@U@dE
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:177: RuntimeWarning: divide by zero encountered in matmul
+  near(E0.conj().T@H@U@E0,np.zeros((8,8)),'off-code endpoint fault insertion')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:177: RuntimeWarning: overflow encountered in matmul
+  near(E0.conj().T@H@U@E0,np.zeros((8,8)),'off-code endpoint fault insertion')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:177: RuntimeWarning: invalid value encountered in matmul
+  near(E0.conj().T@H@U@E0,np.zeros((8,8)),'off-code endpoint fault insertion')
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:180: RuntimeWarning: divide by zero encountered in matmul
+  dU=la.block_diag(L@W[0]-W[0]@L,np.zeros((32,32)))
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:180: RuntimeWarning: overflow encountered in matmul
+  dU=la.block_diag(L@W[0]-W[0]@L,np.zeros((32,32)))
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:180: RuntimeWarning: invalid value encountered in matmul
+  dU=la.block_diag(L@W[0]-W[0]@L,np.zeros((32,32)))
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:181: RuntimeWarning: divide by zero encountered in matmul
+  dC=E0.conj().T@dU@E0
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:181: RuntimeWarning: overflow encountered in matmul
+  dC=E0.conj().T@dU@E0
+/Users/grigorijvahrusev/.codex/worktrees/d0-proof-architecture-followup/d0-main-assembly-audit/02_REGISTRY/research/sources/d0_334_post_fd_delta_2026-10-28/upstream/02_REGISTRY/research/sources/d0_internal_program_source_2026-10-28/check_program_source.py:181: RuntimeWarning: invalid value encountered in matmul
+  dC=E0.conj().T@dU@E0

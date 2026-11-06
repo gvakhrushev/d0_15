@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/13f21d67e310/d0_15/02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_cut_boundary.py"
+      ],
+      "mode": "ordinary",
+      "script": "check_cut_boundary.py",
+      "script_sha256": "bce3a4e337fe8315bcc5d6591e82f0804e55c2eab96cd77311c1a2ce612dfe08",
+      "seconds": 0.145242,
+      "status": "PASS",
+      "stdout_sha256": "706df3c0b05dafb5ed005da70d2c9f3fc317a9fe4fed8f7a6a59e1809acba811"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/scratch/13f21d67e310/d0_15/02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_cut_boundary.py"
+      ],
+      "mode": "optimized",
+      "script": "check_cut_boundary.py",
+      "script_sha256": "bce3a4e337fe8315bcc5d6591e82f0804e55c2eab96cd77311c1a2ce612dfe08",
+      "seconds": 0.317309,
+      "status": "PASS",
+      "stdout_sha256": "706df3c0b05dafb5ed005da70d2c9f3fc317a9fe4fed8f7a6a59e1809acba811"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/13f21d67e310/d0_15/02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_full_boundary_source.py"
+      ],
+      "mode": "ordinary",
+      "script": "check_full_boundary_source.py",
+      "script_sha256": "54c6b0e1df17ea95fc6d850c1dc38666624254a662c5bbcec6b29e73d81e8602",
+      "seconds": 0.0854,
+      "status": "PASS",
+      "stdout_sha256": "229068ed441f21099349fd2ec0fb586d6c69d7f0192f637ad9a384597202df49"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/scratch/13f21d67e310/d0_15/02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_full_boundary_source.py"
+      ],
+      "mode": "optimized",
+      "script": "check_full_boundary_source.py",
+      "script_sha256": "54c6b0e1df17ea95fc6d850c1dc38666624254a662c5bbcec6b29e73d81e8602",
+      "seconds": 0.321189,
+      "status": "PASS",
+      "stdout_sha256": "229068ed441f21099349fd2ec0fb586d6c69d7f0192f637ad9a384597202df49"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/13f21d67e310/d0_15/02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_canonical_rigidity.py"
+      ],
+      "mode": "ordinary",
+      "script": "check_canonical_rigidity.py",
+      "script_sha256": "da8425efc34c4aa8d1c4381da0845034ef3d054ee9fe65c46815b10a35aad2cd",
+      "seconds": 0.526296,
+      "status": "PASS_EXACT_CANONICAL_AND_SCALAR_RIGIDITY_CONTROLS",
+      "stdout_sha256": "911f80cd5a1e06592ac4a24b98f281ff937ab6a4f0a287c254875a75f4a386e6"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-O",
+        "/workspace/scratch/13f21d67e310/d0_15/02_REGISTRY/research/sources/d0_native_boundary_rigidity_2026-10-28/check_canonical_rigidity.py"
+      ],
+      "mode": "optimized",
+      "script": "check_canonical_rigidity.py",
+      "script_sha256": "da8425efc34c4aa8d1c4381da0845034ef3d054ee9fe65c46815b10a35aad2cd",
+      "seconds": 1.799264,
+      "status": "PASS_EXACT_CANONICAL_AND_SCALAR_RIGIDITY_CONTROLS",
+      "stdout_sha256": "911f80cd5a1e06592ac4a24b98f281ff937ab6a4f0a287c254875a75f4a386e6"
+    }
+  ],
+  "environment": {
+    "interpreter": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "numpy": "2.3.5",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "sympy": "1.14.0"
+  },
+  "iteration_note": "The first integrated scalar checker required exact rational cancellation instead of expanded-form equality; final checks use SymPy cancel, no numerical or weaker tolerance substitution.",
+  "scope": "new bounded matrix/symbolic controls only; original full42, native HDA and Lean not replayed",
+  "sympy_location_used": "/workspace/scratch/6807dc385465/review_deps"
+}

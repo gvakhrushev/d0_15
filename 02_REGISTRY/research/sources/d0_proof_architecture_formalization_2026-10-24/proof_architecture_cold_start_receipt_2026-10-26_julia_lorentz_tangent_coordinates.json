@@ -1,0 +1,53 @@
+{
+  "schema": "d0-proof-architecture-cold-start-receipt-v1",
+  "snapshot_commit": "bc96fe661655c6551367ffcc84b9e17852fd58fb",
+  "worktree_dirty": false,
+  "case_id": "labelled-native-raising-inverse",
+  "case_queries": 16,
+  "required_sources_found": 11,
+  "required_sources_total": 11,
+  "query": "roleLorentzTangentParametersEquivCoordinates roleLorentzTangentEndpointFDerivInCoordinates_apply explicit RolePair coordinates Julia endpoint derivative",
+  "top_candidates": [
+    "03_FORMALIZATION/D0/Geometry/A4DJuliaLinkPathDifferential.lean",
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinates_declarations_2026-10-26.json",
+    "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+    "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+    "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+    "03_FORMALIZATION/D0/Geometry/ArchiveJuliaRaisingOperatorReadout.lean",
+    "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/assembly_result_declaration_crosswalk.json",
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/native_weighted_dirac_fourier_cold_start_2026-10-25.json",
+    "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_receipt_2026-10-26_julia_eq26_endpoint_contrast.json",
+    "02_REGISTRY/gr_assembly/SYNTHESIS.md",
+    "02_REGISTRY/gr_assembly/applications.json",
+    "02_REGISTRY/gr_assembly/contract.json",
+    "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/pinned_inputs/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+    "02_REGISTRY/gr_assembly/sources/d0_full128_order_memory_2026-10-19/result.md",
+    "02_REGISTRY/research/A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md",
+    "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md",
+    "02_REGISTRY/research/A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md"
+  ],
+  "summary": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/proof_architecture_cold_start_summary_2026-10-26_lorentz_tangent_coordinates.json",
+    "sha256": "4ee3366865a87ec35b0a689b83c869f98587fb7acf5a201d83301a963eaa2607"
+  },
+  "lean_inventory": {
+    "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/julia_lorentz_tangent_coordinates_declarations_2026-10-26.json",
+    "sha256": "bb8b8c7957e2950daf633cb7acdbe6f7cefa36b5438f77f6bc3ac030e5bce593",
+    "snapshot_commit": "52b99b3ad19176525ef6ef4f79a371c4af6a8ea6",
+    "lean_source_digest": "a6e637439c822b8ce50d1e997a98f8b9fa376ee174f98daeccc4b7fef8eff570"
+  },
+  "full_output": {
+    "sha256": "0ee3d1882c434013ebb14233972ee3239d197b67eae9ab822b1fda843041ea1a",
+    "bytes": 8727404,
+    "stored": false
+  },
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true
+}

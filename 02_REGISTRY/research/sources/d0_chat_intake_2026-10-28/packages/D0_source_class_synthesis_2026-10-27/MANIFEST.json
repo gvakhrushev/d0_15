@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-27",
+  "repository": "gvakhrushev/d0_15",
+  "existing_research_pr": 334,
+  "read_remote_head": "d42fd03b06522ce6e5eadc3fd51339e0b82274e6",
+  "remote_changes_made_in_this_pass": false,
+  "input_archives": {
+    "D0_final_selection_check_2026-10-27.zip": {
+      "sha256": "fc1af5e302651409d28f1cdc1d038a1699bd4f5561da00352829503cb321a1c6",
+      "bytes": 20256
+    },
+    "D0_internal_clock_bridge_2026-10-27.zip": {
+      "sha256": "2666fef5c54b3cb78ddb6a049f9646c52342cd9bb9a3dcec5aabaa43ef86d031",
+      "bytes": 36426
+    },
+    "D0_density_and_full_price_bridge_2026-10-27.zip": {
+      "sha256": "736e5e59203588177a6a9e8106074851ecc495a22c19236b22dc66561e506b03",
+      "bytes": 17932
+    }
+  },
+  "pinned_repository_sources": [
+    "02_REGISTRY/research/D0_GR_CLOSURE_CONTRACT_RU.md",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md",
+    "02_REGISTRY/research/A4D_NATIVE_CLOCK_FULL_PRICE_COMPILATION_AND_FINITE_TEST_RECOVERY_2026_10_27.md",
+    "02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md"
+  ],
+  "executed_commands": [
+    "python check_source_class.py > result.json",
+    "python -O check_source_class.py > result_optimized.json"
+  ],
+  "normal_optimized_outputs_byte_identical": true,
+  "remote_or_large_native_circuit_execution_claimed": false,
+  "GR_closed": false,
+  "files": {
+    "PROOF_RU.md": {
+      "bytes": 32911,
+      "sha256": "738beef0c97e6fcdaca611be5f46bfbc15ac7908e271f595e66cfdfb219bca20"
+    },
+    "README_RU.md": {
+      "bytes": 2689,
+      "sha256": "4939d734285a892c5197161fae184afb2ed14a8b712ace3b0d34e01d3a6467f6"
+    },
+    "check_source_class.py": {
+      "bytes": 17365,
+      "sha256": "f23999e1e9119cb2e5782023c4107a46e522fb97bd42e57790bf62cc67ae111a"
+    },
+    "requirements.txt": {
+      "bytes": 28,
+      "sha256": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94"
+    },
+    "result.json": {
+      "bytes": 5015,
+      "sha256": "84166d83bf11e601e586a3774853378cd769978833a15f1dcd4637525a1cab96"
+    },
+    "result_optimized.json": {
+      "bytes": 5015,
+      "sha256": "84166d83bf11e601e586a3774853378cd769978833a15f1dcd4637525a1cab96"
+    },
+    "thresholds.json": {
+      "bytes": 180587,
+      "sha256": "de6c09bbecdc8f07827876f6b49e2be7a13001041fc8b38264f45235bb119a94"
+    }
+  }
+}

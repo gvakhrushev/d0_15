@@ -1,0 +1,115 @@
+{
+  "artifacts": {
+    "PROOF_RU.md": {
+      "bytes": 6196,
+      "sha256": "9ede28c6c21c690e3c0eb7b25225df8a9b89484e32490b75f02ec628d52ae189"
+    },
+    "check_guard_cotangent_retraction.py": {
+      "bytes": 15320,
+      "sha256": "9ba7a32f29633d2c173ef005198340653aeb5fa3b9ff68cae80bf42ef70b3d45"
+    },
+    "check_same_use_record_guard.py": {
+      "bytes": 13896,
+      "sha256": "e3ac0eb35ec9c4043cf51485f36d3145be3f9be988e28d38330c510599906fc3"
+    },
+    "expected_receipt_7dw.json": {
+      "bytes": 7982,
+      "sha256": "5c183ebfa85ab0550dd5ae3caefaeb38281e5a40d45c1d8ec0e2343f6c49330c"
+    },
+    "expected_receipt_7dx.json": {
+      "bytes": 11918,
+      "sha256": "2e0c9e190ed587e66c6e562e6cc23a0696191a0de04b723b64ce3d57d94b265a"
+    },
+    "inputs/upstream_receipts.md": {
+      "bytes": 76602,
+      "sha256": "e4103d993dbc945ca68429b42ae872fd8d669a4c54938065eda0129da5473425"
+    },
+    "replay_native16_guarded_use_retraction.py": {
+      "bytes": 6572,
+      "sha256": "394e5bf335444f066963bf29bb6679be1c18010da648d89fc2b46bd5b0e8e7ad"
+    },
+    "upstream_section_7dw.md": {
+      "bytes": 37559,
+      "sha256": "8da2dd83632bef105bb0f980c3c9860c385430d5e446505c9d5562185313b354"
+    },
+    "upstream_section_7dx.md": {
+      "bytes": 42038,
+      "sha256": "ab55baa956de056c0c6a99eae0c020302d9f901744fbdd4e83ec3926190ddd97"
+    },
+    "upstream_task_7dw.md": {
+      "bytes": 5107,
+      "sha256": "30a7285a423013954c8a68f5716197992db57d41ceda6325a7abfeb33892337f"
+    },
+    "upstream_task_7dx.md": {
+      "bytes": 4289,
+      "sha256": "aae637536b0a2f9488349c15d4744124d97f3394d5a72ca582c0d2ad0a63c424"
+    }
+  },
+  "consumed_inputs": {
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "replay_construction": "A temporary owner memo is assembled from the exact 7ds/7dv/7do receipt blocks and exact archived 7dw/7dx sections; only the checker-required embedded source blocks are used.",
+  "schema": "d0-native16-guarded-use-source-retraction-v1",
+  "upstream": {
+    "7dw": {
+      "checker_file": "check_same_use_record_guard.py",
+      "checker_sha256": "e3ac0eb35ec9c4043cf51485f36d3145be3f9be988e28d38330c510599906fc3",
+      "checker_sha256_expected": "e3ac0eb35ec9c4043cf51485f36d3145be3f9be988e28d38330c510599906fc3",
+      "commit": "049ce1128827f8a8fc63875835e53aea19140a31",
+      "owner_memo_blob": "cc8fcc9ee25a7e35b8e0d0bc05b609a3ce4f670a",
+      "owner_memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "owner_memo_sha256": "a5495c28290a8fac26a89b20993de05277fa09c480a30eca95793842fd0ec522",
+      "receipt_file": "expected_receipt_7dw.json",
+      "receipt_sha256": "5c183ebfa85ab0550dd5ae3caefaeb38281e5a40d45c1d8ec0e2343f6c49330c",
+      "receipt_sha256_expected": "5c183ebfa85ab0550dd5ae3caefaeb38281e5a40d45c1d8ec0e2343f6c49330c",
+      "section_bytes": 37559,
+      "section_file": "upstream_section_7dw.md",
+      "section_sha256": "8da2dd83632bef105bb0f980c3c9860c385430d5e446505c9d5562185313b354",
+      "task_blob": "c89eb61af4803242a637f4d3caf0bd3694b1c7c5",
+      "task_excerpt_bytes": 5107,
+      "task_excerpt_file": "upstream_task_7dw.md",
+      "task_excerpt_sha256": "30a7285a423013954c8a68f5716197992db57d41ceda6325a7abfeb33892337f",
+      "task_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "task_source_sha256": "104f376d5d5f5f5179943df6295df299a15992f7ca4e1acdb77a528d511a6e5f"
+    },
+    "7dx": {
+      "checker_file": "check_guard_cotangent_retraction.py",
+      "checker_sha256": "9ba7a32f29633d2c173ef005198340653aeb5fa3b9ff68cae80bf42ef70b3d45",
+      "checker_sha256_expected": "9ba7a32f29633d2c173ef005198340653aeb5fa3b9ff68cae80bf42ef70b3d45",
+      "commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+      "owner_memo_blob": "d540a831dd07457b07e2888b96bf7dcc02ab4928",
+      "owner_memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "owner_memo_sha256": "18cba7d268f7ad23f73adc5f15de47c09e49a2c26aebd674ae0cf904ec467643",
+      "receipt_file": "expected_receipt_7dx.json",
+      "receipt_sha256": "2e0c9e190ed587e66c6e562e6cc23a0696191a0de04b723b64ce3d57d94b265a",
+      "receipt_sha256_expected": "2e0c9e190ed587e66c6e562e6cc23a0696191a0de04b723b64ce3d57d94b265a",
+      "section_bytes": 42038,
+      "section_file": "upstream_section_7dx.md",
+      "section_sha256": "ab55baa956de056c0c6a99eae0c020302d9f901744fbdd4e83ec3926190ddd97",
+      "task_blob": "e6712a9a70c21bf866eb8f9e089195c70772ee56",
+      "task_excerpt_bytes": 4289,
+      "task_excerpt_file": "upstream_task_7dx.md",
+      "task_excerpt_sha256": "aae637536b0a2f9488349c15d4744124d97f3394d5a72ca582c0d2ad0a63c424",
+      "task_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "task_source_sha256": "47350fbf0d7348ce6a9db1c03750287caf1b680b7fb7bc7ad3760962de922fc6"
+    }
+  },
+  "upstream_receipt_inputs": {
+    "7do PAID BINARY INPUT RECEIPT": {
+      "sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+      "source_commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+    },
+    "7ds RETURN RECORD COMPILER RECEIPT": {
+      "sha256": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e",
+      "source_commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+    },
+    "7dv PAID NATIVE CALIBRATION RECEIPT": {
+      "sha256": "d4d24dc76b92377a21a9b40fa19a8fb90e71c2c8c1c33df4a71077060685ed4e",
+      "source_commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+    }
+  }
+}

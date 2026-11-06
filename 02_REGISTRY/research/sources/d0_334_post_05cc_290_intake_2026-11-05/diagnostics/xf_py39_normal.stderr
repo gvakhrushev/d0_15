@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/tmp/d0-source-290-audit/xf.py", line 205, in <module>
+    main()
+  File "/tmp/d0-source-290-audit/xf.py", line 199, in main
+    args.out.write_text(json.dumps(receipt, ensure_ascii=False, indent=2)+"\n", encoding="utf-8", newline="\n")
+TypeError: write_text() got an unexpected keyword argument 'newline'

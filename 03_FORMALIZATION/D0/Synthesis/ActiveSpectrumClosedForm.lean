@@ -1,4 +1,6 @@
 import Mathlib.Tactic
+import D0.Combinatorics.TripartiteVieta
+import D0.Synthesis.SymmetricFunctionCalculus
 
 /-!
 # The §04.2 active eigenvalues in closed form, and where their `√10` comes from
@@ -45,7 +47,7 @@ at `(9,11,13)` only in the last three theorems.
 namespace D0.Synthesis.ActiveSpectrumClosedForm
 
 /-- The degeneracy gap in the zone sizes. -/
-def gap (a b c : ℚ) : ℚ := (a + b + c) * (a * b + a * c + b * c) - 9 * (a * b * c)
+abbrev gap (a b c : ℚ) : ℚ := D0.Combinatorics.TripartiteVieta.tripartiteGap a b c
 
 /-- The product of the degrees `N − nᵢ`. -/
 def degProd (a b c : ℚ) : ℚ :=
@@ -55,15 +57,38 @@ def degProd (a b c : ℚ) : ℚ :=
 denominators cleared, so it is an identity in the sizes. -/
 theorem discriminant_eq (a b c : ℚ) :
     9 * degProd a b c - 4 * (2 * (a + b + c) * (a * b + a * c + b * c)) = gap a b c := by
-  unfold gap degProd; ring
+  have hDegreeProduct :
+      degProd a b c =
+        (a + b + c) * (a * b + a * c + b * c) - a * b * c := by
+    simpa [degProd, D0.Synthesis.SymmetricFunctionCalculus.e1,
+      D0.Synthesis.SymmetricFunctionCalculus.e2,
+      D0.Synthesis.SymmetricFunctionCalculus.e3] using
+      D0.Synthesis.SymmetricFunctionCalculus.degree_product a b c
+  calc
+    9 * degProd a b c -
+        4 * (2 * (a + b + c) * (a * b + a * c + b * c)) =
+      9 * ((a + b + c) * (a * b + a * c + b * c) - a * b * c) -
+        4 * (2 * (a + b + c) * (a * b + a * c + b * c)) := by
+          rw [hDegreeProduct]
+    _ = D0.Combinatorics.TripartiteVieta.tripartiteGap a b c := by
+          rw [D0.Combinatorics.TripartiteVieta.tripartiteGap_formula]
+          ring
 
 /-- **The ladder form of the gap.** For sizes `(b−d, b, b+d)` the gap is `6·d²·b`. -/
 theorem gap_ladder (b d : ℚ) : gap (b - d) b (b + d) = 6 * d ^ 2 * b := by
-  unfold gap; ring
+  change D0.Combinatorics.TripartiteVieta.tripartiteGap (b - d) b (b + d) = _
+  rw [D0.Combinatorics.TripartiteVieta.tripartiteGap_sos]
+  ring
 
 /-! ## At the scene -/
 
-theorem scene_gap : gap 9 11 13 = 264 := by unfold gap; norm_num
+theorem scene_gap : gap 9 11 13 = 264 := by
+  calc
+    gap 9 11 13 = gap ((11 : ℚ) - 2) 11 ((11 : ℚ) + 2) := by
+      rw [show (9 : ℚ) = (11 : ℚ) - 2 by norm_num,
+        show (13 : ℚ) = (11 : ℚ) + 2 by norm_num]
+    _ = 6 * (2 : ℚ) ^ 2 * 11 := gap_ladder (11 : ℚ) 2
+    _ = 264 := by norm_num
 
 theorem scene_degProd : degProd 9 11 13 = 10560 := by unfold degProd; norm_num
 
@@ -73,12 +98,21 @@ theorem scene_discriminant : gap 9 11 13 / degProd 9 11 13 = 1 / 40 := by
 
 /-- The scene is the ladder with middle `11` and step `2`, so its gap is `6·2²·11`. -/
 theorem scene_is_ladder : gap 9 11 13 = 6 * 2 ^ 2 * 11 := by
-  have h : gap 9 11 13 = gap (11 - 2) 11 (11 + 2) := by norm_num
-  rw [h, gap_ladder]
+  calc
+    gap 9 11 13 = gap ((11 : ℚ) - 2) 11 ((11 : ℚ) + 2) := by
+      rw [show (9 : ℚ) = (11 : ℚ) - 2 by norm_num,
+        show (13 : ℚ) = (11 : ℚ) + 2 by norm_num]
+    _ = 6 * 2 ^ 2 * 11 := gap_ladder (11 : ℚ) 2
 
 /-- Halving the step quarters the splitting: `gap 10 11 12 = 66 = 264/4`. -/
 theorem step_one_quarters : gap 10 11 12 = 66 ∧ (264 : ℚ) / 4 = 66 := by
-  refine ⟨by unfold gap; norm_num, by norm_num⟩
+  refine ⟨?_, by norm_num⟩
+  calc
+    gap 10 11 12 = gap ((11 : ℚ) - 1) 11 ((11 : ℚ) + 1) := by
+      rw [show (10 : ℚ) = (11 : ℚ) - 1 by norm_num,
+        show (12 : ℚ) = (11 : ℚ) + 1 by norm_num]
+    _ = 6 * (1 : ℚ) ^ 2 * 11 := gap_ladder (11 : ℚ) 1
+    _ = 66 := by norm_num
 
 /-- **`√10` explained.** `1/40 = 10/400`, so `√(1/40) = √10/20` and the eigenvalues
 `(3 ± √(1/40))/2` are `3/2 ± √10/40`. -/

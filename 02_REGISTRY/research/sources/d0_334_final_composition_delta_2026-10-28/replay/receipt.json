@@ -1,0 +1,233 @@
+{
+  "GR_closed": false,
+  "base_source_commit": "5fe5203da2439d325dc9ef70f52c1111822fc22b",
+  "checks": [
+    {
+      "modes": [
+        {
+          "exit_code": 0,
+          "mode": "ordinary",
+          "published_result_intersection_max_numeric_delta": 5.684341886080802e-14,
+          "stderr_bytes": 1013,
+          "stderr_sha256": "896810b348f6b2d1e0afc94b034d6621b4d841a7f1e89b36a53296cff17a3197",
+          "stdout_bytes": 6059,
+          "stdout_sha256": "5a3b3da41f950cda6b98fdfdae54eaa780e20661dcee26a8f219006d6be7b861"
+        },
+        {
+          "exit_code": 0,
+          "mode": "optimized",
+          "published_result_intersection_max_numeric_delta": 5.684341886080802e-14,
+          "stderr_bytes": 1013,
+          "stderr_sha256": "896810b348f6b2d1e0afc94b034d6621b4d841a7f1e89b36a53296cff17a3197",
+          "stdout_bytes": 6059,
+          "stdout_sha256": "5a3b3da41f950cda6b98fdfdae54eaa780e20661dcee26a8f219006d6be7b861"
+        }
+      ],
+      "name": "clock",
+      "observed_status": "PASS_FULL_CLOCK_WINDING_SOURCE",
+      "published_result": "d0_clock_winding_source_2026-10-28/result.json",
+      "published_result_sha256": "06c614c3b0fead54ffe94bc68e9cefca75c9ebba16602dba86fd407627c62b42",
+      "published_status": "PASS_FULL_CLOCK_WINDING_SOURCE",
+      "script": "d0_clock_winding_source_2026-10-28/check_clock_winding.py",
+      "script_sha256": "37adfe34424d64947ed7bbd29727696e9b1b584f878256f7b07ea47292fd5774"
+    },
+    {
+      "modes": [
+        {
+          "exit_code": 0,
+          "mode": "ordinary",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 1629,
+          "stdout_sha256": "50180a819f70e56e03fb9b139ef7a6fd5b2a7665583c3227fcb8b1fe91b937d4"
+        },
+        {
+          "exit_code": 0,
+          "mode": "optimized",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 1629,
+          "stdout_sha256": "50180a819f70e56e03fb9b139ef7a6fd5b2a7665583c3227fcb8b1fe91b937d4"
+        }
+      ],
+      "name": "query",
+      "observed_status": "PASS",
+      "published_result": "d0_native_final_composition_2026-10-28/QUERY_RESULT.json",
+      "published_result_sha256": "50180a819f70e56e03fb9b139ef7a6fd5b2a7665583c3227fcb8b1fe91b937d4",
+      "published_status": "PASS",
+      "script": "d0_native_final_composition_2026-10-28/check_query_stationarity.py",
+      "script_sha256": "000b017210e5485050b745dc833afcd72bf318b3fd3ef016fc0e3ebd76902bc2"
+    },
+    {
+      "modes": [
+        {
+          "exit_code": 0,
+          "mode": "ordinary",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 1645,
+          "stdout_sha256": "0a43a0ee306859a5273c5e65872daa80e342ce373de73a7fecc0f8be7e12e474"
+        },
+        {
+          "exit_code": 0,
+          "mode": "optimized",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 1645,
+          "stdout_sha256": "0a43a0ee306859a5273c5e65872daa80e342ce373de73a7fecc0f8be7e12e474"
+        }
+      ],
+      "name": "gauge",
+      "observed_status": "PASS_EXACT_BOUNDARY_MOMENT_CONTROLS",
+      "published_result": "d0_native_final_composition_2026-10-28/GAUGE_RESULT.json",
+      "published_result_sha256": "0a43a0ee306859a5273c5e65872daa80e342ce373de73a7fecc0f8be7e12e474",
+      "published_status": "PASS_EXACT_BOUNDARY_MOMENT_CONTROLS",
+      "script": "d0_native_final_composition_2026-10-28/check_gauge_moment.py",
+      "script_sha256": "9b1759d91b6d48eced6929cb08222ccf678a488ae94bff517e7c6418396fb12b"
+    },
+    {
+      "modes": [
+        {
+          "exit_code": 0,
+          "mode": "ordinary",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 2117,
+          "stdout_sha256": "2463f1e5b3a911bf4dd3e684387f5263b1deb8b342cb76b07445deedd4295b71"
+        },
+        {
+          "exit_code": 0,
+          "mode": "optimized",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 2117,
+          "stdout_sha256": "2463f1e5b3a911bf4dd3e684387f5263b1deb8b342cb76b07445deedd4295b71"
+        }
+      ],
+      "name": "memory",
+      "observed_status": "PASS",
+      "published_result": "d0_native_final_composition_2026-10-28/MEMORY_RESULT.json",
+      "published_result_sha256": "2463f1e5b3a911bf4dd3e684387f5263b1deb8b342cb76b07445deedd4295b71",
+      "published_status": "PASS",
+      "script": "d0_native_final_composition_2026-10-28/check_retained_memory.py",
+      "script_sha256": "b23bfb478e86324fe508e1a929b6f2eac08670369f9bcba8fb8cb70d5ee3f31d"
+    },
+    {
+      "modes": [
+        {
+          "exit_code": 0,
+          "mode": "ordinary",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 1737,
+          "stdout_sha256": "bb94e800b55ac1a781ddd530dda981a909227d19c4ff13ebd31ed3cb7ad29766"
+        },
+        {
+          "exit_code": 0,
+          "mode": "optimized",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 1737,
+          "stdout_sha256": "bb94e800b55ac1a781ddd530dda981a909227d19c4ff13ebd31ed3cb7ad29766"
+        }
+      ],
+      "name": "terminal",
+      "observed_status": "PASS",
+      "published_result": "d0_native_final_composition_2026-10-28/TERMINAL_RESULT.json",
+      "published_result_sha256": "bb94e800b55ac1a781ddd530dda981a909227d19c4ff13ebd31ed3cb7ad29766",
+      "published_status": "PASS",
+      "script": "d0_native_final_composition_2026-10-28/check_terminal_graph.py",
+      "script_sha256": "f18480d5beffbc2bac95853b0082539213ad1b80245a04b537678124a09da800"
+    },
+    {
+      "modes": [
+        {
+          "exit_code": 0,
+          "mode": "ordinary",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 1530,
+          "stdout_sha256": "3e8d63814a0c56688ad38b4f54d65a92f25db645c786e26df16c2aef74f517b6"
+        },
+        {
+          "exit_code": 0,
+          "mode": "optimized",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 1530,
+          "stdout_sha256": "3e8d63814a0c56688ad38b4f54d65a92f25db645c786e26df16c2aef74f517b6"
+        }
+      ],
+      "name": "phase",
+      "observed_status": "PASS_EXACT_PHASE_DESCENT_CONTROLS",
+      "published_result": "d0_native_final_composition_2026-10-28/PHASE_RESULT.json",
+      "published_result_sha256": "3e8d63814a0c56688ad38b4f54d65a92f25db645c786e26df16c2aef74f517b6",
+      "published_status": "PASS_EXACT_PHASE_DESCENT_CONTROLS",
+      "script": "d0_native_final_composition_2026-10-28/check_phase_descent.py",
+      "script_sha256": "15887b6661fb068badc7eb3d8d0a9785adbb48908381f5d5cd3b7639232f2b8d"
+    },
+    {
+      "modes": [
+        {
+          "exit_code": 0,
+          "mode": "ordinary",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 2532,
+          "stdout_sha256": "78cfabe965a54bc73d8cfc3de88f1f4f3a6087cc7515453b451007f8fde7ce89"
+        },
+        {
+          "exit_code": 0,
+          "mode": "optimized",
+          "published_result_intersection_max_numeric_delta": 0.0,
+          "stderr_bytes": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_bytes": 2532,
+          "stdout_sha256": "78cfabe965a54bc73d8cfc3de88f1f4f3a6087cc7515453b451007f8fde7ce89"
+        }
+      ],
+      "name": "native_phase",
+      "observed_status": "PASS",
+      "published_result": "d0_native_final_composition_2026-10-28/NATIVE_PHASE_RESULT.json",
+      "published_result_sha256": "78cfabe965a54bc73d8cfc3de88f1f4f3a6087cc7515453b451007f8fde7ce89",
+      "published_status": "PASS",
+      "script": "d0_native_final_composition_2026-10-28/phase_native_check.py",
+      "script_sha256": "265c8ef85d86d496a9312539890c09aebd123421d81fc47667ae7cab7f1d39c8"
+    }
+  ],
+  "dependencies": {
+    "mpmath": "1.3.0",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0"
+  },
+  "native_execution_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "normal_optimized_byte_identical": true,
+  "numeric_tolerance": 3e-12,
+  "owner_pr": 334,
+  "physical_admission": false,
+  "python": "3.9.6",
+  "replay_runner_sha256": "afa9876f8c9e4cd564960cd382fcba0188c114e046f8c880d9f43814ba6d98d2",
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-pr-source-replay-v1",
+  "scientific_acceptance": false,
+  "source_commit": "22e729996b70a699710a2d1120a0caa7a08decf8",
+  "status": "PASS_ALL_SEVEN_CHECKERS_WITH_NUMPY_RUNTIME_WARNINGS",
+  "stderr_empty_all_modes": false,
+  "stderr_warning_counts": {
+    "divide by zero encountered in matmul": 2,
+    "invalid value encountered in matmul": 2,
+    "overflow encountered in matmul": 2
+  }
+}

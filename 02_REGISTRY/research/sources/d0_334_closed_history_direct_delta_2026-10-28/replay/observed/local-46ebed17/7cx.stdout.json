@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "source_owner": "02_REGISTRY/research/sources/d0_original_full128_future_even_algebra_2026-10-22/check_future_even_algebra_modprime.py",
+  "source_owner_sha256": "1b1e75a8c46135eac9495bc47f9239b83ed36713c268d118d017ab176b95f3a5",
+  "literal_copied_blocks": "owner lines76-99 CAR and boost;125-159 mirrored Julia words;162-183 Walsh/Kraus. Positive roots evaluated numerically.",
+  "dimension": {
+    "DATA": 16,
+    "addresses": 64,
+    "ports": 2,
+    "full_unitary": 2048
+  },
+  "carrier": "full Ux=x-2L(Ldagger x); Ldagger L=I proves all-column Hermitian unitarity; every128 output retained",
+  "initial_source": {
+    "nu": 0.6,
+    "boost_theta": 0.22314355131420976,
+    "phases": [
+      "i",
+      "i",
+      "-1",
+      "-i"
+    ],
+    "stationary_port1_probability": 0.0130262718422078
+  },
+  "matrix_identity_errors": {
+    "N_row_isometry": 8.831683533033453e-15,
+    "N_column_completeness": 1.7832826324789263e-15,
+    "L_isometry_full2048_unitarity_certificate": 1.1304675507166922e-14,
+    "full128_column_reconstruction": 7.028353310010849e-17,
+    "complete_Kraus_normalization": 2.0411360547230946e-15,
+    "native_stationarity": 4.031397477512819e-16,
+    "odd_full_matrix": 1.3851331672189037e-18,
+    "q_source_normalization": 0.0,
+    "odd_normalized_state": 1.1210449024909877e-16,
+    "A_from_actual_rho_q": 9.181857939977957e-18,
+    "feedback_from_complete_return": 4.413972823683887e-17
+  },
+  "normalized_odd_state_derivative_norms_theta_nu": [
+    2.465416422074203e-12,
+    3.2022375286607925e-12
+  ],
+  "odd_unnormalized_derivative_errors_theta_nu": [
+    3.334304107649506e-14,
+    6.234915996758483e-14
+  ],
+  "echo_m_values": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "echo_KdaggerK_equals_Fpower_errors": [
+    0.0,
+    3.823724708828117e-18,
+    1.0985608315022125e-19,
+    2.5641913702491847e-21,
+    6.983554940082234e-23
+  ],
+  "joint_mu_m": [
+    0.000273543058767767,
+    5.75337145425543e-06,
+    1.2120122017348514e-07,
+    2.5572547470916796e-09,
+    5.4040069632779904e-11
+  ],
+  "joint_mu_formula_errors": [
+    5.421010862427522e-20,
+    9.317362419797304e-21,
+    2.6469779601696886e-22,
+    5.790264287871194e-24,
+    7.754818242684634e-26
+  ],
+  "joint_mu_derivative_fd_errors_theta_nu": [
+    1.9565309116766072e-15,
+    1.9997640696156616e-12
+  ],
+  "feedback_sources_and_tails": [
+    {
+      "z": 9.5367431640625e-07,
+      "label": "existing root diagnostic z=2^-20",
+      "J": 3.2042444113482067e-07,
+      "joint_J_L4": 3.204244411348207e-07,
+      "tail_difference": -5.293955920339377e-23,
+      "spectral_tail_bound": 1.25358663594686e-38,
+      "roundoff_allowance": 7.114851844010521e-21,
+      "direct_source_theta_nu": [
+        -1.8312595190037387e-08,
+        1.0624053526015612e-06
+      ],
+      "observable_source_theta_nu": [
+        -1.8312595190037384e-08,
+        1.0624053526015612e-06
+      ],
+      "joint_L4_source_theta_nu": [
+        -1.8312595190037387e-08,
+        1.0624053526015608e-06
+      ],
+      "derivative_tail_bounds": [
+        6.494128104427562e-32,
+        9.136850318694092e-31
+      ],
+      "frozen_q_prefactor_source_theta_nu": [
+        -4.156539650890429e-08,
+        2.1304868230509634e-06
+      ],
+      "omitted_quotient_term_theta_nu": [
+        -2.3252801318866906e-08,
+        1.0680814704494025e-06
+      ]
+    },
+    {
+      "z": 0.25,
+      "label": "structural tail-sensitivity parameter only; not physical selection",
+      "J": 0.08421895952392983,
+      "joint_J_L4": 0.08421895951090821,
+      "tail_difference": 1.3021611566799152e-11,
+      "spectral_tail_bound": 1.5603837351785052e-11,
+      "roundoff_allowance": 1.8700365594688203e-15,
+      "direct_source_theta_nu": [
+        -0.004822568207142844,
+        0.2799753479986057
+      ],
+      "observable_source_theta_nu": [
+        -0.004822568207142843,
+        0.2799753479986058
+      ],
+      "joint_L4_source_theta_nu": [
+        -0.004822568205349652,
+        0.27997534778254796
+      ],
+      "derivative_tail_bounds": [
+        0.00010719111378408167,
+        0.0015081149407439839
+      ],
+      "frozen_q_prefactor_source_theta_nu": [
+        -0.010934232864428722,
+        0.5607052128189087
+      ],
+      "omitted_quotient_term_theta_nu": [
+        -0.006111664659079069,
+        0.28072986503636077
+      ]
+    }
+  ],
+  "reference128": "Free oldRIGHT spectator multiplies trace J/source by128; it does not multiply normalized rho,q,or joint probabilities. Already written fine archive is spectator.",
+  "scope": "One specified stationary tick, port1 joint event, then fresh query work and alternating U/Udagger Q/P event branch. Not first-success stopping or free postselection. Preparation and full observer costs remain real; no GR, thermal, or compulsory selection claim."
+}

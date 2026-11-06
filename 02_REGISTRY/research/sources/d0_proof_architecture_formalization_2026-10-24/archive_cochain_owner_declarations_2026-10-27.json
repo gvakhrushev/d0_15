@@ -1,0 +1,241 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "f25e19467f689eb66b2b58922704a8ad34db7757",
+  "worktree_dirty": false,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "b22e81274a029862376799adb0d087124ad8d1e4d096747d15257832add27226",
+  "collector_sha256": "dc4a1c7decbf982ec2d760632c84f1207abcbdc618e302ea5782c04d9060f5c1",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_names": [
+      "D0.Geometry.archive_cubical_cochain_carrier_owner",
+      "D0.Geometry.archive_1d_cochain_refinement_owner",
+      "D0.Geometry.archive_refinement_hodge_weights_owner"
+    ]
+  },
+  "claim_locator_crosswalk": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n  D0.Geometry.betti0 + D0.Geometry.betti1 + D0.Geometry.betti2 + D0.Geometry.betti3 + D0.Geometry.betti4 = 16 ∧\n    Fintype.card D0.Role = 4",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 43,
+            "line": 60
+          },
+          "start": {
+            "column": 0,
+            "line": 50
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 45,
+            "line": 56
+          },
+          "start": {
+            "column": 8,
+            "line": 56
+          }
+        }
+      },
+      "elaborated_type": "Fintype.card D0.Geometry.CubicalCellType = 16 ∧\n  D0.Geometry.betti0 + D0.Geometry.betti1 + D0.Geometry.betti2 + D0.Geometry.betti3 + D0.Geometry.betti4 = 16 ∧\n    Fintype.card D0.Role = 4",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveCubicalCochainCarrier",
+      "name": "D0.Geometry.archive_cubical_cochain_carrier_owner",
+      "proof_dependencies": [
+        "And",
+        "And.intro",
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.CubicalCellType",
+        "D0.Geometry.betti0",
+        "D0.Geometry.betti1",
+        "D0.Geometry.betti2",
+        "D0.Geometry.betti3",
+        "D0.Geometry.betti4",
+        "D0.Geometry.card_archive_fock_state",
+        "D0.Role",
+        "D0.card_role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instAddNat",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHAdd",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "And",
+        "Bool",
+        "Bool.fintype",
+        "D0.Dyad",
+        "D0.Geometry.CubicalCellType",
+        "D0.Geometry.betti0",
+        "D0.Geometry.betti1",
+        "D0.Geometry.betti2",
+        "D0.Geometry.betti3",
+        "D0.Geometry.betti4",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "instAddNat",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveCubicalCochainCarrier.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.massMatrixTrace1D = 3 ∧\n  D0.Geometry.edgeGramMatrixTrace1D = 2 ∧ D0.Geometry.massMatrixTrace1D ≠ D0.Geometry.edgeGramMatrixTrace1D",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 38,
+            "line": 43
+          },
+          "start": {
+            "column": 0,
+            "line": 34
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 43,
+            "line": 39
+          },
+          "start": {
+            "column": 8,
+            "line": 39
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.massMatrixTrace1D = 3 ∧\n  D0.Geometry.edgeGramMatrixTrace1D = 2 ∧ D0.Geometry.massMatrixTrace1D ≠ D0.Geometry.edgeGramMatrixTrace1D",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.Archive1DCochainRefinement",
+      "name": "D0.Geometry.archive_1d_cochain_refinement_owner",
+      "proof_dependencies": [
+        "And",
+        "And.intro",
+        "D0.Geometry.edgeGramMatrixTrace1D",
+        "D0.Geometry.massMatrixTrace1D",
+        "D0.Geometry.mass_trace_ne_edge_trace",
+        "Eq",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Geometry.edgeGramMatrixTrace1D",
+        "D0.Geometry.massMatrixTrace1D",
+        "Eq",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/Archive1DCochainRefinement.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Geometry.hodgeGramTraceDegree 0 = 81 ∧\n  D0.Geometry.hodgeGramTraceDegree 4 = 1 ∧ D0.Geometry.totalHodgeGramTraceSum = 256 ∧ Fintype.card D0.Role = 4",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 28,
+            "line": 60
+          },
+          "start": {
+            "column": 0,
+            "line": 49
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 46,
+            "line": 55
+          },
+          "start": {
+            "column": 8,
+            "line": 55
+          }
+        }
+      },
+      "elaborated_type": "D0.Geometry.hodgeGramTraceDegree 0 = 81 ∧\n  D0.Geometry.hodgeGramTraceDegree 4 = 1 ∧ D0.Geometry.totalHodgeGramTraceSum = 256 ∧ Fintype.card D0.Role = 4",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveRefinementHodgeWeights",
+      "name": "D0.Geometry.archive_refinement_hodge_weights_owner",
+      "proof_dependencies": [
+        "And",
+        "And.intro",
+        "D0.Dyad",
+        "D0.Geometry.hodgeGramTraceDegree",
+        "D0.Geometry.totalHodgeGramTraceSum",
+        "D0.Role",
+        "D0.card_role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "instFintypeProd",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "And",
+        "D0.Dyad",
+        "D0.Geometry.hodgeGramTraceDegree",
+        "D0.Geometry.totalHodgeGramTraceSum",
+        "D0.Role",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.card",
+        "Nat",
+        "OfNat.ofNat",
+        "instFintypeProd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveRefinementHodgeWeights.lean"
+    }
+  ]
+}

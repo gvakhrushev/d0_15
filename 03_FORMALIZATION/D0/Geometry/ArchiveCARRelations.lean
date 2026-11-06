@@ -1,5 +1,6 @@
 import Mathlib.Data.Matrix.Basic
 import Mathlib.Tactic
+import Mathlib.Algebra.Module.LinearMap.Defs
 import D0.Core.FiniteTypes
 import D0.Core.DyadABCD
 import D0.Geometry.ArchiveCARFockCarrier
@@ -33,6 +34,13 @@ def roleOrderIndex (r : Role) : ℕ :=
   else if r = D0.B then 1
   else if r = D0.C then 2
   else 3
+
+theorem roleOrderIndex_injective : Function.Injective roleOrderIndex := by
+  intro r s hrs
+  match r, s with
+  | (a, b), (c, d) =>
+      fin_cases a <;> fin_cases b <;> fin_cases c <;> fin_cases d <;>
+        simp [roleOrderIndex, D0.A, D0.B, D0.C] at hrs ⊢
 
 /-- Fermionic Jordan-Wigner phase exponent: number of occupied modes preceding role `r`. -/
 def precedingOccupationCount (state : ArchiveFockState) (r : Role) : ℕ :=
@@ -73,6 +81,117 @@ def carAnnihilateInt (r : Role) (bra ket : ArchiveFockState) : ℤ :=
 /-- Creation operator matrix elements: `c_r† = (c_r)^T`. -/
 def carCreate (r : Role) (bra ket : ArchiveFockState) : ℝ :=
   carAnnihilate r ket bra
+
+/-! ## Finite matrix action on Fock profiles
+
+The CAR matrices act on coefficient profiles over either the real or complex
+field.  Keep the finite-matrix action at the carrier layer so concrete
+representations do not each reimplement the same sum as a function. -/
+
+/-- The linear action of a finite Fock matrix on coefficient profiles over a
+commutative semiring. The coefficient domain is inferred from `M`. -/
+def carMatrixEnd {K : Type*} [CommSemiring K]
+    (M : ArchiveFockState → ArchiveFockState → K) :
+    (ArchiveFockState → K) →ₗ[K] (ArchiveFockState → K) where
+  toFun ψ bra := ∑ ket : ArchiveFockState, M bra ket * ψ ket
+  map_add' ψ φ := by
+    ext bra
+    simp [mul_add, Finset.sum_add_distrib]
+  map_smul' c ψ := by
+    ext bra
+    simp only [Pi.smul_apply, smul_eq_mul, Finset.mul_sum]
+    refine Finset.sum_congr rfl ?_
+    intro ket _
+    simp [RingHom.id_apply, mul_left_comm]
+
+@[simp] theorem carMatrixEnd_apply {K : Type*} [CommSemiring K]
+    (M : ArchiveFockState → ArchiveFockState → K)
+    (ψ : ArchiveFockState → K) (bra : ArchiveFockState) :
+    carMatrixEnd M ψ bra = ∑ ket : ArchiveFockState, M bra ket * ψ ket := rfl
+
+/-- Composition of finite matrix actions is matrix multiplication on the
+same Fock carrier. -/
+theorem carMatrixEnd_comp_apply {K : Type*} [CommSemiring K]
+    (M N : ArchiveFockState → ArchiveFockState → K)
+    (ψ : ArchiveFockState → K) (bra : ArchiveFockState) :
+    carMatrixEnd M (carMatrixEnd N ψ) bra =
+      ∑ ket : ArchiveFockState,
+        (∑ mid : ArchiveFockState, M bra mid * N mid ket) * ψ ket := by
+  classical
+  unfold carMatrixEnd
+  calc
+    (∑ mid : ArchiveFockState,
+        M bra mid * ∑ ket : ArchiveFockState, N mid ket * ψ ket) =
+      ∑ mid : ArchiveFockState, ∑ ket : ArchiveFockState,
+        M bra mid * (N mid ket * ψ ket) := by
+          refine Finset.sum_congr rfl ?_
+          intro mid _
+          rw [Finset.mul_sum]
+    _ = ∑ ket : ArchiveFockState, ∑ mid : ArchiveFockState,
+          M bra mid * N mid ket * ψ ket := by
+          rw [Finset.sum_comm]
+          refine Finset.sum_congr rfl ?_
+          intro ket _
+          refine Finset.sum_congr rfl ?_
+          intro mid _
+          simp [← mul_assoc]
+    _ = ∑ ket : ArchiveFockState,
+          (∑ mid : ArchiveFockState, M bra mid * N mid ket) * ψ ket := by
+          apply Finset.sum_congr rfl
+          intro ket _
+          rw [← Finset.sum_mul]
+
+/-- Composition of two finite matrix actions is itself the action of the
+ordinary matrix product on the same Fock-profile space. -/
+theorem carMatrixEnd_comp {K : Type*} [CommSemiring K]
+    (M N : ArchiveFockState → ArchiveFockState → K) :
+    (carMatrixEnd M).comp (carMatrixEnd N) =
+      carMatrixEnd (fun bra ket =>
+        ∑ mid : ArchiveFockState, M bra mid * N mid ket) := by
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  exact carMatrixEnd_comp_apply M N ψ bra
+
+theorem carMatrixEnd_add {K : Type*} [CommSemiring K]
+    (M N : ArchiveFockState → ArchiveFockState → K) :
+    carMatrixEnd (fun bra ket => M bra ket + N bra ket) =
+      carMatrixEnd M + carMatrixEnd N := by
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  change (∑ ket : ArchiveFockState,
+      (M bra ket + N bra ket) * ψ ket) =
+    (∑ ket : ArchiveFockState, M bra ket * ψ ket) +
+      (∑ ket : ArchiveFockState, N bra ket * ψ ket)
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro ket _
+  ring
+
+theorem carMatrixEnd_smul {K : Type*} [CommSemiring K] (c : K)
+    (M : ArchiveFockState → ArchiveFockState → K) :
+    carMatrixEnd (fun bra ket => c * M bra ket) = c • carMatrixEnd M := by
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  simp [carMatrixEnd, Finset.mul_sum, mul_assoc]
+
+@[simp] theorem carMatrixEnd_zero {K : Type*} [CommSemiring K] :
+    carMatrixEnd (fun _ _ : ArchiveFockState => (0 : K)) = 0 := by
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  simp [carMatrixEnd]
+
+theorem carMatrixEnd_diagonalIdentity {K : Type*} [CommSemiring K] :
+    carMatrixEnd (fun bra ket : ArchiveFockState =>
+      if bra = ket then (1 : K) else 0) = LinearMap.id := by
+  classical
+  apply LinearMap.ext
+  intro ψ
+  funext bra
+  simp [carMatrixEnd]
 
 /-- Integral shadow of `carCreate`. -/
 def carCreateInt (r : Role) (bra ket : ArchiveFockState) : ℤ :=

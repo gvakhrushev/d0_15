@@ -1,0 +1,147 @@
+{
+  "schema": "d0-pr-source-application-delta-v1",
+  "repository": "gvakhrushev/d0_15",
+  "owner_pr": 334,
+  "source_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "base_source_commit": "9f23ec82c8e4e044121521658afec4a5e9b8c2f7",
+  "source_commit": "c296829fc2e74d673a2a679baa1e10a49524b290",
+  "source_commit_count": 1,
+  "source_commits": [
+    {
+      "sha": "c296829fc2e74d673a2a679baa1e10a49524b290",
+      "subject": "research(#334): compose nonlinear Einstein-dust with retained native source recovery"
+    }
+  ],
+  "changed_upstream_paths": [
+    "02_REGISTRY/research/A4D_CLOSED_HISTORY_DIRECT_PROOF_2026_10_28.md",
+    "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md",
+    "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_check.py",
+    "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_result_2026_10_28.json",
+    "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_check.py",
+    "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_result_2026_10_28.json"
+  ],
+  "archive": {
+    "path": "upstream_delta.zip",
+    "bytes": 63890,
+    "sha256": "8dd276e628203feeba177c71619237834fd58cc9c4c37052c9d376c0abdb39aa"
+  },
+  "source_files": [
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/A4D_CLOSED_HISTORY_DIRECT_PROOF_2026_10_28.md",
+      "archive_member": "02_REGISTRY/research/A4D_CLOSED_HISTORY_DIRECT_PROOF_2026_10_28.md",
+      "bytes": 23043,
+      "sha256": "f27370a67034a47994a7544dc81468ae3012e00eeb1dbb1e8f2065c23c3eb194",
+      "git_blob": "c66b535dfcf41b87bcc97365eff8ef2930981db1"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md",
+      "archive_member": "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md",
+      "bytes": 55686,
+      "sha256": "d2951e92a97c5d9ab088c27e0cd3af0989a613df57cf9d1546d2281b6eefa228",
+      "git_blob": "154b341f17adce88594b0b5e9df0d38c0283d288"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_check.py",
+      "archive_member": "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_check.py",
+      "bytes": 5156,
+      "sha256": "78afc81c468e69e1cdfe54e3201cb54caa5bae379eaf623cc7367c84f5ed1e5f",
+      "git_blob": "62dc572f458b181d11e70b18d8787ac91b723422"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_result_2026_10_28.json",
+      "archive_member": "02_REGISTRY/research/certificates/a4d_closed_history_af_word_embedding_result_2026_10_28.json",
+      "bytes": 766,
+      "sha256": "313d3c52e511884f2a8abb453465cc08733c55d88d92ac53f7e5e518ca07a0f4",
+      "git_blob": "bfe63817512f11fb1c52616bfcf2d549ebdcaee0"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_check.py",
+      "archive_member": "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_check.py",
+      "bytes": 8625,
+      "sha256": "9c6569fb3e13e2720508bf7b6b967834363a82c620e969cf0caebfcb0227437c",
+      "git_blob": "33bdbbd1c276916211bc23ceaa05c7603dc6c424"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_result_2026_10_28.json",
+      "archive_member": "02_REGISTRY/research/certificates/a4d_closed_history_nonlinear_dust_result_2026_10_28.json",
+      "bytes": 2892,
+      "sha256": "1c6d58b73c9071b6d5768da7cbda203e22742b23636a46cea80e58e7d134f19f",
+      "git_blob": "27b60e214668fb3362811962ecc664b98f6655a7"
+    },
+    {
+      "kind": "source_delta_patch",
+      "upstream_path": "owner-delta-patch",
+      "archive_member": "patches/owner_delta_from_9f23ec82.patch",
+      "bytes": 78271,
+      "sha256": "b5b2a4bb031d77c793ca1f60aef652afa332d131eb19e79440e2ec367fb95ba5",
+      "git_blob": "dda24d383c3497e9087500e401277de462834a55"
+    }
+  ],
+  "local_replay_artifacts": [
+    {
+      "path": "replay/observed/nonlinear_dust.normal.stdout.json",
+      "bytes": 2892,
+      "sha256": "1c6d58b73c9071b6d5768da7cbda203e22742b23636a46cea80e58e7d134f19f"
+    },
+    {
+      "path": "replay/observed/nonlinear_dust.normal.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "replay/observed/nonlinear_dust.optimized.stdout.json",
+      "bytes": 2892,
+      "sha256": "1c6d58b73c9071b6d5768da7cbda203e22742b23636a46cea80e58e7d134f19f"
+    },
+    {
+      "path": "replay/observed/nonlinear_dust.optimized.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "replay/observed/af_word_embedding.normal.stdout.json",
+      "bytes": 766,
+      "sha256": "313d3c52e511884f2a8abb453465cc08733c55d88d92ac53f7e5e518ca07a0f4"
+    },
+    {
+      "path": "replay/observed/af_word_embedding.normal.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "replay/observed/af_word_embedding.optimized.stdout.json",
+      "bytes": 766,
+      "sha256": "313d3c52e511884f2a8abb453465cc08733c55d88d92ac53f7e5e518ca07a0f4"
+    },
+    {
+      "path": "replay/observed/af_word_embedding.optimized.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "replay/receipt.json",
+      "bytes": 2513,
+      "sha256": "a5c55fdef19721bf846742e850b4a622b125e3d7fba1b4052741cb0111cc99e5"
+    }
+  ],
+  "local_replay_receipt_path": "replay/receipt.json",
+  "local_replay_receipt_sha256": "a5c55fdef19721bf846742e850b4a622b125e3d7fba1b4052741cb0111cc99e5",
+  "owner_input_head": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+  "scope_flags": {
+    "native_field_graph_source_convergence_conditional": true,
+    "nonlinear_original_click_and_Einstein_dust_sector_supplied": true,
+    "explicit_nonVSI_LTB_recovery_supplied": true,
+    "full128_return_same_operator": false,
+    "all_physical_book_domain_identified": false,
+    "exact_stationarity_of_each_finite_word": false,
+    "physical_admission": false,
+    "scientific_acceptance": false,
+    "GR_closed": false
+  }
+}

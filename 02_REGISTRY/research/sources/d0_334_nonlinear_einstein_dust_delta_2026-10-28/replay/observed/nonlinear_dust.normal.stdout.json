@@ -1,0 +1,59 @@
+{
+  "GR_closed": false,
+  "checks": [
+    "original sigma-minus click is exactly quadratic in curvature",
+    "exact original-click quadratic decomposition",
+    "full independent-coframe trace is the displayed quadratic",
+    "original positive curvature slope, with Golden relation",
+    "original negative material slope, with Golden relation",
+    "original ratio kappa0, not a fitted Einstein coefficient",
+    "radial and Ward Jacobian equals r_x(0) r_y(0)",
+    "exact native y0=2^-20 lies on a regular positive-discriminant branch",
+    "explicit nonlinear trace branch has x0<0 and kappa_sector>0",
+    "both exact native source slopes keep their required signs",
+    "original geometric and matter rotation inputs stay inside their native chart",
+    "original complete click stays on the monotone direct-return branch",
+    "nonlinear Ward/trace map remains locally invertible at this sector",
+    "explicit radical branch solves the trace equation exactly",
+    "owned non-VSI LTB solves the original R/2 metric equation",
+    "LTB curvature and kinetic densities obey the exact nonlinear trace branch",
+    "negative control detects the wrong imported factor of two",
+    "derived dust density-volume relation leaves the volume free",
+    "fixed aperture tau=p^2 and 1<=t<=2 keep both CAR amplitude coordinates in the owned chart"
+  ],
+  "checks_count": 19,
+  "exact_sector": {
+    "fixed_tau": "p^2",
+    "y0": "2^-20",
+    "z": "2^-20"
+  },
+  "input_head": "46ebed17ddfa04faa8ab1a07a6a822b717f993ef",
+  "outward_rational_interval_decimals": {
+    "kappa_sector": [
+      "23.414790278587526834413240421129",
+      "23.414790278587526834413240421130"
+    ],
+    "r_x": [
+      "0.000000019170363122795484919442",
+      "0.000000019170363122795484919443"
+    ],
+    "r_y": [
+      "-0.000000448870032084624543234144",
+      "-0.000000448870032084624543234143"
+    ],
+    "ward_trace_jacobian": [
+      "-0.000000000000008604870207166978",
+      "-0.000000000000008604870207166977"
+    ],
+    "x0": [
+      "-0.000022330084112727667650616876",
+      "-0.000022330084112727667650616875"
+    ]
+  },
+  "owner_sha256": {
+    "02_REGISTRY/research/A4D_COMPLETE_PRICE_ONSHELL_DENSITY_RIGIDITY_2026_10_21.md": "f8a766af9e747e9500266ddc8f3773645667fc0ca312088845547d5f6f418148",
+    "02_REGISTRY/research/A4D_ORIGINAL_STAR_NULL_CART_SIGN_AND_ALL_ORDER_CQ_RETYPE_2026_10_21.md": "b7427a2e0ad2ea59a53a9c8371bc46cb33d405a3ddd3d21481e01efabff4d414",
+    "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md": "10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05"
+  },
+  "scope": "Exact original polynomial, rational interval branch and changed LTB coefficient checks. The existing full curvature/Cartan proof is consumed, not rerun. No complete native-word execution, exact finite stationary recovery, physical selection or GR closure is certified by this script."
+}

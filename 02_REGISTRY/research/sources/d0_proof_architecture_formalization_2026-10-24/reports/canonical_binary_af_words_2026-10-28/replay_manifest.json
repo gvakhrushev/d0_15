@@ -1,0 +1,123 @@
+{
+  "generated_words": [
+    {
+      "bytes": 130229,
+      "path": "centre_word.rle.json",
+      "rle_instruction_records": 1350,
+      "sha256": "22ea825f6103a8987403e605d803c19657a2e387d4e8421a1114a3218ea5745d",
+      "stage_count": 107530502
+    },
+    {
+      "bytes": 129933,
+      "path": "minus_word.rle.json",
+      "rle_instruction_records": 1347,
+      "sha256": "534f087d490870d4d640aacfc72ed0c8e3bfa2dd732faf0a99fceb288f78da09",
+      "stage_count": 107530502
+    },
+    {
+      "bytes": 130229,
+      "path": "plus_word.rle.json",
+      "rle_instruction_records": 1350,
+      "sha256": "27901c3a695a3ba71b214f70d25c209aeae219871917aa1de34371f5988515d7",
+      "stage_count": 107530502
+    }
+  ],
+  "owner": {
+    "checker_blob": "dafb228c94468ff83b73f62e0d5792eba832b948",
+    "checker_path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/check_binary_af.py",
+    "checker_sha256": "07c40e179d0446c52650e7a148c82ef33cd03d0349b0875b5b6af5acd7d9f3a5",
+    "commit": "9f5b757f699d7310ea69c0c889037f614533b4f7",
+    "pull_request": 334,
+    "repository": "gvakhrushev/d0_15",
+    "result_blob": "52a9dd556782263ca64b9210c2a9d32cb5df045e",
+    "result_path": "02_REGISTRY/research/sources/d0_binary_af_actuation_2026-10-28/result.json",
+    "result_sha256": "bc2addf30982c3c8ba219358d63f7913485c6877763c3e65dd824766b3620f1a",
+    "scientific_input_commit": "48500384e9a25b25a6a0f54911f5af50c2bc1625"
+  },
+  "replay": {
+    "local_environment": {
+      "mpmath": "1.3.0",
+      "numpy": "2.0.2",
+      "python": "3.9.6",
+      "scipy": "1.13.1",
+      "sympy": "1.14.0"
+    },
+    "matches_owner_result_except_environment": true,
+    "modes": [
+      "ordinary",
+      "optimized",
+      "ordinary_repeat"
+    ],
+    "only_difference": [
+      "environment"
+    ],
+    "owner_environment": {
+      "numpy": "2.3.5",
+      "python": "3.13.5"
+    },
+    "rle_files_identical_across_modes": true,
+    "stderr_bytes": 485,
+    "stderr_sha256": "bf0ba1dc0efe74675bc7013b4bf48302b82984c00281fec5cd94298da56084dc",
+    "stderr_warnings": [
+      "RuntimeWarning divide by zero in matmul",
+      "RuntimeWarning overflow in matmul",
+      "RuntimeWarning invalid value in matmul"
+    ],
+    "stdout_byte_identical_across_modes": true,
+    "stdout_bytes": 3987,
+    "stdout_sha256": "e8d15fc5753f829cf1df3097191520f3afb725344bd59f1bb85c29c2244737bb",
+    "warning_site": "complete compiled endpoint orthogonality check (check_binary_af.py line 234); all replays exited successfully"
+  },
+  "result": {
+    "GR_closed": false,
+    "Lean_or_CI_run": false,
+    "actual_centre": {
+      "C": "0.94737725962797031119550830717",
+      "Gamma": "0.00000239210246420517356747444216504",
+      "c": "0.618031419629779474516191901903",
+      "lambda": "0.174668163808349646654855415145"
+    },
+    "additional_modes": 32088,
+    "all_column_errors": {
+      "canonical_16_columns": 7.771561172376096e-16,
+      "native_512_columns": 4.3298697960381105e-15
+    },
+    "all_intermediate_future_tests_identified": false,
+    "binary_modes": 65536,
+    "checks": 12202,
+    "common_inventory": {
+      "CX": 1154,
+      "G": 107529216,
+      "SourceI": 132
+    },
+    "common_real_clock_stages": 107530502,
+    "each_repeated_primitive_iterated": false,
+    "exact_native_pair": {
+      "interval_Gamma_lower": "0.00000239210246420517356747444216504",
+      "interval_certified_absolute_normalized_error_less_than": "0.0002",
+      "no_separate_endpoint_compiler_error_for_decoded_pair": true,
+      "normalized_contrast": "0.99984250672116607925549376739",
+      "rigorous_Taylor_bound_formula_evaluated": "0.000199276801193860427474347975752",
+      "step": "0.0156210068607494342652031218336",
+      "whole_heat_absolute_normalized_bound": "10^(-N+8), N=107530502"
+    },
+    "finite_source": {
+      "actual_error": "0.000255440137204595375293941694006",
+      "compiled_normalized_contrast": "0.999586986058255850597938965563",
+      "full_heat_contrast_log10_bound": "-107530494.572599804462013172315",
+      "generic_budget_without_GNS_factor": "0.00652071360090374784087951927106",
+      "ideal_difference_from_derivative_numeric": "-0.000157573804539554026767092743135",
+      "ideal_normalized_contrast": "0.999842426195460445973232907257",
+      "rigorous_endpoint_error_budget": "0.000277602900483648699288200964103"
+    },
+    "full_source_all_raw_gate_faults_proved": false,
+    "huge_clock_matrix_materialized": false,
+    "original_AF_physical_actuation_proved": false,
+    "original_regular_modes": 33448,
+    "physical_binary_interface_admission_proved": false,
+    "physical_input_preparation_executed": false,
+    "status": "PASS_BINARY_AF_ENDPOINT_AND_FINITE_SOURCE"
+  },
+  "schema": "d0-canonical-binary-af-actuation-replay-v1",
+  "scope": "RLE outputs are deterministic gate-word descriptions and endpoint/finite-source controls. Physical binary-interface admission, physical input preparation, full raw-gate source control, and all intermediate future tests remain unproved."
+}

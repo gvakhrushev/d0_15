@@ -1,0 +1,104 @@
+{
+  "different_owner_receipt_fields": [
+    "environment",
+    "residuals",
+    "values"
+  ],
+  "execution_flags": [
+    "-Werror",
+    "-O -Werror"
+  ],
+  "files": {
+    "python312_normal.json": {
+      "bytes": 12500,
+      "sha256": "b391683230bc7e61cbf9b96cde731da09a5c5d0acdd90122e97e32d43214dd64"
+    },
+    "python312_normal.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python312_optimized.json": {
+      "bytes": 12500,
+      "sha256": "b391683230bc7e61cbf9b96cde731da09a5c5d0acdd90122e97e32d43214dd64"
+    },
+    "python312_optimized.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_normal.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_normal.stderr": {
+      "bytes": 791,
+      "sha256": "ceb0558759f19732e8acbc65c340679c5f69f72003c6e0d0462413e6951d4ee8"
+    },
+    "python39_optimized.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_optimized.stderr": {
+      "bytes": 791,
+      "sha256": "ceb0558759f19732e8acbc65c340679c5f69f72003c6e0d0462413e6951d4ee8"
+    }
+  },
+  "local_check_count": 65,
+  "local_check_counts_by_kind": {
+    "exact_structural": 5,
+    "exact_symbolic": 11,
+    "nominal_numeric": 45,
+    "provenance": 4
+  },
+  "local_environment": {
+    "numpy": "2.5.4",
+    "python": "3.12.13",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0"
+  },
+  "local_max_residual": "9.7699626167013776e-15",
+  "local_values": {
+    "charge_source": "8.4686674750000064e-04",
+    "complex_CQ_gain": "1.3793452646353899e-01",
+    "real_CQ_gain": "1.3793452646353943e-01",
+    "wrong_two_sided_record_cost_gap": "3.7083050788293426e-01"
+  },
+  "machine": "arm64",
+  "normal_optimized_byte_identical": true,
+  "numeric_scope": "nominal floating residuals, not interval certificates",
+  "owner_check_count": 65,
+  "owner_check_counts_by_kind": {
+    "exact_structural": 5,
+    "exact_symbolic": 11,
+    "nominal_numeric": 45,
+    "provenance": 4
+  },
+  "owner_environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "owner_max_residual": "9.7699626167013776e-15",
+  "owner_receipt_byte_identical": false,
+  "owner_values": {
+    "charge_source": "8.4686674750000107e-04",
+    "complex_CQ_gain": "1.3793452646353899e-01",
+    "real_CQ_gain": "1.3793452646353943e-01",
+    "wrong_two_sided_record_cost_gap": "3.7083050788293420e-01"
+  },
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python312_modes_exit_code": 0,
+  "python39_environment": {
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0"
+  },
+  "python39_failure": "RuntimeWarning: divide by zero encountered in matmul in original constructor under -Werror; no owner checks completed",
+  "python39_modes_exit_code": 1,
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

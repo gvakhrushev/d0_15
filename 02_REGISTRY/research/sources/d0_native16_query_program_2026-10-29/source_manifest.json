@@ -1,0 +1,140 @@
+{
+  "schema": "d0-native16-query-program-intake-v1",
+  "upstream": {
+    "pull_request": 334,
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "commit": "f8a1d89329e5f44a8f49118dac004d1bc46cc417",
+    "parent_commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+    "memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "memo_blob": "40ae4564ce0e8b72defb31e763fd453ca6d563f2",
+    "memo_bytes": 3921262,
+    "memo_sha256": "63fc7e35b4f9f5110a6d51185fe6e4654048f41a8edd7e3d94b7aa7f34f4c7ae",
+    "section_file": "upstream_section_7dy.md",
+    "section_heading": "## 7dy. Compile the internal QUERY programme in the original alphabet and price its independent preparation and hardware controls",
+    "section_bytes": 55131,
+    "section_sha256": "89691e3c5ca0726b3b7403bf5c097dd7ade53fbbe5d096cc041678de1b94dcf4",
+    "task_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "task_blob": "0c44726012c691f142a5500ff1da2a68450e72fd",
+    "task_bytes": 1216399,
+    "task_sha256": "d36ef484b5e0c498292c9b5bd44b62d77e087dc2ee29bf2474d38321a11432e4",
+    "task_excerpt_file": "upstream_task_7dy.md",
+    "task_excerpt_bytes": 4260,
+    "task_excerpt_sha256": "404a7132b093fa31667be7cd42cb0bfd1567b4ccd9f9a087bb4fa135e1689818",
+    "checker_file": "check_native_query_program.py",
+    "checker_sha256": "b7892b3132123f86de77bf41a7a67ff0c1ed499af556e16b685ea52c9c8f6252",
+    "receipt_file": "expected_receipt_7dy.json",
+    "receipt_sha256": "490e49dd95967056fcbff58b465da2700b707b8295efa5e86622364bbcfbd111"
+  },
+  "owner_input": {
+    "commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45",
+    "primary_memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "primary_memo_blob": "d540a831dd07457b07e2888b96bf7dcc02ab4928",
+    "primary_memo_sha256": "18cba7d268f7ad23f73adc5f15de47c09e49a2c26aebd674ae0cf904ec467643",
+    "internal_program_owner_path": "02_REGISTRY/research/A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md",
+    "internal_program_owner_sha256": "ed2323c7610f94994868a947fd17be6a50f0170e29b33c260a8441bd3087dc04"
+  },
+  "prior_intake": {
+    "path": "02_REGISTRY/research/sources/d0_native16_guarded_use_retraction_2026-10-29",
+    "source_manifest_sha256": "da20dfa0f7f33fb85938a6a199bf2d2712c3b678e625613a62a063c91e199e94",
+    "artifacts": {
+      "inputs/upstream_receipts.md": {
+        "source_artifact": "inputs/upstream_receipts.md",
+        "bytes": 76602,
+        "sha256": "e4103d993dbc945ca68429b42ae872fd8d669a4c54938065eda0129da5473425"
+      },
+      "inputs/upstream_section_7dw.md": {
+        "source_artifact": "upstream_section_7dw.md",
+        "bytes": 37559,
+        "sha256": "8da2dd83632bef105bb0f980c3c9860c385430d5e446505c9d5562185313b354"
+      },
+      "inputs/upstream_section_7dx.md": {
+        "source_artifact": "upstream_section_7dx.md",
+        "bytes": 42038,
+        "sha256": "ab55baa956de056c0c6a99eae0c020302d9f901744fbdd4e83ec3926190ddd97"
+      },
+      "inputs/expected_receipt_7dx.json": {
+        "source_artifact": "expected_receipt_7dx.json",
+        "bytes": 11918,
+        "sha256": "2e0c9e190ed587e66c6e562e6cc23a0696191a0de04b723b64ce3d57d94b265a"
+      }
+    }
+  },
+  "runtime_inputs": {
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": {
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+      "commit": "691118e35e444cfb0ae9c615d9a8e0b69917919a",
+      "blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44"
+    },
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": {
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+      "commit": "691118e35e444cfb0ae9c615d9a8e0b69917919a",
+      "blob": "1354b8dadd924b0d96639ba402385e9b734787a9"
+    },
+    "02_REGISTRY/research/A4D_INTERNAL_PROGRAM_AND_GLOBAL_QUERY_STATIONARITY_2026_10_28.md": {
+      "sha256": "ed2323c7610f94994868a947fd17be6a50f0170e29b33c260a8441bd3087dc04",
+      "commit": "691118e35e444cfb0ae9c615d9a8e0b69917919a",
+      "blob": "e125b760bd060b71a1fa41c5cae29a41cc2cd8c6"
+    }
+  },
+  "consumed_owner_results": {
+    "7dw_checker_sha256": "e3ac0eb35ec9c4043cf51485f36d3145be3f9be988e28d38330c510599906fc3",
+    "7dx_receipt_sha256": "2e0c9e190ed587e66c6e562e6cc23a0696191a0de04b723b64ce3d57d94b265a",
+    "7dy_input_commit": "442ddd86c96a4298efea7dc69e803f2ef1f6cd45"
+  },
+  "artifacts": {
+    "PROOF_RU.md": {
+      "bytes": 5461,
+      "sha256": "c460c390f309c98e346be8b3618c7441986f05bf8caf7f0d367e5cf7560b479d"
+    },
+    "upstream_section_7dy.md": {
+      "bytes": 55131,
+      "sha256": "89691e3c5ca0726b3b7403bf5c097dd7ade53fbbe5d096cc041678de1b94dcf4"
+    },
+    "upstream_task_7dy.md": {
+      "bytes": 4260,
+      "sha256": "404a7132b093fa31667be7cd42cb0bfd1567b4ccd9f9a087bb4fa135e1689818"
+    },
+    "check_native_query_program.py": {
+      "bytes": 15743,
+      "sha256": "b7892b3132123f86de77bf41a7a67ff0c1ed499af556e16b685ea52c9c8f6252"
+    },
+    "expected_receipt_7dy.json": {
+      "bytes": 25917,
+      "sha256": "490e49dd95967056fcbff58b465da2700b707b8295efa5e86622364bbcfbd111"
+    },
+    "replay_native_query_program.py": {
+      "bytes": 7249,
+      "sha256": "d4ae4a1d1a2229aab4f11ceebb9f64fa8c785cde3818122277ddc1284d74b64b"
+    },
+    "inputs/upstream_receipts.md": {
+      "bytes": 76602,
+      "sha256": "e4103d993dbc945ca68429b42ae872fd8d669a4c54938065eda0129da5473425"
+    },
+    "inputs/upstream_section_7dw.md": {
+      "bytes": 37559,
+      "sha256": "8da2dd83632bef105bb0f980c3c9860c385430d5e446505c9d5562185313b354"
+    },
+    "inputs/upstream_section_7dx.md": {
+      "bytes": 42038,
+      "sha256": "ab55baa956de056c0c6a99eae0c020302d9f901744fbdd4e83ec3926190ddd97"
+    },
+    "inputs/expected_receipt_7dx.json": {
+      "bytes": 11918,
+      "sha256": "2e0c9e190ed587e66c6e562e6cc23a0696191a0de04b723b64ce3d57d94b265a"
+    }
+  },
+  "scope": {
+    "phase": "native realization and complete-price application",
+    "parent_substitution": "Compile the supplied internal QUERY processor and both independently varied programme preparations into the original paid G/CX/SourceI alphabet, retaining all 560 local hardware directions and the complete source and price.",
+    "remaining": [
+      "derive the physical domain of QUERY and in-branch hardware variations",
+      "prove primitive/port admission and the native task law that selects a programme",
+      "complete original GR transport, dynamics and refinement",
+      "Lean formalization and CI"
+    ],
+    "GR_closed": false,
+    "physical_X_N_identified": false,
+    "fixed_processor_physically_forced": false,
+    "new_action_or_Info_term": false
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "checker_sha256": "43ef1aa73fcdabd120261ece0adcaa6ea01efce64cbbeaa5441b725868365e8a",
+  "checks": 362,
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "exact_charts": {
+    "amplitude_first_source": "0",
+    "amplitude_second_source": "-4*(1-c)*w/c",
+    "forward_only_fixed_cut_amplitude_second_source": "2*w",
+    "one_sided_probability_source": "-2*(1-c)*w/c",
+    "programme_ray_is_not_a_minimum_if_c_lt_1": true,
+    "report_normalized_source": "4*w/c"
+  },
+  "full_operator": {
+    "bare_clock_modes_both_grades": 4864,
+    "corner_error": 5.551115123125783e-17,
+    "extra_bare_heat_baseline": 0.9073414389560485,
+    "homogeneous_scene_modes_if_same_clock_assigned": 1033600,
+    "large_heat_matrix_diagonalized": false,
+    "same_N_assigned_only_to_declared_controlled_comparison": true,
+    "same_code_QUERY_source": 7.000613008648328e-06,
+    "same_code_QUERY_source_over_w": 16.465368218171935,
+    "whole_return_error": 1.6940658945086007e-21
+  },
+  "full_physical_variation_domain_proved": false,
+  "global_reflection_stationarity": {
+    "critical_class_for_invertible_K": "C^3=C and [C^2,K K*]=0",
+    "largest_full_scalar_FD_error": 7.102096688527126e-13,
+    "largest_matrix_identity_error": 2.4426297205443547e-15,
+    "minimum_observed_source_over_w": 3.1409482575354826,
+    "scope": "complete return at fixed K; full price only with proved neutral or bounded extra source",
+    "singular_past_negative_control": true,
+    "uniform_positive_collar_floor": "4*c_min*(1-c_max^2)/c_max^2"
+  },
+  "native_children": {
+    "child_columns": 32,
+    "child_inventory": {
+      "CX": 24,
+      "G": 4,
+      "SourceI": 10
+    },
+    "child_raw_stages": 38,
+    "controlled_columns": 64,
+    "controlled_physical_duration_identified": false,
+    "controlled_scheduled_slots": 38,
+    "native_controlled_primitive_admission_proved": false,
+    "original_oldRIGHT_retained": true,
+    "protected_rank": 8
+  },
+  "negative_controls": {
+    "classical_average_q_derivative": -0.5005129606218505,
+    "coherent_q_derivative": -0.257790927254746,
+    "exact_minimum_claimed": false,
+    "pure_programme_zero_does_not_select_Einstein": true
+  },
+  "new_native_primitive_claimed": false,
+  "physical_controlled_evaluator_admitted": false,
+  "retained_past": {
+    "cases": [
+      {
+        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
+        "other_return_T": "1",
+        "past_minimum_diagonal": "0.3",
+        "q_source_over_w": "-6.472135954999579392818347",
+        "report_finite_contrast_over_w": "16.94427218416323080807282",
+        "w": "1.883511895437402555955425e-8"
+      },
+      {
+        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
+        "other_return_T": "1e-50",
+        "past_minimum_diagonal": "0.3",
+        "q_source_over_w": "-6.472135954999579392818347",
+        "report_finite_contrast_over_w": "16.94427218416323743562408",
+        "w": "1.883511918203097190983516e-58"
+      },
+      {
+        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
+        "other_return_T": "1",
+        "past_minimum_diagonal": "1e-20",
+        "q_source_over_w": "-6.472135954999579392818347",
+        "report_finite_contrast_over_w": "16.9442721841632297305527",
+        "w": "1.405193409071749365331496e-8"
+      },
+      {
+        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
+        "other_return_T": "1e-50",
+        "past_minimum_diagonal": "1e-20",
+        "q_source_over_w": "-6.472135954999579392818347",
+        "report_finite_contrast_over_w": "16.94427218416323743562408",
+        "w": "1.405193428817434811783413e-58"
+      },
+      {
+        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
+        "other_return_T": "1",
+        "past_minimum_diagonal": "0",
+        "q_source_over_w": "-6.472135954999579392818347",
+        "report_finite_contrast_over_w": "16.9442721841632297305527",
+        "w": "1.405193409071749365331496e-8"
+      },
+      {
+        "amplitude_Hessian_over_w": "-12.94427190999915878563669",
+        "other_return_T": "1e-50",
+        "past_minimum_diagonal": "0",
+        "q_source_over_w": "-6.472135954999579392818347",
+        "report_finite_contrast_over_w": "16.94427218416323743562408",
+        "w": "1.405193428817434811783413e-58"
+      }
+    ],
+    "literal_child_J_gap": "0.00000720422618996428777930429964557",
+    "literal_program_amplitude_Hessian": "-0.00000550354156189542182561046248528",
+    "zero_normalized_gain_assumed": false
+  },
+  "scientific_input": "fd35893d77e4aa5f819bafa0c6428c8e7a8f1812",
+  "status": "PASS_INTERNAL_PROGRAM_SOURCE_CHART",
+  "task_law_selection_proved": false
+}

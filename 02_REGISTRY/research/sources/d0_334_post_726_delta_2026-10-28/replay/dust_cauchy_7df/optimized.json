@@ -1,0 +1,61 @@
+{
+  "GR_closed": false,
+  "check_names": [
+    "immutable input 02_REGISTRY/research/sources/d0_mass_coordinate_equivalence_2026-10-28/PROOF_RU.md",
+    "immutable input 02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md",
+    "spatial control metric is positive definite and non-diagonal",
+    "synchronous connection B row 00",
+    "synchronous connection B row 01",
+    "synchronous connection B row 02",
+    "synchronous connection B row 10",
+    "synchronous connection B row 11",
+    "synchronous connection B row 12",
+    "synchronous connection B row 20",
+    "synchronous connection B row 21",
+    "synchronous connection B row 22",
+    "full covariant divergence gives Hamiltonian-constraint transport",
+    "full covariant divergence gives momentum-constraint transport 0",
+    "full covariant divergence gives momentum-constraint transport 1",
+    "full covariant divergence gives momentum-constraint transport 2",
+    "actual volume law E_dot/E equals theta",
+    "conserved E times momentum residual includes volume derivative",
+    "a nonzero initial Hamiltonian residual is not erased by evolution",
+    "flat dust expansion solves all spatial Einstein rows for arbitrary c",
+    "same expansion obeys actual density continuity",
+    "gravitational operand is constant with its actual volume",
+    "the missing initial lapse constraint has a nonzero explicit residual",
+    "the wrong initial constraint propagates rather than disappearing",
+    "the correct mass-volume initial constraint is preserved",
+    "the original nonlinear temporal metric source equals minus the trace row",
+    "the actual trace branch supplies the same Einstein coupling",
+    "exact Golden nonlinear negative control: spatial equations do not supply the lapse row"
+  ],
+  "checker_sha256": "b79266d5f226552125b7e0500a43626665a78914b1ebb6c156dd1b983fea59fd",
+  "checks": 28,
+  "constraint_transport": [
+    "d_t(E M_i)=0",
+    "d_t(E C)=E div_gamma M"
+  ],
+  "environment": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "external_existence_theorem_checked_by_this_script": false,
+  "input_commit": "1e6420f319d714be53363a77823f76ec620a6473",
+  "input_pins": {
+    "02_REGISTRY/research/A4D_CLOSED_HISTORY_NONLINEAR_EINSTEIN_DUST_2026_10_28.md": {
+      "git_blob": "154b341f17adce88594b0b5e9df0d38c0283d288",
+      "sha256": "d2951e92a97c5d9ab088c27e0cd3af0989a613df57cf9d1546d2281b6eefa228"
+    },
+    "02_REGISTRY/research/sources/d0_mass_coordinate_equivalence_2026-10-28/PROOF_RU.md": {
+      "git_blob": "8cbf01f2c1cbdc01faf6755d4909c41591f41b0b",
+      "sha256": "d70ee9c87041dea710c86ab42217f6397510568a2cf6ec9ac66d7c2026646145"
+    }
+  },
+  "native_compiler_run": false,
+  "nonlinear_bad_normal_field_norm": "131765003556556640771196021600020551017403416048284117479817100433667433170721192675972022112609105720285316878916911105/107176730929733009652841091415933596617650540481509171896867418810380346868049204181986827574048720323327798385973585533367278217749002715136",
+  "numerical_PDE_evolution_run": false,
+  "physical_admission_proved": false,
+  "status": "PASS_NONLINEAR_DUST_CAUCHY_TRANSPORT",
+  "wrong_volume_Hamiltonian_residual": "-2*(-2*c + 3*kappa*q0)/(3*c*t**2)"
+}

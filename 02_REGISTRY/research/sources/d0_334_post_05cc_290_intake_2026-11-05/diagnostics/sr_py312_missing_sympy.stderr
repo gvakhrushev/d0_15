@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/tmp/d0-source-290-audit/sr.py", line 236, in <module>
+    main()
+  File "/tmp/d0-source-290-audit/sr.py", line 59, in main
+    spec.loader.exec_module(native)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/private/tmp/d0-source-290-audit/root/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py", line 21, in <module>
+    import sympy as sp
+ModuleNotFoundError: No module named 'sympy'

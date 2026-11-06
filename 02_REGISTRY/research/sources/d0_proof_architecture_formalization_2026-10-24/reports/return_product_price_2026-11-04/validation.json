@@ -1,0 +1,113 @@
+{
+  "scope": "Finite return-source (10)-(12) Lean composition, not full programme completion or physical admission",
+  "implementation_commit": "7062d1c9e9fe21bf6373e494d169566d9b6505ba",
+  "report_snapshot_before_validation": "6bc481de80e80f37da40e3c996ae52d70398ff94",
+  "lean_source_digest": "e29d141659b19bb9dd707ebfe5213242a1662364214aebc3ac56e27a86432bbd",
+  "dependency_sha256": "a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e",
+  "science_source": {
+    "owner_pr": 334,
+    "commit": "fd35893d77e4aa5f819bafa0c6428c8e7a8f1812",
+    "path": "02_REGISTRY/research/sources/d0_task_faithful_source_2026-10-28/PROOF_RU.md",
+    "blob": "c99e90a8c8e96bae70e700fa88d1c2d824a1831b",
+    "sha256": "9f2354817860f9024a597dba4bd14c0580cc021de5c473925740b46b0e8f96e5",
+    "local_bytes_match": true
+  },
+  "full_build": {
+    "command": "python3 tools/lean_task_build.py final",
+    "target": "D0.All",
+    "returncode": 0,
+    "lake_jobs": 4786,
+    "warning_lines": 1323,
+    "new_module_warning_lines": 0,
+    "warning_scope": "All warnings locate unchanged modules; full output retained in build.log.gz"
+  },
+  "compiled_inventory": {
+    "path": "declarations.json",
+    "public_import_root": "D0.All",
+    "worktree_dirty": false,
+    "records": 239,
+    "new_modules": [
+      "D0.Analysis.GramMatrixOrder",
+      "D0.Analysis.MatrixRelativeLogDetBound",
+      "D0.Analysis.MatrixRelativeLogDetContrast",
+      "D0.Analysis.NoncommutingPerturbationProduct",
+      "D0.Analysis.PositiveMatrixLogDet",
+      "D0.Analysis.RelativeLogDetScaleBound",
+      "D0.Research.TaskFaithfulReturnContrast",
+      "D0.Research.TaskFaithfulReturnPrice",
+      "D0.Research.TaskFaithfulReturnProduct"
+    ],
+    "new_module_records_including_generated": 93,
+    "new_module_axiom_footprint_allowed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "nonstandard_axioms": [],
+    "missing_or_uncollected_records": [],
+    "source_matches_full_build": true
+  },
+  "guards": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "returncode": 0,
+      "result": "claims=889 assumptions=31 aliases=58 formal_support=251 lean_closure=974; PASS warnings=0"
+    },
+    {
+      "command": "python3 tools/generate_lean_views.py --check",
+      "returncode": 0,
+      "result": "PASS lean_views stale=0"
+    },
+    {
+      "command": "python3 03_FORMALIZATION/tools/check_no_sorry_in_core.py --all",
+      "returncode": 0,
+      "result": "PASS"
+    },
+    {
+      "command": "python3 tools/formalization_debt_audit.py --check",
+      "returncode": 0,
+      "result": "PASS findings=5 baseline=5"
+    },
+    {
+      "command": "git diff --check",
+      "returncode": 0,
+      "result": "PASS"
+    }
+  ],
+  "independent_review": {
+    "method": "read-only source and concrete adapter review by separate assistant; no semantic C0 or scientific application acceptance",
+    "checked": [
+      "ordered noncommuting products and exact factorization",
+      "Gram order uses actual Hilbert norm and orthonormal basis",
+      "logdet monotonicity not assumed",
+      "exact spectral price and real trace-gain",
+      "actual effect-error input drives both endpoint errors",
+      "common K and exact T_k=q_k*T0 baseline binding",
+      "singular history and explicit normalized denominator restrictions"
+    ],
+    "issues_remaining": []
+  },
+  "c0_book02_view": {
+    "path": "c0_book02_view.json",
+    "snapshot": "6bc481de80e80f37da40e3c996ae52d70398ff94",
+    "unit_candidates": 30,
+    "issues": [],
+    "build_replayed_by_view": false,
+    "semantic_acceptance": false,
+    "coverage_reported": false
+  },
+  "not_rerun": [
+    "full cold-start suite",
+    "historical #334 mathematical checker replays",
+    "unchanged Python fixture suites"
+  ],
+  "programme_complete": false,
+  "c0_accepted": false,
+  "GR_closed": false,
+  "evidence_sha256": {
+    "declarations.json": "e265774da7e2ecaeeac6f8af6b521736b4ed0df56be60628c1c3ef4d26e9c8b0",
+    "build_receipt.json": "3358398a5671b2d2661f6c4baa9c04cac646ea1969787645be9628bb5d299587",
+    "build.log.gz": "9cb2a2b05e15337630eefafc4a2a62e10096c56ee46d16b057edc14501404792",
+    "c0_book02_view.json": "85cff6a7af87e93e5143999c5b6f0c98e28a7bbf6951394445e50a613cbd2f97"
+  }
+}

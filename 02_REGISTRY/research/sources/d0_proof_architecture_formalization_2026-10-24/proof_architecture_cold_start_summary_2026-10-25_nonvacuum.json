@@ -1,0 +1,198 @@
+{
+  "schema": "d0-proof-architecture-cold-start-summary-v1",
+  "snapshot_commit": "9274b3abedd67cdc39bd33653a878e4f87a513ae",
+  "worktree_dirty": true,
+  "search_limit": 18,
+  "search_cases_found_all_sources": 20,
+  "search_cases_total": 20,
+  "benchmark_cases_total": 21,
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "semantic_scope_review_is_manual": true,
+  "case": {
+    "id": "positive-nonvacuum-recovery",
+    "scope_review": "The compiled NonvacuumBrinkmannStencil result proves the exact five-point harmonic/radial readout and binds its source norm to the same finite midpoint matter record. This is only the pointwise stencil/source fragment: the original CAR construction, 40-to-3-to-1 substitution, all 16+24+2 Euler rows, refinement estimate, and physical native Book/clock/source selection remain separate and open.",
+    "required_sources": {
+      "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md": {
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "pinned_snapshot",
+        "expected_commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+        "expected_blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+        "required_sections": [
+          "7.1",
+          "7.2"
+        ],
+        "sections_found": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "7.1",
+          "7.2",
+          "7.3",
+          "7.4"
+        ],
+        "missing_sections": []
+      },
+      "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean": {
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [],
+        "missing_sections": []
+      },
+      "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_declarations_2026-10-25.json": {
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [],
+        "missing_sections": []
+      }
+    },
+    "queries": [
+      {
+        "query": "positive nonvacuum harmonic cubic fixed nonlinear Brinkmann metric",
+        "top_candidates": [
+          {
+            "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+            "matched_terms": 7,
+            "query_terms": 7,
+            "direct_content": true,
+            "source_commit": "8d55d0a95c63f1fd7c67e01b19828f54f16ce1ec",
+            "source_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+            "pin_status": "verified"
+          },
+          {
+            "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+            "matched_terms": 7,
+            "query_terms": 7,
+            "direct_content": true,
+            "source_commit": "9cd16820d020aed107b6db6215c44cfe3b7ea6f2",
+            "source_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204",
+            "pin_status": "verified"
+          },
+          {
+            "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+            "matched_terms": 7,
+            "query_terms": 7,
+            "direct_content": true,
+            "source_commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+            "source_blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+            "pin_status": "verified"
+          }
+        ]
+      },
+      {
+        "query": "transverseFivePoint_nonvacuumBrinkmannProfile_eq_source harmonicBrinkmannCubic radial quadratic",
+        "top_candidates": [
+          {
+            "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+            "matched_terms": 4,
+            "query_terms": 4,
+            "direct_content": true,
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null
+          },
+          {
+            "path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+            "matched_terms": 3,
+            "query_terms": 4,
+            "direct_content": true,
+            "source_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+            "source_blob": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+            "pin_status": "verified"
+          },
+          {
+            "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_declarations_2026-10-25.json",
+            "matched_terms": 4,
+            "query_terms": 4,
+            "direct_content": true,
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null
+          }
+        ]
+      },
+      {
+        "query": "nonvacuumProfile_source_eq_finiteMidpointMatterNorm finiteMatterForwardGradient_midpointStep twoComponentMatterNormSq",
+        "top_candidates": [
+          {
+            "path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean",
+            "matched_terms": 3,
+            "query_terms": 3,
+            "direct_content": true,
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null
+          },
+          {
+            "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_brinkmann_stencil_declarations_2026-10-25.json",
+            "matched_terms": 3,
+            "query_terms": 3,
+            "direct_content": true,
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null
+          },
+          {
+            "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+            "matched_terms": 2,
+            "query_terms": 3,
+            "direct_content": true,
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null
+          }
+        ]
+      },
+      {
+        "query": "native finite matter midpoint exact energy five point source same interval",
+        "top_candidates": [
+          {
+            "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+            "matched_terms": 9,
+            "query_terms": 9,
+            "direct_content": true,
+            "source_commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+            "source_blob": "63c36b18af67fc1f113f9e33deb13cf43ddf4556",
+            "pin_status": "verified"
+          },
+          {
+            "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+            "matched_terms": 9,
+            "query_terms": 9,
+            "direct_content": true,
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null
+          },
+          {
+            "path": "02_REGISTRY/research/CONTROL_A4D_NATIVE_VARIATIONAL_CHECKPOINT.json",
+            "matched_terms": 9,
+            "query_terms": 9,
+            "direct_content": true,
+            "source_commit": null,
+            "source_blob": null,
+            "pin_status": null
+          }
+        ]
+      }
+    ]
+  }
+}

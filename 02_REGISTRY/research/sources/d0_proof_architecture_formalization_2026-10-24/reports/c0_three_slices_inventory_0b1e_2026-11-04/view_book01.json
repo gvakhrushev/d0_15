@@ -1,0 +1,1403 @@
+{
+  "authority": {
+    "application": {
+      "consumer_location": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "decision": {
+        "path": "02_REGISTRY/gr_assembly/reviews/lean-verification-core-to-foundation.md",
+        "ref": "4aa19a667387b3250d310d00c511bd1dd315bbb0",
+        "sha256": "0f2d369c951408ae0c692447d09eccf172f42d1a83365ad125cc091de6a6b9a5"
+      },
+      "hypothesis_map": {
+        "coded_representation": {
+          "target_hypothesis": "coded_representation"
+        },
+        "execution_interface": {
+          "target_hypothesis": "execution_interface"
+        },
+        "verification_representation": {
+          "target_hypothesis": "verification_representation"
+        }
+      },
+      "id": "lean-verification-core-to-foundation",
+      "interpretation": "existing application only; not acceptance of these C0 atoms",
+      "path": "02_REGISTRY/gr_assembly/applications.json",
+      "record_sha256": "d53a965e0b258f787078f1e197554f043ae035a5feda7a7b2aca3ad00d71ca8e",
+      "recorded_review_state": "accepted"
+    },
+    "compiled_inventory": {
+      "blob": "a939631625affb51b5a9ff8d948b6b6966c87cf9",
+      "collector_script": "regenerated_text_matches_digest_not_executed",
+      "collector_sha256": "d9678fbc51c8c8fa22bf8b5f3bddd4a6e2612a7aadb035d2de16fa579d306291",
+      "collector_source": "unchanged_between_snapshots",
+      "current_build_replayed": false,
+      "lean_source_digest": "7b4ccbefefc6e2d88caba0375d39a47a53a954e2460890e226c2b1c91d3b6f88",
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/c0_three_slices_inventory_0b1e_2026-11-04/declarations.json",
+      "semantic_correspondence": "pending_review",
+      "sha256": "21eaede13c667a50dd877c31dd1e0bf2a5b8e7df402cba4cbae328e9ed24697c",
+      "snapshot_commit": "0b1e77ad4da31fe7d37d38828bf619aa7c6e8a0c",
+      "source_digest_status": "reported_not_recomputed",
+      "state": "reported_compiled_metadata_consistent_not_replayed",
+      "toolchain": "leanprover/lean4:v4.30.0",
+      "tracked_lean_inputs": "unchanged_between_snapshots"
+    },
+    "source": {
+      "blob": "eb2d8ea779189084cdaaca717326df88589ec918",
+      "commit": "a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38",
+      "module_blob": "01b02ebbe81a62464e81d5c397c101fd60fff4f9",
+      "module_path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+      "owner_modules": [
+        {
+          "blob": "01b02ebbe81a62464e81d5c397c101fd60fff4f9",
+          "module": "D0.Foundation.VerificationCore",
+          "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean"
+        },
+        {
+          "blob": "065a8f631e65bda8b9bc85a6ff6217de31bdd1f4",
+          "module": "D0.Foundation.FutureExecution",
+          "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean"
+        },
+        {
+          "blob": "f0dbfcf6e99a24346fa1d9407b4ed49cc784a2e1",
+          "module": "D0.Foundation.VerifiabilityNecessity",
+          "path": "03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean"
+        }
+      ],
+      "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "primary_path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "primary_section_sha256": "94516f450237cbb7e0cbccd831ffe9e7b9b2542a1ad92b8e04bf89985e796f8e",
+      "section_range": [
+        14123,
+        18478
+      ],
+      "section_sha256": "bd468ba86fc3eb70004871d2bb5777c40afbfb7f92394d33c52b46759692ea9f"
+    }
+  },
+  "checks": {
+    "compiled_inventory": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "existing_application": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "snapshot": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    },
+    "source_and_primary": {
+      "state": "raw_links_consistent_not_semantic_acceptance"
+    }
+  },
+  "context_dispositions": {
+    "acceptance": "not_authenticated_by_this_view",
+    "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+    "pinned_text": "C0 source review candidate: Book01 §01.1.8\n\nOn the same snapshot `a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38`,\n`01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md` has Git blob\n`eb2d8ea779189084cdaaca717326df88589ec918`. The complete section is\n`[14123,18478)`, SHA-256\n`bd468ba86fc3eb70004871d2bb5777c40afbfb7f92394d33c52b46759692ea9f`.\nThe following eleven adjacent ranges cover it exactly. They are candidate\nsource classifications, not accepted C0 units. An independent reading checked\nthe scope and Lean hypotheses; source ranges may contain several units.\n\n| Byte range | Candidate disposition and existing support |\n| --- | --- |\n| `[14123,14190)` | Heading and separator, structural context. |\n| `[14190,14686)` | The fixed `FutureExecution F`, finite action words including the empty word, and `run`/`profile`; source navigation is provenance. |\n| `[14686,15020)` | Equality of future profiles, `futureSetoid`, step congruence and quotient step. Current observation is a consequence of the empty word; strict difference requires an example. |\n| `[15020,15503)` | With supplied `E : TheoryVerification F.futureEmpiricalTheory`, the future-class equivalence and represented state/run/record; in particular `representedRecord_eq_iff` and `representedRun_state` are distinct results. |\n| `[15503,16028)` | The first two statements repeat the preceding range; additionally `representedComparison_iff` and `representedComparison_catalogue_independent`. Protocol and comparison hypotheses remain those of `E`. |\n| `[16028,16656)` | `sufficient_memory_preserves_record` requires an encoder/decoder recovering every profile. The finite hidden-bit control and the separate `uncoupledCenter` control use supplied `E` where stated; the latter is defined for arbitrary `F` with an added Boolean. |\n| `[16656,16923)` | `SigmaObject`, `SigmaWitness` and `CodePresentation` definitions. Coding, round-trip, shortlex and computability properties are inputs carried by the witness, not consequences inferred from `E`. |\n| `[16923,17382)` | Code injectivity, canonical/minimal code, archive/history/query definitions and `archiveCode_eq_iff`, including both future profile and line identity. |\n| `[17382,17786)` | Archive line preservation, query and append retention with `n < history.length`; registered list order is not identified with a physical clock. |\n| `[17786,18069)` | `finiteSigmaWitness` requires supplied `E` and finite protocol state and line types. Computability statements about codes do not provide a computable encoder for arbitrary raw states. |\n| `[18069,18478)` | Source ownership, existing application and open physical conditions; this is provenance/scope rather than a new mathematical result. |\n\nThe selected declarations are owned by `D0.Foundation.VerificationCore`\n(blob `01b02ebbe81a62464e81d5c397c101fd60fff4f9`),\n`D0.Foundation.FutureExecution` (blob `065a8f631e65bda8b9bc85a6ff6217de31bdd1f4`)\nand `D0.Foundation.VerifiabilityNecessity`\n(blob `f0dbfcf6e99a24346fa1d9407b4ed49cc784a2e1`). These bytes are identical\nat the pinned source commit and the current implementation checkpoint.\nThe `EmpiricalTheoryFactorization` namespace does not imply ownership by\nthat source file: its generic quotient API remains an imported dependency\n(blob `8d5a0d565504d3f0e16de0ea716bf452f45c1d96`). The previously accepted\n`lean-verification-core-to-foundation` application has review ref\n`4aa19a667387b3250d310d00c511bd1dd315bbb0` and review SHA-256\n`0f2d369c951408ae0c692447d09eccf172f42d1a83365ad125cc091de6a6b9a5`.\nThat acceptance does not accept this source classification. Book01 and\nBook02 share a supplied representation bridge, but their statements are not\nautomatically merged. The wider physical claims in neighbouring §01.1.6 are\nnot consequences of this fixed-`F` operational classification.\n\n",
+    "section": "C0 source review candidate: Book01 §01.1.8",
+    "section_sha256": "94516f450237cbb7e0cbccd831ffe9e7b9b2542a1ad92b8e04bf89985e796f8e"
+  },
+  "interpretation": "This is a proposed finite Book01 §01.1.8 atomization, not the C0 denominator. Shared source ranges are evidence for distinct assertions, not disjoint byte units. Definitions, conditional theorems and negative controls remain distinct. Existing accepted application metadata does not accept these source classifications. All unselected slices and full C0 acceptance remain unresolved. Exact reported compiled signatures do not establish semantic correspondence or replay the build.",
+  "issues": [],
+  "schema": "d0-c0-kernel-section-view/1",
+  "scope": {
+    "all_other_c0_candidates": "not_enumerated_unresolved",
+    "book01_01_1_8": "selected_for_reconciliation_not_accepted",
+    "c0_acceptance_assessment": "not_evaluated",
+    "coverage_reported": false,
+    "finite_slice_only": true,
+    "scientific_status_changed": false,
+    "sections": [
+      "Book01 §01.1.8"
+    ],
+    "this_view_does_not_freeze_or_accept": true
+  },
+  "snapshot": "cc950a1b333e273944bb731fd48c6a20d3fedc6a",
+  "units": [
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "Type 1",
+        "kind": "inductive",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Supplied State, Action, Test and Outcome types, a total primitive step map and an observation map.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The composed foundation has a precise owner in\n[`VerificationCore.lean`](../03_FORMALIZATION/D0/Foundation/VerificationCore.lean),\nusing the existing\n[`FutureExecution`](../03_FORMALIZATION/D0/Foundation/FutureExecution.lean)\nand verification-necessity results. Let `F` supply states, primitive actions,\ntests and observations. Define the complete future profile by",
+      "source_excerpt_sha256": "b06ac86e5db27be6b9507679af771d221217c0d5cf28f9e53a63f3dfb8538321",
+      "source_range": [
+        14190,
+        14555
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution",
+      "statement": "The fixed operational interface packages its state/action/test/outcome carriers and primitive maps; it does not prove physical admission or completeness of an action/test family."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.run",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "(F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) → List F.Action → F.State → F.State",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.run",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F : FutureExecution; a finite word w : List F.Action and a raw state s.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The composed foundation has a precise owner in\n[`VerificationCore.lean`](../03_FORMALIZATION/D0/Foundation/VerificationCore.lean),\nusing the existing\n[`FutureExecution`](../03_FORMALIZATION/D0/Foundation/FutureExecution.lean)\nand verification-necessity results. Let `F` supply states, primitive actions,\ntests and observations. Define the complete future profile by\n\n\\[\n\\Phi_F(s)(w,q)\n=\\operatorname{observe}_F(\\operatorname{run}_F(w,s),q),\n\\qquad w\\in\\operatorname{List}(F.\\mathrm{Action}).\n\\]\n\n",
+      "source_excerpt_sha256": "29d6073264f8b68343b3eb2677273718335bd6f9c365c3a7a1aa0b18945d3744",
+      "source_range": [
+        14190,
+        14686
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.run",
+      "statement": "Execute the supplied primitive steps in list order by foldl, including the empty word returning s."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.profile",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "(F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) → F.State → List F.Action → F.Test → F.Outcome",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F : FutureExecution; raw state s, arbitrary finite word w and test q.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "\\[\n\\Phi_F(s)(w,q)\n=\\operatorname{observe}_F(\\operatorname{run}_F(w,s),q),\n\\qquad w\\in\\operatorname{List}(F.\\mathrm{Action}).\n\\]\n\n",
+      "source_excerpt_sha256": "c7ad9c5358a4ea776f56e80da068013e2a5ea67dbe76b249045b74cc1715b003",
+      "source_range": [
+        14557,
+        14686
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.profile",
+      "statement": "The complete profile is observe F (run F w s) q. Empty-word profiles include current observations; all finite supplied future words are retained."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.futureSetoid",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "(F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) → Setoid F.State",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureSetoid",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureSetoid",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "One fixed supplied F : FutureExecution.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Two raw states represent the same future state precisely when these profiles\nare equal. This equivalence is stable under every supplied primitive, so\nactions descend to the quotient. It retains distinctions generated by future\nwords of any finite length; equality under an arbitrarily selected current\ntest set is a weaker relation.\n\n",
+      "source_excerpt_sha256": "3ca9cbee9f05712f4bc0c2b88be426b839cf361bac2c6016f1e61d7ddda325d4",
+      "source_range": [
+        14686,
+        15020
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.futureSetoid",
+      "statement": "Raw states are equivalent exactly when their full future profiles are equal."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.FutureClass",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution → Type",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.FutureClass",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.FutureClass",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "One fixed supplied F : FutureExecution and its futureSetoid.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Two raw states represent the same future state precisely when these profiles\nare equal. This equivalence is stable under every supplied primitive, so\nactions descend to the quotient. It retains distinctions generated by future\nwords of any finite length; equality under an arbitrarily selected current\ntest set is a weaker relation.\n\n",
+      "source_excerpt_sha256": "3ca9cbee9f05712f4bc0c2b88be426b839cf361bac2c6016f1e61d7ddda325d4",
+      "source_range": [
+        14686,
+        15020
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.FutureClass",
+      "statement": "Construct the quotient of raw states by equality of every supplied finite-future profile."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.profile_step_congr",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) {s t : F.State},\n  F.profile s = F.profile t → ∀ (a : F.Action), F.profile (F.step a s) = F.profile (F.step a t)",
+        "kind": "theorem",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_step_congr",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile_step_congr",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; raw states s,t with F.profile s = F.profile t; any supplied primitive a.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Two raw states represent the same future state precisely when these profiles\nare equal. This equivalence is stable under every supplied primitive, so\nactions descend to the quotient. It retains distinctions generated by future\nwords of any finite length; equality under an arbitrarily selected current\ntest set is a weaker relation.\n\n",
+      "source_excerpt_sha256": "3ca9cbee9f05712f4bc0c2b88be426b839cf361bac2c6016f1e61d7ddda325d4",
+      "source_range": [
+        14686,
+        15020
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.profile_step_congr",
+      "statement": "Applying the same primitive to equal-profile states preserves equality of their complete future profiles."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.quotientStep",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "(F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) → F.Action → F.FutureClass → F.FutureClass",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientStep",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.quotientStep",
+      "disposition": "construction",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F : FutureExecution and a supplied primitive a.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Two raw states represent the same future state precisely when these profiles\nare equal. This equivalence is stable under every supplied primitive, so\nactions descend to the quotient. It retains distinctions generated by future\nwords of any finite length; equality under an arbitrarily selected current\ntest set is a weaker relation.\n\n",
+      "source_excerpt_sha256": "3ca9cbee9f05712f4bc0c2b88be426b839cf361bac2c6016f1e61d7ddda325d4",
+      "source_range": [
+        14686,
+        15020
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.quotientStep",
+      "statement": "Use the proved profile congruence to descend the primitive step to a well-defined map on F.FutureClass."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.futureEmpiricalTheory",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution → D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureEmpiricalTheory",
+      "disposition": "construction",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "One fixed supplied F : FutureExecution.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Now supply `E : TheoryVerification F.futureEmpiricalTheory`. The theorem\nconstructs the equivalence between this empirical quotient and the existing\nfuture quotient. Transport through `E` then defines a represented state\n`rho(s)`, represented actions and the actual protocol record `r(s)` on one\ncarrier. The important equations are\n\n",
+      "source_excerpt_sha256": "fa9bee0d3807773c84255d83417d9263c3003e76c49906955f1080773ef0cdfa",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.futureEmpiricalTheory",
+      "statement": "The empirical theory on F.State uses test pairs (finite word, original test), Unit catalogue and the complete future profile as observation."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "TheoryVerification",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.EmpiricalTheory → Type 1",
+        "kind": "inductive",
+        "name": "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerifiabilityNecessity.TheoryVerification",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "An empirical theory T is supplied; Book01 specializes T to F.futureEmpiricalTheory.",
+      "module": "D0.Foundation.VerifiabilityNecessity",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Now supply `E : TheoryVerification F.futureEmpiricalTheory`. The theorem\nconstructs the equivalence between this empirical quotient and the existing\nfuture quotient. Transport through `E` then defines a represented state\n`rho(s)`, represented actions and the actual protocol record `r(s)` on one\ncarrier. The important equations are\n\n",
+      "source_excerpt_sha256": "fa9bee0d3807773c84255d83417d9263c3003e76c49906955f1080773ef0cdfa",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/TheoryVerification",
+      "statement": "A TheoryVerification consists of a verification protocol, its VerificationContract, and an equivalence from protocol states to the empirical quotient. This is supplied E, not an existence theorem for arbitrary F."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.futureClassEquivEmpirical",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "(F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) →\n  F.FutureClass ≃ D0.Foundation.EmpiricalTheoryFactorization.EmpiricalState F.futureEmpiricalTheory",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureClassEquivEmpirical",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.futureClassEquivEmpirical",
+      "disposition": "construction",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F : FutureExecution; no verification witness E is needed for this quotient-to-quotient construction.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Now supply `E : TheoryVerification F.futureEmpiricalTheory`. The theorem\nconstructs the equivalence between this empirical quotient and the existing\nfuture quotient. Transport through `E` then defines a represented state\n`rho(s)`, represented actions and the actual protocol record `r(s)` on one\ncarrier. The important equations are\n\n",
+      "source_excerpt_sha256": "fa9bee0d3807773c84255d83417d9263c3003e76c49906955f1080773ef0cdfa",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.futureClassEquivEmpirical",
+      "statement": "Construct an equivalence F.FutureClass to EmpiricalState F.futureEmpiricalTheory from the same defining future profiles. The equivalence itself is not assumed."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "verifiedStateFutureEquiv",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) →\n    E.protocol.State ≃ F.FutureClass",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.verifiedStateFutureEquiv",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.verifiedStateFutureEquiv",
+      "disposition": "construction",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F and supplied E : TheoryVerification F.futureEmpiricalTheory.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Now supply `E : TheoryVerification F.futureEmpiricalTheory`. The theorem\nconstructs the equivalence between this empirical quotient and the existing\nfuture quotient. Transport through `E` then defines a represented state\n`rho(s)`, represented actions and the actual protocol record `r(s)` on one\ncarrier. The important equations are\n\n",
+      "source_excerpt_sha256": "fa9bee0d3807773c84255d83417d9263c3003e76c49906955f1080773ef0cdfa",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/verifiedStateFutureEquiv",
+      "statement": "Compose E.represents with the constructed empirical/future quotient bridge to identify the supplied protocol state carrier with F.FutureClass."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "representedState",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) → F.State → E.protocol.State",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.representedState",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.representedState",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E : TheoryVerification F.futureEmpiricalTheory; raw state s.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Now supply `E : TheoryVerification F.futureEmpiricalTheory`. The theorem\nconstructs the equivalence between this empirical quotient and the existing\nfuture quotient. Transport through `E` then defines a represented state\n`rho(s)`, represented actions and the actual protocol record `r(s)` on one\ncarrier. The important equations are\n\n",
+      "source_excerpt_sha256": "fa9bee0d3807773c84255d83417d9263c3003e76c49906955f1080773ef0cdfa",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/representedState",
+      "statement": "Represent s by applying E.represents.symm to its class in the same future empirical quotient."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "representedStep",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) →\n    F.Action → E.protocol.State → E.protocol.State",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.representedStep",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.representedStep",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E; a supplied primitive a; protocol state p.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Now supply `E : TheoryVerification F.futureEmpiricalTheory`. The theorem\nconstructs the equivalence between this empirical quotient and the existing\nfuture quotient. Transport through `E` then defines a represented state\n`rho(s)`, represented actions and the actual protocol record `r(s)` on one\ncarrier. The important equations are\n\n",
+      "source_excerpt_sha256": "fa9bee0d3807773c84255d83417d9263c3003e76c49906955f1080773ef0cdfa",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/representedStep",
+      "statement": "Transport the empirical action through E.represents to define the primitive on the same protocol state carrier."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "representedRun",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) →\n    List F.Action → E.protocol.State → E.protocol.State",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.representedRun",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.representedRun",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E; a finite primitive word w; protocol state p.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Now supply `E : TheoryVerification F.futureEmpiricalTheory`. The theorem\nconstructs the equivalence between this empirical quotient and the existing\nfuture quotient. Transport through `E` then defines a represented state\n`rho(s)`, represented actions and the actual protocol record `r(s)` on one\ncarrier. The important equations are\n\n",
+      "source_excerpt_sha256": "fa9bee0d3807773c84255d83417d9263c3003e76c49906955f1080773ef0cdfa",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/representedRun",
+      "statement": "Execute the transported primitive steps in list order on E.protocol.State."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "representedRecord",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) → F.State → E.protocol.Record",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.representedRecord",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.representedRecord",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E; raw state s.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Now supply `E : TheoryVerification F.futureEmpiricalTheory`. The theorem\nconstructs the equivalence between this empirical quotient and the existing\nfuture quotient. Transport through `E` then defines a represented state\n`rho(s)`, represented actions and the actual protocol record `r(s)` on one\ncarrier. The important equations are\n\n",
+      "source_excerpt_sha256": "fa9bee0d3807773c84255d83417d9263c3003e76c49906955f1080773ef0cdfa",
+      "source_range": [
+        15020,
+        15354
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/representedRecord",
+      "statement": "Use E.protocol.record on representedState E s to obtain the actual record of that represented state."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "representedRecord_eq_iff",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (s t : F.State),\n  D0.Foundation.VerificationCore.representedRecord E s = D0.Foundation.VerificationCore.representedRecord E t ↔\n    F.profile s = F.profile t",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.representedRecord_eq_iff",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.representedRecord_eq_iff",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E including its actual protocol contract and quotient representation; raw states s,t.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "\\[\n\\begin{aligned}\nr(s)=r(t)&\\iff\\Phi_F(s)=\\Phi_F(t),\\\\\n\\widehat{\\operatorname{run}}(w,\\rho(s))\n&=\\rho(\\operatorname{run}_F(w,s)).\n\\end{aligned}\n\\]\n\n",
+      "source_excerpt_sha256": "e43b9529631ac0473fbf4491c5af842b612fdbb838ff20c68813dbff6b4b2b76",
+      "source_range": [
+        15354,
+        15503
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/representedRecord_eq_iff",
+      "statement": "The two represented records are equal if and only if F.profile s = F.profile t. Record injectivity comes from the owned verification-contract theorem."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "representedRun_state",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (w : List F.Action)\n  (s : F.State),\n  D0.Foundation.VerificationCore.representedRun E w (D0.Foundation.VerificationCore.representedState E s) =\n    D0.Foundation.VerificationCore.representedState E (F.run w s)",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.representedRun_state",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.representedRun_state",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E; arbitrary finite word w and raw state s.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "\\[\n\\begin{aligned}\nr(s)=r(t)&\\iff\\Phi_F(s)=\\Phi_F(t),\\\\\n\\widehat{\\operatorname{run}}(w,\\rho(s))\n&=\\rho(\\operatorname{run}_F(w,s)).\n\\end{aligned}\n\\]\n\n",
+      "source_excerpt_sha256": "e43b9529631ac0473fbf4491c5af842b612fdbb838ff20c68813dbff6b4b2b76",
+      "source_range": [
+        15354,
+        15503
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/representedRun_state",
+      "statement": "Running w on representedState E s equals representedState E (F.run w s), on the same supplied representation."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "representedComparison_iff",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (l : E.protocol.Line)\n  (c : E.protocol.Catalogue) (s t : F.State),\n  E.protocol.compare l c (D0.Foundation.VerificationCore.representedRecord E s)\n        (D0.Foundation.VerificationCore.representedRecord E t) =\n      true ↔\n    F.profile s ≠ F.profile t",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.representedComparison_iff",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.representedComparison_iff",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E; registered line l, catalogue c and raw states s,t.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "`representedRecord_eq_iff` derives the first equation from the constructed\nquotient bridge and the owned record-injectivity theorem.\n`representedRun_state` proves the second for every finite word.\n`representedComparison_iff` identifies the correct registered comparison\nwith inequality of these same profiles, and\n`representedComparison_catalogue_independent` preserves its invariance\nacross registered lines and catalogue values. These are compatible maps of\none system, not properties of unrelated records and executions.\n\n",
+      "source_excerpt_sha256": "087a4642829121ad0bf615d3a82f4d7066e9c0802a01134f081a2c2709c5e364",
+      "source_range": [
+        15503,
+        16028
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/representedComparison_iff",
+      "statement": "The actual protocol comparison on the represented records returns true if and only if the full future profiles differ."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "representedComparison_catalogue_independent",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) (l l' : E.protocol.Line)\n  (c c' : E.protocol.Catalogue) (s t : F.State),\n  E.protocol.compare l c (D0.Foundation.VerificationCore.representedRecord E s)\n      (D0.Foundation.VerificationCore.representedRecord E t) =\n    E.protocol.compare l' c' (D0.Foundation.VerificationCore.representedRecord E s)\n      (D0.Foundation.VerificationCore.representedRecord E t)",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.representedComparison_catalogue_independent",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.representedComparison_catalogue_independent",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E; registered lines l,l', catalogue values c,c' and raw states s,t.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "`representedRecord_eq_iff` derives the first equation from the constructed\nquotient bridge and the owned record-injectivity theorem.\n`representedRun_state` proves the second for every finite word.\n`representedComparison_iff` identifies the correct registered comparison\nwith inequality of these same profiles, and\n`representedComparison_catalogue_independent` preserves its invariance\nacross registered lines and catalogue values. These are compatible maps of\none system, not properties of unrelated records and executions.\n\n",
+      "source_excerpt_sha256": "087a4642829121ad0bf615d3a82f4d7066e9c0802a01134f081a2c2709c5e364",
+      "source_range": [
+        15503,
+        16028
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/representedComparison_catalogue_independent",
+      "statement": "Comparing the same represented records gives the same Boolean result across both registered lines and both catalogue values. No physical causal-independence conclusion is added."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "sufficient_memory_preserves_record",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) {Memory : Type}\n  (encode : F.State → Memory) (decode : Memory → List F.Action → F.Test → F.Outcome),\n  (∀ (s : F.State), decode (encode s) = F.profile s) →\n    ∀ {s t : F.State},\n      encode s = encode t →\n        D0.Foundation.VerificationCore.representedRecord E s = D0.Foundation.VerificationCore.representedRecord E t",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.sufficient_memory_preserves_record",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.sufficient_memory_preserves_record",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E; Memory; encode : F.State -> Memory and decode : Memory -> List F.Action -> F.Test -> F.Outcome; correct : for every s, decode (encode s) = F.profile s; encode s = encode t.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "This also determines what sufficient memory must preserve. Any memory from\nwhich every original future profile can be recovered retains the represented\nrecord distinctions (`sufficient_memory_preserves_record`). The owned\nhidden-bit execution supplies equal current observations but distinct future\nprofiles after an admitted action, and hence distinct represented records.\nThe uncoupled-center control supplies an additional bit invisible to every\nadmitted future; its represented records coincide. The two controls establish\nboth sides of the boundary without claiming that every mathematical action\nis physically available.\n\n",
+      "source_excerpt_sha256": "38c0f4c2223d2114ab90713f3ab8926c92b832d6ef2ef1d50827695cf84d922d",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/sufficient_memory_preserves_record",
+      "statement": "Any such lossless profile memory equality implies equality of the same represented protocol records. Neither the memory decoder nor its correctness is inferred from E."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "hiddenBitExecution",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution",
+      "disposition": "construction",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Specified finite carrier Bool x Bool, Bool actions, Unit tests and Bool outcomes.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "This also determines what sufficient memory must preserve. Any memory from\nwhich every original future profile can be recovered retains the represented\nrecord distinctions (`sufficient_memory_preserves_record`). The owned\nhidden-bit execution supplies equal current observations but distinct future\nprofiles after an admitted action, and hence distinct represented records.\nThe uncoupled-center control supplies an additional bit invisible to every\nadmitted future; its represented records coincide. The two controls establish\nboth sides of the boundary without claiming that every mathematical action\nis physically available.\n\n",
+      "source_excerpt_sha256": "38c0f4c2223d2114ab90713f3ab8926c92b832d6ef2ef1d50827695cf84d922d",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/hiddenBitExecution",
+      "statement": "Construct the control whose current detector reads the first bit and whose true action copies the retained second bit into the visible position. This is a supplied finite interface, not an arbitrary physical action."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "hiddenBit_same_current",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.observe (false, false) () =\n  D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.observe (false, true) ()",
+        "kind": "theorem",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_same_current",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_same_current",
+      "disposition": "negative_control_component",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "The concrete hiddenBitExecution and states (false,false), (false,true).",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "This also determines what sufficient memory must preserve. Any memory from\nwhich every original future profile can be recovered retains the represented\nrecord distinctions (`sufficient_memory_preserves_record`). The owned\nhidden-bit execution supplies equal current observations but distinct future\nprofiles after an admitted action, and hence distinct represented records.\nThe uncoupled-center control supplies an additional bit invisible to every\nadmitted future; its represented records coincide. The two controls establish\nboth sides of the boundary without claiming that every mathematical action\nis physically available.\n\n",
+      "source_excerpt_sha256": "38c0f4c2223d2114ab90713f3ab8926c92b832d6ef2ef1d50827695cf84d922d",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/hiddenBit_same_current",
+      "statement": "The current Unit-test observations of these two states agree."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "hiddenBit_different_future",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "propext"
+        ],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile (false, false) ≠\n  D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.profile (false, true)",
+        "kind": "theorem",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_different_future",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.hiddenBit_different_future",
+      "disposition": "negative_control_component",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "The same concrete hiddenBitExecution and states; the finite word [true] is an allowed action word of that interface.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "This also determines what sufficient memory must preserve. Any memory from\nwhich every original future profile can be recovered retains the represented\nrecord distinctions (`sufficient_memory_preserves_record`). The owned\nhidden-bit execution supplies equal current observations but distinct future\nprofiles after an admitted action, and hence distinct represented records.\nThe uncoupled-center control supplies an additional bit invisible to every\nadmitted future; its represented records coincide. The two controls establish\nboth sides of the boundary without claiming that every mathematical action\nis physically available.\n\n",
+      "source_excerpt_sha256": "38c0f4c2223d2114ab90713f3ab8926c92b832d6ef2ef1d50827695cf84d922d",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/hiddenBit_different_future",
+      "statement": "The complete future profiles of the two equal-current-observation states differ; the admitted one-step word supplies the witness."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "hiddenBit_records_distinct",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀\n  (E :\n    D0.Foundation.VerifiabilityNecessity.TheoryVerification\n      D0.Foundation.EmpiricalTheoryFactorization.hiddenBitExecution.futureEmpiricalTheory),\n  D0.Foundation.VerificationCore.representedRecord E (false, false) ≠\n    D0.Foundation.VerificationCore.representedRecord E (false, true)",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.hiddenBit_records_distinct",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.hiddenBit_records_distinct",
+      "disposition": "negative_control",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Supplied E : TheoryVerification hiddenBitExecution.futureEmpiricalTheory.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "This also determines what sufficient memory must preserve. Any memory from\nwhich every original future profile can be recovered retains the represented\nrecord distinctions (`sufficient_memory_preserves_record`). The owned\nhidden-bit execution supplies equal current observations but distinct future\nprofiles after an admitted action, and hence distinct represented records.\nThe uncoupled-center control supplies an additional bit invisible to every\nadmitted future; its represented records coincide. The two controls establish\nboth sides of the boundary without claiming that every mathematical action\nis physically available.\n\n",
+      "source_excerpt_sha256": "38c0f4c2223d2114ab90713f3ab8926c92b832d6ef2ef1d50827695cf84d922d",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/hiddenBit_records_distinct",
+      "statement": "Every such supplied verification realization gives distinct records to (false,false) and (false,true). Existence of E is not constructed by this theorem."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.uncoupledCenter",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution → D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "kind": "definition",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter",
+      "disposition": "construction",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "An arbitrary supplied F : FutureExecution.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "This also determines what sufficient memory must preserve. Any memory from\nwhich every original future profile can be recovered retains the represented\nrecord distinctions (`sufficient_memory_preserves_record`). The owned\nhidden-bit execution supplies equal current observations but distinct future\nprofiles after an admitted action, and hence distinct represented records.\nThe uncoupled-center control supplies an additional bit invisible to every\nadmitted future; its represented records coincide. The two controls establish\nboth sides of the boundary without claiming that every mathematical action\nis physically available.\n\n",
+      "source_excerpt_sha256": "38c0f4c2223d2114ab90713f3ab8926c92b832d6ef2ef1d50827695cf84d922d",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.uncoupledCenter",
+      "statement": "Adjoin a Boolean state coordinate while retaining the original action/test/outcome types; steps and observations act on the original coordinate and never read the added bit."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "FutureExecution.uncoupledCenter_profile_independent",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound"
+        ],
+        "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (s : F.State) (b b' : Bool),\n  F.uncoupledCenter.profile (s, b) = F.uncoupledCenter.profile (s, b')",
+        "kind": "theorem",
+        "name": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.uncoupledCenter_profile_independent",
+      "disposition": "negative_control_component",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Any supplied F, original state s and added Boolean values b,b' in F.uncoupledCenter.",
+      "module": "D0.Foundation.FutureExecution",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "This also determines what sufficient memory must preserve. Any memory from\nwhich every original future profile can be recovered retains the represented\nrecord distinctions (`sufficient_memory_preserves_record`). The owned\nhidden-bit execution supplies equal current observations but distinct future\nprofiles after an admitted action, and hence distinct represented records.\nThe uncoupled-center control supplies an additional bit invisible to every\nadmitted future; its represented records coincide. The two controls establish\nboth sides of the boundary without claiming that every mathematical action\nis physically available.\n\n",
+      "source_excerpt_sha256": "38c0f4c2223d2114ab90713f3ab8926c92b832d6ef2ef1d50827695cf84d922d",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/FutureExecution.uncoupledCenter_profile_independent",
+      "statement": "The complete future profiles of (s,b) and (s,b') agree for every finite word of the unchanged original actions and all unchanged original tests."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "uncoupledCenter_records_equal",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution)\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.uncoupledCenter.futureEmpiricalTheory) (s : F.State)\n  (b b' : Bool),\n  D0.Foundation.VerificationCore.representedRecord E (s, b) = D0.Foundation.VerificationCore.representedRecord E (s, b')",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.uncoupledCenter_records_equal",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.uncoupledCenter_records_equal",
+      "disposition": "negative_control",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Any F; supplied E : TheoryVerification F.uncoupledCenter.futureEmpiricalTheory; original state s and Boolean values b,b'.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "This also determines what sufficient memory must preserve. Any memory from\nwhich every original future profile can be recovered retains the represented\nrecord distinctions (`sufficient_memory_preserves_record`). The owned\nhidden-bit execution supplies equal current observations but distinct future\nprofiles after an admitted action, and hence distinct represented records.\nThe uncoupled-center control supplies an additional bit invisible to every\nadmitted future; its represented records coincide. The two controls establish\nboth sides of the boundary without claiming that every mathematical action\nis physically available.\n\n",
+      "source_excerpt_sha256": "38c0f4c2223d2114ab90713f3ab8926c92b832d6ef2ef1d50827695cf84d922d",
+      "source_range": [
+        16028,
+        16656
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/uncoupledCenter_records_equal",
+      "statement": "The represented records of (s,b) and (s,b') coincide. Adding tests that read the bit changes the interface and is outside this control."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaObject",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory → Type",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.SigmaObject",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaObject",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F and supplied E : TheoryVerification F.futureEmpiricalTheory.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The code-level tuple in §01.1.2 is a further, explicit construction.\n`SigmaWitness E` supplies a finite ordered alphabet with primitive coding and\na code presentation of the tagged carrier\n\n\\[\nP.\\mathrm{State}\\;\\sqcup\\;\n(P.\\mathrm{State}\\times P.\\mathrm{Line}).\n\\]\n\n",
+      "source_excerpt_sha256": "01746e75e2fe39eab509bbbb642160351316b72e005c9794fae469f417f1ce71",
+      "source_range": [
+        16656,
+        16923
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaObject",
+      "statement": "The common tagged semantic code carrier is E.protocol.State plus (E.protocol.State x E.protocol.Line), retaining the line coordinate within the object."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "CodePresentation",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "propext"
+        ],
+        "elaborated_type": "(Symbol : Type) → Type → [LinearOrder Symbol] → Type",
+        "kind": "inductive",
+        "name": "D0.Foundation.VerificationCore.CodePresentation",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.CodePresentation",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Symbol and Object types with LinearOrder Symbol; encoding and decoding functions are supplied.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The code-level tuple in §01.1.2 is a further, explicit construction.\n`SigmaWitness E` supplies a finite ordered alphabet with primitive coding and\na code presentation of the tagged carrier\n\n\\[\nP.\\mathrm{State}\\;\\sqcup\\;\n(P.\\mathrm{State}\\times P.\\mathrm{Line}).\n\\]\n\n",
+      "source_excerpt_sha256": "01746e75e2fe39eab509bbbb642160351316b72e005c9794fae469f417f1ce71",
+      "source_range": [
+        16656,
+        16923
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/CodePresentation",
+      "statement": "A presentation supplies encode, partial decode, decode(encode x)=some x and shortlex minimality of encode x among codes decoding to x. The round trip and minimality are witness fields, not consequences of E."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory → Type 1",
+        "kind": "inductive",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F and supplied E; additionally a finite linearly ordered Primcodable symbol type and a CodePresentation of SigmaObject E are supplied.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The code-level tuple in §01.1.2 is a further, explicit construction.\n`SigmaWitness E` supplies a finite ordered alphabet with primitive coding and\na code presentation of the tagged carrier\n\n\\[\nP.\\mathrm{State}\\;\\sqcup\\;\n(P.\\mathrm{State}\\times P.\\mathrm{Line}).\n\\]\n\n",
+      "source_excerpt_sha256": "01746e75e2fe39eab509bbbb642160351316b72e005c9794fae469f417f1ce71",
+      "source_range": [
+        16656,
+        16923
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness",
+      "statement": "The witness also supplies actual Mathlib Computable canonicalization and Computable2 code comparison. These effective witnesses and code properties are hypotheses, not extracted from abstract verifiability."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "CodePresentation.encode_injective",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "propext"
+        ],
+        "elaborated_type": "∀ {Symbol Object : Type} [inst : LinearOrder Symbol]\n  (K : D0.Foundation.VerificationCore.CodePresentation Symbol Object), Function.Injective K.encode",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.CodePresentation.encode_injective",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.CodePresentation.encode_injective",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "Symbol and Object with LinearOrder Symbol; supplied K : CodePresentation Symbol Object, including decode_encode.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/CodePresentation.encode_injective",
+      "statement": "The supplied encoder is injective because applying the decoder to equal encoded strings recovers equal objects; finiteness and E are not needed for this implication."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.dmin",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} →\n    (W : D0.Foundation.VerificationCore.SigmaWitness E) → F.State → List W.Symbol",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.dmin",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W : SigmaWitness E; raw state s.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.dmin",
+      "statement": "Encode the state tag Sum.inl (representedState E s) in the supplied common code presentation."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.dmin_canonical",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E) (s : F.State), W.coding.canon (W.dmin s) = W.dmin s",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.dmin_canonical",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin_canonical",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W : SigmaWitness E; raw state s.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.dmin_canonical",
+      "statement": "Canonicalizing W.dmin s leaves that valid encoded state string unchanged."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.dmin_minimal",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E) (s : F.State) (c : List W.Symbol),\n  W.coding.decode c = some (Sum.inl (D0.Foundation.VerificationCore.representedState E s)) →\n    D0.Foundation.VerificationCore.ShortlexLE (W.dmin s) c",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.dmin_minimal",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.dmin_minimal",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; raw state s and a code c with W.coding.decode c = some (Sum.inl (representedState E s)).",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.dmin_minimal",
+      "statement": "W.dmin s is ShortlexLE c by the supplied code presentation's shortlex-minimality field. No global optimization over alternative alphabets or physical work follows."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.archiveCode",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} →\n    (W : D0.Foundation.VerificationCore.SigmaWitness E) → F.State × E.protocol.Line → List W.Symbol",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.archiveCode",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.archiveCode",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; entry (raw state s, registered line l).",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.archiveCode",
+      "statement": "Encode Sum.inr (representedState E s,l), retaining both represented state and registered line identity in the semantic object."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.archive",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} →\n    (W : D0.Foundation.VerificationCore.SigmaWitness E) → List (F.State × E.protocol.Line) → List (List W.Symbol)",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.archive",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.archive",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; a finite ordered list of raw-state/registered-line entries.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.archive",
+      "statement": "Map archiveCode over the original list to obtain the stored code list in the same registration order."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.historyFrame",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} →\n    (W : D0.Foundation.VerificationCore.SigmaWitness E) → List (List W.Symbol) → ℕ → Set (List W.Symbol)",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.historyFrame",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.historyFrame",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; an existing code list history and index n.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.historyFrame",
+      "statement": "The prefix frame is the set of codes occurring in history.take (n+1); the original ordered list is retained separately. Its index is not a calibrated physical time."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.query",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory} →\n    (W : D0.Foundation.VerificationCore.SigmaWitness E) → List (List W.Symbol) → ℕ → Option (List W.Symbol)",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.query",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.query",
+      "disposition": "definition",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; an already stored code list history and natural index n.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.query",
+      "statement": "Read history[n]? as an optional stored code by its recorded position, without computing a raw-state encoder."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.query_computable",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E), Computable₂ W.query",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.query_computable",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.query_computable",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W : SigmaWitness E, with the supplied primitive coding on the finite symbol type.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "The encoder/decoder round trip derives injectivity. Shortlex minimality of\nvalid representatives and actual Mathlib `Computable` witnesses for\ncanonicalization and comparison remain inputs. The construction then gives\ncanonical state codes, a chronological list of registered entries, prefix\nframes and computable positional access. In particular,\n\n\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "9d495603babf9d0b77f575301b0276dd2ff5020eb56055e1c6dd05cbe1318dfe",
+      "source_range": [
+        16923,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.query_computable",
+      "statement": "Positional query of the stored list is Computable2 by Mathlib list access; this does not establish computability of W.dmin on arbitrary raw states."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.archiveCode_eq_iff",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E) (s t : F.State) (l l' : E.protocol.Line),\n  W.archiveCode (s, l) = W.archiveCode (t, l') ↔ F.profile s = F.profile t ∧ l = l'",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.archiveCode_eq_iff",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.archiveCode_eq_iff",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; raw states s,t and registered lines l,l'.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "\\[\n\\operatorname{archiveCode}(s,l)=\\operatorname{archiveCode}(t,l')\n\\iff\\Phi_F(s)=\\Phi_F(t)\\;\\land\\;l=l'.\n\\]\n\n",
+      "source_excerpt_sha256": "4bb9218057895ab970be8307830a4692bb5f054b1ffccbf06271e0d16382a780",
+      "source_range": [
+        17272,
+        17382
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.archiveCode_eq_iff",
+      "statement": "archiveCode(s,l)=archiveCode(t,l') if and only if F.profile s = F.profile t and l=l'. Both complete future distinctions and line provenance survive the same encoder."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.archive_preserves_line",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E) (s : F.State) (l l' : E.protocol.Line),\n  l ≠ l' → W.archiveCode (s, l) ≠ W.archiveCode (s, l')",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.archive_preserves_line",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.archive_preserves_line",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; one raw state s and distinct registered line labels l,l'.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Thus equal detector verdicts do not erase which registered line produced an\nentry. `query_archive` retrieves the corresponding stored entry and\n`query_append_retains` proves that later appends preserve earlier readable\nentries. The list retains order even though a prefix frame can also be\nrepresented as a set. Its index is registration order; calibration as\nphysical time is a subsequent realization.\n\n",
+      "source_excerpt_sha256": "52009fd5f628c7ff3c6e6d5916ec1b038ee732ada836add3255b1fe140583963",
+      "source_range": [
+        17382,
+        17786
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.archive_preserves_line",
+      "statement": "The two archive codes for that same state but distinct line labels are different, even though the registered detector verdicts can agree."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.query_archive",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E) (history : List (F.State × E.protocol.Line)) (n : ℕ),\n  W.query (W.archive history) n = Option.map W.archiveCode history[n]?",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.query_archive",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.query_archive",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; finite raw-entry history and arbitrary natural index n.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Thus equal detector verdicts do not erase which registered line produced an\nentry. `query_archive` retrieves the corresponding stored entry and\n`query_append_retains` proves that later appends preserve earlier readable\nentries. The list retains order even though a prefix frame can also be\nrepresented as a set. Its index is registration order; calibration as\nphysical time is a subsequent realization.\n\n",
+      "source_excerpt_sha256": "52009fd5f628c7ff3c6e6d5916ec1b038ee732ada836add3255b1fe140583963",
+      "source_range": [
+        17382,
+        17786
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.query_archive",
+      "statement": "Querying the coded archive at n equals mapping archiveCode over the optional original entry history[n]?; out-of-range access remains none."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "SigmaWitness.query_append_retains",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "∀ {F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution}\n  {E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory}\n  (W : D0.Foundation.VerificationCore.SigmaWitness E) (history later : List (List W.Symbol)),\n  ∀ n < history.length, W.query (history ++ later) n = W.query history n",
+        "kind": "theorem",
+        "name": "D0.Foundation.VerificationCore.SigmaWitness.query_append_retains",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.SigmaWitness.query_append_retains",
+      "disposition": "conditional_theorem",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E and W; stored code lists history and later; n < history.length.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "Thus equal detector verdicts do not erase which registered line produced an\nentry. `query_archive` retrieves the corresponding stored entry and\n`query_append_retains` proves that later appends preserve earlier readable\nentries. The list retains order even though a prefix frame can also be\nrepresented as a set. Its index is registration order; calibration as\nphysical time is a subsequent realization.\n\n",
+      "source_excerpt_sha256": "52009fd5f628c7ff3c6e6d5916ec1b038ee732ada836add3255b1fe140583963",
+      "source_range": [
+        17382,
+        17786
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/SigmaWitness.query_append_retains",
+      "statement": "Querying history ++ later at the earlier valid index n equals querying history at n. This is list-order retention, not a physical-clock theorem."
+    },
+    {
+      "application_scope": "shared conditional application; no per-atom semantic acceptance inferred",
+      "atom": "finiteSigmaWitness",
+      "classification_state": "proposed_atomization_of_existing_review_ranges",
+      "compiled_declaration": {
+        "axiom_audit": "reported_standard_axioms_only",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "elaborated_type": "{F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution} →\n  (E : D0.Foundation.VerifiabilityNecessity.TheoryVerification F.futureEmpiricalTheory) →\n    [Fintype E.protocol.State] → [Fintype E.protocol.Line] → D0.Foundation.VerificationCore.SigmaWitness E",
+        "kind": "definition",
+        "name": "D0.Foundation.VerificationCore.finiteSigmaWitness",
+        "state": "reported_compiled_metadata_consistent_not_replayed"
+      },
+      "declaration": "D0.Foundation.VerificationCore.finiteSigmaWitness",
+      "disposition": "construction",
+      "existing_application": "lean-verification-core-to-foundation",
+      "hypotheses": "F; supplied E : TheoryVerification F.futureEmpiricalTheory; Fintype E.protocol.State and Fintype E.protocol.Line.",
+      "module": "D0.Foundation.VerificationCore",
+      "semantic_acceptance": "pending_independent_review",
+      "source_excerpt": "For every supplied finite protocol, `finiteSigmaWitness` constructs a\nconsistent singleton-code presentation. This does not choose a physical\nalphabet or implement an encoder for arbitrary raw states and infinite\nfuture profiles. Nor does it identify code length with physical work.\n",
+      "source_excerpt_sha256": "f0c3d4b441c655129a405729a093f1a1c32b69192a18778e389b2aafc6ac8a45",
+      "source_range": [
+        17786,
+        18069
+      ],
+      "source_unit_key": "source:a4d0d3919e9c2b8e9f27aeaacaafd6dcf06e6c38:01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md#01.1.8/finiteSigmaWitness",
+      "statement": "Construct SigmaWitness E using singleton codes over a finite enumeration of SigmaObject E. Its canonicalization and code comparison are proved computable; the semantic enumeration is noncomputable and no encoder on arbitrary raw states is inferred."
+    }
+  ]
+}

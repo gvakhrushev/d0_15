@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "GR_closed": false,
+  "input_head": "726192353504a81a9ab2b751f9b6c7866271e75a",
+  "primary_blob": "cef5e08a689832ddc66355e53bd93a15cfdf73f4",
+  "source_owner_sha256": "3858e097939054ec0957321bcd70e7b98f68c68b74fb800bc8ef22a660a56c74",
+  "whole_clock_proof_blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+  "checker_sha256": "9318066ea9ce011bc2c6eeaa381970131eb7138208df589c5dbc3353fcf8fb10",
+  "input": {
+    "L": 4,
+    "all_spatial_CAR_modes": 4096,
+    "nu": "3/5",
+    "fixed_first_last_nu": "3/5",
+    "last_rotation": "first_rotation",
+    "z": "2^-20",
+    "rotation_cos": "24/25",
+    "rotation_sin": "7/25",
+    "groups": 9,
+    "repetitions_per_group": 644,
+    "actual_full128_rounds": 5796,
+    "minimum_copied_clock_stages": 46368
+  },
+  "method": "exact Gaussian-rational inputs; binary powers; IEEE gamma128 enclosure; analytic resolvent and whole-clock tails",
+  "assumptions": [
+    "IEEE binary64 round-to-nearest matrix dot error <=gamma128; length256 vdot <=gamma2048",
+    "declared original matrix/clock realization; physical programme selection not asserted"
+  ],
+  "leading_source": -3.579609003352801e-07,
+  "source_roundoff_bound": 2.5106920287850403e-07,
+  "resolvent_tail_bound": 1.0430822783301147e-07,
+  "exact_input_max_operator_error_bound": 1.3588706993841198e-17,
+  "final_K_operator_error_bound": 1.583066490396583e-08,
+  "final_DK_operator_error_bound": 3.191493711625375e-05,
+  "full_feedback_source_enclosure": [
+    -7.133383310467955e-07,
+    -2.5834696237646147e-09
+  ],
+  "whole_scene_heat_source_bound": "2^-240",
+  "sign_certified": true,
+  "actual_bulk_derivative_norm_bound": 14,
+  "exact_feedback_lower": "-76926180080031258194522118779322265321946807241794860755559657/107839683824567726603290425662504612860142016269170687825672981708800",
+  "exact_feedback_upper": "-278600547397150984202479729749700296431884741625319327947543/107839683824567726603290425662504612860142016269170687825672981708800",
+  "exact_source_roundoff_bound": "25820969846223800563971184587080699325372090974518008599/102844034832575377634685573909834406561420991602098741459288064",
+  "exact_resolvent_tail_bound": "7/67108800",
+  "sign_margin": "less than -1/500000000",
+  "scope": "ONE fixed-boundary internal scale equation on the original noncommuting history; all4096 modes and full128 realization. Not all40+matter stationarity, a finite G/CX compilation, physical admission, GR/refinement closure or a minimum.",
+  "python": "3.9.6",
+  "numpy": "2.0.2"
+}

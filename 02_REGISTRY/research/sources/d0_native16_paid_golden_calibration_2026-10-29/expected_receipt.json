@@ -1,0 +1,375 @@
+{
+  "actual_boundary": {
+    "active_input_rank": 8,
+    "active_matrix_dimension": 1024,
+    "blank_wires": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "extra_wires": 0,
+    "full_dimension": 65536,
+    "full_wires": 16,
+    "input_rank": 16,
+    "input_spectator": 2,
+    "old_right": [
+      15
+    ],
+    "real_reference_wire": 10,
+    "record_wires": [
+      7,
+      8,
+      9
+    ],
+    "source_port": 0,
+    "source_spin": [
+      13,
+      14
+    ],
+    "thermal_spectator": 64
+  },
+  "checker_sha256": "fa68fa43fa906c8bc5cf5b2fa2bf766910cae19b5c78bebf32ad94decce4b707",
+  "checks": 109,
+  "emitted_words": {
+    "bad_bad": {
+      "N": 59,
+      "inventory": {
+        "CX": 39,
+        "G": 6,
+        "SourceI": 14
+      },
+      "sha256": "65f699d103edccb79cc8c7755a6654e1eb70c5899b26ab2697974b9b4da498a9"
+    },
+    "bad_good": {
+      "N": 59,
+      "inventory": {
+        "CX": 40,
+        "G": 5,
+        "SourceI": 14
+      },
+      "sha256": "4d2cf7ad5ba8a905f36e59d52c645a813703642fb180d4c4e123a64369bb8f4f"
+    },
+    "cal_bad": {
+      "N": 21,
+      "inventory": {
+        "CX": 14,
+        "G": 3,
+        "SourceI": 4
+      },
+      "sha256": "e3c4c3ffc14257cea13c7a5d2e66f4d03d505d9a3a3436b5d538e265767c96fd"
+    },
+    "cal_good": {
+      "N": 21,
+      "inventory": {
+        "CX": 15,
+        "G": 2,
+        "SourceI": 4
+      },
+      "sha256": "eb89c9ce9713a50500c85aaad656f66460fac0754a8fc375da55ae5ebddb2815"
+    },
+    "good_bad": {
+      "N": 59,
+      "inventory": {
+        "CX": 40,
+        "G": 5,
+        "SourceI": 14
+      },
+      "sha256": "258103f84e5b00d466d6349779e5ac8e2bc50ad04e8c6670039574ac75dfb919"
+    },
+    "good_good": {
+      "N": 59,
+      "inventory": {
+        "CX": 41,
+        "G": 4,
+        "SourceI": 14
+      },
+      "sha256": "7ec4daddc80e0cb38c80a3839569dd173fcc7ec488d0508a2b9c8dbf790c8c45"
+    }
+  },
+  "exact_corners": {
+    "bad_bad": "(4-7p) Q",
+    "bad_good": "sqrt(p)p^3 Q",
+    "cal_bad": "sqrt(p) I_16",
+    "cal_good": "I_16",
+    "good_bad": "sqrt(p)(4p-3) Q",
+    "good_good": "p^3 Q",
+    "rank_Q": 8
+  },
+  "faithful_probe": {
+    "all_three_recorder_channels_freely_varied_and_tested": false,
+    "discarded_or_reset_branches": false,
+    "inverse_primitive_added": false,
+    "local_query_inputs_both_tested": true,
+    "protected_unknown_input_prepared": false,
+    "real_ref_used": true,
+    "same_code_equals_independent_hardware_control": false
+  },
+  "heat": {
+    "21": {
+      "A1_approx": "[5.710345568559694905298550916776951464387862962547062178694052598604674569745999276343524214530929197022182201611271e-51, 5.710345568559694905298550916776951464387862962547062178694052598604674569745999276343524214530929197022182201620162e-51]",
+      "A1_rational": "51389411842017878091132858969787819862365722656250000000/8999352355304075080256623363350866230562778073042817746308650421831288965510140972818000018596649171139603",
+      "absolute_H_enclosure": [
+        "26.3131632390768015306248354580661295941618394032",
+        "26.3131632390768015306248354580661497239463125560"
+      ],
+      "all_modes": 584908800,
+      "unpaired_harmonics": 494075904
+    },
+    "59": {
+      "A1_approx": "[4.249524505044771588324377622657923616359203120708487785746068186255975592436757745184354755577858196034347885513666e-166, 4.249524505044771588324377622657923616359203120708487785746068186255975592436757745184354755577858196034347885531718e-166]",
+      "A1_rational": "208468198378848580420887239578014913476249297532116559002830938967793003732740120984157252974512519381075491285888574778846493718020838059601373970508575439453125000000000/490568293302857958819118352934981497478186986049905454124913288356411011566692269367427212134112880740677486696068680061556257440780875397000136431775799951752258507790881645790689794772612053643282536009786437586933872109607298943331129016023602382089939398766241780778317477458527912512878713623132309606944545521400868892669678101991",
+      "absolute_H_enclosure": [
+        "27.6653974376137689666349706438229191622253560422",
+        "27.6653974376137689666349706438229392920098291950"
+      ],
+      "all_modes": 1643315200,
+      "unpaired_harmonics": 1388118016
+    }
+  },
+  "input_commit": "f23f9149c470051b35acc3fac42f3fecdba084ab",
+  "input_pins": {
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "joint_map": {
+    "all_LEFT_archive_Z_sections_preserved": true,
+    "all_initial_coherences_retained": true,
+    "complete_source_Spin_algebra_preserved": true,
+    "good_prepared_map_equals_original37": true,
+    "test_use_controls_kept_separate": true,
+    "whole_return_saturated_using_real_reference_and_records": true
+  },
+  "literal_probe": [
+    {
+      "op": "G",
+      "wires": [
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        10
+      ]
+    }
+  ],
+  "literal_recorders": {
+    "bad": [
+      {
+        "op": "G",
+        "wires": [
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          7
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          8
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          12,
+          9
+        ]
+      }
+    ],
+    "good": [
+      {
+        "op": "CX",
+        "wires": [
+          8,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          7
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          8
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          12,
+          9
+        ]
+      }
+    ]
+  },
+  "literal_unprobe": [
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        10
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "G",
+      "wires": [
+        0
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        0,
+        13,
+        14
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        11,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        11
+      ]
+    }
+  ],
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "scope": {
+    "GR_closed": false,
+    "all_new_independent_control_sources_zero": false,
+    "faulty_word_same_calibrated_task_competitor": false,
+    "native_source_I_addressability_retained": true,
+    "new_fidelity_or_Info_penalty_added": false,
+    "one_original_H_plus_J": true,
+    "physical_X_N_identified": false,
+    "standalone_prices_added": false,
+    "unconstrained_price_forces_correct_record_instrument": false
+  },
+  "status": "PASS",
+  "strict_differences": {
+    "cal_bad_minus_good": [
+      "0.0000058283398562580237964620295574197718044060",
+      "0.0000058283398562580237964620295574197718044063"
+    ],
+    "whole_bad_bad_minus_good_good": [
+      "-0.0000003868342261805018849222034874475986580697",
+      "-0.0000003868342261805018849222034874475986580694"
+    ],
+    "whole_good_bad_minus_good_good": [
+      "-0.0000008886816190131576745785972766734945491787",
+      "-0.0000008886816190131576745785972766734945491784"
+    ]
+  },
+  "whole59_prices": {
+    "bad_bad": [
+      "27.6654118844039019815409230278689675138173376422",
+      "27.6654118844039019815409230278689876436018107951"
+    ],
+    "bad_good": [
+      "27.6654124336393705107637518624747985063783526913",
+      "27.6654124336393705107637518624748186361628258442"
+    ],
+    "good_bad": [
+      "27.6654113825565091488851333714751782879214465331",
+      "27.6654113825565091488851333714751984177059196860"
+    ],
+    "good_good": [
+      "27.6654122712381281620428079500724549614159957117",
+      "27.6654122712381281620428079500724750912004688646"
+    ]
+  },
+  "whole_prices": {
+    "cal_bad": [
+      "26.3131690674166577886486319200956870139336438093",
+      "26.3131690674166577886486319200957071437181169622"
+    ],
+    "cal_good": [
+      "26.3131632390768015306248354580661295941618394032",
+      "26.3131632390768015306248354580661497239463125560"
+    ]
+  }
+}

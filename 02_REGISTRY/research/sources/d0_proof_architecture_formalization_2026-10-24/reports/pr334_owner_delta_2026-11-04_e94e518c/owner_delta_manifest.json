@@ -1,0 +1,942 @@
+{
+  "schema": "d0-pr334-owner-delta-snapshot-v1",
+  "repository": "gvakhrushev/d0_15",
+  "source_pull_request": 334,
+  "source_pull_request_state": "OPEN_DRAFT_CONFLICTING",
+  "source_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "source_head": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+  "source_base_checkpoint": "f8a1d89329e5f44a8f49118dac004d1bc46cc417",
+  "source_commit_count": 68,
+  "source_changed_path_count": 68,
+  "target_pull_request": 402,
+  "target_snapshot_before_intake": "6fe6665bd7d0ce6a70078c0af16299d3289cfff5",
+  "main_head_at_intake": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+  "cold_start_case_id": "pr334-native-kappa-owner-delta",
+  "cold_start_queries": [
+    "canonical balanced reflection full heat fixed intrinsic effect",
+    "retained response Einstein pullback complete source full covector",
+    "retained response raw cylinder golden birth native word source",
+    "retained response fullStep compilation growing clock heat budget",
+    "retained response kappa closure soundness recovery source concentration",
+    "final regular source composition full price kappa interval",
+    "initial data Cauchy source prediction energy certificate H12",
+    "report jet universality changed report law first source",
+    "internal reference cross calibration baseline slope source",
+    "coherent calibration scalar unit records field source",
+    "native word normal source fixed task QUERY",
+    "joint thermal stationarity shared controller source loss",
+    "post controller spatial heat h^-2 source mismatch",
+    "internal material clock Lorentz source separation Frobenius",
+    "native return record source gate full Gram derivative",
+    "scoped native kappa contract physical task price B D",
+    "actual paid clock credit full price duration edges same execution"
+  ],
+  "formalization_boundary": {
+    "lean_files_in_source_delta": 0,
+    "accepted_claims_changed_in_source_delta": 0,
+    "physical_selection_proved": false,
+    "GR_closed": false
+  },
+  "artifacts": [
+    {
+      "packet_id": "scoped-native-kappa-contract",
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "cfd53282fccb00d44dfb9040493b01b13fd9b50d",
+      "bytes": 1310465,
+      "sha256": "97a7c9dd71f9997ad796626152af35532deab1abda331c49eba00e6270fd3f1f",
+      "change": "M",
+      "queries": [
+        "scoped native kappa contract physical task price B D",
+        "actual paid clock credit full price duration edges same execution"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "canonical-balanced-reflection",
+      "path": "02_REGISTRY/research/A4D_CANONICAL_BALANCED_REFLECTION_SOURCE_2026_10_29.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "3d1ccdcb27bda84acce4319eebc4d39c70312fec",
+      "bytes": 6031,
+      "sha256": "a8181b9fae8161b3d8b80e2911f7b11c01cfbbc39f57ddf0d852d3ea6d1b70bb",
+      "change": "A",
+      "queries": [
+        "canonical balanced reflection full heat fixed intrinsic effect"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "coherent-unit-calibration",
+      "path": "02_REGISTRY/research/A4D_COHERENT_CALIBRATION_SOURCE_COMPOSITION_2026_10_31.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "d422fafe3d77c01345222a403a2405348a3ef374",
+      "bytes": 5236,
+      "sha256": "07a47fcc46c442822e4579a44784cc8a73ed478e7f47b77cb7d9509324f3dd42",
+      "change": "A",
+      "queries": [
+        "coherent calibration scalar unit records field source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "final-regular-source-composition",
+      "path": "02_REGISTRY/research/A4D_FINAL_REGULAR_SOURCE_COMPOSITION_REVIEW_2026_10_29.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "ba6d7a077a7194840fc396da255e413ff8e98791",
+      "bytes": 29491,
+      "sha256": "7d12c36663705ff32c5ae836b6007a7e09192bae1607b2abcc09cd654924d731",
+      "change": "A",
+      "queries": [
+        "final regular source composition full price kappa interval"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "initial-data-cauchy-energy",
+      "path": "02_REGISTRY/research/A4D_INITIAL_DATA_ENERGY_TO_KAPPA_CLOSURE_2026_10_30.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "4fcc9e909f05e8026685894f23d4caadfe74cac0",
+      "bytes": 5676,
+      "sha256": "6337acf1bf25e30dad37be924a997ad8bf465b98773c3874c6a504e7fa1838fb",
+      "change": "A",
+      "queries": [
+        "initial data Cauchy source prediction energy certificate H12"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "internal-material-clock",
+      "path": "02_REGISTRY/research/A4D_INTERNAL_CLOCK_LORENTZ_SOURCE_TEST_2026_11_03.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "72333022955edf0eac41c1ede0312d87959f95f7",
+      "bytes": 4646,
+      "sha256": "65e956ece099700ffa3542a760897fd8cedf54015581dd75fa16b8632e952b98",
+      "change": "A",
+      "queries": [
+        "internal material clock Lorentz source separation Frobenius"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "internal-reference-cross-calibration",
+      "path": "02_REGISTRY/research/A4D_INTERNAL_REFERENCE_CROSS_CALIBRATION_SOURCE_2026_10_31.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "2bfa2655ae71df2f57470c73a5889d52046b2bfe",
+      "bytes": 7190,
+      "sha256": "0f3b3d57bdce0378c29f0789b15aa310f73d9562e7c95dc0fd014b5f62511c0b",
+      "change": "A",
+      "queries": [
+        "internal reference cross calibration baseline slope source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "joint-source-balance",
+      "path": "02_REGISTRY/research/A4D_JOINT_THERMAL_STATIONARITY_AND_SHARED_SOURCE_LOSS_2026_10_31.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "dbd46534cc2258b2f5241c3fee0cdf3337da9c34",
+      "bytes": 5309,
+      "sha256": "760eb56cae510f25c28d92fafce6f0ef9062d21e1a1ec45306e1169b0b4a6582",
+      "change": "A",
+      "queries": [
+        "joint thermal stationarity shared controller source loss"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-return-record-gate",
+      "path": "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "d003e5fe9789a211c6240891131be1bf03dbb3dc",
+      "bytes": 19608,
+      "sha256": "665fcbc48d64e4e6fc4bf5fcc764845d86012a42683f5d3188b47158cda5a2b9",
+      "change": "A",
+      "queries": [
+        "native return record source gate full Gram derivative"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-word-normal-source",
+      "path": "02_REGISTRY/research/A4D_NATIVE_WORD_NORMAL_SOURCE_2026_10_31.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "07d216667d2d83a8ded50c36499daaa064a9ed5e",
+      "bytes": 5545,
+      "sha256": "50edebb4abd6649a76490e54f9f0bb9bad26fd94462fb076ee80803558b67ad9",
+      "change": "A",
+      "queries": [
+        "native word normal source fixed task QUERY"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-return-record-gate",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "22a8aa12f77cb264d1459b66e4804caab9e104d7",
+      "bytes": 5061506,
+      "sha256": "7f57fa2cbbd0112606905c6decf4831f96cc060ff7c9ea4de04f9924581a22c1",
+      "change": "M",
+      "queries": [
+        "native return record source gate full Gram derivative",
+        "actual paid clock credit full price duration edges same execution"
+      ],
+      "retrieval_mode": "exact-git-pin-only-over-search-limit"
+    },
+    {
+      "packet_id": "post-controller-spatial-heat",
+      "path": "02_REGISTRY/research/A4D_POST_CONTROLLER_SPATIAL_HEAT_SOURCE_TEST_2026_11_03.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "f10ed3fc33fd5a30f64166088c70e3b3017b242b",
+      "bytes": 5348,
+      "sha256": "ce9f2eeb0f7be7dc300d723d43b820efa92592f1bcb0d46cf419eeb678e82663",
+      "change": "A",
+      "queries": [
+        "post controller spatial heat h^-2 source mismatch"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "report-jet-universality",
+      "path": "02_REGISTRY/research/A4D_REPORT_JET_UNIVERSALITY_AND_AMPLITUDE_DESCENT_2026_10_30.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "28d3d453d7db8deba9fe343a23ea0ae8ead379e3",
+      "bytes": 6686,
+      "sha256": "ba2aa37b4b2f07f65238428915edb15629d61c4726aa55f37e8451b77c8620d4",
+      "change": "A",
+      "queries": [
+        "report jet universality changed report law first source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/A4D_RETAINED_RESPONSE_CONCENTRATION_GENERAL_EINSTEIN_2026_10_28.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "f11ca72e103faaab67bdedabe1aacab5e13929ba",
+      "bytes": 60040,
+      "sha256": "b08bb8c0def530962ca6a5cbfd5c2f7925f4eda4f1dc0f82a1060b988a850d27",
+      "change": "A",
+      "queries": [
+        "retained response Einstein pullback complete source full covector"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "scoped-native-kappa-contract",
+      "path": "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "f0f74d206dbf79913f9aa95f0e53177de6d12ab5",
+      "bytes": 6556,
+      "sha256": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+      "change": "A",
+      "queries": [
+        "scoped native kappa contract physical task price B D"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "canonical-balanced-reflection",
+      "path": "02_REGISTRY/research/sources/d0_balanced_reflection_2026-10-29/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "a7591ce05b4b446bb19a0a4b35ccfae2f1444dca",
+      "bytes": 21805,
+      "sha256": "2a98ce355540d0ecf4ed292df662598566801c5ef6e9128e4bd809a04228900f",
+      "change": "A",
+      "queries": [
+        "canonical balanced reflection full heat fixed intrinsic effect"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "canonical-balanced-reflection",
+      "path": "02_REGISTRY/research/sources/d0_balanced_reflection_2026-10-29/check_balanced_reflection.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "8aafe3ea16bf530f06d8f4d0f9e6205a60efd623",
+      "bytes": 17463,
+      "sha256": "7dba9d6a6c14ae4f6e2fb8e060a6341c6450c4e7035dcf81a65e5efa1c58045d",
+      "change": "A",
+      "queries": [
+        "canonical balanced reflection full heat fixed intrinsic effect"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "canonical-balanced-reflection",
+      "path": "02_REGISTRY/research/sources/d0_balanced_reflection_2026-10-29/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "ff745d2bf4e6fd271b15a8c36bce7aec17344587",
+      "bytes": 5690,
+      "sha256": "ca21c7b4bc58061f42539b966b81dbd6debe10c55bc62caa915a6ae9acdc195a",
+      "change": "A",
+      "queries": [
+        "canonical balanced reflection full heat fixed intrinsic effect"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "initial-data-cauchy-energy",
+      "path": "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "75f4115c98dcb75d8a02739531f25257027c41af",
+      "bytes": 24791,
+      "sha256": "aea8d31d9da6d4dac1ee3dc54332ed4f46d4d5c953bbc7a66fd95ab38fef7558",
+      "change": "A",
+      "queries": [
+        "initial data Cauchy source prediction energy certificate H12"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "initial-data-cauchy-energy",
+      "path": "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/check_energy_certificate.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "1f8960b84adb3287f633e982df7a8404b32d4313",
+      "bytes": 22980,
+      "sha256": "49453f9518321a836ef619711ff1091408d0af880de42eff2275f362256ad726",
+      "change": "A",
+      "queries": [
+        "initial data Cauchy source prediction energy certificate H12"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "initial-data-cauchy-energy",
+      "path": "02_REGISTRY/research/sources/d0_cauchy_energy_certificate_2026-10-30/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "8781b5098ecd634a2840a584f690f4253ecc279a",
+      "bytes": 2904,
+      "sha256": "886b4024d0815a4dcce904b199626eb0227700fab7aec7138e9d57a78ce83915",
+      "change": "A",
+      "queries": [
+        "initial data Cauchy source prediction energy certificate H12"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "initial-data-cauchy-energy",
+      "path": "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "502d86dccbff234d3eec0cd35f0ca462b19cf535",
+      "bytes": 26947,
+      "sha256": "0febee7186e95a1aaeb5717b607b63056f17d87a4f410430c5458740f0050c0f",
+      "change": "A",
+      "queries": [
+        "initial data Cauchy source prediction energy certificate H12"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "initial-data-cauchy-energy",
+      "path": "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/check_source_prediction.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "b5d5677b3d6eb4386bb7e7720e29cf74640e6f22",
+      "bytes": 16524,
+      "sha256": "240880c7fc15d6e2ed0b34397b0f311324a9234f92b2a803f6af994852f6cf12",
+      "change": "A",
+      "queries": [
+        "initial data Cauchy source prediction energy certificate H12"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "initial-data-cauchy-energy",
+      "path": "02_REGISTRY/research/sources/d0_cauchy_source_prediction_2026-10-29/oracle_check_composition.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "242bb239c535b2952e98280f06ccd5ea810ada5a",
+      "bytes": 15330,
+      "sha256": "dee4697552694f569d2b80abe4507b34dac521681eee8f0a07d926fbf814d185",
+      "change": "A",
+      "queries": [
+        "initial data Cauchy source prediction energy certificate H12"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "coherent-unit-calibration",
+      "path": "02_REGISTRY/research/sources/d0_coherent_units_2026-10-31/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "92a1eb657719e8615ff58e54e7fee274aec8e4aa",
+      "bytes": 24043,
+      "sha256": "df9aeb743355617e5f04962535857d50bf91b83ed67e5569e387986b6d6ab80a",
+      "change": "A",
+      "queries": [
+        "coherent calibration scalar unit records field source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "coherent-unit-calibration",
+      "path": "02_REGISTRY/research/sources/d0_coherent_units_2026-10-31/check_coherent_units.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "a7f21db16a4b9689e296758897f26f27409ce064",
+      "bytes": 14631,
+      "sha256": "90e099bb95908fa3ae87b1923b01ae8fd808493d44631fd98822c83efa2a8885",
+      "change": "A",
+      "queries": [
+        "coherent calibration scalar unit records field source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "coherent-unit-calibration",
+      "path": "02_REGISTRY/research/sources/d0_coherent_units_2026-10-31/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "9c850c7ce4ce12bb3e31655a9e405c6adc554de2",
+      "bytes": 3421,
+      "sha256": "bc31657d23a915835ec8cc08037651966e8883d6d0e71bbe44e58d0870a75bda",
+      "change": "A",
+      "queries": [
+        "coherent calibration scalar unit records field source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "final-regular-source-composition",
+      "path": "02_REGISTRY/research/sources/d0_final_regular_composition_review_2026-10-29/REVIEW_RECEIPT.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "c0a87eb7b4ef5726c5157a362d474c64414272db",
+      "bytes": 1632,
+      "sha256": "b0922502b33fb38661d4c996d87a219bf6dc39323e719b86520713f814c3cd15",
+      "change": "A",
+      "queries": [
+        "final regular source composition full price kappa interval"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "final-regular-source-composition",
+      "path": "02_REGISTRY/research/sources/d0_final_regular_composition_review_2026-10-29/check_final_composition.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "abf658711b3fcdfb165f2674b6be0d492873e376",
+      "bytes": 11201,
+      "sha256": "5b80c11842068bcb5759f778a49161463bb90a0a7a791433a9d0cda8edef451a",
+      "change": "A",
+      "queries": [
+        "final regular source composition full price kappa interval"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "final-regular-source-composition",
+      "path": "02_REGISTRY/research/sources/d0_final_regular_composition_review_2026-10-29/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "09d97ca454c320a25c8f531de885f3513258ef4a",
+      "bytes": 5445,
+      "sha256": "d94aa503a06a756ecc33c9dcb096e11dab2a0d7159dfb78b130fb7dcba65dfca",
+      "change": "A",
+      "queries": [
+        "final regular source composition full price kappa interval"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "internal-material-clock",
+      "path": "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "a59c21b44bc30678b8659013eb7f2aab5279713d",
+      "bytes": 23495,
+      "sha256": "b2c7e77cfaa3c860c4b620c2f53d00b38a7be468552f9d17797c7bcccfc9b592",
+      "change": "A",
+      "queries": [
+        "internal material clock Lorentz source separation Frobenius"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "internal-material-clock",
+      "path": "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/check_internal_clock.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "3b55da1cdfb8d7251e1ab8fc2b8bfb48be034999",
+      "bytes": 12969,
+      "sha256": "186a05078e421b301170c37effb758c83965577c0729bd03e56dee57b0cea736",
+      "change": "A",
+      "queries": [
+        "internal material clock Lorentz source separation Frobenius"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "internal-material-clock",
+      "path": "02_REGISTRY/research/sources/d0_internal_clock_source_2026-11-03/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "3c8d77276a1aa5608ecbd3cd0f0dc75e7a1d81ba",
+      "bytes": 3360,
+      "sha256": "f0fa7e53b5331c6a58dd7c407ae597c0178800fe8e75b29d9af19ecfc2c58d6c",
+      "change": "A",
+      "queries": [
+        "internal material clock Lorentz source separation Frobenius"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "internal-reference-cross-calibration",
+      "path": "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "367711cef32e752cf86b3ee90fe761a96816f673",
+      "bytes": 28842,
+      "sha256": "a04d8842a7082b7a43d32f993c13e76262674d9a454924891bb2150f9a774c8b",
+      "change": "A",
+      "queries": [
+        "internal reference cross calibration baseline slope source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "internal-reference-cross-calibration",
+      "path": "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/check_internal_reference.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "bf9ac428426517e39d9d29f41b4397b4871a5a4f",
+      "bytes": 28363,
+      "sha256": "9b97528cbdcb5d23d2af965af076f1d81bef308a20852483ea65e51581bc071a",
+      "change": "A",
+      "queries": [
+        "internal reference cross calibration baseline slope source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "internal-reference-cross-calibration",
+      "path": "02_REGISTRY/research/sources/d0_internal_reference_2026-10-31/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "a45451df57716694a3c2086e19ba60f0087085a0",
+      "bytes": 9810,
+      "sha256": "3a1a347939e4512b36016a34a67124c5389fa137657665a8007a8b2e8d4696e8",
+      "change": "A",
+      "queries": [
+        "internal reference cross calibration baseline slope source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "joint-source-balance",
+      "path": "02_REGISTRY/research/sources/d0_joint_source_balance_2026-10-31/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "b416fce9dc6adb653e59f11226a8c5d9bf801611",
+      "bytes": 20289,
+      "sha256": "5b194c16e3e34eb5326d8998c0e26f80c10042a8cd687719b753f8e77f7d08fe",
+      "change": "A",
+      "queries": [
+        "joint thermal stationarity shared controller source loss"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "joint-source-balance",
+      "path": "02_REGISTRY/research/sources/d0_joint_source_balance_2026-10-31/check_joint_balance.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "2e41d5b7228af8d7133d3bdcba8f01ff7c601efc",
+      "bytes": 12761,
+      "sha256": "52ce05bb2077f99106c77d6256d1a39fe4eaa803f4d906b944b5c4fe23116ea2",
+      "change": "A",
+      "queries": [
+        "joint thermal stationarity shared controller source loss"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "joint-source-balance",
+      "path": "02_REGISTRY/research/sources/d0_joint_source_balance_2026-10-31/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "bd193cb51928825751b21fcd24a2a2d24af383de",
+      "bytes": 5797,
+      "sha256": "9a6b584dda3ba08077b53123310fbb798f2bb3f8a436e14e8332b5c53999b81e",
+      "change": "A",
+      "queries": [
+        "joint thermal stationarity shared controller source loss"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-return-record-gate",
+      "path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/REVIEW.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "603f0b42f4a060f4adf2f56ed0dcd21fb2460fba",
+      "bytes": 5604,
+      "sha256": "b3088a447813c1277b544de53bf5ebf75c67d46f0f7498bb8849519d17788d70",
+      "change": "A",
+      "queries": [
+        "native return record source gate full Gram derivative"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-return-record-gate",
+      "path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/VALIDATION.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "1d95f6ce440407a09c650063a84e3ea84bbbf118",
+      "bytes": 3470,
+      "sha256": "cf083f138105935941c8afc4eb1a535cacaa69ac17f949f5c949507e9156ca7e",
+      "change": "A",
+      "queries": [
+        "native return record source gate full Gram derivative"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-return-record-gate",
+      "path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/check_return_record_gate.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "ff5da719cd6b7a646c62c67b528812180c88160b",
+      "bytes": 22610,
+      "sha256": "a73d0cbc3ecf38b47b22c6ace9f9c44638827c9db977ba1e995a9b80f5cad1e6",
+      "change": "A",
+      "queries": [
+        "native return record source gate full Gram derivative"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-return-record-gate",
+      "path": "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "17515c3e92ade13b3d3c37455063fc7b94757950",
+      "bytes": 9510,
+      "sha256": "3d9587f897d12cb4c21c19fcbe7ec22098e363df6a87b01cc8cbf98a06ea4ef1",
+      "change": "A",
+      "queries": [
+        "native return record source gate full Gram derivative"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-word-normal-source",
+      "path": "02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "08e2e6843087c6aab33422af4b85ae2634c83c60",
+      "bytes": 22914,
+      "sha256": "6d94d278079bbd22c6501bd690368fd8d5a272c0e04a7330fbadf6f7621f669c",
+      "change": "A",
+      "queries": [
+        "native word normal source fixed task QUERY"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-word-normal-source",
+      "path": "02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/check_native_tangent.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "273ea201fe64fd95a9391f96684c55a4d47dd12d",
+      "bytes": 17650,
+      "sha256": "60a58b99f1212d834a21599909ca445920dc13e53c65e623e0177a520451ff6e",
+      "change": "A",
+      "queries": [
+        "native word normal source fixed task QUERY"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "native-word-normal-source",
+      "path": "02_REGISTRY/research/sources/d0_native_tangent_closure_2026-10-31/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "be7a44b660d6190d293a07b994976cdf66ffdfc6",
+      "bytes": 8215,
+      "sha256": "81ac7ad1db6a3781ab03c6ec2c5602149f0ef246f1bbf22f744683096b9751c5",
+      "change": "A",
+      "queries": [
+        "native word normal source fixed task QUERY"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "report-jet-universality",
+      "path": "02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "e96313167a54e713fb56530d4bed030a78373ce5",
+      "bytes": 27171,
+      "sha256": "2c26b1d4878a8bc619ebbd33fc19f3fad0779b5ab6792032b0e24cacf0d5ebfc",
+      "change": "A",
+      "queries": [
+        "report jet universality changed report law first source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "report-jet-universality",
+      "path": "02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/check_report_jet.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "1c046811b42a730f8c0a77b9919fbb167c74f44c",
+      "bytes": 16757,
+      "sha256": "2993f321773e9da4496cca3540627b2c27fb7031c19740c5eafdd122b3b3f13b",
+      "change": "A",
+      "queries": [
+        "report jet universality changed report law first source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "report-jet-universality",
+      "path": "02_REGISTRY/research/sources/d0_report_jet_universality_2026-10-30/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "4288e5611dbb3ca850aaf92afa6e67c140250503",
+      "bytes": 4931,
+      "sha256": "403b0d436237a928377bd80fc4b510ad060ca9fa1616333e09918a84ddfb1a7b",
+      "change": "A",
+      "queries": [
+        "report jet universality changed report law first source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/FULLSTEP_COMPILATION_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "64ba098e77d71dfc14be632e9b50add50e3eac8a",
+      "bytes": 23527,
+      "sha256": "27d6a4ab27ee12b32be57b052886a030c0ba278efb76439a01a94eedd3c69d71",
+      "change": "A",
+      "queries": [
+        "retained response fullStep compilation growing clock heat budget"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "58ab58d03e5b983182b1d5ea2548698a25e39fb5",
+      "bytes": 17188,
+      "sha256": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1",
+      "change": "A",
+      "queries": [
+        "retained response Einstein pullback complete source full covector"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "370e8fb572e85fedeebe2e72531c01d5b68b0a91",
+      "bytes": 17030,
+      "sha256": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+      "change": "A",
+      "queries": [
+        "retained response fullStep compilation growing clock heat budget"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "65f4bdf04fac4640bc83f272c56ba938fa73d9a0",
+      "bytes": 38498,
+      "sha256": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e",
+      "change": "A",
+      "queries": [
+        "retained response kappa closure soundness recovery source concentration"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "4c01fc5bf00971c866dbc22233b64ce7b3077c33",
+      "bytes": 31017,
+      "sha256": "81ed72c717383acf44b5e99149d9989faecb2a196546f007bdb5161a64a488f9",
+      "change": "A",
+      "queries": [
+        "retained response raw cylinder golden birth native word source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/SOURCE_PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "37d85ba5d6fef9f7cbc9f2893f86c2c2898691f1",
+      "bytes": 55951,
+      "sha256": "ece9525513f391f802f470061f2cccb3fe5b09f0439533aef8f2731f5d385de3",
+      "change": "A",
+      "queries": [
+        "retained response Einstein pullback complete source full covector"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_einstein_pullback.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "d64340e535dbc5bd76917199c1a696f904a0e886",
+      "bytes": 4577,
+      "sha256": "bcba03e8bac2a7afb3fe0d481896f21e6471be64b75afdb796fb61ce43af7a58",
+      "change": "A",
+      "queries": [
+        "retained response Einstein pullback complete source full covector"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_fullstep_lie.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "ba7dc7eaf3d1a33950a923246ac32ce7b15d6368",
+      "bytes": 5385,
+      "sha256": "a70cf22d241f85789ed79733358b015e35e1727ebf3fec684be044920b763654",
+      "change": "A",
+      "queries": [
+        "retained response fullStep compilation growing clock heat budget"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_growing_clock.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "bdc68453b52c83702d9e5911611ad19650a09e13",
+      "bytes": 7854,
+      "sha256": "30d41b1d024d6a6c6cbfa387fd6f376d2176cfc91757043ee093a72d1ff9d2d8",
+      "change": "A",
+      "queries": [
+        "retained response fullStep compilation growing clock heat budget"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_raw_cylinder.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "15dc961bcc04effaefe2855a7277c707b7108a1b",
+      "bytes": 8995,
+      "sha256": "afcede89aadd7e402fe6fea1fb9bc45a878f260c17e2a4499482df34d389eaf0",
+      "change": "A",
+      "queries": [
+        "retained response raw cylinder golden birth native word source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/check_source_concentration.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "5bae6a12106c2310f3d7bead56321bc45bc55c95",
+      "bytes": 19189,
+      "sha256": "8d269db45b00d0eea235bad4423404af7c2bb5110658610a0f3381fc7a253b72",
+      "change": "A",
+      "queries": [
+        "retained response kappa closure soundness recovery source concentration"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "c4475ea81af1faf4761d47cbfca9297d9bb2dafd",
+      "bytes": 4639,
+      "sha256": "eb77cdf1c5819296275ecc438f93620211da0aa0608a7f5a3a85704101752b7c",
+      "change": "A",
+      "queries": [
+        "retained response kappa closure soundness recovery source concentration"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_einstein.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "6e7c7d56ca051ce9011337d037f232d4cea62993",
+      "bytes": 1501,
+      "sha256": "4460ad718a37a8b81b45d168135d726e139058eb552de8896d969ac39e1be9dd",
+      "change": "A",
+      "queries": [
+        "retained response Einstein pullback complete source full covector"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_fullstep.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "24f07bf815084bffc0717187063d8914d9273f90",
+      "bytes": 2146,
+      "sha256": "d57515c54dff1d7c4fb07f2b6bf042ce8adedf08e4775868ad5bff91e082c635",
+      "change": "A",
+      "queries": [
+        "retained response fullStep compilation growing clock heat budget"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_growing_clock.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "e4512b7964864acd6423a2a8702b5c696567f433",
+      "bytes": 3522,
+      "sha256": "17b74a79aa14919a49fe94115cb35e375ca6afd3244a34dba0ef2aa9b743863a",
+      "change": "A",
+      "queries": [
+        "retained response fullStep compilation growing clock heat budget"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "retained-response-concentration",
+      "path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/result_raw_cylinder.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "a9c0beeab8189205ff676a9290715c5d6cdced47",
+      "bytes": 4331,
+      "sha256": "d25d0fd800c000cd771c39f52c9594c331b596bd1ad373d07830b28f9efb0f00",
+      "change": "A",
+      "queries": [
+        "retained response raw cylinder golden birth native word source"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "post-controller-spatial-heat",
+      "path": "02_REGISTRY/research/sources/d0_spatial_heat_source_2026-11-03/PROOF_RU.md",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "9abec4291ff3a123be4319a73242067235ad07f0",
+      "bytes": 26111,
+      "sha256": "bbb440382c9bbbce06804ceaa1f54a5a48689c0fedda16cf5bf8dfb1e25bf4cc",
+      "change": "A",
+      "queries": [
+        "post controller spatial heat h^-2 source mismatch"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "post-controller-spatial-heat",
+      "path": "02_REGISTRY/research/sources/d0_spatial_heat_source_2026-11-03/check_spatial_source.py",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "f0b50cc64806ae4436aac86c9cd6cdf038a89aa5",
+      "bytes": 15659,
+      "sha256": "e66f1d28cc7ab651fa0eb778cecc244ad02f9712565f47c8ec53526f93a45a97",
+      "change": "A",
+      "queries": [
+        "post controller spatial heat h^-2 source mismatch"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    },
+    {
+      "packet_id": "post-controller-spatial-heat",
+      "path": "02_REGISTRY/research/sources/d0_spatial_heat_source_2026-11-03/result.json",
+      "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+      "blob": "c3091b822517baec26b396b629b1ba5309554774",
+      "bytes": 8987,
+      "sha256": "6d7c086d9d652db69f0b0bef3410b8d67399e86dd7c13b1c26f741ce442fc4a7",
+      "change": "A",
+      "queries": [
+        "post controller spatial heat h^-2 source mismatch"
+      ],
+      "retrieval_mode": "exact-pinned-content"
+    }
+  ],
+  "latest_followup": {
+    "commit": "e94e518c43b748e6c4fff1d4db364a6265bbf44d",
+    "subject": "Derive actual clock credit required by full native price binding",
+    "changed_paths": [
+      "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+    ],
+    "source_section": "§7er",
+    "checker_marker": "7er CLOCK CREDIT CHECKER",
+    "checker_sha256": "7a3ba5e3a80bbd1c8446d7223879db65d8b336c08411114468c406dc4fe68252",
+    "owner_receipt_sha256": "3075896e9d6130f148f94ccd1dd3eb58b872ccff29074dafc2df50fd3e7f2430",
+    "check_count": 47,
+    "GR_closed": false
+  }
+}

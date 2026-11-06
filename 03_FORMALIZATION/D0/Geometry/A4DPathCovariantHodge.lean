@@ -2,6 +2,7 @@ import Mathlib.Data.Matrix.Mul
 import Mathlib.LinearAlgebra.Matrix.Notation
 import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
 import Mathlib.Tactic
+import D0.Algebra.FiniteGramTangent
 import D0.Geometry.A4DSolderMetricCompletion
 
 /-!
@@ -361,8 +362,9 @@ theorem periodTwo_centeredSolder_constant (t : ℝ) (x : ArchiveRolePhaseGroup 0
     solderMetricMatrix 0 ((t : ℝ) • periodTwoNyquistCoframe) x = roleLorentzMetric := by
   have hC : centeredCoframeMatrix 0 ((t : ℝ) • periodTwoNyquistCoframe) x = 0 := by
     rw [centeredCoframeMatrix_smul, periodTwoNyquist_centeredCoframe_zero, smul_zero]
-  rw [solderMetricMatrix, solderMatrix, hC, add_zero, roleLorentzMetric_transpose,
-    roleLorentzMetric_sq, Matrix.one_mul]
+  rw [solderMetricMatrix, solderMatrix, hC, add_zero]
+  unfold D0.Algebra.finiteGram
+  rw [roleLorentzMetric_sq, Matrix.one_mul, roleLorentzMetric_transpose]
 
 /-- Any readout of the centered solder metric is constant on the Nyquist family,
 while the one-form value `e(A,A)` is not. -/

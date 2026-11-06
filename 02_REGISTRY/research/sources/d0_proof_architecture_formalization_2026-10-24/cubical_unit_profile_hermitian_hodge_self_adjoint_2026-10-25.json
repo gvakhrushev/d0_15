@@ -1,0 +1,154 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "e063c098ce6b62a496b7226e664fb1bae25deab3",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "6901e9eadb25230df7bac4f3814c2caf0159c043ad5e3c72226c6fdb6e467e65",
+  "collector_sha256": "7ef0ecb23290c4f883a7a7667f2b1c90e3ab31e3ea35c55f015e2ff90c6ae98e",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveWeightedHodgeDirac",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.cubicalWeightedHodgeDirac_unit_profile_hermitian_self_adjoint"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "φ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℝ"
+        }
+      ],
+      "conclusion_whnf": "D0.Algebra.finiteHermitianPairing (D0.Geometry.cubicalWeightedHodgeDirac N (fun x => 1) ψ) φ =\n  D0.Algebra.finiteHermitianPairing ψ (D0.Geometry.cubicalWeightedHodgeDirac N (fun x => 1) φ)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 30,
+            "line": 153
+          },
+          "start": {
+            "column": 0,
+            "line": 139
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 69,
+            "line": 141
+          },
+          "start": {
+            "column": 8,
+            "line": 141
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ φ : D0.Geometry.ArchiveCochain N),\n  D0.Algebra.finiteHermitianPairing (D0.Geometry.cubicalWeightedHodgeDirac N (fun x => 1) ψ) φ =\n    D0.Algebra.finiteHermitianPairing ψ (D0.Geometry.cubicalWeightedHodgeDirac N (fun x => 1) φ)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+      "name": "D0.Geometry.cubicalWeightedHodgeDirac_unit_profile_hermitian_self_adjoint",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Algebra.finiteHermitianHodgeDirac",
+        "D0.Algebra.finiteHermitianHodgeDirac_pairing_self_adjoint",
+        "D0.Algebra.finiteHermitianPairing",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cubicalCoboundaryₗ",
+        "D0.Geometry.cubicalWeightedHodgeDirac",
+        "D0.Geometry.cubicalWeightedHodgeDirac_unit_profile_eq_finiteHermitianHodgeDirac",
+        "D0.Geometry.cubicalWeightedHodgeDiracₗ",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "DFunLike.coe",
+        "Eq",
+        "Eq.mpr",
+        "Fin.fintype",
+        "Fintype.decidablePiFintype",
+        "LinearMap",
+        "LinearMap.instFunLike",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.instOne",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "congrArg",
+        "id",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat",
+        "instStarRingReal"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Algebra.finiteHermitianPairing",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.cubicalWeightedHodgeDirac",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instFintype",
+        "Real",
+        "Real.instField",
+        "Real.instOne",
+        "ZMod",
+        "ZMod.fintype",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat",
+        "instStarRingReal"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+    }
+  ]
+}

@@ -16,6 +16,83 @@
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
 
 
+## Current synthesis: what the gravity results transfer to cosmology
+
+The current gravitational construction adds a concrete local nonlinear
+Einstein–CAR family and observation-to-geometry maps to the earlier finite
+spectral and survey interfaces in this book. It does not yet select a global
+cosmological history. The [primary positive case](../02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
+is an exact interior stationary family for a specified Golden-J2 action, with
+its source, clock, midpoint readout and one-sided refinement statement. The
+complete native physical action and its general GR realization remain open.
+Book 07 now explains the additional complete-source applications and their
+precise assumptions.
+
+### Local source, global boundary and survey window
+
+A local sourced geometry is not automatically a solution on a compact
+cosmological domain. Summing the owned transverse finite Poisson equation
+converts its Laplacian to boundary flux. On a periodic transverse torus that
+sum is zero; a single-valued periodic profile cannot support a nonzero mean
+source without a genuine seam, boundary contribution or balancing source.
+The [current assembly source discussion](../02_REGISTRY/gr_assembly/README.md#current-scientific-gate)
+retains this constraint explicitly. A local Dirichlet construction therefore
+cannot be inserted as a homogeneous expanding universe by changing its name.
+
+For cosmological use, the actual chain must include a global family with its
+boundary and source conditions, the operational metric and clock readout, and
+the frozen observable-transfer map for the selected survey. The generic
+[theory-transfer owner](../02_REGISTRY/research/D0_THEORY_TRANSFER_2026_10_20.md)
+transports a proof through an explicit interpretation and its regime
+assumptions; it does not create those global physical inputs. The finite
+scene's static spectral ratios and the survey's time-dependent likelihood
+retain the distinction already made in §§08.10–08.12.
+
+### An archive observable must retain the distinctions its geometry needs
+
+The current Brinkmann family supplies a sharp test for a proposed archive
+description. Every polynomial scalar curvature invariant, including complete
+contractions of curvature derivatives, vanishes on this family even when its
+Ricci or Weyl tensor is nonzero. Thus such scalar invariants alone cannot
+distinguish a flat member from its nonflat wave members. This is the scoped
+[VSI result](../02_REGISTRY/research/A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md),
+not an assertion that every spectral observable is blind or that every
+cosmology has vanishing invariants.
+
+The [operational reconstruction](../02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+instead retains actual CAR future contexts and based-holonomy information,
+with a sensitivity and error norm. A cosmological archive proposal must state
+which observations it preserves and how they determine its intended metric
+or source. Matching one scalar summary does not establish that common
+empirical image.
+
+### Complete information and complete price remain typed quantities
+
+Book 06 now distinguishes three actual algebras: the coherent fresh archive,
+that archive together with a retained purifier, and a classically recorded
+fine or port history. Their entropies need not agree or have the same growth.
+The [published coherent-archive composition](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_FULL128_COHERENT_ARCHIVE_FIXED256_SOURCE_2026_10_27.md)
+computes the first on a fixed 256-dimensional spectral carrier at the stated
+regular original fixture. That mathematical reduction is neither physical
+erasure of the entire tape nor a cosmological entropy-production law.
+
+Similarly, the [complete cut-price source application](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md)
+uses one specified full heat-plus-logdet action. An independently calculated
+Shannon or von Neumann entropy is not added to it without an action-binding
+proof. Pressure, lapse, clock and preparation derivatives must come from the
+same selected physical valuation. The recent general smooth-source route
+also uses a declared density metric; its conformal relation to the original
+metric does not identify their measured volumes or cosmological distances.
+The [density-map owner](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_DENSITY_INVOLUTION_COMPLETE_PRICE_GENERAL_SOURCE_2026_10_27.md)
+keeps that operational dictionary open.
+
+These additions are explanatory integration of main-resident results and
+immutable Draft #334 research. They do not change the existing DESI, CMB,
+IceCube, SPARC or other passport verdicts, turn an internal finite theorem
+into a likelihood result, or promote `GR_closed`. A new cosmological
+application must supply its actual global solution, physical observable map
+and declared empirical test.
+
 ## 08.0 Active cosmology/empirical transfer law
 
 Book 08 treats `S_DE` as a two-mode feedback-pressure transfer. Internal transfer closure and survey comparison are separate objects.

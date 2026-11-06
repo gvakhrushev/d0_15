@@ -1,0 +1,7 @@
+2b1d451e8078785cceca843caa93b7dd11995dd6	test(#334): verify general mass-coordinate lift and all42 nonlinear dust rows
+ebf9291425f3690c987bcf3d11fd559c367ffcc0	research(#334): prove reverse Einstein-dust lift for arbitrary regular irrotational solutions
+e2e62a45c96664437897290549cbd3c8ea8043c1	test(#334): retain observed symbolic42 and mass-coordinate equivalence controls
+de02000eb2872a9f2e18e6595d0c847e5ac18e26	research(#334): extend nonlinear dust recovery from LTB to every regular irrotational solution
+3219c15808f5247437d0e14557aec75c7fe6ac03	research(#334): preserve nonlinear GR sector through the complete retained past
+1e6420f319d714be53363a77823f76ec620a6473	research(#334): balance original history scale source with fixed boundary blocks
+8daed32d560df18837bcc69458a8fa538a9cf135	research(#334): apply dust Cauchy evolution to the complete nonlinear source

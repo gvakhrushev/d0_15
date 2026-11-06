@@ -1,0 +1,88 @@
+{
+  "check_count": 90,
+  "check_counts_by_kind": {
+    "exact_golden": 39,
+    "exact_integer": 6,
+    "nominal_numeric": 34,
+    "provenance": 7,
+    "structural": 4
+  },
+  "different_owner_fields": [
+    "max_nominal_residual",
+    "native",
+    "residuals",
+    "runtime"
+  ],
+  "files": {
+    "python312_normal.json": {
+      "bytes": 16280,
+      "sha256": "2714afa6286de0a9857af4d89d99a1388eed942aa03c0adad0544963dc8ee554"
+    },
+    "python312_normal.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python312_optimized.json": {
+      "bytes": 16280,
+      "sha256": "2714afa6286de0a9857af4d89d99a1388eed942aa03c0adad0544963dc8ee554"
+    },
+    "python312_optimized.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_normal.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_normal.stderr": {
+      "bytes": 1101,
+      "sha256": "c0a435f7ee8d209260174e791f3c7e843741ee7137ddde335b9a8a23d926d210"
+    },
+    "python39_optimized.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python39_optimized.stderr": {
+      "bytes": 1101,
+      "sha256": "c0a435f7ee8d209260174e791f3c7e843741ee7137ddde335b9a8a23d926d210"
+    }
+  },
+  "local_max_nominal_residual": 3.774758286659082e-15,
+  "local_runtime": {
+    "numpy": "2.5.4",
+    "python": "3.12.13",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0"
+  },
+  "local_stdout_sha256": "2714afa6286de0a9857af4d89d99a1388eed942aa03c0adad0544963dc8ee554",
+  "normal_optimized_identical": true,
+  "numeric_scope": "nominal floating residuals, not interval certificates",
+  "owner_max_nominal_residual": 3.774758286585258e-15,
+  "owner_runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "owner_stdout_sha256": "85d7c369546a85ce1903d7a8582f495918a96c03268812ae39c00c53618044bf",
+  "python312_exit_codes": [
+    0,
+    0
+  ],
+  "python39_exit_codes": [
+    1,
+    1
+  ],
+  "python39_failure": "RuntimeWarning divide by zero encountered in matmul in pinned original constructor under -Werror before completion",
+  "python39_runtime": {
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0"
+  },
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "schema": "d0-334-four-commit-intake-v1",
+  "base": "05cc38dc6283f45995a4c86fb69067c87734bb4c",
+  "head": "2900145fe674629b61949587917a3a2ea5188797",
+  "commits": [
+    "e6e46c805f8a51c6965aa6abbd8fc3e4b71a7d74",
+    "66edbcfd458daecd133baca3b44528931e2ebfc5",
+    "cfe6755a0ddf5174698f003db59531a1ebd93fa1",
+    "2900145fe674629b61949587917a3a2ea5188797"
+  ],
+  "changed_paths": {
+    "task": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "memo": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+  },
+  "snapshots": [
+    {
+      "commit": "05cc38dc6283f45995a4c86fb69067c87734bb4c",
+      "source_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "git_blob": "891bfd93ccd3a67b1d2b597e8f0762ec641f371a",
+      "bytes": 1365014,
+      "sha256": "fb56c597b15fc72b51a597a300fdce89337897312384621afe3663c095803a51",
+      "snapshot": "snapshots/05cc38dc6_task.xz",
+      "snapshot_sha256": "a0293607d43c0ddf0b03a24066fb9c55e2708693543adcdae35df0712b6ad990"
+    },
+    {
+      "commit": "05cc38dc6283f45995a4c86fb69067c87734bb4c",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "git_blob": "d355b8695f61b4f08df5a711d47c3f306e0527aa",
+      "bytes": 5817010,
+      "sha256": "f77f8dc194c2045c6a8ddb4bcebb04da53df684b5916b6d918cdc764d394c697",
+      "snapshot": "snapshots/05cc38dc6_memo.xz",
+      "snapshot_sha256": "dba396821809cda90ca01a1e2d3964be4be54381a0e6449f113da2e5d47daee7"
+    },
+    {
+      "commit": "e6e46c805f8a51c6965aa6abbd8fc3e4b71a7d74",
+      "source_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "git_blob": "6af951e85a40ebb13560edd8bbc6d524db35c570",
+      "bytes": 1369545,
+      "sha256": "29f35c95f4054ba3c8adc95d0cc0d31a5f5828d1ac3084ee8e959c04a103aee2",
+      "snapshot": "snapshots/e6e46c805_task.xz",
+      "snapshot_sha256": "cca7ce84d559b47901f2a0a83adc880a3e6617eef747f2253e1128ba829631b9"
+    },
+    {
+      "commit": "e6e46c805f8a51c6965aa6abbd8fc3e4b71a7d74",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "git_blob": "a62e7021769e2e624c389daea2d8bafb3a4bc845",
+      "bytes": 5849688,
+      "sha256": "661717ff4900cdd5c8a299a67bc1d0bd37023fd2d6242f6b4be3cb657c16bcbc",
+      "snapshot": "snapshots/e6e46c805_memo.xz",
+      "snapshot_sha256": "2366a52254b70aee9be00bd4dfc11b0ee84b7c496b51bc2f95a13929f4522b74"
+    },
+    {
+      "commit": "66edbcfd458daecd133baca3b44528931e2ebfc5",
+      "source_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "git_blob": "98fba883c98f3e718f7f8ce6c41485fddf2b69bb",
+      "bytes": 1373652,
+      "sha256": "3bc1ac2079b912707e5d0f6fcf250ee6dd469a092262add21f157011ac525116",
+      "snapshot": "snapshots/66edbcfd4_task.xz",
+      "snapshot_sha256": "5affe759252328a6afe8a93d4a563c1d13e2a28cb5092f9a0c348f9ef665c0e4"
+    },
+    {
+      "commit": "66edbcfd458daecd133baca3b44528931e2ebfc5",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "git_blob": "5b2238bb414557ddb42b2f6d26d937d138e99f0e",
+      "bytes": 5892828,
+      "sha256": "49da61f9ad48ad2388790fc262845dfd1a74849608f6058a656539eb0fdfb854",
+      "snapshot": "snapshots/66edbcfd4_memo.xz",
+      "snapshot_sha256": "f09230a2790b6df76264b39dfadb0e8d6af0da6bba23d289aea710bdfdd70aaf"
+    },
+    {
+      "commit": "cfe6755a0ddf5174698f003db59531a1ebd93fa1",
+      "source_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "git_blob": "b5c35dc89a831091a0a8bc58b1b47b3d5dc603e2",
+      "bytes": 1377626,
+      "sha256": "09615cdb04db4b3eaea7d885bac8729e7c56981ea182011c887488cf5fe2d3de",
+      "snapshot": "snapshots/cfe6755a0_task.xz",
+      "snapshot_sha256": "bbcb0a3a4619ed6470c6edfcda1660d1ad77040f90fb608206013aac6f045829"
+    },
+    {
+      "commit": "cfe6755a0ddf5174698f003db59531a1ebd93fa1",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "git_blob": "a9230d9ae6bb38e42b786e7507e0090906a36d41",
+      "bytes": 5925390,
+      "sha256": "655dafcaeb72b5bc9b46d24dbae1787c7e14c5331353b62bb8982f1781ea6812",
+      "snapshot": "snapshots/cfe6755a0_memo.xz",
+      "snapshot_sha256": "59f548d24c9c60249e8215fe8a618b9bb3f0114284c081d0e93fa11c04f85273"
+    },
+    {
+      "commit": "2900145fe674629b61949587917a3a2ea5188797",
+      "source_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "git_blob": "c3104c145b8f4f7a24aac051d3711d9ad2fec50b",
+      "bytes": 1381303,
+      "sha256": "7e7e49e1fd29bda5c0c3f32945a7c4f7fd0ad94915b00e406763c3cc4a2c0d14",
+      "snapshot": "snapshots/2900145fe_task.xz",
+      "snapshot_sha256": "8cd441029a383b0c89dede3223a4a18ebba0d2a06779421e6cc65be0305f81d6"
+    },
+    {
+      "commit": "2900145fe674629b61949587917a3a2ea5188797",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "git_blob": "22eab29216daa85e49a169b16d08a39a7edc1348",
+      "bytes": 5951729,
+      "sha256": "ca97b9e2111d242e0f1f95a04ea85acbcd70e59075fb769f76cbb9dcf556c7d4",
+      "snapshot": "snapshots/2900145fe_memo.xz",
+      "snapshot_sha256": "026763306ea69408fa083267e627dcc6cbb3a7424a6051d28e8f4e9abd7e1c8e"
+    }
+  ],
+  "patch": {
+    "path": "complete_delta.patch.xz",
+    "sha256": "9f28b9bf92d80283bd4e105429f1631e89b9d19371c5122adff182185fa21af0",
+    "bytes": 155393,
+    "compressed_sha256": "23ef7d1ae620b3ac44f5bdebe741f28e88150d3bd89b6df9367bc55805082153"
+  },
+  "inputs": [
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+      "bytes": 17833,
+      "path": "inputs/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+    },
+    {
+      "source_path": "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md",
+      "git_blob": "370e8fb572e85fedeebe2e72531c01d5b68b0a91",
+      "sha256": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+      "bytes": 17030,
+      "path": "inputs/02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md"
+    }
+  ],
+  "checks": {
+    "sr": {
+      "sha256": "b785b3f595ea130e6d0b4dc85a8dd09f4b989f59a549dae5aa806d2fd8219048",
+      "checks": 59,
+      "owner_receipt_sha256": "30a5c02c586b1d2d6fdd514a640ab2a996084a0025706fa8c5476055cda6cecc",
+      "local_python": "3.12.13",
+      "sympy": "1.14.0"
+    },
+    "xf": {
+      "sha256": "a879ac7dabc3e3a9511796fa1771999100def36d59f383a7f6284ee67e8253d4",
+      "checks": 61,
+      "owner_receipt_sha256": "2dba5bc0a7e4c5bc7d2e3de4bbc9a7574d6a1ec37d203580fecc326944182c16",
+      "local_python": "3.12.13",
+      "sympy": "1.14.0"
+    },
+    "clock": {
+      "sha256": "ac11be45b2cec5581abb05bd1de8973d4ea9d8283a1f31ddab1ea6b65fcf84e8",
+      "checks": 8,
+      "owner_receipt_sha256": "438255ae32ea69621bda16b514e184dc173409c7228568c0fade4b0440a6fb18",
+      "local_python": "3.9.6",
+      "sympy": "1.14.0"
+    },
+    "price": {
+      "sha256": "c34cd7740cba0cca4a3d67e6d8877fa4519cfc3886e45c85077fa86e43ed737f",
+      "checks": 24,
+      "owner_receipt_sha256": "db13c0b3acfd35c52340206abd00ffbe71161d4e1fc90941a1b10edf18364b2d",
+      "local_python": "3.9.6",
+      "sympy": "1.14.0"
+    }
+  },
+  "scientific_acceptance": false,
+  "GR_closed": false,
+  "supplementary_sha256": {
+    "diagnostics/sr_py312_missing_sympy.stderr": "c94b405223647da8209964be9448d1c7cfacd470f1ddeddcb5fb2b4086872b72",
+    "diagnostics/sr_py312_missing_sympy_optimized.stderr": "c94b405223647da8209964be9448d1c7cfacd470f1ddeddcb5fb2b4086872b72",
+    "diagnostics/sr_py39_normal.stderr": "a360e4b991986c9a61fe53c0c191c6a5f1a187b65101426d3b12c92b4b1d10da",
+    "diagnostics/sr_py39_optimized.stderr": "a360e4b991986c9a61fe53c0c191c6a5f1a187b65101426d3b12c92b4b1d10da",
+    "diagnostics/xf_py312_missing_sympy.stderr": "f6608b47b36babdea3d762c5a88b1f7f0a10f35846976266699f3789d12aee00",
+    "diagnostics/xf_py312_missing_sympy_optimized.stderr": "f6608b47b36babdea3d762c5a88b1f7f0a10f35846976266699f3789d12aee00",
+    "diagnostics/xf_py39_normal.stderr": "e8bc549e975ab413da74f5bf9fbe8d763125cc8af313b799f9ed67b230937175",
+    "diagnostics/xf_py39_optimized.stderr": "e8bc549e975ab413da74f5bf9fbe8d763125cc8af313b799f9ed67b230937175",
+    "results/sr_normal.stdout": "cbedf85f63487172149b3bca70b9836a6110a8881173936dd0d31903bbeb2f53",
+    "results/sr_optimized.stdout": "a4e2563c4c3b2bdeac38b86e9b7062a5680c0e44247982fe4baa588302772ad2",
+    "results/xf_normal.stdout": "ad8f33bd91ea4129a6370ade83cc895dace759dc24fcef9440838d9b52b0f264",
+    "results/xf_optimized.stdout": "d8b4cdfc6487a5845506e89fab11a7e32365ce7e809cbafa358cad97f593f2d7",
+    "results/intake_verifier_normal.json": "dc0d6724f1d90696bfd4cf5819f51137a4f8a3b8dacf80c3e250a0bc823d9861",
+    "results/intake_verifier_optimized.json": "dc0d6724f1d90696bfd4cf5819f51137a4f8a3b8dacf80c3e250a0bc823d9861",
+    "results/combined_replay.stdout": "4e5c59d2c99be51019b7087485635a1a1f1d3c969da2e761eda2ab89fea6f20d"
+  },
+  "source_sections": [
+    {
+      "label": "SR",
+      "heading": "## Original-reader closed comparison: the full growing clock supplies the Einstein source",
+      "byte_start": 5875912,
+      "byte_end_exclusive": 5908835,
+      "line_start": 155216,
+      "sha256": "ac9b13cb6f3c39552014532ba58a5b39832f0a26c2a3fe10c071cf567de2c76a"
+    },
+    {
+      "label": "XF",
+      "heading": "## Full reversible comparison and an Einstein source class without character selection",
+      "byte_start": 5908835,
+      "byte_end_exclusive": 5951729,
+      "line_start": 155877,
+      "sha256": "76d38fe7f624749e95aa651611a8be13443de7a1806aebbd88c11ad66e2079e5"
+    },
+    {
+      "label": "SC",
+      "heading": "## 7fd. One full-comparison clock family: primitive interpretation and a nonscreened master-law Einstein source",
+      "byte_start": 4837837,
+      "byte_end_exclusive": 4870399,
+      "line_start": 134617,
+      "sha256": "c7564df1f6ce3f07620f8b6345461e8460ce9197462ee6ce99aa5a0f3a41f5bf"
+    },
+    {
+      "label": "PB",
+      "heading": "## 7fe. The actual prepared-price defect: complete quantum continuation, generated occupation and the surviving source",
+      "byte_start": 4870399,
+      "byte_end_exclusive": 4896738,
+      "line_start": 135204,
+      "sha256": "91fae50c5bb19d1cbc0b65ef975844764836025b0258fa73c5f73e386f847309"
+    }
+  ]
+}

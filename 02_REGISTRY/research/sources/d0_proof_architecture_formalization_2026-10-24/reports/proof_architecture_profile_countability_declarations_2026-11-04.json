@@ -1,0 +1,881 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "7d928f9306637b4b77ffdf94b84c13f186b74e90",
+  "worktree_dirty": false,
+  "lean_source_digest": "3c22d591bcbcabf8287c27c6f5f65622c9b0dc8320443b2b198ebc1ef205a3db",
+  "collector_sha256": "c8b2cabe6fa41c7b4e8c2cbe9d6ef01f0d1ad3c81a4f0f26dc0a8c320e60bc4f",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Foundation.FutureProfileCountability"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.2973319887._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.2973319887._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.2973319887._hygCtx._hyg.9",
+          "type": "Countable Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), F.profile (dec (enc s)) = F.profile s"
+        }
+      ],
+      "conclusion_whnf": "Countable ↑(Set.range F.profile)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 53,
+            "line": 64
+          },
+          "start": {
+            "column": 0,
+            "line": 58
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 33,
+            "line": 60
+          },
+          "start": {
+            "column": 8,
+            "line": 60
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [WellFoundedLT Symbol] [Countable Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State)\n  (enc : F.State → List Symbol),\n  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) → (Set.range F.profile).Countable",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.future_profiles_countable",
+      "proof_dependencies": [
+        "Countable",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.profileCode",
+        "D0.Foundation.FutureProfileCountability.profileCode_injective",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Function.Injective.countable",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "List.countable",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "Set.Elem",
+        "Set.range",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Countable",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "Set.Countable",
+        "Set.range",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.435625493._hygCtx._hyg.3",
+          "type": "Countable Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), F.profile (dec (enc s)) = F.profile s"
+        }
+      ],
+      "conclusion_whnf": "Countable ↑(Set.range F.profile)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 26,
+            "line": 35
+          },
+          "start": {
+            "column": 0,
+            "line": 27
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 46,
+            "line": 29
+          },
+          "start": {
+            "column": 8,
+            "line": 29
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [Countable Symbol] (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution)\n  (dec : List Symbol → F.State) (enc : F.State → List Symbol),\n  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) → (Set.range F.profile).Countable",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.future_profiles_countable_of_roundtrip",
+      "proof_dependencies": [
+        "Countable",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "Eq",
+        "Eq.ndrec",
+        "Exists.casesOn",
+        "Exists.intro",
+        "HasSubset.Subset",
+        "List",
+        "List.countable",
+        "Membership.mem",
+        "Set",
+        "Set.Countable.mono",
+        "Set.countable_range",
+        "Set.instHasSubset",
+        "Set.instMembership",
+        "Set.range"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Countable",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "Eq",
+        "List",
+        "Set.Countable",
+        "Set.range"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.4038253774._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.4038253774._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "{ x // x ∈ Set.range F.profile }"
+        }
+      ],
+      "conclusion_whnf": "List Symbol",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 51,
+            "line": 45
+          },
+          "start": {
+            "column": 0,
+            "line": 41
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 43
+          },
+          "start": {
+            "column": 18,
+            "line": 43
+          }
+        }
+      },
+      "elaborated_type": "{Symbol : Type} →\n  [inst : LinearOrder Symbol] →\n    [WellFoundedLT Symbol] →\n      (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) →\n        (List Symbol → F.State) → (F.State → List Symbol) → ↑(Set.range F.profile) → List Symbol",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.profileCode",
+      "proof_dependencies": [
+        "Classical.choose",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.profileCode._proof_1",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Membership.mem",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "Set",
+        "Set.Elem",
+        "Set.instMembership",
+        "Set.range",
+        "Subtype.val",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "DistribLattice.toLattice",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "Set.Elem",
+        "Set.range",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "p",
+          "type": "{ x // x ∈ Set.range F.profile }"
+        }
+      ],
+      "conclusion_whnf": "∃ y, F.profile y = ↑p",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "∀ (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (p : ↑(Set.range F.profile)),\n  ↑p ∈ Set.range F.profile",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.profileCode._proof_1",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "List",
+        "Membership.mem",
+        "Set",
+        "Set.Elem",
+        "Set.instMembership",
+        "Set.range",
+        "Subtype.property"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "List",
+        "Membership.mem",
+        "Set",
+        "Set.Elem",
+        "Set.instMembership",
+        "Set.range",
+        "Subtype.val"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": false,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.1678280485._hygCtx._hyg.3",
+          "type": "LinearOrder Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.1678280485._hygCtx._hyg.6",
+          "type": "IsWellFounded Symbol fun x1 x2 => x1 < x2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "F",
+          "type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "dec",
+          "type": "List Symbol → F.State"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "enc",
+          "type": "F.State → List Symbol"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "correct",
+          "type": "∀ (s : F.State), F.profile (dec (enc s)) = F.profile s"
+        }
+      ],
+      "conclusion_whnf": "∀ ⦃a₁ a₂ : ↑(Set.range F.profile)⦄,\n  D0.Foundation.FutureProfileCountability.profileCode F dec enc a₁ =\n      D0.Foundation.FutureProfileCountability.profileCode F dec enc a₂ →\n    a₁ = a₂",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 90,
+            "line": 56
+          },
+          "start": {
+            "column": 0,
+            "line": 47
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 48
+          },
+          "start": {
+            "column": 8,
+            "line": 48
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [inst : LinearOrder Symbol] [inst_1 : WellFoundedLT Symbol]\n  (F : D0.Foundation.EmpiricalTheoryFactorization.FutureExecution) (dec : List Symbol → F.State)\n  (enc : F.State → List Symbol),\n  (∀ (s : F.State), F.profile (dec (enc s)) = F.profile s) →\n    Function.Injective (D0.Foundation.FutureProfileCountability.profileCode F dec enc)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.profileCode_injective",
+      "proof_dependencies": [
+        "Classical.choose",
+        "Classical.choose_spec",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.profileCode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode",
+        "D0.Foundation.FutureShortlexAdapter.stateCode_eq_iff",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Eq.symm",
+        "Eq.trans",
+        "Iff.mp",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "Membership.mem",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "Set",
+        "Set.Elem",
+        "Set.instMembership",
+        "Set.range",
+        "Subtype.casesOn",
+        "Subtype.ext",
+        "Subtype.mk",
+        "Subtype.val",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.profileCode",
+        "DistribLattice.toLattice",
+        "Eq",
+        "Function.Injective",
+        "Lattice.toSemilatticeInf",
+        "LinearOrder",
+        "List",
+        "PartialOrder.toPreorder",
+        "Preorder.toLT",
+        "SemilatticeInf.toPartialOrder",
+        "Set.Elem",
+        "Set.range",
+        "WellFoundedLT",
+        "instDistribLatticeOfLinearOrder"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 25,
+            "line": 76
+          },
+          "start": {
+            "column": 0,
+            "line": 70
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 21,
+            "line": 70
+          },
+          "start": {
+            "column": 4,
+            "line": 70
+          }
+        }
+      },
+      "elaborated_type": "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.realReadExecution",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.mk",
+        "Real",
+        "Unit"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "D0.Foundation.FutureProfileCountability.realReadExecution =\n  { State := ℝ, Action := Unit, Test := Unit, Outcome := ℝ, step := fun x s => s, observe := fun s x => s }",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "D0.Foundation.FutureProfileCountability.realReadExecution =\n  { State := ℝ, Action := Unit, Test := Unit, Outcome := ℝ, step := fun x s => s, observe := fun s x => s }",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.realReadExecution.eq_1",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.FutureProfileCountability.realReadExecution",
+        "Eq.refl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.mk",
+        "D0.Foundation.FutureProfileCountability.realReadExecution",
+        "Eq",
+        "Real",
+        "Unit"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.implicit",
+          "is_proposition": false,
+          "name": "Symbol",
+          "type": "Type"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.instImplicit",
+          "is_proposition": true,
+          "name": "inst._@.D0.Foundation.FutureProfileCountability.3665954790._hygCtx._hyg.3",
+          "type": "Countable Symbol"
+        }
+      ],
+      "conclusion_whnf": "(∃ dec enc,\n    ∀ (s : D0.Foundation.FutureProfileCountability.realReadExecution.State),\n      D0.Foundation.FutureProfileCountability.realReadExecution.profile (dec (enc s)) =\n        D0.Foundation.FutureProfileCountability.realReadExecution.profile s) →\n  False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 78,
+            "line": 98
+          },
+          "start": {
+            "column": 0,
+            "line": 90
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 43,
+            "line": 92
+          },
+          "start": {
+            "column": 8,
+            "line": 92
+          }
+        }
+      },
+      "elaborated_type": "∀ {Symbol : Type} [Countable Symbol],\n  ¬∃ dec enc,\n      ∀ (s : D0.Foundation.FutureProfileCountability.realReadExecution.State),\n        D0.Foundation.FutureProfileCountability.realReadExecution.profile (dec (enc s)) =\n          D0.Foundation.FutureProfileCountability.realReadExecution.profile s",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.realRead_no_countable_profile_codes",
+      "proof_dependencies": [
+        "Countable",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.future_profiles_countable_of_roundtrip",
+        "D0.Foundation.FutureProfileCountability.realReadExecution",
+        "D0.Foundation.FutureProfileCountability.realRead_profiles_uncountable",
+        "Eq",
+        "Exists",
+        "Exists.casesOn",
+        "False",
+        "List"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Countable",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.realReadExecution",
+        "Eq",
+        "Exists",
+        "List",
+        "Not"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "∀ ⦃a₁ a₂ : D0.Foundation.FutureProfileCountability.realReadExecution.State⦄,\n  D0.Foundation.FutureProfileCountability.realReadExecution.profile a₁ =\n      D0.Foundation.FutureProfileCountability.realReadExecution.profile a₂ →\n    a₁ = a₂",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 85,
+            "line": 81
+          },
+          "start": {
+            "column": 0,
+            "line": 78
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 34,
+            "line": 78
+          },
+          "start": {
+            "column": 8,
+            "line": 78
+          }
+        }
+      },
+      "elaborated_type": "Function.Injective D0.Foundation.FutureProfileCountability.realReadExecution.profile",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.realRead_profile_injective",
+      "proof_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.realReadExecution",
+        "Eq",
+        "List",
+        "List.nil",
+        "Unit.unit",
+        "congrFun",
+        "id"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.realReadExecution",
+        "Function.Injective",
+        "List"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "(Set.range D0.Foundation.FutureProfileCountability.realReadExecution.profile).Countable → False",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 27,
+            "line": 88
+          },
+          "start": {
+            "column": 0,
+            "line": 83
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 83
+          },
+          "start": {
+            "column": 8,
+            "line": 83
+          }
+        }
+      },
+      "elaborated_type": "¬(Set.range D0.Foundation.FutureProfileCountability.realReadExecution.profile).Countable",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Foundation.FutureProfileCountability",
+      "name": "D0.Foundation.FutureProfileCountability.realRead_profiles_uncountable",
+      "proof_dependencies": [
+        "Cardinal.instUncountableReal",
+        "Countable",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.realReadExecution",
+        "D0.Foundation.FutureProfileCountability.realRead_profile_injective",
+        "Function.Injective",
+        "Function.Injective.countable",
+        "Iff.mpr",
+        "List",
+        "Real",
+        "Set.Countable",
+        "Set.Elem",
+        "Set.range",
+        "Set.rangeFactorization",
+        "Set.rangeFactorization_injective",
+        "not_countable"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Action",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Outcome",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.State",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.Test",
+        "D0.Foundation.EmpiricalTheoryFactorization.FutureExecution.profile",
+        "D0.Foundation.FutureProfileCountability.realReadExecution",
+        "List",
+        "Not",
+        "Set.Countable",
+        "Set.range"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Foundation/FutureProfileCountability.lean"
+    }
+  ]
+}

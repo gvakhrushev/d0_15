@@ -1,0 +1,137 @@
+{
+  "birth": {
+    "from_dim": 32,
+    "new_wire": 4,
+    "to_dim": 64,
+    "vector": [
+      "sqrt(p)",
+      "p"
+    ]
+  },
+  "chronology": "SWAP(P,R); InvG_P; CX(q,P); G_P; SWAP(P,R)",
+  "native_word": {
+    "blank_wires": [],
+    "gates": [
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          4
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          4,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          4
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "op": "SourceI",
+        "wires": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          3,
+          0
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          4
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          4,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          4
+        ]
+      }
+    ],
+    "old_right": [
+      5
+    ],
+    "profile": "G_CX_SOURCE_I",
+    "qubits": 6,
+    "report_bits": [
+      4
+    ],
+    "schema": "d0.native-execution/1",
+    "source_port": 0,
+    "source_spin": [
+      1,
+      2
+    ]
+  },
+  "schema": "d0.native-born-report-marker/1",
+  "source_owner": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+  "source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "wire_roles": {
+    "P": 0,
+    "Spin": [
+      1,
+      2
+    ],
+    "actual_report_bit": 3,
+    "born_record": 4,
+    "immutable_oldRIGHT": 5
+  }
+}

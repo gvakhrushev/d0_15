@@ -1,0 +1,101 @@
+{
+  "checker_sha256": "618d1d6267739e7468fea7c0108be22cff448c8d9abac28110081854ca502b65",
+  "checker_status": "PASS_NATIVE_RECORD_SATURATED_42_SOURCE_STENCILS",
+  "checks": 867,
+  "generated_json_identical_across_modes": true,
+  "input_commit_pin": "4b30fcb4dc743e7a04415c9701aae19a847e8dab",
+  "input_pin_is_ancestor_of_owner_commit": true,
+  "owner_blob": "81d78ce6ebcc3e9d98bceaacbd61ed0328943da9",
+  "owner_commit": "418afd58c741713a60036a90f8246060d774fd56",
+  "programmes_sha256": "8942154529f65a90ebe2de418ca374baa31d19b84509ffeda21de3d1ab624ef3",
+  "result_metrics": {
+    "dual_max_norm_error": "6.73877049515828480794071895525e-13",
+    "dual_max_norm_proved_bound": "1.21477243750548153337502058161e-12",
+    "expanded_calls_per_word": 11177567015642288,
+    "max_coordinate_error": "8.18946049552107603964555338481e-14",
+    "programmes": 85
+  },
+  "result_sha256": "420600b819243cc02bab758b03c77d211f5f1ccaf4ac481027fa4cad901bb8f4",
+  "runs": [
+    {
+      "checks": 867,
+      "command_flags": [],
+      "mode": "ordinary",
+      "programmes_sha256": "8942154529f65a90ebe2de418ca374baa31d19b84509ffeda21de3d1ab624ef3",
+      "result_sha256": "420600b819243cc02bab758b03c77d211f5f1ccaf4ac481027fa4cad901bb8f4",
+      "returncode": 0,
+      "runtime_warning_categories": [
+        "divide by zero encountered in matmul",
+        "invalid value encountered in matmul",
+        "overflow encountered in matmul"
+      ],
+      "runtime_warning_lines": 48,
+      "status": "PASS_NATIVE_RECORD_SATURATED_42_SOURCE_STENCILS",
+      "stderr_bytes": 13724,
+      "stderr_sha256": "604f2df54d4689f5a0a9dcb343ff79ad979abe942fdd547d5209b9c4fe33794c",
+      "stdout_bytes": 244,
+      "stdout_sha256": "cfc59207acaee0e86ef6c5fea642c0475035946ebf83ca0aae0d000f7d988334"
+    },
+    {
+      "checks": 867,
+      "command_flags": [
+        "-O"
+      ],
+      "mode": "optimized",
+      "programmes_sha256": "8942154529f65a90ebe2de418ca374baa31d19b84509ffeda21de3d1ab624ef3",
+      "result_sha256": "420600b819243cc02bab758b03c77d211f5f1ccaf4ac481027fa4cad901bb8f4",
+      "returncode": 0,
+      "runtime_warning_categories": [
+        "divide by zero encountered in matmul",
+        "invalid value encountered in matmul",
+        "overflow encountered in matmul"
+      ],
+      "runtime_warning_lines": 48,
+      "status": "PASS_NATIVE_RECORD_SATURATED_42_SOURCE_STENCILS",
+      "stderr_bytes": 13724,
+      "stderr_sha256": "604f2df54d4689f5a0a9dcb343ff79ad979abe942fdd547d5209b9c4fe33794c",
+      "stdout_bytes": 244,
+      "stdout_sha256": "cfc59207acaee0e86ef6c5fea642c0475035946ebf83ca0aae0d000f7d988334"
+    },
+    {
+      "checks": 867,
+      "command_flags": [],
+      "mode": "repeat",
+      "programmes_sha256": "8942154529f65a90ebe2de418ca374baa31d19b84509ffeda21de3d1ab624ef3",
+      "result_sha256": "420600b819243cc02bab758b03c77d211f5f1ccaf4ac481027fa4cad901bb8f4",
+      "returncode": 0,
+      "runtime_warning_categories": [
+        "divide by zero encountered in matmul",
+        "invalid value encountered in matmul",
+        "overflow encountered in matmul"
+      ],
+      "runtime_warning_lines": 48,
+      "status": "PASS_NATIVE_RECORD_SATURATED_42_SOURCE_STENCILS",
+      "stderr_bytes": 13724,
+      "stderr_sha256": "604f2df54d4689f5a0a9dcb343ff79ad979abe942fdd547d5209b9c4fe33794c",
+      "stdout_bytes": 244,
+      "stdout_sha256": "cfc59207acaee0e86ef6c5fea642c0475035946ebf83ca0aae0d000f7d988334"
+    }
+  ],
+  "runtime": {
+    "mpmath": "1.3.0",
+    "numpy": "2.0.2",
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0-record-saturated-native-field-replay-v1",
+  "scope": {
+    "GR_closed": false,
+    "Lean_or_CI_run": false,
+    "all42_mesh_root_proved": false,
+    "physical_variation_domain_derived": false,
+    "runtime_field_reader_implemented": false
+  },
+  "status": "PASS_WITH_CAPTURED_RUNTIME_WARNINGS",
+  "stderr_empty_for_all_runs": false,
+  "stderr_identical_across_modes": true,
+  "stdout_identical_across_modes": true,
+  "warning_note": "The local NumPy/BLAS run emits captured RuntimeWarnings (divide by zero, overflow, invalid value) during matrix multiplication. The checker exits successfully and its JSON outputs are finite, but this replay does not establish that the warnings are harmless.",
+  "warnings_resolved": false
+}

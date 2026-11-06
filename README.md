@@ -1,554 +1,464 @@
 # D0 — Finite Verification Theory
 
+D0 studies what a closed finite system needs in order to make, retain and
+independently compare reproducible distinctions. The programme develops
+mathematical realizations of that verification contract, maps between their
+observable theories, and applications to physical dynamics. General relativity
+is the first complete physical specialization being pursued.
+
+**Start here:** [the ten books](#3-the-10-book-derivation-chain-from-admissibility-to-interferometry),
+[research reading map](02_REGISTRY/research/README.md),
+[claim registry](02_REGISTRY/claims.csv), and
+[current scientific route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity).
+For execution, read [AGENTS.md](AGENTS.md) and [00_WORK/README.md](00_WORK/README.md).
+
 ## Current objective: close the D0 foundation through general relativity
 
-D0 begins with the operational functions required for verification:
-distinction, retained records, access and independent comparison without
-an obligatory external catalogue. The programme constructs mathematical
-realizations of that kernel, proves their interpretation and transfer
-maps, and composes them into physical theories. **General relativity is
-the first complete physical specialization to finish.** Its full native
-action, admissible variations and universal refinement remain open.
+The verification kernel, a conditional theorem about a specified action, an
+admitted physical execution, and its continuum limit have different
+conclusions. The repository contains substantial results at all of these
+interfaces; their composition must retain the source, preparation, records,
+clock, variations and norm of the same execution.
 
-**Current focus (22 October):** [work backwards from the exact solution,
-then prove the physical composition forwards](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#source-composition-first-backward-search-and-forward-proof).
-The priority is one complete admitted execution whose full field source,
-including preparation, retained information and clock/work, consumes the
-existing nonlinear solution or a compatible residual-continuation theorem.
-Faithful physical realization can use a proved source equivalence or controlled
-remainder; it does not require uniqueness of all microscopic actions. Keep the
-actual source gain, independent internal equations and refinement norm. Reuse
-the successful exact coupled-equation, same-carrier and invariant methods;
-measure progress by a proved substitution or a concrete changed route.
-First curved realization, uniform refinement and universal GR remain distinct
-conclusions with their own hypotheses.
+The [source-composition strategy](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#source-composition-first-backward-search-and-forward-proof)
+starts from the existing nonlinear Einstein–matter solution and works back to
+the physical operation or complete-source map needed to use it. A proved
+source equivalence or controlled remainder can suffice; uniqueness of every
+microscopic implementation is not required. The independent internal
+equations, actual gain and refinement estimates must still be supplied.
 
-**Current synthesis:** [one composed route from actual records to geometry,
-complete price and gravitational response](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md).
-The results now do more than coexist: the native CAR readout reconstructs
-the primary metric and curvature; original Julia odds reconstruct its
-soldered geometric density; full compiler/clock histories determine
-explicit remaining price sources; and the field-writer invariant tests
-whether those observable fields are reachable by the proposed process.
-The synthesis states which output supplies each next premise and which
-physical identifications still require proof.
+### Book and registry synchronization — 28 October 2026
 
-| Part of the same argument | Result already available | Application still to establish |
+The books now connect the verification/future-memory kernel, theory transfer,
+finite history and CAR operators, full action variation, and the nonlinear GR
+application. They also explain the latest published research at its stated
+scope. This editorial integration uses the following published snapshots:
+
+| Source | Snapshot used | Meaning |
 |---|---|---|
-| Verification kernel and theory interpretation | [VerificationCore / TheoryTransfer composition](02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md): admitted future distinctions, finite-word/readout commutation and faithful common empirical image | Supply the actual physical interpretation and any claimed all-native context coverage |
-| Operational geometry | [Quantitative native recovery](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/OPERATIONAL_CURVATURE_RECOVERY.md): five macroscopic sites recover the quadratic/cubic primary sector; nine recover the entire owned common-harmonic polynomial class plus its radial coefficient | Retain actual readiness, preparation, sensitivity and observation precision; observation alone does not write a different field |
-| Original geometric and material source | [Whole-family CAR/Book/causal source](02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md) and [original Julia all-jet readout](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/HOLONOMY_SOURCE_AND_REFINEMENT.md): the original all40 covector and geometric coframe weight are recoverable | Derive physical admission and full Book valuation on this same carrier; a classical decoder is not a free coherent compiler |
-| Complete retained execution and price | [Retained clock/complete known cost](02_REGISTRY/research/A4D_NATIVE_CLOCK_PRESSURE_AND_COMPLETE_PRICE_SYNTHESIS_2026_10_20.md), [same-history source](02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md), and [new price composition](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md) include aborts, work, compiler occupation and moving-source terms | Anchor absolute Book normalization and derive the complete Info, preparation, clock and work valuation; matched reference and KL have different cancellation laws |
-| Prospective choice and genuine field variations | Existing Bellman/no-detour and [stopped implementation minima](02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md), the [full-field minimum exclusion](02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md), and [observable writer-image distance](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/OPERATIONAL_CURVATURE_RECOVERY.md#5-observable-separation-from-the-fixed-pairing-writer-image) | Derive an admitted joint field-and-price realization or native stationary/constraint law; a fixed-field implementation optimum does not select the field |
-| Exact nonvacuum GR and recovery | [Primary positive case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md): the configured original action has exact finite 16+24+2 roots for one fixed nonlinear sourced metric at every mesh | Identify the physically selected source with this source on the actual ambient directions, with all internal equations retained |
-| Universal gravitational response | [Golden single-step rigidity](02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md), [VSI/Lovelock two-witness route](02_REGISTRY/research/A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md), and condensed source descent | Establish their metric-only, locality, physical weight, Ward and regularity hypotheses for the same complete selected source |
+| Main before this update | [8b94198c](https://github.com/gvakhrushev/d0_15/commit/8b94198c8dfbdf5983ad0b350b058fb30bb68a54) | Registered claims, existing reviewed applications and bounded research intakes |
+| Formalization owner [#402](https://github.com/gvakhrushev/d0_15/pull/402) | [30ffef0f](https://github.com/gvakhrushev/d0_15/commit/30ffef0f5a4353874f8966a4b69d09e534f3c47d) before this documentation increment | Existing compiled applications and scope/locator repairs; the broad C0 programme remains open |
+| Subsequent #402 source intake | [5007f170](https://github.com/gvakhrushev/d0_15/commit/5007f1707932629613d4b846482b8cd8cae9a4a3), preserved in this increment | Nine source packages and the moving-cut continuation are now local, with two supporting Lean modules and their recorded compiled evidence |
+| Scientific owner [#334](https://github.com/gvakhrushev/d0_15/pull/334) | [eebcb5e4](https://github.com/gvakhrushev/d0_15/commit/eebcb5e467742df3e9cf7fa9702042d7294aa742) | Published research through 28 October, cited by immutable source links; inclusion in a book does not independently accept it |
+| Subsequent #334 geometric-closure calculation | [c4a92cb0](https://github.com/gvakhrushev/d0_15/commit/c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a) | Conditional continuum law selection, with the native canonical generators and bracket limit still required |
+
+The dated [ledger reconciliation](02_REGISTRY/RESEARCH_LEDGER.md#book-and-research-reconciliation--28-october-2026)
+records the source paths, scopes and consumers. These snapshots are provenance,
+not a live PR-status feed or a claim of complete corpus coverage.
+
+The [local source-intake map](02_REGISTRY/research/D0_CHAT_RESULTS_INTEGRATION_2026_10_28.md)
+connects the restored packages to their existing #334 owner. Its recorded
+Lean evidence covers projector transport and literal graded-refinement
+composition; it does not formalize the complete analytic source or accept a
+physical GR application.
+
+### What is available, and what its consumer still needs
+
+| Part of the argument | Existing result and reading location | Remaining application condition |
+|---|---|---|
+| Verification and future memory | [VerificationCore composition](02_REGISTRY/research/D0_VERIFICATION_CORE_COMPOSITION_2026_10_20.md); Books 00–01 | Specify the complete future test interface and the actual representation; a chosen short code needs its coding/decidability premises |
+| Theory transfer | [Operational interpretation and transfer](02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md); Book 02 | Establish the operation/readout maps and coverage of any additional target contexts |
+| Finite histories and operators | Scene history/endpoint/Perron owners, finite CAR/Hodge and typed adjoint applications; Books 01–04 | Preserve the chosen history measure, operator, adjoint and source; finite real refinement is not an infinite Hilbert completion |
+| Full action and moving cut | [Root heat-plus-logdet variation, 28 October](02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md); Book 03 | Supply the native field-to-operator/cut map and transport of its norm; relative motion of the cut contributes to the source |
+| Original future algebra and memory | [Three-tick faithful-memory result](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_THREETICK_FUTURE_CAR16_SHARP_MINIMAL_QUANTUM_MEMORY_2026_10_26.md); Books 04/06 | The dimension-16 bound preserves all tests of the specified original instrument; it does not select that instrument from M1 alone |
+| Whole coherent history | [Fixed-256 entropy/source representation](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_ORIGINAL_FULL128_COHERENT_ARCHIVE_FIXED256_SOURCE_2026_10_27.md); Book 06 | Retain the admitted purifier and the stated regular/primitive chart; a spectral representation does not erase the physical archive or its price |
+| Exact nonlinear GR example | [Primary nonvacuum case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md) and [midpoint recovery](02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md); Book 07 | Bind the configured source and its independent equations to an admitted complete execution |
+| Complete candidate source | [Full cut-bootstrap and fixed-initial lift](https://github.com/gvakhrushev/d0_15/blob/eebcb5e467742df3e9cf7fa9702042d7294aa742/02_REGISTRY/research/A4D_COMPLETE_BOOK_SOURCE_FIXED_INITIAL_APPLICATION_2026_10_27.md); Book 07 | The source identity is for the declared cut-Hodge candidate; the intended physical heat/cut/controller and genuinely free preparation inputs remain separate |
+| Conditional geometric law selection | [Root cut versus refoliation closure](https://github.com/gvakhrushev/d0_15/blob/c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a/02_REGISTRY/research/A4D_ROOT_CUT_TO_REFOLIATION_CLOSURE_2026_10_28.md); Books 03/07 | Supply the native symplectic form, normal/tangential generators, local lapse family, continuum class and controlled bracket limit; moving-cut frame curvature alone does not provide them |
+| Universal response and observations | [Golden weight theorem](02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md), [VSI/Lovelock route](02_REGISTRY/research/A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md); Books 07–09 | Establish the selected source's descent, locality, Ward/weight and regularity hypotheses, then the cosmological or detector-specific comparison |
 
 ## First physical proof route: exact nonlinear nonvacuum GR
 
-Read the [primary positive case](02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md)
-and the [global composition](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
-before proposing more gravity work. The [original all40 theorem](02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
-and [midpoint recovery](02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
-already give exact interior coframe, proper-link and matter Euler roots
-of the configured Golden-J2 action at every mesh. Their fixed continuum
-metric has nonzero Ricci and Weyl curvature, a real chronological CAR
-source and second-order matter recovery. They supply the nonempty
-curved test family for the remaining physical construction.
+The [original all40 theorem](02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md)
+and [nonvacuum midpoint recovery](02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+give exact interior roots of the configured Golden-J2/Cartan equations:
+16 coframe, 24 proper-Lorentz link and two matter equations. The construction
+uses one fixed curved continuum metric on refining meshes, a chronological CAR
+matter source and the stated second-order matter recovery. It is an explicit
+conditional mathematical realization with nonzero curvature and source.
 
-The new operational inverse uses the actual complete three-outcome law,
-including aborts. Its nine-point determinant is `3456 a^18`. On this
-stated polynomial class, curvature error is bounded by
-`(12/a² + 16R/a³ + 12R²/a⁴) E_H`, with
-`E_H <= 27 epsilon_h / (16 L_min,h)` and the actual native sensitivity
-`L_min,h` retained. It measures the radial source coefficient independently;
-the Einstein equation is not inserted into the decoder. The separate
-Julia reconstruction gives an identity of original geometric functions
-and all their existing jets. Neither result assumes that every ambient
-field variation is an admitted operation.
-
-A [further composition with the new four-copy native response](02_REGISTRY/research/A4D_NATIVE_FOUR_COPY_TO_CURVATURE_APPLICATION_2026_10_20.md)
-now supplies the live material likelihood used by this inverse on its
-declared finite-code/reference interface. It uses one fixed Golden
-programme with all aborts retained and actual gain `1/(64 Lambda_h)`.
-Known pulse calibration and the paid copy/code supply remain explicit;
-the new sensitivity is `L_h = r p² s² delta²/(64 Lambda_h rho h²)`.
-This joins a concrete amplitude-query implementation to the five/nine-site
-geometry inverse without assuming a mesh-independent signal or continuous
-physical variations of discrete geometry codes. The companion also
-consumes the newer conditional paired-price, full-record and preparation
-results, retaining their distinct source hypotheses.
-
-The complete-price calculation is now equally concrete. Removing internal
-compiler records loses `zeta_pre + alpha zeta E_N(beta q)` of entropy;
-the occupied stage term survives a matched reference. Equal Julia odds
-under one versus four paid edges can leave a price difference
-`-1020 tanh²(xi)` after subtraction of the flat constant. These are tests
-for the true complete Info/work source, not prescribed counterterms.
-The specified fixed-coordinate-pairing writer has the independently
-measurable gap `dist_Q >= |Delta H|/4 >= TV/(8L)` on the primary chart.
-Its exact escape requires moving the coordinate pairing in a genuinely
-admitted joint step. This is a conditional result for that writer.
+The [global composition](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md)
+connects that family to operational geometry, original Julia reconstruction,
+complete compiler/clock price and field-writer reachability. Its
+[quantitative geometry inverse](02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/OPERATIONAL_CURVATURE_RECOVERY.md)
+retains actual sensitivity and observation precision; observations do not
+automatically provide operations that write an arbitrary field.
 
 ### Main integration and the next proof stage
 
-Continue existing scientific [Draft #334](https://github.com/gvakhrushev/d0_15/pull/334).
-The global packet is a bounded main research intake with immutable source
-snapshots, independent mathematical reviews and one ordinary read-only
-certificate for thirteen new narrow groups. It preserves the prior
-[complete-price intake #395](https://github.com/gvakhrushev/d0_15/pull/395),
-[joint-field minimum intake #396](https://github.com/gvakhrushev/d0_15/pull/396),
-and parallel research. It does not close `positive_gr`, `GR_closed`,
-the original raw216 terminal, or the scientific parent.
+The newer complete cut-Hodge calculation now establishes
+$d_{42}B_C|_\Sigma=(G_h/\gamma_h)d_{42}J_2|_\Sigma$, with $G_h>0$ and the
+thermal source retained, for its specified original comparison apparatus.
+Its fixed-initial generated-state lift supplies the corresponding execution
+adjoints. Thus the algebraic source comparison is available **for this
+candidate**; it should not be repeatedly classified as absent.
+[Book 07](01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md) gives the
+construction and the distinctions between fixed initial inputs, generated
+states and independently variable preparation.
 
-For the prospective/Julia realization route, the next application has two
-coupled physical inputs. First, derive an
-actual joint solder/pairing/link step and its complete field-and-price
-image, or an independently justified native stationary law. Second,
-test the original same-prefix Julia two-ending odds against the owned
-prospective continuation law, with **equal full continuation partition
-weights**, actual absolute price anchoring and all retained work/clock
-sources. Equal minimum continuation prices alone do not suffice.
-Use the already-computed compiler and repeat-cost differences to decide
-whether the proposed complete source descends. Once it does, the existing
-exact Einstein–matter and universal-response theorems become consumers;
-they need no new geometric census.
+The root heat-plus-logdet identity separately differentiates the original
+Book03 functional while allowing the actual projector to move. Passive
+simultaneous co-transport contributes zero; relative cut motion generally
+does not. This supplies the correct upstream source formula, while its
+native field map and the identification of the candidate heat operator remain
+explicit physical obligations.
 
-This is one sufficient realization route. A separately justified native
-stationary/constraint law or complete-source transport can use its own proved
-inputs; it need not establish this particular Julia continuation experiment.
-Every route retains the full physical source and its independent equations.
+Continue the scientific owner [#334](https://github.com/gvakhrushev/d0_15/pull/334)
+and the formalization owner [#402](https://github.com/gvakhrushev/d0_15/pull/402)
+at their existing scopes. Full original H+J+R selection, the positive physical
+GR goal, universal soundness/recovery and the fixed-source raw216 terminal
+remain open; **GR_closed=false**. A successful example, a finite control and
+an independently accepted application are recorded separately.
 
-The [shared TRIZ / Golden-Beatty handoff](02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md)
-keeps the positive loop-void and matched-reference results, the exact
-failed uncentered Beatty residual test, and the properly typed paired
-return-time question visible. TRIZ locates the precise contradiction;
-Golden/Beatty/AF/Delone results retain their actual clock and history
-roles. The [fifteen-family dependency map and all eighteen preserved leads](02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md#6-where-every-major-result-enters-the-same-argument)
-show where each line is used, including leads that remain downstream or
-need their own missing map. The [full preserved strategy](02_REGISTRY/research/D0_RESEARCH_STRATEGY_RU.md)
-and [original-source intake #323](https://github.com/gvakhrushev/d0_15/pull/323)
-remain programme context.
-
-Use the [central roadmap](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity),
-[AGENTS.md](AGENTS.md), [work/validation flow](00_WORK/README.md), and
-[assembly](02_REGISTRY/gr_assembly/VIEW.md). One integrator owns the common
-carrier, action, variation image, norms and refinement maps. Each next
-bounded task supplies a named missing substitution. Generic
-[primitive-word/moving-jet transfer](https://github.com/gvakhrushev/d0_15/pull/342),
-[tangent-span](https://github.com/gvakhrushev/d0_15/pull/353), and
-[foundation intake](02_REGISTRY/research/D0_FOUNDATION_MAIN_INTAKE_2026_10_20.md)
-are reusable at their stated hypotheses. Resolve existing owners with
-`python3 tools/task_dispatch.py TASK-ID`; use
-`python3 tools/gr_assembly.py puzzle prospective-native-selection`
-for the existing physical bridge. Reading these maps does not create a
-new execution or discharge a premise.
-
----
-
-> **How can a closed finite system produce reproducible facts without an external classical observer?**
-
-D0 is a mathematical and physical research programme that inverts the traditional foundational order: instead of postulating a smooth space-time continuum, background fields, and an external measuring apparatus, D0 begins from the **operational preconditions of verifiable detection** inside a closed finite system.
-
-> **Agent / automation cold start:** this repository is `gvakhrushev/d0_15`. Before executing any `EXP-*`, `WRK-*`, or `CTRL-*` task, read [AGENTS.md](AGENTS.md) and [00_WORK/README.md](00_WORK/README.md). Discuss and synthesize in chat; keep durable definitions, derivations and results in GitHub.
-
-Discrete scene structure, registration channels, and (conditionally) continuum limits are derived as consequences of this operational contract. High-energy spectra, gauge structures, and cosmological evolutions are downstream readouts, not independent starting hypotheses.
-
----
+The [joint-field minimum exclusion](02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md)
+also remains relevant: a stopped implementation optimum at fixed fields does
+not select those fields. The specified source-preserving price admits
+same-boundary descent on the primary family. A native stationary/constraint
+law or admitted joint field-and-price realization must provide its own
+positive application.
 
 ## Table of Contents
 
-- [Current objective and scientific route](#current-objective-close-the-d0-foundation-through-general-relativity)
-- [Main integration and the next proof stage](#main-integration-and-the-next-proof-stage)
-- [Parallel execution and validation](00_WORK/README.md)
-- [Gravity assembly and result intake](02_REGISTRY/gr_assembly/README.md)
-- [1. The Core Inversion (Read This First)](#1-the-core-inversion-read-this-first)
-  - [The Foundational Premise](#the-foundational-premise)
+- [Current objective and result map](#current-objective-close-the-d0-foundation-through-general-relativity)
+- [1. The Core Inversion](#1-the-core-inversion-read-this-first)
 - [2. Architecture & Flow of Forcing](#2-architecture--flow-of-forcing)
-- [3. The 10-Book Derivation Chain (From Admissibility to Interferometry)](#3-the-10-book-derivation-chain-from-admissibility-to-interferometry)
-  - [BOOK 00: Entry Contract and Admissibility](#book-00-entry-contract-and-admissibility)
-  - [BOOK 01: Condensed Foundations and Graph Birth](#book-01-condensed-foundations-and-graph-birth)
-  - [BOOK 02: Mathematical Proof Spine and Invariant Calculus](#book-02-mathematical-proof-spine-and-invariant-calculus)
-  - [BOOK 03: Finite Action Operators and Scene Dynamics](#book-03-finite-action-operators-and-scene-dynamics)
-  - [BOOK 04: Spectrum, Matter, and Finite Selector Theory](#book-04-spectrum-matter-and-finite-selector-theory)
-  - [BOOK 05: Verification Status and Certificate Discipline](#book-05-verification-status-and-certificate-discipline)
-  - [BOOK 06: Evolution, Forgetting, and Time](#book-06-evolution-forgetting-and-time)
-  - [BOOK 07: Gravity Limit and Finite Geometry](#book-07-gravity-limit-and-finite-geometry)
-  - [BOOK 08: Cosmology, Archive, and SDE Transfer](#book-08-cosmology-archive-and-sde-transfer)
-  - [BOOK 09: Gravitational Waves and Quantum Interferometry](#book-09-gravitational-waves-and-quantum-interferometry)
+- [3. The 10-Book Derivation Chain](#3-the-10-book-derivation-chain-from-admissibility-to-interferometry)
 - [4. The Three Architecture Layers](#4-the-three-architecture-layers)
-- [5. Spectral Rigidity: The Golden Ratio φ and Mass-Sector Boundaries](#5-spectral-rigidity-the-golden-ratio-varphi-and-mass-sector-boundaries)
-  - [Audited Mathematical Routes to φ](#audited-mathematical-routes-to-varphi)
-  - [Scientific Falsifiability](#scientific-falsifiability)
+- [5. Spectral Rigidity and Mass-Sector Boundaries](#5-spectral-rigidity-the-golden-ratio-varphi-and-mass-sector-boundaries)
 - [6. Non-Trivial Theorems in the Corpus](#6-non-trivial-theorems-in-the-corpus)
-- [7. How to Read (Short Paths)](#7-how-to-read-short-paths)
+- [7. How to Read](#7-how-to-read-short-paths)
 - [8. Canonical Repository Layout & Sources of Truth](#8-canonical-repository-layout--sources-of-truth)
-  - [Source-of-Truth Rules](#source-of-truth-rules)
 - [9. Local Verification & Reproducibility](#9-local-verification--reproducibility)
 - [10. Epistemic Guardrails & Frontier Resolution Strategy](#10-epistemic-guardrails--frontier-resolution-strategy)
 - [Citation & Status](#citation--status)
 
----
-
 ## 1. The Core Inversion (Read This First)
-
-Standard physics proceeds from geometry to observation:
-$$\text{Smooth Space-Time } \mathcal{M} \;\longrightarrow\; \text{Lagrangian / Fields } \psi \;\longrightarrow\; \text{External Measurement / Projection}$$
-
-D0 inverts this hierarchy:
-$$\text{Verifiability Contract (M1)} \;\longrightarrow\; \text{Functional Tuple} \;\longrightarrow\; \text{Finite Scene } K(9,11,13) \;\longrightarrow\; \text{Readout Spectrum}$$
 
 ### The Foundational Premise
 
-> Any process claiming to produce objectively reproducible distinctions between independent runs must already possess the internal means of **distinction**, **retention**, and **independent comparison** — and cannot outsource these operations to an obligatory external catalogue.
+A process claiming reproducible distinctions between independent runs needs
+internal distinction, retained records and independent comparison. D0 asks
+which structures follow from these requirements and from each explicitly
+registered admissibility premise, without an obligatory external catalogue.
 
-Within the repository's **currently formalized admissibility architecture** (the M1 condition + finite realizability), the programme derives the following registered results. These premises do not classify every finite catalogue-free carrier: a killing test also exists for a three-line protocol and for a protocol whose record type has an unused coordinate (`M1-UNIVERSALITY-COUNTEREXAMPLE`).
+The [Popperian bootstrap](03_FORMALIZATION/D0/Foundation/PopperianBootstrap.lean)
+relates a killing test to a verification contract. It forces the functional
+roles under that contract, not a unique finite carrier: the registered
+counterexamples include more than two comparison lines and unused record
+coordinates. The scene-forcing architecture and its spectral uniqueness
+theorems carry additional hypotheses.
 
-1. **The Functional Tuple:** distinction ($x \neq y$), persistent record ($x \mapsto \text{rec}(x)$ injective), and independent comparison lines ($l_0 \neq l_1$) are forced as the minimal requirements for empirical verifiability.
-2. **The Popperian Bootstrap (`D0-POPPERIAN-BOOTSTRAP-001`):** A theory can be falsified by a "killing test" if and only if it admits a verification contract ($\text{KillingTest}(P) \iff \text{VerificationContract}(P)$). The bare possibility of refutation strictly forces the entire functional tuple. Solitary-witness systems are non-falsifiable. The tuple does not fix the carrier: `Bool` is not equivalent to `Fin 3`, and a record type may contain an unused coordinate.
-3. **Endogenous Scene Genesis (inside the registered forcing architecture):** Independent line filling, toral return sterility in $\mathrm{GL}_2(\mathbb{Z})$, and minimal zone capacity weld the parameters $(|\mathrm{Role}|, \Delta, |\Omega_8|, m, q_T) = (4, 2, 8, 11, 44)$ into the tripartite scene $K(9,11,13)$ with $N=33$ and collision invariant $P_2 = 371/1089$. This is a strong internal uniqueness statement inside that forcing architecture. It is not a classification of every contract carrier.
-4. **Quadratic Born readout inside the phase-response class:** the finite response is quadratic, and uniqueness of the phase quadratic is owned under quarter-turn phase blindness (`QuarterTurnInvariant`). Generic symplectic-area preservation alone is explicitly **insufficient** (`BornAreaPreservationNoGo`).
-
-The registered functional-tuple and scene-forcing results are developed in **BOOK_00** and **BOOK_01** and formalized in Lean 4 within their stated candidate/admissibility classes. The external-review P1 lane audits the stronger completeness claim rather than treating it as already proved. Everything downstream builds on the registered finite architecture, not on an unqualified universal-classification assertion.
-
----
+The [VerificationCore](03_FORMALIZATION/D0/Foundation/VerificationCore.lean)
+then compares states by **all declared finite future operations and tests**.
+A memory that agrees only on the current scalar readout can erase a future
+distinction. The appropriate representation therefore preserves the future
+profile, and a theory interpretation must also intertwine operations and
+readout. Books 00–02 explain these maps before their physical applications.
 
 ## 2. Architecture & Flow of Forcing
 
-```text
-[ Operational Requirements of Verification ]
-  - M1: No obligatory external catalogue
-  - Finite realizability (no infinite preparation reservoir)
-  - Non-solipsism: >= 2 independent checking lines
-                         │
-                         ▼
-[ Popperian Bootstrap & Functional Tuple ]
-  - Distinction: x ≠ y
-  - Retention: injective record map
-  - Comparison: invariant across background catalogues
-  - Falsifiability ⟺ VerificationContract (D0-POPPERIAN-BOOTSTRAP-001)
-                         │
-                         ▼
-[ Two-Channel Algebraic Weld ]
-  - Toral channel: GL_2(Z) return sterility forces golden class φ
-  - Typed channel: binary 2-line preparation (q=2, r=2)
-  - Agreement on (4, 2, 8, 11, 44) without external inputs
-                         │
-                         ▼
-[ Canonical Scene K(9,11,13) on N=33 ]
-  - Three zones: V_9, V_11, V_13 (sum = 33, inventory = 44)
-  - Graph invariant moments: tr(A^2) = 718, tr(A^3) = 7722
-  - Topological dimension bounded: no 3-simplices (tetrahedra)
-                         │
-         ┌───────────────┴───────────────┐
-         ▼                               ▼
-[ Layer II: Algebraic Spine ]   [ Layer III: Downstream Readout ]
-  - Top-Hodge inverse rigidity    - Frozen SM factor/Weyl ledger + representation target
-  - Commutant AF-algebra tower    - Puiseux mass-hierarchy passports
-  - Discrete Dirac & Laplacians   - CKM/PMNS phason-holonomy passports
-  - Isolated bridge assumptions   - Conditional dark-EOS / cosmology passports
-    (HeatTraceWeyl, etc.)         - Pre-registered empirical passports
-```
+| Stage | Mathematical content | Boundary passed to the next stage |
+|---|---|---|
+| Admissibility | Verification contract, distinction, record and independent comparison | The actual candidate class and admissible operations/tests |
+| Verified state and memory | Future-profile quotient, faithful representation, conditional coded presentation | Every retained distinction and all coding premises |
+| Finite scene and operators | Registered scene forcing, spectral rigidity, histories, CAR/Hodge and adjoint calculus | The specified carrier, measure, operator and variation class |
+| Dynamics and source | Full action derivative, complete execution price, internal equations and source transport | An actually admitted field/source map and its normalization |
+| Physical limit | Exact configured Einstein–matter family and conditional universality/refinement results | Their remaining physical selection and uniformity hypotheses |
+| Observable comparison | Cosmological and detector passports | A declared model, calibration, data and likelihood |
 
----
+These are interfaces in one argument. The existence of a theorem at a later
+stage does not discharge the application hypotheses at an earlier one.
+[Assembly applications](02_REGISTRY/gr_assembly/applications.json) record
+reviewed substitutions separately from result pointers.
 
 ## 3. The 10-Book Derivation Chain (From Admissibility to Interferometry)
 
-The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .. `BOOK_09`). Each book solves a concrete mathematical stage and passes its certified invariants to the next:
+The ten authored Markdown books organize the argument. Their chapters explain
+results; the [registries](#source-of-truth-rules) retain scientific authority.
+A later scoped counterexample or source correction controls how an older
+paragraph may be used.
 
-```text
-[ BOOK 00: Admissibility Contract & M1 ]
-                 │
-                 ▼
-[ BOOK 01: Condensed Vacuum & 3-Partite Graph K(n1,n2,n3) ]
-                 │
-                 ▼
-[ BOOK 02: Operator Algebra (F_N, Born Rule R_N = D^†D, Scene Rigidity) ]
-                 │
-                 ▼
-[ BOOK 03: Variational Action S_fb = -log det(I-z F_N) & Conserved Stress ]
-                 │
-                 ▼
-[ BOOK 04: Matter Resonance, Frozen SM Ledger, Gauge-Representation Target, Puiseux Passports ]
-                 │
-                 ▼
-[ BOOK 05: Verification Audit & Centralized No-Go Ledger ]
-                 │
-                 ▼
-[ BOOK 06: Markov Forgetting Channels, Entropy Monotonicity & Arrow of Time ]
-                 │
-                 ▼
-[ BOOK 07: Finite/Spectral Gravity Operators, Quarantined EH Bridge, Horizons ]
-                 │
-                 ▼
-[ BOOK 08: Conditional Dark-EOS/Cosmology Passports, SDE Tests, DESI Drift ]
-                 │
-                 ▼
-[ BOOK 09: Apple Torus, Spin-2 Quadrupole, GW Horizon Capacity (LIGO/GWOSC) ]
-```
+| Book | Reading role | Current composition now explained |
+|---|---|---|
+| [00 — Entry contract](01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md) | Verification and admissibility | Functional roles, actual contract scope and the route to future-tested state representations |
+| [01 — Foundations and graph birth](01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md) | Verified states, scene and histories | Complete future profiles, coding/Sigma premises, path composition, endpoint averaging and the finite Perron boundary |
+| [02 — Proof spine](01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md) | Mathematical owners and transfer | Primitive-operation-to-word transfer, common empirical image, context coverage, finite AF/GNS and operator scope |
+| [03 — Action and dynamics](01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md) | Action, admissible variations and full sources | MDL/minimization/stationarity distinction, native first-jet boundary and moving-cut heat-plus-logdet derivative |
+| [04 — Spectrum and matter](01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md) | Finite matter and spectral selectors | CAR/Hodge operator identities, source/variation interfaces and distinct quantum/record resources |
+| [05 — Verification discipline](01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md) | How to assess evidence | Claim metadata, elaborated declarations, concrete applications, historical certificates and open C0 reconciliation |
+| [06 — Evolution and memory](01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md) | Future records, history, time and price | Original future algebra, faithful DATA dimension, coherent archive entropy and the full clock/Cost−Info boundary |
+| [07 — Finite geometry and GR](01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md) | Nonlinear physical application | All42 Einstein–CAR recovery, complete candidate source and execution adjoints, operational geometry and conditional universal response |
+| [08 — Cosmology](01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md) | Cosmological interpretation | Local GR/source results versus global cosmology, EOS, clocks, refinements and empirical passports |
+| [09 — Waves and interferometry](01_BOOKS/BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md) | Curvature and detector observations | Nonflat VSI wave testbed, relational/holonomy readout and the separate GWOSC/LIGO comparison |
 
 ### BOOK 00: Entry Contract and Admissibility
-- **Endogenous Observer:** Theory of a closed system of finite capacity. The apparatus is built from the same discrete elements as the system; no external classical observer is postulated.
-- **Admissibility Criterion:** Physical status is granted solely to properties addressable and verifiable in finitely many discrete steps (`DiscriminationKinds.lean`). Unbounded continua and uncomputable infinities are eliminated.
-- **The $M_1$ Equivalence Class:** Any data array claiming inter-subjective reproducibility under independent cycles must factor through the canonical quotient $M_1$ (`M1Predicate.lean`, `M1Universality.lean`).
-- **Independent Relational Calibration:** Phase drift and detector noise are compensated internally without external length or time standards (`IndependentDetectionRepairGrammar.lean`, `RelationalRepairClosure.lean`).
-- **Popperian Bootstrap:** Verifiability requires empirical refutability; `KillingTest P ↔ VerificationContract P` proves that falsifiability forces the functional tuple (`PopperianBootstrap.lean`).
-- **Core No-Go Theorems:** `M1CascadeSceneNoGo` (cascade models without unitarity loss are impossible outside $M_1$), `CanonicalSelectorNoGo` (no basis choice without topological support), `SceneCountRouteNoGo` (continuous phase integrals fail on discrete pregeometry).
+
+Begin with the verification contract and its countermodels. Read the M1 and
+scene-forcing results inside their exact candidate classes, then follow the
+verified-state representation used by the later theory-transfer construction.
 
 ### BOOK 01: Condensed Foundations and Graph Birth
-- **Condensed Pregeometry:** Space-time manifold topology is replaced by condensed sets (covariant functors from compact totally disconnected profinite sets) (`ProfiniteSupport.lean`, `ProjectiveSystem.lean`).
-- **Condensed Vacuum:** Projective limit of discrete spectral layers scaled by the golden ratio $\varphi$ (`CondensedPhiVacuum.lean`), with natural intertwining operators (`OperatorNaturality.lean`).
-- **Emergence of the Tripartite Scene:** A discrete graph is not embedded into space; it emerges as the combinatorial compatibility skeleton of phase projections (`RawSceneGraph.lean`). Minimality of non-trivial automorphism cycles forces a 3-partite structure $K(n_1,n_2,n_3)$ (`CompleteTripartite.lean`).
-- **Absence of 3-Simplices (Tetrahedra):** Theorem `NoThreeSimplices.lean` proves the clique complex is strictly 2-dimensional, cutting off Planck-scale ultraviolet divergence.
-- **Discrete Time (The Tick):** Physical time is generated by cyclic phase transitions (`FixedDetectorTimeLadder.lean`, `PhaseTower.lean`). The witness halting theorem (`WitnessHalting.lean`) guarantees finite termination of measurement cycles.
-- **Homology & Hodge Spectrum:** Exact rings $H_0, H_1, H_2$ (`GenericTripartiteHomology.lean`) and top-Hodge Laplacian spectra (`GenericTripartiteTopHodgeSpectrum.lean`) fix the channel capacity Euler characteristic $\chi = |V| - |E| + |F|$.
+
+Read future equivalence before eliminating hidden memory. The condensed and
+finite-scene constructions coexist with the explicit history path family,
+endpoint Reynolds average and first-/second-depth counting results. The
+Perron eigen-equation is not by itself a constructed all-depth cylinder measure.
 
 ### BOOK 02: Mathematical Proof Spine and Invariant Calculus
-- **Feedback Operator Algebra:** The unitary defect operator $F_N = P_N U_N^\dagger Q_N U_N P_N \ge 0$ ($0 \le F_N \le P_N$) on retained ($P_N$) and archive ($Q_N = I - P_N$) subspaces, with resolvent $G_N(z) = (I - z F_N)^{-1}$.
-- **Born Quadratic Readout:** The finite positive readout $R_N = D_N^\dagger D_N$ is owned as a quadratic response, and uniqueness inside the phase-quadratic class is forced by quarter-turn phase blindness (`QuarterTurnInvariant`, `finite_effect_born_readout_unique`). `BornAreaPreservationNoGo` proves that symplectic-area preservation **alone is insufficient**; it is a negative control, not the uniqueness premise.
-- **Spectral Scene Rigidity:** Unlabelled multiset $\{9, 11, 13\}$ on $N=33$ is uniquely recovered from rational adjacency with $\mathrm{rank} \le 3$ and $\mathrm{tr}(A^2)=718$ without assuming partitions or triangles (`DenseOperatorSceneRigidity.lean`). Top-Hodge data $(D, H, M_2)$ rigidly force the scene (`TopHodgeInverseSpectralRigidity.lean`).
+
+Follow the maps that preserve primitive operations, complete words and
+observations. The book also retains spectral scene rigidity and finite
+operator calculus. A finite real Bratteli refinement and its supplied
+trace-preservation identity keep their exact scope.
 
 ### BOOK 03: Finite Action Operators and Scene Dynamics
-- **Finite Log-Det Action:** Logarithmic action $S_\mathrm{fb} = -\log\det(I - z F_N)$, inherently finite and free of continuum ultraviolet infinities.
-- **Variation & Universal Source:** $\delta S_\mathrm{fb} = \mathrm{Tr}[(I - z F_N)^{-1} z\,\delta F_N]$; universal feedback source operator $\Pi_\mathrm{fb} = z(I - z F_N)^{-1}$.
-- **Conserved Stress on the Boundary Seam:** Boundary stress conservation between retained sector and environment bath (`ConservedStressProjection.lean`), yielding discrete equations of motion.
+
+For $F=P U^\dagger(I-P)UP$, the logdet derivative depends on the actual
+variation of $U$ and the cut $P$. The full bootstrap also contains the heat
+term. A pointwise operator state, a code-length minimum and a stationary
+physical action are different inputs; the chapter now makes their connecting
+premises explicit.
 
 ### BOOK 04: Spectrum, Matter, and Finite Selector Theory
-- **Matter as Resonant Modes:** Particles are terminally projected near-critical feedback modes ($F_N \psi_j = r_j \psi_j$ with $|z r_j| \approx 1$ and $P_\mathrm{term} \psi_j = \psi_j$).
-- **SM-Facing Gauge Ledger (frozen boundary):** `SMGaugeDecomposition.lean` freezes the factor labels $[\mathrm{SU}(3),\mathrm{SU}(2),\mathrm{U}(1)]$, the one-generation Weyl ledger, and exact rational anomaly cancellations. `AlbertSMProjection.lean` proves dimension/charge alignment only; the repository does **not yet own** an explicit commutant/automorphism theorem deriving the Standard Model gauge group from the finite carrier.
-- **Hypercharge Quantization:** Anomaly cancellation sums on the discrete lattice force hypercharge denominators to be quantized in multiples of $1/6$ (`SMCharges.lean`, `AnomalySums.lean`, `HyperchargeMinimalDenominator.lean`).
-- **Mass Hierarchy via Puiseux Series:** Lepton and quark mass eigenvalues expand in Puiseux series in deformation parameter $\varepsilon = \varphi^{-n}$ on Riemann–Hurwitz branched coverings (`LeptonRiemannHurwitzBranchIndex.lean`, `LeptonGreenPuiseuxOwner.lean`), removing arbitrary Yukawa couplings.
-- **CKM & PMNS Phason Holonomies:** Flavour mixing matrices are computed as topological holonomies of phason displacement waves around scene boundary singularities (`CKMPhasonHolonomy.lean`, `PMNSSeamTopology.lean`).
+
+Finite CAR/Hodge and spectral theorems are stated with their operator,
+weights, representation and source. The Standard Model factor/Weyl ledger,
+anomaly arithmetic, mass expansions and mixing constructions retain their
+separate selector and physical-identification obligations.
 
 ### BOOK 05: Verification Status and Certificate Discipline
-- **Status Classification:** Rigorous stratification of all claims into `CORE-FORMALIZED` (Lean 4, zero axioms), `OPERATOR-SCAFFOLD-CERTIFIED`, `PASSPORT-CLOSED`, and `PROOF-TARGET`.
-- **Centralized No-Go Ledger:** Complete catalog of forbidden shortcuts (`D0_NOGO_LEDGER`) — forbidding flat tensors, non-topological selectors, non-quadratic measures, and ad-hoc continuum field substitutions.
-- **Phase-Unfolding Theorem:** Proof that irrational $\varphi^{-2}$ phase rotation on discrete lattices generates the exact return modulus $q_T = 44$ and electroweak modulus $q_\mathrm{EW} = 710$ (`PhaseUnfoldingQuasicrystal.lean`).
+
+Read a claim's actual theorem type and assumptions, its certificate or
+source pin, and its accepted application. A theorem-name string, successful
+import, Lean compilation and a verified physical use are distinct evidence.
+CORE-FORMALIZED is not an assertion of a zero logical-axiom footprint.
 
 ### BOOK 06: Evolution, Forgetting, and Time
-- **The Arrow of Time as a CPTP Channel:** Time direction is the ordering induced by normalized Markovian coarse-graining channels $\hat{\Phi}_N(\rho) = \Phi_N(\rho)/\mathrm{Tr}\Phi_N(\rho)$.
-- **Entropy Monotonicity:** Monotone information loss and entropy growth are proved on the finite carrier, providing an irreversible thermodynamic arrow from terminal readout.
-- **Seam Fluctuation Relaxation:** Renormalization-group flow and dissipation of boundary defect noise across coarse-graining scales.
+
+The declared future interface determines what memory must preserve.
+The original parity effect algebra gives a sharp relative coherent-DATA
+bound; a separate fixed-size matrix represents coherent-history entropy under
+its stated purification and mixing conditions. Recorded Shannon information,
+executed clock, code length and physical work remain distinct quantities.
 
 ### BOOK 07: Gravity Limit and Finite Geometry
-- **Noncommutative Spectral Geometry:** Connes spectral triple $(\mathcal{A}, \mathcal{H}, \mathcal{D})$ over the scene complex; discrete Dirac operator $\mathcal{D}$ with Hodge boundary weights (`CanonicalDiracCovariance.lean`).
-- **Conditional heat-trace route:** under the registered heat-trace and smooth-interpolation bridge assumptions, the expansion $\mathrm{Tr}(e^{-t\mathcal{D}^2}) \sim \sum t^{(k-d)/2} a_k$ relates geometric coefficients to curvature (`ArchiveHeatTrace.lean`, `DixmierTraceBridge.lean`). This is a conditional bridge, not a completed native nonlinear Einstein derivation; suppression of higher-curvature contributions requires its own scale estimates.
-- **Horizon Emission Law:** A macroscopic horizon is capacity-saturated seam aggregation; horizon emission $F_Q^\mathrm{emit} = Q U^\dagger P U Q \ge 0$ is archive-to-retained boundary leakage under capacity saturation (`HORIZON-EMISSION-LAW`).
-- **Quarantined Bridge Interface:** Assumptions of continuum limit existence (`HeatTraceWeyl.lean`, `SmoothInterpolation.lean`) are strictly quarantined in `Bridge/Assumptions/`.
+
+Read the exact configured nonlinear 16+24+2 family together with its complete
+candidate-source application and remaining physical dictionary. Finite
+geometric identities, conditional universality, actual execution selection
+and uniform GR recovery keep separate conclusions.
 
 ### BOOK 08: Cosmology, Archive, and SDE Transfer
-- **Conditional dark-EOS exclusion of $w=-1$:** `LambdaCDMExcluded.lean` proves $w=-1$ is absent **inside the adopted discrete EOS family** $w=-\varphi+s/30$ (and companion role-assignment models give a separate arithmetic exclusion). The role-to-pressure/energy interpretation and weighted-mean EOS are modelling premises; this is not a theorem that every open graph with unitary archive dissipation excludes $\Lambda\mathrm{CDM}$.
-- **Cosmological SDE & $w(z)$ Drift:** Vacuum energy evolution obeys a stochastic differential equation (SDE) of phason-archive interaction, predicting a thawing/freezing deviation from $w=-1$ tested against DESI BAO and Planck CMB data (`DarkArchiveTransfer.lean`, `vp_phason_thawing.py`).
-- **Sandage–Loeb Redshift Drift:** Cosmic acceleration drift $\dot{v} = c \frac{\dot{z}}{1+z} + \Delta_\mathrm{phason}(z)$ derived from the desynchronization rate between detector and source discrete ticks (`RedshiftExpansionArchiveCoupling.lean`).
+
+The discrete EOS exclusion of $w=-1$ is conditional on its adopted model.
+A local Brinkmann family or Einstein-source classification does not by itself
+construct a cosmological solution, its initial data, expansion history or
+survey likelihood.
 
 ### BOOK 09: Gravitational Waves and Quantum Interferometry
-- **Apple/Spindle Torus Horizon Geometry:** Binary merger boundary modeled as a finite toroidal readout geometry with two axial release lobes and an equatorial capacity belt.
-- **Spin-2 Quadrupole Carrier:** Volume-preserving quadrupole deformations and phason strain tensors on the boundary seam.
-- **Horizon Capacity Quantization:** Step-like quantum capacity anomalies in final black hole mass $M_f$ and spin $a_f$ (`BlackHoleCapacityA4.lean`, tested in GWOSC/LIGO MERS_V10 protocols).
-- **Epistemic Discovery Guardrails:** Strict prohibition against claiming observational "proof" from current detector noise; pre-registered $5\sigma$ protocols for upcoming observational runs.
 
----
+The nonflat VSI family provides a useful wave testbed: polynomial scalar
+curvature invariants can vanish while curvature and relational observations
+remain nontrivial. Its native readout still requires a detector bridge before
+comparison with interferometer data.
 
 ## 4. The Three Architecture Layers
 
-The repository strictly separates internal theorems, mathematical operators, and external phenomenological passports:
+| Layer | Main locations | What its evidence establishes |
+|---|---|---|
+| Verification and finite mathematics | Books 00–02; Foundation, Core, algebra and combinatorics modules | The actual quantified finite theorem and its logical footprint |
+| Operators, sources and physical composition | Books 03–07; geometry/matter modules, research and assembly | Specified operator identities, conditional constructions and explicitly reviewed applications |
+| Observable models and empirical comparison | Books 04/08/09; certificates and experiments | The declared model/passport calculation and comparison protocol |
 
-| Layer | Scientific Role | Core Locations | Epistemic Status |
-|:------|:----------------|:---------------|:-----------------|
-| **I. Epistemic Foundation (Core)** | Conditions of distinguishability, Popperian bootstrap, self-reading functor, finite scene birth | `01_BOOKS/BOOK_00`, `BOOK_01`<br>`03_FORMALIZATION/D0/Foundation/`<br>`03_FORMALIZATION/D0/Core/` | **Lean 4 verified (0 sorry)**.<br>No external physical assumptions. |
-| **II. Algebraic Spine** | Operator algebras, top-Hodge rigidity, spectral geometry, No-Go theorems | `01_BOOKS/BOOK_02`, `BOOK_03`<br>`03_FORMALIZATION/D0/Geometry/`<br>`03_FORMALIZATION/D0/Topology/` | **Lean 4 verified**.<br>Continuum bridge assumptions isolated in `Bridge/Assumptions/`. |
-| **III. Readout / Phenomenology** | Mass selectors, gauge decompositions, cosmological SDE, empirical stress-tests | `01_BOOKS/BOOK_04`–`BOOK_09`<br>`04_CERTIFICATES/`<br>`05_EXPERIMENTS/` | **Executable Python certificates & observational data**.<br>Passports do not promote core theorems. |
-
-> **Reading Rule:** Do not evaluate Layer III before understanding Layer I. Numerical agreements without the detection contract are merely numbers; their physical meaning exists solely as shadows of the underlying verification structure.
-
----
+Each layer contains different proof statuses. A directory name or a broad
+narrative label does not certify every statement in that directory.
+[Book 05](01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md)
+explains how to follow an individual result to its evidence.
 
 ## 5. Spectral Rigidity: The Golden Ratio $\varphi$ and Mass-Sector Boundaries
 
-The finite spectral results, coefficient-selection problem and physical mass
-interpretation have different proof obligations. In the owned equivariant
-Yukawa class $Y(a,b,c;\lambda)=a+b\lambda+c\lambda^2$, the qualitative
-profile does **not** determine a unique coefficient triple.
+For the owned finite graph class, top-Hodge and adjacency invariants recover
+the unlabelled scene. These exact uniqueness results should be read separately
+from a physical assertion that every admissible verification system must use
+that scene.
 
-- **What the selector no-go proves:**
-  [`YukawaQualitativeSelectorNoGo.lean`](03_FORMALIZATION/D0/Synthesis/YukawaQualitativeSelectorNoGo.lean)
-  proves that all non-scalar triples share the owned equality/rationality
-  profile. The injective family $(0,1,t)$ has that same profile. A unique
-  selector needs additional coefficient-sensitive information; this theorem
-  does not force a spectral projector.
-- **What the analytic owners supply:**
-  [`LeptonGreenPuiseuxOwner.lean`](03_FORMALIZATION/D0/Matter/LeptonGreenPuiseuxOwner.lean)
-  and the registered shell-transfer owners concern their specified resolvent
-  and expansion constructions. Their assumptions and the separate physical
-  identification must be checked in their actual statements. The quadratic
-  facts in `Time2DPisot.lean` do not by themselves derive those constructions
-  or a physical torus of time.
-- **Parameter-selection boundary:** $\varphi=(1+\sqrt5)/2$ satisfies
-  $x^2-x-1=0$. Fixing that number does not also select all Yukawa coefficients,
-  masses or mixing parameters. A zero-free-parameter conclusion requires the
-  separate selector and physical-identification obligations; it is not a
-  consequence of the qualitative no-go.
+Likewise, $\varphi=(1+\sqrt5)/2$ satisfies its golden quadratic, but this fact
+does not select all matter coefficients. In the equivariant class
+$Y(a,b,c;\lambda)=a+b\lambda+c\lambda^2$, the
+[Yukawa qualitative-selector no-go](03_FORMALIZATION/D0/Synthesis/YukawaQualitativeSelectorNoGo.lean)
+leaves different coefficient triples with the same qualitative profile.
+The [lepton Puiseux owner](03_FORMALIZATION/D0/Matter/LeptonGreenPuiseuxOwner.lean)
+has its own specified construction and hypotheses.
 
 ### Audited Mathematical Routes to $\varphi$
 
-The routes below are an inventory of golden-ratio appearances/forcing attempts, **not five independent derivations**. `02_REGISTRY/forcing_routes.json` is the source of truth for premise overlap, negative controls, repairs, and the field `independent_now`; several historical routes collapse to the same golden quadratic or the same quarter-turn invariance and therefore must not be counted twice.
+[forcing_routes.json](02_REGISTRY/forcing_routes.json) records the golden-ratio
+routes, their overlapping premises, negative controls and the field
+independent_now. The quadratic/Pisot identities, return-time arguments,
+Fibonacci fusion/AF structure, projection geometry and detector-return models
+must be used with their actual premises. Repeated appearances of the same
+quadratic do not count as independent physical derivations.
 
-1. **Diophantine Extremality and KAM Stability (Dynamical Systems):**
-   The continued fraction $\varphi = [1; 1, 1, \dots]$ possesses the maximal Hurwitz constant $c = \sqrt{5}$, providing the worst rational approximation among all real numbers. In `HurwitzMinimaxPhi.lean` and `HurwitzPhi.lean`, this maximal irrationality prevents mode-locking and phase resonance, ensuring KAM stability of cyclic discrete detector ticks.
-2. **Quadratic Roots and the Fibonacci Matrix:**
-   The integer matrix $F=\begin{pmatrix}1&1\\1&0\end{pmatrix}$ has
-   determinant $-1$, so $F\in\mathrm{GL}_2(\mathbb Z)$, not
-   $\mathrm{SL}_2(\mathbb Z)$. Its characteristic polynomial is
-   $x^2-x-1$, with eigenvalues $\varphi$ and $-\varphi^{-1}$. It preserves
-   unoriented area and reverses the standard area form; $F^2$ has determinant
-   $+1$. The actual
-   [`Time2DPisot.lean`](03_FORMALIZATION/D0/Claims/Time2DPisot.lean)
-   statement bundles root identities, brackets, a discriminant calculation,
-   a bounded integer nonsquare check and the degree of a coefficient list.
-   It constructs neither a time torus nor a thermodynamic arrow. Those
-   interpretations require separate dynamical/physical owners.
-3. **Von Neumann Factors and Fibonacci Tensor Categories (Operator Algebras):**
-   In Jones' classification of $\mathrm{II}_1$ subfactor indices $[M : N] = 4 \cos^2(\pi/n)$, the primitive torsion index $n = 5$ evaluates to $[M : N] = 4 \cos^2(\pi/5) = \frac{3+\sqrt{5}}{2} = \varphi^2 = \varphi + 1$ (`JonesIndexPhi.lean`). In the category of boundary braid representations, the unique non-abelian solution to the pentagon equation is the Fibonacci fusion ring $\tau \otimes \tau = \mathbf{1} \oplus \tau$, whose fundamental anyonic quantum dimension is identically $d_\tau = \varphi$ (`FibonacciFusionRing.lean`, `FibonacciAnyonUniqueness.lean`).
-4. **Projective Quasicrystals and the $E_8$ Root Lattice (Discrete Geometry):**
-   The projection of the 8-dimensional root lattice $E_8$ onto 4-dimensional physical space is governed by the ring of Hamiltonian icosians over $\mathbb{Q}(\sqrt{5})$ (`IcosianE8GramFinite.lean`). To generate an aperiodic cut-and-project scene without translational singularities or point-density blowup, the projection window is uniquely determined by a golden projector trace (`CondensedPhiVacuum.lean`).
-5. **Self-Similar Memory Scaling (Quantum Measurement):**
-   Internal calibration without external reference standards forces the detector self-return split $p + p^2 = 1$ between the direct channel and return channel. Its unique positive root $p = \varphi^{-1}$ sets the scale-invariant step of measurement memory $\varepsilon = \varphi^{-1}$ and the dimensionless entropy rate $\log\varphi$ (`PhiFractalTickDynamics.lean`, `DetectorSupportGoldenWeight.lean`).
+The [Golden metric-step theorem](02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md)
+requires an actual physical metric weight law for the selected source/action.
+An internal Perron/Bratteli scale ratio does not supply that law.
+The [TRIZ/Golden-Beatty handoff](02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md)
+also preserves the failed uncentred residual proposal and the correctly typed
+paired return-time question.
 
 ### Scientific Falsifiability
 
-Empirical tests apply to the exact selected model, its declared assumptions,
-calibrations and measurement passport. A disagreement can reject that tested
-combination. It does not by itself refute every three-partite scene or close
-an unresolved coefficient selector. Consult `claims.csv`, the actual theorem
-statements and the relevant empirical passports before making a stronger
-physical conclusion.
-
----
+An empirical discrepancy tests a particular model, bridge, calibration and
+passport. It does not alone refute every finite carrier or complete an
+unresolved selector. The exact scope belongs to the claim and comparison
+protocol.
 
 ## 6. Non-Trivial Theorems in the Corpus
 
-- **Popperian Bootstrap Equivalence (`D0-POPPERIAN-BOOTSTRAP-001`):** Proof that $\text{KillingTest}(P) \iff \text{VerificationContract}(P)$, turning empirical falsifiability into a constructive mathematical constraint on detector state spaces.
-- **Exact Support Orthogonality (`D0-VERIFIABLE-REGISTRATION-ORTHOGONALITY-001`):** An exact verification contract $\text{compare}(x, y) = [x \neq y]$ on physical states forces strictly orthogonal density supports: $\text{supp}(\tau_x) \perp \text{supp}(\tau_y)$. Exact distinguishability cannot be implemented over non-orthogonal states.
-- **Top-Hodge Inverse Spectral Rigidity (`D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001`):** Equality of top-Hodge data $(D, H, M_2)$ for positive complete tripartite scenes uniquely forces equality of the unlabelled part-size multisets.
-- **Dense Operator Scene Rigidity (`D0-DENSE-OPERATOR-SCENE-RIGIDITY-001`):** Any finite simple rational adjacency matrix on 33 vertices with rank $\le 3$ and $\text{tr}(A^2)=718$ is recovered as the complete tripartite graph $K(9,11,13)$ without assuming partitions, triangles, or connectedness.
-- **Area-Preservation Insufficiency No-Go (`BornAreaPreservationNoGo`):** determinant/area preservation alone does **not** force $x^2+y^2$ or a Born exponent; an explicit area-preserving shear is a counterexample. The machine-owned quadratic uniqueness premise is quarter-turn phase blindness (`QuarterTurnInvariant`).
-- **Explicit Bridge Quarantine (`D0-BRIDGE-COMPRESSION-001`):** Conjectured continuum limits (such as `HeatTraceWeyl.lean` or `SmoothInterpolation.lean`) are strictly quarantined in `03_FORMALIZATION/D0/Bridge/Assumptions/` and never masquerade as core Lean theorems.
+| Result | What to read and retain |
+|---|---|
+| Popperian bootstrap | Killing-test/verification-contract equivalence, including its carrier countermodels; Book 00 |
+| Future-profile representation | All declared future words/tests, faithful record representation and explicit coding premises; Books 01–02 |
+| Operational theory transfer | Primitive commutation, common empirical image and additional-context coverage; Book 02 |
+| Scene inverse rigidity | The positive tripartite or rational-adjacency hypotheses that recover the unordered scene; Book 02 |
+| History-counting negative control | The exact difference $12/251\ne23/480$ between complete-history counting and iterated one-step random walk; Book 01 |
+| Born-response boundary | Quadratic uniqueness under quarter-turn phase blindness; area preservation alone has a counterexample; Book 02 |
+| Finite CAR/Hodge calculus | The actual adjoint, square, kernel and weight hypotheses; Books 04/07 |
+| Exact nonvacuum recovery | The configured all42 Einstein–CAR family and its refinement/source assumptions; Book 07 |
 
----
+These are reading entries, not a new claim registry. Follow each book's
+existing claim IDs, owners and source links for the precise statement.
 
 ## 7. How to Read (Short Paths)
 
-Depending on your background, choose one of three entry paths:
+| Question | Path |
+|---|---|
+| What does D0 mean by verification and a state? | Books 00 → 01 → Book 02's operational transfer chapter |
+| Which finite geometry and matter results can I reuse? | Books 01/02 → 04; then the exact claim and compiled declaration |
+| How are action, information and time connected? | Books 03 → 06; keep the actual execution, cut, records and preparation |
+| How close is the GR application? | Book 07, the primary positive case, dated research map and current assembly obligations |
+| What is an observational prediction? | Book 05 first, then Books 08/09 and the named experiment passport |
 
-```text
-Path A: Foundations & Epistemology (Recommended First Pass)
-  └─► BOOK_00 (Entry Contract & Admissibility)
-  └─► BOOK_01 (Condensed Foundations & Scene Birth)
-  └─► Lean: D0.Foundation.PopperianBootstrap, VerifiabilityNecessity, M1Universality
+For a particular known result, use the existing bounded retrieval tools:
 
-Path B: Discrete Geometry & Spectral Operators
-  └─► BOOK_02 & BOOK_03 (Scene Operators, Graph Rigidity)
-  └─► Certificates: vp_spectral_scene_rigidity.py, vp_toral_return_group_origin_of_scene.py
-  └─► Lean: D0.Synthesis.DenseOperatorSceneRigidity, D0.Synthesis.TopHodgeInverseSpectralRigidity
+~~~bash
+python tools/proof_architecture.py search "future memory"
+python tools/proof_architecture.py show D0-TOP-HODGE-INVERSE-SPECTRAL-RIGIDITY-001
+python tools/proof_architecture.py claim-sources
+python tools/gr_assembly.py why positive_gr
+~~~
 
-Path C: Phenomenology & Stress-Tests (Only after A/B)
-  └─► BOOK_04 (Matter Spectrum) & BOOK_08 (Cosmology)
-  └─► 05_EXPERIMENTS/ (DESI BAO fitting, LIGO horizon capacity, Sandage-Loeb drift)
-  └─► Verification of passports in 02_REGISTRY/claims.csv
-```
-
----
+Search and book-heading matches return source candidates. They do not accept
+applications or establish semantic coverage.
 
 ## 8. Canonical Repository Layout & Sources of Truth
 
-```text
-01_BOOKS/           Narrative derivation (read BOOK_00 -> BOOK_09)
-02_REGISTRY/        Single canonical source of truth for all claims, assumptions, and proofs
-03_FORMALIZATION/   Machine-checked Lean 4 library (0 sorry in core)
-04_CERTIFICATES/    Self-contained, executable numerical/combinatorial certificates
-05_EXPERIMENTS/     Empirical observational passports, pinned survey data, and likelihoods
-tools/              Repository validator, Lean view generator, and test runners
-```
+| Location | Role |
+|---|---|
+| [00_WORK](00_WORK/README.md) | Task queue, ownership and execution/validation contract |
+| [01_BOOKS](01_BOOKS/) | Authored narrative books |
+| [02_REGISTRY](02_REGISTRY/) | Claim, assumption, alias and formal-support authorities |
+| [Research map](02_REGISTRY/research/README.md) / [ledger](02_REGISTRY/RESEARCH_LEDGER.md) | Research sources, dated dispositions and reading connections |
+| [GR assembly](02_REGISTRY/gr_assembly/README.md) | Interfaces, obligations and exact result applications |
+| [03_FORMALIZATION](03_FORMALIZATION/README.md) | Lean statements, proofs, public imports and declaration evidence |
+| [04_CERTIFICATES](04_CERTIFICATES/) | Registered executable finite calculations |
+| [05_EXPERIMENTS](05_EXPERIMENTS/) | External data and empirical comparison protocols |
+| [tools](tools/) | Validators, generated views, retrieval and replay |
 
 ### Source-of-Truth Rules
 
-- **Books explain; they do not define release status.** Formal claim status and proof ownership are governed strictly by `02_REGISTRY/claims.csv`.
-- **Public prose cannot outrun its owner.** README/BOOK/monograph statements must preserve the theorem's actual quantifiers, candidate class, and BRIDGE/NO-GO conditions. A later NO-GO or scope repair overrides older narrative wording; stale stronger prose is a repository defect, not an alternative interpretation.
-- **Lean ownership is explicit.** `D0.All` and `ClaimMap.lean` are machine-generated from registered claims and audited in CI. Hand edits are rejected.
-- **Certificates are reachable evidence.** Every python certificate in `04_CERTIFICATES` must be referenced by an active claim in `claims.csv`.
-- **The release tree is immutable under verification.** Executing certificates writes only to temporary `.build/cert_outputs/`; the git working tree remains clean.
-- **Empirical results never silently promote a core theorem.** External data comparisons stay in `05_EXPERIMENTS/` as `PASSPORT-CLOSED` or `PROOF-TARGET`.
+- **Claims and assumptions:** [claims.csv](02_REGISTRY/claims.csv) and
+  [assumptions.csv](02_REGISTRY/assumptions.csv) retain their existing IDs,
+  statuses and owners. Narrative summaries do not promote them.
+- **Formal support:** [formal_support.csv](02_REGISTRY/formal_support.csv),
+  actual elaborated declarations and concrete adapters have different roles.
+  The generated ClaimMap stores metadata, including theorem-name strings.
+- **Applications:** the [assembly contract](02_REGISTRY/gr_assembly/contract.json)
+  and [applications](02_REGISTRY/gr_assembly/applications.json) retain exact
+  hypotheses, maps, interfaces and review pins.
+- **Historical evidence:** a published commit/path/blob and expected result
+  remain immutable. Replaying old book inputs establishes the historical
+  calculation; it is not verification of later edited narrative.
+- **Automated views:** work STATUS/README status, Lean imports/ClaimMap and
+  assembly views are generated. The ten narrative Markdown books are authored
+  sources; these generators do not write missing explanatory chapters.
+- **Coverage:** C0 is not independently frozen and accepted. Counts of claims,
+  files, headings, declarations or passing checks are not mathematical coverage.
 
----
+When integrating a substantive result, update its owning claim/application or
+research disposition, the relevant book explanation and the reading map.
+Preserve assumptions and link the actual source; regenerate only the affected
+views. This uses the existing authorities and adds no parallel status system.
 
 ## 9. Local Verification & Reproducibility
 
+Choose checks by the [change-based validation budget](00_WORK/README.md#validation-budget).
+The commands below are entry points, not a requirement to replay every
+calculation after every prose edit.
+
 ### Fast Structural & Integrity Validation
 
-Choose checks by the changed surface using the
-[validation budget](00_WORK/README.md#validation-budget). The commands below
-are reference commands, not a checklist to repeat after every edit.
-
-```bash
-# Validate CSV registry integrity, imports, and lack of orphan Lean modules
+~~~bash
+python tools/test_validate_repo.py
 python tools/validate_repo.py
-
-# Verify machine-generated Lean views are up to date
+python tools/lint_claim_strength.py
 python tools/generate_lean_views.py --check
+python tools/render_work_status.py --check
+python tools/gr_assembly.py check
+python tools/gr_assembly.py render --check
+~~~
 
-# Syntax check all certificate scripts
-python -m compileall -q tools 04_CERTIFICATES
-```
+Assembly verification needs the published historical commits named by its
+evidence records. A missing local Git object is not permission to replace an
+expected hash. Fetch the named published source, then retry.
 
 ### Running Executable Certificates
 
-```bash
-# Integration suite when its dependency surface changes (timeout 90s per certificate)
+~~~bash
 python tools/run_registered_certs.py --workers 6 --timeout 90 --exclude vp_scene_bartholdi_typed.py
-
-# Run the intensive Bartholdi scene certificate separately
 python 04_CERTIFICATES/vp_scene_bartholdi_typed.py
-```
+~~~
+
+For research replay use the isolated runner on an exact committed source.
+Its declared input closures and historical overlays distinguish original
+evidence from current-source compatibility; see the
+[work guide](00_WORK/README.md#validation-budget) and runner help.
 
 ### Formal Lean 4 Build
 
-```bash
-# While changing a proof: build only its module
+~~~bash
 python tools/lean_task_build.py narrow D0.Geometry.SomeModule
-# Once the affected modules pass: one final integration build
 python tools/lean_task_build.py final
-```
+~~~
 
-*(The Lean toolchain version is pinned in `03_FORMALIZATION/lean-toolchain`)*.
-
----
+The first command is a template for the module being changed. The toolchain
+is pinned in [03_FORMALIZATION/lean-toolchain](03_FORMALIZATION/lean-toolchain).
+A prior compiled inventory remains evidence for its recorded source digest,
+not for an arbitrary later tree.
 
 ## 10. Epistemic Guardrails & Frontier Resolution Strategy
 
 ### What D0 Is Not Claiming
 
-To maintain scientific integrity, D0 explicitly records what has **not** been achieved:
+Full physical GR selection and universal recovery remain open. In particular,
+the configured exact solution and the complete cut-Hodge source identity do
+not establish that the whole D0 core selects the intended heat operator, cut,
+controller and admissible field variations.
 
-- **Continuum Limit as Finished Theorem:** D0 does **not** claim that the Einstein–Hilbert action or smooth Yang–Mills theory has been proved as an unconditional mathematical theorem from the graph. They are conditioned on explicitly quarantined bridge assumptions (`HeatTraceWeyl`, `SmoothInterpolation`).
-- **Empirical Confirmation:** D0 does **not** claim that observational hints (e.g. DESI $w(z)$ dynamical dark energy or LIGO black hole horizon step features) constitute verified empirical discoveries. They are structured, pre-registered falsification tests.
-- **Universality of the scene:** the functional tuple and scene are derived inside the registered admissibility/forcing architecture. A classification of every finite catalogue-free carrier is not established; see the counterexamples in Section 1.
+The verification contract does not classify every finite catalogue-free
+carrier. A positive finite theorem retains its hypotheses; a scoped no-go
+changes only its declared route. The cosmological and detector passports do
+not constitute confirmed discoveries.
 
 ### Historical frontier map
 
-The topics below describe earlier frontier routes. For current gravity work,
-use the [current route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity).
-The full action/source binding and general joint nonlinear limit remain
-scientific obligations; relabelling them as an interface problem does not close them.
-
-1. **Alpha Dixmier Trace (`AlphaProfiniteTowerNoGo`):** Rather than seeking external Feshbach regulators to force continuous integration on profinite sets, the tower is resolved as an inductive limit of Fibonacci $AF$-algebras (`D0/VNext/FibonacciAFAlgebra.lean`, `PerronGNSTower.lean`), whose unique tracial state normalizes the Cesàro residue endogenously via Perron–Frobenius powers $\varphi^{-k}$.
-2. **Action threshold and remaining price (`EndogenousActionQuantum`):** The abstract `ActionProtocol` has the unit lower bound $S_{\mathrm{min}}=1$ for nonidentity transitions. Its exact excess-profile classification leaves independent nonnegative excess costs; attainment and relative prices are not fixed by that floor. The [formal owner](03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean) and [prospective owner](03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean) supply the reusable boundaries. The native full Cost-Info, field interpretation and continuation law remain the current physical bridge.
-3. **Finite-to-continuum quantum-metric boundary:** The internal Lean result is deliberately narrower than a quantum-propinquity theorem: a geometric stage-step bound $d(x_k,x_{k+1})\le C\delta_0^k$ implies Cauchyness in any pseudometric space, and convergence in a complete one. The repository does **not** currently construct Rieffel compact quantum metric spaces, tunnels/bridges, or a quantum Gromov–Hausdorff/propinquity distance for the D0 stages. Those objects and their convergence remain the explicit external bridge `ASSUMP-RIEFFEL-GHP` (`D0/Bridge/RieffelGHPBridge.lean`).
-4. **Cosmological SDE Smoothing (`CMBNsSmoothingUndeterminedNoGo`):** Spatial convolution with arbitrary continuous Gaussian kernels $\sigma$ is replaced by the canonical discrete spectral projector of the Hodge Laplacian onto the lowest non-trivial Fiedler eigenspace (`CMBFiedlerFreezeout.lean`), fixing $n_s$ through combinatorial projector ranks.
-
-For full technical specifications, advanced mathematical integrations, and Lean formalization roadmaps, see:
-- [02_REGISTRY/frontier/FRONTIER_STRATEGY.md](02_REGISTRY/frontier/FRONTIER_STRATEGY.md) — Historical exploration of possible frontier routes; not the active definition of done.
-- [02_REGISTRY/frontier/D0_RESEARCH_MONOGRAPH.md](02_REGISTRY/frontier/D0_RESEARCH_MONOGRAPH.md) — Comprehensive research monograph: theoretical foundations, advanced mathematical apparatus, and strict formalization program.
-
----
+The [historical strategy](02_REGISTRY/frontier/FRONTIER_STRATEGY.md) and
+[research monograph](02_REGISTRY/frontier/D0_RESEARCH_MONOGRAPH.md) remain
+available. Use the [current route](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#current-route-to-general-relativity),
+[research reading map](02_REGISTRY/research/README.md) and newer scoped
+corrections to determine what is currently reusable. Historical claims of
+completion do not erase later identified native-source or refinement
+obligations.
 
 ## Citation & Status
 
@@ -557,15 +467,13 @@ For full technical specifications, advanced mathematical integrations, and Lean 
 
 - **Tracked Queue/Control Tasks**: CONTROL: 1, EXPENSIVE: 3, WORKER: 1 (Total: 5)
 - **Runtime Execution**: see open GitHub pull requests; PR number = execution ID
-- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 0/10
+- **WIP Utilization**: CONTROL: 1/2, EXPENSIVE: 0/3, WORKER: 1/10
 - **Legacy Scaffolds Remaining**: 0
 - **Detailed Status Report**: [00_WORK/STATUS.md](00_WORK/STATUS.md)
 <!-- D0-WORK-STATUS:END -->
 
-D0 is an open, actively developed research corpus. The state of any claim is determined by the registry, not by narrative prose.
+D0 is an actively developed research corpus. Cite the exact claim, source
+path and Git commit used, and include the assumptions relevant to the
+application. The state of a claim is determined by its registry and evidence.
 
-```text
-Repository: https://github.com/gvakhrushev/d0_15
-Registry:   02_REGISTRY/claims.csv
-Contact:    g.vakhrushev1993@gmail.com
-```
+Repository: [gvakhrushev/d0_15](https://github.com/gvakhrushev/d0_15).

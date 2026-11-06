@@ -1,0 +1,273 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1054,
+      "path": "COMMITS.tsv",
+      "sha256": "326ce1be53e536a53c733642324032e158f695e2d1d7279ec1228854f7ae6823"
+    },
+    {
+      "bytes": 3194,
+      "path": "README.md",
+      "sha256": "46a3f192bcb7a8661e5ee7bc0b0608a932d3046a4b8af9765fc5d579bd5d7084"
+    },
+    {
+      "bytes": 4198,
+      "path": "REPLAY_REPORT.md",
+      "sha256": "9c8ce4543c4f698acc55338a68cfc49c5ae0a145bed333398ea769d84fb2145b"
+    },
+    {
+      "bytes": 27743,
+      "path": "UPSTREAM.patch.gz",
+      "sha256": "d90117e0efc62aaa7bc40d974ade09920df790a6e8bdde3309afbb8ffd7965e8"
+    },
+    {
+      "bytes": 36270,
+      "path": "UPSTREAM_SOURCES.zip",
+      "sha256": "976d4b7fbbc5aebb2d5cc0a598554b6842da6aa41cd2e263c67653f47a4d2a26"
+    },
+    {
+      "bytes": 659,
+      "path": "replay/exploration_full_attempt.json",
+      "sha256": "22f37c6fe90bc2d69224586cf362be93b41af4dc3870f7a0c9f12dfb675e5f45"
+    },
+    {
+      "bytes": 9263,
+      "path": "replay/exploration_result.json",
+      "sha256": "9bacb53bd4b66601e171b4de4e0269fc893f7fee795228b24202634dc749b93c"
+    },
+    {
+      "bytes": 7791,
+      "path": "replay/normal_output.json",
+      "sha256": "8f16eacb95ed3f5175b84012e66be73ae8caf8e2b4249893fd7263dc2eb1ff3e"
+    },
+    {
+      "bytes": 36683,
+      "path": "replay/normal_stderr.txt",
+      "sha256": "d9889d07d2caf32b18f10df04c70e7b0c105ba33f81a2a596deea9fcd13875e8"
+    },
+    {
+      "bytes": 7791,
+      "path": "replay/optimized_output.json",
+      "sha256": "8f16eacb95ed3f5175b84012e66be73ae8caf8e2b4249893fd7263dc2eb1ff3e"
+    },
+    {
+      "bytes": 36683,
+      "path": "replay/optimized_stderr.txt",
+      "sha256": "d9889d07d2caf32b18f10df04c70e7b0c105ba33f81a2a596deea9fcd13875e8"
+    },
+    {
+      "bytes": 7797,
+      "path": "replay/owner_result.json",
+      "sha256": "b36399312e6adc96b1b9e681ec22ee08cfad1be7582b08488927ac9c279a6100"
+    },
+    {
+      "bytes": 12892,
+      "path": "replay/work/check_prefix_recovery.py",
+      "sha256": "4259251e822abe246b35da480db7c5dc4abd51c20e36d4d50e39040c3b7ab706"
+    },
+    {
+      "bytes": 13505,
+      "path": "replay/work/inputs/check_history_source.py",
+      "sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a"
+    },
+    {
+      "bytes": 6334,
+      "path": "upstream/02_REGISTRY/research/A4D_RETAINED_PAST_FULL_COVECTOR_RECOVERY_2026_10_28.md",
+      "sha256": "e4d8064108b837409e1a4311a5c499a9737c67249129f5d4261c1280dd62b96d"
+    },
+    {
+      "bytes": 30094,
+      "path": "upstream/02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/PROOF_RU.md",
+      "sha256": "690f0f16cc76fafc3f574a3c2a59c0b96f7bb9d3874d105ecafdc8ad0aeb6436"
+    },
+    {
+      "bytes": 12892,
+      "path": "upstream/02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/check_prefix_recovery.py",
+      "sha256": "4259251e822abe246b35da480db7c5dc4abd51c20e36d4d50e39040c3b7ab706"
+    },
+    {
+      "bytes": 659,
+      "path": "upstream/02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/exploration_full_attempt.json",
+      "sha256": "22f37c6fe90bc2d69224586cf362be93b41af4dc3870f7a0c9f12dfb675e5f45"
+    },
+    {
+      "bytes": 9263,
+      "path": "upstream/02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/exploration_result.json",
+      "sha256": "9bacb53bd4b66601e171b4de4e0269fc893f7fee795228b24202634dc749b93c"
+    },
+    {
+      "bytes": 6358,
+      "path": "upstream/02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/explore_original_full_source.py",
+      "sha256": "35d6a1e1d322bb0c931851692d90daa25f38a2fdb313f73d969e7f27d7d93ebb"
+    },
+    {
+      "bytes": 7797,
+      "path": "upstream/02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/result.json",
+      "sha256": "b36399312e6adc96b1b9e681ec22ee08cfad1be7582b08488927ac9c279a6100"
+    },
+    {
+      "bytes": 13505,
+      "path": "upstream/inputs/check_history_source.py",
+      "sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a"
+    },
+    {
+      "bytes": 11472,
+      "path": "verify_source_delta.py",
+      "sha256": "d287269e0c63e55c9ab38a38621acdb28296141666562e00d4935954bb78e8be"
+    }
+  ],
+  "commit_list": {
+    "path": "COMMITS.tsv",
+    "sha256": "326ce1be53e536a53c733642324032e158f695e2d1d7279ec1228854f7ae6823"
+  },
+  "owner_pr": 334,
+  "replay": {
+    "checker": "replay/work/check_prefix_recovery.py",
+    "checks": 69,
+    "environment": {
+      "numpy": "2.0.2",
+      "python": "3.9.6",
+      "sympy": "1.14.0"
+    },
+    "failed_full_solve": "replay/exploration_full_attempt.json",
+    "local_dependency_mpmath_version": "1.3.0",
+    "local_dependency_numpy_version": "2.0.2",
+    "local_dependency_python_version": "3.9.6",
+    "local_dependency_scipy_version": "1.13.1",
+    "local_dependency_sympy_version": "1.14.0",
+    "normal_optimized_output_identical": true,
+    "normal_output": "replay/normal_output.json",
+    "normal_output_sha256": "8f16eacb95ed3f5175b84012e66be73ae8caf8e2b4249893fd7263dc2eb1ff3e",
+    "normal_stderr": "replay/normal_stderr.txt",
+    "optimized_output": "replay/optimized_output.json",
+    "optimized_stderr": "replay/optimized_stderr.txt",
+    "owner_environment": {
+      "numpy": "2.3.5",
+      "python": "3.13.5",
+      "sympy": "1.14.0"
+    },
+    "owner_output": "replay/owner_result.json",
+    "owner_output_sha256": "b36399312e6adc96b1b9e681ec22ee08cfad1be7582b08488927ac9c279a6100",
+    "runtime_warning_records_each_run": 120,
+    "status": "PASS_COMPLETE_FIXED_PREFIX_COVECTOR_RECOVERY"
+  },
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-pr-source-range-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "exact_finite_stationary_root_proved": false,
+    "full_GR_native_program_executed": false,
+    "physical_admission": false,
+    "scientific_acceptance": false,
+    "uncontrolled_new_apparatus_rows_eliminated": false
+  },
+  "source_archive": {
+    "bytes": 36270,
+    "member_count": 8,
+    "path": "UPSTREAM_SOURCES.zip",
+    "sha256": "976d4b7fbbc5aebb2d5cc0a598554b6842da6aa41cd2e263c67653f47a4d2a26"
+  },
+  "source_commits": [
+    {
+      "authored_at": "2026-10-28T16:01:38+03:00",
+      "sha": "19efc28da7d8214fea1cae154291f2ef847d8d0b",
+      "subject": "test(#334): verify the complete retained-prefix covector without freezing its rows"
+    },
+    {
+      "authored_at": "2026-10-28T16:06:42+03:00",
+      "sha": "5bfd15a6f80f4401cf9cadc0cb49a0ef2a609185",
+      "subject": "research(#334): include all finite-prefix variations in cumulative nonlinear source recovery"
+    },
+    {
+      "authored_at": "2026-10-28T16:08:07+03:00",
+      "sha": "aa19b47c41345cf16712af5a9ed14cdd6db1b1c4",
+      "subject": "test(#334): retain observed full-prefix source and non-dilution controls"
+    },
+    {
+      "authored_at": "2026-10-28T16:09:21+03:00",
+      "sha": "697eb58588db190f386f912d36e59a671e298ca0",
+      "subject": "research(#334): retain original all4096 joint-source exploration without root promotion"
+    },
+    {
+      "authored_at": "2026-10-28T16:11:28+03:00",
+      "sha": "e5ce2ec0a5a44fb01cf59d0135656994e4665862",
+      "subject": "research(#334): preserve seven-scale candidate and all280 nonzero rows as exploration"
+    },
+    {
+      "authored_at": "2026-10-28T16:11:48+03:00",
+      "sha": "412e8aa0e6c09738c15eb56c3296799350c87f4b",
+      "subject": "research(#334): retain failed all280 solve and its orientation-domain violation"
+    },
+    {
+      "authored_at": "2026-10-28T16:13:06+03:00",
+      "sha": "523d2cbcc0a9771ea40faa4a2eac84cc78704b0e",
+      "subject": "research(#334): compose nonlinear GR recovery with every finite-prefix source row"
+    }
+  ],
+  "source_files": [
+    {
+      "archive_path": "02_REGISTRY/research/A4D_RETAINED_PAST_FULL_COVECTOR_RECOVERY_2026_10_28.md",
+      "bytes": 6334,
+      "head_git_blob_sha1": "f3b9ad0a1796d301826bf39886e688b7bb1fa5d6",
+      "sha256": "e4d8064108b837409e1a4311a5c499a9737c67249129f5d4261c1280dd62b96d"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/PROOF_RU.md",
+      "bytes": 30094,
+      "head_git_blob_sha1": "1c1cbb482568bd7f69583576c307a184772509cc",
+      "sha256": "690f0f16cc76fafc3f574a3c2a59c0b96f7bb9d3874d105ecafdc8ad0aeb6436"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/check_prefix_recovery.py",
+      "bytes": 12892,
+      "head_git_blob_sha1": "f229d97a08cb23c63b264a200d86507e10c240ba",
+      "sha256": "4259251e822abe246b35da480db7c5dc4abd51c20e36d4d50e39040c3b7ab706"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/exploration_full_attempt.json",
+      "bytes": 659,
+      "head_git_blob_sha1": "eb2808a518ab01dd722d4e9e3dc788bc0baead13",
+      "sha256": "22f37c6fe90bc2d69224586cf362be93b41af4dc3870f7a0c9f12dfb675e5f45"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/exploration_result.json",
+      "bytes": 9263,
+      "head_git_blob_sha1": "7fb758be9d4dd7cc10f33bf6c7cae409adecf69d",
+      "sha256": "9bacb53bd4b66601e171b4de4e0269fc893f7fee795228b24202634dc749b93c"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/explore_original_full_source.py",
+      "bytes": 6358,
+      "head_git_blob_sha1": "a48f0ba4e9ddd3c39f77232d9d913cee0919a3de",
+      "sha256": "35d6a1e1d322bb0c931851692d90daa25f38a2fdb313f73d969e7f27d7d93ebb"
+    },
+    {
+      "archive_path": "02_REGISTRY/research/sources/d0_full_prefix_covector_recovery_2026-10-28/result.json",
+      "bytes": 7797,
+      "head_git_blob_sha1": "d95c555afcf199c2a5f399c3ac3c67ff8b4d9980",
+      "sha256": "b36399312e6adc96b1b9e681ec22ee08cfad1be7582b08488927ac9c279a6100"
+    }
+  ],
+  "source_inputs": [
+    {
+      "archive_path": "inputs/check_history_source.py",
+      "bytes": 13505,
+      "commit": "1e6420f319d714be53363a77823f76ec620a6473",
+      "git_blob_sha1": "9d313ec496f12ac61e118511d9ce706f19e675ae",
+      "repository_path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/check_history_source.py",
+      "sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a"
+    }
+  ],
+  "source_patch": {
+    "bytes": 77986,
+    "path": "UPSTREAM.patch.gz",
+    "sha256": "f515f84263c484c9ac4dd3d5eb522a91ef7e105951e04aa4d01795a9a743c390",
+    "storage_bytes": 27743,
+    "storage_sha256": "d90117e0efc62aaa7bc40d974ade09920df790a6e8bdde3309afbb8ffd7965e8"
+  },
+  "source_range": {
+    "base_commit": "8daed32d560df18837bcc69458a8fa538a9cf135",
+    "commits": 7,
+    "head_commit": "523d2cbcc0a9771ea40faa4a2eac84cc78704b0e"
+  }
+}

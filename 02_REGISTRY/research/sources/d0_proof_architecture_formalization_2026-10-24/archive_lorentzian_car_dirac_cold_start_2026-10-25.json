@@ -1,0 +1,1093 @@
+{
+  "schema": "d0-proof-architecture-cold-start-target-v1",
+  "snapshot_commit": "84b32c7189bb3793032622dab1b990bb59307929",
+  "worktree_dirty": true,
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "e2fcba29050a9017aa6d1e7501f192e6209d2f6c04d8e9b791930c4e54c6cbf5",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "d9150abb89b76a7b0930e2f4f1787e0a2ecc9b5230cf5d9814072d5e609f1701",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "d841fe9ccbb5e578836740b46d436147f74d9eb9c92413bbc924b942be6ee511",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "runner_sha256": "904ca43814330d6ce8bd669774f0f4284ee165c461ec105b483e4d880a58fd56",
+  "full_replay": {
+    "search_cases_found_all_sources": 19,
+    "search_cases_total": 19,
+    "benchmark_cases_total": 20,
+    "change_impact_regression": {
+      "id": "exact-source-vs-unrelated-prose",
+      "status": "pass",
+      "source_hash_changed": true,
+      "unrelated_prose_left_source_hash": true,
+      "declared_application": "native-result-to-obligation"
+    },
+    "semantic_scope_review_is_manual": true
+  },
+  "target_case": {
+    "id": "native-weighted-dirac-matrix-application",
+    "found_all_required_sources": true,
+    "required_sources": {
+      "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md": {
+        "path": "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [
+          "1",
+          "2",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "missing_sections": [],
+        "scoped_queries": [],
+        "candidate_rank": 2,
+        "query": "actual full-cochain matrix B-singleton vacuum spatial Nyquist positive self-adjoint weighted Dirac Eq. 6",
+        "evidence_lines": [
+          {
+            "line": 301,
+            "heading": "## 4. Direct flat Lorentz binding on the owned carrier",
+            "matched_terms": [
+              "matrix",
+              "b-singleton",
+              "dirac"
+            ],
+            "text": "B-singleton subspace, the actual Dirac matrix is",
+            "kind": "direct_content"
+          },
+          {
+            "line": 25,
+            "heading": "## 1. What the existing declarations actually supply",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "`ArchiveWeightedHodgeDirac` documents the formula",
+            "kind": "direct_content"
+          },
+          {
+            "line": 299,
+            "heading": "## 4. Direct flat Lorentz binding on the owned carrier",
+            "matched_terms": [
+              "spatial",
+              "nyquist"
+            ],
+            "text": "In particular the spatial Nyquist mode \\(k=(0,L/2,0,0)\\) exists on",
+            "kind": "direct_content"
+          },
+          {
+            "line": 308,
+            "heading": "## 4. Direct flat Lorentz binding on the owned carrier",
+            "matched_terms": [
+              "matrix",
+              "self-adjoint"
+            ],
+            "text": "If a positive real inner product made this block self-adjoint, its matrix",
+            "kind": "direct_content"
+          },
+          {
+            "line": 1,
+            "heading": "# Actual weighted Hodge–Dirac: mixed spectral contrast and Lorentz boundary",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "# Actual weighted Hodge–Dirac: mixed spectral contrast and Lorentz boundary",
+            "kind": "direct_content"
+          },
+          {
+            "line": 415,
+            "heading": "## 7. Validation and remaining physical transition",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "`python3 02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary_check.py`.",
+            "kind": "direct_content"
+          },
+          {
+            "line": 248,
+            "heading": "### Finite mixed spectral moments: a quantitative contrast obstruction",
+            "matched_terms": [
+              "eq"
+            ],
+            "text": "refinement would require their own proof.",
+            "kind": "direct_content"
+          },
+          {
+            "line": 322,
+            "heading": "## 5. Complete constant-metric null-mode classification",
+            "matched_terms": [
+              "eq"
+            ],
+            "text": "The mixed CAR gives \\(DK+KD=I\\). Consequently",
+            "kind": "direct_content"
+          },
+          {
+            "line": 231,
+            "heading": "### Finite mixed spectral moments: a quantitative contrast obstruction",
+            "matched_terms": [
+              "weighted"
+            ],
+            "text": "Indeed the weighted paired error has magnitude",
+            "kind": "direct_content"
+          },
+          {
+            "line": 77,
+            "heading": "## 2. Constructive weighted operator, with explicit hypotheses",
+            "matched_terms": [
+              "self-adjoint"
+            ],
+            "text": "self-adjoint representative \\(W^{1/2}D_WW^{-1/2}\\).",
+            "kind": "direct_content"
+          }
+        ],
+        "citation_only_refs": [
+          {
+            "path": "02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "`02_REGISTRY/research/A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md` at commit",
+            "pin_status": "not_followed_bounded_search"
+          },
+          {
+            "path": "A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "`A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md` at commit",
+            "pin_status": "not_followed_bounded_search"
+          },
+          {
+            "path": "A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "* [Actual weighted Hodge–Dirac and flat Lorentz spectral boundary](A4D_NATIVE_WEIGHTED_DIRAC_BOUNDARY.md),",
+            "pin_status": "not_followed_bounded_search"
+          }
+        ]
+      },
+      "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean": {
+        "path": "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [],
+        "missing_sections": [],
+        "scoped_queries": [],
+        "candidate_rank": 16,
+        "query": "actual full-cochain matrix B-singleton vacuum spatial Nyquist positive self-adjoint weighted Dirac Eq. 6",
+        "evidence_lines": [
+          {
+            "line": 264,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac",
+              "eq"
+            ],
+            "text": "weightedDirac N (LinearEquiv.refl ℝ (ArchiveCochain N)) u = hodgeCarDirac N u := rfl",
+            "kind": "direct_content"
+          },
+          {
+            "line": 211,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "unfold weightedDirac",
+            "kind": "direct_content"
+          },
+          {
+            "line": 258,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "unfold weightedDirac",
+            "kind": "direct_content"
+          },
+          {
+            "line": 179,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "def weightedDirac (N : ℕ)",
+            "kind": "direct_content"
+          },
+          {
+            "line": 477,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "#print axioms weighted_dirac_square",
+            "kind": "direct_content"
+          },
+          {
+            "line": 206,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "theorem weighted_dirac_square (N : ℕ)",
+            "kind": "direct_content"
+          },
+          {
+            "line": 483,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "#print axioms weighted_dirac_symmetric",
+            "kind": "direct_content"
+          },
+          {
+            "line": 252,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "theorem weighted_dirac_symmetric (N : ℕ)",
+            "kind": "direct_content"
+          },
+          {
+            "line": 209,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "weightedDirac N W (weightedDirac N W u) =",
+            "kind": "direct_content"
+          },
+          {
+            "line": 456,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "#print archive_weighted_hodge_dirac_owner",
+            "kind": "direct_content"
+          }
+        ],
+        "citation_only_refs": [
+          {
+            "path": "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "`02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean`",
+            "pin_status": "not_followed_bounded_search"
+          },
+          {
+            "path": "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "        \"02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean\",",
+            "pin_status": "not_followed_bounded_search"
+          },
+          {
+            "path": "02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "      \"path\": \"02_REGISTRY/research/certificates/a4d_native_weighted_dirac_boundary.lean\",",
+            "pin_status": "not_followed_bounded_search"
+          }
+        ]
+      },
+      "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean": {
+        "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [],
+        "missing_sections": [],
+        "scoped_queries": [],
+        "candidate_rank": 1,
+        "query": "weightedDiracMatrix_mulVec typed weighted Hodge Dirac linear map ArchiveCochainBasis",
+        "evidence_lines": [
+          {
+            "line": 24,
+            "heading": "",
+            "matched_terms": [
+              "typed",
+              "weighted",
+              "hodge",
+              "dirac",
+              "linear",
+              "map"
+            ],
+            "text": "/-- The caller-weighted Hodge--Dirac operator as a typed linear map on the",
+            "kind": "direct_content"
+          },
+          {
+            "line": 40,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac",
+              "linear",
+              "map"
+            ],
+            "text": "LinearMap.toMatrix' (weightedDiracLinear N W)",
+            "kind": "direct_content"
+          },
+          {
+            "line": 59,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac",
+              "linear",
+              "map"
+            ],
+            "text": "LinearMap.toMatrix' (weightedDiracLinear N W) i j",
+            "kind": "direct_content"
+          },
+          {
+            "line": 106,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "hodge",
+              "dirac",
+              "linear"
+            ],
+            "text": "rw [weightedDiracLinear_identity_eq_hodgeCarDirac]",
+            "kind": "direct_content"
+          },
+          {
+            "line": 114,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "hodge",
+              "dirac",
+              "linear"
+            ],
+            "text": "#print axioms weightedDiracLinear_identity_eq_hodgeCarDirac",
+            "kind": "direct_content"
+          },
+          {
+            "line": 97,
+            "heading": "",
+            "matched_terms": [
+              "weighteddiracmatrix_mulvec",
+              "weighted",
+              "dirac",
+              "linear"
+            ],
+            "text": "rw [weightedDiracMatrix_mulVec, ← weightedDiracLinear_apply,",
+            "kind": "direct_content"
+          },
+          {
+            "line": 76,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "hodge",
+              "dirac",
+              "linear"
+            ],
+            "text": "theorem weightedDiracLinear_identity_eq_hodgeCarDirac (N : ℕ) :",
+            "kind": "direct_content"
+          },
+          {
+            "line": 98,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "hodge",
+              "dirac",
+              "linear"
+            ],
+            "text": "weightedDiracLinear_identity_eq_hodgeCarDirac, hodgeCarDiracₗ_apply]",
+            "kind": "direct_content"
+          },
+          {
+            "line": 58,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac",
+              "linear",
+              "map"
+            ],
+            "text": "change (LinearMap.toMatrix' (weightedDiracLinear N W)).transpose i j =",
+            "kind": "direct_content"
+          },
+          {
+            "line": 69,
+            "heading": "",
+            "matched_terms": [
+              "typed",
+              "hodge",
+              "linear",
+              "map"
+            ],
+            "text": "repository's existing real Hodge/CAR operator as a typed linear map. -/",
+            "kind": "direct_content"
+          }
+        ],
+        "citation_only_refs": [
+          {
+            "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "      \"source_path\": \"03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean\"",
+            "pin_status": "not_followed_bounded_search"
+          },
+          {
+            "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "      \"source_path\": \"03_FORMALIZATION/D0/Research/NativeWeightedDiracLinearOperator.lean\"",
+            "pin_status": "not_followed_bounded_search"
+          }
+        ]
+      },
+      "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean": {
+        "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [],
+        "missing_sections": [],
+        "scoped_queries": [],
+        "candidate_rank": 2,
+        "query": "weightedDiracMatrix_mulVec typed weighted Hodge Dirac linear map ArchiveCochainBasis",
+        "evidence_lines": [
+          {
+            "line": 461,
+            "heading": "",
+            "matched_terms": [
+              "weighteddiracmatrix_mulvec",
+              "weighted",
+              "dirac",
+              "linear"
+            ],
+            "text": "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec",
+            "kind": "direct_content"
+          },
+          {
+            "line": 468,
+            "heading": "",
+            "matched_terms": [
+              "weighteddiracmatrix_mulvec",
+              "weighted",
+              "dirac",
+              "linear"
+            ],
+            "text": "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec",
+            "kind": "direct_content"
+          },
+          {
+            "line": 910,
+            "heading": "",
+            "matched_terms": [
+              "weighteddiracmatrix_mulvec",
+              "weighted",
+              "dirac",
+              "linear"
+            ],
+            "text": "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec",
+            "kind": "direct_content"
+          },
+          {
+            "line": 920,
+            "heading": "",
+            "matched_terms": [
+              "weighteddiracmatrix_mulvec",
+              "weighted",
+              "dirac",
+              "linear"
+            ],
+            "text": "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix_mulVec",
+            "kind": "direct_content"
+          },
+          {
+            "line": 2,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac",
+              "linear"
+            ],
+            "text": "import D0.Research.NativeWeightedDiracLinearOperator",
+            "kind": "direct_content"
+          },
+          {
+            "line": 449,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac",
+              "linear"
+            ],
+            "text": "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix 2",
+            "kind": "direct_content"
+          },
+          {
+            "line": 891,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac",
+              "linear"
+            ],
+            "text": "D0.Research.NativeWeightedDiracLinearOperator.weightedDiracMatrix N",
+            "kind": "direct_content"
+          },
+          {
+            "line": 369,
+            "heading": "",
+            "matched_terms": [
+              "hodge",
+              "dirac"
+            ],
+            "text": "unfold hodgeCarDirac",
+            "kind": "direct_content"
+          },
+          {
+            "line": 777,
+            "heading": "",
+            "matched_terms": [
+              "hodge",
+              "dirac"
+            ],
+            "text": "unfold hodgeCarDirac",
+            "kind": "direct_content"
+          },
+          {
+            "line": 437,
+            "heading": "",
+            "matched_terms": [
+              "weighted",
+              "dirac"
+            ],
+            "text": "· unfold weightedDirac",
+            "kind": "direct_content"
+          }
+        ],
+        "citation_only_refs": [
+          {
+            "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "`03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean`",
+            "pin_status": "not_followed_bounded_search"
+          },
+          {
+            "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "      \"source_path\": \"03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean\"",
+            "pin_status": "not_followed_bounded_search"
+          },
+          {
+            "path": "03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean",
+            "hashes": [],
+            "commit": null,
+            "blob": null,
+            "section_refs": [],
+            "pin_complete": false,
+            "context": "      \"source_path\": \"03_FORMALIZATION/D0/Research/NativeWeightedDiracNyquistApplication.lean\"",
+            "pin_status": "not_followed_bounded_search"
+          }
+        ]
+      },
+      "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean": {
+        "path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianFourierApplication.lean",
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [],
+        "missing_sections": [],
+        "scoped_queries": [],
+        "candidate_rank": 1,
+        "query": "roleWeightedArchiveDifferenceLaplacian_fourier all-size role weighted difference eigenvalue",
+        "evidence_lines": [
+          {
+            "line": 34,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference",
+              "eigenvalue"
+            ],
+            "text": "/-- Fourier eigenvalue of the role-weighted archive difference Laplacian. -/",
+            "kind": "direct_content"
+          },
+          {
+            "line": 73,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "roleWeightedArchiveDifferenceLaplacian N w",
+            "kind": "direct_content"
+          },
+          {
+            "line": 78,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "unfold roleWeightedArchiveDifferenceLaplacian",
+            "kind": "direct_content"
+          },
+          {
+            "line": 157,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "unfold roleWeightedArchiveDifferenceLaplacian",
+            "kind": "direct_content"
+          },
+          {
+            "line": 142,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "fun p => roleWeightedArchiveDifferenceLaplacian N w",
+            "kind": "direct_content"
+          },
+          {
+            "line": 231,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "rw [roleWeightedArchiveDifferenceLaplacian_const_mul]",
+            "kind": "direct_content"
+          },
+          {
+            "line": 222,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "roleWeightedArchiveDifferenceOperator N roleLorentzSign",
+            "kind": "direct_content"
+          },
+          {
+            "line": 151,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "theorem roleWeightedArchiveDifferenceLaplacian_const_mul",
+            "kind": "direct_content"
+          },
+          {
+            "line": 209,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "roleWeightedArchiveDifferenceLaplacian N roleLorentzSign",
+            "kind": "direct_content"
+          },
+          {
+            "line": 154,
+            "heading": "# Fourier application of the signed archive difference square",
+            "matched_terms": [
+              "role",
+              "weighted",
+              "difference"
+            ],
+            "text": "roleWeightedArchiveDifferenceLaplacian N w (fun x => c * f x) =",
+            "kind": "direct_content"
+          }
+        ],
+        "citation_only_refs": []
+      },
+      "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean": {
+        "path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean",
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [],
+        "missing_sections": [],
+        "scoped_queries": [],
+        "candidate_rank": 15,
+        "query": "weightedDiracLinear_identity_eq_hodgeCarDirac hodgeCarDiracMatrix_mulVec existing real Hodge CAR operator",
+        "evidence_lines": [
+          {
+            "line": 39,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "existing",
+              "car"
+            ],
+            "text": "/-- The existing role-sign assignment instantiated in the first-order CAR",
+            "kind": "direct_content"
+          },
+          {
+            "line": 16,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "existing",
+              "hodge"
+            ],
+            "text": "backward annihilation term. The existing Hodge--Dirac instead uses the same",
+            "kind": "direct_content"
+          },
+          {
+            "line": 18,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "existing",
+              "car"
+            ],
+            "text": "their square on the existing complex site × Fock carrier. It does not select",
+            "kind": "direct_content"
+          },
+          {
+            "line": 362,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "car"
+            ],
+            "text": "archiveLorentzianCARDirac N",
+            "kind": "direct_content"
+          },
+          {
+            "line": 340,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "car"
+            ],
+            "text": "roleWeightedArchiveCARDirac N w",
+            "kind": "direct_content"
+          },
+          {
+            "line": 343,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "car"
+            ],
+            "text": "unfold roleWeightedArchiveCARDirac",
+            "kind": "direct_content"
+          },
+          {
+            "line": 341,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "car"
+            ],
+            "text": "(roleWeightedArchiveCARDirac N w ψ) =",
+            "kind": "direct_content"
+          },
+          {
+            "line": 366,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "car"
+            ],
+            "text": "rw [archiveLorentzianCARDirac_square N",
+            "kind": "direct_content"
+          },
+          {
+            "line": 54,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "car"
+            ],
+            "text": "(∑ ket, (carAnnihilate r p.2 ket : ℂ) *",
+            "kind": "direct_content"
+          },
+          {
+            "line": 57,
+            "heading": "# Lorentz-signed CAR operator on the archive carrier",
+            "matched_terms": [
+              "car"
+            ],
+            "text": "∑ ket, c * ((carAnnihilate r p.2 ket : ℂ) *",
+            "kind": "direct_content"
+          }
+        ],
+        "citation_only_refs": []
+      },
+      "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json": {
+        "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_fourier_module_declarations_2026-10-25.json",
+        "status": "found_direct_content",
+        "found": true,
+        "source_origin": "workspace",
+        "expected_commit": null,
+        "expected_blob": null,
+        "required_sections": [],
+        "sections_found": [],
+        "missing_sections": [],
+        "scoped_queries": [],
+        "candidate_rank": 2,
+        "query": "archiveLorentzianDifferenceLaplacian_fourier roleWeightedArchiveFourierSymbol_lorentzian",
+        "evidence_lines": [
+          {
+            "line": 501,
+            "heading": "",
+            "matched_terms": [
+              "roleweightedarchivefouriersymbol_lorentzian"
+            ],
+            "text": "\"D0.Geometry.roleWeightedArchiveFourierSymbol_lorentzian\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 613,
+            "heading": "",
+            "matched_terms": [
+              "archivelorentziandifferencelaplacian_fourier"
+            ],
+            "text": "\"D0.Geometry.archiveLorentzianDifferenceLaplacian_fourier\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 1778,
+            "heading": "",
+            "matched_terms": [
+              "roleweightedarchivefouriersymbol_lorentzian"
+            ],
+            "text": "\"name\": \"D0.Geometry.roleWeightedArchiveFourierSymbol_lorentzian\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 487,
+            "heading": "",
+            "matched_terms": [
+              "archivelorentziandifferencelaplacian_fourier"
+            ],
+            "text": "\"name\": \"D0.Geometry.archiveLorentzianDifferenceLaplacian_fourier\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 571,
+            "heading": "",
+            "matched_terms": [
+              "archivefourierfockmode",
+              "archivelorentzianfouriersymbol"
+            ],
+            "text": "\"conclusion_whnf\": \"D0.Geometry.roleWeightedArchiveDifferenceOperator N D0.Geometry.roleLorentzSign\\n    (D0.Geometry.archiveFourierFockMode N k v) =\\n  fun p => ↑(D0.Geometry.archiveLorentzianFourierSymbol N k) * D0.Geometry.archiveFourierFockMode N k v p\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 595,
+            "heading": "",
+            "matched_terms": [
+              "archivefourierfockmode",
+              "archivelorentzianfouriersymbol"
+            ],
+            "text": "\"elaborated_type\": \"∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (v : D0.Geometry.ArchiveFockState → ℂ),\\n  D0.Geometry.roleWeightedArchiveDifferenceOperator N D0.Geometry.roleLorentzSign\\n      (D0.Geometry.archiveFourierFockMode N k v) =\\n    fun p => ↑(D0.Geometry.archiveLorentzianFourierSymbol N k) * D0.Geometry.archiveFourierFockMode N k v p\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 270,
+            "heading": "",
+            "matched_terms": [
+              "archivefourierfockmode"
+            ],
+            "text": "\"D0.Geometry.archiveFourierFockMode\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 286,
+            "heading": "",
+            "matched_terms": [
+              "archivefourierfockmode"
+            ],
+            "text": "\"D0.Geometry.archiveFourierFockMode\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 371,
+            "heading": "",
+            "matched_terms": [
+              "archivefourierfockmode"
+            ],
+            "text": "\"D0.Geometry.archiveFourierFockMode\",",
+            "kind": "direct_content"
+          },
+          {
+            "line": 424,
+            "heading": "",
+            "matched_terms": [
+              "archivefourierfockmode"
+            ],
+            "text": "\"D0.Geometry.archiveFourierFockMode\",",
+            "kind": "direct_content"
+          }
+        ],
+        "citation_only_refs": []
+      }
+    },
+    "query_result": {
+      "query": "archiveLorentzianCARDirac_square_fourier_mode roleWeightedArchiveCARDirac_square roleWeightedArchiveCodifferential_cross",
+      "top_candidates": [
+        {
+          "path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean",
+          "direct_content": true,
+          "matched_terms": 3,
+          "matched_term_names": [
+            "archivelorentziancardirac_square_fourier_mode",
+            "roleweightedarchivecardirac_square",
+            "roleweightedarchivecodifferential_cross"
+          ],
+          "source_sha256": "749be35f4074ec7408408fb62d68cc9b3724ecfd0920eee146f7866275229e33",
+          "source_origin": "workspace",
+          "source_commit": null,
+          "source_blob": null,
+          "evidence_lines": [
+            {
+              "line": 347,
+              "heading": "# Lorentz-signed CAR operator on the archive carrier",
+              "matched_terms": [
+                "roleweightedarchivecodifferential_cross"
+              ],
+              "text": "roleWeightedArchiveCodifferential_cross N w ψ",
+              "kind": "direct_content"
+            },
+            {
+              "line": 354,
+              "heading": "# Lorentz-signed CAR operator on the archive carrier",
+              "matched_terms": [
+                "roleweightedarchivecardirac_square"
+              ],
+              "text": "exact roleWeightedArchiveCARDirac_square N roleLorentzSign ψ",
+              "kind": "direct_content"
+            },
+            {
+              "line": 360,
+              "heading": "# Lorentz-signed CAR operator on the archive carrier",
+              "matched_terms": [
+                "archivelorentziancardirac_square_fourier_mode"
+              ],
+              "text": "theorem archiveLorentzianCARDirac_square_fourier_mode (N : ℕ)",
+              "kind": "direct_content"
+            }
+          ]
+        },
+        {
+          "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/archive_lorentzian_car_dirac_module_declarations_2026-10-25.json",
+          "direct_content": true,
+          "matched_terms": 3,
+          "matched_term_names": [
+            "archivelorentziancardirac_square_fourier_mode",
+            "roleweightedarchivecardirac_square",
+            "roleweightedarchivecodifferential_cross"
+          ],
+          "source_sha256": "16be766dd280b46115472a3a3a11866c4ee684b71df16a63789e49233fc2dea0",
+          "source_origin": "workspace",
+          "source_commit": null,
+          "source_blob": null,
+          "evidence_lines": [
+            {
+              "line": 132,
+              "heading": "",
+              "matched_terms": [
+                "roleweightedarchivecardirac_square"
+              ],
+              "text": "\"D0.Geometry.roleWeightedArchiveCARDirac_square\",",
+              "kind": "direct_content"
+            },
+            {
+              "line": 406,
+              "heading": "",
+              "matched_terms": [
+                "roleweightedarchivecodifferential_cross"
+              ],
+              "text": "\"D0.Geometry.roleWeightedArchiveCodifferential_cross\",",
+              "kind": "direct_content"
+            },
+            {
+              "line": 388,
+              "heading": "",
+              "matched_terms": [
+                "roleweightedarchivecardirac_square"
+              ],
+              "text": "\"name\": \"D0.Geometry.roleWeightedArchiveCARDirac_square\",",
+              "kind": "direct_content"
+            }
+          ]
+        }
+      ]
+    },
+    "scope_review": "The generic theorem identifies matrix multiplication in the existing ArchiveCochainBasis with the supplied-weight function operator. The original source pin db3091aded8f6cfe8d39dcd973ccf30ec40dfb08 contains the isolated 2x2 obstruction; the full-carrier transfer is a separate branch formalization delta at c3ceba511bab5c435d715fd56382615fc1dc1505. The exact L=4 application proves the vacuum and B-singleton action equations and applies that conditional transfer. The supplied positive form and self-adjointness premise are not physically derived. The all-even extension requires an even archive period N+2 and proves the same full-carrier block and conditional obstruction there; it is separate from the Eq. (5) Fourier application. The signed scalar second-order operator now has an all-size character eigenbasis, a complete scalar site Fourier inversion, and an injective sixteen-label Fock coefficient embedding per momentum. A companion module defines the explicitly role-signed first-order CAR operator and proves its square equals that operator on the full carrier; composition gives the Eq. (5) all-size squared-mode law for every Fock profile. Direct first-order character-profile action, physical action/source selection, and GR closure remain open."
+  }
+}

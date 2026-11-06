@@ -1,0 +1,1577 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "84b32c7189bb3793032622dab1b990bb59307929",
+  "worktree_dirty": true,
+  "lean_source_digest": "f0c6d4d35672206e02a2eea043cf9dd15770c0aa09b9793461b07890b537482e",
+  "collector_sha256": "4dfa08c1502dc0ee81bc9eb590811a536e5367dbfb39c9e552e6ec48051e388d",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "inventory_mode": "owning_module_enumeration",
+  "requested_modules": [
+    "D0.Geometry.ArchiveLorentzianCARDiracApplication"
+  ],
+  "module_prefix": null,
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochainBasis N → ℂ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 49,
+            "line": 43
+          },
+          "start": {
+            "column": 0,
+            "line": 39
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 41
+          },
+          "start": {
+            "column": 4,
+            "line": 41
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → D0.Geometry.ArchiveCochainC N → D0.Geometry.ArchiveCochainC N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.archiveLorentzianCARDirac",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "Nat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochainC",
+        "Nat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.archiveLorentzianCARDirac N (D0.Geometry.archiveLorentzianCARDirac N ψ) =\n  D0.Geometry.roleWeightedArchiveDifferenceOperator N D0.Geometry.roleLorentzSign ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 62,
+            "line": 354
+          },
+          "start": {
+            "column": 0,
+            "line": 349
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 351
+          },
+          "start": {
+            "column": 8,
+            "line": 351
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (ψ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.archiveLorentzianCARDirac N (D0.Geometry.archiveLorentzianCARDirac N ψ) =\n    D0.Geometry.roleWeightedArchiveDifferenceOperator N D0.Geometry.roleLorentzSign ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.archiveLorentzianCARDirac_square",
+      "proof_dependencies": [
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveCARDirac_square",
+        "Nat"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.archiveLorentzianCARDirac",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+        "Eq",
+        "Nat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "k",
+          "type": "D0.Role → ZMod (D0.archiveFibers N)"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "D0.Geometry.ArchiveFockState → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.archiveLorentzianCARDirac N\n    (D0.Geometry.archiveLorentzianCARDirac N (D0.Geometry.archiveFourierFockMode N k v)) =\n  fun p => ↑(D0.Geometry.archiveLorentzianFourierSymbol N k) * D0.Geometry.archiveFourierFockMode N k v p",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 62,
+            "line": 368
+          },
+          "start": {
+            "column": 0,
+            "line": 356
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 53,
+            "line": 360
+          },
+          "start": {
+            "column": 8,
+            "line": 360
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (k : D0.Role → ZMod (D0.archiveFibers N)) (v : D0.Geometry.ArchiveFockState → ℂ),\n  D0.Geometry.archiveLorentzianCARDirac N\n      (D0.Geometry.archiveLorentzianCARDirac N (D0.Geometry.archiveFourierFockMode N k v)) =\n    fun p => ↑(D0.Geometry.archiveLorentzianFourierSymbol N k) * D0.Geometry.archiveFourierFockMode N k v p",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.archiveLorentzianCARDirac_square_fourier_mode",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.ofReal",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.archiveLorentzianCARDirac",
+        "D0.Geometry.archiveLorentzianCARDirac_square",
+        "D0.Geometry.archiveLorentzianDifferenceOperator_fourier_mode",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Geometry.roleLorentzSign",
+        "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Eq.mpr",
+        "HMul.hMul",
+        "Nat",
+        "ZMod",
+        "congrArg",
+        "id",
+        "instHMul"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.ofReal",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.archiveFourierFockMode",
+        "D0.Geometry.archiveLorentzianCARDirac",
+        "D0.Geometry.archiveLorentzianFourierSymbol",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "HMul.hMul",
+        "Nat",
+        "ZMod",
+        "instHMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochainBasis N → ℂ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 69,
+            "line": 37
+          },
+          "start": {
+            "column": 0,
+            "line": 34
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 35
+          },
+          "start": {
+            "column": 4,
+            "line": 35
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ℝ) → D0.Geometry.ArchiveCochainC N → D0.Geometry.ArchiveCochainC N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCARDirac",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instAdd",
+        "Complex.instOne",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Role",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instAdd",
+        "Real",
+        "instHAdd"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Role",
+        "Nat",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_create_anticommutator_int._native.native_decide.ax_1_1",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveCARDirac N w (D0.Geometry.roleWeightedArchiveCARDirac N w ψ) =\n  D0.Geometry.roleWeightedArchiveDifferenceOperator N w ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 49,
+            "line": 347
+          },
+          "start": {
+            "column": 0,
+            "line": 338
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 42,
+            "line": 338
+          },
+          "start": {
+            "column": 8,
+            "line": 338
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (ψ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.roleWeightedArchiveCARDirac N w (D0.Geometry.roleWeightedArchiveCARDirac N w ψ) =\n    D0.Geometry.roleWeightedArchiveDifferenceOperator N w ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCARDirac_square",
+      "proof_dependencies": [
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "Complex",
+        "Complex.addGroupWithOne",
+        "Complex.instAdd",
+        "Complex.instOne",
+        "Complex.instZero",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.dTwisted_add",
+        "D0.Geometry.dTwisted_sq",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Geometry.roleWeightedArchiveCodifferential_add",
+        "D0.Geometry.roleWeightedArchiveCodifferential_cross",
+        "D0.Geometry.roleWeightedArchiveCodifferential_square",
+        "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+        "D0.Role",
+        "Eq",
+        "Eq.mpr",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.addZeroClass",
+        "Pi.instAdd",
+        "Pi.instZero",
+        "Real",
+        "Zero.toOfNat0",
+        "add_zero",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "id",
+        "instHAdd",
+        "zero_add"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCARDirac",
+        "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+        "D0.Role",
+        "Eq",
+        "Nat",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.ArchiveCochainBasis N → ℂ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 49,
+            "line": 32
+          },
+          "start": {
+            "column": 0,
+            "line": 27
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 37,
+            "line": 29
+          },
+          "start": {
+            "column": 4,
+            "line": 29
+          }
+        }
+      },
+      "elaborated_type": "(N : ℕ) → (D0.Role → ℝ) → D0.Geometry.ArchiveCochainC N → D0.Geometry.ArchiveCochainC N",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCodifferential",
+      "proof_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.twistedAnnihilateDirection",
+        "D0.Role",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "Function.hasSMul",
+        "HSMul.hSMul",
+        "Nat",
+        "Neg.neg",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.addCommMonoid",
+        "Real",
+        "instFintypeProd",
+        "instHSMul",
+        "instOfNatNat",
+        "instSMulOfMul"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Role",
+        "Nat",
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "φ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveCodifferential N w (ψ + φ) =\n  D0.Geometry.roleWeightedArchiveCodifferential N w ψ + D0.Geometry.roleWeightedArchiveCodifferential N w φ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 22,
+            "line": 79
+          },
+          "start": {
+            "column": 0,
+            "line": 68
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 45,
+            "line": 68
+          },
+          "start": {
+            "column": 8,
+            "line": 68
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (ψ φ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.roleWeightedArchiveCodifferential N w (ψ + φ) =\n    D0.Geometry.roleWeightedArchiveCodifferential N w ψ + D0.Geometry.roleWeightedArchiveCodifferential N w φ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCodifferential_add",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "Complex",
+        "Complex.addGroupWithOne",
+        "Complex.instAdd",
+        "Complex.instMul",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Geometry.twistedAnnihilateDirection",
+        "D0.Geometry.twistedAnnihilateDirection_add",
+        "D0.Role",
+        "DistribSMul.toSMulZeroClass",
+        "Eq",
+        "Eq.mpr",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum",
+        "Finset.sum_add_distrib",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HSMul.hSMul",
+        "Membership.mem",
+        "Nat",
+        "Neg.neg",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.addCommMonoid",
+        "Pi.addZeroClass",
+        "Pi.distribSMul",
+        "Pi.instAdd",
+        "Real",
+        "SMulZeroClass.toSMul",
+        "SetLike.instMembership",
+        "True",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "id",
+        "instDistribSMul",
+        "instFintypeProd",
+        "instHAdd",
+        "instHSMul",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "of_eq_true",
+        "rfl",
+        "smul_add"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instAdd",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Role",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "Pi.instAdd",
+        "Real",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_mixed_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.dTwisted N (fun x => 1) (D0.Geometry.roleWeightedArchiveCodifferential N w ψ) +\n    D0.Geometry.roleWeightedArchiveCodifferential N w (D0.Geometry.dTwisted N (fun x => 1) ψ) =\n  D0.Geometry.roleWeightedArchiveDifferenceOperator N w ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 336
+          },
+          "start": {
+            "column": 0,
+            "line": 175
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 47,
+            "line": 175
+          },
+          "start": {
+            "column": 8,
+            "line": 175
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (ψ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.dTwisted N (fun x => 1) (D0.Geometry.roleWeightedArchiveCodifferential N w ψ) +\n      D0.Geometry.roleWeightedArchiveCodifferential N w (D0.Geometry.dTwisted N (fun x => 1) ψ) =\n    D0.Geometry.roleWeightedArchiveDifferenceOperator N w ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCodifferential_cross",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZero.toZero",
+        "AddZeroClass.toAddZero",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.addCommGroup",
+        "Complex.addGroupWithOne",
+        "Complex.commRing",
+        "Complex.instAdd",
+        "Complex.instCharZero",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.instSemiring",
+        "Complex.instZero",
+        "Complex.ofReal",
+        "Complex.ofReal_eq_zero._simp_1",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.annihilateActionC",
+        "D0.Geometry.createActionC",
+        "D0.Geometry.create_annihilate_deltaC",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Geometry.roleWeightedArchiveDifferenceLaplacian",
+        "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+        "D0.Geometry.twistedAnnihilateDirection",
+        "D0.Geometry.twistedAnnihilateDirection_sum",
+        "D0.Geometry.twistedAnnihilate_of_create",
+        "D0.Geometry.twistedBackwardDifference",
+        "D0.Geometry.twistedBackwardSite",
+        "D0.Geometry.twistedCreateDirection",
+        "D0.Geometry.twistedCreateDirection_smul",
+        "D0.Geometry.twistedCreateDirection_sum",
+        "D0.Geometry.twistedCreate_of_annihilate",
+        "D0.Geometry.twistedForwardDifference",
+        "D0.Geometry.twistedForwardSite",
+        "D0.Geometry.twistedForwardSite_backwardSite_comm",
+        "D0.Role",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "False",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mem_univ._simp_1",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_add_distrib",
+        "Finset.sum_apply",
+        "Finset.sum_comm",
+        "Finset.sum_congr",
+        "Finset.sum_eq_single",
+        "Finset.univ",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "HasDistribNeg.toInvolutiveNeg",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvolutiveNeg.toNeg",
+        "IsEmpty.forall_iff._simp_1",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Ne",
+        "Ne.symm",
+        "NeZero.charZero_one",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NegZeroClass.toZero",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toHasDistribNeg",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormMulClass.toNoZeroDivisors",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedCommRing.toNormedRing",
+        "NormedDivisionRing.toNormMulClass",
+        "NormedField.toNormedCommRing",
+        "NormedField.toNormedDivisionRing",
+        "Not",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Or",
+        "Pi.addCommMonoid",
+        "Pi.instAdd",
+        "Pi.instZero",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.instZero",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Trans.trans",
+        "True",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "dite",
+        "eq_false",
+        "eq_self",
+        "funext",
+        "id",
+        "implies_congr",
+        "inferInstance",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instIsEmptyFalse",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "instTransEq",
+        "ite",
+        "ite_cond_eq_false",
+        "ite_cond_eq_true",
+        "mul_eq_zero._simp_1",
+        "neg_eq_zero._simp_1",
+        "neg_mul",
+        "not_true_eq_false",
+        "of_eq_true",
+        "one_ne_zero",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instAdd",
+        "Complex.instOne",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.dTwisted",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Geometry.roleWeightedArchiveDifferenceOperator",
+        "D0.Role",
+        "Eq",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.instAdd",
+        "Real",
+        "instHAdd"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveCodifferential N w (c • ψ) = c • D0.Geometry.roleWeightedArchiveCodifferential N w ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 29,
+            "line": 101
+          },
+          "start": {
+            "column": 0,
+            "line": 81
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 46,
+            "line": 81
+          },
+          "start": {
+            "column": 8,
+            "line": 81
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (c : ℂ) (ψ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.roleWeightedArchiveCodifferential N w (c • ψ) = c • D0.Geometry.roleWeightedArchiveCodifferential N w ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCodifferential_smul",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.addGroupWithOne",
+        "Complex.commRing",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.instRing",
+        "Complex.instSemiring",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Geometry.twistedAnnihilateDirection",
+        "D0.Geometry.twistedAnnihilateDirection_smul",
+        "D0.Role",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_apply",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.RingNF.int_rawCast_neg",
+        "Mathlib.Tactic.RingNF.mul_assoc_rev",
+        "Mathlib.Tactic.RingNF.mul_neg",
+        "Mathlib.Tactic.RingNF.nat_rawCast_1",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.addCommMonoid",
+        "Real",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Trans.trans",
+        "True",
+        "Zero.toOfNat0",
+        "add_zero",
+        "congr",
+        "congrArg",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "instTransEq",
+        "mul_one",
+        "of_eq_true",
+        "pow_one",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Role",
+        "Eq",
+        "Function.hasSMul",
+        "HSMul.hSMul",
+        "Nat",
+        "Real",
+        "instHSMul",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "D0.Geometry.car_annihilate_anticommutator_int._native.native_decide.ax_1_1",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "w",
+          "type": "D0.Role → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.roleWeightedArchiveCodifferential N w (D0.Geometry.roleWeightedArchiveCodifferential N w ψ) = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 46,
+            "line": 173
+          },
+          "start": {
+            "column": 0,
+            "line": 103
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 48,
+            "line": 103
+          },
+          "start": {
+            "column": 8,
+            "line": 103
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (w : D0.Role → ℝ) (ψ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.roleWeightedArchiveCodifferential N w (D0.Geometry.roleWeightedArchiveCodifferential N w ψ) = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.roleWeightedArchiveCodifferential_square",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddMonoidWithOne.toAddMonoid",
+        "AddMonoidWithOne.toOne",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.addGroupWithOne",
+        "Complex.commRing",
+        "Complex.instAdd",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNeg",
+        "Complex.instNormedField",
+        "Complex.instOne",
+        "Complex.instSemiring",
+        "Complex.instZero",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.pairwise_complex_sum_zero",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Geometry.twistedAnnihilateDirection",
+        "D0.Geometry.twistedAnnihilateDirection_smul",
+        "D0.Geometry.twistedAnnihilateDirection_sum",
+        "D0.Geometry.twistedAnnihilate_anticommute",
+        "D0.Role",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_apply",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Int",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Mathlib.Tactic.RingNF.mul_assoc_rev",
+        "Mathlib.Tactic.RingNF.nat_rawCast_1",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.addCommMonoid",
+        "Pi.instAdd",
+        "Pi.instZero",
+        "Real",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Trans.trans",
+        "True",
+        "Zero.toOfNat0",
+        "add_zero",
+        "congr",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "eq_self",
+        "funext",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instMulZeroOneClassOfSemiring",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "instTransEq",
+        "mul_one",
+        "of_eq_true",
+        "pow_one",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instZero",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.roleWeightedArchiveCodifferential",
+        "D0.Role",
+        "Eq",
+        "Nat",
+        "OfNat.ofNat",
+        "Pi.instZero",
+        "Real",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "H",
+          "type": "D0.Role → ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "r",
+          "type": "D0.Dyad × D0.Dyad"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "c",
+          "type": "ℂ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "ψ",
+          "type": "D0.Geometry.ArchiveCochainBasis N → ℂ"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.twistedAnnihilateDirection N H r (c • ψ) = c • D0.Geometry.twistedAnnihilateDirection N H r ψ",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 31,
+            "line": 66
+          },
+          "start": {
+            "column": 0,
+            "line": 45
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 39,
+            "line": 45
+          },
+          "start": {
+            "column": 8,
+            "line": 45
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ) (H : D0.Role → ℂ) (r : D0.Role) (c : ℂ) (ψ : D0.Geometry.ArchiveCochainC N),\n  D0.Geometry.twistedAnnihilateDirection N H r (c • ψ) = c • D0.Geometry.twistedAnnihilateDirection N H r ψ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveLorentzianCARDiracApplication",
+      "name": "D0.Geometry.twistedAnnihilateDirection_smul",
+      "proof_dependencies": [
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "Bool",
+        "Bool.fintype",
+        "CommSemiring.toSemiring",
+        "Complex",
+        "Complex.instCommSemiring",
+        "Complex.instMul",
+        "Complex.instNormedField",
+        "Complex.ofReal",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.annihilateActionC",
+        "D0.Geometry.carAnnihilate",
+        "D0.Geometry.twistedAnnihilateDirection",
+        "D0.Geometry.twistedBackwardDifference",
+        "D0.Geometry.twistedBackwardDifference_const_mul",
+        "D0.Geometry.twistedBackwardSite",
+        "D0.Role",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.mul_sum",
+        "Finset.sum",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "Function.hasSMul",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSMul.hSMul",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Membership.mem",
+        "Monoid.toPow",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toNonUnitalNonAssocSemiring",
+        "NonUnitalNonAssocSemiring.toAddCommMonoid",
+        "NonUnitalNonAssocSemiring.toDistrib",
+        "NonUnitalNormedCommRing.toNonUnitalCommRing",
+        "NormedCommRing.toNonUnitalNormedCommRing",
+        "NormedField.toNormedCommRing",
+        "OfNat.ofNat",
+        "Pi.instFintype",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SetLike.instMembership",
+        "Trans.trans",
+        "Zero.toOfNat0",
+        "congr",
+        "congrArg",
+        "congrFun",
+        "congrFun'",
+        "funext",
+        "id",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instDistribOfSemiring",
+        "instFintypeProd",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSMul",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "instSMulOfMul",
+        "instTransEq",
+        "rfl"
+      ],
+      "proof_details_status": "collected",
+      "type_dependencies": [
+        "Complex",
+        "Complex.instMul",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveCochainC",
+        "D0.Geometry.twistedAnnihilateDirection",
+        "D0.Role",
+        "Eq",
+        "Function.hasSMul",
+        "HSMul.hSMul",
+        "Nat",
+        "instHSMul",
+        "instSMulOfMul"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveLorentzianCARDiracApplication.lean"
+    }
+  ]
+}

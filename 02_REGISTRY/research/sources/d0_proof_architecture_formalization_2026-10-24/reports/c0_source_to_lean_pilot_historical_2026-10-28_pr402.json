@@ -1,0 +1,103 @@
+{
+  "schema": "d0-c0-reconciliation-pilot-view/1",
+  "snapshot": "61bd3f2afecc6eba38e9c4cb00737b18fbd85a42",
+  "scope": {
+    "pilot_only": true,
+    "all_other_c0_candidates": "not_enumerated_unresolved",
+    "c0_freeze_assessment": "not_evaluated",
+    "c0_acceptance_assessment": "not_evaluated",
+    "this_view_does_not_freeze_or_accept": true,
+    "coverage_reported": false,
+    "scientific_status_changed": false
+  },
+  "authority": {
+    "primary": {
+      "path": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "blob": "d7d9aa2479e2d97c1ebf047bab39a932a14527ef"
+    },
+    "formal_support": {
+      "path": "02_REGISTRY/formal_support.csv",
+      "blob": "008d194498b8411c544dcfc13ab0a5553be5434e"
+    },
+    "consumer_graph": {
+      "path": "02_REGISTRY/gr_assembly/sources/native_gravity_dependencies.json",
+      "blob": "fdb180cb19c8beb3c9ba96a9b439a1e483d0f68a"
+    }
+  },
+  "pilot": {
+    "state": "reported_metadata_links_consistent_not_c0_acceptance",
+    "independent_review": "not_authenticated",
+    "semantic_correspondence": "not_automatically_checked",
+    "consumer_binding_semantics": "unresolved",
+    "provenance": "reported_metadata_links_not_recomputed_or_replayed",
+    "source": {
+      "commit": "75527846bf3603a1c51acf445f8354e3254341be",
+      "path": "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md",
+      "blob": "c216f19daebc9a6b2a9e732d277350dd2d69f88c",
+      "snapshot_blob": "c216f19daebc9a6b2a9e732d277350dd2d69f88c",
+      "section": "5. One-step estimates and composed fixed-torus failure",
+      "owner": "#310"
+    },
+    "source_unit_key": "source:75527846bf3603a1c51acf445f8354e3254341be:02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#5. One-step estimates and composed fixed-torus failure/fixed-sine-weak-test",
+    "unit_scope": "Normalized four-role counting pairing of the doubled adjacent-map unit one-form error with the fixed sampled sine tends to 2/pi.",
+    "primary_section_text": "Weak smooth test for the composed frozen refinement\n\n[`D0.Geometry.ArchiveGradedRefinementWeakTest`](../../03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementWeakTest.lean)\napplies the existing adjacent graded pullback to its unit one-form on the\nactual four-role carrier. The normalized counting pairing of the resulting\ntransported-minus-sampled component error with a fixed sampled sine tends to\n`2 / π`: the proof reduces the four-coordinate sum to one coordinate, proves\nthe finite sine identity and its limit, and uses the existing composed-map\ncomponent theorem. This supplies a fixed smooth witness against weak\nconvergence for this particular component and sampling convention, not merely\nan `L1` or `L2` bound.\n\nThe input is §5 of #310's `A4D_NATIVE_COCHAIN_REFINEMENT.md` at commit\n`75527846bf3603a1c51acf445f8354e3254341be`, blob\n`c216f19daebc9a6b2a9e732d277350dd2d69f88c`. Independent mathematical review\nchecked the four-role normalization, sign, actual composed map and limit.\nIts consumer is the existing `composed_frozen_readout` scoped obstruction;\nit does not exclude other readouts or establish native admission or GR.\n\nThe module passes its narrow build; the complete `D0.All` build passes 4,770\nLake jobs at Lean source digest\n`1ead438f2aa35f2cf69f6e7dbadf1d79dfbda0b59f3dcfefc8779f4a01546a54`.\nIts [build receipt](sources/d0_proof_architecture_formalization_2026-10-24/reports/proof_architecture_d0_all_build_2026-10-28_weak_test.json)\nhas content SHA-256 `9e2fdcb5340c6849d572c99b2921464ff243b99a887e8836cfbc031997ff4d37`.\nThe full build retains existing warnings in other modules.\n\nThe [compiled declaration inventory](sources/d0_proof_architecture_formalization_2026-10-24/reports/weak_test_declarations_2026-10-28.json)\nrecords 38 declarations at clean published snapshot\n`d2bf764d210cb377387db1bcdb007b88c99f69d3` and the same Lean source digest.\nIts SHA-256 is `25e7f5af68dfab9d28123720d735a169f8754d465f97218acb35ae42c3d6a407`;\nthe reported axiom union is `Classical.choice`, `Quot.sound` and `propext`.\n",
+    "consumer": {
+      "id": "composed_frozen_readout",
+      "source_ref": "02_REGISTRY/research/A4D_NATIVE_COCHAIN_REFINEMENT.md#5-one-step-estimates-and-composed-fixed-torus-failure",
+      "scope": "Actual composition of adjacent frozen cochain maps with scale-corrected component readout on a fixed unit torus, including L to 2L.",
+      "status": "PROVED_SCOPED_ANALYTIC_OBSTRUCTION"
+    },
+    "compiled_inventory": {
+      "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/weak_test_declarations_2026-10-28.json",
+      "blob": "27a3cc53ad304fe629fa43acd617e87f55e915f7",
+      "sha256": "25e7f5af68dfab9d28123720d735a169f8754d465f97218acb35ae42c3d6a407",
+      "inventory_snapshot": "d2bf764d210cb377387db1bcdb007b88c99f69d3",
+      "lean_source_digest": "1ead438f2aa35f2cf69f6e7dbadf1d79dfbda0b59f3dcfefc8779f4a01546a54",
+      "source_digest_status": "reported_not_recomputed",
+      "source_closure_status": "not_verified",
+      "tracked_lean_tree_and_symlink_targets": "unchanged_between_snapshots",
+      "toolchain_status": "reported_not_verified",
+      "module_blob": "4e6b5419f46a542091cec0d4f82d3b693f99cd26",
+      "public_import_root": "D0.All",
+      "toolchain": "leanprover/lean4:v4.30.0",
+      "declaration": "D0.Geometry.archive_doubling_sine_weak_pairing_tendsto",
+      "elaborated_type": "∀ (r : D0.Role),\n  Filter.Tendsto\n    (fun N =>\n      D0.Geometry.archiveSineWeakPairing (N + (N + 2))\n        (D0.Geometry.archiveRepeatedGradedPullback N (D0.Geometry.archiveUnitSingletonCochain N r) (N + 2)) r)\n    Filter.atTop (nhds (2 / Real.pi))",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "checks": {
+    "primary_section": {
+      "state": "verified_raw_link"
+    },
+    "source_pin_and_owner": {
+      "state": "verified_raw_link"
+    },
+    "source_primary_link": {
+      "state": "verified_raw_link"
+    },
+    "primary_review_text": {
+      "state": "pinned_text_only_not_review_verification"
+    },
+    "formal_support": {
+      "state": "verified_raw_link"
+    },
+    "consumer_and_source_owner": {
+      "state": "verified_raw_link"
+    },
+    "consumer_primary_link": {
+      "state": "verified_raw_link"
+    },
+    "compiled_declaration_inventory": {
+      "state": "reported_metadata_links_consistent_not_replayed"
+    },
+    "inventory_primary_link": {
+      "state": "reported_metadata_links_consistent_not_replayed"
+    }
+  },
+  "issues": [],
+  "interpretation": "Consult each check state; unresolved or blocked checks are not verified. Other C0 candidates are not enumerated. If available, pinned primary text is not authenticated review. Any matching node is only a locator, and source digest/toolchain are reported, not recomputed or replayed; complete build closure is unverified. Type shape does not establish semantic equivalence."
+}

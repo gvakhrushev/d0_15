@@ -1,0 +1,51 @@
+{
+  "GR_closed": false,
+  "actual_native_words": [
+    {
+      "L": 1,
+      "N": 18,
+      "cut_rank": 8,
+      "four_full_column_endpoints": "G^2,I,I,G^-2",
+      "four_full_feedbacks": "4p^3 P,0,0,4p^3 P",
+      "full_dimension": 16
+    },
+    {
+      "L": 2,
+      "N": 26,
+      "cut_rank": 8,
+      "four_full_column_endpoints": "G^2,I,I,G^-2",
+      "four_full_feedbacks": "4p^3 P,0,0,4p^3 P",
+      "full_dimension": 16
+    },
+    {
+      "L": 4,
+      "N": 42,
+      "cut_rank": 8,
+      "four_full_column_endpoints": "G^2,I,I,G^-2",
+      "four_full_feedbacks": "4p^3 P,0,0,4p^3 P",
+      "full_dimension": 16
+    }
+  ],
+  "all_raw_stages_paid": true,
+  "all_unknown_spin_and_oldRIGHT_columns_retained": true,
+  "ambient_feedback_mixed_hessian_float": -1.3558113400084437e-05,
+  "ambient_full_heat_mixed_hessian_bound": "123352400063692861/123905961741460614621954048000000",
+  "ambient_full_heat_mixed_hessian_bound_float": 9.955324048174308e-16,
+  "ambient_full_mixed_hessian_over_r_z_upper": "-149/100 for all L>=1",
+  "exact_four_corner_return": "-2 r log(1-4 z p^3)",
+  "full_Hodge_numeric_diagonalization": false,
+  "full_heat_contrast_error_bound_at_N18": "19/4801780279296000",
+  "full_heat_contrast_error_float": 3.9568657653751774e-15,
+  "heat_grades": "H0 and H01; index 359 N d remains inside logarithm",
+  "metric_or_spatial_locality_no_go": false,
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "physical_continuous_gate_admission": false,
+  "price": "unchanged H+J on declared INTERNAL incidence or fixed default tensor heat",
+  "relative_full_heat_contrast_error_float": 5.186343095992553e-10,
+  "return_contrast_float": 1.4408452379928578e-05,
+  "return_contrast_over_r_z_float": 1.8885446703419986,
+  "scope": "rules out bounded clock-range gate-only elimination of shared retained memory; no physical task selection, geometric gain, continuum or HDA closure",
+  "source_sha256": "b23bfb478e86324fe508e1a929b6f2eac08670369f9bcba8fb8cb70d5ee3f31d",
+  "status": "PASS",
+  "uniform_full_price_contrast_over_r_z_lower": "179/100 for all L>=1"
+}

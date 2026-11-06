@@ -1,0 +1,97 @@
+{
+  "checker_inputs": [
+    {
+      "blob": "c99e90a8c8e96bae70e700fa88d1c2d824a1831b",
+      "bytes": 33947,
+      "commit": "4b30fcb4dc743e7a04415c9701aae19a847e8dab",
+      "integration_action": "already-present-exact",
+      "path": "02_REGISTRY/research/sources/d0_task_faithful_source_2026-10-28/PROOF_RU.md",
+      "sha256": "9f2354817860f9024a597dba4bd14c0580cc021de5c473925740b46b0e8f96e5"
+    },
+    {
+      "blob": "8325834fc09fdd9cd8f278d3bcd6fbd97833253d",
+      "bytes": 43429,
+      "commit": "4b30fcb4dc743e7a04415c9701aae19a847e8dab",
+      "integration_action": "already-present-exact",
+      "path": "02_REGISTRY/research/sources/d0_apparatus_cotangent_descent_2026-10-28/PROOF_RU.md",
+      "sha256": "1db9ebd3d24b57a45b1a3a00a2c2553c2e08019cecc34d18e2e2a94d19b45254"
+    },
+    {
+      "blob": "f8675130936e45d9718781d38ef5b762ebaf0eba",
+      "bytes": 26062,
+      "commit": "4b30fcb4dc743e7a04415c9701aae19a847e8dab",
+      "integration_action": "added-exact-upstream-input",
+      "path": "02_REGISTRY/research/sources/d0_canonical_stationary_family_2026-10-28/PROOF_RU.md",
+      "sha256": "fe4b8e9033098ced52299fbc0481ab2ddecceed69c6f4392988803ab0abfa005"
+    },
+    {
+      "blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "bytes": 20552,
+      "commit": "4b30fcb4dc743e7a04415c9701aae19a847e8dab",
+      "integration_action": "added-exact-upstream-input",
+      "path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    }
+  ],
+  "integrated_artifacts": {
+    "PROOF_RU.md": {
+      "bytes": 7505,
+      "sha256": "3c1d29cb215ff294467376349a0d07cc917b5217e37c098fb5964dc62b9cee52"
+    },
+    "check_native16.py": {
+      "bytes": 23072,
+      "sha256": "d5c987f4cec9d1de7aa2b3d35bc6bed9d0d7fa1e8ff56ceb49a9a5164954d99f"
+    },
+    "expected_receipt.json": {
+      "bytes": 21731,
+      "sha256": "c20bd62754ffaa4fb89a8ae16ab4b3f18c1c04f38112bcaa0e2e550058da3558"
+    },
+    "inputs/upstream_receipts.md": {
+      "bytes": 76084,
+      "scope": "exact 7dq and 7do receipt blocks required by the unchanged embedded checker; not a substitute for the full owner memo",
+      "sha256": "2300b6858845374ac2c5c05a754db88df7543bd91a20b2a22c8cd39ef06353f6"
+    },
+    "replay_manifest.json": {
+      "bytes": 2021,
+      "sha256": "02bab4f247dd8c0e8b896df546c895cb1b53d8c681f3b9bf061e926ceae50fd9"
+    },
+    "replay_native16.py": {
+      "bytes": 5243,
+      "sha256": "fc8bafbe446d966f8748abcc074f13d836232c06c5188d0c3f82a7098dc4f9f1"
+    },
+    "upstream_section_7dr.md": {
+      "bytes": 75330,
+      "exact_source_range": "owner memo lines 99646-101806 inclusive",
+      "sha256": "6f33057edfc05c13c095ec7b12f9ad1ff5cff620d29df2be516459096b3e7271"
+    }
+  },
+  "schema": "d0-native16-retained-report-fibre-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "claim": "literal 16-call native word binds the complete INTERNAL H+J source to its actual retained joint-record effect for the stated exact execution",
+    "does_not_establish": [
+      "physical admission",
+      "autonomous controller or task selection",
+      "complete selected Book03 Cost-Info",
+      "independent boundary or clock equations",
+      "all42 source/refinement",
+      "Lean or CI",
+      "GR closure"
+    ],
+    "status": "supporting native execution result"
+  },
+  "upstream": {
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "checker_start_line": 100220,
+    "head": "4b30fcb4dc743e7a04415c9701aae19a847e8dab",
+    "memo_blob": "c07286147ba90464ca89e5d47ae42f36633f44ec",
+    "memo_bytes": 3589640,
+    "memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "memo_sha256": "12abc5977d1667f36daf7935270f4c369a7b1decaf06dd59fe7539856f32b4b8",
+    "memo_start_line": 99646,
+    "pull_request": 334,
+    "receipt_end_line": 101806,
+    "task_blob": "34aefcfc6a136b110b605e9ced458ec524b9204a",
+    "task_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md"
+  }
+}

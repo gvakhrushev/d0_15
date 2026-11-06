@@ -1,0 +1,147 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "c512a8cc5042e0b6160cfa3320665b2f3abc7cbe",
+  "worktree_dirty": true,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "fdba5314e1ef785e14b40f7c5509d1c9d2426e22f08903c5b3aa62de75aec65b",
+  "collector_sha256": "919751a13135b91d8454bbc91cfb9f7cfb834378bb34dde6187e6c39beac66cd",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.Geometry.ArchiveWeightedHodgeDirac",
+  "resolution_only": false,
+  "request": {
+    "full_name": "D0.Geometry.hodgeCarDirac_unit_profile_adjoint_eq_finiteHermitianAdjoint"
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "N",
+          "type": "ℕ"
+        }
+      ],
+      "conclusion_whnf": "(D0.Geometry.hodgeCarDiracDiagonalAdjoint N fun x => 1) =\n  D0.Algebra.finiteHermitianAdjoint (D0.Geometry.hodgeCarDiracₗ N)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 30,
+            "line": 90
+          },
+          "start": {
+            "column": 0,
+            "line": 80
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 68,
+            "line": 84
+          },
+          "start": {
+            "column": 8,
+            "line": 84
+          }
+        }
+      },
+      "elaborated_type": "∀ (N : ℕ),\n  (D0.Geometry.hodgeCarDiracDiagonalAdjoint N fun x => 1) =\n    D0.Algebra.finiteHermitianAdjoint (D0.Geometry.hodgeCarDiracₗ N)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.ArchiveWeightedHodgeDirac",
+      "name": "D0.Geometry.hodgeCarDirac_unit_profile_adjoint_eq_finiteHermitianAdjoint",
+      "proof_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Algebra.finiteHermitianAdjoint",
+        "D0.Algebra.finiteWeightedAdjoint_one_eq_finiteHermitianAdjoint",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.decidablePiFintype",
+        "LinearMap",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.instOne",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "id",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat",
+        "instStarRingReal"
+      ],
+      "type_dependencies": [
+        "Bool",
+        "Bool.fintype",
+        "D0.Algebra.finiteHermitianAdjoint",
+        "D0.Dyad",
+        "D0.Geometry.ArchiveCochain",
+        "D0.Geometry.ArchiveCochainBasis",
+        "D0.Geometry.ArchiveFockState",
+        "D0.Geometry.ArchiveRolePhaseGroup",
+        "D0.Geometry.hodgeCarDiracDiagonalAdjoint",
+        "D0.Geometry.hodgeCarDiracₗ",
+        "D0.Geometry.instNeZeroArchiveFibers",
+        "D0.Role",
+        "D0.archiveFibers",
+        "Eq",
+        "Fin.fintype",
+        "Fintype.decidablePiFintype",
+        "LinearMap",
+        "Nat",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Pi.Function.module",
+        "Pi.addCommMonoid",
+        "Pi.instFintype",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instField",
+        "Real.instOne",
+        "Real.semiring",
+        "RingHom.id",
+        "Semiring.toModule",
+        "Semiring.toNonAssocSemiring",
+        "ZMod",
+        "ZMod.decidableEq",
+        "ZMod.fintype",
+        "instDecidableEqBool",
+        "instDecidableEqFin",
+        "instDecidableEqProd",
+        "instFintypeProd",
+        "instOfNatNat",
+        "instStarRingReal"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/ArchiveWeightedHodgeDirac.lean"
+    }
+  ]
+}

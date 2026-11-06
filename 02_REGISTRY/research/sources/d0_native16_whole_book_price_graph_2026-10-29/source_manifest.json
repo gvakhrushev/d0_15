@@ -1,0 +1,114 @@
+{
+  "checker_inputs": [
+    {
+      "blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+      "commit": "0f2e421fda2029df92b174c39f594160ce31294f",
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "blob": "1354b8dadd924b0d96639ba402385e9b734787a9",
+      "commit": "0f2e421fda2029df92b174c39f594160ce31294f",
+      "path": "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md",
+      "sha256": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418"
+    }
+  ],
+  "frozen_receipt_inputs": {
+    "7do_paid_binary_input_sha256": "811bd6eed0cd74ddc3b505a636f3f80796f0d0fb871aa803d90b5d7e4c5211ba",
+    "7ds_return_record_compiler_sha256": "5ca575b88ade09944cdd6af7b1a013620ed7caa6e9ca2628f1773941d8e9f19e",
+    "fixture_sha256": "d6dbe367a71f4e0aff666aad2eb963134296d0ba18f99821539ba27e476173a4"
+  },
+  "integrated_artifacts": {
+    "PROOF_RU.md": {
+      "bytes": 6255,
+      "sha256": "6de607bedf11fc12d6c651e8ebe94ac33b21de96072390786124af0bd16a118e"
+    },
+    "check_one_sided_price.py": {
+      "bytes": 13417,
+      "sha256": "0b240fde3cef3e433f598a81e68fb6f32995ce77ae736652f7dd43f6ce28e359"
+    },
+    "expected_receipt.json": {
+      "bytes": 7757,
+      "sha256": "b4e52e9d777135388051c2e5908e99a3110816b256be7d5769315a985dffbfe3"
+    },
+    "inputs/upstream_receipts.md": {
+      "bytes": 67538,
+      "sha256": "d6dbe367a71f4e0aff666aad2eb963134296d0ba18f99821539ba27e476173a4"
+    },
+    "replay/optimized_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/optimized_stdout.json": {
+      "bytes": 7757,
+      "sha256": "b4e52e9d777135388051c2e5908e99a3110816b256be7d5769315a985dffbfe3"
+    },
+    "replay/ordinary_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/ordinary_stdout.json": {
+      "bytes": 7757,
+      "sha256": "b4e52e9d777135388051c2e5908e99a3110816b256be7d5769315a985dffbfe3"
+    },
+    "replay/repeat_stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/repeat_stdout.json": {
+      "bytes": 7757,
+      "sha256": "b4e52e9d777135388051c2e5908e99a3110816b256be7d5769315a985dffbfe3"
+    },
+    "replay_manifest.json": {
+      "bytes": 2238,
+      "sha256": "e9d9925cdf6a4b2c57e94a393cb0a8db4b4c46a1be2d428da1bcecfa57f2af2d"
+    },
+    "replay_whole_book_price.py": {
+      "bytes": 13276,
+      "sha256": "6fd573dc502dc0c2627e161118dcf1d057b232b1b6246af1e8f20b4288053e69"
+    },
+    "upstream_section_7dt.md": {
+      "bytes": 38199,
+      "sha256": "c56acd58f7cba1c729eb03be10b43725285c0cdf141ed168aff28c0b32ae4776"
+    },
+    "upstream_task_7dt.md": {
+      "bytes": 5396,
+      "sha256": "3334472e7e71cc0e3a79d7604edb70474d33e3bba9cb9018fe273cf60234bd61"
+    }
+  },
+  "replay": {
+    "GR_closed": false,
+    "exact_published_receipt_match": true,
+    "manifest": "replay_manifest.json",
+    "status": "PASS"
+  },
+  "schema": "d0-native16-whole-book-price-graph-intake-v1",
+  "scope": {
+    "GR_closed": false,
+    "parent_substitution": "For the declared fixed-layout native graph, a single paid terminal record copy yields exact saturation for every complete original word and its independent preparation changes; the literal Book H+J price is evaluated including the positive-gap term and true clock heat.",
+    "phase": "native realization and finite price-graph application",
+    "remaining": [
+      "physical admission of the fixed record/reserve layout and initial boundary",
+      "identify the actual full physical comparison domain X_N",
+      "selected native task/record/Cost-Info and independent clock/boundary equations",
+      "large field compiler reserve/width/refinement admission",
+      "Lean formalization and CI",
+      "physical selection, stationary finite word and GR closure"
+    ]
+  },
+  "upstream": {
+    "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+    "checker_sha256": "0b240fde3cef3e433f598a81e68fb6f32995ce77ae736652f7dd43f6ce28e359",
+    "commit": "22b4e3f430ddb7d8dd7af6e734f5e63225edd056",
+    "memo_blob": "1e81dd0151eea362fedacc008293bcf4f0c7d806",
+    "memo_bytes": 3712032,
+    "memo_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "memo_sha256": "2a1bb4ea2cd694605d09293921bed76f8b9fe5fd237d1aa18a6979c989f292bf",
+    "pull_request": 334,
+    "receipt_sha256": "b4e52e9d777135388051c2e5908e99a3110816b256be7d5769315a985dffbfe3",
+    "task_blob": "6f34289104bb71b593e53c6440d827e3182a249f",
+    "task_bytes": 1191147,
+    "task_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "task_sha256": "8d8cbc92c2d797d2417c0d254886245ecceff58bc1b72b853d04111329250b0f"
+  }
+}

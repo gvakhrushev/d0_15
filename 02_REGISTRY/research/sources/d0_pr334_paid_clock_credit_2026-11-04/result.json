@@ -1,0 +1,73 @@
+{
+  "actual_readout_gap": "5*a**2 - 3",
+  "checks": 47,
+  "finite_conditional_gap": {
+    "Cost_minus_Info_minus_master_strict_lower": 1970,
+    "Info_strict_upper_if_record_entropy_bound": 54,
+    "additional_hypotheses": "unit price calibration; no extra work rebate; Info <= log_phi(full carrier dimension)",
+    "full_carrier_dimension": 55753200,
+    "log_dimension_strict_upper": 18,
+    "master_strict_upper": 24,
+    "pairs": 1024,
+    "primitive_Cost_lower": 2048
+  },
+  "full_master_diagnostics": {
+    "0": "13.9885119570529",
+    "1": "14.984618471918",
+    "1024": "23.2362911344702",
+    "2": "15.544149575306"
+  },
+  "histories": {
+    "0": {
+      "N": 3,
+      "births": 2,
+      "calls": 1,
+      "clock_dimension": 112,
+      "full_Hodge_modes": 47600,
+      "harmonic_modes": 40208,
+      "input_rank": 16,
+      "primitive_padding_Cost_floor": 0
+    },
+    "1": {
+      "N": 5,
+      "births": 2,
+      "calls": 3,
+      "clock_dimension": 240,
+      "full_Hodge_modes": 102000,
+      "harmonic_modes": 86160,
+      "input_rank": 16,
+      "primitive_padding_Cost_floor": 2
+    },
+    "1024": {
+      "N": 2051,
+      "births": 2,
+      "calls": 2049,
+      "clock_dimension": 131184,
+      "full_Hodge_modes": 55753200,
+      "harmonic_modes": 47095056,
+      "input_rank": 16,
+      "primitive_padding_Cost_floor": 2048
+    },
+    "2": {
+      "N": 7,
+      "births": 2,
+      "calls": 5,
+      "clock_dimension": 368,
+      "full_Hodge_modes": 156400,
+      "harmonic_modes": 132112,
+      "input_rank": 16,
+      "primitive_padding_Cost_floor": 4
+    }
+  },
+  "native_words_sha256": "79cc3cd36d6f275881b14da09ead03bd5e4c09528ca037b737a1dd4f2515945d",
+  "required_general_credit": "Info_m - W_m >= 2m - kappa*B_m - constant - binding_error_m",
+  "scope": {
+    "GR_closed": false,
+    "Info_selected": false,
+    "all_durations_same_physical_task_proved": false,
+    "clock_source_binding_proved": false,
+    "new_gravity_root": false,
+    "work_rebate_excluded_unconditionally": false
+  },
+  "status": "PASS"
+}

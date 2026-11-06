@@ -1,0 +1,25 @@
+{
+  "schema": "d0-v3-cbe7-split-gzip-v1",
+  "full_sha256": "6e765423fd16c960576d60590ad9b7c9de461226b9560c6d86c23481135fda9c",
+  "full_bytes": 752668795,
+  "gzip_sha256": "52287efa1cdbc81c92118071bb15dd9f619232f5116db7069a10de5561325567",
+  "gzip_bytes": 102743098,
+  "part_max_bytes": 41943040,
+  "parts": [
+    {
+      "name": "part-000.gzchunk",
+      "bytes": 41943040,
+      "sha256": "b81e88c513c92253ad69fdb00a9cf9feaf676f8a38407d69b6ac859115791db5"
+    },
+    {
+      "name": "part-001.gzchunk",
+      "bytes": 41943040,
+      "sha256": "53b6e847ebbab88ffaa145fe3b3f2d15f1e68925f119de4d874c216eb9276695"
+    },
+    {
+      "name": "part-002.gzchunk",
+      "bytes": 18857018,
+      "sha256": "5a8418ac411e8c36d6f9048622823e4727241d4d6fd59666ae8c5b24bf386fcf"
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "check_count": 90,
+  "checker_sha256": "6362d9709e6026019976981e3615868bf39e89b8abbf68dbf0e44c8ee5f76974",
+  "checks": [
+    {
+      "kind": "provenance",
+      "label": "unique published 7fh.G1 loader block"
+    },
+    {
+      "kind": "provenance",
+      "label": "published previous AST loader SHA256"
+    },
+    {
+      "kind": "provenance",
+      "label": "pinned loader has original fixture argument"
+    },
+    {
+      "kind": "provenance",
+      "label": "only one native fixture argument changed"
+    },
+    {
+      "kind": "provenance",
+      "label": "original constructor SHA256 pin"
+    },
+    {
+      "kind": "provenance",
+      "label": "original constructor Git blob pin"
+    },
+    {
+      "kind": "structural",
+      "label": "only six pinned definitions extracted; no historical suite"
+    },
+    {
+      "kind": "structural",
+      "label": "exactly one original native call"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all128 CPTP completeness"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "active128 odd-j port map is an involutive permutation"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "j0 pair fixed and exactly64 fine slots permuted"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "entire DATA channel unchanged by literal pointer permutation"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "entire channel boost derivative unchanged"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "every odd-j original pair has actual proportional amplitudes"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "every odd-j original pair derivative retains proportionality"
+    },
+    {
+      "kind": "provenance",
+      "label": "same pinned source for creator definition"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "Walsh odd coefficient slice equals original four-defect sum over16"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "Walsh odd coefficient normalization retains true field derivative"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual fixed fixture is strictly Julia contractive"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual odd-row bank has positive Julia margin"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "actual original Lambda is faithful"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "positive odd event effect uses all actual selected fine branches"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "odd event first source includes every original row jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "both actual nonreset odd-j occupations are positive"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 pure posterior amplitudes retained by path permutation"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "all16384 posterior field jets retained"
+    },
+    {
+      "kind": "structural",
+      "label": "zero amplitude branches have zero first probability jet"
+    },
+    {
+      "kind": "structural",
+      "label": "zero amplitude branches have zero first probability jet"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "entire two-round fine CQ entropy unchanged on pure retained branches"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "entire two-round entropy field source unchanged"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "exact original two-round code contrast is p cubed times odd occupations"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "same two-round contrast retains complete field derivative"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity literal word has five native CX calls"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped literal word has five native CX calls"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "I5 equals identity on every three-bit column"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "five identical CX equal one CX on every column"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "three births use the actual normalized Golden vector"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "three births plus five CX have true N8 D47"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "complete closure retains every birth complement"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "closure range is the full birth-detail sum"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "last interstage CX makes final birth-detail projector zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage0 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage1 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage2 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage3 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage4 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage5 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual stage6 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity complete47dim growing clock is unitary"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity actual clock trace vanishes with final detail zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity entire final-stage clock diagonal block is zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity original physical cold return is exact"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity full feedback trace equals original cold defect"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity all feedback modes give only the true rankone defect"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "identity initialized clock has its first possible return at actual N8"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage0 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage1 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage2 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage3 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage4 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage5 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual stage6 is isometric"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped complete47dim growing clock is unitary"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped actual clock trace vanishes with final detail zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped entire final-stage clock diagonal block is zero"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped original physical cold return is exact"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped full feedback trace equals original cold defect"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped all feedback modes give only the true rankone defect"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "swapped initialized clock has its first possible return at actual N8"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "actual K9,11,13 has359 edges and718 directed incidences"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "actual oriented scene Gram is D-A"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "actual signless scene Gram is D+A"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "original scene normalization identity"
+    },
+    {
+      "kind": "exact_golden",
+      "label": "positive and complementary Gram bounds retain the original clock normalization"
+    },
+    {
+      "kind": "exact_integer",
+      "label": "both complete Hodge degrees give425D modes and359D excess zeros"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity numeric evaluation retains exact tiny-clock unitarity"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity all47 real clock cosine eigenvalues lie in[-2,2]"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity all1551 vertex-clock eigenvalues retained in[0,2]"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity full19975-mode partition obeys original zero-mode bounds"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity actual postgate terminal state remains normalized"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity coherent postgate terminal energy is fixed at scene vertex0"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "identity full computational pinching retains the same terminal energy"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped numeric evaluation retains exact tiny-clock unitarity"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped all47 real clock cosine eigenvalues lie in[-2,2]"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped all1551 vertex-clock eigenvalues retained in[0,2]"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped full19975-mode partition obeys original zero-mode bounds"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped actual postgate terminal state remains normalized"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped coherent postgate terminal energy is fixed at scene vertex0"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "swapped full computational pinching retains the same terminal energy"
+    },
+    {
+      "kind": "nominal_numeric",
+      "label": "two complete tiny-clock master values obey the analytic fixed-cut oscillation bound"
+    }
+  ],
+  "classifications": {
+    "exact_golden": 39,
+    "exact_integer": 6,
+    "nominal_numeric": 34,
+    "provenance": 7,
+    "structural": 4
+  },
+  "max_nominal_residual": 3.774758286585258e-15,
+  "native": {
+    "Lambda_min": 0.013262918217834799,
+    "Qodd_min": 0.8136718750000004,
+    "julia_margin": 0.60355,
+    "odd_occupation_theta_jets": [
+      -0.0008125434966888658,
+      -0.0008147755758841163
+    ],
+    "odd_occupations": [
+      0.017388067708565845,
+      0.017387667109412124
+    ],
+    "original_two_round": {
+      "cost": 2.026235500507436,
+      "cost_source": -0.0009962468810480565,
+      "entropy": 0.2754798986238635,
+      "entropy_source": -0.007237172562814316,
+      "positive_slots": 4096,
+      "price": 1.453764326114034,
+      "source": 0.01404322676845736
+    },
+    "swapped_two_round": {
+      "cost": 2.018026063122887,
+      "cost_source": -0.0006120889588389199,
+      "entropy": 0.2754798986238635,
+      "entropy_source": -0.007237172562814316,
+      "positive_slots": 4096,
+      "price": 1.4455548887294847,
+      "source": 0.014427384690666496
+    }
+  },
+  "owner_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "owner_sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+  "predecessor_loader_sha256": "cf48fa4229eb610c47e6a9dae6730ea417701b9d7a40ed4d27a0aa6ff3edb80c",
+  "residuals": {
+    "Walsh odd coefficient normalization retains true field derivative": 1.3877787807814457e-17,
+    "Walsh odd coefficient slice equals original four-defect sum over16": 1.1102230246251565e-15,
+    "all128 CPTP completeness": 3.774758286585258e-15,
+    "all16384 posterior field jets retained": 0.0,
+    "all16384 pure posterior amplitudes retained by path permutation": 0.0,
+    "entire DATA channel unchanged by literal pointer permutation": 6.133173666733497e-19,
+    "entire channel boost derivative unchanged": 4.84869951806108e-19,
+    "entire two-round entropy field source unchanged": 0.0,
+    "entire two-round fine CQ entropy unchanged on pure retained branches": 0.0,
+    "every odd-j original pair derivative retains proportionality": 6.938893903907228e-18,
+    "every odd-j original pair has actual proportional amplitudes": 1.3877787807814457e-17,
+    "exact original two-round code contrast is p cubed times odd occupations": 3.0184188481996443e-16,
+    "identity actual postgate terminal state remains normalized": 0.0,
+    "identity coherent postgate terminal energy is fixed at scene vertex0": 0.0,
+    "identity full computational pinching retains the same terminal energy": 0.0,
+    "identity numeric evaluation retains exact tiny-clock unitarity": 2.5445560331069017e-16,
+    "odd event first source includes every original row jet": 9.16154845364896e-18,
+    "positive odd event effect uses all actual selected fine branches": 4.510337834805836e-17,
+    "same two-round contrast retains complete field derivative": 7.589415207398531e-19,
+    "swapped actual postgate terminal state remains normalized": 0.0,
+    "swapped coherent postgate terminal energy is fixed at scene vertex0": 0.0,
+    "swapped full computational pinching retains the same terminal energy": 0.0,
+    "swapped numeric evaluation retains exact tiny-clock unitarity": 2.5445560331069017e-16
+  },
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.literal-full128-clock-control/1",
+  "scope": {
+    "GR_closed": false,
+    "continuous_rotor_primitive": false,
+    "full128_native_word_replayed": false,
+    "huge_heat_matrix_computed": false,
+    "native_constructor_calls": 1,
+    "same_fixed_report_task": false,
+    "whole_Cost_Info_selected": false
+  },
+  "status": "PASS",
+  "tiny_clock": {
+    "D": 47,
+    "N": 8,
+    "clocks": {
+      "identity": {
+        "cold": "1",
+        "defect": "0",
+        "feedback": "-log(1-z+z*cold^2)",
+        "heat_diagnostic": {
+          "H": 9.80050145859199,
+          "J": 0.0,
+          "beta": 1.0,
+          "coherent_terminal_energy": 1.0,
+          "master": 9.80050145859199,
+          "partition": 18042.790371936615,
+          "pinched_terminal_energy": 1.0,
+          "vertex_clock_max": 1.615922466723622,
+          "vertex_clock_min": -2.8707069603483594e-16,
+          "z": 9.5367431640625e-07
+        },
+        "trace_T": "0"
+      },
+      "swapped": {
+        "cold": "4*a**3 + a**2 - 2*a",
+        "defect": "12*a**3 - 51*a**2 - 8*a + 32",
+        "feedback": "-log(1-z+z*cold^2)",
+        "heat_diagnostic": {
+          "H": 9.800501458559317,
+          "J": 2.047997760355632e-08,
+          "beta": 1.0,
+          "coherent_terminal_energy": 1.0,
+          "master": 9.800501479039294,
+          "partition": 18042.790371347095,
+          "pinched_terminal_energy": 1.0,
+          "vertex_clock_max": 1.615922466723622,
+          "vertex_clock_min": -2.8707069603483594e-16,
+          "z": 9.5367431640625e-07
+        },
+        "trace_T": "0"
+      }
+    },
+    "hodge": {
+      "diagnostic_bound": 0.14419163433787685,
+      "diagnostic_master_difference": 2.0447304294179958e-08,
+      "full_price_oscillation": "beta^-1 log(425/(359+66 exp(-2beta)))-r log(1-z)",
+      "harmonic_excess": 16873,
+      "heat": "Z=359D+2 Tr_(33D) exp(-beta Delta0)",
+      "spectral_interval": "0<=Delta0<=2I by the two exact scene Grams",
+      "total_modes": 19975
+    },
+    "widths": [
+      1,
+      2,
+      4,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "words": {
+      "identity": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "swapped": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "tolerances": {
+    "nominal": 4e-11,
+    "nominal_jet": 4e-10
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "d0-cold-start-strict-replay-v1",
+  "snapshot_commit": "2bc79af4ae8bf4bc493d1f801be9db72c2905227",
+  "worktree_dirty": false,
+  "case_total": 50,
+  "cases_found_all_sources": 44,
+  "query_total": 414,
+  "search_limit": 18,
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "missing": [
+    {
+      "id": "labelled-native-raising-inverse",
+      "missing_paths": [
+        "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md"
+      ]
+    },
+    {
+      "id": "finite-hermitian-adjoint-twisted-car-application",
+      "missing_paths": [
+        "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json"
+      ]
+    },
+    {
+      "id": "native-stationary-recording-seed-whole-word-source",
+      "missing_paths": [
+        "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md"
+      ]
+    },
+    {
+      "id": "archive-preserving-binary-seed-full-query-source",
+      "missing_paths": [
+        "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+      ]
+    },
+    {
+      "id": "canonical-af-native16-retained-report-fibre",
+      "missing_paths": [
+        "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/replay_native16.py"
+      ]
+    },
+    {
+      "id": "pr334-native-af-paid-futures-and-full-price-separation",
+      "missing_paths": [
+        "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/owner_task_delta.md",
+        "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/PROOF_RU.md"
+      ]
+    }
+  ],
+  "full_raw_bytes": 89426861,
+  "full_raw_sha256": "a85a3c783ba6d7222150d0e734ec7e06dcbdc3840f6b757ef2987fe30f587114",
+  "full_gzip_bytes": 12107958,
+  "full_gzip_sha256": "d3c916e4fe82de5abf8890f5343ccc46d09e3fb49566f6e49532a5354e1cd9f6",
+  "compact_bytes": 3221484,
+  "compact_sha256": "17dae9ce1148033ec9e32b729d1f66fbdc3b6a4b21c434899a7bb897a8ba4b6e",
+  "wall_seconds": 2962.85,
+  "user_cpu_seconds": 798.22,
+  "compactor_scope": "Validates structure and observed receipts; does not rerun or authenticate supplied replay.",
+  "GR_closed": false
+}

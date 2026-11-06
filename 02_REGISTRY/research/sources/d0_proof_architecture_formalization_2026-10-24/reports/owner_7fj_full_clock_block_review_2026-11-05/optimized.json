@@ -1,0 +1,19 @@
+{
+  "GR_closed": false,
+  "actual_word": [
+    "canonical birth",
+    "CX"
+  ],
+  "birth_complement": "p^8 P0",
+  "cut": "P0=|v><v|, v=(a,p)",
+  "effective_U": "diag(1,2*a*p)",
+  "method": "polynomial reduction modulo a^2=p, p^2+p=1",
+  "naive_feedback_det": "owner_feedback_det+z*p^8",
+  "owner_feedback_det": "1-z+z*(v.T*U*v)^2",
+  "scientific_promotion": false,
+  "stage_dimensions": [
+    2,
+    4
+  ],
+  "status": "PASS"
+}

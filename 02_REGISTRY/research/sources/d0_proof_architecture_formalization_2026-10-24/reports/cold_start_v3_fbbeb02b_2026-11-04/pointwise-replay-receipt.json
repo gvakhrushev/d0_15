@@ -1,0 +1,27 @@
+{
+  "limitations": [
+    "Pointwise saved source pages only, not the full compactor or discovery replay.",
+    "The original compactor failure cause is not established.",
+    "Git object availability was not continuously authenticated during the replay."
+  ],
+  "os_exit_code": "unavailable: no independent exit receipt",
+  "paged_runner_git_blob": "eb0b8c28318f1c571ac8437129db720c92f71879",
+  "private_log_bytes": 78081,
+  "private_log_sha256": "587a7d1df5bdc4cdacc45f6cd6942800323a02db013a95fcf1541b3d5b7116b4",
+  "producer_report_bytes": 468947808,
+  "producer_report_sha256": "adf9b4549f50aea8f56f03511abd3bcf0e5ad84367366fea4fc0c80834f7c059",
+  "producer_snapshot": "fbbeb02bb1cb36da0f173adc614400dbe81154e9",
+  "queries_checked": 414,
+  "queries_matching": 414,
+  "queries_without_source_pages": 43,
+  "reader_git_blob": "499fb69783d9adf14f03eec81766eabe84eb45ff",
+  "receipt_type": "pointwise-saved-source-pages-replay",
+  "replay_script_sha256": "1ef28b946b0d765c3342bacd6d6ebd95f1de694acb2dde1d434280b42b3d552d",
+  "semantics": "Historical fbb pinned-source reader; not the later fail-closed reader.",
+  "source_pages_expected": 12510,
+  "source_pages_reproduced": 12510,
+  "terminal_marker": {
+    "event": "no_mismatch",
+    "queries": 414
+  }
+}

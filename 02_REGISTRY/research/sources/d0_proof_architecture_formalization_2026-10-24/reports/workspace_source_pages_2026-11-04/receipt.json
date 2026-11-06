@@ -1,0 +1,37 @@
+{
+  "schema": "d0-workspace-source-pages-tests-v1",
+  "base_commit": "d37f557e52a5928f244247fec912bdd31e560cc0",
+  "worktree_dirty_during_tests": true,
+  "python": "3.9.6",
+  "focused_tests": {
+    "total": 77,
+    "skipped_windows": 5,
+    "status": "PASS"
+  },
+  "compactor_tests": {
+    "total": 184,
+    "skipped_windows": 5,
+    "status": "PASS"
+  },
+  "input_sha256": {
+    "tools/proof_architecture.py": "a7d27748b3256e55927a6a02fdf7a7f8cc191b9f88d9fb246d73e5314a1fb132",
+    "tools/proof_architecture_cold_start.py": "51bc4c25c6aaead0e782ffb3db80fecd86498f80dcaa0929f33446a5c0e30b5c",
+    "tools/proof_architecture_cold_start_v3.py": "bcd02901ac4a31b9f564b499e871055d7f085ecba647d3b3dc6cde90210c8679",
+    "tools/compact_proof_architecture_cold_start_v3.py": "c85a947e5196b9be0186f8ecb653cae35f61a29baa073ebe51bc9b6ceef1a552",
+    "tools/test_proof_workspace_pages.py": "7da9e09c56bbcbb6ccc708c18a4599840eab1758e3697a68b0e9d082ba800136",
+    "tools/test_compact_proof_architecture_cold_start.py": "9a7fe72295d5c2f0376d21a1d6d56419dd2cd3ccb0ed61b2e151c00e24cbb89e"
+  },
+  "logs": {
+    "focused": {
+      "raw_sha256": "36ff3cd59862ab8f731a4c517392b10031ae107272e2faf26916676920d875c0",
+      "gzip_sha256": "3f1836ab3e7853060fd90d62d9a16f4538d1b1a2e461c24d8495bf53ce2a579d"
+    },
+    "compactor": {
+      "raw_sha256": "28f6598e655c82bb7d6215993d5dd3f023eee85397ba935fcb6ced8513ca32b1",
+      "gzip_sha256": "857c00911aa02eea646bec06b722030f7262b0189ec0a2cecc64a1b96f7870b0"
+    }
+  },
+  "clean_real_query_replay": "pending",
+  "scope": "Bounded observed workspace links, direct content, no inferred Git pin. Unsupported secure-open platforms fail closed.",
+  "GR_closed": false
+}

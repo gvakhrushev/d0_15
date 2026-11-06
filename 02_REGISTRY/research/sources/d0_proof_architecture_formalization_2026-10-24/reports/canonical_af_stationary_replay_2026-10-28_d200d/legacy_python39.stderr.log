@@ -1,0 +1,72 @@
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:150: RuntimeWarning: divide by zero encountered in matmul
+  err=near(Id.T@U@Id,C,'actual full GNS corner')
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:150: RuntimeWarning: overflow encountered in matmul
+  err=near(Id.T@U@Id,C,'actual full GNS corner')
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:150: RuntimeWarning: invalid value encountered in matmul
+  err=near(Id.T@U@Id,C,'actual full GNS corner')
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:151: RuntimeWarning: divide by zero encountered in matmul
+  S=C.T@C;Pin=Id@Id.T;Q=U@Pin@U.T
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:151: RuntimeWarning: overflow encountered in matmul
+  S=C.T@C;Pin=Id@Id.T;Q=U@Pin@U.T
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:151: RuntimeWarning: invalid value encountered in matmul
+  S=C.T@C;Pin=Id@Id.T;Q=U@Pin@U.T
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:152: RuntimeWarning: divide by zero encountered in matmul
+  near(Pin@Q,Q@Pin,'canonical input and output projections commute')
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:152: RuntimeWarning: overflow encountered in matmul
+  near(Pin@Q,Q@Pin,'canonical input and output projections commute')
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:152: RuntimeWarning: invalid value encountered in matmul
+  near(Pin@Q,Q@Pin,'canonical input and output projections commute')
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:156: RuntimeWarning: divide by zero encountered in matmul
+  A=U@Id@la.inv(D)@Id.T@U.T
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:156: RuntimeWarning: overflow encountered in matmul
+  A=U@Id@la.inv(D)@Id.T@U.T
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:156: RuntimeWarning: invalid value encountered in matmul
+  A=U@Id@la.inv(D)@Id.T@U.T
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:157: RuntimeWarning: divide by zero encountered in matmul
+  cot=-Z*(A@Pin-Pin@A)
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:157: RuntimeWarning: overflow encountered in matmul
+  cot=-Z*(A@Pin-Pin@A)
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:157: RuntimeWarning: invalid value encountered in matmul
+  cot=-Z*(A@Pin-Pin@A)
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:181: RuntimeWarning: divide by zero encountered in matmul
+  maxright=max(maxright,near(U@R,R@U,'original right columns are retained'))
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:181: RuntimeWarning: overflow encountered in matmul
+  maxright=max(maxright,near(U@R,R@U,'original right columns are retained'))
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:181: RuntimeWarning: invalid value encountered in matmul
+  maxright=max(maxright,near(U@R,R@U,'original right columns are retained'))
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:265: RuntimeWarning: divide by zero encountered in matmul
+  A/=2*la.norm(A,2);M=adj(A)@A
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:265: RuntimeWarning: overflow encountered in matmul
+  A/=2*la.norm(A,2);M=adj(A)@A
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:265: RuntimeWarning: invalid value encountered in matmul
+  A/=2*la.norm(A,2);M=adj(A)@A
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:280: RuntimeWarning: divide by zero encountered in matmul
+  cot=-b*i@(B@MM-MM@B)@adj(i)
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:280: RuntimeWarning: overflow encountered in matmul
+  cot=-b*i@(B@MM-MM@B)@adj(i)
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:280: RuntimeWarning: invalid value encountered in matmul
+  cot=-b*i@(B@MM-MM@B)@adj(i)
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:270: RuntimeWarning: divide by zero encountered in matmul
+  dC=adj(i)@X@U@i
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:270: RuntimeWarning: overflow encountered in matmul
+  dC=adj(i)@X@U@i
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:270: RuntimeWarning: invalid value encountered in matmul
+  dC=adj(i)@X@U@i
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:287: RuntimeWarning: divide by zero encountered in matmul
+  direct=prior_source(MM,X);expected=np.trace(cot@X).real
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:287: RuntimeWarning: overflow encountered in matmul
+  direct=prior_source(MM,X);expected=np.trace(cot@X).real
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:287: RuntimeWarning: invalid value encountered in matmul
+  direct=prior_source(MM,X);expected=np.trace(cot@X).real
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:302: RuntimeWarning: divide by zero encountered in matmul
+  degree=Adj.sum(1)+2;R=np.diag(1/np.sqrt(degree));B=R@Adj@R;C=R@R
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:302: RuntimeWarning: overflow encountered in matmul
+  degree=Adj.sum(1)+2;R=np.diag(1/np.sqrt(degree));B=R@Adj@R;C=R@R
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:302: RuntimeWarning: invalid value encountered in matmul
+  degree=Adj.sum(1)+2;R=np.diag(1/np.sqrt(degree));B=R@Adj@R;C=R@R
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:310: RuntimeWarning: divide by zero encountered in matmul
+  slope-=2*BETA*math.sin(phi)/N*np.dot(weight,np.diag(V.T@C@V))
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:310: RuntimeWarning: overflow encountered in matmul
+  slope-=2*BETA*math.sin(phi)/N*np.dot(weight,np.diag(V.T@C@V))
+/tmp/d0_canonical_stationary_d200d/check_canonical_seed.py:310: RuntimeWarning: invalid value encountered in matmul
+  slope-=2*BETA*math.sin(phi)/N*np.dot(weight,np.diag(V.T@C@V))

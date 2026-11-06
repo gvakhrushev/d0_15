@@ -1,0 +1,17 @@
+{
+  "consumer_sha256": "513518b3173612c56384b225226486da67f3f0b32c6dae1d388ad1ccb93397b4",
+  "cpu_affinity_limit": false,
+  "diagnostics": [
+    "explicit zero_ne_one still failed to synthesize NeZero 1",
+    "axiom output includes sorryAx because consumer did not elaborate"
+  ],
+  "elapsed_seconds": 26.0,
+  "exit_code": 1,
+  "job_memory_limit_bytes": 3221225472,
+  "kind": "numerical-det-consumer-explicit-zero-neq-one-check",
+  "module_source_sha256": "353879d776b8275e2bdf9244b621373c882bc27af0b1c6548349c5c80ddef5d0",
+  "raw_log_sha256": "392d19129675c698b11991310a56cdd605848d2a3199a11526b60ba82cd24cec",
+  "resolved_module_olean_sha256": "8d01cc32441d4a07321990043128a4d17192db7000d00f6f4acc533123557b3f",
+  "scope": "No determinant theorem; dependency cache and source bridge remain open.",
+  "status": "failed"
+}

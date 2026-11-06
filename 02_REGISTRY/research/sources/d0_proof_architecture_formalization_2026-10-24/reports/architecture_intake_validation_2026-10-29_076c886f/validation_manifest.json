@@ -1,0 +1,82 @@
+{
+  "schema": "d0-proof-architecture-intake-validation-v1",
+  "pull_request": 402,
+  "integrated_source_commit": "2fb68a571e5bee48f6e90711400054e8bcf9b2d4",
+  "validation_snapshot_commit": "076c886f76c015100ee21b8486e8d9804f90304f",
+  "cold_start": {
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "raw_output_bytes": 13840193,
+    "raw_output_sha256": "b0e3e6eeb791ac28251a0d96cb9989086748a9c05c5e8bb07470aee6a86ef563",
+    "summary_file": "cold_start_summary.json",
+    "summary_bytes": 1469828,
+    "summary_sha256": "71b3f755a9123b1bd1c5ac92445f9d30214ac4786c4620e646a789865969621e",
+    "runner_sha256": "ac66abe91449aa41f0dcb1165d8fc5a576a5d79945bd1f0d47e4d6af28570d4f",
+    "runner_git_blob": "9540ac87fd896da8cd009e16452a1daabc15dba7",
+    "search_engine_sha256": "4ef5b51ac318c376c18ccf4c6abb983a3e76e53687d11514cc2cceb4988325b4",
+    "search_engine_git_blob": "4eb2c8371e0fd2c563e7af0e7f3639c8846788e4",
+    "compactor_sha256": "51269bcd0f81e7c7a54c248cdc3d5b152a33553f9642710c9b97b0b6cedc9ec3",
+    "compactor_git_blob": "f0c583ecef89a79b3a2f9a505a3ffa4d3c40d4d2",
+    "snapshot_commit": "076c886f76c015100ee21b8486e8d9804f90304f",
+    "worktree_dirty": false,
+    "search_cases_total": 34,
+    "search_cases_found_all_sources": 34,
+    "benchmark_cases_total": 35,
+    "required_source_ref_count": 205,
+    "search_limit": 18,
+    "semantic_scope_review_is_manual": true
+  },
+  "process_comparison": {
+    "command": "python3 tools/proof_architecture_process_comparison.py",
+    "file": "process_comparison.json",
+    "bytes": 140821,
+    "sha256": "fd74384f0380a8a25d49873b8f1794ed405076dfe82aad2ed9348732b99b8bcd",
+    "snapshot_commit": "076c886f76c015100ee21b8486e8d9804f90304f",
+    "runner_sha256": "b36748084ab2fd801c01552041fe53d4babb71929c4a0766ff9bed569055a31a",
+    "query_fixture_sha256": "ac66abe91449aa41f0dcb1165d8fc5a576a5d79945bd1f0d47e4d6af28570d4f",
+    "metrics": {
+      "query_count": 34,
+      "query_count_with_explicit_source_scope": 18,
+      "expected_source_reference_count": 27,
+      "unique_expected_source_path_count": 15,
+      "current_scoped_queries_with_expected_source_assembly_owner_link": 1,
+      "current_expected_source_assembly_owner_link_count": 1,
+      "current_expected_source_references_with_assembly_owner_link": 1,
+      "current_expected_source_references_with_formal_support_locator": 12,
+      "current_expected_source_formal_support_locator_count": 46,
+      "current_unique_expected_source_paths_with_formal_support_locator": 5,
+      "current_expected_source_references_without_assembly_or_formal_support": 14,
+      "current_unique_expected_source_paths_without_assembly_or_formal_support": 9,
+      "current_scoped_queries_with_expected_source_header_owner_declaration": 1,
+      "current_expected_source_header_owner_declaration_count": 1,
+      "current_scoped_expected_sources_without_direct_assembly_owner_link": 26,
+      "legacy_scoped_queries_with_expected_source": 0,
+      "current_scoped_queries_with_expected_source": 17,
+      "legacy_serialized_answer_bytes_total": 68,
+      "current_serialized_answer_bytes_total": 732800,
+      "legacy_average_answer_bytes": 2.0,
+      "current_average_answer_bytes": 21552.9,
+      "legacy_owner_bearing_queries": 0,
+      "current_owner_bearing_queries": 10,
+      "semantic_review_required_for_all_queries": true
+    },
+    "expected_source_misses": [
+      {
+        "case_id": "canonical-af-stationary-family-archive-seed",
+        "query_index": 0,
+        "query": "canonical Fibonacci AF tower A2 M3 M2 to A5 M13 M8 stationary reflection archive exact Z[p] GNS rank104",
+        "expected_sources": [
+          "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md"
+        ]
+      }
+    ],
+    "interpretation": "Retrieval comparison only. The one miss is a query-top-five miss for the existing canonical AF case; the full cold-start finds all required source sets. Metrics do not establish theorem correctness, semantic owner acceptance, or physical closure."
+  },
+  "status_boundaries": {
+    "full_cold_start_all_source_sets_found": true,
+    "all_current_expected_sources_found_in_process_comparison": false,
+    "Lean_build_run_in_this_increment": false,
+    "physical_D0_admission_proved": false,
+    "GR_closed": false,
+    "WRK_D0_PROOF_ARCHITECTURE_FORMALIZATION_remains_IN_PROGRESS": true
+  }
+}

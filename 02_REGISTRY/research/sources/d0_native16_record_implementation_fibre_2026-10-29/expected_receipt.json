@@ -1,0 +1,221 @@
+{
+  "actual_boundary": {
+    "active_initial_rank": 8,
+    "active_matrix_dimension": 512,
+    "active_ready_dimension": 64,
+    "copied_work_wires": [
+      0,
+      11,
+      12
+    ],
+    "full_dimension": 65536,
+    "full_wires": 16,
+    "input_rank": 16,
+    "input_spectator": 2,
+    "new_blanks": 0,
+    "record_ready_wires": [
+      7,
+      8,
+      9
+    ],
+    "thermal_spectator": 128
+  },
+  "checker_sha256": "66a8f56d93358668c39f357c71c47fed4ad6075c1c40c39b7602adb971b3dc6f",
+  "checks": 104,
+  "complete_words": {
+    "A": {
+      "N": 35,
+      "inventory": {
+        "CX": 23,
+        "G": 2,
+        "SourceI": 10
+      },
+      "sha256": "ea03318d03b9f0b7198bd5d7e6d9bab0d3fc7f1f25167cfd64bab5fef5c432b0"
+    },
+    "B": {
+      "N": 35,
+      "inventory": {
+        "CX": 23,
+        "G": 2,
+        "SourceI": 10
+      },
+      "sha256": "a45a4e54cb5d12f7192b03e7fdbc0981736cb6f3fad6815acb678644e15e661f"
+    },
+    "fault": {
+      "N": 35,
+      "inventory": {
+        "CX": 22,
+        "G": 3,
+        "SourceI": 10
+      },
+      "sha256": "016d8304cc30f1cfa2d0a2bd4e820da5e237b9c73d1cec6be04ff31d40df8c7e"
+    }
+  },
+  "input_commit": "22b4e3f430ddb7d8dd7af6e734f5e63225edd056",
+  "input_pins": {
+    "02_REGISTRY/research/sources/d0_clock_winding_source_2026-10-28/PROOF_RU.md": "ff430c80b070d03b2d6860603575b1898394334775177d9d15feb54179fe4418",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "negative_control": {
+    "J_fault_minus_J_good": [
+      "0.0000001624012423487209439124023435449623569795",
+      "0.0000001624012423487209439124023435449623569798"
+    ],
+    "all_pointer_effects_unchanged_on_every_ready_input": true,
+    "correct_full_record_instrument": false,
+    "native_word": "fault",
+    "pointer_rereading_unchanged": true,
+    "return_gap": "(1-p)p^6 Q"
+  },
+  "record_implementations": {
+    "A": [
+      {
+        "op": "CX",
+        "wires": [
+          8,
+          11
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          7
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          8
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          12,
+          9
+        ]
+      }
+    ],
+    "B": [
+      {
+        "op": "CX",
+        "wires": [
+          8,
+          0
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          7
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          8
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          12,
+          9
+        ]
+      }
+    ],
+    "fault": [
+      {
+        "op": "CX",
+        "wires": [
+          0,
+          7
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          11,
+          8
+        ]
+      },
+      {
+        "op": "CX",
+        "wires": [
+          12,
+          9
+        ]
+      },
+      {
+        "op": "G",
+        "wires": [
+          11
+        ]
+      }
+    ]
+  },
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "same_task": {
+    "all35_prepared_prefixes_equal": true,
+    "all_generated_cuts_equal": true,
+    "minimal_correct_recorder_calls": 3,
+    "minimal_three_call_operator_is_C": true,
+    "native_field_compiler_lookup_used": false,
+    "same_every_terminal_test_on_the_actual_input": true,
+    "same_full_operator_on_unprepared_records": false,
+    "universal_record_isometry_on_ALL_ready_inputs": true
+  },
+  "scope": {
+    "GR_closed": false,
+    "additional_cost_or_selector_added": false,
+    "exact_heat_gauge_claimed": false,
+    "instrument_specification_forced_by_Book02_alone": false,
+    "physical_X_N_identified": false
+  },
+  "status": "PASS",
+  "strict_full_price_separation": {
+    "A1_35_approx": "1.99579504721436813988758447e-91",
+    "A1_35_rational": "1470347872606161069829061821883728298442866306874999914231130391272017732262611389160156250000000/7367228787637286669225083516781577465585548139488892330702735798449347698530990323955037869894902437811426291162799631912113362525437694396053280665572922897581520373933017253875733639603",
+    "H_A_minus_H_B_strictly_positive": true,
+    "J_A_equals_J_B_exactly": true,
+    "all_higher_windings_bounded": true,
+    "first_full_character_A_minus_B": "2048u, u=2p sqrt(p)",
+    "lower_bound_approx": "4.465917355664675318798726742e-97",
+    "lower_bound_rational": "4824824975289971879933973689297127487862414102242606883028775404781370956004293578991633487581915693426925186492292410729162673455148888604246512934673678499765619107857/10803659340381768682120774025527955206713631105089478067185222690422761620372514432286893759841548794219465008306386040420483209109822485396722004739759918010600809427128944762395738037817680680303171078530770132692447002624000000000000000000000000000000000000000000",
+    "upper_bound_approx": "3.99159009442873627977516894e-91",
+    "upper_bound_rational": "2940695745212322139658123643767456596885732613749999828462260782544035464525222778320312500000000/7367228787637286669225083516781577465585548139488892330702735798449347698530990323955037869894902437811426291162799631912113362525437694396053280665572922897581520373933017253875733639603"
+  },
+  "whole_absolute_price": {
+    "J_A_J_B": [
+      "0.0000148336243591954078373062495357991906396694",
+      "0.0000148336243591954078373062495357991906396697"
+    ],
+    "all_modes": 974848000,
+    "common_enclosure_B_A_B_B": [
+      "26.9818574953730255613908665949991872786973997724",
+      "26.9818574953730255613908665949992074084818729252"
+    ],
+    "common_enclosure_H_A_H_B": [
+      "26.9818426617486663659830292887496514795067601028",
+      "26.9818426617486663659830292887496716092912332557"
+    ],
+    "fault_B": [
+      "26.9818576577742679101118105074015308236597567520",
+      "26.9818576577742679101118105074015509534442299048"
+    ],
+    "fault_B_minus_good_B": [
+      "0.0000001624012423487209439124023435449623569795",
+      "0.0000001624012423487209439124023435449623569798"
+    ],
+    "same_N": 35,
+    "unpaired_harmonics": 823459840
+  }
+}

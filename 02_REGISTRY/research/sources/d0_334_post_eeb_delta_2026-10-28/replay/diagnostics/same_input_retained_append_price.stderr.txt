@@ -1,0 +1,25 @@
+consumed actual 358 retention inventory
+consumed nonlinear dust owner retains absolute feedback baseline
+consumed complete two-grade clock and excess harmonics
+imported native grammar matches immutable owner
+original beta lies strictly between 3/4 and 4/5
+complete native base is unitary
+complete appended native word is unitary
+earlier stopping word keeps all unused work columns on the common carrier
+earlier stopping word has the same complete initial cut
+same complete old input has the exact attenuated corner
+all nonreturn histories supply the positive append defect
+endpoint input rank remains four
+actual clock grows by three and full carrier by sixteen
+unknown oldRIGHT is retained
+positive uniform log denominator for every N>=3
+all-endpoint absolute heat error is below 1e-5
+one retained append raises full heat by more than three
+(N+3) q_N decreases for every N>=3
+same-carrier heat increment exceeds 7/[2(N+3)]
+exact elementary logarithm lower bound used at 2
+exact logarithm lower bound for unequal true clock lengths
+exact positive feedback increment pencil
+feedback does not decrease under an actual retained append
+effective-z factorization retains its absolute baseline
+dropping baseline misses positive cost even at zero old leakage

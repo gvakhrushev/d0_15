@@ -1,0 +1,66 @@
+{
+  "schema": "d0-source-pages-matcher-checkpoint-v1",
+  "repository": "gvakhrushev/d0_15",
+  "pull_request": 402,
+  "full_programme_complete": false,
+  "GR_closed": false,
+  "targeted_replay": {
+    "snapshot_commit": "f973814f379451ff75bfa4cbd4b5dfc37cc6de9e",
+    "worktree_dirty": true,
+    "case": "pr334-native-kappa-owner-delta",
+    "query_count": 17,
+    "source_files": 67,
+    "locator_files": 17,
+    "requirements_found": 84,
+    "requirements_total": 84,
+    "seconds": 57.473157,
+    "command": "python3 /tmp/d0-kappa-pages-target-run.py (17-query CASES slice, same producer and source-page validator)",
+    "uncompressed_bytes": 12934959,
+    "uncompressed_sha256": "ea6050559cc3581c97e1091ab37eef6f258f94aa5ad860f5479da05272e19508",
+    "scope": "Diagnostic on implementation worktree; not a full clean 50-case replay.",
+    "replay_entrypoint": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/source_pages_matcher_2026-11-04/replay_targeted.py --output /tmp/new-native-kappa.json",
+    "replay_note": "The entrypoint records the actual current checkout; it does not claim a byte-identical replay of the historical dirty-tree diagnostic."
+  },
+  "implementation_file_digests": {
+    "tools/proof_architecture.py": "f75073871a7c20ffc479e60273bbb64929480334244d7f72752156cbc3b1dbdc",
+    "tools/proof_architecture_cold_start.py": "248ce38228616b53ceacc6703241a38427cade7dc6d7728474a9ed37bc8c4a16",
+    "tools/compact_proof_architecture_cold_start.py": "0ada1f252e99d4d7d64172fe91161cd97128063fbf163b8306cced5bbae63dc5"
+  },
+  "benchmark_baseline": "f973814f379451ff75bfa4cbd4b5dfc37cc6de9e",
+  "full_replay": {
+    "snapshot_commit": "7a7e9ed24a52265b067b3fd38ca091934c9758e0",
+    "status": "interrupted_for_observed_performance_bottleneck",
+    "exit_code": 130,
+    "wall_seconds": 3200.67,
+    "cpu_user_seconds": 918.77,
+    "completed_receipt": false
+  },
+  "validation": {
+    "final_focused_tests": 62,
+    "final_focused_tests_status": "PASS",
+    "full_clean_retrieval": "pending",
+    "lean_changed_by_matcher": false
+  },
+  "artifacts": {
+    "integration_tests.log": {
+      "bytes": 161,
+      "sha256": "8a70ec91e67c9718d4e3660cbfe9a5b307deea4da966655e7cf93140341e9cec"
+    },
+    "interrupted_full_replay.stderr": {
+      "bytes": 1685,
+      "sha256": "12af5ea23af993d2067bf47b98c1e42e1a51d274b09791eb4432d94a57e482fe"
+    },
+    "matcher_benchmark.json": {
+      "bytes": 2953,
+      "sha256": "7ed5092437aa1f896e1270afad1bed35d5905495b40783db5ac20f2ead0a7a82"
+    },
+    "targeted_retrieval.json.gz": {
+      "bytes": 1910388,
+      "sha256": "b5f08b3c4968e2896a167f621dbc54654e7e2e31ca4a6aa462ec271c07a80c32"
+    },
+    "replay_targeted.py": {
+      "bytes": 2528,
+      "sha256": "6bf21533e4c243b3a4236ecefc3e6b278fcb68f6e5e72643b6ea4233ca83bd39"
+    }
+  }
+}

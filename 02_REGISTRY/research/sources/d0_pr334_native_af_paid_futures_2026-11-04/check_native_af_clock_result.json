@@ -1,0 +1,46 @@
+{
+  "checks": [
+    "true reduced stage dimensions",
+    "complete birth closing isometry",
+    "whole reduced clock numerical unitarity",
+    "all birth details retained",
+    "endpoint really mixes birth layers",
+    "full unequal-age secular identity 1.2",
+    "full unequal-age secular identity (1.1+0.3j)",
+    "all262 clock eigenvalues on unit circle diagnostically",
+    "two reduced constant clock modes",
+    "all spectator and harmonic multiplicities retained",
+    "full heat lies inside exact analytic enclosure",
+    "absolute spectator heat anchor retained"
+  ],
+  "diagnostics_not_interval_certificate": {
+    "AF_code_Cost": "2.2360679774998",
+    "AF_operator_Cost_minus_Info_at_u0": "0.75899112435473",
+    "AF_preparation_Hessian_uu": "0.53212843463574",
+    "AF_source_dc": "-2.2462810666691",
+    "H": "17.82145050787",
+    "H_lower": "17.763699844618",
+    "H_plus_J": "17.821464113366",
+    "H_upper": "17.93336947642",
+    "J": "1.3605496507533e-05",
+    "c4": "-0.88854381999832",
+    "cold_squared_gain_h": "0.10835055998654"
+  },
+  "exact_counts": {
+    "D": 2096,
+    "N": 34,
+    "births": 2,
+    "calls": 32,
+    "full_Hodge_modes": 890800,
+    "harmonic_offset": 752464,
+    "input_rank": 16,
+    "total_Hodge_nullity": 752496
+  },
+  "scope": {
+    "GR_closed": false,
+    "code_cost_is_primitive_cost": false,
+    "native_smooth_angle_lift_proved": false,
+    "physical_Info_selected": false
+  },
+  "status": "PASS"
+}

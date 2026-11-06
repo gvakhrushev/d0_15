@@ -1,0 +1,36 @@
+{
+  "status": "PASS_EXACT_GOLDEN_ARITHMETIC_SCOPE",
+  "checks": 14,
+  "r0_exact": "1245203*p/8589934592 - 3014703/34359738368",
+  "trace_Qsqrt5_over_Q": "-5505109/17179869184",
+  "norm": "-704385122299/1180591620717411303424",
+  "unconditional_r0_from_integral_palette_and_blank_impossible": true,
+  "conditional_r0_with_fair_resources_ruled_out": false,
+  "simple_fair_factory_success": "2*p^3",
+  "simple_fair_factory_conditional_probability": "1/2",
+  "specific_herald_denominator_controls": [
+    {
+      "k": 0,
+      "joint_alpha_power_times_r0_in_Zp": false
+    },
+    {
+      "k": 1,
+      "joint_alpha_power_times_r0_in_Zp": false
+    },
+    {
+      "k": 10,
+      "joint_alpha_power_times_r0_in_Zp": false
+    },
+    {
+      "k": 34,
+      "joint_alpha_power_times_r0_in_Zp": false
+    },
+    {
+      "k": 35,
+      "joint_alpha_power_times_r0_in_Zp": true
+    }
+  ],
+  "universal_minimum_factory_count_claimed": false,
+  "all_D0_models_refuted": false,
+  "unconditional_GR_closed": false
+}

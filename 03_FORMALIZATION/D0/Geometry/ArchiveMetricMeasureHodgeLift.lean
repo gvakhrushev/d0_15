@@ -12,17 +12,12 @@ open D0
 
 Owner: `D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001`.
 
-General metric-measure lift to the complete 16-component Hodge inner product:
-Given scalar mass density μ(x) > 0 and directional conductances c_r(x) > 0:
-  W_S(x) = μ(x)^{1 - |S|} ∏_{r ∈ S} c_r(x).
-
-Consistency checks:
-  - 0-forms (|S| = 0): W_∅ = μ^{1 - 0} = μ  (matches scalar mass density)
-  - 1-forms (|S| = 1): W_{r} = μ^{1 - 1} c_r = c_r  (matches edge conductance)
-  - 4-forms (|S| = 4): W_Role = μ^{-3} ∏_r c_r.
-
-For the frozen tensor refinement where c_r(x) = μ(x) / m(x_r), this general formula
-reduces identically to W_S(x) = ∏_{r ∉ S} m(x_r).
+Candidate metric-measure Hodge-weight family on cell degree `k`:
+`W_k = mu^(1-k) * prod_c`. Its exponent is defined for each natural-number
+degree. The compiled owner below checks the degree-0 and degree-1 endpoint
+identities and the finite carrier cardinalities. The formula's uniqueness,
+positivity conditions, and its claimed reduction from the frozen tensor
+refinement weights are not derived in this file.
 -/
 
 /-- Power exponent of scalar density μ in the Hodge weight of degree k: 1 - k. -/
@@ -32,7 +27,7 @@ theorem mu_exponent_0 : muExponent 0 = 1 := rfl
 theorem mu_exponent_1 : muExponent 1 = 0 := rfl
 theorem mu_exponent_4 : muExponent 4 = -3 := rfl
 
-/-- Hodge weight evaluated at a point for given μ > 0 and product of conductances in S. -/
+/-- Candidate grade-k Hodge weight for real arguments mu and prod_c. This definition imposes no positivity condition. -/
 noncomputable def hodgeMetricMeasureWeight (k : ℕ) (mu : ℝ) (prod_c : ℝ) : ℝ :=
   (mu ^ (muExponent k)) * prod_c
 
@@ -46,12 +41,10 @@ theorem hodge_weight_1_eq_conductance (mu c_r : ℝ) :
   unfold hodgeMetricMeasureWeight muExponent
   simp
 
-/-- **D0-ARCHIVE-METRIC-MEASURE-HODGE-LIFT-001 (Owner)**:
-Proves that the metric-measure formula unifies scalar density and edge conductance
-into the unique graded Hodge metric across all 16 cell sectors:
-1. Degree 0 reduces to μ;
-2. Degree 1 reduces to c_r;
-3. Graded complex has 16 sectors. -/
+/-- Current compiled owner result: the degree-0 and degree-1 endpoint
+identities hold for real inputs, and the two finite carrier cardinalities are
+16 and 4. This result does not establish a unique metric across all grades
+or a reduction from frozen refinement weights. -/
 theorem archive_metric_measure_hodge_lift_owner (mu c_r : ℝ) :
     (hodgeMetricMeasureWeight 0 mu 1 = mu) ∧
     (hodgeMetricMeasureWeight 1 mu c_r = c_r) ∧

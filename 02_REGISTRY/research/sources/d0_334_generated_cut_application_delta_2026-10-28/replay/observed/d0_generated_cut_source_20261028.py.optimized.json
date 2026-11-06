@@ -1,0 +1,42 @@
+{
+  "all_clock_edges_intertwined": 38,
+  "all_nonclosing_leakage_jets_zero": 37,
+  "bare_clock_heat_dimension": 2432,
+  "cold_corners": [
+    "p^3 I_8",
+    "(2 p^6 - 1) I_8"
+  ],
+  "feedback_finite_gap": "J_A-J_B=8 log[(1-z+z(2p^6-1)^2)/(1-z+zp^6)]>0",
+  "feedback_nonzero_rank": 8,
+  "full_fibre_dimension": 32,
+  "generated_cut_source_fraction": "1/2",
+  "generated_history_cut_rank": 304,
+  "heat_gap": "0 exactly on the bare paired clock; same intertwining applies to homogeneous INTERNAL 501/502",
+  "initial_cut_transported_by_heat_intertwiner": false,
+  "input_rank": 8,
+  "input_sha256": {
+    "BOOK_MAP.md": "4950d36010bd75bd26df13d9f13ff27843980a4fd35aefaac7dd950059fc21ee",
+    "book_price.py": "7c325fe6322298e13c2380522e9645cc228d8d5db2d7741368310690b80b095c",
+    "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "inventories": [
+    {
+      "CX": 24,
+      "G": 4,
+      "SourceI": 10
+    },
+    {
+      "CX": 24,
+      "G": 4,
+      "SourceI": 10
+    }
+  ],
+  "native_clock": 38,
+  "query_comparison_full_source": "4*8*z*c*(1-c^2)/(1-z+z*c^2)",
+  "raw_gate_source_fraction": "1/2",
+  "scope": "all-column exact native finite words; smooth source is an ambient comparison on the causal graph, not a continuous native primitive or same-task admission theorem; no GR closure",
+  "source_sha256": "16f99e5fb0264a33891ffb7b385a5a1cd2a822dba60226f92f4541d80849e0dd",
+  "source_value_for_orientation": "6.8027514874981077079e-6",
+  "status": "PASS_GENERATED_CUT_SOURCE_AND_LITERAL_WORD_COMPARISON",
+  "zeta": "2^-20"
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "d0-pr-source-application-delta-v1",
+  "repository": "gvakhrushev/d0_15",
+  "owner_pr": 334,
+  "source_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "base_source_commit": "716387e3cb4c9ff08c44b5ac532db882ee1e394a",
+  "source_commit": "9f23ec82c8e4e044121521658afec4a5e9b8c2f7",
+  "source_commit_count": 4,
+  "source_commits": [
+    {
+      "sha": "2b3d114479456d0c72078328b88ece9d89259ae8",
+      "subject": "research(#334): retain spectator multiplicity in every history-source derivation line"
+    },
+    {
+      "sha": "28f0443fca3df4b829f22497dea93253a97b27bb",
+      "subject": "test(#334): retain executed original full128 history-source receipt"
+    },
+    {
+      "sha": "5140d2ab86a9b5829ccab1be32d11f367e4dca43",
+      "subject": "research(#334): compose original chronological source with the true GR and heat budgets"
+    },
+    {
+      "sha": "9f23ec82c8e4e044121521658afec4a5e9b8c2f7",
+      "subject": "research(#334): pull original full history source through its own geometric map"
+    }
+  ],
+  "changed_upstream_paths": [
+    "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "02_REGISTRY/research/A4D_ORIGINAL_RETAINED_HISTORY_DIRECT_SOURCE_2026_10_28.md",
+    "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/PROOF_RU.md",
+    "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/result.json"
+  ],
+  "file_count": 6,
+  "files": [
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "archive_member": "upstream/00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "bytes": 1103056,
+      "sha256": "1d43858796429304a6259da692c5cb66f28f6b6849be5222a253fd9837466857",
+      "git_blob": "4217006c55ff67ecc1b0a000e8e487a885929aba"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "archive_member": "upstream/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "bytes": 2860766,
+      "sha256": "f0e9cca2e1ccca5b43a2839cc92c3936de970fca7c0162e92e6996ae1d49fc77",
+      "git_blob": "202ec8cbb65ee7a3ec1932d0fc09f4290659fa3a"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/A4D_ORIGINAL_RETAINED_HISTORY_DIRECT_SOURCE_2026_10_28.md",
+      "archive_member": "upstream/02_REGISTRY/research/A4D_ORIGINAL_RETAINED_HISTORY_DIRECT_SOURCE_2026_10_28.md",
+      "bytes": 6010,
+      "sha256": "d156c2142fc44dca94ab970c6db6208ab67cc2b286f4c7799c4898dd1a4f7def",
+      "git_blob": "d8140df29ed6c0c7f28dd0551cdfda60faa01a86"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/PROOF_RU.md",
+      "archive_member": "upstream/02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/PROOF_RU.md",
+      "bytes": 25687,
+      "sha256": "d533d4581cfdb2a8e1b5466d7d30356154bce440013ba486a1da8cf83eabf31d",
+      "git_blob": "394f757b77bb28ea590e22825fc6678580853732"
+    },
+    {
+      "kind": "upstream_snapshot",
+      "upstream_path": "02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/result.json",
+      "archive_member": "upstream/02_REGISTRY/research/sources/d0_original_retained_history_source_2026-10-28/result.json",
+      "bytes": 4741,
+      "sha256": "9da283dc3baa733a9d87a388db8c0c78359ceebd9796b338909c08cbc7b0952f",
+      "git_blob": "370da28388ab569bc7de311304ae664f31758684"
+    },
+    {
+      "kind": "source_delta_patch",
+      "upstream_path": "owner-delta-patch",
+      "archive_member": "patches/owner_delta_from_716387e3.patch",
+      "bytes": 31485,
+      "sha256": "d6223ff7ac09a370e2ec35ff23c000ba0a094e4a76d20524e69da708764be8a0",
+      "git_blob": "3c2476a61bc4f5f534e6a5e40acb5aefb89ba595"
+    }
+  ],
+  "previous_packet": "02_REGISTRY/research/sources/d0_334_retained_history_full_delta_2026-10-28",
+  "previous_packet_source_head": "716387e3cb4c9ff08c44b5ac532db882ee1e394a",
+  "retained_history_checker_sha256": "a05b9295a116543c037eb668651195449bb5d7b9b061c70eb73c4a045238253a",
+  "owner_receipt_status": "PASS_ORIGINAL_RETAINED_HISTORY_SOURCE",
+  "owner_receipt_checks": 163,
+  "scope_flags": {
+    "original_history_operator_map_supplied": true,
+    "original_40_direction_source_formula_supplied": true,
+    "complete_same_realization_heat_source_formula_supplied": true,
+    "native_execution_admission_proved": false,
+    "source_gain_and_mesh_uniform_norm_proved": false,
+    "compatible_physical_refinement_proved": false,
+    "full_history_heat_replayed": false,
+    "Lean_or_repository_CI_run_for_source_delta": false,
+    "scientific_acceptance": false,
+    "GR_closed": false
+  },
+  "container": {
+    "path": "upstream_delta.zip",
+    "bytes": 1283834,
+    "sha256": "61970d76db67a28a3bd50a2a39b116a0faee4fd6fc0e63151bcbb0107e6e0d86"
+  }
+}

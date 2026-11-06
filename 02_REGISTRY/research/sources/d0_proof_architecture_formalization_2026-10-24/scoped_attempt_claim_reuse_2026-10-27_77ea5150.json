@@ -1,0 +1,58 @@
+{
+  "key": "D0-DENSE-OPERATOR-SCENE-RIGIDITY-001",
+  "matches": [
+    {
+      "item": {
+        "kind": "claim-metadata",
+        "key": "D0-DENSE-OPERATOR-SCENE-RIGIDITY-001",
+        "label": "BOOK_02 §02.34a",
+        "source": "02_REGISTRY/claims.csv",
+        "record": {
+          "claim_id": "D0-DENSE-OPERATOR-SCENE-RIGIDITY-001",
+          "book": "BOOK_02",
+          "section": "02.34a",
+          "lean_module": "D0.Synthesis.DenseOperatorSceneRigidity",
+          "lean_theorem": "dense_passport_triangle;dense_passport_no_isolates;dense_operator_recovers_scene;recoveredGraphIso;scene_passport_inhabited",
+          "lean_status": "LEAN_PROVED",
+          "uses_bridge_assumptions": "False",
+          "assumption_ids": "",
+          "python_cert": "vp_spectral_scene_rigidity.py",
+          "release_status": "CORE-FORMALIZED",
+          "notes": "For any finite simple rational adjacency matrix A on 33 vertices with rank at most three and trace(A*A)=718, the full adjacency relation is recovered as a complete three-part partition whose fibre-size multiset is {9;11;13}. No partition, triangle, connectedness or absence of isolated vertices is assumed. Equality of recovered parts is exactly equality of adjacency rows. The third moment 7722 is derived, not supplied. The proof combines a kernel-checked classical rank/clique recognition argument with Turan density bounds and the existing exact vertex/edge inverse theorem; it includes an actual graph isomorphism and a kernel-checked instance of the input passport. Independent exact Python controls include all labelled simple graphs through six vertices and deletion rivals for each of the three readings. The rank-deletion rival K(12;12;9) with one cross-edge removed even preserves the cubic moment. This removes the preselected complete-tripartite class from scene recognition; it does not derive the input readings or the simple-graph operator contract from primitive verifiability, and makes no empirical or classical-theorem novelty claim."
+        },
+        "search_terms": [
+          "D0-DENSE-OPERATOR-SCENE-RIGIDITY-001",
+          "BOOK_02",
+          "02.34a",
+          "D0.Synthesis.DenseOperatorSceneRigidity",
+          "dense_passport_triangle",
+          "dense_passport_no_isolates",
+          "dense_operator_recovers_scene",
+          "recoveredGraphIso",
+          "scene_passport_inhabited",
+          "For any finite simple rational adjacency matrix A on 33 vertices with rank at most three and trace(A*A)=718, the full adjacency relation is recovered as a complete three-part partition whose fibre-size multiset is {9;11;13}. No partition, triangle, connectedness or absence of isolated vertices is assumed. Equality of recovered parts is exactly equality of adjacency rows. The third moment 7722 is derived, not supplied. The proof combines a kernel-checked classical rank/clique recognition argument with Turan density bounds and the existing exact vertex/edge inverse theorem; it includes an actual graph isomorphism and a kernel-checked instance of the input passport. Independent exact Python controls include all labelled simple graphs through six vertices and deletion rivals for each of the three readings. The rank-deletion rival K(12;12;9) with one cross-edge removed even preserves the cubic moment. This removes the preselected complete-tripartite class from scene recognition; it does not derive the input readings or the simple-graph operator contract from primitive verifiability, and makes no empirical or classical-theorem novelty claim."
+        ]
+      },
+      "declared_applications": [],
+      "declared_result": null,
+      "target_obligation": null,
+      "target_interface": null,
+      "registered_assumptions": [],
+      "claim_assumption_links": [],
+      "scoped_attempts": [],
+      "conceptual_presupposition_edges": [],
+      "warning": "Claim assumption IDs resolve to registry rows; this is separate from owner-claim links and does not type-check Lean propositions or establish independent scientific acceptance."
+    }
+  ],
+  "snapshot_commit": "77ea5150778a7ff7d648510ddb4b310502280b83",
+  "source_digests": {
+    "02_REGISTRY/claims.csv": "c3c51a8013b8a43880f659fc016b888911bb0219b57e3c9390ac793dbc72332d",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "cbc16e8e1b72e2e99dd05f2ed817e53d8669938d1227cd7815ad7f74743ff630",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "worktree_dirty": false
+}

@@ -1,0 +1,271 @@
+{
+  "schema": "d0-proof-architecture-cold-start-summary-v2",
+  "snapshot_commit": "508673f8099911c7d674e958826962c3b6606333",
+  "worktree_dirty": false,
+  "search_cases_found_all_sources": 24,
+  "search_cases_total": 24,
+  "benchmark_cases_total": 25,
+  "required_source_ref_count": 166,
+  "search_limit": 18,
+  "change_impact_regression": {
+    "id": "exact-source-vs-unrelated-prose",
+    "status": "pass",
+    "source_hash_changed": true,
+    "unrelated_prose_left_source_hash": true,
+    "declared_application": "native-result-to-obligation"
+  },
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "6b19168191ad4e68e106f7b89dcd008b3ec3cabdca7b3266864f61fe64455fc8",
+    "02_REGISTRY/assumptions.csv": "2bc9f8c040a776d784fdbfdf62569b72e4f70ff0a182fc66d0ced31cb5f13a36",
+    "02_REGISTRY/formal_support.csv": "e7434e8dd254247cf657e250f31852303e1518d097ee8cc5ab7026d75f52c781",
+    "02_REGISTRY/aliases.csv": "8cda9e7ebfa26a01a04a4d51b56eb6b93425816a5fe073aa74cbae94041f672f",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "semantic_scope_review_is_manual": true,
+  "replay": {
+    "source_commit": "508673f8099911c7d674e958826962c3b6606333",
+    "command": "python3 tools/proof_architecture_cold_start.py",
+    "runner_sha256": "0e1a114c77ec827cb8b22312dcd5815640898e1977cdab449217453bd242a1c5",
+    "runner_git_blob": "d65360ffc039d2a395cd365468d0ca63f44ccdb0",
+    "search_engine_sha256": "e67832179431e8a288a6dd0323c9724c665734f4fd34bb9b3750114ad2c9efc3",
+    "search_engine_git_blob": "eb1ba7c2bf8f6115a219617cfc252c1a7ecd2ed1",
+    "test_sha256": "0bcb7f0c9516ae5490c63accc6a667a6d6628d32e403d17472f4106c4ef26035",
+    "test_git_blob": "ae0627fb5448cc8562288cb9246e93f1af0d1dac",
+    "full_output_sha256": "b2567e3cce74d664b405bf24fc3e66a2068449c8db9a2d6ffa1bd7d223c2e036",
+    "full_output_bytes": 9650439
+  },
+  "cases": [
+    {
+      "id": "labelled-native-raising-inverse",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "positive-nonvacuum-recovery",
+      "query_count": 18,
+      "required_source_count": 11,
+      "all_required_sources_found": true,
+      "missing_paths": [],
+      "exact_application_retrieval": {
+        "path": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/nonvacuum_compact_pointwise_margin_2026-10-27.json",
+        "commit": "a2c20a4dc9feeb5446b41e9e49ea8094bd14f40b",
+        "blob": "82574aafa3ea94c61ca28ad9e08980c2974d4b22",
+        "query_index": 17,
+        "query": "D0.Geometry.sampledMatterMidpointCARComplement_positive_for_all_sufficiently_fine_meshes_of_pointwiseMargin",
+        "found": true,
+        "status": "found_direct_content",
+        "source_origin": "pinned_snapshot",
+        "candidate_rank": 3
+      }
+    },
+    {
+      "id": "proper-lorentz-same-orientation-orbit",
+      "query_count": 4,
+      "required_source_count": 6,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-gram-affine-quadratic-expansion",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-gram-frechet-derivative",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "golden-step-vs-internal-ratio",
+      "query_count": 1,
+      "required_source_count": 1,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "fixedright-stationary-and-minimum-scopes",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "same-fields-do-not-fix-price-source",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "same-prefix-two-ending-prospective-price",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "clock-dirac-incidence-curvature",
+      "query_count": 4,
+      "required_source_count": 3,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "gain-readiness-vs-trace-multiplicity",
+      "query_count": 3,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "conditional-transfer-does-not-select-execution",
+      "query_count": 1,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "verification-kernel-transfer-outside-gr",
+      "query_count": 8,
+      "required_source_count": 8,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "car-scaffolds-vs-hodge-operator-claims",
+      "query_count": 28,
+      "required_source_count": 28,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "top-hodge-inverse-spectral-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "dense-operator-scene-reconstruction-outside-gr",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "scoped-nogo-vs-positive-existence",
+      "query_count": 2,
+      "required_source_count": 2,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-affine-carrier-parameter-recovery",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-julia-null-chart-inverse",
+      "query_count": 3,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "julia-query-principal-frame-coframe-recovery",
+      "query_count": 26,
+      "required_source_count": 16,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "finite-hermitian-adjoint-twisted-car-application",
+      "query_count": 11,
+      "required_source_count": 12,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "real-unit-profile-weighted-hermitian-bridge",
+      "query_count": 18,
+      "required_source_count": 19,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "native-weighted-dirac-matrix-application",
+      "query_count": 18,
+      "required_source_count": 13,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    },
+    {
+      "id": "archive-phase-shift-reuses-transitive-permutation-theorem",
+      "query_count": 5,
+      "required_source_count": 4,
+      "all_required_sources_found": true,
+      "missing_paths": []
+    }
+  ],
+  "eq24_owner_source_retrieval": {
+    "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+    "commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+    "blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+    "sections": [
+      "7.2"
+    ],
+    "status": "found_direct_content",
+    "found": true,
+    "query_index": 14,
+    "query": "Eq.24 max u_j in I Psi_j^(h) - Psi(u_j) |I| sup_I Psi''' h^2 / 24 compound midpoint quadrature integral of Psi' fixed small normalized CAR slack survives for all sufficiently fine h",
+    "missing_sections": []
+  },
+  "comparison_replay": {
+    "source_commit": "508673f8099911c7d674e958826962c3b6606333",
+    "runner_sha256": "bad94cde02e9eaaab806679fbbdc0cc4c83c492917f90eb39b844560e755612e",
+    "query_fixture_sha256": "0e1a114c77ec827cb8b22312dcd5815640898e1977cdab449217453bd242a1c5",
+    "full_output_sha256": "f5c57e27b67ac0714efb577e42565f694852995d39c5c10cc685623c60e0bb5c",
+    "full_output_bytes": 69622,
+    "metrics": {
+      "query_count": 24,
+      "query_count_with_explicit_source_scope": 7,
+      "legacy_scoped_queries_with_expected_source": 0,
+      "current_scoped_queries_with_expected_source": 7,
+      "legacy_serialized_answer_bytes_total": 48,
+      "current_serialized_answer_bytes_total": 531238,
+      "legacy_average_answer_bytes": 2.0,
+      "current_average_answer_bytes": 22134.9,
+      "legacy_owner_bearing_queries": 0,
+      "current_owner_bearing_queries": 10,
+      "current_scoped_queries_with_expected_source_owner_link": 1,
+      "current_expected_source_owner_link_count": 1,
+      "current_scoped_queries_with_expected_source_header_owner_declaration": 1,
+      "current_expected_source_header_owner_declaration_count": 1,
+      "current_scoped_expected_sources_without_direct_owner_link": 7,
+      "semantic_review_required_for_all_queries": true
+    }
+  },
+  "lean_validation": {
+    "toolchain": "leanprover/lean4:v4.30.0",
+    "source_digest": "ef6a261ae86e28e0fa3dea7a1a75c18ee552e8d77d105a65b2ec24e0f260d672",
+    "final_D0_All": "PASS: D0.All built from the recorded Lean source digest",
+    "final_command_output": "Build completed successfully (4626 jobs); D0_BUILD target=D0.All seconds=9.1 returncode=0",
+    "narrow_builds": [
+      {
+        "target": "D0.Geometry.NonvacuumBrinkmannStencil",
+        "jobs": "3340/3340",
+        "status": "PASS"
+      }
+    ]
+  }
+}

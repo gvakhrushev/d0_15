@@ -1,0 +1,387 @@
+{
+  "snapshot_commit": "09373e23bdbfa18fd7f18a9435b86373b704a001",
+  "worktree_dirty": false,
+  "authority_source_digests": {
+    "02_REGISTRY/claims.csv": "957a9c67f56850c5a253eb2f679506dd03fc64b81931a1718ddb84704dc760bd",
+    "02_REGISTRY/assumptions.csv": "8bb15b667efcbb4b3c904df7713107e7356144c1554cef841454b8435a9d5939",
+    "02_REGISTRY/formal_support.csv": "8d3cb4c3df612e505f8a32746fa7257a149df6e34c2d92c83662f78f9444cbdd",
+    "02_REGISTRY/aliases.csv": "776a7d786a1485923ddc52050e5df86b64424c78499bd8e0ae04383d0b7c033e",
+    "02_REGISTRY/gr_assembly/applications.json": "b7e1d2bffb5846f3ed6802d14e31a71679e4e22106c2d55d15210652f562221d",
+    "02_REGISTRY/gr_assembly/contract.json": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+    "02_REGISTRY/presupposition_edges.json": "7ff9d1e4ac3447f321afd603eab66554468644bb5fddb33551fdfa22e3e2585d"
+  },
+  "corpus_snapshot_before": {
+    "sha256": "fc2b25677f0aa57e6aae06c3ba5793eee4f205a743beb7c90bf081d6aa7cb6ea",
+    "file_count": 4303,
+    "scope": "rg-visible search roots, checked before and after; no continuous or toolchain attestation"
+  },
+  "corpus_snapshot_after": {
+    "sha256": "fc2b25677f0aa57e6aae06c3ba5793eee4f205a743beb7c90bf081d6aa7cb6ea",
+    "file_count": 4303,
+    "scope": "rg-visible search roots, checked before and after; no continuous or toolchain attestation"
+  },
+  "snapshot_validation": "consistent_at_two_points",
+  "discovery_validation": "unattested",
+  "scope": "10 selected queries for prior six failed cases; only previously missing sources are checked",
+  "query_count": 10,
+  "seconds": 144.84,
+  "script_sha256": "10468507d8a245ed4350d363aaa90a37dfa037d1388470d263b1108063e8ddcd",
+  "results": [
+    {
+      "case": "labelled-native-raising-inverse",
+      "original_query_index": 0,
+      "source": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+      "previous_status": "missing_scoped_query",
+      "matching_returned_evidence": true,
+      "status": "evidence_verified_discovery_unattested",
+      "candidate_stage": "source_page",
+      "candidate_rank": 1,
+      "candidate_locator_source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "candidate_page_number": 1,
+      "evidence_lines": [
+        {
+          "line": 6540,
+          "heading": "### 6.77. Положительный coherent-grade14 consumer: явная approximate preparation с O(N^−3/2) residual",
+          "matched_terms": [
+            "native",
+            "operator",
+            "null"
+          ],
+          "text": "native operators не объявлены нулевыми.",
+          "kind": "direct_content"
+        },
+        {
+          "line": 4807,
+          "heading": "### 6.56. Связанный Rayleigh: полный источник, а не замена geometric Δ логарифмом",
+          "matched_terms": [
+            "native",
+            "operator",
+            "inverse"
+          ],
+          "text": "Это корректная operator reconstruction. Native equality Δ_new=D²",
+          "kind": "direct_content"
+        }
+      ],
+      "expected_commit": "fe5cf335da04cac14e50407b03f98b96be17dc52",
+      "expected_blob": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62"
+    },
+    {
+      "case": "finite-hermitian-adjoint-twisted-car-application",
+      "original_query_index": 2,
+      "source": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json",
+      "previous_status": "exact_pin_seen_but_content_check_incomplete",
+      "matching_returned_evidence": false,
+      "status": "not_found",
+      "candidate_stage": null,
+      "candidate_rank": null,
+      "candidate_locator_source": null,
+      "candidate_page_number": null,
+      "evidence_lines": [],
+      "expected_commit": null,
+      "expected_blob": null
+    },
+    {
+      "case": "finite-hermitian-adjoint-twisted-car-application",
+      "original_query_index": 3,
+      "source": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json",
+      "previous_status": "exact_pin_seen_but_content_check_incomplete",
+      "matching_returned_evidence": true,
+      "status": "evidence_verified_discovery_unattested",
+      "candidate_stage": "ranked_page",
+      "candidate_rank": 4,
+      "candidate_locator_source": null,
+      "candidate_page_number": 2,
+      "evidence_lines": [
+        {
+          "line": 72,
+          "heading": "",
+          "matched_terms": [
+            "twisted"
+          ],
+          "text": "\"D0.Geometry.dTwisted_sq\",",
+          "kind": "direct_content"
+        },
+        {
+          "line": 71,
+          "heading": "",
+          "matched_terms": [
+            "twisted"
+          ],
+          "text": "\"D0.Geometry.dTwistedLinear\",",
+          "kind": "direct_content"
+        }
+      ],
+      "expected_commit": null,
+      "expected_blob": null
+    },
+    {
+      "case": "finite-hermitian-adjoint-twisted-car-application",
+      "original_query_index": 6,
+      "source": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json",
+      "previous_status": "exact_pin_seen_but_content_check_incomplete",
+      "matching_returned_evidence": false,
+      "status": "not_found",
+      "candidate_stage": null,
+      "candidate_rank": null,
+      "candidate_locator_source": null,
+      "candidate_page_number": null,
+      "evidence_lines": [],
+      "expected_commit": null,
+      "expected_blob": null
+    },
+    {
+      "case": "finite-hermitian-adjoint-twisted-car-application",
+      "original_query_index": 10,
+      "source": "02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/twisted_car_differential_nilpotency_adapter_2026-10-25.json",
+      "previous_status": "exact_pin_seen_but_content_check_incomplete",
+      "matching_returned_evidence": false,
+      "status": "not_found",
+      "candidate_stage": null,
+      "candidate_rank": null,
+      "candidate_locator_source": null,
+      "candidate_page_number": null,
+      "evidence_lines": [],
+      "expected_commit": null,
+      "expected_blob": null
+    },
+    {
+      "case": "native-stationary-recording-seed-whole-word-source",
+      "original_query_index": 1,
+      "source": "02_REGISTRY/research/A4D_NATIVE_STATIONARY_RECORDING_SEED_2026_10_28.md",
+      "previous_status": "not_found",
+      "matching_returned_evidence": true,
+      "status": "evidence_verified_discovery_unattested",
+      "candidate_stage": "source_page",
+      "candidate_rank": 5,
+      "candidate_locator_source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "candidate_page_number": 5,
+      "evidence_lines": [
+        {
+          "line": 1,
+          "heading": "# Whole-word source and an exact native stationary recording seed",
+          "matched_terms": [
+            "word",
+            "stationary",
+            "source"
+          ],
+          "text": "# Whole-word source and an exact native stationary recording seed",
+          "kind": "direct_content"
+        },
+        {
+          "line": 13,
+          "heading": "## Parent application",
+          "matched_terms": [
+            "actual",
+            "stationary",
+            "prefix"
+          ],
+          "text": "owner7dn likewise requires either an actual stationary prefix or another proved",
+          "kind": "direct_content"
+        }
+      ],
+      "expected_commit": "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852",
+      "expected_blob": "1766cb44e82a276d14a5546257b85a59beeab506"
+    },
+    {
+      "case": "archive-preserving-binary-seed-full-query-source",
+      "original_query_index": 2,
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "previous_status": "source_pin_mismatch",
+      "matching_returned_evidence": true,
+      "status": "evidence_verified_discovery_unattested",
+      "candidate_stage": "source_page",
+      "candidate_rank": 6,
+      "candidate_locator_source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "candidate_page_number": 5,
+      "evidence_lines": [
+        {
+          "line": 96680,
+          "heading": "# The exact embedded plane generator satisfies Y^3=-Y.",
+          "matched_terms": [
+            "scalar",
+            "future",
+            "all",
+            "five",
+            "seed",
+            "sources",
+            "zero",
+            "gain",
+            "dual"
+          ],
+          "text": "'nonscalar_future':{'raw_stages':41,'future_stages':36,'future_effect':'diag((2p^6-1)^2 I8,I8)','actual_cold_product':True,'commutes_with_return_projector':True,'native_reentry_negative_control':'S_word;CX(6,12) has K=I, unlike K_CX K_seed=diag(I8,0_8); retention of the new right12 record is not claimed for this control','all_five_prefix_sources_exact_zero':True,'future_gain_interval':ivfmt(8*ziv*c4iv*c4iv/D4iv),'full_heat_interval':ivfmt(HC),'full_return_interval':ivfmt(JC),'full_B_interval':ivfmt(BC),'full_modes':425*41*65536,'g_signed_interval':ivfmt(ziv*c4iv*u4iv/D4iv),'real_axis_components':cncomp,'nonzero_real_components':cnnz,'full_raw",
+          "kind": "direct_content"
+        },
+        {
+          "line": 96586,
+          "heading": "# Full endpoint cotangent, restricted by the ACTUAL suffix of every occurrence.",
+          "matched_terms": [
+            "scalar",
+            "future",
+            "all",
+            "occurrence",
+            "sources",
+            "dual"
+          ],
+          "text": "'all41 nonscalar-future occurrence sources and full raw dual norm')",
+          "kind": "direct_content"
+        }
+      ],
+      "expected_commit": "b728d85246c6bcf75b84dadaef294e91f5f50b15",
+      "expected_blob": "a5fc2aafd237ab41a315633227d44153d144e27a"
+    },
+    {
+      "case": "canonical-af-native16-retained-report-fibre",
+      "original_query_index": 1,
+      "source": "02_REGISTRY/research/sources/d0_native16_retained_report_fibre_2026-10-29/replay_native16.py",
+      "previous_status": "not_found",
+      "matching_returned_evidence": true,
+      "status": "evidence_verified_discovery_unattested",
+      "candidate_stage": "ranked_page",
+      "candidate_rank": 4,
+      "candidate_locator_source": null,
+      "candidate_page_number": 2,
+      "evidence_lines": [
+        {
+          "line": 116,
+          "heading": "",
+          "matched_terms": [
+            "288",
+            "checks"
+          ],
+          "text": "\"checks\": 288,",
+          "kind": "direct_content"
+        },
+        {
+          "line": 17,
+          "heading": "",
+          "matched_terms": [
+            "expected",
+            "receipt"
+          ],
+          "text": "EXPECTED = HERE / \"expected_receipt.json\"",
+          "kind": "direct_content"
+        }
+      ],
+      "expected_commit": null,
+      "expected_blob": null
+    },
+    {
+      "case": "pr334-native-af-paid-futures-and-full-price-separation",
+      "original_query_index": 4,
+      "source": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/owner_task_delta.md",
+      "previous_status": "not_found",
+      "matching_returned_evidence": true,
+      "status": "evidence_verified_discovery_unattested",
+      "candidate_stage": "ranked_page",
+      "candidate_rank": 12,
+      "candidate_locator_source": null,
+      "candidate_page_number": 2,
+      "evidence_lines": [
+        {
+          "line": 1,
+          "heading": "## 2026-11-04 continuation: actual coherent AF cut, full clock and source residual",
+          "matched_terms": [
+            "2026-11-04",
+            "continuation",
+            "actual",
+            "coherent",
+            "af",
+            "cut",
+            "full",
+            "clock",
+            "source",
+            "residual"
+          ],
+          "text": "## 2026-11-04 continuation: actual coherent AF cut, full clock and source residual",
+          "kind": "direct_content"
+        },
+        {
+          "line": 50,
+          "heading": "## 2026-11-04 continuation: actual matched histories separate AF memory from full price",
+          "matched_terms": [
+            "2026-11-04",
+            "continuation",
+            "actual",
+            "af",
+            "full"
+          ],
+          "text": "## 2026-11-04 continuation: actual matched histories separate AF memory from full price",
+          "kind": "direct_content"
+        }
+      ],
+      "expected_commit": null,
+      "expected_blob": null
+    },
+    {
+      "case": "pr334-native-af-paid-futures-and-full-price-separation",
+      "original_query_index": 4,
+      "source": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/PROOF_RU.md",
+      "previous_status": "missing_scoped_query",
+      "matching_returned_evidence": true,
+      "status": "evidence_verified_discovery_unattested",
+      "candidate_stage": "workspace_source_page",
+      "candidate_rank": 2,
+      "candidate_locator_source": "02_REGISTRY/research/D0_PROOF_ARCHITECTURE_AND_FORMALIZATION.md",
+      "candidate_page_number": 3,
+      "evidence_lines": [
+        {
+          "line": 14,
+          "heading": "## §§7es: исполняемый coherent AF-срез с растущими часами",
+          "matched_terms": [
+            "coherent",
+            "af"
+          ],
+          "text": "## §§7es: исполняемый coherent AF-срез с растущими часами",
+          "kind": "direct_content"
+        },
+        {
+          "line": 56,
+          "heading": "## Повтор чекеров и границы",
+          "matched_terms": [
+            "af",
+            "cut"
+          ],
+          "text": "дали те же байты stdout, что и встроенные receipts: 52 контроля AF cut,",
+          "kind": "direct_content"
+        }
+      ],
+      "expected_commit": null,
+      "expected_blob": null
+    },
+    {
+      "case": "pr334-native-af-paid-futures-and-full-price-separation",
+      "original_query_index": 5,
+      "source": "02_REGISTRY/research/sources/d0_pr334_native_af_paid_futures_2026-11-04/PROOF_RU.md",
+      "previous_status": "missing_scoped_query",
+      "matching_returned_evidence": true,
+      "status": "evidence_verified_discovery_unattested",
+      "candidate_stage": "top_candidates",
+      "candidate_rank": 12,
+      "candidate_locator_source": null,
+      "candidate_page_number": null,
+      "evidence_lines": [
+        {
+          "line": 69,
+          "heading": "## Повтор чекеров и границы",
+          "matched_terms": [
+            "er5",
+            "er6"
+          ],
+          "text": "формализует только условные ER5/ER6 credit-следствия с явно переданными",
+          "kind": "direct_content"
+        },
+        {
+          "line": 68,
+          "heading": "## Повтор чекеров и границы",
+          "matched_terms": [
+            "nativepaidclockcredit"
+          ],
+          "text": "конечный native-контрпример с точными checker-ами. `NativePaidClockCredit.lean`",
+          "kind": "direct_content"
+        }
+      ],
+      "expected_commit": null,
+      "expected_blob": null
+    }
+  ]
+}

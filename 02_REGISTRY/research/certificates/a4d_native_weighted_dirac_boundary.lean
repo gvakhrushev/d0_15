@@ -294,6 +294,54 @@ theorem spatial_block_has_no_positive_metric (L : ℝ) (hL : L ≠ 0)
   have hs : G 0 0+G 1 1=0 := (mul_eq_zero.mp hz).resolve_left (mul_ne_zero (by norm_num) hL)
   linarith
 
+/-- Matrix self-adjointness for `G` induces the corresponding bilinear
+identity on vectors. -/
+theorem matrix_adjoint_pairing
+    {i : Type} [Fintype i] [DecidableEq i]
+    (T G : Matrix i i ℝ)
+    (hadj : T.transpose * G = G * T)
+    (x y : i → ℝ) :
+    dotProduct (T.mulVec x) (G.mulVec y) =
+      dotProduct x (G.mulVec (T.mulVec y)) := by
+  calc
+    dotProduct (T.mulVec x) (G.mulVec y) =
+        dotProduct (G.mulVec y) (T.mulVec x) := by
+      exact dotProduct_comm _ _
+    _ = dotProduct x (T.transpose.mulVec (G.mulVec y)) := by
+      exact (Matrix.dotProduct_transpose_mulVec T x (G.mulVec y)).symm
+    _ = dotProduct x ((T.transpose * G).mulVec y) := by
+      rw [Matrix.mulVec_mulVec]
+    _ = dotProduct x ((G * T).mulVec y) := by rw [hadj]
+    _ = dotProduct x (G.mulVec (T.mulVec y)) := by
+      rw [Matrix.mulVec_mulVec]
+
+/-- A positive pairing on a full finite carrier cannot make a self-adjoint
+operator restrict to the displayed nonzero spatial rotation block. This
+formalizes the restriction step from an invariant two-dimensional subspace;
+it does not assert that a particular CAR operator has that subspace. -/
+theorem positive_selfadjoint_spatial_invariant_block_impossible
+    {i : Type} [Fintype i] [DecidableEq i]
+    (L : ℝ) (hL : L ≠ 0)
+    (T G : Matrix i i ℝ) (u v : i → ℝ)
+    (hu : u ≠ 0) (hv : v ≠ 0)
+    (hpos : ∀ x, x ≠ 0 → 0 < dotProduct x (G.mulVec x))
+    (hadj : T.transpose * G = G * T)
+    (hTu : T.mulVec u = -(2*L) • v)
+    (hTv : T.mulVec v = (2*L) • u) : False := by
+  have huPos := hpos u hu
+  have hvPos := hpos v hv
+  have hcross := matrix_adjoint_pairing T G hadj u v
+  rw [hTu, hTv] at hcross
+  simp only [Matrix.mulVec_smul, dotProduct_smul, smul_dotProduct] at hcross
+  simp only [smul_eq_mul] at hcross
+  have hsum : (2*L) *
+      (dotProduct v (G.mulVec v) + dotProduct u (G.mulVec u)) = 0 := by
+    nlinarith [hcross]
+  have hcoeff : 2*L ≠ 0 := mul_ne_zero (by norm_num) hL
+  have hdiag : dotProduct v (G.mulVec v) + dotProduct u (G.mulVec u) = 0 :=
+    (mul_eq_zero.mp hsum).resolve_left hcoeff
+  linarith
+
 theorem exp_cubic_lower (x : ℝ) (hx : 0 ≤ x) : x^3/6 ≤ Real.exp x := by
   simpa using Real.pow_div_factorial_le_exp x hx 3
 
@@ -383,8 +431,8 @@ theorem finite_annihilator_error_bound
 /-- On a nonzero null Fourier mode, an explicit CAR contraction gives
 DK+KD=id. The independently computed contraction is not an Euler gate. -/
 theorem null_mode_kernel_eq_range
-    {V : Type} [AddCommGroup V] [Module ℝ V]
-    (D K : V →ₗ[ℝ] V) (hD : ∀ v, D (D v) = 0)
+    {F : Type*} [DivisionRing F] {V : Type} [AddCommGroup V] [Module F V]
+    (D K : V →ₗ[F] V) (hD : ∀ v, D (D v) = 0)
     (hK : ∀ v, D (K v) + K (D v) = v) :
     LinearMap.ker D = LinearMap.range D := by
   ext v
@@ -397,10 +445,11 @@ theorem null_mode_kernel_eq_range
     exact (LinearMap.mem_ker).mpr (hD u)
 
 theorem null_mode_kernel_half_dimension
-    {V : Type} [AddCommGroup V] [Module ℝ V] [FiniteDimensional ℝ V]
-    (D K : V →ₗ[ℝ] V) (hD : ∀ v, D (D v) = 0)
+    {F : Type*} [DivisionRing F] {V : Type} [AddCommGroup V]
+    [Module F V] [FiniteDimensional F V]
+    (D K : V →ₗ[F] V) (hD : ∀ v, D (D v) = 0)
     (hK : ∀ v, D (K v) + K (D v) = v) :
-    2*Module.finrank ℝ (LinearMap.ker D) = Module.finrank ℝ V := by
+    2*Module.finrank F (LinearMap.ker D) = Module.finrank F V := by
   have h := LinearMap.finrank_range_add_finrank_ker D
   rw [← null_mode_kernel_eq_range D K hD hK] at h
   omega
@@ -437,6 +486,8 @@ theorem null_mode_kernel_half_dimension
 #print axioms inverse_weight_derivative
 #print axioms spatial_block_square
 #print axioms spatial_block_has_no_positive_metric
+#print axioms matrix_adjoint_pairing
+#print axioms positive_selfadjoint_spatial_invariant_block_impossible
 #print axioms exp_cubic_lower
 #print axioms normalized_heat_lower
 #print axioms scaled_codiff_square

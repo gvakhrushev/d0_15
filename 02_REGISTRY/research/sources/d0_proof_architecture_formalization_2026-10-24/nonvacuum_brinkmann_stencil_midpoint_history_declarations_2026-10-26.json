@@ -1,0 +1,3046 @@
+{
+  "schema": "d0-lean-declaration-inventory-v1",
+  "snapshot_commit": "82c617ae0c9ce120730819f68f7a80e76c9473eb",
+  "worktree_dirty": false,
+  "claim_registry_sha256": null,
+  "lean_source_digest": "6c73bc54dfdcbe972a58bdd615c173c2bf8cf051a3c394a57120a2112e664644",
+  "collector_sha256": "202769b59f90eac0cbbc09f530436c3a7b8e31a7633b7daaa5cc1d730b195ce7",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "public_import_root": "D0.All",
+  "resolution_only": false,
+  "request": {
+    "full_names": [
+      "D0.Geometry.finiteMatterForwardGradient",
+      "D0.Geometry.finiteMatterForwardGradient_midpointStep",
+      "D0.Geometry.finiteMatterMidpointStep",
+      "D0.Geometry.harmonicBrinkmannCubic",
+      "D0.Geometry.harmonicBrinkmannCubic._proof_1",
+      "D0.Geometry.harmonicBrinkmannCubic._proof_2",
+      "D0.Geometry.nonvacuumBrinkmannProfile",
+      "D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm",
+      "D0.Geometry.transverseFivePointLaplacian",
+      "D0.Geometry.transverseFivePointLaplacian._proof_1",
+      "D0.Geometry.transverseFivePoint_harmonicBrinkmannCubic_eq_zero",
+      "D0.Geometry.transverseFivePoint_nonvacuumBrinkmannProfile_eq_source",
+      "D0.Geometry.transverseFivePoint_radialQuadratic_eq_four",
+      "D0.Geometry.twoComponentMatterNormSq",
+      "D0.Geometry.twoComponentMatterNormSq_midpointGradient_eq_rate",
+      "D0.Geometry.finiteMatterMidpointHistory",
+      "D0.Geometry.finiteMatterMidpointHistory_next",
+      "D0.Geometry.finiteMatterForwardGradient_midpointHistory",
+      "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
+      "D0.Geometry.finiteTimeNonvacuumBrinkmannProfile",
+      "D0.Geometry.finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm",
+      "D0.Geometry.finiteMatterMidpointHistory_eq_base_add_rateSum",
+      "D0.Geometry.twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum"
+    ]
+  },
+  "declarations": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "next",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a._@._internal._hyg.0",
+          "type": "Fin 2"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 32,
+            "line": 84
+          },
+          "start": {
+            "column": 0,
+            "line": 81
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 82
+          },
+          "start": {
+            "column": 4,
+            "line": 82
+          }
+        }
+      },
+      "elaborated_type": "ℝ → (Fin 2 → ℝ) → (Fin 2 → ℝ) → Fin 2 → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteMatterForwardGradient",
+      "proof_dependencies": [
+        "DivInvMonoid.toDiv",
+        "Fin",
+        "HDiv.hDiv",
+        "HSub.hSub",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instDivInvMonoid",
+        "Real.instSub",
+        "instHDiv",
+        "instHSub",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "Fin 2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.finiteMatterForwardGradient h base (D0.Geometry.finiteMatterMidpointStep h rate base) i = rate i",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 97
+          },
+          "start": {
+            "column": 0,
+            "line": 90
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 48,
+            "line": 91
+          },
+          "start": {
+            "column": 8,
+            "line": 91
+          }
+        }
+      },
+      "elaborated_type": "∀ (h : ℝ) (rate base : Fin 2 → ℝ) (i : Fin 2),\n  h ≠ 0 → D0.Geometry.finiteMatterForwardGradient h base (D0.Geometry.finiteMatterMidpointStep h rate base) i = rate i",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteMatterForwardGradient_midpointStep",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "CommGroupWithZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommGroupWithZero.toGroupWithZero",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointStep",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "Fin",
+        "GroupWithZero",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toMonoidWithZero",
+        "GroupWithZero.toNontrivial",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.instNegInt",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvOneClass.toOne",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "List.nil",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.FieldSimp.NF.atom_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.cons",
+        "Mathlib.Tactic.FieldSimp.NF.cons_eq_div_of_eq_div",
+        "Mathlib.Tactic.FieldSimp.NF.cons_ne_zero",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₁",
+        "Mathlib.Tactic.FieldSimp.NF.eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval_cons_neg",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.one_div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.eq_div_of_eq_one_of_subst",
+        "Mathlib.Tactic.FieldSimp.eq_eq_cancel_eq",
+        "Mathlib.Tactic.FieldSimp.eq_mul_of_eq_eq_eq_mul",
+        "Mathlib.Tactic.FieldSimp.subst_add",
+        "Mathlib.Tactic.FieldSimp.subst_sub",
+        "Mathlib.Tactic.FieldSimp.zpow'",
+        "Mathlib.Tactic.FieldSimp.zpow'_one",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Ne",
+        "NeZero.one",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instMul",
+        "Real.instSub",
+        "Real.instZero",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Semifield.toCommGroupWithZero",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congr_arg₂",
+        "div_one",
+        "id",
+        "inferInstance",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsCancelMulZero",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "instOfNatNat",
+        "mul_one",
+        "one_mul",
+        "one_ne_zero",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointStep",
+        "Eq",
+        "Fin",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a._@._internal._hyg.0",
+          "type": "Fin 2"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 30,
+            "line": 79
+          },
+          "start": {
+            "column": 0,
+            "line": 76
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 28,
+            "line": 77
+          },
+          "start": {
+            "column": 4,
+            "line": 77
+          }
+        }
+      },
+      "elaborated_type": "ℝ → (Fin 2 → ℝ) → (Fin 2 → ℝ) → Fin 2 → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteMatterMidpointStep",
+      "proof_dependencies": [
+        "Fin",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instMul",
+        "instHAdd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 63,
+            "line": 40
+          },
+          "start": {
+            "column": 0,
+            "line": 36
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 26,
+            "line": 37
+          },
+          "start": {
+            "column": 4,
+            "line": 37
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.harmonicBrinkmannCubic",
+      "proof_dependencies": [
+        "D0.Geometry.harmonicBrinkmannCubic._proof_1",
+        "D0.Geometry.harmonicBrinkmannCubic._proof_2",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "(1 + 1).AtLeastTwo",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "(1 + 1).AtLeastTwo",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.harmonicBrinkmannCubic._proof_1",
+      "proof_dependencies": [
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.AtLeastTwo",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "(2 + 1).AtLeastTwo",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "(2 + 1).AtLeastTwo",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.harmonicBrinkmannCubic._proof_2",
+      "proof_dependencies": [
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.AtLeastTwo",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "coupling",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "energy",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 42,
+            "line": 46
+          },
+          "start": {
+            "column": 0,
+            "line": 42
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 29,
+            "line": 43
+          },
+          "start": {
+            "column": 4,
+            "line": 43
+          }
+        }
+      },
+      "elaborated_type": "ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.nonvacuumBrinkmannProfile",
+      "proof_dependencies": [
+        "D0.Geometry.harmonicBrinkmannCubic",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNeg",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "coupling",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.transverseFivePointLaplacian h\n    (fun x y =>\n      D0.Geometry.nonvacuumBrinkmannProfile coupling (D0.Geometry.twoComponentMatterNormSq rate) a2 b2 a3 b3 x y)\n    x y =\n  -4 * coupling *\n    D0.Geometry.twoComponentMatterNormSq\n      (D0.Geometry.finiteMatterForwardGradient h base (D0.Geometry.finiteMatterMidpointStep h rate base))",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 71,
+            "line": 124
+          },
+          "start": {
+            "column": 0,
+            "line": 110
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 59,
+            "line": 114
+          },
+          "start": {
+            "column": 8,
+            "line": 114
+          }
+        }
+      },
+      "elaborated_type": "∀ (h coupling a2 b2 a3 b3 x y : ℝ) (rate base : Fin 2 → ℝ),\n  h ≠ 0 →\n    D0.Geometry.transverseFivePointLaplacian h\n        (fun x y =>\n          D0.Geometry.nonvacuumBrinkmannProfile coupling (D0.Geometry.twoComponentMatterNormSq rate) a2 b2 a3 b3 x y)\n        x y =\n      -4 * coupling *\n        D0.Geometry.twoComponentMatterNormSq\n          (D0.Geometry.finiteMatterForwardGradient h base (D0.Geometry.finiteMatterMidpointStep h rate base))",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.nonvacuumProfile_source_eq_finiteMidpointMatterNorm",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointStep",
+        "D0.Geometry.nonvacuumBrinkmannProfile",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "D0.Geometry.transverseFivePoint_nonvacuumBrinkmannProfile_eq_source",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "D0.Geometry.twoComponentMatterNormSq_midpointGradient_eq_rate",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin",
+        "HMul.hMul",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "instHMul",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointStep",
+        "D0.Geometry.nonvacuumBrinkmannProfile",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Eq",
+        "Fin",
+        "HMul.hMul",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHMul",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "f",
+          "type": "ℝ → ℝ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 77,
+            "line": 34
+          },
+          "start": {
+            "column": 0,
+            "line": 32
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 32,
+            "line": 33
+          },
+          "start": {
+            "column": 4,
+            "line": 33
+          }
+        }
+      },
+      "elaborated_type": "ℝ → (ℝ → ℝ → ℝ) → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.transverseFivePointLaplacian",
+      "proof_dependencies": [
+        "D0.Geometry.transverseFivePointLaplacian._proof_1",
+        "DivInvMonoid.toDiv",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instDivInvMonoid",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instSub",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Real"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "binders": [],
+      "conclusion_whnf": "(3 + 1).AtLeastTwo",
+      "declaration_kind": "theorem",
+      "declaration_ranges": null,
+      "elaborated_type": "(3 + 1).AtLeastTwo",
+      "exists": true,
+      "internal_name": true,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.transverseFivePointLaplacian._proof_1",
+      "proof_dependencies": [
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "OfNat.ofNat",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "HAdd.hAdd",
+        "Nat",
+        "Nat.AtLeastTwo",
+        "OfNat.ofNat",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.transverseFivePointLaplacian h (fun x y => D0.Geometry.harmonicBrinkmannCubic a2 b2 a3 b3 x y) x y = 0",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 55
+          },
+          "start": {
+            "column": 0,
+            "line": 48
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 58,
+            "line": 49
+          },
+          "start": {
+            "column": 8,
+            "line": 49
+          }
+        }
+      },
+      "elaborated_type": "∀ (h a2 b2 a3 b3 x y : ℝ),\n  h ≠ 0 →\n    D0.Geometry.transverseFivePointLaplacian h (fun x y => D0.Geometry.harmonicBrinkmannCubic a2 b2 a3 b3 x y) x y = 0",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.transverseFivePoint_harmonicBrinkmannCubic_eq_zero",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "Bool",
+        "Bool.true",
+        "CommGroupWithZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommGroupWithZero.toGroupWithZero",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.harmonicBrinkmannCubic",
+        "D0.Geometry.harmonicBrinkmannCubic._proof_1",
+        "D0.Geometry.harmonicBrinkmannCubic._proof_2",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "D0.Geometry.transverseFivePointLaplacian._proof_1",
+        "Decidable.decide",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "GroupWithZero",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toMonoidWithZero",
+        "GroupWithZero.toNontrivial",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.instNegInt",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvOneClass.toOne",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "List.nil",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.FieldSimp.NF.atom_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.cons",
+        "Mathlib.Tactic.FieldSimp.NF.cons_eq_div_of_eq_div",
+        "Mathlib.Tactic.FieldSimp.NF.cons_ne_zero",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₁",
+        "Mathlib.Tactic.FieldSimp.NF.eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval_cons_neg",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₁",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₂",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.one_div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.pow_eq_eval",
+        "Mathlib.Tactic.FieldSimp.eq_div_of_eq_one_of_subst",
+        "Mathlib.Tactic.FieldSimp.eq_eq_cancel_eq",
+        "Mathlib.Tactic.FieldSimp.eq_mul_of_eq_eq_eq_mul",
+        "Mathlib.Tactic.FieldSimp.subst_add",
+        "Mathlib.Tactic.FieldSimp.subst_sub",
+        "Mathlib.Tactic.FieldSimp.zpow'",
+        "Mathlib.Tactic.FieldSimp.zpow'_ofNat",
+        "Mathlib.Tactic.FieldSimp.zpow'_one",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.coeff_one",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_bit0",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_nat",
+        "Mathlib.Tactic.Ring.Common.pow_one",
+        "Mathlib.Tactic.Ring.Common.pow_one_cast_of_isNat",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.cast_zero",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MonoidWithZero.toMonoid",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.cast_zero",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Ne",
+        "NeZero.one",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semifield.toCommGroupWithZero",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congr_arg",
+        "congr_arg₂",
+        "div_one",
+        "id",
+        "inferInstance",
+        "instDecidableEqNat",
+        "instDecidableNot",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsCancelMulZero",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "mul_one",
+        "of_decide_eq_true",
+        "one_mul",
+        "one_ne_zero",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.harmonicBrinkmannCubic",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "Eq",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "coupling",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "energy",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b2",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b3",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.transverseFivePointLaplacian h\n    (fun x y => D0.Geometry.nonvacuumBrinkmannProfile coupling energy a2 b2 a3 b3 x y) x y =\n  -4 * coupling * energy",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 74
+          },
+          "start": {
+            "column": 0,
+            "line": 65
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 63,
+            "line": 66
+          },
+          "start": {
+            "column": 8,
+            "line": 66
+          }
+        }
+      },
+      "elaborated_type": "∀ (h coupling energy a2 b2 a3 b3 x y : ℝ),\n  h ≠ 0 →\n    D0.Geometry.transverseFivePointLaplacian h\n        (fun x y => D0.Geometry.nonvacuumBrinkmannProfile coupling energy a2 b2 a3 b3 x y) x y =\n      -4 * coupling * energy",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.transverseFivePoint_nonvacuumBrinkmannProfile_eq_source",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "Bool",
+        "Bool.true",
+        "CommGroupWithZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommGroupWithZero.toGroupWithZero",
+        "CommRing.toNonUnitalCommRing",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.harmonicBrinkmannCubic",
+        "D0.Geometry.harmonicBrinkmannCubic._proof_1",
+        "D0.Geometry.harmonicBrinkmannCubic._proof_2",
+        "D0.Geometry.nonvacuumBrinkmannProfile",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "D0.Geometry.transverseFivePointLaplacian._proof_1",
+        "Decidable.decide",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toCommRing",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "GroupWithZero",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toMonoidWithZero",
+        "GroupWithZero.toNontrivial",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.instNegInt",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvOneClass.toOne",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "List.nil",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.FieldSimp.NF.atom_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.cons",
+        "Mathlib.Tactic.FieldSimp.NF.cons_eq_div_of_eq_div",
+        "Mathlib.Tactic.FieldSimp.NF.cons_ne_zero",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₁",
+        "Mathlib.Tactic.FieldSimp.NF.eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval_cons_neg",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₁",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₂",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.one_div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.pow_eq_eval",
+        "Mathlib.Tactic.FieldSimp.eq_div_of_eq_one_of_subst",
+        "Mathlib.Tactic.FieldSimp.eq_eq_cancel_eq",
+        "Mathlib.Tactic.FieldSimp.eq_mul_of_eq_eq_eq_mul",
+        "Mathlib.Tactic.FieldSimp.subst_add",
+        "Mathlib.Tactic.FieldSimp.subst_sub",
+        "Mathlib.Tactic.FieldSimp.zpow'",
+        "Mathlib.Tactic.FieldSimp.zpow'_ofNat",
+        "Mathlib.Tactic.FieldSimp.zpow'_one",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.coeff_one",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_congr",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_bit0",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_nat",
+        "Mathlib.Tactic.Ring.Common.pow_one",
+        "Mathlib.Tactic.Ring.Common.pow_one_cast_of_isNat",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MonoidWithZero.toMonoid",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Ne",
+        "NeZero.one",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "NonUnitalCommRing.toNonUnitalNonAssocCommRing",
+        "NonUnitalNonAssocCommRing.toNonUnitalNonAssocRing",
+        "NonUnitalNonAssocRing.toHasDistribNeg",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semifield.toCommGroupWithZero",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congr_arg",
+        "congr_arg₂",
+        "div_one",
+        "id",
+        "inferInstance",
+        "instDecidableEqNat",
+        "instDecidableNot",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsCancelMulZero",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "mul_neg",
+        "mul_one",
+        "neg_mul",
+        "of_decide_eq_true",
+        "one_mul",
+        "one_ne_zero",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.nonvacuumBrinkmannProfile",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "Eq",
+        "HMul.hMul",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHMul",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.transverseFivePointLaplacian h (fun x y => x ^ 2 + y ^ 2) x y = 4",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 6,
+            "line": 63
+          },
+          "start": {
+            "column": 0,
+            "line": 57
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 51,
+            "line": 58
+          },
+          "start": {
+            "column": 8,
+            "line": 58
+          }
+        }
+      },
+      "elaborated_type": "∀ (h x y : ℝ), h ≠ 0 → D0.Geometry.transverseFivePointLaplacian h (fun x y => x ^ 2 + y ^ 2) x y = 4",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.transverseFivePoint_radialQuadratic_eq_four",
+      "proof_dependencies": [
+        "AddCommGroup.toDivisionAddCommMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddGroupWithOne.toAddMonoidWithOne",
+        "AddMonoidWithOne.toNatCast",
+        "Bool",
+        "Bool.true",
+        "CommGroupWithZero",
+        "CommGroupWithZero.toDivisionCommMonoid",
+        "CommGroupWithZero.toGroupWithZero",
+        "CommRing.toRing",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "D0.Geometry.transverseFivePointLaplacian._proof_1",
+        "Decidable.decide",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "DivInvMonoid.toDiv",
+        "DivInvOneMonoid.toInvOneClass",
+        "DivisionCommMonoid.toDivisionMonoid",
+        "DivisionMonoid.toDivInvOneMonoid",
+        "DivisionRing.toRing",
+        "DivisionSemiring.toSemiring",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Field.toDivisionRing",
+        "Field.toSemifield",
+        "GroupWithZero",
+        "GroupWithZero.toDivInvMonoid",
+        "GroupWithZero.toMonoidWithZero",
+        "GroupWithZero.toNontrivial",
+        "HAdd.hAdd",
+        "HDiv.hDiv",
+        "HMul.hMul",
+        "HPow.hPow",
+        "HSub.hSub",
+        "Int",
+        "Int.instNegInt",
+        "Int.negOfNat",
+        "Int.ofNat",
+        "Int.rawCast",
+        "InvOneClass.toOne",
+        "IsCancelMulZero.toIsLeftCancelMulZero",
+        "List.nil",
+        "Mathlib.Meta.NormNum.IsInt.of_raw",
+        "Mathlib.Meta.NormNum.IsInt.to_isNat",
+        "Mathlib.Meta.NormNum.IsInt.to_raw_eq",
+        "Mathlib.Meta.NormNum.IsNat.mk",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_isInt",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.instAddMonoidWithOne",
+        "Mathlib.Meta.NormNum.instAtLeastTwo",
+        "Mathlib.Meta.NormNum.isInt_add",
+        "Mathlib.Meta.NormNum.isInt_mul",
+        "Mathlib.Meta.NormNum.isInt_neg",
+        "Mathlib.Meta.NormNum.isNat_add",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Meta.NormNum.isNat_ofNat",
+        "Mathlib.Tactic.FieldSimp.NF.atom_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.cons",
+        "Mathlib.Tactic.FieldSimp.NF.cons_eq_div_of_eq_div",
+        "Mathlib.Tactic.FieldSimp.NF.cons_ne_zero",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.div_eq_eval₁",
+        "Mathlib.Tactic.FieldSimp.NF.eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval",
+        "Mathlib.Tactic.FieldSimp.NF.eval_cons_mul_eval_cons_neg",
+        "Mathlib.Tactic.FieldSimp.NF.eval_mul_eval_cons",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.mul_eq_eval₃",
+        "Mathlib.Tactic.FieldSimp.NF.one_div_eq_eval",
+        "Mathlib.Tactic.FieldSimp.NF.pow_eq_eval",
+        "Mathlib.Tactic.FieldSimp.eq_div_of_eq_one_of_subst",
+        "Mathlib.Tactic.FieldSimp.eq_eq_cancel_eq",
+        "Mathlib.Tactic.FieldSimp.eq_mul_of_eq_eq_eq_mul",
+        "Mathlib.Tactic.FieldSimp.subst_add",
+        "Mathlib.Tactic.FieldSimp.subst_sub",
+        "Mathlib.Tactic.FieldSimp.zpow'",
+        "Mathlib.Tactic.FieldSimp.zpow'_ofNat",
+        "Mathlib.Tactic.FieldSimp.zpow'_one",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf",
+        "Mathlib.Tactic.Ring.Common.add_overlap_pf_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_gt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_overlap_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.coeff_one",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_pow_mul",
+        "Mathlib.Tactic.Ring.Common.mul_pp_pf_overlap",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.neg_add",
+        "Mathlib.Tactic.Ring.Common.neg_mul",
+        "Mathlib.Tactic.Ring.Common.neg_zero",
+        "Mathlib.Tactic.Ring.Common.one_pow",
+        "Mathlib.Tactic.Ring.Common.pow_add",
+        "Mathlib.Tactic.Ring.Common.pow_bit0",
+        "Mathlib.Tactic.Ring.Common.pow_congr",
+        "Mathlib.Tactic.Ring.Common.pow_nat",
+        "Mathlib.Tactic.Ring.Common.pow_one",
+        "Mathlib.Tactic.Ring.Common.pow_one_cast_of_isNat",
+        "Mathlib.Tactic.Ring.Common.pow_zero",
+        "Mathlib.Tactic.Ring.Common.single_pow",
+        "Mathlib.Tactic.Ring.Common.sub_congr",
+        "Mathlib.Tactic.Ring.Common.sub_pf",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.cast_pos",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MonoidWithZero.toMonoid",
+        "MonoidWithZero.toMulZeroOneClass",
+        "MulZeroClass.toMul",
+        "MulZeroClass.toZero",
+        "MulZeroOneClass.toMulOneClass",
+        "MulZeroOneClass.toMulZeroClass",
+        "Nat",
+        "Nat.instAddMonoidWithOne",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instCommSemiring",
+        "Nat.instNeZeroSucc",
+        "Nat.rawCast",
+        "Ne",
+        "NeZero.one",
+        "Neg.neg",
+        "NegZeroClass.toNeg",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "One.toOfNat1",
+        "Prod",
+        "Prod.fst",
+        "Prod.mk",
+        "Prod.snd",
+        "Real",
+        "Real.commRing",
+        "Real.instAdd",
+        "Real.instCommSemiring",
+        "Real.instDivInvMonoid",
+        "Real.instField",
+        "Real.instMonoid",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instRing",
+        "Real.instSub",
+        "Real.instZero",
+        "Ring",
+        "Ring.toAddCommGroup",
+        "Ring.toAddGroupWithOne",
+        "Ring.toSemiring",
+        "Semifield.toCommGroupWithZero",
+        "Semifield.toDivisionSemiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "SubNegZeroMonoid.toNegZeroClass",
+        "SubtractionCommMonoid.toSubtractionMonoid",
+        "SubtractionMonoid.toSubNegZeroMonoid",
+        "Zero.toOfNat0",
+        "congrArg",
+        "congr_arg",
+        "congr_arg₂",
+        "div_one",
+        "id",
+        "inferInstance",
+        "instDecidableEqNat",
+        "instDecidableNot",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHDiv",
+        "instHMul",
+        "instHPow",
+        "instHSub",
+        "instIsCancelMulZero",
+        "instMulZeroClassOfSemiring",
+        "instOfNat",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat",
+        "mul_one",
+        "of_decide_eq_true",
+        "one_mul",
+        "one_ne_zero",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.transverseFivePointLaplacian",
+        "Eq",
+        "HAdd.hAdd",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instMonoid",
+        "Real.instNatCast",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instHAdd",
+        "instHPow",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "v",
+          "type": "Fin 2 → ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 22,
+            "line": 88
+          },
+          "start": {
+            "column": 0,
+            "line": 86
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 28,
+            "line": 87
+          },
+          "start": {
+            "column": 4,
+            "line": 87
+          }
+        }
+      },
+      "elaborated_type": "(Fin 2 → ℝ) → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.twoComponentMatterNormSq",
+      "proof_dependencies": [
+        "Fin",
+        "Fin.fintype",
+        "Finset.sum",
+        "Finset.univ",
+        "HPow.hPow",
+        "Monoid.toPow",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "instHPow",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.twoComponentMatterNormSq\n    (D0.Geometry.finiteMatterForwardGradient h base (D0.Geometry.finiteMatterMidpointStep h rate base)) =\n  D0.Geometry.twoComponentMatterNormSq rate",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 64,
+            "line": 108
+          },
+          "start": {
+            "column": 0,
+            "line": 99
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 57,
+            "line": 100
+          },
+          "start": {
+            "column": 8,
+            "line": 100
+          }
+        }
+      },
+      "elaborated_type": "∀ (h : ℝ) (rate base : Fin 2 → ℝ),\n  h ≠ 0 →\n    D0.Geometry.twoComponentMatterNormSq\n        (D0.Geometry.finiteMatterForwardGradient h base (D0.Geometry.finiteMatterMidpointStep h rate base)) =\n      D0.Geometry.twoComponentMatterNormSq rate",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.twoComponentMatterNormSq_midpointGradient_eq_rate",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterForwardGradient_midpointStep",
+        "D0.Geometry.finiteMatterMidpointStep",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "HPow.hPow",
+        "Membership.mem",
+        "Monoid.toPow",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instZero",
+        "SetLike.instMembership",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "instHPow",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointStep",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Eq",
+        "Fin",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a._@._internal._hyg.0",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a._@._internal._hyg.0",
+          "type": "Fin 2"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 49,
+            "line": 132
+          },
+          "start": {
+            "column": 0,
+            "line": 126
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 31,
+            "line": 127
+          },
+          "start": {
+            "column": 4,
+            "line": 127
+          }
+        }
+      },
+      "elaborated_type": "ℝ → (ℕ → Fin 2 → ℝ) → (Fin 2 → ℝ) → ℕ → Fin 2 → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteMatterMidpointHistory",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterMidpointHistory._f",
+        "Fin",
+        "Nat",
+        "Nat.brecOn",
+        "OfNat.ofNat",
+        "Real",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "Fin 2"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.finiteMatterMidpointHistory h rate base (n + 1) i =\n  D0.Geometry.finiteMatterMidpointHistory h rate base n i + h * rate n i",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 5,
+            "line": 140
+          },
+          "start": {
+            "column": 0,
+            "line": 134
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 40,
+            "line": 135
+          },
+          "start": {
+            "column": 8,
+            "line": 135
+          }
+        }
+      },
+      "elaborated_type": "∀ (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) (n : ℕ) (i : Fin 2),\n  D0.Geometry.finiteMatterMidpointHistory h rate base (n + 1) i =\n    D0.Geometry.finiteMatterMidpointHistory h rate base n i + h * rate n i",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteMatterMidpointHistory_next",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "Eq.refl",
+        "Fin",
+        "HAdd.hAdd",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "Eq",
+        "Fin",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instMul",
+        "instAddNat",
+        "instHAdd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "Fin 2"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base n)\n    (D0.Geometry.finiteMatterMidpointHistory h rate base (n + 1)) i =\n  rate n i",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 52,
+            "line": 166
+          },
+          "start": {
+            "column": 0,
+            "line": 154
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 51,
+            "line": 155
+          },
+          "start": {
+            "column": 8,
+            "line": 155
+          }
+        }
+      },
+      "elaborated_type": "∀ (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) (n : ℕ) (i : Fin 2),\n  h ≠ 0 →\n    D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base n)\n        (D0.Geometry.finiteMatterMidpointHistory h rate base (n + 1)) i =\n      rate n i",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteMatterForwardGradient_midpointHistory",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterForwardGradient_midpointStep",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "Eq",
+        "Fin",
+        "HAdd.hAdd",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "Eq",
+        "Fin",
+        "HAdd.hAdd",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.twoComponentMatterNormSq\n    (D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base n)\n      (D0.Geometry.finiteMatterMidpointHistory h rate base (n + 1))) =\n  D0.Geometry.twoComponentMatterNormSq (rate n)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 69,
+            "line": 180
+          },
+          "start": {
+            "column": 0,
+            "line": 168
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 64,
+            "line": 169
+          },
+          "start": {
+            "column": 8,
+            "line": 169
+          }
+        }
+      },
+      "elaborated_type": "∀ (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) (n : ℕ),\n  h ≠ 0 →\n    D0.Geometry.twoComponentMatterNormSq\n        (D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base n)\n          (D0.Geometry.finiteMatterMidpointHistory h rate base (n + 1))) =\n      D0.Geometry.twoComponentMatterNormSq (rate n)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterForwardGradient_midpointHistory",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin",
+        "Fin.fintype",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.sum_congr",
+        "Finset.univ",
+        "HAdd.hAdd",
+        "HPow.hPow",
+        "Membership.mem",
+        "Monoid.toPow",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instMonoid",
+        "Real.instZero",
+        "SetLike.instMembership",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instHPow",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Eq",
+        "Fin",
+        "HAdd.hAdd",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "coupling",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a2",
+          "type": "ℕ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b2",
+          "type": "ℕ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a3",
+          "type": "ℕ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b3",
+          "type": "ℕ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        }
+      ],
+      "conclusion_whnf": "ℝ",
+      "declaration_kind": "definition",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 35,
+            "line": 202
+          },
+          "start": {
+            "column": 0,
+            "line": 197
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 39,
+            "line": 198
+          },
+          "start": {
+            "column": 4,
+            "line": 198
+          }
+        }
+      },
+      "elaborated_type": "ℝ → (ℕ → Fin 2 → ℝ) → (ℕ → ℝ) → (ℕ → ℝ) → (ℕ → ℝ) → (ℕ → ℝ) → ℕ → ℝ → ℝ → ℝ",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteTimeNonvacuumBrinkmannProfile",
+      "proof_dependencies": [
+        "D0.Geometry.nonvacuumBrinkmannProfile",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "Fin",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "coupling",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a2",
+          "type": "ℕ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b2",
+          "type": "ℕ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "a3",
+          "type": "ℕ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "b3",
+          "type": "ℕ → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "x",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "y",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.transverseFivePointLaplacian h\n    (fun x y => D0.Geometry.finiteTimeNonvacuumBrinkmannProfile coupling rate a2 b2 a3 b3 n x y) x y =\n  -4 * coupling *\n    D0.Geometry.twoComponentMatterNormSq\n      (D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base n)\n        (D0.Geometry.finiteMatterMidpointHistory h rate base (n + 1)))",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 21,
+            "line": 224
+          },
+          "start": {
+            "column": 0,
+            "line": 204
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 64,
+            "line": 209
+          },
+          "start": {
+            "column": 8,
+            "line": 209
+          }
+        }
+      },
+      "elaborated_type": "∀ (h coupling : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) (a2 b2 a3 b3 : ℕ → ℝ) (n : ℕ) (x y : ℝ),\n  h ≠ 0 →\n    D0.Geometry.transverseFivePointLaplacian h\n        (fun x y => D0.Geometry.finiteTimeNonvacuumBrinkmannProfile coupling rate a2 b2 a3 b3 n x y) x y =\n      -4 * coupling *\n        D0.Geometry.twoComponentMatterNormSq\n          (D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base n)\n            (D0.Geometry.finiteMatterMidpointHistory h rate base (n + 1)))",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteTimeNonvacuumProfile_source_eq_midpointHistoryNorm",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.finiteTimeNonvacuumBrinkmannProfile",
+        "D0.Geometry.nonvacuumBrinkmannProfile",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "D0.Geometry.transverseFivePoint_nonvacuumBrinkmannProfile_eq_source",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Fin",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "congrArg",
+        "id",
+        "instAddNat",
+        "instHAdd",
+        "instHMul",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.finiteTimeNonvacuumBrinkmannProfile",
+        "D0.Geometry.transverseFivePointLaplacian",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Eq",
+        "Fin",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Nat",
+        "Nat.instAtLeastTwoHAddOfNat",
+        "Nat.instNeZeroSucc",
+        "Ne",
+        "Neg.neg",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instMul",
+        "Real.instNatCast",
+        "Real.instNeg",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instAddNat",
+        "instHAdd",
+        "instHMul",
+        "instOfNatAtLeastTwo",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "i",
+          "type": "Fin 2"
+        }
+      ],
+      "conclusion_whnf": "D0.Geometry.finiteMatterMidpointHistory h rate base n i = base i + h * ∑ k ∈ Finset.range n, rate k i",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 10,
+            "line": 152
+          },
+          "start": {
+            "column": 0,
+            "line": 142
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 55,
+            "line": 143
+          },
+          "start": {
+            "column": 8,
+            "line": 143
+          }
+        }
+      },
+      "elaborated_type": "∀ (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) (n : ℕ) (i : Fin 2),\n  D0.Geometry.finiteMatterMidpointHistory h rate base n i = base i + h * ∑ k ∈ Finset.range n, rate k i",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.finiteMatterMidpointHistory_eq_base_add_rateSum",
+      "proof_dependencies": [
+        "AddCommMonoid.toAddMonoid",
+        "AddCommMonoidWithOne.toAddMonoidWithOne",
+        "AddMonoid.toAddZeroClass",
+        "AddZero.toAdd",
+        "AddZeroClass.toAddZero",
+        "CommSemiring.toSemiring",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.finiteMatterMidpointHistory_next",
+        "Distrib.toAdd",
+        "Distrib.toMul",
+        "Eq",
+        "Eq.mpr",
+        "Eq.refl",
+        "Eq.symm",
+        "Eq.trans",
+        "Fin",
+        "Finset.range",
+        "Finset.sum",
+        "Finset.sum_range_succ",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "HPow.hPow",
+        "Mathlib.Meta.NormNum.IsNat.of_raw",
+        "Mathlib.Meta.NormNum.IsNat.to_raw_eq",
+        "Mathlib.Meta.NormNum.isNat_mul",
+        "Mathlib.Tactic.Ring.Common.add_congr",
+        "Mathlib.Tactic.Ring.Common.add_mul",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_lt",
+        "Mathlib.Tactic.Ring.Common.add_pf_add_zero",
+        "Mathlib.Tactic.Ring.Common.add_pf_zero_add",
+        "Mathlib.Tactic.Ring.Common.atom_pf",
+        "Mathlib.Tactic.Ring.Common.mul_add",
+        "Mathlib.Tactic.Ring.Common.mul_congr",
+        "Mathlib.Tactic.Ring.Common.mul_pf_left",
+        "Mathlib.Tactic.Ring.Common.mul_pf_right",
+        "Mathlib.Tactic.Ring.Common.mul_zero",
+        "Mathlib.Tactic.Ring.Common.zero_mul",
+        "Mathlib.Tactic.Ring.of_eq",
+        "Monoid.toPow",
+        "MulZeroClass.mul_zero",
+        "MulZeroClass.toZero",
+        "Nat",
+        "Nat.instCommSemiring",
+        "Nat.rawCast",
+        "Nat.recAux",
+        "NonAssocSemiring.toAddCommMonoidWithOne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instAddMonoid",
+        "Real.instCommSemiring",
+        "Real.instMul",
+        "Real.semiring",
+        "Semiring.toMonoid",
+        "Semiring.toNonAssocSemiring",
+        "True",
+        "Zero.toOfNat0",
+        "add_zero",
+        "congrArg",
+        "eq_self",
+        "id",
+        "instAddNat",
+        "instDistribOfSemiring",
+        "instHAdd",
+        "instHMul",
+        "instHPow",
+        "instMulZeroClassOfSemiring",
+        "instOfNatNat",
+        "of_eq_true",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "Eq",
+        "Fin",
+        "Finset.range",
+        "Finset.sum",
+        "HAdd.hAdd",
+        "HMul.hMul",
+        "Nat",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAdd",
+        "Real.instAddCommMonoid",
+        "Real.instMul",
+        "instHAdd",
+        "instHMul",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "binders": [
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "h",
+          "type": "ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "rate",
+          "type": "ℕ → Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "base",
+          "type": "Fin 2 → ℝ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": false,
+          "name": "n",
+          "type": "ℕ"
+        },
+        {
+          "binder_info": "Lean.BinderInfo.default",
+          "is_proposition": true,
+          "name": "hh",
+          "type": "h = 0 → False"
+        }
+      ],
+      "conclusion_whnf": "∑ k ∈ Finset.range n,\n    D0.Geometry.twoComponentMatterNormSq\n      (D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base k)\n        (D0.Geometry.finiteMatterMidpointHistory h rate base (k + 1))) =\n  ∑ k ∈ Finset.range n, D0.Geometry.twoComponentMatterNormSq (rate k)",
+      "declaration_kind": "theorem",
+      "declaration_ranges": {
+        "declaration": {
+          "end": {
+            "column": 20,
+            "line": 195
+          },
+          "start": {
+            "column": 0,
+            "line": 182
+          }
+        },
+        "selection": {
+          "end": {
+            "column": 68,
+            "line": 183
+          },
+          "start": {
+            "column": 8,
+            "line": 183
+          }
+        }
+      },
+      "elaborated_type": "∀ (h : ℝ) (rate : ℕ → Fin 2 → ℝ) (base : Fin 2 → ℝ) (n : ℕ),\n  h ≠ 0 →\n    ∑ k ∈ Finset.range n,\n        D0.Geometry.twoComponentMatterNormSq\n          (D0.Geometry.finiteMatterForwardGradient h (D0.Geometry.finiteMatterMidpointHistory h rate base k)\n            (D0.Geometry.finiteMatterMidpointHistory h rate base (k + 1))) =\n      ∑ k ∈ Finset.range n, D0.Geometry.twoComponentMatterNormSq (rate k)",
+      "exists": true,
+      "internal_name": false,
+      "module": "D0.Geometry.NonvacuumBrinkmannStencil",
+      "name": "D0.Geometry.twoComponentMatterHistorySquaredGradientSum_eq_rateEnergySum",
+      "proof_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "D0.Geometry.twoComponentMatterNormSq_midpointHistoryGradient_eq_rate",
+        "Fin",
+        "Finset",
+        "Finset.instSetLike",
+        "Finset.range",
+        "Finset.sum_congr",
+        "HAdd.hAdd",
+        "Membership.mem",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instZero",
+        "SetLike.instMembership",
+        "Zero.toOfNat0",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat",
+        "rfl"
+      ],
+      "type_dependencies": [
+        "D0.Geometry.finiteMatterForwardGradient",
+        "D0.Geometry.finiteMatterMidpointHistory",
+        "D0.Geometry.twoComponentMatterNormSq",
+        "Eq",
+        "Fin",
+        "Finset.range",
+        "Finset.sum",
+        "HAdd.hAdd",
+        "Nat",
+        "Ne",
+        "OfNat.ofNat",
+        "Real",
+        "Real.instAddCommMonoid",
+        "Real.instZero",
+        "Zero.toOfNat0",
+        "instAddNat",
+        "instHAdd",
+        "instOfNatNat"
+      ],
+      "source_path": "03_FORMALIZATION/D0/Geometry/NonvacuumBrinkmannStencil.lean"
+    }
+  ]
+}

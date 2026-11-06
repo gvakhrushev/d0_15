@@ -1,0 +1,95 @@
+# Фактические return-произведения и относительная ошибка цены
+
+Продолжение существующего WRK-D0-PROOF-ARCHITECTURE-FORMALIZATION в PR #402.
+Исходное доказательство: `02_REGISTRY/research/sources/d0_task_faithful_source_2026-10-28/PROOF_RU.md`, §5, формулы (10)–(12), владелец #334.
+Commit `fd35893d77e4aa5f819bafa0c6428c8e7a8f1812`, blob
+`c99e90a8c8e96bae70e700fa88d1c2d824a1831b`, SHA-256
+`9f2354817860f9024a597dba4bd14c0580cc021de5c473925740b46b0e8f96e5`.
+Побайтовое равенство локального источника этому pin проверено.
+
+## Доказанный переход
+
+Из ошибки полного входного эффекта и точного scalar reference corner Lean
+выводит оценку всего упорядоченного return-произведения после произвольного
+сохраняемого прошлого K. Модули GramMatrixOrder и PositiveMatrixLogDet
+переносят её в порядок положительных матриц и исходную цену logdet.
+Коэффициент ошибки — реальный trace-gain той же матрицы zT K†K, без
+множителя размерности, обратной матрицы прошлого или дополнительного 1/T.
+
+Конкретный двухточечный потребитель выводит обе ошибки, сохраняя один K,
+точные масштабы Tₖ=qₖT₀ и baseline gain. Условия ηₖ≤η, qₖ≤exp θ,
+положительности gain и Λ, а также t≠0 явны. Готовая оценка ошибки цены
+или матричный sandwich не предположены. Блоки и матрицы не обязаны
+коммутировать. В ненормированной оценке допустим и нулевой K;
+положительный gain исключает этот случай для нормированного контраста.
+
+Общие Analysis-леммы и конкретные Research-потребители зарегистрированы в
+существующем formal_support.csv и публичном D0.All. Точный список модулей,
+полные типы, зависимости доказательств и аксиомы фиксируются компилируемым
+инвентарём на чистом implementation snapshot. Narrow-проверки прошли. Итоговая локальная D0.All прошла: 4786 Lake jobs;
+source digest `e29d141659b19bb9dd707ebfe5213242a1662364214aebc3ac56e27a86432bbd`.
+Полный вывод сохранён в build.log.gz, точный receipt — в build_receipt.json.
+В выводе 1323 предупреждения из неизменённых модулей; в девяти новых
+модулях предупреждений нет. Проверки repository, generated views, no-sorry,
+debt non-growth и diff прошли; существующий debt baseline равен 5.
+[declarations.json](declarations.json) извлечён через публичный D0.All на чистом
+коммите `7062d1c9e9fe21bf6373e494d169566d9b6505ba` (`worktree_dirty=false`).
+Его source digest совпадает с общей сборкой. В нём 239 деклараций, включая
+93 записи девяти новых модулей и 146 записей прежних TheoryTransfer/ReturnBound
+для повторной проверки Book02. Числа включают сгенерированные Lean-декларации
+и не являются числом принятых результатов C0. Все записи новых модулей
+разрешены и содержат полные proof details; footprint ограничен
+Classical.choice, Quot.sound, propext.
+
+## Граница результата
+
+Формализована цена −log(det.re), её спектральная сумма и вещественный
+trace-resolvent gain на положительном pencil. Отдельное CFC-тождество
+trace матричного логарифма здесь не заявлено. Векторные оценки дают
+нужное содержание (10); буквальная запись s_min отдельно не вводилась.
+T₀ — заданный положительный базовый масштаб, а не новое центральное
+физическое исполнение. Независимая проверка прочитала реальные
+типовые/масштабные связи и не обнаружила круговых предпосылок.
+
+Остаются отдельные следствия §5: uniform-template compiler budget,
+формальная производная по log T и полное двустороннее per-mode отношение
+коэффициентов. Тепло, измерительные ошибки и независимые подготовительные
+источники не удалены; допуск значений не превращён в оценку производных.
+C0 не принят, вся программа формализации не завершена; GR_closed=false.
+
+## Повторение проверок
+
+```bash
+python3 tools/lean_task_build.py narrow D0.Research.TaskFaithfulReturnContrast
+python3 tools/lean_task_build.py narrow D0.Analysis.MatrixRelativeLogDetContrast
+python3 tools/lean_task_build.py final
+python3 tools/validate_repo.py
+python3 tools/generate_lean_views.py --check
+python3 03_FORMALIZATION/tools/check_no_sorry_in_core.py --all
+python3 tools/formalization_debt_audit.py --check
+```
+
+Для повторного инвентаря используются все одиннадцать модулей из
+`requested_modules` в declarations.json; каждый передаётся отдельным
+`--module` в tools/lean_declaration_inventory.py. Результат должен быть
+собран из совместимых исходников и зависимостей; старый receipt сам по себе
+не удостоверяет новую рабочую копию. Полный cold-start и исторические
+математические проверки #334 в этом Lean-проходе не перезапускались.
+
+## Совместимость Book02 после изменения Lean-входов
+
+На report snapshot `6bc481de80e80f37da40e3c996ae52d70398ff94` read-only
+C0 view с новым инвентарём проверил прежние 30 кандидатов Book02 без issues.
+[c0_book02_view.json](c0_book02_view.json) сохраняет точный результат;
+[validation.json](validation.json) — область проверок и хеши свидетельств.
+Это проверка источников, сигнатур и совместимости tracked inputs. Сам view
+не запускает Lean и не принимает семантику или состав C0. Общая сборка
+проверена отдельно, как указано выше. Прежний Book02-инвентарь сохраняет
+свою историческую область, но не выдаётся за актуальный после новых модулей.
+
+```bash
+python3 tools/c0_reconciliation.py --repo . \
+  --snapshot 6bc481de80e80f37da40e3c996ae52d70398ff94 --kernel-sections \
+  --kernel-inventory 02_REGISTRY/research/sources/d0_proof_architecture_formalization_2026-10-24/reports/return_product_price_2026-11-04/declarations.json \
+  --kernel-inventory-sha256 e265774da7e2ecaeeac6f8af6b521736b4ed0df56be60628c1c3ef4d26e9c8b0
+```

@@ -1,0 +1,56 @@
+{
+  "consumed_parent_commit": "eebcb5e467742df3e9cf7fa9702042d7294aa742",
+  "delta_commits": [
+    {
+      "commit": "d8093df5c79db790b09c6c5f2cb85f194f9e5fc5",
+      "subject": "test(#334): verify conditional geometric closure from unreduced Hamiltonian brackets"
+    },
+    {
+      "commit": "c163f409dc0fcb950aef92b9346481db9813fcbb",
+      "subject": "research(#334): derive conditional geometric closure and distinguish it from moving-cut Ward"
+    },
+    {
+      "commit": "20ace871b5e4698460b6364caaa99c9f4a538983",
+      "subject": "test(#334): retain executed full-bracket and negative-control results"
+    },
+    {
+      "commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "subject": "research(#334): connect moving-cut boundary to explicit conditional Einstein law-selection test"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 4035,
+      "git_blob": "9f8bf5574179073c297eb8ecbd3616984e5c56a8",
+      "intake_path": "upstream/A4D_ROOT_CUT_TO_REFOLIATION_CLOSURE_2026_10_28.md",
+      "origin_path": "02_REGISTRY/research/A4D_ROOT_CUT_TO_REFOLIATION_CLOSURE_2026_10_28.md",
+      "sha256": "d0af048a5ebaf91b02a98cbf27d8faee69592908f7669c446963cbf712fe2125"
+    },
+    {
+      "bytes": 24215,
+      "git_blob": "03ad9147c46411099667658871f847e9f3bee883",
+      "intake_path": "upstream/PROOF_RU.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_refoliation_closure_2026-10-28/PROOF_RU.md",
+      "sha256": "6155eb31068ffeeb72439dcb9860bd3b82dbd3072fbc2b75a1fe91276d2be71a"
+    },
+    {
+      "bytes": 10056,
+      "git_blob": "615e2b2a0421e11485c9f15497edaa47fd2b37e1",
+      "intake_path": "upstream/check_refoliation_closure.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_refoliation_closure_2026-10-28/check_refoliation_closure.py",
+      "sha256": "d2b83484e840b91e62b8ac2af4155d5fd8c8e5748ee3027f6cbea0b19263da33"
+    },
+    {
+      "bytes": 3507,
+      "git_blob": "334ab85094699082a71fa56db4c089c6a28e9e76",
+      "intake_path": "upstream/result.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_refoliation_closure_2026-10-28/result.json",
+      "sha256": "3b13c4146e3fdb3990572ac56db837d2badaf22794eca78ce7f72f159d791204"
+    }
+  ],
+  "pull_request": 334,
+  "schema": "d0-published-source-delta-manifest-v1",
+  "scope": "Read-only source intake and scoped local replay; not a new scientific owner, claim, assembly binding, native D0 selection, or GR closure.",
+  "source_head_commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+  "source_repository": "gvakhrushev/d0_15"
+}

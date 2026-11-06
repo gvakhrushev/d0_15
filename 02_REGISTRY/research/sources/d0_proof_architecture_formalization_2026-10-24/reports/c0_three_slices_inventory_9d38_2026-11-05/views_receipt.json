@@ -1,0 +1,33 @@
+{
+  "schema": "d0-c0-versioned-views-4faf-v1",
+  "corrected_snapshot": "4fafa9ea90ecb2ddc1dbdb917c229dfff1a1e011",
+  "historical_snapshot": "b810950c9a4d618329a78951903bce78adc7b34f",
+  "inventory_sha256": "a23bb1ba6ff7b99afcaf7140106a26267c31da1cb511b1286b4ae46b81fbf841",
+  "views": {
+    "book01-0116": {
+      "units": 6,
+      "issues": [],
+      "sha256": "6c44b1806f3a6d553cc0bc7b477eab7e419ea2a9e1520bb23651b2242adb82d3"
+    },
+    "book01": {
+      "units": 44,
+      "issues": [],
+      "sha256": "5ff4a8d70c874c870ea4960649cb5133e9e93181be49a0c40889f81c75ef4f83"
+    },
+    "book02": {
+      "units": 30,
+      "issues": [],
+      "sha256": "c5e19c9a7fb406f7e3361c039c320e18c3c7ff55953ba7dd0887542146a0e656"
+    },
+    "book02-historical": {
+      "units": 30,
+      "issues": [],
+      "sha256": "779633b95623f02d7acdd4e0112d594ccc9cea491cd3227ddae326d3fe742774"
+    }
+  },
+  "book02_historical_labels": 30,
+  "book02_corrected_excerpts": 30,
+  "book02_excerpts_containing_correction": 8,
+  "semantic_acceptance": "not_assessed",
+  "GR_closed": false
+}

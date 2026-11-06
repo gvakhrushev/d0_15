@@ -1,0 +1,43 @@
+{
+  "bad_edge_distance_squared": "27/14",
+  "checks": [
+    "whole_phase_form_including_nonconstant_beta",
+    "exact_boundary_one_form_identity",
+    "full_column_rank",
+    "canonical_rank_twice_probability_rank",
+    "full_kernel_0",
+    "full_kernel_1",
+    "complete_simplex_edge_01",
+    "complete_simplex_edge_02",
+    "complete_simplex_edge_12",
+    "positive_selected_edge_descends",
+    "positive_frequency_coordinate",
+    "bad_reader_no_edge_01",
+    "bad_reader_no_edge_02",
+    "bad_reader_no_edge_12",
+    "bad_reader_genuine_vertical_direction",
+    "nonzero_vertical_reaction_at_phase",
+    "exact_bad_edge_distance_squared",
+    "exact_rms_vertical_source",
+    "decoder_chain_reaction_zero_on_vertical",
+    "probability_velocity_equals_phase_derivative",
+    "cosine_limit_value",
+    "cosine_limit_first_source",
+    "cosine_limit_source_derivative",
+    "finite_frequency_fourth_jet_nonzero"
+  ],
+  "complete_simplex_positive_escape": true,
+  "control_count": 24,
+  "decoder_reaction_preserves_vertical_obstruction": true,
+  "rms_vertical_source_squared": "3/7",
+  "scope": "Exact phase-carrier mathematics consuming new 7cv846-850; no physical phase admission, selected native Hamiltonian, HDA or GR closure.",
+  "selected_lower_rank_edge_positive_escape": true,
+  "source_sha256": "15887b6661fb068badc7eb3d8d0a9785adbb48908381f5d5cd3b7639232f2b8d",
+  "status": "PASS_EXACT_PHASE_DESCENT_CONTROLS",
+  "structural_bad_reader_J": [
+    "1",
+    "2",
+    "-3"
+  ],
+  "vertical_derivative_at_test_phase": "2"
+}

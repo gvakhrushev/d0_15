@@ -205,7 +205,8 @@ theorem hodgeSquare_on_spatialShell (N : ℕ) (hL : 3 ≤ archiveFibers N)
 theorem hodgeSquare_maps_spatialShell (N : ℕ) (hL : 3 ≤ archiveFibers N)
     {ψ : ArchiveCochain N} (hψ : ψ ∈ spatialShellSubmodule N) :
     (hodgeCarDiracₗ N ∘ₗ hodgeCarDiracₗ N) ψ ∈ spatialShellSubmodule N := by
-  change hodgeCarDirac N (hodgeCarDirac N ψ) ∈ spatialShellSubmodule N
+  change hodgeCarDiracₗ N (hodgeCarDiracₗ N ψ) ∈ spatialShellSubmodule N
+  rw [hodgeCarDiracₗ_apply, hodgeCarDiracₗ_apply]
   rw [hodgeSquare_on_spatialShell N hL ⟨ψ, hψ⟩]
   exact Submodule.smul_mem _ _ hψ
 
@@ -225,7 +226,8 @@ theorem hodgeSquare_on_spatialShell_eq (N : ℕ) (hL : 3 ≤ archiveFibers N) :
   ext ψ q
   simp only [spatialShellHodgeSquareCompression, LinearMap.restrict_apply,
     LinearMap.comp_apply, LinearMap.smul_apply, LinearMap.id_apply]
-  exact congr_fun (hodgeSquare_on_spatialShell N hL ψ) q
+  simpa only [← hodgeCarDiracₗ_apply] using
+    congr_fun (hodgeSquare_on_spatialShell N hL ψ) q
 
 def permutedShellAxis (σ : Equiv.Perm Role) (hσ : FixesRoleA σ)
     (a : SpatialAxis) : SpatialAxis :=

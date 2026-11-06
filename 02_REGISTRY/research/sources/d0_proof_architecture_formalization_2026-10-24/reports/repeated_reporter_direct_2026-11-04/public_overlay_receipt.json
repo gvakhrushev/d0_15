@@ -1,0 +1,58 @@
+{
+  "schema": "d0-repeated-reporter-external-public-import-v1",
+  "source_commit": "c725f9aab4071237e7854e3eddd6b75d23774bb9",
+  "baseline_source_commit": "b30862d47a5972c346d6f6fe9b4cc985d2a86dc7",
+  "baseline_full_build_commit": "d2733f2bfb355f78c2829eaeb60dfd28c5694f2b",
+  "lean_source_delta_from_baseline": [
+    "D0.Research.TaskFaithfulReporterProductEquality",
+    "D0.Research.TaskFaithfulRepeatedReporterDerivative"
+  ],
+  "compiled": [
+    "D0.Research.TaskFaithfulReporterProductEquality",
+    "D0.Research.TaskFaithfulRepeatedReporterDerivative",
+    "D0.All"
+  ],
+  "exit_code": 0,
+  "axiom_collector_exit": 0,
+  "axiom_scope": "propext, Classical.choice, Quot.sound",
+  "boundary": "Direct Lean compilation in an external overlay using existing cached dependencies; this is not a fresh authenticated Lake full build. Toolchain and caches are not independently attested.",
+  "driver_sha256": "1da5d470a102d8df0fd803acb54eaef5da5e6a0401a6d4a31d7697bf44dc6439",
+  "logs": {
+    "driver": {
+      "raw_sha256": "c972d17f544cf0f1c267434454b3e1dee89f0af4e6e12efeea6623679b0c8f7a",
+      "gzip_sha256": "50167e1686e1a0a363bb6ac0734031d65ba57985c6d6489c6e7b9b80a480dc75"
+    },
+    "reporter_equality": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gzip_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "repeated": {
+      "raw_sha256": "ac9dc9cd4af0e2faae44d89c3c9e26ddc6f736f06f992fe882f6ab37d487b74a",
+      "gzip_sha256": "2e540cf541bd79d1af1437a01ee2d8894f96d50c203bbba834958b7bae0209cc"
+    },
+    "public_all": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gzip_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "public_axioms": {
+      "raw_sha256": "98753e9c1392295f8da57cf76210ab23f1d04135013f22694636f712e85b2e03",
+      "gzip_sha256": "446f268fa1bf1f1e7811a5812e7b3b51a799d28328e357fa22b9db815c944035"
+    }
+  },
+  "GR_closed": false,
+  "source_files": {
+    "03_FORMALIZATION/D0/Research/TaskFaithfulReporterProductEquality.lean": {
+      "sha256": "5bd431723eb630cc76e97b14d76646dea08df7701731f7b0a96a1067e4f5b09d",
+      "git_blob": "83eadfb0251d10c61d5019726ee68daeb39dc02e"
+    },
+    "03_FORMALIZATION/D0/Research/TaskFaithfulRepeatedReporterDerivative.lean": {
+      "sha256": "5d89c1b5c27fd8cda3ae3e8aeee2d88e8237be4a36765e598f6a47d528c6bb95",
+      "git_blob": "627ab7771232ad3cdc15e696928bfa2cee2b259f"
+    },
+    "03_FORMALIZATION/D0/All.lean": {
+      "sha256": "b1187261fc0c09e909ad1ceee2441a586f0b0e0e9ebeb1d84b9df4ce491942f8",
+      "git_blob": "dc2db61ab71292142ad30c83db4cd7095a23af83"
+    }
+  },
+  "driver_boundary": "Exact executed driver expects a pre-created external D0 overlay of baseline cached oleans; machine paths and symlink preparation are not portable. It is retained for traceability, not claimed as one-command reproducibility."
+}

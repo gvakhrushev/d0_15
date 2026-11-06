@@ -1,0 +1,17 @@
+D0.Algebra.IsometricClockDeterminant.det_one_sub_split_embedding.{u_1, u_2, u_3} {κ : Type u_1} {ι : Type u_2}
+  {R : Type u_3} [Fintype κ] [DecidableEq κ] [Fintype ι] [DecidableEq ι] [CommRing R] (J : Matrix κ ι R)
+  (L : Matrix ι κ R) (D : Matrix ι ι R) (h : L * J = 1) : (1 - J * D * L).det = (1 - D).det
+'D0.Algebra.IsometricClockDeterminant.det_one_sub_split_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Algebra.IsometricClockDeterminant.det_one_sub_isometric_embedding.{u_1, u_2} {κ : Type u_1} {ι : Type u_2}
+  [Fintype κ] [DecidableEq κ] [Fintype ι] [DecidableEq ι] (J : Matrix κ ι ℂ) (D : Matrix ι ι ℂ)
+  (hJ : J.conjTranspose * J = 1) : (1 - J * D * J.conjTranspose).det = (1 - D).det
+'D0.Algebra.IsometricClockDeterminant.det_one_sub_isometric_embedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+D0.Algebra.IsometricClockDeterminant.det_clock_defect.{u_1, u_2} {κ : Type u_1} {ι : Type u_2} [Fintype κ]
+  [DecidableEq κ] [Fintype ι] [DecidableEq ι] (J : Matrix κ ι ℂ) (C : Matrix ι ι ℂ) (z : ℂ)
+  (hJ : J.conjTranspose * J = 1) :
+  (1 - z • (J * (1 - C.conjTranspose * C) * J.conjTranspose)).det = ((1 - z) • 1 + z • (C.conjTranspose * C)).det
+'D0.Algebra.IsometricClockDeterminant.det_clock_defect' depends on axioms: [propext, Classical.choice, Quot.sound]

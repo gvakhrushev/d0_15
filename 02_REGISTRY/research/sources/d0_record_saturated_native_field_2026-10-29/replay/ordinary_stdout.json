@@ -1,0 +1,8 @@
+{
+  "checks": 867,
+  "status": "PASS_NATIVE_RECORD_SATURATED_42_SOURCE_STENCILS",
+  "max_error": "8.18946049552107603964555338481e-14",
+  "norm_bound": "1.21477243750548153337502058161e-12",
+  "calls": 11177567015642288,
+  "GR_closed": false
+}
