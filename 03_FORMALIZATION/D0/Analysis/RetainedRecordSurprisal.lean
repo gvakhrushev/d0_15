@@ -57,4 +57,43 @@ theorem hasFDerivAt_moment_fixed (records : Finset ι) {ell : ℝ} (hell : ell �
   simpa using hasFDerivAt_moment records hell mass (fun _ => tariff) (fun _ => 0)
     hpos (fun i _ => hasFDerivAt_const (tariff i) x)
 
+/-- Negative log price in the same units as the record tariffs. -/
+noncomputable def logPrice (records : Finset ι) (ell : ℝ) (mass tariff : ι → ℝ) : ℝ :=
+  -Real.log (moment records ell mass tariff) / ell
+
+/-- The full price derivative averages the moving tariffs' covectors using their
+normalized exponential weights on the retained support. -/
+theorem hasFDerivAt_logPrice {records : Finset ι} (hne : records.Nonempty)
+    {ell : ℝ} (hell : ell ≠ 0) {x : E}
+    (mass tariff : E → ι → ℝ) (dTariff : ι → E →L[ℝ] ℝ)
+    (hpos : ∀ᶠ y in 𝓝 x, ∀ i ∈ records, 0 < mass y i)
+    (hd : ∀ i ∈ records, HasFDerivAt (fun y => tariff y i) (dTariff i) x) :
+    HasFDerivAt (fun y => logPrice records ell (mass y) (tariff y))
+      (∑ i ∈ records, (Real.exp (-ell * tariff x i) /
+        moment records ell (mass x) (tariff x)) • dTariff i) x := by
+  let Z := moment records ell (mass x) (tariff x)
+  have hZ : 0 < Z := by
+    rw [show Z = _ from moment_eq_tariff_sum records hell _ _ hpos.self_of_nhds]
+    exact Finset.sum_pos (fun _ _ => Real.exp_pos _) hne
+  have h := ((hasFDerivAt_moment records hell mass tariff dTariff hpos hd).log
+    hZ.ne').const_mul (-ell⁻¹)
+  have hsum : (-ell⁻¹) • (Z⁻¹ •
+      ∑ i ∈ records, Real.exp (-ell * tariff x i) • ((-ell) • dTariff i)) =
+      ∑ i ∈ records, (Real.exp (-ell * tariff x i) / Z) • dTariff i := by
+    simp only [Finset.smul_sum, smul_smul]
+    apply Finset.sum_congr rfl
+    intro i _
+    congr 1
+    field_simp
+  rw [hsum] at h
+  simpa only [logPrice, Z, div_eq_mul_inv, neg_mul, mul_neg, mul_comm] using h
+
+/-- Fixed tariffs give a locally constant price even for varying record masses. -/
+theorem hasFDerivAt_logPrice_fixed {records : Finset ι} (hne : records.Nonempty)
+    {ell : ℝ} (hell : ell ≠ 0) {x : E} (mass : E → ι → ℝ) (tariff : ι → ℝ)
+    (hpos : ∀ᶠ y in 𝓝 x, ∀ i ∈ records, 0 < mass y i) :
+    HasFDerivAt (fun y => logPrice records ell (mass y) tariff) (0 : E →L[ℝ] ℝ) x := by
+  simpa using hasFDerivAt_logPrice hne hell mass (fun _ => tariff) (fun _ => 0)
+    hpos (fun i _ => hasFDerivAt_const (tariff i) x)
+
 end D0.Analysis.RetainedRecordSurprisal
