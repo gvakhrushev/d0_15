@@ -43,3 +43,14 @@ returned 0; [check.log](check.log) records the exact types and axiom reports.
 The three declarations depend on `propext`, `Classical.choice`, `Quot.sound`.
 The generated `.olean`, not included in Git, had SHA-256
 `2afaa21e3ce46c1d7dcf2fd0db86ad55855a812b0abafae15b9f2a485734de06`.
+
+## Historical six-module inventory
+
+The saved collector output on the original stage checkpoint contains the same 482
+declaration records, byte-for-byte, as the [existing frame inventory](../d0_proof_architecture_formalization_2026-10-24/reports/c0_growing_frame_inventory_d9eb_2026-11-05/declarations.json).
+To reconstruct that historical output, replace the single values of
+`snapshot_commit` and `lean_source_digest` in those bytes with
+`aa5626f53bc6b250d6b2feef098d222883e0886a` and
+`8f24421c46cf8632efbfcce4735d54ca66cd261218914776393317d44b58285e`, respectively.
+The reconstruction was byte-compared with the saved output; its SHA-256 is
+`2c8ba2bc5a12cc3dbf63ead7bf045bb11cb35dcd8ca64b1e01e8de8445dae978`. This observation concerns the six inventoried modules on the old stage checkpoint.

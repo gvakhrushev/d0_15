@@ -3,6 +3,8 @@ open D0.Analysis.RetainedRecordSurprisal
 #print axioms moment_eq_tariff_sum
 #print axioms hasFDerivAt_moment
 #print axioms hasFDerivAt_moment_fixed
+#print axioms hasFDerivAt_logPrice
+#print axioms hasFDerivAt_logPrice_fixed
 
 namespace D0.Research.NativeCodePriceResolution
 

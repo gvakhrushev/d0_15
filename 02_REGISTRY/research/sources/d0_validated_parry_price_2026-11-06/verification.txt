@@ -1,0 +1,24 @@
+Lean 4.30.0, integrated tree 4801059f2ded93d7da4f2028bc419cceb48cc7f3
+
+Build completed successfully (2124 jobs).
+D0_BUILD target=D0.Analysis.RetainedRecordSurprisal seconds=10.6 returncode=0
+source_sha256 a047c1a0af4f5437d4d4920bf0a033ff289206531828034a7f58a4d5f41c18ad
+dependency_sha256 a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e
+environment_sha256 a7ff9e6ac3d152834deea585ab011e45596dbd3f00e62ef9ede79ade2f43dcbe
+
+Build completed successfully (4859 jobs).
+D0_BUILD target=D0.All seconds=13.1 returncode=0
+source_sha256 a047c1a0af4f5437d4d4920bf0a033ff289206531828034a7f58a4d5f41c18ad
+dependency_sha256 a9c8ceda6f52dd316f754d8c403f904416325f31740783f8e183ee0d235ec58e
+environment_sha256 a7ff9e6ac3d152834deea585ab011e45596dbd3f00e62ef9ede79ade2f43dcbe
+
+'D0.Analysis.RetainedRecordSurprisal.moment_eq_tariff_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Analysis.RetainedRecordSurprisal.hasFDerivAt_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Analysis.RetainedRecordSurprisal.hasFDerivAt_moment_fixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Analysis.RetainedRecordSurprisal.hasFDerivAt_logPrice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'D0.Analysis.RetainedRecordSurprisal.hasFDerivAt_logPrice_fixed' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'D0.Research.NativeCodePriceResolution.validated_joint_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
