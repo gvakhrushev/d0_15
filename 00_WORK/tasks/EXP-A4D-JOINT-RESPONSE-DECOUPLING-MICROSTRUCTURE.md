@@ -23129,3 +23129,12 @@ all remaining independent control reactions in the same normalized norm.
 The operator-statistical Einstein theorem retains its previous scope.
 No physical closure, negative universality theorem, registry promotion,
 Ready transition, retirement, merge or raw216 change. GR_closed=false.
+
+
+### 6 November: paid Parry continuation and joint terminal/return stationarity
+
+Primary §7fx (input 8cd9552b6) realizes the Book06 Parry transition on the live informative H.1 record. The complete **additional parsed/CQ** price is q at the ideal section, with zero conditional apparatus first source and a unit gain on the original Dq. A literal 49-stage comparison gives gain above 2045/2048. A second native construction preserves the forbidden double-click exactly at every finite reference and approaches the correct positive bright phase.
+
+The unvalidated reader has a nonzero independent cold row. A physically prepared and checked zero tail and its witness change the true born masses of 00,01,10 to p^4,p^5,p^6. The unrestricted bright redistribution at the feedback optimum is then precisely the Golden Gibbs row; the Parry support gives the deterministic other row. All allowed fixed-coarse-effect rows of the two component prices vanish at the same section, with positive coarse reactions and Einstein source gain on the original LC9 lift. The validator's 23 primitive calls were replayed on all 32 columns. LC12–LC16 receive the new cold, gain and resource substitutions, with the actual full-clock and lift budgets.
+
+This is a new declared validated task. The original full physical Cost−Info weighted continuation (including actual validation work and vertex Info) still has to satisfy CD13. The finite-weight and four-record controls demonstrate why mere additive balancing or matching a count cannot supply it. No scientific promotion, lifecycle change or unrestricted GR closure.

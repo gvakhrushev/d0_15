@@ -157765,6 +157765,1012 @@ print(json.dumps({"owner_sha256":PIN,"status":"PASS","exact_controls":groups["ex
 ```
 <!-- END FW NATIVE MASK CHECKER -->
 
+## 7fx. A native Parry continuation of the informative report and its complete price test
+
+6 November 2026. Existing Draft #334, input 8cd9552b6. Parent: source
+binding C of the unchanged A–D contract, especially §7fq CD13. The
+mathematical input is the known H.1 report q=p²+p³Q with its physical
+preparation lift LC9, the original NC1 code writer, and Book06's Iter25
+Parry transition in §7er.D.1. We put that transition on the live report
+and compare its complete parsed/CQ source with the cold return on this
+SAME longer history. This tests the price, the independent apparatus
+equation and the reverse source transport together.
+
+**Result.** On the final tail-validated Parry task below the normalized
+instrument that optimizes the original feedback also makes the full
+conditional parsed/CQ price stationary in every fixed-coarse-effect
+direction. Its bright probability p² is selected by the actual valid
+Born masses. Both field gains are positive on the original noisy collar.
+This consumes the original Einstein source and reverse recovery at the
+component level. It leaves the binding of the entire physical traversal
+and vertex valuation to those components in C. The first, unvalidated
+word below is the explicit failed joint comparison that leads to the
+change of task.
+
+### One additional paid record gives a known field gain
+
+Use the original valid b on the LC1 pointer/tail. While the pointer is
+still live, append a fresh canonical v=(sqrt(p),p) on s. Conditional on
+b=0 leave it at v. Conditional on b=1 the ideal target rotates it to
+zero by G inverse. Record s with its own fresh canonical tail and the
+actual NC1 three-gate writer. Keep b, the new parsed z, both unread
+quantum tails, the earlier bank and every failed/uninitialized carrier
+sector. The two symbols are separate physical 0/10 reports. Reading
+the final zero digit of an already paid 10 token would be a different
+history and would double-count the charge.
+
+The ideal conditional transition is exactly the Book06 Parry matrix
+[[p,p²],[1,0]]. The incoming q is the actual H.1 field readout, not a
+stationary Parry distribution. Let ell=ln(phi). At fixed b the complete
+quantum bank factors from the new pure conditional preparation, so
+conditioning on z preserves the older conditional spectrum. Thus the
+extra full parsed length minus the complete CQ entropy increase at that
+cut is the mean of f(t)=1+t−h(t)/ell at the two true conditional
+probabilities. In fact f(t)=D(Bern(t)||Bern(p²))/ell. The conditional
+prices are f(p²)=0 and f(0)=1. The added price and derivative are
+
+    P_extra=q,    D P_extra=Dq=g_i A_pre,i* D I_h+e_i.              (PX1)
+
+This includes every original upstream control through Dq. The existing
+right lift, independent preparation slots and residual norms apply to
+this composed term, including reverse recovery on the declared regular
+Einstein–two-CAR class. The complete specified terminal record adds PX1
+to LC8, with both entropies subtracted only once. Physical attribution
+of all traversal work and all Book vertex Info has a separate test below.
+
+This application differs from §7ak/§7am, which already realized the
+Golden Gibbs coin and calculated its true cold-source row. Charging the
+same Golden coin on both values of b would give zero extra field gain.
+The asymmetric transition here comes from the two original Parry rows.
+It is a marked continuation of the specific informative b; stationary
+symbolic entropy rate alone would not construct this implementation.
+
+### Literal words, finite approximation and real conditional variations
+
+Use W on s and ordinary active helpers, then CX(b,s), the paid inverse
+W*, and CX(b,s). On b=0 the entire template is exactly I. On b=1 its
+endpoint is X W* X W. The required NC1 and both births are paid. On the
+simple literal word W=G^n the second endpoint is G^(2n). A routed Z at
+each end of G^n implements its full inverse even on an occupied port
+and all Spin columns. For n=16 there are 47 primitive calls plus the
+two canonical births, before any additional physical disclosure. Exact
+matrix replay gives
+
+    27/10^6 < Pr(z=1|b=1) < 28/10^6,
+    f(Pr(z=1|b=1)) > 2045/2048,     Pr(z=1|b=0)=p².               (PX2)
+
+Thus a finite native word has additional price w_1 q with verified
+w_1>0.9985. It never conditions on a successful run. It admits a rare
+double click; it is not literally the exact finite Parry support.
+This small word certifies its own parsed response and clock inventory.
+Its return phase and its κ gain are not inferred from its probability.
+
+For a controlled recovery use the real active compiler (217) to approximate
+W=G^(−1/2) tensor I_helpers within epsilon and execute its exact native
+inverse. This is a fixed real SO target with a spare active helper if
+needed, not a new primitive. The b=0 identity is exact on all columns
+and the dark amplitude on b=1 is at most 2epsilon. The positive
+approximate orientation G^(-1), not a sign obtained from probabilities
+alone, is needed for the cold-source comparison below. This avoids
+asserting an exact clean controlled-G in conflict with §7am.
+
+There is a test for the independent conditional apparatus equations at
+the ideal section, not only for the two endpoint field values. Work in
+each already identified original b sector on its entire conditional
+input, and require the old b and the two new code letters to remain
+well-defined. Suppose the all-column implementation changes by at most
+d in norm. In the bright sector write delta=||E_1−p²I||=O(d).
+For arbitrary mixed and reference input use §7fv FV1–FV2 on that sector:
+the extra mean code minus its actual complete conditional CQ increment
+is the classical KL defect plus the nonnegative entropy deficit and is
+bounded by delta²/(ell p p²). This keeps the full output. In the dark
+sector the new click Kraus norm is O(d), so its probability t is O(d²).
+A full two-label pinching of an isometric input has entropy increment
+between 0 and h(t); hence |w_dark−1|<=t+h(t)/ell. The full conditional
+price discrepancy from q is uniformly O(d²(1+|ln d|)). This is valid
+at rank births and shows zero first source for all such conditional
+control variations at the ideal section. It also applies to distinct
+perturbations in the two branches and does not require a differentiable
+selection of a finite word. A change of the old marked instrument keeps
+its true Dq and original source; a change admitting an additional
+letter needs its actual price. If the new compiler or readout is allowed
+to change the earlier instrument outside this comparison, the
+corresponding independent variation and transport must be included.
+
+For finite differences use the bounds at the actual +/- words separately,
+their step and gain, and the physical basis and right-lift factors. For
+infinitesimal comparison families with per-occurrence generator bound,
+the total displacement in an L-call template is at most O(L|t|)
+in addition to its compilation error. At fixed mesh the real compiler
+length is polylogarithmic in 1/epsilon. For example take |t|=sqrt(epsilon)
+before choosing the precision against that mesh's actual geometry, norm
+and lift: the quadratic/logarithmic debt divided by |t| tends to zero
+even with any fixed power of the polylogarithmic count. This bounds
+the indicated terminal rows. The actual new heat, physical work and
+their own gain are separate from g_i in PX1.
+
+### The feedback equation and the finite physical weight are independent tests
+
+The earlier LC4 polar section puts the original two coherent sectors at
+their positive born targets. On that section their cold contributions
+are sqrt(p)sqrt(1−q) and sqrt(p)p sqrt(q). Use the ideal real echo with
+a variable b=1 angle alpha, giving s=G(alpha)v there and s=v on b=0.
+NC4 contracts the extra tail to sqrt(p) I_s, since its two controlled
+rotations have the same born overlap. On the true original cold cut,
+with the new canonical births and the old handoff, this gives
+
+    f_new(q,alpha)=p[sqrt(1−q)+p cos(alpha) sqrt(q)],
+    J_new=−r ln[1−z+z k_old² f_new²].                               (PX3)
+
+Here alpha=−theta, sin(theta)=p, cos(theta)=sqrt(p), recovers the ideal
+conditional zero. At fixed q>0 the independent encoder row is
+
+    partial_alpha f_new=p³ sqrt(q),
+    partial_alpha J_new=
+      −2r z k_old² f_new p³ sqrt(q)/(1−z+z k_old² f_new²) != 0        (PX4)
+
+when the inherited cold return k_old is nonzero. In contrast the parsed
+row on the same variation is zero as proved above. The angle here
+parametrizes the real target of the paid W comparison; opposite finite
+changes can be approximated using the same construction. If the task
+fixes an exact Parry transition as an additional guard, the relevant
+normal/reaction and native admission have to be derived for that guard.
+If this direction is free, a joint stationary price needs a compensating
+term or another genuine stationary section. PX4 is a feedback row, not
+a claim about the sign of the sum of heat, feedback and the physical
+ledger. The GROWING heat is evaluated on the extended clock, including
+each echo, birth and tail. The earlier shorter clock cannot settle PX4.
+
+There is also an exact boundary at the level of the physical path weight.
+For the particular interpretation of Info as the classical conditional
+surprisal of a fully committed symbol, its event price is
+S_z=1+z+log_phi P_z. In a bright Parry row it vanishes on each leaf,
+and in the ideal dark row it is one on its sole leaf. For a dark
+approximation with t>0 the rare event instead has multiplier p²/t.
+Even the *Born-weighted* exponential moment is p+p²=1 when both
+leaves are present and is p when t=0. The small mean/CQ error in PX1
+does not control this finite-weight quantity. This is a test of a stated
+valuation, not a selection of that interpretation for Book03. A proven
+full physical return-source equivalence on finite approximants would
+suffice, but support convergence of the parsed record alone fails it.
+
+Accordingly the independent record channel and its conditional nuisance
+reduction are constructive. The original physical price of the complete
+execution, its joint internal response including PX4, and the normalized
+source comparison CD13 remain open. The scoped A–D terminal is not
+promoted and GR_closed=false.
+
+### Joint repair on a paid, tail-validated Parry task
+
+PX4 concerns the free dark-angle direction of the first word. Simply
+excluding that variation would leave a second independent test. With
+the unchanged NC1 direct tail unread, the fine born weights of the new
+letter are (p,p³). The usual LC polar optimum over a bright conditional
+click probability u has amplitude sqrt(p(1−u))+sqrt(p³u). At u=p² its
+derivative is (sqrt(p)−1)/2, whereas the full parsed/CQ conditional
+derivative is zero. Therefore even a true dark guard alone would fail
+to align these extrema for this original readout.
+
+Consider instead the following explicitly different, finite marked task
+on the same H.1 informative prefix. The additional query asks for one
+legal Book06 Parry transition (two consecutive ones are forbidden)
+and checks that the unoccupied/terminating tail of its new container
+is initialized on both labels. Distinguishing an actual tail fault on a
+leading zero is an extra reader obligation. It supplies a physical
+reason for the changed continuation task and an extra price to be bound.
+The original single H.1 task by itself does not demand this reading.
+
+* Keep the old r and its original tail, all original prefixes, failures
+  and Spin. On the new live registers s,t,d start at the actual canonical
+  birth v. Pay a native inverse G on each to prepare zero, with port
+  routing as required. d is a readback witness. Copy t into d by an
+  actual CX(t,d). Measure/require t=d=0 in the new valid output.
+  The validator alone uses two births and 23 native calls (2 G, 8 SourceI,
+  13 CX) for the two off-port wires. The checker verifies all 32 live
+  port/Spin/tail/witness columns. Erroneous sectors remain on the full carrier. Reading these bits is
+  part of the extended task. Any extra serial report of their fixed
+  pass values must be priced with its actual parser.
+* Use the old b, while live, as a control of a rotation on s with two
+  private active helpers. Apply §7aq (374)–(376) with predicate 1−b.
+  The b=1 sector stays EXACTLY I on all columns at the completed word.
+  At b=0 approximate G_s tensor I within epsilon with a fixed-count
+  alphabet and polylogarithmic word length. The two private helpers
+  may be unprepared to 00 as in that construction, then restored with
+  paid G calls. The ideal conditional helpers return to their own
+  born vector. No protected old memory is touched.
+* At every finite reference the probability of b=z=1 is exactly zero
+  and both validation wires are zero with probability one. The bright row tends to (p,p²) with the correct positive
+  phase. Even the elementary alternative G_s^n;CX(b,s);G_s^n;CX(b,s)
+  after paid unpreparation of s acts by G^(2n) on b=0 and by I on b=1
+  on ALL columns. The checker gives n=307 with positive overlap with v
+  above 0.999997. Its 632-stage count is for the NC1 comparison there;
+  it is not the count of the separate validation circuit. The controlled
+  compiler gives the length rate for refinement; no such rate follows
+  simply by repeating an irrational rotation.
+
+At the actual earliest born cut each required zero among t,d contributes
+p to the valid masses. For (old b,new z) the three joint born masses
+are p^4,p^5,p^6 for 00,01,10, respectively. Indeed the old masses are
+p,p³, s contributes p or p², and t,d together contribute p². All
+canonical helpers not in the terminal marks contribute one. The two
+coarse born masses are therefore m0=p³, m1=p^6. On b=0 the CONDITIONAL
+born ratio gives m01/(m00+m01)=p². The joint polar section itself gives
+the Gibbs row; no constraint fixing its probability in the bright
+branch is needed. On b=1 there is one legal symbol. The ideal outputs
+are exactly the old j_0,j_1 tensor (v,0,0) or (0,0,0), respectively,
+with the private helpers restored. These are the normalized projections of the original born embedding onto
+the two enlarged valid coarse sectors.
+
+For every complete current instrument in these sectors with fixed coarse
+effects E_b=q_b I, the owned G1–G7/LC3–LC6 bound gives
+C*C <= f(q)^2 I. Equality is attained at those same sector columns, with
+
+    f(q)=sqrt(p³(1−q))+sqrt(p^6 q).
+    q_mu=p³/(1+p³)<p²,    f'(q)<0 on p²<q<=1/2.                    (PX5)
+
+This bound on all allowed completions does not assume a one-angle
+controller. The invalid outcome has linear support equation K_bad=0.
+It is justified for this declared valid-transition and validation task,
+and does not remove a free controller of the original H.1 problem.
+At fixed coarse effects every two-sided apparatus tangent has a zero
+return-price derivative. The full conditional CQ prices on this same
+section are 0 and 1. Their bright free probability and conditional
+quantum rows are stationary by the FV2 estimate above. Thus all
+fixed-coarse-effect rows of BOTH component prices vanish at the ideal
+section, including bright redistribution, conditional phases and
+completions. The coarse-effect constraint has a real reaction and
+the source-changing forward preparation remains free.
+
+For example for a single block with the original nonzero old scalar
+cold and D=1−z+z k_old² f², the positive coarse normal multipliers for
+J are Lambda_b=z k_old² sqrt(m_b/q_b) f I/D as in LC6. Their pullback
+keeps the D E_b rows. The feedback slope per Dq is
+−2r z k_old² f f'/D>0. The complete specified parsed/CQ price slope is
+f_code'(q)+1>0 as in PX1. Neither slope is a freely selected coefficient.
+If an additional physically serialized validation record has a fixed
+charge and is deterministically correct on the entire admissible family,
+its constant contributes no derivative, while all costs of implementing
+that validation still belong to the physical valuation.
+
+The same substitutions work at the source interface of LC12–LC16.
+For M independently varied current copies put s=product_i f(q_i)^2,
+w=r z k_old² s/(1−z+z k_old² s), a_i=−f'(q_i)/f(q_i).
+Then Gamma_J=2w sum_i a_i g_i and
+Gamma_P=sum_i [f_code'(q_i)+1]g_i. Both are strictly positive on the
+stated collar. The same physical diagonal lift applies to the positive
+normalized weights. The old-row bound is C_A/(2k_old² sum_i a_i g_i)
+for the feedback and C_P/Gamma_P for the terminal price. The marked
+constructor acts only on current private wires after the original
+handoff, as required for the old-factor product. No new independent
+copy of the geometric source is introduced. The actual expanded
+RAW/GROWING word includes the original recovery, all new births,
+unpreparations, validation and helper restorations. At fixed mesh and
+M, the exact support compiler and original LC11 use polynomial length
+in k at epsilon=exp(−k). Use the joint CX-pair padding after last birth
+and before the true final gate as in LC15, retaining every 425D heat
+mode and adding the new stage count to the occurrence bound. Its
+factorial age bound beats polynomial growth at the fixed positive
+limiting gain. Source errors are divided by the actual calibrated
+gain, and by the finite comparison step where applicable, and are
+also tested after multiplication by the actual right-lift norm. These
+are the constructive substitutions into the owned restricted-clock
+theorem on its fixed-scene/guarded-birth interface. No numerical full
+heat matrix or finite all42 stationary root on the new word is claimed.
+
+The support repair matters also for a finite weight. For the specified
+conditional-surprisal model and Born-weighted scalar moment above, every
+finite reference with both bright leaves and only the legal dark leaf has
+Z_aux=(1−q)+pq. Its negative-log slope is p²/[ell(1−p²q)]>0. There
+is no rare forbidden multiplier on THAT physical support. Admissible
+comparisons must preserve the support to invoke this formula. This
+calculates one definite nonlinear statistic across the same comparison,
+without identifying it with Book03's memory-valued path sum by convention.
+
+The remaining C test now concerns the actual weights and work of these
+same queried and validated histories. Book06 supplies a symbolic law.
+The native construction supplies its marked comparison and both
+geometric and parsed source gains. Neither input identifies a physical
+edge tariff with measured code length or Book vertex Info with the
+declared CQ increase. One original weighted continuation/terminal
+intertwiner or the complete physical CD13 residual, including the
+validation source, is still required for the unchanged terminal.
+
+### Why a whole-history price needs its own comparison
+
+Two earlier calculations on the actual G/CX/SourceI alphabet motivated
+using a registered asymmetric continuation. They test different physical
+operands from the chosen Parry task.
+
+1. Between a paid CX copy and its exact inverse the true-zero target
+   reads the input probability q. A closed native 128-arc walk can sum
+   all repeated first-copy readings to exactly 64 I while disclosing the
+   original pointer at the end. Use the reflections S=Z=SourceI squared
+   and Q=GZ. For k=0,...,5 take w_k=(1,9,6,6,9,1) arcs in each
+   direction between G^k and hG^k for both h. The graph is connected
+   and balanced. If x=exp(2i theta) then sum w_k x^k=0, from
+   cos(2theta)=sqrt(5)−2. Summing the two orientations cancels Y by
+   reflection and cancels X,Z by that polynomial, leaving 64 times
+   the normalized partial trace for each template. A first-arc-only
+   cost still reads q. For the SAME walk, the ordered product M of
+   the true rotated factors diag(1,p) has det M=p^128 and M* M
+   nonscalar. A finite tilt retains a distinction that its additive
+   first derivative misses. The 576-call on-port fixture excludes
+   target preparation. The two-CX flag dilation with two fresh v flags
+   realizes positive factor p diag(1,p) on the complete 00 mark.
+   Its complement and the cost of that registration belong to a full
+   instrument. Eulerian control has a separate established Hamiltonian
+   application. [Viola and Knill](https://arxiv.org/abs/quant-ph/0208056).
+2. For four private coherent copies of an arbitrary two-by-two M, the
+   pairings A=e12 e34, B=e13 e24 with e=|01>−|10> span a two-dimensional
+   code on which M tensor 4 acts as (det M)^2 I, by applying the
+   two-by-two determinant identity twice. This preserves both logical
+   amplitudes and every decoded 0/10 mark. With independent first
+   variations, the compression of dot T is the scalar
+   (det M/2) sum_i tr(adj M dot M_i). For complete positive effects
+   F of private instruments the same identity applies to F tensor 4,
+   including all independent outcomes in the scalar sum. A normalized
+   code state has one-wire occupation 1/2, which is not an algebraic
+   integer; actual finite native gates and canonical input amplitudes
+   are algebraic integers, so such a deterministic exact preparation
+   is unavailable from that input. A controlled real SO approximation
+   is needed. For the ordered record of four original noisy NC1 readers,
+   A/2 and (2B−A)/sqrt(12) have the SAME generating function for the
+   total number of clicks, (p+p²z)^2(p²+pz)^2. Yet their ordered full
+   CQ entropy on pure input differs by (p^6/3) log[(5/4)^15/
+   ((4/3)^8(13/12)^13)]>0. All 16 actual joint outputs are counted.
+   The one-wire-plus-validation Parry construction keeps the ordered
+   information and solves its conditional apparatus rows. The underlying
+   four-qubit singlet code is established independently.
+   [Bourennane et al.](https://arxiv.org/abs/quant-ph/0309041).
+
+### Reproduction of changed calculations
+
+Run each embedded script from the repository root with SymPy 1.14.0. The two primary scripts verify the Parry word and the validated joint source. The last two reproduce the finite-weight control calculations. These are bounded native/algebraic checks, not a replay of an Einstein solution or the entire physical price.
+
+<details>
+<summary>check_aux.py</summary>
+
+Source SHA256 aab060b277137cc3154170a0d2ef4a0268f835570161ede26c49cbf02fd1514f. Output SHA256 bd0ff08ae4e1a3b5c7366991c46c28f0a742cbfdb90c90d61535d95b3f2794ef.
+
+```python
+"""Two actual marked reports. Run from the repository root."""
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+
+import sympy as sp
+from sympy.polys.matrices import DomainMatrix
+
+def need(condition, label):
+    if not condition:
+        raise ArithmeticError(label)
+
+path = Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py')
+need(hashlib.sha256(path.read_bytes()).hexdigest() ==
+     '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c', 'primitive source')
+spec = importlib.util.spec_from_file_location('aux_native', path)
+nt = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = nt
+spec.loader.exec_module(nt)
+F, p, a = nt.GOLDEN_FIELD, nt.P, nt.A
+
+def dm(matrix):
+    return DomainMatrix.from_Matrix(sp.Matrix(matrix)).convert_to(F).to_dense()
+
+def apply_gate(vec, gate):
+    # Column expansion on the six addressed wires, port=0 and Spin=(1,2).
+    # Original tail=6, oldRIGHT=7 remain tensor identities at every stage.
+    out = {}
+    def put(j, value):
+        out[j] = out.get(j, F.zero) + value
+    q = gate.wires[0]
+    bit = 1 << (5-q)
+    for j, value in vec.items():
+        taken = bool(j & bit)
+        if gate.op == 'G':
+            put(j, ga*value)
+            put(j^bit, (-gp if taken else gp)*value)
+        elif gate.op == 'CX':
+            put(j^(1 << (5-gate.wires[1])) if taken else j, value)
+        else:
+            need(gate.op == 'SourceI' and gate.wires == (0,1,2), 'opaque Spin frame')
+            # L_i is the same signed permutation on each of its two 2-blocks.
+            put(j^8 if taken else j, -value if taken and j & 8 else value)
+    return {j:v for j,v in out.items() if v != F.zero}
+
+ga, gp = F.from_sympy(a), F.from_sympy(p)
+G = dm(nt.G_LOCAL)
+need((G*G.transpose()).to_Matrix() == sp.eye(2), 'literal rotation')
+need(nt.SOURCE_I_LOCAL == sp.diag(sp.eye(4), sp.kronecker_product(sp.eye(2),sp.Matrix([[0,-1],[1,0]]))),
+     'source signed permutation')
+v = dm([[a],[p]])
+eye = dm(sp.eye(2))
+zero = dm([[1],[0]])
+gs = lambda wire: nt.Gate('G',(wire,))
+cx = lambda i,j: nt.Gate('CX',(i,j))
+src = nt.Gate('SourceI',(0,1,2))
+swap = (cx(4,0),cx(0,4),cx(4,0))
+
+def compare_positive(delta):
+    # Strict sign of an exact rational combination of 1 and sqrt(5).
+    root = sp.sqrt(5)
+    expr = sp.expand(delta)
+    u, v = expr.coeff(root,0), expr.coeff(root,1)
+    need(u.is_Rational and v.is_Rational, 'positive-root comparison field')
+    if u >= 0 and v >= 0:
+        return u+v > 0
+    if u <= 0 and v <= 0:
+        return False
+    return u*u > 5*v*v if u > 0 else 5*v*v > u*u
+
+records = []
+for n in (1,16):
+    # b=3 is live and read-only. z=4 and its separate output tail t=5 are fresh.
+    # W dagger is the short single routed Z G^n Z, including both swaps.
+    inverse = swap+(src,src)+(gs(0),)*n+(src,src)+swap
+    word = (gs(4),)*n+(cx(3,4),)+inverse+(cx(3,4),cx(4,5),gs(5),cx(4,5))
+    ex = nt.Execution(8,(4,5),(7,),word,nt.G_CX_SOURCE_I,0,(1,2))
+    inv = nt.inventory(ex,max_qubits=8,max_expanded_stages=80)
+    need((inv.g_count,inv.cx_count,inv.source_i_count)==(2*n+1,10,4),'full inventory')
+    need(set.union(*(set(g.wires) for g in word)) == set(range(6)), 'tail and oldRIGHT protected')
+    g2n = G**(2*n)
+    for col in range(64):
+        vec = {col:F.one}
+        for g in word:
+            vec = apply_gate(vec,g)
+        b, z, tail = (col>>2)&1, (col>>1)&1, col&1
+        echo = g2n if b else eye
+        expected = {}
+        for new_z in range(2):
+            encoder = G.transpose() if new_z else G
+            for new_t in range(2):
+                amp = echo.to_list()[new_z][z]*encoder.to_list()[new_t][tail]
+                if amp != F.zero:
+                    expected[(col & ~3)+2*new_z+new_t] = amp
+        need(vec == expected, 'all literal columns, including invalid outgoing report sectors')
+    need(G.transpose()*v == zero, 'NC1 return tail on actual birth')
+    need(G*v == dm([[p**3],[2*a*p]]), 'NC1 unused direct tail retained')
+    state1 = g2n*v
+    u = (state1.to_list()[1][0])**2
+    exact_u = sp.expand((1-sp.chebyshevt(2*n+1,p**3))/2)
+    need(u == F.from_sympy(exact_u) and gp**2 != u, 'finite auxiliary probabilities differ')
+    need((v.transpose()*v).to_list()[0][0] == F.one, 'normalized b=0 arm')
+    # Resolve every auxiliary encoded outcome on both arms. The old tail
+    # is an exact spectator above, so this also holds on the old invalid 11.
+    for branch, state in enumerate((v,state1)):
+        zz = state.to_list()
+        weights = {}
+        for mark, tailop in enumerate((G,G.transpose())):
+            ts = (tailop*v).to_list()
+            weights.update({(mark,t):zz[mark][0]**2*ts[t][0]**2 for t in (0,1)})
+        q = gp**2 if branch == 0 else u
+        need(weights[1,1] == F.zero and weights[1,0] == q, 'no invalid auxiliary report')
+        need(weights[0,0]+weights[0,1] == F.one-q, 'entire unused direct tail')
+    if n == 16:
+        lower, upper = sp.Rational(27,10**6), sp.Rational(28,10**6)
+        need(compare_positive(exact_u-lower) and compare_positive(upper-exact_u), 'certified q1 bracket')
+        need(upper < sp.Rational(1,32768), 'rational entropy bound input')
+    records.append({'n':n,'native_calls':inv.gate_count,'additional_births':inv.blank_count,
+                    'auxiliary_q1_diagnostic':float(sp.N(exact_u,20))})
+
+# Oriented arm. Unprepare the actual birth first, then use two positive W
+# macros. The distinction b=1,z=1 is now excluded exactly on the born image.
+oriented = []
+unprepare = swap+(src,src,gs(0),src,src)+swap
+for n, q_low, overlap_low, phase in ((17,376873,999986,-1),(307,379758,999997,1)):
+    rotate = (gs(4),)*n
+    word = unprepare+rotate+(cx(3,4),)+rotate+(cx(3,4),cx(4,5),gs(5),cx(4,5))
+    ex = nt.Execution(8,(4,5),(7,),word,nt.G_CX_SOURCE_I,0,(1,2))
+    inv = nt.inventory(ex,max_qubits=8,max_expanded_stages=800)
+    need((inv.g_count,inv.cx_count,inv.source_i_count)==(2*n+2,10,4),'oriented inventory')
+    need(set.union(*(set(g.wires) for g in word)) == set(range(6)), 'oriented spectator support')
+    rotation = G**(2*n)
+    for col in range(64):
+        vec = {col:F.one}
+        for g in word:
+            vec = apply_gate(vec,g)
+        b,z,t = (col>>2)&1,(col>>1)&1,col&1
+        # Includes the paid initial inverse on every column, not only on v.
+        eff = (eye if b else rotation)*G.transpose()
+        expected = {}
+        for mark in range(2):
+            encoder = G.transpose() if mark else G
+            for tail in range(2):
+                amp = eff.to_list()[mark][z]*encoder.to_list()[tail][t]
+                if amp != F.zero:
+                    expected[(col & ~3)+2*mark+tail] = amp
+        need(vec == expected, 'literal oriented word on all report and bank columns')
+    bright = rotation*zero
+    dark = (G.transpose()*v)
+    need(dark == zero, 'zero bright-letter amplitude on the dark arm')
+    qb = bright.to_list()[1][0]**2
+    overlap = (v.transpose()*bright).to_list()[0][0]
+    den = sp.Integer(10)**6
+    qexpr = F.to_sympy(qb)
+    need(compare_positive(qexpr-q_low/den) and compare_positive((q_low+1)/den-qexpr),
+         'oriented bright probability rational bracket')
+    need(compare_positive(F.to_sympy(phase*overlap/ga)), 'actual relative phase')
+    need(compare_positive(F.to_sympy(overlap**2)-(overlap_low/den)**2), 'overlap bound')
+    for b, state, target_sum in ((0,bright,F.one),(1,dark,gp)):
+        probs = [x[0]**2 for x in state.to_list()]
+        need(sum(probs,F.zero)==F.one and (probs[1]==F.zero)==bool(b), 'exact conditional support')
+        count_weight = sum((prob*letter/prob for prob,letter in zip(probs,[gp,gp**2])
+                            if prob!=F.zero),F.zero)
+        need(count_weight==target_sum, 'finite support tilt with conditional surprisal')
+        # These probabilities come from the born NC1 tails, whose invalid
+        # sector vanishes for both b. Nothing acts on the original tail.
+        encoded_invalid = probs[1]*(G.transpose()*v).to_list()[1][0]**2
+        need(encoded_invalid==F.zero, 'no invalid auxiliary code')
+    oriented.append({'n':n,'paid_calls':inv.gate_count,'additional_births':inv.blank_count,
+                     'bright_q_interval':[str(q_low)+'/1000000',str(q_low+1)+'/1000000'],
+                     'signed_overlap':('positive' if phase>0 else 'negative'),
+                     'abs_overlap_lower':str(overlap_low)+'/1000000',
+                     'tilted_sums_b0_b1':['1','p'],'joint_11_probability':'0'})
+
+# p+p^2=1 makes 1+x-h(x)/ln(phi) exactly Bernoulli KL in Golden units.
+need(sp.simplify(1-p-p*p)==0, 'parsed 1/2 costs give the reference law')
+# For u<2^-15, h(u)<=-u log u+u <= (15 log 2+1)/32768.
+# ln 2<1 and ln(phi)>ln(3/2)>1/3 by integration, hence w(u)>1-48/32768.
+floor = 1-sp.Rational(48,32768)
+need(floor > sp.Rational(9985,10000), 'strict auxiliary gain')
+print(json.dumps({'word_checks':records, 'oriented_arms':oriented, 'old_reports':['0','10','11'],'q0':'p^2',
+                  'n16_q1_interval':['27/1000000','28/1000000'],'n16_aux_gain_lower':str(floor),
+                  'classical_conditional_comparison':'w0=0, w1>floor',
+                  'physical_complete_price_identified':False,'GR_closed':False},
+                 sort_keys=True, indent=2))
+```
+
+</details>
+
+<details>
+<summary>check_alignment.py</summary>
+
+Source SHA256 ae7bd96086e808c9a81c55612fa490af5daa15c0546e9eff4176f9cc959cfb9e. Output SHA256 fd34f370fa95e94060edcdfb076f6f02cd2788740995d1925fff993378f8637b.
+
+```python
+"""Run at repository root. Exact marked-cut identities, with a native validation block."""
+from collections import Counter
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+
+import sympy as sp
+
+sys.dont_write_bytecode = True
+checks = []
+
+
+def require(value, label):
+    if not value:
+        raise ArithmeticError(label)
+    checks.append(label)
+
+
+path = Path("02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py")
+require(hashlib.sha256(path.read_bytes()).hexdigest() ==
+        "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+        "native primitive source pin")
+spec = importlib.util.spec_from_file_location("alignment_native", path)
+nt = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = nt
+spec.loader.exec_module(nt)
+p, a = nt.P, nt.A
+field = nt.GOLDEN_FIELD
+
+
+def equal(left, right, label):
+    require(field.from_sympy(sp.sympify(left-right)) == field.zero, label)
+
+
+# Independent products on the original Born cut. b and s enumerate the
+# true coarse/fine marks. The validator accepts t=d=0 at either mark.
+old = (p, p**3)
+pointer = (p, p**2)
+tag = p*p
+support = ((0, 0), (0, 1), (1, 0))
+mu = {(b, s): old[b]*pointer[s]*tag for b, s in support}
+for label, power in zip(support, (4, 5, 6)):
+    equal(mu[label], p**power, f"true fine born mass {label}")
+coarse = tuple(sum(mass for (b, _), mass in mu.items() if b == i) for i in range(2))
+equal(coarse[0], p**3, "true coarse born mass direct")
+equal(coarse[1], p**6, "true coarse born mass return")
+equal(mu[0, 0]/coarse[0], p, "conditional valid born direct fraction")
+equal(mu[0, 1]/coarse[0], p**2, "conditional valid born click fraction")
+
+# Scalar polar amplitude is A sqrt(1-q) + B sqrt(q). Recover each fine
+# branch into its normalized own Born projection, retaining all markers.
+# Using positive explicit powers avoids choosing square root branches.
+A, B = a*p, p**3
+A_fine = p**2*a + (p**2*a)*p
+equal(A_fine, A, "fine and coarse direct Hellinger coefficients")
+equal(A, a*p, "factorized f direct")
+equal(B, a*(p**2*a), "factorized f return")
+equal(A**2, coarse[0], "direct coarse amplitude norm")
+equal(B**2, coarse[1], "return coarse amplitude norm")
+threshold = B**2/(A**2+B**2)
+equal(threshold, p**3/(1+p**3), "cold maximum threshold")
+require(sp.ask(sp.Q.positive(sp.radsimp(p**2-threshold))) is True,
+        "strict decrease of f above p squared")
+
+# t'(u)=0 iff mu_01*(1-u)=mu_00*u for a positive two-arm return.
+equal(mu[0, 1]*(1-p**2), mu[0, 0]*p**2, "polar conditional Gibbs stationarity")
+equal((-1+a)/2, -a/(2*a)+(p*a)/(2*p), "unvalidated derivative")
+require(a < 1, "unvalidated derivative is strictly negative")
+conditional = ((p, p**2), (sp.S.One, sp.S.Zero))
+# In golden log units these are the true conditional surprisals on support.
+surprisal = ((1, 2), (0, None))
+for b, row in enumerate(conditional):
+    cost = sum((1+s)*row[s] for s in range(2))
+    info = sum(row[s]*surprisal[b][s] for s in range(2) if row[s] != 0)
+    equal(cost-info, b, f"complete conditional parsed-CQ value for b={b}")
+    for s in range(2):
+        if row[s] != 0:
+            equal(row[s], p**surprisal[b][s], f"actual conditional spectrum ratio b={b},s={s}")
+            equal(1+s-surprisal[b][s], b, f"allowed leaf net classical score b={b},s={s}")
+
+# Test arbitrary original finite mixed spectra without erasing the bank.
+q = sp.Rational(2, 5)
+for b, spectrum in enumerate(((sp.Rational(1, 3), sp.Rational(2, 3)),
+                              (sp.Rational(2, 5), sp.Rational(3, 5)))):
+    for lam in spectrum:
+        base = (1-q if b == 0 else q)*lam
+        children = [base*mass for mass in conditional[b] if mass != 0]
+        equal(sum(children), base, f"complete fine/coarse spectrum mass b={b}, lambda={lam}")
+        for child, mass in zip(children, conditional[b]):
+            equal(child/base, mass, f"full mixed spectrum factor b={b}, lambda={lam}, mass={mass}")
+u = sp.symbols("u", positive=True)
+for row, target in (((1-u, u), sp.S.One), ((sp.S.One, sp.S.Zero), p)):
+    moment = sum(prob*(p**(1+s)/prob) for s, prob in enumerate(row) if prob != 0)
+    equal(sp.cancel(moment), target,
+          f"distinct exponential moment on support of size {sum(x != 0 for x in row)}")
+
+# The original G parser owner supplies the positive primitive matrices.
+# This is the added t,d validation block alone. s, old b and all old data
+# tensor through; the port and Spin are allowed unknowns on all columns.
+def execution(gates):
+    return nt.Execution(5, (3, 4), (), tuple(gates), nt.G_CX_SOURCE_I, 0, (1, 2))
+
+
+prep = nt.inverse_word(execution([nt.Gate("G", (4,)), nt.Gate("G", (3,))]),
+                       max_qubits=5, max_expanded_stages=23)
+cx = nt.Gate("CX", (3, 4))
+block = execution(prep+(cx,))
+inventory = Counter(gate.op for gate in block.gates)
+require(inventory == {"G": 2, "CX": 13, "SourceI": 8}, "23 positive native validation calls")
+M = nt.word_matrix(block, max_qubits=5, max_expanded_stages=23)
+XOR = sp.Matrix([[1,0,0,0], [0,1,0,0], [0,0,0,1], [0,0,1,0]])
+ideal = sp.kronecker_product(sp.eye(8), XOR*sp.kronecker_product(nt.G_LOCAL.T, nt.G_LOCAL.T))
+require(nt.exact_matrix_equal(M, ideal), "validation endpoint on all 32 port Spin and tag columns")
+v = sp.Matrix([a, p])
+require(nt.exact_matrix_equal(nt.G_LOCAL.T*v, sp.Matrix([1,0])), "actual canonical tag unpreparation")
+require(XOR[:,0] == sp.eye(4)[:,0] and XOR[:,2] == sp.eye(4)[:,3],
+        "native validation CX preserves ready tags and copies a nonzero test bit")
+print(json.dumps({"checks": checks, "validation_gates": dict(sorted(inventory.items())),
+                  "tag_validation_births": 2, "aligned_mass_powers": [4,5,6],
+                  "coarse_mass_powers": [3,6], "full_physical_price_proved": False},
+                 sort_keys=True, indent=2))
+```
+
+</details>
+
+<details>
+<summary>check_tour.py</summary>
+
+Source SHA256 9a30f981eeff151fc1b93d8e62cfb15e7f14f82c20fd00f6a0053b774ca023fc. Output SHA256 345f3344b75e55b0e428036b2ef157883f871973a767e39b0c52022185572ff8.
+
+```python
+"""Run from the repository root. Verify an exact weighted Golden Euler word."""
+from collections import Counter, defaultdict
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import sys
+
+import sympy as sp
+from sympy.polys.matrices import DomainMatrix
+from sympy.polys.matrices.ddm import DDM
+
+def need(condition, label):
+    if not condition:
+        raise ArithmeticError(label)
+
+source_path = Path('02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py')
+need(hashlib.sha256(source_path.read_bytes()).hexdigest() ==
+     '222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c', 'primitive source')
+spec = importlib.util.spec_from_file_location('golden_tour_native', source_path)
+native = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = native
+spec.loader.exec_module(native)
+field = native.GOLDEN_FIELD
+
+def dm(matrix):
+    return DomainMatrix.from_Matrix(sp.Matrix(matrix)).convert_to(field).to_dense()
+
+def tensor2(A, B):
+    aa, bb = A.to_list(), B.to_list()
+    rows = [[aa[i//2][j//2]*bb[i%2][j%2] for j in range(4)] for i in range(4)]
+    return DomainMatrix.from_rep(DDM(rows, (4, 4), field))
+
+weights = (1, 9, 6, 6, 9, 1)
+x = sp.symbols('x')
+poly = sp.Poly(sum(w*x**k for k, w in enumerate(weights)), x, extension=sp.sqrt(5))
+quadratic = sp.Poly(x*x-2*native.P**3*x+1, x, extension=sp.sqrt(5))
+need(poly.rem(quadratic).is_zero, 'nonnegative integral annihilator at double angle')
+need(sp.simplify(native.A**2-native.P**2-native.P**3) == 0, 'cos(2 theta)')
+G, Z, I = dm(native.G_LOCAL), dm(sp.diag(1, -1)), dm(sp.eye(2))
+generator = {'S': Z, 'Q': G*Z}
+need(all(g*g == I for g in generator.values()), 'both native reflections involutive')
+
+arcs = []
+for k, copies in enumerate(weights):
+    for label, j in [('S', k), ('Q', k-1)]:
+        rotation, reflection = ('R', k), ('F', j)  # F_j=Z G^j
+        arcs.extend([(rotation, label, reflection), (reflection, label, rotation)]*copies)
+outgoing = defaultdict(list)
+for arc in arcs:
+    outgoing[arc[0]].append(arc)
+start = ('R', 0)
+path, tour = [(start, None)], []
+while path:
+    vertex, incoming = path[-1]
+    if outgoing[vertex]:
+        arc = outgoing[vertex].pop()
+        path.append((arc[2], arc))
+    else:
+        path.pop()
+        if incoming is not None:
+            tour.append(incoming)
+tour.reverse()
+need(len(tour) == 128 and Counter(tour) == Counter(arcs), 'every directed multiplicity')
+
+def vertex_matrix(vertex):
+    kind, k = vertex
+    power = G**k if k >= 0 else G.transpose()**(-k)
+    return (power if kind == 'R' else Z*power).to_dense()
+
+matrices = {v: vertex_matrix(v) for e in tour for v in (e[0], e[2])}
+prefix, vertex = I, start
+for u, label, v in tour:
+    need(u == vertex and prefix == matrices[u], 'literal chronological origin')
+    prefix, vertex = generator[label]*prefix, v
+    need(prefix == matrices[v], 'literal chronological destination')
+need(vertex == start and prefix == I, 'all-column endpoint')
+
+origins = Counter((u, label) for u, label, v in tour)
+units = []
+for i in range(2):
+    for j in range(2):
+        matrix = sp.zeros(2)
+        matrix[i, j] = 1
+        units.append((i == j, dm(matrix)))
+lifted = {u:tensor2(U, I) for u, U in matrices.items()}
+for label in generator:
+    for diagonal, unit in units:
+        for _, bank in units:
+            A = tensor2(unit, bank)
+            total = dm(sp.zeros(4))
+            for (u, edge), count in origins.items():
+                if edge == label:
+                    U = lifted[u]
+                    total += (U.transpose()*A*U).scalarmul(field(count))
+            expected = tensor2(I, bank).scalarmul(field(32*int(diagonal))).to_dense()
+            need(total == expected, 'all joint matrix units twirl independently for '+label)
+# The spectator matrix unit stayed arbitrary. By linearity the same formula
+# holds for any spectator dimension, including entangled input states.
+
+gate = native.Gate
+copy, sign, golden = gate('CX', (0, 3)), gate('SourceI', (0, 1, 2)), gate('G', (0,))
+macro = {'S':(copy, copy, sign, sign), 'Q':(copy, copy, sign, sign, golden)}
+word = tuple(g for _, label, _ in tour for g in macro[label])
+execution = native.Execution(4, (), (), word, native.G_CX_SOURCE_I, 0, (1, 2))
+limits = dict(max_qubits=4, max_expanded_stages=600)
+inv = native.inventory(execution, **limits)
+need((inv.cx_count, inv.source_i_count, inv.g_count) == (256, 256, 64), 'native inventory')
+ops = {g: dm(native.gate_matrix(execution, g, **limits)) for g in set(word)}
+I16 = dm(sp.eye(16))
+for label, gates in macro.items():
+    endpoint = I16
+    for g in gates:
+        endpoint = ops[g]*endpoint
+    M = sp.diag(1, -1) if label == 'S' else native.G_LOCAL*sp.diag(1, -1)
+    need(endpoint == dm(sp.kronecker_product(M, sp.eye(8))), 'all columns of paid arc '+label)
+
+P = sp.diag(0, 1)
+born_target = dm(sp.kronecker_product(sp.eye(2), sp.Matrix([1, 0, 0, 0, 0, 0, 0, 0])))
+target_number = dm(sp.kronecker_product(sp.eye(8), P))
+C = ops[copy]
+first_read = born_target.transpose()*C.transpose()*target_number*C*born_target
+need(first_read == dm(P) and C*C == I16, 'first copy reads q, second restores the full carrier')
+# The target is back at zero at every completed arc. Its first midpoint is
+# therefore the rotated logical P, independently of the immutable spin.
+number_sum = dm(sp.zeros(2))
+for u, _, _ in tour:
+    U = matrices[u]
+    number_sum += U.transpose()*first_read*U
+need(number_sum == I.scalarmul(field(64)), 'all 128 copy exposures are exactly balanced')
+# A finite amplitude weight is an ordered product, even if its first
+# derivative is a sum of balanced midpoint occupancies.
+K = dm(sp.diag(1, native.P))
+tilted = I
+for u, _, _ in tour:
+    U = matrices[u]
+    tilted = (U.transpose()*K*U)*tilted
+gram = (tilted.transpose()*tilted).to_list()
+need(gram[0][1] != field.zero or gram[0][0] != gram[1][1], 'finite tilt has nonscalar Gram')
+need(tilted.det() == field.from_sympy(native.P)**128, 'exact ordered tilt determinant')
+# A fee paid only at the first midpoint has a nonzero logical source on this same tour.
+first_origin = matrices[tour[0][0]]
+need(first_origin.transpose()*first_read*first_origin == dm(P), 'time-indexed price survives')
+need(prefix.transpose()*dm(P)*prefix == dm(P), 'full decoded logical report')
+receipt = {'input_words':len(tour), 'arc_counts':dict(sorted(Counter(e[1] for e in tour).items())),
+           'paid_native_fixture':{'CX':inv.cx_count,'SourceI':inv.source_i_count,'G':inv.g_count},
+           'origin_word_sha256': hashlib.sha256(' '.join(e[1] for e in tour).encode()).hexdigest(),
+           'per_label_matrix_unit_coefficient':32, 'summed_copy_exposure':64, 'literal_endpoint':'identity',
+           'time_dependent_first_midpoint':'P1', 'final_logical_read':'P1',
+           'finite_tilt_gram_nonscalar':True, 'ordered_tilt_determinant':'p^128',
+           'complete_physical_price_identified':False, 'GR_closed':False}
+print(json.dumps(receipt, sort_keys=True, indent=2))
+```
+
+</details>
+
+<details>
+<summary>check_four.py</summary>
+
+Source SHA256 fce91c9d30e441e8b8f504adfdbff7306c1c89e4dac73ae446644eabd6a82a95. Output SHA256 1c49249372115ad9ecacd8fdf4793fa115e16de01ba1c255d1dc7065b3475045.
+
+```python
+"""Exact four-wire determinant block, independent insertions and report effects."""
+from itertools import product
+import json
+
+import sympy as sp
+
+
+def need(condition, label):
+    if not condition:
+        raise ArithmeticError(label)
+
+
+def equal(left, right, label):
+    need(all(sp.expand(v) == 0 for v in left-right), label)
+
+
+bits = list(product((0, 1), repeat=4))
+eps = sp.Matrix([[0, 1], [-1, 0]])
+columns = sp.Matrix([[eps[i,j]*eps[k,l], eps[i,k]*eps[j,l]] for i,j,k,l in bits])
+gram = columns.T*columns
+equal(gram, sp.Matrix([[4, 2], [2, 4]]), 'independent pairings')
+I2 = sp.eye(2)
+a, b, c, d = sp.symbols('a b c d')
+M = sp.Matrix([[a, b], [c, d]])
+det = a*d-b*c
+adj = sp.Matrix([[d, -b], [-c, a]])
+collective = sp.kronecker_product(M, M, M, M)
+equal(collective*columns, det**2*columns, 'full symbolic two-column action')
+equal(columns.T*collective, det**2*columns.T, 'left action even for non-normal M')
+units = []
+for i in range(2):
+    for j in range(2):
+        change = sp.zeros(2)
+        change[i,j] = 1
+        units.append(change)
+for site in range(4):
+    for change in units:
+        legs = [M]*4
+        legs[site] = change
+        linear = sp.kronecker_product(*legs)
+        expected = det*sp.trace(adj*change)*gram/2
+        equal(columns.T*linear*columns, expected, 'one independent site and matrix unit')
+
+swap23 = sp.zeros(16)
+for j, (i0, i1, i2, i3) in enumerate(bits):
+    swap23[bits.index((i0, i2, i1, i3)),j] = 1
+exchange = sp.Matrix([[0, 1], [1, 0]])
+equal(swap23*columns, columns*exchange, 'correlated two-wire error is logical')
+need(exchange != I2 and exchange.trace() == 0, 'non-scalar correlated action')
+swap12 = sp.zeros(16)
+for j, (i0, i1, i2, i3) in enumerate(bits):
+    swap12[bits.index((i1, i0, i2, i3)),j] = 1
+first_exchange = sp.Matrix([[-1, -1], [0, 1]])
+equal(swap12*columns, columns*first_exchange, 'second permutation fixes fourth site')
+test = sp.Matrix([[a,b],[c,d]])
+equations = list(test*exchange-exchange*test)+list(test*first_exchange-first_exchange*test)
+system, rhs = sp.linear_eq_to_matrix(equations, [a,b,c,d])
+identity_direction = sp.Matrix([1,0,0,1])
+need(system.nullspace() == [identity_direction], 'S3 commutant consists of scalars')
+f, g, h = sp.symbols('f g h')
+D = sp.Matrix([[f, g], [g, h]])
+failure = sp.kronecker_product(D, D, I2, I2)
+means = [(v.T*failure*v)[0]/4 for v in (columns[:,0], columns[:,1])]
+need(sp.expand(means[0]-D.det()) == 0, 'coupled failure on first normalized pairing')
+need(sp.expand(means[1]-(D.trace()/2)**2) == 0, 'coupled failure on second normalized pairing')
+need(sp.expand(means[1]-means[0]-(f-h)**2/4-g**2) == 0, 'coupled failure separates pairings')
+
+# Use an orthonormal logical basis to check all outcomes for the old two-bit
+# parse. The extra tail and any reference are spectators. The encoded output
+# projectors are specified on the code support, prior to any physical read.
+V = sp.Matrix.hstack(columns[:,0]/2, (2*columns[:,1]-columns[:,0])/(2*sp.sqrt(3)))
+equal(V.T*V, I2, 'logical normalization')
+P0, P1 = sp.diag(1, 0), sp.diag(0, 1)
+V_tail = sp.kronecker_product(V, I2)
+reports = [sp.kronecker_product(P0, I2), sp.kronecker_product(P1, P0),
+           sp.kronecker_product(P1, P1)]
+encoded_reports = [V_tail*E*V_tail.T for E in reports]
+equal(sum(reports, sp.zeros(4)), sp.eye(4), 'all original reports')
+equal(sum(encoded_reports, sp.zeros(32)), V_tail*V_tail.T, 'complete on encoded support')
+image = sp.kronecker_product(collective*V, I2).applyfunc(sp.expand)
+equal(image, det**2*V_tail, 'full field carrier with tail')
+for E, encoded in zip(reports, encoded_reports):
+    equal(V_tail.T*encoded*V_tail, E, 'exact input effect')
+    # The variables can be complex. Use the real polynomial identity above
+    # for the forward amplitude; the conjugate supplies its absolute square.
+    equal(encoded*image, det**2*V_tail*E, 'finite weighted read on each outcome')
+equal(V_tail.T*(encoded_reports[0]+2*encoded_reports[1])*V_tail,
+      reports[0]+2*reports[1], 'parsed valid cost with invalid projector kept separate')
+
+p = (sp.sqrt(5)-1)/2
+need(0 < p < 1 and sp.simplify(p*p+p-1) == 0, 'Golden positive root')
+z = sp.symbols('z', positive=True)
+common_det = z**128  # Exact output of the ordered 128-arc tilt checker.
+gain = common_det**2
+need(gain == z**256 and gain**2 == z**512 and (p**256).is_positive,
+     'nonzero finite tilt gain and squared outcome factor')
+# The exact NC1 writer makes the four 0/10 reports complete. Compute all
+# ordered probabilities without tracing any priced label out of the model.
+from fractions import Fraction
+from collections import Counter
+from functools import lru_cache
+
+@lru_cache(None)
+def noise_at_distance(distance):
+    return sp.expand(p**(4 + distance))
+
+encoded_histories = []
+for column in range(2):
+    prior = [sp.expand(V[i,column]**2) for i in range(16)]
+    output = []
+    for j, word in enumerate(bits):
+        probability = sp.expand(sum(prior[i]*noise_at_distance(
+            sum(u != v for u, v in zip(original, word))) for i, original in enumerate(bits)))
+        if sum(word) == 2:
+            need(sp.expand(probability-p**6*(1+prior[j])) == 0, 'ordered two-click term')
+        output.append(probability)
+    need(sp.expand(sum(output)-1) == 0, 'all 16 paid outcomes')
+    encoded_histories.append(output)
+    for k in range(5):
+        coefficient = sp.Poly((p+p**2*z)**2*(p**2+p*z)**2, z).nth(k)
+        need(sp.expand(sum(x for word,x in zip(bits,output) if sum(word)==k)-coefficient) == 0,
+             'complete histogram')
+    need(sp.expand(sum(p**(4+sum(word))*x for word,x in zip(bits,output))-
+                   ((p**2+p**4)*2*p**3)**2) == 0, 'original 0/10 finite charge moment')
+for j, word in enumerate(bits):
+    if sum(word) != 2:
+        need(encoded_histories[0][j] == encoded_histories[1][j], 'other ordered outcomes agree')
+sizes = [Counter(sp.expand(val/p**6).simplify() for word,val in zip(bits,output) if sum(word)==2)
+         for output in encoded_histories]
+need(sizes == [Counter({sp.Integer(1):2, sp.Rational(5,4):4}),
+               Counter({sp.Rational(4,3):2, sp.Rational(13,12):4})], 'ordered entropy multiplicities')
+entropy_ratio = Fraction(5,4)**15/(Fraction(4,3)**8 * Fraction(13,12)**13)
+need(entropy_ratio > 1, 'strict complete CQ entropy difference')
+
+receipt = {'ordered_CQ_entropy_ratio':str(entropy_ratio), 'original_parsed_tuple_count':16,
+           'symbolic_common_matrix':'arbitrary 2x2', 'pairing_gram':gram.tolist(),
+           'independent_sites':4, 'matrix_units_per_site':4, 'report_outcomes':['0','10','11'],
+           'S3_commutant_dimension':1, 'two_site_failure_means':['det(D)','(tr(D)/2)^2'],
+           'two_site_swap':'exchanges_pairing_columns', 'single_site_scalar':'det(M) tr(adj(M) deltaM)/2',
+           'tour_amplitude':'p^256', 'tour_squared_factor':'p^512',
+           'native_preparation_and_physical_price_identified':False,'GR_closed':False}
+print(json.dumps(receipt, default=int, sort_keys=True, indent=2))
+```
+
+</details>
+
 ## 8. Reproduction
 
 Run from this directory:
