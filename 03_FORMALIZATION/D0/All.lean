@@ -48,6 +48,7 @@ import D0.Algebra.OriginalBookRadicalField
 import D0.Algebra.OriginalBookRadicalLocal
 import D0.Algebra.OriginalBookRadicalMod1009
 import D0.Algebra.OriginalBookRadicalSourceConstants
+import D0.Algebra.OriginalBookResidueJuliaPairs
 import D0.Algebra.OriginalBookResidueWords
 import D0.Algebra.SedenionBrownS3
 import D0.Algebra.SedenionClifford8
