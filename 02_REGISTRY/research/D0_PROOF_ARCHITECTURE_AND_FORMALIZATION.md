@@ -18189,3 +18189,31 @@ Its concrete application to the owner's physical clock still needs the
 actual stage maps and advances. The [historical cbe7 search archive](sources/d0_proof_architecture_formalization_2026-10-24/reports/cold_start_v3_cbe7_compact_2026-11-06/README.md)
 preserves all 752,668,795 bytes of the earlier run. The same implementation
 rediscovered 50 of 50 case results. Semantic acceptance remains separate.
+
+## 6 November 2026 — original complex effect words and their residue minor
+
+[OriginalBookLocalEffectWords](../../03_FORMALIZATION/D0/Algebra/OriginalBookLocalEffectWords.lean)
+constructs all 64 normalized Walsh rows and all 128 reduced slots from the actual
+Julia pairs in the source coefficient ring. For every finite chronological path
+(including the empty path) its complex image, times the proved positive odd-port
+weight, is the original effect. For any square family of paths and coordinate
+reads, a nonzero determinant of the corresponding GF(1009) matrix implies
+complex independence of these original effects. The conjugate transpose reads
+the opposite specialization. With 128 paths the existing parity upper bound
+then gives exact complex dimension 128, conditional on that specific minor.
+The saved numerical inverse establishes nonvanishing for its particular
+packed matrix. Identifying that matrix with the formal residue rows on the
+selected paths and coordinates is the application needed to remove the
+determinant premise. The narrow module build on `c8b7b4c16` passed.
+
+[MatchedWeightedMeanFDeriv](../../03_FORMALIZATION/D0/Analysis/MatchedWeightedMeanFDeriv.lean)
+now uses the existing matched curve derivative along each line to identify
+the full covector. Both public signatures retain their prior types, and
+`MatchedBranchFieldSource` consumes them with independent branch derivatives.
+
+[The first-repeat source intake](sources/d0_334_7fy_first_repeat_2026-11-06/HANDOFF_RU.md)
+pins scientific owner #334 at `9f76fd788`. The stopped record and
+pair-comparison valuation gives recovery under the stated bounds on the paid
+graph, errors and right lift. The five bounded owner programs reproduced their
+published output hashes in ten runs. The actual Book valuation and remaining
+clock, work and physical task-selection premises stay with that owner.
