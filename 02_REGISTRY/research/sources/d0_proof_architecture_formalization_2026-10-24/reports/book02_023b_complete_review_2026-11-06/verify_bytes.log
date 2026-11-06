@@ -1,0 +1,3 @@
+PASS pinned blobs, full correction, section, 30 records and byte complement
+corrected uncovered ranges: [[12086, 12729], [13109, 13110], [13646, 13647], [14273, 14274], [14759, 14760], [15293, 15810]]
+The result establishes byte provenance and coverage only; not semantic acceptance or an exhaustive C0 denominator.
