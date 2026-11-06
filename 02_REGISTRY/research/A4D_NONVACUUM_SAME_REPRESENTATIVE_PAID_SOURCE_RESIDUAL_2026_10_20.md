@@ -157206,6 +157206,565 @@ The separately reviewed physical scope preserves actual decoder/Info/cost
 binding and GR_closed=false. These are supporting-proof reviews, not
 assembly acceptance or physical C acceptance.
 
+## 7fw. A native reversible report with small local work response and exact global readout
+
+6 November 2026. Existing #334, input e1e2cb59a. Phase: native realization
+for the physical one-execution price interface C. Consumer: §7fv FV7.
+The changed input is the explicit complete-record transport in §7fv. Here
+we instantiate a transport and calculate which work terms it protects.
+No new price, geometry or independent assembly acceptance.
+
+**Result.** A fixed finite word preserves the original 0/10/invalid
+report exactly, including coherent inputs and an arbitrary entangled bank.
+At an intermediate cut, every bounded operator on a fixed number of
+encoded wires has arbitrarily small sensitivity to the logical input
+apart from an explicit spectator operator. This is simultaneous over
+those operators; it needs no table of their coefficients. The decoded
+report retains its entire source. The price of the entire word does not
+follow from the intermediate-cut bound.
+
+### 1. Actual circuit, two native profiles
+
+Let p=1/phi, a=sqrt(p), v=(a,p), eta=p-p²=p³ and s=<v|Xv>=2ap<1.
+Take a live pointer r before sealing; the unread tail t and all other
+banks may be entangled with it. Make m blocks, each with a target and n
+fresh canonical v masks; the first target is r. The other m-1 targets
+are fresh v births. All fresh wires, including each mask, remain present.
+
+* In the G/CX-only version apply CX(r,target) to each new target. Its
+  two conditional states are v and Xv. This is coherent fanout of the
+  computational label, not cloning the unknown input state.
+* On the existing H.1 source-port profile one can first apply native
+  G inverse to each new target, turning its actual v into |0>. The
+  same fanout now gives orthogonal target columns |0>, |1>. The opaque
+  Spin and source port are restored on all columns. This version consumes
+  the actual permitted routing; it does not postulate a primitive zero
+  blank or address an immutable oldRIGHT.
+* In either version execute CX(mask,target) for every mask of its own
+  block. No mask is measured, discarded or sampled. For b=0,1 the two
+  output columns Psi_b factor across the blocks. Within a block, the
+  encoded 1 column equals X on its target applied to the encoded 0 column.
+  Different logical amplitudes and their relative phase remain in the
+  full isometry V: |b> maps to Psi_b.
+
+This uses the Golden XOR bias already proved at (395). The additional
+operation is the block encoding of a whole live qubit; the proof below
+covers coherent off-diagonal logical terms and arbitrary spectator
+correlations, not just the distribution of a classical Boolean lookup.
+The compression criterion is related to the familiar
+[Knill–Laflamme error-correction criterion](https://arxiv.org/abs/quant-ph/9604034);
+the finite bounds here are calculated directly from the native words.
+
+### 2. Compression for an unknown local work observable
+
+Let O be Hermitian on a set S of at most d encoded wires and an arbitrary
+external bank R (no dimension/rank bound on R). Take m>d, n>=d-1, d>=1.
+Use the ordinary spectral norm. For A=(V* tensor I) O (V tensor I),
+write B_R=(A_00+A_11)/2 on R. Then
+
+    ||A - I_r tensor B_R|| <= epsilon ||O||,
+    epsilon = d eta^(n-d+1) + s^(m-d)        (v-born imperfect copies),
+    epsilon = d eta^(n-d+1)                  (paid zeroed copies).    (FW1)
+
+Proof. In a touched block without its target the two marginal states
+are identical, by the target-X relation. With the target and k masks
+visible, undo the k visible CX gates for the purpose of calculating
+the trace norm. Each unobserved mask contributes the channel
+p id + p² Ad_X. On the difference rho-X rho X this multiplies by eta.
+The half trace distance of the two marginals is thus <=eta^(n-k).
+Telescoping the tensor products bounds the total half trace distance
+by d eta^(n-d+1). These partial traces calculate local readings; the
+physical memory remains untouched.
+
+There are at least m-d entirely unobserved blocks. The partial trace
+of |Psi_1><Psi_0| gets a zero factor from an untouched original or
+zeroed-copy block; an untouched imperfect copy gives exactly s.
+Each remaining partial cross matrix has trace norm at most one, by
+trace/operator norm duality. Thus the cross trace norm is at most
+s^(m-d), or zero for the zeroed version. Taking arbitrary unit-vector
+slices on R gives ||A_00-A_11||/2 and ||A_01|| bounded by the two
+respective debts times ||O||. The norm of the diagonal deviation from
+I tensor B_R plus the off-diagonal block norm gives (FW1). In particular
+B_R is a Hermitian bank operator that must be retained, not a scalar by convention.
+
+One may protect several mutable wires independently, including both r
+and t BEFORE sealing. Compress one logical block family at a time,
+treating every other wire as spectator. The averaged diagonal is a
+unital contraction and has no support on an untouched family. In the
+zeroed-copy variant a term touching d_i wires in family i incurs at most
+d_i eta^(n-d_i+1)||O||. Since sum_i d_i<=d the same FW1 bound works for
+the ENTIRE mutable logical register. The number of report bits does
+not multiply the per-term error. Their births, gates and gain still have
+to be counted. An already sealed bank is never recoded by this argument.
+
+### 3. Exact instantiation of FV7 for the actual parsed terminal cost
+
+On the protected cut put Z_L=Z on the original target times Z on all
+its n masks. The CX conjugation rule gives U* Z_L U=Z_r on ALL columns
+of the extended carrier, not just the born support. Therefore replacing
+the pointer bit in LC1 by the odd/even parity projectors transports all
+three original projectors P_0, P_10 and P_11, with the same untouched
+tail. In particular, for the original parsed charge on valid outputs
+C_in=I+P_10 the corresponding output charge satisfies
+
+    V* C_out V=C_in,   Delta_T=0,   k=0.                             (FW2)
+
+The invalid projector is transported independently; this formula does
+not assign a physical invalid-sector price. Fixed finite +/- comparisons
+of the actual input preserve the parsed price contrast and its source.
+An exact physical disclosure is available: reverse the mask and copy CX
+calls; if the new targets were unprepared with G inverse, restore them
+with forward G. This restores the full unitary endpoint, not just Born
+masses, and leaves every birth once in its original state. A new read or
+handoff, if requested, must then be executed and priced as such.
+
+For d=2 choose the zeroed-copy word with m=3,n=7. FW1 gives the
+dimension-free per-unit bound 2p^18 < 0.000347. With both fresh copy
+targets off the source port, native_execution.inverse_word routes a
+whole (SourceI²;G;SourceI²) between two 3-CX SWAPs: 1 G+4 SourceI+6 CX
+per unpreparation. This shorter word and the uncancelled RP1 route
+implement the same unitary but have different clocks. On ONE logical
+wire the present word uses 23 canonical births, 45 forward primitive
+calls and 25 decoding calls (23 CX and 2 G): 93 additional stages,
+before any additional physical read. The number of stages is not
+a numerical valuation of their Cost−Info. This example is a finite
+circuit and bound, not a claim about the original H.1 gain at this size.
+
+### 4. Which source this removes, and a direct test of the full history
+
+At a protected cut let an ACTUAL work observable have a supplied
+decomposition O=sum_l O_l on supports of size <=d, plus a remainder
+O_tail of known norm. Put L=sum_l ||O_l||. FW1 bounds the non-spectator
+part of the small-support terms by epsilon L in operator norm; one
+can keep O_tail in full or bound its contribution by ||O_tail||.
+Here B_R is the sum of averaged diagonal blocks of the small-support
+terms ONLY; the tail is left uncentered. For two actual endpoints with
+the same fixed encoder, let
+b_±=epsilon L_±+||O_tail,±||. Their normalized finite contrast,
+AFTER subtracting the actual change of Tr(rho_R B_R), has error at most
+
+    (b_+ + b_-)/(2 |t_step| Gamma_actual).                          (FW3)
+
+Use the real basis reconstruction factor and multiply by
+(1+||right lift||) for the two complete-source limits. FW3 allows
+moving O_l and arbitrary bank input; the subtracted bank term includes
+both D rho_R and D B_R. If there is no spectator and O_l is field
+independent, that scalar part is constant. Without these conditions
+it cannot be discarded. If the admitted encoder endpoints themselves
+change, (FW1) must hold there too, or add at each endpoint, e.g.,
+2||V_actual−V|| ||O|| for isometries on a proved common carrier.
+Endpoint accuracy alone does not settle the independent gate rows.
+
+There is an operational sufficient test for d. Start with a meter reading
+on h encoded wires and any spectators, and propagate its operator BACKWARD
+through a specified circuit of T subsequent primitive calls. Ignore each
+gate disjoint from the current support; a touched G, CX or SourceI adds
+at most 0, 1 or 2 other wires, respectively. A canonical birth compression
+does not enlarge the old support. Thus the resulting encoded-wire support
+has size at most h+2T (h+T for G/CX), or use the smaller actual causal
+cone. Unitary conjugation and unital birth compression do not increase
+the norm. FW1 therefore applies uniformly even to coherent clock-bounded
+readers built from this grammar, with d chosen for that budget. T counts
+the actual unfolded calls, not a program description. For identical
+spectator inputs, any such binary effect separates the two logical
+basis inputs by at most 2 epsilon in probability. If epsilon<1/2 it
+cannot exactly read the encoded click; the physical parity decoder is
+an explicit reader outside that restricted class. This argument
+detects the limitation of a proposed physical price reader without
+assuming that gate arity bounds the price of an arbitrary entire history.
+
+A genuine locality result for an entire priced history would have to
+bound the actual work evaluated at EACH stage, or transport its
+observable to the protected cut and bound its support and norm there.
+Two concrete tests prevent a false substitution:
+
+1. The first imperfect fanout onto a fresh v has target occupancy
+   p²+eta q for incoming pointer probability q. A one-wire reading
+   THERE has source eta Dq. In the zeroed-copy version the corresponding
+   occurrence gives q itself. The later FW1 suppression does not pay for
+   or undo this earlier source. On the LC recovery section the untouched
+   tail alone has occupancy p²(1-q); its source survives as a bank row
+   if only r is protected. These are observable tests, not extra charges
+   added to the original law.
+2. The genuinely decoded original reader has the uncompromised parsed
+   source Dq on the valid sector. Its pullback includes Z_L, supported
+   on n+1 wires even though the decoder uses only one- and two-wire work
+   gates after the mask. The parity projector even has a product-plus-
+   identity expression, so a short description is no bound on support.
+   Book03:162 factorizes disconnected scenes; it imposes no such upper
+   bound on total priced work along this connected circuit.
+
+Thus FW2 supplies an actual price intertwiner for the PARSED operand of
+FV7, and FW1/FW3 provide a way to eliminate a whole class of local *logical*
+nuisance responses rather than identifying each tariff. The new cut is a
+proposed reversible transport of a mutable report before sealing, not an
+operation on oldRIGHT or a change to the original guard by assertion.
+The extended growing-clock heat and return, actual gain, all preparation/
+encoder/decoder reactions, spectator price and the rest of the physical
+Cost−Info are not transported by FW2. We have not shown that D0 prices
+only observables covered by FW3 or that the full remaining source meets
+CD13. The H.1 Einstein source and reverse recovery remain at their old
+scope; neither the unchanged A–D terminal nor unrestricted GR follows.
+
+### Bounded reproduction
+
+The primary 24-wire fixture checked all 24 singleton and 276 two-wire
+reduced matrices by block factorization, not a dense 24-wire simulation.
+The largest two-wire half trace distance was 0.000173070272 (rounded);
+the cross matrices vanish by the exact missed-block argument. Small
+all-column native matrices independently check the endpoint algebra and
+the actual routed G inverse. The second, CX-only fixture tests residual
+coherence and coupling to a spectator. Numerical checks at tolerance
+2e-12 are diagnostics, not interval bounds or evidence of physical price
+selection. The analytic bounds and limitations are above.
+
+Extract the Python block below and run from the repository root with
+Python 3.12.14, SymPy 1.14.0 and NumPy 2.3.5, normally and with -O,
+both with -Werror. The 24 exact controls and 23 numerical controls
+produce the same stdout in the pinned environment.
+Checker SHA256 9216907e6089e048d09fc88f82fa3231ed906dcce1ad28989f1a1219d5618fca.
+Stdout SHA256 c352bca3889d16a55c7d459ce7df1f9c8051225c936d820ef45c7e9fea10f8ff.
+
+<!-- BEGIN FW NATIVE MASK CHECKER -->
+```python
+"""Run from the repository root. Exact small endpoint and numerical local checks."""
+from pathlib import Path
+from itertools import combinations
+from functools import reduce
+import hashlib
+import importlib.util
+import json
+import sys
+import numpy as np
+import sympy as sp
+
+sys.dont_write_bytecode = True
+OWNER = Path("02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py")
+PIN = "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+if hashlib.sha256(OWNER.read_bytes()).hexdigest() != PIN:
+    raise ValueError("native operation owner changed")
+spec = importlib.util.spec_from_file_location("original_native", OWNER)
+native = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = native
+spec.loader.exec_module(native)
+groups = {"exact": [], "nominal": []}
+TOL = 2e-12
+
+
+def require(value, kind, label):
+    if not bool(value):
+        raise ArithmeticError(label)
+    groups[kind].append(label)
+
+
+def exact(value, label):
+    require(value, "exact", label)
+
+
+def near(x, y):
+    return bool(np.max(np.abs(np.asarray(x) - np.asarray(y))) < TOL)
+
+
+def nominal(value, label):
+    require(value, "nominal", label)
+
+
+def tensor(factors):
+    return reduce(np.kron, factors)
+
+
+def word(m, n):
+    stride = n + 1
+    gates = [(0, k * stride) for k in range(1, m)]
+    return gates + [(k * stride + j, k * stride)
+                    for k in range(m) for j in range(1, stride)]
+
+
+def perm(wires, gates):
+    out = np.arange(1 << wires)
+    for control, target in gates:
+        out ^= ((out >> (wires - 1 - control)) & 1) << (wires - 1 - target)
+    return out
+
+
+def acted(vector, permutation):
+    out = np.empty_like(vector)
+    out[permutation] = vector
+    return out
+
+
+def partial(ket, bra, sites, wires):
+    axes = tuple(sites) + tuple(i for i in range(wires) if i not in sites)
+    rows = 1 << len(sites)
+    def flat(state):
+        return state.reshape((2,) * wires).transpose(axes).reshape(rows, -1)
+    return flat(ket) @ flat(bra).conj().T
+
+
+def trace_norm(a):
+    return float(np.linalg.svd(a, compute_uv=False).sum())
+
+
+def op_norm(a):
+    return float(np.linalg.norm(a, ord=2))
+
+
+p_exact, a_exact = native.P, native.A
+v_exact = sp.Matrix([a_exact, p_exact])
+simp = sp.simplify
+exact(native.G_LOCAL[:, 0] == v_exact, "native G on |0> gives the canonical born vector used separately")
+exact(simp((v_exact.T @ v_exact)[0] - 1) == 0, "born vector normalized")
+exact(simp(1-2*p_exact**2-p_exact**3) == 0, "hidden parity bias eta=p^3")
+exact(simp((2*a_exact*p_exact)**2 + p_exact**6 - 1) == 0, "imperfect-copy overlap squared plus eta squared is one")
+p = float(p_exact)
+v = np.array([float(a_exact), p])
+eta = p**3
+s = 2*p*float(a_exact)
+basis = np.eye(2)
+X = np.array([[0.,1.],[1.,0.]])
+# m=2,n=1 has 4 wires. The native word here acts on all columns.
+small_gates = word(2, 1)
+ex = native.Execution(4, (), (), tuple(native.Gate("CX", w) for w in small_gates))
+uu = native.word_matrix(ex, max_qubits=4)
+pp = perm(4, small_gates)
+exact(all(uu[row, col] == int(row == pp[col]) for col in range(16) for row in range(16)),
+      "literal 3-CX word equals independent big-endian permutation on every column")
+exact(uu.T*uu == sp.eye(16), "reverse literal CX schedule restores all small endpoint columns")
+inv = native.inventory(ex, max_qubits=4, max_expanded_stages=3)
+exact((inv.g_count, inv.cx_count, inv.source_i_count) == (0,3,0), "exact fixed-word inventory")
+
+# A fully retained eight/nine-wire calculation needs no independent randomness or sampling.
+m0, n0 = 3, 2
+w0 = m0 * (n0+1)
+g0 = word(m0,n0)
+p0, p0inv = perm(w0,g0), perm(w0,list(reversed(g0)))
+exact(np.array_equal(p0inv[p0], np.arange(1<<w0)), "inverse schedule is identity on all 512 large-fixture columns")
+inputs = [tensor([basis[b]] + [v]*(w0-1)) for b in (0,1)]
+outputs = [acted(x,p0) for x in inputs]
+W = np.stack(outputs,axis=1)
+nominal(near(W.T @ W,basis), "full unmeasured report isometry on basis and superpositions")
+coherent = np.array([np.sqrt(.37), 1j*np.sqrt(.63)])
+nominal(near(acted(W @ coherent,p0inv),coherent[0]*inputs[0]+coherent[1]*inputs[1]),
+        "inverse returns coherent phase and every canonical birth")
+bell = np.stack([outputs[0],outputs[1]],axis=1)/np.sqrt(2)
+nominal(near(acted(bell,p0inv),np.stack(inputs,axis=1)/np.sqrt(2)),
+        "inverse returns entangled reference, logical input and all births")
+
+def blocks(n):
+    count = n+1
+    perm1 = perm(count,[(i,0) for i in range(1,count)])
+    logical = [acted(tensor([basis[b]]+[v]*n),perm1) for b in (0,1)]
+    copies = [acted(tensor([v if b==0 else X @ v]+[v]*n),perm1) for b in (0,1)]
+    return logical,copies
+
+logical,copies = blocks(n0)
+nominal(all(near(outputs[b],tensor([logical[b]]+[copies[b]]*(m0-1))) for b in (0,1)),
+        "full circuit independently factors into original and imperfect blocks")
+nominal(near(np.vdot(copies[0],copies[1]),s) and near(np.vdot(logical[0],logical[1]),0),
+        "untouched original pair is orthogonal and untouched imperfect pair has overlap s")
+
+
+def local_cache(n, d, true_copies=False):
+    logical,copies = blocks(n)
+    cache = {}
+    for original, states in ((True,logical),(False,logical if true_copies else copies)):
+        for k in range(d+1):
+            for sites in combinations(range(n+1),k):
+                for i in (0,1):
+                    for j in (0,1):
+                        cache[original,sites,i,j] = partial(states[i],states[j],sites,n+1)
+    return cache
+
+
+def reduced_product(cache, sites, m, n, i, j):
+    parts = []
+    for k in range(m):
+        local = tuple(x-k*(n+1) for x in sites if k*(n+1)<=x<(k+1)*(n+1))
+        parts.append(cache[k==0,local,i,j])
+    return tensor(parts)
+
+
+small_cache = local_cache(n0,2)
+for d in (1,2):
+    same = True
+    for sites in combinations(range(w0),d):
+        for i,j in ((0,0),(1,1),(0,1)):
+            actual = partial(outputs[i],outputs[j],sites,w0)
+            product = reduced_product(small_cache,sites,m0,n0,i,j)
+            same = same and near(actual,product)
+    nominal(same,f"all {d}-site partial matrices agree with explicit full-word contraction")
+
+# The larger fixture has 28 wires, evaluated by the independently checked
+# exact block factorization. No dense 2^28 state is claimed.
+m, n = 7, 3
+cache = local_cache(n,2)
+bounds = {}
+for d in (1,2):
+    max_diag, max_cross = 0.,0.
+    n_seen = 0
+    for sites in combinations(range(m*(n+1)),d):
+        rho0 = reduced_product(cache,sites,m,n,0,0)
+        rho1 = reduced_product(cache,sites,m,n,1,1)
+        cross = reduced_product(cache,sites,m,n,0,1)
+        max_diag = max(max_diag,trace_norm(rho0-rho1)/2)
+        max_cross = max(max_cross,trace_norm(cross))
+        n_seen += 1
+    diag_limit, cross_limit = d*eta**(n-d+1), s**(m-d)
+    nominal(max_diag <= diag_limit+TOL, f"all {d}-site logical diagonal contrasts within parity bound")
+    nominal(max_cross <= cross_limit+TOL, f"all {d}-site logical coherences within untouched-block bound")
+    nominal(diag_limit+cross_limit<1, f"{d}-site summed local bound nontrivial")
+    bounds[str(d)] = {"sites":n_seen,"max_half_diagonal_trace_norm":max_diag,
+                      "max_offdiagonal_trace_norm":max_cross,"diagonal_bound":diag_limit,
+                      "offdiagonal_bound":cross_limit}
+
+# Arbitrary local Hermitian effect coupled coherently to a passive reference.
+rng = np.random.default_rng(20261106)
+for sites in ((0,), (0,1), (0,n+1)):
+    dim = 1 << len(sites)
+    A = rng.normal(size=(2*dim,2*dim)) + 1j*rng.normal(size=(2*dim,2*dim))
+    O = A + A.conj().T
+    O /= op_norm(O)
+    T = O.reshape(dim,2,dim,2)
+    B = [[np.einsum("vu,urvs->rs",reduced_product(cache,sites,m,n,j,i),T)
+          for j in (0,1)] for i in (0,1)]
+    Bfull = np.block(B)
+    Aref = (B[0][0]+B[1][1])/2
+    bound = len(sites)*eta**(n-len(sites)+1)+s**(m-len(sites))
+    nominal(near(Bfull,Bfull.conj().T) and op_norm(Bfull-np.kron(np.eye(2),Aref))<=bound+TOL,
+            f"coherent reference-coupled tariff bound on sites {sites}")
+
+# Exact decoded logical observables and hostile open-clock sources.
+Z = sp.diag(1,-1)
+I2 = sp.eye(2)
+z_target = sp.kronecker_product(Z,I2,I2,I2)
+z_parity = sp.kronecker_product(Z,Z,I2,I2)
+exact(uu.T*z_parity*uu == z_target,"encoded original block parity equals the raw logical Z on all columns")
+indices = np.arange(1 << w0)
+bits = np.array([[(k>>(w0-1-i))&1 for i in range(w0)] for k in indices])
+click = np.sum(bits[:,:n0+1],axis=1)%2
+nominal(near(W.T @ (click[:,None]*W),np.diag([0.,1.])),
+        "single parity accumulator measures the full logical click")
+masked_mass = W.T @ (bits[:,0,None]*W)
+nominal(near(masked_mass,np.diag([(1-eta**n0)/2,(1+eta**n0)/2])),
+        "encoded one-target parsed charge has slope eta^n")
+first = perm(w0,g0[:1])
+before_mask = np.stack([acted(x,first) for x in inputs],axis=1)
+flag = bits[:,n0+1,None]
+nominal(near(before_mask.T @ (flag*before_mask),np.diag([p*p,p])),
+        "one actual initial CX exposes imperfect-copy slope eta before its masks")
+q = sp.symbols("q",real=True)
+exact(sp.diff(1+q,q)==1,"raw start and fully decoded end retain unit parsed-length slope")
+# Primary H.1 carrier: reporter, a separate live source port, arbitrary Spin4,
+# then 23 canonical RAW births. The retained unread tail tensors with identity.
+# Input_isometry from native_execution.py would insert zero blanks, so the
+# all-column native validator is called with () and births are tracked separately.
+def source_execution(size, gates):
+    return native.Execution(size, (), (), tuple(gates), native.G_CX_SOURCE_I, 1, (2,3))
+
+def local_inverse(size, target):
+    one = source_execution(size,[native.Gate("G",(target,))])
+    return native.inverse_word(one,max_qubits=size,max_expanded_stages=11)
+
+# Small test uses physical wire 0 as inverse target and wire 1 as live port.
+small_inverse = local_inverse(4,0)
+small_inverse_matrix = native.word_matrix(source_execution(4,small_inverse),max_qubits=4)
+ideal_inverse_matrix = sp.kronecker_product(native.G_LOCAL.T,sp.eye(8))
+exact(all(simp(u-vv)==0 for u,vv in zip(small_inverse_matrix,ideal_inverse_matrix)),
+      "single routed off-port G inverse is G transpose tensor identity on all 16 port and Spin columns")
+exact(len(small_inverse)==11 and
+      [sum(g.op==name for g in small_inverse) for name in ("CX","SourceI","G")]==[6,4,1],
+      "native inverse compiler uses two three-CX swaps and five central calls")
+exact((native.G_LOCAL.T*v_exact).applyfunc(simp)==sp.Matrix([1,0]),
+      "exact inverse unprepares the canonical born target on its initialized fibre")
+
+me,ne=3,7
+arena=4+(me*(ne+1)-1)
+born_wires=tuple(range(4,arena))
+def arena_wire(local):
+    return 0 if local==0 else local+3
+copy_targets=[arena_wire(k*(ne+1)) for k in range(1,me)]
+unprep=tuple(g for target in copy_targets for g in local_inverse(arena,target))
+cx_schedule=tuple(native.Gate("CX",(arena_wire(c),arena_wire(t))) for c,t in word(me,ne))
+encoder=unprep+cx_schedule
+decoder=tuple(reversed(cx_schedule))+tuple(native.Gate("G",(target,)) for target in reversed(copy_targets))
+full_meta=source_execution(arena,encoder+decoder)
+counts=native.inventory(full_meta,max_qubits=arena,max_expanded_stages=70)
+exact(arena==27 and len(born_wires)==23 and set(range(4,arena))==set(born_wires)
+      and set(born_wires).isdisjoint(full_meta.source_spin+(full_meta.source_port,)),
+      "24 encoded wires plus separate port and Spin4 with 23 distinct RAW birth stages")
+exact(len(cx_schedule)==23 and len(encoder)==45 and len(decoder)==25 and
+      counts.gate_count==70 and len(born_wires)+counts.gate_count==93,
+      "23 births plus 45 encoder and 25 decoder calls on validated native carrier")
+exact((counts.cx_count,counts.g_count,counts.source_i_count)==(58,4,8),
+      "entire 70-call positive word comprises 58 CX, 4 G and 8 SourceI")
+exact(tuple(decoder[:23])==tuple(reversed(encoder[-23:])) and
+      (native.G_LOCAL*native.G_LOCAL.T-sp.eye(2)).applyfunc(simp)==sp.zeros(2),
+      "reverse decoding cancels every CX and both committed inverse blocks with direct G")
+exact(all(w in set(range(arena)) for gate in full_meta.gates for w in gate.wires) and
+      arena==4+len(born_wires),"full decoder retains all 23 fresh wires and the source port and Spin")
+
+# All 24 encoded sites are checked on the exact product factorization of
+# the prepared codewords, using numerical matrices for each eight-wire block.
+cache_true=local_cache(ne,2,true_copies=True)
+efficient_bounds={}
+for d in (1,2):
+    diagonal,cross=0.,0.
+    for sites in combinations(range(me*(ne+1)),d):
+        r0=reduced_product(cache_true,sites,me,ne,0,0)
+        r1=reduced_product(cache_true,sites,me,ne,1,1)
+        off=reduced_product(cache_true,sites,me,ne,0,1)
+        diagonal=max(diagonal,trace_norm(r0-r1)/2)
+        cross=max(cross,trace_norm(off))
+    limit=d*eta**(ne-d+1)
+    nominal(diagonal<=limit+TOL,f"true-copy primary H.1 all {d}-site half diagonal norm within bound")
+    nominal(cross<TOL,f"true-copy primary H.1 all {d}-site off-diagonal matrices vanish")
+    efficient_bounds[str(d)]={"sites":len(tuple(combinations(range(24),d))),
+                              "max_half_diagonal_trace_norm":diagonal,
+                              "max_offdiagonal_trace_norm":cross,"bound":limit}
+exact(simp(2*(p_exact**3)**6-2*p_exact**18)==0,
+      "primary two-site half trace bound is exactly two p to the eighteenth")
+# The exact orthogonality reason: every <=2-site support misses at least one
+# whole block, and its two pure codewords have disjoint total-parity sectors.
+exact(all(len({i//(ne+1) for i in sites})<me
+          for d in (1,2) for sites in combinations(range(24),d)),
+      "all 300 tested small supports miss an entire orthogonal true-copy block")
+
+# Verify arbitrary tail states on every old all-column control (4 wires
+# plus the untouched tail). A global parity reader transports all 3 labels,
+# including invalid 11, with no initialized-tail restriction on the equality.
+p_bit0=sp.diag(1,0)
+p_bit1=sp.diag(0,1)
+parity0=(sp.eye(16)+z_parity)/2
+parity1=sp.eye(16)-parity0
+raw0=(sp.eye(16)+z_target)/2
+raw1=sp.eye(16)-raw0
+uu_tail=sp.kronecker_product(uu,I2)
+for label,encoded,raw in (
+    ("0",sp.kronecker_product(parity0,I2),sp.kronecker_product(raw0,I2)),
+    ("10",sp.kronecker_product(parity1,p_bit0),sp.kronecker_product(raw1,p_bit0)),
+    ("11",sp.kronecker_product(parity1,p_bit1),sp.kronecker_product(raw1,p_bit1))):
+    exact(uu_tail.T*encoded*uu_tail==raw,
+          f"all-column parity transports H.1 outcome {label} with arbitrary retained tail")
+j0=sp.kronecker_product(sp.Matrix([1,0]),v_exact)
+j1=sp.Matrix([0,0,1,0])
+rho=(1-q)*(j0*j0.T)+q*(j1*j1.T)
+tail_one=sp.kronecker_product(I2,p_bit1)
+tail_mass=simp(sp.trace(rho*tail_one))
+exact(simp(tail_mass-p_exact**2*(1-q))==0 and simp(sp.diff(tail_mass,q)+p_exact**2)==0,
+      "H.1 recovered unread tail has mass p squared times one minus q and unsuppressed negative slope")
+print(json.dumps({"owner_sha256":PIN,"status":"PASS","exact_controls":groups["exact"],
+                  "nominal_controls":groups["nominal"],"nominal_tolerance":TOL,
+                  "numbers_are_intervals":False,
+                  "primary_H1_true_copies":{"blocks":me,"masks_per_block":ne,
+                    "encoded_wires":24,"native_arena_excluding_untouched_H1_tail":arena,
+                    "births":len(born_wires),"encoder_calls":len(encoder),"decoder_calls":len(decoder),
+                    "added_stages_before_other_readout":93,"bounds":efficient_bounds},
+                  "CX_only_secondary":{"blocks":m,"masks_per_block":n,"bounds":bounds},
+                  "scope":"Native words and local observable compression. Finite large matrices use factorization; support of physical cost, complete Info and independent occurrence sources require separate proof."},
+                 sort_keys=True,indent=2))
+```
+<!-- END FW NATIVE MASK CHECKER -->
+
 ## 8. Reproduction
 
 Run from this directory:

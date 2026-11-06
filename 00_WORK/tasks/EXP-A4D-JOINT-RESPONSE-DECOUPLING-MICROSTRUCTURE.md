@@ -23101,3 +23101,31 @@ code-universality or rare-event census. This is supporting mathematics
 and a precise route exclusion, not physical C acceptance.
 SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED is not established; GR_closed=false.
 No lifecycle, assembly, raw216 or shared-entry status change.
+
+
+## 2026-11-06 checkpoint: native reversible report and the full-price test
+
+Input e1e2cb59a; same Draft #334 and two write paths. Primary section 7fw
+consumes the actual decoder/source test FV7. On a live H.1 pointer it
+constructs a Golden word with exact original 0/10/invalid label transport.
+Protection on a declared intermediate cut holds for every bounded k-wire
+work observable, including coherent terms and arbitrary entangled
+spectators, up to a stated norm defect and an explicit spectator operator.
+The finite comparison keeps its real gain, basis factors and right lift.
+A backwards circuit cone makes the support hypothesis testable for an
+actually supplied clock-bounded meter.
+
+The concrete H.1 example uses 23 births, 45 encode calls and 25 decode
+calls. All 276 two-site regions of the 24-wire fixture meet the analytic
+bound; the global parity reader retains the full paid parsed-label source.
+The readout is transported before sealing, without acting on oldRIGHT.
+An independent review corrected the tail-centering convention in FW3.
+
+This instantiates FV7 on the parsed terminal charge. It does not sign off
+on the price of the extended clock or the unprotected encoding/disclosure
+stages. To use FW3 for physical C, the physical work readout must supply
+its actual space-time support or controlled norm tail, bank/source and
+all remaining independent control reactions in the same normalized norm.
+The operator-statistical Einstein theorem retains its previous scope.
+No physical closure, negative universality theorem, registry promotion,
+Ready transition, retirement, merge or raw216 change. GR_closed=false.
