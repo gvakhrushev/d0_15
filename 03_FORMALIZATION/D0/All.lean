@@ -77,6 +77,7 @@ import D0.Analysis.MovingProjectorVariableParameters
 import D0.Analysis.NoncommutingPerturbationProduct
 import D0.Analysis.PositiveMatrixLogDet
 import D0.Analysis.RelativeLogDetScaleBound
+import D0.Analysis.RetainedRecordSurprisal
 import D0.Analysis.ReturnPriceLogScaleDerivative
 import D0.Analysis.ReturnTemplateErrorBudget
 import D0.Born
