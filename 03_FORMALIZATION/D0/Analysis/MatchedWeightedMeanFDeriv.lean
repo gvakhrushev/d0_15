@@ -1,4 +1,5 @@
 import D0.Analysis.MatchedWeightedMeanDerivative
+import Mathlib.Analysis.Calculus.Deriv.Comp
 import Mathlib.Analysis.Calculus.FDeriv.Mul
 import Mathlib.Analysis.Calculus.FDeriv.Add
 
@@ -31,34 +32,25 @@ theorem matched_weighted_mean_hasFDerivAt
     (hnorm : ∀ᶠ y in 𝓝 p, ∑ i ∈ s, w i y = 1) :
     HasFDerivAt (fun y => ∑ i ∈ s, w i y • x i y)
       (∑ i ∈ s, w i p • dx i) p := by
-  have hweights : HasFDerivAt (fun y => ∑ i ∈ s, w i y) (∑ i ∈ s, dw i) p :=
-    HasFDerivAt.fun_sum hw
-  have hzero : (∑ i ∈ s, dw i) = 0 := by
-    have hnorm' : (fun y => ∑ i ∈ s, w i y) =ᶠ[𝓝 p] (fun _ => (1 : ℝ)) := hnorm
-    have hc := hweights.congr_of_eventuallyEq hnorm'.symm
-    exact hc.unique (hasFDerivAt_const (1 : ℝ) p)
-  have hmean : HasFDerivAt (fun y => ∑ i ∈ s, w i y • x i y)
-      (∑ i ∈ s, (w i p • dx i + (dw i).smulRight (x i p))) p :=
-    HasFDerivAt.fun_sum fun i hi => (hw i hi).smul (hx i hi)
-  have heq : (∑ i ∈ s, (w i p • dx i + (dw i).smulRight (x i p))) =
-      ∑ i ∈ s, w i p • dx i := by
-    rw [Finset.sum_add_distrib]
-    have hcancel : (∑ i ∈ s, (dw i).smulRight (x i p)) = 0 := by
-      ext v
-      simp only [ContinuousLinearMap.sum_apply, ContinuousLinearMap.smulRight_apply,
-        ContinuousLinearMap.zero_apply]
-      calc
-        _ = ∑ i ∈ s, (dw i v) • x₀ := by
-          apply Finset.sum_congr rfl
-          intro i hi
-          rw [hmatch i hi]
-        _ = (∑ i ∈ s, dw i v) • x₀ := by rw [Finset.sum_smul]
-        _ = 0 := by
-          have hv := congrArg (fun f : X →L[ℝ] ℝ => f v) hzero
-          simp only [ContinuousLinearMap.sum_apply, ContinuousLinearMap.zero_apply] at hv
-          rw [hv, zero_smul]
-    rw [hcancel, add_zero]
-  rwa [heq] at hmean
+  -- The finite product rule gives differentiability; identify its derivative
+  -- on each direction by applying the curve theorem to the corresponding line.
+  have hmean := HasFDerivAt.fun_sum (u := s) fun i hi => (hw i hi).smul (hx i hi)
+  apply hmean.congr_fderiv
+  ext v
+  let line : ℝ → X := fun t => p + t • v
+  have hbase : p = line 0 := by simp [line]
+  have hline : HasDerivAt line v 0 := by
+    simpa [line] using ((hasDerivAt_id' (0 : ℝ)).smul_const v).const_add p
+  have ht : Tendsto line (𝓝 0) (𝓝 p) := hbase ▸ hline.continuousAt
+  have hcurve := matched_weighted_mean_hasDerivAt s (fun i => w i ∘ line)
+    (fun i => x i ∘ line) (fun i => dw i v) (fun i => dx i v) 0 x₀
+    (fun i hi => (hw i hi).comp_hasDerivAt_of_eq 0 hline hbase)
+    (fun i hi => (hx i hi).comp_hasDerivAt_of_eq 0 hline hbase)
+    (fun i hi => by simpa only [Function.comp_apply, ← hbase] using hmatch i hi)
+    (ht.eventually hnorm)
+  have h := (hmean.comp_hasDerivAt_of_eq 0 hline hbase).unique hcurve
+  simpa only [ContinuousLinearMap.sum_apply, ContinuousLinearMap.smul_apply,
+    Function.comp_apply, ← hbase] using h
 
 /-- One-dimensional consequence, matching the earlier curve theorem. -/
 theorem matched_weighted_mean_one_dimensional_via_fderiv
