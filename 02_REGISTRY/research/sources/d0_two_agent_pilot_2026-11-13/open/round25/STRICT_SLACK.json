@@ -1,0 +1,22 @@
+{
+  "status": "PASS_RATIONAL_REFERENCE_SLACK_PLUS_PINNED_B21_CHART",
+  "rho_min": "3712/5473",
+  "rho_max": "768/421",
+  "reference_raw_u_column_norm_squared_strict_upper": "1/50",
+  "reference_raw_u_smallest_singular_strict_lower": "2/25",
+  "reference_Julia_coframe_defect_strict_lower": "49/50",
+  "reference_Julia_link_defect_lower": "115/196",
+  "reference_Psi_amplitude_squared_strict_upper": "1/10240",
+  "reference_material_slack_strict_lower": "1/3",
+  "uses_owner_inequalities": [
+    "309/500<p<619/1000",
+    "0<F_h<1/8",
+    "k0>20",
+    "rho_max<2"
+  ],
+  "current_chart": "consumes B21 rational geometric/Julia/material envelope; 64 free sites, all 2688 b bits; fixed rho and boundary; additive raw u interpretation from B24",
+  "reference_link_reason": "rotation/ref identity ||exterior/2||=1/2; Cayley boost t=1/8 has largest exterior singular 9/7, divided by two",
+  "strict_bounds_for_entire_SAM_palette": true,
+  "C1_native_compiler_certified": false,
+  "GR_closed": false
+}

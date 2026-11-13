@@ -1,0 +1,15 @@
+{
+  "status": "PASS_BOUND_SOURCE_LEAVES_ON_ACTUAL_TARGETS",
+  "labels": [
+    "Y0",
+    "b_one_hot"
+  ],
+  "banks": 7,
+  "sites": 256,
+  "source_leaves_per_site": 282,
+  "entries_checked": 1010688,
+  "max_absolute_error": 5.204170427930421e-18,
+  "scale": "physical source moments before A11 inverse PF",
+  "finite_native_processor_executed": false,
+  "GR_closed": false
+}
