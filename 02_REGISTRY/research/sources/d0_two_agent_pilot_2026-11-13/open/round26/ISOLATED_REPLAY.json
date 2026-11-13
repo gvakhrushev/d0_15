@@ -1,0 +1,101 @@
+{
+  "status": "PASS_A12_ISOLATED_BYTE_EXACT_REPLAY",
+  "input_sha256": {
+    "round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "round12/compile_source_selectors.py": "eb2e04cbd26a31d91172b6e092fff1363a3eda170f056023ccbfb42891408b0d",
+    "round12/verify_source_selectors.py": "6259e31b37b069f31e6cc681b86560e8787bd9a33fceb1dc87fc002e303b682b",
+    "round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "round12/SELECTOR_CHECK.json": "edfa21cafea072e3642193dcb665b8f423f81f2ec2f2869f5ec922d0ea1e6f46",
+    "round12/COHERENT_SOURCE_SELECTORS_RU.md": "600ce1da06f015330e5adf9f5adadd4be1e7bab33df58feb4edaf8ea7e7a94b4"
+  },
+  "regenerated_sha256": {
+    "INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "SELECTOR_CHECK.json": "edfa21cafea072e3642193dcb665b8f423f81f2ec2f2869f5ec922d0ea1e6f46"
+  },
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "compile_source_selectors.py"
+      ],
+      "stdout": {
+        "status": "EXACT_FULL_SOURCE_SELECTOR_TARGETS_WITH_COMMON_READY",
+        "internal_palette_count": 25,
+        "internal_r": 1374,
+        "internal_n": 0,
+        "top_r": 1580,
+        "top_n": 1,
+        "post_r": 94,
+        "post_n": 6,
+        "padded_interpreter_slots_per_ten_sign_report": 1054,
+        "selector_fair_qubits_per_report": 10248262,
+        "selector_Golden_qubits_per_report": 76
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "verify_source_selectors.py"
+      ],
+      "stdout": {
+        "status": "PASS_EXACT_SELECTOR_TABLES_AND_FULL_INPUT_INVOLUTION_CONTROLS",
+        "checks": 39941,
+        "palettes": [
+          {
+            "file": "INTERNAL_SELECTOR_PALETTE.json",
+            "partitions": 25,
+            "r": 1374,
+            "n": 0
+          },
+          {
+            "file": "TOP_SOURCE_SELECTOR_PALETTE.json",
+            "partitions": 512,
+            "r": 1580,
+            "n": 1
+          },
+          {
+            "file": "TEN_SIGN_REPORT_PALETTE.json",
+            "partitions": 2048,
+            "r": 94,
+            "n": 6
+          }
+        ],
+        "table_hashes": {
+          "INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+          "TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+          "TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6"
+        },
+        "retained_selector_caps": {
+          "internal": 7,
+          "top": 7,
+          "fair_plus_bank": 28
+        },
+        "selector_fair_qubits_per_report": 10248262,
+        "selector_Golden_qubits_per_report": 76,
+        "ready_component_lower_bound": "1/2",
+        "same_coin_two_copy_hostile_detected": true,
+        "Boolean_or_native_factory_word_checked": false,
+        "full_H1_READY_claimed": false,
+        "GR_closed": false
+      },
+      "stderr": ""
+    }
+  ],
+  "direct_owner_modified": false,
+  "native_word_executed": false,
+  "GR_closed": false
+}
