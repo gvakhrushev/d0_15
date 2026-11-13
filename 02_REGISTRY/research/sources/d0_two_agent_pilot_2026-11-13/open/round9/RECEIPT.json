@@ -1,0 +1,21 @@
+{
+  "status": "PASS_EXACT",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "created_utc": "2026-11-13T15:48:43.111066+00:00",
+  "checks": 14,
+  "python_optimized_result_identical": true,
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round9/ROUND9_ORDERED_PREFIX_SYMMETRY_RU.md": "ccbe3260a18c50e138732d4f4e106ac9f4d838b31ed007a1149bef3897fc37cd",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round9/CHECK_RESULT.json": "33d9bcaa5fa4ff707e6b5f27aa8c3443899bf6d8402b66f6fc570c15a4c3beae",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round9/check_commuting_paid_prefix.py": "f3f01c55f565b8cbb5575fd25f6aaab94af0cee4db77326059c80ed0ccdc497c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round9/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round5/ROUND5_RESULT_RU.md": "5a0c6ce540462bdca944c6fad7b4283ccbb1dbd8fe79963d001637ee36a99ad8",
+    "02_REGISTRY/research/A4D_COHERENT_COMPILATION_COST_DESCENT.md": "72826a840aac882d1a93acaf0e1eba5c7e7c57cd5bfc770aff26c5824375f43c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f",
+    "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203"
+  },
+  "physical_price_preserving_map_proved": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}

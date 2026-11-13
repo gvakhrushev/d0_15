@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EXACT",
+  "check_count": 14,
+  "checks": [
+    "native SourceI and CX commute on all 16 columns",
+    "two chronological three-call words have same full endpoint",
+    "literal paid gate inventory one CX and two SourceI",
+    "equal primitive inventory and stage count",
+    "source-first prefix report effect is p squared on all inputs",
+    "CX-first prefix report effect exposes source-port population",
+    "prefix effect gap exact positive source projector",
+    "toy canonical source-port population",
+    "born-source prefix gap is p to fifth",
+    "prefix contrast sign",
+    "owned E0 maps valid 10 mark to the same prior r effect",
+    "owned E0 invalid mark is zero on born tail",
+    "same-cut feedback operators identical on explicit nontrivial cut",
+    "the compared feedback is nonzero and retains all spin columns"
+  ],
+  "born_port_prefix_gap": 0.09016994374947424,
+  "scope": "finite native source-I code; earlier optional test needs actual H1 timing and payment",
+  "physical_price_preserving_map_proved": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}

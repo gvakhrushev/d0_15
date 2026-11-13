@@ -1,0 +1,23 @@
+{
+  "status": "PASS_EXACT",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "created_utc": "2026-11-13T15:56:35.062814+00:00",
+  "checks": 17,
+  "normal_and_optimized_warnings_as_errors_identical": true,
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round10/ROUND10_TWO_G_HIGH_REPORT_RU.md": "aa200c753f82aefca877f52bf428215d796f6864ee7977ab2f4294e66171d731",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round10/CHECK_RESULT.json": "4430209bb7fcb4b62f7ca4cd42a42f1c0c3d46be5dcc37de72b7af350b5b8ae3",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round10/check_two_g_report.py": "636d81bb435bf6d5cefdda7c63f02484aa66f7f8ed8d12e357fd04cae8b83653",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round10/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  },
+  "extra_calls_per_repeat": {
+    "G": 2
+  },
+  "original_H1_AD1_preserved": false,
+  "new_H1_task_admitted": false,
+  "full_CQ_and_growing_clock_source_proved": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}

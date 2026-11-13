@@ -1,0 +1,33 @@
+{
+  "status": "PASS_EXACT",
+  "checks": 12,
+  "names": [
+    "high-report offset agrees with actual two-G result",
+    "gain strictly between zero and one",
+    "high-report endpoint order and positive support",
+    "uniform decoding error is strictly positive",
+    "minimax endpoint decoder is stochastic",
+    "candidate attains opposite endpoint errors",
+    "exact dual lower-bound identity",
+    "unbiased bit inverse takes value above one",
+    "literal 12-stage routed inverse plus original two G",
+    "routed inverse equals G^-2 on all source Spin pointer columns",
+    "paid 14-stage endpoint restores exact original operator",
+    "all 14 calls accounted by primitive type"
+  ],
+  "matched_H1_interval": [
+    0.38196601125010515,
+    0.5
+  ],
+  "best_one_bit_uniform_error": 0.021209117287780972,
+  "best_one_bit_decoder_u": 1.0,
+  "best_one_bit_decoder_v": 0.2790147933210674,
+  "inverse_added_calls": {
+    "G": 4,
+    "CX": 6,
+    "SourceI": 4
+  },
+  "scope": "single-bit field-independent decoder; paid all-column inverse endpoint; no full H1 admission or full clock/price",
+  "physical_C_discharged": false,
+  "GR_closed": false
+}
