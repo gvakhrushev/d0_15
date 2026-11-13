@@ -1,0 +1,27 @@
+{
+  "status": "PASS_ROOT_INDEPENDENT_B24_REPLAY",
+  "B_commit": "534f6f40e",
+  "hashes_verified": {
+    "round21_input_sha256": 5,
+    "A11_input_sha256": 9,
+    "output_sha256": 15
+  },
+  "exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "warnings_as_errors": true,
+  "generated_files_byte_identical": {
+    "TORUS_CHOI_ADDRESSES.jsonl": true,
+    "SITE_DEPENDENCIES.jsonl": true,
+    "TORUS_CERTIFICATE.json": true,
+    "TORUS_CHOI_TEST.json": true,
+    "REFERENCE_FRAME_CHECK.json": true,
+    "CURRENT_FRAME_CHECK.json": true
+  },
+  "receipt_sha256": "3765aa24d1554ad944b3531225b87802878bbcfb83ff02eb80f2ab01578ddca2",
+  "limits": "fixed collar/PF function-source equivalence and finite target maps; not native full-price equality or actual READY",
+  "GR_closed": false
+}

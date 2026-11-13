@@ -1,0 +1,60 @@
+{
+  "status": "PASS_EXACT_FULL_INPUT_SOURCE_OPERATOR_MAJORANT",
+  "operator_dag_sha256": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+  "checked_nodes": 20402,
+  "leaf_count": 282,
+  "contract": {
+    "active_programme_addresses_at_most": 4096,
+    "active_A_not_padding_denominator": true,
+    "julia_d": 32,
+    "uniform_internal_CAR_sites_S": 256,
+    "rho_min": "3712/5473",
+    "h": "1/4",
+    "nu": "3/5",
+    "global_H1_catalogue_and_halo_not_proved_by_this_certificate": true
+  },
+  "leaf_norm_upper": {
+    "coframe_moment": "65536",
+    "link_matrix_moment": "131072",
+    "material_X": "1"
+  },
+  "golden_isolating_interval": [
+    "309/500",
+    "619/1000"
+  ],
+  "source_operator_norm_upper_rational": {
+    "H_f_before_inverse_PF": "2201132201773703808731731290686533472437154809140961644720231510834244198848953228835049831009116339980645688020607198900527661205598896302594579223140787890977529556401967384043729170159153683311802182996297275064397135271101666635362132441983518695993713128810297351217743570089626105978657905544958744681011076528875162430259753252273815533318085692716595425248983067417648524947065677477072199654504485986482125734038958886766461533025098887660002344960000/3",
+    "H_q_before_inverse_PF": "4988179628926166892544/1305"
+  },
+  "common_Lambda_h": "2^1525",
+  "common_Lambda_h_integer": "1176910364707535443642635061537262750445358031223480933281091327668582710738185156576701671927415063312230842910589846087823445790427225744614068841743542310280865888369934191782608436483242919764084737860052646512498704032179980033916692930712650373534089668624170252748766286758602259966696369124895444516781723197862105440944449224395878149453408001880322750837349747791331362881599152248473327725713137815914471630227524908459884435742789544363771855634432",
+  "epsilon_h": "2^-1531",
+  "canonical_copy_degrees": {
+    "H_f_before_inverse_PF": [
+      82,
+      0
+    ],
+    "H_q_before_inverse_PF": [
+      2,
+      2
+    ]
+  },
+  "ten_sign_copies": {
+    "Choi": 180,
+    "material": 16
+  },
+  "seven_unspecialized_calls_copy_bound": {
+    "Choi": 1260,
+    "material": 112
+  },
+  "norm_method": "triangle inequality; disjoint-copy tensor product norm; identity padding norm one; exact rational arithmetic",
+  "positive_effects": "(I +/- H_f/Lambda_h)/2 and (I +/- H_q/Lambda_h)/2 are positive contractions on ALL input columns under the contract",
+  "not_claimed": [
+    "native sign/compiler word",
+    "READY probability",
+    "physical bank admission",
+    "full H1 source or geometric gain",
+    "physical Cost-Info binding"
+  ],
+  "GR_closed": false
+}

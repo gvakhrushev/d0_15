@@ -1,0 +1,16 @@
+{
+  "status": "PASS_CURRENT_RAW_INVERSE_COFRAME_BINDING",
+  "exact_R": "diag(1,1,-1,-1)",
+  "proper_Lorentz_R": true,
+  "source_frame": "e=R*(I+H E_10/2); u=nu eta e^-T",
+  "link_frame": "U=R exp(+Kx N2+Ky N3) R^-1=exp(-Kx N2-Ky N3)",
+  "all_CAR_creator_covariances_exact": 4,
+  "all_exported_sites": 256,
+  "max_raw_u_match_error": 3.469446951953614e-18,
+  "max_link_match_error": 0.0,
+  "chosen_chart": "additive raw u entries, 24 proper-link coordinates and two material values at each of 64 free sites; e=nu eta u^-T; fixed collar",
+  "PF_dressing_in_this_binding": false,
+  "B21_geometry_sha256": "bedb2f51e2ae744f421315cde721848c3c7dd7b398b0a28c22f523c9f1aab43b",
+  "physical_boundary_or_native_price_proved": false,
+  "GR_closed": false
+}

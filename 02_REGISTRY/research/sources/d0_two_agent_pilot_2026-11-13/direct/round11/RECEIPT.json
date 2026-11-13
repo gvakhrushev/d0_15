@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-11-13T18:48:15.094470+00:00",
+  "status": "REVIEWED_EXPLICIT_FULL_SOURCE_OPERATORS_WITH_PERIODIC_GLOBAL_BINDING",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "parent_direct_commit": "723e29ed64b69c5b0e74b558dfe66a509d734031",
+  "B_latest_commit": "534f6f40ebfd1cae0b0d307de9679e2f946bf71f",
+  "previous_goal_turn": "progress: A10 constructive recovery was committed and independently reviewed",
+  "current_goal_turn": "progress: full source operator DAG and exact all-input norm; concrete global leaf binding; PF/CAR and fixed-collar boundary maps consumed",
+  "own_files": {
+    "CURRENT_FRAME_CHECK.json": "62ee373975f5e4faada5a410378dca156aab465e73ee54476607257d0c3d9d0c",
+    "FULL_SOURCE_OPERATOR_RU.md": "d61023e7897ee55574cb63f6a7012617395c3e08db8978ef9f9fa74c8794439b",
+    "PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "PERIODIC_SOURCE_INTEGRATION_RU.md": "139bb288d221b8da16df1fe0b88353b8d53bb844c8210825f5cf52ac9e0308ae",
+    "RESULT_RU.md": "951d8ad925ec990e01b5c215a128ffbdf87927ca571d9b0f05a83fb4a71a09dc",
+    "ROOT_REVIEW_B23.json": "a9bb12ef9078a32be795f1e8e5f487078fc2c3ce3fc1902cba67f33bf8a805bf",
+    "ROOT_REVIEW_B24.json": "e309116fb74373b79d0d038f503ad28c4000dd9a1f43c55228da83b9222f7c25",
+    "SOURCE_NORM_CERTIFICATE.json": "b4aca9a0e9655559531947d5ccca7b40ae73ddf338bbcdc97012ae1fb95b4fc8",
+    "SOURCE_OPERATOR_CHECK.json": "48f2dd5be6272bfa1cfb29881e6d7a31eb1dc9a692004544d43b001d301824e3",
+    "SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "bind_periodic_sources.py": "e8524c6986ff839a5b176d95da90fdb9bdd0c232f45377bea50d0a30e944612d",
+    "certify_source_norm.py": "c79fdcb210fd18ad4a9f98ddb5bb5b29aa25ef84095ef71ce1e5783aad1c93fe",
+    "check_current_frame.py": "11b67ae702a06945e9ef8496b35a4050bbe2d5e2cdada91962a2ac44e0159192",
+    "check_source_operator.py": "ea4a27f2a3fa49f7d36f03fa5a0ac3c9e4b9b7d2a66ae156c220c0a7dd0ea2a0",
+    "source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b"
+  },
+  "owning_inputs": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "70da30184823746c040549b3182080326f30af9caba08c95c3a13da46bc8c294",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md": "b1e7d9cdd81605e0b7d532ac8a3bfc682e42806367ad5e109324a5812d7d9e50",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md": "ce8d2e88d8a5669a3ef9de1a849a5e21ec0a55b3fdb253d4b990656b0062427a"
+  },
+  "direct_checks": {
+    "warnings_as_errors": true,
+    "exit_codes": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "DAG_nodes": 20402,
+    "scalar_coordinates_checked": 282,
+    "normal_link_directions_checked": 160,
+    "B21_raw_frame_sites_checked": 256,
+    "global_source_leaf_bindings": 72192,
+    "global_face_bindings": 1536,
+    "numeric_diagnostics_not_Lean": true
+  },
+  "exact_certificate": {
+    "all_input_operator_majorant": "2^1525",
+    "epsilon_h": "2^-1531",
+    "assumptions": "A_active<=4096,S256,rho>=3712/5473,h1/4,nu3/5; disjoint independent-copy tensor semantics",
+    "instantiation": "periodic A2049, separate exterior PF SITE and internal CAR/Fourier; fixed collar and PF chart"
+  },
+  "independent_review": "B24 replayed A11 core, norms, all-coordinate diagnostics and current gauge from isolated copies; root replayed B23 and B24 structural/target/frame checks",
+  "B24_reviewed_A11_snapshot": {
+    "source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b",
+    "SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "certify_source_norm.py": "c79fdcb210fd18ad4a9f98ddb5bb5b29aa25ef84095ef71ce1e5783aad1c93fe",
+    "check_source_operator.py": "ea4a27f2a3fa49f7d36f03fa5a0ac3c9e4b9b7d2a66ae156c220c0a7dd0ea2a0",
+    "SOURCE_NORM_CERTIFICATE.json": "b4aca9a0e9655559531947d5ccca7b40ae73ddf338bbcdc97012ae1fb95b4fc8",
+    "SOURCE_OPERATOR_CHECK.json": "48f2dd5be6272bfa1cfb29881e6d7a31eb1dc9a692004544d43b001d301824e3",
+    "check_current_frame.py": "11b67ae702a06945e9ef8496b35a4050bbe2d5e2cdada91962a2ac44e0159192",
+    "CURRENT_FRAME_CHECK.json": "62ee373975f5e4faada5a410378dca156aab465e73ee54476607257d0c3d9d0c",
+    "FULL_SOURCE_OPERATOR_RU.md": "d61023e7897ee55574cb63f6a7012617395c3e08db8978ef9f9fa74c8794439b"
+  },
+  "post_review_additions": "Only new root global leaf-binding constructor/result, integration report and receipt; reviewed A11 core/proof files unchanged after pinned B24 snapshot. Global binding cross-checked against all B24 face and neighbour lists, not separately independently replayed by B24.",
+  "B23_root_replay": "ROOT_REVIEW_B23.json",
+  "B24_root_replay": "ROOT_REVIEW_B24.json",
+  "B_packets": {
+    "23": {
+      "CERTIFICATE.json": "681592e6a738a751a0e8b2e176cc601ce1f485fbd8bf338e725bd9e4a23b4528",
+      "CHOI_ADDRESSES.jsonl": "53191e0ac2a60005ed0d83240ffc179c2b20ca7df256641bbec53fc090f2803c",
+      "COPY_SLOTS.jsonl": "77f597a94f69c593e097f2318d295c1fc1f6e05282052436a8fe9609ecd9724c",
+      "LAZY_MAP_TEST.json": "aafe9d829e2f9e4c528e7932faee0e046c2a47fbfb7ffabcd2ef18ac96df5d6d",
+      "PF_SITE_CHOICAR_CONTRACT_RU.md": "c618cce2418b6358cfb0ce032782f0bfe4517b1d2d403446b9a90a606b48a69a",
+      "RECEIPT.json": "b03d1ab9ef5ab51765cdb8d81dc92100d2d30d69f8900ac25b1ade4580411266",
+      "SITE_STENCILS.jsonl": "c1a9398ceed2c8a6dd14bdadb146e180434223288b508b78ee3617d248cdef1d",
+      "build_catalogue.py": "f88fd348c961322118a1385c2a3863b605351903955c425d49fcfc5a8ce0af85",
+      "check_lazy_map.py": "f94de68ff180a75dd05b1e1de3537c2816c936fdc4b1e4fb21eb0532ca59b9a2"
+    },
+    "24": {
+      "A11_FRAME_REPLAY.json": "39c3de820133880f339b306cb2397b0e7be52c0ade39f08d6e17e242871186e3",
+      "A11_REPLAY.json": "ae28b5170af4e73de3878e4981d6e0d7049b60e5e2784b924533ba19c3a291b8",
+      "CURRENT_FRAME_CHECK.json": "14455fb28b73909986303f082546dc50c656a9e764ad73ae9b0040f664697651",
+      "RECEIPT.json": "3765aa24d1554ad944b3531225b87802878bbcfb83ff02eb80f2ab01578ddca2",
+      "REFERENCE_FRAME_CHECK.json": "40fa6163fb9953ca0bf5e18db306db6996d1325e75889420e89e36fbbe379d55",
+      "SITE_DEPENDENCIES.jsonl": "b3074e56940ffe46e0dd85e7a4071cdf6f72cdbe01bd844aef3b3cc71f1ca9a5",
+      "TORUS_BOUNDARY_REVIEW_RU.md": "1a1db036a3ef217c826e71fa66bb9c9f19060605657670bc505ee5cb0517fb08",
+      "TORUS_CERTIFICATE.json": "d112ca958b41bc58e05a7f0246e9c399347581ca704258100848600e4324b35b",
+      "TORUS_CHOI_ADDRESSES.jsonl": "35897a838390fcd0c2ad1854d2934b3c21d6c7e4b877953a097cbb9c873238f3",
+      "TORUS_CHOI_TEST.json": "340da776723b4c4f3c79a0d7ced3dd1277c8b1aaf6270496fb38eb4db09242e5",
+      "check_current_frame.py": "0af6ed035e832c69acbbaa98c1f673bb39b8e2d3101f428610528aaf16a4f2f5",
+      "check_reference_frame.py": "1bfd6297220ef28dd9dbade924d4e66f78bb309cd632cbfb9cba65745fd79ede",
+      "check_torus_binding.py": "0850c72a133cf3247cb2584407199b870224ba102c925340f64f338e2eadaa9f",
+      "check_torus_choi.py": "a0d0239773d64b2ff479415e11ca518d528398c082dd2bc5ab1c5a31115be9da",
+      "replay_a11.py": "dfcdb08be78c1c6ea289bca571817d97da414bc171e247554d05b5ec30619f13",
+      "replay_a11_frame.py": "a3a9520576ecb1e61a3cf021165032c7b5b1b3a4ca951820c1a8509bc70317d9"
+    }
+  },
+  "source_equivalence_scope": "all2688 free inverse-coframe/proper-link/matter coordinates at64 sites with fixed boundary, exterior values, PF and common scalar report parameters; not full-history or independent boundary/density equivalence",
+  "full_seven_bank_targets_emitted": false,
+  "source_sign_native_processor_emitted": false,
+  "actual_full_READY_computed": false,
+  "all_H1_marks_reader_clock_proved": false,
+  "full_physical_Cost_Info_binding_proved": false,
+  "GR_closed": false,
+  "next_scientific_obligation": "Construct actual seven source-bank full-column targets and fixed source-sign native processor/factory from the bound tensor DAG; retain all prefixes, failures, independent fields and raw occurrences; then compose A10 and full original physical source.",
+  "publication": "local only"
+}
