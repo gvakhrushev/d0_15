@@ -1,0 +1,30 @@
+{
+  "status": "FINITE_NATIVE_PREFIX_AND_CERTIFIED_ROUTER_DAG",
+  "source_native_execution_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "A14_native_boolean_sha256": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+  "A14_angle_sha256": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+  "native_bank_sha256": "e20cf2ae3aaff81fc908f8fdaefdae33bb02a67ff7d70a2aab8173bde06f9231",
+  "logical_wires": 143,
+  "RAW_births_required": 143,
+  "birth_stage_ledger_emitted": false,
+  "protected_oldRIGHT": 147,
+  "port": 143,
+  "spin": [
+    144,
+    145
+  ],
+  "arbitrary_aux": 146,
+  "zero_and_kernel_calls": 1713,
+  "zero_and_kernel_literal_inverse_calls": 3989,
+  "router_forward_calls": "684*k+5345",
+  "router_literal_inverse_calls": "5508*k+8045",
+  "full_forward_calls": "684*k+7058",
+  "full_literal_inverse_calls": "5508*k+12034",
+  "per_bank_all_column_error_upper": "59*2^-4096 < 2^-4090",
+  "success_flags_read_only_during_router": true,
+  "fixed_gate_stages_in_prefix_native_syntax_validated": true,
+  "giant_router_DAG_flattened_or_executed": false,
+  "full_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
