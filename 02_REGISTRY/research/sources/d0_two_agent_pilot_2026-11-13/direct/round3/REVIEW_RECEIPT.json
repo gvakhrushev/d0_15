@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-13T13:54:52.855101+00:00",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "directed_input_commit": "6ce5512df",
+  "independent_B6_replay": {
+    "command": "python3 -B -W error open/round6/check_backward.py",
+    "exit_code": 0,
+    "controls": 29,
+    "exact_controls": 28,
+    "numerical_gap_diagnostic": 1,
+    "note": "B receipt labels all 29 exact, but its final common-vs-conditional gap check uses floating values; this review distinguishes it."
+  },
+  "L1_symbolic_derivative": "PASS",
+  "inputs": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6/ROUND6_RESULT_RU.md",
+      "sha256": "a4d5b0302f9628814ae817041ad8b0a6b9ee56ae5f0ab699eb526d3a5eed463d"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6/check_backward.py",
+      "sha256": "995b23a87ab1c3ed96f469bb98a9654173207e690c33ddc5f0553be5d9c0ee00"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6/CHECK_RESULT.json",
+      "sha256": "8fe3cc9964329de9f45c4dcc8ae725cbb340ca9bd0828f03f8950d411aae0bf9"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6_guard/GUARD_AND_LOCAL_ROW_RU.md",
+      "sha256": "009496a4dccc3b56e5bef7a8580219640a013c66ae0172e048e283836c1f1e0c"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6_guard/check_invalid_guard.py",
+      "sha256": "eac3d9b19836ef292b1e7e490950cec270eafe379e5f765f4e312546facc5a39"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6_guard/CHECK_RESULT.json",
+      "sha256": "8c611a14853231fee4a78fafef7b1e287da1d8080c8b0971709064368a80f70b"
+    }
+  ],
+  "proof_sha256": "3f1938ede54a2dfe02660d2cf3d19285a69cf5dc8ace45284ef9dc691695f57e",
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "independent_B6_guard_replay": {
+    "command": "python3 -B -W error open/round6_guard/check_invalid_guard.py",
+    "exit_code": 0,
+    "exact_checks": 23,
+    "status": "PASS"
+  },
+  "completed_utc": "2026-11-13T13:57:18.979964+00:00"
+}
