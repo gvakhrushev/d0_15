@@ -1,0 +1,99 @@
+{
+  "status": "PASS_LITERAL_ARCHIVE_GROWING_CLOCK",
+  "checks": 1449,
+  "additional_stages": 174,
+  "additional_clock_dimension_in_units_d": 8547,
+  "final_dimension_in_units_d": 64,
+  "new_detail_ages": [
+    137,
+    136,
+    135,
+    134,
+    133,
+    132
+  ],
+  "new_detail_ranks_in_units_d": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "minimum_age": 132,
+  "full_modes": "425*(D_prefix+8547*d)",
+  "harmonic_complement": "359*(D_prefix+8547*d)",
+  "actual_last_gate": [
+    "CX",
+    [
+      0,
+      2
+    ]
+  ],
+  "archive_patterns": {
+    "00": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "01": [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "10": [
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "11": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "A132_rational_numerator": "128",
+  "A132_rational_denominator": "286122103008706966636021554540829009136313048782436456544864245109761770263138488360929991901504208079053342165692822165939416857771410545048611872626041461429883497989479062540287941187510260054416791900952095232032080858115421076896490898453509128551952187047505312146901840589857478102853420559997876103197474190076833493981551661392755593739830399857373369383514188736615350971970173077352228574454784393310546875",
+  "A132_decimal": "4.4736145391782206614948384156650793e-415",
+  "log10_A132": "-414.34934143881777316505101046349477",
+  "normalized_full_heat_bound": "A132*C_full/Gamma, with the actual norm and positive gain",
+  "small_full_clock_controls": [
+    {
+      "stages": 6,
+      "D": 17,
+      "L": 3,
+      "cold": 0.09105176623464546,
+      "wrong_completion_polynomial_defect": 0.0008572334304466356
+    },
+    {
+      "stages": 8,
+      "D": 25,
+      "L": 5,
+      "cold": 0.09105176623464546,
+      "wrong_completion_polynomial_defect": 3.777072303767781e-05
+    },
+    {
+      "stages": 10,
+      "D": 33,
+      "L": 7,
+      "cold": 0.09105176623464546,
+      "wrong_completion_polynomial_defect": 1.6656241821344508e-06
+    }
+  ],
+  "entire_H1_execution_replayed": false,
+  "external_measurement_dilation_supplied": false,
+  "physical_Cost_Info_binding": false,
+  "GR_closed": false
+}
