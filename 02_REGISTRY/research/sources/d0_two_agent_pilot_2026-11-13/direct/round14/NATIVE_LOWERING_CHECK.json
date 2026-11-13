@@ -1,0 +1,39 @@
+{
+  "status": "PASS_NATIVE_SELECTOR_SUBSTITUTION_AND_ERROR_TOTALS",
+  "actual_logical_macro_wirings_checked": 350,
+  "schemas": [
+    {
+      "file": "INTERNAL_SELECTOR_CIRCUIT.json",
+      "key": null,
+      "native_wires": 2773
+    },
+    {
+      "file": "TOP_SOURCE_SELECTOR_CIRCUIT.json",
+      "key": null,
+      "native_wires": 3190
+    },
+    {
+      "file": "TEN_SIGN_REPORT_CIRCUIT.json",
+      "key": null,
+      "native_wires": 234
+    },
+    {
+      "file": "FIRST_SUCCESS_CIRCUITS.json",
+      "key": "internal",
+      "native_wires": 76
+    },
+    {
+      "file": "FIRST_SUCCESS_CIRCUITS.json",
+      "key": "top",
+      "native_wires": 44
+    }
+  ],
+  "norm_enclosure_arithmetic_checked": true,
+  "integer_power_enclosure_rerun_here": false,
+  "all_actual_lowered_native_stream_expanded": false,
+  "full_coverage_method": "A13 whole logical stream already audited; typewise native substitution preserves distinctness/read-only plus fresh disjoint aux/port/spin. Actual samples and complete first-success streams checked.",
+  "native_lowering_sha256": "ab64ae9e5c1395c02b71b8ada4b33e7275aaee1dd68e16827845f7cff075d7c1",
+  "full_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

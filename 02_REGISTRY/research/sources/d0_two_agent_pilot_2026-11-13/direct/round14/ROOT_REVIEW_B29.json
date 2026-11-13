@@ -1,0 +1,32 @@
+{
+  "status": "PASS_B29_ISOLATED_REPLAY_AND_INDEPENDENT_RATIONAL_GAIN_FLOOR",
+  "input_sha256": {
+    "owner": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "B21_reference": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a",
+    "B25_slack": "41b660f639dd59bdbed644e4f002506c522da27677de5ead4e1889ff82c8adf0",
+    "A13_counts": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "A11_norm": "b4aca9a0e9655559531947d5ccca7b40ae73ddf338bbcdc97012ae1fb95b4fc8"
+  },
+  "B29_output_sha256": {
+    "BUDGET_CERTIFICATE.json": "195969b01862ae091a8c45f6f236a2f0e24496b43dff5f016d162fa0e1c41b96",
+    "FULL_SOURCE_ERROR_BUDGET_RU.md": "53701f56cbe48290b940657464d00160510c765ad63e1889f24abf70a77205e4",
+    "STRUCTURE_HOSTILE.json": "26d91637d35a05c6273a3362b42b9f55f72de1bf1e7f52c6932a9c8406ba9f0a",
+    "certify_error_budget.py": "f012bf078e9116e57adb02f24ff472611268ca023dda88ecb088a315f770ab42",
+    "check_structural_boundary.py": "c5ca85ea19f4673c8b31ae267f0ba464a64fbb42bb9ac26968c591a465529b19"
+  },
+  "B29_receipt_sha256": "b495d1d84c6a5f5dbabed13a4f6fc552179137cefba2fc1f45530e682b5aa610",
+  "byte_identical_replayed_outputs": {
+    "BUDGET_CERTIFICATE.json": "195969b01862ae091a8c45f6f236a2f0e24496b43dff5f016d162fa0e1c41b96",
+    "STRUCTURE_HOSTILE.json": "26d91637d35a05c6273a3362b42b9f55f72de1bf1e7f52c6932a9c8406ba9f0a"
+  },
+  "independent_gain_simplification": "g/epsilon^2=kappa*p^7*Fh*rx^2*alpha_target^2/18",
+  "independent_rational_coefficient_lower_at_alpha_half": "171754459463812805777339772584055836313356073148786866353368914760202597365907883212531999913300254001/10283526096158720000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "conditional_coefficient_gt": "2^-66",
+  "conditional_g_gt": "2^-3128",
+  "conditional_gs_gt": "2^-3158",
+  "required_hypothesis": "FULL IDEAL alpha_target>=1/2; this is not proved by the component count",
+  "full_target_readiness_established": false,
+  "actual_c_w_and_full_clock_computed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
