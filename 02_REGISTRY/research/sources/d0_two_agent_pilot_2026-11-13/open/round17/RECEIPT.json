@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SCOPED_EXACT_ZERO_TAIL",
+  "created_utc": "2026-11-13T17:14:45.098151+00:00",
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round17/EXACT_ZERO_TAIL_HANDOFF_RU.md": "bc7e24847f343bb32bc17161bfd5cb852c5cf73ef2768e0c6b5f77cffa49448d",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round17/check_exact_preserving_echo.py": "9082b576a8250b7c96010eee01e7f7e20311eec4ad7b47fb5523c628544fd7d0",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round17/check_exact_tail_handoff.py": "913ac9d206e5f398b622568e3d6a08ceb76473c53a3c345e51ddd522fd888eb5",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round17/CHECK_RESULT.json": "274a46739197c9db06df6e864fa276fd372b59df4a8884289da9e0f1a0479dcf",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/h1_literal_word.txt": "d267d33cf9f27b050a40115978a5fff7eefa383546f4677d6fd3c3b4047f181e",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/repeat_7fy.txt": "1c9034d7d528c1a4ea26b139ebfa1b6c54df0f70d88a36e3b74974cec9afb8a0",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  },
+  "no_births_exact_projector_echo_calls": 36,
+  "swap_born_handoff_stages": 21,
+  "actual_full_H1_and_reader_admission": false,
+  "full_physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_SCOPED_EXACT_ZERO_TAIL",
+  "stdout": {
+    "check_exact_preserving_echo.py": "PASS: inverse echo has 36 calls: 26 CX, 8 SourceI, 2 G; no births.\nPASS: all 32 columns: inverse echo diag(G^-2,I), preserves P0/P1/Pinvalid exactly.\nPASS: original E0 + inverse echo equals I_r tensor G^-1 on every column.\nPASS: all 16 true input columns map t=v to t=0 without LC4 or information loss.\nPASS: 9 ideal general-u targets on a complex entangled pointer/bank diagnostic.\nNot checked: complete H.1 writer, all marked readers, full clock or physical C.\n",
+    "check_exact_tail_handoff.py": "PASS: 1 birth + 20 calls: 15 CX, 4 SourceI, 1 G; 21 stages.\nPASS: all 32 true-cut columns, isometry, 4 old-tail matrix units and valid-support AD1.\nPASS: dirty-11 counterexample: full-bank original P1 is not preserved.\nNot checked: actual full H.1 execution, all required future reader transports, full clock or physical C.\n"
+  },
+  "all_bank_echo": true,
+  "all_bank_swap": false,
+  "full_H1_replayed": false,
+  "all_mark_reader_transports_verified": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}
