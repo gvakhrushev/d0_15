@@ -1,0 +1,14 @@
+{
+  "GR_closed": false,
+  "H0_difference": 3.0516010418004374e-05,
+  "H0_word0": 0.00040562251824079426,
+  "H0_word1": 0.0004361385286587986,
+  "H1_both": 4.198575632191515e-06,
+  "RC3_exponent": 32,
+  "checks": 36,
+  "leaf_rank": 36,
+  "paid_final_helper": "two births plus one CX",
+  "physical_weight_binding_proved": false,
+  "rank_per_prefix": 4,
+  "status": "PASS"
+}

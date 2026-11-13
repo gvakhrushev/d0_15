@@ -1,0 +1,136 @@
+Born normalization selects the raw response operator to which it applies.
+Book01 §01.17.1, lines1751–1805, fixes probabilities AFTER the effect frame
+and raw response are supplied and forbids changing them within that stage.
+
+##### 4. Entropy telescoping: exact theorem, and the two unproved substitutions
+
+On the present actual history, every pure birth and unitary before the
+terminal commit preserves the entropy of the FULL initial mixed state,
+including its reference. On the actual scalar-effect two-record branch,
+the complete CQ output has block spectra q_b spectrum(rho); therefore
+
+    S(CQ_out)−S(rho)=h(q),  q=p²+p³Q.               (CD8)
+
+There is no hidden unmeasured helper entropy in this identity. For an
+already retained archive and repeated restored fresh scalar-effect
+readers, the same spectral/chain calculation yields
+
+    P_code,full=P_code,old+sum_i[1+q_i−h(q_i)/ell].   (CD9)
+
+These are complete specified registration/code functionals. Their old
+rows can be handled by the new same-history repetition/gain estimates;
+they are not silently frozen.
+
+To infer that the ENTIRE original physical Cost−Info has the derivative
+of CD9 plus a constant would still require BOTH
+
+    D(sum actual Info)=D[S(CQ_out)−S(rho)]/ell,
+    D(actual nonparsed execution Cost)=0             (CD10)
+
+on every real independent field, preparation, clock and scene row, or a
+proved substitute residual bound. Unitarity proves entropy preservation
+of a given full state; it does not prove the first identification of a
+Book vertex valuation. Fixed instruction inventory does not prove the
+second identification with the graph's resolution-friction cost.
+
+Book03:172 describes a distinguishability/uncertainty gain but does not
+specify CD10's functional. Book06:148–154,247–254,865–902 assigns entropy
+after a DECLARED retained algebra/coarse map and explicitly keeps the
+joint archive. Its maximum-entropy representative is not by itself a
+fine-grained information-preserving physical map. The existing GAIN owner
+also states its conditional-expected-Shannon premise rather than deriving
+it. Therefore CD10 cannot be inserted as a theorem merely by naming CD8
+an information gain.
+
+At the named actual reader edge CX(event,r) and the following E_k writer,
+the actual instruction, states, output effects and clock are known. The
+missing economic operand is its Cost/Info valuation on that graph, or an
+equivalent source operator. The original sources do not assign an explicit
+state-independent tariff to that edge. The parsed terminal lengths1,2 are
+known; equating all other execution friction to a constant would be an
+additional claim about this same edge, not a consequence of those lengths.
+
+##### 5. Apply the new valuation-cone theorem without importing the sharp writer
+
+The incoming VCP10 at PRIMARY lines177232–177280 permits positive source
+cone membership or a full normalized residual bound; exact scalar price
+equality and a unique relative coefficient are unnecessary. That is a
+substantial weakening of what C must prove, and is the appropriate current
+consumer of CD1–10.
+
+Use OUR noisy report q=p²+p³Q and the actual coefficients/cut of OUR
+informative word. At its pinned Q0 the previous exact receipt gives
+
+    1/4<f'(q)<1/3,
+    2/3<h'(q)/ell<3/4.                              (CD11)
+
+The positive master and noisy CQ source maps have the same physical right
+lift, by SER8/current application. Their positive cone consequently
+retains that lift and actual normalized source bounds. The numerical
+collar and cold coefficients of VCP's sharp57-stage writer are NOT copied.
+
+For a more general actual one-record ledger, write its true body price,
+branch work and information source, without assigning their values. Even
+under the CQ information interpretation its exact source is
+
+    DC_body+(1−q)Dc_0+q Dc_1
+      +[(c_1−c_0)−h'(q)/ell]Dq.                    (CD12)
+
+The sufficient sign test on this noisy profile is c_1−c_0>h'(q)/ell,
+with a strict actual margin; its moving tariff/body rows remain. The
+known parsed difference1 passes CD11. Equal primitive-stage counts do
+not establish this full difference or bound the other rows. Repeating
+the record M times suppresses a fixed OLD source relative to gain O(M),
+but an unbounded or merely O(M) CURRENT valuation source survives.
+No repetition estimate can assign that current coefficient to zero.
+
+Thus the exact remaining application after the new global source/recovery
+theorems is
+
+    R_phys=D S_phys−[c_B D B+c_P D P_code],
+    c_B,c_P>=0, actual common right lift,
+    ||rightlift|| ||R_phys||/Gamma ->0,              (CD13)
+
+or genuine source-cone membership with all independent rows. Coefficients
+are the real constitutive ones; they are not fitted. If free they bring
+B Dc_B+P_code Dc_P. This accepts every proved normalization/gauge
+cancellation of `closure_price.md` CP11a–13. Absolute amplitude jets are
+not an extra requirement.
+
+##### 6. Exact stopping conclusion for this attempt
+
+The constructive conditional-expectation/Markov route closes the full
+native response diagram CD1–5, with all failures and coherent futures.
+It does not prove that Book's actual weighted operand is this diagram.
+The alternative entropy route gives CD8–9 exactly, but still requires
+the actual identifications or bounds in CD10/CD12–13. These are the same
+physical valuation application, expressed in the two possible typed
+routes, not two new tasks.
+
+I cannot honestly supply two physically admitted full normalized Delta,F
+realizations on the SAME exact native word: RAW already fixes that tuple.
+Changing a charge convention, dephasing retained coherence, changing a
+GNS carrier, or adding an unpriced dilation would not meet that request.
+Accordingly no universal underdetermination/no-go theorem is inferred.
+The correct status is narrower: the cited inputs supply neither the
+missing constitutive operand nor a proof of CD13 for it. A declaration
+that it equals the desired value would be a new premise.
+
+For the selected Book03 master alone the price map is complete, and the
+global source/recovery composition should proceed. For the user's
+unchanged C, the required positive conclusion is specifically the actual
+membership/bound CD13. This attempt has not established it; therefore
+no physical `SCOPED-NATIVE-KAPPA-EINSTEIN-CLOSED` is asserted here.
+
+##### 7. Live composition: consume AMP and the c_P>0 continuation application
+
+At `bf1cff04c5d9f21d54f72b1b8fc1d1ece71a6be9`, PRIMARY
+lines178135–178350 now OWN the exact native amplitude expansion AMP1–4.
+Its matrix-unit path algebra, opaque Spin memory factors and rectangular
+births give every actual prefix/suffix and every coherent terminal response
+exactly. The represented native continuation defect is zero. This supplies
+the native side of the comparison constructively; neither §2 nor
+`closure_price.md` §5 should be read as saying its numerical amplitudes
+are still unspecified. That older candidate expansion is now consumed
+through AMP, not claimed as a new result here.
+

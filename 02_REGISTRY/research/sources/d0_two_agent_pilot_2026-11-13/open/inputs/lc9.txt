@@ -1,0 +1,56 @@
+                 /[1-z+z k_<² f(q)²] I4.             (LC6)
+
+They cancel the real current instrument gradients. Their pullback retains
+-the sum of Tr(Lambda_b D E_b). Thus effect-changing field/calibration rows
+are NOT screened by optimizing the apparatus. The zero invalid outcome
+uses the linear K_invalid=0 reaction, not a singular quadratic constraint.
+
+##### 3. Sign and physical four-slot map on the noisy collar
+
+The optimum threshold is still
+
+    q_mu=mu_1/(mu_0+mu_1)=p²/(1+p²)<p².
+
+On the ORIGINAL noisy range p²<q<=1/2,
+
+    f'(q)=(a/2)[-1/sqrt(1-q)+p/sqrt(q)]<0,
+    ell(q)=-f'(q)/f(q)>0.                             (LC7)
+
+On each fixed strict input collar ell has a computable positive lower
+bound. The master feedback therefore INCREASES with q. Its orientation
+is reversed relative to the sharp SER example, not its equation class.
+
+For the actual specified parsed-code/CQ component,
+
+    P_code=1+q-h(q)/log(phi),
+    d(q)=P_code'(q)=1+log(q/(1-q))/log(phi)>0.           (LC8)
+
+On a strict Q_min>0 collar d also has a positive lower bound. The entire
+quantum output and input-entropy subtraction are kept: current scalar
+isometries preserve every conditional input spectrum. Thus h(q) is the
+full specified current CQ entropy increase, and P_code is the complete
+specified parsed-code/CQ functional, not a marginal substitution or an
+identification with Book vertex Info. Old joint information remains as
+its own prefix term.
+
+The field source is the already owned ORIGINAL pre-sign map, now consumed
+by the global profile:
+
+    DQ_i=g_Q,i A_pre,i* D I_h + e_Q,i,
+    Dq_i=g_i A_pre,i* D I_h + e_i,
+    g_i=p³ g_Q,i>0,  e_i=p³ e_Q,i,
+    A_pre,i(X_f,X_b,Y_f,Y_b)=L_i(X_f),
+    A_pre,i R_diag=I.                                (LC9)
+
+Backward and inner occurrence directions which preserve the event are
+solved by LC4--LC6; they are NOT linked to the forward occurrence. The
+physical decoder is the original forward marked bank, with the owned
+material/coframe right lift, not the average of relabelled preparations.
+Any additional source-changing visibility or independent reference has its
+real DQ row; the original task's generated/guarded status is used exactly.
+
+The new optimized H+J and P_code sources now use the SAME A_pre on current
+coordinates. The earlier SER8 change of four-slot coordinates remains a
+valid comparison to the old unrecovered feedback, but is not needed to
+pretend that the recovered source is still A_old.
+

@@ -1,0 +1,365 @@
+### 7fq.G. Literal native informative words and apparatus handoff
+
+#### Exact original informative guard: native realization and universal fibre bounds
+
+5 November 2026. Read-only #334 input `8ad92906b`.
+Consumer: the constrained local source reduction with the ORIGINAL §7fo
+NPS10 all-bank effect, following §7fp. No new selector, task or native
+primitive is added. `P` denotes the existing full-source primary artifact
+`A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`.
+
+##### 1. The exact constraint and the important finite/target distinction
+
+The inherited informative effect is the actual NPS10 operator identity
+
+    E_code,1=p² I+p³ E_f, E_code,0=I−E_code,1,          (IA1)
+
+on the complete original bank input. E_f is the generated pre-sign event
+of the actual current forward word, not its old numerical value and not
+an imposed Einstein residual. The canonical §7fo NPS2 word is an exact
+native witness of IA1. Field/preparation changes keep E_f's real derivative.
+The 0/10 prefix parser and unread direct tail remain unchanged.
+
+There are three different finite assertions:
+
+* Exact code validity alone means no initialized 11 output. §7fn CV9
+  proves a dense native compiler with this property for every finite word.
+* Exact informative fidelity additionally means IA1, including every
+  old-bank input column. CV9 does not assert that its approximants obey
+  this second identity merely because the matrix target does.
+* Exact complete-operation fidelity is still stronger. FN1 fixes each
+  D_a=Pi_a U, not just D_a*D_a; the whole complementary tuple fixes U.
+
+FN cannot supply an absent exact native witness by changing notation.
+Its finite predicate (§7en.A, P:120168–120233) requires exact Golden-field
+identities against an ACTUAL native reference on the same paid layout.
+Canonical replay witnesses that finite reference. FN2's converse expressly
+says a matrix realization is native only if its resulting words satisfy
+the native predicate (P:120235–120272). Replacing an ideal informative
+target by a generic compiled target gives an exact FN fibre over that
+compiled target; it does not prove that the compiled effect equals IA1.
+
+Conversely, demanding complete E0 outcome maps would exclude legitimate
+effect-preserving conditional-tail changes. This application uses the
+original informative effect and its actual earlier mark list. If a stronger
+late full outcome map is registered, it must be retained and the available
+fibre is correspondingly smaller. Neither one report marginal nor a task
+datum silently changes this distinction.
+
+##### 2. A genuinely exact native circle with the original response
+
+Use the unchanged canonical tail birth t in v=(a,p), a=sqrt(p), and the
+actual three-call anchor E0=CX(r,t);G_t;CX(r,t). Its endpoint is
+
+    E0=Pi_r0 tensor G+Pi_r1 tensor G^-1,
+    E0(|1> tensor v)=|10>.
+
+For each integer k>=0 append the positive chronological echo
+
+    L_k=G_t^k;CX(r,t);G_t^k;CX(r,t).                  (IA2)
+
+It is exactly Pi_r0 tensor G^(2k)+Pi_r1 tensor I on all four columns.
+It fixes BOTH |10> and |11>, hence preserves the terminal return projector
+and the invalid-code projector as operators. Therefore E0;L_k preserves
+IA1 EXACTLY for every old-bank input, all field/preparation values and
+arbitrary pointer entanglement. This is not an approximate effect guard.
+It rotates only the unobserved code0 tail, which remains on the carrier.
+
+The actual endpoint is diag(G^(2k+1),G^-1). The literal E0;L_k history has
+2k+5 calls: 2k+1 G and four CX. Do not replace it by a shorter
+endpoint-equivalent chronology without recomputing the clock. Even
+Golden powers are dense by the owned compiler theorem, so these exact
+IA1 words approximate the target
+
+    U_can=diag(G^-1,I)E0=diag(I,G^-1).                 (IA3)
+
+No exact finite realization of U_can is presumed or ruled out; this
+explicit approximating family is sufficient for the application below.
+IA3 sends the code0 tail to v and the code1 tail to |0>. Its cold bra
+coefficients are alpha_can=(1+a)/2, beta_can=p³(1−a)/2, so
+C_proper=alpha_can C_W+beta_can C_V. In particular
+C=p+a p²−(1+a)Q on the matched scalar corner. The actual finite coefficients remain distinct
+and are computed from the real native word.
+
+For a finite central/+/- FIELD catalogue one may use the same sufficiently
+accurate E0;L_k at every field label. IA1 then holds exactly with each
+label's actual E_f, while only the ordinary cold/source coefficient
+approximation is budgeted. The inherited field-writer and physical
+right-lift errors remain separate. The terminal law is not replaced by
+an approximately informative one.
+
+##### 3. A second exact native circle is available in the original SourceI profile
+
+This step uses the ALREADY ADMITTED `G_CX_SOURCE_I` profile of NPS2,
+not an inverse added to the smaller G/CX-only alphabet. The actual owner
+`sources/d0_native_execution_domain_2026-10-24/native_execution.py`
+defines SourceI on the declared live source PORT P and two Spin wires;
+SourceI²=Z_P tensor I_Spin. It explicitly supplies its routed inverse
+compiler at lines311–341. No individual Spin G/CX address is used.
+
+For a live x distinct from P the chronological word
+
+    SWAP(P,x);SourceI_P²;G_P^n;SourceI_P²;SWAP(P,x)     (IA4)
+
+is G_x^-n tensor I on every other factor, on ALL input columns. It has
+n+10 actual calls: n G, four SourceI and six CX. Both SWAPs contain their
+three literal CX calls. The source PORT and unknown Spin are restored
+exactly, even when entangled with the bank. No blank or state reset occurs.
+
+Define the chronological words
+
+    C_n=G_r^n;CX(t,r);G_r^-n;CX(t,r),
+    K_n=G_t^-1;C_n;G_t,                              (IA5)
+
+expanding each inverse by IA4. Since XGX=G^-1,
+C_n is identity on t=0 and G_r^(2n) on t=1. Let
+j=I_r tensor v_t and j_perp=I_r tensor w_t, w=G|1>. Then
+
+    K_n=jj*+j_perp G_r^(2n)j_perp*, K_n j=j.          (IA6)
+
+Thus K_n;E0 preserves the ENTIRE initialized encoder isometry, not merely
+IA1, and the unused-column completion varies by a dense exact circle.
+It is a genuine second exact direction in the faithful sharp encoder
+family. Its literal cost is 2n+24 calls: 2n+2 G, eight SourceI and fourteen
+CX. K_n;E0;L_k consequently has 2n+2k+29 calls, eight SourceI,
+2n+2k+3 G and eighteen CX. Every routing stage stays in the actual clock.
+
+No statement that dark changes preserve the full four-column endpoint
+is made. They do not, so their complete clock source is not zero merely
+by FN7. FN applies at a FIXED logical endpoint to its implementation
+fibre; the varied dark target keeps its logical row and the full heat
+bound. Likewise L_k preserves full conditional spectra but changes the
+code0 conditional state; a stronger complete-output guard would exclude
+that direction. Every earlier required reader is transported through the
+actual suffix, and source routing occurs only while P,r,t are live.
+
+The two circles can be put in common even-length blocks by actual CX²
+padding, retaining their actual intermediate stages and FN reactions for
+the fixed identity block. They do not prove dense exact realization of
+the third compensated pre/visibility direction of the full informative
+SO(2)×C fibre. A new exact compiler for that direction is not asserted.
+
+##### 4. A full stationary-fibre bound does not require a dense third native axis
+
+The source lane supplies a stronger and sufficient local analytic input:
+at canonical pre b=v and U_can, the original informative constraint has
+rank two in the pre-angle/output-plane coordinates (its saved nonzero
+Jacobian includes ap). Thus its full local fibre in SO(2)×C is a regular
+three-dimensional manifold. On that WHOLE fibre, the derivatives of
+both cold coefficients alpha,beta vanish at the chosen target, as matrices
+on the entire old input. This retains arbitrary independent C_W,C_V.
+This theorem is an analytic statement about the larger regular fibre;
+it does not assert every fibre point is an exact native word.
+
+Let n_*(Y) denote that target, J_Y the actual proper feedback pulled to
+the fibre, and suppose its second derivative in the declared local norm
+is bounded by M_h on a fixed regular collar. Include the chart-equivalence
+and original endpoint-to-raw norm constants in M_h and L_h. Then
+
+    |J_Y(n)−J_Y(n_*)| <= (M_h/2)||n−n_*||².           (IA7)
+
+For EVERY pair of actual native exact-IA1 realizations n_+,n_- in that
+collar with the SAME field, old data, actual layout and required marks,
+whose supplied local comparison satisfies
+
+    ||n_±−n_*|| <= L_h |t|+delta_h,
+
+one obtains the uniform finite-source bound
+
+    |J_Y(n_+)−J_Y(n_-)|/(2|t| Gamma_h)
+       <= M_h (L_h|t|+delta_h)²/(2|t| Gamma_h).       (IA8)
+
+The actual gain is positive and frozen at the central native comparison;
+target/actual coefficient errors are retained. Choose finite steps and
+the actual centre accuracy so this bound, multiplied by the physical
+right-lift/basis norm when relevant, tends to zero. The usual
+delta_h=o(|t|), then appropriately small |t| at fixed h, suffices only
+WITH these actual M_h,L_h,Gamma_h constants. One cannot discard them.
+
+This is universal over all SUPPLIED actual same-task near comparisons,
+including any actually realizable third-fibre direction. It does not
+need surjectivity from native words onto every abstract fibre tangent:
+an upper bound proved on a larger regular manifold bounds its actual
+native subset. The exact family IA2 supplies a nonempty central and
+field catalogue; IA5 additionally supplies the dark circle if consumed.
+
+To call IA8 a complete internal native-covector estimate, the stated
+comparison domain must explicitly include every independent actual
+same-layout coordinate, with a uniform bound L_h in its original norm.
+Kernel/implementation directions remain at nonzero raw norm; exact FN
+conjugacy handles its genuine verticals, and the complete growing-clock
+CL bound handles the remaining thermal source. A mere dense target
+compiler, a chosen two-axis test list or a quotient discarding coordinates
+would not justify that stronger wording. This application claims the
+universal bound for all actually supplied near-fibre comparisons; it does
+not invent an operational readout/right lift for each abstract third
+coordinate or cover unrelated larger-bank native operations.
+
+For field-changing comparisons use the separately supplied physical
+lift and actual IA2 field catalogue. Retain the generated-effect reaction
+and its D E_f term. IA8 at fixed Y is an INTERNAL stationarity estimate;
+it is not a proof that physical field differences are vertical or zero.
+All full heat, old/source, mark, compiler and finite-price errors still
+enter the same actual normalized budget. No exact finite stationary word
+or equality of arbitrary finite chords is claimed.
+
+##### 5. What the existing approximate graph does and does not authorize
+
+RAW §§8–9 R13–R19 and KAPPA §2 explicitly admit their owned graph and
+comparison lifts with actual delta/(|t|epsilon_h) source budgets. They
+also expressly say a finite operator delta-ball is NOT the tangent domain:
+a small independent QUERY mutation need not preserve the report law.
+Therefore these owners can be consumed for a properly stated kappa
+comparison application, with all actual map/norm hypotheses supplied.
+They cannot by themselves certify exact finite IA1 for a generic CV9
+approximation. Here IA2/IA5 avoid that extra informative-effect error
+instead of weakening the guard. IA7–8 avoid the unsupported dense-third-
+axis claim while retaining every actual constrained comparison covered
+by the declared norm.
+
+The informative guard is already generated by the ORIGINAL NPS writer.
+Using it as the correctness relation preserves the earlier task:
+report(Y)=p²I+p³ E_f(Y), not report(Y)=old_report and not Einstein(Y)=0.
+The kernel need not select the same task in every history. Book01/KAPPA
+task data admits this original declared family and its finite tests, but
+does not itself declare all alternate endpoint operations faithful or
+turn constraint reactions into unconstrained Euler zeros. No new report
+obligation is added here.
+
+##### 6. The exact remaining parent map and price boundary
+
+The constructive substitution is now specific: use IA2's exact-informative
+native centre/field catalogue, the analytic full-fibre cold stationarity,
+IA8's universal bound over actual constrained comparisons, FN's exact
+implementation reactions and the original full-clock thermal budget.
+This can remove the local informative-nuisance premise without proving
+that every abstract fibre coordinate has an exact native parameterization.
+If a stronger complete physical-covector claim is wanted, it must display
+its actual comparison domain and the uniform original-norm map just
+described; otherwise that extra operational-completeness premise remains.
+
+The terminal CQ component is constant along an exact EFFECT fibre at
+fixed physical input: nonzero conditional spectra equal those of
+sqrt(rho) E_b sqrt(rho)/q_b, so preserving all E_b preserves the complete
+two-label conditional entropy with the whole bank retained. This does
+not identify that component with the full master or erase its FIELD
+source. Any additional registered fine label must retain its own effect;
+code0 tail has not been independently measured or discarded.
+
+Contract C's inherited weighting gap is unchanged. FN transports the
+specified H+J price, whereas the Book memory-valued sum still needs its
+actual primitive Cost/Info coefficients, coherent memory representation,
+initial/terminal boundary and weighted continuation transport on THIS
+history. Equal informative effects or conditional spectra do not set
+those weights. No unit tariff per G/CX, automatic H+J+CQ action, new
+Info convention or GR closure follows from the informative fibre.
+
+##### 7. Actual initial input and the bounded all-column check
+
+The actual EO existence carrier is stated explicitly at P:163678–163687:
+H0=C4_SourceSpin, P0=I4, with all other WORK born canonically, plus an
+optional untouched protected identity factor. Unknown Spin is not a
+freely addressable DATA register; only the declared SourceI coupling
+may act on it. The all-column native matrix and a proper physical input
+cut are different operands.
+
+For this particular single-SourceI profile there is a useful structural
+constraint. Since G/CX are real and never individually address Spin,
+and SourceI is diag(I4,L_I) with L_I²=−I4, every prepared computational
+WORK block is a I4+b L_I with real a,b. Its Gram is (a²+b²)I4. Real
+WORK-effect cross terms likewise cancel the skew L_I coefficient. This
+argument retains an arbitrary density on Spin and untouched correlated
+reference factors. It must not be applied to a newly supplied arbitrary
+live DATA input that the gates address; that is a different initial/task
+regime. Use the owned canonical-old history or its actual transported
+input embedding, never replace a general old cut by a product state.
+
+The new standalone `check_native.py` executes exactly K1;E0;L1 through
+the pinned original native owner on all32 PORT/Spin/r/t columns. It uses
+the ORIGINAL `inverse_word` helper for both routed one-G inverses.
+Its checks explicitly distinguish the all32-column matrix, the rank16
+arbitrary-pointer/canonical-tail embedding, and the actual rank4 physical
+embedding v_PORT tensor I4_Spin tensor v_r tensor v_t. It verifies the
+original informative effect, all dirty columns, exact source restoration,
+zero initialized invalid branch, unitary conditional direct tail and
+the 33-call inventory. The real canonical births are explicit isometries,
+not computational zero blanks in owner metadata.
+
+Final execution: PASS39 (28 exact algebra,10 native syntax,1 provenance),
+normal and optimized modes both with warnings-as-errors and byte-identical
+JSON. See `CHECK_RECEIPT.md` for immutable pins and reproduction. This is
+one new bounded native witness, not a full-clock numerical calculation,
+third-fibre density proof, arbitrary matrix actuation assumption or
+unchanged original-suite replay. The full price/source conclusion remains
+analytical with the scope in §§4–6 above.
+
+##### 8. Incoming SER4: the bounded current-coordinate transport, not its serializer
+
+Additional read-only source input `be4893202` adds the SER application.
+Consume ONLY its §SER4/SER6–9 four-slot transport (P:172727 onward),
+together with original NG12–NG20. The sharp-event 57-stage serializer,
+its different physical record probability, SER/JZ exact finite roots and
+whole-history identifications are NOT inputs of the present noisy NPS10
+execution. Our actual event law remains q=p²+p³Q.
+
+NG14 puts outer X_f,X_b and inner Y_f,Y_b on the same declared SAM/live-
+DATA generator space; the inner physical placements commute with S by
+their actual support/profile. Thus adding their COORDINATE generators is
+well typed. It does not mean moving a gate past S without its commutant
+hypothesis. The shared physical marked map L and diagonal right lift are
+the ones owned by NG12/NG18. The two current source maps are
+
+    A_old(x,b,y,z)=(Lx+Lb)/2,
+    A_pre(x,b,y,z)=Lx.
+
+The linear isomorphism and its inverse are
+
+    T_pre(x,b,y,z)=(x+b−y, x−b+y, b,z),
+    T_pre^-1(u,v,w,z)=((u+v)/2,w,(v−u)/2+w,z).          (IA9)
+
+They satisfy A_old T_pre=A_pre, T_pre R_diag=R_diag, and max-slot norm
+bounds ||T_pre||<=3, ||T_pre^-1||<=2. This proves a bounded covector
+transport while fixing the physical diagonal lift. It is an invertible
+change of tangent coordinates, NOT an added native instruction, equality
+of raw histories or a claim that the two prices agree on each untransported
+individual variation. A finite test of T_pre v uses the actual corresponding
+four independent native control macros and their inherited comparison
+budgets, not a cost-free implementation of the matrix T_pre.
+
+Its application here has the following concrete hypotheses:
+
+1. Both covectors are evaluated at the SAME actual NPS current history,
+   proper cut, scalar canonical old-corner chart and original event E_f.
+   The backward legs occur after recording; the actual compiled inner
+   controls commute exactly with the sign. Hence record variation is
+   forward-only, without deleting backward/inner equations.
+2. The L in both formulas must really coincide. On the actual Spin-only,
+   real-born, canonical-old native family described in §7, the event
+   effects and real return first rows on the original input are scalar;
+   their evaluation is independent of the unspecified Spin/reference
+   density. This supplies the common physical L for these actual real
+   control comparisons. Arbitrary independently supplied live DATA or
+   a noncanonical old Gram requires its own retained map and equations;
+   one may not copy SER4's symbol L onto such a different input regime.
+3. All three local constrained encoder rows are retained. Their matrix
+   coefficient derivatives vanish on the full analytic informative fibre,
+   with IA8 covering actual finite comparisons. Extend IA9 by I3 on those
+   local coordinates, and by the identity on unchanged exact FN verticals,
+   generated-state and fixed-boundary coordinates. Any genuinely free old
+   row outside the consumed theorem remains a separate source component.
+4. Use the NOISY code's actual CQ calibration, including p³ f'(q), rather
+   than SER's sharp q or its F_I=−I_rec/log(phi) normalization. Freeze each
+   actual central gain and retain its true ratio/error. All thermal,
+   native, finite-price, reporter and right-lift remainders are multiplied
+   by the displayed norm constants when transporting the covector.
+
+Under these hypotheses IA9 legitimately matches the two normalized current
+covectors by T_pre* within one declared noisy informative execution and
+fixes the physical field lift. It can establish the same joint zero/source
+class after the full local/vertical rows are included. It does not identify
+H+J with the terminal CQ value, prove weighted primitive intertwining, or
+select either valuation as full Cost−Info. Those are the still distinct
+binding obligations in §6. The incoming result removes this coordinate-
+transport premise; its sharp serializer and exact-root theorem are not
+silently transplanted.
+

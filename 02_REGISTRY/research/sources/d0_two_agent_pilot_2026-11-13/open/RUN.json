@@ -1,0 +1,91 @@
+{
+  "format": "d0-two-agent-pilot-open-first-result/1",
+  "phase": "independent_first_result_frozen_before_peer_review",
+  "start_utc": "2026-11-13T12:04:54Z",
+  "end_utc": "2026-11-13T12:27:24.804205Z",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "branch": "codex/d0-pilot-open-20261113",
+  "worktree": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13",
+  "git_remote_changed": false,
+  "other_researcher_results_read_before_freeze": false,
+  "input_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/receipt.json",
+  "checks": [
+    {
+      "command": "python3 -B -W error check_open.py",
+      "result": "PASS, 132 checks; stdout EXACT_CHECK.json"
+    },
+    {
+      "command": "python3 -B -O -W error check_open.py",
+      "result": "PASS; byte-identical to normal stdout"
+    },
+    {
+      "command": "python3 -B -W error check_full_native.py",
+      "result": "PASS, 28 matrix checks; four full programs, 16 input columns, max error 4.440892098500626e-15"
+    },
+    {
+      "command": "python3 -B -O -W error check_full_native.py",
+      "result": "PASS; byte-identical to normal stdout"
+    },
+    {
+      "command": "check_open.py verifies SHA-256 values for 14 copied source excerpts and the pinned native executor",
+      "result": "PASS"
+    },
+    {
+      "command": "git rev-parse HEAD; git status --short --branch",
+      "result": "baseline unchanged; only the permitted pilot directory is untracked"
+    },
+    {
+      "command": "mpmath 70-digit evaluation of s_33 and F(s_33)",
+      "result": "numeric diagnostic only: F(s_33)=2.97508688772360939043559399649e-9"
+    },
+    {
+      "command": "first NumPy BLAS whole-word attempt",
+      "result": "INVALIDATED: floating-point warnings exposed an unsafe NaN check; replaced with elementwise operations, finite-value guards and warnings-as-errors before the passing replay"
+    }
+  ],
+  "environment": {
+    "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "sympy": "1.14.0",
+    "numpy": "2.0.2"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/FIRST_RESULT_RU.md",
+      "sha256": "30800ad8eafda30cf53eec08c9151355c4525d4efc1ccc7539f1202dfdd0ab27"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/DERIVATION_RU.md",
+      "sha256": "5367599a40df8bcbe04198b884912bab4c4fbfb288b16ff2bce5858df25f4ad0"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/check_open.py",
+      "sha256": "87476e9c4b5079f0b53f76e4be2ca71bf97b35af1c691f649f199e1579c0d91f"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/check_full_native.py",
+      "sha256": "2f3a20e5f1ce01312a8a1f5c38d6fc70e6f1f3f6e50c2aee649040961be8ee48"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/EXACT_CHECK.json",
+      "sha256": "c59423957eaec0f2ad9cc3a0cec412c568aa50950872d23a8ba553f3784340ff"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/FULL_CHECK.json",
+      "sha256": "1c94b897229efe676b679180c60f85f24d834cd249fe5b577df9559535411afe"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/receipt.json",
+      "sha256": "2a472c291f366a574fbdc71a70f39629e6eebfe34b792a2ca2a231b7c2511b6b"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  ],
+  "shared_first_result": "/Users/grigorijvahrusev/Downloads/D0_PILOT_TWO_AGENTS_2026-11-13/open/FIRST_RESULT_RU.md",
+  "shared_run_record": "/Users/grigorijvahrusev/Downloads/D0_PILOT_TWO_AGENTS_2026-11-13/open/RUN.json",
+  "long_tool_waits": "none of 60 seconds or more",
+  "GR_closed": false,
+  "physical_full_price_bound_proved": false,
+  "independent_peer_review": "not started at first-result freeze; timing recorded separately"
+}

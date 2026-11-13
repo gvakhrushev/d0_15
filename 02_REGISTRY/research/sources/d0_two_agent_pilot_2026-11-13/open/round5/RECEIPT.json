@@ -1,0 +1,55 @@
+{
+  "format": "d0-two-agent-pilot-open-round5/1",
+  "start_utc": "2026-11-13T13:15:51Z",
+  "end_utc": "2026-11-13T13:21:49.725219Z",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "checks": [
+    {
+      "command": "python3 -B -W error check_nps_source.py",
+      "result": "PASS 20 exact field, rational isolation, native all-column and negative controls"
+    },
+    {
+      "command": "python3 -B -O -W error check_nps_source.py",
+      "result": "PASS byte-identical output"
+    },
+    {
+      "method": "NPS11-13 operator cut review, recorded b1 projector and h-derived full variation",
+      "result": "exact cross compression; conditional matched scalar h q-source sign; early literal t birth retained"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round3/ROUND3_RESULT_RU.md",
+      "sha256": "d740efca1045bd82283e8d7b75459ae543797dd10706a73b252d55fe8178a652"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round4/ROUND4_RESULT_RU.md",
+      "sha256": "9076c68c5756e2b4c372c19b2c7a5a3535b5f0ea8acb15ad7d7f9a69f61d68fc"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round5/ROUND5_RESULT_RU.md",
+      "sha256": "5a0c6ce540462bdca944c6fad7b4283ccbb1dbd8fe79963d001637ee36a99ad8"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round5/check_nps_source.py",
+      "sha256": "1a5ae3a3b3682fe099aba253a37bb6827be164bfb09ea03d4f90b02545d74468"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round5/CHECK_RESULT.json",
+      "sha256": "ea436e1fabcb9e572d51fffa9c1876b8d9614d13a204c72e7508f337ea19ba9d"
+    }
+  ],
+  "scope": {
+    "matched_scalar_source_sign_proved": true,
+    "matched_scalar_condition_for_all_past_histories_proved": false,
+    "whole_h1_upstream_evaluated": false,
+    "physical_cost_info_binding_proved": false,
+    "GR_closed": false
+  }
+}

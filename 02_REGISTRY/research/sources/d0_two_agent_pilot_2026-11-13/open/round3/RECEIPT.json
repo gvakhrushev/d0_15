@@ -1,0 +1,62 @@
+{
+  "format": "d0-two-agent-pilot-open-round3/1",
+  "start_utc": "2026-11-13T12:59:15Z",
+  "end_utc": "2026-11-13T13:05:12.033055Z",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "worktree": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13",
+  "checks": [
+    {
+      "command": "python3 -B -W error check_rc3.py",
+      "result": "PASS 36 checks, exact algebra + nine-branch numerical native-word fixture"
+    },
+    {
+      "command": "python3 -B -O -W error check_rc3.py",
+      "result": "PASS byte-identical output"
+    },
+    {
+      "method": "RC3 retained-address rank and fixed-last-CX derivation",
+      "result": "r=4, L=36, offset 32 on a single fixed old prefix, h exact in X_b/sqrt(q_b)"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/D0_AGENT_START_2026-11-13/sources/h1_admission_domain.txt",
+      "sha256": "1d43118b741c4b757ce9c7d547f635d07c6b34b0eaa50f233f83cc570c314452"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/D0_AGENT_START_2026-11-13/sources/thermal_7fz.txt",
+      "sha256": "0b206c331177161935b89da3cc85428eabc4f6bbeec0ce5f0328df478364486b"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/D0_AGENT_START_2026-11-13/sources/repeat_7fy.txt",
+      "sha256": "1c9034d7d528c1a4ea26b139ebfa1b6c54df0f70d88a36e3b74974cec9afb8a0"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round2/RECEIPT.json",
+      "sha256": "addff16d73ff0cab6cec8d94a75a657a7cb281ed882853b683e74835b3b79c96"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round3/ROUND3_RESULT_RU.md",
+      "sha256": "d740efca1045bd82283e8d7b75459ae543797dd10706a73b252d55fe8178a652"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round3/check_rc3.py",
+      "sha256": "c9fe83c70d7dccdf389f8050568b7e87916d9382b80eb0534ebd163db46408db"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round3/CHECK_RESULT.json",
+      "sha256": "b73087a0232a9c2f0d35d942d4e3b4efeb7f80c44f0e8734acf94b91d1651499"
+    }
+  ],
+  "scope": {
+    "fixed_old_prefix": true,
+    "additional_final_helper_births": 2,
+    "additional_final_gate": "CX",
+    "whole_h1_upstream_evaluated": false,
+    "unconditional_zero_q_gain_claimed": false,
+    "physical_cost_info_binding_proved": false,
+    "GR_closed": false
+  }
+}

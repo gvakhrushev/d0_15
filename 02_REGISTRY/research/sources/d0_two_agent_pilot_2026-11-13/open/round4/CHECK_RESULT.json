@@ -1,0 +1,14 @@
+{
+  "GR_closed": false,
+  "H0": [
+    0.00040562251824079426,
+    0.0004361385286587986
+  ],
+  "H1": 4.198575632191515e-06,
+  "checks": 25,
+  "p16": 0.00045310385378482274,
+  "physical_cost_info_binding_proved": false,
+  "scope": "conditional finite comparison, fixed old prefix, original physical full source not computed",
+  "smallest_sample_leaf_probability": 0.0006135488193253375,
+  "status": "PASS"
+}
