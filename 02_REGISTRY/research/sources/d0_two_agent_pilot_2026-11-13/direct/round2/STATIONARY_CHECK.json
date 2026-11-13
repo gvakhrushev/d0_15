@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "NPS branch norm constant",
+      "kind": "exact"
+    },
+    {
+      "name": "NPS branch norm event coefficient",
+      "kind": "exact"
+    },
+    {
+      "name": "NPS cross-Gram is ap identity",
+      "kind": "exact"
+    },
+    {
+      "name": "normalized overlap square numerator",
+      "kind": "exact"
+    },
+    {
+      "name": "exact Golden root bracket",
+      "kind": "exact"
+    },
+    {
+      "name": "actual H1 collar has positive c0",
+      "kind": "exact"
+    },
+    {
+      "name": "word 0: alpha > beta",
+      "kind": "exact"
+    },
+    {
+      "name": "word 0: T < 1",
+      "kind": "exact"
+    },
+    {
+      "name": "word 1: alpha > beta",
+      "kind": "exact"
+    },
+    {
+      "name": "word 1: T < 1",
+      "kind": "exact"
+    },
+    {
+      "name": "stationary block trace",
+      "kind": "exact"
+    },
+    {
+      "name": "stationary block determinant",
+      "kind": "exact"
+    },
+    {
+      "name": "two eigenvalues trace",
+      "kind": "exact"
+    },
+    {
+      "name": "two eigenvalues determinant",
+      "kind": "exact"
+    },
+    {
+      "name": "derivative of optimized upper eigenvalue",
+      "kind": "exact"
+    },
+    {
+      "name": "optimized marked source",
+      "kind": "exact"
+    },
+    {
+      "name": "endpoint gain vanishes",
+      "kind": "exact"
+    },
+    {
+      "name": "transverse backward Hessian",
+      "kind": "exact"
+    },
+    {
+      "name": "word 0: full bank spectrum including unused dimensions",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0: all backward tangent rows vanish",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0: random full-bank competitor exceeds optimum",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0: split-recovery differs from common backward",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0: noncommuting complex source variation",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0: H1 gain lower bound diagnostic",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1: full bank spectrum including unused dimensions",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1: all backward tangent rows vanish",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1: random full-bank competitor exceeds optimum",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1: split-recovery differs from common backward",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1: noncommuting complex source variation",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1: H1 gain lower bound diagnostic",
+      "kind": "numerical"
+    }
+  ],
+  "exact_checks": 18,
+  "numerical_diagnostics": 12,
+  "diagnostics": [
+    {
+      "word": 0,
+      "alpha": 0.00025068850287513503,
+      "beta": 1.6037131871600815e-06,
+      "source_lower_per_root_at_z_0_6": 5.001693598668627e-07,
+      "noncommuting_source_error": 3.937137227160272e-12
+    },
+    {
+      "word": 1,
+      "alpha": 0.00026954843451450764,
+      "beta": 1.6037131871600815e-06,
+      "source_lower_per_root_at_z_0_6": 5.003919143938771e-07,
+      "noncommuting_source_error": 3.76030180343167e-12
+    }
+  ],
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "proof_sha256": "37a2063b0afa63ab1d57affed8c459f544aa051f5fdf0c8f07c0ba5d40a83bba",
+  "scope": {
+    "mathematical_common_backward_stationarity": true,
+    "physical_fibre_admissibility": false,
+    "full_heat_stationarity": false,
+    "Cost_Info_binding": false,
+    "GR_closed": false
+  }
+}

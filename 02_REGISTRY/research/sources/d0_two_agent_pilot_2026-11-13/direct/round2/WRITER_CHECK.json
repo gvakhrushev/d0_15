@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "checks": 17,
+  "check_names": [
+    "positive Golden generator lies in exact rational interval",
+    "exact A>pB for literal word 0",
+    "exact A>pB for literal word 1",
+    "positive exact d",
+    "positive exact u-sd",
+    "positive exact 2u-sd",
+    "first positive derivative",
+    "symmetric sum derivative is nonnegative",
+    "positive-cone decomposition of actual marked h",
+    "strict positive backward coefficient decomposition",
+    "all independent writer and probability derivatives retained",
+    "true born pointer multiplies first X by a",
+    "true born pointer multiplies second X by p",
+    "explicit independent backward bank corner",
+    "explicit overlap corner",
+    "backward direction changes C_W at fixed q",
+    "backward overlap first variation vanishes at matched centre"
+  ],
+  "exact_isolation": [
+    {
+      "word": 0,
+      "A_minus_pB_lower": "78865899837904411235358452267651/212402343750000000000000000000000000",
+      "A_minus_pB_upper": "181704530560746701136115163195233/424804687500000000000000000000000000"
+    },
+    {
+      "word": 1,
+      "A_minus_pB_lower": "1449320712998410508276053017063953/3398437500000000000000000000000000000",
+      "A_minus_pB_upper": "2986115326146602082494998434073699/6796875000000000000000000000000000000"
+    }
+  ],
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "proof_sha256": "e5b5428b4a66ab38e784aaa26e754f0233298fad2e9cebeedc1583635cfb672f",
+  "scope": {
+    "NPS_X_substitution": true,
+    "matched_scalar_gain_positive": true,
+    "independent_apparatus_stationarity_proved": false,
+    "full_H1_executed": false,
+    "physical_C_closed": false,
+    "GR_closed": false
+  }
+}
