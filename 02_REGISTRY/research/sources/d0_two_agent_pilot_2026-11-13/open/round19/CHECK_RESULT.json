@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SCOPED_INDEPENDENT_REVIEW",
+  "commands": [
+    "python3 -B -W error check_archive_clock.py",
+    "python3 -B -W error check_archive_recovery.py"
+  ],
+  "clock_status": "PASS_LITERAL_ARCHIVE_GROWING_CLOCK",
+  "clock_checks": 1449,
+  "recovery_status": "PASS_CONDITIONAL_FULL_ARCHIVE_RECOVERY_SOURCE",
+  "recovery_checks": 983,
+  "real_spin_centre_required_for_work_only_recovery": true,
+  "complete_H1_replayed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
