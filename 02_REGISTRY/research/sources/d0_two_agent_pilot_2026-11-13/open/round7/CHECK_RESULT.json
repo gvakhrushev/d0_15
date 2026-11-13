@@ -1,0 +1,54 @@
+{
+  "status": "PASS_EXACT",
+  "check_count": 29,
+  "checks": [
+    "equal paid eight-gate prefixes",
+    "twist is exact Z on pointer and identity on every source/spin column",
+    "padding is identity on all columns",
+    "original original marked report",
+    "original invalid report exactly zero",
+    "original isometric on protected inputs",
+    "twisted original marked report",
+    "twisted invalid report exactly zero",
+    "twisted isometric on protected inputs",
+    "subsequent live-port P_v separates after ignoring mark",
+    "rt label 0",
+    "rt label 1",
+    "rt label 2",
+    "rt label 3",
+    "five-gate inverse G on source and arbitrary Spin",
+    "paid born flag effect",
+    "inverse-G then flag implements live-state contrast",
+    "paid flag difference",
+    "closed exact positive gap",
+    "actual fine tail flag1 has no invalid tail",
+    "closed mark probability",
+    "conditional mark equation reduces to N=x",
+    "two positive ratio roots factor exactly",
+    "second ratio is phase-twist root",
+    "coherent interference coefficient",
+    "hypothetical p,p\u00b2 amplitude odds",
+    "original G born odds",
+    "no common normalization fixes naive amplitudes",
+    "native amplitude ratio squares to native probability ratio"
+  ],
+  "fixture": {
+    "mark_q": 0.4721359549995794,
+    "live_projector_gap": 0.9175835219592763,
+    "born_flag_gap": 0.21661208621606023,
+    "original_and_twisted_primitives": 14,
+    "extra_reader_primitives": 9,
+    "extra_reader_births": 2,
+    "original_splitter_born": [
+      0.6180339887498949,
+      0.38196601125010515
+    ],
+    "hypothetical_pp2_as_amplitudes_born": [
+      0.7236067977499789,
+      0.276393202250021
+    ]
+  },
+  "scope": "finite native source-I fixture, not general H1 admissibility, Book03 price law or full source",
+  "physical_cost_info_binding_proved": false,
+  "GR_closed": false
+}
