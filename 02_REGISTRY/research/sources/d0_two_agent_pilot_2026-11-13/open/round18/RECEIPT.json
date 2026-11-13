@@ -1,0 +1,21 @@
+{
+  "status": "PASS_SCOPED_LITERAL_ARCHIVE_RETURN",
+  "created_utc": "2026-11-13T17:33:26.978773+00:00",
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round18/LITERAL_ARCHIVE_RETURN_RU.md": "ec188358c835b5ba63a081b5109b4817a73e8dda601fed3ab62bf932f1500f31",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round18/check_literal_return.py": "899c25e59d7b3388913c58f404a1705538602a7987ae018eba7d52900eca84dc",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round18/CHECK_RESULT.json": "56949303f7a2f109f63f59be15aa33c132754e3ba5da97402374887641b0f783",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round17/RECEIPT.json": "f00b456e755191dd62795e9c19bf470387931f2b15894677aa4177cd4754a4a7",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/thermal_7fz.txt": "0b206c331177161935b89da3cc85428eabc4f6bbeec0ce5f0328df478364486b",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/repeat_7fy.txt": "1c9034d7d528c1a4ea26b139ebfa1b6c54df0f70d88a36e3b74974cec9afb8a0",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  },
+  "archive_boolean_inputs": 512,
+  "conditional_RC3_interface": true,
+  "unitary_theta_row_nonzero": true,
+  "full_H1_marked_execution_replayed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
