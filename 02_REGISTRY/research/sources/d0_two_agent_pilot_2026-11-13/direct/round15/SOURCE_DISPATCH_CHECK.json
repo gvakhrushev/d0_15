@@ -1,0 +1,60 @@
+{
+  "status": "PASS_EXACT_DISPATCHER_COMPONENT_AND_COMPOSITION_CHECKS",
+  "inputs": {
+    "source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b"
+  },
+  "local_transition_cases": 496166,
+  "SITE_leaf_addresses": 72192,
+  "all_reachable_node_copy_placements": 76913,
+  "exhaustive_addition_cases": 16400,
+  "exhaustive_small_QROM_cases": 254,
+  "padded_walk_cases": 600,
+  "literal_actual_full_steps": [
+    {
+      "node": 662,
+      "SITE": 129,
+      "gate_count": 15500599,
+      "counts": {
+        "X": 137514,
+        "CX": 6557437,
+        "CCX": 8805648
+      }
+    },
+    {
+      "node": 20269,
+      "SITE": 247,
+      "gate_count": 15500599,
+      "counts": {
+        "X": 137514,
+        "CX": 6557437,
+        "CCX": 8805648
+      }
+    }
+  ],
+  "chronological_stages": {
+    "H_f_before_inverse_PF": {
+      "selector": 3192,
+      "first_success": 456,
+      "root_init": 1,
+      "palette": 455,
+      "transition": 455,
+      "end": 1
+    },
+    "H_q_before_inverse_PF": {
+      "kind_init": 1,
+      "selector": 133,
+      "first_success": 19,
+      "root_init": 1,
+      "palette": 18,
+      "transition": 18,
+      "end": 1
+    }
+  },
+  "all_full_walk_gates_executed": false,
+  "native_bank_SELECT_implemented": false,
+  "full_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,58 @@
+{
+  "status": "PASS_B32_PINNED_INPUTS_AND_INDEPENDENT_PROOF_REVIEW",
+  "B32_commit": "53e5ec020db31711f1928cee67c2713ae967a6ad",
+  "verified_input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/compile_source_selectors.py": "eb2e04cbd26a31d91172b6e092fff1363a3eda170f056023ccbfb42891408b0d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/NATIVE_BOOLEAN_LIBRARY.json": "dfef8593fb4b0e09b23c3b2ee4807332523615389ecb392127a39b5b599e5d08",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/NATIVE_BOOLEAN_ANGLE.json": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/check_source_dispatcher.py": "bd52b67180c9e52bea69e34f7b333b14bb77e599912da53f94492ef1c6e72ff5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_CHECK.json": "10a56a7791a56b273a06b7eb95bb3fa0f0d2cbd5b95c130aea2d6d34d4040d29",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_RU.md": "bdf3d97decdfe4cd06598d7600fa55501ad094eb33de72e7c700790b5c3fc3c8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/PREPROCESSOR_READY_COMPOSITION.json": "4091efc154b7af1c0f63a6647699e13f7e6cd715fd470b0db31b85710bfedfdc"
+  },
+  "B32_files_sha256": {
+    "CHRONOLOGY_CHECK.json": "8478b3d54eceaa97b9d4b8f7301c70989b941a0e106f7776b59607082bcbde81",
+    "DIRTY_REAL_STEP_CHECK.json": "eee091795a0012c5f8c319f98bd3bde93a3e89b1b108046fdbef24f346165ddd",
+    "ISOLATED_REPLAY.json": "fbeb7a6e97742887b6ba6e9a84e66b0b460947c0b268243eb84dedd4d4e4e552",
+    "PREPROCESSOR_INDEPENDENT_CHECK.json": "1082d86e74955e3670138ff75a6427795445bc531264981a091f195e4b38d071",
+    "REVIEW_A15_RU.md": "d668469d0aea87b6cde8cc35f8692d402d32089fe29cfc729ef9a0e0a2c59183",
+    "TABLES_CHECK.json": "8087b1cfa87f737ddb950e9baf998a2b219a2f00d16bb93b66d68943bb4601f9",
+    "check_a15_tables.py": "fbb4361979dcfb1b0a1dfa8472558e520b1151aee1bce594b15ed24dd0f81d25",
+    "check_chronology.py": "d09dd22c81bf00fc1d1f4b63844244cae517831bb16e391c677f21ef92d04bec",
+    "check_dirty_record_real_step.py": "59895170240de439ccec5af7872c9b6b4e520dec4ffc6bcaea4d56a370e4f3ce",
+    "check_preprocessor_composition.py": "3403880a8c2f81f01e74d52651918f02e6a8e5878d23cd0a15b431bc978e0bb8",
+    "replay_a15_isolated.py": "051c44518d6ab6714de25506ddfe7898b9c799c0ec82d74c6b0330fb6239766a"
+  },
+  "records_reviewed": {
+    "CHRONOLOGY_CHECK.json": "8478b3d54eceaa97b9d4b8f7301c70989b941a0e106f7776b59607082bcbde81",
+    "DIRTY_REAL_STEP_CHECK.json": "eee091795a0012c5f8c319f98bd3bde93a3e89b1b108046fdbef24f346165ddd",
+    "ISOLATED_REPLAY.json": "fbeb7a6e97742887b6ba6e9a84e66b0b460947c0b268243eb84dedd4d4e4e552",
+    "PREPROCESSOR_INDEPENDENT_CHECK.json": "1082d86e74955e3670138ff75a6427795445bc531264981a091f195e4b38d071",
+    "TABLES_CHECK.json": "8087b1cfa87f737ddb950e9baf998a2b219a2f00d16bb93b66d68943bb4601f9"
+  },
+  "root_duplicate_B32_replay": false,
+  "reviewed_findings": [
+    "Independent source-DAG tables/copy offsets and exact counts",
+    "Fixed address lookup reads transition leaf, so dirty instruction outputs satisfy XOR contract",
+    "Full 15182621-gate CAR transition independently executed with dirty record/new_stack",
+    "Chronological decoder/first-success/transition wiring checked",
+    "Readiness is ONE conditional instruction preprocessor; seven independent checkpoints have Q_pre^7",
+    "No whole physical global assembler or quantum bank SELECT claimed"
+  ],
+  "full_source_alpha_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
