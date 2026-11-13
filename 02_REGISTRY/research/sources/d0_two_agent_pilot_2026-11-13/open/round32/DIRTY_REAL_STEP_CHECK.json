@@ -1,0 +1,26 @@
+{
+  "status": "PASS_REAL_WIDTH_CAR_DIRTY_XOR_OUTPUTS",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77"
+  },
+  "SITE_index": 247,
+  "CAR_internal_site": 244,
+  "a": 3905,
+  "b": 3919,
+  "leaf_name": "X/plus3/15",
+  "leaf_code": 282,
+  "initial_record_all_65_bits_one": true,
+  "new_stack_outputs_dirty": true,
+  "actual_transition_gate_counts": {
+    "X": 133922,
+    "CCX": 8609436,
+    "CX": 6439263
+  },
+  "logical_gates_executed": 15182621,
+  "all_inputs_unchanged_every_gate": true,
+  "all_scratch_restored_zero": true,
+  "scope": "one actual full transition stream, clean temporaries and arbitrary XOR output; not the full walk/native SELECT",
+  "GR_closed": false
+}

@@ -1,0 +1,54 @@
+{
+  "status": "PASS_ISOLATED_A15_BUILDER_CHECKER",
+  "input_sha256": {
+    "round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "round12/compile_source_selectors.py": "eb2e04cbd26a31d91172b6e092fff1363a3eda170f056023ccbfb42891408b0d",
+    "round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "round13/FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "round14/NATIVE_BOOLEAN_LIBRARY.json": "dfef8593fb4b0e09b23c3b2ee4807332523615389ecb392127a39b5b599e5d08",
+    "round14/NATIVE_BOOLEAN_ANGLE.json": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "round15/check_source_dispatcher.py": "bd52b67180c9e52bea69e34f7b333b14bb77e599912da53f94492ef1c6e72ff5",
+    "round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "round15/SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b",
+    "round15/SOURCE_DISPATCH_CHECK.json": "10a56a7791a56b273a06b7eb95bb3fa0f0d2cbd5b95c130aea2d6d34d4040d29",
+    "round15/SOURCE_DISPATCH_RU.md": "bdf3d97decdfe4cd06598d7600fa55501ad094eb33de72e7c700790b5c3fc3c8"
+  },
+  "outputs_byte_identical": {
+    "SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b",
+    "SOURCE_DISPATCH_CHECK.json": "10a56a7791a56b273a06b7eb95bb3fa0f0d2cbd5b95c130aea2d6d34d4040d29"
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "source_dispatcher.py"
+      ],
+      "stdout": "{\"status\": \"FINITE_REVERSIBLE_DAG_INSTRUCTION_CONTROLLER\", \"ten_sign_report_controller_counts\": {\"X\": 144939804, \"CX\": 6911538816, \"CCX\": 9281032152}, \"seven_report_controller_error_strictly_below\": \"2^-4060\"}",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "check_source_dispatcher.py"
+      ],
+      "stdout": "PASS literal full step 662\nPASS literal full step 20269\n{\"status\": \"PASS_EXACT_DISPATCHER_COMPONENT_AND_COMPOSITION_CHECKS\", \"local_transition_cases\": 496166, \"SITE_leaf_addresses\": 72192, \"all_reachable_node_copy_placements\": 76913, \"exhaustive_addition_cases\": 16400, \"exhaustive_small_QROM_cases\": 254, \"padded_walk_cases\": 600, \"all_full_walk_gates_executed\": false, \"native_bank_SELECT_implemented\": false, \"full_READY_proved\": false, \"physical_C_closed\": false, \"GR_closed\": false}",
+      "stderr": ""
+    }
+  ],
+  "owner_modified": false,
+  "all_full_walks_executed": false,
+  "GR_closed": false
+}
