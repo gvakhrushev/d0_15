@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-13T14:34:09.488477+00:00",
+  "status": "SOURCE_SCOPE_REVIEWED",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "B_input_hashes_verified": 11,
+  "B_report_sha256": "0ff4f9a3927df158d88e7c80e7851bdfc3f8def4f99a7799a6eb74e9d8c4710e",
+  "B_receipt_sha256": "d7b07ff7f5ee7a07d489a994818abb39e36eb54acebec6d25d8341157a8764b3",
+  "independently_read_sources": {
+    "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean": "8408c562f0dade7a4732ca4e99054e4f1c6019fb7574751010a564464a425c55",
+    "03_FORMALIZATION/D0/Cosmology/FiniteFeedbackEquationOfState.lean": "132fae159623a5a23f889cd8378a310e5c79e9cdbd51e765b4ea179b18e9815d",
+    "04_CERTIFICATES/vp_feedback_partition_function.py": "c9a643502a11355b24ca1e7f392aec983fc2cbc7ba4db901217a5e54118544f9",
+    "05_EXPERIMENTS/VacuumFeedback/feedback_partition_function_summary.json": "f1983e2bd99f1e8da34cef7ed093c712bd30631cc9d28177e6faf837884feda3"
+  },
+  "finding": "Named Lean source/cycle flags are premises; the Python certificate emits a derivative PASS token without computing a derivative.",
+  "physical_C_discharged": false,
+  "GR_closed": false,
+  "new_mathematical_impossibility_claim": false,
+  "new_physical_premise_selected": false,
+  "own_handoff_sha256": "6d8f7133dcf67209afc0824c5bc22b983d67f62df3a572f04e1b55efa18dc6d3",
+  "publication": "local only"
+}
