@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-11-13T16:06:57.488140+00:00",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "status": "REVIEWED_NEW_NATIVE_CANDIDATE_AND_CONDITIONAL_FULL_SOURCE",
+  "directed_checks": {
+    "exact": 20,
+    "bounded_numerical": 50,
+    "command": "python3 -B -W error direct/round6/check_high_report_source.py",
+    "exit_code": 0
+  },
+  "independent_review": "B round11 reproduced directed checker byte-for-byte and reviewed the conditional analytic source; physical admission and price stay open",
+  "independent_root_replays": {
+    "B9": {
+      "exact_checks": 14,
+      "exit_code": 0
+    },
+    "B10": {
+      "exact_checks": 17,
+      "exit_code": 0
+    },
+    "B11": {
+      "exact_checks": 12,
+      "exit_code": 0
+    }
+  },
+  "own_files": {
+    "CHECK_RESULT.json": "88d25984d7408241f0e6803b797d70114d54ce6f42cd685da872eee9d554fd7d",
+    "HIGH_REPORT_SOURCE_RU.md": "c5a3cb5940726b27b06d4c05f745fb60f15e8189eef3cc3eb36c91c753fb8a29",
+    "RESULT_RU.md": "a24ef4d61924c128bda659815328788da8b9a89581a9135b53c757bbf33bcc1d",
+    "check_high_report_source.py": "047aa4bf3320c0e8bd97780cc417646631dd1cb80ebc4ae7ffe7b0cc3006aeab"
+  },
+  "B_packets": {
+    "9": {
+      "CHECK_RESULT.json": "33d9bcaa5fa4ff707e6b5f27aa8c3443899bf6d8402b66f6fc570c15a4c3beae",
+      "RECEIPT.json": "078ba30b2a98ae99fe26363ae9fa6dbd8effcc01f74d28c4b34055ccad7568c9",
+      "ROUND9_ORDERED_PREFIX_SYMMETRY_RU.md": "ccbe3260a18c50e138732d4f4e106ac9f4d838b31ed007a1149bef3897fc37cd",
+      "check_commuting_paid_prefix.py": "f3f01c55f565b8cbb5575fd25f6aaab94af0cee4db77326059c80ed0ccdc497c",
+      "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    "10": {
+      "CHECK_RESULT.json": "4430209bb7fcb4b62f7ca4cd42a42f1c0c3d46be5dcc37de72b7af350b5b8ae3",
+      "RECEIPT.json": "65e8374fce5d4d3ab1f181eaf5948d6d19344cff67db3dc6974204b1b63b41a0",
+      "ROUND10_TWO_G_HIGH_REPORT_RU.md": "aa200c753f82aefca877f52bf428215d796f6864ee7977ab2f4294e66171d731",
+      "check_two_g_report.py": "636d81bb435bf6d5cefdda7c63f02484aa66f7f8ed8d12e357fd04cae8b83653",
+      "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    "11": {
+      "CHECK_RESULT.json": "98e4f76fb4bfc98ac5aa25d3702222903a7819f8fccf80ae934811ae6c4e5515",
+      "RECEIPT.json": "9131dcd8b6da78e48e7684c8ff35705a07297c9205f465a04023d5caca621b1f",
+      "ROUND11_REVIEW_AND_PAID_INVERSE_RU.md": "1f21f630817a4fc3bdecc0da900ecfcfecf41f9ca9a6de718ec9039359a066ba",
+      "check_review_transfer.py": "727ec17822fc8aa3b33b823897bc46684518d4118627844367f5521c1cbefe8e",
+      "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  },
+  "owning_source_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+  "changed_mathematical_input": "two actual G on the fresh pointer before E0, high-probability output; distinct execution and effect",
+  "removed_conditional_premise": "a=b_Q+b_C>=1 for the new conditional source construction, replaced by a>=0",
+  "original_H1_AD1_preserved": false,
+  "new_task_admission_proved": false,
+  "full_physical_Cost_Info_binding_proved": false,
+  "GR_closed": false,
+  "publication": "local only"
+}
