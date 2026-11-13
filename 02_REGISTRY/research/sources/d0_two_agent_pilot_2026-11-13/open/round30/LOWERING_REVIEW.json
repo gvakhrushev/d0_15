@@ -1,0 +1,75 @@
+{
+  "status": "PASS_INDEPENDENT_LOWERING_COUNTS_AND_WIRING",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/NATIVE_BOOLEAN_ANGLE.json": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/NATIVE_BOOLEAN_LIBRARY.json": "dfef8593fb4b0e09b23c3b2ee4807332523615389ecb392127a39b5b599e5d08",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/NATIVE_SELECTOR_LOWERING.json": "ab64ae9e5c1395c02b71b8ada4b33e7275aaee1dd68e16827845f7cff075d7c1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/lower_native_selectors.py": "ea23b376e7511e59e038b1002f5c3dde18129e0d666fbe1811fc3d00974b7962",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56"
+  },
+  "k_binary_length": 4111,
+  "native_forward_and_literal_raw_reverse_formula_checked": true,
+  "saved_DAG_independent_recount": true,
+  "literal_inverse_tree_reconstructed": true,
+  "syntactic_leaves_checked": {
+    "X": 9,
+    "H": 9,
+    "CCX": 104
+  },
+  "logical_controls_not_native_targets": true,
+  "oldRIGHT_not_addressed": true,
+  "circuits": [
+    {
+      "circuit": "INTERNAL_SELECTOR_CIRCUIT.json",
+      "key": null,
+      "logical_occurrences": 2657529,
+      "approximate_occurrences": 1568307,
+      "native_wire_count": 2773,
+      "inventory_checked": true
+    },
+    {
+      "circuit": "TOP_SOURCE_SELECTOR_CIRCUIT.json",
+      "key": null,
+      "logical_occurrences": 42374338,
+      "approximate_occurrences": 22933696,
+      "native_wire_count": 3190,
+      "inventory_checked": true
+    },
+    {
+      "circuit": "TEN_SIGN_REPORT_CIRCUIT.json",
+      "key": null,
+      "logical_occurrences": 7412904,
+      "approximate_occurrences": 4089626,
+      "native_wire_count": 234,
+      "inventory_checked": true
+    },
+    {
+      "circuit": "FIRST_SUCCESS_CIRCUITS.json",
+      "key": "internal",
+      "logical_occurrences": 93,
+      "approximate_occurrences": 58,
+      "native_wire_count": 76,
+      "inventory_checked": true
+    },
+    {
+      "circuit": "FIRST_SUCCESS_CIRCUITS.json",
+      "key": "top",
+      "logical_occurrences": 65,
+      "approximate_occurrences": 30,
+      "native_wire_count": 44,
+      "inventory_checked": true
+    }
+  ],
+  "seven_report_approximate_occurrences": 92263351768,
+  "seven_report_error_strict_lt": "2^-4059",
+  "per_macro_tolerance": "2^-4096",
+  "required_for_full_claim": [
+    "all remaining logical source-DAG dispatch, loaders, marks and quantum payload routing",
+    "actual births and full clock",
+    "target full alpha and physical C"
+  ],
+  "giant_native_word_flattened_or_executed": false,
+  "GR_closed": false
+}

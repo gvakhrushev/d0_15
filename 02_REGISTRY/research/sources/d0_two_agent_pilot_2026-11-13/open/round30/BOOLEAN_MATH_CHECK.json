@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_WALSH_CCX_AND_SMALL_NATIVE_WORDS",
+  "walsh_control_pattern_cases": 336,
+  "ideal_identity": "R_t(pi/2) Z_t = X_t; R_aux(pi)=-I for either aux input",
+  "irrational_angle_theorem_status": "already owned, PHASE_COMPILER.md section on optional comparison; following is a bounded independent check of that fact, not a new result",
+  "root_of_unity_obstruction": "a^4+a^2\u22121 irreducible over Q(i), conjugate a->i/a sends a+i a^2 to i(1/a\u22121/a\u00b2), whose modulus lies in (0,4/9); therefore lambda=e^(i theta) is not a root of unity",
+  "actual_approximate_CCX_not_its_own_inverse_for_every_positive_k": true,
+  "small_numeric_native_columns": 1536,
+  "max_abs_small_numeric_error": 7.771561172376096e-16,
+  "numeric_small_check_scope": "independent cross-check; exact owning-algebra all-column replay is separate",
+  "native_full_writer_executed": false,
+  "GR_closed": false
+}

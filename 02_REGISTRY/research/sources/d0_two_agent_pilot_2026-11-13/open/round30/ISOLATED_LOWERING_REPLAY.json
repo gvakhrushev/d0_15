@@ -1,0 +1,60 @@
+{
+  "status": "PASS_ISOLATED_A14_SUPPLEMENTARY_LOWERING",
+  "input_sha256": {
+    "round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "round13/FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "round14/lower_native_selectors.py": "ea23b376e7511e59e038b1002f5c3dde18129e0d666fbe1811fc3d00974b7962",
+    "round14/check_native_lowering.py": "6a33e486d2cf214476834925dc7cbfe3ac0b00e18da3e307f68267f39484fbcc",
+    "round14/NATIVE_BOOLEAN_ANGLE.json": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "round14/NATIVE_BOOLEAN_LIBRARY.json": "dfef8593fb4b0e09b23c3b2ee4807332523615389ecb392127a39b5b599e5d08",
+    "round14/NATIVE_SELECTOR_LOWERING.json": "ab64ae9e5c1395c02b71b8ada4b33e7275aaee1dd68e16827845f7cff075d7c1",
+    "round14/NATIVE_LOWERING_CHECK.json": "7cbe9d2a38fa6b6343a74c2ecf5df4027360d122e93b4740e0f91c7d06cb34fc"
+  },
+  "checker_output": {
+    "status": "PASS_NATIVE_SELECTOR_SUBSTITUTION_AND_ERROR_TOTALS",
+    "actual_logical_macro_wirings_checked": 350,
+    "schemas": [
+      {
+        "file": "INTERNAL_SELECTOR_CIRCUIT.json",
+        "key": null,
+        "native_wires": 2773
+      },
+      {
+        "file": "TOP_SOURCE_SELECTOR_CIRCUIT.json",
+        "key": null,
+        "native_wires": 3190
+      },
+      {
+        "file": "TEN_SIGN_REPORT_CIRCUIT.json",
+        "key": null,
+        "native_wires": 234
+      },
+      {
+        "file": "FIRST_SUCCESS_CIRCUITS.json",
+        "key": "internal",
+        "native_wires": 76
+      },
+      {
+        "file": "FIRST_SUCCESS_CIRCUITS.json",
+        "key": "top",
+        "native_wires": 44
+      }
+    ],
+    "norm_enclosure_arithmetic_checked": true,
+    "integer_power_enclosure_rerun_here": false,
+    "all_actual_lowered_native_stream_expanded": false,
+    "full_coverage_method": "A13 whole logical stream already audited; typewise native substitution preserves distinctness/read-only plus fresh disjoint aux/port/spin. Actual samples and complete first-success streams checked.",
+    "native_lowering_sha256": "ab64ae9e5c1395c02b71b8ada4b33e7275aaee1dd68e16827845f7cff075d7c1",
+    "full_READY_proved": false,
+    "physical_C_closed": false,
+    "GR_closed": false
+  },
+  "byte_equal_to_owner": true,
+  "owner_modified": false,
+  "GR_closed": false
+}
