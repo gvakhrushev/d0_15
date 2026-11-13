@@ -1,0 +1,54 @@
+{
+  "status": "PASS_BOUNDED_NATIVE_ZERO_CONTENT_AND_PROVENANCE",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/NATIVE_ZERO_PREPARATIONS.json": "9c78af4284138c244476e4b2b16069d01289262d16127c2cc49e650dbdb6ebe5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/NATIVE_ZERO_CHECK.json": "0f71d457f0ed06b7f5e16845d53f6031eb71b3e1ebde3a2f1d9cbe93952c7dc2",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round27/NATIVE_Z_CHECK.json": "6b8c500c433177e2191976f7ecce5a261024946a86ea8d31e57df1626ef8c4b6"
+  },
+  "circuits": {
+    "INTERNAL_SELECTOR_CIRCUIT.json": {
+      "fresh_v_targets": 1389,
+      "stages": 15279,
+      "gates": {
+        "CX": 8334,
+        "SourceI": 5556,
+        "G": 1389
+      },
+      "original_selector_input_wires_touched": false,
+      "native_blank_wires": []
+    },
+    "TOP_SOURCE_SELECTOR_CIRCUIT.json": {
+      "fresh_v_targets": 1595,
+      "stages": 17545,
+      "gates": {
+        "CX": 9570,
+        "SourceI": 6380,
+        "G": 1595
+      },
+      "original_selector_input_wires_touched": false,
+      "native_blank_wires": []
+    },
+    "TEN_SIGN_REPORT_CIRCUIT.json": {
+      "fresh_v_targets": 118,
+      "stages": 1298,
+      "gates": {
+        "CX": 708,
+        "SourceI": 472,
+        "G": 118
+      },
+      "original_selector_input_wires_touched": false,
+      "native_blank_wires": []
+    }
+  },
+  "all_literal_gate_stages_audited": 34122,
+  "plan_sha256": {
+    "INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04"
+  },
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "algebra_scope": "composes B27 exact G^-1_q tensor I_port tensor I_spin for each distinct q; no large matrix reconstructed",
+  "native_blank_wires_interpretation": "empty, never substituted for RAW v; birth and clock ledger not emitted",
+  "full_selector_native_word": false,
+  "GR_closed": false
+}

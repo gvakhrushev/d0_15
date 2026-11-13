@@ -1,0 +1,42 @@
+{
+  "status": "PASS_ALL_EMITTED_LOGICAL_GATES_STREAMED",
+  "circuits": [
+    {
+      "file": "INTERNAL_SELECTOR_CIRCUIT.json",
+      "sha256": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+      "gate_counts": {
+        "X": 478828,
+        "CX": 1089222,
+        "CCX": 1089479
+      },
+      "logical_gates_streamed": 2657529,
+      "input_targets": 0
+    },
+    {
+      "file": "TOP_SOURCE_SELECTOR_CIRCUIT.json",
+      "sha256": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+      "gate_counts": {
+        "CX": 19440642,
+        "X": 3478720,
+        "CCX": 19454976
+      },
+      "logical_gates_streamed": 42374338,
+      "input_targets": 0
+    },
+    {
+      "file": "TEN_SIGN_REPORT_CIRCUIT.json",
+      "sha256": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+      "gate_counts": {
+        "CX": 3323278,
+        "CCX": 3398086,
+        "X": 691540
+      },
+      "logical_gates_streamed": 7412904,
+      "input_targets": 0
+    }
+  ],
+  "gates_streamed": 52444771,
+  "flat_word_materialized": false,
+  "gates_executed_on_quantum_state": false,
+  "GR_closed": false
+}

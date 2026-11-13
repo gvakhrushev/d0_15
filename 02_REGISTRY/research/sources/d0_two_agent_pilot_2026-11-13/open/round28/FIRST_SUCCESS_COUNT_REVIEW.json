@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FIRST_SUCCESS_AND_PER_REPORT_COUNTS",
+  "first_success_counts": {
+    "internal": {
+      "X": 2,
+      "CCX": 56,
+      "CX": 35
+    },
+    "top": {
+      "X": 2,
+      "CCX": 28,
+      "CX": 35
+    }
+  },
+  "per_report_decoder_label_routing_counts": {
+    "X": 3776997052,
+    "CX": 9400485374,
+    "CCX": 9403481772
+  },
+  "input_and_attempt_wires_never_targeted": true,
+  "counts_scope": "fixed decoders/label routes only; no DAG stack, payload router or native compiler",
+  "GR_closed": false
+}
