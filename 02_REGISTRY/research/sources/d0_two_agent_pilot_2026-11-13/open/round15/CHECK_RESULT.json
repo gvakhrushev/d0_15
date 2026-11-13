@@ -1,0 +1,10 @@
+{
+  "status": "PASS_SCOPED",
+  "stdout": "PASS: {'target_projectors': 101, 'amplitude_boundaries': 12, 'scalar_minimum': 28, 'complex_instrument': 200, 'exact_native_echo': 1}\nNot checked: full H.1 compiler, exact finite Gibbs target, 425D heat, Book03 physical C.\n",
+  "native_exact_echo_checks": 1,
+  "numerical_instruments": 200,
+  "full_H1_compiler_replayed": false,
+  "exact_finite_u_a_word_claimed": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}
