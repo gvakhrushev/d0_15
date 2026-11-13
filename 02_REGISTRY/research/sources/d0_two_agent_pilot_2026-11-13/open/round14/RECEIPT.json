@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SCOPED_READER_LEDGER",
+  "created_utc": "2026-11-13T16:56:14.730821+00:00",
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round14/ROUND14_READER_LEDGER_RU.md": "c62b7422a8291ecb66d4a47537756cc2982e196b2a7dddd66405d4c499fd4bee",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round14/check_reader_entropy.py": "defd7b73e8913ad51e67b025b73d810f394623cd28f76410f2c94ff05cf29eaa",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round14/CHECK_RESULT.json": "15c49b6b265639a7fc89f1668639f2fa154cd2c8ed5acb1b0597c713d3a99220",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/repeat_7fy.txt": "1c9034d7d528c1a4ea26b139ebfa1b6c54df0f70d88a36e3b74974cec9afb8a0",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/h1_admission_domain.txt": "1d43118b741c4b757ce9c7d547f635d07c6b34b0eaa50f233f83cc570c314452",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  },
+  "fine_entropy_proved_for": "7fy_LC4_polar_section",
+  "all_H1_registered_labels_identified": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS_SCOPED",
+  "stdout": "PASS: 5005 numerical identities/bounds across 1001 collar points;\nPASS: all four physical archive maps and exact parser lookup;\np=0.618033988750, h(p^2)=0.665018386444, fine slope upper bound=-0.183806561384.\nAnalytic proof, scope and unverified physical obligations: ROUND14_READER_LEDGER_RU.md\n",
+  "actual_H1_compiler_replayed": false,
+  "full_physical_C": false,
+  "GR_closed": false
+}
