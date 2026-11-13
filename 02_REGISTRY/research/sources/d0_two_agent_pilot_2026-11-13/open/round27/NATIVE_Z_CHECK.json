@@ -1,0 +1,138 @@
+{
+  "status": "PASS_EXACT_NATIVE_Z_ROUTING_ALL_COLUMNS",
+  "profile": "G_CX_SOURCE_I",
+  "tested_qubits": 4,
+  "source_port": 1,
+  "source_spin": [
+    2,
+    3
+  ],
+  "spin_dimension": 4,
+  "spin_basis": [
+    "1",
+    "i",
+    "j",
+    "k"
+  ],
+  "L_i_matrix": [
+    [
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ]
+  ],
+  "target_q": 0,
+  "word": [
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        1
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        1,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        1
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "op": "SourceI",
+      "wires": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        1
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        1,
+        0
+      ]
+    },
+    {
+      "op": "CX",
+      "wires": [
+        0,
+        1
+      ]
+    }
+  ],
+  "inventory": {
+    "CX": 6,
+    "SourceI": 2,
+    "total": 8
+  },
+  "Z_on_port_direct": {
+    "CX": 0,
+    "SourceI": 2,
+    "total": 2
+  },
+  "full_16_columns_exact": true,
+  "unknown_port_and_spin_preserved": true,
+  "applicability": "one distinct ordinary q, declared source port and untouched oldRIGHT; routing port must not be protected",
+  "routed_G_inverse_for_fresh_v_to_zero": {
+    "CX": 6,
+    "SourceI": 4,
+    "G": 1,
+    "total": 11,
+    "full_16_columns_exact": true,
+    "operator": "G_q^-1 tensor I_port tensor I_spin",
+    "requires": "fresh RAW v on q, an accessible declared port, both distinct from protected oldRIGHT; each birth and gate paid",
+    "optional_return_zero_to_v": "one separately paid G(q)"
+  },
+  "on_port_G_inverse": {
+    "CX": 0,
+    "SourceI": 4,
+    "G": 1,
+    "total": 5
+  },
+  "logical_CX_native_direct": true,
+  "logical_X_CCX_CZ_native_compiled": false,
+  "full_controlled_involution_native": false,
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "GR_closed": false
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS_FIXED_LABEL_CLEAN_SCRATCH_CONTROLLED_SIGNED_INVOLUTION",
+  "small_n_2_to_6_pairs": 160,
+  "small_all_column_cases": 9824,
+  "actual_bound_unique_pairs": 20992,
+  "actual_by_type": {
+    "CAR": 512,
+    "Choi": 20480
+  },
+  "actual_endpoint_complement_control_spectator_columns": 503808,
+  "explicit_active_padding_boundary_cases_22bit": 84,
+  "actual_gate_count_min": 55,
+  "actual_gate_count_max": 227,
+  "coherent_complex_superposition_components": 28,
+  "arbitrary_dirty_column_inverse_cases": 256,
+  "uncompute_equals_a_equals_b_separately_hostile": {
+    "initial": "x=a, eqa=eqb=0, h=1",
+    "final_x": "b",
+    "dirty_flags": [
+      1,
+      1
+    ]
+  },
+  "proof_scope": "all data/h/delta basis inputs with clean scratch; full all-column identity for unknown scratch is NOT asserted",
+  "RIGHT_and_oldRIGHT_spectators": true,
+  "dynamic_lookup_compiled": false,
+  "native_admission_claimed": false,
+  "GR_closed": false
+}
