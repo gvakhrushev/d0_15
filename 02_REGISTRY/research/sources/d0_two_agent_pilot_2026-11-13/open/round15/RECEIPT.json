@@ -2,7 +2,7 @@
   "status": "PASS_SCOPED_FINE_FIBRE",
   "created_utc": "2026-11-13T17:00:44.510532+00:00",
   "sha256": {
-    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round15/ROUND15_FINE_FIBRE_RU.md": "c086e8a7c903a3902c94bfca219dcdea34c53328c95bd45d0cc46a967aa9e104",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round15/ROUND15_FINE_FIBRE_RU.md": "26a0ef4e9baad409018fd3a48859292e097ae80b2cb7f6a142de0147f300fe9c",
     "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round15/check_fine_fibre.py": "b0e74c1b91eae8aaa8cd4209bb4121d0232cc8682a17df9270628ad3446f5bd1",
     "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round15/CHECK_RESULT.json": "e7691a81c3c1bf9d1facae6b530faa51b39fb30524731b8c3752a56831b3620d",
     "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round14/RECEIPT.json": "f64e41c3ad238395fc2ed9779e55b967bc74b4bd2bde4fbce19ed605698fedeb",
@@ -14,5 +14,7 @@
   "full_descriptor_fine_guards_identified": false,
   "conditional_book_weight_hypothesis_proved": false,
   "recorded_HJ_and_physical_C_proved": false,
-  "GR_closed": false
+  "GR_closed": false,
+  "corrected_utc": "2026-11-13T17:06:51.600879+00:00",
+  "correction": "Rotation amplitude theta is two-sided; theta>=0 is only a section of probabilities."
 }

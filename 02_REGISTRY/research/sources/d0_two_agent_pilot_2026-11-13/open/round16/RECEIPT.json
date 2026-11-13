@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SCOPED_INDEPENDENT_REVIEW",
+  "created_utc": "2026-11-13T17:06:51.678120+00:00",
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round16/REVIEW_A8_FINE_PRICE_RU.md": "c650739bcd829f8ea93b58a0447f0f4b1bc8db4f53b2b86de1e84a6bf6ad4887",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round16/check_a8_review.py": "85c7abd609055b41ed69d69d89d1e745ec42c8f79b186bb0b7c43493a5b193b5",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round16/CHECK_RESULT.json": "e420855eb3f65cf5fcf894785183092a8a27a1cb9cc83487cc67c06fc1d69354",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round15/ROUND15_FINE_FIBRE_RU.md": "26a0ef4e9baad409018fd3a48859292e097ae80b2cb7f6a142de0147f300fe9c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round15/RECEIPT.json": "32b04d6b368690f527c1ec6c1702f8738c4aa5d0f216fb455845e17f57cf0182",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round8/FULL_FINE_PRICE_SOURCE_RU.md": "751b1732acf9121b47a4037d9bda9635d994af9630250ce1747fb8c47bba4abd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round8/check_full_fine_price.py": "dc1ba86ddfc26f8688ebc5ecfba67b39c647fa440194d3b7a6bc2d5c7086512b"
+  },
+  "conditional_price_proved": true,
+  "actual_full_reader_admission": false,
+  "full_physical_C_closed": false,
+  "GR_closed": false
+}
