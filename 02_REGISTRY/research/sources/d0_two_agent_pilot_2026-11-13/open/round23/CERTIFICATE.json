@@ -1,0 +1,52 @@
+{
+  "status": "EXACT_STRUCTURAL_CERTIFICATE_CONDITIONAL_GEOMETRIC_HALO_NOT_NATIVE_WORD",
+  "source_site_count": 256,
+  "interior_field_rows": 64,
+  "non_interior_rows": 192,
+  "transverse_forward_halo_source_rows": 112,
+  "geometric_address_counts": {
+    "identity": 1,
+    "coframe": 1024,
+    "links_on_base": 1024,
+    "links_on_halo": 384,
+    "A": 2433
+  },
+  "choi": {
+    "local_dimension": 32,
+    "active_vector_coordinates": 2491392,
+    "padded_coordinates": 4194304,
+    "qubits": 22,
+    "anchor_square": "1/77856",
+    "identity_block": "J_a0=I_32",
+    "input": "r=|a0=0,i0=0,j0=0>",
+    "output": "sum_{a,i,j} J_a[j,i]|a,i,j>/sqrt(32A)",
+    "completion": "K=|b><r|-|r><b|; O=I+K+K²/(1+<r,b>), direct sum I on padding",
+    "proof": "Each J_a orthogonal => ||b||²=1; <r,b>=1/sqrt(32A)>0; O is a rotation on span(r,b), identity on its orthogonal complement; all padded coordinates are untouched."
+  },
+  "copy_slots": {
+    "per_report_max_choi": 180,
+    "per_report_max_material": 16,
+    "seven_reports_max_choi": 1260,
+    "seven_reports_max_material": 112,
+    "status": "bounded template; unused identity operands retained, not a compiled factory"
+  },
+  "fourier_gram": "integer F.T F=128 I exactly; chi=F/128 => Gram I/128",
+  "pf_naive_hostile": {
+    "indices": [
+      19,
+      37
+    ],
+    "difference": "-477/700544",
+    "nonzero_entries": 15570
+  },
+  "shared_site_hostile": {
+    "test": "f_x=q_x=N_x/128, weights N_x/10946",
+    "E_fq_minus_E_f_E_q": "2000381449/490761895936",
+    "strictly_positive": true
+  },
+  "required_unsettled": "the 112 CAR forward-edge rows require an explicitly owned boundary/halo binding; geometry halo alone does not provide material labels",
+  "sampled_vertices_evaluated": false,
+  "material_halo_created": false,
+  "compiled_native_word": false,
+  "GR_closed": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "NUMERIC_CENTRE_MAP_ILLUSTRATION_NOT_GATE_WORD",
+  "vector_dimension": 4194304,
+  "active_coordinates": 2491392,
+  "anchor_error": 9.194034422677078e-17,
+  "inverse_replay_l2_error": 6.209878672960023e-33,
+  "sparse_column_superposition_norm_error": 1.1102230246251565e-16,
+  "padding_column_error": 0.0,
+  "coframe_mode": "B21 sqrt(rho)-dressed candidate; exact ownership/binding to complete source remains to be checked",
+  "halo_links": "polynomial central geometry only; not verified as full H1 boundary extension",
+  "allocated_dense_operator": false,
+  "all_sam_vertices_tested": false,
+  "GR_closed": false
+}
