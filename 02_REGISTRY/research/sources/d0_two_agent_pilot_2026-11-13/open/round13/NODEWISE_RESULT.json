@@ -1,0 +1,43 @@
+{
+  "status": "PASS_NUMERIC_DIAGNOSTIC",
+  "check_count": 24,
+  "checks": [
+    "three actual effects are pairwise noncommuting",
+    "block 0 is trace preserving",
+    "block 1 is trace preserving",
+    "block 2 is trace preserving",
+    "retained CQ nodewise bound for state 0",
+    "full classical nodewise bound for state 0",
+    "retained CQ nodewise bound for state 1",
+    "full classical nodewise bound for state 1",
+    "retained CQ nodewise bound for state 2",
+    "full classical nodewise bound for state 2",
+    "retained CQ nodewise bound for state 3",
+    "full classical nodewise bound for state 3",
+    "price error bound state 0 weights 0.0,0.0",
+    "price error bound state 1 weights 0.0,0.0",
+    "price error bound state 2 weights 0.0,0.0",
+    "price error bound state 3 weights 0.0,0.0",
+    "price error bound state 0 weights 0.3,0.7",
+    "price error bound state 1 weights 0.3,0.7",
+    "price error bound state 2 weights 0.3,0.7",
+    "price error bound state 3 weights 0.3,0.7",
+    "price error bound state 0 weights 10.0,2.0",
+    "price error bound state 1 weights 10.0,2.0",
+    "price error bound state 2 weights 10.0,2.0",
+    "price error bound state 3 weights 10.0,2.0"
+  ],
+  "entropy_bound": 0.2587674071096086,
+  "largest_entropy_error": 0.04309654604622626,
+  "effect_centres": [
+    0.23,
+    0.72,
+    0.47
+  ],
+  "effect_radii": [
+    0.08,
+    0.06,
+    0.09
+  ],
+  "scope": "noncommuting abstract effects and retained qubit/reference outcomes; not a native compiler or physical task admission"
+}

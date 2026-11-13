@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SCOPED_QUATERNION_AND_REVIEW",
+  "created_utc": "2026-11-13T16:42:22.561518+00:00",
+  "own_exact_checks": 78,
+  "own_numeric_diagnostics": 1,
+  "nodewise_numeric_checks": 24,
+  "direct_review_exact": 18,
+  "direct_review_numeric": 260,
+  "normal_and_optimized_warnings_as_errors_match": true,
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round13/ROUND13_SPIN_INTERFACE_AND_RECORD_TYPES_RU.md": "8afc349be3d9391c01ebda060ba6e5215b6e9f627b89f93068fa3ab09ab905cb",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round13/check_quaternion_interface.py": "aea97544e1b9ca85dd8825a9babe1449390953fb107742bd70a4eb7ae4a66931",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round13/check_nodewise_entropy.py": "90d326b458631b22e9508175f516e43e8aa82e57ad9ee0a9849ccce4305e00ab",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round13/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round13/CHECK_RESULT.json": "b6c4a734fc0b4837730caa5086b9dd0efafb3582c35d6154a22a3d0c2717ef89",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round13/NODEWISE_RESULT.json": "9537838138ac4026fbefe0f12e25010996bc94e7dcda02e8dd4d3d222ff64496",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round13/DIRECT_REVIEW_RESULT.json": "446a36c4e4cf1e239ade5b0a6982990e391f00dccb5429d5bcac1f9f92c790fb",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round12/ROUND12_RETAINED_HIGH_AND_OLD_RU.md": "1624463c2fbbc6d6bada3e62c017b3ef901854ef30b3cf6263f20b0ba0708b67",
+    "03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean": "c350ead450996bfb7da20a987454b57da94dc098d17efeafc85a56b751664aa4",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round7/FRESH_PREFIX_SOURCE_RU.md": "4723fb60f30ee41dcea1f793a84ea4e0f1e410e6cd1aea3c1bf7e4679c1be08c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round7/check_fresh_prefix_source.py": "00b72467102de507c8041d231a3910022fbe1831652834827e2e5b719efe1153"
+  },
+  "full_H1_extended_task_admission": false,
+  "full_registered_fine_entropy_source_proved": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}
