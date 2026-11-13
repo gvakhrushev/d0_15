@@ -1,0 +1,37 @@
+{
+  "status": "REVIEWED_SCOPED_RESULT",
+  "created_utc": "2026-11-13T14:20:24.174816+00:00",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "independent_B7_replay": {
+    "command": "python3 02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round7/check_retained_phase.py",
+    "working_tree": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13",
+    "exit_code": 0,
+    "exact_conditions": 29,
+    "output_compared_to_saved_CHECK_RESULT": "all named checks, fixture values and scope flags match",
+    "note": "Positive gap has exact expression 8 sqrt(p) p^7; decimals are diagnostics. Full H1 execution and physical price admission were not checked."
+  },
+  "B_receipt_all_hashes_verified": true,
+  "B_inputs": {
+    "CHECK_RESULT.json": "c6bca90a01de1f9c9aadf4114ce45d923d7a48bd09abc053fcf316db351725f2",
+    "RECEIPT.json": "3cbac202b5dff6b7b549d66a09e6f25a71819d7f536146e7d0fa923ed24fd894",
+    "ROUND7_RETAINED_PHASE_RU.md": "7b6b4c7ecc65ef12f64eea3540e24b6ba0eb528d4d9f09df602eaadc08141c0b",
+    "check_retained_phase.py": "5663b5a983d3d132c5877ae8d24537b2d28edfefb8d4190801737bfa796fbc81",
+    "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "owning_sources": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "02_REGISTRY/research/A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md": "ad5b738a962a804ac7a9bc0225f5729b28b10916ae9ac8ab1098e7c2112822e0",
+    "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md": "665fcbc48d64e4e6fc4bf5fcc764845d86012a42683f5d3188b47158cda5a2b9",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94"
+  },
+  "audit_sha256": "7703e7ea6042597c562ad88f57c62712ab34cbf3716c42ea6f40d8fe406f82bd",
+  "remote_status_sha256": "4abfeebdc3001a748cc3178e0b40f5e6b4bf2648b1b9538622a82e07591f36db",
+  "existing_physical_premises_discharged": [],
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "publication": "local only"
+}
