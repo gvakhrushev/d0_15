@@ -1,0 +1,27 @@
+{
+  "status": "LOCAL_B29_CONDITIONAL_ONLY",
+  "input_sha256": {
+    "owner": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "B21_reference": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a",
+    "B25_slack": "41b660f639dd59bdbed644e4f002506c522da27677de5ead4e1889ff82c8adf0",
+    "A13_counts": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "A11_norm": "b4aca9a0e9655559531947d5ccca7b40ae73ddf338bbcdc97012ae1fb95b4fc8"
+  },
+  "output_sha256": {
+    "BUDGET_CERTIFICATE.json": "195969b01862ae091a8c45f6f236a2f0e24496b43dff5f016d162fa0e1c41b96",
+    "FULL_SOURCE_ERROR_BUDGET_RU.md": "53701f56cbe48290b940657464d00160510c765ad63e1889f24abf70a77205e4",
+    "STRUCTURE_HOSTILE.json": "26d91637d35a05c6273a3362b42b9f55f72de1bf1e7f52c6932a9c8406ba9f0a",
+    "certify_error_budget.py": "f012bf078e9116e57adb02f24ff472611268ca023dda88ecb088a315f770ab42",
+    "check_structural_boundary.py": "c5ca85ea19f4673c8b31ae267f0ba464a64fbb42bb9ac26968c591a465529b19"
+  },
+  "checks": [
+    "outward interval visibility and conditional gain floor",
+    "rational counts and three T10 budget/lift examples",
+    "finite reflection/scalar structure hostile"
+  ],
+  "mpmath_version": "1.3.0",
+  "full_target_alpha_lower_bound_proved": false,
+  "complete_writer_count_known": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

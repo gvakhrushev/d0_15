@@ -1,0 +1,78 @@
+{
+  "status": "PASS_OUTWARD_INTERVAL_CONDITIONAL_GATE_TO_SOURCE_BUDGET",
+  "scope": "ideal full reporter alpha >=1/2 is a hypothesis; physical alpha and physical C not proved",
+  "A": 2049,
+  "m": 2688,
+  "Lambda_h": "2^1525",
+  "epsilon_h": "2^-1531",
+  "s": "2^-30",
+  "alpha_full_target_lower_bound_assumption": "1/2, NOT established by A12 component",
+  "reference_d_h_interval": "[0.0001204899907659588493041527546707427341781856491438468100125669748448825739467746752349239193542508229432929665212703434923442631171468667668998433, 0.0001204899907659588493041527546707427341781856491438468100125669748448825739467746752349239193542508229432929665212703434923442631171468667669108948]",
+  "r_x_interval": "[0.00000001916883169361147399349891702492448805792801023862337336386492709591363814451473141736310110854073931597211668631820268601084651705967987501196303, 0.00000001916883169361147399349891702492448805792801023862337336386492709591363814451473141736310110854073931597211668631820268601084651705967987501297971]",
+  "r_y_interval": "[0.0000004488651598960131675523985090531060293469295247991922707982447859558216025317612327942657063929495373589748452519945397036271900279182049152625198, 0.0000004488651598960131675523985090531060293469295247991922707982447859558216025317612327942657063929495373589748452519945397036271900279182049152775355]",
+  "kappa_interval": "[0.9379319777093366724594790902762494386402242848179862053617810635706157697803882942248197834870461386494858597045958532962437658464154198036934861, 0.9379319777093366724594790902762494386402242848179862053617810635706157697803882942248197834870461386494858597045958532962437658464154198474908893]",
+  "coefficient_at_alpha_half_interval": "[0.00000000000000000001674520151624757762771763919610999666853585881554978634921288502024806019153814521071276014687670813636818026987292057637307299865580220283735921, 0.00000000000000000001674520151624757762771763919610999666853585881554978634921288502024806019153814521071276014687670813636818026987292057637307299865580220362297106]",
+  "coefficient_gt": "2^-66",
+  "g_floor_gt": "2^-3128",
+  "g_times_s_floor_gt": "2^-3158",
+  "diagnostic": {
+    "kappa": "0.937931977709336672459479090276",
+    "d_h": "0.000120489990765958849304152754671",
+    "r_x": "0.0000000191688316936114739934989170249",
+    "r_y": "0.000000448865159896013167552398509053",
+    "g_log2_at_alpha_half": "-3127.69481415981896998420816546",
+    "g_s_log2_at_alpha_half": "-3157.69481415981896998420816546"
+  },
+  "A13_per_report_logical_counts": {
+    "CCX": 9403481772,
+    "CX": 9400485374,
+    "X": 3776997052
+  },
+  "seven_reports_in_A_assumption": true,
+  "seven_known_counts": {
+    "X": 26438979364,
+    "CCX": 65824372404,
+    "CX_exact_if_native": 65803397618,
+    "approx_X_plus_CCX": 92263351768
+  },
+  "A14_hypothetical_2^-4096_per_gate": "the known seven-report X+CCX sum <2^-4059; A14 certificate and complete remaining assembly not verified here",
+  "illustrative_budget": {
+    "eta_total_le": "2^-3169",
+    "e_B_le": "2^-3168",
+    "T10_native_term_strict_lt": "2^-10",
+    "uniform_error_per_known_X_CCX": "2^-3207",
+    "known_gate_sum_lt": "2^-3170",
+    "all_other_errors_reserved_le": "2^-3170",
+    "CCX_angle_error_le": "2^-3207/3 if A14 bound 3*angle_error applies"
+  },
+  "illustrative_T10_total": "<2^-9 ||X|| only if L<=1000 and all other H1 hypotheses hold; no value of L certified here",
+  "H5_right_inverse": {
+    "scaled_chart_norm_strict_lt": 55,
+    "unit_physical_field_norm_strict_lt": "55*2^30",
+    "assumptions": "owner J_j and same target chart; Neumann correction for actual marks not included"
+  },
+  "scaled_chart_lift_example": {
+    "eta_total_le": "2^-3175",
+    "e_B_le": "2^-3174",
+    "per_known_X_CCX": "2^-3213",
+    "all_other_errors_le": "2^-3176",
+    "post_lift_native_term": "<2^-10 for unit scaled chart vector",
+    "additional_Taylor_condition": "L<=10 suffices for separate <2^-10 Taylor term; L not established"
+  },
+  "physical_unit_lift_example": {
+    "eta_total_le": "2^-3205",
+    "e_B_le": "2^-3204",
+    "per_known_X_CCX": "2^-3243",
+    "all_other_errors_le": "2^-3206",
+    "post_lift_native_term": "<2^-10 per unit physical field vector; actual mark right inverse and Jacobian not certified"
+  },
+  "illustrative_mark": {
+    "leaf_norm_upper": 65568,
+    "eta_prefix_le": "2^-3187",
+    "independent_reader_error_le": "2^-3169",
+    "mark_abs_error_lt": "2^-3168",
+    "not_a_required_accuracy": "illustrative per-prefix allocation"
+  },
+  "actual_scalar_corner_lower": ">13/25-e_B>1/2 when T6 structure holds",
+  "GR_closed": false
+}
