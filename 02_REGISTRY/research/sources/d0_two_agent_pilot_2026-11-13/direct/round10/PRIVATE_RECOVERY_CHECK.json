@@ -1,0 +1,141 @@
+{
+  "status": "PASS_LITERAL_NPS_PRIVATE_DILATION_RECOVERY",
+  "checks": 23,
+  "Spin_coupled_backward_centre": false,
+  "WORK_only_recovery_assumed": false,
+  "q_fixture": 0.4316559314923749,
+  "fixture_square_NPS_calls": 60,
+  "all_input_columns": 16,
+  "opaque_Spin_columns": 4,
+  "phase_input_columns": 2,
+  "exterior_report_branches": 2,
+  "rounds": [
+    {
+      "round": 0,
+      "actual_raw_counts": {
+        "G": 11,
+        "CX": 60,
+        "SourceI": 110,
+        "N": 181
+      },
+      "amplifier_levels": [
+        {
+          "G": 9,
+          "CX": 29,
+          "SourceI": 22,
+          "N": 60
+        }
+      ],
+      "stable_phase_multiplier": 624,
+      "private_preparation_calls": 23,
+      "branch_failure_probabilities": [
+        "0.4316559314923746",
+        "0.5683440685076249"
+      ],
+      "branch_good_coefficients": [
+        [
+          "0.75388597845272689485878616426",
+          "0.0"
+        ],
+        [
+          "0.657005275087175460647861951383",
+          "0.0"
+        ]
+      ],
+      "all_input_corner_error_frobenius": 3.1401849173675503e-16,
+      "native_stream_sha256": "1613d3254609fdba066ee04d6fa2253832faea07dab69008395be6e33219dc10"
+    },
+    {
+      "round": 1,
+      "actual_raw_counts": {
+        "G": 1907,
+        "CX": 11450,
+        "SourceI": 11846,
+        "N": 25203
+      },
+      "amplifier_levels": [
+        {
+          "G": 9,
+          "CX": 29,
+          "SourceI": 22,
+          "N": 60
+        },
+        {
+          "G": 1905,
+          "CX": 2029,
+          "SourceI": 1406,
+          "N": 5340
+        }
+      ],
+      "stable_phase_multiplier": 624,
+      "private_preparation_calls": 23,
+      "branch_failure_probabilities": [
+        "0.0819095350923870495565625079376",
+        "0.185529133452201050917900916849"
+      ],
+      "branch_good_coefficients": [
+        [
+          "-0.208977314989582669590934365862",
+          "0.93510370907582101030586807428"
+        ],
+        [
+          "-0.137221728805084704302000020969",
+          "0.891987143232200817023795111561"
+        ]
+      ],
+      "all_input_corner_error_frobenius": 2.5219370326082925e-13,
+      "native_stream_sha256": "e0b9d8ff058009646140e3e4e23a9068cd6d07f57713122e559e5900e043edec"
+    },
+    {
+      "round": 2,
+      "actual_raw_counts": {
+        "G": 7595,
+        "CX": 45620,
+        "SourceI": 78110,
+        "N": 131325
+      },
+      "amplifier_levels": [
+        {
+          "G": 9,
+          "CX": 29,
+          "SourceI": 22,
+          "N": 60
+        },
+        {
+          "G": 1905,
+          "CX": 2029,
+          "SourceI": 1406,
+          "N": 5340
+        },
+        {
+          "G": 7593,
+          "CX": 17419,
+          "SourceI": 15910,
+          "N": 40922
+        }
+      ],
+      "stable_phase_multiplier": 624,
+      "private_preparation_calls": 23,
+      "branch_failure_probabilities": [
+        "0.000638606562538303639486015781249",
+        "0.0067822087267092150872070892001"
+      ],
+      "branch_good_coefficients": [
+        [
+          "-0.784804195128264360227550018146",
+          "-0.619228365586185703919832339244"
+        ],
+        [
+          "-0.863111327826968315897608303652",
+          "-0.49825357705696244623547559282"
+        ]
+      ],
+      "all_input_corner_error_frobenius": 8.615380459299486e-13,
+      "native_stream_sha256": "86917c6fb782c2005b22a3530851a03ed64a6af6d3c03ebe280ec95fe066a8a8"
+    }
+  ],
+  "phase_correction_and_final_bright_target_in_this_replay": false,
+  "full_geometric_H1_replayed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
