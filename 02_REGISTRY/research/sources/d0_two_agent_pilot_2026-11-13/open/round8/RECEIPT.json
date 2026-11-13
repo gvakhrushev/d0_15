@@ -1,0 +1,28 @@
+{
+  "status": "PASS_SOURCE_AUDIT",
+  "created_utc": "2026-11-13T14:29:01.734668+00:00",
+  "checked": [
+    "certificate_has_one_assert_for_truncated_cycle_series",
+    "derivative_pass_token_emitted_without_derivative_assert",
+    "lean_cycle_expansion_and_source_flags_are_premises",
+    "preserved_7fu_groupoid_boundary"
+  ],
+  "preserved_book_ii_git_blob": "19701354c459014fb88e33aace667e0904409f17",
+  "preserved_book_ii_sha256": "42224fdbfb6e474e2025d38da45d01bf1c9e17132c182e82d8875868df62c9b0",
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round8/ROUND8_CYCLE_OWNER_AUDIT_RU.md": "0ff4f9a3927df158d88e7c80e7851bdfc3f8def4f99a7799a6eb74e9d8c4710e",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+    "03_FORMALIZATION/D0/Cosmology/FeedbackPartitionFunction.lean": "8408c562f0dade7a4732ca4e99054e4f1c6019fb7574751010a564464a425c55",
+    "03_FORMALIZATION/D0/Cosmology/FiniteFeedbackEquationOfState.lean": "132fae159623a5a23f889cd8378a310e5c79e9cdbd51e765b4ea179b18e9815d",
+    "04_CERTIFICATES/vp_feedback_partition_function.py": "c9a643502a11355b24ca1e7f392aec983fc2cbc7ba4db901217a5e54118544f9",
+    "04_CERTIFICATES/vp_finite_feedback_equation_of_state.py": "b00b68f5063cb97ea075c816e021fdd68dfa556f675463b366d564217aa3987a",
+    "05_EXPERIMENTS/VacuumFeedback/feedback_partition_function_summary.json": "f1983e2bd99f1e8da34cef7ed093c712bd30631cc9d28177e6faf837884feda3",
+    "02_REGISTRY/claims.csv": "9c7a38e9016061dd76ac999f1039686c2c1d08a7e30355c70a635a1433e9358f",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/correction_7fu.txt": "c7fb0837f4e7245de8a1e4a6bcb4146529eddc1277bac778f3cbfbf3a032db76",
+    "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/causal_archive/FORWARD_ARCHIVE_BOOK_DETERMINANT.md": "3c75cc1c7c9928d2209fe58a930105412860aa6c2503801dadcd1ea7b10a5e70"
+  },
+  "independent_later_analytical_theorems_refuted": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}
