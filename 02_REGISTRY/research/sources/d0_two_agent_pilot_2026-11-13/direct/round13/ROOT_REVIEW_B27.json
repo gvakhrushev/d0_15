@@ -1,0 +1,35 @@
+{
+  "status": "PASS_B27_ISOLATED_LOGICAL_AND_NATIVE_REPLAY",
+  "input_sha256": {
+    "SOURCE_LEAF_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "B27_output_sha256": {
+    "ACTUAL_PAIR_INVENTORY.jsonl": "8865358673fd5b63072ae15eab90b31a2124d784c7fe760d5b00a40ce22c353c",
+    "CAR_EXAMPLE_GATE_LIST.json": "44be8c3d1b8e926b30aea48a301d61cb5de02d94583691b4cb15a35e18abfd84",
+    "CHOI_EXAMPLE_GATE_LIST.json": "b6ff73ad84195a84c4de4610c547b7226759628e2438ebdb2cb32c943ea57666",
+    "CONTROLLED_INVOLUTION_RU.md": "0907fb30182add5d41b5b9ca5dce5d695a361b5b0edd342aca5a52aabc3bbfe2",
+    "LOGICAL_CHECK.json": "c46b048d47691dfb2369ceffaf468411bd71aa9d1aa898bdcba35cdbe376bf96",
+    "NATIVE_Z_CHECK.json": "6b8c500c433177e2191976f7ecce5a261024946a86ea8d31e57df1626ef8c4b6",
+    "PAIR_INVENTORY_SUMMARY.json": "e3285ace25c2ef982ca8a1d44c93f544cab1b9c70f01232a6ebc78e0fc75a191",
+    "build_leaf_inventory.py": "570b8f59f4a7e6e917981721d908d5b285f0f3cddc28648054c2875241324f78",
+    "check_controlled_involution.py": "77320203c306b634ddd88301444c369904252623ca3ad0898fc78fc6c155b9b5",
+    "check_native_Z.py": "c25c50851f1cad188bf5654817efde58663ea87dfe852013cac69878db717c42",
+    "controlled_involution.py": "e3fc7037664cf4b2b644b024ebaa699e680ade79453a773d285eaa612aef9af2",
+    "emit_pair.py": "6f67001013d7493758e52e8bdc2749d8bd2b99b928fef0bfbed4398965d5cf4d",
+    "independent_interpreter.py": "73f86bba5743cf90faa947d82c3600cbe62e2b55d6b8757ffda3ab7be2c8339f"
+  },
+  "B27_receipt_sha256": "a425f979de33c140307d2ab6df63493d2714c346a5a7c7fdbf09210f1e3bcb2f",
+  "byte_identical_regenerated_outputs": {
+    "ACTUAL_PAIR_INVENTORY.jsonl": "8865358673fd5b63072ae15eab90b31a2124d784c7fe760d5b00a40ce22c353c",
+    "CHOI_EXAMPLE_GATE_LIST.json": "b6ff73ad84195a84c4de4610c547b7226759628e2438ebdb2cb32c943ea57666",
+    "CAR_EXAMPLE_GATE_LIST.json": "44be8c3d1b8e926b30aea48a301d61cb5de02d94583691b4cb15a35e18abfd84",
+    "PAIR_INVENTORY_SUMMARY.json": "e3285ace25c2ef982ca8a1d44c93f544cab1b9c70f01232a6ebc78e0fc75a191",
+    "LOGICAL_CHECK.json": "c46b048d47691dfb2369ceffaf468411bd71aa9d1aa898bdcba35cdbe376bf96",
+    "NATIVE_Z_CHECK.json": "6b8c500c433177e2191976f7ecce5a261024946a86ea8d31e57df1626ef8c4b6"
+  },
+  "native_scope": "Exact routed Z and G inverse, with accessible declared port and untouched unknown Spin/port at boundaries; whole logical X/CCX/CZ words not native compiled.",
+  "full_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

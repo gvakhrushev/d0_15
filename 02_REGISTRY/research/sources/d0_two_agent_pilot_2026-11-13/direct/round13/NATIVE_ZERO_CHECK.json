@@ -1,0 +1,49 @@
+{
+  "status": "EXPLICIT_NATIVE_G_INVERSE_WORDS_FOR_SELECTOR_ZERO_TARGETS",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "B27_all_column_identity_sha256": "6b8c500c433177e2191976f7ecce5a261024946a86ea8d31e57df1626ef8c4b6",
+  "output_sha256": "9c78af4284138c244476e4b2b16069d01289262d16127c2cc49e650dbdb6ebe5",
+  "circuits": {
+    "INTERNAL_SELECTOR_CIRCUIT.json": {
+      "zero_targets": 1389,
+      "wire_count_with_port_spin_protected": 2772,
+      "gate_inventory": {
+        "CX": 8334,
+        "SourceI": 5556,
+        "G": 1389
+      },
+      "gate_stages": 15279,
+      "native_syntax_validated": true
+    },
+    "TOP_SOURCE_SELECTOR_CIRCUIT.json": {
+      "zero_targets": 1595,
+      "wire_count_with_port_spin_protected": 3189,
+      "gate_inventory": {
+        "CX": 9570,
+        "SourceI": 6380,
+        "G": 1595
+      },
+      "gate_stages": 17545,
+      "native_syntax_validated": true
+    },
+    "TEN_SIGN_REPORT_CIRCUIT.json": {
+      "zero_targets": 118,
+      "wire_count_with_port_spin_protected": 233,
+      "gate_inventory": {
+        "CX": 708,
+        "SourceI": 472,
+        "G": 118
+      },
+      "gate_stages": 1298,
+      "native_syntax_validated": true
+    }
+  },
+  "proof_method": "Composition of verified full 16-column B27 macro with explicit disjoint q addresses; every macro restores arbitrary shared port and Spin.",
+  "large_full_matrix_materialized": false,
+  "native_word_component_emitted": true,
+  "RAW_birth_stage_ledger_emitted": false,
+  "full_selector_native_word": false,
+  "full_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

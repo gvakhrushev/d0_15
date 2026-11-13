@@ -1,0 +1,50 @@
+{
+  "status": "PASS_B28_PINNED_INPUT_OUTPUT_AND_PROOF_REVIEW",
+  "B28_commit": "cf61cfd82dc1dfe5756f3ff003d45a6955cc1fd6",
+  "B28_receipt_sha256": "033ad00eef7bf020ae5c7f759b62b83131be769be435282e5cf9206c81e043ff",
+  "verified_core_inputs": {
+    "round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "round13/build_selector_circuits.py": "cb878616dd7e0359d6013c6a379bfe1a9c48d46795c1ee326661dceb28832fd9",
+    "round13/check_selector_circuits.py": "3f5e5784b7a0281b7a5810a2f096b76825b6b9f039226aa3fd6bd49f0a509adb",
+    "round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "round13/FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "round13/CIRCUIT_CHECK.json": "a887b15839b920c137126a0f705464ccc6dfd3f57326bf4ce5357c3394e21463",
+    "round13/REVERSIBLE_SELECTORS_RU.md": "ee4789538fd8f8cd1e6632659d22d2dede7825a81d408184a9a979c728381880"
+  },
+  "verified_native_addenda": {
+    "build_native_zero_preparations.py": "f19bed648998ed5a6971957a77e62869089db46b6e1a78d3cc78b200238ffaaa",
+    "NATIVE_ZERO_PREPARATIONS.json": "9c78af4284138c244476e4b2b16069d01289262d16127c2cc49e650dbdb6ebe5",
+    "NATIVE_ZERO_CHECK.json": "0f71d457f0ed06b7f5e16845d53f6031eb71b3e1ebde3a2f1d9cbe93952c7dc2",
+    "NATIVE_COMPONENT_INTEGRATION_RU.md": "c5cdc1b3df44cea88eede919e822d13bef151211f4e076a2742a724d6b6c8927",
+    "compile_native_cz.py": "36dc0f1b487a6a802d9175b1ed17c75ecffcbb88858f3b5014ad7fa681882d48",
+    "NATIVE_CZ_CHECK.json": "94cd46f1f3da17ce0943870a0390f35f86fa57eed5966aa4197d40d047022f36",
+    "NATIVE_CONTROLLED_PHASE_RU.md": "b740b1e634614b62467c1d25314f9eeae48f20782a680b364d63daacfd12a7e1"
+  },
+  "verified_B28_outputs": {
+    "FIRST_SUCCESS_COUNT_REVIEW.json": "82730b4c39e3a2622751a5296f7dcb5659fb7892ae0cffa5824834243b98618c",
+    "INDEPENDENT_CHECK.json": "7a394968f6c1ffa7ea11a45ebeb00ae7729760d2444e3c4e5229edbc41965bd6",
+    "ISOLATED_REPLAY.json": "c2d29b208b7427c2a38be9f15959a893b6a4e1a1d4e5c37814e2aa254723cbed",
+    "NATIVE_CZ_REVIEW.json": "7c27f4b3eac33364cf5dd4cfde0b387f9e1a7cf67e8aa65987b827130199d229",
+    "NATIVE_ZERO_REVIEW.json": "d136f187519b80c9607ce44cc944a4c5de7bd575911782f2b8dc475efedd4bc3",
+    "REVIEW_A13_RU.md": "7a27f7b835ddfa6a897dd4989888403c9841238489dc2a2de3496349a7786a7d",
+    "STREAM_AUDIT.json": "6d92d3705274efccaa70869f577db359e8fd9eae5c124d521048ee1c0dbdb876",
+    "check_a13_independent.py": "f4cbe6091d5ba932c00472c2805b32fc4ac8d418f4edb2ed954935ca18e92724",
+    "check_firstsuccess_totals.py": "0074128fc940b2bd4477d3a17b5410e86ddac27a064ab2572bd53603419005ea",
+    "check_native_zero_content.py": "486ba1f0f5e71c05978f13980c33e362ed2fdf987b8adf21ab9c0d7f989b7a06",
+    "replay_a13_isolated.py": "6db7c6d4be5d855aadce7e4313939e91892a9f12fe8d566f6c6a072a0d0f5c72",
+    "replay_native_cz.py": "00c327feb3f68f680d5eebc20702528a206f17a39d9c4b264fd7bc288266b8fb",
+    "stream_audit.py": "ed520baf304145ab80d5a3775792be4d535e2def0b5d62b7efd95dc418d70ec0"
+  },
+  "root_duplicate_B28_checker_replay": false,
+  "scope": "Receipt bytes and structural proof reviewed; root B27 actual replay in ROOT_REVIEW_B27.json; B28 independent full grammar scan not repeated without changed inputs.",
+  "full_native_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
