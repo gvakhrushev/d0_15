@@ -1,0 +1,24 @@
+{
+  "status": "PASS_EXACT_RATIONAL_GEOMETRIC_SLACK_NOT_FULL_H1",
+  "candidate_chart": "L4, periodic u/v, fixed transverse collar, full 16+24+2 at 64 interior sites",
+  "m": 2688,
+  "sampling_halfwidth": "2^-30",
+  "chart_map": "coframe and material additive; proper links exp(sum theta_ab eta^-1(E_ab-E_ba)) U0; original PF fixed",
+  "cube": "Y_b=chi^-1(chi(Y0)+s(b-p^2)); each coordinate magnitude <=s",
+  "coframe_creator_norm_strict_upper": "12985565259/13421772800",
+  "coframe_min_singular_strict_lower": "6442450901/11542724608",
+  "material_slack_strict_lower": "1719462797067266540279/4503599627370496000000",
+  "link_exterior_half_norm_strict_upper": "1677721600/2818572213",
+  "uses_original_owner_bounds": [
+    "309/500<p<619/1000",
+    "pi^2<10",
+    "|lambda_-|<24",
+    "rho_max<2"
+  ],
+  "fixed_boundary_or_density_must_match_actual_H1_descriptor": true,
+  "site_and_sign_operators_compiled": false,
+  "complete_H1_mark_seal_ledger_emitted": false,
+  "all_input_compiler_or_physical_C_proved": false,
+  "coords_sha256": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+  "GR_closed": false
+}
