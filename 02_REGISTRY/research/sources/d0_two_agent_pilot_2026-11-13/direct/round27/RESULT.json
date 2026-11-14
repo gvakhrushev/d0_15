@@ -1,0 +1,16 @@
+{
+  "status": "REVIEWED_ORIGINAL_IDEAL_GEOMETRIC_SOURCE_REPORT_LAW",
+  "phase": "supporting_physical_original_H1_application",
+  "A25_commit": "f58aaba299cc9ffcf23c8db7da6b37c8ef029336",
+  "A26_commit": "2afc3a4792598600a45bb45a4f8913b7a419a5e0",
+  "removed_premise": "Original ideal seven-bank moment/report law on the concrete A25 prepared product sources",
+  "L": 4,
+  "h": "1/4",
+  "SAM_dimension_bits": 2688,
+  "ideal_scalar_lower_gt": "67/100",
+  "actual_scalar_lower_gt": "2/3",
+  "uniform_mesh_refinement_proved": false,
+  "full_giant_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

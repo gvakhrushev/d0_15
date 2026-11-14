@@ -1,0 +1,32 @@
+{
+  "status": "CONSUMED_INDEPENDENT_ORIGINAL_IDEAL_SOURCE_REPORT_LAW",
+  "B54_commit": "4bad805d8acbd619d541135502692833d366f70d",
+  "pinned_files_sha256": {
+    "A27_PRODUCT_COMPRESSION_INDEPENDENT_CHECK.json": "0b0e545e64c171a8c9d5ec6ac856845fbe336e43853b58132eac56db0bebafc5",
+    "B54_PRODUCT_SOURCE_EXACT_RU.md": "3cf8efc95f1107d943dbe9b2e1846564df21781d0851c6a9b8e137b09cc498af",
+    "FLAT_HF_ALL_COFRAMES_CHECK.json": "e1ccf654f3ab2a2423c1ac5f031fabf61adc8ebc813d28c4b8d8ec32ee3c3174",
+    "IDEAL_SOURCE_LEAF_MOMENTS_EXACT.json": "154f00f00d788f325c5163a288a5530e7eed5ce4db3afb56e6cf1f3cbf9db952",
+    "REFERENCE_GEOMETRY_EXACT_CHECK.json": "902a61245de5ec5c99df1e954974e14a9198b6f33379c65c39a70436609968b9",
+    "REPORT_BETA_EXACT_CHECK.json": "ac139ff32e1aa013aaecc6680b06fc0e89955ddb85ac598d6c10bb94f89dbbf7",
+    "audit_product_compression.py": "d32e194df17c8e3f710a80ae88636ab08ac1af1d6019ac01da6c7453c18ee315",
+    "prove_flat_geometric_source.py": "5467f2c78ec193d125d99e0bf885215e88049b776c3d0a23b5e19a09ebbea68e",
+    "prove_leaf_moments_exact.py": "2cf27ce2a623a857b25a1cf8deb4fd0c0c40dc10bc8e3070d0a20cc85e15e10d",
+    "prove_reference_sources_exact.py": "dededd0b5627b5df7062be233970c0d9780615808f97b638da65c83490cd32e6",
+    "prove_report_beta_exact.py": "934ca22c39d3a7073a2fa21ae1636f4168dac0bd7a482b27bc0329ccf6028340"
+  },
+  "absolute_input_pins_rechecked_unchanged": 23,
+  "post_review_document_only_changes": [],
+  "source_slots": 1372,
+  "original_leaf_bindings_exact": 72192,
+  "A12_report_rows_exact": 2048,
+  "report_polynomial_nonzero_coefficients": 27,
+  "Hf_reference_nodes_exact": 20006,
+  "Hf_flat_all_coframes_by_exact_degree2_polarization": true,
+  "original_ideal_seven_bank_report_law_on_declared_RAW_checkpoint": true,
+  "ideal_scalar_lower_gt": "67/100",
+  "actual_scalar_lower_gt": "2/3",
+  "root_reexecuted_independent_scripts": false,
+  "original_marked_maps_and_physical_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

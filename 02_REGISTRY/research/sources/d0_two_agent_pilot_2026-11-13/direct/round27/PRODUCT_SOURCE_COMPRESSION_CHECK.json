@@ -1,0 +1,350 @@
+{
+  "status": "EXACT_SOURCE_SLOT_AND_SC6_PRODUCT_COMPRESSION_CHECK",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/product_source_compression.py": "76bdc57ecf7431693728758d243ad0565167552bd601bdc77a6622a2f7506299",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round26/FULL_READY_GAIN_CHECK.json": "968f4068cf9d2c09763ea1053b8177b02b158ddf6f9b68de5b0fba0505bfd5ca",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_ASSEMBLY_RU.md": "031c0fe593db8a1e71465741d17f67d4b9ee40111b69130c734d65f71cce725a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/FULL_SOURCE_OPERATOR_RU.md": "d61023e7897ee55574cb63f6a7012617395c3e08db8978ef9f9fa74c8794439b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/COPY_SLOTS.jsonl": "77f597a94f69c593e097f2318d295c1fc1f6e05282052436a8fe9609ecd9724c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/TARGETS_RU.md": "7b20b59f6ea3a79e6157fc59cb8c8c264b0533a211557b864d14f8fc07728f94",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round33/OPERATOR_COMPRESSION_RU.md": "7626010624a6e8ec4ce26fc13a7826abb3547ea1cf3a77bb453e53c9b89174a1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round49/SC6_ACTIVE_PORT_OWNER_CHECK.json": "410348a8dcd1a8ad7e18c8cde0b7e3562d0ef6aea0e1c545159d69562c930d17"
+  },
+  "source_slots_bound_to_original_B25": 1372,
+  "explicit_type_translation": {
+    "Choi": "Choi",
+    "material": "CAR"
+  },
+  "per_bank_walk_copies": {
+    "y+/S1": {
+      "Choi": 82
+    },
+    "y+/S2": {
+      "Choi": 82
+    },
+    "y+/T1": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y+/T2": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y+/T3": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y+/T4": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y+/T5": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y+/T6": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y+/T7": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y+/T8": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y-/S1": {
+      "Choi": 82
+    },
+    "y-/S2": {
+      "Choi": 82
+    },
+    "y-/T1": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y-/T2": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y-/T3": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y-/T4": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y-/T5": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y-/T6": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y-/T7": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "y-/T8": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "f/S1": {
+      "Choi": 82
+    },
+    "f/S2": {
+      "Choi": 82
+    },
+    "f/T1": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "f/T2": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "f/T3": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "f/T4": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "f/T5": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "f/T6": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "f/T7": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "f/T8": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "0/S1": {
+      "Choi": 82
+    },
+    "0/S2": {
+      "Choi": 82
+    },
+    "0/T1": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "0/T2": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "0/T3": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "0/T4": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "0/T5": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "0/T6": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "0/T7": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "0/T8": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x+/S1": {
+      "Choi": 82
+    },
+    "x+/S2": {
+      "Choi": 82
+    },
+    "x+/T1": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x+/T2": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x+/T3": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x+/T4": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x+/T5": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x+/T6": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x+/T7": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x+/T8": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x-/S1": {
+      "Choi": 82
+    },
+    "x-/S2": {
+      "Choi": 82
+    },
+    "x-/T1": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x-/T2": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x-/T3": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x-/T4": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x-/T5": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x-/T6": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x-/T7": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "x-/T8": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "q/S1": {
+      "Choi": 82
+    },
+    "q/S2": {
+      "Choi": 82
+    },
+    "q/T1": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "q/T2": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "q/T3": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "q/T4": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "q/T5": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "q/T6": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "q/T7": {
+      "Choi": 2,
+      "CAR": 2
+    },
+    "q/T8": {
+      "Choi": 2,
+      "CAR": 2
+    }
+  },
+  "SC6_terms_consumed_from_actual_word_audit": [
+    [
+      "00011",
+      1,
+      0,
+      2
+    ],
+    [
+      "00101",
+      1,
+      1,
+      3
+    ],
+    [
+      "00110",
+      -1,
+      0,
+      3
+    ],
+    [
+      "01001",
+      -1,
+      1,
+      2
+    ],
+    [
+      "01010",
+      1,
+      4,
+      6
+    ],
+    [
+      "01100",
+      1,
+      5,
+      3
+    ],
+    [
+      "10001",
+      -1,
+      4,
+      3
+    ],
+    [
+      "10010",
+      -1,
+      5,
+      6
+    ]
+  ],
+  "SC6_all_READY_REPORT_patterns_checked": 16384,
+  "click_over_kappa_p7": "4+(P_yplus-P_yminus)*(P_f-P_0)+(P_xplus-P_xminus)*(P_q-P_0)",
+  "condition_for_multilinear_substitution": "conditional on SAM=b and common SITE=x, seven ideal report input/state/resources are products across private report arenas",
+  "Choi_original_active_addresses": 2049,
+  "Choi_original_anchor_N": 65568,
+  "Fourier_row_mass": "1/256",
+  "PF_covariance_counterexample": "1/15 for generic algebraic probability variables, not a physical field witness",
+  "proof_of_full_original_geometric_moments_is_in_companion_document_and_consumed_owners": true,
+  "full_giant_native_source_word_executed": false,
+  "original_marked_map_or_physical_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
