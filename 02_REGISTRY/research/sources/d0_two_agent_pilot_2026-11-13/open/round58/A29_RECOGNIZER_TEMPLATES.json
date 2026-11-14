@@ -1,0 +1,40 @@
+{
+  "status": "PASS_ACTUAL_A29_CZ_RECOGNIZER_COPY_TEMPLATES",
+  "templates": {
+    "(82, 0)": {
+      "copy_calls": 82,
+      "kind_counts": {
+        "1": 82
+      },
+      "tested_depths": [
+        0,
+        1
+      ]
+    },
+    "(2, 2)": {
+      "copy_calls": 4,
+      "kind_counts": {
+        "1": 2,
+        "2": 2
+      },
+      "tested_depths": [
+        0,
+        1
+      ]
+    }
+  },
+  "each_real_copy_select_CZ_detected_exactly_once_at_depth0_1": true,
+  "actual_CZ_depth0_through3_and_both_operand_orders": true,
+  "all_result_leaves_G_or_CX_only": true,
+  "full_W_expanded": false,
+  "additional_no_false_positives_outside_slots": "proved by even-run language and odd internal CZ run; see report",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/compile_native_cz.py": "36dc0f1b487a6a802d9175b1ed17c75ecffcbb88858f3b5014ad7fa681882d48",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

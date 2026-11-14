@@ -1,0 +1,24 @@
+{
+  "status": "PASS_A29_TRANSDUCER_ACTUAL_FAMILY_TEMPLATES",
+  "checks": {
+    "SC6_depth0_paired_SI": 4096,
+    "SC6_depth1_paired_SI": 24064,
+    "SITE_actual_first_block_depth0_1": true,
+    "SIGMA_actual_first_block_depth0_1": true,
+    "PORT_ZERO_actual_first_block_depth0_1": true,
+    "REPORT_actual_fair_bank_depth0_1": true,
+    "REPORT_READY_compute_and_core_depth0_1": true,
+    "CAR_actual_fixed_STAR_reflection_depth0_1": true,
+    "Choi_actual_prefix_and_184_adapter_fixed_blocks": true
+  },
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/global_h1.py": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8"
+  },
+  "complete_stream_executed": false,
+  "all_families_coverage_depends_on_structural_induction": true,
+  "GR_closed": false
+}
