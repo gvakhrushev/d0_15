@@ -1,0 +1,31 @@
+{
+  "status": "PASS_B25_CENTRE_REFLECTION_DIAGNOSTICS",
+  "centre_banks": [
+    "y+",
+    "y-",
+    "f",
+    "0",
+    "x+",
+    "x-",
+    "q"
+  ],
+  "choi_full_dimension": 4194304,
+  "active_choi_amplitudes": 2098176,
+  "A_active": 2049,
+  "anchor_c": "1/sqrt(32*2049)",
+  "centre_choi_full_random_columns": 7,
+  "max_centre_choi_reflection_error_l2": 1.6544099005535077e-17,
+  "max_centre_choi_norm_error": 3.3639757646142243e-14,
+  "CAR_centre_bank_site_maps": 1792,
+  "max_CAR_reflection_error": 2.220446049250313e-16,
+  "four_SAM_vertex_q_CAR_site_maps": 1024,
+  "centre_distinct_from_SAM_vertex": true,
+  "raw_v_mapped_to_zero_by_actual_G_transpose": true,
+  "exactness_note": "floating point diagnostics only; full all-column and all SAM conclusions follow from algebra, not this sample",
+  "input_sha256": {
+    "CENTRE_JULIA32_TARGETS.npz": "328ed1c94a9d05772ccab6e98e2811d0160369dc7373842612f7263b6ac632b6",
+    "CENTRE_FIELDS.npz": "e0d1db31ed54554f98f0d158f3593ae7fe91186cfd7acdaefbfe84bca1fd6cbd",
+    "targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418"
+  },
+  "GR_closed": false
+}
