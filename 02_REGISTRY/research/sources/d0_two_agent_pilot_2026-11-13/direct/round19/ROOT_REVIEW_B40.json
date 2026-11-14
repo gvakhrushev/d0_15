@@ -1,0 +1,33 @@
+{
+  "status": "PASS_ROOT_CONSUMPTION_OF_INDEPENDENT_B40_AUDITS",
+  "B40_final_commit": "c4c464828ea06a2be901ab4b35bb75a6dd7281a5",
+  "B40_files_sha256": {
+    "A19_PREFIX_INDEPENDENT_AUDIT_RU.md": "f99a687aff45efdf6f0a75889dc12b2c3648314d58cc2242feb67acc34c308ae",
+    "COFRAME_INDEPENDENT_AUDIT_RU.md": "0f88b56d330dd09bd956796cfccbd0ad6a2b40658cc84d20284cecde1b8e0243",
+    "INDEPENDENT_COFRAME_CHECK.json": "9f191c217ee3e0e22cbe16cef9d10e03f303f8b987c09a748b3443d00b4dcd0a",
+    "INDEPENDENT_INTERVAL_CHECK.json": "9ed85f91bb87d96d21d772f7a04a6184309f9dfb71f0fdd81a1f9a3647f11fda",
+    "INDEPENDENT_NATIVE_CHECK.json": "31e374a7f263fb9ff76c3e6734782ab771ede6432ef64f7e6f6b12e22fdc7946",
+    "check_coframe_independent.py": "83915fdf9e020b1997f99b5cdf7f773f09102f99405faf08eb86223e5f9053c8",
+    "check_intervals.py": "4efeaa27025538619f8ac7e81c2375b62b17b10a7d67da92c20eed62ba860792",
+    "check_prefix_independent.py": "9c0ada0467fdc64693de32a41fe94c3c3ef1436b2420d17781583eb38b3f2e92"
+  },
+  "reports": {
+    "INDEPENDENT_INTERVAL_CHECK.json": {
+      "status": "PASS_INDEPENDENT_INTEGER_INTERVALS",
+      "sha256": "9ed85f91bb87d96d21d772f7a04a6184309f9dfb71f0fdd81a1f9a3647f11fda"
+    },
+    "INDEPENDENT_NATIVE_CHECK.json": {
+      "status": "PASS_INDEPENDENT_NATIVE_PREFIX_AUDIT",
+      "sha256": "31e374a7f263fb9ff76c3e6734782ab771ede6432ef64f7e6f6b12e22fdc7946"
+    },
+    "INDEPENDENT_COFRAME_CHECK.json": {
+      "status": "PASS_INDEPENDENT_COFRAME_SIGN_ORDER_AND_JULIA",
+      "sha256": "9f191c217ee3e0e22cbe16cef9d10e03f303f8b987c09a748b3443d00b4dcd0a"
+    }
+  },
+  "input_versions_still_identical": true,
+  "root_assessment": "Walsh block equality and full operator prefix bound accepted; exact coframe factorization accepted; source-specific interval coframe angles and full SELECT remain open.",
+  "full_Omega_preparation_compiled": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
