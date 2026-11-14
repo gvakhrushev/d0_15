@@ -1,0 +1,134 @@
+{
+  "status": "EXPLICIT_APPEND_ORDER_PHYSICAL_WIRE_BINDING",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round28/physical_wire_adapter.py": "e8f93e23e207ff2c78be06670074e372e74ec0fa72d64a4337accb6401b9b555",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round28/fresh_aux_birth_clock.py": "be46ea21fef635f1cf192b8169f1c3a3b0fb25283736604973dc9aa0e2b4675f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round28/FRESH_AUX_BIRTH_CLOCK_PLAN.json": "87c95826bbbc8bdf2c7c4de3942899b2af7e0a32d0921ca8a4a970b14cde268f"
+  },
+  "checked_initial_raw_prefix_sizes": [
+    {
+      "initial_raw_bits": 3,
+      "physical_birth_blocks": [
+        {
+          "role": "active_port_WORK",
+          "start": 3,
+          "stop": 4
+        },
+        {
+          "role": "fresh_aux_WORK",
+          "start": 4,
+          "stop": 5
+        },
+        {
+          "role": "SAM",
+          "start": 5,
+          "stop": 2693
+        },
+        {
+          "role": "shared_SITE_WORK",
+          "start": 2693,
+          "stop": 2701
+        },
+        {
+          "role": "SC6_selector_WORK",
+          "start": 2701,
+          "stop": 2706
+        },
+        {
+          "role": "report_source_private_WORK",
+          "start": 2706,
+          "stop": 10407050784
+        }
+      ],
+      "final_qubits": 10407050784
+    },
+    {
+      "initial_raw_bits": 4,
+      "physical_birth_blocks": [
+        {
+          "role": "active_port_WORK",
+          "start": 4,
+          "stop": 5
+        },
+        {
+          "role": "fresh_aux_WORK",
+          "start": 5,
+          "stop": 6
+        },
+        {
+          "role": "SAM",
+          "start": 6,
+          "stop": 2694
+        },
+        {
+          "role": "shared_SITE_WORK",
+          "start": 2694,
+          "stop": 2702
+        },
+        {
+          "role": "SC6_selector_WORK",
+          "start": 2702,
+          "stop": 2707
+        },
+        {
+          "role": "report_source_private_WORK",
+          "start": 2707,
+          "stop": 10407050785
+        }
+      ],
+      "final_qubits": 10407050785
+    },
+    {
+      "initial_raw_bits": 17,
+      "physical_birth_blocks": [
+        {
+          "role": "active_port_WORK",
+          "start": 17,
+          "stop": 18
+        },
+        {
+          "role": "fresh_aux_WORK",
+          "start": 18,
+          "stop": 19
+        },
+        {
+          "role": "SAM",
+          "start": 19,
+          "stop": 2707
+        },
+        {
+          "role": "shared_SITE_WORK",
+          "start": 2707,
+          "stop": 2715
+        },
+        {
+          "role": "SC6_selector_WORK",
+          "start": 2715,
+          "stop": 2720
+        },
+        {
+          "role": "report_source_private_WORK",
+          "start": 2720,
+          "stop": 10407050798
+        }
+      ],
+      "final_qubits": 10407050798
+    }
+  ],
+  "all_new_physical_wires_are_next_raw_coordinates": true,
+  "additional_old_coordinates_are_unaddressed": true,
+  "logical_A25_word_unchanged": true,
+  "physical_gate_addresses_are_explicitly_relabelled": true,
+  "no_physical_SWAP_or_price_equivalence_inferred": true,
+  "last_actual_g_for_three_old_bits": {
+    "op": "CX",
+    "wires": [
+      2693,
+      3
+    ]
+  },
+  "initial_source_spin_frame_0_1_requires_actual_profile_binding": true,
+  "old_P0_and_history_not_chosen": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
