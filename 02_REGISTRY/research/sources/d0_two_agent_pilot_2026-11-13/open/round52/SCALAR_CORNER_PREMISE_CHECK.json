@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EXACT_J_CORNER_AND_NECESSARY_PREMISES",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round48/AUX_MACRO_COMMUTATION_CHECK.json": "f7ac7e158e0701b620c8753a3e0d7ede977a7f205713a4ecbd6418c8aec41afa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round49/SELECT_AUX_ALL_SECTORS_CHECK.json": "247e308763814e1bcea71dab7d4e1ad0a40fd51b0fefbfb3934683fe1ba47bfd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round49/REPORT_SELECT_AUX_NAMESPACE_CHECK.json": "52191741611891c8437b417c99689b42280a9b6ce0f6b8af125e222ffed77d20",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round49/SC6_ACTIVE_PORT_OWNER_CHECK.json": "410348a8dcd1a8ad7e18c8cde0b7e3562d0ef6aea0e1c545159d69562c930d17",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round50/A25_NAMESPACE_BIT_ORDER_CHECK.json": "24c00eaffab0d49ba881616ea83c24178893635de0767d75c4e011c275b2adb6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round50/A25_ACTUAL_PROVIDER_REMAP_CHECK.json": "58782ec8ead0d45c669d79d011230b7cfc99a19340ef5fbcb7d8cd6b5a0bae30",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round51/A13_A15_ALL_ROWS_REVERSE_CHECK.json": "1390ee6e4e1be05516739ada0d979ee51f569d55d4eb9712a5db9583ff3780db",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round51/A17_NATIVE_INDEPENDENT_REVERSE_CHECK.json": "d1ecf242a2200b08cbab2c0f3b00357d6901edf8fa195a1427675fb3cc72d45e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/global_h1.py": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "real_native_G_and_SourceI": true,
+  "S_real_symmetric_and_SJ_equals_JS_implies_scalar": true,
+  "commuting_orthogonal_A_entangles_WORK_aux": true,
+  "nontrivial_example_corner": "3/5 I_aux",
+  "complex_WORK_counterexample": "i*(4/5)*J_aux; Hermitian non-scalar despite J symmetry",
+  "Dother_identity_counterexample": "F=J_aux tensor J_other is real symmetric, involutory, commuting with J_aux and is realised as a report corner",
+  "shared_aux_fibre_counterexample": "a component exact only for aux=0 can fail after a previous stage moves aux; squared output difference 2",
+  "scope": "Conditional composition of the pinned provider macro proofs, disjoint namespace and declared real RAW embedding. Does not establish global physical admission or marked-history equivalence.",
+  "physical_C_or_GR_closed": false
+}

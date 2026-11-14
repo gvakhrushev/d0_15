@@ -1,0 +1,56 @@
+{
+  "status": "PASS_INDEPENDENT_GLOBAL_LITERAL_REVERSE_FIXTURE",
+  "source_sha256": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+  "actual_SC6_all_blocks_depth0_to3": [
+    {
+      "depth": 0,
+      "actual_blocks": 18176
+    },
+    {
+      "depth": 1,
+      "actual_blocks": 18176
+    },
+    {
+      "depth": 2,
+      "actual_blocks": 18176
+    },
+    {
+      "depth": 3,
+      "actual_blocks": 18176
+    }
+  ],
+  "all_1389_stage_fixture": [
+    {
+      "A_depth": 0,
+      "compact_blocks": 4162
+    },
+    {
+      "A_depth": 1,
+      "compact_blocks": 4162
+    },
+    {
+      "A_depth": 2,
+      "compact_blocks": 4162
+    },
+    {
+      "A_depth": 3,
+      "compact_blocks": 4162
+    },
+    {
+      "W_depth": 0,
+      "compact_blocks": 8325
+    },
+    {
+      "W_depth": 1,
+      "compact_blocks": 8325
+    },
+    {
+      "W_depth": 2,
+      "compact_blocks": 8325
+    }
+  ],
+  "fixture_scope": "All true slot and report addresses, true 7 SIGMA and PORT_ZERO; SITE/SOURCE/REPORT replaced by short nontrivial synthetic G/CX/SourceI DAGs, SC6 reduced only in full-word fixture. All 18176 actual SC6 blocks checked separately.",
+  "G_repeats_and_full_providers_executed": false,
+  "physical_admission_T6_or_C_proved": false,
+  "GR_closed": false
+}
