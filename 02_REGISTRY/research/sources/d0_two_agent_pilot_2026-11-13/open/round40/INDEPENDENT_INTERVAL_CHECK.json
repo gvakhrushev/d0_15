@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INDEPENDENT_INTEGER_INTERVALS",
+  "certificate_sha256": "083685c2651d9dd305abc8401309d6715ffcc08192a365014c75f22cfd2be2f5",
+  "bits": 20500,
+  "native_powers": [
+    "4k",
+    "8k",
+    "16k",
+    "2ka"
+  ],
+  "all_original_target_and_native_intervals_contain_independent_intervals": true,
+  "prefix_operator_error_lt": "2^-4091",
+  "float_used": false,
+  "GR_closed": false
+}
