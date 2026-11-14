@@ -1,0 +1,19 @@
+{
+  "status": "PASS_DYNAMIC_PAIR_COPY_SELECT_AND_HADAMARD_CONVENTION",
+  "input_sha256": {
+    "source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "DYNAMIC_PAIR_LIBRARY.json": "377246019981da1903f0a1109817c68a23a975c1b6472c672698543544c32173",
+    "SOURCE_SELECT_COMPILATION.json": "8b820b0143099b8aca2d82735c68152481ae9598b902f2d0e110031cf38c0b7b"
+  },
+  "all_clean_work_small_columns_n2_to4": 18688,
+  "actual_A11_address_signed_columns": 5136,
+  "whole_instruction_copy_phase_cases": 1600,
+  "Hadamard_sign_tests": 10,
+  "exact_pair_logical_counts": "X=8, CX=24n-4, CCX=10n-8, Z=1, CZ=1 for n>=3",
+  "literal_native_reverse_shape_checked": true,
+  "huge_native_word_executed": false,
+  "full_global_physical_assembler": false,
+  "full_source_alpha_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
