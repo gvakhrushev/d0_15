@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CONDITIONAL_ENDPOINT_PRICE_CONSTANTS",
+  "isolated_aligned_endpoint_layers_lt": "2^11647",
+  "same_last_actual_gate": "G on selected SAM, after all padding",
+  "endpoint_op_error_lt": "2^-3299",
+  "retention_corner": "p^(K/2) times old compressed return",
+  "implementation_normalized_bound": "4*z*rank(P0)*delta / ((1-z)*abs(t)*gamma_under)",
+  "crude_third_derivative_coefficient": "64/(1-z)+192*z/(1-z)^2+128*z^2/(1-z)^3",
+  "central_truncation_normalized_bound": "(t^2/16)*2^3158*[64/(1-z)+192*z/(1-z)^2+128*z^2/(1-z)^3]",
+  "requires_actual_z_nonzero_old_Gram_gamma_and_full_old_price": true,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/FINITE_SAM_ROTATION_CERTIFICATE.json": "a8b5075f6c0b6421c812c63fecac36f689a50cf3b72a822a0e7387704b471c19",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/SAME_INITIAL_ENDPOINT_SCHEDULE_CHECK.json": "4c9eda5f8081ed61a1ae9609e3d5902525fcb04c41d89092eca6303d69aa1868",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817"
+  },
+  "GR_closed": false
+}
