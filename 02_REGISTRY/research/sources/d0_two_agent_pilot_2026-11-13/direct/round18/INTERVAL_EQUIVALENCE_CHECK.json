@@ -1,0 +1,9 @@
+{
+  "status": "PASS_EXACT_SHIFT_REPLACEMENT_OF_OWNED_INTERVAL_RECURRENCE",
+  "owner_sha256": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d",
+  "new_source_sha256": "10ad9227f01d71c24c2a5db67d8f18f1c4dd81687a9264c4523af12f090f4dcc",
+  "byte_exact_endpoint_cases": 29,
+  "includes_actual_4111_bit_A14_power_at_16640_precision": true,
+  "exact_reason": "signed x//(2^bits)=x>>bits; all original roots, binary-power order and outward unit intersections unchanged",
+  "GR_closed": false
+}
