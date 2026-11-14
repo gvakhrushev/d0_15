@@ -1,0 +1,18 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "FULL_READY_AND_GAIN_RU.md": "cecf8317d3252efe797fe6415f50c0f9e79c51d11ed9dd71b13dac5930480d58",
+    "FULL_READY_GAIN_CHECK.json": "968f4068cf9d2c09763ea1053b8177b02b158ddf6f9b68de5b0fba0505bfd5ca",
+    "RESULT.json": "d686d6c14837b69a65405d3c75260c1cfba58aaf6bac949af6083ae472bc6b20",
+    "RESULT_RU.md": "697d341e0ed0f04845ee8628dac139a775485d5136fc2e3f2242abc196aa8266",
+    "ROOT_REVIEW_B53.json": "c54aa6881550c0fd486bf81dfa61cebcfb576aef5cdb1cba32845ac730b7008e",
+    "consume_full_ready.py": "757206b6aeac42d29ab339bc7dd439e3491c4d841376c7aec516392205f0d041"
+  },
+  "checks": [
+    "FULL_READY_GAIN_CHECK.json",
+    "ROOT_REVIEW_B53.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

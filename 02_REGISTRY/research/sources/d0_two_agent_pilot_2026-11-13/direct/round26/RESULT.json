@@ -1,0 +1,18 @@
+{
+  "status": "REVIEWED_DECLARED_FULL_IDEAL_READY_AND_CONDITIONAL_GAIN",
+  "phase": "supporting_original_H1_physical_application",
+  "A25_commit": "f58aaba299cc9ffcf23c8db7da6b37c8ef029336",
+  "removed_premise": "Full declared ideal reporter alpha>=1/2; no additional loader success factors in the actual assembly",
+  "alpha_lower": "0.74068",
+  "alpha_upper": "0.74069",
+  "conditional_native_error_bounds": {
+    "unit_generator": "2^-73",
+    "unit_scaled_chart": "2^-67",
+    "unit_physical_chart": "2^-37"
+  },
+  "exact_actual_alpha_hat_claimed": false,
+  "complete_T10_bound_proved": false,
+  "original_physical_Cost_Info_bound_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
