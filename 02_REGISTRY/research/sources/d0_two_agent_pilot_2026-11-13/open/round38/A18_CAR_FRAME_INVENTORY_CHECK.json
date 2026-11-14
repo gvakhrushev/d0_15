@@ -1,0 +1,47 @@
+{
+  "status": "PASS_A18_SEVEN_CAR_FRAME_INVENTORIES_AND_ORDER",
+  "plan_sha256": "38b97ff499063fb43b56007728fe6201b2caa93d62ed6e3cc23a9ce9e4119280",
+  "library_sha256": "83592b07988263b453d7ac27fa7f53d7b7d98846a3d8dfd40b3e401fe095e22b",
+  "banks": {
+    "y+": {
+      "resource_verified": true,
+      "identity_exact": false
+    },
+    "y-": {
+      "resource_verified": true,
+      "identity_exact": false
+    },
+    "f": {
+      "resource_verified": true,
+      "identity_exact": true
+    },
+    "0": {
+      "resource_verified": true,
+      "identity_exact": true
+    },
+    "x+": {
+      "resource_verified": true,
+      "identity_exact": true
+    },
+    "x-": {
+      "resource_verified": true,
+      "identity_exact": true
+    },
+    "q": {
+      "resource_verified": true,
+      "identity_exact": false
+    }
+  },
+  "all_112_copy_resource_inventory_matches": true,
+  "sampled_actual_q_K11_K13_blocks_each_direction": {
+    "K11": 2050,
+    "K13": 8194
+  },
+  "same_reflection_used_twice": true,
+  "predicate_zeros_required_and_not_prepared_here": 3,
+  "112_copy_error_lt": "2^-4084",
+  "A17_plus_conservative_CAR_coefficient": 162754653040,
+  "combined_known_error_lt": "2^-4058 conditional on compatible inputs, excluding missing graph pieces",
+  "unexpanded_full_program_executed": false,
+  "GR_closed": false
+}

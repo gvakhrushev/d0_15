@@ -1,0 +1,36 @@
+{
+  "status": "PASS_A18_INDEPENDENT_SECTOR_AND_NATIVE_GRAMMAR",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round18/material_targets.py": "7b3246e3a03c01bbb6da3b2e3b6eaedfb9abb1591bbd2912ef02946859b8db7b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round18/material_preparation.py": "24b57b6ddf50c92908ba25b64e171477f124f9fdc853422ab6b6924c6959256d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round37/build_car_ustar.py": "937a999d1e246056ee2d894777ee8c5a9bf202100d7dce4e3067d8a7ece09eb4"
+  },
+  "layout_qubits": 2711,
+  "total_sector_plane_bindings_checked": 2880,
+  "K_occurrences": {
+    "11": 2112,
+    "13": 768
+  },
+  "sampled_full_K11_and_K13_blocks": {
+    "fixed": {
+      "K": 11,
+      "pattern_nonzero": false,
+      "native_forward_blocks": 2050,
+      "syntactic_forward_leaves": 24576,
+      "actual_literal_inverse_checked": true,
+      "same_projector_and_orientation_as_B37": true
+    },
+    "free": {
+      "K": 13,
+      "pattern_nonzero": true,
+      "native_forward_blocks": 8194,
+      "syntactic_forward_leaves": 155648,
+      "actual_literal_inverse_checked": true,
+      "same_projector_and_orientation_as_B37": true
+    }
+  },
+  "sector_disjointness_checked": true,
+  "extra_control_order_differs_but_predicate_matches_B37": true,
+  "full_giant_native_word_executed": false,
+  "GR_closed": false
+}

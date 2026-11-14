@@ -1,0 +1,40 @@
+{
+  "status": "PASS_INDEPENDENT_A18_ALL_SECTOR_INVENTORY",
+  "library_sha256": "83592b07988263b453d7ac27fa7f53d7b7d98846a3d8dfd40b3e401fe095e22b",
+  "inventory_sha256": "0bc27a5ad7f3e085b7efbf0ecbe78f280effe561f952f6502eaa6ad20db18be6",
+  "vectors": 22,
+  "unique_angles": 38,
+  "all_source_hashes_verified": true,
+  "all_vector_ids_match_independent_specs": true,
+  "banks": {
+    "q": {
+      "sectors": 448,
+      "nonidentity_rotation_occurrences": 1152,
+      "omitted_structural_identities": 192,
+      "K_counts": {
+        "11": 384,
+        "13": 768
+      }
+    },
+    "y+": {
+      "sectors": 256,
+      "nonidentity_rotation_occurrences": 512,
+      "omitted_structural_identities": 256,
+      "K_counts": {
+        "11": 512
+      }
+    },
+    "y-": {
+      "sectors": 256,
+      "nonidentity_rotation_occurrences": 512,
+      "omitted_structural_identities": 256,
+      "K_counts": {
+        "11": 512
+      }
+    }
+  },
+  "all_forward_and_literal_inverse_resources_match": true,
+  "counts_include_inactive_sectors": true,
+  "full_native_execution": false,
+  "GR_closed": false
+}
