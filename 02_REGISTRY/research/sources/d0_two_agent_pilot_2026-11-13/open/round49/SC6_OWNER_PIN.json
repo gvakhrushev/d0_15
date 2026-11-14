@@ -1,0 +1,24 @@
+{
+  "status": "PASS_LITERAL_SC6_AND_H1_OWNER_INPUT_PINS",
+  "owner_path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+  "owner_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+  "anchored_phrases": [
+    "Convert the actual canonical born port v=(sqrt(p),p)=G|0> by the paid G^-1.",
+    "All five selector bits are canonical raw births",
+    "T=V G_port^-1.",
+    "The first 20\nare the same specified canonical born factors",
+    "SAM is a NEW m-bit sampling register born AFTER the old physical cut:",
+    "SITE is fresh WORK with paid loader O_chi B_SITE*",
+    "The canonical bank checkpoint fixes WORK/SITE at the writer's entry;",
+    "The actual reverse is the paid reverse of the actual\nforward word"
+  ],
+  "owner_ranges": {
+    "born_port": "112343\u2013112350",
+    "selector_raw": "112354\u2013112365",
+    "SC6_T_W_canonical_cut": "113496\u2013113535",
+    "H1_canonical_SAM_SITE_WORK": "171556\u2013171592",
+    "H1_scalar_corner_and_native_T6": "171596\u2013171690"
+  },
+  "owner_mathematical_statement_is_not_global_stage_admission_proof": true,
+  "GR_closed": false
+}

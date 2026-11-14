@@ -1,0 +1,39 @@
+{
+  "status": "PASS_SC6_FULL_ECHO_HISTORY_COSTS",
+  "forward_T": {
+    "calls": 18181,
+    "counts": {
+      "SourceI": 8196,
+      "G": 5889,
+      "CX": 4096
+    }
+  },
+  "owner_grouped_T_inverse": {
+    "calls": 18177,
+    "counts": {
+      "CX": 4096,
+      "G": 5889,
+      "SourceI": 8192
+    }
+  },
+  "leafwise_T_inverse": {
+    "calls": 58129,
+    "counts": {
+      "CX": 4096,
+      "SourceI": 48144,
+      "G": 5889
+    }
+  },
+  "central_Z": {
+    "calls": 2,
+    "counts": {
+      "SourceI": 2
+    }
+  },
+  "T_Z_Tinverse_owner_grouped_calls": 36360,
+  "T_Z_Tinverse_leafwise_calls": 76312,
+  "SC8_owner_R_T_Z_Tinverse_Rinverse": "36808 + 28 L, assuming 28 scalar loaders each cost L+16, not full H1 banks",
+  "owner_and_leafwise_histories_identical": false,
+  "global_H1_clock_and_marks_proved": false,
+  "GR_closed": false
+}
