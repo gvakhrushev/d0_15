@@ -1,0 +1,26 @@
+{
+  "status": "PASS_EXPLICIT_CONSERVATIVE_SCALAR_HESSIAN_ENVELOPE",
+  "scope": "fixed B25 interior raw chart and physical SO links; original f/q moment functions; no quantum-operator-Lambda Hessian assumption",
+  "local_f_value_bound_lt": "2^13",
+  "local_f_gradient_norm_bound_lt": "2^18",
+  "local_f_Hessian_norm_bound_lt": "2^23",
+  "local_q_value_bound_lt": "16",
+  "local_q_gradient_norm_bound_lt": "2^9",
+  "local_q_Hessian_norm_bound_lt": "2^13",
+  "I_tau_Hessian_raw_chart_norm_lt": "2^25",
+  "geometric_Euler_Lipschitz_raw_chart_lt": "2^24",
+  "A31_centre_shift_geometric_source_lt": "2^-24",
+  "chosen_current_reference_full_covector_defect_lt": "2^-3083",
+  "corrected_reference_defect_lt": "2^-3082",
+  "physical_lift_Taylor_remainder_bound_lt": "4620",
+  "qualitative": "finite rigorous but too large to certify small finite source residual",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/CHART_ENVELOPE_RESULT.json": "e244b4c50f8c64a4f21a905958486f0aadbee629f1ac6df9edd90bfd75961eee",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/TARGETS_RU.md": "7b20b59f6ea3a79e6157fc59cb8c8c264b0533a211557b864d14f8fc07728f94",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round54/B54_PRODUCT_SOURCE_EXACT_RU.md": "3cf8efc95f1107d943dbe9b2e1846564df21781d0851c6a9b8e137b09cc498af",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round61/MEAN_DECODER_BOUND.json": "b9f1b49c6ce6c545774f7f912943d8bb6c1966a6babf80651cb689d6f3d61251",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/FINITE_REFERENCE_SECANT_DEFECT.json": "7a886cdfb5ea69a04354488919534d35a2ed0625dee85381c8e4b34633235df8"
+  },
+  "GR_closed": false
+}
