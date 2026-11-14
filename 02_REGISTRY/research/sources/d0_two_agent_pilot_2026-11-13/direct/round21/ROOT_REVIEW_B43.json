@@ -1,0 +1,42 @@
+{
+  "status": "PASS_CONSUMED_INDEPENDENT_B43_A20_AUDIT",
+  "B43_commit": "0f9fd679cf571ca0e6f5e5757e236e2f834c85c9",
+  "A20_commit": "afbaef2f950da70c0fe16dbdb8091c851929bd7a",
+  "checkpoint_sha256": "5b209f46b01ba80a8ddeb4e083423e8369d646d946996261d24f6774223a3752",
+  "B43_files_sha256": {
+    "A20_INDEPENDENT_AUDIT_RU.md": "ab5bed8068d76b1fe85fe8b486a013c0daf2a215558807496748a06674286bab",
+    "verify_source_targets.py": "0a522baaf2033d4bb3a8ffcccb1bc09a2f7c00467a25f04649d12c729a91df6f",
+    "verify_all_rectangular.py": "f62ed8749e603e643e3fff2c5e7466a826f5329897e65ebb65d16968b880cdd7",
+    "audit_a20_native.py": "795fe98148bd206a26b55f8b248f9dfff9e33c7048fc2e16bd6b6a2469c75f7f",
+    "check_a20_exact_pairs.py": "40ac5b705a646320faee41b6520714331416a57cebba54da1c78d668321e9e35",
+    "A20_SOURCE_TARGET_CHECK.json": "bb0c86934b2fb0fa8f4e72519fa4e3751163dd2bf97ba9070930e11f68a80bee",
+    "A20_RECTANGULAR_POWER_CHECK.json": "87b0e00d53a97dd58be2e3937281b2936174ac4ff6507ab592b4b7cd134b10d7",
+    "A20_NATIVE_BINDING_AUDIT.json": "568b76cbc4df41bb9358b61b46230183fe464f048b1f3fce3a99f04073c22a5a",
+    "A20_EXACT_FOCK_COLUMNS.json": "f2bc3b89f2f31744b221e17fa77dde99044dd8bd1969f8bb5f1542af7ad8df5c"
+  },
+  "A20_files_still_match_final_receipt": true,
+  "checks": {
+    "A20_SOURCE_TARGET_CHECK.json": {
+      "status": "PASS_INDEPENDENT_A20_SOURCE_TARGETS",
+      "sha256": "bb0c86934b2fb0fa8f4e72519fa4e3751163dd2bf97ba9070930e11f68a80bee"
+    },
+    "A20_RECTANGULAR_POWER_CHECK.json": {
+      "status": "PASS_A20_ALL_INDEPENDENT_RECTANGULAR_POWERS",
+      "sha256": "87b0e00d53a97dd58be2e3937281b2936174ac4ff6507ab592b4b7cd134b10d7"
+    },
+    "A20_NATIVE_BINDING_AUDIT.json": {
+      "status": "PASS_INDEPENDENT_A20_BINDINGS_AND_RESOURCES",
+      "sha256": "568b76cbc4df41bb9358b61b46230183fe464f048b1f3fce3a99f04073c22a5a"
+    },
+    "A20_EXACT_FOCK_COLUMNS.json": {
+      "status": "PASS_INDEPENDENT_A20_EXACT_FOCK_COLUMNS",
+      "sha256": "f2bc3b89f2f31744b221e17fa77dde99044dd8bd1969f8bb5f1542af7ad8df5c"
+    }
+  },
+  "all556_powers_and_X_phase_independently_checked_by_rectangles": true,
+  "full_source_families_and_units_independently_rebuilt": true,
+  "B43_checks_reexecuted_by_root": false,
+  "scope": "Independent A20 uniform coframe SELECT error<2^-3259 consumed in A21 assembly. Full physical H1/Cost-Info not established.",
+  "physical_C_closed": false,
+  "GR_closed": false
+}
