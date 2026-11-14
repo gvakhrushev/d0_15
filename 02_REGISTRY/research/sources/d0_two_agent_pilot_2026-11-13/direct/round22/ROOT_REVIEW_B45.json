@@ -1,0 +1,55 @@
+{
+  "status": "PASS_ROOT_INDEPENDENT_REPLAY_B45_FULL_SITE",
+  "B45_commit": "681ba4f6f7a93e6ca57d411fdfd8a1212dc968b8",
+  "checkpoint_sha256": "724818b722c50f2d05c0fec46a5f2f39fa88c09e1c12d1403229d046dd516a9e",
+  "pinned_files_sha256": {
+    "SITE_NATIVE_RU.md": "50b1e7fdda3abedfbb8b4f464a9094297b10cae7fcd685b10a8c650f49d6e703",
+    "site_targets.py": "6c4453b1d07e2f55027d24aa0c33249fafa9e37ef934dc4a75ea10cccb772b96",
+    "certify_site_angles.py": "31cbd37bad42560bc14b01318c722d09b271b4700b95dd5a710eae771ec6242f",
+    "SITE_ANGLE_LIBRARY.json.gz": "02b91077e5e423cdb43d0a361a146dd5d51bd250c782b8b41cf6e93eebd6cbfd",
+    "site_native.py": "e7e26c82ff1183519a69ef6eaeac4af14a56093374054ea37622ea95a04151d1",
+    "verify_site_angles.py": "ece5eff1a7c2ab453224521271f71a0833edac147a20290b2cf4fa36cb2e19db",
+    "check_site_matrix.py": "1b485b8d96f69e83a8df2e1f1276120f299227e6f2989b1c6847c21bcae7fefd",
+    "check_site_native.py": "c8c295f0e70a929cb23ac3d54eaefa209c1d2c2f792b0fbf239003d9c3a4ca6a",
+    "build_site_plan.py": "fb0349ceff2f04f65ceb737b82ca9493eb00832091e1b65018a04cadc4b7f77a",
+    "SITE_NATIVE_PLAN.json": "a951ac051bb177556c37929083c1967ac5f4eb69a94120b345bbc09b8dae16fd",
+    "verify_site_inventory.py": "ae0507478da3a070d3ba9771e071b6e8f2f12ef6afff7b6f527ae89704144034",
+    "SITE_ANGLE_INDEPENDENT_CHECK.json": "89a23523978396926cfaa2d668ab2d31ea4ca5627f6bea1667a848a146188fbd",
+    "SITE_MATRIX_CHECK.json": "5c09b7f11726f99d16a15ce350d7941ee76618791047cd752bb647402e0f8cf3",
+    "SITE_NATIVE_CHECK.json": "5f8c29a5a0ed9ab6cdfb49266cd88531ef2549956a8ef0c743c7a548ede72768",
+    "SITE_INVENTORY_CHECK.json": "17f0fde24cb77bb9dfd9c601a9e6c1a658c801fea194940bd7972edf875dc3f2"
+  },
+  "isolated_replays": [
+    {
+      "script": "verify_site_angles.py",
+      "output": "SITE_ANGLE_INDEPENDENT_CHECK.json",
+      "output_sha256": "89a23523978396926cfaa2d668ab2d31ea4ca5627f6bea1667a848a146188fbd",
+      "isolated_JSON_identical": true
+    },
+    {
+      "script": "check_site_matrix.py",
+      "output": "SITE_MATRIX_CHECK.json",
+      "output_sha256": "5c09b7f11726f99d16a15ce350d7941ee76618791047cd752bb647402e0f8cf3",
+      "isolated_JSON_identical": true
+    },
+    {
+      "script": "check_site_native.py",
+      "output": "SITE_NATIVE_CHECK.json",
+      "output_sha256": "5f8c29a5a0ed9ab6cdfb49266cd88531ef2549956a8ef0c743c7a548ede72768",
+      "isolated_JSON_identical": true
+    },
+    {
+      "script": "verify_site_inventory.py",
+      "output": "SITE_INVENTORY_CHECK.json",
+      "output_sha256": "17f0fde24cb77bb9dfd9c601a9e6c1a658c801fea194940bd7972edf875dc3f2",
+      "isolated_JSON_identical": true
+    }
+  ],
+  "all166_angles_replayed_with_rectangular_intervals": true,
+  "all255_tree_nodes_and44722_compact_SITE_blocks_replayed": true,
+  "all256_original_input_columns": true,
+  "new_clean_work": 0,
+  "operator_error_lt": "2^-3259",
+  "physical_C_closed": false,
+  "GR_closed": false
+}
