@@ -1,0 +1,32 @@
+{
+  "status": "PASS_BACKWARD_OUTPUT_SUBSYSTEM_AND_CONDITIONAL_SAM_DISCRIMINATOR",
+  "same_full_prefix_through_A30_core": true,
+  "same_checkpoint_registered_source_slots": 1372,
+  "same_registered_leaf_bindings": 72192,
+  "identity_on_complement_reduced_channel_for_all_inputs_and_references": true,
+  "full_raw_history_or_temporal_records_equal": false,
+  "terminal_SAM_Z_plus_minus_strict_gt": "t/151 conditional on original ideal product law, A30 native error and B58 exact SAM-controlled word",
+  "terminal_SAM_Z_required_by_original_task_proved": false,
+  "terminal_full_WJ_required_by_original_H1_mark_list": false,
+  "trace_SAM_admissible_for_specific_task_proved": false,
+  "same_task_admission_or_FN_fidelity_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round72/check_backward_output.py": "077246b3f2cb6bd2caa3441191dd54436df7618e2b581982b7d784f0b952bace",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/independent_outer_pairs.py": "dfa9338e3103ac9188472aafeace6eb19a5279170f06354a1133680566c0c70a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/INDEPENDENT_OUTER_PAIRS_PLAN.json": "42d3e3b1404af520f564b9284d04c5b2a769cdb60ee58924d172bb267ae79dcd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/source_mark_registry.py": "ab4e707d4398e03aa901109989ec2a44a543a4a2784a2033cdce98c22958859b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/SOURCE_RAW_MARK_REGISTRY.json": "3c17d2d6d3eb65381dbca14c55f440315646e5ff91fc3ad1fc516777838cbb79",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_RAW_SOURCE_MARKS_RU.md": "d3b279b5dafa2d50928ce21020ad7eab60fcc7cbc3fb35bde1fc3be5f61bddd6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PREPARED_SOURCE_MOMENT_LAW_RU.md": "8985c22feaaca539fb0960e6f255bdc9cecc0bff06b67a95d969a4a9810a94a8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round54/B54_PRODUCT_SOURCE_EXACT_RU.md": "3cf8efc95f1107d943dbe9b2e1846564df21781d0851c6a9b8e137b09cc498af",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/B58_A25_GCX_COVERAGE_AUDIT_RU.md": "e43fcadfee38ad46d1c9a687b1b3540060e18339640944f8ffe03c6453e680d1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/SUFFICIENT_ENDPOINT_G_CERTIFICATE.json": "0cb7105883d835fc146d9d3b0305b5006068bc5e656cf9f909451ec8acb5fce2",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/check_reference_secant_defect.py": "3fe15270fef19a36bd2f5d749c91ac39b8cd27c92c99cd60f5a1ec784097e906",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/certify_scalar_hessian_envelope.py": "6ad0be92a6399eb0b978eadad302e7d4307380741efd165b46e3936c4cb20648",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round71/A36_INDEPENDENT_AUDIT.json": "a5b8fc19dd6dbd92981c6de2bede951a3badca3de6bbe68c5e75dc11219ef742",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  }
+}
