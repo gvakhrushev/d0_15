@@ -1,0 +1,37 @@
+{
+  "status": "PASS_NATIVE_ADAPTER_RECURSION_LITERAL_INVERSES_AND_COUNTS",
+  "toy_levels": [
+    {
+      "levels": 0,
+      "forward_native_blocks": 4,
+      "forward_primitive_calls": 22,
+      "literal_inverse_primitive_calls": 80,
+      "exact_true_spin_inverse_cases": 512
+    },
+    {
+      "levels": 1,
+      "forward_native_blocks": 20,
+      "forward_primitive_calls": 542,
+      "literal_inverse_primitive_calls": 1286,
+      "exact_true_spin_inverse_cases": 16
+    },
+    {
+      "levels": 2,
+      "forward_native_blocks": 68,
+      "forward_primitive_calls": 2788,
+      "literal_inverse_primitive_calls": 6656,
+      "exact_true_spin_inverse_cases": 4
+    }
+  ],
+  "full_22_data_layout_levels_resource_checked": [
+    0,
+    1,
+    2
+  ],
+  "actual_reverse_primitive_sequences_equal_literal_inverse": true,
+  "loader_forbidden_phase_scratch_oldRIGHT_SAM_targets_rejected": true,
+  "literal_inverse_of_inverse_not_simplified": true,
+  "source_loader_is_toy_not_actual_Omega": true,
+  "full_eight_level_giant_word_executed": false,
+  "GR_closed": false
+}
