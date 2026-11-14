@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SCOPED_SOURCE_RUN_AUTOMATON",
+  "checked_actual_DAGs_and_templates": {
+    "boolean_rotation_templates": 24,
+    "fair_router": "even_runs",
+    "fair_router_literal_inverse": "even_runs",
+    "fair_kernel": "even_runs",
+    "fair_kernel_literal_inverse": "even_runs",
+    "CAR_Ustar": "even_runs",
+    "CAR_Ustar_literal_inverse": "even_runs"
+  },
+  "actual_native_CZ_result": "fails: odd SourceI run",
+  "complete_A25_coverage_proved": false,
+  "macro_replacement_compiler_implemented": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,52 @@
+{
+  "status": "PASS_ODD_CZ_COUNTEREXAMPLE_AND_IDEAL_GADGETS",
+  "odd_CZ_SourceI_runs": [
+    3,
+    1,
+    1
+  ],
+  "SourceI_per_CZ": 5,
+  "a16_pair_logical_counts": {
+    "12": {
+      "CX": 284,
+      "X": 8,
+      "CCX": 112,
+      "Z": 1,
+      "CZ": 1
+    },
+    "22": {
+      "CX": 524,
+      "X": 8,
+      "CCX": 212,
+      "Z": 1,
+      "CZ": 1
+    }
+  },
+  "actual_Hq_degree": [
+    2,
+    2
+  ],
+  "actual_Hq_copy_SELECT_CZ_per_slot": 4,
+  "SC6_SourceI_runs": {
+    "2": 4096
+  },
+  "exact_ideal_CZ_on_arbitrary_helper": true,
+  "exact_ideal_Z_on_arbitrary_helper": true,
+  "existing_W_native_call_count_bits": 4188,
+  "delta_per_macro": "2^-3235/(L+1)",
+  "each_rotation_operator_error_below": "delta/4",
+  "global_all_column_error_lt": "2^-3235, conditional on complete macro coverage and certified rotation powers",
+  "new_positive_G_exponents_certified": false,
+  "full_macro_coverage_proved": false,
+  "macro_level_compiler_implemented": false,
+  "marks_or_physical_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/compile_native_cz.py": "36dc0f1b487a6a802d9175b1ed17c75ecffcbb88858f3b5014ad7fa681882d48",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/global_h1.py": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8"
+  }
+}
