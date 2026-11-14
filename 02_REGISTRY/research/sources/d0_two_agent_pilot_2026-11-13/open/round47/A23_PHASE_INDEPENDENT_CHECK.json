@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INDEPENDENT_A23_RECTANGULAR_FOURIER_PHASE",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/car_vacuum_prefix.py": "4733e09654b6e566957a63807430128da2efa557b00d3309aea5f3cdf9a2dfca",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/certify_fourier_phase.py": "1f8f8434013dc3ff631d7fd7239241a049daff5213c1c0b42b193389f1527b8c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/FOURIER_PHASE_CERTIFICATE.json": "e0480942df886f38d71347f496f950bf8e5170b9ddf62acdd8f9419528fdcb21",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/CAR_VACUUM_PREFIX_PLAN.json": "ec32940f9837ff4ef87aece95fcace4db30ee9ee43b2e03139e8a3b9bf3bf826",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/check_car_vacuum_prefix.py": "ff0cce29d8d683cc513edf5c13f626fb42907b6c7c5737b33307a25742124ade",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/CAR_VACUUM_PREFIX_CHECK.json": "042c394eab7d52fa97afff5795ae6e87349f457cef893e1bee74b373d6a7e10d"
+  },
+  "bits": 12288,
+  "saved_bits": 7168,
+  "controls": 7,
+  "coefficient_powers": [
+    {
+      "coefficient": 1,
+      "error_bound": "1*2^-3264"
+    },
+    {
+      "coefficient": 2,
+      "error_bound": "2*2^-3264"
+    },
+    {
+      "coefficient": 3,
+      "error_bound": "3*2^-3264"
+    }
+  ],
+  "saved_native_intervals_contain_replay": true,
+  "candidate_or_float_used": false,
+  "GR_closed": false
+}
