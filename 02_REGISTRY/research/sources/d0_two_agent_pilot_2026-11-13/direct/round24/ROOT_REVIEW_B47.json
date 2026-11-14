@@ -1,0 +1,36 @@
+{
+  "status": "CONSUMED_INDEPENDENT_B47_SOURCE_AND_HELPER_REVIEW",
+  "B47_commit": "2b50305625f3b60a9da0879145bf8df43c0c4a69",
+  "pinned_files_sha256": {
+    "A18_DIRTY_HELPER_TARGET_CHECK.json": "c4cad97ad357f00b5af0a1b003e1c1ef6b70a05f38fce124b33171b95cb47ed2",
+    "A23_LITERAL_DEPTH_INDEPENDENT_CHECK.json": "537b0b09b3bb52e967fc7b443cc897014f5c5c17e550a4f43bdd2ca036974a89",
+    "A23_PHASE_INDEPENDENT_CHECK.json": "b0aee6c270965d57aafe5b4357bc76a7d550c4a9cc64771a20191636399b5385",
+    "A23_SOURCE_WORD_INDEPENDENT_CHECK.json": "c82737720c963a89626296da4ea42134553b19e64853ee8f578b3825943275fb",
+    "A24_INDEPENDENT_COMPOSITION_CHECK.json": "2b035a45f85e5a098acce393aa835ce027f94e741f63d047d8a8e5909ce48117",
+    "B47_AUDIT_REPORT_RU.md": "95365c1becf221d27185c8587367b6d3bb43a039f59129907fca09acdf4adce8",
+    "T6_AUX_PORT_SPIN_LEMMAS.json": "67fc0f4e269594fc981b3d4aec301d5db27a35a5b7bca1e4006c1426b609c90d",
+    "audit_a23_literal_depths.py": "e37f91b2eaa715b03746a96ab8ddeb79b2c0f8aebb53c0f63bea543ce9865646",
+    "audit_a23_source_and_word.py": "7aa5d3efdf884e80feb5966bfab68d721db482100385d92174b549616889d8a5",
+    "audit_a24_independent.py": "48cae09e360d5a4a309c0422f030950ecab171a12005c2d8bfb55c1d78157c78",
+    "audit_fourier_phase.py": "6eac0473b033ba4f9c444f29a8f00c23225073365f39ef8c25bd5c5cdca25cd6",
+    "prove_a18_dirty_extension.py": "88d1cb7861418523df5a0d0d90025a55c099bc66404ec8ab95664a5f869e1ddf",
+    "prove_t6_boundary.py": "b5c708a96f3db2f3fd7c281aead37d1044123fc45b9ad13c5bccba6f4f76cadf"
+  },
+  "current_A23_A24_source_hashes_match_independent_review": true,
+  "root_reexecuted_B47_scripts": false,
+  "root_separate_owned_checks_already_passed": true,
+  "A23_independent_phase_bits": 12288,
+  "A23_independent_compact_blocks": 40742,
+  "A24_independent_material_rotation_counts": [
+    512,
+    512,
+    1152
+  ],
+  "A24_independent_full_wrapper_cases": 28,
+  "A23_and_A24_independent_112_error_lt": "2^-3253",
+  "helper_aware_full_targets_not_identified_with_original_book_price": true,
+  "T6_lemmas_are_conditional_not_full_H1_factorization": true,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "consumed_owner": "A24"
+}
