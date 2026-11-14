@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "c51c0dc9b31faf847788f3f11ae40466b88aa41c",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round68/A35_INDEPENDENT_BINDING_AUDIT.json",
+      "sha256": "c434ab64d6831fb786c99a8c1b6336090a72bfb6f60d7d99eae1b5b65eb5630e"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round68/B68_A35_BINDING_AUDIT_RU.md",
+      "sha256": "631c39159aa8209a8f3ec8e0bb550e55d1295e64f26647721ef0b5fd7e0c20a9"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round68/audit_a35_binding.py",
+      "sha256": "8acf28fffd596c002c13e7d9f4a3bf83b3a7c780efd445e9e7f5a3d19c395e76"
+    }
+  ],
+  "source_hashes_checked": 10,
+  "scope": "A35 actual physical addressed inventories, common birth/dimension schedule, distinct order, A33 price-gap normalization and explicitly restricted price-binding obstruction.",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

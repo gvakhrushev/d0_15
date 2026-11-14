@@ -1,0 +1,57 @@
+{
+  "status": "PASS_ACTUAL_PAIR_COUNT_ONLY_PRICE_BINDING_OBSTRUCTION",
+  "actual_SAM_index": 2,
+  "same_complete_addressed_primitive_inventory": true,
+  "same_initial_history_and_canonical_birth_sequence": true,
+  "same_clock_layer_dimensions_and_final_gate": true,
+  "same_canonical_RAW_birth_marginals": true,
+  "different_ordered_words": true,
+  "same_source_mark_ordinals_not_same_mark_states": true,
+  "endpoint_only_inventory": [
+    {
+      "primitive": "CX",
+      "logical_wires": [
+        2,
+        2705
+      ],
+      "count_hex": "0x8834d636e6f5d49268969171cb749f558a097b4cc41efc95d41d42e538f881769e5678224566a30a029f1f84c5baa81abd1e05fc5685713722e32fadf9fe7d63596622a831f22ab4bbdb28638fec4f410eb92279ced42cbed4b4a610908a9d2c2c8f9a570cdc6c119cb66b33420b93699bad0fd3157ba65cc956e49757b344bcb58fb406cc75adcfe3dab78191ad333c8f0d3e73c8dde5afcc7b23a91f7d4fab5796e002cd7553732c6a0b6b55e326d78fb657f5211eebae14a900ee1105dff60ab74b22beb6c6cba4571d83e9e76418a46bb6220d3d67fb0fe194051e578a48269c55162747b8d848ccb7eee3b1e901a7ce83c1f4f761746dcc0604b4645baab9078addb5b17ca575beb1c9f0bf5ce4f2fc8b842e85bda92edc080c9747195877904c036c833c5afe4d2e4b4f32d362eafc1306b751dd5973a03d7565817d4280f5b67f35a1df7809496cd1b860c4e3b5f3ccb4d919839229069fa1ba9edb213ba72bfe7d6b2132c66b2e42a5e6e1c64bdffc467683116b30c95df9d698cb2d454a6d35fbedb0d3360de495fe1078ce684d8e50ff12f094b6b7f90193298116fc8fd1d45f1c27516479a1a60eb3ba709030ac99b73124b1013ab6c6bb77e957c5523467bd7b18e10afba24840a4e1b1d447e24dfbcf880f4fbfde50c66c3a447dedd487c53b4af9b1728b933224846a7b0e7077b02601fdf8a539c05c3db5350e8a5a07fecd22962e4af8113eea4cbe1c0f3b6c74a3ca337dfa7eb4f1541cb5ca1f70c998d7cff35eca8928b00c4c300405b1509c039722e7e12468cc3632f7aa7df84c4b275086e3c0bb2f1385f046fbccdddaa78851a1bc5886e551909434a82"
+    },
+    {
+      "primitive": "CX",
+      "logical_wires": [
+        2,
+        10407050784
+      ],
+      "count_hex": "0x1"
+    },
+    {
+      "primitive": "CX",
+      "logical_wires": [
+        2705,
+        10407050784
+      ],
+      "count_hex": "0x2"
+    },
+    {
+      "primitive": "G",
+      "logical_wires": [
+        6
+      ],
+      "count_hex": "0x8c1781a5359db949ba8b84c96bcb8f794da48fa47b6d8d79549882fc56c93b7d98b48e77cd2a300bb707212b3f93dbafacee35a1831d87705ea9a4868df3ef6194c3992078ff6a3092ff56e716b6c5943ce371bd69d762ca99d288bf267cc4c847d0f2924c99e8bfd79245442e21e6e136b410b97d3f9f81f050cd838348b37f48e978c5cd423f77d06e8d121fa312ec9fada85038dd78f4aceaaa303ef40fa8867b1822a09f8b25f2a11cf4f389267a2f71044ec8082aefd0257bc3f9b49070a01147d0fcce509ecc8ab5e81100adbf8c73b071ce9f790c5257e0043f293f2402e74a580ba74a72a0dd93c6834b9c73f1cf37c9dccc439c40e53f0c971b238dd04ba05c0c4dad04bb108e23c0cf48c0434157f7af6e1b916965abe9c4bc59506f8bb3de961669ede12812d9dee159bd4254ba51eb1e32ffeca86a65ddcea4a28e91a5d6f02d80bea4c4df2b415bf8363e0ae3e3c9ed4662183e7508445e3dfc1742b79ab4f62acd6024ad731626c83a12a290ef9542d495a2a7ae23c22eecb2c3ea49198109650b9ea62f88972c404a80861ef622de2eb1df9cf413e4c1f694939b8b3b282461e5da509ee6e8e5c10d6759ddb5305a50b693db2d76365745207ce323fcb52d40fe38f478a22a21095ea00d85aac24edac9d1d95da6bd76de02f4d2945b6d5358ff06484ac7fa4ba6b7c9c5d38cd743610ee02ce8d63c759bbd331ff8dc2971617a76c02494071e99cef729d0fe1cf63d190bea25835f009335cdc56280051e05222aaadf60e9bd552e58470272ca6722fcc4ef283d88615af6361c9d427032673d458a1fb401099b80461c00a09b77a670998a2c039fa603dee1f"
+    }
+  ],
+  "operator_price_inequality_consumed": "A33/B66: (H+J)_+>(H+J)_-",
+  "excluded_binding_class": "Any exact price function of only addressed primitive inventory, canonical birth marginals/sequence and clock dimensions on these histories",
+  "unrestricted_Cost_Info_binding_excluded": false,
+  "actual_native_Info_assigned": false,
+  "primitive_code_length_or_description_length_equated_with_Book_price": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round35/check_count_only_binding.py": "fb6aa286a192ca853c5464e0e52945eb3a3de39526d901076682f12414d9162b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/finite_book_comparison.py": "eff94dfc2fea3b808be59d5cc889b8f8e989fbbd60b3fbb9ed234cff0c911901",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/FINITE_BOOK_COMPARISON_PLAN.json": "0c7ec7f984410df24a7e67de0012f7418a2bb3782b6a1d53f97718a6ab49b155",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/SAMPLING_SOURCE_BIAS_CHECK.json": "12dfe17ab8f8dc590d20e1292812418b10e0d0b3319a21ab9b48d00b03f06112",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/ROOT_REVIEW_B66.json": "96ff0286643daa206411e5605a66b36eb9fafe6f37de08930cc553344ad66f9d"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}
