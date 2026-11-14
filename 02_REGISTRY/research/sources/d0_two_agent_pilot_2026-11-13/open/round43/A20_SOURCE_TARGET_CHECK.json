@@ -1,0 +1,11 @@
+{
+  "status": "PASS_INDEPENDENT_A20_SOURCE_TARGETS",
+  "families": 247,
+  "sector_bindings": 14848,
+  "target_factor_bindings": 1044,
+  "dyadic_precision_bits": 8448,
+  "source_library_sha256": "7fca5863f6104a1647300c3219b3c3835d628daaa703e9b511c58461bd0c9c6d",
+  "native_targets_contain_independently_reconstructed_intervals": true,
+  "original_Golden_k0_and_Machin_pi_verified": true,
+  "GR_closed": false
+}

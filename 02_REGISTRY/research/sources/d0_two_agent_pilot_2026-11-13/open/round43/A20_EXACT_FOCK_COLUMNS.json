@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_A20_EXACT_FOCK_COLUMNS",
+  "A20_native_sha256": "780c4c24321b7352263d9a516482cac7306b40f8215aeecbf7a1816672da26ab",
+  "mode_planes": 3,
+  "occupation_pairs": 12,
+  "active_full_columns": 384,
+  "literal_inverse_columns": 384,
+  "inactive_full_columns": 2688,
+  "controlled_X_arbitrary_aux_exact_columns": 128,
+  "actual_SourceI_two_bit_spin": true,
+  "aux_and_port_all_basis_states": true,
+  "giant_word_expanded": false,
+  "GR_closed": false
+}

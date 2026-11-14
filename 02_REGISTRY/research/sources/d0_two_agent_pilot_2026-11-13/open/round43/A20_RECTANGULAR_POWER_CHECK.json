@@ -1,0 +1,20 @@
+{
+  "status": "PASS_A20_ALL_INDEPENDENT_RECTANGULAR_POWERS",
+  "pinned_commit": "afbaef2f950da70c0fe16dbdb8091c851929bd7a",
+  "pinned_files_sha256": {
+    "COFRAME_ANGLE_LIBRARY.json": "7fca5863f6104a1647300c3219b3c3835d628daaa703e9b511c58461bd0c9c6d",
+    "coframe_targets.py": "37d0aec5112743fec6a7f9b48e865ad4311dd24d4c55574ecb5ad622b42b140c",
+    "certify_coframe_angles.py": "91e88af293129cb8db3439eb09f87d3615b41b187b3192e2c7cd9c077ec647be",
+    "coframe_native.py": "780c4c24321b7352263d9a516482cac7306b40f8215aeecbf7a1816672da26ab",
+    "COFRAME_NATIVE_PLAN.json": "0b17313f90b5962cb7d27b57e05204493353951618118d2be7b77433e268b410",
+    "check_coframe_native.py": "f65e1b53e3e23944c83dc5e782345f164f5f61909fe4ca79db4457de24b6598c",
+    "check_native_pair_columns.py": "c57ab74d6b7fbf3e1811818cf51133bbb746da915f3b1c44407e93195db44da6"
+  },
+  "source_library_sha256": "7fca5863f6104a1647300c3219b3c3835d628daaa703e9b511c58461bd0c9c6d",
+  "angles": 556,
+  "X_phase_independent_power_checked": true,
+  "bits": 8448,
+  "candidate_grid_used": false,
+  "floats_used": false,
+  "GR_closed": false
+}
