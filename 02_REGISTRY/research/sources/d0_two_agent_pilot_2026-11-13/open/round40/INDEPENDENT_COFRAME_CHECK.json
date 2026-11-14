@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEPENDENT_COFRAME_SIGN_ORDER_AND_JULIA",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/coframe_factorization.py": "0288b5a2b474d590be49cc87222fe296145922bc145f3c8550c3636c3c686fc2",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/check_coframe_factorization.py": "8e004353fcc2082dc07b444b350bd812940a8f84d819c20a92ca177083bbef7a"
+  },
+  "exact_all_pair_signs_against_exterior_minors": true,
+  "exact_CAR_covariance_modes": 12,
+  "exact_32_by_32_column_entries": 2048,
+  "two_mixed_sign_nonzero_three_plane_vectors": true,
+  "actual_dominant_first_order_float_cross_check": true,
+  "maximum_ideal_macros": "2*(3*4)+1+1=26",
+  "native_angle_certificate_constructed": false,
+  "full_Omega_SELECT_present": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
