@@ -1,0 +1,18 @@
+{
+  "status": "PASS_A41_SMALL_EXACT_ALL_COLUMN_AND_BOUND_FIXTURES",
+  "exact_target_sha256": "7679fadec56e7bcca6ca2cd6fb3162b3e2f5308ad8010cfc436689afe847e450",
+  "compiler_sha256": "0f13a9eb9d16da19b91d93e2d56e2eb2a81d7eacc1cc5c3d977127e678187058",
+  "plan_sha256": "3f5982d54a0ab9d98465f9bc2d1354178ccfd6654de16b969e13fc21bc7abb45",
+  "checker_sha256": "d55e3a6fa5026402ce88c5d022031b6e4f1adffb809ceef810ccf4af898cf43f",
+  "Q4_field_and_literal_small_actual_compression_checked": true,
+  "nontrivial_4d_star_sequence_equals_full_A37_matrix": true,
+  "all_small_stars_m2_to_m4_all_columns_exact": true,
+  "small_dyadic_normalization_and_positive_branches_checked": true,
+  "full_target_error_strict_lt": "2^-14623",
+  "upper_call_count_strict_lt": "2^25458",
+  "production_API_explicitly_guarded_as_not_implemented": true,
+  "actual_production_target_evaluated_or_word_emitted": false,
+  "full_H1_admission_or_clock_source_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
