@@ -1,0 +1,28 @@
+{
+  "status": "PASS_A11_REFERENCE_GEOMETRY_EXACT_QSQRT2",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/REFERENCE_METADATA.json": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418"
+  },
+  "geometric_ancestor_nodes_exact": 20006,
+  "F_h_rational": "16517734400/162621047169",
+  "Hf_xplus_at_rho1": "4129433600/1463589424521",
+  "Hf_xminus_at_rho1": "-4129433600/1463589424521",
+  "Hf_flat_exact": "0",
+  "Hf_xplus_equals_Fh_over_36": true,
+  "Hf_xminus_equals_minus_Fh_over_36": true,
+  "coframe_and_matter_source_homogeneity": {
+    "H_f": [
+      2,
+      0
+    ],
+    "H_q": [
+      2,
+      2
+    ]
+  },
+  "arbitrary_rho_scaling": "u_ref scales sqrt(rho); hence Hf_x\u00b1=\u00b1rho*Fh/36 and Hq_ref=\u00b1rho*d_h",
+  "scope": "Exact ideal source DAG reference identities; all SAM/current-field values and native admission are separate.",
+  "GR_closed": false
+}

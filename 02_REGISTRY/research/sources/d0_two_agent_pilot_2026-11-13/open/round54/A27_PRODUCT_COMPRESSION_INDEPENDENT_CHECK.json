@@ -1,0 +1,29 @@
+{
+  "status": "PASS_A27_IDEAL_PRODUCT_SOURCE_COMPRESSION_WITH_SCOPE",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PRODUCT_SOURCE_COMPRESSION_CHECK.json": "ac0d1c198cd3cc0d08b8057f541d4009c6ee15a5b39ac4c574fa14c9a1a9c0ca",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/product_source_compression.py": "76bdc57ecf7431693728758d243ad0565167552bd601bdc77a6622a2f7506299",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/COPY_SLOTS.jsonl": "77f597a94f69c593e097f2318d295c1fc1f6e05282052436a8fe9609ecd9724c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round49/SC6_ACTIVE_PORT_OWNER_CHECK.json": "410348a8dcd1a8ad7e18c8cde0b7e3562d0ef6aea0e1c545159d69562c930d17",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round53/READY_GAIN_INTEGER_INDEPENDENT_CHECK.json": "bb8181d07b0eb1feb30ae326a766868c5d20b5e10078302c49aa0fd26911c6b0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round52/GLOBAL_COUNTS_ERROR_INDEPENDENT_CHECK.json": "33bf709cd78bfc3f504596307d23d3c240192659d89fa019debf6af8eb2cfb76",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round33/ACTUAL_COMPRESSION_INPUTS_CHECK.json": "f5431e8073bd3f1219eb174bbec31e43f97f6279e0986a1995bf7dbbb4bd5fc0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round34/A16_FULL_DEGREE_CHECK.json": "63eed5cef7bda762e45fd72fddfc65081b88cc08f7a7d642602a276f8d7f61d0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round34/A16_WALK_WIRING_CHECK.json": "8ea8644a60712661c94a4b784393a9645749abc1f019e303084a022d3eb92a81",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round54/IDEAL_SOURCE_LEAF_MOMENTS_EXACT.json": "154f00f00d788f325c5163a288a5530e7eed5ce4db3afb56e6cf1f3cbf9db952",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round54/REFERENCE_GEOMETRY_EXACT_CHECK.json": "902a61245de5ec5c99df1e954974e14a9198b6f33379c65c39a70436609968b9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round54/FLAT_HF_ALL_COFRAMES_CHECK.json": "e1ccf654f3ab2a2423c1ac5f031fabf61adc8ebc813d28c4b8d8ec32ee3c3174",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round54/REPORT_BETA_EXACT_CHECK.json": "ac139ff32e1aa013aaecc6680b06fc0e89955ddb85ac598d6c10bb94f89dbbf7"
+  },
+  "A27_all_source_slots_bijective": 1372,
+  "material_to_CAR_translation_explicit": true,
+  "SC6_exact_symbolic_multilinear_identity": true,
+  "actual_fixed_reference_PF_average_factorization": true,
+  "PF_caveat": "For this fixed B25 reference, normalized y\u00b1/x\u00b1/0 reference inputs and ideal \u03b1 are site-independent, so separate averages happen to equal the common-site expression; generic site-dependent reference or independent variations may have nonzero covariance and require the shared-site expression.",
+  "stronger_ideal_corner_lower_bound": "c_b > 67/100, conditional on the same ideal moment/product law and P_j in [0,alpha]",
+  "stronger_actual_corner_lower_bound": "c_hat_b > 67/100 - 2^-3231 > 2/3, conditional on B52 scalar structure and canonical-input error",
+  "scope": "Combines exact B54 leaf/polynomial/reference checks with B32/B33 tensor-copy induction and B34 A16 consumer; consumes B25 target regularity and A17 readiness. Physical original marked-map, births, clock, Cost-Info and GR remain unproved.",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

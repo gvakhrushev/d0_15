@@ -1,0 +1,10 @@
+{
+  "status": "PASS_FLAT_LINK_HF_ZERO_FOR_ALL_COFRAMES",
+  "input_sha256": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+  "source_ancestor_nodes": 20006,
+  "coframe_variables": 16,
+  "exact_polarization_evaluations": 137,
+  "flat_all_links_identity_implies_Hf_zero_for_every_coframe": true,
+  "scope": "Polynomial identity for the A11 ideal source, not a native gate execution or proof of physical marked-map equality.",
+  "GR_closed": false
+}

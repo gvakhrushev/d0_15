@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ALL_A12_REPORT_PALETTE_POLYNOMIAL_EXACT",
+  "input_sha256": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+  "sigma_results": {
+    "-1": {
+      "palette_rows": 1024,
+      "exact_nonzero_bivariate_coefficients": 27,
+      "maximum_f_degree": 2,
+      "maximum_q_degree": 8,
+      "identity": "sum(sign-product weights) = r(f/64, sigma*q/64)"
+    },
+    "1": {
+      "palette_rows": 1024,
+      "exact_nonzero_bivariate_coefficients": 27,
+      "maximum_f_degree": 2,
+      "maximum_q_degree": 8,
+      "identity": "sum(sign-product weights) = r(f/64, sigma*q/64)"
+    }
+  },
+  "scope": "Algebraic identity for ten sign variables whose 2 f-sign and 8 q-sign expectations factor; multiplying by READY alpha assumes the proved ideal selector effect and conditional fresh resources. Does not establish physical source moments or marks.",
+  "GR_closed": false
+}
