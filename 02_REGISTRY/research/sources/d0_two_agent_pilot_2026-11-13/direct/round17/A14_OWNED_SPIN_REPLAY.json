@@ -1,0 +1,113 @@
+{
+  "historical_checker_sha256": "4d3a358dc29b43222b5d1d4253e935c1dd5da224ead4b91de001bc8a3e5a2060",
+  "spin_representation": "owned L_i=diag(J,-J), both Spin bits included",
+  "historical_files_modified": false,
+  "status": "PASS_A14_WORDS_WITH_OWNED_SPIN_REPRESENTATION",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "reports": [
+    {
+      "name": "X",
+      "k": 1,
+      "all_exact_columns": 256,
+      "forward_counts": {
+        "CX": 6,
+        "SourceI": 2,
+        "G": 4
+      },
+      "literal_reverse_counts": {
+        "CX": 30,
+        "SourceI": 22,
+        "G": 4
+      },
+      "exact_inverse_cases": 16
+    },
+    {
+      "name": "X",
+      "k": 2,
+      "all_exact_columns": 256,
+      "forward_counts": {
+        "CX": 6,
+        "SourceI": 2,
+        "G": 8
+      },
+      "literal_reverse_counts": {
+        "CX": 54,
+        "SourceI": 38,
+        "G": 8
+      },
+      "exact_inverse_cases": 16
+    },
+    {
+      "name": "H",
+      "k": 1,
+      "all_exact_columns": 256,
+      "forward_counts": {
+        "CX": 6,
+        "SourceI": 2,
+        "G": 2
+      },
+      "literal_reverse_counts": {
+        "CX": 18,
+        "SourceI": 14,
+        "G": 2
+      },
+      "exact_inverse_cases": 16
+    },
+    {
+      "name": "H",
+      "k": 2,
+      "all_exact_columns": 256,
+      "forward_counts": {
+        "CX": 6,
+        "SourceI": 2,
+        "G": 4
+      },
+      "literal_reverse_counts": {
+        "CX": 30,
+        "SourceI": 22,
+        "G": 4
+      },
+      "exact_inverse_cases": 16
+    },
+    {
+      "name": "CCX",
+      "k": 1,
+      "all_exact_columns": 256,
+      "forward_counts": {
+        "G": 12,
+        "CX": 68,
+        "SourceI": 24
+      },
+      "literal_reverse_counts": {
+        "CX": 104,
+        "SourceI": 120,
+        "G": 12
+      },
+      "exact_inverse_cases": 16
+    },
+    {
+      "name": "CCX",
+      "k": 2,
+      "all_exact_columns": 256,
+      "forward_counts": {
+        "G": 24,
+        "CX": 68,
+        "SourceI": 24
+      },
+      "literal_reverse_counts": {
+        "CX": 140,
+        "SourceI": 168,
+        "G": 24
+      },
+      "exact_inverse_cases": 16
+    }
+  ],
+  "all_exact_columns_total": 1536,
+  "raw_reverse_total_cases": 96,
+  "approximate_CCX_reused_as_inverse_hostile_detected": true,
+  "target_of_CCX": "CCX tensor I_aux, with arbitrary incoming aux/port/Spin/oldRIGHT",
+  "scope": "Small k fully expanded actual native words; certified huge-k errors and unexpanded DAG are separate.",
+  "full_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

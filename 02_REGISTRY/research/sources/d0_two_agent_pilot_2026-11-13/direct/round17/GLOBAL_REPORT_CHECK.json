@@ -1,0 +1,24 @@
+{
+  "status": "PASS_GLOBAL_REPORT_ROLE_ALLOCATION_AND_COMPONENT_COMPOSITION",
+  "input_sha256": {
+    "report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "GLOBAL_REPORT_COMPILATION.json": "303ecd70a75c4a0141098f66533d4f3c57d3d8816d42685d84dc5f016eac5e26"
+  },
+  "intervals_in_complete_processor_partition": 15202,
+  "fair_bank_boundary_and_interior_mappings": 22377,
+  "all_incoming_source_qubits": 4264,
+  "all_fresh_RAW_requirements": 1486712521,
+  "Boolean_READY_cases": 16368,
+  "small_actual_native_failed_READY_columns": 112,
+  "small_native_max_error_diagnostic": 6.753223014464259e-16,
+  "actual_mapped_native_fair_banks": 3,
+  "syntactic_native_leaves_checked": 23199,
+  "exact_sigma_palette_indices": 2048,
+  "exact_product_scalar_Beta_cases": 6,
+  "correlated_copy_counterexample": "same marginals, nonzero difference equal to original S^2 coefficient",
+  "all_report_native_calls_executed": false,
+  "source_preparations_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
