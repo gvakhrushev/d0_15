@@ -1,0 +1,11 @@
+{
+  "status": "PASS_CONDITIONAL_HEAT_ARITHMETIC",
+  "a25_gate_count_bits": 4188,
+  "a28_births_with_fresh_aux": 10407050781,
+  "isolated_gates_plus_births_less_than": "2^4189",
+  "retention_factor": "(2p)^(-K) < (5/6)^K",
+  "sufficient_K": "4*(q+3158+Q+T+1)",
+  "scope": "conditional; q bounds actual full prefix stage count; z*Tr(A_old)*abs(t)>=2^(-Q); real gain, old cut, marks, birth admission and common comparison required",
+  "physical_C_closed": false,
+  "GR_closed": false
+}
