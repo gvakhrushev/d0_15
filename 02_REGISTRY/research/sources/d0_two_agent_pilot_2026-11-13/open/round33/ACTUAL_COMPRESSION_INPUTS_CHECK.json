@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ACTUAL_OPERATOR_COMPRESSION_ALGEBRA_INPUTS",
+  "nodes": 20402,
+  "reachable_nodes": 20149,
+  "add_nodes_checked": 3618,
+  "internal_palettes": 25,
+  "site_kind_top_palettes": 512,
+  "all_degrees_and_masses_recomputed": true,
+  "all_actual_first_attempt_success_weights_tau_times_requested": true,
+  "top_positive_negative_identity_weights_equal": true,
+  "independent_site_control_is_required": true,
+  "what_this_is": "exact coefficient and tensor-degree input verification, not an execution of A16 SELECT",
+  "input_sha256": {
+    "round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}
