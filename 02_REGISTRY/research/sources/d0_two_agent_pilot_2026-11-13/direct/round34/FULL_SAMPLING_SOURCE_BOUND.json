@@ -1,0 +1,46 @@
+{
+  "status": "PASS_STRUCTURED_FULL_SAMPLING_SOURCE_UPPER_BOUND",
+  "fixed_sampling_s": "2^-30",
+  "coordinates_by_kind": {
+    "coframe": 1024,
+    "proper_link": 1536,
+    "matter": 128
+  },
+  "all_actual_free_links_have_six_face_occurrences": true,
+  "all_matter_coordinates_have_five_base_stencils": true,
+  "each_face_has_four_distinct_link_addresses": true,
+  "geometric_f_coframe_row_error_lt": "2^10*s^2",
+  "geometric_f_link_row_error_lt": "46*s",
+  "k0_q_coframe_and_f_joint_row_error_lt": "s",
+  "k0_q_matter_row_error_lt": "98*s",
+  "squared_full_vector_coefficient_lt": 4480512,
+  "unadjusted_geometric_sampling_vector_error_lt": "2^-18",
+  "finite_reference_vector_error_lt": "2^-3065",
+  "finite_reporter_vector_error_lt": "2^-1420",
+  "actual_corrected_finite_H_plus_J_raw_covector_norm_lt": "2^-17",
+  "actual_corrected_finite_covector_minus_Egeom_at_decoded_mean_norm_lt": "2^-16",
+  "combined_with_A33_norm_strictly_between": [
+    "2^-45",
+    "2^-17"
+  ],
+  "no_change_to_sampler_writer_or_operator_price": true,
+  "independent_physical_rows_and_Cost_Info_selection_included": false,
+  "refinement_uniform_theorem": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round34/check_full_sampling_bound.py": "6e0f36706e4e323aaed2390ae637d6dd8f08ba6b3231481d7366c3b5d51056b3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round24/TORUS_CHOI_ADDRESSES.jsonl": "35897a838390fcd0c2ad1854d2934b3c21d6c7e4b877953a097cbb9c873238f3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round24/SITE_DEPENDENCIES.jsonl": "b3074e56940ffe46e0dd85e7a4071cdf6f72cdbe01bd844aef3b3cc71f1ca9a5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/B65_CENTRE_SOURCE_AND_BOUNDS_RU.md": "a10ad0a99575b742f39862f3fd7a8430046ac3c2792d0274e816e4c1df904fe3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/SCALAR_HESSIAN_ENVELOPE.json": "7d5f4fd7dc9351e9a64ed786211aacba3e49f8d6f9d72e619138bc9e4d522cf5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/RESULT.json": "25b3ec3e23ef613640201ae83756cbfa9eb90715448a6bd077224fead0768832",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/RESULT.json": "f4f5e4a13d832d67e33caffba4ae897313bc594d849ab5d6074398be556f49e3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/SAMPLING_SOURCE_BIAS_RU.md": "94c859dbf7e5f1b293ac6f8a600917d89989e3d0b1af5268e4e2258dae9a2b66",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/SAMPLING_SOURCE_BIAS_CHECK.json": "12dfe17ab8f8dc590d20e1292812418b10e0d0b3319a21ab9b48d00b03f06112"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

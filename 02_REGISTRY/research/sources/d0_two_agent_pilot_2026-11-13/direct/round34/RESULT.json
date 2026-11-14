@@ -1,0 +1,20 @@
+{
+  "status": "LOCAL_INDEPENDENTLY_REVIEWED_CONTROLLED_FULL_FINITE_SOURCE_REMAINDER",
+  "parent": "H.5 actual full-vector source error after A30/A31/A32, consuming existing exact geometric centre",
+  "fixed_chart": "L4, 1024 raw coframe +1536 proper-link +128 matter, PF and collar fixed",
+  "sampler_s": "2^-30",
+  "normalization": "Gamma0=Gamma_s/s",
+  "unadjusted_geometric_sampling_covector_error_lt": "2^-18",
+  "actual_corrected_finite_H_plus_J_covector_norm_lt": "2^-17",
+  "same_covector_minus_geometric_Euler_at_actual_decoded_mean_norm_lt": "2^-16",
+  "nonzero_lower_bound_from_A33_gt": "2^-45",
+  "actual_Jacobian_correction_and_mean_shift_retained": true,
+  "all_2688_rows_accounted_in_Euclidean_norm": true,
+  "independent_audit": "B67 47c38be3b",
+  "all_independent_physical_internal_equations_included": false,
+  "complete_Cost_Info_binding_or_selection_proved": false,
+  "native_stationary_centre_or_uniform_refinement_proved": false,
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
