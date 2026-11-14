@@ -1,0 +1,66 @@
+{
+  "status": "PASS_ALL_A16_SLOT_STAGE_AND_MAPPING_ORDER",
+  "source_sha256": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+  "comparisons": [
+    {
+      "root": "H_f_before_inverse_PF",
+      "literal_depth_marker": 0,
+      "actual_quantum_stage_markers": 37769,
+      "all_slot_mappings_exact": 455,
+      "copies_per_slot": 82
+    },
+    {
+      "root": "H_f_before_inverse_PF",
+      "literal_depth_marker": 1,
+      "actual_quantum_stage_markers": 37769,
+      "all_slot_mappings_exact": 455,
+      "copies_per_slot": 82
+    },
+    {
+      "root": "H_f_before_inverse_PF",
+      "literal_depth_marker": 2,
+      "actual_quantum_stage_markers": 37769,
+      "all_slot_mappings_exact": 455,
+      "copies_per_slot": 82
+    },
+    {
+      "root": "H_f_before_inverse_PF",
+      "literal_depth_marker": 3,
+      "actual_quantum_stage_markers": 37769,
+      "all_slot_mappings_exact": 455,
+      "copies_per_slot": 82
+    },
+    {
+      "root": "H_q_before_inverse_PF",
+      "literal_depth_marker": 0,
+      "actual_quantum_stage_markers": 94,
+      "all_slot_mappings_exact": 18,
+      "copies_per_slot": 4
+    },
+    {
+      "root": "H_q_before_inverse_PF",
+      "literal_depth_marker": 1,
+      "actual_quantum_stage_markers": 94,
+      "all_slot_mappings_exact": 18,
+      "copies_per_slot": 4
+    },
+    {
+      "root": "H_q_before_inverse_PF",
+      "literal_depth_marker": 2,
+      "actual_quantum_stage_markers": 94,
+      "all_slot_mappings_exact": 18,
+      "copies_per_slot": 4
+    },
+    {
+      "root": "H_q_before_inverse_PF",
+      "literal_depth_marker": 3,
+      "actual_quantum_stage_markers": 94,
+      "all_slot_mappings_exact": 18,
+      "copies_per_slot": 4
+    }
+  ],
+  "test_method": "Original A16 quantum-event order vs reversible A25 order. For this finite metadata test s.lower and inverse are markers, controller tuple stream suppressed; every slot mapping is separately checked on all indices. Real native DAG inverses and controller rows have separate B51 audits.",
+  "logical_depth_not_conflated_with_native_inverse": true,
+  "full_native_primitive_word_executed": false,
+  "GR_closed": false
+}

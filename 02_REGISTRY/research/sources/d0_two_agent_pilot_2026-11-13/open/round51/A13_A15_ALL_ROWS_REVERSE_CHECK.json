@@ -1,0 +1,63 @@
+{
+  "status": "PASS_EXHAUSTIVE_A13_A15_FINITE_ROW_REVERSALS",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04"
+  },
+  "A13_selectors": {
+    "TOP_SOURCE_SELECTOR_CIRCUIT.json": {
+      "all_rows": 1024,
+      "total_owned_row_tuples": 42374336,
+      "max_tuples_one_row": 44459,
+      "multi_output_boundaries": 2048,
+      "prefix_tuples": 1
+    },
+    "INTERNAL_SELECTOR_CIRCUIT.json": {
+      "all_rows": 50,
+      "total_owned_row_tuples": 2657529,
+      "max_tuples_one_row": 799287,
+      "multi_output_boundaries": 100,
+      "prefix_tuples": 0
+    },
+    "TEN_SIGN_REPORT_CIRCUIT.json": {
+      "all_rows": 4096,
+      "total_owned_row_tuples": 7408896,
+      "max_tuples_one_row": 1863,
+      "multi_output_boundaries": 4096,
+      "prefix_tuples": 2004
+    }
+  },
+  "A15_lookups": {
+    "transition_rows": {
+      "all_rows": 30847,
+      "nonzero_rows": 30843,
+      "multi_output_rows": 30831,
+      "total_owned_tuples": 3749198,
+      "max_tuples_one_row": 173
+    },
+    "palette_rows": {
+      "all_rows": 3618,
+      "nonzero_rows": 3618,
+      "multi_output_rows": 2566,
+      "total_owned_tuples": 317138,
+      "max_tuples_one_row": 113
+    },
+    "address_rows": {
+      "all_rows": 72192,
+      "nonzero_rows": 72192,
+      "multi_output_rows": 72192,
+      "total_owned_tuples": 7683076,
+      "max_tuples_one_row": 136
+    }
+  },
+  "actual_transition_tail_ascending_output_and_inverse_descending": true,
+  "row_memory_bound": "one original logical row plus one candidate and reverse; complete giant word is not materialized",
+  "native_leaves_or_giant_G_powers_executed": false,
+  "physical_C_or_T6_proved": false,
+  "GR_closed": false
+}

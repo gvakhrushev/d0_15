@@ -1,0 +1,119 @@
+{
+  "status": "PASS_INDEPENDENT_READY_AND_A16_BOUNDED_LITERAL_REVERSE",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80"
+  },
+  "READY_tests": [
+    {
+      "READY_flags": 3,
+      "literal_depth": 0,
+      "actual_blocks": 3,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 3,
+      "literal_depth": 1,
+      "actual_blocks": 3,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 3,
+      "literal_depth": 2,
+      "actual_blocks": 3,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 3,
+      "literal_depth": 3,
+      "actual_blocks": 3,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 5,
+      "literal_depth": 0,
+      "actual_blocks": 7,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 5,
+      "literal_depth": 1,
+      "actual_blocks": 7,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 5,
+      "literal_depth": 2,
+      "actual_blocks": 7,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 5,
+      "literal_depth": 3,
+      "actual_blocks": 7,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 8,
+      "literal_depth": 0,
+      "actual_blocks": 13,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 8,
+      "literal_depth": 1,
+      "actual_blocks": 13,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 8,
+      "literal_depth": 2,
+      "actual_blocks": 13,
+      "keeps_uncompute_native_depth": true
+    },
+    {
+      "READY_flags": 8,
+      "literal_depth": 3,
+      "actual_blocks": 13,
+      "keeps_uncompute_native_depth": true
+    }
+  ],
+  "bounded_actual_A16_quantum_walk": [
+    {
+      "literal_depth": 0,
+      "native_blocks": 14,
+      "actual_retained_slots": [
+        0,
+        17
+      ],
+      "controller_tuples_suppressed": true
+    },
+    {
+      "literal_depth": 1,
+      "native_blocks": 14,
+      "actual_retained_slots": [
+        0,
+        17
+      ],
+      "controller_tuples_suppressed": true
+    },
+    {
+      "literal_depth": 2,
+      "native_blocks": 14,
+      "actual_retained_slots": [
+        0,
+        17
+      ],
+      "controller_tuples_suppressed": true
+    }
+  ],
+  "root_phase_native_map_commutes_with_literal_inverse_depths": 4,
+  "logical_controller_giant_word_executed": false,
+  "native_huge_repeat_expanded": false,
+  "physical_T6_or_marks_proved": false,
+  "GR_closed": false
+}

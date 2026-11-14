@@ -1,0 +1,51 @@
+{
+  "status": "PASS_ACTUAL_A17_OUTER_BOUNDARY_AND_A25_REMAP",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/h1_namespace.py": "0a11a40f7c6e1c0cdb35be63bfb4e8704eb74ab17a8d1e0d1b2d40e8dabbc03e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80"
+  },
+  "actual_READY_total_flags": 10249327,
+  "actual_processor_zero_births": 21210979,
+  "first_boundary_native_AST_checks": [
+    {
+      "depth": 0,
+      "first_stage": "ZERO",
+      "actual_blocks": 4,
+      "intrinsic_inverse_depth": 0,
+      "true_inversion_depth": 0,
+      "global_remap_exact": true
+    },
+    {
+      "depth": 1,
+      "first_stage": "READY_UNCOMPUTE",
+      "actual_blocks": 4,
+      "intrinsic_inverse_depth": 1,
+      "true_inversion_depth": 2,
+      "global_remap_exact": true
+    },
+    {
+      "depth": 2,
+      "first_stage": "ZERO",
+      "actual_blocks": 4,
+      "intrinsic_inverse_depth": 0,
+      "true_inversion_depth": 2,
+      "global_remap_exact": true
+    },
+    {
+      "depth": 3,
+      "first_stage": "READY_UNCOMPUTE",
+      "actual_blocks": 4,
+      "intrinsic_inverse_depth": 1,
+      "true_inversion_depth": 4,
+      "global_remap_exact": true
+    }
+  ],
+  "A17_forward_16_actual_blocks_equal": true,
+  "all_stages_or_billion_blocks_executed": false,
+  "no_giant_repeat_expanded": true,
+  "physical_marks_and_admission_proved": false,
+  "GR_closed": false
+}
