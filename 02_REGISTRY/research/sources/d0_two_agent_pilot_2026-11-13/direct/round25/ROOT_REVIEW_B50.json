@@ -1,0 +1,17 @@
+{
+  "status": "CONSUMED_INDEPENDENT_REVIEW",
+  "review_round": 50,
+  "review_commit": "74a3fcd28251ce58bdb22f7a5fffbc983dc77dff",
+  "pinned_files_sha256": {
+    "A25_ACTUAL_PROVIDER_REMAP_CHECK.json": "58782ec8ead0d45c669d79d011230b7cfc99a19340ef5fbcb7d8cd6b5a0bae30",
+    "A25_NAMESPACE_BIT_ORDER_CHECK.json": "24c00eaffab0d49ba881616ea83c24178893635de0767d75c4e011c275b2adb6",
+    "B50_A25_NAMESPACE_INDEPENDENT_RU.md": "aa85f72382c7c01b3b1e4da3f70983db2897e5c00fdcbb762cb9f52f1d89c97f",
+    "audit_a25_namespace.py": "b6eac899b853b29848073539cabb1f6dda97c36ce8ffb95f2c8d8e378bc3f172",
+    "check_a25_provider_remaps.py": "6210e96254200533c057220ac2065b70802b086e2ce2ae402093824b05681efb"
+  },
+  "current_input_pins_rechecked": 4,
+  "root_reexecuted_independent_scripts": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "consumed_result": "All1372 actual source bindings and original A15 bit encoding; disjointness and actual provider remap samples"
+}

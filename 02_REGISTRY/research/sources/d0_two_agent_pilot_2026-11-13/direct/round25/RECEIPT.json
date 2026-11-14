@@ -1,0 +1,33 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "baseline_commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "file_sha256": {
+    "GLOBAL_H1_CHECK.json": "e861ed73354dfbf625a8ec23ad28040cddddb933a5dc122ec149b98c6c133b0a",
+    "GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "GLOBAL_WORD_AND_SCALAR_CORNER_RU.md": "378f49497156a1b41ea638ab92ef88a5122a4e40211721637f38e4adfd8c5588",
+    "H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "REPORT_REVERSE_CHECK.json": "adcb37b2dbbdc48235535711ecf5ce25108097138318b6af6cde709198915c95",
+    "RESULT.json": "5253eed701bf449645cb80ac2b45eae04dd876c059111f59c8c7f89d296f39a8",
+    "RESULT_RU.md": "7a4e5049b741123245048ebdb0e6c6f8ac15d929c95724393411fcc3536e07e8",
+    "ROOT_REVIEW_B49.json": "1f9902df86d5aee6927754daf50c095e1360c72974acfbad6ced668e124416fe",
+    "ROOT_REVIEW_B50.json": "64a88ff66842e350bb1796a9a7a4a4aeb6a7959ed4487e1e670ab5e38b6336cf",
+    "ROOT_REVIEW_B51.json": "921ab7015da8a07c2fd0681e665b9d1b13a1ffc02a24212a7a1cd562c97ed0e8",
+    "ROOT_REVIEW_B52.json": "a84a373c1a2bf0598a8d36a882a1490d05ef6347109e3d381499c898e1914de7",
+    "check_global_h1.py": "a8ce4e60455f6ba3bd737f51b219d9e3ca7d798c9794608f18c6bdca0b52fd60",
+    "check_reversible_report_stream.py": "06384cb9da643bf3ee905df7227d165550e3f9613c4e6c3bed17d59b62c5946e",
+    "global_h1.py": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+    "h1_namespace.py": "0a11a40f7c6e1c0cdb35be63bfb4e8704eb74ab17a8d1e0d1b2d40e8dabbc03e",
+    "reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d"
+  },
+  "checks": [
+    "REPORT_REVERSE_CHECK.json",
+    "GLOBAL_H1_CHECK.json",
+    "ROOT_REVIEW_B49.json",
+    "ROOT_REVIEW_B50.json",
+    "ROOT_REVIEW_B51.json",
+    "ROOT_REVIEW_B52.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

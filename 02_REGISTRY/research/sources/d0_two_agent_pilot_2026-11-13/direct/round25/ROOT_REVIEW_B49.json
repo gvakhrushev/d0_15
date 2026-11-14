@@ -1,0 +1,25 @@
+{
+  "status": "CONSUMED_INDEPENDENT_REVIEW",
+  "review_round": 49,
+  "review_commit": "46c4a4eafe035fffb8ac640ffc79715d9b51af24",
+  "pinned_files_sha256": {
+    "B49_SC6_ACTIVE_PORT_AND_AUX_RU.md": "925848c256bdde5b9174f103ea2ac02b5ce9b69c9082dc04f94252cc9a7eda09",
+    "REPORT_SELECT_AUX_NAMESPACE_CHECK.json": "52191741611891c8437b417c99689b42280a9b6ce0f6b8af125e222ffed77d20",
+    "SC6_ACTIVE_PORT_OWNER_CHECK.json": "410348a8dcd1a8ad7e18c8cde0b7e3562d0ef6aea0e1c545159d69562c930d17",
+    "SC6_FULL_ECHO_COST_CHECK.json": "9ce3b0c2bbd3bf4909bb545180fe55b2cfdc856215caccf0b1f96255c22c5cf8",
+    "SC6_OWNER_PIN.json": "4d6b42ff255bc3cbde8905ff3aedfd89cfea8e6e73ce6a82c99240744c37c699",
+    "SELECT_AUX_ALL_SECTORS_CHECK.json": "247e308763814e1bcea71dab7d4e1ad0a40fd51b0fefbfb3934683fe1ba47bfd",
+    "SIGMA_OWNER_BINDING_CHECK.json": "73f19e64525929266b2a1a85f6cea4cfdb2b69c4a158bfbe73bd1ce4ba94ef5e",
+    "audit_report_aux_binding.py": "6b556cb6ba8ed998b7f83d374213d4dce356ce7ad64eda3e03993756c09a69bf",
+    "audit_sc6_actual.py": "db5bde957c94cc692545f5e7bff5c76044e8ff067e7dd05a6667cce6018810ee",
+    "audit_select_aux_all.py": "396cfce5e46c955c5b952913d118142f2c72da1931cf8283e928435bc23cf986",
+    "check_sc6_echo_cost.py": "4d3c7d5e219be8ff47dbaa8641b986fc9dabfe597188a52aec75e26f58a09517",
+    "check_sigma_owner_binding.py": "6a1ca11e3449076faf752e8419c3b58c492c588b65ea1a5f33b7cdd6a02373db",
+    "pin_sc6_owner.py": "aef202ff80873f3f3deeeed342db58debdb4faef5de7dfa0e2f6f58b35dae667"
+  },
+  "current_input_pins_rechecked": 20,
+  "root_reexecuted_independent_scripts": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "consumed_result": "Original active port and sigma binding; all finite SELECT aux controls and report namespaces; actual SC6 law and inverse-price distinction"
+}

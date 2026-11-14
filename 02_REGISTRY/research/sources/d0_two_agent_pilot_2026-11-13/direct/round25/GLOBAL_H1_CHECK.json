@@ -1,0 +1,52 @@
+{
+  "status": "PASS_GLOBAL_BINDING_CHRONOLOGY_AND_LITERAL_REVERSE",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/check_global_h1.py": "a8ce4e60455f6ba3bd737f51b219d9e3ca7d798c9794608f18c6bdca0b52fd60",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/global_h1.py": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/h1_namespace.py": "0a11a40f7c6e1c0cdb35be63bfb4e8704eb74ab17a8d1e0d1b2d40e8dabbc03e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d"
+  },
+  "all1389_stages_checked": true,
+  "all1372_source_layouts_validated": true,
+  "actual_source_sample_blocks": 2744,
+  "actual_SITE_sample_blocks": 4,
+  "actual_local_report_sample_blocks": 2,
+  "full_SC6_forward_leaves": 18176,
+  "full_SC6_literal_depths_checked": [
+    1,
+    2,
+    3
+  ],
+  "all_slot_integration_fixture": [
+    {
+      "A_literal_depth": 1,
+      "native_blocks": 20946
+    },
+    {
+      "A_literal_depth": 2,
+      "native_blocks": 20946
+    },
+    {
+      "A_literal_depth": 3,
+      "native_blocks": 20946
+    },
+    {
+      "W_literal_depth": 1,
+      "native_blocks": 41893
+    },
+    {
+      "W_literal_depth": 2,
+      "native_blocks": 41893
+    }
+  ],
+  "full_huge_source_and_report_providers_replaced_only_in_fixture": true,
+  "all_actual_giant_provider_streams_executed": false,
+  "exact_2x2_commutant_identity_integer_checks": 343,
+  "commutant_examples_not_a_substitute_for_provider_symmetry_proofs": true,
+  "conditional_canonical_input_error_lt": "2^-3232",
+  "physical_births_marks_clock_admission": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
