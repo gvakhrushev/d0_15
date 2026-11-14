@@ -1,0 +1,145 @@
+{
+  "status": "PASS_ACTUAL_A20_PAIR_BINDINGS_EXACT_SMALL_NATIVE_COLUMNS",
+  "library_sha256": "7fca5863f6104a1647300c3219b3c3835d628daaa703e9b511c58461bd0c9c6d",
+  "checker_sha256": "c57ab74d6b7fbf3e1811818cf51133bbb746da915f3b1c44407e93195db44da6",
+  "reports": [
+    {
+      "mode": 1,
+      "pair": [
+        1,
+        2
+      ],
+      "CAR_parity": 1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 1,
+      "pair": [
+        9,
+        10
+      ],
+      "CAR_parity": -1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 1,
+      "pair": [
+        5,
+        6
+      ],
+      "CAR_parity": -1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 1,
+      "pair": [
+        13,
+        14
+      ],
+      "CAR_parity": 1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 2,
+      "pair": [
+        1,
+        4
+      ],
+      "CAR_parity": 1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 2,
+      "pair": [
+        9,
+        12
+      ],
+      "CAR_parity": 1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 2,
+      "pair": [
+        3,
+        6
+      ],
+      "CAR_parity": 1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 2,
+      "pair": [
+        11,
+        14
+      ],
+      "CAR_parity": 1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 3,
+      "pair": [
+        1,
+        8
+      ],
+      "CAR_parity": 1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 3,
+      "pair": [
+        5,
+        12
+      ],
+      "CAR_parity": -1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 3,
+      "pair": [
+        3,
+        10
+      ],
+      "CAR_parity": 1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    },
+    {
+      "mode": 3,
+      "pair": [
+        7,
+        14
+      ],
+      "CAR_parity": -1,
+      "exact_columns": 512,
+      "small_K": 4,
+      "forward_leaves": 162
+    }
+  ],
+  "exact_full_columns": 6144,
+  "actual_SourceI_spin": "diag(J,-J)",
+  "tested_branch_grade_port_spin_oldRIGHT_all_columns": true,
+  "scope": "Small power and reduced external predicate; source large-k interval bounds and full control bindings are separately checked.",
+  "full_huge_word_executed": false,
+  "GR_closed": false
+}
