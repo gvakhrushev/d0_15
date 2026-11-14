@@ -1,0 +1,25 @@
+{
+  "status": "PASS_CONDITIONAL_INDEPENDENT_A36_OUTER_ROWS_AUDIT",
+  "four_endpoints_actual_G_CX_placements_checked": true,
+  "same_backward_full_prefix_through_A30_core": true,
+  "three_delta_bound_from_two_certified_G_powers": true,
+  "nonsymmetric_actual_M_half_split_error_under_Gamma_s_lt": "2^-74 conditional",
+  "each_outer_FD_over_u_Gamma_s_gt": "2^-46 conditional",
+  "A31_J_inverse_for_backward_used": false,
+  "same_task_membership_or_FN_fibre_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round71/audit_a36_independent.py": "79e5d99f104f64258b3800016d6874a9e2bf9c4e774f16ac0b511640f3e3318d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/independent_outer_pairs.py": "dfa9338e3103ac9188472aafeace6eb19a5279170f06354a1133680566c0c70a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/INDEPENDENT_OUTER_PRICE_ROWS_RU.md": "d84d1ed2b5f8eee955847b67bcddc9997ed458013a9d0cb603fd4b8132f6ca03",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/INDEPENDENT_OUTER_PAIRS_PLAN.json": "42d3e3b1404af520f564b9284d04c5b2a769cdb60ee58924d172bb267ae79dcd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/INDEPENDENT_OUTER_PAIRS_CHECK.json": "83fe70ce6389d9d00ff480dc60c592176dbae87d2d8b4633b924f31311428a7e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/finite_book_comparison.py": "eff94dfc2fea3b808be59d5cc889b8f8e989fbbd60b3fbb9ed234cff0c911901",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/SAMPLING_SOURCE_BIAS_RU.md": "94c859dbf7e5f1b293ac6f8a600917d89989e3d0b1af5268e4e2258dae9a2b66",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round66/B66_A33_INDEPENDENT_AUDIT_RU.md": "8baaa0263324ebb0785bc41095cbb4284ed7207d7e531510aee287e4e721bca9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round69/B69_ACTUAL_TASK_INPUTS_AND_ADMISSION_RU.md": "cfb9fdbb5af3c3a4092fceea2c467712efcf81c8e787aa88c70a310e1bfaace0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round70/B70_ACTUAL_INNER_COMMUTANT_RU.md": "fc242368712969edc1cff07379a9996714b48a64fb188ae22a1266efaa5b9011"
+  }
+}
