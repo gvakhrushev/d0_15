@@ -1,0 +1,19 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "base_A_commit": "77b985b4ac730146e99d50f8fbd4724f50707e94",
+  "files_sha256": {
+    "CERTIFIED_CONTROLLED_ACTUAL_W_RU.md": "256324c5617707b1ee410d0ab6c7dec5178cc1563efba0761d275539ce63f881",
+    "GCX_POST_MACROS_CHECK.json": "f169d8149698877f5b66d652b0f9b65e3d49c9913391e88168ad5f65f14810f6",
+    "POST_ANGLE_CERTIFICATE.json": "0c69b6cf5008e76feb4cc7b5af5e656a353b0ef36b6ce9b639e1839e38a8a186",
+    "RESULT.json": "a45fa7e443071847e25d01db8b4712e13be607da63f2935b345a6a1772934194",
+    "ROOT_REVIEW_B74.json": "bac2e4a48f7e8c69bf6096f57b708ef282b69b6e33f93b471f013bd5cfd6cbeb",
+    "ROOT_REVIEW_B75.json": "41775032a2e5171269dfc0646bc40af8d598895e930f67d1fcbad537907bf47e",
+    "certify_post_angles.py": "4867b13fdfe946345360a017f1311ea20c44a526a258ff9319ff793592dd40c1",
+    "check_gcx_post_macros.py": "b31c736781fc250de0a1221ad841721d48571b3b5c211169db0315f67c0f8787",
+    "gcx_anchor_phase.py": "738b460c942e55f9926f62b4d5341087e47bb81903d8bc663af71cfbfe50d659",
+    "gcx_post_macros.py": "a80bccee2db1faace57f525e7a1e08f0ff69f14089c2f1c04dac11558863651d"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "local_only": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_INDEPENDENT_B74_REPLAY_AND_PINNED_BYTES",
+  "B_commit": "ca40c867377ed5dcfac82512c58b04b387f03e5b",
+  "byte_identical_check_replay": true,
+  "B_files_written": false,
+  "stationary_alternative_occupied_vector_not_all_column_A37_identity": true,
+  "root_consumes_LCU_half_and_error_bounds_not_complete_native_U": true,
+  "B74_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round74/B74_NATIVE_POST_SAM_AMPLIFICATION_RU.md": "f2fbec5b1b2a0c02fc56e8bff69de43c1c87d857bf0995a8c5b0f70c1639e85a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round74/check_amplification_route.py": "a525320c3bcfb13a9fc5d7c26d5cdf92fba880091bac4bec5d9c1fe228299d59",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round74/lazy_anchor_phase.py": "dd901bc4b2a88f72bebd0d877570b6ad3b7c02046702d6cd2a9a4de5cc63aa4f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round74/AMPLIFICATION_ROUTE_CHECK.json": "c64cc2d05b82e851c7913293c77729e54dba5052a6016edc74f19cb511a865e5"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

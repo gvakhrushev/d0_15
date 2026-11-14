@@ -1,0 +1,21 @@
+{
+  "status": "PASS_INDEPENDENT_B75_PROOF_REVIEW_PINS_AND_MACRO_REPLAY",
+  "B_commit": "6edfae10af20e8053364d67bc70489e2de2a81e0",
+  "independent_rectangle_proof_read_and_accepted": true,
+  "all_seven_numerical_bounds_and_exponent_hashes_checked": true,
+  "large_rectangle_calculation_repeated_by_root": false,
+  "short_macro_replay_byte_identical": true,
+  "B_files_written": false,
+  "real_A38_production_prefix_integration_passed": true,
+  "B75_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round75/.gitignore": "f5cd54b5791eefaf4f106b9b46f882e46cb88298510de7d6c049ef3c26dfebc8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round75/B75_INDEPENDENT_A38_AUDIT_RU.md": "6c5d7f430ed195bff975679a175e865dfc1cdb244a2a84bad6fca436a8fdc0e5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round75/B75_INDEPENDENT_ANGLE_AUDIT.json": "db78300458492f828a5b1c4c447df118a25c3a6e1d1c7432a174d8c9e699b93f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round75/B75_MACRO_ALGEBRA_CHECK.json": "ccdec68ac6b9867c364521bc2ac5b73abd8f04794a26ad7f6c3987d9a3e1f0b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round75/verify_gcx_post_macros.py": "aea3a3cb965ae5a3a7738142f0b04dc92972da17d1712dd2252bef3a85cd4602",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round75/verify_post_angles_independent.py": "4d622fc39145e221e3a52a5e76e1c13b0bb314772f2ebe35223dad33bc2e6cbd"
+  },
+  "full_post_assembly_or_price_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
