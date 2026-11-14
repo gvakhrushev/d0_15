@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "e8f0e53a2bba3634e2c15d8b097f2abff428901c",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round66/B66_A33_INDEPENDENT_AUDIT_RU.md",
+      "sha256": "8baaa0263324ebb0785bc41095cbb4284ed7207d7e531510aee287e4e721bca9"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round66/INDEPENDENT_A33_AUDIT.json",
+      "sha256": "b3997ecf724b2f062fbf9bef50cc509faac04eb22aabe5d4eb895fb660e844be"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round66/independent_a33_audit.py",
+      "sha256": "99ddc68cb613713805087b0b44c7329fb1eb942832a07bf015bc6319a54f5fa0"
+    }
+  ],
+  "source_hashes_checked": 13,
+  "scope": "A33 independent exact source-DAG material secant, actual coordinates/incidence and PF, covariance and error/norm budget. Existing B24/B65/A27/A30/A31/A32/R6/R11 assumptions retained.",
+  "physical_C_closed": false,
+  "GR_closed": false
+}
