@@ -1,0 +1,20 @@
+{
+  "status": "PASS_PAIR_EMISSION_INTERFACE_EXACT_SMALL_COLUMNS",
+  "ordered_distinct_grade_pairs": 240,
+  "all_pairs_grade_columns": 3840,
+  "extra_control_pair_pattern_cases": 32,
+  "extra_control_grade_flag_columns": 2048,
+  "additional_arbitrary_port_spin_oldRIGHT_columns": 2048,
+  "all_extra_controls_read_only": true,
+  "all_unselected_patterns_exact_identity": true,
+  "actual_ustar_specialization_equal": true,
+  "independent_generic_proposal_targets": [
+    "0",
+    "-0.25"
+  ],
+  "incorrect_target_interval_rejected": true,
+  "protected_control_alias_rejected": true,
+  "angle_rule": "2^(3+len(extra_controls))*k*theta; input a cross coefficient (-1)^pivot_bit sin(angle)",
+  "scope": "exact k=1 native words; caller must separately certify target angle intervals and account resources/births/marks",
+  "GR_closed": false
+}

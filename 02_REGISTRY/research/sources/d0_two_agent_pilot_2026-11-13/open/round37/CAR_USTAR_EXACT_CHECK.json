@@ -1,0 +1,29 @@
+{
+  "status": "PASS_EXACT_NATIVE_ALL_SMALL_COLUMNS_AND_ACTUAL_DAG",
+  "input_sha256": "ca8e16b8dbff8bacc65dce025bd854ab021024463708cd9af4036e3f2f241344",
+  "exact_field": "Z[a], a=sqrt(p), a^4+a\u00b2\u22121=0",
+  "literal_Spin": "diag(J,-J), both spin bits",
+  "reports": [
+    {
+      "k": 1,
+      "forward_calls": 78,
+      "literal_reverse_calls": 166,
+      "all_columns": 256,
+      "inverse_cases": 256
+    },
+    {
+      "k": 2,
+      "forward_calls": 86,
+      "literal_reverse_calls": 230,
+      "all_columns": 256,
+      "inverse_cases": 256
+    }
+  ],
+  "all_exact_small_k_columns": 512,
+  "all_exact_small_k_forward_then_literal_inverse": 512,
+  "actual_giant_DAG_structurally_verified": true,
+  "actual_giant_word_expanded_or_executed": false,
+  "identity_on_SAM_SITE_RIGHT_and_other_spectators": true,
+  "oldRIGHT_untouched_every_primitive": true,
+  "GR_closed": false
+}

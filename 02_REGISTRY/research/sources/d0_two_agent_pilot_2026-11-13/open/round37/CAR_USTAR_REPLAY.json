@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ISOLATED_USTAR_REBUILD",
+  "builder_sha256": "937a999d1e246056ee2d894777ee8c5a9bf202100d7dce4e3067d8a7ece09eb4",
+  "CAR_USTAR_NATIVE_sha256": "ca8e16b8dbff8bacc65dce025bd854ab021024463708cd9af4036e3f2f241344",
+  "rebuilt_artifact_byte_identical": true,
+  "owner_libraries_read_only": true,
+  "stdout": "{\"status\": \"CERTIFIED_ACTUAL_CAR_USTAR_NATIVE_DAG\", \"k_binary_length\": 4142, \"bits\": 4096, \"interval_precision\": 16640, \"forward_counts_symbolic\": \"G_port=4k,G_other=4k,CX=54,SourceI=16\", \"literal_inverse_counts_symbolic\": \"G_port=8k,CX=24k+54,SourceI=32k+48\"}",
+  "huge_native_word_executed": false,
+  "GR_closed": false
+}
