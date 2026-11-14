@@ -1,0 +1,23 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "2364d37bb7097c3e6a352ce8f4e616b8e9bd787a",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round64/A32_FINITE_COMPARISON_INDEPENDENT.json",
+      "sha256": "adb303ee9fa5f85bcb1e694737790413b8a55fc571cd6b8626222208339f2136"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round64/B64_A32_FINITE_BOOK_AUDIT_RU.md",
+      "sha256": "220168d2f82dac36afa5e6079f0aa3ed8635f69fbd73348dcf9f904a1ccb5b4f"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round64/audit_a32_finite_comparison.py",
+      "sha256": "f4ba1fa60567c56455150bb55cffa2cc19850a604f184ca3d20fcb5f3b7a0061"
+    }
+  ],
+  "source_hashes_checked": 5,
+  "scope": "Independent A32 actual iterator ordering, endpoint count and mark ordinals, late-birth dimension, common last gate and full H+J comparison bound; no padded native zero-angle centre or full Cost-Info selection.",
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

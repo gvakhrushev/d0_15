@@ -1,0 +1,39 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "a9758594897964fc73e1ac6375df45883e591ce0",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/B63_SUFFICIENT_FINITE_COMPARISON_RU.md",
+      "sha256": "f3d204e293432abef185e6c33638f64058cd027f0587c286105674caba6a8c79"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/DETERMINANT_FD_BUDGET.json",
+      "sha256": "889dea49b798937d0b09579189220ce690cab3c4231f8a5ab3ffa48108054837"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/SUFFICIENT_ENDPOINT_G_CERTIFICATE.json",
+      "sha256": "0cb7105883d835fc146d9d3b0305b5006068bc5e656cf9f909451ec8acb5fce2"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/SUFFICIENT_G_INDEPENDENT_CHECK.json",
+      "sha256": "a0a6aae7999020d4c0983ef85ab11cde1801007a18ca60f79a942e01ed65f751"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/certify_determinant_fd_budget.py",
+      "sha256": "ddf5310704a6808d55ceb72766ca9edda8f10c4c7fe1bb5ae719e253ecaf4bf4"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/certify_sufficient_endpoint_powers.py",
+      "sha256": "41a77ed28b2f24835a044a2660eae84e23159334ee3b858fc986b1718ad38d29"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/verify_sufficient_powers_independent.py",
+      "sha256": "87390536f8782d064ecb185cf69158ba644ca6a4ea9db24f89caf70e2ba8eb25"
+    }
+  ],
+  "source_hashes_checked": 9,
+  "scope": "Pinned sufficient actual positive G powers at t=2^-1618 with error <2^-4852, independent interval validation, exact rational determinant/heat/gain budget.",
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

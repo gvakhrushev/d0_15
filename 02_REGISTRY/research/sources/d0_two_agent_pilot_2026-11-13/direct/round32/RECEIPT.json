@@ -1,0 +1,24 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "FINITE_BOOK_COMPARISON_CHECK.json": "a64a053f3cff5de03466321d694540d8cbc8e9ce0ce229cd6d4ecf4e04e5bab2",
+    "FINITE_BOOK_COMPARISON_PLAN.json": "0c7ec7f984410df24a7e67de0012f7418a2bb3782b6a1d53f97718a6ab49b155",
+    "FINITE_FULL_BOOK_COMPARISON_RU.md": "4da489ea0ad107a2f1654f88e0211484adca5251ffaa4c5eb633bb3065c7615d",
+    "RESULT.json": "f4f5e4a13d832d67e33caffba4ae897313bc594d849ab5d6074398be556f49e3",
+    "RESULT_RU.md": "6a43e6db99ae7dc381377ac7ac69ed043607e9ed518004b2d1caa6ca4b654d85",
+    "ROOT_REVIEW_B62.json": "dea16bc1b4a6063f811043dbaeeae7fe504fcc13a261e65ccbe12c885be34bfc",
+    "ROOT_REVIEW_B63.json": "3f8e60910c55f27f1455d5dc2fde1abb0fed62227887e9db002141755a85a8b6",
+    "ROOT_REVIEW_B64.json": "99786147203db2c61b945fdc82da38a776fe4eeea6cfd37bc91e1827c6f83141",
+    "check_finite_book_comparison.py": "3754f574e34f808d7c7e9dca3de00441c5a4a39cd9a8dc59d9944a29e3ab6c1d",
+    "finite_book_comparison.py": "eff94dfc2fea3b808be59d5cc889b8f8e989fbbd60b3fbb9ed234cff0c911901"
+  },
+  "checks": [
+    "FINITE_BOOK_COMPARISON_CHECK.json",
+    "ROOT_REVIEW_B62.json",
+    "ROOT_REVIEW_B63.json",
+    "ROOT_REVIEW_B64.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
