@@ -1,0 +1,23 @@
+{
+  "status": "PASS_UNIFORM_APPROXIMATE_NATIVE_READY_BOUND",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_COMPILATION.json": "303ecd70a75c4a0141098f66533d4f3c57d3d8816d42685d84dc5f016eac5e26",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/SOURCE_SELECT_COMPILATION.json": "8b820b0143099b8aca2d82735c68152481ae9598b902f2d0e110031cf38c0b7b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/PREPROCESSOR_READY_COMPOSITION.json": "4091efc154b7af1c0f63a6647699e13f7e6cd715fd470b0db31b85710bfedfdc",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round52/GLOBAL_HYBRID_FIBRES_CHECK.json": "49a75475e3d6c30badf070f904557b911899d8d161fbacd953921e7a636a08c0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round53/READY_GAIN_INTEGER_INDEPENDENT_CHECK.json": "bb8181d07b0eb1feb30ae326a766868c5d20b5e10078302c49aa0fd26911c6b0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round53/IDEAL_READY_EFFECT_STRUCTURE_CHECK.json": "e03ece67746e67404bc440cfedb5337f5de71678ba7139f517555ad697bf9bc6"
+  },
+  "seven_report_approximate_macro_count": 162754649904,
+  "per_report_count": 23250664272,
+  "native_per_report_isometry_error_lt": "2^-4061",
+  "READY_effect_distance_to_ideal_scalar_I_lt": "2^-4060",
+  "per_report_READY_probability_on_arbitrary_external_input": "0.74067 < P_actual < 0.74070",
+  "joint_all_seven_READY_probability": "0.12228 < P_actual_joint < 0.12232",
+  "logic": "For each actual report with its own canonical fresh RAW resource arena, E_ready differs in operator norm by at most 2 epsilon from alpha I, uniformly over source/SITE/SAM/aux/Spin and previous retained records. Future report resources stay fresh; old READY flags are not targeted later. Apply the interval conditionally to each retained success event; SC6 only controls on the flags.",
+  "exact_actual_effect_scalar_or_field_independent": false,
+  "physical_RAW_births_or_original_moment_law_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
