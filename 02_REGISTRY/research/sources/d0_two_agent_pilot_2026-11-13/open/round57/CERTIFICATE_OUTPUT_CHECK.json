@@ -1,0 +1,25 @@
+{
+  "status": "PASS_OUTPUT_CONSISTENCY_NOT_A_POWER_RECOMPUTATION",
+  "k_bit_length": 7456,
+  "precision_bits": 18000,
+  "rigorous_error_exponents": {
+    "2": {
+      "independent_error_bound_lt_2_to_minus": 7456,
+      "direct_error_bound_lt_2_to_minus": 7456
+    },
+    "14": {
+      "independent_error_bound_lt_2_to_minus": 7453,
+      "direct_error_bound_lt_2_to_minus": 7453
+    },
+    "4": {
+      "independent_error_bound_lt_2_to_minus": 7455,
+      "direct_error_bound_lt_2_to_minus": 7455
+    },
+    "12": {
+      "independent_error_bound_lt_2_to_minus": 7454,
+      "direct_error_bound_lt_2_to_minus": 7454
+    }
+  },
+  "input_hashes_verified": true,
+  "complete_compiler_or_physical_admission_proved": false
+}
