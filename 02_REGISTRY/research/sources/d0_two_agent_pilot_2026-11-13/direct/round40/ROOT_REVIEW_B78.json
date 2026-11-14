@@ -1,0 +1,16 @@
+{
+  "status": "PASS_B78_TYPED_FIBRE_PROOF_REVIEW_AND_BYTE_IDENTICAL_REPLAY",
+  "B_commit": "f939e880ab215b90cf59b2a91001a416366b5d20",
+  "fixed_logical_value_full_map_mismatch_not_general_H1_no_go": true,
+  "no_invented_mandatory_terminal_reader": true,
+  "narrow_SAM_only_slot_requires_all_column_private_return_or_new_owned_descriptor": true,
+  "passive_spin_lift_only_repairs_input_cut_type": true,
+  "B_files_written": false,
+  "B78_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round78/check_original_fibre_boundary.py": "8ab2b82bee4df631f12fb3436a9733e9548cfa8c26f5fa6beed010c025845b38",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round78/B78_ORIGINAL_H1_FN_ADMISSION_RU.md": "09455daa130401040bc154a6876991bf2d92c795b69074215960e13c3d955e94",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round78/B78_FIBRE_BOUNDARY_CHECK.json": "60a210cd063462b82c0448608dfe19bd56ddfec3ec941df7a46aff53a22a9b0f"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

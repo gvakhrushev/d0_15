@@ -1,0 +1,17 @@
+{
+  "status": "PASS_B79_ALL_PLANE_PROOF_REVIEW_AND_BYTE_IDENTICAL_REPLAY",
+  "B_commit": "bc1dfa7dbffd404518cac09afb3c45c9c7e89308",
+  "full_row_dimension_factor_including_nuclear_norm_accounted": true,
+  "fixed_actual_A39_centre_and_same_positive_original_exponent_for_signed_targets": true,
+  "deferred_final_G_compared_in_same_state_frame": true,
+  "finite_row_functional_not_exact_smooth_native_gradient": true,
+  "borrowed_private_clean_return_not_exact_SAM_only_slot_claim": true,
+  "B_files_written": false,
+  "B79_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round79/check_all_plane_bound_independent.py": "cc7ea298b6c2fee42c3655da3515468d048565465ca5fea30761bbb725fb9e8e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round79/B79_ALL_PLANE_AUDIT.json": "83eabd65556ca64a3af6eb23cc5661961121a3ada573ec66cac0753046075928",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round79/B79_ALL_PLANE_FINITE_AUDIT_RU.md": "e9c7f70870ae892605ba893ef4e6aeb67b5d578024606ff95f40938197cff54d"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

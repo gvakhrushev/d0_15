@@ -1,0 +1,18 @@
+{
+  "status": "PASS_ALL_SMALL_PLANES_FULL_TOY_CLOCK_AND_DIMENSION_AWARE_BOUNDS",
+  "exhaustive_small_planes": 120,
+  "all_basis_columns_checked": 1920,
+  "exact_symbolic_Givens_matrices_checked": 4,
+  "full_small_histories_replayed": 6,
+  "same_original_exponent_for_plus_and_inverse_targets": true,
+  "weight_sum_and_finite_covector_normalization_checked": true,
+  "all_row_dimension_debt_in_heat_paid": true,
+  "giant_word_or_plane_family_materialized": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round40/check_independent_post_planes.py": "93c0d546394eb531bb4288e497bf67d0667a179dcac6a0a33d38625bd8b0599a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round40/independent_post_planes.py": "5f30920f222bc67813df4bd562518a510b0b8c285e4c62c46aa5077e833c279b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round40/INDEPENDENT_POST_PLANES_PLAN.json": "f077a97ccf7da2395cbbf7817ddb1d28df736eca8ba78d7190c564d48d9ed78f"
+  }
+}

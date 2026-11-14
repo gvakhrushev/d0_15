@@ -1,0 +1,17 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "base_A_commit": "87f1ec9cc0a7eaf5868f31c3e4ed111f1cf65f02",
+  "files_sha256": {
+    "ALL_INDEPENDENT_POST_PLANES_RU.md": "4a6fdfa0f8e616f354479b907e7e4a23771e4de08ce1080c8800e37736562f08",
+    "INDEPENDENT_POST_PLANES_CHECK.json": "683bb0d9fb4b6dfca1606d5e93ee052727ee827be08df05f1d2a396e0d78bf13",
+    "INDEPENDENT_POST_PLANES_PLAN.json": "f077a97ccf7da2395cbbf7817ddb1d28df736eca8ba78d7190c564d48d9ed78f",
+    "RESULT.json": "c9fb4b2587f860b31d4fdc86528ccb0ca1b90522c065a2472d85b86c5c0995bc",
+    "ROOT_REVIEW_B78.json": "66625b6d5161ef6b7b5acca068d625f2efc6878c54b4b623cf295afc2b92aa59",
+    "ROOT_REVIEW_B79.json": "6fa64c5adea4e00d2b139fcf4e610f3918cf43e2a842a5e0a30c375b19bd991b",
+    "check_independent_post_planes.py": "93c0d546394eb531bb4288e497bf67d0667a179dcac6a0a33d38625bd8b0599a",
+    "independent_post_planes.py": "5f30920f222bc67813df4bd562518a510b0b8c285e4c62c46aa5077e833c279b"
+  },
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
