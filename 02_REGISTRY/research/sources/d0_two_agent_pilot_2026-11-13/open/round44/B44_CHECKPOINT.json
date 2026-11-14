@@ -1,0 +1,28 @@
+{
+  "status": "B44_INDEPENDENT_A21_INTEGRATION_CHECKPOINT",
+  "A21_input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round21/choi_loader.py": "effa9f8898ea63ce18faa722c919cd068323fe2b079ee2a5e83db85667dc5bb7",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round21/CHOI_LOADER_PLAN.json": "ee6f798c58befd49a771f92bfe7dc30c874164ed82b484318bd10ebac7e24c7a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round21/check_choi_loader.py": "e3a9493e9370b2580b8fc70b40bad370754408a189a0651f759c0f35e4b29491"
+  },
+  "file_sha256": {
+    "A21_INDEPENDENT_INTEGRATION_RU.md": "a270fca44ba149e07d27b9ce559c43d11cc38e5f726b250b1e78112c8991adfb",
+    "audit_loader_integration.py": "5ffc632ea0cd26a9e8385f00aba3ad08dcf9d49b8610042ebe2d5658f944fbdb",
+    "audit_control_namespace.py": "5e10644e4beb8a6ca57eef2cdff2556d534eb295138aabaef57f5356e3221cf1",
+    "check_provider_literal_depths.py": "cd3dbc3f76d95736c8d67f5bd97ab4699c678db421c64193b93effa00726466e",
+    "check_actual_stage_depths.py": "28b2430e953b0bfdb71fc942881e13cb29a0e2c11cea0f734cfb81a846a006df",
+    "A21_INDEPENDENT_INTEGRATION_CHECK.json": "bbc3b4ea4e550d0f7b8bab471406d24aeae65f2bb2bdad79a50f0dec12fd8075",
+    "A21_NAMESPACE_CONTROL_CHECK.json": "daacf261eed77d31479af3164a43ecdc0f63254a3f471d12ad76c42b900a4b37",
+    "A21_LITERAL_DEPTH_CHECK.json": "f49da51dda1cdba25a3876b7974c20f5e3941c09b755e47980af630b5269284f",
+    "A21_ACTUAL_DEPTH_SAMPLES.json": "081e0606b73c0afd75798222c38c76ca4653fe80758f281e4667d76392301a80"
+  },
+  "Omega_error_lt": "2^-3250",
+  "half_joint_anchor_error_lt": "2^-3230",
+  "private_clean_wires": 24,
+  "joint_anchor_wires": 46,
+  "additional_A13_comparator_clean_wires": 45,
+  "outer_reflection_compiled": false,
+  "full_giant_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

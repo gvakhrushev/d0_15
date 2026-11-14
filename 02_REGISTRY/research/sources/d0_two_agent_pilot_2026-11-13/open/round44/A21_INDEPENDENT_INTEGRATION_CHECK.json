@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_A21_COVERAGE_NAMESPACE_COUNTS_AND_ERRORS",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round21/choi_loader.py": "effa9f8898ea63ce18faa722c919cd068323fe2b079ee2a5e83db85667dc5bb7",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round21/CHOI_LOADER_PLAN.json": "ee6f798c58befd49a771f92bfe7dc30c874164ed82b484318bd10ebac7e24c7a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round21/check_choi_loader.py": "e3a9493e9370b2580b8fc70b40bad370754408a189a0651f759c0f35e4b29491"
+  },
+  "banks": {
+    "y+": {
+      "coframe": 1024,
+      "link": 1024
+    },
+    "y-": {
+      "coframe": 1024,
+      "link": 1024
+    },
+    "f": {
+      "coframe": 4864,
+      "link": 17152
+    },
+    "0": {
+      "coframe": 1024,
+      "link": 1024
+    },
+    "x+": {
+      "coframe": 1024,
+      "link": 1024
+    },
+    "x-": {
+      "coframe": 1024,
+      "link": 1024
+    },
+    "q": {
+      "coframe": 4864,
+      "link": 1024
+    }
+  },
+  "coframe_sectors": 14848,
+  "link_sectors": 23296,
+  "independent_resource_classes": {
+    "coframe": 247,
+    "link": 336
+  },
+  "prefix_block_count": 22,
+  "little_endian_input_output_all_1024_pairs_checked": true,
+  "data_wires": 22,
+  "private_wires": 24,
+  "outer_joint_anchor_wires": 46,
+  "standard_outer_comparator_extra_clean_wires": 45,
+  "joint_comparator_minimality_not_claimed": true,
+  "raw_zero_22_and_24_costs_separate_verified": true,
+  "if_RAW_outer45_zero_inventory": {
+    "G_port": 45,
+    "CX": 270,
+    "SourceI": 180
+  },
+  "Omega_error_lt": "2^-3250",
+  "half_error_lt": "2^-3230",
+  "all_banks_forward_and_literal_inverse_inventories_match": true,
+  "full_native_word_executed": false,
+  "GR_closed": false
+}

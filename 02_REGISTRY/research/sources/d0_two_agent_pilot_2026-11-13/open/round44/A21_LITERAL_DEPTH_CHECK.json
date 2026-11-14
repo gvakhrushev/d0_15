@@ -1,0 +1,88 @@
+{
+  "status": "PASS_INDEPENDENT_A21_LITERAL_PROVIDER_AND_HALF_DEPTHS",
+  "A21_source_sha256": "effa9f8898ea63ce18faa722c919cd068323fe2b079ee2a5e83db85667dc5bb7",
+  "provider_depths": [
+    {
+      "literal_depth": 0,
+      "primitive_leaves": 48
+    },
+    {
+      "literal_depth": 1,
+      "primitive_leaves": 156
+    },
+    {
+      "literal_depth": 2,
+      "primitive_leaves": 372
+    },
+    {
+      "literal_depth": 3,
+      "primitive_leaves": 1020
+    }
+  ],
+  "half_levels_0_to_2_depths_0_to_3": [
+    {
+      "levels": 0,
+      "literal_depth": 0,
+      "primitive_leaves": 69
+    },
+    {
+      "levels": 0,
+      "literal_depth": 1,
+      "primitive_leaves": 235
+    },
+    {
+      "levels": 0,
+      "literal_depth": 2,
+      "primitive_leaves": 535
+    },
+    {
+      "levels": 0,
+      "literal_depth": 3,
+      "primitive_leaves": 1435
+    },
+    {
+      "levels": 1,
+      "literal_depth": 0,
+      "primitive_leaves": 791
+    },
+    {
+      "levels": 1,
+      "literal_depth": 1,
+      "primitive_leaves": 1967
+    },
+    {
+      "levels": 1,
+      "literal_depth": 2,
+      "primitive_leaves": 4883
+    },
+    {
+      "levels": 1,
+      "literal_depth": 3,
+      "primitive_leaves": 13631
+    },
+    {
+      "levels": 2,
+      "literal_depth": 0,
+      "primitive_leaves": 3967
+    },
+    {
+      "levels": 2,
+      "literal_depth": 1,
+      "primitive_leaves": 9779
+    },
+    {
+      "levels": 2,
+      "literal_depth": 2,
+      "primitive_leaves": 25775
+    },
+    {
+      "levels": 2,
+      "literal_depth": 3,
+      "primitive_leaves": 73763
+    }
+  ],
+  "independent_leafwise_inverse_used": true,
+  "all_three_toy_stages_controlled_and_native": true,
+  "full_giant_word_executed": false,
+  "GR_closed": false
+}

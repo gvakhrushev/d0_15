@@ -1,0 +1,12 @@
+{
+  "status": "PASS_A21_ALL_SELECT_READ_ONLY_AND_NAMESPACE_BINDINGS",
+  "coframe_units": 294144,
+  "link_commands": 1781504,
+  "all_branch_patterns_equal_one": true,
+  "SAM_and_branch_readonly_all_stages": true,
+  "address_readonly_only_in_SELECT": true,
+  "aux_rebit_comparator_oldRIGHT_and_Choi_input_distinct": true,
+  "no_full_word_expansion": true,
+  "source_sha256": "effa9f8898ea63ce18faa722c919cd068323fe2b079ee2a5e83db85667dc5bb7",
+  "GR_closed": false
+}
