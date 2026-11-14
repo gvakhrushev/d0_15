@@ -1,0 +1,35 @@
+{
+  "status": "PASS_CONDITIONAL_EXPLICIT_MEAN_DECODER_BOUND",
+  "chart_m": 2688,
+  "interior_sites": 64,
+  "coordinate_counts": {
+    "coframe": 1024,
+    "proper_link": 1536,
+    "matter": 128
+  },
+  "link_blocks": 256,
+  "sampling_s": "2^-30",
+  "decoder": "u and Psi direct; theta_ab=(eta log(mean(U) U0^-1))_ab, a<b",
+  "pure_vertex_chart_exact_on_local_log_branch": true,
+  "ideal_additive_u_Psi_Jacobian_exact_identity": true,
+  "ideal_link_Jacobian_error_row_and_column_lt": "66*2^-30",
+  "single_rotation_exact_normalized_J": "sin(s)/(s*(1-2p^3*(1-cos(s))))",
+  "single_rotation_not_exact_identity": true,
+  "entry_error_assumption": "each actual source U mark <2^-3214 in full SAM/old pullback operator norm",
+  "actual_joint_Jacobian_spectral_error_lt": "2^-23",
+  "Neumann_inverse_norm_l2_lt": "1/(1-2^-23)",
+  "normalized_SAM_lift_norm_lt": "55",
+  "physical_raw_coordinate_lift_norm_lt": "55*2^30",
+  "raw_u_from_physical_e_Frobenius_derivative_lt": "20/3",
+  "mean_link_log_at_reference_norm_lt": "2*((6s)^2/(1-6s)+8e)",
+  "actual_numeric_J_or_reader_executed": false,
+  "original_mark_history_or_physical_comparison_admission_proved": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/CHART_ENVELOPE_RESULT.json": "e244b4c50f8c64a4f21a905958486f0aadbee629f1ac6df9edd90bfd75961eee",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/SOURCE_RAW_MARK_REGISTRY.json": "3c17d2d6d3eb65381dbca14c55f440315646e5ff91fc3ad1fc516777838cbb79",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418"
+  },
+  "GR_closed": false
+}
