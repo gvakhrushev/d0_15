@@ -1,0 +1,32 @@
+{
+  "status": "PASS_A16_NATIVE_GLOBAL_PREFIX_AND_SELECTED_BINDINGS",
+  "source_sha256": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+  "walk_roots": {
+    "H_f_before_inverse_PF": {
+      "logical_wires": 9093982,
+      "port": 9093982,
+      "checked_global_first_blocks": 64,
+      "first_block_types": [
+        "CCX",
+        "CX",
+        "X"
+      ]
+    },
+    "H_q_before_inverse_PF": {
+      "logical_wires": 378269,
+      "port": 378269,
+      "checked_global_first_blocks": 64,
+      "first_block_types": [
+        "CCX",
+        "CX",
+        "X"
+      ]
+    }
+  },
+  "selected_native_copy_blocks_checked": 6,
+  "selected_native_syntactic_primitive_leaves_checked": 174660,
+  "source_record_and_delta_not_targeted_by_native_primitives": true,
+  "protected_oldRIGHT_not_touched": true,
+  "scope": "first 64 actual lazy native blocks of each walk plus selected logical-copy lowering samples; not the full astronomical walk or all marks",
+  "GR_closed": false
+}

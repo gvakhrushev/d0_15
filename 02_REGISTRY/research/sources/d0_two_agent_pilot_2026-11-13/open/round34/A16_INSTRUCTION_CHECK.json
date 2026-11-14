@@ -1,0 +1,18 @@
+{
+  "status": "PASS_A16_ACTUAL_INSTRUCTION_IR_INTEGRATION",
+  "source_sha256": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+  "plan_degree": [
+    2,
+    2
+  ],
+  "one_instruction_elementary_logical_gates": 2475,
+  "representative_full_instruction_cases": 800,
+  "actual_A15_address_pairs_sampled": true,
+  "choi_and_nonzero_car_pair_inputs": true,
+  "data_copy_routing_and_invalid_offset": true,
+  "negative_phase_and_sign_controls": true,
+  "logical_read_only_records_SITE_controls_deltas_and_CAR_RIGHT": true,
+  "all_work_restored_zero": true,
+  "scope": "actual source_select.py ideal logical instruction IR; not full f/q degree, complete walk, native lowering or physical graph",
+  "GR_closed": false
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_A16_STRUCTURAL_H0_EXACT_NATIVE_INACTIVE",
+  "source_sha256": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+  "plans": [
+    {
+      "degree": [
+        82,
+        0
+      ],
+      "copy_enables_proved": 82
+    },
+    {
+      "degree": [
+        2,
+        2
+      ],
+      "copy_enables_proved": 4
+    }
+  ],
+  "inert_ideal_gate_instances_covered": 6502,
+  "basis": "A14 CCX_hat first-control-zero exact for arbitrary target/aux/port/spin; CX,Z,CZ exact; native literal inverse; protected q/h and declared disjoint port",
+  "clean_zero_required": "SELECT enabled, enable_work, phase_work, constant_work; membership scratch per stated plan",
+  "input_data_and_native_aux_need_not_be_clean": true,
+  "claims_limited_to": "SELECT/constant/top sign sections; does not include approximate H preparation or readout and does not assert ideal behaviour for h=1",
+  "GR_closed": false
+}

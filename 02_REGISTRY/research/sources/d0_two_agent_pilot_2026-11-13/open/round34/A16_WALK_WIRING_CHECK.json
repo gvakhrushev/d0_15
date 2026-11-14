@@ -1,0 +1,58 @@
+{
+  "status": "PASS_A16_WALK_EVENT_GRAMMAR_AND_SELECTED_WIRING",
+  "source_sha256": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+  "roots": {
+    "H_f_before_inverse_PF": {
+      "controller_stages": {
+        "selector": 3192,
+        "first_success": 456,
+        "root_init": 1,
+        "palette": 455,
+        "transition": 455
+      },
+      "quantum_roles": {
+        "prepare_hadamard": 1,
+        "top_identity_phase": 1,
+        "constant_phase": 455,
+        "copy_SELECT": 37310,
+        "readout_hadamard": 1,
+        "report_sign_convention": 1
+      },
+      "walk_wire_count": 9093982,
+      "instruction_records": 455,
+      "unique_record_wires": 29575,
+      "sampled_first_last_slots_and_copies": 4,
+      "sampled_selected_correct_record_copy_and_delta": true,
+      "top_and_constant_sign_wiring_and_H_X_readout_verified": true
+    },
+    "H_q_before_inverse_PF": {
+      "controller_stages": {
+        "kind_init": 1,
+        "selector": 133,
+        "first_success": 19,
+        "root_init": 1,
+        "palette": 18,
+        "transition": 18
+      },
+      "quantum_roles": {
+        "prepare_hadamard": 1,
+        "top_identity_phase": 1,
+        "constant_phase": 18,
+        "copy_SELECT": 72,
+        "readout_hadamard": 1,
+        "report_sign_convention": 1
+      },
+      "walk_wire_count": 378269,
+      "instruction_records": 18,
+      "unique_record_wires": 1170,
+      "sampled_first_last_slots_and_copies": 4,
+      "sampled_selected_correct_record_copy_and_delta": true,
+      "top_and_constant_sign_wiring_and_H_X_readout_verified": true
+    }
+  },
+  "different_walks_require_caller_alias_SITE_and_distinct_bank_inputs": true,
+  "control_histories_retained": true,
+  "full_gate_stream_not_simulated": true,
+  "actual_global_birth_assembler_or_clock_proved": false,
+  "GR_closed": false
+}

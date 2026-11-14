@@ -1,0 +1,38 @@
+{
+  "status": "PASS_ISOLATED_A16_BUILDER_AND_CHECKER",
+  "input_sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/compile_native_cz.py": "36dc0f1b487a6a802d9175b1ed17c75ecffcbb88858f3b5014ad7fa681882d48",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/NATIVE_BOOLEAN_ANGLE.json": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/PREPROCESSOR_READY_COMPOSITION.json": "4091efc154b7af1c0f63a6647699e13f7e6cd715fd470b0db31b85710bfedfdc",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/check_source_select.py": "f829cf02a7819e818a6ab870a0b64d807aed4b66c181052772805487417cb453",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "all_three_outputs_byte_identical": {
+    "DYNAMIC_PAIR_LIBRARY.json": "377246019981da1903f0a1109817c68a23a975c1b6472c672698543544c32173",
+    "SOURCE_SELECT_COMPILATION.json": "8b820b0143099b8aca2d82735c68152481ae9598b902f2d0e110031cf38c0b7b",
+    "SOURCE_SELECT_CHECK.json": "57fd658bc1172cd1dfd5c339544f234dc77bd9670d438d6c015f9461b142550c"
+  },
+  "commands": [
+    {
+      "script": "source_select.py",
+      "stdout": "{\"status\": \"FINITE_DYNAMIC_SOURCE_SELECT_AND_HADAMARD_TARGET_TEST\", \"one_report_SELECT_test_logical_counts\": {\"CCX\": 18465784, \"Z\": 76260, \"CX\": 40723512, \"X\": 601578, \"CZ\": 75196, \"H\": 20}, \"seven_report_all_known_error_strictly_below\": \"2^-4058\"}",
+      "stderr": ""
+    },
+    {
+      "script": "check_source_select.py",
+      "stdout": "{\"status\": \"PASS_DYNAMIC_PAIR_COPY_SELECT_AND_HADAMARD_CONVENTION\", \"all_clean_work_small_columns_n2_to4\": 18688, \"actual_A11_address_signed_columns\": 5136, \"whole_instruction_copy_phase_cases\": 1600, \"Hadamard_sign_tests\": 10}",
+      "stderr": ""
+    }
+  ],
+  "source_owner_files_modified": false,
+  "all_astronomical_native_gates_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

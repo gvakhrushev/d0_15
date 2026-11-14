@@ -1,0 +1,24 @@
+{
+  "status": "PASS_A16_BOTH_ACTUAL_ROOT_DEGREE_INSTRUCTIONS",
+  "source_sha256": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+  "roots": {
+    "(82, 0)": {
+      "wires": 2006,
+      "logical_gates": 65479,
+      "full_width_actual_instruction_cases": 128,
+      "copy_calls": 82
+    },
+    "(2, 2)": {
+      "wires": 206,
+      "logical_gates": 2475,
+      "full_width_actual_instruction_cases": 128,
+      "copy_calls": 4
+    }
+  },
+  "A15_sample_pairs_used": true,
+  "first_middle_last_and_invalid_offsets": true,
+  "immutable_inputs_untargeted_every_gate": true,
+  "all_scratch_cleared": true,
+  "scope": "actual logical instruction streams at both full degrees; not full chronological walk/native word",
+  "GR_closed": false
+}
