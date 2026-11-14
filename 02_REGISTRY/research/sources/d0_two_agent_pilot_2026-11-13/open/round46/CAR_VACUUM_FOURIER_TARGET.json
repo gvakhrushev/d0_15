@@ -1,0 +1,39 @@
+{
+  "status": "EXACT_B25_CAR_VACUUM_FOURIER_TARGET_TABLE_NOT_NATIVE_COMPILATION",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/ORIGINAL_FOURIER128_L4.json": "5e691225f746e346afe3ad61a9e5123666fd8d1f270e27756914730b598b5934",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418"
+  },
+  "site_labels": 256,
+  "kappa_labels": 64,
+  "right_dimensions": 128,
+  "quadrant_counts": {
+    "0": 4096,
+    "1": 4096,
+    "3": 4096,
+    "2": 4096
+  },
+  "quadrant_table_sha256": "0ee198164d206c296677c88a1b9ffcbae9f7b630b2e4c4bbf0ca28516ceccdd2",
+  "exact_F_transpose_F": "128 I_128",
+  "right_index": "2*k+type",
+  "amplitude": "F[z,right]/128",
+  "fresh_RAW_wires_for_one_4grade_8site_7right_copy": 19,
+  "logical_start": "19 RAW-to-zero; H(site8); H(right-k6); G(grade0); CX(grade0->grade1,2,3); X(grade0)",
+  "conditional_quadrant_X_nodes": 8192,
+  "conditional_minus_I_nodes": 8192,
+  "read_only_selector_bits": 14,
+  "shorter_controlled_quarter_turn_route": {
+    "nonzero_coefficient_nodes": 318,
+    "max_nodes_per_k": 8,
+    "max_sum_coefficient_per_k": 18,
+    "read_only_controls": 7,
+    "aux_clean_work": 0,
+    "all_16384_quadrants_checked": true,
+    "full_all_column_extension_equivalence_to_unknown_owner_prefix_not_claimed": true
+  },
+  "conditional_phase_is_not_new_Info": true,
+  "full_native_prefix_emitted": false,
+  "physical_birth_admission_proved": false,
+  "GR_closed": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS_B46_INDEPENDENT_RECTANGULAR_PHASE_CERTIFICATES",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/gray_reflection.py": "1acdb6fef2e8aeb301f560f4720719e8308ea7d58300d6de3fcba3d3891cf115",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/certify_gray_reflection.py": "ee36072ec773e4d32b19b593fa9b15e394a2d0d3a7bc3925c9efd33816cc6e90",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/check_gray_reflection.py": "e1c45cb0def8a3b6a189c7b6274139cb03c20bab5fdb2ace79781bd69242a190",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/GRAY_REFLECTION_CERTIFICATE.json": "b1590b22083345bee3f676b209e51d249f6b054a05bda57ed357c4dbd6054759",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/GRAY_REFLECTION_CHECK.json": "e343116e0397ff824c8e8fe447800333ac6e2117eb7618d099215f8bbf61ba73"
+  },
+  "controlled_widths": [
+    8,
+    46
+  ],
+  "bits": 12288,
+  "source_bits": 7168,
+  "native_intervals_contain_independent_replay": true,
+  "target_phase_minus_identity_error_le": "2^-3264",
+  "candidate_or_float_used": false,
+  "GR_closed": false
+}

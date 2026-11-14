@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_A22_LITERAL_RAW_CHOI_WRAPPER",
+  "source_sha256": "f63c9f456f9aca091659688de8641cdbcb3fb98ee4a40cbfa211d3c498fcda40",
+  "cases": [
+    {
+      "initialize_private": false,
+      "literal_depth": 0,
+      "exact_native_primitive_leaves": 73
+    },
+    {
+      "initialize_private": false,
+      "literal_depth": 1,
+      "exact_native_primitive_leaves": 297
+    },
+    {
+      "initialize_private": false,
+      "literal_depth": 2,
+      "exact_native_primitive_leaves": 645
+    },
+    {
+      "initialize_private": false,
+      "literal_depth": 3,
+      "exact_native_primitive_leaves": 1689
+    },
+    {
+      "initialize_private": true,
+      "literal_depth": 0,
+      "exact_native_primitive_leaves": 95
+    },
+    {
+      "initialize_private": true,
+      "literal_depth": 1,
+      "exact_native_primitive_leaves": 343
+    },
+    {
+      "initialize_private": true,
+      "literal_depth": 2,
+      "exact_native_primitive_leaves": 763
+    },
+    {
+      "initialize_private": true,
+      "literal_depth": 3,
+      "exact_native_primitive_leaves": 2023
+    }
+  ],
+  "independent_primitive_inverse_not_parity_simplified": true,
+  "real_SourceI_two_Spin_bits": true,
+  "actual_K46_giant_word_executed": false,
+  "GR_closed": false
+}
