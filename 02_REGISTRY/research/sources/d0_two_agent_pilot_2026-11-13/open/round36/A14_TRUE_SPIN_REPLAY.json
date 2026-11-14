@@ -1,0 +1,12 @@
+{
+  "status": "PASS_A14_EXACT_CHECK_WITH_LITERAL_SPIN",
+  "original_checker_used_spin_basis": "diag(J,J), conjugate representation",
+  "corrected_checker_used": "literal diag(J,-J)",
+  "conjugator": "diag(1,1,1,-1) on Spin",
+  "corrected_all_column_total": 1536,
+  "corrected_results_equal_original_json": true,
+  "original_files_modified": false,
+  "stdout": "X 1 all256 columns exact; raw inverse exact\nX 2 all256 columns exact; raw inverse exact\nH 1 all256 columns exact; raw inverse exact\nH 2 all256 columns exact; raw inverse exact\nCCX 1 all256 columns exact; raw inverse exact\nCCX 2 all256 columns exact; raw inverse exact",
+  "scope": "exact small k=1,2 actual native words; huge-k approximation certificate is separate",
+  "GR_closed": false
+}

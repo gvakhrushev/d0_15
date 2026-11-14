@@ -1,0 +1,39 @@
+{
+  "status": "B36_INDEPENDENT_A17_REVIEW_PASSED_WITH_DOCUMENTED_SCOPES",
+  "files": {
+    "A14_TRUE_SPIN_REPLAY.json": "51b54eb5d64a8e831d8a567d34f3f321e0afa279813be57c60e3fb4bfb3f6994",
+    "A17_ISOLATED_REPLAY.json": "f6bc5a00c1054b1eef8c51dca0f819e55ed53dbc63fc7c35d37319049ae16d4f",
+    "B31_TRUE_SPIN_CHECK.json": "a4a9e840b4bda95c9f376435c73422ff0a13eb9a8aeb63cbe03845359ba9773d",
+    "EXACT_NATIVE_READY_CHECK.json": "8827f6d5bd400782bebaf58bda5115ccddca3290961cac1354e09dcd41247d8a",
+    "GLOBAL_NATIVE_BINDINGS_CHECK.json": "59a2e286dd2b0bbf5095b7d7d0b87863853e5a3ee7e8b0b422a7b91db05a7fdc",
+    "INDEPENDENT_PLAN_CHECK.json": "f04936778c407cef70c7972e017cc50a5b1d6cb41cc71fbf72c84244c60bde91",
+    "INDEPENDENT_RESOURCES_CHECK.json": "2ffa88743129c19e8ecfcdc2c3611f2da4824fa9ac307411d7326504a272f6e6",
+    "REPORT_EFFECT_CHECK.json": "660ddc60fff07a5ae3019b0ac8267dbd2625918d5c699b56ce918cc016b379bd",
+    "REPORT_EXTRACTION_CHECK.json": "5726bf7a531a2c93139dd7600364f0948494d8e3493c8b3efa33197b32705992",
+    "REVIEW_A17_RU.md": "149ff58d9d577b157c8c6919b6178813ba4d333ea908e73636271388247b5329",
+    "check_b31_true_spin.py": "17dd9a6b7cab7433b88db34a86d31f2b1306456e72e6ba765f94743dda1bd408",
+    "check_global_native_bindings.py": "46761345d364b540b33999297eb793e293a1cbdce4cc1c7f31fa5af6bcb0e83f",
+    "check_independent_plan.py": "41b03225af717cab90d54f0a625f10801667661bfd3e5d2a17d9a784a437e4cc",
+    "check_native_ready_exact.py": "4f2c94dbe1c745be4f3e6e35f5d321f8776af907aab5c1fd964df92872e88713",
+    "check_report_effect_independent.py": "8746988c79ef52fbb16161040e40bc50013997113b846edc2deaf26c4f7ed739",
+    "check_report_extraction.py": "a601e732688dc4905ae9f46def14d3f4d87e1cff5f27dcadf89b30ec5adc555f",
+    "check_resource_inventory.py": "101de0969adaf250a9b2da5b051cd965b83bb7000644e9c5b8d001f47181313d",
+    "replay_a14_true_spin.py": "5f20a1f80f0882af0193c3d5eb94fbff041af3b3b228926518f122f1acd94d31",
+    "replay_a17_isolated.py": "5df3972b8451c17e76d328a08a17312874432c0573f070e5beb4affd00475025"
+  },
+  "upstream_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/check_report_assembly.py": "7d27bb63a9b9cdaed4ef57b876bef96ad0276f3c0d748653cfa7da217460aa08",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_COMPILATION.json": "303ecd70a75c4a0141098f66533d4f3c57d3d8816d42685d84dc5f016eac5e26",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_CHECK.json": "388bd57b0195d7ae06661320f403a2aadf45e1b70c14abed3a19ab32df513498",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round31/NATIVE_FAIR_BANK.json": "e20cf2ae3aaff81fc908f8fdaefdae33bb02a67ff7d70a2aab8173bde06f9231"
+  },
+  "full_source_preparation_proved": false,
+  "full_native_execution": false,
+  "full_alpha_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

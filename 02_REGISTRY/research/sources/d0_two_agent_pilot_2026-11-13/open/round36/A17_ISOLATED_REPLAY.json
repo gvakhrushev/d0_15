@@ -1,0 +1,53 @@
+{
+  "status": "PASS_ISOLATED_A17_BUILDER_AND_CHECKER",
+  "input_sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/compile_source_selectors.py": "eb2e04cbd26a31d91172b6e092fff1363a3eda170f056023ccbfb42891408b0d",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/compile_native_cz.py": "36dc0f1b487a6a802d9175b1ed17c75ecffcbb88858f3b5014ad7fa681882d48",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/NATIVE_BOOLEAN_ANGLE.json": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/SOURCE_SELECT_COMPILATION.json": "8b820b0143099b8aca2d82735c68152481ae9598b902f2d0e110031cf38c0b7b",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/check_report_assembly.py": "7d27bb63a9b9cdaed4ef57b876bef96ad0276f3c0d748653cfa7da217460aa08",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "original_outputs_sha256": {
+    "GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "GLOBAL_REPORT_COMPILATION.json": "303ecd70a75c4a0141098f66533d4f3c57d3d8816d42685d84dc5f016eac5e26",
+    "GLOBAL_REPORT_CHECK.json": "388bd57b0195d7ae06661320f403a2aadf45e1b70c14abed3a19ab32df513498"
+  },
+  "clone_outputs_sha256": {
+    "GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "GLOBAL_REPORT_COMPILATION.json": "02a3128cb1831fbcd93b5e5dd922c23d1e79edaacde723791b961f89ffb7b8c5",
+    "GLOBAL_REPORT_CHECK.json": "907e1780156073c008d87f09756465046b7330aa361e6f5dc312e993a631a397"
+  },
+  "plan_byte_identical": true,
+  "compilation_equal_after_rebasing_input_path_keys": true,
+  "checker_equal_after_rebasing_compilation_hash": true,
+  "root_B31_bank_read_only_at_absolute_path": true,
+  "commands": [
+    {
+      "script": "report_assembly.py",
+      "stdout": "{\"status\": \"EXPLICIT_GLOBAL_TEN_SIGN_REPORT_AND_RAW_RESOURCE_GRAMMAR\", \"fair_output_qubits\": 10248262, \"all_READY_flags\": 10249327, \"fresh_RAW_v_births_for_processor_and_fair\": 1486712521, \"seven_report_known_error_strictly_below\": \"2^-4058\"}",
+      "stderr": ""
+    },
+    {
+      "script": "check_report_assembly.py",
+      "stdout": "{\"status\": \"PASS_GLOBAL_REPORT_ROLE_ALLOCATION_AND_COMPONENT_COMPOSITION\", \"Boolean_READY_cases\": 16368, \"small_actual_native_failed_READY_columns\": 112, \"exact_product_scalar_Beta_cases\": 6, \"all_fresh_RAW_requirements\": 1486712521}",
+      "stderr": ""
+    }
+  ],
+  "original_files_modified": false,
+  "full_native_walk_executed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS_INDEPENDENT_A17_GLOBAL_NAMESPACE",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_COMPILATION.json": "303ecd70a75c4a0141098f66533d4f3c57d3d8816d42685d84dc5f016eac5e26"
+  },
+  "source_walk_local_events": {
+    "H_f_before_inverse_PF": {
+      "selector": 3192,
+      "first_success": 456,
+      "root_init": 1,
+      "palette": 455,
+      "transition": 455,
+      "end": 1
+    },
+    "H_q_before_inverse_PF": {
+      "kind_init": 1,
+      "selector": 133,
+      "first_success": 19,
+      "root_init": 1,
+      "palette": 18,
+      "transition": 18,
+      "end": 1
+    }
+  },
+  "same_SITE_and_sigma_disjoint": true,
+  "independent_maps_of_all_walks": 10,
+  "source_buffers": 212,
+  "disjoint_source_qubit_counts": {
+    "Choi": 3960,
+    "CAR_DATA": 192,
+    "CAR_RIGHT": 112
+  },
+  "unique_fair_outputs": 10248262,
+  "independent_fair_bank_range_boundary_checks": 22377,
+  "ready_selector_and_post_flags": 1065,
+  "all_ready_flags": 10249327,
+  "golden_RAW_count": 76,
+  "processor_zero_count": 21210979,
+  "fair_bank_RAW_count": 1465501466,
+  "total_new_RAW_births": 1486712521,
+  "shared_SITE_and_source_state_prepared_here": false,
+  "full_native_execution": false,
+  "GR_closed": false
+}

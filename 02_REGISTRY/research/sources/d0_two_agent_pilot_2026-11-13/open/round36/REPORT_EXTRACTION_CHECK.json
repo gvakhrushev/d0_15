@@ -1,0 +1,10 @@
+{
+  "status": "PASS_REPORT_EXTRACTION_IDEAL_VS_NATIVE_BOUNDARY",
+  "ideal_report_is_post_READY_and_not_label": true,
+  "ideal_REPORT1_does_not_imply_global_all_READY": true,
+  "acceptance_must_jointly_require_global_all_READY": true,
+  "native_post_READY_zero_exactly_inactive_columns": 32,
+  "native_k1_ready1_label1_has_nonzero_wrong_report_component": true,
+  "scope": "k1 exact diagnostic, not actual huge-k norm estimate; actual imperfection belongs to A14 all-column error budget",
+  "GR_closed": false
+}

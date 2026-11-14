@@ -1,0 +1,17 @@
+{
+  "status": "PASS_GLOBAL_A16_AND_B31_NATIVE_BINDINGS",
+  "source_sha256": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+  "walks_sampled": [
+    "S1",
+    "S2",
+    "T1",
+    "T8"
+  ],
+  "global_A16_native_prefix_blocks_checked": 128,
+  "actual_B31_banks_checked": 3,
+  "B31_syntactic_native_leaves_checked": 23199,
+  "all_shared_special_port_spin_aux_mapped_correctly": true,
+  "protected_oldRIGHT_untouched": true,
+  "scope": "sampled lazy native blocks and schema; no full native stream execution or birth admission",
+  "GR_closed": false
+}

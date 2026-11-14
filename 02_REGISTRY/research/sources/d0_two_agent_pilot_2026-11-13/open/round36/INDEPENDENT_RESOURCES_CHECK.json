@@ -1,0 +1,25 @@
+{
+  "status": "PASS_INDEPENDENT_A17_STAGE_RESOURCES",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_COMPILATION.json": "303ecd70a75c4a0141098f66533d4f3c57d3d8816d42685d84dc5f016eac5e26",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/SOURCE_SELECT_COMPILATION.json": "8b820b0143099b8aca2d82735c68152481ae9598b902f2d0e110031cf38c0b7b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round31/NATIVE_FAIR_BANK.json": "e20cf2ae3aaff81fc908f8fdaefdae33bb02a67ff7d70a2aab8173bde06f9231"
+  },
+  "stage_count": 6,
+  "B31_full_physical_fair_banks_once": 10248262,
+  "exact_READY_CCX_occurrences": 20498651,
+  "logical_REPORT_extraction_CCX": 1,
+  "processor_zero_inputs": 21210979,
+  "golden_RAW": 76,
+  "fair_RAW_including_outputs": 1465501466,
+  "total_RAW_births_excluding_source_and_SITE": 1486712521,
+  "seven_report_known_approximate_gate_occurrences": 162754649904,
+  "conditional_known_error_bound": "2^-4058",
+  "native_counts_include_full_global_graph": false,
+  "birth_stage_admission_and_marks_certified": false,
+  "GR_closed": false
+}
