@@ -1,0 +1,11 @@
+{
+  "status": "PASS_COHERENT_SAM_OLD_LEGS_CANONICAL_FIBRE_FIXTURE",
+  "complex_entangled_SAM_old_and_joint_mark": true,
+  "independent_front_back_legs": true,
+  "mark_difference_exact": "-1/5",
+  "isometry_error_squared": "2/5",
+  "same_fresh_column_does_not_imply_dirty_column": true,
+  "general_bound": "||F*(Vhat* O Vhat - V* O V)B|| <= 2 eta ||F|| ||B|| ||O||",
+  "admitted_physical_preparation_or_reader_proved": false,
+  "GR_closed": false
+}

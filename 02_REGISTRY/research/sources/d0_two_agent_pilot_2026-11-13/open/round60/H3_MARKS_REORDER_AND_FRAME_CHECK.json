@@ -1,0 +1,38 @@
+{
+  "status": "PASS_ORIGINAL_MARK_INDICES_REORDER_AND_FRAME_BOUNDARIES",
+  "source_slots": 1372,
+  "seven_banks_each_Choi_CAR": [
+    180,
+    16
+  ],
+  "disjoint_source_operand_wires": 60424,
+  "leaf_indices_per_bank": {
+    "Choi": 69632,
+    "CAR": 2560
+  },
+  "seven_banks_leaf_indices": 505344,
+  "max_choi_basis_index": 2097416,
+  "choi_coframe_norm": "32784",
+  "choi_link_norm": "65568",
+  "CAR_Psi_norm": "128/sqrt(p)",
+  "raw_frame_mismatch_exact": "2p^2",
+  "controlled_disjoint_ideal_reorder_exact": true,
+  "shared_native_helper_commutation_not_assumed": true,
+  "canonical_fibre_not_dirty_columns": true,
+  "source_mark_transport_fixture": true,
+  "original_A25_f_report_stage": 594,
+  "original_A25_first_q_source_stage": 1190,
+  "conservative_prefix_mark_error_per_unit_norm_lt": "2^-3231 conditional on prefix telescope",
+  "exact_old_plus_twice_replacement_scaled_float": 0.7777559767796993,
+  "physical_old_mark_transport_or_reader_proved": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/global_h1.py": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_birth_clock.py": "045b5926031f2144a1401f2a1c3278201b57e2020402efb71216686803053e64",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/SOURCE_LEAF_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/CZ_EXACT_OCCURRENCES.json": "43451bf585b2407966f9c31325866f6ff3e99f3573c43388b2ba53b66400bafc"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}
