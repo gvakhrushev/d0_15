@@ -1,0 +1,24 @@
+{
+  "status": "PASS_INDEPENDENT_A32_FINITE_BOOK_COMPARISON",
+  "all_4_selected_SAM_indices_both_endpoints_checked": true,
+  "initial_births": 10407050782,
+  "late_retention_pairs": 66076,
+  "matching_pre_post_and_checkpoint_ordinals": true,
+  "identity_padding_all_eight_columns": true,
+  "tiny_iterator_test_checks_order_only": true,
+  "actual_last_g_physical": "G on 2+SAM index",
+  "late_clock_formula": "2^n*(Lbase-3+4*2^K)-1",
+  "exact_retained_G_count_and_all_mode_bounds_reproduced": true,
+  "one_SAM_row_error_lt": "2^-73",
+  "corrected_2688_covector_error_lt": "2^-67",
+  "central_derivative": "analytic conjugation of A30 core; no compiled t=0 full padded history",
+  "full_physical_C_or_original_stationarity_proved": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/finite_book_comparison.py": "eff94dfc2fea3b808be59d5cc889b8f8e989fbbd60b3fbb9ed234cff0c911901",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/FINITE_BOOK_COMPARISON_PLAN.json": "0c7ec7f984410df24a7e67de0012f7418a2bb3782b6a1d53f97718a6ab49b155",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/MEAN_GEOMETRY_LIFT_PLAN.json": "581565f4d426c60740d6bae39fe4880d201fcc35a5046ff6c8f00cab381f0a48",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/SUFFICIENT_ENDPOINT_G_CERTIFICATE.json": "0cb7105883d835fc146d9d3b0305b5006068bc5e656cf9f909451ec8acb5fce2"
+  },
+  "GR_closed": false
+}
