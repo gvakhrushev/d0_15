@@ -1,0 +1,26 @@
+{
+  "status": "PASS_B81_PROOF_REVIEW_AND_BYTE_IDENTICAL_SMALL_REPLAY",
+  "B_commit": "5c327666a281349f47aa25fbc73107c8178ad24b",
+  "root_small_replay": "exact byte-identical B81_TARGET_WALSH_AUDIT; all B writes intercepted",
+  "full_small_matrix_not_occupied_column_only": true,
+  "zero_pattern_Walsh_exact_all_column_support": true,
+  "independent_B_selector_two_signs_61000_bit_rectangle_bounds": {
+    "plus": "2^-20077",
+    "minus": "2^-20080"
+  },
+  "root_reran_expensive_B_selector": false,
+  "root_checked_selector_provenance_and_integer_bounds": true,
+  "production_Python_provider_not_implemented": true,
+  "result_scope": "constructive mathematical word existence and exact support/unitarity; small executable reference",
+  "full_paid_execution_H1_F_N_Cost_Info_or_GR_established": false,
+  "B_files_written": false,
+  "B81_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round81/B81_SAM_ONLY_TARGET_AUDIT_RU.md": "cf33cf8c62bbe6f95e91bdbe1ea2157adf6608401017297bc987f5d4aaa73f39",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round81/B81_SELECTOR_AUDIT.json": "e01d778e825b7cf89ff84618d4583b02ad64de740d42da564bf7fb5e41a10241",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round81/B81_TARGET_WALSH_AUDIT.json": "678084a87a66a9b5c14ba2d7c036f13d5949b629275a6f736f1b8b9c649967ca",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round81/check_a41_target_and_walsh.py": "d55e3a6fa5026402ce88c5d022031b6e4f1adffb809ceef810ccf4af898cf43f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round81/check_actual_selector.py": "788c742b4c8226a66b87eae74a3379836ad0148c083db4e5187de8e8e3b8c327"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "round": "A41",
+  "independent_rounds": [
+    "B80",
+    "B81"
+  ],
+  "files_sha256": {
+    "RESULT.json": "1ce44394b040f5d8705b8f433ef4c5d2b0a706a3a3c660db1654d243319d5af1",
+    "ROOT_REVIEW_B80.json": "46c6019e4ba975dccb2712ba9adea12abc01a77b550b467efd2c791b7608343f",
+    "ROOT_REVIEW_B81.json": "1c2bc43aef34021e18f8f64028a8d7864a6c1fb3f85dd1ca997c86650b400dc0",
+    "SAM_ONLY_COMPILER_CHECK.json": "eaf5a16f49f13bd0beaca4c204381a711a504450f2355132d91bd2ffbd7c4876",
+    "SAM_ONLY_COMPILER_PLAN.json": "3f5982d54a0ab9d98465f9bc2d1354178ccfd6654de16b969e13fc21bc7abb45",
+    "SAM_ONLY_FULL_COLUMN_COMPILER_RU.md": "32c9c38126ac2fe3bf05e59650f1fcb447ac7335b2f38eca89c047e424693a07",
+    "check_sam_only_compiler.py": "0134b9f961673672e854c7a7d9534d8a6799f401601d9e704f364495436858a5",
+    "exact_target.py": "7679fadec56e7bcca6ca2cd6fb3162b3e2f5308ad8010cfc436689afe847e450",
+    "sam_only_compiler.py": "0f13a9eb9d16da19b91d93e2d56e2eb2a81d7eacc1cc5c3d977127e678187058"
+  },
+  "production_provider_or_full_paid_family_completed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
