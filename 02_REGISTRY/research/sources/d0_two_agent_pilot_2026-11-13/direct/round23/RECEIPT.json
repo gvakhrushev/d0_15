@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-11-14T08:47:03.525232+00:00",
+  "status": "INDEPENDENTLY_REVIEWED_NATIVE_ORIGINAL_CAR_VACUUM_FOURIER",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "parent_direct_commit": "4a0eb738d8b747ca3d14f8af162eafd3b4a6d3c9",
+  "B47_commit": "2b50305625f3b60a9da0879145bf8df43c0c4a69",
+  "own_files": {
+    "CAR_VACUUM_FOURIER_RU.md": "77d3de6d0ad3a24a58edbd39be311fb4907f8761a75da3d7a98a359bb45a266d",
+    "CAR_VACUUM_PREFIX_CHECK.json": "042c394eab7d52fa97afff5795ae6e87349f457cef893e1bee74b373d6a7e10d",
+    "CAR_VACUUM_PREFIX_PLAN.json": "ec32940f9837ff4ef87aece95fcace4db30ee9ee43b2e03139e8a3b9bf3bf826",
+    "FOURIER_PHASE_CERTIFICATE.json": "e0480942df886f38d71347f496f950bf8e5170b9ddf62acdd8f9419528fdcb21",
+    "RESULT_RU.md": "6ef65048abae66ae385945922f779682daae697552754c2bb9d5962e47630c42",
+    "ROOT_REVIEW_B47.json": "66ab4ad340d9311e112405d770591ed16cb218a2ecdb4b2df96789b12c3c9d36",
+    "car_vacuum_prefix.py": "4733e09654b6e566957a63807430128da2efa557b00d3309aea5f3cdf9a2dfca",
+    "certify_fourier_phase.py": "1f8f8434013dc3ff631d7fd7239241a049daff5213c1c0b42b193389f1527b8c",
+    "check_car_vacuum_prefix.py": "ff0cce29d8d683cc513edf5c13f626fb42907b6c7c5737b33307a25742124ade"
+  },
+  "removed_parent_premise": "Concrete paid RAW19 generator for the original CAR vacuum/Fourier128 state with explicit all-column extension, literal inverses and uniform error.",
+  "fresh_RAW_wires_per_copy": 19,
+  "extra_clean_work": 0,
+  "phase_commands": 318,
+  "actual_compact_blocks_checked": 40742,
+  "original_ideal_state_amplitudes_checked": 524288,
+  "prefix_error_lt": "2^-3259",
+  "all112_prefix_error_lt": "2^-3252",
+  "stronger_independent_all112_error_lt": "2^-3253",
+  "physical_marked_prefix_history_equivalence_proved": false,
+  "full_giant_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "publication": "local only",
+  "next_scientific_obligation": "A24 full CAR source composition and original single H1 marked execution."
+}
