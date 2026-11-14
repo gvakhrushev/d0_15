@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "COMMON_RAW_SOURCE_MARKS_RU.md": "d3b279b5dafa2d50928ce21020ad7eab60fcc7cbc3fb35bde1fc3be5f61bddd6",
+    "COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "MARKED_SOURCE_CHECK.json": "5b90c8e51eed6c8ae377d3a528493ad89eb9407809f3f6821405f4397ed95c2d",
+    "RESULT.json": "fd1d4f0d27a15847e2acfb7758e8cd74f00eac39ab06ff6cbf4845ca8894cf29",
+    "RESULT_RU.md": "3c0e9ab535cb493b30edd42a20e4bcf2a98b2d6a61072e803a13b5f3ee5bad98",
+    "ROOT_REVIEW_B60.json": "7d781594ba00e7198e70e1e7f9cc5f6a6f25498c4d6e98bde46bcd3caa705c6e",
+    "SOURCE_RAW_MARK_REGISTRY.json": "3c17d2d6d3eb65381dbca14c55f440315646e5ff91fc3ad1fc516777838cbb79",
+    "check_marked_sources.py": "47509e7eeb63d11a3710472277e057395624e40950eca6e54c31106fd95356ed",
+    "marked_source_schedule.py": "92ef8395b40cf20ce77c49a3ed4bfdcbd42fbc1d2f6595133ca4ba2f3086863e",
+    "source_mark_registry.py": "ab4e707d4398e03aa901109989ec2a44a543a4a2784a2033cdce98c22958859b"
+  },
+  "checks": [
+    "MARKED_SOURCE_CHECK.json",
+    "ROOT_REVIEW_B60.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
