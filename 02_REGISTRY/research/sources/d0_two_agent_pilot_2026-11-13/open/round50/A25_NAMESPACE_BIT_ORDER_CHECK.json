@@ -1,0 +1,30 @@
+{
+  "status": "PASS_A25_ALL_SLOT_ROLE_BINDING_AND_SOURCE_ADDRESS_ORDER",
+  "A25_source_sha256": "0a11a40f7c6e1c0cdb35be63bfb4e8704eb74ab17a8d1e0d1b2d40e8dabbc03e",
+  "A25_plan_sha256": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+  "A15_table_rows_checked": {
+    "Choi_table_rows": 69632,
+    "CAR_table_rows": 2560
+  },
+  "all_Choi_22bit_labels_roundtrip": 4194304,
+  "all_CAR_12bit_labels_roundtrip": 4096,
+  "A17_all_source_slots_checked": {
+    "Choi": 1260,
+    "CAR": 112
+  },
+  "actual_A25_provider_layouts_validated": {
+    "A22_Choi": 1260,
+    "A24_CAR": 112,
+    "B45_SITE": 1
+  },
+  "Choi_roles": "w[0:5]=output j, w[5:10]=input i, w[10:22]=address a",
+  "CAR_roles": "w[0:4]=grade, w[4:12]=internal SITE; separate 7 fresh RIGHT",
+  "SC6_23_roles_disjoint_and_correct": true,
+  "seven_report_sigma_signs": -1,
+  "WORK_RAW_birth_count": 10407048092,
+  "separate_SAM_RAW_births": 2688,
+  "whole_H1_generator_emitted_or_executed": false,
+  "physical_births_marks_admission_proved": false,
+  "full_T6_or_physical_C_proved": false,
+  "GR_closed": false
+}

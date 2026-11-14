@@ -1,0 +1,171 @@
+{
+  "status": "PASS_A25_ACTUAL_PROVIDER_DAG_REMAP_SAMPLES",
+  "A25_source_sha256": "0a11a40f7c6e1c0cdb35be63bfb4e8704eb74ab17a8d1e0d1b2d40e8dabbc03e",
+  "A25_plan_sha256": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+  "source_samples": [
+    {
+      "bank": "y+",
+      "kind": "Choi",
+      "walk": "S1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 50,
+      "coverage": "24 private RAW, 22 DATA RAW, first 4 joint Gray blocks"
+    },
+    {
+      "bank": "y+",
+      "kind": "Choi",
+      "walk": "T8",
+      "copy": 1,
+      "actual_DAG_blocks_equal": 50,
+      "coverage": "24 private RAW, 22 DATA RAW, first 4 joint Gray blocks"
+    },
+    {
+      "bank": "y+",
+      "kind": "CAR",
+      "walk": "T1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 33,
+      "coverage": "3 predicate RAW, first 27 prefix blocks, first 3 actual A18 frame blocks"
+    },
+    {
+      "bank": "y+",
+      "kind": "CAR",
+      "walk": "T8",
+      "copy": 1,
+      "actual_DAG_blocks_equal": 33,
+      "coverage": "3 predicate RAW, first 27 prefix blocks, first 3 actual A18 frame blocks"
+    },
+    {
+      "bank": "y-",
+      "kind": "Choi",
+      "walk": "S1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 50,
+      "coverage": "24 private RAW, 22 DATA RAW, first 4 joint Gray blocks"
+    },
+    {
+      "bank": "y-",
+      "kind": "CAR",
+      "walk": "T1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 33,
+      "coverage": "3 predicate RAW, first 27 prefix blocks, first 3 actual A18 frame blocks"
+    },
+    {
+      "bank": "f",
+      "kind": "Choi",
+      "walk": "S1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 50,
+      "coverage": "24 private RAW, 22 DATA RAW, first 4 joint Gray blocks"
+    },
+    {
+      "bank": "f",
+      "kind": "CAR",
+      "walk": "T1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 33,
+      "coverage": "3 predicate RAW, first 27 prefix blocks, first 3 actual A18 frame blocks"
+    },
+    {
+      "bank": "0",
+      "kind": "Choi",
+      "walk": "S1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 50,
+      "coverage": "24 private RAW, 22 DATA RAW, first 4 joint Gray blocks"
+    },
+    {
+      "bank": "0",
+      "kind": "CAR",
+      "walk": "T1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 33,
+      "coverage": "3 predicate RAW, first 27 prefix blocks, first 3 actual A18 frame blocks"
+    },
+    {
+      "bank": "x+",
+      "kind": "Choi",
+      "walk": "S1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 50,
+      "coverage": "24 private RAW, 22 DATA RAW, first 4 joint Gray blocks"
+    },
+    {
+      "bank": "x+",
+      "kind": "CAR",
+      "walk": "T1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 33,
+      "coverage": "3 predicate RAW, first 27 prefix blocks, first 3 actual A18 frame blocks"
+    },
+    {
+      "bank": "x-",
+      "kind": "Choi",
+      "walk": "S1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 50,
+      "coverage": "24 private RAW, 22 DATA RAW, first 4 joint Gray blocks"
+    },
+    {
+      "bank": "x-",
+      "kind": "CAR",
+      "walk": "T1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 33,
+      "coverage": "3 predicate RAW, first 27 prefix blocks, first 3 actual A18 frame blocks"
+    },
+    {
+      "bank": "q",
+      "kind": "Choi",
+      "walk": "S1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 50,
+      "coverage": "24 private RAW, 22 DATA RAW, first 4 joint Gray blocks"
+    },
+    {
+      "bank": "q",
+      "kind": "CAR",
+      "walk": "T1",
+      "copy": 0,
+      "actual_DAG_blocks_equal": 33,
+      "coverage": "3 predicate RAW, first 27 prefix blocks, first 3 actual A18 frame blocks"
+    }
+  ],
+  "B45_actual_SITE_blocks_compared": 20,
+  "A17_initial_RAW_remap_samples": [
+    {
+      "bank": "y+",
+      "actual_initial_RAW_DAG_blocks_remapped": 16
+    },
+    {
+      "bank": "y-",
+      "actual_initial_RAW_DAG_blocks_remapped": 16
+    },
+    {
+      "bank": "f",
+      "actual_initial_RAW_DAG_blocks_remapped": 16
+    },
+    {
+      "bank": "0",
+      "actual_initial_RAW_DAG_blocks_remapped": 16
+    },
+    {
+      "bank": "x+",
+      "actual_initial_RAW_DAG_blocks_remapped": 16
+    },
+    {
+      "bank": "x-",
+      "actual_initial_RAW_DAG_blocks_remapped": 16
+    },
+    {
+      "bank": "q",
+      "actual_initial_RAW_DAG_blocks_remapped": 16
+    }
+  ],
+  "SC6_entire_actual_primitive_forward_mapped": 18176,
+  "global_producer_report_reverse_or_full_A_emitted": false,
+  "semantic_commutation_basis": "B48/B49 completed macro proofs and these concrete provider bindings; no inference at intermediate parity CX boundaries",
+  "whole_H1_T6_or_birth_mark_admission_proved": false,
+  "GR_closed": false
+}
