@@ -1,0 +1,15 @@
+{
+  "status": "ACCEPT_B71_INDEPENDENT_A36_AUDIT_AT_DECLARED_SCOPE",
+  "B_commit": "61519b987588ccc133a50e77c137a1a72f2694ff",
+  "pinned_files": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round71/A36_INDEPENDENT_AUDIT.json": "a5b8fc19dd6dbd92981c6de2bede951a3badca3de6bbe68c5e75dc11219ef742",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round71/B71_A36_INDEPENDENT_OUTER_AUDIT_RU.md": "abb75925108e0996a1277614a3ddead340e65fe478ba99d55178ae434de50cf4",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round71/audit_a36_independent.py": "79e5d99f104f64258b3800016d6874a9e2bf9c4e774f16ac0b511640f3e3318d"
+  },
+  "source_pin_count_verified": 11,
+  "checker_replayed_without_writes_and_output_identical": true,
+  "upstream_R6_R11_A30_A33_hypotheses_retained": true,
+  "same_task_membership_or_Cost_Info_selection_inferred": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

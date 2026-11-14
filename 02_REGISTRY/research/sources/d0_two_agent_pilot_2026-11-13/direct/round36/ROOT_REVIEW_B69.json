@@ -1,0 +1,22 @@
+{
+  "status": "ACCEPT_B69_TASK_INPUT_AND_SLOT_LEDGER_AT_DECLARED_SCOPE",
+  "B_commit": "c3b42627252c193d5d1539005849465cf9190716",
+  "pinned_files": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round69/ACTUAL_TASK_INPUT_LEDGER.json": "12960c96a1abf261cc1b23e0f1f187576e9d6ece1950ca5b8d545fdeeec74dd9",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round69/B69_ACTUAL_TASK_INPUTS_AND_ADMISSION_RU.md": "cfb9fdbb5af3c3a4092fceea2c467712efcf81c8e787aa88c70a310e1bfaace0",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round69/inspect_actual_task_graph.py": "4e3fc7b8dfd7a1e437e60182b657e700508a822abf540505116213807b26b744"
+  },
+  "source_pin_count_verified": 18,
+  "checker_replayed_without_writes_and_output_identical": true,
+  "consumed": "Generated H.1 inputs versus independent four occurrences, actual RAW checkpoint and A32 empty cut; same-task membership remains open.",
+  "review_findings": [
+    "P_cut I1 is distinct from report reference P_ref,0 and EO Spin I4.",
+    "Canonical-input isometry estimate 2 eta ||O|| does not need arbitrary dirty WORK.",
+    "Fixed graph inputs do not prove absence of independently admitted controls in another task.",
+    "Actual Q_f/Q_b support and independent priced rows remain a separate proof, now B70/A36.",
+    "Original actual READY is only approximately scalar; no exact scalar promotion."
+  ],
+  "same_task_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

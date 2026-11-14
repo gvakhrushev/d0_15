@@ -1,0 +1,19 @@
+{
+  "status": "PINNED_LOCAL_A36_CHECKPOINT_WITH_B69_B70_B71_REVIEWS",
+  "files_sha256": {
+    "INDEPENDENT_OUTER_PAIRS_CHECK.json": "83fe70ce6389d9d00ff480dc60c592176dbae87d2d8b4633b924f31311428a7e",
+    "INDEPENDENT_OUTER_PAIRS_PLAN.json": "42d3e3b1404af520f564b9284d04c5b2a769cdb60ee58924d172bb267ae79dcd",
+    "INDEPENDENT_OUTER_PRICE_ROWS_RU.md": "d84d1ed2b5f8eee955847b67bcddc9997ed458013a9d0cb603fd4b8132f6ca03",
+    "PREPARATION_SOURCE_CHECKPOINT_RU.md": "c8bdcb023e006521934ead17b2665052d99a1ad704b089cf5fccac74003c9420",
+    "RESULT.json": "c45e24bdba55ec810c9aaf3e1e36b46c154ca764776b0d28a1c5acda381f79d1",
+    "ROOT_REVIEW_B69.json": "338dca8c6d7682dd97307504161a60544437e2c733b104b5c5a4d09bd4737014",
+    "ROOT_REVIEW_B70.json": "247988c56e9145199aef6a00532388424abf9cf78d0dd3625f9c37648a44f001",
+    "ROOT_REVIEW_B71.json": "a5ad0ef790c65666fb549338b7c444705ded604d72294a33e5b5afc88f4c0440",
+    "check_independent_outer_pairs.py": "080682f892763a9767f57519442845a51274e15239be7848d8ddbc742ef4bf7a",
+    "independent_outer_pairs.py": "dfa9338e3103ac9188472aafeace6eb19a5279170f06354a1133680566c0c70a"
+  },
+  "scientific_scope": "Actual finite separate outer pairs and independently reviewed task/inner-slot results; all physical premises preserved.",
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
