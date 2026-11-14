@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INDEPENDENT_RECTANGULAR_POWER_SAMPLE",
+  "families_checked": 336,
+  "angles_checked": 336,
+  "precision_bits": 8448,
+  "ball_method_not_used": true,
+  "float_used": false,
+  "library_sha256": "c5a4943298b419f72e7f098a4529e59c971d5877354e42e48ec9ec1b0905b307",
+  "GR_closed": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS_LAZY_NATIVE_JULIA_SCHEDULE_AND_LITERAL_COUNTS",
+  "actual_native_source_sha256": "e8ccc0ecc55c720e2b6cfbc5ba31bbe878e577b5d5944f90ab3911ebb68ec33a",
+  "angle_library_sha256": "c5a4943298b419f72e7f098a4529e59c971d5877354e42e48ec9ec1b0905b307",
+  "selective_exact_columns": 672,
+  "fock_exact_active_columns": 768,
+  "fock_exact_inverse_columns": 768,
+  "x_exact_inverse_and_offbranch_columns": 128,
+  "sector_schedules_checked": 23296,
+  "max_macro_count": 101,
+  "max_controls": 23,
+  "literal_inverse_syntax_and_inventories_match": true,
+  "nested_toy_sector_inverse_of_inverse_literal_checked": true,
+  "actual_lift_depth2_and_outer_depth3_checked": true,
+  "A19_compatible_global_layout_checked": true,
+  "real_SourceI_and_arbitrary_aux_port_spin": true,
+  "giant_2_to_23_word_expanded": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

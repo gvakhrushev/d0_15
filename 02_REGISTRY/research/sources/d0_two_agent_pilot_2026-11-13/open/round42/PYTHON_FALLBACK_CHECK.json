@@ -1,0 +1,9 @@
+{
+  "status": "PASS_PYTHON_INTEGER_FALLBACK_BIT_FOR_BIT",
+  "families_at_7168": 5,
+  "power_exponents_at_7168": 5,
+  "gmpy2_version": "2.3.2",
+  "GMP_version": "GMP 6.3.0",
+  "acceleration_is_optional": true,
+  "GR_closed": false
+}
