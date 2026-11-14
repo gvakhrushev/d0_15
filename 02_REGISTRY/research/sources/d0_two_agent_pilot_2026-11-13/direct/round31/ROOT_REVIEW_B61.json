@@ -1,0 +1,34 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "1e73549aa7902a52ea75f0854df6a7662654cf76",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round61/A31_BINDING_BIAS_NORM_INDEPENDENT.json",
+      "sha256": "563a5ff6797b95bb3fce9ed5ec19f55c7ae37e635e3364f856a03d577f0bf560"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round61/B61_A31_BINDING_AND_NORMALIZATION_FOLLOWUP_RU.md",
+      "sha256": "2cd7e662251b8e00f15e4d7b949da1910cb372884dfae98b2a7d035b4ace7033"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round61/B61_EXPLICIT_MEAN_DECODER_LIFT_RU.md",
+      "sha256": "309d257ba81253b49da37c301ceab4e6a0a5871608d7aaacf4307c54adf78651"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round61/MEAN_DECODER_BOUND.json",
+      "sha256": "b9f1b49c6ce6c545774f7f912943d8bb6c1966a6babf80651cb689d6f3d61251"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round61/audit_a31_binding_and_bias.py",
+      "sha256": "190466a15168fd9a21bc6f325dfb72b4e3cd371cfac191a45d9fdf4ca124f7f0"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round61/certify_mean_decoder_bound.py",
+      "sha256": "b2d4271aed991c312aa6d660da96d8585a7b6f7ee87ad6d2a6ec3a7d1172bf45"
+    }
+  ],
+  "source_hashes_checked": 11,
+  "scope": "independent mean-decoder/Jacobian envelope, actual A31 2688 coordinate and 4096 matrix-entry bindings, bias/lift norms and exact source normalization; no giant native mean/J evaluation",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

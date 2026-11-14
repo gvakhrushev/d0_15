@@ -1,0 +1,18 @@
+{
+  "status": "LOCAL_REVIEWED_ACTUAL_MEAN_GEOMETRY_CORRECTED_LIFT",
+  "parent": "H.5/7ar388 actual mean readout Jacobian at A30 common source checkpoint",
+  "chart": "fixed B25 raw-u/exponential-link/Psi, fixed PF and boundary, s=2^-30",
+  "coordinates": 2688,
+  "link_matrix_blocks": 256,
+  "Jacobian_norm_error_lt": "2^-23",
+  "actual_decoded_centre_shift_lt": "2^-48",
+  "corrected_generator_lift_norm_lt": "55/s",
+  "coframe_e_conversion_factor_lt": "20/3",
+  "full_J_evaluated": false,
+  "physical_endpoint_gates_or_reader_emitted": false,
+  "source_normalization": "Gamma_s=4wgs/c gives leading s^-1 DI_tau(Y0) composed J^-1 after physical lift; Gamma_s/s changes all residuals consistently",
+  "next_obligation": "actual sufficient finite endpoint comparisons, their common clock/marks and complete source/price with derivative and centre-shift terms",
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
