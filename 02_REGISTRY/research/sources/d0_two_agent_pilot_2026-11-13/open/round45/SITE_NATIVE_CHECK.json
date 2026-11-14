@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SITE_NATIVE_TREE_AND_LITERAL_INVERSES",
+  "exact_small_full_columns": 2720,
+  "gray_phase_exact_full_columns": 448,
+  "gray_forward_CX_equals_2_to_K": true,
+  "tree_nodes": 255,
+  "tree_level_readonly_partition_checked": true,
+  "real_SourceI_two_bit_spin": true,
+  "arbitrary_aux_port_spin": true,
+  "full_toy_writer_literal_depths_0_to_3": true,
+  "actual_RAW_inverse8_paid": true,
+  "A21_external_SITE_binding_and_collision_rejection": true,
+  "actual_giant_word_executed": false,
+  "library_sha256": "02b91077e5e423cdb43d0a361a146dd5d51bd250c782b8b41cf6e93eebd6cbfd",
+  "native_source_sha256": "e7e26c82ff1183519a69ef6eaeac4af14a56093374054ea37622ea95a04151d1",
+  "GR_closed": false
+}

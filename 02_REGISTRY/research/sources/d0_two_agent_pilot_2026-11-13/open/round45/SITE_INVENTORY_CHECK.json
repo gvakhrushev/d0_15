@@ -1,0 +1,12 @@
+{
+  "status": "PASS_SITE_ALL_COMPACT_DAG_BLOCKS_AND_LITERAL_PRICE",
+  "U_DAG_blocks": 21845,
+  "U_inverse_DAG_blocks": 21845,
+  "gray_R_DAG_blocks": 512,
+  "full_SITE_DAG_blocks": 44722,
+  "native_primitive_repeats_expanded": false,
+  "every_literal_inverse_DAG_block_matches": true,
+  "all_actual_forward_and_inverse_inventories_match": true,
+  "plan_sha256": "a951ac051bb177556c37929083c1967ac5f4eb69a94120b345bbc09b8dae16fd",
+  "GR_closed": false
+}

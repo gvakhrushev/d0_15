@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_SITE_TREE_TARGETS_AND_RECTANGULAR_POWERS",
+  "library_sha256": "02b91077e5e423cdb43d0a361a146dd5d51bd250c782b8b41cf6e93eebd6cbfd",
+  "tree_nodes_checked": 255,
+  "distinct_tree_angles": 165,
+  "phase_angles": 1,
+  "source_bit_mapping_checked": true,
+  "independent_bits": 8448,
+  "ball_method_used": false,
+  "candidate_used": false,
+  "float_used": false,
+  "GR_closed": false
+}
