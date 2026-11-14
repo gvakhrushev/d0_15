@@ -1,0 +1,30 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "df92389699f27952da609edf7fc2bed3715fe4b7",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round59/A29_RAW_CLOCK_ERROR_INDEPENDENT.json",
+      "sha256": "2e1632b6f924c75bda829ed7a7172b284e8d1e4009182c03225e1693df77b722"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round59/B59_GCX_RAW_CLOCK_SCALAR_RU.md",
+      "sha256": "167f9f9f82bb0d3aaa5e870d7a21fb1b56b90808f83e626c2918b7eb44eceb13"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round59/SCALAR_RETENTION_CONDITIONS.json",
+      "sha256": "0291eea56e47d0a407c1675126fc9635e138860fb9f019969b5135f588f25707"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round59/audit_new_raw_clock_error.py",
+      "sha256": "33825609735fa9ddf261d8f2e317c202f76e257443989a42f31de8204f36c06c"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round59/check_scalar_retention_conditions.py",
+      "sha256": "1952744ea1b7a35b8b6151f0812ecc133d6e3f433619cbc0cd29687dd655c0d0"
+    }
+  ],
+  "checked_recorded_source_hashes": 6,
+  "scope": "new G/CX RAW bijection, exact clock fixture, scalar structure, exact error addition, conditional retention algebra; actual cut/marks/price still open",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,249 @@
+{
+  "status": "PASS_NEW_RAW_ADDRESSES_CLOCK_AND_PORT_DETAIL_OBSTRUCTION",
+  "checked_layouts": [
+    {
+      "old_raw_prefix_bits": 0,
+      "birth_intervals": [
+        {
+          "role": "active_port_WORK",
+          "start": 0,
+          "stop": 1
+        },
+        {
+          "role": "fresh_aux_WORK",
+          "start": 1,
+          "stop": 2
+        },
+        {
+          "role": "SAM",
+          "start": 2,
+          "stop": 2690
+        },
+        {
+          "role": "shared_SITE_WORK",
+          "start": 2690,
+          "stop": 2698
+        },
+        {
+          "role": "SC6_selector_WORK",
+          "start": 2698,
+          "stop": 2703
+        },
+        {
+          "role": "report_source_private_WORK",
+          "start": 2703,
+          "stop": 10407050781
+        },
+        {
+          "role": "new_G_CX_gadget_helper_WORK",
+          "start": 10407050781,
+          "stop": 10407050782
+        }
+      ]
+    },
+    {
+      "old_raw_prefix_bits": 1,
+      "birth_intervals": [
+        {
+          "role": "active_port_WORK",
+          "start": 1,
+          "stop": 2
+        },
+        {
+          "role": "fresh_aux_WORK",
+          "start": 2,
+          "stop": 3
+        },
+        {
+          "role": "SAM",
+          "start": 3,
+          "stop": 2691
+        },
+        {
+          "role": "shared_SITE_WORK",
+          "start": 2691,
+          "stop": 2699
+        },
+        {
+          "role": "SC6_selector_WORK",
+          "start": 2699,
+          "stop": 2704
+        },
+        {
+          "role": "report_source_private_WORK",
+          "start": 2704,
+          "stop": 10407050782
+        },
+        {
+          "role": "new_G_CX_gadget_helper_WORK",
+          "start": 10407050782,
+          "stop": 10407050783
+        }
+      ]
+    },
+    {
+      "old_raw_prefix_bits": 3,
+      "birth_intervals": [
+        {
+          "role": "active_port_WORK",
+          "start": 3,
+          "stop": 4
+        },
+        {
+          "role": "fresh_aux_WORK",
+          "start": 4,
+          "stop": 5
+        },
+        {
+          "role": "SAM",
+          "start": 5,
+          "stop": 2693
+        },
+        {
+          "role": "shared_SITE_WORK",
+          "start": 2693,
+          "stop": 2701
+        },
+        {
+          "role": "SC6_selector_WORK",
+          "start": 2701,
+          "stop": 2706
+        },
+        {
+          "role": "report_source_private_WORK",
+          "start": 2706,
+          "stop": 10407050784
+        },
+        {
+          "role": "new_G_CX_gadget_helper_WORK",
+          "start": 10407050784,
+          "stop": 10407050785
+        }
+      ]
+    },
+    {
+      "old_raw_prefix_bits": 17,
+      "birth_intervals": [
+        {
+          "role": "active_port_WORK",
+          "start": 17,
+          "stop": 18
+        },
+        {
+          "role": "fresh_aux_WORK",
+          "start": 18,
+          "stop": 19
+        },
+        {
+          "role": "SAM",
+          "start": 19,
+          "stop": 2707
+        },
+        {
+          "role": "shared_SITE_WORK",
+          "start": 2707,
+          "stop": 2715
+        },
+        {
+          "role": "SC6_selector_WORK",
+          "start": 2715,
+          "stop": 2720
+        },
+        {
+          "role": "report_source_private_WORK",
+          "start": 2720,
+          "stop": 10407050798
+        },
+        {
+          "role": "new_G_CX_gadget_helper_WORK",
+          "start": 10407050798,
+          "stop": 10407050799
+        }
+      ]
+    },
+    {
+      "old_raw_prefix_bits": 103,
+      "birth_intervals": [
+        {
+          "role": "active_port_WORK",
+          "start": 103,
+          "stop": 104
+        },
+        {
+          "role": "fresh_aux_WORK",
+          "start": 104,
+          "stop": 105
+        },
+        {
+          "role": "SAM",
+          "start": 105,
+          "stop": 2793
+        },
+        {
+          "role": "shared_SITE_WORK",
+          "start": 2793,
+          "stop": 2801
+        },
+        {
+          "role": "SC6_selector_WORK",
+          "start": 2801,
+          "stop": 2806
+        },
+        {
+          "role": "report_source_private_WORK",
+          "start": 2806,
+          "stop": 10407050884
+        },
+        {
+          "role": "new_G_CX_gadget_helper_WORK",
+          "start": 10407050884,
+          "stop": 10407050885
+        }
+      ]
+    }
+  ],
+  "SC6_actual_block_boundary_checks": [
+    {
+      "depth": 0,
+      "SourceI_pairs": 4096,
+      "actual_input_singletons": 18176
+    },
+    {
+      "depth": 1,
+      "SourceI_pairs": 24064,
+      "actual_input_singletons": 18176
+    }
+  ],
+  "last_g_logical": {
+    "op": "CX",
+    "wires": [
+      2692,
+      2705
+    ]
+  },
+  "last_g_physical_m0": {
+    "op": "CX",
+    "wires": [
+      2690,
+      0
+    ]
+  },
+  "isolated_new_segment_clock_layers_lt": "2^11647",
+  "frontloaded_port_birth_detail_commutator_norm_gt": "3/100",
+  "commutator_argument": "old exact off-diagonal witness >=(24/25)*(309/500)^7; extending helper by its canonical v preserves the birth-detail witness, and new all-column error is smaller than the margin",
+  "heat_source_nonzero_inferred": false,
+  "heat_zero_or_ST4_inferred": false,
+  "actual_retention_K_chosen": false,
+  "full_clock_or_heat_matrix_executed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/check_gcx_birth_clock.py": "f45b556ed902742965b74afbebafe87c518f700a7b244191314fe7773454545d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_birth_clock.py": "045b5926031f2144a1401f2a1c3278201b57e2020402efb71216686803053e64",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/GCX_BIRTH_CLOCK_PLAN.json": "3438970bd68865eef09d27683bb9fd85858d51a340ea83a169d96c2fe947ee12",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round45/site_native.py": "e7e26c82ff1183519a69ef6eaeac4af14a56093374054ea37622ea95a04151d1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round28/ROOT_REVIEW_B55.json": "108aba97453c0db3ae134b1281e50cf5f08db6b166f90dca635c8c473610361d"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}
