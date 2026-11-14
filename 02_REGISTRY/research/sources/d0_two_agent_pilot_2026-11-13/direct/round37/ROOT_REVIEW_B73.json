@@ -1,0 +1,21 @@
+{
+  "status": "ACCEPT_B73_A37_ANALYTIC_FEEDBACK_SUBSTITUTION_AT_DECLARED_SCOPE",
+  "B_commit": "4a942642e871515ace7e763e70e3ae9652b06818",
+  "pinned_files": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round73/B73_POST_SAM_REDUCTION_AUDIT_RU.md": "4651635b9daa0cba66eedb15605a235711a91142ea9d67584f84f6a5afa58a7b",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round73/REDUCED_FEEDBACK_AUDIT.json": "ac601f4f8455558fb58f1a15bcbf48b6e5bf22b2bd74508129fdad3e024c40a5",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round73/audit_reduced_feedback.py": "d26d844825f628c6f296a30544a7a0cb6e4ff36fcda8499db02ce7962804a3ae"
+  },
+  "source_pin_count_verified": 16,
+  "checker_replay_without_writes_identical": true,
+  "review_findings": [
+    "The local rotation chart covers the actual centre and small comparisons; antipodal inputs are excluded.",
+    "Source identity keeps separate actual old/reduced gain denominators.",
+    "B65/A33 reporter bounds imply a uniform actual sigma and a quadratic source correction.",
+    "A32 finite-to-analytic error is explicitly removed before using A33/A34 bounds.",
+    "A37 solves post-SAM feedback rows only; new native word, clock, full heat, task admission and Cost-Info remain open."
+  ],
+  "full_physical_stationarity_inferred": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "ACCEPT_B72_EXACT_SUBSYSTEM_AND_CONDITIONAL_SINGLE_SAM_DISCRIMINATOR",
+  "B_commit": "e2931804359f749fbca8c20200675ba170281934",
+  "pinned_files": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round72/B72_BACKWARD_MARKED_OUTPUT_SUBSYSTEM_RU.md": "c7ea497df2bcfd3b4b7d845c8e80fee86add06594bdf010a41f18b57bd7fc7e6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round72/BACKWARD_OUTPUT_SUBSYSTEM_CHECK.json": "83c93bc206629e504e0be6549ddfce20125ccf1297f5f1a549ecef5005ea6808",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round72/check_backward_output.py": "077246b3f2cb6bd2caa3441191dd54436df7618e2b581982b7d784f0b952bace"
+  },
+  "source_pin_count_verified": 15,
+  "checker_replay_without_writes_identical": true,
+  "review_findings": [
+    "Full final difference is local to j, so complement channel equality holds on all inputs with references.",
+    "Early common-prefix equality includes all 1372 registered source slots and any actual earlier marked operators.",
+    "c_b>0.71 follows from original delta reference and report coefficient bounds; controlled-core overlap exceeds 41/5000.",
+    "The remaining one-wire X coherence yields the terminal Z_j lower bound t/151 including the 4 delta angle error.",
+    "This does not establish that Z_j is required by H.1 or that tracing j is an admitted full physical quotient."
+  ],
+  "same_task_admission_or_Cost_Info_binding_inferred": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

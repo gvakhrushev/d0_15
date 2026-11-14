@@ -1,0 +1,14 @@
+{
+  "status": "PASS_EXACT_POST_SAM_TARGET_SOURCE_IDENTITY_AND_CONDITIONAL_A30_BOUNDS",
+  "all_skew_fixture_axes": 3,
+  "identity_target_chart_checked": true,
+  "second_moment_not_square_of_mean_control": true,
+  "nonzero_variance_source_control": true,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/check_post_sam_reduction.py": "8d26853961da55cca4d748d012bcd5a6e71e9e743bc4932d386395e148ed1ce8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/post_sam_reduction.py": "f984fba692ef804104eec0f02a97472541a2e4ab34e0413ed1d97b3b8e702116",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/POST_SAM_REDUCTION_PLAN.json": "d9dffa9e3278bf71df2367b6f0390a1e0a7b16fdb269e55d7321e4b0c40b672c"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

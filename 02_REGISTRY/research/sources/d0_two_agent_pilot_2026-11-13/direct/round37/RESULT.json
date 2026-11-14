@@ -1,0 +1,21 @@
+{
+  "status": "LOCAL_INDEPENDENTLY_REVIEWED_ACTUAL_A30_POST_SAM_FEEDBACK_REDUCTION",
+  "parent": "Remove independent backward SAM feedback source without destroying the owned field source",
+  "actual_core": "A30 real diagonal canonical compression",
+  "stationary_scope": "all post-SAM real skew directions of determinant feedback, on a local analytic SO section",
+  "reduced_cold_squared": "E_b c_b^2, not (E_b c_b)^2",
+  "per_unit_SAM_normalized_source_correction_lt": "2^-2870",
+  "corrected_2688_raw_source_correction_lt": "2^-2864",
+  "reduced_analytic_feedback_covector_norm_between": [
+    "2^-46",
+    "2^-16"
+  ],
+  "reduced_analytic_feedback_vs_geometric_mean_source_lt": "2^-15",
+  "independent_B73_commit": "4a942642e871515ace7e763e70e3ae9652b06818",
+  "same_task_admission": false,
+  "new_native_Ustar_emitted": false,
+  "new_full_heat_or_full_Cost_Info_stationarity": false,
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
