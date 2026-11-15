@@ -1,0 +1,43 @@
+{
+  "status": "PASS_ALL_BANKS_FULL_COFRAME_LINK_ADDRESS_PARTITION",
+  "banks": {
+    "y+": {
+      "coframe_addresses": 1024,
+      "link_addresses": 1024,
+      "disjoint_complete_nonzero_partition": true
+    },
+    "y-": {
+      "coframe_addresses": 1024,
+      "link_addresses": 1024,
+      "disjoint_complete_nonzero_partition": true
+    },
+    "f": {
+      "coframe_addresses": 1024,
+      "link_addresses": 1024,
+      "disjoint_complete_nonzero_partition": true
+    },
+    "0": {
+      "coframe_addresses": 1024,
+      "link_addresses": 1024,
+      "disjoint_complete_nonzero_partition": true
+    },
+    "x+": {
+      "coframe_addresses": 1024,
+      "link_addresses": 1024,
+      "disjoint_complete_nonzero_partition": true
+    },
+    "x-": {
+      "coframe_addresses": 1024,
+      "link_addresses": 1024,
+      "disjoint_complete_nonzero_partition": true
+    },
+    "q": {
+      "coframe_addresses": 1024,
+      "link_addresses": 1024,
+      "disjoint_complete_nonzero_partition": true
+    }
+  },
+  "zero_address_untouched": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

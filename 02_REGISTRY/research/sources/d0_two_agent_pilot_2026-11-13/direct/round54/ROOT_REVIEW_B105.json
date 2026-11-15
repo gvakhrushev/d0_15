@@ -1,0 +1,18 @@
+{
+  "status": "PASS_ROOT_B105_PINNED_READ_ONLY_REPLAY_AND_COMMON_CLOCK_BINDING",
+  "B105_commit": "d7b10cfddca9e768fd32701741c155bee8e1f1ff",
+  "all_Git_blobs_and_input_hashes_verified": true,
+  "owner_writes_suppressed": [
+    "B105_REGULAR_PAID_CHECK.json"
+  ],
+  "actual_post_bound_to_new_field_source": true,
+  "exact_new_padding_clock_formula_recomputed": true,
+  "new_Nbase_bit_length": 30833,
+  "new_K": 175604,
+  "old_exact_clock_not_transferred": true,
+  "uniform_positivity_gt": "669/1000",
+  "uniform_target_source_and_CODE_scope_requires_A54_review": true,
+  "production_path_sum_or_post_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

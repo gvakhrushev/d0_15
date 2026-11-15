@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ROOT_B106_PINNED_READ_ONLY_BYTE_IDENTICAL_REPLAY",
+  "B106_commit": "ed6b228737ee3ca9d361d491ebb392f7cce341d2",
+  "all_Git_blobs_and_input_hashes_verified": true,
+  "owner_writes_suppressed": [
+    "B106_A54_AUDIT_CHECK.json"
+  ],
+  "actual_source_slots": 1568,
+  "independent_group_CODE_assignments": 1048576,
+  "complete_adapter_level9_depth_distribution_verified": true,
+  "uniform_inventory_and_errors_independently_recomputed": true,
+  "typed_target_and_CODE_only_support_support_B105_uniform_positive_margin": true,
+  "selected_A23_extension_not_identified_with_unprovided_other_owner_extension": true,
+  "arbitrary_dirty_private_claim": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
