@@ -1,0 +1,29 @@
+{
+  "status": "PROGRESS_INDEPENDENT_CURRENT_BANK_RETENTION_AND_PRICE_BOUND",
+  "parent_A_commit": "c80c41b7d1bf471a133d23027c6d9479df1f35f4",
+  "independent_B_commit": "3eea90312d274ba75392c0f4d253912937fa82ed",
+  "removed_premise": "A45 lacks a separately regenerated genuine current source retained through all seven original REPORTs",
+  "new_result": "Independent 180 f-Choi and 16 q-CAR bank; original seven-input SC6; canonical-source hybrid, new native clock/gain and inserted-Q estimates",
+  "early_RAW_births": 11893771936,
+  "additional_RAW_births": 1486721154,
+  "core_call_bit_length": 11647,
+  "paid_Nbase_bit_length": 25457,
+  "retention_pairs": 137444,
+  "full_compressed_error_lt": "2^-3231",
+  "Qb_named_j2_finite_lower_gt": "2^-45",
+  "all_real_SAM_analytic_Q_reduction_error_lt": "2^-31",
+  "own_new_A41_post_required": true,
+  "production_word_or_post_executed": false,
+  "independent_root_replay": "PASS byte-identical B90 receipt without owner writes",
+  "next_named_parent_premise": "Original 7ej.A-C full D_nu and vector first-jet map: current one-bit sampler versus MG1 obstruction and existing two-bit MG2-MG7 construction; retain full R and actual price",
+  "remaining": [
+    "all actual original D_nu/prefix marks and vector first jets",
+    "same-task H1/FN admission and original physical cut",
+    "full independent Cost-Info/source selection",
+    "refinement to GR"
+  ],
+  "local_only": true,
+  "published": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
