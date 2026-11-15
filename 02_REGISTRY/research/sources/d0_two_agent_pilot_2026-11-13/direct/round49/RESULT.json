@@ -1,0 +1,42 @@
+{
+  "status": "PROGRESS_TYPED_ACTUAL_CORNER_FIXED_POST_AND_PAID_FOUR_SLOT_FAMILY",
+  "parent_A_commit": "a01426087370e45bbb840052bb8b62899bf7bb57",
+  "independent_B_commits": {
+    "B95": "5cbb850d5cd4412cd10ead4964e7849e56006905",
+    "B96": "bbc482832409a38465e6e20a45a9d85058a35e62"
+  },
+  "closed_local_premises": [
+    "Actual A48 CODE-control-only canonical corner obeys A27 law with error below 2^-3421 on the declared typed fibre",
+    "All actual diagonal entries exceed 2/3, discharging A47 corner gate below 2^-3298",
+    "Finite actual-circuit scalar post target replaces a target-table or unimplemented production oracle",
+    "Real identity padding supplies equal lengths for four independent controls, core, fixed post and separate probe",
+    "New full clock and original same-reader gain bounds for this padded two-bit family"
+  ],
+  "CODE_bits": 5376,
+  "RAW_early_births": 11893774624,
+  "Nbase_bit_length": 30833,
+  "late_retention_pairs": 175604,
+  "dimension_debt_bits": 8064,
+  "mathematical_typed_corner_error_lt": "2^-3421",
+  "actual_M_entry_gt": "2/3",
+  "fixed_post_operator_error_lt": "2^-9247",
+  "post_independent_skew_dual_error_lt": "2^-661",
+  "heat_full_skew_dual_error_lt": "2^-75",
+  "shared_bank_control_local_interface_error_lt": "2^-189",
+  "finite_production_recipe_implemented": true,
+  "production_target_or_word_evaluated": false,
+  "production_execution_practical_claimed": false,
+  "classical_compilation_payment_identified_with_original_physical_price": false,
+  "exact_lengths_apply_to_new_paid_completion_not_unpadded_upper": true,
+  "root_reviews": "All B95 and B96 checkpoint pins; three B95 and seven B96 byte-identical suppressed-write replays",
+  "next_named_parent_premise": "Compose four independent price rows of the exact A49 family, including all-insertion transport, scalar third-order remainder and fixed-post correlation; then identify original physical marks and full Cost-Info",
+  "remaining": [
+    "Original D_nu marks and full original vacuum-extension identity",
+    "All independent SOURCE/WORK/scene/record/preparation/Info equations of the same physical execution",
+    "Physical selection of the complete Cost-Info price and compatible GR refinement"
+  ],
+  "local_only": true,
+  "published": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

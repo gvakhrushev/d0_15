@@ -1,0 +1,141 @@
+{
+  "status": "PASS_ACTUAL_TARGET_SMALL_KERNELS_PADDED_FOUR_SLOT_CLOCKS_AND_BOUNDS",
+  "exact_Q4_kernel_fixtures": [
+    {
+      "n": 3,
+      "CODE_bits": 2,
+      "labels": 4,
+      "G_calls": 0
+    },
+    {
+      "n": 3,
+      "CODE_bits": 2,
+      "labels": 4,
+      "G_calls": 2
+    },
+    {
+      "n": 4,
+      "CODE_bits": 2,
+      "labels": 4,
+      "G_calls": 2
+    },
+    {
+      "n": 4,
+      "CODE_bits": 3,
+      "labels": 8,
+      "G_calls": 0
+    }
+  ],
+  "target_checks": {
+    "star_ratios_vs_exact_algebraic_reference": 14,
+    "actual_target_selected_k_hex": "0x6a0a5f2ec25079f02e09c8e5a6e38f0ef3009532ed746115298ca7a28d2a7f8ae56de08ea7171961440078aba0339a7c089db208473f655af30b4cf5ca99edd32082fa87ce2a6a3c8b8e14cac468b3a8a804bb1d83feffd7cc7be2ee15d87ce4a4699eaeace0c9deaceb79cc7a0a4fbf1b7e439ae0f1de43449de4f5efb441ccac14f0ba340d61a05eada7f1a94655cddf4d1f720a12616031b80349ee1ba6e2bd4c031a229021431cd2410cae86048bb97f9386c8dc8481d071210fb9fd760db995947a8ffaf1dddfa0e031741d9f0b53586ec3c5504a4dadf047b68df344a0140bd9a9be4cae0a930dcea1b8cf3fbb06e6b3eaf8aaeaeb13be2efac633ff2862d247725c44dea77893df4d7f0e34fb4e9363bedcf801c414527093ee284e41f1edc440ba9056d75e418cad387c2078b17b1bce7bbda1639a43fc37cbe52d948431e5753c291c426e9b04ce83e08d2f4a047aedabd6cfa4f7fec68adba48b6802a969d7dac810e56537bee7b457ee34d770e02709322f6a75a19e7789131cacc59fd2533ebeda2e629df18d51ab7070d89c56ee42bc07d992c3063fb1695b751eb782f0030bd7ddfb0da09e8c6afc628eb872a59ae396edc8bb7add6abedfa7879c3b21b8711a1a63ecd20cf578e9d106a9b4a5b86b6dfe1f44cfd11d4211b034ed582e1c6dee32c421ae340c0f1e14ecc96df0e7c8c81558b887e1ead0f4d74d275c2b069d02c63b7b20ed0f617d56f31049897ca6b2f1617f6196cb01c4e6960ca8986bfb33ab7f81877b5e6f433a23c6180af809ea30ad846a4369eba2a563dc07e51feb33cbfebf6116bda266cb459e90777007de27321f7dd738c8b6fbd10636ce0f5ea064503e6d48ac3a2939e4d6779886123450bc43d1332e648d05a1a8eb5b706af4a7222faa7f71ad8d86efa49f915623896faf20a5a9232a81573ec7f7d296c0f57a89df9b9654c31c95cf0c3fa6803426e44f0edb90842ec317c1ffa7bc6a3ddc0116f847b40ec0878232fdd0da8af16bfd7ed9152baeec94f36536506ced953c4588bb1c0dd9e5bf2642308808edd13f39141b220e3b812b9a93816e512f5d9fe88b5de696a649313b9798d144e38cb7078301fcbca9dd87b7574da073ca23c1a2ee652d803d4c353abd4099acd5e20d12f8185058424d535ea5117220575554420a8368205a71e4f87478324696833a429e6fc5835eeaab713f89c65f6b9f7da8656457e652032bbc77ceece655889deae213cb1392b48c62ebfdd1ceb62100fae6fd9c887489eab24f3248a4623cea1259095544cbee21f089ef4fb24e569acd9f3b42df7f135f0c14d479234275a8dcd87ff96af0ef99935d28c0f64fda53bb86eab25f078eadd92fc39954f7b311c8d41088719dd9f6ac1a35afb3f15ecbe03dee9a35555708858e2d0673f2234a5ce5f0a7d9575a726f043ef006c4b04b45266fd50c54ff2525ca5f98a56eb574b14e18d0d4a190eef23c95095f911aca9b2cdc35d3b554d7683cb3a2db80bde36d6b3488a76618f8c97946bc1bbda44aa5724b98db4b7ba8fd6d6e6cac5d9a5c1c704755412bbbea2820b23a70dcbbd285d8a711a60f1a48412d09709544d09c0cc8feebb15e65175ec76de28a2b212e250b79b4e41ce203c1636c647494ac043a00ad2ba19228307e4aa0857fa03cc5d51deb54efa11d40c1c7a80ef6746d5f23ea03c90c7f75ec7d33162da56c9a37f068e4300f7b147febcf3e2f0d54c86cc301f153f43efaa63174015d1d6988f589c8700e479e9e00e48d58aecfc54b965662cf92b118850b54a90cc72965967be6a079a2c1b7493c96a9a98ead215d53d422b91057608997bccfe400b1f5ae6329a6a9a726886b09f13027c747548fde5f08ef24b7fcfaa04f8806d55cbcaf49664cb9a3ac4f190aa95e902e16337ab051349b33d87356d0e94ba587bd83a6cc0d25bbbff1880b672938c36874cda8daa75dcdf6b55b8f29e320f6769beb737abb747e3fd9d21f8500f03ed58dc93afebd75415026e19f0a9a117e2215634e2bdf3b5a0326ecf0864515cd10e175aac9106ca1d9e25d50a8d13d6e7040aac0b842faa44235e6c7b92ea0166fb834f1a9f174d350e0c6196bcd4a876af62b7cf6f404e7f48b1d36dcdf8ddade6908aa535872f35c7fe5dec68df4d6dc0e61f0c2e8774a3f60ebf6ebefc99e8158d876b2df93f1ecceafbe4cf728e840643e1f9b436fac45bf75ccc23cacace3021fed9ece1ed7d470718cd86ac2c94e69cae9cd220ce57078cd81a5be635d766a9362157b00e83a702326703f91ef1c832679e522084de23f3f55745573db017acb2bc0c078aa64ce3467fb2e56fb0c3cc8a01ef36c2e9e054091cbc6b08437964f4322e1472a677a574d73d5adbedbefb91c10392fc5d386a8e6f045d24b0e5cf90f56df2478ddcbe6ca9e85b5f7a52c4ea393f528c09e013649cd7662f03db012fcd13ee7e5f9877fb851a351066d11d044f40826a625825d90f072c97ecbee75c6ce21b29d59cc922a3e8db7a62ece2547cbd4de8663436addd4c995f55b501a70707cf1ebdb3e229178e61cbf059ae4e03ebfe879da2491e1eea69e1e2c29bcbd3b290438c6b72c5e7bc50d0c94d00157522f83586b81ee7e1f77fd134d521dedd90026cb75258864e8b511d6a6fbaa8b88a8d0d405a64ab7b585cfb6a70b851af0aa6e7942c0b83135d7c6a5c351b131385f5b20f4dfa4b7c4c16b5514d82a53b946a34ff0749bd7f3f0db1619d23cf4c34446a7c53cc7c94ee010a2da961febeb9f4b46b2da62613e6af5637699ee230cc561c0f34aa83a8fb002a147ef8d3cbbd50f20a5e9e6c5cab09558176065be43dcc9857e832a70e47dabe3e19eb50f713bb83fc8f7ec787ae411488fc4e8e10b0d99ddc3fde7631099b833e3ddacdc965a1a62be7d43efa3fc7343a7798220f9c13da3aa2843dd22dc79bc2929ddbefc5a8a3bb00700e50f53959e81c1f122dc2c0be66e5d8d70bdfc0e119b1e75ede9539005085cc909ed20071a096eb10f5aec2f2dd3c13aac3bd018ff499e7d738fe06ec5ee4f96d8286ab9a02d82c47139da2f955c1fa5686403fff02dc8b10618ef7ab73f37aa680243544a72b20e6d282911c57fff87b0472b628d7c940e1a9dc08ec45fe1adbc8cb98508bc219cc4bef2dd4c020230cea2bd81962e97ffe6d6537d5ca5051258a6c6de2372b32f483a275de63c9fe9bb78e114adea60193c410f6cd253438b6e95cf51ab65bb42f3798449851b7904fe156cfcb5a8a0293abb22b9ab0c2b0181158da3d53e11fb89f3a8cc8006a5115242317279efc0763ef1e5ccbe4ccbc9cca30c06d0393129ba464d4b67b9b11d5b4b7fe264fd237738dfa418850e69e5987900f98df8b95572df4db17fa3011ea01ab0850c39bc9d7a7ee3750d93c17a844489280cb5ab838fdc5534a148a99697860705f04198b39d11e853d79d1926c39ec1b9bea44de9ea7dbbaab3f52b8e762b13254904dbd8ec0bb9020ba5bfc3646215d17a60440be1d312913dd9a3dfa5",
+    "four_star_list_grammar_counts": {
+      "CX": 264,
+      "G": 112
+    },
+    "grammar_selector_one_is_not_accuracy_test": true
+  },
+  "paid_clock_checks": {
+    "histories": [
+      {
+        "arm": "centre",
+        "sign": 0,
+        "G": 6,
+        "CX": 44
+      },
+      {
+        "arm": "matched",
+        "sign": -1,
+        "G": 12,
+        "CX": 38
+      },
+      {
+        "arm": "matched",
+        "sign": 1,
+        "G": 12,
+        "CX": 38
+      },
+      {
+        "arm": "Pf",
+        "sign": -1,
+        "G": 8,
+        "CX": 42
+      },
+      {
+        "arm": "Pf",
+        "sign": 1,
+        "G": 7,
+        "CX": 43
+      },
+      {
+        "arm": "Qf",
+        "sign": -1,
+        "G": 7,
+        "CX": 43
+      },
+      {
+        "arm": "Qf",
+        "sign": 1,
+        "G": 8,
+        "CX": 42
+      },
+      {
+        "arm": "Qb",
+        "sign": -1,
+        "G": 8,
+        "CX": 42
+      },
+      {
+        "arm": "Qb",
+        "sign": 1,
+        "G": 7,
+        "CX": 43
+      },
+      {
+        "arm": "Pb",
+        "sign": -1,
+        "G": 7,
+        "CX": 43
+      },
+      {
+        "arm": "Pb",
+        "sign": 1,
+        "G": 8,
+        "CX": 42
+      },
+      {
+        "arm": "post_probe",
+        "sign": -1,
+        "G": 10,
+        "CX": 40
+      },
+      {
+        "arm": "post_probe",
+        "sign": 1,
+        "G": 9,
+        "CX": 41
+      }
+    ],
+    "common_mark_layers": [
+      [
+        "Qf_dagger_after_common_RAW_mark",
+        13
+      ],
+      [
+        "Qb_before_return_bank",
+        20
+      ]
+    ],
+    "common_clock": [
+      58,
+      2207
+    ]
+  },
+  "production_Nbase_bit_length": 30833,
+  "production_K": 175604,
+  "original_upper_not_promoted_to_actual_unpadded_price": true,
+  "production_target_or_full_word_evaluated": false,
+  "original_admission_or_physical_price_stationarity_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

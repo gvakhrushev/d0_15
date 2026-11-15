@@ -1,0 +1,30 @@
+{
+  "status": "PASS_ROOT_B96_ALL_SEVEN_BYTE_IDENTICAL_REPLAYS",
+  "B96_commit": "bbc482832409a38465e6e20a45a9d85058a35e62",
+  "checkpoint_sha256": "f93d7aeed6c5d9b9656e8ae9971666cf4613bee5a0a64589e6752fa0e74a682d",
+  "all_A49_and_B96_pins_verified": true,
+  "B96_artifacts_equal_pinned_git": true,
+  "owner_writes_suppressed": [
+    "PAID_PADDING_CHECK.json",
+    "ACTUAL_TARGET_FIXTURE_CHECK.json",
+    "CODE_SUPPORT_CHECK.json",
+    "FOUR_SLOT_SCHEDULE_CHECK.json",
+    "PRODUCTION_PLAN_CHECK.json",
+    "CORNER_LAW_CHECK.json",
+    "PRICE_BRIDGE_CHECK.json"
+  ],
+  "replayed": [
+    "audit_paid_padding.py",
+    "audit_actual_target.py",
+    "audit_code_support.py",
+    "audit_four_slot_schedule.py",
+    "audit_production_plan.py",
+    "audit_corner_law.py",
+    "audit_price_bridge.py"
+  ],
+  "production_target_or_word_evaluated": false,
+  "typed_corner_gate_discharged": true,
+  "original_Dnu_or_vacuum_extension_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
