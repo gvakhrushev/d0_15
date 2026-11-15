@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ALL_CHOI_UPPER_AND_CAR_EXACT_COMPONENT_INVENTORIES",
+  "banks": 7,
+  "coframe_and_material_counts_reference": "B94 independently verified LOCAL_INVENTORY_CHECK",
+  "proper_link_counts_reference": "B93 componentwise upper, not actual",
+  "level9_recurrence_independent": true,
+  "all_source_copy_multiplicities_checked": true,
+  "full_exact_proper_link_inventory_evaluated": false,
+  "GR_closed": false
+}
