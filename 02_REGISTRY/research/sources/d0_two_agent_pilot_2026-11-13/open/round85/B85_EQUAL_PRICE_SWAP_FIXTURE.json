@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXACT_FINITE_EQUAL_LENGTH_GAUGE_SWAP_FIXTURE",
+  "equal_terminal_unitary": true,
+  "complete_clock_T_and_P_conjugate": true,
+  "full_birth_complement_included": true,
+  "feedback_operator_conjugate": true,
+  "heat_Delta0_conjugate": true,
+  "intermediate_fixed_SAM_mark_negative_control": true,
+  "fixture_not_production_execution": true,
+  "original_task_marked_map_admission_proved": false,
+  "GR_closed": false,
+  "checker_sha256": "846800651b2905b86a36c77a628321543075ed34620af86c6356d6d4bde7a09c"
+}
