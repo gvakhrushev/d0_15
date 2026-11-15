@@ -1,0 +1,27 @@
+{
+  "status": "A56_LOCAL_INDEPENDENTLY_REVIEWED_CHECKPOINT",
+  "artifact_sha256": {
+    "COMPLETE_CODE_SOURCE_CHECK.json": "da24d8ce31de9066c07150300b0c739f7ed93ae4eaf323bc70d2b87638c1d7dd",
+    "COMPLETE_CODE_SOURCE_PLAN.json": "511f2cf59e06244880a3e92ee5db7fc398e94f103f91fbb6a344c61c3ac5feff",
+    "COMPLETE_CODE_SOURCE_RU.md": "292675de9d223555f716e81783c22fe4c1b0af91bb2262b60b2c0b1604074511",
+    "RESULT.json": "4cd1586036789c302367a564f2b590a7737141d0dc8f8d0234d366b5fd8d1829",
+    "ROOT_REVIEW_B109.json": "46a07ebfd51044f2e60989f54b510724ad9036b3646916e6c51a7941082a7f68",
+    "ROOT_REVIEW_B110.json": "d566e7623b3a429bd5ee0bbf4494478c5b87688bde4da452ae9de39857a06a49",
+    "ROOT_REVIEW_B111.json": "3ad4436f6510ffe502003dfe01c33374dae8c2696c95758e40355863b93dcb1c",
+    "check_complete_code_source.py": "73991988559738ed5a4663940f8e8cef93707a6c46550795bfcf9ba655ccb1f5",
+    "complete_code_source.py": "af12b72e74ccc221d4bbf68529f1e8a7011163700a878e4e53aadb594472f049",
+    "review_independent.py": "d2d045a5ef10530786b3c9352042ab0331f0c9ab294578736789bf2e47a764d1"
+  },
+  "checks": [
+    "exact Golden source coefficients, orientation and independent beta controls",
+    "actual bound field/sign packets and new clock lengths",
+    "complete analytic heat and feedback rational envelopes",
+    "distinct native finite MG2 statistical source envelope",
+    "B109, B110 and B111 pinned read-only byte-identical replays",
+    "independent A56 review and conditional next native plane budget",
+    "source pins, Python syntax and JSON validity"
+  ],
+  "selected_operator_law_is_explicit_premise": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

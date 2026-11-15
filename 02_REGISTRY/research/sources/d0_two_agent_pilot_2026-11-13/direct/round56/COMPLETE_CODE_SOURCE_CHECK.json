@@ -1,0 +1,25 @@
+{
+  "status": "PASS_A56_ACTUAL_GRAPH_STATISTICAL_ORIENTATION_AND_DISTINCT_SOURCE_BUDGETS",
+  "exact_source_coefficient_cases": 32,
+  "actual_bound_native_pair_packets": 16,
+  "small_exact_clock_dimension_checks": 75,
+  "new_Nbase_and_full_heat_modes_retained": true,
+  "free_beta_wrong_determinant_power_wrong_orientation_and_moving_gain_controls": true,
+  "analytic_master_and_oriented_statistical_full_raw_dual_lt": "2^-34",
+  "analytic_heat_full_raw_dual_lt": "2^-40672",
+  "finite_native_MG2_statistical_four_axis_l2_lt": "2^-101",
+  "full_native_skew_or_physical_C_binding_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round56/complete_code_source.py": "af12b72e74ccc221d4bbf68529f1e8a7011163700a878e4e53aadb594472f049",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round4/C_BINDING_AUDIT_RU.md": "7703e7ea6042597c562ad88f57c62712ab34cbf3716c42ea6f40d8fe406f82bd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/regular_comparison_task.py": "e734262fdea2917ff9ea09960ffb4b6375f2e5f1adec96d2ec5b3455db7fb634",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/RECEIPT.json": "2002ba7db16c2e27a7a00a9e37af796ff2672bb937dc29005313c16244a2c46f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round109/B109_FULL_CODE_SKEW_RECOVERY_RU.md": "aff289349b7b1cfe8fc9e15e2f52f6a1e613af678afd85d158fbfcb95eaa9848",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round109/B109_FULL_SKEW_RECOVERY_CHECK.json": "8cc6e2e320623c2fcf86e09db2293c17fa87b86333f9ce5f0650e4807178a4c4",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round56/check_complete_code_source.py": "73991988559738ed5a4663940f8e8cef93707a6c46550795bfcf9ba655ccb1f5"
+  }
+}
