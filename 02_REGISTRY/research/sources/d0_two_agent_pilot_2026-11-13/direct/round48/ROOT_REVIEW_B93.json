@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ROOT_BYTE_IDENTICAL_B93_INDEPENDENT_REPLAY",
+  "checkpoint_sha256": "8418cdc9d8d3ab04313ab895966eb20de5d4dd17e32067e7cfc0c58c7c8f56fe",
+  "owner_writes_suppressed": [
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round93/INDEPENDENT_CHECK.json"
+  ],
+  "all_source_pins_checked": true,
+  "full_target_precision_replay_rerun_here": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,164 @@
+{
+  "status": "PASS_TWO_BIT_SOURCE_GLOBAL_BINDING_AND_NATIVE_GRAMMARS",
+  "source_slots_checked": {
+    "Choi": 1440,
+    "CAR": 128
+  },
+  "all2688_CODE_pair_bindings_checked": true,
+  "birth_intervals": [
+    {
+      "role": "active_port_WORK",
+      "physical_start": 0,
+      "count": 1
+    },
+    {
+      "role": "fresh_aux_WORK",
+      "physical_start": 1,
+      "count": 1
+    },
+    {
+      "role": "SAM",
+      "physical_start": 2,
+      "count": 2688
+    },
+    {
+      "role": "shared_SITE_WORK",
+      "physical_start": 2690,
+      "count": 8
+    },
+    {
+      "role": "SC6_selector_WORK",
+      "physical_start": 2698,
+      "count": 5
+    },
+    {
+      "role": "report_source_private_WORK",
+      "physical_start": 2703,
+      "count": 10407048078
+    },
+    {
+      "role": "new_G_CX_gadget_helper_WORK",
+      "physical_start": 10407050781,
+      "count": 1
+    },
+    {
+      "role": "independent_current_REPORT_and_source_DATA_RAW",
+      "physical_start": 10407050782,
+      "count": 1486716786
+    },
+    {
+      "role": "independent_current_source_private_RAW",
+      "physical_start": 11893767568,
+      "count": 4368
+    },
+    {
+      "role": "two_bit_high_CODE_RAW",
+      "physical_start": 11893771936,
+      "count": 2688
+    }
+  ],
+  "old_helper_retained": true,
+  "all_source_private_disjoint": true,
+  "small_Walsh_resource_and_depth_checks": 32,
+  "exact_adapter_primitive_replays": [
+    {
+      "levels": 0,
+      "depth": 0,
+      "equal_native_leaves": 35
+    },
+    {
+      "levels": 0,
+      "depth": 1,
+      "equal_native_leaves": 115
+    },
+    {
+      "levels": 0,
+      "depth": 2,
+      "equal_native_leaves": 247
+    },
+    {
+      "levels": 1,
+      "depth": 0,
+      "equal_native_leaves": 603
+    },
+    {
+      "levels": 1,
+      "depth": 1,
+      "equal_native_leaves": 1439
+    },
+    {
+      "levels": 1,
+      "depth": 2,
+      "equal_native_leaves": 3515
+    },
+    {
+      "levels": 2,
+      "depth": 0,
+      "equal_native_leaves": 3063
+    },
+    {
+      "levels": 2,
+      "depth": 1,
+      "equal_native_leaves": 7355
+    },
+    {
+      "levels": 2,
+      "depth": 2,
+      "equal_native_leaves": 19151
+    }
+  ],
+  "actual_production_DAG_smokes": [
+    {
+      "provider": "SITE",
+      "depth": 0,
+      "sample_blocks": 3
+    },
+    {
+      "provider": "SITE",
+      "depth": 1,
+      "sample_blocks": 3
+    },
+    {
+      "provider": "SITE",
+      "depth": 2,
+      "sample_blocks": 3
+    },
+    {
+      "provider": "Choi",
+      "depth": 0,
+      "sample_blocks": 3
+    },
+    {
+      "provider": "Choi",
+      "depth": 1,
+      "sample_blocks": 3
+    },
+    {
+      "provider": "Choi",
+      "depth": 2,
+      "sample_blocks": 3
+    },
+    {
+      "provider": "CAR",
+      "depth": 0,
+      "sample_blocks": 3
+    },
+    {
+      "provider": "CAR",
+      "depth": 1,
+      "sample_blocks": 3
+    },
+    {
+      "provider": "CAR",
+      "depth": 2,
+      "sample_blocks": 3
+    }
+  ],
+  "full_production_stream_traversed": false,
+  "aggregate_inventory_is_upper_not_actual": true,
+  "full_SOURCE_DATA_fibre_prefix_error_lt": "2^-3423",
+  "full_canonical_compressed_error_lt": "2^-3421",
+  "new_clock_post_price_family_complete": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

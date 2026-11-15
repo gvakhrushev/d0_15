@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ROOT_B94_COMPOSITION_AND_ACTUAL_JET_REPLAYS",
+  "byte_identical_receipts": [
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round94/SOURCE_COMPOSITION_CHECK.json",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round94/ACTUAL_VECTOR_JET_CHECK.json"
+  ],
+  "owner_writes_suppressed": true,
+  "B94_full_4306_power_replay_rerun_by_root": false,
+  "B94_full_power_receipt_pin_verified_in_checkpoint": true,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "checkpoint_sha256": "ee7e195373910cf80ca71898ff8f1d628b7ded678f191d611afc722f66324ef9",
+  "all18_A48_input_pins_verified": true,
+  "all_B94_artifact_pins_verified": true,
+  "B94_commit": "55a5c7d94760575f791a32ff1c162778c561ea2a"
+}
