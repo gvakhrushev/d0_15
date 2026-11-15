@@ -56,7 +56,7 @@ A45 после этой независимой проверки исправле
 
     δ = ε_U + 3ε_echo + μ_probe <2^-14622.
 
-С этим δ полный all-plane finite feedback dual вместе с пересчитанным heat остаётся `<2^-75`. Это результат для указанных математически конечных plane comparisons, а не доказательство, что все они admitted в original descriptor или что построенный production word исполнен. Все source SHA в JSON относятся к уже исправленным A45 py/plan/checker/receipt.
+С этим δ полный all-plane finite feedback dual вместе с пересчитанным heat остаётся `<2^-75`. Это результат для указанных математически конечных plane comparisons, а не доказательство, что все они admitted в original descriptor или что построенный production word исполнен. Все source SHA в JSON относятся к уже исправленным A45 py/plan/checker/receipt и финальному отчёту; их содержательная сверка расхождений не выявила.
 
 ## 4. Граница reuse и исходного task
 

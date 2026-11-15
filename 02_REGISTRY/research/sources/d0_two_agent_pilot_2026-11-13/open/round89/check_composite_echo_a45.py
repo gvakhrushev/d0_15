@@ -75,17 +75,21 @@ try:
  list(a45.compile_tagged(bad,compiler,lambda:iter(()),lambda x:x));raise AssertionError('barrier failed')
 except AssertionError as exc:assert 'SourceI pair' in str(exc)
 # Validate independent file pins after creating the receipt below.
+report=(D/'round45/COMPOSITE_PROCESSOR_ECHO_RU.md').read_text()
+assert 'δ=e_U+3ε_echo+μ_probe' in report
+assert 'НЕ создаёт восьмой независимый tensor' in report
+assert 'Mark внутри' in report and 'не переносится автоматически' in report
 plan=json.loads((D/'round45/COMPOSITE_PROCESSOR_ECHO_PLAN.json').read_text())
 for f,h in plan['source_sha256'].items():assert sha256(Path(f).read_bytes()).hexdigest()==h
 outgoing_code=a45.budgets()['new_outgoing_finite_dual_upper']
 assert outgoing_code==post
 needs_fix=False
 files=[Path(__file__),D/'round45/composite_processor_echo.py',D/'round45/COMPOSITE_PROCESSOR_ECHO_PLAN.json',
- D/'round45/check_composite_processor_echo.py',D/'round45/COMPOSITE_PROCESSOR_ECHO_CHECK.json',
+ D/'round45/check_composite_processor_echo.py',D/'round45/COMPOSITE_PROCESSOR_ECHO_CHECK.json',D/'round45/COMPOSITE_PROCESSOR_ECHO_RU.md',
  D/'round42/FIXED_POST_PAID_FAMILY_RU.md',D/'round43/LOCAL_Q_PRICE_RU.md',D/'round44/JOINT_SOURCE_REDUCTION_RU.md',
  O/'round88/B88_COMPOSITE_PREPARED_PROCESSOR_RU.md',O/'round88/B88_COMPOSITE_PROCESSOR_CHECK.json']
 out={'status':'OUTGOING_NORMALIZATION_FACTOR_NEEDS_CORRECTION' if needs_fix else 'PASS_PAID_COMPOSITE_ECHO_WITH_NORMALIZATION',
- 'explicit_304_address_pairs_match_B88':True,'echo_G_CX_counts_and_full_clock_match_B88':True,
+ 'final_A45_report_checked_and_pinned':True,'explicit_304_address_pairs_match_B88':True,'echo_G_CX_counts_and_full_clock_match_B88':True,
  'genuine_full_processor_map_error_lt':'2^-3231, at closed processor boundaries and stated source-input domain',
  'q_and_incoming_recomputed_budgets_pass':True,'Qb_finite_j2_lower_gt':'2^-45',
  'normalization_counterexample_exact':True,'safe_outgoing_state_delta':'eU+3*eEcho+probeError',
