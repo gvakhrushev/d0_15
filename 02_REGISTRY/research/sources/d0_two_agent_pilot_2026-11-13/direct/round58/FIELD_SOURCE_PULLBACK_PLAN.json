@@ -1,0 +1,22 @@
+{
+  "status": "EXPLICIT_MG2_PLANE_READOUT_AND_FORWARD_FIELD_PULLBACK",
+  "raw_coordinates": 2688,
+  "CODE_bits": 5376,
+  "CODE_pair_positions": "(j,2688+j), all-low then all-high",
+  "raw_row_formula": "sum_s sum_i<k lambda_ik fhat_Pf(E_embed(s,i),embed(s,k))",
+  "plane_rows_per_raw_coordinate": "6*2^5374",
+  "signed_native_requests_per_raw_coordinate": "12*2^5374",
+  "all_2688_raw_rows_signed_requests": "32256*2^5374",
+  "lift": "Rraw(v)=(sum_j v_j X_j,0,0,0)",
+  "lift_isometry": "||Rraw(v)||raw=||v||2 since Lraw Rraw=I and sqrt(2688)<52",
+  "physical_source": "fhat_physical=fhat Rraw iota",
+  "point_binding": "A53 outward u centre and exact rational theta; fixed PF/collar; no corner digits or rounded B21 centre substituted",
+  "original_norm_error": "< alpha_h*2^-34, alpha_h=||iota||_(Vh->l2)",
+  "physical_iota_inverse_required_for_forward_pullback": false,
+  "physical_norm_numeric_normalization_supplied": false,
+  "production_sum_or_physical_reader_executed": false,
+  "finite_MG2_word_price_equals_plane_interpolant_claimed": false,
+  "new_action_Info_weight_selector_or_geometry_root": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

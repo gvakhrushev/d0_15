@@ -1,0 +1,23 @@
+{
+  "status": "A58_LOCAL_INDEPENDENTLY_REVIEWED_CHECKPOINT",
+  "artifact_sha256": {
+    "FIELD_SOURCE_PULLBACK_CHECK.json": "3321b74d65f9402b5c1a1b071d16df9e3458672413ee25266f77853407b89b82",
+    "FIELD_SOURCE_PULLBACK_PLAN.json": "dcf8b89a619d3395b70be3ea693e39e9088d75c0d3300620d4c65f15fc262e8c",
+    "FIELD_SOURCE_PULLBACK_RU.md": "86b584796d1056408918c6cb99b0a033d24fefabd20059fec28619c055d65aac",
+    "RESULT.json": "4f835b682552fb0951428031805cfd3bcee4ba0002be172d789a17c698464d18",
+    "ROOT_REVIEW_B114.json": "cdd635200b7deac5c33b0a093f54265130c4f65616ff03b1f87d48b88817adfc",
+    "ROOT_REVIEW_B115.json": "f979c9027cbc8c454020e26774ad3e0d36fe4ad31e595adb779f3bba840fb6aa",
+    "check_field_source_pullback.py": "dbe7c9a03f0957051cf971e8ed3a8a615015803b250ab61e1e9f4e7e9fd7cc8a",
+    "field_source_pullback.py": "fee71d725ebd551d0533e90d52707d31bff933c022c2f812b3e1dbf3beeb1733"
+  },
+  "checks": [
+    "Exact all-spectator MG2 plane decomposition, m=1..4, complete vectors through 256 columns",
+    "Independent B115 1878-term support/sign check and all 2688 production bit pairs",
+    "Same-field 128/192 outward coframe binding, exact link offsets, and B115 all 128 actual matter offsets",
+    "B114 exact coframe/link Jacobian and independent full-field transpose diagnostic",
+    "B114 and B115 pinned Git/blob/source checks and read-only byte-identical replays",
+    "Q4 diagnostic scope, finite nonlinear-price distinction and C2 holonomy-kernel guard"
+  ],
+  "physical_C_closed": false,
+  "GR_closed": false
+}

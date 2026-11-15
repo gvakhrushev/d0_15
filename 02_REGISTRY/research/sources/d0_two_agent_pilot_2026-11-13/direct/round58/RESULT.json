@@ -1,0 +1,46 @@
+{
+  "status": "EXPLICIT_FINITE_PLANE_TO_PHYSICAL_SOURCE_PULLBACK_INDEPENDENTLY_REVIEWED",
+  "parent_A57_commit": "4197542c79ab8e84b28d54c095e3d9d9874cd5da",
+  "independent_B_commits": {
+    "B114": "832acc1960733f66bdff887002340656e4c886c5",
+    "B115": "a595c19eb6701e699975f7f6dc650c35162c6c64"
+  },
+  "parent_substitution": "A57 full plane covector now has explicit complete MG2 raw-field readout and the actual fixed-PF/collar physical coframe/link/matter transpose via B114, with same-FieldCentre interval names",
+  "raw_coordinates": 2688,
+  "interior_sites": 64,
+  "coordinates_per_site": [
+    16,
+    24,
+    2
+  ],
+  "CODE_pair_positions": "j,2688+j; all low then all high",
+  "raw_row": "sum_s sum_i<k lambda_ik fhat_Pf(E_embed(s,i),embed(s,k))",
+  "all_raw_rows_signed_native_requests": "32256*2^5374",
+  "raw_lift_isometry": "||Rraw(v)||raw=||v||2",
+  "raw_source_error_lt": "2^-34",
+  "physical_source": "fhat Rraw iota_h",
+  "original_Vh_error_lt": "alpha_h*2^-34; alpha_h=||iota_h||_(Vh->l2)",
+  "physical_norm_unchanged": true,
+  "numeric_alpha_h_or_uniform_h_bound_supplied": false,
+  "same_field_binding": "A53/A48/A20 exact outward u at 128/192 bits, exact rational theta; sampled SOURCE digits absent at centre",
+  "coframe_reconstruction": "u=A E^-T, E=A^T u^-T; A=(3/5) eta_N S",
+  "link_derivative": "G^-1 dexp_Theta^-1(dU_N U_N^-1), with actual S signs; not direct delta_omega",
+  "B114_numerical_API_on_same_bound_field": "full 2688 transpose diagnostic only, not an interval price certificate",
+  "general_connection_kernel": "nonzero C2 zero-integral commuting edge variation leaves identity holonomy unchanged; actual Einstein source on this kernel remains unproved",
+  "physical_iota_inverse_required_for_forward_pullback": false,
+  "full_Vh_domain_or_original_fine_instrument_admission_closed": false,
+  "general_transcendental_prices_evaluated_by_Q4_checker": false,
+  "production_exponential_sum_or_physical_arithmetic_reader_executed": false,
+  "joint_finite_MG2_price_identified_with_linear_plane_interpolant": false,
+  "later_7fu_physical_C_withdrawal_preserved": true,
+  "next_named_obligations": [
+    "Original physical fine-instrument/descriptor marked transport on its admitted full input",
+    "Original Vh norm/domain and genuinely independent PF/boundary/frame rows",
+    "Same-source equivalence of full physical weighted Cost-Info; no reinstatement of superseded 7fs closure"
+  ],
+  "new_action_Info_weight_selector_or_geometry_root": false,
+  "local_only": true,
+  "published": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
