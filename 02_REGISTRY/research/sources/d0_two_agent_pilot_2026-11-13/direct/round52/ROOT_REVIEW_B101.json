@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ROOT_B101_BYTE_IDENTICAL_READ_ONLY_REPLAY",
+  "B101_commit": "89d19723ca08e5c9ccbb9588ce15c26412596c70",
+  "all_input_pins_and_pinned_git_bytes_verified": true,
+  "owner_writes_suppressed": [
+    "B101_FULL_SOURCE_COUNTEREXAMPLE.json"
+  ],
+  "conclusion": "complete fidelity plus 2688 zero selected rows does not imply small full logical source; exact Book03 mathematical counterexample",
+  "not_an_A49_admitted_variation_or_no_go": true,
+  "physical_fine_instrument_binding_remains_open": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
