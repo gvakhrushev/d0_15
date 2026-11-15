@@ -1,0 +1,32 @@
+{
+  "status": "PASS_EXACT_BOOK03_FULL_FIDELITY_INCOMPLETE_ROWS_COUNTEREXAMPLE",
+  "logical_axis_directions": 2688,
+  "independent_skew_dimension": 2701,
+  "axis_rows_are_zero_by_stagewise_clock_conjugacy_and_endpoint_identity": true,
+  "extra_source_derivative_exact": "672/337",
+  "finite_plus_minus_positive_denominator_ratio": "3308410394351707537/3442716323759573137",
+  "finite_plus_minus_equal": false,
+  "full_clock_stage_conjugacy_checked": true,
+  "source_effect_defined_on_same_complete_family": true,
+  "four_outcome_full_effects_sum_to_identity_on_declared_fibre": true,
+  "REPORT0_physical_label_wires": {
+    "REPORT": 21216958,
+    "all_READY": 21216959
+  },
+  "physically_registered_full_fine_readout_established": false,
+  "universal_price_or_native_A49_counterexample": false,
+  "new_physical_variation_admitted_by_this_fixture": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/gr_assembly/contract.json": "8d36f06b71b7b897b06b82fec0261ea63da2f61b01e750e6f81a9b22be82b4a8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round48/two_bit_source_native.py": "29397868120582067985fda3e8d837effaf11b4e7c71a05c8fd95e502ce2957e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round49/two_bit_paid_family.py": "ce6195ca3f1fe5d7176241af4d6d0c6659e489b39738953341a8bba204249add",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_ASSEMBLY_RU.md": "031c0fe593db8a1e71465741d17f67d4b9ee40111b69130c734d65f71cce725a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md": "450c736e06e50561c6f5b4e9b27a9744d79fb6b3e38cf7c6880ab12205f759c7"
+  }
+}
