@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "b8f9510aea8885de0856b81f1fb8db7e71b6119c",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round85/check_equal_price_swap.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round85/B85_EQUAL_PRICE_SWAP_FIXTURE.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "846800651b2905b86a36c77a628321543075ed34620af86c6356d6d4bde7a09c",
+  "receipt_sha256": "85093e4781ec97b8837e5c06150b9c3f428934a643d7434a69cc557bba60a8c2",
+  "owner_status": "PASS_EXACT_FINITE_EQUAL_LENGTH_GAUGE_SWAP_FIXTURE",
+  "source_pins_verified": true,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

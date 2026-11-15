@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "16d8600c7b54ee12a534cd1bac484b3d69275062",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round84/check_uniform_adjacent_sources.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round84/B84_UNIFORM_SOURCE_BOUND.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "70e2f2154f4d1224af6a802aca7484cda4bcc0947db1abccecf0a58e8e6a1373",
+  "receipt_sha256": "8ae295b988349e109c29ca4d4706cb097f596f57e6b63c5543950c21f5cfb1b5",
+  "owner_status": "UNIFORM_ADJACENT_PREPARED_SOURCE_BOUND_AND_CONDITIONAL_NONZERO_Q_FEEDBACK",
+  "source_pins_verified": true,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

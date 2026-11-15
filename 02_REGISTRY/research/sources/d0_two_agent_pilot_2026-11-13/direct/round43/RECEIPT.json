@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "round": "A43",
+  "independent_rounds": [
+    "B84",
+    "B85"
+  ],
+  "files_sha256": {
+    "LOCAL_Q_PRICE_CHECK.json": "15fffca9c9f9f7664335e4a6966f4c820e7561b86e4f56f272124028d9008ed5",
+    "LOCAL_Q_PRICE_PLAN.json": "b6ffe3f91a6a93de494eea916f0b7b92e973488fbb366f47724c260480f204ac",
+    "LOCAL_Q_PRICE_RU.md": "e905e91317cc09b55add4203486bad60e5b32da47d967553b30fbd0adee06675",
+    "RESULT.json": "e87313a927076e54946bbc98edf0f05f0aeaeb16e2d7843fe3f1bb224b8bcd38",
+    "ROOT_REVIEW_B84.json": "be5d2ca52f941f5aeb3b4f4ac9b85200b5f8ac156c99bfe4e729146248960152",
+    "ROOT_REVIEW_B85_A43.json": "fa5f4e0543baf51391c8272b4a3815447f292e920e6fe97c42b591192b37b6a2",
+    "ROOT_REVIEW_B85_SWAP.json": "82019f4724f934aa9655e7aa911112edeb04e1f310fde1f15c0e3bf5697fa507",
+    "check_local_q_price.py": "44da27040284a98d95dd17d92f707a9de361fee1de8bfdbeba45d52918170ccf",
+    "local_q_price.py": "c3ed7d808a8aea258901c96176cd3ae7215e83ae4239cd8a5bc18458c108fbe2"
+  },
+  "full_original_H1_Cost_Info_or_GR_closed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

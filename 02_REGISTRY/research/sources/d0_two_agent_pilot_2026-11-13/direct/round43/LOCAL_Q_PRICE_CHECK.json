@@ -1,0 +1,63 @@
+{
+  "status": "PASS_NAMED_LOCAL_Q_BOUNDS_AND_FIVE_PAID_SMALL_HISTORIES",
+  "pointwise_matter_derivative_symbolically_checked": true,
+  "full_small_histories": [
+    {
+      "leg": "centre",
+      "sign": "centre",
+      "stages": 202,
+      "clock_dimension": 6495,
+      "core_G": 3,
+      "core_CX": 17,
+      "original_checkpoint": 14
+    },
+    {
+      "leg": "Qf",
+      "sign": "plus",
+      "stages": 202,
+      "clock_dimension": 6495,
+      "core_G": 6,
+      "core_CX": 14,
+      "original_checkpoint": 14
+    },
+    {
+      "leg": "Qf",
+      "sign": "minus",
+      "stages": 202,
+      "clock_dimension": 6495,
+      "core_G": 5,
+      "core_CX": 15,
+      "original_checkpoint": 14
+    },
+    {
+      "leg": "Qb",
+      "sign": "plus",
+      "stages": 202,
+      "clock_dimension": 6495,
+      "core_G": 5,
+      "core_CX": 15,
+      "original_checkpoint": 14
+    },
+    {
+      "leg": "Qb",
+      "sign": "minus",
+      "stages": 202,
+      "clock_dimension": 6495,
+      "core_G": 6,
+      "core_CX": 14,
+      "original_checkpoint": 14
+    }
+  ],
+  "centre_counts_distinguished_from_active_arm_counts": true,
+  "original_prefix_before_first_Q_slot_identical": true,
+  "production_upper_count_guard_preserved": true,
+  "production_word_or_absolute_heat_trace_evaluated": false,
+  "full_original_H1_or_mark_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round43/check_local_q_price.py": "44da27040284a98d95dd17d92f707a9de361fee1de8bfdbeba45d52918170ccf",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round43/local_q_price.py": "c3ed7d808a8aea258901c96176cd3ae7215e83ae4239cd8a5bc18458c108fbe2",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round43/LOCAL_Q_PRICE_PLAN.json": "b6ffe3f91a6a93de494eea916f0b7b92e973488fbb366f47724c260480f204ac"
+  }
+}
