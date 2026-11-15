@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ROOT_B116_PINNED_READ_ONLY_BYTE_IDENTICAL_REPLAY",
+  "commit": "2f4c66ad750546f012ac6289bdc24e55a54943a9",
+  "all_Git_blobs_and_source_pins_verified": true,
+  "owner_writes_suppressed": [
+    "B116_ORIGINAL_FULL_INPUT_CHECK.json"
+  ],
+  "artifact_sha256": {
+    "B116_ORIGINAL_FULL_INPUT_AND_MARK_RU.md": "b35dcbe641277f24c23b3297fe01d6cbb454a2ea9d127f89db218fa426b3acce",
+    "B116_ORIGINAL_FULL_INPUT_CHECK.json": "efc76c3f08306318f73d085b8bf511b83ecb82fc9194f7f3ae0d5f266f5d6b71",
+    "check_original_full_input.py": "933dcfd79e3a69065987929d38d7b904d40ea04ebd1080dab73991775acad294"
+  },
+  "superseded_4895b4_commit_not_used": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
