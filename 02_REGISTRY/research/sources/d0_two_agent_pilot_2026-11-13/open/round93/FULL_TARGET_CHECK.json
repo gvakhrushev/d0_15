@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL_TWO_BIT_PROPER_LINK_TARGET_FAMILIES",
+  "variable_families": 20480,
+  "fixed_families": 16,
+  "all_families": 20496,
+  "angles": 307416,
+  "precision_bits": 4096,
+  "all_angle_interval_width_lt": "2^-3500",
+  "max_width_bits": 170,
+  "family_receipts_sha256": "dfd96b6d7fc1d7853b83215996d6377b8667d6052c43a077a01ca7fabaa20dc0",
+  "fixed_map_unchanged": true,
+  "candidate_power_or_float_used": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

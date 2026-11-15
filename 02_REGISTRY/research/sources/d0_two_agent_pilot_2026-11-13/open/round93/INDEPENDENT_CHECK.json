@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FULL_CATALOGUE_GRID_AND_INDEPENDENT_NATIVE_POWER_WITNESSES",
+  "all_family_names_checked": 20496,
+  "all_catalogue_sectors_checked": 1055488,
+  "bank_sector_counts": {
+    "y+": 1024,
+    "y-": 1024,
+    "f": 1049344,
+    "0": 1024,
+    "x+": 1024,
+    "x-": 1024,
+    "q": 1024
+  },
+  "independent_direct_power_angles_sample": 47,
+  "sample_scope": "three target families and controlled X; global angles guaranteed by certified uniform short grid plus exhaustive target bounds",
+  "family_major_provider_sector_counts_and_reverse_order": true,
+  "actual_lazy_provider_smoke": true,
+  "actual_exact_full_inventory_evaluated": false,
+  "sourceI_replacement_compiled": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
