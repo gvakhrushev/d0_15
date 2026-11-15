@@ -1,0 +1,20 @@
+{
+  "status": "PASS_INDEPENDENT_FIXED_POST_FINITE_FAMILY_AUDIT",
+  "owner_sha256": "63258bd4731fe47231387bb3faff93291e95886857b086e57d39d3d3ba2ace40",
+  "plan_sha256": "f2ddbf8037728ddad990465c1db6640127568ccc5b67e3cb5caa5c2de9d92dd6",
+  "checker_sha256": "3093dbecc6455f166f2ea8ac603219df931d55f3c822617971a74e3c97b3f66d",
+  "exact_fixed_post_vs_reduced_derivative_all_4d_planes_checked": true,
+  "all_small_planes_m3_m4_affine_and_native_counts_checked": true,
+  "full_toy_families_replayed": 15,
+  "independent_full_clock_T_P_F_fixtures_K1_K2": true,
+  "same_post_in_incoming_histories_checked": true,
+  "production_Nbase_bits": 25457,
+  "same_K_all_endpoints": 137444,
+  "coefficient_of_2_to_K_in_D": 3,
+  "production_upper_counts_guarded": true,
+  "all_rational_bounds_and_geometry_transfer_checked": true,
+  "A42_H1_admission_or_inner_Q_stationarity_proved": false,
+  "production_word_or_full_heat_trace_evaluated": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
