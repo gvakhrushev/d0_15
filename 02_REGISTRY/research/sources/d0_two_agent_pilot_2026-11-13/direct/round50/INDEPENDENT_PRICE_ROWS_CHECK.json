@@ -1,0 +1,35 @@
+{
+  "status": "PASS_EXACT_FOUR_ROW_ORDER_HOSTILE_CASES_AND_NEW_BOUNDS",
+  "fixtures": [
+    {
+      "case": "exact_profile",
+      "actual_return_identified_with_forward_inverse": true,
+      "Pb_before_post_exact_analytic_zero_and_finite_even": true,
+      "Q_rows_nonzero_opposite": true,
+      "approximate_post_breaks_exact_Pb_evenness": true,
+      "independent_noninverse_controls_break_exact_Pb_evenness": true,
+      "endpoint_swap_does_not_identify_fixed_CODE_mark": true
+    },
+    {
+      "case": "independent_native_like_return",
+      "actual_return_identified_with_forward_inverse": false,
+      "Pb_before_post_exact_analytic_zero_and_finite_even": true,
+      "Q_rows_nonzero_opposite": true,
+      "approximate_post_breaks_exact_Pb_evenness": true,
+      "independent_noninverse_controls_break_exact_Pb_evenness": true,
+      "endpoint_swap_does_not_identify_fixed_CODE_mark": true
+    }
+  ],
+  "CODE_control_only_is_not_enough_for_inner_commutant": true,
+  "actual_A49_middle_support_binding_checked": true,
+  "all_four_2688_axis_rows_Euclidean_bound_checked": true,
+  "all_controls_or_original_Vh_norm_closed": false,
+  "production_kernel_or_word_executed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round50/check_independent_price_rows.py": "a53943fddca840bf0559de8c5fce66f43a6d3b93f617e29a358cc4bc9cb9f555",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round50/independent_price_rows.py": "d3aaec93f6206d28c8d527ad4bbc3001d4debd884770cffd474960a2697e5dae",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round50/INDEPENDENT_PRICE_ROWS_PLAN.json": "cd65760550893d93228b07cab613098c9ea7b9692c189784a1d7bafd0a346229"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

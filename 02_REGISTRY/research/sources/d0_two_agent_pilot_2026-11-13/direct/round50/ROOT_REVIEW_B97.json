@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ROOT_B97_TWO_BYTE_IDENTICAL_REPLAYS",
+  "B97_commit": "8ec0fdaa9bd7f907140d3636f6bc8c11b1d73458",
+  "checkpoint_sha256": "9ad8d42d20c965f8dbad88c01264523cc5c237e178fcbc1d37a5f0784acd5082",
+  "all_source_and_artifact_pins_verified": true,
+  "artifacts_equal_pinned_git": true,
+  "owner_writes_suppressed": [
+    "SCALAR_THIRD_DERIVATIVE_CHECK.json",
+    "FIXED_POST_WEIGHT_CHECK.json"
+  ],
+  "replayed": [
+    "certify_scalar_third_derivative.py",
+    "check_fixed_post_weight.py"
+  ],
+  "B97_third_Leibniz_and_weight_proofs_reviewed": true,
+  "scope_not_extended_to_other_old_input_or_physical_price": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
