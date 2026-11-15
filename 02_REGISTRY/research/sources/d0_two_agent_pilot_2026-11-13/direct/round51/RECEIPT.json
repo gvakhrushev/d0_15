@@ -1,0 +1,27 @@
+{
+  "status": "A51_LOCAL_REVIEWED_CHECKPOINT",
+  "base_A_commit": "fc3d01f6aa8cb1c5a3f0370431fb2895b45f6801",
+  "B99_commit": "e3ee28f14c87de3209a5390d4e3c98cd2ab03310",
+  "B100_commit": "efc9d893780153b347fdd1923dc29c30ad8ea654",
+  "artifact_sha256": {
+    "COMPLETED_MARKED_PREFIX_CHECK.json": "04f7bc78f614da1752cbb93f46a97363866491d44d683606e0c3fa24cc64f2c9",
+    "COMPLETED_MARKED_PREFIX_PLAN.json": "6b77892bbd6e744245778d84f49acaf9ca4142d5fc6c94face35efff77a3dc86",
+    "COMPLETED_PREFIX_TRANSPORT_RU.md": "0bc25d6de4cd283a23f82b3ac80be5f66e8cc44074e2703a2736cb6a098f684c",
+    "RESULT.json": "71ebe994f29dece4d1f612ed5e15b2077be6475beceb0a3edb90569cc815daeb",
+    "ROOT_REVIEW_B100.json": "6cd9d7be682b8c3cd1fd2696f3b29e543bfebb9093fc232b4b1d30422192890d",
+    "ROOT_REVIEW_B99.json": "03f51bc8e806197e92f06221060da69b0bc4adfe612542c5467b06472adfe5df",
+    "check_completed_marked_prefixes.py": "f3284e0418e0e3107b475bbe0692b839d1cf1def2d6073450163b9f0a69f8424",
+    "completed_marked_prefixes.py": "fcca9df3ef195c3854fd0f03602749642f184df5f79add625db7711625c897ee"
+  },
+  "checks": [
+    "own literal 39 small prefix comparisons and symbolic full-input algebra PASS",
+    "B99 root read-only byte-identical replay and Git/SHA pins PASS",
+    "B100 root read-only byte-identical replay and Git/SHA pins PASS",
+    "A17 count recomputation and exact rational norm budgets PASS",
+    "per-REPORT closure consumes structural proof, no production enumeration",
+    "final Python syntax, JSON and source pins PASS"
+  ],
+  "typed_fibre_and_norm_scope_preserved": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,215 @@
+{
+  "status": "PASS_COMPLETED_PREFIX_PLACEMENT_AND_FULL_EFFECT_JET_IDENTITIES",
+  "literal_A49_prefix_fixtures": [
+    {
+      "sign": -1,
+      "mark": "SOURCE_before_Qf",
+      "actual_native_prefix_calls": 8
+    },
+    {
+      "sign": -1,
+      "mark": "SOURCE_after_Qf",
+      "actual_native_prefix_calls": 14
+    },
+    {
+      "sign": -1,
+      "mark": "RAW_frame_return",
+      "actual_native_prefix_calls": 16
+    },
+    {
+      "sign": -1,
+      "mark": "REPORT_0_complete",
+      "actual_native_prefix_calls": 17
+    },
+    {
+      "sign": -1,
+      "mark": "REPORT_1_complete",
+      "actual_native_prefix_calls": 19
+    },
+    {
+      "sign": -1,
+      "mark": "REPORT_2_complete",
+      "actual_native_prefix_calls": 20
+    },
+    {
+      "sign": -1,
+      "mark": "REPORT_3_complete",
+      "actual_native_prefix_calls": 22
+    },
+    {
+      "sign": -1,
+      "mark": "REPORT_4_complete",
+      "actual_native_prefix_calls": 23
+    },
+    {
+      "sign": -1,
+      "mark": "REPORT_5_complete",
+      "actual_native_prefix_calls": 25
+    },
+    {
+      "sign": -1,
+      "mark": "REPORT_6_complete",
+      "actual_native_prefix_calls": 26
+    },
+    {
+      "sign": -1,
+      "mark": "REPORT_7_complete",
+      "actual_native_prefix_calls": 28
+    },
+    {
+      "sign": -1,
+      "mark": "PORT_ZERO",
+      "actual_native_prefix_calls": 29
+    },
+    {
+      "sign": -1,
+      "mark": "SC6",
+      "actual_native_prefix_calls": 31
+    },
+    {
+      "sign": 0,
+      "mark": "SOURCE_before_Qf",
+      "actual_native_prefix_calls": 8
+    },
+    {
+      "sign": 0,
+      "mark": "SOURCE_after_Qf",
+      "actual_native_prefix_calls": 14
+    },
+    {
+      "sign": 0,
+      "mark": "RAW_frame_return",
+      "actual_native_prefix_calls": 16
+    },
+    {
+      "sign": 0,
+      "mark": "REPORT_0_complete",
+      "actual_native_prefix_calls": 17
+    },
+    {
+      "sign": 0,
+      "mark": "REPORT_1_complete",
+      "actual_native_prefix_calls": 19
+    },
+    {
+      "sign": 0,
+      "mark": "REPORT_2_complete",
+      "actual_native_prefix_calls": 20
+    },
+    {
+      "sign": 0,
+      "mark": "REPORT_3_complete",
+      "actual_native_prefix_calls": 22
+    },
+    {
+      "sign": 0,
+      "mark": "REPORT_4_complete",
+      "actual_native_prefix_calls": 23
+    },
+    {
+      "sign": 0,
+      "mark": "REPORT_5_complete",
+      "actual_native_prefix_calls": 25
+    },
+    {
+      "sign": 0,
+      "mark": "REPORT_6_complete",
+      "actual_native_prefix_calls": 26
+    },
+    {
+      "sign": 0,
+      "mark": "REPORT_7_complete",
+      "actual_native_prefix_calls": 28
+    },
+    {
+      "sign": 0,
+      "mark": "PORT_ZERO",
+      "actual_native_prefix_calls": 29
+    },
+    {
+      "sign": 0,
+      "mark": "SC6",
+      "actual_native_prefix_calls": 31
+    },
+    {
+      "sign": 1,
+      "mark": "SOURCE_before_Qf",
+      "actual_native_prefix_calls": 8
+    },
+    {
+      "sign": 1,
+      "mark": "SOURCE_after_Qf",
+      "actual_native_prefix_calls": 14
+    },
+    {
+      "sign": 1,
+      "mark": "RAW_frame_return",
+      "actual_native_prefix_calls": 16
+    },
+    {
+      "sign": 1,
+      "mark": "REPORT_0_complete",
+      "actual_native_prefix_calls": 17
+    },
+    {
+      "sign": 1,
+      "mark": "REPORT_1_complete",
+      "actual_native_prefix_calls": 19
+    },
+    {
+      "sign": 1,
+      "mark": "REPORT_2_complete",
+      "actual_native_prefix_calls": 20
+    },
+    {
+      "sign": 1,
+      "mark": "REPORT_3_complete",
+      "actual_native_prefix_calls": 22
+    },
+    {
+      "sign": 1,
+      "mark": "REPORT_4_complete",
+      "actual_native_prefix_calls": 23
+    },
+    {
+      "sign": 1,
+      "mark": "REPORT_5_complete",
+      "actual_native_prefix_calls": 25
+    },
+    {
+      "sign": 1,
+      "mark": "REPORT_6_complete",
+      "actual_native_prefix_calls": 26
+    },
+    {
+      "sign": 1,
+      "mark": "REPORT_7_complete",
+      "actual_native_prefix_calls": 28
+    },
+    {
+      "sign": 1,
+      "mark": "PORT_ZERO",
+      "actual_native_prefix_calls": 29
+    },
+    {
+      "sign": 1,
+      "mark": "SC6",
+      "actual_native_prefix_calls": 31
+    }
+  ],
+  "exact_algebra": {
+    "joint_effect_polarization_all_input_columns": true,
+    "fixed_processor_full_jet_transport_identity": true,
+    "error_D_times_genuine_derivative_not_inverse_step": true,
+    "pre_Qf_mark_cannot_inherit_post_Qf_geometric_jet": true
+  },
+  "production_prefixes_executed": false,
+  "all_original_descriptor_marks_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round51/check_completed_marked_prefixes.py": "f3284e0418e0e3107b475bbe0692b839d1cf1def2d6073450163b9f0a69f8424",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round51/completed_marked_prefixes.py": "fcca9df3ef195c3854fd0f03602749642f184df5f79add625db7711625c897ee",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round51/COMPLETED_MARKED_PREFIX_PLAN.json": "6b77892bbd6e744245778d84f49acaf9ca4142d5fc6c94face35efff77a3dc86"
+  }
+}

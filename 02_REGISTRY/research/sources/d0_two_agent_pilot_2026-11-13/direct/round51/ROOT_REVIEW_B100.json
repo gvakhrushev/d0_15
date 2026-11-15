@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ROOT_B100_BYTE_IDENTICAL_READ_ONLY_REPLAY",
+  "B100_commit": "efc9d893780153b347fdd1923dc29c30ad8ea654",
+  "all_B100_input_sha256_verified": true,
+  "all_B100_artifacts_equal_pinned_git": true,
+  "owner_writes_suppressed": [
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round100/B100_A51_AUDIT_CHECK.json"
+  ],
+  "report_boundary_proof": "B58 structural good-word induction consumed at unchanged A25 REPORT grammar; each of eight complete REPORTs is closed, not production-enumerated",
+  "typed_canonical_fibre_only": true,
+  "scope_correction": "RO1/XF5 allow complete scoped task datum without external registry; actual Book01 witnesses and all genuine logical variations remain",
+  "production_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

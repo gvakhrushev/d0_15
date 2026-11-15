@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ROOT_B99_EXACT_BOUNDARY_REPLAY_AND_INPUT_PINS",
+  "B99_commit": "e3ee28f14c87de3209a5390d4e3c98cd2ab03310",
+  "owner_writes_suppressed": [
+    "B99_VACUUM_EXTENSION_CHECK.json"
+  ],
+  "Git_blobs_verified": true,
+  "same_vacuum_column_is_not_all_column_or_mark_equality": true,
+  "B99_external_registry_reading_not_adopted": "RO1 and XF5-XF6 allow an explicit scoped task datum T; needs its actual operation/mark/price/Book01 witnesses, not a universal scheduler or unprovided unique prefix",
+  "production_or_original_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
