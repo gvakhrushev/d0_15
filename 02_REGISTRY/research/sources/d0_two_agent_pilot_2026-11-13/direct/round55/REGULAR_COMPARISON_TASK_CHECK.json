@@ -1,0 +1,20 @@
+{
+  "status": "PASS_REGULAR_FIELD_REQUEST_AND_MARKED_PREFIX_BINDING",
+  "field_name_label_canonical_round_trips": 46,
+  "invalid_packets_rejected": 9,
+  "actual_field_bound_post_factories_and_common_new_clock_checked": true,
+  "literal_prefix_comparisons_two_fields_all_independent_arms": 598,
+  "unchanged_processor_provider_sample_comparisons": 24,
+  "uniform_full_vector_jet_recomputed_lt": "2^-44",
+  "uniform_norm_one_effect_jet_recomputed_lt": "2^-43",
+  "uniform_midpoint_error_lt": "2^-62",
+  "fine_instrument_registration_or_Vh_Cost_Info_proved": false,
+  "production_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/check_regular_comparison_task.py": "0857d9c34a4b0b4b2a69b2f404fec36224f4b4e44fe5c23c006901d7dc2710e4",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/regular_comparison_task.py": "e734262fdea2917ff9ea09960ffb4b6375f2e5f1adec96d2ec5b3455db7fb634",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/REGULAR_COMPARISON_TASK.json": "186effcd85c629c28c7e1163f410cb4a063acb0026a27aed9a40c671ef7a3412"
+  }
+}
