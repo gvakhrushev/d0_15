@@ -1,0 +1,28 @@
+{
+  "status": "PASS_PAID_COMPOSITE_ECHO_WITH_NORMALIZATION",
+  "explicit_304_address_pairs_match_B88": true,
+  "echo_G_CX_counts_and_full_clock_match_B88": true,
+  "genuine_full_processor_map_error_lt": "2^-3231, at closed processor boundaries and stated source-input domain",
+  "q_and_incoming_recomputed_budgets_pass": true,
+  "Qb_finite_j2_lower_gt": "2^-45",
+  "normalization_counterexample_exact": true,
+  "safe_outgoing_state_delta": "eU+3*eEcho+probeError",
+  "safe_outgoing_feedback_plus_heat_dual_lt": "2^-75",
+  "code_outgoing_bound_smaller_than_conservative_3eps_bound": false,
+  "real_closed_report_templates_tested_both_depths": true,
+  "incomplete_SourceI_barrier_rejected": true,
+  "all_original_prefixes_or_strong_unsplit_admission_proved": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round89/check_composite_echo_a45.py": "545d2ba6e83f53a7e57268a95c40cac7441eb61a7c782c51cedf17bd4039fcf3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round45/composite_processor_echo.py": "1f0e94edcfc4c945fe092aeb2695b681156c17571036dd89c41ec0c4656e0247",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round45/COMPOSITE_PROCESSOR_ECHO_PLAN.json": "4c2a7de3928733707222c3de3039b7fe79d13e6f3dbba18c902a3ef436a7f21c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round45/check_composite_processor_echo.py": "05ab93f8828c7b2457c98be8f730a941dea30f5d3be99b1c524b922553ae136c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round45/COMPOSITE_PROCESSOR_ECHO_CHECK.json": "3cefb71533fa510bd9ffe36d0b3936e08077dc3dd525cd4be67ffe0a98e7c37a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round42/FIXED_POST_PAID_FAMILY_RU.md": "531387f38b2d6efa18a2b0694aa68290e6281233a4c821e8dd3de47a0eaa69c7",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round43/LOCAL_Q_PRICE_RU.md": "e905e91317cc09b55add4203486bad60e5b32da47d967553b30fbd0adee06675",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round44/JOINT_SOURCE_REDUCTION_RU.md": "abbf039498a69729bd15f7a686d2733ce6999058db2474e3b011e988e60219ad",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round88/B88_COMPOSITE_PREPARED_PROCESSOR_RU.md": "bc93c7717cdd5cf5c261b0e6b6782272d67b5b0a0b263745264d0bbf774d5900",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round88/B88_COMPOSITE_PROCESSOR_CHECK.json": "2b4d5f2a6d535837d0ecf01a7523a7d7a901ce5fd22750e00c01b81cf87b1bdd"
+  }
+}
