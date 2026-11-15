@@ -1,0 +1,45 @@
+{
+  "status": "PASS_A56_CONDITIONAL_SAME_GRAPH_SOURCE_AND_DISTINCT_FINITE_SCOPE",
+  "actual_A55_sign_axis_field_packets_checked": 32,
+  "exact_small_stage_layouts_checked": 168,
+  "golden_beta_source_orientation_checked": true,
+  "new_Nbase_K_and_425D_retained": true,
+  "finite_native_MG2_statistical_four_axis_l2_lt": "2^-101",
+  "analytic_full_skew_raw_error_lt": "2^-34",
+  "analytic_heat_raw_dual_lt": "2^-40672",
+  "sufficient_extra_basis_interpolation_per_plane_error_lt": "2^-8105",
+  "plane_interpolation_extra_raw_dual_lt": "2^-34",
+  "plane_budget_is_not_an_actual_compiler_or_arbitrary_X_finite_theorem": true,
+  "illustrative_allocation_if_new_Nbase_lt_2^30833": {
+    "control_step": "2^-5658",
+    "control_operator_error_lt": "2^-16976",
+    "retention_pairs": 191308,
+    "independent_normalized_readout_error_lt": "2^-8108",
+    "status": "conditional arithmetic only; remeasure new compiler and actual clock"
+  },
+  "stricter_illustrative_plane_allocation_for_added_dual_lt_2^-75": {
+    "step_bits": 6000,
+    "angle_precision_bits": 32768,
+    "conditional_new_Nbase_bit_bound": 30833,
+    "retention_pairs_if_bound_holds": 192832,
+    "general_K_formula_for_new_Nbase_b_bits": "4*(b+17375)",
+    "normalized_readout_error_lt": "2^-8150",
+    "status": "not compiled or certified; remeasure changed word, padding and clock"
+  },
+  "old_q20000_sufficient_bounds_conflict_for_2^-75": true,
+  "book_partition_law_is_explicit_premise": true,
+  "7fu_withdraws_physical_C_closure": true,
+  "physical_iota_Vh_or_complete_skew_native_family_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round56/complete_code_source.py": "af12b72e74ccc221d4bbf68529f1e8a7011163700a878e4e53aadb594472f049",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round56/check_complete_code_source.py": "73991988559738ed5a4663940f8e8cef93707a6c46550795bfcf9ba655ccb1f5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round56/COMPLETE_CODE_SOURCE_RU.md": "292675de9d223555f716e81783c22fe4c1b0af91bb2262b60b2c0b1604074511",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round56/COMPLETE_CODE_SOURCE_PLAN.json": "511f2cf59e06244880a3e92ee5db7fc398e94f103f91fbb6a344c61c3ac5feff",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round107/B107_REGULAR_SOURCE_RECOVERY_CHECK.json": "d0e5824997a2f131988b339b030edd065eee8b62240c703104b04d1bdecbe69a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round109/B109_FULL_SKEW_RECOVERY_CHECK.json": "8cc6e2e320623c2fcf86e09db2293c17fa87b86333f9ce5f0650e4807178a4c4",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round110/B110_ANALYTIC_HEAT_STATISTICAL_CHECK.json": "3014905d6fa00a434a9620b3e90862a53c7ffc0247b689ce7ecab1131ec7dfbf",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round111/audit_a56.py": "6505b686f6c5f0775f9a5d00f4ee8aa91785a840efd941525838f0ae3ebecddc"
+  }
+}
