@@ -1,0 +1,21 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "round": "A44",
+  "independent_rounds": [
+    "B86",
+    "B87"
+  ],
+  "files_sha256": {
+    "JOINT_SOURCE_REDUCTION_CHECK.json": "a03650efbcf3520c752f0aa3e856811b81d6318c675fee3ba13d72d68506c05a",
+    "JOINT_SOURCE_REDUCTION_PLAN.json": "d71f405a34d75c56c88528bdf2835fe9aed7f32a48200b9d68aa0a9717b57f0c",
+    "JOINT_SOURCE_REDUCTION_RU.md": "abbf039498a69729bd15f7a686d2733ce6999058db2474e3b011e988e60219ad",
+    "RESULT.json": "734c8e41eb549c83dfd4902af59bf826c9d808c8c0bd52a4f49082f141bd477f",
+    "ROOT_REVIEW_B86.json": "aa3b6af72a5c751801a468517899e942aacd9483f149eddc48c078af0da3aebb",
+    "ROOT_REVIEW_B87.json": "febbd08ea241d33e11e06f37255e31e6d8febb3876e6736a6f5af0ea51e081a3",
+    "check_joint_source_reduction.py": "2eb1eb26a3a70da06b78e09e6b7d394d26bececffaf86b90505a4fe9efb4a32e",
+    "joint_source_reduction.py": "5c794597a9b0ca819475180327096548790af2142e1b8ce6148f706cb1dd970c"
+  },
+  "full_original_H1_Cost_Info_or_GR_closed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

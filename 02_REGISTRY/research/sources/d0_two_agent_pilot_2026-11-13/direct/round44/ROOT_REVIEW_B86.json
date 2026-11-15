@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "6719994ade261f276bdfca48a0d379fff193a939",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round86/check_original_mark_transport.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round86/B86_MARK_TRANSPORT_CHECK.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "11172ba7cf79bab0f41907ea724068676c64a4cd238ff1f592641d22f0fc8d87",
+  "receipt_sha256": "bf7c38e898a10599c53e260d5afd6d4548de50a3760aee4f37deea1ea13611fa",
+  "owner_status": "ORIGINAL_MARK_TRANSPORT_PARTIAL_WITH_CONCRETE_UNSPLIT_CONSUMER_GAP",
+  "source_pins_verified": true,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
