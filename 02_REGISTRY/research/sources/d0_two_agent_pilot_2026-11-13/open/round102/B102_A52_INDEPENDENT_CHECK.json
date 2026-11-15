@@ -1,0 +1,66 @@
+{
+  "status": "PASS_B102_SCOPED_A52_WITH_EXPLICIT_PHYSICAL_BOUNDARIES",
+  "ordinary_labels_independently_exhausted": 26881,
+  "distinct_canonical_packets": 26881,
+  "post_probe_count_formula_verified_without_enumeration": true,
+  "all_ordinary_slot_signs_independently_checked": true,
+  "frozen_299_literal_fixture_replayed": true,
+  "additional_literal_prefix_fixtures": 429,
+  "actual_A49_start_trees_sampled": 56,
+  "actual_REPORT_READY_physical_address_pairs": [
+    [
+      21216958,
+      21216959
+    ],
+    [
+      1507938112,
+      1507938113
+    ],
+    [
+      2994659266,
+      2994659267
+    ],
+    [
+      4481380420,
+      4481380421
+    ],
+    [
+      5968101574,
+      5968101575
+    ],
+    [
+      7454822728,
+      7454822729
+    ],
+    [
+      8941543882,
+      8941543883
+    ],
+    [
+      10428265037,
+      10428265038
+    ]
+  ],
+  "CP_normalization_and_Bell_reference_checked": true,
+  "dephasing_suffix_counterexample_checked": true,
+  "A37_envelope_independent_field_and_post_derivatives_checked": true,
+  "alignment_quadratic_defect_exact_example_checked": true,
+  "all_production_words_executed": false,
+  "actual_registered_fine_instrument_identified": false,
+  "regular_field_argument_implemented": false,
+  "same_execution_physical_cost_info_identified": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round52/scoped_comparison_task.py": "b2f7fe71549f181ddf5a635eb099f9ada5b64993d97847998a8af10c5c8f73a5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round52/FINITE_COMPARISON_TASK.json": "972e47282ddde28e88a2a3e4908622cc05597de480bbdde1aef1a158e17387f8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round52/check_scoped_comparison_task.py": "5f33bfee67554b250552c6fe725e740a8f021a5b93e62da0e94d329777a6531f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round52/FINITE_COMPARISON_TASK_CHECK.json": "d96ba2c9a82901670811c4cfb4c7589cd0d37052c7212b56d5d70d91d8dd3e17",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round52/SCOPED_COMPARISON_TASK_RU.md": "a5569e509086237cccfc41248037a054942af39219b56a456fbc712c550d0daf",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round49/two_bit_paid_family.py": "ce6195ca3f1fe5d7176241af4d6d0c6659e489b39738953341a8bba204249add",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round49/paid_padding.py": "bdacefe9fe48b98f249ed30885fc58e233cb8d6a0b3ec38b05121d724adab1be",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round51/completed_marked_prefixes.py": "fcca9df3ef195c3854fd0f03602749642f184df5f79add625db7711625c897ee",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/ACTUAL_POST_SAM_STATIONARY_REDUCTION_RU.md": "ef67e8d48670f8f97522174f4e7c938917aa17114069d3813605f2a44f1d028a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round73/B73_POST_SAM_REDUCTION_AUDIT_RU.md": "4651635b9daa0cba66eedb15605a235711a91142ea9d67584f84f6a5afa58a7b"
+  }
+}
