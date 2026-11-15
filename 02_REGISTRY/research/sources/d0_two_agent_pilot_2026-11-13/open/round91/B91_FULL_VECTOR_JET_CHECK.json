@@ -1,0 +1,39 @@
+{
+  "status": "EXACT_ONE_BIT_FULL_VECTOR_OBSTRUCTION_AND_OWNED_TWO_BIT_REPAIR_MAP",
+  "one_bit_global_skew_gap": "p^3 for unrestricted real skew; p^3/(2 p sqrt(p)) if scalar mean normalized",
+  "source_functional_leaf": "fresh Choi slot 1372, site 5, Julia address 21, input 0, output 4",
+  "ideal_source_witness_factor": "(1/sqrt(65568))^1440*(sqrt(p)/128)^128",
+  "ideal_witness_factor_strict_between": [
+    "2^-13984",
+    "2^-12416"
+  ],
+  "actual_native_nonzero_jet_proved_from_current_error": false,
+  "MG2_two_bit_exact_identity_Qsqrtp": true,
+  "MG2_Frobenius_norm_squared": "391/363-491*sqrt(5)/4356",
+  "full_columns_fibre": "all SOURCE DATA and SITE columns with each SOURCE private at declared RAW input, arbitrary SAM/old/reference",
+  "all_dirty_source_private_or_original_CAR_vacuum_extension_identified": false,
+  "full_DATA_target_M1_upper": 1748,
+  "full_DATA_target_M2_upper": 3233036,
+  "two_bit_sigma": "2^-80",
+  "new_sampler_table_or_paid_family_built": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/check_full_vector_jet.py": "f8bebed22d8f86dbc21e0fce3815eafceddec4dbc9d733bf521d47729453cdec",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round46/independent_current_bank.py": "59d234a45d68780e9887466ccaea01ccaa21484fe3d5704e8e163e203329806d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round46/INDEPENDENT_CURRENT_BANK_PLAN.json": "6ef1f56365ef69b8b6920f87b67c5f629b2e79bbd50e7e89d0a79216c71b7f95",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round46/INDEPENDENT_CURRENT_BANK_RU.md": "f6276b1807d5b1de07799e100e351b02398d8b8047109726416faabf7937a01c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/ACTUAL_MEAN_GEOMETRY_LIFT_RU.md": "7d6ca93d37b2d83a40af33a912c02d5b61ecad25235c97c7c5065a9d60e422bc",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/FULL_RAW_CHOI_RU.md": "f0c5374d1b5d43a9d5e0317fd75dd45060954a4a94890fc6406c15d2128be835",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round24/FULL_CAR_SOURCE_RU.md": "3a57e0d9be193352ff2cf76b3b62a76e8c5da33d18f9d2d2c1569e52dc363497",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/CAR_VACUUM_FOURIER_RU.md": "77d3de6d0ad3a24a58edbd39be311fb4907f8761a75da3d7a98a359bb45a266d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PREPARED_SOURCE_MOMENT_LAW_RU.md": "8985c22feaaca539fb0960e6f255bdc9cecc0bff06b67a95d969a4a9810a94a8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/CHART_ENVELOPE_RESULT.json": "e244b4c50f8c64a4f21a905958486f0aadbee629f1ac6df9edd90bfd75961eee",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round35/BANK_PREPARATION_REDUCTION_RU.md": "ea977567767b7e00d1571f4f13d0721b7a2d8a5e55a108bcba02597689f2b8d1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round45/SITE_NATIVE_RU.md": "50b1e7fdda3abedfbb8b4f464a9094297b10cae7fcd685b10a8c650f49d6e703",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round90/B90_FRESH_CURRENT_ARENA_AUDIT_RU.md": "616bb5f8f024150cf9d370bfad298a147b318fce76702271dcef322d8a937900"
+  }
+}
