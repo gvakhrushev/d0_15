@@ -1,0 +1,35 @@
+{
+  "status": "B95_CONDITIONAL_FOUR_SLOT_PRICE_AND_MARK_CONTRACT",
+  "B95_files_sha256": {
+    "B95_FOUR_SLOT_PRICE_AND_MARK_CONTRACT_RU.md": "7132836fdeacea03d988988556d0716a9886208fa2c5cfa9cc7ffdd529ab9141",
+    "check_four_slot_contract.py": "278928e096366d4b5e32260969f7253eee156b5a1f7a8138284a544c23843fe4",
+    "check_quadratic_lift.py": "4a1a8046d43e1158d79d191ae74455ebc7fb3cac13a5171d4374fe3547ec46d5",
+    "check_independent_slot_fixture.py": "4c043922fda5642905bff9424fa6f9d06947c52a0cf3c816e47a6d35493df30a",
+    "FOUR_SLOT_CONDITIONAL_CHECK.json": "4344189ac96a63fa13b91ced1960ff848433ccb9ba759f1249ee98cebcab2306",
+    "QUADRATIC_LIFT_CHECK.json": "06828ef59d72dbeb82eae4818daab2499f5cbdf3d5e83fd65aa40fdfa0654107",
+    "FOUR_SLOT_FIXTURE_CHECK.json": "6db6d7afd55114ce54ffa6e5b434299880a32e431697830140dd2aa45a84b8be",
+    "build_checkpoint.py": "51f0bd85496b163651c533ac13fe2dcb47d5c86b6f4b8d995ebc00cd5e4b419c"
+  },
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/B65_CENTRE_SOURCE_AND_BOUNDS_RU.md": "a10ad0a99575b742f39862f3fd7a8430046ac3c2792d0274e816e4c1df904fe3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round82/B82_FOUR_SLOT_Q_KERNEL_RU.md": "9d843150bb469a3a085d482a5ff59ac2c62c0d0c633da7f1223457f289bdf2f3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/B91_FULL_VECTOR_JET_AND_SOURCE_FIBRE_RU.md": "f56105e52c199778228c9465dc3e808f5e8229e3a38eae4739c146b333bbc3ce",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round94/B94_CHECKPOINT.json": "ee7e195373910cf80ca71898ff8f1d628b7ded678f191d611afc722f66324ef9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round42/FIXED_POST_PAID_FAMILY_RU.md": "531387f38b2d6efa18a2b0694aa68290e6281233a4c821e8dd3de47a0eaa69c7",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round43/LOCAL_Q_PRICE_RU.md": "e905e91317cc09b55add4203486bad60e5b32da47d967553b30fbd0adee06675",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round44/JOINT_SOURCE_REDUCTION_RU.md": "abbf039498a69729bd15f7a686d2733ce6999058db2474e3b011e988e60219ad",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/FULL_VECTOR_CONTROL_PLAN.json": "0e813ed5d9ab8d82bd45027b211f3d975145bdeadcc314363365b391fcf878b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round48/TWO_BIT_GLOBAL_SOURCE_PLAN.json": "24e21eb8d4cba2976f7ccdb1fdcabe2594d8a614695005cea8134f24e7735866",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round48/ACTUAL_FULL_VECTOR_SOURCE_JET.json": "53d28f1da8e683643af44545434082a178d798062a1e524272f039f22c132615"
+  },
+  "four_control_slots_independent": true,
+  "joint_matched_chronology": "plus,minus,plus,minus; fixed post afterwards",
+  "full_native_heat_or_price_executed": false,
+  "quad_scalar_lemma_product_state_only": true,
+  "M3_or_new_physical_price_proved": false,
+  "Q_kernel_bound_conditional_on_A44_insertion_and_corner_contracts": true,
+  "original_Dnu_mark_transport_or_physical_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS_EXACT_CENTERED_PRODUCT_QUADRATIC_CANCELLATION",
+  "all_total_degree_le_2_monomials_checked": true,
+  "born_two_coordinate_product_state_required": true,
+  "expected_linear_commutator": 1,
+  "quadratic_commutators_zero": true,
+  "cubic_counterexample_nonzero": true,
+  "correlated_CODE_state_quadratic_counterexample_nonzero": true,
+  "uniform_scalar_M3_bound_proved": false,
+  "actual_price_gradient_identified": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/full_vector_controls.py": "31ff35852f723b4b0cb8d04e3d46be5a0e03785fb9aa0b00f7ce140b54d46ad9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/FULL_VECTOR_CONTROL_PLAN.json": "0e813ed5d9ab8d82bd45027b211f3d975145bdeadcc314363365b391fcf878b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/B91_FULL_VECTOR_JET_CHECK.json": "128867045bf9ced7875537760624a401beef07d0ae784933b701e366687ef44b"
+  }
+}
