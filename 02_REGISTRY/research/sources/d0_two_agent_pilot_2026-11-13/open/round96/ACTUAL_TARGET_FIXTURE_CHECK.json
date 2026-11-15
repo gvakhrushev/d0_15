@@ -1,0 +1,20 @@
+{
+  "status": "PASS_A49_ACTUAL_FINITE_PATH_AND_POST_FIXTURES",
+  "python_version": "3.9.6",
+  "physical_work_wires": 2,
+  "all_8_CODE_labels_checked": true,
+  "nontrivial_G_CX_repeat_and_interleaved_CODE": true,
+  "exact_Q4_reference_enclosed": true,
+  "positive_actual_core_all_labels": true,
+  "four_star_lists_and_order_checked": true,
+  "one_real_B80_selected_star": true,
+  "actual_positive_target_post_maps_xi_to_chi_diagnostic_lt": "2^-100",
+  "diagnostic_mpmath_not_formal_interval_proof": true,
+  "CODE_targeted_gate_rejected": true,
+  "production_path_sum_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round49/finite_actual_target.py": "ae9932ce22dc12d14510e8ff3603d91c9daee2d8c55bd7eec35f3795e5525f9b"
+  }
+}

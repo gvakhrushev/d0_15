@@ -1,0 +1,38 @@
+{
+  "status": "B96_A49_SCOPED_INDEPENDENT_AUDIT_CHECKPOINT",
+  "A49_inputs_sha256": {
+    "paid_padding.py": "bdacefe9fe48b98f249ed30885fc58e233cb8d6a0b3ec38b05121d724adab1be",
+    "finite_actual_target.py": "ae9932ce22dc12d14510e8ff3603d91c9daee2d8c55bd7eec35f3795e5525f9b",
+    "two_bit_paid_family.py": "ce6195ca3f1fe5d7176241af4d6d0c6659e489b39738953341a8bba204249add",
+    "TWO_BIT_PAID_FAMILY_PLAN.json": "420c2b46827b30efe8985db59227030383448b939edc3a6ba1d700377fdc27fe",
+    "check_two_bit_paid_family.py": "d3985a931ff4848b93bf7b366c128394abc3f089abfc31a6cf2a3bc195fa3c9b",
+    "TWO_BIT_PAID_FAMILY_CHECK.json": "e610df52c1b77e62840e82e141de87d2eb8faaa09b3f86dd6d79406b24a4bc3b",
+    "corner_and_price_bridge.py": "54c2279324bb5da69e692ecd99722eabf02022d15fb57fb5c4121007c4840be7",
+    "CORNER_AND_PRICE_BRIDGE.json": "2b5497680edc4d30b72056fea4213f9134243fb0002d5fc48f51f9c0a5bef06f"
+  },
+  "B96_files_sha256": {
+    "B96_A49_PAID_SCHEDULE_AND_CORNER_RU.md": "9a8612088bdf37df53fd211b0f89eb478a93104566d9b41ee166ca9708ee18d4",
+    "audit_paid_padding.py": "771b2522a4858e0bef9c7926bd74e651954bcfffbd9e832f04b380170018dff8",
+    "audit_actual_target.py": "bd885d5fc44fbbb082aaa91195944366d1b96872067e3da5a9a2370f70322ad8",
+    "audit_code_support.py": "5420d57d49284183241001b61b975b4f6f2052f70c46790bd4a5075b1905bad7",
+    "audit_four_slot_schedule.py": "376b9134078d115c642d9c0e6bf9c8cfb34bfce8632bfcecc291c6c7fb8b1545",
+    "audit_production_plan.py": "28486b4d5866119e93a4cf28f0738c8e38bf2ac9af416ae7947e5a5ab94e6186",
+    "audit_corner_law.py": "638bb95596807ed4f825189b0fc86287e014afaa07fa4c3b64313678ab98d525",
+    "audit_price_bridge.py": "0703a5313dfe4e376d2d0a7a03a4202b3fe80ca5ab0776749b029164dd3d3e00",
+    "PAID_PADDING_CHECK.json": "c4a53d5a49e137b077a06ad2d6a7517b25beb6d5db5e3a58740f9655c76eec1a",
+    "ACTUAL_TARGET_FIXTURE_CHECK.json": "133c0b8e05e65d18f054a5e9d3c3474ffc58add5c5829419c7b6e7add94edb60",
+    "CODE_SUPPORT_CHECK.json": "1ed4df52632c0c2534db45c959ec31f56629f033bda4df8031c4c14f8c3e0494",
+    "FOUR_SLOT_SCHEDULE_CHECK.json": "dafb7ff6a326cb4140c3e7d5e0218fdd4b2bf40cc72df5c810241aa663113af4",
+    "PRODUCTION_PLAN_CHECK.json": "c85d214568c267b44a80e590f461e02cc342a196a280aca1c59336885677e5d7",
+    "CORNER_LAW_CHECK.json": "f0e1d18c6804aca764f5d2c838a4878fa30b88ab687dd08e96b954a35f9e5b3e",
+    "PRICE_BRIDGE_CHECK.json": "833d6cb225f4e003d47db82c8f131d3ddb5b89cfc710b9957d77f0f8120bc10e",
+    "build_checkpoint.py": "b5411c41782cee25306f33ed43ec25666946b0f64e13b84340c3c75d42dd09ba"
+  },
+  "Python39_popcount_failure_corrected_before_freeze": true,
+  "production_target_or_word_evaluated": false,
+  "conditional_A27_typed_corner_error_lt": "2^-3421",
+  "conditional_typed_actual_M_gt": "2/3",
+  "original_Dnu_or_vacuum_extension_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

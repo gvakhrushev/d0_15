@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ONE_PASS_PAID_PADDING_FIXTURES",
+  "identity_lengths_checked": [
+    4,
+    41
+  ],
+  "all_eight_CODE_columns": true,
+  "tag_position_preserved": true,
+  "one_pass_factory_calls": 1,
+  "DAG_repeat_calls_counted": true,
+  "overrun_rejected": true,
+  "production_word_executed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_A49_PRODUCTION_PADDED_UPPER_CLOCK_ARITHMETIC",
+  "CODE_bits": 5376,
+  "RAW_early_births": 11893774624,
+  "four_additional_control_reserves_included": 16,
+  "Nbase_bit_length": 30833,
+  "retention_pairs": 175604,
+  "all_padded_length_expressions_match": true,
+  "post_dual_lt": "2^-661",
+  "heat_dual_lt": "2^-75",
+  "uppers_become_exact_lengths_only_if_padto_finishes": true,
+  "full_production_word_or_tariff_evaluated": false,
+  "original_marks_or_physical_admission_proved": false,
+  "GR_closed": false
+}
