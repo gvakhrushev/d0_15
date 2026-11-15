@@ -1,0 +1,159 @@
+{
+  "status": "PASS_B103_REGULAR_PROPER_LINK_JULIA_CONSTRUCTIVE_SECTOR",
+  "chart": "six exact Fraction offsets |offset|<2^-32; GEN order; four-valued digits",
+  "all_B25_original_Julia32_columns_float_diagnostics": [
+    {
+      "case": "exact_identity_zero_boost",
+      "all_32_column_B25_float_diagnostic_max": 0.0,
+      "all_32_column_rotation_float_diagnostic_max": 0.0,
+      "target_bits": 80,
+      "bits": 208,
+      "sqrt_iterations": [
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ]
+      ]
+    },
+    {
+      "case": "two_bit_zero_centre",
+      "all_32_column_B25_float_diagnostic_max": 6.661338147750939e-16,
+      "all_32_column_rotation_float_diagnostic_max": 1.6071211827648462e-40,
+      "target_bits": 80,
+      "bits": 208,
+      "sqrt_iterations": [
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ]
+      ]
+    },
+    {
+      "case": "shifted_site_xy",
+      "all_32_column_B25_float_diagnostic_max": 1.1102230246251565e-15,
+      "all_32_column_rotation_float_diagnostic_max": 3.3306690738754696e-16,
+      "target_bits": 80,
+      "bits": 208,
+      "sqrt_iterations": [
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ]
+      ]
+    },
+    {
+      "case": "shifted_exact_centre",
+      "all_32_column_B25_float_diagnostic_max": 1.1102230246251565e-15,
+      "all_32_column_rotation_float_diagnostic_max": 2.220446049250313e-16,
+      "target_bits": 80,
+      "bits": 208,
+      "sqrt_iterations": [
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          11
+        ]
+      ]
+    }
+  ],
+  "exact_identity_zero_boost_and_pivot_tie_fixtures": true,
+  "analytic_sqrt_iterations_for_3460_bits": 16,
+  "target_bits": 3460,
+  "actual_certified_target_work_bits": 3588,
+  "actual_grid_angles": 496,
+  "actual_grid_angles_sha256": "c1c114fb11d300039a86d8e196d7f3ef6edb2fe09e99b3b44226674e2b21a97f",
+  "direct_native_high_precision_powers_checked": 496,
+  "all_1024_target_intervals_contain_higher_precision_replay": true,
+  "conditional_A48_source_error_recurrence_lt": "2^-3423",
+  "all_496_basis_pair_permutations_and_signs_exact": true,
+  "sector_operator_error_strict_lt": "2^-3451",
+  "literal_forward_reverse_compressed_cost_exact_for_one_selected_sector": true,
+  "f_variable_sector_count": 1048576,
+  "all_4096_CODE_patterns_checked_for_one_group": true,
+  "forward_reverse_variable_bank_entry_order_checked": true,
+  "variable_f_reverse_upper_count_bit_lengths": {
+    "G_port": 3533,
+    "CX": 3535,
+    "SourceI": 3535
+  },
+  "variable_f_upper_is_actual_price": false,
+  "SOURCEI_replacement_included": false,
+  "whole_bank_inventory_computed": false,
+  "full_program_or_2^29_masks_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "inputs_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round103/regular_link_julia.py": "df4cd183555d776a3eb3cce9c5438617fa85e09e81b9e1720e8ab5530e629337",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round103/check_regular_link_julia.py": "d9236753920c3da356900166039820e9d8d16aa4fd2200cc689a4ad23bfab4db",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round42/proper_link_targets.py": "063f718bbdb15ee6e32c41ba9dd26cfd410cbd0417eb932a40c7c67f23712b8b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round42/proper_link_native.py": "e8ccc0ecc55c720e2b6cfbc5ba31bbe878e577b5d5944f90ab3911ebb68ec33a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round93/proper_link_two_bit_targets.py": "f7e6aa3e15ca0212cc0337138b5a38b2b1695322d446e50864e73be2e5a52898",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round93/proper_link_two_bit_native.py": "c4e54e5f3baee641c717e29bc7f73a6ea17dd6cb61562839aeff6d55988f6ed1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round93/SHORT_GRID_CERTIFICATE.json": "7427742388948edb39d377cf96a6d5197a075a5a7861e3dc7216ed158ad8d504",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/B91_FULL_VECTOR_JET_AND_SOURCE_FIBRE_RU.md": "f56105e52c199778228c9465dc3e808f5e8229e3a38eae4739c146b333bbc3ce"
+  }
+}
