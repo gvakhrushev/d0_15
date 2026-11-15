@@ -1,0 +1,25 @@
+{
+  "status": "A57_LOCAL_INDEPENDENTLY_REVIEWED_CHECKPOINT",
+  "artifact_sha256": {
+    "FULL_NATIVE_PLANE_SOURCE_RU.md": "68b79f4ff49386b9eaa3120b7f714986e17dc50a57af7db09254bf1105049542",
+    "FULL_PLANE_FAMILY_CHECK.json": "7071d932a87e6b68720d4569d5bfdcd8720f32a1047e32180be6eef072538171",
+    "FULL_PLANE_FAMILY_PLAN.json": "c525e3bd4c418d9e0f1b4a3508f40c6da8fc8bbbf78b430c5111edbc570307d9",
+    "RESULT.json": "682ac0caf2c7eac89908dc8223b20184b38a85bc1829c11f85a51251885e9d4b",
+    "ROOT_REVIEW_B112.json": "b4c6e7d68c7fb0bdebac64994187800301cb9a426347691e0825dbdd0cb92402",
+    "ROOT_REVIEW_B113.json": "1873b390e88d640bbb0fa3e202f6df2041f9cc1e7fc04f2d1da5ceecfb837b24",
+    "check_full_plane_family.py": "877f404aad8629acc446601349778727a40f06a5dde0603cb4e9ac4f0aa6e4f7",
+    "full_plane_family.py": "cf8a03d700ae1349e9d0a0b41e3918b83577703239b6021ad637fe1ccdbe4be6"
+  },
+  "checks": [
+    "B112 grid and all-column plane proof pinned and replayed read-only byte-identically",
+    "canonical field/label requests and rejection of hidden data",
+    "actual source/post ownership, signed plane providers and shared padding",
+    "new Nbase/K and complete emitted small histories, clock and thirteen prefixes",
+    "exact rational finite-plane and full raw-dual source budgets",
+    "B113 independent A57 application review pinned and replayed byte-identically",
+    "Python syntax, JSON validity and source pins"
+  ],
+  "full_covector_is_plane_interpolant_not_joint_arbitrary_X_price": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
