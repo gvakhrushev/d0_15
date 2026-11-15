@@ -1,0 +1,32 @@
+{
+  "status": "B98_SCOPED_FOUR_INDEPENDENT_PRICE_ROWS_AUDIT",
+  "A50_input_sha256": {
+    "independent_price_rows.py": "d3aaec93f6206d28c8d527ad4bbc3001d4debd884770cffd474960a2697e5dae",
+    "INDEPENDENT_PRICE_ROWS_PLAN.json": "cd65760550893d93228b07cab613098c9ea7b9692c189784a1d7bafd0a346229",
+    "check_independent_price_rows.py": "a53943fddca840bf0559de8c5fce66f43a6d3b93f617e29a358cc4bc9cb9f555",
+    "INDEPENDENT_PRICE_ROWS_CHECK.json": "0a4e908a24b8b855efb8335e43fa27dbcc76441844fcd5542bafa12f3a125528",
+    "FOUR_INDEPENDENT_PRICE_ROWS_RU.md": "6192a11cb694e7115a41817905ea5b4a96188862a0cb89d4e919f026a46a4c38",
+    "ROOT_REVIEW_B97.json": "f952abf69f75fd4c5e8fd141251e7a5e2dfa7032fd186b99086bb2a532517592"
+  },
+  "B98_file_sha256": {
+    "B98_A50_INDEPENDENT_PRICE_ROWS_RU.md": "48359170bee92a17a9f457efd1649ae5ce22d0d47c25cccbe13bf25d07a94f7f",
+    "check_nonsymmetric_and_clock.py": "cddc96d60e8565a1719622da0f705e916b043b685f0e6efdfa52e7a0c9b4c731",
+    "audit_split_and_transducer.py": "73a92a567b9a232686c4fcee59c8bd425172f43828758926bce6bdf88f5609c0",
+    "check_kernel_and_pb.py": "db4894992491048242c962ca8d3ace4bee7be8feb05b54cc49bee59cbca74346",
+    "audit_price_bounds.py": "584c18d5fd083df96351929aa428f383078455ac020daf258767427104c7c75c",
+    "NONSYMMETRIC_CLOCK_FIXTURE_CHECK.json": "5aa967c5c5fd8a5bd47202a1646be205567236f53be3d567c4662ce77ae92892",
+    "SPLIT_INSERTION_CHECK.json": "dffbc0672980f319dc210521890daa4b770894e490515de6b0e7982f7673173b",
+    "KERNEL_AND_PB_CHECK.json": "b9866769fd776aeabb2b4213a7e5aea7c59fcf50309fedf2ff86b74198d42dd8",
+    "INDEPENDENT_ROW_BOUNDS_CHECK.json": "d6bea4d826775686c4eaa82c690c137439771b80d7107c0a82f77a898397127b",
+    "build_checkpoint.py": "deae5cf3278bb35fca7329ef83e3ac51a7a681a6917ab5477f72dd1f4c2424fd"
+  },
+  "all_insertion_replacement_bound_lt": "2^-15800",
+  "four_2688_axis_price_rows_Euclidean_norm_lt": "2^-102",
+  "actual_kernel_assumed_symmetric": false,
+  "full_clock_Q_swap_proved_with_stated_scope": true,
+  "full_original_marks_transport_proved": false,
+  "all_skew_finite_or_original_Vh_norm_proved": false,
+  "production_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

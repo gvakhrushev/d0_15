@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INDEPENDENT_A50_ROW_ARITHMETIC_AND_NORM",
+  "actual_kernel_assumed_symmetric": false,
+  "Qb_analytic_vs_half_reduced_lt": "2^-160",
+  "Qb_finite_vs_half_Pf_lt": "2^-159",
+  "Pf_Qf_Qb_each_axis_lt": "2^-108",
+  "Pb_each_axis_lt": "2^-189",
+  "four_by_2688_Euclidean_norm_lt": "2^-102",
+  "arbitrary_skew_Pf_analytic_dual_lt": "2^-40",
+  "arbitrary_skew_Q_analytic_dual_lt": "2^-41",
+  "arbitrary_skew_Pb_analytic_dual_lt": "2^-6039",
+  "all_skew_finite_dual_or_original_Vh_norm_proved": false,
+  "production_word_executed": false,
+  "GR_closed": false
+}

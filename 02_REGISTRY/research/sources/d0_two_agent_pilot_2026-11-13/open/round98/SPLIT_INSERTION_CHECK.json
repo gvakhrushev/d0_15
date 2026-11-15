@@ -1,0 +1,21 @@
+{
+  "status": "PASS_A48_CLOSED_Q_CUTS_AND_ALL_INSERTION_TELESCOPE",
+  "source_stages_before_first_cut": 1568,
+  "reports_in_CODE_disjoint_middle": 8,
+  "literal_SourceI_middle_is_reflection": true,
+  "actual_compiled_middle_assumed_reflection": false,
+  "actual_compiled_return_assumed_adjoint": false,
+  "any_contractive_insertion_at_closed_cuts_does_not_amplify_telescope": true,
+  "replacement_error_lt": "2^-15800",
+  "open_SourceI_cut_rejected": true,
+  "closed_pair_cut_accepted": true,
+  "all_internal_source_marks_transport_proved": false,
+  "full_word_enumerated": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round48/two_bit_global_source.py": "d1a793af7b613ad37edc6c66c1156fc586f8b065d2f6ca4f9436cb68eb3e00b1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round48/TWO_BIT_GLOBAL_SOURCE_PLAN.json": "24e21eb8d4cba2976f7ccdb1fdcabe2594d8a614695005cea8134f24e7735866",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round49/two_bit_paid_family.py": "ce6195ca3f1fe5d7176241af4d6d0c6659e489b39738953341a8bba204249add",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa"
+  }
+}
