@@ -1,0 +1,26 @@
+{
+  "status": "REGULAR_FIELD_COFRAME_CAR_COMPONENTS_AND_GENERAL_PROPER_LINK_REVIEWED",
+  "parent_A52_commit": "1f2f39125182410c9ed48ea3958b94d90e17ca2a",
+  "independent_B_commits": {
+    "B103": "8a0403185a971250fb318e6a04dd36472869608e",
+    "B104": "1f615b707290ba6dc15c20a71f1c0f9bfe8f9e0a"
+  },
+  "removed_component_premise": "finite native coframe/CAR and proper-link constructors now accept one independently variable rational field on an open B21 subchart instead of only a fixed centre",
+  "independent_field_coordinates": 2688,
+  "centre_open_radius": "2^-32",
+  "CODE_step": "2^-80",
+  "coframe_and_CAR_full_chart_bounds_verified": true,
+  "coframe_native_error_lt": "28*2^-3460",
+  "CAR_half_preparation_error_lt": "3*2^-3460",
+  "B103_proper_link_Julia32_error_lt": "498*2^-3460",
+  "general_link_zero_boost_and_pivot_tie_cases_handled": true,
+  "full_global_SOURCE_binding_completed_here": false,
+  "whole_paid_clock_or_physical_Cost_Info_closed": false,
+  "next_named_application": "assemble A53 and B103 on a common global SOURCE, replace SourceI with G/CX, and reconstruct actual M(Y)-dependent post and common paid clock; retain all physical source and V_h obligations",
+  "no_new_action_Info_weight_selector_or_geometry_root": true,
+  "production_words_executed": false,
+  "local_only": true,
+  "published": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

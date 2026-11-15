@@ -1,0 +1,32 @@
+{
+  "status": "PASS_PARAMETERIZED_COFRAME_CAR_COMPONENTS_WITH_UNIFORM_CHART_AND_GRID",
+  "coordinate_kinds": {
+    "coframe": 1024,
+    "proper_link": 1536,
+    "matter": 128
+  },
+  "uniform_geometry": {
+    "all_coframe_template_boxes": 7168,
+    "current_templates": 2048,
+    "fixed_reference_templates": 5120,
+    "all_q_time_slice_boxes": 4,
+    "covers_whole_centre_box_and_all_CODE_digits": true
+  },
+  "new_field_semantic_cases": 27,
+  "native_component_checks": {
+    "independent_actual_G_power_checks": 56,
+    "component_inverse_inventory_checks": 30,
+    "actual_native_DAG_trees_inspected": 48,
+    "whole_SOURCE_or_global_G_CX_words_executed": false
+  },
+  "full_global_source_and_physical_price_integrated": false,
+  "production_words_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/check_regular_source_components.py": "d6efe580f48fcd63858ef604f86c234685ff82e80aa5c9bc1f9af01a15016f80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/regular_field_targets.py": "9b7dc8986ee1f095235219b26f275ae76dc1bfccec9e4db45c5b838dae020a0f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/regular_source_components.py": "4f2e6f86bbf1b8c2b5a541533ec923a35f26f4dc7803d35e32919b23c26903d8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/REGULAR_SOURCE_COMPONENT_PLAN.json": "4e09ae898103ad45a781a2bf63fc2c6e3a453f26faff064a5a605c7c2e46b532"
+  }
+}

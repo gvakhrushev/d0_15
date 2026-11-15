@@ -1,0 +1,29 @@
+{
+  "status": "PASS_ROOT_INDEPENDENT_ADJACENT_FOCK_ROTATION_AND_JULIA_SIGN_CHECK",
+  "cases": [
+    {
+      "offset": "0",
+      "all_matrix_entries_checked": 1024,
+      "direct_Fock_rotation_and_exact_Julia_defects": true
+    },
+    {
+      "offset": "1/17179869184",
+      "all_matrix_entries_checked": 1024,
+      "direct_Fock_rotation_and_exact_Julia_defects": true
+    },
+    {
+      "offset": "-1/8589934592",
+      "all_matrix_entries_checked": 1024,
+      "direct_Fock_rotation_and_exact_Julia_defects": true
+    }
+  ],
+  "QR_fixed_Newton_floor_margin_verified": true,
+  "general_family_proof_is_not_replaced_by_these_special_cases": true,
+  "native_whole_SOURCE_or_price_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/check_regular_link_independent.py": "8b39c39b886925e5318d690688bc5d58da08a81cee8bd8333fe4b127f985819e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round103/regular_link_julia.py": "df4cd183555d776a3eb3cce9c5438617fa85e09e81b9e1720e8ab5530e629337"
+  }
+}
