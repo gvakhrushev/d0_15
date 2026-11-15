@@ -1,0 +1,31 @@
+{
+  "status": "PASS_A58_EXACT_PLANE_SUM_AND_TYPED_FORWARD_PULLBACK",
+  "all_small_support_pairs_tested": 10,
+  "all_small_plane_terms_checked": 1878,
+  "all_2688_production_CODE_pairs_checked": true,
+  "actual_signed_request_pairs_checked": 36,
+  "signed_requests_per_all_raw_rows": "32256*2^5374",
+  "all_64_A53_field_centres_128_192_interval_binding_checked": true,
+  "all_128_A53_matter_offsets_checked_on_matching_CODE_digits": true,
+  "independent_high_precision_coframe_diagnostic_columns": 1024,
+  "Q4_diagnostic_rejects_general_price": true,
+  "nonlinear_finite_joint_X_counterexample": true,
+  "raw_to_physical_error": "alpha_h*2^-34; original V_h unchanged",
+  "physical_iota_inverse_required": false,
+  "physical_reader_or_production_sum_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round115/audit_field_source_pullback.py": "472bfb68a8da2b45a9d1b4a2943420f006f556921ffbdf0c3d311d29be1ff0d1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/field_source_pullback.py": "fee71d725ebd551d0533e90d52707d31bff933c022c2f812b3e1dbf3beeb1733",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/check_field_source_pullback.py": "dbe7c9a03f0957051cf971e8ed3a8a615015803b250ab61e1e9f4e7e9fd7cc8a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/FIELD_SOURCE_PULLBACK_RU.md": "86b584796d1056408918c6cb99b0a033d24fefabd20059fec28619c055d65aac",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/FIELD_SOURCE_PULLBACK_PLAN.json": "dcf8b89a619d3395b70be3ea693e39e9088d75c0d3300620d4c65f15fc262e8c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/FIELD_SOURCE_PULLBACK_CHECK.json": "3321b74d65f9402b5c1a1b071d16df9e3458672413ee25266f77853407b89b82",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round114/physical_chart_l4.py": "fbea10248593212b50dc844dc5440d5f098a5e74ee5860a14727ed261ec17f9e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round114/B114_PHYSICAL_CHART_CHECK.json": "9002981755588795788c0cd82110509624427cb46548e458226331b633fd77ae",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round57/full_plane_family.py": "cf8a03d700ae1349e9d0a0b41e3918b83577703239b6021ad637fe1ccdbe4be6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/regular_field_targets.py": "9b7dc8986ee1f095235219b26f275ae76dc1bfccec9e4db45c5b838dae020a0f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1"
+  }
+}
