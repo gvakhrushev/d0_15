@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "b051ca1009a468bb9e59d5fc38c8861b9b45fe93",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/check_full_vector_jet.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/B91_FULL_VECTOR_JET_CHECK.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "f8bebed22d8f86dbc21e0fce3815eafceddec4dbc9d733bf521d47729453cdec",
+  "receipt_sha256": "128867045bf9ced7875537760624a401beef07d0ae784933b701e366687ef44b",
+  "report_sha256": "f56105e52c199778228c9465dc3e808f5e8229e3a38eae4739c146b333bbc3ce",
+  "owner_status": "EXACT_ONE_BIT_FULL_VECTOR_OBSTRUCTION_AND_OWNED_TWO_BIT_REPAIR_MAP",
+  "source_pins_verified": true,
+  "actual_compiled_one_bit_defect_lower_bound_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

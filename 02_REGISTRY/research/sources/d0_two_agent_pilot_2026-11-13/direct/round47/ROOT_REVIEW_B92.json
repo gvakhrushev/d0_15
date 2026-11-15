@@ -1,0 +1,16 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "ef6e1e22264444bcb7b0eb1ffa949343a9c5657b",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round92/audit_actual_control.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round92/B92_ACTUAL_CONTROL_CHECK.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "104ff5946ed2f42e39a540dfa904b5de4ec6d8524db6c849ebbb17f82b848f14",
+  "receipt_sha256": "755359728a1460c24b8729a61cd565b81bd635920a1b5d91d7bd68dbeedf0290",
+  "report_sha256": "d18c38c837f0bd285adf2307b54001823287f0529f08d4223f6a162440a7c6cf",
+  "owner_status": "PASS_INDEPENDENT_FROZEN_A47_GRID_GRAMMAR_CENSUS_CONDITIONAL_BUDGET",
+  "frozen_A47_and_upstream_source_pins_verified": true,
+  "production_execution_claimed": false,
+  "new_SOURCE_or_full_price_completed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

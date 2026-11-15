@@ -1,0 +1,133 @@
+{
+  "status": "PASS_FULL_VECTOR_MG2_AND_CERTIFIED_TWO_BIT_NATIVE_CONTROL_MODULE",
+  "exact_lift": {
+    "exact_full_vector_identity": true,
+    "all_four_born_probabilities_lt_half": true,
+    "X_Frobenius_lt": 1,
+    "sum_positive_plane_weights_lt": "3/2",
+    "one_bit_optimal_squared_defect": "p^6",
+    "scalar_calibrated_squared_defect": "p^6/(4p^3)",
+    "four_vertices_inside_old_asymmetric_cube": true
+  },
+  "full_column_planes": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "full_columns_verified": 4
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "full_columns_verified": 4
+    },
+    {
+      "pair": [
+        0,
+        3
+      ],
+      "full_columns_verified": 4
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "full_columns_verified": 4
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "full_columns_verified": 4
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "full_columns_verified": 4
+    }
+  ],
+  "paid_grammar": {
+    "tested_control_variants": [
+      {
+        "coordinate": 0,
+        "sign": 0,
+        "support_subset": [
+          2,
+          3,
+          11893771936
+        ]
+      },
+      {
+        "coordinate": 0,
+        "sign": 1,
+        "support_subset": [
+          2,
+          3,
+          11893771936
+        ]
+      },
+      {
+        "coordinate": 0,
+        "sign": -1,
+        "support_subset": [
+          2,
+          3,
+          11893771936
+        ]
+      },
+      {
+        "coordinate": 2687,
+        "sign": 0,
+        "support_subset": [
+          2,
+          2689,
+          11893774623
+        ]
+      },
+      {
+        "coordinate": 2687,
+        "sign": 1,
+        "support_subset": [
+          2,
+          2689,
+          11893774623
+        ]
+      },
+      {
+        "coordinate": 2687,
+        "sign": -1,
+        "support_subset": [
+          2,
+          2689,
+          11893774623
+        ]
+      }
+    ],
+    "one_control_length_bits": 20087,
+    "four_independent_occurrences_counted": true,
+    "new_SOURCE_inventory_inferred": false
+  },
+  "derivative_enclosure": {
+    "M1_upper": 1748,
+    "M2_upper": 3233036,
+    "norm": "Euclidean raw-chart directions; operator norm on the declared all-DATA fibre",
+    "continuous_source_targets_only": true
+  },
+  "positive_G_power_certificates": 12,
+  "new_SOURCE_catalogue_compiled": false,
+  "full_new_physical_history_or_price_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/check_full_vector_controls.py": "f9c14e0531593d9d7da2039f226ba0482be99067480dbd70243a29decb423b46",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/full_vector_controls.py": "31ff35852f723b4b0cb8d04e3d46be5a0e03785fb9aa0b00f7ce140b54d46ad9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/FULL_VECTOR_CONTROL_PLAN.json": "0e813ed5d9ab8d82bd45027b211f3d975145bdeadcc314363365b391fcf878b6"
+  }
+}
