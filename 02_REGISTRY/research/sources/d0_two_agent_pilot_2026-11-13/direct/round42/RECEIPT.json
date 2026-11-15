@@ -1,0 +1,21 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "round": "A42",
+  "independent_rounds": [
+    "B82",
+    "B83"
+  ],
+  "files_sha256": {
+    "FIXED_POST_PAID_FAMILY_CHECK.json": "922b9197034697f3cedce4e75a6bdbdb24c4895e3fa291971268c4a3ac53c285",
+    "FIXED_POST_PAID_FAMILY_PLAN.json": "f2ddbf8037728ddad990465c1db6640127568ccc5b67e3cb5caa5c2de9d92dd6",
+    "FIXED_POST_PAID_FAMILY_RU.md": "531387f38b2d6efa18a2b0694aa68290e6281233a4c821e8dd3de47a0eaa69c7",
+    "RESULT.json": "c0a815cad5506475ec52a4fe33eec54cb49f270e9f815e199386117956c6c3d0",
+    "ROOT_REVIEW_B82.json": "09075bb963a40ebe2b1a9290e2fe46d702c1e1143fac973753bacdc8ab636f34",
+    "ROOT_REVIEW_B83.json": "de89cdf5236a7db9680ae5322964e2e91f2d6b9e602569c1b3401f85dd0a1a05",
+    "check_fixed_post_paid_family.py": "88e6185a55623b54e548e84d7c8c2be126fbcfadd5cbca90198c1a80212506fb",
+    "fixed_post_paid_family.py": "63258bd4731fe47231387bb3faff93291e95886857b086e57d39d3d3ba2ace40"
+  },
+  "full_original_H1_Cost_Info_or_GR_closed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

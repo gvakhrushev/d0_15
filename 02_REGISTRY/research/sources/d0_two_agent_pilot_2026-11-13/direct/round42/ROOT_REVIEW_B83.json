@@ -1,0 +1,21 @@
+{
+  "status": "PASS_B83_PROOF_REVIEW_AND_BYTE_IDENTICAL_REPLAY",
+  "B_commit": "be4df87312949e75ad56a8360152754b6b5ba521",
+  "root_replay": "independent full checker reproduced stored JSON byte-identically; writes intercepted",
+  "fixed_post_independent_incoming_variation_checked": true,
+  "actual_native_centre_gain_used": true,
+  "new_clock_last_retention_G_and_coefficient_three_checked": true,
+  "full_425D_heat_and_outgoing_dimension_debt_included": true,
+  "incoming_2688_covector_error_strict_lt": "2^-70",
+  "outgoing_all_plane_finite_dual_error_strict_lt": "2^-75",
+  "production_upper_count_guard_checked": true,
+  "full_original_H1_Q_rows_Cost_Info_or_GR_inferred": false,
+  "B_files_written": false,
+  "B83_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round83/B83_FIXED_POST_AUDIT.json": "f4d3d419949271d196b55da20ce840cde73022434ee0103ef34e0b8f1b7bffdf",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round83/B83_FIXED_POST_PAID_FAMILY_AUDIT_RU.md": "a6215004db970fac7ebf39ef8f14c0c47cc0d8d00dcd7689986ffb59a209e75d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round83/check_fixed_post_independent.py": "3093dbecc6455f166f2ea8ac603219df931d55f3c822617971a74e3c97b3f66d"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}
