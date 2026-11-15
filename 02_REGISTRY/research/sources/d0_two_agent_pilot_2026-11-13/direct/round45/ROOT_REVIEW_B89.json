@@ -1,0 +1,21 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "bcb12eb864e5fb69762e63b7e54c7230b8d677cf",
+  "prior_owner_commits": [
+    "1fb2340c40e574deeab05cdbc66d9b078aa21e39",
+    "0d13b7056456ec9d2288f42b4a80152616bcb444"
+  ],
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round89/check_composite_echo_a45.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round89/B89_COMPOSITE_ECHO_AUDIT.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "a6db171cf4e80b2b67335e49f333feac2cdf34da07646b3ccf363688b8f93d30",
+  "receipt_sha256": "1cd64db2451d0f2a2c3307a319d2800d7f16c8c243a40c2e0bc3583967110a6d",
+  "owner_status": "PASS_PAID_COMPOSITE_ECHO_WITH_NORMALIZATION",
+  "source_pins_verified": true,
+  "B_final_report_checked_and_pinned": true,
+  "final_report_sha256": "615772180bd98506d95cc3f28619b52d33fe761076daa301044492bc4c8138bd",
+  "prior_replay_rejected_changed_owner_pin_before_B89_execution": true,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

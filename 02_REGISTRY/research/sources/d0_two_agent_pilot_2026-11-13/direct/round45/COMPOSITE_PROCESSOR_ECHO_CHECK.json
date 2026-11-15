@@ -1,0 +1,67 @@
+{
+  "status": "PASS_COMPLETE_COMPOSITE_BINDING_PAID_CLOCK_AND_ECHO_ERROR_BUDGET",
+  "address_checks": {
+    "CAR_wire_pairs": 304,
+    "selected_complete_source_wires": 4264,
+    "full_virtual_report_coordinate_injection": true
+  },
+  "negative_control": {
+    "exact_Golden_columns": 8,
+    "compiled_echo_exact_unitarity": true,
+    "two_compiled_legs_not_automatically_exact_inverse": true,
+    "fixture_uses_uncertified_small_k_for_negative_control_only": true
+  },
+  "full_small_paid_histories": [
+    {
+      "leg": "centre",
+      "sign": "centre",
+      "stages": 247,
+      "clock_dimension": 15807,
+      "original_RAW_mark": 15,
+      "new_complete_processor_mark": 23
+    },
+    {
+      "leg": "Qf",
+      "sign": "plus",
+      "stages": 247,
+      "clock_dimension": 15807,
+      "original_RAW_mark": 15,
+      "new_complete_processor_mark": 23
+    },
+    {
+      "leg": "Qf",
+      "sign": "minus",
+      "stages": 247,
+      "clock_dimension": 15807,
+      "original_RAW_mark": 15,
+      "new_complete_processor_mark": 23
+    },
+    {
+      "leg": "Qb",
+      "sign": "plus",
+      "stages": 247,
+      "clock_dimension": 15807,
+      "original_RAW_mark": 15,
+      "new_complete_processor_mark": 23
+    },
+    {
+      "leg": "Qb",
+      "sign": "minus",
+      "stages": 247,
+      "clock_dimension": 15807,
+      "original_RAW_mark": 15,
+      "new_complete_processor_mark": 23
+    }
+  ],
+  "unmatched_SourceI_prefix_rejected": true,
+  "new_heat_gain_and_analytic_endpoint_perturbation_paid": true,
+  "production_native_history_executed": false,
+  "independent_eighth_bank_or_stronger_FN_admission": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round45/check_composite_processor_echo.py": "05ab93f8828c7b2457c98be8f730a941dea30f5d3be99b1c524b922553ae136c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round45/composite_processor_echo.py": "1f0e94edcfc4c945fe092aeb2695b681156c17571036dd89c41ec0c4656e0247",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round45/COMPOSITE_PROCESSOR_ECHO_PLAN.json": "4c2a7de3928733707222c3de3039b7fe79d13e6f3dbba18c902a3ef436a7f21c"
+  }
+}
