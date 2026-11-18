@@ -1,0 +1,42 @@
+{
+  "C1_price_source_at_reference_after_old_scalar_centering": [
+    -0.025645636365026536,
+    -0.02545949625728589
+  ],
+  "CX_per_pointer": 3,
+  "GR_closed": false,
+  "G_per_pointer_including_birth": 130967,
+  "abs_conditional_site_source": [
+    0.0005940441971983404,
+    0.0005940441973358902
+  ],
+  "averaged_memory_diamond_error_upper": 0.0030010468966066672,
+  "conditional_site_source": [
+    -3.180870543186258e-05,
+    -3.1808705294315536e-05
+  ],
+  "delta": [
+    7.421434289556216e-06,
+    7.454860329325631e-06
+  ],
+  "fresh_pointers": 108000000,
+  "linear_loading": [
+    801.5149032720713,
+    805.1249155671683
+  ],
+  "literal_fixed_pointer_letter_counts_only": true,
+  "mask": 208,
+  "native_tariff_and_clock_selection_proven": false,
+  "pinned_source_hashes": {
+    "direct/round77/equations/ADDRESS_PREPARATION_RU.md": "caeb32e605fa4f78ac41e608e04e0f4a87c99d2ad88193f90c5eacb37fa32745",
+    "open/round153/RESULT.json": "ea8e6e355a32b5c9d8676c6a56e00a88d78e4159630317dceded9d7ef4706e21",
+    "open/round153/check_positive_gain_site_bound.py": "5c5f1257327de26ae0022e683441596858aa90ff77deef45db9583b57ae48d0c"
+  },
+  "positive_G_and_CX_letters_including_birth": 14144760000000,
+  "quadratic_loading": [
+    0.005948390186733682,
+    0.006002093793213332
+  ],
+  "raw_Info_on_weak_reads_lower": 0.863597443196603,
+  "round": "B154"
+}
