@@ -151,5 +151,24 @@
         "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c"
       }
     }
-  ]
+  ],
+  "verification": {
+    "verified_commit": "00d426651cb77ce637f411e6fd12a3d6314f3f7a",
+    "rounds": "A62-A75",
+    "passed": 89,
+    "failed": 0,
+    "A75_passed": 10,
+    "command_from_pilot_root": "OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py direct/round{62..75}/portfolio.json",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "repo_validators": [
+      "validate_work.py",
+      "validate_agent_protocol.py",
+      "validate_repo.py",
+      "gr_assembly.py --json check"
+    ]
+  }
 }
