@@ -50,6 +50,9 @@ def main():
     check(sum(counts) == 21*64, "fixed slots without constant control")
     check(sp.simplify(sum(n*d for n, d in zip(counts, differences))*p**6-64) == 0,
           "exact signed count difference without constant control")
+    extra = [3, 6, 9, 1]
+    check(sum(extra) == 19 and sp.simplify(sum(n*d for n, d in zip(extra, differences))*p**3 - 1) == 0,
+          "optional exact cancellation of the original mandatory port code")
     # The result is an operator identity, not tied to a diagonal input tangent.
     t = sp.symbols("t", real=True)
     effect = sp.Matrix([[sp.Rational(1,4), t], [t, sp.Rational(1,3)]])
