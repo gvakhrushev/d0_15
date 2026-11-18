@@ -1,0 +1,46 @@
+{
+  "sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/RESULT.json": "00728718d2e77b252272143c276e2625fc138d35ef8fb5680d37baf185bd188b"
+  },
+  "switch": {
+    "addresses_per_body": 16,
+    "assignment_and_mark_address_count": 64,
+    "settings_and_marks_retained": true,
+    "same_exact_native_endpoint": true,
+    "stagewise_gauge_intertwines_every_clock_edge": true,
+    "literal_selector_obstructed_prefixes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "original_clock_states": 16,
+    "distinct_labels_needed_including_endpoints": 19,
+    "extra_routing_stages_if_using_a_retained_setting": 2,
+    "controlled_selector_was_supplied_as_a_matrix": true
+  },
+  "mod_two": {
+    "residue_ring": "F2[x]/(x^4+x^2+1)",
+    "identity_and_permutation_row_sum": "1",
+    "G_row_sum": "x+x^2 != 1",
+    "golden_auxiliary_sum_is_a_unit": true
+  },
+  "preparation": {
+    "common_scalar_cancels_from_crossed_odds": true,
+    "regular_echo_mass": "A^2 + 4*d^2*u",
+    "regular_reference_mass": "b^2",
+    "regular_preparation_coefficient": "4*d^2/(A^2+4*d^2*u)",
+    "regular_profile_cancels_for_arbitrary_preparation": false,
+    "fixed_odd_spin_preparation_profile_cancels": true
+  },
+  "book03_full_physical_preparation_source_cancelled": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -2,6 +2,7 @@
 from concurrent.futures import ThreadPoolExecutor
 from hashlib import sha256
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -15,8 +16,10 @@ def verify_lane(base, lane):
     script = lane["check"]
     if script not in lane["evidence"] or Path(script).suffix != ".py":
         raise ValueError(f"Missing pinned Python check: {script}")
+    # Several scientific checks use assert. Keep them active under parent optimization.
+    check_env = dict(os.environ, PYTHONOPTIMIZE="0")
     result = subprocess.run([sys.executable, "-B", str(base / script)], cwd=base,
-                            check=True, capture_output=True)
+                            env=check_env, check=True, capture_output=True)
     receipt = lane.get("stdout_matches")
     if receipt and (receipt not in lane["evidence"] or result.stdout != (base / receipt).read_bytes()):
         raise ValueError(f"Output differs from {receipt}")

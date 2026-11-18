@@ -1,0 +1,62 @@
+{
+  "round": "A65/B122",
+  "base_direct": "1b1653da3595dd96efcbb8a2b2d82c927c0f305b",
+  "scene_source_commit": "0fdf57fe126778fb84ec976f7467ebcfbf4d8453",
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "lanes": [
+    {
+      "id": "book_preparer_crossover",
+      "check": "open/round122/check_preparer_crossover.py",
+      "result": "Относительная цена правильных возвратов и подготовленная доля центральных классов.",
+      "open": "Привязать полный общий прибор и его терминал.",
+      "evidence": {
+        "open/round122/B122_BOOK03_PREPARER_CROSSOVER_RU.md": "93b12a01c9e8e6f7cb19feb892ec4a9671ac3f9515934d6db2bb5fab74c5aa54",
+        "open/round122/RESULT.json": "91b4283e5bcc3ef4cabbc1c69ec8aa9bc003ff4a30449c2442ecf7f7443f9b53",
+        "open/round122/check_preparer_crossover.py": "a50cf30fe862d406d4d87f9a008424d51381214da6e24a0154c06cd1ad227963"
+      },
+      "stdout_matches": "open/round122/RESULT.json"
+    },
+    {
+      "id": "positive_class_preparation",
+      "check": "direct/round65/projection/check_central_preparation.py",
+      "result": "Положительное классовое приготовление и физический нечётный Spin дают различные ответы.",
+      "open": "Определить физически выбранный терминал.",
+      "evidence": {
+        "direct/round65/projection/CENTRAL_PREPARATION_RU.md": "db069a292f07d632896a35f20afda12ae77db94d75f21e05abbc1124f91fd4d5",
+        "direct/round65/projection/check_central_preparation.py": "116a406e3299b100f1e90eb1bcb488dc449adfba8bb53f893debde18ff40b548"
+      }
+    },
+    {
+      "id": "marked_flag_class_response",
+      "check": "direct/round65/clock/check_marked_central_reset.py",
+      "result": "Общий подготовитель и нулевой неправильный исход устраняют отдельную строку движения памяти.",
+      "open": "Вычислить полевой отклик правильного возврата.",
+      "evidence": {
+        "direct/round65/clock/MARKED_CENTRAL_RESET_RU.md": "7cb38c0f2a3f4697b985debba67a33e2de1743862505bc9a8b0565adfdd8c00f",
+        "direct/round65/clock/check_marked_central_reset.py": "ea95a77019959293df2ccb70897a822cfa7c5ffbdd7c476c54c930d36268c64e"
+      }
+    },
+    {
+      "id": "physical_joint_arm_mass",
+      "check": "direct/round65/equations/check_field_joint.py",
+      "result": "Одна совместная масса калибрует относительный уклон после маргинала и перекрёстных шансов.",
+      "open": "Получить её из полной Book-суммы.",
+      "evidence": {
+        "direct/round65/equations/FIELD_JOINT_CALIBRATION_RU.md": "61fb472f98260068ad2912e0b79a6a05f9c04a5c864d7e7249f69f05895a8d9c",
+        "direct/round65/equations/check_field_joint.py": "ab19849ea56168ba0114d75c42ad9ce369c3c5ffc448b6ddcb8c0a3b28f75028"
+      }
+    },
+    {
+      "id": "price_of_retained_tags",
+      "check": "direct/round65/check_retained_readout.py",
+      "result": "Точный источник печати и сохранённой информации, конечный критерий для часов и сжатия.",
+      "open": "Перенести оценку на фактические полные часы и физическую стоимость приготовления.",
+      "evidence": {
+        "direct/round65/RETAINED_PRICE_RU.md": "4d837f21f36e640879e41ae9f38570abd9dbd8f3f2bc07f448e95c5e8588df4a",
+        "direct/round65/READOUT_RU.md": "2f34e9abb7082c873aebc70a3bb040acfe1a98cc70736d62fd47735f22945b4b",
+        "direct/round65/check_retained_readout.py": "b46dddccfa4938477dec07765b6df2cacf43d8ea3d0e31e52885d9872925f4c6"
+      }
+    }
+  ]
+}
