@@ -1,0 +1,26 @@
+{
+  "status": "ACTUAL_SOURCE_BANK_PRESERVING_DECODER_CAPACITY_DERIVED",
+  "parent_A59_commit": "bdc7d0a619e34772cc153b52ebcd6d837289aeec",
+  "partner_B117_commit": "7a6977d4597cd031b98569fc6e98ff269eb0495e",
+  "consumer": "FV7 semantic decoder for the chosen A54/A55 SOURCE",
+  "new_result": "dim R >= 2^5376 (1-delta^2-eta), delta<2^-62, when isometric reencoding preserves the common bank projector on every declared CODE input",
+  "single_fixed_Born_input_implies_capacity": false,
+  "unconditional_prohibition_of_bank_storage_or_variable_length_codes": false,
+  "actual_rare_conditional_bank_vector_bound_used": false,
+  "side_includes_clock_workspace_environment_and_garbage": true,
+  "bank_entropy_bits_upper": "2^-111 on pure SOURCE input; value only",
+  "physical_Info_selected": false,
+  "physical_Cost_intertwiner_proved": false,
+  "full_Cost_Info_source_premise_removed": false,
+  "next_required_operand": "same-execution Cost intertwiner or full CD13 source residual, with actual weighted terminal, memory valuation, gain and physical pullback",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round60/check_source_record_capacity.py": "8cec201bf7afce10046046cf79b173075b747d281a4999d8297b06248853b19e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round60/SOURCE_RECORD_CAPACITY_CHECK.json": "b4aa7e2690d22cd91e923d0955034195a8ebb398ed362baaee6161c5fabb96fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round60/SOURCE_RECORD_CAPACITY_RU.md": "e024fc66c6abc42dd7726768365bfda37bef90b7548da56f88d529361cbd0519",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round60/ROOT_REVIEW_B117.json": "7580b5b4f7c6b4172394870bb67e25cdc64a1824545faabdc6d50729f7589e20"
+  },
+  "local_only": true,
+  "published": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

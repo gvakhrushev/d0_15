@@ -1,0 +1,46 @@
+{
+  "status": "PROGRESS_FULL_VECTOR_REPAIR_AND_NATIVE_CONTROL_MODULE",
+  "parent_A_commit": "15bcb670f87527834e935240847d2d2332e95da2",
+  "independent_B_commits": {
+    "B91": "b051ca1009a468bb9e59d5fc38c8861b9b45fe93",
+    "B92": "ef6e1e22264444bcb7b0eb1ffa949343a9c5657b"
+  },
+  "closed_local_premises": [
+    "Exact all-SAM skew obstruction to old binary full-vector lift, scoped to ideal source; no compiled nonzero defect inferred",
+    "Owned MG2 two-bit vector identity verified exactly",
+    "Actual positive G/CX control module with 12 independently certified exponents and all-column plane grammar",
+    "Explicit typed full-DATA smooth source bounds M1<=1748,M2<=3233036",
+    "Actual independently compiled inverse errors charged at sigma*t divisor"
+  ],
+  "sampler_stride": "2^-80",
+  "control_step": "2^-1700",
+  "CODE_bits": 5376,
+  "additional_RAW_CODE_births_required": 2688,
+  "control_error_lt": "2^-5099",
+  "conditional_new_full_finite_axis_jet_error_lt": "2^-44",
+  "required_new_source_error_lt": "2^-3300",
+  "required_new_complete_corner_error_lt": "2^-3298",
+  "required_precision_conditions_met_by_new_source": false,
+  "control_module_is_whole_execution": false,
+  "all_dirty_private_or_original_vacuum_extension_identity_proved": false,
+  "root_replay_B91": "PASS byte-identical without owner writes",
+  "root_replay_B92": "PASS byte-identical without owner writes",
+  "next_named_parent_premise": "Compile the actual 4-valued SOURCE vertices for the same eight banks, including fixed-prefix precision and fresh CODE births, before recomputing full clock/gain/independent price rows",
+  "next_source_notes": [
+    "Current SOURCE SELECT uses Walsh expansions without additional clean scratch; larger predicates alone do not imply new source-private births",
+    "Rebind global SAM semantics from 2688 binary coordinates to 5376 CODE wires",
+    "Coframe max local SAM bits 4->8 and proper-link 6->12; CAR 2->4",
+    "Existing binary lookup tables and fixed-point level-8 accuracy do not automatically meet the new source gate",
+    "Use finite precision-controlled SOURCE exponents; blindly reusing the 20080-bit control grid inside old SourceI profiles may destroy replacement error budgets"
+  ],
+  "remaining": [
+    "New SOURCE tables and fixed-prefix compilation",
+    "Whole new paid execution, native post, gain and heat",
+    "Original D_nu/full input extension and same-task admission",
+    "Full Cost-Info physical selection and GR refinement"
+  ],
+  "local_only": true,
+  "published": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

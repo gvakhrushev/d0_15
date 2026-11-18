@@ -1,0 +1,19 @@
+{
+  "status": "PASS_B77_PROOF_REVIEW_AND_BYTE_IDENTICAL_ASSEMBLY_REPLAY",
+  "B_commit": "07849c893aebbd1d5b429eb97bc7a529971735b7",
+  "found_emitter_defects_fixed_and_regression_checked": [
+    "centre repeat zero",
+    "Ranges sentinel iteration"
+  ],
+  "actual_small_complete_centre_and_endpoints_replayed": true,
+  "production_census_price_clock_and_scope_reviewed": true,
+  "full_production_word_or_heat_trace_executed": false,
+  "B_files_written": false,
+  "B77_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round77/check_post_sam_assembly_independent.py": "66fee264a313a3013fdaeebd75cc755ec89922a3f15f265070e1f6b1e55fbd42",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round77/B77_ASSEMBLY_AUDIT.json": "a7aa2385d084f57ee3e82cd59f9007a99ca42ba29bf7d2b53da04d4fadc0f554",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round77/B77_A39_COMPOSITION_CLOCK_AUDIT_RU.md": "a8fb12e97ac218e6eb74cd0390530f8a3bfbc34aaea7bf175c62c1b8bc70d3d6"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

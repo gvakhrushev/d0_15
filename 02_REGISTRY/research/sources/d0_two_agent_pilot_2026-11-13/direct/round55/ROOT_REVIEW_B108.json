@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ROOT_B108_PINNED_READ_ONLY_BYTE_IDENTICAL_REPLAY",
+  "B108_commit": "eeabea96fae1aeb7ce225c9de18cd8b8304ba5bf",
+  "all_Git_blobs_and_input_hashes_verified": true,
+  "owner_writes_suppressed": [
+    "B108_A55_AUDIT_CHECK.json"
+  ],
+  "ordinary_catalogue_count_and_infinite_field_name_union_distinguished": true,
+  "independent_literal_prefix_fixture_checks": 858,
+  "pre_Qf_geometric_jet_overreach_rejected_by_exact_fixture": true,
+  "uniform_jet_effect_and_midpoint_budgets_recomputed": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

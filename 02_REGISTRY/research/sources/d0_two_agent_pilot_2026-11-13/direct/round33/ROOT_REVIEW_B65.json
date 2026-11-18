@@ -1,0 +1,35 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW_WITH_EXPLICIT_SCOPE",
+  "owning_B_commit": "f737e46dfbf064d10dfb2b23ca9c548b28d9ab83",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/B65_CENTRE_SOURCE_AND_BOUNDS_RU.md",
+      "sha256": "a10ad0a99575b742f39862f3fd7a8430046ac3c2792d0274e816e4c1df904fe3"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/FINITE_REFERENCE_SECANT_DEFECT.json",
+      "sha256": "7a886cdfb5ea69a04354488919534d35a2ed0625dee85381c8e4b34633235df8"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/SCALAR_HESSIAN_ENVELOPE.json",
+      "sha256": "7d5f4fd7dc9351e9a64ed786211aacba3e49f8d6f9d72e619138bc9e4d522cf5"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/certify_scalar_hessian_envelope.py",
+      "sha256": "6ad0be92a6399eb0b978eadad302e7d4307380741efd165b46e3936c4cb20648"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/check_reference_secant_defect.py",
+      "sha256": "3fe15270fef19a36bd2f5d749c91ac39b8cd27c92c99cd60f5a1ec784097e906"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/test_changed_inputs.py",
+      "sha256": "ceae7f391f3ea45740ea4427cdbaa9f322f9bbd0d43f0186e92b4875c8d3f2a9"
+    }
+  ],
+  "source_hashes_checked": 11,
+  "consumed": "same-chart exact geometric centre, finite secant reference coefficient 0<a_y<1, scalar value/reporter/Hessian bounds",
+  "limitation": "B65 numeric constants are partly hard-coded source assumptions; hashes detect drift but do not establish semantic source identity automatically. Root reviewed B25/A11 maps and uses independent AST parameter checks for A33. No small full residual follows from B65 Taylor cap alone.",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

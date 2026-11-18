@@ -1,0 +1,29 @@
+{
+  "status": "ACCEPT_B70_ACTUAL_INNER_COMMUTANT_AND_FINITE_LOCAL_AXES_AT_DECLARED_SCOPE",
+  "B_commit": "7c2a7b12e411a61df4880445d2fcd6861b62fe05",
+  "pinned_files": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round70/B70_ACTUAL_INNER_COMMUTANT_RU.md": "fc242368712969edc1cff07379a9996714b48a64fb188ae22a1266efaa5b9011",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round70/INNER_SUFFIX_CHECK.json": "0da672c5a140dbbb5143375c7ee46eec0228b102346c42b0c777035ed750f40d",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round70/PAID_INNER_COMPARISON_PLAN.json": "eda6b48519d093f84eb75de54b3d02e52c0a574a1094c087d86d6887d02a81aa",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round70/check_inner_suffix.py": "cbc08e0b4705a3fd1defba0d18972afdbca34907694e2dd8b0d50720ea4b1595",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round70/inner_paid_comparisons.py": "4c2be272a62bb7dc651c10ca03367d4185c328d6461a1afb1bd02a0e7294e826"
+  },
+  "source_pin_count_verified": 19,
+  "both_checkers_replayed_without_writes_and_output_identical": true,
+  "independent_rational_budget_recomputed": true,
+  "full_H_plus_J_finite_row_over_Gamma_s_lt": "2^-74 using unrounded budget",
+  "all5376_local_axes_l2_over_Gamma_s_lt": "2^-68",
+  "consumed": "Actual SAM-free middle and separate paid inner placements with their own clock and final g",
+  "review_findings": [
+    "B58 provider induction is retained for full REPORT; finite samples are not claimed to enumerate it.",
+    "A29 all-column replacement to exact SI²/CZ targets supplies the split word bound; A30 canonical geometric error alone would not suffice.",
+    "Exact old-profile self-adjoint middle is distinguished from approximate actual compiled reflection.",
+    "Both insertion cuts preserve completed SourceI parity and the same total replacement sum.",
+    "New D=2^n*(Lbase-2+3*2^K)-1 and final fresh-retention G use the actual chronology.",
+    "The 5376 norm uses the exact rational budget; rounded per-row 2^-72 would only imply a weaker bound.",
+    "This covers local one-wire SAM axes; arbitrary multiwire native synthesis and full marked task membership remain open."
+  ],
+  "same_task_admission_or_full_arbitrary_preparation_algebra_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,3095 @@
+{
+  "status": "PASS_FINITE_TASK_BINDING_AND_AVAILABLE_RETAINED_LABEL_TEST",
+  "label_checks": {
+    "ordinary_labels_exhausted": 26881,
+    "boundary_probe_labels": 4,
+    "invalid_or_hidden_field_packets_rejected": 9
+  },
+  "independent_prefix_fixtures": [
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "centre",
+        "sign": 0,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "matched",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Pf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Qf",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Qb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": -1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 0,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "Pb",
+        "sign": 1,
+        "axis": 2,
+        "plane": null
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": -1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "SOURCE_before_Qf",
+      "literal_prefix_calls": 8
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "SOURCE_after_Qf",
+      "literal_prefix_calls": 14
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "RAW_frame_return",
+      "literal_prefix_calls": 16
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_0_complete",
+      "literal_prefix_calls": 17
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_1_complete",
+      "literal_prefix_calls": 19
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_2_complete",
+      "literal_prefix_calls": 20
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_3_complete",
+      "literal_prefix_calls": 22
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_4_complete",
+      "literal_prefix_calls": 23
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_5_complete",
+      "literal_prefix_calls": 25
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_6_complete",
+      "literal_prefix_calls": 26
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "REPORT_7_complete",
+      "literal_prefix_calls": 28
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "PORT_ZERO",
+      "literal_prefix_calls": 29
+    },
+    {
+      "label": {
+        "arm": "post_probe",
+        "sign": 1,
+        "axis": 0,
+        "plane": [
+          0,
+          1
+        ]
+      },
+      "mark": "SC6",
+      "literal_prefix_calls": 31
+    }
+  ],
+  "mathematical_label_instrument": {
+    "four_outcome_positive_normalized_full_retained_maps": true,
+    "arbitrary_two_input_columns_and_positive_failure_retained": true,
+    "positive_coarse_graining_preserves_total": true,
+    "free_intermediate_measurement_preserves_suffix_rejected": true,
+    "actual_registration_or_full_original_fine_K9_proved": false
+  },
+  "all_eight_actual_REPORT_READY_address_pairs_checked": true,
+  "actual_regular_field_family_or_physical_fine_instrument_proved": false,
+  "production_word_executed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round52/check_scoped_comparison_task.py": "5f33bfee67554b250552c6fe725e740a8f021a5b93e62da0e94d329777a6531f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round52/scoped_comparison_task.py": "b2f7fe71549f181ddf5a635eb099f9ada5b64993d97847998a8af10c5c8f73a5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round52/FINITE_COMPARISON_TASK.json": "972e47282ddde28e88a2a3e4908622cc05597de480bbdde1aef1a158e17387f8"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

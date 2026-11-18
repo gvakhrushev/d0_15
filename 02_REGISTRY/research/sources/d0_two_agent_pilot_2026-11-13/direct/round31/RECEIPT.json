@@ -1,0 +1,20 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "ACTUAL_MEAN_GEOMETRY_LIFT_RU.md": "7d6ca93d37b2d83a40af33a912c02d5b61ecad25235c97c7c5065a9d60e422bc",
+    "MEAN_GEOMETRY_LIFT_CHECK.json": "19c96feea30dc0a307bd21057e7c53095c423ba049e79a912ae50afe3663ea42",
+    "MEAN_GEOMETRY_LIFT_PLAN.json": "581565f4d426c60740d6bae39fe4880d201fcc35a5046ff6c8f00cab381f0a48",
+    "RESULT.json": "25b3ec3e23ef613640201ae83756cbfa9eb90715448a6bd077224fead0768832",
+    "RESULT_RU.md": "a3509ecb994cb1e9665072baccd5129842100617eb14d45ac1f8b89270e1a07c",
+    "ROOT_REVIEW_B61.json": "618e2d99f5223686e147c883e97916ab2e770cfa1275fc44d5727e509ebe14db",
+    "check_mean_geometry_lift.py": "185449335b1b24ccbe309ba9a1e1e6dfe284acb4b8508d1fd7f4f4d20876fdff",
+    "mean_geometry_lift.py": "1f5ec768c90e614c4c6af836aae09fde015bf274ef8a2531e44c6b15ec776163"
+  },
+  "checks": [
+    "MEAN_GEOMETRY_LIFT_CHECK.json",
+    "ROOT_REVIEW_B61.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

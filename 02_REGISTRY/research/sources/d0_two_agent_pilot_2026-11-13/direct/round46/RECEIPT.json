@@ -1,0 +1,20 @@
+{
+  "status": "LOCAL_CHECKED_RESEARCH_PROGRESS",
+  "files": {
+    "INDEPENDENT_CURRENT_BANK_CHECK.json": "8714c8402a398d82d9a14ba8aec2a83fc958cfc0f7fccf892d1f9451376b42db",
+    "INDEPENDENT_CURRENT_BANK_PLAN.json": "6ef1f56365ef69b8b6920f87b67c5f629b2e79bbd50e7e89d0a79216c71b7f95",
+    "INDEPENDENT_CURRENT_BANK_RU.md": "f6276b1807d5b1de07799e100e351b02398d8b8047109726416faabf7937a01c",
+    "RESULT.json": "b690b3a0d271d6e5ed360d3b990e5879aa1a527306595ec779e915a8100d34f5",
+    "ROOT_REVIEW_B90.json": "7bd74c3a939c58858d0a910266ad5d9a90f2c2ce758b6345ae6fbbbd502e878b",
+    "check_independent_current_bank.py": "1d96d4d05ecec804bbc99e69cffac7a1a07695bd765d763a9bde8beddcafdd65",
+    "independent_current_bank.py": "59d234a45d68780e9887466ccaea01ccaa21484fe3d5704e8e163e203329806d"
+  },
+  "checks": [
+    "check_independent_current_bank.py PASS",
+    "B90 independent namespace, census and source audit PASS",
+    "root byte-identical B90 replay PASS"
+  ],
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

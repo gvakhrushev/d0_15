@@ -1,0 +1,28 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "GCX_BIRTH_CLOCK_CHECK.json": "520b8bfa57689e49cec2ecf4cfcb0a244de76267e730511f89edee33714c9538",
+    "GCX_BIRTH_CLOCK_PLAN.json": "3438970bd68865eef09d27683bb9fd85858d51a340ea83a169d96c2fe947ee12",
+    "GCX_COMPILER_CHECK.json": "d146ca513440aad0a70c56bf270404d77f4469108a42d73be5e1dd44f4a10845",
+    "G_CX_ONLY_REALIZATION_RU.md": "ed8467f1ac76fe349c87eadb7adb2988c30d4e65190eb13c3a84a94512283485",
+    "RESULT.json": "a7c76e9a2c124045bc2425078cabf6b89ea0fa5cda507e4ca28854fdd421fbcc",
+    "RESULT_RU.md": "f1bccf8760eb78f92fc614f32b96ff52d6a0c8e0fd2dd8cbdb984da9580529a5",
+    "ROOT_REVIEW_B57.json": "378b84d69935cfebe1647ba8ad37304d88fd6e191aff0bb4cf4f22a5515ebe62",
+    "ROOT_REVIEW_B58.json": "d8627129a84d981cf3ca0ecff1031a662b6fd6f2207ac8d6b027ececb1b0ddd3",
+    "ROOT_REVIEW_B59.json": "d87e940f7e8674d72d11839ff3d1a750bfcf04d0999e37eb43ad24eadc25db76",
+    "check_gcx_birth_clock.py": "f45b556ed902742965b74afbebafe87c518f700a7b244191314fe7773454545d",
+    "check_gcx_compiler.py": "6500ec8e19b2a349bb86b0dc80e57e414ee773c62fd492f749ee0f7320600046",
+    "gcx_birth_clock.py": "045b5926031f2144a1401f2a1c3278201b57e2020402efb71216686803053e64",
+    "gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa"
+  },
+  "checks": [
+    "GCX_COMPILER_CHECK.json",
+    "GCX_BIRTH_CLOCK_CHECK.json",
+    "ROOT_REVIEW_B57.json",
+    "ROOT_REVIEW_B58.json",
+    "ROOT_REVIEW_B59.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

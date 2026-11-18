@@ -1,0 +1,98 @@
+{
+  "status": "PASS_PARAMETERIZED_SOURCE_GLOBAL_COMPOSITION",
+  "all_source_slots": {
+    "Choi": 1440,
+    "CAR": 128
+  },
+  "field_bound_routing_cases": 4704,
+  "independent_proper_link_groups": 256,
+  "fixed_variable_link_splice_literal_depth_cases": [
+    {
+      "depth": 0,
+      "blocks": 3
+    },
+    {
+      "depth": 1,
+      "blocks": 3
+    },
+    {
+      "depth": 2,
+      "blocks": 3
+    },
+    {
+      "depth": 3,
+      "blocks": 3
+    }
+  ],
+  "exact_small_adapter_primitive_comparisons": [
+    {
+      "levels": 0,
+      "depth": 0,
+      "leaves": 35
+    },
+    {
+      "levels": 0,
+      "depth": 1,
+      "leaves": 115
+    },
+    {
+      "levels": 0,
+      "depth": 2,
+      "leaves": 247
+    },
+    {
+      "levels": 1,
+      "depth": 0,
+      "leaves": 603
+    },
+    {
+      "levels": 1,
+      "depth": 1,
+      "leaves": 1439
+    },
+    {
+      "levels": 1,
+      "depth": 2,
+      "leaves": 3515
+    },
+    {
+      "levels": 2,
+      "depth": 0,
+      "leaves": 3063
+    },
+    {
+      "levels": 2,
+      "depth": 1,
+      "leaves": 7355
+    },
+    {
+      "levels": 2,
+      "depth": 2,
+      "leaves": 19151
+    }
+  ],
+  "global_stage_count_each_direction": 1589,
+  "original_source_marks": [
+    "Qf_dagger_after_common_RAW_mark",
+    "Qb_before_return_bank"
+  ],
+  "independent_slot_sum_inventory_verified": true,
+  "actual_coframe_CAR_G_CX_unit_checks": 90,
+  "actual_new_Julia_angles_checked_in_global_layout": 496,
+  "actual_new_Julia_G_CX_trees_depths_0_1_2": 5328,
+  "actual_new_Julia_angle_powers_sha256": "30b83f4cba3a2141271a299f7c8f096e4ec514bc91d44e33e21878d0a91b0e46",
+  "SOURCE_prefix_error_lt": "2^-3423",
+  "compressed_core_error_lt": "2^-3421",
+  "SourceI_replacement_error_lt": "2^-15800",
+  "all_2688_CODE_targets_unchanged_by_SOURCE": true,
+  "whole_production_stream_or_actual_unpadded_length_evaluated": false,
+  "new_post_and_clock_verified_here": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/check_regular_global_source.py": "15f99f0d7fb85739518f060a1cf708dd9bbcf09688acab90ed0fde0e2e497607",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/regular_source_native.py": "6e218327236d303d24c5fd292753e4bb7e5a22fdae3b3f1561e30de0fe10caa7",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/regular_global_source.py": "420d134e6d4a01aaf47f4ddba76d301faf1bf7c64d9e3225d1d512a170e0c395",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/REGULAR_GLOBAL_SOURCE_PLAN.json": "99135a04be6166e699209c22fa61221e545b1ec913090915c094dc40634ce277"
+  }
+}

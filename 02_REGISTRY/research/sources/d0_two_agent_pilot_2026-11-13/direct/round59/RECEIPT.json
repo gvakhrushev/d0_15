@@ -1,0 +1,10 @@
+{
+  "status": "A59_ROOT_B116_CONTRACT_APPLICATION_REVIEWED",
+  "artifact_sha256": {
+    "INITIALIZED_DOMAIN_AND_PHYSICAL_PRICE_RU.md": "2fb1b7dc53fd1068025902e7ae333811099b0619f149db7ad58f322b64fb3c18",
+    "RESULT.json": "7ba40e00d68e0b51c44deb4c90fc42adb8a1bb75e10108d4e2314c64528710d0",
+    "ROOT_REVIEW_B116.json": "db41acc3dccacbe69511ed9e990499acdc25199d958d637d86ca0054b7688fa6"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

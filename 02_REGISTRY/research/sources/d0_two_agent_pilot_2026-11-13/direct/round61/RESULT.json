@@ -1,0 +1,28 @@
+{
+  "input_A": "bdc7d0a619e34772cc153b52ebcd6d837289aeec",
+  "input_B119": "cd3ce11a48c0456d0d7eb5ac871952deaa3cdb4d",
+  "B119_checker_replay": "matches committed receipt byte-for-byte",
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GENERAL_EINSTEIN_SOURCE_RU.md": "f50587a0708ceddf404a0b60ed2c7bd37d16c650f50da6feb1d5cccad1ab2fe1",
+    "02_REGISTRY/research/A4D_SINGLE_J2_EXACT_EINSTEIN_FRAME_AND_KESSENCE_2026_10_18.md": "6429169d276aa0b580c1ee9327f3f1549d545ce1a2996291e30c182b5b1bd2dc",
+    "02_REGISTRY/research/A4D_TWO_SIDED_NULL_BIANCHI_GLOBAL_COMPLETION.md": "cc807156a1b009f365a7b71f4fe03e8b31200d442c7b3b129df9c75f74ef028d",
+    "02_REGISTRY/research/A4D_TWO_SIDED_CAR_NULL_TOMOGRAPHY_AND_CONFORMAL_CONTROL_2026_10_18.md": "f39e8723b01eee14dbc6ac0916009560986f26d5b65ad962f009e97ce126f2ff"
+  },
+  "B119_files": {
+    "B119_NULL_SCALAR_CHARACTERISTICS_CHECK.json": "dc0ae46d0c7f5fa71b112f33fe32a2aa18d6d2a9a0b55821f4bc2008d728f5b2",
+    "B119_NULL_SCALAR_CHARACTERISTICS_RU.md": "ed45d153ad326e943e151304728583df757c89e85a8add02fcb9f6bdcc42ff6e",
+    "check_null_scalar_characteristics.py": "c3db389cf365b74d495287f94106aab00e1f61649a1ec87c00ea817d933b4f61"
+  },
+  "local_checker": "PASS: trace/mean, J2 polynomial, exact differences, two Einstein witnesses, null tomography and polarization ranks",
+  "files": {
+    "EINSTEIN_TRACE_TEST_RU.md": "8a76359c09d3001d978670ee9454d57b0c94b36bac9a8ff9612ce5aca453053f",
+    "READOUT_RU.md": "137eb7f130ee61ad2f81744aa3da7ffeba44e8e673a79d46c2aa366a03ee4130",
+    "TWO_CAR_NULL_RIGIDITY_RU.md": "3a782c574cac9f462616297ecf7e5f4c51ce5d6ebec1a369236c7d517b96a287",
+    "check_trace_line.py": "41238a858ca0eb3981b26fd166460ad936a78a08aad3253f51ba51439b6782b8"
+  },
+  "full_physical_price_supplied": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

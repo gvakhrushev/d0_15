@@ -1,0 +1,24 @@
+{
+  "status": "CONSUMED_INDEPENDENT_GLOBAL_WORD_AND_SCALAR_CORNER_REVIEW",
+  "B52_commit": "7cf5e14ae23e831dfe444caaefb4b7ac7028d816",
+  "pinned_files_sha256": {
+    "B52_GLOBAL_WORD_SCALAR_AUDIT_RU.md": "fe73d7702df9ed08c1725f83fc48739be90aaa2d2c4ff243666dd18a1a7dc2c6",
+    "GLOBAL_COUNTS_ERROR_INDEPENDENT_CHECK.json": "33bf709cd78bfc3f504596307d23d3c240192659d89fa019debf6af8eb2cfb76",
+    "GLOBAL_HYBRID_FIBRES_CHECK.json": "49a75475e3d6c30badf070f904557b911899d8d161fbacd953921e7a636a08c0",
+    "GLOBAL_LITERAL_REVERSE_INDEPENDENT_CHECK.json": "bf3a06e03458beac12d0e5b148efe472aeafea88b249c8c92f8ffafc12b67298",
+    "SCALAR_CORNER_PREMISE_CHECK.json": "5dcb18d120a2e1f7efdbd2389694aec9bb28c5a6af07f2cdfc9adabdf1d7734f",
+    "audit_global_counts_and_error.py": "4a5885c52595291299a79f36cd3ce5302d59f3507759319867aa964d52865e5a",
+    "audit_global_reverse_independent.py": "076540fb1640495c97634563a2218ff08358fa4f9dd60eeafc00b8eecac3c2ff",
+    "audit_hybrid_fibres.py": "cd5747a948a73f68af8e128dbb6641d6da99bf439c7ee43366fded11692ebf30",
+    "prove_scalar_corner_and_premises.py": "41d61d4e2f6181a7ae7f3778e12eb726f2118ed24f76bf6848e6721144ac410c"
+  },
+  "absolute_input_pins_rechecked": 22,
+  "all1389_stages_and_exact_native_inventories": true,
+  "independent_literal_inverse_and_whole_fixture": true,
+  "independent_canonical_input_hybrid_fibres": true,
+  "algebraic_scalar_corner_for_declared_real_embedding_and_provider_contracts": true,
+  "original_physical_H1_T6_admission_proved": false,
+  "root_reexecuted_independent_scripts": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,17 @@
+{
+  "ideal_operator_identity_planes": 3,
+  "actual_nonsymmetric_residual_planes": 3,
+  "relative_inner_Hadamard_map_and_left_right_derivatives": true,
+  "basis_feedback_stationary_but_mean_first_jet_zero": true,
+  "degenerate_outer_equations_not_sufficient_for_inner_negative_control": true,
+  "status": "PASS_EXACT_JOINT_KERNEL_REDUCTION_AND_SOURCE_BOUNDS",
+  "production_kernel_or_full_heat_computed": false,
+  "all_skew_physical_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round44/check_joint_source_reduction.py": "2eb1eb26a3a70da06b78e09e6b7d394d26bececffaf86b90505a4fe9efb4a32e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round44/joint_source_reduction.py": "5c794597a9b0ca819475180327096548790af2142e1b8ce6148f706cb1dd970c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round44/JOINT_SOURCE_REDUCTION_PLAN.json": "d71f405a34d75c56c88528bdf2835fe9aed7f32a48200b9d68aa0a9717b57f0c"
+  }
+}

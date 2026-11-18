@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ROOT_B114_PINNED_READ_ONLY_BYTE_IDENTICAL_REPLAY",
+  "commit": "832acc1960733f66bdff887002340656e4c886c5",
+  "all_Git_blobs_and_source_pins_verified": true,
+  "owner_writes_suppressed": [
+    "B114_PHYSICAL_CHART_CHECK.json"
+  ],
+  "artifact_sha256": {
+    "B114_PHYSICAL_CHART_CHECK.json": "9002981755588795788c0cd82110509624427cb46548e458226331b633fd77ae",
+    "B114_PHYSICAL_CHART_PULLBACK_RU.md": "fb2b95ec317d570a15dc28d90c4a5c33be83605e4362f264592d9af52047f374",
+    "check_physical_chart.py": "393090b1ab02e1433d69f04ce320d1bc3832395ec5dc6818246825de2d70e196",
+    "physical_chart_l4.py": "fbea10248593212b50dc844dc5440d5f098a5e74ee5860a14727ed261ec17f9e"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

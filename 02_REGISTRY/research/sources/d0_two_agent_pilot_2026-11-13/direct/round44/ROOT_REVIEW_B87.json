@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "c6315af30344b0798c51cb80a855960f5edf1d71",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round87/check_global_source_reduction.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round87/B87_GLOBAL_SOURCE_REDUCTION_CHECK.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "b52718b0329ae354305b996e3289fa3dc1e154269073145fd9dc98102d05c975",
+  "receipt_sha256": "31e893ab7232b966a7aaf77aa94a489fad72833de9d54299ca060ac6699407bf",
+  "owner_status": "PASS_CONDITIONAL_ALL_SAM_SKEW_FEEDBACK_REDUCTION",
+  "source_pins_verified": true,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "B_confirmed_final_report_no_mathematical_or_scope_discrepancy": true,
+  "B_editorial_clarification_new_word_price_recalculated_applied": true,
+  "final_report_sha256": "abbf039498a69729bd15f7a686d2733ce6999058db2474e3b011e988e60219ad"
+}

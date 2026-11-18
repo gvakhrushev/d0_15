@@ -1,0 +1,19 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "ACTUAL_PRICE_BINDING_GATE_RU.md": "d698d6dcd595a73d969f0d078622d8114057672573f699f01113de0d41ec0d54",
+    "COUNT_ONLY_BINDING_CHECK.json": "d6d0e71a50fd9789d4c121373b17570ea326fb604036a0f131532690c6f4c700",
+    "RESULT.json": "f77fd05d71d744bc26c3defab82707ffeff35bc6a397d91f8f3c6257c5adde49",
+    "RESULT_RU.md": "c7f2a64dd5d2e9d567091864083e4b60e220e2f4d3c8f6906c69f4b869e2545e",
+    "ROOT_REVIEW_B68.json": "a5cfad4f855cfc97300e2e017b362be335dfb3bf30f13a995250cbcce6fa4900",
+    "SOURCE_COMPOSITION_CHECKPOINT_RU.md": "959637d1795594944532feb9b75c8c6a3fbf4466ee254743b71cd744b750188b",
+    "check_count_only_binding.py": "fb6aa286a192ca853c5464e0e52945eb3a3de39526d901076682f12414d9162b"
+  },
+  "checks": [
+    "COUNT_ONLY_BINDING_CHECK.json",
+    "ROOT_REVIEW_B68.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

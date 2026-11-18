@@ -1,0 +1,68 @@
+{
+  "status": "PASS_FULL_RAW_CHOI_JOINT_REFLECTION_ASSEMBLY",
+  "plan_sha256": "a7a2e7acf009a7aa2e472c9d0e74b78eff9b74f708ff9ab37ee98652d7001425",
+  "checker_sha256": "574994b3dd33575d900eca10eb0983a221fc9378ecf4365ed26d64287088646c",
+  "all7_bank_resource_recurrences_independently_recomputed": true,
+  "literal_wrapper_checks": [
+    {
+      "initialize_private": false,
+      "inverse_depth": 0,
+      "literal_primitive_leaves_equal": 73
+    },
+    {
+      "initialize_private": false,
+      "inverse_depth": 1,
+      "literal_primitive_leaves_equal": 297
+    },
+    {
+      "initialize_private": false,
+      "inverse_depth": 2,
+      "literal_primitive_leaves_equal": 645
+    },
+    {
+      "initialize_private": false,
+      "inverse_depth": 3,
+      "literal_primitive_leaves_equal": 1689
+    },
+    {
+      "initialize_private": true,
+      "inverse_depth": 0,
+      "literal_primitive_leaves_equal": 95
+    },
+    {
+      "initialize_private": true,
+      "inverse_depth": 1,
+      "literal_primitive_leaves_equal": 343
+    },
+    {
+      "initialize_private": true,
+      "inverse_depth": 2,
+      "literal_primitive_leaves_equal": 763
+    },
+    {
+      "initialize_private": true,
+      "inverse_depth": 3,
+      "literal_primitive_leaves_equal": 2023
+    }
+  ],
+  "arbitrary_external_extension_diagnostic": {
+    "original_DATA_columns": 4,
+    "external_columns": 2,
+    "private_clean_wires": 1,
+    "ideal_max_entry_error": 4.440892098500626e-16,
+    "perturbed_operator_error": 0.001688991755606327,
+    "bound_4eta_plus2delta": 0.003704721782367435
+  },
+  "diagnostic_is_not_full_dimension_numerical_execution": true,
+  "analytic_full_dimension_isometry_projector_proof_in_document": true,
+  "DATA22_RAW_inverse_included": true,
+  "private24_RAW_initializer_compiled_and_priced": true,
+  "new_reflection_clean_work": 0,
+  "external_SITE_namespace_disjointness_checked": true,
+  "unitary_error_on_clean_private_lt": "2^-3227",
+  "all1260_Choi_error_lt": "2^-3216",
+  "giant_R46_sequence_enumerated": false,
+  "full_giant_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

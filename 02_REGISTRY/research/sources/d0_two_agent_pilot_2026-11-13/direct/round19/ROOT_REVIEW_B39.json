@@ -1,0 +1,59 @@
+{
+  "status": "PASS_ROOT_CONSUMPTION_OF_CONDITIONAL_B39_ADAPTER",
+  "B_commit": "5046b46e730ac0331e72f3625c3edb9860cc153a",
+  "pinned_files_sha256": {
+    "ADAPTER_GRAMMAR_CHECK.json": "d6963f36946308e317b6965b36a878fed3418146bfac3adeca1c7dfcb0499792",
+    "ADAPTER_NATIVE_GRAMMAR.json": "d84fc641299e9031d2d8328495933096a2331a6f2a19155502e30bb4b1c668bd",
+    "ADAPTER_PHASE_CERTIFICATE.json": "37eadab1153e9f6ed1af42ca8ca96bd1ddf9eee083b8d28a2a089867a6ba5ea4",
+    "ADAPTER_PHASE_INDEPENDENT_CHECK.json": "834936fc7dc78db4f8379ba6e080193f408f7dd8028825d73722c522f86908ef",
+    "FIXED_POINT_MATH_CHECK.json": "19caa9d9dbbcc03ac28d8ffaff2034d7288ae1ddb27d065ff2ded2f37aa8bdd3",
+    "OMEGA_HALF_ADAPTER_RU.md": "910ddb0d9d2f58f874cddf121f5eac54b2b7136258d447f4f67c65f4f469640e",
+    "adapter_native.py": "5d21a2152396f6f2f622e2a923dce18b098bb4f6f8c9abfec9a7c0ec362ac7cd",
+    "build_adapter_grammar.py": "16b38519c672484ccec07c361a0e8c61b2c12136c26442dca1c548845a02294d",
+    "certify_adapter_phases.py": "7606aa221cd10612a4cfa97a8ff92937949ce477a7cc243a0cbf482e99485cde",
+    "check_adapter_grammar.py": "d088065c0512fcc6a0f9e2224d1fc6d1817c8079e4a802924365d82be207f7c8",
+    "check_fixed_point_math.py": "521e14e07acff9743f71d7f7763220ae2145781d8a4f8f9548c01d85c9ad33c7",
+    "verify_adapter_phases.py": "60a41b737a26f73b8496f21d226739187541af56a292c94ea69034522cbffd56"
+  },
+  "isolated_replays": [
+    {
+      "script": "verify_adapter_phases.py",
+      "output": "ADAPTER_PHASE_INDEPENDENT_CHECK.json",
+      "output_sha256": "834936fc7dc78db4f8379ba6e080193f408f7dd8028825d73722c522f86908ef",
+      "isolated_JSON_identical": true
+    },
+    {
+      "script": "check_fixed_point_math.py",
+      "output": "FIXED_POINT_MATH_CHECK.json",
+      "output_sha256": "19caa9d9dbbcc03ac28d8ffaff2034d7288ae1ddb27d065ff2ded2f37aa8bdd3",
+      "isolated_JSON_identical": true
+    },
+    {
+      "script": "build_adapter_grammar.py",
+      "output": "ADAPTER_NATIVE_GRAMMAR.json",
+      "output_sha256": "d84fc641299e9031d2d8328495933096a2331a6f2a19155502e30bb4b1c668bd",
+      "isolated_JSON_identical": true
+    },
+    {
+      "script": "check_adapter_grammar.py",
+      "output": "ADAPTER_GRAMMAR_CHECK.json",
+      "output_sha256": "d6963f36946308e317b6965b36a878fed3418146bfac3adeca1c7dfcb0499792",
+      "isolated_JSON_identical": true
+    }
+  ],
+  "full_normalized_output_error_ideal_lt": "2^-3280 (includes good-component normalization and retained failure)",
+  "comparator_hybrid_review": "compare actual phase blocks on clean ideal prefixes; do not apply their clean-subspace estimate directly on dirty actual prefixes",
+  "anchor_only_stability_review": "X -> (I+(t-1)XX\u2020) R_Q X is 3-Lipschitz on isometries; comparator and realification rebit must be exact spectators of A0",
+  "conditional_adapter_error_lt": "2^-3230",
+  "sufficient_loader_supplier_budget": {
+    "A19_actual_prefix_error_lt": "2^-4091",
+    "missing_full_controlled_Julia_SELECT_error_le": "2^-3251",
+    "sum_lt": "2^-3250"
+  },
+  "needs_disjoint_rebit_comparator_and_arbitrary_aux": true,
+  "A19_prefix_is_not_full_loader": true,
+  "full_loader_and_actual_joint_namespace_compiled": false,
+  "full_H1_alpha_lower_bound_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

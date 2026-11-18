@@ -1,0 +1,78 @@
+{
+  "status": "LOCAL_RESEARCH_CHECKPOINT",
+  "created_utc": "2026-11-13T13:47:14.731740+00:00",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "worktree": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13",
+  "branch": "codex/d0-pilot-directed-20261113",
+  "goal": "D0 → ОТО",
+  "researchers": 2,
+  "inputs": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md",
+      "sha256": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md",
+      "sha256": "ad5b738a962a804ac7a9bc0225f5729b28b10916ae9ac8ab1098e7c2112822e0"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round2/ROUND2_RESULT_RU.md",
+      "sha256": "602709fd802ceb106f2457a819aa5fe03ccc5412874be95202dde1bd243a6a34"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round3/ROUND3_RESULT_RU.md",
+      "sha256": "d740efca1045bd82283e8d7b75459ae543797dd10706a73b252d55fe8178a652"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round4/ROUND4_RESULT_RU.md",
+      "sha256": "9076c68c5756e2b4c372c19b2c7a5a3535b5f0ea8acb15ad7d7f9a69f61d68fc"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round5/ROUND5_RESULT_RU.md",
+      "sha256": "5a0c6ce540462bdca944c6fad7b4283ccbb1dbd8fe79963d001637ee36a99ad8"
+    }
+  ],
+  "artifacts": {
+    "CHECK_RESULT.json": "abf8579e97137016471d4030cb83822ffc32110396e5d443c1c574da4f0cd0bb",
+    "MARKED_SOURCE_RU.md": "5f04cc85e46015321593cdc5908365147d9e886c56cbcd0ab6016ee84a5ddebd",
+    "RESULT_RU.md": "6dd37b9fd8fcf35e7dbe6602356fc9c0f18e31c0bf0a45374aa3bb47a5e7db14",
+    "SAM_BACKWARD_RU.md": "0592b5c1996faca78bcec57d40ada65f7af19fdb38156f8a4d7d7367265ed825",
+    "SAM_CHECK.json": "235a1c91ab12e4ffd8a6279bfc3f16992cd008eeef846310dbe56cb0dc0d759b",
+    "STATIONARY_BACKWARD_RU.md": "37a2063b0afa63ab1d57affed8c459f544aa051f5fdf0c8f07c0ba5d40a83bba",
+    "STATIONARY_CHECK.json": "50bb3d1f0a471b2d44c910b2ac2f06e37de4f70615ef969968928ccc6388519b",
+    "WRITER_CHECK.json": "a54b1ea989ccaafac5f244cb64ae5e7ead0cb359c6d68c605511142d182f51f6",
+    "WRITER_SUBSTITUTION_RU.md": "e5b5428b4a66ab38e784aaa26e754f0233298fad2e9cebeedc1583635cfb672f",
+    "check_marked_source.py": "29c62bc6bc81600cfa3059acfecbc515d2b81301eccf9b28980f69eac5b9eff7",
+    "check_sam_backward.py": "b821c98db071591d8e016dc0557f4ad4b736e03120aa3ef4a79946c782509c3d",
+    "check_stationary_backward.py": "ecf6976e4576b8fe03082660f0df69d18b2a4a82f062fe69a8e4934c08e56a73",
+    "check_writer_substitution.py": "c6c83f7ecca14b679b77a499284dffc24557d34562116418d10d66c80fe492b1"
+  },
+  "validation": {
+    "marked": {
+      "exact": 30,
+      "numerical": 3
+    },
+    "writer": {
+      "exact": 17
+    },
+    "full_bank_stationary": {
+      "exact": 18,
+      "numerical": 12
+    },
+    "sam_stationary": {
+      "exact": 5,
+      "numerical": 28
+    },
+    "B_round5_independent_replay": {
+      "checks": 20,
+      "status": "PASS"
+    }
+  },
+  "pending": "B round6: concrete fine-reader compatibility of complete allowed apparatus fibre",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

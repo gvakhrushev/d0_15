@@ -1,0 +1,18 @@
+{
+  "status": "LOCAL_INDEPENDENTLY_REVIEWED_NONZERO_FIXED_SAMPLER_SOURCE_ROW",
+  "parent": "Actual A30/A32 source at the owned exact geometric centre, including the previously unbounded sampling/Taylor effect",
+  "actual_SAM_index": 2,
+  "actual_coordinate": "site(0,0,1,1), raw coframe component2 role0",
+  "actual_normalized_finite_H_plus_J_comparison_gt": "2^-44",
+  "corrected_finite_raw_covector_norm_gt": "2^-45",
+  "endpoint_price_order": "H_plus_J_plus > H_plus_J_minus",
+  "independent_audit": "B66 e8f0e53a2",
+  "no_change_to_action_or_sampler_parameters": true,
+  "nearby_stationary_history_excluded": false,
+  "new_native_padded_central_history_constructed": false,
+  "joint_physical_direction_execution_asserted": false,
+  "complete_Cost_Info_source_or_selection_proved": false,
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

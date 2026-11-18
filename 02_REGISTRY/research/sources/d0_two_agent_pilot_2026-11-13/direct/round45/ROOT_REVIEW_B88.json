@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "fac829247203e507c398046fc6114180a5f5a456",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round88/check_composite_processor.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round88/B88_COMPOSITE_PROCESSOR_CHECK.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "6f1db0df431ed8325703453b2e47f1663ce3ccde29ae155f5e54f94df28c6956",
+  "receipt_sha256": "2b4d5f2a6d535837d0ecf01a7523a7d7a901ce5fd22750e00c01b81cf87b1bdd",
+  "owner_status": "COMPOSITE_CURRENT_ISOMETRY_AND_PAID_PROCESSOR_ECHO_CONDITIONAL_AUDIT",
+  "source_pins_verified": true,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

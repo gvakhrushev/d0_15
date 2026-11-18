@@ -1,0 +1,112 @@
+{
+  "status": "PASS_COMPLETE_OMEGA_AND_B39_PROVIDER_INTEGRATION",
+  "plan_sha256": "ee6f798c58befd49a771f92bfe7dc30c874164ed82b484318bd10ebac7e24c7a",
+  "checker_sha256": "e3a9493e9370b2580b8fc70b40bad370754408a189a0651f759c0f35e4b29491",
+  "all_bank_coverage": {
+    "y+": {
+      "coframe": 1024,
+      "link": 1024,
+      "anchor": 1,
+      "padding": 2047
+    },
+    "y-": {
+      "coframe": 1024,
+      "link": 1024,
+      "anchor": 1,
+      "padding": 2047
+    },
+    "f": {
+      "coframe": 4864,
+      "link": 17152,
+      "anchor": 1,
+      "padding": 2047
+    },
+    "0": {
+      "coframe": 1024,
+      "link": 1024,
+      "anchor": 1,
+      "padding": 2047
+    },
+    "x+": {
+      "coframe": 1024,
+      "link": 1024,
+      "anchor": 1,
+      "padding": 2047
+    },
+    "x-": {
+      "coframe": 1024,
+      "link": 1024,
+      "anchor": 1,
+      "padding": 2047
+    },
+    "q": {
+      "coframe": 4864,
+      "link": 1024,
+      "anchor": 1,
+      "padding": 2047
+    }
+  },
+  "actual_prefix_blocks_checked": 22,
+  "all_coframe_bound_units_checked": 294144,
+  "all_proper_link_commands_checked": 1781504,
+  "max_link_controls": 23,
+  "actual_existing_provider_wire_numbers_unchanged": true,
+  "phase_rebit_comparator_and_oldRIGHT_exact_loader_spectators": true,
+  "B39_provider_vs_original_DAG_exact_primitive_replays": [
+    {
+      "levels": 0,
+      "outer_inverse_depth": 0,
+      "actual_primitive_leaves_equal_to_B39": 35
+    },
+    {
+      "levels": 0,
+      "outer_inverse_depth": 1,
+      "actual_primitive_leaves_equal_to_B39": 115
+    },
+    {
+      "levels": 0,
+      "outer_inverse_depth": 2,
+      "actual_primitive_leaves_equal_to_B39": 247
+    },
+    {
+      "levels": 1,
+      "outer_inverse_depth": 0,
+      "actual_primitive_leaves_equal_to_B39": 603
+    },
+    {
+      "levels": 1,
+      "outer_inverse_depth": 1,
+      "actual_primitive_leaves_equal_to_B39": 1439
+    },
+    {
+      "levels": 1,
+      "outer_inverse_depth": 2,
+      "actual_primitive_leaves_equal_to_B39": 3515
+    },
+    {
+      "levels": 2,
+      "outer_inverse_depth": 0,
+      "actual_primitive_leaves_equal_to_B39": 3063
+    },
+    {
+      "levels": 2,
+      "outer_inverse_depth": 1,
+      "actual_primitive_leaves_equal_to_B39": 7355
+    },
+    {
+      "levels": 2,
+      "outer_inverse_depth": 2,
+      "actual_primitive_leaves_equal_to_B39": 19151
+    }
+  ],
+  "full_controlled_Omega_operator_error_lt": "2^-3250",
+  "half_vector_anchor_isometry_error_lt": "2^-3230",
+  "half_private_clean_wires": 24,
+  "outer_B35_joint_anchor_width": 46,
+  "outer_B35_comparator_requires_45_additional_wires": true,
+  "full_giant_word_executed": false,
+  "outer_B35_reflection_compiled": false,
+  "physical_H1_admission_and_Cost_Info_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

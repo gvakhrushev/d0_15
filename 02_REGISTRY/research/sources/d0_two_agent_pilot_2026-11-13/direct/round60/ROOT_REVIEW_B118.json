@@ -1,0 +1,11 @@
+{
+  "commit": "f836e0ac667ad813cd4e2de717afa8ce3c684518",
+  "result": "read-only replay, receipt byte-identical",
+  "files": {
+    "B118_A60_INDEPENDENT_REVIEW_RU.md": "769c16e045805177e10c7ef3d4fdce81f3ccb8c98319c6826056fbc8ae01eced",
+    "B118_SOURCE_CAPACITY_AUDIT_CHECK.json": "7ba16da5b4924d8bd4c0f17e1f5c24cf5624d7c284e56ae3b7a8807b5c712c31",
+    "audit_source_capacity.py": "f6f19f97d04a78a81aa30afb8bfcab583b85e42405b17cb5238a522395012158"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

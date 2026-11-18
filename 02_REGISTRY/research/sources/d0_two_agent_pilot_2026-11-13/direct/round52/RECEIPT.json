@@ -1,0 +1,24 @@
+{
+  "status": "A52_LOCAL_REVIEWED_CHECKPOINT",
+  "artifact_sha256": {
+    "FINITE_COMPARISON_TASK.json": "972e47282ddde28e88a2a3e4908622cc05597de480bbdde1aef1a158e17387f8",
+    "FINITE_COMPARISON_TASK_CHECK.json": "d96ba2c9a82901670811c4cfb4c7589cd0d37052c7212b56d5d70d91d8dd3e17",
+    "RESULT.json": "8584a12fa8f55ddf36a58c2c1bfa75527c79235d84d9a52d924513b04e63f6b3",
+    "ROOT_REVIEW_B101.json": "51f4b28ab6f9bc6dbd2a9825d332e1c7405c158531c5a463cb6278caaa0be9f7",
+    "ROOT_REVIEW_B102.json": "44db109824ea96a66b8a130985557f8a5ccc656331a2892d254048cbf10e7aac",
+    "SCOPED_COMPARISON_TASK_RU.md": "a5569e509086237cccfc41248037a054942af39219b56a456fbc712c550d0daf",
+    "check_scoped_comparison_task.py": "5f33bfee67554b250552c6fe725e740a8f021a5b93e62da0e94d329777a6531f",
+    "scoped_comparison_task.py": "b2f7fe71549f181ddf5a635eb099f9ada5b64993d97847998a8af10c5c8f73a5"
+  },
+  "checks": [
+    "all ordinary labels and canonical decoding PASS",
+    "299 own and 429 independent prefix fixture comparisons PASS",
+    "all eight actual REPORT/READY bindings PASS",
+    "exact retained CP instrument and hostile dephasing PASS",
+    "B101 and B102 root read-only byte-identical replays with source/Git pins PASS",
+    "final syntax/JSON/source pins PASS"
+  ],
+  "physical_admission_or_free_field_graph_closed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

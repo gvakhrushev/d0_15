@@ -1,0 +1,80 @@
+{
+  "status": "PASS_SCRATCH_FREE_GRAY_REFLECTION_NATIVE_AND_INTERVALS",
+  "certificate_sha256": "b1590b22083345bee3f676b209e51d249f6b054a05bda57ed357c4dbd6054759",
+  "checker_sha256": "e1c45cb0def8a3b6a189c7b6274139cb03c20bab5fdb2ace79781bd69242a190",
+  "exact_cases": [
+    {
+      "K": 1,
+      "k": 1,
+      "all_exact_columns_and_inverses": 64,
+      "forward_leaves": 4
+    },
+    {
+      "K": 1,
+      "k": 2,
+      "all_exact_columns_and_inverses": 64,
+      "forward_leaves": 6
+    },
+    {
+      "K": 2,
+      "k": 1,
+      "all_exact_columns_and_inverses": 128,
+      "forward_leaves": 8
+    },
+    {
+      "K": 2,
+      "k": 2,
+      "all_exact_columns_and_inverses": 128,
+      "forward_leaves": 12
+    },
+    {
+      "K": 3,
+      "k": 1,
+      "all_exact_columns_and_inverses": 256,
+      "forward_leaves": 16
+    },
+    {
+      "K": 3,
+      "k": 2,
+      "all_exact_columns_and_inverses": 256,
+      "forward_leaves": 24
+    },
+    {
+      "K": 4,
+      "k": 1,
+      "all_exact_columns_and_inverses": 512,
+      "forward_leaves": 32
+    },
+    {
+      "K": 4,
+      "k": 2,
+      "all_exact_columns_and_inverses": 512,
+      "forward_leaves": 48
+    }
+  ],
+  "all_exact_columns_and_literal_inverses": 1920,
+  "Gray_cycle_enumerated_K1_through_K12": true,
+  "general_Walsh_sum": "sum_s (-1)^(b dot s)=product_j(1+(-1)^b_j)=2^K if b=0 else0",
+  "independent_rectangular_precision_bits": 8448,
+  "independent_actual_large_power_checks": [
+    {
+      "K": 8,
+      "rectangle_error_le": "2^-3264",
+      "rectangle_inside_saved_ball_projection": true
+    },
+    {
+      "K": 46,
+      "rectangle_error_le": "2^-3264",
+      "rectangle_inside_saved_ball_projection": true
+    }
+  ],
+  "native_aux_port_Spin_oldRIGHT_arbitrary": true,
+  "new_clean_wires": 0,
+  "off_anchor_exact_identity": true,
+  "forward_SourceI_calls": 0,
+  "forward_exact_involution_claimed": false,
+  "same_paid_history_as_A13_claimed": false,
+  "full_K8_or_K46_actual_huge_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ROOT_INDEPENDENT_B23_REPLAY",
+  "B_commit": "c73987fa8",
+  "input_hashes_verified": 5,
+  "output_hashes_verified": 8,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "warnings_as_errors": true,
+  "generated_files_byte_identical": {
+    "CHOI_ADDRESSES.jsonl": true,
+    "SITE_STENCILS.jsonl": true,
+    "COPY_SLOTS.jsonl": true,
+    "CERTIFICATE.json": true,
+    "LAZY_MAP_TEST.json": true
+  },
+  "receipt_sha256": "b03d1ab9ef5ab51765cdb8d81dc92100d2d30d69f8900ac25b1ade4580411266",
+  "limits": "conditional geometric halo and candidate dressed centre; not actual H1 or fixed boundary choice; no native word",
+  "GR_closed": false
+}

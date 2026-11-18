@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_INDEPENDENTLY_REVIEWED_INDEPENDENT_OUTER_PRICE_ROWS",
+  "parent": "Independent preparation equations for the actual A30/A32 source carrier",
+  "new_actual_native_endpoint_words": 4,
+  "sample_SAM_index": 2,
+  "per_leg_complete_finite_comparison_error_under_Gamma_s_lt": "2^-73",
+  "each_j2_outer_finite_H_plus_J_difference_under_u_Gamma_s_gt": "2^-46",
+  "actual_core_exact_symmetry_assumed": false,
+  "analytic_leg_sum_equals_paired": true,
+  "each_analytic_half_split_error_under_Gamma_s_lt": "2^-74",
+  "backward_pair_has_identical_complete_prefix_through_core": true,
+  "backward_pair_all_original_RAW_checkpoint_marks_identical": true,
+  "backward_row_is_forward_geometric_tangent": false,
+  "complete_same_task_membership_proved": false,
+  "new_native_padded_centre_or_joint_stationarity_proved": false,
+  "complete_Cost_Info_source_or_selection_proved": false,
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "independent_audit_B71_commit": "61519b987588ccc133a50e77c137a1a72f2694ff",
+  "related_inner_result_B70_commit": "7c2a7b12e411a61df4880445d2fcd6861b62fe05"
+}

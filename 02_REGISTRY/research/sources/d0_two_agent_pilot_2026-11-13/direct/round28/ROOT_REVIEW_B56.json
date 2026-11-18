@@ -1,0 +1,26 @@
+{
+  "status": "CONSUMED_INDEPENDENT_PHYSICAL_WIRE_ADAPTER_REVIEW",
+  "B56_commit": "f2e4502a9f3ceed82c95b16ca28f7f220caa128c",
+  "pinned_files_sha256": {
+    "B56_ODD_CZ_AND_GADGET_CHECK.json": "29aa406ea29f29e923490b0b3226f4c3bf3685de84e8889819ee9b2b9faf0c5e",
+    "B56_SOURCE_PROFILE_REPLACEMENT_RU.md": "db9c1eec28180662e49c3c473f37fcb71e0230c1b88938a339d1fda287064b3a",
+    "PHYSICAL_ADAPTER_INDEPENDENT_CHECK.json": "7f04fcf75661b82d176612b7c08ff842451c9300b65d7fe97819c1bea9fca71d",
+    "SCOPED_SOURCE_RUN_AUTOMATON.json": "6cd3ef9fa8d6586a11f324ed79d563b25bb834829b559c3b123ad95fa96a3f7b",
+    "check_b56_obstruction_gadgets.py": "97931d5c55212149d9945c3523f0aae36326b75a484fdd41a1efd74763fc31f0",
+    "check_physical_adapter_independent.py": "0787662fb15483a5815737f370bd70f4b594fc4c36a59bd3f57e4568818806e5",
+    "check_source_run_automaton.py": "a205a72920bb23ac17857d2f8dddf430e8ea446e6a2235e2d78bdaae14ecbe84"
+  },
+  "absolute_input_pins_rechecked": 6,
+  "physical_adapter_independent_initial_sizes": [
+    3,
+    4,
+    17,
+    103
+  ],
+  "physical_append_coordinates_and_old_spectators_checked": true,
+  "all_later_G_CX_only_work_is_separate_pending_construction": true,
+  "odd_SourceI_CZ_counterexample_preserved": true,
+  "new_Z_CZ_gadgets_are_ideal_only_in_B56": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

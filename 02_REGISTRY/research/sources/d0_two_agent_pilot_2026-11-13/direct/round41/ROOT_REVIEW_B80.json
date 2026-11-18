@@ -1,0 +1,20 @@
+{
+  "status": "PASS_B80_PROOF_REVIEW_AND_FULL_INTEGER_REPLAY",
+  "B_commit": "0e8642bd74dbd22d6842888849e3dad61a7f46b0",
+  "root_replay": "check_uniform_grid.py; full regenerated certificate equals stored certificate",
+  "uniform_bound_for_every_computable_target_strict_lt": "2^-20075",
+  "positive_exponent_range": "1..q",
+  "q_bit_length": 20080,
+  "continued_fraction_candidate_correctness_assumed": false,
+  "full_SO_2m_compiler_or_H1_implied_by_grid_alone": false,
+  "B_files_written": false,
+  "B80_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round80/.gitignore": "f5cd54b5791eefaf4f106b9b46f882e46cb88298510de7d6c049ef3c26dfebc8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round80/B80_UNIFORM_GOLDEN_GRID_RU.md": "2a6470a994d74a6019018bf56561394dcf7b39cb93d539fd2c632c9b5fd3fa19",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round80/UNIFORM_GOLDEN_GRID_CERTIFICATE.json": "3a73d409941cb916b36df5a2046e36499cc094fa338912a2c662a4c2a5d14ed9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round80/certify_uniform_golden_grid.py": "1fcbac37f2b607ec1d12ee53551bd85ab85ab3af1ad26f2c35a7edabc0478e6f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round80/check_uniform_grid.py": "8d7c5e4a0a0c396093834bf98c9105bf224c24778fa9ed1f3a4e569c69728ee2"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,23 @@
+{
+  "status": "LOCAL_CHECKED_RESEARCH_PROGRESS",
+  "files": {
+    "FULL_VECTOR_CONTROL_CHECK.json": "2f8c9414a5da53cf73dedae891d7cc8d7028e86db2ea8cd4ed8955141691c56e",
+    "FULL_VECTOR_CONTROL_PLAN.json": "0e813ed5d9ab8d82bd45027b211f3d975145bdeadcc314363365b391fcf878b6",
+    "FULL_VECTOR_REPAIR_RU.md": "b89a13313689bb2f39bbc76714e6ca5445bcf86bf3e4cce7732d5c4123f07d44",
+    "RESULT.json": "379e5d7221dc7aae3d4b9783a6b2928db03e60093fac31e0fd0b5a6470338142",
+    "ROOT_REVIEW_B91.json": "bd04861ee9d399db5cabd2dfe66fe73fd443f599df840fa7bcdf1dd6e58419c5",
+    "ROOT_REVIEW_B92.json": "863aba830f5af2ae789ca315e02e23ac8d4de91c1ed5f77ebcf5ee59b8a9ceaf",
+    "check_full_vector_controls.py": "f9c14e0531593d9d7da2039f226ba0482be99067480dbd70243a29decb423b46",
+    "full_vector_controls.py": "31ff35852f723b4b0cb8d04e3d46be5a0e03785fb9aa0b00f7ce140b54d46ad9"
+  },
+  "checks": [
+    "A47 exact lift, grid, grammar and conditional budgets PASS",
+    "B91 independent ideal-source obstruction/fibre/M1-M2 PASS",
+    "B92 independent grid/grammar/census/conditional finite jet PASS",
+    "Both independent receipts reproduced byte-identically by root"
+  ],
+  "new_SOURCE_and_full_price_completed": false,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

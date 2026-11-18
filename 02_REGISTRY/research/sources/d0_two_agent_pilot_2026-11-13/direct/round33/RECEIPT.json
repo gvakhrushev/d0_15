@@ -1,0 +1,20 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "RESULT.json": "094ae107f5a5178b53728f86362df31fed11721991e8e66f0771dc05d59693a8",
+    "RESULT_RU.md": "baad2879e646d73567c4ad07c2b26373a079b78d239d4d6042fe487c28068982",
+    "ROOT_REVIEW_B65.json": "8e9258719b101c54c8050a18e920cb6aab9ae50f73fca0be9793c5102ea79ee3",
+    "ROOT_REVIEW_B66.json": "96ff0286643daa206411e5605a66b36eb9fafe6f37de08930cc553344ad66f9d",
+    "SAMPLING_SOURCE_BIAS_CHECK.json": "12dfe17ab8f8dc590d20e1292812418b10e0d0b3319a21ab9b48d00b03f06112",
+    "SAMPLING_SOURCE_BIAS_RU.md": "94c859dbf7e5f1b293ac6f8a600917d89989e3d0b1af5268e4e2258dae9a2b66",
+    "check_sampling_bias.py": "43b78bf6426a3c1c8c352e962e42d58a6829bb96160d5d71fb7403f5c6c6ba61"
+  },
+  "checks": [
+    "SAMPLING_SOURCE_BIAS_CHECK.json",
+    "ROOT_REVIEW_B65.json",
+    "ROOT_REVIEW_B66.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

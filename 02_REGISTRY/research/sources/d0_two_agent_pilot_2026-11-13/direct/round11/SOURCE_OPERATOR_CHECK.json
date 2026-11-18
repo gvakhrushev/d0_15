@@ -1,0 +1,27 @@
+{
+  "status": "PASS_ORIGINAL_SOURCE_TENSOR_DAG_DIAGNOSTICS",
+  "nodes": 20402,
+  "all_independent_scalar_coordinates": 282,
+  "direct_CAR_matrix_value_error": 3.3306690738754696e-16,
+  "all_coordinate_complex_step_relative_error": 5.20358136378833e-15,
+  "normal_link_directions": 160,
+  "normal_source_error": 5.329070518200751e-15,
+  "hostile_omitted_face_detected": true,
+  "B21_actual_interior": {
+    "site": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "values_before_inverse_PF": {
+      "H_f_before_inverse_PF": 0.0,
+      "H_q_before_inverse_PF": 0.0
+    },
+    "geometry_sha256": "bedb2f51e2ae744f421315cde721848c3c7dd7b398b0a28c22f523c9f1aab43b",
+    "scope": "one true interior stencil; no halo/global completion"
+  },
+  "scope": "numeric identity/derivative diagnostics; exact full-input bound in separate rational certificate",
+  "full_H1_native_word_executed": false,
+  "GR_closed": false
+}

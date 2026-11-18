@@ -1,0 +1,54 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "ab5d0378de38149ab596f05342085d1ff7fa49ca",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/A30_COMMON_CHECKPOINT_INDEPENDENT.json",
+      "sha256": "ae7feb285f3886c143367f5ab8179dca1f1bbf4d976c55724643bc66acf443f1"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/A30_MARK_REGISTRY_INDEPENDENT.json",
+      "sha256": "6a47fc4d692cae5703bf0be904b47ad1330926e37117bf584b5de0323199c949"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/B60_ORIGINAL_MARKS_COMMON_CHECKPOINT_RU.md",
+      "sha256": "ffdf9d02317c94a1eeecb447abb7dcef6d2c679c9e5f61222f171dbe502c9165"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/CANONICAL_UNIFORM_LEGS_CHECK.json",
+      "sha256": "3aff54ffdda4e54effcf492eb3288e2da58ec57554c7f15144dc25addf5fd063"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/H3_MARKS_REORDER_AND_FRAME_CHECK.json",
+      "sha256": "baeb95e310d4362fe1bdcc0f500d2f25d53489b574872ed0e1e0fe21f6a6dcd5"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/RAW_RESOURCE_BRIDGE_CHECK.json",
+      "sha256": "c21a994fb821446077b914adbe36ba2f9d607f59c048c69fa6d587821fb2bbe9"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/audit_a30_checkpoint.py",
+      "sha256": "3a28f801dfc42836beeac18f12d8a2d22131e5bc2d4c7a4c8e3dfeb4659c8d6f"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/audit_a30_mark_registry.py",
+      "sha256": "afa7f50ad157abc7fd411f63acf1b17cd7ed44527daa507fee8ef58fe6c866dc"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/audit_h3_marks_reordering.py",
+      "sha256": "1058912d79cf3879b6af77b1402e6943521e16b1b7d939f680abda527c084467"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/audit_raw_bridge.py",
+      "sha256": "dd0b20d3f5e175d046e4e843ef3801c8c3bdf7691dcf483206bc0fc53a6b387b"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/check_canonical_uniform_legs.py",
+      "sha256": "9023f0786356cbc53084e8f4772f1d4ab1472bff01610c91881bca5fa3c91beb"
+    }
+  ],
+  "source_hashes_checked": 22,
+  "scope": "actual new source-common schedule, paid RAW frame, original leaf descriptors, prefix norm, arbitrary SAM/old legs on canonical fresh WORK; no actual reader or full all-dirty T2",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

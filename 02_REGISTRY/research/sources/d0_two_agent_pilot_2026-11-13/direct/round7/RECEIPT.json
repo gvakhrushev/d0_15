@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-11-13T16:44:40.282693+00:00",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "parent_direct_commit": "c76722239",
+  "status": "REVIEWED_FRESH_PREFIX_SOURCE_WITH_NATIVE_SCALAR_INTERFACE_AND_NODEWISE_ERROR_BOUND",
+  "direct_checks": {
+    "exact": 18,
+    "bounded_numerical": 260,
+    "warnings_as_errors": true,
+    "exit_code": 0
+  },
+  "independent_agent_commit": "da55be2dd0ec72d110d2d95ec2a4513bb6864a7f",
+  "independent_review": "B13 reviewed signed gain, common right lift and nodewise retained-CQ proof; reproduced final A checker byte-for-byte",
+  "independent_root_replays": {
+    "B12_exact": 59,
+    "B13_exact": 78,
+    "B13_finite_word_numeric": 1,
+    "B13_nodewise_numeric": 24,
+    "all_byte_equal": true,
+    "all_exit_codes": 0
+  },
+  "reviewed_proof_snapshot_sha256": "4723fb60f30ee41dcea1f793a84ea4e0f1e410e6cd1aea3c1bf7e4679c1be08c",
+  "post_review_document_edits": "Incorporated completed B13 native-scalar interface and cross-review outcome; no change to signed-gain or nodewise theorem.",
+  "own_files": {
+    "CHECK_RESULT.json": "446a36c4e4cf1e239ade5b0a6982990e391f00dccb5429d5bcac1f9f92c790fb",
+    "FRESH_PREFIX_SOURCE_RU.md": "c67870c237bfcdb4f354abe6fe3f93e2b7e2bc974c434f5fc11eed3584a1f7a8",
+    "RESULT_RU.md": "8cf0c10b57f790028f41860b1677878e884f5c1f2138fd39bc779112c3f3bfc4",
+    "check_fresh_prefix_source.py": "00b72467102de507c8041d231a3910022fbe1831652834827e2e5b719efe1153"
+  },
+  "B_packets": {
+    "12": {
+      "CHECK_RESULT.json": "08e4a14a4a84c2b8ce35e63b217eb85f9d3d7e894dbec3a7302810c49582c839",
+      "RECEIPT.json": "1ea57838af0481ebc7da4a26b8d65a33647960f5ec5fde965377f521750115ae",
+      "ROUND12_RETAINED_HIGH_AND_OLD_RU.md": "1624463c2fbbc6d6bada3e62c017b3ef901854ef30b3cf6263f20b0ba0708b67",
+      "check_two_retained_high.py": "92786d22bb2a7436ebcf88245b1e00fcc4c3dab092fd21eb2caa7873a239140b",
+      "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    "13": {
+      "CHECK_RESULT.json": "b6c4a734fc0b4837730caa5086b9dd0efafb3582c35d6154a22a3d0c2717ef89",
+      "DIRECT_REVIEW_RESULT.json": "446a36c4e4cf1e239ade5b0a6982990e391f00dccb5429d5bcac1f9f92c790fb",
+      "NODEWISE_RESULT.json": "9537838138ac4026fbefe0f12e25010996bc94e7dcda02e8dd4d3d222ff64496",
+      "RECEIPT.json": "b3511898b1b92997410f5efb0b526658073eacc2f13ea191d95fa9567d19830b",
+      "ROUND13_SPIN_INTERFACE_AND_RECORD_TYPES_RU.md": "8afc349be3d9391c01ebda060ba6e5215b6e9f627b89f93068fa3ab09ab905cb",
+      "check_nodewise_entropy.py": "90d326b458631b22e9508175f516e43e8aa82e57ad9ee0a9849ccce4305e00ab",
+      "check_quaternion_interface.py": "aea97544e1b9ca85dd8825a9babe1449390953fb107742bd70a4eb7ae4a66931",
+      "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    }
+  },
+  "B13_source_hashes_validated": 12,
+  "owning_source_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+  "removed_premises_at_stated_scope": [
+    "common nondemolition CODE for fresh scalar binary composition",
+    "common CODE for controlled nodewise near-scalar binary entropy errors",
+    "strictly positive Info coefficient in the stated price cone with M>=2"
+  ],
+  "native_scalar_effect_interface": "derived for actual real G/CX/SourceI profile and real WORK outputs; complex ambient/future Spin rows retain their guards",
+  "original_terminal_law_preserved": "on full declared scalar true-input interface, with paid archive handoffs; exact finite native fixture independently checked",
+  "same_original_full_task": false,
+  "full_geometric_H1_execution_replayed": false,
+  "new_task_admission_proved": false,
+  "full_registered_fine_entropy_source_proved": false,
+  "full_physical_Cost_Info_binding_proved": false,
+  "GR_closed": false,
+  "publication": "local only"
+}

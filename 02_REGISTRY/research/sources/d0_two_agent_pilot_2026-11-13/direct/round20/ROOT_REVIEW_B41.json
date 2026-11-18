@@ -1,0 +1,20 @@
+{
+  "status": "PASS_CONSUMED_B41_STRUCTURE_WITH_EXACT_ORIGINAL_CONSTANTS",
+  "B41_commit": "853a9024a",
+  "B41_files_sha256": {
+    "PROPER_LINK_CHECK.json": "0110c112a0b799dd87dbf3e264a8702d6ad094a634b2fa0f2f9f0ec2024b53ae",
+    "PROPER_LINK_JULIA_RU.md": "e3b8094c2002c33e51f8cea9143823491bd4cacbdef4fd2bd5c35a853a0acdf8",
+    "check_proper_link.py": "c6db3761a1429c623b246263f2fdf45348e9603d1c99092d62ab22b695e21891",
+    "proper_link_factorization.py": "d0a39f98504a5a627aaad7c4ebe27bb3eb642e11abe28ed5707b82bb6ce844a3"
+  },
+  "exact_constants_receipt_sha256": "7d04fcb0decc81dca21a4678813dde6b922ea7314b8b3f9c99ef515ccf5f1a8c",
+  "reviewer_source_sha256": "2f550471ce55246357819524f51b1dbe0e5c3f22f1980d421bb398c449c6b1df",
+  "root_analytic_review": "For C=LDR^T with orthogonal L,R and diagonal strict contraction D, positive-root covariance gives J(C)=diag(L,R)J(D)diag(R^T,L^T). For proper Lorentz U, exterior singular norm equals ||U||; original field bound proves both defect gaps >=115/196.",
+  "decimal_k0_metadata_replaced_by_exact_Golden_interval_bound": true,
+  "h_zero_and_interval_pivot_classification_still_required_for_compiler": true,
+  "B41_float_diagnostics_reexecuted_by_root": false,
+  "native_proper_link_angles_consumed": false,
+  "B42_actual_compiler_is_separate_pending_work": true,
+  "full_Omega_loader_compiled": false,
+  "GR_closed": false
+}

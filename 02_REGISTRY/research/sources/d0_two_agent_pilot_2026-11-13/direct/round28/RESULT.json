@@ -1,0 +1,15 @@
+{
+  "status": "REVIEWED_DISTINCT_FRESH_AUX_INPUT_AND_ACTUAL_CLOCK_LAYOUT",
+  "phase": "supporting_original_physical_Book03_application",
+  "native_word_unchanged_from_A25": true,
+  "birth_count": 10407050781,
+  "WORK_birth_count": 10407048093,
+  "physical_append_order_adapter_reviewed": true,
+  "all_frontloaded_orders_ST4_obstruction_gt": "3/100",
+  "actual_heat_derivative_nonzero_proved": false,
+  "actual_retention_K_chosen": false,
+  "G_CX_only_replacement_implemented": false,
+  "full_giant_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

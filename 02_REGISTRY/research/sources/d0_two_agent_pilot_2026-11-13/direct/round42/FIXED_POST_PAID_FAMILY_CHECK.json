@@ -1,0 +1,34 @@
+{
+  "status": "PASS_FIXED_POST_PAID_LENGTHS_FULL_CLOCK_FEEDBACK_AND_SOURCE_IDENTITY",
+  "full_small_histories_replayed": 65,
+  "exact_affine_basis_columns_checked": 224,
+  "full_small_rational_clock_fixtures": [
+    {
+      "K": 1,
+      "clock_dimension": 9,
+      "stages": 4,
+      "return": "9/25"
+    },
+    {
+      "K": 2,
+      "clock_dimension": 21,
+      "stages": 6,
+      "return": "27/125"
+    }
+  ],
+  "independent_fixed_post_derivative_planes": 6,
+  "full_clock_unitarity_and_rank_one_feedback_checked": true,
+  "same_fixed_post_in_all_small_incoming_comparisons": true,
+  "production_upper_count_not_confused_with_materialized_word": true,
+  "new_clock_coefficient": 3,
+  "late_retention_pairs": 137444,
+  "production_word_or_absolute_heat_trace_evaluated": false,
+  "full_original_H1_four_slot_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round42/check_fixed_post_paid_family.py": "88e6185a55623b54e548e84d7c8c2be126fbcfadd5cbca90198c1a80212506fb",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round42/fixed_post_paid_family.py": "63258bd4731fe47231387bb3faff93291e95886857b086e57d39d3d3ba2ace40",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round42/FIXED_POST_PAID_FAMILY_PLAN.json": "f2ddbf8037728ddad990465c1db6640127568ccc5b67e3cb5caa5c2de9d92dd6"
+  }
+}

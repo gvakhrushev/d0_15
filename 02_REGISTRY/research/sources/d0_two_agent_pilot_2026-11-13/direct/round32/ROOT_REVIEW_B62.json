@@ -1,0 +1,47 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "08a41ea2903cef4628dd45c95731bf8ba3be1238",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/B62_FINITE_SAM_ENDPOINT_COMPARISONS_RU.md",
+      "sha256": "c3fd5ef8a08e6fac75a26694cd7af8a3fbd864423f592bb76f312f74cc09e9cc"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/ENDPOINT_PRICE_BOUND_CHECK.json",
+      "sha256": "b506bc2f460f975b63dd1d47957548eb3cebba83cca9656cf3a97c3dc2fea35f"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/FINITE_SAM_ROTATIONS_INDEPENDENT.json",
+      "sha256": "7a66e16605b95d27b259495905eb9e4a9ccf965628d22431b3b6cdc7c81fdcdf"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/FINITE_SAM_ROTATION_CERTIFICATE.json",
+      "sha256": "a8b5075f6c0b6421c812c63fecac36f689a50cf3b72a822a0e7387704b471c19"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/SAME_INITIAL_ENDPOINT_SCHEDULE_CHECK.json",
+      "sha256": "4c9eda5f8081ed61a1ae9609e3d5902525fcb04c41d89092eca6303d69aa1868"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/certify_finite_sam_rotations.py",
+      "sha256": "d9f75cd0d35ab731d0304ec372f2317e663f90241a9e1e97df785d4cb25d2e14"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/check_endpoint_schedule.py",
+      "sha256": "ea5b632713fa64256ab449d027a2573a64fd9313b30b9a8ca51c8dc6b5db9f80"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/check_price_error_bounds.py",
+      "sha256": "ce47f11178c75ffb70a1d150612f42fadcff1624b838a58cd0448f72d87c0bbd"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round62/verify_sam_rotations_independent.py",
+      "sha256": "5f089828b50e1196e9e84e437d8b0cde762d1ae11280c4f0b37ed8ad29da295a"
+    }
+  ],
+  "source_hashes_checked": 8,
+  "scope": "Mechanism only: all-column identity padding and same initial layout/last gate. Demonstration t=2^-20 is not the sufficient A32 endpoint certificate.",
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_B82_PROOF_REVIEW_AND_BYTE_IDENTICAL_REPLAY",
+  "B_commit": "615a3def66bb5c952d80c0de6c2f490a9abbb765",
+  "new_consumed_result": "actual A30 B/S/C split and independent inner Q cross-kernel, with exact SAM commutation and explicit uncomputed symmetric remainder",
+  "root_extra_cut_check": "terminal frame depths 0 and 2 reject incoming pending=1; syntactic DAG leaf validation does not expand repeats",
+  "original_MG12_convention_retained": "executed outgoing V_b=P_b^T",
+  "commutant_alone_does_not_zero_independent_inner_rows": true,
+  "generic_toy_not_actual_A30_no_go": true,
+  "Q_kernel_symmetric_remainder_requires_actual_Lambda_j_or_entries": true,
+  "B82_finite_nonzero_Pf_clock_not_identified_with_A42_clock": true,
+  "full_H1_or_Cost_Info_or_GR_inferred": false,
+  "B_files_written": false,
+  "B82_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round82/B82_FOUR_SLOT_Q_KERNEL_RU.md": "9d843150bb469a3a085d482a5ff59ac2c62c0d0c633da7f1223457f289bdf2f3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round82/B82_FOUR_SLOT_SOURCE_CHECK.json": "36bd4c79cfd71e9d67c29697d890830dbd3e6d235cfb5b2c2c4890fae0ca0d1a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round82/actual_q_kernel.py": "cc278fb786724296939ed761f7173d4d7537b5e3dd7b34e01d486f2f75acfff1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round82/check_four_slot_source.py": "b52eadfa2a4e6b3de4f8b5fdbad87cbc0f4d45769e2c4856bfcd69f125800f8a"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

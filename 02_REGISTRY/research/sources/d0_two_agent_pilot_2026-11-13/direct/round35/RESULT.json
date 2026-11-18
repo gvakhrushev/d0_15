@@ -1,0 +1,15 @@
+{
+  "status": "LOCAL_INDEPENDENTLY_REVIEWED_ACTUAL_PAIR_PRICE_BINDING_GATE",
+  "parent": "Full Cost-Info to actual A32 H+J/source identification",
+  "same_full_physically_addressed_inventory": true,
+  "same_canonical_births_and_stage_dimensions": true,
+  "different_ordered_words_and_operator_prices": true,
+  "excluded_class": "Exact price functions of only addressed primitive inventory, birth sequence/marginals and stage dimensions on the actual pair",
+  "unrestricted_state_order_dependent_Cost_Info_excluded": false,
+  "actual_Info_or_extra_work_price_assigned": false,
+  "independent_audit": "B68 c51c0dc9b",
+  "next_obligation": "Derive same-history state/order-sensitive native Cost-Info binding or controlled source equivalence from the original task/record definitions, retaining all independent source equations",
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

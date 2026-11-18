@@ -1,0 +1,27 @@
+{
+  "arm": "A_directed_GR",
+  "start_utc": "2026-11-13T12:04:36+00:00",
+  "first_result_frozen_utc": "2026-11-13T12:22:10.360827+00:00",
+  "elapsed_seconds_to_freeze": 1054.36,
+  "time_budget_minutes": 30,
+  "long_tool_wait_seconds": 0,
+  "token_count": null,
+  "researchers": 1,
+  "subagents_spawned": 0,
+  "other_arm_science_read_before_freeze": false,
+  "baseline_commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "status": "FIRST_RESULT_FROZEN",
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "validation": {
+    "checker": "check_source_coverage.py",
+    "checks_passed": 61,
+    "kind": "exact rational and symbolic finite controls; not full native execution or Lean"
+  },
+  "files_sha256": {
+    "FIRST_RESULT_RU.md": "9e8713805d729abc522fa6fa3b2654546f8c33979abd51af13e544c9dc5d918b",
+    "SOURCE_COVERAGE_RU.md": "0394fec934fae44572fd7d8b547486936d642b172c7cbe638238edd6a74ab18c",
+    "check_source_coverage.py": "aa5283b880448f358acfa39a867d50ac87e905c9c5f7b86a47a1dfd54b5cb530",
+    "CHECK_RESULT.json": "0edbd4adcf42d2830232180ffae3b0d442759a6336a8bc46b2371d9b3a5fd3f5"
+  }
+}

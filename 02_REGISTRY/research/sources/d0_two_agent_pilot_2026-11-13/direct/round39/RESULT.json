@@ -1,0 +1,32 @@
+{
+  "status": "REVIEWED_COMPLETE_FINITE_POST_SAM_FAMILY_WITH_FULL_PRICE_COMPARISON_BOUNDS",
+  "phase": "native realization",
+  "parent_substitution": "A37/B74 concrete paid post-SAM U_alt family on one fully born RAW carrier with native centre and common clock",
+  "base_A38_commit": "290393b94c86594da4eee4d4402cf7fc335f16e6",
+  "independent_B76_commit": "7fd3961b55b41d4afe3251b57a89775512bbf85c",
+  "independent_B77_commit": "07849c893aebbd1d5b429eb97bc7a529971735b7",
+  "native_centre_and_all_2688_paired_directions_constructed": true,
+  "early_births": 31221149661,
+  "late_retention_pairs": 146448,
+  "complete_native_clock_and_all_mode_heat_definition_accounted": true,
+  "post_vector_error_strict_lt": "2^-6024",
+  "post_feedback_only_unit_skew_row_strict_lt": "2^-2866",
+  "full_H_plus_J_finite_comparison_error_to_reduced_feedback_strict_lt": "2^-74",
+  "corrected_2688_error_strict_lt": "2^-68",
+  "specified_covector_norm_interval": [
+    "2^-47",
+    "2^-15"
+  ],
+  "comparison_scope": "fixed h=1/4, co-moving P and its post U_alt(P); original A31 mean map",
+  "full_independent_native_Euler_rows_closed": false,
+  "original_full_task_admission_proved": false,
+  "full_Cost_Info_binding_proved": false,
+  "refining_h_to_zero_family_proved": false,
+  "production_word_expanded_or_run": false,
+  "absolute_heat_trace_evaluated": false,
+  "next_missing_application": "Independently varied post native full H+J comparisons and original task/retained-reader fibre; preserve complete physical Cost-Info obligation.",
+  "local_only": true,
+  "published": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

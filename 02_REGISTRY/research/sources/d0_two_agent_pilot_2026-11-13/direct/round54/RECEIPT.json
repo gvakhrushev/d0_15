@@ -1,0 +1,27 @@
+{
+  "status": "A54_LOCAL_REVIEWED_CHECKPOINT",
+  "artifact_sha256": {
+    "REGULAR_GLOBAL_SOURCE_CHECK.json": "68cbe8320035f65a144522acbdbd40df22bdee702e62f23d36b75ff817b72a9f",
+    "REGULAR_GLOBAL_SOURCE_PLAN.json": "99135a04be6166e699209c22fa61221e545b1ec913090915c094dc40634ce277",
+    "REGULAR_GLOBAL_SOURCE_RU.md": "c01b0d54b989883e52987c7081103f59063a231d2781901ce211532e8c123bf5",
+    "RESULT.json": "b6af767fb106d9496c548e6c4de25dca804ed4a02a37965ff09fe1bc4337c9b0",
+    "ROOT_ADDRESS_PARTITION_CHECK.json": "07cb61da284edbbd584daed4efd35ebca9b8b11986da4eb7d8d838aadc909a35",
+    "ROOT_REVIEW_B105.json": "967c4ca3af7fe20716d8962bf09ab6ea4a43eecbb9176e0b2d5b266e1f8c52b1",
+    "ROOT_REVIEW_B106.json": "50600a4c95a7ee916e7034c7dde1b3946016ae8cd228e54580077c4421315612",
+    "check_regular_global_source.py": "15f99f0d7fb85739518f060a1cf708dd9bbcf09688acab90ed0fde0e2e497607",
+    "regular_global_source.py": "420d134e6d4a01aaf47f4ddba76d301faf1bf7c64d9e3225d1d512a170e0c395",
+    "regular_source_native.py": "6e218327236d303d24c5fd292753e4bb7e5a22fdae3b3f1561e30de0fe10caa7"
+  },
+  "checks": [
+    "all 1568 source slots and field bindings, original births/helper/CODE retained",
+    "all seven complete disjoint coframe/link address partitions 1..2048",
+    "actual new 496-angle Julia and 90 coframe/CAR G/CX unit tests with literal depths",
+    "B106 independent all 1048576 group/CODE mappings, level-nine binomial depth counts, all bank/global inventory and error recomputation",
+    "B105 new actual-M field binding and exact new padding/clock formulas",
+    "B105 and B106 pinned read-only byte-identical replays",
+    "final syntax/JSON/source pins"
+  ],
+  "B105_target_and_CODE_premises_supported_on_selected_A54_fibre": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

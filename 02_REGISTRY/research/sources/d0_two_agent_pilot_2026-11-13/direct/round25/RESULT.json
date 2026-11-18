@@ -1,0 +1,34 @@
+{
+  "status": "REVIEWED_CONCRETE_NATIVE_WORD_AND_CANONICAL_SCALAR_CORNER",
+  "phase": "supporting_original_H1_physical_application",
+  "consumed_parents": [
+    "A17",
+    "A22",
+    "A24",
+    "B45",
+    "B47",
+    "B48",
+    "B49",
+    "B50",
+    "B51",
+    "B52"
+  ],
+  "removed_construction_gaps": [
+    "One shared global namespace with correct source bit order",
+    "Finite actual complete forward A and literal reverse W generator",
+    "Exact algebraic scalar corner for the declared real canonical WORK embedding"
+  ],
+  "retained_parent_obligations": [
+    "Physical birth/checkpoint and old cut admission",
+    "Original seven-bank moment/report law and marked-prefix transport",
+    "Readers/seal and true clock/work/Info",
+    "Original full physical Cost-Info first-source binding"
+  ],
+  "algebraic_scalar_corner_on_declared_embedding": true,
+  "canonical_input_error_lt": "2^-3232",
+  "compressed_effect_error_lt": "2^-3231",
+  "full_giant_word_executed": false,
+  "physical_original_H1_T6_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS_SEVEN_CAR_FRAME_CHRONOLOGY_AND_TARGETS",
+  "plan_sha256": "38b97ff499063fb43b56007728fe6201b2caa93d62ed6e3cc23a9ce9e4119280",
+  "library_sha256": "83592b07988263b453d7ac27fa7f53d7b7d98846a3d8dfd40b3e401fe095e22b",
+  "exact_constant_bank_endpoint_identity": {
+    "f": true,
+    "0": true,
+    "x+": true,
+    "x-": true
+  },
+  "actual_reflection_is_literal_compute_Z_compute_inverse": true,
+  "three_clean_predicate_wires_distinct_from_arbitrary_aux_and_all_inputs": true,
+  "full_B25_grade_matrix_comparisons": 2560,
+  "max_float_composition_difference": 2.220446049250313e-16,
+  "matrix_comparison_scope": "diagnostic of ideal anchor reflections and certified rotation matrix enclosures; actual reflection error separately bounded",
+  "nonconstant_bank_clean_predicate_error_le": "28*2^-4096",
+  "all112_copy_conservative_error_lt": "2^-4084",
+  "physical_CAR_vacuum_Fourier_prefix_proved": false,
+  "physical_birth_mark_clock_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

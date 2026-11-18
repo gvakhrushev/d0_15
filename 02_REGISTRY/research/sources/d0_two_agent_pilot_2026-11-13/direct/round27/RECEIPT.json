@@ -1,0 +1,20 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "PREPARED_SOURCE_MOMENT_LAW_RU.md": "8985c22feaaca539fb0960e6f255bdc9cecc0bff06b67a95d969a4a9810a94a8",
+    "PRODUCT_SOURCE_COMPRESSION_CHECK.json": "ac0d1c198cd3cc0d08b8057f541d4009c6ee15a5b39ac4c574fa14c9a1a9c0ca",
+    "RESULT.json": "23f28a705b0b60b405388442e6debdea875ea2e0b6dce39805840b92b7c54f2e",
+    "RESULT_RU.md": "501b3aaa9fcb20c7c1dff75429d949ea5df54375ce604ba303a29869f7f6f7f8",
+    "ROOT_REVIEW_B54.json": "a97d1d74b909c9437c8cab7404eb58f88fe6b922e09cfb2b57da51e4f6e9a86a",
+    "SCALAR_SOURCE_BOUND.json": "90f3f61ce3e209f400e73317be14f0853572bf7bfb83c76226229ee9db5e300c",
+    "product_source_compression.py": "76bdc57ecf7431693728758d243ad0565167552bd601bdc77a6622a2f7506299"
+  },
+  "checks": [
+    "PRODUCT_SOURCE_COMPRESSION_CHECK.json",
+    "ROOT_REVIEW_B54.json",
+    "SCALAR_SOURCE_BOUND.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

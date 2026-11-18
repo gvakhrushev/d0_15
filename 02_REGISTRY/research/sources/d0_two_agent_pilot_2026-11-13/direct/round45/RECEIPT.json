@@ -1,0 +1,21 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "round": "A45",
+  "independent_rounds": [
+    "B88",
+    "B89"
+  ],
+  "files_sha256": {
+    "COMPOSITE_PROCESSOR_ECHO_CHECK.json": "3cefb71533fa510bd9ffe36d0b3936e08077dc3dd525cd4be67ffe0a98e7c37a",
+    "COMPOSITE_PROCESSOR_ECHO_PLAN.json": "4c2a7de3928733707222c3de3039b7fe79d13e6f3dbba18c902a3ef436a7f21c",
+    "COMPOSITE_PROCESSOR_ECHO_RU.md": "615772180bd98506d95cc3f28619b52d33fe761076daa301044492bc4c8138bd",
+    "RESULT.json": "7248c4d64132d0547a3ae265c4d3e90852702372a6d3be0f7b32dc7bdd4516bf",
+    "ROOT_REVIEW_B88.json": "368405075fff3aba73a89ba2ebfd89bf12d2773470db6c567e22125075260b81",
+    "ROOT_REVIEW_B89.json": "177d4862da42fd4058a4ae1f95bfda87d3fe57ddef2253859b8d6aa9a1389366",
+    "check_composite_processor_echo.py": "05ab93f8828c7b2457c98be8f730a941dea30f5d3be99b1c524b922553ae136c",
+    "composite_processor_echo.py": "1f0e94edcfc4c945fe092aeb2695b681156c17571036dd89c41ec0c4656e0247"
+  },
+  "full_original_H1_Cost_Info_or_GR_closed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

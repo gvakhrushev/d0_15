@@ -1,0 +1,192 @@
+{
+  "status": "PASS_NATIVE_CHOI_ADDRESS_BELL_PREFIX",
+  "certificate_sha256": "083685c2651d9dd305abc8401309d6715ffcc08192a365014c75f22cfd2be2f5",
+  "checker_sha256": "433e3ef7da804ba13c46dfaa7bda9077459f4ec41dd8230a2371f9bb21066d72",
+  "exact_small_power_cases": [
+    {
+      "op": "H",
+      "K": 0,
+      "pattern": [],
+      "all_columns": 64,
+      "forward_leaves": 32,
+      "literal_inverse_leaves": 192
+    },
+    {
+      "op": "H",
+      "K": 1,
+      "pattern": [
+        0
+      ],
+      "all_columns": 128,
+      "forward_leaves": 50,
+      "literal_inverse_leaves": 218
+    },
+    {
+      "op": "H",
+      "K": 1,
+      "pattern": [
+        1
+      ],
+      "all_columns": 128,
+      "forward_leaves": 60,
+      "literal_inverse_leaves": 224
+    },
+    {
+      "op": "H",
+      "K": 2,
+      "pattern": [
+        0,
+        0
+      ],
+      "all_columns": 256,
+      "forward_leaves": 92,
+      "literal_inverse_leaves": 276
+    },
+    {
+      "op": "H",
+      "K": 2,
+      "pattern": [
+        0,
+        1
+      ],
+      "all_columns": 256,
+      "forward_leaves": 112,
+      "literal_inverse_leaves": 300
+    },
+    {
+      "op": "H",
+      "K": 2,
+      "pattern": [
+        1,
+        0
+      ],
+      "all_columns": 256,
+      "forward_leaves": 112,
+      "literal_inverse_leaves": 300
+    },
+    {
+      "op": "H",
+      "K": 2,
+      "pattern": [
+        1,
+        1
+      ],
+      "all_columns": 256,
+      "forward_leaves": 112,
+      "literal_inverse_leaves": 300
+    },
+    {
+      "op": "X",
+      "K": 0,
+      "pattern": [],
+      "all_columns": 64,
+      "forward_leaves": 36,
+      "literal_inverse_leaves": 236
+    },
+    {
+      "op": "X",
+      "K": 1,
+      "pattern": [
+        0
+      ],
+      "all_columns": 128,
+      "forward_leaves": 54,
+      "literal_inverse_leaves": 262
+    },
+    {
+      "op": "X",
+      "K": 1,
+      "pattern": [
+        1
+      ],
+      "all_columns": 128,
+      "forward_leaves": 64,
+      "literal_inverse_leaves": 256
+    },
+    {
+      "op": "X",
+      "K": 2,
+      "pattern": [
+        0,
+        0
+      ],
+      "all_columns": 256,
+      "forward_leaves": 96,
+      "literal_inverse_leaves": 320
+    },
+    {
+      "op": "X",
+      "K": 2,
+      "pattern": [
+        0,
+        1
+      ],
+      "all_columns": 256,
+      "forward_leaves": 116,
+      "literal_inverse_leaves": 332
+    },
+    {
+      "op": "X",
+      "K": 2,
+      "pattern": [
+        1,
+        0
+      ],
+      "all_columns": 256,
+      "forward_leaves": 116,
+      "literal_inverse_leaves": 332
+    },
+    {
+      "op": "X",
+      "K": 2,
+      "pattern": [
+        1,
+        1
+      ],
+      "all_columns": 256,
+      "forward_leaves": 116,
+      "literal_inverse_leaves": 332
+    },
+    {
+      "op": "address_rotation",
+      "K": 0,
+      "pattern": [],
+      "all_columns": 64,
+      "forward_leaves": 2,
+      "literal_inverse_leaves": 22
+    },
+    {
+      "op": "address_rotation",
+      "K": 1,
+      "pattern": [
+        0
+      ],
+      "all_columns": 128,
+      "forward_leaves": 4,
+      "literal_inverse_leaves": 24
+    },
+    {
+      "op": "address_rotation",
+      "K": 1,
+      "pattern": [
+        1
+      ],
+      "all_columns": 128,
+      "forward_leaves": 14,
+      "literal_inverse_leaves": 36
+    }
+  ],
+  "all_exact_columns": 3008,
+  "all_exact_literal_inverse_cases": 3008,
+  "actual_large_DAG_syntactic_leaves": 2610,
+  "actual_SourceI_spin": "diag(J,-J)",
+  "uniform_prefix_error_lt": "2^-4091",
+  "private_clean_work": 0,
+  "arbitrary_aux_port_spin_and_external_entanglement": true,
+  "padded_addresses_in_ideal_preparation_exact_zero": true,
+  "full_huge_word_expanded": false,
+  "Julia_SELECT_compiled": false,
+  "full_Omega_preparation_compiled": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

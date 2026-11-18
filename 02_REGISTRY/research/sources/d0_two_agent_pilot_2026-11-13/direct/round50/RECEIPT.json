@@ -1,0 +1,25 @@
+{
+  "status": "LOCAL_CHECKED_RESEARCH_PROGRESS",
+  "files": {
+    "FOUR_INDEPENDENT_PRICE_ROWS_RU.md": "6192a11cb694e7115a41817905ea5b4a96188862a0cb89d4e919f026a46a4c38",
+    "INDEPENDENT_PRICE_ROWS_CHECK.json": "0a4e908a24b8b855efb8335e43fa27dbcc76441844fcd5542bafa12f3a125528",
+    "INDEPENDENT_PRICE_ROWS_PLAN.json": "cd65760550893d93228b07cab613098c9ea7b9692c189784a1d7bafd0a346229",
+    "RESULT.json": "e6f9b794559e556db0d4447ff8ad5deb307dde502a56da278c21c1549d18ae67",
+    "ROOT_REVIEW_B97.json": "f952abf69f75fd4c5e8fd141251e7a5e2dfa7032fd186b99086bb2a532517592",
+    "ROOT_REVIEW_B98.json": "eef38811da851b126282b2329e527125fb8bbf34d10efd45a191bb47c91e9ba7",
+    "check_independent_price_rows.py": "a53943fddca840bf0559de8c5fce66f43a6d3b93f617e29a358cc4bc9cb9f555",
+    "independent_price_rows.py": "d3aaec93f6206d28c8d527ad4bbc3001d4debd884770cffd474960a2697e5dae"
+  },
+  "checks": [
+    "A50 exact before-post orientation, nonsymmetric return and hostile examples PASS",
+    "A50 new affine middle support and exact rational row/norm budgets PASS",
+    "B97 root replay: third derivative and actual weighted Pf, byte-identical PASS",
+    "B98 root replay: split/transducer, full skew algebra, full-clock Q swap/mark negative, independent row budgets, byte-identical PASS",
+    "Final Python syntax, JSON and source-pin checks PASS"
+  ],
+  "source_fibre_and_norm_scope_preserved": true,
+  "production_word_executed": false,
+  "full_original_mark_or_physical_Cost_Info_closed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

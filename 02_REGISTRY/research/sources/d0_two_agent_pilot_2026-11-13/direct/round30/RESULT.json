@@ -1,0 +1,23 @@
+{
+  "status": "LOCAL_REVIEWED_COMMON_ORIGINAL_SOURCE_RAW_MARKS",
+  "parent": "H.1/H.5 original geometric source marks for A29 fixed candidate",
+  "new_schedule_all_sources_before_REPORT": true,
+  "paid_RAW_frame_wire_count": 29848,
+  "source_slots": 1372,
+  "original_field_leaf_bindings": 72192,
+  "canonical_prefix_mark_error_per_unit_norm_lt": "2^-3231",
+  "individual_native_field_mark_error_lt": {
+    "u": "2^-3215",
+    "U": "2^-3214",
+    "Psi": "2^-3223"
+  },
+  "endpoint_compressed_error_lt": "2^-3231",
+  "source_scalar_gt": "2/3",
+  "independent_B60_review": "ab5d0378de38149ab596f05342085d1ff7fa49ca",
+  "full_dirty_column_T2": false,
+  "physical_reader_or_record": false,
+  "next_obligation": "consume original decoded mean geometry and corrected preparation lift, then full original source with physical cut/clock/price",
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

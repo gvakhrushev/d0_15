@@ -1,0 +1,192 @@
+{
+  "status": "PASS",
+  "exact_checks": 5,
+  "numerical_diagnostics": 28,
+  "checks": [
+    {
+      "name": "actual SAM block determinant",
+      "kind": "exact"
+    },
+    {
+      "name": "actual SAM block trace",
+      "kind": "exact"
+    },
+    {
+      "name": "variance derivative positive square",
+      "kind": "exact"
+    },
+    {
+      "name": "optimized variance derivative",
+      "kind": "exact"
+    },
+    {
+      "name": "full cold trace retains second moment",
+      "kind": "exact"
+    },
+    {
+      "name": "word 0, spread 0.0: full complex SAM spectrum",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.0: stationary backward row",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.0: quadratic-spread value bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.0: marked price improvement bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.01: full complex SAM spectrum",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.01: stationary backward row",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.01: quadratic-spread value bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.01: marked price improvement bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.01: cold SAM map is not full branch isometry",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.08: full complex SAM spectrum",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.08: stationary backward row",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.08: quadratic-spread value bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.08: marked price improvement bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 0, spread 0.08: cold SAM map is not full branch isometry",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.0: full complex SAM spectrum",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.0: stationary backward row",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.0: quadratic-spread value bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.0: marked price improvement bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.01: full complex SAM spectrum",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.01: stationary backward row",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.01: quadratic-spread value bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.01: marked price improvement bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.01: cold SAM map is not full branch isometry",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.08: full complex SAM spectrum",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.08: stationary backward row",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.08: quadratic-spread value bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.08: marked price improvement bound",
+      "kind": "numerical"
+    },
+    {
+      "name": "word 1, spread 0.08: cold SAM map is not full branch isometry",
+      "kind": "numerical"
+    }
+  ],
+  "diagnostics": [
+    {
+      "word": 0,
+      "spread": 0.0,
+      "variance": 1.1102230246251565e-16,
+      "price_improvement": 0.0,
+      "bound": 1.4114814610653352e-19
+    },
+    {
+      "word": 0,
+      "spread": 0.01,
+      "variance": 4.1269167309954113e-05,
+      "price_improvement": 5.2469458655707056e-08,
+      "bound": 5.2518134323250865e-08
+    },
+    {
+      "word": 0,
+      "spread": 0.08,
+      "variance": 0.0038581540588895624,
+      "price_improvement": 4.928300574521186e-06,
+      "bound": 4.932953440331809e-06
+    },
+    {
+      "word": 1,
+      "spread": 0.0,
+      "variance": 0.0,
+      "price_improvement": 0.0,
+      "bound": 0.0
+    },
+    {
+      "word": 1,
+      "spread": 0.01,
+      "variance": 4.776304624620753e-05,
+      "price_improvement": 6.521709696852218e-08,
+      "bound": 6.527551936495198e-08
+    },
+    {
+      "word": 1,
+      "spread": 0.08,
+      "variance": 0.002961239026002538,
+      "price_improvement": 4.042647486037009e-06,
+      "bound": 4.046258661724145e-06
+    }
+  ],
+  "proof_sha256": "0592b5c1996faca78bcec57d40ada65f7af19fdb38156f8a4d7d7367265ed825",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "scope": {
+    "fixed_core_mathematical_SAM_stationarity": true,
+    "full_native_fibre_admission": false,
+    "old_history_replaced_by_identity": false,
+    "Cost_Info_binding": false,
+    "GR_closed": false
+  }
+}

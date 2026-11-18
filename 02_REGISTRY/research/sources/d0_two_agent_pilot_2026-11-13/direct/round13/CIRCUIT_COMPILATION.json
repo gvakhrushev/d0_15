@@ -1,0 +1,56 @@
+{
+  "status": "EXPLICIT_FINITE_X_CX_CCX_SELECTOR_CIRCUIT_GRAMMARS",
+  "circuits": {
+    "INTERNAL_SELECTOR_PALETTE.json": {
+      "circuit_file": "INTERNAL_SELECTOR_CIRCUIT.json",
+      "wire_count": 2768,
+      "terminal_gate_counts": {
+        "CCX": 1089479,
+        "CX": 1089222,
+        "X": 478828
+      },
+      "input_palette_sha256": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd"
+    },
+    "TOP_SOURCE_SELECTOR_PALETTE.json": {
+      "circuit_file": "TOP_SOURCE_SELECTOR_CIRCUIT.json",
+      "wire_count": 3185,
+      "terminal_gate_counts": {
+        "CCX": 19454976,
+        "CX": 19440642,
+        "X": 3478720
+      },
+      "input_palette_sha256": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac"
+    },
+    "TEN_SIGN_REPORT_PALETTE.json": {
+      "circuit_file": "TEN_SIGN_REPORT_CIRCUIT.json",
+      "wire_count": 229,
+      "terminal_gate_counts": {
+        "CCX": 3398086,
+        "CX": 3323278,
+        "X": 691540
+      },
+      "input_palette_sha256": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6"
+    }
+  },
+  "output_sha256": {
+    "INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5"
+  },
+  "decoder_label_routing_counts_per_report": {
+    "CCX": 9403481772,
+    "CX": 9400485374,
+    "X": 3776997052
+  },
+  "counts_scope": "Only fixed decoder copies and first-success classical labels, conditional on supplied palette-index controls and computational-zero work.",
+  "full_word_iterator": "reversible_selectors.selector_word(plan), each yielded gate is X/CX/CCX with integer wire indices; no data-dependent Python branch",
+  "full_flat_gate_stream_materialized": false,
+  "all_grammar_rows_emitted": true,
+  "native_gate_word": false,
+  "source_DAG_stack_interpreter_compiled": false,
+  "fair_quantum_payload_router_compiled": false,
+  "full_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,25 @@
+{
+  "checked_utc_date": "2026-11-13",
+  "retrieval": "GitHub connector; read-only",
+  "pr334": {
+    "url": "https://github.com/gvakhrushev/d0_15/pull/334",
+    "title": "Compose the full Einstein source and retain the physical price binding gate",
+    "state": "open",
+    "draft": true,
+    "head": "dc411daf01f697ec85dd22f28bfe124171796645",
+    "base": "258a5f65a5ba24af3476e7d8efe98448acf46914",
+    "updated_at": "2026-11-06T13:01:55Z"
+  },
+  "main": {
+    "head": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54"
+  },
+  "pr402": {
+    "url": "https://github.com/gvakhrushev/d0_15/pull/402",
+    "title": "Formalize and refactor D0 proof architecture",
+    "scope_excerpt": [
+      "### 6 November · validated noisy H.1 physical-price comparison",
+      "[The two-record comparison and physical ledger](https://github.com/gvakhrushev/d0_15/blob/a358e91e764655b16082bf7e6161a79df96a24a6/02_REGISTRY/research/sources/d0_validated_parry_price_2026-11-06/README.md) consume #334 at `191eace4a`. On the same three positive validated outcomes, joint classical surprisal makes the Born-weighted two-token scalar moment constant, while the complete parsed mean has field slope strictly between 5/4 and 4/3 at the original centre. Lean proves the fixed-support identity and the full negative-log price derivative for moving tariffs. Physical Book03 edge cost, vertex Info, work and memory still have to produce a full dual source at the actual gain and right lift. The scoped terminal is withdrawn and `GR_closed=false`.",
+      "Latest integrated checkpoint: `a84b870bb`. Concurrent work on the same PR was merged with both histories and implementations preserved."
+    ]
+  }
+}

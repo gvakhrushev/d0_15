@@ -1,0 +1,42 @@
+{
+  "status": "PASS_CONSUMED_INDEPENDENT_B44_COMPLETE_LOADER_AUDIT",
+  "B44_commit": "b5ab44801de100c24b8698cd2de461185d895ceb",
+  "checkpoint_sha256": "80573d36b80ec05cb89a664da9090217f113b3332dcf6d51f62b8dd0c5086f6f",
+  "B44_files_sha256": {
+    "A21_ACTUAL_DEPTH_SAMPLES.json": "081e0606b73c0afd75798222c38c76ca4653fe80758f281e4667d76392301a80",
+    "A21_INDEPENDENT_INTEGRATION_CHECK.json": "bbc3b4ea4e550d0f7b8bab471406d24aeae65f2bb2bdad79a50f0dec12fd8075",
+    "A21_INDEPENDENT_INTEGRATION_RU.md": "a270fca44ba149e07d27b9ce559c43d11cc38e5f726b250b1e78112c8991adfb",
+    "A21_LITERAL_DEPTH_CHECK.json": "f49da51dda1cdba25a3876b7974c20f5e3941c09b755e47980af630b5269284f",
+    "A21_NAMESPACE_CONTROL_CHECK.json": "daacf261eed77d31479af3164a43ecdc0f63254a3f471d12ad76c42b900a4b37",
+    "B44_CHECKPOINT.json": "80573d36b80ec05cb89a664da9090217f113b3332dcf6d51f62b8dd0c5086f6f",
+    "audit_control_namespace.py": "5e10644e4beb8a6ca57eef2cdff2556d534eb295138aabaef57f5356e3221cf1",
+    "audit_loader_integration.py": "5ffc632ea0cd26a9e8385f00aba3ad08dcf9d49b8610042ebe2d5658f944fbdb",
+    "build_checkpoint.py": "28814daa8d95d28942fe9e222fad6339f63f5208a0f75942daedbcf0a0a950f6",
+    "check_actual_stage_depths.py": "28b2430e953b0bfdb71fc942881e13cb29a0e2c11cea0f734cfb81a846a006df",
+    "check_provider_literal_depths.py": "cd3dbc3f76d95736c8d67f5bd97ab4699c678db421c64193b93effa00726466e"
+  },
+  "checks": {
+    "A21_ACTUAL_DEPTH_SAMPLES.json": {
+      "status": "PASS_A21_ACTUAL_GIANT_DAG_DEPTH_SAMPLES",
+      "sha256": "081e0606b73c0afd75798222c38c76ca4653fe80758f281e4667d76392301a80"
+    },
+    "A21_INDEPENDENT_INTEGRATION_CHECK.json": {
+      "status": "PASS_INDEPENDENT_A21_COVERAGE_NAMESPACE_COUNTS_AND_ERRORS",
+      "sha256": "bbc3b4ea4e550d0f7b8bab471406d24aeae65f2bb2bdad79a50f0dec12fd8075"
+    },
+    "A21_LITERAL_DEPTH_CHECK.json": {
+      "status": "PASS_INDEPENDENT_A21_LITERAL_PROVIDER_AND_HALF_DEPTHS",
+      "sha256": "f49da51dda1cdba25a3876b7974c20f5e3941c09b755e47980af630b5269284f"
+    },
+    "A21_NAMESPACE_CONTROL_CHECK.json": {
+      "status": "PASS_A21_ALL_SELECT_READ_ONLY_AND_NAMESPACE_BINDINGS",
+      "sha256": "daacf261eed77d31479af3164a43ecdc0f63254a3f471d12ad76c42b900a4b37"
+    }
+  },
+  "A21_source_and_plan_still_match_reviewed_snapshot": true,
+  "root_assessment": "Complete controlled Omega and B39 concrete provider integration accepted at stated norm/isometry scope;45 outer zeros apply only to selected A13 comparator construction, not a universal lower bound.",
+  "B44_replays_reexecuted_by_root": false,
+  "outer_B35_reflection_compiled": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

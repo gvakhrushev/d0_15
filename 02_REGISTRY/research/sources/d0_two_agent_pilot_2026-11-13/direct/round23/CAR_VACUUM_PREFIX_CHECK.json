@@ -1,0 +1,59 @@
+{
+  "status": "PASS_ORIGINAL_CAR_VACUUM_FOURIER_NATIVE_PREFIX",
+  "plan_sha256": "ec32940f9837ff4ef87aece95fcace4db30ee9ee43b2e03139e8a3b9bf3bf826",
+  "checker_sha256": "ff0cce29d8d683cc513edf5c13f626fb42907b6c7c5737b33307a25742124ade",
+  "original_site_pair_quadrants_checked": 16384,
+  "quadrant_counts": {
+    "0": 4096,
+    "1": 4096,
+    "2": 4096,
+    "3": 4096
+  },
+  "exact_Fourier_Gram": "F^T F=128I",
+  "exact_internal_SITE_probability": "1/256",
+  "exact_RIGHT_Gram": "I/128",
+  "all19_bit_ideal_output_amplitudes_checked": 524288,
+  "ideal_state_diagnostic_max_error": 1.734723475976807e-18,
+  "native_phase_independent_precision": 8448,
+  "actual_phase_power_checks": [
+    {
+      "coefficient": 1,
+      "independent_error_le": "1*2^-3264"
+    },
+    {
+      "coefficient": 2,
+      "independent_error_le": "2*2^-3264"
+    },
+    {
+      "coefficient": 3,
+      "independent_error_le": "3*2^-3264"
+    }
+  ],
+  "actual_compact_native_blocks_and_literal_inverses_checked": 40742,
+  "huge_repeats_expanded": false,
+  "literal_toy_depth_checks": [
+    {
+      "inverse_depth": 0,
+      "literal_primitive_leaves_equal": 3821
+    },
+    {
+      "inverse_depth": 1,
+      "literal_primitive_leaves_equal": 8151
+    },
+    {
+      "inverse_depth": 2,
+      "literal_primitive_leaves_equal": 17091
+    },
+    {
+      "inverse_depth": 3,
+      "literal_primitive_leaves_equal": 43911
+    }
+  ],
+  "SAM_and_unknown_oldRIGHT_untouched_by_every_primitive": true,
+  "extra_clean_work": 0,
+  "operator_error_to_declared_extension_lt": "2^-3259",
+  "all112_prefix_error_lt": "2^-3252",
+  "marked_original_prefix_equivalence_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

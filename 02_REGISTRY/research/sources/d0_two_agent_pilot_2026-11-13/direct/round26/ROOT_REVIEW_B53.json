@@ -1,0 +1,26 @@
+{
+  "status": "CONSUMED_INDEPENDENT_DECLARED_READY_AND_GAIN_REVIEW",
+  "B53_commit": "d0f6a9687fe54ed998e0af83ee10b4a7418abd9d",
+  "pinned_files_sha256": {
+    "B53_READY_GAIN_INDEPENDENT_RU.md": "915d56ddb6fa658c3f14c6a0953e425be2c3691143923ad95ec5a9c08e5e32bc",
+    "IDEAL_READY_EFFECT_STRUCTURE_CHECK.json": "e03ece67746e67404bc440cfedb5337f5de71678ba7139f517555ad697bf9bc6",
+    "READY_GAIN_INTEGER_INDEPENDENT_CHECK.json": "bb8181d07b0eb1feb30ae326a766868c5d20b5e10078302c49aa0fd26911c6b0",
+    "READY_NATIVE_APPROX_INTERVAL.json": "e60604a6d11004ca119270feb6a7696916b7b6d8f235f15794ff00d0930c0cf1",
+    "audit_ready_effect_structure.py": "3a61fb591f1ee5086c34c59bd3809b2672047f831c8963bae16b91d7ba52bbe3",
+    "bound_actual_ready_probability.py": "249288acaeb9ad645492e86eca4aec81377a4e24e7298684c2fafab724e525c5",
+    "certify_ready_gain_independent.py": "7df732ed0bad05470e628d1cf3e0376782b437eb214ecbff3514a5287ede9e38"
+  },
+  "absolute_input_pins_rechecked": 23,
+  "exact_Qp_palette_partitions_checked": 2585,
+  "independent_outward_integer_interval_bits": 1536,
+  "independent_visibility_method": "Chebyshev T_512(2p-1)",
+  "alpha_for_declared_full_ideal_reporter_gt": "1/2",
+  "joint_ideal_READY_alpha7_does_not_require_product_source_states": true,
+  "native_READY_effect_distance_from_alpha_I_lt": "2^-4060 on canonical fresh report resources and arbitrary external input",
+  "actual_native_ready_field_independence_claimed": false,
+  "conditional_native_error_physical_unit_lt": "2^-37",
+  "original_seven_bank_moment_report_identification_proved_here": false,
+  "root_reexecuted_independent_scripts": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

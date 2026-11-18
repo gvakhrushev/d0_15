@@ -14,6 +14,11 @@ GitHub PRs hold durable work; `manifest.json` is the queue, not a live dashboard
 Scientific acceptance and use in the parent argument are separate from a
 passing check.
 
+The [four-agent Cost−Info pilot](../02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/README.md)
+tracks source reconstruction on a shared history, clock and preparation effects,
+and independent tests of equation equivalence. Its linked index records the
+evidence, unresolved premises and a reproducible check for each direction.
+
 Every handoff carries the [shared prospective-minimality focus and closure roadmap](../02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#prospective-minimality-and-physical-execution).
 The native front derives the complete Cost-Info/continuation law and why
 continuation is required or favoured; the existing `optimal` premise and

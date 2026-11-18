@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ROOT_B113_PINNED_READ_ONLY_BYTE_IDENTICAL_REPLAY",
+  "commit": "0ba8adb461480289b1485f6cb7edd622270b97e5",
+  "all_Git_blobs_and_source_pins_verified": true,
+  "owner_writes_suppressed": [
+    "B113_A57_AUDIT_CHECK.json"
+  ],
+  "artifact_sha256": {
+    "B113_A57_AUDIT_CHECK.json": "ba291ba40cc92bd45dae2f74042afde7a28cce291e6868060cf3c82ac884121c",
+    "B113_A57_INDEPENDENT_REVIEW_RU.md": "ac38875ae1d81a03aff4d310707fc03741301d1bf7b53c2805a352993cb3eae7",
+    "audit_full_plane_family.py": "d289b8afd4140411bce841792eb26476ba2d8e6a65d676046d3c0ad79a9cc2f1"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

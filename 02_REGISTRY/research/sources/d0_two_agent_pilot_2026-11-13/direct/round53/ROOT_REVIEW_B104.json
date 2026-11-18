@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ROOT_B104_PINNED_READ_ONLY_BYTE_IDENTICAL_REPLAY",
+  "B104_commit": "1f615b707290ba6dc15c20a71f1c0f9bfe8f9e0a",
+  "all_Git_blobs_and_input_hashes_verified": true,
+  "owner_writes_suppressed": [
+    "B104_A53_AUDIT_CHECK.json"
+  ],
+  "scientific_scope": "full A53 box and coordinate mapping, grid edge cases and exact resource bounds; selected full-column diagnostics; no global SOURCE or physical price closure",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

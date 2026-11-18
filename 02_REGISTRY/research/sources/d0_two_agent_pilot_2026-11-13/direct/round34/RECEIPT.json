@@ -1,0 +1,18 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "FULL_SAMPLING_SOURCE_BOUND.json": "d520cfa36f0972bf972a7aaccc8ebcc8c35dc42a11c9f6eccc76b87d753d4026",
+    "FULL_STRUCTURED_SOURCE_BOUND_RU.md": "b94b366673a20613039d22c0ca1858ea774f354d259ba35b60698f07e10f6527",
+    "RESULT.json": "1ee17b6c0a5d919498aefbf887da0f18676acb955c1f940d0e7f7f8777c9af0e",
+    "RESULT_RU.md": "819eb6d0fd558d95645f04af340a15af313933a634a690d46f9f520ce0dd4284",
+    "ROOT_REVIEW_B67.json": "3c90731d52aef7365f8f79fcf33ce8c34b3afa8891ee82fd20c99c77151169e2",
+    "check_full_sampling_bound.py": "6e0f36706e4e323aaed2390ae637d6dd8f08ba6b3231481d7366c3b5d51056b3"
+  },
+  "checks": [
+    "FULL_SAMPLING_SOURCE_BOUND.json",
+    "ROOT_REVIEW_B67.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

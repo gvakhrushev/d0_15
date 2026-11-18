@@ -1,0 +1,22 @@
+{
+  "d0_so3_sk_compiler_20261026.py": {
+    "sha256": "6c49a4a355cd811dcdeb36d4f0d79652f6eacf7f1b431b71bc7bf191d500ec54",
+    "bytes": 19967,
+    "source": "frozen file in main owning source"
+  },
+  "d0_controlled_recorder_interval_20261026.py": {
+    "sha256": "ff1978fde37379230cdfe3e3707bddaabf09f69ceb56a679fbaf3140acfbc9a5",
+    "bytes": 12132,
+    "source": "frozen file in main owning source"
+  },
+  "d0_native_execution_domain_2026-10-24/native_execution.py": {
+    "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "bytes": 17833,
+    "source": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+  },
+  "d0_native_readiness_amplification_2026-10-24/native_phase.py": {
+    "sha256": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d",
+    "bytes": 11187,
+    "source": "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py"
+  }
+}

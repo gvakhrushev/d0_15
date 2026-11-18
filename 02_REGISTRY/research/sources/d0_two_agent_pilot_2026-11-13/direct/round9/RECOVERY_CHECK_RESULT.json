@@ -1,0 +1,43 @@
+{
+  "status": "PASS_CONDITIONAL_FULL_ARCHIVE_RECOVERY_SOURCE",
+  "checks": 983,
+  "effective_born_masses": [
+    "p^8+p^12",
+    "p^12"
+  ],
+  "fine_tail_optimum": "0.12732200375003505059847105521145396",
+  "coarse_polar_threshold": "0.11294200177633239238874944720542556",
+  "ell_min": "0.34503004226815790778541835127101258",
+  "ell_max": "0.47403260536130631452373356026486154",
+  "f_at_lower": "0.15722212994120587357031861527152835",
+  "f_at_half": "0.14984088650300570377940324964702963",
+  "max_complex_operator_defect": -0.008189150673292999,
+  "smallest_random_J_gap": 0.007771354514417739,
+  "actual_gain_diagnostics": [
+    {
+      "M": 1,
+      "Gamma": "0.00000000622713091499741226624994509041",
+      "old_scalar_row_over_gain": "14.4979921665530977724243440556"
+    },
+    {
+      "M": 2,
+      "Gamma": "2.94749694499385909533299584595e-10",
+      "old_scalar_row_over_gain": "7.2489960832765488862121720278"
+    },
+    {
+      "M": 5,
+      "Gamma": "9.76786114518674268855526712913e-15",
+      "old_scalar_row_over_gain": "2.89959843331061955448486881112"
+    },
+    {
+      "M": 20,
+      "Gamma": "1.59915291126215601189123161561e-38",
+      "old_scalar_row_over_gain": "0.72489960832765488862121720278"
+    }
+  ],
+  "extra_parsed_CQ_tail_row": "(1-q)*(1-4*a); it vanishes only at a=1/4",
+  "native_full_recovery_word_constructed": false,
+  "all_required_reader_transports_proved": false,
+  "physical_Cost_Info_binding": false,
+  "GR_closed": false
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ROOT_B98_FOUR_BYTE_IDENTICAL_REPLAYS",
+  "B98_commit": "b229e279c28f40901c2fd4deda411debfb273ea0",
+  "checkpoint_sha256": "a378d4a7c36bd96bf89583b7a3604551628e2f3940c4f544bef259f999545cea",
+  "all_A50_and_B98_pins_verified": true,
+  "B98_artifacts_equal_pinned_git": true,
+  "owner_writes_suppressed": [
+    "SPLIT_INSERTION_CHECK.json",
+    "KERNEL_AND_PB_CHECK.json",
+    "NONSYMMETRIC_CLOCK_FIXTURE_CHECK.json",
+    "INDEPENDENT_ROW_BOUNDS_CHECK.json"
+  ],
+  "replayed": [
+    "audit_split_and_transducer.py",
+    "check_kernel_and_pb.py",
+    "check_nonsymmetric_and_clock.py",
+    "audit_price_bounds.py"
+  ],
+  "all_four_rows_Euclidean_bound_lt": "2^-102",
+  "production_word_or_target_evaluated": false,
+  "original_Dnu_or_Vh_or_Cost_Info_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

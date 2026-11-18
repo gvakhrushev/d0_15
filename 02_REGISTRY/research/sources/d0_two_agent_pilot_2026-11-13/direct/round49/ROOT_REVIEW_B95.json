@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ROOT_B95_ALL_THREE_BYTE_IDENTICAL_REPLAYS",
+  "checkpoint_sha256": "2d8243540e29c7926efec6f97d50d8b1a104b413abc9ba5c2090402077b89a19",
+  "all_pins_verified": true,
+  "owner_writes_suppressed": [
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round95/FOUR_SLOT_CONDITIONAL_CHECK.json",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round95/QUADRATIC_LIFT_CHECK.json",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round95/FOUR_SLOT_FIXTURE_CHECK.json"
+  ],
+  "B95_clock_upper_not_actual_A49_claim": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

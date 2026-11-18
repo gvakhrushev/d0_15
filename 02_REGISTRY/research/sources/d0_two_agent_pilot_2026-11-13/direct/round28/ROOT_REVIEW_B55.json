@@ -1,0 +1,23 @@
+{
+  "status": "CONSUMED_INDEPENDENT_BIRTH_CLOCK_AND_HEAT_GATE_REVIEW",
+  "B55_commit": "496d77ea751ad7f6862120a58ca300ccec5aa2e6",
+  "pinned_files_sha256": {
+    "A28_INDEPENDENT_CHECK.json": "5f887c8fad97f67e99144e055f2b2d74c62e6667a09453add93cb41884ba5d3e",
+    "B55_CLOCK_PHYSICAL_GATE_RU.md": "814f77322dfb65db82d7a6b8dae77778f70966bc2a2f167e53dd696e7fffe682",
+    "CONDITIONAL_HEAT_ARITHMETIC.json": "7068f4c6b665589485b6e75de17fd29c039a89964dbc8d8433f5c4894c611d37",
+    "FRONTLOADED_PORT_ST4_OBSTRUCTION.json": "03ab57714b744ef3ce48876f57c8189e27c0d2b81c8ded2081975da650f10ec2",
+    "check_a28_independent.py": "a6a6fa7cf42ff960b624a6ce60883f260ec478d23fe1c0807c25a6f329bec87f",
+    "check_frontloaded_birth_layer.py": "7ff52a636f2141f692f373fdaa976fbbe2aacabf04d1eca7f8f294e0dc2f6823",
+    "check_retention_heat_bound.py": "860896766320e3a54a8f0a60c0b62fbb1596129c08eaa8583afd95b86401fa73"
+  },
+  "absolute_input_pins_rechecked": 10,
+  "A28_logical_birth_clock_independently_checked": true,
+  "later_physical_wire_adapter_has_root_check_only_here": true,
+  "all_frontloaded_birth_orders_ST4_obstruction_gt": "3/100",
+  "nonzero_heat_derivative_claimed": false,
+  "original_R11_retention_bound_consumed_with_actual_w": true,
+  "actual_retention_K_selected": false,
+  "root_reexecuted_independent_scripts": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,606 @@
+{
+  "status": "PASS_EXACT_NATIVE_CZ_ALL_COLUMNS_WITH_UNKNOWN_SPIN",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "examples": [
+    {
+      "control": 0,
+      "target": 1,
+      "port": 1,
+      "spin": [
+        2,
+        3
+      ],
+      "all_columns_exact": 16,
+      "inventory": {
+        "CX": 8,
+        "SourceI": 5
+      },
+      "word": {
+        "schema": "d0.native-execution/1",
+        "qubits": 4,
+        "blank_wires": [],
+        "old_right": [],
+        "gates": [
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              0
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              0
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          }
+        ],
+        "profile": "G_CX_SOURCE_I",
+        "source_port": 1,
+        "source_spin": [
+          2,
+          3
+        ],
+        "report_bits": []
+      }
+    },
+    {
+      "control": 1,
+      "target": 0,
+      "port": 1,
+      "spin": [
+        2,
+        3
+      ],
+      "all_columns_exact": 16,
+      "inventory": {
+        "CX": 8,
+        "SourceI": 5
+      },
+      "word": {
+        "schema": "d0.native-execution/1",
+        "qubits": 4,
+        "blank_wires": [],
+        "old_right": [],
+        "gates": [
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              0
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              0
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              1
+            ]
+          }
+        ],
+        "profile": "G_CX_SOURCE_I",
+        "source_port": 1,
+        "source_spin": [
+          2,
+          3
+        ],
+        "report_bits": []
+      }
+    },
+    {
+      "control": 0,
+      "target": 1,
+      "port": 2,
+      "spin": [
+        3,
+        4
+      ],
+      "all_columns_exact": 32,
+      "inventory": {
+        "CX": 14,
+        "SourceI": 5
+      },
+      "word": {
+        "schema": "d0.native-execution/1",
+        "qubits": 5,
+        "blank_wires": [],
+        "old_right": [],
+        "gates": [
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              2,
+              1
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              2,
+              0
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              2,
+              0
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              2,
+              1
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          }
+        ],
+        "profile": "G_CX_SOURCE_I",
+        "source_port": 2,
+        "source_spin": [
+          3,
+          4
+        ],
+        "report_bits": []
+      }
+    },
+    {
+      "control": 1,
+      "target": 0,
+      "port": 2,
+      "spin": [
+        3,
+        4
+      ],
+      "all_columns_exact": 32,
+      "inventory": {
+        "CX": 14,
+        "SourceI": 5
+      },
+      "word": {
+        "schema": "d0.native-execution/1",
+        "qubits": 5,
+        "blank_wires": [],
+        "old_right": [],
+        "gates": [
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              2,
+              0
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              2,
+              1
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "SourceI",
+            "wires": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              2,
+              1
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              1,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              2,
+              0
+            ]
+          },
+          {
+            "op": "CX",
+            "wires": [
+              0,
+              2
+            ]
+          }
+        ],
+        "profile": "G_CX_SOURCE_I",
+        "source_port": 2,
+        "source_spin": [
+          3,
+          4
+        ],
+        "report_bits": []
+      }
+    }
+  ],
+  "owned_identity": "Residual owner section7dk formula971 and retained-history RP1; already-owned parity CZ, not a new existence theorem.",
+  "implementation_delta": "Emit shared-port route with19 calls instead of separately routed25, or13 when one argument is port. Old/new marked histories and prices are not identified.",
+  "proof": "S_c S_t CX(c,t) S_t^-1 CX(c,t)=L_i^(c+t-(c xor t))=(-1)^(ct) I_Spin; routed port restored.",
+  "uses_clean_resource": false,
+  "uses_measurement_or_feedforward": false,
+  "uses_selected_ready_branch": false,
+  "full_word_exact_without_approximation": true,
+  "remaining_logical_primitives": [
+    "X",
+    "CCX",
+    "H_test"
+  ],
+  "full_source_processor_native": false,
+  "full_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS_BOUNDED_COMPILER_AND_ALL_COLUMN_IDEAL_GADGET_FIXTURES",
+  "exact_matcher_cases": 28,
+  "malformed_cases_rejected": 4,
+  "matrix_fixtures": 60,
+  "matrix_dimension": 64,
+  "matrix_fixture_theta": "pi/8, k=1; not actual golden angle",
+  "matrix_max_abs_error": 1.9820042167861124e-13,
+  "matrix_tolerance": 2e-10,
+  "repeat_test_exponent_bit_length": 10001,
+  "production_k_bit_length": 7456,
+  "giant_W_expanded": false,
+  "complete_provider_coverage_is_separate": true,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/check_gcx_compiler.py": "6500ec8e19b2a349bb86b0dc80e57e414ee773c62fd492f749ee0f7320600046",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/compile_native_cz.py": "36dc0f1b487a6a802d9175b1ed17c75ecffcbb88858f3b5014ad7fa681882d48",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round57/GADGET_G_POWER_CERTIFICATE.json": "d11cc333506f1ac7d000f68aa6d80683094ea955ea9d2c6445bba3b69112d72b"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

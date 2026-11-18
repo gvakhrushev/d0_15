@@ -1,0 +1,21 @@
+{
+  "status": "PASS_EXACT_ORIGINAL_CONSTANTS_FOR_B41_DEFECT_BOUND",
+  "precision_bits": 256,
+  "k0_from_exact_Golden_formula_lt": 24,
+  "pi_from_Machin_interval_lt": "22/7",
+  "k0_interval_hex": [
+    "0x176a99a2052cf9ea190fd6bf801c8e701015417a7e783271dfacdce8c6b9ab67b1",
+    "0x176a99a2052cf9ea190fd6bf801c8e701015417a7e783271dfacdce8c6b9ab6b59"
+  ],
+  "pi_interval_hex": [
+    "0x3243f6a8885a308d313198a2e03707344a4093822299f31d0082efa98ec4e6ab4",
+    "0x3243f6a8885a308d313198a2e03707344a4093822299f31d0082efa98ec4e6e7c"
+  ],
+  "f_generator_norm_lt": "1/20",
+  "proper_link_Julia_defect_gap_least": "115/196",
+  "B41_check_sha256": "0110c112a0b799dd87dbf3e264a8702d6ad094a634b2fa0f2f9f0ec2024b53ae",
+  "B41_source_hashes_still_match": true,
+  "decimal_metadata_used_as_proof": false,
+  "native_proper_link_angles_proved": false,
+  "GR_closed": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_COMPLETE_SMALL_HISTORY_REPLAY_AND_PRODUCTION_BUDGETS",
+  "post_emitter_exact_count_fixtures": 9,
+  "full_clock_centre_and_both_endpoints_replayed": true,
+  "real_production_centre_emits_without_repeat_zero": true,
+  "separate_adjoint_chronology_checked_levels_0_through_4": true,
+  "production_39366_controlled_calls_and_P_counts_checked": true,
+  "final_g_after_retention_and_dimension_formula_checked": true,
+  "toy_angles_are_not_production_precision_evidence": true,
+  "giant_production_stream_executed": false,
+  "physical_task_admission_or_GR_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round39/check_post_sam_assembly.py": "86ecd9d56fd4d5ed651bd6200e9e7ba5ec0132683fdfa63294ca98c0f75f1d67",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round39/post_sam_assembly.py": "42e666e73ed57cabac5b129fc3215a40c928db0601731527e18d635901701a70",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round39/POST_SAM_ASSEMBLY_PLAN.json": "129e860e1c9f6541363055aefea22f09eef19c99564dfc81e2218ac25fec6aba"
+  }
+}

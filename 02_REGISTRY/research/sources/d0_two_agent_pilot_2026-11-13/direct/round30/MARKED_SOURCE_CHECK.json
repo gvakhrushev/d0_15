@@ -1,0 +1,32 @@
+{
+  "status": "PASS_ORIGINAL_LEAF_MARKS_COMMON_RAW_FRAME_AND_PAID_BRIDGE",
+  "all_original_leaf_bindings_checked": {
+    "inverse_coframe_column": 4096,
+    "proper_link": 65536,
+    "material_Psi": 2560
+  },
+  "total_leaf_bindings": 72192,
+  "source_slot_checkpoints_checked": 1372,
+  "resource_bridge_wires": 29848,
+  "selected_f_q_supports_pairwise_disjoint": true,
+  "actual_bridge_inverse_depths": [
+    0,
+    1,
+    2,
+    1
+  ],
+  "exact_RAW_frame_conjugation_fixture": true,
+  "original_norm_weighted_mark_budgets_checked": true,
+  "complete_giant_program_or_detector_executed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/check_marked_sources.py": "47509e7eeb63d11a3710472277e057395624e40950eca6e54c31106fd95356ed",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/marked_source_schedule.py": "92ef8395b40cf20ce77c49a3ed4bfdcbd42fbc1d2f6595133ca4ba2f3086863e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/source_mark_registry.py": "ab4e707d4398e03aa901109989ec2a44a543a4a2784a2033cdce98c22958859b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/SOURCE_RAW_MARK_REGISTRY.json": "3c17d2d6d3eb65381dbca14c55f440315646e5ff91fc3ad1fc516777838cbb79",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/GCX_BIRTH_CLOCK_PLAN.json": "3438970bd68865eef09d27683bb9fd85858d51a340ea83a169d96c2fe947ee12"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

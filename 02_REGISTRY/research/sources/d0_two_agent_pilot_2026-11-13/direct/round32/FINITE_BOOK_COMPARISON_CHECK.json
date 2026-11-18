@@ -1,0 +1,24 @@
+{
+  "status": "PASS_EXPLICIT_FINITE_ENDPOINT_HISTORY_AND_BOUND_ACCOUNTING",
+  "all_column_padding_inputs_per_fixture": 8,
+  "small_exact_clock_sums": 294,
+  "actual_endpoint_power_bits": [
+    4876,
+    4869
+  ],
+  "K_late_retention_pairs": 66076,
+  "same_core_checkpoint_layer_and_final_SAM_gate": true,
+  "independent_exact_determinant_bounds_match": true,
+  "per_row_full_operator_price_error_under_R11_hypotheses_lt": "2^-73",
+  "full_absolute_price_native_centre_or_stationarity_evaluated": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/check_finite_book_comparison.py": "3754f574e34f808d7c7e9dca3de00441c5a4a39cd9a8dc59d9944a29e3ab6c1d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/finite_book_comparison.py": "eff94dfc2fea3b808be59d5cc889b8f8e989fbbd60b3fbb9ed234cff0c911901",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/FINITE_BOOK_COMPARISON_PLAN.json": "0c7ec7f984410df24a7e67de0012f7418a2bb3782b6a1d53f97718a6ab49b155",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/DETERMINANT_FD_BUDGET.json": "889dea49b798937d0b09579189220ce690cab3c4231f8a5ab3ffa48108054837",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/SUFFICIENT_ENDPOINT_G_CERTIFICATE.json": "0cb7105883d835fc146d9d3b0305b5006068bc5e656cf9f909451ec8acb5fce2",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/SUFFICIENT_G_INDEPENDENT_CHECK.json": "a0a6aae7999020d4c0983ef85ab11cde1801007a18ca60f79a942e01ed65f751"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

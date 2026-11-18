@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ACTUAL_OUTER_PLACEMENTS_CLOCK_BUDGET_AND_NONSYMMETRIC_SPLIT",
+  "four_word_direction_fixtures": 16,
+  "exact_small_clock_sums": 175,
+  "general_nonsymmetric_split_checked": true,
+  "false_exact_actual_half_split_rejected": true,
+  "backward_identical_forward_prefix_checked": true,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/check_independent_outer_pairs.py": "080682f892763a9767f57519442845a51274e15239be7848d8ddbc742ef4bf7a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/independent_outer_pairs.py": "dfa9338e3103ac9188472aafeace6eb19a5279170f06354a1133680566c0c70a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round36/INDEPENDENT_OUTER_PAIRS_PLAN.json": "42d3e3b1404af520f564b9284d04c5b2a769cdb60ee58924d172bb267ae79dcd"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

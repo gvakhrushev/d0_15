@@ -1,0 +1,16 @@
+{
+  "status": "PINNED_LOCAL_A37_WITH_B72_B73_REVIEWS",
+  "files_sha256": {
+    "ACTUAL_POST_SAM_STATIONARY_REDUCTION_RU.md": "ef67e8d48670f8f97522174f4e7c938917aa17114069d3813605f2a44f1d028a",
+    "POST_SAM_REDUCTION_CHECK.json": "6ccef839b41799b5c61f2b8a631a57e91c6eb0f5250771f726b6048860f25848",
+    "POST_SAM_REDUCTION_PLAN.json": "d9dffa9e3278bf71df2367b6f0390a1e0a7b16fdb269e55d7321e4b0c40b672c",
+    "RESULT.json": "33223881cc8fc489f601e85cd3d83d1dd26dfad1b75721b5934e9f8f3365ce61",
+    "ROOT_REVIEW_B72.json": "03f5ccc0d1a3de9c3305136cfe39ec973feff62c40fa6cb15d9a5284a0b76ca6",
+    "ROOT_REVIEW_B73.json": "2b1f55b2383f0f25afd5fe7b788dd470162174a7ae64e3ed2890afb17916a5c8",
+    "check_post_sam_reduction.py": "8d26853961da55cca4d748d012bcd5a6e71e9e743bc4932d386395e148ed1ce8",
+    "post_sam_reduction.py": "f984fba692ef804104eec0f02a97472541a2e4ab34e0413ed1d97b3b8e702116"
+  },
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

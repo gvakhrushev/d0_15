@@ -1,0 +1,41 @@
+{
+  "status": "LOCAL_CHECKED_RESEARCH_PROGRESS",
+  "files": {
+    "ACTUAL_FULL_VECTOR_SOURCE_JET.json": "53d28f1da8e683643af44545434082a178d798062a1e524272f039f22c132615",
+    "LEVEL9_CORRECTION_CERTIFICATE.json": "dd0134b478b0a70db4c665c224a82cf76fa19b12707cd9df4e186f3e3f43c9d6",
+    "RESULT.json": "50e276b73f1ff7f5f372c13c0d71d72acec765d00c60fe0afbaa92ac2ceb470d",
+    "RETUNED_FIXED_ANGLES.json": "e82181a9fa1e3ed052b677b426bb5db8d099cd3723f6894f784cad215838724f",
+    "RETUNED_SITE_LIBRARY.json.gz": "4fca0d9f1ad1422b405dea5c67a4a365d2a2b893c10e08e85d752c70b1972b51",
+    "ROOT_REVIEW_B93.json": "12a674d1438d8099f5fcfd2c14ca83c35c947c9870c130826ecd9aff6fed5827",
+    "ROOT_REVIEW_B94.json": "8225716e422648ae79e9bf04c7218d09fe781db9ad2dc62854a3b13f820f156d",
+    "TWO_BIT_COFRAME_LIBRARY.json.gz": "e34dc23a31b0db85e92b5f0e75e6a4d9530d3b04cf109df83a7090ed12524bc5",
+    "TWO_BIT_GLOBAL_SOURCE_CHECK.json": "0e96bebc24f8989f89ebe61a6aad7d1aad0b1be929351ec325dd8438c9856985",
+    "TWO_BIT_GLOBAL_SOURCE_PLAN.json": "24e21eb8d4cba2976f7ccdb1fdcabe2594d8a614695005cea8134f24e7735866",
+    "TWO_BIT_LOCAL_NATIVE_PLAN.json": "43e809e38049a3e467a0ff66baf38a7c480c0d87b4ef4d1245688c9007982f02",
+    "TWO_BIT_MATERIAL_LIBRARY.json.gz": "8d47948a6763e77b56a4a00d705b7c1cd0dd98f84db1b5fe1af02de617e3ec85",
+    "TWO_BIT_SOURCE_COMPONENT_PLAN.json": "7b9de20854c2a82c3dc38e4879b8ac116fb6b1e03260e16b08a4231f4bef24e1",
+    "TWO_BIT_SOURCE_RESULT_RU.md": "318dedd7a538f6eee0f4be40c6268e17e474138e19a04ac6649349dfe67b0e4e",
+    "actual_full_vector_source_jet.py": "84fc14771e196216b4c6e98074509771e058fe7234fb9d40204bf0e03d925fb0",
+    "certify_fixed_source_angles.py": "fa4fcca415aa710d3e46d8c4a96fec297b4233107e5797f1929d2766f2e60c43",
+    "certify_level9_correction.py": "98a03717c851a76c968311fd2c13f125ebf69b26aa633ca5bcbad0ec8f14e336",
+    "certify_two_bit_sources.py": "871088dc22bdc35d7d09ad3ea1531a6c836a385ee17f2b83d1c898fd436eb056",
+    "check_two_bit_global_source.py": "4ebf7a7f3d9c280e350117cb96dc336d33b50e40fd0fe1463e38c2c23cef1dad",
+    "source_angle_certifier.py": "d91d10f50f77ca17beb9848383edaa5da0a28b9d10b115b8be0a9769a1089473",
+    "two_bit_global_source.py": "d1a793af7b613ad37edc6c66c1156fc586f8b065d2f6ca4f9436cb68eb3e00b1",
+    "two_bit_local_native.py": "bed074a15cd0f7901191c23f8e859009fdb778e9ff56cf36dc2301e0ea3b6bbe",
+    "two_bit_source_native.py": "29397868120582067985fda3e8d837effaf11b4e7c71a05c8fd95e502ce2957e",
+    "two_bit_source_targets.py": "d0adb7c9bebd267f58f07e8e95a6d274dbcc9474e00253e9bd90015d10b6a2d0"
+  },
+  "checks": [
+    "A48 complete local libraries and exact inventories PASS",
+    "A48 global source binding and native grammar checks PASS",
+    "A48 actual full-vector jet substitution PASS",
+    "B93 complete target/short-grid provider checks; root independent replay PASS",
+    "B94 complete independent actual-power replay, corrected phase, inventories, global composition and actual jet PASS"
+  ],
+  "new_SOURCE_precision_premise_discharged": true,
+  "new_full_price_execution_completed": false,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

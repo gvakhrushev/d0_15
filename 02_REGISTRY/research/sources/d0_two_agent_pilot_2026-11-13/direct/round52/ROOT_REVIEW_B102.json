@@ -1,0 +1,17 @@
+{
+  "status": "PASS_ROOT_B102_BYTE_IDENTICAL_READ_ONLY_REPLAY",
+  "B102_commit": "4681d372dc9749cf6c7bf0e9c9c51619ef2bb599",
+  "all_input_pins_and_pinned_git_bytes_verified": true,
+  "owner_writes_suppressed": [
+    "B102_A52_INDEPENDENT_CHECK.json"
+  ],
+  "ordinary_labels": 26881,
+  "root_299_and_independent_429_prefix_fixtures": true,
+  "actual_A49_start_trees_sampled": 56,
+  "actual_report_ready_pairs": 8,
+  "CP_full_retention_Bell_reference_and_dephasing_checks": true,
+  "A37_ideal_envelope_checked_without_full_heat_or_free_Y_claim": true,
+  "production_words_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

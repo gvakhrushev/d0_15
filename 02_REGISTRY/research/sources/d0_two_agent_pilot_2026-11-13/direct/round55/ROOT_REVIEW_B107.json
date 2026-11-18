@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ROOT_B107_PINNED_READ_ONLY_BYTE_IDENTICAL_REPLAY",
+  "B107_commit": "70164348c105b223e8074f23a266de805e092439",
+  "all_Git_blobs_and_source_pins_verified": true,
+  "owner_writes_suppressed": [
+    "B107_REGULAR_SOURCE_RECOVERY_CHECK.json"
+  ],
+  "new_uniform_gradient_and_Q_spread_not_replaced_by_centre_bound": true,
+  "target_is_DI_tau_Y_not_zero": true,
+  "all_four_axis_recovery_Euclidean_error_lt": "2^-102",
+  "scope": "finite MG2 control covector at each fixed rational Y on selected canonical fibre; not derivative of compiler or all physical sources",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

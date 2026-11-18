@@ -1,0 +1,30 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "510965245cc0dddd2c057801fabb8312ab7dd5d3",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round57/B57_POSITIVE_G_POWER_CERTIFICATE_RU.md",
+      "sha256": "917f70b7da602d7292703e8d2e58d45f7ae5d22f6cd45290863ea27cf3c1b2c8"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round57/CERTIFICATE_OUTPUT_CHECK.json",
+      "sha256": "c5c2bf503294b39bfe5924c833f48cf110ab76fe38b2fd2cc655f3fa03b03168"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round57/GADGET_G_POWER_CERTIFICATE.json",
+      "sha256": "d11cc333506f1ac7d000f68aa6d80683094ea955ea9d2c6445bba3b69112d72b"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round57/certify_gadget_g_powers.py",
+      "sha256": "a2e7119e08e89e489462b20aaba53b581dc6c65bfe5bbe493d8ef3956af3455a"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round57/verify_certificate_output.py",
+      "sha256": "99349a608fe9d4caeb654c871a983978a959cc2dff9852fb058a532eeb3fcaf0"
+    }
+  ],
+  "checked_recorded_source_hashes": 4,
+  "scope": "B57 integer interval output consistency (not recomputation of powers)",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

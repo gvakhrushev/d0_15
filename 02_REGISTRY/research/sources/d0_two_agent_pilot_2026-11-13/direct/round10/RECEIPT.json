@@ -1,0 +1,135 @@
+{
+  "created_utc": "2026-11-13T18:25:55.755226+00:00",
+  "status": "REVIEWED_CONSTRUCTIVE_PRIVATE_NOISY_NPS_RECOVERY_LOCAL_FIXTURE",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "parent_direct_commit": "4b31650669c3fa347d15e429cb01009ee58847ec",
+  "B_latest_commit": "6857297964b03f27aefc3a7c3032f454c4b06bfc",
+  "goal_turn_classification": "progress: replaced WORK-only large-bank recovery premise by actual noisy full-oracle/private-dilation construction; certified finite local DAG and consumed genuine B21 geometric data",
+  "own_files": {
+    "CERTIFIED_CORRECTIONS.json": "c826455aed147d517eb1c8c84188c658b5d539d9e446c8779a28d0955a84ac7a",
+    "CERTIFY_LOG.json": "78a7c9e970558a26e643cf3f1f3d8348561815d4556b450d9ee09b2823944b55",
+    "COMPILE_LOG.jsonl": "3bac46a0e7732e1dc20ae362c8e29951abe89b4a86e800502f2055ecad72a419",
+    "CORRECTION_WORDS.json": "a769e06b076cbf773bb2f992db3dc76d03e3b9fa9efc127680c706884dc228fe",
+    "PRIVATE_NPS_RECOVERY_RU.md": "f3cbeabc0e718f6e4219032920c37b0d0b36b97911e8a63897bcb66bc43e38a3",
+    "PRIVATE_RECOVERY_CHECK.json": "5574653443a485b16e83743563e36af285be33535b47cfded847136c58bdc14d",
+    "PRIVATE_RECOVERY_DAG.json": "acea26bc5b10ff4ce86bde6ca22368e88e81e207a76a0ed94b81c497cc031257",
+    "RESULT_RU.md": "d1163b7df9787f4ead075779a95a31b5837c80af16343194058a8d7568b45ca2",
+    "ROOT_CHECK_B21.json": "0abd9fb1b2ca01f3de11b8004c70c6645f7978818ac0d635d18a554ed6f9b801",
+    "SPIN_COUPLED_CHECK.json": "7dc3405f335c6568585f7c4be326efcf92f61c654e0a0e172a748a4f04aa5017",
+    "certify_private_corrections.py": "f67345594ff365073a32e51fe16e4d1b54af8bd68982087558196665731ce681",
+    "check_b21_artifacts.py": "bacd82a15cc26d2eb386ed490261738cb11da4c6df21f97f9b5a253040cdb0c5",
+    "check_private_recovery.py": "61e1db0a96f949ff349beef16f41679c0da70efa0d0d3e3c3bdf9d7efc092387",
+    "compile_private_corrections.py": "3d65a09e82ec200bdbe25d234fd5571f4666fe6323a625d89fb48765713f9424",
+    "inputs/SOURCE_PINS.json": "811de0f111a31046d36fa16ca6585bbf59b451484e9361c2e9cbad21a8637b87",
+    "inputs/d0_controlled_recorder_interval_20261026.py": "ff1978fde37379230cdfe3e3707bddaabf09f69ceb56a679fbaf3140acfbc9a5",
+    "inputs/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "inputs/d0_native_readiness_amplification_2026-10-24/native_phase.py": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d",
+    "inputs/d0_so3_sk_compiler_20261026.py": "6c49a4a355cd811dcdeb36d4f0d79652f6eacf7f1b431b71bc7bf191d500ec54",
+    "nps_private_recovery.py": "ba1c9c5ccc7e6cdced076af2906b95bcf5b60b04bd236aa0e713a5b46597d690",
+    "supported_private_plane.py": "77115ca4acb24c43c67f42969075e10b7ae59ec498d58ffc89c4556f513b465f"
+  },
+  "direct_checks": {
+    "normal_replay_checks": 23,
+    "spin_coupled_replay_checks": 25,
+    "interval_checks": 12568,
+    "warnings_as_errors": true,
+    "exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "raw_rounds_executed": [
+      0,
+      1,
+      2
+    ],
+    "max_raw_replayed_calls": 131550
+  },
+  "independent_review": "B22: independently reran both literal checks and integer interval certifier; certificate and DAG byte-identical; no material issue in stated scope",
+  "reviewed_A_snapshot_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round10/PRIVATE_NPS_RECOVERY_RU.md": "48b950bb86a203049ab5c16ddca53b02649634a17095df9862f5c9191b717351",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round10/nps_private_recovery.py": "ba1c9c5ccc7e6cdced076af2906b95bcf5b60b04bd236aa0e713a5b46597d690",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round10/check_private_recovery.py": "61e1db0a96f949ff349beef16f41679c0da70efa0d0d3e3c3bdf9d7efc092387",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round10/supported_private_plane.py": "77115ca4acb24c43c67f42969075e10b7ae59ec498d58ffc89c4556f513b465f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round10/certify_private_corrections.py": "f67345594ff365073a32e51fe16e4d1b54af8bd68982087558196665731ce681",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round10/CORRECTION_WORDS.json": "a769e06b076cbf773bb2f992db3dc76d03e3b9fa9efc127680c706884dc228fe",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round10/CERTIFIED_CORRECTIONS.json": "c826455aed147d517eb1c8c84188c658b5d539d9e446c8779a28d0955a84ac7a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round10/PRIVATE_RECOVERY_DAG.json": "acea26bc5b10ff4ce86bde6ca22368e88e81e207a76a0ed94b81c497cc031257"
+  },
+  "B22_review_receipt_sha256": "60a1265c6813ef8e9753cefad1a574f954dcb85ea656dca29ea215511657603c",
+  "B22_snapshot_hashes_validated_before_prose_clarification": 11,
+  "post_review_edit": "Explicit endpoint-only support for final bright macro; no mandatory measurement inside macro assumed. Added review and B21 intake references; mathematical formulas and reviewed code unchanged. Added root-only B21 selected artifact checker.",
+  "B20_root_replay": {
+    "exit_code": 0,
+    "warnings_as_errors": true,
+    "receipt_hashes_verified": 8
+  },
+  "B21_root_verification": {
+    "receipt_hashes_verified": 33,
+    "selected_artifact_check": "ROOT_CHECK_B21.json",
+    "seven_bank_native_execution": false,
+    "numeric_targets_not_interval_certificates": true
+  },
+  "B_packets": {
+    "20": {
+      "ACTUAL_MARKS_AND_RECOVERY_DOMAIN_RU.md": "0ad306a048c78bf543c5617cf1dad90d5302d20d52bda9ff94900b08159d416f",
+      "CHECK_RESULT.json": "0ce340c88216d27e6759bca32fb47201692f01ffec5cb8d4f91d7cbab7669bde",
+      "RECEIPT.json": "2400b2ee02cf2afddc8b6f36b0e7e6dbaf0f4a11633b631c66c3f66beb895cbe",
+      "check_mark_transport.py": "0860dac6924284551a510afc11178370ab2636bffdf1d0bec77e14b329adf226"
+    },
+    "21": {
+      "BRINKMANN_L4_CENTRE.jsonl": "bedb2f51e2ae744f421315cde721848c3c7dd7b398b0a28c22f523c9f1aab43b",
+      "CANDIDATE_PREFIX_BIRTHS.jsonl": "2e7da0d0449ceabd8bc8c95b6a25734d9ec0e063dabcdadb340a300f44928df0",
+      "CENTRE_JULIA32_TARGETS_NUMERIC.npz": "3106975748a09e9ec0773246cc7b74b23aed337205419d01dde7f1252cdf88f2",
+      "CHART_ENVELOPE_RESULT.json": "e244b4c50f8c64a4f21a905958486f0aadbee629f1ac6df9edd90bfd75961eee",
+      "COMPONENT_RESULT.json": "ec56e42f8f9ffb75ff8c14b0867d2d0f1128a1df26d6be418ac724baaa2cd3ea",
+      "H1_L4_PARTIAL_EXPORT_RU.md": "02996a5f6c0d0249281c372e2b109a58f53eb434443e06760ca4399b296eb29a",
+      "JULIA_TARGET_RESULT.json": "35e7e963476f7912aab512797537ef2ae0964d2a2f2b0e625c63f965df26753e",
+      "L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+      "ORIGINAL_FOURIER128_L4.json": "5e691225f746e346afe3ad61a9e5123666fd8d1f270e27756914730b598b5934",
+      "ORIGINAL_F_R_N20_L4.jsonl": "8c1d8dacc2257836e41f0f37c9222bf2a7d5a73a5092e67b34ed2e2658e19720",
+      "ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e",
+      "ORIGINAL_STENCIL_CHECK.json": "461cb383d7121458d9a50af14d0b7371abf3154041e1783a04ebfc210f37fe4e",
+      "OWNER_REPLAY.json": "3272ecc40d19ac77ad99f7a2c6128577650626fdc1c1b63b19ce741b65c81c3b",
+      "PARTIAL_H1_DAG.json": "ab65c469c9255977312557d40e20b5a4dcb33399c37d274bd52a023f57c99470",
+      "PF_FOURIER_CHECK.json": "d00c1889fe146546de9dfcf0c8b3056e26624be55c95dea1476f9582025667e9",
+      "RECEIPT.json": "11ff9e4086316f2986a16f7077fcf6c4b238fcbeb741991ce7494b418f15977e",
+      "REFERENCE_METADATA.json": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a",
+      "SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8",
+      "SC6_INVERSE.jsonl": "f61960c480cc0e5f0afdd03b0466228249f8368509803d437a77f15f56551857",
+      "SITE_LOADER_L4_CENTRE_NUMERIC.npz": "c261485779c11b3ece4dbb4a38456e8d0ca32acc0036065172e18995fbe3b56d",
+      "SITE_LOADER_RESULT.json": "83d3093a164bde684c59e4e7162e2136864acc176ef2e1e4ed3a33a01fdd3713",
+      "build_partial_dag.py": "cbce74fa85b5bb0b337c1a78045dbe6ec87f15af8f69c1fcf56b758203445f5e",
+      "certify_chart_envelope.py": "86e947eaf1a52c528d851df7e563684b4869698a4e9fb3f81554b614852a9ba8",
+      "check_original_stencil.py": "2a57095fa0b032eebbeb92cb2b3ae823f51fce0f8d3f8f40e3a2836e9b0b1a7c",
+      "check_pf_fourier_compatibility.py": "1af42159ff8fb14fbb597a9ede1930dedd2cb18bb04a53c4dafa453920f7a2ab",
+      "export_julia_targets.py": "b48b01e9a5e6caa3211898308ffd63e66527af752e3e74d654a6fc781a3a5a5e",
+      "export_owned_components.py": "9c7823e973eb1ab207616b1c707037831a5f74b5c1c1f96d54d5ede02d80f0c8",
+      "export_reference_geometry.py": "a03147e104672e2c2e23b1238c2298643639066cf72c99c77066424760ce9aad",
+      "export_site_loader.py": "535f702077c70a6bf8a0f7a6a0a2f3a8c96cef5cf93b398b6fe5185fe7b01316"
+    },
+    "22": {
+      "CHECK_RESULT.json": "ecc629fa9e5dbce00f3770aa5ad8862a923b415a71a70bed29bdbb95baa9d0ec",
+      "INDEPENDENT_REVIEW_A10_RU.md": "73b9082a2b44b82019afdb7b202b036f9c0113660a64e507339cb296bf40b039",
+      "RECEIPT.json": "60a1265c6813ef8e9753cefad1a574f954dcb85ea656dca29ea215511657603c"
+    }
+  },
+  "owning_source_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+  "finite_fixture": {
+    "full_stages": 951278222451,
+    "full_clock_dimension": 974108908297084,
+    "final_dimension": 65536,
+    "state_error_upper_decimal": "8.6535187765399413e-23",
+    "entire_huge_word_executed": false,
+    "representation": "finite native DAG with exact count recurrence and outward integer interval error certificate",
+    "actual_finite_q_gain_positive": true,
+    "gain_scope": "generated-copy chart; independent occurrences retain residual bounds"
+  },
+  "new_native_primitives_added": false,
+  "whole_H1_bank_word_constructed": false,
+  "all_required_H1_marks_reader_seals_proved": false,
+  "full_physical_Cost_Info_binding_proved": false,
+  "GR_closed": false,
+  "next_scientific_obligation": "Consume B21 actual L4/PF/field data in full seven-bank native construction, correct SITE/CAR/RIGHT map and source norm/READY; then actual marks, reader transports and full independent physical source. Original Book03/Cost-Info binding remains open.",
+  "publication": "local only"
+}

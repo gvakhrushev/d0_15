@@ -1,0 +1,57 @@
+{
+  "round": "A64/B121",
+  "base_direct": "d737ef083ae7f46a801d492140b5de1c5757648e",
+  "scene_source_commit": "2bbb8d230fc95e3bc852beb9dac228b870509d14",
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "lanes": [
+    {
+      "id": "book03_eighteen_stage_paths",
+      "check": "open/round121/check_book03_identity_pair.py",
+      "result": "Из первичных весов получено проверяемое расхождение для буквальной двухбуквенной гипотезы.",
+      "open": "Абсолютные физические цены возвращающих путей, приготовителя и терминала.",
+      "next": "Проверить на истинных классах и полном исходном приборе исходный относительный вес.",
+      "evidence": {
+        "open/round121/B121_ORIGINAL_BOOK_WEIGHT_AND_PREPARATION_RU.md": "df1c11e583e9673a9b88d7b5a1bdf1c41df05e2d46ca83d6af98ea0847aa68d4",
+        "open/round121/RESULT.json": "00728718d2e77b252272143c276e2625fc138d35ef8fb5680d37baf185bd188b",
+        "open/round121/check_book03_identity_pair.py": "78f94decaf1ed6c54201e1e83032b9311ac708c077b79065398422c1141b66f9"
+      },
+      "stdout_matches": "open/round121/RESULT.json"
+    },
+    {
+      "id": "registered_word_selector",
+      "check": "direct/round64/selector/check_measured_selector.py",
+      "result": "Совместимый измеренный выбор двух равнодлительных слов и изоспектральный RC1 для указанной схемы.",
+      "open": "Физическая плата диспетчера и слова, зависящая от выбранного назначения.",
+      "next": "Отделить её от слова на реальном терминале.",
+      "evidence": {
+        "direct/round64/selector/MEASURED_SELECTOR_RU.md": "c0fdd189f65f066755f29b5b5b0ba7e67d9217e7011839b845bc02b145c718d6",
+        "direct/round64/selector/check_measured_selector.py": "c4a174081117cc5dabe2b32b2f138b739b94eb87a5886e30e20efad5e2ca6a9c"
+      }
+    },
+    {
+      "id": "fixed_centre_absolute_source",
+      "check": "direct/round64/source/check_centre_pairs.py",
+      "result": "Центральные общие слагаемые исключены на A57, определены четыре независимых ряда источника.",
+      "open": "Абсолютная цена, видящая различие запросов, и исходная физическая норма.",
+      "next": "Оценить остаток на ветвях, где именно входной запрос различается.",
+      "evidence": {
+        "direct/round64/source/COMMON_SCALE_RU.md": "6a106bb38ddec09d330ba5733dd5d057db9d78f25f2e34c78c2050f8ebe3e9cc",
+        "direct/round64/source/check_centre_pairs.py": "c936746072459417bc93120520058c5846c0ea21bcd1dc4ab82101cd2bab3470"
+      }
+    },
+    {
+      "id": "field_odds_and_complete_memory",
+      "check": "direct/round64/check_logical_response.py",
+      "result": "Вычислены источники пяти приготовлений и четырёх совместных частот, получен тест полного переноса логического бита.",
+      "open": "Физическая калибровка, общий масштаб и ориентация удержанной памяти.",
+      "next": "Сопоставить абсолютный оператор Book03 с восстановленными эффектами и истинным источником.",
+      "evidence": {
+        "direct/round64/FIELD_ODDS_RU.md": "2c68f5a6c5f8f408e788a2602c116ab37546e7e5f66f07f0454588ba21747348",
+        "direct/round64/REGISTER_AND_MEMORY_RU.md": "54394df38a08da346e4426b6a54e1ec8cad08037040a125612b4ababfa3173c2",
+        "direct/round64/check_logical_response.py": "9bd0961c16c4ce8699397a31f274e93dbf5c739ade61f268614a5dc4f7816d39",
+        "direct/round64/SHARED_READER_RU.md": "84e2f9f5a1114000dfee7cfe8f1867f5338f92d3afaa003c3f0994c036ed6ce5"
+      }
+    }
+  ]
+}

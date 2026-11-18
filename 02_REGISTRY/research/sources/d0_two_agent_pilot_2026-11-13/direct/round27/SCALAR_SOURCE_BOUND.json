@@ -1,0 +1,11 @@
+{
+  "status": "EXACT_RATIONAL_SCALAR_LOWER_CONSUMPTION",
+  "formula": "1-2 kappa_upper p_upper^7(4+2 alpha_upper^2)",
+  "rational_lower": "327478553199667584809878785120933169206643671038431033635392182199/488281250000000000000000000000000000000000000000000000000000000000",
+  "ideal_c_gt": "67/100",
+  "actual_error_lt": "2^-3231",
+  "actual_c_gt": "2/3",
+  "scope": "A25 canonical RAW input and A27 ideal report law, not physical admission",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_ROOT_SELECTED_B21_ARTIFACT_CHECKS",
+  "scope": "Independent selected data checks; not a native seven-bank replay or interval certification of numeric targets",
+  "F_R_words": 10946,
+  "cost_per_word": 20,
+  "PF_sites": 256,
+  "chart_coordinates": 2688,
+  "SC6_calls_each": 18176,
+  "julia_matrix_count": 3072,
+  "float_julia_orthogonality_error": 2.220446049250313e-15,
+  "float_SITE_born_mapping_error": 9.992007221626409e-16,
+  "exact_naive_PF_Fourier_offdiagonal": "-477/700544",
+  "native_full_H1_executed": false,
+  "GR_closed": false,
+  "inputs": {
+    "ORIGINAL_F_R_N20_L4.jsonl": "8c1d8dacc2257836e41f0f37c9222bf2a7d5a73a5092e67b34ed2e2658e19720",
+    "ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e",
+    "L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8",
+    "SC6_INVERSE.jsonl": "f61960c480cc0e5f0afdd03b0466228249f8368509803d437a77f15f56551857",
+    "ORIGINAL_FOURIER128_L4.json": "5e691225f746e346afe3ad61a9e5123666fd8d1f270e27756914730b598b5934",
+    "CENTRE_JULIA32_TARGETS_NUMERIC.npz": "3106975748a09e9ec0773246cc7b74b23aed337205419d01dde7f1252cdf88f2",
+    "SITE_LOADER_L4_CENTRE_NUMERIC.npz": "c261485779c11b3ece4dbb4a38456e8d0ca32acc0036065172e18995fbe3b56d"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ROOT_B103_PINNED_REPLAY_PLUS_INDEPENDENT_SPATIAL_FOCK_JULIA_CHECK",
+  "B103_commit": "8a0403185a971250fb318e6a04dd36472869608e",
+  "all_pinned_Git_blobs_and_source_hashes_verified": true,
+  "owner_writes_suppressed": [
+    "B103_REGULAR_LINK_CHECK.json"
+  ],
+  "replayed_actual_angle_powers": 496,
+  "independent_root_Julia_special_family_entries": 3072,
+  "Newton_fixed_floor_halting_proof_reviewed": true,
+  "QR_threshold_tie_and_SO_orientation_proof_reviewed": true,
+  "source_error_lt_2pow_minus3423_is_conditional_not_new_global_history": true,
+  "production_WORD_G_CX_replacement_or_whole_price_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

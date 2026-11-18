@@ -1,0 +1,104 @@
+{
+  "round": "A69",
+  "base_direct": "1df67c458490b593dee9b5cc00f328fdd27ea281",
+  "primary_pr334": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+  "source_open": {
+    "B125": "4ff023a275181dc9b4dcc7339779ab2fc297bf9d",
+    "B126": "88aa8a2fbe586b10d04503384f88467a1c3abd17",
+    "B127": "5f959abf48e8ab31ce60b0d66a37fc2ceb58c48a"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "lanes": [
+    {
+      "id": "infinite_full128_fine_record_field_source",
+      "check": "direct/round69/stopped/check_stopped_response.py",
+      "result": "Два остановленных энтропийных отклика, чётность памяти и количественная калибровка общей цены на немедленном исходе.",
+      "open": "Вывести выбранную Book-информацию, настоящий абсолютный вес немедленного конца и все дополнительные затраты.",
+      "evidence": {
+        "direct/round69/stopped/check_stopped_response.py": "7fb547ce4c5048c5b6b0bd9f760647eef4038508027c59b39e560940317e60d1",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425",
+        "direct/round69/stopped/FULL_STOPPED_CQ_RU.md": "167cc3f60f4872fd634993ff44c3ccf53f4bf3b9300a4dc0839030f37a1aaa45",
+        "direct/round69/READOUT_RU.md": "e964a7e7516a883374264d689ee1063ea8e86c2acc2f640cf39f1ea8344d7c97"
+      }
+    },
+    {
+      "id": "independent_unbounded_fine_tail",
+      "check": "direct/round69/primary/check_stopped_fine.py",
+      "result": "Независимая нижняя граница полного отклика и точный результат первого тонкого символа с часами.",
+      "open": "Перенос источника с данного CAR16 на допустимую геометрию H.1.",
+      "evidence": {
+        "direct/round69/primary/check_stopped_fine.py": "e76141a6ec96bf7e534da8ef3561688c2b1987650f07a154ae2d1ce7e93c0b1f",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425",
+        "direct/round69/primary/STOPPED_FINE_RU.md": "30a8383b4e6cf4dfd637343afc8eda97517c26a0f2e60b17b57009c06b1038ee"
+      }
+    },
+    {
+      "id": "early_clock_localized_thermal_mass",
+      "check": "direct/round69/clock/check_early_heat.py",
+      "result": "Удержанные ранние состояния на полном тепловом графе и факториальный предел чувствительности.",
+      "open": "Физическое отождествление положительного теплового эффекта со стопом.",
+      "evidence": {
+        "direct/round69/clock/check_early_heat.py": "1082204cdeb3fe29d8f764d5bc9579cc9d7559dd35b93113b2b08d403c807f89",
+        "direct/round69/clock/EARLY_THERMAL_KERNEL_RU.md": "3698554a8d08d62d341e7dd4aadd37d2677d6368a2553244fefddc3d80dcfe90"
+      }
+    },
+    {
+      "id": "early_clock_first_nonzero_moment",
+      "check": "direct/round69/clock/check_exact_return.py",
+      "result": "Точный 32-й момент и двусторонняя граница полной тепловой разности при штатной температуре.",
+      "open": "Источник полной Book-цены по первоначальному терминалу.",
+      "evidence": {
+        "direct/round69/clock/check_exact_return.py": "ee10873b1796fc62e74c6c899cbd647f981571c6df8e16612bdfb3391418b8b8",
+        "direct/round69/clock/check_early_heat.py": "1082204cdeb3fe29d8f764d5bc9579cc9d7559dd35b93113b2b08d403c807f89",
+        "direct/round69/clock/EARLY_THERMAL_KERNEL_RU.md": "3698554a8d08d62d341e7dd4aadd37d2677d6368a2553244fefddc3d80dcfe90"
+      }
+    },
+    {
+      "id": "independent_forward_and_reverse_sources",
+      "check": "direct/round69/variations/check_separate_legs.py",
+      "result": "Два исхода разделяют прямую и обратную вариации; общий тест прежнего банка сохраняется при заявленном расширении.",
+      "open": "Полная оплата действительного графа и цены его изменений.",
+      "evidence": {
+        "direct/round69/variations/check_separate_legs.py": "17f78c168eca1f74668589ddb621aa08ab55816d973b3180160c3bf5c2a5022f",
+        "direct/round69/variations/SEPARATE_FORWARD_AND_REVERSE_RU.md": "38d2d5e5d671acd47997f62372616b5d601932e64d5f478d2fe935b9115aa4a9"
+      }
+    },
+    {
+      "id": "heldout_physical_stop_mass",
+      "check": "open/round125/check_no_field_anchor.py",
+      "result": "Восстановление общей массы по ранее отложенному раннему исходу.",
+      "open": "Физически доказать абсолютную цену этого конца.",
+      "evidence": {
+        "open/round125/check_no_field_anchor.py": "11947f1de512f1921911efd03b5a8985616c9f61d0c2e9ee77d748bd97aaaa75",
+        "open/round125/B125_ABSOLUTE_SOURCE_ANCHOR_RU.md": "bd7d9a7401c9c401eba36c3b610781344d12c324e1d54a152b530bf2febe7daa",
+        "open/round125/RESULT.json": "1b680d11445f25d85fb522c5b4a22c9c8c968ded481aa58879fdb3f0fb75a682"
+      },
+      "stdout_matches": "open/round125/RESULT.json"
+    },
+    {
+      "id": "physical_stop_vs_global_book_clock",
+      "check": "open/round126/check_early_terminal_split.py",
+      "result": "Разделение цен посещённого префикса, тепловой нормы и маргинала виртуальных возвратов.",
+      "open": "Определить действительную подготовку, префикс и терминальный эффект.",
+      "evidence": {
+        "open/round126/check_early_terminal_split.py": "b17e0f6fe137b03a62054eecc2d478637ef5eaa3faa7507da54370ff03814367",
+        "open/round126/B126_PHYSICAL_EARLY_TERMINAL_RU.md": "d21a1a7db6f19ed03f67228442fe024a01774bf4391ac2c2ee977c8a8e1c9f30",
+        "open/round126/RESULT.json": "67a6012a4f49ca22df4ba655e56ad0ef8b11ddd02dd2ca306beb94d3ed9fc5d7"
+      },
+      "stdout_matches": "open/round126/RESULT.json"
+    },
+    {
+      "id": "one_edge_context_scene_cycles",
+      "check": "open/round127/check_context_cycles.py",
+      "result": "На исходной сцене по циклам одной длины восстанавливаются 14 990 комбинаций цен.",
+      "open": "Общая цена шага, допустимость соответствия контекстных весов исполнению.",
+      "evidence": {
+        "open/round127/check_context_cycles.py": "6972b11106884a6c2a86899b22650b03c82ca236c6c7dd857570057d91d2a1ff",
+        "open/round127/B127_CONTEXT_SCENE_CALIBRATION_RU.md": "3974c3e63fbcfad63a18c61b4880e08037cff2cca0d9486cbd5db5e4851b9906",
+        "open/round127/RESULT.json": "0618e5dda7d5d0fd0d9fc2cefb3f7cd59864d0d92886b5a05eba03ebb22067c5"
+      },
+      "stdout_matches": "open/round127/RESULT.json"
+    }
+  ]
+}

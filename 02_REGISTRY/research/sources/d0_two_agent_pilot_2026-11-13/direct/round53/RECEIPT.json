@@ -1,0 +1,27 @@
+{
+  "status": "A53_LOCAL_REVIEWED_CHECKPOINT",
+  "artifact_sha256": {
+    "REGULAR_FIELD_COMPONENTS_RU.md": "c54b04daddddcd390c841503c2b0fb70b7df855f275067fc7a0af022e3d861be",
+    "REGULAR_SOURCE_COMPONENT_CHECK.json": "a04b2b2ee9ff79ca9c707067e6f98a500b738467aea423b249a762173ceee177",
+    "REGULAR_SOURCE_COMPONENT_PLAN.json": "4e09ae898103ad45a781a2bf63fc2c6e3a453f26faff064a5a605c7c2e46b532",
+    "RESULT.json": "025ca67588e6e5f9a900d115329d5d49a4b4e312c366f4d4e130e5a0c9b7a84d",
+    "ROOT_B103_SPATIAL_ROTATION_CHECK.json": "76d88f95f32a51e9883b63a578636467ea42739d5d772297624f66c23d5118a5",
+    "ROOT_REVIEW_B103.json": "bb7a98019ec5b9261d5661297170fab67cc6a0ef671b9496bf8f536b544dd2d2",
+    "ROOT_REVIEW_B104.json": "cbdd96f480b71504da3004d018270e0ca4389b134f3a379ae39d650ffa1ace57",
+    "check_regular_link_independent.py": "8b39c39b886925e5318d690688bc5d58da08a81cee8bd8333fe4b127f985819e",
+    "check_regular_source_components.py": "d6efe580f48fcd63858ef604f86c234685ff82e80aa5c9bc1f9af01a15016f80",
+    "regular_field_targets.py": "9b7dc8986ee1f095235219b26f275ae76dc1bfccec9e4db45c5b838dae020a0f",
+    "regular_source_components.py": "4f2e6f86bbf1b8c2b5a541533ec923a35f26f4dc7803d35e32919b23c26903d8"
+  },
+  "checks": [
+    "all 7168 coframe box bounds and four CAR time slices",
+    "canonical field names, original independent coordinate mapping and chart margin",
+    "actual grid powers at quadrants, zeros and ties",
+    "literal inverse resources including intrinsic inverse units",
+    "B103 pinned replay plus independent 3072-entry Julia special-family check",
+    "B104 pinned read-only byte-identical replay",
+    "syntax, JSON and source pins"
+  ],
+  "physical_C_closed": false,
+  "GR_closed": false
+}

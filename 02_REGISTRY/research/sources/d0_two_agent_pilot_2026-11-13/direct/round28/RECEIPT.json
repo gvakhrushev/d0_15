@@ -1,0 +1,25 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "file_sha256": {
+    "BIRTH_CLOCK_AND_HEAT_GATE_RU.md": "a4a16e4a482a03dbb0cc58ec489b971f0e33964c250c3429f04ab5d334d77d02",
+    "FRESH_AUX_BIRTH_CLOCK_CHECK.json": "ee546eb5ae5573274c829331d925bd3436f22c6f158ed5962c1431f3d8b86c94",
+    "FRESH_AUX_BIRTH_CLOCK_PLAN.json": "87c95826bbbc8bdf2c7c4de3942899b2af7e0a32d0921ca8a4a970b14cde268f",
+    "PHYSICAL_WIRE_BINDING_CHECK.json": "abc443fe2cd8d801f1c0edc8fc38175e65656a6db234055c5a95633321cd9bda",
+    "RESULT.json": "8a7620ce5fb5e1e791a2df19151dc68d3e65000d0c7c4cc071213958d2738572",
+    "RESULT_RU.md": "e7ac9ad4dba2dee25628404fb1fde33f523e4050ef8848cfd332877900390f93",
+    "ROOT_REVIEW_B55.json": "108aba97453c0db3ae134b1281e50cf5f08db6b166f90dca635c8c473610361d",
+    "ROOT_REVIEW_B56.json": "aafa6d3a2a4bdb0a8220545be57f52e12b0f43ae58e5dbe2e61ec1ee68c0bda5",
+    "check_fresh_aux_birth_clock.py": "e7e427f474865ae5414da55d5c632dacd624b0d6b65dbac1e3809d44446d9ebb",
+    "fresh_aux_birth_clock.py": "be46ea21fef635f1cf192b8169f1c3a3b0fb25283736604973dc9aa0e2b4675f",
+    "physical_wire_adapter.py": "e8f93e23e207ff2c78be06670074e372e74ec0fa72d64a4337accb6401b9b555"
+  },
+  "checks": [
+    "FRESH_AUX_BIRTH_CLOCK_CHECK.json",
+    "PHYSICAL_WIRE_BINDING_CHECK.json",
+    "ROOT_REVIEW_B55.json",
+    "ROOT_REVIEW_B56.json"
+  ],
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

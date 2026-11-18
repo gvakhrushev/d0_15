@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-11-13T17:22:16.955825+00:00",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "parent_direct_commit": "3754daa5a24559e0777557020f4bcc6593289337",
+  "status": "REVIEWED_FULL_FINE_PRICE_MINIMUM_AND_EXACT_NATIVE_ZERO_TAIL",
+  "previous_goal_turn_classification": "progress: committed A7, independently checked B12-B13; full objective remains open",
+  "direct_checks": {
+    "exact": 21,
+    "numerical": 259,
+    "warnings_as_errors": true,
+    "exit_code": 0
+  },
+  "B_latest_commit": "da863c3a6",
+  "independent_review": {
+    "B14": "actual reader inventory and fine entropy/code accounting",
+    "B15": "global efficient-instrument price minimum, source and native tail access",
+    "B16": "reviewed original A8 theorem/checker (13 exact+247 numeric), 54 high-precision source bounds and 100 independent product-lift controls",
+    "B17": "exact native 36-call zero-tail echo without LC4; all32 bank columns and16 true-input columns; alternative21-stage handoff has explicit all-bank obstruction"
+  },
+  "post_review_additions": "Integrated B17 native construction, added root exact echo controls and nonscalar-coarse information chain rule with12 additional full-instrument numerical controls. Core minimum/source proof unchanged.",
+  "independent_root_replays": {
+    "B14": 0,
+    "B15": 0,
+    "B16": 0,
+    "B17_echo": 0,
+    "B17_handoff": 0,
+    "all_saved_stdout_matched": true,
+    "warnings_as_errors": true
+  },
+  "validated_B_input_and_artifact_hashes": 27,
+  "reviewed_A8_snapshot_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round8/FULL_FINE_PRICE_SOURCE_RU.md": "751b1732acf9121b47a4037d9bda9635d994af9630250ce1747fb8c47bba4abd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round8/check_full_fine_price.py": "dc1ba86ddfc26f8688ebc5ecfba67b39c647fa440194d3b7a6bc2d5c7086512b"
+  },
+  "own_files": {
+    "CHECK_RESULT.json": "634f6c064f777265985aec85d220ed5952c4c89241ad2988301879f3326d49e6",
+    "FULL_FINE_PRICE_SOURCE_RU.md": "385b8d73188243f5d6bb5418cea1dfbae6b943d4d0ebe68aa6137507f4317e84",
+    "RESULT_RU.md": "36668beda38aa0c142a1615d2e1eef1dbe9aa1c511ebd89de036044f042f9b4c",
+    "check_full_fine_price.py": "d919e22b3a96348395a4651d6faae7741949d1cdaf52cda5c3bd27b6eca80520"
+  },
+  "B_packets": {
+    "14": {
+      "CHECK_RESULT.json": "15c49b6b265639a7fc89f1668639f2fa154cd2c8ed5acb1b0597c713d3a99220",
+      "RECEIPT.json": "f64e41c3ad238395fc2ed9779e55b967bc74b4bd2bde4fbce19ed605698fedeb",
+      "ROUND14_READER_LEDGER_RU.md": "c62b7422a8291ecb66d4a47537756cc2982e196b2a7dddd66405d4c499fd4bee",
+      "check_reader_entropy.py": "defd7b73e8913ad51e67b025b73d810f394623cd28f76410f2c94ff05cf29eaa"
+    },
+    "15": {
+      "CHECK_RESULT.json": "e7691a81c3c1bf9d1facae6b530faa51b39fb30524731b8c3752a56831b3620d",
+      "RECEIPT.json": "32b04d6b368690f527c1ec6c1702f8738c4aa5d0f216fb455845e17f57cf0182",
+      "ROUND15_FINE_FIBRE_RU.md": "26a0ef4e9baad409018fd3a48859292e097ae80b2cb7f6a142de0147f300fe9c",
+      "check_fine_fibre.py": "b0e74c1b91eae8aaa8cd4209bb4121d0232cc8682a17df9270628ad3446f5bd1"
+    },
+    "16": {
+      "CHECK_RESULT.json": "e420855eb3f65cf5fcf894785183092a8a27a1cb9cc83487cc67c06fc1d69354",
+      "RECEIPT.json": "6d3893d6b01c2d66a87799843d925ee561e54d7b345da40e623bd025d130c891",
+      "REVIEW_A8_FINE_PRICE_RU.md": "c650739bcd829f8ea93b58a0447f0f4b1bc8db4f53b2b86de1e84a6bf6ad4887",
+      "check_a8_review.py": "85c7abd609055b41ed69d69d89d1e745ec42c8f79b186bb0b7c43493a5b193b5"
+    },
+    "17": {
+      "CHECK_RESULT.json": "274a46739197c9db06df6e864fa276fd372b59df4a8884289da9e0f1a0479dcf",
+      "EXACT_ZERO_TAIL_HANDOFF_RU.md": "bc7e24847f343bb32bc17161bfd5cb852c5cf73ef2768e0c6b5f77cffa49448d",
+      "RECEIPT.json": "f00b456e755191dd62795e9c19bf470387931f2b15894677aa4177cd4754a4a7",
+      "check_exact_preserving_echo.py": "9082b576a8250b7c96010eee01e7f7e20311eec4ad7b47fb5523c628544fd7d0",
+      "check_exact_tail_handoff.py": "913ac9d206e5f398b622568e3d6a08ceb76473c53a3c345e51ddd522fd888eb5"
+    }
+  },
+  "owning_source_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+  "new_results": [
+    "full actual three-label code and entropy included",
+    "global nuisance minimum for fixed nonnegative bQ,bC",
+    "strict source bound p+a*p^2 without changing q",
+    "direct tail construction removes full LC4 bank recovery for this price component",
+    "a=0 endpoint reached exactly by36 paid native calls, no births; coarse projectors preserved on all columns"
+  ],
+  "original_full_H1_replayed": false,
+  "all_required_mark_reader_transports_proved": false,
+  "full_recorded_HJ_source_composed": false,
+  "full_physical_Cost_Info_binding_proved": false,
+  "GR_closed": false,
+  "next_scientific_obligation": "Compute actual registered return and full growing-clock/ledger source for the concrete NPS/E0 plus echo and six-copy reader, preserving same-execution physical price binding. Do not reuse shorter coherent LC4 cold.",
+  "publication": "local only"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "A55_LOCAL_REVIEWED_CHECKPOINT",
+  "artifact_sha256": {
+    "REGULAR_COMPARISON_TASK.json": "186effcd85c629c28c7e1163f410cb4a063acb0026a27aed9a40c671ef7a3412",
+    "REGULAR_COMPARISON_TASK_CHECK.json": "cda4d9e6050f00f8ed68eaccc928b8223200e9e580e71d6cb667ff51f0e4b8e5",
+    "REGULAR_FIELD_TASK_AND_FRONTIERS_RU.md": "a31a4f259140778ad70566db8eb064d536ef1f9fd84df6567443e148493b5cab",
+    "RESULT.json": "ac8233214e24bc67236db486d032d6098f6bf2ff07e244b4b1c644309cabe250",
+    "ROOT_REVIEW_B107.json": "7b7277c05cdf9e7cdbae7b5feca9171333ebe6071c2454555c0a8dd17b6a29e4",
+    "ROOT_REVIEW_B108.json": "2e77cef03c4a7200e4278924a8c9c80b7dcb7251867ac045537221dba2233e60",
+    "check_regular_comparison_task.py": "0857d9c34a4b0b4b2a69b2f404fec36224f4b4e44fe5c23c006901d7dc2710e4",
+    "regular_comparison_task.py": "e734262fdea2917ff9ea09960ffb4b6375f2e5f1adec96d2ec5b3455db7fb634"
+  },
+  "checks": [
+    "canonical field/label request roundtrips, bad/hidden data rejection, bound source/post and new common clock",
+    "598 own and 858 independent full small literal-prefix comparisons",
+    "complete ordinary catalogue and infinite-field-union distinction",
+    "independent field-free processor dispatch and exact pre-Qf counterexample",
+    "uniform vector/effect/midpoint rational envelopes",
+    "B107 off-shell four-slot recovery budget and source scope",
+    "B107 and B108 pinned read-only byte-identical replays",
+    "final syntax/JSON/source pins"
+  ],
+  "physical_C_closed": false,
+  "GR_closed": false
+}

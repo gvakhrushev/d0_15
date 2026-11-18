@@ -1,0 +1,21 @@
+{
+  "status": "PASS_MATERIAL_TARGET_BINDING_AND_NATIVE_PREPARATION_GRAMMAR",
+  "library_sha256": "83592b07988263b453d7ac27fa7f53d7b7d98846a3d8dfd40b3e401fe095e22b",
+  "checker_sha256": "e6fcecda0f99d756932ae6bac79b6f5e6f3f0922644134c2afb0526613772fad",
+  "all_covered_local_control_sectors": 960,
+  "B25_target_comparisons": 1536,
+  "max_B25_target_error_float_diagnostic": 1.1102230246251565e-16,
+  "full_grade_matrix_columns_checked": 352,
+  "max_compiled_rotation_preparation_error_float_diagnostic": 1.1102569054260746e-16,
+  "rational_angle_certificates_checked": 38,
+  "actual_native_pair_examples": 5,
+  "actual_native_blocks_checked": 28682,
+  "actual_primitive_leaves_checked": 526352,
+  "full_native_expanded_word_executed": false,
+  "private_quantum_work": 0,
+  "all_SAM_statement_reason": "the owned material formula has exactly two local matter coordinates per free site; every local assignment is covered, and all other input bits are unaddressed by this map",
+  "physical_birth_admission_proved": false,
+  "full_CAR_vacuum_Fourier_preparation_emitted": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

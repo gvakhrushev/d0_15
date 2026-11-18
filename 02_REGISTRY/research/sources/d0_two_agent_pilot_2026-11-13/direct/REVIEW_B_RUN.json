@@ -1,0 +1,12 @@
+{
+  "phase": "A_review_of_B",
+  "start_utc": "2026-11-13T12:28:39+00:00",
+  "end_utc": "2026-11-13T12:31:46.432155+00:00",
+  "B_frozen_report_sha256": "30800ad8eafda30cf53eec08c9151355c4525d4efc1ccc7539f1202dfdd0ab27",
+  "exact_replay_checks": 132,
+  "full_word_replay_checks": 28,
+  "replayed_outputs_match_frozen_bytes": true,
+  "blocking_findings": 0,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

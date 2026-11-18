@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-11-13T17:44:43.596612+00:00",
+  "status": "REVIEWED_FULL_UNITARY_ARCHIVE_CLOCK_AND_CONDITIONAL_RECOVERY",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "parent_direct_commit": "df3350cd7dabaf61036106c41826b9ea0e04375f",
+  "B_latest_commit": "a8f73fa4e5cd8ccd2aa5f87541c000493b663b04",
+  "previous_goal_turn_classification": "progress: A8 exact zero tail and full fine/CQ component; current round consumes the actual full archived H+J",
+  "own_files": {
+    "ACTUAL_ARCHIVE_CLOCK_RU.md": "81376b4405e01663d1e48b29bcc4e5b78a2968d2553d9bba65758735255e9383",
+    "CHECK_RESULT.json": "eae23209f55d8cb16bd64d4a577ebb7c1cc16537e0bdd7ea74ec1489b0974b28",
+    "FULL_ARCHIVE_RECOVERY_RU.md": "a09cd120779852a4eb2b76e392800bd3bf5389c223820da1cbe51b5516a8fd78",
+    "RECOVERY_CHECK_RESULT.json": "64c38a9cd86efefbf09bf112ca8cb3eeb062e70a896dd15501e3f51e64c43e04",
+    "RESULT_RU.md": "0833d757de1c3e3845209699b5e05d8c057a6d7320c4b9a3bc376df8f738fd96",
+    "check_archive_clock.py": "609acce26874de1c4868baed0efe5cbadcaa0bc8a3707ef2f1408b25a4e21a4f",
+    "check_archive_recovery.py": "cd2cf740d9abc70df47eb8116eecf789f6468adb10721bd0e505f71b65f744f6"
+  },
+  "direct_checks": {
+    "clock": 1449,
+    "archive_recovery": 983,
+    "warnings_as_errors": true,
+    "exit_codes": [
+      0,
+      0
+    ]
+  },
+  "independent_review": "B19 repeated both scripts, verified support/global current optimum, every-competitor LC5, Spin-only domain, genuine gain and full growing clock",
+  "reviewed_A_snapshot_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round9/ACTUAL_ARCHIVE_CLOCK_RU.md": "81376b4405e01663d1e48b29bcc4e5b78a2968d2553d9bba65758735255e9383",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round9/FULL_ARCHIVE_RECOVERY_RU.md": "8e5cb934c4d6761c809f0883cb5dcf3e66e9a32edc02a2a671d23fe6c37c710c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round9/check_archive_clock.py": "609acce26874de1c4868baed0efe5cbadcaa0bc8a3707ef2f1408b25a4e21a4f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round9/check_archive_recovery.py": "cd2cf740d9abc70df47eb8116eecf789f6468adb10721bd0e505f71b65f744f6"
+  },
+  "post_review_edit": "Made explicit the owning real K_b=w_b tensor I_Spin centre required for WORK-only recovery; scalar effects alone do not imply native attainability. Formulas/checkers unchanged.",
+  "B18_root_replay": {
+    "exit_code": 0,
+    "warnings_as_errors": true,
+    "saved_stdout_matched": true,
+    "hashes_validated": 9
+  },
+  "B19_review_snapshot_hashes_validated_before_clarification": 8,
+  "B_packets": {
+    "18": {
+      "CHECK_RESULT.json": "56949303f7a2f109f63f59be15aa33c132754e3ba5da97402374887641b0f783",
+      "LITERAL_ARCHIVE_RETURN_RU.md": "ec188358c835b5ba63a081b5109b4817a73e8dda601fed3ab62bf932f1500f31",
+      "RECEIPT.json": "edf6f9342e0a2ff0a5100ba43f2e5e360adf346d2f224299b9f44efdbf2aa9d4",
+      "check_literal_return.py": "899c25e59d7b3388913c58f404a1705538602a7987ae018eba7d52900eca84dc"
+    },
+    "19": {
+      "CHECK_RESULT.json": "7b6c86333e90ef1a76fa4d9fc33797e922c0ac5252f07805c38d304dc1c53a4b",
+      "INDEPENDENT_REVIEW_A9_RU.md": "99fbee54d7d76941e7290260ecf518eae1af694a57e9d10cb9b0189e58d889a8",
+      "RECEIPT.json": "9a2f735695d03899613601d5f19a718e8ad9527800343107023af81aa698c940"
+    }
+  },
+  "owning_source_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+  "new_results": [
+    "literal174-stage module has true D increment8547d, final64d and minimum birth age132",
+    "original full425D heat source has exact rational coefficient upper bound4.47361453917822e-415, with actual norm/gain still retained",
+    "true canonical completion uses birth details, not raw padded endpoint",
+    "full archived return p^4 X0+p^6 X1 generally has nonzero independent tail source at zero tail",
+    "conditional all-input archived feedback optimum has masses p^8+p^12,p^12 and tail u=p^4/(1+p^4)",
+    "new source strictly positive on original q collar; old-row/gain concentration consumes actual attenuated gain",
+    "separate parsed/CQ component has residual (1-q)(1-4a) at J target unless a=1/4; physical coefficient not selected"
+  ],
+  "original_full_H1_replayed": false,
+  "all_required_mark_reader_transports_proved": false,
+  "full_native_recovery_word_constructed": false,
+  "external_measurement_dilation_supplied": false,
+  "full_physical_Cost_Info_binding_proved": false,
+  "GR_closed": false,
+  "next_scientific_obligation": "Construct an actually admitted real-centre recovery/comparison and full physical source receipt with all marks and ledger on the same history; retain Book03/Cost-Info aggregation binding. Do not treat this conditional archived H+J result as complete physical selection.",
+  "publication": "local only"
+}

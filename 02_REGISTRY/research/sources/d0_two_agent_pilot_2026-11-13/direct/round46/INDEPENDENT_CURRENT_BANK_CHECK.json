@@ -1,0 +1,61 @@
+{
+  "addresses": {
+    "fresh_source_DATA_RIGHT": 4264,
+    "fresh_source_private": 4368,
+    "fresh_virtual_interval_width": 1486721154,
+    "total_births": 11893771936,
+    "old_helper_and_aux_preserved": true
+  },
+  "chronology": {
+    "sampled_actual_source_blocks": 8,
+    "four_literal_RAW_frame_counts": {
+      "G_other": 1,
+      "CX": 18,
+      "SourceI": 24,
+      "G_port": 3
+    },
+    "full_PROVIDER_coverage_inherited_by_injective_address_substitution": true
+  },
+  "paid_fixtures": [
+    {
+      "leg": "centre",
+      "sign": "centre",
+      "calls": 237,
+      "clock_dimension": 31359
+    },
+    {
+      "leg": "Qf",
+      "sign": "plus",
+      "calls": 237,
+      "clock_dimension": 31359
+    },
+    {
+      "leg": "Qf",
+      "sign": "minus",
+      "calls": 237,
+      "clock_dimension": 31359
+    },
+    {
+      "leg": "Qb",
+      "sign": "plus",
+      "calls": 237,
+      "clock_dimension": 31359
+    },
+    {
+      "leg": "Qb",
+      "sign": "minus",
+      "calls": 237,
+      "clock_dimension": 31359
+    }
+  ],
+  "status": "PASS_INDEPENDENT_CURRENT_BANK_ADDRESS_CLOCK_AND_ERROR_CHECKS",
+  "production_word_executed": false,
+  "original_full_mark_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round46/check_independent_current_bank.py": "1d96d4d05ecec804bbc99e69cffac7a1a07695bd765d763a9bde8beddcafdd65",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round46/independent_current_bank.py": "59d234a45d68780e9887466ccaea01ccaa21484fe3d5704e8e163e203329806d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round46/INDEPENDENT_CURRENT_BANK_PLAN.json": "6ef1f56365ef69b8b6920f87b67c5f629b2e79bbd50e7e89d0a79216c71b7f95"
+  }
+}

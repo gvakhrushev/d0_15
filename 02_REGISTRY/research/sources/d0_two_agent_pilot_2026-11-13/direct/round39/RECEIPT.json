@@ -1,0 +1,17 @@
+{
+  "status": "LOCAL_REVIEWED_CHECKPOINT",
+  "base_A_commit": "290393b94c86594da4eee4d4402cf7fc335f16e6",
+  "files_sha256": {
+    "COMPLETE_POST_SAM_NATIVE_FAMILY_RU.md": "351eed6112bb640ef504ec1797d599dede1120973b735ae9d4bc424c53218fd9",
+    "POST_SAM_ASSEMBLY_CHECK.json": "9dffecacad83833f3f75930d01620fc742c6620c7778484284e39381bf82e1f6",
+    "POST_SAM_ASSEMBLY_PLAN.json": "129e860e1c9f6541363055aefea22f09eef19c99564dfc81e2218ac25fec6aba",
+    "RESULT.json": "5140db48c7197cd364ad0ca82d51cb0eb8a8814834dbcaf4d0cea4d3e9bacf89",
+    "ROOT_REVIEW_B76.json": "6812e58936582ea11fb8a4d1397c4890814222a1e18e84ce6338bd13b75e6436",
+    "ROOT_REVIEW_B77.json": "f7254188a3979e9305689db228aea8819f45ce5a73948b92c1b35efd0834cbd0",
+    "check_post_sam_assembly.py": "86ecd9d56fd4d5ed651bd6200e9e7ba5ec0132683fdfa63294ca98c0f75f1d67",
+    "post_sam_assembly.py": "42e666e73ed57cabac5b129fc3215a40c928db0601731527e18d635901701a70"
+  },
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

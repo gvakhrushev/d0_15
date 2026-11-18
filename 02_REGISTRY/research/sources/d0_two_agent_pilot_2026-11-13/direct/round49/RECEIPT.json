@@ -1,0 +1,30 @@
+{
+  "status": "LOCAL_CHECKED_RESEARCH_PROGRESS",
+  "files": {
+    "CORNER_AND_PRICE_BRIDGE.json": "2b5497680edc4d30b72056fea4213f9134243fb0002d5fc48f51f9c0a5bef06f",
+    "RESULT.json": "306f10d4529253a1f87560d141ce9f83d6a3b27247fd3f55908beffb680475c8",
+    "ROOT_REVIEW_B95.json": "cc4a256af3556394366b5d5625d57efafb7018b7637b3ac56eaad29f85c1cb1e",
+    "ROOT_REVIEW_B96.json": "24bf5a8aaed4febd15eb588807ad21a4113c6847063f634c45f2f9e51848a76a",
+    "TWO_BIT_PAID_CORNER_RESULT_RU.md": "6b544d2022b289668ef8692ca4ac6a771bd70f606c1a31ada90cf340bf3d35de",
+    "TWO_BIT_PAID_FAMILY_CHECK.json": "e610df52c1b77e62840e82e141de87d2eb8faaa09b3f86dd6d79406b24a4bc3b",
+    "TWO_BIT_PAID_FAMILY_PLAN.json": "420c2b46827b30efe8985db59227030383448b939edc3a6ba1d700377fdc27fe",
+    "check_two_bit_paid_family.py": "d3985a931ff4848b93bf7b366c128394abc3f089abfc31a6cf2a3bc195fa3c9b",
+    "corner_and_price_bridge.py": "54c2279324bb5da69e692ecd99722eabf02022d15fb57fb5c4121007c4840be7",
+    "finite_actual_target.py": "ae9932ce22dc12d14510e8ff3603d91c9daee2d8c55bd7eec35f3795e5525f9b",
+    "paid_padding.py": "bdacefe9fe48b98f249ed30885fc58e233cb8d6a0b3ec38b05121d724adab1be",
+    "two_bit_paid_family.py": "ce6195ca3f1fe5d7176241af4d6d0c6659e489b39738953341a8bba204249add"
+  },
+  "checks": [
+    "A49 exact actual path/post and 13-arm paid schedule fixtures PASS",
+    "A49 typed corner/same-reader gain/interface arithmetic PASS",
+    "B95 all three independent checks root-replayed byte-identically",
+    "B96 all seven independent checks root-replayed byte-identically; all pinned inputs and Git blobs verified",
+    "A49 Python syntax and JSON/source-pin checks PASS"
+  ],
+  "typed_corner_gate_discharged": true,
+  "original_Dnu_or_vacuum_extension_admission_proved": false,
+  "production_target_or_word_evaluated": false,
+  "whole_price_stationarity_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

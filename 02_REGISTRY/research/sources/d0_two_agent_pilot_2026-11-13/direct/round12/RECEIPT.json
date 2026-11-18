@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-11-13T19:12:24.093962+00:00",
+  "status": "REVIEWED_EXACT_SOURCE_SELECTORS_AND_SEVEN_BANK_TARGETS",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "parent_direct_commit": "1f0c81b6a5e45396bb342483f279a278ad1c5cd1",
+  "B25_commit": "38f7ee2c49ee9bba96a024259caf181b55cf7f29",
+  "B26_commit": "a5bd92bfa3f55d7433225ea7e017ef748b67a6dd",
+  "own_files": {
+    "COHERENT_SOURCE_SELECTORS_RU.md": "600ce1da06f015330e5adf9f5adadd4be1e7bab33df58feb4edaf8ea7e7a94b4",
+    "INTEGRATION_RU.md": "5d3879c68e63eae6ab787f287ccf7850351517bd8009e87897577b69a5f80de1",
+    "INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "RESULT_RU.md": "d1f25df22bfd59cc028e63c066ffe70519070d677bfedf135de49d3544d170ef",
+    "ROOT_REVIEW_B25_B26.json": "c8ec2817c82d0fc11c7dacc584ca6fb61f8937a275262823eb0ddf5bb42932bf",
+    "SELECTOR_CHECK.json": "edfa21cafea072e3642193dcb665b8f423f81f2ec2f2869f5ec922d0ea1e6f46",
+    "SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "compile_source_selectors.py": "eb2e04cbd26a31d91172b6e092fff1363a3eda170f056023ccbfb42891408b0d",
+    "review_b25.py": "93aba4347da7e51e32e5f47059bcb642ba4d31a10eff44657f56f486eed225bd",
+    "verify_source_selectors.py": "6259e31b37b069f31e6cc681b86560e8787bd9a33fceb1dc87fc002e303b682b"
+  },
+  "owning_inputs": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "70da30184823746c040549b3182080326f30af9caba08c95c3a13da46bc8c294",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md": "b1e7d9cdd81605e0b7d532ac8a3bfc682e42806367ad5e109324a5812d7d9e50",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md": "ce8d2e88d8a5669a3ef9de1a849a5e21ec0a55b3fdb253d4b990656b0062427a"
+  },
+  "independently_reviewed_A12_snapshot": {
+    "round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "round12/compile_source_selectors.py": "eb2e04cbd26a31d91172b6e092fff1363a3eda170f056023ccbfb42891408b0d",
+    "round12/verify_source_selectors.py": "6259e31b37b069f31e6cc681b86560e8787bd9a33fceb1dc87fc002e303b682b",
+    "round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "round12/SELECTOR_CHECK.json": "edfa21cafea072e3642193dcb665b8f423f81f2ec2f2869f5ec922d0ea1e6f46",
+    "round12/COHERENT_SOURCE_SELECTORS_RU.md": "600ce1da06f015330e5adf9f5adadd4be1e7bab33df58feb4edaf8ea7e7a94b4"
+  },
+  "B25_B26_root_review": "ROOT_REVIEW_B25_B26.json",
+  "selector_check": {
+    "status": "PASS_EXACT_SELECTOR_TABLES_AND_FULL_INPUT_INVOLUTION_CONTROLS",
+    "checks": 39941,
+    "palettes": [
+      {
+        "file": "INTERNAL_SELECTOR_PALETTE.json",
+        "partitions": 25,
+        "r": 1374,
+        "n": 0
+      },
+      {
+        "file": "TOP_SOURCE_SELECTOR_PALETTE.json",
+        "partitions": 512,
+        "r": 1580,
+        "n": 1
+      },
+      {
+        "file": "TEN_SIGN_REPORT_PALETTE.json",
+        "partitions": 2048,
+        "r": 94,
+        "n": 6
+      }
+    ],
+    "table_hashes": {
+      "INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+      "TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+      "TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6"
+    },
+    "retained_selector_caps": {
+      "internal": 7,
+      "top": 7,
+      "fair_plus_bank": 28
+    },
+    "selector_fair_qubits_per_report": 10248262,
+    "selector_Golden_qubits_per_report": 76,
+    "ready_component_lower_bound": "1/2",
+    "same_coin_two_copy_hostile_detected": true,
+    "Boolean_or_native_factory_word_checked": false,
+    "full_H1_READY_claimed": false,
+    "GR_closed": false
+  },
+  "component_READY_bound_only": ">=1/2",
+  "full_native_processor_emitted": false,
+  "full_seven_bank_targets_emitted": true,
+  "actual_full_READY_computed": false,
+  "all_H1_marks_reader_clock_proved": false,
+  "full_physical_Cost_Info_binding_proved": false,
+  "GR_closed": false,
+  "previous_goal_turn": "progress: A11 full source operators and periodic source binding",
+  "current_goal_turn": "progress: exact coherent source selectors; B25 actual seven-bank target family and bound moments; B26 independent review",
+  "next_scientific_obligation": "Emit reversible Boolean selector and selected signed-involution circuits, then actual native admission with full retained history and physical source.",
+  "publication": "local only"
+}

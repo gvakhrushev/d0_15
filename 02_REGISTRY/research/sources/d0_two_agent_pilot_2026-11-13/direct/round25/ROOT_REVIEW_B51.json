@@ -1,0 +1,34 @@
+{
+  "status": "CONSUMED_INDEPENDENT_LITERAL_REPORT_REVERSE_REVIEW",
+  "B51_commit": "b741b1927f328afdd59cdd6acb4c2d99821e6e5c",
+  "pinned_files_sha256": {
+    "A13_A15_ALL_ROWS_REVERSE_CHECK.json": "1390ee6e4e1be05516739ada0d979ee51f569d55d4eb9712a5db9583ff3780db",
+    "A16_ALL_SLOT_ORDER_CHECK.json": "4fe2ffddceaeddcc84182f4302cbb9380a1a2f958c4a2fe1ce27c4b98a9c16ef",
+    "A17_ACTUAL_BOUNDARY_REMAP_CHECK.json": "f4f454f65d56d2e45c774506842d33fcabe639e3215fb9d1d18b7264524a6ac4",
+    "A17_NATIVE_INDEPENDENT_REVERSE_CHECK.json": "d1ecf242a2200b08cbab2c0f3b00357d6901edf8fa195a1427675fb3cc72d45e",
+    "B51_LITERAL_REPORT_REVERSE_RU.md": "dd2b6509fc24a57553c93901f36bf3078da7add65792137bf6ea62ad3d39c79d",
+    "REPORT_CACHE_MEASUREMENT.json": "853799de45f6cfe4cb72f405a35dc8a25ef3c64deeae5b49b7b893a586b0d342",
+    "audit_native_reverse_stream.py": "c5f0492c2a4242055d93c14cda20939397833c6feca8eecbc305939fe445e90e",
+    "audit_real_report_boundaries.py": "f7a892fd012b60878c82ad7d3268dbf2d4ca7d213231fd39430300532e230203",
+    "audit_report_logic_all_rows.py": "e259e4e1fd00c02e60185452bed3fbec64afe89081d3e311913f1a5d248689e2",
+    "audit_walk_slots_metadata.py": "39730ad1ab72180ebf1f56bb6ccfecd92fbab8589c2a4310fc90dce1ff6d072d",
+    "measure_report_cache.py": "9e9ecd0882bcf530891440a74e78995d1118b976b788ed106ad784e7e079c207"
+  },
+  "absolute_input_pins_rechecked": 18,
+  "reversible_report_source_sha256": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+  "A13_rows": 5170,
+  "A15_rows": 106657,
+  "full_A16_slot_mapping_depths": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "independent_READY_and_native_AST_reverse_checked": true,
+  "actual_full_plan_boundary_blocks_checked": true,
+  "full_giant_report_executed": false,
+  "memory_scope": "two complete finite event caches; observed process peak 525631488 bytes, not constant/one-event memory",
+  "root_reexecuted_independent_scripts": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_B76_PROOF_REVIEW_AND_BYTE_IDENTICAL_SCOPE_REPLAY",
+  "B_commit": "7fd3961b55b41d4afe3251b57a89775512bbf85c",
+  "clean_invariant_sector_not_dirty_all_column_claim": true,
+  "uniform_rebit_helper_external_contract_consumed": true,
+  "full_leakage_norm_preserved_in_hybrid_bound": true,
+  "B_files_written": false,
+  "B76_file_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round76/check_uniform_rebit_scope.py": "a6f61b8073d16037d1ade4ca762661278cd51c176d68069689f43a10744a43db",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round76/B76_UNIFORM_REBIT_CLEAN_SECTOR_RU.md": "96c5fc1e9209f612a8765dbc7edee1393941960a6172931f56d9c2bda653232f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round76/B76_SCOPE_CHECK.json": "2c48865b35a8c2b2ddcf4fb24ed484435cb71c83df8b69a161363e53d46653c0"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

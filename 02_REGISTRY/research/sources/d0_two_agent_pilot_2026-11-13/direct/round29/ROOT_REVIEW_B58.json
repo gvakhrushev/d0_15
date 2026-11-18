@@ -1,0 +1,62 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "f394180acbb7df6cd02087e41e60f81d4e8806ce",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/A29_INDEPENDENT_COUNTS.json",
+      "sha256": "16af3a66a87fb20275498fe4ee77d21689a11ff2a12c3e349255a9eba886dc82"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/A29_PROVIDER_TRANSDUCER_CHECK.json",
+      "sha256": "eecad13d2780e201cfdb08bc4423255de02816ada99a6e49ec0d077605fd6664"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/A29_RECOGNIZER_TEMPLATES.json",
+      "sha256": "0a4777a6c4edd2c3df24e2d22aa3e27b3f65761b7c35673ea9929079818f6410"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/ACTUAL_GLOBAL_REMAP_CZ_CHECK.json",
+      "sha256": "e0e49b657138b7b8bd93ada4d0311913c6d6b0941d3c61f44bbb0d0f7889b60f"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/B58_A25_GCX_COVERAGE_AUDIT_RU.md",
+      "sha256": "e43fcadfee38ad46d1c9a687b1b3540060e18339640944f8ffe03c6453e680d1"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/CZ_EXACT_OCCURRENCES.json",
+      "sha256": "43451bf585b2407966f9c31325866f6ff3e99f3573c43388b2ba53b66400bafc"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/PROVIDER_TEMPLATE_AND_WIRE_CHECK.json",
+      "sha256": "2c85d9e1acde5e5c5e8b6c9151f5654e65e5d4808a212836d02a270667d17182"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/audit_a29_counts.py",
+      "sha256": "0ee185ad3c3aca85bd38d910f756faf6218d40dea32dd0106db12f1050f4df2e"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/audit_a29_provider_transducer.py",
+      "sha256": "1d5d61075ac97c91902a791d76fb8fdaf033abe9f6831521e500481f55064ce1"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/audit_a29_recognizer.py",
+      "sha256": "0a883b9402640d0bf36f7185f0666f00e59310275c891a20c2b3e0dc54774ae2"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/audit_actual_cz_remap.py",
+      "sha256": "2fcb70b39d01bdb4ff6926e9c8e435b7e06393bdfe4a77617a3f46c4f8b9cad1"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/audit_provider_primitives.py",
+      "sha256": "a19a59bbd003fa681f2b25d87c5df173940623c3b581de5733ab5fbfbdf22f9c"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/cz_occurrence_census.py",
+      "sha256": "3fa4d0d2806907716ceb0631e4fa45f2762508974656d7aa4b409c1101b1d35b"
+    }
+  ],
+  "checked_recorded_source_hashes": 50,
+  "scope": "B58 structural provider induction plus actual matcher, mapping, transducer and count checks; not flat giant execution",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

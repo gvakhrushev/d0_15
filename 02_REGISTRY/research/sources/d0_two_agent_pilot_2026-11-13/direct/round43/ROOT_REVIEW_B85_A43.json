@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "b8f9510aea8885de0856b81f1fb8db7e71b6119c",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round85/check_a43_independent.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round85/B85_A43_INDEPENDENT_CHECK.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "3779f4532f6a42a91f2987c8c0954b63489f9ac8f1cf76812df4b8587cddd224",
+  "receipt_sha256": "6913ecbd729176faec5e1fde975eadd93242af0502f7563908f5fb2e4314bb0d",
+  "owner_status": "PASS_CONDITIONAL_J2_BUDGET_AND_LITERAL_SMALL_SLOT_ASSEMBLY",
+  "source_pins_verified": true,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "B_confirmed_final_report_no_material_discrepancy": true,
+  "B_final_report_review_thread": "01a1d4cb-9df6-7502-acbc-f336cca88a28",
+  "final_report_sha256": "e905e91317cc09b55add4203486bad60e5b32da47d967553b30fbd0adee06675"
+}

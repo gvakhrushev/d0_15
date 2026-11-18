@@ -1,0 +1,62 @@
+{
+  "status": "PASS_EXPLICIT_PRIVATE_RECOVERY_DAG_AND_INTEGER_ERROR",
+  "checks": 12568,
+  "interval_bits": 320,
+  "recovery_rounds": 12,
+  "correction_raw_counts": {
+    "G": 100523904,
+    "CX": 465639936,
+    "SourceI": 435410176,
+    "N": 1001574016
+  },
+  "amplified_inverse_counts": {
+    "G": 503805129,
+    "CX": 3026550847,
+    "SourceI": 946746292230,
+    "N": 950276648206
+  },
+  "private_preparation_counts": {
+    "G": 2,
+    "CX": 13,
+    "SourceI": 8,
+    "N": 23
+  },
+  "state_error_upper_decimal": "8.6535187765399413e-23",
+  "N_times_state_error_decimal": "8.2319039577116121e-11",
+  "full_N_times_state_error_upper": "87916200694254126772837390012746866043125314521085525403070651747583815230503042788579/1067993517960455041197510853084776057301352261178326384973520803911109862890320275011481043468288",
+  "actual_finite_q_collar_radius": "2^-30",
+  "actual_finite_cold_interval": [
+    "0.15435474140822475",
+    "0.15435475849453298"
+  ],
+  "actual_finite_dc_dq_interval": [
+    "-0.061171936138128609",
+    "-0.061171869390418278"
+  ],
+  "actual_finite_q_interval_integer_endpoints": [
+    "922011471656784316838180511708109083397280411539022694798573059914618675414297323698297570200912",
+    "922011475635370208116473648951167068571847132342671901177354799438330490559573299798564574465411"
+  ],
+  "actual_finite_cold_interval_integer_endpoints": [
+    "329699726580892522862181397512196183703191952407266986014021995334807623512539102360248655491136",
+    "329699763077025424418118821001890267446391310921766134543883791544849526153718433819563888684270"
+  ],
+  "actual_finite_dc_dq_interval_integer_endpoints": [
+    "-130662462553224529833567918657172735397748339030298450732949639324144839099185549129680170533724",
+    "-130662319980980580789595353077536664289710062992979573346170296944957838904395043306286630743919"
+  ],
+  "interval_scale_integer": "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576",
+  "actual_finite_J_gain": "-2*r*z*c(q)*c_prime(q)/(1-z+z*c(q)^2)>0 for0<z<1; no physical z or geometry gain fitted",
+  "full_fixture_stage_count_with_front_births_and_literal_six_copy_archive": 951278222451,
+  "full_fixture_clock_dimension": 974108908297084,
+  "full_fixture_final_dimension": 65536,
+  "minimum_birth_age": 132,
+  "raw_lower_levels_executed": [
+    0,
+    1,
+    2
+  ],
+  "full_huge_raw_word_executed": false,
+  "whole_H1_or_physical_C": false,
+  "GR_closed": false
+}

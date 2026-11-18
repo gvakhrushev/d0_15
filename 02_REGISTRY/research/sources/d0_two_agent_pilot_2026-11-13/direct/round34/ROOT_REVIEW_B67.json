@@ -1,0 +1,23 @@
+{
+  "status": "PASS_ROOT_PINNED_REVIEW",
+  "owning_B_commit": "47c38be3b158bde216cda288eab15f4a4d6a92b9",
+  "files": [
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round67/B67_A34_INDEPENDENT_AUDIT_RU.md",
+      "sha256": "10ef086717e6bfface1ff3aa47c6822ef1dc7b227f8b7f18ebbaa1c5f83e0af3"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round67/INDEPENDENT_A34_AUDIT.json",
+      "sha256": "528db02a0d424f99fc5a02b5c7d67cda0327fd093f754f70eead81c8b34c694d"
+    },
+    {
+      "file": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round67/audit_a34_independent.py",
+      "sha256": "4678ceac35deeedf3ec807a2b1293fc546bd33af111bd4d8ab178ca8be0860ee"
+    }
+  ],
+  "source_hashes_checked": 15,
+  "scope": "Independent full A34 stencil/incidence, generic Bernoulli covariance, noncommutative own-link secant, all exact constants, full norm and normalization assembly; named source-map/core/price premises retained.",
+  "B65_notation_erratum": "u_raw=nu eta e^(-T), e^(-T)=(e^-1)^T; not a matrix exponential",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

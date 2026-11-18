@@ -1,0 +1,356 @@
+{
+  "status": "PASS_BOUNDED_MEMORY_LITERAL_REPORT_REVERSAL",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/check_reversible_report_stream.py": "06384cb9da643bf3ee905df7227d165550e3f9613c4e6c3bed17d59b62c5946e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae"
+  },
+  "owning_logical_word_order_checks": [
+    {
+      "kind": "selector",
+      "file": "TOP_SOURCE_SELECTOR_CIRCUIT.json",
+      "reverse": false,
+      "tuples": 292013
+    },
+    {
+      "kind": "selector",
+      "file": "TOP_SOURCE_SELECTOR_CIRCUIT.json",
+      "reverse": true,
+      "tuples": 292013
+    },
+    {
+      "kind": "selector",
+      "file": "INTERNAL_SELECTOR_CIRCUIT.json",
+      "reverse": false,
+      "tuples": 509209
+    },
+    {
+      "kind": "selector",
+      "file": "INTERNAL_SELECTOR_CIRCUIT.json",
+      "reverse": true,
+      "tuples": 509209
+    },
+    {
+      "kind": "selector",
+      "file": "TEN_SIGN_REPORT_CIRCUIT.json",
+      "reverse": false,
+      "tuples": 16663
+    },
+    {
+      "kind": "selector",
+      "file": "TEN_SIGN_REPORT_CIRCUIT.json",
+      "reverse": true,
+      "tuples": 16663
+    },
+    {
+      "kind": "root_init",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 37
+    },
+    {
+      "kind": "root_init",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 37
+    },
+    {
+      "kind": "root_init",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 37
+    },
+    {
+      "kind": "root_init",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 37
+    },
+    {
+      "kind": "selector",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 292013
+    },
+    {
+      "kind": "selector",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 292013
+    },
+    {
+      "kind": "selector",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 509209
+    },
+    {
+      "kind": "selector",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 509209
+    },
+    {
+      "kind": "first_success",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 65
+    },
+    {
+      "kind": "first_success",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 65
+    },
+    {
+      "kind": "first_success",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 93
+    },
+    {
+      "kind": "first_success",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 93
+    },
+    {
+      "kind": "palette",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 647
+    },
+    {
+      "kind": "palette",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 647
+    },
+    {
+      "kind": "palette",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 647
+    },
+    {
+      "kind": "palette",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 647
+    },
+    {
+      "kind": "transition",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 4122
+    },
+    {
+      "kind": "transition",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 4122
+    },
+    {
+      "kind": "transition",
+      "root": "H_f_before_inverse_PF",
+      "reverse": false,
+      "tuples": 4122
+    },
+    {
+      "kind": "transition",
+      "root": "H_f_before_inverse_PF",
+      "reverse": true,
+      "tuples": 4122
+    },
+    {
+      "kind": "kind_init",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 1
+    },
+    {
+      "kind": "kind_init",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 1
+    },
+    {
+      "kind": "kind_init",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 1
+    },
+    {
+      "kind": "kind_init",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 1
+    },
+    {
+      "kind": "root_init",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 38
+    },
+    {
+      "kind": "root_init",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 38
+    },
+    {
+      "kind": "root_init",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 38
+    },
+    {
+      "kind": "root_init",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 38
+    },
+    {
+      "kind": "selector",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 292013
+    },
+    {
+      "kind": "selector",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 292013
+    },
+    {
+      "kind": "selector",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 509209
+    },
+    {
+      "kind": "selector",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 509209
+    },
+    {
+      "kind": "first_success",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 65
+    },
+    {
+      "kind": "first_success",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 65
+    },
+    {
+      "kind": "first_success",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 93
+    },
+    {
+      "kind": "first_success",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 93
+    },
+    {
+      "kind": "palette",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 647
+    },
+    {
+      "kind": "palette",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 647
+    },
+    {
+      "kind": "palette",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 647
+    },
+    {
+      "kind": "palette",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 647
+    },
+    {
+      "kind": "transition",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 3282
+    },
+    {
+      "kind": "transition",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 3282
+    },
+    {
+      "kind": "transition",
+      "root": "H_q_before_inverse_PF",
+      "reverse": false,
+      "tuples": 3282
+    },
+    {
+      "kind": "transition",
+      "root": "H_q_before_inverse_PF",
+      "reverse": true,
+      "tuples": 3282
+    }
+  ],
+  "original_transition_tail_order_preserved": true,
+  "all_finite_walk_metadata_checked": [
+    {
+      "root": "H_f_before_inverse_PF",
+      "controller_events": 4559,
+      "retained_records": 455,
+      "native_local_size": 9093982
+    },
+    {
+      "root": "H_q_before_inverse_PF",
+      "controller_events": 190,
+      "retained_records": 18,
+      "native_local_size": 378269
+    }
+  ],
+  "whole_report_actual_literal_depth_fixture": [
+    {
+      "literal_depth": 0,
+      "actual_native_blocks": 19,
+      "compact_G_repeats_not_expanded": true
+    },
+    {
+      "literal_depth": 1,
+      "actual_native_blocks": 19,
+      "compact_G_repeats_not_expanded": true
+    },
+    {
+      "literal_depth": 2,
+      "actual_native_blocks": 19,
+      "compact_G_repeats_not_expanded": true
+    },
+    {
+      "literal_depth": 3,
+      "actual_native_blocks": 19,
+      "compact_G_repeats_not_expanded": true
+    }
+  ],
+  "rows_in_word_tests_bounded_samples": true,
+  "full_report_billions_of_blocks_enumerated": false,
+  "giant_G_repeats_executed": false,
+  "logical_order_reversal_is_not_native_inverse_cancellation": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

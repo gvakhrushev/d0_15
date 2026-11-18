@@ -1,0 +1,80 @@
+{
+  "status": "PASS_EXACT_MG2_PLANE_READOUT_AND_FORWARD_PULLBACK",
+  "tensor_checks": [
+    {
+      "coordinates": 1,
+      "full_columns": 4,
+      "axes": 1,
+      "all_spectators_and_vector_commutators": true
+    },
+    {
+      "coordinates": 2,
+      "full_columns": 16,
+      "axes": 2,
+      "all_spectators_and_vector_commutators": true
+    },
+    {
+      "coordinates": 3,
+      "full_columns": 64,
+      "axes": 3,
+      "all_spectators_and_vector_commutators": true
+    },
+    {
+      "coordinates": 4,
+      "full_columns": 256,
+      "axes": 4,
+      "all_spectators_and_vector_commutators": true
+    }
+  ],
+  "production_order": {
+    "tested_actual_CODE_axes": [
+      0,
+      1,
+      1344,
+      2687
+    ],
+    "all_low_then_all_high_verified": true,
+    "signed_A57_request_roundtrips": 48,
+    "production_exponential_sum_refused": true
+  },
+  "transpose_and_norm": {
+    "exact_pairing": true,
+    "kernel_not_implicitly_inverted": true,
+    "original_Vh_numeric_normalization_inferred": false
+  },
+  "general_connection_kernel_diagnostic": {
+    "nonzero_C2_zero_extension": "-2*t**7 + 7*t**6 - 9*t**5 + 5*t**4 - t**3",
+    "ordinary_integral": "0",
+    "weighted_integral": "1/2520",
+    "commuting_identity_background_holonomy_unchanged": true,
+    "actual_Einstein_source_nonzero_on_kernel_proved": false
+  },
+  "same_field_binding": {
+    "actual_A53_field_bound_sites": 64,
+    "all_2688_offset_roles_checked": true,
+    "outward_precisions_nested": [
+      128,
+      192
+    ],
+    "actual_bound_centre_B114_full_2688_transpose_diagnostic": true,
+    "rounded_B21_export_used_as_exact_source": false,
+    "numerical_pairing_is_price_or_interval_certificate": false
+  },
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/check_field_source_pullback.py": "dbe7c9a03f0957051cf971e8ed3a8a615015803b250ab61e1e9f4e7e9fd7cc8a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/field_source_pullback.py": "fee71d725ebd551d0533e90d52707d31bff933c022c2f812b3e1dbf3beeb1733",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/full_vector_controls.py": "31ff35852f723b4b0cb8d04e3d46be5a0e03785fb9aa0b00f7ce140b54d46ad9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/FULL_VECTOR_CONTROL_CHECK.json": "2f8c9414a5da53cf73dedae891d7cc8d7028e86db2ea8cd4ed8955141691c56e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round48/two_bit_global_source.py": "d1a793af7b613ad37edc6c66c1156fc586f8b065d2f6ca4f9436cb68eb3e00b1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/regular_field_targets.py": "9b7dc8986ee1f095235219b26f275ae76dc1bfccec9e4db45c5b838dae020a0f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round20/coframe_targets.py": "37d0aec5112743fec6a7f9b48e865ad4311dd24d4c55574ecb5ad622b42b140c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round57/full_plane_family.py": "cf8a03d700ae1349e9d0a0b41e3918b83577703239b6021ad637fe1ccdbe4be6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round57/RESULT.json": "682ac0caf2c7eac89908dc8223b20184b38a85bc1829c11f85a51251885e9d4b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round114/physical_chart_l4.py": "fbea10248593212b50dc844dc5440d5f098a5e74ee5860a14727ed261ec17f9e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round114/check_physical_chart.py": "393090b1ab02e1433d69f04ce320d1bc3832395ec5dc6818246825de2d70e196",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round114/B114_PHYSICAL_CHART_CHECK.json": "9002981755588795788c0cd82110509624427cb46548e458226331b633fd77ae",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round114/B114_PHYSICAL_CHART_PULLBACK_RU.md": "fb2b95ec317d570a15dc28d90c4a5c33be83605e4362f264592d9af52047f374"
+  }
+}

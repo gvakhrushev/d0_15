@@ -1,0 +1,13 @@
+{
+  "status": "reviewed",
+  "artifact_sha256": {
+    "RESULT.json": "310566326de76368711517522873bcc6e64ae8682e9b9591774d17e306390527",
+    "ROOT_REVIEW_B117.json": "7580b5b4f7c6b4172394870bb67e25cdc64a1824545faabdc6d50729f7589e20",
+    "ROOT_REVIEW_B118.json": "268208f5a4a0c0f92c53ef885fbd30626a5ae16be2ed1b55f28dd022160a1306",
+    "SOURCE_RECORD_CAPACITY_CHECK.json": "b4aa7e2690d22cd91e923d0955034195a8ebb398ed362baaee6161c5fabb96fa",
+    "SOURCE_RECORD_CAPACITY_RU.md": "e024fc66c6abc42dd7726768365bfda37bef90b7548da56f88d529361cbd0519",
+    "check_source_record_capacity.py": "8cec201bf7afce10046046cf79b173075b747d281a4999d8297b06248853b19e"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

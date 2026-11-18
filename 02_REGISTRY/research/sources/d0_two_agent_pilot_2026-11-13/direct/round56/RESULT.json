@@ -1,0 +1,40 @@
+{
+  "status": "REGULAR_FULL_ANALYTIC_CODE_SOURCE_AND_FINITE_STATISTICAL_COMPARISONS_REVIEWED",
+  "parent_A55_commit": "032ef060fe26f4ee01be6eb631a155c9714db40b",
+  "independent_B_commits": {
+    "B109": "288751b0e65310a6ba3905a4ea682d2811962ab3",
+    "B110": "23436014cbb9a37cd5221d8794a76b55d732a8fc",
+    "B111": "86c27d56800bd001b5721e45cae21162e9c883ae"
+  },
+  "parent_substitution": "A55 selected-price recovery extended analytically from MG2 axes to all four independent real CODE-skew slots, with nonzero kernel directions, the actual full 425D heat, actual return gain and the original statistical source orientation",
+  "control_space": "four independent skew(R^(2^5376)) slots at each fixed rational field in the existing chart",
+  "raw_norm": "max(||ell(Pf)-ell(Qf)/2+ell(Qb)/2||_2, max_a||X_a||op/52)",
+  "analytic_master_and_oriented_statistical_full_raw_dual_error_lt": "2^-34",
+  "analytic_heat_full_raw_dual_error_lt": "2^-40672",
+  "finite_native_MG2_statistical_four_axis_l2_error_lt": "2^-101",
+  "new_Nbase_not_replaced_by_old_A49": true,
+  "original_beta": "2p^2; beta-1=-p^3",
+  "statistical_gain_and_orientation": "Gamma_stat=Gamma/ln(phi); use -DA_stat/Gamma_stat",
+  "actual_coordinate_scale_and_right_lift": "sigma*L and R/sigma, sigma=2^-80",
+  "same_graph_operator_price_is_a_retained_premise_not_physical_binding": true,
+  "later_7fu_withdrawal_of_7fs_physical_C_proposal_preserved": true,
+  "full_finite_native_skew_family_built": false,
+  "physical_iota_Vh_or_full_admission_identified": false,
+  "original_fine_instrument_or_descriptor_marked_transport_closed": false,
+  "next_named_application": "Build and price full plane comparison providers using the existing CODE-only compiler, then reconstruct a finite full covector with actual dimension/readout/clock constants; retain physical norm and physical Cost-Info as separate obligations",
+  "next_sufficient_budget_is_not_implemented": {
+    "step": "2^-6000",
+    "uniform_plane_angle_precision": "2^-32768",
+    "remeasured_new_body_bound_required": "Nbase<2^b; old b=30833 cannot be transferred",
+    "conditional_retention_pairs": "4*(b+17375)",
+    "normalized_readout_error": "<2^-8150",
+    "additional_basis_interpolant_raw_dual_error": "<2^-75",
+    "does_not_imply_arbitrary_X_joint_finite_compilation": true
+  },
+  "no_new_action_Info_weight_selector_or_geometry_root": true,
+  "production_path_sum_or_expanded_word_executed": false,
+  "local_only": true,
+  "published": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

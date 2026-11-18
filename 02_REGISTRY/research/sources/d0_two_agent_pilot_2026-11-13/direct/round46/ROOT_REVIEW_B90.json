@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INDEPENDENT_ROOT_BYTE_IDENTICAL_REPLAY",
+  "owner_commit": "3eea90312d274ba75392c0f4d253912937fa82ed",
+  "checker": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round90/check_fresh_arena_independent.py",
+  "expected_receipt": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round90/B90_FRESH_ARENA_INDEPENDENT_CHECK.json",
+  "no_owner_files_written": true,
+  "checker_sha256": "3afdbfce99eaf0ce1e5b46b44e463e33cae887d42b32f4cf7b871ff76eed2974",
+  "receipt_sha256": "46a0c5ba9a91c8c7012b13b43df8dc01d7d40350e05f59ee72a777fe0d792860",
+  "report_sha256": "616bb5f8f024150cf9d370bfad298a147b318fce76702271dcef322d8a937900",
+  "owner_status": "FRESH_INDEPENDENT_ARENA_AND_LOGICAL_COMMUTATION_CONDITIONAL_AUDIT",
+  "source_pins_verified": true,
+  "production_execution_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

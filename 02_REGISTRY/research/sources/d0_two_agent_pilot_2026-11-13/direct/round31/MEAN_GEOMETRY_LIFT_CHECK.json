@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ALL_RAW_CHART_BINDINGS_AND_EXACT_RESPONSE_IDENTITIES",
+  "coordinate_bindings": 2688,
+  "coordinate_counts": {
+    "coframe": 1024,
+    "proper_link": 1536,
+    "matter": 128
+  },
+  "full_link_matrix_bindings": 256,
+  "exact_eta_K_components": 36,
+  "exact_three_SAM_diagonal_response_fixture": true,
+  "actual_large_mean_or_J_evaluated": false,
+  "native_error_terms_alone_are_not_full_source_consistency": true,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/check_mean_geometry_lift.py": "185449335b1b24ccbe309ba9a1e1e6dfe284acb4b8508d1fd7f4f4d20876fdff",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/mean_geometry_lift.py": "1f5ec768c90e614c4c6af836aae09fde015bf274ef8a2531e44c6b15ec776163",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/MEAN_GEOMETRY_LIFT_PLAN.json": "581565f4d426c60740d6bae39fe4880d201fcc35a5046ff6c8f00cab381f0a48",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/SOURCE_RAW_MARK_REGISTRY.json": "3c17d2d6d3eb65381dbca14c55f440315646e5ff91fc3ad1fc516777838cbb79",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/precision_name.py": "ed62b2d20eca69dc016fa1414688abe2b7fd60fa3f1c83069e99ef137742edce"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

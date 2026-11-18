@@ -1,0 +1,27 @@
+{
+  "status": "LOCAL_REVIEWED_G_CX_ONLY_FINITE_CONSTRUCTION",
+  "parent": "A25/A27/A28 fixed h=1/4, SAM=2688 geometric source; original RAW R1-R6 profile gap",
+  "removed_named_premise": "extra SourceI/Spin gate profile for this constructed word",
+  "independent_reviews": [
+    "B57 positive G powers",
+    "B58 full provider structural coverage",
+    "B59 new RAW/clock/scalar contract"
+  ],
+  "primitive_alphabet": [
+    "G",
+    "CX"
+  ],
+  "additional_canonical_RAW_helpers": 1,
+  "total_births": 10407050782,
+  "native_calls_bit_length": 11647,
+  "all_column_word_replacement_error_lt": "2^-3244",
+  "canonical_compressed_error_lt": "2^-3231",
+  "scalar_gt": "2/3",
+  "native_only_normalized_error_lt": "2^-73",
+  "full_flat_word_or_clock_matrix_executed": false,
+  "exact_new_reflection_claimed": false,
+  "next_parent_obligation": "original source marked-prefix embeddings/readers on canonical WORK checkpoint, actual old cut and full original price/Cost-Info",
+  "local_only": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
