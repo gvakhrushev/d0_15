@@ -9,7 +9,8 @@
   "reviewed_pr334": "06edd2e922950459c1d79b1b12b2ce453680c03c",
   "related_open_commits": {
     "B151": "255ebecc88505e55de3eb9c2eeec33cf8e26af06",
-    "B152": "ea937197fc45a618fa71ba3d47fc90d3ea1db2b4"
+    "B152": "ea937197fc45a618fa71ba3d47fc90d3ea1db2b4",
+    "B153": "02f9f435c837228e4c80ec34739b7b2162a5a5bd"
   },
   "GR_closed": false,
   "physical_C_closed": false,
@@ -204,5 +205,34 @@
         "direct/round77/renewal/check_three_lengths.py": "5ae3cd659b16f4ed0ebe6dcaa36272ab92c8d237ba2069db0e32c6929a866a23"
       }
     }
-  ]
+  ],
+  "verification": {
+    "verified_commit": "15b1375125004c9d3802217aafd8e72158a385c4",
+    "rounds": "A62–A77",
+    "passed": 107,
+    "failed": 0,
+    "A77_passed": 10,
+    "A77_isolated_replay": {
+      "passed": 10,
+      "failed": 0,
+      "committed_files": 65,
+      "primary_git_blobs_verified": 31,
+      "remote_readout_blob": "0f4ca7c42cfb368b0680f0a89fe5b004d1f81790",
+      "command_from_pilot_root": "OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot 15b1375125004c9d3802217aafd8e72158a385c4 direct/round77/portfolio.json"
+    },
+    "checked_upstream_head": "06edd2e922950459c1d79b1b12b2ce453680c03c",
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "repo_validators": [
+      "validate_work.py",
+      "validate_agent_protocol.py",
+      "validate_repo.py",
+      "gr_assembly.py --json check"
+    ],
+    "assembly_valid": true,
+    "scientific_promotion": false
+  }
 }

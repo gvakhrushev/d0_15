@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+from tempfile import TemporaryDirectory
 
 
 def verify_lane(base, lane):
@@ -71,11 +72,62 @@ def main(manifests, workers=4):
     return int(failed)
 
 
+def verify_git_snapshot(revision, manifests, workers):
+    """Run the committed verifier on the inputs declared at one revision."""
+    pilot = Path(__file__).resolve().parent
+    repo = pilot.parents[3]
+    prefix = pilot.relative_to(repo)
+    git = ["git", "-C", str(repo)]
+    commit = subprocess.check_output(
+        [*git, "rev-parse", "--verify", "--end-of-options", revision + "^{commit}"],
+        text=True).strip()
+    names = [Path(path).resolve().relative_to(pilot) for path in manifests]
+
+    def blob(path):
+        return subprocess.check_output([*git, "cat-file", "blob", f"{commit}:{path.as_posix()}"])
+
+    def relative_file(name):
+        path = Path(name)
+        if not path.parts or path.is_absolute() or ".." in path.parts:
+            raise ValueError(f"Expected a repository-relative file: {name}")
+        return path
+
+    files = {prefix / "verify_portfolio.py"}
+    for name in names:
+        path = prefix / name
+        portfolio = json.loads(blob(path))
+        files.add(path)
+        files.update(relative_file(f) for f in portfolio.get("primary_git_blobs_on_shared", {}))
+        for lane in portfolio["lanes"]:
+            files.update(prefix / relative_file(f) for f in lane["evidence"])
+
+    with TemporaryDirectory(prefix="d0-portfolio-") as folder:
+        root = Path(folder)
+        for path in sorted(files):
+            target = root / path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(blob(path))
+        print(f"Git snapshot {commit}, {len(files)} committed files", flush=True)
+        return subprocess.run(
+            [sys.executable, "-B", "verify_portfolio.py", "--jobs", str(workers),
+             *(str(name) for name in names)], cwd=root / prefix,
+            env=dict(os.environ, PYTHONOPTIMIZE="0")).returncode
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("manifests", nargs="+", metavar="portfolio.json")
     parser.add_argument("--jobs", type=int, default=4, help="concurrent checks (default: 4)")
+    parser.add_argument("--git-snapshot", metavar="REV",
+                        help="replay the committed files of a self-contained portfolio")
     args = parser.parse_args()
     if args.jobs < 1:
         parser.error("--jobs must be positive")
-    sys.exit(main(args.manifests, args.jobs))
+    if args.git_snapshot:
+        try:
+            status = verify_git_snapshot(args.git_snapshot, args.manifests, args.jobs)
+        except (ValueError, OSError, KeyError, subprocess.CalledProcessError) as exc:
+            parser.exit(1, f"Git snapshot verification failed: {exc}\n")
+    else:
+        status = main(args.manifests, args.jobs)
+    sys.exit(status)
