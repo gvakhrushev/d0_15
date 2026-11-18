@@ -1,0 +1,58 @@
+{
+  "round": "A66",
+  "base_direct": "79756de48ef01112358b8273ecb8ae7348554ca1",
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "lanes": [
+    {
+      "id": "complete_print_clock",
+      "check": "direct/round66/clock/check_print_clock.py",
+      "result": "Полные H и J на исполняемом графе физической печати.",
+      "open": "Отдельно ограничить независимо меняющиеся новые устройства.",
+      "evidence": {
+        "direct/round66/clock/check_print_clock.py": "ee239173f0208182df2629bcc1ef02a1957eb39c6826b9b72cd8b41625091a82",
+        "direct/round66/clock/FULL_PRINT_CLOCK_RU.md": "76d3d4730f16d1d2f5b1914d419a1febad758db4ae117f1d78930173b4309c94"
+      }
+    },
+    {
+      "id": "one_tag_cost_info",
+      "check": "direct/round66/printing/check_one_tag_price.py",
+      "result": "Односторонний зарегистрированный прирост всей CQ-информации и предел для совместного кодирования.",
+      "open": "Получить законы целой физической цены, включая изменения оплат.",
+      "evidence": {
+        "direct/round66/printing/check_one_tag_price.py": "9b41435ff53a9b34f46cc5fb8263bf4c07f0fc2a26f0490bba18faa35714cffe",
+        "direct/round66/printing/ONE_TAG_PRICE_RU.md": "47c56c020c310e09f6d59e6a805f351e8eda5b8a9a09da5ac7574eeb0cfc4d13"
+      }
+    },
+    {
+      "id": "marked_field_return",
+      "check": "direct/round66/return/check_return_odds.py",
+      "result": "Фиксированное слово на обоих полевых плечах изолирует отклик правильного возврата.",
+      "open": "Ограничить смешанную ошибку переноса ненормированного веса.",
+      "evidence": {
+        "direct/round66/return/check_return_odds.py": "fa5321b2e33ff9ca9601ee8e95568a9674ddb4a485336cc34503da31867222bb",
+        "direct/round66/return/FIELD_MARKED_RETURN_RU.md": "362e56f98bbac8577df18d4f623509c6c5549f0d6f35959df52783d74bb64032"
+      }
+    },
+    {
+      "id": "marked_partition_score",
+      "check": "direct/round66/check_absolute_marked_price.py",
+      "result": "Ограничение для одного измеренного бита и положительный источник свежих обращений.",
+      "open": "Вычислить отклики истинных условных масс.",
+      "evidence": {
+        "direct/round66/check_absolute_marked_price.py": "548c465e25a73abefe5e47dd784e25c76406b16cbf984985c4d36997097c08eb",
+        "direct/round66/ABSOLUTE_MARKED_PRICE_RU.md": "ba2d40f08dcf31a1d5715439f2221d1c44f5ff60f9caf51f32911212fbe43751"
+      }
+    },
+    {
+      "id": "native_same_clock_gap",
+      "check": "direct/round66/check_native_clock_gap.py",
+      "result": "Две программы с общим принтером разделяют конечные контрасты статистической суммы и отмеченного события.",
+      "open": "Отдельно провести геометрический подъём с полной физической ценой.",
+      "evidence": {
+        "direct/round66/check_native_clock_gap.py": "02e56359f9ce89e60accbc09397c157b92b464b8d0388f034610277f704dd594",
+        "direct/round66/READOUT_RU.md": "981c82c866c2b75a8ff2a3659845dc60c5b850c80c1ebee1fb162c04094a7ae2"
+      }
+    }
+  ]
+}
