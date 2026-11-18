@@ -52,14 +52,39 @@ def partition(tick,beta):
                                for t in angles)
 
 
+def measured_suffix(prime, attach):
+    # The auxiliary root has the entire eight-dimensional Spin and port.
+    # Canonical t is born, both t outcomes are addressed, with real last
+    # gates on nonsymmetric branches. Invalid apparatus columns are kept.
+    clock=Clock(prime)
+    if attach:
+        mark=clock.birth(0)
+        root=clock.raw(mark,'G',(2,))
+    else:
+        clock.dims[0]=8
+        root=0
+    t=clock.birth(root)
+    children=clock.router(t,np.arange(16)%2)
+    for child,last_gate in zip(children,[('G',(3,)),('SourceI',(2,0,1))]):
+        leaf=clock.raw(child,'CX',(2,3))
+        clock.last[leaf]=gate(4,*last_gate,prime)
+    tick,_=clock.close()
+    return tick.toarray()
+
+
 def check_splice():
     p=(5**.5-1)/2
     beta=2*p*p
-    for extra in [[('SourceI',(2,0,1))],[('G',(2,)),('SourceI',(2,0,1)),('G',(2,))]]:
+    for extra in [[('SourceI',(2,0,1))],[('G',(2,)),('SourceI',(2,0,1)),('G',(2,))],None]:
         for prime in (0,11):
             old=raw_clock([],prime)
-            new=raw_clock(extra,prime)
-            aux=cyclic(extra,prime)
+            if extra is None:
+                new=measured_suffix(prime,True)
+                aux=measured_suffix(prime,False)
+                need(len(aux)==88 and len(new)==len(old)+88,'real birth and both newly measured leaves')
+            else:
+                new=raw_clock(extra,prime)
+                aux=cyclic(extra,prime)
             split=sparse.block_diag([old,aux]).toarray()
             # Direct construction of the output-exchange operator from the two native ticks.
             swap=np.einsum("ik,jk->ij",new,split,optimize=False)
@@ -68,13 +93,13 @@ def check_splice():
                 need(not np.any((swap-swap.T)%prime),'symmetric exchange on exact native ring residue')
                 need(not np.any((swap@swap-np.eye(len(swap),dtype=swap.dtype))%prime),'exact involution')
                 need(not np.any((swap@split-new)%prime),'all-column physical splice')
+                need((np.trace(diff)+16)%prime==0,'twice the full gluing dimension')
             else:
                 sv=np.linalg.svd(diff,compute_uv=False)
                 need(np.max(np.abs(sv[:8]-2))<1e-11 and max(sv[8:],default=0)<1e-11,'rank and trace norm')
                 zo,za,zn=[partition(t,beta) for t in (old,aux,new)]
-                need(abs(zn-zo-za)<=12*beta*8 and zn-zo>(359*len(extra)-12*beta)*8,
+                need(abs(zn-zo-za)<=12*beta*8 and zn-zo>359*len(aux)-12*beta*8,
                      'complete positive partition increases')
-
 
 def mul(x,y):
     # (u+v*p)(s+t*p), where p^2=1-p.
@@ -97,6 +122,10 @@ def check_gap():
         need(norm!=0 and abs(norm)>=1,'integer conjugate norm for the LC power')
     x=F(2,55)
     noise=F(1,2**20)
+    # e^v-1 <= v/(1-v), -log(1-z) <= z/(1-z).
+    upper_v=F(4,5)*4*noise/(1-noise)
+    need(359-12*F(4,5)>425*250000*upper_v/(1-upper_v),
+         'rank-four serial base wins before arbitrary measured tails under the stated size condition')
     past=F(1,2**256)
     # Source: 2AB=2p^2 sqrt(q(1-q))>1/4 for p^2<q<=1/2.
     need((2*F(3,5)**2)**2 * F(3,5)**2*F(1,2)>F(1,16),'uniform LC sector product')
@@ -123,5 +152,5 @@ def check_gap():
 if __name__=='__main__':
     check_splice()
     check_gap()
-    print('PASS: G5 physical splice, both Hodge degrees, exact rank, algebraic finite-angle gaps, strict '
+    print('PASS: G5 and measured RC1 splices with a new birth, both Hodge degrees, exact rank, algebraic finite-angle gaps, strict '
           'fixed-width winner and source calibration for noisy LC.')
