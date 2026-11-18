@@ -1,0 +1,33 @@
+{
+  "GR_closed": false,
+  "finite_check": "exact rational coefficients and layer count; limits proved in B146",
+  "constant_density_leg_norms_squared": [
+    "1/2",
+    "2",
+    "1",
+    "1"
+  ],
+  "inherited_RIGHT128_nearest_overlaps_at_L4": [
+    "7/16",
+    "3/16",
+    "1/16",
+    "0"
+  ],
+  "inherited_limit_h_times_physical_minimum_squared": "32805/65536",
+  "recomputed_reference_limit_physical_minimum_squared": "27/16",
+  "inherited_uniform_pf_samples_h_times_physical_norm_squared": {
+    "16": "6125141/16777216",
+    "32": "115282325/268435456",
+    "64": "1993518677/4294967296",
+    "128": "33132480725/68719476736",
+    "256": "540188066261/1099511627776",
+    "512": "8724276200405/17592186044416"
+  },
+  "original_full_book_cost_info_transferred": false,
+  "source_sha256": {
+    "sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md": "97f85701e51dcb4b920f1e317cc21efa381d79a32533246ee1a89b61ca85978d",
+    "sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15",
+    "A4D_ORIGINAL_GOLDEN_PF_DISCRETE_C2_REGULARITY_2026_10_22.md": "bdac4cbfcbc15d386731ede81f614081b4203f0c1753a43cc1e3e3155fee30ba",
+    "sources/d0_two_agent_pilot_2026-11-13/direct/round73/matter/check_matter_root.py": "3b6f6e7edc47d62e9549b44bc6bb00570f8e501ca86eb9cb714bbf42e648019b"
+  }
+}
