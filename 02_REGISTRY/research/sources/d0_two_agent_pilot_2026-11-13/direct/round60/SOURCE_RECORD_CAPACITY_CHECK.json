@@ -1,0 +1,47 @@
+{
+  "status": "PASS_ACTUAL_SOURCE_BANK_PRESERVING_CAPACITY_BOUND",
+  "production": {
+    "SOURCE_error_lt": "2^-3423",
+    "full_bank_M1": 1748,
+    "CODE_vertex_radius_lt": 104,
+    "sigma": "2^-80",
+    "uniform_actual_near_product_delta_lt": "2^-62",
+    "bank_anchor_loss_lt": "2^-124",
+    "CODE_bits": 5376,
+    "all_input_capacity": "2^b*d >= (1-delta^2)*2^5376",
+    "record_qubits_if_total_side_d_equals_1_at_least": 5376,
+    "record_qubits_if_total_side_d_equals_9_at_least": 5373,
+    "d_equals_9_is_an_example_not_actual_history_clock": true,
+    "canonical_pure_SOURCE_bank_entropy_bits_lt": "2^-111",
+    "entropy_value_bound_is_not_source_bound": true
+  },
+  "exact_noncommuting_fixture": {
+    "orthogonal_CODE_inputs": 4,
+    "full_CODE_bank_unitary_dimension": 8,
+    "actual_CODE_mixing_included": true,
+    "rational_Frobenius_defect_lt": "1/64",
+    "projector_trace_capacity_bound_exact": true,
+    "reversible_bank_storage_countercontrol": true,
+    "one_fixed_superposition_alone_used_to_infer_capacity": false
+  },
+  "ideal_pure_bank_gram_control": {
+    "pairwise_nonzero_exact_bank_overlaps": 6,
+    "pointwise_pure_bank_preservation_requires_orthogonal_codes": true,
+    "actual_rare_CODE_conditional_states_claimed_uniformly_close": false
+  },
+  "physical_Info_selected": false,
+  "physical_Cost_intertwiner_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round60/check_source_record_capacity.py": "8cec201bf7afce10046046cf79b173075b747d281a4999d8297b06248853b19e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/full_vector_controls.py": "31ff35852f723b4b0cb8d04e3d46be5a0e03785fb9aa0b00f7ce140b54d46ad9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round47/FULL_VECTOR_CONTROL_CHECK.json": "2f8c9414a5da53cf73dedae891d7cc8d7028e86db2ea8cd4ed8955141691c56e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/regular_global_source.py": "420d134e6d4a01aaf47f4ddba76d301faf1bf7c64d9e3225d1d512a170e0c395",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/REGULAR_GLOBAL_SOURCE_RU.md": "c01b0d54b989883e52987c7081103f59063a231d2781901ce211532e8c123bf5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/regular_comparison_task.py": "e734262fdea2917ff9ea09960ffb4b6375f2e5f1adec96d2ec5b3455db7fb634",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/REGULAR_FIELD_TASK_AND_FRONTIERS_RU.md": "a31a4f259140778ad70566db8eb064d536ef1f9fd84df6567443e148493b5cab",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/RESULT.json": "4f835b682552fb0951428031805cfd3bcee4ba0002be172d789a17c698464d18",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round59/RESULT.json": "7ba40e00d68e0b51c44deb4c90fc42adb8a1bb75e10108d4e2314c64528710d0"
+  }
+}

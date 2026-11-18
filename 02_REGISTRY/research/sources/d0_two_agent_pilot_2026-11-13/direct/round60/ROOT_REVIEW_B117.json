@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ROOT_B117_PINNED_READ_ONLY_BYTE_IDENTICAL_REPLAY",
+  "commit": "7a6977d4597cd031b98569fc6e98ff269eb0495e",
+  "all_Git_blobs_and_source_pins_verified": true,
+  "owner_writes_suppressed": [
+    "B117_RETAINED_CODEC_CAPACITY_CHECK.json"
+  ],
+  "artifact_sha256": {
+    "B117_RETAINED_CODEC_CAPACITY_CHECK.json": "c9030190153d2b0720f081d07e32dcbbc74ece48c5f8af9f8e9195ea44214bc3",
+    "B117_RETAINED_CODEC_CAPACITY_RU.md": "077975e6af1c554e3973dd4bd7817ef19fbe9f6d9c091a4bcc3ef616aca94418",
+    "check_retained_codec_capacity.py": "769d021428c75f08d51c36666ec600c786e70387ade9d2ff7f6ba9de9af90e6a"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}
