@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "primary_native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "serialized_passive_weights_exponents_before_neutral_births": [
+    4,
+    7
+  ],
+  "all_four_retained_outcome_exponents_before_neutral_births": [
+    5,
+    8,
+    6,
+    9
+  ],
+  "neutral_tail_overlap_squared": "p",
+  "neutral_tail_dimension_multiplier": 2,
+  "exact_range_and_independent_backward_secant": true,
+  "actual_88_control_threshold": "The actual k=1 backward secant has |delta_J| > 2^(-57) before neutral births",
+  "matched_geometric_source_only_on_guarded_reverse_domain": true,
+  "full_physical_book_price_selected": false,
+  "GR_closed": false
+}
