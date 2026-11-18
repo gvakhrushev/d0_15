@@ -195,3 +195,19 @@ gold = (sp.sqrt(5)-1)/2
 assert sp.simplify(gold + gold**2 - 1) == 0
 assert len(edges) <= 33**2 and 33 < 2**20
 assert sp.simplify(2*gold**3 / (1 - gold**2 - gold**4) - 1) == 0
+
+# One registered repeat count, or three specified full words, suffice as well.
+ell = sum(primitive)
+total = sum(M)
+repeat_chance = (total-ell)/total
+assert repeat_chance == ell and repeat_chance/(1-repeat_chance) == total
+power = primitive
+for n in range(1, 5):
+    assert sum(power)/total == (1-ell)*ell**(n-1)
+    power = cq(power, primitive)
+# Actual two-tick returns via vertices 9 or 20, and their concatenation.
+w, v = t**2*k**2, t**2
+clock2, clock4 = sp.symbols("clock2 clock4", positive=True)
+Z = clock2*w + clock2*v + clock4*w*v
+assert sp.cancel(((clock4*w*v/Z)/((clock2*w/Z)*(clock2*v/Z))
+                  * clock2**2/clock4) - Z) == 0
