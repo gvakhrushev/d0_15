@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "four_measured_outcomes_normalized_actual_ranges": true,
+  "strict_scalar_J_source_under_genuine_coarse_calibration": true,
+  "no_ordinary_uniform_old_trace_assumed": true,
+  "calibration_selected_by_original_SER_or_Book00": false,
+  "full_physical_book_price_selected": false,
+  "GR_closed": false
+}
