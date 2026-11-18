@@ -1,0 +1,22 @@
+{
+  "GR_closed": false,
+  "actual_full_economic_weight_and_admission_proved": false,
+  "nonconstant_active_A76_affine_rows": 64,
+  "A76_affine_dimension": 26,
+  "symmetry_paired_ordered_leaves_of_3_to_8": 4160,
+  "unscaled_lattice_control_max_errors": {
+    "64": 0.11089184459290051,
+    "128": 0.0033323594281759322,
+    "256": 0.0009614508483145046,
+    "512": 0.00048082729532467755,
+    "1024": 0.00024044145460697108
+  },
+  "diagnostic_sqrt_n_tariff_error_derivative_drift": 0.7974463989043529,
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md": "6c4d8e175a2bc23ea2f6995fa111897b73ce07ed45e3ce19041bacaa5245a116",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round150/RESULT.json": "97328238919af3d386bef8ab86a3356057cd347496f8713cf70f9be5aff84a9d",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round76/geometry/INVISIBLE_GEOMETRY_RU.md": "9db09d86afed635e54d9b88e4409fd3b2e9bdc4ea3143f64fdd85b5f0d4a6e9d",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round76/record/COMPLETE_RECORD_PRICE_RU.md": "9a11b8888eeb03bf9ecf52fb7bd5328a536338a4a11562550550c6cf9641b1e0",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round76/history/STOPPED_HISTORY_RU.md": "959d69a196f148fd93b422ff1e7000c9bb2645458856cb9f9756fac42e8c1827"
+  }
+}
