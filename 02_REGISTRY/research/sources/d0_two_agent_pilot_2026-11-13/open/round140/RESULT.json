@@ -1,0 +1,92 @@
+{
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94",
+    "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4"
+  },
+  "serializer": {
+    "occupied_cursor_changes": {
+      "0": false,
+      "1": true
+    },
+    "selected_stage": 57,
+    "effect_on_root": "original Q",
+    "mean_excess_response": "eta * Dq"
+  },
+  "reordered_completion": {
+    "new_steps_total": 59,
+    "active_paths": [
+      [
+        "110",
+        "111",
+        "110",
+        "100"
+      ],
+      [
+        "110",
+        "100",
+        "101",
+        "100"
+      ]
+    ],
+    "same_full_endpoint_and_declared_mark_effects": true
+  },
+  "Book_growing_clock_comparison": {
+    "phase_fixture_weight_bounds": [
+      "1/10",
+      "1/4"
+    ],
+    "phase_fixture_gap_lower": "1/16",
+    "strict_rational_padding_bounds": {
+      "2": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 2
+      },
+      "3": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 3
+      },
+      "4": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 3
+      },
+      "5": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 3
+      },
+      "6": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 4
+      },
+      "7": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 4
+      },
+      "8": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 4
+      },
+      "9": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 5
+      },
+      "10": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 5
+      },
+      "11": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 5
+      },
+      "12": {
+        "literal_common_spacer_blocks": 0,
+        "sufficient_common_paid_CX_pairs": 6
+      }
+    }
+  },
+  "physical_edge_tariff_selected": false,
+  "full_Cost_minus_Info_bound_to_Book_master": false,
+  "GR_closed": false,
+  "status": "PASS"
+}

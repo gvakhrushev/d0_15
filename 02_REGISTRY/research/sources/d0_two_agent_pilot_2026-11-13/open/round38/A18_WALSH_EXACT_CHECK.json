@@ -1,0 +1,74 @@
+{
+  "status": "PASS_A18_SMALL_NATIVE_WALSH_EXACT_TRUE_SPIN",
+  "reports": [
+    {
+      "K": 2,
+      "pattern": [
+        0,
+        0
+      ],
+      "all_columns": 128,
+      "forward_gates": 12,
+      "literal_inverse_gates": 52
+    },
+    {
+      "K": 2,
+      "pattern": [
+        1,
+        0
+      ],
+      "all_columns": 128,
+      "forward_gates": 32,
+      "literal_inverse_gates": 76
+    },
+    {
+      "K": 2,
+      "pattern": [
+        1,
+        1
+      ],
+      "all_columns": 128,
+      "forward_gates": 32,
+      "literal_inverse_gates": 76
+    },
+    {
+      "K": 3,
+      "pattern": [
+        0,
+        0,
+        0
+      ],
+      "all_columns": 256,
+      "forward_gates": 32,
+      "literal_inverse_gates": 112
+    },
+    {
+      "K": 3,
+      "pattern": [
+        1,
+        0,
+        1
+      ],
+      "all_columns": 256,
+      "forward_gates": 72,
+      "literal_inverse_gates": 160
+    },
+    {
+      "K": 3,
+      "pattern": [
+        1,
+        1,
+        1
+      ],
+      "all_columns": 256,
+      "forward_gates": 72,
+      "literal_inverse_gates": 160
+    }
+  ],
+  "all_columns": 1152,
+  "all_inverse_cases": 1152,
+  "true_spin": "diag(J,-J)",
+  "general_K_argument": "Walsh parity identity exactly cancels all off-predicate rotations; on-sector exponent=2^K*k*theta",
+  "full_K11_K13_huge_words_executed": false,
+  "GR_closed": false
+}

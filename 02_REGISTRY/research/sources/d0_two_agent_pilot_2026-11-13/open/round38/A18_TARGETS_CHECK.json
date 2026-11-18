@@ -1,0 +1,25 @@
+{
+  "status": "PASS_INDEPENDENT_A18_TARGETS_CATALOGUE_AND_LOCALITY",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round18/material_targets.py": "7b3246e3a03c01bbb6da3b2e3b6eaedfb9abb1591bbd2912ef02946859b8db7b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round18/material_preparation.py": "24b57b6ddf50c92908ba25b64e171477f124f9fdc853422ab6b6924c6959256d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e"
+  },
+  "SAM_coordinates": 2688,
+  "site_count": 256,
+  "local_matter_coordinates": 128,
+  "q_sectors": 448,
+  "y_plus_sectors": 256,
+  "y_minus_sectors": 256,
+  "distinct_half_vector_families": 22,
+  "all_22_half_vectors_and_66_rotations_checked": true,
+  "independent_mp_checks_are_diagnostic_only": true,
+  "outward_integer_arithmetic_reviewed": true,
+  "B25_other_2686_bits_hostile_cases": 8,
+  "exact_two_bits_per_free_site": true,
+  "three_plane_product_matches_half_vector": true,
+  "scope": "source and exact formula review; no native huge word or physical bank preparation",
+  "GR_closed": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_NUMERIC_COMPLETE_SITE_TARGET_NOT_NATIVE_WORD",
+  "dimension": 256,
+  "site_born_qubits": 8,
+  "site_probability": "N_x/10946 = (1/256) rho_x",
+  "target": "O_chi (G^tensor8)^T on all 256 columns",
+  "positive_anchor": 0.0557329121835275,
+  "orthogonality_error_float": 1.7763568394002505e-15,
+  "born_mapping_error_float": 9.992007221626409e-16,
+  "float_not_interval_certified": true,
+  "native_site_loader_word_emitted": false,
+  "future_site_marks_and_unprepare_paid": false,
+  "target_sha256": "c261485779c11b3ece4dbb4a38456e8d0ca32acc0036065172e18995fbe3b56d",
+  "GR_closed": false
+}

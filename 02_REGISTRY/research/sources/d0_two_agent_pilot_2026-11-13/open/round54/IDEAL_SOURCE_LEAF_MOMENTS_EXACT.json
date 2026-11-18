@@ -1,0 +1,26 @@
+{
+  "status": "PASS_EXACT_IDEAL_CHOICAR_LEAF_MOMENT_STRUCTURE",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round24/TORUS_CHOI_ADDRESSES.jsonl": "35897a838390fcd0c2ad1854d2934b3c21d6c7e4b877953a097cbb9c873238f3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/ORIGINAL_FOURIER128_L4.json": "5e691225f746e346afe3ad61a9e5123666fd8d1f270e27756914730b598b5934",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418"
+  },
+  "all_72192_bound_leaves": {
+    "coframe": 4096,
+    "proper_link": 65536,
+    "CAR": 2560
+  },
+  "all_256_Fourier_site_RIGHT_masses": "1/256 exact",
+  "creator_and_exterior_grade1_symbolic_identity": true,
+  "Choi_anchor_multipliers_exact": {
+    "coframe": 32784,
+    "link": 65568
+  },
+  "CAR_moment": "2 sqrt(p) psi[grade]/256",
+  "generic_anchored_rotation_all_columns_orthogonality_under_unit_norm": true,
+  "scope": "Exact identities for the declared ideal source target and every finite original address. Consumes B25 Julia/full source definitions and unit norm/positive defect; no giant native stage or physical marked map executed.",
+  "GR_closed": false
+}

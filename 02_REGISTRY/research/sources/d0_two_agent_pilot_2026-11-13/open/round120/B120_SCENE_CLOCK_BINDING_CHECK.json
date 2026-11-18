@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "scene": {
+    "directed_edges": 718,
+    "adjacency_rank": 3,
+    "scene_feedback_rank": 32,
+    "binary_unit_leakage_modes": 30,
+    "rank_four_intersection_dimension_at_least": 26,
+    "scene_time_heat_blocks_do_not_commute": true
+  },
+  "registered_fixture": {
+    "complete_unmarked_effects_constant_under_actual_isometries": true,
+    "clock_preparation_terminal_and_weight_terms_checked": true
+  },
+  "upstream_sha256": {
+    "A4D_NATIVE_SCENE_718_EDGE_COMPLETE_REGISTER_DETERMINANT_BOOK_2026_10_19.md": "4c9178b3406138f90211b9785fd26815fc36f9fef8f53c63b57f29f5b7c9c2b8",
+    "A4D_NATIVE_SHARED_SCENE_PRICE_SOURCE.md": "9986e1afc9d7cbb8b47dafcd40e3f79d8dcb08fb3833c84db9adae3aa5126291",
+    "A4D_BOOK03_GLOBAL_WEIGHTED_SCENE_BALANCE_AND_REPORT_BRIDGE_2026_10_22.md": "11a95081acabb63f066e5ba5931391a0b7770a94d80bc7a895493da81cb786da",
+    "sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "24948d94df8b7c6b69201279793c2b1cb663da7375bc56c8e6d6f267d71fa393",
+    "A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

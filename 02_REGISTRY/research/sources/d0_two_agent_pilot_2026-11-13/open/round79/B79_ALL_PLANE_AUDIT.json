@@ -1,0 +1,22 @@
+{
+  "status": "PASS_INDEPENDENT_ALL_PLANE_FINITE_AUDIT",
+  "owner_sha256": "5f30920f222bc67813df4bd562518a510b0b8c285e4c62c46aa5077e833c279b",
+  "plan_sha256": "f077a97ccf7da2395cbbf7817ddb1d28df736eca8ba78d7190c564d48d9ed78f",
+  "checker_sha256": "cc7ea298b6c2fee42c3655da3515468d048565465ca5fea30761bbb725fb9e8e",
+  "size4_all_120_planes_all_columns_both_directions_checked": true,
+  "logical_zero_test_and_dirty_private_contract": "clean borrowed input, full-vector error retained",
+  "same_exponent_plus_minus_exact_target_inverse": true,
+  "actual_probe_dag_counts_error_units_verified": true,
+  "nonlocal_plane_weight_and_skew_frobenius_identities_checked": true,
+  "nine_toy_full_clock_histories_checked": true,
+  "source_hashes_and_all_exact_bounds_checked": true,
+  "two_production_plane_compact_DAG_streams_counted_both_signs": true,
+  "same_common_K": 162576,
+  "retained_L": 31740,
+  "K_equal_eta_and_common_last_g": true,
+  "original_H1_membership_or_fixed_FN_proved": false,
+  "native_smooth_variations_stationarity_proved": false,
+  "giant_production_words_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS_COMBINED_CONTROLLED_X_RECTANGULAR",
+  "independent_bits": 9216,
+  "sum_actual_errors_lt": "2^-3456",
+  "uses_same_k_for_k2_power": true,
+  "GR_closed": false
+}

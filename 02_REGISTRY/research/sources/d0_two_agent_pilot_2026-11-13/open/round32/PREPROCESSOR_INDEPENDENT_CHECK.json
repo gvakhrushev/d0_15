@@ -1,0 +1,22 @@
+{
+  "status": "PASS_CONDITIONAL_PREPROCESSOR_ARITHMETIC",
+  "fair_bits": 10248262,
+  "slots_internal": 1054,
+  "slots_top": 10,
+  "failure_union_bound_decimal": "0.32085975025675108157850750092115332232310749674825",
+  "ideal_fair_READY_probability_decimal": "0.84005458418738458546958063320020080926722698548677",
+  "ideal_one_preprocessor_READY_probability_decimal": "0.74068302147577927499527099279837715593233466066880",
+  "ideal_seven_independent_preprocessors_joint_probability_decimal": "0.12230007592762575315442338746171007113682117163837",
+  "known_seven_report_macro_error_count": 162477687666,
+  "known_seven_report_macro_norm_error_lt": "2^-4058",
+  "assumptions": "Scalar selector success effects and disjoint fresh bank coins; immutable READY; B31 ideal factorization; component schedules and A14 bound assumed, not a complete physical graph.",
+  "full_H1_alpha_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "round15/SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b",
+    "round15/PREPROCESSOR_READY_COMPOSITION.json": "4091efc154b7af1c0f63a6647699e13f7e6cd715fd470b0db31b85710bfedfdc"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "B37_CERTIFIED_NATIVE_FIXED_CAR_USTAR",
+  "files": {
+    "CAR_USTAR_EXACT_CHECK.json": "1d04152e1fa2db346266950fd50e29bf714f611acede778c7786647b020055d8",
+    "CAR_USTAR_INTERVAL_CHECK.json": "e469138f2d1612e1d986d565973d09f0bb84b240aa9c111e0e48680f5e40ed92",
+    "CAR_USTAR_NATIVE.json": "ca8e16b8dbff8bacc65dce025bd854ab021024463708cd9af4036e3f2f241344",
+    "CAR_USTAR_REPLAY.json": "d62a075e74a9e427e77b4da9058024d9726199aebb12ff079fbf275034e760f0",
+    "CAR_USTAR_RU.md": "06b7bc5c68cc22c86e16e15d99fac900a21bca9b96df26412c05ac4261019a51",
+    "PAIR_INTERFACE_CHECK.json": "80412c2f9c4a29993b86c9a03e402f8d036426f62a305e3490103ffafbb192fc",
+    "build_car_ustar.py": "937a999d1e246056ee2d894777ee8c5a9bf202100d7dce4e3067d8a7ece09eb4",
+    "check_car_ustar_exact.py": "d64d83a19c39b8819546adf30ecd83dbbeebc6965e0178fd63f6c7add51ae3d3",
+    "check_pair_interface.py": "6a9ec116fd2a31ffd3c37309842aa40a1e0e2fbad181db699c0ee8ea9c45403e",
+    "replay_car_ustar_isolated.py": "545ee17ece53c9ef01c83c2a485baa2b6f2dd8d8e2a0aec4674700e8a163972a",
+    "verify_car_ustar_interval.py": "2f93fdb4d53dc3d65ac39db6c12d7f6aaf5c458e203a55b4bdf691d8c69eface"
+  },
+  "upstream_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "operator_error_lt": "2^-4142",
+  "generic_pair_target_intervals_require_caller_certificate": true,
+  "entire_giant_native_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

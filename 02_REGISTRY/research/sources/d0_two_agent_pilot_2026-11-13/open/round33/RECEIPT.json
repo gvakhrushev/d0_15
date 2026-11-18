@@ -1,0 +1,17 @@
+{
+  "status": "B33_CONDITIONAL_FULL_OPERATOR_COMPRESSION_PROVED",
+  "files": {
+    "ACTUAL_COMPRESSION_INPUTS_CHECK.json": "f5431e8073bd3f1219eb174bbec31e43f97f6279e0986a1995bf7dbbb4bd5fc0",
+    "ACTUAL_LEAF_CONSUMER_SPEC_CHECK.json": "2705dfde9c9b47ada227a6cd241ff44ddc14ca1233828edddb193420d91aef19",
+    "COHERENT_TOY_CHECK.json": "a524c86709820c8d337729df74510bebf2d7be51b1fed11bcecf74668a53531e",
+    "DYNAMIC_PAIR_SMALL_GATES_CHECK.json": "16a9f6b92ab115d84062b17f4f5a6b7074c35dfa3a82fb7794fbb42b521bad09",
+    "OPERATOR_COMPRESSION_RU.md": "7626010624a6e8ec4ce26fc13a7826abb3547ea1cf3a77bb453e53c9b89174a1",
+    "check_actual_leaf_consumer_contract.py": "ced864b0756a23c6e07a4e1d32208a1ea2bf3f2cc2bfcccf04b2f864d3ebdfdb",
+    "check_coherent_compression_toy.py": "83f3d50628f12bcf4adbdaf0589fa4f3f69b25cac9567e1334e7b2c72ad27683",
+    "check_dynamic_pair_gates.py": "8f5f8f90193662a0c510a47afec694b95a544a8ed5fb23def04ff05109ec1525",
+    "check_exact_dag_compression_inputs.py": "278284b8d815a426433873bed85e759c13a03d4f0e3951fc1735dc72e4528637"
+  },
+  "scope": "actual A11/A12/A15 coefficient/address data and independent logical pair witness; integration with A16 consumer remains to be reviewed",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

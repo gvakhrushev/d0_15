@@ -1,0 +1,68 @@
+{
+  "status": "PASS_A48_LOCAL_ALL_BINDINGS_AND_COMPRESSED_COUNTS",
+  "coframe": {
+    "y+": {
+      "sectors": 1024,
+      "independent_family_width_classes": 120,
+      "maxK": 16
+    },
+    "y-": {
+      "sectors": 1024,
+      "independent_family_width_classes": 120,
+      "maxK": 16
+    },
+    "f": {
+      "sectors": 66304,
+      "independent_family_width_classes": 1807,
+      "maxK": 24
+    },
+    "0": {
+      "sectors": 1024,
+      "independent_family_width_classes": 120,
+      "maxK": 16
+    },
+    "x+": {
+      "sectors": 1024,
+      "independent_family_width_classes": 120,
+      "maxK": 16
+    },
+    "x-": {
+      "sectors": 1024,
+      "independent_family_width_classes": 120,
+      "maxK": 16
+    },
+    "q": {
+      "sectors": 66304,
+      "independent_family_width_classes": 1807,
+      "maxK": 24
+    }
+  },
+  "material": {
+    "q": {
+      "sectors": 1216,
+      "rotations": 3456
+    },
+    "y+": {
+      "sectors": 256,
+      "rotations": 512
+    },
+    "y-": {
+      "sectors": 256,
+      "rotations": 512
+    }
+  },
+  "material_frames_all_seven_checked": true,
+  "maximum_coframe_controls": 24,
+  "maximum_material_controls": 15,
+  "toy_literal_depths_checked": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "giant_native_words_expanded": false,
+  "COFRAME_target_error_le": "26*2^-3456",
+  "MATERIAL_half_vector_error_le": "3*2^-3456",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

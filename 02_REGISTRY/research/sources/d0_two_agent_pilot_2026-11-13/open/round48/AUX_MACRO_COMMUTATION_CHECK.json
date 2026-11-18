@@ -1,0 +1,94 @@
+{
+  "status": "PASS_AUX_COMMUTING_MACROS_WITH_GLOBAL_BINDING_OBLIGATIONS",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/gray_reflection.py": "1acdb6fef2e8aeb301f560f4720719e8308ea7d58300d6de3fcba3d3891cf115",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/choi_prefix.py": "b1ebeb647604201b8e653f7f2320fbd2afc4357164623a95547d115bd0b449e9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/CHOI_PREFIX_CERTIFICATE.json": "083685c2651d9dd305abc8401309d6715ffcc08192a365014c75f22cfd2be2f5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round39/adapter_native.py": "5d21a2152396f6f2f622e2a923dce18b098bb4f6f8c9abfec9a7c0ec362ac7cd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round31/NATIVE_FAIR_BANK.json": "e20cf2ae3aaff81fc908f8fdaefdae33bb02a67ff7d70a2aab8173bde06f9231",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/SC6_INVERSE.jsonl": "f61960c480cc0e5f0afdd03b0466228249f8368509803d437a77f15f56551857"
+  },
+  "A14_exhaustive_small_actual_walsh_sandwich_terms": 340,
+  "general_argument": "X J X = -J and R(theta)=cI+sJ; each complete CX-parity / R / parity-inverse sandwich commutes with J_aux for any controls and angle. Ops with no aux commute. Literal inverse and composition inherit commutation. Individual parity CX need not commute.",
+  "A14_CCX_actual_structure_checked": true,
+  "A19_controlled_and_uncontrolled_all_instructions_checked": {
+    "address_rotation": 2,
+    "H": 32,
+    "X": 10
+  },
+  "B39_fixed_point_F_predicate_gates_aux_disjoint": 90,
+  "A22_actual_gray_cycles_checked": [
+    {
+      "K": 1,
+      "all_control_columns": 2
+    },
+    {
+      "K": 2,
+      "all_control_columns": 4
+    },
+    {
+      "K": 3,
+      "all_control_columns": 8
+    },
+    {
+      "K": 4,
+      "all_control_columns": 16
+    },
+    {
+      "K": 5,
+      "all_control_columns": 32
+    },
+    {
+      "K": 6,
+      "all_control_columns": 64
+    },
+    {
+      "K": 7,
+      "all_control_columns": 128
+    },
+    {
+      "K": 8,
+      "all_control_columns": 256
+    },
+    {
+      "K": 9,
+      "all_control_columns": 512
+    },
+    {
+      "K": 10,
+      "all_control_columns": 1024
+    }
+  ],
+  "A22_general_gray_argument": "Gray cycle returns total X parity to even; each parity-conjugated rotation is cI\u00b1sJ. Full cycle commutes with J_aux; individual emitted blocks need not.",
+  "B31_actual_router_logical_counts": {
+    "X": 3,
+    "CCX": 56,
+    "CX": 169
+  },
+  "B31_router_full_DAG_reconstructed": true,
+  "B31_zero_kernel_aux_untouched": true,
+  "original_comparator_local_words": {
+    "SC6_FORWARD.jsonl": {
+      "calls": 18176,
+      "SourceI_as_exact_adjacent_pairs": true,
+      "local_oldRIGHT_untouched": true
+    },
+    "SC6_INVERSE.jsonl": {
+      "calls": 18176,
+      "SourceI_as_exact_adjacent_pairs": true,
+      "local_oldRIGHT_untouched": true
+    }
+  },
+  "A17_namespace_disjoint_arithmetic_checked": true,
+  "global_assembly_binding_proved": false,
+  "all_actual_H1_generators_and_work_embedding_proved": false,
+  "other_D_identity_or_SAM_control_proved_for_whole_H1": false,
+  "marks_physical_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

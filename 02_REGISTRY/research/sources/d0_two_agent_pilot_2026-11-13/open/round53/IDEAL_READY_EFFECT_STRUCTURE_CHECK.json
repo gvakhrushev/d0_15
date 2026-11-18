@@ -1,0 +1,53 @@
+{
+  "status": "PASS_ALL_IDEAL_PALETTE_READY_EFFECTS_AND_RECORD_BINDINGS",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8"
+  },
+  "all_palette_rows": [
+    {
+      "file": "INTERNAL_SELECTOR_PALETTE.json",
+      "partitions_checked": 25,
+      "weight_and_abort_pairs_checked": 223,
+      "golden_n": 0,
+      "fair_r": 1374,
+      "common_READY_is_tau_I": true
+    },
+    {
+      "file": "TOP_SOURCE_SELECTOR_PALETTE.json",
+      "partitions_checked": 512,
+      "weight_and_abort_pairs_checked": 2048,
+      "golden_n": 1,
+      "fair_r": 1580,
+      "common_READY_is_tau_I": true
+    },
+    {
+      "file": "TEN_SIGN_REPORT_PALETTE.json",
+      "partitions_checked": 2048,
+      "weight_and_abort_pairs_checked": 6144,
+      "golden_n": 6,
+      "fair_r": 94,
+      "common_READY_is_tau_I": true
+    }
+  ],
+  "SC6_forward_native_counts": {
+    "G": 5888,
+    "CX": 4096,
+    "SourceI": 8192
+  },
+  "all_seven_READY_REPORT_wires_disjoint": true,
+  "SC6_never_targets_READY_or_REPORT": true,
+  "sequential_scalar_effect_argument": "E_ready=alpha I for each report on every incoming shared source/SITE state, with fresh disjoint resource inputs and retained flags, implies conditional Pr(READY_i | prior records)=alpha and joint all-seven alpha^7; source-state product is not required for READY alone.",
+  "noncommuting_shared_input_Kraus_example": true,
+  "correlated_marginals_counterexample": true,
+  "no_extra_postselection_or_loader_flags_in_SC6": true,
+  "ideal_R_equality_consumes_B31_A13_A17_structural_contracts": true,
+  "actual_native_alpha_hat_exact_or_original_Pj_law_proved": false,
+  "physical_admission_marks_and_C_proved": false,
+  "GR_closed": false
+}

@@ -1,0 +1,67 @@
+{
+  "status": "PASS_ISOLATED_A14_CERT_SMALL_WORD_AND_LOWERING",
+  "input_sha256": {
+    "round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "round13/FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "round14/certify_boolean_angle.py": "a705e476a2b296f2578ea7afa33a70d9691d6860e08c00b4c7d692ad1f570c41",
+    "round14/check_native_boolean.py": "4d3a358dc29b43222b5d1d4253e935c1dd5da224ead4b91de001bc8a3e5a2060",
+    "round14/lower_native_selectors.py": "ea23b376e7511e59e038b1002f5c3dde18129e0d666fbe1811fc3d00974b7962",
+    "round14/NATIVE_BOOLEAN_ANGLE.json": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "round14/NATIVE_BOOLEAN_CHECK.json": "0d81d2ba04d1d2374c9decae2e333f913f77e03e4366d86c4151d76f47506b3f",
+    "round14/NATIVE_BOOLEAN_LIBRARY.json": "dfef8593fb4b0e09b23c3b2ee4807332523615389ecb392127a39b5b599e5d08",
+    "round14/NATIVE_SELECTOR_LOWERING.json": "ab64ae9e5c1395c02b71b8ada4b33e7275aaee1dd68e16827845f7cff075d7c1",
+    "round14/NATIVE_BOOLEAN_LOWERING_RU.md": "b107aefafcdce4f4d2380082398189c192d882966c273d54fe9ed02b8ce8267e",
+    "d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "d0_native_readiness_amplification_2026-10-24/native_phase.py": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d"
+  },
+  "outputs_byte_identical": {
+    "NATIVE_BOOLEAN_CHECK.json": "0d81d2ba04d1d2374c9decae2e333f913f77e03e4366d86c4151d76f47506b3f",
+    "NATIVE_BOOLEAN_LIBRARY.json": "dfef8593fb4b0e09b23c3b2ee4807332523615389ecb392127a39b5b599e5d08",
+    "NATIVE_SELECTOR_LOWERING.json": "ab64ae9e5c1395c02b71b8ada4b33e7275aaee1dd68e16827845f7cff075d7c1"
+  },
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "-c",
+        "import json,certify_boolean_angle as c; d=json.load(open('NATIVE_BOOLEAN_ANGLE.json')); assert c.certify(int(d['k']),4096,16640)==d['certificate']; print('given-k owner certificate exact, no candidate search')"
+      ],
+      "stdout": "given-k owner certificate exact, no candidate search",
+      "stderr": "Exception ignored in: <_io.FileIO name='NATIVE_BOOLEAN_ANGLE.json' mode='rb' closefd=True>\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nResourceWarning: unclosed file <_io.TextIOWrapper name='NATIVE_BOOLEAN_ANGLE.json' mode='r' encoding='UTF-8'>\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "check_native_boolean.py"
+      ],
+      "stdout": "X 1 all256 columns exact; raw inverse exact\nX 2 all256 columns exact; raw inverse exact\nH 1 all256 columns exact; raw inverse exact\nH 2 all256 columns exact; raw inverse exact\nCCX 1 all256 columns exact; raw inverse exact\nCCX 2 all256 columns exact; raw inverse exact",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "lower_native_selectors.py"
+      ],
+      "stdout": "{\"status\": \"FINITE_NATIVE_LOWERING_OF_ALL_A13_SELECTOR_GRAMMARS\", \"k_bits\": 4111, \"macro_error_bits\": 4096, \"native_decoder_wires\": [2773, 3190, 234, 76, 44], \"approximate_macro_occurrences\": [1568307, 22933696, 4089626, 58, 30]}",
+      "stderr": ""
+    }
+  ],
+  "candidate_search_run": false,
+  "owner_modified": false,
+  "giant_native_word_expanded": false,
+  "GR_closed": false
+}

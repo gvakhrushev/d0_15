@@ -1,0 +1,13 @@
+{
+  "status": "PASS_NONSYMMETRIC_KERNEL_AND_EXACT_GROWING_CLOCK_SWAP",
+  "endpoint_equality_does_not_fix_insertion_kernel": true,
+  "actual_nonsymmetric_kernel_example": true,
+  "two_noninverse_control_words": true,
+  "same_Q_word_commutes_with_work_middle": true,
+  "both_full_growing_clocks_and_feedback_heat_conjugate": true,
+  "birth_complements_retained": true,
+  "fixed_intermediate_mark_not_equal": true,
+  "fixture_not_production_execution": true,
+  "original_mark_admission_proved": false,
+  "GR_closed": false
+}

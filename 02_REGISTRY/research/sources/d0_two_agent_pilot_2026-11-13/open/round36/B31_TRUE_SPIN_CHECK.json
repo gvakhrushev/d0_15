@@ -1,0 +1,25 @@
+{
+  "status": "PASS_SMALL_NATIVE_ROUTER_LITERAL_INVERSE",
+  "spin_representation": "literal diag(J,-J), both spin bits",
+  "scope": "k=1 float diagnostic on arbitrary data/port/spin/aux/scratch/oldRIGHT columns; no cap28 huge native execution",
+  "reports": [
+    {
+      "K": 1,
+      "qubits": 13,
+      "forward_calls": 251,
+      "literal_inverse_calls": 647,
+      "arbitrary_basis_checks": 16
+    },
+    {
+      "K": 2,
+      "qubits": 18,
+      "forward_calls": 465,
+      "literal_inverse_calls": 1125,
+      "arbitrary_basis_checks": 16
+    }
+  ],
+  "basis_checks": 32,
+  "max_l2_error": 2.6645352591003757e-15,
+  "prune_threshold": 1e-14,
+  "GR_closed": false
+}

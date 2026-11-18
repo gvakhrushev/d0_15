@@ -1,0 +1,40 @@
+{
+  "status": "PASS_CONDITIONAL_REDUCED_FEEDBACK_ALGEBRA_AND_BOUNDS",
+  "I_tau_uniform_abs_lt": "2^14",
+  "original_gain_g_lt": "2^-3030",
+  "reference_c_ref_gt": "2/3",
+  "sigma_lt": "2^-3014",
+  "single_row_source_change_lt": "2^-2870",
+  "A31_forward_corrected_vector_norm_lt": "2^-2864",
+  "reduced_analytic_feedback_norm_between": [
+    "2^-46",
+    "2^-16"
+  ],
+  "reduced_feedback_minus_Egeom_at_decoded_mean_lt": "2^-15",
+  "source_identity": "d_red-d_old=-D_psi <(M-c_ref I)^2>/(4 c_ref g s)",
+  "real_SO_rank_two_rotation_formula_locally_verified": true,
+  "global_positive_d_or_global_single_chart": false,
+  "analytic_only_reduced_feedback_fd_truncation_lt": "2^-78 conditional",
+  "paid_native_Ustar_or_its_circuit_error_constructed": false,
+  "full_heat_plus_J_or_Cost_Info_stationarity_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round73/audit_reduced_feedback.py": "d26d844825f628c6f296a30544a7a0cb6e4ff36fcda8499db02ce7962804a3ae",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/ACTUAL_POST_SAM_STATIONARY_REDUCTION_RU.md": "ef67e8d48670f8f97522174f4e7c938917aa17114069d3813605f2a44f1d028a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/post_sam_reduction.py": "f984fba692ef804104eec0f02a97472541a2e4ab34e0413ed1d97b3b8e702116",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/check_post_sam_reduction.py": "8d26853961da55cca4d748d012bcd5a6e71e9e743bc4932d386395e148ed1ce8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/POST_SAM_REDUCTION_PLAN.json": "d9dffa9e3278bf71df2367b6f0390a1e0a7b16fdb269e55d7321e4b0c40b672c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/POST_SAM_REDUCTION_CHECK.json": "6ccef839b41799b5c61f2b8a631a57e91c6eb0f5250771f726b6048860f25848",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round2/SAM_BACKWARD_RU.md": "0592b5c1996faca78bcec57d40ada65f7af19fdb38156f8a4d7d7367265ed825",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PREPARED_SOURCE_MOMENT_LAW_RU.md": "8985c22feaaca539fb0960e6f255bdc9cecc0bff06b67a95d969a4a9810a94a8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_RAW_SOURCE_MARKS_RU.md": "d3b279b5dafa2d50928ce21020ad7eab60fcc7cbc3fb35bde1fc3be5f61bddd6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/ACTUAL_MEAN_GEOMETRY_LIFT_RU.md": "7d6ca93d37b2d83a40af33a912c02d5b61ecad25235c97c7c5065a9d60e422bc",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round54/B54_PRODUCT_SOURCE_EXACT_RU.md": "3cf8efc95f1107d943dbe9b2e1846564df21781d0851c6a9b8e137b09cc498af",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/B58_A25_GCX_COVERAGE_AUDIT_RU.md": "e43fcadfee38ad46d1c9a687b1b3540060e18339640944f8ffe03c6453e680d1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/SCALAR_HESSIAN_ENVELOPE.json": "7d5f4fd7dc9351e9a64ed786211aacba3e49f8d6f9d72e619138bc9e4d522cf5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/FINITE_REFERENCE_SECANT_DEFECT.json": "7a886cdfb5ea69a04354488919534d35a2ed0625dee85381c8e4b34633235df8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round71/A36_INDEPENDENT_AUDIT.json": "a5b8fc19dd6dbd92981c6de2bede951a3badca3de6bbe68c5e75dc11219ef742",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round72/B72_BACKWARD_MARKED_OUTPUT_SUBSYSTEM_RU.md": "c7ea497df2bcfd3b4b7d845c8e80fee86add06594bdf010a41f18b57bd7fc7e6"
+  }
+}

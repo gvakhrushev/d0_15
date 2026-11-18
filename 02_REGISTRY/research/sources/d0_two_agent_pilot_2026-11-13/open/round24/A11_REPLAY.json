@@ -1,0 +1,55 @@
+{
+  "status": "ISOLATED_A11_EXACT_REPLAY_PASSED",
+  "input_sha256": {
+    "source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b",
+    "SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "certify_source_norm.py": "c79fdcb210fd18ad4a9f98ddb5bb5b29aa25ef84095ef71ce1e5783aad1c93fe",
+    "check_source_operator.py": "ea4a27f2a3fa49f7d36f03fa5a0ac3c9e4b9b7d2a66ae156c220c0a7dd0ea2a0",
+    "SOURCE_NORM_CERTIFICATE.json": "b4aca9a0e9655559531947d5ccca7b40ae73ddf338bbcdc97012ae1fb95b4fc8",
+    "SOURCE_OPERATOR_CHECK.json": "48f2dd5be6272bfa1cfb29881e6d7a31eb1dc9a692004544d43b001d301824e3"
+  },
+  "generated_sha256": {
+    "SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "SOURCE_NORM_CERTIFICATE.json": "b4aca9a0e9655559531947d5ccca7b40ae73ddf338bbcdc97012ae1fb95b4fc8",
+    "SOURCE_OPERATOR_CHECK.json": "48f2dd5be6272bfa1cfb29881e6d7a31eb1dc9a692004544d43b001d301824e3"
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "source_operator_dag.py"
+      ],
+      "stdout": "{\"nodes\": 20402, \"link_operands\": 16, \"leaves\": 282, \"root_degrees\": {\"H_f_before_inverse_PF\": [82, 0], \"H_q_before_inverse_PF\": [2, 2]}}",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "certify_source_norm.py"
+      ],
+      "stdout": "{\"status\": \"PASS_EXACT_FULL_INPUT_SOURCE_OPERATOR_MAJORANT\", \"checked_nodes\": 20402, \"common_Lambda_h\": \"2^1525\", \"epsilon_h\": \"2^-1531\", \"ten_sign_copies\": {\"Choi\": 180, \"material\": 16}}",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "check_source_operator.py",
+        "--b21",
+        "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21"
+      ],
+      "stdout": "{\"status\": \"PASS_ORIGINAL_SOURCE_TENSOR_DAG_DIAGNOSTICS\", \"nodes\": 20402, \"all_independent_scalar_coordinates\": 282, \"direct_CAR_matrix_value_error\": 3.3306690738754696e-16, \"all_coordinate_complex_step_relative_error\": 5.20358136378833e-15, \"normal_link_directions\": 160, \"normal_source_error\": 5.329070518200751e-15, \"hostile_omitted_face_detected\": true, \"B21_actual_interior\": {\"site\": [0, 0, 1, 1], \"values_before_inverse_PF\": {\"H_f_before_inverse_PF\": 0.0, \"H_q_before_inverse_PF\": 0.0}, \"geometry_sha256\": \"bedb2f51e2ae744f421315cde721848c3c7dd7b398b0a28c22f523c9f1aab43b\", \"scope\": \"one true interior stencil; no halo/global completion\"}, \"scope\": \"numeric identity/derivative diagnostics; exact full-input bound in separate rational certificate\", \"full_H1_native_word_executed\": false, \"GR_closed\": false}",
+      "stderr": ""
+    }
+  ],
+  "scope": "bounded copy/operator/norm interface replay and independent inspection; not full H1 or native sign implementation",
+  "GR_closed": false
+}

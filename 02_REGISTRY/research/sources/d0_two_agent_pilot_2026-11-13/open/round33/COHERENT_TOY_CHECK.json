@@ -1,0 +1,24 @@
+{
+  "status": "PASS_EXACT_SMALL_RETAINED_HISTORY_OPERATOR_CHECK",
+  "full_site_data_dimension": 18,
+  "shared_external_spectator_test_dimension": 2,
+  "toy_coherent_site_and_external_input_test": true,
+  "cap7_histories": 16384,
+  "cap7_first_success_counts": [
+    1,
+    5461,
+    5461,
+    5461
+  ],
+  "toy_two_attempt_ready_probability": "15/16",
+  "all_site_data_operator_columns_checked": 18,
+  "toy_input_superposition_and_external_entanglement_test": true,
+  "full_space_leaf_involution_identity": true,
+  "identity_padding_and_negative_constant_checked": true,
+  "top_plus_minus_identity_cancellation_checked": true,
+  "unprepare_for_hadamard_effect_required": false,
+  "shared_delta_counterexample_complement_value": "1",
+  "independent_delta_complement_value": "0",
+  "scope": "exact toy operator/count enumeration; not an execution of actual A16 or full native circuit",
+  "GR_closed": false
+}

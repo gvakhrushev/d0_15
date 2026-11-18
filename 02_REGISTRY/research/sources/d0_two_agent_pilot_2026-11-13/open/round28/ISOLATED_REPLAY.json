@@ -1,0 +1,54 @@
+{
+  "status": "PASS_A13_ISOLATED_BYTE_EXACT_REPLAY",
+  "input_sha256": {
+    "round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "round13/build_selector_circuits.py": "cb878616dd7e0359d6013c6a379bfe1a9c48d46795c1ee326661dceb28832fd9",
+    "round13/check_selector_circuits.py": "3f5e5784b7a0281b7a5810a2f096b76825b6b9f039226aa3fd6bd49f0a509adb",
+    "round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "round13/FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "round13/CIRCUIT_CHECK.json": "a887b15839b920c137126a0f705464ccc6dfd3f57326bf4ce5357c3394e21463",
+    "round13/REVERSIBLE_SELECTORS_RU.md": "ee4789538fd8f8cd1e6632659d22d2dede7825a81d408184a9a979c728381880"
+  },
+  "regenerated_sha256": {
+    "INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "CIRCUIT_CHECK.json": "a887b15839b920c137126a0f705464ccc6dfd3f57326bf4ce5357c3394e21463"
+  },
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "build_selector_circuits.py"
+      ],
+      "stdout": "INTERNAL_SELECTOR_CIRCUIT.json 2768 {'CCX': 1089479, 'CX': 1089222, 'X': 478828}\nTOP_SOURCE_SELECTOR_CIRCUIT.json 3185 {'CCX': 19454976, 'CX': 19440642, 'X': 3478720}\nTEN_SIGN_REPORT_CIRCUIT.json 229 {'CCX': 3398086, 'CX': 3323278, 'X': 691540}",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-W",
+        "error",
+        "check_selector_circuits.py"
+      ],
+      "stdout": "{\"status\": \"PASS_EXPLICIT_REVERSIBLE_SELECTOR_CIRCUITS\", \"checks\": {\"equality_columns\": 10922, \"comparator_columns\": 5704, \"complete_small_selector_columns\": 1024, \"actual_prefix_gate_columns\": 67, \"actual_rows_structurally_checked\": 5170, \"actual_width_row_gate_samples\": 500, \"first_success_columns\": 1064}, \"input_sha256\": {\"INTERNAL_SELECTOR_PALETTE.json\": \"5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd\", \"TOP_SOURCE_SELECTOR_PALETTE.json\": \"29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac\", \"TEN_SIGN_REPORT_PALETTE.json\": \"b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6\"}, \"circuit_summaries\": [{\"file\": \"INTERNAL_SELECTOR_CIRCUIT.json\", \"sha256\": \"fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97\", \"wire_count\": 2768, \"gate_counts\": {\"CCX\": 1089479, \"CX\": 1089222, \"X\": 478828}}, {\"file\": \"TOP_SOURCE_SELECTOR_CIRCUIT.json\", \"sha256\": \"15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0\", \"wire_count\": 3185, \"gate_counts\": {\"CCX\": 19454976, \"CX\": 19440642, \"X\": 3478720}}, {\"file\": \"TEN_SIGN_REPORT_CIRCUIT.json\", \"sha256\": \"43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04\", \"wire_count\": 229, \"gate_counts\": {\"CCX\": 3398086, \"CX\": 3323278, \"X\": 691540}}], \"primitive_basis\": [\"X\", \"CX\", \"CCX\"], \"all_input_claim_method\": \"Boolean identities and clean-composition proof; exhaustive reduced circuits plus actual-width samples\", \"entire_actual_2_power_input_space_enumerated\": false, \"native_gate_word_executed\": false, \"full_READY_proved\": false, \"physical_C_closed\": false, \"GR_closed\": false}",
+      "stderr": ""
+    }
+  ],
+  "owner_modified": false,
+  "native_word_executed": false,
+  "GR_closed": false
+}

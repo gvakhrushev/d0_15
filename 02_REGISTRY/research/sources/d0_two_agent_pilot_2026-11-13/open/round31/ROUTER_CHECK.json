@@ -1,0 +1,27 @@
+{
+  "status": "PASS_EXACT_KERNEL_AND_COHERENT_FIRST_SUCCESS_ROUTING",
+  "owner_native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "owner_kernel_calls": [
+    "G(A)",
+    "G(B)",
+    "CX(A,C)",
+    "CX(B,C)",
+    "CX(A,B)"
+  ],
+  "kernel_all_input_columns": 8,
+  "kernel_success_state": "sqrt(2p^3) |+>_A|1>_B|1>_C",
+  "kernel_failure_state": "(p|0>+p^2|1>)_A |0>_B|0>_C",
+  "byproduct_correction_required": false,
+  "all_input_columns_K_1_to_4": 18720,
+  "all_flag_patterns_K_1_to_12_cases": 8190,
+  "cap28_boundary_random_cases": 2055,
+  "exact_coherent_amplitude_pairs_K_1_to_6": 5334,
+  "unselected_payloads_and_all_flags_retained": true,
+  "selected_socket_receives_original_output": true,
+  "survive_workspace_cleared": true,
+  "chosen_one_hot_retained": true,
+  "hostile_CX_copy_marginal": "I/2, not |+><+|",
+  "all_2^28_patterns_enumerated": false,
+  "native_approximation_not_tested_here": true,
+  "GR_closed": false
+}

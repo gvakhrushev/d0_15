@@ -1,0 +1,21 @@
+{
+  "GR_closed": false,
+  "checks": 20,
+  "early_b1_reference_H1": 4.198575632191515e-06,
+  "golden_a_rational_interval": [
+    "393075688878711643034779292921/500000000000000000000000000000",
+    "786151377757423286069558585843/1000000000000000000000000000000"
+  ],
+  "incorrect_unprojected_H1": 1.151371999920707e-05,
+  "status": "PASS",
+  "toy": {
+    "1_minus_2Q": 0.5790202401144051,
+    "C_V_cross": -0.41498104624568716,
+    "C_W_cross": -0.9820788503333554,
+    "Q": 0.21048987994279741,
+    "q": 0.4316559314923749
+  },
+  "toy_scope": "native four-wire source frame; not full geometric H1 admission",
+  "uniform_minus_dh_dq_lower_bound": "3/10000 (both words, matched scalar branch)",
+  "whole_history_physical_scalar_binding_proved": false
+}

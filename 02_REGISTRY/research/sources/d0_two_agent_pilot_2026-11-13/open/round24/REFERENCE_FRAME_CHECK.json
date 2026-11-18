@@ -1,0 +1,16 @@
+{
+  "status": "PASS_EXACT_FRAME_TRANSPORT_AND_NUMERIC_A11_REFERENCE",
+  "det_T": "1",
+  "T_eta_cart_Tt_equals_eta_null": true,
+  "role_metric": "rho/s_ref\u00b2 diag(1,-1,-1,-1)",
+  "boost_rotation_transported_to_null_proper_lorentz": true,
+  "F_h": "16517734400/162621047169",
+  "f_plus_float": 0.00282144263330647,
+  "f_minus_float": -0.00282144263330647,
+  "expected_f_plus_float": 0.0028214426333064485,
+  "q_time_float": 0.00012048999076595884,
+  "q_space_float": -0.00012048999076595884,
+  "expected_q_time_float": 0.00012048999076595885,
+  "dag": "A11 source_operator_dag; concrete reference scalar diagnostic, not native writer",
+  "GR_closed": false
+}

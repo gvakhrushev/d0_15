@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_REPORT_OPERATOR_WEIGHTS",
+  "input_sha256": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+  "sigma_mask_palette_cases": 2048,
+  "beta_coefficients_per_sigma": 27,
+  "product_scalar_expectation_checks": 6,
+  "full_effect": "E_sigma=Q_pre sum_mask beta_sigma,mask product_i (I+s_i O_i)/2, with O_i acting on disjoint copies and common SITE",
+  "correlated_copies_same_marginals_change_probability": true,
+  "shared_SITE_requires_average_of_conditional_beta": true,
+  "counterexample_exact_difference": "nonzero polynomial coefficient of f^2 in original beta",
+  "limitations": "exact ideal target effect only; requires compiled Boolean/fair targets and read-only shared SITE, and scalar factorization requires conditionally product sources",
+  "GR_closed": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS_OWNER_CHECKERS_IN_V8_ISOLATE",
+  "exact_two_band_status": "PASS_EXACT_TWO_BAND_FULL_POSITIVE_REPORT",
+  "sign_branches_per_sigma": 1024,
+  "sigma_cases": 2,
+  "geometric_moment_status": "PASS_ORIGINAL_CAR16_CHOIPROGRAMME_MOMENTS",
+  "physical_writer_or_H1_admission": false,
+  "GR_closed": false,
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_positive_ten_sign_complete_query_2026-10-21/check_exact_two_band.mjs": "9fc0b27c311f48856360a42a12c7d7198993e418e387c6037c4184817df1bba5",
+    "02_REGISTRY/research/sources/d0_positive_ten_sign_complete_query_2026-10-21/check_fixed_chori_moment_source.mjs": "3fc5b5e7e1daea70b479d89ed2c06696ee5649622d791b2c21da9de431279976"
+  }
+}

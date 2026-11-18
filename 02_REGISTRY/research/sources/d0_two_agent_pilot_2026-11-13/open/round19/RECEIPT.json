@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SCOPED_INDEPENDENT_REVIEW",
+  "created_utc": "2026-11-13T17:43:17.898976+00:00",
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round19/INDEPENDENT_REVIEW_A9_RU.md": "99fbee54d7d76941e7290260ecf518eae1af694a57e9d10cb9b0189e58d889a8",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round19/CHECK_RESULT.json": "7b6c86333e90ef1a76fa4d9fc33797e922c0ac5252f07805c38d304dc1c53a4b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round9/ACTUAL_ARCHIVE_CLOCK_RU.md": "81376b4405e01663d1e48b29bcc4e5b78a2968d2553d9bba65758735255e9383",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round9/FULL_ARCHIVE_RECOVERY_RU.md": "8e5cb934c4d6761c809f0883cb5dcf3e66e9a32edc02a2a671d23fe6c37c710c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round9/check_archive_clock.py": "609acce26874de1c4868baed0efe5cbadcaa0bc8a3707ef2f1408b25a4e21a4f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round9/check_archive_recovery.py": "cd2cf740d9abc70df47eb8116eecf789f6468adb10721bd0e505f71b65f744f6",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round18/LITERAL_ARCHIVE_RETURN_RU.md": "ec188358c835b5ba63a081b5109b4817a73e8dda601fed3ab62bf932f1500f31",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  },
+  "clock_checks": 1449,
+  "recovery_checks": 983,
+  "complete_H1_replayed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

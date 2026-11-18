@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "primary_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+  "primary_checker_sha256": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66",
+  "quiet_and_rare_mixture_both_marginals_same_value_and_jet": true,
+  "one_extra_visit_same_center_law": true,
+  "two_visit_gap_log_coefficients": {
+    "1/2": "31296/9954025",
+    "29/50": "2784/248850625",
+    "73/50": "14016/248850625",
+    "5/2": "2080/398161"
+  },
+  "two_visit_jet_log_coefficients": {
+    "1/2": "31616/5972415",
+    "29/50": "1984/49770125",
+    "73/50": "26848/149310375",
+    "5/2": "3488/398161"
+  },
+  "stopped_jensen_strict_intervals_nats": {
+    "gap": [
+      "727353/1000000000000",
+      "363677/500000000000"
+    ],
+    "gap_jet": [
+      "244277/200000000000",
+      "610693/500000000000"
+    ]
+  },
+  "physical_C_closed": false,
+  "GR_closed": false
+}

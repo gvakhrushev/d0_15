@@ -1,0 +1,27 @@
+{
+  "status": "PASS_CANONICAL_INPUT_HYBRID_FIBRE_PARTITION",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/FULL_CHOI_BANK_PLAN.json": "a7a2e7acf009a7aa2e472c9d0e74b78eff9b74f708ff9ab37ee98652d7001425",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round24/FULL_CAR_SOURCE_PLAN.json": "b494b37f2701b940547e4dc48ec1568e55748d5dd1e3bbec54b71546ff4dbc8b"
+  },
+  "A17_compiler_partition_wire_counts": {
+    "zero": 21210979,
+    "fair": 10248262,
+    "golden": 76,
+    "source": 4264
+  },
+  "A17_sigma_and_SITE_excluded_from_compiler_births": true,
+  "report_local_arena_disjoint_across_all7": true,
+  "source_private_RAW_groups_disjoint_and_prepared_only_in_own_source_stage": {
+    "Choi": 1260,
+    "CAR": 112
+  },
+  "argument": "For the hybrid with ideal earlier stages and actual later stages, each later source DATA/private remains at canonical RAW before its own SOURCE stage because earlier components address only their own slot/report arena and named shared factors. The full clean-private input estimate permits arbitrary SAM, SITE, aux, port, Spin and entanglement with all previous/future factors. Actual leaky private outputs are not assumed clean.",
+  "scope": "Range/namespace proof depends on B48\u2013B51 provider access/semantics; it does not establish the ideal report probability law, source product physical births, all-original-marks transport or actual physical admission.",
+  "all_dirty_helper_columns_against_old_T2_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

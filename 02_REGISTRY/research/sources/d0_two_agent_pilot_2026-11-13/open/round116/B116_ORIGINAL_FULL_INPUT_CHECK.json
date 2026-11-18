@@ -1,0 +1,31 @@
+{
+  "claim": "one CAR DATA RAW-state match does not imply full DATA matrix or marked-map match",
+  "proof_field": "Q[a]/(a^4+a^2-1), physical root a=sqrt((sqrt(5)-1)/2)",
+  "raw_two_site_state_fixed_exactly": true,
+  "unitary_stabilizer_Q_exact": true,
+  "explicit_nonzero_minus_one_eigenvector_norm_squared": 2,
+  "full_input_operator_distance": "2, preserved under common unitary prefix and processor",
+  "all_initialized_bank_and_common_processor_marks_same": true,
+  "initialized_prepared_first_jet_and_joint_effects_same": true,
+  "inverse_wrapper_cold_cut_same": true,
+  "paid_history_clock_heat_cost_equivalence": false,
+  "initialized_scope": "canonical DATA/WORK birth; arbitrary coherent SAM and protected old/reference",
+  "arbitrary_DATA_physically_admitted_in_H1": "not established",
+  "other_17_CAR_DATA_wires_and_private_untouched": true,
+  "genuine_A54_eighth_bank_present": true,
+  "original_owner_differs_from_A23": "not established",
+  "alternative_word_admitted_or_priced": false,
+  "B114_B115_A58_physical_admission": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/CAR_VACUUM_FOURIER_RU.md": "77d3de6d0ad3a24a58edbd39be311fb4907f8761a75da3d7a98a359bb45a266d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/REGULAR_GLOBAL_SOURCE_RU.md": "c01b0d54b989883e52987c7081103f59063a231d2781901ce211532e8c123bf5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/REGULAR_FIELD_TASK_AND_FRONTIERS_RU.md": "a31a4f259140778ad70566db8eb064d536ef1f9fd84df6567443e148493b5cab",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round58/FIELD_SOURCE_PULLBACK_RU.md": "86b584796d1056408918c6cb99b0a033d24fefabd20059fec28619c055d65aac",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/B91_FULL_VECTOR_JET_AND_SOURCE_FIBRE_RU.md": "f56105e52c199778228c9465dc3e808f5e8229e3a38eae4739c146b333bbc3ce",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round114/B114_PHYSICAL_CHART_PULLBACK_RU.md": "fb2b95ec317d570a15dc28d90c4a5c33be83605e4362f264592d9af52047f374",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round115/B115_A58_INDEPENDENT_REVIEW_RU.md": "e6858dd3c54ff46efc808d1d1fe8910c33fb8aa3dd78a23017fc31f2bf817973"
+  }
+}

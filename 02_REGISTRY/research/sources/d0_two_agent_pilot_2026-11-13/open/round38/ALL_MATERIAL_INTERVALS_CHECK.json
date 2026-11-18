@@ -1,0 +1,17 @@
+{
+  "status": "PASS_INDEPENDENT_A18_ALL_TARGET_AND_NATIVE_INTERVALS",
+  "library_sha256": "83592b07988263b453d7ac27fa7f53d7b7d98846a3d8dfd40b3e401fe095e22b",
+  "independent_precision_bits": 8448,
+  "library_precision_bits": 16640,
+  "unique_native_powers_checked": 38,
+  "all_vector_rotation_targets_checked": 60,
+  "exact_identity_rotations": 6,
+  "full_half_vectors_checked": 22,
+  "weakest_independent_L1_error_strictly_below": "2^-4112",
+  "required_per_plane_error_le": "2^-4096",
+  "arithmetic": "integer outward dyadic targets and certified complex Euclidean balls for native powers, independently implemented; includes Machin pi and square roots",
+  "uses_float_in_proof": false,
+  "does_not_reexecute_A18_builder": true,
+  "physical_admission_or_full_bank_preparation": false,
+  "GR_closed": false
+}

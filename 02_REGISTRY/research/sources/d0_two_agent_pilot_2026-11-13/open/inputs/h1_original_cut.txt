@@ -1,0 +1,54 @@
+#### 7eh.H.1. Three different controls and the actual initial cut
+
+Fix the ORIGINAL full ten-sign reporter and its actual READY implementation
+at the given h. Its readiness α_h>0 is the full processor's field-independent
+probability. Do not replace it by the smaller scalar apparatus's n20
+readiness unless an actual equality has been proved. Keep its true norm
+bound, PF factors, matter sign, full clock and work.
+
+Use m coordinates of an open regular geometric chart. The coordinates
+include the original coframe, proper-Lorentz link and two material fields
+(and genuinely variable normalized density coordinates). Affine movement
+is in THIS chart; it is not addition to a Lorentz matrix outside SO(1,3).
+Choose a centre Y0 and s>0 with every
+
+    Y_b=Y0+s(b-p² 1), b in {0,1}^m,
+
+inside the chart with common Julia/material slack. No Einstein predicate
+selects these vertices. The source-moment maps and all marked geometric
+resources are evaluated by the explicit g_j(Y_b) recipe, not by inserting
+numerical f,q values into scalar probability loaders.
+
+SAM is a NEW m-bit sampling register born AFTER the old physical cut:
+
+    phi_SAM=v^{tensor m}, v=(sqrt(p),p),
+    i=phi_SAM tensor I_D,
+    Pr(b)=p^{m-|b|} p^{2|b|}, E[b_j]=p².              (T1)
+
+It stays at this interior state at the central point. In particular,
+there is NO basis-selecting L_k on SAM. The optional retained programme
+CODE is a different register. Here one fixed actual reporter word is used
+on every programme spectator column; combining distinct active reporter
+laws instead uses the separate §7ee theorem, not an unproved scalar-cut
+identification. A separately loaded centre/resolution fieldname is also
+distinct from SAM and retains its actual loader/inverse price.
+
+SITE is fresh WORK with paid loader O_chi B_SITE*, producing the actual
+state sum_x sqrt(v_x rho_x)|x>. It is shared by all seven calls at a
+given sampling label b. Its data-dependent preparation may be controlled
+by b. SITE is unprepared after the cross-reference comparison, and is
+compressed with WORK, not retained as an unknown initial-cut factor.
+The unknown D/oldRIGHT input is never reset.
+
+The registered descriptor specifies BOTH the complete writer and its
+canonical fresh-bank input embedding/checkpoint. Preserving the writer
+while substituting an arbitrary earlier bank state does not preserve
+this section. The bank input is supplied by actual RAW births; its
+generated state is not an independently selectable blank.
+
+The canonical bank checkpoint fixes WORK/SITE at the writer's entry;
+SAM is the writer's designated free incoming control. Its central birth
+state is not a condition forbidding subsequent P_f/P_b preparations on
+SAM and live protected factors. Those operations leave the separate
+canonical WORK checkpoint intact, exactly as in incoming §7eg.A--C.
+

@@ -1,0 +1,23 @@
+{
+  "status": "PASS_A30_COMMON_SOURCE_FRAME_SCHEDULE_AND_BUDGET",
+  "source_stage_count": 1372,
+  "frame_data_wires": 29848,
+  "zero_reports_before_checkpoint": true,
+  "checkpoint_after_full_paid_frame": true,
+  "old_source_stage_order_retained": true,
+  "old_report_order_retained": true,
+  "checkpoint_prefix_exact_count_verified": true,
+  "full_word_exact_counts_verified": true,
+  "new_gate_count_bit_length": 11647,
+  "common_mark_bound_per_unit_norm_lt": "2^-3231",
+  "common_mark_bound_scaled_2^3231_float": 0.7776474724379587,
+  "proof_scope": "ideal canonical reorder by source/report disjoint support and shared control, plus uniform prefix norm; not native exact commutation or all marked prefixes",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/marked_source_schedule.py": "92ef8395b40cf20ce77c49a3ed4bfdcbd42fbc1d2f6595133ca4ba2f3086863e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/GCX_BIRTH_CLOCK_PLAN.json": "3438970bd68865eef09d27683bb9fd85858d51a340ea83a169d96c2fe947ee12",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round57/GADGET_G_POWER_CERTIFICATE.json": "d11cc333506f1ac7d000f68aa6d80683094ea955ea9d2c6445bba3b69112d72b"
+  },
+  "GR_closed": false
+}

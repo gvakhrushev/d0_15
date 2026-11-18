@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_Q_SLOTS_COUNTEREXAMPLE",
+  "SAM_commutes_with_middle": true,
+  "SAM_does_not_commute_with_writer": true,
+  "fixed_nonidentity_post": true,
+  "Qb_source_nonzero": true,
+  "Qf_source_nonzero": true,
+  "independent_analytic_rows_are_opposite": true,
+  "exact_scalar_centre_Q_row_zero": true,
+  "actual_A48_nonzero_or_sign_proved": false,
+  "full_heat_or_marked_price_identified": false,
+  "GR_closed": false
+}

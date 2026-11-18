@@ -1,0 +1,22 @@
+{
+  "status": "PASS_INDEPENDENT_RECTANGULAR_ENDPOINT_G_CERTIFICATE",
+  "precision_bits": 19664,
+  "rotations": {
+    "plus": {
+      "power_bits": 4876,
+      "operator_error_strict_lt_pow2": 4873
+    },
+    "minus": {
+      "power_bits": 4869,
+      "operator_error_strict_lt_pow2": 4873
+    }
+  },
+  "both_errors_lt": "2^-4852",
+  "candidate_or_integer_ball_result_not_trusted": true,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/certify_boolean_angle.py": "a705e476a2b296f2578ea7afa33a70d9691d6860e08c00b4c7d692ad1f570c41",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round63/SUFFICIENT_ENDPOINT_G_CERTIFICATE.json": "0cb7105883d835fc146d9d3b0305b5006068bc5e656cf9f909451ec8acb5fce2"
+  },
+  "GR_closed": false
+}

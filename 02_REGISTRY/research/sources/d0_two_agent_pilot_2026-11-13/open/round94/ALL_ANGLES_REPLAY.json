@@ -1,0 +1,26 @@
+{
+  "status": "PASS_ALL_A48_TARGETS_AND_ALL_ACTUAL_POWERS_RECTANGULAR",
+  "source_target_occurrences": {
+    "co": 11125,
+    "mat": 204,
+    "site": 166,
+    "fixed": 2
+  },
+  "coframe_families": 1927,
+  "coframe_sectors": 137728,
+  "material_vectors": 70,
+  "material_q_sectors": 1216,
+  "coframe_unique_actual_powers": 4021,
+  "material_unique_actual_powers": 116,
+  "site_angles_and_phase": 166,
+  "fixed_powers": 2,
+  "coframe_X_doubled_phase_power": 1,
+  "total_actual_powers_checked": 4306,
+  "target_precision": 8192,
+  "replay_precision": 9216,
+  "actual_power_error_lt": "2^-3456",
+  "all_target_hashes_and_containment_checked": true,
+  "independent_rectangular_arithmetic": true,
+  "full_source_or_composition_compiled": false,
+  "GR_closed": false
+}

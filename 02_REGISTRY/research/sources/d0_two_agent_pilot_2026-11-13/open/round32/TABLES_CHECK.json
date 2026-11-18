@@ -1,0 +1,49 @@
+{
+  "status": "PASS_INDEPENDENT_A15_TABLES_COPY_OFFSETS_AND_COUNTS",
+  "inputs": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_COMPILATION.json": "eaee7204b650980b513c900c33c0ee975122d348f18dd7c2d387911299fd8d2b"
+  },
+  "DAG_nodes": 20402,
+  "reachable_nodes": 20149,
+  "transition_rows": 30847,
+  "add_choice_rows": 14316,
+  "max_children": 4,
+  "all_roots": {
+    "H_f_before_inverse_PF": {
+      "node": 20259,
+      "slots": 455,
+      "stack_depth": 11,
+      "degree": [
+        82,
+        0
+      ]
+    },
+    "H_q_before_inverse_PF": {
+      "node": 20402,
+      "slots": 18,
+      "stack_depth": 4,
+      "degree": [
+        2,
+        2
+      ]
+    }
+  },
+  "reachable_constants_checked": 7,
+  "site_leaf_addresses": 72192,
+  "CAR_with_nonzero_a": 2560,
+  "all_reachable_node_copy_placements": 76913,
+  "QROM_inventory_independently_recomputed": true,
+  "report_controller_logical_counts": {
+    "X": 144939804,
+    "CX": 6911538816,
+    "CCX": 9281032152
+  },
+  "seven_report_error_if_A14_applies": "<2^-4060",
+  "logical_tables_are_not_quantum_SELECT": true,
+  "full_READY_or_physical_C_proved": false,
+  "GR_closed": false
+}

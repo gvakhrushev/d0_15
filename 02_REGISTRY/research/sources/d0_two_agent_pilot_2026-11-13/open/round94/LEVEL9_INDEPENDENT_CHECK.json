@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_LEVEL9_PHASE_AND_IDEAL_BOUND",
+  "frozen_sha256": "dd0134b478b0a70db4c665c224a82cf76fa19b12707cd9df4e186f3e3f43c9d6",
+  "independent_precision_bits": 12288,
+  "phase_target_contained": true,
+  "actual_G_power_error_lt": "2^-4096",
+  "epsilon0_lt_half": true,
+  "nine_step_epsilon_exponent": 19683,
+  "ideal_failure_lt": "2^-19683",
+  "ideal_vector_error_lt": "2^-9841",
+  "assumes_exact_fixed_point_recursion_B39": true,
+  "GR_closed": false
+}

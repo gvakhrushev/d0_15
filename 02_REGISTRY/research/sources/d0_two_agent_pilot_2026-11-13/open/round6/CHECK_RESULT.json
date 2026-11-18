@@ -1,0 +1,17 @@
+{
+  "GR_closed": false,
+  "checks": 29,
+  "common_old_mark_guard_proved": false,
+  "conditional_ideal_eta": 0.0004253490275261887,
+  "fixture": {
+    "c": 0.05572809000084122,
+    "q": 0.4934221912517876,
+    "sam_D_CW": 0.22939588048981907,
+    "sam_variance": 0.052622469985699354
+  },
+  "fixture_conditional_minus_common_h": 8.85744042599724e-08,
+  "full_geometric_H1_word_executed": false,
+  "physical_cost_info_binding_proved": false,
+  "pre_reader_tail_effect_gap_p5": 0.09016994374947424,
+  "status": "PASS"
+}

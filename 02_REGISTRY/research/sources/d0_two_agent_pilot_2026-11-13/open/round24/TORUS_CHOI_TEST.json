@@ -1,0 +1,16 @@
+{
+  "status": "NUMERIC_TORUS_CENTRE_ALL_COLUMN_FORMULA_DIAGNOSTIC",
+  "active_A": 2049,
+  "vector_dimension": 4194304,
+  "anchor_squared": "1/65568",
+  "orthogonality_error": 2.220446049250313e-15,
+  "anchor_error": 6.071532165918825e-17,
+  "inverse_error": 1.7487680291953493e-14,
+  "norm_error": 1.2212453270876722e-15,
+  "padding_error": 0.0,
+  "coframe": "B21 raw u=nu eta e^-T, A11 source interface; actual all-SAM binding remains uncompiled",
+  "full_22_qubit_operator_allocated": false,
+  "native_compiled": false,
+  "all_SAM_branches_evaluated": false,
+  "GR_closed": false
+}

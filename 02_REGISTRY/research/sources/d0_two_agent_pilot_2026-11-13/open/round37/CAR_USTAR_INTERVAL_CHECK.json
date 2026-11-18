@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_OUTWARD_INTEGER_HALF_ANGLE_CERTIFICATE",
+  "input_sha256": "ca8e16b8dbff8bacc65dce025bd854ab021024463708cd9af4036e3f2f241344",
+  "k_binary_length": 4142,
+  "independent_precision_bits": 12800,
+  "builder_precision_bits": 16640,
+  "independent_L1_error_strictly_below": "2^-4142",
+  "required_error_le": "2^-4096",
+  "rotation_operator_and_ustar_state_error_le": "2^-4096",
+  "float_used_in_certificate": false,
+  "actual_and_target_enclosures_intersect_at_distinct_precisions": true,
+  "GR_closed": false
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS_INDEPENDENT_A23_SOURCE_FULL_COMPACT_WORD_AND_PRICE",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/car_vacuum_prefix.py": "4733e09654b6e566957a63807430128da2efa557b00d3309aea5f3cdf9a2dfca",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/CAR_VACUUM_PREFIX_PLAN.json": "ec32940f9837ff4ef87aece95fcace4db30ee9ee43b2e03139e8a3b9bf3bf826",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/CAR_VACUUM_PREFIX_CHECK.json": "042c394eab7d52fa97afff5795ae6e87349f457cef893e1bee74b373d6a7e10d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/ORIGINAL_FOURIER128_L4.json": "5e691225f746e346afe3ad61a9e5123666fd8d1f270e27756914730b598b5934",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e"
+  },
+  "quadrants_checked": 16384,
+  "quadrant_counts": {
+    "0": 4096,
+    "1": 4096,
+    "2": 4096,
+    "3": 4096
+  },
+  "F_transpose_F": "128 I",
+  "exact_ideal_amplitude_coefficients_checked": 524288,
+  "phase_nodes": 318,
+  "max_active_coefficient_sum": 18,
+  "actual_compact_blocks": 40742,
+  "every_literal_inverse_tree_independently_rebuilt": true,
+  "native_forward_inverse_counts_match": true,
+  "raw_giant_repeats_expanded": false,
+  "per_prefix_error_lt": "2^-3259",
+  "112_prefix_error_strict_lt": "2^-3253",
+  "old_marked_prefix_equivalence_proved": false,
+  "GR_closed": false
+}

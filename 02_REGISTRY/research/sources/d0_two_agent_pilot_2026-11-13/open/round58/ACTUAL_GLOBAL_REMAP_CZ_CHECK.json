@@ -1,0 +1,93 @@
+{
+  "status": "PASS_ACTUAL_HQ_CZ_END_SLOT_GLOBAL_REMAP",
+  "tested_slot_copy_depth": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      3,
+      1
+    ],
+    [
+      17,
+      0,
+      0
+    ],
+    [
+      17,
+      0,
+      1
+    ],
+    [
+      17,
+      1,
+      0
+    ],
+    [
+      17,
+      1,
+      1
+    ],
+    [
+      17,
+      2,
+      0
+    ],
+    [
+      17,
+      2,
+      1
+    ],
+    [
+      17,
+      3,
+      0
+    ],
+    [
+      17,
+      3,
+      1
+    ]
+  ],
+  "real_hq_record_count": 18,
+  "full_word_expanded": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/h1_namespace.py": "0a11a40f7c6e1c0cdb35be63bfb4e8704eb74ab17a8d1e0d1b2d40e8dabbc03e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_EXACT_FINITE_FIXTURES_AND_SYMBOLIC_IDENTITIES",
+  "fixed_point_failure_recursion": "epsilon_next=epsilon^3",
+  "shared_clean_scratch_correct_for_all_control_inputs": true,
+  "dirty_scratch_counterexample": {
+    "N": 3,
+    "controls_bits": 0,
+    "scratch_bits": 1,
+    "flag": 0,
+    "actual_phase_bit": 0,
+    "desired_phase_bit": 1
+  },
+  "arbitrary_rebit_projector_rank": 2,
+  "reflection_distance_fixture_is_2_sqrt_epsilon": true,
+  "global_rebit_phase_cancels": true,
+  "weighted_lcu_block_identity": true,
+  "full_a39_emitter_checked": false,
+  "native_schedule_claimed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round76/check_uniform_rebit_scope.py": "a6f61b8073d16037d1ade4ca762661278cd51c176d68069689f43a10744a43db",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round74/lazy_anchor_phase.py": "dd901bc4b2a88f72bebd0d877570b6ad3b7c02046702d6cd2a9a4de5cc63aa4f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round75/B75_INDEPENDENT_A38_AUDIT_RU.md": "6c5d7f430ed195bff975679a175e865dfc1cdb244a2a84bad6fca436a8fdc0e5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round75/B75_INDEPENDENT_ANGLE_AUDIT.json": "db78300458492f828a5b1c4c447df118a25c3a6e1d1c7432a174d8c9e699b93f"
+  }
+}

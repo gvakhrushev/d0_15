@@ -1,0 +1,513 @@
+{
+  "format_version": 1,
+  "created_utc": "2026-11-13T11:57:24.881704+00:00",
+  "repository_url": "https://github.com/gvakhrushev/d0_15.git",
+  "source_repository": "/Users/grigorijvahrusev/Downloads/d0_agent_method_2026-11-13",
+  "workspace_head": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+  "refs": {
+    "main": {
+      "sha": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+      "remote_ref": "refs/heads/main"
+    },
+    "research_334": {
+      "sha": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "remote_ref": "refs/pull/334/head"
+    },
+    "formal_402": {
+      "sha": "e9a3a87dd0ce46e74e4a41fcfad26e98e7e0fe39",
+      "remote_ref": "refs/pull/402/head"
+    }
+  },
+  "remote_verification": "matched",
+  "remote_refs": {
+    "refs/heads/main": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+    "refs/pull/334/head": "dc411daf01f697ec85dd22f28bfe124171796645",
+    "refs/pull/402/head": "e9a3a87dd0ce46e74e4a41fcfad26e98e7e0fe39"
+  },
+  "baseline_sha256": "8a015e1988025802eada483360d4c95f449a31d41428b51b127dd7b7a2587fb4",
+  "sources": [
+    {
+      "id": "entry_contract",
+      "ref": "main",
+      "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+      "path": "AGENTS.md",
+      "blob": "d54b88e7f752a6dbe25cbcba6b05be3481cb65c0",
+      "full_blob_sha256": "cda2d59b762cc460942e118e18e7fe909aeff20b5f412ea6e78f4673dbf6e32e",
+      "full_blob_bytes": 27703,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/entry_contract.txt",
+      "export_sha256": "cda2d59b762cc460942e118e18e7fe909aeff20b5f412ea6e78f4673dbf6e32e",
+      "export_bytes": 27703
+    },
+    {
+      "id": "work_rules",
+      "ref": "main",
+      "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+      "path": "00_WORK/README.md",
+      "blob": "6ba4b3e7164333b195631221aefcb0e928b7d814",
+      "full_blob_sha256": "53792e6bca049c91cf198de30a3b224b8d6de0370acf85d79ef1d61a08bf565b",
+      "full_blob_bytes": 22107,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/work_rules.txt",
+      "export_sha256": "53792e6bca049c91cf198de30a3b224b8d6de0370acf85d79ef1d61a08bf565b",
+      "export_bytes": 22107
+    },
+    {
+      "id": "assembly_guide",
+      "ref": "main",
+      "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+      "path": "02_REGISTRY/gr_assembly/README.md",
+      "blob": "ecda35ed4ab2dc32c300ff19ba4fc31c444bfe85",
+      "full_blob_sha256": "2b9ad7955a31be104fcd59ee328e436f98c3b046148fa2fd3692dd87bbaceba1",
+      "full_blob_bytes": 32566,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/assembly_guide.txt",
+      "export_sha256": "2b9ad7955a31be104fcd59ee328e436f98c3b046148fa2fd3692dd87bbaceba1",
+      "export_bytes": 32566
+    },
+    {
+      "id": "assembly_contract",
+      "ref": "main",
+      "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+      "path": "02_REGISTRY/gr_assembly/contract.json",
+      "blob": "3d4a93cb2ba70f124e258669218df3f056a903d6",
+      "full_blob_sha256": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+      "full_blob_bytes": 151352,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/assembly_contract.txt",
+      "export_sha256": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+      "export_bytes": 151352
+    },
+    {
+      "id": "positive_case",
+      "ref": "main",
+      "commit": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "blob": "76dbf01e6fd8c683f294c37e96319413a859c731",
+      "full_blob_sha256": "ecd666a53ee3735bea0335bae372925c84964fb24aaab4b81ef72ae8963c4129",
+      "full_blob_bytes": 14151,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/positive_case.txt",
+      "export_sha256": "ecd666a53ee3735bea0335bae372925c84964fb24aaab4b81ef72ae8963c4129",
+      "export_bytes": 14151
+    },
+    {
+      "id": "architectural_objective",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md",
+      "blob": "9773b51f217487619593ae67db0c3f399493d34e",
+      "full_blob_sha256": "ab2886deb9279bfb3db6f351f98460c0e97d597591c67eb15ac6d7ae2671eb21",
+      "full_blob_bytes": 108855,
+      "start_line": 379,
+      "end_line": 461,
+      "output": "sources/architectural_objective.txt",
+      "export_sha256": "79e79cb84dfdf74861aba85ac553650286286b1e5302e5239b4048c34084519f",
+      "export_bytes": 5215
+    },
+    {
+      "id": "book00",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "blob": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+      "full_blob_sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c",
+      "full_blob_bytes": 75761,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/book00.txt",
+      "export_sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c",
+      "export_bytes": 75761
+    },
+    {
+      "id": "book03",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "full_blob_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "full_blob_bytes": 86193,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/book03.txt",
+      "export_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "export_bytes": 86193
+    },
+    {
+      "id": "native_contract",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md",
+      "blob": "f0f74d206dbf79913f9aa95f0e53177de6d12ab5",
+      "full_blob_sha256": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+      "full_blob_bytes": 6556,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/native_contract.txt",
+      "export_sha256": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+      "export_bytes": 6556
+    },
+    {
+      "id": "lc9",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 151310,
+      "end_line": 151365,
+      "output": "sources/lc9.txt",
+      "export_sha256": "3f14ab38b78feec4038a989e85fe4a66d3860fbaf53104161b6ef2331a551863",
+      "export_bytes": 2461
+    },
+    {
+      "id": "cd13",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 151795,
+      "end_line": 151930,
+      "output": "sources/cd13.txt",
+      "export_sha256": "3a058cdb454936f908074e642c0fbde48eb3cd21b162a2f38ebae72d36ca1d9d",
+      "export_bytes": 7067
+    },
+    {
+      "id": "correction_7fu",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 156244,
+      "end_line": 156381,
+      "output": "sources/correction_7fu.txt",
+      "export_sha256": "c7fb0837f4e7245de8a1e4a6bcb4146529eddc1277bac778f3cbfbf3a032db76",
+      "export_bytes": 7914
+    },
+    {
+      "id": "record_7fv",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 156383,
+      "end_line": 157208,
+      "output": "sources/record_7fv.txt",
+      "export_sha256": "be8ddb5459129ec1431d10f0b5d473857fb93398efb81c6afb4e7afd0191b17a",
+      "export_bytes": 34408
+    },
+    {
+      "id": "work_7fw",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 157209,
+      "end_line": 157767,
+      "output": "sources/work_7fw.txt",
+      "export_sha256": "63dfff1e17538414003ef7f6efa61f61f7a1d3dfa113163a46c427f13c38bdb5",
+      "export_bytes": 28819
+    },
+    {
+      "id": "parry_7fx",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 157768,
+      "end_line": 158773,
+      "output": "sources/parry_7fx.txt",
+      "export_sha256": "38815b31ca6958cbbde21bc1614ab43f053057b2c89959e2738ef2dc5aa1a857",
+      "export_bytes": 52085
+    },
+    {
+      "id": "repeat_7fy",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 158774,
+      "end_line": 159913,
+      "output": "sources/repeat_7fy.txt",
+      "export_sha256": "1c9034d7d528c1a4ea26b139ebfa1b6c54df0f70d88a36e3b74974cec9afb8a0",
+      "export_bytes": 58278
+    },
+    {
+      "id": "thermal_7fz",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 159914,
+      "end_line": 161558,
+      "output": "sources/thermal_7fz.txt",
+      "export_sha256": "0b206c331177161935b89da3cc85428eabc4f6bbeec0ce5f0328df478364486b",
+      "export_bytes": 89815
+    },
+    {
+      "id": "theory_transfer",
+      "ref": "formal_402",
+      "commit": "e9a3a87dd0ce46e74e4a41fcfad26e98e7e0fe39",
+      "path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "blob": "a882f38aa1caf4d619c6e1f84c73ebe97e4b127a",
+      "full_blob_sha256": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203",
+      "full_blob_bytes": 22584,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/theory_transfer.txt",
+      "export_sha256": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203",
+      "export_bytes": 22584
+    },
+    {
+      "id": "prospective_execution",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "blob": "5bf153f4c74325366c8c57ce404dcdcb4fc87dc5",
+      "full_blob_sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4",
+      "full_blob_bytes": 12448,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/prospective_execution.txt",
+      "export_sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4",
+      "export_bytes": 12448
+    },
+    {
+      "id": "parry_price_review",
+      "ref": "formal_402",
+      "commit": "e9a3a87dd0ce46e74e4a41fcfad26e98e7e0fe39",
+      "path": "02_REGISTRY/research/sources/d0_validated_parry_price_2026-11-06/README.md",
+      "blob": "69b0680368041f2e8b7d0d9aa71885d07deff1f4",
+      "full_blob_sha256": "477dcf125148ee0d353216a4c16ba99cd06168ff61276d242e55a017a95a946c",
+      "full_blob_bytes": 18800,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/parry_price_review.txt",
+      "export_sha256": "477dcf125148ee0d353216a4c16ba99cd06168ff61276d242e55a017a95a946c",
+      "export_bytes": 18800
+    },
+    {
+      "id": "clock_formal_scope",
+      "ref": "formal_402",
+      "commit": "e9a3a87dd0ce46e74e4a41fcfad26e98e7e0fe39",
+      "path": "02_REGISTRY/research/sources/d0_growing_clock_stages_2026-11-05/README.md",
+      "blob": "f2012ae35c4f74f2bfdac9e682b130439a78269c",
+      "full_blob_sha256": "7626afd80faa8f210a390337ecb553423c117f51e8f872bcf9c8c0955d81ab01",
+      "full_blob_bytes": 3630,
+      "start_line": null,
+      "end_line": null,
+      "output": "sources/clock_formal_scope.txt",
+      "export_sha256": "7626afd80faa8f210a390337ecb553423c117f51e8f872bcf9c8c0955d81ab01",
+      "export_bytes": 3630
+    },
+    {
+      "id": "h1_admission_domain",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 150884,
+      "end_line": 151309,
+      "output": "sources/h1_admission_domain.txt",
+      "export_sha256": "1d43118b741c4b757ce9c7d547f635d07c6b34b0eaa50f233f83cc570c314452",
+      "export_bytes": 26493
+    },
+    {
+      "id": "h1_literal_word",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 153164,
+      "end_line": 153528,
+      "output": "sources/h1_literal_word.txt",
+      "export_sha256": "d267d33cf9f27b050a40115978a5fff7eefa383546f4677d6fd3c3b4047f181e",
+      "export_bytes": 20240
+    },
+    {
+      "id": "h1_original_cut",
+      "ref": "research_334",
+      "commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "blob": "bd3db1b6801f24d6a8a084e0d5efa7bc8fa8e830",
+      "full_blob_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+      "full_blob_bytes": 7647868,
+      "start_line": 171556,
+      "end_line": 171609,
+      "output": "sources/h1_original_cut.txt",
+      "export_sha256": "523f6d5cdaead6be9e803d7892d9f58018ebc00d976a87b6a1522797d903ec54",
+      "export_bytes": 2838
+    }
+  ],
+  "files": {
+    "baseline.json": {
+      "sha256": "8a015e1988025802eada483360d4c95f449a31d41428b51b127dd7b7a2587fb4",
+      "bytes": 5240
+    },
+    "docs/CURRENT_FRONTIER_RU.md": {
+      "sha256": "7b58e260ecd90742d93babfb38c5ea7c89b48996161a16d1f4ffaf7b555b52ce",
+      "bytes": 17137
+    },
+    "docs/METHOD_RU.md": {
+      "sha256": "4be53d583b975955e100e1ea04d1cb2d12d72d00cfbcdd2212f0d0ba97a6c857",
+      "bytes": 18698
+    },
+    "docs/OBJECTIVES_RU.md": {
+      "sha256": "da6158294860eab013278399d32da4fcc6b9d4fa9a7c83f8802e020a5246f367",
+      "bytes": 14161
+    },
+    "docs/PILOT_RU.md": {
+      "sha256": "bce77ce11a582b7d1b0208dd7dd42048a896799d59cc223a5c03d09a03455838",
+      "bytes": 12474
+    },
+    "docs/README_RU.md": {
+      "sha256": "b541b48d57e2c61ad78c5e2a5699bf736321ae99f09a763c9d6116f12ac26cf2",
+      "bytes": 8239
+    },
+    "docs/VALIDATION_RU.md": {
+      "sha256": "448d108600d06edfe857d176a8ca23e7005338fdad64ef07019e0d4d27e245b9",
+      "bytes": 4434
+    },
+    "prompts/DIRECT_RU.md": {
+      "sha256": "960b17e8bfc3b61b71772f6c1ca16fb08ae5ac9b3e2924c65259b404222e4316",
+      "bytes": 4366
+    },
+    "prompts/FORMALIZER_RU.md": {
+      "sha256": "e7ad9ffc865fa4d393a81974e0b3e0c332a599e150397b267833fa8083954112",
+      "bytes": 3910
+    },
+    "prompts/LEAD_RU.md": {
+      "sha256": "bf01607cc07da524063685d254475e64eb2add34972adf572a1aeeb8fb588bc8",
+      "bytes": 6731
+    },
+    "prompts/OPEN_RU.md": {
+      "sha256": "a6750dd6c99f10fc8c93725a5f1fcb54ab4e1666e52b812e7e7c0f4e1b36a027",
+      "bytes": 5656
+    },
+    "prompts/REVIEWER_RU.md": {
+      "sha256": "d5222b942c41c3f43d3d8789bdc94c1ac3e92d60f8a267164899db08d26d9e19",
+      "bytes": 4260
+    },
+    "sources/architectural_objective.txt": {
+      "sha256": "79e79cb84dfdf74861aba85ac553650286286b1e5302e5239b4048c34084519f",
+      "bytes": 5215
+    },
+    "sources/assembly_contract.txt": {
+      "sha256": "72fb3bbbc320b4af217cbe7c09580b44556b354e9668cbd11e76933fa8209ba6",
+      "bytes": 151352
+    },
+    "sources/assembly_guide.txt": {
+      "sha256": "2b9ad7955a31be104fcd59ee328e436f98c3b046148fa2fd3692dd87bbaceba1",
+      "bytes": 32566
+    },
+    "sources/book00.txt": {
+      "sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c",
+      "bytes": 75761
+    },
+    "sources/book03.txt": {
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193
+    },
+    "sources/cd13.txt": {
+      "sha256": "3a058cdb454936f908074e642c0fbde48eb3cd21b162a2f38ebae72d36ca1d9d",
+      "bytes": 7067
+    },
+    "sources/clock_formal_scope.txt": {
+      "sha256": "7626afd80faa8f210a390337ecb553423c117f51e8f872bcf9c8c0955d81ab01",
+      "bytes": 3630
+    },
+    "sources/correction_7fu.txt": {
+      "sha256": "c7fb0837f4e7245de8a1e4a6bcb4146529eddc1277bac778f3cbfbf3a032db76",
+      "bytes": 7914
+    },
+    "sources/entry_contract.txt": {
+      "sha256": "cda2d59b762cc460942e118e18e7fe909aeff20b5f412ea6e78f4673dbf6e32e",
+      "bytes": 27703
+    },
+    "sources/h1_admission_domain.txt": {
+      "sha256": "1d43118b741c4b757ce9c7d547f635d07c6b34b0eaa50f233f83cc570c314452",
+      "bytes": 26493
+    },
+    "sources/h1_literal_word.txt": {
+      "sha256": "d267d33cf9f27b050a40115978a5fff7eefa383546f4677d6fd3c3b4047f181e",
+      "bytes": 20240
+    },
+    "sources/h1_original_cut.txt": {
+      "sha256": "523f6d5cdaead6be9e803d7892d9f58018ebc00d976a87b6a1522797d903ec54",
+      "bytes": 2838
+    },
+    "sources/lc9.txt": {
+      "sha256": "3f14ab38b78feec4038a989e85fe4a66d3860fbaf53104161b6ef2331a551863",
+      "bytes": 2461
+    },
+    "sources/native_contract.txt": {
+      "sha256": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+      "bytes": 6556
+    },
+    "sources/parry_7fx.txt": {
+      "sha256": "38815b31ca6958cbbde21bc1614ab43f053057b2c89959e2738ef2dc5aa1a857",
+      "bytes": 52085
+    },
+    "sources/parry_price_review.txt": {
+      "sha256": "477dcf125148ee0d353216a4c16ba99cd06168ff61276d242e55a017a95a946c",
+      "bytes": 18800
+    },
+    "sources/positive_case.txt": {
+      "sha256": "ecd666a53ee3735bea0335bae372925c84964fb24aaab4b81ef72ae8963c4129",
+      "bytes": 14151
+    },
+    "sources/prospective_execution.txt": {
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4",
+      "bytes": 12448
+    },
+    "sources/record_7fv.txt": {
+      "sha256": "be8ddb5459129ec1431d10f0b5d473857fb93398efb81c6afb4e7afd0191b17a",
+      "bytes": 34408
+    },
+    "sources/repeat_7fy.txt": {
+      "sha256": "1c9034d7d528c1a4ea26b139ebfa1b6c54df0f70d88a36e3b74974cec9afb8a0",
+      "bytes": 58278
+    },
+    "sources/theory_transfer.txt": {
+      "sha256": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203",
+      "bytes": 22584
+    },
+    "sources/thermal_7fz.txt": {
+      "sha256": "0b206c331177161935b89da3cc85428eabc4f6bbeec0ce5f0328df478364486b",
+      "bytes": 89815
+    },
+    "sources/work_7fw.txt": {
+      "sha256": "63dfff1e17538414003ef7f6efa61f61f7a1d3dfa113163a46c427f13c38bdb5",
+      "bytes": 28819
+    },
+    "sources/work_rules.txt": {
+      "sha256": "53792e6bca049c91cf198de30a3b224b8d6de0370acf85d79ef1d61a08bf565b",
+      "bytes": 22107
+    }
+  },
+  "scope": "Pinned reading packet only; no agent launch, proof replay or scientific acceptance."
+}

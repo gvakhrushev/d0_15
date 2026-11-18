@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "fixture_both_are_real_SO": true,
+    "fixture_same_declared_vacuum_column": true,
+    "fixture_old_right_exact_identity_factor": true,
+    "fixture_off_diagonal_effect_pullback_opposite": true,
+    "fixture_full_column_material_jet_differs": true,
+    "fixture_is_original_admission_evidence": false,
+    "fixture_is_registered_original_effect": false
+  },
+  "input_sha256": {
+    "original_owner": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "A23_vacuum": "77d3de6d0ad3a24a58edbd39be311fb4907f8761a75da3d7a98a359bb45a266d",
+    "A24_car": "3a57e0d9be193352ff2cf76b3b62a76e8c5da33d18f9d2d2c1569e52dc363497",
+    "A48_global_source": "d1a793af7b613ad37edc6c66c1156fc586f8b065d2f6ca4f9436cb68eb3e00b1",
+    "B86_marks": "ac8285dfd7ffcc6891d4db9f38255837a74dc763faaee02141c6f68af69085c2",
+    "B91_jet": "f56105e52c199778228c9465dc3e808f5e8229e3a38eae4739c146b333bbc3ce",
+    "B94_audit": "4751ddb729e4cbabc277d512da7f0c20369332e49a9f219aaf50457cb1f38f09"
+  },
+  "source_map_owner_matched": false,
+  "original_descriptor_admitted": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS_A18_CAR_FRAME_NATIVE_STRUCTURE_AND_FIXED_IDENTITY",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round18/car_frame.py": "453afd3c2fc20fe8f24b09d385668bd012d43995364bbed1a928d6cc400d673c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round35/anchor_reflection.py": "1e288ab4bbce76b8f6d85ddcb0401a6f33b18a76e5560e16644bde8d4de9470a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round37/CAR_USTAR_NATIVE.json": "ca8e16b8dbff8bacc65dce025bd854ab021024463708cd9af4036e3f2f241344"
+  },
+  "actual_fixed_Ustar_literal_adjoint_verified": true,
+  "actual_reflection_F_adjoint_Z_F_structure_verified": true,
+  "all_SAM_SITE_RIGHT_oldRIGHT_untouched": true,
+  "predicate_clean_wires": 3,
+  "native_aux_arbitrary": true,
+  "exact_small_k_fixed_bank_identity_cases": 64,
+  "small_k_full_paid_calls": 3924,
+  "fixed_bank_identity_proof": "U R U\u2020 U R U\u2020=I because R=F\u2020 Z F and Z\u00b2=I, for any predicate/aux state, with paid stages retained",
+  "q_y_hybrid_coefficient": "2*3+2*1+2*10=28",
+  "112_copy_conditional_error_lt": "2^-4084",
+  "scope": "fixed frame exact identity and q/y conditional hybrid bound; no vacuum/Fourier, births, marks or full H1",
+  "GR_closed": false
+}

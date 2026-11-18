@@ -1,0 +1,31 @@
+{
+  "status": "PASS_FRONTLOADED_PORT_BIRTH_LAYER_ST4_OBSTRUCTION",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/global_h1.py": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round49/SC6_ACTIVE_PORT_OWNER_CHECK.json": "410348a8dcd1a8ad7e18c8cde0b7e3562d0ef6aea0e1c545159d69562c930d17",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round53/READY_GAIN_INTEGER_INDEPENDENT_CHECK.json": "bb8181d07b0eb1feb30ae326a766868c5d20b5e10078302c49aa0fd26911c6b0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round52/SCALAR_CORNER_PREMISE_CHECK.json": "5dcb18d120a2e1f7efdbd2389694aec9bb28c5a6af07f2cdfc9adabdf1d7734f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "SC6_report_event_pattern_counts": {
+    "2": 2,
+    "3": 24,
+    "4": 76,
+    "5": 24,
+    "6": 2
+  },
+  "every_selector_word_weight": "p^7",
+  "accept_projector_expectation_lower": "2*p^7 for any report state when the untouched five selectors start product v^5",
+  "port_offdiagonal_absolute_lower": "> (12/25)*2*(309/500)^7 > 3/100",
+  "birth_layer_witness": "u=all canonical v; z=u with port v_perp. For any port birth position k among front-loaded births, \u03a0_k z=z and \u03a0_k u=0. Exact matrix element <u|W|z>=-sin(1024\u03b8)*t, t>=2p^7, under completed R_load tensor I_port and untouched selector registers.",
+  "ST4_commutation_fails_for_every_frontloaded_birth_order": true,
+  "all_births_before_A_no_intervening_gates_required": true,
+  "not_a_proof_actual_full_heat_derivative_nonzero": true,
+  "not_a_claim_about_interleaved_births_or_other_programs": true,
+  "aux_addressed_cannot_be_declared_immutable_oldRIGHT": true,
+  "tiny_clock_witness": "one-birth reflection clock has Tr(T)=-cos(2\u03c6), not generically constant",
+  "physical_admission_or_C_proved": false,
+  "GR_closed": false
+}

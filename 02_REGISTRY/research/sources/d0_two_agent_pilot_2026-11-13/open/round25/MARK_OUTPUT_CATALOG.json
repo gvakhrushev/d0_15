@@ -1,0 +1,153 @@
+{
+  "status": "EXACT_TARGET_OPERAND_AND_OUTPUT_CATALOG_NOT_PHYSICAL_STAGE_LIST",
+  "banks": [
+    {
+      "call_index": 0,
+      "name": "y+",
+      "per_site_leaf_counts": {
+        "Choi": 272,
+        "CAR": 10
+      },
+      "sites": 256,
+      "logical_leaf_addresses": 72192,
+      "Choi_copy_bound": 180,
+      "material_copy_bound": 16,
+      "retained_outputs": [
+        "full_Choi_address_input_output_and_padding",
+        "all_CAR_site_grade_and_fresh_RIGHT",
+        "signs_selectors_ready_report_and_failure",
+        "oldRIGHT_identity"
+      ]
+    },
+    {
+      "call_index": 1,
+      "name": "y-",
+      "per_site_leaf_counts": {
+        "Choi": 272,
+        "CAR": 10
+      },
+      "sites": 256,
+      "logical_leaf_addresses": 72192,
+      "Choi_copy_bound": 180,
+      "material_copy_bound": 16,
+      "retained_outputs": [
+        "full_Choi_address_input_output_and_padding",
+        "all_CAR_site_grade_and_fresh_RIGHT",
+        "signs_selectors_ready_report_and_failure",
+        "oldRIGHT_identity"
+      ]
+    },
+    {
+      "call_index": 2,
+      "name": "f",
+      "per_site_leaf_counts": {
+        "Choi": 272,
+        "CAR": 10
+      },
+      "sites": 256,
+      "logical_leaf_addresses": 72192,
+      "Choi_copy_bound": 180,
+      "material_copy_bound": 16,
+      "retained_outputs": [
+        "full_Choi_address_input_output_and_padding",
+        "all_CAR_site_grade_and_fresh_RIGHT",
+        "signs_selectors_ready_report_and_failure",
+        "oldRIGHT_identity"
+      ]
+    },
+    {
+      "call_index": 3,
+      "name": "0",
+      "per_site_leaf_counts": {
+        "Choi": 272,
+        "CAR": 10
+      },
+      "sites": 256,
+      "logical_leaf_addresses": 72192,
+      "Choi_copy_bound": 180,
+      "material_copy_bound": 16,
+      "retained_outputs": [
+        "full_Choi_address_input_output_and_padding",
+        "all_CAR_site_grade_and_fresh_RIGHT",
+        "signs_selectors_ready_report_and_failure",
+        "oldRIGHT_identity"
+      ]
+    },
+    {
+      "call_index": 4,
+      "name": "x+",
+      "per_site_leaf_counts": {
+        "Choi": 272,
+        "CAR": 10
+      },
+      "sites": 256,
+      "logical_leaf_addresses": 72192,
+      "Choi_copy_bound": 180,
+      "material_copy_bound": 16,
+      "retained_outputs": [
+        "full_Choi_address_input_output_and_padding",
+        "all_CAR_site_grade_and_fresh_RIGHT",
+        "signs_selectors_ready_report_and_failure",
+        "oldRIGHT_identity"
+      ]
+    },
+    {
+      "call_index": 5,
+      "name": "x-",
+      "per_site_leaf_counts": {
+        "Choi": 272,
+        "CAR": 10
+      },
+      "sites": 256,
+      "logical_leaf_addresses": 72192,
+      "Choi_copy_bound": 180,
+      "material_copy_bound": 16,
+      "retained_outputs": [
+        "full_Choi_address_input_output_and_padding",
+        "all_CAR_site_grade_and_fresh_RIGHT",
+        "signs_selectors_ready_report_and_failure",
+        "oldRIGHT_identity"
+      ]
+    },
+    {
+      "call_index": 6,
+      "name": "q",
+      "per_site_leaf_counts": {
+        "Choi": 272,
+        "CAR": 10
+      },
+      "sites": 256,
+      "logical_leaf_addresses": 72192,
+      "Choi_copy_bound": 180,
+      "material_copy_bound": 16,
+      "retained_outputs": [
+        "full_Choi_address_input_output_and_padding",
+        "all_CAR_site_grade_and_fresh_RIGHT",
+        "signs_selectors_ready_report_and_failure",
+        "oldRIGHT_identity"
+      ]
+    }
+  ],
+  "logical_banks_times_leaf_bindings": 505344,
+  "leaf_definition": "SOURCE_LEAF_BINDING.json leaf_templates[leaf], site_bindings[site].leaf_addresses_in_template_order[leaf]; exact A11 data",
+  "leaf_binding_sha256": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+  "reference_and_current_fields": "targets.fields(bank,label) or precision_name.at_site(bank,site,label)",
+  "Choi_input_output": "(a,i,j), a<2049 active; a>=2049 padded; anchor=(0,0,0), all 32\u00d732 local columns",
+  "material_input_output": "256 internal sites \u00d716 grades \u00d7128 independent fresh RIGHT; psi in grades 0,15, filler14 and clock1 retained",
+  "shared_external_SITE": "one 8-qubit control with weight N_x/10946, separate from internal sites; all 256 inputs of O_chi (G^tensor8)^T",
+  "sampling_input": "2688 born SAM; Y_b = chart^-1(chart(Y0)+2^-30(b-p^2)); central Y0 is distinct from all-zero b",
+  "optional_unsplit_current_mark": "one additional full Z_current=(u,U,Psi,rho) bank if demanded by original unsplit mark; not an eighth comparator report; copies and compiled placement depend on actual required mark",
+  "logical_checkpoint_contract": [
+    "canonical RAW births and bank/Fourier vacuum prefix",
+    "SITE prepared and held as control",
+    "each Choi and CAR prepared from known fresh resources",
+    "original sign selectors/READY/reports/failures",
+    "seven-call comparator and pre-sign event",
+    "paid reverses and required reader transport; retain protected D/oldRIGHT"
+  ],
+  "physical_stage_ordinals": null,
+  "marked_prefix_maps_and_reader_seal_list_compiled": false,
+  "gate_addresses_birth_order_and_costs_compiled": false,
+  "native_word": false,
+  "GR_closed": false
+}

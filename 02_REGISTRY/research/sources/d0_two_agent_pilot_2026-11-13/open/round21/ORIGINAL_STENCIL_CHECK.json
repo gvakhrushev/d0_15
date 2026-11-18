@@ -1,0 +1,291 @@
+{
+  "status": "PASS_NUMERIC_ORIGINAL_CAR16_LOCAL_STENCIL",
+  "site": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "faces": [
+    {
+      "roles": [
+        0,
+        1
+      ],
+      "link_operands": [
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          0
+        ],
+        [
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          0
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          1
+        ]
+      ],
+      "source_moment_float": -0.0,
+      "lorentz_error_float": 4.783392768521622e-21
+    },
+    {
+      "roles": [
+        0,
+        2
+      ],
+      "link_operands": [
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          0
+        ],
+        [
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          0
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          2
+        ]
+      ],
+      "source_moment_float": -0.0,
+      "lorentz_error_float": 6.0657793081194634e-21
+    },
+    {
+      "roles": [
+        0,
+        3
+      ],
+      "link_operands": [
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          0
+        ],
+        [
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          0
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          3
+        ]
+      ],
+      "source_moment_float": -0.0,
+      "lorentz_error_float": 3.985741619025561e-21
+    },
+    {
+      "roles": [
+        1,
+        2
+      ],
+      "link_operands": [
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          2
+        ]
+      ],
+      "source_moment_float": -0.0,
+      "lorentz_error_float": 0.0
+    },
+    {
+      "roles": [
+        1,
+        3
+      ],
+      "link_operands": [
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          3
+        ]
+      ],
+      "source_moment_float": -0.0,
+      "lorentz_error_float": 0.0
+    },
+    {
+      "roles": [
+        2,
+        3
+      ],
+      "link_operands": [
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          2
+        ],
+        [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          3
+        ]
+      ],
+      "source_moment_float": -0.0,
+      "lorentz_error_float": 0.0
+    }
+  ],
+  "q_moment_float": 0.0,
+  "note": "original nonvacuum centre only; no H.1 sampled Y_b, emitted source-sign gate or source jet",
+  "all_fields_and_pf_source_transport_verified": false,
+  "GR_closed": false
+}

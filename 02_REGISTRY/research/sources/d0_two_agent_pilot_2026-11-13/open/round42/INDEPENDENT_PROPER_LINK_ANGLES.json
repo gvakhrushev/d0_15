@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ALL_INDEPENDENT_HIGH_PRECISION_NATIVE_POWERS",
+  "library_sha256": "c5a4943298b419f72e7f098a4529e59c971d5877354e42e48ec9ec1b0905b307",
+  "original_bits": 7168,
+  "replay_bits": 8448,
+  "families": 336,
+  "angles": 5018,
+  "all_original_target_hashes_and_pins_match": true,
+  "all_original_target_intervals_contain_replay": true,
+  "all_native_error_bounds_hold": true,
+  "controlled_X_combined_error_le": "2^-3264",
+  "candidate_grid_used": false,
+  "GR_closed": false
+}

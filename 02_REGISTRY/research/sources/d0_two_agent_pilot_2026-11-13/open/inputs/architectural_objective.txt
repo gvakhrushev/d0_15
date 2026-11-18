@@ -1,0 +1,83 @@
+## Architectural objective
+
+D0 supplies the necessary operational structure `Sigma` (`Σ`) of verification
+without an obligatory external catalogue. Readable and writable distinctions,
+retained records, independent comparison, distinctions stable under admitted
+future comparisons, and operational order/time are used with the exact
+hypotheses of their existing proof owners. The
+[composed `verification_core` result](D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md#2-one-record-kernel-for-every-admitted-future)
+assembles that common foundation on one verified record/process carrier.
+Its exact scope and independent acceptance are recorded in the assembly.
+Reuse this result and preserve its representation and coding hypotheses when
+stating necessity for the declared class of verifiable theories.
+
+Map the book tuple to explicit representation witnesses. Where a coded
+interface requires finite encoding, effective canonicalization or computable
+access, identify its supplied hypotheses or owned constructions. Generic
+necessity and semantic factorization theorems retain their original scope;
+their abstract quotients do not supply those algorithms by themselves.
+
+A completed distinguishable record is an input to comparison and statistics.
+The outcome alphabet is declared by the protocol; a definite Boolean check
+does not restrict it to two physical outcomes. For the stated execution/test
+interface, empirical equality means equality of every available future profile:
+
+\[
+x\sim y\quad\Longleftrightarrow\quad
+\forall w,q,\ \operatorname{read}(\operatorname{run}(w,x),q)
+=\operatorname{read}(\operatorname{run}(w,y),q).
+\]
+
+Retained memory must preserve those distinctions. Operational time at this
+level is the order of registered distinguishable changes. Its relation to a
+theory's duration and causal-time observable is supplied by the concrete clock
+map in that theory's realization.
+
+The programme places existing theories over this foundation through faithful
+interpretations. It reuses their proved mathematics. A theory interpretation
+specifies states, operations, composition, observations and physical equivalence;
+its D0 realization preserves the declared preparation, records, clock, cost and
+source semantics. Sharing a necessary tuple or encoding equations in a carrier
+does not by itself establish this preservation.
+
+`theory_transfer` is a generic conditional theorem: for any declared theory `T`,
+a faithful interpretation satisfying its explicit interface carries theorems
+`H_T => P_T` to the corresponding D0 statements. It does not depend on GR, assert
+that every interpretation has already been constructed, or require re-proving
+the internal mathematics of `T`. An application must establish the interpreted
+hypotheses on its actual D0 objects. A target equation may occur in the theory
+being interpreted; assuming it as native admission cannot prove that D0
+realizes its dynamics.
+
+The [general transfer interface](../../03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean)
+now connects **two execution systems** through a proved common empirical image.
+The owned [`OperationalProcess`](../../03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean)
+preserves contextual equivalence within one empirical theory;
+[`TheoryVerification`](../../03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean)
+represents its empirical states. The composed transfer reuses both and supplies a
+state map, an action-to-finite-native-word map, test/outcome maps, commuting run
+and readout, and preservation/reflection of future distinctions on an explicit
+common sector. Additional native tests remain recorded; restricting the common
+sector cannot silently erase distinctions or their source contributions.
+`verifiedRun_image` connects the actual foundation run to the actual compiled
+native run, and `translate_future_observation` identifies transferred
+observational assertions with native readout. The generic assertion interface
+is semantic entailment on empirical classes; every source premise remains a
+proved input or explicit regime hypothesis. Physical realization is the next
+consumer of this theorem.
+
+General relativity is the first full specialization. `gr_operational_realization`
+connects its geometric and matter objects to an admitted native family, while
+the existing `positive_gr` contract retains the full physical source, joint
+dynamics, soundness and recovery requirements. Uniqueness of the entire
+microscopic action is not necessary for a faithful bridge: a proved equivalence
+of physical equations/observations or a controlled remainder can suffice. Such
+an equivalence is a proof obligation, not permission to choose the price,
+decoder or source after inspecting the desired Einstein answer.
+
+The [assembly contract](../gr_assembly/contract.json) distinguishes
+`D0-FOUNDATION` (`verification_core`), `THEORY-TRANSFER` (`theory_transfer`) and
+`GR` (`gr_architectural_closure`). The last requires the first two obligations,
+`gr_operational_realization` and the unchanged `positive_gr`, composed on the
+same family. The original raw terminal and global ambiguity classification
+remain separate goals. This page specifies the argument; it does not promote

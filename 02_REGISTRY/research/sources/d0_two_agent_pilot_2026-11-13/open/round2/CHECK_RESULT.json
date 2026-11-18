@@ -1,0 +1,23 @@
+{
+  "GR_closed": false,
+  "actual_upstream_return_source_evaluated": false,
+  "checks": 1040,
+  "clock": {
+    "common_prefix_calls": 7,
+    "common_suffix_calls": 295,
+    "heat_source_difference_bound_per_beta_and_M": 4.993477447451567e-07,
+    "heat_value_difference_bound": 4.2180197732590885e-07,
+    "new_births": 16,
+    "thermal_mode_count": "425D"
+  },
+  "exact_field": "Q(sqrt(p))",
+  "full_native_syntax_no_dense_growing_matrix": true,
+  "physical_cost_info_binding_proved": false,
+  "return_coefficients": {
+    "d0": 0.007249820968055856,
+    "d1": 0.006955826363285459,
+    "dcommon": -0.0022222862641232788,
+    "difference": -0.0002939946047703961
+  },
+  "status": "PASS"
+}

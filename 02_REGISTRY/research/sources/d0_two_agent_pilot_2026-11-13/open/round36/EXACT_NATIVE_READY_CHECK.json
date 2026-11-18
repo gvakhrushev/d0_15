@@ -1,0 +1,18 @@
+{
+  "status": "PASS_EXACT_SMALL_NATIVE_READY_NO_FALSE_POSITIVE",
+  "source_sha256": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+  "exact_coefficient_ring": "Z[a], a=sqrt(p), a^4+a\u00b2\u22121=0",
+  "SourceI_spin_representation": "exact native L_i = diag(J,-J), both spin bits included",
+  "actual_native_primitive_counts_by_flag_count": {
+    "3": 444,
+    "4": 784
+  },
+  "all_failed_patterns_K3_arbitrary_port_spin_aux_columns": 112,
+  "each_failed_position_K4_arbitrary_port_spin_aux_columns": 64,
+  "ready_flags_untargeted_by_every_small_native_primitive": true,
+  "literal_native_inverse_blocks_structurally_checked": true,
+  "repeating_approximate_forward_leaves_failure_garbage": true,
+  "proof_for_arbitrary_K": "first zero flag gives an exactly-zero fresh AND target via A14 first-or-second-control-zero identity; every later prefix target and final output stay zero; literal compute inverse exactly restores arbitrary entangled external state",
+  "limitations": "clean AND work and allready required; does not prove flags describe correct upstream states or scalar all-ready amplitude",
+  "GR_closed": false
+}

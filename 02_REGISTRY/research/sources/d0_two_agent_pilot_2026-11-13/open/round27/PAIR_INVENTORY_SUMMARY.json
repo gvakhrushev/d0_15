@@ -1,0 +1,237 @@
+{
+  "status": "BOUND_FIXED_LABEL_LOGICAL_PAIR_INVENTORY",
+  "source_binding_sha256": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+  "source_leaf_occurrences": {
+    "Choi": 69632,
+    "CAR": 2560
+  },
+  "distinct_pairs_by_kind": {
+    "CAR": 512,
+    "Choi": 20480
+  },
+  "distinct_pair_count": 20992,
+  "histogram": [
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 3,
+      "total_logical_gates": 55,
+      "unique_pairs": 1
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 4,
+      "total_logical_gates": 59,
+      "unique_pairs": 8
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 5,
+      "total_logical_gates": 63,
+      "unique_pairs": 28
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 6,
+      "total_logical_gates": 67,
+      "unique_pairs": 56
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 7,
+      "total_logical_gates": 71,
+      "unique_pairs": 70
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 8,
+      "total_logical_gates": 75,
+      "unique_pairs": 56
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 9,
+      "total_logical_gates": 79,
+      "unique_pairs": 28
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 10,
+      "total_logical_gates": 83,
+      "unique_pairs": 8
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 1,
+      "zero_normalizations": 11,
+      "total_logical_gates": 87,
+      "unique_pairs": 1
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 2,
+      "total_logical_gates": 61,
+      "unique_pairs": 1
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 3,
+      "total_logical_gates": 65,
+      "unique_pairs": 8
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 4,
+      "total_logical_gates": 69,
+      "unique_pairs": 28
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 5,
+      "total_logical_gates": 73,
+      "unique_pairs": 56
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 6,
+      "total_logical_gates": 77,
+      "unique_pairs": 70
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 7,
+      "total_logical_gates": 81,
+      "unique_pairs": 56
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 8,
+      "total_logical_gates": 85,
+      "unique_pairs": 28
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 9,
+      "total_logical_gates": 89,
+      "unique_pairs": 8
+    },
+    {
+      "kind": "CAR",
+      "hamming_distance": 3,
+      "zero_normalizations": 10,
+      "total_logical_gates": 93,
+      "unique_pairs": 1
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 2,
+      "zero_normalizations": 21,
+      "total_logical_gates": 172,
+      "unique_pairs": 44
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 3,
+      "zero_normalizations": 21,
+      "total_logical_gates": 177,
+      "unique_pairs": 196
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 4,
+      "zero_normalizations": 21,
+      "total_logical_gates": 182,
+      "unique_pairs": 640
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 5,
+      "zero_normalizations": 21,
+      "total_logical_gates": 187,
+      "unique_pairs": 1560
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 6,
+      "zero_normalizations": 21,
+      "total_logical_gates": 192,
+      "unique_pairs": 2928
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 7,
+      "zero_normalizations": 21,
+      "total_logical_gates": 197,
+      "unique_pairs": 4200
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 8,
+      "zero_normalizations": 21,
+      "total_logical_gates": 202,
+      "unique_pairs": 4512
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 9,
+      "zero_normalizations": 21,
+      "total_logical_gates": 207,
+      "unique_pairs": 3540
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 10,
+      "zero_normalizations": 21,
+      "total_logical_gates": 212,
+      "unique_pairs": 1960
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 11,
+      "zero_normalizations": 21,
+      "total_logical_gates": 217,
+      "unique_pairs": 724
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 12,
+      "zero_normalizations": 21,
+      "total_logical_gates": 222,
+      "unique_pairs": 160
+    },
+    {
+      "kind": "Choi",
+      "hamming_distance": 13,
+      "zero_normalizations": 21,
+      "total_logical_gates": 227,
+      "unique_pairs": 16
+    }
+  ],
+  "control_delta_and_h_unchanged": true,
+  "RIGHT_and_oldRIGHT": "not addressed; CAR data x=(internal_site<<4)|grade",
+  "physical_SITE_versus_internal_site": "source binding determines a known local address; no dynamic external SITE lookup circuit emitted",
+  "logical_gate_grammar": [
+    "X",
+    "CX",
+    "CCX",
+    "Z",
+    "CZ"
+  ],
+  "native_admission_claimed": false,
+  "GR_closed": false
+}

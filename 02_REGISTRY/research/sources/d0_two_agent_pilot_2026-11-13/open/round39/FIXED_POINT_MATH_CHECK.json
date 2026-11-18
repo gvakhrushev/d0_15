@@ -1,0 +1,14 @@
+{
+  "status": "PASS_EXACT_FIXED_POINT_AND_REALIFICATION",
+  "coherent_controlled_V_example_sectors": 2,
+  "one_step_bad_amplitude_factor": "t epsilon",
+  "epsilon_recurrence": "epsilon_next=epsilon^3",
+  "exact_eight_step_rational_example": true,
+  "good_amplitude_factor": "g=t^2+t epsilon",
+  "success_phase_same_across_SAM_if_c_constant": true,
+  "rebit_correction_is_necessary": true,
+  "uncorrected_rebit_one_component_gt": "9/10 in exact one-step example",
+  "phase_predicate_excludes_rebit": true,
+  "scope": "exact fixed-point mathematics, not physical controlled Omega loader",
+  "GR_closed": false
+}

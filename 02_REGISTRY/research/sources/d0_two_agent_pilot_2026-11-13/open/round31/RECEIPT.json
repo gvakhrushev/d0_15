@@ -1,0 +1,40 @@
+{
+  "status": "LOCAL_B31_ONLY",
+  "input_sha256": {
+    "owner_paid_kernel": "e95f0486456c53cf0ce40023bab08ac744fd6189b397d29a8773446c168244a0",
+    "owner_native_execution": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "B27_inverse": "6b8c500c433177e2191976f7ecce5a261024946a86ea8d31e57df1626ef8c4b6",
+    "B30_review": "f1d444ae13029746ebb3ea72c63524a100d82a2295ff898547cba8c1fb213ec4",
+    "A12_component": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "A14_native_boolean": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "A14_angle": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "A14_boolean_library": "dfef8593fb4b0e09b23c3b2ee4807332523615389ecb392127a39b5b599e5d08"
+  },
+  "output_sha256": {
+    "FAIR_PAYLOAD_ROUTER_RU.md": "22dc94e3d52dee0f84337802cdea959bb2193c1669858f39f8433019aa903be5",
+    "FAIR_READINESS_CERT.json": "46e7bff9d4d28a53d5d95c932f6e71eee26108597504bb5773c85aed4f68a47f",
+    "LOGICAL_FAIR_ROUTER.json": "847ef2167831da5e9e84b8fd47bdad0ad99906a9a6d7bb77c36ea6d62e45c50b",
+    "NATIVE_FAIR_BANK.json": "e20cf2ae3aaff81fc908f8fdaefdae33bb02a67ff7d70a2aab8173bde06f9231",
+    "NATIVE_FAIR_BANK_CHECK.json": "51c389733896e1ade711ecbae10fe9e234e1325cd94532ed3f6feac11c95f8d0",
+    "NATIVE_STRUCTURE_CHECK.json": "5dbc79102126097214d2c1f7b62951ff5f56b4b7891cb4d428963dcfe006de08",
+    "ROUTER_CHECK.json": "b57be7d6224743e094734673fab2fe98603ab195f47f8da26ffd964572aec61c",
+    "SMALL_NATIVE_ROUTER_CHECK.json": "c3e555e4fc4d64129f4f23ce500a512eb2a1c931f22b07e9e1fa94c7d4ee8afe",
+    "build_native_fair_bank.py": "f38923c36dc9c4f321fd5f85e61624fccd99097a46c08f50558f3b213446c7b0",
+    "certify_fair_readiness.py": "cf0623f4541aac18a02d57e5276d413b80c9afc488d7e1e99e2f3ca657e3357c",
+    "check_fair_router.py": "1ae15d581c97d839330c83c31a914df27fa455db37dc2608511ea58cb7963134",
+    "check_native_bank_structure.py": "5ed7bba0a68d1140e6d1309075bcb1bcb322ee95398ca6f59d53bf053570798c",
+    "check_small_native_router.py": "08f62de2806242a19b1a05a6cd535b037e49ceb69df2c0c17083aa487d6a4f0c",
+    "fair_router.py": "34b8148f5fca03c20a7b069149f1338bf95b1ec1ff0f548264700cf4980d1ee5"
+  },
+  "checks": [
+    "owned exact 2G+3CX kernel and retained success/failure",
+    "all-small and coherent success-branch factorization",
+    "actual cap28 native DAG and literal raw inverse, count/schema audit",
+    "conditional readiness and A14 all-column error",
+    "small native full-column inverse diagnostics"
+  ],
+  "full_report_alpha_proved": false,
+  "physical_birth_stage_ledger_emitted": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,34 @@
+{
+  "GR_closed": false,
+  "births_including_original_tail": 5,
+  "cases": [
+    {
+      "added_births": 4,
+      "added_calls_each": 31,
+      "earlier_tail_effect_gap": 0.2229123600033649,
+      "k": 0,
+      "n": 1,
+      "polar_operator_distance_base": 0.6539856607641741,
+      "polar_operator_distance_shift": 1.6822491172508829,
+      "prefix_calls_each": 7
+    },
+    {
+      "added_births": 4,
+      "added_calls_each": 49,
+      "earlier_tail_effect_gap": 2.5998805294802363e-05,
+      "k": 9,
+      "n": 33,
+      "polar_operator_distance_base": 0.09214597180222518,
+      "polar_operator_distance_shift": 0.08166129005288213,
+      "prefix_calls_each": 89
+    }
+  ],
+  "checks": 28,
+  "input_columns": 16,
+  "maximum_matrix_error": 4.440892098500626e-15,
+  "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "output_rows": 512,
+  "programmes": 4,
+  "readers_and_full_physical_price_proved": false,
+  "status": "PASS"
+}

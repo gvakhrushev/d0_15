@@ -1,0 +1,13 @@
+{
+  "status": "PASS_INDEPENDENT_13_ARMS_PAD_MARKS_CLOCK",
+  "arms_checked": 13,
+  "four_independent_slot_signs_and_matched_order_checked": true,
+  "original_mark_layers_equal_in_all_arms": true,
+  "fixed_post_and_distinct_post_probe_checked": true,
+  "all_words_equal_exact_padded_length": true,
+  "small_clock_dimension_directly_summed": true,
+  "early_births": 5,
+  "retention_pairs": 3,
+  "huge_production_word_executed": false,
+  "GR_closed": false
+}

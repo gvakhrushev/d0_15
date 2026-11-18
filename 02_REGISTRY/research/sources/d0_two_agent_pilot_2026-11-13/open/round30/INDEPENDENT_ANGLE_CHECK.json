@@ -1,0 +1,19 @@
+{
+  "status": "PASS_INDEPENDENT_DYADIC_MSB_POWER_CERTIFICATE",
+  "input_sha256": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+  "k_bits": 4111,
+  "precision_bits": 16640,
+  "error_bits": 4096,
+  "search_replayed": false,
+  "method": "exact integer square roots + directed dyadic MSB power for 2k, followed by two independent interval squares; no unit-circle clamping",
+  "endpoint_intersections_with_owner": true,
+  "H_X_CCX_L1_upper_at_most_2^-4096": true,
+  "error_numerator_bit_lengths": {
+    "2k": 12531,
+    "4k": 12532,
+    "8k": 12533,
+    "CCX_sum": 12533
+  },
+  "full_physical_READY_or_writer_compiled": false,
+  "GR_closed": false
+}

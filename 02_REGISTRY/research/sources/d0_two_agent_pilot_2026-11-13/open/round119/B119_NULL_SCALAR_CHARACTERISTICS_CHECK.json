@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "upstream_owner_sha256": "6429169d276aa0b580c1ee9327f3f1549d545ce1a2996291e30c182b5b1bd2dc",
+  "physical_feedback_z": "2^-20",
+  "C2_over_c_over_T_open_interval": [
+    -1479,
+    -1478
+  ],
+  "absolute_cone_shift_over_T_open_interval": [
+    126,
+    127
+  ],
+  "orientations_checked": [
+    -1,
+    1
+  ],
+  "distinct_scalar_and_metric_characteristics_at_nonzero_null_gradient": true,
+  "original_metric_nonconstant_X_polynomial_degree": 10,
+  "physical_cost_info_binding": false,
+  "GR_closed": false
+}

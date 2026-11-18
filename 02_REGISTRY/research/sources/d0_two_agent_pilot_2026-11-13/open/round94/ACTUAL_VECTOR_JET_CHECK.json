@@ -1,0 +1,18 @@
+{
+  "status": "PASS_ACTUAL_A48_CONTROL_ORDER_SOURCE_PREFIX_AND_JET_BUDGET",
+  "all_CODE_physical_pairs_checked": 2688,
+  "A47_literal_control_trees_checked_coordinates": [
+    0,
+    2687
+  ],
+  "both_signed_and_zero_variants_checked": true,
+  "comparison_order": "P_sign; SOURCE-prefix; P_minus_sign",
+  "both_comparisons_four_control_occurrences": 4,
+  "source_prefix_ends_at_first_RAW_frame_before_REPORT": true,
+  "native_error_extra_lt": "2^-1642",
+  "full_axis_jet_lt": "2^-44",
+  "source_typed_extension_and_private_RAW_fibre_only": true,
+  "control_words_exact_inverse_assumed": false,
+  "full_corner_post_clock_or_physical_admission_proved": false,
+  "GR_closed": false
+}

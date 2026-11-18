@@ -1,0 +1,10 @@
+{
+  "status": "PASS_A21_ACTUAL_GIANT_DAG_DEPTH_SAMPLES",
+  "A21_source_sha256": "effa9f8898ea63ce18faa722c919cd068323fe2b079ee2a5e83db85667dc5bb7",
+  "prefix_actual_DAG_comparisons": 88,
+  "coframe_actual_K20_intrinsic_depth1_outer_depths0_to3": 20,
+  "proper_link_actual_K23_intrinsic_depth2_outer_depths0_to3": 20,
+  "proper_link_literal_depth_through_5": true,
+  "giant_words_expanded": false,
+  "GR_closed": false
+}

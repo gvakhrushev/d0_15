@@ -1,0 +1,14 @@
+{
+  "status": "PASS_EXACT_SCALAR_RETENTION_AND_CONDITIONAL_R11_ALGEBRA",
+  "nonreflection_real_word_scalar_corner": true,
+  "external_old_factor_exact_identity": true,
+  "raw_birth_G_return_factor": "sqrt(p)",
+  "non_diagonal_old_Gram_test": true,
+  "heat_decay": "(2p)^(-K) < (5/6)^K",
+  "sufficient_K_for_prefix_N_lt_2^q_and_abs_t_z_traceA_ge_2^-Q": "4*(q+3158+Q+T+1)",
+  "isolated_segment_q": 11647,
+  "isolated_sufficient_K": "4*(14806+Q+T)",
+  "conditional_on_actual_common_history_marks_gain_and_nonzero_old_Gram": true,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

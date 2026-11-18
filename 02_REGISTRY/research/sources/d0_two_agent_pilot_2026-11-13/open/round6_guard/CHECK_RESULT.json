@@ -1,0 +1,13 @@
+{
+  "GR_closed": false,
+  "actual_r_only_macro_nontrivial_invalid": true,
+  "bad_placement_invalid_amplitude": "a*p*(I-R1)",
+  "branch_zero_recovers_and_fixes_invalid": true,
+  "checks": 23,
+  "common_eigenframe_local_dh_fixture": "4/5",
+  "exact_field": "Q(sqrt(p))",
+  "full_H1_recovery_word_emitted": false,
+  "physical_cost_info_binding_proved": false,
+  "selected_LC10_invalid_identity": true,
+  "status": "PASS"
+}

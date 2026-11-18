@@ -1,0 +1,24 @@
+{
+  "status": "PASS_SCOPED",
+  "upstream_readonly_replay_matches": true,
+  "source_pins_match": true,
+  "radius_from_all_four_digits_verified": true,
+  "entropy_rayleigh_rank_N_argument_checked": true,
+  "one_input_not_all_CODE_countercontrol": true,
+  "actual_all_input_bank_preservation_assumed_for_decoder": true,
+  "actual_decoder_and_cost_intertwiner_proved": false,
+  "full_physical_C_source_proved": false,
+  "GR_closed": false,
+  "reviewed_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round60/check_source_record_capacity.py": "8cec201bf7afce10046046cf79b173075b747d281a4999d8297b06248853b19e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round60/SOURCE_RECORD_CAPACITY_CHECK.json": "b4aa7e2690d22cd91e923d0955034195a8ebb398ed362baaee6161c5fabb96fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round60/SOURCE_RECORD_CAPACITY_RU.md": "e024fc66c6abc42dd7726768365bfda37bef90b7548da56f88d529361cbd0519",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/REGULAR_FIELD_COMPONENTS_RU.md": "c54b04daddddcd390c841503c2b0fb70b7df855f275067fc7a0af022e3d861be",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/REGULAR_GLOBAL_SOURCE_RU.md": "c01b0d54b989883e52987c7081103f59063a231d2781901ce211532e8c123bf5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round55/REGULAR_FIELD_TASK_AND_FRONTIERS_RU.md": "a31a4f259140778ad70566db8eb064d536ef1f9fd84df6567443e148493b5cab",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round59/INITIALIZED_DOMAIN_AND_PHYSICAL_PRICE_RU.md": "2fb1b7dc53fd1068025902e7ae333811099b0619f149db7ad58f322b64fb3c18",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/B91_FULL_VECTOR_JET_AND_SOURCE_FIBRE_RU.md": "f56105e52c199778228c9465dc3e808f5e8229e3a38eae4739c146b333bbc3ce",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round108/B108_A55_INDEPENDENT_AUDIT_RU.md": "8ea97b84c5f151f747e72247be454067b28319538a714d76b284f96eef6c3507",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round117/B117_RETAINED_CODEC_CAPACITY_RU.md": "077975e6af1c554e3973dd4bd7817ef19fbe9f6d9c091a4bcc3ef616aca94418"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "MEASURED_REPORT_EVENT_CACHE_NOT_ONE_EVENT",
+  "input_sha256": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+  "platform": "darwin",
+  "process_peak_rss_bytes_before": 49545216,
+  "after_cache": [
+    {
+      "root": "H_f_before_inverse_PF",
+      "events_retained": 4559,
+      "map_entries_retained": 9643309,
+      "records_retained": 455,
+      "wall_seconds": 2.6,
+      "process_peak_rss_bytes_after_cache": 487505920
+    },
+    {
+      "root": "H_q_before_inverse_PF",
+      "events_retained": 190,
+      "map_entries_retained": 390848,
+      "records_retained": 18,
+      "wall_seconds": 0.177,
+      "process_peak_rss_bytes_after_cache": 525631488
+    }
+  ],
+  "cache_entries": 2,
+  "scope": "One cold local process, includes Python, imports, tables, two retained event sequences, records and instruction plan; ru_maxrss is an OS high-water mark, not exact retained heap or a portable peak guarantee.",
+  "memory_depends_on_event_maps_and_fixed_tables": true,
+  "whole_expanded_native_word_in_memory": false,
+  "GR_closed": false
+}

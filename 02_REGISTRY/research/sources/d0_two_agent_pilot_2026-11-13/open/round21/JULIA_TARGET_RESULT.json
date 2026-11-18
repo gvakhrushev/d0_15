@@ -1,0 +1,26 @@
+{
+  "status": "CENTRE_NUMERIC_JULIA32_TARGETS_NOT_GATE_WORD",
+  "sites": 256,
+  "coframe_matrices": 2048,
+  "link_matrices": 1024,
+  "dimensions": "32x32, all columns",
+  "creator_order": [
+    0,
+    2,
+    3,
+    1
+  ],
+  "coframe_modes": [
+    "native_raw",
+    "source_compatible_sqrt_rho_dressed"
+  ],
+  "min_left_defect_eigenvalue_float": 0.3432559866551266,
+  "max_orthogonality_error_float": 2.220446049250313e-15,
+  "float_not_interval_certified": true,
+  "whole_choi_programme_banks_constructed": false,
+  "all_sample_vertices_constructed": false,
+  "compiled_native_words_emitted": false,
+  "geometry_input_sha256": "bedb2f51e2ae744f421315cde721848c3c7dd7b398b0a28c22f523c9f1aab43b",
+  "npz_sha256": "3106975748a09e9ec0773246cc7b74b23aed337205419d01dde7f1252cdf88f2",
+  "GR_closed": false
+}

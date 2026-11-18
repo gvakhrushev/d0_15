@@ -1,0 +1,31 @@
+{
+  "status": "LOCAL_B26_REVIEW_ONLY",
+  "input_sha256": {
+    "round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "round12/compile_source_selectors.py": "eb2e04cbd26a31d91172b6e092fff1363a3eda170f056023ccbfb42891408b0d",
+    "round12/verify_source_selectors.py": "6259e31b37b069f31e6cc681b86560e8787bd9a33fceb1dc87fc002e303b682b",
+    "round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6",
+    "round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "round12/SELECTOR_CHECK.json": "edfa21cafea072e3642193dcb665b8f423f81f2ec2f2869f5ec922d0ea1e6f46",
+    "round12/COHERENT_SOURCE_SELECTORS_RU.md": "600ce1da06f015330e5adf9f5adadd4be1e7bab33df58feb4edaf8ea7e7a94b4"
+  },
+  "output_sha256": {
+    "EXACT_REVIEW.json": "944a04e9f7accc9af456372bf32dc3e2b3c9f004687945f6fc6ef527a9d53bb7",
+    "ISOLATED_REPLAY.json": "0118697ebca1de0b9fec0936cc2fbe3558a6a45d3fe4115f31ca4568e2474691",
+    "REVIEW_A12_RU.md": "5987c8463fad306aa8954d7818e8fff44a6fe59d232e4bbb835fa414aa0e4226",
+    "check_a12_exact.py": "d5593e903ea69eb2e8ea3fb4a471ca918615fda8c36112a72d977e9eb2fb2308",
+    "replay_a12_isolated.py": "874cd2614bfabd4af866c252775285a74dd7c5c556f2d84909d6a27c8c63219d"
+  },
+  "checks": [
+    "isolated A12 compiler and verifier, 5 byte-identical outputs",
+    "independent exact Q(p) palette, source DAG, copy offsets and caps",
+    "full-Hilbert rank-two and coherent-environment hostile controls"
+  ],
+  "critical_arithmetic_finding": false,
+  "full_native_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

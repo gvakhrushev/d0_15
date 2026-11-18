@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ALL_SAVED_NATIVE_INTERVALS_CONTAIN_INDEPENDENT_BALL",
+  "library_sha256": "83592b07988263b453d7ac27fa7f53d7b7d98846a3d8dfd40b3e401fe095e22b",
+  "independent_precision_bits": 15744,
+  "library_precision_bits": 16640,
+  "angles_verified": 38,
+  "each_saved_cos_sin_contains_independent_true_value_ball": true,
+  "min_containment_margin_nonnegative": true,
+  "proof": "integer Euclidean complex ball; |z_true|=1; radius r1+r2+ceil(r1*r2/S)+2",
+  "source_builder_reexecuted": false,
+  "GR_closed": false
+}

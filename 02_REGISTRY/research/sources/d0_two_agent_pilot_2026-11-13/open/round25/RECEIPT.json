@@ -1,0 +1,60 @@
+{
+  "status": "LOCAL_B25_ONLY",
+  "input_sha256": {
+    "round21": {
+      "ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e",
+      "L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+      "BRINKMANN_L4_CENTRE.jsonl": "bedb2f51e2ae744f421315cde721848c3c7dd7b398b0a28c22f523c9f1aab43b",
+      "ORIGINAL_FOURIER128_L4.json": "5e691225f746e346afe3ad61a9e5123666fd8d1f270e27756914730b598b5934",
+      "REFERENCE_METADATA.json": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a",
+      "CHART_ENVELOPE_RESULT.json": "e244b4c50f8c64a4f21a905958486f0aadbee629f1ac6df9edd90bfd75961eee"
+    },
+    "round23": {
+      "COPY_SLOTS.jsonl": "77f597a94f69c593e097f2318d295c1fc1f6e05282052436a8fe9609ecd9724c"
+    },
+    "round24": {
+      "TORUS_CHOI_ADDRESSES.jsonl": "35897a838390fcd0c2ad1854d2934b3c21d6c7e4b877953a097cbb9c873238f3",
+      "TORUS_CERTIFICATE.json": "d112ca958b41bc58e05a7f0246e9c399347581ca704258100848600e4324b35b"
+    },
+    "A11": {
+      "PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+      "SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+      "SOURCE_NORM_CERTIFICATE.json": "b4aca9a0e9655559531947d5ccca7b40ae73ddf338bbcdc97012ae1fb95b4fc8"
+    }
+  },
+  "output_sha256": {
+    "BOUND_LEAF_CHECK.json": "b6a2e685e07cb68edb6f28ba18c0ad28d15a7e224f29c4aec10e689f93797ba3",
+    "CENTRE_FIELDS.npz": "e0d1db31ed54554f98f0d158f3593ae7fe91186cfd7acdaefbfe84bca1fd6cbd",
+    "CENTRE_JULIA32_TARGETS.npz": "328ed1c94a9d05772ccab6e98e2811d0160369dc7373842612f7263b6ac632b6",
+    "COPY_SLOTS.jsonl": "77f597a94f69c593e097f2318d295c1fc1f6e05282052436a8fe9609ecd9724c",
+    "MARK_OUTPUT_CATALOG.json": "8397158083003ba2f891a88a12f3267ced6d7eb8f75120035e6c14d1ef276fdb",
+    "RAW_FRAME_CHECK.json": "f9eb9f8489c81850630b9f47f74bc9a3d195e2c60307f57fd9c3f052e280beb5",
+    "SAM_SAMPLE_LABELS.json": "29e8a701c97d6f8df71bf3879caee37644ffe6b4de9f228a3556ac1a9e847710",
+    "SOURCE_LEAF_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "STRICT_SLACK.json": "41b660f639dd59bdbed644e4f002506c522da27677de5ead4e1889ff82c8adf0",
+    "TARGETS_RU.md": "7b20b59f6ea3a79e6157fc59cb8c8c264b0533a211557b864d14f8fc07728f94",
+    "TARGET_CHECK.json": "3181ae6af388f798d80912cf3957cd2190d7db209244b88e8f5a406621ede073",
+    "build_mark_catalogue.py": "466301c8fcf62201a17f02df9870ecb406467265ac508178ea9b8502f4dbdcc3",
+    "certify_reference_slack.py": "c50fbe39eb2239330dbedc6da41884fd1ef9163de5c8f6e1a9f2e32b8c825981",
+    "check_bound_leaves.py": "5e4e80ecb885d55a2c040f06fa8a0b7ee745212b8fd851b106d9452526d38002",
+    "check_raw_frame.py": "c1c6861551881755b0e12917231386ec914028e08fa999241bfa3f2e966f32bd",
+    "check_targets.py": "73dd69b5fd6c0bc0f02eee33ecd9ef36f890a412c114e173a725f8b8639ebb2d",
+    "mark_catalogue.py": "6cb985f81f1f964fcba40cf2f5d57ebd01eba8fefce829afcb90fdf02bb4f309",
+    "precision_name.py": "ed62b2d20eca69dc016fa1414688abe2b7fd60fa3f1c83069e99ef137742edce",
+    "targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418"
+  },
+  "checks": [
+    "check_targets.py",
+    "check_raw_frame.py",
+    "certify_reference_slack.py",
+    "build_mark_catalogue.py",
+    "mark_catalogue.py",
+    "mp full-column first 12 and CAR/site entries",
+    "check_bound_leaves.py"
+  ],
+  "native_words_emitted": false,
+  "physical_mark_stage_catalogue_complete": false,
+  "alpha_h_computed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

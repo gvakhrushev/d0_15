@@ -1,0 +1,34 @@
+{
+  "status": "PASS_EXPLICIT_DATA_RAW_BRIDGE_COUNTS",
+  "choi_resource_wires": 27720,
+  "CAR_resource_wires": 2128,
+  "total_distinct_resource_data_wires": 29848,
+  "excludes_SAM_external_SITE_port_and_old": true,
+  "forward_and_inverse_actual_depths": [
+    0,
+    1,
+    2,
+    1
+  ],
+  "old_extra_per_wire": {
+    "G": 4,
+    "CX": 18,
+    "SourceI": 24
+  },
+  "new_extra_per_wire": {
+    "G": "4+192k",
+    "CX": 42,
+    "rotation_power_blocks": 24
+  },
+  "new_total_rotation_blocks_lt": "2^4188",
+  "replacement_error_lt": "2^-3244",
+  "endpoint_and_prefix_marks_both_lt": "2^-3231 before mark norm factors",
+  "all_original_marks_or_reader_admission_proved": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/CZ_EXACT_OCCURRENCES.json": "43451bf585b2407966f9c31325866f6ff3e99f3573c43388b2ba53b66400bafc",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round57/GADGET_G_POWER_CERTIFICATE.json": "d11cc333506f1ac7d000f68aa6d80683094ea955ea9d2c6445bba3b69112d72b"
+  }
+}

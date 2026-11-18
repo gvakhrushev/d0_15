@@ -1,0 +1,20 @@
+{
+  "status": "PASS_CONDITIONAL_J2_BUDGET_AND_LITERAL_SMALL_SLOT_ASSEMBLY",
+  "pointwise_f_q_derivative_and_adjacent_M_ratio": true,
+  "old_sampling_bias_to_fixed_post_reduced_bound": true,
+  "finite_Q_price_lower_greater_than_2^-45": true,
+  "actual_small_slot_recipe_equal_length": true,
+  "opposite_logical_Q_sign_same_complete_unitary_exactly": true,
+  "consumed_geometric_scalar_source_and_A33_A37_premises": true,
+  "production_word_or_full_heat_trace_materialized": false,
+  "full_original_task_marked_map_admission": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round85/check_a43_independent.py": "3779f4532f6a42a91f2987c8c0954b63489f9ac8f1cf76812df4b8587cddd224",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round43/local_q_price.py": "c3ed7d808a8aea258901c96176cd3ae7215e83ae4239cd8a5bc18458c108fbe2",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/SAMPLING_SOURCE_BIAS_RU.md": "94c859dbf7e5f1b293ac6f8a600917d89989e3d0b1af5268e4e2258dae9a2b66",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round37/ACTUAL_POST_SAM_STATIONARY_REDUCTION_RU.md": "ef67e8d48670f8f97522174f4e7c938917aa17114069d3813605f2a44f1d028a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round42/fixed_post_paid_family.py": "63258bd4731fe47231387bb3faff93291e95886857b086e57d39d3d3ba2ace40",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round84/B84_UNIFORM_ADJACENT_SOURCE_RU.md": "392780699fcdf4d767fd42425307121338b334775cb2940f6f4e16fa9402b284"
+  }
+}

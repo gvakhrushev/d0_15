@@ -1,0 +1,19 @@
+{
+  "status": "PASS_RAW_FRAME_22Q_FULL_COLUMN_DIAGNOSTIC",
+  "operator": "O_b (G^tensor22)^T",
+  "sample_input": [
+    2048,
+    13,
+    7
+  ],
+  "dimension": 4194304,
+  "column_norm_error": 1.27675647831893e-14,
+  "target_b_norm_error": 1.3988810110276972e-14,
+  "single_wire_born_to_zero_error": 5.464983394975303e-18,
+  "padding_probability_in_raw_column": 0.6149283687347349,
+  "padding_after_full_macro_may_mix": true,
+  "protected_factors_are_identity": true,
+  "dense_operator_allocated": false,
+  "native_word": false,
+  "GR_closed": false
+}

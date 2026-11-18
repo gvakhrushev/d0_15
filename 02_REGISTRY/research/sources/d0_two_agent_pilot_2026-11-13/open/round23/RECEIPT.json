@@ -1,0 +1,27 @@
+{
+  "status": "LOCAL_B23_ONLY",
+  "inputs": {
+    "ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e",
+    "ORIGINAL_FOURIER128_L4.json": "5e691225f746e346afe3ad61a9e5123666fd8d1f270e27756914730b598b5934",
+    "BRINKMANN_L4_CENTRE.jsonl": "bedb2f51e2ae744f421315cde721848c3c7dd7b398b0a28c22f523c9f1aab43b",
+    "CENTRE_JULIA32_TARGETS_NUMERIC.npz": "3106975748a09e9ec0773246cc7b74b23aed337205419d01dde7f1252cdf88f2",
+    "REFERENCE_METADATA.json": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a"
+  },
+  "outputs": {
+    "build_catalogue.py": "f88fd348c961322118a1385c2a3863b605351903955c425d49fcfc5a8ce0af85",
+    "check_lazy_map.py": "f94de68ff180a75dd05b1e1de3537c2816c936fdc4b1e4fb21eb0532ca59b9a2",
+    "CHOI_ADDRESSES.jsonl": "53191e0ac2a60005ed0d83240ffc179c2b20ca7df256641bbec53fc090f2803c",
+    "SITE_STENCILS.jsonl": "c1a9398ceed2c8a6dd14bdadb146e180434223288b508b78ee3617d248cdef1d",
+    "COPY_SLOTS.jsonl": "77f597a94f69c593e097f2318d295c1fc1f6e05282052436a8fe9609ecd9724c",
+    "CERTIFICATE.json": "681592e6a738a751a0e8b2e176cc601ce1f485fbd8bf338e725bd9e4a23b4528",
+    "LAZY_MAP_TEST.json": "aafe9d829e2f9e4c528e7932faee0e046c2a47fbfb7ffabcd2ef18ac96df5d6d",
+    "PF_SITE_CHOICAR_CONTRACT_RU.md": "c618cce2418b6358cfb0ce032782f0bfe4517b1d2d403446b9a90a606b48a69a"
+  },
+  "commands": [
+    "python3 -B -W error build_catalogue.py",
+    "OPENBLAS_NUM_THREADS=1 python3 -B -W error check_lazy_map.py"
+  ],
+  "native_word_emitted": false,
+  "physical_boundary_chosen": false,
+  "GR_closed": false
+}

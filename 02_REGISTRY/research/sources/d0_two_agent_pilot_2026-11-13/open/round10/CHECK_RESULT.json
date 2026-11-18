@@ -1,0 +1,32 @@
+{
+  "status": "PASS_EXACT",
+  "check_count": 17,
+  "checks": [
+    "two extra real G calls, no birth or old wire",
+    "exact original golden G squared",
+    "original NPS effect on all source and spin columns",
+    "two-G high report exact effect",
+    "invalid 11 exactly zero on all source spin inputs",
+    "both valid output branches complete",
+    "original fixed-effect AD1 changes by nonzero operator",
+    "reversed rare event has complete complementary effect",
+    "same earliest born code masses p and p cubed",
+    "passive valid-support mass preserves unread invalid complement",
+    "whole input E_f=1 high report is p",
+    "whole input E_f=0 high report upper endpoint",
+    "strict signs proved in positive golden embedding",
+    "full five-wire native execution is unitary",
+    "sharp conditional mixing coefficients",
+    "sharp and noisy monotonicity slopes coincide",
+    "sharp original event collar also yields high report"
+  ],
+  "lambda": 0.8885438199983176,
+  "all_input_high_q_range": [
+    0.6180339887498949,
+    0.8277907312568349
+  ],
+  "h1_matched_high_q_at_Q_half": 0.7229123600033649,
+  "source_info_binding_proved": false,
+  "original_H1_AD1_preserved": false,
+  "GR_closed": false
+}

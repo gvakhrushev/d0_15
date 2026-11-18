@@ -1,0 +1,38 @@
+{
+  "status": "PASS_STRUCTURAL_JULIA_PROPER_LINK_WITH_BOUNDED_FLOAT_DIAGNOSTICS",
+  "by_bank_sectors": {
+    "y+": 1024,
+    "y-": 1024,
+    "f": 17152,
+    "0": 1024,
+    "x+": 1024,
+    "x-": 1024,
+    "q": 1024
+  },
+  "all_proper_link_sectors": 23296,
+  "unique_float_target_matrices": 336,
+  "diagnostic_zero_boost_unique": 3,
+  "max_float_J32_difference": 4.3298697960381105e-15,
+  "max_float_LDR_difference": 1.1102230246251565e-15,
+  "max_float_lorentz_error": 4.440892098500626e-16,
+  "max_float_orthogonality_error": 1.7763568394002505e-15,
+  "max_float_singular_norm": 1.2857142857142856,
+  "exact_lie_nilpotent_generator_checks": true,
+  "exact_all_six_exterior_plane_signs": true,
+  "exact_diagonal_J32_identity": true,
+  "analytic_uniform_norm_upper": "9/7",
+  "analytic_defect_gap_lower": "115/196",
+  "six_givens_reconstruction_all_unique_targets_and_identity_negative_pivots": true,
+  "factorization_macro_bound": 101,
+  "native_angle_certificate_constructed": false,
+  "native_word_constructed": false,
+  "full_Julia_SELECT_present": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round41/proper_link_factorization.py": "d0a39f98504a5a627aaad7c4ebe27bb3eb642e11abe28ed5707b82bb6ce844a3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round41/check_proper_link.py": "c6db3761a1429c623b246263f2fdf45348e9603d1c99092d62ab22b695e21891",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/julia_locality.py": "4533536eb0946c6e6ac09e76c3570ec39705d7e9f762524c9b2be15e261d4396",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/JULIA_LOCAL_SECTORS.json": "e76c28ca93c616d65134e28799295647a21a95dcdb9ebe753f86b4fd2fecb984"
+  }
+}

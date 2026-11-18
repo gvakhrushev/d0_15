@@ -1,0 +1,42 @@
+{
+  "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_stop_flag": {
+    "paid_unitary_stages": 18,
+    "canonical_births": 2,
+    "retained_pointer_probabilities": [
+      "p",
+      "p^2"
+    ],
+    "initialized_columns": 8
+  },
+  "joint_terminal": {
+    "absolute_active_over_stop": "theta/(1-theta)",
+    "absolute_coherent_return_over_stop": "joint_return/joint_stop",
+    "same_reference_mass_needed": true
+  },
+  "four_state_path_rigidity": {
+    "states": 4,
+    "distinct_charges": 16,
+    "cycle_tests": 13,
+    "short_test_lengths_with_common_central_sign": [
+      1,
+      2,
+      3,
+      8
+    ],
+    "constraint_rank": 12,
+    "remaining_constant_and_potential_dimension": 4,
+    "full_native_kernel_is_stochastic": true,
+    "nonzero_loop_data_reconstruct_the_tariff_modulo_gauge": true
+  },
+  "spectral_anchor_control": {
+    "fixed_cp_map_can_have_distinct_rates_on_singular_sectors": [
+      1,
+      4
+    ],
+    "faithful_relative_bound_needed_for_common_spectral_anchor": true
+  },
+  "physical_held_out_terminal_bound": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

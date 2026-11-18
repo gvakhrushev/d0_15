@@ -1,0 +1,254 @@
+{
+  "archive_commit": "4f99c2c46e646d21ae5b9b0491da17bd1b094da0",
+  "archive_books": {
+    "Book_I": {
+      "path": "99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/books/BOOK_I_ARCHITECTURE_GOLDEN_PASS30.txt",
+      "git_blob": "8add930fe27ab6bb25e5c432127a86a05bca1e6e",
+      "sha256": "87bf55debc4296b0574db1d0045156b350f2dd1e17fcc01d3e3ad5bb9a980fe9"
+    },
+    "Book_II": {
+      "path": "99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/books/BOOK_II_MECHANISM_GOLDEN_PASS30.txt",
+      "git_blob": "19701354c459014fb88e33aace667e0904409f17",
+      "sha256": "42224fdbfb6e474e2025d38da45d01bf1c9e17132c182e82d8875868df62c9b0"
+    }
+  },
+  "book03_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+  "native_execution_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_words": {
+    "G_Z_G_Z": {
+      "expanded_stages": 18,
+      "G": 2,
+      "CX": 12,
+      "SourceI": 4,
+      "full_input_dimension": 16,
+      "compact_descriptor_bytes": 656
+    },
+    "CX_18": {
+      "expanded_stages": 18,
+      "G": 0,
+      "CX": 18,
+      "SourceI": 0,
+      "full_input_dimension": 16,
+      "compact_descriptor_bytes": 634
+    }
+  },
+  "chronological_paths_by_initial_port_and_target": {
+    "G_Z_G_Z": {
+      "00": [
+        {
+          "target_after_G": [
+            0,
+            0
+          ],
+          "terminal_target": 0,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 2
+        },
+        {
+          "target_after_G": [
+            0,
+            1
+          ],
+          "terminal_target": 1,
+          "central_class": -1,
+          "native_amplitude_power_of_sqrt_p": 3
+        },
+        {
+          "target_after_G": [
+            1,
+            0
+          ],
+          "terminal_target": 0,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 4
+        },
+        {
+          "target_after_G": [
+            1,
+            1
+          ],
+          "terminal_target": 1,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 3
+        }
+      ],
+      "01": [
+        {
+          "target_after_G": [
+            0,
+            0
+          ],
+          "terminal_target": 0,
+          "central_class": -1,
+          "native_amplitude_power_of_sqrt_p": 3
+        },
+        {
+          "target_after_G": [
+            0,
+            1
+          ],
+          "terminal_target": 1,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 4
+        },
+        {
+          "target_after_G": [
+            1,
+            0
+          ],
+          "terminal_target": 0,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 3
+        },
+        {
+          "target_after_G": [
+            1,
+            1
+          ],
+          "terminal_target": 1,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 2
+        }
+      ],
+      "10": [
+        {
+          "target_after_G": [
+            0,
+            0
+          ],
+          "terminal_target": 0,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 2
+        },
+        {
+          "target_after_G": [
+            0,
+            1
+          ],
+          "terminal_target": 1,
+          "central_class": -1,
+          "native_amplitude_power_of_sqrt_p": 3
+        },
+        {
+          "target_after_G": [
+            1,
+            0
+          ],
+          "terminal_target": 0,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 4
+        },
+        {
+          "target_after_G": [
+            1,
+            1
+          ],
+          "terminal_target": 1,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 3
+        }
+      ],
+      "11": [
+        {
+          "target_after_G": [
+            0,
+            0
+          ],
+          "terminal_target": 0,
+          "central_class": -1,
+          "native_amplitude_power_of_sqrt_p": 3
+        },
+        {
+          "target_after_G": [
+            0,
+            1
+          ],
+          "terminal_target": 1,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 4
+        },
+        {
+          "target_after_G": [
+            1,
+            0
+          ],
+          "terminal_target": 0,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 3
+        },
+        {
+          "target_after_G": [
+            1,
+            1
+          ],
+          "terminal_target": 1,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 2
+        }
+      ]
+    },
+    "CX_18": {
+      "00": [
+        {
+          "target_after_G": [],
+          "terminal_target": 0,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 0
+        }
+      ],
+      "01": [
+        {
+          "target_after_G": [],
+          "terminal_target": 1,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 0
+        }
+      ],
+      "10": [
+        {
+          "target_after_G": [],
+          "terminal_target": 0,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 0
+        }
+      ],
+      "11": [
+        {
+          "target_after_G": [],
+          "terminal_target": 1,
+          "central_class": 1,
+          "native_amplitude_power_of_sqrt_p": 0
+        }
+      ]
+    }
+  },
+  "conditional_raw_binary_model": {
+    "allowed_dark_parameter_exponents": [
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        1,
+        2
+      ]
+    ],
+    "dark_path_weight_each": "p^3",
+    "bright_total_amplitude": "p^2 + p^4 = 3 - 4p",
+    "spin_mass_ratio_to_unit_reference": "(3 - 4p)^2",
+    "field_norm_bright_amplitude": 5,
+    "rational_golden_exponent_can_supply_compensator": false,
+    "regular_gram_extrema": [
+      "p^12",
+      "1"
+    ],
+    "regular_mass_from_initialized_unit_class": "(3 - 4p)^2 + 2p^6",
+    "same_raw_gate_passes_fresh_bit_readout": false
+  },
+  "book03_physical_valuation_identified": false,
+  "book03_preparer_absolute_normalizer_identified": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "EXACT_NONUNIFORM_PF_VS_UNIFORM_FOURIER_HOSTILE_CHECK",
+  "uniform_site_gram": "I_128/128 exactly",
+  "naive_PF_weighted_gram_equals_I_128_over_128": false,
+  "max_entry_residual_rational": "-477/700544",
+  "witness_indices": [
+    19,
+    37
+  ],
+  "nonzero_entries": 15570,
+  "scope": "rejects only naive multiplication of this uniform Fourier subfamily by sqrt(PF site probability); H.1 SITE and RIGHT may have a different actual paid map",
+  "GR_closed": false
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS_EXACT",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "created_utc": "2026-11-13T14:12:59.306755+00:00",
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round7/check_retained_phase.py": "5663b5a983d3d132c5877ae8d24537b2d28edfefb8d4190801737bfa796fbc81",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round7/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round7/CHECK_RESULT.json": "c6bca90a01de1f9c9aadf4114ce45d923d7a48bd09abc053fcf316db351725f2",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round7/ROUND7_RETAINED_PHASE_RU.md": "7b6b4c7ecc65ef12f64eea3540e24b6ba0eb528d4d9f09df602eaadc08141c0b",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  },
+  "GR_closed": false,
+  "complete_physical_cost_info_binding": false,
+  "physical_full_H1_admission": false,
+  "existing_physical_premises_discharged": []
+}

@@ -1,0 +1,65 @@
+{
+  "status": "PASS_A54_INTEGRATION_CONDITIONAL_ON_PINNED_COMPONENTS_AND_SELECTED_A23_EXTENSION",
+  "all_scheduled_source_slots": 1568,
+  "all_variable_group_code_assignments": 1048576,
+  "adapter_level9_leaf_count_per_depth": 19683,
+  "adapter_depth_counts": [
+    {
+      "0": 512,
+      "1": 2304,
+      "2": 4608,
+      "3": 5376,
+      "4": 4032,
+      "5": 2016,
+      "6": 672,
+      "7": 144,
+      "8": 18,
+      "9": 1
+    },
+    {
+      "1": 512,
+      "2": 2304,
+      "3": 4608,
+      "4": 5376,
+      "5": 4032,
+      "6": 2016,
+      "7": 672,
+      "8": 144,
+      "9": 18,
+      "10": 1
+    },
+    {
+      "2": 512,
+      "3": 2304,
+      "4": 4608,
+      "5": 5376,
+      "6": 4032,
+      "7": 2016,
+      "8": 672,
+      "9": 144,
+      "10": 18,
+      "11": 1
+    }
+  ],
+  "all_496_plane_geometries_both_orders": true,
+  "walsh_width_classes_checked": 29,
+  "global_inventory_and_error_recomputed": true,
+  "selected_A23_extension_not_universal_owner_identity": true,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/regular_source_native.py": "6e218327236d303d24c5fd292753e4bb7e5a22fdae3b3f1561e30de0fe10caa7",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/regular_global_source.py": "420d134e6d4a01aaf47f4ddba76d301faf1bf7c64d9e3225d1d512a170e0c395",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/check_regular_global_source.py": "15f99f0d7fb85739518f060a1cf708dd9bbcf09688acab90ed0fde0e2e497607",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/REGULAR_GLOBAL_SOURCE_PLAN.json": "99135a04be6166e699209c22fa61221e545b1ec913090915c094dc40634ce277",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/REGULAR_GLOBAL_SOURCE_CHECK.json": "68cbe8320035f65a144522acbdbd40df22bdee702e62f23d36b75ff817b72a9f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round54/REGULAR_GLOBAL_SOURCE_RU.md": "c01b0d54b989883e52987c7081103f59063a231d2781901ce211532e8c123bf5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round103/regular_link_julia.py": "df4cd183555d776a3eb3cce9c5438617fa85e09e81b9e1720e8ab5530e629337",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round103/B103_REGULAR_PROPER_LINK_CONSTRUCTOR_RU.md": "74d3960bbe5f0102ced0dcce061227be6ca11e140c913cbf2dbe09843d43a68c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round104/B104_A53_AUDIT_CHECK.json": "8bceda121f12a16aa724f29b4dc64fca4b26f1148db5e4cf0e8e97f597b82ea1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round104/B104_A53_REGULAR_COMPONENT_AUDIT_RU.md": "3c882389d984c20fefa52ab02b797c57a5e4070320f6e3481bc7f2f9e8cc8cbc",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round91/B91_FULL_VECTOR_JET_AND_SOURCE_FIBRE_RU.md": "f56105e52c199778228c9465dc3e808f5e8229e3a38eae4739c146b333bbc3ce",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/CAR_VACUUM_FOURIER_RU.md": "77d3de6d0ad3a24a58edbd39be311fb4907f8761a75da3d7a98a359bb45a266d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round106/audit_a54_independent.py": "318fe5db1110c0630043328fc09cf5cb9a789cacc1312319e0679495d1d319ce"
+  }
+}

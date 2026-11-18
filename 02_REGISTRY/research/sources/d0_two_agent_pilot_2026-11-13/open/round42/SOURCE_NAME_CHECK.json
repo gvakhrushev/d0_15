@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ALL_FORMULA_NAMES_VS_B25_MP_DIAGNOSTIC",
+  "families": 336,
+  "sector_entries": 23296,
+  "precision_bits": 192,
+  "reference_precision_bits": 600,
+  "mp_values_not_a_formal_interval_proof": true,
+  "source_sha256": "063f718bbdb15ee6e32c41ba9dd26cfd410cbd0417eb932a40c7c67f23712b8b",
+  "GR_closed": false
+}

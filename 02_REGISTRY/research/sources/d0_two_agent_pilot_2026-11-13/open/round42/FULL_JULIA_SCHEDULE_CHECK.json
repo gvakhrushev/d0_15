@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ALL_32_COLUMN_JULIA_SCHEDULE_DIAGNOSTIC",
+  "families": 336,
+  "max_float32_matrix_difference": 2.55351295663786e-15,
+  "angle_library_sha256": "c5a4943298b419f72e7f098a4529e59c971d5877354e42e48ec9ec1b0905b307",
+  "native_emitter_sha256": "e8ccc0ecc55c720e2b6cfbc5ba31bbe878e577b5d5944f90ab3911ebb68ec33a",
+  "float_is_not_certificate": true,
+  "actual_huge_native_word_executed": false,
+  "GR_closed": false
+}

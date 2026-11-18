@@ -1,0 +1,12 @@
+{
+  "status": "PASS_EXACT_REDUCTION_HOSTILE_EXAMPLES",
+  "half_vector_identity_exact": true,
+  "using_omega_itself_instead_of_half_vector_squared_error_exact": "4/5 for c=3/5",
+  "actual_choi_wrong_omega_instead_of_u_error_norm": 1.4114493992525643,
+  "joint_private_clean_anchor_gives_correct_all_data_columns": true,
+  "naive_anchor_tensor_I_private_work_fails_on_clean_data_column": true,
+  "one_oldRIGHT_column_passes_but_other_fails": true,
+  "sam_average_one_bad_vertex_squared_error": "2^-2688 with worst_case_block_error=1",
+  "scope": "explicit finite counterexamples; no claim that A16 or a future U exhibits these failures",
+  "GR_closed": false
+}

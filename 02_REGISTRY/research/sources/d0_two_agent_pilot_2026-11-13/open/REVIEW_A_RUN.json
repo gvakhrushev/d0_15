@@ -1,0 +1,48 @@
+{
+  "format": "d0-two-agent-pilot-peer-review-a/1",
+  "start_utc": "2026-11-13T12:27:34Z",
+  "end_utc": "2026-11-13T12:31:50.331101Z",
+  "separate_from_independent_research": true,
+  "peer_first_result_frozen": "/Users/grigorijvahrusev/Downloads/D0_PILOT_TWO_AGENTS_2026-11-13/direct/FIRST_RESULT_RU.md",
+  "peer_proof_frozen": "/Users/grigorijvahrusev/Downloads/D0_PILOT_TWO_AGENTS_2026-11-13/direct/SOURCE_COVERAGE_RU.md",
+  "review": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/REVIEW_A_RU.md",
+  "checks": [
+    {
+      "method": "read-only runpy.run_path on peer checker, invoking run() rather than __main__",
+      "result": "61 checks PASS, complete result equals frozen CHECK_RESULT.json"
+    },
+    {
+      "method": "SHA-256 checks of four frozen peer artifacts against both copies and A RUN.json",
+      "result": "PASS"
+    },
+    {
+      "method": "compare source owner SHA-256 across isolated checkouts",
+      "result": "both 2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+    },
+    {
+      "method": "check_review_a.py under python3 -B -W error and -O",
+      "result": "13 exact rational controls PASS; outputs identical"
+    },
+    {
+      "method": "targeted review of LC9, CD13, RI4 and related source-cover terminology",
+      "result": "scope and novelty assessment recorded; no exhaustive corpus priority claim"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/REVIEW_A_RU.md",
+      "sha256": "e8ed163078ceb0ddffe2f9d0dca70b707e2c0f7afec5876c8786479ef3d35847"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/check_review_a.py",
+      "sha256": "c38912b33375a8e394a350ff78d548178fa01e1d03f99eac6a9e7b2ba7a899c8"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/REVIEW_A_CHECK.json",
+      "sha256": "77ae8d07c314e1dfea7c4f4fc7d9da2fda7243b6f0f30b86e07b6bfe8706352d"
+    }
+  ],
+  "result": "no mathematical error found in stated finite Euclidean scope; norm and physical-lift factors need explicit physical transport",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

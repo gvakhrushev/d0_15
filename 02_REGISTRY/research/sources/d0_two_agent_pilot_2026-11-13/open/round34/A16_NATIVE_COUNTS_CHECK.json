@@ -1,0 +1,27 @@
+{
+  "status": "PASS_A16_INDEPENDENT_NATIVE_REVERSE_AND_COUNTS",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/SOURCE_SELECT_COMPILATION.json": "8b820b0143099b8aca2d82735c68152481ae9598b902f2d0e110031cf38c0b7b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/DYNAMIC_PAIR_LIBRARY.json": "377246019981da1903f0a1109817c68a23a975c1b6472c672698543544c32173"
+  },
+  "literal_reverse_syntactic_nodes_checked": 70716,
+  "pair_templates_checked": [
+    12,
+    22
+  ],
+  "one_report_logical_counts": {
+    "CCX": 18465784,
+    "Z": 76260,
+    "CX": 40723512,
+    "X": 601578,
+    "CZ": 75196,
+    "H": 20
+  },
+  "one_report_error_macros": 19067382,
+  "seven_reports_known_error_macros": 162611159340,
+  "known_error_bound": "2^-4058",
+  "basis": "operator norm telescoping conditional on A14 per-macro bound; no full physical word/marks/clock budget",
+  "scope": "literal reverse trees and logical counts of actual A16; does not independently prove A14 approximation theorem",
+  "GR_closed": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SCOPED_INDEPENDENT_REVIEW",
+  "stdout": "PASS: 54 high-precision envelope/bound checks; 100 independent-block lift checks.\nScope: ideal functional and linear algebra; no actual mark-reader admission or Book03 price.\n",
+  "A8_checker_exact": 13,
+  "A8_checker_numeric": 247,
+  "independent_envelope_bounds": 54,
+  "independent_product_lifts": 100,
+  "actual_full_reader_admission": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}

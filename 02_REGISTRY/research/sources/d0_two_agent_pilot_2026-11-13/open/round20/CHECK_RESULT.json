@@ -1,0 +1,9 @@
+{
+  "status": "PASS_SCOPED_MARK_AND_PRIVATE_COPY",
+  "stdout": "PASS: actual 8-call NPS14 fixture; event-copy commutator and hostile coherent mark.\nPASS: 4-call exact support, native 24-call inverse, transported projector and two sealed-address rejections.\nPASS: paid birth+3-CX AD2 handoff on every old-source column; sealed old address rejected.\nPASS: NPS14+36 echo: both scalar NR branch identities on all four Spin columns, unequal q0/q1 and zero invalid.\nPASS: 2 private births + 22 paid inverse calls + 1 CX copy on all 16 live input columns.\nScope: local literal fixture; no full ten-sign H.1 word or complete mark/address ledger emitted.\n",
+  "fixture_nps14_only": true,
+  "full_nr_recovery_compiled": false,
+  "full_H1_mark_reader_catalogue_emitted": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

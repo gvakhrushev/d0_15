@@ -1,0 +1,42 @@
+{
+  "status": "STRUCTURAL_TASK_INPUT_LEDGER_PINNED_NOT_ADMISSION_PROOF",
+  "A30_banks": [
+    "y+",
+    "y-",
+    "f",
+    "0",
+    "x+",
+    "x-",
+    "q"
+  ],
+  "separate_READY_and_REPORT_outputs_per_bank": 7,
+  "source_slots": 1372,
+  "A30_paid_B_R_data_wires": 29848,
+  "A30_one_shared_SITE": true,
+  "A32_initial_cut_P0": "I_1 on H0=C, not reporter reference P_0",
+  "A32_SAM_j2_last_physical_G_wire": 4,
+  "A32_actual_native_READY_is_exact_scalar_proved": false,
+  "original_task_same_pair_membership_proved_by_this_checker": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round69/inspect_actual_task_graph.py": "4e3fc7b8dfd7a1e437e60182b657e700508a822abf540505116213807b26b744",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/h1_namespace.py": "0a11a40f7c6e1c0cdb35be63bfb4e8704eb74ab17a8d1e0d1b2d40e8dabbc03e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round26/FULL_READY_AND_GAIN_RU.md": "cecf8317d3252efe797fe6415f50c0f9e79c51d11ed9dd71b13dac5930480d58",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PREPARED_SOURCE_MOMENT_LAW_RU.md": "8985c22feaaca539fb0960e6f255bdc9cecc0bff06b67a95d969a4a9810a94a8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/marked_source_schedule.py": "92ef8395b40cf20ce77c49a3ed4bfdcbd42fbc1d2f6595133ca4ba2f3086863e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_RAW_SOURCE_MARKS_RU.md": "d3b279b5dafa2d50928ce21020ad7eab60fcc7cbc3fb35bde1fc3be5f61bddd6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/finite_book_comparison.py": "eff94dfc2fea3b808be59d5cc889b8f8e989fbbd60b3fbb9ed234cff0c911901",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/FINITE_BOOK_COMPARISON_PLAN.json": "0c7ec7f984410df24a7e67de0012f7418a2bb3782b6a1d53f97718a6ab49b155",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/FINITE_FULL_BOOK_COMPARISON_RU.md": "4da489ea0ad107a2f1654f88e0211484adca5251ffaa4c5eb633bb3065c7615d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round53/READY_NATIVE_APPROX_INTERVAL.json": "e60604a6d11004ca119270feb6a7696916b7b6d8f235f15794ff00d0930c0cf1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/B60_ORIGINAL_MARKS_COMMON_CHECKPOINT_RU.md": "ffdf9d02317c94a1eeecb447abb7dcef6d2c679c9e5f61222f171dbe502c9165",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round68/B68_A35_BINDING_AUDIT_RU.md": "631c39159aa8209a8f3ec8e0bb550e55d1295e64f26647721ef0b5fd7e0c20a9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md": "665fcbc48d64e4e6fc4bf5fcc764845d86012a42683f5d3188b47158cda5a2b9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/KAPPA_CLOSURE_RU.md": "92d2fb5d988a83c6ea714ed34c5a94bd1c42e6bbcfe933e30751978a1a2abb0e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/03_FORMALIZATION/D0/Foundation/VerifiabilityNecessity.lean": "e851960cf5ed7c3abdb488dc70a2ed098d9a6bfb2ca0a60d2cbecda9f93da48d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4"
+  }
+}

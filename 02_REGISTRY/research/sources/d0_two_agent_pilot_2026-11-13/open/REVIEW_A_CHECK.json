@@ -1,0 +1,21 @@
+{
+  "GR_closed": false,
+  "check_names": [
+    "both covering maps are exact",
+    "Euclidean pseudoinverse need not minimize the max-block norm",
+    "triangle lower bound certifies the max-block minimum",
+    "two unit rows have max-block dual norm 2",
+    "that dual norm exceeds the Hilbert sqrt-two estimate",
+    "lifted residual remains 1 at t=1",
+    "lift norm times residual norm remains >=1 at t=1",
+    "lifted residual remains 1 at t=10",
+    "lift norm times residual norm remains >=1 at t=10",
+    "lifted residual remains 1 at t=100",
+    "lift norm times residual norm remains >=1 at t=100",
+    "lifted residual remains 1 at t=1000",
+    "lift norm times residual norm remains >=1 at t=1000"
+  ],
+  "checks": 13,
+  "scope": "exact norm and normalization controls, not H.1 physical price",
+  "status": "PASS"
+}

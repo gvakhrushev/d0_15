@@ -1,0 +1,21 @@
+{
+  "status": "PASS_T6_CONDITIONAL_AUX_AND_PORT_SPIN_MACRO_LEMMAS",
+  "A23_actual_compact_macro_syntax_rebuilt": 40742,
+  "S_squared_exact_Zport_in_both_spin_conventions": true,
+  "borrowed_arbitrary_port_and_spin_exactly_restored_at_A23_macro_boundaries": true,
+  "A13_5_SourceI_CZ_exact_port_spin_identity_all32_columns": true,
+  "arbitrary_aux_canonical_WORK_sufficient_under_full_factorization_and_embedding": true,
+  "optional_aux_J_commutant_real_symmetric_scalar_lemma": true,
+  "J_commutant_alone_without_other_D_identity_insufficient": true,
+  "near_identity_aux_control_nonscalar_counterexample": true,
+  "full_H1_macros_all_commutants_proved": false,
+  "full_actual_T6_proved": false,
+  "same_H1_births_marks_admission_proved": false,
+  "GR_closed": false,
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round23/car_vacuum_prefix.py": "4733e09654b6e566957a63807430128da2efa557b00d3309aea5f3cdf9a2dfca",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/compile_native_cz.py": "36dc0f1b487a6a802d9175b1ed17c75ecffcbb88858f3b5014ad7fa681882d48",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80"
+  }
+}

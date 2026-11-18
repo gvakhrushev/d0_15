@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FOUR_VALUED_A27_CORNER_EXTENSION_CONDITIONAL_OWNERS",
+  "all_four_local_vertices_inside_old_asymmetric_cube": true,
+  "old_seven_report_polynomial_checked_all_4pow7_ready_cases": true,
+  "fresh_REPORT_cancels_at_ideal_logical_operator": true,
+  "fresh_REPORT_commutes_with_old_report_assumed": false,
+  "actual_CODE_control_only_compositional_check": true,
+  "actual_compressed_corner_error_lt": "2^-3421",
+  "required_corner_error_lt": "2^-3298",
+  "ideal_corner_gt": "67/100",
+  "actual_corner_gt": "2/3",
+  "scope": "selected typed A23 vacuum extension, A27 product and A48 declared canonical RAW fibre; inherited B54 and report approximation bounds",
+  "literal_production_core_executed": false,
+  "original_Dnu_mark_transport_or_physical_admission_proved": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PREPARED_SOURCE_MOMENT_LAW_RU.md": "8985c22feaaca539fb0960e6f255bdc9cecc0bff06b67a95d969a4a9810a94a8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PRODUCT_SOURCE_COMPRESSION_CHECK.json": "ac0d1c198cd3cc0d08b8057f541d4009c6ee15a5b39ac4c574fa14c9a1a9c0ca",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/SCALAR_SOURCE_BOUND.json": "90f3f61ce3e209f400e73317be14f0853572bf7bfb83c76226229ee9db5e300c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round46/INDEPENDENT_CURRENT_BANK_RU.md": "f6276b1807d5b1de07799e100e351b02398d8b8047109726416faabf7937a01c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round48/TWO_BIT_GLOBAL_SOURCE_PLAN.json": "24e21eb8d4cba2976f7ccdb1fdcabe2594d8a614695005cea8134f24e7735866",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round49/SC6_ACTIVE_PORT_OWNER_CHECK.json": "410348a8dcd1a8ad7e18c8cde0b7e3562d0ef6aea0e1c545159d69562c930d17",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round93/B93_CHECKPOINT.json": "8418cdc9d8d3ab04313ab895966eb20de5d4dd17e32067e7cfc0c58c7c8f56fe",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round94/B94_CHECKPOINT.json": "ee7e195373910cf80ca71898ff8f1d628b7ded678f191d611afc722f66324ef9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round96/CODE_SUPPORT_CHECK.json": "1ed4df52632c0c2534db45c959ec31f56629f033bda4df8031c4c14f8c3e0494"
+  }
+}

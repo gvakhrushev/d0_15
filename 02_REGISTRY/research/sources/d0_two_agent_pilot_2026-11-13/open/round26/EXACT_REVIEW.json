@@ -1,0 +1,188 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_PALETTES_DAG_COPY_CAPS_REVIEW",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6"
+  },
+  "palette_checks": [
+    {
+      "file": "INTERNAL_SELECTOR_PALETTE.json",
+      "partitions": 25,
+      "r": 1374,
+      "n": 0,
+      "D": "309074538165317320272549301737795224319297331666765516563511584533296210629628256242979973196615069426457634315577275528944414250199610493366061813258535430858925507879829147833049512980219736785870009783674424303541212390650896274050990753444316303798668883297629569917126920632385647923929581686335672407924194195897720155278691776875316699591424433680657878475311189100826310580028284223675279079296243357810400",
+      "tau": "9658579317666166258517165679306100759978041614586422392609737016665506582175883007593124162394220919576801072361789860279512945318737827917689431664329232214341422121244660869782797280631866774558437805739825759485662887207840508564093461045134884493708402603050924059910216269762051497622799427697989762747631068621803754852459118027353646862232013552520558702353474659400822205625883881989852471228007604931575/12884395989942420342234867711958887115974070316500772686182127021553281246247337617665975412776861947602311862709931700428894509269380293416407252746379318150654935204065614446990275271962420640811239533700282487708252128318122242769813735293722081695093723709163579083483675199977148382402783698777755724994197433796137298229051488784721314289086506985857998832312868888624686816404860345964132585567994314227712",
+      "all_counts_capacity_and_branch_masses_exact": true
+    },
+    {
+      "file": "TOP_SOURCE_SELECTOR_PALETTE.json",
+      "partitions": 512,
+      "r": 1580,
+      "n": 1,
+      "D": "21951423779923729981449845288064848018060256763931533502823927127479777123578911915232866768842453386772061793258495073202084355615883751341421838174725909316346069238797363063884329340618866127426559614163739368233481878269998862940934935439649040640081263038817820908914540112766928223354966747253024739547470309955169348413488548374563448287780893369223715749596891038239000450271103674140051504915598797884113091370781866634469270094378423533880989525587965513062873563136",
+      "tau": "611180151004353943089/1180591620717411303424",
+      "all_counts_capacity_and_branch_masses_exact": true
+    },
+    {
+      "file": "TEN_SIGN_REPORT_PALETTE.json",
+      "partitions": 2048,
+      "r": 94,
+      "n": 6,
+      "D": "19807040628566084398385987584",
+      "tau": "1",
+      "all_counts_capacity_and_branch_masses_exact": true
+    }
+  ],
+  "nodes": 20402,
+  "reachable_add_types": 3618,
+  "top_site_type_rows": 512,
+  "post_sign_mask_rows": 2048,
+  "polynomial_coefficients_independently_rebuilt": 54,
+  "disjoint_copy_degrees_f_q": [
+    [
+      82,
+      0
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "fresh_copy_layout_one_report": [
+    {
+      "sign": "S1",
+      "Choi_half_open": [
+        0,
+        82
+      ],
+      "CAR_half_open": [
+        0,
+        0
+      ]
+    },
+    {
+      "sign": "S2",
+      "Choi_half_open": [
+        82,
+        164
+      ],
+      "CAR_half_open": [
+        0,
+        0
+      ]
+    },
+    {
+      "sign": "T1",
+      "Choi_half_open": [
+        164,
+        166
+      ],
+      "CAR_half_open": [
+        0,
+        2
+      ]
+    },
+    {
+      "sign": "T2",
+      "Choi_half_open": [
+        166,
+        168
+      ],
+      "CAR_half_open": [
+        2,
+        4
+      ]
+    },
+    {
+      "sign": "T3",
+      "Choi_half_open": [
+        168,
+        170
+      ],
+      "CAR_half_open": [
+        4,
+        6
+      ]
+    },
+    {
+      "sign": "T4",
+      "Choi_half_open": [
+        170,
+        172
+      ],
+      "CAR_half_open": [
+        6,
+        8
+      ]
+    },
+    {
+      "sign": "T5",
+      "Choi_half_open": [
+        172,
+        174
+      ],
+      "CAR_half_open": [
+        8,
+        10
+      ]
+    },
+    {
+      "sign": "T6",
+      "Choi_half_open": [
+        174,
+        176
+      ],
+      "CAR_half_open": [
+        10,
+        12
+      ]
+    },
+    {
+      "sign": "T7",
+      "Choi_half_open": [
+        176,
+        178
+      ],
+      "CAR_half_open": [
+        12,
+        14
+      ]
+    },
+    {
+      "sign": "T8",
+      "Choi_half_open": [
+        178,
+        180
+      ],
+      "CAR_half_open": [
+        14,
+        16
+      ]
+    }
+  ],
+  "rank2_exact_real_matrix_cases": 31,
+  "reused_coin_hostile_detected": true,
+  "equal_ready_different_environment_hostile_detected": true,
+  "walk_slots": 1054,
+  "fair_leaf_choices": 196,
+  "component_caps": {
+    "internal": 7,
+    "top": 7,
+    "fair_plus": 28
+  },
+  "component_fair_qubits": 10248262,
+  "component_golden_qubits": 76,
+  "union_bound_float": 0.32085975025675106,
+  "failure_union_bound_le_half": true,
+  "limitations": [
+    "native Boolean/routing/Toffoli/fair-gate words not checked",
+    "no complete coherent first-success machine or mark/readout compiled",
+    "full native READY alpha not determined",
+    "no C or GR closure"
+  ],
+  "GR_closed": false
+}

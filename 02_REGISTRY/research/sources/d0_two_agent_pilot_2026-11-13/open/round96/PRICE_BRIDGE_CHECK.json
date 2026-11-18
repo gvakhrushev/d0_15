@@ -1,0 +1,11 @@
+{
+  "status": "PASS_A49_TYPED_CORNER_GAIN_AND_SHARED_BANK_BRIDGE",
+  "actual_cold_corner_error_lt": "2^-3421",
+  "all_actual_CODE_diagonal_entries_gt": "2/3",
+  "fixed_actual_post_centre_gt": "2/3",
+  "gain_lower_coefficient": "(8/3)*z*2^-3208*p^K",
+  "shared_bank_control_interface_lt": "2^-189",
+  "full_physical_cost_source_or_original_marks_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

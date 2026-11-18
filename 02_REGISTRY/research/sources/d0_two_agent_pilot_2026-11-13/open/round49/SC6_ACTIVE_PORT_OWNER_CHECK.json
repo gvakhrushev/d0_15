@@ -1,0 +1,112 @@
+{
+  "status": "PASS_SC6_EXACT_ACTUAL_PORT_CONTROL_AND_OWNER_EMBEDDING",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "term_normal_forms": [
+    {
+      "selector": "00011",
+      "sign": 1,
+      "call_indices": [
+        0,
+        2
+      ],
+      "columns": 512,
+      "accepted_columns": 1,
+      "native_calls": 2048
+    },
+    {
+      "selector": "00101",
+      "sign": 1,
+      "call_indices": [
+        1,
+        3
+      ],
+      "columns": 512,
+      "accepted_columns": 1,
+      "native_calls": 2048
+    },
+    {
+      "selector": "00110",
+      "sign": -1,
+      "call_indices": [
+        0,
+        3
+      ],
+      "columns": 512,
+      "accepted_columns": 15,
+      "native_calls": 2496
+    },
+    {
+      "selector": "01001",
+      "sign": -1,
+      "call_indices": [
+        1,
+        2
+      ],
+      "columns": 512,
+      "accepted_columns": 15,
+      "native_calls": 2496
+    },
+    {
+      "selector": "01010",
+      "sign": 1,
+      "call_indices": [
+        4,
+        6
+      ],
+      "columns": 512,
+      "accepted_columns": 1,
+      "native_calls": 2048
+    },
+    {
+      "selector": "01100",
+      "sign": 1,
+      "call_indices": [
+        5,
+        3
+      ],
+      "columns": 512,
+      "accepted_columns": 1,
+      "native_calls": 2048
+    },
+    {
+      "selector": "10001",
+      "sign": -1,
+      "call_indices": [
+        4,
+        3
+      ],
+      "columns": 512,
+      "accepted_columns": 15,
+      "native_calls": 2496
+    },
+    {
+      "selector": "10010",
+      "sign": -1,
+      "call_indices": [
+        5,
+        6
+      ],
+      "columns": 512,
+      "accepted_columns": 15,
+      "native_calls": 2496
+    }
+  ],
+  "total_local_columns_checked": 4096,
+  "global_boolean_controls_checked": 524288,
+  "global_accepted_columns": 65536,
+  "exact_global_normal_form": "V = sum_controls |control><control| tensor G_port^(512 chi(control)) tensor I_Spin",
+  "spin_and_control_identity_at_completed_V": true,
+  "active_port_requires_canonical_born_v_then_paid_G_inverse": true,
+  "rejected_input_false_click_if_conversion_omitted": "p^2 for input port v",
+  "paid_G_inverse_cost": {
+    "G": 1,
+    "CX": 0,
+    "SourceI": 4
+  },
+  "report_observable": "pre-sign Z_port, not per-call READY or REPORT",
+  "global_H1_binding_or_marks_admission_proved": false,
+  "GR_closed": false
+}

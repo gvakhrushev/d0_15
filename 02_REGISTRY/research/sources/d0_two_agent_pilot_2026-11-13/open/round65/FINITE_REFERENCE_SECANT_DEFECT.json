@@ -1,0 +1,35 @@
+{
+  "status": "PASS_EXACT_FINITE_REFERENCE_SECANT_DEFECT",
+  "r_x_degree": 2,
+  "r_y_degree": 8,
+  "p_interval": [
+    "618033988749/1000000000000",
+    "494427191/800000000"
+  ],
+  "odd_y_coefficients_Qp": {
+    "1": "-(39847142*p - 24642311)/34359738368",
+    "3": "-(32251985*p - 19928057)/8589934592",
+    "5": "-(53743*p - 33215)/17179869184",
+    "7": "-(10946*p - 6765)/8589934592"
+  },
+  "c1_positive_c3_c5_c7_strict_negative": true,
+  "delta_x_equals_2delta_r_y": true,
+  "delta_y_strictly_less_than_delta_x": true,
+  "one_minus_a_y_strict_between_0_and": "2^-3084",
+  "chosen_free_u_coordinate": "any interior site, coframe role0 component0",
+  "Dq_site_exact": "pi^2/750",
+  "Dq_global_exact": "pi^2/192000",
+  "ideal_DI_tau_nonzero_at_geometric_root": true,
+  "chosen_ideal_residual_abs_lt": "2^-3093",
+  "full_raw_chart_ideal_secant_error_l2_lt": "2^-3083 conditional on exact v-Stokes and B24 map",
+  "actual_native_source_proved_nonzero": false,
+  "depends_on_owned_root_and_B24_source_map": true,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/TARGETS_RU.md": "7b20b59f6ea3a79e6157fc59cb8c8c264b0533a211557b864d14f8fc07728f94",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round54/B54_PRODUCT_SOURCE_EXACT_RU.md": "3cf8efc95f1107d943dbe9b2e1846564df21781d0851c6a9b8e137b09cc498af",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round24/TORUS_BOUNDARY_REVIEW_RU.md": "1a1db036a3ef217c826e71fa66bb9c9f19060605657670bc505ee5cb0517fb08",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PREPARED_SOURCE_MOMENT_LAW_RU.md": "8985c22feaaca539fb0960e6f255bdc9cecc0bff06b67a95d969a4a9810a94a8"
+  },
+  "GR_closed": false
+}

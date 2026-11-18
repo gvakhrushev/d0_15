@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXACT_CURRENT_GAUGE_AND_RAW_INVERSE_COFRAME_CHART",
+  "R": "diag(1,1,-1,-1)",
+  "R_is_proper_eta_null_lorentz": true,
+  "coframe": "e=R e0, u=R u0=nu eta e^-T",
+  "B21_raw_u_matches_exactly": true,
+  "links": "U=R U0 R^-1=exp(-kx N2-ky N3)",
+  "full_CAR_creator_covariance_all_4": true,
+  "exterior_metric_gauge_invariant": true,
+  "all_16_chart_directions_differential_invertible": true,
+  "scope": "exact constant gauge and local chart; no native history, density variation, or full GR closure",
+  "GR_closed": false
+}

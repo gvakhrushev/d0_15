@@ -1,0 +1,25 @@
+{
+  "status": "B97_SCOPED_SCALAR_M3_AND_ACTUAL_PF_PRICE_CHECKPOINT",
+  "file_sha256": {
+    "B97_SCALAR_M3_AND_FIXED_POST_WEIGHT_RU.md": "7226250acc83d48300b59dee65a89adc35f654df345b48a5345cece90def1f07",
+    "certify_scalar_third_derivative.py": "34affa64f07aecd02672a9f1301e418c47f812cf9a8af6839551c6b36ed7bcb0",
+    "check_fixed_post_weight.py": "9c78675d3b1bc8268b74fa97b0280bf685157491b18d9a2e9f73a06558f03115",
+    "SCALAR_THIRD_DERIVATIVE_CHECK.json": "02165872cd03f7ea64c1df6af59db8250ee9283dcf25c19757a5f1bf30ec6f00",
+    "FIXED_POST_WEIGHT_CHECK.json": "d0855bbd9535a6f5a0d91657dfe38271a7be8e3d938c5457afd861179506c64d",
+    "build_checkpoint.py": "9f8da831542a27e4f2742e75bc457c02edfc57e90c5338bff8eb7f96c0e04451"
+  },
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/B65_CENTRE_SOURCE_AND_BOUNDS_RU.md": "a10ad0a99575b742f39862f3fd7a8430046ac3c2792d0274e816e4c1df904fe3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round95/B95_CHECKPOINT.json": "2d8243540e29c7926efec6f97d50d8b1a104b413abc9ba5c2090402077b89a19",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round96/B96_CHECKPOINT.json": "f93d7aeed6c5d9b9656e8ae9971666cf4613bee5a0a64589e6752fa0e74a682d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round49/TWO_BIT_PAID_FAMILY_PLAN.json": "420c2b46827b30efe8985db59227030383448b939edc3a6ba1d700377fdc27fe",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round49/CORNER_AND_PRICE_BRIDGE.json": "2b5497680edc4d30b72056fea4213f9134243fb0002d5fc48f51f9c0a5bef06f"
+  },
+  "uniform_I_tau_M3_lt": "2^31",
+  "born_product_scalar_quadratic_bias_lt": "2^-109",
+  "actual_A49_Pf_H_plus_J_row_lt": "2^-108",
+  "old_correlated_rho_or_other_price_rows_proved": false,
+  "original_Dnu_or_Cost_Info_admission_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

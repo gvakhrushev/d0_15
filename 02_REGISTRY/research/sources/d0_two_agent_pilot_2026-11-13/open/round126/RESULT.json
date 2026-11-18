@@ -1,0 +1,32 @@
+{
+  "book03_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+  "native_stopped_flag": {
+    "paid_unitary_stages": 18,
+    "canonical_births": 2,
+    "retained_pointer_probabilities": [
+      "p",
+      "p^2"
+    ],
+    "initialized_columns": 8
+  },
+  "virtual_feedback": {
+    "early_reached_rank": 4,
+    "full_reached_rank_bound": 12,
+    "effective_active_fugacity": "z*p^2",
+    "virtual_reference_only_factor": "[1-z*(1-p)]^(-4)-1",
+    "virtual_early_PGF": "[1+(1-t)*nu]^(-4)",
+    "nu": "z/(1-z)*[1-p/(1-z+z*h)]",
+    "earliest_virtual_event_cannot_have_native_p": true,
+    "joint_normalized_virtual_early_distribution_can_see_late_h": true
+  },
+  "spatial_harmonics": {
+    "actual_scene_vertices": 33,
+    "actual_scene_edges": 359,
+    "incidence_rank": 32,
+    "field_independent_spatial_harmonics_per_stage": 327
+  },
+  "Book03_declares_virtual_mass_is_physical_early_leaf": false,
+  "same_absolute_paid_stop_certified_on_full_late_chart": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

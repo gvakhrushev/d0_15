@@ -1,0 +1,172 @@
+{
+  "status": "PASS_A24_INDEPENDENT_WRAPPER_PRICE_AND_ERROR",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round24/full_car_source.py": "09a97fffcc12867f21d2ecf10e81465a835c454ac50706add623eb50311dd9c6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round24/FULL_CAR_SOURCE_PLAN.json": "b494b37f2701b940547e4dc48ec1568e55748d5dd1e3bbec54b71546ff4dbc8b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round24/check_full_car_source.py": "4ff44a8ed6463ce8a7cda5d4e04c934a2bdbe69e12aaa4754f825b7cc281b3c7",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round24/FULL_CAR_SOURCE_CHECK.json": "a33d87a33bf9d1c24f2e5a30032403285219b054c1dcfa662533f9cec48d0e38"
+  },
+  "independent_material_sector_prices": {
+    "y+": 512,
+    "y-": 512,
+    "q": 1152
+  },
+  "all7_bank_components_and_inverse_prices": {
+    "y+": true,
+    "y-": true,
+    "f": true,
+    "0": true,
+    "x+": true,
+    "x-": true,
+    "q": true
+  },
+  "actual_block_subset_wrapper_tests": [
+    {
+      "bank": "y+",
+      "depth": 0,
+      "blocks": 19
+    },
+    {
+      "bank": "y+",
+      "depth": 1,
+      "blocks": 19
+    },
+    {
+      "bank": "y+",
+      "depth": 2,
+      "blocks": 19
+    },
+    {
+      "bank": "y+",
+      "depth": 3,
+      "blocks": 19
+    },
+    {
+      "bank": "y-",
+      "depth": 0,
+      "blocks": 19
+    },
+    {
+      "bank": "y-",
+      "depth": 1,
+      "blocks": 19
+    },
+    {
+      "bank": "y-",
+      "depth": 2,
+      "blocks": 19
+    },
+    {
+      "bank": "y-",
+      "depth": 3,
+      "blocks": 19
+    },
+    {
+      "bank": "f",
+      "depth": 0,
+      "blocks": 13
+    },
+    {
+      "bank": "f",
+      "depth": 1,
+      "blocks": 13
+    },
+    {
+      "bank": "f",
+      "depth": 2,
+      "blocks": 13
+    },
+    {
+      "bank": "f",
+      "depth": 3,
+      "blocks": 13
+    },
+    {
+      "bank": "0",
+      "depth": 0,
+      "blocks": 13
+    },
+    {
+      "bank": "0",
+      "depth": 1,
+      "blocks": 13
+    },
+    {
+      "bank": "0",
+      "depth": 2,
+      "blocks": 13
+    },
+    {
+      "bank": "0",
+      "depth": 3,
+      "blocks": 13
+    },
+    {
+      "bank": "x+",
+      "depth": 0,
+      "blocks": 13
+    },
+    {
+      "bank": "x+",
+      "depth": 1,
+      "blocks": 13
+    },
+    {
+      "bank": "x+",
+      "depth": 2,
+      "blocks": 13
+    },
+    {
+      "bank": "x+",
+      "depth": 3,
+      "blocks": 13
+    },
+    {
+      "bank": "x-",
+      "depth": 0,
+      "blocks": 13
+    },
+    {
+      "bank": "x-",
+      "depth": 1,
+      "blocks": 13
+    },
+    {
+      "bank": "x-",
+      "depth": 2,
+      "blocks": 13
+    },
+    {
+      "bank": "x-",
+      "depth": 3,
+      "blocks": 13
+    },
+    {
+      "bank": "q",
+      "depth": 0,
+      "blocks": 19
+    },
+    {
+      "bank": "q",
+      "depth": 1,
+      "blocks": 19
+    },
+    {
+      "bank": "q",
+      "depth": 2,
+      "blocks": 19
+    },
+    {
+      "bank": "q",
+      "depth": 3,
+      "blocks": 19
+    }
+  ],
+  "all112_error_strict_lt": "2^-3253",
+  "input_scope": "arbitrary 19 source columns and external factors, predicate3 true RAW v; ideal hybrid retains predicate zero",
+  "real_full_material_stream_exhaustively_replayed": false,
+  "real_giant_powers_expanded": false,
+  "old_marked_prefix_bound": false,
+  "physical_admission_and_T6_proved": false,
+  "GR_closed": false
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PASS_CONDITIONAL_INDEPENDENT_A33_ROW_AUDIT",
+  "actual_coordinate": {
+    "site": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "kind": "coframe",
+    "role": 0,
+    "component": 2,
+    "sam_index": 2
+  },
+  "A11_matter_DAG_secant_verified_symbolically": true,
+  "shared_base_covariance_negative_control": true,
+  "all_six_face_link_addresses_distinct_and_SAM_blocks_disjoint": true,
+  "source_weight_h4_verified": true,
+  "link_budget_loop": "459",
+  "local_geometric_error_coefficient": "244800",
+  "positive_row_lower_bound": "2^-44 under owner assumptions",
+  "corrected_covector_norm_lower_bound": "2^-45 under owner assumptions",
+  "unchanged_owner_assumptions": [
+    "exact geometric root and source map",
+    "A30 native e_B and g*s bound",
+    "A31 actual Jacobian bound",
+    "A32 and B64 finite H+J / R6 R11 bound",
+    "original fixed reporter and PF source law"
+  ],
+  "native_stationary_centre_proved": false,
+  "full_cost_info_selection_proved": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round66/independent_a33_audit.py": "99ddc68cb613713805087b0b44c7329fb1eb942832a07bf015bc6319a54f5fa0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/SAMPLING_SOURCE_BIAS_RU.md": "94c859dbf7e5f1b293ac6f8a600917d89989e3d0b1af5268e4e2258dae9a2b66",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/check_sampling_bias.py": "43b78bf6426a3c1c8c352e962e42d58a6829bb96160d5d71fb7403f5c6c6ba61",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round33/SAMPLING_SOURCE_BIAS_CHECK.json": "12dfe17ab8f8dc590d20e1292812418b10e0d0b3319a21ab9b48d00b03f06112",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round27/PREPARED_SOURCE_MOMENT_LAW_RU.md": "8985c22feaaca539fb0960e6f255bdc9cecc0bff06b67a95d969a4a9810a94a8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/G_CX_ONLY_REALIZATION_RU.md": "ed8467f1ac76fe349c87eadb7adb2988c30d4e65190eb13c3a84a94512283485",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/ACTUAL_MEAN_GEOMETRY_LIFT_RU.md": "7d6ca93d37b2d83a40af33a912c02d5b61ecad25235c97c7c5065a9d60e422bc",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round32/FINITE_FULL_BOOK_COMPARISON_RU.md": "4da489ea0ad107a2f1654f88e0211484adca5251ffaa4c5eb633bb3065c7615d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round65/B65_CENTRE_SOURCE_AND_BOUNDS_RU.md": "a10ad0a99575b742f39862f3fd7a8430046ac3c2792d0274e816e4c1df904fe3",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round64/B64_A32_FINITE_BOOK_AUDIT_RU.md": "220168d2f82dac36afa5e6079f0aa3ed8635f69fbd73348dcf9f904a1ccb5b4f"
+  }
+}

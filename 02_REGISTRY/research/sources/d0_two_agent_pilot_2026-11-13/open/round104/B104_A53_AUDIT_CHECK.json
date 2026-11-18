@@ -1,0 +1,75 @@
+{
+  "status": "PASS_B104_A53_COFRAME_CAR_SCOPED_AUDIT",
+  "all_original_coframe_rows_mapped": 7168,
+  "all_original_CAR_rows_mapped": {
+    "CAR_q": 1216,
+    "CAR_y+": 256,
+    "CAR_y-": 256
+  },
+  "independent_wide_coframe_boxes": 7168,
+  "independent_q_matter_slices": 4,
+  "all_B25_coframe_values_float_diagnostic_count": 7168,
+  "all_B25_CAR_values_float_diagnostic_count": 1728,
+  "B25_coframe_float_max_error": 2.7755575615628914e-17,
+  "B25_CAR_float_max_error": 2.0403624245468975e-18,
+  "independent_native_grid_powers_checked": 26,
+  "native_grid_tests_include_exact_zero_all_quadrants_and_equal_magnitudes": true,
+  "actual_controlled_X_rotation_and_doubled_phase_error_lt": "3*2^-3460",
+  "all_mask_widths_extremal_cost_and_inverse_bounded": true,
+  "all_bank_forward_and_literal_inverse_upper_rebuilt": true,
+  "actual_sector_inverse_inventory_checks": 120,
+  "actual_native_aggregated_rotation_all_columns_diagnostics": [
+    {
+      "kind": "coframe_Julia32_aux2",
+      "bank": "f",
+      "role": 0,
+      "max_error": 9.693522803355793e-27
+    },
+    {
+      "kind": "coframe_Julia32_aux2",
+      "bank": "q",
+      "role": 1,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "kind": "coframe_Julia32_aux2",
+      "bank": "x-",
+      "role": 2,
+      "max_error": 0.0
+    },
+    {
+      "kind": "CAR_preparation16_all_columns",
+      "bank": "q",
+      "target_column_max_error": 1.1102230246251565e-16,
+      "all_columns_max_error": 0.0
+    },
+    {
+      "kind": "CAR_preparation16_all_columns",
+      "bank": "y+",
+      "target_column_max_error": 0.0,
+      "all_columns_max_error": 0.0
+    },
+    {
+      "kind": "CAR_preparation16_all_columns",
+      "bank": "y-",
+      "target_column_max_error": 0.0,
+      "all_columns_max_error": 0.0
+    }
+  ],
+  "new_proper_link_or_global_SOURCE_compiled_by_A53": false,
+  "actual_complete_source_clock_or_physical_Cost_Info_identified": false,
+  "production_word_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "inputs_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/regular_field_targets.py": "9b7dc8986ee1f095235219b26f275ae76dc1bfccec9e4db45c5b838dae020a0f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/regular_source_components.py": "4f2e6f86bbf1b8c2b5a541533ec923a35f26f4dc7803d35e32919b23c26903d8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/REGULAR_SOURCE_COMPONENT_PLAN.json": "4e09ae898103ad45a781a2bf63fc2c6e3a453f26faff064a5a605c7c2e46b532",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/check_regular_source_components.py": "d6efe580f48fcd63858ef604f86c234685ff82e80aa5c9bc1f9af01a15016f80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/REGULAR_SOURCE_COMPONENT_CHECK.json": "a04b2b2ee9ff79ca9c707067e6f98a500b738467aea423b249a762173ceee177",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round53/REGULAR_FIELD_COMPONENTS_RU.md": "c54b04daddddcd390c841503c2b0fb70b7df855f275067fc7a0af022e3d861be",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round24/TORUS_CHOI_ADDRESSES.jsonl": "35897a838390fcd0c2ad1854d2934b3c21d6c7e4b877953a097cbb9c873238f3"
+  }
+}

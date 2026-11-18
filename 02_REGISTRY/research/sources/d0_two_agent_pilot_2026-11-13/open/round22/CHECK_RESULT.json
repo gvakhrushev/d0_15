@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SCOPED_INDEPENDENT_A10_REVIEW",
+  "commands": [
+    "python3 -B -W error check_private_recovery.py",
+    "python3 -B -W error check_private_recovery.py --spin-coupled",
+    "python3 -B -W error certify_private_corrections.py"
+  ],
+  "run_directory": "isolated temporary copy; original A package not modified",
+  "plain_checks": 23,
+  "spin_checks": 25,
+  "certificate_checks": 12568,
+  "literal_max_calls_plain": 131325,
+  "literal_max_calls_spin": 131550,
+  "certified_N": 951278222451,
+  "state_error_upper": "8.6535187765399413e-23",
+  "full_H1_executed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

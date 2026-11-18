@@ -1,0 +1,39 @@
+{
+  "status": "PASS_INDEPENDENT_INTEGER_READY_AND_GAIN_FLOOR",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round26/consume_full_ready.py": "757206b6aeac42d29ab339bc7dd439e3491c4d841376c7aec516392205f0d041",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round26/FULL_READY_GAIN_CHECK.json": "968f4068cf9d2c09763ea1053b8177b02b158ddf6f9b68de5b0fba0505bfd5ca",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/SELECTOR_COMPILATION.json": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/PREPROCESSOR_READY_COMPOSITION.json": "4091efc154b7af1c0f63a6647699e13f7e6cd715fd470b0db31b85710bfedfdc",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round29/BUDGET_CERTIFICATE.json": "195969b01862ae091a8c45f6f236a2f0e24496b43dff5f016d162fa0e1c41b96",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/REFERENCE_METADATA.json": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a"
+  },
+  "integer_interval_bits": 1536,
+  "selector_and_ready_counts": {
+    "fair_banks": 10248262,
+    "internal_slots": 1054,
+    "top_slots": 10,
+    "postprocessor": 1,
+    "READY_flags": 10249327
+  },
+  "alpha_interval_strict": "0.74068 < alpha < 0.74069",
+  "alpha_seven_joint_strict": "0.12229 < alpha^7 < 0.12231",
+  "A26_outward_intervals_contain_independent_integer_intervals": true,
+  "union_failure_lt_half": true,
+  "kappa_chebyshev_strict_interval": "0.93793197770933667 < \u03ba < 0.93793197770933668",
+  "gain_coefficient_simplified": "\u03ba p^7 F_h r_x^2 /72 at alpha=1/2",
+  "gain_coefficient_gt": "2^-66",
+  "g_gt_given_original_law": "2^-3128",
+  "g_times_s_gt_given_original_law": "2^-3158",
+  "native_only_normalized_bounds": {
+    "unit_generator": "2^-73",
+    "unit_scaled_chart_with_owner_lift": "2^-67",
+    "unit_physical_chart_with_owner_lift": "2^-37"
+  },
+  "scope": "Consumes ideal per-report READY identity effect and actual fresh/disjoint bindings. Does not independently prove original H1 moment law, marks, physical admission, alpha_hat field-independence, or full T10/Info.",
+  "physical_C_closed": false,
+  "GR_closed": false
+}

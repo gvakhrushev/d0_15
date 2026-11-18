@@ -1,0 +1,215 @@
+{
+  "status": "PARTIAL_H1_EXACT_OWNED_COMPONENTS",
+  "comparator": {
+    "interface_width": 23,
+    "port": 19,
+    "spin": [
+      20,
+      21
+    ],
+    "oldright": 22,
+    "terms": [
+      {
+        "selector": "00011",
+        "sign": 1,
+        "calls": [
+          0,
+          2
+        ],
+        "control_addresses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          9,
+          10
+        ],
+        "truth_table_size": 512
+      },
+      {
+        "selector": "00101",
+        "sign": 1,
+        "calls": [
+          1,
+          3
+        ],
+        "control_addresses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          11,
+          12
+        ],
+        "truth_table_size": 512
+      },
+      {
+        "selector": "00110",
+        "sign": -1,
+        "calls": [
+          0,
+          3
+        ],
+        "control_addresses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          11,
+          12
+        ],
+        "truth_table_size": 512
+      },
+      {
+        "selector": "01001",
+        "sign": -1,
+        "calls": [
+          1,
+          2
+        ],
+        "control_addresses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "truth_table_size": 512
+      },
+      {
+        "selector": "01010",
+        "sign": 1,
+        "calls": [
+          4,
+          6
+        ],
+        "control_addresses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          13,
+          14,
+          17,
+          18
+        ],
+        "truth_table_size": 512
+      },
+      {
+        "selector": "01100",
+        "sign": 1,
+        "calls": [
+          5,
+          3
+        ],
+        "control_addresses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          15,
+          16,
+          11,
+          12
+        ],
+        "truth_table_size": 512
+      },
+      {
+        "selector": "10001",
+        "sign": -1,
+        "calls": [
+          4,
+          3
+        ],
+        "control_addresses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          13,
+          14,
+          11,
+          12
+        ],
+        "truth_table_size": 512
+      },
+      {
+        "selector": "10010",
+        "sign": -1,
+        "calls": [
+          5,
+          6
+        ],
+        "control_addresses": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          15,
+          16,
+          17,
+          18
+        ],
+        "truth_table_size": 512
+      }
+    ],
+    "forward_calls": 18176,
+    "inverse_calls": 18176,
+    "counts": {
+      "G": 5888,
+      "CX": 4096,
+      "SourceI": 8192
+    },
+    "per_term_all_column_controls_checked": 512
+  },
+  "original_site_addresses": {
+    "L": 4,
+    "n": 20,
+    "actual_cost_words": 10946,
+    "sites": 256,
+    "min_count": 29,
+    "max_count": 78,
+    "all_box_cell_decisions_certified_by_rational_root_interval": true
+  },
+  "reference_only": {
+    "kappa_512": "0.937931977709336672459479090276249438640224285",
+    "Q_ref_zero_Xi": "0.129216464009724422695003110517705782272277695",
+    "noisy_q_ref_zero_Xi": "0.412469880568555161907002522844837073367884748",
+    "kappa_outward_interval": "[0.9379319777093366724594790902762494386402242848179862053617810635706157697803882942248177696149, 0.93793197770933667245947909027624943864022428481798620536178106357061576978038829422482188343522]",
+    "Q_ref_outward_interval": "[0.12921646400972442269500311051770578227227769486362855078734475466063930951323861652881032695199, 0.1292164640097244226950031105177057822722776948636285507873447546606393095132386165288108941057]",
+    "noisy_q_ref_outward_interval": "[0.41246988056855516190700252284483707336788474796687708783303499285087523987455773834771388540438, 0.41246988056855516190700252284483707336788474796687708783303499285087523987455773834771401979082]",
+    "is_full_interior_sampler_q": false
+  },
+  "not_emitted": [
+    "full geometric banks",
+    "SITE/SAM compiler",
+    "complete H1 mark-address/future-reader/seal ledger",
+    "full real READY factory",
+    "calibrated positive-s H1 q and source",
+    "full H1 word"
+  ],
+  "GR_closed": false,
+  "sha256": {
+    "SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8",
+    "SC6_INVERSE.jsonl": "f61960c480cc0e5f0afdd03b0466228249f8368509803d437a77f15f56551857",
+    "ORIGINAL_F_R_N20_L4.jsonl": "8c1d8dacc2257836e41f0f37c9222bf2a7d5a73a5092e67b34ed2e2658e19720",
+    "ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e"
+  }
+}

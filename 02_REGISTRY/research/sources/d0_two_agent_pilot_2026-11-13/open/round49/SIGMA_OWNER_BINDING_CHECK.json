@@ -1,0 +1,38 @@
+{
+  "status": "PASS_OWNER_SIGMA_MINUS_AND_REFERENCE_SIGN_BINDING",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/TARGETS_RU.md": "7b20b59f6ea3a79e6157fc59cb8c8c264b0533a211557b864d14f8fc07728f94",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/targets.py": "77ddc36c9b908903c8aafd8b900e2adff680777560cd18999d7b6dbae46af418",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round24/check_reference_frame.py": "1bfd6297220ef28dd9dbade924d4e66f78bb309cd632cbfb9cba65745fd79ede",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/REFERENCE_METADATA.json": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_ASSEMBLY_RU.md": "031c0fe593db8a1e71465741d17f67d4b9ee40111b69130c734d65f71cce725a"
+  },
+  "original_r_u": "p + p^2*y",
+  "A17_report_u": "p + sigma*p^2*Hq/(64*rho*Lambda)",
+  "epsilon": "1/(64*Lambda)=2^-1531",
+  "H1_original_y": "-epsilon*Hq/rho",
+  "sigma_value": -1,
+  "sigma_bit": 0,
+  "reference_metric": "(rho/36) diag(1,-1,-1,-1)",
+  "reference_amplitude": "h*6*sqrt(d)/2",
+  "Hq_axis_exact": [
+    "d*rho",
+    "-d*rho",
+    "-d*rho",
+    "-d*rho"
+  ],
+  "yplus_space_Hq": "-rho*d",
+  "yminus_time_Hq": "+rho*d",
+  "yplus": "epsilon*d",
+  "yminus": "-epsilon*d",
+  "f_0_xplus_xminus_zero_matter_Hq_zero": true,
+  "seven_distinct_sigma_RAW_zero_preparations": {
+    "G_port": 7,
+    "CX": 42,
+    "SourceI": 28
+  },
+  "assumptions": "A17 actual source moment/bank binding produces the audited Hq; all sigma wires receive true RAW v and have distinct valid routed layouts. The current bank g_q and all marks still require their own full H1 binding.",
+  "physical_birth_mark_admission_proved": false,
+  "GR_closed": false
+}

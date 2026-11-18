@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ALL_A20_B42_SELECT_CONTROLS_EXCLUDE_AUX",
+  "coframe_units": 294144,
+  "link_commands": 1781504,
+  "all_branch_patterns_equal_one": true,
+  "aux_excluded_from_every_explicit_select_control": true,
+  "SAM_and_branch_readonly_all_stages": true,
+  "address_readonly_only_in_SELECT": true,
+  "aux_rebit_comparator_oldRIGHT_and_Choi_input_distinct": true,
+  "no_full_word_expansion": true,
+  "source_sha256": "effa9f8898ea63ce18faa722c919cd068323fe2b079ee2a5e83db85667dc5bb7",
+  "GR_closed": false,
+  "provider_input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round20/coframe_native.py": "780c4c24321b7352263d9a516482cac7306b40f8215aeecbf7a1816672da26ab",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round20/COFRAME_ANGLE_LIBRARY.json": "7fca5863f6104a1647300c3219b3c3835d628daaa703e9b511c58461bd0c9c6d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round42/proper_link_native.py": "e8ccc0ecc55c720e2b6cfbc5ba31bbe878e577b5d5944f90ab3911ebb68ec33a",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round42/PROPER_LINK_ANGLE_LIBRARY.json.gz": "c5a4943298b419f72e7f098a4529e59c971d5877354e42e48ec9ec1b0905b307"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_INDEPENDENT_ADAPTER_PHASE_INTERVALS",
+  "certificate_sha256": "37eadab1153e9f6ed1af42ca8ca96bd1ddf9eee083b8d28a2a089867a6ba5ea4",
+  "independent_bits": 12288,
+  "original_bits": 8448,
+  "both_native_and_target_saved_bounds_contain_independent_enclosures": true,
+  "both_L1_errors_le": "2^-4096",
+  "ideal_failure_lt": "2^-6561",
+  "float_used": false,
+  "GR_closed": false
+}

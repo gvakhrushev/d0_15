@@ -1,0 +1,23 @@
+{
+  "status": "PASS_INDEPENDENT_GLOBAL_SCHEDULE_INVENTORY_AND_INPUT_BOUND",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/FULL_CHOI_BANK_PLAN.json": "a7a2e7acf009a7aa2e472c9d0e74b78eff9b74f708ff9ab37ee98652d7001425",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round24/FULL_CAR_SOURCE_PLAN.json": "b494b37f2701b940547e4dc48ec1568e55748d5dd1e3bbec54b71546ff4dbc8b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round45/SITE_NATIVE_PLAN.json": "a951ac051bb177556c37929083c1967ac5f4eb69a94120b345bbc09b8dae16fd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_COMPILATION.json": "303ecd70a75c4a0141098f66533d4f3c57d3d8816d42685d84dc5f016eac5e26"
+  },
+  "source_pins_in_global_plan_unchanged": true,
+  "stages": 1389,
+  "source_slots": 1372,
+  "all_AXES_components_A_Ainverse_W_exact": true,
+  "W_call_count_bits": 4188,
+  "all_error_fractions_match": true,
+  "eta_canonical_RAW_input_lt": "2^-3232",
+  "compressed_reflection_error_lt": "2^-3231",
+  "scope": "Exact arithmetic against pinned provider plans; it is not an independent replay of all component angle certificates or a proof that physical original T2 target is this ideal word.",
+  "full_word_or_giant_repeats_executed": false,
+  "physical_admission_marks_or_C_proved": false,
+  "GR_closed": false
+}

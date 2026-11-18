@@ -1,0 +1,64 @@
+{
+  "format": "d0-two-agent-pilot-open-round6/1",
+  "start_utc": "2026-11-13T13:29:33Z",
+  "end_utc": "2026-11-13T13:49:49.036324Z",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "checks": [
+    {
+      "command": "python3 -B -W error check_backward.py",
+      "result": "PASS 29 exact native, protected-address, conditional-control and mathematical controls"
+    },
+    {
+      "command": "python3 -B -O -W error check_backward.py",
+      "result": "PASS byte-identical output"
+    },
+    {
+      "method": "H1 T6/T10 supported SAM backward and 7fq LC10 exact-label recovery audit",
+      "result": "actual SAM finite comparison class; conditional bank recovery justified at literal real centre subject to original live reader transport"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round3/ROUND3_RESULT_RU.md",
+      "sha256": "d740efca1045bd82283e8d7b75459ae543797dd10706a73b252d55fe8178a652"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round2/WRITER_SUBSTITUTION_RU.md",
+      "sha256": "e5b5428b4a66ab38e784aaa26e754f0233298fad2e9cebeedc1583635cfb672f"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round2/STATIONARY_BACKWARD_RU.md",
+      "sha256": "37a2063b0afa63ab1d57affed8c459f544aa051f5fdf0c8f07c0ba5d40a83bba"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round2/SAM_BACKWARD_RU.md",
+      "sha256": "0592b5c1996faca78bcec57d40ada65f7af19fdb38156f8a4d7d7367265ed825"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6/ROUND6_RESULT_RU.md",
+      "sha256": "a4d5b0302f9628814ae817041ad8b0a6b9ee56ae5f0ab699eb526d3a5eed463d"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6/check_backward.py",
+      "sha256": "995b23a87ab1c3ed96f469bb98a9654173207e690c33ddc5f0553be5d9c0ee00"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6/CHECK_RESULT.json",
+      "sha256": "8fe3cc9964329de9f45c4dcc8ae725cbb340ca9bd0828f03f8950d411aae0bf9"
+    }
+  ],
+  "scope": {
+    "full_geometric_H1_word_executed": false,
+    "explicit_real_centre_conditional_compiler_word_emitted": false,
+    "marked_J_fibre_comparison_conditional_on_same_actual_cut_layout": true,
+    "full_joint_physical_stationarity_proved": false,
+    "physical_cost_info_binding_proved": false,
+    "GR_closed": false
+  }
+}

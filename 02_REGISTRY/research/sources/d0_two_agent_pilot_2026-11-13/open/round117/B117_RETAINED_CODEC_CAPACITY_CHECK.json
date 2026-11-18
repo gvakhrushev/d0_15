@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "fixture_M": 3,
+  "fixture_bank_dimension": 2,
+  "fixture_rank_full_retained_cq": 16,
+  "strict_effects_and_all_records_positive": true,
+  "correlated_bank_can_hold_labels_countercontrol": true,
+  "capacity_bound": "2^b d_side D_bank >= 2^M rank(rho)",
+  "M8_side9_min_bits": 5,
+  "not_a_physical_cost_or_Info_bound": true,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md": "843c71731fdfc6ea4291996793ed304ffc90372e2ccf9c5e3ee4bf3421c8c78b"
+  }
+}

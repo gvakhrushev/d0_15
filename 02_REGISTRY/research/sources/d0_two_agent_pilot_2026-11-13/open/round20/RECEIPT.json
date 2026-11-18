@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SCOPED_MARK_AND_PRIVATE_COPY",
+  "created_utc": "2026-11-13T17:54:52.174464+00:00",
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round20/ACTUAL_MARKS_AND_RECOVERY_DOMAIN_RU.md": "0ad306a048c78bf543c5617cf1dad90d5302d20d52bda9ff94900b08159d416f",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round20/check_mark_transport.py": "0860dac6924284551a510afc11178370ab2636bffdf1d0bec77e14b329adf226",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round20/CHECK_RESULT.json": "0ce340c88216d27e6759bca32fb47201692f01ffec5cb8d4f91d7cbab7669bde",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/h1_admission_domain.txt": "1d43118b741c4b757ce9c7d547f635d07c6b34b0eaa50f233f83cc570c314452",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/h1_literal_word.txt": "d267d33cf9f27b050a40115978a5fff7eefa383546f4677d6fd3c3b4047f181e",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/PHASE_COMPILER.md": "f46c18b831bd5741b56950a780b97ce917e12611b45f54ccd715548c8ef47af1",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+  },
+  "private_born_copy_stages": 25,
+  "short_exact_suffix_inverse_calls": 24,
+  "full_H1_address_catalogue_and_nr_recovery": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

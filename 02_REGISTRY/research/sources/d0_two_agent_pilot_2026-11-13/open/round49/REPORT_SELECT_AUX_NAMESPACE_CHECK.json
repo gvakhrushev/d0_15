@@ -1,0 +1,75 @@
+{
+  "status": "PASS_FINITE_A15_EVENT_AND_A16_IR_AUX_NAMESPACE_CHECK",
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/source_dispatcher.py": "ea2f17ee32da5899ab46a04b119fa5751639b8571f94aa1d753a02cd4e376d99",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round15/SOURCE_DISPATCH_TABLES.json": "0a4dbf042dbc30d67260fac22b1e72ba94278bf2028b9df52b3936216be6bbe6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/report_assembly.py": "d2f164aa81b45c68e2d64352b53fcf5dd7b264cf008478a9458eaa0d06fbec54",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round17/GLOBAL_REPORT_PLAN.json": "a7cc6639a5f5200de7c5244bfcaeaa27433e1e6c5458d16d9fa384e4e4401c80",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round44/B44_CHECKPOINT.json": "80573d36b80ec05cb89a664da9090217f113b3332dcf6d51f62b8dd0c5086f6f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round44/A21_NAMESPACE_CONTROL_CHECK.json": "daacf261eed77d31479af3164a43ecdc0f63254a3f471d12ad76c42b900a4b37"
+  },
+  "event_mapping_by_root": {
+    "H_f_before_inverse_PF": {
+      "event_counts": {
+        "selector": 3192,
+        "first_success": 456,
+        "root_init": 1,
+        "palette": 455,
+        "transition": 455,
+        "end": 1
+      },
+      "event_map_wire_entries_checked": 9643309,
+      "controller_end_allocated": 9092041,
+      "bound_A17_walk_logical_wires": 9093982
+    },
+    "H_q_before_inverse_PF": {
+      "event_counts": {
+        "kind_init": 1,
+        "selector": 133,
+        "first_success": 19,
+        "root_init": 1,
+        "palette": 18,
+        "transition": 18,
+        "end": 1
+      },
+      "event_map_wire_entries_checked": 390848,
+      "controller_end_allocated": 378128,
+      "bound_A17_walk_logical_wires": 378269
+    }
+  },
+  "A16_static_instruction_trees": {
+    "H_f_before_inverse_PF": {
+      "local_width": 2006,
+      "syntactic_logical_leaves": {
+        "CCX": 20174,
+        "Z": 83,
+        "CX": 44484,
+        "X": 656,
+        "CZ": 82
+      },
+      "copy_calls": 82
+    },
+    "H_q_before_inverse_PF": {
+      "local_width": 206,
+      "syntactic_logical_leaves": {
+        "CCX": 746,
+        "Z": 5,
+        "CX": 1688,
+        "X": 32,
+        "CZ": 4
+      },
+      "copy_calls": 4
+    }
+  },
+  "A17_postprocessor_mapping_all_roles_inside_logical_namespace": true,
+  "global_report_and_ready_distinct_from_aux": true,
+  "A21_existing_pinned_coframe_units": 294144,
+  "A21_existing_pinned_link_commands": 1781504,
+  "proof_scope": "All finite event maps and all A16 static instruction IR leaves were checked; huge event_word, native leaves and whole H1 run were not enumerated. Relies on A14 macro structure and source provider checks for semantic J commutation.",
+  "sigma_source_and_binding_proved": false,
+  "A25_or_whole_H1_shared_layout_proved": false,
+  "marks_and_birth_admission_proved": false,
+  "GR_closed": false
+}

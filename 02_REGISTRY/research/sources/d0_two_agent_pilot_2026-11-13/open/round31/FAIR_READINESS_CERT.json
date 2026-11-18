@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FAIR_COMPONENT_READINESS_AND_ERROR_BUDGET",
+  "A12_input_sha256": "a22ba038687274ec787b1ea8cde9e90cbec4d69cb5f301bda3f266222e1e2f9c",
+  "single_attempt_success": "2p^3",
+  "single_attempt_failure": "1-2p^3=3-4p=5-2sqrt(5)",
+  "ideal_cap28_ready": "1-(1-2p^3)^28",
+  "ideal_cap28_ready_interval": "[0.9999999829933693538986667361813897120222189786158178835771580946665574294526310860342, 0.9999999829933693538986667361813897120222189786158178835771580946665574294526310870884]",
+  "ideal_cap28_ready_decimal": "0.99999998299336935389866673618138971",
+  "fixed_28_independent_attempts": true,
+  "ideal_single_report_M_fair_banks": 10248262,
+  "ideal_all_fair_ready": "[1-(1-2p^3)^28]^10248262",
+  "ideal_all_fair_ready_gt": "3/4 by union bound; only this fair-bank component",
+  "A14_assumed_per_X_or_CCX_error": "<=2^-4096, as certified in A14/B30",
+  "single_bank_all_column_error": "<=59*2^-4096 <2^-4090",
+  "M_banks_per_report_error": "<=59*M*2^-4096 <2^-4066",
+  "seven_reports_error": "<=59*7*M*2^-4096 <2^-4064",
+  "actual_ready_probability_lower": "q_28-2*59*2^-4096, on the stated canonical births and exact remaining inputs",
+  "actual_conditional_joint_state_trace_distance_upper": "2*59*2^-4096/sqrt(q_28) <3*59*2^-4096",
+  "exact_output_factorization": "ideal ready projection only; physical native router has residual bounded above, not exact factorization",
+  "full_report_alpha_or_physical_C_proved": false,
+  "GR_closed": false
+}

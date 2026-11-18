@@ -1,0 +1,43 @@
+{
+  "status": "PASS_INDEPENDENT_PHYSICAL_APPEND_ORDER_ADAPTER",
+  "cases": [
+    {
+      "initial_raw_bits": 3,
+      "sample_count": 3710,
+      "last_CX": [
+        2693,
+        3
+      ]
+    },
+    {
+      "initial_raw_bits": 4,
+      "sample_count": 3710,
+      "last_CX": [
+        2694,
+        4
+      ]
+    },
+    {
+      "initial_raw_bits": 17,
+      "sample_count": 3710,
+      "last_CX": [
+        2707,
+        17
+      ]
+    },
+    {
+      "initial_raw_bits": 103,
+      "sample_count": 3710,
+      "last_CX": [
+        2793,
+        103
+      ]
+    }
+  ],
+  "affine_intervals_prove_full_bijection": true,
+  "no_swap_price_or_old_cut_equivalence_inferred": true,
+  "physical_admission_proved": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round28/physical_wire_adapter.py": "e8f93e23e207ff2c78be06670074e372e74ec0fa72d64a4337accb6401b9b555"
+  }
+}

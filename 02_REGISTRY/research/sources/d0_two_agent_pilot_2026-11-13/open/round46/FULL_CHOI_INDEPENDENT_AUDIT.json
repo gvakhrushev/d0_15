@@ -1,0 +1,22 @@
+{
+  "status": "PASS_INDEPENDENT_A22_FULL_RAW_CHOI_ASSEMBLY",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/full_choi_bank.py": "f63c9f456f9aca091659688de8641cdbcb3fb98ee4a40cbfa211d3c498fcda40",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/FULL_CHOI_BANK_PLAN.json": "a7a2e7acf009a7aa2e472c9d0e74b78eff9b74f708ff9ab37ee98652d7001425",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/check_full_choi_bank.py": "574994b3dd33575d900eca10eb0983a221fc9378ecf4365ed26d64287088646c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round22/FULL_CHOI_BANK_CHECK.json": "11ac486bba4c5dad63fedd08f52c21ab544fd1d3122c522c2007acfcb2a2f0c5"
+  },
+  "all_7_bank_all_stage_forward_inverse_costs_match": true,
+  "raw_DATA22_and_private24_separately_counted": true,
+  "private_initial_zero_contract_not_full_private": true,
+  "exact_joint_vs_DATA_only_counterexample": true,
+  "exact_raw_g_inverse_birth_identity": true,
+  "separate_SITE_and_external_collision_guard": true,
+  "stage_orders_and_literal_depths_0_to_4_checked": true,
+  "eta_U_lt": "2^-3230",
+  "bank_error_lt": "2^-3227",
+  "1260_banks_error_lt": "2^-3216",
+  "full_R46_word_enumerated": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

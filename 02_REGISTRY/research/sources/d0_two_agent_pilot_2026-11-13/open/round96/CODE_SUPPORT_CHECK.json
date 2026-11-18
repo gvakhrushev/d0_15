@@ -1,0 +1,17 @@
+{
+  "status": "PASS_COMPOSITIONAL_CODE_CONTROL_ONLY_SUPPORT",
+  "CODE_bits": 5376,
+  "all_source_slot_layouts_checked": 1568,
+  "source_slot_counts": {
+    "Choi": 1440,
+    "CAR": 128
+  },
+  "coframe_bank_family_width_classes_checked": 4214,
+  "all_material_rows_and_rotations_checked": true,
+  "proper_link_all_six_mode_pair_grammar_checked": true,
+  "REPORT_private_range_SC6_SITE_and_resources_disjoint_from_CODE": true,
+  "original_helper_and_compiler_targets_disjoint_from_CODE": true,
+  "full_word_enumerated": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

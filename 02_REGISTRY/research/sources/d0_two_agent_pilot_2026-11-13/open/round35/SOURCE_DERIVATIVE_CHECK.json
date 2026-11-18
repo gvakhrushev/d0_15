@@ -1,0 +1,10 @@
+{
+  "status": "PASS_TARGET_DERIVATIVE_NORMALIZATION_DIAGNOSTICS",
+  "choi_identity": "||D O||\u00b2=2/(1+c) * [sum_a ||D J_a||_F\u00b2/(32 A)] for the actual d=32; constant c",
+  "toy_full_matrix_norm_difference": 1.1102230246251565e-16,
+  "CAR_bank_site_derivative_cases": 1792,
+  "max_CAR_derivative_norm_difference": 2.220446049250313e-16,
+  "exact_reason": "u and Du orthogonal; rank-two symmetric derivative has eigenvalues \u00b12||Du||; right fixed reflections and RAW G^-\u2297n are isometries",
+  "scope": "diagnostic checks; no derivative bound for a discretely selected native compiler",
+  "GR_closed": false
+}

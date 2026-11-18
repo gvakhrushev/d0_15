@@ -1,0 +1,30 @@
+{
+  "status": "PASS_SC6_ORIGINAL_AND_RAW_INVERSE_ARE_DISTINCT_WORDS",
+  "forward_calls": 18176,
+  "forward_counts": {
+    "G": 5888,
+    "CX": 4096,
+    "SourceI": 8192
+  },
+  "owner_inverse_calls": 18176,
+  "owner_inverse_counts": {
+    "CX": 4096,
+    "G": 5888,
+    "SourceI": 8192
+  },
+  "raw_letterwise_inverse_calls": 58112,
+  "raw_letterwise_inverse_counts": {
+    "CX": 4096,
+    "SourceI": 48128,
+    "G": 5888
+  },
+  "same_primitive_sequence": false,
+  "interpretation": "The owner inverse uses paid regrouped rotations and remains a concrete exact inverse under the source-I algebra; it is not inverse_word expanded leaf by leaf. Choose the history and marks required by the actual contract before pricing; do not silently replace one with the other.",
+  "inputs_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/SC6_FORWARD.jsonl": "2153acb33987b2580f84431a6dab483edc3d18dbd9ee1877855d05a663bafde8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/SC6_INVERSE.jsonl": "f61960c480cc0e5f0afdd03b0466228249f8368509803d437a77f15f56551857",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "actual_global_H1_history_binding_proved": false,
+  "GR_closed": false
+}

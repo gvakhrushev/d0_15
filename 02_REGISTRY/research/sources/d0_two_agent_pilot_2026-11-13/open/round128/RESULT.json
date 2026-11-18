@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc",
+    "04_CERTIFICATES/order_memory_control_verify.py": "bb72fe40326dc2d65d55f4f6d73564b7faef8f247774bf51771e3110f04e0c1a",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/check_book03_identity_pair.py": "78f94decaf1ed6c54201e1e83032b9311ac708c077b79065398422c1141b66f9",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round122/check_preparer_crossover.py": "a50cf30fe862d406d4d87f9a008424d51381214da6e24a0154c06cd1ad227963"
+  },
+  "words": {
+    "clock_labels": 16,
+    "contradictory_ticks": [
+      1,
+      17
+    ],
+    "conflicting_operations": [
+      "G",
+      "CX"
+    ],
+    "both_full_endpoints": "I_16",
+    "target_zero_after_first_tick_on_golden_input": [
+      "p",
+      "p^6"
+    ]
+  },
+  "preparation": {
+    "preparer_pairing": "4*d^2*Dr/(A^2+4*d^2*r)",
+    "reference_trace_norm": "8*d^2*r*(1-r)/(A^2+4*d^2*r)",
+    "trace_norm_bound_is_sharp": true
+  },
+  "absolute_book_preparation_response_determined": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

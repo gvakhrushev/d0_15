@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_A13_STRUCTURE_AND_BOOLEAN_FIXTURES",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/build_selector_circuits.py": "cb878616dd7e0359d6013c6a379bfe1a9c48d46795c1ee326661dceb28832fd9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/check_selector_circuits.py": "3f5e5784b7a0281b7a5810a2f096b76825b6b9f039226aa3fd6bd49f0a509adb",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/INTERNAL_SELECTOR_PALETTE.json": "5c86d6f0fe33c4b41172e05ff2fbaf7a2590e34078c41b6cc3d9c4bfd35761fd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/TOP_SOURCE_SELECTOR_PALETTE.json": "29f6cde1056d23cd3f6bdb1b9b2c49ae5eec92dba6fb8cd866354ae691e335ac",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round12/TEN_SIGN_REPORT_PALETTE.json": "b5612d1fb9109e166a5385076cdd8dbfb3e2946061f612724c367bb0ee2c26c6"
+  },
+  "negative_literal_truth_table_cases": 32,
+  "equality_cases": 2730,
+  "comparator_cases": 2852,
+  "actual_rows_independently_checked": 5170,
+  "prefix_codes_independently_rebuilt": 67,
+  "zero_width_labels_seen": 198,
+  "repeated_nonzero_boundaries_seen": 0,
+  "true_width_row_cases": 72,
+  "full_small_selector_cases": 512,
+  "cap7_first_success_cases": 1024,
+  "invalid_palette_and_dirty_output_tested": true,
+  "hostile_repeated_threshold_detected": true,
+  "hostile_all_success_xor_detected": true,
+  "circuit_summaries": [
+    {
+      "file": "INTERNAL_SELECTOR_CIRCUIT.json",
+      "actual_rows": 50,
+      "invalid_palette_codes": 7,
+      "logical_gate_counts": {
+        "CCX": 1089479,
+        "CX": 1089222,
+        "X": 478828
+      }
+    },
+    {
+      "file": "TOP_SOURCE_SELECTOR_CIRCUIT.json",
+      "actual_rows": 1024,
+      "invalid_palette_codes": 0,
+      "logical_gate_counts": {
+        "CCX": 19454976,
+        "CX": 19440642,
+        "X": 3478720
+      }
+    },
+    {
+      "file": "TEN_SIGN_REPORT_CIRCUIT.json",
+      "actual_rows": 4096,
+      "invalid_palette_codes": 0,
+      "logical_gate_counts": {
+        "CCX": 3398086,
+        "CX": 3323278,
+        "X": 691540
+      }
+    }
+  ],
+  "physical_native_word_executed": false,
+  "full_READY_or_physical_C_proved": false,
+  "GR_closed": false
+}

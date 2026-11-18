@@ -1,0 +1,20 @@
+{
+  "status": "PASS_INDEPENDENT_NATIVE_PREFIX_AUDIT",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/choi_prefix.py": "b1ebeb647604201b8e653f7f2320fbd2afc4357164623a95547d115bd0b449e9",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/CHOI_PREFIX_CERTIFICATE.json": "083685c2651d9dd305abc8401309d6715ffcc08192a365014c75f22cfd2be2f5",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/CHOI_PREFIX_PLAN.json": "3eaaf722dbbd0d772a0e453b5aa3028ae15682b8d9d7ced11bf81dc996a92d8d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round19/check_choi_prefix.py": "433e3ef7da804ba13c46dfaa7bda9077459f4ec41dd8230a2371f9bb21066d72"
+  },
+  "actual_native_macro_trees_matched": 44,
+  "walsh_all_assignments_predicate_widths_0_to_3": true,
+  "strict_branch0_identity_and_branch1_equals_actual_uncontrolled_all_small_columns": 704,
+  "literal_inverse_all_small_columns": 704,
+  "real_SourceI_all_port_spin_columns": 8,
+  "actual_forward_and_literal_inverse_inventories_match_plan": true,
+  "actual_full_prefix_giant_word_expanded": false,
+  "native_power_correctness_from_interval_check": true,
+  "full_Omega_SELECT_present": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

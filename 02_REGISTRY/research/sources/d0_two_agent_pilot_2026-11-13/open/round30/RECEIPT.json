@@ -1,0 +1,56 @@
+{
+  "status": "LOCAL_B30_REVIEW_ONLY",
+  "input_sha256": {
+    "owner_PHASE_COMPILER": "f46c18b831bd5741b56950a780b97ce917e12611b45f54ccd715548c8ef47af1",
+    "owner_native_phase": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d",
+    "owner_native_execution": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "B28_stream": "6d92d3705274efccaa70869f577db359e8fd9eae5c124d521048ee1c0dbdb876",
+    "B29_budget": "195969b01862ae091a8c45f6f236a2f0e24496b43dff5f016d162fa0e1c41b96",
+    "A14_proof": "b107aefafcdce4f4d2380082398189c192d882966c273d54fe9ed02b8ce8267e",
+    "A14_extra_checker": "6a33e486d2cf214476834925dc7cbfe3ac0b00e18da3e307f68267f39484fbcc",
+    "A14_extra_result": "7cbe9d2a38fa6b6343a74c2ecf5df4027360d122e93b4740e0f91c7d06cb34fc"
+  },
+  "isolated_A14_input_sha256": {
+    "round13/reversible_selectors.py": "c1c045da56092c48bbe5009a56dc2168d261a66826122aa1e3acea00389db5ae",
+    "round13/INTERNAL_SELECTOR_CIRCUIT.json": "fe56fa161517b15f3fdd25c39eaccff8c7667ed9e1519903d1357e5c2139bb97",
+    "round13/TOP_SOURCE_SELECTOR_CIRCUIT.json": "15dcb3ab8f14c237951f6f5482e3ca9a2bad622d369e49d68d212aacc0225ac0",
+    "round13/TEN_SIGN_REPORT_CIRCUIT.json": "43671549b10c2b958b4d8e7a70624d86e4e5262e3d7769534bb70a964af44b04",
+    "round13/FIRST_SUCCESS_CIRCUITS.json": "c35ba266e332e7b180d88d455e2535d134e2a8472c489ddd08aa3e326aaed0f5",
+    "round13/CIRCUIT_COMPILATION.json": "dd33d88880540e7e1268137704159b5bc99f0fed66b2740cb9d61c2c1a8e9d56",
+    "round14/native_boolean.py": "13435e4a6f4cf6b7c5d1a62e110e79725a37cda5f43bb7dc56b8bc4cfaae13b6",
+    "round14/certify_boolean_angle.py": "a705e476a2b296f2578ea7afa33a70d9691d6860e08c00b4c7d692ad1f570c41",
+    "round14/check_native_boolean.py": "4d3a358dc29b43222b5d1d4253e935c1dd5da224ead4b91de001bc8a3e5a2060",
+    "round14/lower_native_selectors.py": "ea23b376e7511e59e038b1002f5c3dde18129e0d666fbe1811fc3d00974b7962",
+    "round14/NATIVE_BOOLEAN_ANGLE.json": "61e05fd96776f696f12fb8fa9e3bd95acf95f56ebe08ca55c904779c08678236",
+    "round14/NATIVE_BOOLEAN_CHECK.json": "0d81d2ba04d1d2374c9decae2e333f913f77e03e4366d86c4151d76f47506b3f",
+    "round14/NATIVE_BOOLEAN_LIBRARY.json": "dfef8593fb4b0e09b23c3b2ee4807332523615389ecb392127a39b5b599e5d08",
+    "round14/NATIVE_SELECTOR_LOWERING.json": "ab64ae9e5c1395c02b71b8ada4b33e7275aaee1dd68e16827845f7cff075d7c1",
+    "round14/NATIVE_BOOLEAN_LOWERING_RU.md": "b107aefafcdce4f4d2380082398189c192d882966c273d54fe9ed02b8ce8267e",
+    "d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "d0_native_readiness_amplification_2026-10-24/native_phase.py": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d"
+  },
+  "output_sha256": {
+    "BOOLEAN_MATH_CHECK.json": "a61113ac16a23b116b91bd9639e3eb91bf3cee804a49dd53fd217ab8d28e4097",
+    "INDEPENDENT_ANGLE_CHECK.json": "18201c13e7921cc3f378336680a816bf3db3e6a96fc3a9c7ca1ba83aa9bbbd54",
+    "ISOLATED_LOWERING_REPLAY.json": "344bce90a80e7ad815f252316f6c9b82485a0932e1223faf85accb4dc1e19cf9",
+    "ISOLATED_REPLAY.json": "0e71b0640db0af8382f375bb325f6abbe2dbfe1d923285ba9c8a0e5472bf102c",
+    "LOWERING_REVIEW.json": "32f8d7de1c0717bc9d970e9f2e66ec7d0571d3f42753639df400f2f94b1eade1",
+    "REVIEW_A14_RU.md": "4e75a96c40c1d369e1973f4d148bb9ba215236589e03c23501aee025343f4af1",
+    "check_angle_independent.py": "09a890392e1454999a2a5c7c25a538bba8b040e460a5db85c8fc58b2eeadc999",
+    "check_boolean_math.py": "97681e0a8c030ed2e22bec81e434befe578b2f55ed86316e151068a19cbc0124",
+    "check_lowering_independent.py": "7fd7f1c1e14f79a39bf41506f3ca7ccb77b671ccb49cb91a31d6497b59d7ab31",
+    "replay_a14_isolated.py": "6d2344c6fe1c797a8a990649b00fa950f78844b461f7709f3e564aba4b6d2d62",
+    "replay_native_lowering.py": "30a86e504c4b46e2475bc07e41d8cb77d4864d9c4dc85139fa61790d78239821"
+  },
+  "checks": [
+    "independent integer-root MSB outward power at given k",
+    "independent Walsh algebra and 1536 small numeric columns",
+    "rootlike isolated exact 1536 columns/96 inverse and exact given-k owner certificate",
+    "independent raw inverse tree, native inventories and five A13 lowering schemas",
+    "isolated supplementary 350 bindings"
+  ],
+  "critical_finding": false,
+  "full_native_READY_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

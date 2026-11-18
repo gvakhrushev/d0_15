@@ -1,0 +1,8 @@
+{
+  "status": "PASS_SCOPED_LITERAL_ARCHIVE_RETURN",
+  "stdout": "PASS: 512 Boolean archive inputs, exact born amplitudes p^4,p^6, two exact NPS fixtures.\nPASS: alternate r0,t1 branch has coefficient p^6; theta derivative at 0 is p^6 X0.\nPASS: coherent versus dephased cross term changes sign between Q=1/4 and Q=1/2.\nPASS: matched NPS marked-range derivative negative on 101 collar diagnostics.\nPASS: 174 added stages, stage-dimension increment 8547d, final dimension 64d.\nScope: reader and finite algebra fixture; no full H.1 writer or stopped-clock replay.\n",
+  "actual_H1_full_writer_replayed": false,
+  "external_measurement_dilation_specified": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}

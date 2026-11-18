@@ -1,0 +1,54 @@
+{
+  "format": "d0-two-agent-pilot-open-round4/1",
+  "start_utc": "2026-11-13T13:07:36Z",
+  "end_utc": "2026-11-13T13:11:36.849048Z",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "checks": [
+    {
+      "command": "python3 -B -W error check_marked_application.py",
+      "result": "PASS 25 numeric and symbolic controls with prior exact coefficients"
+    },
+    {
+      "command": "python3 -B -O -W error check_marked_application.py",
+      "result": "PASS byte-identical output"
+    },
+    {
+      "method": "independent analytic audit M3, M4, M6 and finite compressed-root bound O4",
+      "result": "valid at fixed support/layout/reference with stated assumptions"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round2/MARKED_SOURCE_RU.md",
+      "sha256": "5f04cc85e46015321593cdc5908365147d9e886c56cbcd0ab6016ee84a5ddebd"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round3/ROUND3_RESULT_RU.md",
+      "sha256": "d740efca1045bd82283e8d7b75459ae543797dd10706a73b252d55fe8178a652"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round3/RECEIPT.json",
+      "sha256": "fb2f787aac78b57bd1eebac03b4b0a357dbf4eff4fcc421ea5c46e8336b68956"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round4/ROUND4_RESULT_RU.md",
+      "sha256": "9076c68c5756e2b4c372c19b2c7a5a3535b5f0ea8acb15ad7d7f9a69f61d68fc"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round4/check_marked_application.py",
+      "sha256": "c3e6bc677cd2ce0804036f380090eb9263a40113dc638de210e11cd26ad94dc9"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round4/CHECK_RESULT.json",
+      "sha256": "74b9a35016d82d6a2ecd154644d8222b2344d7acee822b99df365acb1a7f4eb0"
+    }
+  ],
+  "scope": {
+    "whole_h1_upstream_evaluated": false,
+    "common_polar_target_for_original_words_proved": false,
+    "physical_cost_info_binding_proved": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "literal_native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "exact_nonscalar_old_state": {
+    "rank": 3,
+    "normalized_remaining_old_input": "omega/Tr omega"
+  },
+  "real_stiefel_derivative_covers_all_symmetric_reverse_effect_jets": true,
+  "native_old_relative_phase_and_coherent_terminal_deficit": true,
+  "book00_independence_on_two_actual_loader_labels": true,
+  "old_truthful_report_alone_forces_no_equality_of_reverse_weights": true,
+  "book03_full_work_or_info_selected": false,
+  "GR_closed": false
+}

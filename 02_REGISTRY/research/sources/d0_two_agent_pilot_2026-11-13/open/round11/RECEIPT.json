@@ -1,0 +1,21 @@
+{
+  "status": "PASS_EXACT_AND_DIRECT_REPLAY",
+  "created_utc": "2026-11-13T16:04:10.889346+00:00",
+  "own_checks": 12,
+  "direct_replay_matches": true,
+  "normal_optimized_warnings_as_errors_match": true,
+  "sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round11/ROUND11_REVIEW_AND_PAID_INVERSE_RU.md": "1f21f630817a4fc3bdecc0da900ecfcfecf41f9ca9a6de718ec9039359a066ba",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round11/CHECK_RESULT.json": "98e4f76fb4bfc98ac5aa25d3702222903a7819f8fccf80ae934811ae6c4e5515",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round11/check_review_transfer.py": "727ec17822fc8aa3b33b823897bc46684518d4118627844367f5521c1cbefe8e",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round11/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/inputs/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round6/HIGH_REPORT_SOURCE_RU.md": "c5a3cb5940726b27b06d4c05f745fb60f15e8189eef3cc3eb36c91c753fb8a29",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round6/check_high_report_source.py": "047aa4bf3320c0e8bd97780cc417646631dd1cb80ebc4ae7ffe7b0cc3006aeab",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round6/CHECK_RESULT.json": "88d25984d7408241f0e6803b797d70114d54ce6f42cd685da872eee9d554fd7d"
+  },
+  "new_task_physical_admission_proved": false,
+  "full_clock_price_transfer_proved": false,
+  "physical_C_discharged": false,
+  "GR_closed": false
+}

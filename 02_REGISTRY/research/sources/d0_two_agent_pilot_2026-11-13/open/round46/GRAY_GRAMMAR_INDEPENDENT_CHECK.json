@@ -1,0 +1,17 @@
+{
+  "status": "PASS_B46_INDEPENDENT_GRAY_AND_NATIVE_GRAMMAR",
+  "exact_all_columns_and_inverses": 1920,
+  "raw_depth_resource_checks": 32,
+  "gray_bijection_K1_to_12": true,
+  "all_Walsh_characters_through_K8": true,
+  "actual_K8_K46_depth_samples": 48,
+  "actual_forward_and_literal_inverse_counts_match": true,
+  "nonclean_aux_port_spin_arbitrary": true,
+  "protected_wire_collision_rejected": true,
+  "clean_wires_required": 0,
+  "exact_involution_claimed": false,
+  "full_K46_word_executed": false,
+  "source_sha256": "1acdb6fef2e8aeb301f560f4720719e8308ea7d58300d6de3fcba3d3891cf115",
+  "certificate_sha256": "b1590b22083345bee3f676b209e51d249f6b054a05bda57ed357c4dbd6054759",
+  "GR_closed": false
+}

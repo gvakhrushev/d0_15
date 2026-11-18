@@ -1,0 +1,30 @@
+{
+  "status": "PASS_ALL_ORIGINAL_A30_SOURCE_MARK_DESCRIPTORS",
+  "independent_original_binding_equal_to_B25_copy": true,
+  "tested_descriptor_counts": {
+    "Choi": 139264,
+    "CAR": 2560
+  },
+  "tested_total": 141824,
+  "selected_slots": {
+    "f_Choi": 392,
+    "q_Choi": 1340,
+    "q_CAR": 1342
+  },
+  "all_1372_source_completion_and_common_RAW_checkpoints_checked": true,
+  "strict_mark_bounds": [
+    "2^-3215",
+    "2^-3214",
+    "2^-3223"
+  ],
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/source_mark_registry.py": "ab4e707d4398e03aa901109989ec2a44a543a4a2784a2033cdce98c22958859b",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/SOURCE_RAW_MARK_REGISTRY.json": "3c17d2d6d3eb65381dbca14c55f440315646e5ff91fc3ad1fc516777838cbb79",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/SOURCE_LEAF_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77"
+  },
+  "physical_readers_or_all_internal_marks_proved": false,
+  "GR_closed": false
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS_A31_FULL_BINDING_BIAS_AND_NORM",
+  "coordinate_rows": 2688,
+  "link_blocks": 256,
+  "link_matrix_entries": 4096,
+  "raw_chart_counts": {
+    "coframe": 1024,
+    "proper_link": 1536,
+    "matter": 128
+  },
+  "mean_centre_bias_lt": "2^-48",
+  "actual_J_defect_lt": "2^-23",
+  "raw_scaled_and_physical_lift_bounds": [
+    "55",
+    "55/s"
+  ],
+  "e_theta_Psi_Frobenius_lift_bound": "(1100/3)/s",
+  "native_only_error_under_owner_Gamma_s": [
+    "2^-37",
+    "2^-34"
+  ],
+  "Neumann_truncation_examples": 5,
+  "bounds_conditional_on_B21_A30_and_gs": "2^-3158",
+  "actual_J_reader_and_full_price_not_evaluated": true,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/MEAN_GEOMETRY_LIFT_PLAN.json": "581565f4d426c60740d6bae39fe4880d201fcc35a5046ff6c8f00cab381f0a48",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round31/mean_geometry_lift.py": "1f5ec768c90e614c4c6af836aae09fde015bf274ef8a2531e44c6b15ec776163",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round11/PERIODIC_SOURCE_BINDING.json": "6f7a3015a903bbefb5fce4a65b4bb52af6afebcf7ee0be457da5262b79e6ad77",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round21/L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817"
+  },
+  "GR_closed": false
+}

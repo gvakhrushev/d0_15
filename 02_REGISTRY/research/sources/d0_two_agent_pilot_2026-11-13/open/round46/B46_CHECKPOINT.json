@@ -1,0 +1,32 @@
+{
+  "status": "B46_GRAY_FULL_CHOI_REVIEW_AND_ORIGINAL_PHYSICAL_GATE",
+  "file_sha256": {
+    "A22_GRAY_AND_CHOI_INDEPENDENT_RU.md": "fc02cf67fa635ee15b53f41ea15f5610d8aaaea66595dc7a3c93d9c8529d2a24",
+    "ORIGINAL_H1_PHYSICAL_GATE_RU.md": "8c72d23abed3dea6e7a8da6b9a150e24771f8e37ce09ca79c9ed35765844f135",
+    "audit_gray_powers.py": "074a8466cb3124557c0f6230e3b9d4c1386e75966a454dd894ced513dcc3b186",
+    "audit_gray_grammar.py": "9a44f9cc9db18a0a0aae39b390a99271bef601501acedea773f23c6f788ecf36",
+    "audit_full_choi_bank.py": "8628b41c8cc17e73945fa15013898c43b40819bf53b0fc7dec4f0d03848b46dc",
+    "check_full_choi_literal.py": "9b8f8eed322ca598a5bbc43f3638d490850d384e3d8392e7ecce34b46910e20c",
+    "audit_car_vacuum_fourier_target.py": "8041dca80a9d9efa6c016ef49e16a2458347fef1ddbecf4fa3977c1076b710da",
+    "conditional_h1_budget.py": "110adbd1f60706b8d602f962e9496bd5a5ae9693d0b1cdfee24dfdbfb94b7aee",
+    "CAR_VACUUM_FOURIER_TARGET.json": "871b51ceb80ff142e72c474a1cf67b6640d50f12656d708f7ae7448a4fb2ddcb",
+    "CONDITIONAL_H1_COMPONENT_BUDGET.json": "a6b345cc784e8c669c0e98b622d2f935187dfe18d1042acce1187439152bc7b6",
+    "GRAY_PHASE_INDEPENDENT_CHECK.json": "770ce402b88b2f1ca99de309550dde6fb344315c866b00ba4094bb1cf9ab1ca8",
+    "GRAY_GRAMMAR_INDEPENDENT_CHECK.json": "5061fb0a3542e2c3a576da629cdca2fcb1b04cd7acdc5908ba2350f5cbed261e",
+    "FULL_CHOI_INDEPENDENT_AUDIT.json": "1575cf6ff3cdc2d7b5b78348b6409716e77bdbc528d19e14a0b3a6a1f6298bea",
+    "FULL_CHOI_LITERAL_CHECK.json": "4110ab16e76b6572ce45338dc2ed004a7958feddb2f7ce3826eceaffad407175"
+  },
+  "owner_H1_source_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+  "gray_K8_K46_certified": true,
+  "full_Choi_all_DATA_columns_private_initial_zero": true,
+  "actual_full_Choi_word_executed": false,
+  "CAR_fourier_short_route_nodes": 318,
+  "CAR_fourier_native_prefix_emitted": false,
+  "component_error_bound_conditional_only": true,
+  "full_H1_writer_admission_proved": false,
+  "full_alpha_lower_bound_proved": false,
+  "actual_T6_scalar_proved": false,
+  "full_Cost_Info_binding_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

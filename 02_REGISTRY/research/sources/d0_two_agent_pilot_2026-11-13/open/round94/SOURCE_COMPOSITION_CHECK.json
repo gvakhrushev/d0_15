@@ -1,0 +1,24 @@
+{
+  "status": "PASS_A48_SOURCE_COMPONENT_AND_CORE_STRUCTURE_CONDITIONAL_BUDGET",
+  "all_2688_physical_CODE_pairs_checked": true,
+  "default_choi_layout_alias_repaired_and_validated": true,
+  "RAW_births": 11893774624,
+  "source_slots": {
+    "Choi": 1440,
+    "CAR": 128
+  },
+  "coframe_link_address_sets_disjoint": true,
+  "level9_forward_and_literal_inverse_symbolic_tokens": 78732,
+  "level9_omega_occurrences": 19683,
+  "ideal_phase_corrected_vector_error_lt": "2^-9841",
+  "source_error_lt": "2^-3423",
+  "full_SOURCE_DATA_fibre_G_CX_prefix_error_lt": "2^-3423",
+  "source_error_claim_scope": "declared private canonical fibre, conditional on inherited A22/A24/B45/source target contracts",
+  "W_call_count_componentwise_upper_bit_length": 24272,
+  "SourceI_replacement_error_lt": "2^-15800",
+  "canonical_compressed_eB_lt": "2^-3421",
+  "actual_numeric_full_inventory_evaluated": false,
+  "marked_clock_post_family_or_corner_error_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

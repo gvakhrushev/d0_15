@@ -1,0 +1,30 @@
+{
+  "status": "STRUCTURAL_MIDDLE_SUFFIX_SAM_COMMUTANT_CONDITIONAL_ON_B58_PROVIDER_INDUCTION",
+  "SAM_count": 2688,
+  "BR_inverse_trees_checked": 59696,
+  "SC6_transducer_trees_checked": 36352,
+  "report_samples_per_bank_per_direction": 128,
+  "report_local_mapping_probes": 70,
+  "scope": "actual A30 compiled middle between checkpoint and reverse frame; relies on B58 structural report-family proof, not full expanded REPORT execution",
+  "exact_commutation_claim": "[S_actual,Q_SAM tensor I_WORK tensor Q_allowed_old]=0 when Q uses only untouched supports",
+  "endpoint_diagonal_does_not_imply_full_commutant": true,
+  "replacement_all_column_error_lt": "2^-3244",
+  "conservative_e_over_gs_lt": "2^-86 conditional g*s>2^-3158",
+  "same_task_native_admission_proved": false,
+  "full_H_plus_J_source_bound_proved": false,
+  "exact_reflection_of_actual_A30_claimed": false,
+  "GR_closed": false,
+  "source_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round70/check_inner_suffix.py": "cbc08e0b4705a3fd1defba0d18972afdbca34907694e2dd8b0d50720ea4b1595",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/marked_source_schedule.py": "92ef8395b40cf20ce77c49a3ed4bfdcbd42fbc1d2f6595133ca4ba2f3086863e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round30/COMMON_SOURCE_MARKED_PLAN.json": "cc7e555c2b7b3b17a095cf8fe32aefa7aee54f605e91356cdf3443db5a8a6817",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/global_h1.py": "de446a0a4df53e5626862bc2c98ac6e5e08ce83f817825a5c824bc333030955e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/h1_namespace.py": "0a11a40f7c6e1c0cdb35be63bfb4e8704eb74ab17a8d1e0d1b2d40e8dabbc03e",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/reversible_report_stream.py": "e68c0c6634978888493af2b12b2f5485ea14a3f9f82644215c475e4cc564115d",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round29/gcx_compiler.py": "7171c4f992376a3bdface4563156c881dbfd485048980b0d3dc62ef11addf0fa",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/B58_A25_GCX_COVERAGE_AUDIT_RU.md": "e43fcadfee38ad46d1c9a687b1b3540060e18339640944f8ffe03c6453e680d1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round58/PROVIDER_TEMPLATE_AND_WIRE_CHECK.json": "2c85d9e1acde5e5c5e8b6c9151f5654e65e5d4808a212836d02a270667d17182",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round60/A30_COMMON_CHECKPOINT_INDEPENDENT.json": "ae7feb285f3886c143367f5ab8179dca1f1bbf4d976c55724643bc66acf443f1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round69/B69_ACTUAL_TASK_INPUTS_AND_ADMISSION_RU.md": "cfb9fdbb5af3c3a4092fceea2c467712efcf81c8e787aa88c70a310e1bfaace0"
+  }
+}

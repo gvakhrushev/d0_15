@@ -1,0 +1,41 @@
+{
+  "status": "LOCAL_B24_ONLY",
+  "round21_input_sha256": {
+    "ORIGINAL_PF_N20_L4.jsonl": "5cf76e72f8a2448a6f4058099b60058fca2493055dcac5ba8a7b3204e836b93e",
+    "L4_INTERIOR_CHART_COORDINATES.jsonl": "8577137a94cb6c51f1b4aaab12a7c4bcc26b164774c7bb4c4b4aef989ae151e1",
+    "BRINKMANN_L4_CENTRE.jsonl": "bedb2f51e2ae744f421315cde721848c3c7dd7b398b0a28c22f523c9f1aab43b",
+    "CENTRE_JULIA32_TARGETS_NUMERIC.npz": "3106975748a09e9ec0773246cc7b74b23aed337205419d01dde7f1252cdf88f2",
+    "REFERENCE_METADATA.json": "3483422e677ecb377c7fd99b134086f07dedba29e613c62bdcc020afcc4f086a"
+  },
+  "A11_input_sha256": {
+    "source_operator_dag.py": "b4804f89baf14d0c0b99b877ea4f99a943ad299e9d1302397916df43e809e00b",
+    "SOURCE_TENSOR_DAG.json": "1fb308ddc36632a8c4a731ea8c90785215f5eda84b52b010c104d0a6265b0f4e",
+    "certify_source_norm.py": "c79fdcb210fd18ad4a9f98ddb5bb5b29aa25ef84095ef71ce1e5783aad1c93fe",
+    "check_source_operator.py": "ea4a27f2a3fa49f7d36f03fa5a0ac3c9e4b9b7d2a66ae156c220c0a7dd0ea2a0",
+    "SOURCE_NORM_CERTIFICATE.json": "b4aca9a0e9655559531947d5ccca7b40ae73ddf338bbcdc97012ae1fb95b4fc8",
+    "SOURCE_OPERATOR_CHECK.json": "48f2dd5be6272bfa1cfb29881e6d7a31eb1dc9a692004544d43b001d301824e3",
+    "check_current_frame.py": "11b67ae702a06945e9ef8496b35a4050bbe2d5e2cdada91962a2ac44e0159192",
+    "CURRENT_FRAME_CHECK.json": "62ee373975f5e4faada5a410378dca156aab465e73ee54476607257d0c3d9d0c",
+    "FULL_SOURCE_OPERATOR_RU.md": "d61023e7897ee55574cb63f6a7012617395c3e08db8978ef9f9fa74c8794439b"
+  },
+  "output_sha256": {
+    "A11_FRAME_REPLAY.json": "39c3de820133880f339b306cb2397b0e7be52c0ade39f08d6e17e242871186e3",
+    "A11_REPLAY.json": "ae28b5170af4e73de3878e4981d6e0d7049b60e5e2784b924533ba19c3a291b8",
+    "CURRENT_FRAME_CHECK.json": "14455fb28b73909986303f082546dc50c656a9e764ad73ae9b0040f664697651",
+    "REFERENCE_FRAME_CHECK.json": "40fa6163fb9953ca0bf5e18db306db6996d1325e75889420e89e36fbbe379d55",
+    "SITE_DEPENDENCIES.jsonl": "b3074e56940ffe46e0dd85e7a4071cdf6f72cdbe01bd844aef3b3cc71f1ca9a5",
+    "TORUS_BOUNDARY_REVIEW_RU.md": "1a1db036a3ef217c826e71fa66bb9c9f19060605657670bc505ee5cb0517fb08",
+    "TORUS_CERTIFICATE.json": "d112ca958b41bc58e05a7f0246e9c399347581ca704258100848600e4324b35b",
+    "TORUS_CHOI_ADDRESSES.jsonl": "35897a838390fcd0c2ad1854d2934b3c21d6c7e4b877953a097cbb9c873238f3",
+    "TORUS_CHOI_TEST.json": "340da776723b4c4f3c79a0d7ced3dd1277c8b1aaf6270496fb38eb4db09242e5",
+    "check_current_frame.py": "0af6ed035e832c69acbbaa98c1f673bb39b8e2d3101f428610528aaf16a4f2f5",
+    "check_reference_frame.py": "1bfd6297220ef28dd9dbade924d4e66f78bb309cd632cbfb9cba65745fd79ede",
+    "check_torus_binding.py": "0850c72a133cf3247cb2584407199b870224ba102c925340f64f338e2eadaa9f",
+    "check_torus_choi.py": "a0d0239773d64b2ff479415e11ca518d528398c082dd2bc5ab1c5a31115be9da",
+    "replay_a11.py": "dfcdb08be78c1c6ea289bca571817d97da414bc171e247554d05b5ec30619f13",
+    "replay_a11_frame.py": "a3a9520576ecb1e61a3cf021165032c7b5b1b3a4ca951820c1a8509bc70317d9"
+  },
+  "native_word_emitted": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_INDEPENDENT_A23_ACTUAL_AND_TOY_LITERAL_DEPTHS",
+  "source_sha256": "4733e09654b6e566957a63807430128da2efa557b00d3309aea5f3cdf9a2dfca",
+  "actual_K7_a1_a2_a3_all_128_masks_depth0_to3": 1536,
+  "toy19_full_word_primitive_replays": [
+    {
+      "depth": 0,
+      "exact_primitive_leaves": 3821
+    },
+    {
+      "depth": 1,
+      "exact_primitive_leaves": 8151
+    },
+    {
+      "depth": 2,
+      "exact_primitive_leaves": 17091
+    },
+    {
+      "depth": 3,
+      "exact_primitive_leaves": 43911
+    }
+  ],
+  "real_SourceI_both_spin_bits": true,
+  "huge_repeats_executed": false,
+  "GR_closed": false
+}

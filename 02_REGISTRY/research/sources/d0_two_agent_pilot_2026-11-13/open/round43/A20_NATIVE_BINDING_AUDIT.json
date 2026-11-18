@@ -1,0 +1,26 @@
+{
+  "status": "PASS_INDEPENDENT_A20_BINDINGS_AND_RESOURCES",
+  "pinned_commit": "afbaef2f950da70c0fe16dbdb8091c851929bd7a",
+  "library_sha256": "7fca5863f6104a1647300c3219b3c3835d628daaa703e9b511c58461bd0c9c6d",
+  "plan_sha256": "0b17313f90b5962cb7d27b57e05204493353951618118d2be7b77433e268b410",
+  "banks": {
+    "y+": 1024,
+    "y-": 1024,
+    "f": 4864,
+    "0": 1024,
+    "x+": 1024,
+    "x-": 1024,
+    "q": 4864
+  },
+  "sector_bindings": 14848,
+  "units": 294144,
+  "max_controls": 20,
+  "literal_inverse_depth_0_to_3_expanded_leaves": [
+    74,
+    162,
+    354,
+    930
+  ],
+  "full_native_word_expanded": false,
+  "GR_closed": false
+}

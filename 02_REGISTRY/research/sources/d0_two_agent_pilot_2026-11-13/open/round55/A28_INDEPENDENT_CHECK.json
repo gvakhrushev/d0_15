@@ -1,0 +1,72 @@
+{
+  "status": "PASS_INDEPENDENT_A28_PARTITION_CLOCK",
+  "partition_cells": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      3,
+      1
+    ],
+    [
+      3,
+      4,
+      0
+    ],
+    [
+      4,
+      2692,
+      1
+    ],
+    [
+      2692,
+      2700,
+      1
+    ],
+    [
+      2700,
+      2705,
+      1
+    ],
+    [
+      2705,
+      2706,
+      1
+    ],
+    [
+      2706,
+      10407050784,
+      1
+    ]
+  ],
+  "births": 10407050781,
+  "L_bits": 4188,
+  "births_plus_L_lt_2^4189": true,
+  "geometric_sum_exact_cases": 100,
+  "finite_growing_clock_unitary_numerical": true,
+  "last_actual_primitive": {
+    "op": "CX",
+    "wires": [
+      2692,
+      2705
+    ]
+  },
+  "same_unknown_aux_input_contract": false,
+  "full_giant_stream_executed": false,
+  "physical_admission_or_marked_map_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round28/FRESH_AUX_BIRTH_CLOCK_PLAN.json": "87c95826bbbc8bdf2c7c4de3942899b2af7e0a32d0921ca8a4a970b14cde268f",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/GLOBAL_H1_PLAN.json": "7a66c9195eaf1013caf2e2b392aae6be03a2025695e87cf67e1871fc5aa5aeb8",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round25/H1_NAMESPACE_PLAN.json": "60f609239bd60de30cc46cb0ffd35ff3d3fa28a73a317a11be07d802cc6cc8f1"
+  }
+}

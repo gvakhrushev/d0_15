@@ -1,0 +1,26 @@
+{
+  "status": "B35_EXACT_JOINT_REFLECTION_REDUCTION_AND_CONDITIONAL_BUDGET",
+  "files": {
+    "B25_REFLECTION_TARGETS_CHECK.json": "8ffe091ad4bc72a7b96ee56c68ea035c76407d8a6d5f31fb2edcf05e710f82b1",
+    "BANK_PREPARATION_REDUCTION_RU.md": "ea977567767b7e00d1571f4f13d0721b7a2d8a5e55a108bcba02597689f2b8d1",
+    "REDUCTION_HOSTILES_CHECK.json": "7552e9323132580e3964daf5f6a73db336c69c018a91f896e331e5d033439bf2",
+    "REFLECTION_REDUCTION_CHECK.json": "936c9a53bf3a612645ea7e7dd655830d81b6490a87743d96209412d415dccfac",
+    "SOURCE_DERIVATIVE_CHECK.json": "b30fa219b8d7eb8a504e75618ce26b3cebbe0f1a79327211c25101a8f570288b",
+    "anchor_reflection.py": "1e288ab4bbce76b8f6d85ddcb0401a6f33b18a76e5560e16644bde8d4de9470a",
+    "certify_reflection_reduction.py": "da8748f6dea487f0c219932f7e1c1e0284c5a358fb5ebb2659cf0da2cfd071a9",
+    "check_b25_reflection_targets.py": "e2941c88898b4d325a92359f1d91dd597b757b4e12e2057e74142a1dfc1e23df",
+    "check_reduction_hostiles.py": "ec9f633782127828857685e2cb5227f89c9ebb29e0349bce84ac89a6353d5f7c",
+    "check_source_derivative_identities.py": "900ead533dd6c43608eec0728cb01ecf6d2527a56e3bedcbe8a3257452a2cf27"
+  },
+  "upstream_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/TARGETS_RU.md": "7b20b59f6ea3a79e6157fc59cb8c8c264b0533a211557b864d14f8fc07728f94",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/CENTRE_JULIA32_TARGETS.npz": "328ed1c94a9d05772ccab6e98e2811d0160369dc7373842612f7263b6ac632b6",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round25/CENTRE_FIELDS.npz": "e0d1db31ed54554f98f0d158f3593ae7fe91186cfd7acdaefbfe84bca1fd6cbd",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round29/BUDGET_CERTIFICATE.json": "195969b01862ae091a8c45f6f236a2f0e24496b43dff5f016d162fa0e1c41b96",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round16/source_select.py": "a204f5844abc919a95d1a9103fdf32ba1d415a77f048d1cb676a6cf1f32581f6"
+  },
+  "remaining": "physical uniform SAM-controlled half-vector preparations and literal adjoints, source births and prefix/marks/clock",
+  "full_alpha_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

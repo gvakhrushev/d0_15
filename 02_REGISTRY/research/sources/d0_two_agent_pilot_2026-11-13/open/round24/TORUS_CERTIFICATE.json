@@ -1,0 +1,54 @@
+{
+  "status": "PASS_EXHAUSTIVE_STRUCTURAL_DEPENDENCY_CERTIFICATE",
+  "L": 4,
+  "sites": 256,
+  "free_sites": 64,
+  "independent_sam_fields": 2688,
+  "fields_per_free_site": {
+    "coframe": 16,
+    "proper_link": 24,
+    "matter": 2
+  },
+  "open_vs_torus": {
+    "different_rows": 112,
+    "different_PF_mass": "4557/10946",
+    "identical_rows": 144,
+    "identical_PF_mass": "6389/10946",
+    "changed_oriented_six_face_factors": 368,
+    "changed_matter_forward_edges": 128,
+    "changed_faces_by_role_pair": {
+      "(0, 2)": 64,
+      "(0, 3)": 64,
+      "(1, 2)": 64,
+      "(1, 3)": 64,
+      "(2, 3)": 112
+    },
+    "changed_rows_with_free_field_dependencies": 0,
+    "each_of_2688_fields_seen_in_dependency_union": true,
+    "full_rows_reachable_by_free_fields": 128
+  },
+  "torus_address": {
+    "active_A": 2049,
+    "coframe": 1024,
+    "proper_link": 1024,
+    "identity_anchor": 1,
+    "active_vector_size": 2098176,
+    "padded_vector_size": 4194304,
+    "anchor_squared": "1/65568"
+  },
+  "hostile_hypotheses": {
+    "free_wrapped_collar_toy_delta_derivative_at_1": "2",
+    "variable_weight_times_fixed_delta_derivative": "1",
+    "scope": "scalar dependency counterexamples, not physical H1 executions"
+  },
+  "proof_scope": "depends on fixed rho, fixed halo/boundary values, local source functions, same scalar source semantics and common constants; arbitrary full-Hilbert/mark/factory equality is not proved",
+  "explicitly_not_claimed": [
+    "native words",
+    "READY equality",
+    "matching full bank quantum states",
+    "open halo supplied",
+    "torus Einstein root",
+    "Cost-Info physical binding"
+  ],
+  "GR_closed": false
+}

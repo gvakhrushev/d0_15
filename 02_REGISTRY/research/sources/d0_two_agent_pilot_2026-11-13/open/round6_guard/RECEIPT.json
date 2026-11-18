@@ -1,0 +1,60 @@
+{
+  "format": "d0-two-agent-pilot-open-round6-guard/1",
+  "start_utc": "2026-11-13T13:51:08Z",
+  "end_utc": "2026-11-13T13:55:52.374405Z",
+  "baseline": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "checks": [
+    {
+      "command": "python3 -B -W error check_invalid_guard.py",
+      "result": "PASS 23 exact Golden-field/all-column/finite-control checks"
+    },
+    {
+      "command": "python3 -B -O -W error check_invalid_guard.py",
+      "result": "PASS byte-identical output"
+    },
+    {
+      "method": "exact invalid support, labelled E0 placement and common eigenframe local row",
+      "result": "r-only differs from LC10 invalid identity; r0-only satisfies both and gives positive local dh under stated scope"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6/ROUND6_RESULT_RU.md",
+      "sha256": "a4d5b0302f9628814ae817041ad8b0a6b9ee56ae5f0ab699eb526d3a5eed463d"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6/RECEIPT.json",
+      "sha256": "4827063cc56f9e608fb2232af7d51787429e888cdc198c16df0165c64cc081cf"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round2/STATIONARY_BACKWARD_RU.md",
+      "sha256": "37a2063b0afa63ab1d57affed8c459f544aa051f5fdf0c8f07c0ba5d40a83bba"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6_guard/GUARD_AND_LOCAL_ROW_RU.md",
+      "sha256": "009496a4dccc3b56e5bef7a8580219640a013c66ae0172e048e283836c1f1e0c"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6_guard/check_invalid_guard.py",
+      "sha256": "eac3d9b19836ef292b1e7e490950cec270eafe379e5f765f4e312546facc5a39"
+    },
+    {
+      "path": "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round6_guard/CHECK_RESULT.json",
+      "sha256": "8c611a14853231fee4a78fafef7b1e287da1d8080c8b0971709064368a80f70b"
+    }
+  ],
+  "scope": {
+    "full_geometric_H1_word_executed": false,
+    "explicit_full_bank_compiler_word_emitted": false,
+    "local_marked_J_row_proved_given_real_common_eigenframe_and_live_work": true,
+    "full_joint_physical_stationarity_proved": false,
+    "physical_cost_info_binding_proved": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ALL_FAMILIES_REPLAY_4352_BITS",
+  "families": 20496,
+  "angles": 307416,
+  "every_4096bit_target_sha256_matches": true,
+  "every_4352bit_target_interval_contained": true,
+  "pivot_and_orientation_match": true,
+  "methods": "replay of same exact target algebra at greater precision, not independent physical source proof",
+  "family_receipts_sha256": "dfd96b6d7fc1d7853b83215996d6377b8667d6052c43a077a01ca7fabaa20dc0",
+  "GR_closed": false
+}

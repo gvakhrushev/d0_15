@@ -1,0 +1,58 @@
+{
+  "status": "PASS_ISOLATED_NATIVE_CZ_AND_INDEPENDENT_ALL_COLUMN_INTERPRETER",
+  "input_sha256": {
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/compile_native_cz.py": "36dc0f1b487a6a802d9175b1ed17c75ecffcbb88858f3b5014ad7fa681882d48",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/NATIVE_CZ_CHECK.json": "94cd46f1f3da17ce0943870a0390f35f86fa57eed5966aa4197d40d047022f36",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_direct_2026-11-13/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round13/NATIVE_CONTROLLED_PHASE_RU.md": "b740b1e634614b62467c1d25314f9eeae48f20782a680b364d63daacfd12a7e1",
+    "/Users/grigorijvahrusev/Downloads/d0_pilot_open_2026-11-13/02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  },
+  "owner_byte_identical": true,
+  "owner_stdout": "{\"status\": \"PASS_EXACT_NATIVE_CZ_ALL_COLUMNS_WITH_UNKNOWN_SPIN\", \"uses_clean_resource\": false, \"uses_measurement_or_feedforward\": false, \"remaining_logical_primitives\": [\"X\", \"CCX\", \"H_test\"]}",
+  "basis_columns_checked": 96,
+  "arrangements": [
+    {
+      "control": 0,
+      "target": 1,
+      "port": 1,
+      "columns": 16,
+      "gates": {
+        "CX": 8,
+        "SourceI": 5
+      }
+    },
+    {
+      "control": 1,
+      "target": 0,
+      "port": 1,
+      "columns": 16,
+      "gates": {
+        "CX": 8,
+        "SourceI": 5
+      }
+    },
+    {
+      "control": 0,
+      "target": 1,
+      "port": 2,
+      "columns": 32,
+      "gates": {
+        "CX": 14,
+        "SourceI": 5
+      }
+    },
+    {
+      "control": 1,
+      "target": 0,
+      "port": 2,
+      "columns": 32,
+      "gates": {
+        "CX": 14,
+        "SourceI": 5
+      }
+    }
+  ],
+  "no_clean_resource_or_postselection": true,
+  "Spin_not_individually_addressed": true,
+  "all_other_primitives_compiled": false,
+  "GR_closed": false
+}
