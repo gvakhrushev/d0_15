@@ -31,6 +31,32 @@ def clock_calibration():
     assert denominator.subs(s, 1) == 1 and direct == 24*k*cov[0, 0]
 
 
+def quaternion_test():
+    I = sp.eye(4)
+    Li = sp.Matrix([[0,-1,0,0], [1,0,0,0], [0,0,0,-1], [0,0,1,0]])
+    Lj = sp.Matrix([[0,0,-1,0], [0,0,0,1], [1,0,0,0], [0,-1,0,0]])
+    Lk = Li*Lj
+    assert Lj*Li == -Lk and Lk*Lk == -I
+    x, y, z, w = sp.symbols("x y z w", real=True)
+    U = x*I + y*Li + z*Lj + w*Lk
+    norm = x*x+y*y+z*z+w*w
+    assert (U.T*U).applyfunc(sp.expand) == norm*I
+    change = U - Li.T*U*Li
+    assert change == 2*(z*Lj+w*Lk)
+    dark = U*change
+    assert (dark.T*dark - 4*norm*(z*z+w*w)*I).applyfunc(sp.expand) == sp.zeros(4)
+    # Native control-J, spectator letter and inverse-J on all tail/spectator/Spin columns.
+    a = sp.symbols("a", real=True)
+    G = sp.Matrix([[a, -a**2], [a**2, a]])
+    controlled = sp.diag(sp.eye(8), sp.kronecker_product(sp.eye(2), Li))
+    spectator = sp.kronecker_product(sp.eye(2), G, I)
+    assert controlled.T * spectator * controlled == spectator
+    # Conjugating the test letter on the spectator gives the two predicted Spin blocks.
+    weighted = sp.kronecker_product(sp.eye(2), G, U)
+    expected = sp.diag(sp.kronecker_product(G, U), sp.kronecker_product(G, Li.T*U*Li))
+    assert controlled.T * weighted * controlled == expected
+
+
 def main():
     a, b, c, d, e = sp.symbols("a b c d e")
     K = sp.Matrix([[b, c], [d, e]])
@@ -80,7 +106,8 @@ def main():
     assert clock+clock.T == 2*a*sp.eye(8)
     assert (-clock)+(-clock).T == -2*a*sp.eye(8)
     clock_calibration()
-    print("PASS: E0 and echo, Spin4, feedback, one-tick heat, and stopped-clock calibration")
+    quaternion_test()
+    print("PASS: E0 and echo, Spin4, quaternion dark output, feedback, heat and stopped-clock calibration")
 
 
 if __name__ == "__main__":

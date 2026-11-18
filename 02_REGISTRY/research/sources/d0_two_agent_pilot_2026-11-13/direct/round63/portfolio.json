@@ -13,7 +13,8 @@
       "evidence": {
         "direct/round63/CLOCK_CALIBRATION_RU.md": "71fd048ce4091d18df47cf033aa148d91660448e26613c094efd14ec983a175c",
         "direct/round63/SPIN_MEMORY_RU.md": "89967f5e3b33f4e0fc833488d3563fc791c5c38cc76424f39a08ac7c2cacc9f7",
-        "direct/round63/check_spin_memory.py": "e97c6513dacb30af0359e2573f4bdb128a420e0a9ec12dad403d7dec28a64d80"
+        "direct/round63/check_spin_memory.py": "252b60868df246afc15c0b5dd80214e485973ddbd8c805ead3d0eb59a43f9a04",
+        "direct/round63/QUATERNION_TEST_RU.md": "168eeee2451383bfe28a1c27aa796731709eebfe4c3e8c3490f2027dd6bd0568"
       }
     }
   ]
