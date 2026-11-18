@@ -1,0 +1,66 @@
+{
+  "round": "A72",
+  "base_direct": "1a5669c42671a392452a8b801681781cc96bb82b",
+  "primary_pr334": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "related_open_commits": {
+    "B139": "c2e7bd1d8887f4007aca876c57b1aa6b0da62291",
+    "B140": "2fcbdb6f5955ec12fbf3fe31f8553e9c16136c53",
+    "B141": "e6260d3c62d560bdc361293a377832fe306041e3",
+    "B142": "78d0c499bca970d36813a3a0aea58de016b246a6"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "lanes": [
+    {
+      "id": "ser_paid_flag_with_full_scalar_past",
+      "check": "direct/round72/record/check_record_source.py",
+      "result": "Два прежних отчёта и оплачиваемая проба памяти воспроизводят источник полного J в выходной Cost−Info.",
+      "open": "Полный платёж за сырые регистрации, подготовку и собственный новый час.",
+      "evidence": {
+        "direct/round72/record/check_record_source.py": "9f9324f2a5d56be215800ff2127b3e10bfc4d659d3609cda3831235c28afabcc",
+        "direct/round72/record/RECORD_SOURCE_RU.md": "7b12290c5e37f410bc9ba52ac8f8581f92ab446e85f50ab9e7975ede6386fafc",
+        "direct/round72/READOUT_RU.md": "ebc6d1bd534c7593673b5d0a0a955cca0ef165d5c3c2a0fb4e4409f120508b76",
+        "direct/round71/original/REFERENCE_SOURCE_RU.md": "7879ec63813f57b877bdbd043348a81a0afe9c0613690c5c8645df939699a98f"
+      }
+    },
+    {
+      "id": "original_serial_thermal_field_budget",
+      "check": "direct/round72/clock/check_serial_heat.py",
+      "result": "Первые 38 моментов исходного 57-тактного SER невосприимчивы к ранним полевым изменениям; отдельно доказан ненулевой внутренний отклик.",
+      "open": "Относительная ошибка после нормировки на геометрическое усиление и перенос допуска на все внутренние строки.",
+      "evidence": {
+        "direct/round72/clock/check_serial_heat.py": "52683f40c1a3f0bbf26f40e3105b2bf1e3720c6f7fc54032f1f61517983e4c4d",
+        "direct/round72/clock/SERIAL_HEAT_RU.md": "78ed4b345471132b557992d017c49120af947cc0c2b0579148c7b8227f4b7401",
+        "direct/round72/READOUT_RU.md": "ebc6d1bd534c7593673b5d0a0a955cca0ef165d5c3c2a0fb4e4409f120508b76",
+        "direct/round71/clock/check_chronology.py": "a0b68b237b462bbb3e6f32e4f2b279cf1c1ace5efc1baca0d65ba23101e8fe79",
+        "direct/round69/clock/check_early_heat.py": "1082204cdeb3fe29d8f764d5bc9579cc9d7559dd35b93113b2b08d403c807f89",
+        "direct/round69/clock/check_exact_return.py": "ee10873b1796fc62e74c6c899cbd647f981571c6df8e16612bdfb3391418b8b8"
+      }
+    },
+    {
+      "id": "native_cycle_memory_and_matter_source",
+      "check": "direct/round72/ledger/check_cycle_source.py",
+      "result": "Ненулевой полный спектральный контраст снимает однородные конечномерные переносы путевой оплаты; на материальной пробе различаются первые отклики.",
+      "open": "Истинные нестационарные, зависящие от общей истории, и энтропийные вклады.",
+      "evidence": {
+        "direct/round72/ledger/check_cycle_source.py": "3e7355d070872bcf2e4e6a2a841525d39e9da8c242bce651cd782a432494917f",
+        "direct/round72/ledger/CYCLE_SOURCE_RU.md": "8ecb0194e5396d47ff5033e49b8cf11545f2b1f478d448857fc54039b223d41f",
+        "direct/round72/READOUT_RU.md": "ebc6d1bd534c7593673b5d0a0a955cca0ef165d5c3c2a0fb4e4409f120508b76",
+        "direct/round71/clock/check_chronology.py": "a0b68b237b462bbb3e6f32e4f2b279cf1c1ace5efc1baca0d65ba23101e8fe79",
+        "direct/round71/clock/GROWING_PRICE_RU.md": "830f47861eabbe4b704dda93b094186f9d17b48bc9cf182f47dc9a67b47a8b22",
+        "direct/round72/ledger/ALGEBRAIC_STATIONARITY_RU.md": "a3fdc4f5059090f0957d2e34d25c75add06a7b763882c3066032261a9eaa958e"
+      }
+    },
+    {
+      "id": "profiled_marked_nonvacuum_preparation",
+      "check": "direct/round72/preparation/check_material_preparation.py",
+      "result": "Обе ориентации привода при одной физической метке имеют общий абсолютный источник. Он сохраняется при минимизации.",
+      "open": "Компенсация на том же полном оплачиваемом исполнении и все остальные материальные строки.",
+      "evidence": {
+        "direct/round72/preparation/check_material_preparation.py": "d6b3ac3e28b88277d246ffb62eb071f7714112e37c698d3116b6d0b608add4df",
+        "direct/round72/preparation/MARKED_MATERIAL_PRICE_RU.md": "300a8852823a66e2fc9cb4a0152d77a6ac4a12ca0c87c8bab6c69faa2b8a1fe7",
+        "direct/round72/READOUT_RU.md": "ebc6d1bd534c7593673b5d0a0a955cca0ef165d5c3c2a0fb4e4409f120508b76"
+      }
+    }
+  ]
+}
