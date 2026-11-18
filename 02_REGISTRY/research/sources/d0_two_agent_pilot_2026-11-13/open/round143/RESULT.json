@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "inputs": {
+    "direct/round71/original/REFERENCE_SOURCE_RU.md": "7879ec63813f57b877bdbd043348a81a0afe9c0613690c5c8645df939699a98f",
+    "direct/round72/record/RECORD_SOURCE_RU.md": "7b12290c5e37f410bc9ba52ac8f8581f92ab446e85f50ab9e7975ede6386fafc",
+    "open/round134/B134_NATIVE_SLATER_FEEDBACK_RU.md": "4ca631df39ac5c036126e3143acfda311cc8e4efdcc1b39d5403deff8d2bc91b",
+    "open/round138/B138_COARSE_RETURN_SPECTRAL_WELD_RU.md": "2fa2ba3a79ebd6ec73bf4f96b946df26032a2676eced44f082b9b19b12f8c680"
+  },
+  "three_outcome_cold_effect": {
+    "known_signs_checked": [
+      -1,
+      1
+    ],
+    "noncommuting_fixture": true,
+    "old_success_all_fates_retained": true,
+    "ready_pairs_per_slot": 22,
+    "rank_two_wedge_identity": true
+  },
+  "paid_conditional_info": {
+    "verified_gray_addresses": 8,
+    "ready_branch_entropy_constant": true,
+    "both_fates_of_ready_are_retained": true,
+    "mean_code_increment_derivative": "-gamma*sin(2*omega)*Du"
+  },
+  "complete_classical_record_boundary": {
+    "original_mark_retained": true,
+    "tested_log_singularity_coefficient_before_units": "2",
+    "arbitrary_fixed_leaf_prices_are_regular": true
+  },
+  "weighted_book_Cost_minus_Info_selected": false,
+  "measured_RC3_identified_with_coherent_feedback": false,
+  "GR_closed": false
+}
