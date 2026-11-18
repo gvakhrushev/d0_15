@@ -190216,3 +190216,1942 @@ print(out,end="")
 <!-- END ES ENTROPY SOURCE CLASS RECEIPT -->
 
 An independent isolated replay of the updated section7ft checker using Python -I -Werror passes all111 controls with empty stderr and byte-identical receipt. The extracted embedded source and receipt match their pinned files exactly. Final affected validate_repo (warnings0), validate_work, validate_agent_protocol, gr_assembly check and whitespace checks pass. Assembly remains98 results /22 obligations /5 discharged, scientific_promotion=false. Both inherited e016f405 file prefixes are preserved byte-for-byte.
+
+
+## 7ga. One projective physical scale: conditional Einstein rigidity without a prescribed source magnitude
+
+18 November 2026. Input: dc411daf01f697ec85dd22f28bfe124171796645.
+Existing Draft #334, native-programme-v1; phase: conditional source
+classification for final composition. This imports the completed chat-side
+derivation into its existing scientific owner. Consumer: the already owned
+Golden metric/source descent alternative, after its actual physical source
+has been obtained. The changed input is one pointwise projective scale law
+in place of exact equality of source magnitudes.
+
+This is an additional sufficient route, not a new prerequisite for the
+same-history physical C application. Locality, gravitational off-shell Ward,
+the nonzero quadratic Einstein germ and the stated open metric domain remain
+hypotheses. No D0 physical price is defined from the conclusion. The analytic
+proof is distinct from its symbolic countercontrols; no Lean formalization,
+external peer review or literature-priority claim is made. GR_closed=false.
+
+### One discrete projective scale plus the Ward identity
+
+Research derivation, 18 November 2026. This is a conditional theorem about a
+natural metric source. It does not construct the physical D0 Cost−Info map,
+discharge obligation C, or assert a new result in the mathematical literature.
+
+#### Consumer and difference from the existing owner
+
+The existing owner
+`02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md`
+at PR334 `dc411daf01f697ec85dd22f28bfe124171796645` proves Einstein rigidity
+from the exact source law `E(lambda^2 g)=E(g)`. Its G12c already handles
+finite-mesh errors that vanish in a common limit. The later matched-source
+synthesis, primary source lines 177762–178077, normalizes a derived common
+global gain before applying that theorem.
+
+The theorem below instead requires preservation of the *pointwise source
+line* under one scale: `E(lambda^2 g)(p)=r[g](p) E(g)(p)`, with an unspecified
+nonzero factor. No formula, sign, locality or smoothness for `r` is used.
+The Ward identity and locality then force the actual source to be `aG`, so
+the surviving factor is one wherever `G` is nonzero. A genuine flat
+Einstein component is essential. A pure R² Euler source is a counterexample
+if that condition is dropped.
+
+The price of the weaker scale hypothesis is explicit off-shell domain
+closure and continuity at curved metrics. No finite differential-order
+bound or nonlinear Peetre theorem is needed for the proof below.
+
+#### Theorem P: projective one-scale Einstein rigidity
+
+Let `d>=3` (the D0 application is `d=4`) and `lambda>1`. Let `E` assign to
+each smooth Lorentz metric on an open coordinate domain a smooth symmetric
+covariant two-tensor. Assume:
+
+1. **Local naturality.** E commutes with restriction and all local
+   diffeomorphisms. Hence its value near p depends only on the metric germ
+   near p. There is no retained external metric, frame, clock or global
+   history argument.
+2. **Off-shell domain.** The required discrete rescalings `lambda^(2n)g`
+   and their restricted pullbacks are admitted. For each metric being
+   classified, its normal
+   coordinate contractions `g_t(x)=g(tx)`, `0<t<=1`, and every sufficiently
+   small compactly supported metric perturbation used below are in the
+   domain. Domain membership does not impose the Einstein equations.
+3. **Regularity.** E is continuous from the compact-open smooth metric
+   topology to continuous tensor sections at every admitted metric. At each
+   constant Lorentz metric it is Fréchet differentiable, with the
+   differentiability needed to linearize the Ward identity (for example,
+   into C¹ tensor sections). There is no prescribed derivative order.
+4. **Flat vacuum.** `E(eta)=0` for every constant Lorentz metric eta.
+5. **Ward identity.** `nabla_g^mu E(g)_{mu nu}=0` identically for every
+   admitted metric, before imposing its field equations.
+6. **Nonzero Einstein flat two-jet.** If
+   `h2=(1/2) g_ij,kl(0) x^k x^l dx^i dx^j` is a normal quadratic
+   perturbation, then `D E_eta[h2](0)=a G(g)(0)` for one `a!=0`.
+   As explained below, naturality and the linearized Ward identity already
+   force the displayed form. Only its nonzero coefficient needs a witness.
+7. **One projective scale.** For every admitted g,p there is a finite
+   `r[g](p)!=0` such that
+
+       E(lambda^2 g)(p) = r[g](p) E(g)(p).
+
+Then `E(g)=aG(g)` on the entire declared domain, including all Ricci-flat
+metrics and points where G is singular or zero. In particular, for
+`G(g)(p)!=0`, `r[g](p)=1`.
+
+The Ward identity here is the **gravitational** off-shell Ward identity.
+For a metric-plus-matter Euler system the identity generally contains
+the matter Euler rows. The theorem applies to the separated metric-only
+gravitational component, a legitimate matter-zero restriction, or an
+independently proved equivalent source; it does not set those matter
+rows to zero during an off-shell argument.
+
+##### Step 1: the normal blow-up fixes the source line
+
+Choose normal coordinates at p=0, write `t_n=lambda^(-n)`, and let
+`d_t(x)=tx`. Then
+
+    g_n = t_n^(-2) d_(t_n)^* g = g(t_n x),
+    g_n = eta + t_n^2 h2 + o_Cinfty(t_n^2).
+
+Naturality and repeated projective covariance imply
+
+    E(g_n)(0) = t_n^2 E(lambda^(2n) g)(0)
+              = t_n^2 R_n[g](0) E(g)(0),
+    R_n[g](0) = product_(k=0)^(n-1) r[lambda^(2k)g](0).
+
+Thus every `t_n^(-2)E(g_n)(0)` lies in the fixed one-dimensional subspace
+spanned by `E(g)(0)`. The flat differential gives
+
+    t_n^(-2)E(g_n)(0) -> aG(g)(0).
+
+There is no assumption that `R_n` is bounded or that it has a limit.
+Closedness of a finite-dimensional linear subspace proves
+
+    E(g)(p) wedge G(g)(p) = 0.
+
+If `G(g)(p)!=0`, the same limit also proves `E(g)(p)!=0`. Consequently,
+on an open set where G is nonzero, there is a smooth nonzero scalar
+function `f_g` with `E(g)=f_g G(g)`. A component ratio defines it locally;
+the ratios agree on overlaps. No division at a zero of G has occurred.
+
+##### Step 2: the Ward identity fixes f in space on the invertible locus
+
+On an open set where G is an invertible bilinear form,
+
+    0 = nabla^mu E_mu nu = G_mu nu nabla^mu f_g
+
+and invertibility gives `d f_g=0`. Thus f is spatially constant on every
+connected such open set. This alone does not yet say it is independent
+of the metric; the next step supplies that missing argument.
+
+##### Step 3: a cutoff comparison fixes f along the full normal contraction
+
+Fix g,p with `det G(g)(p)!=0`. Shrink the normal coordinate domain to a
+small connected ball U on which `G(g)(tx)` is invertible for all `x in U`
+and `0<t<=1`. This is possible because all tx lie in a sufficiently
+small neighborhood of p. The exact known scale law of the Einstein
+tensor gives
+
+    G(g_t)(x) = t^2 G(g)(tx),
+
+so every `G(g_t)` is invertible on U. This identity concerns the known
+comparison tensor G, not an assumed continuous scale symmetry of E.
+
+For a fixed `t>0`, choose `q!=p` in U and a smooth cutoff chi that is one
+near p and zero near q. For sufficiently small delta set
+
+    g_tilde = g_t + chi (g_(t+delta) - g_t).
+
+On a compact connected subdomain containing p,q and the cutoff support,
+this is a sufficiently small C² perturbation of g_t. It remains Lorentz,
+admitted, and has invertible G. Step 2 makes `f_(g_tilde)` constant there.
+Locality at p and q now gives
+
+    f_(g_(t+delta))(p) = f_(g_tilde)(p)
+                      = f_(g_tilde)(q)
+                      = f_(g_t)(q)
+                      = f_(g_t)(p).
+
+Therefore `t -> f_(g_t)(p)` is locally constant for every t>0, hence
+constant on `(0,1]`. The flat expansion and
+`G(g_t)(p)=t²G(g)(p)` show its limit as t→0 is a. Hence
+`E(g)(p)=aG(g)(p)` whenever G is invertible.
+
+The use of a continuum of t is a domain/perturbation argument. Only the
+discrete t_n sequence was used as a symmetry of E.
+
+##### Step 4: singular and zero Einstein tensors are included
+
+At fixed metric value and first jet, arbitrary sufficiently small changes
+of the symmetric Ricci tensor can be produced by quadratic metric-jet
+perturbations. The linear trace-reversal map
+`Ric -> Ric - (1/2) tr_g(Ric) g` is invertible for d>=3. Thus metric germs
+with invertible G at p are dense among all metric germs at p.
+
+Choose compactly supported quadratic perturbations `g_j->g` in the smooth
+topology with `det G(g_j)(p)!=0`. Step 3 gives `E(g_j)(p)=aG(g_j)(p)`.
+Continuity of E and G yields the same equality at g,p. This covers both
+singular nonzero G and G=0. In particular no source supported only on the
+Ricci-flat locus can be hidden by the projective argument.
+
+This completes the proof.
+
+#### Weaker theorem Z: the vacuum zero set does not require the Ward identity
+
+Suppose the hypotheses of Theorem P hold **except** that the off-shell Ward
+identity is omitted, while the Einstein form and nonzero coefficient of the
+normal quadratic flat differential are retained as an explicit assumption:
+
+    D E_eta[h2](0)=aG(g)(0), a!=0.
+
+For this weaker result the domain only needs the discrete blow-up metrics
+and sufficiently small arbitrary local quadratic-jet perturbations. The
+continuous contraction path and cutoff gluing between different t are not
+needed. Then, pointwise on the entire declared domain,
+
+    E(g)(p)=0  if and only if  G(g)(p)=0.
+
+**Proof.** Step 1 is independent of Ward. If `G(g)(p)!=0`, it shows that
+`E(g)(p)` is nonzero and collinear with `G(g)(p)`. In particular, E=0
+implies G=0.
+
+Conversely suppose `G(g)(p)=0`. Keep the metric value and first jet at p
+fixed. The quadratic-jet freedom and the invertible Ricci trace reversal
+in d>=3 allow, for any prescribed nonzero symmetric tensor A, a sequence
+of admitted metrics `g_epsilon->g` satisfying exactly
+
+    G(g_epsilon)(p)=epsilon A.
+
+The metrics can be produced by compactly supported quadratic perturbations;
+at fixed metric value and first jet the curvature and Einstein tensor are
+affine in the second jet. Step 1 gives
+`E(g_epsilon)(p) in span(A)`. Continuity and closedness of this line give
+`E(g)(p) in span(A)`. Repeating with a nonparallel tensor B gives membership
+in `span(A) intersect span(B)={0}`. Thus E(g)(p)=0. QED.
+
+Accordingly `E[g]=0` and `G[g]=0` have exactly the same smooth vacuum
+solutions in the declared metric domain. This is a zero-set theorem, not
+an equality of sources or a calibration of their common multiplier.
+Without Ward the example `E=e^R G` is allowed and illustrates that
+distinction. The theorem does not identify the nonvacuum equation
+`E=kappa T`, its coupling, the matter Euler equations, linearized dynamics,
+constraint propagation, stability, or a physical D0 realization. In
+particular the assumption that the flat quadratic germ is already the
+Einstein germ must not be derived from naturality alone after removing Ward.
+
+#### Why the quadratic flat differential has the stated Einstein form
+
+This consumes the normal-jet/invariant-theory step already used in the
+existing owner. The local natural flat differential on quadratic normal
+metric variations is an O(1,d−1)-equivariant linear map from algebraic
+curvature tensors to symmetric two-tensors. It is therefore
+
+    L2(g) = A Ric(g) + B R(g) g.
+
+Differentiating the off-shell Ward identity at flat metrics gives a
+divergence-free linearized operator. Its order-two part is divergence-free
+separately. An elementary polynomial argument is enough: the operator
+vanishes on constant/linear pure-gauge metric variations. Under translation,
+the difference between a homogeneous cubic variation and its translate
+is quadratic plus linear/constant terms. Thus only the quadratic part
+contributes to the spatial derivative of the linearized output; a possible
+constant contribution from the cubic itself cancels. The cubic test gives
+
+    (A/2+B) d R_linear = 0
+
+for arbitrary cubic metric perturbations, and `B=-A/2`. No global
+finite-order bound is needed. The only remaining condition is `A=a!=0`.
+
+#### A native positive witness can certify a!=0
+
+Consider the constant-profile sourced quadratic Brinkmann metric
+
+    g_A = 2 du dv + (x^T A x) du^2 - dx^2 - dy^2,
+    tr A != 0,
+
+with A a constant real symmetric 2×2 matrix. Assume the witness and its
+displayed boost family lie in the declared common domain. It belongs to the existing
+primary family with constant `Psi'(u)` and quadratic harmonic coefficients.
+At the origin `g_A=eta+h2`, and the null boost
+
+    B_t(u,v,x,y)=(t u,t^(-1) v,x,y)
+
+obeys exactly `B_t^*g_A=eta+t²h2`. Naturality and flat differentiability give
+
+    B_t^* E(g_A)(0) = t² D E_eta[h2](0)+o(t²).
+
+The ten covariant-two components have boost weights
+`2,1,0,-1,-2`. Only the uu component has weight 2; every component of
+smaller weight must vanish. Dividing the uu identity by t² proves
+
+    E(g_A)(0)=aG(g_A)(0)
+
+exactly, without any scale assumption on E. If the SAME source has a real
+nonzero material coupling and admits `E(g_A)=kappa T(g_A)!=0`, then `a!=0`.
+This is an application of an actual sourced witness, not permission to
+assume that a configured source is the physical D0 source.
+
+#### Sharp controls and why each physical qualification remains
+
+* **Zero quadratic coefficient:** the conserved R² Euler tensor is smooth,
+  local, natural, flat-zero and obeys `B_R²(rho g)=rho^(-1)B_R²(g)`. It
+  meets projective covariance but has a=0 and is not Einstein. Its
+  linearization on a quartic metric perturbation can still be nonzero;
+  merely saying the full flat differential is nonzero is insufficient.
+* **Ward cannot be omitted:** `E=e^R G` is local, natural, smooth,
+  flat-zero, and projectively scale covariant. It has the correct nonzero
+  quadratic flat coefficient, but its divergence is
+  `e^R G_mu nu nabla^mu R`, generally nonzero.
+* **Locality cannot be omitted, even for an Euler source with a=1:** on a
+  compact four-dimensional spacetime set `I[g]=integral R_g dVol_g` and
+  `F[g]=1+I[g]^2`. Then `E[g]=F[g]G[g]` is, up to the conventional
+  metric-variation sign, the Euler source of `I+I^3/3`. At every flat
+  metric I=0 and the quadratic flat coefficient is exactly a=1. For
+  each fixed metric F is spatially constant, so the Ward identity holds.
+  Since `I[rho g]=rho I[g]`, projective covariance holds with the
+  positive ratio `(1+rho²I²)/(1+I²)`. This source is not germ-local and
+  does not commute with restriction. The cutoff comparison fails
+  precisely because a change near p changes F at q.
+* **Flat vacuum matters:** a pure cosmological source `E=b g`, b!=0,
+  is projectively scale covariant and conserved. It has E(eta)!=0 and
+  zero Einstein quadratic coefficient.
+* **A mixed R² correction is genuinely tested:** for the conformal metric
+  `g=e^(2 sigma)eta`, `sigma=b x^2+a x^4` with x spacelike, at the origin
+
+      G=diag(-4b,0,4b,4b),
+      B_R²=diag(-24b²−288a,−72b²,24b²+288a,24b²+288a).
+
+  For `E=G+beta B_R²`, the `(00,11)` projective minor between E(g) and
+  E(rho g) is `288 beta b³ (rho^(-1)−1)`. It is nonzero for
+  beta*b!=0 and rho!=1. A weak scale test on the Brinkmann family alone
+  would miss this because R² vanishes there.
+
+#### Supplement: exact reconstruction from a scale defect
+
+For any local natural flat-zero source with flat quadratic coefficient a,
+write `rho=lambda²`, `g_n(x)=g(lambda^(-n)x)` and
+
+    Delta(g)=E(rho g)−E(g).
+
+Whenever the flat limit above is valid, telescoping gives the exact identity
+
+    E(g)(p) = aG(g)(p)
+              − sum_(n>=0) lambda^(2n) Delta(g_n)(0).
+
+The series converges as the limit of its partial sums; absolute convergence
+requires an explicit stronger bound. If the norm sum is finite, it bounds
+the entire correction to Einstein. Summability does not make the correction
+zero: `E=G+beta B_R²` has geometrically summable defects and still differs
+from Einstein by beta B_R². Therefore this identity alone is a quantitative
+diagnostic, not an Einstein selection theorem.
+
+#### External context and novelty boundary
+
+Navarro–Sancho, *On the naturalness of Einstein's equation*,
+https://arxiv.org/abs/0709.1928, proves weight-zero natural-tensor uniqueness.
+The existing D0 owner already weakens all-scale covariance to one exact
+scale. The projective condition and cutoff proof above are an additional
+conditional derivation relative to that owner. A few targeted literature
+queries did not establish whether this formulation has appeared elsewhere;
+no priority claim is made. Peetre–Slovák,
+https://arxiv.org/abs/1411.7499, offers an alternative finite-order route,
+but is not required by the cutoff argument.
+
+The companion exact symbolic controls test explicit counterexamples and
+normalizations. They are not a machine-checked proof of Theorem P.
+
+### 7ga.R. Bounded independent mathematical review
+
+#### Independent review of projective one-scale Einstein rigidity
+
+Date: 18 November 2026. Input: `agent_rigidity/projective_rigidity.md` and the
+owned matched-source synthesis in PR #334, head
+`dc411daf01f697ec85dd22f28bfe124171796645`.
+
+##### Verdict
+
+The argument for Theorem P is valid under its explicitly stated local,
+off-shell, regularity, nonzero-flat-jet and Ward hypotheses. No counterexample
+was found satisfying all those hypotheses. This review is an analytical
+check, not a formal Lean proof or independent literature-priority assessment.
+It does not establish physical D0 Cost−Info binding C.
+
+##### What was checked independently
+
+1. Projective scaling need not supply any bound or sign for its factors.
+   Every rescaled source at the origin lies in one fixed tensor line. Its
+   nonzero quadratic flat limit therefore forces that line to be the
+   Einstein line. A zero source at a point with nonzero G would contradict
+   this limit.
+2. The Ward identity only makes the proportionality factor spatially
+   constant where G is invertible. It does not by itself make the factor
+   independent of the metric. The cutoff comparison supplies precisely
+   this missing implication.
+3. The cutoff metric equals one normal contraction near p and the adjacent
+   contraction near q. For fixed t>0, sufficiently small changes of t preserve
+   signature and invertibility of G throughout a compact connected bridge.
+   Locality transfers the source factors at both endpoints; spatial
+   constancy of the factor on the bridge equates them. Local constancy in t
+   and the flat limit then fix the universal coefficient a.
+4. Arbitrarily small compactly supported quadratic jet perturbations can
+   make the Einstein tensor invertible at a specified point. Trace reversal
+   is invertible in dimension d>=3. Smooth-topology convergence and source
+   continuity therefore include singular G and Ricci-flat points. No inverse
+   of G is used at those points.
+
+##### Essential qualifications
+
+- The domain must admit the local cutoff perturbations, not merely discrete
+  scaling and coordinate zooms. The theorem is an off-shell theorem on an
+  open local metric class, not a theorem inferred from one solution family.
+- Locality means restriction-compatible dependence on the metric germ.
+  A source of the form Gamma[g] G with a global history/action-dependent
+  multiplier is generally not in this class, even when it is conserved in
+  spacetime for each fixed g.
+- The Ward identity must be the gravitational off-shell identity. A total
+  metric-plus-matter source generally has matter Euler terms on its right
+  side. Those cannot be discarded during this proof.
+- The nonzero flat datum is the quadratic curvature jet. A nonzero flat
+  differential on higher-order jets alone is insufficient: an R² Euler
+  tensor is a counterexample to that weaker hypothesis.
+- The theorem relaxes exact scaling of the source magnitude to preservation
+  of its pointwise tensor line. It does not show that the physical D0 source
+  has that line property, descends to a metric germ, or has the required
+  physical Cost−Info interpretation.
+
+##### Suggested precision improvements delivered to the author
+
+The flat Ward classification can avoid a parity assumption: for a cubic
+polynomial perturbation h3, translation gives
+L(h3)(a)-L(h3)(0)=L(the quadratic translated part)(0), since L annihilates
+constant and linear pure-gauge perturbations. Differentiating this identity
+extracts the second-order divergence constraint irrespective of a constant
+third-order contribution.
+
+A nonlocal negative control should preserve the universal flat coefficient.
+For example, on a compact four-manifold with fixed admissible boundary data,
+I[g]=integral R dvol and E[g]=(1+I[g]^2)G[g] have flat coefficient one,
+the Ward identity, and projective scaling. The source is the Euler tensor
+of I+I^3/3 up to the conventional overall sign. It fails germ locality.
+The author accepted this improved countercontrol.
+
+##### C search result
+
+The owned primary source already contains the joint Gibbs/relative-entropy
+variational representation (7fs, PS8–PS10), including its generated optimizer
+and all normalization terms. Its physical promotion is expressly withdrawn
+in 7fu. Repeating that representation, assigning Bayesian or half-density
+information gains, or identifying the endpoint return with the full retained
+process would not supply C.
+
+No new actual primitive Cost−Info-to-source intertwiner was established in
+this review. A substantive positive next application must derive the actual
+weight/terminal map or control the complete source residual on the same
+history. Early readable work/preparation rows cannot be discarded merely
+because the final return is scalar or its spectrum is known.
+
+
+## 7gb. Actual stopped-port source, generated-preparation cancellation, and an exact fine-record covector
+
+18 November 2026. Same input and same existing owner. Phase: native
+realization / full-source comparison. Consumer: physical C, specifically
+the proposed collapse of the complete original full128 price source to
+its return/Dirac matrix source. Existing stationary/renewal owners are
+consumed, not reclassified as new discoveries. The new decisive test is
+an actual coframe tangent with D Lambda=0 and a strictly positive direct
+conditional-CQ source, after the generated input derivative is retained.
+
+The original one-Fourier full128 carrier is not identified with H.1 or
+the all42 graph. The CQ operand requires the declared classical readout;
+it is not selected as physical Book Info. The actual full128-to-native
+transport in section7fh remains a separate proved interface at its stated
+hypotheses. Other genuine price terms may compensate the displayed source.
+No universal impossibility statement or physical C acceptance follows.
+
+### Actual original full128 stopped-port source and the remaining fine-CQ response
+
+Research calculation, 18 November 2026. Pinned source: `gvakhrushev/d0_15`, PR334 head `dc411daf01f697ec85dd22f28bfe124171796645`. No remote changes. **GR_closed=false.**
+
+#### Result and scope
+
+The unchanged original 128-Kraus instrument has a particularly simple **actual paid-port source** when stopped on the first port0. At its original scalar Fourier section, including the derivative of the real recycling map and any normalized input preparation, that source is a positive multiple of `Tr DΛ`. The finite-cap formula is exact as well. This specializes existing original stationary-cost and general renewal identities; it is not a new selection of the full physical action.
+
+For the particular conditional fine-CQ functional defined below, the initially detected parity preparation normal disappears under the **actual generated stationary preparation law**: odd selfadjointness of the original zero-Walsh row forces `Tr Π DΛ=0`. However, an exact direct-channel calculation finds a separate CQ response on a genuine creator/coframe tangent with **`DΛ=0` as an operator**. Thus eliminating the parity preparation term does not turn this conditional CQ operand into a scalar multiple of the paid-port or one-reflection feedback source. The exact one-round residual is proved spectrally below; the longer stopped-entropy sum remains a numerical diagnostic with a separate analytic tail bound.
+
+#### 1. Native definitions and source pins
+
+The primary owner is `02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`, the present primary artifact:
+
+- §7bl, equation (528): literal creator order `(0,2,3,1)`, phases `(i,i,-1,-i)`, zero proper boost and common `0<ν<1`.
+- §7cx, equations (861)–(863): full original reflection, both Parseval identities, endogenous stationary DATA marginal and real odd-port output.
+- §7fh.A, NT1–NT3: exact original cost-marked transfer and port charges.
+- Initial §§2–3, equations (2)–(7): the separate actual material/CAR pure section, creator legs and proper exterior links. That material section is not automatically replaced by the stationary density considered here.
+
+`A4D_CLOSED_SELF_READING_DATA_SOURCE_RESOLVENT_2026_10_27.md` already owns the general source resolvent and the actual original fixed-horizon stationary port mean/source, C13–C19 and C28–C36. In particular C35 proves both Parseval identities and C36 the direct native stationary law. `A4D_WHOLE_HISTORY_MARKED_PRESSURE_RENEWAL_GR_SYNTHESIS_2026_10_22.md`, §§3–4, already distinguishes intensive and extensive stopped prices. `A4D_GOLDEN_BOOK_RENEWAL_UNIFICATION_AND_RANK_FLOOR_2026_10_22.md` already keeps the omitted physical preparation/controller/Info components separate. The result below does not supersede those distinctions.
+
+Write `p=(√5−1)/2`, `r=16`, `a=N0`, `Λ=a†a`, and
+
+\[
+ B_j=N_j^\dagger a,\qquad
+ R(X)=\sum_{j=0}^{63} B_j X B_j^\dagger,
+\]
+\[
+ K_{2j}=\delta_{j0}I-2p^2B_j,
+ \qquad K_{2j+1}=-2p\sqrt p\,B_j.
+\]
+
+All 128 original symbols, including literal zero slots, remain in the instrument. The actual port-code charge is `1+b`, for port `b`. No entropy tariff is inserted. Both original identities hold:
+
+\[
+ \sum_jN_jN_j^\dagger=I=\sum_jN_j^\dagger N_j.
+\]
+
+At the scalar section,
+
+\[
+ a=\frac\nu{16}\sum_{s=0}^3
+ [ (\phi_s-1)c_s+(\bar\phi_s-1)c_s^\dagger ],
+ \quad a=a^\dagger,\quad a^2=\lambda I,
+ \quad\lambda=\frac{5\nu^2}{128}.
+\]
+
+For `ν=3/5`, `λ=9/640`. The literal Gaussian-integer constructor in the checker gives exactly `num0† num0=360 I`, and both Parseval sums `25600 I`, with `Nj=numj/160`. These integer matrix identities are evaluated without rounding error at the small integers used.
+
+#### 2. Actual killed-map Poisson calculation
+
+Stop on port0 and continue on port1. Set `c=4p³`. The actual continuation map and one-visit paid-cost effect are
+
+\[
+ T(X)=\sum_j K_{2j+1}XK_{2j+1}^\dagger=cR(X),
+ \qquad T^\dagger I=c\Lambda,
+ \qquad G=I+T^\dagger I=I+c\Lambda.
+\]
+
+The stopped paid-port cost counts the terminal port0 charge and every preceding port1 charge. Its effect is
+
+\[
+ B=(I-T^\dagger)^{-1}G
+   =2(I-T^\dagger)^{-1}I-I.
+\]
+
+At the scalar section, both Parseval identities give
+
+\[
+ q=c\lambda<1,\quad T^\dagger I=T(I)=qI,
+ \quad B=bI,\quad b=\frac{1+q}{1-q},\quad\rho_0=I/r.
+\]
+
+The owned law `ρΛ=Λ^−1/Tr Λ^−1` is exactly stationary, and specializes to this input. This calculation does not newly prove uniqueness or attraction at the flat section, nor make a physically finite preparation free. Those preparation statements retain the original owner's mixing chart and paid-source conditions.
+
+For every smooth variation in the original instrument family, the true derivative, including the changed recycling map, obeys
+
+\[
+ DB=(I-T^\dagger)^{-1}\{DG+(DT^\dagger)B\}
+   =(1+b)(I-T^\dagger)^{-1}cD\Lambda.
+\]
+
+Since `T(ρ0)=qρ0`, pairing this identity with the actual central density yields
+
+\[
+ \boxed{DC_{\rm stop}
+ =\frac{2c}{r(1-c\lambda)^2}\operatorname{Tr}D\Lambda.}
+\]
+
+There is no frozen-state omission: `Tr[(Dρ)B]=b Tr Dρ=0` for any normalized input-state tangent at this center. The map `T` was never replaced by a Lüders operation or reset. Fine records are retained; the mean of this DATA-local port charge depends on their sum.
+
+At `ν=3/5`,
+
+\[
+ q=0.013278823734363173,\quad
+ C_{\rm stop}=1.0269150476421687,\quad
+ DC_{\rm stop}=0.12123225571981687\operatorname{Tr}D\Lambda.
+\]
+
+##### Exact finite cap
+
+For a cap of `M` actual visits, retain the unresolved all-port1 word and add no invented terminal charge. Then
+
+\[
+ B_M=\sum_{j=0}^{M-1}(T^\dagger)^jG,
+ \quad B_M|_0=b_M(q)I,
+ \quad b_M(q)=\frac{(1+q)(1-q^M)}{1-q},
+\]
+\[
+ \boxed{DC_M=\frac c r b'_M(q)\operatorname{Tr}D\Lambda,\quad
+ b'_M(q)=\frac{2(1-q^M)}{(1-q)^2}
+ -\frac{M(1+q)q^{M-1}}{1-q}.}
+\]
+
+An equivalent manifestly positive expression is `b′M=2 Σ(j=1,…,M−1) j q^(j−1)+M q^(M−1)`. The infinite-minus-finite coefficient is exactly
+
+\[
+ \frac c r\left[
+  \frac{2q^M}{(1-q)^2}
+  +\frac{M(1+q)q^{M-1}}{1-q}\right].
+\]
+
+This prices the stated native port observations. Additional actual cap-controller, clock, initialization and work charges require their own source.
+
+##### Relation to the original one-reflection feedback source
+
+For the same original full reflection, equation (861) gives
+
+\[
+ C_{\rm cold}=I-2p^2\Lambda,\quad
+ F_{\rm pre}=I-C_{\rm cold}^2=4p^2\Lambda(I-p^2\Lambda).
+\]
+
+For its feedback `Jpre=−log det(I−z Fpre)`, at the scalar section,
+
+\[
+ DJ_{\rm pre}=
+ \frac{4zp^2(1-2p^2\lambda)}{1-zf}\operatorname{Tr}D\Lambda,
+ \quad f=4p^2\lambda(1-p^2\lambda).
+\]
+
+The coefficient is positive on the stated positive-contraction chart. Hence `DCM` and `DCstop` are positive multiples of `DJpre` there. **This compares the stopped tree's port mean with the one-reflection feedback source. It does not identify the stopped tree's whole physical H+J+R price.** It supplies neither an all42 native lift nor a uniform source norm/gain on a changing field mesh.
+
+#### 3. Which fine-CQ functional was tested
+
+For a complete efficient fine instrument with words `Kγ`, define the particular operand
+
+\[
+ I_{\rm CQ}(\rho)=
+ S\left(\bigoplus_\gamma K_\gamma\rho K_\gamma^\dagger\right)-S(\rho).
+\]
+
+Every original fine label is retained. If the input density is purified by unchanged oldRIGHT, this operand equals `H(classical fine record | oldRIGHT)` **after an actual classical readout**. It is not the entropy of a wholly coherent archived isometry, nor the entropy of record+DATA+oldRIGHT together. The direct sum itself requires an admitted classical readout or the corresponding conditioning operation. No owned physical Book Info-selection theorem has been supplied by this calculation.
+
+At `ρ0=I/r`, let `Eγ=Kγ†Kγ` and
+
+\[
+ G_{\log}=\sum_\gamma E_\gamma\log E_\gamma.
+\]
+
+Then the input-source formula is exactly
+
+\[
+ D_\rho I_{\rm CQ}=-\operatorname{Tr}(G_{\log}D\rho).
+\]
+
+##### Exact one-round parity component
+
+With `Π=(−1)^Nfermion`, the unchanged original one-round instrument at the flat common-ν section satisfies
+
+\[
+ G_{\log}=\alpha I+\beta\Pi,
+ \qquad
+ \boxed{\beta=-p^2\lambda(1-\sqrt{1-\nu^2})^2\log2.}
+\]
+
+In particular, `β=−9p² log2/16000=−0.000148926748369…` at `ν=3/5`.
+
+Proof: put `a=√λ U`, where `U` is odd Hermitian unitary. The scalar multiples in the even/odd ports contribute a scalar operator by Parseval. Their nonscalar contribution is
+`4p²λ U [Σj Nj Nj† log(Nj Nj†)] U†`.
+Odd CAR-linear Walsh rows have scalar squared effects. The only nonscalar even-root rows are the four Hadamard sums
+`Nj=d Σs σjs Zs`, `d=(1−√(1−ν²))/8`, each sign product positive. On even parity exactly one squared sum is `16` and three are zero; on odd parity all four squared sums are `4`. The coefficient of Π in their summed `H logH` is `(1−√(1−ν²))² log2/4`. Conjugation by odd `U` reverses Π, producing the displayed β. Consequently individual fine effects are not scalar, even though the two coarse port effects are scalar.
+
+##### Stopped fine words: bounded numerical calculation
+
+The actual stopped-word sum with zero, one and two continuations gives:
+
+| Continuations | Nonzero original stopped words | Contribution to β |
+|---:|---:|---:|
+| 0 | 21 | −0.00005688495604308677 |
+| 1 | 441 | −0.00009033615179492621 |
+| 2 | 9261 | −0.00000043826009453036447 |
+| Total | 9723 | −0.00014765936793254336 |
+
+For `n` continuations, the sum of the fine effects is exactly `(1−q)q^n I`. At most `64^(n+1)` labels refine it. Operator convexity of `x log x` bounds the normalized refinement entropy operator between `0` and `(n+1)log64 I`. Pairing with `Π/r`, whose positive and negative parts each have trace `1/2`, proves the independent tail bound
+
+\[
+ \boxed{|\beta_{n\ge m}|\le
+ \frac{\log64}{2}q^m\left(m+1+\frac q{1-q}\right).}
+\]
+
+For `m=3` it is `1.9540883919987842×10^−5`. The finite sums are floating eigensystem calculations; the printed sum±tail interval is **not a validated interval enclosure** without an enclosure for those finite computations. Eigensystem residuals alone do not supply that enclosure.
+
+Every original Kraus word at this section is parity homogeneous. Thus, for the formal density family `ρs=(I+sΠ)/16`, `|s|<1`, the conditional fine-CQ gain is exactly affine:
+
+\[
+ I_{\rm CQ}(\rho_s)=-\alpha_{\rm stop}-s\beta_{\rm stop}.
+\]
+
+Indeed each parity block carries a scalar factor `(1±s)/16`, and its logarithmic normalization terms cancel against `S(ρs)` by completeness. A nonzero β would give no interior stationary point in this family. This does not assert that the physically generated preparation admits independently varying `s`.
+
+#### 4. Exact cancellation on the actual generated stationary preparation
+
+The true original zero-Walsh row is selfadjoint and odd on the genuine shifted creator/proper-exterior family. Set `Λ=a²`. Cyclicity gives, for every actual tangent `Da`,
+
+\[
+ \boxed{\operatorname{Tr}(\Pi D\Lambda)
+ =\operatorname{Tr}[\Pi(aDa+Da\,a)]
+ =\operatorname{Tr}[(\Pi a+a\Pi)Da]=0.}
+\]
+
+This uses the actual CAR operator, not a replacement Lorentz-Cl4 trace argument. For invertible odd selfadjoint `a`, the two parity blocks of `a²` have identical spectra. Hence `Tr ΠΛ^−1=0` and `Tr ΠρΛ=0` identically for
+
+\[
+ \rho_\Lambda=\Lambda^{-1}/\operatorname{Tr}\Lambda^{-1}.
+\]
+
+At the scalar section its complete derivative is
+
+\[
+ D\rho_\Lambda=-\frac{D\Lambda}{r\lambda}
+ +\frac{\operatorname{Tr}D\Lambda}{r^2\lambda}I.
+\]
+
+Therefore the one-round `αI+βΠ` preparation cotangent pulls back to zero on this generated family. This is a positive exact cancellation, including the proper source of the moving density. It does not cancel an independently admitted preparation normal, and it does not cancel the direct Kraus/channel source. The separate original material pure section and its oldRIGHT constraints cannot silently be replaced by `ρΛ`.
+
+#### 5. Exact direct-channel CQ source on an actual creator/coframe direction
+
+At the scalar center, the complete first derivative of the chosen one-round operand, after the generated-preparation contribution above is included, is
+
+\[
+ DI_{\rm CQ}=-\frac1r\sum_z
+ \operatorname{Tr}[(DE_z)\log(E_z)|_{\operatorname{supp}E_z}].
+\]
+
+Completeness cancels the `+I` term. Zero eigenvalues acquire probability only to second order under a smooth Kraus variation, so they contribute no omitted first derivative; a second derivative can have a logarithmic singularity.
+
+The checker varies the actual flat creator legs `Cr=ν cr` and shifted legs `xr=Cr φr` together. Every original Julia square-root derivative is computed by its Sylvester equation. It does not freeze the defects, change Kraus decomposition, or insert a new continuation. Two real coframe directions are:
+
+| Actual variation | `Tr DΛ` | Direct `D I_CQ` | Generated-preparation source |
+|---|---:|---:|---:|
+| `V00: DC0=c0` | 0.15 | 0.0934612635803271 | 0 |
+| `V01: DC0=c1` | 0.15 | 0.07752469946223296 | 0 |
+
+All other `Cr` are unchanged, and `Dx0=DC0 φ0`. Thus the tangent `V00−V01` has
+
+\[
+ \operatorname{Tr}D\Lambda=0,
+ \qquad DI_{\rm CQ}\simeq0.01593656411809414.
+\]
+
+##### Exact spectral proof of the displayed residual
+
+The same tangent admits a stronger exact calculation. Set
+
+\[
+ DC_0=c_0-c_1,\qquad Dx_0=i(c_0-c_1),
+\]
+
+with every other original leg fixed. Differentiate the actual Julia roots, including the baseline roots. At `ν=3/5`, all row matrices and these root jets have Gaussian-rational entries. Direct CAR contraction gives **`DΛ=0` as a full matrix**. Consequently the full generated-density derivative also vanishes, and every first source depending only on Λ vanishes on this tangent.
+
+Put `Mj=Nj Nj†`. The trace entropy is invariant under the moving unitary `U=a/√λ`; since `DΛ=0`, the original two port coefficients and scalar quiet effect supply no extra first term. Thus
+
+\[
+ DI_{\rm CQ}=-\frac{p^2\lambda}{4}
+ \sum_j\operatorname{Tr}[(DM_j)\log M_j].
+\]
+
+The exact aggregated spectral weights `wμ=Σj Tr(Pj,μ DMj)` are
+
+| Positive eigenvalue μ of `Mj` | Exact aggregate weight `wμ` |
+|---|---:|
+| `81/100` | `−27/10` |
+| `1/400` | `3/20` |
+| `1/100` | `3/20` |
+| `9/640` | `6/5` |
+| `27/3200` | `6/5` |
+
+All other weights vanish; the five displayed weights sum to zero. The exact matrix calculation verifies that every baseline `Mj` is diagonal in the original CAR bit basis. Its spectral weights are therefore obtained directly by grouping the exact diagonal entries of `DMj` by the corresponding rational diagonal entry of `Mj`; there are 13 rows with a nonzero effect derivative. Zero-support diagonal derivatives are checked to vanish exactly, consistently with positivity under a two-sided smooth Kraus variation. No numerical spectrum, floating sign or guessed spectral multiplicity enters this check.
+
+The sum is
+
+\[
+ \sum_\mu w_\mu\log\mu
+ =-\frac3{10}(41\log2+16\log3-4\log5),
+\]
+
+and therefore
+
+\[
+ \boxed{D\Lambda=0,\qquad
+ DI_{\rm CQ}=
+ \frac{27p^2}{25600}
+ (41\log2+16\log3-4\log5)>0.}
+\]
+
+Its value is `0.015936564118094158530180393058699…`. Positivity is elementary, for example `3^4>5` already makes `16log3−4log5>0`. This is an exact residual on the original coframe family and generated density, not a parity-preparation residual. The one-round paid-port-minus-this-CQ source is negative on this tangent, while the one-reflection feedback source and every stopped-port source above are zero. The result does not assert the full stopped-CQ geometric derivative.
+
+The broader 16-row probe remains useful as a diagnostic: the coframe source component orthogonal to `Tr DΛ` has Euclidean-coordinate norm `0.024173489024746777`; this is not the physical all42 source norm. The original single role1 proper boost gives `Tr DΛ=−0.0225`, `DI_CQ=−0.01162870491933494`. All completeness first-jet residuals in that floating probe are below `1.9×10^−16`.
+
+This theorem concerns the stated conditional readout operand. It is not a proof that every possible physical Info law has the same residual, nor an independent physical native-admission certificate. Natural logarithms are used; changing the entropy unit scales the exact positive source and does not remove it.
+
+#### 6. Final status of this route
+
+The actual original port-cost component admits the stated finite-cap and stopped source theorem. The generated-density parity term cancels exactly on the actual selfadjoint odd family. The chosen conditional fine-CQ source still sees an exactly demonstrated additional geometric direction already at one round, even with `DΛ=0` and `DρΛ=0`. No equality of the complete physical Cost−Info source with the metric-source consumer follows.
+
+The remaining C obligation is the same execution's **selected full variational valuation**: its actual information operand and complete preparation/reference/controller/clock/work terms, with the true admitted tangents. These terms would have to supply the remaining direct field and internal sources, with the actual all-row norm and gain. None is defined here by subtracting the target source. This calculation closes no independent physical C row by decree and makes no GR-closure claim.
+
+##### Reproduction
+
+- `agent_synthesis/check_actual_stopped_cost.py` and `.json`: unchanged native integer constructor, stopped port formula and bounded fine-word entropy diagnostic.
+- `agent_synthesis/check_direct_cq_source.py` and `.json`: one-round analytic first jets on 16 creator/coframe, common-ν, phase and original role1-boost directions.
+- `agent_rigidity/check_full128_cq_coframe_residual.py`: exact Gaussian-rational constructor, actual Sylvester jets, matrix `DΛ=0`, all64-row logarithmic weights and strict positive sign by integer comparison.
+- `agent_rigidity/full128_cq_coframe_residual.txt` and `.json`: the independent short exact proof and its receipt. Its final checker additionally verifies the exact diagonal spectral projectors and `P0 DMj P0=0` for every row.
+- `agent_synthesis/check_uniform_book_source.py`: original constructor consumed by the direct-jet checker. The portable replay below reads the repository bytes with Git blob `ee8de4635d24c668949ac9a0186616ab7d59f2ed`. The earlier downloaded copy differed only by one extra terminal LF; it was not that exact byte stream.
+
+
+### 7gb.R. Frozen scientific review and exact input provenance
+
+The following review is an internal analytical/replay review. Its historical
+workspace names refer to the imported files, not new repository dependencies.
+The portable extraction below defines the repository reproduction paths.
+
+#### Научный аудит интеграции двух пакетов в PR334
+
+18 ноября 2026. Проверены замороженные материалы `agent_rigidity`,
+`agent_synthesis` и две независимые рецензии `agent_alternative`.
+Исторический научный вход: `gvakhrushev/d0_15`, PR334,
+`dc411daf01f697ec85dd22f28bfe124171796645`.
+Репозиторий и прежние файлы при этом аудите не изменялись.
+
+##### Заключение
+
+**Оба пакета пригодны для интеграции с указанными ниже границами.**
+Теоремы P и Z имеют корректные аналитические доказательства при своих
+явных предпосылках. Формулы stopped-port и точный full128 CQ-остаток
+согласованы по нормировкам. Четыре проверки повторены на копиях из
+постороннего рабочего каталога; их JSON семантически совпали с каждым
+замороженным receipt. Это не формальная проверка теорем P/Z и не
+независимая физическая валидация D0.
+
+Интеграция в продолжения **§§7ga/7gb существующего primary owner**,
+с embedded scripts/receipts и переносимым извлечением, соответствует
+согласованному ограничению на два изменяемых пути. Отдельные owners
+для уже принадлежащих проекту теорем о стационарной подготовке,
+Parseval, renewal и точном масштабировании создавать не требуется.
+`GR_closed=false`; физическая binding C не закрыта.
+
+##### 1. Минимальный набор математических утверждений
+
+###### Проективная жёсткость
+
+Для metric-only, germ-local, Diff-natural симметричного ковариантного
+тензора E, непрерывного на объявленной области гладких метрик,
+дифференцируемого у плоских метрик, с `E(η)=0`, **ненулевым квадратичным
+эйнштейновским плоским коэффициентом** и гравитационным off-shell Ward,
+достаточно одного закона
+
+`E(λ²g)(p)=r[g](p)E(g)(p)`, `λ>1`, `0<|r[g](p)|<∞`,
+
+чтобы получить `E=aG` всюду в объявленной области. Нужна её явная
+замкнутость относительно дискретных blow-up, непрерывного пути
+нормальных сжатий и малых локальных cutoff-возмущений. Порядок
+дифференциального оператора заранее не ограничен.
+
+Доказательство действительно содержит необходимый дополнительный шаг:
+Ward даёт постоянство множителя по координатам только там, где G
+обратим; **локальное склеивание двух близких метрик** переносит это
+постоянство между метриками. Плотность обратимых Ricci/Einstein-джетов
+и непрерывность включают сингулярные G и G=0. Условие относится ко
+всем допустимым метрикам, а не только к найденным решениям.
+
+Без Ward остаётся теорема Z: при **отдельно сохранённом** ненулевом
+Einstein-квадратичном плоском джете `E(g)(p)=0 ⇔ G(g)(p)=0`.
+Она не калибрует непустой источник материи, коэффициент связи,
+линеаризованную динамику или устойчивость. Полный metric-plus-matter
+Ward нельзя подменять гравитационным тождеством без его законного выделения.
+
+Новое относительно существующего
+`A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md` — ослабление
+**точного равенства масштаба** до сохранения линии источника и
+соответствующее cutoff-доказательство, а также Z. Приоритета в мировой
+литературе не установлено. Символьные R², cosmological и Ward-контроли
+иллюстрируют ограничения; они не доказывают P/Z машинно.
+
+###### Stopped-port и CQ
+
+Существующие owners stationary preparation/Parseval и renewal уже дают
+большую часть общей конструкции. Допустимо добавить её точную
+специализацию: на исходном скалярном Fourier-сечении original full128
+источник оплаченной остановки на первом port0 равен положительному
+множителю `Tr DΛ`, включая настоящее изменение recycling map и
+любую нормированную касательную входного состояния при центральном
+`ρ0=I16/16`. Аналогичная конечная cap-формула точна.
+
+Следующее новое уточнение существенно: подготовительный parity-ковектор
+выбранного CQ-функционала сокращается на **порождаемой** подготовке
+`ρΛ=Λ⁻¹/Tr Λ⁻¹`, но его прямой channel-ковектор не сокращается.
+Для реальной coframe-касательной
+
+`DC0=c0−c1`, `Dx0=i(c0−c1)`
+
+при фиксированных остальных ногах, Fourier-фазах и proper links
+точно получено
+
+`DΛ=0` как матричное равенство, `DρΛ=0`,
+
+`DI_CQ = 27p²/25600 · (41 ln2 + 16 ln3 − 4 ln5) > 0`.
+
+Это исключает first-source factorization **данного** `I_CQ` только через
+Λ на данном сечении. Это не full stopped-CQ derivative, не all42/H.1
+и не запрет компенсации другими фактическими Cost/Info/work/clock/
+preparation-компонентами той же истории.
+
+##### 2. Нормировки и области вариаций
+
+Проверены `p=(√5−1)/2`, `p²+p=1`, `r=16`, `ν=3/5`,
+`Λ=λI`, `λ=9/640`, `c=4p³`, `q=cλ`.
+Цена остановки считает terminal port0 с ценой 1 и каждое предыдущее
+port1 с ценой 2:
+
+`Cstop=(1+q)/(1−q)`,
+
+`DCstop=2c/[16(1−q)²] · Tr DΛ`.
+
+Для cap M оплачены только M фактически выполненных посещений;
+неразрешённой all-port1 ветви не приписана дополнительная конечная цена.
+`CM=(1+q)(1−q^M)/(1−q)` и её производная в записке согласованы.
+Это port-cost-компонента; конечная подготовка, контроллер и часы не
+становятся бесплатными вследствие стационарности плотности.
+
+CQ использует **натуральные логарифмы** и конкретное
+`S(⊕γ KγρKγ†)−S(ρ)`. Интерпретация как `H(record|oldRIGHT)` требует
+указанной чистой пурификации входа и фактического classical readout.
+Эта величина не объявлена выбранной физической Book Info и не является
+энтропией всей неизмеренной когерентной истории.
+
+Касательная изменяет настоящие creator и shifted legs одновременно;
+обе пары Julia roots, включая baseline C roots, дифференцируются по
+Sylvester. При ν=3/5 strict positive root chart сохраняется для малых
+двусторонних coframe-возмущений. Дополнительной новой сертификации
+всех физически допустимых программ эта конечная геометрическая
+проверка не даёт. Перенос с одного Fourier-блока CAR16 на полный
+пространственный graph, all42 или H.1 здесь не доказан.
+
+Нулевая поддержка эффектов не даёт пропущенной первой производной:
+новые вероятности имеют порядок O(t²), а entropy — O(t²|ln|t||).
+Это не разрешает заявлять гладкость второй производной.
+
+Формулы `Tr ΠDΛ=0` и `Tr ΠρΛ=0` используют нечётность и
+самосопряжённость A в `Λ=A²`; exterior links и shifts чётны.
+При движущемся положительном pairing необходимо сохранять истинный
+adjoint или действительный чётный whitening. Отдельная исходная
+material pure section не заменяется на `ρΛ` без физического основания.
+
+##### 3. Воспроизводимость embedded-пакета
+
+| Проверка | Фактическая зависимость | Результат повторения |
+|---|---|---|
+| `check_projective_rigidity.py` | Python + SymPy | PASS; JSON равен controls |
+| `check_full128_cq_coframe_residual.py` | Python + SymPy; самостоятельный exact constructor | PASS; JSON равен exact receipt |
+| `check_actual_stopped_cost.py` | Python + NumPy | JSON равен diagnostic receipt |
+| `check_direct_cq_source.py` | Python + NumPy/SciPy/SymPy; соседний `check_uniform_book_source.py` | JSON равен diagnostic receipt |
+
+Среда повторения: Python 3.12.14, SymPy 1.14.0, NumPy 2.3.5,
+SciPy 1.17.0. Каждый frozen receipt и исходник внесён с SHA256 в
+соседний `scientific_integration_manifest.json`.
+
+Для переносимого извлечения существенны следующие детали:
+
+- Projective-checker пишет соседний `projective_rigidity_controls.json`
+  и использует `assert`. Запускать обычным Python в временном каталоге;
+  проверка под `python -O` для него не заявлена.
+- Exact full128-checker применяет явные `need`, печатает JSON в stdout,
+  но сам не создаёт receipt. Перенаправление/сравнение делает runner.
+- Два численных checker сами пишут соседние `.json`. Direct-checker
+  ищет helper через `Path(__file__).with_name(...)`, независимо от cwd;
+  извлекать их в один временный каталог. Его импорт не запускает
+  `main()` большого upstream-checker.
+- Frozen local helper содержит **один дополнительный LF в конце**
+  относительно исходного Git blob. Истинный upstream blob —
+  `ee8de4635d24c668949ac9a0186616ab7d59f2ed`, SHA256
+  `1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9`.
+  Frozen helper SHA256 —
+  `c981f1df3cb7e1634655343013bdd78c0eddd5211b9f6f3eff3d181197755fcb`.
+  Формулы и исполняемый код идентичны. Нельзя одновременно называть
+  эти два разных byte-stream одним и тем же Git blob.
+- `agent_*`, `source_snapshot/*` и абсолютные workspace-пути в старых
+  рецензиях — исторические местоположения. В интеграционном тексте
+  указывать текущие primary anchors и embedded block names; старые
+  frozen bytes можно оставить как provenance. PDF, упомянутый в одной
+  старой рецензии, не является зависимостью доказательства или checker.
+
+Exact full128 receipt доказывает заявленный знак через рациональные
+спектральные проекторы и целочисленное сравнение. Его десятичная запись
+лишь иллюстративна. Напротив, конечная stopped-entropy сумма и broader
+22-row probe остаются floating diagnostics. Аналитический bound хвоста
+не превращает floating finite sum в validated interval enclosure.
+
+##### 4. Полезное общее сокращение источника
+
+При фиксированной или чётно транспортируемой градуировке, нечётном
+самосопряжённом A и равных размерностях parity-секторов блоки A²
+изоспектральны. Следовательно, для любой определённой нормированной
+спектральной подготовки `ρf=f(A²)/Tr f(A²)`:
+
+`Tr Πρf=0`, `Tr ΠDρf=0`.
+
+Любой входной ковектор вида `αI+βΠ` поэтому тождественно исчезает на
+pullback такой **фактической** подготовки. Это непосредственное
+следствие уже выполненного доказательства, а не новый выбор Info.
+Оно сокращает один класс preparation-строк C. Точный CQ-вектор выше
+показывает, почему direct-channel строка при этом остаётся: любой
+предлагаемый полный источник, зависящий только от Λ, равен нулю на
+этом v, поэтому остальные фактические компоненты должны компенсировать
+ненулевой `DI_CQ[v]`, если именно такой CQ был выбран физически.
+
+**Итоговый допустимый статус:** условная глобальная математическая
+теорема; точная original-instrument специализация port-cost; доказанное
+сокращение generated preparation; точный ненулевой direct CQ residual.
+Полной идентификации физической Cost−Info и закрытия ОТО нет.
+
+### 7gb.V. Portable extraction and affected replay
+
+Run the following from the repository root with Python 3, SymPy, NumPy and
+SciPy installed. It verifies the embedded bytes and the original upstream
+constructor, extracts into a temporary directory, and compares actual JSON
+with frozen expected receipts. No expected evidence or repository file is
+rewritten by replay. The projective script uses ordinary Python; only the
+explicit-check exact full128 script is also run with optimization enabled.
+The diagnostics retain their numerical scope. Unchanged geometric, heat,
+registered-certificate and Lean suites are not claimed as replayed here.
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+import hashlib, json, re, shutil, subprocess, sys, tempfile
+
+root = Path.cwd()
+primary = root / "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
+text = primary.read_text(encoding="utf-8")
+def block(name):
+    marker = "<!-- BEGIN D0 20261118 FILE " + name + " -->"
+    end = "<!-- END D0 20261118 FILE " + name + " -->"
+    if text.count(marker) != 1 or text.count(end) != 1:
+        raise RuntimeError("missing or ambiguous checkpoint block: " + name)
+    raw = text.split(marker, 1)[1].split(end, 1)[0]
+    lines = raw.strip("\n").splitlines(keepends=True)
+    if not lines or not lines[0].startswith("```") or lines[-1].strip() != "```":
+        raise RuntimeError("malformed code fence: " + name)
+    return "".join(lines[1:-1]).encode()
+
+manifest = json.loads(block("checkpoint_manifest.json"))
+with tempfile.TemporaryDirectory(prefix="d0-20261118-source-") as directory:
+    work = Path(directory)
+    for name, digest in manifest["files"].items():
+        raw = block(name)
+        if hashlib.sha256(raw).hexdigest() != digest:
+            raise RuntimeError("changed embedded bytes: " + name)
+        (work / name).write_bytes(raw)
+    helper = manifest["repository_helper"]
+    raw = (root / helper["path"]).read_bytes()
+    blob = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
+    if hashlib.sha256(raw).hexdigest() != helper["sha256"] or blob != helper["git_blob"]:
+        raise RuntimeError("changed original constructor; review and replay required")
+    (work / "check_uniform_book_source.py").write_bytes(raw)
+    cases = [
+        ("check_projective_rigidity.py", "expected_projective_rigidity_controls.json", False),
+        ("check_full128_cq_coframe_residual.py", "expected_full128_cq_coframe_residual.json", True),
+        ("check_actual_stopped_cost.py", "expected_actual_stopped_cost.json", False),
+        ("check_direct_cq_source.py", "expected_direct_cq_source.json", False),
+    ]
+    receipts = []
+    for script, expected_name, optimized in cases:
+        expected = json.loads((work / expected_name).read_text())
+        modes = [[], ["-O"]] if optimized else [[]]
+        for mode in modes:
+            run = subprocess.run([sys.executable, *mode, "-Werror", str(work / script)],
+                                 cwd=work, capture_output=True, text=True, check=True)
+            if run.stderr:
+                raise RuntimeError("unexpected stderr from " + script + ": " + run.stderr)
+            got = json.loads(run.stdout)
+            if got != expected:
+                raise RuntimeError("receipt mismatch: " + script)
+            receipts.append({"script": script, "mode": "optimized" if mode else "normal", "result": "matched frozen JSON"})
+    print(json.dumps({"status": "PASS_IMPORTED_SOURCE_CHECKPOINT_20261118", "checks": receipts,
+                      "GR_closed": False, "physical_C_closed": False}, indent=2, sort_keys=True))
+PY
+```
+
+<!-- BEGIN D0 20261118 FILE checkpoint_manifest.json -->
+```json
+{
+  "GR_closed": false,
+  "dependencies": [
+    "Python 3",
+    "SymPy",
+    "NumPy",
+    "SciPy"
+  ],
+  "files": {
+    "check_actual_stopped_cost.py": "1e6e75ac1808297e10b8e19ecfb75791d9ee0fbc788d313f29cfdea51665d068",
+    "check_direct_cq_source.py": "6d32a47f6a99d40bc98020a81656e1e1751912c60d5a7775e6e92cdcb93a4bfa",
+    "check_full128_cq_coframe_residual.py": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66",
+    "check_projective_rigidity.py": "d5b6cf90484b354c5322da5af09a58558774a1a4c5040e9880958a8c6c530e0b",
+    "expected_actual_stopped_cost.json": "22bf03f510889731564244352e3d688e90f51b250247843a21eb65f5f60378cc",
+    "expected_direct_cq_source.json": "1c1cd56930e84d46af4b9ceae46f03e450277f72ff069a3d9f21c8107b634754",
+    "expected_full128_cq_coframe_residual.json": "36380566abc1d584b619d926f3f83f7ecb2fbef3523e93e68de6291b11161c51",
+    "expected_projective_rigidity_controls.json": "25d7da5921828e841aa40ff416718e29295914c3e799a9b6197dc9a78aec008f"
+  },
+  "input_commit": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "physical_C_closed": false,
+  "primary": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+  "receipt_scope": "Exact rational/symbolic controls and separately labelled floating diagnostics; not a machine proof of projective rigidity or physical GR.",
+  "repository_helper": {
+    "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+    "path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+    "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9"
+  },
+  "schema": "d0-20261118-imported-source-checkpoint/1"
+}
+```
+<!-- END D0 20261118 FILE checkpoint_manifest.json -->
+
+<!-- BEGIN D0 20261118 FILE check_projective_rigidity.py -->
+```python
+"""Exact finite controls for the conditional projective rigidity derivation.
+
+The analytic theorem is not inferred from these controls.  SymPy computes a
+conformal metric's curvature, the R^2 Euler tensor, and projective minors.
+"""
+import json
+from pathlib import Path
+import sympy as sp
+
+x = sp.symbols("x", real=True)
+f = sp.Function("f")(x)
+eta = sp.diag(1, -1, -1, -1)
+g = sp.exp(2*f)*eta
+ginv = sp.exp(-2*f)*eta
+
+def deriv(expr, index):
+    return sp.diff(expr, x) if index == 1 else sp.S.Zero
+
+Gamma = [[[sp.simplify(sum(
+    ginv[c, d]*(deriv(g[d, b], a)+deriv(g[d, a], b)-deriv(g[a, b], d))
+    for d in range(4))/2)
+    for b in range(4)] for a in range(4)] for c in range(4)]
+
+Ric = sp.zeros(4)
+for a in range(4):
+    for b in range(4):
+        Ric[a, b] = sp.simplify(sum(
+            deriv(Gamma[c][a][b], c)-deriv(Gamma[c][a][c], b)
+            + sum(Gamma[c][c][d]*Gamma[d][a][b]
+                  - Gamma[c][b][d]*Gamma[d][a][c] for d in range(4))
+            for c in range(4)))
+R = sp.simplify(sum(ginv[a, b]*Ric[a, b] for a in range(4) for b in range(4)))
+Ein = sp.simplify(Ric-g*R/2)
+HessR = sp.zeros(4)
+for a in range(4):
+    for b in range(4):
+        HessR[a, b] = sp.simplify(deriv(deriv(R, a), b)
+            - sum(Gamma[c][a][b]*deriv(R, c) for c in range(4)))
+boxR = sp.simplify(sum(ginv[a,b]*HessR[a,b] for a in range(4) for b in range(4)))
+BR2 = sp.simplify(2*R*Ric-g*R**2/2+2*(g*boxR-HessR))
+
+a, b, beta, rho = sp.symbols("a b beta rho", real=True, nonzero=True)
+sig = b*x**2+a*x**4
+def at_origin(matrix):
+    return matrix.applyfunc(lambda z: sp.simplify(z.subs(f, sig).doit().subs(x, 0)))
+
+G0 = at_origin(Ein)
+B0 = at_origin(BR2)
+assert G0 == sp.diag(-4*b, 0, 4*b, 4*b)
+assert B0 == sp.diag(-24*b*b-288*a, -72*b*b, 24*b*b+288*a, 24*b*b+288*a)
+
+source = G0+beta*B0
+scaled = G0+beta/rho*B0
+minor = sp.factor(source[0,0]*scaled[1,1]-source[1,1]*scaled[0,0])
+assert sp.simplify(minor-288*beta*b**3*(1/rho-1)) == 0
+
+Lambda = sp.symbols("Lambda", real=True)
+cosmo_source = G0+Lambda*eta
+cosmo_scaled = G0+rho*Lambda*eta
+cosmo_minor = sp.factor(cosmo_source[0,0]*cosmo_scaled[1,1]
+                      - cosmo_source[1,1]*cosmo_scaled[0,0])
+assert sp.simplify(cosmo_minor-4*b*Lambda*(rho-1)) == 0
+
+eps = sp.symbols("eps", real=True)
+quadratic_B = B0.subs(a, 0).subs(b, eps*b)
+assert quadratic_B.diff(eps).subs(eps, 0) == sp.zeros(4)
+quartic_B = B0.subs(b, 0).subs(a, eps*a)
+assert quartic_B.diff(eps).subs(eps, 0)[0,0] == -288*a
+
+# e^R G is projective, but a direct local jet has nonzero divergence.
+# sigma=b(t^2+x^2)+c t^3 at t=x=0: Ric=diag(-4b,-4b,0,0),
+# R=0 and partial_t R=-36c in the (+---) convention.
+c = sp.symbols("c", real=True)
+t = sp.symbols("t", real=True)
+sigma2 = b*(t*t+x*x)+c*t**3
+coords = (t, x, sp.symbols("y"), sp.symbols("z"))
+dsig = sp.Matrix([sp.diff(sigma2, q) for q in coords])
+hess = sp.hessian(sigma2, coords)
+boxsig = sp.trace(eta*hess)
+gradsq = (dsig.T*eta*dsig)[0]
+Ric2 = -2*hess-eta*boxsig+2*(dsig*dsig.T-eta*gradsq)
+R2 = sp.simplify(sp.exp(-2*sigma2)*sp.trace(eta*Ric2))
+G2 = sp.simplify(Ric2-sp.exp(2*sigma2)*eta*R2/2)
+point = {q: 0 for q in coords}
+dR2 = sp.Matrix([sp.diff(R2, q).subs(point) for q in coords])
+ward_defect = sp.simplify((G2.subs(point)*eta*dR2)[0])
+assert ward_defect == 144*b*c
+
+# Exact scale-defect telescoping: convergence does not imply a zero defect.
+N = sp.symbols("N", integer=True, positive=True)
+tail = beta*rho**(-N)*B0
+partial_defect = beta*(rho**(-N)-1)*B0
+assert sp.simplify(source+partial_defect-(G0+tail)) == sp.zeros(4)
+
+weights = [1, -1, 0, 0]
+covariant_weights = {(i,j):weights[i]+weights[j] for i in range(4) for j in range(i,4)}
+assert [key for key, value in covariant_weights.items() if value == 2] == [(0,0)]
+assert max(covariant_weights.values()) == 2
+
+result = {
+    "scope": "Exact controls only; analytic theorem is not formally verified",
+    "status": "PASS",
+    "metric": "exp(2*(b*x^2+a*x^4))*diag(1,-1,-1,-1)",
+    "Einstein_at_origin": [str(G0[i,i]) for i in range(4)],
+    "R2_Euler_at_origin": [str(B0[i,i]) for i in range(4)],
+    "mixed_R2_projective_minor": str(minor),
+    "mixed_cosmological_projective_minor": str(cosmo_minor),
+    "exp_R_times_G_Ward_defect": str(ward_defect),
+    "R2_quadratic_flat_coefficient": "0",
+    "R2_quartic_flat_coefficient_00": "-288*a",
+    "defect_telescoping_verified": True,
+    "unique_boost_weight_two_component": "uu",
+    "GR_closed": False,
+    "physical_Cost_Info_binding_proved": False,
+}
+target = Path(__file__).with_name("projective_rigidity_controls.json")
+target.write_text(json.dumps(result, ensure_ascii=False, indent=2)+"\n")
+print(json.dumps(result, ensure_ascii=False, indent=2))
+```
+<!-- END D0 20261118 FILE check_projective_rigidity.py -->
+
+<!-- BEGIN D0 20261118 FILE expected_projective_rigidity_controls.json -->
+```json
+{
+  "scope": "Exact controls only; analytic theorem is not formally verified",
+  "status": "PASS",
+  "metric": "exp(2*(b*x^2+a*x^4))*diag(1,-1,-1,-1)",
+  "Einstein_at_origin": [
+    "-4*b",
+    "0",
+    "4*b",
+    "4*b"
+  ],
+  "R2_Euler_at_origin": [
+    "-288*a - 24*b**2",
+    "-72*b**2",
+    "288*a + 24*b**2",
+    "288*a + 24*b**2"
+  ],
+  "mixed_R2_projective_minor": "-288*b**3*beta*(rho - 1)/rho",
+  "mixed_cosmological_projective_minor": "4*Lambda*b*(rho - 1)",
+  "exp_R_times_G_Ward_defect": "144*b*c",
+  "R2_quadratic_flat_coefficient": "0",
+  "R2_quartic_flat_coefficient_00": "-288*a",
+  "defect_telescoping_verified": true,
+  "unique_boost_weight_two_component": "uu",
+  "GR_closed": false,
+  "physical_Cost_Info_binding_proved": false
+}
+```
+<!-- END D0 20261118 FILE expected_projective_rigidity_controls.json -->
+
+<!-- BEGIN D0 20261118 FILE check_full128_cq_coframe_residual.py -->
+```python
+#!/usr/bin/env python3
+"""Exact one-jet proof on the original full128 Fourier/CAR fixture.
+
+No numerical spectra: the original N_j N_j^dagger are checked diagonal.
+This concerns the specified fine conditional-CQ observable, not selection
+of physical Book Info or a complete D0/GR price.
+"""
+from collections import defaultdict
+import json
+import sympy as s
+
+I, O = s.eye(16), s.zeros(16)
+nu, kappa = s.Rational(3, 5), s.Rational(9, 640)
+order = (0, 2, 3, 1)
+cs = []
+for r in range(4):
+    c = O.copy()
+    before = order[:order.index(r)]
+    for bits in range(16):
+        if not ((bits >> r) & 1):
+            c[bits | (1 << r), bits] = (-1) ** sum((bits >> j) & 1 for j in before)
+    cs.append(c)
+
+phases = (s.I, s.I, -1, -s.I)
+words, jets = [], []
+def need(condition, label):
+    if not condition:
+        raise ArithmeticError(label)
+
+def same(left, right):
+    return (left - right).applyfunc(s.expand) == s.zeros(*left.shape)
+
+def rootjet(root, rhs):
+    result = s.Matrix(16, 16, lambda i, j: rhs[i, j] / (root[i, i] + root[j, j]))
+    need(same(root * result + result * root, rhs), "true Sylvester derivative")
+    return result
+
+for r, c in enumerate(cs):
+    base = nu * c
+    dbase = cs[0] - cs[1] if r == 0 else O
+    x, dx = phases[r] * base, phases[r] * dbase
+    left, right = I - (c * c.H) / 5, 4 * I / 5 + (c * c.H) / 5
+    dleft = rootjet(left, -dx * x.H - x * dx.H)
+    dright = rootjet(right, -dx.H * x - x.H * dx)
+    dleft0 = rootjet(left, -dbase * base.H - base * dbase.H)
+    dright0 = rootjet(right, -dbase.H * base - base.H * dbase)
+    for word, jet in zip(
+        ((x, left), (x.H, right), (-base, -left), (-base.H, -right)),
+        ((dx, dleft), (dx.H, dright), (-dbase, -dleft0), (-dbase.H, -dright0)),
+    ):
+        words.extend((word, word))
+        jets.extend((jet, jet))
+
+ns, dns = [], []
+for lab in range(32):
+    signs = [(-1) ** ((lab & j).bit_count() & 1) for j in range(32)]
+    for bit in (0, 1):
+        ns.append(sum((signs[j] * words[j][bit] for j in range(32)), O.copy()) / 32)
+        dns.append(sum((signs[j] * jets[j][bit] for j in range(32)), O.copy()) / 32)
+
+a, da = ns[0], dns[0]
+pi = s.diag(*[(-1) ** bits.bit_count() for bits in range(16)])
+need(same(a.H, a) and same(da.H, da), "actual self-adjoint row and its jet")
+need(same(a * a, kappa * I), "original scalar Lambda")
+need(same(pi * a + a * pi, O), "original odd Dirac row")
+need(same(a * da + da * a, O), "D Lambda is the zero MATRIX")
+need(same(sum((n.H * n for n in ns), O.copy()), I), "all64 original Walsh rows retained")
+need(same(sum((n * n.H for n in ns), O.copy()), I), "original coisometric row identity")
+
+coeff = defaultdict(lambda: s.S.Zero)
+trace_jet = s.S.Zero
+dark_diagonal_jet = s.S.Zero
+active_rows = 0
+for j, (n, dn) in enumerate(zip(ns, dns)):
+    m = (n * n.H).applyfunc(s.expand)
+    dm = (dn * n.H + n * dn.H).applyfunc(s.expand)
+    need(m == s.diag(*m.diagonal()), "exact diagonal baseline M_j")
+    projectors = []
+    for eig in set(m.diagonal()):
+        need(eig.is_Rational and eig >= 0, "exact nonnegative rational spectrum")
+        proj = s.diag(*[int(value == eig) for value in m.diagonal()])
+        need(proj * proj == proj and m * proj == eig * proj,
+             "exact rational spectral projector")
+        if eig == 0:
+            need(proj * dm * proj == O, "zero-support first spectral jet vanishes")
+        projectors.append(proj)
+    need(sum(projectors, O.copy()) == I, "complete spectral resolution, including zero")
+    trace_jet += s.trace(dm)
+    if j == 0:
+        need(dm == O, "special quiet row has no jet")
+        continue
+    if dm != O:
+        active_rows += 1
+    for eig, derivative in zip(m.diagonal(), dm.diagonal()):
+        if eig == 0:
+            need(derivative == 0, "zero eigenvalue has zero first eigenvalue derivative")
+            dark_diagonal_jet += derivative
+        elif derivative != 0:
+            coeff[eig] += derivative
+need(trace_jet == 0, "all-channel trace normalizer differentiated")
+coeff = {e: s.factor(w) for e, w in coeff.items() if w != 0}
+expected = {
+    s.Rational(81, 100): -s.Rational(27, 10),
+    s.Rational(1, 400): s.Rational(3, 20),
+    s.Rational(1, 100): s.Rational(3, 20),
+    s.Rational(9, 640): s.Rational(6, 5),
+    s.Rational(27, 3200): s.Rational(6, 5),
+}
+need(coeff == expected, "exact full-palette logarithmic derivative coefficients")
+need(sum(coeff.values()) == 0, "all scalar log factors cancel")
+
+# Factor rational eigenvalues into primes; no approximate logarithm is used.
+prime_coeff = defaultdict(lambda: s.S.Zero)
+for eig, weight in coeff.items():
+    numerator, denominator = s.fraction(eig)
+    for prime, power in s.factorint(numerator).items():
+        prime_coeff[int(prime)] += weight * power
+    for prime, power in s.factorint(denominator).items():
+        prime_coeff[int(prime)] -= weight * power
+need(dict(prime_coeff) == {2: -s.Rational(123, 10), 3: -s.Rational(24, 5), 5: s.Rational(6, 5)},
+     "exact reduction to log2 log3 log5")
+need(2**41 * 3**16 > 5**4, "strict sign by integer comparison")
+p = (s.sqrt(5) - 1) / 2
+answer = 27 * p**2 / 25600 * (41*s.log(2) + 16*s.log(3) - 4*s.log(5))
+result = {
+    "status": "PASS_EXACT_FULL128_CQ_COFRAME_RESIDUAL",
+    "actual_tangent": "dC_0=c_0-c_1; dx_0=i*dC_0; all other legs fixed",
+    "D_Lambda_zero_as_matrix": True,
+    "generated_inverse_Lambda_preparation_jet_zero": True,
+    "all_baseline_M_j_exactly_diagonal": True,
+    "all_rational_spectral_projectors_exactly_verified": True,
+    "active_M_j_derivative_rows": active_rows,
+    "sum_Tr_DM_logM_coefficients": {str(e): str(w) for e,w in coeff.items()},
+    "zero_support_first_eigenvalue_derivatives": str(dark_diagonal_jet),
+    "CQ_direct_derivative_exact": "27*p^2/25600 * (41*log(2)+16*log(3)-4*log(5))",
+    "CQ_direct_derivative_decimal_diagnostic": str(s.N(answer, 50)),
+    "strictly_positive_by_integer_comparison": True,
+    "scope": "Specified complete one-round fine conditional-CQ operand only. No physical Info selection, stopped-history theorem, complete Cost-Info binding, or GR closure.",
+}
+print(json.dumps(result, sort_keys=True, indent=2))
+```
+<!-- END D0 20261118 FILE check_full128_cq_coframe_residual.py -->
+
+<!-- BEGIN D0 20261118 FILE expected_full128_cq_coframe_residual.json -->
+```json
+{
+  "CQ_direct_derivative_decimal_diagnostic": "0.015936564118094158530180393058699074515803802699598",
+  "CQ_direct_derivative_exact": "27*p^2/25600 * (41*log(2)+16*log(3)-4*log(5))",
+  "D_Lambda_zero_as_matrix": true,
+  "active_M_j_derivative_rows": 13,
+  "actual_tangent": "dC_0=c_0-c_1; dx_0=i*dC_0; all other legs fixed",
+  "all_baseline_M_j_exactly_diagonal": true,
+  "all_rational_spectral_projectors_exactly_verified": true,
+  "generated_inverse_Lambda_preparation_jet_zero": true,
+  "scope": "Specified complete one-round fine conditional-CQ operand only. No physical Info selection, stopped-history theorem, complete Cost-Info binding, or GR closure.",
+  "status": "PASS_EXACT_FULL128_CQ_COFRAME_RESIDUAL",
+  "strictly_positive_by_integer_comparison": true,
+  "sum_Tr_DM_logM_coefficients": {
+    "1/100": "3/20",
+    "1/400": "3/20",
+    "27/3200": "6/5",
+    "81/100": "-27/10",
+    "9/640": "6/5"
+  },
+  "zero_support_first_eigenvalue_derivatives": "0"
+}
+```
+<!-- END D0 20261118 FILE expected_full128_cq_coframe_residual.json -->
+
+<!-- BEGIN D0 20261118 FILE check_actual_stopped_cost.py -->
+```python
+#!/usr/bin/env python3
+"""Bounded original full128 stopped-cost/CQ diagnostic.
+
+No synthetic channel, pinching, or changed Kraus decomposition. The exact
+operator identities and the scalar-point source theorem are in the companion
+note. Finite entropy sums use floating eigenvalues; the analytic infinite-tail
+bound is printed separately, and no physical-Info selection is claimed.
+"""
+from pathlib import Path
+import json
+import math
+import numpy as np
+
+def need(ok, label):
+    if not bool(ok):
+        raise ArithmeticError(label)
+
+def adj(a): return a.conj().T
+
+p=(math.sqrt(5)-1)/2
+nu=3/5
+lam=9/640
+c=4*p**3
+q=c*lam
+d=16
+eye=np.eye(d,dtype=complex)
+pi=np.diag([(-1)**n.bit_count() for n in range(d)])
+ev=[n for n in range(d) if n.bit_count()%2==0]
+od=[n for n in range(d) if n.bit_count()%2==1]
+
+# Original creator order and the exact zero-boost Julia/Walsh words.
+# Word matrices multiplied by 5 have Gaussian-integer entries.
+cs=[]
+order=(0,2,3,1)
+for r in range(4):
+    a=np.zeros((d,d),complex)
+    before=order[:order.index(r)]
+    for bits in range(d):
+        if not ((bits>>r)&1):
+            a[bits|(1<<r),bits]=(-1)**sum((bits>>j)&1 for j in before)
+    cs.append(a)
+words=[]
+for r,a in enumerate(cs):
+    x=3*a*(1j,1j,-1,-1j)[r]
+    n=a@adj(a)
+    left=5*eye-n
+    right=4*eye+n
+    base=3*a
+    for w in ((x,left),(adj(x),right),(-base,-left),(-adj(base),-right)):
+        words.extend((w,w))
+nums=[]
+for lab in range(32):
+    signs=[(-1)**((lab&j).bit_count()&1) for j in range(32)]
+    for b in range(2):
+        nums.append(sum((signs[j]*words[j][b] for j in range(32)),np.zeros_like(eye)))
+nums=np.asarray(nums)
+need(np.array_equal(adj(nums[0])@nums[0],360*eye),'exact Gaussian-integer scalar Lambda')
+need(np.array_equal(sum(n@adj(n) for n in nums),25600*eye),'exact row Parseval')
+need(np.array_equal(sum(adj(n)@n for n in nums),25600*eye),'exact column Parseval')
+ms=np.asarray([adj(n)@nums[0]/25600 for n in nums])
+ks=[]
+for j,m in enumerate(ms):
+    ks.extend(((eye if j==0 else 0*eye)-2*p*p*m,-2*p*math.sqrt(p)*m))
+ks=np.asarray(ks)
+active_even=[(j,k) for j,k in enumerate(ks) if j%2==0 and np.linalg.norm(k)>1e-14]
+active_odd=[(j,k) for j,k in enumerate(ks) if j%2==1 and np.linalg.norm(k)>1e-14]
+need(len(active_even)==21 and len(active_odd)==21,'all 42 actual nonzero flat labels')
+for j,k in active_even+active_odd:
+    need(min(np.linalg.norm(pi@k-k@pi),np.linalg.norm(pi@k+k@pi))<1e-13,
+         'actual Kraus parity '+str(j))
+need(np.linalg.norm(sum(adj(k)@k for j,k in active_odd)-q*eye)<1e-13,'actual odd effect')
+need(np.linalg.norm(sum(k@adj(k) for j,k in active_odd)-q*eye)<1e-13,'actual odd unital section')
+
+max_residual=0.
+max_orthogonality=0.
+def trace_xlogx(a):
+    global max_residual,max_orthogonality
+    a=(a+adj(a))/2
+    w,u=np.linalg.eigh(a)
+    max_residual=max(max_residual,float(np.linalg.norm(a@u-u*w)))
+    max_orthogonality=max(max_orthogonality,float(np.linalg.norm(adj(u)@u-np.eye(len(w)))))
+    need(w.min()>-1e-12,'nonnegative effect spectrum')
+    return float(sum(x*math.log(x) for x in w if x>1e-15))
+
+def parity_entropy(k):
+    e=adj(k)@k
+    return (trace_xlogx(e[np.ix_(ev,ev)])-trace_xlogx(e[np.ix_(od,od)]))/d
+
+one=sum(parity_entropy(k) for k in ks)
+one_exact=-p*p*lam*(1-math.sqrt(1-nu*nu))**2*math.log(2)
+need(abs(one-one_exact)<2e-14,'exact one-round parity coefficient')
+prefixes=[eye]
+levels=[]
+total=0.
+for n in range(3):
+    beta=sum(parity_entropy(k@pre) for pre in prefixes for j,k in active_even)
+    total+=beta
+    levels.append({'continuations':n,'stopped_nonzero_words':len(prefixes)*len(active_even),
+                   'parity_coefficient':beta})
+    prefixes=[k@pre for pre in prefixes for j,k in active_odd]
+
+# Every n-continuation coarse word has effect s_n I, s_n=(1-q)q^n.
+# Its <=64^(n+1) fine effects give a normalized POVM. Operator Jensen
+# bounds its entropy operator between 0 and (n+1)log64 I; pairing with
+# Pi/16 (trace-zero, positive/negative trace=1/2) gives the factor 1/2.
+m=3
+tail=math.log(64)/2*q**m*(m+1+q/(1-q))
+result={
+    'status':'ACTUAL_ORIGINAL_OPERATOR_DIAGNOSTIC',
+    'scope':'Exact Gaussian-integer constructor checks and analytic source identities; floating finite matrix-entropy diagnostics with a separate analytic infinite-tail bound. No physical Info law, full all42 lift, or GR closure.',
+    'original_source':'primary 7bl (528), 7cx (861)-(863), 7fh NT1-NT3; dc411daf01f697ec85dd22f28bfe124171796645',
+    'r':d,'nu':nu,'Lambda':lam,'p':p,'q_odd':q,
+    'expected_stopped_port_cost':(1+q)/(1-q),
+    'cost_covector_per_Tr_dLambda':2*c/(d*(1-q)**2),
+    'one_round_parity_coefficient':one,
+    'one_round_parity_exact_formula':'-9*p^2*log(2)/16000',
+    'levels':levels,'finite_stopped_parity_sum':total,
+    'analytic_remaining_parity_tail_bound':tail,
+    'floating_sum_plus_analytic_tail_interval':[total-tail,total+tail],
+    'max_eigensystem_residual':max_residual,'max_eigenvector_gram_residual':max_orthogonality,
+    'stationarity_in_parity_family':'Full fine CQ gain is affine in s for rho_s=(I+s Pi)/16; no interior root if the exact stopped coefficient is nonzero.',
+    'GR_closed':False,
+}
+out=json.dumps(result,indent=2,sort_keys=True)+'\n'
+Path(__file__).with_suffix('.json').write_text(out)
+print(out,end='')
+```
+<!-- END D0 20261118 FILE check_actual_stopped_cost.py -->
+
+<!-- BEGIN D0 20261118 FILE expected_actual_stopped_cost.json -->
+```json
+{
+  "GR_closed": false,
+  "Lambda": 0.0140625,
+  "analytic_remaining_parity_tail_bound": 1.9540883919987842e-05,
+  "cost_covector_per_Tr_dLambda": 0.12123225571981687,
+  "expected_stopped_port_cost": 1.0269150476421687,
+  "finite_stopped_parity_sum": -0.00014765936793254336,
+  "floating_sum_plus_analytic_tail_interval": [
+    -0.0001672002518525312,
+    -0.00012811848401255552
+  ],
+  "levels": [
+    {
+      "continuations": 0,
+      "parity_coefficient": -5.688495604308677e-05,
+      "stopped_nonzero_words": 21
+    },
+    {
+      "continuations": 1,
+      "parity_coefficient": -9.033615179492621e-05,
+      "stopped_nonzero_words": 441
+    },
+    {
+      "continuations": 2,
+      "parity_coefficient": -4.3826009453036447e-07,
+      "stopped_nonzero_words": 9261
+    }
+  ],
+  "max_eigensystem_residual": 2.046137040062206e-17,
+  "max_eigenvector_gram_residual": 4.2461204357011344e-15,
+  "nu": 0.6,
+  "one_round_parity_coefficient": -0.0001489267483693531,
+  "one_round_parity_exact_formula": "-9*p^2*log(2)/16000",
+  "original_source": "primary 7bl (528), 7cx (861)-(863), 7fh NT1-NT3; dc411daf01f697ec85dd22f28bfe124171796645",
+  "p": 0.6180339887498949,
+  "q_odd": 0.013278823734363173,
+  "r": 16,
+  "scope": "Exact Gaussian-integer constructor checks and analytic source identities; floating finite matrix-entropy diagnostics with a separate analytic infinite-tail bound. No physical Info law, full all42 lift, or GR closure.",
+  "stationarity_in_parity_family": "Full fine CQ gain is affine in s for rho_s=(I+s Pi)/16; no interior root if the exact stopped coefficient is nonzero.",
+  "status": "ACTUAL_ORIGINAL_OPERATOR_DIAGNOSTIC"
+}
+```
+<!-- END D0 20261118 FILE expected_actual_stopped_cost.json -->
+
+<!-- BEGIN D0 20261118 FILE check_direct_cq_source.py -->
+```python
+#!/usr/bin/env python3
+"""One-round actual original full128 first jets, no changed Kraus palette.
+
+Diagnostic of a specified conditional fine-CQ operand after readout. It is not
+a selection of physical Book Info. Coframe directions change both original
+creator legs and shifted legs; root jets use their exact Sylvester equations.
+"""
+import importlib.util
+import json
+from pathlib import Path
+import numpy as np
+from scipy.linalg import solve_sylvester
+
+spec=importlib.util.spec_from_file_location('upstream',Path(__file__).with_name('check_uniform_book_source.py'))
+up=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(up)
+p=up.P
+eye=up.EYE
+adj=up.adj
+cs=up.creators()
+nu=.6
+phases=(1j,1j,-1.,-1j)
+zero=np.zeros_like(eye)
+pi=np.diag([(-1)**i.bit_count() for i in range(16)])
+
+def build(kind, role=-1, component=-1):
+    words=[]; jets=[]
+    for r,cr in enumerate(cs):
+        base=nu*cr
+        db=(cr if kind=='nu' else cs[component] if kind=='coframe' and r==role else zero)
+        x=base*phases[r]
+        dx=db*phases[r]
+        if kind=='phase' and r==role: dx=1j*x
+        if kind=='boost' and r==1:
+            gen=cs[0]@adj(cs[1])+cs[1]@adj(cs[0])
+            dx=base@gen*phases[r]
+        left=up.root(eye-x@adj(x)); right=up.root(eye-adj(x)@x)
+        dl=solve_sylvester(left,left,-dx@adj(x)-x@adj(dx))
+        dr=solve_sylvester(right,right,-adj(dx)@x-adj(x)@dx)
+        l0=up.root(eye-base@adj(base)); r0=up.root(eye-adj(base)@base)
+        dl0=solve_sylvester(l0,l0,-db@adj(base)-base@adj(db))
+        dr0=solve_sylvester(r0,r0,-adj(db)@base-adj(base)@db)
+        for w,dw in zip(((x,left),(adj(x),right),(-base,-l0),(-adj(base),-r0)),
+                        ((dx,dl),(adj(dx),dr),(-db,-dl0),(-adj(db),-dr0))):
+            words.extend((w,w));jets.extend((dw,dw))
+    ns=[]; dns=[]
+    for lab in range(32):
+        signs=[(-1)**((lab&j).bit_count()&1) for j in range(32)]
+        for b in range(2):
+            ns.append(sum((signs[j]*words[j][b] for j in range(32)),zero.copy())/32)
+            dns.append(sum((signs[j]*jets[j][b] for j in range(32)),zero.copy())/32)
+    a,da=ns[0],dns[0]
+    ks=[];dks=[]
+    for j,n in enumerate(ns):
+        m=adj(n)@a;dm=adj(dns[j])@a+adj(n)@da
+        ks.extend(((eye if j==0 else zero)-2*p*p*m,-2*p*np.sqrt(p)*m))
+        dks.extend((-2*p*p*dm,-2*p*np.sqrt(p)*dm))
+    return np.asarray(ks),np.asarray(dks),a,da
+
+ks,_,a,_=build('none')
+lam=np.trace(adj(a)@a).real/16
+log_es=[];glog=zero.copy()
+for k in ks:
+    e=adj(k)@k
+    w,u=np.linalg.eigh(up.herm(e))
+    le=(u*np.array([np.log(v) if v>1e-13 else 0 for v in w]))@adj(u)
+    log_es.append(le);glog+=e@le
+rows=[]
+for kind,role,component in [('nu',-1,-1)]+[('phase',r,-1) for r in range(4)]+[('boost',1,-1)]+[('coframe',r,s) for r in range(4) for s in range(4)]:
+    k,dk,a,da=build(kind,role,component)
+    dl=adj(da)@a+adj(a)@da
+    de=[adj(dk[j])@k[j]+adj(k[j])@dk[j] for j in range(128)]
+    di=-sum(np.trace(de[j]@log_es[j]).real for j in range(128))/16
+    drho=-dl/(16*lam)+np.trace(dl).real*eye/(256*lam)
+    prep=-np.trace(glog@drho).real
+    row={'kind':kind,'role':role,'component':component,'Tr_DLambda':float(np.trace(dl).real),
+         'CQ_direct_derivative':float(di),'CQ_generated_preparation_derivative':float(prep),
+         'parity_DLambda':float(np.trace(pi@dl).real),
+         'completeness_first_jet_residual':float(np.linalg.norm(sum(de,zero.copy())))}
+    if abs(row['Tr_DLambda'])>1e-13:row['CQ_over_trace_DLambda']=di/row['Tr_DLambda']
+    rows.append(row)
+geo=[r for r in rows if r['kind']=='coframe']
+av=np.array([r['Tr_DLambda'] for r in geo]); gv=np.array([r['CQ_direct_derivative'] for r in geo])
+ratio=float(av@gv/(av@av))
+orth=gv-ratio*av
+out={'scope':'Floating analytic first-jet diagnostic at literal Fourier scalar section. Fine CQ operand is H(record|oldRIGHT) after readout under pure input purification, not selected physical Info. No all42 source or GR closure.',
+     'CQ_value':float(-np.trace(glog).real/16),'lambda':float(lam),'rows':rows,
+     'coframe_least_squares_ratio':ratio,'coframe_orthogonal_source_norm':float(np.linalg.norm(orth)),
+     'coframe_max_abs_orthogonal_source':float(abs(orth).max()),'GR_closed':False}
+Path(__file__).with_suffix('.json').write_text(json.dumps(out,indent=2,sort_keys=True)+'\n')
+print(json.dumps(out,indent=2,sort_keys=True))
+```
+<!-- END D0 20261118 FILE check_direct_cq_source.py -->
+
+<!-- BEGIN D0 20261118 FILE expected_direct_cq_source.json -->
+```json
+{
+  "CQ_value": 0.13893279074766968,
+  "GR_closed": false,
+  "coframe_least_squares_ratio": 0.5515142240799896,
+  "coframe_max_abs_orthogonal_source": 0.010734129968328648,
+  "coframe_orthogonal_source_norm": 0.024173489024746777,
+  "lambda": 0.014062499999999997,
+  "rows": [
+    {
+      "CQ_direct_derivative": 0.4505465996115468,
+      "CQ_generated_preparation_derivative": 3.0849276632698395e-17,
+      "CQ_over_trace_DLambda": 0.6007287994820624,
+      "Tr_DLambda": 0.75,
+      "completeness_first_jet_residual": 1.8827980001136106e-16,
+      "component": -1,
+      "kind": "nu",
+      "parity_DLambda": 0.0,
+      "role": -1
+    },
+    {
+      "CQ_direct_derivative": 0.023010463587071532,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5113436352682563,
+      "Tr_DLambda": 0.045,
+      "completeness_first_jet_residual": 1.1609569426186025e-17,
+      "component": -1,
+      "kind": "phase",
+      "parity_DLambda": 0.0,
+      "role": 0
+    },
+    {
+      "CQ_direct_derivative": 0.023010463587071532,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5113436352682563,
+      "Tr_DLambda": 0.045,
+      "completeness_first_jet_residual": 1.1599045641791873e-17,
+      "component": -1,
+      "kind": "phase",
+      "parity_DLambda": 0.0,
+      "role": 1
+    },
+    {
+      "CQ_direct_derivative": 2.906549411497253e-20,
+      "CQ_generated_preparation_derivative": -0.0,
+      "Tr_DLambda": 0.0,
+      "completeness_first_jet_residual": 4.309597495165174e-18,
+      "component": -1,
+      "kind": "phase",
+      "parity_DLambda": 0.0,
+      "role": 2
+    },
+    {
+      "CQ_direct_derivative": -0.023010463587071532,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5113436352682563,
+      "Tr_DLambda": -0.045,
+      "completeness_first_jet_residual": 1.081216415972284e-17,
+      "component": -1,
+      "kind": "phase",
+      "parity_DLambda": 0.0,
+      "role": 3
+    },
+    {
+      "CQ_direct_derivative": -0.01162870491933494,
+      "CQ_generated_preparation_derivative": 1.1275702593849246e-17,
+      "CQ_over_trace_DLambda": 0.5168313297482195,
+      "Tr_DLambda": -0.0225,
+      "completeness_first_jet_residual": 1.1605117505311322e-17,
+      "component": -1,
+      "kind": "boost",
+      "parity_DLambda": 0.0,
+      "role": 1
+    },
+    {
+      "CQ_direct_derivative": 0.0934612635803271,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.623075090535514,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 2.482433356191002e-17,
+      "component": 0,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 0
+    },
+    {
+      "CQ_direct_derivative": 0.07752469946223296,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5168313297482198,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 3.3050016951263614e-17,
+      "component": 1,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 0
+    },
+    {
+      "CQ_direct_derivative": 0.077524699462233,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5168313297482201,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 2.7457400208172473e-17,
+      "component": 2,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 0
+    },
+    {
+      "CQ_direct_derivative": -3.6456174553782404e-19,
+      "CQ_generated_preparation_derivative": -0.0,
+      "Tr_DLambda": 0.0,
+      "completeness_first_jet_residual": 7.052895375760267e-18,
+      "component": 3,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 0
+    },
+    {
+      "CQ_direct_derivative": 0.07752469946223296,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5168313297482198,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 3.266588071395943e-17,
+      "component": 0,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 1
+    },
+    {
+      "CQ_direct_derivative": 0.0934612635803271,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.623075090535514,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 2.5343365870817622e-17,
+      "component": 1,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 1
+    },
+    {
+      "CQ_direct_derivative": 0.077524699462233,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5168313297482201,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 2.935148498334599e-17,
+      "component": 2,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 1
+    },
+    {
+      "CQ_direct_derivative": -3.5895126647307344e-19,
+      "CQ_generated_preparation_derivative": -0.0,
+      "Tr_DLambda": 0.0,
+      "completeness_first_jet_residual": 6.970642449746615e-18,
+      "component": 3,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 1
+    },
+    {
+      "CQ_direct_derivative": 0.07752469946223299,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.51683132974822,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 2.8758394786096443e-17,
+      "component": 0,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 2
+    },
+    {
+      "CQ_direct_derivative": 0.077524699462233,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5168313297482201,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 3.0774070992496165e-17,
+      "component": 1,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 2
+    },
+    {
+      "CQ_direct_derivative": 0.1701628088705657,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5672093629018857,
+      "Tr_DLambda": 0.3,
+      "completeness_first_jet_residual": 5.935325860155569e-17,
+      "component": 2,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 2
+    },
+    {
+      "CQ_direct_derivative": 0.07752469946223298,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5168313297482199,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 2.853586305256875e-17,
+      "component": 3,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 2
+    },
+    {
+      "CQ_direct_derivative": -3.601352344811032e-19,
+      "CQ_generated_preparation_derivative": -0.0,
+      "Tr_DLambda": 0.0,
+      "completeness_first_jet_residual": 9.794828295847578e-18,
+      "component": 0,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 3
+    },
+    {
+      "CQ_direct_derivative": -2.193529677667509e-19,
+      "CQ_generated_preparation_derivative": -0.0,
+      "Tr_DLambda": 0.0,
+      "completeness_first_jet_residual": 9.911287229052248e-18,
+      "component": 1,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 3
+    },
+    {
+      "CQ_direct_derivative": 0.077524699462233,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.5168313297482201,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 2.8443415397601884e-17,
+      "component": 2,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 3
+    },
+    {
+      "CQ_direct_derivative": 0.09346126358032708,
+      "CQ_generated_preparation_derivative": -0.0,
+      "CQ_over_trace_DLambda": 0.6230750905355139,
+      "Tr_DLambda": 0.15,
+      "completeness_first_jet_residual": 2.3936012575043713e-17,
+      "component": 3,
+      "kind": "coframe",
+      "parity_DLambda": 0.0,
+      "role": 3
+    }
+  ],
+  "scope": "Floating analytic first-jet diagnostic at literal Fourier scalar section. Fine CQ operand is H(record|oldRIGHT) after readout under pure input purification, not selected physical Info. No all42 source or GR closure."
+}
+```
+<!-- END D0 20261118 FILE expected_direct_cq_source.json -->

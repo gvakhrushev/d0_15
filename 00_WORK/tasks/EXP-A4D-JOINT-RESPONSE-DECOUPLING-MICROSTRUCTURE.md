@@ -23216,3 +23216,47 @@ valuation of this record-sensitive price or an equivalent source,
 the shared initial charges and selection of the enlarged task/cut.
 The unconditional scalar master and the full observed Gibbs divergence
 remain distinct. GR_closed=false.
+
+
+## 18 November 2026: integrate projective rigidity and actual full128 price-source tests
+
+Input dc411daf01f697ec85dd22f28bfe124171796645; same existing Draft #334.
+Phase: conditional source classification / native realization / final
+composition. The user explicitly requests integration of the accumulated
+derivations and continuation toward physical GR. Write surface remains this
+brief and the existing same-representative primary artifact; no new task,
+registry row, claim, physical action or lifecycle transition is introduced.
+
+Primary section7ga weakens the earlier exact one-scale Einstein-source law
+to preservation of its pointwise tensor line. On the explicitly open local
+metric domain, the nonzero quadratic flat germ, gravitational off-shell Ward,
+local cutoff comparison and continuity give E=aG even at singular/zero G.
+Without Ward, the separately retained Einstein germ gives only the vacuum
+zero-set theorem. These are conditional mathematical inputs to the existing
+Golden source-descent route; no actual physical C hypothesis is discharged.
+
+Primary section7gb consumes the original full128 Parseval/stationary/renewal
+owners. Its true stopped and finite-cap port-cost sources retain the changing
+recycling map and input density. On the scalar section they are positive
+multiples of Tr D Lambda, hence of the original one-reflection feedback source.
+The comparison does not identify the whole stopped history's price with that
+one-reflection source. The true generated-density parity row cancels by the
+odd self-adjoint CAR structure.
+
+The decisive new original coframe tangent has D Lambda=0 as a matrix and
+D rho_Lambda=0, but the specified post-readout conditional fine-CQ source is
+27 p^2/25600 (41 log2+16 log3-4 log5)>0. Its rational projectors and sign are
+checked exactly. Thus this particular full information operand does not
+descend through Lambda; a claimed complete source must retain an actual
+compensation or a different physically derived information map. This is the
+one-Fourier original instrument, not an automatic all42/H.1 transport or
+universal impossibility result. The full stopped-CQ field derivative is not
+asserted. Longer entropy sums and the broad first-jet probe stay numerical.
+
+Both derivations, explicit scopes, internal mathematical reviews, unchanged
+checker bytes and frozen receipts are embedded in the primary with a portable
+temporary-directory extractor. The real upstream helper blob is verified;
+the earlier downloaded copy's sole trailing-LF difference is documented.
+The physical full Cost-Info binding C remains the exact consuming premise;
+no tariff, Info term or normalizer is assigned to force its answer.
+GR_closed=false; the research task remains active in its existing PR.
