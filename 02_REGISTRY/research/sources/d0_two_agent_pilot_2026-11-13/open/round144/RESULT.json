@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "source_sha256": "3b6f6e7edc47d62e9549b44bc6bb00570f8e501ca86eb9cb714bbf42e648019b",
+  "interior_sites": 32,
+  "pinned_h": "1/4",
+  "wave_rank": 30,
+  "wave_kernel": [
+    "(-1)^v",
+    "(-1)^(v+u+x+y)"
+  ],
+  "minimal_required_K_norm_interval": [
+    "16505/2",
+    "8252501/1000"
+  ],
+  "diagnostic_optimal_kernel_amplitudes": [
+    "-0.00306090179",
+    "0.000336214894"
+  ],
+  "K_to_D_Psi_over_t": "1/350272",
+  "strict_single_site_D_Psi_over_t_lower_bound": "16505/4203264",
+  "local_diagonal_test": {
+    "normal_coordinates": "u=1, average over v, four transverse sites",
+    "residual_interval_in_K_units": [
+      "1375383/1000",
+      "171923/125"
+    ]
+  },
+  "claimed_refinement_uniform": false,
+  "selected_physical_cost_info": false,
+  "GR_closed": false
+}
