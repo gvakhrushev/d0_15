@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "physical_word": "CX(b,e); CX(e,r); SourceI; SourceI; CX(b,e); CX(r,t); G_t; CX(r,t)",
+  "original_scope": "PR334 0716b659d, primary LC1-LC5; complete initialized all-input effects on the specified cut",
+  "native_matrix_controls": [
+    {
+      "input_rank": 4,
+      "full_output_dimension": 64,
+      "distinct_cold_eigenvalues": 1,
+      "nonzero_return_directions": 4,
+      "pairs": [
+        {
+          "s": "1",
+          "t": "2",
+          "compared_input_matrix_entries": 16
+        },
+        {
+          "s": "2",
+          "t": "1",
+          "compared_input_matrix_entries": 16
+        },
+        {
+          "s": "1",
+          "t": "1",
+          "compared_input_matrix_entries": 16
+        }
+      ]
+    },
+    {
+      "input_rank": 16,
+      "full_output_dimension": 64,
+      "distinct_cold_eigenvalues": 2,
+      "nonzero_return_directions": 16,
+      "pairs": [
+        {
+          "s": "1",
+          "t": "2",
+          "compared_input_matrix_entries": 256
+        },
+        {
+          "s": "2",
+          "t": "1",
+          "compared_input_matrix_entries": 256
+        },
+        {
+          "s": "1",
+          "t": "1",
+          "compared_input_matrix_entries": 256
+        }
+      ]
+    }
+  ],
+  "recovered_current_estimate": {
+    "report_q_star": [
+      "0.41246988056855",
+      "0.41246988056856"
+    ],
+    "separate_return_q_r_equals_f_squared": [
+      "0.836552100561013",
+      "0.836552100561014"
+    ],
+    "return_z": "1/1048576",
+    "original_P11": 0,
+    "transformed_P11": [
+      "0.00000000000002775127173323",
+      "0.00000000000002775127173324"
+    ],
+    "P11_derivative_wrt_original_report_q": [
+      "-0.00000000000000816510467787",
+      "-0.00000000000000816510467786"
+    ],
+    "P11_over_transformed_cold_probability": [
+      "0.00000000000003317338799205",
+      "0.00000000000003317338799206"
+    ],
+    "P11_over_increase_of_cold_probability": [
+      "0.000000212818999855",
+      "0.000000212818999856"
+    ],
+    "uniform_one_block_minimum_on_p_squared_to_half": [
+      "0.00000000000002683783953469",
+      "0.00000000000002683783953470"
+    ],
+    "simple_strict_lower_bound_p_cubed_z_squared_over_8": [
+      "0.00000000000002683782184928",
+      "0.00000000000002683782184929"
+    ],
+    "old_history": "If M includes k_old^2 or multiple blocks, use its actual eigenvalues. The one-block absolute floor does not hold uniformly as k_old tends to zero."
+  },
+  "inversion": "H=s^2 [I-(t+s) D_bad/(p^4 (t-s))]^-1 for known positive s,t and s!=t",
+  "same_history_Doob_on_nonzero_return": false,
+  "alternate_economic_binding_excluded": false,
+  "GR_closed": false
+}

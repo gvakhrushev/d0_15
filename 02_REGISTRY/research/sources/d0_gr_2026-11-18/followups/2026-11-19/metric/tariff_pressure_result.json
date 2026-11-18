@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "general": {
+    "fixed_partition": "133/30",
+    "baseline_probabilities": [
+      "2/5",
+      "3/7",
+      "5/12",
+      "4/9"
+    ],
+    "paid_marginal_shifts": [
+      "363/4655",
+      "16/133",
+      "5/76",
+      "80/8379"
+    ],
+    "marginal_discrepancy_K": "533627/5200566",
+    "full_chi_squared": "16307/123823",
+    "fixed_log_Z_direction": "18463/65170",
+    "moving_weight_correction": "415/1862",
+    "common_moving_scale_log_derivative": "3/5"
+  },
+  "higher_order": {
+    "number_of_marks": 4,
+    "partition": "2",
+    "marginal_discrepancy_K": "0",
+    "complete_chi_squared": "1/1134",
+    "all_proper_marginals_agree": true,
+    "complete_measures_differ": true
+  },
+  "return_control": {
+    "return_probability": "5/13",
+    "zeta": "1/19",
+    "weighted_return": "95/239",
+    "mark_shift": "40/3107",
+    "log_Z_derivative_wrt_return": "13/239",
+    "pressure_derivative": "minus the log-Z derivative divided by log(phi)",
+    "return_mark_distinct_from_H1_parsed_report": true
+  },
+  "boundary": {
+    "real_positive_table_boundary_verified": true,
+    "common_shift": "3/100"
+  },
+  "literal": {
+    "exact_formula": "log(phi)^2*q*(1-q)*P_prime(q)^2, at the literal q_star",
+    "marginal_discrepancy_per_mark_threshold": [
+      "0.003936271219479",
+      "0.003936271219480"
+    ],
+    "q_star": [
+      "0.4124698805685551619",
+      "0.4124698805685551620"
+    ],
+    "parsed_net_slope": [
+      "0.264846981945302",
+      "0.264846981945303"
+    ],
+    "terminal_pressure_units": "minus log(Z)/log(phi)"
+  },
+  "physical_weighted_law_supplied": false,
+  "GR_closed": false
+}

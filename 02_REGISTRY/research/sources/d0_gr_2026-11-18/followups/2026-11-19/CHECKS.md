@@ -9,6 +9,11 @@ python3 -B "$d/metric/check_extra_work.py"
 python3 -B "$d/metric/check_tariff_curvature.py"
 python3 -B "$d/metric/check_diagonal_tariff.py"
 python3 -B "$d/metric/check_tariff_variance.py"
+python3 -B "$d/metric/check_tariff_pressure.py"
+python3 -B "$d/metric/check_coherent_pressure.py"
+python3 -B "$d/metric/check_four_mark_stability.py"
+python3 -B "$d/metric/check_operator_return_pressure.py"
+python3 -B "$d/metric/check_forbidden_code.py"
 python3 -B "$d/arithmetic/check_arithmetic.py"
 python3 -B "$d/axioms/check_gate_field.py" --repo .
 python3 -B "$d/conditional/check_conditional.py" --repo .
@@ -22,6 +27,11 @@ python3 -B "$d/realization/check_realization.py"
 | Тариф полного журнала | Исключение взаимодействий фиксированного тарифа в трёхточечном сравнении, оценки для конечного меню, одновременные производные в вершине и контроль на общей диагонали. [Результат](metric/tariff_curvature_result.json) |
 | Все копии на общей секции | Конечное диагональное сравнение устраняет произвольную фиксированную таблицу всех меток. [Результат](metric/diagonal_tariff_result.json) |
 | Полный экономический источник | Условные средние по отдельным зарегистрированным битам, точное выделение отклика и дисперсионная оценка. [Результат](metric/tariff_variance_result.json) |
+| Логарифм суммы весов | Производная как сдвиг маргиналов, возможное сохранение всех собственных маргиналов, отдельный вклад общего множителя. [Результат](metric/tariff_pressure_result.json) |
+| Когерентный вес | Вычисление двойного коммутатора, точная невидимость производной за одной совпавшей меткой и доказуемые ограничения по четырём настройкам. [Результат](metric/coherent_pressure_result.json) |
+| Устойчивость четырёх сравнений | Интерполяция, коэффициенты и граница производной при конечной погрешности зарегистрированных вероятностей. [Результат](metric/four_mark_stability_result.json) |
+| Матричный холодный возврат | Полный дифференциал исходного определителя, разница подготовок, вариации на краях спектра и больше двух меток. [Результат](metric/operator_return_pressure_result.json) |
+| Запрещённый код штатного журнала | Сжатие ненулевой утечки в код 11, исходный центр и нижняя граница на шумном интервале. [Результат](metric/forbidden_code_result.json) |
 | Арифметика исходной вероятности | Вычисление в целом кольце и независимо по модулю 13. Норма отношения шансов равна 5 по модулю 13. [Результат](arithmetic/arithmetic_result.json) |
 | Нативный участок G и двух CX | Фактические слова и матрица на 64 столбцах. Проверены инвариант и поля его коэффициентов. [Результат](axioms/gate_field_result.json) |
 | Условие на историю | Два полных исходных слова B121, когерентные амплитуды и точная вероятностная цена дополнительной регистрации. [Результат](conditional/result.json) |

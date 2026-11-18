@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "original_owner": "PR334 0716b659d, primary 192639-192686: original full-isometry construction; original mark shift explicitly scalar",
+  "source_units": "natural logarithm; divide sources by ln(phi) for golden code units",
+  "symbolic": {
+    "entry_scope": "arbitrary 2x2 algebraic matrices on det H != 0",
+    "trace_determinant_source": "-z Tr(H^-1 DM) + Dz Tr(H^-1 (I-M))"
+  },
+  "regular_controls": [
+    {
+      "z": "1/3",
+      "native_q_for_fixture": "47/100",
+      "same_input_Doob_q": "41/75",
+      "reweighted_input_Doob_q": "141/247",
+      "exact_Jensen_gap": "448/18525",
+      "fixed_z_negative_logdet_source_noncommuting": "-328/22275",
+      "moving_z_negative_logdet_source": "7772/22275",
+      "moving_input_and_z_negative_log_trace_mass_source": "7717/53865"
+    },
+    {
+      "z": "1/1048576",
+      "native_q_for_fixture": "47/100",
+      "same_input_Doob_q": "2756107567104/5864056422401",
+      "reweighted_input_Doob_q": "49283072/104857547",
+      "exact_Jensen_gap": "36122587561984/614890571922564710347",
+      "fixed_z_negative_logdet_source_noncommuting": "-328/3958238085120675",
+      "moving_z_negative_logdet_source": "7916480888829704/27707666595844725",
+      "moving_input_and_z_negative_log_trace_mass_source": "45015339211/297271145745"
+    }
+  ],
+  "spectral_endpoints": {
+    "two_sided_fixed_z": "-2/25",
+    "moving_z_increment": "21/50",
+    "joint_source": "17/50",
+    "one_sided_source_lost_by_pseudoinverse": "-1/2"
+  },
+  "diagonal_weight_derivatives": {
+    "input_rank": 2,
+    "marks": 3,
+    "d_logdet_per_d_log_weight": [
+      "1/2",
+      "2/3",
+      "5/6"
+    ]
+  },
+  "domain": "exact matrix controls of the supplied E, not an assigned economic tariff or implementation on H.1",
+  "physical_price_binding_proved": false,
+  "GR_closed": false
+}
