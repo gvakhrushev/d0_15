@@ -1,0 +1,40 @@
+{
+  "GR_closed": false,
+  "block_lengths": [
+    96,
+    96
+  ],
+  "depth_one_exact_scalar_interpolation_allowed": true,
+  "first_certified_truncated_gain": [
+    0.011888588366897455,
+    0.011888588369113105
+  ],
+  "margin_over_A75_depth_one": [
+    0.001045547497496378,
+    0.001045547501844959
+  ],
+  "normalized_depth_one_geometric_upper": [
+    0.022048569692223113,
+    0.022048569692223116
+  ],
+  "physical_tariff_compiled": false,
+  "recover_DATA": false,
+  "second_certified_truncated_gain": [
+    0.011438802733829316,
+    0.011438802736006152
+  ],
+  "sequence": [
+    7,
+    6
+  ],
+  "strict_positive_gain_witness": [
+    0.023094117189719494,
+    0.02309411719406807
+  ],
+  "strict_witness_dominates_depth_one": true,
+  "total_certified_truncated_gain": [
+    0.023327391100726767,
+    0.02332739110511926
+  ],
+  "walk_index_cut": 27
+}
