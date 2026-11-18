@@ -138,6 +138,15 @@ def wave_equation(values, i):
     return 16*result   # h^-2
 
 
+def wave_row(indices, w):
+    result = []
+    for i in indices:
+        unit = [0]*len(SITES)
+        unit[i] = 1
+        result.append(wave_equation(unit,w))
+    return result
+
+
 def certify_real_response(center, indices, external, boundary, estimate):
     n = len(indices)
     er = Fraction(10**11,SCALE)
@@ -169,6 +178,23 @@ def certify_real_response(center, indices, external, boundary, estimate):
     assert Fraction(1037443,10**7) < raw[w]-err <= raw[w]+err < Fraction(1037445,10**7)
     assert Fraction(3280769,10**6) < wave-256*err <= wave+256*err < Fraction(3280771,10**6)
 
+    # A Hessian is symmetric. Thus the same inverse bound also certifies
+    # K_II^T z = L_I^T, where L is the actual target wave row at w.
+    assert B == list(map(list,zip(*B)))
+    L = wave_row(indices,w)
+    z0 = [nearest(x) for x in np.linalg.solve(np.asarray(B,dtype=float).T, L)]
+    zres = max(abs(sum(c*x for c,x in zip(row,z0))-d) for row,d in zip(B,L))
+    zerr = normT*(zres+er*sum(map(abs,z0)))/(1-defect)
+    z1max = sum(abs(x)+zerr for x in z0)
+    z2max_sq = sum((abs(x)+zerr)**2 for x in z0)
+    assert z1max < Fraction(602649,10**8)
+    assert z2max_sq < Fraction(191829,10**8)**2
+    unit = Fraction(2*256,10946*128**2)
+    assert unit == Fraction(1,350272)
+    needed = unit*(wave-256*err)
+    assert needed > Fraction(1554,10**6)*z1max
+    assert needed**2 > Fraction(4882,10**6)**2*z2max_sq
+
 
 def main():
     certify_modulus()
@@ -199,13 +225,22 @@ def main():
     observe = np.asarray(b,dtype=float)
     rhs = [-sum(mat[i,j]*observe[j] for j in external) for i in interior]
     observe[interior] = np.linalg.solve(mat[np.ix_(interior,interior)],rhs)
+    # On the unchanged primary target B, the required extra physical gradient
+    # per t is -K B /350272. Its pairing checks both sign and the old A72 row.
+    primary_force = [-sum(raw[i][j]*bm[j] for j in full)%MOD for i in interior]
+    L = wave_row(interior,w)
+    adjoint = solve_mod([[raw[j][i] for j in interior] for i in interior],L)
+    paired = sum(z*r for z,r in zip(adjoint,primary_force)) % MOD
+    force_w = primary_force[interior.index(w)]*pow(350272,-1,MOD)%MOD
+    assert (force_w*force_w*1684**2*13-21**2) % MOD == 0
     for i,x in zip(interior,exact):
         bm[i] = x
     assert all(sum(raw[i][j]*bm[j] for j in full)%MOD==0 for i in interior)
     assert bm[w] == 350864591474990130360766
-    assert wave_equation(bm,w)%MOD == 268255689805940822204261
+    assert paired == wave_equation(bm,w)%MOD == 268255689805940822204261
     certify_real_response(center[15],interior,external,b,observe)
     print("root first jet b_w modulo prime",bm[w], "wave equation at w",wave_equation(bm,w)%MOD)
+    print("necessary extra top gradient per t: linf > 0.001554; l2 > 0.004882")
     print("certified intervals: 0.1037443 < b < 0.1037445; 3.280769 < wave < 3.280771")
 
 if __name__ == "__main__":
