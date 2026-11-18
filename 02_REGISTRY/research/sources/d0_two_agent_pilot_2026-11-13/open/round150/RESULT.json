@@ -1,0 +1,23 @@
+{
+  "GR_closed": false,
+  "full_physical_class_map_and_price_proved": false,
+  "raw_outcomes_per_general_cell": 32,
+  "actual_CNOT_print_cycle_and_inverse": 8,
+  "Bellman_positive_bound_for_cells_with_two_prior_prints": "p^3",
+  "unit_preserving_pair_of_prices_is_dense": true,
+  "Bellman_horizontal_steps": [
+    "p^8",
+    "p^11"
+  ],
+  "local_surprise_field_norms": [
+    "20",
+    "16/5"
+  ],
+  "source_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_BOOK03_GOLDEN_NO_POLAR_FINITE_NATIVE_STOP_COMPILER_2026_10_22.md": "cbb974949f38d12ef3a524264f0d0d6e1f92a8e5af0315ef11a5aeed19da1712",
+    "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md": "711c9129230643f65228962a9835dd5faa59882d1803556fa90ca769016b6ec1",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round149/RESULT.json": "2be40017b14c0416317ca3ffeb0e82ee1bc85aee451e32c7b1eb08893459d13e",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c"
+  }
+}
