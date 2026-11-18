@@ -1,0 +1,19 @@
+{
+  "GR_closed": false,
+  "actual_B148_path_to_class_map_proved": false,
+  "centered_rank_with_opposite_signs": 4,
+  "centered_rank_with_order_four_shift": 6,
+  "best_single_step_singular_value_at_gamma_2_7_q_3_7": "37/49",
+  "formal_signed_G_factory_failure_same_return_classes": [
+    "1",
+    "-1"
+  ],
+  "retained_factory_failure_pair_visible_in_odd_Spin": false,
+  "classwise_constant_factor_in_3_to_2_example": "5/(2*sqrt(6))",
+  "source_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round148/RESULT.json": "a573818ae709422689e585ab506cd33962983e1cb3a1e13a62f5ceb0a345777e",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round75/history/ORDERED_PRICE_RU.md": "bc7e5162b01c9605bed213f7b9369fc03c1f9c6e9cc5fc8162cf73c0a1d65f26",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+  }
+}
