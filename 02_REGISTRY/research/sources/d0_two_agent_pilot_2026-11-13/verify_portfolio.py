@@ -23,10 +23,12 @@ def verify_lane(base, lane):
     return lane["id"]
 
 
-def main(manifest):
+def main(manifests):
     base = Path(__file__).resolve().parent
-    portfolio = json.loads(Path(manifest).read_text(encoding="utf-8"))
-    lanes = portfolio["lanes"]
+    lanes = []
+    for manifest in manifests:
+        portfolio = json.loads(Path(manifest).read_text(encoding="utf-8"))
+        lanes.extend(portfolio["lanes"])
     if not lanes or len({lane["id"] for lane in lanes}) != len(lanes):
         raise ValueError("Expected one unique entry per research lane")
     failed = False
@@ -44,6 +46,6 @@ def main(manifest):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        sys.exit("Usage: python3 verify_portfolio.py path/to/portfolio.json")
-    sys.exit(main(sys.argv[1]))
+    if len(sys.argv) < 2:
+        sys.exit("Usage: python3 verify_portfolio.py path/to/portfolio.json [...]")
+    sys.exit(main(sys.argv[1:]))
