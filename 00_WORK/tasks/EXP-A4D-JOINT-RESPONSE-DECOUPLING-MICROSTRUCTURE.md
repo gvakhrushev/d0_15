@@ -15,6 +15,8 @@ Assembly-Slot: `constitutive`
 
 ## 19 November 2026 - the cost of confirming the original reader outcome
 
+The [same-history feedback result](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/GROWING_CLOCK_DOOB_RU.md) extracts the actual final clock block from EOQ1 and preserves every normalized operator of the native history, its determinant and its source. See primary section 7gi and the shared index for the remaining absolute valuation and complete physical residual.
+
 [Shared evidence and replay](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) now include exact two-stage prices for the noisy NPS2 reader, an arithmetic non-cancellation theorem, and a first-variation test for the unknown cost of an entire archive of registered outcomes. The variance estimate enters CD13 with its physical gain and right lift. Three-point and diagonal comparisons remove arbitrary fixed tariffs. The physical valuation of the complete execution remains open. See primary section 7gh.
 
 ## 18 November 2026 — shared evidence and current physical-price gate

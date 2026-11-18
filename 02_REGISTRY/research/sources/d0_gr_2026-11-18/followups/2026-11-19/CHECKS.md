@@ -14,6 +14,13 @@ python3 -B "$d/metric/check_coherent_pressure.py"
 python3 -B "$d/metric/check_four_mark_stability.py"
 python3 -B "$d/metric/check_operator_return_pressure.py"
 python3 -B "$d/metric/check_forbidden_code.py"
+python3 -B "$d/metric/check_growing_clock_doob.py" --repo .
+python3 -B "$d/metric/check_diagonal_record_pressure.py"
+python3 -B "$d/metric/check_cold_correction.py"
+python3 -B "$d/metric/check_heat_history.py"
+python3 -B "$d/metric/check_scene_walk_heat.py"
+python3 -B "$d/metric/check_golden_record_race.py"
+python3 -B "$d/metric/check_paid_race_prefix.py"
 python3 -B "$d/arithmetic/check_arithmetic.py"
 python3 -B "$d/axioms/check_gate_field.py" --repo .
 python3 -B "$d/conditional/check_conditional.py" --repo .
@@ -32,6 +39,13 @@ python3 -B "$d/realization/check_realization.py"
 | Устойчивость четырёх сравнений | Интерполяция, коэффициенты и граница производной при конечной погрешности зарегистрированных вероятностей. [Результат](metric/four_mark_stability_result.json) |
 | Матричный холодный возврат | Полный дифференциал исходного определителя, разница подготовок, вариации на краях спектра и больше двух меток. [Результат](metric/operator_return_pressure_result.json) |
 | Запрещённый код штатного журнала | Сжатие ненулевой утечки в код 11, исходный центр и нижняя граница на шумном интервале. [Результат](metric/forbidden_code_result.json) |
+| Исходный оконечный блок часов | На двух настоящих растущих часах с рождениями и нескалярной входной нормировкой все буквы нормированного исполнения сохранены. [Результат](metric/growing_clock_doob_result.json) |
+| Фиксированный вес на общей полевой оси | Алгебраический тест события полного журнала, минимальное число проб и устойчивая интерполяция оператора по чётности. [Результат](metric/diagonal_record_pressure_result.json) |
+| Коррекция архивного фильтра | Точная нижняя оценка ошибки для сохраняющих метки операций, проверка поля конечных нативных слов и расходов процедуры восстановления. [Результат](metric/cold_correction_result.json) |
+| Тепловая цена слов | Две перестановки одинаковых адресованных операторов, спектральные моменты и точные границы отношения положительных статистических сумм. [Результат](metric/heat_history_result.json) |
+| Блуждание по 33 вершинам | Все коэффициенты при разных намотках до 19 шагов и граница ошибки вычисления производной. [Результат](metric/scene_walk_heat_result.json) |
+| Оплаченная запись и полный мастер | Пуассоновские рекорды, шансы исходов, дисперсия счёта и условные средние золотые длины с неудачными попытками. [Результат](metric/golden_record_race_result.json) |
+| Реальные расходы перед решением | Отмена всей предыстории при постоянных шансах, меняющаяся вероятность остановки, оставшийся расход по успешным пробам. [Результат](metric/paid_race_prefix_result.json) |
 | Арифметика исходной вероятности | Вычисление в целом кольце и независимо по модулю 13. Норма отношения шансов равна 5 по модулю 13. [Результат](arithmetic/arithmetic_result.json) |
 | Нативный участок G и двух CX | Фактические слова и матрица на 64 столбцах. Проверены инвариант и поля его коэффициентов. [Результат](axioms/gate_field_result.json) |
 | Условие на историю | Два полных исходных слова B121, когерентные амплитуды и точная вероятностная цена дополнительной регистрации. [Результат](conditional/result.json) |
