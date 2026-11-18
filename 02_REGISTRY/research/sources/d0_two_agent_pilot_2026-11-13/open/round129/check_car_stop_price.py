@@ -1,19 +1,14 @@
 """Replay the primary CAR jets and certify the fixed per-mark tariff bound."""
 
-from contextlib import redirect_stdout
 from fractions import Fraction
-from hashlib import sha256
-from io import StringIO
 import json
 from pathlib import Path
-import subprocess
+import runpy
 
 import sympy as sp
 from sympy.polys.matrices import DomainMatrix
 
-ROOT = Path(__file__).resolve().parents[6]
 COMMIT = "076d5d5a7b366c0dd0970f388df7a9e6895498c4"
-OWNER = "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md"
 PIN = "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66"
 
 
@@ -23,17 +18,9 @@ def require(condition, reason):
 
 
 def primary():
-    source = subprocess.check_output(["git", "show", f"{COMMIT}:{OWNER}"], cwd=ROOT)
-    start = source.index(b'#!/usr/bin/env python3\n"""Exact one-jet proof on the original full128 Fourier/CAR fixture.')
-    end = source.index(b"\n" + b"\x60" * 3, start)
-    raw = source[start:end + 1]
-    require(sha256(raw).hexdigest() == PIN, "Unpinned primary worksheet")
-    raw = raw.replace(b"(lab & j).bit_count()", b'bin(lab & j).count("1")')
-    raw = raw.replace(b"bits.bit_count()", b'bin(bits).count("1")')
-    namespace = {}
-    with redirect_stdout(StringIO()):
-        exec(compile(raw, f"{OWNER}#7gb", "exec"), namespace)
-    return namespace
+    # The directed checkout includes this hash-verified upstream constructor.
+    check = Path(__file__).resolve().parents[2] / "direct/round69/primary/check_stopped_fine.py"
+    return runpy.run_path(str(check))["original_jet"]()
 
 
 def verify_grouped_maps(data):

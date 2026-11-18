@@ -58,6 +58,19 @@ def registered_source():
             'clock_preparation_terminal_and_weight_terms_checked': True}
 
 
+def input_digest(root, name):
+    path = root / name
+    if name != 'A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md':
+        return sha256(path.read_bytes()).hexdigest()
+    # B120 cites this complete manuscript as of bd93394790d65b42014ffc18e206840fa2044cd0.
+    # Later sections were appended. Verify every byte of the original source snapshot.
+    with path.open('rb') as stream:
+        digest = sha256(stream.read(7_647_868)).hexdigest()
+    if digest != '2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b':
+        raise ValueError('B120 historical manuscript content mismatch')
+    return digest
+
+
 def main():
     root = Path(__file__).resolve().parents[4]
     paths = [
@@ -68,7 +81,7 @@ def main():
         'A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md',
     ]
     print(json.dumps({'result': 'PASS', 'scene': scene(), 'registered_fixture': registered_source(),
-                      'upstream_sha256': {p: sha256((root / p).read_bytes()).hexdigest() for p in paths},
+                      'upstream_sha256': {p: input_digest(root, p) for p in paths},
                       'physical_C_closed': False, 'GR_closed': False}, indent=2))
 
 

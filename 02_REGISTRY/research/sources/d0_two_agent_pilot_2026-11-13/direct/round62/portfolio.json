@@ -27,7 +27,7 @@
       "evidence": {
         "open/round120/B120_SCENE_CLOCK_WEIGHT_BINDING_RU.md": "f8b1b2774df0a8902984cdbc6c0ffaf9486fe55083477c263ab7ccd5b9ca86de",
         "open/round120/B120_SCENE_CLOCK_BINDING_CHECK.json": "ccfbbaa8917f7f3d0cd86a488f01f59f407ef4a920956d4ccffe1f786c93abe3",
-        "open/round120/check_scene_clock_binding.py": "01f7c34cf1f5520958896ee69a437a3810d04390ee4af2c694e4d14cacab6a8c"
+        "open/round120/check_scene_clock_binding.py": "13c5ef14953c8294e2b006d724ba3e8f970799d83c52b4df3d6bfbb0aa22fe6e"
       },
       "stdout_matches": "open/round120/B120_SCENE_CLOCK_BINDING_CHECK.json"
     },

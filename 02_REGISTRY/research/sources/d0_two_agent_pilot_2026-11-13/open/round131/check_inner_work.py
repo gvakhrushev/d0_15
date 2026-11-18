@@ -5,7 +5,6 @@ import ast
 from hashlib import sha256
 import json
 from pathlib import Path
-import subprocess
 import sys
 
 import mpmath as mp
@@ -26,7 +25,7 @@ def require(condition, reason):
 
 
 def load_comparator():
-    source = subprocess.check_output(["git", "show", f"{COMMIT}:{OWNER}"], cwd=REPO)
+    source = (REPO / OWNER).read_bytes()
     fence = bytes([96]) * 3
     marker = b"7ef SEVEN REFERENCE CHECKER"
     raw = source.split(b"<!-- BEGIN " + marker + b" -->\n" + fence + b"python\n")[1]
