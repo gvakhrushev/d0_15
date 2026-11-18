@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "native_gate_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "pair_with_emitters": {
+    "G": "8m+2",
+    "CX": 24,
+    "SourceI": 24,
+    "canonical_births": 4
+  },
+  "source_and_return": {
+    "same_registered_source_coefficients_on_common_null": true,
+    "old_cut_return_ignoring_record": "sum(h_a*h_b*g^Hamming(a,b))",
+    "old_cut_return_loss_positive_when_informative": true,
+    "full_born_cold_amplitude_factor_m1": "p^7",
+    "full_born_cold_probability_factor_m1": "p^14"
+  },
+  "physical_book_work_or_info_selected": false,
+  "GR_closed": false
+}
