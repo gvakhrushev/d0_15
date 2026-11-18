@@ -1,0 +1,58 @@
+{
+  "round": "A62/B120",
+  "base_direct": "bf47f9e66228d0da835c2f3ab64ce6cebb7e6729",
+  "scene_source_commit": "bd93394790d65b42014ffc18e206840fa2044cd0",
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "lanes": [
+    {
+      "id": "memory_and_clock",
+      "result": "Эквивалентность для вычисленного спектрального вклада памяти при остановке.",
+      "open": "Физический остаток полной цены и контроль фактических конечных сравнений.",
+      "next": "Подставить полные веса листьев и терминал в оценку действительного отклика.",
+      "check": "direct/round62/check_memory_and_words.py",
+      "evidence": {
+        "direct/round62/STOPPED_MEMORY_RU.md": "0b46c693e4fcabea991e73a438d226b49c8dd6c36677eee266e66c472b08c77c",
+        "direct/round62/MATCHED_WORDS_RU.md": "fa44f13f62d7f3d8428e472d457eb526a3a4de64cf29013fab311b6d8edd53b1",
+        "direct/round62/RECONSTRUCT_G_RU.md": "86608535475be505039eef311dc5742788d0d4d280e9385c0fec6d3cef2b2f31",
+        "direct/round62/check_memory_and_words.py": "aecf3895d3ab74050d12d40a0590555a492843d4ef35214e2948c97f9f6a8748"
+      }
+    },
+    {
+      "id": "scene_weights",
+      "result": "Различие рангов 32 и ≤4, операторное расстояние 1 в канонической точке.",
+      "open": "Карта источников сцены и часов.",
+      "next": "Вычислить абсолютный терминальный отклик на том же носителе.",
+      "check": "open/round120/check_scene_clock_binding.py",
+      "evidence": {
+        "open/round120/B120_SCENE_CLOCK_WEIGHT_BINDING_RU.md": "f8b1b2774df0a8902984cdbc6c0ffaf9486fe55083477c263ab7ccd5b9ca86de",
+        "open/round120/B120_SCENE_CLOCK_BINDING_CHECK.json": "ccfbbaa8917f7f3d0cd86a488f01f59f407ef4a920956d4ccffe1f786c93abe3",
+        "open/round120/check_scene_clock_binding.py": "01f7c34cf1f5520958896ee69a437a3810d04390ee4af2c694e4d14cacab6a8c"
+      },
+      "stdout_matches": "open/round120/B120_SCENE_CLOCK_BINDING_CHECK.json"
+    },
+    {
+      "id": "native_preparation",
+      "result": "Полярная сборка исходного алфавита и проверка запрещённого исхода 11.",
+      "open": "Физический источник нормировки и контекстная зависимость.",
+      "next": "Сравнить норму и отклик исходных историй Book03 для E₀ и E₀L₁.",
+      "check": "direct/round62/prep_clock/check_golden_clock.py",
+      "evidence": {
+        "direct/round62/prep_clock/GOLDEN_PREPARATION_CLOCK_RU.md": "68b1137d79300627029b111578166764917c67cc2dc7cbff3c26cb6b25b24596",
+        "direct/round62/RECONSTRUCT_G_RU.md": "86608535475be505039eef311dc5742788d0d4d280e9385c0fec6d3cef2b2f31",
+        "direct/round62/prep_clock/check_golden_clock.py": "79fc4eafb0d4e105fb6fbffeba12e1c2cf5ec8801d429215f495ba5521b4f048"
+      }
+    },
+    {
+      "id": "equation_equivalence",
+      "result": "Выделены 20 поперечных компонент и градиентная строка источника.",
+      "open": "Перенос H.1 в словарь Бьянки I и восстановление всего класса решений.",
+      "next": "Проверить проекцию действительного источника на независимые компоненты связности.",
+      "check": "direct/round62/equations/check_connection_response.py",
+      "evidence": {
+        "direct/round62/equations/BIANCHI_RESPONSE_RU.md": "ee6e9b1809549e2f0f3764ff672f376c70bfb30d83506fa7fff891a14e1841ed",
+        "direct/round62/equations/check_connection_response.py": "b0b1cf9ace56b77e2990ec8c8cae6e544141652010edb32e48a1ad8c4bd86be7"
+      }
+    }
+  ]
+}
