@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "native_gate_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "rank_2_signed_filter_all_matrix_columns": 32,
+  "rank_2_signed_filter_literal_stages": 12,
+  "rank_2_born_permutation_weight": 1,
+  "rank_3_gray_control_columns": 64,
+  "rank_3_born_permutation_weight": 2,
+  "rank_3_joint_nonscalar_feedback_determinant": true,
+  "shared_flag_rejected": true,
+  "conditional_slater_preparation_uses_no_logical_Toffoli_or_Hadamard": true,
+  "controlled_copy_of_field_word_required": false,
+  "physical_book_work_or_info_selected": false,
+  "GR_closed": false
+}
