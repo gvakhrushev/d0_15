@@ -2,6 +2,7 @@
 from hashlib import sha256
 import json
 from pathlib import Path
+import subprocess
 import sys
 
 import sympy as sp
@@ -99,7 +100,10 @@ def main():
         "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
     )
     receipt = {
-        "source_sha256": {path: sha256((REPO / path).read_bytes()).hexdigest()
+        "source_sha256": {path: sha256(subprocess.check_output([
+            "git", "show", f"dc411daf01f697ec85dd22f28bfe124171796645:{path}"
+        ], cwd=REPO) if path.endswith("PAID_SOURCE_RESIDUAL_2026_10_20.md")
+            else (REPO / path).read_bytes()).hexdigest()
                           for path in source_paths},
         "clock": check_clock(),
         "material": check_material(),

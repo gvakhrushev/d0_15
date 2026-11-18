@@ -8,6 +8,7 @@ import json
 from math import factorial
 from operator import mul
 from pathlib import Path
+import subprocess
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[5]
@@ -141,7 +142,10 @@ def main():
         "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
     ]
     receipt = {
-        "source_sha256": {path: sha256((REPO / path).read_bytes()).hexdigest()
+        "source_sha256": {path: sha256(subprocess.check_output([
+            "git", "show", f"dc411daf01f697ec85dd22f28bfe124171796645:{path}"
+        ], cwd=REPO) if path == PRIMARY
+            else (REPO / path).read_bytes()).hexdigest()
                           for path in source_paths},
         "serializer": check_cleanup(),
         "reordered_completion": check_reordered_completion(),
