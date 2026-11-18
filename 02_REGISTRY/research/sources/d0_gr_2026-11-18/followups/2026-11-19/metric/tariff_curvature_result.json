@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "scope": "fixed conditional tariff on all binary labels of independently restored scalar-effect reports",
+  "q_star": [
+    "0.41246988056855",
+    "0.41246988056856"
+  ],
+  "arbitrary_tariff": {
+    "report_count": 4,
+    "complete_archive_atoms": 16,
+    "permutations_checked": 24,
+    "exact_affine_secant_and_mixed_identity": true
+  },
+  "independent_axis": {
+    "P_double_prime_at_q_star": [
+      "8.575142242107",
+      "8.575142242108"
+    ],
+    "uniform_floor_4_over_ell": [
+      "8.312347684940",
+      "8.312347684941"
+    ],
+    "centered_secant_interval": [
+      "0.41",
+      "0.415"
+    ],
+    "complete_secant": [
+      "0.00005359373262",
+      "0.00005359373263"
+    ],
+    "universal_centered_secant_floor": [
+      "0.00005195217303",
+      "0.00005195217304"
+    ],
+    "exact_logit_slope_gain": [
+      "0.04287519367941",
+      "0.04287519367942"
+    ],
+    "anchor_free_max_abs_slope_floor": [
+      "0.02143759683970",
+      "0.02143759683971"
+    ]
+  },
+  "restored_two_report_controls": {
+    "fixed_match_fee_to_zero_one_or_two_equal_point_slopes": [
+      "1.512890555077",
+      "1.512890555078"
+    ],
+    "fixed_match_fee_2_diagonal_curvature": [
+      "25.150284484215",
+      "25.150284484216"
+    ],
+    "fixed_mismatch_fee_2_diagonal_curvature": [
+      "9.150284484215",
+      "9.150284484216"
+    ],
+    "fixed_mismatch_fee_5_diagonal_curvature": [
+      "-2.849715515785",
+      "-2.849715515784"
+    ],
+    "critical_mismatch_fee_for_diagonal_curvature": [
+      "4.287571121053",
+      "4.287571121054"
+    ],
+    "fixed_partner_qstar_sign_crossing_fee_interval": {
+      "left": [
+        "1.391796969077",
+        "1.391796969078"
+      ],
+      "right": [
+        "1.636713770048",
+        "1.636713770049"
+      ]
+    },
+    "match_slope_sign": "at fixed partner q* and fixed fee, the slope increases strictly in its own report probability; it crosses zero inside (l,r) iff the fee is strictly between the two thresholds"
+  },
+  "finite_menu": {
+    "sharpness_ratio_on_width_1_over_1000": "250000/249999",
+    "menu_size": 3,
+    "cells": [
+      [
+        "41/100",
+        "411/1000",
+        0
+      ],
+      [
+        "411/1000",
+        "207/500",
+        1
+      ],
+      [
+        "207/500",
+        "83/200",
+        2
+      ]
+    ],
+    "universal_oscillation_lower_bound": [
+      "0.0000028862318",
+      "0.0000028862319"
+    ],
+    "actual_cell_midpoint_gap": [
+      "0.0000096468419",
+      "0.0000096468420"
+    ],
+    "widest_cell_derivative_gain": [
+      "0.025724956784",
+      "0.025724956785"
+    ],
+    "infinite_menu": "tangent majorants of -P; equality at t=q; a common fee offset allows nonnegative prices on a compact interval"
+  },
+  "one_table_rectangle": {
+    "row_count": 3,
+    "winning_endpoint_bits": [
+      1,
+      0,
+      1
+    ],
+    "derivatives": [
+      {
+        "axis": 0,
+        "outward": [
+          "5.1853955035",
+          "5.1853955036"
+        ],
+        "universal_floor": [
+          "0.0207808692",
+          "0.0207808693"
+        ]
+      },
+      {
+        "axis": 1,
+        "outward": [
+          "4.7213486663",
+          "4.7213486664"
+        ],
+        "universal_floor": [
+          "0.0706549553",
+          "0.0706549554"
+        ]
+      },
+      {
+        "axis": 2,
+        "outward": [
+          "1.9573070040",
+          "1.9573070041"
+        ],
+        "universal_floor": [
+          "0.0498740861",
+          "0.0498740862"
+        ]
+      }
+    ]
+  },
+  "actual_canonical_preparation_collar": {
+    "target_input": "SC1-SC7, eps=1/64, delta=eps/(2*k0), matter observable zero, f in [-1/8,1/8]",
+    "certified_radius_about_literal_q_star": "9e-24",
+    "left_gap_qstar_minus_q_minus": [
+      "0.0000000000000000000000100125",
+      "0.0000000000000000000000100126"
+    ],
+    "right_gap_q_plus_minus_qstar": [
+      "0.0000000000000000000000099494",
+      "0.0000000000000000000000099495"
+    ],
+    "local_anchor_free_floor_for_two_target_slopes": [
+      "0.00000000000000000000007481112",
+      "0.00000000000000000000007481113"
+    ],
+    "source": "PR 334 0716b659d, primary lines 113422-113516 and 151345-151359",
+    "admission": "The common-clock SC5 compiler approximates each finite list of these continuous canonical preparation targets to arbitrary tolerance on every column. No exact continuum of finite words, specific compiled word for the rational endpoints, or geometric right lift for arbitrary input f is asserted. The wider [.41,.415] is a coordinate illustration, not certified here as the same geometric chart."
+  },
+  "formula_scope": "coordinate q_i varies while other rows stay fixed; neither common physical field nor arbitrary continuous chart silently supplies these independent axes",
+  "GR_closed": false
+}

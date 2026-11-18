@@ -15,7 +15,7 @@ Assembly-Slot: `constitutive`
 
 ## 19 November 2026 - the cost of confirming the original reader outcome
 
-[Shared evidence and replay](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) now include exact two-stage prices for the noisy NPS2 reader, an arithmetic non-cancellation theorem at its true field centre, and controls on conditioned economic reconstruction. The calibration from spectral distance to full execution cost is still open. The original full-price requirement and GR status are preserved. See primary section 7gh.
+[Shared evidence and replay](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) now include exact two-stage prices for the noisy NPS2 reader, an arithmetic non-cancellation theorem, and a first-variation test for the unknown cost of an entire archive of registered outcomes. The variance estimate enters CD13 with its physical gain and right lift. Three-point and diagonal comparisons remove arbitrary fixed tariffs. The physical valuation of the complete execution remains open. See primary section 7gh.
 
 ## 18 November 2026 — shared evidence and current physical-price gate
 

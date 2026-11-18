@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "finite_rational_chart": {
+      "q": [
+        "2/5",
+        "3/7",
+        "5/12",
+        "4/9"
+      ],
+      "tariff_mean": "5083/420",
+      "conditional_derivatives": [
+        "-1/4",
+        "74/27",
+        "269/105",
+        "33/7"
+      ],
+      "first_layer_variance": "42566947/4762800",
+      "full_variance": "1804571/176400",
+      "exact_diagonal_score": "109229/13230",
+      "full_dual_norm": "94529/7560",
+      "full_norm_bound_squared": "4298708276689/3556224000"
+    },
+    "high_variance_positive_tariff": {
+      "n_labels": 4,
+      "full_variance": "2880000000000/49",
+      "first_layer_variance": "0",
+      "all_first_derivatives_zero": true
+    },
+    "cancellation_boundary_verified": true,
+    "common_moving_cost_checked": true
+  },
+  "literal": {
+    "q_star": [
+      "0.4124698805685551619",
+      "0.4124698805685551620"
+    ],
+    "parsed_net_slope": [
+      "0.264846981945302",
+      "0.264846981945303"
+    ],
+    "variance_per_report_threshold": [
+      "0.016998571759164",
+      "0.016998571759165"
+    ],
+    "exact_threshold": "q*(1-q)*(1-log((1-q)/q)/log(phi))^2 at the literal q_star",
+    "enclosure": "exact Z[p] comparisons and rational positive atanh tails"
+  },
+  "status": "PASS",
+  "physical_leaf_tariff_measured": false,
+  "GR_closed": false
+}
