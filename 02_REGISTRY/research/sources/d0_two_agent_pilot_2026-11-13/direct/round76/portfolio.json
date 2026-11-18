@@ -1,0 +1,137 @@
+{
+  "round": "A76",
+  "base_shared": "f6473e90ecf33b5f884847d2df4af943f9f9351a",
+  "primary_pr334": "cbd6147869af5625c6f86d2edd9a5b122929ae10",
+  "related_open_commits": {
+    "B149": "82cbb04f212bfa414e8d7c954c808a700897e276",
+    "B150": "0a4de2f1a41ee093bf276d91b5c8763ceaf4173d"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_RECORD_PRICE_SOURCE.md": "393971c009081fbb43581e9e9daa542434d3538f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE.md": "d9b777bfb6eaea65642e27f049375ab07e68430c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_pointer_source.py": "70ec8c7273de251766b4796d1562a116d19eb8c6",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py": "9f77a326531b3007f7e3ed42907bf61a9f522dcc",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE_CERTIFICATE.json": "1a55c95736945835e2a35c3fd47cad8a835600ab",
+    "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md": "3c41616d2f4f5fa7c0b5085188eae2e505f9f403",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "562ccfa715ad814faec55f6b0641ee226dda2d88",
+    "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md": "75c40d133a23973a36ba5b95d34b4eb36ca96663",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_right_posterior_gain.py": "c3b0162036e224c6f0111e72ed77bec3d6554b9c",
+    "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": "79ad345ddef6bb06c638f41721db1a84843e4a9b",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean": "6a163d25ba4509ecf6b83a0db62dd73959b3d1ed",
+    "02_REGISTRY/research/A4D_Q8_SPIN_SHEET_327_TRIANGLE_INVERSE_AND_960_COHERENCE_GATES_2026_10_20.md": "8710f3b72cb6e75350be6ab10119a48a6bf59759",
+    "02_REGISTRY/research/A4D_CONDITIONAL_BOOK_GOLDEN_INFO_Q8_SPIN_SHEET_SOURCE_SELECTOR_2026_10_20.md": "9bf83fcc63a295aa81a5c08ac62ee4edf8a76f30",
+    "02_REGISTRY/research/A4D_ORIGINAL_BOOK_ALL_PATHS_FLOW_PRESSURE_ACTION_AND_EXACT_HISTORY_SCHUR_2026_10_19.md": "6ee47a9bc73a75a10873495ab68aa1a03e213a46",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md": "6d00e72d40d767f99b2778c69cee9a984c88bad2",
+    "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md": "dc22cc51ecea386ecfb8cb8f39c83541f4299750",
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "df8611c7fa37fa71e883831b3f01f434532d99ce",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "d0c488143fbbad22d81486f566de60a79ff8772b"
+  },
+  "lanes": [
+    {
+      "id": "geometric_fibres_of_the_full_native_pointer",
+      "check": "direct/round76/geometry/check_invisible_geometry.py",
+      "result": "Точный ранг 26 исходного журнала и ранг 29 при присоединении трёх тепловых цен, включая 32 масштаба Вейля.",
+      "open": "Последовательная история, связность, предел по решёткам.",
+      "evidence": {
+        "direct/round76/geometry/check_invisible_geometry.py": "06f0e8b43ccb0482c22ea96478932b8a1920ad7450459d4b5b36558e0f45edef",
+        "direct/round76/geometry/INVISIBLE_GEOMETRY_RU.md": "9db09d86afed635e54d9b88e4409fd3b2e9bdc4ea3143f64fdd85b5f0d4a6e9d",
+        "direct/round76/READOUT_RU.md": "b8da2aed609091615eb891e7d6062a895e0808554f59711f6e11c2f0d060d525",
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c"
+      }
+    },
+    {
+      "id": "noisy_site_reads_recover_128_geometric_parameters",
+      "check": "direct/round76/record/check_data_geometry.py",
+      "result": "Восемь реальных шумных чтений SITE дают ранг 128 на исходной подготовке.",
+      "open": "Адресация живого DATA, полный источник оплаты и практическая чувствительность.",
+      "evidence": {
+        "direct/round76/record/check_data_geometry.py": "a1ecfdae207938aa36e6ef3f9fb314d833f48383d7ff345880c39491d475c830",
+        "direct/round76/record/DATA_GEOMETRY_RU.md": "e446ef984b0a99406319ad9bdd9f0b9ba2c44ecec9eea93c345ac25fb2121cfb",
+        "direct/round76/READOUT_RU.md": "b8da2aed609091615eb891e7d6062a895e0808554f59711f6e11c2f0d060d525",
+        "direct/round76/geometry/check_invisible_geometry.py": "06f0e8b43ccb0482c22ea96478932b8a1920ad7450459d4b5b36558e0f45edef",
+        "direct/round75/memory/POINTER_MEMORY_RU.md": "a9c3df3d0bccdf105b3ee3e0f5187c5369f493dffa79e15ede0190441fbecc89"
+      }
+    },
+    {
+      "id": "actual_full_golden_tariff_on_the_equal_energy_curve",
+      "check": "direct/round76/record/check_complete_tariffs.py",
+      "result": "Штатный шестибитный тариф и экстремумы всех полных деревьев не погашают геометрический источник.",
+      "open": "Ранние затраты применения и физическая информация.",
+      "evidence": {
+        "direct/round76/record/check_complete_tariffs.py": "213739c2ed2abf6a378781ec561b6984db7c4a8937bb9940490ecedc62e5ffa0",
+        "direct/round76/record/COMPLETE_RECORD_PRICE_RU.md": "9a11b8888eeb03bf9ecf52fb7bd5328a536338a4a11562550550c6cf9641b1e0",
+        "direct/round76/READOUT_RU.md": "b8da2aed609091615eb891e7d6062a895e0808554f59711f6e11c2f0d060d525",
+        "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb",
+        "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c"
+      }
+    },
+    {
+      "id": "joint_archived_site_and_car_terminal_source",
+      "check": "direct/round76/history/check_terminal_data.py",
+      "result": "На всех совместных исходах SITE, маски и указателя полный терминальный код и энтропия дают строгий остаток.",
+      "open": "Цена адресной подготовки и внутренних шагов.",
+      "evidence": {
+        "direct/round76/history/check_terminal_data.py": "aec797dba2762d4f927455f850235cc969624b62ce1ff932c4cbf0ccef5762e5",
+        "direct/round76/history/FULL_DATA_PRICE_RU.md": "fe7d412e8f19c1d6f2a6b9ad72e706756c758b31becb66ed70447a22ef5bb57f",
+        "direct/round76/READOUT_RU.md": "b8da2aed609091615eb891e7d6062a895e0808554f59711f6e11c2f0d060d525",
+        "direct/round76/record/COMPLETE_RECORD_PRICE_RU.md": "9a11b8888eeb03bf9ecf52fb7bd5328a536338a4a11562550550c6cf9641b1e0",
+        "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb"
+      }
+    },
+    {
+      "id": "native_stopped_square_root_and_balanced_resource_price",
+      "check": "direct/round76/history/check_stopped_history.py",
+      "result": "Точный остановленный подъём реального слова, два уравненных счётчика и аналитическое препятствие при постоянном штрафе.",
+      "open": "Эффективный экономический вес длительных путей, настоящий класс памяти и работа контроллера.",
+      "evidence": {
+        "direct/round76/history/check_stopped_history.py": "116d07130a077ec3f4a416222543417ba3eb85f63d7b35f981a5e5f515bf9300",
+        "direct/round76/history/STOPPED_HISTORY_RU.md": "959d69a196f148fd93b422ff1e7000c9bb2645458856cb9f9756fac42e8c1827",
+        "direct/round76/READOUT_RU.md": "b8da2aed609091615eb891e7d6062a895e0808554f59711f6e11c2f0d060d525",
+        "open/round149/B149_FULL_BOOK_MEMORY_RETURN_RU.md": "c39cecc1e40a082586667b59df8ef458168d4fd637178d1da3c691b3454fc4ca"
+      }
+    },
+    {
+      "id": "conditional_quantum_price_of_a_balanced_stopped_record",
+      "check": "direct/round76/history/check_branch_cq.py",
+      "result": "Для двух исходов порта найдена ненулевая производная условной полной энтропии после уравнивания расходов.",
+      "open": "Реальная разность ветвевых затрат и возможная общая память между приготовлениями.",
+      "evidence": {
+        "direct/round76/history/check_branch_cq.py": "af451a36c9b53bb88ef104b2dc414e231db623cfb8a1bb2bf15c0164e4c28b57",
+        "direct/round76/history/BRANCH_CQ_RU.md": "a295de5ef602fc9b658d716fb527b1a63b44b18112e4ef469a01767d01f3bff8",
+        "direct/round76/READOUT_RU.md": "b8da2aed609091615eb891e7d6062a895e0808554f59711f6e11c2f0d060d525",
+        "direct/round76/history/STOPPED_HISTORY_RU.md": "959d69a196f148fd93b422ff1e7000c9bb2645458856cb9f9756fac42e8c1827",
+        "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb"
+      }
+    },
+    {
+      "id": "paid_central_history_pressure_at_a_real_scene_edge",
+      "check": "direct/round76/memory/check_central_pressure.py",
+      "result": "На реальных замкнутых треугольниках и двух исходных тарифах регулярная и знаковая цены дают противоположные отклики.",
+      "open": "Выбор физического режима чтения и назначение этого ребра полю H.1.",
+      "evidence": {
+        "direct/round76/memory/check_central_pressure.py": "169d15f0e186c32b5e0a1a77efb85aa9b73862efc94c0cf8b0fe07a4049e7dc1",
+        "direct/round76/memory/CENTRAL_PRESSURE_RU.md": "f33b72294b72bd8b55ece6e8a646ca6b0f246ccf41ba9f0c130b5d2f77ff5aae",
+        "direct/round76/READOUT_RU.md": "b8da2aed609091615eb891e7d6062a895e0808554f59711f6e11c2f0d060d525"
+      }
+    },
+    {
+      "id": "native_noisy_geometry_tariff_with_all_eight_confirmations",
+      "check": "direct/round76/record/check_noisy_site_price.py",
+      "result": "Собственная оплата восьми шумных чтений, обе рабочие калибровки и две сохранённые квантовые алгебры оставляют ненулевой источник.",
+      "open": "Вклады остальных ворот и часов на той же полной истории.",
+      "evidence": {
+        "direct/round76/record/check_noisy_site_price.py": "170f1b51e3f3cb1625c062b658e95782380a1a054328a921549df337b1838123",
+        "direct/round76/record/NOISY_SITE_PRICE_RU.md": "6fc67bf3838f13be24dc7e34b99dabaac8c3d5da2ccf00fac9e72f5256be1bda",
+        "direct/round76/READOUT_RU.md": "b8da2aed609091615eb891e7d6062a895e0808554f59711f6e11c2f0d060d525",
+        "direct/round76/record/check_complete_tariffs.py": "213739c2ed2abf6a378781ec561b6984db7c4a8937bb9940490ecedc62e5ffa0",
+        "direct/round76/record/DATA_GEOMETRY_RU.md": "e446ef984b0a99406319ad9bdd9f0b9ba2c44ecec9eea93c345ac25fb2121cfb",
+        "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb",
+        "direct/round75/work/RETAINED_WORK_RU.md": "6308cd3389ff4682e6a69d3927e011bef33ee3db26a8dad637bf2c31ce7d3dbb"
+      }
+    }
+  ]
+}

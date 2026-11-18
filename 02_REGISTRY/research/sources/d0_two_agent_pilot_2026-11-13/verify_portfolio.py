@@ -1,7 +1,7 @@
 """Replay independent research checks and verify the listed evidence files."""
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from hashlib import sha256
+from hashlib import sha1, sha256
 import json
 import os
 from pathlib import Path
@@ -27,11 +27,32 @@ def verify_lane(base, lane):
     return lane["id"]
 
 
+def verify_primary_sources(repo, pins, verified):
+    for filename, expected in pins.items():
+        key = (filename, expected)
+        if key in verified:
+            continue
+        path = (repo / filename).resolve()
+        if not path.is_relative_to(repo):
+            raise ValueError(f"Primary source outside the checkout: {filename}")
+        data = path.read_bytes()
+        # The primary pins are object IDs from the shared SHA-1 Git repository.
+        digest = sha1(f"blob {len(data)}\0".encode("ascii"))
+        digest.update(data)
+        if digest.hexdigest() != expected:
+            raise ValueError(f"Primary Git blob does not match: {filename}")
+        verified.add(key)
+
+
 def main(manifests, workers=4):
     base = Path(__file__).resolve().parent
+    # This pilot lives under 02_REGISTRY/research/sources in clones and exports.
+    repo = base.parents[3]
+    verified = set()
     lanes = []
     for manifest in manifests:
         portfolio = json.loads(Path(manifest).read_text(encoding="utf-8"))
+        verify_primary_sources(repo, portfolio.get("primary_git_blobs_on_shared", {}), verified)
         lanes.extend(portfolio["lanes"])
     if not lanes or len({lane["id"] for lane in lanes}) != len(lanes):
         raise ValueError("Expected one unique entry per research lane")
