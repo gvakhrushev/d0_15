@@ -1,0 +1,65 @@
+{
+  "round": "A73",
+  "base_shared": "fa7ad0264d72e9a0d07b3efa124b4db1bb304815",
+  "primary_pr334": "0716b659d8e62c3fc7b72e3c817a8f7622ace0b4",
+  "related_open_commits": {
+    "B143": "686d121b0623430ef0836e9c25a9eb75814846ed"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py": "9f77a326531b3007f7e3ed42907bf61a9f522dcc",
+    "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py": "7f0b411a7d8fa6af6753109eb7057a7a375fd5ef"
+  },
+  "lanes": [
+    {
+      "id": "material_root_and_collar_source_test",
+      "check": "direct/round73/matter/check_matter_root.py",
+      "result": "Решены все 64 внутренние материальные строки H+J+R. Получены ненулевая волновая строка и обязательный знак и величина проекции добавочного источника.",
+      "open": "Физическая Cost−Info на той же ветви и её перенос при уточнении.",
+      "evidence": {
+        "direct/round73/matter/check_matter_root.py": "3b6f6e7edc47d62e9549b44bc6bb00570f8e501ca86eb9cb714bbf42e648019b",
+        "direct/round73/matter/SHIFTED_MATTER_ROOT_RU.md": "8eee75b1ae4c611f86aa6997c406f4d403ff44c0574f158a0a51baf822bf3b94",
+        "direct/round73/READOUT_RU.md": "c46d49729a337b7389626bb5d723e7ddf9d12390bb884139eb580060efdf0f92",
+        "direct/round72/preparation/MARKED_MATERIAL_PRICE_RU.md": "300a8852823a66e2fc9cb4a0152d77a6ac4a12ca0c87c8bab6c69faa2b8a1fe7"
+      }
+    },
+    {
+      "id": "counting_source_from_paid_history_recurrence",
+      "check": "direct/round73/history/check_history_return.py",
+      "result": "Время возврата к первой полной записи устраняет смещение из-за частоты истории. Определены источник абсолютной суммы и цена сравнений.",
+      "open": "Исходные физические начисления и доступ ко всем допустимым историям с памятью.",
+      "evidence": {
+        "direct/round73/history/check_history_return.py": "4dfb36e1ba1aec41adab80dc23fb29b32809f3db66784d074f7aa75394ca6cff",
+        "direct/round73/history/HISTORY_RETURN_RU.md": "038f7a3348520ba2201e1357a67ea0a61aa362b7179c8787b3ea30a9d59f4f08",
+        "direct/round73/READOUT_RU.md": "c46d49729a337b7389626bb5d723e7ddf9d12390bb884139eb580060efdf0f92",
+        "open/round134/B134_NATIVE_SLATER_FEEDBACK_RU.md": "4ca631df39ac5c036126e3143acfda311cc8e4efdcc1b39d5403deff8d2bc91b",
+        "direct/round72/record/RECORD_SOURCE_RU.md": "7b12290c5e37f410bc9ba52ac8f8581f92ab446e85f50ab9e7975ede6386fafc"
+      }
+    },
+    {
+      "id": "actual_clock_price_for_noisy_extensions",
+      "check": "direct/round73/clock/check_suffix_price.py",
+      "result": "Получены тепловая цена подшивки и строгая оптимальность остановки после достигнутого LC4 в указанном классе продолжений.",
+      "open": "Исходная оплата обязательного приготовления и действительный геометрический сигнал.",
+      "evidence": {
+        "direct/round73/clock/check_suffix_price.py": "264e5a521f189aa93252d3dd292b2a403a25678776d1d99780cfe84b598b9687",
+        "direct/round73/clock/NOISY_TAIL_PRICE_RU.md": "9e92b6a07c4e68ac37f0cbefaa8c12e2e59cd08f5380f5be88009aa5d473318e",
+        "direct/round73/READOUT_RU.md": "c46d49729a337b7389626bb5d723e7ddf9d12390bb884139eb580060efdf0f92",
+        "direct/round69/clock/check_early_heat.py": "1082204cdeb3fe29d8f764d5bc9579cc9d7559dd35b93113b2b08d403c807f89"
+      }
+    },
+    {
+      "id": "finite_geometric_covector_recovery",
+      "check": "direct/round73/geometry/check_geometric_projection.py",
+      "result": "Конечная комбинация полных цен выделяет холодный отклик во всех направлениях фиксированного пространства вариаций.",
+      "open": "Выбор этого же отклика физической полной оплатой на одном исполнении.",
+      "evidence": {
+        "direct/round73/geometry/check_geometric_projection.py": "2af60dac4bec32ef1a673a562b7b289769f5f078fa18e407eeda6fa8bf3a8009",
+        "direct/round73/geometry/GEOMETRIC_PROJECTION_RU.md": "2c622aa5722d9583cd97b722fa2505524892aa1577d136f11e2f2492a495c179",
+        "direct/round73/READOUT_RU.md": "c46d49729a337b7389626bb5d723e7ddf9d12390bb884139eb580060efdf0f92",
+        "direct/round72/ledger/CYCLE_SOURCE_RU.md": "8ecb0194e5396d47ff5033e49b8cf11545f2b1f478d448857fc54039b223d41f"
+      }
+    }
+  ]
+}
