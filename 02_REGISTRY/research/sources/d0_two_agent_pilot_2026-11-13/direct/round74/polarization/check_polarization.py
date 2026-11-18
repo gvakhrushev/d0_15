@@ -3,6 +3,7 @@ from pathlib import Path
 import sys
 
 import sympy as sp
+from sympy.polys.matrices import DomainMatrix
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "round73" / "matter"))
 import check_matter_root as owner
@@ -50,7 +51,10 @@ def main():
         delta[i] = 1
         columns.append([owner.wave_equation(delta, j) for j in active])
     wave = sp.Matrix(columns).T
-    check(wave.rank() == 30 and modes.rank() == 2 and wave * modes[active, :] == sp.zeros(n, 2),
+    # Rank modulo a prime is a lower bound over Q. Two independent exact
+    # null columns give the matching upper bound without rational elimination.
+    modular_rank = DomainMatrix.from_Matrix(wave).convert_to(sp.GF(101)).rank()
+    check(modular_rank == 30 and modes.rank() == 2 and wave * modes[active, :] == sp.zeros(n, 2),
           "zero-boundary wave modes")
     profile = sp.Matrix([owner.core.B(site) for site in sites])
     check(all(owner.wave_equation(profile, i) == 0 for i in active), "inhomogeneous target")

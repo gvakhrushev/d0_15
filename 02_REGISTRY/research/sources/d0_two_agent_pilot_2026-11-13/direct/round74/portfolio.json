@@ -4,7 +4,8 @@
   "primary_pr334": "0716b659d8e62c3fc7b72e3c817a8f7622ace0b4",
   "related_open_commits": {
     "B144": "123c194b9a09837291b693de543b00104ad6d3a1",
-    "B145": "eb9083f3d1fd5246f075666c22cf2c8e488797bf"
+    "B145": "eb9083f3d1fd5246f075666c22cf2c8e488797bf",
+    "B146": "76e7e249d1808e33322552f14a9176cb4158ead5"
   },
   "GR_closed": false,
   "physical_C_closed": false,
@@ -23,10 +24,11 @@
       "open": "Старое полное измерение, физические затраты и выбор лоренцевой материальной строки.",
       "evidence": {
         "direct/round74/polarization/check_unit_response.py": "f4fc78f3110b63ea434bfc40a99f1c86116e92991e7b99796972b4d8537f2226",
-        "direct/round74/polarization/UNIT_MATERIAL_RESPONSE_RU.md": "7740222c6732c6c690f0be7c1c02d6f319aef6e6b051dfee21ef8ee8c10c9a81",
-        "direct/round74/READOUT_RU.md": "68eacf8987ab8d51dd9101f40e1937763fc2f05541291371f166af3b27b6960a",
+        "direct/round74/polarization/UNIT_MATERIAL_RESPONSE_RU.md": "a4db60b51df15cdb26586388ec38982d4ea23cccf36c74a4e31495e4cbcbe5d1",
+        "direct/round74/READOUT_RU.md": "65237e880f67548122b2954bf7306d66fce14213abd91138a7fdbaacb7b122bb",
         "direct/round66/printing/ONE_TAG_PRICE_RU.md": "47c56c020c310e09f6d59e6a805f351e8eda5b8a9a09da5ac7574eeb0cfc4d13",
-        "direct/round70/coding/CAP_TYPE_CODE_RU.md": "7de2a100b663b90093a7434afc4492d58c7e8ccfd4c63b875027885d393e1d42"
+        "direct/round70/coding/CAP_TYPE_CODE_RU.md": "7de2a100b663b90093a7434afc4492d58c7e8ccfd4c63b875027885d393e1d42",
+        "open/round146/B146_MATERIAL_RESIDUAL_ON_NATIVE_REFINEMENT_RU.md": "18043962a531f1bec66ee0c7efcb6371937755321bc98ffe3a68e285ea0bf495"
       }
     },
     {
@@ -35,9 +37,9 @@
       "result": "Нижние границы силы при повороте и после усреднения поляризаций.",
       "open": "Оплаченные источники двух действительных приготовлений и уточнение.",
       "evidence": {
-        "direct/round74/polarization/check_polarization.py": "5a41fbb86ba45b16a3c69565f0a635e13e474b8bb8e4262edc5eeb3eb582198e",
+        "direct/round74/polarization/check_polarization.py": "073ce088061a86bb384f4fd10d8f485201c241b658a7425eaf5747cfc73f1eaa",
         "direct/round74/polarization/POLARIZATION_SOURCE_RU.md": "6aa60f88959718bdb0769c26683dc1309a497a66d05420fe50e9d0e673bdfc5c",
-        "direct/round74/READOUT_RU.md": "68eacf8987ab8d51dd9101f40e1937763fc2f05541291371f166af3b27b6960a",
+        "direct/round74/READOUT_RU.md": "65237e880f67548122b2954bf7306d66fce14213abd91138a7fdbaacb7b122bb",
         "direct/round73/matter/check_matter_root.py": "3b6f6e7edc47d62e9549b44bc6bb00570f8e501ca86eb9cb714bbf42e648019b",
         "open/round144/B144_REQUIRED_MATERIAL_SOURCE_ON_A73_COLLAR_RU.md": "0373ae584c7b50ec401084ad3ac9fdf94870ab68d90da27d9b114dfe41c7507f"
       }
@@ -50,7 +52,7 @@
       "evidence": {
         "direct/round74/preparation/check_native_pointer_profile.py": "b4802ac57ac2945cf6ccb66a90046eadbb10212dbefd8262ce13987e6614a8c7",
         "direct/round74/preparation/NATIVE_PREPARATION_PRICE_RU.md": "eefb035a62897f0b8e999d8e74f45f2f3969e8a89d523329f3396537b722d7be",
-        "direct/round74/READOUT_RU.md": "68eacf8987ab8d51dd9101f40e1937763fc2f05541291371f166af3b27b6960a",
+        "direct/round74/READOUT_RU.md": "65237e880f67548122b2954bf7306d66fce14213abd91138a7fdbaacb7b122bb",
         "direct/round73/matter/SHIFTED_MATTER_ROOT_RU.md": "8eee75b1ae4c611f86aa6997c406f4d403ff44c0574f158a0a51baf822bf3b94"
       }
     },
@@ -62,7 +64,7 @@
       "evidence": {
         "direct/round74/clock/check_material_clock.py": "0b2e25001c86fff8237225b2b9bd4dd014ec7484a0a7d5498d6c23a93519623a",
         "direct/round74/clock/MATERIAL_CLOCK_RU.md": "e2d10c24892ad97b1354f22853eb7ada78147dc61348a6a3573215e8e7d56f09",
-        "direct/round74/READOUT_RU.md": "68eacf8987ab8d51dd9101f40e1937763fc2f05541291371f166af3b27b6960a",
+        "direct/round74/READOUT_RU.md": "65237e880f67548122b2954bf7306d66fce14213abd91138a7fdbaacb7b122bb",
         "direct/round73/clock/NOISY_TAIL_PRICE_RU.md": "9e92b6a07c4e68ac37f0cbefaa8c12e2e59cd08f5380f5be88009aa5d473318e"
       }
     },
@@ -74,7 +76,7 @@
       "evidence": {
         "direct/round74/geometry/check_material_ledger.py": "42079adee6f6d093ca3e18f87d5279bd2d964fc6255f1d4bf0da0a440c8d80f0",
         "direct/round74/geometry/MATERIAL_LEDGER_RU.md": "000601a5aada670eaa7f10d6cb159abeeffe56a5607228233d0496cb3ae81839",
-        "direct/round74/READOUT_RU.md": "68eacf8987ab8d51dd9101f40e1937763fc2f05541291371f166af3b27b6960a"
+        "direct/round74/READOUT_RU.md": "65237e880f67548122b2954bf7306d66fce14213abd91138a7fdbaacb7b122bb"
       }
     }
   ]
