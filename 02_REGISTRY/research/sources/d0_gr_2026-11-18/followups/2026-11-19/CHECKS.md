@@ -25,6 +25,11 @@ python3 -B "$d/metric/check_block_code.py"
 python3 -B "$d/metric/check_source_price.py"
 python3 -B "$d/metric/check_prefix_cx.py"
 python3 -B "$d/metric/check_site_ward.py"
+python3 -B "$d/metric/check_event_information.py"
+python3 -B "$d/metric/check_boundary_experiment.py"
+python3 -B "$d/metric/check_paid_predictor.py"
+python3 -B "$d/metric/check_optional_clock.py"
+python3 -B "$d/metric/check_hypothesis_stop.py"
 python3 -B "$d/arithmetic/check_arithmetic.py"
 python3 -B "$d/axioms/check_gate_field.py" --repo .
 python3 -B "$d/conditional/check_conditional.py" --repo .
@@ -54,6 +59,11 @@ python3 -B "$d/realization/check_realization.py"
 | Минимальный код и цена выполнения | Штатный NPS14, два обратимых языка программ и точная разность средней цены реально читаемой метки. [Результат](metric/source_price_result.json) |
 | Холодный определитель перед и после CX | Нативные слова с общим конечным оператором и разными приращениями определителя на одной операции. [Результат](metric/prefix_cx_result.json) |
 | Перенос адресного приготовления | Семивходовый компаратор, норма вариации, поток между ячейками и знак встречного члена. [Результат](metric/site_ward_result.json) |
+| Информация о предикате и банке | Две реальные вероятностные колонки, квантовая условная энтропия, предел для движущихся состояний, полевые и аппаратные производные, условный выигрыш относительно Крафта. [Результат](metric/event_information_result.json) |
+| Наблюдения на границах | Оптимальные прогнозы на дополнении указателя, неизвестный защищённый вход, две нативные подготовки и проверка абсолютных масс на смеси. [Результат](metric/boundary_experiment_result.json) |
+| Записанный прогноз | Конечные слова на свежих и старых регистрах, все четыре исхода, ошибка и производная совместной двухсимвольной цены. [Результат](metric/paid_predictor_result.json) |
+| Нормировка при остановке | Короткое, длинное и смешанное завершения, рост тепловой размерности и разность откликов при одинаковых размерах. [Результат](metric/optional_clock_result.json) |
+| Расход меток на проверку гипотез | Родные 64-колоночные схемы, строгие ненулевые вероятности, минимальная ошибка при ограниченном числе измерений и цена последовательного решения. [Результат](metric/hypothesis_stop_result.json) |
 | Арифметика исходной вероятности | Вычисление в целом кольце и независимо по модулю 13. Норма отношения шансов равна 5 по модулю 13. [Результат](arithmetic/arithmetic_result.json) |
 | Нативный участок G и двух CX | Фактические слова и матрица на 64 столбцах. Проверены инвариант и поля его коэффициентов. [Результат](axioms/gate_field_result.json) |
 | Условие на историю | Два полных исходных слова B121, когерентные амплитуды и точная вероятностная цена дополнительной регистрации. [Результат](conditional/result.json) |

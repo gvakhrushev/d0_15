@@ -1,0 +1,90 @@
+{
+  "schema": "d0.optional-clock-frontiers/1",
+  "status": "PASS",
+  "frontiers": {
+    "demonstration_q": "2/5",
+    "unequal_inclusive_totals_ratio": "221/56",
+    "forced_hybrid_probability": "221/305",
+    "relative_hybrid_long_vs_short_correction": "56/221"
+  },
+  "true_raw_padding": {
+    "D_unpadded": 572,
+    "true_full_modes": 243100,
+    "true_q": [
+      "0.49342219125178758",
+      "0.49342219125178759"
+    ],
+    "padding_pairs": {
+      "1": {
+        "D": 700,
+        "lower_Z_H_ratio": "2513/2431",
+        "lower_hybrid_P1": "0.50171544581396",
+        "lower_TV": "0.00829325456217"
+      },
+      "32": {
+        "D": 4668,
+        "lower_Z_H_ratio": "418953/60775",
+        "lower_hybrid_P1": "0.87037375689893",
+        "lower_TV": "0.37695156564714"
+      },
+      "256": {
+        "D": 33340,
+        "lower_Z_H_ratio": "598453/12155",
+        "lower_hybrid_P1": "0.97957370881654",
+        "lower_TV": "0.48615151756475"
+      }
+    }
+  },
+  "normalized_native_comparison": {
+    "late_words": [
+      "G1;CX01",
+      "CX01;G1"
+    ],
+    "exact_late_cold_power_basis": [
+      [
+        9,
+        0,
+        -14,
+        1
+      ],
+      [
+        -1,
+        0,
+        2,
+        1
+      ]
+    ],
+    "early_Q_native": [
+      [
+        "0.472135954999579392",
+        "0.472135954999579393"
+      ],
+      [
+        "0.390351412975617634",
+        "0.390351412975617635"
+      ]
+    ],
+    "early_cold_native": [
+      [
+        "0.054301271247790181",
+        "0.054301271247790182"
+      ],
+      [
+        "0.181074132236806150",
+        "0.181074132236806151"
+      ]
+    ],
+    "equal_early_square_calls": 32,
+    "late_square_calls_before_common_pairs": 2,
+    "paid_pairs": 3,
+    "youngest_suffix_age": 8,
+    "CL8_A_L_exact": "128/3423108026245359375",
+    "lower_uniform_dJ_dQ": "0.000000022775741041030",
+    "upper_double_heat_error": "0.000000000000000149571675",
+    "strict_lower_double_change_of_B": "0.000000001862703400725",
+    "short_vs_late_controller": "the conditional dispatcher and any extra dephasing/clock must have a common-leaf embedding and be paid separately",
+    "physical_field": "same inequality for matched geometric NPS2 endpoints with their true nonzero Delta Q and current native cold NPS6. Choose common padding after Delta Q is established; do not treat a change of native preparation as a spacetime field by declaration."
+  },
+  "original_positive_economic_measure_with_shared_stop_prices_identified": false,
+  "GR_closed": false
+}
