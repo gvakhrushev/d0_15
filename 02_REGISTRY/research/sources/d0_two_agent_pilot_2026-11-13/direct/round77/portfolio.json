@@ -1,0 +1,208 @@
+{
+  "round": "A77",
+  "base_shared": "255ebecc88505e55de3eb9c2eeec33cf8e26af06",
+  "claims_shared": [
+    "2c9a81dcdea55ef11a4c1a1ac55c3613be504af1",
+    "4b75823ed0bda872f184e673cadf4a4144d73a22"
+  ],
+  "primary_pr334": "fa515aebf09a765072d552d70c0446d4125b3238",
+  "reviewed_pr334": "06edd2e922950459c1d79b1b12b2ce453680c03c",
+  "related_open_commits": {
+    "B151": "255ebecc88505e55de3eb9c2eeec33cf8e26af06",
+    "B152": "ea937197fc45a618fa71ba3d47fc90d3ea1db2b4"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": "79ad345ddef6bb06c638f41721db1a84843e4a9b",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md": "3c41616d2f4f5fa7c0b5085188eae2e505f9f403",
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": "df8611c7fa37fa71e883831b3f01f434532d99ce",
+    "02_REGISTRY/research/A4D_CONDITIONAL_BOOK_GOLDEN_INFO_Q8_SPIN_SHEET_SOURCE_SELECTOR_2026_10_20.md": "9bf83fcc63a295aa81a5c08ac62ee4edf8a76f30",
+    "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "562ccfa715ad814faec55f6b0641ee226dda2d88",
+    "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md": "75c40d133a23973a36ba5b95d34b4eb36ca96663",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "2c9e30fc7ae5518aa958d0ee29c08ae071150c69",
+    "02_REGISTRY/research/A4D_NATIVE_TWO_THREE_TICK_CLOSED_BOOK_ODDS_ABSOLUTE_ACTION_INVERSE_2026_10_19.md": "581b142b424a9edf1af7611324322949f2cb72fa",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "d0c488143fbbad22d81486f566de60a79ff8772b",
+    "02_REGISTRY/research/A4D_ORIGINAL_BOOK_ALL_PATHS_FLOW_PRESSURE_ACTION_AND_EXACT_HISTORY_SCHUR_2026_10_19.md": "6ee47a9bc73a75a10873495ab68aa1a03e213a46",
+    "02_REGISTRY/research/A4D_Q8_SPIN_SHEET_327_TRIANGLE_INVERSE_AND_960_COHERENCE_GATES_2026_10_20.md": "8710f3b72cb6e75350be6ab10119a48a6bf59759",
+    "02_REGISTRY/research/A4D_RENEWAL_GIBBS_HEAT_AND_NATIVE_NONLINEAR_ENTROPY_BRIDGE_2026_10_22.md": "d88ac633a8b1d8ac94cf94e5204e8cd7477180ed",
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md": "ead1fc7ba78eeac7c7ac232ee59535f977fa24af",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "d76dd3775e90a982eb1cde4ce935cadb1c3ab671",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md": "601f4a6aeb093ab547692015b31a92be48b41c61",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CLOCK_SCHUR_RETURN.md": "c9501fa1ae11f0c30ef1ccb190c9ff7b812b5444",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md": "6d00e72d40d767f99b2778c69cee9a984c88bad2",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_RECORD_PRICE_SOURCE.md": "393971c009081fbb43581e9e9daa542434d3538f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE.md": "d9b777bfb6eaea65642e27f049375ab07e68430c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE_CERTIFICATE.json": "1a55c95736945835e2a35c3fd47cad8a835600ab",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_pointer_source.py": "70ec8c7273de251766b4796d1562a116d19eb8c6",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py": "9f77a326531b3007f7e3ed42907bf61a9f522dcc",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_right_posterior_gain.py": "c3b0162036e224c6f0111e72ed77bec3d6554b9c",
+    "02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md": "50ac57b6c34a2e48f5b27f5e95da9a3d578c193c",
+    "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md": "dc22cc51ecea386ecfb8cb8f39c83541f4299750",
+    "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md": "ed00d6609c6f9f88391c7ff076abc65a3524dbd1",
+    "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py": "7f0b411a7d8fa6af6753109eb7057a7a375fd5ef",
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": "e5b08043d3156fb30248a482e3c72342ff13add9",
+    "03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean": "6a163d25ba4509ecf6b83a0db62dd73959b3d1ed"
+  },
+  "lanes": [
+    {
+      "id": "field_source_of_single_address_gates",
+      "check": "direct/round77/equations/check_address_preparation.py",
+      "result": "Один G меняет знак на первой глубине, минимум R даёт остаток на всех 8192.",
+      "open": "Оплата и допуск адресной подготовки.",
+      "evidence": {
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c",
+        "direct/round75/history/check_two_site_source.py": "160576666914ac68d1fba4645d92d93ddd635e243915a7d78d2df2f177eef9ce",
+        "direct/round76/geometry/INVISIBLE_GEOMETRY_RU.md": "9db09d86afed635e54d9b88e4409fd3b2e9bdc4ea3143f64fdd85b5f0d4a6e9d",
+        "direct/round76/geometry/check_invisible_geometry.py": "06f0e8b43ccb0482c22ea96478932b8a1920ad7450459d4b5b36558e0f45edef",
+        "direct/round76/record/DATA_GEOMETRY_RU.md": "e446ef984b0a99406319ad9bdd9f0b9ba2c44ecec9eea93c345ac25fb2121cfb",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/equations/ADDRESS_PREPARATION_RU.md": "caeb32e605fa4f78ac41e608e04e0f4a87c99d2ad88193f90c5eacb37fa32745",
+        "direct/round77/equations/check_address_preparation.py": "b70b2af51cf057944d415fca08e4c811b9fec9d7639b836f46a757d84cb60314"
+      }
+    },
+    {
+      "id": "early_julia_joint_memory_source",
+      "check": "direct/round77/operations/check_early_operations.py",
+      "result": "Определены производные ранних и конечных информаций с RIGHT и двухтактовой работы.",
+      "open": "Выбор действительно оплачиваемой алгебры.",
+      "evidence": {
+        "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c",
+        "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb",
+        "direct/round76/record/NOISY_SITE_PRICE_RU.md": "6fc67bf3838f13be24dc7e34b99dabaac8c3d5da2ccf00fac9e72f5256be1bda",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/operations/EARLY_JULIA_PRICE_RU.md": "7871e045036a31cdb8f78f823c4142b08da6cb9c4a069a66d19558ec0378556b",
+        "direct/round77/operations/check_early_operations.py": "3ce57663db6a7651e5a0be1f5a658d59bd40b8d3d34ad01c919caba3ee1491a9"
+      }
+    },
+    {
+      "id": "all_depths_transverse_shear_at_fixed_volume",
+      "check": "direct/round77/volume/check_isochoric_source.py",
+      "result": "Два сохраняющих локальные объёмы и R направления дают положительный источник на всех глубинах.",
+      "open": "Связность, полный полевой отклик, уточнение регулятора.",
+      "evidence": {
+        "direct/round75/curvature/GEOMETRIC_TRACE_SOURCE_RU.md": "f0b2214866ac0479d2600a11733a823ded9d348a4e47083e3982343d091a5301",
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round76/geometry/INVISIBLE_GEOMETRY_RU.md": "9db09d86afed635e54d9b88e4409fd3b2e9bdc4ea3143f64fdd85b5f0d4a6e9d",
+        "direct/round76/geometry/check_invisible_geometry.py": "06f0e8b43ccb0482c22ea96478932b8a1920ad7450459d4b5b36558e0f45edef",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/operations/EARLY_JULIA_PRICE_RU.md": "7871e045036a31cdb8f78f823c4142b08da6cb9c4a069a66d19558ec0378556b",
+        "direct/round77/volume/EARLY_ADDRESS_RU.md": "e265995d79e5967f23af4a82c68d8aefc710edd7ad40b9d87adff04710301c53",
+        "direct/round77/volume/FIXED_VOLUME_RU.md": "a597cb69801b7e7c55f47df4f7a0e2d234a3d7493fddec161e78683490182871",
+        "direct/round77/volume/check_isochoric_rank.py": "21bd4c813f45538636cb7f9377d45d0f772ee4d7ea64b7597ea018454a06a30b",
+        "direct/round77/volume/check_isochoric_source.py": "d50e27a983a085e14060d12011a37ef05d09fee40bf60a3d5aabf872cd3ef7b2"
+      }
+    },
+    {
+      "id": "terminal_journal_at_each_fixed_volume",
+      "check": "direct/round77/volume/check_isochoric_rank.py",
+      "result": "Ранги 26 и 29 на 96-мерной карте, два независимых G при сохранении раннего бита.",
+      "open": "Матрица ранней памяти сильнее её следа.",
+      "evidence": {
+        "direct/round75/curvature/GEOMETRIC_TRACE_SOURCE_RU.md": "f0b2214866ac0479d2600a11733a823ded9d348a4e47083e3982343d091a5301",
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round76/geometry/INVISIBLE_GEOMETRY_RU.md": "9db09d86afed635e54d9b88e4409fd3b2e9bdc4ea3143f64fdd85b5f0d4a6e9d",
+        "direct/round76/geometry/check_invisible_geometry.py": "06f0e8b43ccb0482c22ea96478932b8a1920ad7450459d4b5b36558e0f45edef",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/operations/EARLY_JULIA_PRICE_RU.md": "7871e045036a31cdb8f78f823c4142b08da6cb9c4a069a66d19558ec0378556b",
+        "direct/round77/volume/EARLY_ADDRESS_RU.md": "e265995d79e5967f23af4a82c68d8aefc710edd7ad40b9d87adff04710301c53",
+        "direct/round77/volume/FIXED_VOLUME_RU.md": "a597cb69801b7e7c55f47df4f7a0e2d234a3d7493fddec161e78683490182871",
+        "direct/round77/volume/check_isochoric_rank.py": "21bd4c813f45538636cb7f9377d45d0f772ee4d7ea64b7597ea018454a06a30b",
+        "direct/round77/volume/check_isochoric_source.py": "d50e27a983a085e14060d12011a37ef05d09fee40bf60a3d5aabf872cd3ef7b2"
+      }
+    },
+    {
+      "id": "recover_isochoric_field_from_two_journals",
+      "check": "direct/round77/early_geometry/check_early_geometry.py",
+      "result": "Ранги 76, 79 и 96, единственность плоского центра из ранней памяти.",
+      "open": "Физическая оплата раннего и конечного режимов.",
+      "evidence": {
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round76/geometry/INVISIBLE_GEOMETRY_RU.md": "9db09d86afed635e54d9b88e4409fd3b2e9bdc4ea3143f64fdd85b5f0d4a6e9d",
+        "direct/round76/geometry/check_invisible_geometry.py": "06f0e8b43ccb0482c22ea96478932b8a1920ad7450459d4b5b36558e0f45edef",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/early_geometry/EARLY_GEOMETRY_RU.md": "1f1640a4eb27859dbfd24e7a275d3dce334082363c2a613ae4d48cefe481765d",
+        "direct/round77/early_geometry/check_early_geometry.py": "f5d5aacccdf1123a9d4c22d67326bbb241a3e30206fb6962be3a0e56ce8f5ccc",
+        "direct/round77/operations/EARLY_JULIA_PRICE_RU.md": "7871e045036a31cdb8f78f823c4142b08da6cb9c4a069a66d19558ec0378556b",
+        "direct/round77/volume/check_isochoric_rank.py": "21bd4c813f45538636cb7f9377d45d0f772ee4d7ea64b7597ea018454a06a30b"
+      }
+    },
+    {
+      "id": "native_input_address_tariff",
+      "check": "direct/round77/volume/check_early_address_price.py",
+      "result": "Ветвь из восьми CX и раннего бита восстанавливает геометрию с поздним журналом, её тариф вычислен.",
+      "open": "Цена доступа и полное исполнение обеих ветвей.",
+      "evidence": {
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round76/geometry/check_invisible_geometry.py": "06f0e8b43ccb0482c22ea96478932b8a1920ad7450459d4b5b36558e0f45edef",
+        "direct/round76/record/DATA_GEOMETRY_RU.md": "e446ef984b0a99406319ad9bdd9f0b9ba2c44ecec9eea93c345ac25fb2121cfb",
+        "direct/round76/record/NOISY_SITE_PRICE_RU.md": "6fc67bf3838f13be24dc7e34b99dabaac8c3d5da2ccf00fac9e72f5256be1bda",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/volume/EARLY_ADDRESS_RU.md": "e265995d79e5967f23af4a82c68d8aefc710edd7ad40b9d87adff04710301c53",
+        "direct/round77/volume/FIXED_VOLUME_RU.md": "a597cb69801b7e7c55f47df4f7a0e2d234a3d7493fddec161e78683490182871",
+        "direct/round77/volume/check_early_address_price.py": "7c732554205e464d2b9f356f1bef56240546ad8dea05c3ffb21ed3bdc6171a85",
+        "direct/round77/volume/check_isochoric_source.py": "d50e27a983a085e14060d12011a37ef05d09fee40bf60a3d5aabf872cd3ef7b2"
+      }
+    },
+    {
+      "id": "exact_positive_convex_code",
+      "check": "direct/round77/early_geometry/check_convex_golden_code.py",
+      "result": "Точный Golden-код выпуклого показателя и стоимость наиболее длинного хвоста.",
+      "open": "Оплата выбора программы, контроллера и всех регистров.",
+      "evidence": {
+        "direct/round70/coding/REPEATED_WRITER_RU.md": "d1d096c08db4dceba68eb944a4cc34f2ecba93f80980296b3153fb24bc90ef1e",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/early_geometry/CONVEX_GOLDEN_CODE_RU.md": "2d752b37d46ec377353f1b689ed739fef50f4ac6fbfe997bb97ee4afb537a977",
+        "direct/round77/early_geometry/EARLY_GEOMETRY_RU.md": "1f1640a4eb27859dbfd24e7a275d3dce334082363c2a613ae4d48cefe481765d",
+        "direct/round77/early_geometry/check_convex_golden_code.py": "fe74aa1f43036bcd5ab6eee5f0f0e47879213ad16f055a9db9bed90c84efb2fa",
+        "direct/round77/volume/EARLY_ADDRESS_RU.md": "e265995d79e5967f23af4a82c68d8aefc710edd7ad40b9d87adff04710301c53",
+        "open/round152/B152_SAME_SITE_PRICE_AND_PARITY_SOURCE_RU.md": "8d8798ae031c8347a3ef284e869e8c388357ad3c1c211e87f032b283b86f06af"
+      }
+    },
+    {
+      "id": "absolute_book_classes_from_normalized_counts",
+      "check": "direct/round77/history/check_paid_return_resolvent.py",
+      "result": "Абсолютная сумма регенерирующих возвратов, обращение двух тарифов и полевой тест часов.",
+      "open": "Совпадение экономической меры с зарегистрированной на H.1.",
+      "evidence": {
+        "direct/round76/history/STOPPED_HISTORY_RU.md": "959d69a196f148fd93b422ff1e7000c9bb2645458856cb9f9756fac42e8c1827",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/history/PAID_RETURN_RU.md": "ff9168e31934c93a801a485da25626735a0bc7f24ee6dead2fb95d28700e1756",
+        "direct/round77/history/check_paid_return_resolvent.py": "1c135654d2ab1b9387a6b4a81f5f94bd6a6e63d74a70ffeb50a16855ae472f93"
+      }
+    },
+    {
+      "id": "absolute_blank_count_with_retained_memory",
+      "check": "direct/round77/renewal/check_blank_count.py",
+      "result": "Восстановление абсолютной суммы пустых возвратов при сохранении DATA и RIGHT, источник ошибки сброса.",
+      "open": "Для экономической цены требуется свой вес той же остановленной истории.",
+      "evidence": {
+        "direct/round75/curvature/GEOMETRIC_TRACE_SOURCE_RU.md": "f0b2214866ac0479d2600a11733a823ded9d348a4e47083e3982343d091a5301",
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c",
+        "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/history/PAID_RETURN_RU.md": "ff9168e31934c93a801a485da25626735a0bc7f24ee6dead2fb95d28700e1756",
+        "direct/round77/renewal/ABSOLUTE_BLANK_COUNT_RU.md": "b6ed4fbad55a0c44b608fcc91befa540b569d7224cfadcfdcf5b49a996be95cb",
+        "direct/round77/renewal/check_blank_count.py": "fbf947ce8074c571396bde703d85d1dac842fa0607a4dffe95df6c6aa63486c3"
+      }
+    },
+    {
+      "id": "full_price_curvature_on_three_native_lengths",
+      "check": "direct/round77/renewal/check_three_lengths.py",
+      "result": "Численное условие на вторую разность полной экономической цены независимо от нормировки и такта.",
+      "open": "Экономические суммы трёх полных исторических классов.",
+      "evidence": {
+        "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb",
+        "direct/round77/READOUT_RU.md": "645ad098b1dbc69d23c86488278f8e44fcbc9b11f6a085e2c65235ca84f0e0e1",
+        "direct/round77/history/PAID_RETURN_RU.md": "ff9168e31934c93a801a485da25626735a0bc7f24ee6dead2fb95d28700e1756",
+        "direct/round77/renewal/ABSOLUTE_BLANK_COUNT_RU.md": "b6ed4fbad55a0c44b608fcc91befa540b569d7224cfadcfdcf5b49a996be95cb",
+        "direct/round77/renewal/THREE_LENGTHS_RU.md": "bc2af2ed975d05d9d0ff2e78896d9d994d73d4b3bd950b800d6c2cda617800f3",
+        "direct/round77/renewal/check_three_lengths.py": "5ae3cd659b16f4ed0ebe6dcaa36272ab92c8d237ba2069db0e32c6929a866a23"
+      }
+    }
+  ]
+}
