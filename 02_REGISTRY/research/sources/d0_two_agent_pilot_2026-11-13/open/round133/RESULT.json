@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "native_gate_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "weak_mark": {
+    "native_exponent_m": 580,
+    "strict_both_pointer_probability_bounds": [
+      "37/100",
+      "2/5"
+    ],
+    "strict_joint_recovery_probability_bounds": [
+      "139/500",
+      "7/25"
+    ],
+    "maximum_p01_over_p10": "42/37"
+  },
+  "four_readers_and_six_literal_emitters": {
+    "CX": 52,
+    "SourceI": 32,
+    "G": 9286
+  },
+  "additional_canonical_births_without_feedback_flag": 10,
+  "full_record_and_return": {
+    "successful_child_instrument": "t^2*(U rho U*)",
+    "four_pointer_complements_retained": true,
+    "positive_measured_code_minus_Shannon_for_forward_duplicate": true,
+    "feedback_survival_event": "Gamma*t^2*(1-z+z*F_old)"
+  },
+  "book03_full_work_or_info_selected": false,
+  "GR_closed": false
+}
