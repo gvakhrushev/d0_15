@@ -7,6 +7,8 @@
 | [Directed](direct/) | Directed исследует исходное исполнение, условия допуска и перенос в полевые уравнения | [Последний общий отчёт A72](direct/round72/READOUT_RU.md) |
 | [Open](open/) | Open воспроизводит результаты независимо, проверяет альтернативные реализации и ценовые остатки | [B142, два Golden-исхода](open/round142/B142_GOLDEN_COIN_AND_Q8_COMPARISONS_RU.md), [B141, тепловой источник](open/round141/B141_PHASE_CALIBRATED_SER_THERMAL_SOURCE_RU.md), [B140, работа внутри SER](open/round140/B140_SER_INTERNAL_WORK_AND_BOOK_RESPONSE_RU.md), [B139, исходный переключатель](open/round139/B139_ORIGINAL_SWITCH_AND_MATERIAL_PREPARER_RU.md) |
 
+Перед выбором задачи сверяйте также [сводный реестр основного исследования ОТО](https://github.com/gvakhrushev/d0_15/blob/exp/a4d-joint-response-continuation-2026-10-16/02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) в PR #334. В нём собраны исходные пакеты, тесты работы, циклов и полного источника.
+
 Перед новым раундом получите актуальный снимок из Git.
 
 ```sh
