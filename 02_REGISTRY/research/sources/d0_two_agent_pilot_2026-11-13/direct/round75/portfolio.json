@@ -1,0 +1,155 @@
+{
+  "round": "A75",
+  "base_shared": "3274c378f0c2d10e4c49fb0b634ea49da6812e67",
+  "primary_pr334": "ac396c3451df0b12d34132e83dc716b9867a3298",
+  "related_open_commits": {
+    "B147": "78ce92944240f495240ebbcc505ba0817e892209",
+    "B148": "a3a4b8c4a267d2f00f400a25dcefa6e9b229e52f",
+    "B149": "82cbb04f212bfa414e8d7c954c808a700897e276"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_RECORD_PRICE_SOURCE.md": "393971c009081fbb43581e9e9daa542434d3538f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE.md": "d9b777bfb6eaea65642e27f049375ab07e68430c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_pointer_source.py": "70ec8c7273de251766b4796d1562a116d19eb8c6",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py": "9f77a326531b3007f7e3ed42907bf61a9f522dcc",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE_CERTIFICATE.json": "1a55c95736945835e2a35c3fd47cad8a835600ab",
+    "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md": "3c41616d2f4f5fa7c0b5085188eae2e505f9f403",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "562ccfa715ad814faec55f6b0641ee226dda2d88",
+    "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md": "75c40d133a23973a36ba5b95d34b4eb36ca96663",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_right_posterior_gain.py": "c3b0162036e224c6f0111e72ed77bec3d6554b9c"
+  },
+  "lanes": [
+    {
+      "id": "ordered_economic_balance_on_native_material",
+      "check": "direct/round75/history/check_order_transfer.py",
+      "result": "Три необходимые разности знаковых экономических классов на одной когерентной подготовке и четыре листа постоянной массы.",
+      "open": "Вывести фактические суммы посещённых путей на том же листе.",
+      "evidence": {
+        "direct/round75/history/check_order_transfer.py": "a7358062ff4f6b0d3c09ac6314f5306f17bbd066d441bd6e099ec33984040310",
+        "direct/round75/history/ORDERED_PRICE_RU.md": "bc7e5162b01c9605bed213f7b9369fc03c1f9c6e9cc5fc8162cf73c0a1d65f26",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171",
+        "direct/round74/geometry/MATERIAL_LEDGER_RU.md": "000601a5aada670eaa7f10d6cb159abeeffe56a5607228233d0496cb3ae81839",
+        "open/round149/B149_FULL_BOOK_MEMORY_RETURN_RU.md": "c39cecc1e40a082586667b59df8ef458168d4fd637178d1da3c691b3454fc4ca"
+      }
+    },
+    {
+      "id": "joint_equations_under_moving_positive_weights",
+      "check": "direct/round75/history/check_joint_equations.py",
+      "result": "Оплачиваемый суффикс даёт локально все 42 рациональные строки даже при вырожденном корне и движущихся положительных весах.",
+      "open": "Физический выбор этой полной цены, совместный допуск и независимость настоящих повторений.",
+      "evidence": {
+        "direct/round75/history/check_joint_equations.py": "d92d9ae01f8ecca89a260567762767fa66cc230d575fdc01376b18fe7c3b7359",
+        "direct/round75/history/JOINT_EQUATIONS_RU.md": "747c30faa9e5e3cb655aa7ba745a43acae66d59b50d82f6970d354f41a719710",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171",
+        "direct/round75/history/ORDERED_PRICE_RU.md": "bc7e5162b01c9605bed213f7b9369fc03c1f9c6e9cc5fc8162cf73c0a1d65f26",
+        "direct/round74/geometry/MATERIAL_LEDGER_RU.md": "000601a5aada670eaa7f10d6cb159abeeffe56a5607228233d0496cb3ae81839",
+        "direct/round73/matter/check_matter_root.py": "3b6f6e7edc47d62e9549b44bc6bb00570f8e501ca86eb9cb714bbf42e648019b",
+        "open/round135/B135_THRESHOLD_ADMISSION_AND_SERIAL_PRICE_RU.md": "cf38ae74e4a9218accf6ca4ce718dcf166b7c9a758d4b3717583fa185d621852",
+        "open/round147/B147_SIGNED_WAVE_SOURCE_ON_PAID_RECORD_RU.md": "c8a285a62d312e9344bc30321b8736f9f419097aacc577fa9c9146349f8c0c00"
+      }
+    },
+    {
+      "id": "full_right_record_conditional_entropy_jet",
+      "check": "direct/round75/memory/check_pointer_memory.py",
+      "result": "При доступе к DATA доступны две части производной условной энтропии и точный инфимум в объявленном классе.",
+      "open": "Связать данный класс оплаченных программ с полной физической ценой.",
+      "evidence": {
+        "direct/round75/memory/check_pointer_memory.py": "92e849971744defe497791ce63261aa4f04089cc4514bf3cb8b87db62820d851",
+        "direct/round75/memory/POINTER_MEMORY_RU.md": "a9c3df3d0bccdf105b3ee3e0f5187c5369f493dffa79e15ede0190441fbecc89",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171"
+      }
+    },
+    {
+      "id": "simultaneous_archive_tariff_under_both_info_laws",
+      "check": "direct/round75/memory/check_joint_tariff.py",
+      "result": "Одна схема погашает средний зарегистрированный целый тариф пяти приготовлений при двух трактовках Info.",
+      "open": "Физический допуск переключателя и его полный расход.",
+      "evidence": {
+        "direct/round75/memory/check_joint_tariff.py": "192e1cea5a038d2379a59d0ff713b45224862b3a2841fcf63921e15dba4eb8f9",
+        "direct/round75/memory/JOINT_ARCHIVE_TARIFF_RU.md": "44593417e13b49418e5f2ab6119e7e68043669b609be6579c5b8ba03d730e0a4",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171",
+        "direct/round75/memory/POINTER_MEMORY_RU.md": "a9c3df3d0bccdf105b3ee3e0f5187c5369f493dffa79e15ede0190441fbecc89"
+      }
+    },
+    {
+      "id": "retained_work_on_all_real_a74_reports",
+      "check": "direct/round75/work/check_work_memory.py",
+      "result": "Работа подтверждения на реальном архиве с 21 504 исходами при трёх способах чтения доступной памяти.",
+      "open": "Выбор действительной алгебры и перевода в единицы цены.",
+      "evidence": {
+        "direct/round75/work/check_work_memory.py": "a3c32a796f9fa7686aa949aa4a82679545fd5672157ed5509f233d5950796f02",
+        "direct/round75/work/RETAINED_WORK_RU.md": "6308cd3389ff4682e6a69d3927e011bef33ee3db26a8dad637bf2c31ce7d3dbb",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171",
+        "direct/round74/polarization/UNIT_MATERIAL_RESPONSE_RU.md": "a4db60b51df15cdb26586388ec38982d4ea23cccf36c74a4e31495e4cbcbe5d1"
+      }
+    },
+    {
+      "id": "native_local_coframe_source_all_depths",
+      "check": "direct/round75/curvature/check_local_coframe_source.py",
+      "result": "Знак локального геометрического источника на полном CAR для всех 8192 глубин и наблюдаемая реконструкция теплового следа.",
+      "open": "Стоимость полного сбора и поправки в физических единицах.",
+      "evidence": {
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round75/curvature/GEOMETRIC_TRACE_SOURCE_RU.md": "f0b2214866ac0479d2600a11733a823ded9d348a4e47083e3982343d091a5301",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171"
+      }
+    },
+    {
+      "id": "complete_known_weyl_price_all_depths",
+      "check": "direct/round75/work/check_local_weyl_price.py",
+      "result": "Для локального изменения кофрейма известный H+J+R не стационарен на всех целых глубинах; получено требование на две разные оплаты часов.",
+      "open": "Найти недостающий источник одной физической истории.",
+      "evidence": {
+        "direct/round75/work/check_local_weyl_price.py": "c760c8982fd7ffcf15ec3955b4298790fe6a475d200374735ac85930b1078eed",
+        "direct/round75/work/LOCAL_WEYL_PRICE_RU.md": "70231139dd54871338a7b7c6647997e9b195126859b447c3ea0bce74b1863c43",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171",
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round75/work/check_work_memory.py": "a3c32a796f9fa7686aa949aa4a82679545fd5672157ed5509f233d5950796f02"
+      }
+    },
+    {
+      "id": "two_site_positive_clock_aggregation_obstruction",
+      "check": "direct/round75/history/check_two_site_source.py",
+      "result": "На кривой с точно фиксированным R все 8192 цены H+J растут; исключены также положительные усреднения и оптимизация по глубинам.",
+      "open": "Измерить выход полного архива или контроллера, различающий точки на той же кривой, и установить его оплату.",
+      "evidence": {
+        "direct/round75/history/check_two_site_source.py": "160576666914ac68d1fba4645d92d93ddd635e243915a7d78d2df2f177eef9ce",
+        "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171",
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round75/work/LOCAL_WEYL_PRICE_RU.md": "70231139dd54871338a7b7c6647997e9b195126859b447c3ea0bce74b1863c43"
+      }
+    },
+    {
+      "id": "native_pointer_source_on_equal_preparation_energy",
+      "check": "direct/round75/work/check_pointer_weyl.py",
+      "result": "Одна считываемая метка различает геометрию при постоянном R; сравнение с полным 128-исходным журналом.",
+      "open": "Фиксированный исходный тариф и допуск его коэффициента на всех физических вариациях.",
+      "evidence": {
+        "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb",
+        "direct/round75/work/POINTER_WEYL_RU.md": "c6c3c93082b571a75b9880f5972067eba8add89db37ad72100e5d9127b397eaf",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171",
+        "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c",
+        "direct/round75/history/check_two_site_source.py": "160576666914ac68d1fba4645d92d93ddd635e243915a7d78d2df2f177eef9ce",
+        "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+        "direct/round75/work/check_local_weyl_price.py": "c760c8982fd7ffcf15ec3955b4298790fe6a475d200374735ac85930b1078eed"
+      }
+    },
+    {
+      "id": "two_measured_coordinates_compensate_known_preparation_price",
+      "check": "direct/round75/history/check_two_site_record_price.py",
+      "result": "Два отчёта дают равномерное приближение известной цены и двух полевых производных на двумерном семействе, также для оплаченных аналитических аддитивных приготовлений.",
+      "open": "Исходный физический выбор начислений, цена переключателя и ранг на общей конфигурации.",
+      "evidence": {
+        "direct/round75/history/check_two_site_record_price.py": "c27b452f549f8718a3ddc42792fe76f55c56e339eaa3aac6ac9873964f145e71",
+        "direct/round75/history/TWO_SITE_RECORD_PRICE_RU.md": "61d2eb3877ba1a8038c7de6df84f3d4ffd669d6b246ad3a445f8d3ded99f335d",
+        "direct/round75/READOUT_RU.md": "9616a27b4e7530f0a132385588f70ae6375b89cc8dc723bd7e66138a2929c171",
+        "direct/round75/work/POINTER_WEYL_RU.md": "c6c3c93082b571a75b9880f5972067eba8add89db37ad72100e5d9127b397eaf",
+        "direct/round75/memory/JOINT_ARCHIVE_TARIFF_RU.md": "44593417e13b49418e5f2ab6119e7e68043669b609be6579c5b8ba03d730e0a4",
+        "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c"
+      }
+    }
+  ]
+}
