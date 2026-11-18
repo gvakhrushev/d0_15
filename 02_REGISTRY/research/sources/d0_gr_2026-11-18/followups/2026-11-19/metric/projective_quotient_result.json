@@ -1,0 +1,12 @@
+{
+  "cells": 4,
+  "dimensions": 168,
+  "finite_transfer_target_change": "8/3",
+  "free_volume": "25",
+  "independent_zero_volume_tests": 167,
+  "mark_error_in_multiplier": "1/2500",
+  "marked_trace_multiplier_control": "7/5",
+  "physical_C_selected": false,
+  "scope": "exact homogeneity, tree basis, projection, finite nonzero cosmological control and error transport; no geometric H.1 execution replay",
+  "status": "PASS"
+}

@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "exact_power_basis": "1,p; p²+p=1",
+  "prefix_counts": {
+    "1": 2,
+    "2": 3,
+    "3": 5,
+    "4": 8,
+    "5": 13,
+    "6": 21,
+    "7": 34,
+    "8": 55,
+    "9": 89,
+    "10": 144
+  },
+  "neutral_NC1": {
+    "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "raw_00_01_10_11": [
+      [
+        "-8",
+        "13"
+      ],
+      [
+        "8",
+        "-12"
+      ],
+      [
+        "1",
+        "-1"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "READY_00_10_coherence_before_dephasing_r": "sqrt(p)*p^4",
+    "parsed_marks": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "-1"
+      ]
+    ]
+  },
+  "true_raw_and_parsed": {
+    "H1_q": [
+      "0.412469880568555",
+      "0.412469880568556"
+    ],
+    "parsed_KL_nats": [
+      "0.001952312814457",
+      "0.001952312814458"
+    ],
+    "parsed_KL_golden": [
+      "0.004057075725884",
+      "0.004057075725885"
+    ],
+    "extra_NC1_raw_slot_KL_nats": [
+      "0.423350077461425",
+      "0.423350077461426"
+    ],
+    "recovered_KL_nats": [
+      "0.001952312814457",
+      "0.001952312814458"
+    ],
+    "NC1_whole_two_slot_KL_nats": [
+      "0.425302390275882",
+      "0.425302390275883"
+    ],
+    "return_Hellinger_affinity_per_label": [
+      "0.999514091089498",
+      "0.999514091089499"
+    ],
+    "TV_bound_for_100_registered_labels": [
+      "0.047440493816536",
+      "0.047440493816537"
+    ],
+    "probability_11_seam_LC4": [
+      "0.092565061887539",
+      "0.092565061887540"
+    ],
+    "probability_11_seam_NC1": [
+      "0.228833417668948",
+      "0.228833417668949"
+    ]
+  },
+  "stopped_cylinders": {
+    "true_q": [
+      "-2",
+      "4"
+    ],
+    "stopped_PF_weights_on_1_01_001_000": [
+      [
+        "1",
+        "-1"
+      ],
+      [
+        "-1",
+        "2"
+      ],
+      [
+        "2",
+        "-3"
+      ],
+      [
+        "-1",
+        "2"
+      ]
+    ],
+    "mean_stopped_reports": [
+      "29",
+      "-44"
+    ],
+    "calibrated_recovered_raw_seam": [
+      "-3",
+      "5"
+    ]
+  },
+  "claimed_scope": "operational report and explicit rooted corner; no full RAW/Book price binding"
+}
