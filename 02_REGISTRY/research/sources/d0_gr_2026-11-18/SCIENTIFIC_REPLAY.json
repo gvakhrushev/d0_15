@@ -241,6 +241,14 @@
     "validate_repo",
     "validate_work",
     "validate_agent_protocol",
-    "render_work_status --check"
-  ]
+    "render_work_status --check",
+    "gr_assembly check",
+    "validate_pr_contract on the synchronized draft metadata"
+  ],
+  "assembly": {
+    "scientific_promotion": false,
+    "obligations": 22,
+    "discharged": 5,
+    "registered_results": 98
+  }
 }
