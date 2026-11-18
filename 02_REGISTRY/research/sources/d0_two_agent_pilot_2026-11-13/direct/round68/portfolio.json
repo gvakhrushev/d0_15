@@ -1,0 +1,87 @@
+{
+  "round": "A68",
+  "base_direct": "1b5fd925c281bd73e058dc9ea2be320f1424aa9d",
+  "source_open": {
+    "B123": "123d10f6757fbd465058e26090555eea7384e756",
+    "B124": "426e932787f31b143821c2fb317b4a5e50ba3928"
+  },
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "lanes": [
+    {
+      "id": "paid_reference_null_column",
+      "check": "direct/round68/book/check_paid_null_column.py",
+      "result": "Абсолютное сравнение цен через один общий конечный исход и начальный вес.",
+      "open": "Привязка посещений и конечного считывания на исходной сцене.",
+      "evidence": {
+        "direct/round68/book/check_paid_null_column.py": "6cd851fdcbeaa2dc1f9c77ebdd79949df0e0c3a79adc62a4ad5c3af946fc6e3d",
+        "direct/round68/book/PAID_NULL_COLUMN_RU.md": "cda52d2edc4820a4b0565e7db4fda40f167734fb42cd91cf50f0d48e2a449628"
+      }
+    },
+    {
+      "id": "quadratic_masses_from_noisy_report",
+      "check": "direct/round68/terminal/check_monomial_terminal.py",
+      "result": "Отношение полных масс по двум нормированным частотам на исходном приборе.",
+      "open": "Подлинный общий абсолютный сектор и сохранение условного канала на ценовом конце.",
+      "evidence": {
+        "direct/round68/terminal/check_monomial_terminal.py": "89aab52d5e5acc4612fa65ef8ff12704d432251fabbd4560b741ade46522846f",
+        "direct/round68/terminal/QUADRATIC_TERMINAL_RU.md": "7047727d6a56d8a776dbd9230350af52f32d583d42a738d059f0203129eb885d"
+      }
+    },
+    {
+      "id": "parity_and_full_encoded_record",
+      "check": "direct/round68/equations/check_parity_return.py",
+      "result": "Измеренная кодовая цена и вся удержанная CQ-память на четырёх наблюдениях.",
+      "open": "Полная Book-цена операций записи, часов и подготовки.",
+      "evidence": {
+        "direct/round68/equations/check_parity_return.py": "6d6d13e0adacb9fb115336401fdb0986741bcea79a52253bbe7d7c5d712aed7f",
+        "direct/round68/equations/PARITY_AND_FULL_RECORD_RU.md": "98fe284f02e1182e048e62a82f64df064bf5a501264a097dc2986db4f821df00"
+      }
+    },
+    {
+      "id": "born_cut_binary_readout",
+      "check": "direct/round68/equations/check_binary_pointer.py",
+      "result": "Проверка трёхисходного фильтра и препятствие точному статическому однобитному детектору.",
+      "open": "Допуск и стоимость фактического измерителя в исходной задаче.",
+      "evidence": {
+        "direct/round68/equations/check_binary_pointer.py": "c34f4db8d5e93a1f03c8adcffd156dadc0f3d6e2ad2f97d229c2556659b96432",
+        "direct/round68/equations/BINARY_POINTER_RU.md": "67f4fb741f539e125e7e038de1b3a665d57527feba6d0c325ed0d2d1d07aa27d"
+      }
+    },
+    {
+      "id": "alternating_full_field_history",
+      "check": "direct/round68/returns/check_alternating_return.py",
+      "result": "Конечный источник одного полного журнала, спектральный закон цены и три сравнения для оплаты с памятью.",
+      "open": "Определить подлинный вес исхода до полевого вызова и перенести источник на независимые вариации.",
+      "evidence": {
+        "direct/round68/returns/check_alternating_return.py": "2085c2f8d76d03cc8b9a482fac35a95656c2129db7a4bd1a78f0f7c02b34f462",
+        "direct/round68/returns/ALTERNATING_FIELD_PRICE_RU.md": "7f4546971bf80063d4d85b4904c6018dd2c321b1dcd3f40a4bb18bf172002915",
+        "direct/round68/READOUT_RU.md": "d610483371247002e96609efd8d3acae15bbacfd2581e378b6bfb7a732369792"
+      }
+    },
+    {
+      "id": "mirror_preparation_calibration",
+      "check": "open/round123/check_mirrored_book_source.py",
+      "result": "Калибровка слов с неравными весами подготовки.",
+      "open": "Перенос положительных терминальных эффектов и полной абсолютной нормировки.",
+      "stdout_matches": "open/round123/RESULT.json",
+      "evidence": {
+        "open/round123/check_mirrored_book_source.py": "566e318e00c3e23bbb372d2414d0a541ddef86b27706b7741ba9b6a0fc04cdf2",
+        "open/round123/B123_MIRRORED_BOOK_SOURCE_RU.md": "1640852cc79f101f5d384145c8b65252093d45eb7f2f01c50d6233f6f7db16f5",
+        "open/round123/RESULT.json": "cdb9c9eaf09b9957ff6cd6242f79b4bed02bcf460743f42d96d7a681ad58eceb"
+      }
+    },
+    {
+      "id": "joint_coherent_field_and_return",
+      "check": "open/round124/check_coherent_source.py",
+      "result": "Единое терминальное измерение полевого показания и когерентного возврата.",
+      "open": "Полный абсолютный Book-нормировщик и стоимость добавленного измерителя.",
+      "stdout_matches": "open/round124/RESULT.json",
+      "evidence": {
+        "open/round124/check_coherent_source.py": "7cb209b54ccbbf1498060a935fe54700bdb05ca5b3f7fb0f393d9a14d542ad4e",
+        "open/round124/B124_COHERENT_FINE_RETURN_RU.md": "4f67b1757c8c94cc8fb499a4a005cd77a4a17fda438926eece8435ea835f39e7",
+        "open/round124/RESULT.json": "9a7d7c587f9b4019f74bda66c1c5fc6ddfe1c47fdb1f6d24cd34cfd7a3f0f65d"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "mirror_words": {
+    "addressed_stage_inventory": {
+      "A": 12,
+      "B": 4,
+      "U": 4
+    },
+    "stages_per_body": 20,
+    "full_columns": 64,
+    "native_output": [
+      "I",
+      "I",
+      "Z_e"
+    ],
+    "original_readout_gram_checks": 18,
+    "stationary_WORK_tariff_midpoint_on_all_addresses": true
+  },
+  "odds": {
+    "unknown_preparer_imbalance_cancels": true,
+    "cosh_is_the_mean_of_normalized_odds_ratios": true,
+    "recovers_relative_total_mass_from_normalized_sector_masses": true,
+    "unchanged_marginals_force_blindness_or_zero_tilt": true
+  },
+  "E0": {
+    "right_mark_on_original_E0": 1,
+    "regular_conditional_dark_mass": "4p^3*u",
+    "regular_conditional_error": "4p^3*u/(1+4p^3*u)",
+    "identical_Gram_on_both_marks": "I + 4p^3*P_plus",
+    "measured_even_mass": "(q_before-q_after+P_11)/(4p^3*(q_after-P_11))"
+  },
+  "book03_stationary_class_blind_weight_binding_proved": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
