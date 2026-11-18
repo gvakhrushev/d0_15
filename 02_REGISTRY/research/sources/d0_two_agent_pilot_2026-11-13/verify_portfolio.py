@@ -1,5 +1,6 @@
 """Replay independent research checks and verify the listed evidence files."""
-from concurrent.futures import ThreadPoolExecutor
+import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from hashlib import sha256
 import json
 import os
@@ -26,7 +27,7 @@ def verify_lane(base, lane):
     return lane["id"]
 
 
-def main(manifests):
+def main(manifests, workers=4):
     base = Path(__file__).resolve().parent
     lanes = []
     for manifest in manifests:
@@ -35,11 +36,12 @@ def main(manifests):
     if not lanes or len({lane["id"] for lane in lanes}) != len(lanes):
         raise ValueError("Expected one unique entry per research lane")
     failed = False
-    with ThreadPoolExecutor(max_workers=len(lanes)) as pool:
-        jobs = [(lane["id"], pool.submit(verify_lane, base, lane)) for lane in lanes]
-        for name, job in jobs:
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        jobs = {pool.submit(verify_lane, base, lane): lane["id"] for lane in lanes}
+        for job in as_completed(jobs):
+            name = jobs[job]
             try:
-                print(f"PASS  {job.result()}")
+                print(f"PASS  {job.result()}", flush=True)
             except (OSError, ValueError, KeyError, subprocess.CalledProcessError) as exc:
                 print(f"FAIL  {name}: {exc}", file=sys.stderr)
                 if isinstance(exc, subprocess.CalledProcessError) and exc.stderr:
@@ -49,6 +51,10 @@ def main(manifests):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        sys.exit("Usage: python3 verify_portfolio.py path/to/portfolio.json [...]")
-    sys.exit(main(sys.argv[1:]))
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("manifests", nargs="+", metavar="portfolio.json")
+    parser.add_argument("--jobs", type=int, default=4, help="concurrent checks (default: 4)")
+    args = parser.parse_args()
+    if args.jobs < 1:
+        parser.error("--jobs must be positive")
+    sys.exit(main(args.manifests, args.jobs))

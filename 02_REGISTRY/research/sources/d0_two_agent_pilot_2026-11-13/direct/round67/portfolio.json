@@ -1,0 +1,50 @@
+{
+  "round": "A67",
+  "base_direct": "decdab87d30e03b8acb637a20d74172f7958145c",
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "lanes": [
+    {
+      "id": "h1_geometric_shear",
+      "check": "direct/round67/geometry/check_geometric_pair.py",
+      "result": "Вычислены геометрический контраст кофрейма и остаток платы за посещения у двух равноинвентарных приготовлений.",
+      "open": "Перенос на полный физический журнал и все независимые геометрические направления.",
+      "evidence": {
+        "direct/round67/geometry/check_geometric_pair.py": "1ccf51c58301d1bb2b4366995c5f1aabba781790d822352b928d48ebee61351b",
+        "direct/round67/geometry/NONZERO_H1_GEOMETRIC_PAIR_RU.md": "b953db52af072587c4c9a72100548d7bf463714f8f2e4480c3c9753f515225b9",
+        "direct/round67/geometry/OCCUPATION_RU.md": "a27bfc6470881bd335630825aa5a585c1e8993282838b256a6c4ee361fe83be2"
+      }
+    },
+    {
+      "id": "measured_return_preparation",
+      "check": "direct/round67/check_measured_source.py",
+      "result": "Ненулевая геометрическая строка выбранных часов и независимый контроль с тождественным отчётом и сбалансированными посещениями.",
+      "open": "Физическая оплата условного переноса и независимое уравнение приготовления.",
+      "evidence": {
+        "direct/round67/check_measured_source.py": "99e1dab8c65dcdc62ae37fad13cb7a22e6f27cf0885b54fc3b1f2ce83b2ffd4d",
+        "direct/round67/MEASURED_SOURCE_RU.md": "19d482882ab9dc6d28688de14e2cacfb1e110619b1fe47c27a6a5d90b4ce5b5b",
+        "direct/round67/READOUT_RU.md": "02ce64bfb0d0e875f26aaabfce2e25b95ad14844b173afcf4c4831daa2636c9e"
+      }
+    },
+    {
+      "id": "absolute_return_addresses",
+      "check": "direct/round67/clock/check_address_partition.py",
+      "result": "Вычислены абсолютные массы и отклики двух событий статистической суммы на измеренном графе.",
+      "open": "Подлинный терминал физической цены на том же графе.",
+      "evidence": {
+        "direct/round67/clock/check_address_partition.py": "16b8d449a37b22cb0adfb21747f7d30fbfe4418673b9c6a39af972d10edf2f01",
+        "direct/round67/clock/ADDRESS_PARTITION_RU.md": "5430e40227c97e5abfacdd76c326db61824b3748f89ab92db335ae77c136e057"
+      }
+    },
+    {
+      "id": "fixed_reference_primary_scene",
+      "check": "direct/round67/valuation/check_scene_reference.py",
+      "result": "Фиксированная подготовка для восстановления двух сценовых цен и калибровка масштаба по двум длинам возврата.",
+      "open": "Относительная цена завершения и связь весов сцены с исполнением H.1.",
+      "evidence": {
+        "direct/round67/valuation/check_scene_reference.py": "75ba36fa533663acbd9e47e2eb4b756782df402f32eb8f8c3eb77ea565eeaad0",
+        "direct/round67/valuation/SCENE_REFERENCE_RU.md": "02021a8135b6d3fe73a91157e36dfde5907033672540837ae93358564b813f60"
+      }
+    }
+  ]
+}
