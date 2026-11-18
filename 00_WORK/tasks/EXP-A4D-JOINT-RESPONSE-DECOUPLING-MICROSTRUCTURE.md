@@ -23260,3 +23260,54 @@ the earlier downloaded copy's sole trailing-LF difference is documented.
 The physical full Cost-Info binding C remains the exact consuming premise;
 no tariff, Info term or normalizer is assigned to force its answer.
 GR_closed=false; the research task remains active in its existing PR.
+
+
+## 18 November 2026: complete record/reference intake and actual remaining ledger row
+
+Input 076d5d5a7b366c0dd0970f388df7a9e6895498c4; same existing Draft #334,
+native-programme-v1 / constitutive. Phase: native realization and final
+source comparison. The source write surface remains this brief and the
+same-representative primary artifact. Main-base reconciliation separately
+preserves the accepted #401 task registration and generated work views;
+it does not import #402 implementation or change scientific acceptance.
+
+Primary section7gc evaluates the retained-reference information identity
+on section7gb's actual original full128 coframe tangent. The joint fine-CQ
+source for an already pure full input has coefficient 42 log2 instead of
+41 log2: the actual reference increases the source by 27p^2 log2/25600.
+Product and arbitrary mixed references retain their separately stated
+scope. No purification or physical information rule is inserted.
+
+Section7gd proves DE_word=0 for every finite coarse port history of this
+same original instrument, retaining recycling and arbitrary normalized
+input jets. It gives the explicit 13-row functional for real fine charges
+and their moving-tariff terms. A concrete six-CX canonical pointer reader
+adds exactly 81p^5/12800 in first source. Independent review distinguishes
+coherent from actually read pointers: their entropy baselines differ, but
+the first-source result agrees. The analytic tangent is visible to the
+fine instrument and is not proper-Lorentz gauge; native all-mesh admission
+and all42/H.1 transport remain separate.
+
+Section7ge preserves the prior coherent Doob construction and its exact
+marked-task test. Normalization changes the informative return probability
+q to q/(1-z+zq), so this candidate does not bind the same original task.
+No universal no-go follows. Section7gf composes the actual remaining scalar
+row, retains CD13 with its gain/right-lift norm and all independent rows,
+and records that no new physical-price application of TH4--TH7 or FV2--FV7
+was obtained. It does not assert logical independence of C.
+
+Frozen exact scripts/receipts, an independent review, an optional numerical
+curve diagnostic and a verified temporary-directory replay are embedded
+with source digests. No expected receipt is rewritten by replay. The
+remaining full physical Cost-Info source is an explicit original operand,
+not a tariff defined to cancel the residual. Physical C remains open,
+GR_closed=false; the task remains active in its existing Draft PR.
+
+The integrator replayed all three imported exact scripts from the embedded
+temporary-directory extraction, normally and under -O; all six outputs
+match the frozen receipt bytes. Repo, work, agent-protocol, assembly and
+generated work-view guards pass; the research diff has no whitespace
+errors. The unchanged Lean and geometric suites were not replayed.
+The additional minimal-code application check preserves the existing
+distinction between the cost of an admissibility test and the complete
+price of a physical execution edge; it supplies no new C acceptance.

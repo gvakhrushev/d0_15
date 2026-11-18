@@ -192155,3 +192155,1740 @@ print(json.dumps(out,indent=2,sort_keys=True))
 }
 ```
 <!-- END D0 20261118 FILE expected_direct_cq_source.json -->
+
+
+## 7gc. Complete retained-reference source on the original full128 coframe tangent
+
+18 November 2026. Input: 076d5d5a7b366c0dd0970f388df7a9e6895498c4,
+existing Draft #334 / native-programme-v1. Phase: native realization and
+complete-source comparison. This consumes section7gb's original strict
+Julia/CAR16 instrument and its exact coframe tangent. The parent premise
+is physical C: the same execution's full price source, not just its
+return matrix or a selected information convention. The new computation
+evaluates the already owned retained-reference identity on that tangent.
+It does not import a purification, define Book Info or identify this
+Fourier carrier with all42/H.1. GR_closed=false.
+
+### Full-register accounting on the original full128 coframe jet
+
+18 November 2026. Bounded continuation; no new entropy selection or physical
+preparation. This note adds one exact fine-record calculation to the existing
+conditional-CQ coframe result. It does not close physical obligation C or D0 → GR.
+
+#### 1. Same-execution identity, with the input and readable algebra explicit
+
+Let the actual normalized complete input be \(\Omega_{DR}\), where \(R\) is an
+actually retained reference. For the original efficient complete instrument
+\(\{K_z\}_{z=0}^{127}\), put
+
+\[
+ V=\sum_z|z\rangle_X\otimes K_z,\qquad
+ \sigma=(V\otimes I_R)\Omega(V^\dagger\otimes I_R),\qquad
+ \Gamma=\mathcal E_X(\sigma)
+       =\bigoplus_z(K_z\otimes I_R)\Omega(K_z^\dagger\otimes I_R).
+\]
+
+Here \(\mathcal E_X\) is the stated fine-record pinching, not an unrecorded
+physical erasure. Define the two *specified information operands*
+
+\[
+ I_{\rm joint}=S(\Gamma_{XD'R})-S(\Omega_{DR}),\qquad
+ I_{\rm DATA}=S(\Gamma_{XD'})-S(\Omega_D).
+\]
+
+Since the channel leaves the reference marginal unchanged, expanding the two
+mutual informations proves the same-execution identity
+
+\[
+ \boxed{I_{\rm joint}-I_{\rm DATA}
+ =I(D:R)_\Omega-I(XD':R)_\Gamma.}                 \tag{R1}
+\]
+
+The right side is nonnegative by data processing. This does not imply that its
+field derivative is nonnegative in general. The identity includes actual moving
+inputs and maps and may be differentiated wherever the specified operands have
+derivatives.
+
+If the *actual complete input is pure*, each nonzero conditional joint block is
+pure. Writing \(P_z=\operatorname{Tr}\Gamma_z\) gives
+
+\[
+ I_{\rm joint}=H(P),\qquad
+ I_{\rm joint}-I_{\rm DATA}
+ =S(\rho_D)-\sum_zP_z S(\rho_{D'|z})
+ =\chi_R=I(X:R)_\Gamma.                            \tag{R2}
+\]
+
+If instead \(\Omega=\rho_D\otimes\omega_R\), with an untouched independent
+reference, \(I_{\rm joint}=I_{\rm DATA}\) identically. An arbitrary purification
+of a mixed input is a different preparation unless it was already physically
+present. This note does not supply that preparation for free.
+
+These general identities are already owned in primary formulas (225)–(226),
+near snapshot lines 5998–6049, and §7fh.NT9. The new calculation below evaluates
+their reference correction on the actual coframe tangent; it is not a new
+general information theorem.
+
+#### 2. Exact original fixture and its two entropy derivatives
+
+Use the original CAR16/Julia/Walsh construction, creator order \((0,2,3,1)\),
+phases \((i,i,-1,-i)\), and \(\nu=3/5\). Let \(N_j\), \(0\le j<64\), be its
+original rows and \(A=N_0\). At the inspected point
+
+\[
+ A=A^\dagger,\qquad A^2=\Lambda=\kappa I_{16},\qquad
+ \kappa=9/640,\qquad \rho_D=I_{16}/16.
+\]
+
+The original strict-Julia-chart tangent is
+
+\[
+ dC_0=c_0-c_1,\qquad dx_0=i\,dC_0,
+ \qquad \text{all other coframe legs fixed}.          \tag{R3}
+\]
+
+The checker differentiates both positive square-root legs through their true
+Sylvester equations. It verifies, as matrix identities,
+
+\[
+ D\Lambda=0,\qquad D(AA^\dagger)=0,\qquad
+ \sum_jN_jN_j^\dagger=\sum_jN_j^\dagger N_j=I_{16}.
+\]
+
+Thus the generated normalized inverse-\(\Lambda\) preparation has \(D\rho_D=0\)
+on this tangent. This is a first-jet fact; it does not eliminate its actual
+preparation procedure or price.
+
+The complete original ports, without changing their Kraus frame, are
+
+\[
+ K_{2j}=\delta_{j0}I-2p^2N_j^\dagger A,\qquad
+ K_{2j+1}=-2p\sqrt p\,N_j^\dagger A,\qquad
+ p=(\sqrt5-1)/2,\quad p+p^2=1.                     \tag{R4}
+\]
+
+This is primary §7fh.NT1. Put \(M_j=N_jN_j^\dagger\),
+\(t_j=\operatorname{Tr}M_j\), and \(dt_j=\operatorname{Tr}DM_j\). The special
+\(j=0\) ports have zero first derivative. For every \(j>0\), directly from
+(R4) and \(D(AA^\dagger)=0\),
+
+\[
+ P_{2j}=\frac{4p^4\kappa}{16}t_j,\qquad
+ P_{2j+1}=\frac{4p^3\kappa}{16}t_j,
+\]
+
+with the same coefficients multiplying \(dt_j\) in their derivatives. These
+are point values and first jets, not identities on an arbitrary neighborhood.
+The complete absolute normalization and its derivative are verified. Since
+\(\sum_jdt_j=0\), all scalar port logarithms cancel, giving
+
+\[
+ DH(P)=-\frac{4p^2\kappa}{16}\sum_{j>0}dt_j\log t_j. \tag{R5}
+\]
+
+The exact grouped row traces are:
+
+| \(t_j\) | \(\sum_{j:t_j=t}dt_j\) |
+|---:|---:|
+| \(324/25\) | \(-27/10\) |
+| \(1/25\) | \(3/10\) |
+| \(9/40\) | \(6/5\) |
+| \(27/200\) | \(6/5\) |
+
+Consequently
+
+\[
+ \sum_jdt_j\log t_j
+ =-\frac{63}{5}\log2-\frac{24}{5}\log3+\frac65\log5,
+\]
+
+and the added exact result is
+
+\[
+ \boxed{DH(P)=\frac{27p^2}{25600}
+       (42\log2+16\log3-4\log5)>0.}                \tag{R6}
+\]
+
+The existing conditional-CQ coframe calculation is independently reproduced
+by the same script, using the exact rational spectral projectors of each
+\(M_j\). Its result is
+
+\[
+ DI_{\rm DATA}=\frac{27p^2}{25600}
+       (41\log2+16\log3-4\log5)>0.                \tag{R7}
+\]
+
+Zero baseline probabilities/eigenvalues have no linear birth; the original
+analytic strict-Julia curve makes their entropy contributions
+\(O(t^2|\log|t||)\), with zero first derivative. The checker verifies the
+corresponding zero-support first matrix blocks. No faithful logarithm is
+applied to a dark subspace.
+
+Combining (R2), (R6), and (R7), **if the actual complete input family is pure,
+with this marginal and its verified first jet**, its retained-reference correction is
+
+\[
+ \boxed{D\chi_R=DH(P)-DI_{\rm DATA}
+                  =\frac{27p^2}{25600}\log2>0.}      \tag{R8}
+\]
+
+The signs use only \(2^{42}3^{16}>5^4\), \(2^{41}3^{16}>5^4\), and
+\(\log2>0\). Decimal diagnostics in nats are approximately
+\(0.0162158017712867\), \(0.0159365641180942\), and
+\(0.000279237653192537\), respectively. This extension increases the
+information derivative; it does not cancel it. For an independently mixed
+product reference the correction is zero instead. For an arbitrary mixed
+correlated complete input only (R1), not the numerical pure-input conclusion,
+has been established here.
+
+#### 3. Whole coherent retention and internal reading do not set the price
+
+The complete coherent state always satisfies \(S(\sigma)=S(\Omega)\). Its zero
+entropy gain is not an action and does not select compulsory Book Info. The
+fine readable algebra and the full coherent algebra are distinct operands
+even though their states belong to the same execution.
+
+For an actual record-copy isometry
+\(J=\sum_zP_z^{\rm record}\otimes|z\rangle_Y\), retaining the copy keeps the
+whole entropy unchanged; tracing only \(Y\) gives the stated pinching. Thus
+\(I(\text{original whole output}:Y)=I_{\rm joint}+H(P)\). Internal reading
+redistributes correlations. It does not provide a negative work charge.
+The original copy gates, births, clock, and reference preparation remain in
+the actual ledger (primary formulas (224)–(226)).
+
+The precise coherent/pinched compensation is also already owned by primary
+§7ca(641): for the same faithful-on-support block reference \(\tau\),
+
+\[
+ D(\sigma\Vert\tau)
+ =D(\Gamma\Vert\tau)+D(\sigma\Vert\Gamma),\qquad
+ D(\sigma\Vert\Gamma)=I_{\rm joint}.                 \tag{R9}
+\]
+
+This is a mathematical relative-entropy identity. Even when references and
+readable algebras move, its pointwise derivative retains all their actual
+variations. It does not prove that the recorder pays the compensating term or
+that Book03 selects one of these scores. Book03 §03.3.0a states the history
+sum Cost minus Info and describes branch distinguishability; that declaration
+does not identify any of (R1), (R2), or the coherent zero gain as its complete
+information-source covector under operator variations. No such identification is added here.
+
+#### 4. The remaining physical row, without assigning a compensator
+
+Primary §7fh.NT2 gives the actually owned one-round port cost
+\(C_{\rm port}=\operatorname{Tr}\rho(I+4p^3\Lambda)\). Equations (R3) imply
+\(DC_{\rm port}=0\). The original one-step feedback
+\(F=4p^2\Lambda(I-p^2\Lambda)\) and its log-determinant also have zero first
+derivative. These facts do not identify that one-step feedback with an entire
+compiled programme's growing clock.
+
+If a complete physical price is independently established as
+
+\[
+ S_{\rm phys}=C_{\rm port}-I_{\rm selected}/\ell+W_{\rm rest},
+ \qquad \ell=\log\varphi,
+\]
+
+matching a zero feedback source on this tangent requires the testable row
+
+\[
+ \boxed{DW_{\rm rest}=DI_{\rm selected}/\ell.}         \tag{R10}
+\]
+
+For the DATA-CQ operand the right side is (R7)/\(\ell\); for an already pure
+complete input with full joint CQ it is (R6)/\(\ell\). Here \(W_{\rm rest}\)
+must be the remaining *actually specified* net ledger, including any other
+physical information terms. Equation (R10) is a necessary test for that price,
+not a definition of \(W_{\rm rest}\). The separately ongoing actual-cost audit
+must decide it. Neither the full reference nor coherent entropy conservation
+by itself supplies the missing physical source.
+
+#### Reproduction and scope
+
+Run `python3 check_full128_reference_extension.py`; stdout is the exact JSON
+receipt. The script uses Python and SymPy, contains its own original
+constructor, and does not import the earlier checker or a numerical spectrum.
+It also works with `python3 -O`: checks use explicit exceptions.
+
+Consumed source pins:
+
+- Primary snapshot SHA-256:
+  `3686f0b59a020a4e8c475e81a84cae237bb7b135cc442a4a1f8e04af33ed0d31`.
+- Book03 snapshot SHA-256:
+  `07e8c97455a85e3589f94e3a3b96bb61e4fa9b3d05e2822392ca02e412541187`.
+- Existing conditional-CQ checker SHA-256:
+  `2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66`.
+
+This is a complete **one-round** original fine-record calculation and a bounded
+reference extension. It proves no full stopped-history entropy theorem,
+compulsory Book Info, free preparation, compensation of the actual remaining
+ledger, physical C closure, or GR closure. It is not a Lean/formal proof or
+external peer review, and no novelty claim is made.
+
+
+## 7gd. Complete finite port-law source and an actual fine-address reader
+
+Same input, owner and physical C consumer. The changed calculation extends
+the zero port-cost row from one expectation to every finite coarse word
+of the same original instrument, and evaluates a concrete canonical
+six-pointer reading. All genuine moving tariffs and non-port work remain.
+The pointer-algebra clarification below was required by independent review:
+coherent pointers and actually read pointers differ by a constant entropy
+baseline but have the same calculated first source. The original embedded
+checker and receipt retain their bytes; their `extra_full_fine_CQ_gain`
+and baseline-cancellation fields refer to the explicitly read/pinched case.
+
+### Same actual coframe tangent: complete known ledger row and one native fine-reader completion
+
+18 November 2026. Read-only source checkpoint: `gvakhrushev/d0_15`, `dc411daf01f697ec85dd22f28bfe124171796645`. This packet changes no repository file or previous artifact. It computes the actual known charge components on the already proved original full128 tangent; it does not select physical Book Info. **GR_closed=false.**
+
+#### 1. The fixed original tangent and the physical rows already supplied
+
+Use the original zero-boost CAR16/Julia/Walsh instrument, creator order `(0,2,3,1)`, phases `(i,i,−1,−i)`, `ν=3/5`, `p=φ^−1`, `λ=9/640`, `r=16`. Write `a=N0`, `Λ=a†a` and `Mj=Nj Nj†`. The actual coframe variation is
+
+\[
+ DC_0=c_0-c_1,\qquad Dx_0=i(c_0-c_1),
+\]
+
+with all other original creator/shifted legs unchanged. The exact companion proof already establishes `DΛ=0` as a matrix and `DρΛ=0` for `ρΛ=Λ^−1/Tr Λ^−1`.
+
+The full fine conditional-CQ operand has the exact source
+
+\[
+ DI_{\rm DATA}=\kappa L_{41},\quad
+ \kappa=\frac{27p^2}{25600},\quad
+ L_{41}=41\log2+16\log3-4\log5>0.
+\]
+
+For an actually supplied pure input purification with all of oldRIGHT in the final scored CQ state, the exact full-fine Shannon source is instead `DHfine=κL42`, with `L42=L41+log2`; the reference correction increases the source. These remain specified information algebras, not an inference that Book Info must equal either one.
+
+The relevant actual charge owners are precise:
+
+- `A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md`, §3, equations (7)–(9): original port code `0/10`, charge `1+b`; remaining label/coefficient/controller/archive code is explicitly separate.
+- Primary `A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md`, §7fh.A NT1–NT3: the complete original reflection, exact port-charge effect and exact cost-marked Born map. NT2 explicitly does not price preparation, fine-label writing, comparators or work.
+- Primary §7fh.B–E NT5–NT11: exact all-column target/record transport and finite-cap specified-CQ source estimates. Actual compiled calls, births, flags and padding have their own paid ledger; equality of the target instrument does not equate complete clocks or total price.
+- `A4D_ORIGINAL_FULL128_COHERENT_ARCHIVE_FIXED256_SOURCE_2026_10_27.md`, Q19–Q20: `logφ64` is a declared fixed-width address reference, explicitly not a proved physical address fee.
+- Primary §7fr.3: an actual canonical-born pointer and literal CX have the exact observed code increment `p³Q`. This is the supplied positive charge operation used in §4 below.
+
+The original Book-II `Cost(T)=|Dmin(T)|` is not identified by these owners with an additive constant tariff on every G/CX call. This packet does not need a unique microscopic tariff and does not make that identification.
+
+#### 2. A stronger exact result: the entire coarse port ledger has zero source
+
+Let `Tb(X)=Σj K_(2j+b) X K_(2j+b)†`. On the scalar center,
+
+\[
+ T_1^\dagger I=qI,\quad T_0^\dagger I=(1-q)I,
+ \quad q=4p^3\lambda,
+ \quad DT_b^\dagger I=0
+\]
+
+on the exact tangent because `DΛ=0`. For every finite coarse word `w=(b1,…,bn)`, its full original effect is
+
+\[
+ E_w=T_{b_1}^\dagger\cdots T_{b_n}^\dagger I.
+\]
+
+Every differentiated term has a scalar multiple of `I` to the right of its `DTb†`, so it vanishes. Hence
+
+\[
+ \boxed{E_w|_0=\prod_kq_{b_k}\,I,\qquad DE_w=0.}
+\]
+
+This is an operator statement, with the real recycling map retained. For any normalized input variation, `D Tr(ρEw)=0`. It is not a claim that the coherent port archive's off-diagonal density blocks have zero derivative.
+
+Consequences follow for every **fixed, actually supplied** diagonal ledger depending only on a finite port history: the original 1/2 port code, its complete counting-statistics function, any finite cap, first-port stopping and any given port-dependent counter/timing charges have zero first source. The sum over a finite stopped tree is still zero leaf by leaf. If a tariff itself moves, the separate term `Σw Pw Dcw` remains. A quantum work operator not measurable in the port history is not covered by this statement.
+
+This eliminates mean-versus-pressure ambiguity for the known port ledger on this particular tangent: its entire finite marked probability law has zero field derivative.
+
+#### 3. The exact fine-label cost source is a short, computable linear functional
+
+The original nonquiet row has
+
+\[
+ q_{2j}=\frac{4p^4\lambda}{16}\operatorname{Tr}M_j,
+ \qquad q_{2j+1}=\frac{4p^3\lambda}{16}\operatorname{Tr}M_j.
+\]
+
+The quiet pair has zero derivative. The exact nonzero row-trace jets are
+
+| Original row indices `j` | `D Tr Mj` for each listed row |
+|---|---:|
+| `9` | `−27/10` |
+| `13,29,45,61` | `3/40` |
+| `16,20,24,28,48,52,56,60` | `3/10` |
+
+All other row-trace derivatives vanish. The listed derivatives sum to zero. For any **actually given** fine charges `cz`, put `cbarj=p² c_(2j)+p c_(2j+1)`. Their complete first source on the specified generated input is
+
+\[
+ \boxed{
+ DC_{\rm fine}=\frac{9p^2}{2560}\left[
+ -\frac{27}{10}\bar c_9
+ +\frac3{40}\sum_{j\in\{13,29,45,61\}}\bar c_j
+ +\frac3{10}\sum_{j\in\{16,20,24,28,48,52,56,60\}}\bar c_j
+ \right]
+ +\sum_zq_zDc_z.}
+\]
+
+This supplies the response to a real ledger without fitting its entries. For the owned charge `cz=1+b`, every `cbarj=1+p`, and the bracket vanishes. Any extra constant address fee also vanishes. A genuine label-dependent or moving charge can have a source; it must be the charge of an actual specified operation.
+
+For the conditional-CQ candidate, a full cancellation on this tangent would have to satisfy the **testable necessary equation**
+
+\[
+ DC_{\rm fine}+DC_{\rm prep/program/work/clock}
+ =\frac{\kappa L_{41}}{\log\varphi}.
+\]
+
+For the joint fine readout use `L42` instead. This equation is not a definition of the omitted cost. The bracket and the right-hand side are now explicit; the remaining work term is typed as the source of the actual executing programme.
+
+The analytic instrument tangent is distinguishable in the existing fixed fine reader: already
+
+\[
+ Dq_{18}=-\frac{243p^4}{25600},\qquad
+ Dq_{19}=-\frac{243p^3}{25600}.
+\]
+
+It cannot be removed as an invisible change of that same complete fine-history instrument. Native primitive admission and transport of this analytic chart to an all-mesh physical execution remain separate obligations. At fixed observer, the positive creator Gram changes; in the original orthonormal Lorentz convention `η=diag(1,−1,−1,−1)`, its metric Gram jet has the nonzero block `[[6/5,3/5],[3/5,0]]`. Thus the ordinary proper-Lorentz gauge quotient does not remove it either. A stationary internal-variable elimination would require a supplied actual constraint and its real price equation; it is not licensed by the single-Fourier-block identity `DΛ=0`.
+
+#### 4. One positive completion attempt using an already owned real reader
+
+Append exactly one fixed pass over the six original address bits. Each bit `jk` controls a literal native CX into one fresh canonical pointer
+
+\[
+ v=(\sqrt p,p),\quad C_r=\operatorname{diag}(1,2).
+\]
+
+Retain the original fine record, every new pointer, DATA and oldRIGHT. The programme uses the existing canonical births and CX alphabet. No fitted angle, logarithmic tariff or new entropy rule is introduced. The appendage is a specified candidate execution; it is not asserted to be compulsory in the original word.
+
+For one pointer, the already owned operator calculation is
+
+\[
+ X^*C_rX-C_r=Z,
+ \qquad \langle v,Zv\rangle=p-p^2=p^3.
+\]
+
+Thus its actual code increment is `p^3 Pr(jk=1)`.
+The scored algebra must be stated. Starting from the declared original
+fine-CQ algebra, conditioned on the retained fine label z the six new
+pointers are independent pure states. If they remain coherent, their
+addition is a controlled isometry and adds zero scored entropy. If each
+pointer is actually read/scored in its native `0/10` basis, it adds
+`h(p^2)` to that entropy, independently of z, the field, DATA and oldRIGHT.
+The total output pointer-code expectation is
+
+\[
+6(1+p^2)+p^3\sum_{k=0}^{5}\Pr(j_k=1).
+\]
+
+Since `h(p^2)/log(phi)=p+2p^2=1+p^2`, the two declared output-code-minus-CQ
+increments are
+
+\[
+\Delta\mathscr S_{\rm read,pinched}
+ =p^3\sum_k\Pr(j_k=1),\qquad
+\Delta\mathscr S_{\rm read,coherent}
+ =6(1+p^2)+p^3\sum_k\Pr(j_k=1).
+\]
+
+They have the same first field source. The constant baseline cancellation
+belongs only to the read/pinched algebra. Neither expression includes an
+unproved birth, traversal, controller or work tariff.
+
+The exact bit weights `Σj(D Tr Mj)jk`, in order from least significant address bit, are
+
+\[
+ (-12/5,\ 0,\ 3/2,\ -6/5,\ 51/20,\ 27/20),
+ \qquad\sum_k=9/5.
+\]
+
+Consequently this actual completion has the positive first source
+
+\[
+ \boxed{D\Delta\mathscr S_{\rm read}=\frac{81p^5}{12800}.}
+\]
+
+This is a genuine computed fine-address charge component, not a constant assigned by reference normalization. It contributes in the needed direction, but a single natural full address pass does **not** close the residual:
+
+\[
+ \boxed{
+ D\mathscr S_{\rm port+read-CQ}
+ =\kappa\left[
+ 6p^3-\frac{L_{41}}{\log\varphi}
+ \right]<0.}
+\]
+
+Strict negativity follows without a floating comparison: `p³<1`, `φ<2`, and `L41>41log2>6log2`. Including the full reference replaces `L41` by the larger `L42`. The appendage's original birth/controller/clock traversal prices remain whatever their actual complete ledger gives; they are not identified with this measured code increment. Repeating selected readers just to fit the missing source would change the programme/task and is not undertaken here.
+
+#### 5. Completed bounded handoff
+
+The known port ledger is now solved on the **entire finite coarse history**, and the actual fine scalar ledger has an explicit 13-row source functional. A concrete original canonical-reader extension supplies a new positive fine-address code contribution with no selected tariff; its exact residual remains nonzero. There is no demonstrated mandatory compensation in the owned execution law, and no justified elimination of this visible coframe variation.
+
+The next physical operand is specific: the actual label-dependent/moving charge or nonclassical work/preparation/clock source that enters the displayed scalar row, together with the actual selected information algebra. This packet does not treat a missing work operator as zero, does not demand uniqueness of all microscopic tariffs, and does not promote either specified CQ convention to Book Info.
+
+Reproduction: `check_actual_ledger_row.py` reads the frozen original exact constructor/checker, proves the scalar port effects and their zero jets, prints every nonzero fine probability jet, verifies the canonical-pointer code algebra and bit weights, and writes `check_actual_ledger_row.json`. The portable replay in section7gf extracts this frozen script into a temporary directory and supplies its verified constructor explicitly.
+
+
+## 7ge. A coherent normalization construction with its actual marked-task test
+
+This restores the earlier 18 November Doob attempt that had been supplied
+outside Git but was absent from the primary artifact. It is not a newly
+selected price or a new negative result about every admissible history.
+The finite construction is useful only with its actual mark-preservation
+test. Its conditional application wording is narrowed following review:
+even a task-preserving normalization does not itself discharge physical C.
+
+### A concrete full-coherent quantum Doob candidate and its actual task test
+
+18 November 2026; independent attempt on PR334 dc411daf01f697ec85dd22f28bfe124171796645. C has been reopened by the user. All objects below keep the full quantum output, without pinching or an imposed Gibbs sampler.
+
+#### Positive construction
+
+Let V:H0→H1 be the actual complete initialized native isometry, including all canonical births, work, retained records and oldRIGHT. Let E>0 be a supplied complete terminal weight. Put H=V* E V>0 and
+
+    B=E^(1/2) V H^(−1/2).
+
+Then B*B=I exactly. This is a finite coherent isometry, not a classical law. It extends to a unitary on an enlarged carrier and therefore lies within the established universal native approximation theorem, with its actual implementation cost still to be included. The construction itself does not supply that cost or physical Info.
+
+For a whole clock-expanded coherent sequence W_j, define H_N=E and H_j=W_j* H_(j+1)W_j, with all H_j positive on the true input supports. Then
+
+    B_j=H_(j+1)^(1/2) W_j H_j^(−1/2),
+    B_(N−1)...B_0=E^(1/2)(W_(N−1)...W_0)H_0^(−1/2).
+
+The interior matrix square roots telescope without commutation assumptions. For recorded branches keep the full retained isometry sum_b |b>W_jb and use its complete terminal matrix including offdiagonal Gram blocks. A diagonal CP branch sum is justified only for actual diagonal future tests.
+
+For a positive initial density ρ, the absolute weighted mass is Z=Tr(ρH_0), and its complete source is
+
+    d log Z=[Tr((dρ)H_0)+Tr(ρ dH_0)]/Z.
+
+Backward differentiation retains all W_j, terminal, clock and initial derivatives. Native normalization therefore generates a concrete operator-valued boundary cocycle rather than deleting the pressure source. If the actual physical weighted W_j were supplied and these B_j matched the admitted primitive/mark graph, this would supply a same-task coherent normalization map; the selected complete valuation, full-source identity and actual implementation work would still need their stated proof.
+
+#### Necessary and sufficient preservation test for one actual native isometry
+
+For W=V and E>0, B=V holds iff the range of V is invariant under E, equivalently [E,VV*]=0. Proof: B=V implies E^(1/2)V=VH^(1/2), hence E^(1/2) preserves ran V; E self-adjoint makes that range reducing. Conversely range invariance permits functional calculus E^(1/2)V=V(V*EV)^(1/2), giving B=V. For prescribed marked effects, equality of B and V is stronger than needed, but the individual effect equalities B*P_bB=V*P_bV must still be checked. A stage gauge is allowed only if it preserves the actual marks or transports their actual paid readers.
+
+#### Apply the ORIGINAL feedback terminal
+
+Let P be the original born-return projector, z the original fixed feedback constant and a=1−z. The original determinant uses
+
+    E=a I+zP,
+    H=a I+z C*C, C=j_return*V.
+
+On the already owned scalar section C=tI, q=t², 0<q<1,
+
+    H=(a+zq)I,
+    B*P B=[q/(a+zq)]I.
+
+The proposed native Doob history therefore changes the exact informative return mark by
+
+    q_Doob−q=z q(1−q)/(a+zq)>0.
+
+It is a different mathematical coherent history admitting native approximation, not a weight identification of the same H.1 word. In the two-sector representation V=(√q,√(1−q))ᵀ and E=diag(1,a), the offdiagonal commutator [E,VV*] is z√(q(1−q)); the range is nonreducing throughout the informative collar. All nonreturn amplitude remains explicitly present. This mismatch disappears only at trivial q=0,1 or z=0; those are not the required nonzero-gain informative family.
+
+Its boundary source −d log(a+zq) is precisely the known feedback scalar source. Recovering that formula does not identify the actual Book Cost−Info history weights: it has used the feedback terminal as its supplied operand. Physically implementing B followed by a recovery to restore V would add a different paid word and reintroduce its full C test. Postselecting B or discarding its normalization would change the task.
+
+#### Decision
+
+The matrix Doob route gives a positive finite construction and a short decisive test. It does not close C on the present informative graph. The task failure is exact and is not fixed by keeping coherent Gram terms more carefully; those are already retained. No universal no-go for a different native weighted-history map follows. The missing map remains a supplied physical weighting that passes all original marked-effect tests, including this terminal normalization, with its actual work source.
+
+Reproduction: the embedded `doob_actual_mark.py` through section7gf. This small symbolic diagnostic checks the scalar algebra only; no full native compiler, Einstein geometry, physical price or Lean closure is claimed.
+
+
+## 7gf. Compose the known physical row, preserve the remaining application, and replay the intake
+
+The three imported continuations share their exact input and retain
+section7ga's projective rigidity theorem as a conditional consumer. No
+geometric root, action coefficient, information tariff or compensating
+source has been fitted. Write `k=27p^2/25600` and
+`L41=41 log2+16 log3-4 log5`. On the original coframe tangent,
+
+\[
+D C_{\rm coarse}=D J_{\rm one-step}=0,\qquad
+D I_{\rm DATA}=k L_{41},\qquad
+D C_{\rm six-readers}=6p^3 k.
+\]
+
+For the specified six-reader extension, if a complete physical price
+using the stated DATA-CQ operand is to match the vanishing one-step
+feedback source on this tangent, its actual remaining net ledger must
+satisfy the following **necessary same-tangent equation**:
+
+\[
+\boxed{
+D W_{\rm rest}
+=k\left[\frac{L_{41}}{\log\varphi}-6p^3\right]>0.
+}
+\]
+
+For an actually pure complete input with its retained reference and the
+joint fine-CQ score, add `k log2/log(phi)` to the right side. This is a
+test of a supplied work/preparation/clock/other-information operand, not
+a definition of that operand. The six-reader contribution is about 1.723%
+of the DATA-CQ source in the original normalization; other physical costs
+are not assumed absent. The general fine-ledger formula in section7gd
+accepts actual label-dependent and moving charges without requiring a
+unique microscopic tariff.
+
+The existing conditional source-transfer criterion CD13 remains sufficient
+at its own carrier: the complete physical remainder, divided by its actual
+positive source gain and multiplied by the norm of the common right lift,
+must tend to zero. Moving coefficients and every independent internal
+Euler row remain part of that comparison. The full128 row above is not
+automatically transported to that H.1 criterion.
+
+The bounded continuation also inspected the original Book03 §§03.3.0a
+and 03.25 and primary CD10--CD13, FV2--FV7 and TH4--TH7. The same-clock
+thermal identity already computes terminal-minus-root divergence; it does
+not yet identify that difference with the complete physical execution
+price. The paid-comparison dominance theorem requires the actual positive
+traversal source bounds, while code compression does not refund an already
+executed reporter. No new application of those owners was established in
+this intake. The unresolved operand is still the actual Cost/Info of the
+known `CX(event,r)` and following writer, or a proved source-equivalent
+complete valuation. This is not a proof of logical independence or a
+universal impossibility theorem for D0. Physical C and GR remain open.
+
+The additional minimal-code check consumes the existing
+`A4D_DMIN_INFO_BINDING_OBSTRUCTION_2026_10_21.md`. Book03 section03.10(a)
+defines `Cost(T)=|D_min(T)|` for an admissibility test; applying that
+definition to the full execution edge still needs its actual test and
+code-presentation map, including the retained preparation, addresses and
+clock. Even fixed integer branch lengths give the real source
+`D mean Cost = sum_z c_z D P_z`, with moving-input/operator terms on the
+quantum carrier. A fixed instruction list therefore supplies neither a
+zero complete work covector nor the missing physical Info rule. This
+bounded application check establishes no new impossibility theorem.
+
+### 7gf.R. Independent bounded mathematical and computational review
+
+The following review covers the imported statements and frozen checkers,
+including the required pointer-algebra and Doob-scope corrections applied
+above. It is an internal independent review, not external peer review,
+Lean formalization, assembly acceptance, task retirement or a Ready
+transition. The optional curve diagnostic uses floating-point spectra;
+the analytic arguments and rational projectors carry the exact claims.
+
+Independent bounded review — PR #334 continuation packets, 18 November 2026
+
+Scope: original Fourier CAR16 / strict Julia / Walsh full128 coframe tangent only. This review does not establish physical Book Info, total price, stopped fine-CQ entropy, a source lift to all42/H.1, or GR closure. Repository files were read only. Computations ran in this isolated review directory.
+
+RESULT: accept the two continuation packets as scoped supporting results with the pointer-algebra clarification below. Accept the Doob construction/marked-effect test with one scope wording correction.
+
+1. Finite coarse-port law.
+At the center each adjoint coarse map sends I to scalar q_b I and its differentiated effect is zero. Every product-rule term in D(T_b1* ... T_bn* I) therefore contains a differentiated map applied to a scalar multiple of I, hence vanishes. This is an operator identity and retains the actual recycling map. Any normalized input derivative gives zero law source. Any fixed finite stopped tree built from this same original instrument is covered leaf by leaf. Moving tariff/source terms remain; unrelated coherent work operators and changes to the staged instrument are not covered.
+
+2. Fine ledger row.
+The original Kraus formulas give dq_even=(4 p^4 lambda/16) dt_j, dq_odd=(4 p^3 lambda/16) dt_j. Grouping by cbar_j=p^2 c_even+p c_odd yields prefactor 9 p^2/2560. The thirteen active trace rows and their zero sum are correct. The displayed coframe tangent changes the Lorentz Gram, and already the j=9 fine probabilities change, so it cannot be quotiented as an invisible same-task or proper-Lorentz gauge direction. No all-mesh interpretation is claimed.
+
+3. Full reference.
+I_joint-I_DATA equals loss of DATA/reference mutual information for every actual complete input, by expansion and unchanged reference marginal. Its pointwise nonnegativity does not control its derivative. If the actual complete input is pure, efficient conditional joint branches are pure and I_joint=H(P); with a product independent reference the correction vanishes identically. The exact original trace spectrum gives DH(P)=27 p^2/25600 (42 log2+16 log3-4 log5), while conditional DATA-CQ gives the coefficient 41. Their difference is 27 p^2 log2/25600. No free purification is supplied. The zero-support blocks have zero first jets and the analytic positive Julia curve makes their entropy terms O(t^2 |log|t||), sufficient for the derivative.
+
+4. Pointer clarification required in prose.
+Starting from the declared original fine-CQ scored algebra, conditioned on its retained original fine label z the six canonical pointers are independent pure states. Coherent retention adds zero scored entropy. Actual reading/scoring of each pointer in its native 0/10 basis adds 6 h(p^2), independent of z and the field. The output pointer-code expectation is 6(1+p^2)+p^3 sum_k Pr(j_k=1). Therefore the pinched score increment is p^3 sum Pr(j_k=1), while the coherent-pointer score increment is 6(1+p^2)+p^3 sum Pr(j_k=1). Both have EXACTLY the same first source 81 p^5/12800. The missing birth, traversal, controller and work terms retain their actual ledger. This is stronger and clearer than implying that merely coherent pointer retention adds 6 h(p^2). It leaves the computed first-source receipt unchanged.
+
+5. Doob review.
+B=E^(1/2)V(V*EV)^(-1/2) is an isometry. The backward positive factors telescope without commutativity. B=V iff ran V reduces E iff [E,VV*]=0. Individual marked effects may agree without B=V, so the note correctly checks them separately. For original E=(1-z)I+zP and scalar C*C=qI, B*PB=q/(1-z+zq) I; its shift zq(1-q)/(1-z+zq) is strictly positive on 0<q,z<1. This is a different informative marked history. Replace the conditional phrase “this would be an exact C map” by “this would supply a same-task coherent normalization map; the selected complete valuation, full-source identity and actual implementation work would still need their stated proof.” The script docstring names obsolete quantum_doob_note.md; this does not affect its algebra.
+
+Replays completed so far:
+- ledger normal: byte-identical to frozen receipt, SHA256 7f1b07424839c688117bc9d4c30cf2411596e67ed74a57ce2f6be7d15bc89191.
+- reference normal and -O: byte-identical to each other and frozen receipt, SHA256 cf5ca2169b1d0c3fe5dec3325d195996a1e5c43f7e73614f62bfed8da1e0847d.
+- Doob normal and -O: byte-identical to each other and frozen receipt, SHA256 683987af5a358cc48b110af320c24597350c1fa17353c7019c3cfb09b4d4e211.
+- ledger -O: completed, byte-identical to normal and frozen receipt; same SHA256 7f1b07424839c688117bc9d4c30cf2411596e67ed74a57ce2f6be7d15bc89191.
+
+Independent changed-input diagnostic:
+independent_curve_check.py reconstructs positive Julia roots with a numerical eigensolver on actual t curves, the full128 Kraus instrument, generated inverse-Lambda input, both entropy operands, the canonical reader code, and every coarse word of lengths 1–3. It does not reuse the symbolic jet or its expected matrix coefficients. All diagnostics pass. At t=1e-4, errors relative to exact derivative are 8.94e-10 (H), 1.07e-9 (DATA-CQ), 3.28e-11 (reader). Maximum coarse effect operator jet norm is 4.30e-12, and the center scalar-effect norm error is 1.83e-15. These are numerical corroboration, not exact certificates. The exact proofs/checkers carry the mathematical claims.
+
+No scientific, lifecycle, assembly or external peer-review acceptance is implied.
+
+### 7gf.V. Portable read-only replay
+
+Run this from the repository root. It extracts into a temporary directory,
+checks every frozen byte stream, obtains the earlier exact constructor
+from section7gb, and supplies that path explicitly. Scripts that emit a
+sidecar JSON therefore write only inside the temporary directory. Expected
+evidence and repository inputs are never overwritten. All three new exact
+scripts run normally and with Python optimization. The numerical curve
+diagnostic is retained separately for inspection; it is not an exact or
+cross-platform byte-identical claim. The obsolete Doob docstring filename
+is historical; the actual proof is section7ge above.
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+import hashlib, json, subprocess, sys, tempfile
+
+root = Path.cwd()
+text = (root / "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md").read_text(encoding="utf-8")
+def block(name, kind="CONTINUATION"):
+    prefix = "D0 20261118 " + kind + " " + name
+    begin, end = "<!-- BEGIN " + prefix + " -->", "<!-- END " + prefix + " -->"
+    if text.count(begin) != 1 or text.count(end) != 1:
+        raise RuntimeError("missing or ambiguous block: " + name)
+    raw = text.split(begin, 1)[1].split(end, 1)[0]
+    lines = raw.strip("\n").splitlines(keepends=True)
+    if not lines or not lines[0].startswith("```") or lines[-1].strip() != "```":
+        raise RuntimeError("malformed block: " + name)
+    return "".join(lines[1:-1]).encode()
+
+manifest = json.loads(block("continuation_manifest.json"))
+with tempfile.TemporaryDirectory(prefix="d0-complete-record-20261118-") as directory:
+    work = Path(directory)
+    for name, digest in manifest["files"].items():
+        raw = block(name)
+        if hashlib.sha256(raw).hexdigest() != digest:
+            raise RuntimeError("changed frozen bytes: " + name)
+        (work / name).write_bytes(raw)
+    constructor = manifest["constructor_from_prior_checkpoint"]
+    raw = block(constructor["name"], "FILE")
+    if hashlib.sha256(raw).hexdigest() != constructor["sha256"]:
+        raise RuntimeError("changed exact constructor; review required")
+    (work / constructor["name"]).write_bytes(raw)
+    cases = [
+        ("check_actual_ledger_row.py", "expected_actual_ledger_row.json",
+         ["--constructor", str(work / constructor["name"])]),
+        ("check_full128_reference_extension.py", "expected_full128_reference_extension.json", []),
+        ("doob_actual_mark.py", "expected_doob_actual_mark.json", []),
+    ]
+    receipts = []
+    for script, expected, arguments in cases:
+        frozen = (work / expected).read_bytes()
+        for mode in ([], ["-O"]):
+            run = subprocess.run([sys.executable, *mode, "-Werror", str(work / script), *arguments],
+                                 cwd=work, capture_output=True, check=True)
+            if run.stderr or run.stdout != frozen:
+                raise RuntimeError("frozen receipt mismatch or warning: " + script)
+            receipts.append({"script": script, "optimized": bool(mode),
+                             "sha256": hashlib.sha256(run.stdout).hexdigest()})
+    print(json.dumps({"status": "PASS_COMPLETE_RECORD_INTAKE_20261118", "receipts": receipts,
+                      "physical_C_closed": False, "GR_closed": False}, indent=2, sort_keys=True))
+PY
+```
+
+<!-- BEGIN D0 20261118 CONTINUATION continuation_manifest.json -->
+```json
+{
+  "GR_closed": false,
+  "constructor_from_prior_checkpoint": {
+    "name": "check_full128_cq_coframe_residual.py",
+    "sha256": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66"
+  },
+  "exact_replay_dependencies": [
+    "Python 3",
+    "SymPy"
+  ],
+  "files": {
+    "check_actual_ledger_row.py": "2257f9e76c656177e3e59f0b65753b1610683580779afe25e731b5c876a447aa",
+    "check_full128_reference_extension.py": "60acaac03250cf594f54a8ee1c19023ae7516b57975b82966d100fbcc0d93a32",
+    "doob_actual_mark.py": "9bb9d372af89c750ad167dc403bcd5307163b160ad3e096b15dbb15a98433931",
+    "expected_actual_ledger_row.json": "7f1b07424839c688117bc9d4c30cf2411596e67ed74a57ce2f6be7d15bc89191",
+    "expected_doob_actual_mark.json": "683987af5a358cc48b110af320c24597350c1fa17353c7019c3cfb09b4d4e211",
+    "expected_full128_reference_extension.json": "cf5ca2169b1d0c3fe5dec3325d195996a1e5c43f7e73614f62bfed8da1e0847d",
+    "independent_curve_check.py": "76a92fcbfd1d730fab9782a7f7b6ccb77bfc1b861ac5366a821abe138ed6f3fd",
+    "independent_curve_receipt.json": "13c2edc321a8d0f482fc21f69706c423e3a82870be44718642db9cedd54711f2"
+  },
+  "input_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+  "optional_curve_dependencies": [
+    "NumPy",
+    "SciPy"
+  ],
+  "original_proof_notes_sha256": {
+    "actual_ledger_completion.md": "1f2f4b98e9cce8ec15ee63c9f87c8598f70ad9feae593477e917f336c0ec5853",
+    "doob_actual_mark.md": "931df7c12648a4a55c1a096d132ddf08949ea45b3662c65b5f86a03b675c9cde",
+    "full128_reference_extension.md": "fb6ed9dca1abafe33d1b6b2b2152a51fef4da94f1d0ef1262bb00dcf0e8933e6"
+  },
+  "physical_C_closed": false,
+  "primary": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+  "review_corrections": [
+    "explicit coherent versus read-pointer algebra; same first source",
+    "Doob marked normalization is not by itself a complete C map",
+    "analytic instrument visibility is not automatic native all-mesh admission"
+  ],
+  "schema": "d0-20261118-complete-record-intake/1"
+}
+```
+<!-- END D0 20261118 CONTINUATION continuation_manifest.json -->
+
+<!-- BEGIN D0 20261118 CONTINUATION check_actual_ledger_row.py -->
+```python
+#!/usr/bin/env python3
+"""Exact actual full128 fine-charge row on the already proved coframe tangent.
+
+Reads the frozen exact constructor/checker; does not change it or repository
+files. Charges are symbolic placeholders for independently supplied actual
+ledger values, not an invented physical tariff.
+"""
+from pathlib import Path
+import argparse
+import contextlib
+import io
+import json
+import runpy
+import sympy as s
+
+root=Path(__file__).resolve().parents[2]
+parser=argparse.ArgumentParser()
+parser.add_argument('--constructor',type=Path,
+                    default=root/'agent_rigidity/check_full128_cq_coframe_residual.py',
+                    help='Path to the frozen exact full128 coframe-residual checker')
+args=parser.parse_args()
+with contextlib.redirect_stdout(io.StringIO()):
+    g=runpy.run_path(str(args.constructor))
+
+I,O,ns,dns=g['I'],g['O'],g['ns'],g['dns']
+a,da,kappa,need,same=g['a'],g['da'],g['kappa'],g['need'],g['same']
+p=(s.sqrt(5)-1)/2
+r=16
+lam=kappa
+rows=[]
+for j,(n,dn) in enumerate(zip(ns,dns)):
+    m=(n*n.H).applyfunc(s.expand)
+    dm=(dn*n.H+n*dn.H).applyfunc(s.expand)
+    t=s.trace(m)
+    dt=s.trace(dm)
+    if dt!=0:
+        rows.append({'j':j,'fine_labels':[2*j,2*j+1],
+                     'Tr_M':str(t),'D_Tr_M':str(dt),
+                     'D_q_even_over_p4':str(s.factor(4*lam*dt/r)),
+                     'D_q_odd_over_p3':str(s.factor(4*lam*dt/r))})
+need(sum(s.Rational(x['D_Tr_M']) for x in rows)==0,'full fine probability normalizer')
+need(same(a*da+da*a,O),'actual D Lambda is zero')
+
+# Coarse port effects from the literal unchanged Kraus formulas. No
+# continuation is replaced; completeness differentiates to zero.
+ks=[];dks=[]
+for j,(n,dn) in enumerate(zip(ns,dns)):
+    v=n.H*a;dv=dn.H*a+n.H*da
+    ks.extend(((I if j==0 else O)-2*p**2*v,-2*p*s.sqrt(p)*v))
+    dks.extend((-2*p**2*dv,-2*p*s.sqrt(p)*dv))
+de=[]
+for b in (0,1):
+    e=sum((ks[z].H*ks[z] for z in range(b,128,2)),O.copy())
+    jet=sum((dks[z].H*ks[z]+ks[z].H*dks[z] for z in range(b,128,2)),O.copy())
+    need(same(jet,O),'actual complete coarse-port effect derivative '+str(b))
+    desired=(1-4*p**3*lam)*I if b==0 else 4*p**3*lam*I
+    need(same(e,desired),'actual scalar coarse-port effect '+str(b))
+    de.append(jet)
+
+# A real coefficient-leg variation is not a CAR Lorentz gauge direction.
+# This is the local positive observer Gram, so this check needs no choice of
+# Lorentz-sign convention or unproved all-mesh realization.
+nu=s.Rational(3,5)
+v=nu*s.eye(4)
+dv=s.zeros(4)
+dv[0,0]=1
+dv[1,0]=-1
+gramjet=dv.T*v+v.T*dv
+need(gramjet!=s.zeros(4),'actual creator-leg positive Gram changes')
+eta=s.diag(1,-1,-1,-1)
+lorentz_gramjet=dv.T*eta*v+v.T*eta*dv
+need(lorentz_gramjet!=s.zeros(4),'not an infinitesimal proper Lorentz basis change')
+
+# ONE actual completion attempt: read each of the six address bits using
+# the owned canonical pointer v=(sqrt(p),p), followed by literal CX. The
+# original fine record, all conditional DATA and oldRIGHT remain present.
+eye2=s.eye(2)
+xbit=s.Matrix([[0,1],[1,0]])
+cbit=s.diag(1,2)
+zbit=s.diag(1,-1)
+pointer=s.Matrix([s.sqrt(p),p])
+need(same(xbit.T*cbit*xbit-cbit,zbit),'actual pointer code increment operator')
+need(s.simplify((pointer.T*zbit*pointer)[0]-p**3)==0,'actual canonical pointer increment p^3')
+bit_weights=[]
+for bit in range(6):
+    bit_weights.append(sum((s.Rational(row['D_Tr_M'])*((row['j']>>bit)&1) for row in rows),s.S.Zero))
+need(sum(bit_weights)==s.Rational(9,5),'all six true fine-address bit derivatives')
+reader_source=81*p**5/12800
+need(s.simplify(p**3*(9*p**2/2560)*sum(bit_weights)-reader_source)==0,'actual one-pass six-pointer source')
+need(s.simplify(1+p**2-(p+2*p**2))==0,'canonical pointer code/entropy baseline cancellation')
+ell=s.log((1+s.sqrt(5))/2)
+ell41=41*s.log(2)+16*s.log(3)-4*s.log(5)
+kappa_cq=27*p**2/25600
+net_source=reader_source-kappa_cq*ell41/ell
+need(3**4>5,'positive 16log3-4log5 part')
+need(41>6,'strict residual via p^3<1 and log(phi)<log2')
+
+out={
+    'status':'PASS_EXACT_ACTUAL_FINE_LEDGER_ROW',
+    'scope':'Same original coframe tangent and complete original64-row/128-label instrument. A source template for actual charges, not a selected missing tariff or full C closure.',
+    'input':'agent_rigidity/check_full128_cq_coframe_residual.py',
+    'actual_tangent':'dC0=c0-c1; dx0=i*dC0; all other original legs fixed',
+    'D_Lambda_zero_as_matrix':True,
+    'coarse_port_effect_derivatives_zero_as_matrices':True,
+    'fixed_port_history_ledger_source':'zero for every finite complete port tree, by scalar-effect induction',
+    'fine_probability_rows':rows,
+    'cost_row_prefactor':'9*p^2/2560',
+    'effective_charge':'cbar_j=p^2*c_(2j)+p*c_(2j+1)',
+    'fixed_fine_charge_source':'(9*p^2/2560)*sum_j D_Tr_M_j*cbar_j',
+    'moving_charge_term':'sum_z q_z*D c_z',
+    'remaining_physical_term':'D C_preparation+ D C_program+ D C_work+ D C_clock beyond the explicitly priced port-history ledger',
+    'positive_observer_gram_jet':[[str(x) for x in row] for row in gramjet.tolist()],
+    'lorentz_gram_jet':[[str(x) for x in row] for row in lorentz_gramjet.tolist()],
+    'one_actual_completion_attempt':{
+        'execution':'six canonical born pointers, one literal CX from each original address bit; retain original fine record and every new pointer',
+        'bit_weights_D_Tr_M':list(map(str,bit_weights)),
+        'each_actual_pointer_code_increment':'p^3*Pr(address_bit=1)',
+        'extra_full_fine_CQ_gain':'6*h(p^2), exactly field independent; original DATA/oldRIGHT terms retained',
+        'extra_code_minus_CQ_price':'p^3*sum_bit Pr(address_bit=1)',
+        'extra_field_source_exact':'81*p^5/12800',
+        'extra_field_source_decimal':str(s.N(reader_source,40)),
+        'combined_code_minus_conditional_CQ_source_exact':'(27*p^2/25600)*(6*p^3-(41*log2+16*log3-4*log5)/log(phi))',
+        'combined_source_decimal':str(s.N(net_source,40)),
+        'fraction_of_previous_conditional_CQ_source_compensated':str(s.N(reader_source/(kappa_cq*ell41/ell),30)),
+        'combined_source_strictly_negative':True,
+        'scope':'Derived actual record-code component only. No postulated per-call friction, compulsory extra reader, or total Book price selection. Full compiler/birth/controller traversal ledgers are not replaced by output code.',
+    },
+    'GR_closed':False,
+}
+receipt=json.dumps(out,indent=2,sort_keys=True)+'\n'
+Path(__file__).with_suffix('.json').write_text(receipt)
+print(receipt,end='')
+```
+<!-- END D0 20261118 CONTINUATION check_actual_ledger_row.py -->
+
+<!-- BEGIN D0 20261118 CONTINUATION expected_actual_ledger_row.json -->
+```json
+{
+  "D_Lambda_zero_as_matrix": true,
+  "GR_closed": false,
+  "actual_tangent": "dC0=c0-c1; dx0=i*dC0; all other original legs fixed",
+  "coarse_port_effect_derivatives_zero_as_matrices": true,
+  "cost_row_prefactor": "9*p^2/2560",
+  "effective_charge": "cbar_j=p^2*c_(2j)+p*c_(2j+1)",
+  "fine_probability_rows": [
+    {
+      "D_Tr_M": "-27/10",
+      "D_q_even_over_p4": "-243/25600",
+      "D_q_odd_over_p3": "-243/25600",
+      "Tr_M": "324/25",
+      "fine_labels": [
+        18,
+        19
+      ],
+      "j": 9
+    },
+    {
+      "D_Tr_M": "3/40",
+      "D_q_even_over_p4": "27/102400",
+      "D_q_odd_over_p3": "27/102400",
+      "Tr_M": "1/25",
+      "fine_labels": [
+        26,
+        27
+      ],
+      "j": 13
+    },
+    {
+      "D_Tr_M": "3/10",
+      "D_q_even_over_p4": "27/25600",
+      "D_q_odd_over_p3": "27/25600",
+      "Tr_M": "9/40",
+      "fine_labels": [
+        32,
+        33
+      ],
+      "j": 16
+    },
+    {
+      "D_Tr_M": "3/10",
+      "D_q_even_over_p4": "27/25600",
+      "D_q_odd_over_p3": "27/25600",
+      "Tr_M": "9/40",
+      "fine_labels": [
+        40,
+        41
+      ],
+      "j": 20
+    },
+    {
+      "D_Tr_M": "3/10",
+      "D_q_even_over_p4": "27/25600",
+      "D_q_odd_over_p3": "27/25600",
+      "Tr_M": "27/200",
+      "fine_labels": [
+        48,
+        49
+      ],
+      "j": 24
+    },
+    {
+      "D_Tr_M": "3/10",
+      "D_q_even_over_p4": "27/25600",
+      "D_q_odd_over_p3": "27/25600",
+      "Tr_M": "27/200",
+      "fine_labels": [
+        56,
+        57
+      ],
+      "j": 28
+    },
+    {
+      "D_Tr_M": "3/40",
+      "D_q_even_over_p4": "27/102400",
+      "D_q_odd_over_p3": "27/102400",
+      "Tr_M": "1/25",
+      "fine_labels": [
+        58,
+        59
+      ],
+      "j": 29
+    },
+    {
+      "D_Tr_M": "3/40",
+      "D_q_even_over_p4": "27/102400",
+      "D_q_odd_over_p3": "27/102400",
+      "Tr_M": "1/25",
+      "fine_labels": [
+        90,
+        91
+      ],
+      "j": 45
+    },
+    {
+      "D_Tr_M": "3/10",
+      "D_q_even_over_p4": "27/25600",
+      "D_q_odd_over_p3": "27/25600",
+      "Tr_M": "9/40",
+      "fine_labels": [
+        96,
+        97
+      ],
+      "j": 48
+    },
+    {
+      "D_Tr_M": "3/10",
+      "D_q_even_over_p4": "27/25600",
+      "D_q_odd_over_p3": "27/25600",
+      "Tr_M": "9/40",
+      "fine_labels": [
+        104,
+        105
+      ],
+      "j": 52
+    },
+    {
+      "D_Tr_M": "3/10",
+      "D_q_even_over_p4": "27/25600",
+      "D_q_odd_over_p3": "27/25600",
+      "Tr_M": "27/200",
+      "fine_labels": [
+        112,
+        113
+      ],
+      "j": 56
+    },
+    {
+      "D_Tr_M": "3/10",
+      "D_q_even_over_p4": "27/25600",
+      "D_q_odd_over_p3": "27/25600",
+      "Tr_M": "27/200",
+      "fine_labels": [
+        120,
+        121
+      ],
+      "j": 60
+    },
+    {
+      "D_Tr_M": "3/40",
+      "D_q_even_over_p4": "27/102400",
+      "D_q_odd_over_p3": "27/102400",
+      "Tr_M": "1/25",
+      "fine_labels": [
+        122,
+        123
+      ],
+      "j": 61
+    }
+  ],
+  "fixed_fine_charge_source": "(9*p^2/2560)*sum_j D_Tr_M_j*cbar_j",
+  "fixed_port_history_ledger_source": "zero for every finite complete port tree, by scalar-effect induction",
+  "input": "agent_rigidity/check_full128_cq_coframe_residual.py",
+  "lorentz_gram_jet": [
+    [
+      "6/5",
+      "3/5",
+      "0",
+      "0"
+    ],
+    [
+      "3/5",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "moving_charge_term": "sum_z q_z*D c_z",
+  "one_actual_completion_attempt": {
+    "bit_weights_D_Tr_M": [
+      "-12/5",
+      "0",
+      "3/2",
+      "-6/5",
+      "51/20",
+      "27/20"
+    ],
+    "combined_code_minus_conditional_CQ_source_exact": "(27*p^2/25600)*(6*p^3-(41*log2+16*log3-4*log5)/log(phi))",
+    "combined_source_decimal": "-0.03254695878794526002909646676131303237009",
+    "combined_source_strictly_negative": true,
+    "each_actual_pointer_code_increment": "p^3*Pr(address_bit=1)",
+    "execution": "six canonical born pointers, one literal CX from each original address bit; retain original fine record and every new pointer",
+    "extra_code_minus_CQ_price": "p^3*sum_bit Pr(address_bit=1)",
+    "extra_field_source_decimal": "0.0005706066752896416814732553061002685684942",
+    "extra_field_source_exact": "81*p^5/12800",
+    "extra_full_fine_CQ_gain": "6*h(p^2), exactly field independent; original DATA/oldRIGHT terms retained",
+    "fraction_of_previous_conditional_CQ_source_compensated": "0.0172297289160066538879640453585",
+    "scope": "Derived actual record-code component only. No postulated per-call friction, compulsory extra reader, or total Book price selection. Full compiler/birth/controller traversal ledgers are not replaced by output code."
+  },
+  "positive_observer_gram_jet": [
+    [
+      "6/5",
+      "-3/5",
+      "0",
+      "0"
+    ],
+    [
+      "-3/5",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "remaining_physical_term": "D C_preparation+ D C_program+ D C_work+ D C_clock beyond the explicitly priced port-history ledger",
+  "scope": "Same original coframe tangent and complete original64-row/128-label instrument. A source template for actual charges, not a selected missing tariff or full C closure.",
+  "status": "PASS_EXACT_ACTUAL_FINE_LEDGER_ROW"
+}
+```
+<!-- END D0 20261118 CONTINUATION expected_actual_ledger_row.json -->
+
+<!-- BEGIN D0 20261118 CONTINUATION check_full128_reference_extension.py -->
+```python
+#!/usr/bin/env python3
+"""Exact full128 fine-record/reference extension on the original coframe jet.
+
+Self-contained rational CAR/Julia/Walsh construction, without numerical spectra.
+The DATA-CQ calculation is reproduced from the existing coframe residual owner.
+The added calculation is the complete fine-record Shannon derivative.  It is
+the joint CQ derivative only for an already pure complete input with an actual
+retained purifier.  No new physical preparation or Book Info selection is made.
+
+Run: python3 check_full128_reference_extension.py > full128_reference_extension.json
+"""
+
+from collections import defaultdict
+import json
+import sympy as s
+
+
+def need(condition, label):
+    if not condition:
+        raise ArithmeticError(label)
+
+
+def same(left, right):
+    return (left - right).applyfunc(s.expand) == s.zeros(*left.shape)
+
+
+def prime_log_coefficients(coefficients):
+    result = defaultdict(lambda: s.S.Zero)
+    for value, weight in coefficients.items():
+        numerator, denominator = s.fraction(value)
+        for prime, power in s.factorint(numerator).items():
+            result[int(prime)] += weight * power
+        for prime, power in s.factorint(denominator).items():
+            result[int(prime)] -= weight * power
+    return {prime: s.factor(weight) for prime, weight in result.items() if weight}
+
+
+r = 16
+I, O = s.eye(r), s.zeros(r)
+nu, kappa = s.Rational(3, 5), s.Rational(9, 640)
+order = (0, 2, 3, 1)
+creators = []
+for leg in range(4):
+    creator = O.copy()
+    before = order[:order.index(leg)]
+    for bits in range(16):
+        if not ((bits >> leg) & 1):
+            creator[bits | (1 << leg), bits] = (-1) ** sum(
+                (bits >> prior) & 1 for prior in before
+            )
+    creators.append(creator)
+
+
+def root_jet(root, rhs):
+    result = s.Matrix(r, r, lambda i, j: rhs[i, j] / (root[i, i] + root[j, j]))
+    need(same(root * result + result * root, rhs), "true Julia-root Sylvester jet")
+    return result
+
+
+words, jets = [], []
+phases = (s.I, s.I, -1, -s.I)
+for leg, creator in enumerate(creators):
+    base = nu * creator
+    dbase = creators[0] - creators[1] if leg == 0 else O
+    x, dx = phases[leg] * base, phases[leg] * dbase
+    left = I - (creator * creator.H) / 5
+    right = 4 * I / 5 + (creator * creator.H) / 5
+    need(same(left * left, I - x * x.H), "actual left positive Julia root")
+    need(same(right * right, I - x.H * x), "actual right positive Julia root")
+    need(all(value > 0 for value in left.diagonal()), "strict left root chart")
+    need(all(value > 0 for value in right.diagonal()), "strict right root chart")
+    dleft = root_jet(left, -dx * x.H - x * dx.H)
+    dright = root_jet(right, -dx.H * x - x.H * dx)
+    dleft0 = root_jet(left, -dbase * base.H - base * dbase.H)
+    dright0 = root_jet(right, -dbase.H * base - base.H * dbase)
+    for word, jet in zip(
+        ((x, left), (x.H, right), (-base, -left), (-base.H, -right)),
+        ((dx, dleft), (dx.H, dright), (-dbase, -dleft0), (-dbase.H, -dright0)),
+    ):
+        words.extend((word, word))
+        jets.extend((jet, jet))
+
+rows, drows = [], []
+for label in range(32):
+    signs = [(-1) ** ((label & j).bit_count() & 1) for j in range(32)]
+    for bit in (0, 1):
+        rows.append(sum((signs[j] * words[j][bit] for j in range(32)), O.copy()) / 32)
+        drows.append(sum((signs[j] * jets[j][bit] for j in range(32)), O.copy()) / 32)
+
+A, dA = rows[0], drows[0]
+need(same(A.H, A) and same(dA.H, dA), "self-adjoint actual row and jet")
+need(same(A.H * A, kappa * I), "Lambda=kappa I")
+need(same(A * A.H, kappa * I), "AA*=kappa I")
+need(same(dA.H * A + A.H * dA, O), "D Lambda=0 as a matrix")
+need(same(dA * A.H + A * dA.H, O), "D(AA*)=0 as a matrix")
+need(same(sum((n.H * n for n in rows), O.copy()), I), "all64 column Parseval")
+need(same(sum((n * n.H for n in rows), O.copy()), I), "all64 row Parseval")
+need(same(sum((dn * n.H + n * dn.H for n, dn in zip(rows, drows)), O.copy()), O),
+     "actual differentiated row Parseval")
+
+trace_coefficients = defaultdict(lambda: s.S.Zero)
+eigen_coefficients = defaultdict(lambda: s.S.Zero)
+active_trace_rows = []
+beta_sum = dbeta_sum = s.S.Zero
+trace_jet_sum = s.S.Zero
+zero_support_checked = 0
+
+for j, (n, dn) in enumerate(zip(rows, drows)):
+    M = (n * n.H).applyfunc(s.expand)
+    dM = (dn * n.H + n * dn.H).applyfunc(s.expand)
+    trace = s.simplify(s.trace(M))
+    dtrace = s.simplify(s.trace(dM))
+    need(trace.is_Rational and trace >= 0, "rational nonnegative row trace")
+    trace_jet_sum += dtrace
+
+    # Direct original NT1 block B_j=N_j* A, not an alternative Kraus frame.
+    B, dB = n.H * A, dn.H * A + n.H * dA
+    beta = s.simplify(s.trace(B * B.H) / r)
+    dbeta = s.simplify(s.trace(dB * B.H + B * dB.H) / r)
+    need(beta == kappa * trace / r, "actual port probability trace")
+    need(dbeta == kappa * dtrace / r, "actual port probability derivative")
+    beta_sum += beta
+    dbeta_sum += dbeta
+
+    need(M == s.diag(*M.diagonal()), "exact original diagonal row Gram matrix")
+    for eigenvalue in set(M.diagonal()):
+        need(eigenvalue.is_Rational and eigenvalue >= 0, "rational row spectrum")
+        projector = s.diag(*[int(value == eigenvalue) for value in M.diagonal()])
+        need(projector * projector == projector and M * projector == eigenvalue * projector,
+             "exact spectral projector")
+        if eigenvalue == 0:
+            need(projector * dM * projector == O, "zero-support first spectral jet")
+            zero_support_checked += 1
+
+    if j == 0:
+        need(dM == O and dtrace == 0, "special original quiet row has no derivative")
+        need(same(dB, O), "both special j=0 port derivatives vanish")
+        continue
+    if trace == 0:
+        need(dtrace == 0, "dark fine outcome has zero first probability derivative")
+    elif dtrace:
+        trace_coefficients[trace] += dtrace
+        active_trace_rows.append({"j": j, "Tr_M": str(trace), "Tr_DM": str(dtrace)})
+    for eigenvalue, derivative in zip(M.diagonal(), dM.diagonal()):
+        if eigenvalue == 0:
+            need(derivative == 0, "dark conditional eigenvalue has no linear birth")
+        elif derivative:
+            eigen_coefficients[eigenvalue] += derivative
+
+need(trace_jet_sum == 0, "all64 trace normalization derivative")
+need(s.simplify(beta_sum - kappa) == 0 and dbeta_sum == 0,
+     "direct NT1 block norm and derivative sums")
+trace_coefficients = {v: s.factor(w) for v, w in trace_coefficients.items() if w}
+eigen_coefficients = {v: s.factor(w) for v, w in eigen_coefficients.items() if w}
+need(trace_coefficients == {
+    s.Rational(324, 25): -s.Rational(27, 10),
+    s.Rational(1, 25): s.Rational(3, 10),
+    s.Rational(9, 40): s.Rational(6, 5),
+    s.Rational(27, 200): s.Rational(6, 5),
+}, "exact grouped fine-record probability derivative")
+need(eigen_coefficients == {
+    s.Rational(81, 100): -s.Rational(27, 10),
+    s.Rational(1, 400): s.Rational(3, 20),
+    s.Rational(1, 100): s.Rational(3, 20),
+    s.Rational(9, 640): s.Rational(6, 5),
+    s.Rational(27, 3200): s.Rational(6, 5),
+}, "reproduced original conditional-CQ coefficients")
+need(sum(trace_coefficients.values()) == 0 and sum(eigen_coefficients.values()) == 0,
+     "all scalar port logarithms and entropy constants cancel")
+
+h_primes = prime_log_coefficients(trace_coefficients)
+data_primes = prime_log_coefficients(eigen_coefficients)
+need(h_primes == {2: -s.Rational(63, 5), 3: -s.Rational(24, 5), 5: s.Rational(6, 5)},
+     "exact fine-record logarithm prime reduction")
+need(data_primes == {2: -s.Rational(123, 10), 3: -s.Rational(24, 5), 5: s.Rational(6, 5)},
+     "exact conditional-CQ logarithm prime reduction")
+p = (s.sqrt(5) - 1) / 2
+need(s.simplify(p**2 + p - 1) == 0, "native golden probability identity")
+need(s.simplify(1 - 4*p**2*kappa + 4*(p**4+p**3)*beta_sum - 1) == 0,
+     "all128 original probabilities normalize absolutely")
+common = 4 * p**2 * kappa / r
+dH = -common * sum(weight * s.log(prime) for prime, weight in h_primes.items())
+dI_DATA = -common * sum(weight * s.log(prime) for prime, weight in data_primes.items())
+dchi = s.expand(dH - dI_DATA)
+factor = 27 * p**2 / 25600
+need(s.expand(dH - factor*(42*s.log(2)+16*s.log(3)-4*s.log(5))) == 0,
+     "closed exact full fine-record entropy derivative")
+need(s.expand(dI_DATA - factor*(41*s.log(2)+16*s.log(3)-4*s.log(5))) == 0,
+     "reproduced exact conditional-CQ entropy derivative")
+need(s.expand(dchi - factor*s.log(2)) == 0, "exact retained-reference correction")
+need(2**42 * 3**16 > 5**4 and 2**41 * 3**16 > 5**4 and 2 > 1,
+     "strict signs from integer inequalities, without numerical logarithms")
+
+result = {
+    "status": "PASS_EXACT_FULL128_REFERENCE_EXTENSION",
+    "construction": "original CAR16/strict Julia/Walsh 64 rows and NT1 128 ports",
+    "actual_tangent": "dC_0=c_0-c_1; dx_0=i*dC_0; all other legs fixed",
+    "nu": str(nu),
+    "kappa": str(kappa),
+    "p": "(sqrt(5)-1)/2",
+    "D_Lambda_zero_as_matrix": True,
+    "D_AA_adjoint_zero_as_matrix": True,
+    "generated_inverse_Lambda_preparation_jet_zero": True,
+    "all128_absolute_probability_normalization_verified": True,
+    "zero_support_projectors_checked": zero_support_checked,
+    "active_row_trace_jets": active_trace_rows,
+    "grouped_Tr_DM_log_TrM_coefficients": {str(v): str(w) for v, w in trace_coefficients.items()},
+    "grouped_Tr_DM_log_M_coefficients": {str(v): str(w) for v, w in eigen_coefficients.items()},
+    "fine_record_prime_log_coefficients_before_common_minus_factor": {str(v): str(w) for v, w in h_primes.items()},
+    "conditional_CQ_prime_log_coefficients_before_common_minus_factor": {str(v): str(w) for v, w in data_primes.items()},
+    "D_H_all128_exact": "27*p^2/25600 * (42*log(2)+16*log(3)-4*log(5))",
+    "D_I_DATA_CQ_exact": "27*p^2/25600 * (41*log(2)+16*log(3)-4*log(5))",
+    "D_reference_correction_if_complete_input_pure_exact": "27*p^2/25600 * log(2)",
+    "D_H_all128_decimal_diagnostic": str(s.N(dH, 50)),
+    "D_I_DATA_CQ_decimal_diagnostic": str(s.N(dI_DATA, 50)),
+    "D_reference_correction_decimal_diagnostic": str(s.N(dchi, 50)),
+    "strict_positive_signs_verified_exactly": True,
+    "D_known_port_cost": "0",
+    "D_original_one_step_feedback": "0",
+    "readings": {
+        "DATA_conditional_CQ": "D_I_DATA_CQ_exact",
+        "complete_joint_CQ_if_actual_complete_input_pure": "D_H_all128_exact",
+        "complete_joint_CQ_if_input_DATA_product_independent_reference": "D_I_DATA_CQ_exact",
+        "whole_coherent_entropy_gain": "identically zero by isometry; not a physical action",
+        "general_mixed_correlated_input": "joint minus DATA gain equals lost DATA/reference mutual information; derivative not fixed here",
+    },
+    "scope": {
+        "complete_original_one_round_fine_record": True,
+        "free_purifying_preparation_claimed": False,
+        "Book_Info_selected": False,
+        "full_stopped_history_entropy_computed": False,
+        "remaining_physical_ledger_compensation_proved": False,
+        "physical_C_closed": False,
+        "GR_closed": False,
+        "formal_Lean_verification": False,
+    },
+    "provenance": {
+        "original_conditional_CQ_checker_sha256": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66",
+        "primary_snapshot_sha256": "3686f0b59a020a4e8c475e81a84cae237bb7b135cc442a4a1f8e04af33ed0d31",
+        "Book03_snapshot_sha256": "07e8c97455a85e3589f94e3a3b96bb61e4fa9b3d05e2822392ca02e412541187",
+    },
+}
+print(json.dumps(result, indent=2, sort_keys=True))
+```
+<!-- END D0 20261118 CONTINUATION check_full128_reference_extension.py -->
+
+<!-- BEGIN D0 20261118 CONTINUATION expected_full128_reference_extension.json -->
+```json
+{
+  "D_AA_adjoint_zero_as_matrix": true,
+  "D_H_all128_decimal_diagnostic": "0.016215801771286695479388313137595090969813959695010",
+  "D_H_all128_exact": "27*p^2/25600 * (42*log(2)+16*log(3)-4*log(5))",
+  "D_I_DATA_CQ_decimal_diagnostic": "0.015936564118094158530180393058699074515803802699598",
+  "D_I_DATA_CQ_exact": "27*p^2/25600 * (41*log(2)+16*log(3)-4*log(5))",
+  "D_Lambda_zero_as_matrix": true,
+  "D_known_port_cost": "0",
+  "D_original_one_step_feedback": "0",
+  "D_reference_correction_decimal_diagnostic": "0.00027923765319253694920792007889601645401015699541138",
+  "D_reference_correction_if_complete_input_pure_exact": "27*p^2/25600 * log(2)",
+  "active_row_trace_jets": [
+    {
+      "Tr_DM": "-27/10",
+      "Tr_M": "324/25",
+      "j": 9
+    },
+    {
+      "Tr_DM": "3/40",
+      "Tr_M": "1/25",
+      "j": 13
+    },
+    {
+      "Tr_DM": "3/10",
+      "Tr_M": "9/40",
+      "j": 16
+    },
+    {
+      "Tr_DM": "3/10",
+      "Tr_M": "9/40",
+      "j": 20
+    },
+    {
+      "Tr_DM": "3/10",
+      "Tr_M": "27/200",
+      "j": 24
+    },
+    {
+      "Tr_DM": "3/10",
+      "Tr_M": "27/200",
+      "j": 28
+    },
+    {
+      "Tr_DM": "3/40",
+      "Tr_M": "1/25",
+      "j": 29
+    },
+    {
+      "Tr_DM": "3/40",
+      "Tr_M": "1/25",
+      "j": 45
+    },
+    {
+      "Tr_DM": "3/10",
+      "Tr_M": "9/40",
+      "j": 48
+    },
+    {
+      "Tr_DM": "3/10",
+      "Tr_M": "9/40",
+      "j": 52
+    },
+    {
+      "Tr_DM": "3/10",
+      "Tr_M": "27/200",
+      "j": 56
+    },
+    {
+      "Tr_DM": "3/10",
+      "Tr_M": "27/200",
+      "j": 60
+    },
+    {
+      "Tr_DM": "3/40",
+      "Tr_M": "1/25",
+      "j": 61
+    }
+  ],
+  "actual_tangent": "dC_0=c_0-c_1; dx_0=i*dC_0; all other legs fixed",
+  "all128_absolute_probability_normalization_verified": true,
+  "conditional_CQ_prime_log_coefficients_before_common_minus_factor": {
+    "2": "-123/10",
+    "3": "-24/5",
+    "5": "6/5"
+  },
+  "construction": "original CAR16/strict Julia/Walsh 64 rows and NT1 128 ports",
+  "fine_record_prime_log_coefficients_before_common_minus_factor": {
+    "2": "-63/5",
+    "3": "-24/5",
+    "5": "6/5"
+  },
+  "generated_inverse_Lambda_preparation_jet_zero": true,
+  "grouped_Tr_DM_log_M_coefficients": {
+    "1/100": "3/20",
+    "1/400": "3/20",
+    "27/3200": "6/5",
+    "81/100": "-27/10",
+    "9/640": "6/5"
+  },
+  "grouped_Tr_DM_log_TrM_coefficients": {
+    "1/25": "3/10",
+    "27/200": "6/5",
+    "324/25": "-27/10",
+    "9/40": "6/5"
+  },
+  "kappa": "9/640",
+  "nu": "3/5",
+  "p": "(sqrt(5)-1)/2",
+  "provenance": {
+    "Book03_snapshot_sha256": "07e8c97455a85e3589f94e3a3b96bb61e4fa9b3d05e2822392ca02e412541187",
+    "original_conditional_CQ_checker_sha256": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66",
+    "primary_snapshot_sha256": "3686f0b59a020a4e8c475e81a84cae237bb7b135cc442a4a1f8e04af33ed0d31"
+  },
+  "readings": {
+    "DATA_conditional_CQ": "D_I_DATA_CQ_exact",
+    "complete_joint_CQ_if_actual_complete_input_pure": "D_H_all128_exact",
+    "complete_joint_CQ_if_input_DATA_product_independent_reference": "D_I_DATA_CQ_exact",
+    "general_mixed_correlated_input": "joint minus DATA gain equals lost DATA/reference mutual information; derivative not fixed here",
+    "whole_coherent_entropy_gain": "identically zero by isometry; not a physical action"
+  },
+  "scope": {
+    "Book_Info_selected": false,
+    "GR_closed": false,
+    "complete_original_one_round_fine_record": true,
+    "formal_Lean_verification": false,
+    "free_purifying_preparation_claimed": false,
+    "full_stopped_history_entropy_computed": false,
+    "physical_C_closed": false,
+    "remaining_physical_ledger_compensation_proved": false
+  },
+  "status": "PASS_EXACT_FULL128_REFERENCE_EXTENSION",
+  "strict_positive_signs_verified_exactly": true,
+  "zero_support_projectors_checked": 47
+}
+```
+<!-- END D0 20261118 CONTINUATION expected_full128_reference_extension.json -->
+
+<!-- BEGIN D0 20261118 CONTINUATION doob_actual_mark.py -->
+```python
+"""Exact scalar-section control for the full coherent terminal Doob candidate.
+
+Research fixture, not a new D0 valuation or native implementation claim.
+The operator proof in quantum_doob_note.md covers rectangular isometries.
+"""
+import json
+from pathlib import Path
+import sympy as s
+
+q,z=s.symbols('q z',positive=True)
+a=1-z
+h=a+z*q
+q_doob=q/h
+checks={
+    'complete_isometry':s.simplify((q+a*(1-q))/h-1)==0,
+    'full_mark_shift':s.simplify(q_doob-q-z*q*(1-q)/h)==0,
+    'born_return_log_source':s.simplify(s.diff(-s.log(h),q)+z/h)==0,
+    'doob_return_derivative':s.simplify(s.diff(q_doob,q)-a/h**2)==0,
+    'mark_difference_factorization':s.simplify(q_doob-q-z*q*(1-q)/h)==0,
+}
+# The commutator norm is z sqrt(q(1-q)) for E=diag(1,a), P_V=V V*.
+V=s.Matrix([s.sqrt(q),s.sqrt(1-q)])
+E=s.diag(1,a)
+P=V*V.T
+K=E*P-P*E
+checks['nonreducing_range'] = s.simplify(K[0,1]-z*s.sqrt(q)*s.sqrt(1-q))==0
+checks['all_coherent_gram_retained'] = s.simplify((V.T*E*V)[0]-h)==0
+if not all(checks.values()):
+    raise RuntimeError({k:v for k,v in checks.items() if not v})
+result={'status':'PASS_ALGEBRA_ONLY','checks':checks,
+    'conclusion':'Canonical finite-horizon quantum Doob isometry exists, but it changes the original informative return mark on 0<q<1, 0<z<1. It is not same-history physical Cost-Info binding.'}
+output=json.dumps(result,indent=2)+'\n'
+Path(__file__).with_suffix('.json').write_text(output)
+print(output,end='')
+```
+<!-- END D0 20261118 CONTINUATION doob_actual_mark.py -->
+
+<!-- BEGIN D0 20261118 CONTINUATION expected_doob_actual_mark.json -->
+```json
+{
+  "status": "PASS_ALGEBRA_ONLY",
+  "checks": {
+    "complete_isometry": true,
+    "full_mark_shift": true,
+    "born_return_log_source": true,
+    "doob_return_derivative": true,
+    "mark_difference_factorization": true,
+    "nonreducing_range": true,
+    "all_coherent_gram_retained": true
+  },
+  "conclusion": "Canonical finite-horizon quantum Doob isometry exists, but it changes the original informative return mark on 0<q<1, 0<z<1. It is not same-history physical Cost-Info binding."
+}
+```
+<!-- END D0 20261118 CONTINUATION expected_doob_actual_mark.json -->
+
+<!-- BEGIN D0 20261118 CONTINUATION independent_curve_check.py -->
+```python
+"""Independent numerical finite-curve diagnostics for the reviewed exact jet.
+
+Diagnostics only: does not replace either exact proof or select a price.
+Uses real positive-root reconstruction, not the symbolic first-jet routines.
+"""
+from itertools import product
+import json
+import numpy as np
+
+N = 16
+unit = np.eye(N, dtype=complex)
+zero = np.zeros((N, N), dtype=complex)
+p = (np.sqrt(5) - 1) / 2
+nu = 3 / 5
+lam = 9 / 640
+order = (0, 2, 3, 1)
+creators = []
+for leg in range(4):
+    C = zero.copy()
+    earlier = order[:order.index(leg)]
+    for mask in range(N):
+        if mask & (1 << leg):
+            continue
+        C[mask | (1 << leg), mask] = (-1) ** sum((mask >> k) & 1 for k in earlier)
+    creators.append(C)
+
+def root(a):
+    vals, vecs = np.linalg.eigh((a + a.conj().T) / 2)
+    if vals.min() <= 0:
+        raise ArithmeticError("not in strict positive Julia chart")
+    return (vecs * np.sqrt(vals)) @ vecs.conj().T
+
+def entropy(a):
+    vals = np.linalg.eigvalsh((a + a.conj().T) / 2)
+    if vals.min() < -1e-12:
+        raise ArithmeticError("negative PSD eigenvalue")
+    vals = vals[vals > 1e-14]
+    return float(-sum(vals * np.log(vals)))
+
+def instrument(t):
+    packets = []
+    for leg, phase in enumerate((1j, 1j, -1, -1j)):
+        c = nu * creators[leg]
+        if leg == 0:
+            c = c + t * (creators[0] - creators[1])
+        x = phase * c
+        dl = root(unit - x @ x.conj().T)
+        dr = root(unit - x.conj().T @ x)
+        for pair in ((x, dl), (x.conj().T, dr), (-c, -dl), (-c.conj().T, -dr)):
+            packets.extend((pair, pair))
+    rows = []
+    for k in range(32):
+        for bit in (0, 1):
+            rows.append(sum(((-1)**((k & j).bit_count()) * packets[j][bit]
+                             for j in range(32)), zero.copy()) / 32)
+    A = rows[0]
+    Lambda = A.conj().T @ A
+    rinv = np.linalg.inv(Lambda)
+    rho = rinv / np.trace(rinv)
+    kraus = []
+    for j, row in enumerate(rows):
+        BA = row.conj().T @ A
+        kraus.extend(((unit if j == 0 else zero) - 2*p*p*BA,
+                      -2*p*np.sqrt(p)*BA))
+    if np.linalg.norm(sum((k.conj().T @ k for k in kraus), zero.copy()) - unit) > 1e-12:
+        raise ArithmeticError("original Kraus normalization")
+    blocks = [k @ rho @ k.conj().T for k in kraus]
+    probs = np.array([np.trace(b).real for b in blocks])
+    bright = probs[probs > 1e-14]
+    H = -sum(bright*np.log(bright))
+    data = sum(map(entropy, blocks)) - entropy(rho)
+    def adj(b, E):
+        return sum((k.conj().T @ E @ k for k in kraus[b::2]), zero.copy())
+    effects = {}
+    for length in (1, 2, 3):
+        for word in product((0, 1), repeat=length):
+            E = unit.copy()
+            for b in reversed(word):
+                E = adj(b, E)
+            effects[''.join(map(str, word))] = E
+    reader = p**3 * sum(probs[z] * (z//2).bit_count() for z in range(128))
+    return Lambda, rho, probs, H, data, effects, reader
+
+factor = 27*p*p/25600
+target_h = factor*(42*np.log(2)+16*np.log(3)-4*np.log(5))
+target_data = factor*(41*np.log(2)+16*np.log(3)-4*np.log(5))
+target_reader = 81*p**5/12800
+center = instrument(0)
+q = 4*p**3*lam
+center_error = max(np.linalg.norm(E-q**word.count('1')*(1-q)**word.count('0')*unit)
+                   for word,E in center[5].items())
+receipts = []
+for eps in (1e-3, 3e-4, 1e-4):
+    plus, minus = instrument(eps), instrument(-eps)
+    jets = [(plus[j]-minus[j])/(2*eps) for j in range(5)]
+    coarse_norm = max(np.linalg.norm((plus[5][w]-minus[5][w])/(2*eps)) for w in plus[5])
+    reader_jet = (plus[6]-minus[6])/(2*eps)
+    receipts.append(dict(eps=eps, dH=float(jets[3]), dIData=float(jets[4]),
+                         dReader=float(reader_jet), error_H=float(abs(jets[3]-target_h)),
+                         error_IData=float(abs(jets[4]-target_data)),
+                         error_reader=float(abs(reader_jet-target_reader)),
+                         lambda_jet_norm=float(np.linalg.norm(jets[0])),
+                         rho_jet_norm=float(np.linalg.norm(jets[1])),
+                         coarse_effect_jet_max_norm=float(coarse_norm)))
+if receipts[-1]['error_H'] > 2e-7 or receipts[-1]['error_IData'] > 2e-7:
+    raise ArithmeticError("finite-curve entropy diagnostic disagrees with exact jets")
+if receipts[-1]['coarse_effect_jet_max_norm'] > 1e-8:
+    raise ArithmeticError("finite-curve coarse-effect diagnostic disagrees")
+print(json.dumps(dict(status='PASS_NUMERICAL_DIAGNOSTIC', exact_claim=False,
+                      center_coarse_effect_error=float(center_error),
+                      target_H=float(target_h), target_IData=float(target_data),
+                      target_reader=float(target_reader), tests=receipts), indent=2))
+```
+<!-- END D0 20261118 CONTINUATION independent_curve_check.py -->
+
+<!-- BEGIN D0 20261118 CONTINUATION independent_curve_receipt.json -->
+```json
+{
+  "status": "PASS_NUMERICAL_DIAGNOSTIC",
+  "exact_claim": false,
+  "center_coarse_effect_error": 1.831091182983864e-15,
+  "target_H": 0.0162158017712867,
+  "target_IData": 0.01593656411809416,
+  "target_reader": 0.0005706066752896419,
+  "tests": [
+    {
+      "eps": 0.001,
+      "dH": 0.016215880107015024,
+      "dIData": 0.015936654246484494,
+      "dReader": 0.0005706099600660472,
+      "error_H": 7.833572832419144e-08,
+      "error_IData": 9.012839033428754e-08,
+      "error_reader": 3.284776405303863e-09,
+      "lambda_jet_norm": 1.9261735895946052e-15,
+      "rho_jet_norm": 1.4362082467439863e-14,
+      "coarse_effect_jet_max_norm": 7.711957992488937e-13
+    },
+    {
+      "eps": 0.0003,
+      "dH": 0.016215809345946724,
+      "dIData": 0.01593657300791307,
+      "dReader": 0.000570606970909382,
+      "error_H": 7.574660024212143e-09,
+      "error_IData": 8.88981890878604e-09,
+      "error_reader": 2.956197400587335e-10,
+      "lambda_jet_norm": 1.3099462971615184e-14,
+      "rho_jet_norm": 9.29358970840695e-14,
+      "coarse_effect_jet_max_norm": 2.8426811528139715e-12
+    },
+    {
+      "eps": 0.0001,
+      "dH": 0.016215802665642265,
+      "dIData": 0.01593656518972253,
+      "dReader": 0.000570606708107449,
+      "error_H": 8.943555653007085e-10,
+      "error_IData": 1.0716283693756878e-09,
+      "error_reader": 3.281780706562709e-11,
+      "lambda_jet_norm": 1.9108335462750405e-14,
+      "rho_jet_norm": 7.788605830537844e-14,
+      "coarse_effect_jet_max_norm": 4.300253235967531e-12
+    }
+  ]
+}
+```
+<!-- END D0 20261118 CONTINUATION independent_curve_receipt.json -->
