@@ -1,0 +1,23 @@
+{
+  "original_scene": "K(9,11,13)",
+  "context_states": 718,
+  "context_arcs": 15708,
+  "unseen_in_any_old_2_or_3_cycle": 7268,
+  "old_cycle_rank_before_bin_normalization": 2933,
+  "old_cycle_rank_after_bin_normalization": 2932,
+  "remaining_old_modes_modulo_context_endpoint_gauge": 12059,
+  "new_equal_length_rank": 14990,
+  "base_root_context": [
+    0,
+    9
+  ],
+  "maximum_unpadded_route": 7,
+  "all_primary_padded_words_have_length": 9,
+  "Q8_single_class_safe_replayed_length": 36,
+  "exact_reconstruction_checked_on_arcs": 15708,
+  "reconstructed_integer_witness_sha256": "fbf22239564c925bddb9babbc1d0de6ec2dc35d7dffd772b6b3d31de0a15e6cc",
+  "A68_shared_macro_body_ratio_checked": true,
+  "physical_scene_to_H1_context_binding_closed": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}
