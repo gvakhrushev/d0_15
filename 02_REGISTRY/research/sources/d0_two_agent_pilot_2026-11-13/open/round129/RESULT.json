@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "primary_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+  "primary_checker_sha256": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66",
+  "quiet_stop_leaf_probability_jet_zero": true,
+  "coarse_readout_grouped_effect_and_identity_output_jets_zero": true,
+  "even_warmup_label_18_probability_jet": "-27*p^4*lambda/40",
+  "fine_label_rates_times_631": {
+    "9": -108,
+    "13": 3,
+    "16": 12,
+    "20": 12,
+    "24": 12,
+    "28": 12,
+    "29": 3,
+    "45": 3,
+    "48": 12,
+    "52": 12,
+    "56": 12,
+    "60": 12,
+    "61": 3
+  },
+  "immediate_stop_log_probability_jets": {
+    "0": "0",
+    "18": "-5/24",
+    "32": "4/3"
+  },
+  "six_address_bit_rates_times_631": [
+    -96,
+    0,
+    60,
+    -48,
+    102,
+    54
+  ],
+  "fixed_tariff_coefficient_strict_upper": "147/40000",
+  "book03_actual_info_selected": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

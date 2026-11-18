@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "primary_commit": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "primary_checker_sha256": "561dfba7503c86b2fdf20e121be44681ac98d9ca9759d59150cc1e864b0fb03b",
+  "native_gate_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "one_direction_predicate_inventory": {
+    "G": 5888,
+    "CX": 4096,
+    "SourceI": 8192
+  },
+  "both_direction_report_controls_y_plus_y_minus_f_ref_x_plus_x_minus_q": [
+    256,
+    256,
+    1024,
+    2048,
+    256,
+    256,
+    1024
+  ],
+  "matched_f_and_reference_controls": [
+    1024,
+    1024
+  ],
+  "same_registered_outcome_occupation_slope_in_q": "A*B/(A*q+B*(1-q))^2",
+  "n1_nonnegative_info_minimum_total_sibling_gap": {
+    "1": [
+      "27.42997215",
+      "27.42997217"
+    ],
+    "2": [
+      "13.71495876",
+      "13.71495877"
+    ]
+  },
+  "book03_occupation_price_selected": false,
+  "physical_C_closed": false,
+  "GR_closed": false
+}

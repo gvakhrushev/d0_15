@@ -1,0 +1,237 @@
+{
+  "round": "A70",
+  "base_direct": "d1ec1b35f42f28dd259dbe535851381ae95cb8af",
+  "primary_pr334": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "source_open": {
+    "B128": "a0d86672bd2e573890d88782e293c43d7e971da4",
+    "B129": "2389afe4ee403b8eb68ef9a669581f548d96d70d",
+    "B130": "9292319e90445c4530c4c2659301898acfe621fe",
+    "B131": "2735c921d39627609045000af43c1cbcdcc31e61",
+    "B132": "edbc6f9b6c12e01f5b7b9a2f896dc7da2ad6c653"
+  },
+  "replay_note": "B129 and B131 use portable hash-verified scientific inputs already present here. Portable document links were corrected in B129, B131 and B132. All five open stdout receipts are reproduced byte for byte.",
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "lanes": [
+    {
+      "id": "arbitrary_quantum_reference_and_paid_warmup",
+      "check": "direct/round70/reference/check_arbitrary_memory.py",
+      "result": "Общий положительный отклик для любой пассивной памяти, движущиеся приготовления и одна фактическая подготовительная попытка с полной записью.",
+      "open": "Физический выбор информационной оценки и дополнительной работы на том же исполнении.",
+      "evidence": {
+        "direct/round70/reference/check_arbitrary_memory.py": "55a5beb288605e7ea30c0e00032b084c33d1e7875e508c88ca2294cef28c225f",
+        "direct/round70/reference/ARBITRARY_MEMORY_RU.md": "62e0e7024d7144b0ec3fe03f250e521237622951061383d8838fc8c4750395fa",
+        "direct/round70/READOUT_RU.md": "eaa43eb6c65c88625b40392b335a103688a89b62d2fda0345db8ee1c913cdbab",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425",
+        "direct/round69/stopped/check_stopped_response.py": "7fb547ce4c5048c5b6b0bd9f760647eef4038508027c59b39e560940317e60d1"
+      }
+    },
+    {
+      "id": "full_stop_reader_and_adaptive_work",
+      "check": "direct/round70/charges/check_stopped_reader.py",
+      "result": "Полностью начисленные шесть адресных указателей, точные отклики первых двух активных меток и предел размеченной адаптивной доплаты.",
+      "open": "Первичная величина и возможное движение тарифов для самого исполнителя.",
+      "evidence": {
+        "direct/round70/charges/check_stopped_reader.py": "6332d0a574743c8069818acd98e1d8aae70ca5f7f87cbc6c7525f3b11ad0e126",
+        "direct/round70/charges/STOPPED_READER_AND_WORK_RU.md": "9846cf82f4f8aa3c4b19bb9f4f441ebd18d4d2ce9135cfd054f10dc2ae93c733",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425"
+      }
+    },
+    {
+      "id": "registered_archive_separating_response",
+      "check": "direct/round70/archive/check_archive_match.py",
+      "result": "Полная вероятность сопоставления двух физических архивов и непараллельность двух измеряемых цен при независимом изменении эталона.",
+      "open": "Определить реальный выбор первичной цены и оплату запуска эталона.",
+      "evidence": {
+        "direct/round70/archive/check_archive_match.py": "b030590f116f6bca5966a97d81230fc597072c1e901572c82b9de8e5fab6c6f2",
+        "direct/round70/archive/GOLDEN_ARCHIVE_MATCH_RU.md": "35c6f75b7b0582a80c0c10b218aab8cbd2963cc0c301c1e6100d41f8c27cde1d",
+        "direct/round70/archive/CONTROL_DETERMINANT_RU.md": "5a78154c6b17be02b75299e23b3a51edab24f7a636317bb5cbf518ba19036313",
+        "direct/round69/primary/check_stopped_fine.py": "e76141a6ec96bf7e534da8ef3561688c2b1987650f07a154ae2d1ce7e93c0b1f",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425"
+      }
+    },
+    {
+      "id": "flat_vacuum_source_and_address_constraints",
+      "check": "direct/round70/equations/check_flat_site_source.py",
+      "result": "Плоский корень геометрии и независимые условия на адресную кодовую цену, сохраняющийся при уточнении отклик.",
+      "open": "Первичная оплата и погрешность переноса полного скомпилированного источника.",
+      "evidence": {
+        "direct/round70/equations/check_flat_site_source.py": "bfe419cab9a0bf9336fac6568cbeb485b0cba4d92a1ad9a4a0c3ad7ac3bdf7a4",
+        "direct/round70/equations/FLAT_SITE_SOURCE_RU.md": "27b5769452678610992cc55de6ebe83145e494014d71493f0fae4d06cb4cfa5f"
+      }
+    },
+    {
+      "id": "primary_clock_alias_and_preparer_source",
+      "check": "open/round128/check_preparer_source.py",
+      "result": "Точный конфликт адресов исходного 16-тактового переключателя и операторный отклик приготовления.",
+      "open": "Физическое расширение расписания и его абсолютная цена.",
+      "evidence": {
+        "open/round128/check_preparer_source.py": "48b1e76174c9b9d97e1ffc57f25e64eb53a156385c6370ee748ab41c5a782411",
+        "open/round128/B128_BOOK03_PREPARER_SOURCE_TEST_RU.md": "38467b9653972127d823555a137486efcb415ae964f7501a1af32257b59c1e4c",
+        "open/round122/check_preparer_crossover.py": "a50cf30fe862d406d4d87f9a008424d51381214da6e24a0154c06cd1ad227963",
+        "open/round128/RESULT.json": "bb7a0a4f155809b6198aa662d9207ae5de685795cc63c4f6bbe479f22886f271"
+      },
+      "stdout_matches": "open/round128/RESULT.json"
+    },
+    {
+      "id": "car16_native_per_mark_charges",
+      "check": "open/round129/check_car_stop_price.py",
+      "result": "Фиксированные тарифы на неразбавленном CAR16 и три листовых логарифмических отклика.",
+      "open": "Выбор физического полистового тарифа и информации.",
+      "evidence": {
+        "open/round129/check_car_stop_price.py": "73ce5d371e0ad50f407d7d27b426d0850d02e7f1663159a10b81fa0a708e7403",
+        "open/round129/B129_CAR16_STOP_PRICE_SUPPORT_RU.md": "a70d74de983a6ccfb0fa1794e1b23fbdb8bf6a66a81dd5a640762256ae7e792c",
+        "direct/round69/primary/check_stopped_fine.py": "e76141a6ec96bf7e534da8ef3561688c2b1987650f07a154ae2d1ce7e93c0b1f",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425",
+        "open/round129/RESULT.json": "d2f87d80f6160ca680085716f032df4fc2bf6e3983beca73e2c4a3e8f17aad9c"
+      },
+      "stdout_matches": "open/round129/RESULT.json"
+    },
+    {
+      "id": "same_CAR_cap_jensen_source",
+      "check": "open/round130/check_shared_prefix_cap.py",
+      "result": "Контраст двух оплаченных сроков с общей первой попыткой и алгебраическим движением истинных маргиналов.",
+      "open": "Идентифицировать начисления на прошлом и при закрытии.",
+      "evidence": {
+        "open/round130/check_shared_prefix_cap.py": "4ee4fe68f8a2bfd09651da6f256f467028eb9e31cfadc1d14d140b9ca8752b76",
+        "open/round130/B130_SHARED_PREFIX_CAP_SOURCE_RU.md": "b6a5574b7b8e8cbf64ad98d4e4addd69dc0acf548a5dc62eaae7b3c40bd57819",
+        "open/round129/check_car_stop_price.py": "73ce5d371e0ad50f407d7d27b426d0850d02e7f1663159a10b81fa0a708e7403",
+        "direct/round69/primary/check_stopped_fine.py": "e76141a6ec96bf7e534da8ef3561688c2b1987650f07a154ae2d1ce7e93c0b1f",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425",
+        "open/round130/RESULT.json": "cbc68b099ed0f10d8eee5792ad7a67249d2d7e1c52839c3ca01fdb4de48ccc71"
+      },
+      "stdout_matches": "open/round130/RESULT.json"
+    },
+    {
+      "id": "primary_flat_occupation_source",
+      "check": "open/round131/check_inner_work.py",
+      "result": "Прямой счёт актов READY–REPORT даёт геометрический источник при однородном начислении на нулевом листе.",
+      "open": "Установить реальную ставку Book03 и допуск. На искривлённой геометрии требуется оценка остатка.",
+      "evidence": {
+        "open/round131/check_inner_work.py": "045fd4ec41ce39747fc8f419c8373690d950e2783e033bd4d69d3d79f5190ca2",
+        "open/round131/B131_N1_H1_INNER_WORK_RU.md": "15b43cfa9a872f432f38049b2a70df79c8bcda49319d60b6fcf26db4b293e34d",
+        "open/round131/RESULT.json": "ef686fd52346dfd826844997c2cd36750f2502eea515b83ac8f017ad102b1ae4"
+      },
+      "stdout_matches": "open/round131/RESULT.json"
+    },
+    {
+      "id": "exact_cap_price_arithmetic",
+      "check": "direct/round70/arithmetic/check_cap_logarithms.py",
+      "result": "Точный запрет алгебраической компенсации даже при изменениях относительной ранней цены заявленного класса.",
+      "open": "Логарифмическая, тепловая или предельная фактическая плата и физический выбор размера информации.",
+      "evidence": {
+        "direct/round70/arithmetic/check_cap_logarithms.py": "493e863884aa44a5bfea508e27225216538c6ce0fb19fe0637724d2ed7823406",
+        "direct/round70/arithmetic/EXACT_CAP_PRICE_RU.md": "27cbb11dd49e2c4248338d077c0cba5301fa2b1a501eb303efc1ec9c8355b65d",
+        "open/round130/RESULT.json": "cbc68b099ed0f10d8eee5792ad7a67249d2d7e1c52839c3ca01fdb4de48ccc71"
+      }
+    },
+    {
+      "id": "two_genuine_coframe_directions",
+      "check": "direct/round70/arithmetic/coframe/check_coframe_gap.py",
+      "result": "На двух настоящих направлениях поля запрещена любая общая перенормировка алгебраического ковектора.",
+      "open": "Допуск полного физического носителя, выбор фактических платежей и вывод предельных уравнений.",
+      "evidence": {
+        "direct/round70/arithmetic/coframe/check_coframe_gap.py": "615bef46376638e6f554eab531b81df2c8ca395b784ec8cefc1546d25d3e9629",
+        "direct/round70/arithmetic/coframe/TWO_COFRAME_DIRECTIONS_RU.md": "7d46a4591ba70535f792f4b0c404c68f9ce48dcd73498b49115ced9440ecdb8e",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425"
+      }
+    },
+    {
+      "id": "paid_finite_retries_and_absolute_amortization",
+      "check": "direct/round70/absolute/check_retry_amortization.py",
+      "result": "Движущуюся готовность можно подавить оплаченными попытками, а разовое приготовление — фактической повторной печатью.",
+      "open": "Допуск этих семейств и реальный ненулевой тариф за копию, контроль прочих вкладов порядка числа повторов.",
+      "evidence": {
+        "direct/round70/absolute/PAID_RETRIES_AND_REPEATED_OUTPUT_RU.md": "f7165b6d0a99633fc19cf48fd1394b88aa6629a6d8beffc5c171df1bf68683ab",
+        "direct/round70/absolute/ONE_OUTPUT_EQUATIONS_RU.md": "c9064fd59aa5935747d50abeb585ed77a3cabbed49c2c07f4a2498a6be5d0b52",
+        "direct/round70/coding/REPEATED_WRITER_RU.md": "d1d096c08db4dceba68eb944a4cc34f2ecba93f80980296b3153fb24bc90ef1e",
+        "direct/round70/absolute/check_retry_amortization.py": "875532229c052f67812403ca6f3790afc1603a1f08442c0ec3a8d4a7c974f030"
+      }
+    },
+    {
+      "id": "absolute_one_output_all_field_equations",
+      "check": "direct/round70/absolute/check_threshold_price.py",
+      "result": "Абсолютная цена единственного выхода за вычетом терминальной информации даёт те же стационарные поля на регулярной карте.",
+      "open": "Допуск изменённого терминала, полная цена банка, физических часов и восстановление на полных физических исторических вариациях.",
+      "evidence": {
+        "direct/round70/absolute/ONE_OUTPUT_EQUATIONS_RU.md": "c9064fd59aa5935747d50abeb585ed77a3cabbed49c2c07f4a2498a6be5d0b52",
+        "direct/round70/extraction/EIGHT_SCALE_SOURCE_RU.md": "3938283aacf1c0f4a8ce57ba3d29ac086de63e2ae9d742d9e2e9d367f59271fa",
+        "direct/round70/extraction/check_eight_scales.py": "380606a25722706601bcfc65a3a4d33c5f8d554323127dbfdebc7c6a46f02752",
+        "direct/round70/ABSOLUTE_SOURCE_RU.md": "e9c875829bfc9d88310b558ba11244f309e8ce7769d4210dd79789a9f78d658a",
+        "direct/round70/absolute/check_threshold_price.py": "e61e8b708e240303b5afd5ec440929cc203bca2ff4fbb491c0c8c025fedd020f"
+      }
+    },
+    {
+      "id": "curved_full_field_occupation",
+      "check": "direct/round70/curved/check_curved_occupation.py",
+      "result": "Одно наблюдение на искривлённой геометрии и оценка погрешности во всех 42 компонентах.",
+      "open": "Оплата наблюдаемого населённого сектора и допуск физического подъёма.",
+      "evidence": {
+        "direct/round70/curved/CURVED_OCCUPATION_RU.md": "e279acf02a04d01122625c5624ef7c6a8e2cf0ccdb9ec3c8368c11bddbf7b588",
+        "open/round131/check_inner_work.py": "045fd4ec41ce39747fc8f419c8373690d950e2783e033bd4d69d3d79f5190ca2",
+        "direct/round70/curved/check_curved_occupation.py": "c1c8765a4da83a8861125c7c589d358dd1c526befc994e7f1725de0aa37ff427"
+      }
+    },
+    {
+      "id": "finite_eight_scale_geometric_action",
+      "check": "direct/round70/extraction/check_eight_scales.py",
+      "result": "Точное конечное действие и совпадение стационарных полей двух геометрических функционалов на регулярной карте.",
+      "open": "Абсолютная цена и допуск зарегистрированного восьмикратного протокола со всеми физическими затратами.",
+      "evidence": {
+        "direct/round70/extraction/EIGHT_SCALE_SOURCE_RU.md": "3938283aacf1c0f4a8ce57ba3d29ac086de63e2ae9d742d9e2e9d367f59271fa",
+        "direct/round70/ABSOLUTE_SOURCE_RU.md": "e9c875829bfc9d88310b558ba11244f309e8ce7769d4210dd79789a9f78d658a",
+        "direct/round70/curved/check_curved_occupation.py": "c1c8765a4da83a8861125c7c589d358dd1c526befc994e7f1725de0aa37ff427",
+        "open/round131/RESULT.json": "ef686fd52346dfd826844997c2cd36750f2502eea515b83ac8f017ad102b1ae4",
+        "direct/round70/extraction/check_eight_scales.py": "380606a25722706601bcfc65a3a4d33c5f8d554323127dbfdebc7c6a46f02752"
+      }
+    },
+    {
+      "id": "cap_code_both_field_directions",
+      "check": "direct/round70/coding/check_cap_coding.py",
+      "result": "Единый код приближает две вариации действительной энтропии на полном дереве исходов.",
+      "open": "Реальные копии, цена кодера и сходимость всей физической схемы.",
+      "evidence": {
+        "direct/round70/coding/CAP_TYPE_CODE_RU.md": "7de2a100b663b90093a7434afc4492d58c7e8ccfd4c63b875027885d393e1d42",
+        "direct/round70/coding/golden_type_code.py": "8fcc18b1ba04040703d1889ba184c78e8ec93dd5914612bb578e122497f6a023",
+        "direct/round70/arithmetic/coframe/check_coframe_gap.py": "615bef46376638e6f554eab531b81df2c8ca395b784ec8cefc1546d25d3e9629",
+        "direct/round69/stopped/primary_section_7gb.py": "f86744a85a61d5ce3aa44b1cf4dfc049b586ad6aef1d9500a41382f242f0c425",
+        "direct/round70/coding/check_cap_coding.py": "9d28863d73c7448840426be9feb45c8222caaa4029af839b0e61b78a202a68a8"
+      }
+    },
+    {
+      "id": "golden_code_real_alphabet",
+      "check": "direct/round70/coding/golden_type_code.py",
+      "result": "Границы префиксного кода и конкретный код для всех 528576 допустимых адресных обозначений.",
+      "open": "Физическая реализация кодера и его длительность.",
+      "evidence": {
+        "direct/round70/coding/CAP_TYPE_CODE_RU.md": "7de2a100b663b90093a7434afc4492d58c7e8ccfd4c63b875027885d393e1d42",
+        "direct/round70/coding/golden_type_code.py": "8fcc18b1ba04040703d1889ba184c78e8ec93dd5914612bb578e122497f6a023",
+        "direct/round70/coding/REPEATED_WRITER_RU.md": "d1d096c08db4dceba68eb944a4cc34f2ecba93f80980296b3153fb24bc90ef1e"
+      }
+    },
+    {
+      "id": "weak_registered_occupation_price",
+      "check": "direct/round70/pointer/check_weak_pointer.py",
+      "result": "Точная цена двух вариантов записи заселённости, нарушение старого канала второго порядка.",
+      "open": "Остаточная работа, физическая информация и усиление при полном восстановлении.",
+      "evidence": {
+        "direct/round70/pointer/WEAK_H1_CODE_RU.md": "9275f7db299d9f6f77170ea05c1cfea1038f7509031723817c06c055e338b826",
+        "open/round131/check_inner_work.py": "045fd4ec41ce39747fc8f419c8373690d950e2783e033bd4d69d3d79f5190ca2",
+        "open/round131/RESULT.json": "ef686fd52346dfd826844997c2cd36750f2502eea515b83ac8f017ad102b1ae4",
+        "direct/round70/pointer/check_weak_pointer.py": "faf7c287cbc22943d9d71de8cd89e50d877d314e54647b7ce5eaf8c0b91d0dcd"
+      }
+    },
+    {
+      "id": "paired_report_price_and_return",
+      "check": "open/round132/check_paired_activation_reader.py",
+      "result": "Положительный отклик оплаченного кода с информацией на нулевом листе и точный дефект холодного возврата.",
+      "open": "Абсолютная стоимость команд и полного журнала в Book03.",
+      "evidence": {
+        "open/round132/B132_PAID_PAIRED_ACTIVATION_READER_RU.md": "c553de488bc5d4fc41f775edc47c50114060d7b66ce4a2c12facaa6228340eb0",
+        "open/round132/check_paired_activation_reader.py": "39b59d515304f3be7d548b4b0896fbfb1f071e19b0ca73ab2fe770390e80e0b3",
+        "open/round132/RESULT.json": "85c24424565de8323171ffa385f19b4110a923fc57c7bb5bf3423d7ddbeff078"
+      },
+      "stdout_matches": "open/round132/RESULT.json"
+    }
+  ]
+}
