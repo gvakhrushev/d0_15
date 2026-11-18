@@ -1,0 +1,135 @@
+{
+  "round": "A71",
+  "base_direct": "dbd0d2c4c4cb92b1e4362737a6cd34bde32e08d4",
+  "primary_pr334": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "source_open": {
+    "B133": "669af57b909a980ef7783365c6aafb4df1df228c",
+    "B134": "d70e191212d41f983d3165964daf26a2e277bbe6",
+    "B135": "e5b547403ddecfd5d32049734496233b48d2a525"
+  },
+  "replay_note": "Open scientific code and receipts copied from these commits. Document links made portable. Full mathematical proofs and hypotheses accompany the finite checks.",
+  "physical_C_closed": false,
+  "GR_closed": false,
+  "lanes": [
+    {
+      "id": "original_ser_phase_hidden_price",
+      "check": "direct/round71/original/check_original_serial_phase.py",
+      "result": "Одинаковые исходные CP-ветви, разная полная H+J; когерентный эталон точно измеряет скрытую разность J и исключает двухтарифную модель на трёх входах.",
+      "open": "Физический выбор когерентного эталона и абсолютной оплаты.",
+      "evidence": {
+        "direct/round71/original/check_original_serial_phase.py": "585a0a30d5a2d409d68e55e98cecbdaafb35c8951c6fb3fcfc8599ddb5461975",
+        "direct/round71/original/ORIGINAL_SERIAL_PRICE_RU.md": "38c4f24821106343c045eba8790d354a4c62a6bc90d00d4be8051e7ef3b0df7c",
+        "direct/round71/READOUT_RU.md": "01cbf84410b24363732a739a777e94eae8f605208aef37c1802b2bedd3e0b996",
+        "direct/round71/clock/GROWING_PRICE_RU.md": "830f47861eabbe4b704dda93b094186f9d17b48bc9cf182f47dc9a67b47a8b22"
+      }
+    },
+    {
+      "id": "one_echo_cold_and_output",
+      "check": "direct/round71/echo/check_common_echo.py",
+      "result": "Один нативный указатель связывает всю терминальную информацию и полный холодный возврат; старый отчёт можно сохранить отдельным исполнением.",
+      "open": "Допуск расширения, полный растущий час, подготовка.",
+      "evidence": {
+        "direct/round71/echo/check_common_echo.py": "b89a03d0fbd95f34012e4181149d7a28fef406a106a2eddf3d3a58ed433181e2",
+        "direct/round71/echo/COMMON_ECHO_RU.md": "9d57a18458a256ca8d06f858081f31a325d9d208ea456d1559559e3073d6751e",
+        "direct/round71/echo/TRUTHFUL_EXTENSION_RU.md": "cd6c8da8dd88db397f9b4b13db56e90e6faa0f1bc54f13de826f1ac6564f5792",
+        "direct/round70/absolute/ONE_OUTPUT_EQUATIONS_RU.md": "c9064fd59aa5935747d50abeb585ed77a3cabbed49c2c07f4a2498a6be5d0b52"
+      }
+    },
+    {
+      "id": "free_and_calibrated_reverse_minimum",
+      "check": "direct/round71/echo/check_reverse_minimum.py",
+      "result": "Точный минимум обратной сборки при одном среднем показании и явный свободный оптимум; конечный разделяющий нативный тест.",
+      "open": "Физический класс обратных управлений и полный тепловой бюджет.",
+      "evidence": {
+        "direct/round71/echo/check_reverse_minimum.py": "530616d6912f50bf8b6090269a410b0e7d0fe88ef35eebe92e7b2806589ab16c",
+        "direct/round71/echo/POLAR_REVERSE_RU.md": "d9d176e6613e283791894fd0e192d3683925feb15cdc39666165ed7ba10fd68b",
+        "direct/round71/echo/COMMON_ECHO_RU.md": "9d57a18458a256ca8d06f858081f31a325d9d208ea456d1559559e3073d6751e",
+        "open/round135/RESULT.json": "e2dfc100dc056129894c03000855a3961f03e3df23af859a1af6eb7fdb1f27f6"
+      }
+    },
+    {
+      "id": "full_clock_distinguishes_equal_instruments",
+      "check": "direct/round71/clock/check_chronology.py",
+      "result": "Действительная смена предпочтительного расписания и границы тепловой вариации на растущем графе.",
+      "open": "Почему выбранный порядок требуется исходной задачей.",
+      "evidence": {
+        "direct/round71/clock/check_chronology.py": "a0b68b237b462bbb3e6f32e4f2b279cf1c1ace5efc1baca0d65ba23101e8fe79",
+        "direct/round71/clock/GROWING_PRICE_RU.md": "830f47861eabbe4b704dda93b094186f9d17b48bc9cf182f47dc9a67b47a8b22",
+        "direct/round69/clock/check_early_heat.py": "1082204cdeb3fe29d8f764d5bc9579cc9d7559dd35b93113b2b08d403c807f89",
+        "direct/round69/clock/check_exact_return.py": "ee10873b1796fc62e74c6c899cbd647f981571c6df8e16612bdfb3391418b8b8"
+      }
+    },
+    {
+      "id": "optimal_single_golden_terminal_price",
+      "check": "direct/round71/tariff/check_minimum.py",
+      "result": "Минимальный полный префиксный код, возможные оплаты длинных записей и зависимость от чётности.",
+      "open": "Цена реальных внутренних переходов и предыстории.",
+      "evidence": {
+        "direct/round71/tariff/check_minimum.py": "1b84c350a9dd918423aeb016ec4a425cf33e1ff26e70c982a19613e63ce266e0",
+        "direct/round71/tariff/MINIMUM_OUTPUT_RU.md": "925cdf10aa7f02a0984c0e24a6abab4d874f4e19fca434031ddac291e7a1f58d",
+        "direct/round70/extraction/check_eight_scales.py": "380606a25722706601bcfc65a3a4d33c5f8d554323127dbfdebc7c6a46f02752"
+      }
+    },
+    {
+      "id": "diagonal_root_independent_packages",
+      "check": "direct/round71/recovery/check_recovery.py",
+      "result": "Оплачиваемая симметризация решает относительные уравнения шестнадцати полевых пакетов; явный невакуумный источник и предел восстановления.",
+      "open": "Физическая оплата симметризации, независимые реакции и правый подъём.",
+      "evidence": {
+        "direct/round71/recovery/check_recovery.py": "3b174daf7ebd9ea09437e25061967d89e823b906dd7ed7c3defe839ab5b2913d",
+        "direct/round71/recovery/ROOT_LIFT_RU.md": "f0428a10559e98851f5af93c55b9dfa7d01c04be0df51eefba77394de922513b",
+        "direct/round70/absolute/ONE_OUTPUT_EQUATIONS_RU.md": "c9064fd59aa5935747d50abeb585ed77a3cabbed49c2c07f4a2498a6be5d0b52"
+      }
+    },
+    {
+      "id": "original_reference_source_with_past",
+      "check": "direct/round71/original/check_reference_source.py",
+      "result": "Нулевая ошибка эталона в одной точке выравнивает все первые вариации J в защищённой фазовой семье. Положительный геометрический источник и явная реакция прошлой памяти.",
+      "open": "Физический допуск эталона, тепловой источник, цена рёбер и старое спектральное движение.",
+      "evidence": {
+        "direct/round71/original/check_reference_source.py": "735ad046a03cfe69666b6559d54aee157186dc075c7f2ac93f5bf4d697090b8b",
+        "direct/round71/original/REFERENCE_SOURCE_RU.md": "7879ec63813f57b877bdbd043348a81a0afe9c0613690c5c8645df939699a98f",
+        "direct/round71/original/ORIGINAL_SERIAL_PRICE_RU.md": "38c4f24821106343c045eba8790d354a4c62a6bc90d00d4be8051e7ef3b0df7c",
+        "direct/round71/READOUT_RU.md": "01cbf84410b24363732a739a777e94eae8f605208aef37c1802b2bedd3e0b996"
+      }
+    },
+    {
+      "id": "open_mirrored_old_return",
+      "check": "open/round133/check_mirror_recovery.py",
+      "result": "Сохранение старого полного канала на отмеченных совпавших двух указателях.",
+      "open": "Точный вес отбора и цена остальных ветвей.",
+      "evidence": {
+        "open/round133/check_mirror_recovery.py": "7680f2612484f609580de39f573ad8bc5e3fff51b4da7070b026263ce6cc0b68",
+        "open/round133/B133_MIRRORED_READOUT_RECOVERY_RU.md": "9d2e0a83ae9ef80d71e9c28509f628c4032b357a798e87ba672f9c8a5ea1362f",
+        "open/round132/check_paired_activation_reader.py": "39b59d515304f3be7d548b4b0896fbfb1f071e19b0ca73ab2fe770390e80e0b3",
+        "open/round133/RESULT.json": "a9792aeae1030472c7f40803030d8b9bec98a81ae035aa50ad849ecba943d103"
+      },
+      "stdout_matches": "open/round133/RESULT.json"
+    },
+    {
+      "id": "open_native_slater_full_feedback",
+      "check": "open/round134/check_native_slater_feedback.py",
+      "result": "Антисимметричный исходный банк и физическое измерение детерминанта без управляемой копии поля.",
+      "open": "Выбор старого среза и цена его регенерации.",
+      "evidence": {
+        "open/round134/check_native_slater_feedback.py": "89c1431421d8e2869307bfbf4db0b7a64249f0db9bc7172e7910005a70a371c7",
+        "open/round134/B134_NATIVE_SLATER_FEEDBACK_RU.md": "4ca631df39ac5c036126e3143acfda311cc8e4efdcc1b39d5403deff8d2bc91b",
+        "open/round132/check_paired_activation_reader.py": "39b59d515304f3be7d548b4b0896fbfb1f071e19b0ca73ab2fe770390e80e0b3",
+        "open/round134/RESULT.json": "d37a24a33d3e1683100db944414102a9de632ded1b0f6af794ab57ac092e04d2"
+      },
+      "stdout_matches": "open/round134/RESULT.json"
+    },
+    {
+      "id": "open_original_truthful_vs_threshold",
+      "check": "open/round135/check_threshold_admission.py",
+      "result": "Нативное считывание нового порога, ошибка единица при подмене старого события и закон оплаты детерминированных копий.",
+      "open": "Действительное правило конечной физической стоимости.",
+      "evidence": {
+        "open/round135/check_threshold_admission.py": "25d8465fd9a0a595b17c693dd5217390124b09eb08889109e2a13ed9d35ce1f2",
+        "open/round135/B135_THRESHOLD_ADMISSION_AND_SERIAL_PRICE_RU.md": "cf38ae74e4a9218accf6ca4ce718dcf166b7c9a758d4b3717583fa185d621852",
+        "open/round135/RESULT.json": "e2dfc100dc056129894c03000855a3961f03e3df23af859a1af6eb7fdb1f27f6"
+      },
+      "stdout_matches": "open/round135/RESULT.json"
+    }
+  ]
+}

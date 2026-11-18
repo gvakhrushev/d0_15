@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "threshold_literal_controls": 88,
+  "threshold_native_positive_power_multiplier": 15,
+  "threshold_readout_probability_bounds": [
+    "0.998511",
+    "0.998513"
+  ],
+  "readiness_literal_controls": 40,
+  "readiness_readout_probability_bounds": [
+    "0.05502",
+    "0.05503"
+  ],
+  "conditional_report_lower_than_one_and_greater_than_p": true,
+  "minimum_ideal_conditional_report": "329963/524288",
+  "nonnegative_Info_maximum_total_late_gap_at_thinned_null_centre": {
+    "1": [
+      "-0.74",
+      "-0.70"
+    ],
+    "2": [
+      "0.40",
+      "0.44"
+    ]
+  },
+  "old_original_truthful_report_on_all_columns_selected": false,
+  "book03_full_work_or_info_selected": false,
+  "GR_closed": false
+}
