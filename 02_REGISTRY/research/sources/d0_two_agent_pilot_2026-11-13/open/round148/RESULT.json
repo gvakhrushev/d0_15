@@ -1,0 +1,35 @@
+{
+  "GR_closed": false,
+  "old_Info_preserved_with_independent_complete_price": true,
+  "new_terminal_Info_strict_lower_bound_near_center": "7/40",
+  "actual_full_factory_tariff_admitted": false,
+  "physical_kernel_compatibility_proved": false,
+  "nonzero_mode_inverse_times_calibration_error_order": "h^4",
+  "proof_controls": {
+    "4": {
+      "calibrated_beta": "1/65536",
+      "ideal_complete_repetitions": 65536,
+      "extra_fair_checks_for_spectral_bound": 32,
+      "cyclotomic_spectral_test_norm": "256"
+    },
+    "8": {
+      "calibrated_beta": "1/4194304",
+      "ideal_complete_repetitions": 4194304,
+      "extra_fair_checks_for_spectral_bound": 64,
+      "cyclotomic_spectral_test_norm": "65536"
+    },
+    "16": {
+      "calibrated_beta": "1/268435456",
+      "ideal_complete_repetitions": 268435456,
+      "extra_fair_checks_for_spectral_bound": 128,
+      "cyclotomic_spectral_test_norm": "4294967296"
+    }
+  },
+  "source_sha256": {
+    "A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md": "6c4d8e175a2bc23ea2f6995fa111897b73ce07ed45e3ce19041bacaa5245a116",
+    "sources/d0_two_agent_pilot_2026-11-13/open/round147/RESULT.json": "4123a37fd68a034bd786d1f742c1765bd7e043a486aed8aa75005c6858185b38",
+    "sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md": "ce8d2e88d8a5669a3ef9de1a849a5e21ec0a55b3fdb253d4b990656b0062427a",
+    "sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_POSTERIOR_GAIN_SOURCE.md": "3e177e614fb2b30d202f13af65d9896211afeebd68bcb2b497800a7ed0edaba5",
+    "sources/d0_two_agent_pilot_2026-11-13/direct/round75/work/RETAINED_WORK_RU.md": "6308cd3389ff4682e6a69d3927e011bef33ee3db26a8dad637bf2c31ce7d3dbb"
+  }
+}
