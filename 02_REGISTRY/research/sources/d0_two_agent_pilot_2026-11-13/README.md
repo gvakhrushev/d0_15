@@ -57,6 +57,7 @@ OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot 15b13751250
 | [B152, готово](open/round152/B152_SAME_SITE_PRICE_AND_PARITY_SOURCE_RU.md) | Повтор того же SITE без нового Julia. Границы работы и Info, отрицательная строка паритета, семь чтений с рангом 128 и условия сохранения класса. | Open, `open/round152/` | `255ebecc8`, #334 `fa515aebf` |
 | [B153, готово](open/round153/B153_POSITIVE_GAIN_SAME_SITE_BOUND_RU.md) | Точная граница источника положительной Info для повторов одного Golden-паритета и критерий точного возврата. | Open, `open/round153/` | `66d825fec`, #334 `06edd2e92` |
 | [B154, готово](open/round154/B154_WEAK_GOLDEN_RETURN_RU.md) | Слабое Golden-чтение: отрицательный источник, положительная Info, приближённый возврат DATA и проверенная длина букв. | Open, `open/round154/` | `02f9f435c`, #334 `06edd2e92` |
+| B155, в работе | Два фиксированных блока штатных чтений: предел положительной Info при смене паритета, конечный тариф и потеря DATA. | Open, `open/round155/` | `03e8dae17`, #334 `06edd2e92` |
 
 Исходная история доступна по веткам [Directed](https://github.com/gvakhrushev/d0_15/commits/codex/d0-pilot-directed-20261113/) и [Open](https://github.com/gvakhrushev/d0_15/commits/codex/d0-pilot-open-20261113/). Снимки и квитанции прежних запусков сохраняют исходные SHA и могут содержать старые локальные пути. Исторические артефакты открывайте по соответствующему раунду в дереве общей ветки. Для старой сверки B121 отдельно получите закреплённый снимок PASS30.
 
