@@ -81,15 +81,12 @@ def finite_prefix():
     true = Q(3, 5)
     value, slope = Q(0), Q(0)
     bound = 1 / (2*(1-r))
-    for k in range(1, 21):
+    # Denominators double in bit length at each exact iteration.
+    for k in range(1, 10):
         slope, value = value**2/2 + u*value*slope, Q(1,2)+u*value**2/2
         root_slope_x = value+u*slope
         upper = r**k + r*(bound*r**k + k*(1+r*bound)*r**(k-1))
         require(abs(root_slope_x-1/(2*true)) <= upper, "Derivative tail not enclosed")
-        # Fractions would double their bit length each level. The interval
-        # recurrence above has already been checked for exact small depths.
-        if k == 9:
-            break
     print("Exhaustive marked clock trees and the first-source truncation bound agree.")
 
 
