@@ -1,0 +1,76 @@
+{
+  "GR_closed": false,
+  "absolute_Book03_cost_info_proven": false,
+  "adaptive_tail_upper_bounds": {
+    "H_native_hidden_given_old": [
+      11.523292216740781,
+      11.523292216741076
+    ],
+    "entropy_oscillation": [
+      10.402268569543988,
+      10.402268571226818
+    ],
+    "pair_hellinger": [
+      5.022404326672787,
+      5.022404329990243
+    ]
+  },
+  "geometry_lower_minus_old_and_routed_single_parity": [
+    0.009113687953714929,
+    0.009113687960083765
+  ],
+  "mask208_negative_suffix": [
+    0.009971591672913416,
+    0.009971591675223268
+  ],
+  "mask208_positive_suffix": [
+    0.009973337464116817,
+    0.00997333746642719
+  ],
+  "old_DH": [
+    0.00024522469102020736,
+    0.0002452246932133645
+  ],
+  "old_H": [
+    0.04176142901776556,
+    0.041761429017913895
+  ],
+  "old_lower": [
+    -0.0005737967631999798,
+    -0.0005737967591355857
+  ],
+  "old_upper": [
+    0.7719726073984116,
+    0.7719726120243464
+  ],
+  "pinned_source_hashes": {
+    "../../A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md": "6c4d8e175a2bc23ea2f6995fa111897b73ce07ed45e3ce19041bacaa5245a116",
+    "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c",
+    "direct/round76/record/check_noisy_site_price.py": "170f1b51e3f3cb1625c062b658e95782380a1a054328a921549df337b1838123",
+    "open/round152/RESULT.json": "eaf0ff8edfa931b7a672b270c813870d26db91b96263506035d79342fc468fb2"
+  },
+  "positive_old_leaves": 64,
+  "round": "B153",
+  "sum_possible_negative_suffix_with_old_tag_routing": [
+    0.012352515280780655,
+    0.012352515283085083
+  ],
+  "sum_possible_positive_suffix_with_old_tag_routing": [
+    0.012381637513405762,
+    0.012381637515715138
+  ],
+  "worst_negative_suffix_one_shared_mask": [
+    128,
+    [
+      0.012350680274869043,
+      0.012350680277170262
+    ]
+  ],
+  "worst_positive_suffix_one_shared_mask": [
+    128,
+    [
+      0.012379993974469237,
+      0.012379993976776598
+    ]
+  ]
+}
