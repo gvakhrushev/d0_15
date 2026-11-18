@@ -1,0 +1,103 @@
+{
+  "GR_closed": false,
+  "absolute_Book03_cost_info_proven": false,
+  "actual_outward_scores": {
+    "D_H_old": [
+      0.0002452246910202111,
+      0.0002452246932133608
+    ],
+    "D_native_print_one_full_bit_round": [
+      1.1317465299021108e-05,
+      1.1317465590821035e-05
+    ],
+    "D_native_print_one_parity_208": [
+      -7.4975392912930795e-06,
+      -7.497539260227312e-06
+    ],
+    "D_old_and_sharp_site_TV": [
+      0.0007634044612138632,
+      0.0007634044613514262
+    ],
+    "D_site_bits": [
+      [
+        2.0206570284683652e-05,
+        2.020657041996828e-05
+      ],
+      [
+        -9.822729734333983e-06,
+        -9.822729587696573e-06
+      ],
+      [
+        1.644823777925103e-05,
+        1.6448237914398024e-05
+      ],
+      [
+        -7.948994509017961e-06,
+        -7.948994362668327e-06
+      ],
+      [
+        2.3682811365085955e-05,
+        2.368281150294287e-05
+      ],
+      [
+        -8.27954574795737e-08,
+        -8.279520277843355e-08
+      ],
+      [
+        9.742881732458532e-06,
+        9.742881870815392e-06
+      ],
+      [
+        -4.284429120999058e-06,
+        -4.284428979248681e-06
+      ]
+    ],
+    "D_site_parity_208": [
+      -3.1760086101893025e-05,
+      -3.1760085970296455e-05
+    ],
+    "S_minus": [
+      0.008902100123098887,
+      0.00890210012466113
+    ],
+    "S_plus": [
+      0.00838542158063837,
+      0.008385421582181139
+    ]
+  },
+  "pointwise_curvature_ratio": [
+    "44/100",
+    "54/100"
+  ],
+  "round": "B152",
+  "scalar_tariff_tests": {
+    "nu_1_spectral": {
+      "lower_decimal": 0.003757808,
+      "lower_for_every_equal_round_schedule": "234863/62500000",
+      "upper_work_minus_info_slope": "3224417/250000000"
+    },
+    "nu_1_unit": {
+      "lower_decimal": 0.012754462,
+      "lower_for_every_equal_round_schedule": "6377231/500000000",
+      "upper_work_minus_info_slope": "62321/12500000"
+    },
+    "nu_2_spectral": {
+      "lower_decimal": 0.012415583,
+      "lower_for_every_equal_round_schedule": "12415583/1000000000",
+      "upper_work_minus_info_slope": "1127917/250000000"
+    },
+    "nu_2_unit": {
+      "lower_decimal": 0.004123237,
+      "lower_for_every_equal_round_schedule": "4123237/1000000000",
+      "upper_work_minus_info_slope": "347217/25000000"
+    }
+  },
+  "source_hashes": {
+    "direct/round75/history/TWO_SITE_SOURCE_RU.md": "b22c08ca55b1c6996fa58066b01b178f175c6db2ee1ddbceb0ae8ed945bdd29c",
+    "direct/round76/record/DATA_GEOMETRY_RU.md": "e446ef984b0a99406319ad9bdd9f0b9ba2c44ecec9eea93c345ac25fb2121cfb",
+    "direct/round76/record/NOISY_SITE_PRICE_RU.md": "6fc67bf3838f13be24dc7e34b99dabaac8c3d5da2ccf00fac9e72f5256be1bda",
+    "direct/round76/record/check_noisy_site_price.py": "170f1b51e3f3cb1625c062b658e95782380a1a054328a921549df337b1838123",
+    "open/round149/RESULT.json": "2be40017b14c0416317ca3ffeb0e82ee1bc85aee451e32c7b1eb08893459d13e",
+    "open/round151/RESULT.json": "e913ee80002fee725b805d329a55b275680e0c2ff50fcb741d8e3537a8f72ca3"
+  }
+}

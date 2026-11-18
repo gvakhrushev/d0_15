@@ -1,0 +1,17 @@
+{
+  "A76_pinned_rank_source": "a1ecfdae207938aa36e6ef3f9fb314d833f48383d7ff345880c39491d475c830",
+  "golden_targets": 7,
+  "joint_probability_rank": 128,
+  "kernel_mask": 69,
+  "old_blank_Fourier_marks_by_port": {
+    "0": {
+      "noisy_inverse_defect_under": 0.006,
+      "sharp_inverse_defect_under": 1e-08
+    },
+    "1": {
+      "noisy_inverse_defect_under": 0.006,
+      "sharp_inverse_defect_under": 1e-08
+    }
+  },
+  "positive_CX_letters": 9
+}
