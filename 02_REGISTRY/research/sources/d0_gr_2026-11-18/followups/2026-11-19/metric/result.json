@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "pinned_revision": "0716b659d8e62c3fc7b72e3c817a8f7622ace0b4",
+  "pinned_clock_sha256": "885800b110e813f59566ee4317b6ca4771e74162f9fbf4deec10153506be0020",
+  "native": {
+    "scene_vertices": 33,
+    "spatial_edges": 359,
+    "scene_degrees": [
+      20,
+      22,
+      24
+    ],
+    "raw_factor": "1/sqrt(22)",
+    "clock_checks": [
+      {
+        "word": "ACACCC",
+        "stage": 3,
+        "clock_dimension": 27,
+        "maximizer": "X",
+        "full_matrix_error": 2.220446049250313e-16
+      },
+      {
+        "word": "ACACCC",
+        "stage": 3,
+        "clock_dimension": 27,
+        "maximizer": "Y",
+        "full_matrix_error": 1.1102230246251565e-16
+      },
+      {
+        "word": "ACACCC",
+        "stage": 3,
+        "clock_dimension": 27,
+        "maximizer": "transport_difference",
+        "full_matrix_error": 4.440892098500626e-16
+      },
+      {
+        "word": "ACACCC",
+        "stage": 5,
+        "clock_dimension": 27,
+        "maximizer": "X",
+        "full_matrix_error": 2.220446049250313e-16
+      },
+      {
+        "word": "ACACCC",
+        "stage": 5,
+        "clock_dimension": 27,
+        "maximizer": "Y",
+        "full_matrix_error": 1.1102230246251565e-16
+      },
+      {
+        "word": "ACACCC",
+        "stage": 5,
+        "clock_dimension": 27,
+        "maximizer": "transport_difference",
+        "full_matrix_error": 4.440892098500626e-16
+      },
+      {
+        "word": "CAACCC",
+        "stage": 2,
+        "clock_dimension": 27,
+        "maximizer": "X",
+        "full_matrix_error": 1.1559345574398516e-16
+      },
+      {
+        "word": "CAACCC",
+        "stage": 2,
+        "clock_dimension": 27,
+        "maximizer": "Y",
+        "full_matrix_error": 2.220446049250313e-16
+      },
+      {
+        "word": "CAACCC",
+        "stage": 2,
+        "clock_dimension": 27,
+        "maximizer": "transport_difference",
+        "full_matrix_error": 6.206335383118183e-17
+      }
+    ]
+  },
+  "optimal_witnesses": {
+    "coherent": [
+      "2 for h <= 1/2",
+      "h+sqrt(3)*sqrt(1-h*h) for h >= 1/2"
+    ],
+    "registered": "2-q_b",
+    "registered_mean": "1+2*q*(1-q)",
+    "mixed_input": "same two isometric sectors tensor an arbitrary protected input; tests act as identity on it"
+  },
+  "certificate": {
+    "q_literal": [
+      "0.4124698805685",
+      "0.4124698805686"
+    ],
+    "q_formula": "p^2+4*p^10*sin(512 theta)^2, cos(theta)=sqrt(p)",
+    "entropy_derivative_in_code_units": [
+      "0.7351530180546",
+      "0.7351530180547"
+    ],
+    "coherent_distance_derivative": [
+      "0.3550671358677",
+      "0.3550671358678"
+    ],
+    "registered_distance_derivative": [
+      "0.3501204777257",
+      "0.3501204777258"
+    ],
+    "net_derivatives": {
+      "unit_coherent": [
+        "-0.3800858821870",
+        "-0.3800858821869"
+      ],
+      "raw_coherent": [
+        "0.9302594718145",
+        "0.9302594718146"
+      ],
+      "unit_registered": [
+        "-0.3850325403290",
+        "-0.3850325403289"
+      ],
+      "raw_registered": [
+        "0.9070575885072",
+        "0.9070575885073"
+      ]
+    },
+    "full_primary_collar": {
+      "interval": "p^2 <= q < 1/2; x=1-2q",
+      "both_distance_derivatives_over_x": [
+        "9/5",
+        "11/5"
+      ],
+      "entropy_derivative_over_x": [
+        "4",
+        "40/9"
+      ],
+      "both_unit_net_derivatives_over_x": [
+        "-3",
+        "-1"
+      ],
+      "both_raw_net_derivatives_over_x": [
+        "3",
+        "7"
+      ],
+      "critical_scale_between": [
+        "20/11",
+        "200/81"
+      ],
+      "endpoint_q_half": "all four net derivatives equal zero"
+    }
+  },
+  "source_scope": "two supported stages with specified complete or registered algebra",
+  "unrestricted_Book_action_selected": false,
+  "GR_closed": false
+}

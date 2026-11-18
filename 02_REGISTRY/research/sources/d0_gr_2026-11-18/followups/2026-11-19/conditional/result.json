@@ -1,0 +1,32 @@
+{
+  "complete_native_input_supports": [
+    [
+      "G_Z_G_Z",
+      0,
+      8
+    ],
+    [
+      "G_Z_G_Z",
+      1,
+      8
+    ],
+    [
+      "CX_18",
+      0,
+      8
+    ],
+    [
+      "CX_18",
+      1,
+      8
+    ]
+  ],
+  "rank_per_input_target": 8,
+  "canonical_marker_trace_distance": "(-1/2 + sqrt(5)/2)**3",
+  "canonical_marker_wrong_terminal": 0.013344194019941243,
+  "orthogonal_marker_wrong_terminal": 0.4721359549995794,
+  "unmarked_wrong_terminal": 0,
+  "both_B121_words_equal_identity": true,
+  "noisy_H1_record_score_gram": "dq squared / [q(1-q)]",
+  "scope": "No physical monetary weights or GR closure selected."
+}

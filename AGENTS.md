@@ -7,7 +7,7 @@ Default base: `main`
 This file is the cold-start contract for any new AI agent, researcher, worker, or
 automation process entering the repository without prior chat context.
 
-For the shared D0 → GR results from 18 November, start with the [current evidence index](02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) in [Draft PR #334](https://github.com/gvakhrushev/d0_15/pull/334). Check the current branch head and the indexed work before repeating a calculation. Publish new results and corrections in that same research line with a reproducible check and an explicit scientific status.
+For the shared D0 → GR results, start with the [current evidence index](02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) in [Draft PR #334](https://github.com/gvakhrushev/d0_15/pull/334). Check the current branch head and the indexed work before repeating a calculation. Publish new results and corrections in that same research line with a reproducible check and an explicit scientific status.
 
 **Current scientific focus (22 October):** read and apply
 [source composition first: backward search and forward proof](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#source-composition-first-backward-search-and-forward-proof).

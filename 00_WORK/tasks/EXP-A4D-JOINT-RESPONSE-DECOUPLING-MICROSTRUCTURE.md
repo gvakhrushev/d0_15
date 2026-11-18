@@ -13,6 +13,10 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 Assembly-Carrier: `native-programme-v1`
 Assembly-Slot: `constitutive`
 
+## 19 November 2026 - the cost of confirming the original reader outcome
+
+[Shared evidence and replay](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) now include exact two-stage prices for the noisy NPS2 reader, an arithmetic non-cancellation theorem at its true field centre, and controls on conditioned economic reconstruction. The calibration from spectral distance to full execution cost is still open. The original full-price requirement and GR status are preserved. See primary section 7gh.
+
 ## 18 November 2026 — shared evidence and current physical-price gate
 
 [The shared results index](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) gathers the supplied rigidity theorem, six successive research releases and the present H.1 gate analysis. The unread tail gives the full interval of scalar cold returns in the compiled closure. The positive result covers every continuous return-only correction to the specified code price. Same-endpoint four-gate controls expose an independent possible local work source. The full history valuation remains open. See primary §7gg. `GR_closed=false`.

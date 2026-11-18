@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "primary_revision": "0716b659d8e62c3fc7b72e3c817a8f7622ace0b4",
+  "word_sha256": "2107f716ca24c773475fe998be171830eba31761808e9b04201f417839460852",
+  "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_word": {
+    "N": 3,
+    "n": 1,
+    "steps": 46,
+    "substring_first_stages_one_based": [
+      11,
+      34
+    ],
+    "checked_columns": 64
+  },
+  "arithmetic": {
+    "p": "phi^(-1)",
+    "a": "sqrt(p)",
+    "normalized_trace_W": "(a+p)/4",
+    "normalized_trace_W2": "(a-p)^2/4",
+    "projective_index": "4*((1-a)/(1+a))^2",
+    "index_numerical": "0.057337186511435413560948340",
+    "channel_index": "index^2",
+    "index_minpoly": "t**4 - 272*t**3 - 1952*t**2 - 4352*t + 256",
+    "channel_index_minpoly": "t**4 - 77888*t**3 + 1443328*t**2 - 19939328*t + 65536",
+    "half_density_from_index": "(1+p)*(4-index)/(2*(4+index))"
+  },
+  "scope": "No finite golden path spelling by finite role phases on this full carrier, including scalar normalization. Full physical source and normalized prepared-only data remain separate."
+}
