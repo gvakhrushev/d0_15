@@ -38,6 +38,7 @@ git merge-base --is-ancestor "$result_sha" origin/codex/d0-pilot-shared-20261118
 | [B143, результат проверен](open/round143/B143_MEASURED_SER_DETERMINANT_AND_FULL_RECORD_RU.md) | Детерминант при нескалярной прошлой памяти, оплаченный выход и предел переноса на всю запись SER | Open | `fa7ad0264` |
 | [B144, результат проверен](open/round144/B144_REQUIRED_MATERIAL_SOURCE_ON_A73_COLLAR_RU.md) | Нижняя граница источника по всем волновым решениям на воротнике A73 и исключённый класс локальных поправок | Open | `ac25d36d8` |
 | [B145, результат проверен](open/round145/B145_MATCHED_SER_INFO_SOURCE_BOUND_RU.md) | Граница источника CQ Info по реально измеренной дисперсии SER, включая подвижный ранг | Open, проверка Info | `ac25d36d8` |
+| B146 | Как меняется необходимый материальный источник A73 при собственном уточнении PF и наследовании полного RIGHT128? | Open, `open/round146/` | `d0cc4487a` |
 
 Исходная история доступна по веткам [Directed](https://github.com/gvakhrushev/d0_15/commits/codex/d0-pilot-directed-20261113/) и [Open](https://github.com/gvakhrushev/d0_15/commits/codex/d0-pilot-open-20261113/). Снимки и квитанции прежних запусков сохраняют исходные SHA и могут содержать старые локальные пути. Исторические артефакты открывайте по соответствующему раунду в дереве общей ветки. Для старой сверки B121 отдельно получите закреплённый снимок PASS30.
 
