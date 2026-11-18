@@ -1,0 +1,45 @@
+{
+  "result": "PASS",
+  "models": [
+    {
+      "native_word": "AACCCC",
+      "clock_dimension": 108,
+      "full_Hodge_dimension": 45900,
+      "s": 0.055728090000841175,
+      "H": 13.939357951243487,
+      "J": 3.602113095001824e-06,
+      "B": 13.939361553356582,
+      "absolute_heat": 42138.70314837728,
+      "marked_probability_finite": 0.723023051559446,
+      "marked_probability_identity": 0.7230230515594456,
+      "golden_weight": 0.0012213657083558743,
+      "readout_probability": 0.4473513992825303,
+      "terminal_to_B_gain": 0.07311460320030759,
+      "poisson_tail_bound": 3.4306991726600105e-17
+    },
+    {
+      "native_word": "ACACCC",
+      "clock_dimension": 108,
+      "full_Hodge_dimension": 45900,
+      "s": 0.06094166526499912,
+      "H": 13.939357951243604,
+      "J": 3.5822248656192608e-06,
+      "B": 13.93936153346847,
+      "absolute_heat": 42138.70314838107,
+      "marked_probability_finite": 0.7230230625444548,
+      "marked_probability_identity": 0.7230230625444549,
+      "golden_weight": 0.0012213657200448257,
+      "readout_probability": 0.44735139668932156,
+      "terminal_to_B_gain": 0.07311460146899815,
+      "poisson_tail_bound": 3.4306991726600105e-17
+    }
+  ],
+  "strict_causal_witness": {
+    "delta_s_gt": "1/200",
+    "heat_difference_lt": "896/282716948682789",
+    "absolute_master_difference_gt": "19/1000000000",
+    "true_Born_early_odds_ratio": 1
+  },
+  "physical_price_binding_proved": false,
+  "GR_closed": false
+}

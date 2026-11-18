@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "original_record_p_one_identity": "0",
+  "original_record_p_one_order": "4*p**3",
+  "positive_path_ratios": [
+    "p:p**2:p*sqrt(p):p*sqrt(p)",
+    "p**2:p:p*sqrt(p):p*sqrt(p)"
+  ],
+  "local_flip_toll": {
+    "cost_unit": 1,
+    "mean_contrast": "4*p**3",
+    "absolute_order_mass": "1-4*p**4",
+    "tilted_p": 0.8661694586364018
+  },
+  "nonzero_leakage_inverse": [
+    "7/9",
+    "2/9",
+    "5/9",
+    "1/3"
+  ],
+  "physical_C_established": false
+}

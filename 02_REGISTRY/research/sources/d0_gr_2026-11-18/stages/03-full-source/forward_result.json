@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "golden_ticket_masses": [
+    "p^2",
+    "p^4",
+    "2*p^3"
+  ],
+  "infinite_mark": "p*c(q)^2",
+  "finite_tests": [
+    {
+      "q": 0.382,
+      "cap": 48,
+      "probability": 0.5211878221774485,
+      "d_error": 2.1586137044504738e-10
+    },
+    {
+      "q": 0.413,
+      "cap": 48,
+      "probability": 0.5169368510657486,
+      "d_error": 1.876757083074665e-11
+    },
+    {
+      "q": 0.499,
+      "cap": 48,
+      "probability": 0.5002355958410726,
+      "d_error": 1.7208456881689926e-15
+    }
+  ],
+  "same_record_distinct_return_grams": [
+    0.8365521005609043,
+    0.4604845137081467,
+    0.08441692685538897
+  ],
+  "uses_new_independent_forward_reports": true,
+  "physical_price_derived": false
+}

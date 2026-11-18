@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "exact_positive_ledger_leaves": 696,
+  "moving_price_examples": [
+    {
+      "rounds": 1,
+      "normalised_slope": -0.9767666989351403,
+      "error_after_exact_prefix": 0.023233301064859633
+    },
+    {
+      "rounds": 2,
+      "normalised_slope": 0.502910098537423,
+      "error_after_exact_prefix": 0.0029100985374229714
+    },
+    {
+      "rounds": 4,
+      "normalised_slope": 1.250020495833291,
+      "error_after_exact_prefix": 2.0495833290948748e-05
+    },
+    {
+      "rounds": 8,
+      "normalised_slope": 1.6250000008266112,
+      "error_after_exact_prefix": 8.266112163093625e-10
+    },
+    {
+      "rounds": 16,
+      "normalised_slope": 1.8125,
+      "error_after_exact_prefix": 1.2841188903784817e-18
+    },
+    {
+      "rounds": 32,
+      "normalised_slope": 1.90625,
+      "error_after_exact_prefix": 3.037023709819421e-36
+    }
+  ],
+  "uncancelled_price_per_block": -7,
+  "physical_absorption_from_Book03_established": false
+}

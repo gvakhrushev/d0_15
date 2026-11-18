@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "full_diamond_columns": 64,
+  "full_record_columns": 128,
+  "two_position_exact_echo_pairs": 16,
+  "arbitrary_input_columns": 32,
+  "q_good": "p^2+p^4",
+  "q_failure": "2*p^3",
+  "cases": {
+    "1": {
+      "diamond": {
+        "CX": 21,
+        "SourceI": 5
+      },
+      "paid_record_total": {
+        "CX": 34,
+        "G": 2,
+        "SourceI": 13
+      },
+      "diamond_calls": 26,
+      "with_record_calls": 49
+    },
+    "-1": {
+      "diamond": {
+        "CX": 21,
+        "SourceI": 5
+      },
+      "paid_record_total": {
+        "CX": 34,
+        "G": 2,
+        "SourceI": 13
+      },
+      "diamond_calls": 26,
+      "with_record_calls": 49
+    }
+  },
+  "scope": "Complete hardware identities and paid coherent copy. Actual readout admission, full Cost-Info, H.1 and GR are separate."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "finite_subgroup_order": 192,
+  "finite_subgroup_diameter": 11,
+  "real_symmetric_fixed_dimension": 14,
+  "n": 33,
+  "G_per_body": 66,
+  "SourceI_per_body": 4,
+  "field_event_work_operator": "4*n*p*sqrt(p)*(I-2*event)",
+  "absolute_work_at_Q0": "[64.134611871877229520138031618078298209408149888313237445629443294, 64.134611871877229520138031618078298209408149888313237445629493078]",
+  "centered_drift_gain_per_DQ": -128.26922374375445,
+  "endpoint_norm": "[0.010494557591091112186336875935908599751753147807483883842135901316, 0.010494557591091112186336875935908599751753147807483883852075653793]",
+  "master_value_difference_bound": "< 1/10000000",
+  "four_gate_strict_local": {
+    "words": [
+      "GCGC",
+      "CGCG"
+    ],
+    "equal_H_and_J_exactly": true,
+    "cost_gap_per_event_Q": "4*p^5",
+    "cost_gap_per_DQ": 0.3606797749978971,
+    "compensated_controlled_x": "CX* P1 CX - P1 = event times Z"
+  },
+  "full_body_readout_required": true,
+  "physical_complete_binding_proved": false
+}

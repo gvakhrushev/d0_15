@@ -1,0 +1,13 @@
+{
+  "log_price_common_ratio": -1,
+  "mixed_species": 0,
+  "equal_species": "2*epsilon",
+  "obstruction_at_integer_witness": 22,
+  "scale_projectors": 3,
+  "prepared_code_repeats": [
+    1,
+    2,
+    3
+  ],
+  "mark": "symbolic_controls_only"
+}

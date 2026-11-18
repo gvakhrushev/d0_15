@@ -1,0 +1,14 @@
+{
+  "D0_Projective_Einstein_Rigidity_2026-11-18.pdf": "5fd40bde7a4c6a67a8f3a41ce48ff4ac5e4c3ca1f8276acd2324ab8c18bf90ca",
+  "D0_Projective_Einstein_Rigidity_2026-11-18.tex": "3a210142c91f02a2f1489810f55e67adf6c23b68b9643c9a221251a70a37ca37",
+  "README_RU.txt": "b37fbafc257d2ac6d0906aaed71141f879f73d29abc308914f588e47b3eda8a5",
+  "check_projective_rigidity.py": "d5b6cf90484b354c5322da5af09a58558774a1a4c5040e9880958a8c6c530e0b",
+  "doob_actual_mark.json": "683987af5a358cc48b110af320c24597350c1fa17353c7019c3cfb09b4d4e211",
+  "doob_actual_mark.py": "9bb9d372af89c750ad167dc403bcd5307163b160ad3e096b15dbb15a98433931",
+  "doob_analysis_en.txt": "931df7c12648a4a55c1a096d132ddf08949ea45b3662c65b5f86a03b675c9cde",
+  "independent_review.txt": "558ee9af8c3d4d66026de048f8bf2af01ff7b5fa5a64177584262e0c88cd4356",
+  "projective_rigidity_controls.json": "25d7da5921828e841aa40ff416718e29295914c3e799a9b6197dc9a78aec008f",
+  "proof_en.txt": "b968859221700497ead1e05e71400bdbf78eb112b78fc5a4dcb1df2dbd2efdab",
+  "provenance.json": "97b1f2e50af98c93ef943d66d94299dfeb83569e137adc9ff7d4a7335a5d768c",
+  "requirements.txt": "a9029fbebed80d5530d9a770340843cfd032aac6af297d237cc24b758537ea81"
+}

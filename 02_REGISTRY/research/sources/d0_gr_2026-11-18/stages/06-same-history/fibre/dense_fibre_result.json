@@ -1,0 +1,97 @@
+{
+  "status": "PASS_ACTUAL_DENSE_FIBRE",
+  "actual_gate_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "checked_live_basis_columns": 64,
+  "ring": "a^4=1-a^2,p=a^2",
+  "cases": [
+    {
+      "h": "1/8",
+      "n_minus": 6,
+      "n_plus": 218,
+      "N": 218,
+      "minus_u": [
+        "-140425892017/1000000000000",
+        "-8776618251/62500000000"
+      ],
+      "plus_u": [
+        "14582703769/125000000000",
+        "116661630153/1000000000000"
+      ],
+      "delta_u": [
+        "257087522169/1000000000000",
+        "25708752217/100000000000"
+      ],
+      "compact_stages": 925,
+      "compact_central_C_one_based": 455,
+      "stages": 7853,
+      "central_C_one_based": 3927,
+      "inventory": {
+        "CX": 5237,
+        "G": 872,
+        "SourceI": 1744
+      }
+    },
+    {
+      "h": "1/16",
+      "n_minus": 343,
+      "n_plus": 53,
+      "N": 343,
+      "minus_u": [
+        "-61441683747/1000000000000",
+        "-30720841873/500000000000"
+      ],
+      "plus_u": [
+        "64410241973/1000000000000",
+        "32205120987/500000000000"
+      ],
+      "delta_u": [
+        "125851925719/1000000000000",
+        "3146298143/25000000000"
+      ],
+      "compact_stages": 1425,
+      "compact_central_C_one_based": 705,
+      "stages": 12353,
+      "central_C_one_based": 6177,
+      "inventory": {
+        "CX": 8237,
+        "G": 1372,
+        "SourceI": 2744
+      }
+    },
+    {
+      "h": "1/32",
+      "n_minus": 949,
+      "n_plus": 1147,
+      "N": 1147,
+      "minus_u": [
+        "-15697320699/500000000000",
+        "-31394641397/1000000000000"
+      ],
+      "plus_u": [
+        "15781295413/500000000000",
+        "31562590827/1000000000000"
+      ],
+      "delta_u": [
+        "1967413507/31250000000",
+        "2518289289/40000000000"
+      ],
+      "compact_stages": 4641,
+      "compact_central_C_one_based": 2313,
+      "stages": 41297,
+      "central_C_one_based": 20649,
+      "inventory": {
+        "CX": 27533,
+        "G": 4588,
+        "SourceI": 9176
+      }
+    }
+  ],
+  "literal_reporter_Re_gamma_over_Q_interval": [
+    "-0.258",
+    "-0.257"
+  ],
+  "exact_X_secant_over_Re_gamma": 2,
+  "exact_direct_G_NC1_paid_length_secant_over_Re_gamma": "2 sqrt(p) p",
+  "same_layout_unread_master_secant": 0,
+  "assumes_internal_e_was_not_pinched": true
+}

@@ -1,0 +1,1 @@
+PASS: all four 52-call distributions, active SourceI mean and partition, two-bit mask and selected-event coefficient.

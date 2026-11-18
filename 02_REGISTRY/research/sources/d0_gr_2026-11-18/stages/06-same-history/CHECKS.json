@@ -1,0 +1,25 @@
+{
+  "primary_revision": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "entry": "SYNTHESIS_RU.md",
+  "checks": {
+    "check_reference.py": "reference_result.json",
+    "check_old_reference.py": "old_reference_result.json",
+    "axiom/check_constraints.py": "axiom/constraint_result.json",
+    "axiom/check_tariff.py": "axiom/tariff_result.json",
+    "reader/check_reader.py": "reader/reader_result.json",
+    "reader/check_full_reader.py": "reader/full_reader_result.json",
+    "cycle/check_pressure.py": "cycle/pressure_result.json",
+    "coherence/check_coherence.py": "coherence/result.json",
+    "coherence/check_local_work.py": "coherence/local_work_result.json",
+    "fibre/check_dense_fibre.py": "fibre/dense_fibre_result.json"
+  },
+  "attachment": "D0_Projective_Einstein_Rigidity_2026-11-18.zip",
+  "attachment_checks": {
+    "check_projective_rigidity.py": "projective_rigidity_controls.json",
+    "doob_actual_mark.py": "doob_actual_mark.json"
+  },
+  "implementation": "Python 3.14.6, NumPy 2.5.2, SciPy 1.18.1, SymPy 1.14.0, mpmath 1.3.0",
+  "verification": "Finite/symbolic examples and certified inequalities. General statements use the written proofs and their stated domains.",
+  "physical_full_cost_info_binding": false,
+  "GR_closed": false
+}

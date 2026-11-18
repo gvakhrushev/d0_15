@@ -1,0 +1,136 @@
+{
+  "primary_files": {
+    "current_7ga_gb.md": {
+      "sha256": "f2dcac9fea8950bd530a1db6a20a9c1dbcc36832e3b51383065e406552e98c1e",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "source_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "parent_blob": "9a0475588552d54ef0461a4d8c67dcf2282b66fd",
+      "parent_sha256": "d1e584ed1d87e34ab15ba6c330ee5a7e6a6d4312fada71ade1ea9b2faaef04ee",
+      "first_line": 190221
+    },
+    "checkpoint/checkpoint_manifest.json": {
+      "sha256": "2b507db79ccbb76c75eec2b7b71265ad55ae952ed118546e5f4d07c533072e5c",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/check_actual_stopped_cost.py": {
+      "sha256": "1e6e75ac1808297e10b8e19ecfb75791d9ee0fbc788d313f29cfdea51665d068",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/check_direct_cq_source.py": {
+      "sha256": "6d32a47f6a99d40bc98020a81656e1e1751912c60d5a7775e6e92cdcb93a4bfa",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/check_full128_cq_coframe_residual.py": {
+      "sha256": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/check_projective_rigidity.py": {
+      "sha256": "d5b6cf90484b354c5322da5af09a58558774a1a4c5040e9880958a8c6c530e0b",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/expected_actual_stopped_cost.json": {
+      "sha256": "22bf03f510889731564244352e3d688e90f51b250247843a21eb65f5f60378cc",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/expected_direct_cq_source.json": {
+      "sha256": "1c1cd56930e84d46af4b9ceae46f03e450277f72ff069a3d9f21c8107b634754",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/expected_full128_cq_coframe_residual.json": {
+      "sha256": "36380566abc1d584b619d926f3f83f7ecb2fbef3523e93e68de6291b11161c51",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/expected_projective_rigidity_controls.json": {
+      "sha256": "25d7da5921828e841aa40ff416718e29295914c3e799a9b6197dc9a78aec008f",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "embedded_in": "current_7ga_gb.md"
+    },
+    "checkpoint/check_uniform_book_source.py": {
+      "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "source_path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+      "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed"
+    },
+    "native_execution.py": {
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "source_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "git_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44"
+    },
+    "B121/RESULT.json": {
+      "sha256": "00728718d2e77b252272143c276e2625fc138d35ef8fb5680d37baf185bd188b",
+      "git_commit": "88aa8a2fbe586b10d04503384f88467a1c3abd17",
+      "source_path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/RESULT.json",
+      "git_blob": "55e1f4d672f4ac9188deb07b0015716a2e910d9b"
+    },
+    "B121/check_book03_identity_pair.py": {
+      "sha256": "78f94decaf1ed6c54201e1e83032b9311ac708c077b79065398422c1141b66f9",
+      "git_commit": "88aa8a2fbe586b10d04503384f88467a1c3abd17",
+      "source_path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/check_book03_identity_pair.py",
+      "git_blob": "f4264dd30c3a0f934668b6e361f9d174e882326a"
+    },
+    "B121/B121_ORIGINAL_BOOK_WEIGHT_AND_PREPARATION_RU.md": {
+      "sha256": "df1c11e583e9673a9b88d7b5a1bdf1c41df05e2d46ca83d6af98ea0847aa68d4",
+      "git_commit": "88aa8a2fbe586b10d04503384f88467a1c3abd17",
+      "source_path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/B121_ORIGINAL_BOOK_WEIGHT_AND_PREPARATION_RU.md",
+      "git_blob": "1c088bf960659b0ea57a2dbfa6889df98520bf81"
+    },
+    "B121/BOOK_I_ARCHITECTURE_GOLDEN_PASS30.txt": {
+      "sha256": "87bf55debc4296b0574db1d0045156b350f2dd1e17fcc01d3e3ad5bb9a980fe9",
+      "git_commit": "4f99c2c46e646d21ae5b9b0491da17bd1b094da0",
+      "source_path": "99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/books/BOOK_I_ARCHITECTURE_GOLDEN_PASS30.txt",
+      "git_blob": "8add930fe27ab6bb25e5c432127a86a05bca1e6e"
+    },
+    "B121/BOOK_II_MECHANISM_GOLDEN_PASS30.txt": {
+      "sha256": "42224fdbfb6e474e2025d38da45d01bf1c9e17132c182e82d8875868df62c9b0",
+      "git_commit": "4f99c2c46e646d21ae5b9b0491da17bd1b094da0",
+      "source_path": "99_PRESERVED_SOURCE/D0_MAIN_GOLDEN_PASS30/books/BOOK_II_MECHANISM_GOLDEN_PASS30.txt",
+      "git_blob": "19701354c459014fb88e33aace667e0904409f17"
+    },
+    "B121/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "git_commit": "88aa8a2fbe586b10d04503384f88467a1c3abd17",
+      "source_path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    "A64/COMMON_SCALE_RU.md": {
+      "sha256": "6a106bb38ddec09d330ba5733dd5d057db9d78f25f2e34c78c2050f8ebe3e9cc",
+      "git_commit": "1df67c458490b593dee9b5cc00f328fdd27ea281",
+      "source_path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round64/source/COMMON_SCALE_RU.md",
+      "git_blob": "13290f782a1165c5de82a87eda5c7b45f2b754ed"
+    },
+    "A67/SCENE_REFERENCE_RU.md": {
+      "sha256": "02021a8135b6d3fe73a91157e36dfde5907033672540837ae93358564b813f60",
+      "git_commit": "1df67c458490b593dee9b5cc00f328fdd27ea281",
+      "source_path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round67/valuation/SCENE_REFERENCE_RU.md",
+      "git_blob": "89dd0ea1f4c89ba4af003d0208e2d1c22f2042df"
+    },
+    "A67/check_scene_reference.py": {
+      "sha256": "75ba36fa533663acbd9e47e2eb4b756782df402f32eb8f8c3eb77ea565eeaad0",
+      "git_commit": "1df67c458490b593dee9b5cc00f328fdd27ea281",
+      "source_path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round67/valuation/check_scene_reference.py",
+      "git_blob": "7cef6d37fe0981fa18ad002dc5d30897f13a9c44"
+    },
+    "A67/RawZone.lean": {
+      "sha256": "3b8f7c5b60432085131aa0d491a6a42853bc1788dc697a4757549b074e5a4b8f",
+      "git_commit": "1df67c458490b593dee9b5cc00f328fdd27ea281",
+      "source_path": "03_FORMALIZATION/D0/Integration/V15/RawZone.lean",
+      "git_blob": "94f6e80380e9e13437fd1377026c432ed46529c9"
+    },
+    "check_complete_143484_stage_clock_cost_selector.mjs": {
+      "sha256": "0a8e3046511c776fd203ddfc77d4bbe0b84f7a8e4de1de04269980d1e338f2d9",
+      "git_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+      "source_path": "02_REGISTRY/research/sources/d0_native_two_three_clock_2026-10-20/check_complete_143484_stage_clock_cost_selector.mjs",
+      "git_blob": "cae3ea6488705a66dc0b940b7895bb9b8df82b52"
+    }
+  },
+  "scope": "Verbatim Git blobs and a byte-exact section excerpt with its unchanged embedded checkpoint."
+}

@@ -1,0 +1,2 @@
+PASS: actual four-column subword, projective Galois obstruction and p Born deficit.
+PASS: all F4 translation identities and non-affine third-coin flag.

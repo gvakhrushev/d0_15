@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "primary_revision": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "portability": {
+    "execution": "Isolated Python (-I -B), independent copied tree, outsider empty working directory, no network or git required by the ten checkers.",
+    "python": "3.14.6",
+    "dependencies": {
+      "sympy": "1.14.0",
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "mpmath": "1.3.0"
+    },
+    "json_comparison": "Exact structures and nonfloating quantities; floating outputs relative tolerance 1e-11, absolute 2e-14.",
+    "relative_links_in_research_notes": "PASS"
+  },
+  "checks": [
+    {
+      "check": "thermal/check_ancestral_heat.py",
+      "arguments": [],
+      "expected": "thermal/ancestral_heat_result.json",
+      "result": "PASS",
+      "domain": "Symbolic native moments and full-scene spectrum on two 39100-mode configurations."
+    },
+    {
+      "check": "thermal/check_fixed_beta.py",
+      "arguments": [],
+      "expected": "thermal/fixed_beta_result.json",
+      "result": "PASS",
+      "domain": "Fixed-temperature recovery at three paid lengths with explicit high-winding residual."
+    },
+    {
+      "check": "econ/check_sewn_heat.py",
+      "arguments": [],
+      "expected": "econ/sewn_heat_result.json",
+      "result": "PASS",
+      "domain": "Same native gate and address inventory, same prepared isometry, different full heat and mixed finite contrast."
+    },
+    {
+      "check": "continuum/check_age.py",
+      "arguments": [],
+      "expected": "continuum/result.json",
+      "result": "PASS",
+      "domain": "Exact complete-clock signed trace on 800 powers across five test prefixes."
+    },
+    {
+      "check": "continuum/check_native_heat_path.py",
+      "arguments": [],
+      "expected": "continuum/native_path_result.json",
+      "result": "PASS",
+      "domain": "Independent growing clock and bounded signed walk on the full 33-scene; positive heat-price flag."
+    },
+    {
+      "check": "continuum/frozen/check_full128_cq_coframe_residual.py",
+      "arguments": [],
+      "expected": "continuum/frozen/expected_full128_cq_coframe_residual.json",
+      "result": "PASS",
+      "domain": "Primary section 7gb constructor and certified one-round coframe response."
+    },
+    {
+      "check": "continuum/frozen/check_actual_ledger_row.py",
+      "arguments": [
+        "--constructor",
+        "continuum/frozen/check_full128_cq_coframe_residual.py"
+      ],
+      "expected": "continuum/frozen/expected_actual_ledger_row.json",
+      "result": "PASS",
+      "domain": "Primary section 7gd frozen six canonical pointers, signed actual fine-address response."
+    },
+    {
+      "check": "continuum/frozen/check_cq_tail.py",
+      "arguments": [],
+      "expected": "continuum/frozen/cq_tail_result.json",
+      "result": "PASS",
+      "domain": "Bound on infinite stopping tail for the specified DATA-CQ source."
+    },
+    {
+      "check": "continuum/frozen/check_cq_bright_terms.py",
+      "arguments": [],
+      "expected": "continuum/frozen/cq_bright_terms_result.json",
+      "result": "PASS",
+      "domain": "Exact spectral certificates on the first three bright levels and rational tail."
+    },
+    {
+      "check": "continuum/check_stopped_reader.py",
+      "arguments": [],
+      "expected": "continuum/stopped_reader_result.json",
+      "result": "PASS",
+      "domain": "Frozen primary matrices matched; exact six-reader first variation and certified full stopped Shannon, conditional DATA gap and remaining required rows."
+    }
+  ],
+  "scientific_findings": {
+    "native_prepared_output_can_have_different_full_heat": true,
+    "register_specific_heat_variation_delay": true,
+    "native_signed_path_trace": true,
+    "positive_Boltzmann_event_for_heat_only": true,
+    "stopped_six_reader_source_formula": "81 p^5/[12800(1-q)], q=4p^3*(9/640)",
+    "stopped_marginal_entropy_nats": [
+      0.01642720208,
+      0.01644055757
+    ],
+    "stopped_marginal_minus_DATA_entropy_derivative_nats": [
+      0.00026963716,
+      0.00029634813
+    ],
+    "normalized_DATA_remaining_code_units": [
+      0.03297078486,
+      0.03299853872
+    ]
+  },
+  "boundaries": [
+    "Fixed scene, literal growing-clock birth layout, and declared finite apparatus are part of the assertions.",
+    "The positive mark represents the selected heat price. The physical cost of its implementation is an independent obligation.",
+    "The full128 stopped coframe witness and its scores apply on their specified instrument and input; no automatic transport to all H.1 fields.",
+    "Original Book Cost-Info valuation, physical variational source, all-mesh projectivity and GR closure remain open."
+  ],
+  "primary_files": {
+    "native_execution": "econ/native_execution.py",
+    "native_source_path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+    "checkpoint": "continuum/frozen/check_full128_cq_coframe_residual.py",
+    "continuation": "continuum/frozen/check_actual_ledger_row.py",
+    "owner_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "previous_local_derivations": [
+      "continuum/frozen/check_cq_tail.py",
+      "continuum/frozen/check_cq_bright_terms.py"
+    ],
+    "original_frozen_contents_except_relations": "Both primary scripts and their official receipts are byte-identical to their embedded records."
+  },
+  "sha256": {
+    "README_RU.md": "147b1aa1dea5f1034f55edca565d54df8ac1429eefb341e71f9653952fb41168",
+    "continuum/NATIVE_PATH_CHECK_RU.md": "15525bb728b02128c195767c2b6bca3b6dd13f65d2e398fce4e15e8cf5eaa6fd",
+    "continuum/STOPPED_READER_RU.md": "1473a903736bef4b2e05b6a9ee8855d49d61fc5c07d327ad8a46b1c151c7b25d",
+    "continuum/THERMAL_FIBRE_RU.md": "8c9580503fadce9160c5eb454fe0ae0f9ffd13ff5deccc56bc86d603c7083295",
+    "continuum/check_age.py": "015c00d39e949b58d7d8df0a8cc6818a915eb0e23d5206d2d605ff38bbfa151f",
+    "continuum/check_native_heat_path.py": "d6844aa62efb8e046692c2626bc74ca43d17822f4632c331884b76bfd2e3d549",
+    "continuum/check_stopped_reader.py": "1f241e2fd13ea05dd8ff3fd4c4678a505bd0cf9e1f7bb68305fb2060436266a2",
+    "continuum/frozen/check_actual_ledger_row.py": "2257f9e76c656177e3e59f0b65753b1610683580779afe25e731b5c876a447aa",
+    "continuum/frozen/check_cq_bright_terms.py": "aea8ccf44c207a4049fd0a6f7b5d56935d5009bf34bbd5ae696ea702f2ef5d2b",
+    "continuum/frozen/check_cq_tail.py": "b636941d977f00497667bb1a040b50a005e5daa8483945317328e54b9b2a4b30",
+    "continuum/frozen/check_full128_cq_coframe_residual.py": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66",
+    "continuum/frozen/cq_bright_terms_result.json": "120355a724bcf12ea6ed589f64fdbf0c26ed3c73fa53dd07b7662672eef9d1f9",
+    "continuum/frozen/cq_tail_result.json": "f5fe1298414d35d6c821effcae0095087cdc3af864b56af634fa3c788a9c442f",
+    "continuum/frozen/expected_actual_ledger_row.json": "7f1b07424839c688117bc9d4c30cf2411596e67ed74a57ce2f6be7d15bc89191",
+    "continuum/frozen/expected_full128_cq_coframe_residual.json": "36380566abc1d584b619d926f3f83f7ecb2fbef3523e93e68de6291b11161c51",
+    "continuum/native_path_result.json": "73201c95ef4c8388e2d3d4d049580c57e1de32c42cc64099cae07d925c452897",
+    "continuum/result.json": "e30976f15d4a2dfc078cd388adf05c941bd7f24a17f7dfed2d89ac819f51b58b",
+    "continuum/stopped_reader_result.json": "aa73306fe44e0eca245d34f27485649c307fa2988e7c43c905c9aad1f06f1e8d",
+    "econ/PHYSICAL_PAIRING_RU.md": "ed41f88c17f10621953aed0839e0cd11b2806edfbab52b0a4621bb8be72e16b5",
+    "econ/SEWN_HEAT_RU.md": "84fdf63e79cd0954334fa9aa8068ecae2b900a63d8a9b77b1532bab2d3b63a4d",
+    "econ/check_sewn_heat.py": "c3ecaa0360c5a13318fd4ea6c59fec1ee60e7106de0cb31e813270076919485c",
+    "econ/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "econ/sewn_heat_result.json": "b5f3c0abef20ab70a1b5102f49d449d5101b84fad8972edc4b3b3a26f9fea767",
+    "replay.py": "470628da089422fcef67013d706952933f4d21ee4a0eda00ee6b0682075eea75",
+    "thermal/FIXED_BETA_RU.md": "6fd5e2499181e40c850ea9c6d7c0ce650c74ba1a8f9b3e5bb5405cf9dd67ec32",
+    "thermal/THERMAL_H1_RU.md": "9d683f28e4f1a2012aabeec04931e923c7ff6177f20d5c80477edfe823f6b6fd",
+    "thermal/ancestral_heat_result.json": "35b4b037fb448657bfb1afdd075d26600a34285bcfc9a4d983d37f44288e7fc1",
+    "thermal/check_ancestral_heat.py": "304a8ef4419278c0455943ce71a1db106716fa6814b45b7b2b733cfc459737f7",
+    "thermal/check_fixed_beta.py": "60da60e931211be6fa5b5e5348f44151551c35c65bd2252a30e569589c0dfe57",
+    "thermal/fixed_beta_result.json": "fd0c142a4b1ff572d10d87faeddceeb02d12c3bcee0230d0aaeb7f6704a05369"
+  }
+}

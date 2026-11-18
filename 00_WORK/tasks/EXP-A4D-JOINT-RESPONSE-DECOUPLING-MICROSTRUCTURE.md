@@ -13,6 +13,10 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 Assembly-Carrier: `native-programme-v1`
 Assembly-Slot: `constitutive`
 
+## 18 November 2026 — shared evidence and current physical-price gate
+
+[The shared results index](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/README.md) gathers the supplied rigidity theorem, six successive research releases and the present H.1 gate analysis. The unread tail gives the full interval of scalar cold returns in the compiled closure. The positive result covers every continuous return-only correction to the specified code price. Same-endpoint four-gate controls expose an independent possible local work source. The full history valuation remains open. See primary §7gg. `GR_closed=false`.
+
 ## 28 October: original raw history and exact kappa-source Einstein closure
 
 Same Draft #334 / native-programme-v1. Consume the existing

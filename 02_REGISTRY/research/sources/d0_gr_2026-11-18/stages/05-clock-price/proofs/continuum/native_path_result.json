@@ -1,0 +1,27 @@
+{
+  "positive_flag": 0.001935488785956918,
+  "stage_dimensions": [
+    4,
+    8,
+    8,
+    16,
+    16
+  ],
+  "clock_dimension": 52,
+  "primitive_word": [
+    "birth port",
+    "G port",
+    "birth aux",
+    "CX port->aux",
+    "SourceI port Spin"
+  ],
+  "clock_orthogonality_error": 2.7520789953244547e-16,
+  "max_clock_column_or_row_l1": 1.9717365435132916,
+  "max_labelled_step_column_l1": 1.0640425884098268,
+  "envelope": 1.0909090909090908,
+  "normalized_heat": 0.4723969801986999,
+  "expected_signed_score": 0.4407030647734127,
+  "poisson_tail_18": 2.669223397564773e-18,
+  "expected_replicas": 1.1182303897351864,
+  "log_partition": 9.917847278200885
+}

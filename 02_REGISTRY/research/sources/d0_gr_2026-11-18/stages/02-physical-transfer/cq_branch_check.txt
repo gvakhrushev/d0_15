@@ -1,0 +1,3 @@
+PASS: 366 complete leaves across both signs and caps 0..5; exact Kraus,
+sum, terminal failure, mean cycle count, and both Shannon coefficients.
+PASS: exact modulo-5 denominators of all powers 1..32.

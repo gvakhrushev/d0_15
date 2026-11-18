@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "L": 5,
+      "N": 7,
+      "D": 92,
+      "H": "13.7294666973858686019186757604064021561685942",
+      "readouts": {
+        "g_1_0": {
+          "normalized": "4.010171454978104678285",
+          "exact": "4",
+          "abs_error": "0.010171455",
+          "rigorous_resolution_bound": "0.33561791"
+        },
+        "g_1_2": {
+          "normalized": "2.472135954999222806157",
+          "exact": "2.472135954999579392818",
+          "abs_error": "3.5658666e-13",
+          "rigorous_resolution_bound": "1.0794564e-6"
+        },
+        "g_2_4": {
+          "normalized": "0.4753640068687808571936",
+          "exact": "0.4721359549995793928183",
+          "abs_error": "0.0032280519",
+          "rigorous_resolution_bound": "0.015247797"
+        }
+      }
+    },
+    {
+      "L": 9,
+      "N": 11,
+      "D": 156,
+      "H": "14.4207159376802824751385923319677353096908699",
+      "readouts": {
+        "g_1_0": {
+          "normalized": "4.005710391224203705356",
+          "exact": "4",
+          "abs_error": "0.0057103912",
+          "rigorous_resolution_bound": "0.18590572"
+        },
+        "g_1_2": {
+          "normalized": "2.472135954999579392818",
+          "exact": "2.472135954999579392818",
+          "abs_error": "8.4298014e-25",
+          "rigorous_resolution_bound": "2.4162728e-17"
+        },
+        "g_2_4": {
+          "normalized": "0.4721359549995875090249",
+          "exact": "0.4721359549995793928183",
+          "abs_error": "8.1162066e-15",
+          "rigorous_resolution_bound": "5.5703063e-14"
+        }
+      }
+    },
+    {
+      "L": 15,
+      "N": 17,
+      "D": 252,
+      "H": "15.0484852497878322516660460900624884136598623",
+      "readouts": {
+        "g_1_0": {
+          "normalized": "4.003471429604256480234",
+          "exact": "4",
+          "abs_error": "0.0034714296",
+          "rigorous_resolution_bound": "0.1113742"
+        },
+        "g_1_2": {
+          "normalized": "2.472135954999579392818",
+          "exact": "2.472135954999579392818",
+          "abs_error": "1.318908e-43",
+          "rigorous_resolution_bound": "7.6113925e-35"
+        },
+        "g_2_4": {
+          "normalized": "0.4721359549995793928183",
+          "exact": "0.4721359549995793928183",
+          "abs_error": "3.7425797e-34",
+          "rigorous_resolution_bound": "6.8007467e-33"
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Scalar H fixed beta, paid pairs only; finite quotients use preceding exact coefficients.",
+    "Decimal calculations diagnostic. The source document proves the universal domain bound."
+  ]
+}

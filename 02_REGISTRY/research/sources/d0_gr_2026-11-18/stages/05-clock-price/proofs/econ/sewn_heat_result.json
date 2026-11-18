@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "words": [
+    "AABBCC",
+    "ABCBCA"
+  ],
+  "swap_wires": [
+    0,
+    1
+  ],
+  "gates_per_word": 6,
+  "births_per_word": 3,
+  "same_address_inventory": true,
+  "same_prepared_isometry": true,
+  "one_block_cycle_lengths": [
+    [
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      8,
+      9
+    ],
+    [
+      6,
+      6,
+      7,
+      9,
+      12,
+      15
+    ]
+  ],
+  "one_block_hodge_modes": 23375,
+  "two_block_hodge_modes": 210375,
+  "two_block_clock_histograms": {
+    "00": {
+      "6": 32,
+      "7": 16,
+      "8": 8,
+      "15": 4,
+      "16": 2,
+      "17": 1,
+      "18": 1
+    },
+    "01": {
+      "6": 16,
+      "7": 8,
+      "12": 8,
+      "15": 12,
+      "16": 2,
+      "17": 1,
+      "18": 1
+    },
+    "10": {
+      "6": 32,
+      "7": 16,
+      "8": 8,
+      "15": 2,
+      "16": 1,
+      "18": 1,
+      "30": 1,
+      "33": 1
+    },
+    "11": {
+      "6": 16,
+      "7": 8,
+      "12": 8,
+      "15": 10,
+      "16": 1,
+      "18": 1,
+      "30": 1,
+      "33": 1
+    }
+  },
+  "mixed_heat_finite_difference_sign": -1,
+  "strict_abs_mixed_lower_at_beta_2p2": "255879/321623743158420086982678389824272532228121034752000000000",
+  "approx_lower_scientific": "7.9558e-52",
+  "scope": "Entire selected RAW heat and feedback. Terminal input isometries only. No physical Book Cost-Info or Einstein-source identification."
+}

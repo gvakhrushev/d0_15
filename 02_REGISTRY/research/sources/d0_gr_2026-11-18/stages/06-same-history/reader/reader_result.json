@@ -1,0 +1,52 @@
+{
+  "result": "PASS",
+  "positive_addresses": [
+    0,
+    4,
+    8,
+    9,
+    12,
+    13,
+    16,
+    20,
+    24,
+    28,
+    29,
+    32,
+    36,
+    40,
+    44,
+    45,
+    48,
+    52,
+    56,
+    60,
+    61
+  ],
+  "material_same_history": true,
+  "hamming_cost": "9",
+  "d_entropy_read_in_golden_units": 0.0006113045526199756,
+  "hamming_bound": 0.002853033376448208,
+  "d_entropy_coherent_in_golden_units": 0.0039730060182410765,
+  "remaining_work_requirement": 0.03254695878794526,
+  "smallest_gram_eigenvalue": 1.5051532851710346e-10,
+  "largest_gram_eigenvalue": 0.9977148921978302,
+  "classical_interval": "[0.0006113045526199756305417541633504470932006619917961493169793409438933526, 0.0006113045526199756305417541633504470932006619917961493169793409481311207]",
+  "coherent_interval": "[0.003973006018241077080363509685259715488295591699213229974198187252904481, 0.003973006018241077080363509705259715488295591699213229974198187303062484]",
+  "local_work_necessary_oscillations": {
+    "common_local_target": 57.03921842734196,
+    "common_local_control_target": 13.46513293231135,
+    "independent_local_targets": 11.407843685468391,
+    "independent_local_control_targets": 2.69302658646227
+  },
+  "fixed_energy_oscillation": {
+    "classical_trace_variation": 0.0010820335846653804,
+    "coherent_trace_variation": "[0.001352857858873903751373291015624999999999999999999999999999999999999165, 0.001352857863530516624450683593750000000000000000000000000000000000002133]",
+    "full_label_trace_variation": 0.003625692997413107,
+    "min_classical_price_range": 30.079434916995137,
+    "min_coherent_price_range": "[24.05792926613025022833144064452285036377767078530525338339312510769977, 24.05792934893899645795979920754270182274416373326570574471051260936825]",
+    "min_full_label_price_range": 8.976755288207567
+  },
+  "proof": "interval matrix residual and polar-log bound; original 13-row jet input from section 7gd",
+  "complete_physical_binding": false
+}

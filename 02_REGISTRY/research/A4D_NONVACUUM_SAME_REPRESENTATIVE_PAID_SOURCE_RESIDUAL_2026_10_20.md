@@ -193892,3 +193892,10 @@ print(json.dumps(dict(status='PASS_NUMERICAL_DIAGNOSTIC', exact_claim=False,
 }
 ```
 <!-- END D0 20261118 CONTINUATION independent_curve_receipt.json -->
+
+
+## 7gg. Full interval of noisy H.1 returns and the remaining paid-work source
+
+The [shared evidence index](sources/d0_gr_2026-11-18/README.md) contains the proof, exact gate tests and individually recoverable source releases. From LC1–LC6, rotations of the original unread tail achieve a dense set of squared cold returns in the entire interval from zero to f(q)². That interval shrinks on the noisy collar. The optimized specified code price plus any continuous function of this return increases at least by the known code-price increment. The result allows nonsmooth switches of minimizers and retains the old-source bound under its stated hypotheses. At any fixed layout only finitely many compiled angles are available.
+
+A pair of equal-length words with identical endpoint has a field-dependent difference for an explicit positive gate-local test tariff. This is a test of the missing constitutive identification on the full chronological execution. The actual Book03 price has not been assigned that tariff or proved to factor through the return. The status of physical C and `GR_closed=false` is preserved.

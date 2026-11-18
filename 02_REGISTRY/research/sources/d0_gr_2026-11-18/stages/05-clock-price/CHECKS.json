@@ -1,0 +1,45 @@
+{
+  "pinned_revision": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "entry": "SYNTHESIS_RU.md",
+  "reproduce": "python replay.py",
+  "physical_GR_closed": false,
+  "primary_physical_Cost_Info_binding": false,
+  "mean_additional_terminal_cost_equals_selected_action": true,
+  "explicit_access_assumptions": [
+    "complete compiled word on all coherent branches",
+    "conditional cold-return access at unchanged field",
+    "genuine prepared work, controller randomness and separate parsed NC1 reports"
+  ],
+  "validated_primary_excerpts": 11,
+  "original_archive": "7390dc06b71682aff215e799f77e324e93758818a2f3f7e7e453da0176f4060b",
+  "verified_original_members": 13,
+  "main_calculations": [
+    "check_master_mark.py",
+    "check_all_leaves.py",
+    "check_mean_price.py"
+  ],
+  "supporting_calculations": [
+    "thermal/check_ancestral_heat.py",
+    "thermal/check_fixed_beta.py",
+    "econ/check_sewn_heat.py",
+    "continuum/check_age.py",
+    "continuum/check_native_heat_path.py",
+    "continuum/frozen/check_full128_cq_coframe_residual.py",
+    "continuum/frozen/check_actual_ledger_row.py",
+    "continuum/frozen/check_cq_tail.py",
+    "continuum/frozen/check_cq_bright_terms.py",
+    "continuum/check_stopped_reader.py"
+  ],
+  "original_controls": [
+    "check_projective_rigidity.py",
+    "doob_actual_mark.py"
+  ],
+  "replay_environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "pdf_pages": 2
+}

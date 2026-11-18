@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "earliest_age": 7,
+  "youngest_age": 5,
+  "clock_dimension": 92,
+  "pure_rational_gap": [
+    "33/196",
+    "10/11"
+  ],
+  "cases": [
+    {
+      "name": "fixed_port_SourceI",
+      "exact_s": "5 - 2*sqrt(5)",
+      "s_from_low_band": 0.5278640450001957,
+      "low_min": 0.0,
+      "low_max": 0.16726295330961197,
+      "next_mode": 0.909090909090909,
+      "all_modes": 39100,
+      "H_from_all": 13.729466697385867,
+      "H_rebuilt_from_low": 13.729466697385867,
+      "J_from_low": 1.801056142016344e-06
+    },
+    {
+      "name": "G_bus",
+      "exact_s": "-1/2 + sqrt(5)/2",
+      "s_from_low_band": 0.6180339887499982,
+      "low_min": 0.0004440503888498082,
+      "low_max": 0.1682729867280894,
+      "next_mode": 0.909570435288,
+      "all_modes": 39100,
+      "H_from_all": 13.729466697393862,
+      "H_rebuilt_from_low": 13.729466697393862,
+      "J_from_low": 1.4570849640641118e-06
+    }
+  ],
+  "scope": "Exact clock traces and gaps; decimals in the low-band reconstruction are a floating diagnostic. No primitive-rate or readout admission is claimed."
+}

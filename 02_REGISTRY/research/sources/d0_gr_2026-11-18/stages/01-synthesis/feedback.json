@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "matrix_controls": [
+    {
+      "case": 1,
+      "tracial": true,
+      "DPI_gain": "0.1044308036210190373",
+      "absolute_identity_error": "5.433e-71",
+      "stage_gains": [
+        "0.03774334696633335613",
+        "0.06668745665468568116",
+        "0"
+      ]
+    },
+    {
+      "case": 2,
+      "tracial": false,
+      "DPI_gain": "0.3175488736332951282",
+      "absolute_identity_error": "6.339e-71",
+      "stage_gains": [
+        "0.1206167054978213897",
+        "0.1969321681354737386",
+        "0"
+      ]
+    },
+    {
+      "case": 3,
+      "tracial": true,
+      "DPI_gain": "0.007658462214922138457",
+      "absolute_identity_error": "8.603e-71",
+      "stage_gains": [
+        "0.005272819365335616021",
+        "0.002385642849586522436",
+        "0"
+      ]
+    }
+  ],
+  "golden_exact_and_enclosures": {
+    "G": {
+      "q": "0.61803398874989484820458683",
+      "information_nats": "1.07351381719326159404595e-13"
+    },
+    "CX": {
+      "q": "0.97852518722427540879603073",
+      "information_nats": "9.55590568946887623268061e-15"
+    },
+    "GG": {
+      "q": "0.055728090000841214363305325",
+      "information_nats": "2.39299584037476474739478e-14"
+    }
+  },
+  "scope": "Finite algebra and stated examples. Physical Cost-Info binding unproved."
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "normalised_finite_curve": "Lambda=9/640 I",
+  "raw_coframe_quadratic": "1/64 I",
+  "endpoint_parameter": [
+    "-1/16",
+    "1/16"
+  ],
+  "finite_address9_probability_difference": "0.00045410520735769427219091403",
+  "strict_finite_lower_bound": "1/5200",
+  "all_coarse_port_laws_identical_on_curve": true,
+  "signatures_in_units_9p2_over_2560": {
+    "eigen": {
+      "2": "123/10",
+      "3": "24/5",
+      "5": "-6/5"
+    },
+    "occupation": {
+      "2": "306/25",
+      "3": "24/5",
+      "5": "-21/20"
+    },
+    "walsh": {
+      "2": "63/5",
+      "3": "24/5",
+      "5": "-6/5"
+    },
+    "plus_i": {
+      "2": "15191/1250",
+      "3": "23993/5000",
+      "5": "-9/8"
+    },
+    "minus_i": {
+      "2": "15319/1250",
+      "3": "23737/5000",
+      "5": "-9/8"
+    }
+  },
+  "source_nats": {
+    "eigen": "0.01593656411809415853018039306",
+    "occupation": "0.01620490146350473379686363317",
+    "walsh": "0.01621580177128669547938831314",
+    "plus_i": "0.01595957856864309716061253651",
+    "minus_i": "0.01597935782791315985405039443"
+  },
+  "phase_gap_nats_exact": "9*p^2/50000*log(4/3)",
+  "phase_gap_nats": "0.00001977925927006269343785791623",
+  "classical_endpoint_gap_nats_exact": "27*p^2/25600*log(2)",
+  "four_cell_derivative_units_9p2_over_2560": {
+    "(13, 0)": "-8/625",
+    "(13, 3)": "8/625",
+    "(45, 0)": "8/625",
+    "(45, 3)": "-8/625"
+  },
+  "physical_two_pointer_golden_moment_at_centre": "31128017/12800000 - 12410363*sqrt(5)/12800000",
+  "joint_coincidence_source_difference": "-0.0000171884705062547318307936",
+  "paid_log_response_fraction_of_joint_information_response": "0.0102276783445155641766159",
+  "two_marker_ratio_intervals": {
+    "15": [
+      "0.9675",
+      "0.9677"
+    ],
+    "16": [
+      "1.0325",
+      "1.0327"
+    ]
+  },
+  "calibration_probability_for_16_each_side": 0.7841107516391831,
+  "phase_preparations_have_same_complete_classical_central_probabilities": true,
+  "physical_mandatory_info_selected": false,
+  "GR_closed": false
+}

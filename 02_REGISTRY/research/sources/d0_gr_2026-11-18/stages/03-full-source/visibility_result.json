@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "SC6_visibility_multiples": {
+    "1": {
+      "native_q": 0.41246988056855516,
+      "log10_abs_conjugate": 474.05752124539407
+    },
+    "2": {
+      "native_q": 0.3895392706133413,
+      "log10_abs_conjugate": 946.0251660882884
+    },
+    "3": {
+      "native_q": 0.3992035907659641,
+      "log10_abs_conjugate": 1417.9928109311827
+    },
+    "4": {
+      "native_q": 0.40520494137056073,
+      "log10_abs_conjugate": 1889.960455774077
+    },
+    "8": {
+      "native_q": 0.4085002342586535,
+      "log10_abs_conjugate": 3777.8310351456544
+    },
+    "16": {
+      "native_q": 0.4015086339162296,
+      "log10_abs_conjugate": 7553.572193888808
+    },
+    "31": {
+      "native_q": 0.38204276587696406,
+      "log10_abs_conjugate": 14633.086866532223
+    },
+    "64": {
+      "native_q": 0.3870475614999215,
+      "log10_abs_conjugate": 30208.019146347735
+    }
+  },
+  "single_read_bound": "-1/(1-q) <= d_q log mass <= 1/q",
+  "same_H1_task_for_changed_visibility_proved": false
+}

@@ -1,0 +1,2 @@
+All 64 signed columns form a permutation; four input columns for coherent ctl(ZX,G) satisfy the stated compression and every retry path over Q(a).
+q, lambda, mean calls: 0.38196601125010515 0.4721359549995794 3.618033988749895

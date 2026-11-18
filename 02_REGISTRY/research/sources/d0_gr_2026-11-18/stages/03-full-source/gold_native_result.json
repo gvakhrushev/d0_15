@@ -1,0 +1,205 @@
+{
+  "status": "PASS",
+  "primary_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "full_hardware_columns": 32,
+  "arbitrary_data_spin_input_columns": 8,
+  "full_gadget": {
+    "forward": {
+      "CX": 10,
+      "SourceI": 5
+    },
+    "cheap_inverse_expansion": {
+      "CX": 10,
+      "SourceI": 15
+    },
+    "good_compression": "a*p*G tensor I_spin",
+    "good_probability": "p^3"
+  },
+  "controlled_J": {
+    "forward": {
+      "CX": 9,
+      "SourceI": 5
+    },
+    "inverse_expansion": {
+      "CX": 9,
+      "SourceI": 15
+    }
+  },
+  "two_probe_X": {
+    "pair_stage_1": {
+      "CX": 1
+    },
+    "pair_stage_2": {
+      "CX": 7,
+      "SourceI": 2
+    },
+    "minus_click": "-2*a*p*Pminus",
+    "plus_click_after_noclick": "-2*a*p*Pplus",
+    "both_noclick": "p^3 I",
+    "unresolved_after_L_pairs": "p^(6L)",
+    "mean_pairs_unlimited": "1/(1-p^6)"
+  },
+  "golden_basis_inverse_rotations": {
+    "0": {
+      "G": 1,
+      "SourceI": 4
+    },
+    "1": {
+      "CX": 6,
+      "G": 1,
+      "SourceI": 4
+    }
+  },
+  "no_multi_controlled_gates": true,
+  "native_unitary_gates_used": [
+    "CX",
+    "SourceI",
+    "G"
+  ],
+  "restoration": {
+    "binary_X": "Pplus/Pminus Lueders",
+    "all_ok": "G tensor I_spin",
+    "terminal_minus": "G^T tensor I_spin",
+    "ideal_X_caps": [
+      {
+        "extra_cycles": 0,
+        "success_transcripts": 1,
+        "minus_at_cap_transcripts": 1,
+        "binary_tests_in_tree": 1,
+        "abort": "1/2"
+      },
+      {
+        "extra_cycles": 1,
+        "success_transcripts": 3,
+        "minus_at_cap_transcripts": 2,
+        "binary_tests_in_tree": 3,
+        "abort": "1/4"
+      },
+      {
+        "extra_cycles": 2,
+        "success_transcripts": 7,
+        "minus_at_cap_transcripts": 4,
+        "binary_tests_in_tree": 7,
+        "abort": "1/8"
+      },
+      {
+        "extra_cycles": 3,
+        "success_transcripts": 15,
+        "minus_at_cap_transcripts": 8,
+        "binary_tests_in_tree": 15,
+        "abort": "1/16"
+      },
+      {
+        "extra_cycles": 4,
+        "success_transcripts": 31,
+        "minus_at_cap_transcripts": 16,
+        "binary_tests_in_tree": 31,
+        "abort": "1/32"
+      },
+      {
+        "extra_cycles": 5,
+        "success_transcripts": 63,
+        "minus_at_cap_transcripts": 32,
+        "binary_tests_in_tree": 63,
+        "abort": "1/64"
+      }
+    ],
+    "uncapped_fair_records": {
+      "mean_X_calls": 2,
+      "mean_forward_W": 2,
+      "mean_inverse_W": 1,
+      "mean_intermediate_v_w_tests": 1,
+      "mean_total_probes": "(3+p^6)/(1-p^6)",
+      "shannon_entropy_complete_transcript_nats": "3 ln(2)+2[-ln(1-p^6)-(p^6/(1-p^6))*ln(p^6)]",
+      "meaning": "All clicks, inconclusive pairs, and intermediate v/w outcomes retained; input preparations and external hardware records excluded."
+    },
+    "finite_X_success_formula": "sum_{j=1}^{N+1} ((1-p^(6L))/2)^j",
+    "finite_X_caps": [
+      {
+        "extra_cycles": 0,
+        "max_probe_pairs_per_X": 1,
+        "raw_read_abort": 0.05572809000084122,
+        "minus_at_cap": 0.4721359549995794,
+        "total_abort": 0.5278640450004206
+      },
+      {
+        "extra_cycles": 0,
+        "max_probe_pairs_per_X": 2,
+        "raw_read_abort": 0.0031056200151418586,
+        "minus_at_cap": 0.4984471899924291,
+        "total_abort": 0.5015528100075709
+      },
+      {
+        "extra_cycles": 0,
+        "max_probe_pairs_per_X": 3,
+        "raw_read_abort": 0.00017307027171223935,
+        "minus_at_cap": 0.4999134648641439,
+        "total_abort": 0.5000865351358561
+      },
+      {
+        "extra_cycles": 1,
+        "max_probe_pairs_per_X": 1,
+        "raw_read_abort": 0.08203932499369089,
+        "minus_at_cap": 0.22291236000336487,
+        "total_abort": 0.30495168499705577
+      },
+      {
+        "extra_cycles": 1,
+        "max_probe_pairs_per_X": 2,
+        "raw_read_abort": 0.004653607584873563,
+        "minus_at_cap": 0.24844960121134868,
+        "total_abort": 0.2531032087962222
+      },
+      {
+        "extra_cycles": 1,
+        "max_probe_pairs_per_X": 3,
+        "raw_read_abort": 0.00025959043090888374,
+        "minus_at_cap": 0.24991347235247363,
+        "total_abort": 0.2501730627833825
+      },
+      {
+        "extra_cycles": 2,
+        "max_probe_pairs_per_X": 1,
+        "raw_read_abort": 0.09446180505425833,
+        "minus_at_cap": 0.10524493997139871,
+        "total_abort": 0.19970674502565705
+      },
+      {
+        "extra_cycles": 2,
+        "max_probe_pairs_per_X": 2,
+        "raw_read_abort": 0.00542519763914954,
+        "minus_at_cap": 0.12383900557853636,
+        "total_abort": 0.1292642032176859
+      },
+      {
+        "extra_cycles": 2,
+        "max_probe_pairs_per_X": 3,
+        "raw_read_abort": 0.00030284302347347556,
+        "minus_at_cap": 0.12493510987995451,
+        "total_abort": 0.12523795290342798
+      },
+      {
+        "extra_cycles": 3,
+        "max_probe_pairs_per_X": 1,
+        "raw_read_abort": 0.10032690454111756,
+        "minus_at_cap": 0.04968992024226974,
+        "total_abort": 0.1500168247833873
+      },
+      {
+        "extra_cycles": 3,
+        "max_probe_pairs_per_X": 2,
+        "raw_read_abort": 0.005809794533529507,
+        "minus_at_cap": 0.06172720434207819,
+        "total_abort": 0.0675369988756077
+      },
+      {
+        "extra_cycles": 3,
+        "max_probe_pairs_per_X": 3,
+        "raw_read_abort": 0.0003244655768867978,
+        "minus_at_cap": 0.06245674366327059,
+        "total_abort": 0.0627812092401574
+      }
+    ]
+  },
+  "scope": "Verified complete unitary columns plus a CQ protocol with external projective readings, fresh probes, recorded branches and conditional repetition. Stage counts omit preparations, readout, archive, irreversible resources, and physical weight assignment. Neither full Cost-Info nor universal admission is derived."
+}

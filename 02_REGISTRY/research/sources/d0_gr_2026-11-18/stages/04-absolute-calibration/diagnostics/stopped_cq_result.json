@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "pinned_embedded_constructor": "2ac8b4202c0212cf19a66c0a8940680cf94a405bdd99f2466936076faa7e9d66",
+  "nonzero_informative_Walsh_rows": 20,
+  "rms_square_including_all_63_rows": "8005/5679",
+  "single_informative_record_bound": [
+    "0.0157",
+    "0.0158"
+  ],
+  "absolute_remaining_derivative_lt": "0.0104",
+  "full_stopped_geometric_derivative_strict_interval": [
+    "0.005",
+    "0.027"
+  ],
+  "cost_derivative": "0",
+  "generated_preparation_derivative": "0",
+  "units": "natural logarithms",
+  "physical_Book_Info_selection_proved": false
+}
