@@ -1,0 +1,28 @@
+{
+  "GR_closed": false,
+  "supported_displacements_with_center": 11,
+  "retained_Fourier128_y_neighbour_overlap": "0",
+  "unit_signed_wave_source_on_incremental_code_minus_CQ": true,
+  "scalar_Born_Shannon_partition_requires_ancestor_Info_update": true,
+  "absolute_native_history_admitted_and_priced": false,
+  "dyadic_eigenvalue_limit_divided_by_h_squared": "384*pi^4",
+  "statistics_and_code": {
+    "4": {
+      "gain_in_units_p_inverse_11": "1/4096",
+      "printed_bits": 53248,
+      "cx_suffix": 96256
+    },
+    "8": {
+      "gain_in_units_p_inverse_11": "1/262144",
+      "printed_bits": 3407872,
+      "cx_suffix": 6160384
+    }
+  },
+  "source_sha256": {
+    "sources/d0_two_agent_pilot_2026-11-13/direct/round73/matter/check_matter_root.py": "3b6f6e7edc47d62e9549b44bc6bb00570f8e501ca86eb9cb714bbf42e648019b",
+    "sources/d0_two_agent_pilot_2026-11-13/direct/round74/polarization/UNIT_MATERIAL_RESPONSE_RU.md": "a4db60b51df15cdb26586388ec38982d4ea23cccf36c74a4e31495e4cbcbe5d1",
+    "sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15",
+    "sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md": "ce8d2e88d8a5669a3ef9de1a849a5e21ec0a55b3fdb253d4b990656b0062427a",
+    "A4D_NATIVE_BOOK03_BORN_ENTROPY_BELLMAN_VERTEX_INFORMATION_WELD_2026_10_22.md": "6c4d8e175a2bc23ea2f6995fa111897b73ce07ed45e3ce19041bacaa5245a116"
+  }
+}
