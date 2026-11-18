@@ -21,6 +21,10 @@ python3 -B "$d/metric/check_heat_history.py"
 python3 -B "$d/metric/check_scene_walk_heat.py"
 python3 -B "$d/metric/check_golden_record_race.py"
 python3 -B "$d/metric/check_paid_race_prefix.py"
+python3 -B "$d/metric/check_block_code.py"
+python3 -B "$d/metric/check_source_price.py"
+python3 -B "$d/metric/check_prefix_cx.py"
+python3 -B "$d/metric/check_site_ward.py"
 python3 -B "$d/arithmetic/check_arithmetic.py"
 python3 -B "$d/axioms/check_gate_field.py" --repo .
 python3 -B "$d/conditional/check_conditional.py" --repo .
@@ -46,6 +50,10 @@ python3 -B "$d/realization/check_realization.py"
 | Блуждание по 33 вершинам | Все коэффициенты при разных намотках до 19 шагов и граница ошибки вычисления производной. [Результат](metric/scene_walk_heat_result.json) |
 | Оплаченная запись и полный мастер | Пуассоновские рекорды, шансы исходов, дисперсия счёта и условные средние золотые длины с неудачными попытками. [Результат](metric/golden_record_race_result.json) |
 | Реальные расходы перед решением | Отмена всей предыстории при постоянных шансах, меняющаяся вероятность остановки, оставшийся расход по успешным пробам. [Результат](metric/paid_race_prefix_result.json) |
+| Оптимальный архивный код | Все профили на блоках до пяти записей, строгие разрывы, 100 активных расстановок, односторонние и симметрические отклики. [Результат](metric/block_code_result.json) |
+| Минимальный код и цена выполнения | Штатный NPS14, два обратимых языка программ и точная разность средней цены реально читаемой метки. [Результат](metric/source_price_result.json) |
+| Холодный определитель перед и после CX | Нативные слова с общим конечным оператором и разными приращениями определителя на одной операции. [Результат](metric/prefix_cx_result.json) |
+| Перенос адресного приготовления | Семивходовый компаратор, норма вариации, поток между ячейками и знак встречного члена. [Результат](metric/site_ward_result.json) |
 | Арифметика исходной вероятности | Вычисление в целом кольце и независимо по модулю 13. Норма отношения шансов равна 5 по модулю 13. [Результат](arithmetic/arithmetic_result.json) |
 | Нативный участок G и двух CX | Фактические слова и матрица на 64 столбцах. Проверены инвариант и поля его коэффициентов. [Результат](axioms/gate_field_result.json) |
 | Условие на историю | Два полных исходных слова B121, когерентные амплитуды и точная вероятностная цена дополнительной регистрации. [Результат](conditional/result.json) |

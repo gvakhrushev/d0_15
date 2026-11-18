@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "native_response_polynomial": {
+    "fixed_probabilities": [
+      "1/10",
+      "3/20",
+      "1/4",
+      "1/5",
+      "3/10"
+    ],
+    "Xi": [
+      "-12/289",
+      "137/289",
+      "-48/289",
+      "48/289",
+      "-10/289"
+    ],
+    "four_times_variance_exact": "1480779/8352100",
+    "single_face_source_before_calibration": "447/4913",
+    "scope": "seven rational bank entries per cell test the true T3 polynomial; no claim that this particular table is realized by a D0 geometry"
+  },
+  "cell_calibration": [
+    {
+      "cells": 2,
+      "loader_amplitude_norm_squared": "1/16",
+      "loader_source": "1/8",
+      "transported_cell_mean_source": "-1/8",
+      "exact_sum": "0",
+      "sum_with_point_sampled_bank": "-1/16"
+    },
+    {
+      "cells": 4,
+      "loader_amplitude_norm_squared": "5/64",
+      "loader_source": "5/32",
+      "transported_cell_mean_source": "-5/32",
+      "exact_sum": "0",
+      "sum_with_point_sampled_bank": "-1/64"
+    },
+    {
+      "cells": 8,
+      "loader_amplitude_norm_squared": "21/256",
+      "loader_source": "21/128",
+      "transported_cell_mean_source": "-21/128",
+      "exact_sum": "0",
+      "sum_with_point_sampled_bank": "-1/256"
+    },
+    {
+      "cells": 16,
+      "loader_amplitude_norm_squared": "85/1024",
+      "loader_source": "85/512",
+      "transported_cell_mean_source": "-85/512",
+      "exact_sum": "0",
+      "sum_with_point_sampled_bank": "-1/1024"
+    },
+    {
+      "cells": 64,
+      "loader_amplitude_norm_squared": "1365/16384",
+      "loader_source": "1365/8192",
+      "transported_cell_mean_source": "-1365/8192",
+      "exact_sum": "0",
+      "sum_with_point_sampled_bank": "-1/16384"
+    }
+  ],
+  "limits": {
+    "amplitude_norm_squared": "1/12",
+    "loader_source": "1/6",
+    "bank_source": "-1/6"
+  },
+  "metric_only_Ward_established": false,
+  "physical_price_selected": false
+}
