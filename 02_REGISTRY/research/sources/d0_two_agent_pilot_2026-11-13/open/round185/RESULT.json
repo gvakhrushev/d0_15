@@ -1,0 +1,30 @@
+{
+  "sparse_logical_readout": {
+    "matrix_dimension": 4,
+    "integer_layers": 7,
+    "p_layers": 4,
+    "distinct_controller_atoms_used": 22,
+    "golden_selector_births": 8,
+    "signal_multiplier": "4 p^(3 + 3 b) with A integral over Z[p]",
+    "native_probe_CX_G_SourceI_replayed": true,
+    "logical_Toffoli_factories_replaced_by_exact_success_action_in_fixture": true,
+    "actual_old_port_spin_columns_per_involution": 64,
+    "full_H1_paid_layout_materialized": false,
+    "GR_closed": false
+  },
+  "actual_mathematical_H1_path": {
+    "original_EPS_PLUS_secants": [
+      "3*lambda/256",
+      "-3*lambda/256"
+    ],
+    "compensated_coframe_determinant": "1",
+    "ordered_faces": 6,
+    "symbolic_finite_t_without_Taylor_remainder": true
+  },
+  "reciprocal_support": {
+    "equal_profile_click": "exact zero",
+    "opposite_profile_amplitude": "+-p*h/(16 sqrt(2))"
+  },
+  "native_actuator_on_full_H1_price_verified": false,
+  "GR_closed": false
+}
