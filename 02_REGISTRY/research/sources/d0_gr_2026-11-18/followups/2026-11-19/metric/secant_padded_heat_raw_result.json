@@ -1,0 +1,84 @@
+{
+  "status": "PASS; fixed-scene and common-graph theorem; conditional full apparatus",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "thermal_scene_state_fixed_and_uncorrelated": false,
+  "correlated_scene_work_case": {
+    "common_spatial_marginal_kept": true,
+    "spatial_work_entangled": true,
+    "same_marginal_log_contrast": 1.0309783418239187e-08,
+    "moving_scene_log_contrast": 0.0012661302386496,
+    "moving_scene_leading_term": 0.0012661654518791817,
+    "common_L4_error_bound": 1.8118168177986377e-05
+  },
+  "programme_label_may_remain_in_carrier": true,
+  "native_small_clock": {
+    "2": {
+      "physical_L": 4,
+      "clock_dimension": 38,
+      "raw_J_fixed": 7.613888058729189e-07,
+      "rho_trace_distance": 2.0000000000000004,
+      "eL_analytic_upper": 1.965809217389729e-06,
+      "heat_error_measured": 5.097897618622186e-08,
+      "log_heat_contrast_over_delta": 4.5148609943979223e-13,
+      "analytic_bound": 7.674979202972378e-05,
+      "comparison_roundoff_margin": 3e-11
+    },
+    "3": {
+      "physical_L": 6,
+      "clock_dimension": 54,
+      "raw_J_fixed": 7.613888058729189e-07,
+      "rho_trace_distance": 2.0000000000000004,
+      "eL_analytic_upper": 3.1477477038891116e-10,
+      "heat_error_measured": 2.0468209698851623e-12,
+      "log_heat_contrast_over_delta": 0.0,
+      "analytic_bound": 1.9884899314533237e-08,
+      "comparison_roundoff_margin": 3e-11
+    },
+    "4": {
+      "physical_L": 8,
+      "clock_dimension": 70,
+      "raw_J_fixed": 7.613888058729189e-07,
+      "rho_trace_distance": 2.0000000000000004,
+      "eL_analytic_upper": 2.7050166081223423e-14,
+      "heat_error_measured": 4.498583736966685e-16,
+      "log_heat_contrast_over_delta": 4.925024807422614e-15,
+      "analytic_bound": 2.7649103655779294e-12,
+      "comparison_roundoff_margin": 3e-11
+    }
+  },
+  "high_precision_asymptotic_bounds": {
+    "4": {
+      "L": 8,
+      "delta": "0.0901699437494742",
+      "e_L_upper": "2.70501660812234e-14",
+      "negative_log_phi_contrast_over_delta_bound_without_gain": "5.74572406909465e-12"
+    },
+    "8": {
+      "L": 16,
+      "delta": "0.0131556174964248",
+      "e_L_upper": "2.81048126612604e-32",
+      "negative_log_phi_contrast_over_delta_bound_without_gain": "4.09172168336125e-29"
+    },
+    "20": {
+      "L": 40,
+      "delta": "4.08563490084474e-5",
+      "e_L_upper": "1.13920632263093e-94",
+      "negative_log_phi_contrast_over_delta_bound_without_gain": "5.34046976267985e-89"
+    },
+    "40": {
+      "L": 80,
+      "delta": "2.70088908488101e-9",
+      "e_L_upper": "6.02056420079005e-212",
+      "negative_log_phi_contrast_over_delta_bound_without_gain": "4.26940221149606e-202"
+    },
+    "80": {
+      "L": 160,
+      "delta": "1.18032373326015e-17",
+      "e_L_upper": "1.96646369113674e-470",
+      "negative_log_phi_contrast_over_delta_bound_without_gain": "3.19096044556e-452"
+    }
+  },
+  "independent_book_price_and_suffix_cost_identified": false,
+  "full_physical_gain_and_actual_device_compiled": false,
+  "GR_closed": false
+}

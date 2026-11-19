@@ -249,6 +249,10 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Seed и материальный канал:** `python3 -B -W error metric/check_seed_fourier_channel.py` проверяет 1 048 576 логических столбцов, Fourier BDD и запутанную память; [область результата](metric/SEED_FOURIER_CHANNEL_RU.md).
+
+**Тепло после платного суффикса:** `python3 -B metric/check_secant_padded_heat_raw.py` проверяет малые часы, пространственные корреляции и границы; [результат](metric/secant_padded_heat_raw_result.json) и [условия](metric/SECANT_PADDED_HEAT_RAW_RU.md).
+
 **Тонкие исходы и амплитуды:** `python3 -B metric/check_thin_record_amplitude_audit.py` проверяет реальный считыватель на всех 16 старых столбцах, две зарегистрированные ветви и тепловую оценку. Область отрицательного результата и открытая полная цена указаны в [записке](metric/THIN_RECORD_AMPLITUDE_AUDIT_RU.md).
 
 **Общая программа и свежие запросы:** `python3 -B metric/check_program_central_fresh_query.py` проверяет центральную факторизацию, спутанный RIGHT, модель отказов, подвижную подготовку и затухание когерентности; см. [результат](metric/program_central_fresh_query_result.json) и [условия](metric/PROGRAM_CENTRAL_FRESH_QUERY_RU.md).
