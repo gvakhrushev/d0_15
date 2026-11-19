@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "old_live_T_spin_port_columns": 16,
+  "true_corrector_calls": 14,
+  "positive_full_root_leaf_compressions": [
+    "p^4 I",
+    "p^4 I"
+  ],
+  "full_root_cold_operator": "2 p^4 I",
+  "full_clock_staged_dimension": 25760,
+  "full_two_degree_spatial_dimension": 10948000,
+  "terminal_depths_before_actual_wrap": [
+    36,
+    37
+  ],
+  "short_branch_first_moments_t0_t1": [
+    "sqrt(p) p^3",
+    "-p^3"
+  ],
+  "long_two_wrap_tail_route_at_least": 61,
+  "aggregate_sector_heat_difference": "k_0-k_1 > 0.39 f_37",
+  "conditional_print_minus_CQ_derivative": "p^3 Dq",
+  "GR_closed": false,
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round82/device/check_prepaid_report.py": "d7bb38033ccfade7f29b76195928b18ec507c82cc633ab7e3e67f6d1a57bc99f",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round169/B169_TERMINAL_GIBBS_BORN_RU.md": "b299d1fa7544ccb37897458458f317b6cd741a9403b0a19ede55c3f2a9a0fe13",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "first_digit_split_of_the_actual_selector36": [
+    [
+      5644800,
+      0
+    ],
+    [
+      4939200,
+      0
+    ],
+    [
+      4346352,
+      44048
+    ],
+    [
+      0,
+      3087000
+    ],
+    [
+      0,
+      1580544
+    ],
+    [
+      0,
+      548800
+    ],
+    [
+      0,
+      115200
+    ],
+    [
+      0,
+      11025
+    ]
+  ],
+  "slope_of_setting_4_when_setting_1_has_unit_slope": "-64/35",
+  "late_marginal_derivative": "0",
+  "conditional_gap_lower_bound_times_actual_eta": ".08",
+  "extra_record_source_lower_bound_times_actual_eta_squared": ".112",
+  "visible_direction_has_native_admission_proved": false,
+  "GR_closed": false
+}

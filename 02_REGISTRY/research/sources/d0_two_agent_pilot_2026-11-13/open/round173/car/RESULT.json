@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "PR334_commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+  "dyadic_L": 4,
+  "exact_mathematical_whole_column_factorization": true,
+  "exact_integer_Walsh_selector_3_and_4_controls": true,
+  "native_replay_columns_including_source_work": 512,
+  "RIGHT_and_other_SITE_axes_are_untouched_tensor_factors": true,
+  "literal_op_inventory_both_endpoints": {
+    "CX": 766,
+    "SourceI": 1056,
+    "G": 65152
+  },
+  "static_site_power_indices": [
+    131,
+    -531
+  ],
+  "static_anchor_power_index": 260,
+  "two_cartesian_power_vectors": [
+    [
+      290,
+      0
+    ],
+    [
+      435,
+      -145
+    ]
+  ],
+  "cartesian_secant_step": 0.015625,
+  "static_phase_error_upper_bound": 0.011477674425227314,
+  "static_anchor_error": 0.005079264713424841,
+  "illustrative_operator_value_errors": [
+    0.006033888675063993,
+    0.006278178524639225
+  ],
+  "proved_form_operator_value_bounds_at_example": [
+    0.037947241888722845,
+    0.04339159628832571
+  ],
+  "illustrative_operator_secant_error": 0.15921527471504923,
+  "proved_form_operator_secant_bound_at_example": 1.6417359534485132,
+  "illustrative_fixed_projector_secant_error": 0.16019541804224938,
+  "proved_form_fixed_projector_secant_bound_at_example": 3.3352076340156653,
+  "GR_closed": false
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "primary": "2350117b4",
+  "algebraic_obstruction": {
+    "deterministic_all_columns_obstructed_even_L_at_least": 6,
+    "conditioning_on_native_positive_branch_keeps_density_in_field": true,
+    "even_small_denominator_square_root_obstructions": {
+      "6": "sqrt(3)",
+      "8": "sqrt(2)",
+      "12": "sqrt(3)"
+    },
+    "L10_sine_square_norm": "5/16"
+  },
+  "binary_phase_witness": {
+    "L": 8,
+    "explicit_integer_only_witness": {
+      "anchor": {
+        "power": -1721,
+        "control_count": 3,
+        "error_upper": "0.000198"
+      },
+      "tilt": {
+        "power": 1483,
+        "control_count": 3,
+        "error_upper": "0.000208"
+      },
+      "low_address_bit": {
+        "power": -8915,
+        "control_count": 4,
+        "error_upper": "0.000278"
+      },
+      "middle_address_bit": {
+        "power": 131,
+        "control_count": 4,
+        "error_upper": "0.000085"
+      },
+      "high_address_bit": {
+        "power": -262,
+        "control_count": 4,
+        "error_upper": "0.000169"
+      }
+    },
+    "whole_car_site_operator_error_upper": ".0017",
+    "constant_complement_and_no_address_read_proved": true,
+    "witness_is_not_at_the_geometric_gain_precision": true
+  },
+  "GR_closed": false
+}
