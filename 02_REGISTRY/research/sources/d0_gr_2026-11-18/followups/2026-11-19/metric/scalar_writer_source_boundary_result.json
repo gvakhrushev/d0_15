@@ -1,0 +1,17 @@
+{
+  "FQ_weight_is_selected_Book03_price": false,
+  "GR_closed": false,
+  "direct_writer_dq_dt": 0.23606797749978975,
+  "direct_writer_q_at_half": 0.5,
+  "finite_control_heat_bound_per_dq": 1.703790476420289,
+  "finite_control_heat_source_per_dq": -6.900762745665484e-05,
+  "normalized_partition_input_source": 0.0,
+  "owner_heat_source_per_dq_upper_L12": 8.574192626821618e-21,
+  "owner_heat_tail_L12_upper": 5.2840107332078027e-23,
+  "same_scalar_effect_does_not_mean_same_full_output": true,
+  "status": "PASS; fixed scalar-effect input-only source boundary",
+  "two_copy_target_dQ_ds": 0.5000000000005,
+  "two_copy_target_dQ_dt": -0.4999999999991122,
+  "whole_factory_all_failures_and_full_GR_proved": false,
+  "writer_and_locator_effect_without_hardware_ready": 0.6171118482127863
+}

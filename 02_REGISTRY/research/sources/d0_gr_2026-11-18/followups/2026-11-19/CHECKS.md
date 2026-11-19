@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Источник скалярного writer:** `python3 -B -W error metric/check_scalar_writer_source_boundary.py` проверяет полный эффект, тепловую границу, старый RIGHT и двухкопийный материальный контраст; [результат](metric/scalar_writer_source_boundary_result.json) и [условия](metric/SCALAR_WRITER_SOURCE_BOUNDARY_RU.md).
+
 **Bootstrap центральных слов:** `python3 -B metric/check_matched_clock_bootstrap_equivalence.py` проверяет 16 входов и интервалы на отмеченных часах; [результат](metric/matched_clock_bootstrap_equivalence_result.json) и [условия](metric/MATCHED_CLOCK_BOOTSTRAP_EQUIVALENCE_RU.md).
 
 **Синтез полного cut:** `python3 -B -W error metric/check_central_writer_fullcut_synthesis.py` проверяет нативный writer, эффекты и сохранённый selector; [вывод](metric/CENTRAL_WRITER_FULLCUT_SYNTHESIS_RU.md).
