@@ -1,0 +1,38 @@
+{
+  "native_W_toffoli": 456,
+  "clean_W_scratch": 112,
+  "full_SITE_Gram": "-1/16",
+  "final_CX_each_leaf": 2112,
+  "service_caps": [
+    16,
+    32
+  ],
+  "retained": {
+    "root": "retained_full_SITE",
+    "full_RC3_rank_before_external_spectators": 256,
+    "logical_Toffoli_both_legs": 998,
+    "true_Hadamard_transfers": 2008,
+    "phase_factories": 3012,
+    "full_success_cold_weight": "1.8645735220061e-4066",
+    "full_J_F6_minus_F5": "6.7677049085387e-4078",
+    "full_heat_bound": "9.7414159143336e-8554",
+    "rigorous_abs_DeltaJ_above_2pow": -27153,
+    "rigorous_abs_DeltaH_below_2pow": -27500
+  },
+  "fresh": {
+    "root": "fresh_uniform_Y",
+    "full_RC3_rank_before_external_spectators": 1,
+    "logical_Toffoli_both_legs": 998,
+    "true_Hadamard_transfers": 2024,
+    "phase_factories": 3028,
+    "full_success_cold_weight": "1.6524616690194e-4095",
+    "full_J_F6_minus_F5": "-1.6805693041774e-4107",
+    "full_heat_bound": "9.7414159143336e-8554",
+    "rigorous_abs_DeltaJ_above_2pow": -27344,
+    "rigorous_abs_DeltaH_below_2pow": -27500
+  },
+  "unknown_old_RIGHT_untouched": true,
+  "original_old_F_used_as_fresh": false,
+  "full_Book_Cost_minus_Info": false,
+  "GR_closed": false
+}

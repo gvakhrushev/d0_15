@@ -1,0 +1,15 @@
+{
+  "true_fourier_spatial_gamma": "-1/16",
+  "g_per_gate_F6_minus_F5": [
+    "-4.204842686205574e-6",
+    "4.241800484235964e-6"
+  ],
+  "certified_abs_gap_per_CX_lower": "2^-19",
+  "paid_early_window_motion": 0.94411993300526,
+  "early_minus_any_late_motion_lower": 0.06,
+  "number_of_pairs_sufficient": "2^19 (B+1)",
+  "identical_window_end_on_all_columns": true,
+  "same_time_edge_spectrum_for_both_windows": true,
+  "both_all_failure_tapes_kept": true,
+  "GR_closed": false
+}
