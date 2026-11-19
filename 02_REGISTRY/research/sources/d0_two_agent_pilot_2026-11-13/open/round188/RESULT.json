@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "clock": {
+    "same_work_input_trace_distance": "p",
+    "minimum_history_tag_distance_for_output_error_epsilon": "max(0,p-2 epsilon)",
+    "same_inventory_first_tick_double_difference": "44-72p"
+  },
+  "coherent_preparation": {
+    "native_bright_port_weights_I": [
+      "p",
+      "p^2"
+    ],
+    "native_bright_port_weights_Z": [
+      "p+2",
+      "p^2-2"
+    ],
+    "absolute_common_prefix_coefficient": 1,
+    "bright_port_relative_preparation_row": "2*(D S_pre(0)-D S_pre(1))"
+  },
+  "shared_site": {
+    "comparison_descriptors": [
+      "00",
+      "01"
+    ],
+    "site_mean": "0",
+    "site_second_moment": "1/2",
+    "relative_log_slope_divided_by_epsilon": "1"
+  },
+  "absolute_Cost_minus_Info_cancellation_proved": false,
+  "GR_closed": false
+}
