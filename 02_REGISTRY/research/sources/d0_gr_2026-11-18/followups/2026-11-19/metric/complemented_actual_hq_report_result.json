@@ -6,6 +6,7 @@
   "central_partial_s": "1/2",
   "central_partial_t": "-1/2",
   "complete_book03_cost_and_clock": false,
+  "complete_eight_sign_factorization_on_common_site_and_oldRIGHT_proved": false,
   "descriptor_pair_cases": 16,
   "four_program_effect_gap_over_2A_squared": "-40 + 18*sqrt(5)",
   "four_program_effect_spectrum_over_2A_squared": [
@@ -43,6 +44,15 @@
   "mutual_information_lower_bound": "(r(0)-r(qstar/(64 Lambda)))^2/2 nats",
   "physical_Lambda_not_measured_and_numerics_Lambda_1_only": true,
   "relative_descriptor_pair_weight": "p^32; all actual H/Q histories retained",
+  "same_site_two_sign_mean_product": "2*A^4/Lambda^2; not zero",
+  "shared_site_counterexample_descriptors": "00,01",
+  "shared_site_local_F_counts": {
+    "-1": 64,
+    "0": 128,
+    "1": 64
+  },
+  "shared_site_local_F_mean": "0",
+  "shared_site_local_F_second_moment": "1/2",
   "site_count": 256,
   "status": "PASS",
   "writer_complement_pairs_for_16_global_CAR_copies": 32

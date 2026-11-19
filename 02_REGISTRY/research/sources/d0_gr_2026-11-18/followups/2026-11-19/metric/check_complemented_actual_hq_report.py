@@ -13,19 +13,28 @@ unit=((1,0),(0,1),(-1,0),(0,-1))
 ds=list(product((0,1),repeat=2))
 fields={d:{x:unit[(x[1]+d[0]*x[0]+d[1]*x[2])%4] for x in coords} for d in ds}
 table={}
+shared_site_example=[]
 for d,e in product(ds,repeat=2):
     total=F(0)
     for x in coords:
+        local=F(0)
         for mu in range(4):
             nxt=list(x);nxt[mu]=(nxt[mu]+1)%4;nxt=tuple(nxt)
             da=[fields[d][nxt][i]-fields[d][x][i] for i in range(2)]
             db=[fields[e][nxt][i]-fields[e][x][i] for i in range(2)]
             # e=4I, h=1/4: g^mumu*(forward derivative)^2 = eta_mumu.
             # F=q/(2 A^2), SITE measure 1/256.
-            total+=F((1 if mu==0 else -1)*sum(a*b for a,b in zip(da,db)),2*256)
+            local+=F((1 if mu==0 else -1)*sum(a*b for a,b in zip(da,db)),2)
+        total+=local/F(256)
+        if d==(0,0) and e==(0,1): shared_site_example.append(local)
     table[d,e]=total
     expected=(F(-(1+d[1]-d[0])) if d==e else F(0))
     if total!=expected: raise AssertionError((d,e,total,expected))
+
+assert len(shared_site_example)==256
+assert {x:shared_site_example.count(x) for x in set(shared_site_example)}=={F(-1):64,F(0):128,F(1):64}
+assert sum(shared_site_example)/256==0
+assert sum(x*x for x in shared_site_example)/256==F(1,2)
 
 s,t,s1,t1,s2,t2=S.symbols('s t s1 t1 s2 t2',real=True)
 weight=lambda d,x,y:(x if d[0] else 1-x)*(y if d[1] else 1-y)
@@ -95,6 +104,11 @@ assert r1>r0
 # full physical code length 3 per pair gives p^96, and final fixed 0/10
 # report adds p^(1+R): p^97[1-p^2 r]. This is an explicit model only.
 res={'status':'PASS','site_count':len(coords),'descriptor_pair_cases':len(table),
+ 'shared_site_counterexample_descriptors':'00,01',
+ 'shared_site_local_F_counts':{'-1':64,'0':128,'1':64},
+ 'shared_site_local_F_mean':'0','shared_site_local_F_second_moment':'1/2',
+ 'same_site_two_sign_mean_product':'2*A^4/Lambda^2; not zero',
+ 'complete_eight_sign_factorization_on_common_site_and_oldRIGHT_proved':False,
  'mean_q_over_2A_squared_distinct_descriptors':'zero',
  'mean_q_over_2A_squared_equal_descriptors':{str(d):str(table[d,d]) for d in ds},
  'four_program_effect_spectrum_over_2A_squared':[str(x) for x in spect],
