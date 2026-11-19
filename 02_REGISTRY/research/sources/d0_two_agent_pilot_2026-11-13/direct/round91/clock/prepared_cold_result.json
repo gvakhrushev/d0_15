@@ -1,0 +1,45 @@
+{
+  "GR_closed": false,
+  "native_replay": {
+    "coherent_and_measured_cold_differ": true,
+    "field_dependent_other_tape": [
+      0.360679774998,
+      0.020099994963
+    ],
+    "fixture_Q": [
+      0.583592135001,
+      0.032522475023
+    ],
+    "native_positive_cos": 0.579020240114
+  },
+  "two_H1_rows_and_sum": [
+    {
+      "J_gain_sign": 1,
+      "recovered_finite_rows": [
+        "0.968661107838",
+        "0.177322215675",
+        "1.14598332351"
+      ],
+      "relative_J_secant_bounds_example": [
+        "1.7458e-37",
+        "5.8501e-39",
+        "2.4434e-37"
+      ],
+      "tag": "decreasing cold"
+    },
+    {
+      "J_gain_sign": -1,
+      "recovered_finite_rows": [
+        "0.968661107838",
+        "0.177322215675",
+        "1.14598332351"
+      ],
+      "relative_J_secant_bounds_example": [
+        "1.7458e-37",
+        "5.8501e-39",
+        "2.4434e-37"
+      ],
+      "tag": "increasing cold"
+    }
+  ]
+}
