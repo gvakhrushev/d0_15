@@ -249,6 +249,10 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Bootstrap центральных слов:** `python3 -B metric/check_matched_clock_bootstrap_equivalence.py` проверяет 16 входов и интервалы на отмеченных часах; [результат](metric/matched_clock_bootstrap_equivalence_result.json) и [условия](metric/MATCHED_CLOCK_BOOTSTRAP_EQUIVALENCE_RU.md).
+
+**Синтез полного cut:** `python3 -B -W error metric/check_central_writer_fullcut_synthesis.py` проверяет нативный writer, эффекты и сохранённый selector; [вывод](metric/CENTRAL_WRITER_FULLCUT_SYNTHESIS_RU.md).
+
 **Комплементарный прямой descriptor:** `python3 -B metric/check_complemented_direct_fourier.py` проверяет буквальные ветви, условные веса и поздний sign; [результат](metric/complemented_direct_fourier_result.json) и [ограничения](metric/COMPLEMENTED_DIRECT_FOURIER_RU.md).
 
 **Терминальная эквивалентность source:** `python3 -B metric/check_terminal_source_equivalence.py` проверяет полный NC1-канал, RIGHT и многокопийную оценку; [результат](metric/terminal_source_equivalence_result.json) и [условия](metric/TERMINAL_SOURCE_EQUIVALENCE_RU.md).
