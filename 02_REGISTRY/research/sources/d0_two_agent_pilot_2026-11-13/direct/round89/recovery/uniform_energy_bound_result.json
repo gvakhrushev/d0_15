@@ -1,0 +1,10 @@
+{
+  "trace_identity": "Trace norm = s + sqrt(s^2 + 4 ||(I-|w><w|)(v-w)||^2)",
+  "finite_grid": "Exact calibration on all grid waves requires normalized oscillation >= L^2/(1/2+1/p)",
+  "exact_one_copy_pointer": "11/32 + (5/64) h^2 times the full nearest-neighbour average energy",
+  "binary_variance": "mean of two variances >= gap*(width-gap)/2",
+  "multivalued_variance_alone_excludes_energy": false,
+  "one_copy_fixed_effect_uniform_gain_on_all_smooth_waves": false,
+  "compulsory_physical_price_identified": false,
+  "GR_closed": false
+}
