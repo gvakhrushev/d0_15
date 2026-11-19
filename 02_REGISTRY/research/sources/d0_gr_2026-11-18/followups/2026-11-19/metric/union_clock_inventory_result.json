@@ -1,0 +1,58 @@
+{
+  "status": "PASS; toy macro clock and conditional large-inventory theorem",
+  "toy_clock_stage_dimensions": [
+    2,
+    4,
+    4,
+    4,
+    4,
+    8,
+    16,
+    16
+  ],
+  "toy_clock_dimension": 58,
+  "toy_clock_unitarity_error": 4.440892098500626e-16,
+  "toy_feedback_eigenvalues": [
+    0.9655581462513669,
+    1.0
+  ],
+  "toy_RAW_J": 1.874503200185021e-06,
+  "toy_RAW_universal_upper": 1.90734954230778e-06,
+  "fixed_graph_RAW_depends_on_initial_density": false,
+  "toy_includes_full_CZ_elementary_clock": false,
+  "full_branching_union_clock_materialized": false,
+  "physical_Book03_tariffs_inferred": false,
+  "N8_caps_21_6_66": {
+    "m": 16,
+    "marked_toffoli": 318,
+    "clean_zeros_before": 175,
+    "base_births": 362,
+    "base_G": 197,
+    "base_CX": 758,
+    "per_toffoli_births": 254,
+    "per_toffoli_G": 1166,
+    "per_toffoli_CX": 2664,
+    "per_toffoli_SourceI_port_correction_at_most": 4,
+    "per_toffoli_primitive_NC1_reads": 126,
+    "total_births_upper_excluding_routing_and_controller": 81134,
+    "total_G_upper_excluding_routing_and_controller": 370985,
+    "total_CX_upper_excluding_routing_and_controller": 847910
+  },
+  "N40_caps_85_18_203": {
+    "m": 16,
+    "marked_toffoli": 1342,
+    "clean_zeros_before": 687,
+    "base_births": 1514,
+    "base_G": 773,
+    "base_CX": 2934,
+    "per_toffoli_births": 768,
+    "per_toffoli_G": 3564,
+    "per_toffoli_CX": 8138,
+    "per_toffoli_SourceI_port_correction_at_most": 4,
+    "per_toffoli_primitive_NC1_reads": 383,
+    "total_births_upper_excluding_routing_and_controller": 1032170,
+    "total_G_upper_excluding_routing_and_controller": 4783661,
+    "total_CX_upper_excluding_routing_and_controller": 10924130
+  },
+  "GR_closed": false
+}

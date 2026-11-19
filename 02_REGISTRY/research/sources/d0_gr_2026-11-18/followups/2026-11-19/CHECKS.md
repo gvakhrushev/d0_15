@@ -264,3 +264,5 @@ python3 -B "$d/realization/check_realization.py"
 **Первый источник отказов:** `python3 -B metric/check_secant_failure_first_source.py` проверяет усиленный cap, массы первого отказа и CQ-тождество в изометрической модели; см. [результат](metric/secant_failure_first_source_result.json) и [условия переноса](metric/SECANT_FAILURE_FIRST_SOURCE_RU.md).
 
 **NC1-журнал и его изолированный clock:** `python3 -B -W error metric/check_seed_nc1_record_clock.py` проверяет 16 входных столбцов, обе ветви, полный clock двух рождений и downstream-контрпример; см. [записку](metric/SEED_NC1_RECORD_CLOCK_RU.md).
+
+**Опись объединённого clock и RAW:** `python3 -B metric/check_union_clock_inventory.py` проверяет счёт букв, полное унитарное замыкание небольшого ветвящегося примера и границу RAW; см. [результат](metric/union_clock_inventory_result.json) и [область](metric/UNION_CLOCK_INVENTORY_RAW_RU.md).
