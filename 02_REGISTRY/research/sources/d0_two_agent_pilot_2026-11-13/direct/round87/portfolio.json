@@ -5,7 +5,7 @@
     "8a1be8a56b345a16dbfb0ad79df0fffd504103c7"
   ],
   "primary_pr334": "1cee4e60342feb9c472a60b92884d3a5075dccff",
-  "reviewed_pr334": "8ac844e009745280e35d5eb1c2aadc2d651fb235",
+  "reviewed_pr334": "a08e9c72f8eae5210333958eaf0f25082f20fb39",
   "direct_regression_commit": "0bbad12fbc376c167862be8aa5832c77ab9bd494",
   "registry_claim": {
     "commit": "8a1be8a56b345a16dbfb0ad79df0fffd504103c7",
@@ -13,7 +13,8 @@
     "round": "A87"
   },
   "related_open_commits": {
-    "B179": "4d48e2e71b0c6a5b8a960bf840862c56d3ef8c54"
+    "B179": "4d48e2e71b0c6a5b8a960bf840862c56d3ef8c54",
+    "B180": "4919717083db875bacb768951c8d58c28b86101e"
   },
   "GR_closed": false,
   "physical_C_closed": false,
@@ -310,6 +311,41 @@
         "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round86/writer/FORWARD_WRITER_RU.md",
         "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
         "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py"
+      ]
+    },
+    {
+      "id": "pr334_guarded_live_binding",
+      "commit": "a08e9c72f8eae5210333958eaf0f25082f20fb39",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_guarded_live_composition.py",
+      "receipt": "guarded_live_composition_result.json",
+      "files": [
+        "check_guarded_live_composition.py",
+        "check_live_parser.py",
+        "check_source_price.py",
+        "check_golden_record_race.py",
+        "check_extra_work.py",
+        "guarded_live_composition_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "B180_matched_ready_and_fixed_service",
+      "commit": "4919717083db875bacb768951c8d58c28b86101e",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round180",
+      "entrypoint": "check_matched_readiness.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "check_matched_readiness.py",
+        "RESULT.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round179/RESULT.json",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
       ]
     }
   ],
