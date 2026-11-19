@@ -50,6 +50,7 @@ python3 -B "$d/metric/check_crossed_repeat.py"
 python3 -B "$d/metric/check_weighted_recovery.py"
 python3 -B "$d/metric/check_guarded_noise.py"
 python3 -B "$d/metric/check_live_parser.py"
+python3 -B "$d/metric/check_complete_work_source.py"
 python3 -B "$d/metric/check_guarded_purity.py"
 python3 -B "$d/metric/check_clock_coherence.py"
 python3 -B "$d/metric/check_late_site.py"
@@ -73,6 +74,7 @@ python3 -B "$d/metric/check_corrector_full_clock.py"
 python3 -B "$d/metric/check_native_adaptive_clock.py"
 python3 -B "$d/metric/check_bandlimit_joint_hq.py"
 python3 -B "$d/metric/check_dyadic_car_loader.py"
+python3 -B "$d/metric/check_dyadic_reference_source.py"
 python3 -B "$d/metric/check_local_geometric_source.py"
 python3 -B "$d/metric/check_common_native_calibration.py"
 python3 -B "$d/metric/check_exact_recalibrated_reference.py"
@@ -116,6 +118,8 @@ python3 -B "$d/realization/check_realization.py"
 | Фазовый оракул адреса | Полное логическое слово на всех парах адресов, пяти смещениях и полном SourceI/Spin. [Результат](metric/native_neighbor_phase_oracle_result.json) |
 | Исходный Fourier-вакуум и обратная буква | Декодер частот, полный target/port/Spin и условная цена одного профиля без воспроизведения фабрик. [Результат](metric/raw_fourier_vacuum_inverse_result.json) |
 | Ранний останов пары | Три prefix-free исхода, полный математический инструмент и аналитическое сравнение двух заданных clock-программ. [Результат](metric/typed_abort_pair_result.json) |
+| Действительная ошибка CAR-опоры в источнике | Точный SC1, восемь весов и сохранённый член десятой степени, независимые калибровочные производные, 2048 направленных SITE-рёбер, условное 42-координатное правило цепочки и интервалы фактического G-слова. Normal и `-O` дают одинаковые байты; отдельный review воспроизводит результат. [Результат](metric/dyadic_reference_source_result.json) |
+| Полная работа 34 стадий | Все 604 локальные эрмитовы вставки, 580 предоперационных карт, точные образы на полном старом входе, достигаемая граница 9−4p, положительная/нулевая/отрицательная модели и все текущие строки их работы. Нормальный и оптимизированный запуск дают одинаковые байты результата. [Результат](metric/complete_work_source_result.json) |
 | Когерентное усиление локализации | Точные двухмерные амплитуды, условные вероятности всех входов и полный защищённый SITE на модельной изометрии. [Результат](metric/coherent_localization_amplification_result.json) |
 | SITE-каталог восьми настроек | Все настройки, циклический Gray и Julia32 для фиксированного поля; длинные серии не исполнялись побуквенно. [Результат](metric/site_eight_catalogue_result.json) |
 | Единый clock сбалансированной пары | Все четыре зарегистрированные PVM-ветви, настоящий SourceI, условный CQ-расчёт и полный временной контур. [Результат](metric/native_balanced_pair_clock_result.json) |
