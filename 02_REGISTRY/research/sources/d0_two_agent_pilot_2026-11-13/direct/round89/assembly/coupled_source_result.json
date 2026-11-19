@@ -1,0 +1,29 @@
+{
+  "one_collar_joint_secants": {
+    "conditional_material": [
+      "0.3246258258338666513",
+      "0.3246581826055224699"
+    ],
+    "energy_on_adjacent_interior_edges": [
+      "0.007017752794444103764",
+      "0.01403550558888820753"
+    ],
+    "target_two_volume_rows": [
+      "-0.1643305539188742463",
+      "0.1643305539188742463"
+    ],
+    "native_angle": "0.01189781645711851767",
+    "fixture_coframe_step": "0.0078125",
+    "exact_positive_secant_gain_per_true_ready_mass": "0.0001456662903248042782",
+    "explicit_archive": "32 successful fine leaves plus pre-field stops"
+  },
+  "absolute_price": {
+    "sharp_finite_stop_deviation": "0.007402413630384406498",
+    "common_stop_fisher_bound_attained": "0.05892389694607389153",
+    "positive_book_identity_checked": true,
+    "baseline_KL_first_derivative": "0"
+  },
+  "geometric_name_physically_selected": false,
+  "unconditional_original_Book03_price_identified": false,
+  "GR_closed": false
+}
