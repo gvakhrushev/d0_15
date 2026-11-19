@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "scope": "conditional local mean G-work and specified CQ code; not selected Book03 cost",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "literal_SourceI_squared_verified_on_port_and_spin": true,
+  "route": "3 CX, SourceI^2 on port, 3 CX",
+  "all_added_G_marks_pulled_back_to_old_P_dirty_port_are_scalar_differences": true,
+  "arbitrary_oldRIGHT_allowed_by_tensor_identity": true,
+  "same_K0_and_K1_work_spectrum": [
+    1,
+    3
+  ],
+  "limit_K0_work_per_delta_q": -1.0,
+  "limit_K1_work_per_delta_q": 1.0,
+  "limit_independent_P_derivative_of_code_secant": 1.9622791062588716,
+  "book03_tariff_selected": false,
+  "full_preparation_euler_rows_closed": false,
+  "GR_closed": false,
+  "examples": [
+    {
+      "q": 19,
+      "turns": 2,
+      "epsilon": 0.09217860299861691,
+      "delta_q": 0.35022992728909225,
+      "g_stages_each": 38,
+      "g_mark_max_full_input_error": 5.717648576819556e-15,
+      "basis_work_contrasts": {
+        "identity": 0.0,
+        "x": 0.38019035840098603,
+        "y": 0.0,
+        "z": -0.43330424707841
+      },
+      "K0_work_per_delta_q": -1.2371993748002954,
+      "K1_work_per_delta_q": 1.2371993748002954,
+      "code_CQ_per_delta_q": 1.0000000000000002,
+      "K0_plus_code_per_delta_q": -0.23719937480029518,
+      "independent_P_derivative_of_code_secant": 1.911278353807905
+    },
+    {
+      "q": 66,
+      "turns": 7,
+      "epsilon": -0.010494605751098618,
+      "delta_q": -0.040779988208673776,
+      "g_stages_each": 132,
+      "g_mark_max_full_input_error": 2.2502832930371142e-14,
+      "basis_work_contrasts": {
+        "identity": 0.0,
+        "x": -0.0527290118219883,
+        "y": 0.0,
+        "z": 0.039691056054065754
+      },
+      "K0_work_per_delta_q": -0.9732973891737651,
+      "K1_work_per_delta_q": 0.9732973891737651,
+      "code_CQ_per_delta_q": 0.9999999999999977,
+      "K0_plus_code_per_delta_q": 0.026702610826232598,
+      "independent_P_derivative_of_code_secant": 1.9616382968048223
+    },
+    {
+      "q": 613,
+      "turns": 65,
+      "epsilon": -0.002272848761208479,
+      "delta_q": -0.008834319097561532,
+      "g_stages_each": 1226,
+      "g_mark_max_full_input_error": 1.9768735259884096e-13,
+      "basis_work_contrasts": {
+        "identity": 0.0,
+        "x": -0.011277585901310005,
+        "y": 0.0,
+        "z": 0.008783236799650596
+      },
+      "K0_work_per_delta_q": -0.9942177436543201,
+      "K1_work_per_delta_q": 0.9942177436543201,
+      "code_CQ_per_delta_q": 0.9999999999999957,
+      "K0_plus_code_per_delta_q": 0.005782256345675529,
+      "independent_P_derivative_of_code_secant": 1.9622490613334476
+    }
+  ]
+}

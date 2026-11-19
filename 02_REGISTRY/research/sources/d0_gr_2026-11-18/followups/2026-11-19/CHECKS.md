@@ -249,6 +249,10 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Чётность комплементарного bootstrap:** `python3 -B -W error metric/check_complement_bootstrap_cancellation.py` проверяет буквальное слово, полный исходный срез и модель сохранённых отказов; [результат](metric/complement_bootstrap_cancellation_result.json) и [условия](metric/COMPLEMENT_BOOTSTRAP_PARITY_RU.md).
+
+**Промежуточная работа G:** `python3 -B -O -W error metric/check_native_rotation_work_secant.py` проверяет нативный SourceI, маршруты и все G-префиксы; [результат](metric/native_rotation_work_secant_result.json) и [область](metric/NATIVE_ROTATION_WORK_SECANT_RU.md).
+
 **Источник скалярного writer:** `python3 -B -W error metric/check_scalar_writer_source_boundary.py` проверяет полный эффект, тепловую границу, старый RIGHT и двухкопийный материальный контраст; [результат](metric/scalar_writer_source_boundary_result.json) и [условия](metric/SCALAR_WRITER_SOURCE_BOUNDARY_RU.md).
 
 **Bootstrap центральных слов:** `python3 -B metric/check_matched_clock_bootstrap_equivalence.py` проверяет 16 входов и интервалы на отмеченных часах; [результат](metric/matched_clock_bootstrap_equivalence_result.json) и [условия](metric/MATCHED_CLOCK_BOOTSTRAP_EQUIVALENCE_RU.md).
