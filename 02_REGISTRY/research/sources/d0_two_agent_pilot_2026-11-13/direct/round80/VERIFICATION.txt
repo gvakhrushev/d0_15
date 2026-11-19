@@ -1,0 +1,31 @@
+Git snapshot 18f0b49ac94240f840ecdefea9cb1021248bba85, 41 committed files
+UPSTREAM  owner_eight_readers at 04931a7a26a9741bba0584c8e1413613ff7a28d5
+UPSTREAM  owner_calibrated_retention at 44ed019e18d08e00bc23e46201e84b4d661490ae
+UPSTREAM  owner_marked_splice at 44ed019e18d08e00bc23e46201e84b4d661490ae
+UPSTREAM  owner_guarded_information at a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d
+UPSTREAM  owner_live_parser at a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d
+UPSTREAM  owner_absolute_site_pair at a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d
+UPSTREAM  owner_counted_separator at 65753c972b4ad1e528a29b0343e30c3ecc9b9670
+PASS  two_return_tasks_fix_the_closed_cycle_weights
+PASS  full_stopped_source_with_exact_old_return
+PASS  irreducible_phase_memory_and_a_native_local_reader
+PASS  native_nonlocal_phase_and_full_spectral_price
+PASS  field_rectangle_on_the_retained_native_h1_bit
+PASS  exact_quantum_damage_on_a_nonscalar_first_return
+PASS  stopped_field_distinguishability_with_two_native_references
+PASS  sharp_phase_readout_and_mirrored_registration_price
+PASS  old_memory_channel_with_two_physical_caps
+PASS  native_switch_record_preserves_equations_for_two_information_laws
+PASS  true_nps2_return_and_full_pointer_stage_cost
+
+Independent Open receipts (byte-for-byte)
+PASS B164 22875d30c8f32646f583ba0199d434430bfb1172 sha256 c91dd7eb8b19934361db6e36f68c0d9b39c3a4b6ce4b5183b7f733b51f1a9205
+PASS B165 c1fb65623b12fbb4fecc854d191570169cdf915b sha256 70d2ffa377025e1f9978363e6572ece1cccace1c28b2fc594c6103b7c8d90a89
+
+A62–A79 checkout regression: 135 research checks passed, 8 upstream receipts matched.
+claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918
+PASS warnings=0
+PASS agent_protocol: cold-start task metadata enforced
+PASS work_validation: active work plane clean and enforced
+{"active_result_limit": 54, "active_results": 54, "discharged": 5, "obligations": 22, "results": 98, "scientific_promotion": false, "valid": true}
+GR_closed=false
