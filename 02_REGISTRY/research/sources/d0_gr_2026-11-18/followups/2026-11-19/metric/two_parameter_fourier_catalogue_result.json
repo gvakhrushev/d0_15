@@ -1,0 +1,54 @@
+{
+  "A_squared": 0.0001239465873105868,
+  "CAR_dimension": 16,
+  "CCZ_phase_programme": 9,
+  "CCZ_total_CAR": 9,
+  "CX_phase_programme": 96,
+  "L": 4,
+  "T_base_CAR": 12,
+  "T_original_Fourier_W": 456,
+  "T_phase_programme": 101,
+  "T_total_Fourier_CAR": 569,
+  "all_16_descriptor_pairs_checked_cellwise": true,
+  "descriptor_initial_state_and_independent_preparation_physically_derived": false,
+  "descriptor_values": 4,
+  "field_tangent_gram_determinant": 0.0030204408311200314,
+  "four_exact_q_over_2A_squared": [
+    "-1",
+    "-2",
+    "0",
+    "-1"
+  ],
+  "fourier_full_gram_error_float": 1.3877787807814457e-17,
+  "full_Fourier_material_readiness_conditional": "[0.9308002845258791766482995821467492277135003359731323916163986702173357821919393581137, 0.9308002845258791766482995821467492277135003359731323916163986702173357821919444162603]",
+  "full_failure_clock_Book_cost_and_GR_closed": false,
+  "independent_descriptor_two_copy_q_over_2A_squared": "-4*s**2*t**2 + 2*s**2*t - s**2 + 6*s*t**2 - 4*s*t + 2*s - 3*t**2 + 2*t - 1",
+  "independent_dq_ds_over_2A_squared": "1",
+  "independent_dq_dt_over_2A_squared": "1/4",
+  "independent_q_over_2A_squared": "-25/64",
+  "interior_example_s_t": "1/4,1/4",
+  "interior_mean_field_tangent_gram_determinant_over_A_fourth": "3/2",
+  "interior_mean_field_tangent_gram_over_A_squared": [
+    [
+      "5/4",
+      "1/4"
+    ],
+    [
+      "1/4",
+      "5/4"
+    ]
+  ],
+  "j_eight_setting_same_CAR_circuit_separate_preparations": true,
+  "material_factory_readiness_conditional": "[0.9309147715920829099792030845632039162250431742122250880204847210616298604164281136302, 0.9309147715920829099792030845632039162250431742122250880204847210616298604164291256812]",
+  "metric_signature": "+---",
+  "new_descriptor_clean_ancillas": 1,
+  "secant_u_I_over_2k0A_squared_div_a": -1,
+  "secant_u_q_over_2A_squared": 1,
+  "secant_v_I_over_2k0A_squared_div_a": 1,
+  "secant_v_q_over_2A_squared": -1,
+  "shared_descriptor_q_over_2A_squared": "s - t - 1",
+  "shared_q_over_2A_squared": "-1",
+  "site_descriptor_CAR_columns": 16384,
+  "site_u_v_and_oldRIGHT_preserved_on_success": true,
+  "status": "PASS"
+}

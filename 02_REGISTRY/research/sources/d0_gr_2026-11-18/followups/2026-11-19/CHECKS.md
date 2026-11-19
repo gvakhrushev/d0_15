@@ -4,6 +4,9 @@
 
 ~~~sh
 d=02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19
+python3 -B "$d/metric/check_two_parameter_fourier_catalogue.py"
+python3 -B "$d/metric/check_factory_routing_cost.py"
+python3 -B "$d/metric/check_guarded_golden_work_binding.py"
 python3 -B "$d/metric/check_fresh_guard_reader.py"
 python3 -B "$d/metric/check_fresh_query_economic_source.py"
 python3 -B "$d/metric/check_economic_repeat_source.py"
@@ -123,8 +126,11 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Двухпараметрический Fourier-каталог | Все CAR-столбцы, сигнатура +---, четыре секущих и 16 пар независимых смешанных программ. [Результат](metric/two_parameter_fourier_catalogue_result.json) |
+| Фабрика маршрутизации | Полные проверенные логические столбцы и семь видов отказа с точной нормировкой; микроскопические истории потребляют исходного владельца. [Результат](metric/factory_routing_cost_result.json) |
+| Золотая модель стоимости | Точные тестовые источники одной стадии и условный компенсатор на фиксированном graph-cut. [Результат](metric/guarded_golden_work_binding_result.json) |
 | Свежий H без готовой единицы | Все 35 стадий, 16 старых входных колонок, восемь полных эффектов, полная таблица кодов и RAW diag(c0,c1) с нормой <1/3; три разных ценовых операнда и их независимые подготовительные строки. [Результат](metric/fresh_guard_reader_result.json) |
-| Свежие запросы и одна экономическая сумма | CP-факторизация с запутанным RIGHT, абсолютная масса одного полного проверочного native-clock, настоящий RAW, анизотропная аппаратная строка и контроль нескалярных вставок. Полная физическая Book-цена не приписывается тесту. [Результат](metric/fresh_query_economic_source_result.json) |
+| Свежие запросы и одна экономическая сумма | CP-факторизация с запутанным RIGHT, абсолютная масса одного полного проверочного native-clock, настоящий RAW, анизотропная аппаратная строка и контроль нескалярных вставок. Численный конечный остаток `full_source_identity_error` зависит от библиотеки вычислений: при независимом повторе получено 8,413·10⁻¹¹ вместо 7,728·10⁻¹¹ в сохранённом результате, оба значения меньше допуска программы 4·10⁻⁹. Полная физическая Book-цена не приписывается тесту. [Результат](metric/fresh_query_economic_source_result.json) |
 | Экономический источник одной повторяемой записи | Полное двухсекторное тождество со старыми и условными источниками, точная граница gain, буквальные LIVE-пути, сравнение общего T со свежими запросами и самостоятельная шумовая строка. [Результат](metric/economic_repeat_source_result.json) |
 | Общая ветвь LIVE | Все 32 старых столбца, условный LIVE и промежуточная положительная тестовая метка работы. [Результат](metric/guarded_live_composition_result.json) |
 | Общее слово для двух ветвей | Все старые входы, три эффекта, запись N и clock с идеальными Toffoli; полный factory-clock не воспроизведён. [Результат](metric/fredkin_guarded_pair_result.json) |
