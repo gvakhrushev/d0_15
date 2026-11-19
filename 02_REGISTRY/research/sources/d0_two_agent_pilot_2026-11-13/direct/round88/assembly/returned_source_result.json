@@ -1,0 +1,20 @@
+{
+  "all_name_input_columns": 256,
+  "routed_inverse_columns": 16,
+  "final_CX_on_each_actual_leaf": 16,
+  "transverse_local_charge_difference": "p^2",
+  "raw_power_G_before_inverse_routing": 1038,
+  "loader_and_bias_CX": 38,
+  "inverse_power_blocks": 3,
+  "ordered_Qp_test_values": 225,
+  "zero_and_nonzero_02_face_click": [
+    0.5219633137583869,
+    0.5307501440140473
+  ],
+  "delta_RAW_logdet_rank8": 2.7131518320345925e-08,
+  "full_clock_slope_lower": "6e-7 minus 1e-20",
+  "tilted_absolute_action_positive_on_arc": true,
+  "field_rows_on_dyadic_Brinkmann_chart": 42,
+  "unrestricted_work_source_fixed": false,
+  "GR_closed": false
+}
