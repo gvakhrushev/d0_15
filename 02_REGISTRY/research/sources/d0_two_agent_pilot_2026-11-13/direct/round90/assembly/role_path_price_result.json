@@ -1,0 +1,29 @@
+{
+  "golden_gates_per_field_word": 2320,
+  "logical_Z_per_field_word": 2,
+  "primitive_source_I_per_marker": 2,
+  "swaps_per_marker_after_parking": 2,
+  "microscopic_absolute_kernel_depends_on_signed_setting": false,
+  "golden_odds_negative_conjugate_at_exponents": [
+    1,
+    -2319,
+    2321
+  ],
+  "marked_log_price_difference_illustrative_common_tape": {
+    "-1": [
+      "1.622213294487141e-6",
+      "-1.622213294487141e-6"
+    ],
+    "0": [
+      "0",
+      "0"
+    ],
+    "1": [
+      "-1.622213294487141e-6",
+      "1.622213294487141e-6"
+    ]
+  },
+  "native_entangled_odds_outside_Q_sqrt5": "69.762753343368776",
+  "physical_C_closed": false,
+  "GR_closed": false
+}
