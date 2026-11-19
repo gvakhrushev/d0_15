@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Первая реакция bootstrap seed:** `python3 -B -W error metric/check_seed_gate_bootstrap_first_source.py` проверяет 16 колонок, полный cut, gate-jet и интервальную границу тепла; [условия](metric/SEED_GATE_BOOTSTRAP_FIRST_SOURCE_RU.md).
+
 **Ковариация пространственного члена:** `python3 -B metric/check_spatial_fq_covariance.py` проверяет формулу на совместных состояниях сцены и SITE; [результат](metric/spatial_fq_covariance_result.json) и [область](metric/SPATIAL_FQ_COVARIANCE_RU.md).
 
 **Независимые программные уравнения:** `python3 -B metric/check_independent_program_euler_rows.py` проверяет 65 536 кодовых строк и отдельные производные; [результат](metric/independent_program_euler_rows_result.json) и [границы](metric/INDEPENDENT_PROGRAM_EULER_ROWS_RU.md).
