@@ -352,9 +352,19 @@
       "evidence": {
         "direct/round85/assembly/check_paired_source.py": "5ad6f40af93c4959f88d0c04e4657d25a39f8924c050b99e75c829d7b91787d2",
         "direct/round86/assembly/check_null_single_choi.py": "67e272dc9f7f0de0fb3910ed89ebaaee766e1e3bb866abdc1e830046b3942243",
-        "direct/round87/assembly/DYADIC_WRITER_RU.md": "f98b3c471c8807b811b4e349ba196e2e1e1cf5039830c1506a105757cdff8cc8",
+        "direct/round87/assembly/DYADIC_WRITER_RU.md": "043a4fdafa474798caf35367f3641a080481db5142533f2d35280f0a1d687726",
         "direct/round87/assembly/check_dyadic_writer.py": "52388e7da19a566421a5e9be4c891cd657b7dc88d47c618b69748efeab08a22d",
         "direct/round87/assembly/dyadic_writer_result.json": "534f89d95823c1a989be7cdb9b89bda330c36c946f22a2b0722960c6e08b97fa"
+      }
+    },
+    {
+      "id": "A87_julia_approximation",
+      "check": "direct/round87/clock/check_julia_approx.py",
+      "stdout_matches": "direct/round87/clock/julia_approx_result.json",
+      "evidence": {
+        "direct/round87/clock/JULIA_APPROX_RU.md": "fca7f721af9f8710130ad6444f5d87ab1e930e672a0baafca6c3be6769b7fd05",
+        "direct/round87/clock/check_julia_approx.py": "ca2380e75c5d2a64ecc475ced61526967f3067287e7887c452e3d1f22e055fdf",
+        "direct/round87/clock/julia_approx_result.json": "a716698c2887efc1ad0dad3e6a8682141bff47b2aa67ece424fdf1d8e2ff53d0"
       }
     }
   ]
