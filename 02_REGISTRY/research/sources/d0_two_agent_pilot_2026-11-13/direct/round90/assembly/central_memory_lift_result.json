@@ -1,0 +1,13 @@
+{
+  "gate_head_outcomes": 2,
+  "input_tag_signs": [
+    1,
+    -1
+  ],
+  "number_of_field_rotations": 2320,
+  "log10_all_success_upper_bound": "-684.04941455451283",
+  "log10_uniform_negative_tag_success_explicit_filter": "-698.38958994043637",
+  "field_branch_filtered_ports": "one common attenuation, both tags, all columns",
+  "proved_for_unrestricted_Book_memory": false,
+  "GR_closed": false
+}
