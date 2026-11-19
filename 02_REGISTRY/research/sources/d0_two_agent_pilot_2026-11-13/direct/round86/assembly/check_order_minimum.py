@@ -3,6 +3,7 @@ import itertools
 import json
 from decimal import Decimal, localcontext
 
+import mpmath as mp
 import numpy as np
 
 
@@ -44,7 +45,28 @@ def census(n,q):
     return best
 
 
+def certified_neighbours():
+    iv=mp.iv
+    iv.dps=65
+    p=(iv.sqrt(5)-1)/2
+    b=iv.mpf(["0.01113313016680724180219075442448827511",
+              "0.01113313016680724180219075442448827512"])**2
+    q5,q6=2*p**3*17/16,2*p**3*(1+(1-2*b)/16)
+    lp=-iv.log(p)
+    def value(n,q):
+        g=iv.sqrt(2*q-q*q)
+        other=iv.sqrt(1-q*q)
+        r=iv.exp(-2*lp*(g-other))
+        a=(1-r**(n+1))/(1-r)
+        b=(r-(n+1)*r**(n+1)+n*r**(n+2))/(1-r)**2
+        return 2+2*n*other-iv.log(a+2*b)/lp
+    for n in (1454,1455):
+        diff=value(n,q6)-value(n,q5)
+        require((diff.b<0) if n==1454 else (diff.a>0),"neighbouring budgets must have opposite signs")
+
+
 def main():
+    certified_neighbours()
     with localcontext() as ctx:
         ctx.prec=60
         p=(Decimal(5).sqrt()-1)/2
@@ -64,7 +86,7 @@ def main():
         for n in range(1,6):
             for q in (q5,q6):
                 require(abs(census(n,float(q))-float(2+2*n*g(1-q)))<1e-12,"catalogue minimum")
-        ds={str(n):float(free(n,q6)-free(n,q5)) for n in (1,16,1024,4096,10000)}
+        ds={str(n):float(free(n,q6)-free(n,q5)) for n in (1,16,1024,1454,1455,4096,10000)}
         require(ds["1"]<0<ds["10000"],"statistical sign changes with the time budget")
         r=(-2*logphi*(g(q6)-g(1-q6))).exp()
         loss=((1+r)/(1-r)**2).ln()/logphi
