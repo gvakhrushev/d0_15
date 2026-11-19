@@ -1,0 +1,212 @@
+{
+  "round": "A84",
+  "base_shared": "35ee0e127783158a12c34bf42f1889bdaf873aaa",
+  "claims_shared": [
+    "844763144c1a0a194a5363c31e81b54efee101ee"
+  ],
+  "primary_pr334": "2350117b469890c04b8ff5d8987b224a863e844a",
+  "related_open_commits": {
+    "B172": "35ee0e127783158a12c34bf42f1889bdaf873aaa",
+    "B173": "64c6f160b4a9aa4c4d3612dd41105c7564fdc98c"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "7a00729985493b7615319c51d6b71e865a93d3a1"
+  },
+  "upstream_checks": [
+    {
+      "id": "pr334_selector24_native",
+      "commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_selector24_native.py",
+      "receipt": "selector24_native_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_selector24_native.py",
+        "check_selector36_compilation.py",
+        "selector24_native_result.json"
+      ]
+    },
+    {
+      "id": "pr334_composed_geometric_instrument",
+      "commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_composed_geometric_instrument.py",
+      "receipt": "composed_geometric_instrument_result.json",
+      "files": [
+        "check_balanced_controller_source.py",
+        "check_boundary_experiment.py",
+        "check_composed_geometric_instrument.py",
+        "check_eight_readers.py",
+        "check_extra_work.py",
+        "check_paid_predictor.py",
+        "check_prefix_cx.py",
+        "check_shared_site_union.py",
+        "composed_geometric_instrument_result.json",
+        "paid_predictor_result.json"
+      ]
+    },
+    {
+      "id": "pr334_corrector_full_clock",
+      "commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_corrector_full_clock.py",
+      "receipt": "corrector_full_clock_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_corrector_full_clock.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_shared_site_union.py",
+        "check_source_price.py",
+        "corrector_full_clock_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_smooth_twofield_reference",
+      "commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_smooth_twofield_reference.py",
+      "receipt": "smooth_twofield_reference_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_shared_site_union.py",
+        "check_smooth_twofield_reference.py",
+        "smooth_twofield_reference_result.json"
+      ]
+    },
+    {
+      "id": "pr334_bandlimit_joint_hq",
+      "commit": "908e70a3c86be2c99809f1faa830c92993b117ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_bandlimit_joint_hq.py",
+      "receipt": "bandlimit_joint_hq_result.json",
+      "files": [
+        "bandlimit_joint_hq_result.json",
+        "check_bandlimit_joint_hq.py",
+        "check_boundary_experiment.py",
+        "check_shared_site_union.py"
+      ]
+    },
+    {
+      "id": "pr334_dyadic_car_loader",
+      "commit": "908e70a3c86be2c99809f1faa830c92993b117ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_dyadic_car_loader.py",
+      "receipt": "dyadic_car_loader_result.json",
+      "files": [
+        "check_dyadic_car_loader.py",
+        "dyadic_car_loader_result.json"
+      ]
+    },
+    {
+      "id": "pr334_native_adaptive_clock",
+      "commit": "908e70a3c86be2c99809f1faa830c92993b117ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_native_adaptive_clock.py",
+      "receipt": "native_adaptive_clock_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_native_adaptive_clock.py",
+        "check_shared_site_union.py",
+        "check_source_price.py",
+        "native_adaptive_clock_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "same_task_address_deadline",
+      "check": "direct/round84/admission/check_deadline.py",
+      "evidence": {
+        "direct/round84/READOUT_RU.md": "7f3687a91f986eda5e3a78fde6e94cae58bb8d6477803c1b740733a918ee3396",
+        "direct/round84/admission/DEADLINE_RU.md": "9f509062828c1e7796865e88aa4e149b36f1466d92efd9e08dc374f256c4c688",
+        "direct/round84/admission/check_deadline.py": "1dfaae8d16f0ce9fd10e48ab101e80d9e370d686e975f9d008ad934fc8ebc133"
+      }
+    },
+    {
+      "id": "one_site_composed_clock",
+      "check": "direct/round84/clock/check_composed_clock.py",
+      "evidence": {
+        "direct/round84/READOUT_RU.md": "7f3687a91f986eda5e3a78fde6e94cae58bb8d6477803c1b740733a918ee3396",
+        "direct/round84/clock/WHOLE_RETAINED_CLOCK_RU.md": "815e056430e9e71ba03994519937fe168d9b3153e3ee12ab9268627b492ee9f9",
+        "direct/round84/clock/check_composed_clock.py": "eb3abd1e036fc6a8d5cbab1bb897101d253eb1b81b03fa9febc75fe6b9a69087"
+      }
+    },
+    {
+      "id": "physical_preparation_and_curvature_variance",
+      "check": "direct/round84/prepare/check_curvature_variance.py",
+      "stdout_matches": "direct/round84/prepare/curvature_variance_result.json",
+      "evidence": {
+        "direct/round84/READOUT_RU.md": "7f3687a91f986eda5e3a78fde6e94cae58bb8d6477803c1b740733a918ee3396",
+        "direct/round84/prepare/RAW_HEAD_AND_CURVATURE_RU.md": "ddda97e86c8fe4a3840725e50db3a8b6642744cce0556c6f599216c0229a3e76",
+        "direct/round84/prepare/check_curvature_variance.py": "2e1d17c0fd2b0e86e2fb36f699516864549d4614f9af17fd23f5537aba0a6ef3",
+        "direct/round84/prepare/curvature_variance_result.json": "9757324e2e0e7f4ea3c50120b88a7a3222bd2682b0a79a962ab635b745212bd9"
+      }
+    },
+    {
+      "id": "retained_field_replicas",
+      "check": "direct/round84/assembly/check_retained_replicas.py",
+      "stdout_matches": "direct/round84/assembly/replicas_result.json",
+      "evidence": {
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round84/READOUT_RU.md": "7f3687a91f986eda5e3a78fde6e94cae58bb8d6477803c1b740733a918ee3396",
+        "direct/round84/assembly/RETAINED_REPLICAS_RU.md": "44de9f90124bcab8964bb042c1ab72c86ae8d77e3c9a0e35eb7bf86df55ff18e",
+        "direct/round84/assembly/check_retained_replicas.py": "fd98b697deb9ef0d6974319fb7817df5c1e23f5700a01c4f7aa29d9b52bd860e",
+        "direct/round84/assembly/replicas_result.json": "488cafdfd726405f3d24d4e0027b771380d95639b61ace99a882b4477bfb5e3e"
+      }
+    },
+    {
+      "id": "paid_address_source",
+      "check": "direct/round84/assembly/check_paid_address.py",
+      "stdout_matches": "direct/round84/assembly/paid_address_result.json",
+      "evidence": {
+        "direct/round84/READOUT_RU.md": "7f3687a91f986eda5e3a78fde6e94cae58bb8d6477803c1b740733a918ee3396",
+        "direct/round84/assembly/PAID_ADDRESS_RU.md": "436724fd77a3e75b9790ab8e8898b9b4a7438b86ba2582a3ec850199a7907970",
+        "direct/round84/assembly/check_paid_address.py": "72747119ccc2c5a22174cadc8f588a41dea522f6d60afa558a99357fbd51faf0",
+        "direct/round84/assembly/paid_address_result.json": "35b8cd67e3944df315e65c13e9007b2a6c45f92be8a86384ed678531c04641c9"
+      }
+    },
+    {
+      "id": "fixed_cyclic_query_address",
+      "check": "direct/round84/assembly/check_cyclic_query.py",
+      "stdout_matches": "direct/round84/assembly/cyclic_query_result.json",
+      "evidence": {
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round84/READOUT_RU.md": "7f3687a91f986eda5e3a78fde6e94cae58bb8d6477803c1b740733a918ee3396",
+        "direct/round84/assembly/CYCLIC_QUERY_RU.md": "8ada23ec5ac589a23eeca16d89a177d6c86019594599876a40ebb074f2ba17cf",
+        "direct/round84/assembly/check_cyclic_query.py": "3ebf96b5552c16e685713e352212bf5712a58527e7172a8a7af95b33f27bc9c0",
+        "direct/round84/assembly/check_retained_replicas.py": "fd98b697deb9ef0d6974319fb7817df5c1e23f5700a01c4f7aa29d9b52bd860e",
+        "direct/round84/assembly/cyclic_query_result.json": "602ddaf9d578c4eef0529962938b015cb6710c6e955c8b8aa2a4231e6cb1e562"
+      }
+    },
+    {
+      "id": "paid_two_rail_geometric_key",
+      "check": "direct/round84/assembly/check_paid_key.py",
+      "stdout_matches": "direct/round84/assembly/paid_key_result.json",
+      "evidence": {
+        "direct/round84/READOUT_RU.md": "7f3687a91f986eda5e3a78fde6e94cae58bb8d6477803c1b740733a918ee3396",
+        "direct/round84/assembly/PAID_KEY_RU.md": "c8e7672ed05c224f09e9ff22a7195996011af5e4537e1aa24c55849c2d66f0f5",
+        "direct/round84/assembly/check_paid_key.py": "fd99bfc7a7ace1f5c9872b425f042154cfb325b1251cfc1d2e700679c2137fdf",
+        "direct/round84/assembly/paid_key_result.json": "edbf72229131c7de0900671d740108f691aeab1166836c5893cee2c65a8ed709"
+      }
+    }
+  ],
+  "reviewed_pr334": "908e70a3c86be2c99809f1faa830c92993b117ae"
+}

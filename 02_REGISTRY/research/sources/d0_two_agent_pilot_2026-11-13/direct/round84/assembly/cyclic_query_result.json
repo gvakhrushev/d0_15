@@ -1,0 +1,16 @@
+{
+  "complete_square_gates": 422,
+  "all_staged_overlaps_exact": true,
+  "old_key_restored": true,
+  "first_lane_motion": [
+    131.907644783,
+    162.194722597
+  ],
+  "total_square_motion_both": 298.10236738,
+  "fixed_address_probabilities": [
+    0.664735561538,
+    0.785263029351
+  ],
+  "geometry_word_executed": false,
+  "GR_closed": false
+}

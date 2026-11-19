@@ -1,5 +1,6 @@
 {
   "source": "2350117b469890c04b8ff5d8987b224a863e844a",
+  "anchored_full_column_conjugacy_checked": true,
   "grid": "4^4",
   "F_H": "16517734400/162621047169",
   "strict_negative_each_of_8_raw_slopes": true,

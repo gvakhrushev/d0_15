@@ -20,8 +20,27 @@ def pinned(name):
     data = subprocess.check_output(["git", "-C", REPO, "show", PIN+":"+METRIC+name+".py"])
     module = types.ModuleType(name)
     sys.modules[name] = module
-    exec(compile(data, name+".py", "exec"), module.__dict__)
+    exec(compile(data, name+".py", "exec", optimize=0), module.__dict__)
     return module
+
+
+def check(condition, message):
+    if not condition:
+        raise AssertionError(message)
+
+
+def check_anchor_transport():
+    import sympy as sp
+    e=sp.Matrix([1,0,0]); c=sp.Rational(1,8)
+    n=sp.sqrt(1-c*c)
+    b=sp.Matrix([c,n,0])
+    s=sp.Matrix([[1,0,0],[0,sp.Rational(3,5),-sp.Rational(4,5)],
+                 [0,sp.Rational(4,5),sp.Rational(3,5)]])
+    def full(target):
+        k=target*e.T-e*target.T
+        return sp.eye(3)+k+k*k/(1+c)
+    check(s*e==e and s*s.T==sp.eye(3), "orthogonal fixed anchor")
+    check(full(s*b)==s*full(b)*s.T and full(b)*e==b, "full-column anchored transport")
 
 
 G = pinned("check_boundary_experiment").Golden
@@ -71,7 +90,7 @@ rq = G(8)*p**3*(o-G(2)*r)*(z*(G(2)-L0)-z*z*(L0+G(2)*(o-L0)*L0))
 k0 = rq*inv(rf)
 H = F(1,4)
 Fgrid = geometry(4)  # Full CAR16 trace, both orientations, six actual faces.
-assert Fgrid==F(16517734400,162621047169)
+check(Fgrid==F(16517734400,162621047169), "full CAR moment")
 b = G(Fgrid/16)*inv(k0)
 f = G(Fgrid/64)
 zero=G()
@@ -86,16 +105,17 @@ def one_input(t):
     xs=[f*(o+G(t*c[site[0]])) for site in sites]
     mean=sum(xs,zero)*G(F(1,256))
     second=sum((x*x for x in xs),zero)*G(F(1,256))
-    assert mean==f and second==f*f*G(1+t*t/2)
+    check(mean==f and second==f*f*G(1+t*t/2), "both moments on all cells")
     return mean,second
 
 
 def main():
+    check_anchor_transport()
     h=G(F(1,32768)); t=F(1,4); dt=F(1,16)
     U, V = one_input(t)
     left,right = one_input(t-dt),one_input(t+dt)
     derivative=(right[1]-left[1])*G(1/(2*dt))
-    assert derivative==f*f*G(t)
+    check(derivative==f*f*G(t), "centered physical tangent")
     signed=zero; unsigned=zero
     sizes=[705600*comb(8,j)//j**2 for j in range(1,9)]
     samples=[]
@@ -103,40 +123,40 @@ def main():
     for j,n in enumerate(sizes,1):
         eps=G(j)*h
         A=report(zero,b*eps)-report(zero,zero-b*eps)
-        assert sign(A)>0
+        check(sign(A)>0, "reference response sign")
         def raw(pair):
             mean,second=pair
             return A*rf*(eps*mean-phi*eps*eps*second)
         # Independent evaluation of the original SC1 table from the three site values.
         vals=[f*G(1+t*i) for i in (1,0,-1,0)]
         mean_click=sum((report(eps*x,zero)-r0 for x in vals),zero)*G(F(1,4))
-        assert raw((U,V))==A*mean_click
+        check(raw((U,V))==A*mean_click, "polynomial equals 4 distinct-site evaluations")
         slope=(raw(right)-raw(left))*G(1/(2*dt))
-        assert slope==zero-A*rf*phi*eps*eps*derivative and sign(slope)<0
+        check(slope==zero-A*rf*phi*eps*eps*derivative and sign(slope)<0, "raw finite jet sign and identity")
         signed += G(((-1)**(j-1))*n)*slope
         unsigned += G(n)*slope
         samples.append(display(slope))
-    assert signed==zero and sign(unsigned)<0
+    check(signed==zero and sign(unsigned)<0, "signed cancellation with unsigned motion")
     ratio=unsigned*inv(G(705600)*normalized_gain)
     leading=zero-G(1024)*phi*h*derivative
     relative=(ratio-leading)*inv(leading)
-    assert sign(G(F(1,10**10))-relative)>0 and sign(G(F(1,10**10))+relative)>0
+    check(sign(G(F(1,10**10))-relative)>0 and sign(G(F(1,10**10))+relative)>0, "finite normalized deviation")
     # On arbitrary prior copies/ref, CNOT on sharp B,T changes orthogonal
     # basis vectors iff B=1. Second CNOT depends only on parity of j.
     for b0,neg,initial in product((0,1),repeat=3):
         first=initial^b0; last=first^neg
-        assert (first!=initial)==bool(b0) and (last!=first)==bool(neg)
+        check((first!=initial)==bool(b0) and (last!=first)==bool(neg), "full sharp CX costs")
     for raw,neg in product((0,1),repeat=2):
         t_before=raw
         t_opposite=t_before^1
         duplicate=t_opposite
         restored=t_opposite^1
-        assert restored^neg==raw^neg and duplicate==1-raw
-        assert raw+duplicate==1 and (1+raw)+(1+duplicate)==3
-        assert ((p**2,p)[raw])==((p,p**2)[duplicate])
-    assert sum(F(comb(8,j),j*j)*j**2 for j in range(1,9))==255
-    assert sum(F(comb(8,j),j*j)*j**3 for j in range(1,9))==1024
-    print(json.dumps({"source":PIN,"grid":"4^4","F_H":str(Fgrid),
+        check(restored^neg==raw^neg and duplicate==1-raw, "old truth table and duplicate")
+        check(raw+duplicate==1 and (1+raw)+(1+duplicate)==3, "branchwise compensation and two emitted lengths")
+        check(((p**2,p)[raw])==((p,p**2)[duplicate]), "cold duplicate overlap")
+    check(sum(F(comb(8,j),j*j)*j**2 for j in range(1,9))==255, "leading absolute sum")
+    check(sum(F(comb(8,j),j*j)*j**3 for j in range(1,9))==1024, "leading unsigned correction")
+    print(json.dumps({"source":PIN,"anchored_full_column_conjugacy_checked":True,"grid":"4^4","F_H":str(Fgrid),
           "strict_negative_each_of_8_raw_slopes":True,
           "raw_head_slopes_divided_by_p3_vis_alpha2":samples,
           "signed_T_slope_exact":"0",
