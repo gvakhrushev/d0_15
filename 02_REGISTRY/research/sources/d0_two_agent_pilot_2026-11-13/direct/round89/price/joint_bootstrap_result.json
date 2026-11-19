@@ -1,0 +1,113 @@
+{
+  "GR_closed": false,
+  "actual_Book_price_identified": false,
+  "actual_paid_readout_occupancy_rows": [
+    [
+      "-.374",
+      "-.370"
+    ],
+    [
+      "-.374",
+      "-.370"
+    ]
+  ],
+  "angle": [
+    ".00594890822",
+    ".00594890824"
+  ],
+  "both_hodge_degrees": true,
+  "factory_refusal_included": true,
+  "full_joint_leaf_rank": 16,
+  "heat_difference_upper": "1e-31",
+  "ideal_profile_rows": [
+    {
+      "j": 67,
+      "k": 1,
+      "relative_common_calibration_error": [
+        ".165",
+        ".167"
+      ],
+      "rows": [
+        [
+          "-2.395e-8",
+          "-2.394e-8"
+        ],
+        [
+          "1.713e-8",
+          "1.714e-8"
+        ]
+      ]
+    },
+    {
+      "j": -30470,
+      "k": 30538,
+      "relative_common_calibration_error": [
+        ".00219",
+        ".00221"
+      ],
+      "rows": [
+        [
+          "-2.055e-8",
+          "-2.054e-8"
+        ],
+        [
+          "2.045e-8",
+          "2.046e-8"
+        ]
+      ]
+    }
+  ],
+  "paid_native_rows": [
+    {
+      "j": 67,
+      "k": 1,
+      "relative_common_calibration_error": [
+        ".192",
+        ".194"
+      ],
+      "rows": [
+        [
+          "-2.420e-8",
+          "-2.418e-8"
+        ],
+        [
+          "1.637e-8",
+          "1.638e-8"
+        ]
+      ]
+    },
+    {
+      "j": 23413,
+      "k": -23345,
+      "relative_common_calibration_error": [
+        ".00389",
+        ".00392"
+      ],
+      "rows": [
+        [
+          "-2.016e-8",
+          "-2.015e-8"
+        ],
+        [
+          "2.031e-8",
+          "2.032e-8"
+        ]
+      ]
+    }
+  ],
+  "root_rank": 8,
+  "second_native_row_break_even_tariff": [
+    "4.39e-8",
+    "4.42e-8"
+  ],
+  "true_native_CAR_q": [
+    [
+      ".00383738",
+      ".00383740"
+    ],
+    [
+      ".01540553",
+      ".01540555"
+    ]
+  ]
+}
