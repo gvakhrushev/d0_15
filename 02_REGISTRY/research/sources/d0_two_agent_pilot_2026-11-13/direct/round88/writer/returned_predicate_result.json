@@ -1,0 +1,46 @@
+{
+  "GR_closed": false,
+  "a88": "returned_predicate",
+  "comparator": {
+    "basis_cases": 256,
+    "elementary_gates": 1620
+  },
+  "covers_arbitrary_unknown_field_input": false,
+  "independent_writer": {
+    "complete_basis_histories": 294912,
+    "example_q_given_tag0_tag1": [
+      "11/16",
+      "705/1024"
+    ],
+    "tape_fair_bits": 14
+  },
+  "old_writer": [
+    {
+      "click_given_return": "25/34",
+      "q": "5/8",
+      "return": "17/32"
+    },
+    {
+      "click_given_return": "121/146",
+      "q": "11/16",
+      "return": "73/128"
+    },
+    {
+      "click_given_return": "9/10",
+      "q": "3/4",
+      "return": "5/8"
+    }
+  ],
+  "physical_archive": {
+    "checked_retained_tape_words": 16,
+    "early_cold_d3": "0.244544736799",
+    "valid_pair_born": "2*p^3",
+    "valid_pair_cold": "2*p^5"
+  },
+  "pure_exit_obstruction": {
+    "flat_probability": "11/16",
+    "ratio_squared": "11/5",
+    "relative_norm_other_case": "-121/25",
+    "squared_radical_class": 55
+  }
+}
