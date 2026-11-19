@@ -1,0 +1,59 @@
+{
+  "round": "B162",
+  "exact_explicit_scratch_contraction_and_balanced_overlap": true,
+  "retained_scratch_flag_distinguishability": "d, independent of k",
+  "mark_only_flag_distinguishability": "lambda=d^(k+1)",
+  "conditional_gain_bounds": {
+    "q": [
+      "1/16",
+      "19/50"
+    ],
+    "omega": [
+      0,
+      1
+    ],
+    "h": [
+      0.000134723825292204,
+      0.001799857855401798
+    ],
+    "cold_gain_divided_by_z": [
+      0.002133731202573194,
+      0.00844217471570165
+    ],
+    "cold_gain_q_derivative_divided_by_z": [
+      -0.022736438729360132,
+      -0.01800655731119217
+    ],
+    "h_minus_h0_over_omega_squared": [
+      0.0,
+      2.642992977958427e-05
+    ],
+    "dq_h_minus_h0_over_omega_squared": [
+      -0.00024838650261859417,
+      0.0001454770463613457
+    ]
+  },
+  "balanced_rotated_pointer": {
+    "positive_G_power_including_birth": 1048,
+    "mark_contrast": [
+      8.401632211119113e-05,
+      8.401638011407143e-05
+    ],
+    "old_channel_diamond_error_upper": 3.5293760699643197e-09,
+    "cold_gain_divided_by_z": [
+      0.0022775854296438014,
+      0.008303696948659796
+    ]
+  },
+  "EI14_unattenuated_report": {
+    "primary_result_sha256": "d3824cb92b77343e04310a79bf3f5c985df8012743833b0ca43a347696145806",
+    "C1_nats_coefficients_strict_upper": [
+      "0.008178",
+      "0.00006688",
+      "0.0000000001244"
+    ]
+  },
+  "full_physical_Cost_minus_Info": false,
+  "GR_closed": false,
+  "status": "PASS"
+}
