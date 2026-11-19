@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**NC1-чтение отказного dummy:** `python3 -BO -W error metric/check_guarded_dummy_cq_reader.py` проверяет все h/H/Q/W исходы и полный логический RAW; [результат](metric/guarded_dummy_cq_reader_result.json) и [условия](metric/GUARDED_DUMMY_CQ_READER_RU.md).
+
 **Фабрики guarded writer:** `python3 -BO -W error metric/check_guarded_complement_factory_ledger.py` проверяет фабричные срезы, 28 классов отказа и конечные пределы; [результат](metric/guarded_complement_factory_ledger_result.json) и [условия](metric/GUARDED_COMPLEMENT_FACTORY_LEDGER_RU.md).
 
 **Guarded маршрут и уравнения источника:** `python3 -BO -W error metric/check_guarded_route_source_binding.py` проверяет 896 маршрутных эффектов, обе ветви и полный RAW; [результат](metric/guarded_route_source_binding_result.json) и [физические предпосылки](metric/GUARDED_ROUTE_BOOK_SOURCE_EQUATIONS_RU.md).
