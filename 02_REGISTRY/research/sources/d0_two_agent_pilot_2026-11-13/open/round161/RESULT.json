@@ -1,0 +1,91 @@
+{
+  "GR_closed": false,
+  "common_per_block_padding_target": 8,
+  "exact_full_code_fixture_words": 625,
+  "full_Einstein_Hessian_on_admitted_chart_proven": false,
+  "full_native_archive_composition_proven": false,
+  "pinned_inputs": {
+    "direct/round78/h1_code/TYPE_CODE_RU.md": "fb1ce41205075545c31e34b5b663fe3fb1f6f6345a66b1222473ff769092649d",
+    "direct/round78/h1_code/check_type_code.py": "7c1d761e86d2aa1e5c1dda8e6de25c76f6d1703892d6b1952a2aac552d3c3f6e",
+    "direct/round78/selection/H1_EQUATIONS_RU.md": "8d95e35baa5c0e48c761dc952007fc81b44b5e5dc59f28b8e1efb95cd27c8a98"
+  },
+  "rank_padding_unit": 1,
+  "rate_fixture": [
+    {
+      "block": 32,
+      "m_squared_transverse": [
+        -0.4225033030975,
+        -0.4225033030130872
+      ],
+      "m_times_parallel_adjustment": [
+        0.6423759952169419,
+        0.6423759952451509
+      ],
+      "transverse_jet": [
+        -0.00041260088193115224,
+        -0.00041260088184871807
+      ]
+    },
+    {
+      "block": 64,
+      "m_squared_transverse": [
+        -0.5819250720430776,
+        -0.5819250712445406
+      ],
+      "m_times_parallel_adjustment": [
+        0.5723265581333792,
+        0.5723265582742425
+      ],
+      "transverse_jet": [
+        -0.00014207155079176695,
+        -0.00014207155059681173
+      ]
+    },
+    {
+      "block": 128,
+      "m_squared_transverse": [
+        -0.4912847769537622,
+        -0.4912847693640286
+      ],
+      "m_times_parallel_adjustment": [
+        0.5298699207624813,
+        0.5298699214447729
+      ],
+      "transverse_jet": [
+        -2.998564312461927e-05,
+        -2.9985642661378705e-05
+      ]
+    },
+    {
+      "block": 256,
+      "m_squared_transverse": [
+        -0.4569594594468073,
+        -0.4569593881205945
+      ],
+      "m_times_parallel_adjustment": [
+        0.5116369951714981,
+        0.5116369983961173
+      ],
+      "transverse_jet": [
+        -6.972648001812854e-06,
+        -6.9726469134612215e-06
+      ]
+    },
+    {
+      "block": 512,
+      "m_squared_transverse": [
+        -0.44232126607676053,
+        -0.44232060888316466
+      ],
+      "m_times_parallel_adjustment": [
+        0.5030587943495595,
+        0.5030588092057668
+      ],
+      "transverse_jet": [
+        -1.687321724230806e-06,
+        -1.6873192172361937e-06
+      ]
+    }
+  ],
+  "round": "B161"
+}
