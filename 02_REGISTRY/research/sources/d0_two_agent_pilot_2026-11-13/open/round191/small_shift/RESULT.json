@@ -1,0 +1,39 @@
+{
+  "exact_ordered_descriptor_pairs": 16,
+  "sites_per_pair": 256,
+  "minimal_positive_shift_support": 4,
+  "full_comparator_columns_per_offset": 262144,
+  "central_and_four_neighbor_Toffoli_CX": [
+    [
+      14,
+      70
+    ],
+    [
+      14,
+      74
+    ],
+    [
+      14,
+      74
+    ],
+    [
+      14,
+      74
+    ],
+    [
+      14,
+      74
+    ]
+  ],
+  "eighty_comparator_Toffoli_CX": [
+    1120,
+    5856
+  ],
+  "fresh_plus_wires": 16,
+  "fine_key_example_probabilities": [
+    "1/16",
+    "1/8"
+  ],
+  "full_hq_instrument_and_Book_price_proved": false,
+  "GR_closed": false
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "translation": {
+    "translated_columns": 65536,
+    "routing_CX": 8,
+    "routing_Toffoli": 4
+  },
+  "literal_direct_comparator": {
+    "columns_per_offset": 65536,
+    "offsets": 5,
+    "comparators": 80,
+    "CX_with_NC1": 4256,
+    "logical_Toffoli": 1120,
+    "fewer_CX_than_shifted_comparators": 2560,
+    "fewer_Toffoli_than_shifted_comparators": 640,
+    "additional_NC1_births_and_G": [
+      80,
+      80
+    ]
+  },
+  "coherent_archive": {
+    "retained_coefficients_compared": 1024,
+    "basis_effects_do_not_detect_x_phase": true
+  },
+  "nonlinear_source": {
+    "sites": 256,
+    "conditional_uniform_report_preserved": true,
+    "nonzero_old_SITE_jet": "(R(b)-R(-b))/4",
+    "fresh_centre_old_SITE_jet": 0,
+    "TV_joint_old_SITE_record_at_least_local_slope": true,
+    "illustration_b": "1/512",
+    "illustrative_old_SITE_jet": 4.38342815816269e-10
+  },
+  "physical_complete_Hq_and_Book03_ledger_proved": false,
+  "GR_closed": false
+}

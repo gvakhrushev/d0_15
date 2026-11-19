@@ -1,0 +1,16 @@
+{
+  "exact_ring": "Q(p), p^2+p=1",
+  "true_two_visit_law": [
+    "p",
+    "p^3",
+    "p^4"
+  ],
+  "primitive_p_p2_works_as_positive_weights": true,
+  "primitive_p_p2_works_as_amplitudes": false,
+  "scaled_local_Born_global_odds_factor": "p",
+  "adjacent_stop_isolates_actual_nonroot_normalizer": true,
+  "terminal_weight_can_cancel_normalizer": true,
+  "common_root_remains_unidentified": true,
+  "absolute_Book03_link_proved": false,
+  "GR_closed": false
+}

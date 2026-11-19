@@ -1,0 +1,39 @@
+{
+  "native_fork": {
+    "actual_Golden_fork": [
+      "p^2",
+      "p^3",
+      "p^3",
+      "p^4"
+    ],
+    "actual_NC1_gates": 6,
+    "actual_fresh_births": 4,
+    "one_copy_target": "11/29",
+    "cross_odds_with_matched_ratio": "11/29",
+    "cross_odds_with_unmatched_ratio": "726/2465",
+    "raw_nonidentifiability_witness": true,
+    "fixed_two_copy_run_returns_normalized_q_over_t": "110/203"
+  },
+  "shared_SITE": {
+    "actual_local_field_reference": "L=4, descriptors 00 and 01, A=p sin(712 theta)",
+    "site_multiplicities_for_minus_zero_plus": [
+      64,
+      128,
+      64
+    ],
+    "diagnostic_Lambda_one_not_a_norm_calibration": true,
+    "mean_local_acceptance": "0.0000018512395784825093794221",
+    "positive_shared_site_variance": "1.5113706701994852117342e-24",
+    "shared_site_cross_odds_minus_mean": "8.16410089632147917503e-19",
+    "exact_nonzero_sum_of_squares_in_Qp": true
+  },
+  "clock_padding": {
+    "dimension_before": 2048,
+    "dimension_after": 4096,
+    "lower_partition_ratio_using_both_degrees": "718/425",
+    "lower_heat_difference_diagnostic": "0.686422855279198609",
+    "unchanged_terminal_action_requires_actual_common_RC3_cut": true
+  },
+  "same_execution_Book03_ratio_identified": false,
+  "GR_closed": false
+}
