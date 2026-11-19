@@ -4,6 +4,7 @@
 
 ~~~sh
 d=02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19
+python3 -B "$d/metric/check_native_golden_descriptor_secants.py"
 python3 -B "$d/metric/check_two_parameter_fourier_catalogue.py"
 python3 -B "$d/metric/check_factory_routing_cost.py"
 python3 -B "$d/metric/check_guarded_golden_work_binding.py"
@@ -126,6 +127,7 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Золотые материальные секущие | Все входные H/Z/k/U при чистом scratch, точные вероятности и сигнатура +---, два физических конечных направления и условная готовность 32 seed. [Результат](metric/native_golden_descriptor_secants_result.json) |
 | Двухпараметрический Fourier-каталог | Все CAR-столбцы, сигнатура +---, четыре секущих и 16 пар независимых смешанных программ. [Результат](metric/two_parameter_fourier_catalogue_result.json) |
 | Фабрика маршрутизации | Полные проверенные логические столбцы и семь видов отказа с точной нормировкой; микроскопические истории потребляют исходного владельца. [Результат](metric/factory_routing_cost_result.json) |
 | Золотая модель стоимости | Точные тестовые источники одной стадии и условный компенсатор на фиксированном graph-cut. [Результат](metric/guarded_golden_work_binding_result.json) |
