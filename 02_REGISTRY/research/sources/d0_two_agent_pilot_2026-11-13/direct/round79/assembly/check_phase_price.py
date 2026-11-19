@@ -10,7 +10,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[4]/"d0_native_execution_d
 import native_execution as ne
 
 
-def word(k, target):
+def word(k, target, blocks=1, with_overlaps=False):
     g=ne.Gate
     port,x,y=2,3,4
     def sign(j):
@@ -18,7 +18,8 @@ def word(k, target):
         return (*route,g("SourceI",(port,0,1)),g("SourceI",(port,0,1)),*route)
     equal=(g("CX",(x,y)),)*2
     rotations=(g("G",(x,)),g("G",(y,)))
-    stages=(rotations if k else equal)+sign(y)+sign(target)
+    assert 0 <= k <= blocks
+    stages=rotations*k+equal*(blocks-k)+sign(y)+sign(target)
     ex=ne.Execution(5,(),(),stages,profile=ne.G_CX_SOURCE_I,
                     source_port=port,source_spin=(0,1),report_bits=(x,y))
     ne.execution_from_json(ne.canonical_json(ex),max_qubits=5,max_expanded_stages=len(stages))
@@ -28,14 +29,19 @@ def word(k, target):
     for _ in (port,x,y):
         birth=np.kron(birth,v[:,None])
     out=birth.copy()
+    overlaps=[]
     for op in stages:
+        previous=out
         out=np.array(ne.gate_matrix(ex,op,max_qubits=5,max_expanded_stages=len(stages)),dtype=float)@out
+        if with_overlaps:
+            overlaps.append(abs(previous[:,0]@out[:,0]))
     cq=[]
     for a in range(4):
         blocks=out.reshape(4,2,4,4)[:,:,a,:]
         weight=blocks.transpose(2,0,1).reshape(4,-1)
         cq.append(weight@weight.T)
-    return birth.T@out,cq,len(stages)
+    result=(birth.T@out,cq,len(stages))
+    return (*result,overlaps) if with_overlaps else result
 
 
 def main():

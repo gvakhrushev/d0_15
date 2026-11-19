@@ -55,7 +55,16 @@ def replay_upstream(repo, check):
         raise ValueError("Invalid upstream source directory")
     object_repo = os.environ.get("D0_PILOT_OBJECT_REPO", str(repo))
     with TemporaryDirectory(prefix="d0-primary-") as temp:
-        root = Path(temp)
+        root = Path(temp) / folder
+        root.mkdir(parents=True, exist_ok=True)
+        for name in check.get("repository_files", []):
+            path = Path(name)
+            if not path.parts or path.is_absolute() or ".." in path.parts:
+                raise ValueError(f"Invalid upstream dependency: {name}")
+            target = Path(temp) / path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(subprocess.check_output(
+                ["git", "-C", object_repo, "cat-file", "blob", f"{revision}:{path}"]))
         for name in check["files"]:
             if not name or name in (".", "..") or Path(name).name != name:
                 raise ValueError(f"Expected a plain upstream filename: {name}")
