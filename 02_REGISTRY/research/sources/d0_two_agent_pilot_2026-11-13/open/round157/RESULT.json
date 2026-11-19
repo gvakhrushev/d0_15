@@ -1,0 +1,73 @@
+{
+  "B155_crossing_margin_lower_under_literal_and_symmetric_bank_confirmation": 0.0010302794081166683,
+  "B156_comparison_terminal_count_error_1e_10": 633080010353,
+  "GR_closed": false,
+  "directional_error_for_uniform_pointwise_error_0_01_upper": 1.5268089227028527e-05,
+  "fixed_three_bit_example_error_0_01": {
+    "CX": 239,
+    "G_CX_plus_literal_slot_upper": 706,
+    "G_including_births": 279,
+    "borrowed_registered_bit": 1,
+    "max_literal_0_10_slots": 188,
+    "raw_coin_registrations": 94,
+    "registered_scratch_bits": 22,
+    "terminal_pointers": 71
+  },
+  "fixed_three_bit_example_error_1e_10": {
+    "CX": 853,
+    "G_CX_plus_literal_slot_upper": 2441,
+    "G_including_births": 936,
+    "borrowed_registered_bit": 1,
+    "max_literal_0_10_slots": 652,
+    "raw_coin_registrations": 326,
+    "registered_scratch_bits": 104,
+    "terminal_pointers": 221
+  },
+  "full_physical_clock_prices_and_classes_selected": false,
+  "full_raw_confirmed_gain_bounds": {
+    "coherent_sqrt22": {
+      "scratch_lower": 0.39754346938932733,
+      "target_lower_by_anchor": [
+        0.5026591882727381,
+        0.7095350924978397
+      ]
+    },
+    "coherent_unit": {
+      "scratch_lower": 0.5710252520725861,
+      "target_lower_by_anchor": [
+        0.22195976746232857,
+        0.5561919722718544
+      ]
+    },
+    "literal_none": {
+      "scratch_lower": 0.6180339887498726,
+      "target_lower_by_anchor": [
+        0.14589803375028662,
+        0.514640252843547
+      ]
+    },
+    "registered_sqrt22": {
+      "scratch_lower": 0.1950994635249441,
+      "target_lower_by_anchor": [
+        0.8302204705800091,
+        0.8902143266624685
+      ]
+    },
+    "registered_unit": {
+      "scratch_lower": 0.5278640450004001,
+      "target_lower_by_anchor": [
+        0.29179606750060055,
+        0.5947129144263362
+      ]
+    }
+  },
+  "max_fractional_place_for_each_199_bit_coefficient": 111,
+  "pinned_source_hashes": {
+    "direct/round78/clock/BLANK_CONFIRMATION_RU.md": "65e37fff5ff3433139e18ced7c6ceda8b58a0c31e9aab2563e14fb4bdc896a77",
+    "open/round156/RESULT.json": "ed3cb99c5d6e67003d4022016d2fd61edc236464a755d65c377f6e6548ffefdb",
+    "open/round156/check_fixed_parity_tariff.py": "00d07b8e76237bde04faf13c0771262d4b7a70415af4706f828510dfd420cfdf"
+  },
+  "retained_old_gain_coefficient_at_error_0_01": 0.000780869212350231,
+  "round": "B157",
+  "shared_CX_truth_table_inputs": 512
+}

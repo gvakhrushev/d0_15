@@ -1,0 +1,109 @@
+{
+  "GR_closed": false,
+  "alpha": [
+    0.9450796308833954,
+    0.9451794072049579
+  ],
+  "bounds_only_fixed_linear_print_architecture": true,
+  "first_block_fixed_count": 48,
+  "given_last_charge_scenarios": [
+    {
+      "common_degree_47_coefficient": [
+        -5.180561740521352e-17,
+        -5.1801129928736763e-17
+      ],
+      "degree_38_to_59_energy": [
+        0.0016612869844775681,
+        0.0016615884534533069
+      ],
+      "given_last_charge": "literal",
+      "max_abs_coefficient_in_band_upper": 4.1722545966366176e-16,
+      "minimum_distinct_print_characters_error_0_01_lower": 7.2455658959088e+27,
+      "minimum_distinct_print_characters_error_1e_10": 3217533506933134547510322499
+    },
+    {
+      "common_degree_47_coefficient": [
+        -3.955820989969815e-17,
+        -3.9553722423076205e-17
+      ],
+      "degree_38_to_59_energy": [
+        0.0015888313915569585,
+        0.0015891310787645597
+      ],
+      "given_last_charge": "registered",
+      "max_abs_coefficient_in_band_upper": 4.1723036231862e-16,
+      "minimum_distinct_print_characters_error_0_01_lower": 6.829178341163866e+27,
+      "minimum_distinct_print_characters_error_1e_10": 3217533506933123886887191435
+    },
+    {
+      "common_degree_47_coefficient": [
+        5.63981577563278e-18,
+        5.644303252793082e-18
+      ],
+      "degree_38_to_59_energy": [
+        0.0014212917275083525,
+        0.001421585659518762
+      ],
+      "given_last_charge": "registered_sqrt22",
+      "max_abs_coefficient_in_band_upper": 4.172484551537429e-16,
+      "minimum_distinct_print_characters_error_0_01_lower": 5.866246921800202e+27,
+      "minimum_distinct_print_characters_error_1e_10": 3217533506931891890040248354
+    },
+    {
+      "common_degree_47_coefficient": [
+        -4.563965346646979e-17,
+        -4.563516598969336e-17
+      ],
+      "degree_38_to_59_energy": [
+        0.0016232666769147735,
+        0.0016235672494904318
+      ],
+      "given_last_charge": "coherent",
+      "max_abs_coefficient_in_band_upper": 4.172279091190024e-16,
+      "minimum_distinct_print_characters_error_0_01_lower": 7.027072630304475e+27,
+      "minimum_distinct_print_characters_error_1e_10": 3217533506933130247158355175
+    },
+    {
+      "common_degree_47_coefficient": [
+        -2.288468297242825e-17,
+        -2.2880195494545105e-17
+      ],
+      "degree_38_to_59_energy": [
+        0.001508390603393353,
+        0.00150868786787801
+      ],
+      "given_last_charge": "coherent_sqrt22",
+      "max_abs_coefficient_in_band_upper": 4.172369486275941e-16,
+      "minimum_distinct_print_characters_error_0_01_lower": 6.366889521845516e+27,
+      "minimum_distinct_print_characters_error_1e_10": 3217533506933073045912142768
+    }
+  ],
+  "old_mass_jets": [
+    [
+      -0.00036843778742764164,
+      -0.00036843778735920875
+    ],
+    [
+      0.0003689388514261188,
+      0.0003689388514994325
+    ]
+  ],
+  "old_masses": [
+    [
+      0.49866154792679884,
+      0.4986615479268165
+    ],
+    [
+      0.49878280727632834,
+      0.49878280727634605
+    ]
+  ],
+  "old_posterior_sign": [
+    0.0003677460526281886,
+    0.00036774605269889376
+  ],
+  "old_tag": 0,
+  "second_prefix_bits": 95,
+  "walsh_degree": 47,
+  "walsh_families": 3217533506933149454210801550
+}
