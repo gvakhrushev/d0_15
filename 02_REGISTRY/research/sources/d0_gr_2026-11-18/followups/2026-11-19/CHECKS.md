@@ -4,6 +4,7 @@
 
 ~~~sh
 d=02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19
+python3 -B "$d/metric/check_guarded_live_composition.py"
 python3 -B "$d/metric/check_fredkin_guarded_pair.py"
 python3 -B "$d/metric/check_fourier_reference_bdd_synthesis.py"
 python3 -B "$d/metric/check_native_birth_reflection.py"
@@ -119,6 +120,7 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Общая ветвь LIVE | Все 32 старых столбца, условный LIVE и промежуточная положительная тестовая метка работы. [Результат](metric/guarded_live_composition_result.json) |
 | Общее слово для двух ветвей | Все старые входы, три эффекта, запись N и clock с идеальными Toffoli; полный factory-clock не воспроизведён. [Результат](metric/fredkin_guarded_pair_result.json) |
 | Две исходные Fourier128-опоры | Инволюция W, полные CAR-столбцы и Gram; фабричная когерентная дилатация остаётся условием. [Результат](metric/fourier_reference_bdd_synthesis_result.json) |
 | Отражение канонических рождений | Полный оператор на тестовых размерах, очиcтка scratch и условная фабричная готовность. [Результат](metric/native_birth_reflection_result.json) |
