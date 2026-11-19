@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "squared_scale": [
+    "1",
+    "phi^2"
+  ],
+  "cell_weights": [
+    "128/256",
+    "128/256"
+  ],
+  "forward_time_differences": [
+    "1/4",
+    "-1/4",
+    "1/2",
+    "-1/2"
+  ],
+  "strict_Aprime_interval_on_0_to_1_over_1024": [
+    "3.3431682965530",
+    "3.3840084714259"
+  ],
+  "SC1_k0": [
+    "23.4164067518840",
+    "23.4164067518841"
+  ],
+  "raw_coframe": "I",
+  "material_volume": "1",
+  "epsilon_fixture": "1/16384",
+  "R_target_radial": [
+    "-1.829406777490944",
+    "-1.829406777490943"
+  ],
+  "R_b_1": [
+    "-1.829463419175673",
+    "-1.829463419175672"
+  ],
+  "R_b_phi": [
+    "-1.829555059233556",
+    "-1.829555059233555"
+  ],
+  "shift_b": [
+    "-0.000091640057883",
+    "-0.000091640057882"
+  ],
+  "R_c_1": [
+    "-1.829392617617780",
+    "-1.829392617617779"
+  ],
+  "R_c_phi": [
+    "-1.829369710810820",
+    "-1.829369710810819"
+  ],
+  "shift_c": [
+    "0.000022906806960",
+    "0.000022906806961"
+  ],
+  "shape_price_response_ratio_Dprice_zc_over_Dprice_zb": [
+    "1.000038702221278",
+    "1.000038702221279"
+  ],
+  "per_row_relative_accuracy_in_fixture": "1/10000000",
+  "error_for_two_ratios_at_that_accuracy": [
+    "0.000000565911068",
+    "0.000000565911069"
+  ],
+  "native_implementation": "Finite common-clock realization follows under the stated compiler and price bounds; no word emitted here.",
+  "scope": "Exact finite response of specified readout; growing-clock bounds and microscopic valuation have separate hypotheses."
+}

@@ -1,0 +1,16 @@
+{
+  "Fock_curvature_at_1_over_4": "18368/83521",
+  "Fock_curvature_at_1_over_5": "8425/57122",
+  "Fock_dimension": 16,
+  "complete_word_replayed": false,
+  "derivative_along_dfA_plus1_dfB_minus1_SC2": "1.039583316312E-23",
+  "derivative_divided_by_actual_first_amplitude": "2.223995185744E-2",
+  "field_attenuation": "1/32",
+  "geometric_ready_unknown": "same symbolic expression, with actual positive field-independent readiness",
+  "marked_swap_gap_SC2": "6.289722073126E-25",
+  "reporter_delta": "1/1024",
+  "required_max_per_endpoint_error_SC2": "3.144861036563E-25",
+  "source_head": "531f775e05b4295930fc1fadb77b1ffd97e76038",
+  "status": "PASS",
+  "true_economic_fixed_volume_transfer": false
+}
