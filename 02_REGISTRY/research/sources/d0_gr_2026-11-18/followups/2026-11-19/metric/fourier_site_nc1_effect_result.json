@@ -1,0 +1,74 @@
+{
+  "status": "PASS; actual native logical interfaces, conditional physical factories",
+  "comparator_cases": {
+    "None": {
+      "XY_columns": 65536,
+      "equality_columns": 256,
+      "compute_and_uncompute_Toffoli": 14,
+      "compute_and_uncompute_CX": 64,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ]
+    },
+    "0": {
+      "XY_columns": 65536,
+      "equality_columns": 256,
+      "compute_and_uncompute_Toffoli": 14,
+      "compute_and_uncompute_CX": 68,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ]
+    },
+    "1": {
+      "XY_columns": 65536,
+      "equality_columns": 256,
+      "compute_and_uncompute_Toffoli": 14,
+      "compute_and_uncompute_CX": 68,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ]
+    },
+    "2": {
+      "XY_columns": 65536,
+      "equality_columns": 256,
+      "compute_and_uncompute_Toffoli": 14,
+      "compute_and_uncompute_CX": 68,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ]
+    },
+    "3": {
+      "XY_columns": 65536,
+      "equality_columns": 256,
+      "compute_and_uncompute_Toffoli": 14,
+      "compute_and_uncompute_CX": 68,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ]
+    }
+  },
+  "full_resource_normalization_error": 0.0,
+  "finite_protected_arena_dimension": 8,
+  "ready_effect_full_gram_error": 2.5153490401663703e-17,
+  "entangled_scene_marginal_error": 2.5535359677691266e-15,
+  "same_reference_SITE_coherence_multiplier": 0.3125,
+  "Fourier_resource_success_Pone": "0.930800284525879176648299582146749227713500336",
+  "comparison_known_one_and_factories_success": "0.999996219732763517025150704857899187899062058",
+  "joint_hardware_ready": "0.930796765852059874436326861161660380440765466",
+  "ready_equal_effect_scalar": "0.0036359248666096088845169018014127358610967401",
+  "ready_not_equal_effect_scalar": "0.927160840985450265551809959360247644579668726",
+  "factory_first_failures_all_mass_error": "0.0",
+  "full_factory_dilation_and_joint_clock_simulated": false,
+  "Book03_price_or_full_geometric_bank_derived": false,
+  "GR_closed": false
+}

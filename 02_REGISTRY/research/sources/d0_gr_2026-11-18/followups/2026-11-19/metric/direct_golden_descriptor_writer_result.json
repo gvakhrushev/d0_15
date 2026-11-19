@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "contrast_exact": "p^3",
+  "contrast": 0.2360679774997897,
+  "K0_effect_diag": [
+    "p",
+    "p^2"
+  ],
+  "K1_effect_diag": [
+    "p^2",
+    "p"
+  ],
+  "actual_two_fresh_births_CX_G_NC1_per_descriptor": {
+    "births": 2,
+    "CX": 3,
+    "G": 1,
+    "NC1": 1
+  },
+  "dark_11": true,
+  "max_entangled_RIGHT_error": 2.220446049250313e-16,
+  "center_q_s_q_t": [
+    0.5,
+    0.5
+  ],
+  "two_copy_Q_center": "-1/4",
+  "two_copy_Q_derivatives_s_t": [
+    "1/2",
+    "-1/2"
+  ],
+  "input_t_derivatives_Q": [
+    "p^3/2",
+    "-p^3/2"
+  ],
+  "center_field_gram_over_A_squared": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "math_program_32_input_lift_norm_over_q": 33.88854381999832,
+  "math_program_32_input_lift_norm_over_transformed_field": 3043.9367286930233,
+  "math_program_32_input_lift_norm_over_original_field": 2910.724899105816,
+  "observed_CQ_code_minus_information_32": 1.9065571067981963,
+  "observed_CQ_code_minus_information_common_t_slope_16": 3.777087639996635,
+  "center_plus32_conditional_success": "0.999999995629869660818932537813",
+  "max_orig_matter_amplitude": 0.011642647448547608,
+  "original_strict_bound_p": 0.6180339887498949,
+  "continuous_program_preparation_and_variations_physically_admitted": false,
+  "geometry_j_all42_Book03_source_and_physical_lift_established": false,
+  "same_center_as_certified_42_root": false,
+  "GR_closed": false
+}
