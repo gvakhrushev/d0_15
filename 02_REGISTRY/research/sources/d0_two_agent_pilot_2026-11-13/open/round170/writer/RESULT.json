@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "A82_commit": "75d4da9ef",
+  "actual_last_detector_square_commands": 90,
+  "old_live_second_pointer_wire": 6,
+  "additional_W3_clearing_and_copy_inventory": {
+    "CX": 20,
+    "SourceI": 12,
+    "G": 3
+  },
+  "additional_W3_births": 3,
+  "exact_routed_inverse_compact_columns": 48,
+  "additional_W3_raw_columns": 1024,
+  "old_columns_with_actually_prepared_W3": 128,
+  "old_columns_with_live_NC1": 128,
+  "lengths_original_extra_total": {
+    "00": [
+      3,
+      1,
+      4
+    ],
+    "01": [
+      4,
+      2,
+      6
+    ],
+    "10": [
+      5,
+      1,
+      6
+    ]
+  },
+  "last_literal_rectangle_before_after": [
+    1,
+    0
+  ],
+  "last_W3_movement_rectangle_before_after": [
+    2,
+    0
+  ],
+  "last_live_NC1_movement_rectangle_before_after": [
+    "1+p^3",
+    0
+  ],
+  "paired_literal_slope_intervals": {
+    "17": [
+      -0.07070191652417863,
+      -0.07070191652417863
+    ],
+    "18": [
+      0.004464355151289877,
+      0.004464355151289877
+    ]
+  },
+  "latent_conditional_entropy_added": 0,
+  "full_physical_Cost_minus_Info_identified": false,
+  "GR_closed": false
+}

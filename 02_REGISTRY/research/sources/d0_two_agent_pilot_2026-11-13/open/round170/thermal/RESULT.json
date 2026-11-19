@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "detector_native_calls": 194,
+  "detector_basis_columns_per_defect": 32,
+  "writer_basis_columns_per_head_and_birth_choice": 128,
+  "writer_stages_including_twelve_births_and_twelve_reads": 164,
+  "first_differing_winding": 363,
+  "leading_moments_b0_b1": {
+    "success": [
+      "p^9 cos(12theta)",
+      "0"
+    ],
+    "service": [
+      "p^7 sqrt(p) sin(12theta)",
+      "0"
+    ]
+  },
+  "born_cross_ratio": "1",
+  "literal_code_cross_ratio": "1",
+  "log_thermal_cross_ratio": "> f_363/20 > 0",
+  "GR_closed": false,
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round82/device/check_prepaid_report.py": "d7bb38033ccfade7f29b76195928b18ec507c82cc633ab7e3e67f6d1a57bc99f",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round82/assembly/REUSED_BIT_RU.md": "d3a3d58e7eb85a956ac20489c28ee6b8c3d18f5da3163d0875829ac6f9e78188",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round169/B169_TERMINAL_GIBBS_BORN_RU.md": "b299d1fa7544ccb37897458458f317b6cd741a9403b0a19ede55c3f2a9a0fe13",
+    "02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md": "9c513067559c9cd89ac4c911d01a21e06c9b4d2cd962d5d568b51459ae3d0866",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+  }
+}

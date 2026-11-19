@@ -1,0 +1,27 @@
+{
+  "GR_closed": false,
+  "candidate": {
+    "conditional_partition_ratio": [
+      "0.91986643",
+      "0.91986645"
+    ],
+    "k": 5,
+    "mean_slope": [
+      "0.02945830",
+      "0.02945831"
+    ],
+    "n": 12,
+    "resolved_colour_price_gap": 2
+  },
+  "causal_constraint_ranks": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "exact_terminal_records_scanned": 1488,
+  "full_book_price_selected": false,
+  "source_pins": 2,
+  "status": "PASS"
+}
