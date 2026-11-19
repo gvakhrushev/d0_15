@@ -4,6 +4,9 @@
 
 ~~~sh
 d=02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19
+python3 -B "$d/metric/check_native_neighbor_phase_oracle.py"
+python3 -B "$d/metric/check_raw_fourier_vacuum_inverse.py"
+python3 -B "$d/metric/check_typed_abort_pair.py"
 python3 -B "$d/metric/check_coherent_localization_amplification.py"
 python3 -B "$d/metric/check_site_eight_catalogue.py"
 python3 -B "$d/metric/check_native_balanced_pair_clock.py"
@@ -110,6 +113,9 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Фазовый оракул адреса | Полное логическое слово на всех парах адресов, пяти смещениях и полном SourceI/Spin. [Результат](metric/native_neighbor_phase_oracle_result.json) |
+| Исходный Fourier-вакуум и обратная буква | Декодер частот, полный target/port/Spin и условная цена одного профиля без воспроизведения фабрик. [Результат](metric/raw_fourier_vacuum_inverse_result.json) |
+| Ранний останов пары | Три prefix-free исхода, полный математический инструмент и аналитическое сравнение двух заданных clock-программ. [Результат](metric/typed_abort_pair_result.json) |
 | Когерентное усиление локализации | Точные двухмерные амплитуды, условные вероятности всех входов и полный защищённый SITE на модельной изометрии. [Результат](metric/coherent_localization_amplification_result.json) |
 | SITE-каталог восьми настроек | Все настройки, циклический Gray и Julia32 для фиксированного поля; длинные серии не исполнялись побуквенно. [Результат](metric/site_eight_catalogue_result.json) |
 | Единый clock сбалансированной пары | Все четыре зарегистрированные PVM-ветви, настоящий SourceI, условный CQ-расчёт и полный временной контур. [Результат](metric/native_balanced_pair_clock_result.json) |

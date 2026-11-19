@@ -1,0 +1,48 @@
+{
+  "Book_CostInfo_identified": false,
+  "GR_closed": false,
+  "conditional_H1_word_length": 5,
+  "conditional_code_CQ_derivative_wrt_q": 0,
+  "conditional_code_CQ_exact": "p",
+  "early_stop_H0_instruction_counts_if_dispatcher_admitted": {
+    "CX": 9,
+    "G": 2,
+    "SourceI": 4,
+    "birth": 3
+  },
+  "existing_full_99stage_clock_dimension": 415152,
+  "fixed_word_HALT_is_primitive": false,
+  "full_instrument_effects_sum_to_identity": true,
+  "heat_bootstrap_difference_center": 0.23574108858235976,
+  "heat_bootstrap_difference_truncation_bound": "1.240028e-103",
+  "heat_trace_universal_ratio_lower": 1.0113877383535215,
+  "mean_instruction_counts_if_dispatcher_admitted": {
+    "CX": 32.68189269750653,
+    "G": 3.909830056250526,
+    "SourceI": 7.055728090000842,
+    "birth": 5.2917960675006315
+  },
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "padded_feedback_unchanged": true,
+  "padded_native_clock_dimension": 497072,
+  "padded_pairs_in_native_word": 5,
+  "padded_witness_is_the_true_aborted_clock": false,
+  "padded_word_full_clock_executed": false,
+  "physical_stop_dispatcher_compiled": false,
+  "probabilities": "p; p^2*(p-p^3*q); p^2*(p^2+p^3*q)",
+  "probability_joint_H1_N1_derivative_wrt_q": 0.090169943749,
+  "same_record_measures_do_not_determine_unpaid_clock": true,
+  "status": "PASS",
+  "success_H1_instruction_counts_if_dispatcher_admitted": {
+    "CX": 71,
+    "G": 7,
+    "SourceI": 12,
+    "birth": 9
+  },
+  "terminal_transmitter_compiled": false,
+  "terminal_words": [
+    "0",
+    "10010",
+    "10100"
+  ]
+}
