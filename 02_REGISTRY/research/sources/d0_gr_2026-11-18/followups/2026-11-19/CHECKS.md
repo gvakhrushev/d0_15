@@ -4,6 +4,8 @@
 
 ~~~sh
 d=02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19
+python3 -B "$d/metric/check_error_code_signal.py"
+python3 -B "$d/metric/check_native_fourier_uncompute.py"
 python3 -B "$d/metric/check_carry_compensated_geometry.py"
 python3 -B "$d/metric/check_fourier_fresh_localization.py"
 python3 -B "$d/metric/check_reversible_error_code.py"
@@ -102,6 +104,8 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Сигнал после обратимого кода | Полные эффекты E и N, совместный закон и отсутствие двойного начисления энтропии. [Результат](metric/error_code_signal_result.json) |
+| Нативное Fourier-декодирование | Все 32768 столбцов адреса, пары и типа, полная 16-колоночная проверка маршрута SourceI и условная опись фабрик. [Результат](metric/native_fourier_uncompute_result.json) |
 | Компенсация SITE-фаз | Все переносы и wrap при L=16, локальные коэффициенты, полиномиальная интерполяция и число операций без побуквенного повтора. [Результат](metric/carry_compensated_geometry_result.json) |
 | Fourier128 и свежий пурификатор | Вакуумный контрпример фильтра, адресная декодировка и условная локальная готовность при сохранении старого RIGHT. [Результат](metric/fourier_fresh_localization_result.json) |
 | Обратимый код ошибки | Два варианта зарегистрированной цены и полная изометрия с единым 102-стадийным clock. [Результат](metric/reversible_error_code_result.json) |

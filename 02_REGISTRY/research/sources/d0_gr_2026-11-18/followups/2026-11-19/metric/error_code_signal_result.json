@@ -1,0 +1,21 @@
+{
+  "E_and_T_independent": true,
+  "E_fisher_wrt_q": 0,
+  "E_one_effect": "p^2 I on all old inputs",
+  "GR_closed": false,
+  "N_and_E_joint_determine_T": true,
+  "N_one_effect": "diag(p^2,p) on old T, identity on other old inputs",
+  "d_P_E1_dq": 0,
+  "d_P_N1_dq": 0.2360679775,
+  "example_N_fisher_wrt_q": 0.223755295177,
+  "example_mutual_information_T_E_nats": 0,
+  "example_mutual_information_T_N_E_nats": 0.658955680683,
+  "example_mutual_information_T_N_nats": 0.026244000227,
+  "example_q": 0.37,
+  "full_book_cost_info_identified": false,
+  "native_inverse_SourceI_and_full_clock": "referenced reversible_error_code receipt",
+  "old_input_columns_checked": 4,
+  "old_port_spin_and_RIGHT": "tensor extension of checked logical effect",
+  "separate_N_or_T_output_compiled_and_paid": false,
+  "status": "PASS"
+}
