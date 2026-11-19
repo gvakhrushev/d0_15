@@ -1,6 +1,7 @@
 """Full Julia tangent, protected native coordinate and a two-site uncentred report."""
 import json
 import math
+from fractions import Fraction
 import numpy as np
 
 
@@ -199,6 +200,42 @@ def report_test():
     return [round(x,10) for x in curv], [round(x,10) for x in rows]
 
 
+def exact_slots():
+    # Coordinates in Q(p), where p*p = 1-p. Check the proposed integer
+    # masks by multiplication against the source formula (no fitted slopes).
+    def times(x, y):
+        a, b = x
+        c, d = y
+        return a*c+b*d, a*d+b*c-b*d
+
+    def scale(c, x):
+        return c*x[0], c*x[1]
+
+    p3 = (-1, 2)
+    h = Fraction(1, 4)
+    lam = scale(Fraction(-1, 68720525311), (1099527356400, 824647876594))
+    b = scale(Fraction(22, 16), p3)
+    eta = scale(Fraction(5, 16)*h*h, p3)
+    denominator = 5497642024880
+    k = (343602626555, 0)
+    material = [(-48379203681600, -36284506570136),
+                (109952886634816, 60473976290472)]
+    check(scale(Fraction(1, denominator),k) == (h*h, 0), "curvature slots")
+    for m, slots in enumerate(material):
+        left = times(eta, scale(Fraction(1, denominator), slots))
+        right = scale(-2*h**4, times(lam, (m-b[0],-b[1])))
+        check(left == right, "exact material slots on true mark")
+    capacities = [8*(4*sum(abs(x) for x in k)+sum(abs(x) for x in row))
+                  for row in material]
+    width = (max(capacities)-1).bit_length()
+    check(width == 51, "a single coherent slot address")
+    g = 2*P**3*NU/D * denominator/2**width
+    return {"clearing_denominator": denominator, "link_slots": list(k),
+            "material_slots": [list(row) for row in material],
+            "slots_by_mark": capacities, "coherent_address_bits": width,
+            "physical_gain_before_readiness": round(g, 18)}
+
+
 def main():
     ratios = geometry_test()
     curv, rows = report_test()
@@ -206,6 +243,7 @@ def main():
               "protected_native_example_sin_2320theta": native_dark_rotation(),
               "off_cartan_curvature": curv, "explicit_full_work_entropy": archive_test(), "two_uncentred_volume_rows": rows,
               "common_volume_row": round(sum(rows), 10),
+              "exact_slot_certificate": exact_slots(),
               "physical_full_book_selection_proved": False,
               "GR_closed": False}
     print(json.dumps(result, indent=2, sort_keys=True))

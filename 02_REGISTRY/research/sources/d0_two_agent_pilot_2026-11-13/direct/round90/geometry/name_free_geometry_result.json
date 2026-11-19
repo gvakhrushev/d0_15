@@ -1,6 +1,29 @@
 {
   "GR_closed": false,
   "common_volume_row": 1.1459833235,
+  "exact_slot_certificate": {
+    "clearing_denominator": 5497642024880,
+    "coherent_address_bits": 51,
+    "link_slots": [
+      343602626555,
+      0
+    ],
+    "material_slots": [
+      [
+        -48379203681600,
+        -36284506570136
+      ],
+      [
+        109952886634816,
+        60473976290472
+      ]
+    ],
+    "physical_gain_before_readiness": 8.794351653e-09,
+    "slots_by_mark": [
+      688304966063648,
+      1374410187452064
+    ]
+  },
   "explicit_full_work_entropy": 1.3782266853,
   "julia_full_error_ratios_at_halved_steps": [
     [
