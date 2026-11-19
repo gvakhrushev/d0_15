@@ -1,0 +1,118 @@
+{
+  "A75_actual_reset_noninterchange": [
+    {
+      "D_H_fresh": [
+        0.02205062280488063,
+        0.022051246365583
+      ],
+      "D_H_fresh_minus_retain": [
+        0.0034646427198701322,
+        0.003465890894391741
+      ],
+      "D_H_retain": [
+        0.01858535547119126,
+        0.018585980085010497
+      ],
+      "D_J_retain_minus_reset": [
+        6.105450986150471e-13,
+        6.106568356846013e-13
+      ],
+      "depth": 1
+    },
+    {
+      "D_H_fresh": [
+        0.21800883597249485,
+        0.21800983563946086
+      ],
+      "D_H_fresh_minus_retain": [
+        0.19942285588748432,
+        0.19942448016826964
+      ],
+      "D_H_retain": [
+        0.01858535547119126,
+        0.018585980085010497
+      ],
+      "D_J_retain_minus_reset": [
+        1.2639696209003357e-09,
+        1.263983776724955e-09
+      ],
+      "depth": 64
+    },
+    {
+      "D_H_fresh": [
+        0.8138127645770681,
+        0.8138215587837246
+      ],
+      "D_H_fresh_minus_retain": [
+        0.7952267844920575,
+        0.7952362033125335
+      ],
+      "D_H_retain": [
+        0.01858535547119126,
+        0.018585980085010497
+      ],
+      "D_J_retain_minus_reset": [
+        2.2014770289570455e-09,
+        2.201988762450154e-09
+      ],
+      "depth": 512
+    },
+    {
+      "D_H_fresh": [
+        0.024021784841589493,
+        0.02998526948489026
+      ],
+      "D_H_fresh_minus_retain": [
+        0.0054358047565789954,
+        0.011399914013698999
+      ],
+      "D_H_retain": [
+        0.01858535547119126,
+        0.018585980085010497
+      ],
+      "D_J_retain_minus_reset": [
+        -4.969594824752597e-11,
+        6.779106507447038e-11
+      ],
+      "depth": 8192
+    }
+  ],
+  "A78_DATA_only_exact_recovery": {
+    "G2_diag_over_G1_diag": [
+      [
+        0.9951854202385938,
+        0.9951854202386079
+      ],
+      [
+        0.9996718088821502,
+        0.9996718088821641
+      ]
+    ],
+    "RIGHT_labels": [
+      55,
+      57
+    ],
+    "conditional_exact_recovery_upper": 0.9955136113564578,
+    "original_blank_probability": [
+      0.9974443552031275,
+      0.9974443552031622
+    ],
+    "spread_witness": [
+      0.0044863886435423375,
+      0.004486388643570317
+    ],
+    "witness_derivative_not_optimal_filter_derivative": [
+      0.0012102061769082855,
+      0.001210206177806977
+    ]
+  },
+  "GR_closed": false,
+  "enlarged_Book_price_identified": false,
+  "pinned_inputs": {
+    "direct/round75/curvature/check_local_coframe_source.py": "366be653f1d0389d883c9390beb93a360fb0b6cbd21b2a13fffec74bf921848e",
+    "direct/round75/history/check_two_site_source.py": "160576666914ac68d1fba4645d92d93ddd635e243915a7d78d2df2f177eef9ce",
+    "direct/round75/work/check_pointer_weyl.py": "d8cab0e1f53e3e1380885b362fa9e869dc0d4113299ace300ce1da264faad4fb",
+    "direct/round78/recovery/RECORD_RECOVERY_RU.md": "f23fa59fab314b6e1bdcf5c9442a18448e1d8e393e282a3486ed98acbdb0ce42",
+    "direct/round78/selection/COUNTED_HJR_RU.md": "589d7e8a19f506baa079c142015784d70239b292db22487d989efcba5b592cac"
+  }
+}
