@@ -1,0 +1,259 @@
+{
+  "round": "A80",
+  "base_shared": "3b4a57a67a06233c68b41e5171d76f0245e0a7d9",
+  "claims_shared": [
+    "6cd59552876e9791846b517286db89376396b346"
+  ],
+  "primary_pr334": "44ed019e18d08e00bc23e46201e84b4d661490ae",
+  "reviewed_pr334": "a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d",
+  "related_open_commits": {
+    "B162": "1d47593adde9f4a472ad9c7c151d74160e317f82",
+    "B163": "1f3814a84081c958ceb5190e8982407f5c65aafd"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/PREPARATION_DOMAIN.md": "2c3beab1d99b49a022f16753dd430597ff2b3799",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/PHASE_COMPILER.md": "e5201a3d061b6155af52080757f0e77c8cd20248",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "370e8fb572e85fedeebe2e72531c01d5b68b0a91",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/RAW_CYLINDER_REALIZATION_RU.md": "4c01fc5bf00971c866dbc22233b64ce7b3077c33"
+  },
+  "upstream_checks": [
+    {
+      "id": "owner_eight_readers",
+      "commit": "04931a7a26a9741bba0584c8e1413613ff7a28d5",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_eight_readers.py",
+      "receipt": "eight_readers_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_eight_readers.py",
+        "check_shared_site_union.py",
+        "eight_readers_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_calibrated_retention",
+      "commit": "44ed019e18d08e00bc23e46201e84b4d661490ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_calibrated_retention.py",
+      "receipt": "calibrated_retention_result.json",
+      "files": [
+        "calibrated_retention_result.json",
+        "check_calibrated_retention.py",
+        "check_extra_work.py"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_marked_splice",
+      "commit": "44ed019e18d08e00bc23e46201e84b4d661490ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_marked_splice.py",
+      "receipt": "marked_splice_result.json",
+      "files": [
+        "check_golden_work_gauge.py",
+        "check_marked_splice.py",
+        "marked_splice_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_guarded_information",
+      "commit": "a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_guarded_information.py",
+      "receipt": "guarded_information_result.json",
+      "files": [
+        "check_extra_work.py",
+        "check_guarded_information.py",
+        "check_source_price.py",
+        "guarded_information_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_live_parser",
+      "commit": "a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_live_parser.py",
+      "receipt": "live_parser_result.json",
+      "files": [
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_source_price.py",
+        "live_parser_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_absolute_site_pair",
+      "commit": "a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_absolute_site_pair.py",
+      "receipt": "absolute_site_pair_result.json",
+      "files": [
+        "absolute_site_pair_result.json",
+        "check_absolute_site_pair.py",
+        "check_boundary_experiment.py",
+        "check_golden_work_gauge.py"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "full_stopped_source_with_exact_old_return",
+      "check": "direct/round80/assembly/check_restored_clock.py",
+      "result": "Полный остановленный журнал и возврат дают положительную производную цены его букв минус CQ по действию H.1.",
+      "open": "Скалярный доступный проектор, оплата промежуточной работы и готовности.",
+      "evidence": {
+        "direct/round68/equations/BINARY_POINTER_RU.md": "67f4fb741f539e125e7e038de1b3a665d57527feba6d0c325ed0d2d1d07aa27d",
+        "direct/round78/selection/H1_EQUATIONS_RU.md": "8d95e35baa5c0e48c761dc952007fc81b44b5e5dc59f28b8e1efb95cd27c8a98",
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
+        "direct/round80/assembly/check_restored_clock.py": "bc604be6e0b14e022b9225369f189215693fa440164738141267be35e5fb1f96"
+      }
+    },
+    {
+      "id": "two_return_tasks_fix_the_closed_cycle_weights",
+      "check": "direct/round80/assembly/check_cycle_price.py",
+      "result": "При общей двухсекторной склейке два направления возврата фиксируют обе самопетли и полный обход; скрытая условная энтропия имеет отдельный источник.",
+      "open": "Исходные веса Книги III для трёх замкнутых путей и склейка при сохранении часов.",
+      "evidence": {
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/assembly/CYCLE_PRICE_RU.md": "d6f3926c04292eaa98dc05455a210ad452ae6aafe0360f7285ce7750ff9ad78d",
+        "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
+        "direct/round80/assembly/check_cycle_price.py": "111fb5c99226877651ad8fbd22ef5fbc62df83dd67e2d01305cf91ccb6c95fed"
+      }
+    },
+    {
+      "id": "native_nonlocal_phase_and_full_spectral_price",
+      "check": "direct/round80/native/check_phase_pair.py",
+      "result": "Два подготовленных фазовых исполнения с теми же оплачиваемыми адресами имеют противоположные секущие полного H+J.",
+      "open": "Выбор исходной физической оценки на том же носителе.",
+      "evidence": {
+        "direct/round68/equations/BINARY_POINTER_RU.md": "67f4fb741f539e125e7e038de1b3a665d57527feba6d0c325ed0d2d1d07aa27d",
+        "direct/round79/heat/COLLECTOR_HEAT_RU.md": "f095c1b643c1b242e56e2fc47473e152fa594596c6ad14f22898206634286001",
+        "direct/round79/writer/SHARP_HISTORY_WRITER_RU.md": "3db90d4ee89a1329453a1a210a7866483eefa427e36564bca158d23497a52b5f",
+        "direct/round79/writer/check_sharp_history_writer.py": "2714e8dd7b4452af2e9518bd88af9708a13a8a33dac49a0aa077788314c7c818",
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/native/GLOBAL_PHASE_RU.md": "b6dfbe0dfa1e2c1934ea67fdeb2e90e8720361d7d2039576dad999c6acc0ca4b",
+        "direct/round80/native/check_phase_pair.py": "337f34d9d72297b87d8b13e88709f59d2700c34ee212add8a6db32d27609abdc"
+      }
+    },
+    {
+      "id": "true_nps2_return_and_full_pointer_stage_cost",
+      "check": "direct/round80/native/check_return_work.py",
+      "result": "Два исходных NPS2 имеют одинаковое число обращений и различную работу по следовым расстояниям на полном нативном измерителе.",
+      "open": "Исходная функция трения и перенос с двух подготовок на полевые направления.",
+      "evidence": {
+        "direct/round68/equations/BINARY_POINTER_RU.md": "67f4fb741f539e125e7e038de1b3a665d57527feba6d0c325ed0d2d1d07aa27d",
+        "direct/round79/memory/check_cold_compensation.py": "9cf72d9118e7eb7e4e6b1f46f38aadee2ca0953054a3a93806f54741d63e33b9",
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
+        "direct/round80/native/check_return_work.py": "fdc0d988a48073b862f92dbe1e3f945f529c32fb3e907421c2f611dbcdea739c"
+      }
+    },
+    {
+      "id": "irreducible_phase_memory_and_a_native_local_reader",
+      "check": "direct/round80/memory/check_phase_memory.py",
+      "result": "Локальный прибор с пропущенным рельсом не видит совместный эффект двух фаз, один проходящий указатель его видит.",
+      "open": "Доступ ко всей фазовой памяти, цена подготовки и контроллера.",
+      "evidence": {
+        "direct/round79/memory/TOMOGRAPHY_RU.md": "260b74179d93445dd02d44f1e6633114dd5a812c0855b1741a0bf7352d2a7a0f",
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/memory/PHASE_MEMORY_RU.md": "1a0fec8a25a68f35ffc0f3af257058e03180bea74ba9e5b2c81f92354ff0e162",
+        "direct/round80/memory/check_phase_memory.py": "923144e6aa3c8b28a49ea360c5a7c2857da4ce692d74035e4d032533c8289163"
+      }
+    },
+    {
+      "id": "field_rectangle_on_the_retained_native_h1_bit",
+      "check": "direct/round80/memory/check_field_square.py",
+      "result": "Контраст полного нового регистра пропорционален DI_h с сохранением старого T. Холодный источник вычислен при согласованном возврате.",
+      "open": "Когерентное исполнение и изменение старого граничного оператора для спектральной версии.",
+      "evidence": {
+        "direct/round79/memory/TOMOGRAPHY_RU.md": "260b74179d93445dd02d44f1e6633114dd5a812c0855b1741a0bf7352d2a7a0f",
+        "direct/round79/memory/check_cold_compensation.py": "9cf72d9118e7eb7e4e6b1f46f38aadee2ca0953054a3a93806f54741d63e33b9",
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/memory/FIELD_SQUARE_RU.md": "0f5e9dfc4106ae4ae18c0498a74f12ec8bf0f862731eeebe496cbbe5c7a0d3c0",
+        "direct/round80/memory/PHASE_MEMORY_RU.md": "1a0fec8a25a68f35ffc0f3af257058e03180bea74ba9e5b2c81f92354ff0e162",
+        "direct/round80/memory/check_field_square.py": "6c3f3c1bede7627e2fcc8fa3422f7d17b77bb01f3b4c2be8358ef23681dced84",
+        "direct/round80/native/GLOBAL_PHASE_RU.md": "b6dfbe0dfa1e2c1934ea67fdeb2e90e8720361d7d2039576dad999c6acc0ca4b"
+      }
+    },
+    {
+      "id": "sharp_phase_readout_and_mirrored_registration_price",
+      "check": "direct/round80/price/check_parity_price.py",
+      "result": "Точный возврат отказа и настоящий адресно-зависимый источник двух штатных записей.",
+      "open": "Исходный оплачиваемый адрес и полная оценка ворот и выдачи.",
+      "evidence": {
+        "direct/round70/absolute/check_threshold_price.py": "e61e8b708e240303b5afd5ec440929cc203bca2ff4fbb491c0c8c025fedd020f",
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/price/PARITY_PRICE_RU.md": "16a578fb8953f41bc1ccb917761782e0a8719ec233fe162a19baa563fc153f47",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9"
+      }
+    },
+    {
+      "id": "exact_quantum_damage_on_a_nonscalar_first_return",
+      "check": "direct/round80/price/check_operator_return.py",
+      "result": "Точная норма потери старых когерентностей при положительном операторе возврата, в том числе с внешней ссылкой.",
+      "open": "Реальная нескалярность и её полевые производные на исходной геометрической карте.",
+      "evidence": {
+        "direct/round79/heat/RETURN_MOMENTS_RU.md": "844f817751a952227a6fc528bed4d32f52653f58390aaa5c2c654849c02930a5",
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/price/OPERATOR_RETURN_RU.md": "5f57bab5819c9cb5fd8c14a39ec153bddaae6b58824694e5326a09d99c88ea9f",
+        "direct/round80/price/PARITY_PRICE_RU.md": "16a578fb8953f41bc1ccb917761782e0a8719ec233fe162a19baa563fc153f47",
+        "direct/round80/price/check_operator_return.py": "af16a46dc1d5137642778428b8e0a63819ebe189d47d72a18184a0283a496150",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9"
+      }
+    },
+    {
+      "id": "native_switch_record_preserves_equations_for_two_information_laws",
+      "check": "direct/round80/native/check_switch_log.py",
+      "result": "Запись смены сектора воспроизводит одни уравнения для двух разных информационных оценок на скалярном приборе.",
+      "open": "Допуск H.1 и абсолютная работа внутренних стадий, которая может зависеть от поля.",
+      "evidence": {
+        "direct/round79/writer/check_sharp_history_writer.py": "2714e8dd7b4452af2e9518bd88af9708a13a8a33dac49a0aa077788314c7c818",
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
+        "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
+        "direct/round80/native/SWITCH_LOG_RU.md": "403013c3df7406c0007f26eebc750fb93e592ee369cf45eab1ad45b232ff3f52",
+        "direct/round80/native/check_switch_log.py": "51cd33a3a697e2d6068f968ab92d44aac87fb1d645d800e038b054d4fec56cff"
+      }
+    },
+    {
+      "id": "stopped_field_distinguishability_with_two_native_references",
+      "check": "direct/round80/price/check_field_information.py",
+      "result": "Различимость соседних полей и двухреферентный контраст восстанавливают направление действия на регуляторе.",
+      "open": "Отождествление наблюдаемой различимости с исходной оплатой и выбор сохраняемой информации.",
+      "evidence": {
+        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/assembly/CYCLE_PRICE_RU.md": "d6f3926c04292eaa98dc05455a210ad452ae6aafe0360f7285ce7750ff9ad78d",
+        "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
+        "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
+        "direct/round80/price/FIELD_INFORMATION_RU.md": "0f9b1fa432a3a799fde34e25325dbc1f18c029797974af3406be2a22ccd88983",
+        "direct/round80/price/OPERATOR_RETURN_RU.md": "5f57bab5819c9cb5fd8c14a39ec153bddaae6b58824694e5326a09d99c88ea9f",
+        "direct/round80/price/check_field_information.py": "818b8b656c1fc1c568296b0e821c3d3067dc2b8d66b6ba51bb4d12a04d422651"
+      }
+    }
+  ]
+}
