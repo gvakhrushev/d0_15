@@ -1,0 +1,74 @@
+{
+  "golden_12_full_prediction_echo_survival": [
+    "0.0004680206086",
+    "0.0004680206087"
+  ],
+  "golden_single_full_prediction_echo_survival": [
+    "0.5278640450004",
+    "0.5278640450005"
+  ],
+  "matched_input_hypothesis_information": "exactly zero including arbitrary additional WORK/reference",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_square_calls_excluding_births": 21,
+  "partial_preexisting_marker_examples": {
+    "0": {
+      "echo_failure": [
+        "0.472135954999",
+        "0.472135955000"
+      ],
+      "full_memory_Holevo_nats": [
+        "0.665018386444",
+        "0.665018386445"
+      ],
+      "purity_test_upper_nats": [
+        "0.691593565812",
+        "0.691593565813"
+      ]
+    },
+    "1/2": {
+      "echo_failure": [
+        "0.236067977499",
+        "0.236067977500"
+      ],
+      "full_memory_Holevo_nats": [
+        "0.539166655857",
+        "0.539166655858"
+      ],
+      "purity_test_upper_nats": [
+        "0.546505024874",
+        "0.546505024875"
+      ]
+    },
+    "1/4": {
+      "echo_failure": [
+        "0.354101966249",
+        "0.354101966250"
+      ],
+      "full_memory_Holevo_nats": [
+        "0.634623740541",
+        "0.634623740542"
+      ],
+      "purity_test_upper_nats": [
+        "0.649949002521",
+        "0.649949002522"
+      ]
+    },
+    "3/4": {
+      "echo_failure": [
+        "0.118033988749",
+        "0.118033988750"
+      ],
+      "full_memory_Holevo_nats": [
+        "0.360822291253",
+        "0.360822291254"
+      ],
+      "purity_test_upper_nats": [
+        "0.362989462970",
+        "0.362989462971"
+      ]
+    }
+  },
+  "spectral_and_native_friction_identification": false,
+  "status": "PASS",
+  "unknown_input_columns": 8
+}

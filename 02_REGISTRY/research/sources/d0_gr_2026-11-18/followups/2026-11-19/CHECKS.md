@@ -36,6 +36,9 @@ python3 -B "$d/metric/check_crossed_repeat.py"
 python3 -B "$d/metric/check_weighted_recovery.py"
 python3 -B "$d/metric/check_guarded_noise.py"
 python3 -B "$d/metric/check_live_parser.py"
+python3 -B "$d/metric/check_guarded_purity.py"
+python3 -B "$d/metric/check_full_site_sort.py"
+python3 -B "$d/metric/check_counted_separator.py"
 python3 -B "$d/metric/check_absolute_site_pair.py"
 python3 -B "$d/metric/check_guarded_information.py"
 python3 -B "$d/metric/check_marked_splice.py"
@@ -71,6 +74,9 @@ python3 -B "$d/realization/check_realization.py"
 | Когерентные веса порта | Шесть штатных слов на всех столбцах Spin и порта, настоящий код 0/10 и три независимые символические вариации. [Результат](metric/golden_work_gauge_result.json) |
 | Геометрический допуск восьми настроек | Проверка исходной опоры F2–F6, однородности преобразованных полей и полного конечного селектора. [Результат](metric/eight_geometric_audit_result.json) |
 | Независимые прямые и обратные ноги | Все четыре настоящих исполнения на исходных защищённых столбцах и тепловая граница, с разграничением арены компилятора. [Результат](metric/crossed_repeat_result.json) |
+| Полная память перед шумным отчётом | Нативный тест обратного возврата и интервальные границы для истинных состояний и отмеченных ветвей. [Результат](metric/guarded_purity_result.json) |
+| Все ячейки SITE и ранние отметки | Физическая сортировка и критерий скалярности ранних записей по полным конечным таблицам. [Результат](metric/full_site_sort_result.json) |
+| Полный спектр и условная сумма путей | Два нативных фронта, все ветви, интервалы детерминанта и полного тепла при K=15. [Результат](metric/counted_separator_result.json) |
 | Нативный парсер полного кода | Все шесть рождений, 28 квадратных вызовов, реальные проекторы, зарегистрированные ошибки и условная сумма весов. [Результат](metric/live_parser_result.json) |
 | Полный двухадресный журнал | Реальные сжатия CX и NC1 на всех исходах и точная симметрия полного адресного журнала. [Результат](metric/absolute_site_pair_result.json) |
 | Два физических смысла Info | Конечные нативные шумовые настройки с одинаковым оплачиваемым расписанием и относительные источники. [Результат](metric/guarded_information_result.json) |
