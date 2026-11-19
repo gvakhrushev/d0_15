@@ -1,0 +1,56 @@
+{
+  "primary_revision": "a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d",
+  "primary_sha256": {
+    "A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md": "9fae8225a0d59b3255935a78e2c0a737889990d358810dba8d8f2e24cb8cddd8",
+    "A4D_ORIGINAL_UNPADDED_N1_J2_ALL42_BRINKMANN_WELD_2026_10_22.md": "7f6939c9d806104ce9bbdb1925a8214d673523c39474c18fbf20a2b94072ccb8"
+  },
+  "slab": {
+    "transverse_sites": 6,
+    "transverse_edges": 17,
+    "time_slices": 3,
+    "one_paired_block_rank": 23,
+    "periodic_rank": 69,
+    "same_indices_rank": 58,
+    "same_indices_kernel": 11
+  },
+  "finite_nonflat_shear": {
+    "original_stencil_sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+    "local_faces": 6,
+    "all_unchanged_geometric_Euler_rows": 40,
+    "independent_shear_samples_v_uniform_then_general": [
+      10,
+      15
+    ],
+    "matter_source_on_shear": "Dg^uu=-2*De_v^+/e_v^-"
+  },
+  "second_jet": {
+    "Schur_complement_is_normal_block": true,
+    "exact_density_jet_cancellation": true,
+    "common_operand_J2_minus_N1_Gram_coefficient": [
+      4.0708e-05,
+      4.0709e-05
+    ]
+  },
+  "stopped_direct_router": {
+    "Born_success_and_overflow_masses": [
+      [
+        "9/25",
+        "256/625",
+        "2304/15625",
+        "20736/390625",
+        "11664/390625"
+      ],
+      [
+        "25/169",
+        "20736/28561",
+        "518400/4826809",
+        "12960000/815730721",
+        "2250000/815730721"
+      ]
+    ],
+    "same_RC3_on_direct_passive_closure": true
+  },
+  "full_physical_source_bound_proved": false,
+  "GR_closed": false,
+  "status": "PASS"
+}
