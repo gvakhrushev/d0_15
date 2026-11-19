@@ -297,6 +297,24 @@
         "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round180/RESULT.json"
       ],
       "documentation": "https://github.com/gvakhrushev/d0_15/blob/d0b6a73e9562a6168878b534851f4951f4395857/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round181/B181_FIXED_HISTORY_SIGNED_PRICE_RU.md"
+    },
+    {
+      "id": "pr334_common_native_calibration",
+      "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_common_native_calibration.py",
+      "receipt": "common_native_calibration_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_common_native_calibration.py",
+        "check_dyadic_car_loader.py",
+        "check_eight_readers.py",
+        "check_shared_site_union.py",
+        "common_native_calibration_result.json",
+        "COMMON_NATIVE_CALIBRATION_RU.md"
+      ],
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/e3b2a464a8509186be06aea134d81c2d74b89708/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/COMMON_NATIVE_CALIBRATION_RU.md",
+      "verifies": "Common physical SC1 amplitude calibration underlying the two registered material directions."
     }
   ],
   "lanes": [
@@ -355,11 +373,11 @@
     },
     {
       "id": "A88_masked_price",
-      "commit": "3849df677badd65b4c5ea48abf88d819463535d0",
+      "commit": "c63710265af53e925a5b0bcffe6ebb874014ef99",
       "check": "direct/round88/assembly/check_masked_price.py",
       "stdout_matches": "direct/round88/assembly/masked_price_result.json",
       "evidence": {
-        "direct/round88/assembly/MASKED_PRICE_RU.md": "096ef3ed971330c7180f555a05002de9bd908583198d5b0e1dbf4a62c7b09489",
+        "direct/round88/assembly/MASKED_PRICE_RU.md": "2898056e5e9d69811742eddf557971542f48eb640cf691336fe2bbc591b3f80f",
         "direct/round88/assembly/check_masked_price.py": "dd0ed0816090000e529ea2764acc5617945aa72b98b8580ad48d8b4b9ff6a8c6",
         "direct/round88/assembly/masked_price_result.json": "b212dcd6c384459b74697ea470d07a679dccc961f6b8a8a1611ed4aa78fb51f4"
       }
@@ -394,6 +412,39 @@
         "direct/round88/replay/check_extended_sources.py": "9f46172262901393e82701b87b7b8d184dcfedd0d65897ba2dcda51968e74cd9",
         "direct/round88/replay/extended_sources_result.json": "9bd966467fd1f999b8b769cf6450d1710c2a57eebc252466e2e3a5e19268ad7b",
         "direct/round88/replay/extended_sources.json": "8a3371b699246afd09780b47ea059b0c6692024cab338156d7fa544cfc564ec3"
+      }
+    },
+    {
+      "id": "A88_physical_material_seed",
+      "commit": "fca19d26d754c5e1bcb8024f1cabf44f7198779a",
+      "check": "direct/round88/writer/check_physical_material_seed.py",
+      "stdout_matches": "direct/round88/writer/physical_material_seed_result.json",
+      "evidence": {
+        "direct/round88/writer/PHYSICAL_MATERIAL_SEED_RU.md": "77ce0d0e6f95dc3fa0e86548a47bcd98bd8259803ecb01838e43f779ab072bd3",
+        "direct/round88/writer/check_physical_material_seed.py": "1c79a4f5778dabbd3e1ef90d3b725f6a7bbe1c4551fc9bef06d22688bc0035cf",
+        "direct/round88/writer/physical_material_seed_result.json": "7ce249f4233870db895b5d6ab821418a29f52f0f76ae8cab5746f1197760359e"
+      }
+    },
+    {
+      "id": "A88_h1_price_residual",
+      "commit": "09cfd6efae81c9ef707f2be9817d14e310b88bb8",
+      "check": "direct/round88/assembly/check_h1_price_residual.py",
+      "stdout_matches": "direct/round88/assembly/h1_price_residual_result.json",
+      "evidence": {
+        "direct/round88/assembly/H1_PRICE_RESIDUAL_RU.md": "2efc308ea762a1c381d8f6697cfe2beab79afe8fe59f9327ea548c4ecf94e14b",
+        "direct/round88/assembly/check_h1_price_residual.py": "d774e80307722b89565cd0983a1792891fae731198447acc604368792210c9a3",
+        "direct/round88/assembly/h1_price_residual_result.json": "117c5b06bdf6e2191075f47b6b343a0c00278ffd2261d4537b86ee829465e3e9"
+      }
+    },
+    {
+      "id": "A88_single_supplier",
+      "commit": "e820dc44b4baaeaeaad2d9c9ba27e1016436deec",
+      "check": "direct/round88/supplier/check_single_supplier.py",
+      "stdout_matches": "direct/round88/supplier/single_supplier_result.json",
+      "evidence": {
+        "direct/round88/supplier/SINGLE_SUPPLIER_RU.md": "1e322673a2d6024c3727afd1e70cbcab2bb020c449f1369a097c6e1969798c56",
+        "direct/round88/supplier/check_single_supplier.py": "f8426e06392f95a9ae4c9d8e7ec829e8002938b129861cfcb5cc22a071e2f80b",
+        "direct/round88/supplier/single_supplier_result.json": "06bf42923e978e2c944450d81e7b43a9d68a4aae2746e092d1d826c48571d5ac"
       }
     }
   ],
@@ -449,6 +500,25 @@
       "pr334_rare_event_secant_registration",
       "pr334_thin_record_amplitude_audit",
       "B182_serial_book03_preparation"
+    ]
+  },
+  "additional_pr334_document_review": {
+    "status": "Document pins checked separately from the four executable e3b2a464a regressions.",
+    "sources": [
+      {
+        "commit": "0f559b06ed6c528a584b5fae39d8dd81eaa7cfcf",
+        "path": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/SECANT_FAILURE_FIRST_SOURCE_RU.md",
+        "sha256": "d5828bf854941584e48dd42055f023569fe2a9d0308cad40cd417b0c4d17a5e0",
+        "scope": "Failure-source comparison uses the gain of the complete apparatus.",
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/0f559b06ed6c528a584b5fae39d8dd81eaa7cfcf/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/SECANT_FAILURE_FIRST_SOURCE_RU.md"
+      },
+      {
+        "commit": "c0a63ee7b6eaade36e36dc1147cf192e10cab881",
+        "path": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/SEED_NC1_RECORD_CLOCK_RU.md",
+        "sha256": "ad631de9222c80b9569168a3073d44424dd253ed31f69f68a34914efcab3ba53",
+        "scope": "Complete seed readout and its isolated physical clock.",
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/c0a63ee7b6eaade36e36dc1147cf192e10cab881/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/SEED_NC1_RECORD_CLOCK_RU.md"
+      }
     ]
   }
 }
