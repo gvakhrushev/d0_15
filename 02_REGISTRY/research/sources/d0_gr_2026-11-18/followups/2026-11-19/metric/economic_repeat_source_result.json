@@ -1,0 +1,79 @@
+{
+  "GR_closed": false,
+  "decimal_diagnostics": {
+    "at_economic_nu_half": [
+      {
+        "N": 1,
+        "mean_code_cq_gain": 1,
+        "shared_marker_gain": "0.981139553129435448"
+      },
+      {
+        "N": 2,
+        "mean_code_cq_gain": 2,
+        "shared_marker_gain": "1.858697447613909120"
+      },
+      {
+        "N": 4,
+        "mean_code_cq_gain": 4,
+        "shared_marker_gain": "3.097829079356515199"
+      },
+      {
+        "N": 8,
+        "mean_code_cq_gain": 8,
+        "shared_marker_gain": "3.982923102029805256"
+      },
+      {
+        "N": 16,
+        "mean_code_cq_gain": 16,
+        "shared_marker_gain": "4.152409191477882076"
+      },
+      {
+        "N": 64,
+        "mean_code_cq_gain": 64,
+        "shared_marker_gain": "4.156173842469704715"
+      },
+      {
+        "N": 256,
+        "mean_code_cq_gain": 256,
+        "shared_marker_gain": "4.156173842470055075"
+      }
+    ],
+    "limit_gain_at_nu_half": "4.156173842470055075",
+    "literal_noise_source_per_copy": "1.039043460617513769",
+    "native_endpoint_N16_action_difference": "0.440060567133547053",
+    "native_endpoint_N16_bound": "0.490569776564717724",
+    "rare_collar_controls": [
+      {
+        "N": 8,
+        "gain": "93.597827789117714904",
+        "nu": "0.999546896146215177927205518885"
+      },
+      {
+        "N": 16,
+        "gain": "4582.183542369977635840",
+        "nu": "0.999999794696897685342580178803"
+      },
+      {
+        "N": 32,
+        "gain": "10122039.289863880981333382",
+        "nu": "0.999999999999957850636179977307"
+      }
+    ]
+  },
+  "exact_full_source_directions": 9,
+  "exact_positive_gain_bound_cases": 35,
+  "fresh_vs_shared_checks": 7,
+  "input_sha256": {
+    "COMPLETE_WORK_SOURCE_RU.md": "1b7df18f88a1286b1e90f80a80481dc4ff0550712b108788b2f8b3ba47d10dbe",
+    "GUARDED_NOISE_RU.md": "83d5e62b73b5963de806ae21b2c44694ad50e7505f19cbc5e75e458fc5cdae0e",
+    "LIVE_PARSER_RU.md": "b192df3e5881b77a62e4869b9a97b1efc8bf80ac04c9e619af6241f85cc13879",
+    "SAME_HISTORY_BINDING_RU.md": "bbf5a9096a36ee9dc01b250a5ed811f721eb1e07325e19dbc23dd0c843be15ab",
+    "check_live_parser.py": "20ec31a25b632d781c36d860c276e95d879f9044c41e921ac8c14e769cffa3c7",
+    "live_parser_result.json": "241c4187156c287b23c88b805c205bb98b7acac7a3b99471626324ae415beb9c"
+  },
+  "native_complete_noise_paths_checked": 1020,
+  "native_cost_info_selection_proved": false,
+  "native_stages_per_live": 34,
+  "scope": "positive complete economic mixtures; no selected physical Cost-Info asserted",
+  "status": "PASS"
+}
