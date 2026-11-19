@@ -1,0 +1,106 @@
+{
+  "paired_native_logical_columns": [
+    {
+      "seeds": 2,
+      "N": 2,
+      "checked_columns": 64,
+      "paired_columns_per_program": 2
+    },
+    {
+      "seeds": 2,
+      "N": 3,
+      "checked_columns": 256,
+      "paired_columns_per_program": 4
+    },
+    {
+      "seeds": 3,
+      "N": 2,
+      "checked_columns": 512,
+      "paired_columns_per_program": 14
+    },
+    {
+      "seeds": 3,
+      "N": 3,
+      "checked_columns": 4096,
+      "paired_columns_per_program": 60
+    }
+  ],
+  "limiting_TV_per_delta": "3.27177642859646839",
+  "limiting_hard_loss_per_delta": "0.564902533959069695",
+  "limiting_thinned_loss_per_delta_squared": "9.03703848895864909",
+  "amplitude_sum_difference_limit_per_sqrt_delta": "106.311710679615379",
+  "numerical_cases": [
+    {
+      "m": 16,
+      "N": 8,
+      "delta": "0.013155617496424839",
+      "anchor_Born_hard": "0.809056353293429017",
+      "anchor_Born_thinned": "0.0106436359169807106",
+      "optimal_exact_failure_per_delta_both_modes": "3.29043981656091032",
+      "optimal_coherence_defect_hard_per_delta": "0.614107229854797608",
+      "optimal_coherence_defect_thinned_per_delta_squared": "8.91644968666795355",
+      "normalized_amplitude_anchor_masses": [
+        "0.686134040403109596",
+        "0.659366765993991226"
+      ],
+      "conditional_amplitude_absolute_price_difference": "-0.0826934662572367671"
+    },
+    {
+      "m": 16,
+      "N": 16,
+      "delta": "0.000280033582072582725",
+      "anchor_Born_hard": "0.995528860657330181",
+      "anchor_Born_thinned": "0.000278781512906509243",
+      "optimal_exact_failure_per_delta_both_modes": "3.27229865845155037",
+      "optimal_coherence_defect_hard_per_delta": "0.565919185863435218",
+      "optimal_coherence_defect_thinned_per_delta_squared": "9.03449519862585119",
+      "normalized_amplitude_anchor_masses": [
+        "0.940411693211513045",
+        "0.933559536603628732"
+      ],
+      "conditional_amplitude_absolute_price_difference": "-0.0151970748139788061"
+    },
+    {
+      "m": 16,
+      "N": 40,
+      "delta": "2.70088908488100601e-9",
+      "anchor_Born_hard": "0.999999956785775517",
+      "anchor_Born_thinned": "2.70088896816417879e-9",
+      "optimal_exact_failure_per_delta_both_modes": "3.27177643365944972",
+      "optimal_coherence_defect_hard_per_delta": "0.564902543757958231",
+      "optimal_coherence_defect_thinned_per_delta_squared": "9.03703846443408822",
+      "normalized_amplitude_anchor_masses": [
+        "0.99980347082493003",
+        "0.999779296064158205"
+      ],
+      "conditional_amplitude_absolute_price_difference": "-0.0000502477366961127618"
+    },
+    {
+      "m": 16,
+      "N": 80,
+      "delta": "1.18032373326014737e-17",
+      "anchor_Born_hard": "0.999999999999999811",
+      "anchor_Born_thinned": "1.18032373326014715e-17",
+      "optimal_exact_failure_per_delta_both_modes": "3.27177642859646841",
+      "optimal_coherence_defect_hard_per_delta": "0.564902533959069738",
+      "optimal_coherence_defect_thinned_per_delta_squared": "9.03703848895864898",
+      "normalized_amplitude_anchor_masses": [
+        "0.999999987005499928",
+        "0.999999985406713033"
+      ],
+      "conditional_amplitude_absolute_price_difference": "-3.32241818198412172e-9"
+    }
+  ],
+  "macro_clock_audit": {
+    "clock_dimension": 58,
+    "actual_generated_clock_return": "identity",
+    "standalone_passive_F_eigenvalues": [
+      "0.9655581463",
+      "1.0000000000"
+    ],
+    "standalone_passive_J": "1.8745032002e-06"
+  },
+  "finite_native_program_for_abstract_optimum_proved": false,
+  "economic_Book_binding_proved": false,
+  "GR_closed": false
+}
