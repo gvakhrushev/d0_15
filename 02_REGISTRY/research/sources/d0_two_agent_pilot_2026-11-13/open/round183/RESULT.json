@@ -1,0 +1,108 @@
+{
+  "OR_native_copy": {
+    "births": 2,
+    "square_calls": {
+      "CX": 5,
+      "G": 2
+    },
+    "registered_heads": 1,
+    "old_input_basis_columns": 8,
+    "requires_actual_known_H_one": true
+  },
+  "evaluations": [
+    {
+      "seeds": 2,
+      "N": 8,
+      "delta": "0.013155617496424839",
+      "born_early_anchor_conditional_on_ready": "0.973861835278862561",
+      "entropy_delta_per_delta": "0.654656338161617111",
+      "entropy_limit_per_delta": "0.680074114987512846",
+      "record_T_only_code_Bellman_part_per_delta": "0.690687323676765779",
+      "record_FG3_only_code_Bellman_part_per_delta": "1.2742794586780276",
+      "record_T_and_FG3_codes_Bellman_part_per_delta": "3.2742794586780276",
+      "joint_record_TV_equals_T_marginal_TV": "0.0160881672398544581",
+      "exact_old_program_return_upper_bound_given_joint_record": "0.983911832760145542"
+    },
+    {
+      "seeds": 8,
+      "N": 8,
+      "delta": "0.013155617496424839",
+      "born_early_anchor_conditional_on_ready": "0.899475599053931544",
+      "entropy_delta_per_delta": "6.48170580736598614",
+      "entropy_limit_per_delta": "6.80833342425043288",
+      "record_T_only_code_Bellman_part_per_delta": "-4.96341161473197229",
+      "record_FG3_only_code_Bellman_part_per_delta": "-2.629043074726925",
+      "record_T_and_FG3_codes_Bellman_part_per_delta": "5.370956925273075",
+      "joint_record_TV_equals_T_marginal_TV": "0.0301966843416166674",
+      "exact_old_program_return_upper_bound_given_joint_record": "0.969803315658383333"
+    },
+    {
+      "seeds": 16,
+      "N": 8,
+      "delta": "0.013155617496424839",
+      "born_early_anchor_conditional_on_ready": "0.809056353293429017",
+      "entropy_delta_per_delta": "14.1563746134971176",
+      "entropy_limit_per_delta": "14.905305012959869",
+      "record_T_only_code_Bellman_part_per_delta": "-12.3127492269942351",
+      "record_FG3_only_code_Bellman_part_per_delta": "-7.64401214698414055",
+      "record_T_and_FG3_codes_Bellman_part_per_delta": "8.35598785301585945",
+      "joint_record_TV_equals_T_marginal_TV": "0.0432877676216816494",
+      "exact_old_program_return_upper_bound_given_joint_record": "0.956712232378318351"
+    },
+    {
+      "seeds": 16,
+      "N": 40,
+      "delta": "2.70088908488100601e-9",
+      "born_early_anchor_conditional_on_ready": "0.999999956785775517",
+      "entropy_delta_per_delta": "14.9053048606411954",
+      "entropy_limit_per_delta": "14.905305012959869",
+      "record_T_only_code_Bellman_part_per_delta": "-13.8106097212823907",
+      "record_FG3_only_code_Bellman_part_per_delta": "-9.14187264127229615",
+      "record_T_and_FG3_codes_Bellman_part_per_delta": "6.85812735872770385",
+      "joint_record_TV_equals_T_marginal_TV": "8.83670525784171261e-9",
+      "exact_old_program_return_upper_bound_given_joint_record": "0.999999991163294742"
+    },
+    {
+      "seeds": 32,
+      "N": 8,
+      "delta": "0.013155617496424839",
+      "born_early_anchor_conditional_on_ready": "0.654572182804461829",
+      "entropy_delta_per_delta": "29.3540409450921187",
+      "entropy_limit_per_delta": "30.9361675998357682",
+      "record_T_only_code_Bellman_part_per_delta": "-26.7080818901842374",
+      "record_FG3_only_code_Bellman_part_per_delta": "-17.3706077301640482",
+      "record_T_and_FG3_codes_Bellman_part_per_delta": "14.6293922698359518",
+      "joint_record_TV_equals_T_marginal_TV": "0.0613288816858240322",
+      "exact_old_program_return_upper_bound_given_joint_record": "0.938671118314175968"
+    }
+  ],
+  "early_work_control": {
+    "endpoint_on_all_64_columns": "I",
+    "preparation_calls": 18,
+    "echo_calls": 4,
+    "movement_double_contrast_first_minus_second": "-2 sqrt(1-p^12)",
+    "assignment_to_original_Book_tariff_proved": false
+  },
+  "A88_masked_named_work_control": {
+    "equal_average_named_work": 1,
+    "matched_normalized_mask_mass_delta": "p^4/2"
+  },
+  "certified_sign_intervals": {
+    "m16_N8_entropy_secant_interval": [
+      "14.15637",
+      "14.15638"
+    ],
+    "m16_entropy_limit_interval": [
+      "14.90530",
+      "14.90531"
+    ],
+    "m16_N_ge8_entropy_secant_per_seed_between": [
+      "0.66",
+      "1"
+    ],
+    "m16_N8_only_FG3_conditional_Bellman_delta_negative": true,
+    "m16_N8_separate_T_and_FG3_conditional_Bellman_delta_positive": true
+  },
+  "full_original_Book_tariff_proved": false,
+  "GR_closed": false
+}
