@@ -1,0 +1,76 @@
+A86 · воспроизведение из опубликованного Git-снимка
+
+Научный снимок c4d28ab523b8358a1d6b0fa28e19fbd32f7a8009
+Ветка codex/d0-pilot-shared-20261118
+Заявка 64f67b11a, пакетные публикации 26331970e, 0f4b67cfd, a08e60a64, f7d5156b4
+Первичный репозиторий #334 на дату сверки 43712cbe08b6f1e6dffd524df9e7b7fb1b1138da
+Open B177 8ed5e2568bf992f4ecd50d262a424e8ad9c56232, B178 8165c420b0dc6fbe8dad8540cd328dd17da77f1d
+
+Команда из каталога пилота
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot c4d28ab523b8358a1d6b0fa28e19fbd32f7a8009 direct/round86/portfolio.json
+
+Git snapshot c4d28ab523b8358a1d6b0fa28e19fbd32f7a8009, 35 committed files
+UPSTREAM  pr334_composed_geometric_instrument at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_dyadic_car_loader at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_common_native_calibration at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  pr334_balanced_factory at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_carry_compensated_geometry at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_site_coframe_julia at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_fourier_fresh_localization at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_native_fourier_uncompute at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_reversible_error_code at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_error_code_signal at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_signal_routed_clock at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_terminal_recoding_classes at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  A85_occupied_returned_site at 3e813eb2ee0f7f22b44ced93c78e0bce7e16ed6c
+UPSTREAM  B176_occupied_Book03_clock at 0980d7ffb0ae3816c9f2787864abca669fb53eae
+UPSTREAM  B177_preparer_multiplicity at 8ed5e2568bf992f4ecd50d262a424e8ad9c56232
+UPSTREAM  pr334_native_balanced_pair_clock at 43712cbe08b6f1e6dffd524df9e7b7fb1b1138da
+UPSTREAM  B178_whole_history_normalization at 8165c420b0dc6fbe8dad8540cd328dd17da77f1d
+PASS  A86_registered_writer_history
+PASS  A86_heralded_return
+PASS  A86_forward_writer
+PASS  A86_material_slice
+PASS  A86_record_window
+PASS  A86_order_selection
+PASS  A86_true_fourier_return
+PASS  A86_null_single_choi
+
+Независимый повтор предыдущей сборки
+Git snapshot 8ccfa5246a6558e4f9ac162e69d88344330fb6a5, 28 committed files
+UPSTREAM  pr334_selector24_native at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_composed_geometric_instrument at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_smooth_twofield_reference at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_bandlimit_joint_hq at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_dyadic_car_loader at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_native_adaptive_clock at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_common_native_calibration at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  pr334_local_geometric_source at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  pr334_dyadic_phase_field at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  A84_actual_fixed_port at fc5787cf65b9811c747582249cfc522299c25a18
+UPSTREAM  A84_two_rail_paid_key at fc5787cf65b9811c747582249cfc522299c25a18
+UPSTREAM  B174_earliest_record_moments at 419b0ca40844082c6dc9b3f753630571ef6a3027
+UPSTREAM  B174_constant_action_preparation_work at 419b0ca40844082c6dc9b3f753630571ef6a3027
+UPSTREAM  B175_absolute_second_jet at bf860cce768e0a47b01f10ee111b0f52e9f5c269
+PASS  A85_geometric_key
+PASS  A85_returned_site
+PASS  A85_single_input_paired_source
+PASS  A85_weak_marker_recovery
+PASS  A85_cycle_port_feedback
+
+Состояние научного и рабочего реестров
+claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918
+PASS warnings=0
+PASS work_validation: active work plane clean and enforced
+PASS agent_protocol: cold-start task metadata enforced
+{
+  "active_result_limit": 54,
+  "active_results": 54,
+  "discharged": 5,
+  "obligations": 22,
+  "results": 98,
+  "scientific_promotion": false,
+  "valid": true
+}
+
+Предел проверки. Формула одного геометрического входа проверена символически на исходном семействе. Для метрики и обеих материальных амплитуд проверено сохранение всех 42 полевых строк на её двухкомпонентной светоподобной секции. Гигантские размеры временного графа и длинные платные расписания охвачены точными формулами, интервалами и аналитическими оценками. Схема с заданной оплатой следового движения демонстрирует зависимость знака от промежуточного исполнения и допуска. Комплексное физическое приготовление кривого геометрического входа, его обязательный тариф на одном физическом носителе и восстановление при уточнении остаются открытыми. GR_closed=false.
