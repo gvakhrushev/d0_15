@@ -1,0 +1,101 @@
+A88. Воспроизведение по неизменяемым объектам общего Git
+Ветка codex/d0-pilot-shared-20261118
+Научный снимок 838bce4134e80dbc6328000e8f8db603fb385111
+Основная проверка H.1, конечный код и квитанция 69d42d826
+Общая заявка 9ace069c4, дополнение по физическому остатку a8042860a
+Первичные источники #334 закреплены по SHA отдельно от живой ветки.
+
+Из каталога пилота
+git fetch origin exp/a4d-joint-response-continuation-2026-10-16
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot 838bce4134e80dbc6328000e8f8db603fb385111 direct/round88/portfolio.json
+Код выхода 0. 10 проверок A88, 16 непосредственно вызванных первичных проверок, одна сверка первичного FQ и 5 вложенных повторов. Итого 22 первичных или исторических проверки.
+
+Git snapshot 838bce4134e80dbc6328000e8f8db603fb385111, 50 committed files
+UPSTREAM  pr334_fresh_guard_reader at d7782b0138cbd5418d68a825acc3f9ec1afe54a1
+UPSTREAM  pr334_economic_repeat_source at d7782b0138cbd5418d68a825acc3f9ec1afe54a1
+UPSTREAM  pr334_local_gibbs_records at d7782b0138cbd5418d68a825acc3f9ec1afe54a1
+UPSTREAM  pr334_raw_fourier_vacuum_inverse at d7782b0138cbd5418d68a825acc3f9ec1afe54a1
+UPSTREAM  pr334_guarded_golden_work_binding at 892ec030c4d844e6ccda4908d2425cd521f457b4
+UPSTREAM  pr334_two_parameter_fourier_catalogue at 892ec030c4d844e6ccda4908d2425cd521f457b4
+UPSTREAM  pr334_native_golden_descriptor_secants at c6ee5faa6bc0078d78b025499d0724d3add13616
+UPSTREAM  A87_protected_future_cost at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  A87_signed_face_meter at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  A87_signed_face_clock at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  A87_native_dyadic_writer at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  A87_julia_approximation at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  B180_matched_ready_and_fixed_service at 4919717083db875bacb768951c8d58c28b86101e
+UPSTREAM  B181_fixed_history_signed_price at d0b6a73e9562a6168878b534851f4951f4395857
+UPSTREAM  pr334_common_native_calibration at e3b2a464a8509186be06aea134d81c2d74b89708
+UPSTREAM  B183_registered_union_anchor at efc581d351ab97f993ce1875a284d567d4ac65cd
+PASS  A88_returned_source
+PASS  A88_toric_return
+PASS  A88_masked_price
+PASS  A88_returned_register
+PASS  A88_bell_parity
+PASS  A88_returned_predicate
+PASS  A88_balanced_key
+PASS  A88_h1_price_residual
+PASS  A88_single_supplier
+PASS  A88_physical_material_seed
+PASS  A88_replay_primary_fresh_query
+PASS  A88_extended_owner_regressions
+
+Контрольный прогон A87 (0)
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot ee902c0f32101c432ac5a25b4edd7aa3b579d2d3 direct/round87/portfolio.json
+
+Git snapshot ee902c0f32101c432ac5a25b4edd7aa3b579d2d3, 31 committed files
+UPSTREAM  pr334_common_native_calibration at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  pr334_balanced_factory at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_site_coframe_julia at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_fourier_fresh_localization at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_native_fourier_uncompute at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_native_neighbor_phase_oracle at 1cee4e60342feb9c472a60b92884d3a5075dccff
+UPSTREAM  pr334_raw_fourier_vacuum_inverse at 1cee4e60342feb9c472a60b92884d3a5075dccff
+UPSTREAM  pr334_typed_abort_pair at 1cee4e60342feb9c472a60b92884d3a5075dccff
+UPSTREAM  pr334_site_eight_catalogue at 1cee4e60342feb9c472a60b92884d3a5075dccff
+UPSTREAM  pr334_complete_work_source at a1d77e3a57497e5b1dcf9345ed9a139e973603a2
+UPSTREAM  pr334_dyadic_reference_source at a1d77e3a57497e5b1dcf9345ed9a139e973603a2
+UPSTREAM  pr334_amplifier_record_source at 8ac844e009745280e35d5eb1c2aadc2d651fb235
+UPSTREAM  pr334_fourier_reference_bdd_synthesis at 8ac844e009745280e35d5eb1c2aadc2d651fb235
+UPSTREAM  pr334_fredkin_guarded_pair at 8ac844e009745280e35d5eb1c2aadc2d651fb235
+UPSTREAM  pr334_native_birth_reflection at 8ac844e009745280e35d5eb1c2aadc2d651fb235
+UPSTREAM  A86_single_input_geometry at 0bbad12fbc376c167862be8aa5832c77ab9bd494
+UPSTREAM  A86_single_input_material at 0bbad12fbc376c167862be8aa5832c77ab9bd494
+UPSTREAM  A86_true_forward_writer at 0bbad12fbc376c167862be8aa5832c77ab9bd494
+UPSTREAM  A86_full_fourier_clock at 0bbad12fbc376c167862be8aa5832c77ab9bd494
+UPSTREAM  B179_early_and_late_sources at 4d48e2e71b0c6a5b8a960bf840862c56d3ef8c54
+UPSTREAM  pr334_guarded_live_binding at a08e9c72f8eae5210333958eaf0f25082f20fb39
+UPSTREAM  B180_matched_ready_and_fixed_service at 4919717083db875bacb768951c8d58c28b86101e
+PASS  A87_protected_future_cost
+PASS  A87_julia_approximation
+PASS  A87_signed_face_clock
+PASS  A87_signed_face_meter
+PASS  A87_native_dyadic_writer
+
+Исходная символьная проверка всех 40 вариаций отдельно из c0a63ee7b, файл 02_REGISTRY/research/sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py, код выхода 0.
+PASS: density=0; 40 unrestricted Euler -> only 3 exact symbolic rows
+PASS: 2 original Cartan rows uniquely fix one-u-step staggering
+PASS: all 24 links zero; other 15 solder zero; remaining = -h^3/2 Lap_H(u+h)
+Symbolic H/independent link unknowns: 18 16
+PASS: exact arbitrary-coefficient cubic and h^2-corrected quartic discrete harmonic
+SCOPE: exact geometric carrier; complete native execution/price is a separate input.
+
+Проверка репозитория и протокола, в каждом случае код выхода 0.
+claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918
+PASS warnings=0
+
+PASS agent_protocol: cold-start task metadata enforced
+
+PASS work_validation: active work plane clean and enforced
+
+{
+  "active_result_limit": 54,
+  "active_results": 54,
+  "discharged": 5,
+  "obligations": 22,
+  "results": 98,
+  "scientific_promotion": false,
+  "valid": true
+}
+
+Одна архивная численная диагностика FQ при воспроизведении дала 8.413e-11 вместо 7.728e-11. Отличается одно поле; оба результата меньше исходного порога 4e-9. Разрешённое отличие и обе контрольные суммы записаны в portfolio.json. Исходный thin-amplitude тест публикует шесть текстовых строк; воспроизведена их отдельная квитанция. Прохождение проверок не устанавливает выбор физической цены или допустимость H.1 в Book03. GR_closed=false.
