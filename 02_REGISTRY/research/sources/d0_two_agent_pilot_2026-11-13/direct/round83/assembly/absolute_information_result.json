@@ -1,0 +1,9 @@
+{
+  "trees": 72,
+  "entropy_per_active_read": 0.446887810052,
+  "absolute_cost_slope_at_n6_event_drop": [
+    -3.701939059,
+    0.672106108
+  ],
+  "negative_upstream_drop_at_n100": true
+}
