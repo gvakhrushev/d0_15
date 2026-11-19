@@ -1,0 +1,361 @@
+{
+  "round": "A87",
+  "base_shared": "0bbad12fbc376c167862be8aa5832c77ab9bd494",
+  "claims_shared": [
+    "8a1be8a56b345a16dbfb0ad79df0fffd504103c7"
+  ],
+  "primary_pr334": "1cee4e60342feb9c472a60b92884d3a5075dccff",
+  "reviewed_pr334": "8ac844e009745280e35d5eb1c2aadc2d651fb235",
+  "direct_regression_commit": "0bbad12fbc376c167862be8aa5832c77ab9bd494",
+  "registry_claim": {
+    "commit": "8a1be8a56b345a16dbfb0ad79df0fffd504103c7",
+    "path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/README.md",
+    "round": "A87"
+  },
+  "related_open_commits": {
+    "B179": "4d48e2e71b0c6a5b8a960bf840862c56d3ef8c54"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_passage": {
+    "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "section": "7eh.C.5",
+    "commit": "a1d77e3a57497e5b1dcf9345ed9a139e973603a2",
+    "first_line": 170617,
+    "last_line": 170645,
+    "sha256": "9c6a712327317615376e268e03409d9455a96a7bc702b5fb2f5e6627b339018d"
+  },
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "7a00729985493b7615319c51d6b71e865a93d3a1",
+    "01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "562ccfa715ad814faec55f6b0641ee226dda2d88",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md": "15c7a93949cae297b28f5da0e19ade92e63dfa1f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md": "a0a1419e4c733b0cb68b875e276851908088d320",
+    "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md": "92b9003d783c24b1883a2a21f8b30625078afff7",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "d0c488143fbbad22d81486f566de60a79ff8772b"
+  },
+  "upstream_checks": [
+    {
+      "id": "pr334_common_native_calibration",
+      "commit": "7307221c7d35db9a56a2856859ed916c5fae824b",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_common_native_calibration.py",
+      "receipt": "common_native_calibration_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_common_native_calibration.py",
+        "check_dyadic_car_loader.py",
+        "check_eight_readers.py",
+        "check_shared_site_union.py",
+        "common_native_calibration_result.json"
+      ]
+    },
+    {
+      "id": "pr334_balanced_factory",
+      "commit": "4ba981c8c79afe95893495abf98e99d87728e928",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_balanced_factory.py",
+      "receipt": "balanced_factory_result.json",
+      "files": [
+        "balanced_factory_result.json",
+        "check_balanced_controller_source.py",
+        "check_balanced_factory.py",
+        "paid_predictor_result.json"
+      ]
+    },
+    {
+      "id": "pr334_site_coframe_julia",
+      "commit": "4ba981c8c79afe95893495abf98e99d87728e928",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_site_coframe_julia.py",
+      "receipt": "site_coframe_julia_result.json",
+      "files": [
+        "check_carry_compensated_geometry.py",
+        "check_site_coframe_julia.py",
+        "site_coframe_julia_result.json"
+      ]
+    },
+    {
+      "id": "pr334_fourier_fresh_localization",
+      "commit": "4ba981c8c79afe95893495abf98e99d87728e928",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_fourier_fresh_localization.py",
+      "receipt": "fourier_fresh_localization_result.json",
+      "files": [
+        "check_fourier_fresh_localization.py",
+        "fourier_fresh_localization_result.json"
+      ]
+    },
+    {
+      "id": "pr334_native_fourier_uncompute",
+      "commit": "4ba981c8c79afe95893495abf98e99d87728e928",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_native_fourier_uncompute.py",
+      "receipt": "native_fourier_uncompute_result.json",
+      "files": [
+        "check_fourier_fresh_localization.py",
+        "check_native_fourier_uncompute.py",
+        "native_fourier_uncompute_result.json"
+      ]
+    },
+    {
+      "id": "pr334_native_neighbor_phase_oracle",
+      "commit": "1cee4e60342feb9c472a60b92884d3a5075dccff",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_native_neighbor_phase_oracle.py",
+      "receipt": "native_neighbor_phase_oracle_result.json",
+      "files": [
+        "check_native_neighbor_phase_oracle.py",
+        "native_neighbor_phase_oracle_result.json"
+      ]
+    },
+    {
+      "id": "pr334_raw_fourier_vacuum_inverse",
+      "commit": "1cee4e60342feb9c472a60b92884d3a5075dccff",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_raw_fourier_vacuum_inverse.py",
+      "receipt": "raw_fourier_vacuum_inverse_result.json",
+      "files": [
+        "check_fourier_fresh_localization.py",
+        "check_raw_fourier_vacuum_inverse.py",
+        "raw_fourier_vacuum_inverse_result.json"
+      ]
+    },
+    {
+      "id": "pr334_typed_abort_pair",
+      "commit": "1cee4e60342feb9c472a60b92884d3a5075dccff",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_typed_abort_pair.py",
+      "receipt": "typed_abort_pair_result.json",
+      "files": [
+        "check_source_price.py",
+        "check_typed_abort_pair.py",
+        "native_balanced_pair_clock_result.json",
+        "typed_abort_pair_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_site_eight_catalogue",
+      "commit": "1cee4e60342feb9c472a60b92884d3a5075dccff",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_site_eight_catalogue.py",
+      "receipt": "site_eight_catalogue_result.json",
+      "files": [
+        "check_carry_compensated_geometry.py",
+        "check_site_coframe_julia.py",
+        "check_site_eight_catalogue.py",
+        "site_coframe_julia_result.json",
+        "site_eight_catalogue_result.json"
+      ]
+    },
+    {
+      "id": "pr334_complete_work_source",
+      "commit": "a1d77e3a57497e5b1dcf9345ed9a139e973603a2",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_complete_work_source.py",
+      "receipt": "complete_work_source_result.json",
+      "files": [
+        "check_complete_work_source.py",
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_source_price.py",
+        "complete_work_source_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_dyadic_reference_source",
+      "commit": "a1d77e3a57497e5b1dcf9345ed9a139e973603a2",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_dyadic_reference_source.py",
+      "receipt": "dyadic_reference_source_result.json",
+      "files": [
+        "check_dyadic_car_loader.py",
+        "check_dyadic_reference_source.py",
+        "check_eight_readers.py",
+        "dyadic_car_loader_result.json",
+        "dyadic_reference_source_result.json"
+      ]
+    },
+    {
+      "id": "pr334_amplifier_record_source",
+      "commit": "8ac844e009745280e35d5eb1c2aadc2d651fb235",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_amplifier_record_source.py",
+      "receipt": "amplifier_record_source_result.json",
+      "files": [
+        "amplifier_record_source_result.json",
+        "check_amplifier_record_source.py"
+      ]
+    },
+    {
+      "id": "pr334_fourier_reference_bdd_synthesis",
+      "commit": "8ac844e009745280e35d5eb1c2aadc2d651fb235",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_fourier_reference_bdd_synthesis.py",
+      "receipt": "fourier_reference_bdd_synthesis_result.json",
+      "files": [
+        "check_dyadic_car_loader.py",
+        "check_fourier_fresh_localization.py",
+        "check_fourier_reference_bdd_synthesis.py",
+        "check_native_fourier_uncompute.py",
+        "fourier_reference_bdd_synthesis_result.json"
+      ]
+    },
+    {
+      "id": "pr334_fredkin_guarded_pair",
+      "commit": "8ac844e009745280e35d5eb1c2aadc2d651fb235",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_fredkin_guarded_pair.py",
+      "receipt": "fredkin_guarded_pair_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_fredkin_guarded_pair.py",
+        "check_local_gibbs_records.py",
+        "check_shared_site_union.py",
+        "check_source_price.py",
+        "fredkin_guarded_pair_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_native_birth_reflection",
+      "commit": "8ac844e009745280e35d5eb1c2aadc2d651fb235",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_native_birth_reflection.py",
+      "receipt": "native_birth_reflection_result.json",
+      "files": [
+        "check_native_birth_reflection.py",
+        "native_birth_reflection_result.json"
+      ]
+    },
+    {
+      "id": "A86_single_input_geometry",
+      "commit": "0bbad12fbc376c167862be8aa5832c77ab9bd494",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round86/assembly",
+      "entrypoint": "check_null_single_choi.py",
+      "receipt": "null_single_choi_result.json",
+      "files": [
+        "check_null_single_choi.py",
+        "null_single_choi_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round85/assembly/check_paired_source.py"
+      ]
+    },
+    {
+      "id": "A86_single_input_material",
+      "commit": "0bbad12fbc376c167862be8aa5832c77ab9bd494",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round86/assembly",
+      "entrypoint": "check_material_slice.py",
+      "receipt": "material_slice_result.json",
+      "files": [
+        "check_material_slice.py",
+        "material_slice_result.json"
+      ]
+    },
+    {
+      "id": "A86_true_forward_writer",
+      "commit": "0bbad12fbc376c167862be8aa5832c77ab9bd494",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round86/writer",
+      "entrypoint": "check_writer.py",
+      "receipt": "writer_result.json",
+      "files": [
+        "check_writer.py",
+        "writer_result.json"
+      ]
+    },
+    {
+      "id": "A86_full_fourier_clock",
+      "commit": "0bbad12fbc376c167862be8aa5832c77ab9bd494",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round86/clock",
+      "entrypoint": "check_fourier_return.py",
+      "receipt": "fourier_return_result.json",
+      "files": [
+        "check_fourier_return.py",
+        "fourier_return_result.json"
+      ]
+    },
+    {
+      "id": "B179_early_and_late_sources",
+      "commit": "4d48e2e71b0c6a5b8a960bf840862c56d3ef8c54",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round179",
+      "entrypoint": "check_split_source.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "RESULT.json",
+        "check_split_source.py"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round175/center/check_centered_motion.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round174/material/RESULT.json",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round177/RESULT.json",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round86/clock/check_fourier_return.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round86/writer/FORWARD_WRITER_RU.md",
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+        "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py"
+      ]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "A87_protected_future_cost",
+      "check": "direct/round87/recovery/check_future_service.py",
+      "stdout_matches": "direct/round87/recovery/future_service_result.json",
+      "evidence": {
+        "direct/round87/recovery/FUTURE_SERVICE_RU.md": "7240b65f21693a91791bb08ddf4b44af8837a8f8683bd9477213ac0dd4faf30a",
+        "direct/round87/recovery/check_future_service.py": "e8cbff6de7ba040536f0ceddce89f1cfc3abbc711fddcca04b32c3d6bff4bed1",
+        "direct/round87/recovery/future_service_result.json": "112346b5cd53f577b3033f72e6d11dff6a06487b137520c9b9d04d8dc96e8992"
+      }
+    },
+    {
+      "id": "A87_signed_face_meter",
+      "check": "direct/round87/writer/check_face_meter.py",
+      "stdout_matches": "direct/round87/writer/face_meter_result.json",
+      "evidence": {
+        "direct/round87/writer/FACE_METER_RU.md": "4d8e9ebbd42183b559d813ecf2967204fe17ea78a4c9439e8a58fbaec1ecb265",
+        "direct/round87/writer/check_face_meter.py": "e2eb2917b161ba4872bb3156b58907c14823528a338726aed13963fa92593811",
+        "direct/round87/writer/face_meter_result.json": "b90b9e672de276b37d427d4c37a67ed796073368a7c1e477ed6f410273066c06",
+        "open/round24/TORUS_CHOI_ADDRESSES.jsonl": "35897a838390fcd0c2ad1854d2934b3c21d6c7e4b877953a097cbb9c873238f3"
+      }
+    },
+    {
+      "id": "A87_signed_face_clock",
+      "check": "direct/round87/clock/check_signed_face.py",
+      "stdout_matches": "direct/round87/clock/signed_face_result.json",
+      "evidence": {
+        "direct/round87/clock/SIGNED_FACE_RU.md": "bd1c5806773e7027eb3e4eb9575aeb844f6f470f25cd157b788c11b9f43cec0b",
+        "direct/round87/clock/check_signed_face.py": "4e23de15b0c83cb9289521ba3d1774fad67bad6db40d624771fadaaf974b43b7",
+        "direct/round87/clock/signed_face_result.json": "a59d1925a9586a79a1cc2a23e7c7e6a1c3b4afa6827649b7ec1689f57f1bb4bf"
+      }
+    },
+    {
+      "id": "A87_native_dyadic_writer",
+      "check": "direct/round87/assembly/check_dyadic_writer.py",
+      "stdout_matches": "direct/round87/assembly/dyadic_writer_result.json",
+      "evidence": {
+        "direct/round85/assembly/check_paired_source.py": "5ad6f40af93c4959f88d0c04e4657d25a39f8924c050b99e75c829d7b91787d2",
+        "direct/round86/assembly/check_null_single_choi.py": "67e272dc9f7f0de0fb3910ed89ebaaee766e1e3bb866abdc1e830046b3942243",
+        "direct/round87/assembly/DYADIC_WRITER_RU.md": "f98b3c471c8807b811b4e349ba196e2e1e1cf5039830c1506a105757cdff8cc8",
+        "direct/round87/assembly/check_dyadic_writer.py": "52388e7da19a566421a5e9be4c891cd657b7dc88d47c618b69748efeab08a22d",
+        "direct/round87/assembly/dyadic_writer_result.json": "534f89d95823c1a989be7cdb9b89bda330c36c946f22a2b0722960c6e08b97fa"
+      }
+    }
+  ]
+}
