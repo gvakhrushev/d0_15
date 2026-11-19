@@ -1,0 +1,37 @@
+A90. Независимый повтор из закреплённого Git-снимка.
+Исследовательская ветка codex/d0-pilot-shared-20261118.
+Заявки f24408f7210c1ef4a1c0c06202ffd125a3c96ce5 и aec0552d8.
+Требуются Python, NumPy, SciPy, SymPy, mpmath и доступ к закреплённым Git-объектам.
+Команды из каталога пилота
+
+git fetch origin exp/a4d-joint-response-continuation-2026-10-16
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot a7ab474b80cdaf50134990fb4f926e1bbc35f572 direct/round90/portfolio.json
+
+Код выхода 0. Семь новых результатов и восемь первичных проверок, все квитанции совпали побайтно. Исполняемые проверки используют точную алгебру, интервалы или конечные матричные примеры согласно научным заметкам. Общие математические выводы также используют доказательства в этих заметках.
+
+Git snapshot a7ab474b80cdaf50134990fb4f926e1bbc35f572, 30 committed files
+UPSTREAM  A89_fine_archive_amplitude_price at 93056225a498051346bd331c55d779f865ad1146
+UPSTREAM  A89_uniform_energy_bound at c70d876c4ce377f861110061e67d2d743ab05ebf
+UPSTREAM  B149_native_memory_return at 82cbb04f212bfa414e8d7c954c808a700897e276
+UPSTREAM  B187_balanced_bell_parity at 8aed7f83f22f1dba48bd5e4d8ba8ae30222c54b0
+UPSTREAM  A87_full_julia_approximation at 7e265c9b3d7fe5033c4e0fa351047e166f0ed952
+UPSTREAM  B188_literal_switch_absolute_preparation at fad7d0465a3321fb8ee76be2b41df117b5d52987
+UPSTREAM  PR334_matched_clock_bootstrap_equivalence at 01f52b73daf39c122a1ecf553a549b8f07d9e5b0
+UPSTREAM  PR334_complement_bootstrap_matter_bridge at 43ccdd43216968919b24e620e4ed61009189dc36
+PASS  A90_geometry
+PASS  A90_real_phase_energy
+PASS  A90_full_cut_echo
+PASS  A90_central_memory_lift
+PASS  A90_vertex
+PASS  A90_role_path_price
+PASS  A90_common_julia_preparation
+
+Дополнительно независимо повторён A89, код выхода 0.
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot f7d74f4465d4ea5e87b4287a301f56e209e05e45 direct/round89/portfolio.json
+Шесть исходных сверок и все шесть полос A89 прошли.
+
+Проверки репозитория
+python3 tools/validate_repo.py — claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918, PASS warnings=0
+python3 tools/validate_agent_protocol.py — PASS
+python3 tools/validate_work.py — PASS
+python3 tools/gr_assembly.py --json check — valid=true, scientific_promotion=false
