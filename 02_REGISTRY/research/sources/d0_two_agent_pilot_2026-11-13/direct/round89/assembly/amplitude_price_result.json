@@ -1,0 +1,21 @@
+{
+  "material_clicks_no_background_coin": [
+    "0.00010354166929861981",
+    "0.0001358984409544385"
+  ],
+  "full_example_price_changes": [
+    [
+      "-1.6222132944871412e-6",
+      "1.6222132944871412e-6"
+    ],
+    [
+      "-1.6306923157664673e-6",
+      "1.6306923157664673e-6"
+    ]
+  ],
+  "all_fine_probabilities_retained": true,
+  "orthogonal_vector_norm_change": 0,
+  "positive_measure_price_change": 0,
+  "compulsory_positive_amplitude_sum": false,
+  "GR_closed": false
+}
