@@ -1,0 +1,67 @@
+{
+  "Julia_minus": {
+    "physical_dimension": 2048,
+    "nonzero_coordinates": 112,
+    "padded_addresses": 4096,
+    "integer_denominator": 262144,
+    "common_address_scale": 8,
+    "work_zero_probability": "1/64",
+    "four_squares": [
+      2272,
+      108,
+      4,
+      0
+    ],
+    "physical_vector_error": 3.939872963081793e-05,
+    "full_vector_error": 0.00867688147942277,
+    "raw_projected_effect": 0.014950033703663363,
+    "approx_projected_effect": 0.014948723612178583,
+    "block_Frobenius_errors": [
+      0.00021046133590995085,
+      0.000234628769473024
+    ]
+  },
+  "Julia_plus": {
+    "physical_dimension": 2048,
+    "nonzero_coordinates": 112,
+    "padded_addresses": 4096,
+    "integer_denominator": 262144,
+    "common_address_scale": 8,
+    "work_zero_probability": "1/64",
+    "four_squares": [
+      2192,
+      68,
+      8,
+      8
+    ],
+    "physical_vector_error": 3.7348217929344596e-05,
+    "full_vector_error": 0.008366033660127083,
+    "raw_projected_effect": 0.01417959800377244,
+    "approx_projected_effect": 0.014178605750203133,
+    "block_Frobenius_errors": [
+      0.0001849925971909007,
+      0.000234628769473024
+    ]
+  },
+  "Fourier128_F5_or_F6": {
+    "physical_dimension": 524288,
+    "nonzero_coordinates": 49152,
+    "padded_addresses": 1048576,
+    "integer_denominator": 262144,
+    "common_address_scale": 128,
+    "work_zero_probability": "1/64",
+    "four_squares": [
+      8704,
+      1152,
+      384,
+      0
+    ],
+    "physical_vector_error": 0.0006901120069840349,
+    "full_vector_error": 0.03353179739392073
+  },
+  "original_effect_central_secant": -0.012326971198254771,
+  "realized_effect_central_secant": -0.012321885791607201,
+  "supplies_unknown_old_operator": false,
+  "consumes_old_purifier": false,
+  "GR_closed": false
+}
