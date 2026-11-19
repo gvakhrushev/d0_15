@@ -1,0 +1,27 @@
+{
+  "native_efficiencies": {
+    "1": "0.210489879943",
+    "3": "0.980280568851"
+  },
+  "complete_trees": 28,
+  "nonempty_service_masks_checked": 494,
+  "price_minus_entropy_slope_k3": [
+    [
+      1,
+      "-0.9802805689"
+    ],
+    [
+      3,
+      "-0.2586538379"
+    ],
+    [
+      4,
+      "0.1157696329"
+    ]
+  ],
+  "best_literal_partition_contrast": {
+    "n": 3,
+    "relative": "0.386991009991"
+  },
+  "full_book_price_identified": false
+}
