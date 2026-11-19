@@ -1,0 +1,12 @@
+{
+  "sites_checked": 256,
+  "independent_coframe_rows_per_site": 16,
+  "independent_matter_stencil_coefficients_per_site": 8,
+  "link_rows_absent_from_material": 24,
+  "transverse_fiber_size": 64,
+  "residual_longitudinal_multiplicity": 4,
+  "car_copies": 1,
+  "geometric_choi_copies": 1,
+  "arbitrary_off_stratum_derivatives_tested": true,
+  "GR_closed": false
+}

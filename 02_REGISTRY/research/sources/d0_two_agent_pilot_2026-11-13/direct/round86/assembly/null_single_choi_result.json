@@ -1,0 +1,24 @@
+{
+  "face_values": 6,
+  "symbolic_coframe_jets": 96,
+  "symbolic_link_occurrence_jets": 144,
+  "independent_null_parameters": [
+    "H",
+    "k",
+    "l",
+    "m",
+    "n",
+    "nu"
+  ],
+  "separated_address_mixed_jet_divided_by_nu": "1",
+  "exact_polynomial_terms_per_face": [
+    28,
+    32,
+    32,
+    56,
+    56,
+    56
+  ],
+  "geometry_choi_copies_on_owned_first_jet": 1,
+  "GR_closed": false
+}
