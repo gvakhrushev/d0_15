@@ -154,5 +154,6 @@ def stationary_rectangle_and_anchor():
 
 if __name__ == "__main__":
     print(json.dumps({"all40_test": trace_test(), "positive_history_sum": complete_positive_examples(),
-                      "stationary_set_and_prefix": stationary_rectangle_and_anchor(),\n                      "original_Book03_covector_measured": False, "GR_closed": False},
+                      "stationary_set_and_prefix": stationary_rectangle_and_anchor(),
+                      "original_Book03_covector_measured": False, "GR_closed": False},
                      indent=2, ensure_ascii=False))
