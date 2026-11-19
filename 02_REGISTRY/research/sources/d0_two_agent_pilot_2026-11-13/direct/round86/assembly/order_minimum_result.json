@@ -1,0 +1,16 @@
+{
+  "exhaustive_max_pairs": 5,
+  "admissible_order_count": "(N+1)^2",
+  "fresh_Fourier_q5_gt_q6_gt_half": true,
+  "strict_min_F6_minus_F5_positive_for_all_positive_N": true,
+  "logsum_F6_minus_F5_at_unit_rate": {
+    "1": -4.180585431666926e-06,
+    "16": -4.6612619045432035e-05,
+    "1024": -0.0008757897840126751,
+    "4096": 0.016524134550264833,
+    "10000": 0.0663154133654216
+  },
+  "sufficient_pairs_from_infinite_tail_only": 3260963,
+  "shorter_service_admitted_eliminates_positive_identity_work": true,
+  "GR_closed": false
+}
