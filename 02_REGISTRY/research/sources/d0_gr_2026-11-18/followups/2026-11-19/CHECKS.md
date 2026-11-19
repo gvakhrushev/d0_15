@@ -262,3 +262,5 @@ python3 -B "$d/realization/check_realization.py"
 **Нативный NC1 и редкие отказы:** `python3 -B metric/check_native_union_nc1_caps.py` проверяет NC1 на произвольных комплексных входах с RIGHT, реальные ветви и точные пределы попыток; см. [результат](metric/native_union_nc1_caps_result.json) и [условия](metric/NATIVE_UNION_NC1_CAPS_RU.md).
 
 **Первый источник отказов:** `python3 -B metric/check_secant_failure_first_source.py` проверяет усиленный cap, массы первого отказа и CQ-тождество в изометрической модели; см. [результат](metric/secant_failure_first_source_result.json) и [условия переноса](metric/SECANT_FAILURE_FIRST_SOURCE_RU.md).
+
+**NC1-журнал и его изолированный clock:** `python3 -B -W error metric/check_seed_nc1_record_clock.py` проверяет 16 входных столбцов, обе ветви, полный clock двух рождений и downstream-контрпример; см. [записку](metric/SEED_NC1_RECORD_CLOCK_RU.md).
