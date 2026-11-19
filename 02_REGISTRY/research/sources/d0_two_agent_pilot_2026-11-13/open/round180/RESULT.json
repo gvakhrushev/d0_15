@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "B179_receipt_sha256": "4d4a1a2403683d462d6c576ca4f2bfc7b5b1ae4f543fa7e1c68fcf4df5184046",
+  "literal_fresh_gates_and_budget": {
+    "native_flag_words_extra_G": [
+      0,
+      1,
+      3
+    ],
+    "raw_NC1_head_one_masses": [
+      "p^2",
+      "4p^3",
+      "16p^9"
+    ],
+    "three_short_prefix_pass_mass": "p^18",
+    "three_short_prefix_bright_leaf_stages": 21,
+    "previous_bright_leaf_stages_with_18_standard_NC1": 108,
+    "supplier_call_per_ready_CAR": "p^19(1+p^2)",
+    "common_signed_gain_before_shared_READY": "p^19 / Lambda",
+    "exact_constant_thinning_CZ_to_CCZ": "two fair-pair heralds before CZ"
+  },
+  "ready_balance_checks": {
+    "short_prefix_expected_attempts": [
+      "1.05883371001598",
+      "1.05883371001599"
+    ],
+    "supplier_reach_one_Choi_each_arm": [
+      ".00014781965936879",
+      ".00014781965936880"
+    ],
+    "expected_Choi_three_on_geo_one_on_q": [
+      ".00036174628008947",
+      ".00036174628008949"
+    ],
+    "expected_Choi_three_on_each_common_dispatch": [
+      ".00044345897810636",
+      ".00044345897810640"
+    ],
+    "gate_pre_rate_CZ_CCZ_cap32_product": [
+      ".99948066637875",
+      ".99948066637876"
+    ],
+    "unequal_native_caps_cold_order_difference": [
+      "1.26e-7",
+      "1.29e-7"
+    ],
+    "balanced_CZ_vs_fair_pair_rate_with_one_comparison": [
+      ".22291",
+      ".22292"
+    ],
+    "balanced_CZ_vs_fair_pair_rate_with_four_comparisons": [
+      ".43547",
+      ".43549"
+    ]
+  },
+  "born_and_passive_matched_but_work_not": {
+    "canonical_pass_words": [
+      "0^18",
+      "0^10 1^4"
+    ],
+    "equal_Born_pass": "p^18",
+    "equal_passive_after_marker": "p^38",
+    "literal_code_minus_CQ_on_each_independent_selector": "0",
+    "visits_gap": [
+      ".00795754",
+      ".00795756"
+    ]
+  },
+  "born_passive_and_mean_work_all_matched": {
+    "two_bit_blocks_have_same_Born_and_expected_native_calls": [
+      "p^2",
+      "1+p"
+    ],
+    "per_block_passive_pass": [
+      "p^4",
+      "p^3"
+    ],
+    "two_ten_zero_prefix_four_block_trees_pass": "p^18",
+    "passive_after_CAR_mark": "p^38",
+    "nonlinear_economic_subsums_difference": "K t (1-t)(1-R)",
+    "whole_native_visit_variance_gap_A_minus_filler": "2 p^11 (1+2p^2+3p^4)",
+    "classical_controller_and_actual_reports_executed_together": false
+  },
+  "matched_marginals_not_enough": {
+    "same_SITE_affine_family_ALL_rates": [
+      "1/2",
+      "1/2",
+      "1/4"
+    ],
+    "desired_unconditional_signed_score": "0",
+    "true_cross_ready_signed_score": "t/4",
+    "G_rotated_projector_order_reference_distance": "p",
+    "G_rotated_projector_order_effect_norm_difference": "p^2",
+    "G_rotated_projector_order_jet_difference": "p^3"
+  },
+  "full_new_Choi_dispatch_executed": false,
+  "full_Book03_valuation_identified": false,
+  "GR_closed": false
+}
