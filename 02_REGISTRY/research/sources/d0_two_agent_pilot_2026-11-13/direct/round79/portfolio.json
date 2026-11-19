@@ -267,5 +267,13 @@
         "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7"
       }
     }
-  ]
+  ],
+  "verification": {
+    "snapshot": "2365dfbd10c87173bcdda6114b04cd3c30e62072",
+    "committed_snapshot_files": 44,
+    "local_checks_passed": 12,
+    "pinned_upstream_receipts_matched": 5,
+    "prior_A62_A78_checks_passed": 123,
+    "assembly_scientific_promotion": false
+  }
 }
