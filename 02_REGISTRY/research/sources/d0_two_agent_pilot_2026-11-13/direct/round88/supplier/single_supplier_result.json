@@ -1,0 +1,74 @@
+{
+  "economic": {
+    "GR_closed": false,
+    "R_phys_identified": false,
+    "W5_failure_common_tag": [
+      "4",
+      "19",
+      "1/70000000"
+    ],
+    "W6_failure_common_tag": [
+      "7",
+      "11",
+      "0"
+    ],
+    "Z5_over_Z6_enclosures": {
+      "1": [
+        "1.27777",
+        "1.27779"
+      ],
+      "12": [
+        "1.30",
+        "1.31"
+      ],
+      "40": [
+        "9e15",
+        "1e17"
+      ]
+    },
+    "leakage_at_k24": [
+      "0.0000000000930",
+      "0.0000000000931"
+    ],
+    "unit_factory_refusal_always_served": true
+  },
+  "flag_and_reader": {
+    "B181_passive_per_block": "p^15",
+    "B181_square_movements_per_block": "18+12p+9p^3",
+    "complete_register_columns": 1024,
+    "conditional_public_lengths": {
+      "common": 6,
+      "tag": 3
+    },
+    "failure_zero_publications_per_block": 6
+  },
+  "fourier": {
+    "F5_fine_probability": [
+      "0.000000101912118290730",
+      "0.000000101912118290734"
+    ],
+    "F5_including_single_golden_unit": [
+      "0.000000038926965321558",
+      "0.000000038926965321561"
+    ],
+    "F6_fine_probability": 0,
+    "axis0": [
+      1,
+      0
+    ],
+    "axis1": [
+      0,
+      0
+    ],
+    "index": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "signed_wave_energy": [
+      "1/64",
+      "0"
+    ]
+  }
+}
