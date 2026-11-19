@@ -45,15 +45,47 @@ def verify_primary_sources(repo, pins, verified):
         verified.add(key)
 
 
+def replay_upstream(repo, check):
+    """Run a pinned upstream check without copying another team's sources into Git."""
+    revision = check["commit"]
+    if len(revision) != 40 or any(c not in "0123456789abcdef" for c in revision):
+        raise ValueError("Upstream checks require a full Git commit ID")
+    folder = Path(check["directory"])
+    if folder.is_absolute() or ".." in folder.parts:
+        raise ValueError("Invalid upstream source directory")
+    object_repo = os.environ.get("D0_PILOT_OBJECT_REPO", str(repo))
+    with TemporaryDirectory(prefix="d0-primary-") as temp:
+        root = Path(temp)
+        for name in check["files"]:
+            if not name or name in (".", "..") or Path(name).name != name:
+                raise ValueError(f"Expected a plain upstream filename: {name}")
+            contents = subprocess.check_output(
+                ["git", "-C", object_repo, "cat-file", "blob", f"{revision}:{folder}/{name}"])
+            (root / name).write_bytes(contents)
+        if any(key not in check["files"] for key in (check["entrypoint"], check["receipt"])):
+            raise ValueError("Upstream check or receipt absent from file list")
+        result = subprocess.check_output([sys.executable, "-B", check["entrypoint"]],
+                                         cwd=root, env=dict(os.environ, PYTHONOPTIMIZE="0"))
+        if result != (root / check["receipt"]).read_bytes():
+            raise ValueError(f"Upstream output differs: {check['id']}")
+    print(f"UPSTREAM  {check['id']} at {revision}", flush=True)
+
+
 def main(manifests, workers=4):
     base = Path(__file__).resolve().parent
     # This pilot lives under 02_REGISTRY/research/sources in clones and exports.
     repo = base.parents[3]
     verified = set()
+    upstream = set()
     lanes = []
     for manifest in manifests:
         portfolio = json.loads(Path(manifest).read_text(encoding="utf-8"))
         verify_primary_sources(repo, portfolio.get("primary_git_blobs_on_shared", {}), verified)
+        for check in portfolio.get("upstream_checks", []):
+            key = json.dumps(check, sort_keys=True)
+            if key not in upstream:
+                replay_upstream(repo, check)
+                upstream.add(key)
         lanes.extend(portfolio["lanes"])
     if not lanes or len({lane["id"] for lane in lanes}) != len(lanes):
         raise ValueError("Expected one unique entry per research lane")
@@ -111,7 +143,7 @@ def verify_git_snapshot(revision, manifests, workers):
         return subprocess.run(
             [sys.executable, "-B", "verify_portfolio.py", "--jobs", str(workers),
              *(str(name) for name in names)], cwd=root / prefix,
-            env=dict(os.environ, PYTHONOPTIMIZE="0")).returncode
+            env=dict(os.environ, PYTHONOPTIMIZE="0", D0_PILOT_OBJECT_REPO=str(repo))).returncode
 
 
 if __name__ == "__main__":
