@@ -1,0 +1,17 @@
+{
+  "old_SITE_columns": 256,
+  "raw_resource_supplies": 172,
+  "phase_gate_factories_both_legs": 264,
+  "teleport_X_cycles_both_legs": 172,
+  "common_early_abort_cold": "1.67496358896697196e-7",
+  "all_completed_factory_cold_weight": "1.70787830071002315e-351",
+  "full_RC3_difference_F6_minus_F5": "1.58693371591772056e-360",
+  "full_RC3_strict_lower_bound_numeric": "1.58693033181439559e-360",
+  "full_heat_absolute_bound_numeric": "3.27836102043351888e-804",
+  "certified_DeltaJ_above_2pow": -2377,
+  "certified_abs_DeltaH_below_2pow": -2400,
+  "terminal_CX_each_leaf": 256,
+  "central_report_dephased_before_return": false,
+  "complete_Book_Cost_minus_Info": false,
+  "GR_closed": false
+}

@@ -1,0 +1,20 @@
+{
+  "first_abort_probability": "0.0000363373542393558209",
+  "runner_up_probability": "0.0000171561714459562754",
+  "max_successful_prefix_leaf_bound": "9.3275684033951729e-29",
+  "raw_modal_cost": "21.2435849890471241",
+  "raw_mode_gap": "1.55957990958744352",
+  "fine_service_SUCCESS": "0.973341169815981118",
+  "bright_tap_probability": "0.000117039280738104819",
+  "code_minus_full_record_entropy_F6_minus_F5": "-0.00226595308191300298",
+  "NC1_weighted_success_mass": "5.62572597057680542e-179",
+  "unresolved_service_order_relative_bound": "2.63323887491035881e-42",
+  "minus_log_phi_weighted_sum_F6_minus_F5_strict_interval": [
+    "1.43671975663489e-175",
+    "1.43671975663491e-175"
+  ],
+  "common_raw_MDL_endpoint_difference": 0,
+  "absolute_old_address_tag_all_three_secants": 0,
+  "full_Book03_weight_identified": false,
+  "GR_closed": false
+}

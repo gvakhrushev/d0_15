@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "L": 4,
+  "true_Fourier_half_shift_numerators_over_64": [
+    -16,
+    -4,
+    -4,
+    -6
+  ],
+  "short_writer_one_success": 0.973341169816,
+  "source_factory_expected_printed_symbols": 967.0159336256,
+  "source_factory_full_record_entropy_base_phi": 693.8250873336,
+  "first_axis_addressed_CX_in_CCZ_attempt": 20,
+  "first_gate_fixed_address_ZZ_contrast": 0.1428778104479,
+  "first_gate_F5_F6_root_overlap": 0.6135896139808,
+  "first_gate_F5_F6_root_trace_distance": 0.7896250918093,
+  "F5_conditional_click_original_Fourier128": 0.5016444521871,
+  "F6_conditional_click_original_Fourier128": 0.501637137232,
+  "full_forward_delta_printed_length_F6_minus_F5": -7.119946901753e-06,
+  "full_forward_delta_record_entropy_F6_minus_F5": 9.71082798534e-08,
+  "full_forward_delta_printed_length_minus_CQ": -7.217055181606e-06,
+  "paid_square_trace_distances_delta_given_success": [
+    -4.371534789624e-06,
+    9.159464516461e-07,
+    0.0,
+    8.931825874114e-07,
+    -1.21466407598e-06,
+    0.0,
+    -4.204842686206e-06
+  ],
+  "all_forward_delta_sum_observed_square_trace_distances": -7.76912406253e-06,
+  "extra_conditional_PVM_trace_distance_delta": 4.130356406785e-08,
+  "full_square_plus_terminal_PVM_trace_distance_delta": -7.727820498462e-06,
+  "all_failures_retained": true,
+  "full_Book03_selected": false,
+  "GR_closed": false
+}
