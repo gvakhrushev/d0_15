@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "direct/round80/native/check_return_work.py": "fdc0d988a48073b862f92dbe1e3f945f529c32fb3e907421c2f611dbcdea739c",
+    "open/round165/check_service_abort.py": "acd22a6c91c789691a4a85c3908fe969b5165651ad477f6a9dc460e419db20d2",
+    "open/round167/B167_MEASURED_REPORT_RETURN_RU.md": "2eb8bd1b74e4af7e272a8f00dfe9a65aeae0050fb1c4001483ac6a768ec71bc5",
+    "open/round167/GUARD_AND_SITE_RU.md": "52975d84b8b342027b6c65481ac193fad1e9336417f729db4d76f8e580901751"
+  },
+  "detector_native_gates": 400,
+  "old_columns_replayed_per_defect_input": 64,
+  "terminal_layout": "two sequential detector births, 400 calls, two reads, helper birth, CX, closing CX",
+  "first_differing_winding": 405,
+  "overflow_01_moment": "p cos(16 theta)",
+  "return_10_moment": "0",
+  "overflow_minus_return_thermal_bound": "< -0.39 f_405",
+  "GR_closed": false
+}
