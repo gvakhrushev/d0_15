@@ -1,0 +1,39 @@
+{
+  "B155_Info_lower_as_factor_of_1_minus_q": 0.002780869212350222,
+  "GR_closed": false,
+  "coefficient_absolute_sum_upper": 529475,
+  "count_table_domain_total": 58404864,
+  "crossing_margin_against_old_G1_lower": 0.0010317987189999997,
+  "error_components_upper": {
+    "balanced_golden_rounding": 7.574103385606855e-05,
+    "basis_phase": 0.0074909683007290334,
+    "calibration": 0.00075,
+    "coherent_confirm_quadrature": 4.781163266992456e-05,
+    "entropy_and_confirm_offset": 2.9881392746801038e-05,
+    "entropy_quadrature": 7.064366529244173e-07,
+    "literal_offset": 0.00011704637969889115
+  },
+  "explicit_addressed_letters_and_literal_slots_upper": 906087672301782645988136,
+  "full_bank_expanded": false,
+  "independent_quadrature_groups_upper": 944842426,
+  "old_tags": 64,
+  "phase_error_upper": 2.2770554941736312e-11,
+  "phase_grid": [
+    175623544141,
+    414068583427
+  ],
+  "pinned_inputs": {
+    "direct/round76/record/check_complete_tariffs.py": "213739c2ed2abf6a378781ec561b6984db7c4a8937bb9940490ecedc62e5ffa0",
+    "open/round155/RESULT.json": "fba45d4f8752cfb2a651856cde7b728db96d7c750d912562524394eba6447c36",
+    "open/round157/RESULT.json": "77e920d03f9ea7914825839a625cafa6ce7dc9d635e5e4494dc994deeee7e6a0"
+  },
+  "real_count_fourier_terms_upper": 29220864,
+  "round": "B158",
+  "same_physical_clock_and_full_class_verified": false,
+  "scope": "fixed reference tariff on 192 actually retained B155 bits",
+  "scratch_realized_Info_lower": 0.9461552409551789,
+  "terminal_meters_upper": 5669054556,
+  "terminal_realized_Info_lower": 0.145898,
+  "uniform_fixed_tariff_error_allowed": 0.009,
+  "uniform_fixed_tariff_error_upper": 0.008512155176353642
+}
