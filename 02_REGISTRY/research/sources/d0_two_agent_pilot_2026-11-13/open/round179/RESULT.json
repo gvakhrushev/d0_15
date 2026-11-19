@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "owners_sha256": {
+    "open/round174/material/RESULT.json": "659249eabe3545a46c994ce0d6f1c9d7e6c785c9dc1b8995c7f2ad59eb2b17e2",
+    "open/round177/RESULT.json": "465b9645885289a8e285f3177f733f9cf3ff1012f33b780491604148a996ea74",
+    "direct/round86/clock/check_fourier_return.py": "ab1b7733310286faef2509b38d174da080d86264e6fc74e5aab00b834d2f54da",
+    "direct/round86/writer/FORWARD_WRITER_RU.md": "de5788f16ef552970743714c5542525e8a7d8d07bb55d9f457e094631b008352"
+  },
+  "ready_F5_F6": {
+    "both_literal_markers": [
+      {
+        "exact_columns": 32,
+        "births": 2,
+        "square_letters": {
+          "CX": 6,
+          "G": 2
+        }
+      },
+      {
+        "exact_columns": 32,
+        "births": 4,
+        "square_letters": {
+          "CX": 10,
+          "G": 4
+        }
+      }
+    ],
+    "ideal_F5_F6_ready_active_mass": [
+      ".00012394658731107",
+      ".00012394658731108"
+    ],
+    "identical_marker_ledger_values_F5_F6": {
+      "square_parity": [
+        "5.41849414078809",
+        "5.41849414078810"
+      ],
+      "square_two": [
+        "8.69751400848043",
+        "8.69751400848044"
+      ],
+      "proj_parity": [
+        ".01125568915901",
+        ".01125568915902"
+      ],
+      "proj_two": [
+        ".69339938915186",
+        ".69339938915187"
+      ],
+      "code_CQ_parity": [
+        "1.99730146946033",
+        "1.99730146946034"
+      ],
+      "code_CQ_two": [
+        "1.61552878864950",
+        "1.61552878864951"
+      ]
+    },
+    "late_geometry_route_mass": [
+      ".00010696331036034",
+      ".00010696331036035"
+    ],
+    "one_Choi_in_each_read_route_expected_invocations_given_ready": [
+      ".00023090989767141",
+      ".00023090989767143"
+    ],
+    "three_Choi_for_geometry_one_for_matter_expected_invocations_given_ready": [
+      ".00044483651839210",
+      ".00044483651839211"
+    ],
+    "expected_count_coin_tests_on_anchor": [
+      "2.61758",
+      "2.61759"
+    ]
+  },
+  "ideal_and_literal_elliptic": {
+    "original_B174": {
+      "absolute_even_mass_delta": [
+        "2.958e-6",
+        "2.959e-6"
+      ],
+      "anchor_mass_absolute_defect_on_first_end": [
+        "1.955e-7",
+        "1.957e-7"
+      ]
+    },
+    "refined_B177": {
+      "absolute_even_mass_delta": [
+        "5.066e-11",
+        "5.068e-11"
+      ],
+      "anchor_mass_absolute_defect_on_first_end": [
+        "3.279e-13",
+        "3.281e-13"
+      ]
+    },
+    "ideal": {
+      "parity_receipt_price_jet": "0",
+      "squared_gate_movement_secant": [
+        "-2.55e-4",
+        "-2.45e-4"
+      ]
+    }
+  },
+  "exact_Fourier_record": {
+    "half_shift_Grams": [
+      "-1/4",
+      "-1/16"
+    ],
+    "active_report_q_over_2p3": [
+      [
+        "3/4",
+        "17/16"
+      ],
+      [
+        "5/4",
+        "15/16"
+      ]
+    ],
+    "mixed_odds_ratio_against_real_stop": "9/17"
+  },
+  "matched_spectral_parity": {
+    "fresh_born_SITE_J_F6_minus_F5": [
+      "-6.510e-4108",
+      "-6.508e-4108"
+    ],
+    "both_replacements_common_full_heat_difference_below": "2^-27500",
+    "old_SITE_rank_256_exact_feedback_isospectral_for_paid_inverse": true,
+    "extended_factory_reporter_run_in_full": false
+  },
+  "stop_conditioning_scale": {
+    "priced_01_probability_in_A86_printed_valuation": [
+      "3.65080e-172",
+      "3.65082e-172"
+    ],
+    "raw_01_probability_with_all_factories": [
+      ".60155792559585",
+      ".60155792559587"
+    ]
+  },
+  "absolute_physical_book03_price_identified": false,
+  "GR_closed": false
+}
