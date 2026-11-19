@@ -1,0 +1,13 @@
+{
+  "link_tangent_rank": 6,
+  "dyadic_geometric_coframe_secants": 96,
+  "dyadic_geometric_link_occurrence_secants": 144,
+  "matter_coframe_secants": 16,
+  "matter_local_site_component_secants": 10,
+  "walsh_thresholds": 33,
+  "all_pairs_full_wave_tests": 1089,
+  "source_rows_per_site": 42,
+  "native_exact_original_full_Julia_at_nu_half": false,
+  "scope": "paid sharp field-code comparison on the specified chart",
+  "GR_closed": false
+}
