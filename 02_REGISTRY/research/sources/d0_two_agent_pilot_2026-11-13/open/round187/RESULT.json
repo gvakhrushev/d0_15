@@ -1,0 +1,118 @@
+{
+  "Bell_preparation": {
+    "square_word_on_success": 9,
+    "births_including_probe": 4,
+    "actual_Bell_NC1": 1,
+    "Bell_ready_probability": "2 p^3",
+    "Bell_failure_probability": "p^2+p^4"
+  },
+  "native_balanced_rails": {
+    "square_word": 12,
+    "births": 2,
+    "CAR_columns": 16,
+    "cold_amplitude_of_either_rail": "ap"
+  },
+  "local_work_control": {
+    "actual_signed_words_checked": 2,
+    "CAR_filler_choices": 2,
+    "probe_and_first_rail_marginal_exact": true,
+    "CAR_return_marginal_independent": true
+  },
+  "fixed_sign_sharing": {
+    "same_five_slot_skeleton_all_columns": true,
+    "individual_share_probe_marginal_exact": true
+  },
+  "spectral_signs": {
+    "h_star": "p^2 + p^5 (p^2+p^4)",
+    "h_ready_multiplier": "p^9/2",
+    "physical_ready_probability": "2 p^5",
+    "heat_abs_bound": "< 1e-31",
+    "A89_parity_cases": [
+      {
+        "q": [
+          [
+            "3.906250000000e-03",
+            "3.906250000000e-03"
+          ],
+          [
+            "1.562500000000e-02",
+            "1.562500000000e-02"
+          ]
+        ],
+        "coframe_secants": [
+          [
+            "-6.671864543120e-10",
+            "-6.671864543120e-10"
+          ],
+          [
+            "4.773910473877e-10",
+            "4.773910473877e-10"
+          ]
+        ],
+        "precision_bracket": [
+          ".007",
+          ".012"
+        ]
+      },
+      {
+        "q": [
+          [
+            "3.837386167656e-03",
+            "3.837386167656e-03"
+          ],
+          [
+            "1.540553915562e-02",
+            "1.540553915562e-02"
+          ]
+        ],
+        "coframe_secants": [
+          [
+            "-6.739725853563e-10",
+            "-6.739725853563e-10"
+          ],
+          [
+            "4.561432000074e-10",
+            "4.561432000074e-10"
+          ]
+        ],
+        "precision_bracket": [
+          ".007",
+          ".012"
+        ]
+      }
+    ],
+    "masked_cold_ready_multiplier": "2 p^25",
+    "masked_abs_J_secant_bounds_for_published_waves": [
+      [
+        "1.221517646179e-12",
+        "1.221517646179e-12"
+      ],
+      [
+        "8.267205225250e-13",
+        "8.267205225250e-13"
+      ]
+    ]
+  },
+  "balanced_physical_writer": {
+    "logical_tables": [
+      "I",
+      "G"
+    ],
+    "term_counts_by_degree": [
+      2,
+      2,
+      2,
+      0
+    ],
+    "label_words": 8,
+    "scale_of_success": "p**3/16",
+    "raw_intermediate_success_and_all_8_g_flags_scalar": true,
+    "late_failure_pvm": "one genuine [Walsh label = 0] mark"
+  },
+  "full_Book_tariff_identified": false,
+  "price_boundary": {
+    "critical_extra_Golden_charge": "1/2",
+    "one_paid_0_10_phase_XOR_can_reverse_amplitude_sign": true
+  },
+  "GR_closed": false
+}
