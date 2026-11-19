@@ -25,6 +25,8 @@
   "common_diagonal_derivative": 0.0,
   "opposite_parameter_step": 0.01,
   "new_partial_value": 0.799928874943209,
+  "KL_expression_and_zero_global_minimum_checked": true,
+  "global_minimum_preserves_average_program_parameter": true,
   "delta_for_N8": 0.013155617496424849,
   "individual_gradient_in_q_magnitude": 76.01315561749637,
   "symmetric_ledger_diagonal_controls_all_m_rows": true,

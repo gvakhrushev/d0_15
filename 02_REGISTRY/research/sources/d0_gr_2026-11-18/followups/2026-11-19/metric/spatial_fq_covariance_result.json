@@ -1,0 +1,35 @@
+{
+  "status": "PASS; explicit operator identity, real scene and witness",
+  "scene_eigen_min": 0.31147554668827726,
+  "scene_eigen_max": 0.938702570118495,
+  "scene_spectral_width": 0.6272270234302177,
+  "fq_effect_spectral_width": 0.021286236252208157,
+  "maximum_sample_covariance": 0.0005326934461259425,
+  "theoretical_covariance_upper": 0.003337825651126229,
+  "max_sample_identity_error": 5.4833524873454387e-17,
+  "witness_limit_coefficient": -7.05603851627466e-05,
+  "examples": {
+    "2": {
+      "actual_abs_log_contrast_over_delta": 7.056097283340978e-05,
+      "two_scene_sector_bound": 0.00014309383183135616,
+      "full_scene_operator_bound": 0.2274344690863192
+    },
+    "4": {
+      "actual_abs_log_contrast_over_delta": 7.05606096314851e-05,
+      "two_scene_sector_bound": 0.00014309383183135616,
+      "full_scene_operator_bound": 0.2274344690863192
+    },
+    "8": {
+      "actual_abs_log_contrast_over_delta": 7.056041791412418e-05,
+      "two_scene_sector_bound": 0.00014309383183135616,
+      "full_scene_operator_bound": 0.2274344690863192
+    },
+    "20": {
+      "actual_abs_log_contrast_over_delta": 7.056038581076773e-05,
+      "two_scene_sector_bound": 0.00014309383183135616,
+      "full_scene_operator_bound": 0.2274344690863192
+    }
+  },
+  "full_physical_bank_and_Book_price_derived": false,
+  "GR_closed": false
+}

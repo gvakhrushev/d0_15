@@ -21,6 +21,14 @@ before=value(t);step=.01
 new=np.array([.5-step]*8+[.5+step]*8)
 after=value(new)
 assert after<before and before>0 and after>0
+# Exact code-Kraft identity: each partial term is KL(Bern(t)||Bern(p^2))
+# or KL(Bern(t)||Bern(p)), divided by ln(phi).
+p=(math.sqrt(5)-1)/2
+def kl(x,y):return x*math.log(x/y)+(1-x)*math.log((1-x)/(1-y))
+kl_value=(sum(kl(x,p*p) for x in new[:8])+sum(kl(x,p) for x in new[8:]))/ell
+assert abs(kl_value-after)<1e-12
+opt=np.array([p*p]*8+[p]*8)
+assert abs(value(opt))<1e-12 and abs(float(np.mean(opt))-.5)<1e-15
 # Independent weighted sum of code lengths for all 2^16 actual outcome
 # strings at t=1/2; entropy is exactly m ln2 and output is a pure conditional
 # record for each outcome.
@@ -48,6 +56,8 @@ print(json.dumps({'status':'PASS','m':m,'all_outcome_strings_checked':1<<m,
  'independent_gradient_in_t':[float(v) for v in g],
  'common_diagonal_derivative':float(sum(g)),
  'opposite_parameter_step':step,'new_partial_value':after,
+ 'KL_expression_and_zero_global_minimum_checked':True,
+ 'global_minimum_preserves_average_program_parameter':True,
  'delta_for_N8':delta,'individual_gradient_in_q_magnitude':1/delta,
  'symmetric_ledger_diagonal_controls_all_m_rows':True,
  'full_native_printer_and_Book03_action_derived':False,
