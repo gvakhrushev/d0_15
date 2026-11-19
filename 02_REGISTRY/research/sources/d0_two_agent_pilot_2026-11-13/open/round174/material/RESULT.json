@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "PR334_commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+  "dyadic_L": 8,
+  "field_endpoints": [
+    0.375,
+    0.625
+  ],
+  "material_level": "1/64",
+  "lattice_H": 0.125,
+  "half_secant_step": 0.125,
+  "single_literal_square_word": {
+    "CX": 2182,
+    "SourceI": 2720,
+    "G": 1630177
+  },
+  "virtual_columns_replayed_all_J_SITE_CAR_PORT_Spin": 2048,
+  "common_gate_sequence_J_always_control": true,
+  "old_q_and_READOUT_protected": true,
+  "own_NC1_marks_and_norms": {
+    "0": 0.6180339887498948,
+    "10": 0.3819660112501052,
+    "11": 0.0
+  },
+  "max_full_replay_defect": 2.0525681198105272e-11,
+  "illustrative_max_full_operator_error": 0.0011587681891457634,
+  "illustrative_all_section_operator_error_bound": 0.006070609566959187,
+  "illustrative_max_CAR_moment_pair_error": 0.001093739882676352,
+  "certified_literal_CAR_material_jet_all_edge_signs": true,
+  "certified_positive_signed_CAR_material_jet_margin": "1/1000",
+  "exact_target_jet_supremum": 0.011048543456039808,
+  "illustrative_max_material_jet_error": 0.002968650589287136,
+  "illustrative_material_jet_error_bound": 0.04447787338410393,
+  "cartesian_walsh_powers": [
+    [
+      0,
+      0,
+      0,
+      0,
+      2765,
+      2765,
+      -758,
+      6288,
+      0,
+      0,
+      0,
+      0,
+      524,
+      524,
+      1572,
+      -524
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      -2999,
+      3668,
+      7860,
+      7860,
+      0,
+      0,
+      0,
+      0,
+      -2620,
+      524,
+      1048,
+      1048
+    ]
+  ],
+  "fixed_geometric_gain_missing": true,
+  "GR_closed": false
+}

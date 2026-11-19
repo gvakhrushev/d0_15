@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "conditioned_site_count": 4,
+  "whole_site_flag_success_mass": "4*p^6",
+  "paid_vacuum_and_diagnostic_blank_calls": 59,
+  "identical_addressed_field_calls_per_arm": 6280,
+  "diagnostic_all_columns_per_arm": 4096,
+  "diagnostic_gate_count": 4,
+  "all_four_native_local_material_edges_equal": true,
+  "finite_native_squared_work_contrast_difference": [
+    ".19",
+    ".22"
+  ],
+  "ideal_ellipse_uniform_work_derivative_lower_bound": ".0003",
+  "exact_local_site_mask_lattices": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "ideal_local_site_work_derivative_lower_bound": ".00019",
+  "unconditional_book03_trace_tariff_derived": false,
+  "GR_closed": false
+}

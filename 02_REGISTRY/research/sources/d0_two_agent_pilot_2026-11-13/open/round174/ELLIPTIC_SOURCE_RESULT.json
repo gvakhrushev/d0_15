@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "exact_material_car_wave_lattices": [
+    6,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "material_level": "1/64",
+  "ellipse_coordinate_range": [
+    "1/4",
+    "3/4"
+  ],
+  "whole_late_scalar_constant_on_entire_family": true,
+  "first_digit_cubic_setting_moment": 83482704,
+  "max_relative_higher_term": "1/200",
+  "informational_source_divided_by_actual_conditional_gain_and_step": [
+    "-5",
+    "-.08"
+  ],
+  "physical_native_admission_for_a_smooth_family_proved": false,
+  "GR_closed": false
+}
