@@ -1,0 +1,12 @@
+{
+  "slope_without_work": {
+    "16": -0.064072859,
+    "17": 0.009698063,
+    "18": 0.084864335
+  },
+  "motion_before_first_success": 6.894177604,
+  "motion_after_first_success": 0.367682985,
+  "uniform_positive_threshold_k1": 17,
+  "cold_factor_after_n_calls": "p^(4n)",
+  "shared_memory_and_input_conditions_required": true
+}
