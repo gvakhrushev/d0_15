@@ -1,0 +1,25 @@
+{
+  "source": "2350117b469890c04b8ff5d8987b224a863e844a",
+  "positive_moments": [
+    255,
+    1024,
+    4608,
+    22528,
+    117504,
+    646144,
+    3714048,
+    22171648
+  ],
+  "both_field_axes_and_signed_selector_exact": true,
+  "original24_zero_invariant_null_jet_exact": true,
+  "alternative36_exact_inverse_reference_relative_bracket": "1e-12 at H=1/4,h=1/32768",
+  "complete_CAR_face_exact": true,
+  "raw_normalized_error_over_h_physical_dual_L2_fixture": {
+    "8": 31.8377807901,
+    "16": 52.1563852608,
+    "32": 58.0186599181,
+    "64": 59.6532763291,
+    "128": 60.0753262308
+  },
+  "all_compiled_instrument_and_physical_total_price": false
+}
