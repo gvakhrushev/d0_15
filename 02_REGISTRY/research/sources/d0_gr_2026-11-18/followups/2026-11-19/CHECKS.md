@@ -56,6 +56,9 @@ python3 -B "$d/metric/check_selector24_native.py"
 python3 -B "$d/metric/check_smooth_twofield_reference.py"
 python3 -B "$d/metric/check_composed_geometric_instrument.py"
 python3 -B "$d/metric/check_corrector_full_clock.py"
+python3 -B "$d/metric/check_native_adaptive_clock.py"
+python3 -B "$d/metric/check_bandlimit_joint_hq.py"
+python3 -B "$d/metric/check_dyadic_car_loader.py"
 python3 -B "$d/metric/check_refinement_mass.py"
 python3 -B "$d/metric/check_event_gain_selection.py"
 python3 -B "$d/metric/check_paid_tail_audit.py"
@@ -92,6 +95,9 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Двоичный загрузчик CAR | Полные SITE/CAR-столбцы, точные знаки, целое Gray-слово и интервальная ошибка; длинное слово не исполнялось побуквенно. [Результат](metric/dyadic_car_loader_result.json) |
+| Совместный band-limited Hq | Каждый локальный q_x, полный CAR filler, общий SITE и точный CAR16-свидетель геометрической границы. [Результат](metric/bandlimit_joint_hq_result.json) |
+| Единый clock ветвления | 57 стадий, исходы NC1 и их сохранённая среда, реальный cut и обе степени полного тепла. [Результат](metric/native_adaptive_clock_result.json) |
 | Гладкая двухкомпонентная CAR-опора | Полный CAR16, решётки и все направленные рёбра, material reserve и нормовый свидетель. [Результат](metric/smooth_twofield_reference_result.json) |
 | Составной геометрический прибор | SourceI на всех входах, нескалярный SITE с RIGHT и условный геометрический gain. [Результат](metric/composed_geometric_instrument_result.json) |
 | Полный clock корректора | 448 временных мод, обе степени Hodge, действительный cut и зарегистрированный источник. [Результат](metric/corrector_full_clock_result.json) |

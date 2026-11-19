@@ -1,0 +1,47 @@
+{
+  "schema": "d0.dyadic-smooth-car-loader/1",
+  "status": "PASS",
+  "L": 4,
+  "site_bits_for_one_direction": 2,
+  "CAR_dimension": 16,
+  "source_two_reference_components": true,
+  "geometric_reference_F": "0.101571934799032151225564095912380073354267406746734377253160165942210001610471181678164759918131357092023891910177913608",
+  "known_one_and_clean_CAR_prep": "required and explicitly charged",
+  "controlled_plane_rotation_approximants": [
+    {
+      "gray_block_size": 8,
+      "CF_denominator": 53639733,
+      "G_run_length": 7457170,
+      "wraps": 6325786,
+      "certified_angle_error": {
+        "interval": "[0.000000038579280010880283642175324990629847080395056868388771180265883793457190231482384, 0.000000038579280010880283642175324990629847080395056868388771180265948704564827261356634]",
+        "abs_upper": 3.8579280010880285e-08
+      }
+    }
+  ],
+  "sum_certified_error_upper": 3.8579280010880285e-08,
+  "maximum_Toffoli_in_each_attempt": 43,
+  "maximum_additional_CCZ_in_each_attempt": 3,
+  "maximum_additional_CZ_in_each_attempt": 1,
+  "both_SITE_phase_words_exact": true,
+  "explicit_G_calls_in_gray_rotation_runs": 59657360,
+  "G_calls_outside_heralded_factories_including_prep": 59657367,
+  "CX_calls_outside_heralded_factories_including_prep": 73,
+  "born_CAR_and_two_clean_scratch_outside_factories": 6,
+  "plus_resource_pairs_before_field": 86,
+  "success_probability_for_fresh_capped_factories": "0.973341169815981118276114780214777810060531389216665891319444852404881387659095954897646361951444742606619216393464901366",
+  "success_probability_interval": "[0.973341169815981118276114780214777810060531389216665891319444852404879424375, 0.973341169815981118276114780214777810060531389216665891319444852404883318317]",
+  "success_probability_for_32_independent_fresh_loaders": "0.421194785179276252862123562819094309003873520487946901648401770980856295585756510705446139748723138485301494845713786328",
+  "full_column_check": {
+    "all_16_columns_each_site": true,
+    "site_values_tested": 4,
+    "max_target_vector_error": 1.1102230246251565e-16,
+    "observed_full_column_operator_error": 3.857928000792192e-08
+  },
+  "unselected_site_projectors_exact": true,
+  "all_aborts_retained": true,
+  "full_geo_bank_loaded": false,
+  "paid_clock_compiled": false,
+  "Book_cost_info_identified": false,
+  "GR_closed": false
+}
