@@ -1,0 +1,217 @@
+{
+  "round": "A82",
+  "base_shared": "82e2486f68b08678e07113cc8d492df17e068fdc",
+  "claims_shared": [
+    "1ad49bdc2d9a4fd0d87f48388fa5387fff66518a"
+  ],
+  "primary_pr334": "2fe4d39015a9704bd8034786de5c6befb1a6cf45",
+  "reviewed_pr334": "38d85448fe07e75c959e7808d04e6d68d49cdf0b",
+  "related_open_commits": {
+    "B167": "82e2486f68b08678e07113cc8d492df17e068fdc",
+    "B168": "b8ed95882840b9a44b7f41349f697085b66087ba"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md": "cab908a86d441f0c12fd69e2b3fe30e88ee867cf",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "7a00729985493b7615319c51d6b71e865a93d3a1",
+    "02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md": "50ac57b6c34a2e48f5b27f5e95da9a3d578c193c"
+  },
+  "upstream_checks": [
+    {
+      "id": "pr334_gibbs_root_ledger",
+      "commit": "2fe4d39015a9704bd8034786de5c6befb1a6cf45",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_gibbs_root_ledger.py",
+      "receipt": "gibbs_root_ledger_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_gibbs_root_ledger.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_local_gibbs_records.py",
+        "check_reference_pf_path.py",
+        "check_repeat_clock.py",
+        "check_shared_site_union.py",
+        "check_source_price.py",
+        "gibbs_root_ledger_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_paired_readers",
+      "commit": "2fe4d39015a9704bd8034786de5c6befb1a6cf45",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_paired_readers.py",
+      "receipt": "paired_readers_result.json",
+      "files": [
+        "check_heat_history.py",
+        "check_paired_readers.py",
+        "paired_readers_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_spectral_tree_balance",
+      "commit": "2fe4d39015a9704bd8034786de5c6befb1a6cf45",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_spectral_tree_balance.py",
+      "receipt": "spectral_tree_balance_result.json",
+      "files": [
+        "check_counted_separator.py",
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_paid_tail_audit.py",
+        "check_reference_pf_path.py",
+        "check_repeat_clock.py",
+        "check_source_price.py",
+        "check_spectral_tree_balance.py",
+        "spectral_tree_balance_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_event_gain_selection",
+      "commit": "38d85448fe07e75c959e7808d04e6d68d49cdf0b",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_event_gain_selection.py",
+      "receipt": "event_gain_selection_result.json",
+      "files": [
+        "check_counted_separator.py",
+        "check_event_gain_selection.py",
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_reference_pf_path.py",
+        "check_repeat_clock.py",
+        "check_source_price.py",
+        "event_gain_selection_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_memory_recurrence",
+      "commit": "38d85448fe07e75c959e7808d04e6d68d49cdf0b",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_memory_recurrence.py",
+      "receipt": "memory_recurrence_result.json",
+      "files": [
+        "check_complement_price.py",
+        "check_heat_history.py",
+        "check_memory_recurrence.py",
+        "check_paired_readers.py",
+        "memory_recurrence_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_refinement_mass",
+      "commit": "38d85448fe07e75c959e7808d04e6d68d49cdf0b",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_refinement_mass.py",
+      "receipt": "refinement_mass_result.json",
+      "files": [
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_reference_pf_path.py",
+        "check_refinement_mass.py",
+        "check_source_price.py",
+        "refinement_mass_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_complement_price",
+      "commit": "38d85448fe07e75c959e7808d04e6d68d49cdf0b",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_complement_price.py",
+      "receipt": "complement_price_result.json",
+      "files": [
+        "check_complement_price.py",
+        "check_heat_history.py",
+        "check_paired_readers.py",
+        "complement_price_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "fresh_and_retained_golden_units",
+      "check": "direct/round82/unit/check_golden_unit.py",
+      "evidence": {
+        "direct/round82/READOUT_RU.md": "5ee676a6b861da1ef3b93ac372e3c3d3ba4c8011270e9492f51170bf98f38812",
+        "direct/round82/unit/GOLDEN_UNIT_RU.md": "64cd41d937bf3a28ef2e41028251cb744132b98b4cb38afc17bba561a0131ed0",
+        "direct/round82/unit/check_golden_unit.py": "14be8efbcc928dea921f13b8968124e074c1acd104e22616ef049b07c5b36327"
+      }
+    },
+    {
+      "id": "common_field_price_at_fixed_terminal_data",
+      "check": "direct/round82/native/check_absolute_gauge.py",
+      "evidence": {
+        "direct/round82/READOUT_RU.md": "5ee676a6b861da1ef3b93ac372e3c3d3ba4c8011270e9492f51170bf98f38812",
+        "direct/round82/native/ABSOLUTE_GAUGE_RU.md": "f368de16e8987bfceee36cf2f299898ba361040801ad5c360a7691c2cae51188",
+        "direct/round82/native/check_absolute_gauge.py": "a33bd6b65609a40edb306e6708593780294120c836ffbf4d710a818cddd23497"
+      }
+    },
+    {
+      "id": "one_query_and_four_native_tariff_settings",
+      "check": "direct/round82/device/check_prepaid_report.py",
+      "evidence": {
+        "direct/round79/heat/check_phase_work.py": "d62b2ac2d3d5e0bd4be208243445f6d3594039929f8ec04afe964fbbb8b2857d",
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round82/READOUT_RU.md": "5ee676a6b861da1ef3b93ac372e3c3d3ba4c8011270e9492f51170bf98f38812",
+        "direct/round82/device/PREPAID_REPORT_RU.md": "7f6c1d4386af55e9d2a2a1a3998aee3150da2046686a2329c23530c2531582fc",
+        "direct/round82/device/check_prepaid_report.py": "d7bb38033ccfade7f29b76195928b18ec507c82cc633ab7e3e67f6d1a57bc99f"
+      }
+    },
+    {
+      "id": "same_clock_four_leaves",
+      "check": "direct/round82/assembly/check_reused_bit.py",
+      "stdout_matches": "direct/round82/assembly/reused_bit_result.json",
+      "evidence": {
+        "direct/round82/READOUT_RU.md": "5ee676a6b861da1ef3b93ac372e3c3d3ba4c8011270e9492f51170bf98f38812",
+        "direct/round82/assembly/REUSED_BIT_RU.md": "d3a3d58e7eb85a956ac20489c28ee6b8c3d18f5da3163d0875829ac6f9e78188",
+        "direct/round82/assembly/check_reused_bit.py": "72383bee36dc1cb685e2ef785409a23638503258577bf85919413266426dc6ab",
+        "direct/round82/assembly/reused_bit_result.json": "1db5741cd17c23f3b830f884d5602df536edcef977f6716886461834cf63ad26"
+      }
+    },
+    {
+      "id": "seventeen_read_source",
+      "check": "direct/round82/assembly/check_repeated_source.py",
+      "stdout_matches": "direct/round82/assembly/repeated_source_result.json",
+      "evidence": {
+        "direct/round79/heat/check_phase_work.py": "d62b2ac2d3d5e0bd4be208243445f6d3594039929f8ec04afe964fbbb8b2857d",
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round82/READOUT_RU.md": "5ee676a6b861da1ef3b93ac372e3c3d3ba4c8011270e9492f51170bf98f38812",
+        "direct/round82/assembly/SEVENTEEN_READS_RU.md": "1ac20f8d66c69f8b80653b2d2571cf77d3e7e3673c15bc1a7abd45b5e19c4f97",
+        "direct/round82/assembly/check_repeated_source.py": "c221b9f0bb5e3818431de015755c3b152711deb67c30a6bdf00c16e0902b5196",
+        "direct/round82/assembly/repeated_source_result.json": "30792915646b6279d3846affbe36b0269e0a72bb68c81ba8ed6166179b0e1280",
+        "direct/round82/device/PREPAID_REPORT_RU.md": "7f6c1d4386af55e9d2a2a1a3998aee3150da2046686a2329c23530c2531582fc",
+        "direct/round82/device/check_prepaid_report.py": "d7bb38033ccfade7f29b76195928b18ec507c82cc633ab7e3e67f6d1a57bc99f"
+      }
+    }
+  ]
+}
