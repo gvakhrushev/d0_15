@@ -35,3 +35,5 @@ python3 tools/validate_repo.py — claims=889 assumptions=31 aliases=58 formal_s
 python3 tools/validate_agent_protocol.py — PASS
 python3 tools/validate_work.py — PASS
 python3 tools/gr_assembly.py --json check — valid=true, scientific_promotion=false
+
+Проверка общего списка назначений на снимке 7fe59b50e. Между B190 и B191 есть пустая строка. Обновлённый pilot_status.py --revision 7fe59b50e показывает обе сохранённые заявки в работе, B191 и B192.

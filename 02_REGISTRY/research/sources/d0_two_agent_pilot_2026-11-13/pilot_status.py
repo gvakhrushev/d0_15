@@ -33,7 +33,7 @@ def tasks(readme, files):
         for line in section[1].strip().splitlines():
             if line.startswith("|"):
                 lines.append(line)
-            elif lines:
+            elif line.strip() and lines:
                 break
         if len(lines) < 2 or [c.strip() for c in lines[0].strip("|").split("|")] != [
                 "Раунд", "Вопрос", "Владелец", "Базовый SHA"]:
