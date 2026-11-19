@@ -1,0 +1,64 @@
+{
+  "PR334": "a03c0e1f02b5a2065ebe31b4e82f679e29001763",
+  "banks": {
+    "24": {
+      "nodes": 305,
+      "Toffoli_bound": 1220,
+      "logical_node_CX_bound": 614,
+      "backup_unit_rotations": 2122418487296,
+      "backup_efficiency": 0.982170151703
+    },
+    "36": {
+      "nodes": 576,
+      "Toffoli_bound": 2304,
+      "logical_node_CX_bound": 1156,
+      "backup_unit_rotations": 11169371828332265472,
+      "backup_efficiency": 0.986049140798
+    }
+  },
+  "fast_logical_rotations": 512,
+  "fast_efficiency": 0.948988537397,
+  "born_miss_upper": "1.372e-23",
+  "expected_backup_unit_rotations_upper": ".000154",
+  "all_header_price_test": {
+    "native_angles_by_cut": {
+      "24": {
+        "fast": {
+          "K": 5,
+          "k": 2,
+          "s_min_rounded": 0.2211380362,
+          "s_max_rounded": 0.3578088588
+        },
+        "backup": {
+          "K": 25,
+          "k": 1,
+          "s_min_rounded": 0.2288701812,
+          "s_max_rounded": 0.3703197323
+        }
+      },
+      "36": {
+        "fast": {
+          "K": 5,
+          "k": 2,
+          "s_min_rounded": 0.2205918968,
+          "s_max_rounded": 0.3569251867
+        },
+        "backup": {
+          "K": 37,
+          "k": 4,
+          "s_min_rounded": 0.229206615,
+          "s_max_rounded": 0.3708640936
+        }
+      }
+    },
+    "hypotheses": "fixed positive header masses and fixed finite header costs; each gap >=6; 0<=a<=1 and nu>=1",
+    "minus_logsum_slope_Q_lower": ".17",
+    "minus_both_one_sided_min_slopes_Q_lower": ".79",
+    "born_gain_slope_Q_lower": ".218",
+    "constructed_distinct_slope_minimum_tie_checked": true,
+    "zero_gap_reverses_both_signs_when_a_zero": true
+  },
+  "all_failure_records_keep_a_field_measurement": true,
+  "complete_hardware_run": false,
+  "GR_closed": false
+}

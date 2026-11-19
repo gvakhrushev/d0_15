@@ -1,0 +1,210 @@
+{
+  "round": "A83",
+  "base_shared": "248e28f5d37bdfac44f1cf74988b1ced3182cf0e",
+  "claims_shared": [
+    "dd40bdd2f183b914b407c8ae5cd3b19c2f18054d",
+    "a32f59061cd85bc6dd02869ec3ccaeae07ce766c"
+  ],
+  "primary_pr334": "a03c0e1f02b5a2065ebe31b4e82f679e29001763",
+  "related_open_commits": {
+    "B169": "248e28f5d37bdfac44f1cf74988b1ced3182cf0e",
+    "B170": "33e92d42d8656033bfc2414f4b58c23d6a029897",
+    "B171": "c3e3eb04ea35bb7604443d4ce6120bd3e7752cc1"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md": "cab908a86d441f0c12fd69e2b3fe30e88ee867cf",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "7a00729985493b7615319c51d6b71e865a93d3a1",
+    "02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md": "50ac57b6c34a2e48f5b27f5e95da9a3d578c193c"
+  },
+  "upstream_checks": [
+    {
+      "id": "pr334_selector36_compilation",
+      "commit": "a03c0e1f02b5a2065ebe31b4e82f679e29001763",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_selector36_compilation.py",
+      "receipt": "selector36_compilation_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_selector36_compilation.py",
+        "selector36_compilation_result.json"
+      ]
+    },
+    {
+      "id": "pr334_balanced_factory",
+      "commit": "a03c0e1f02b5a2065ebe31b4e82f679e29001763",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_balanced_factory.py",
+      "receipt": "balanced_factory_result.json",
+      "files": [
+        "balanced_factory_result.json",
+        "check_balanced_controller_source.py",
+        "check_balanced_factory.py",
+        "paid_predictor_result.json"
+      ]
+    },
+    {
+      "id": "pr334_unmatched_weight_bridge",
+      "commit": "a03c0e1f02b5a2065ebe31b4e82f679e29001763",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_unmatched_weight_bridge.py",
+      "receipt": "unmatched_weight_bridge_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_shared_site_union.py",
+        "check_source_price.py",
+        "check_unmatched_weight_bridge.py",
+        "unmatched_weight_bridge_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_program_memory_nohiding",
+      "commit": "a03c0e1f02b5a2065ebe31b4e82f679e29001763",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_program_memory_nohiding.py",
+      "receipt": "program_memory_nohiding_result.json",
+      "files": [
+        "check_complement_price.py",
+        "check_heat_history.py",
+        "check_memory_recurrence.py",
+        "check_paired_readers.py",
+        "check_program_memory_nohiding.py",
+        "program_memory_nohiding_result.json"
+      ]
+    },
+    {
+      "id": "pr334_event_gain_selection",
+      "commit": "a03c0e1f02b5a2065ebe31b4e82f679e29001763",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_event_gain_selection.py",
+      "receipt": "event_gain_selection_result.json",
+      "files": [
+        "check_counted_separator.py",
+        "check_event_gain_selection.py",
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_reference_pf_path.py",
+        "check_repeat_clock.py",
+        "check_source_price.py",
+        "event_gain_selection_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_eight_geometric_audit",
+      "commit": "a03c0e1f02b5a2065ebe31b4e82f679e29001763",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_eight_geometric_audit.py",
+      "receipt": "eight_geometric_audit_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_eight_geometric_audit.py",
+        "check_eight_readers.py",
+        "check_shared_site_union.py",
+        "eight_geometric_audit_result.json"
+      ]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "two_future_banks_and_first_disclosure",
+      "check": "direct/round83/future/check_future.py",
+      "evidence": {
+        "direct/round83/READOUT_RU.md": "7cbb7fad26783d62358b6cb5fb5e01a7e749c45b92b93850500781b9fcb164fd",
+        "direct/round83/future/FUTURE_RECORD_RU.md": "1c29f098d944757b8067aad75e6e5f3c52f2592930fa45b73ea451ad5dd09e97",
+        "direct/round83/future/check_future.py": "4a0ce5ac9430ea1bd3c335707c09ae8bbc80e0ced849031eedab322b124f7e09"
+      }
+    },
+    {
+      "id": "one_retained_golden_head",
+      "check": "direct/round83/device/check_reused_golden_head.py",
+      "evidence": {
+        "direct/round79/heat/check_phase_work.py": "d62b2ac2d3d5e0bd4be208243445f6d3594039929f8ec04afe964fbbb8b2857d",
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round82/device/check_prepaid_report.py": "d7bb38033ccfade7f29b76195928b18ec507c82cc633ab7e3e67f6d1a57bc99f",
+        "direct/round83/READOUT_RU.md": "7cbb7fad26783d62358b6cb5fb5e01a7e749c45b92b93850500781b9fcb164fd",
+        "direct/round83/device/ONE_HEAD_SOURCE_RU.md": "cb44855bbcc56712d1db2573d51bb895c094358a4c70cf237e2d533a1181b0ea",
+        "direct/round83/device/check_reused_golden_head.py": "0dffcc32e68ea35ff03da37126a5612a090127b00d5394bfc7cf1d747925bd46"
+      }
+    },
+    {
+      "id": "heralded_spin_free_inversion",
+      "check": "direct/round83/device/check_heralded_spin_free.py",
+      "evidence": {
+        "direct/round79/heat/check_phase_work.py": "d62b2ac2d3d5e0bd4be208243445f6d3594039929f8ec04afe964fbbb8b2857d",
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round82/device/check_prepaid_report.py": "d7bb38033ccfade7f29b76195928b18ec507c82cc633ab7e3e67f6d1a57bc99f",
+        "direct/round83/READOUT_RU.md": "7cbb7fad26783d62358b6cb5fb5e01a7e749c45b92b93850500781b9fcb164fd",
+        "direct/round83/device/ONE_HEAD_SOURCE_RU.md": "cb44855bbcc56712d1db2573d51bb895c094358a4c70cf237e2d533a1181b0ea",
+        "direct/round83/device/check_heralded_spin_free.py": "b6743cb5bdfc974903a28f365a72be8a4c458cd20087ef3da2bd26622aeafe97"
+      }
+    },
+    {
+      "id": "absolute_terminal_spectral_guard",
+      "check": "direct/round83/spectral/check_spectral_guard.py",
+      "evidence": {
+        "direct/round79/heat/check_phase_work.py": "d62b2ac2d3d5e0bd4be208243445f6d3594039929f8ec04afe964fbbb8b2857d",
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round82/device/check_prepaid_report.py": "d7bb38033ccfade7f29b76195928b18ec507c82cc633ab7e3e67f6d1a57bc99f",
+        "direct/round83/READOUT_RU.md": "7cbb7fad26783d62358b6cb5fb5e01a7e749c45b92b93850500781b9fcb164fd",
+        "direct/round83/spectral/SPECTRAL_GUARD_RU.md": "5e1d93852e52901157d44992c0067077f64ebcb257acc44d9cc5e8f8c73f4c82",
+        "direct/round83/spectral/check_spectral_guard.py": "94f42b43fc7a3fd486df1f9d8bfd5b3de7b29e0e1da1bd12adfa91f810953be6"
+      }
+    },
+    {
+      "id": "absolute_information_on_stopped_histories",
+      "check": "direct/round83/assembly/check_absolute_information.py",
+      "stdout_matches": "direct/round83/assembly/absolute_information_result.json",
+      "evidence": {
+        "direct/round83/READOUT_RU.md": "7cbb7fad26783d62358b6cb5fb5e01a7e749c45b92b93850500781b9fcb164fd",
+        "direct/round83/assembly/ABSOLUTE_INFORMATION_RU.md": "c11e057188ed5bd17503f4bb48747cce83e0b47ad0ef3f34a406655386747969",
+        "direct/round83/assembly/absolute_information_result.json": "7c48dd62f5a8f0af10414b68bc07b6caa4a3bde41d4adddf5bf36b054d5d2dbd",
+        "direct/round83/assembly/check_absolute_information.py": "f8bc2ba3e3d05d698ea731c3f48f4fc7835801a3ba2ccec0fc160ed965554139"
+      }
+    },
+    {
+      "id": "coherent_physical_controller",
+      "check": "direct/round83/assembly/check_coherent_price.py",
+      "stdout_matches": "direct/round83/assembly/coherent_price_result.json",
+      "evidence": {
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round83/READOUT_RU.md": "7cbb7fad26783d62358b6cb5fb5e01a7e749c45b92b93850500781b9fcb164fd",
+        "direct/round83/assembly/COHERENT_PRICE_RU.md": "51d42659c967ae041a1ed5d7b3f110c9acf1d0e866e9640d18d266f9b4b3e10b",
+        "direct/round83/assembly/check_coherent_price.py": "e57f5aa2a0a2810f49b1d2d9411fdffac71a26c61c8246ef485bd16ea988ca67",
+        "direct/round83/assembly/coherent_price_result.json": "082958995fe998d976219199f591de8edfae88ff5e8eafe5ccafd1b2499730bf"
+      }
+    },
+    {
+      "id": "finite_factory_and_backup_field",
+      "check": "direct/round83/assembly/check_factory_backup.py",
+      "stdout_matches": "direct/round83/assembly/factory_backup_result.json",
+      "evidence": {
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round83/READOUT_RU.md": "7cbb7fad26783d62358b6cb5fb5e01a7e749c45b92b93850500781b9fcb164fd",
+        "direct/round83/assembly/COHERENT_PRICE_RU.md": "51d42659c967ae041a1ed5d7b3f110c9acf1d0e866e9640d18d266f9b4b3e10b",
+        "direct/round83/assembly/FACTORY_FIELD_RU.md": "b0044447aa8605a80f3967edc17beeeaa0289e47eefcfa0777c976c0206b27f2",
+        "direct/round83/assembly/check_coherent_price.py": "e57f5aa2a0a2810f49b1d2d9411fdffac71a26c61c8246ef485bd16ea988ca67",
+        "direct/round83/assembly/check_factory_backup.py": "2043929f8c2f9be6da2f46b46203cc39ae2f2989bf7236218d94f90b7de12bac",
+        "direct/round83/assembly/factory_backup_result.json": "e4a4afe0c0fd9f91696c154148d4e52eb1e7ab7de873f66d911bd43b2c96172c"
+      }
+    }
+  ]
+}

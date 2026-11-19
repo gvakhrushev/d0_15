@@ -1,0 +1,44 @@
+{
+  "smaller_native_word_gates": 44,
+  "exact_columns_checked": 64,
+  "selector": {
+    "24": {
+      "active_cylinders": 63253,
+      "K": 25,
+      "k": 1,
+      "read_efficiency": 0.982170151703,
+      "s_min": 0.228870181241,
+      "s_max": 0.370319732259,
+      "target_unit_rotations": 2122418487296
+    },
+    "36": {
+      "active_cylinders": 20316969,
+      "K": 37,
+      "k": 4,
+      "read_efficiency": 0.986049140798,
+      "s_min": 0.229206615026,
+      "s_max": 0.370864093559,
+      "target_unit_rotations": 11169371828332265472
+    }
+  },
+  "header_words_via_exact_multiplicities": "340282366920938463463374607431768211456",
+  "compact_geometric_selector": {
+    "registered_preparation_bits": 128,
+    "dyadic_blocks": 74,
+    "combined_first_pointer": {
+      "nonzero_parity_blocks": 182784,
+      "negative_blocks": 91399,
+      "logical_G": 2429130,
+      "parity_CX": 186384
+    },
+    "logical_unit_rotations": 9699336,
+    "probability_success": 0.90779143023,
+    "economic_success_lower_bound": 0.99988493595,
+    "observable_min": 0.244328836175,
+    "observable_max": 0.395332361363
+  },
+  "absolute_logsum_slope_magnitude_lower_bound": 0.18,
+  "bell_slope_lower_bound": 0.23,
+  "full_large_words_executed": false,
+  "GR_closed": false
+}
