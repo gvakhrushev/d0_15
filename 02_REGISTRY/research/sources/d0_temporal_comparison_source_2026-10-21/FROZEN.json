@@ -1,0 +1,14 @@
+{
+  "status": "frozen_for_independent_review",
+  "files": {
+    "PROOF.md": "6cc3b9eacbf03c5f29a7729690017ad6799d00c6354bce9c8c425f9bdfa371e7",
+    "check_temporal_comparison_source.py": "6236d691a9e23d4f9640a2024af2a2dbeb55004965a11c898259fac14cbf4960",
+    "SOURCE_PINS.json": "15c3c07ce23b13235e4a4588ea4f83478d8e850690a18fefcec2f21cba5bac03",
+    "RESULT.json": "c3afdc9b11622d669738b62813a39399aff2bd6d01f37824d4e09fcf04615645",
+    "RESULT_OPTIMIZED.json": "c3afdc9b11622d669738b62813a39399aff2bd6d01f37824d4e09fcf04615645",
+    "README.md": "d741d11a91630e5d0fa3e64f7ae6fb6dfdefd55dd90b5ee22d43c418237b6c81",
+    "VALIDATION.json": "615a4947d8fcc9a112fb734be25a7afb2af693fff74b1b0ba895c7a564442b14",
+    "inputs/A4D_Q8_TEMPORAL_PHASE_COMPLETE_RETURN_INFO_SOURCE_2026_10_21_5ed5a200.md": "75f6265a02e1f2c18881d240132341c8e38d62416652b557f28816558ac4efc2",
+    "inputs/CAR16_APPLICATION_5ed5a200.md": "eb8df243a9a7c4833e75fe92b539f24fe88ac9dfbdc322da8c6b48e3a73e50bd"
+  }
+}

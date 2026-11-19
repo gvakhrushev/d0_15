@@ -1,0 +1,93 @@
+{
+  "schema": "d0-primary-paid-feedback-source-pins/1",
+  "integration_base": "d333307d031123aedf7a49b35a12ce5f7c17fc04",
+  "primary_full128_application_commit": "9ad345ca9c160e1e07af2c0e9c7a947e725e38be",
+  "owned_inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/primary_full128_helper.py",
+      "sha256": "c8f24203ab93c853641a83270170650cb02b41c48a66e942c322ce33a09257ea",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/PRIMARY_FULL128_INFORMATION.json",
+      "sha256": "e460680c08c1addfa7e6c9b519dde396bd73ff51441095904b250acf0176e305",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md",
+      "sha256": "9a441405c455adda9651f88c21fcda4d9383673a3718e88a93aeb50467133e71",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py",
+      "sha256": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/prepared_price_feedback.md",
+      "sha256": "73bf64d8c05b2624e092d851cab5f11019fd886c74d6b332ed97f4d4f4d4d434",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md",
+      "sha256": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_paid_feedback_source_2026-10-20/inputs/CAUSAL_BOOK_SOURCE_AT_D333307D.md",
+      "sha256": "3389dcd4c171e5752098bf28c1d1962adff6bb21244a6b0e6b6fbcb2d0264a5b",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04",
+      "source_path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+      "source_ref": "d333307d031123aedf7a49b35a12ce5f7c17fc04"
+    }
+  ],
+  "frozen_artifacts": [
+    {
+      "path": "02_REGISTRY/research/A4D_PRIMARY_PREPARED_CUT_PAID_FEEDBACK_SOURCE_2026_10_20.md",
+      "sha256": "f82d3c4eac11cb58ec8b439afded80eda27f91efa64b5e042d90c7ec13353c3d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_paid_feedback_source_2026-10-20/RESULT.md",
+      "sha256": "5e324ce927231a5d037bc03bb0d0874073e885ea8007d5b2f935d12944a99c8a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_paid_feedback_source_2026-10-20/check_primary_paid_feedback.py",
+      "sha256": "fe29fc28cfd2cf845c4072d07f9000364ebf4aeaa311971d1174a1caa1f755be"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_paid_feedback_source_2026-10-20/PRIMARY_PAID_FEEDBACK.json",
+      "sha256": "2d212d96c5aaf885e0128ae8ed5926df5d916efc2e9e036cb1ad9ad4fd663bb4"
+    }
+  ],
+  "scope": "Exact supplied echo/cut source bound and scoped floating actual-primary application; physical admission and full Book price remain open.",
+  "integration_note": "The mutable parent synthesis is preserved byte-for-byte at its reviewed ref; concurrent appendices are not overwritten or treated as changed mathematical inputs."
+}

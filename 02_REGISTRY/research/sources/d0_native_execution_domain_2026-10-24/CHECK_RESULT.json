@@ -1,0 +1,182 @@
+{
+  "checks": [
+    "valid unknown input and immutable oldRIGHT",
+    "unknown/protected input rank is not blank rank",
+    "input isometry retains every unknown basis column",
+    "oldRIGHT cannot be targeted",
+    "oldRIGHT cannot be used as a coherent control",
+    "oldRIGHT cannot be re-declared blank",
+    "uncharged inverse primitive rejected",
+    "reset primitive rejected",
+    "repeated CX wire rejected",
+    "source profile cannot be inferred from a matrix",
+    "boolean wire count is not an integer bound",
+    "explicit stage cap",
+    "G/CX has no invented exact inverse",
+    "16D exact inverse on arbitrary dirty ports/spin",
+    "original quaternion spin complex structure retained",
+    "every inverse routing/source call is counted",
+    "expanded inverse obeys its own stage cap",
+    "source spin is not free individually",
+    "source frame cannot be silently permuted",
+    "native two-G port compression equals p cubed on all four spin columns",
+    "canonical strict JSON roundtrip",
+    "JSON oldRIGHT operation rejected",
+    "duplicate JSON keys rejected",
+    "JSON arbitrary matrix rejected",
+    "8D full parity column as an exact polynomial",
+    "normalized successful plus does not depend on the angle",
+    "native parity success is 2 p cubed",
+    "exact logarithmic readiness derivative is minus one half",
+    "angle convention gives the same positive readiness source",
+    "193 complete-price divided gain leaves the exact readiness secant",
+    "193 two-endpoint source limit is minus gamma0 q over two",
+    "194 same field calibration retains the full readiness source",
+    "194 source limit is nonzero and scales as inverse tau",
+    "native W all columns L=3 k=-3",
+    "native W all columns L=3 k=-1",
+    "native W all columns L=3 k=1",
+    "native W all columns L=3 k=3",
+    "matched code cells count their actual cancelling CX stages",
+    "16D readiness word retains dirty c0 complement k=1",
+    "16D readiness word retains dirty c0 complement k=3",
+    "quadratic embedding selects positive original p",
+    "finite exact search finds both signed native returns",
+    "nonzero exact near-identity native return Q=33",
+    "actual endpoint states remain on the positive branch Q=33",
+    "both actual algebraic feature endpoints straddle u0 Q=33",
+    "both actual readiness endpoints straddle original price Q=33",
+    "native endpoint readiness secant is exactly quadratic Q=33",
+    "complete gain-normalized secant has certified negative source Q=33",
+    "actual common forward inventory Q=33",
+    "actual common fully expanded reverse inventory Q=33",
+    "complete feedback prices change strictly on both sides Q=33",
+    "nonzero exact near-identity native return Q=580",
+    "actual endpoint states remain on the positive branch Q=580",
+    "both actual algebraic feature endpoints straddle u0 Q=580",
+    "both actual readiness endpoints straddle original price Q=580",
+    "native endpoint readiness secant is exactly quadratic Q=580",
+    "complete gain-normalized secant has certified negative source Q=580",
+    "actual common forward inventory Q=580",
+    "actual common fully expanded reverse inventory Q=580",
+    "complete feedback prices change strictly on both sides Q=580",
+    "literal clock retains paired heat and one feedback copy",
+    "endpoint feedback is the actual complete G return",
+    "full one-stage Hodge pair retains both complete G eigenmodes",
+    "exact Book value uses unnormalized full heat trace",
+    "two actual stages, no added idle",
+    "transported cut puts feedback at the sole wrap",
+    "nonunitary full stage cannot be passed as a prepared compression",
+    "price fixture cap is explicit"
+  ],
+  "checks_passed": 68,
+  "full_price_fixtures": {
+    "first_fixture": {
+      "cut_rank": 1,
+      "full_hodge_dimension": 4,
+      "heat_trace": "4*exp(-(1-sqrt(p)))",
+      "stages": 1
+    },
+    "second_fixture": {
+      "full_hodge_dimension": 8,
+      "stages": 2
+    }
+  },
+  "inverse": {
+    "dirty_inverse_dimension": 16,
+    "expanded_inverse_inventory": {
+      "CX": 14,
+      "G": 3,
+      "SourceI": 15
+    },
+    "expanded_inverse_stages": 32,
+    "forward_stages": 6
+  },
+  "readiness": {
+    "configured_price_fixture": {
+      "d_K": "2*p^2",
+      "gamma_rest": "1/8",
+      "q": "1/4",
+      "zeta": "2^-20"
+    },
+    "endpoint_certificates": [
+      {
+        "Q": 33,
+        "codes": {
+          "center": 1,
+          "minus": -65,
+          "plus": 67
+        },
+        "common_L": 67,
+        "expanded_inverse": {
+          "CX": 1075,
+          "G": 134,
+          "SourceI": 536,
+          "stages": 1745
+        },
+        "forward": {
+          "CX": 271,
+          "G": 134,
+          "stages": 405
+        },
+        "normalized_readiness_source": "-Omega*q*(u_plus+u_minus)/(4*p^3*a0*tau)",
+        "relative_factor_bounds_exact": [
+          "0.99960002",
+          "1"
+        ],
+        "return_sine_sign": -1,
+        "u_minus_exact_digest": "a768b8b67d0fa799a059052aab94d204381441285ddd638ec01e4ceda501d02e",
+        "u_plus_exact_digest": "01b0f55b0f4545b48e110a4faa6fbdb9fa248d6bbfe640d77de63ff2b05136f4"
+      },
+      {
+        "Q": 580,
+        "codes": {
+          "center": 1,
+          "minus": -1159,
+          "plus": 1161
+        },
+        "common_L": 1161,
+        "expanded_inverse": {
+          "CX": 18579,
+          "G": 2322,
+          "SourceI": 9288,
+          "stages": 30189
+        },
+        "forward": {
+          "CX": 4647,
+          "G": 2322,
+          "stages": 6969
+        },
+        "normalized_readiness_source": "-Omega*q*(u_plus+u_minus)/(4*p^3*a0*tau)",
+        "relative_factor_bounds_exact": [
+          "0.99960002",
+          "1"
+        ],
+        "return_sine_sign": 1,
+        "u_minus_exact_digest": "7421422b99a5467d7b0f3aa5d2b75bca03c0600cfe6771baddd6243ebfbe10d2",
+        "u_plus_exact_digest": "4794fc2f968faf6828f6588965f91313bda30051c33facb46bb37de7fe0216cc"
+      }
+    ],
+    "exact_search_limit": 1000,
+    "near_identity_condition_exact": "cos(2*Q*theta0)>9999/10000",
+    "search_embedding": "a+b*p; p>0; p^2+p=1",
+    "universality_scope": "readiness/secant identities are symbolic; fixtures alone do not prove universality"
+  },
+  "resource": {
+    "control_word_dimension": 16,
+    "log_readiness_derivative_u": "-1/2",
+    "normalized_plus_is_angle_independent": true,
+    "success_at_original_code": "2*p^3",
+    "symbolic_column_dimension": 8
+  },
+  "schema": "d0.native-execution-check/1",
+  "scope": {
+    "actual_native_readiness_edit_checked": true,
+    "finite_candidate_domain_checked": true,
+    "full_GR_closed": false,
+    "full_dirty_inverse_checked": true,
+    "original_M1_admission_derived": false,
+    "physical_stationarity_selected": false
+  },
+  "status": "PASS"
+}

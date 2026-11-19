@@ -1,0 +1,46 @@
+{
+  "read_head": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_CONDITIONAL_NON_NULL_BIANCHI_COMPLETE_PRICE_2026_10_21.md",
+      "git_blob": "98ca6dc3566831cd6ae2bbf5d4115e28c315f519",
+      "sha256": "cc856a24ded799d1c17e1ec645991f8206f187b49c61ab1debbc5e4c321a87f5"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_NATIVE_RADIAL_MINIMIZATION_ALL_ORDERS_2026_10_21.md",
+      "git_blob": "42be6be08c934377d19ce0ece156d2056e4abcdd",
+      "sha256": "6507bbbc15bce28a2352564c3e0d8102bbd4435d13fcd39827d1cab61a130621"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md",
+      "git_blob": "25b2253436419ec0f0f63c36d40d5d728103a40c",
+      "sha256": "5ad9461c6f1b8d964f0764697a38120d19d320714bc66d99a42898171e3a01a0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ALL_CAP_NULL_MATTER_CAUSAL_CONE_2026_10_21.md",
+      "git_blob": "6ff2139cfaa674fc25773369f95d842482fd9f07",
+      "sha256": "d089347aab15853075561eb292c03499dac5197a73f84745010b70131f53ab29"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "git_blob": "4d637bae96f94ab0b18c9509bcf64e8609d47375",
+      "sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd",
+      "snapshot_path": "inputs/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21_dfc0275e.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "git_blob": "deff5f8879cec7d8c3989f941553b4a873c3c39c",
+      "sha256": "62aa5b45923e6e9d51e2075507cd114d42c5f7d1f5107a99e1b08be053e3c034"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "git_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736",
+      "sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    }
+  ]
+}

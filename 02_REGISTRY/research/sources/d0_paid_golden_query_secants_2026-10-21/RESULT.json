@@ -1,0 +1,130 @@
+{
+  "status": "PASS_PAID_GOLDEN_WORD_QUERY_SECANTS",
+  "input_ref": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "exact": {
+    "full_control_complements": "EXACT_Q(a)",
+    "cell_inventory": {
+      "G": 1,
+      "CNOT_known_one_target": 2
+    },
+    "native_angle_not_root_of_unity": true,
+    "full8D_endpoint_jets": "EXACT_ORIGINAL_QUERY",
+    "fixed_word_derivative_claimed": false
+  },
+  "native": {
+    "precision_decimal_digits": 85,
+    "original_caps": {
+      "K_pre": 9,
+      "L_gate": 20,
+      "N": 1
+    },
+    "q0": "0.0000018512395784882030762843950549834",
+    "expected_f_source": "-0.00000023854299355446938880440572389058",
+    "expected_q_source_sigma_minus": "0.0000055858197648835163727834285435703",
+    "expected_finite_z_ratio": "-23.416406751884074972895582064895",
+    "word_checks": [
+      {
+        "return_denominator": 33,
+        "nearest_pi_numerator": 7,
+        "native_angle_step": "-0.0104946057510985016126842",
+        "cells_per_rotation": 67,
+        "two_query_G_count": 536,
+        "two_query_CNOT_count": 1076,
+        "two_query_unit_ticks": 1612,
+        "full_operator_jet_error": "0.00008819060493517722509424",
+        "source_f": "-0.0000002384906540294610633719593169",
+        "source_q_sigma_minus": "0.0000055843738678532002143695459",
+        "relative_source_error_f": "0.00021941338216825102274",
+        "relative_source_error_q": "0.00025885135775524084762",
+        "matter_geometry_source_ratio": "-23.41548305353448015721541493",
+        "primary_tangent_source_defect": "-2.20293423520801362186501e-10",
+        "naive_unpadded_single_rotation_cost_gap": -128
+      },
+      {
+        "return_denominator": 580,
+        "nearest_pi_numerator": 123,
+        "native_angle_step": "0.00594890822855925883540705",
+        "cells_per_rotation": 1161,
+        "two_query_G_count": 9288,
+        "two_query_CNOT_count": 18580,
+        "two_query_unit_ticks": 27868,
+        "full_operator_jet_error": "0.00002833812400063726151205",
+        "source_f": "-0.0000002385261752384878306555283504",
+        "source_q_sigma_minus": "0.000005585355145552486348545133155",
+        "relative_source_error_f": "0.000070504338572064664927",
+        "relative_source_error_q": "0.000083178360668017929764",
+        "matter_geometry_source_ratio": "-23.41610995090173681761864277",
+        "primary_tangent_source_defect": "-7.07948031241461571786515e-11",
+        "naive_unpadded_single_rotation_cost_gap": -2316
+      },
+      {
+        "return_denominator": 1193,
+        "nearest_pi_numerator": 253,
+        "native_angle_step": "0.00140321070602001605812986",
+        "cells_per_rotation": 2387,
+        "two_query_G_count": 19096,
+        "two_query_CNOT_count": 38196,
+        "two_query_unit_ticks": 57292,
+        "full_operator_jet_error": "0.000001576686102949094269499",
+        "source_f": "-0.0000002385420578075201895771627743",
+        "source_q_sigma_minus": "0.000005585793913940106197916532065",
+        "relative_source_error_f": "3.9227601500924272385e-6",
+        "relative_source_error_q": "4.6279587416501521003e-6",
+        "matter_geometry_source_ratio": "-23.41639023860223655750411404",
+        "primary_tangent_source_defect": "-3.9391122308911575819401e-12",
+        "naive_unpadded_single_rotation_cost_gap": -4768
+      },
+      {
+        "return_denominator": 4192,
+        "nearest_pi_numerator": 889,
+        "native_angle_step": "-0.000336065404479194602887593",
+        "cells_per_rotation": 8385,
+        "two_query_G_count": 67080,
+        "two_query_CNOT_count": 134164,
+        "two_query_unit_ticks": 201244,
+        "full_operator_jet_error": "9.043722677220577779449e-8",
+        "source_f": "-0.0000002385429398808954105880476371",
+        "source_q_sigma_minus": "0.000005585818282096856784628781413",
+        "relative_source_error_f": "2.2500587075914441322e-7",
+        "relative_source_error_q": "2.6545551449941490698e-7",
+        "matter_geometry_source_ratio": "-23.41640580469855105961660533",
+        "primary_tangent_source_defect": "-2.25944419486899729227367e-13",
+        "naive_unpadded_single_rotation_cost_gap": -16764
+      },
+      {
+        "return_denominator": 17961,
+        "nearest_pi_numerator": 3809,
+        "native_angle_step": "0.000058949088103237646579491",
+        "cells_per_rotation": 35923,
+        "two_query_G_count": 287384,
+        "two_query_CNOT_count": 574772,
+        "two_query_unit_ticks": 862156,
+        "full_operator_jet_error": "2.782619433785588230637e-9",
+        "source_f": "-0.0000002385429919030130432775239997",
+        "source_q_sigma_minus": "0.00000558581971926036673290337835",
+        "relative_source_error_f": "6.9230972619188869518e-9",
+        "relative_source_error_q": "8.1676730650530487316e-9",
+        "matter_geometry_source_ratio": "-23.41640672274058153139001124",
+        "primary_tangent_source_defect": "-6.95197612004257711233272e-15",
+        "naive_unpadded_single_rotation_cost_gap": -71840
+      }
+    ]
+  },
+  "scope": {
+    "exact_finite_G_CNOT_words": true,
+    "full8D_complement_retained": true,
+    "same_primitive_inventory_within_each_comparison": true,
+    "same_fixed_input_cut_and_oldRIGHT": true,
+    "analogue_moving_rotation_primitive": false,
+    "finite_difference_to_original_CQ_source_proved": true,
+    "exact_differentiable_finite_word_family": false,
+    "source_comparison_of_same_declared_CQ_cut": true,
+    "addressability_and_known_one_admission_inherited": true,
+    "remaining_compiler_ledger_consumed_not_recomputed": true,
+    "uniform_physical_runtime_bound_proved": false,
+    "actual_autonomous_geometry_to_program_map_proved": false,
+    "Book03_absolute_Info_selected": false,
+    "all42_finite_native_stationary_solutions_proved": false,
+    "GR_closed": false
+  }
+}

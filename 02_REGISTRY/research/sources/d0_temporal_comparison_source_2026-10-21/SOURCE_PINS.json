@@ -1,0 +1,44 @@
+{
+  "schema": "d0-temporal-comparison-source-inputs-v1",
+  "concurrent_commit": "5ed5a20075aa03587febace3372fa69371534cd1",
+  "original_carrier_input_commit": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "inputs": [
+    {
+      "name": "concurrent_phase_info_owner",
+      "path": "02_REGISTRY/research/A4D_Q8_TEMPORAL_PHASE_COMPLETE_RETURN_INFO_SOURCE_2026_10_21.md",
+      "read_commit": "5ed5a20075aa03587febace3372fa69371534cd1",
+      "git_blob": "68e43f0020af71e499e7440c7e2a47de5b9f2291",
+      "sha256": "75f6265a02e1f2c18881d240132341c8e38d62416652b557f28816558ac4efc2",
+      "snapshot_path": "inputs/A4D_Q8_TEMPORAL_PHASE_COMPLETE_RETURN_INFO_SOURCE_2026_10_21_5ed5a200.md"
+    },
+    {
+      "name": "concurrent_original_car16_application",
+      "path": "02_REGISTRY/research/sources/d0_native_return_info_phase_2026-10-21/CAR16_APPLICATION.md",
+      "read_commit": "5ed5a20075aa03587febace3372fa69371534cd1",
+      "git_blob": "7916faa01a6a7db86f3c50017b4690650560a4a4",
+      "sha256": "eb8df243a9a7c4833e75fe92b539f24fe88ac9dfbdc322da8c6b48e3a73e50bd",
+      "snapshot_path": "inputs/CAR16_APPLICATION_5ed5a200.md"
+    },
+    {
+      "name": "existing_entropy_proof",
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/PROOF.md",
+      "git_blob": "de452b19812fd0e9fda361d1b5455b4fc4079fb6",
+      "sha256": "ceb2ce2d05642977014ece32d8fa293302a3b23200b6cf60cf28ec916c0d5ec7",
+      "provenance": "frozen same-session packet; analytical input snapshot dfc0275eea67ebc21ffe539de9b6ea96713863a5"
+    },
+    {
+      "name": "existing_outward_interval_engine",
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/check_complete_return_entropy.py",
+      "git_blob": "30601f98d39e9243aaba3bcd97d625028d55a50a",
+      "sha256": "f856f291a51c6e26114ee4c0044fc1d773a47f999b38a42ec23c8e88ac976e3b",
+      "provenance": "frozen same-session packet; analytical input snapshot dfc0275eea67ebc21ffe539de9b6ea96713863a5"
+    },
+    {
+      "name": "existing_certified_entropy_result",
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/RESULT.json",
+      "git_blob": "47a7251ae1a49706bbe924309e27ce9c905c3918",
+      "sha256": "fd7d15bc9fb169910db01eaf0dbf6911a906d0dfac6facb554968a7763d887ff",
+      "provenance": "frozen same-session packet; analytical input snapshot dfc0275eea67ebc21ffe539de9b6ea96713863a5"
+    }
+  ]
+}

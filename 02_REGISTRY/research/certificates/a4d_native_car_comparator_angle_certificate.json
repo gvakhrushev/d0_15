@@ -1,0 +1,89 @@
+{
+  "car_PQP_relation": "PQP=pP",
+  "car_pair_invariant_spectrum": {
+    "p": 16
+  },
+  "checker_sha256": "09ee0e86f143ac2db4121725c1cf29f17c1698bf663b3285ef3d8cf0afdad99b",
+  "exact_check_count": 23,
+  "exact_checks": [
+    "source_sha256:03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean",
+    "source_sha256:02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md",
+    "source_sha256:02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+    "source_sha256:02_REGISTRY/research/sources/d0_direct_forcing_attack_2026-10-14/RESULT.md",
+    "source_sha256:02_REGISTRY/research/sources/d0_direct_forcing_attack_2026-10-14/verify.py",
+    "CAR_fullstep_uses_owned_golden_relations",
+    "CAR_record_basis_is_signed_orthogonal",
+    "CAR_cut_is_projection",
+    "CAR_transported_cut_is_projection",
+    "CAR_two_projector_angle_operator_is_p_identity",
+    "CAR_compressed_pair_relation_PQP_equals_pP",
+    "CAR_same_outcome_repeats_with_probability_p_on_both_cuts",
+    "v10_projectors_are_exactly_the_pinned_pair",
+    "v10_pair_invariant_exact_diagonal",
+    "v10_compressed_pair_exact_diagonal",
+    "sharp_to_sharp_UCP_pair_map_is_impossible",
+    "v10_direct_effect_exact_spectrum",
+    "v10_direct_kraus_is_normal",
+    "v10_direct_effect_has_no_eigenvalue_p",
+    "v10_pair_invariant_has_three_distinct_eigenvalues",
+    "v10_pair_is_not_a_projection",
+    "no_v10_angle_is_a_golden_root",
+    "CAR_and_v10_pair_characteristic_polynomials_differ"
+  ],
+  "history_intertwiner_preserving_repeated_direct_words": "IMPOSSIBLE",
+  "minimal_polynomial_residuals": [
+    "229/9409",
+    "35461/136161",
+    "-11/81"
+  ],
+  "proof": "02_REGISTRY/research/A4D_NATIVE_CAR_COMPARATOR_ANGLE_BOUNDARY.md",
+  "proof_sha256": "065a8ffb69c3ae1510401d6e5c1d6a56be1d5f0a63de425805ea9ad07d401ca8",
+  "rational_candidates_if_direct_effect_eigenvalue_equals_p": [
+    "61/97",
+    "269/369",
+    "5/9"
+  ],
+  "schema": "d0-native-car-comparator-angle-boundary/1",
+  "scope": {
+    "Einstein_or_GR_closure": false,
+    "all_native_preparations_excluded": false,
+    "direct_common_isometric_pair_intertwiner_exists": false,
+    "history_auxiliary_compression_excluded": false,
+    "new_physical_action_or_selector": false,
+    "nonisometric_instrument_map_excluded": false,
+    "physical_Cost_minus_Info_binding_proved": false,
+    "source_or_Ward_identity_proved": false
+  },
+  "sharp_to_sharp_unital_CP_pair_map": "IMPOSSIBLE_BY_MULTIPLICATIVE_DOMAIN",
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_FOCK_RECORD_BINDING.md": "d85e57979a61972e641eae24442a776133c429c8696d0948590f6d290a60b045",
+    "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
+    "02_REGISTRY/research/sources/d0_direct_forcing_attack_2026-10-14/RESULT.md": "92fecc34d44a6bb22a63d09073d861ef0f5accdb866b33d658c80eaa0944832b",
+    "02_REGISTRY/research/sources/d0_direct_forcing_attack_2026-10-14/verify.py": "d5660e27d0fe2a6f46472084de30ef197fb7a187ff27c269574032a1dd189491",
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7"
+  },
+  "status": "PASS",
+  "v10_PcPrPc_diagonal": [
+    "9/25",
+    "0",
+    "25/169",
+    "0",
+    "0",
+    "0"
+  ],
+  "v10_direct_effect_spectrum": {
+    "1-100*p^3/169": 2,
+    "1-36*p^3/25": 2,
+    "1-4*p^3": 2
+  },
+  "v10_golden_polynomial_residuals": {
+    "1": "1",
+    "25/169": "-23711/28561",
+    "9/25": "-319/625"
+  },
+  "v10_pair_invariant_spectrum": {
+    "1": 2,
+    "25/169": 2,
+    "9/25": 2
+  }
+}

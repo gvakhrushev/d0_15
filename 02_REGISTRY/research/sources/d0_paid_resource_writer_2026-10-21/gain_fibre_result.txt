@@ -1,0 +1,6 @@
+PASS exact Golden fibre checks
+mean Info= 2 - p ; I0= -(5*p - 4)/2 ; I1= 3/2 - (5*p - 4)/2
+d normalized Book q1 / df = -2*ell*(2*p - 1)
+d log_norm squared / df = 0
+d² log_norm squared / df² = 4*ell**2*(2*p - 1)
+d²[-log_phi norm²]/df² = -4*ell*(2*p - 1)

@@ -1,0 +1,95 @@
+{
+  "A1_shell_squared_trace_at_s1": "52",
+  "A1_shell_trace_at_s1": "0",
+  "base_torus": "(R/2pi Z)^4",
+  "checks": [
+    "input_pin_a4d_native_curved_soldered_heat.py",
+    "input_pin_check_causal_cone_source.py",
+    "only_creator_and_order_definitions_extracted",
+    "actual_full16_CAR",
+    "full16_Cartan_cancellation_in_continuum_raising_part",
+    "each_connection_coefficient_constant_in_its_own_edge_direction",
+    "all64_D1_blocks_match_independent_forward_Taylor_and_true_adjoint",
+    "full128_shell_A1_Hermitian",
+    "faithful_trace_zero_does_not_imply_matrix_zero",
+    "exact_full128_squared_resonant_norm_52",
+    "two_nonzero_exact_resonant_witnesses",
+    "diagonal_and_opposite_y_momentum_blocks_both_retained",
+    "real_full128_cosine_sine_preparation_chart",
+    "minimum_faithful_first_amplitude_residual_squared_13_over_32",
+    "hostile_omit_actual_connection_square_rejected",
+    "hostile_replace_matrix_by_scalar_trace_rejected",
+    "hostile_drop_opposite_momentum_coupling_rejected"
+  ],
+  "exact_check_groups": 17,
+  "faithful_amplitude_residual_squared": "13/(32 s^4)",
+  "first_amplitude_Euler_residual_squared": "13/(8 s^4)",
+  "full_Fock_components": 16,
+  "geometry": "exact proper LC links, no h-dependent field counterjet",
+  "not_excluded": [
+    "changed first geometric or link jets",
+    "other leading preparations",
+    "other shells or cones",
+    "all native joint branches",
+    "original fixed-g fixed-tau h^-2 comparator"
+  ],
+  "positive_metric": "s^2 I4",
+  "reference_dimension": 128,
+  "scope": "excludes a differentiable faithful-full-shell stationary amplitude continuation on this fixed exact-LC sampled cone; arbitrary amplitude C1 cannot cancel the resonant block",
+  "shell_momenta": [
+    [
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_causal_cone_source_2026-10-16/check_causal_cone_source.py": "3dd6e594e106f7bb5f6453bf9ab5f1bfc34dd4cf891d7d2fa83531b6353c059a"
+  },
+  "status": "PASS",
+  "theta": "y"
+}

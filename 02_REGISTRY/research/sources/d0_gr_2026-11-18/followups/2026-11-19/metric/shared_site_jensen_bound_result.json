@@ -1,0 +1,25 @@
+{
+  "GR_closed": false,
+  "bracket_lower": "5494533/5242880",
+  "common_site_QND_and_per_history_independent_sign_effect_assumed": true,
+  "explicit_F_distribution": {
+    "-1": 64,
+    "0": 128,
+    "1": 64
+  },
+  "explicit_gap_bound": "3*z*A^4/(8192*Lambda^2)",
+  "explicit_q_variance": "2*A^4",
+  "full_book_cost_local_gate_source_and_GR_closed": false,
+  "general_local_global_gap_bound": "3*z*Var_X(q)/(16384*Lambda^2)",
+  "illustrative_Lambda_one_not_proved_physical": true,
+  "illustrative_exact_gap": "5.693696862246984814688290885500477669931e-18",
+  "illustrative_strict_lower_bound": "5.36538072840597680647568755714547984864e-18",
+  "minus_B_doubleprime_over_unit_lower": "5657940297/3906250000",
+  "p_rational_lower": "309/500",
+  "p_rational_upper": "619/1000",
+  "product_lower_gt_3_over_2": true,
+  "status": "PASS",
+  "strict_curvature": "-R_second(y)>3*z/2 for abs(y)<=1/64",
+  "u_lower": "153/250",
+  "u_upper": "5/8"
+}

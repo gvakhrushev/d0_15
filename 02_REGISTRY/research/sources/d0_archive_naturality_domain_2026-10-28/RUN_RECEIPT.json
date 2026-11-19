@@ -1,0 +1,23 @@
+{
+  "CI_run": false,
+  "GR_closed": false,
+  "Lean_run": false,
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "checker_sha256": "e564aeed9011a784394976951814a6059fb6c71b7fa31b344f5170294b6b473e",
+  "checks": 75,
+  "main_changed": false,
+  "native_88_call_word_replayed": false,
+  "normal_optimized_repeat_byte_identical": true,
+  "physical_archive_effect_domain_derived": false,
+  "physical_query_law_selected": false,
+  "proven_scope": "canonical full-old-effect law iff relative commutant; normalizer, actual AF source and true error budget",
+  "remote_local_git_blobs_verified": {
+    "02_REGISTRY/research/A4D_CANONICAL_ARCHIVE_LAW_AND_VARIATION_DOMAIN_2026_10_28.md": "7b835491a6fbc58d81af295d0c6d61a235395a61",
+    "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/PROOF_RU.md": "8cd1e3d5bd8f952be1ca157b3e8c1c2612323b8b",
+    "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/check_archive_domain.py": "5664d79a7a241b1373fb45e4065e78888301b361",
+    "02_REGISTRY/research/sources/d0_archive_naturality_domain_2026-10-28/result.json": "df924905849e10d38e37808ce2e5d5cb6e9738e8"
+  },
+  "result_sha256": "961707bb2684b30a684cdaf39ea3f04e8bec91a6b7d59f5bd5f8538a63e71df1",
+  "scientific_commit": "dc3d8bad99eb55250dd0db24d96ed8a6992c2a16",
+  "scientific_input": "3ba25a162a7160c9a5c7692f19e5d8a8b9bf52e9"
+}

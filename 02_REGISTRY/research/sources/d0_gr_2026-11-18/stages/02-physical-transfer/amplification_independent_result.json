@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "R_gates": 20,
+  "variants": [
+    {
+      "even_m": 0,
+      "all_columns": 64,
+      "one_word_gates": 26,
+      "midpoint_effect_x_factor": "0",
+      "input_columns": 32
+    },
+    {
+      "even_m": 2,
+      "all_columns": 64,
+      "one_word_gates": 210,
+      "midpoint_effect_x_factor": "782624 - 350000*sqrt(5)",
+      "input_columns": 32
+    }
+  ],
+  "native_gate_programmes_audited": true,
+  "physical_C_established": false
+}

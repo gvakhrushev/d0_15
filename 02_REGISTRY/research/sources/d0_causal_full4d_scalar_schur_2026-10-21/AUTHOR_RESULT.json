@@ -1,0 +1,50 @@
+{
+  "status": "AUTHOR_REPLAY_PASS_REAL_FINITE_AND_EXACT_SYMBOLIC",
+  "date": "2026-10-21",
+  "pr": 334,
+  "native": {
+    "golden_cost": 24,
+    "original_words": 75025,
+    "sites": 4096,
+    "pf_min": 0.21838053982005998,
+    "pf_max": 2.347590803065645
+  },
+  "causal": {
+    "interior_material_euler": 2592,
+    "local_two_by_two_solves": 1296,
+    "numerical_euler_inf": 1.9540033653620004e-16,
+    "max_nonlin_q": 0.0003618010577327458,
+    "max_psi_change": 0.00010643727057091379,
+    "rank_one_factor_range": [
+      1.0023329407141637,
+      1.0160918382301196
+    ],
+    "local_W_gt_range": [
+      1.651141326094118,
+      1.727493104605441
+    ],
+    "global_logdet": 6738.937682703533
+  },
+  "whole_CQ": {
+    "nonzero_precursor_max": 4.705184228536529e-10,
+    "max_independent_complex_step_residual": 1.2755449651235987e-17,
+    "max_precursor_flux_absolute_difference": "<2e-17"
+  },
+  "ward": {
+    "exact_six_pivot": "B*C^2*D^3",
+    "rank2_pivot": "r^5/A",
+    "metric10_jac": "-16*A*B^2*C^3*D^4",
+    "rank2_metric_jac": "-16*r^7/A",
+    "corrected_matter_mixed_Ttx": 0.00016848096217729507,
+    "matter_interior_removed": 2,
+    "remaining_type": "metric10+proper_Lorentz24"
+  },
+  "scope": {
+    "full_4d_causal_small_data_existence_analytically_proved": true,
+    "numerical_nonzero_amplitude_interval_certified": false,
+    "full_two_sided_4d_dirichlet": false,
+    "full_geom_34_stationary_root": false,
+    "absolute_Book03_Info_selected": false,
+    "GR_closed": false
+  }
+}

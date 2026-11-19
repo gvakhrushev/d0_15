@@ -1,0 +1,41 @@
+{
+  "boundary_budget": {
+    "conditional_unscaled_residual_bound": "1E-22",
+    "full_face_margin_strict_lower": "1.855067247999999999999999999999699E-21",
+    "preconditioned_seed_degree": 1,
+    "q_upper": "0.5256632752",
+    "radius": "1E-20",
+    "scaled_residual_upper": "2.8883E-21",
+    "seed_face_margin_strict_lower": "4.743367247999999999999999999999699E-21",
+    "unscaled_sufficient_boundary_budget": "1.64226958695426375376519059654457604819443963577190735034449330055742132050E-22"
+  },
+  "boundary_escape_negative_control": "ROOT_LEAVES_AT_t_1/2",
+  "consumed_native_certificate_replayed": false,
+  "coupled_42_field_sphere_control": [
+    {
+      "joint_index": -2,
+      "joint_root_count": 2,
+      "preparation_index_sum": 2,
+      "t": "0.25"
+    },
+    {
+      "joint_index": -2,
+      "joint_root_count": 6,
+      "preparation_index_sum": 2,
+      "t": "1"
+    }
+  ],
+  "interior_hessian_degeneracy_permitted": true,
+  "native_receipt_blob": "0ac76b58522d84f5bcc787fb6b6da0c99e1211cd",
+  "physical_application": {
+    "GR_closed": false,
+    "actual_full_Book03_residual_computed": false,
+    "actual_full_boundary_homotopy_certified": false,
+    "actual_preparation_manifold_identified": false,
+    "new_physical_joint_root_certified": false,
+    "uniform_refinement_certified": false
+  },
+  "preparation_with_boundary_negative_control": "NO_FREE_PREPARATION_CRITICAL_POINT",
+  "source_snapshot": "fcfc52064737815c75bef96f7696b473ee304061",
+  "status": "PASS_EXACT_ARITHMETIC_AND_ANALYTICAL_MODEL_CONTROLS"
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-22",
+  "repo": "gvakhrushev/d0_15",
+  "parent_pr": 334,
+  "read_commit": "b4a1c590ebb7c52e5be7618fa193d48a5176ad62",
+  "native_full_file_blob_declared_by_connector": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "native_local_access": "Executable excerpt of connector-read functions. Full source-file blob was NOT reconstructed or hash-verified locally.",
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "receipt_cost_semantics": "results[K].cost is the merged effective expectation using weights 1,2,p^3 AFTER the exact pair entropy subtraction, NOT actual total primitive/factory spending.",
+  "normal_optimized_identical": true,
+  "remote_repository_modified": false,
+  "full_Lean_replayed": false,
+  "interval_proof_replayed": false,
+  "files_sha256": {
+    "THEOREM.md": "eef383ca58e6bce715b2b76f27a1abcdcab3ac668a4b09187bf1238cc4976436",
+    "README.md": "20d700550e73567e043977d2e9ba262106a1c9e98dbf2e888a514dc19e6cb577",
+    "native_excerpt.py": "e0952ad01abd3c54b3c083271d640374c42c2a25cf455e1937cceb3339d82e8b",
+    "check_native65_causal_source.py": "2f215a808ab91f1585f271aa298499f7249a1188cc1429c51af3d53343854338",
+    "check_archive_birth_extension.py": "54159439252b8e95cfed05d9675fec551a9154144a0ff23ce3ebf6426c9dc443",
+    "RESULT.json": "52584a3b694c19decd983fbdf04978cf5ae23cd80bffecf94a23a1de39e2df25",
+    "RESULT_OPTIMIZED.json": "52584a3b694c19decd983fbdf04978cf5ae23cd80bffecf94a23a1de39e2df25",
+    "ARCHIVE_BIRTH_RESULT.json": "109c0dccaa12f881622fe0da7751e2a0c447993ff8834750958bff1e7466012c",
+    "DEVELOPMENT_NOTES.md": "17de8fc0560fa87a85880f67c54ae6df64a6b834e16bcfda242d42593e69ec6c"
+  }
+}

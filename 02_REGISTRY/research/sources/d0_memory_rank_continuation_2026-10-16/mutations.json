@@ -1,0 +1,31 @@
+{
+  "mutations": [
+    {
+      "failed_check": "actual_source_seed_covariance",
+      "name": "wrong_seed_covariance",
+      "outcome": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "nonzero_exact_pure_source_witness",
+      "name": "missing_normalization",
+      "outcome": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "true_shell_constraint_trace",
+      "name": "freeze_empty_shell",
+      "outcome": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "complete_rankfree_second_eigen_jet",
+      "name": "freeze_preparation_jet",
+      "outcome": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_check": "actual_second_Feshbach_curvature",
+      "name": "wrong_resolvent_sign",
+      "outcome": "REJECTED_BY_MATHEMATICS"
+    }
+  ],
+  "old_expected_evidence_changed": false,
+  "schema": "d0-memory-rank-mutations/1"
+}

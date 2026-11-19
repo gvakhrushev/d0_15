@@ -1,0 +1,62 @@
+{
+  "RIGHT_marker_first_source_HS": 5.918312693740339e-05,
+  "all_outcome_absolute_marked_norm": 0.6176608397871732,
+  "carrier": {
+    "CAR": 16,
+    "all_complete_Kraus_outcomes": 128,
+    "oldRIGHT": 128,
+    "sites": 256
+  },
+  "column_modes": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      2,
+      1
+    ]
+  ],
+  "cosine_or_sine": [
+    "sin",
+    "sin"
+  ],
+  "count_range": [
+    29,
+    78
+  ],
+  "energy_diagonal_intervals": [
+    [
+      "0.006874788480791177715774644603657607667271090011751565136343351480751746329973677695350",
+      "0.006874788480791177715774644603657607667271090011751565136343351480751746329973677696781"
+    ],
+    [
+      "0.1009784871783217565912472900749044411656571590413639450550659814345138268585725629370",
+      "0.1009784871783217565912472900749044411656571590413639450550659814345138268585725629527"
+    ]
+  ],
+  "native_counts_total": 10946,
+  "normalized_RIGHT_difference_HS": 2.2619599913506335e-05,
+  "original_count_sha256": "fbca167a01fcca76356153586a1006ad1144b612f97740b7611f163f5a3164e9",
+  "primary_matter_amplitude": "0 (vacuum member of original primary family)",
+  "retained_failure_probability": 0.3823391602128269,
+  "scope": "the supplied positive cost-marker t=ln(phi); no assertion of compulsory native Info, GR or all-horizon impossibility",
+  "status": "PASS",
+  "strict_energy_gap_interval": [
+    "0.09410369869753057887547264547124683349838606902961237991872262995376208052859888524021",
+    "0.09410369869753057887547264547124683349838606902961237991872262995376208052859888525735"
+  ],
+  "theorem": "no deterministic LEFT-only map with the same complete initial reference produces the normalized tilted whole record",
+  "two_original_Fourier_column_indices": [
+    57,
+    55
+  ],
+  "unnormalized_RIGHT_diagonal_difference_interval": [
+    "-0.000008286450408372856149161115344516084749857642534288282493653126370314373541855341747376",
+    "-0.000008286450408372856149161115344516084749857642534288282493653126370314373541855341745792"
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "actual_recording_transport": {
+    "actual_dimension": 64,
+    "actual_record_bits": [
+      4,
+      5
+    ],
+    "copied_stages": 13,
+    "copy_gates_per_leg": 2,
+    "cut_rank": 4,
+    "full_paired_modes": 1664,
+    "old_dimension": 16,
+    "original_stages": 9,
+    "scope": "new small physical recording transport; no sealed record inverse or coherent AND"
+  },
+  "check_names": [
+    "actual Q8 source generator is skew and squares to minus identity",
+    "actual full primitive is in REAL work plus work-L_i algebra Gate(op='G', wires=(0,))",
+    "actual full primitive is in REAL work plus work-L_i algebra Gate(op='G', wires=(1,))",
+    "actual full primitive is in REAL work plus work-L_i algebra Gate(op='CX', wires=(0, 1))",
+    "actual full primitive is in REAL work plus work-L_i algebra Gate(op='CX', wires=(1, 0))",
+    "actual full primitive is in REAL work plus work-L_i algebra Gate(op='SourceI', wires=(0, 2, 3))",
+    "closure uses the two-coefficient algebra rather than commutation alone",
+    "commuting with L_i alone does NOT force a scalar return Gram",
+    "matched actual native corner has a genuine imaginary source component sign1",
+    "one unconditional return law is the FULL rank4 Gram sign1",
+    "matched actual native corner has a genuine imaginary source component sign-1",
+    "one unconditional return law is the FULL rank4 Gram sign-1",
+    "a real paid PRE-readout future context separates two words in the SAME return-effect fibre",
+    "two legal N1 words agree on every actual known-work Q8 input",
+    "the same known-input return does NOT fix the different arbitrary-bank subroutine effect",
+    "the general protected corner has its exact scalar Gram",
+    "equal conditional report effects do NOT fix readiness or full return",
+    "factorial clock bound is smaller than the ACTUAL exponentially small gain M4",
+    "explicit leading winding terms respect the complete analytic majorant M4",
+    "factorial clock bound is smaller than the ACTUAL exponentially small gain M16",
+    "explicit leading winding terms respect the complete analytic majorant M16",
+    "factorial clock bound is smaller than the ACTUAL exponentially small gain M64",
+    "explicit leading winding terms respect the complete analytic majorant M64",
+    "a growing beta cannot silently reuse the fixed-beta factorial gate",
+    "real two-leg label copying preserves the full operator conjugacy at its NEW carrier and clock",
+    "paid balanced copy retains the SAME complete protected return corner",
+    "the actually recorded all-zero label has exactly the full blank-return effect"
+  ],
+  "checks": 27,
+  "future_context_stages": 27,
+  "future_return_probabilities": [
+    "1",
+    "9 - 4*sqrt(5)"
+  ],
+  "generated_utc": "2026-10-25T06:29:41.141436+00:00",
+  "heat_comparison_models": [
+    {
+      "M": 4,
+      "actual_clock_lower": 56,
+      "analytic_bound_relative": "2.04171270800275960671613807786027564705810870751797752184663e-83",
+      "four_winding_partial_sum": "1.0658122575304167083612817579621299768570150646997695988944e-91",
+      "model_gain": "0.00000407360843733560747739758487328898485019281419403293829371303",
+      "rigorous_formula_gain_lower": "0.000000373717123837990254542942050987735386405229691980890095271218"
+    },
+    {
+      "M": 16,
+      "actual_clock_lower": 224,
+      "analytic_bound_relative": "7.05981454724900393858398531875165469484030945574724885117968e-487",
+      "four_winding_partial_sum": "3.6067855861004447246278203879049219856444952345933004772185e-498",
+      "model_gain": "0.0000000163496942561848677160750583194314616648830716164464524512009",
+      "rigorous_formula_gain_lower": "0.00000000146779743078930992976785229648473114011153585059235850885853"
+    },
+    {
+      "M": 64,
+      "actual_clock_lower": 896,
+      "analytic_bound_relative": "1.962115538592029531144902794695834353278294749958314997339e-2504",
+      "four_winding_partial_sum": "9.93491602349069918329782685939725717120473294153827505008227e-2528",
+      "model_gain": "6.62904416758884103036945577493123577274125367321129409819805e-20",
+      "rigorous_formula_gain_lower": "5.82371633230788335267579574594791088259157677159591106709797e-21"
+    }
+  ],
+  "native_return_rows": [
+    {
+      "CX": 2,
+      "G": 2,
+      "SourceI": 5,
+      "cut_rank": 4,
+      "full_columns": 16,
+      "return_probability": "5 - 2*sqrt(5)",
+      "sign": 1,
+      "stages": 9
+    },
+    {
+      "CX": 0,
+      "G": 2,
+      "SourceI": 7,
+      "cut_rank": 4,
+      "full_columns": 16,
+      "return_probability": "5 - 2*sqrt(5)",
+      "sign": -1,
+      "stages": 9
+    }
+  ],
+  "scope": [
+    "new exact 16-column native algebra/return/context controls",
+    "future inverse context is before terminal reading; no sealed record is reversed",
+    "general return algebra and heat asymptotics are analytic proofs",
+    "no all-future equivalence inferred from one return effect",
+    "same-return task fibre is not all native edits or physical selection",
+    "constant-gbar and conditional-effect models are diagnostics",
+    "no old native/READY/Cartan/root/Lean replay; no GR promotion"
+  ],
+  "section_pins": [
+    {
+      "bytes": 9237,
+      "heading": "## 7f.",
+      "sha256": "36be1b15d29532fe7560212b41dc0b55ad41da4bb585f63e629cd9bfa53f4359"
+    },
+    {
+      "bytes": 11064,
+      "heading": "## 7l.",
+      "sha256": "3ba33702b871b7ad84c41d58e90be6cd598db59cacd1bae0e6533de30c1895e6"
+    },
+    {
+      "bytes": 14992,
+      "heading": "## 7t.",
+      "sha256": "63cc3e0f09d3968f63479cf905dd107da930bfb37eac0d916589337cc617c098"
+    },
+    {
+      "bytes": 10023,
+      "heading": "## 7ad.",
+      "sha256": "4acffc06de6fa77459bcfa1ce5ad9c8fe946970f1079a69b9d738aee65c0ebfb"
+    },
+    {
+      "bytes": 8847,
+      "heading": "## 7ai.",
+      "sha256": "b85894771aefa1b9a72829a82d6d05e10d4a5d1c5571ed3ad7b2648ebe7f2022"
+    },
+    {
+      "bytes": 9239,
+      "heading": "## 7aj.",
+      "sha256": "7ce0153406c8d6b163e059eae5046da4d0a750da9558d8b10ab9e1be6f0d48be"
+    }
+  ],
+  "source_pins": [
+    {
+      "bytes": 13092,
+      "path": "02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/check_task_source.py",
+      "sha256": "b3e67abd652ee0bbf93270144ab6572e48b3422ed795ea6b42e33120a176e325"
+    },
+    {
+      "bytes": 20285,
+      "path": "02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/HEAT_TRANSFER.md",
+      "sha256": "21b87878c32ec9786338831a3d1ea4aeec4efbdf84e22e446e8ded629acba8c6"
+    },
+    {
+      "bytes": 28434,
+      "path": "02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/TASK_MAP.md",
+      "sha256": "8b1b0dc3108c513c02512fbbec565d8fad3d5e40ebf913d727bfab605d821e3d"
+    },
+    {
+      "bytes": 17833,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "bytes": 11768,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/BOOK_MAP.md",
+      "sha256": "4950d36010bd75bd26df13d9f13ff27843980a4fd35aefaac7dd950059fc21ee"
+    },
+    {
+      "bytes": 17161,
+      "path": "02_REGISTRY/research/sources/d0_native_task_clock_source_2026-10-25/PROOF.md",
+      "sha256": "09c11fd8c74ed7c6e2a791bafccc3820f14b9077c2fda4e8e517e4b8d72079fd"
+    },
+    {
+      "bytes": 7883,
+      "path": "02_REGISTRY/research/sources/d0_native_task_clock_source_2026-10-25/CHECK_RESULT.json",
+      "sha256": "434be6b07845f8f1e03a337ccf7b85ebdd92a373354ebe01b3a56278a8ed09de"
+    },
+    {
+      "bytes": 26168,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/SOURCE_TRANSFER.md",
+      "sha256": "b30663e5365ccdebf2b21e35820f39f063671e246d69f29abad891ac18285e19"
+    },
+    {
+      "bytes": 18063,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/INPUT_AND_RECORD_MAP.md",
+      "sha256": "be7e38a0e02d5fc64855ae976995320202e92d1d70654b72424c8c99c8e465bd"
+    },
+    {
+      "bytes": 14998,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/CHECK_RESULT.json",
+      "sha256": "5f004ddb26d47105cc26d1bc90236a3223e5179192630e5f75c161e5a1ce8d07"
+    },
+    {
+      "bytes": 9896,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/book_price.py",
+      "sha256": "7c325fe6322298e13c2380522e9645cc228d8d5db2d7741368310690b80b095c"
+    },
+    {
+      "bytes": 12331,
+      "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+      "sha256": "15143b63f2bf1cc51493e3efb36c9da57c203d7e680e2f1370cf2311eb2e9ef1"
+    },
+    {
+      "bytes": 6676,
+      "path": "03_FORMALIZATION/D0/Foundation/EmpiricalTheoryFactorization.lean",
+      "sha256": "2097ab79c64fa719fe066a5545ca0f8b0f8944f9a4900268d0630643bb2618fd"
+    },
+    {
+      "bytes": 75761,
+      "path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c"
+    },
+    {
+      "bytes": 191770,
+      "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "sha256": "450c736e06e50561c6f5b4e9b27a9744d79fb6b3e38cf7c6880ab12205f759c7"
+    },
+    {
+      "bytes": 86193,
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    }
+  ],
+  "status": "PASS"
+}

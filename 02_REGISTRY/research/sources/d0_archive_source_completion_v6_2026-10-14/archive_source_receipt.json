@@ -1,0 +1,35 @@
+{
+  "schema": "d0-archive-source-completion/1",
+  "status": "PASS",
+  "exact_controls": 263,
+  "checks_sha256": "45c766c11181fbd35e5f94b7e63a933fb068672af377687b8686b6b67a5acfcc",
+  "negative_controls": [
+    "response_map_positive_from_trace_preservation",
+    "discard_archive_remainder_on_all_probes",
+    "freeze_full_preparation_derivative",
+    "dlog_M_equals_inverse_times_dM",
+    "inverse_times_dM_is_Hermitian",
+    "two_thermal_marginals_remove_archive_source",
+    "same_retained_state_forces_same_full_source",
+    "thermal_archive_cancels_full_moving_price",
+    "normalize_partial_trace_without_heat_shift",
+    "selector_preserves_every_possible_cut",
+    "selector_invariance_means_feedback_zero",
+    "one_copy_heat_against_two_copy_matter",
+    "every_normalized_archive_has_negative_radial_response"
+  ],
+  "scope": {
+    "finite_tensor_cut_supplied": true,
+    "full_operator_supplied": true,
+    "all_archive_states_retained": true,
+    "full_moving_preparation_retained": true,
+    "response_map_is_positive_channel": false,
+    "physical_native_cut_derived": false,
+    "new_action_selected": false,
+    "native_chronological_J_identified": false,
+    "GR_or_original_parent_closed": false,
+    "new_Lean_compilation": false
+  },
+  "proof_sha256": "7bab14f9ce918f25e7f5b90a845fcd279f9dd3531a90ac30c7198dc4c26b0e7f",
+  "checker_sha256": "3c5368cb5826066399bfa6a587c04614a26084c48eb2a3eb769c2bfd20624436"
+}

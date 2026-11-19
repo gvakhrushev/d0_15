@@ -1,0 +1,81 @@
+{
+  "source_ref": "b60a111b43f723a841d253b1d5bd9650c46b2cf8",
+  "verification": "git show historical source_ref:path; no current mutable-owner equality required",
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c",
+      "bytes": 75761
+    },
+    {
+      "path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
+      "bytes": 191652
+    },
+    {
+      "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "sha256": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+      "bytes": 195678
+    },
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+      "sha256": "e8c1f3629a990f29ef74ed23925c501a3427fa333fd25b0571556fcc69406cb1",
+      "bytes": 12681
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md",
+      "sha256": "f09c24bb7b8ef5f512555257dcd9a335571c052b452482d2c31a3b8e586efdc5",
+      "bytes": 11013
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_AF_ROLE_ORBIT_CAR_GEOMETRY_2026-10-16.md",
+      "sha256": "7a14491f4c14a24f7e44aa0ffefddad2a5b21c9ccd33a8f20f90a829289369b1",
+      "bytes": 8555
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+      "sha256": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+      "bytes": 4901
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CYCLIC_HISTORY_PRICE_PREPARATION.md",
+      "sha256": "d936f5633c74a5dd451496d6a15be69119cd1b80f3f3d86d6ad4d6c18d7e4e8a",
+      "bytes": 16241
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "sha256": "155fa5ec5478e0965884425170c9fd42e1d546d7e767e6515c170eb59dcece50",
+      "bytes": 18676
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "bytes": 16828
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be",
+      "bytes": 15594
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf",
+      "bytes": 24033
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "sha256": "4d098d1e6ad8cb7daf477b498f808b7b962d6432f3da78ae573e321dbbcb915d",
+      "bytes": 35006
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/FIXED_PROCESSOR_PROGRAM_SOURCE.md",
+      "sha256": "4a879a3bb986aca43f06cec760f882cec4e7c6446efd46d5add8a2f199e9381b",
+      "bytes": 31035
+    }
+  ]
+}

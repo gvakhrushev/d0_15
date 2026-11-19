@@ -1,0 +1,41 @@
+{
+  "schema": "d0-v10-executed-mutants/1",
+  "status": "PASS",
+  "executed_mathematical_mutants": [
+    {
+      "mutant": "restore_spectator_tape",
+      "rejected_at": "AssertionError: full_bare_square_1"
+    },
+    {
+      "mutant": "wrong_two_projection_loop",
+      "rejected_at": "AssertionError: base_loop_defect"
+    },
+    {
+      "mutant": "freeze_completed_operator",
+      "rejected_at": "AssertionError: transported_projector_square_1"
+    },
+    {
+      "mutant": "double_new_cutoff",
+      "rejected_at": "AssertionError: all_new_modes_fixed_by_same_loop"
+    },
+    {
+      "mutant": "freeze_actual_refinement_jet",
+      "rejected_at": "AssertionError: all96_true_naturality_jet"
+    },
+    {
+      "mutant": "change_original_feedback_cut",
+      "rejected_at": "AssertionError: original_feedback_not_redefined_1"
+    },
+    {
+      "mutant": "erase_full_tape_multiplicity",
+      "rejected_at": "AssertionError: full_tape_not_old_spectator_tail"
+    },
+    {
+      "mutant": "omit_purifying_reference",
+      "rejected_at": "AssertionError: interval_strict_contraction_0"
+    }
+  ],
+  "false_GR_receipt_rejected": true,
+  "optimized_execution": true,
+  "checker_sha256": "6a3f6dd67bb8b17c9a863e14e282e8599af449fcfef268c841ec8183353678ee"
+}

@@ -1,0 +1,36 @@
+{
+  "exact_checks": 49,
+  "helper_sha256": "4677a4f4fb3c546bdcfa6ddfac375e6077a61481c7d1cf6edf0645b1e6fd7341",
+  "normal_optimized_stdout_byte_identical": true,
+  "old_scientific_suites_run": false,
+  "physical_placement_or_Info_contract_derived": false,
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "quantitative_inequality_proof": "analytical strong-Jensen and positive-Bloch variance decomposition; checker verifies their exact identities, not sampled inequalities",
+  "results_sha256": "7e80c4552001a72816e36dfe0cf8040a6083b79b0e0a31ecff531a1eeecf44b8",
+  "runs": [
+    {
+      "elapsed_seconds": 0.377042,
+      "exit_code": 0,
+      "mode": "normal",
+      "stderr_bytes": 0,
+      "stdout_sha256": "7e80c4552001a72816e36dfe0cf8040a6083b79b0e0a31ecff531a1eeecf44b8"
+    },
+    {
+      "elapsed_seconds": 0.342363,
+      "exit_code": 0,
+      "mode": "optimized",
+      "stderr_bytes": 0,
+      "stdout_sha256": "7e80c4552001a72816e36dfe0cf8040a6083b79b0e0a31ecff531a1eeecf44b8"
+    }
+  ],
+  "source_pins": {
+    "02_REGISTRY/research/A4D_NATIVE_RETAINED_RECORD_ADMISSION.md": "05c50904b149fcffcc93d8d52ffa66da260654cf9bfc47b80354d59fef4fe336",
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_COHERENCE_TEST.md": "3a55980ed2051b34bfba3570731622489a2e11e48d49a9f42bce034cae2ef1d6",
+    "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/OrderMemoryControl.lean": "2f63c3701cb01a2eb67b24b62d5978f989bbd8c88ea6d1a27721dc2df5b6b382",
+    "03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean": "c350ead450996bfb7da20a987454b57da94dc098d17efeafc85a56b751664aa4"
+  },
+  "status": "PASS",
+  "validation_kind": "new exact covariance and feasible-gain identities only"
+}

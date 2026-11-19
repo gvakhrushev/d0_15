@@ -1,0 +1,29 @@
+{
+  "candidate_Info_delta": {
+    "posterior_minus_prior": 1,
+    "prior_minus_posterior": -1
+  },
+  "check_count": 10,
+  "literal_Dmin": {
+    "F": 1,
+    "R": 2,
+    "delta_R_minus_F": 1
+  },
+  "native_scalar_exponent": {
+    "I_F": 0.0,
+    "I_R": 1.5,
+    "S_F": 1.0,
+    "S_R": 0.5000000000000001
+  },
+  "required_delta": {
+    "amplitude": 1.5,
+    "extra_marker": 1.0,
+    "probability": 2.0
+  },
+  "scope": {
+    "GR_closed": false,
+    "general_native_Info_undefined": true,
+    "naive_Dmin_Info_rejected": true
+  },
+  "status": "PASS"
+}

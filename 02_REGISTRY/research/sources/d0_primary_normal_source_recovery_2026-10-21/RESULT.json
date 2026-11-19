@@ -1,0 +1,58 @@
+{
+  "status": "PASS_PRIMARY_NORMAL_SOURCE_RECOVERY",
+  "input_ref": "963a9ae0a22ac05ba13b86e66f56bae68a6ec492",
+  "exact": {
+    "polynomial_normal_row": "EXACT",
+    "barrier_minus_laplacian": "1",
+    "exact_green_norm_h_1_4": "9/128",
+    "green_uniform_bound": "1/8",
+    "saddle_inverse": "EXACT_FOR_SYMBOLIC_SYMMETRIC_B",
+    "non_C2_first_source_control": "PASS",
+    "all_other_Euler_rows_required": true
+  },
+  "numerical": [
+    {
+      "intervals": 8,
+      "interior_sites": 49,
+      "green_inf_bound_measured": 0.07278262867647056,
+      "diagnostic_source_bound": 0.015625,
+      "linear_metric_error_inf": 0.0008018231924160208,
+      "linear_normal_equation_error": 3.8163916471489756e-17,
+      "discrete_hessian_energy_error": 8.673617379884035e-19,
+      "continuous_nonC2_equation_error": 8.326672684688674e-17,
+      "continuous_nonC2_iterations": 7
+    },
+    {
+      "intervals": 16,
+      "interior_sites": 225,
+      "green_inf_bound_measured": 0.07344576657891967,
+      "diagnostic_source_bound": 0.00390625,
+      "linear_metric_error_inf": 0.00019852994712794755,
+      "linear_normal_equation_error": 6.158268339717665e-17,
+      "discrete_hessian_energy_error": 2.168404344971009e-19,
+      "continuous_nonC2_equation_error": 7.806255641895632e-17,
+      "continuous_nonC2_iterations": 6
+    },
+    {
+      "intervals": 32,
+      "interior_sites": 961,
+      "green_inf_bound_measured": 0.07361473735452399,
+      "diagnostic_source_bound": 0.0009765625,
+      "linear_metric_error_inf": 4.9512989787089755e-05,
+      "linear_normal_equation_error": 9.421716878899034e-17,
+      "discrete_hessian_energy_error": 1.6263032587282567e-19,
+      "continuous_nonC2_equation_error": 1.1622647289044608e-16,
+      "continuous_nonC2_iterations": 5
+    }
+  ],
+  "scope": {
+    "same_primary_normal_row": true,
+    "actual_full_native_Info_work_residual_computed": false,
+    "other_41_Euler_rows_automatic_for_arbitrary_residual": false,
+    "generic_full40_inverse": false,
+    "C2_remainder_required": false,
+    "native_stationarity_selection_proved": false,
+    "prospective_minimum_repaired": false,
+    "GR_closed": false
+  }
+}

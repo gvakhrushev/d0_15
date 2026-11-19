@@ -1,0 +1,286 @@
+# Finite D0 rank-two GR continuation: FOUR exactly solved diagonal coframe rows, two material Euler rows, and six exact temporal-link Gauss zeros
+
+21 October 2026. Existing Draft PR #334, native-programme-v1 / constitutive. **CONSTRUCTIVE FINITE ORIGINAL-ACTION CAUCHY THEOREM IN A SCOPED SPATIALLY HOMOGENEOUS SECTOR.** No new action, matter, coupling, geometry carrier, observer, null-zone assignment, field writer or physical Book03 price. Consumes the literal original six based Cartesian G2/STAR action and the correctly retyped SAME N=1 Golden scalar CQ price; all claims pertain to the exact common f_star=q_CAR=0 sheet. Not an all42 finite stationary root. GR_closed=false.
+
+## 1. The missing Cauchy first integral is FORCED by two genuinely independent material variations
+
+Use the already-owned original two nonzero real CAR scalar/top gradients on a spatially homogeneous diagonal coframe with time t and first space direction x:
+
+    e(t)=diag(X(t),Y(t),Z(t),W(t)), X,Y,Z,W>0;
+    p_t(t)=D_t^+ psi1(t) !=0, p_x=D_x^+psi2=epsilon !=0;
+    all other original two-real-field components of D^+psi are zero.
+
+The exact original real Lorentz Clifford contraction is
+
+    q = p_t²/X² - epsilon²/Y².
+
+The original fixed positive AF/PF weights rho are arbitrary and may be discontinuous, but on the ACTUAL double-zero field sheet f_star=q=0 the full N=1 Golden CQ first source is the globally constant nonzero gradient M*tau (a Dsum f+b Dsum q) (the full nonlinear MASTER K and higher second jets are NOT deleted). Consequently the two original scalar Euler rows are exactly the backward-adjoint conservation equations for the ACTUAL currents
+
+    J_t=p_t/X²,      J_x= -epsilon/Y².
+
+The spatial material row is automatically zero for homogeneous Y. The nontrivial time row forces J_t=constant with the original time boundary convention. Simultaneously q=0 requires p_t=epsilon X/Y on the chosen positive nonzero-gradient branch. Hence
+
+    BOX: J_t=epsilon/(XY)=const, so XY=const.                 (1)
+
+This is a mathematical CONSEQUENCE of the original two-field finite Euler and null cancellation, not an extra imposed unimodular constraint. The old historical rank-two seed has XY=1, so select that existing initial/boundary constant and write Y=1/X. The finite material increment is thereby FORCED to be p_t=epsilon X². Integrating those increments constructs the real chronological scalar history; the second remains psi2=epsilon*x.
+
+## 2. Exact original six-face reduced density: 4 diagonal Euleri are only 3 different equations
+
+On this ORIGINAL branch retain the old spatial boost links (all three genuine independent spatial outgoing Role links)
+
+    U_t=I,
+    U_x(t)=exp(h k1(t) K1),
+    U_y(t)=exp(h k2(t) K2),
+    U_z(t)=exp(h k2(t) K3),
+
+with K1,K2,K3 the original proper Lorentz boosts, full noncommutative based spatial P_yz and time-spatial faces. Their k2 equality is a symmetry restriction, NOT an independent Lorentz equation or a claim of physical equality of all link components.
+
+Let
+
+    S1=sinh(h[k1(t+h)-k1(t)]),
+    S2=sinh(h[k2(t+h)-k2(t)]),
+    C12=C(h*k1,h*k2), C22=C(h*k2,h*k2),
+    C(x,y)=sinh(x)sinh(y)[1-(cosh(x)-1)(cosh(y)-1)/2].
+
+At a based time cell with coframe diag(X,Y,R,R), the ORIGINAL 6-face G2/STAR density is exactly
+
+    f_star,h= [R² S1 + 2Y R S2 + 2X R C12 + X Y C22]/h².     (2)
+
+This is exact at arbitrary finite h and retains the actual nonlinear P-P^-1/2 odd curvature. No continuum Einstein density was substituted. The original material q=p_t²/X²-epsilon²/Y² has NO independent proper-link derivative.
+
+Before imposing the field ansatz in variations, differentiate the ORIGINAL action with respect to all four diagonal coframe components (two transverse variations independent) and the two scalar fields. At XY=1, p_t=epsilon X² and the EXISTING native ratio kappa=-lambda_minus, epsilon²=1/(2*kappa), the true normalized affine Euler components at f=q=0 are
+
+    h² E_X = 2R C12 + C22/X -h² X,                         (3a)
+    h² E_Y = 2R S2 + X C22 +h² X³,                         (3b)
+    h² E_Z = h² E_W = R S1 + S2/X +X C12.                 (3c)
+
+The equality E_Z=E_W is the k2=k3, Z=W symmetry; they are separately computed ORIGINAL Euler rows, not one variation restricted to a single R. The source is the first variation of the SAME N=1 actual scalar price by the exact f=q=0 theorem.
+
+The exact local coframe homogeneity/Noether relation on q=0 is
+
+    X E_X +Y E_Y+Z E_Z+W E_W=2 f_star,h.                  (4)
+
+It follows that solving ALL FOUR diagonal Euler rows forces f_star,h=0 automatically. This is stronger than selecting f=0 first and testing only its radial derivative. It also shows why the old double-zero source projection is an exact consequence of the true stationarity equations on this branch.
+
+## 3. Explicit TWO algebraic equations + ONE forward connection recursion
+
+Take the original smooth rank-two seed on a fixed positive-radius interval:
+
+    A(r)=sqrt(r) exp(-r²/4),
+    B(r)=1/A(r),
+    k1^0(r)=(1-r^-2)/2,
+    k2^0(r)=exp(-r²/4)/sqrt(r),
+    dr/dt=exp(-r²/2).
+
+Prescribe only the SAME k2(t)=k2^0(r(t)) and one initial k1(t0)=k1^0(r0). From (3a,b), X,R are obtained by TWO exact algebraic equations
+
+    2R C12 + C22/X=h² X,
+    2R S2 +X C22=-h² X³.                                (5)
+
+Eliminating R gives the exact quadratic in the existing variable z=X²>0:
+
+    BOX: h² C12 z²+(h² S2+C12 C22)z-S2 C22=0.           (6)
+
+Use the positive branch near the original A(r)^2, not an arbitrary negative/remote algebraic root. The transverse coframe equation (3c) then supplies a unique future value of the ORIGINAL proper-Lorentz boost link
+
+    BOX: k1(t+h)=k1(t)
+       + asinh[-(S2/X+X C12)/R]/h.                        (7)
+
+This is a COHERENT one-step recurrence: a spatial link on time t+h is shared by the preceding and following original based faces. The one-site replacement k1(t+h) is never made separately for two neighboring plaquettes. The equations are local initial-value equations. Their terminal time value is OUTPUT; they do not solve a second, arbitrarily imposed temporal Dirichlet collar.
+
+### Exact analytic regularity and nondegeneracy interval
+
+Divide equations (5) by h² and take h->0 in a smooth original frame. The limiting two algebraic equations are
+
+    E1(X,R;k1,t)=2R k1 k2+k2²/X-X=0,
+    E2(X,R;k1,t)=2R dot(k2)+X k2²+X³=0.                  (8)
+
+At the unchanged source seed X=A(r),R=r,k1=k1^0(r), BOTH vanish exactly. The determinant of their original X,R Jacobian is
+
+    BOX: det D_(X,R)(E1,E2)
+       = -2(r^4-2r²-1) exp(-3r²/4)/r^(7/2).             (9)
+
+It is STRICTLY POSITIVE for every 0<r<sqrt(1+sqrt(2)) ≈1.553773974. Therefore on ANY compact subinterval of that domain, the implicit-function theorem defines unique positive real near-source X(t,k1,h),R(t,k1,h). At r=sqrt(1+sqrt(2)) this particular algebraic chart loses invertibility; it is NOT automatically a physical singularity of spacetime or a failure of full D0.
+
+Equation (7) defines a smooth Cauchy map, and its h->0 evolution is precisely the old physical k1 flow:
+
+    dot(k1)=-(dot(k2)/X+X k1 k2)/R,
+    dot(k1^0)=exp(-r²/2)/r³.                             (10)
+
+Standard local consistency and discrete Gronwall on a fixed finite t interval imply
+
+    sup|X_h-A|+sup|R_h-r|+sup|k1_h-k1^0|=O(h).             (11)
+
+This is for the just-defined constrained forward recursion with prescribed k2(t), fixed initial k1 and the original bounded positive-radius chart. It does not control a full 40-variable gauge-fixed Jacobian or an independently fixed final collar.
+
+Equations (1)-(7) then give the EXACT finite result on all free based time cells:
+
+    f_star,h=0, q_CAR,h=0,
+    E_X=E_Y=E_Z=E_W=0,
+    E_psi1=E_psi2=0.                                      (12)
+
+The original volume det(e)=R² is positive and differs by O(h) from the old r² volume, unlike the preceding determinant-r²-preserving projection. This change is a legitimate correction of existing ORIGINAL coframe components; preserving the old r² was never an independent native Euler equation. The full metric approaches the old rank-two non-VSI continuum metric in the same chart.
+
+## 4. Additional exact six time-link Gauss zeros on this VERY geometry
+
+A second exact structural result explains why all original temporal proper-link source entries were zero in each of the independent full4 matrix controls. For ANY spatially homogeneous diagonal coframe and the original time link U_t=I, with Ui(t) and Ui(t+h) on a single SO(1,1) boost subgroup Ki for each i=1,2,3, vary the original temporal link at one spatial address by δU_t=X U_t for an arbitrary original Lorentz generator X.
+
+It enters one based temporal-spatial face at that address with
+
+    P_out=V W^-1, dP_out=X P_out,
+
+and the spatial predecessor face with the SAME diagonal coframe at its based site and
+
+    P_in=V W^-1, dP_in=-V X W^-1,
+
+where V=Ui(t+h), W=Ui(t) COMMUTE because they belong to the same Ki subgroup. The original true odd curvature differential is
+
+    dR(P)[dP]=(dP+P^-1 dP P^-1)/2.
+
+The total differential of these TWO actual based faces is
+
+    dR_out+dR_in
+      =[X V W^-1+W V^-1 X-V X W^-1-W X V^-1]/2.          (13)
+
+For diagonal coframe the complementary-wedge G2/STAR contraction of the (t,i) face projects ONLY onto the internal Ki component. Split an arbitrary Lorentz X into its Ki part and the other five generators: the Ki part COMMUTES with V,W so (13) vanishes, while each perpendicular generator remains outside the (t,i) 2×2 block under conjugation by V,W and has zero Ki projection. Hence each spatial direction's outgoing/predecessor pair has ZERO original first source from every X.
+
+Therefore, on this specific homogeneous diagonal/pure-boost sector,
+
+    BOX: E_(U_t,X_ab)=0 FOR ALL SIX original Lorentz generators X_ab,     (14)
+
+exactly at every free spatially homogeneous site, for arbitrary smooth or nonsmooth time profiles of X,Y,R,k_i. This does NOT rely on the other Euler equations, f=q=0, or the new recursion. It is a true finite Gauss-type identity with both neighboring based plaquettes included. The same trace result also follows from the original finite local Lorentz Noether architecture; it is NOT six newly independent constraints or license to discard six more rows on an arbitrary inhomogeneous field.
+
+The six exact projections are additionally checked with rational original Lorentz boosts and all six generators on each of three Role directions. They are not an assertion that ALL twenty-four independent links are solved. Spatial link Euleri remain generally nonzero even on the new exact Cauchy branch.
+
+## 5. Independent ORIGINAL six-face 4x4 numerical replay and its honest residual
+
+The standalone [finite Cauchy checker](sources/d0_star_rank2_seam_2026-10-21/check_diagonal_coframe_cauchy_recurrence.py) pins the ORIGINAL six-face G2STAR matrix calculator and the actual full N=1 GoldenMaster (K_pre=9, L_gate=20). It symbolically verifies the exact Jacobian (9), continuum flow (10), elimination polynomial (6), radial Ward identity (4) and forced CAR first integral (1). It constructs the algebraic-positive branch and shared next-time boost link by (5)-(7), never requiring a full 40x40 inverse.
+
+The original 4x4 full based-holonomy calculation then verifies q=0 and f=0 at EVERY free temporal cell, and independently differentiates each original diagonal coframe entry with the real CAR forward increments held fixed. Three compact, genuinely curved radius intervals [1,1.2], [0.85,1.15], [0.9,1.4] were tested with n=16,32,64,128 cells. Representative largest deviations on [1,1.2]:
+
+| n | max |X-A| | max |R-r| | max |k1-k1^0| | max off-diagonal coframe Euler |
+|---:|---:|---:|---:|---:|
+| 16 | .00142211 | .01877531 | .00074399 | .00696776 |
+| 32 | .00070911 | .00937059 | .00038965 | .00348381 |
+| 64 | .00035401 | .00468085 | .00019920 | .00174190 |
+| 128 | .00017686 | .00233929 | .00010069 | .00087095 |
+
+On each same run the actual original six-face star zero and all four diagonal coframe source components have floating point error no more than the 1e-9-1e-10 thresholds declared in the executable, and the two real CAR Euler currents are analytically conserved. The off-diagonal coframe source remains NONZERO, as do the spatial proper-link sources, so there is no all42 stationarity claim.
+
+The independent random-diagonal/full4 source replay further shows all SIX temporal-link Euler entries vanish below rational/complex arithmetic tolerance even without any of the above coframe roots. The exact proof (13)-(14) is the basis of the claim.
+
+**Result accounting:** 4 ORIGINAL diagonal coframe +2 scalar Euler +6 temporal-link Euler = 12 raw original finite Euler COMPONENTS exactly zero on the constructed branch; 30 raw components remain. Six exact local Lorentz Noether identities relate components of the complete 40 geometrical source, and can NOT be subtracted a second time as though independent of the six solved temporal-link rows. The analytical existence theorem covers this homogeneous single-direction Cauchy branch, not fixed arbitrary final coframe, not general 4D fields and not the physical H+J+R/D0 Book licence. GR_closed=false.
+
+## 6. The correct next joint problem
+
+This result makes the earlier "39 remaining independent fields" and random one-site 24x24 Cartan inverse framing obsolete ON THE DECLARED RANK-TWO HOMOGENEOUS SECTOR. The next actual map is the remaining off-diagonal coframe and spatial-link Euler covector, evaluated on the EXACT 12-component zero branch (with all real CAR currents preserved); its homogeneous/inhomogeneous gauge and boundary compatibility can be tested separately. If the complement lies in the image of the whole-slab gauge-fixed Jacobian, a true 42-root may be continued. An O(h) residual alone does not imply this.
+
+The original null Brinkmann all40 exact family and the genuinely physical compulsory Book03 price, clock/observer/preparation/oldRIGHT and primitive field writer remain distinct accepted/open carriers. Do not infer a universal physical full GR theorem from this homogeneous recursion. The analytic fold rcrit is a chart limit, not a metric singularity. Preserve the genuine original PF irregularity and the exact source retyping; no sigma-plus detector is physically chosen here.
+
+
+## 7. Exact original Euler SUPPORT: only 18 components remain potentially nonzero
+
+For this SAME spatially homogeneous diagonal-coframe, pure three-boost link and two independent CAR scalar-gradient sector, the remaining source can be reduced further by a finite structural theorem **before** solving another equation. This is not a stochastic rank scan and uses NO approximation in h.
+
+At every based face, the original finite odd curvature \((P-P^{-1})/2\) lies in a small invariant Lorentz Lie subalgebra:
+- the temporal-spatial face (0,i) is a pure boost \(K_i\), because both endpoint spatial links lie in the same 1-parameter boost subgroup;
+- the spatial face (i,j) is inside \(\mathfrak{so}(1,2)\) on the exact three-dimensional subspace span(e0,ei,ej), hence its bivector components can lie ONLY in \(K_i,K_j,J_{ij}\). The fourth internal direction is acted on identically.
+This statement is exact for arbitrary finite boost exponents and all based plaquettes, not just a first curvature Taylor coefficient.
+
+The ORIGINAL diagonal based coframe gives a complementary wedge on the two Role legs u,v. Differentiating one leg \(e^a{}_\mu\) can meet the above curvature support only when the corresponding internal unordered index-pair is its Hodge complement. An exhaustive exact six-face combinatorial certificate therefore gives the EXACT source support
+
+  Coframe (potentially nonzero): 
+    (a,mu)=(0,0),(1,1),(2,2),(3,3),(1,0),(2,0),(3,0).
+  Coframe identically zero:
+    all other 9 of the original 16 independent components.
+
+For the original 24 spatial/temporal Lorentz left-link source components, Section 4 already proves 6 temporal-link Gauss zeros EXACTLY. Three additional spatial-link rows vanish EXACTLY by the same subgroup-support argument: at U_x, the generator J23; at U_y, generator J13; at U_z, generator J12. To see this without restricting the link tangent, choose an actual based spatial plaquette containing Ui and Uj. Every unvaried link acts on span(e0,ei,ej) and identically on the orthogonal fourth internal axis k. A tangent \(J_{jk}\) with j,k perpendicular to i necessarily has at least one internal index OUTSIDE that 3D invariant subspace in each plaquette that contains Ui; multiplying by any existing unvaried group element keeps it outside. It cannot affect the Lie component \(J_{ij}\) to which the original diagonal complementary coframe projects that spatial face. The temporal-spatial face similarly projects only Ki and is already covered by the six temporal-link zeros. These are source identically-zero statements for all original proper-Lorentz variations, not an assertion that the three links or their holonomies are trivial.
+
+Thus the complete original 42-component FIRST Euler covector in this declared rank-two homogeneous sector has the exact support count BEFORE using any stationarity:
+
+| Original field component | Exact structural zeros | Potentially nonzero |
+|---|---:|---:|
+| 16 coframe | 9 | 7 |
+| 24 left-Lorentz link | 6 temporal +3 spatial =9 | 15 |
+| 2 real scalar | 0 generically | 2 |
+| TOTAL | 18 | 24 |
+
+The new Cauchy recurrence of Sections 2-3 then makes all four diagonal coframe entries and both material Euler zero EXACTLY. Therefore, on its constructed nonflat TWO-stream null-kinetic Cauchy family:
+
+  BOX: at most 18 original Euler COMPONENTS can remain NONZERO,
+       namely three (a,mu)=(1,0),(2,0),(3,0) coframe rows
+       and fifteen spatial proper-Lorentz left-link rows.
+
+The exact six local SO^+(1,3) Noether identities relate these components; they are NOT six additional independent equations to subtract blindly. In the original all4x4 numerical replay, all nine forbidden coframe and all nine forbidden link source entries are zero at machine precision even for random nonsymmetric diagonal-coframe/pure-boost controls; the permitted three off-diagonal and multiple permitted spatial-link entries are genuinely NONZERO at small finite h. In particular a reduced action varied ONLY inside diagonal tetrads and prescribed boosts cannot promote this statement to a full42 root: the remaining 18 must be tested as independent ambient variations with the original neighbor faces.
+
+This is the practical architectural reduction: the next source solver needs a small, exact **18-slot observed residual**, not a blind all42 search or one-site 24x24 inverse. This says nothing about whether those 18 slots lie in a globally compatible gauge-fixed field-writer image with a fixed two-ended temporal collar. GR_closed=false.
+
+
+## 8. EXACT six-dimensional Ward rank: all 42 Euler ZERO iff TWELVE chosen original spatial-link sources vanish
+
+The six local original \(\mathrm{SO}^+(1,3)\) Noether relations can be made constructive on THIS specific already-defined finite Cauchy carrier. They are not just a formal statement that "some six combinations must vanish": the actual coefficient matrix restricted to the 18 potentially nonzero source entries has an explicitly invertible minor.
+
+At any spatial homogeneous based site, the actual canonical original star+CAR source is invariant under arbitrary infinitesimal local proper Lorentz \(Z\). At the declared diagonal/pure-spatial-boost field and its already proved E_(U_t)=0, the exact local variation gives
+
+  0 = sum_(a,mu) E_e[a,mu] (Z e)[a,mu]
+      +sum_(i=1..3) sum_(j=0..5)
+         E_(Ui,Xj) * coeff_Xj[ Z - Ui Z Ui^-1 ].           (8.1)
+
+Here each spatial predecessor link contributes the actual RIGHT derivative, rewritten in the original LEFT basis as \(-\operatorname{Ad}_{U_i}Z\); it must NOT be omitted. The original arbitrary fixed PF weights disappear from the complete native N=1 FIRST source because the constructed branch has f=q=0 at every site. This exact identity remains valid for the fully nonlinear native price on this very branch; it is not a continuum Ward assumption.
+
+The original surviving source has 18 coordinates after Sections 3,4,7:
+- Three **off-diagonal coframe** values E_e[1,0],E_e[2,0],E_e[3,0];
+- FIFTEEN original spatial-link Lie source entries:
+  Ux: K1,K2,K3,J12,J13 (five);
+  Uy: K1,K2,K3,J12,J23 (five);
+  Uz: K1,K2,K3,J13,J23 (five).
+All 24 other original Euler entries were already proved structurally/sourced zero in the declared Cauchy branch. These are source COMPONENTS, not 18 independent dynamical degrees of freedom.
+
+Let W be the exact 6x18 coefficient matrix of (8.1), using the six originally accepted Lie generators in order K1,K2,K3,J12,J13,J23. Pick THESE SIX actual source coordinates as W-pivots:
+
+  E_e[1,0], E_e[2,0], E_e[3,0],
+  E_(Uy,K1), E_(Uz,K1), E_(Uy,K3).
+
+For e=diag(X,1/X,R,R), the leading 3x3 boost-row/coframe-pivot block is X*I3 and the rotation-row/coframe-pivot block is ZERO. The selected last three spatial-link pivot columns have rotation-row submatrix
+
+  diag( sinh(h k2), sinh(h k2), -sinh(h k2) )
+
+when \(U_y=\exp(h k_2 K_2),\,U_z=\exp(h k_2 K_3)\). This follows by evaluating the original \(\operatorname{Ad}_{U_i}Z\) with the old proper-Lorentz generators, not by fitting a numerical kernel. Consequently
+
+  BOX: det W_pivot = -X^3 sinh(h k2)^3 != 0             (8.2)
+
+for X>0,h>0,k2!=0. Along the entire present positive-radius original rank-two seed k2(r)>0. Hence W has **exactly rank six** on the actual 18-slot source carrier.
+
+Write the 18-column source vector as (pivots6, targets12). Because W_pivot is invertible, the exact Ward identity implies
+
+  pivots6 = -W_pivot^-1 W_targets * targets12.
+
+Thus ALL original 42 Euler components vanish on the already constructed exact diagonal/matter Cauchy branch **IF AND ONLY IF** the following TWELVE, explicitly identified, ORIGINAL spatial-link Euler source components vanish:
+
+  Ux: (K1,K2,K3,J12,J13) — 5 original independent left-link directions;
+  Uy: (K2,J12,J23)       — 3;
+  Uz: (K2,K3,J13,J23)    — 4.                            (8.3)
+
+This is a **complete ZERO TEST**, not an assertion those twelve already vanish or that twelve unrelated arbitrary constraints are independent. The six omitted pivot source components are then forced zero by the genuine full original on-carrier Ward equations. The reduction is exact at finite h under the stated homogeneous coframe/link ansatz and actual fixed supported first-source premise, including arbitrary (even jagged) positive frozen PF weights. It is NOT a theorem that all arbitrary four-dimensional D0 fields have twelve degrees of freedom or that the missing full 42-row finite root has already been found.
+
+The [standalone checker](sources/d0_star_rank2_seam_2026-10-21/check_ward12_spatial_source_equivalence.py) computes the exact symbolic determinant (8.2), the seven-source coframe support and the complete twelve-target list. It also differentiates all actual 16 coframe and 24 LEFT-link original six-face sources at independent random diagonal/pure-boost finite fields, including predecessor faces. On those NONSTATIONARY tests the exact Ward residual and structural forbidden-source residual are of numerical roundoff size; the twelve target values are demonstrably NONZERO. The negative control is mandatory: rank six does not solve twelve equations.
+
+**Architectural next step:** replace the unconstrained "full42" numerical target on THIS narrow homogeneous two-stream branch by ONE gauge/boundary-compatible whole-slab solver of exactly the 12 specified spatial-link source equations (8.3), coupled to the exact coframe Cauchy map (5)-(7) and the two real CAR histories. Its solution, with correct collar and same complete price, automatically satisfies all original 42 ambient Euler rows by (8.1)–(8.3). A free per-site rotation or an arbitrary second temporal boundary is NOT authorization to declare existence. Outside this homogeneous sector one must return to the original global 42-row system.
+
+
+## 9. CRITICAL source-domain correction: 42-to-12 is a vacuous exact-root route within the nonflat pure-boost stratum
+
+[New exact original 4×4 finite source theorem](A4D_RANK2_PUREBOOST_NO_GO_AND_FULL_SOURCE_EXTENSION_2026_10_21.md) consumes the accepted twelve-source zero test of §8 but proves that the OLD homogeneous diagonal/pure-spatial-boost field stratum cannot contain an exact all42 root when the transverse spatial boost k2 is nonzero in the small original chart. This does NOT invalidate §8 as a conditional zero-test. It reveals that its acceptance condition is unsatisfiable on the exact nonflat branch, because the retained original spatial link Euler component Ux,J12 has the exact strict source
+
+  E_(Ux,J12)=(X R)/(2 h²) cosh(h k1) [cosh(h k2)-1]
+           {cosh(h k1)[cosh(h k2)-1]-[cosh(h k2)+1]} < 0
+
+for X,R,h>0, |h k1|<=1, 0<|h k2|<=1. Its RAW original left-link limit is -X R k2²/2, not zero. The source arises from the actual outgoing AND y-spatial-predecessor original six-plaquette faces, using dR(P)=(dP+P^-1 dP P^-1)/2. No continuum torsion/Einstein equation is inserted. The actual common f=q=0 original N1 Golden same-price first source multiplies this by a NONZERO constant for arbitrary fixed positive PF weights; neither the exact material currents nor the previously solved four diagonal coframe sources can cancel it.
+
+To solve the 12 sources one MUST leave at least one original pure-boost/diagonal/homogeneous ansatz condition. A positive 12×18 Jacobian with the 18 native spatial Lorentz tangent directions IS NOT an inverse on the old 12-source-stratum: adding rotations changes the original support of the 16+24 Euler covector. The independently executed pinned original whole-slab negative control with fixed temporal link ends has full row rank at n=12 (132×198) and n=16 (180×270). It cancels all twelve targets to ~2e-12 but simultaneously turns on O(1) source components previously zero (e.g. temporal links ~0.73, diagonal coframe ~1.3 and false scalar f_star ~1.35). Its O(h) spin corrections jump O(h) at the original fixed collar, so the actual forward temporal curvature gets an O(1) defect. These are not numerical reasons to modify the old action: they are a SOURCE-COMPATIBILITY and **FIELD-STRATUM** control.
+
+The next honest target is therefore NOT a twelve-equation nonlinear solver as claimed by §8's earlier practical suggestion. It is a **full-source / valid local Lorentz quotient** solver on a minimally enlarged original coframe+proper-link carrier, with true temporal/spatial predecessor faces, fixed collar, both real CAR currents, same N1 Golden first source and correct null/cart sign retyping. The accepted original general nondegenerate local SO^+(1,3) quotient has 6 gauge directions among 40 geometric source components, hence 34 quotient components; once a true full-field radial source is solved (on f=q=0) this leaves AT MOST 33 independent quotient-geometric source conditions, not the old off-stratum twelve. Their actual rank and regular inverse must be checked. The original 42-to-12 support and exact 6×6 Ward minor remain scoped research evidence, not a global field-dimension theorem. GR_closed=false.
+
+Replays:
+- \`sources/d0_star_rank2_seam_2026-10-21/check_pureboost_rotation_no_go.py\`: exact hyperbolic finite J12 formula plus 15 original G2STAR full4 variations.
+- \`sources/d0_star_rank2_seam_2026-10-21/check_full_slab_12_target_false_root.py\`: bounded whole-slab false-root test with original based faces and BOTH fixed temporal link endpoints.

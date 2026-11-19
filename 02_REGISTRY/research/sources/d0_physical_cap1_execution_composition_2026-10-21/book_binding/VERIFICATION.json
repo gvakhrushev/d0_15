@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checks": 17,
+  "labels": [
+    "exact Gibbs Book defect with free charges and gains",
+    "necessary sufficient mean normalization identity",
+    "exact last-report gap derivative",
+    "actual cap-one r0 positive below 2^-19",
+    "actual paid readiness bounds",
+    "actual two-query baseline identity",
+    "native moving-query derivative nonzero",
+    "fixed-price full CQ x source strictly negative",
+    "complete cap-one entropy source derivative",
+    "amplitude gap and normalizer reaction signs",
+    "amplitude gap first jet",
+    "amplitude required reaction yields CQ source",
+    "scalar gap and normalizer reaction signs",
+    "scalar gap first jet",
+    "scalar required reaction yields CQ source",
+    "noncommuting pure input finite-heat identity",
+    "finite-polynomial heat mismatch cannot be dropped"
+  ],
+  "precision_digits": 80,
+  "scope": "new symbolic valuation checks plus original cap-one coefficients; no unknown actual price table assigned",
+  "r0": "0.00000185123957848820307628439505498340366171697988",
+  "rx": "0.0000000191688316936114739934989170249244880579280102",
+  "full_CQ_x_source": "-0.000000238542993554469388804405723890579878459581701",
+  "requirements": {
+    "amplitude": {
+      "required_gap_at_origin": "41.1450401741997053440087001634488103514",
+      "required_gap_x_derivative": "-0.03227667502688924194150133902513520212841",
+      "required_Jabs_x_derivative": "0.0000003578144903317040832066085858358698176894"
+    },
+    "scalar": {
+      "required_gap_at_origin": "54.86005356559960712534493355126508046853",
+      "required_gap_x_derivative": "-0.04303556670251898925533511870018026950454",
+      "required_Jabs_x_derivative": "0.0000004770859871089387776088114477811597569192"
+    }
+  },
+  "elapsed_seconds": 0.088704375
+}

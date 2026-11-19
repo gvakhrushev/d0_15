@@ -228,7 +228,7 @@
     "02_REGISTRY/research/A4D_NATIVE_QUADRATIC_GRAM_FLUX_BOUNDARY.md": "b4224373b6e30632075b612feea65e2a585430d13b40742646e6d3b80ebc9e93",
     "02_REGISTRY/research/A4D_STAGGERED_PRIMAL_DUAL_HODGE_CARRIER.md": "68f7431c481e23a506f5ae5755916a73dc56917368485716bccfe133cff84b14",
     "02_REGISTRY/research/certificates/a4d_native_flux_gate.lean": "1b29ca4a4e8463771d3b4f4b391365f17d7f28bd81ec6bc4f0c4b1f6e4a0e3fc",
-    "02_REGISTRY/research/certificates/a4d_native_flux_gate_results.json": "a8c1efd9ecce9ccfd3865522df4e61ce96cb31c2c79dedd23d0b69e2b8fb8172",
+    "02_REGISTRY/research/certificates/a4d_native_flux_gate_results.json": "1ef65eff28a8a8c72d65c705706cb02782d4316ddcc1bc96a6ad4e7a04662b60",
     "02_REGISTRY/research/certificates/a4d_native_measure_refinement.lean": "14a9d0a561297f801aee679e6de95373b62fa8bb0d7bd80978d77c7c7f6943d9",
     "02_REGISTRY/research/certificates/a4d_native_measure_refinement_results.json": "8da2eef43e5eedffb6bd4af163e7b5a29896954a12a35dddf1e7f686a51a7957",
     "03_FORMALIZATION/D0/Geometry/A4DCoframeParentConstraint.lean": "23bbc1405ae48cbcc1b73f5472140e26397e5508fd7c980fae5fe562f5f7e537",

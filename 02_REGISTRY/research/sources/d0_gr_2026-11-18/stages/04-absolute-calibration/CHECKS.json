@@ -1,0 +1,35 @@
+{
+  "results": {
+    "check_h1_finite.py": {
+      "status": "PASS",
+      "frozen_result": "h1_finite_result.json",
+      "stdout_sha256": "290dcdf7d5e6fd70c208e0bc8931ed38fa0efd8c66b0712e7990340bb4c9bc60"
+    },
+    "check_quantum_record.py": {
+      "status": "PASS",
+      "frozen_result": "quantum_record_result.json",
+      "stdout_sha256": "2556e59669f5dc5d5462b3ee666154c38cc24c01ebca476a08b6b5c7af3d5538"
+    },
+    "check_renewal.py": {
+      "status": "PASS",
+      "frozen_result": "renewal_result.json",
+      "stdout_sha256": "046abd7b65205d2b830905f1dc4fb95016e5ec6f42a2aeb0b3fdf46c0358c864"
+    },
+    "diagnostics/check_cq_bright_terms.py": {
+      "status": "PASS",
+      "frozen_result": "diagnostics/cq_bright_terms_result.json",
+      "stdout_sha256": "120355a724bcf12ea6ed589f64fdbf0c26ed3c73fa53dd07b7662672eef9d1f9"
+    },
+    "diagnostics/check_postpvm.py": {
+      "status": "PASS",
+      "frozen_result": null,
+      "stdout_sha256": "a130780bfbc49573ea6d4aeb9711c39198ae555e5cf58ac35ec690f01c4cb8a6"
+    }
+  },
+  "prior_diagnostics": "diagnostics/TESTS.json",
+  "separate_verification": "all five rerun from a temporary copy; JSON equality for four full receipts and PASS for terminal word checks",
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "verified_user_input_archive_sha256": "7390dc06b71682aff215e799f77e324e93758818a2f3f7e7e453da0176f4060b",
+  "source_commit": "076d5d5a7b366c0dd0970f388df7a9e6895498c4",
+  "GR_closed": false
+}

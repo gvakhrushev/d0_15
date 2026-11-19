@@ -1,0 +1,208 @@
+{
+  "schema": "a4d-y-curved-joint-two-ratio-modular-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-TWO-RATIO-THREE-PRIME-MODULAR-ELIMINATION-CERTIFIED",
+  "background": "z=1 exact Y vacuum; zone-folded 68-row interior joint operator",
+  "ratio_plane": "rho0=1, rho1=x, rho2=y, rho3=1",
+  "integer_clear": "multiply each selected entry by 14*x*y",
+  "chart_column_hashes": [
+    "d6c54b08aa8de87a8d59969acaf3b5f14f0aed8f5cda66d614c47f3b1bbe6586",
+    "14e26dbe1157b2ed917452970fc1ddfdc671b2c9bf86bf0dce20cd87cdd5050f",
+    "7a76061c6ee79d1112a005d8aa8b73af9151e2787fda7d219ad096cf02d7b078",
+    "89f83d51b6f121b435d122d23f6077e06bcec893524532ff6a148551c2d970b2"
+  ],
+  "assignment_bounds": [
+    [
+      [
+        45,
+        99
+      ],
+      [
+        41,
+        87
+      ]
+    ],
+    [
+      [
+        41,
+        90
+      ],
+      [
+        49,
+        102
+      ]
+    ],
+    [
+      [
+        43,
+        98
+      ],
+      [
+        43,
+        96
+      ]
+    ],
+    [
+      [
+        50,
+        104
+      ],
+      [
+        43,
+        93
+      ]
+    ]
+  ],
+  "trimmed_chart_shapes": [
+    [
+      41,
+      35
+    ],
+    [
+      39,
+      39
+    ],
+    [
+      44,
+      41
+    ],
+    [
+      38,
+      37
+    ]
+  ],
+  "primes": [
+    664448401,
+    996672601,
+    1328896801
+  ],
+  "records": [
+    {
+      "prime": 664448401,
+      "chart_supports": [
+        [
+          9,
+          49,
+          6,
+          40,
+          1184
+        ],
+        [
+          6,
+          44,
+          9,
+          47,
+          1271
+        ],
+        [
+          6,
+          49,
+          7,
+          47,
+          1448
+        ],
+        [
+          12,
+          49,
+          6,
+          42,
+          1174
+        ]
+      ],
+      "resultant_degrees": [
+        2576,
+        2742
+      ],
+      "resultant_gcd": "x^229*(x-1)^11",
+      "x_equals_one_y_gcd": "(y-1)^3",
+      "torus_zero_set": "(x,y)=(1,1)"
+    },
+    {
+      "prime": 996672601,
+      "chart_supports": [
+        [
+          9,
+          49,
+          6,
+          40,
+          1184
+        ],
+        [
+          6,
+          44,
+          9,
+          47,
+          1271
+        ],
+        [
+          6,
+          49,
+          7,
+          47,
+          1448
+        ],
+        [
+          12,
+          49,
+          6,
+          42,
+          1174
+        ]
+      ],
+      "resultant_degrees": [
+        2576,
+        2742
+      ],
+      "resultant_gcd": "x^229*(x-1)^11",
+      "x_equals_one_y_gcd": "(y-1)^3",
+      "torus_zero_set": "(x,y)=(1,1)"
+    },
+    {
+      "prime": 1328896801,
+      "chart_supports": [
+        [
+          9,
+          49,
+          6,
+          40,
+          1184
+        ],
+        [
+          6,
+          44,
+          9,
+          47,
+          1271
+        ],
+        [
+          6,
+          49,
+          7,
+          47,
+          1448
+        ],
+        [
+          12,
+          49,
+          6,
+          42,
+          1174
+        ]
+      ],
+      "resultant_degrees": [
+        2576,
+        2742
+      ],
+      "resultant_gcd": "x^229*(x-1)^11",
+      "x_equals_one_y_gcd": "(y-1)^3",
+      "torus_zero_set": "(x,y)=(1,1)"
+    }
+  ],
+  "modular_conclusion": "for each pinned prime, on (Fbar_p^*)^2 the four selected 68-minors have common zero-set exactly (1,1)",
+  "next_gate": "characteristic-zero lift of the two-ratio elimination, then the genuinely three-ratio interior locus",
+  "scope_fence": [
+    "exact finite-field elimination at three independent good primes",
+    "does not by itself prove the characteristic-zero two-ratio theorem",
+    "does not prove the full three-ratio or all-Bloch unit-torus locus",
+    "no nonlinear continuation or task-level response terminal"
+  ]
+}

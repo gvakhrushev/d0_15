@@ -1,0 +1,40 @@
+{
+  "input_commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md",
+      "sha256": "21e281f713b1be64a35b4f1c432a9335a7584c202b056f66ceeb11dd9811ecf8",
+      "git_blob": "e565b713b53201f34d1d8bb80b97bc09b8684cf6"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md",
+      "sha256": "badfe4177ddcd90f9b138419b84afa8f828574c7b7d191df5fec8f266f1130f9",
+      "git_blob": "69928e861d1018e72dbe40dcd2eb61efd4bcd6fb"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+      "sha256": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
+      "git_blob": "fda1294b8d9794a62b86faaa19e3cc1a459e031d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FIELD_WRITER_BRIDGE.md",
+      "sha256": "89406be7d000892ba4ac062f19bb03dd86d8c9d3f04bc8a7b8de39dd07b66a2a",
+      "git_blob": "fa59e9f59e061e6bcda0f05f29abed1e641f8ebb"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md",
+      "sha256": "b9dd63f0888a062941c1744d800120e47d20777f429f892f5a98c504a3c0a4be",
+      "git_blob": "601f4a6aeb093ab547692015b31a92be48b41c61"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_field_instrument_jet_check.py",
+      "sha256": "4486abe0799b0a60a3191cb6bf19d85feaebaed7ace876f9132325932bfb1536",
+      "git_blob": "2acc4a7f7f0832a776e255405a33cf349801987a"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_field_instrument_jet_results.json",
+      "sha256": "de7e47f0beb3275ea386c7a2540e6f2a6987f21c542446c342e50e9c1c8754be",
+      "git_blob": "48f24f9bcc61c19847ecee7a1eefee20aac14353"
+    }
+  ]
+}

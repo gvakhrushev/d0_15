@@ -1,0 +1,55 @@
+{
+  "source_checkpoint": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "files": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "path": "04_CERTIFICATES/order_memory_control_verify.py",
+      "git_blob": "ba02280e475b0124395622bfd99257c2820ae026",
+      "sha256": "bb72fe40326dc2d65d55f4f6d73564b7faef8f247774bf51771e3110f04e0c1a"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean",
+      "git_blob": "7b59090312c610e1e19f426d7ed8f4a982ebf296",
+      "sha256": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/OrderMemoryControl.lean",
+      "git_blob": "b7e7fb4bda7ad2d6d67ce911b042c6ac7b493cc4",
+      "sha256": "2f36d015408ddac279515bde6d52dde5c8d347a8572be73c95d0046beef849dc"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean",
+      "git_blob": "6c31b0c089869f7e6fc07185ef343c6bdce35b2d",
+      "sha256": "c350ead450996bfb7da20a987454b57da94dc098d17efeafc85a56b751664aa4"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean",
+      "git_blob": "14e5e8404fc729eac4035ea1e708fc6ccdfea566",
+      "sha256": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_spin_q8_car16_2026-10-20/check_original_car16_clifford_spin_golden.py",
+      "git_blob": "0131042aced2fe094fcf874da7b0ec1c2c49c51d",
+      "sha256": "41dc0b5b087bc6313eb6c39eac21d1722727280edc9ce25260fb3d327ffa503b"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean",
+      "git_blob": "1acfaec4d7a41b50f50dd55cced7613b80852514",
+      "sha256": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean",
+      "git_blob": "8ff68576d92ff67532733a0ca2646de9d50105e2",
+      "sha256": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean",
+      "git_blob": "032cb37242abebee30f6a8715b90a61235bec348",
+      "sha256": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388"
+    }
+  ]
+}

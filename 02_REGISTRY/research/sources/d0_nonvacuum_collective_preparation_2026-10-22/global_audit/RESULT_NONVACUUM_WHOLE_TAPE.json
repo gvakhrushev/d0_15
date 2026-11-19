@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "exact_rational_checks": 103,
+  "new_scope": "nonzero-mean whole-tape global source cancellation and joint normal control",
+  "base_mean": "1/3",
+  "kernel_slots": 3,
+  "reports": 2,
+  "norm_bound_B": "8/9",
+  "normal_variance": [
+    {
+      "N": 3,
+      "variance": "16/243",
+      "bound": "64/27"
+    },
+    {
+      "N": 4,
+      "variance": "8/243",
+      "bound": "32/27"
+    },
+    {
+      "N": 5,
+      "variance": "8/405",
+      "bound": "32/45"
+    },
+    {
+      "N": 6,
+      "variance": "16/1215",
+      "bound": "64/135"
+    },
+    {
+      "N": 7,
+      "variance": "16/1701",
+      "bound": "64/189"
+    },
+    {
+      "N": 8,
+      "variance": "4/567",
+      "bound": "16/63"
+    }
+  ],
+  "noncritical_control": [
+    {
+      "N": 3,
+      "N_times_variance": "16/27",
+      "field_norm_squared": "32/81"
+    },
+    {
+      "N": 4,
+      "N_times_variance": "128/243",
+      "field_norm_squared": "32/81"
+    },
+    {
+      "N": 5,
+      "N_times_variance": "40/81",
+      "field_norm_squared": "32/81"
+    },
+    {
+      "N": 6,
+      "N_times_variance": "64/135",
+      "field_norm_squared": "32/81"
+    },
+    {
+      "N": 7,
+      "N_times_variance": "112/243",
+      "field_norm_squared": "32/81"
+    },
+    {
+      "N": 8,
+      "N_times_variance": "256/567",
+      "field_norm_squared": "32/81"
+    }
+  ],
+  "off_iid_report_covariance": "1/27648",
+  "same_mean_type_pair": "-1/3",
+  "iid_pair": "1/9",
+  "original_full42_replayed": false,
+  "golden_compiler_replayed": false,
+  "physical_Book_Info_selected": false,
+  "density_cone_stationarity_claimed": false,
+  "GR_closed": false
+}

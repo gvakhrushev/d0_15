@@ -1,0 +1,46 @@
+{
+  "checker_sha256": "f18480d5beffbc2bac95853b0082539213ad1b80245a04b537678124a09da800",
+  "checks": [
+    "actual_cayley_unitary",
+    "original_escape_no_new_action",
+    "terminal_constraints_commute_strongly",
+    "vector_constraints_antihomomorphism",
+    "all_vector_constraints_zero_on_graph",
+    "weak_bracket_zero_for_arbitrary_price",
+    "terminal_graph_is_lagrangian",
+    "reflection_involution",
+    "reflection_return_original_formula",
+    "commuting_true_internal_stationarity",
+    "commuting_stationary_value_constant",
+    "commuting_internal_rank_and_gauge_kernel",
+    "commuting_ward_range_compatibility",
+    "commuting_all_allowed_generalized_inverses",
+    "commuting_full_boundary_schur_is_zero",
+    "maximal_escape_true_internal_stationarity",
+    "maximal_escape_stationary_value_constant",
+    "maximal_escape_internal_rank_and_gauge_kernel",
+    "maximal_escape_ward_range_compatibility",
+    "maximal_escape_all_allowed_generalized_inverses",
+    "maximal_escape_full_boundary_schur_is_zero",
+    "bad_source_G0_is_generalized_inverse",
+    "bad_source_G1_is_generalized_inverse",
+    "incompatible_kernel_source_changes_schur"
+  ],
+  "exact_controls": 24,
+  "negative_control_generalized_inverse_ambiguity": "1",
+  "reduction_branches": [
+    {
+      "branch": "commuting",
+      "interior_nonzero_curvature": "8*z",
+      "reduced_boundary_hessian": "zero"
+    },
+    {
+      "branch": "maximal_escape",
+      "interior_nonzero_curvature": "-8*z/(1 - z)",
+      "reduced_boundary_hessian": "zero"
+    }
+  ],
+  "scope": "exact original finite return / canonical algebra; no native continuous-admission, full42, local lapse, refinement or GR closure",
+  "status": "PASS",
+  "sympy_version": "1.14.0"
+}

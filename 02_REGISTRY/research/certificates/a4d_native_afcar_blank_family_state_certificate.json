@@ -1,0 +1,68 @@
+{
+  "checker_sha256": "8a71fd0e1e25b12f73383604245ab34a2aaae227a4b739e65370603c4ba006a2",
+  "exact_check_count": 19,
+  "exact_checks": [
+    "source_sha256:02_REGISTRY/research/A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md",
+    "source_sha256:02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md",
+    "source_sha256:02_REGISTRY/research/certificates/a4d_native_afcar_current_commutant.py",
+    "source_sha256:02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py",
+    "source_sha256:02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py",
+    "source_sha256:02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py",
+    "source_sha256:02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py",
+    "existing_level3_weld_isometry",
+    "entire_existing_blank_family_binds_to_AF_path_pair",
+    "blank_family_normalization_is_x2_plus_y2",
+    "source_path_frame_and_canonical_corner_have_owned_dimensions",
+    "source_norm_is_preserved_for_all_x_y",
+    "whole_blank_off_corner_gram_exact",
+    "whole_blank_off_corner_cross_term_vanishes",
+    "rational_interval_p_brackets_positive_golden_root",
+    "rational_interval_a_brackets_sqrt_p",
+    "rational_interval_sqrt2_is_outward",
+    "first_blank_direction_off_corner_weight_in_0_5663_0_5664",
+    "second_blank_direction_off_corner_weight_in_0_9934_0_9936"
+  ],
+  "off_corner_gram": [
+    [
+      "8*sqrt(2)*a*p + 16*a*p - 10*a - 5*sqrt(2)*a - 5*sqrt(2)*p + 27*p/2 - 15/2 + 3*sqrt(2)",
+      "0"
+    ],
+    [
+      "0",
+      "-26*a*p - 8*sqrt(2)*a*p + 5*sqrt(2)*a + 16*a - 49*p/2 + 5*sqrt(2)*p - 3*sqrt(2) + 16"
+    ]
+  ],
+  "off_corner_weight_bounds": {
+    "all_normalized_blank_states_lower_bound": "5663/10000",
+    "x_direction": [
+      "5663/10000",
+      "5664/10000"
+    ],
+    "y_direction": [
+      "9934/10000",
+      "9936/10000"
+    ]
+  },
+  "proof": "02_REGISTRY/research/A4D_NATIVE_AFCAR_WHOLE_BLANK_STATE_BOUNDARY.md",
+  "proof_sha256": "f632ddfebbabfd3a9dcc254de57ab3aedcc7e04a00c5d0ebf799f5ab577e1751",
+  "schema": "d0-native-afcar-blank-family-state-boundary/1",
+  "scope": {
+    "all_states_in_existing_real_whole_blank_family_match": false,
+    "curved_solution_or_GR_established": false,
+    "different_AF_path_identification_excluded": false,
+    "fixed_level3_same_simple_path_canonical_state_match_exists": false,
+    "metric_source_or_Ward_identity_established": false,
+    "other_native_preparation_families_excluded": false,
+    "physical_admission_established": false
+  },
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_AFCAR_CURRENT_COMMUTANT_BOUNDARY.md": "36f77dea7cc868b74bb656c928b3897d5ef42bc45cfde6006070cbcfcf2b6bd9",
+    "02_REGISTRY/research/A4D_NATIVE_CORRELATED_CURRENT_TRANSITION.md": "040f26ba81a25959add549d01fb592c19bf102e6081e32e5b64a7102ab6fdc0c",
+    "02_REGISTRY/research/certificates/a4d_native_afcar_current_commutant.py": "378a4d39d5e4cb525c653d869900e1926b6fcbea9243f619513af31978098dee",
+    "02_REGISTRY/research/certificates/a4d_native_correlated_current_transition.py": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
+    "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation.py": "9a016fa4b1a8261a29f626ed7450db7987727957e634799519aede0e3ab587ee",
+    "02_REGISTRY/research/certificates/a4d_native_jones_record_transport.py": "b19f6c864af7e75c2a48d9892692b4d94337d06c04a83013b180148a1752c53f",
+    "02_REGISTRY/research/certificates/a4d_native_reference_memory_preparation.py": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a"
+  },
+  "status": "PASS"
+}

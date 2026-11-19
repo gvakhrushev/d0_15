@@ -38,7 +38,7 @@
     "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/A4DSolderMetricCompletion.olean": "a0b8d9819565fa55004d861ae5b8048d1e842a48a4f79bf2cd46f686e71fe47c",
     "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/A4DSymRoleCentralDifference.olean": "c9062e8d1afc5275c234455bd97ce73535bf6af8cca51b7b22250a6757ce3ee5",
     "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveAffineCartanConnection.olean": "a3e15462326a58685566e1e76d829b7b0e5b8422b21d28df65d877122f2ee672",
-    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveAffineExteriorLink.olean": "510f7cfb98ae7330565bd1cb828be511479c47c2c3abec6f85f43939b03d0106",
+    "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveAffineExteriorLink.olean": "8976729da8ab836cb1926b3d1e53d8d41059f64007c5fa1a8576f32ac8b43150",
     "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveCARDirac.olean": "90c9ab21d0c5dd3c039efd9583125f309198834a051068e04accf117a8f1f527",
     "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveCARFockCarrier.olean": "20d909cacdf6d332ece5515ebc371c4e501a3a9e61b617d72293374105dd5699",
     "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveCARRelations.olean": "40daf7caa66319bdba99e0c144b11e3687a4beb9f56dd7cd68f217b1a08c214c",
@@ -295,7 +295,7 @@
     "03_FORMALIZATION/D0/Geometry/A4DSolderMetricCompletion.lean": "43e2e55c79edae8f17e891c7ad600a7a0609e2d51ef0953d7abd11bcfecc16fa",
     "03_FORMALIZATION/D0/Geometry/A4DSymRoleCentralDifference.lean": "b7f418b6de484f391d6270cb3f1140aa3e4e0007662c0f820e899d673480d46e",
     "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean": "9a342468ef9c04f28c68b59acb32263e141ed184f2bf49a085869632930c1549",
-    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARDirac.lean": "d12ee600d7976228ffcb88e5c40c08d66cd361664901594ea0379bf2b97a2388",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
     "03_FORMALIZATION/D0/Geometry/ArchiveCARRelations.lean": "846fddef981b82357bab5b1a4de72d7f27bdfc6321ed41bfdc26e410cbd0178d",
@@ -431,6 +431,8 @@
     ".lake/build/lib/lean/D0/Matter/FiniteSelector.trace": "78e5428a687bf092d38887d3f9c06280ea04ca1b30f32d903aa41670bc4bdfe3",
     ".lake/build/lib/lean/D0/Phase.trace": "ac4aa022d0c8fab4b36e32ea0ff955e483669e25ff0e9f7af5a66e892369c64b"
   },
+  "revalidated_on_head": "dbb24770e589072140c8187d562f6f6e63ef18f9",
+  "revalidation_note": "The transitive ArchiveAffineExteriorLink owner was rebuilt in its recorded overlay from current source; this capsule was replayed against the updated owner and its printed output remained byte-identical.",
   "scope": "18 research propositions: generic coefficient-shift adjoint defect and own-axis commutation, exact warped matrix square including its commutator, positive projection-variance identity and trace, sign-conjugacy trace/adjoint/product preservation, actual ABCD-versus-ACDB order and exact all-entry integer/real CAR sign conversion. Three actual owner axiom closures and five defining terms are printed. The literal abstract-exterior/counting adjoint bridge, nonconstant field specialization, differential heat variation, and full-G gauge Ward retain separate analytic/certificate status. No changed stored codifferential, new action, selected bootstrap heat, native admission/Euler solution, physical Ward/GR or D0.All claim.",
   "source_commit": "5fdddb1ff924de12b38c886999a40662628cc313",
   "source_overlay_rebuilds": [
@@ -578,19 +580,19 @@
         "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveAffineExteriorLink.olean",
         "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean"
       ],
-      "compiler_stdout": "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean:349:81: warning: This simp argument is unused:\n  Finset.sum_apply\n\nHint: Omit it from the simp argument list.\n  simp [archiveSolderedForwardDifferential, archiveSolderedCreateDirection_flat,\u0335 \u0335F\u0335i\u0335n\u0335s\u0335e\u0335t\u0335.\u0335s\u0335u\u0335m\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean:397:80: warning: This simp argument is unused:\n  Finset.sum_apply\n\nHint: Omit it from the simp argument list.\n  simp [archiveSolderedCodifferential, archiveSolderedAnnihilateDirection_flat,\u0335 \u0335F\u0335i\u0335n\u0335s\u0335e\u0335t\u0335.\u0335s\u0335u\u0335m\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean:447:6: warning: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean:434:15: warning: This simp argument is unused:\n  archiveAffineCoChainGauge\n\nHint: Omit it from the simp argument list.\n  simp only [a\u0335r\u0335c\u0335h\u0335i\u0335v\u0335e\u0335A\u0335f\u0335f\u0335i\u0335n\u0335e\u0335C\u0335o\u0335C\u0335h\u0335a\u0335i\u0335n\u0335G\u0335a\u0335u\u0335g\u0335e\u0335,\u0335 \u0335Pi.sub_apply, Pi.smul_apply] at hpull hsub hsm\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n",
-      "elapsed_seconds": 3.6,
+      "compiler_stdout": "/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean:349:81: warning: This simp argument is unused:\n  Finset.sum_apply\n\nHint: Omit it from the simp argument list.\n  simp [archiveSolderedForwardDifferential, archiveSolderedCreateDirection_flat,\u0335 \u0335F\u0335i\u0335n\u0335s\u0335e\u0335t\u0335.\u0335s\u0335u\u0335m\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean:428:80: warning: This simp argument is unused:\n  Finset.sum_apply\n\nHint: Omit it from the simp argument list.\n  simp [archiveSolderedCodifferential, archiveSolderedAnnihilateDirection_flat,\u0335 \u0335F\u0335i\u0335n\u0335s\u0335e\u0335t\u0335.\u0335s\u0335u\u0335m\u0335_\u0335a\u0335p\u0335p\u0335l\u0335y\u0335]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean:478:6: warning: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\n/Users/grigorijvahrusev/.codex/worktrees/d0-native-source/d0_15/03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean:465:15: warning: This simp argument is unused:\n  archiveAffineCoChainGauge\n\nHint: Omit it from the simp argument list.\n  simp only [a\u0335r\u0335c\u0335h\u0335i\u0335v\u0335e\u0335A\u0335f\u0335f\u0335i\u0335n\u0335e\u0335C\u0335o\u0335C\u0335h\u0335a\u0335i\u0335n\u0335G\u0335a\u0335u\u0335g\u0335e\u0335,\u0335 \u0335Pi.sub_apply, Pi.smul_apply] at hpull hsub hsm\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n",
+      "elapsed_seconds": 21.19,
       "exit_code": 0,
       "module": "D0.Geometry.ArchiveAffineExteriorLink",
-      "olean_sha256": "510f7cfb98ae7330565bd1cb828be511479c47c2c3abec6f85f43939b03d0106",
+      "olean_sha256": "8976729da8ab836cb1926b3d1e53d8d41059f64007c5fa1a8576f32ac8b43150",
       "output_path": "/var/folders/f0/j3_x8lhj6z9bjs5c0l8tbhxh0000gn/T/d0-soldered-source-overlay-6idlzit2/D0/Geometry/ArchiveAffineExteriorLink.build_output.txt",
-      "output_sha256": "768ec7accda1c77804c46a6dffaad0e895fea2f244506293e7ebecf7280af6ff",
-      "source_sha256": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1"
+      "output_sha256": "e19480d118691b0aa4273bf269da24fb2714e2251c640a88220d9b6a077fadd1",
+      "source_sha256": "2ccca18cf8ca66b9e1aa020301ce0d84d6fcd12563e913323482ce139928e5fe"
     }
   ],
   "status": "PASS",
   "verified_overlay_receipt": {
     "path": "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_lean_results.json",
-    "sha256": "1c99019091bd543fb43d1e8aafea3c83f656a1a45b5d7b54793a908d7914dc40"
+    "sha256": "f63a2497edd9a988257307435deadef26a93a51868e9706ad1b3903649c92505"
   }
 }

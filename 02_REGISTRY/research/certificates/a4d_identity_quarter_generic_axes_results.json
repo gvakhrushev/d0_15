@@ -1,0 +1,102 @@
+{
+  "schema": "a4d-identity-quarter-generic-axes-control-v1",
+  "coframe": [
+    [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1/7",
+      "1",
+      "1/5",
+      "0"
+    ],
+    [
+      "1/11",
+      "1/9",
+      "1",
+      "1/6"
+    ],
+    [
+      "0",
+      "1/8",
+      "1/10",
+      "1"
+    ]
+  ],
+  "amplitude": "1/5",
+  "axis_records": [
+    {
+      "role": 0,
+      "parity": 0,
+      "connection_nonzero": 0,
+      "solder_nonzero": 0,
+      "kappa": "-956869/518400",
+      "cayley_denominator": "52796869/12960000"
+    },
+    {
+      "role": 0,
+      "parity": 1,
+      "connection_nonzero": 0,
+      "solder_nonzero": 0,
+      "kappa": "-956869/518400",
+      "cayley_denominator": "52796869/12960000"
+    },
+    {
+      "role": 1,
+      "parity": 0,
+      "connection_nonzero": 0,
+      "solder_nonzero": 0,
+      "kappa": "3024943/4268880",
+      "cayley_denominator": "423863057/106722000"
+    },
+    {
+      "role": 1,
+      "parity": 1,
+      "connection_nonzero": 0,
+      "solder_nonzero": 0,
+      "kappa": "3024943/4268880",
+      "cayley_denominator": "423863057/106722000"
+    },
+    {
+      "role": 2,
+      "parity": 0,
+      "connection_nonzero": 0,
+      "solder_nonzero": 0,
+      "kappa": "122743535/122943744",
+      "cayley_denominator": "2434326173/614718720"
+    },
+    {
+      "role": 2,
+      "parity": 1,
+      "connection_nonzero": 0,
+      "solder_nonzero": 0,
+      "kappa": "122743535/122943744",
+      "cayley_denominator": "2434326173/614718720"
+    },
+    {
+      "role": 3,
+      "parity": 0,
+      "connection_nonzero": 0,
+      "solder_nonzero": 0,
+      "kappa": "619889681/768398400",
+      "cayley_denominator": "76219950319/19209960000"
+    },
+    {
+      "role": 3,
+      "parity": 1,
+      "connection_nonzero": 0,
+      "solder_nonzero": 0,
+      "kappa": "619889681/768398400",
+      "cayley_denominator": "76219950319/19209960000"
+    }
+  ],
+  "conclusion": "all eight role/parity Cayley axes are exact joint vacua at this nonorthogonal rational coframe",
+  "scope_fence": [
+    "one exact rational coframe/amplitude control; all-coframe theorem uses role permutation and polynomial continuation",
+    "no classification of mixed amplitudes away from the identity chart",
+    "no varying-coframe nonlinear continuation or owner-sum response limit"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "bound_and_type": {
+    "common_normalizer_repairs_relative_gap": false,
+    "continuous_g_window": "0<=g<=4p^3<1",
+    "counting_port_gain_difference": 2,
+    "exact_bound": "14641*p^6/1327104 times Tr(R_clk), R_clk=T_clk^*T_clk",
+    "k1_natural_log_feedback_lower_bound": {
+      "rational_lower": "4931903343237573439238869169/8021851454569264181346324971520",
+      "rational_upper": "164396778107919114641296127/267395048485642139378210832384"
+    },
+    "oldRIGHT_multiplicity": 128,
+    "required_absolute_amplitude_gain_difference": "3/2"
+  },
+  "determinant_transport": {
+    "commuting_projector_assumed": false,
+    "fixture_DATA_dimension": 3,
+    "projector_rank": 2,
+    "source_first_derivative": 0,
+    "source_second_derivative": "2*r*z*p^3*Tr(K_reduced)>0 when clock return is nonzero"
+  },
+  "native_complement": {
+    "advanced_start_only_clock_feedback": "I",
+    "c0": "G_P",
+    "c1": "G_P^-1",
+    "clock_fixture_is_physical_elapsed_clock_transport": false,
+    "clock_reset_inferred": false,
+    "full_local_generator_rank": 8,
+    "new_common_recombiner_forward_letters": 3,
+    "nonquery_common_stages": "4+14k plus actual query/control/clock transport",
+    "recombined_true_feedback": "I-R_clk tensor H^*B^4H",
+    "unrecombined_true_feedback": "I-p*R_clk tensor B^4; R_clk=T_clk^*T_clk"
+  },
+  "new_primary_spectral_replay": false,
+  "physical_clock_cut_or_full_Book_selected": false,
+  "source_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md": "f09c24bb7b8ef5f512555257dcd9a335571c052b452482d2c31a3b8e586efdc5",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FIXED_CLOCK_PREPARATION_BANK.md": "a922a3aeaabe8dfb68dc28e4d788c708b496a1081a3a0ab8cf241fd91fbaf88e",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md": "b9dd63f0888a062941c1744d800120e47d20777f429f892f5a98c504a3c0a4be",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md": "2e906213861d0c4d1812e1ec8608aec571aeb18230fce8f791fb4cce6b4c2c1b",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_RETAINED_CHOICE_DISPATCH.md": "6f4289d101d2b3cd70f33a14828e2f6da43bfec4b7e58765b8aad1278f61c065",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PAID_RANDOM_CHOICE_MINIMUM.md": "30fe9fe6e48f6a978b6f5b7762bced2824ca3342043a566fc4e94723ae6d8df3",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PAID_RETURN_PRICE.md": "2fdf545aa33e3c85f9ef81398fe604a4770c0af76ee872845beefd4f365cfcc1",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_COMPLETE_CODE_SOURCE.md": "7a38155f37b98fabdd358271be52ad4919a0b28963a5fb952d91da049eba4424",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md": "66108133dc615593e50e634274005a5d904b533f3a2f3fd7861a57b2557b8b50",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md": "f45c6b301aad0d5601fc771b20550072ad8eeb579c8a701ec51c91b249d64f89",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE_CERTIFICATE.json": "9c910c2e28d02af5fd3a8642d98d01b8c58aeb0a9a55ccf3612a5bc80e397785",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_car_actuated_metric.py": "72b2743f2f4c9408ceafe29dc691786c5011c4d1133d5fa6ebdb671a230bc3fa",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_coherent_choice_source.py": "f5422b5ed923daab8bf7ed8eda89046fee6abe987fce2e93fe2094eac9e6943a",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_retained_choice_dispatch.py": "4c0cfe7af38ca3d768bb29b47b1b7300504ebdaa90a3bdae0f3a5910ec72bc67",
+    "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md": "75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036",
+    "02_REGISTRY/research/sources/d0_native_price_source_synthesis_2026-10-20/paired_feedback.md": "72e241a39b0142a157693e575aaa86fcfadcfba698cadaddf0db274b81a68b62",
+    "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md": "9a441405c455adda9651f88c21fcda4d9383673a3718e88a93aeb50467133e71",
+    "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/prepared_price_feedback.md": "73bf64d8c05b2624e092d851cab5f11019fd886c74d6b332ed97f4d4f4d4d434"
+  },
+  "status": "PASS"
+}

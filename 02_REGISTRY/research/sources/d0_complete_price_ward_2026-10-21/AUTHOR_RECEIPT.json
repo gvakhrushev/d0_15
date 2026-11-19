@@ -1,0 +1,76 @@
+{
+  "status": "AUTHOR_CHECKS_PASS_NOT_INDEPENDENT_ACCEPTANCE",
+  "source_commit": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "checks": 200,
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 python check_complete_price_ward.py",
+    "OPENBLAS_NUM_THREADS=1 python -O check_complete_price_ward.py"
+  ],
+  "normal_and_optimized_stdout_identical": true,
+  "normal_and_optimized_result_identical": true,
+  "artifacts": {
+    "PROOF.md": {
+      "sha256": "f8a766af9e747e9500266ddc8f3773645667fc0ca312088845547d5f6f418148",
+      "git_blob": "b51a3fc3df1c29158361ab2ee5766a15e5e21b95",
+      "bytes": 21146
+    },
+    "check_complete_price_ward.py": {
+      "sha256": "cf1206853919812655dd34e81363c694b3b03d020e51e06838ed995894a778c5",
+      "git_blob": "74d1792798d39a04eb0753e2f18793e0d19e5223",
+      "bytes": 15392
+    },
+    "RESULT.json": {
+      "sha256": "787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0",
+      "git_blob": "514df7e28b86e5c98ae34cd0cc52cbaf55725cc2",
+      "bytes": 17587
+    },
+    "run.log": {
+      "sha256": "787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0",
+      "git_blob": "514df7e28b86e5c98ae34cd0cc52cbaf55725cc2",
+      "bytes": 17587
+    },
+    "run.optimized.log": {
+      "sha256": "787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0",
+      "git_blob": "514df7e28b86e5c98ae34cd0cc52cbaf55725cc2",
+      "bytes": 17587
+    }
+  },
+  "owned_inputs": {
+    "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md": "25b2253436419ec0f0f63c36d40d5d728103a40c",
+    "02_REGISTRY/research/A4D_EXACT_NATIVE_RADIAL_MINIMIZATION_ALL_ORDERS_2026_10_21.md": "42be6be08c934377d19ce0ece156d2056e4abcdd",
+    "02_REGISTRY/research/A4D_ALL_CAP_NULL_MATTER_CAUSAL_CONE_2026_10_21.md": "6ff2139cfaa674fc25773369f95d842482fd9f07",
+    "02_REGISTRY/research/sources/d0_complete_price_explicit_dynamics_2026-10-21/SOURCE_BINDING.md": "1a90e089d7bc69b2f669b93598f30e5e86876993",
+    "02_REGISTRY/research/sources/d0_complete_price_explicit_dynamics_2026-10-21/README.md": "e3e496bd1db481785ba97b3497207aceaa3ea48a"
+  },
+  "new_exact_results": [
+    "full stationary-field Ward integral d(F-xF_x)=0",
+    "regular density-map determinant F_x(0)*F_y(0) != 0",
+    "all finite-cap whole regular critical-set equivalence",
+    "all-cap coupled Jacobi-kernel equivalence with common boundary class",
+    "general aligned timelike Einstein-dust equations",
+    "arbitrary-function inhomogeneous continuum all42 witness",
+    "true nonuniform-cost Ward residual, and cap-one baseline exception"
+  ],
+  "diagnostics": {
+    "max_normalized_trace_residual": "7.0139173e-85",
+    "minimum_sampled_monotonicity_margin": "0.98047985821571217403",
+    "one_nonnul_pair": {
+      "r_y_over_r_x": "23.2131131733186603742748917887",
+      "x": "-0.00283363197916487553396910300155",
+      "y": "-0.0001220703125"
+    }
+  },
+  "scope": {
+    "actual_model": "existing fixed-measure local two-density continuum action",
+    "native_moving_query_admission": false,
+    "complete_Book03_selection": false,
+    "finite_lattice_lift": false,
+    "independent_review": false,
+    "Lean_replayed": false,
+    "remote_CI_replayed": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,327 @@
+# One discrete projective scale plus the Ward identity
+
+Research derivation, 18 November 2026. This is a conditional theorem about a
+natural metric source. It does not construct the physical D0 Cost−Info map,
+discharge obligation C, or assert a new result in the mathematical literature.
+
+## Consumer and difference from the existing owner
+
+The existing owner
+`02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md`
+at PR334 `dc411daf01f697ec85dd22f28bfe124171796645` proves Einstein rigidity
+from the exact source law `E(lambda^2 g)=E(g)`. Its G12c already handles
+finite-mesh errors that vanish in a common limit. The later matched-source
+synthesis, primary source lines 177762–178077, normalizes a derived common
+global gain before applying that theorem.
+
+The theorem below instead requires preservation of the *pointwise source
+line* under one scale: `E(lambda^2 g)(p)=r[g](p) E(g)(p)`, with an unspecified
+nonzero factor. No formula, sign, locality or smoothness for `r` is used.
+The Ward identity and locality then force the actual source to be `aG`, so
+the surviving factor is one wherever `G` is nonzero. A genuine flat
+Einstein component is essential. A pure R² Euler source is a counterexample
+if that condition is dropped.
+
+The price of the weaker scale hypothesis is explicit off-shell domain
+closure and continuity at curved metrics. No finite differential-order
+bound or nonlinear Peetre theorem is needed for the proof below.
+
+## Theorem P: projective one-scale Einstein rigidity
+
+Let `d>=3` (the D0 application is `d=4`) and `lambda>1`. Let `E` assign to
+each smooth Lorentz metric on an open coordinate domain a smooth symmetric
+covariant two-tensor. Assume:
+
+1. **Local naturality.** E commutes with restriction and all local
+   diffeomorphisms. Hence its value near p depends only on the metric germ
+   near p. There is no retained external metric, frame, clock or global
+   history argument.
+2. **Off-shell domain.** The required discrete rescalings `lambda^(2n)g`
+   and their restricted pullbacks are admitted. For each metric being
+   classified, its normal
+   coordinate contractions `g_t(x)=g(tx)`, `0<t<=1`, and every sufficiently
+   small compactly supported metric perturbation used below are in the
+   domain. Domain membership does not impose the Einstein equations.
+3. **Regularity.** E is continuous from the compact-open smooth metric
+   topology to continuous tensor sections at every admitted metric. At each
+   constant Lorentz metric it is Fréchet differentiable, with the
+   differentiability needed to linearize the Ward identity (for example,
+   into C¹ tensor sections). There is no prescribed derivative order.
+4. **Flat vacuum.** `E(eta)=0` for every constant Lorentz metric eta.
+5. **Ward identity.** `nabla_g^mu E(g)_{mu nu}=0` identically for every
+   admitted metric, before imposing its field equations.
+6. **Nonzero Einstein flat two-jet.** If
+   `h2=(1/2) g_ij,kl(0) x^k x^l dx^i dx^j` is a normal quadratic
+   perturbation, then `D E_eta[h2](0)=a G(g)(0)` for one `a!=0`.
+   As explained below, naturality and the linearized Ward identity already
+   force the displayed form. Only its nonzero coefficient needs a witness.
+7. **One projective scale.** For every admitted g,p there is a finite
+   `r[g](p)!=0` such that
+
+       E(lambda^2 g)(p) = r[g](p) E(g)(p).
+
+Then `E(g)=aG(g)` on the entire declared domain, including all Ricci-flat
+metrics and points where G is singular or zero. In particular, for
+`G(g)(p)!=0`, `r[g](p)=1`.
+
+The Ward identity here is the **gravitational** off-shell Ward identity.
+For a metric-plus-matter Euler system the identity generally contains
+the matter Euler rows. The theorem applies to the separated metric-only
+gravitational component, a legitimate matter-zero restriction, or an
+independently proved equivalent source; it does not set those matter
+rows to zero during an off-shell argument.
+
+### Step 1: the normal blow-up fixes the source line
+
+Choose normal coordinates at p=0, write `t_n=lambda^(-n)`, and let
+`d_t(x)=tx`. Then
+
+    g_n = t_n^(-2) d_(t_n)^* g = g(t_n x),
+    g_n = eta + t_n^2 h2 + o_Cinfty(t_n^2).
+
+Naturality and repeated projective covariance imply
+
+    E(g_n)(0) = t_n^2 E(lambda^(2n) g)(0)
+              = t_n^2 R_n[g](0) E(g)(0),
+    R_n[g](0) = product_(k=0)^(n-1) r[lambda^(2k)g](0).
+
+Thus every `t_n^(-2)E(g_n)(0)` lies in the fixed one-dimensional subspace
+spanned by `E(g)(0)`. The flat differential gives
+
+    t_n^(-2)E(g_n)(0) -> aG(g)(0).
+
+There is no assumption that `R_n` is bounded or that it has a limit.
+Closedness of a finite-dimensional linear subspace proves
+
+    E(g)(p) wedge G(g)(p) = 0.
+
+If `G(g)(p)!=0`, the same limit also proves `E(g)(p)!=0`. Consequently,
+on an open set where G is nonzero, there is a smooth nonzero scalar
+function `f_g` with `E(g)=f_g G(g)`. A component ratio defines it locally;
+the ratios agree on overlaps. No division at a zero of G has occurred.
+
+### Step 2: the Ward identity fixes f in space on the invertible locus
+
+On an open set where G is an invertible bilinear form,
+
+    0 = nabla^mu E_mu nu = G_mu nu nabla^mu f_g
+
+and invertibility gives `d f_g=0`. Thus f is spatially constant on every
+connected such open set. This alone does not yet say it is independent
+of the metric; the next step supplies that missing argument.
+
+### Step 3: a cutoff comparison fixes f along the full normal contraction
+
+Fix g,p with `det G(g)(p)!=0`. Shrink the normal coordinate domain to a
+small connected ball U on which `G(g)(tx)` is invertible for all `x in U`
+and `0<t<=1`. This is possible because all tx lie in a sufficiently
+small neighborhood of p. The exact known scale law of the Einstein
+tensor gives
+
+    G(g_t)(x) = t^2 G(g)(tx),
+
+so every `G(g_t)` is invertible on U. This identity concerns the known
+comparison tensor G, not an assumed continuous scale symmetry of E.
+
+For a fixed `t>0`, choose `q!=p` in U and a smooth cutoff chi that is one
+near p and zero near q. For sufficiently small delta set
+
+    g_tilde = g_t + chi (g_(t+delta) - g_t).
+
+On a compact connected subdomain containing p,q and the cutoff support,
+this is a sufficiently small C² perturbation of g_t. It remains Lorentz,
+admitted, and has invertible G. Step 2 makes `f_(g_tilde)` constant there.
+Locality at p and q now gives
+
+    f_(g_(t+delta))(p) = f_(g_tilde)(p)
+                      = f_(g_tilde)(q)
+                      = f_(g_t)(q)
+                      = f_(g_t)(p).
+
+Therefore `t -> f_(g_t)(p)` is locally constant for every t>0, hence
+constant on `(0,1]`. The flat expansion and
+`G(g_t)(p)=t²G(g)(p)` show its limit as t→0 is a. Hence
+`E(g)(p)=aG(g)(p)` whenever G is invertible.
+
+The use of a continuum of t is a domain/perturbation argument. Only the
+discrete t_n sequence was used as a symmetry of E.
+
+### Step 4: singular and zero Einstein tensors are included
+
+At fixed metric value and first jet, arbitrary sufficiently small changes
+of the symmetric Ricci tensor can be produced by quadratic metric-jet
+perturbations. The linear trace-reversal map
+`Ric -> Ric - (1/2) tr_g(Ric) g` is invertible for d>=3. Thus metric germs
+with invertible G at p are dense among all metric germs at p.
+
+Choose compactly supported quadratic perturbations `g_j->g` in the smooth
+topology with `det G(g_j)(p)!=0`. Step 3 gives `E(g_j)(p)=aG(g_j)(p)`.
+Continuity of E and G yields the same equality at g,p. This covers both
+singular nonzero G and G=0. In particular no source supported only on the
+Ricci-flat locus can be hidden by the projective argument.
+
+This completes the proof.
+
+## Weaker theorem Z: the vacuum zero set does not require the Ward identity
+
+Suppose the hypotheses of Theorem P hold **except** that the off-shell Ward
+identity is omitted, while the Einstein form and nonzero coefficient of the
+normal quadratic flat differential are retained as an explicit assumption:
+
+    D E_eta[h2](0)=aG(g)(0), a!=0.
+
+For this weaker result the domain only needs the discrete blow-up metrics
+and sufficiently small arbitrary local quadratic-jet perturbations. The
+continuous contraction path and cutoff gluing between different t are not
+needed. Then, pointwise on the entire declared domain,
+
+    E(g)(p)=0  if and only if  G(g)(p)=0.
+
+**Proof.** Step 1 is independent of Ward. If `G(g)(p)!=0`, it shows that
+`E(g)(p)` is nonzero and collinear with `G(g)(p)`. In particular, E=0
+implies G=0.
+
+Conversely suppose `G(g)(p)=0`. Keep the metric value and first jet at p
+fixed. The quadratic-jet freedom and the invertible Ricci trace reversal
+in d>=3 allow, for any prescribed nonzero symmetric tensor A, a sequence
+of admitted metrics `g_epsilon->g` satisfying exactly
+
+    G(g_epsilon)(p)=epsilon A.
+
+The metrics can be produced by compactly supported quadratic perturbations;
+at fixed metric value and first jet the curvature and Einstein tensor are
+affine in the second jet. Step 1 gives
+`E(g_epsilon)(p) in span(A)`. Continuity and closedness of this line give
+`E(g)(p) in span(A)`. Repeating with a nonparallel tensor B gives membership
+in `span(A) intersect span(B)={0}`. Thus E(g)(p)=0. QED.
+
+Accordingly `E[g]=0` and `G[g]=0` have exactly the same smooth vacuum
+solutions in the declared metric domain. This is a zero-set theorem, not
+an equality of sources or a calibration of their common multiplier.
+Without Ward the example `E=e^R G` is allowed and illustrates that
+distinction. The theorem does not identify the nonvacuum equation
+`E=kappa T`, its coupling, the matter Euler equations, linearized dynamics,
+constraint propagation, stability, or a physical D0 realization. In
+particular the assumption that the flat quadratic germ is already the
+Einstein germ must not be derived from naturality alone after removing Ward.
+
+## Why the quadratic flat differential has the stated Einstein form
+
+This consumes the normal-jet/invariant-theory step already used in the
+existing owner. The local natural flat differential on quadratic normal
+metric variations is an O(1,d−1)-equivariant linear map from algebraic
+curvature tensors to symmetric two-tensors. It is therefore
+
+    L2(g) = A Ric(g) + B R(g) g.
+
+Differentiating the off-shell Ward identity at flat metrics gives a
+divergence-free linearized operator. Its order-two part is divergence-free
+separately. An elementary polynomial argument is enough: the operator
+vanishes on constant/linear pure-gauge metric variations. Under translation,
+the difference between a homogeneous cubic variation and its translate
+is quadratic plus linear/constant terms. Thus only the quadratic part
+contributes to the spatial derivative of the linearized output; a possible
+constant contribution from the cubic itself cancels. The cubic test gives
+
+    (A/2+B) d R_linear = 0
+
+for arbitrary cubic metric perturbations, and `B=-A/2`. No global
+finite-order bound is needed. The only remaining condition is `A=a!=0`.
+
+## A native positive witness can certify a!=0
+
+Consider the constant-profile sourced quadratic Brinkmann metric
+
+    g_A = 2 du dv + (x^T A x) du^2 - dx^2 - dy^2,
+    tr A != 0,
+
+with A a constant real symmetric 2×2 matrix. Assume the witness and its
+displayed boost family lie in the declared common domain. It belongs to the existing
+primary family with constant `Psi'(u)` and quadratic harmonic coefficients.
+At the origin `g_A=eta+h2`, and the null boost
+
+    B_t(u,v,x,y)=(t u,t^(-1) v,x,y)
+
+obeys exactly `B_t^*g_A=eta+t²h2`. Naturality and flat differentiability give
+
+    B_t^* E(g_A)(0) = t² D E_eta[h2](0)+o(t²).
+
+The ten covariant-two components have boost weights
+`2,1,0,-1,-2`. Only the uu component has weight 2; every component of
+smaller weight must vanish. Dividing the uu identity by t² proves
+
+    E(g_A)(0)=aG(g_A)(0)
+
+exactly, without any scale assumption on E. If the SAME source has a real
+nonzero material coupling and admits `E(g_A)=kappa T(g_A)!=0`, then `a!=0`.
+This is an application of an actual sourced witness, not permission to
+assume that a configured source is the physical D0 source.
+
+## Sharp controls and why each physical qualification remains
+
+* **Zero quadratic coefficient:** the conserved R² Euler tensor is smooth,
+  local, natural, flat-zero and obeys `B_R²(rho g)=rho^(-1)B_R²(g)`. It
+  meets projective covariance but has a=0 and is not Einstein. Its
+  linearization on a quartic metric perturbation can still be nonzero;
+  merely saying the full flat differential is nonzero is insufficient.
+* **Ward cannot be omitted:** `E=e^R G` is local, natural, smooth,
+  flat-zero, and projectively scale covariant. It has the correct nonzero
+  quadratic flat coefficient, but its divergence is
+  `e^R G_mu nu nabla^mu R`, generally nonzero.
+* **Locality cannot be omitted, even for an Euler source with a=1:** on a
+  compact four-dimensional spacetime set `I[g]=integral R_g dVol_g` and
+  `F[g]=1+I[g]^2`. Then `E[g]=F[g]G[g]` is, up to the conventional
+  metric-variation sign, the Euler source of `I+I^3/3`. At every flat
+  metric I=0 and the quadratic flat coefficient is exactly a=1. For
+  each fixed metric F is spatially constant, so the Ward identity holds.
+  Since `I[rho g]=rho I[g]`, projective covariance holds with the
+  positive ratio `(1+rho²I²)/(1+I²)`. This source is not germ-local and
+  does not commute with restriction. The cutoff comparison fails
+  precisely because a change near p changes F at q.
+* **Flat vacuum matters:** a pure cosmological source `E=b g`, b!=0,
+  is projectively scale covariant and conserved. It has E(eta)!=0 and
+  zero Einstein quadratic coefficient.
+* **A mixed R² correction is genuinely tested:** for the conformal metric
+  `g=e^(2 sigma)eta`, `sigma=b x^2+a x^4` with x spacelike, at the origin
+
+      G=diag(-4b,0,4b,4b),
+      B_R²=diag(-24b²−288a,−72b²,24b²+288a,24b²+288a).
+
+  For `E=G+beta B_R²`, the `(00,11)` projective minor between E(g) and
+  E(rho g) is `288 beta b³ (rho^(-1)−1)`. It is nonzero for
+  beta*b!=0 and rho!=1. A weak scale test on the Brinkmann family alone
+  would miss this because R² vanishes there.
+
+## Supplement: exact reconstruction from a scale defect
+
+For any local natural flat-zero source with flat quadratic coefficient a,
+write `rho=lambda²`, `g_n(x)=g(lambda^(-n)x)` and
+
+    Delta(g)=E(rho g)−E(g).
+
+Whenever the flat limit above is valid, telescoping gives the exact identity
+
+    E(g)(p) = aG(g)(p)
+              − sum_(n>=0) lambda^(2n) Delta(g_n)(0).
+
+The series converges as the limit of its partial sums; absolute convergence
+requires an explicit stronger bound. If the norm sum is finite, it bounds
+the entire correction to Einstein. Summability does not make the correction
+zero: `E=G+beta B_R²` has geometrically summable defects and still differs
+from Einstein by beta B_R². Therefore this identity alone is a quantitative
+diagnostic, not an Einstein selection theorem.
+
+## External context and novelty boundary
+
+Navarro–Sancho, *On the naturalness of Einstein's equation*,
+https://arxiv.org/abs/0709.1928, proves weight-zero natural-tensor uniqueness.
+The existing D0 owner already weakens all-scale covariance to one exact
+scale. The projective condition and cutoff proof above are an additional
+conditional derivation relative to that owner. A few targeted literature
+queries did not establish whether this formulation has appeared elsewhere;
+no priority claim is made. Peetre–Slovák,
+https://arxiv.org/abs/1411.7499, offers an alternative finite-order route,
+but is not required by the cutoff argument.
+
+The companion exact symbolic controls test explicit counterexamples and
+normalizations. They are not a machine-checked proof of Theorem P.

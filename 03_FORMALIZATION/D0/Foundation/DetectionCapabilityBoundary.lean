@@ -2,43 +2,33 @@ import D0.Foundation.GeneralComparisonGrammar
 import Mathlib.Tactic
 
 /-!
-# Detection capability boundary: a third history/order capability survives
+# Detection capability boundary for an independently coordinated observation
 
-`D0.Foundation.GeneralComparisonGrammar` proves that the number of primitive
-comparison kinds is exactly the number of independent capabilities.  The
-remaining root question is therefore whether the D0 detection protocol forces
-the capability count to be exactly two.
+The mathematical carrier in this module has three independently variable
+coordinates: membership, value and history. The capability grammar counts
+which coordinates an extensional predicate can access. It proves three
+independent ACCESS capabilities in this declared model, and proves that
+forgetting its history coordinate loses a history-sensitive predicate.
 
-This module tests that claim without defining a two-element answer type.  A
-finite observation carries three independently variable fields:
+This does not prove three fundamental comparison operations in D0. A retained
+history bit can be part of the PRESENT physical state of one closed system.
+The original comparison may read it through an internal observation, just as
+it reads another stored value. Dependence on that physical trace does not
+itself add a new comparison primitive. GenComparison 3 and its predicate
+Primitive refer to the declared three-coordinate capability grammar; they
+are not a representation theorem for the intended physical D0 detector.
 
-* `member`  — category/membership data;
-* `value`   — value data inside a category;
-* `history` — an order/history bit.
+In particular no universal requirement that primitive comparisons ignore
+physical memory follows here. The projection to (member, value) is a
+COARSE projection when the history coordinate remains physically accessible;
+it need not be the complete current observation. The existing
+FutureExecution owner instead supplies the coarsest state quotient that
+preserves all actually admitted future interactions and internal readouts.
+Its hypotheses and actual native realization must still be supplied.
 
-A comparison is any Boolean predicate on a pair of observations.  Three literal
-comparisons read the three coordinates separately.  Capability dependence is
-defined extensionally: a comparison uses a coordinate when changing only that
-coordinate can change its result.  The theorem then computes the exact
-capability vectors:
-
-* membership equality uses only membership;
-* value equality uses only value;
-* history equality uses only history.
-
-Each comparison is operational: it both accepts and rejects explicit input
-pairs.  The history comparison is therefore a third primitive comparison in
-the general capability grammar.  Moreover, membership and value data can be
-held fixed while the history comparison changes, so no representation using
-only membership/value capabilities can preserve its observable behaviour.
-
-This is a boundary/no-go result, not a claim that history must be counted as a
-new *detection* capability in the intended D0 typing.  It proves that the
-existing operational/no-catalogue prose does not itself exclude that reading.
-To recover exactly two detection capabilities, the theory needs a typed
-stratification theorem placing history/order in the memory layer and proving
-that primitive detector comparison factors through the current observation,
-not through history.
+All statements and proofs below retain their original mathematical scope.
+This interpretation neither proves the intended two-kind physical theorem
+nor selects the D0 interactions, active cut or complete physical price.
 -/
 
 namespace D0.Foundation.DetectionCapabilityBoundary

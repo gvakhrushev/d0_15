@@ -1,0 +1,34 @@
+{
+  "checked_at_utc": "2026-10-17T01:42:34.296281+00:00",
+  "input_pins_verified": 17,
+  "duplicate_user_source_bytes_verified": true,
+  "new_local_links_verified": 26,
+  "owners_sha256": {
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_COHERENCE_TEST.md": "3a55980ed2051b34bfba3570731622489a2e11e48d49a9f42bce034cae2ef1d6",
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md": "98b02b22f8678be211f555c2ec0c1d8ac3d2cc43f7dd50b002b8e1424460407b",
+    "02_REGISTRY/research/A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md": "e0a7a9139fc469568111393c9ededdc6dde86e28c4c5a7b85795731183aa371b"
+  },
+  "new_exact_checks": 40,
+  "normal_optimized_stdout_byte_identical": true,
+  "producer_helper_and_results_hashes_verified": true,
+  "analytical_cross_reviews": [
+    "root",
+    "capsule_check",
+    "native_bridge",
+    "geometry_consumer"
+  ],
+  "local_structural_checks": {
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS",
+    "validate_agent_protocol": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "old_scientific_replay": false,
+  "lean_build": false,
+  "independent_CONTROL_acceptance": false,
+  "remote_CI_claimed": false,
+  "physical_Info_or_old_bit_admission_derived": false,
+  "physical_GR_closure": false,
+  "source_scope": "smooth compact actual chart, fixed native clock, actual normalized Hilbert preparation jets and moment8; value needs moment4",
+  "open": "admitted history/test/cut and raw weight/gain law, physical clock/action scale, full source equality and compatible joint refinement, original all-ten raw h^-2/#216 terminal"
+}

@@ -1,0 +1,18 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "existing_pull_request": 334,
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "scientific_input_commit": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "new_repository_files": 8,
+  "remote_publication_performed": false,
+  "reason": "Current GitHub connector discovery exposes read actions, not create_commit/update_ref; terminal git transport failed with Could not resolve host: github.com.",
+  "patch": "additions.patch",
+  "patch_scope": "Eight new research/checker files only; no root README, main, BOOK, CORE or registry acceptance changes.",
+  "clean_apply_and_replay": "PASS; see VALIDATION.json",
+  "independent_mathematical_review": false,
+  "remote_CI_run": false,
+  "main_changed": false,
+  "GR_closed": false,
+  "claimed_result": "Explicit autonomous stage-plus-elapsed clock transport of the existing specified HJR source, unique consecutive-window overlap preserving the inherited native HJR root, and retained clock-source remainder.",
+  "physical_boundary": "No compulsory native clock/cut/heat selection, moving-gate admission, primary nonvacuum HJR root, or uniform refinement is proved."
+}

@@ -1,0 +1,40 @@
+{
+  "capacity_leaf_increment_magnitude": "t**2*(3 - sqrt(5))/(2*h**2)",
+  "command": "python3 02_REGISTRY/research/sources/d0_capacity_modal_link_tangent_2026-10-19/check_capacity_modal_link_tangent.py",
+  "coverage_condition": "at least one admitted fine leaf in each of Q_0 and Q_-e1",
+  "environment": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "for_arbitrary_mean_slope_A": {
+    "Dplus_min(-V)_upper_bound": "-A-d",
+    "Dplus_min(V)_upper_bound": "A-d",
+    "d_positive_for_h_t_positive": true,
+    "sum_upper_bound": "-2*d"
+  },
+  "git_head": "faa99e0ffe6ce639c92f39c0643d75634ff83ff4",
+  "input_sha256": {
+    "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
+    "02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md": "7ecdcbba3a6a7221288be6caa66c315509bad11612ad29a87b1865f5bac9eea7",
+    "02_REGISTRY/research/sources/d0_af_star_full_lattice_2026-10-17/star_euler.py": "95de1dca7b7ec738a83ff74a74547a26a6e545d0e55ef601b8c1922d8112f5b5"
+  },
+  "link_variation": "delta U_0(0)=X_01 U_0(0), X_01=(E_01-E_10) eta",
+  "local_D_Pstar_support": {
+    "(0, -1, 0, 0)": "-h**2",
+    "(0, 0, 0, 0)": "h**2"
+  },
+  "local_D_f_support": {
+    "(0, -1, 0, 0)": "-1/h**2",
+    "(0, 0, 0, 0)": "h**(-2)"
+  },
+  "modal_path_increment_magnitude": "t**2*(3 - sqrt(5))*(-log((1 + sqrt(5))**2/4) + 1 + sqrt(5))/(4*h**2*log(1/2 + sqrt(5)/2))",
+  "proper_lorentz_tangent": true,
+  "schema": "d0-capacity-modal-link-tangent/1",
+  "scope": [
+    "exact finite geometric source jet on the original six-plaquette carrier",
+    "conditional obstruction to identifying this pointer-history minimum with the smooth capacity mean",
+    "does not select the Book history space or full native Cost-Info action",
+    "does not rule out a separately derived same-run compensating source"
+  ],
+  "status": "PASS_EXACT"
+}

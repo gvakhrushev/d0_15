@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "symbolic_checks": 176,
+  "normal_optimized_byte_identical": true,
+  "independent_action_derivation": true,
+  "independent_agent_review": false,
+  "lean_run": false,
+  "repository_wide_CI_run": false,
+  "github_published": false,
+  "GR_closed": false,
+  "hashes": {
+    "PROOF.md": "d8033b48540de3f72147406259d1d92b314d0f9e2b8adfcf36cccc6565aa8b72",
+    "RESULT_RU.md": "b1b9fa414a222f049382175a13cf4944ecb5c1741bee24756f1a246f15e4f3e0",
+    "check_price_source_rigidity.py": "b425bb22f603ad08357fcf7c4e033ba4948d2b411a06be292ca958172de952f6",
+    "RESULT.json": "14f0537028d2ec06e5a1f0b7e68b6dfb8fe2f84fdcd0c917f9e00eec617b157b",
+    "RESULT_OPTIMIZED.json": "14f0537028d2ec06e5a1f0b7e68b6dfb8fe2f84fdcd0c917f9e00eec617b157b",
+    "SOURCE_PINS.json": "85388718754ebce5c324970b99cb540769bf3e980cb0b4e48bdfa959df7bf19a"
+  }
+}

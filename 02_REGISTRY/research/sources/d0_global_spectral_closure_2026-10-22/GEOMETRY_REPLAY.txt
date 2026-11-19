@@ -1,0 +1,6 @@
+PASS: density=0; 40 unrestricted Euler -> only 3 exact symbolic rows
+PASS: 2 original Cartan rows uniquely fix one-u-step staggering
+PASS: all 24 links zero; other 15 solder zero; remaining = -h^3/2 Lap_H(u+h)
+Symbolic H/independent link unknowns: 18 16
+PASS: exact arbitrary-coefficient cubic and h^2-corrected quartic discrete harmonic
+SCOPE: exact geometric carrier; complete native execution/price is a separate input.

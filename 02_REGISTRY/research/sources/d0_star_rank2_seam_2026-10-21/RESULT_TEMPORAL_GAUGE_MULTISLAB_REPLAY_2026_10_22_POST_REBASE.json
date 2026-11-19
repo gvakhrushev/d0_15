@@ -1,0 +1,261 @@
+{
+  "status": "PASS_ORIGINAL_CONFIGURED_N1_GAUGE_FIXED_MULTISLAB_NUMERICAL",
+  "replay_head": "c70b84400ae1bf3d653135ea830f9e8357ae95a4",
+  "checker": "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py",
+  "checker_blob": "3a0915231e9700aefa35335584c51f53dd2292e6",
+  "runtime": {
+    "python": "3.9.6",
+    "scipy": "1.13.1",
+    "numpy": "2.0.2",
+    "openblas_threads": 1
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 /usr/bin/python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 3",
+    "OPENBLAS_NUM_THREADS=1 /usr/bin/python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 3 --pf 1,2,1",
+    "OPENBLAS_NUM_THREADS=1 /usr/bin/python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 4",
+    "OPENBLAS_NUM_THREADS=1 /usr/bin/python3 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_temporal_gauge_deflation.py --intervals 5"
+  ],
+  "original_input_blobs": {
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_full42_n1_single_internal.py": "da83e40379867f71b598fecd8430444ea027a4da",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/full_n1_euler_analytic.py": "7ea28c981826c96b01bbdda67a92010dc7221095",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_star_rank2_seam.py": "a57f0e3e845290923c2ac88d39ba5c08af4f6fd6"
+  },
+  "runs": [
+    {
+      "case": "n3_equal",
+      "status": "PASS_ORIGINAL_CONFIGURED_N1_GAUGE_FIXED_MULTISLAB_NUMERICAL",
+      "n_intervals": 3,
+      "h": 0.12253434977211948,
+      "PF_time_weights": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_42_times_free_nodes": 84,
+      "residual_gauge_dimension_exact": 6,
+      "gauge_fixed_original_source_dimension": 78,
+      "max_all_original_Euler": 7.182936099212509e-15,
+      "max_omitted_temporal_link_Euler": 3.62768087469367e-15,
+      "max_independent_full_N1_price_derivative": 5.2634680454294326e-14,
+      "analytic_vs_independent_price_source_error": 5.089336261206099e-14,
+      "min_numerical_singular_after_gauge": 0.0012262354686945476,
+      "max_numerical_singular_after_gauge": 1893.985273944127,
+      "finite_exact_gauge_action_test": {
+        "max_original_plaquette_and_CAR_scalar_difference": 1.2997740904407973e-14,
+        "direct_full_CQ_price_difference": 0.0
+      },
+      "nonflat_rank_two_material_checks": [
+        {
+          "node": 0,
+          "spatial_based_holonomy_nonidentity_norm": 1.158788572114669e-16,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 1,
+          "spatial_based_holonomy_nonidentity_norm": 0.0009307448284929311,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 2,
+          "spatial_based_holonomy_nonidentity_norm": 0.0015924757270117634,
+          "two_real_CAR_source_rank": 2
+        }
+      ],
+      "max_field_coordinate_change": 0.7030832881334751,
+      "nfev": 41,
+      "wall_seconds": 9.798299875,
+      "scope": {
+        "same_complete_N1_CQ_ledger": true,
+        "actual_full_Book03_physical_selection": false,
+        "actual_AFPF_descendant_weights": false,
+        "arbitrary_4D_inhomogeneous_geometry": false,
+        "validated_interval_root_existence": false,
+        "uniform_h_to_zero_refinement": false,
+        "GR_closed": false
+      }
+    },
+    {
+      "case": "n3_pf_1_2_1",
+      "status": "PASS_ORIGINAL_CONFIGURED_N1_GAUGE_FIXED_MULTISLAB_NUMERICAL",
+      "n_intervals": 3,
+      "h": 0.12253434977211948,
+      "PF_time_weights": [
+        1.0,
+        2.0,
+        1.0
+      ],
+      "all_42_times_free_nodes": 84,
+      "residual_gauge_dimension_exact": 6,
+      "gauge_fixed_original_source_dimension": 78,
+      "max_all_original_Euler": 1.3930542737866685e-14,
+      "max_omitted_temporal_link_Euler": 3.4820550788473532e-15,
+      "max_independent_full_N1_price_derivative": 1.8046176155758055e-14,
+      "analytic_vs_independent_price_source_error": 1.3693072908613187e-14,
+      "min_numerical_singular_after_gauge": 0.001226315204258489,
+      "max_numerical_singular_after_gauge": 1890.8739453478408,
+      "finite_exact_gauge_action_test": {
+        "max_original_plaquette_and_CAR_scalar_difference": 6.701019947263909e-15,
+        "direct_full_CQ_price_difference": 0.0
+      },
+      "nonflat_rank_two_material_checks": [
+        {
+          "node": 0,
+          "spatial_based_holonomy_nonidentity_norm": 1.158788572114669e-16,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 1,
+          "spatial_based_holonomy_nonidentity_norm": 0.0009306764786284746,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 2,
+          "spatial_based_holonomy_nonidentity_norm": 0.0015925003633262774,
+          "two_real_CAR_source_rank": 2
+        }
+      ],
+      "max_field_coordinate_change": 0.7030843485657703,
+      "nfev": 40,
+      "wall_seconds": 9.629732958,
+      "scope": {
+        "same_complete_N1_CQ_ledger": true,
+        "actual_full_Book03_physical_selection": false,
+        "actual_AFPF_descendant_weights": false,
+        "arbitrary_4D_inhomogeneous_geometry": false,
+        "validated_interval_root_existence": false,
+        "uniform_h_to_zero_refinement": false,
+        "GR_closed": false
+      }
+    },
+    {
+      "case": "n4_equal",
+      "status": "PASS_ORIGINAL_CONFIGURED_N1_GAUGE_FIXED_MULTISLAB_NUMERICAL",
+      "n_intervals": 4,
+      "h": 0.09190076232908961,
+      "PF_time_weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_42_times_free_nodes": 126,
+      "residual_gauge_dimension_exact": 12,
+      "gauge_fixed_original_source_dimension": 114,
+      "max_all_original_Euler": 2.6119767633500036e-14,
+      "max_omitted_temporal_link_Euler": 1.3352781167121734e-14,
+      "max_independent_full_N1_price_derivative": 7.519240064899189e-14,
+      "analytic_vs_independent_price_source_error": 6.957272785968222e-14,
+      "min_numerical_singular_after_gauge": 0.0005253514972351867,
+      "max_numerical_singular_after_gauge": 2893.755519024785,
+      "finite_exact_gauge_action_test": {
+        "max_original_plaquette_and_CAR_scalar_difference": 1.4275039483813146e-14,
+        "direct_full_CQ_price_difference": 0.0
+      },
+      "nonflat_rank_two_material_checks": [
+        {
+          "node": 0,
+          "spatial_based_holonomy_nonidentity_norm": 2.2205484490398497e-16,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 1,
+          "spatial_based_holonomy_nonidentity_norm": 0.00041047884418697405,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 2,
+          "spatial_based_holonomy_nonidentity_norm": 0.0007352802264397236,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 3,
+          "spatial_based_holonomy_nonidentity_norm": 0.0009758596029852115,
+          "two_real_CAR_source_rank": 2
+        }
+      ],
+      "max_field_coordinate_change": 1.0547869844901934,
+      "nfev": 46,
+      "wall_seconds": 23.826496458,
+      "scope": {
+        "same_complete_N1_CQ_ledger": true,
+        "actual_full_Book03_physical_selection": false,
+        "actual_AFPF_descendant_weights": false,
+        "arbitrary_4D_inhomogeneous_geometry": false,
+        "validated_interval_root_existence": false,
+        "uniform_h_to_zero_refinement": false,
+        "GR_closed": false
+      }
+    },
+    {
+      "case": "n5_equal",
+      "status": "PASS_ORIGINAL_CONFIGURED_N1_GAUGE_FIXED_MULTISLAB_NUMERICAL",
+      "n_intervals": 5,
+      "h": 0.07352060986327169,
+      "PF_time_weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_42_times_free_nodes": 168,
+      "residual_gauge_dimension_exact": 18,
+      "gauge_fixed_original_source_dimension": 150,
+      "max_all_original_Euler": 3.761246539224005e-14,
+      "max_omitted_temporal_link_Euler": 2.1426609814065442e-14,
+      "max_independent_full_N1_price_derivative": 9.624627283070962e-14,
+      "analytic_vs_independent_price_source_error": 9.729106353604961e-14,
+      "min_numerical_singular_after_gauge": 0.00027324202888094363,
+      "max_numerical_singular_after_gauge": 3849.7499934901225,
+      "finite_exact_gauge_action_test": {
+        "max_original_plaquette_and_CAR_scalar_difference": 1.6447346956605102e-14,
+        "direct_full_CQ_price_difference": 0.0
+      },
+      "nonflat_rank_two_material_checks": [
+        {
+          "node": 0,
+          "spatial_based_holonomy_nonidentity_norm": 1.1105252507629963e-16,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 1,
+          "spatial_based_holonomy_nonidentity_norm": 0.00021560004620426406,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 2,
+          "spatial_based_holonomy_nonidentity_norm": 0.0003979551967663968,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 3,
+          "spatial_based_holonomy_nonidentity_norm": 0.0005407671706639516,
+          "two_real_CAR_source_rank": 2
+        },
+        {
+          "node": 4,
+          "spatial_based_holonomy_nonidentity_norm": 0.0006534708707905257,
+          "two_real_CAR_source_rank": 2
+        }
+      ],
+      "max_field_coordinate_change": 1.4064775007600796,
+      "nfev": 77,
+      "wall_seconds": 62.710634208,
+      "scope": {
+        "same_complete_N1_CQ_ledger": true,
+        "actual_full_Book03_physical_selection": false,
+        "actual_AFPF_descendant_weights": false,
+        "arbitrary_4D_inhomogeneous_geometry": false,
+        "validated_interval_root_existence": false,
+        "uniform_h_to_zero_refinement": false,
+        "GR_closed": false
+      }
+    }
+  ],
+  "scope": {
+    "interval_validated_multislab_root": false,
+    "uniform_refinement_or_inverse": false,
+    "physical_book03_selected": false,
+    "GR_closed": false
+  }
+}

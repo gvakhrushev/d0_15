@@ -1,0 +1,24 @@
+{
+  "helper_sha256": "7f57f6e325defd8fda3e85667cf040f061ef8dba6a0897a127385ed8de49380d",
+  "input_files_modified": false,
+  "old_entrypoints_executed": false,
+  "rejected_mutations": [
+    {
+      "mutation": "wrong_connection_sign",
+      "rejected_at": "actual_covector_LC_firstjet_0"
+    },
+    {
+      "mutation": "erase_label_coherence",
+      "rejected_at": "coherent_three_label_detector_is_projector"
+    },
+    {
+      "mutation": "wrong_coherent_normalization",
+      "rejected_at": "coherent_detector_recovers_EH_principal_all_three_cones"
+    },
+    {
+      "mutation": "omit_second_golden_port",
+      "rejected_at": "two_actual_golden_ports_coherent_final_history_effect"
+    }
+  ],
+  "status": "PASS"
+}

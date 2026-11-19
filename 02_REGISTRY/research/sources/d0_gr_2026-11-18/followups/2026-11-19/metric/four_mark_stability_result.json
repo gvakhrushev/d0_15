@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational",
+  "fixture": "A=I+10^(-10)[[2,3],[3,-1]] on a fixed orthonormal two-sector axis",
+  "nodes": [
+    {
+      "x": "4/5",
+      "parsed_q": "16/41",
+      "normalized_mark": "177777777875555555569/455555555897777777845",
+      "mass_for_verification_only": "820000000616000000121/820000000000000000000"
+    },
+    {
+      "x": "5/6",
+      "parsed_q": "25/61",
+      "normalized_mark": "277777777922222222241/677777778282222222322",
+      "mass_for_verification_only": "3050000002270000000449/3050000000000000000000"
+    },
+    {
+      "x": "7/8",
+      "parsed_q": "49/113",
+      "normalized_mark": "544444444708888888921/1255555556477777777962",
+      "mass_for_verification_only": "5650000004150000000829/5650000000000000000000"
+    },
+    {
+      "x": "9/10",
+      "parsed_q": "81/181",
+      "normalized_mark": "900000000420000000049/2011111112575555555850",
+      "mass_for_verification_only": "362000000263600000053/362000000000000000000"
+    }
+  ],
+  "interval_q": [
+    "16/41",
+    "81/181"
+  ],
+  "width": "425/7421",
+  "beta": "9/40",
+  "coefficient_bounds": [
+    "41218",
+    "213917863/1260",
+    "80832508/315",
+    "10545881/63",
+    "824360/21"
+  ],
+  "L": "681840665624347/504000000",
+  "max_normalized_mark_error": "42600000014981/364011111376175555608850",
+  "width_L_delta": "15072464522413883355184879/1662304001210451200243376000000",
+  "scale_free_uniform_log_slope_bound": "6579574071813731081107469827/41557223218648219659000520378025",
+  "uniform_log_slope_bound_decimal": [
+    "0.00015832564262",
+    "0.00015832564263"
+  ],
+  "improved_bound_with_relative_masses_decimal": [
+    "0.00012587724438",
+    "0.00012587724439"
+  ],
+  "direct_uniform_raw_slope_upper": "1740000000087/2000000000000000000000",
+  "interior_points_checked_per_matrix": 65,
+  "complete_interval_proof": true,
+  "complex_phase_control": {
+    "x": "5/6",
+    "epsilon": "1/1000",
+    "absolute_mark_error": "11/61000061",
+    "real_axis_mass": "1000001/1000000",
+    "absolute_phase_mass_derivative": "3/1525"
+  },
+  "unknown_constant_scale_cancelled": true,
+  "unchanged_normalized_marks_case": "zero slope",
+  "scope": "The axis, filter, and binary terminal are frozen. A moving scale adds its own log derivative.",
+  "physical_weighted_marks_supplied": false,
+  "GR_closed": false
+}

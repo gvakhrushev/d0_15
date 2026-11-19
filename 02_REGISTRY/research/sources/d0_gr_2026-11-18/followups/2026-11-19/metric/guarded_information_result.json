@@ -1,0 +1,54 @@
+{
+  "central_relative_rows_in_error_coordinate": {
+    "CQ_entropy_in_golden_units": 1,
+    "direct_length": 1,
+    "mutual_information_about_conditional_old_input": 0,
+    "optimal_cold_corner": 0,
+    "registered_length_minus_CQ": 0
+  },
+  "common_N": 903,
+  "fixed_birth_actuator_is_an_additional_admission": true,
+  "microscopic_info_selected": false,
+  "minimum_angle_discrepancy": [
+    "0.48586827175664",
+    "0.48586827175665"
+  ],
+  "minimum_discrepancy_shared_work_no_thermal_remainder": "1/2 per varied copy",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "spectral_finite_heat_row_set_to_zero": false,
+  "status": "PASS",
+  "two_sided_physical_settings": {
+    "902": {
+      "Bayesian_old_information_gain": "0",
+      "complete_CQ_code_secant": [
+        "0.00671944458642",
+        "0.00671944458643"
+      ],
+      "l_minus_native": [
+        "0.00152741493111",
+        "0.00152741493112"
+      ],
+      "observed_code_length_secant": "1",
+      "one_minus_overlap_secant": [
+        "0.00080816459555",
+        "0.00080816459556"
+      ]
+    },
+    "903": {
+      "Bayesian_old_information_gain": "0",
+      "complete_CQ_code_secant": [
+        "-0.00672115471418",
+        "-0.00672115471417"
+      ],
+      "l_minus_native": [
+        "-0.00152624932007",
+        "-0.00152624932006"
+      ],
+      "observed_code_length_secant": "1",
+      "one_minus_overlap_secant": [
+        "-0.00080878179850",
+        "-0.00080878179849"
+      ]
+    }
+  }
+}

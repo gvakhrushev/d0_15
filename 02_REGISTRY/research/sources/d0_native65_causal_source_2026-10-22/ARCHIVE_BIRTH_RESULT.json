@@ -1,0 +1,18 @@
+{
+  "status": "PASS_NATIVE_BIRTH_N3_NUMERICAL_EXTENSION",
+  "exact_analytical_C1": "99*p^2/512000",
+  "C1_numeric": 7.385670920656331e-05,
+  "C1_from_actual_Kraus_jets": 7.385670920656331e-05,
+  "all_n_proof": "C_n >= n*C1 for each fixed finite n, via first appearance of 22 newborn labels and Phi_0(I/16)=I/16",
+  "n3_old_live_products": 74088,
+  "n3_old_live_zero_products_diagnostic": 0,
+  "n3_smallest_product_Frobenius_norm": 2.628530103475699e-07,
+  "n3_additional_first_order_birth_from_oldlive": 0.0,
+  "n3_total_C3_diagnostic": 0.00022157012761968994,
+  "n3_rlogr_source_coefficient_diagnostic": 0.0018417679373714149,
+  "fixed_input": "I16/16; pure rank16 reference purification for fullfine Shannon identification",
+  "n3_interval_certificate": false,
+  "all42_source_test": false,
+  "Book03_selected": false,
+  "GR_closed": false
+}

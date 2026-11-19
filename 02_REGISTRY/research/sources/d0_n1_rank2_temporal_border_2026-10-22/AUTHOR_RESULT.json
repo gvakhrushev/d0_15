@@ -1,0 +1,55 @@
+{
+  "status": "AUTHOR_EXECUTED_EXACT_TWO_CAR_BANDED_PLUS_RANK2_THEOREM",
+  "pr": 334,
+  "source_date": "2026-10-22",
+  "path": "02_REGISTRY/research/A4D_NATIVE_N1_TWO_CAR_RANK2_BORDER_GEOMETRIC_SCHUR_2026_10_22.md",
+  "theorem_blob": "a4a77ea01f9f9146458174902228c07e1424a486",
+  "checker_path": "02_REGISTRY/research/sources/d0_n1_rank2_temporal_border_2026-10-22/check_native_n1_rank2_temporal_border.py",
+  "checker_blob": "56f3ef149951ce9fe3ea0de25cd49342b879c798",
+  "checker_source_git_blob_matches_local_executed": true,
+  "checker_local_sha256": "19e47561037f61e9c5bca547cc29a14433ad6ac89e81064f71a588654337b49b",
+  "geometry_source": "original 3-interval six-face f and Cartesian coframe X seed; nonzero 0-1 metric shift probes source Hessian",
+  "actual_n1_price": "native original sigma-minus z=2^-20 negative matter orientation, full Bernoulli entropy, fixed positive scalar normalization",
+  "bench": [
+    {
+      "PF": [
+        1,
+        1,
+        1
+      ],
+      "native_current_before": 0.005815673793570601,
+      "native_current_after": 2.1815652663652975e-72,
+      "independent_n1_entropy_scalar_source": 6.198705089122064e-75,
+      "min_real_flux_eigen": 38.58398000401864,
+      "rank2_minor": 0.00010459069724546106,
+      "geometric_hessian_source_error": 1.4265217e-36,
+      "woodbury_error": 5.5271479e-76
+    },
+    {
+      "PF": [
+        1,
+        2,
+        1
+      ],
+      "native_current_before": 0.005972207502394365,
+      "native_current_after": 2.0420047825149712e-71,
+      "independent_n1_entropy_scalar_source": 1.3647237973146994e-74,
+      "min_real_flux_eigen": 38.58396925719808,
+      "rank2_minor": 0.00010454159328377177,
+      "geometric_hessian_source_error": 1.4332863e-36,
+      "woodbury_error": 1.1054296e-75
+    }
+  ],
+  "mathematical_gate": "For original time-local N1 price and fixed two-ended scalar collar, material elimination produces K_eff=K_band+2 C^T W^-1 C with W 2x2 SPD, rank update<=2. Combine with exact temporal Lorentz quotient yields 34n-28 geometric unknowns and native blocks [34,...,34,40].",
+  "scope": {
+    "true_original_N1_CQ_field_price": true,
+    "original_42_full_field_tensor_exact_root": false,
+    "actual_full_native_Book03_absolute_Info": false,
+    "compulsory_natural_execution_selected": false,
+    "full_four_dimensional_spatial_scalar_Euler_unrestricted": false,
+    "original_spatial_full_128_tape_replayed": false,
+    "full_generic_GR": false,
+    "GR_closed": false
+  },
+  "checks": "local independent author mpmath 75 digit root/source/secant, no independent interval certification or repo-wide CI claimed"
+}

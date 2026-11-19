@@ -1,0 +1,867 @@
+# Complete-price nonvacuum stationary normal form
+
+**Date:** 2026-10-21.  
+**Source snapshot:** `963a9ae0a22ac05ba13b86e66f56bae68a6ec492`.  
+**Result:** exact local stationary equivalence of the declared complete
+two-density price to weighted Palatini geometry with a derived nonlinear
+matter response. The theorem permits a coupled finite price and requires
+neither an invertible density dictionary nor a positive physical Hessian.  
+**Closure flag:** `GR_closed = false`.
+
+## 1. The positive extension
+
+The published
+[complete-compiler coframe equivalence](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md)
+removes the nonlinear scalar curvature coefficient in the vacuum price by
+a positive radial change of coframe. Its matter obstruction is genuine:
+the original nondensitized kinetic density scales with the opposite
+degree, so one radial scale cannot in general turn the entire two-density
+price into a prescribed linear combination of both densities.
+
+The extension proved here retains that opposite degree and the entire
+price. An exact algebraic stationary representation supplies a second
+pair of coordinates at each free coframe site. After rescaling the
+coframe, these coordinates have a unique stationary elimination. The
+result is
+
+\[
+\boxed{
+ S_{\mathrm{eff}}
+ =B_{\mathrm{tot}}+\sum_{i\in I}a_iX_i+K(\mathbf Y;\zeta).
+}
+\tag{1}
+\]
+
+Here \(X_i\) is the same geometric density, \(Y_i\) is the same
+nondensitized matter density, and \(K\) is determined by the actual
+complete price. All its higher terms remain present. For a correlated
+price, \(K\) may couple different sites; no spatial locality is inferred.
+
+Three consequences are proved below.
+
+1. The original finite action and (1) have corresponding full stationary
+   systems near their common zero-density stratum. The construction
+   retains the independent coframe, shared-link, matter and internal
+   sources, the original measure and the actual held collar.
+2. For the native one-stage CQ valuation, the first nonlinear matter
+   coefficient satisfies \(K''(0)>0\). The previous one-scale obstruction
+   becomes a derived nonlinear kinetic term with a fixed coefficient.
+3. For every fixed finite cap admitted by the owned unit-charge
+   interface, the curvature slope is nonzero. Its exact matter/curvature
+   ratio is cap-independent and has an explicit finite-detector
+   correction to \(10+6\sqrt5\).
+
+The first statement is **stationary equivalence through an extended
+function**. It is not a bare field-only off-shell identity. No additional
+physical field, information functional, paid primitive or adjustable
+compensator is introduced.
+
+## 2. Source ownership and the admitted domain
+
+The inputs are the complete ledger of
+[full-price composition](sources/d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md),
+the response in the
+[exact detector](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md),
+and the complete compiler's retained baseline in the source packet.
+The unit-charge estimate used in Section 6.1 is an explicit consumed
+premise of this continuation; its original implementation proof has
+not been re-read in the current environment.
+Source transport is interpreted in the sense of the
+[canonical generator and price interface](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/CANONICAL_GENERATOR_AND_PRICE_INTERFACE.md).
+The theorem does not replace those definitions with a different record
+entropy or an uncharged execution.
+
+Let \(I\) be a finite set of **actually free** coframe sites. At each
+\(i\in I\), \(e_i\) has its original sixteen independent components in an
+open nondegenerate chart. The proper-Lorentz links \(U\), including every
+link shared by based faces, remain independent. The original matter
+coordinates are denoted by \(\Psi\), and other admitted independent
+coordinates by \(\zeta\). Local charts may be used for the link group and
+other manifolds. No radial coframe constraint is imposed on a free site.
+
+Coframes on a held collar are fixed and are **never rescaled**. Only
+free sites receive auxiliary coordinates. The admitted local domain is
+a product in these free coframe directions and the remaining admitted
+variables. Additional constraints that mix a free coframe with other
+variables require their own domain analysis; unrestricted stationary
+auxiliary elimination is not asserted for arbitrary coupled constraints.
+
+Write the original free-site queries as
+
+\[
+ x_i=x_i(e_I,U,\Psi;\zeta),\qquad
+ y_i=y_i(e_I,U,\Psi;\zeta).
+\]
+
+The essential carrier hypothesis is the following **independent
+sitewise reciprocal homogeneity**: for independent positive \(u_j\)
+near one, with the collar and all other variables held fixed,
+
+\[
+\begin{aligned}
+ x_i((\sqrt{u_j}e_j)_{j\in I},U,\Psi;\zeta)
+   &=u_i x_i(e_I,U,\Psi;\zeta),\\
+ y_i((\sqrt{u_j}e_j)_{j\in I},U,\Psi;\zeta)
+   &=u_i^{-1}y_i(e_I,U,\Psi;\zeta).
+\end{aligned}
+\tag{2}
+\]
+
+Global homogeneity under a common \(u_j=u\) is insufficient. In the
+native application, the first identity is the local quadratic coframe
+degree of the six-face geometric density; the second must be the
+inverse-metric degree of the **original nondensitized** matter query.
+Neighboring matter values in a difference stencil are allowed, as are
+shared links, provided the actual coframe dependence obeys (2).
+Multiplying the matter query by a determinant of the coframe changes this
+interface and is not part of the theorem.
+
+The actual declared finite ledger must have the form
+
+\[
+ S=B(\zeta)+S_{\mathrm{coll}}(U,\Psi,\zeta)
+        +F(\mathbf x,\mathbf y;\zeta),
+ \qquad F(0,0;\zeta)=0.
+\tag{3}
+\]
+
+The function \(F\) may be an arbitrary smooth finite coupled function on
+its declared record-support chart. Analytic input gives an analytic
+normal form. All original fixed site weights can be included in \(F\);
+moving weights retain their \(\zeta\)-derivatives. Normalization in (3)
+means that the actual value \(F(0,0;\zeta)\) has been transferred into
+\(B\), with its entire derivative, rather than discarded.
+
+The spectator \(S_{\mathrm{coll}}\) denotes any retained collar price
+that is independent of the free coframes. It may still have nonzero
+shared-link, matter-stencil and internal derivatives. Independence is a
+hypothesis about the actual support, for example a buffered local
+stencil; the word “collar” alone does not establish it. Set
+
+\[
+B_{\mathrm{tot}}=B+S_{\mathrm{coll}},\qquad
+a_i(\zeta)=F_{x_i}(0,0;\zeta),\qquad
+b_i(\zeta)=F_{y_i}(0,0;\zeta),
+\tag{4}
+\]
+
+and assume \(a_i\ne0\) at each free site. Shrink the chart if necessary
+so their signs are fixed.
+
+No assumption is made that \((\mathbf x,\mathbf y)\) are independent
+coordinates on field space. In particular, the theorem remains valid
+at a critical or rank-deficient zero-density dictionary. It is proved
+on the original coframe/link/matter carrier, not by declaring its query
+densities to be free field coordinates.
+
+## 3. Exact algebraic representation and the coframe map
+
+Introduce two real auxiliary coordinates \((s_i,\pi_i)\) at each
+\(i\in I\), independent of all original variables. Define
+
+\[
+\widehat S
+ =B_{\mathrm{tot}}+F(\mathbf s,\mathbf y;\zeta)
+      +\sum_{i\in I}\pi_i(x_i-s_i).
+\tag{5}
+\]
+
+Their equations, in the original coframe chart, are exactly
+
+\[
+s_i=x_i,\qquad
+\pi_i=F_{x_i}(\mathbf x,\mathbf y;\zeta).
+\tag{6}
+\]
+
+Substitution returns (3), including its baseline and every derivative.
+Consequently original critical points lift uniquely to critical points
+of (5), and every critical point of (5) projects to one of (3).
+Equation (5) is an algebraic generating family for the same finite
+function. It uses neither a convex Legendre transform nor an inverse of
+the physical or preparation Hessian.
+
+On the open chart \(\pi_i/a_i>0\), define only at free sites
+
+\[
+\widetilde e_i=\sqrt{\pi_i/a_i(\zeta)}\,e_i.
+\tag{7}
+\]
+
+Leave the held collar, \(U,\Psi,\mathbf s,\boldsymbol\pi,\zeta\)
+unchanged. Before auxiliary elimination this is an explicit
+diffeomorphism. Its inverse is
+\(e_i=\sqrt{a_i/\pi_i}\,\widetilde e_i\), and the determinant of
+its sixteen-component coframe block is \((\pi_i/a_i)^8\). The whole
+Jacobian is block triangular, so derivatives of \(a_i(\zeta)\) do not
+spoil invertibility; they must be retained in source transport.
+
+Let
+
+\[
+X_i=x_i(\widetilde e_I,U,\Psi;\zeta),\qquad
+Y_i=y_i(\widetilde e_I,U,\Psi;\zeta).
+\]
+
+By (2), \(x_i=(a_i/\pi_i)X_i\) and
+\(y_i=(\pi_i/a_i)Y_i\). Therefore (5) has the exact extended-function
+identity
+
+\[
+\widehat S
+ =B_{\mathrm{tot}}+\sum_i a_iX_i
+       +G(\mathbf s,\boldsymbol\pi,\mathbf Y;\zeta),
+\tag{8}
+\]
+
+where
+
+\[
+G(\mathbf s,\boldsymbol\pi,\mathbf Y;\zeta)
+ =F\!\left(\mathbf s,
+       ((\pi_i/a_i)Y_i)_i;\zeta\right)-\sum_i\pi_i s_i.
+\tag{9}
+\]
+
+This calculation does not use a matter connection, a rescaling of
+\(\Psi\), a determinant density or an alteration of the lattice
+measure. In particular, the geometric term remains the original
+weighted Palatini density under the original fixed sum or measure.
+With shared links, its derivatives are the full derivatives of all
+incident based terms, not separately chosen face derivatives.
+
+## 4. The universal auxiliary block
+
+Write \(Z_i=(\pi_i/a_i)Y_i\). The auxiliary equations in (8) are
+
+\[
+ F_{x_i}(\mathbf s,\mathbf Z;\zeta)-\pi_i=0,
+ \qquad
+ (Y_i/a_i)F_{y_i}(\mathbf s,\mathbf Z;\zeta)-s_i=0.
+\tag{10}
+\]
+
+At \(\mathbf Y=0\), their root is exactly
+\(\mathbf s=0,\boldsymbol\pi=\mathbf a\). Let \(n=|I|\) and evaluate
+the following derivatives at \((\mathbf x,\mathbf y)=(0,0)\). In
+the ordered auxiliary coordinates \((\mathbf s,\boldsymbol\pi)\),
+
+\[
+H_{\mathrm{aux}}
+ =\begin{pmatrix}F_{xx}&-I_n\\-I_n&0\end{pmatrix},\qquad
+H_{\mathrm{aux}}^{-1}
+ =\begin{pmatrix}0&-I_n\\-I_n&-F_{xx}\end{pmatrix}.
+\tag{11}
+\]
+
+Multiplication gives the identity matrix. Its determinant is
+\((-1)^n\), and its inertia is \((n,n,0)\). For example, the change
+\(\delta\pi\mapsto\delta\pi-\tfrac12F_{xx}\delta s\) reduces its
+quadratic form to \(-2\delta s^{T}\delta\pi\), displaying the
+hyperbolic pairs. Thus the block is invertible for every symmetric
+\(F_{xx}\), including zero and singular matrices.
+
+The implicit-function theorem gives a unique nearby smooth section
+
+\[
+\mathbf s=\mathbf s(\mathbf Y;\zeta),\qquad
+\boldsymbol\pi=\boldsymbol\pi(\mathbf Y;\zeta),\qquad
+(\mathbf s(0),\boldsymbol\pi(0))=(0,\mathbf a).
+\tag{12}
+\]
+
+Define
+
+\[
+K(\mathbf Y;\zeta)
+ =G(\mathbf s(\mathbf Y;\zeta),
+      \boldsymbol\pi(\mathbf Y;\zeta),\mathbf Y;\zeta).
+\tag{13}
+\]
+
+Substituting this section in (8) gives (1). Since the auxiliary first
+derivatives vanish, differentiating the reduced function retains every
+original field and internal equation by the stationary envelope
+identity. Together with (5)--(8), this proves the following statement.
+
+> **Finite coupled-price stationary normal-form theorem.** Under
+> (2)--(4), on the product domain of actually free coframes and the
+> remaining admitted variables, the original action (3) and (1) have
+> locally corresponding full critical sets near their common
+> zero-density stratum. The correspondence is exact, uses the unique
+> algebraic section (12), and preserves the held collar. It does not
+> require a positive or invertible physical Hessian, a nondegenerate
+> preparation Hessian, an invertible density dictionary, or a factorized
+> history price.
+
+The theorem is local in the real field chart and the fixed support of
+the declared finite ledger. It does not infer uniform neighborhoods in
+the cap or lattice size.
+
+There is a direct reverse-engineering interpretation. A free radial
+variation \(e_i\mapsto e^{t/2}e_i\) in the original action has the
+Euler trace
+
+\[
+\frac{dS}{dt}\bigg|_{t=0}=x_iF_{x_i}-y_iF_{y_i}.
+\tag{12a}
+\]
+
+At a full critical point it vanishes. The new auxiliary equations give
+\(s_i\pi_i=(\pi_iY_i/a_i)F_{y_i}\), which is exactly this trace
+relation when pulled back by (6)--(7). Near zero its first-order
+relation is \(\delta x_i=(b_i/a_i)\delta y_i\). This is the direction
+appearing in the derived matter Hessian below. Thus the auxiliary
+section expresses a trace relation already required by the original
+free coframe equations; it does not supply a new physical primitive.
+The generating-family and stationary-elimination method is classical;
+the present result is its application to the owned complete native
+price and reciprocal coframe degrees.
+
+### 4.1 Why this is not a bare off-shell equality
+
+Equations (5) and (8) are the same **extended** function in different
+coordinates. Eliminating the auxiliaries at fixed original coframes
+gives (3); eliminating them at fixed transformed coframes gives (1).
+Those two operations do not commute off shell, because (7) mixes a
+coframe with \(\pi\). A simple identity of the form
+\(S=S_{\mathrm{eff}}\circ\Phi\) on the original field space has not
+been proved or used.
+
+At a full critical point, ordinary coordinate invariance of the
+differential and stationary auxiliary elimination give the claimed
+bijection. This is the precise reason the previous field-only radial
+obstruction does not exclude the present result.
+
+### 4.2 Coupled collar records and other spectator parameters
+
+The main statement treats an explicit coframe-independent collar
+spectator and independent parameters \(\zeta\). If the actual price
+instead has a correlated dependence
+\(F(\mathbf x_I,\mathbf y_I;w(U,\Psi,\zeta),\zeta)\), the same
+algebra can be applied with \(w\) as a parameter and then pulled back
+to its actual value, provided it is independent of the free coframes.
+The coordinate map remains block triangular in the unscaled variables.
+All \(Dw\) terms must be retained, and now
+\(a_i=a_i(w(U,\Psi,\zeta),\zeta)\) can vary with links and matter.
+The resulting curvature term is \(\sum_i a_i(w,\zeta)X_i\); it is
+not a Palatini term with a constant coefficient under those variations.
+This extension must not be cited as an automatic match to a
+constant-coupling Einstein action.
+
+If a supposed collar term actually depends on free coframes, it cannot
+be declared a spectator. It must be included in a ledger obeying the
+required homogeneities, or the theorem's carrier hypothesis fails.
+
+## 5. The derived nonlinear matter jet
+
+At fixed \(\zeta\), put
+
+\[
+D=\operatorname{diag}(b_i/a_i).
+\]
+
+Differentiating (10) at \(\mathbf Y=0\) gives
+
+\[
+ D_Y\mathbf s(0)=D,\qquad
+ D_Y\boldsymbol\pi(0)=F_{xx}D+F_{xy}.
+\tag{14}
+\]
+
+The envelope identity applied to (13) yields
+
+\[
+K(0;\zeta)=0,\qquad K_Y(0;\zeta)=\mathbf b,
+\tag{15}
+\]
+
+and the exact coupled Hessian
+
+\[
+\boxed{
+ K_{YY}(0)
+ =F_{yy}+D F_{xy}+F_{yx}D+D F_{xx}D.
+}
+\tag{16}
+\]
+
+Equivalently,
+
+\[
+v^TK_{YY}(0)v
+ =\begin{pmatrix}Dv\\v\end{pmatrix}^{T}
+  H_F(0,0)
+  \begin{pmatrix}Dv\\v\end{pmatrix}.
+\tag{17}
+\]
+
+These formulas give the actual higher response rather than deleting it.
+They also display its possible coupling between sites. Only when the
+declared price factorizes appropriately, for example
+\(F=\sum_i m_iF_i(x_i,y_i;\zeta)\) with the actual fixed weights,
+does the elimination factorize as \(K=\sum_i m_iK_i(Y_i;\zeta)\).
+Even then, calling it a generally covariant continuum k-essence action
+would additionally require the appropriate measure and continuum
+dictionary, neither of which follows from (16).
+
+For one pair, write \(a=F_x(0,0)\), \(b=F_y(0,0)\). Formula (16)
+reduces to
+
+\[
+\boxed{
+K''(0)=F_{yy}+2(b/a)F_{xy}+(b/a)^2F_{xx}.
+}
+\tag{18}
+\]
+
+## 6. Application to the exact native two-band valuation
+
+This section uses the displayed native detector and complete CQ price
+from the source snapshot named above. It is an algebraic deduction from
+those formulas; the current working environment has not provided a
+fresh checkout for replaying their original implementation interfaces.
+
+Reserve
+
+\[
+\varphi=(1+\sqrt5)/2,\qquad p=\varphi^{-1},\qquad z_\star=2^{-20}.
+\]
+
+The auxiliary conjugate variable throughout this document is \(\pi\),
+not \(p\). Define the original two-band response by
+
+\[
+\begin{aligned}
+ \ell(E)&=4E(1-E),\\
+ \mathcal B(y)&=4(p+p^2y)^2[1-(p+p^2y)^2],\\
+ \mathcal A(x,y)&=\ell(p^2(1+x))
+        +[1-\ell(p^2(1+x))]\mathcal B(y),\\
+ r(x,y)&=1-[1-z_\star\mathcal B(y)]
+              [1-z_\star\mathcal A(x,y)].
+\end{aligned}
+\tag{19}
+\]
+
+Let
+
+\[
+\begin{aligned}
+ L&=4p^3=1-p^6,& A_0&=L(1+p^6)=1-p^{12},\\
+ Q&=1-z_\star L,&R&=1-z_\star A_0,&r_0&=1-QR.
+\end{aligned}
+\tag{20}
+\]
+
+At \((x,y)=(0,0)\), direct differentiation gives
+
+\[
+\begin{aligned}
+ \mathcal B_y&=8p^6,&
+ \mathcal B_{yy}&=8p^4(1-6p^2)<0,\\
+ \mathcal A_x&=4p^{11},&\mathcal A_y&=8p^{12},\\
+ \mathcal A_{xx}&=-8p^{10},&
+ \mathcal A_{xy}&=-32p^{11},&
+ \mathcal A_{yy}&=p^6\mathcal B_{yy}.
+\end{aligned}
+\tag{21}
+\]
+
+Consequently
+
+\[
+\begin{aligned}
+ r_x&=4z_\star Qp^{11}>0,\\
+ r_y&=8z_\star(Rp^6+Qp^{12})>0,\\
+ r_{xx}&=z_\star Q\mathcal A_{xx}<0,\\
+ r_{xy}&=z_\star Q\mathcal A_{xy}
+                  -z_\star^2\mathcal B_y\mathcal A_x<0,\\
+ r_{yy}&=z_\star(R\mathcal B_{yy}+Q\mathcal A_{yy})
+                  -2z_\star^2\mathcal B_y\mathcal A_y<0.
+\end{aligned}
+\tag{22}
+\]
+
+### 6.1 Nonzero curvature slope for every fixed finite cap
+
+Use the original golden binary entropy
+
+\[
+h_\varphi(r)=-r\log_\varphi r-(1-r)\log_\varphi(1-r)
+\]
+
+and the owned finite-cap valuation
+
+\[
+V_N(r)=\alpha[\kappa-\beta h_\varphi(r)]E_N(\beta r),
+\qquad E_N(t)=\sum_{j=0}^{N-1}t^j,
+\qquad\kappa=\mu-H_T.
+\tag{23}
+\]
+
+The application consumes the previously reported **unit-charge
+primitive interface** bound
+\(\alpha>0\), \(0<\beta\le1\), and \(\kappa>53\).
+It is stated here as an explicit premise, rather than a new proof about
+the implementation or an unverified attribution to a particular source
+section. Its exact ownership and admission assumptions must be checked
+against the original complete-compiler packet before promoting a new
+native-execution claim. This is not a free choice of a price parameter,
+nor an inequality for arbitrary reassigned physical prices. If the finite cap
+changes the actual readiness, bank or prefix data, the interface and
+its bound are consumed separately for that cap.
+
+Since \(p>3/5\), \(L>3/4\); also \(L<A_0<1\). Therefore
+
+\[
+r_0=z_\star(L+A_0)-z_\star^2LA_0,
+\qquad
+\boxed{z_\star<r_0<2z_\star.}
+\tag{24}
+\]
+
+For the lower bound, use
+\(r_0>z_\star(3/2-z_\star)>z_\star\); the upper bound follows
+from \(L+A_0<2\). In particular \(0<r_0<1/2\), and
+
+\[
+\begin{aligned}
+ 0<h_\varphi'(r_0)
+  &=\log_\varphi\frac{1-r_0}{r_0}
+    <20\log_\varphi2<40,\\
+ 0<h_\varphi(r_0)&\le\log_\varphi2<2.
+\end{aligned}
+\tag{25}
+\]
+
+The last strict bound uses \(\varphi^2>2\). For \(N=1\),
+
+\[
+V_1'(r_0)=-\alpha\beta h_\varphi'(r_0)<0.
+\tag{26}
+\]
+
+For every finite \(N\ge2\),
+\(E_N'(\beta r_0)\ge1\) and
+\(E_N(\beta r_0)<(1-2^{-19})^{-1}\). Hence
+
+\[
+\begin{aligned}
+\frac{V_N'(r_0)}{\alpha\beta}
+ &=[\kappa-\beta h_\varphi(r_0)]E_N'(\beta r_0)
+       -h_\varphi'(r_0)E_N(\beta r_0)\\
+ &>51-\frac{40}{1-2^{-19}}>10.
+\end{aligned}
+\tag{27}
+\]
+
+Thus, for the normalized local price
+\(F_N(x,y)=V_N(r(x,y))-V_N(r_0)\),
+
+\[
+\boxed{
+a_1<0,\qquad a_N>0\ (N\ge2),\qquad a_N\ne0
+\quad\text{for every fixed finite admitted cap}.
+}
+\tag{28}
+\]
+
+The same signs hold for \(b_N\), because both derivatives of \(r\)
+in (22) are positive. The normal-form chart therefore exists for every
+such cap. This conclusion concerns the actual price for a **fixed**
+cap; it is not a theorem about an optimized nonsmooth envelope over
+caps, a mixture whose slopes may cancel, a uniform infinite bank, or an
+interchange of cap and continuum limits.
+
+### 6.2 The exact finite coefficient ratio
+
+Since the scalar outer derivative is nonzero, it cancels from the
+first-coefficient ratio:
+
+\[
+\begin{aligned}
+\frac{b_N}{a_N}
+ &=\frac{r_y}{r_x}
+ =2p^{-5}\left(\frac RQ+p^6\right)\\
+ &=\boxed{16+12p-\frac{8z_\star p^4}{1-z_\star L}}.
+\end{aligned}
+\tag{29}
+\]
+
+The identity uses \(A_0-L=Lp^6=4p^9\) and
+\(2p^{-5}+2p=16+12p\). It is independent of the outer scalar
+valuation, readiness and cap as long as the same actual two-band
+primitive and nonzero slope are used.
+
+If the original physical queries are
+
+\[
+x=\eta^2f,\qquad y=\sigma\eta^2q_{\mathrm{mat}},
+\qquad\sigma\in\{-1,+1\},
+\]
+
+their material/geometric coefficient ratio is exactly
+
+\[
+\boxed{
+\lambda_{\mathrm{eff}}(z_\star)
+ =\sigma\left(16+12p-
+       \frac{8z_\star p^4}{1-z_\star L}\right).
+}
+\tag{30}
+\]
+
+Here \(\eta\) cancels. The detector parameter \(z_\star\) is not the
+lattice spacing. At \(z_\star=2^{-20}\), the positive magnitude is
+approximately \(23.41640675188407497289558\). Its limit as
+\(z_\star\to0\) is
+
+\[
+16+12p=10+6\sqrt5\approx23.41640786499873817845504.
+\tag{31}
+\]
+
+These are close and unequal. In particular, if an existing owner uses
+\(\lambda_-=-(10+6\sqrt5)\) literally, setting \(\sigma=-1\) in
+(30) does not reproduce that exact finite constant: their difference
+is \(8z_\star p^4/Q>0\), approximately
+\(1.11311466320555946\times10^{-6}\). A parameterized all-equations owner can be
+consumed at (30); an owner with an immovable different coefficient
+cannot be relabeled without a new proof.
+
+### 6.3 A forced positive nonlinear term for the one-stage price
+
+For \(N=1\), the nonconstant part is
+
+\[
+F_1(x,y)=-\alpha\beta h_\varphi(r(x,y))
+             +\alpha\beta h_\varphi(r_0).
+\]
+
+Equations (22), (25) and
+
+\[
+h_\varphi''(r_0)
+ =-\frac{1}{\ln\varphi}\left(\frac1{r_0}+\frac1{1-r_0}\right)<0
+\]
+
+give \(a,b<0\) and \(b/a=r_y/r_x>0\). Put \(w=(b/a,1)^T\).
+All components of \(w\) are positive. In (18),
+
+\[
+\boxed{
+K''(0)=-\alpha\beta\left[
+ h_\varphi''(r_0)(Dr\,w)^2+
+ h_\varphi'(r_0)\,w^TH_rw\right]>0.
+}
+\tag{32}
+\]
+
+Indeed \(Dr\,w>0\), and every entry of \(H_r\) in (22) is negative,
+so both terms inside the square brackets are strictly negative. No
+numerical determinant test or assumption that the full price Hessian is
+positive definite is needed.
+
+The coefficient (32) is the transverse nonlinear response forced by
+the original price. It is precisely the kind of term the old bare
+one-scale linearization could not remove. In the stationary normal
+form it remains, with no fitted counterterm. With the physical query
+normalization above, the quadratic term in \(q_{\mathrm{mat}}\)
+has coefficient \(\eta^4K''(0)/2\), since \(\sigma^2=1\).
+
+No sign claim about \(K''\) for other caps or arbitrary coupled prices
+is needed for the stationary theorem.
+
+## 7. Exact null-matter persistence and the full internal source
+
+By (15)--(16), on a sufficiently small chart,
+
+\[
+K(\mathbf Y;\zeta)
+ =\sum_i b_i(\zeta)Y_i+O(\|\mathbf Y\|^2).
+\tag{33}
+\]
+
+The remainder has zero value and zero full first differential on
+\(\mathbf Y=0\). On the common null stratum
+\(\mathbf X=\mathbf Y=0\), the auxiliary section has
+\(\mathbf s=0,\boldsymbol\pi=\mathbf a\), and the free-coframe map
+(7) is the identity. The full first source is exactly
+
+\[
+\boxed{
+dS_{\mathrm{eff}}\big|_{X=Y=0}
+ =dB_{\mathrm{tot}}+\sum_i(a_i\,dX_i+b_i\,dY_i).
+}
+\tag{34}
+\]
+
+This is the source of the actual linear action
+
+\[
+S_{\mathrm{lin}}
+ =B_{\mathrm{tot}}+\sum_i(a_iX_i+b_iY_i)
+\tag{35}
+\]
+
+at that stratum. The assertion includes ambient variations for which
+\(dY_i\ne0\). A nonzero, time-dependent null material field may
+have \(Y_i=0\) while its stress source \(dY_i\) is nonzero; no
+variation is discarded by imposing a null ansatz before differentiating.
+
+Consequently every full critical configuration of (35) on this
+stratum is an exact full critical configuration of the original
+finite-price action (3), and conversely locally, with the same held
+collar and admitted variables. There is no truncation in the resulting
+stationary statement. The higher terms of \(K\) vanish only to first
+order on this stratum, rather than being erased from the action.
+
+The positive content beyond an isolated first-source calculation is
+the entire nearby stationary representation (1), its unique algebraic
+section, and its fixed off-stratum matter response (16). It identifies
+where the complete higher price goes.
+
+### 7.1 Moving dictionaries do not remove the preparation equations
+
+If the query dictionary depends on \(\zeta\), (34) gives
+
+\[
+\boxed{
+D_\zeta S_{\mathrm{eff}}\big|_{X=Y=0}
+ =D_\zeta B_{\mathrm{tot}}
+     +\sum_i\left(a_iD_\zeta X_i+b_iD_\zeta Y_i\right).
+}
+\tag{36}
+\]
+
+Terms \((D_\zeta a_i)X_i\) and \((D_\zeta b_i)Y_i\) vanish at
+the stratum, but the displayed dictionary derivatives need not. It is
+only for an explicitly fixed dictionary that the internal source
+reduces to \(D_\zeta B_{\mathrm{tot}}\). If the owner absorbs the
+collar spectator into the symbol \(B\), the same formula is
+\(DB+\sum_i(a_iD_\zeta X_i+b_iD_\zeta Y_i)\), not automatically
+\(DB\).
+
+The same rule applies to price-dependent clock, address, reference and
+preparation variables, and to the \(w\)-dependent extension of
+Section 4.2. None of their equations is solved merely by the
+coframe change. A spectator may also have nonzero \(U\)- or
+\(\Psi\)-source, which remains in (34).
+
+### 7.2 The actual Einstein--CAR consumer
+
+The intended geometric consumers are the
+[primary left-coded CAR null-matter owner](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md),
+the
+[exact arbitrary-Brinkmann all40 reduction](../gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md),
+and the
+[all-mesh midpoint nonvacuum family](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md).
+Those results supply the curved null-matter geometry. The present
+normal form supplies the complete finite-price completion on an
+admitted two-density carrier.
+
+To compose them into the same original full equations, one must match
+the actual two densities, their signs and normalizations, the fixed
+measure and site weights, the shared-link derivatives and the held
+collar. In particular, equality of the ratios (29) alone is not enough
+if the actual \(a_i\) vary across sites: a weighted Palatini action
+with a varying coefficient can have additional link equations. The
+linear source in (35) must equal the owner's source with its actual
+weights, or differ by a single nonzero common scalar on the relevant
+fixed-parameter field block. All remaining internal and spectator
+equations must still hold.
+
+If the all40/matter theorem is parameterized in the coupling, (30)
+gives the coefficient for a **new** common curved Einstein--CAR family
+at every fixed admitted cap, and the midpoint construction can supply
+its fixed-continuum-solution sampling at every lattice spacing. That
+application consumes the all40 theorem at its actual coefficient; it
+does not identify the finite coefficient with its limit. The present
+document does not claim that the original coefficient interface has
+been freshly inspected in this environment.
+
+## 8. Boundary domains and critical inertia
+
+The proof uses only free coframes \(i\in I\). Thus a fixed collar
+coframe is literally identical before and after the transformation,
+including off shell. A collar price is retained as a spectator only
+under the independence hypothesis in Section 2, with its full
+derivative. This is sufficient to apply unconstrained stationary
+auxiliary elimination on the declared product domain.
+
+There is a different possible construction in which all coframes,
+including a fixed collar, are rescaled. In that construction the
+original boundary conditions become coupled conditions involving
+\(\pi\) and \(\widetilde e\). Such conditions must be transported
+as part of the admissible domain; one cannot then freely eliminate
+auxiliaries as though that domain were a product. Agreement of the
+coframe values at a null solution does not establish agreement of its
+off-shell boundary variations. No general theorem about that
+constrained alternative is used here.
+
+At a full critical point on the admitted product domain, the old
+auxiliary block in (5) has inertia \((n,n,0)\). The new auxiliary
+block in (8) has the same inertia near (11), by invertibility and
+continuity. Schur congruence under stationary elimination and Hessian
+congruence under the full coordinate map (7) therefore give
+
+\[
+\operatorname{Inertia}(H_S)+(n,n,0)
+ =\operatorname{Inertia}(H_{\widehat S})
+ =\operatorname{Inertia}(H_{S_{\mathrm{eff}}})+(n,n,0).
+\tag{37}
+\]
+
+The middle Hessians are written in different extended coordinates;
+their inertia agrees at a full critical point. Cancelling the common
+hyperbolic contribution shows that the two physical stationary
+descriptions have the same positive, negative and null dimensions on
+the corresponding admitted tangent domains.
+
+This conclusion requires the correctly transported tangent domain.
+It does not follow from comparing Hessians after imposing different
+boundary restrictions or deleting internal rows. In particular, an
+owned negative physical direction is not converted into a minimum by
+this construction. The result concerns stationary equivalence; it
+does not prove a minimizing physical execution.
+
+## 9. What is proved, and what remains an interface obligation
+
+| Statement | Scope established here |
+|---|---|
+| Exact coupled-price stationary normal form | Proved by (5)--(13), under the explicit sitewise and domain hypotheses |
+| No density-coordinate or physical-Hessian inverse | Directly established by the carrier map and universal block (11) |
+| Complete higher matter response | Exact implicit function (13), with coupled Hessian (16) |
+| Strictly positive native one-stage quadratic matter correction | Proved from the exact response signs in (21)--(22), through (32) |
+| Nonzero curvature slope for every admitted fixed finite cap | Proved from the owned unit-charge \(\kappa>53\) interface and (24)--(27) |
+| Exact finite coefficient ratio | Formula (30), distinct from the limit (31) |
+| Null-matter first source and full stationary persistence | Exact (34)--(36), including moving-dictionary and spectator sources |
+| Fixed collar and critical inertia | Established on the free-interior product domain described above |
+| Identification with the primary all40 plus matter carrier | Requires the original density, coefficient, weight, source and collar interfaces to match |
+| Selection of physical Info, writer, preparation root and time | Not supplied by the stationary normal form |
+| Derivation of an obligatory complete D0 action or full general relativity | Not established; `GR_closed = false` |
+
+The live repository checkout and remote source bodies were unavailable
+for a fresh interface replay during this continuation. This document
+therefore distinguishes the explicit algebraic proof from a claim
+that the current original matter stencil, coefficient normalization,
+unit-charge implementation or primary all-equations consumer has just
+been reverified. The source snapshot and relative owner links above
+identify the exact inputs to that follow-up verification.
+
+The remaining obligations are concrete: inspect (2) for the original
+nondensitized matter carrier, verify that the actual complete ledger
+has (3) on its declared support and fixed cap, match (35) to the owned
+nonvacuum source with the finite coefficient, and solve the retained
+internal source (36) for the same physical execution. An unknown
+additional ledger term cannot be absorbed by naming it a baseline if
+it depends on free coframes, and no baseline derivative has been set
+to zero by convention.
+
+The new mathematical result is the exact completion itself: the full
+native nonlinear price admits a stationary Palatini form with a
+uniquely derived nonlinear matter response, and its common null
+sector retains the entire ambient first source. The positive
+nonvacuum continuation therefore extends beyond the previously
+available vacuum coframe equivalence while preserving its actual
+limitations.

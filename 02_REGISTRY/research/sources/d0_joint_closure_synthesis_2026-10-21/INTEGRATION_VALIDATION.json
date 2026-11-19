@@ -1,0 +1,310 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-21T07:59:21.798438+00:00",
+  "repository": "gvakhrushev/d0_15",
+  "scientific_owner_pr": 334,
+  "initial_proof_input_commit": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "preserved_concurrent_ancestor": "afc4294f3d34af9ae50d7ae76fd59af5567493b3",
+  "concurrent_paths_preserved": 32,
+  "environment": {
+    "python": "3.12.14",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "dependency_path": "/tmp/d0_pydeps"
+  },
+  "new_calculation_replays": [
+    {
+      "packet": "d0_centered_preparation_2026-10-21",
+      "script": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/check_centered_preparation.py",
+      "integrator_replay_matches_recorded": true,
+      "normal_and_optimized_identical": true,
+      "result_sha256": "121540ce081cf4807f7befe880021bd96d47d76a464beac42374e1b4e5bc68a2",
+      "checks": 75,
+      "independent_review_sha256": "2b402b57cbe427932e8c614c330bf63780f8c5e2828004af9f2bd8142559f2d8"
+    },
+    {
+      "packet": "d0_native_density_rigidity_2026-10-21",
+      "script": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/check_density_rigidity.py",
+      "integrator_replay_matches_recorded": true,
+      "normal_and_optimized_identical": true,
+      "result_sha256": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b",
+      "checks": 101,
+      "independent_review_sha256": "50919da7a9e8c408436f4179bda4e26a9d689af6b36683e9e9fa4c330a84e29f"
+    },
+    {
+      "packet": "d0_complete_return_entropy_2026-10-21",
+      "script": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/check_complete_return_entropy.py",
+      "integrator_replay_matches_recorded": true,
+      "normal_and_optimized_identical": true,
+      "result_sha256": "fd7d15bc9fb169910db01eaf0dbf6911a906d0dfac6facb554968a7763d887ff",
+      "checks": null,
+      "independent_review_sha256": "c7f16d381725e26338339ee6fce2eb60e612c6a43cdbf362784f0fc8117b36c3"
+    }
+  ],
+  "source_pins": [
+    {
+      "owner": "d0_centered_preparation_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_native_logarithmic_source_reduction_2026-10-21/PROOF.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_logarithmic_source_reduction_2026-10-21/PROOF.md",
+      "sha256": "4b2ab4a0d80aa75dca4cd952b25e03827630cf6796e36cf6fb521aabe2eccb94",
+      "git_blob": "c00e533a56050bab649d987d85b8695c33ce4f5e",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_centered_preparation_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md",
+      "sha256": "2e906213861d0c4d1812e1ec8608aec571aeb18230fce8f791fb4cce6b4c2c1b",
+      "git_blob": "e5841990c5becf562928115012a4dcafd25f6a87",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_centered_preparation_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+      "sha256": "66108133dc615593e50e634274005a5d904b533f3a2f3fd7861a57b2557b8b50",
+      "git_blob": "829c2fafcf390f6d2d6246b46fb22cc8655756f2",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_centered_preparation_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md",
+      "sha256": "f45c6b301aad0d5601fc771b20550072ad8eeb579c8a701ec51c91b249d64f89",
+      "git_blob": "6afab2c3d5c8361639f2c58bddeffdfce91b3098",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_centered_preparation_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md",
+      "sha256": "9a441405c455adda9651f88c21fcda4d9383673a3718e88a93aeb50467133e71",
+      "git_blob": "dc22cc51ecea386ecfb8cb8f39c83541f4299750",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_native_density_rigidity_2026-10-21",
+      "source_path": "02_REGISTRY/research/A4D_CONDITIONAL_NON_NULL_BIANCHI_COMPLETE_PRICE_2026_10_21.md",
+      "consumed_path": "02_REGISTRY/research/A4D_CONDITIONAL_NON_NULL_BIANCHI_COMPLETE_PRICE_2026_10_21.md",
+      "sha256": "cc856a24ded799d1c17e1ec645991f8206f187b49c61ab1debbc5e4c321a87f5",
+      "git_blob": "98ca6dc3566831cd6ae2bbf5d4115e28c315f519",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_native_density_rigidity_2026-10-21",
+      "source_path": "02_REGISTRY/research/A4D_EXACT_NATIVE_RADIAL_MINIMIZATION_ALL_ORDERS_2026_10_21.md",
+      "consumed_path": "02_REGISTRY/research/A4D_EXACT_NATIVE_RADIAL_MINIMIZATION_ALL_ORDERS_2026_10_21.md",
+      "sha256": "6507bbbc15bce28a2352564c3e0d8102bbd4435d13fcd39827d1cab61a130621",
+      "git_blob": "42be6be08c934377d19ce0ece156d2056e4abcdd",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_native_density_rigidity_2026-10-21",
+      "source_path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md",
+      "consumed_path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md",
+      "sha256": "5ad9461c6f1b8d964f0764697a38120d19d320714bc66d99a42898171e3a01a0",
+      "git_blob": "25b2253436419ec0f0f63c36d40d5d728103a40c",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_native_density_rigidity_2026-10-21",
+      "source_path": "02_REGISTRY/research/A4D_ALL_CAP_NULL_MATTER_CAUSAL_CONE_2026_10_21.md",
+      "consumed_path": "02_REGISTRY/research/A4D_ALL_CAP_NULL_MATTER_CAUSAL_CONE_2026_10_21.md",
+      "sha256": "d089347aab15853075561eb292c03499dac5197a73f84745010b70131f53ab29",
+      "git_blob": "6ff2139cfaa674fc25773369f95d842482fd9f07",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_native_density_rigidity_2026-10-21",
+      "source_path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/inputs/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21_dfc0275e.md",
+      "sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd",
+      "git_blob": "4d637bae96f94ab0b18c9509bcf64e8609d47375",
+      "snapshot_used": true
+    },
+    {
+      "owner": "d0_native_density_rigidity_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "sha256": "62aa5b45923e6e9d51e2075507cd114d42c5f7d1f5107a99e1b08be053e3c034",
+      "git_blob": "deff5f8879cec7d8c3989f941553b4a873c3c39c",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_native_density_rigidity_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851",
+      "git_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_native_density_rigidity_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_complete_return_entropy_2026-10-21",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_WORK_RETURN_SOURCE_SYNTHESIS_2026_10_21.md",
+      "consumed_path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_WORK_RETURN_SOURCE_SYNTHESIS_2026_10_21.md",
+      "sha256": "7184e3cd94ff501e5ac213f6d632dbf6c465ea70d3eb363b5eadd91b30761ad5",
+      "git_blob": "1a660bc859e536137bbc6fc7f38ab4c7cfa39d26",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_complete_return_entropy_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_native_nested_return_source_2026-10-21/check_native_nested_return.py",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_nested_return_source_2026-10-21/check_native_nested_return.py",
+      "sha256": "727e4ae3e113f1195e0fb9c330dadeb7a01154424c80c0b2816a11b740b14cb7",
+      "git_blob": "81232f53b7fdf76067a35cfdd508a8fe924e2730",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_complete_return_entropy_2026-10-21",
+      "source_path": "04_CERTIFICATES/order_memory_control_verify.py",
+      "consumed_path": "04_CERTIFICATES/order_memory_control_verify.py",
+      "sha256": "bb72fe40326dc2d65d55f4f6d73564b7faef8f247774bf51771e3110f04e0c1a",
+      "git_blob": "ba02280e475b0124395622bfd99257c2820ae026",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_complete_return_entropy_2026-10-21",
+      "source_path": "02_REGISTRY/research/A4D_ORIGINAL_STOPPED_RECORD_INFORMATION_SOURCE_2026_10_21.md",
+      "consumed_path": "02_REGISTRY/research/A4D_ORIGINAL_STOPPED_RECORD_INFORMATION_SOURCE_2026_10_21.md",
+      "sha256": "c6f85eba8205db743f3f5b11115af5f48bb6ef36923129fbf07dab6d7cd72b27",
+      "git_blob": "798cfe26f6f9b58a7ae2102d1d82ad4b421a78a1",
+      "snapshot_used": false
+    },
+    {
+      "owner": "d0_complete_return_entropy_2026-10-21",
+      "source_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CLOCK_SCHUR_RETURN.md",
+      "consumed_path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CLOCK_SCHUR_RETURN.md",
+      "sha256": "0ea93feafeab40582807e4dcc21ce7e6c5f8852a898c23fa9c49d3fe565bd8e3",
+      "git_blob": "c9501fa1ae11f0c30ef1ccb190c9ff7b812b5444",
+      "snapshot_used": false
+    }
+  ],
+  "unique_source_paths": 18,
+  "preserved_source_snapshot": {
+    "old_bytes": 18886,
+    "new_bytes": 20156,
+    "append_only_bytes": 1270
+  },
+  "integration_review_sha256": "298121f9f8949dda177268dd2b17476b8b921a06aba6a9f3089da127a7811d42",
+  "synthesis_sha256": "894eb2f075928288b1c5357f5dba0c379a46245b03244f598abe979a07c934d4",
+  "entrypoints": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "prior_bytes_preserved": true,
+      "added_bytes": 2455
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "prior_bytes_preserved": true,
+      "added_bytes": 1517
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "prior_bytes_preserved": true,
+      "added_bytes": 2752
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md",
+      "prior_bytes_preserved": true,
+      "added_bytes": 1946
+    }
+  ],
+  "structural_checks": [
+    {
+      "kind": "repo",
+      "command": [
+        "python3",
+        "tools/validate_repo.py"
+      ],
+      "exit_code": 0,
+      "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n",
+      "note": null,
+      "initial_unavailable_historical_evidence": false
+    },
+    {
+      "kind": "work",
+      "command": [
+        "python3",
+        "tools/validate_work.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS work_validation: active work plane clean and enforced\n",
+      "note": null,
+      "initial_unavailable_historical_evidence": false
+    },
+    {
+      "kind": "agent",
+      "command": [
+        "python3",
+        "tools/validate_agent_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS agent_protocol: cold-start task metadata enforced\n",
+      "note": null,
+      "initial_unavailable_historical_evidence": true
+    },
+    {
+      "kind": "assembly",
+      "command": [
+        "python3",
+        "tools/gr_assembly.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "output": "{\"active_result_limit\":54,\"active_results\":54,\"discharged\":5,\"obligations\":22,\"results\":98,\"scientific_promotion\":false,\"valid\":true}",
+      "note": "Historical published evidence fetched by exact pinned Git refs; no source edits.",
+      "initial_unavailable_historical_evidence": false
+    },
+    {
+      "kind": "assembly_view",
+      "command": [
+        "python3",
+        "tools/gr_assembly.py",
+        "render",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"checked\": true,\n  \"view\": \"/workspace/scratch/75286bd77d4e/d0_15/02_REGISTRY/gr_assembly/VIEW.md\"\n}\n",
+      "note": null,
+      "initial_unavailable_historical_evidence": true
+    },
+    {
+      "kind": "work_view",
+      "command": [
+        "python3",
+        "tools/render_work_status.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "PASS work_views stale=0\n",
+      "note": null,
+      "initial_unavailable_historical_evidence": false
+    },
+    {
+      "kind": "lean_view",
+      "command": [
+        "python3",
+        "tools/generate_lean_views.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "PASS lean_views stale=0\n",
+      "note": null,
+      "initial_unavailable_historical_evidence": false
+    }
+  ],
+  "historical_evidence_fetch": "Existing guards initially lacked a promisor Git blob; exact published refs were fetched, then all guards passed without source changes.",
+  "unchanged_scientific_suites_replayed": false,
+  "new_lean_or_global_CI_claimed": false,
+  "full_D0_price_selected": false,
+  "GR_closed": false
+}

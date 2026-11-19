@@ -1,0 +1,115 @@
+{
+  "GR_closed": false,
+  "canonical42_root_replayed": false,
+  "checks": [
+    "exact rational signed-permutation amplitude compression gives EVERY U-statistic column N2",
+    "full power-of-two label Householder is orthogonal and prepares every ordered injection N2",
+    "coherent routing is a bijection on ALL dirty-port and unused-label columns N2",
+    "fixed work-only encoder has determinant plus one without using DATA as compiler workspace N2",
+    "literal label prepare-route-V-unroute-unprepare gives the operator-valued U statistic N2",
+    "rank8 corner retains BOTH bands and removes same-packet correlation on the IID section N2",
+    "full matrix logdet gradient matches exact first plus second Hoeffding norms product N2",
+    "full matrix logdet gradient matches exact first plus second Hoeffding norms correlated-packet N2",
+    "full two-band cotangent has the required one-slot conditional and NONZERO direct-bias first component",
+    "arbitrary correlated pure tangent uses the actual matrix-logdet cotangent",
+    "symmetric two-excitation tangent preserves all marginal first sources but has NONZERO correlation remainder",
+    "hostile averaged defects lose programme leakage and differ from the actual amplitude return",
+    "exact rational signed-permutation amplitude compression gives EVERY U-statistic column N3",
+    "full power-of-two label Householder is orthogonal and prepares every ordered injection N3",
+    "coherent routing is a bijection on ALL dirty-port and unused-label columns N3",
+    "fixed work-only encoder has determinant plus one without using DATA as compiler workspace N3",
+    "literal label prepare-route-V-unroute-unprepare gives the operator-valued U statistic N3",
+    "rank8 corner retains BOTH bands and removes same-packet correlation on the IID section N3",
+    "full matrix logdet gradient matches exact first plus second Hoeffding norms product N3",
+    "full matrix logdet gradient matches exact first plus second Hoeffding norms correlated-packet N3",
+    "global matrix toy has scalar first conditional and the true second-component source N2",
+    "global toy cancellation is an operator identity rather than restriction of preparation tangents",
+    "global matrix toy has scalar first conditional and the true second-component source N3",
+    "full encoder perturbation bounds the Hermitian matrix kernel even after read-only structure is lost",
+    "true matrix score error obeys32 zeta epsilon over the squared logdet gap",
+    "projected pure-gradient error obeys128 zeta delta over the squared logdet gap",
+    "whole-bank preparation error has its own256 zeta eta gradient budget",
+    "literal native forward-middle-raw-inverse inventory is6g_port plus12g_off plus2c plus11"
+  ],
+  "checks_passed": 28,
+  "consumed_sections_sha256": {
+    "7ac": "076ff074a394e37734b336e8ee171978424d07c777838150ea6366d02e406de9",
+    "7h": "fa88c512bdf3d0a28cb04177f93fde4a7eb716693a41ad2c3410c528f32a417a",
+    "7s": "4ef60f0b7044fef841c8f2cbd9cd5d7bc50d5102c7436b02af4b9f89d075607f"
+  },
+  "continuous_native_word_selector_proved": false,
+  "direct_Eb_first_Hoeffding_component_vanishes": false,
+  "efficient_compiler_claimed": false,
+  "full_native_joint_stationarity_proved": false,
+  "global_matrix_toy": [
+    {
+      "N": 2,
+      "gradient_norm": "0.000000305175990797715179860467387465"
+    },
+    {
+      "N": 3,
+      "gradient_norm": "0.000000176193440437271614242677922607"
+    }
+  ],
+  "global_source_interface": "ONE aggregate X=tau*sum(c_i*f_i), Y=tau*sum(c_i*q_i); on Sigma only; Gamma=4*a0*tau, W=1",
+  "inputs_sha256": {
+    "02_REGISTRY/research/A4D_NONVACUUM_COLLECTIVE_PREPARATION_SOURCE_EQUIVALENCE_2026_10_22.md": "cc4c7ad0803800b52779974ef65a2b7faad309f41437d0b7a78831d1f533c263",
+    "02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/PROOF.md": "be5d20866ffded772071084d13a8c7cb36d75bd58445edf3264de2c038425470",
+    "02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/native_echo.py": "2d836c6b89ccb8d1aeb081abb2f7ce7d392649169c7eb250a08101ccfad82841",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_matrix_collective_return_2026-10-25/PROOF.md": "0c626bcb01f335d864f986a6783ba9e5ce04a5a9e015cae96cd4c9f45359da29",
+    "02_REGISTRY/research/sources/d0_native_matrix_collective_return_2026-10-25/check_matrix_collective.py": "33a5124cc33a998a840d89aa33ce4ba79ffec6cc48bd268156872eb940e0f192",
+    "02_REGISTRY/research/sources/d0_native_matrix_collective_return_2026-10-25/matrix_collective.py": "dc1e4c76d77485ab69890236b25e06803e9dfb0c99ee63fe748b677b4ed1fbc0",
+    "02_REGISTRY/research/sources/d0_native_operator_holonomy_2026-10-25/PROOF.md": "14cfca3255ebd41984f78d371a5dcd1f3c52bf679974eab5bd6192f3f15c8e1e"
+  },
+  "matrix_scope": "ideal coherent full compressed32/128 columns; routing all dirty ports/labels; no global native word or clock matrix",
+  "new_global_native_word_emitted": false,
+  "numeric_arithmetic": "70-digit mpmath non-interval; label/rational compression, permutation parity and native counts exact",
+  "physical_admission_proved": false,
+  "primitive_count_fixture": {
+    "actual_N": 53,
+    "c": 3,
+    "g_off": 2,
+    "g_port": 2
+  },
+  "processor_error": {
+    "delta": "0.00299999887500012656249321986628",
+    "gradient_error": "0.0000000157708324218018204998992573843",
+    "kernel_epsilon": "0.00599999100000404999913214296562",
+    "score_error": "0.0000000150891625271120145485395674068"
+  },
+  "readiness_or_gamma_dropped": false,
+  "rows": [
+    {
+      "J_product": "0.00000740496516813722538711134123953",
+      "N": 2,
+      "compressed_bank_DATA_columns": 32,
+      "full_ideal_fibre_with_spin": 1024,
+      "full_label_dimension": 2,
+      "ordered_labels": 2,
+      "protected_input_rank": 8,
+      "sqrtN_gradient_over2": "0.00000189331470547841632275498201188"
+    },
+    {
+      "J_product": "0.00000740496516813722538711134123953",
+      "N": 3,
+      "compressed_bank_DATA_columns": 128,
+      "full_ideal_fibre_with_spin": 16384,
+      "full_label_dimension": 8,
+      "ordered_labels": 6,
+      "protected_input_rank": 8,
+      "sqrtN_gradient_over2": "0.00000187191033311440675517538338813"
+    }
+  ],
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6"
+  },
+  "same_protected_input_rank": 8,
+  "schema": "d0.native-matrix-collective-return-check/1",
+  "source_spin_multiplier": 4,
+  "status": "PASS",
+  "toy_is_physical42_example": false,
+  "uniform_label_native_primitive_claimed": false,
+  "whole_pure_bank_preparation_from_unknown_RIGHT_claimed": false
+}

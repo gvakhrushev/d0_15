@@ -1,0 +1,45 @@
+{
+  "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "eight_column_body_checks": {
+    "1": [
+      {
+        "chronological_macros": "GZG",
+        "body_raw_calls": 4
+      },
+      {
+        "chronological_macros": "GZGZG",
+        "body_raw_calls": 7
+      },
+      {
+        "chronological_macros": "GZGGZ",
+        "body_raw_calls": 7
+      }
+    ],
+    "3": [
+      {
+        "chronological_macros": "GZZZG",
+        "body_raw_calls": 8
+      },
+      {
+        "chronological_macros": "GZZZGZG",
+        "body_raw_calls": 11
+      },
+      {
+        "chronological_macros": "GZZZGGZ",
+        "body_raw_calls": 11
+      }
+    ]
+  },
+  "NC1_encoder_on_real_born_tail": "verified on both labels times all four Spin columns",
+  "exact_positive_amplitude_model": {
+    "half_log_bright_odds_derivatives": [
+      "2X+U",
+      "2X+5U"
+    ],
+    "one_gate_half_cross_log_odds": "d log(BC/(AD))",
+    "determinant_first_two_rows": 8,
+    "dark_intensity_first_derivative_at_exact_zero": 0,
+    "word_gauge": "s^#G c^#Z H^-1 U(word) H, H=diag(1,k)"
+  },
+  "identification_with_complete_physical_Cost_minus_Info": false
+}

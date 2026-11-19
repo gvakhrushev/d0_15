@@ -1,0 +1,42 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "source_ref": "2961dc6ee4abcda0a0fb2aa36dc6ecd7e62a6535",
+  "sources": [
+    {
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "git_blob": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7"
+    },
+    {
+      "git_blob": "eeae605705b5ee29a098ab9e14c4882034c73795",
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "sha256": "42f96fc4cdb4f47878c4d260a003dd2819741c6b4e233581e184f28e9792ebcc"
+    },
+    {
+      "git_blob": "82d671663bb65c8b178d402ef439118b082aeb42",
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/check_normalization.py",
+      "sha256": "76f7eab95b886dc7afc41e4d889d3c223c75a8e633ca7f1e7f4e4125212e757e"
+    },
+    {
+      "git_blob": "a88f8b84a5214414bce672bd96a11ac9d205d3fa",
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md",
+      "sha256": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e"
+    },
+    {
+      "git_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851"
+    },
+    {
+      "git_blob": "efbf3f5d8e482754cbf2fbc58044e58af841f941",
+      "path": "02_REGISTRY/research/A4D_COMPLETE_HISTORY_PETZ_SCORE_CODE_COHERENCE_SOURCE_GATE_2026_10_19.md",
+      "sha256": "2f8377d7907cb693fec7452014fd42f2a71991c104a09b44f5cd1a528cfab6f6"
+    }
+  ],
+  "usage": "Read-only historical scientific inputs. Only native/transfer/matrix helpers are imported from the current normalization owner after byte equality with its historical pin. No historical tests or primary replay."
+}

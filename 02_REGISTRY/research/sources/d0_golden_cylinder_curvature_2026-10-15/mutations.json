@@ -1,0 +1,35 @@
+{
+  "count": 6,
+  "mathematical_mutants": [
+    {
+      "failure": "ArithmeticError: golden signed moment 1",
+      "name": "ordered_sign",
+      "rejected": true
+    },
+    {
+      "failure": "ArithmeticError: exact finite scalar curvature",
+      "name": "quartic_scale",
+      "rejected": true
+    },
+    {
+      "failure": "ArithmeticError: moving event normalizer and scale jets retained",
+      "name": "frozen_calibration",
+      "rejected": true
+    },
+    {
+      "failure": "ArithmeticError: moving blank raw mass retained",
+      "name": "frozen_blank",
+      "rejected": true
+    },
+    {
+      "failure": "ArithmeticError: cut 4 full cylinder (True, True)",
+      "name": "pending_loss",
+      "rejected": true
+    },
+    {
+      "failure": "ArithmeticError: complete golden trace polynomial",
+      "name": "active_normal_loss",
+      "rejected": true
+    }
+  ]
+}

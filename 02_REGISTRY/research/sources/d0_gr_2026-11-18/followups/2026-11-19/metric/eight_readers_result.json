@@ -1,0 +1,24 @@
+{
+  "Golden_price_cut": 36,
+  "allocations": [
+    5644800,
+    4939200,
+    4390400,
+    3087000,
+    1580544,
+    548800,
+    115200,
+    11025
+  ],
+  "exact_full_matter_geometry_cases": 4,
+  "large_native_words_replayed": false,
+  "max_degree_after_division": 7,
+  "positive_attenuations": 8,
+  "raw_positive_mark_gain_SC2": "1.054749307054E-25",
+  "selector_active_Born_mass": "6.085606525654E-1",
+  "selector_participating_paths": 20316969,
+  "selector_total_exact_level": 24157817,
+  "source": "SC1, SC4, SC7, NPS10",
+  "status": "PASS",
+  "true_full_price_bound": false
+}

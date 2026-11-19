@@ -1,0 +1,30 @@
+{
+  "status": "conditional central-instrument algebra; toy example only",
+  "actual_fresh_reader_kappa": 0.44721359549995787,
+  "target_kappa": 0.4472135954999579,
+  "toy_failure_weight_declared_not_physical": 0.17,
+  "input_program_memory_entangled": true,
+  "unweighted_instruments_trace_preserving": true,
+  "weighted_effect_is_program_central": true,
+  "normalized_instruments_trace_preserving": true,
+  "factorization_error_frobenius": 2.9420262527320708e-18,
+  "correct_shared_program_weight": 0.015150826737883507,
+  "incorrect_product_of_means": 0.014827943575910642,
+  "retained_cross_program_coherence_magnitude": 0.007330165032210199,
+  "two_query_hidden_program_covariance": 0.09000000000000008,
+  "normalized_tilt_derivative_error_frobenius": 1.4114689810749412e-10,
+  "normalized_tilt_derivative_trace_norm": 0.010824206367447242,
+  "linear_score_range_bound": 0.11771904278358583,
+  "moving_program_preparation_score": 0.06057345665604734,
+  "total_log_weight_score_error": 8.634815085173386e-11,
+  "cross_branch_gram_eigenvalues": [
+    0.028263456486708527,
+    1.9717365435132914
+  ],
+  "single_query_off_diagonal_multiplier": 0.9717365435132915,
+  "twelve_query_off_diagonal_multiplier": 0.7088958329333339,
+  "formal_inverse_is_a_free_physical_filter": false,
+  "physical_book_cost_information_bound": false,
+  "physical_full_factory_and_query_centrality_verified": false,
+  "GR_closed": false
+}

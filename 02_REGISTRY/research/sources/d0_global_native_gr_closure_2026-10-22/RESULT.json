@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-22",
+  "task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "PR": 334,
+  "phase": "native realization and final composition",
+  "assembly_carrier": "native-programme-v1",
+  "assembly_slot": "constitutive",
+  "result": "A paid coherent shrinking-operand implementation is constructed; the complete independent preparation equation remains nonzero on the tested free joint-bank normal.",
+  "source_provenance": "SOURCE_PINS.json",
+  "runtime": "Available JavaScript tool runtime; dependency-free portable .mjs files are provided for external Node reproduction.",
+  "executed_checks": {
+    "coherent_scene": {
+      "status": "PASS",
+      "assertions": 37,
+      "arithmetic": "Z[a]/(a^4+a^2-1), exact BigInt; scene integer matrices",
+      "receipt": "RESULT_SCENE.json"
+    },
+    "original_single_cnot": {
+      "status": "PASS",
+      "assertions": 44,
+      "arithmetic": "exact Gaussian BigInt matrices and rational BigInt fractions",
+      "receipt": "RESULT_CNOT.json"
+    },
+    "actual_preparation_normal": {
+      "status": "PASS",
+      "assertions": 55,
+      "arithmetic": "exact Q(p) BigInt fractions and exact rational Golden enclosure",
+      "receipt": "RESULT_PREPARATION.json"
+    },
+    "coherent_operand": {
+      "status": "PASS",
+      "assertions": 1212,
+      "exact_assertions": 1209,
+      "floating_log_assertions": 3,
+      "arithmetic": "Exact Q(p) BigInt fractions; 3 floating-log entropy controls",
+      "receipt": "coherent_operand_result.json",
+      "independent_root_replay": true
+    }
+  },
+  "new_results": {
+    "coherent_operand": "Exact E_alpha^*(Z)=alpha Z and exact r(tau*u_N,tau*v) on actual product-bank probes, with independent coherent prefixes.",
+    "complete_counted_price": "B+Gamma*[r-h_phi(r)] with all actual measured factory/abort/preparation/clock records and terminal 0/10 charge.",
+    "partition_herald": "Actual Q(p)-partition acceptance >1/(22H), conditional polynomial work from structured polynomial coefficient heights and bounded counted tariffs.",
+    "offnull_refinement": "Conditional compact-chart C2 Neumann approximation; finite paid component codes and supplied smooth product-bank sections remain distinguished.",
+    "normal_source": "Zero decoded 42-field first jet, nonzero actual pair correlation source after true w*Gamma*tau normalization.",
+    "metric_only_completion": "A C1 completion depending only on decoded fields and separate one-resource marginals has zero derivative on the tested normal.",
+    "unmarked_history": "Exact original CNOT ordering preserves complete across-field Gram/channel/cut but changes the specified 0/10 counted price.",
+    "scene_word": "Static combinatorial K(9,11,13) Golden/CNOT construction and genuine initialized return; not normalized-scene identification."
+  },
+  "exact_witnesses": {
+    "q_normal_divided_by_BD2_over_rho": "-(5/2)*p^6*2^-20",
+    "price_normal_divided_by_w_Gamma_tau": "4*sigma*zeta*R0*p^4*(1-h_phi_prime(r0))*Dq",
+    "diagnostic_original_sigma_minus_normal_coefficient": -1.9544337844774012e-12,
+    "cnot_price_gap_coefficient_of_p5": "37073140119/819200000000",
+    "cnot_price_source_coefficient_of_p5": "-653413779/204800000000",
+    "cnot_carrier": "Declared separately paid Choi16 embedded in RIGHT128; right marginal rank16, not I128/128."
+  },
+  "open": {
+    "actual_joint_preparation_domain": true,
+    "full_independent_preparation_equations": true,
+    "autonomous_same_initial_smooth_field_writer": true,
+    "compulsory_Book03_Info_Hodge_heat_controller_clock_work": true,
+    "moving_PF_and_uniform_physical_source_norm": true,
+    "generic_GR_and_raw216_refinement": true
+  },
+  "not_executed": [
+    "shell/Node command",
+    "Python repository guards",
+    "historical full42 interval/Einstein-CAR suite",
+    "full128 numerical suite",
+    "Lean",
+    "CI"
+  ],
+  "full_D0_price_selected": false,
+  "independent_preparation_closed": false,
+  "GR_closed": false,
+  "publication": "Existing scientific branch only; no merge, Ready or acceptance promotion.",
+  "total_assertions": 1348,
+  "exact_assertions": 1345,
+  "floating_log_assertions": 3,
+  "relative_markdown_links": "Checked within the proposed packet and current source tree."
+}

@@ -1,0 +1,58 @@
+{
+  "GR_closed": false,
+  "absolute_writer_codes_length": 96,
+  "categories_enumerated": 6561,
+  "central_q_category_masses": [
+    "13/16",
+    "1/8",
+    "1/16"
+  ],
+  "common_scalar_ready_and_success_condition_assumed": true,
+  "complete_eight_sign_factorization_on_shared_site_and_oldRIGHT_assumed": true,
+  "full_book_info_and_field_42_source_proved": false,
+  "independent_Hq_signs": 8,
+  "independent_fresh_CAR_alone_proves_common_site_factorization": false,
+  "independent_recorded_descriptor_bits": 32,
+  "model": "conditional complete classical H/Q/R ledger, all quantum memories retained; no Book03 cost assertion",
+  "original_report_Lambda_1_only_illustrative": true,
+  "positive_and_negative_sign_results": [
+    {
+      "code_minus_cq_derivative_difference": "-1.2724393548824972719765946219951273e-18",
+      "conditional_categories": 6561,
+      "conditional_report_entropy_nat": "0.000026286956072736504033017763493265756",
+      "derivative_report_per_s": "8.6930448328212940828724871585547551e-13",
+      "final_report_probability": "0.0000018512391438366731463199314150157512",
+      "full_classical_joint_entropy_nat": "22.180736064874322637855460904425143",
+      "full_partial_code_minus_cq_derivative_per_s": "-2.2975742472139680146420031100086266e-11",
+      "full_record_report_mutual_information_nat": "2.5512961657860596280998142571936665e-19",
+      "incorrectly_assuming_independent_report_derivative_per_s": "-2.2975741199700325263922759123491644e-11",
+      "mutual_information_derivative_per_s": "-6.1231286424067094508819960339807804e-19",
+      "sign": 1
+    },
+    {
+      "code_minus_cq_derivative_difference": "-1.2724220508481339623727700767463533e-18",
+      "conditional_categories": 6561,
+      "conditional_report_entropy_nat": "0.000026286967547216674283474463742772432",
+      "derivative_report_per_s": "-8.6929878958526716974407893051141352e-13",
+      "final_report_probability": "0.0000018512400131383095820332992099022687",
+      "full_classical_joint_entropy_nat": "22.180736064885797118025711361125393",
+      "full_partial_code_minus_cq_derivative_per_s": "2.2975588594430577098787697273703161e-11",
+      "full_record_report_mutual_information_nat": "2.5512763406650779602626952998684886e-19",
+      "incorrectly_assuming_independent_report_derivative_per_s": "2.2975589866852627946921659646473238e-11",
+      "mutual_information_derivative_per_s": "-6.1230453733471408278059949405906174e-19",
+      "sign": -1
+    }
+  ],
+  "q_categories_per_sign": [
+    "0",
+    "-2A^2/Lambda",
+    "-4A^2/Lambda"
+  ],
+  "report_codes_lengths": [
+    1,
+    2
+  ],
+  "shared_site_counterexample_ref": "COMPLEMENTED_ACTUAL_HQ_REPORT_RU.md section 2",
+  "status": "PASS",
+  "true_Fourier_CAR_material_copies": 16
+}

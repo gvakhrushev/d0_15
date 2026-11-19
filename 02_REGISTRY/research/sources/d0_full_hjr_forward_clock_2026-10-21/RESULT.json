@@ -1,0 +1,215 @@
+{
+  "checks": {
+    "count": 100,
+    "names": [
+      "Golden_field_relation",
+      "literal_full16_G_orthogonal",
+      "literal_full16_X_orthogonal",
+      "literal_full16_Y_orthogonal",
+      "literal_full16_WRITE_orthogonal",
+      "identity_actual_stage_count16",
+      "identity_full16_monodromy_orthogonal",
+      "identity_pointed_native_return",
+      "identity_M1_no_elapsed_wrap",
+      "identity_M1_exact_stage_and_work_retention",
+      "identity_M1_actual_return_rank",
+      "identity_M16_no_elapsed_wrap",
+      "identity_M16_exact_stage_and_work_retention",
+      "identity_M16_actual_return_rank",
+      "identity_M17_no_elapsed_wrap",
+      "identity_M17_exact_stage_and_work_retention",
+      "identity_M17_actual_return_rank",
+      "identity_M18_no_elapsed_wrap",
+      "identity_M18_exact_stage_and_work_retention",
+      "identity_M18_actual_return_rank",
+      "order_actual_stage_count16",
+      "order_full16_monodromy_orthogonal",
+      "order_pointed_native_return",
+      "order_M1_no_elapsed_wrap",
+      "order_M1_exact_stage_and_work_retention",
+      "order_M1_actual_return_rank",
+      "order_M16_no_elapsed_wrap",
+      "order_M16_exact_stage_and_work_retention",
+      "order_M16_actual_return_rank",
+      "order_M17_no_elapsed_wrap",
+      "order_M17_exact_stage_and_work_retention",
+      "order_M17_actual_return_rank",
+      "order_M18_no_elapsed_wrap",
+      "order_M18_exact_stage_and_work_retention",
+      "order_M18_actual_return_rank",
+      "native_order_failure_1_minus_p6_equals_4p3",
+      "native_all_4096_momenta_retained",
+      "native_exact119_feature_classes",
+      "native_root_input_rectangle_consistent_with_scale_equation",
+      "native_extra_clock_start_source_strictly_positive",
+      "native_extra_clock_start_source_below_0_02206",
+      "native_original_strict_B_bound_retained",
+      "native_scale_ceiling_between217_and218",
+      "native_reference_and_all_CAR_in_trace",
+      "finite_HJR_fixture_uses_noncommuting_jet",
+      "M1_full_feedback_absolute_value",
+      "M1_full_feedback_first_source",
+      "M1_full_feedback_mixed_source",
+      "M1_forward_corner_nilpotent",
+      "M1_nilpotent_not_zero_feedback",
+      "M1_clock_cut_first_source_zero",
+      "M1_clock_cut_data_mixed_source_zero",
+      "M1_full_clock_heat_trace",
+      "M1_full_clock_matter_reading",
+      "M1_whole_HJR_first_source",
+      "M1_whole_HJR_mixed_second_source",
+      "M3_full_feedback_absolute_value",
+      "M3_full_feedback_first_source",
+      "M3_full_feedback_mixed_source",
+      "M3_forward_corner_nilpotent",
+      "M3_nilpotent_not_zero_feedback",
+      "M3_clock_cut_first_source_zero",
+      "M3_clock_cut_data_mixed_source_zero",
+      "M3_full_clock_heat_trace",
+      "M3_full_clock_matter_reading",
+      "M3_whole_HJR_first_source",
+      "M3_whole_HJR_mixed_second_source",
+      "M4_full_feedback_absolute_value",
+      "M4_full_feedback_first_source",
+      "M4_full_feedback_mixed_source",
+      "M4_forward_corner_nilpotent",
+      "M4_nilpotent_not_zero_feedback",
+      "M4_clock_cut_first_source_zero",
+      "M4_clock_cut_data_mixed_source_zero",
+      "M4_full_clock_heat_trace",
+      "M4_full_clock_matter_reading",
+      "M4_whole_HJR_first_source",
+      "M4_whole_HJR_mixed_second_source",
+      "M5_full_feedback_absolute_value",
+      "M5_full_feedback_first_source",
+      "M5_full_feedback_mixed_source",
+      "M5_forward_corner_nilpotent",
+      "M5_nilpotent_not_zero_feedback",
+      "M5_clock_cut_first_source_zero",
+      "M5_clock_cut_data_mixed_source_zero",
+      "M5_full_clock_heat_trace",
+      "M5_full_clock_matter_reading",
+      "M5_whole_HJR_first_source",
+      "M5_whole_HJR_mixed_second_source",
+      "unresolved_event_effect_nonzero",
+      "unresolved_status_actual_corner_zero",
+      "event_cannot_replace_complementary_corner",
+      "nontrivial_clock_heat_factorization",
+      "moving_beta_and_clock_heat_exact_source",
+      "freezing_clock_source_would_fail",
+      "moving_z_retained_wall_source",
+      "nonseparable_heat_trace_norm_bound",
+      "nonseparable_heat_source_bound",
+      "nonseparable_heat_not_assumed_zero",
+      "clock_heat_and_coupling_do_not_commute"
+    ]
+  },
+  "clock_source_remainders": {
+    "actual_extra_source": -0.0002884675501895715,
+    "extra_source_bound": 0.02894122584708839,
+    "moving_clock_beta_source": -0.28945376095479153,
+    "nonseparable_heat_trace_distance": 0.014591569552190495,
+    "trace_distance_bound": 0.055999999999999994
+  },
+  "full_action_fixture": {
+    "kind": "four-dimensional noncommuting HJR fixture, not a native spatial replay",
+    "max_first_source_error": 1.1102230246251565e-16,
+    "max_mixed_source_error": 0.0,
+    "rows": [
+      {
+        "M": 1,
+        "T": 3,
+        "absolute_feedback": 68.36807302375558,
+        "surviving_clock_starts": 0,
+        "whole_source_defect": 0.3688467934515803
+      },
+      {
+        "M": 3,
+        "T": 3,
+        "absolute_feedback": 205.1042190712668,
+        "surviving_clock_starts": 0,
+        "whole_source_defect": 0.3688467934515803
+      },
+      {
+        "M": 4,
+        "T": 3,
+        "absolute_feedback": 206.010062300288,
+        "surviving_clock_starts": 1,
+        "whole_source_defect": -0.0
+      },
+      {
+        "M": 5,
+        "T": 3,
+        "absolute_feedback": 206.9159055293094,
+        "surviving_clock_starts": 2,
+        "whole_source_defect": -0.3688467934515803
+      }
+    ]
+  },
+  "native_clock": {
+    "identity": {
+      "boundary_rank": 64,
+      "compressed_scalar_coefficients": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "elapsed_dimension": 33,
+      "full_clock_times_apparatus_dimension": 8448,
+      "matched_active_rank": 68,
+      "returned_spin_rank": 4,
+      "stages": 16
+    },
+    "order": {
+      "boundary_rank": 64,
+      "compressed_scalar_coefficients": [
+        -1,
+        0,
+        2,
+        0
+      ],
+      "elapsed_dimension": 33,
+      "full_clock_times_apparatus_dimension": 8448,
+      "matched_active_rank": 68,
+      "returned_spin_rank": 4,
+      "stages": 16
+    }
+  },
+  "native_root_interval": {
+    "CAR_modes_per_momentum": 16,
+    "Z_full_data": [
+      "49.33703024859027025358639387650184378318253469089023986044285775341970310633453333494",
+      "49.33703025259505430704022316908195945977923061585044684764628096297410494440213051529"
+    ],
+    "decimal_precision": 85,
+    "exact_feature_classes": 119,
+    "input_root_radius": "1e-12",
+    "momentum_modes": 4096,
+    "necessary_clock_overlap_upper_bound": [
+      "217.3512909678127798233095386438414807412789008512518863868315583241281140385386735829",
+      "217.3512909854556127964265528362491685736377153475050468703495923665971221656000143700"
+    ],
+    "new_source_when_overlap_is2": "exactly one radial_feedback_source at the inherited exact root",
+    "old_scale_source_enclosure": [
+      "-7.61073967316198787173721737997239333923495838729087961669986174595858000856E-10",
+      "7.61073967215795782739262528611553851382087506079096799325696067834106328168E-10"
+    ],
+    "radial_feedback_source": [
+      "0.02205400814010749453559815577609191154871977787304029034502067723779836539939580431518",
+      "0.02205400814460983882070456752547819407413820392990272210514467384359552703183538496115"
+    ],
+    "reference_multiplicity": 128,
+    "root_theorem_consumed_not_reproved": true,
+    "smallest_B_lower_bound": "0.9963863438627386140173334980401810178447616883222997347827567892476382012335231761386"
+  },
+  "scope": {
+    "GR_closed": false,
+    "author_checks_only": true,
+    "independent_review": false,
+    "main_updated": false,
+    "native_full_spatial_eigensolver_rerun": false,
+    "old_root_theorem_reproved": false,
+    "physical_clock_selected": false
+  }
+}

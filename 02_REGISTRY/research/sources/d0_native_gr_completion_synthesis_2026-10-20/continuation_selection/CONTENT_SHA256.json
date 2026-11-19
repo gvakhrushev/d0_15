@@ -1,0 +1,26 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "CORRECTION_SECOND_JET.md": "439cc3de63db6788e5a8fb6c0d42c9c3e32bc34cf297971e590a83e4688b9505",
+    "FORCED_RECORD_FUTURE_TEST_972CE.md": "7de2cdc28fa5ec2b8a3b09ebd6398341a378b2be8b589f2b6b30ad4d9c906d54",
+    "FUTURE_ALGEBRA_AND_STOPPED_NORMALIZATION.md": "fa5f10facfd02a888dff41a7a9070f30a70acbe0234b135d8cc8dd03a94c6569",
+    "INTEGRATION_REVIEW.md": "473ac1e91e9001df746b5cb3dbbe5d30a5730553549f931fd181ae060999a23f",
+    "README.md": "57f457154cbb9399d8723a58ed1fc7cb561bdb3dba9405a58818291375352aae",
+    "REVIEW_STOPPED_FIELD_SADDLE.md": "4e51281e16cfcf457a9655324843a6544940f318709e65e445673eccb5cff620",
+    "SOURCE_PINS.json": "976ea63037ae23bf1639c64fd8ca75405a764e272a68c399668cb70ea76387e8",
+    "STOPPED_FIELD_SADDLE.md": "aad562832df891bf042379ff5f11df28b7cb507168de56ba4ef376ca9906d19c",
+    "STOPPED_INFORMATION_NORMALIZATION.md": "0ce5b25dc66e4a0bf591c51ba1b02b9e8ed0ed5811ec9b2d6a43314ff232c9e7",
+    "STOPPED_INFORMATION_NORMALIZATION_REVIEW.md": "bae7bd4a89874e2ed9f26f50f401504be6787b3943863e510546b013878a8d0f",
+    "VALIDATION.json": "7481b13a1ef55b5e68f2e1f4f8a4c84ccb852f583f09c2c1535fb25cf9247ffa",
+    "check_correction_second_jet.py": "0d675802aa796fd4d0c3e457946bccb55a40663402b55942959e13767e6bf59c",
+    "check_forced_record_future_test.py": "6157544de87d11e376e21da583d10a2ddc460baedefbbe395dce8873d9589da2",
+    "check_future_algebra_and_stopped_normalization.py": "8114c91d2cebe1f83fbf7af0eb3af8937fe191284399d0a683df6d71b3ec877d",
+    "check_stopped_field_saddle.py": "1c90de602aec91fb4b3af46e9e9e26b5fa6cfec1ef03ae3f86d56aef1e3d8df1",
+    "check_stopped_information_normalization.py": "02da75a2d0b4f47d9396fd9d479695cbb5b0a07d2be649300e046daf8398a96d",
+    "correction_second_jet.stdout.txt": "bfd8b1192ca73ae77b0a1060c7325e666cb791efba3969c83bf701c4ba92854b",
+    "forced_record_future_test.stdout.txt": "f9cf050b0b8f751e7984e44cd94ae984af16ebd73dbcffb82c1cc86c03bd4175",
+    "future_algebra_and_stopped_normalization.stdout.txt": "f8ed6d865b50f24e2a4b045f8ed239a868a3167a7b91151bad2656b648f2958a",
+    "stopped_field_saddle.stdout.txt": "6ecf9a7e7e6af7e439634bbb0caa73132a009b8dc4416c24f76ee585d781a277",
+    "stopped_information_normalization.stdout.txt": "417ede93cce9c2030b94bdf4e2d3a329cfd74dd4318e88fa8f653f3c11364b8f"
+  }
+}

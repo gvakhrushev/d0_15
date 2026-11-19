@@ -1,0 +1,37 @@
+{
+  "schema": "d0-native-history-extension-source/1",
+  "source_head": "07f2f2b15b7050a612d0075aa73db8dc46087a95",
+  "scope": "Exact 29-declaration native checkpoint preserved separately from the immutable 20-declaration main checkpoint. Historical compiler evidence; no new compilation asserted.",
+  "artifacts": [
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_action.lean",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_history_action_extension_2026-10-20/a4d_native_history_action.lean",
+      "git_blob": "db5f1d9e94272568eb7765d0b3407b87901b6c23",
+      "sha256": "3c634ae60651ed162a30819ed63b76e8f6fc59f9edb17ded940209c9336407e5"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_action_check.py",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_history_action_extension_2026-10-20/a4d_native_history_action_check.py",
+      "git_blob": "c3087138683fd8bcecbc8b3843a63a76326bd845",
+      "sha256": "840affbaed0c5c8f6dc9079b7c2ed5e1d294e8eaa6d0797e08cf828392edb1dc"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_action_output.txt",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_history_action_extension_2026-10-20/a4d_native_history_action_output.txt",
+      "git_blob": "55de89984b1083d68fc24581ba3e38c45ca0f3bd",
+      "sha256": "41b6101c36d400d27e8af930d347747ebe26f42d4daa9a1be40bb8665b2e03f2"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_action_results.json",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_history_action_extension_2026-10-20/a4d_native_history_action_results.json",
+      "git_blob": "bed6f5a04e818b9a97f359e4eaf6161fb89182c9",
+      "sha256": "e8c8514a310efbe09bd0c464a7ee5ebd1242a88fee497ceff116e71b372d1f50"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_history_action_certificate.json",
+      "snapshot": "02_REGISTRY/research/sources/d0_native_history_action_extension_2026-10-20/a4d_native_history_action_certificate.json",
+      "git_blob": "27c9dcf2fce21bf7c3a60bd4afb83260d7c61e5b",
+      "sha256": "9324de6e10e7b3ea668485885c5ca836eb367e72fa20fa766db5df8d98dff137"
+    }
+  ]
+}

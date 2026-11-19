@@ -336,14 +336,14 @@ The main-positive route now has a MUCH SHORTER target:
 \]
 
 This is a route to the FULL equation *class*, not just a
-stronger Brinkmann theorem. The isolated full-HJR and
-inverse-paired Book feedback calculations already
-show that their BARE sources have nonzero residual
-components on the shared exact family. They are
-therefore NOT proved physical selections of the
-needed \(\mathcal E\); the [null flat source no-go](A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md)
-and the [exact inverse-pair countercontrol](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md#8-actual-paired-book-application-exact-finite-source-substitution-fails)
-must remain visible. A canonical formal
+stronger Brinkmann theorem. The [corrected isolated full-HJR shear source](A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md)
+is nonzero on its specified shrinking-native-leg chart; its former
+identification with the fixed physical Brinkmann refinement is withdrawn.
+The [inverse-coframe/mesh map](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#121-one-field-to-operator-map-with-the-actual-density-and-matter)
+must be retained before applying that source to this witness. The
+independent [exact inverse-pair countercontrol](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md#8-actual-paired-book-application-exact-finite-source-substitution-fails)
+remains valid at its own stated hypotheses. Neither calculation proves
+physical selection of the needed \(\mathcal E\). A canonical formal
 two-arm subtraction alone does not prove native
 selection or suppress every curved even/odd source.
 

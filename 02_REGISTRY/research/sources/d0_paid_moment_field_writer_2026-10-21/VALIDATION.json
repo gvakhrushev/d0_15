@@ -1,0 +1,241 @@
+{
+  "status": "PASS",
+  "date": "2026-10-21",
+  "scientific_input": "311b1d3fd505effe7082754bc80dd17d1097f095",
+  "concurrent_rational_writer": "e37991ae54f34adcc2adf5efa54d29134eac3769",
+  "preserved_concurrent_bases": [
+    "f4e6d9874448770b58c3efa16db9c496283e0cac",
+    "0c5ef1cdcb9d6fddc02dddd867dc5b25d068181e",
+    "d8c3162264c005118eca51c9b300d30151be517f"
+  ],
+  "integration_base": "d8c3162264c005118eca51c9b300d30151be517f",
+  "existing_draft_pr": 334,
+  "receipt_pairs": [
+    {
+      "packet": "code",
+      "author_receipt": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/RESULT.json",
+      "independent_optimized_receipt": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/INDEPENDENT_RESULT.json",
+      "byte_identical": true,
+      "sha256": "0fe7fe2847e8b222ba4e3c69817d79034a40a69faee0fe4cc37860bc8020fd0e",
+      "check_count": 415,
+      "scope": "Exact code/row/retained-record controls, not old geometry or physical selection"
+    },
+    {
+      "packet": "moments",
+      "author_receipt": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/CHECK_RESULT.json",
+      "independent_optimized_receipt": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/INDEPENDENT_RESULT.json",
+      "byte_identical": true,
+      "sha256": "05a7daeeba2c127a2213e819bd1bc3b2d5717d7afdd68662cac42122a0770fb8",
+      "check_count": null,
+      "scope": "exact new algebra and one actual L4 material/reference fixture; analytic all-family proof"
+    },
+    {
+      "packet": "book",
+      "author_receipt": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/RESULT.json",
+      "independent_optimized_receipt": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/INDEPENDENT_RESULT.json",
+      "byte_identical": true,
+      "sha256": "740a2a5603bf99b02e5850ea5f21771d0737185d5475ee5e60fd8c30b334832e",
+      "check_count": 68,
+      "scope": "exact Book structural controls, not native factory-probability identification"
+    }
+  ],
+  "integration_review": {
+    "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/REVIEW_INTEGRATION.md",
+    "sha256": "26604a9ae85bbfdf84fd2ed6806e770c7f8c6b9f6db7ed0cd56a7c0e1000f5e5",
+    "scope": "internal independent-agent mathematical/scope review, including preserved concurrent results; no external peer review"
+  },
+  "final_structural_guards": [
+    {
+      "command": "python3 tools/validate_repo.py",
+      "chunk_id": "4407c9",
+      "wall_time_seconds": 0.83669599,
+      "exit_code": 0,
+      "original_token_count": 23,
+      "output": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n"
+    },
+    {
+      "command": "python3 tools/validate_work.py",
+      "chunk_id": "772565",
+      "wall_time_seconds": 0.07832073,
+      "exit_code": 0,
+      "original_token_count": 15,
+      "output": "PASS work_validation: active work plane clean and enforced\n"
+    },
+    {
+      "command": "python3 tools/validate_agent_protocol.py",
+      "chunk_id": "5437d6",
+      "wall_time_seconds": 0.286571959,
+      "exit_code": 0,
+      "original_token_count": 14,
+      "output": "PASS agent_protocol: cold-start task metadata enforced\n"
+    }
+  ],
+  "integrity": {
+    "frozen_proofs_unchanged": true,
+    "receipt_pairs_byte_identical": true,
+    "illegal_control_bytes": 0,
+    "readme_relative_links_checked": [
+      "../../A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "book/COMPLETE_CODE_WRITER_BOOK_PRICE.md",
+      "code/check_paid_code_and_moment_writer.py",
+      "code/SOURCE_PINS.json",
+      "code/RESULT.json",
+      "code/INDEPENDENT_RESULT.json",
+      "code/REVIEW_DIGITAL.md",
+      "moments/check_exact_moment_source.py",
+      "moments/MOMENT_SOURCE_PINS.json",
+      "moments/CHECK_RESULT.json",
+      "moments/INDEPENDENT_RESULT.json",
+      "moments/REVIEW_MOMENT_SOURCE.md",
+      "book/check_code_writer_book_price.py",
+      "book/SOURCE_PINS.json",
+      "book/RESULT.json",
+      "book/INDEPENDENT_RESULT.json",
+      "book/REVIEW_BOOK.md",
+      "REVIEW_INTEGRATION.md"
+    ]
+  },
+  "acceptance": {
+    "exact_finite_Qp_moment_nodes": true,
+    "generated_full42_local_source_chart": true,
+    "original_primary_full_ambient_report_second_jet": true,
+    "complete_counted_CQ_price_at_fixed_catalogue": true,
+    "controlled_finite_price_source_and_Hessian_limits": true,
+    "specified_initialized_cut_Book_determinant_code_contrast_zero": true,
+    "single_controller_uniform_code_reachability_with_unconditioned_price": true,
+    "exact_original_action_away_from_primary": false,
+    "autonomous_prescribed_field_selection": false,
+    "exact_finite_code_native_stationarity": false,
+    "compulsory_original_Book_cut_heat_Info_identified": false,
+    "original_full_carrier_refinement_equivalence": false,
+    "external_peer_review": false,
+    "GR_closed": false
+  },
+  "verification_limit": "Exact checkers and internal proof review on the stated finite-word/counting interfaces. No replay of the inherited geometry/rank/root/heat campaign, broad Lean suite, physical Book admission or full state-vector compiler simulation.",
+  "files": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "sha256": "dd503354931be4aa9a624202212d4f8e837b90bbbfd4c9194008357173d3017c",
+      "bytes": 274367
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+      "sha256": "2608ef0dcead7bebb183adec939956eceb51b1b7b78089ecb76cbd6329d1593e",
+      "bytes": 23355
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "sha256": "4ec6622ae2ff4f75d615bbd2b207a071a154df56e59d74f0eb76fab6c9f95d82",
+      "bytes": 15959
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "sha256": "0e16273f9fd43cb68fe042b829e8c4da8d2dc4fa3d92a40595611ae76333a69c",
+      "bytes": 39943
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/README.md",
+      "sha256": "92b14fa1a6043daa57be2b3a536f3f282eae0575e510c63b5899c799d3f8b574",
+      "bytes": 8406
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/REVIEW_INTEGRATION.md",
+      "sha256": "26604a9ae85bbfdf84fd2ed6806e770c7f8c6b9f6db7ed0cd56a7c0e1000f5e5",
+      "bytes": 17698
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md",
+      "sha256": "711c9129230643f65228962a9835dd5faa59882d1803556fa90ca769016b6ec1",
+      "bytes": 15857
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/INDEPENDENT_RESULT.json",
+      "sha256": "740a2a5603bf99b02e5850ea5f21771d0737185d5475ee5e60fd8c30b334832e",
+      "bytes": 4053
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/RESULT.json",
+      "sha256": "740a2a5603bf99b02e5850ea5f21771d0737185d5475ee5e60fd8c30b334832e",
+      "bytes": 4053
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/REVIEW_BOOK.md",
+      "sha256": "22cddbe3ac9ef6a3714c0158e0e30744c8da1f3078cacf90e72e4c76900e4146",
+      "bytes": 5988
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/SOURCE_PINS.json",
+      "sha256": "246f31e59ec5b95486f8139e78bbe85b2409f2e912f6f29675085643aba4fdfa",
+      "bytes": 2078
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/check_code_writer_book_price.py",
+      "sha256": "d644b63c0883d8b3dcacd3c852c1d13dd70a387a6e9cea6366c1d0b4387c1838",
+      "bytes": 7414
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/INDEPENDENT_RESULT.json",
+      "sha256": "0fe7fe2847e8b222ba4e3c69817d79034a40a69faee0fe4cc37860bc8020fd0e",
+      "bytes": 16599
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "sha256": "e95f0486456c53cf0ce40023bab08ac744fd6189b397d29a8773446c168244a0",
+      "bytes": 31515
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/RESULT.json",
+      "sha256": "0fe7fe2847e8b222ba4e3c69817d79034a40a69faee0fe4cc37860bc8020fd0e",
+      "bytes": 16599
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/REVIEW_DIGITAL.md",
+      "sha256": "57ffe6313692718255828e757344d15bcc6d7db99d1d9e7d70ec361f6794dd3d",
+      "bytes": 9876
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/SOURCE_PINS.json",
+      "sha256": "f48778eae0ba4c064193d808896fb62ddc6e31118d8805f9241cc4eb06f397fe",
+      "bytes": 2327
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/check_paid_code_and_moment_writer.py",
+      "sha256": "6d2985960398735785f6c417c1482e5ca9276bac7f857c3a596bf0fc561b524e",
+      "bytes": 12080
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/CHECK_RESULT.json",
+      "sha256": "05a7daeeba2c127a2213e819bd1bc3b2d5717d7afdd68662cac42122a0770fb8",
+      "bytes": 2030
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "sha256": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15",
+      "bytes": 28827
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/INDEPENDENT_RESULT.json",
+      "sha256": "05a7daeeba2c127a2213e819bd1bc3b2d5717d7afdd68662cac42122a0770fb8",
+      "bytes": 2030
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/MOMENT_SOURCE_PINS.json",
+      "sha256": "640d1b708d578ef46b4ffa9f3ce122bcef96d712d333c64a1bfc32b3b0c75b7d",
+      "bytes": 2674
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/REVIEW_MOMENT_SOURCE.md",
+      "sha256": "ffce7c68fbafdc9c3bf9574e48907343b4d19e7ada99ecbf8433c90d53fb7a84",
+      "bytes": 11597
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/check_exact_moment_source.py",
+      "sha256": "b289a8b9462d082593858dcba40699aeba58c16e6a3807b689a732f8eaf04b19",
+      "bytes": 13222
+    }
+  ],
+  "self_hash_policy": "VALIDATION.json is excluded from its own files list; publication manifest pins it separately.",
+  "reviewed_integration_base": "d8c3162264c005118eca51c9b300d30151be517f"
+}

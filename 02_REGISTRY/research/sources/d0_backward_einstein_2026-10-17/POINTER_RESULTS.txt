@@ -1,0 +1,20 @@
+Central complete-pointer algebra: exact rational/log-prime verification.
+Complete outputs: KL(old,flag)=KL(old)+sum(type_mass * KL(flag|type)).
+One common fixture has conditional prices log(5/4), log(5/3), Z=2/3,
+and q*=(1/5,1/5,3/10,3/10); price=-log(Z)+KL(q||q*) exactly.
+Every normalized pointer tangent has zero preparation source at q*;
+the actual amplitude normalizer is retained.  Freezing it fails.
+Distinct PSD states of ranks four and two, and their convex midpoint,
+share the exact pointer minimum.  No unique state/Hessian inverse is used.
+Type-only and full-pointer reduced minima agree in their declared cuts.
+Direct flag probability jets give the central source and the exact
+derivative of the same Gibbs normalizer; no derivative of a remainder is used.
+Moving central reference adds -1/100 in the exact normalized fixture;
+omitting that source is rejected.  Forgetting the flag also changes the price
+and changes one preparation source by (1/10)*log(4/3).
+A proper-support tilt has the exact gap log(Z/Z_support)>0; amplitude
+rank-birth/stationarity and all-size convexity are analytic memo statements.
+Scope: bounded algebra fixtures only, not actual golden-program values,
+native reachability, physical Cost-minus-Info selection or an Einstein closure.
+No old suites, golden sign bounds, original sources, flags or grades were changed.
+Ordinary and optimized Python outputs are byte-identical.

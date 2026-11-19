@@ -1,0 +1,209 @@
+{
+  "status": "PASS_SCOPED_GLOBAL_SPECTRAL_EQUATION_COMPOSITION",
+  "source_commit_read": "a82df288e4832d53fd52fc88a78ef2dc123bcc88",
+  "independent_scalar_jets": {
+    "points": 4,
+    "derivative_checks": 32,
+    "max_scalar_jet_error": "4.585428214580653e-82",
+    "scope": "Independent high-precision diagnostics of the algebraic formulas used by the outward interval proof; not an interval oracle replacement."
+  },
+  "interval_certificate": {
+    "precision": "100-digit outward mpmath.iv arithmetic",
+    "W_min": 2162688,
+    "W_range": "W >= W_min",
+    "Z0_range": "Z0 >= 0; fixed",
+    "x_range": [
+      "-0.01",
+      "0.01"
+    ],
+    "y_range": [
+      "-0.0002",
+      "0.0002"
+    ],
+    "theta_upper": [
+      "0.000000496303794658634231762492025",
+      "0.000000496303794658634231762492025"
+    ],
+    "Fx": [
+      "0.000000013843281311830378910630706",
+      "0.0000000199232960262108369739375081"
+    ],
+    "Fy": [
+      "-0.000000455757804184631550100442683",
+      "-0.000000330185298350334971782971363"
+    ],
+    "Ward_determinant": [
+      "-9.69769483224186389286578631e-15",
+      "-4.04746718949998754573613832e-15"
+    ],
+    "self_consistent_Gx_lower": [
+      "0.0000000131864809402950215251177053",
+      "0.0000000131864809402950215251177053"
+    ],
+    "left_trace": [
+      "-2.89401024638730216341544128e-10",
+      "-5.86123785440706460613371608e-11"
+    ],
+    "right_trace": [
+      "4.99127595632757068189874491e-11",
+      "2.76296625470692617456109619e-10"
+    ],
+    "implication": "For every stated W,Z0 and every y in the interval, exactly one x in (-.01,.01) solves the self-consistent trace equation."
+  },
+  "original_source_and_sectors": {
+    "j_x_origin": "0.000000019168867179777071980355710068396",
+    "lambda_feedback": "-23.416406751884074972895582064895",
+    "roots": [
+      {
+        "L": 8,
+        "y": "-0.0001",
+        "x": "0.00233007184001395909969553329",
+        "lambda_sector": "-23.3007184001395909969553329",
+        "theta": "4.851943378369066072053e-7"
+      },
+      {
+        "L": 8,
+        "y": "0.0",
+        "x": "7.67258263789223903299728936e-223",
+        "lambda_sector": "-23.1329403664811837267894296",
+        "theta": "4.851769935992532077731e-7"
+      },
+      {
+        "L": 8,
+        "y": "0.0001",
+        "x": "-0.00229699792726457931353526412",
+        "lambda_sector": "-22.9699792726457931353526412",
+        "theta": "4.851596909619893260323e-7"
+      },
+      {
+        "L": 16,
+        "y": "-0.0001",
+        "x": "0.00235745571316040217253332419",
+        "lambda_sector": "-23.5745571316040217253332419",
+        "theta": "3.032465230978030836288e-8"
+      },
+      {
+        "L": 16,
+        "y": "0.0",
+        "x": "8.15887308677273305621542742e-223",
+        "lambda_sector": "-23.4026951511851357897055213",
+        "theta": "3.032356209995332548582e-8"
+      },
+      {
+        "L": 16,
+        "y": "0.0001",
+        "x": "-0.00232358270117276936533376189",
+        "lambda_sector": "-23.2358270117276936533376189",
+        "theta": "3.032247457029659667306e-8"
+      },
+      {
+        "L": 32,
+        "y": "-0.0001",
+        "x": "0.00235876198696761158208278054",
+        "lambda_sector": "-23.5876198696761158208278054",
+        "theta": "1.895290787830062018658e-9"
+      },
+      {
+        "L": 32,
+        "y": "0.0",
+        "x": "8.10484081467490038696896763e-223",
+        "lambda_sector": "-23.4155617162058879683568759",
+        "theta": "1.895222631247082842864e-9"
+      },
+      {
+        "L": 32,
+        "y": "0.0001",
+        "x": "-0.00232485059524556062750106691",
+        "lambda_sector": "-23.2485059524556062750106691",
+        "theta": "1.895154642415761711257e-9"
+      },
+      {
+        "L": 64,
+        "y": "-0.0001",
+        "x": "0.0023588424220162907723873946",
+        "lambda_sector": "-23.588424220162907723873946",
+        "theta": "1.184556743104558048822e-10"
+      },
+      {
+        "L": 64,
+        "y": "0.0",
+        "x": "8.15887308677273305621542742e-223",
+        "lambda_sector": "-23.4163539831025631771318557",
+        "theta": "1.18451414452942677679e-10"
+      },
+      {
+        "L": 64,
+        "y": "0.0001",
+        "x": "-0.00232492866624894958494869083",
+        "lambda_sector": "-23.2492866624894958494869083",
+        "theta": "1.184471650808361175777e-10"
+      }
+    ],
+    "root_precision": "80-digit numerical locations; existence and uniqueness are supplied by the separate interval monotonicity certificate, not by findroot"
+  },
+  "global_thermal_auxiliary": {
+    "max_gradient_error": "0.0",
+    "max_hessian_error": "4.21687917729e-81",
+    "omitted_Schur_max": "0.0005010219139604101",
+    "scope": "Six independent original scalar operands at three sites, not a fabricated all42 lattice checker; the identity pulls back through any specified smooth field map."
+  },
+  "exact_geometric_normalization": {
+    "upstream_blob": "e502807955321465903d7ab1a248e0456ac69f60",
+    "exact_rational_contraction_cases": 72,
+    "continuum_normalization": "f_B = (1/2) vol_g R / mu0; fixed EPS_PLUS orientation, not canonical negative G2STAR"
+  },
+  "literal_scene_heat": {
+    "exact_spectrum": "0 (1), 1 (30), 3/2-sqrt(10)/40 (1), 3/2+sqrt(10)/40 (1)",
+    "Z": "15.611971435583154",
+    "heat": "3.5972284689388",
+    "existing_edge_first_source": "-5.081328832921833e-06",
+    "existing_edge_second_source": "7.786115115859339e-05",
+    "edge_source_fd_error": "2.966850382075004e-12",
+    "edge_second_fd_error": "1.2182599838596233e-10",
+    "first_operator_bound": "0.042446497740695636",
+    "second_operator_bound": "0.006419750452009855",
+    "qualification": "Fixed scene and coordinate-conjugate scene have zero field source. An independently varying real edge is a different admitted-domain question and the source is explicitly nonzero."
+  },
+  "noncommuting_heat": {
+    "noncommuting_hessian_error": "0.0",
+    "erroneous_commuting_hessian_difference": "-0.0043152221030327601983",
+    "first_source": "-0.026753152715746975162"
+  },
+  "off_null_C2_diagnostic": {
+    "rows": [
+      {
+        "L": 8,
+        "value_error": "0.00059875003576939",
+        "normalized_gradient_error": "0.074350828842626",
+        "normalized_second_source": "2.4755564800747"
+      },
+      {
+        "L": 16,
+        "value_error": "0.00014985640905188",
+        "normalized_gradient_error": "0.018614901951137",
+        "normalized_second_source": "0.61874610201541"
+      },
+      {
+        "L": 32,
+        "value_error": "3.74746676322e-5",
+        "normalized_gradient_error": "0.0046554277472534",
+        "normalized_second_source": "0.15467770131917"
+      },
+      {
+        "L": 64,
+        "value_error": "9.3693273859407e-6",
+        "normalized_gradient_error": "0.0011639633684405",
+        "normalized_second_source": "0.038668875603405"
+      }
+    ],
+    "qualification": "Illustrates the analytic C2 Taylor bound with fixed positive PF jumps; no generic strong all-grid Euler convergence or arbitrary-root compactness inferred."
+  },
+  "checks": 190,
+  "physical_scope": {
+    "actual_scene_equals_paired_Hodge": false,
+    "forced_full_native_execution": false,
+    "independent_apparatus_Euler_solved": false,
+    "universal_finite_root_recovery": false,
+    "GR_closed": false
+  }
+}

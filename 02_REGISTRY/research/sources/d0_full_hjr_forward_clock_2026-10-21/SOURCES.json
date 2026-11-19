@@ -1,0 +1,50 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "input_commit": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "provenance_kind": "Live GitHub reads at a fixed commit, not raw-byte snapshots of all upstream files",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md",
+      "git_blob": "e5b08043d3156fb30248a482e3c72342ff13add9",
+      "use": "Original full HJR, all work/reference traces, certified root rectangle, and actual momentum/source formula."
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "git_blob": "2c9e30fc7ae5518aa958d0ee29c08ae071150c69",
+      "use": "Full-Lorentz extension and the original admissible dilation/scale inequality."
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAIRED_EPOCH_CLOCK_COMPLETE_SOURCE_TRANSPORT_2026_10_21.md",
+      "git_blob": "671a86ba65f65b86e471c9896e12cc7a576bfd93",
+      "use": "Prior conditional full-action transport and clock-cut stationarity; not re-claimed as new."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_STAGE_CLOCK_AND_POINTED_DESCENT.md",
+      "git_blob": "0f24c6e0149a84b584130a1206cec605ed078858",
+      "use": "Actual stage construction, off-phase counterexample, distinction between a stage and a whole macro word."
+    },
+    {
+      "path": "04_CERTIFICATES/order_memory_control_verify.py",
+      "git_blob": "ba02280e475b0124395622bfd99257c2820ae026",
+      "use": "Literal fixed-programme identity/order schedules, apparatus basis, WRITE and idle closure."
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean",
+      "git_blob": "6c31b0c089869f7e6fc07185ef343c6bdce35b2d",
+      "use": "Original rational quaternion left-multiplication matrix; no new Lean build."
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXECUTION_CLOCK_PRICE_ARCHITECTURE_2026_10_21.md",
+      "git_blob": null,
+      "use": "Existing forward-window complement formula, full128 application and physical scope boundary."
+    }
+  ],
+  "native_root_certificate": "Consumed from v8 RESULT section6: exact root in radius1e-12 rectangle; not re-proved by this packet.",
+  "not_run": [
+    "old native root search",
+    "old full spatial eigensolver",
+    "old research suite",
+    "Lean build",
+    "independent review"
+  ]
+}

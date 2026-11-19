@@ -1,0 +1,77 @@
+{
+  "status": "PASS_INTERVAL_FULL42_PAIRED_SPECTRAL_ROOT_AND43_THERMAL_LIFT",
+  "source_snapshot": "4f5eec1632b0d1308d192ab7ae428f7532e2153b",
+  "original_model_git_blob": "6d5b41ce11a941fde95e722e708ebb02d689985c",
+  "dimension": 42,
+  "thermal_extension_dimension": 43,
+  "price": "6*((log(2*528*sum_four_bands(exp(-beta*f))))/beta-528*sum_four_bands(log(1-zeta*f)))",
+  "beta": "2*phi^-2",
+  "zeta": "2^-20",
+  "band_multiplicity": 528,
+  "fixed_thermal_trace": 0,
+  "active_F_dimension": 2112,
+  "paired_Hodge_dimension": 4224,
+  "real_radius": "1.0e-25",
+  "complex_radius": "0.0001",
+  "analytic_modulus_upper": "59.7665605198882390898660200441608122286145",
+  "analytic_majorant": 100,
+  "complex_step": "1e-35",
+  "gradient_complex_step_error_upper": "2.0e-56",
+  "hessian_complex_step_error_upper": "8.0e-52",
+  "A_norm_upper": "19587.8894544823530103376517477702507145793",
+  "inverse_defect_upper": "2.58737084852269699430392949753889311239933e-38",
+  "preconditioned_residual_upper": "3.91757789089647060690335803101409994427266e-52",
+  "gradient_inf_upper": "2.00000000000000047591662292631221872554666e-56",
+  "hessian_lipschitz_bound": "8467200000000000000.0",
+  "contraction_upper": "0.0165854577588992979409130964878720267109223",
+  "self_map_bound": "1.65854577588992979409131004054499176073929e-27",
+  "root_distance_from_center_upper": "3.98364852523810874327278743842463749801686e-52",
+  "shift_from_original_CQ_center": "0.0274358835072912438096045180882458647801526",
+  "coframe_det_bounds": [
+    "1.59338205513399553812519142271495489233034",
+    "1.59338205513399553812519310567278330598446"
+  ],
+  "operand_bounds": [
+    [
+      "0.00037981260184464031166516521508097475352319",
+      "0.000379812601844640311665396060026103020867695"
+    ],
+    [
+      "-0.0000582350749825963932920516883616742648007814",
+      "-0.0000582350749825963932920364930648350272804033"
+    ],
+    [
+      "-0.000138091041969326852420534089967392857702862",
+      "-0.000138091041969326852417826069959313056024778"
+    ],
+    [
+      "0.0000056786251590673022289976772077094558191803",
+      "0.00000567862515906730222901810667939999542671931"
+    ]
+  ],
+  "hessian_diagonal_bounds": {
+    "0": [
+      "0.00433941319237293475509485631738319857117756",
+      "0.00433941319237293475509485631738319857117762"
+    ],
+    "5": [
+      "-0.00166062003284096985098983040536597196198174",
+      "-0.00166062003284096985098983040536597196198167"
+    ]
+  },
+  "thermal_theta_bounds": [
+    "0.000993648162791503042839271200745422859014443",
+    "0.000993648162791503042839276112211818943229335"
+  ],
+  "unique_full42_root_in_declared_ball": true,
+  "nonflat": true,
+  "saddle": true,
+  "rank_two_CAR_currents": true,
+  "complete_physical_apparatus_stationarity": false,
+  "compulsory_Book03_scene_Hodge_identified": false,
+  "GR_closed": false,
+  "precision_decimal_digits": 140,
+  "hessian_entries_certified": 1764,
+  "distinct_action_evaluations_for_center_derivatives": 904,
+  "framework": "mpmath.iv outward interval arithmetic + analytic Cauchy bounds + Banach; not Lean or independent proof assistant"
+}

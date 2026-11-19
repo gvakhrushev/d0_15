@@ -1,0 +1,229 @@
+{
+  "baseline": "f22c1864",
+  "exact_symbolic_scalar_effects": true,
+  "adaptive_schedule_controls": [
+    {
+      "prefix": [],
+      "tail": 2,
+      "value": 8.998874169575009,
+      "fixed2_value": 8.998874169575009,
+      "excess": 0.0,
+      "eventual_halt_mass": 1.0,
+      "T0": 5
+    },
+    {
+      "prefix": [
+        1
+      ],
+      "tail": 2,
+      "value": 11.561610097280841,
+      "fixed2_value": 8.998874169575009,
+      "excess": 2.562735927705832,
+      "eventual_halt_mass": 1.0,
+      "T0": 5
+    },
+    {
+      "prefix": [
+        0
+      ],
+      "tail": 2,
+      "value": 14.998874169575009,
+      "fixed2_value": 8.998874169575009,
+      "excess": 6.0,
+      "eventual_halt_mass": 1.0,
+      "T0": 5
+    },
+    {
+      "prefix": [
+        2,
+        2,
+        3
+      ],
+      "tail": 2,
+      "value": 9.00329654466963,
+      "fixed2_value": 8.998874169575009,
+      "excess": 0.004422375094620179,
+      "eventual_halt_mass": 1.0,
+      "T0": 5
+    },
+    {
+      "prefix": [
+        2,
+        1,
+        7
+      ],
+      "tail": 2,
+      "value": 9.313396541190698,
+      "fixed2_value": 8.998874169575009,
+      "excess": 0.3145223716156895,
+      "eventual_halt_mass": 1.0,
+      "T0": 5
+    },
+    {
+      "prefix": [
+        1,
+        3,
+        2
+      ],
+      "tail": 1,
+      "value": 12.481479383492761,
+      "fixed2_value": 8.998874169575009,
+      "excess": 3.4826052139177524,
+      "eventual_halt_mass": 0.9999999999999999,
+      "T0": 5
+    },
+    {
+      "prefix": [],
+      "tail": 2,
+      "value": 35.4742990289487,
+      "fixed2_value": 35.4742990289487,
+      "excess": 0.0,
+      "eventual_halt_mass": 1.0,
+      "T0": 30
+    },
+    {
+      "prefix": [
+        1
+      ],
+      "tail": 2,
+      "value": 52.924322526967686,
+      "fixed2_value": 35.4742990289487,
+      "excess": 17.450023498018986,
+      "eventual_halt_mass": 1.0,
+      "T0": 30
+    },
+    {
+      "prefix": [
+        0
+      ],
+      "tail": 2,
+      "value": 66.4742990289487,
+      "fixed2_value": 35.4742990289487,
+      "excess": 31.000000000000007,
+      "eventual_halt_mass": 1.0,
+      "T0": 30
+    },
+    {
+      "prefix": [
+        2,
+        2,
+        3
+      ],
+      "tail": 2,
+      "value": 35.48829879049998,
+      "fixed2_value": 35.4742990289487,
+      "excess": 0.013999761551282575,
+      "eventual_halt_mass": 1.0,
+      "T0": 30
+    },
+    {
+      "prefix": [
+        2,
+        1,
+        7
+      ],
+      "tail": 2,
+      "value": 36.56980723017957,
+      "fixed2_value": 35.4742990289487,
+      "excess": 1.0955082012308708,
+      "eventual_halt_mass": 1.0,
+      "T0": 30
+    },
+    {
+      "prefix": [
+        1,
+        3,
+        2
+      ],
+      "tail": 1,
+      "value": 55.98131113565889,
+      "fixed2_value": 35.4742990289487,
+      "excess": 20.507012106710192,
+      "eventual_halt_mass": 0.9999999999999999,
+      "T0": 30
+    },
+    {
+      "prefix": [],
+      "tail": 2,
+      "value": 56.654638916447645,
+      "fixed2_value": 56.654638916447645,
+      "excess": 0.0,
+      "eventual_halt_mass": 1.0,
+      "T0": 50
+    },
+    {
+      "prefix": [
+        1
+      ],
+      "tail": 2,
+      "value": 86.01449247071716,
+      "fixed2_value": 56.654638916447645,
+      "excess": 29.359853554269513,
+      "eventual_halt_mass": 1.0,
+      "T0": 50
+    },
+    {
+      "prefix": [
+        0
+      ],
+      "tail": 2,
+      "value": 107.65463891644765,
+      "fixed2_value": 56.654638916447645,
+      "excess": 51.00000000000001,
+      "eventual_halt_mass": 1.0,
+      "T0": 50
+    },
+    {
+      "prefix": [
+        2,
+        2,
+        3
+      ],
+      "tail": 2,
+      "value": 56.67630058716427,
+      "fixed2_value": 56.654638916447645,
+      "excess": 0.02166167071662528,
+      "eventual_halt_mass": 1.0,
+      "T0": 50
+    },
+    {
+      "prefix": [
+        2,
+        1,
+        7
+      ],
+      "tail": 2,
+      "value": 58.374935781370674,
+      "fixed2_value": 56.654638916447645,
+      "excess": 1.7202968649230286,
+      "eventual_halt_mass": 1.0,
+      "T0": 50
+    },
+    {
+      "prefix": [
+        1,
+        3,
+        2
+      ],
+      "tail": 1,
+      "value": 90.78117653739179,
+      "fixed2_value": 56.654638916447645,
+      "excess": 34.12653762094414,
+      "eventual_halt_mass": 0.9999999999999999,
+      "T0": 50
+    }
+  ],
+  "late_deviation_excesses": [
+    2.562735927705832,
+    0.14281637842757888,
+    0.007958883990603738,
+    0.00044353340333280755,
+    2.4717269416996146e-05
+  ],
+  "T0_5_source": {
+    "analytic": -2.058171027271492,
+    "central_difference": -2.0581710273859244
+  },
+  "runtime_seconds": 0.099579625,
+  "scope": "Fixed stopped task, scalar fresh-work interface, unit G price, T0 in [5,50], complete fresh pointer Info, deterministic policies, finite expected actual cost. All-policy and value-envelope proof is analytical."
+}

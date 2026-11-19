@@ -1,0 +1,395 @@
+{
+  "status": "PASS",
+  "checks_passed": 51,
+  "checks": [
+    {
+      "name": "all consumed historical source blobs available and exact",
+      "pass": true
+    },
+    {
+      "name": "Golden defining relation and full-column paid inverse",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "native X and CCZ success identities",
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "literal Golden weak-test Kraus on all data columns",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "complete two-read cycle including impossible branch",
+      "pass": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "complete X-cycle trace preservation",
+      "pass": true,
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "retained finite X cap 1",
+      "pass": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "retained finite X cap 2",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "retained finite X cap 5",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "literal two-CNOT one-Toffoli CSWAP on all eight columns",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "same logical word is full inverse",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "conditional two-row work is orthogonal",
+      "pass": true,
+      "max_abs_error": 1.232595164407831e-32,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "code marginal before echo is maximally mixed",
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "every code-only observable has identical density input",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "actual CAR16 masks 0/1 intertwine active-bit CSWAP",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "active-bit CAR16 extension is unitary on all columns",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "all six spectator-Z eigenvalues preserved on all 512 columns",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "true native finite-cap readiness is strictly positive and below one",
+      "pass": true,
+      "full_fixture_readiness": 0.04516115963171259,
+      "conditional_extra_readiness": 0.26978845456213685
+    },
+    {
+      "name": "paid echo instrument effects include the entire abort mass",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "already-ready coherence and dephasing give actual paid laws",
+      "pass": true,
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "end-to-end contrast retains preparation and forward readiness",
+      "pass": true,
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "old-ready-only normalization would overclaim full contrast",
+      "pass": true
+    },
+    {
+      "name": "logical inverse works with arbitrary entangled oldRIGHT",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "oldRIGHT entire marginal is preserved",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "old measured factory tape remains an independent retained block",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "tensor spectator identity: representative old-tape X and RIGHT Z commute",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "inaccessible extra code tag defeats a merely logical echo",
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "tagging isometry is not product factory factorization",
+      "pass": true
+    },
+    {
+      "name": "A-CZ-fresh-inverse equals controlled reflection on all columns",
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "reflection is genuinely selfadjoint and unitary",
+      "pass": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "minus branch is the true full-column report projector",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "purified exact moment t=-0.8: paid phase report and all aborts",
+      "pass": true,
+      "max_abs_error": 6.661338147750939e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "purified exact moment t=-0.8: original report probability",
+      "pass": true,
+      "max_abs_error": 5.551115123125783e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "purified exact moment t=-0.2: paid phase report and all aborts",
+      "pass": true,
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "purified exact moment t=-0.2: original report probability",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "purified exact moment t=0.3: paid phase report and all aborts",
+      "pass": true,
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "purified exact moment t=0.3: original report probability",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "purified exact moment t=0.75: paid phase report and all aborts",
+      "pass": true,
+      "max_abs_error": 6.661338147750939e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "purified exact moment t=0.75: original report probability",
+      "pass": true,
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "full retained quantum work is pure conditional on terminal sign",
+      "pass": true,
+      "max_abs_error": 0.0,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "coarse macro display retains every success time and abort probability",
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "complete sign entropy is H(T) plus true readiness times h(r)",
+      "pass": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "raw prewritten instruction records remain distinct",
+      "pass": true
+    },
+    {
+      "name": "only stochastic law after relabelling, entropy and counted total agree",
+      "pass": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "full dB - h dGamma - Gamma h' dr source",
+      "pass": true,
+      "max_abs_error": 2.734235060586343e-11,
+      "tolerance": 2e-09
+    },
+    {
+      "name": "field-dependent prefix/readiness cannot be dropped",
+      "pass": true,
+      "missing_source": -0.01454503927754458
+    },
+    {
+      "name": "finite fixed-catalogue first and second secants use actual gain ratio",
+      "pass": true,
+      "max_abs_error": 2.1519244719492292e-15,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "uniform code read only on completion: honest full entropy",
+      "pass": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "uniform code never read: coherent-work report entropy",
+      "pass": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 2e-12
+    },
+    {
+      "name": "fixed-code, code-read uniform, and code-unread uniform gains differ",
+      "pass": true
+    },
+    {
+      "name": "reading uniform code on every abort adds its actual entropy",
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 2e-12
+    }
+  ],
+  "source_pins_verified": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "git_blob": "9a0fee16a835e0bdc3c4c1221c048fbd413b7490"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "git_blob": "eeda7c0d227eb430165b315bfe6a9186ea8b9fe5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_Q8_PAID_ECHO_ARCHIVE_QND_SELECTION_2026_10_22.md",
+      "git_blob": "5ae92b51a07cf3f1f52d80c27c4502a220bc96f6"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_Q8_RETAINED_WORK_COHERENCE_TEST_ALGEBRA_2026_10_22.md",
+      "git_blob": "a3b35d5ac320c3c3c936ad8491feb449978a0eb4"
+    }
+  ],
+  "native_parameters": {
+    "p": 0.6180339887498948,
+    "q_G": 0.9442719099991586,
+    "s_CCZ": 0.21048987994279725,
+    "K": 3,
+    "L": 2,
+    "L_X": 2,
+    "reverse_readiness_after_old_ready": 0.2706289251688174,
+    "extra_readiness_including_final_X": 0.26978845456213685,
+    "explicit_small_fixture_prefix_readiness": 0.16739470821688263,
+    "explicit_small_fixture_full_readiness": 0.04516115963171259,
+    "small_fixture_end_to_end_plus_contrast": 0.022580579815856296,
+    "additional_gate_call_upper_bound_excluding_reading_controller_storage": 252
+  },
+  "report_fixture": {
+    "scope": "Conditional on actual paid catalogue ready; its readiness must multiply the displayed extra factor.",
+    "purifier_representation": "Schmidt/isometric compression of the actual orthogonal retained eta+/- records; physical row factory not replayed.",
+    "additional_ready_factor": 0.6089943315622185,
+    "laws": [
+      {
+        "t": -0.8,
+        "r": 0.8999999999999995,
+        "conditional_paid_law": [
+          0.06089943315622177,
+          0.548094898405996,
+          0.3910056684377815
+        ]
+      },
+      {
+        "t": -0.2,
+        "r": 0.5999999999999999,
+        "conditional_paid_law": [
+          0.24359773262488718,
+          0.36539659893733073,
+          0.3910056684377815
+        ]
+      },
+      {
+        "t": 0.3,
+        "r": 0.34999999999999987,
+        "conditional_paid_law": [
+          0.3958463155154417,
+          0.21314801604677625,
+          0.3910056684377815
+        ]
+      },
+      {
+        "t": 0.75,
+        "r": 0.12499999999999997,
+        "conditional_paid_law": [
+          0.5328700401169405,
+          0.07612429144527726,
+          0.3910056684377815
+        ]
+      }
+    ]
+  },
+  "validation_scope": {
+    "checker_default_read_only": true,
+    "literal_G_CNOT_X_cycle_checked": true,
+    "CSWAP_all_eight_active_columns_checked": true,
+    "CAR16_masks_0_1_embedding_checked": true,
+    "factory_success_law_consumed_from_pinned_owner": true,
+    "all_factory_hardware_branches_replayed": false,
+    "physical_B_new_numerically_computed": false,
+    "all42_source_replayed": false,
+    "original_72441_recovered": false,
+    "original_Q8_suites_rerun": false,
+    "Book_cut_or_Info_selected": false,
+    "uniform_refinement_claim": false,
+    "GR_closed": false
+  }
+}

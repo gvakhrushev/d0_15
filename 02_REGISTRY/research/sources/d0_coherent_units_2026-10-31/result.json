@@ -1,0 +1,91 @@
+{
+  "Einstein_PDE_solved": false,
+  "Lean_or_CI_run": false,
+  "checker_sha256": "90e099bb95908fa3ae87b1923b01ae8fd808493d44631fd98822c83efa2a8885",
+  "checks": 71,
+  "complete_price": {
+    "independent_current_copies": 2,
+    "new_calibration_scheme_physically_selected": false,
+    "new_native_word_emitted": false,
+    "original_kappa": "23.4164067518840749728955820649",
+    "past_matrix_retained": true,
+    "retention_blocks": 80,
+    "tested_independent_variables_per_copy": 11,
+    "tests": [
+      {
+        "actual_Gamma": "1.345220515935322718829793929e-45",
+        "all22_source_error_l1": "0.1436687598139673221703390087",
+        "baseline_source_max": "0.0",
+        "calibration_source_norm": "0.005138505362588191392064124355",
+        "current_weights_sum": "1.0",
+        "delta": "3.0517578125e-5",
+        "epsilon": "0.03125"
+      },
+      {
+        "actual_Gamma": "8.407628224595766992682611399e-47",
+        "all22_source_error_l1": "0.03596588844142433881283359307",
+        "baseline_source_max": "0.0",
+        "calibration_source_norm": "0.001287117236797381139177055235",
+        "current_weights_sum": "1.0",
+        "delta": "7.62939453125e-6",
+        "epsilon": "0.0078125"
+      },
+      {
+        "actual_Gamma": "5.254767640372354370426492021e-48",
+        "all22_source_error_l1": "0.008994516916177724443476119337",
+        "baseline_source_max": "0.0",
+        "calibration_source_norm": "0.0003219350576724561272608163991",
+        "current_weights_sum": "1.0",
+        "delta": "1.90734863281e-6",
+        "epsilon": "0.001953125"
+      },
+      {
+        "actual_Gamma": "3.284229775232721481516552046e-49",
+        "all22_source_error_l1": "0.002248819547382125146308767584",
+        "baseline_source_max": "0.0",
+        "calibration_source_norm": "0.00008049349975180400785153134928",
+        "current_weights_sum": "1.0",
+        "delta": "4.76837158203e-7",
+        "epsilon": "0.00048828125"
+      }
+    ]
+  },
+  "continuum": {
+    "bare_coupling_not_declared_redundant": true,
+    "connection": "A=d log r, not an independent field",
+    "initial_momentum": "Pi_Phi=r Pi_psi+n(r) psi"
+  },
+  "environment": {
+    "mpmath": "1.3.0",
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "torch": "2.10.0+cpu"
+  },
+  "exact_graph": {
+    "directed_report_edges": 5,
+    "exact_arithmetic": true,
+    "full_cycle_condition_required": true,
+    "graph_coupling_used_only_for_test": "23/7",
+    "naive_nonzero_energy_for_constant_physical_field": "1172401/640332",
+    "vertices": 4
+  },
+  "finite_covector": {
+    "action_identity_error": 1.1102230246251565e-16,
+    "calibration_coordinates_per_site": 2,
+    "common_gain_Ward_error": 4.163336342344337e-17,
+    "finite_orbit_error": 1.1102230246251565e-16,
+    "naive_untransported_Ward_residual": 0.05190990769257425,
+    "off_shell_source_norm": 9.493076313015465,
+    "physical_field_coordinates_per_site": 42,
+    "scalar_unit_Ward_error": 5.551115123125783e-17,
+    "scope": "finite algebraic Palatini-jet stencil control; not owned holonomy mesh or stationary GR solution",
+    "sites": 16,
+    "source_identity_error": 5.551115123125783e-16,
+    "total_compared_coordinate_derivatives": 704
+  },
+  "input_commit": "689a98adc750f6ad1b36f339696768a039b41022",
+  "native_gate_word_emitted": false,
+  "status": "PASS_COHERENT_CALIBRATION_SOURCE_COMPOSITION",
+  "unrestricted_D0_GR_closed": false
+}

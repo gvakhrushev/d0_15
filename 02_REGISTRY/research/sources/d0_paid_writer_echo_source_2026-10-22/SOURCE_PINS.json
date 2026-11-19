@@ -1,0 +1,41 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "scientific_owner": "Draft PR #334",
+  "input_checkout": "82d27e83b0ba0869911de80919de50c42f2944d8",
+  "pin_semantics": "Published historical source blobs, verified against this commit. Later checkout extensions of the Q8 owner are not silently substituted or claimed to match these earlier bytes.",
+  "interface": "constitutive/native-programme-v1",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "git_blob": "9a0fee16a835e0bdc3c4c1221c048fbd413b7490",
+      "used": "Sections 4, 6 and 9: full-column known multiplexer, common paid bank, complete code-independent factory law and uniform coherent code."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "git_blob": "eeda7c0d227eb430165b315bfe6a9186ea8b9fe5",
+      "used": "Sections 8--9: fixed positive processor with no moving operations; original full42 two-jet and actual finite-price secants."
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "used": "Sections 2--3 and 5: actual Golden CZ/CCZ/X/H/Toffoli instruments, retained work factorization, canonical logical output wires and data-independent detailed factory laws."
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_Q8_PAID_ECHO_ARCHIVE_QND_SELECTION_2026_10_22.md",
+      "git_blob": "5ae92b51a07cf3f1f52d80c27c4502a220bc96f6",
+      "used": "Existing Q8 paid echo and strict archive-QND boundary; its old checker is not rerun."
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_Q8_RETAINED_WORK_COHERENCE_TEST_ALGEBRA_2026_10_22.md",
+      "git_blob": "a3b35d5ac320c3c3c936ad8491feb449978a0eb4",
+      "used": "Orthogonal retained tags block programme-only visibility; existing full72k scope remains unchanged."
+    }
+  ],
+  "validation": {
+    "mode": "author bounded composition checker plus separate independent read-only review",
+    "old_suites_rerun": false,
+    "native_factory_hardware_replayed": false,
+    "full42_source_replayed": false,
+    "GR_closed": false
+  }
+}

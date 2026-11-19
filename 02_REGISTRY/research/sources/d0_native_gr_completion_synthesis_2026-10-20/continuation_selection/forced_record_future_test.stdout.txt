@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "baseline": "972ce692a84b5b23bdf91e93a047b1882ad582d4",
+  "sample_states": 1036,
+  "checks": 4400,
+  "golden_weights_exact": [
+    1,
+    0
+  ],
+  "scope": "abstract next-record/future-completeness composition; no G0 admission or new physical goal",
+  "script_sha256": "6157544de87d11e376e21da583d10a2ddc460baedefbbe395dce8873d9589da2"
+}

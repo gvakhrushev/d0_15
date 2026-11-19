@@ -1,0 +1,201 @@
+{
+  "GR_closed": false,
+  "arbitrary_cross_copy_correlated_inputs_claimed_scalar": false,
+  "checks": [
+    "arbitrary internally joint DATA-blind corner paired with its band flip is exactly its determinant times I",
+    "fixed middle is the exact signed permutation on ALL columns helperFalse",
+    "actual rank8 raw columns give the exact scalar corner helperFalse correlatedFalse",
+    "every forward inverse phase and real common padding stage is counted helperFalse correlatedFalse",
+    "actual rank8 raw columns give the exact scalar corner helperFalse correlatedTrue",
+    "every forward inverse phase and real common padding stage is counted helperFalse correlatedTrue",
+    "same-marginal correlated programmes remain a genuine different paired-return task helperFalse",
+    "fixed middle is the exact signed permutation on ALL columns helperTrue",
+    "actual rank8 raw columns give the exact scalar corner helperTrue correlatedFalse",
+    "every forward inverse phase and real common padding stage is counted helperTrue correlatedFalse",
+    "actual rank8 raw columns give the exact scalar corner helperTrue correlatedTrue",
+    "every forward inverse phase and real common padding stage is counted helperTrue correlatedTrue",
+    "same-marginal correlated programmes remain a genuine different paired-return task helperTrue",
+    "off-port raw G inverse restores every dirty helper-spin column exactly",
+    "protected-column propagation agrees with the owned gate-matrix engine on all32 columns of a mixed primitive word",
+    "actual native request cell has control0 G control1 G cubed and exact all-column inverse portTrue",
+    "actual native request cell has control0 G control1 G cubed and exact all-column inverse portFalse",
+    "request graph retains actual inventory and true key input rank helperFalse protectedFalse",
+    "request graph retains actual inventory and true key input rank helperFalse protectedTrue",
+    "request graph retains actual inventory and true key input rank helperTrue protectedFalse",
+    "request graph retains actual inventory and true key input rank helperTrue protectedTrue",
+    "single exact comparison has positive actual gain and lambda_pair minus4p without readiness dilution",
+    "literal private prefix counts one helper-spin and never reads a sealed old private block M1",
+    "one literal cumulative returned-matrix logdet has the true positive gain and invariant coupling M1",
+    "literal private prefix counts one helper-spin and never reads a sealed old private block M2",
+    "one literal cumulative returned-matrix logdet has the true positive gain and invariant coupling M2",
+    "literal private prefix counts one helper-spin and never reads a sealed old private block M3",
+    "one literal cumulative returned-matrix logdet has the true positive gain and invariant coupling M3",
+    "private all-column tensor action preserves the old reduced channel even on a correlated input",
+    "two-group k2 padded kernel has zero one-slot conditionals but nonzero cross-group excitation n2",
+    "full logdet source sees the cross-group correlated tangent and obeys the joint overlap norm n2",
+    "two-group k2 padded kernel has zero one-slot conditionals but nonzero cross-group excitation n3",
+    "full logdet source sees the cross-group correlated tangent and obeys the joint overlap norm n3",
+    "whole two-group matrix-kernel error controls the actual pure-gradient source without summing marginal norms"
+  ],
+  "checks_passed": 34,
+  "compiled_DATA_blind_identical_copies_have_exact_scalar_corner": true,
+  "consumed_sections_sha256": {
+    "7ab": "a8b52951dd0990540991415ccab8563729759d2c042fea58f250be9fba94355b",
+    "7ac": "076ff074a394e37734b336e8ee171978424d07c777838150ea6366d02e406de9",
+    "7ae": "4138adf4f9b3f3115508f4dc7912e7cf67d12dd0279630b00342e72228d142c9"
+  },
+  "continuous_native_word_selector_proved": false,
+  "full_native_joint_stationarity_proved": false,
+  "inputs_sha256": {
+    "02_REGISTRY/research/sources/d0_native_adjugate_pair_prefix_2026-10-25/PROOF.md": "f0f9acee9d794f3560772b6944090335e4dec97b474242c8ed62e0b78dfdc69c",
+    "02_REGISTRY/research/sources/d0_native_adjugate_pair_prefix_2026-10-25/check_paired_return.py": "b71a9e2d92f15625de78f053a0e328f7eebf4f69248848e56b2cbd96ce548e41",
+    "02_REGISTRY/research/sources/d0_native_adjugate_pair_prefix_2026-10-25/paired_return.py": "f394cc61abced54abfc7d38977acbc44951ec69d5a0c1147a9d236125245fcdf",
+    "02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/PROOF.md": "be5d20866ffded772071084d13a8c7cb36d75bd58445edf3264de2c038425470",
+    "02_REGISTRY/research/sources/d0_native_bilinear_return_echo_2026-10-25/native_echo.py": "2d836c6b89ccb8d1aeb081abb2f7ce7d392649169c7eb250a08101ccfad82841",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "02_REGISTRY/research/sources/d0_native_matrix_collective_return_2026-10-25/PROOF.md": "0c626bcb01f335d864f986a6783ba9e5ce04a5a9e015cae96cd4c9f45359da29"
+  },
+  "matrix_scope": "actual rank8 protected columns only for62/74 words; middle signed permutations ALL128/256; local inverse/request cells ALL32",
+  "native_pair_rows": [
+    {
+      "CX": 32,
+      "G": 8,
+      "J": "0.0000076280777465874525551260412783489291",
+      "N": 62,
+      "SourceI": 22,
+      "correlated_each_copy": false,
+      "dedicated_helper": false,
+      "full_dimension": 128,
+      "input_rank": 8,
+      "return_scalar_power_of_p": 9
+    },
+    {
+      "CX": 44,
+      "G": 4,
+      "J": "0.0000072042261899642877793042996455658846",
+      "N": 62,
+      "SourceI": 14,
+      "correlated_each_copy": true,
+      "dedicated_helper": false,
+      "full_dimension": 128,
+      "input_rank": 8,
+      "return_scalar_power_of_p": 3
+    },
+    {
+      "CX": 44,
+      "G": 8,
+      "J": "0.0000076280777465874525551260412783489291",
+      "N": 74,
+      "SourceI": 22,
+      "correlated_each_copy": false,
+      "dedicated_helper": true,
+      "full_dimension": 256,
+      "input_rank": 8,
+      "return_scalar_power_of_p": 9
+    },
+    {
+      "CX": 56,
+      "G": 4,
+      "J": "0.0000072042261899642877793042996455658846",
+      "N": 74,
+      "SourceI": 14,
+      "correlated_each_copy": true,
+      "dedicated_helper": true,
+      "full_dimension": 256,
+      "input_rank": 8,
+      "return_scalar_power_of_p": 3
+    }
+  ],
+  "numeric_arithmetic": "100-digit mpmath non-interval; exact Q(sqrt(p)) native columns and local cells; exact rational joint overlap diagnostic",
+  "physical_request_or_all_XN_admission_proved": false,
+  "prefix_rows": [
+    {
+      "Gamma_old_block": "0.0000000085459548671707760290695859050167429",
+      "J": "0.0000076280777465874525551260412783489291",
+      "M": 1,
+      "actual_N": 74,
+      "input_rank": 8,
+      "lambda": "-2.4721359549995793928183473374625525"
+    },
+    {
+      "Gamma_old_block": "2.958101462291719578772318064736003e-12",
+      "J": "0.000015258795881410428649235342347929885",
+      "M": 2,
+      "actual_N": 148,
+      "input_rank": 16,
+      "lambda": "-2.4721359549995793928183473374625525"
+    },
+    {
+      "Gamma_old_block": "1.023918847662430132436727302642484e-15",
+      "J": "0.000030517592676766276069613547650201435",
+      "M": 3,
+      "actual_N": 222,
+      "input_rank": 32,
+      "lambda": "-2.4721359549995793928183473374625525"
+    }
+  ],
+  "private_prefix_full_large_unitaries_replayed": false,
+  "protected_keys_have_one_scalar_Book_corner_claimed": false,
+  "request_graph_full512_or1024_replayed": false,
+  "request_graph_rows": [
+    {
+      "N": 162,
+      "dedicated_helper": false,
+      "full_dimension": 512,
+      "input_rank": 8,
+      "protected_quantum_keys": false
+    },
+    {
+      "N": 162,
+      "dedicated_helper": false,
+      "full_dimension": 512,
+      "input_rank": 32,
+      "protected_quantum_keys": true
+    },
+    {
+      "N": 186,
+      "dedicated_helper": true,
+      "full_dimension": 1024,
+      "input_rank": 8,
+      "protected_quantum_keys": false
+    },
+    {
+      "N": 186,
+      "dedicated_helper": true,
+      "full_dimension": 1024,
+      "input_rank": 32,
+      "protected_quantum_keys": true
+    }
+  ],
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "schema": "d0.native-adjugate-pair-prefix-check/1",
+  "single_comparison": {
+    "a1": "0.000000008545954867170776029069585905016742921205",
+    "b1": "-0.00000002112676229693653005672383695861341597958",
+    "lambda_pair": "-2.472135954999579392818347337462552470881",
+    "readiness": "1"
+  },
+  "status": "PASS",
+  "sum_of_local_prefix_prices_claimed": false,
+  "two_group_norm_diagnostic": [
+    {
+      "first_conditionals_zero": true,
+      "full_gradient_norm": "0.00000000066021132177926656427261990495666925",
+      "joint_overlap_bound": "0.000000005281690574234132514180959239653354",
+      "k_each_group_with_idle_padding": 2,
+      "n_each_group": 2
+    },
+    {
+      "first_conditionals_zero": true,
+      "full_gradient_norm": "0.0000000004401408811861777095150799366377795",
+      "joint_overlap_bound": "0.0000000030493854748103854890839355394306966",
+      "k_each_group_with_idle_padding": 2,
+      "n_each_group": 3
+    }
+  ],
+  "two_group_toy_is_native42_example": false
+}

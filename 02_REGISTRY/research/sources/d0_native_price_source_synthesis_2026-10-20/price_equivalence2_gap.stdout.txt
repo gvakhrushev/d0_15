@@ -1,0 +1,5 @@
+offdiag nonzero []
+diag [0, -r**2/8, 0, -r**2/8, -r**2/8, 0, -r**2/8, 0, 0, -r**2/8, 0, -r**2/8, -r**2/8, 0, -r**2/8, 0]
+eig r1 {0: 8, -1/8: 8}
+PASS exact degenerate effective matrix = -r² P_bad/8, rank8
+PASS actual stationary-link family splitting = -r² P_bad/32

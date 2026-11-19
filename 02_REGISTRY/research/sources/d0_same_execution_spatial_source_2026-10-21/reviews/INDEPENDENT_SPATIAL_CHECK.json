@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "scope": "new weighted input on unchanged primary carrier; no root/rank replay",
+  "runtime": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "input_sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+  "weighted_link_rows": [
+    [
+      "A - A_minus_v",
+      "A - A_minus_x",
+      "A - A_minus_y",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-A + A_minus_u",
+      "-A*H0_0_0/2 + A_minus_u*Am1_0_0 + A_minus_x*H0_m1_0/2",
+      "-A*H0_0_0/2 + A_minus_u*Bm1_0_0 + A_minus_y*H0_0_m1/2",
+      "A - A_minus_x",
+      "A - A_minus_y",
+      "0"
+    ],
+    [
+      "0",
+      "A*H0_0_0/2 - A + A_minus_u - A_minus_v*H0_0_0/2",
+      "0",
+      "-A + A_minus_v",
+      "0",
+      "A - A_minus_y"
+    ],
+    [
+      "0",
+      "0",
+      "A*H0_0_0/2 - A + A_minus_u - A_minus_v*H0_0_0/2",
+      "0",
+      "-A + A_minus_v",
+      "-A + A_minus_x"
+    ]
+  ],
+  "decisive_weight_differences": [
+    "A - A_minus_v",
+    "A - A_minus_x",
+    "A - A_minus_y",
+    "-A + A_minus_u"
+  ],
+  "checks": [
+    "all24 weighted links",
+    "independent local geometry/material homogeneity",
+    "moving inverse-PF dictionary",
+    "baseline preserved",
+    "four unequal-neighbor hostile controls",
+    "weighted material adjoint",
+    "original coframe residual",
+    "global auxiliary consistency"
+  ],
+  "elapsed_seconds": 0.572777667,
+  "checker_sha256": "75feeeee89aa0db6069205f8116d27e89f08b1d3a595897071ec62054200235a"
+}

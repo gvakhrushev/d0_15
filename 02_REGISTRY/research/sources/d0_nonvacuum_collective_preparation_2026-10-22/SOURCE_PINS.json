@@ -1,0 +1,91 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "scientific_ref": "fcfc52064737815c75bef96f7696b473ee304061",
+  "prior_published_checkpoint": "ecccc3c2fa9de36da190d9d3427d2750a2327303",
+  "task": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "assembly_carrier": "native-programme-v1",
+  "assembly_slot": "constitutive",
+  "consumed_blobs": [
+    {
+      "path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "blob_sha": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9"
+    },
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "blob_sha": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    {
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "blob_sha": "99721fb50de66688564638f5f2b449a38675d7bd"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "blob_sha": "be78e4c0f2c3f3d3add51f31adcd53d03acf0123"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md",
+      "blob_sha": "2afffdd41ad813587d9a6edc0b524fa84f7d3282"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+      "blob_sha": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COHERENT_OPERAND_REFINEMENT_AND_FULL_PREPARATION_SOURCE_2026_10_22.md",
+      "blob_sha": "8fd232f06119e6fa7e7490a0fa206376a80d6ffc"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_global_native_gr_closure_2026-10-22/ACTUAL_PREPARATION_NORMAL_EULER.md",
+      "blob_sha": "417bf11542e748868cdb199b82367cf93a26f027"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_global_native_gr_closure_2026-10-22/COHERENT_OPERAND_REFINEMENT.md",
+      "blob_sha": "8646c11f5e44a3dc06b2e4f9ae64d2dc6f9e6c9a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/RETAINED_CODE_LIFT_AND_APPARATUS_ELIMINATION.md",
+      "blob_sha": "aaffe11489d5d31c26d983b5830212b4fac33be8"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "blob_sha": "eeda7c0d227eb430165b315bfe6a9186ea8b9fe5"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+      "blob_sha": "01b02ebbe81a62464e81d5c397c101fd60fff4f9"
+    }
+  ],
+  "specific_consumption": {
+    "old_overlap_lemma": "A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md, section 6.78, equations (13ir)-(13it); vacuum application reused at its original scope",
+    "new_application": "Exact actual-kind conditional score at the nonvacuum complete field root; implemented without-replacement averaging and a two-sided pure-source estimate"
+  },
+  "concurrent_results_preserved": {
+    "ref": "f9d47475cceaebbba481bfb979be006fcef687a1",
+    "files": [
+      {
+        "path": "02_REGISTRY/research/A4D_GLOBAL_JOINT_INDEX_AND_GR_RIGIDITY_2026_10_22.md",
+        "blob_sha": "e1363732fe8009e5ac9451545e4ed6d2b26b9700"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_MAIN_CLOSURE_DECISION_NO_INFORMATION_ONLY_EINSTEIN_DERIVATION_2026_10_22.md",
+        "blob_sha": "3658010729407d3bf02e46aa50796355838fd614"
+      }
+    ]
+  },
+  "historical_proof_replay_claimed": false,
+  "GR_closed": false,
+  "attached_originals": [
+    {
+      "path": "project_sources/05-d0_tome_1_logic_of_distinguishability.md",
+      "sha256": "eebf4585fbe1fe1f7741e88cda0e3ef44ee73d0688d081a5ec7c5c5e0ff5fbde"
+    },
+    {
+      "path": "project_sources/02-d0_tome_5_methodology_faq_fundamental.md",
+      "sha256": "cc1ced5782ccfd0b01c145d75f2b626a894cecf2d7a1fd96e592c2336c92a477"
+    },
+    {
+      "path": "project_sources/01-d0_tome_3_geometry_phi_graph_qft_qg.md",
+      "sha256": "7c99c0d79ad1a7cf365b065472374cac29d25818f33b3ffd18ca2d1d9e4c3d88"
+    }
+  ]
+}

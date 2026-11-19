@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "scope": "exact six-letter baseline and original full8D first jet; same-cut lemma controls only",
+  "checks": [
+    "literal T_star = CX (G tensor I), all16 entries",
+    "native Golden and four-tail orthogonality",
+    "full8D six-letter baseline is orthogonal",
+    "required complete query jet is orthogonal tangent",
+    "full trace distinguishes required jet from moving unitary compression",
+    "fixed native word zero jet does not equal original query jet",
+    "actual retained plus/minus feedback eigenvalues",
+    "upper-band full geometric and matter jet",
+    "lower-band real matter jet",
+    "complete two-query click jet including both bands",
+    "freezing live matter changes actual report source",
+    "general isometric first tangent including normal motion",
+    "unitary compression first derivative is conjugacy",
+    "unitary compression trace source zero",
+    "leaky moving-cut countercontrol",
+    "leaky Book complement has real encoding source",
+    "different moving decoder escapes only with its own source"
+  ],
+  "word_inventory": {
+    "G": 4,
+    "CNOT": 2
+  },
+  "trace_DU": "-8 p^5 eta^2 df - 32 sigma p^4 eta^2 dq",
+  "sympy_version": "1.14.0",
+  "elapsed_seconds": 0.23086679100000002,
+  "checker_sha256": "1bed4899d4be01d313c83872d98853d5bae9edefe5b01f198e198bf196012321"
+}

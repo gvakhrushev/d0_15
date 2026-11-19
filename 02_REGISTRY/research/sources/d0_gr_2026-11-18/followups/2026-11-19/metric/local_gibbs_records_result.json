@@ -1,0 +1,48 @@
+{
+  "actual_scene_vertex_32_weight": 0.4720409576,
+  "all_mode_density_including_grade_one": 390.1731772998,
+  "full_eight_bank_compilation_replayed": false,
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "nonconstant_spatial_factor": true,
+  "role": "graphical Born-mark disintegration with controlled source; no microscopic price assignment",
+  "spectral_fixtures": {
+    "0": {
+      "absolute_local_error_analytic_upper": "1.965809217e-06",
+      "clock_dimension": 38,
+      "declared_heat_modes": 16150,
+      "normalized_terminal_probabilities": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "shortest_return": 4
+    },
+    "1": {
+      "absolute_local_error_analytic_upper": "3.147747704e-10",
+      "clock_dimension": 54,
+      "declared_heat_modes": 22950,
+      "normalized_terminal_probabilities": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "shortest_return": 6
+    },
+    "2": {
+      "absolute_local_error_analytic_upper": "2.705016608e-14",
+      "clock_dimension": 70,
+      "declared_heat_modes": 29750,
+      "normalized_terminal_probabilities": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "shortest_return": 8
+    }
+  },
+  "status": "PASS",
+  "true_geometric_CAR_curvatures": [
+    "8425/57122",
+    "18368/83521"
+  ]
+}

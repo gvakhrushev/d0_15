@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "diagonal_checks": [
+    {
+      "M": 1,
+      "basis_tables": 2,
+      "nodes": [
+        "2/5",
+        "41/100"
+      ],
+      "entropy_difference_sign": 1,
+      "ell_times_max_abs_slope_lower": "9/2419"
+    },
+    {
+      "M": 2,
+      "basis_tables": 4,
+      "nodes": [
+        "2/5",
+        "41/100",
+        "21/50"
+      ],
+      "entropy_difference_sign": -1,
+      "ell_times_max_abs_slope_lower": "50/370881"
+    },
+    {
+      "M": 3,
+      "basis_tables": 8,
+      "nodes": [
+        "2/5",
+        "41/100",
+        "21/50",
+        "43/100"
+      ],
+      "entropy_difference_sign": 1,
+      "ell_times_max_abs_slope_lower": "52843/9816093234"
+    },
+    {
+      "M": 4,
+      "basis_tables": 16,
+      "nodes": [
+        "2/5",
+        "41/100",
+        "21/50",
+        "43/100",
+        "11/25"
+      ],
+      "entropy_difference_sign": -1,
+      "ell_times_max_abs_slope_lower": "71325/287973711872"
+    },
+    {
+      "M": 5,
+      "basis_tables": 32,
+      "nodes": [
+        "2/5",
+        "41/100",
+        "21/50",
+        "43/100",
+        "11/25",
+        "9/20"
+      ],
+      "entropy_difference_sign": 1,
+      "ell_times_max_abs_slope_lower": "51001/3962458541250"
+    },
+    {
+      "M": 6,
+      "basis_tables": 64,
+      "nodes": [
+        "2/5",
+        "41/100",
+        "21/50",
+        "43/100",
+        "11/25",
+        "9/20",
+        "23/50"
+      ],
+      "entropy_difference_sign": -1,
+      "ell_times_max_abs_slope_lower": "149615375/203918707576639008"
+    }
+  ],
+  "two_reader_flat_jet": {
+    "q_contact": "33/80",
+    "basis_for_ell_times_tariffs": [
+      "1",
+      "log(phi)",
+      "log((1-q_contact)/q_contact)"
+    ],
+    "ell_times_T_00_01_10_11": [
+      [
+        "531/47",
+        "33/40",
+        "-33/40"
+      ],
+      [
+        "12",
+        "-7/40",
+        "7/40"
+      ],
+      [
+        "14",
+        "-7/40",
+        "7/40"
+      ],
+      [
+        "349/33",
+        "-47/40",
+        "47/40"
+      ]
+    ],
+    "S_prime": 0,
+    "S_double_prime": 0,
+    "ell_times_S_triple_prime": "-14336000/2405601",
+    "costs": "fixed positive real tariffs; coefficients use the stated reference calibration"
+  },
+  "distinct_native_probability_comparisons": {
+    "base_q": [
+      "0.412469880",
+      "0.412469881"
+    ],
+    "settings": [
+      {
+        "n": 0,
+        "q": [
+          "0.412469880",
+          "0.412469881"
+        ],
+        "Dq_multiplier": [
+          "1.000000000",
+          "1.000000000"
+        ]
+      },
+      {
+        "n": 26,
+        "q": [
+          "0.497838869",
+          "0.497838870"
+        ],
+        "Dq_multiplier": [
+          "0.984923932",
+          "0.984923933"
+        ]
+      },
+      {
+        "n": 33,
+        "q": [
+          "0.402291917",
+          "0.402291918"
+        ],
+        "Dq_multiplier": [
+          "0.999779734",
+          "0.999779735"
+        ]
+      },
+      {
+        "n": 59,
+        "q": [
+          "0.487478048",
+          "0.487478049"
+        ],
+        "Dq_multiplier": [
+          "0.988337602",
+          "0.988337603"
+        ]
+      },
+      {
+        "n": 66,
+        "q": [
+          "0.392156997",
+          "0.392156998"
+        ],
+        "Dq_multiplier": [
+          "0.999119035",
+          "0.999119036"
+        ]
+      },
+      {
+        "n": 92,
+        "q": [
+          "0.477122744",
+          "0.477122745"
+        ],
+        "Dq_multiplier": [
+          "0.991315880",
+          "0.991315881"
+        ]
+      },
+      {
+        "n": 99,
+        "q": [
+          "0.382069585",
+          "0.382069586"
+        ],
+        "Dq_multiplier": [
+          "0.998018193",
+          "0.998018194"
+        ]
+      }
+    ],
+    "width_N": 99,
+    "rotation": "G^(N+n) Z G^(N-n) Z = G^(2n), before the final code",
+    "scope": "Distinct modified pointer effects. Transfer uses one table and a common admissible field chart; the unmodified LC1 task fixes its effect."
+  },
+  "physical_full_price_selected": false
+}

@@ -1,0 +1,175 @@
+{
+  "integrated_ancestor": "afc4294f3d34af9ae50d7ae76fd59af5567493b3",
+  "files": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "bytes": 228814,
+      "sha256": "65f83caf9fdfa44abb8ea19af3463d700f02387f6dd1ffba390c0a74ba868c8b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md",
+      "bytes": 27201,
+      "sha256": "894eb2f075928288b1c5357f5dba0c379a46245b03244f598abe979a07c934d4"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md",
+      "bytes": 601726,
+      "sha256": "f1819688df8d44dc2039d2114f8ed45a40eb2cb96b2568fcfd6b61d3e699a866"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "bytes": 23011,
+      "sha256": "2decad4c1728f2962a06f26c3ea7255e816c2b132f38d0040431386f444a5eea"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "bytes": 711690,
+      "sha256": "773f1d6250595a5ba580ea89ca2e919cd925652cc3a4359be32603e36962ebec"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/INDEPENDENT_REVIEW.md",
+      "bytes": 7613,
+      "sha256": "2b402b57cbe427932e8c614c330bf63780f8c5e2828004af9f2bd8142559f2d8"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/PROOF.md",
+      "bytes": 19048,
+      "sha256": "5d844191e050f2831f72c269e43a543d1670c0d3394d17fa5d2fb80a0ae516ed"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/README.md",
+      "bytes": 1428,
+      "sha256": "5ad41abebfb191937de78a32bd6e5f670969832403d1d1b29dd69eb203cd4a09"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/RESULT.json",
+      "bytes": 5531,
+      "sha256": "121540ce081cf4807f7befe880021bd96d47d76a464beac42374e1b4e5bc68a2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/RESULT_OPTIMIZED.json",
+      "bytes": 5531,
+      "sha256": "121540ce081cf4807f7befe880021bd96d47d76a464beac42374e1b4e5bc68a2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/SOURCE_PINS.json",
+      "bytes": 1630,
+      "sha256": "49dc2aa16ace98c18979be54516e557eb07dfefc13e39b3f5166a0922789705b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/VALIDATION.json",
+      "bytes": 673,
+      "sha256": "7edaa705d3ee3a42dff08f77ee2ae5b35180bf682e443eff0a2f9d3336b929cf"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/check_centered_preparation.py",
+      "bytes": 13684,
+      "sha256": "779babe95b9325b2eafb3103952d81930562a6c1ef759f070ec51b47f71f239c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/INDEPENDENT_REVIEW.md",
+      "bytes": 4262,
+      "sha256": "c7f16d381725e26338339ee6fce2eb60e612c6a43cdbf362784f0fc8117b36c3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/PROOF.md",
+      "bytes": 15528,
+      "sha256": "ceb2ce2d05642977014ece32d8fa293302a3b23200b6cf60cf28ec916c0d5ec7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/README.md",
+      "bytes": 2752,
+      "sha256": "31e02f1f790584d0873ef27f73414cc79fea77cdfa95b982cd5d41fe204be81a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/RESULT.json",
+      "bytes": 4970,
+      "sha256": "fd7d15bc9fb169910db01eaf0dbf6911a906d0dfac6facb554968a7763d887ff"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/RESULT_OPTIMIZED.json",
+      "bytes": 4970,
+      "sha256": "fd7d15bc9fb169910db01eaf0dbf6911a906d0dfac6facb554968a7763d887ff"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/SOURCE_PINS.json",
+      "bytes": 1724,
+      "sha256": "3e5b79fe77b29d3513c37e0630d656ef49a6a27fbd79b02a618578c73ae6680e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/check_complete_return_entropy.py",
+      "bytes": 13284,
+      "sha256": "f856f291a51c6e26114ee4c0044fc1d773a47f999b38a42ec23c8e88ac976e3b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/CONCURRENT_INPUTS.md",
+      "bytes": 2905,
+      "sha256": "01c57a04347aed22ac753faa7c605905ab1f6a5ccbe2d33205e5c8b9d6c218a3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/INTEGRATION_REVIEW.md",
+      "bytes": 14898,
+      "sha256": "298121f9f8949dda177268dd2b17476b8b921a06aba6a9f3089da127a7811d42"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/INTEGRATION_VALIDATION.json",
+      "bytes": 14692,
+      "sha256": "5ed38659955a33110420ed312460232b966de22a2a24ed4a968169e4dfc0ad7b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/README.md",
+      "bytes": 3552,
+      "sha256": "1e2f4c42ef64bd3057f13b62c89809f6b2401b1c65048fccd848bdd2e63b8fe0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/FROZEN.json",
+      "bytes": 952,
+      "sha256": "9429e7ce1518f144078af760a65e94b5f6071e0b1b6c5bdf43edfa1835c77a81"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/INDEPENDENT_PROVENANCE_AUDIT.json",
+      "bytes": 5598,
+      "sha256": "c877fd537f61f92aa799f4adea848ac5dfa6a9a1596746ddf2fbea1fb9268f1d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/INDEPENDENT_REVIEW.md",
+      "bytes": 11570,
+      "sha256": "50919da7a9e8c408436f4179bda4e26a9d689af6b36683e9e9fa4c330a84e29f"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/PROOF.md",
+      "bytes": 21059,
+      "sha256": "23794bfbfbbe8c3524f370461ccc616d2c7653318e4a578250354db378fa26a2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/README.md",
+      "bytes": 2357,
+      "sha256": "d57450deffe7b96cb4cc7dff9c5eb295f7149c5b0deb8e194e3761675ba25557"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/RESULT.json",
+      "bytes": 2639,
+      "sha256": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/RESULT_OPTIMIZED.json",
+      "bytes": 2639,
+      "sha256": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/SOURCE_PINS.json",
+      "bytes": 2374,
+      "sha256": "d12f14b6b3f11cad97e6981b6055012e0d5731d7140209e4535d715d6496abc1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/check_density_rigidity.py",
+      "bytes": 7830,
+      "sha256": "ecac5ea134d01f1b9d4b1521a7879788bd7ac69586dd75072834afb65b656531"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/inputs/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21_dfc0275e.md",
+      "bytes": 18886,
+      "sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd"
+    }
+  ]
+}

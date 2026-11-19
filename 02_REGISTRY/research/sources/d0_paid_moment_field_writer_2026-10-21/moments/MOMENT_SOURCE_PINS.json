@@ -1,0 +1,57 @@
+{
+  "companion_scope": "The separately reviewed PAID_CODE_AND_MOMENT_WRITER.md supplies paid preparation and the complete CQ ledger; it is not imported or simulated by this narrow algebra checker.",
+  "source_ref": "311b1d3fd505effe7082754bc80dd17d1097f095",
+  "sources": [
+    {
+      "bytes": 35006,
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "sha256": "4d098d1e6ad8cb7daf477b498f808b7b962d6432f3da78ae573e321dbbcb915d"
+    },
+    {
+      "bytes": 18821,
+      "path": "02_REGISTRY/research/sources/d0_exact_resource_writer_2026-10-21/EXACT_NATIVE_WRITER_GATE.md",
+      "sha256": "672524e7a56e25675fda6cf295acc258877729f1a4d69bf0a52d4e1425884dcc"
+    },
+    {
+      "bytes": 6623,
+      "path": "02_REGISTRY/research/sources/d0_exact_resource_writer_2026-10-21/WRITER_RESULT.json",
+      "sha256": "5bf9932e0be30cf9ae7e5e474364053685fc183158a9b123b10373e46c5076ca"
+    },
+    {
+      "bytes": 15594,
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be"
+    },
+    {
+      "bytes": 24033,
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf"
+    },
+    {
+      "bytes": 25208,
+      "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e"
+    },
+    {
+      "bytes": 17162,
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b"
+    },
+    {
+      "bytes": 20156,
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1"
+    },
+    {
+      "bytes": 16828,
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "bytes": 22654,
+      "path": "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md",
+      "sha256": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c"
+    }
+  ],
+  "verification": "git show historical source_ref:path; no executable arithmetic imports and no old suite replay"
+}

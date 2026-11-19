@@ -1,0 +1,24 @@
+{
+  "GR_closed": false,
+  "exact_check_count": 79,
+  "executed_mathematical_mutants_rejected": 4,
+  "independent_scientific_review": false,
+  "native_physical_action_selection": false,
+  "new_Lean_compilation": false,
+  "old_source_suites_replayed": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "python": "3.13.5",
+  "schema": "d0-native-price-unfolding-validation/1",
+  "sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b",
+    "02_REGISTRY/research/sources/d0_native_price_unfolding_2026-10-16/INPUTS.json": "06a7d35c17956af2ac543dc3ca849fba9028057177b2f08cf86f2499586c1560",
+    "02_REGISTRY/research/sources/d0_native_price_unfolding_2026-10-16/README.md": "07825e7be8dba3da22d6d636a9804c8ddfff4858374653b8c469a6c68fdce40c",
+    "02_REGISTRY/research/sources/d0_native_price_unfolding_2026-10-16/check_unfolding.py": "d3dfcb0aac9741ac780ecd917d55fb313094109d5f000f0cad99cefc60e5e1c4",
+    "02_REGISTRY/research/sources/d0_native_price_unfolding_2026-10-16/mutations.json": "e8180a5f6068a99529a78d49a00576f53572a28b49e78b4770145f784ae1989d",
+    "02_REGISTRY/research/sources/d0_native_price_unfolding_2026-10-16/result.json": "1ea6fdd867c6387301f9840f8bf2850374c4cff522ebe70867ed5ec39412ed6b",
+    "02_REGISTRY/research/sources/d0_native_price_unfolding_2026-10-16/test_mutations.py": "8859fd35da90fa0aa44e4bbcb49a78007f25788c91ea294f8520847ad1e75f26"
+  },
+  "staged_narrow_certificate": "PASS_ORDINARY_AND_OPTIMIZED",
+  "sympy": "1.14.0"
+}

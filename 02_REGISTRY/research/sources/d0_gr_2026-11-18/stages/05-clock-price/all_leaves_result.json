@@ -1,0 +1,122 @@
+{
+  "result": "PASS",
+  "original_port_slots": 128,
+  "port_click_probability": 0.013278823734363173,
+  "native_port_mass": 0.6148992836873476,
+  "deterministic_writer": {
+    "parsed_probabilities": [
+      1,
+      0,
+      0
+    ],
+    "unread_tail_probabilities": [
+      0.05572809000084116,
+      0.9442719099991589
+    ],
+    "parsed_length": 1,
+    "selection_information": 0,
+    "net_terminal_weight": 0.6180339887498949
+  },
+  "models": [
+    {
+      "native_word": "AACCCC",
+      "B": 13.939361553356582,
+      "golden_weight": 0.0012213657083558747,
+      "port_visits": 15,
+      "all_port_suffix_slots": "40564819207303340847894502572032",
+      "native_port": {
+        "mask_count": 64,
+        "anchor": 0.0009696053561009198,
+        "suffix_mass": 0.0006792971724431112,
+        "unadjusted_moment": 0.0018998332105267808,
+        "one_shot_baseline_moment": 0.0012205360380836696,
+        "baseline_long_visits": 3,
+        "baseline_long_probability": 0.9128156679720519,
+        "retuned_all_leaf_moment": 0.0012213657083558747,
+        "reconstructed_B": 13.939361553356582,
+        "repeated_cap": 3,
+        "timeout_born_mass": 3.134580449577229e-10,
+        "capped_moment": 0.001221365708185959,
+        "cap_error_bound": 3.134580449577229e-10
+      },
+      "independent_deterministic_tokens": 15,
+      "deterministic_token": {
+        "mask_count": 64,
+        "anchor": 0.0009696053561009198,
+        "suffix_mass": 0.0007331374358574057,
+        "unadjusted_moment": 0.0019536077152896123,
+        "one_shot_baseline_moment": 0.0012204702794322065,
+        "baseline_long_visits": 3,
+        "baseline_long_probability": 0.989773165660947,
+        "retuned_all_leaf_moment": 0.001221365708355875,
+        "reconstructed_B": 13.939361553356582,
+        "repeated_cap": 3,
+        "timeout_born_mass": 3.940544068618292e-10,
+        "capped_moment": 0.0012213657081634863,
+        "cap_error_bound": 3.9405440686182916e-10
+      }
+    },
+    {
+      "native_word": "ACACCC",
+      "B": 13.93936153346847,
+      "golden_weight": 0.0012213657200448264,
+      "port_visits": 15,
+      "all_port_suffix_slots": "40564819207303340847894502572032",
+      "native_port": {
+        "mask_count": 64,
+        "anchor": 0.0009696053561009198,
+        "suffix_mass": 0.0006792971724431112,
+        "unadjusted_moment": 0.0018998332222077922,
+        "one_shot_baseline_moment": 0.001220536049764681,
+        "baseline_long_visits": 3,
+        "baseline_long_probability": 0.9128156679720519,
+        "retuned_all_leaf_moment": 0.0012213657200448264,
+        "reconstructed_B": 13.939361533468471,
+        "repeated_cap": 3,
+        "timeout_born_mass": 3.134580449577229e-10,
+        "capped_moment": 0.0012213657198749106,
+        "cap_error_bound": 3.134580449577229e-10
+      },
+      "independent_deterministic_tokens": 15,
+      "deterministic_token": {
+        "mask_count": 64,
+        "anchor": 0.0009696053561009198,
+        "suffix_mass": 0.0007331374358574057,
+        "unadjusted_moment": 0.001953607726969994,
+        "one_shot_baseline_moment": 0.0012204702911125884,
+        "baseline_long_visits": 3,
+        "baseline_long_probability": 0.989773165660947,
+        "retuned_all_leaf_moment": 0.0012213657200448266,
+        "reconstructed_B": 13.939361533468471,
+        "repeated_cap": 3,
+        "timeout_born_mass": 3.940544068618292e-10,
+        "capped_moment": 0.001221365719852438,
+        "cap_error_bound": 3.9405440686182916e-10
+      }
+    }
+  ],
+  "delta_B": 1.9888112490207277e-08,
+  "full_support_surprisal": {
+    "ordered_slots": 16384,
+    "positive_ordered_fine_leaves": 1764,
+    "l1_change_of_born_fine_probabilities": 2.8289870958888626e-06,
+    "born_moment_without_path_information": [
+      0.37810112907921317,
+      0.37810112907921317
+    ],
+    "positive_fine_counts_for_00_01_10_11": [
+      441,
+      441,
+      441,
+      441
+    ],
+    "exact_surprisal_sum": "441*(p+p^2)^2=441",
+    "moment_with_own_fine_surprisal": [
+      441.0000000000002,
+      441.0000000000003
+    ],
+    "direct_sum_on_support": 441.0000000000001
+  },
+  "physical_complete_Cost_Info_binding_proved": false,
+  "GR_closed": false
+}

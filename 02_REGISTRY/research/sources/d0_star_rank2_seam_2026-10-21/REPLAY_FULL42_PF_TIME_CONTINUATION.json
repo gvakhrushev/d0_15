@@ -1,0 +1,65 @@
+{
+  "status": "PASS_FIVE_POINT_NUMERICAL_NATIVE_N1_FULL42_PF_TIME_CONTINUATION",
+  "source": "same original complete cap-one Golden CQ and full six-face STAR",
+  "original_site_weights": "positive time-slice PF [1,rho], constant in each spatial slice",
+  "points": [
+    {
+      "time_PF_ratio": 1.0,
+      "source_before": 0.3481097051616667,
+      "source_after": 5.223953526700007e-15,
+      "numerical_min_singular": 0.044716958681332124,
+      "max_field_change": 0.6688617391054471,
+      "max_original_f": 0.02741160259156905,
+      "max_two_CAR_q": 0.00032338331940637115,
+      "full42_numerical_root": true
+    },
+    {
+      "time_PF_ratio": 1.25,
+      "source_before": 0.0007110506024128814,
+      "source_after": 5.2258847330064794e-15,
+      "numerical_min_singular": 0.044704051700653405,
+      "max_field_change": 0.6688890039769145,
+      "max_original_f": 0.027438952546419593,
+      "max_two_CAR_q": 0.000324657484841789,
+      "full42_numerical_root": true
+    },
+    {
+      "time_PF_ratio": 1.5,
+      "source_before": 0.00047937470524310704,
+      "source_after": 7.835930290050011e-15,
+      "numerical_min_singular": 0.04469527180620902,
+      "max_field_change": 0.6689075238169907,
+      "max_original_f": 0.02745752882824226,
+      "max_two_CAR_q": 0.0003255228332983487,
+      "full42_numerical_root": true
+    },
+    {
+      "time_PF_ratio": 1.75,
+      "source_before": 0.0003450019951888564,
+      "source_after": 5.2253508289181564e-15,
+      "numerical_min_singular": 0.0446889124101043,
+      "max_field_change": 0.6689209245176791,
+      "max_original_f": 0.027470969687514946,
+      "max_two_CAR_q": 0.000326148918578845,
+      "full42_numerical_root": true
+    },
+    {
+      "time_PF_ratio": 2.0,
+      "source_before": 0.0002601579227772209,
+      "source_after": 3.9179651450250054e-15,
+      "numerical_min_singular": 0.04468409373610819,
+      "max_field_change": 0.6689310708600794,
+      "max_original_f": 0.02748114605514107,
+      "max_two_CAR_q": 0.0003266229206481102,
+      "full42_numerical_root": true
+    }
+  ],
+  "scope": {
+    "continuous_interval_root_theorem": false,
+    "actual_four_dimensional_AF_descendant_weights": false,
+    "uniform_refinement": false,
+    "validated_interval_Newton": false,
+    "physical_Book03_selected": false,
+    "GR_closed": false
+  }
+}

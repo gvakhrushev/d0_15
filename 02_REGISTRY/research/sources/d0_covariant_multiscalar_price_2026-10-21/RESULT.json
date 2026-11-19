@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "Exact native coefficient, full source normalization, local volume-gauge/Jacobi identities, both scalar currents, and negative controls; analytical theorem in PROOF.md",
+  "checks": 28,
+  "source_pins": 4,
+  "native_finite_z_k0": "23.4164067518840749728955820648952527442631785",
+  "two_scalar_total_null_rank": 2,
+  "two_scalar_total_null_tensor_square": 2,
+  "physical_native_admission": false,
+  "off_shell_native_diff_naturality": false,
+  "GR_closed": false
+}

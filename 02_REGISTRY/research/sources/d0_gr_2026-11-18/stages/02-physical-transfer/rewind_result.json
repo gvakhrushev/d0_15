@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "all_compiled_dilation_columns": 64,
+  "all_input_columns": 32,
+  "nondemolition_reader": {
+    "native_gates": 24,
+    "complete_matrix_columns": 128,
+    "true_pointer_birth_input_columns": 64,
+    "projection_verified": "both pointer outcomes, with restoration of the measured golden basis"
+  },
+  "signs_and_caps": {
+    "1": [
+      {
+        "cap": 0,
+        "leaves": 2,
+        "fail_numeric": 0.4721359549995794,
+        "mean_marks": 1.0,
+        "complete_CQ_mark_nats": 0.6915935658126262,
+        "minimal_coherent_label_nats": 0.6915935658126262
+      },
+      {
+        "cap": 1,
+        "leaves": 5,
+        "fail_numeric": 0.2368011149356471,
+        "mean_marks": 1.9442719099991588,
+        "complete_CQ_mark_nats": 1.3446459431456437,
+        "minimal_coherent_label_nats": 0.5473645022735275
+      },
+      {
+        "cap": 2,
+        "leaves": 11,
+        "fail_numeric": 0.11876826460889958,
+        "mean_marks": 2.417874139870453,
+        "complete_CQ_mark_nats": 1.672186198079143,
+        "minimal_coherent_label_nats": 0.36446363960578576
+      },
+      {
+        "cap": 3,
+        "leaves": 23,
+        "fail_numeric": 0.05956855685431632,
+        "mean_marks": 2.655410669088252,
+        "complete_CQ_mark_nats": 1.8364649333316359,
+        "minimal_coherent_label_nats": 0.22577873752777297
+      }
+    ],
+    "-1": [
+      {
+        "cap": 0,
+        "leaves": 2,
+        "fail_numeric": 0.4721359549995794,
+        "mean_marks": 1.0,
+        "complete_CQ_mark_nats": 0.6915935658126262,
+        "minimal_coherent_label_nats": 0.6915935658126262
+      },
+      {
+        "cap": 1,
+        "leaves": 5,
+        "fail_numeric": 0.2368011149356471,
+        "mean_marks": 1.9442719099991588,
+        "complete_CQ_mark_nats": 1.3446459431456437,
+        "minimal_coherent_label_nats": 0.5473645022735275
+      },
+      {
+        "cap": 2,
+        "leaves": 11,
+        "fail_numeric": 0.11876826460889958,
+        "mean_marks": 2.417874139870453,
+        "complete_CQ_mark_nats": 1.672186198079143,
+        "minimal_coherent_label_nats": 0.36446363960578576
+      },
+      {
+        "cap": 3,
+        "leaves": 23,
+        "fail_numeric": 0.05956855685431632,
+        "mean_marks": 2.655410669088252,
+        "complete_CQ_mark_nats": 1.8364649333316359,
+        "minimal_coherent_label_nats": 0.22577873752777297
+      }
+    ]
+  },
+  "s": "p^2+p^4",
+  "u": "1-s",
+  "k": "s^2+u^2",
+  "failure_probability": "u*k^N",
+  "unconditioned_data_channel": "(1-u*k^N) U(.)U* + u*k^N F(.)F*",
+  "register_shannon_nats": "(-s log(s)-u log(u))*(1+2*u*(1-k^N)/(1-k))",
+  "CQ_entropy_with_external_reference": "S(output+reference)=S(input+reference)+H(complete classical marks)",
+  "minimal_coherent_label_entropy": "h2(u*k^N) upon tracing out final orthogonal b status and all DATA, for coherent joint address label and no further untraced address copy",
+  "success_rotation": "A/sqrt(s)",
+  "failure_rotation": "B/sqrt(u)",
+  "sign_and_input_effect": "fine mark law, its entropy and expected mark count are independent of sign and initial DATA/reference state",
+  "scope": "Native W and nondemolition pointer operators verified. Classical reading and adaptive routing are assumed on this measured extension. Their physical pricing, full clock and H.1 admission are separate."
+}

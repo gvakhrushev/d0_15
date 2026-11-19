@@ -1,0 +1,36 @@
+{
+  "schema": "d0-native-flat-10-metric-blank/1",
+  "source_git_blob": "9a7a8619148d365e2611ea56b8ff361f613e9b70",
+  "stdout_sha256": "5a9e8663cb644f1f5179c9932ec6e2f88b461ec4ee1c5d88202a9549dfa6044f",
+  "run": {
+    "normal": "PASS",
+    "python_O": "PASS",
+    "stdout_byte_identical": true,
+    "exact_controls": 110
+  },
+  "native_input": "M_blank=I-2(hD/16)^2, dM_blank=-(h^2/128)d(D^2)",
+  "carrier": "full16 exterior CAR/Hodge, 4D positive homogeneous flat nonorthogonal rational frame",
+  "Fourier_h": "1/4",
+  "Fourier_abs_derivative_sq": "32",
+  "ten_test_modes": "four coordinate basis vectors and six pairwise sums",
+  "source_map": "dDelta(k)=chi_h sum_{r,s in support(k)} dH_rs I16",
+  "determinant_normalized": 64,
+  "rank": 10,
+  "inverse": "dH_ii=r_i; dH_ij=(r_ij-r_i-r_j)/2",
+  "negative_controls": [
+    {
+      "alteration": "remove 1/2 from coframe lift",
+      "status": "REJECTED"
+    },
+    {
+      "alteration": "replace six pair Fourier probes by repeated one-axis probes",
+      "status": "REJECTED"
+    }
+  ],
+  "physical_boundary": {
+    "native_real_time_test_admitted": false,
+    "general_stored_Lorentz_rank10": false,
+    "full_nonlinear_Einstein_source": false,
+    "original_raw_hminus2_comparator": false
+  }
+}

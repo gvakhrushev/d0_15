@@ -1,0 +1,235 @@
+{
+  "status": "PASS",
+  "p_basis": "a+b*p; p=(sqrt(5)-1)/2",
+  "first_m_in_exact_exhaustion": 7,
+  "rows": [
+    {
+      "m": 1,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        -4,
+        8
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        -4,
+        8
+      ],
+      "min_optimal_joint_secant": 0.9442719099991588,
+      "max_optimal_joint_secant": 0.9442719099991588,
+      "minimum_margin_exact": [
+        14,
+        -24
+      ],
+      "minimum_margin": -0.8328157299974763,
+      "positive": false
+    },
+    {
+      "m": 2,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        -4,
+        8
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        -4,
+        8
+      ],
+      "min_optimal_joint_secant": 0.9442719099991588,
+      "max_optimal_joint_secant": 0.9442719099991588,
+      "minimum_margin_exact": [
+        24,
+        -40
+      ],
+      "minimum_margin": -0.7213595499957939,
+      "positive": false
+    },
+    {
+      "m": 3,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        -1596,
+        2584
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        -1428,
+        2312
+      ],
+      "min_optimal_joint_secant": 0.8945819897568891,
+      "max_optimal_joint_secant": 0.9998269297282878,
+      "minimum_margin_exact": [
+        1626,
+        -2632
+      ],
+      "minimum_margin": -0.6654583897232405,
+      "positive": false
+    },
+    {
+      "m": 4,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        48252,
+        -78072
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        48252,
+        -78072
+      ],
+      "min_optimal_joint_secant": 0.850430318209411,
+      "max_optimal_joint_secant": 0.850430318209411,
+      "minimum_margin_exact": [
+        -48212,
+        78008
+      ],
+      "minimum_margin": -0.40460559820268127,
+      "positive": false
+    },
+    {
+      "m": 5,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        -1381572,
+        2235432
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        -1381572,
+        2235432
+      ],
+      "min_optimal_joint_secant": 0.9555391549403117,
+      "max_optimal_joint_secant": 0.9555391549403117,
+      "minimum_margin_exact": [
+        1381622,
+        -2235512
+      ],
+      "minimum_margin": -0.39825825493189954,
+      "positive": false
+    },
+    {
+      "m": 6,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        -91533844,
+        148104872
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        -165070188,
+        267089176
+      ],
+      "min_optimal_joint_secant": 0.7952026850936081,
+      "max_optimal_joint_secant": 0.7954526165067998,
+      "minimum_margin_exact": [
+        91533904,
+        -148104968
+      ],
+      "minimum_margin": -0.1267155364967052,
+      "positive": false
+    },
+    {
+      "m": 7,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        1416855780,
+        -2292520808
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        -1959871892,
+        3171139336
+      ],
+      "min_optimal_joint_secant": 0.7097730190053143,
+      "max_optimal_joint_secant": 0.7396281526789832,
+      "minimum_margin_exact": [
+        -1416855710,
+        2292520696
+      ],
+      "minimum_margin": 0.04056510733279376,
+      "positive": true
+    },
+    {
+      "m": 8,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        14375689388,
+        -23260354040
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        -7272742596,
+        11767544712
+      ],
+      "min_optimal_joint_secant": 0.15009261154592848,
+      "max_optimal_joint_secant": 0.9240688179892519,
+      "minimum_margin_exact": [
+        -14375689308,
+        23260353912
+      ],
+      "minimum_margin": -0.03241937797579245,
+      "positive": false
+    },
+    {
+      "m": 9,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        1812261900492,
+        -2932301351512
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        266159574028,
+        -430655237208
+      ],
+      "min_optimal_joint_secant": 0.3076307613965039,
+      "max_optimal_joint_secant": 0.3311332618039389,
+      "minimum_margin_exact": [
+        -1812261900402,
+        2932301351368
+      ],
+      "minimum_margin": 0.6719723582112029,
+      "positive": true
+    },
+    {
+      "m": 10,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        -28063612904420,
+        45407879526472
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        -7235555510196,
+        11707374742984
+      ],
+      "min_optimal_joint_secant": 0.17654595620048383,
+      "max_optimal_joint_secant": 0.17665513188674384,
+      "minimum_margin_exact": [
+        28063612904520,
+        -45407879526632
+      ],
+      "minimum_margin": 0.9379066681300805,
+      "positive": true
+    },
+    {
+      "m": 11,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        249968048621524,
+        -404456798771112
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        211200126177116,
+        -341728982582840
+      ],
+      "min_optimal_joint_secant": 0.05091301330003407,
+      "max_optimal_joint_secant": 0.08172556784387078,
+      "minimum_margin_exact": [
+        -249968048621414,
+        404456798770936
+      ],
+      "minimum_margin": 1.1442924121746358,
+      "positive": true
+    },
+    {
+      "m": 12,
+      "max_optimal_joint_secant_q_ge_p2_exact": [
+        -1587612789060276,
+        2568811453673544
+      ],
+      "min_optimal_joint_secant_q_le_half_exact": [
+        8917574973499316,
+        -14428939404347336
+      ],
+      "min_optimal_joint_secant": 0.07036780489508604,
+      "max_optimal_joint_secant": 0.12353219832289057,
+      "minimum_margin_exact": [
+        1587612789060396,
+        -2568811453673736
+      ],
+      "minimum_margin": 1.2139419616972986,
+      "positive": true
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "ref": "5edac80c86c17014fc83e0aa608e192f43c1fdba",
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_execution_clock_source_2026-10-21/check_execution_clock_source.py",
+      "git_blob": "008b8e2aab1e14e6037a4fd77bea015c9a461c39"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "git_blob": "7f0b411a7d8fa6af6753109eb7057a7a375fd5ef"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PREPARATION_SOURCE.md",
+      "git_blob": "6d00e72d40d767f99b2778c69cee9a984c88bad2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_primary_car_preparation_source.py",
+      "git_blob": "9f77a326531b3007f7e3ed42907bf61a9f522dcc"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md",
+      "git_blob": "db279db445bcc013827773bdede3488a9461fcea"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92"
+    }
+  ],
+  "usage": "Read via GitHub; literal formulas reimplemented locally with all128 labels. Source files not rewritten. Primary sign theorem consumed, not fully replayed."
+}

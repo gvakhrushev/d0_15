@@ -1,0 +1,25 @@
+{
+  "schema": "d0-memory-rank-inputs/1",
+  "repository": "gvakhrushev/d0_15",
+  "remote_source_initial": "75ea1d850062b5cd5910c4492199aed591692105",
+  "remote_source_final_read": "b1283e9659ae2c4a9855e7b1200c40163eb83481",
+  "consumed_unchanged_owners": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_memory_source_2026-10-16/check_memory_source.py",
+      "sha256": "dbffbc21bd1e7d4f194eca4dbc0f9819b0839d6b233a2a74460155d8ba7de26b",
+      "git_blob": "c423def694a9850fdff1f50b0e455793b400093d"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_MEMORY_SOURCE_FIBRE.md",
+      "sha256": "37d31c0e3ab9ebfd4e60a105913f46b1c959f97e1be9b0c339a12dc8ce31b014",
+      "git_blob": "0dbe97237dc0a2e3ae09501b9c47e100ece3b0b0"
+    }
+  ],
+  "prior_fullrank_source": "02_REGISTRY/research/A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md",
+  "scope": "Old theorem inputs consumed, not their whole scientific or Lean acceptance. All new equations remain in declared v8 preparation domain.",
+  "external_mathematical_context": [
+    "https://arxiv.org/abs/2105.02058",
+    "https://doi.org/10.1287/moor.23.2.339"
+  ],
+  "external_context_is_not_a_physical_axiom": true
+}

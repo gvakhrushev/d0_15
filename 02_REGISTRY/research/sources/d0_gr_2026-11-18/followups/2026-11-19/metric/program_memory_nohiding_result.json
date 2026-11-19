@@ -1,0 +1,17 @@
+{
+  "T0_six_exact_terminal_source_states_identical": true,
+  "current_regime": "24 words on original common T; no assumption that m is physically encoded in source work",
+  "early_detector_probability_difference_T0": "[0.5623058987490536338412815092907430594827826182518210946, 0.5623058987490536338412815092907430594827826182519066231]",
+  "exact_distinct_T1_unitaries_up_to_global_sign": 6,
+  "exact_pairwise_distinct_native_unitary_checks": 15,
+  "full_CD13": false,
+  "full_labelled_signed_state_trace_norm": "[4.115878848060773054023417556384428837591510920063534633, 4.115878848060773054023417556384428837591510922909922138]",
+  "gamma": "[0.07196831661723676530272571627473183645955742208959560165, 0.07196831661723676530272571627473183663713253724988080696]",
+  "golden_flag_p2_net_source": "[0.01546299833136273189174135211339868966339637294399694364, 0.01546299833136273189174135211339971973666181472533022776]",
+  "golden_flag_p_net_source": "[-0.01945920891443836812163193049968112537836149157580899205, -0.01945920891443836812163193049967945879455456090637491442]",
+  "limitations": "orthogonal physical label is an explicit implementation; a fixed conditioned reader is an extra permitted operation, not a derived Book03 tariff; early diagnostic perturbs the run; physical work and full clock responses require own accounting",
+  "minimum_qubit_count": 3,
+  "programme_register_dimension": 6,
+  "selected_m3_joint_readout_source": "[-0.1479328438175491668353420109357461086340799628110019153, -0.147932843817549166835342010935743412332157820680807637]",
+  "unobserved_program_label_gram_rank": 6
+}

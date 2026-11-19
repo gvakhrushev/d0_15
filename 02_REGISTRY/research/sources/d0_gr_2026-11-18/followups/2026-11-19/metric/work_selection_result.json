@@ -1,0 +1,229 @@
+{
+  "schema": "d0.work-short-window-selection/1",
+  "status": "PASS",
+  "native_orbit": {
+    "states": 28,
+    "addressed_edges": 196,
+    "two_letter_paths": 1372,
+    "nonempty_endpoint_windows": 256,
+    "sufficient_windows": [
+      [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          5,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          5,
+          1,
+          1
+        ],
+        [
+          5,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ]
+    ],
+    "selected_radius": 5,
+    "all_windows_radius": 3,
+    "log_error_factor_selected": 31,
+    "log_error_factor_all": 19
+  },
+  "tripartite_scene": {
+    "states": 33,
+    "directed_edges_checked": 718,
+    "sufficient_returns": [
+      [
+        0,
+        0
+      ],
+      [
+        9,
+        9
+      ]
+    ],
+    "log_error_factor": 7,
+    "prob_middle_size11_in_raw_constant_cost": "11/24",
+    "prob_middle_size11_in_G13_spatial_two_step_return": "121/277",
+    "exact_conditional_total_variation": "143/6648"
+  },
+  "absolute_and_memory_limits": {
+    "length_anchor_hidden_ratio": "13/11",
+    "length_anchor_reconstructed": "13/11",
+    "actual_count_of_additional_deterministic_NC1_zero_on_two_words": [
+      1,
+      0
+    ],
+    "extra_print_has_no_conditional_entropy_given_the_full_address_record": true,
+    "passive_rare_word_length": 8,
+    "probability": "1/5764801",
+    "strict_TV_upper_bound": "3843200/55388213772801",
+    "necessary_independent_trials_for_TV_one_third_at_least": 4804001
+  },
+  "scope": "conditional on a genuinely observed positive scalar memoryless state/address transfer and endpoint fees at each tick, including actual measurement and halt costs. Born labels alone do not select that transfer.",
+  "GR_closed": false
+}

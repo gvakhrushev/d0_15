@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "P_one_conditional": "0.930800284525879176648299582147",
+  "P_one_power_16": "0.317471042350835111291893579499",
+  "P_one_power_80_not_a_claim_of_composed_report": "0.00322493220708169173583755837756",
+  "marginal_zero_joint_counterexample": {
+    "n_one_failure": 16,
+    "n_two_failures": 120,
+    "one_failure_subset_probability": "0.0558002845258791766482995821467",
+    "two_failure_subset_probability": "0.000893295396549443113560055713767",
+    "total_weight_exactly_one_failure": "0.892804552414066826372793314348",
+    "all_success_probability": 0
+  },
+  "scalar_conditional_chain_test_passed": true,
+  "A_star": 0.011133130166785386,
+  "field_norm": "sqrt((1/256) sum_y (v_0(y)^2+v_15(y)^2))",
+  "field_gram_eigenvalues": [
+    0.00012394658731058682,
+    0.00013776120045646978
+  ],
+  "field_gram_eigenvalues_really_normalized": [
+    1.0000000000000002,
+    1.1114561800016822
+  ],
+  "mathematical_right_inverse_norm": 89.82199839748598,
+  "mathematical_right_inverse_exact_norm": "1/A_star",
+  "conditional_readiness_examples": [
+    {
+      "N": 2,
+      "seed_plus_sixteen_floor_conditional": "0.31550221547286468864"
+    },
+    {
+      "N": 8,
+      "seed_plus_sixteen_floor_conditional": "0.31747102333221261793"
+    },
+    {
+      "N": 20,
+      "seed_plus_sixteen_floor_conditional": "0.31747104235083510952"
+    }
+  ],
+  "physical_lift_or_complete_normalized_gain_established": false,
+  "GR_closed": false
+}

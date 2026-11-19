@@ -1,0 +1,58 @@
+{
+  "actual_reference_report": {
+    "implementation": "consumed exact positive-prefix Golden coin, with full herald tape",
+    "r0_Qp": {
+      "p_coefficient": "1245203/8589934592",
+      "rational": "-3014703/34359738368"
+    },
+    "strict_interval": "(0,1/2)",
+    "z": "1/1048576"
+  },
+  "arithmetic": "exact Fraction and Q(p); no floors or numerical derivatives",
+  "full32_bell": {
+    "actual_kernel_moment": "3/5",
+    "address_fixture": 4,
+    "complete_address_bell_labels": 4096,
+    "dimension": 32,
+    "each_full_operator_effect": "I/4096",
+    "scope": "four exact full32 addresses; general A and all inputs proved by (3)-(4)",
+    "sum_effects": "I"
+  },
+  "lorentz_normal_projection": {
+    "all_bivariate_coefficients_through_degree_2": "exact",
+    "carrier": "eta=diag(1,-1,-1,-1), rational boost times rotation",
+    "normal_basis_controls": 10,
+    "scope": "general two-jet proof is the binomial remainder; fixtures test its implementation",
+    "tangent_basis_controls": 6,
+    "universal_R2_sharp_R2_minus_I": {
+      "H^3": "5/8",
+      "H^4": "-15/64",
+      "H^5": "9/64"
+    }
+  },
+  "not_replayed": [
+    "original full spatial 16+24+2 Euler theorem",
+    "native Golden factories and Q(p) resource preparation",
+    "original full128 material construction",
+    "any rank/root or generic broad suite"
+  ],
+  "programme_normals_and_paid_abort": {
+    "accepted_probability_derivative": "1/4096",
+    "actual_known_input": "(vac+top)/sqrt(2) on full32",
+    "bank_readiness": "549554511871/4722366482869645213696",
+    "bank_readiness_derivative": "824231129085/2361183241434822606848",
+    "complete_probability_derivative_sum": "0",
+    "fixture_attempt_cap": 2,
+    "fixture_slots": 3,
+    "full_uniform_entropy_first": "0",
+    "normalized_kernel_moment_derivative": "0",
+    "paid_abort_h_r0_coefficient": "0",
+    "scope": "exact finite bank controls; full factory/CQ identities are analytic",
+    "silent_abort_h_r0_coefficient": "824231129085/2361183241434822606848",
+    "stopped_cost_derivative_negative_control": "-1/4096",
+    "unnormalized_negative_control": "3/5"
+  },
+  "source_pins_verified": 10,
+  "source_ref": "b1870ff3ecedd02e09388bc8b6fd8df4da54b990",
+  "status": "PASS"
+}

@@ -1,0 +1,44 @@
+{
+  "check_count": 243,
+  "full_column_no_free_gain": {
+    "bound": "abs(dF/dr)<=2*sqrt(2)/D",
+    "universal_full_output_basis_required": true
+  },
+  "independent_controller_euler": {
+    "complement": "0<F=1-t^2<1",
+    "explicit_source": "-2*z*t*sqrt(F)/(1-z*F)",
+    "return_bounds": "p/sqrt(D)<=t<=sqrt(p/D)<1 for D>=1 and r in [0,1]",
+    "stationary_under_unrestricted_U": false
+  },
+  "memory": {
+    "V_inverse_uses": 0,
+    "forward_conjugate_copy_required": true,
+    "second_paid_initial_preparation_required": true,
+    "unmeasured_full_record_source_cut_required": true
+  },
+  "native": {
+    "book_source_gain_D2_W10": "3.6124297068986899322e-10",
+    "complete_complement": "1-(p+(sqrt(p)-p)*r)^2/D",
+    "forward_return": "(p+(sqrt(p)-p)*r)/sqrt(D)",
+    "golden_p": "0.61803398874989484820",
+    "n1_r0": "1.8512395784882030763e-6"
+  },
+  "refinement_attenuation": {
+    "C0": "2*z*(sqrt(p)-p)*m0/(h_phi_prime(r0)*(1-z))",
+    "absolute_recovery_tolerance": "O(h*abs(a_J_h)*g_h); at most O(h^9*abs(a_J_h)) under gamma_m>=1/2",
+    "coherent_selector_dimension": "D>=W when the uniform address draw is retained/purified in the complete work label",
+    "covered_site_copy_bound": "W>=528*L^4; nu>=1 and every Role site covered",
+    "exact_gain": "2*z*(sqrt(p)-p)*m0/(D*W*gamma_m*h_phi_prime(r0)*(1-z+z*m0^2/D))",
+    "gain_upper": "C0/(528^2*gamma_m)*h^8",
+    "m0": "p+(sqrt(p)-p)*r0",
+    "paid_readiness_bound": "gamma_m>=1/2 for finite declared moment-writer caps; all cap costs and work retained",
+    "scope": "conditional operator-source/refinement bound; no physical admission, uniform gain lower bound, or GR closure"
+  },
+  "scope": {
+    "GR_closed": false,
+    "conditional_same_field_first_source": true,
+    "full_clock_Info_price_composed": false,
+    "native_conjugate_writer_admitted": false
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,138 @@
+{
+  "schema": "a4d-y-center-wave-cubic-vertex-v1",
+  "base": "flat exact period-four Y vacuum, z=1, standard solder",
+  "dual_direction": "exact connection-stationary Cayley(B,-d) path; B=K1+K2+K3",
+  "method": "differentiate the exact bordered range solve for the quadratic reduced center symbol",
+  "shift_pairs": [
+    "00",
+    "01",
+    "02",
+    "03",
+    "11",
+    "12",
+    "13",
+    "22",
+    "23",
+    "33"
+  ],
+  "reduced_symbol_d_dual": {
+    "00": [
+      [
+        "0",
+        "-606212/114009"
+      ],
+      [
+        "-606212/114009",
+        "0"
+      ]
+    ],
+    "01": [
+      [
+        "0",
+        "2888117/684054"
+      ],
+      [
+        "2888117/684054",
+        "0"
+      ]
+    ],
+    "02": [
+      [
+        "0",
+        "2888117/684054"
+      ],
+      [
+        "2888117/684054",
+        "0"
+      ]
+    ],
+    "03": [
+      [
+        "0",
+        "2888117/684054"
+      ],
+      [
+        "2888117/684054",
+        "0"
+      ]
+    ],
+    "11": [
+      [
+        "0",
+        "-1740475370/7182567"
+      ],
+      [
+        "-1740475370/7182567",
+        "0"
+      ]
+    ],
+    "12": [
+      [
+        "0",
+        "1728706802/7182567"
+      ],
+      [
+        "1728706802/7182567",
+        "0"
+      ]
+    ],
+    "13": [
+      [
+        "0",
+        "1728706802/7182567"
+      ],
+      [
+        "1728706802/7182567",
+        "0"
+      ]
+    ],
+    "22": [
+      [
+        "0",
+        "-1740475370/7182567"
+      ],
+      [
+        "-1740475370/7182567",
+        "0"
+      ]
+    ],
+    "23": [
+      [
+        "0",
+        "1728706802/7182567"
+      ],
+      [
+        "1728706802/7182567",
+        "0"
+      ]
+    ],
+    "33": [
+      [
+        "0",
+        "-1740475370/7182567"
+      ],
+      [
+        "-1740475370/7182567",
+        "0"
+      ]
+    ]
+  },
+  "yy_entry_d_dual_all_pairs_zero": true,
+  "dd_entry_d_dual_all_pairs_zero": true,
+  "yd_entry_d_dual_has_nonzero_coefficients": true,
+  "constant_center_cokernel_basis": [
+    "boost-dual tangent N_D^T",
+    "negative Y tangent -N_Y^T"
+  ],
+  "curvature_squared_cokernel_source": [
+    "351402359/2108160",
+    "21506403637/154949760"
+  ],
+  "quadratic_low_frequency_consequence": "a pair of opposite low-frequency Y-center modes has zero leading quadratic contribution to the dual constant-center cokernel; only mixed Y/dual center waves contribute at this flat cubic order",
+  "scope_fence": [
+    "flat-background cubic vertex only, at z=1",
+    "does not include nonzero Bloch/resonance strata or aliasing",
+    "does not include curved-background cubic vertices or higher interactions",
+    "does not prove a nonlinear branch or a global response limit"
+  ]
+}

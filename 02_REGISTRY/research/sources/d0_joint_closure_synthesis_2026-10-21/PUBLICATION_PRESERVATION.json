@@ -1,0 +1,480 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-21T09:24:57.949532+00:00",
+  "scientific_owner_pr": 334,
+  "reviewed_composition_commit": "cf61973d9b8cf02315a0dc04f53270af79ececbc",
+  "local_tree_alias": "20faec0c7d6fea49b51107ad8ebc02ed4481e32e",
+  "identical_reviewed_tree": "20d216028de143c34aecdd595bf4f41f14bca0ba",
+  "preserved_late_concurrent_head": "5f65e2a56b989849f2405c03020fbffdd5381501",
+  "purpose": "A concurrent publication advanced the branch lease. Preserve that complete research and the reviewed composition, without rederiving or replaying unchanged scientific suites.",
+  "reviewed_payload": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "preservation": "ordered lines retained",
+      "before_sha256": "42499c30a8114bccf25097fbdce41d8701c9681903458a9f5d88302d6f3f392a",
+      "after_sha256": "c3a3da4331576f6f823c7187c46b025bffe942f6a1d38be050ad73ab725be420"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md",
+      "preservation": "byte-identical",
+      "before_sha256": "894eb2f075928288b1c5357f5dba0c379a46245b03244f598abe979a07c934d4",
+      "after_sha256": "894eb2f075928288b1c5357f5dba0c379a46245b03244f598abe979a07c934d4"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md",
+      "preservation": "byte-identical",
+      "before_sha256": "f1819688df8d44dc2039d2114f8ed45a40eb2cb96b2568fcfd6b61d3e699a866",
+      "after_sha256": "f1819688df8d44dc2039d2114f8ed45a40eb2cb96b2568fcfd6b61d3e699a866"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "preservation": "byte-identical",
+      "before_sha256": "3485bc1ccac17e9795d3ef95c4b68a8c72b84727b0854e7fef32b7ed7780b27d",
+      "after_sha256": "3485bc1ccac17e9795d3ef95c4b68a8c72b84727b0854e7fef32b7ed7780b27d"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "preservation": "ordered lines retained",
+      "before_sha256": "773f1d6250595a5ba580ea89ca2e919cd925652cc3a4359be32603e36962ebec",
+      "after_sha256": "2fe0e35255c755f5d09d92e2a99cf3d9c43939600c8db3851287e2360f3a2bb5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/INDEPENDENT_REVIEW.md",
+      "preservation": "byte-identical",
+      "before_sha256": "2b402b57cbe427932e8c614c330bf63780f8c5e2828004af9f2bd8142559f2d8",
+      "after_sha256": "2b402b57cbe427932e8c614c330bf63780f8c5e2828004af9f2bd8142559f2d8"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/PROOF.md",
+      "preservation": "byte-identical",
+      "before_sha256": "5d844191e050f2831f72c269e43a543d1670c0d3394d17fa5d2fb80a0ae516ed",
+      "after_sha256": "5d844191e050f2831f72c269e43a543d1670c0d3394d17fa5d2fb80a0ae516ed"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/README.md",
+      "preservation": "byte-identical",
+      "before_sha256": "5ad41abebfb191937de78a32bd6e5f670969832403d1d1b29dd69eb203cd4a09",
+      "after_sha256": "5ad41abebfb191937de78a32bd6e5f670969832403d1d1b29dd69eb203cd4a09"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/RESULT.json",
+      "preservation": "byte-identical",
+      "before_sha256": "121540ce081cf4807f7befe880021bd96d47d76a464beac42374e1b4e5bc68a2",
+      "after_sha256": "121540ce081cf4807f7befe880021bd96d47d76a464beac42374e1b4e5bc68a2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/RESULT_OPTIMIZED.json",
+      "preservation": "byte-identical",
+      "before_sha256": "121540ce081cf4807f7befe880021bd96d47d76a464beac42374e1b4e5bc68a2",
+      "after_sha256": "121540ce081cf4807f7befe880021bd96d47d76a464beac42374e1b4e5bc68a2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/SOURCE_PINS.json",
+      "preservation": "byte-identical",
+      "before_sha256": "49dc2aa16ace98c18979be54516e557eb07dfefc13e39b3f5166a0922789705b",
+      "after_sha256": "49dc2aa16ace98c18979be54516e557eb07dfefc13e39b3f5166a0922789705b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/VALIDATION.json",
+      "preservation": "byte-identical",
+      "before_sha256": "7edaa705d3ee3a42dff08f77ee2ae5b35180bf682e443eff0a2f9d3336b929cf",
+      "after_sha256": "7edaa705d3ee3a42dff08f77ee2ae5b35180bf682e443eff0a2f9d3336b929cf"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_centered_preparation_2026-10-21/check_centered_preparation.py",
+      "preservation": "byte-identical",
+      "before_sha256": "779babe95b9325b2eafb3103952d81930562a6c1ef759f070ec51b47f71f239c",
+      "after_sha256": "779babe95b9325b2eafb3103952d81930562a6c1ef759f070ec51b47f71f239c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/INDEPENDENT_REVIEW.md",
+      "preservation": "byte-identical",
+      "before_sha256": "c7f16d381725e26338339ee6fce2eb60e612c6a43cdbf362784f0fc8117b36c3",
+      "after_sha256": "c7f16d381725e26338339ee6fce2eb60e612c6a43cdbf362784f0fc8117b36c3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/PROOF.md",
+      "preservation": "byte-identical",
+      "before_sha256": "ceb2ce2d05642977014ece32d8fa293302a3b23200b6cf60cf28ec916c0d5ec7",
+      "after_sha256": "ceb2ce2d05642977014ece32d8fa293302a3b23200b6cf60cf28ec916c0d5ec7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/README.md",
+      "preservation": "byte-identical",
+      "before_sha256": "31e02f1f790584d0873ef27f73414cc79fea77cdfa95b982cd5d41fe204be81a",
+      "after_sha256": "31e02f1f790584d0873ef27f73414cc79fea77cdfa95b982cd5d41fe204be81a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/RESULT.json",
+      "preservation": "byte-identical",
+      "before_sha256": "fd7d15bc9fb169910db01eaf0dbf6911a906d0dfac6facb554968a7763d887ff",
+      "after_sha256": "fd7d15bc9fb169910db01eaf0dbf6911a906d0dfac6facb554968a7763d887ff"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/RESULT_OPTIMIZED.json",
+      "preservation": "byte-identical",
+      "before_sha256": "fd7d15bc9fb169910db01eaf0dbf6911a906d0dfac6facb554968a7763d887ff",
+      "after_sha256": "fd7d15bc9fb169910db01eaf0dbf6911a906d0dfac6facb554968a7763d887ff"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/SOURCE_PINS.json",
+      "preservation": "byte-identical",
+      "before_sha256": "3e5b79fe77b29d3513c37e0630d656ef49a6a27fbd79b02a618578c73ae6680e",
+      "after_sha256": "3e5b79fe77b29d3513c37e0630d656ef49a6a27fbd79b02a618578c73ae6680e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_return_entropy_2026-10-21/check_complete_return_entropy.py",
+      "preservation": "byte-identical",
+      "before_sha256": "f856f291a51c6e26114ee4c0044fc1d773a47f999b38a42ec23c8e88ac976e3b",
+      "after_sha256": "f856f291a51c6e26114ee4c0044fc1d773a47f999b38a42ec23c8e88ac976e3b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/ARTIFACT_MANIFEST.json",
+      "preservation": "byte-identical",
+      "before_sha256": "2bf5d56430f0c755ab69c9e2766803f44cf4d3aecfc14679ca16131d1174f760",
+      "after_sha256": "2bf5d56430f0c755ab69c9e2766803f44cf4d3aecfc14679ca16131d1174f760"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/CONCURRENT_INPUTS.md",
+      "preservation": "byte-identical",
+      "before_sha256": "01c57a04347aed22ac753faa7c605905ab1f6a5ccbe2d33205e5c8b9d6c218a3",
+      "after_sha256": "01c57a04347aed22ac753faa7c605905ab1f6a5ccbe2d33205e5c8b9d6c218a3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/FINAL_INTEGRATION.md",
+      "preservation": "byte-identical",
+      "before_sha256": "921d0318eba83c9c441d0bdc7a693e0d8eec84b326eab4b13afbd32a93b8453c",
+      "after_sha256": "921d0318eba83c9c441d0bdc7a693e0d8eec84b326eab4b13afbd32a93b8453c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/INTEGRATION_REVIEW.md",
+      "preservation": "byte-identical",
+      "before_sha256": "298121f9f8949dda177268dd2b17476b8b921a06aba6a9f3089da127a7811d42",
+      "after_sha256": "298121f9f8949dda177268dd2b17476b8b921a06aba6a9f3089da127a7811d42"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/INTEGRATION_VALIDATION.json",
+      "preservation": "byte-identical",
+      "before_sha256": "5ed38659955a33110420ed312460232b966de22a2a24ed4a968169e4dfc0ad7b",
+      "after_sha256": "5ed38659955a33110420ed312460232b966de22a2a24ed4a968169e4dfc0ad7b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/README.md",
+      "preservation": "byte-identical",
+      "before_sha256": "1e2f4c42ef64bd3057f13b62c89809f6b2401b1c65048fccd848bdd2e63b8fe0",
+      "after_sha256": "1e2f4c42ef64bd3057f13b62c89809f6b2401b1c65048fccd848bdd2e63b8fe0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/FROZEN.json",
+      "preservation": "byte-identical",
+      "before_sha256": "9429e7ce1518f144078af760a65e94b5f6071e0b1b6c5bdf43edfa1835c77a81",
+      "after_sha256": "9429e7ce1518f144078af760a65e94b5f6071e0b1b6c5bdf43edfa1835c77a81"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/INDEPENDENT_PROVENANCE_AUDIT.json",
+      "preservation": "byte-identical",
+      "before_sha256": "c877fd537f61f92aa799f4adea848ac5dfa6a9a1596746ddf2fbea1fb9268f1d",
+      "after_sha256": "c877fd537f61f92aa799f4adea848ac5dfa6a9a1596746ddf2fbea1fb9268f1d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/INDEPENDENT_REVIEW.md",
+      "preservation": "byte-identical",
+      "before_sha256": "50919da7a9e8c408436f4179bda4e26a9d689af6b36683e9e9fa4c330a84e29f",
+      "after_sha256": "50919da7a9e8c408436f4179bda4e26a9d689af6b36683e9e9fa4c330a84e29f"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/PROOF.md",
+      "preservation": "byte-identical",
+      "before_sha256": "23794bfbfbbe8c3524f370461ccc616d2c7653318e4a578250354db378fa26a2",
+      "after_sha256": "23794bfbfbbe8c3524f370461ccc616d2c7653318e4a578250354db378fa26a2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/README.md",
+      "preservation": "byte-identical",
+      "before_sha256": "d57450deffe7b96cb4cc7dff9c5eb295f7149c5b0deb8e194e3761675ba25557",
+      "after_sha256": "d57450deffe7b96cb4cc7dff9c5eb295f7149c5b0deb8e194e3761675ba25557"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/RESULT.json",
+      "preservation": "byte-identical",
+      "before_sha256": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b",
+      "after_sha256": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/RESULT_OPTIMIZED.json",
+      "preservation": "byte-identical",
+      "before_sha256": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b",
+      "after_sha256": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/SOURCE_PINS.json",
+      "preservation": "byte-identical",
+      "before_sha256": "d12f14b6b3f11cad97e6981b6055012e0d5731d7140209e4535d715d6496abc1",
+      "after_sha256": "d12f14b6b3f11cad97e6981b6055012e0d5731d7140209e4535d715d6496abc1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/check_density_rigidity.py",
+      "preservation": "byte-identical",
+      "before_sha256": "ecac5ea134d01f1b9d4b1521a7879788bd7ac69586dd75072834afb65b656531",
+      "after_sha256": "ecac5ea134d01f1b9d4b1521a7879788bd7ac69586dd75072834afb65b656531"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/inputs/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21_dfc0275e.md",
+      "preservation": "byte-identical",
+      "before_sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd",
+      "after_sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/FROZEN.json",
+      "preservation": "byte-identical",
+      "before_sha256": "c13975ff1d6c65ffc1c0029c8b3a22a458aa76a200c84975d954b16fd7f64987",
+      "after_sha256": "c13975ff1d6c65ffc1c0029c8b3a22a458aa76a200c84975d954b16fd7f64987"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/INDEPENDENT_REVIEW.md",
+      "preservation": "byte-identical",
+      "before_sha256": "1db0b4eb5d5fc844607062dd7f08bbe4a42e17afedede4c87949322db6aedb24",
+      "after_sha256": "1db0b4eb5d5fc844607062dd7f08bbe4a42e17afedede4c87949322db6aedb24"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/PROOF.md",
+      "preservation": "byte-identical",
+      "before_sha256": "6cc3b9eacbf03c5f29a7729690017ad6799d00c6354bce9c8c425f9bdfa371e7",
+      "after_sha256": "6cc3b9eacbf03c5f29a7729690017ad6799d00c6354bce9c8c425f9bdfa371e7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/README.md",
+      "preservation": "byte-identical",
+      "before_sha256": "d741d11a91630e5d0fa3e64f7ae6fb6dfdefd55dd90b5ee22d43c418237b6c81",
+      "after_sha256": "d741d11a91630e5d0fa3e64f7ae6fb6dfdefd55dd90b5ee22d43c418237b6c81"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/RESULT.json",
+      "preservation": "byte-identical",
+      "before_sha256": "c3afdc9b11622d669738b62813a39399aff2bd6d01f37824d4e09fcf04615645",
+      "after_sha256": "c3afdc9b11622d669738b62813a39399aff2bd6d01f37824d4e09fcf04615645"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/RESULT_OPTIMIZED.json",
+      "preservation": "byte-identical",
+      "before_sha256": "c3afdc9b11622d669738b62813a39399aff2bd6d01f37824d4e09fcf04615645",
+      "after_sha256": "c3afdc9b11622d669738b62813a39399aff2bd6d01f37824d4e09fcf04615645"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/SOURCE_PINS.json",
+      "preservation": "byte-identical",
+      "before_sha256": "15c3c07ce23b13235e4a4588ea4f83478d8e850690a18fefcec2f21cba5bac03",
+      "after_sha256": "15c3c07ce23b13235e4a4588ea4f83478d8e850690a18fefcec2f21cba5bac03"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/VALIDATION.json",
+      "preservation": "byte-identical",
+      "before_sha256": "615a4947d8fcc9a112fb734be25a7afb2af693fff74b1b0ba895c7a564442b14",
+      "after_sha256": "615a4947d8fcc9a112fb734be25a7afb2af693fff74b1b0ba895c7a564442b14"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/check_temporal_comparison_source.py",
+      "preservation": "byte-identical",
+      "before_sha256": "6236d691a9e23d4f9640a2024af2a2dbeb55004965a11c898259fac14cbf4960",
+      "after_sha256": "6236d691a9e23d4f9640a2024af2a2dbeb55004965a11c898259fac14cbf4960"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/inputs/A4D_Q8_TEMPORAL_PHASE_COMPLETE_RETURN_INFO_SOURCE_2026_10_21_5ed5a200.md",
+      "preservation": "byte-identical",
+      "before_sha256": "75f6265a02e1f2c18881d240132341c8e38d62416652b557f28816558ac4efc2",
+      "after_sha256": "75f6265a02e1f2c18881d240132341c8e38d62416652b557f28816558ac4efc2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_temporal_comparison_source_2026-10-21/inputs/CAR16_APPLICATION_5ed5a200.md",
+      "preservation": "byte-identical",
+      "before_sha256": "eb8df243a9a7c4833e75fe92b539f24fe88ac9dfbdc322da8c6b48e3a73e50bd",
+      "after_sha256": "eb8df243a9a7c4833e75fe92b539f24fe88ac9dfbdc322da8c6b48e3a73e50bd"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_closure_synthesis_2026-10-21/FINAL_INTEGRATION_VALIDATION.json",
+      "preservation": "byte-identical",
+      "before_sha256": "a03af76a99a92258eb6b27cba199492e1dc9730e8b138fde3ccebe8fa4d3e6a3",
+      "after_sha256": "a03af76a99a92258eb6b27cba199492e1dc9730e8b138fde3ccebe8fa4d3e6a3"
+    }
+  ],
+  "concurrent_payload": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "preservation": "ordered lines retained",
+      "incoming_sha256": "4d511fc0409c4a1676341931d5629edb0ba6c32793ff747f78cb44ecc0a4c77d",
+      "after_sha256": "c3a3da4331576f6f823c7187c46b025bffe942f6a1d38be050ad73ab725be420"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_JOINT_PREPARATION_COMPILER_CLOCK_SYNTHESIS_2026_10_21.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "2b2c1fa459b2926b71fc3b002ca80bb91d36a84e7bcc4bb2e25bbac0114a90c9",
+      "after_sha256": "2b2c1fa459b2926b71fc3b002ca80bb91d36a84e7bcc4bb2e25bbac0114a90c9"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "preservation": "ordered lines retained",
+      "incoming_sha256": "e993fc640600663da33ceebe8e6bcf1cc54c6868afccabd721bfeb9bd7dc41e0",
+      "after_sha256": "2fe0e35255c755f5d09d92e2a99cf3d9c43939600c8db3851287e2360f3a2bb5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/ARTIFACT_HASHES.json",
+      "preservation": "byte-identical",
+      "incoming_sha256": "2129e321e6cfca89825fd87166ae4f44c757dad7502bebce4a0587836ee4808b",
+      "after_sha256": "2129e321e6cfca89825fd87166ae4f44c757dad7502bebce4a0587836ee4808b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/COMPOSITION_THEOREM.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "382dc8c93612e0edd5237d096c64f7938713e0702c14e282e1613c24558cedac",
+      "after_sha256": "382dc8c93612e0edd5237d096c64f7938713e0702c14e282e1613c24558cedac"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/INTEGRATION_RESULT.json",
+      "preservation": "byte-identical",
+      "incoming_sha256": "3a1cef462b3dbd92066fce39faae1a608d56740a1213936fcabe3fa382d8fa13",
+      "after_sha256": "3a1cef462b3dbd92066fce39faae1a608d56740a1213936fcabe3fa382d8fa13"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/README.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "0c7d00a6738fe9f27709b10e283c96ca045802924901717b3120e605aedc77fa",
+      "after_sha256": "0c7d00a6738fe9f27709b10e283c96ca045802924901717b3120e605aedc77fa"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/SOURCE_PINS.json",
+      "preservation": "byte-identical",
+      "incoming_sha256": "136106415df7e5d7ac175dd03996d90b38707006ccd621bbddb9497bda289eff",
+      "after_sha256": "136106415df7e5d7ac175dd03996d90b38707006ccd621bbddb9497bda289eff"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/BALANCED_NATIVE_PREPARATION.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "7b9d3afe684f34695a4dfd6d89a8db457ba9cf47002733c65e9a2dc5c5751d68",
+      "after_sha256": "7b9d3afe684f34695a4dfd6d89a8db457ba9cf47002733c65e9a2dc5c5751d68"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/CHECK_RESULT.json",
+      "preservation": "byte-identical",
+      "incoming_sha256": "4133366b05ab68e33238804dc8b80aa046b267131446f62babfb3da3003a2a18",
+      "after_sha256": "4133366b05ab68e33238804dc8b80aa046b267131446f62babfb3da3003a2a18"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/SOURCE_PINS.json",
+      "preservation": "byte-identical",
+      "incoming_sha256": "050516fe7b75b6c7c35e3c90d1fc8e98bad02e5f87c01d0c56f723565f195d8c",
+      "after_sha256": "050516fe7b75b6c7c35e3c90d1fc8e98bad02e5f87c01d0c56f723565f195d8c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/check_balanced_preparation.py",
+      "preservation": "byte-identical",
+      "incoming_sha256": "9c47c832b820997c056a607074128ed0b9b77faec482d3d54272acd8b01c9ce3",
+      "after_sha256": "9c47c832b820997c056a607074128ed0b9b77faec482d3d54272acd8b01c9ce3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/compiler/CHECK_RESULT.json",
+      "preservation": "byte-identical",
+      "incoming_sha256": "1487c939af6c236e5bd0456f8ca52090ce55e6bf4fce2b74d0f35e360cdb5ff2",
+      "after_sha256": "1487c939af6c236e5bd0456f8ca52090ce55e6bf4fce2b74d0f35e360cdb5ff2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/compiler/MONOTONE_COMPILER_ENVELOPE.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "af681cc76e2cdeec936a5e70645f4d76200c6ae0a69672fc034b424512227344",
+      "after_sha256": "af681cc76e2cdeec936a5e70645f4d76200c6ae0a69672fc034b424512227344"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/compiler/SOURCE_PINS.json",
+      "preservation": "byte-identical",
+      "incoming_sha256": "db64ab97706f748cdc56eb61145e6dea0a76e7dd34fe630c46d19eedbd84e080",
+      "after_sha256": "db64ab97706f748cdc56eb61145e6dea0a76e7dd34fe630c46d19eedbd84e080"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/compiler/check_monotone_compiler_envelope.py",
+      "preservation": "byte-identical",
+      "incoming_sha256": "280b5daca6d81f6b97cbbda9859ca78066e7b610dbdc8afd1ae09ab62fbf6e88",
+      "after_sha256": "280b5daca6d81f6b97cbbda9859ca78066e7b610dbdc8afd1ae09ab62fbf6e88"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/monitored_return/COMPLETE_MONITORED_CQ_RESULT.json",
+      "preservation": "byte-identical",
+      "incoming_sha256": "67ccfdb933bc6de306919ed8218ff9aa8283c324ac853d0aa5d9326dadb65e57",
+      "after_sha256": "67ccfdb933bc6de306919ed8218ff9aa8283c324ac853d0aa5d9326dadb65e57"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/monitored_return/COMPLETE_MONITORED_CQ_SOURCE.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "88ae2feab137fdb9f4365fa4a42d3ab91c43e6b77173c5b80da0aec78c46e4c5",
+      "after_sha256": "88ae2feab137fdb9f4365fa4a42d3ab91c43e6b77173c5b80da0aec78c46e4c5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/monitored_return/check_complete_monitored_cq_source.py",
+      "preservation": "byte-identical",
+      "incoming_sha256": "6858ff2bb4488b91196b6b3300cf6aa30187670a2c56233184895459bcc6f39e",
+      "after_sha256": "6858ff2bb4488b91196b6b3300cf6aa30187670a2c56233184895459bcc6f39e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/BALANCED_CHECKER_INDEPENDENT_REVIEW.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "8df7700cee9961e9a6303bab7eb13325bda37c1d5fae483e16d4fdf6b9eb7059",
+      "after_sha256": "8df7700cee9961e9a6303bab7eb13325bda37c1d5fae483e16d4fdf6b9eb7059"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/BALANCED_PREPARATION_INDEPENDENT_REVIEW.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "8c2e7b747f3a04f6a728c8dea7955e211c8a70051194d45032c7f7bdd122ffc5",
+      "after_sha256": "8c2e7b747f3a04f6a728c8dea7955e211c8a70051194d45032c7f7bdd122ffc5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/COMPILER_ENVELOPE_INDEPENDENT_REVIEW.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "3962a7ae14fbcc5cf980949866e7ccbfa9e6f0146b6f63b271353cfc4f39b4a9",
+      "after_sha256": "3962a7ae14fbcc5cf980949866e7ccbfa9e6f0146b6f63b271353cfc4f39b4a9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/INTEGRATION_REVIEW.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "f179f6d8a2b933911060089406a858b9441cdc96d71ddf1eabe063e7ab510dd0",
+      "after_sha256": "f179f6d8a2b933911060089406a858b9441cdc96d71ddf1eabe063e7ab510dd0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/MONITORED_RETURN_INDEPENDENT_REVIEW.md",
+      "preservation": "byte-identical",
+      "incoming_sha256": "696910fb2dbb0ad37a703758580fe9b5008769e9ec461d83e7ca4a9e9a77505b",
+      "after_sha256": "696910fb2dbb0ad37a703758580fe9b5008769e9ec461d83e7ca4a9e9a77505b"
+    }
+  ],
+  "source_pins_rechecked": 23,
+  "final_composition_review_remains_exact": true,
+  "scientific_scope": "The late compiler owner optimizes K=9,L=18 inside its stated nested paid N=1 implementation class and retains the normalized constitutive function. It does not choose compulsory Book valuation or admit the moving field query. Its prep/return overlaps remain one result per carrier.",
+  "late_integration_checks": [
+    {
+      "command": [
+        "python3",
+        "tools/validate_work.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS work_validation: active work plane clean and enforced\n"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/validate_agent_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "PASS agent_protocol: cold-start task metadata enforced\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "unchanged_structural_guard_receipt": "FINAL_INTEGRATION_VALIDATION.json",
+  "unchanged_scientific_suites_replayed": false,
+  "GR_closed": false
+}

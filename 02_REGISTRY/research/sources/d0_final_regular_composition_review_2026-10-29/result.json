@@ -1,0 +1,141 @@
+{
+  "Lean_or_CI_run": false,
+  "checker_sha256": "5b80c11842068bcb5759f778a49161463bb90a0a7a791433a9d0cda8edef451a",
+  "checks": 266,
+  "complete_source": [
+    {
+      "copies": 1,
+      "exact_normalized_identity": true,
+      "gain_positive": true
+    },
+    {
+      "copies": 2,
+      "exact_normalized_identity": true,
+      "gain_positive": true
+    },
+    {
+      "copies": 5,
+      "exact_normalized_identity": true,
+      "gain_positive": true
+    },
+    {
+      "copies": 9,
+      "exact_normalized_identity": true,
+      "gain_positive": true
+    }
+  ],
+  "finite_test_exhaustion": [
+    {
+      "dual_norm": "1/2",
+      "exact_full_dual_tail": "1/2",
+      "global_right_inverse_asserted": false,
+      "represented_coordinates": 1
+    },
+    {
+      "dual_norm": "3/4",
+      "exact_full_dual_tail": "1/4",
+      "global_right_inverse_asserted": false,
+      "represented_coordinates": 2
+    },
+    {
+      "dual_norm": "15/16",
+      "exact_full_dual_tail": "1/16",
+      "global_right_inverse_asserted": false,
+      "represented_coordinates": 4
+    },
+    {
+      "dual_norm": "255/256",
+      "exact_full_dual_tail": "1/256",
+      "global_right_inverse_asserted": false,
+      "represented_coordinates": 8
+    },
+    {
+      "dual_norm": "65535/65536",
+      "exact_full_dual_tail": "1/65536",
+      "global_right_inverse_asserted": false,
+      "represented_coordinates": 16
+    }
+  ],
+  "finite_word_stationarity_claimed": false,
+  "independent_norms": [
+    {
+      "copies": 1,
+      "full_current_dual": "29/35",
+      "past_dual": "1/19"
+    },
+    {
+      "copies": 2,
+      "full_current_dual": "29/35",
+      "past_dual": "1/19"
+    },
+    {
+      "copies": 3,
+      "full_current_dual": "29/35",
+      "past_dual": "1/19"
+    }
+  ],
+  "input_commit": "6e20be09b25e1d68ac19be032814ce8ab2ab7351",
+  "kappa_protocol": {
+    "intervals": [
+      {
+        "all_intersections_nonempty": true,
+        "all_schedule_intersections_nonempty": true,
+        "all_widths_below_p_power": true,
+        "analytic_source_for_postcheck": "0",
+        "centre": "0",
+        "depths_per_schedule": 12,
+        "final_intervals": [
+          {
+            "lower": "-210625282191766490750762935216745923597738615189335385593850189139/165641334751297910573194057244765364885907148402944110304985874432000000",
+            "step": "1/1024",
+            "upper": "210625282191766490750762935216745923597738615189335385593850189139/165641334751297910573194057244765364885907148402944110304985874432000000",
+            "width_upper": "1/65536"
+          },
+          {
+            "lower": "-210625282191766490750762935216745923597738615189335385593850189139/165641334751297910573194057244765364885907148402944110304985874432000000",
+            "step": "1/1024",
+            "upper": "210625282191766490750762935216745923597738615189335385593850189139/165641334751297910573194057244765364885907148402944110304985874432000000",
+            "width_upper": "1/65536"
+          }
+        ],
+        "first_zero_excluding_depth": null,
+        "target_used_to_construct_intervals": false
+      },
+      {
+        "all_intersections_nonempty": true,
+        "all_schedule_intersections_nonempty": true,
+        "all_widths_below_p_power": true,
+        "analytic_source_for_postcheck": "2/5",
+        "centre": "1/5",
+        "depths_per_schedule": 12,
+        "final_intervals": [
+          {
+            "lower": "1445640441056799261523156651853403826856093423416669587834942934303441214909898224722321444472566310350103629700182070207/3614118093472088168150142816930327749690873689898229067389417305886872417128456973269118022549347477940110937292800000000",
+            "step": "1/1024",
+            "upper": "20361269720110583394192745089170794416682417795575857023480542935363813826688870361132170210754310500066741350701660983/50903071739043495326058349534229968305505263238003226301259398674462991790541647510832648204920387013240999116800000000",
+            "width_upper": "1/65536"
+          },
+          {
+            "lower": "1445640441056799261523156651853403826856093423416669587834942934303441214909898224722321444472566310350103629700182070207/3614118093472088168150142816930327749690873689898229067389417305886872417128456973269118022549347477940110937292800000000",
+            "step": "1/1024",
+            "upper": "20361269720110583394192745089170794416682417795575857023480542935363813826688870361132170210754310500066741350701660983/50903071739043495326058349534229968305505263238003226301259398674462991790541647510832648204920387013240999116800000000",
+            "width_upper": "1/65536"
+          }
+        ],
+        "first_zero_excluding_depth": 1,
+        "target_used_to_construct_intervals": false
+      }
+    ],
+    "retention_scenario": {
+      "actual_large_programme_emitted": false,
+      "prefix_constant": "100000000",
+      "rational_upper": "10195788231247694572984834545713355555783069153232760230872869461671442569683572230035775198209169190022294060327112674713134765625/12667257616675247246967597959129327434165595889304739770375398914804346455108829707567178174221828165467110107248701226143149495509057536",
+      "selected_K": 178,
+      "target": "1/1048576"
+    }
+  },
+  "native_GR_word_emitted": false,
+  "scope": "exact composition and interval-protocol controls, not a new universal GR theorem",
+  "status": "PASS_FINAL_COMPOSITION_REVIEW",
+  "unrestricted_XN_closure_proved": false
+}

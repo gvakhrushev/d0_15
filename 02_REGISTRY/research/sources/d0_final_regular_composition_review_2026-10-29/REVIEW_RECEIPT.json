@@ -1,0 +1,40 @@
+{
+  "Lean_or_repository_CI_run": false,
+  "input_commit": "6e20be09b25e1d68ac19be032814ce8ab2ab7351",
+  "native_large_GR_word_emitted": false,
+  "new_checker_sha256": "5b80c11842068bcb5759f778a49161463bb90a0a7a791433a9d0cda8edef451a",
+  "new_composition_checks": 266,
+  "new_normal_optimized_identical": true,
+  "new_stdout_sha256": "d94aa503a06a756ecc33c9dcb096e11dab2a0d7159dfb78b130fb7dcba65dfca",
+  "python": "3.13.5",
+  "rerun_upstream": [
+    {
+      "actual_stdout_sha256": "4460ad718a37a8b81b45d168135d726e139058eb552de8896d969ac39e1be9dd",
+      "checks": 38,
+      "ordinary_optimized_identical": true,
+      "published_receipt_git_blob": "6e7c7d56ca051ce9011337d037f232d4cea62993",
+      "suite": "einstein"
+    },
+    {
+      "actual_stdout_sha256": "d57515c54dff1d7c4fb07f2b6bf042ce8adedf08e4775868ad5bff91e082c635",
+      "checks": 26,
+      "ordinary_optimized_identical": true,
+      "published_receipt_git_blob": "24f07bf815084bffc0717187063d8914d9273f90",
+      "suite": "fullstep"
+    },
+    {
+      "actual_stdout_sha256": "17b74a79aa14919a49fe94115cb35e375ca6afd3244a34dba0ef2aa9b743863a",
+      "checks": 41,
+      "ordinary_optimized_identical": true,
+      "published_receipt_git_blob": "e4512b7964864acd6423a2a8702b5c696567f433",
+      "suite": "clock"
+    }
+  ],
+  "scope": "Review and composition of the declared regular kappa-source Einstein correspondence; no unrestricted-X_N or finite exact stationarity promotion",
+  "status": "PASS_SCOPED_COMPOSITION_REVIEW",
+  "upstream_not_rerun": [
+    "check_source_concentration.py (63)",
+    "check_raw_cylinder.py (44)"
+  ],
+  "upstream_rerun_checks": 105
+}

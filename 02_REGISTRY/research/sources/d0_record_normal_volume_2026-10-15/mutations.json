@@ -1,0 +1,26 @@
+{
+  "all_rejected": true,
+  "mutations": [
+    {
+      "name": "wrong_isotropic_fourth_moment",
+      "reason": "ArithmeticError: exact all-orders determinant identity: sphere",
+      "returncode": 1
+    },
+    {
+      "name": "dropped_mixed_normal_shapes",
+      "reason": "ArithmeticError: exact all-orders determinant identity: noncommuting_two",
+      "returncode": 1
+    },
+    {
+      "name": "wrong_euler_contraction",
+      "reason": "ArithmeticError: exact all-orders determinant identity: sphere",
+      "returncode": 1
+    },
+    {
+      "name": "mean_log_in_place_of_normalizer",
+      "reason": "ArithmeticError: exact all-orders determinant identity: sphere",
+      "returncode": 1
+    }
+  ],
+  "scope": "four executed mathematical mutations, not physical validation"
+}

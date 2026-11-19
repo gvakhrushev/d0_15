@@ -1,0 +1,32 @@
+{
+  "documentary_owners": [
+    {
+      "git_blob": "d7f7f170815cc3ad2052ad48280ae5919652b314",
+      "path": "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean",
+      "used": "cylWeight/weightExp; true direct, false return; cylinder refinement; no new compilation"
+    },
+    {
+      "git_blob": "573e2d70c1d7cbefd35670431b1ab9b87624dbdd",
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md",
+      "used": "complete cost cuts, native diagonal inclusion and trace"
+    },
+    {
+      "git_blob": "714a07eff3d2f1f257a5140038fa21b6fd8fb6d9",
+      "path": "02_REGISTRY/research/A4D_RECORD_NORMAL_VOLUME_SOURCE.md",
+      "used": "normal Jacobian, Gauss conventions, full Einstein variation"
+    },
+    {
+      "git_blob": "373f8e38910923613c2ad536d037da48790b6e18",
+      "path": "02_REGISTRY/research/A4D_RECORD_PRICE_METRIC_SOURCE_INTEGRATION.md",
+      "used": "same comparator metric and open-class phase-complete source lift"
+    }
+  ],
+  "executed_owner": {
+    "git_blob": "06f465874f07fae82111ee9453f4b5ca0b963267",
+    "path": "02_REGISTRY/research/sources/d0_flat_record_2026-10-15/check_flat_record.py",
+    "used_definition": "frame(4); other owner suite not rerun"
+  },
+  "schema": "d0-golden-curvature-inputs/1",
+  "scope": "Documentary owners were read at the pinned source; only the frame Python definition is imported during this narrow replay.",
+  "source_base": "51b1d1a1546305814f8751b9cf9800531d721400"
+}

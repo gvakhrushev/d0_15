@@ -1,0 +1,22 @@
+{
+  "EH_second_amplitude_variation": "16*pi**3*T*(2 - sqrt(5))",
+  "Lorentz_EH_full_spatial_torus": "8*pi**3*A**2*T*(2 - sqrt(5))",
+  "Lorentz_scalar": "-2*sqrt(5)*A**2*cos(x)**2 - 4*A**2*cos(x)**2",
+  "checks_count": 65,
+  "commuting_majorana_bivectors": [
+    "gamma0 gamma1",
+    "gamma2 gamma3",
+    "hat0 hat1",
+    "hat2 hat3"
+  ],
+  "global_golden_record": "U(x)=prod_i exp(x^i J_i), each Ji²=-I and commutes, U(x+2pi ei)=U(x), q=p³I on every point",
+  "golden_p3": "-2 + sqrt(5)",
+  "labels_sha256": "c10bd3c3e2b5148c8e5c7f6a5c81ecdeb8d444c24a3e325565fd98bf080f518a",
+  "native_positive_coframe": "e(x)=sqrt(p³) R02(A*sin x), n=e0, e^Te=p³I",
+  "outside_scope": [
+    "physical admission of the commuting Clifford loop U and arbitrary Angle A",
+    "native Cost−Info price that reads CAR observer bilinear and quartic-subtracted golden curvature",
+    "general global curved metric embedding and matter/refinement"
+  ],
+  "scope": "exact 4D Lorentz geometry and globally isometric golden CAR metric on R x T3; U is explicit mathematical CAR torus map, NOT selected native controller/action"
+}

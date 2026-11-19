@@ -1,0 +1,19 @@
+{
+  "status": "PASS_COMPLETE_CUT_SOURCE_AND_FIXED_INITIAL_LIFT",
+  "source_anchor": "5135327c6ef33a23f646be904827e5ddd9684bc2",
+  "thermal_bound_exact": "111669149696/9598843598690745",
+  "thermal_bound_less_than": "1/80000",
+  "ready_probability": "0.34164078707015471282261307598297263",
+  "original_report_r0": "0.0000018512395784882030762843950549834037",
+  "original_lambda": "-23.416406751884074972895582064895253",
+  "complete_to_feedback_gain_ratio_at_minimal_count_control": "0.99999449483408311147796727965787753",
+  "nonquadratic_adjoint_sources": [
+    "-0.42496002633737598017451770419",
+    "0.196640884166355511152239069175"
+  ],
+  "strict_native_cut_vs_tensor_heat_source": "11.72710702795727655306131131311842",
+  "original_large_READY_circuit_replayed": false,
+  "original_all42_geometric_owner_replayed": false,
+  "literal_Book03_cut_heat_identification_proved": false,
+  "universal_GR_closed": false
+}

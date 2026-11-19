@@ -1,0 +1,66 @@
+{
+  "repository_head": "8ba0bd929499e639b0fe4640ffa448631f3b024b",
+  "scope": "New reconstruction from first user attachment; mathematical source premises consumed at pinned repository head. No recovered ZIP/review/checker claim. Primary GR route was consulted for scope; it is not a new proof premise here.",
+  "user_attachment": {
+    "original_path": "/Users/grigorijvahrusev/.codex/attachments/17d569ef-ff7c-421d-baaa-b103f0532240/Вставленный текст.txt",
+    "preserved_copy": "USER_TEXT_ORIGINAL.txt",
+    "sha256": "e7e02b0a1efa2458b6756e0faaf694d333492c65d74fa3a67d364d8a0162b9b4",
+    "bytes": 32611
+  },
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "consumed_role": "03.3.0 and 03.3.0a: algebra-valued history sum, exponential weight, Cost-minus-Info; no new entropy binding"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md",
+      "git_blob": "841795793134245e2beb67ea2b59b0e2a1bd730e",
+      "sha256": "cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a",
+      "consumed_role": "Conditional literal binding w=q; absolute-normalizer and classical-record boundary"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GOLDEN17_CHERNOFF_PALATINI_DUALITY_AND_BOOK_CODE_GAIN_2026_10_20.md",
+      "git_blob": "4d4c7f47bc4972ccf2e3771cfc08aefc69b8ecc7",
+      "sha256": "2681a524df98f4e5ab1bb4545353d676dd156101da8238b9eede49e23b65323f",
+      "consumed_role": "Sections 1-2: original k, component b/R calibration, full17 Chernoff; section4 conditional Info"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GOLDEN17_COMPLETE_REVERSAL_Z2_SOURCE_SELECTOR_2026_10_20.md",
+      "git_blob": "ed5ad01cec75785aaba3301d030213b6d094bb2b",
+      "sha256": "1836ddbea5c3303d89bc9255d1ac78273c9438225be9614f6ad0a3c7bda1f4d8",
+      "consumed_role": "Sections1-3: true full17 reversal and native-source boundary"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_universality_2026-10-20/check_full17_golden_reversal_even_odd_projector.mjs",
+      "git_blob": "280dca938600ab65439df172e4266e75ba9002dd",
+      "sha256": "13ea91feb1c3c9765c9291cae36db5163c264376e4f061f6ac54d600d8ee7c3c",
+      "consumed_role": "Original q17 function, null eta and six generators consumed as formulas; historical run not repeated"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_chernoff_book_bridge_2026-10-20/check_original_golden17_chernoff.py",
+      "git_blob": "e3ccff8e7bff990c8062c9f13c5569d92beb0f19",
+      "sha256": "866c0219669864f3cf85bc1d773988d59f325430b312bdc156b8f0fb42f7beb1",
+      "consumed_role": "Original rational Lorentz commutator and component projection formulas; historical run not repeated"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_COMMON_METRIC10_LINK24_JONES_TOMOGRAPHY_2026_10_20.md",
+      "git_blob": "7760b9c5a27b9fded536cbcdce3556121bf6d560",
+      "sha256": "f4feebd5766e7852452ca232460bfba417a808b48918d8d87494d74ceefeb428",
+      "consumed_role": "Sections4-5: consumed actual rank34 positive probability chart, not rerun"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+      "git_blob": "ed8e5a0dcd2f54152cc5ba9af2b1e37f2fcf37c3",
+      "sha256": "d92f0e47e8e586dc503b4515ad286fb6e1f2ad2be2f86554fca28d9a6b5380cc",
+      "consumed_role": "Sections8.1-8.6: source-coefficient anti-fit and full-carrier/readout boundaries"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/Q8_CONDITIONAL_INFO_SOURCE.md",
+      "git_blob": "6abac8f8dd05cc31badcb37aae233090ad61080a",
+      "sha256": "157cac0e3254cfb9f5db59f1960955bb0a47bc2169c5a0094f0682ecd6a07283",
+      "consumed_role": "Sections1-2: conditional-target information distinct from pointer entropy and native task still required"
+    }
+  ]
+}

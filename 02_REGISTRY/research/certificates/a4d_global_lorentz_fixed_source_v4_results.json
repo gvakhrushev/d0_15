@@ -1,0 +1,109 @@
+{
+  "schema": "a4d-global-lorentz-fixed-source-v4-v2",
+  "input_head": "720dee65f8c1c186f5862602a4723486eff4b566",
+  "certificate_sha256": "2be6cf0c40aaf6ab6dc67e4dab14fdd6c7efc50b71aea6a5bca202713c191994",
+  "inputs_sha256": {
+    "a4d_identity_quarter_nonlinear_response_check.py": "f930d5d674b62f0c500b1aa1e28c1b3076a900899767d13b2dd2cd6a59142865",
+    "a4d_designated_full_gap_check.py": "fb76349e723ff532ef9b2222fd07cef5d7fa3e7e2b5d2c94b01ad4b056b8885d"
+  },
+  "arithmetic": "exact rationals; all actual face products and unrestricted derivatives",
+  "geometry": "f(y1)=1+(1-cos(2*pi*y1))/50; E=diag(1,1,f,f); g=E^T eta E",
+  "source": "one independently predeclared tau=0, exact on every mesh",
+  "fluxes": {
+    "(0, 1)": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "(0, 2)": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "(0, 3)": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "(1, 2)": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "(1, 3)": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "(2, 3)": [
+      1,
+      -1,
+      -1,
+      1
+    ]
+  },
+  "links": "U_r(x)=product_{s<r} P_sr^x_s; all matrices in proper-Lorentz V4",
+  "q8_inputs_sha256": {
+    "03_FORMALIZATION/D0/Claims/Q8DedekindMinimality.lean": "12904a3bdd35e25730a3988f6682667e8702b632cd152eb3185bd553c8e56a87",
+    "03_FORMALIZATION/D0/Representation/Omega8Q8TypedBridge.lean": "3bc91c3b1773ce092ebe9559d434cf4bdc92406d50fa376c11dc247608f87354"
+  },
+  "q8_lift": {
+    "ordering": "owned Dedekind: +1,-1,+i,-i,+j,-j,+k,-k",
+    "typed_cocycle_products": 64,
+    "links": 1024,
+    "plaquettes": 1536,
+    "face_signs": {
+      "(0, 1)": {
+        "positive": 256,
+        "negative": 0
+      },
+      "(0, 2)": {
+        "positive": 256,
+        "negative": 0
+      },
+      "(0, 3)": {
+        "positive": 256,
+        "negative": 0
+      },
+      "(1, 2)": {
+        "positive": 192,
+        "negative": 64
+      },
+      "(1, 3)": {
+        "positive": 256,
+        "negative": 0
+      },
+      "(2, 3)": {
+        "positive": 192,
+        "negative": 64
+      }
+    },
+    "representation": "diag(1,Ad(q)); kernel {+1,-1}; Ad(i,j,k)=(R1,R2,R3)",
+    "all_mesh_proof": "L divisible by 4; ordered Q8 word is coordinatewise 4-periodic",
+    "scope": "actual Q8 support and central signs; full native admissibility not asserted"
+  },
+  "finite_replay": {
+    "L": 4,
+    "sites": 256,
+    "actual_plaquettes": 1536,
+    "shared_link_Euler_rows": 6144,
+    "unrestricted_solder_rows": 4096,
+    "Gram_metric_rows": 2560,
+    "nonidentity_links": 512,
+    "action": "0",
+    "E_K": "0",
+    "Xi": "0"
+  },
+  "all_mesh_proof": "even L; each individual face momentum and curvature are zero",
+  "holonomy": "trace 0; characteristic polynomial (z-1)^2*(z+1)^2; nongauge",
+  "continuum_gap": "h^4*(h^-2*||Xi-Xi_sm||_owner1) -> integral ||rho0||_packed1",
+  "strict_gap_lower_bound": "pi^2/2500 from the rho0_11 component",
+  "domain": "full finite proper-Lorentz nondegenerate configuration domain",
+  "excluded_domain": "identity Cayley and sufficiently small identity log chart; in particular log-O(h)",
+  "verdict": "FULL-LORENTZ-FIXED-CURVED-SOURCE-RESPONSE-NOGO; ORIGINAL-SMALL-CHART-TASK-OPEN"
+}

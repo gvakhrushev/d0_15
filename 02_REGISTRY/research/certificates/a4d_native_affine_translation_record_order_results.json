@@ -1,0 +1,62 @@
+{
+  "schema": "d0-native-affine-translation-record-order/1",
+  "status": "PASS_EXACT_SHIFT_ENDPOINT_LOSES_CAR_ORDER",
+  "exact_controls": 20,
+  "checks": [
+    "golden_channel_checker_pin",
+    "golden_channel_result_pin",
+    "golden_channel_proof_pin",
+    "upstream_conditional_record_result_pass",
+    "upstream_proof_and_checker_self_consistent",
+    "upstream_transitive_input_pin:02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md",
+    "upstream_transitive_input_pin:02_REGISTRY/research/A4D_NATIVE_RELATIVE_OBSERVER_SOURCE_JET.md",
+    "upstream_transitive_input_pin:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_certificate.json",
+    "upstream_transitive_input_pin:02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py",
+    "upstream_transitive_input_pin:02_REGISTRY/research/certificates/a4d_native_relative_observer_source_jet_check.py",
+    "upstream_transitive_input_pin:02_REGISTRY/research/certificates/a4d_native_relative_observer_source_jet_results.json",
+    "upstream_transitive_input_pin:02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/continuation_v3/proofs/MOVING_PREPARATION_SOURCE_RU.md",
+    "upstream_transitive_input_pin:02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/continuation_v3/results/moving_preparation_exact.json",
+    "upstream_transitive_input_pin:02_REGISTRY/research/sources/d0_local_record_to_matter_2026-10-14/continuation_v3/src/moving_preparation_exact.py",
+    "all_four_returns_are_the_owned_orthogonal_full16_records",
+    "two_oriented_affine_translations_have_same_endpoint",
+    "full16_CAR_commutator_has_exact_witness_2p_minus_2",
+    "exact_commutator_witness_is_nonzero",
+    "ordered_history_words_have_same_shift_but_distinct_native_products",
+    "shift_only_path_functor_cannot_match_both_native_basis_returns"
+  ],
+  "carrier": "all 16 exterior components of the owned CAR record",
+  "affine_subgroup": "pure translations (I,b), with (I,b)(I,c)=(I,b+c)",
+  "translation_pair": {
+    "first": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "second": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "common_endpoint_shift": [
+      1,
+      1,
+      0,
+      0
+    ]
+  },
+  "commutator_entry_0_3": "2*p - 2",
+  "commutator_is_nonzero": true,
+  "history_pair": "word 01 and word 10 have the same affine endpoint but different full16 return products",
+  "necessary_escape": "retain order in an existing state/history or let the operation depend on additional native data",
+  "scope": {
+    "shift_only_compositional_unitary_readout_excluded": true,
+    "stateful_history_readout_excluded": false,
+    "link_dependent_readout_excluded": false,
+    "full_core_no_go": false,
+    "physical_admission_derived": false,
+    "own_source_Ward_or_GR_closed": false
+  },
+  "source_sha256": "fa9cc590c069955462ceb29e36358ced02077e9a86b9a018c720104d7ae22918"
+}

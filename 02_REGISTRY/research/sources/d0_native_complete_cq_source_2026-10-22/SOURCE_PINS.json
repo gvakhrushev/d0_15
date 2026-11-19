@@ -1,0 +1,193 @@
+{
+  "schema": "d0-native-complete-source/1",
+  "scientific_owner": "#334",
+  "task_id": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "initial_input": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+  "concurrent_input": "e02855b68a1de758436b0e80c1ee98171bc5c4f4",
+  "owned_inputs": [
+    {
+      "path": "requirements.txt",
+      "sha256": "1dbcf6cb3adbf2262c21494fe2e7173e7f43e58e9caa25fd4e53882a7d74339b",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "13682995ed1eb8bc07e423da78d4e0431e2d523d"
+    },
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    {
+      "path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "99721fb50de66688564638f5f2b449a38675d7bd"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+      "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md",
+      "sha256": "4001c3adb8b5c7bbcea95b1795d6d847e4386191e9129e43e5c611994b64a99f",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "2dde923ce481a00db4928a9467819ccdb73cae5a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_generated_thermal_source_2026-10-22/ACTUAL_CUT_APPLICATION.md",
+      "sha256": "d72e52973c1853e8abe44c8cf012ae865d0795683fe28d615d4b5f1d75397011",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "04bd07f4699ef2190aae7f74dfee9238decd8bf4"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_generated_thermal_source_2026-10-22/PRICE_AND_CAUSAL_PULLBACK.md",
+      "sha256": "96a77c80442f89a9f3f866f6d003bf5cc3c62385be736451816dfdfdd62b53d7",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "8c0aa6eda6f4300efb69d5e99746e664e326db65"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_generated_thermal_source_2026-10-22/NATIVE_TANGENT_APPLICATION.md",
+      "sha256": "12111eb452ebe860c275e7c26fbebec2dbc787544b5a553981c83746a24eff9c",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "3af5ce58580282428225cdd7970a69da604cf2c4"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COHERENT_BOOK_FULL42_BRIDGE_2026_10_22.md",
+      "sha256": "c1274c2ad60049b5ab4bc50bd83a31da87f8b47470657472a083e8cf9cae5b2b",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "35134d3a536450442267cda276028ec780329544"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_original_golden_ready_coherent_book_2026-10-22/check_native_palindrome_compilation.mjs",
+      "sha256": "08c12b73e9e83bd3b9d775c64f32941996fc5eeb416c3531b188bcc08e70f85b",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "09b62a47b9530bc56b8c61192000bea3e332fd52"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_BOOK_THERMAL_WARD_OBSTRUCTION_2026_10_22.md",
+      "sha256": "1243a9bf9958443a5fc64efea3a4addb882b7b1a11e3a3ad57600f53df27af2c",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "c334bf987f704302d24a4e24b0e0c90494f631f5"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_RETURN_MODULAR_HEAT_COMPATIBILITY_2026_10_22.md",
+      "sha256": "68463269b120a50ab3fb1c706016e99f3d3738406c24d74f3491cc321005e011",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "232eb65452134a51fd07263c9e9b46263bb23234"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md",
+      "sha256": "b782baf8a77787af3162f4b6263ffe3fb5453de3046cd263b95c4b3d61cf1483",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "07d5262e53d5bd7588febe0603f2023d0788d11b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PRIMARY_FULL128_COMMON_RECORD_INFORMATION_SOURCE_2026_10_20.md",
+      "sha256": "149d5c9dc1afa6fe1f5b966206b56d1df82becf6e78dfce40f7aa9396b682fd3",
+      "published_commit": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+      "git_blob": "1cfa3d376c5c43d857a81925af900a428350bd05"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK03_FINITE_ALGEBRAIC_FULL_SOURCE_PUISEUX_GATE_2026_10_22.md",
+      "sha256": "43e55da1b0721018d922a7e06f07b87a2e4bb6e9293e5783e55cc127f2c29b03",
+      "published_commit": "ba3bca173c9d722a14920aad36dfe656e65c2b2c",
+      "git_blob": "df8aebd7976ce7dcffaef7e1421ca3bf23a5246d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/A4D_EXACT_FULL42_OPEN_PF_COLLAR_BRANCH_AND_CONTINUOUS_BOOK_RESIDUAL_2026_10_22.md",
+      "sha256": "410ae5d75d33114a96e41536df580b162becc12d1a1a88ff6575d2600543ed16",
+      "published_commit": "e02855b68a1de758436b0e80c1ee98171bc5c4f4",
+      "git_blob": "56bcbfe7d9a5a4a1a9b5880e5861f4b466c0a447",
+      "source_path": "02_REGISTRY/research/A4D_EXACT_FULL42_OPEN_PF_COLLAR_BRANCH_AND_CONTINUOUS_BOOK_RESIDUAL_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/A4D_BOOK03_STAGE_CLOCK_INTERNAL_CUT_NECESSITY_2026_10_22.md",
+      "sha256": "2bc227f8406a75a57dc2075a3de8d1a986157adaf052974a7bba2c1438306f81",
+      "published_commit": "e02855b68a1de758436b0e80c1ee98171bc5c4f4",
+      "git_blob": "7ed483d072d88efaca1b768a12ecf0704070ce66",
+      "source_path": "02_REGISTRY/research/A4D_BOOK03_STAGE_CLOCK_INTERNAL_CUT_NECESSITY_2026_10_22.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/check_native_entropy_poisson.mjs",
+      "sha256": "2b3f4fe37c59bf7a7c8487e73f7560525887b0a4fba9d3b86faaa65050bff72f",
+      "published_commit": "e02855b68a1de758436b0e80c1ee98171bc5c4f4",
+      "git_blob": "d546707c0051a8a9ecf3f3d9f9b1472960fb4ef9",
+      "source_path": "02_REGISTRY/research/sources/d0_native_preparation_entropic_poisson_2026-10-22/check_native_entropy_poisson.mjs"
+    }
+  ],
+  "frozen_artifacts": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/published_inputs/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
+      "sha256": "5f4f889276f1516870a085d7109b0b3d72c6b0664b5628e8bdf36e78d2052c10",
+      "source_path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
+      "published_commit": "fa19ec492174f7aea313ca08d57caccc3d481183"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/README.md",
+      "sha256": "e10faa6baf360c91a1f03195a815ab3938df100523cc81c0b0a7af8b903b9a3b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/CONCURRENT_INTAKE.md",
+      "sha256": "ff614b5f0de556439632356c86da1360555cdf451a8e714bdbf0ad27aa5c8ecc"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/CUT_SOURCE_EQUIVALENCE.md",
+      "sha256": "8c75d01c5fe5f6892b129d3f51af8c9af71a7ccfff1052976bce42d647ddf0ad"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/check_cut_source_equivalence.py",
+      "sha256": "01bce178bfb36422cb0703a9892ed5fd00823cd91de7bc4968f6a8b263a5eb7b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/CUT_SOURCE_RESULT.json",
+      "sha256": "82012c6a33e144a29d395be385316067593089ffdc6fc32a5dc7462a55e91ed2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/CUT_SOURCE_INDEPENDENT_REVIEW.md",
+      "sha256": "6d547c6041c725478e1e50a67259252d755b1defcc4a3be0883072644138afb2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/MAXIMUM_ENTROPY_PREPARATION.md",
+      "sha256": "0a58a36d5302960187869c2b5c0c73660a53bc4d0f105c2d03b1c0e0dcc34a87"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/check_maximum_entropy_preparation.py",
+      "sha256": "46437bc428228dd5c86b3af872517e88037e82ec84cea888a8a8aef8dec97cde"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/MAXIMUM_ENTROPY_RESULT.json",
+      "sha256": "fd4fd5827c6e54a14547a7068008e167337cd2ed9401097b9232032ef1fdfe37"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/MAXIMUM_ENTROPY_INDEPENDENT_REVIEW.md",
+      "sha256": "81948fee5dabc6036c99f3b97ac5fd5411a67b393f0bc72cef3d00223a257b52"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_SOURCE.md",
+      "sha256": "f1ee97765d7c8a82ff65f4ab81f46cb626e6780856fac34684efa8d4cac92d51"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/check_complete_history_source.py",
+      "sha256": "cd0052f10bc43abb3736a1637c850c2a3d637f428dd116f6320f68bcf84e3931"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_RESULT.json",
+      "sha256": "6218f76ba21a2eeba064b9a855395d3fd358cf7c4d7ae58d4f56a5c1f9ef0515"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_complete_cq_source_2026-10-22/COMPLETE_HISTORY_INDEPENDENT_REVIEW.md",
+      "sha256": "78b2e5b2eac437d909ef8977a078ee09c41fa7ce02fce3f2db88fb6dc4cdd783"
+    }
+  ],
+  "old_suites_replayed": false,
+  "physical_Book03_Info_selected": false,
+  "GR_closed": false
+}

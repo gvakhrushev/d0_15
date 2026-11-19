@@ -1,0 +1,36 @@
+{
+  "status": "AUTHOR_CHECKS_PASS",
+  "source_checkpoint": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "checker": "check_book03_car16_q8_order.py",
+  "checks_passed": 206,
+  "runs": {
+    "normal": "PASS",
+    "optimized": "PASS",
+    "stdout_byte_identical": true,
+    "existing_book03_comparator_checker": "PASS, 88 checks"
+  },
+  "artifacts": {
+    "check_book03_car16_q8_order.py": {
+      "sha256": "b14a860ecb2fee473dd4e8df4a499d57864c365dc008bbc3a3d54602083b7ac9",
+      "git_blob": "71e93c5a2b20689f1f91cf0bbdc1a8338513b27b"
+    },
+    "RESULT.json": {
+      "sha256": "457118d611a68262cba6510a697a51a3bb02f6016361638667ed377b0591905b",
+      "git_blob": "c7f2b25c2a78ea351938ef4590a419c177ef601d"
+    },
+    "SOURCE_PINS.json": {
+      "sha256": "6be7637d96ec599509da1f4d02d819188f73bf22982eb7f457ae9d49a34a7fd8",
+      "git_blob": "1e4fdd5812fae577e9adeb3bdb2e22cfe3187968"
+    },
+    "README.md": {
+      "sha256": "2bb8510087c005714ea732c350fec53ad8d3c959fb4e75cda83a9a0f1679ceb2",
+      "git_blob": "4e3996a9f43a07232d99a9dcc5f471894179e44d"
+    }
+  },
+  "physical_scope": {
+    "G0_admission": false,
+    "full_Book03_Cost_Info": false,
+    "field_to_Q8_pullback": false,
+    "GR_closed": false
+  }
+}

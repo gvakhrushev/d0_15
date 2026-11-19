@@ -1,0 +1,12 @@
+{
+  "absolute_ready_report_leaves": 16,
+  "all_16_leaves_both_orders_equal_exactly": true,
+  "arbitrary_example_nonproduct_price": "0.48613855977286110",
+  "chronological_one_token_source_difference_per_dpi": "0.47213595499957939",
+  "chronological_single_noisy_report_TV_p3": "0.23606797749978970",
+  "large_geometric_writer_emitted": false,
+  "native_scalar_effect_checks_both_orientations": 8,
+  "physical_full_instruction_economy_identified": false,
+  "status": "PASS",
+  "work_ordinary_calls_per_status_bit_forward_postprocessing": 32
+}

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-20",
+  "owner": "existing Draft #334; primary-family domain/source application",
+  "owned_source_ref": "61a0b66f2e9512c7e3e64b2d9a0599231b0919fa",
+  "integration_base": "25bea5bddd54988e32363c1968cdec8f6e4b7801",
+  "primary_case_main_ref": "0bf309b6260cf5b63e54d6ccabdcdae6734b950a",
+  "isolated_replay_ref": "328f53478b50bbad42918e0af78cc1b289843559",
+  "isolated_replay_ref_scope": "Local committed verification snapshot, not asserted published. Frozen scientific bytes and hashes are replicated unchanged in the remote checkpoint.",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows",
+    "numpy": "2.2.6",
+    "sympy": "1.12.1"
+  },
+  "checks": [
+    {
+      "command": "python -B -W error 02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "exit_code": 0,
+      "result": "PASS; exact symbolic CAR/star/query/kinetic identities, exact Q(p) old-count routing and inverse-PF; complete finite native R source controls. No stderr."
+    },
+    {
+      "command": "python -B -W error 02_REGISTRY/research/certificates/a4d_primary_native_domain_source_check.py",
+      "exit_code": 0,
+      "result": "PASS in primary checkout, read-only independent reviewer and isolated managed worktree. Frozen pins unchanged; isolated worktree clean before and after; no stderr."
+    },
+    {
+      "command": "python tools/validate_repo.py",
+      "exit_code": 0,
+      "result": "PASS warnings=0; claims889 assumptions31 aliases58 formal_support183 lean_closure918"
+    },
+    {
+      "command": "python tools/validate_work.py",
+      "exit_code": 0,
+      "result": "PASS active work plane clean and enforced"
+    },
+    {
+      "command": "python tools/validate_agent_protocol.py",
+      "exit_code": 1,
+      "baseline": true,
+      "result": "FAIL_AGENT_PROTOCOL: gravity assembly: attempt question digest does not match its scope/assumptions"
+    },
+    {
+      "command": "git diff --cached --check -- . :(exclude)02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/inputs/primary_recovery.md",
+      "exit_code": 0,
+      "result": "PASS all authored changes. Exact consumed input snapshot has two original Markdown two-space hard breaks on lines3-4; retained byte-for-byte, so the whole-import whitespace check reports them."
+    }
+  ],
+  "baseline_failure_scope": "Same assembly digest error observed before this packet; no contract.json, applications.json, lifecycle/claim registries or tools changed here. Dispatch also reports that baseline failure. No expected mathematical evidence is rewritten.",
+  "scope": "Analytic conditional strict-domain/source transport with exact algebra and float64 finite native-operator checks. Arbitrary-mesh statements are analytic; finite controls use an interior link and fixed collar, not periodic polynomial seam equations. No primitive port/Info or complete physical action evaluation, no new Lean build or unrelated heavy replay. Parent remains Draft.",
+  "frozen_artifacts": {
+    "check_primary_domain_source.py": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf",
+    "PRIMARY_DOMAIN_SOURCE.json": "a026a48901a8a4e40f04927b9b10ed7d836e97c24ccd77a1edbf686d48c750bd",
+    "RESULT.md": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be",
+    "REVIEW.md": "073dbd83e97f344bb51631a00eddbd42dcb92ab17ff226afaddf05e338e3d2c3",
+    "SOURCE_PINS.json": "71dd1c1dfcdf275dc58653510e79dd2f5212ce22a9c209e131a0ea554d747660"
+  },
+  "entrypoint_sha256": "271ad66f17476c7dc95ef23c8e53b227e8934e2db577fcee84011ee886a493f2"
+}

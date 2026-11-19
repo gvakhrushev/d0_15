@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "result": "exact stationary two-density normal form, with stated operand assumptions",
+  "GR_closed": false,
+  "run_utc": "2026-10-20T21:43:27.358434+00:00",
+  "python": "3.12.14",
+  "script_sha256": "c4ae04cdc4b3f5b1e6e23d922f26329448d723eb9b6cfeea4fc41e3e61d2b031",
+  "fresh_repository_checkout": false,
+  "publication": "not performed by this checker",
+  "prior_source_commit": "963a9ae0a22ac05ba13b86e66f56bae68a6ec492",
+  "checks": {
+    "rational_source_and_auxiliary_checks": {
+      "extended_identity_value_gradient_hessian": "exact",
+      "fixture": "two coupled sites; 12 independent rational coordinates; not native all40",
+      "singular_Fxx_auxiliary_inverse": "exact",
+      "coupled_K_hessian_by_independent_Schur_complement": [
+        [
+          "3724/121",
+          "174/11"
+        ],
+        [
+          "174/11",
+          "61/2"
+        ]
+      ],
+      "null_nonconstant_matter_first_source": "exact; full Hessian intentionally differs",
+      "internal_density_dictionary_terms_retained": "exact; deleting them fails",
+      "baseline_source_retained": "exact; deleting it fails"
+    },
+    "finite_golden_coupling_and_cap_bound": {
+      "arithmetic": "exact Q(sqrt(5)); signs decided by rational squares",
+      "r0_strict_bounds": "2^-20 < r0 < 2^-19",
+      "finite_coupling_ratio": "23.41640675188407497289558206489525274426317851399039183378313554535445912225019825876",
+      "zero_z_limit": "23.41640786499873817845504201238765741264371015766915434562538347246312555382682939648",
+      "strict_positive_difference_limit_minus_finite": "0.00000111311466320555945994749240466838053164367876251184224792710866643157663113771501112",
+      "all_caps_N_ge_2_derivative_bound_over_alpha_beta": "5767117/524287",
+      "cap_bound_scope": "analytic: 0<alpha,beta<=1 and consumed kappa>53; no cap enumeration proof"
+    },
+    "new_nonzero_density_branch": {
+      "precision_decimal_digits": 85,
+      "example_parameters": {
+        "alpha": "3/5",
+        "beta": "5/7",
+        "kappa": "54"
+      },
+      "parameters_are": "illustrative admissible values, not asserted native bank output",
+      "status": "non-interval numerical diagnostics; theorem is analytic",
+      "branches": [
+        {
+          "cap": 1,
+          "a": "-2.253435286074619070678533456574532946910387242328674080650420659214684704166372823336E-7",
+          "b_over_a": "23.41640675188407497289558206489525274426317851399039183378313554535445912225019825867",
+          "K_second_derivative": "0.0005025168824786415318785377199643509172655600770368169787731289212641481785165246192599",
+          "central_envelope_derivative_relative_error": "2.506987969619076821327046694086677239899234543868817409188747306326152856262494064749E-21",
+          "max_auxiliary_residual": "5.79380894403727345E-67",
+          "nonzero_Y": [
+            "-1e-4",
+            "1e-4"
+          ],
+          "scale_pi_over_a_at_nonzero_Y": [
+            "1.008403127331865316650430811670720417826308698128823653565790619652484635188814484473",
+            "0.9916400985918755102789007105256795415928050225896965918539407327122363069874042163285"
+          ]
+        },
+        {
+          "cap": 2,
+          "a": "2.182773863489924229675401750521529896007050713515058362545680195175383584892377866012E-7",
+          "b_over_a": "23.41640675188407497289558206489525274426317851399039183378313554535445912225019825867",
+          "K_second_derivative": "-0.0004859960928769860621990577575735393015536592474767622142624679792894626386226594030100",
+          "central_envelope_derivative_relative_error": "2.478875072045319625219456480506248021329174090542569178973156690082351227336992527876E-21",
+          "max_auxiliary_residual": "5.912525787707997146E-67",
+          "nonzero_Y": [
+            "-1e-4",
+            "1e-4"
+          ],
+          "scale_pi_over_a_at_nonzero_Y": [
+            "1.008395480671693291135163479641822318662338628159291305334223035320107223838932014737",
+            "0.9916473880836281814998527358519840930101123901229465776442702282243487038602561102354"
+          ]
+        },
+        {
+          "cap": 7,
+          "a": "2.182785595639929234768721474200426223462787410417634214356195672976351647925100190920E-7",
+          "b_over_a": "23.41640675188407497289558206489525274426317851399039183378313554535445912225019825867",
+          "K_second_derivative": "-0.0004859986804873331664852134962481493742168488895042192824332727947671669858752576874353",
+          "central_envelope_derivative_relative_error": "2.478874171950321487542765790911600021425059060352230743798683065570512106076522838572E-21",
+          "max_auxiliary_residual": "5.912897711356443153E-67",
+          "nonzero_Y": [
+            "-1e-4",
+            "1e-4"
+          ],
+          "scale_pi_over_a_at_nonzero_Y": [
+            "1.008395480425644061426914073403386050988829044503859671967523467329672248527511757615",
+            "0.9916473883182005229685294706282672353057739705528141261235219164359507515635847472847"
+          ]
+        },
+        {
+          "cap": 31,
+          "a": "2.182785595639929234768721474200426389466769359930395403741629814374070191664167918933E-7",
+          "b_over_a": "23.41640675188407497289558206489525274426317851399039183378313554535445912225019825866",
+          "K_second_derivative": "-0.0004859986804873331664852134962481494089451788320625304195649090856535406167979339718024",
+          "central_envelope_derivative_relative_error": "2.478874171950321487542765790911599941190555418561794819860787166752575555581391266028E-21",
+          "max_auxiliary_residual": "5.912897711356468901E-67",
+          "nonzero_Y": [
+            "-1e-4",
+            "1e-4"
+          ],
+          "scale_pi_over_a_at_nonzero_Y": [
+            "1.008395480425644061426914073403386050966466047344136050580391289693399011061454400565",
+            "0.9916473883182005229685294706282672353270990171562641589244465815636800089787908820683"
+          ]
+        }
+      ]
+    }
+  },
+  "not_checked": [
+    "current branch head and current repository operand binding",
+    "full native compiler or original 40+2 equations",
+    "sitewise matter homogeneity for any additional Riesz-dependent dictionary",
+    "independent preparation, clock, or absolute-Book internal stationary roots",
+    "uniform neighborhood in cap, mesh size, or lattice size"
+  ]
+}

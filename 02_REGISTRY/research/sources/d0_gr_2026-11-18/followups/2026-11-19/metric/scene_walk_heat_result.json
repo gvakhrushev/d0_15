@@ -1,0 +1,73 @@
+{
+  "schema": "d0.scene-winding-heat/1",
+  "status": "PASS",
+  "clock_dimension": 11,
+  "degrees": [
+    363,
+    4312
+  ],
+  "harmonic_background": 3949,
+  "uniform_initial": "33 scene vertices and all D clock basis states",
+  "checked_spatial_full_laurent_polynomials": 20,
+  "scale_per_step": 3432,
+  "order_two_closed_prob_by_winding": {
+    "-2": "698123/388694592",
+    "0": "8166155/194347296",
+    "2": "698123/388694592"
+  },
+  "full_binary_mixture": "293/425 sure acceptance + 132/425 signed-clock test",
+  "full_heat_ratio_G1_CX_to_CX_G1": [
+    "0.999995606243232342",
+    "0.999995606243232345"
+  ],
+  "signed_diagonal_T2_indices_and_power_basis_1_a_a2_a3": {
+    "G1;CX01": {
+      "4": [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "5": [
+        "-2",
+        "0",
+        "3",
+        "0"
+      ]
+    },
+    "CX01;G1": {
+      "4": [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "5": [
+        "0",
+        "0",
+        "-1",
+        "0"
+      ]
+    }
+  },
+  "native_count": {
+    "one_group_acceptance": "p exp(p^2)",
+    "two_group_proposals_mean": [
+      "2.2086754553218",
+      "2.2086754553219"
+    ],
+    "accepted_two_group_count": "Poisson(2p^2)",
+    "explicit_transcript_cases": 6,
+    "exchangeable_sort_test": "3 independent, nonuniform three-bit prefixes",
+    "finite_service_control": "per group with R trials, length limit G and b prefix bits: (1-p exp(p^2))^R + R[(p^2)^(G+1) + p^2(p^2+p^4)^b] (union bound)"
+  },
+  "derivative_tail": {
+    "omit": "k>Kcap; tail is replaced by a field-independent outcome law",
+    "exact_source_majorant": "(66/(425 D)) (beta/11) Pr{Pois(beta)>=Kcap} ||dT||_1",
+    "Kcap_example": 12,
+    "upper_bound_for_D11_per_unit_trace_norm": "5852981164709152068431680249523/68049808902740478515625000000000000000000000",
+    "fixed_transcript_secants": "under common uniform U, E|1[U<x]-1[U<y]|=|x-y|; compare means before differentiating; field-independent service error must be o(actual secant step) after normalization"
+  },
+  "scope": "known finite word and normalized full heat; measuring an unknown clock, old-register access, and identification with full microscopic Cost-Info require their own physical transport",
+  "original_cost_info_identified": false
+}

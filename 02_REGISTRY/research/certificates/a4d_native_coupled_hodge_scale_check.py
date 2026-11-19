@@ -14,7 +14,7 @@ from itertools import combinations, product
 from pathlib import Path
 import sympy as sp
 
-INPUT_HEAD = '2d3f5fff0273ae5c028c07343a72b27b54374602'
+INPUT_HEAD = '325ef1084752883707b79fdee8fced74262a5db8'
 INPUTS = [
  '03_FORMALIZATION/D0/Geometry/ArchiveMetricMeasureHodgeLift.lean',
  '03_FORMALIZATION/D0/Geometry/A4DMetricStarSignatureBoundary.lean',

@@ -1,0 +1,43 @@
+{
+  "GR_closed": false,
+  "actual_global_choi_address_encoding_confirmed": false,
+  "actual_seed_readiness_and_native_prices_derived": false,
+  "controlled_fresh_purifier_lookup_all_site_pair_cases": 16384,
+  "exact_bandlimited_vacuum_retention": "1-27*p/64",
+  "explicit_global_choi_address_count": 2049,
+  "ideal_high_reference_gain_lower_over_H_squared": "[1.440024781308357213467560452795719062381124560921389296852188240414842112362585613439e-1714, 1.440024781308357213467560452795719062381124560921389296852188240414842112362608706538e-1714]",
+  "ideal_high_reference_gain_upper_over_H_squared": "[1.728029737570028656161072543354862874857349473105667156222625888497810534835102733947e-1713, 1.728029737570028656161072543354862874857349473105667156222625888497810534835130447846e-1713]",
+  "ideal_joint_localization_readiness": "[1.831147443322126690312488377646816788479708146274072793486100499608916001423290835536e-551, 1.831147443322126690312488377646816788479708146274072793486100499608916001423291368712e-551]",
+  "numerical_bandlimited_vacuum_retention": "[0.7392669109961381109136899292519964190867445647694437925366076122962182422482755279558, 0.7392669109961381109136899292519964190867445647694437925366076122962182422482755300642]",
+  "original_global_choi_copies_per_ten_sign_bank": 180,
+  "original_gram_and_complete_CQ_cost_preserved": false,
+  "original_kappa_with_nyquist": 27,
+  "original_real_Fourier_L4_pairs": 64,
+  "original_sites": 256,
+  "protected_right_counterexample": {
+    "arbitrary_right_yes_on_x0_r0": 1,
+    "arbitrary_right_yes_on_x0_r1": 0,
+    "fresh_purified_success": "1/2",
+    "maximally_mixed_right_scalar_effect": "I_X/2",
+    "protected_joint_effect_rank": 2
+  },
+  "purifier_uncompute_requires": "fresh 128-dimensional purification accessible and paid; NOT unknown protected old RIGHT",
+  "readiness_requires": "independent exact pure original Fourier and explicitly labelled global Julia-Choi copies; complete success/failure records; accessible SITE and controlled address logic",
+  "selected_local_choi_addresses": 21,
+  "site_controlled_address_permutations_checked": 256,
+  "status": "PASS",
+  "true_original_fourier_copies_per_ten_sign_bank": 80,
+  "true_original_ten_stencil_overlap_numerators": [
+    20,
+    10,
+    10,
+    9,
+    8,
+    8,
+    6,
+    9,
+    5,
+    5
+  ],
+  "true_reference_gram": "C^T C = I_128/128"
+}

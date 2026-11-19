@@ -1,0 +1,627 @@
+{
+  "Palatini_H0_inertia": {
+    "negative": 12,
+    "positive": 12,
+    "zero": 0
+  },
+  "checks": [
+    "ACTUAL_FROZEN_FINE_VARIATION_SOURCE",
+    "OLD_SUPPORT_PROP_AND_NEW_GENUINE_LOCAL_PREDICATE",
+    "ACTUAL_CANONICAL_SEAM_3",
+    "VARIATION_RANK_3_False",
+    "VARIATION_RANK_3_True",
+    "CANONICAL_LOCAL_GATE_FAIL_3",
+    "ACTUAL_CANONICAL_SEAM_4",
+    "VARIATION_RANK_4_False",
+    "VARIATION_RANK_4_True",
+    "CANONICAL_LOCAL_GATE_FAIL_4",
+    "ACTUAL_CANONICAL_SEAM_5",
+    "VARIATION_RANK_5_False",
+    "VARIATION_RANK_5_True",
+    "CANONICAL_LOCAL_GATE_FAIL_5",
+    "ACTUAL_CANONICAL_SEAM_6",
+    "VARIATION_RANK_6_False",
+    "VARIATION_RANK_6_True",
+    "CANONICAL_LOCAL_GATE_FAIL_6",
+    "POSITIVE_LOCAL_STATIONARY_MINIMUM_3",
+    "FULL_OLD_VARIATION_COVERED_AT_M3",
+    "GENUINE_BORN_CONTRAST_DOES_NOT_INHERIT_GATE_3",
+    "ACTUAL_NATIVE_CENTERED_SECANT_AT_STATIONARITY_3",
+    "NONZERO_ENDPOINTS_ARE_NOT_STATIONARY_3",
+    "POSITIVE_LOCAL_STATIONARY_MINIMUM_4",
+    "GENUINE_BORN_CONTRAST_DOES_NOT_INHERIT_GATE_4",
+    "ACTUAL_NATIVE_CENTERED_SECANT_AT_STATIONARITY_4",
+    "NONZERO_ENDPOINTS_ARE_NOT_STATIONARY_4",
+    "FULL_PALATINI_ZERO_PHASE_INERTIA_12_12",
+    "PALATINI_BOTH_SIGN_TANGENTS",
+    "FLAT_BASE_IS_FULL_PHYSICAL_STATIONARY",
+    "EXACT_LITERAL_PALATINI_SIGNED_PATH_1",
+    "EXACT_LITERAL_PALATINI_SIGNED_PATH_-1",
+    "INDEPENDENT_DOUBLING_GATE_EXCEPTION_RETAINED"
+  ],
+  "input_sha256": {
+    "02_REGISTRY/research/certificates/a4d_identity_quarter_nonlinear_response_check.py": "f930d5d674b62f0c500b1aa1e28c1b3076a900899767d13b2dd2cd6a59142865",
+    "02_REGISTRY/research/certificates/a4d_j2_fixed_realization_ir_check.py": "83ab02b6fffdc504ed0685fb1be0a3ccfccca5074e753825a383318b86546296",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCanonicalLaplacian.lean": "4aefdc0a4c547e22cb5ce0989d792bc8544ef471a1c08b2be91edc40c59d591e",
+    "03_FORMALIZATION/D0/Geometry/ArchiveCurvatureDensity.lean": "aa3202542181687fd7b66b192531631bda36bcac0b1701e20e9c2e816aa48258",
+    "03_FORMALIZATION/D0/Geometry/ArchiveLocalLaplacianVariation.lean": "511f40788d047494419ab9263edd3e82446085bbb2a483f58d5ff66d04d00a42",
+    "03_FORMALIZATION/D0/Geometry/ArchiveSeamCurvature.lean": "a86bd7c015d8d87cf1125a6287b9937343cf8cbb51d11211c7e2752672e204e8",
+    "03_FORMALIZATION/D0/Geometry/ArchiveVariation.lean": "58224658cc1d53e4fc21403633f708ed47838ce1a1c5b911bf3149445dbfc4c8"
+  },
+  "literal_Palatini_paths": [
+    {
+      "density": "-16*t**2*(t**4 + 16)/((t - 2)**2*(t + 2)**2*(t**2 + 4)**2)",
+      "role0": "Cayley(t G02)",
+      "role1": "Cayley(1 t G12)",
+      "value_at_t_one_tenth": "-256001600/25599680001"
+    },
+    {
+      "density": "16*t**2*(t**4 + 16)/((t - 2)**2*(t + 2)**2*(t**2 + 4)**2)",
+      "role0": "Cayley(t G02)",
+      "role1": "Cayley(-1 t G12)",
+      "value_at_t_one_tenth": "256001600/25599680001"
+    }
+  ],
+  "scope": "Fixed fine Laplacian and lift, actual coarse Laplacian variations. Independent doubled-sector signed readout is not globally excluded.",
+  "stationary_Born_counterexamples": [
+    {
+      "coarse_Lstar": [
+        [
+          "6/5",
+          "-3/5",
+          "-3/5"
+        ],
+        [
+          "-3/5",
+          "9/5",
+          "-6/5"
+        ],
+        [
+          "-3/5",
+          "-6/5",
+          "9/5"
+        ]
+      ],
+      "coarse_size": 3,
+      "fine_L": [
+        [
+          "2",
+          "-1",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "2",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "-1",
+          "2"
+        ]
+      ],
+      "lift_J": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "native_action": "8/5",
+      "native_gradient": [
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "normalized_Born_gradient": [
+        [
+          "1/2"
+        ],
+        [
+          "0"
+        ],
+        [
+          "1"
+        ]
+      ],
+      "positive_conductances": [
+        [
+          "3/5"
+        ],
+        [
+          "6/5"
+        ],
+        [
+          "3/5"
+        ]
+      ],
+      "positive_response_side": "fine",
+      "scope": "affine extension: all old full variation equations",
+      "seam_Dstar": [
+        [
+          "-1/5",
+          "-2/5",
+          "3/5"
+        ],
+        [
+          "-2/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "-2/5",
+          "1/5",
+          "1/5"
+        ],
+        [
+          "-1/5",
+          "3/5",
+          "-2/5"
+        ]
+      ],
+      "signed_gradient": [
+        [
+          "4/5"
+        ],
+        [
+          "0"
+        ],
+        [
+          "8/5"
+        ]
+      ],
+      "signed_output": "8/25"
+    },
+    {
+      "coarse_Lstar": [
+        [
+          "16/13",
+          "-8/13",
+          "0",
+          "-8/13"
+        ],
+        [
+          "-8/13",
+          "22/13",
+          "-14/13",
+          "0"
+        ],
+        [
+          "0",
+          "-14/13",
+          "28/13",
+          "-14/13"
+        ],
+        [
+          "-8/13",
+          "0",
+          "-14/13",
+          "22/13"
+        ]
+      ],
+      "coarse_size": 4,
+      "fine_L": [
+        [
+          "2",
+          "-1",
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "2",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "2",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "2",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "-1",
+          "2"
+        ]
+      ],
+      "lift_J": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "native_action": "22/13",
+      "native_gradient": [
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "normalized_Born_gradient": [
+        [
+          "2/11"
+        ],
+        [
+          "3/11"
+        ],
+        [
+          "0"
+        ],
+        [
+          "1/11"
+        ]
+      ],
+      "positive_conductances": [
+        [
+          "8/13"
+        ],
+        [
+          "14/13"
+        ],
+        [
+          "14/13"
+        ],
+        [
+          "8/13"
+        ]
+      ],
+      "positive_response_side": "coarse",
+      "scope": "affine extension: all genuine local variation equations",
+      "seam_Dstar": [
+        [
+          "-3/13",
+          "-5/13",
+          "0",
+          "8/13"
+        ],
+        [
+          "-5/13",
+          "4/13",
+          "1/13",
+          "0"
+        ],
+        [
+          "0",
+          "1/13",
+          "-2/13",
+          "1/13"
+        ],
+        [
+          "-5/13",
+          "0",
+          "1/13",
+          "4/13"
+        ],
+        [
+          "-3/13",
+          "8/13",
+          "0",
+          "-5/13"
+        ]
+      ],
+      "signed_gradient": [
+        [
+          "4/13"
+        ],
+        [
+          "6/13"
+        ],
+        [
+          "0"
+        ],
+        [
+          "2/13"
+        ]
+      ],
+      "signed_output": "-38/169"
+    }
+  ],
+  "status": "PASS",
+  "variation_controls": [
+    {
+      "canonical_gradient": [
+        [
+          "6"
+        ],
+        [
+          "6"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "coarse_size": 3,
+      "hessian_rank": 3,
+      "local": false,
+      "variation_dimension": 3,
+      "variation_rank": 3
+    },
+    {
+      "canonical_gradient": [
+        [
+          "6"
+        ],
+        [
+          "0"
+        ],
+        [
+          "6"
+        ]
+      ],
+      "coarse_size": 3,
+      "hessian_rank": 3,
+      "local": true,
+      "variation_dimension": 3,
+      "variation_rank": 3
+    },
+    {
+      "canonical_gradient": [
+        [
+          "6"
+        ],
+        [
+          "4"
+        ],
+        [
+          "6"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "coarse_size": 4,
+      "hessian_rank": 6,
+      "local": false,
+      "variation_dimension": 6,
+      "variation_rank": 6
+    },
+    {
+      "canonical_gradient": [
+        [
+          "6"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "6"
+        ]
+      ],
+      "coarse_size": 4,
+      "hessian_rank": 4,
+      "local": true,
+      "variation_dimension": 4,
+      "variation_rank": 4
+    },
+    {
+      "canonical_gradient": [
+        [
+          "6"
+        ],
+        [
+          "4"
+        ],
+        [
+          "4"
+        ],
+        [
+          "6"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "coarse_size": 5,
+      "hessian_rank": 10,
+      "local": false,
+      "variation_dimension": 10,
+      "variation_rank": 10
+    },
+    {
+      "canonical_gradient": [
+        [
+          "6"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "6"
+        ]
+      ],
+      "coarse_size": 5,
+      "hessian_rank": 5,
+      "local": true,
+      "variation_dimension": 5,
+      "variation_rank": 5
+    },
+    {
+      "canonical_gradient": [
+        [
+          "6"
+        ],
+        [
+          "4"
+        ],
+        [
+          "4"
+        ],
+        [
+          "4"
+        ],
+        [
+          "6"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ]
+      ],
+      "coarse_size": 6,
+      "hessian_rank": 15,
+      "local": false,
+      "variation_dimension": 15,
+      "variation_rank": 15
+    },
+    {
+      "canonical_gradient": [
+        [
+          "6"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "0"
+        ],
+        [
+          "6"
+        ]
+      ],
+      "coarse_size": 6,
+      "hessian_rank": 6,
+      "local": true,
+      "variation_dimension": 6,
+      "variation_rank": 6
+    }
+  ]
+}

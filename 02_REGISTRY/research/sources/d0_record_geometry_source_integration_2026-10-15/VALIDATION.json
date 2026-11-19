@@ -1,0 +1,23 @@
+{
+  "GR_closed": false,
+  "actual_mathematical_mutants_rejected": 3,
+  "exact_rational_nonhomogeneous_germ": "w=13/34; four independent amplitude-gradient directions; all 12 target columns; verified Neumann tube",
+  "file_sha256": {
+    "02_REGISTRY/research/A4D_RECORD_PRICE_METRIC_SOURCE_INTEGRATION.md": "27fb145a75b256b5556998f0a196401491a23426b02d222f2e35dad711f165a2",
+    "02_REGISTRY/research/sources/d0_record_geometry_source_integration_2026-10-15/check_phase_metric_source.py": "8da7532d611a60be2137143286c23c2aa26c19297add7f079b57087495204b4d",
+    "02_REGISTRY/research/sources/d0_record_geometry_source_integration_2026-10-15/mutations.json": "057d30798f537c59ebdf60d853f72b10fb270165e9c2bdfe654c0ff6e6b2911d",
+    "02_REGISTRY/research/sources/d0_record_geometry_source_integration_2026-10-15/result.json": "c4a17d1874ce294480aea764db92915026485bf05917f5703a1f78b88363f57d",
+    "02_REGISTRY/research/sources/d0_record_geometry_source_integration_2026-10-15/test_mutations.py": "a441628ace43cd9cf51e8099a84d6d887c57073205f01e4336c5cd85867571e0"
+  },
+  "full_repository_replay": false,
+  "native_physical_admission": false,
+  "new_Lean_compilation": false,
+  "old_nonlinear_replay_repeated": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "preservation_input": "2e183cd64a3fe65bcb55dff3a4ff9cf94c72b990",
+  "python": "3.13.5",
+  "schema": "d0-price-metric-source-validation/1",
+  "source_base": "34f4e68de0e7d917d80d6c139b39dcc44f010b70",
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,40 @@
+{
+  "LC4": {
+    "fisher_contraction": true,
+    "flagged_trace_norm_exact": "3/25",
+    "quantum_input_example": "two noncommuting mixed states on a Bell subspace",
+    "relative_entropy_identity": true,
+    "root_fidelity_product": true
+  },
+  "affine_prices": {
+    "counterexample_affine_total_nonlinear_mark": true,
+    "recovered_mass_ratio_squared": "169/441",
+    "relative_mass_contrast": "4/17",
+    "three_read_error_bound": "257/1020"
+  },
+  "native_reader": {
+    "Q_A": "0.12921646400972442",
+    "Q_B": "0.13015323965476849",
+    "mark_gap": "0.00022114273189661",
+    "q_A": "0.41246988056855516",
+    "q_B": "0.41269102330045177",
+    "scalar_SC5_witness": "L=2, exponents 0 vs 2 only on REPORT y+ and f; real pays for forwards and inverses",
+    "scope": "scalar detector fixture, not a constructed second geometric H.1 field"
+  },
+  "physical_price_affinity_established": false,
+  "single_read_accessible_information": {
+    "active_information_no_tail_nats": 0.012726509812,
+    "active_information_with_tail_nats": 0.606934067446,
+    "checks": "native reflection, Helstrom posterior for both events, finite mirrored readers, correction on all columns, three independent reports",
+    "finite_golden_measurement_exponents": [
+      0,
+      2,
+      4,
+      10
+    ],
+    "mark_error_with_tail": 0.013333396971,
+    "mark_error_without_tail": 0.38196601125,
+    "price_derivative_per_q_for_both": 0.264846981945
+  },
+  "status": "PASS"
+}

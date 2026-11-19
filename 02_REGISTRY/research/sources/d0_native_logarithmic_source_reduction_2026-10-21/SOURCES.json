@@ -1,0 +1,59 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "scientific_owner_pr": 334,
+  "read_source_ref": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+  "read_sources": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "git_blob": "ed00d6609c6f9f88391c7ff076abc65a3524dbd1",
+      "consumer": "Original full real scalar/top preparation and strict geometry chart"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md",
+      "git_blob": "dc22cc51ecea386ecfb8cb8f39c83541f4299750",
+      "consumer": "Literal complete instrument and amplitude-Gram C1 source"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md",
+      "git_blob": "e5841990c5becf562928115012a4dcafd25f6a87",
+      "consumer": "Actual coherent selector, full PR cut and p^2 first-source compression"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md",
+      "git_blob": "6afab2c3d5c8361639f2c58bddeffdfce91b3098",
+      "consumer": "All255 stopped leaves, active old-support faithfulness and inherited source"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+      "git_blob": "829c2fafcf390f6d2d6246b46fb22cc8655756f2",
+      "consumer": "Actual port-counting price and its nonlinear preparation source"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "git_blob": "4d637bae96f94ab0b18c9509bcf64e8609d47375",
+      "consumer": "Different N=1 CQ source: compatibility boundary, not the action reduced here"
+    }
+  ],
+  "source_blob_identifiers_confirmed_by_live_connector": true,
+  "native_spectral_inputs_rerun": false,
+  "earlier_local_package": {
+    "filename": "D0_native_logarithmic_preparation_2026-10-21.zip",
+    "sha256": "87e78fa59b16a491ec0d02aae37c94dcde4aa6f7a0bf3b6f69775e4599faf73a",
+    "status": "previous unpublished analytical input; needed derivations restated and strengthened in PROOF.md"
+  },
+  "external_generic_input": {
+    "author": "A. S. Lewis",
+    "title": "The Convex Analysis of Unitarily Invariant Matrix Functions",
+    "journal": "Journal of Convex Analysis 2 (1995), 173-183",
+    "url": "https://journalofconvexanalysis.com/articles/jca02012/",
+    "use": "Convexity of an absolutely symmetric convex singular-value function"
+  },
+  "validation_environment": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "independent_review_performed": false,
+  "physical_Book_selection": false,
+  "GR_closed": false
+}

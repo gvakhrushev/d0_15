@@ -1,0 +1,172 @@
+{
+  "schema": "a4d-y-center-envelope-symbol-v1",
+  "z": "1",
+  "center_basis": [
+    "Y tangent",
+    "boost-dual tangent"
+  ],
+  "quadratic_coefficients": {
+    "00": [
+      [
+        "-2500/8967",
+        "0"
+      ],
+      [
+        "0",
+        "-49/356"
+      ]
+    ],
+    "01": [
+      [
+        "3200/26901",
+        "0"
+      ],
+      [
+        "0",
+        "56/267"
+      ]
+    ],
+    "02": [
+      [
+        "3200/26901",
+        "0"
+      ],
+      [
+        "0",
+        "56/267"
+      ]
+    ],
+    "03": [
+      [
+        "3200/26901",
+        "0"
+      ],
+      [
+        "0",
+        "56/267"
+      ]
+    ],
+    "11": [
+      [
+        "506710/62769",
+        "0"
+      ],
+      [
+        "0",
+        "200717/6408"
+      ]
+    ],
+    "12": [
+      [
+        "-1527298/188307",
+        "0"
+      ],
+      [
+        "0",
+        "-202253/6408"
+      ]
+    ],
+    "13": [
+      [
+        "-1527298/188307",
+        "0"
+      ],
+      [
+        "0",
+        "-202253/6408"
+      ]
+    ],
+    "22": [
+      [
+        "506710/62769",
+        "0"
+      ],
+      [
+        "0",
+        "200717/6408"
+      ]
+    ],
+    "23": [
+      [
+        "-1527298/188307",
+        "0"
+      ],
+      [
+        "0",
+        "-202253/6408"
+      ]
+    ],
+    "33": [
+      [
+        "506710/62769",
+        "0"
+      ],
+      [
+        "0",
+        "200717/6408"
+      ]
+    ]
+  },
+  "symbol": [
+    [
+      "-2*(26250*t0**2 - 11200*t0*t1 - 11200*t0*t2 - 11200*t0*t3 - 760065*t1**2 + 763649*t1*t2 + 763649*t1*t3 - 760065*t2**2 + 763649*t2*t3 - 760065*t3**2)/188307",
+      "0"
+    ],
+    [
+      "0",
+      "-(882*t0**2 - 1344*t0*t1 - 1344*t0*t2 - 1344*t0*t3 - 200717*t1**2 + 202253*t1*t2 + 202253*t1*t3 - 200717*t2**2 + 202253*t2*t3 - 200717*t3**2)/6408"
+    ]
+  ],
+  "transported_wave_forms": {
+    "Y": "-2/188307 * [26250*(t0-16*s/75)^2-(2283779/2)*r_perp^2]",
+    "dual": "-1/6408 * [882*(t0-16*s/21)^2-(603687/2)*r_perp^2]",
+    "s": "t1+t2+t3",
+    "r_perp^2": "t1^2+t2^2+t3^2-s^2/3"
+  },
+  "stationary_spectra": {
+    "Y": {
+      "full_characteristic_polynomial": "rho*(3087*rho - 37439)**2*(26901*rho + 8524)/256354935669",
+      "full_eigenvalues": [
+        "0",
+        "-8524/26901",
+        "37439/3087 (multiplicity 2)"
+      ],
+      "stationary_characteristic_polynomial": "(3087*rho - 37439)**2*(26901*rho + 1024)/256354935669",
+      "stationary_eigenvalues": [
+        "-1024/26901",
+        "37439/3087 (multiplicity 2)"
+      ],
+      "soft_kernel_vector": [
+        "16/25",
+        "1",
+        "1",
+        "1"
+      ],
+      "stationary_negative_direction": "(1,1,1)",
+      "positive_transverse_plane": "t1+t2+t3=0"
+    },
+    "dual": {
+      "full_characteristic_polynomial": "rho*(48*rho - 2261)**2*(1068*rho + 403)/2460672",
+      "full_eigenvalues": [
+        "0",
+        "-403/1068",
+        "2261/48 (multiplicity 2)"
+      ],
+      "stationary_characteristic_polynomial": "(48*rho - 2261)**2*(267*rho + 64)/615168",
+      "stationary_eigenvalues": [
+        "-64/267",
+        "2261/48 (multiplicity 2)"
+      ],
+      "soft_kernel_vector": [
+        "16/7",
+        "1",
+        "1",
+        "1"
+      ],
+      "stationary_negative_direction": "(1,1,1)",
+      "positive_transverse_plane": "t1+t2+t3=0"
+    }
+  },
+  "interpretation": "two decoupled transported 2+1 hyperbolic center envelopes; no elliptic spectral gap",
+  "nonclaim": "quadratic principal symbol only; nonlinear envelope existence and energy estimate remain open"
+}

@@ -1,0 +1,139 @@
+{
+  "status": "PASS_NUMERICAL_CONFIGURED_N1_GAUGE_FIXED_MULTISLAB_N3_N4_N5",
+  "source_head_old": "4749cc898db04c9d5df39ed6d2856d4999fbae9e",
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE #334",
+  "gauge_theorem": "SO+(1,3)^(n-2) exact free residual frame group; reduced Euler zero iff all original ambient Euler zero with first fixed temporal collar and fixed time ends",
+  "numerical_runs": [
+    {
+      "n": 3,
+      "pf": [
+        1,
+        1,
+        1
+      ],
+      "n_full": 84,
+      "n_gauge_omitted": 6,
+      "n_reduced": 78,
+      "h": 0.12253434977211948,
+      "full_euler_max": 1.2189224895633349e-14,
+      "omitted_euler_max": 3.4814856754323507e-15,
+      "sigma_min_reduced": 0.001226235468059015,
+      "sigma_max_reduced": 1893.9852739444414,
+      "nfev": 41,
+      "source_q": [
+        -0.00018638733843296708,
+        -0.00007877859593753526,
+        0.00003429938216298507
+      ],
+      "source_f": [
+        -0.03133917758679294,
+        -0.0018452379883269199,
+        0.0008030685916108338
+      ]
+    },
+    {
+      "n": 3,
+      "pf": [
+        1,
+        2,
+        1
+      ],
+      "n_full": 84,
+      "n_gauge_omitted": 6,
+      "n_reduced": 78,
+      "h": 0.12253434977211948,
+      "full_euler_max": 1.3930542737866685e-14,
+      "omitted_euler_max": 6.964110157694701e-15,
+      "sigma_min_reduced": 0.001226315199152424,
+      "sigma_max_reduced": 1890.8739453478047,
+      "nfev": 41
+    },
+    {
+      "n": 4,
+      "pf": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "n_full": 126,
+      "n_gauge_omitted": 12,
+      "n_reduced": 114,
+      "h": 0.09190076232908961,
+      "full_euler_max": 2.089581410680003e-14,
+      "omitted_euler_max": 8.195040014531532e-15,
+      "sigma_min_reduced": 0.0005253514921173433,
+      "sigma_max_reduced": 2893.75551902481,
+      "nfev": 46,
+      "source_q": [
+        -0.00013748937662384254,
+        -0.00011796134225077089,
+        -0.000042036476666793346,
+        0.000005321935012155346
+      ],
+      "source_f": [
+        -0.030944898288904343,
+        -0.002763411246768488,
+        -0.000984493061920666,
+        0.00012461819433812193
+      ]
+    },
+    {
+      "n": 5,
+      "pf": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "n_full": 168,
+      "n_gauge_omitted": 18,
+      "n_reduced": 150,
+      "h": 0.07352060986327169,
+      "full_euler_max": 3.3433302570880046e-14,
+      "omitted_euler_max": 1.8357870032583924e-14,
+      "sigma_min_reduced": 0.0002732420555668709,
+      "sigma_max_reduced": 3849.7499934897123,
+      "nfev": 78,
+      "source_q": [
+        -0.00011080611564517201,
+        -0.00012572368427818392,
+        -0.0000721172796967892,
+        -0.00003427143419013136,
+        -0.000009524468009157808
+      ],
+      "source_f": [
+        -0.029569182191441334,
+        -0.0029453379538969537,
+        -0.001689168626962556,
+        -0.0008026133408656211,
+        -0.00022303650674360131
+      ]
+    }
+  ],
+  "additional_validation": {
+    "n3_ungauged_full84_euler_max": 6.816032426025744e-15,
+    "n3_ungauged_full84_direct_Golden_entropy_source_max": 8.421548872687093e-14,
+    "n3_ungauged_full84_analytic_vs_direct_max": 8.160351196352093e-14,
+    "n3_ungauged_raw_Hessian_six_smallest": [
+      4.300290555250072e-12,
+      1.8389800703542e-11,
+      5.433070903561665e-11,
+      5.224752009067807e-10,
+      1.0026569482553681e-9,
+      1.5054998078511386e-9
+    ],
+    "n3_ungauged_raw_Hessian_seventh": 0.0012359298970095792,
+    "n3_and_n4_offshell_exact_same_N1_price_gauge_transform_difference": 0,
+    "n3_and_n4_offshell_original_f_and_q_gauge_max_error": 4.4e-15
+  },
+  "status_scope": {
+    "original_physical_Book03_selected": false,
+    "real_AF_spatial_PF_leaf_compatibility": false,
+    "exact_interval_certified_root": false,
+    "uniform_refinement_or_full_GR": false,
+    "D0_guard_full_scientific_replay": false,
+    "GR_closed": false
+  }
+}

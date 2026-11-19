@@ -1,0 +1,17 @@
+{
+  "schema": "d0-observer-holonomy-validation/1",
+  "ordinary": "PASS",
+  "optimized": "PASS_IDENTICAL_JSON",
+  "exact_checks": 65,
+  "parent_suites_replayed": false,
+  "new_Lean_compilation": false,
+  "native_history_program_admitted": false,
+  "independent_scientific_acceptance": false,
+  "GR_closed": false,
+  "source_pin": "d39d205b0cc6e7d8ce743e5698850731ed46b717",
+  "sha256": {
+    "../../A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md": "cde5e61d6d454e8fbdf5ff88bc2e81ce358a3d5f17bdd77211696ae5f4c37392",
+    "check_observer_holonomy.py": "b6e11c253832567568fe16e8c4425edbb826ba9455092b05aa4a15cf1c73493c",
+    "result.json": "b4664d54088c6bdabbfa9eabbddcaa785e025c8645a9d197f77802973b6105f1"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "head": "c49ebdb12244943d1ec45ef6d148a0432481141e",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md",
+      "sha256": "5ad9461c6f1b8d964f0764697a38120d19d320714bc66d99a42898171e3a01a0",
+      "git_blob": "25b2253436419ec0f0f63c36d40d5d728103a40c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b",
+      "git_blob": "75c40d133a23973a36ba5b95d34b4eb36ca96663"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md",
+      "sha256": "a33e364caed023d74cc70cfdc38380581bbb4f47af96e1c23ad7d3490e9da169",
+      "git_blob": "404c4c288eb3d46aa774f5d2e6b874f0743a33d7"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+      "sha256": "71497086dfad667831c77d69201aea3890909d0cf772791f7df32b8b8c3c07d4",
+      "git_blob": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213"
+    },
+    {
+      "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "git_blob": "050ee972efa0f2ae37206b2ef9e3b4122dbac204"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md",
+      "sha256": "65b23f3b2f9e821a574b90102b1a6d60f8d8f26447971fcd073ae53ff628534b",
+      "git_blob": "4a75e7666560602ce0b13b9ec33a6864dbff84ef"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md",
+      "sha256": "b1e7d9cdd81605e0b7d532ac8a3bfc682e42806367ad5e109324a5812d7d9e50",
+      "git_blob": "15c7a93949cae297b28f5da0e19ade92e63dfa1f"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/inputs/literal_null_all40.py",
+      "sha256": "d3d0b1bc92c25a0963a4ba851d9d587d2191f0bbd8cd8cd0ab58b664852b7026",
+      "git_blob": "e502807955321465903d7ab1a248e0456ac69f60"
+    }
+  ],
+  "scope": "read-only primary density/weight-source composition; original root suites not rerun"
+}

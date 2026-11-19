@@ -1,0 +1,30 @@
+{
+  "GR_closed": false,
+  "document_update": {
+    "previous_sha256": "96dcbcba0b412cd8879c9f822a627060739010e4ef2892ae797054df2e708a78",
+    "reason": "Separate value and directional-source errors; distinguish Hessian norm from inverse on the probability tangent. Executable sources, results and mutants unchanged.",
+    "source_commit": "ef782fe3d64cd973ff2d328a01bdacb934c7c8ec"
+  },
+  "exact_conditions": 925,
+  "executed_mutants": 4,
+  "full_native_action_binding": false,
+  "independent_scientific_acceptance": false,
+  "native_clock_admission": false,
+  "new_Lean_compilation": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "parent_suites_replayed": false,
+  "python": "3.13.5",
+  "schema": "d0-history-density-validation/1",
+  "sha256": {
+    "02_REGISTRY/research/A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md": "81bf09f9cfbcb423899ef6eee47d6da8726e3eaeed7cc3c8d51c9fe29e9a3b38",
+    "02_REGISTRY/research/sources/d0_history_density_palatini_2026-10-16/INPUTS.json": "39848fda26b5b84310f2d834f99f5c23de8d12d1f70e3f93b16237c2ada0d200",
+    "02_REGISTRY/research/sources/d0_history_density_palatini_2026-10-16/README.md": "0aab9c0eae83c107a38108aacb326f364027d72e0509e46a61c06e99d4a21f40",
+    "02_REGISTRY/research/sources/d0_history_density_palatini_2026-10-16/check_density_palatini.py": "46fbb3371b682f1f27dc29ef47e9f6d8243fd4d947568c48d3379cb9157529f1",
+    "02_REGISTRY/research/sources/d0_history_density_palatini_2026-10-16/mutations.json": "148f055af621dc2d41e7f0afbbe9d960478018e33ad02e530d3d83ce00f5c578",
+    "02_REGISTRY/research/sources/d0_history_density_palatini_2026-10-16/result.json": "f143955d26235be9cb3f52fc52e9c8fda595dc5252b83259431d2a0bd05d6b03",
+    "02_REGISTRY/research/sources/d0_history_density_palatini_2026-10-16/test_mutations.py": "993e12f8fade13c9d8addc5cb8da00d113710df9c7dc79ddbbd3aa2031f52b26"
+  },
+  "sympy": "1.14.0",
+  "whole_repository_replayed": false
+}

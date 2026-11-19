@@ -1,0 +1,199 @@
+{
+  "AF_refinement_identified_with_spacetime_mesh": false,
+  "GR_closed": false,
+  "G_CX_SourceI_word_emitted": false,
+  "Lean_or_CI_run": false,
+  "all42_Einstein_source_map_proved": false,
+  "canonical_seed": {
+    "GNS_input_rank": 104,
+    "actual_GNS_compression_error": 2.220446049250313e-16,
+    "all128_protected_archive_units_checked": 128,
+    "all_complex_left_directions_checked": 233,
+    "fixed_original_A0_archive_preserved": true,
+    "full_source_operator_norm": 0.0,
+    "gain_after_scalar_future_T_1": 5.340576171875e-05,
+    "left_permutation_images": [
+      [
+        7,
+        1,
+        8,
+        3,
+        4,
+        10,
+        6,
+        0,
+        2,
+        9,
+        5,
+        11,
+        12
+      ],
+      [
+        7,
+        1,
+        5,
+        3,
+        4,
+        2,
+        6,
+        0
+      ]
+    ],
+    "max_left_source": 0.0,
+    "new_algebra_dimensions": [
+      13,
+      8
+    ],
+    "new_blank_qubits": 0,
+    "new_level": 5,
+    "old_algebra_dimensions": [
+      3,
+      2
+    ],
+    "old_level": 2,
+    "old_right_commutator_max": 0.0,
+    "passive_refinements": [
+      {
+        "GNS_dimension_with_Spin4_oldRIGHT2": 1864,
+        "escape_rank": 48,
+        "input_rank": 104,
+        "left_dimensions": [
+          13,
+          8
+        ],
+        "minus_eigen_multiplicity_with_spectators": 440,
+        "return_rank": 56,
+        "target_level": 5
+      },
+      {
+        "GNS_dimension_with_Spin4_oldRIGHT2": 4880,
+        "escape_rank": 48,
+        "input_rank": 104,
+        "left_dimensions": [
+          21,
+          13
+        ],
+        "minus_eigen_multiplicity_with_spectators": 1152,
+        "return_rank": 56,
+        "target_level": 6
+      },
+      {
+        "GNS_dimension_with_Spin4_oldRIGHT2": 12776,
+        "escape_rank": 48,
+        "input_rank": 104,
+        "left_dimensions": [
+          34,
+          21
+        ],
+        "minus_eigen_multiplicity_with_spectators": 3016,
+        "return_rank": 56,
+        "target_level": 7
+      },
+      {
+        "GNS_dimension_with_Spin4_oldRIGHT2": 33448,
+        "escape_rank": 48,
+        "input_rank": 104,
+        "left_dimensions": [
+          55,
+          34
+        ],
+        "minus_eigen_multiplicity_with_spectators": 7896,
+        "return_rank": 56,
+        "target_level": 8
+      },
+      {
+        "GNS_dimension_with_Spin4_oldRIGHT2": 87568,
+        "escape_rank": 48,
+        "input_rank": 104,
+        "left_dimensions": [
+          89,
+          55
+        ],
+        "minus_eigen_multiplicity_with_spectators": 20672,
+        "return_rank": 56,
+        "target_level": 9
+      }
+    ],
+    "path_transpositions": [
+      [
+        [
+          0,
+          7
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          7
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    ],
+    "path_transpositions_are_native_gate_calls": false,
+    "return_price": 4.577638901538672e-05,
+    "spin_oldright_factor": 8,
+    "supplied_pure_state_preparation": false,
+    "whole_GNS_dimension": 1864
+  },
+  "checker_sha256": "21744ce3ea2e55dbd48a74393fd627b209d49b391e9367330858c519eab6ca94",
+  "checks": 1970,
+  "classification": {
+    "A0_exclusion_scope": "selfadjoint involution with separately vanishing return; not all H+J critical points",
+    "all_spectral_patterns": 243,
+    "constructible_patterns": 70,
+    "fixed_original_archive_constructible_patterns": 40,
+    "necessary_and_sufficient_condition": "even kernel rank in each original central type",
+    "old_dimensions": [
+      3,
+      2
+    ],
+    "parity_excluded_patterns": 173
+  },
+  "complete_heat": {
+    "GNS_dimension_with_spectators": 1864,
+    "N_structural_control_only": 5,
+    "full_heat_diagnostic": 19.774676473422545,
+    "full_two_grade_modes": 3961000,
+    "harmonic_modes": 3345880,
+    "native_raw_clock_length_selected": false,
+    "phase_sum_derivative_error": 5.551115123125783e-17,
+    "theorem_stationarity_for_each_fixed_actual_N": true
+  },
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0"
+  },
+  "incoming_archive_owner": "185ab21cb165cbf420291a6d8a2056dc366e5275",
+  "input_commit": "d9ef0b0558fcabbc097ecf2024a10b31ec0b5852",
+  "nonscalar_future": {
+    "condition": "actual factored cold product A K0; not arbitrary future interference",
+    "criterion": "[A* A, K0 K0*]=0",
+    "future_heat_source_set_to_zero": false,
+    "preserving_future_max_source": 5.945360652724886e-25,
+    "source_identity_error": 9.305781891221561e-25
+  },
+  "physical_AF_actuation_proved": false,
+  "stationarity_does_not_select_geometry": {
+    "distinct_operator_distances": [
+      0.0,
+      0.6763933544955826,
+      1.7495778562973099
+    ],
+    "field_equation_selected_by_this_family": false,
+    "reason": "along this exact family both heat spectrum and return block are constant",
+    "whole_stationarity_inferred_algebraically": true
+  },
+  "status": "PASS_CANONICAL_AF_STATIONARY_REFLECTIONS"
+}

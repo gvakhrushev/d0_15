@@ -1,0 +1,184 @@
+{
+  "head": "2c592f9b9437cd302fcd39352b85212341bff968",
+  "source_pins": [
+    {
+      "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "blob": "79ad345ddef6bb06c638f41721db1a84843e4a9b"
+    },
+    {
+      "path": "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "blob": "7691ddd6f62205fdf1a3da20795c80bfcea59392"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Core/Delta.lean",
+      "blob": "5c22d1ea748ddf805c4aeb4ad95d3ef72372af91"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Defect/Pi0BranchDefect.lean",
+      "blob": "b44a8aee0be0a5ed7eed8134e859c22ab3b958ac"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Defect/ProjectiveGeneration.lean",
+      "blob": "8e5bc5e7ab4dac161524973d75bb0d53f3ecbd6a"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectrum/Pi0BranchDefectGeneration.lean",
+      "blob": "72bf0f4076cd2864b4a830de70c0e8896081a798"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectrum/BranchDefectProjectiveGeneration.lean",
+      "blob": "80cdd2bb6647a974555c1385318b860650cde618"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectrum/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md",
+      "blob": "2e6c42d07655963f7c94ffab81280dc6ee66a9c4"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Geometry/Pi0DiscreteAngle.lean",
+      "blob": "be10e6470f8a1fcf2ed1d5ebab8f09d302453ba0"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectral/DeltaAlphaExact.lean",
+      "blob": "d37d159263a5ffeebafaf16ba3561dccb4f79fbe"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectral/DeltaAlphaMoment.lean",
+      "blob": "4a963d0b27763d1304d2e40b35ba54e09548a497"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectral/DeltaAlphaNormalizationNoGo.lean",
+      "blob": "723faab6d1e711e2219cb58b3024dc5052d79527"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectral/AlphaFeshbachDixmierOwner.lean",
+      "blob": "53a234334f72059f32c05c82d6ce54368215182f"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectral/AlphaProfiniteSpectralTower.lean",
+      "blob": "69329ce1c3c09503033c25a389d0401ab8130b36"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectral/AlphaPresentCoreMaximalityNoGo.lean",
+      "blob": "1b3a1cc5e16848ba6fbe1fe53b3a0dc1af598da1"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Spectral/AlphaLogCesaroMeasurability.lean",
+      "blob": "e8e8e00ba1865efacd55d324084b0f961438d497"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "blob": "bf3699925e35a290e54536c47b5a916832deecfc"
+    },
+    {
+      "path": "04_CERTIFICATES/vp_alpha_feshbach_residue_finite_sum.py",
+      "blob": "87cb699f4d6d357ae045a1c1c5b89b92c3330e7a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "blob": "282350ba238c2a21039002bc22020223d4a90eef"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md",
+      "blob": "b378006fa38617ab7ec8e1cda4431336a0388a68"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/STOPPED_ADAPTIVE_EXTENSION.md",
+      "blob": "b9f2776e280a75e1e66aa70c608e5090a720575c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/stationary_information/EQUATION_EQUIVALENCE_AND_RECORD_TEST.md",
+      "blob": "3b19a0c6c57907bce92c284cb75ebe105a03ac56"
+    }
+  ],
+  "registered_statuses": [
+    {
+      "claim_id": "D0-GEN-INDEX-001",
+      "lean_module": "D0.Spectrum.BranchDefectProjectiveGeneration",
+      "lean_theorem": "exactly_three_projective_branch_defect_generations;defectAction_order_three;defect_generation_card",
+      "lean_status": "LEAN_PROVED",
+      "release_status": "CORE-FORMALIZED",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-GEN-MASS-001",
+      "lean_module": "D0.Spectrum.BranchDefectProjectiveControls",
+      "lean_theorem": "branch_defect_projective_proof_closed",
+      "lean_status": "LEAN_PROVED",
+      "release_status": "NO_GO_PROVED",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-DELTA-ALPHA-EXACT-001",
+      "lean_module": "D0.Spectral.DeltaAlphaExact",
+      "lean_theorem": "delta_alpha_exact",
+      "lean_status": "LEAN_PROVED",
+      "release_status": "CORE-FORMALIZED",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-DELTA-ALPHA-MOMENT-001",
+      "lean_module": "D0.Spectral.DeltaAlphaMoment",
+      "lean_theorem": "delta_alpha_moment",
+      "lean_status": "LEAN_PROVED",
+      "release_status": "CORE-FORMALIZED",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-PI0-DISCRETE-ANGLE-001",
+      "lean_module": "D0.Geometry.Pi0DiscreteAngle",
+      "lean_theorem": "seam_angle_eq_twelve_fifths",
+      "lean_status": "LEAN_PROVED",
+      "release_status": "CORE-FORMALIZED",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-ALPHA-MU2-FULL-LEDGER-001",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CERT-CLOSED",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-ALPHA-MU1-RANKTRACE-001",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CERT-CLOSED",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-ALPHA-FESHBACH-RESIDUE-FINITE-SUM-001",
+      "lean_module": "D0.Spectral.AlphaFeshbachDixmierOwner",
+      "lean_theorem": "alpha_feshbach_residue_finite_sum",
+      "lean_status": "LEAN_PROVED",
+      "release_status": "CERT-CLOSED",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-ALPHA-FESHBACH-DIXMIER-OWNER-001",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "OPEN",
+      "release_status": "PROOF-TARGET",
+      "assumption_ids": ""
+    },
+    {
+      "claim_id": "D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001",
+      "lean_module": "D0.Spectral.AlphaLogCesaroMeasurability",
+      "lean_theorem": "alpha_log_cesaro_ne_mu2",
+      "lean_status": "LEAN_PROVED_WITH_BRIDGE_ASSUMPTIONS",
+      "release_status": "NO-GO",
+      "assumption_ids": "ASSUMP-LINDEMANN-LNPHI"
+    },
+    {
+      "claim_id": "D0-THREE-ZONES-SEED-ORBIT-IDENTIFICATION-001",
+      "lean_module": "",
+      "lean_theorem": "",
+      "lean_status": "PYTHON_CERTIFIED",
+      "release_status": "CERT-CLOSED",
+      "assumption_ids": ""
+    }
+  ],
+  "scope": "read-only synthesis; exact observable is not selected full price"
+}

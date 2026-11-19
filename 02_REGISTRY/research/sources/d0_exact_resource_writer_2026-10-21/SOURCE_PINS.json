@@ -1,0 +1,38 @@
+{
+  "source_ref": "b60a111b43f723a841d253b1d5bd9650c46b2cf8",
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "path": "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "sha256": "541f0635ca266df9d99fce79358b8b7e5800e650cde9cb53a86147d2e7374767"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Research/NativeHistoryActionResponse.lean",
+      "sha256": "fe2664a6815c685ea1477a6421bac433ce3b80e47bc739b266c3a1e29c34446d"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md",
+      "sha256": "a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SCENE_PERRON_DOOB_SINGLE_HISTORY_GOLDEN_INFO_SOURCE_2026_10_19.md",
+      "sha256": "a9c1a1a35a5aee27b0aaac9c2ea37a606b7e3a9cea7aa04e27a2aeff162442c1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "sha256": "42f96fc4cdb4f47878c4d260a003dd2819741c6b4e233581e184f28e9792ebcc"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/FIXED_PROCESSOR_PROGRAM_SOURCE.md",
+      "sha256": "4a879a3bb986aca43f06cec760f882cec4e7c6446efd46d5add8a2f199e9381b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/transitive_preparation/TRANSITIVE_RESOURCE_PREPARATION.md",
+      "sha256": "8348922c3a093b06b91ad52249177238e8abab89057bdaf002deac0fd1ced1d7"
+    }
+  ],
+  "verification": "Historical git-show bytes, not mutable working-tree routing owners"
+}

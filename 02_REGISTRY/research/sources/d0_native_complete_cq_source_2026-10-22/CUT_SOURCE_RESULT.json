@@ -1,0 +1,50 @@
+{
+  "GR_closed": false,
+  "actual_ready_q0": 6.32458947e-07,
+  "baseline": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+  "bound_proof": "analytic; exact rational coefficient; no sampled-uniform claim",
+  "calibration_and_integer_dimension_controls": true,
+  "checks": 100,
+  "default_L913_identified_with_cut_heat": false,
+  "entire_critical_Hessian_inertia_preserved": true,
+  "exact_excess_over_two_thirds": "1397/151647",
+  "exact_gain_lower_bound": "34165/50549",
+  "full_D0_price_selected": false,
+  "full_moving_P_U_cotangent": true,
+  "independent_preparation_closed": false,
+  "matrix_directions": [
+    {
+      "df": -0.009452482355,
+      "f": 0.955046505289,
+      "name": "controller",
+      "source": -9.73561e-07
+    },
+    {
+      "df": -0.013978353665,
+      "f": 0.955046505289,
+      "name": "moving_query",
+      "source": -1.439704e-06
+    },
+    {
+      "df": -0.314130462505,
+      "f": 0.955046505289,
+      "name": "moving_preparation",
+      "source": -3.2353937e-05
+    },
+    {
+      "df": -0.337561298524,
+      "f": 0.955046505289,
+      "name": "all_moving",
+      "source": -3.4767201e-05
+    }
+  ],
+  "matrix_secant_tolerance": "8e-11 absolute, 3e-6 relative",
+  "native_tangents_physically_selected": false,
+  "normal_gradient_norm_at_lower_dimension_fixture": 5.24909927e-07,
+  "numerical_matrix_tolerance": "2e-12 absolute, 2e-10 relative",
+  "older_suites_replayed": false,
+  "retained_work_dimension_lower_bound": 50549,
+  "s": 128,
+  "status": "PASS_COMPLETE_READY_CUT_SOURCE_EQUIVALENCE",
+  "z": "2^-20"
+}

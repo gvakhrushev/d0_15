@@ -1,0 +1,87 @@
+{
+  "artifact_hashes": {
+    "PROOF.md": "23794bfbfbbe8c3524f370461ccc616d2c7653318e4a578250354db378fa26a2",
+    "check_density_rigidity.py": "ecac5ea134d01f1b9d4b1521a7879788bd7ac69586dd75072834afb65b656531",
+    "SOURCE_PINS.json": "d12f14b6b3f11cad97e6981b6055012e0d5731d7140209e4535d715d6496abc1",
+    "README.md": "d57450deffe7b96cb4cc7dff9c5eb295f7149c5b0deb8e194e3761675ba25557",
+    "RESULT.json": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b",
+    "RESULT_OPTIMIZED.json": "38f72c05c75a82ca2e4174d7dbdd28336283be0ba1d687bccab2151b8747e98b",
+    "inputs/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21_dfc0275e.md": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd"
+  },
+  "source_provenance": [
+    {
+      "path": "02_REGISTRY/research/A4D_CONDITIONAL_NON_NULL_BIANCHI_COMPLETE_PRICE_2026_10_21.md",
+      "historical_blob": "98ca6dc3566831cd6ae2bbf5d4115e28c315f519",
+      "historical_sha256": "cc856a24ded799d1c17e1ec645991f8206f187b49c61ab1debbc5e4c321a87f5",
+      "bytes": 14619,
+      "snapshot": null
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_NATIVE_RADIAL_MINIMIZATION_ALL_ORDERS_2026_10_21.md",
+      "historical_blob": "42be6be08c934377d19ce0ece156d2056e4abcdd",
+      "historical_sha256": "6507bbbc15bce28a2352564c3e0d8102bbd4435d13fcd39827d1cab61a130621",
+      "bytes": 16155,
+      "snapshot": null
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md",
+      "historical_blob": "25b2253436419ec0f0f63c36d40d5d728103a40c",
+      "historical_sha256": "5ad9461c6f1b8d964f0764697a38120d19d320714bc66d99a42898171e3a01a0",
+      "bytes": 15207,
+      "snapshot": null
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ALL_CAP_NULL_MATTER_CAUSAL_CONE_2026_10_21.md",
+      "historical_blob": "6ff2139cfaa674fc25773369f95d842482fd9f07",
+      "historical_sha256": "d089347aab15853075561eb292c03499dac5197a73f84745010b70131f53ab29",
+      "bytes": 18776,
+      "snapshot": null
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "historical_blob": "4d637bae96f94ab0b18c9509bcf64e8609d47375",
+      "historical_sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd",
+      "bytes": 18886,
+      "snapshot": "inputs/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21_dfc0275e.md"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "historical_blob": "deff5f8879cec7d8c3989f941553b4a873c3c39c",
+      "historical_sha256": "62aa5b45923e6e9d51e2075507cd114d42c5f7d1f5107a99e1b08be053e3c034",
+      "bytes": 15606,
+      "snapshot": null
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "historical_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736",
+      "historical_sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851",
+      "bytes": 51006,
+      "snapshot": null
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "historical_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "historical_sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "bytes": 16828,
+      "snapshot": null
+    }
+  ],
+  "reconstructed_previous_pins_sha256": "4483b7e1332eb794875d62ae8327c98dad8de26f974440f1763c840fd2210c6f",
+  "reconstructed_previous_readme_sha256": "f11241e3e04c02f527e0c079294945de8b9a4081e6cbb243e2c2a9de8f8af406",
+  "remote_spatial_change": {
+    "head": "8463b0a4",
+    "original_bytes": 18886,
+    "new_bytes": 20156,
+    "appended_bytes": 1270,
+    "append_only": true,
+    "append_text": "\n## 7. Physical composition of query, Book03 and input equations\n\nThe [physical cap-one composition](A4D_PHYSICAL_CAP1_EXECUTION_COMPOSITION_2026_10_21.md) identifies the exact native six-letter value word and its missing transverse query jet, derives the complete absolute Book03/HJR valuation defect on the same record, and solves the free full-input stationarity equation. The generated bank states continue to be handled by the existing causal adjoint; an actually independent full LEFT orbit would screen the nonzero query source, while the existing rank-two cut preserves it with a computable normal reaction. A separate existing restricted map evolves the full \\((q,m)\\) sector through a moving 16D CAR gate and uniquely updates the metric under a stated endpoint-isometry premise. It is not yet identified with the cap-one 8D two-query instrument, has no demonstrated physical admission, and leaves an explicit candidate-specific $H+J+R$ price residual. Thus the 42-source CQ result remains complete on its declared execution, while physical closure requires one admitted, fully priced composition connecting the 42 directions, this CAR map, the report instrument, Book03 and all independent upstream inputs. No physical admission or `GR_closed` claim is added.\n"
+  },
+  "replay": {
+    "checks": 101,
+    "checked_source_pins": 8,
+    "normal_optimized_and_previous_results_identical": true
+  },
+  "status": "PASS",
+  "reconstructed_previous_checker_sha256": "5a23285b2be2a40b6060267ac4f92c88eb2ead5ae58a86854a2a5f01810c77fb",
+  "checker_delta": "Only packet-relative manifest/snapshot routing; all previous scientific code retained exactly."
+}

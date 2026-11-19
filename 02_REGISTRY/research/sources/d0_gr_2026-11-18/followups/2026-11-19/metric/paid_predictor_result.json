@@ -1,0 +1,358 @@
+{
+  "schema": "d0.paid-binary-predictor/1",
+  "status": "PASS",
+  "q_star": [
+    "0.412469880568555",
+    "0.412469880568556"
+  ],
+  "fixed_log_unit": "ln(phi)",
+  "labels": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "classifiers": {
+    "complementary_axis_n_minus_12": {
+      "conditional_e0_joint_exact": [
+        [
+          -899125459336,
+          0,
+          1454815553357,
+          0
+        ],
+        [
+          899125459336,
+          0,
+          -1454815553356,
+          0
+        ],
+        [
+          20853757681,
+          0,
+          -33742088721,
+          0
+        ],
+        [
+          -20853757680,
+          0,
+          33742088720,
+          0
+        ]
+      ],
+      "joint_B_Y_at_qstar": [
+        [
+          "0.58146474090876",
+          "0.58146474090877"
+        ],
+        [
+          "0.00606537852268",
+          "0.00606537852269"
+        ],
+        [
+          "0.00731449636770",
+          "0.00731449636771"
+        ],
+        [
+          "0.40515538420085",
+          "0.40515538420086"
+        ]
+      ],
+      "error_probability": [
+        "0.013379874890384",
+        "0.013379874890385"
+      ],
+      "Pr_Y_1": [
+        "0.411220762723532",
+        "0.411220762723533"
+      ],
+      "joint_shannon_nats": [
+        "0.748261373806584",
+        "0.748261373806585"
+      ],
+      "two_code_cost_minus_info": [
+        "1.268738468719269",
+        "1.268738468719270"
+      ],
+      "slope_wrt_q": [
+        "1.255366439238911",
+        "1.255366439238912"
+      ],
+      "gate_control": {
+        "n": -12,
+        "expanded_square_calls_after_first_NPS2": 57,
+        "fixture_bank_enter_and_leave_calls": 2,
+        "after_first_code_inventory": {
+          "CX": 33,
+          "G": 16,
+          "SourceI": 8
+        },
+        "fresh_born_work_bits": 2,
+        "first_code_protected": true,
+        "old_tail_state_transferred_to_live_d": true,
+        "separate_record_E": false
+      }
+    },
+    "complementary_axis_n2": {
+      "conditional_e0_joint_exact": [
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          13,
+          0,
+          -21,
+          0
+        ],
+        [
+          -12,
+          0,
+          20,
+          0
+        ]
+      ],
+      "joint_B_Y_at_qstar": [
+        [
+          "0.58477958725085",
+          "0.58477958725086"
+        ],
+        [
+          "0.00275053218058",
+          "0.00275053218059"
+        ],
+        [
+          "0.01853570407162",
+          "0.01853570407163"
+        ],
+        [
+          "0.39393417649693",
+          "0.39393417649694"
+        ]
+      ],
+      "error_probability": [
+        "0.021286236252208",
+        "0.021286236252209"
+      ],
+      "Pr_Y_1": [
+        "0.396684708677518",
+        "0.396684708677519"
+      ],
+      "joint_shannon_nats": [
+        "0.770862401714310",
+        "0.770862401714311"
+      ],
+      "two_code_cost_minus_info": [
+        "1.207235514171743",
+        "1.207235514171744"
+      ],
+      "slope_wrt_q": [
+        "0.927859138993940",
+        "0.927859138993941"
+      ],
+      "gate_control": {
+        "n": 2,
+        "expanded_square_calls_after_first_NPS2": 61,
+        "fixture_bank_enter_and_leave_calls": 2,
+        "after_first_code_inventory": {
+          "CX": 45,
+          "G": 4,
+          "SourceI": 12
+        },
+        "fresh_born_work_bits": 2,
+        "first_code_protected": true,
+        "old_tail_state_transferred_to_live_d": true,
+        "separate_record_E": false
+      }
+    },
+    "zero_axis_n0_given_paid_one": {
+      "conditional_e0_joint_exact": [
+        [
+          8,
+          0,
+          -12,
+          0
+        ],
+        [
+          -8,
+          0,
+          13,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          -1,
+          0
+        ]
+      ],
+      "joint_B_Y_at_qstar": [
+        [
+          "0.55753872023815",
+          "0.55753872023816"
+        ],
+        [
+          "0.02999139919329",
+          "0.02999139919330"
+        ],
+        [
+          "0.00445045455533",
+          "0.00445045455534"
+        ],
+        [
+          "0.40801942601321",
+          "0.40801942601322"
+        ]
+      ],
+      "error_probability": [
+        "0.034441853748633",
+        "0.034441853748634"
+      ],
+      "Pr_Y_1": [
+        "0.438010825206511",
+        "0.438010825206512"
+      ],
+      "joint_shannon_nats": [
+        "0.820765531979320",
+        "0.820765531979321"
+      ],
+      "two_code_cost_minus_info": [
+        "1.144858588368329",
+        "1.144858588368330"
+      ],
+      "slope_wrt_q": [
+        "0.575595025753653",
+        "0.575595025753654"
+      ],
+      "gate_control": {
+        "n": 0,
+        "expanded_square_calls_after_first_NPS2": 46,
+        "fixture_bank_enter_and_leave_calls": 2,
+        "after_first_code_inventory": {
+          "CX": 34,
+          "G": 4,
+          "SourceI": 8
+        },
+        "fresh_born_work_bits": 3,
+        "first_code_protected": true,
+        "old_tail_state_transferred_to_live_d": true,
+        "separate_record_E": false
+      }
+    },
+    "zero_axis_n0_full_noisy_flag": {
+      "conditional_e0_joint_exact": [
+        [
+          -272,
+          0,
+          441,
+          0
+        ],
+        [
+          272,
+          0,
+          -440,
+          0
+        ],
+        [
+          13,
+          0,
+          -21,
+          0
+        ],
+        [
+          -12,
+          0,
+          20,
+          0
+        ]
+      ],
+      "joint_B_Y_at_qstar": [
+        [
+          "0.52813951565125",
+          "0.52813951565126"
+        ],
+        [
+          "0.05939060378018",
+          "0.05939060378019"
+        ],
+        [
+          "0.02694058251828",
+          "0.02694058251829"
+        ],
+        [
+          "0.38552929805026",
+          "0.38552929805027"
+        ]
+      ],
+      "error_probability": [
+        "0.086331186298474",
+        "0.086331186298475"
+      ],
+      "Pr_Y_1": [
+        "0.444919901830450",
+        "0.444919901830451"
+      ],
+      "joint_shannon_nats": [
+        "0.969687166895281",
+        "0.969687166895282"
+      ],
+      "two_code_cost_minus_info": [
+        "0.842295563184472",
+        "0.842295563184473"
+      ],
+      "slope_wrt_q": [
+        "0.791941895317423",
+        "0.791941895317424"
+      ],
+      "gate_control": {
+        "n": 0,
+        "expanded_square_calls_after_first_NPS2": 47,
+        "fixture_bank_enter_and_leave_calls": 2,
+        "after_first_code_inventory": {
+          "CX": 34,
+          "G": 5,
+          "SourceI": 8
+        },
+        "fresh_born_work_bits": 3,
+        "first_code_protected": true,
+        "old_tail_state_transferred_to_live_d": true,
+        "separate_record_E": false
+      }
+    }
+  },
+  "ideal_helstrom": {
+    "error": [
+      "0.013333396971216",
+      "0.013333396971217"
+    ],
+    "Pr_Y_1": [
+      "0.410071783345416",
+      "0.410071783345417"
+    ],
+    "two_code_cost_minus_info": [
+      "1.268765441865035",
+      "1.268765441865036"
+    ],
+    "slope_wrt_q": [
+      "1.250957185108368",
+      "1.250957185108369"
+    ],
+    "finite_exact_gate_claim": false
+  },
+  "physical_scope": "B and Y coded lengths and Shannon gain of these two registered labels only; any additional services, retained material state, and underlying Book edge charges are separate",
+  "GR_closed": false
+}

@@ -1,0 +1,31 @@
+{
+  "created": "2026-10-21",
+  "kind": "bounded_existing_execution_application",
+  "files": [
+    {
+      "path": "ONE_STAGE_COMPLETE_SPATIAL_WEIGHT_THEOREM.md",
+      "sha256": "960f2d1edc4f151607f9c4ecc76e1522d5dee08922319a3700c0cc3fc96458d1",
+      "bytes": 18782
+    },
+    {
+      "path": "README.md",
+      "sha256": "ad7c85286801c66f8f761d4c67809f1329ffbd23ef8dd4aa8a92c7186d55e523",
+      "bytes": 3213
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "345ac5af0a2001ce4e1864245e4f27773b59512de962683a0baa423371f1f062",
+      "bytes": 4313
+    },
+    {
+      "path": "check_same_execution_spatial_weights.py",
+      "sha256": "8ba3f1c4ed3cfb274d9c94ed950994a3a1e357281d26769cf4dd3e8b283cc0f3",
+      "bytes": 5338
+    },
+    {
+      "path": "verification_results.json",
+      "sha256": "ca64fc6860027167dd91530b66e95831ee320a2857cb6ca72682db3ea449aaf4",
+      "bytes": 2891
+    }
+  ]
+}

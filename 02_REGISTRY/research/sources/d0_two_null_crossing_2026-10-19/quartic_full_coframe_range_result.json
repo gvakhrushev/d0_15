@@ -1,0 +1,93 @@
+{
+  "schema": "d0-exact-research-result/v1",
+  "claim": "exact local mixed [a^2*b^2] coefficient of the original 24-link plus 16-coframe finite Cartan equations with all quartic coframe modes admitted",
+  "status": "PASS_SCOPED_LOCAL_MIXED_QUARTIC_FULL_COFRAME_JET",
+  "source_base_commit": "83537e03543ca9b08a7408fcf786e2f3c98a3d3c",
+  "latest_pr_head_seen_before_rebase": "7887418746b0328a994712ad561cede8ffe0032d",
+  "computation": {
+    "schema": "d0-exact-research-result/v1",
+    "status": "PASS_MIXED_QUARTIC_FULL_COFRAME_40_EULER_JET",
+    "scope": "local unwrapped polynomial perturbative jet only",
+    "amplitude": "a^2*b^2",
+    "A": [
+      1,
+      0
+    ],
+    "B": [
+      0,
+      1
+    ],
+    "geometry_area_scale": "sigma=-(x^2+y^2)^2/128",
+    "joint_cubic_affine_kernel_parameters_released": 172,
+    "quartic_link_unknowns": 504,
+    "independent_quartic_coframe_unknowns": 240,
+    "quartic_coframe_input_spatial_degree": 4,
+    "link_input_spatial_degree": 5,
+    "link_output_spatial_degree": 4,
+    "coframe_output_spatial_degree": 4,
+    "response_shape": [
+      600,
+      916
+    ],
+    "response_is_exact_rational_affine_map": true,
+    "exact_solver_message": null,
+    "periodic_carrier_root": false,
+    "all_order_solution": false,
+    "native_price_selection": false,
+    "physical_gr_closure": false,
+    "GR_closed": false
+  },
+  "verification": {
+    "joint_cubic_family_lower_40_rows": "PASS: source_profile checks the affected degree-3 rows symbolically for all 172 affine-kernel parameters",
+    "mixed_quartic_all_40_rows": "PASS: exact substitution into 600 rational spatial coefficient equations (40 Euler rows, support through degree 4)",
+    "proper_lorentz_links": "PASS through total amplitude degree four",
+    "quartic_sectors_covered": [
+      "a^2*b^2"
+    ]
+  },
+  "replay": {
+    "command": "python3 02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_full_coframe_range.py",
+    "runtime": {
+      "python": "3.9.6",
+      "sympy": "1.14.0"
+    },
+    "checker": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_full_coframe_range.py",
+      "sha256": "9fc10111ef87e7b7de591d4ea077a76efc54f5a3f38cd675dd8fc28e292bfce2"
+    },
+    "output": {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/quartic_full_coframe_range_output.txt",
+      "sha256": "4dc5304689e2a8da18f17f0020b2ecb82850dfc947d674e7dc4b51bb9ff5928c"
+    }
+  },
+  "prerequisites": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_cubic_finite_cartan_range.py",
+      "sha256": "d900511488b8320c69bf3d0950328caffb270ed20f1dcac44e01e3d72077b9b6",
+      "result": "PASS: 400 finite Euler coefficient identities through total amplitude degree 3; all affected cubic rows pass over the joint affine family"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_quartic_finite_cartan_range.py",
+      "sha256": "266a84853a96a666294ef0e685703c1284f755d1980c32449080e9d10c14126b",
+      "result": "NEGATIVE CONTROL: fixed orbit-area quartic coframe ansatz has exact range obstruction in the 480x676 mixed system"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_two_null_crossing_2026-10-19/check_mixed_cartan_exact.py",
+      "sha256": "05b79065744748d73dfcf55a931cc4d7b4076f70839adb19c5836a1fe892e493",
+      "result": "PASS: original exact mixed quadratic owner"
+    }
+  ],
+  "limits": [
+    "Only the mixed amplitude [a^2*b^2] was solved for A=(1,0), B=(0,1).",
+    "Local unwrapped polynomial jet only: quartic coframe degree at most 4 and proper-Lorentz link logs degree at most 5.",
+    "The other quartic amplitude sectors, periodic-carrier recovery, convergence, uniform refinement, and an all-order solution remain open.",
+    "This finite vacuum coefficient does not identify a native D0 price, physical matter source, or positive GR closure."
+  ],
+  "closure": {
+    "periodic_carrier_root": false,
+    "all_order_solution": false,
+    "native_price_selection": false,
+    "physical_gr_closure": false,
+    "GR_closed": false
+  }
+}

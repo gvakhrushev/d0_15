@@ -1,0 +1,265 @@
+{
+  "check_names": [
+    "the reduced copy is the actual three-CX addressed permutation on ALL64 private/record columns",
+    "the real base probability law is complete before any entropy comparison",
+    "optimized symbolic R and Rinv have paid twelve-L-plus-two stages L1",
+    "the actual native completion agrees with R U Rdagger on ALL64 columns L1",
+    "the completed body is exactly I_helper and I_spin on arbitrary input columns L1",
+    "actual A_L j_aux equals A j_aux with port/helper/spin arbitrary L1",
+    "whole known-input return C and F are the original scalar law L1",
+    "native alternatives have the SAME complete primitive inventory L1",
+    "the literal recorded code pays both copy legs and retains all nine-qubit columns L1",
+    "all eight actual final ACTIVE labels have the stated scalar protected effects L1",
+    "every OLD joint control-port marginal stays unchanged L1",
+    "reduced ALL64 copy transport is exact and retains the same blank corner L1",
+    "the actual complete registered label law equals the full private outcome law L1",
+    "all-column conjugacy preserves the full spectrum and every retained heat mode L1",
+    "actual full-carrier label charges pull back to their scalar unknown-input cost effect L1",
+    "optimized symbolic R and Rinv have paid twelve-L-plus-two stages L2",
+    "the actual native completion agrees with R U Rdagger on ALL64 columns L2",
+    "the completed body is exactly I_helper and I_spin on arbitrary input columns L2",
+    "actual A_L j_aux equals A j_aux with port/helper/spin arbitrary L2",
+    "whole known-input return C and F are the original scalar law L2",
+    "native alternatives have the SAME complete primitive inventory L2",
+    "the literal recorded code pays both copy legs and retains all nine-qubit columns L2",
+    "all eight actual final ACTIVE labels have the stated scalar protected effects L2",
+    "every OLD joint control-port marginal stays unchanged L2",
+    "reduced ALL64 copy transport is exact and retains the same blank corner L2",
+    "the actual complete registered label law equals the full private outcome law L2",
+    "all-column conjugacy preserves the full spectrum and every retained heat mode L2",
+    "actual full-carrier label charges pull back to their scalar unknown-input cost effect L2",
+    "entropy ordering has an EXACT algebraic certificate, not a floating sign",
+    "independent complete probability entropy agrees with the exact CQ decomposition",
+    "the strict finite information gap agrees with its proved conditional entropy formula",
+    "coarse blank-return entropy omits the actual nonreturn-label entropy",
+    "the literal base law depends only on source q and preserves its total first source"
+  ],
+  "checks": 33,
+  "generated_utc": "2026-10-25T07:08:13.946551+00:00",
+  "native_rows": [
+    {
+      "CX": 66,
+      "G": 20,
+      "L": 1,
+      "SourceI": 40,
+      "algorithmic_initialized_aux_rank": 16,
+      "body_stages": 126,
+      "charge_scope": "supplied label evaluation model, not physical gate Cost selection",
+      "cut_rank": 4,
+      "fine_probabilities": [
+        "1415810241 - 633169588*sqrt(5)",
+        "0",
+        "-875051738 + 391335034*sqrt(5)",
+        "0",
+        "-25404138882 + 11361076290*sqrt(5)",
+        "23988414744 - 10727945208*sqrt(5)",
+        "15700621284 - 7021531296*sqrt(5)",
+        "-14825655648 + 6630234768*sqrt(5)"
+      ],
+      "full_body_columns": 64,
+      "paired_modes": 135168,
+      "recorded_dimension": 512,
+      "recorded_qubits": 9,
+      "recorded_stages": 132,
+      "scalar_charge_model": "6999552884 - 3130295212*sqrt(5)",
+      "source_forward_stages": 19,
+      "source_power": 5
+    },
+    {
+      "CX": 66,
+      "G": 20,
+      "L": 2,
+      "SourceI": 40,
+      "algorithmic_initialized_aux_rank": 16,
+      "body_stages": 126,
+      "charge_scope": "supplied label evaluation model, not physical gate Cost selection",
+      "cut_rank": 4,
+      "fine_probabilities": [
+        "1415810241 - 633169588*sqrt(5)",
+        "0",
+        "-875051738 + 391335034*sqrt(5)",
+        "0",
+        "-1723234271562 + 770653794474*sqrt(5)",
+        "1721818547424 - 770020663392*sqrt(5)",
+        "1065017350404 - 476290238544*sqrt(5)",
+        "-1064142384768 + 475898942016*sqrt(5)"
+      ],
+      "full_body_columns": 64,
+      "paired_modes": 135168,
+      "recorded_dimension": 512,
+      "recorded_qubits": 9,
+      "recorded_stages": 132,
+      "scalar_charge_model": "655512956444 - 293154306148*sqrt(5)",
+      "source_forward_stages": 31,
+      "source_power": 5
+    }
+  ],
+  "paired_heat_noninterval_decimal": "11.0501880866930025971533891185857256019291363399516719133353419544230358741109060192020341",
+  "phase_multiplicities_body": {
+    "+2theta": 16,
+    "-2theta": 16,
+    "0": 32
+  },
+  "phase_multiplicities_recorded": {
+    "+2theta": 128,
+    "-2theta": 128,
+    "0": 256
+  },
+  "q": "10163/2 - 4545*sqrt(5)/2",
+  "registered_info_gap_noninterval_decimal": "0.0156799305335757825122791880088946703092416273585422143394647016746505700153932696172901338",
+  "registered_info_noninterval_decimals": {
+    "1": "0.26057305395145723643127988627872166967709241303987700436733477557469290509894839523929878",
+    "2": "0.276252984485033018943559074287616339986334040398419218706799477249343475114341664856588914"
+  },
+  "scope": [
+    "new ALL64 native-body comparison and actual same-inventory 132-stage recording code",
+    "actual9-qubit record code validated/counted; reduced64 copy checked; no512 matrix/clock simulation",
+    "all old registered diagonal marginals, source isometry, full corner and spectrum fixed",
+    "fine registered Info changes; no full future-profile equivalence claimed",
+    "full record entropy is a supplied CQ component, not a new compulsory Book Info axiom",
+    "scalar charge model is not a physical Cost tariff or additive ledger binding",
+    "no continuous native angle/controller admission, old READY/root/Lean replay or GR promotion"
+  ],
+  "section_pins": [
+    {
+      "bytes": 12662,
+      "heading": "## 7j.",
+      "sha256": "d072b9d1fa81bd46d8a95dca5fefd35d63d6fa53cc5817a112ec29208f3dd837"
+    },
+    {
+      "bytes": 17077,
+      "heading": "## 7x.",
+      "sha256": "ef3d27695d6087da94d2f76f7cd7fc16a2e1aaabc733937e905918a7df53baba"
+    },
+    {
+      "bytes": 8472,
+      "heading": "## 7y.",
+      "sha256": "c9aea257583a111ec49f5113e0ac318b585037501dd223c79a8a5c719e5fdc37"
+    },
+    {
+      "bytes": 8847,
+      "heading": "## 7ai.",
+      "sha256": "b85894771aefa1b9a72829a82d6d05e10d4a5d1c5571ed3ad7b2648ebe7f2022"
+    },
+    {
+      "bytes": 9239,
+      "heading": "## 7aj.",
+      "sha256": "7ce0153406c8d6b163e059eae5046da4d0a750da9558d8b10ab9e1be6f0d48be"
+    },
+    {
+      "bytes": 10616,
+      "heading": "## 7ak.",
+      "sha256": "fbd5dfbb3c632c621dea184acf324342616648b900a1046026f21bf224a575cd"
+    }
+  ],
+  "source_column_scope": "ALL initialized c0,junk0 inputs, port/helper/spin arbitrary",
+  "source_pins": [
+    {
+      "bytes": 5316,
+      "path": "02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/helper.py",
+      "sha256": "d24bf83a39e58865bb8733b5b40195ac7a31e2bcca6dc3aee56b36eb445400c6"
+    },
+    {
+      "bytes": 13977,
+      "path": "02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/check_complete_record.py",
+      "sha256": "e0a00b2f2403e21ed0e4ac7c4b15c588f22b1f36c4caf794758dfa266e580005"
+    },
+    {
+      "bytes": 21754,
+      "path": "02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/CQ_SOURCE.md",
+      "sha256": "bf1c2065c956cced649007128152158e03171c76da04a05c89b899c76988b4e5"
+    },
+    {
+      "bytes": 23168,
+      "path": "02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/COMPLETION_MAP.md",
+      "sha256": "f26b7f7dd179643638ea57b521b9fbc742b7fdbca9e168583d5c419d0a08bfe0"
+    },
+    {
+      "bytes": 17833,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "bytes": 9896,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/book_price.py",
+      "sha256": "7c325fe6322298e13c2380522e9645cc228d8d5db2d7741368310690b80b095c"
+    },
+    {
+      "bytes": 7437,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/known_port.py",
+      "sha256": "0e40a798dfb966aae4151437075dee691aa0ecd030f5288a3b20ea31155375bd"
+    },
+    {
+      "bytes": 13532,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/NATIVE_IMPLEMENTATION.md",
+      "sha256": "bbab7e03eb9acff6265e7e88959f28902c0a9efb5075940327717af83fa3b9ba"
+    },
+    {
+      "bytes": 26168,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/SOURCE_TRANSFER.md",
+      "sha256": "b30663e5365ccdebf2b21e35820f39f063671e246d69f29abad891ac18285e19"
+    },
+    {
+      "bytes": 14998,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/CHECK_RESULT.json",
+      "sha256": "5f004ddb26d47105cc26d1bc90236a3223e5179192630e5f75c161e5a1ce8d07"
+    },
+    {
+      "bytes": 37035,
+      "path": "02_REGISTRY/research/sources/d0_native_recorded_info_source_2026-10-25/PROOF.md",
+      "sha256": "30daf41733cf14b9f8a6c93ba61606ba91621c9e24edc14f2f8b6543e8e6efd9"
+    },
+    {
+      "bytes": 8246,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/reflected_report.py",
+      "sha256": "b248c31f3fd3bcf377a5bb4548507d7c62f8c8d28dca0626285a8a9cec9112b7"
+    },
+    {
+      "bytes": 21592,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/PROOF.md",
+      "sha256": "627be34a64654c6a407bf5a542295f89d156c158feb584961a5e1870e3bbb3a7"
+    },
+    {
+      "bytes": 25854,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/COHORT_THEOREM.md",
+      "sha256": "c90e41bd4c97e63427e38e849c8a96a842c8abc2615f1770e6669a917c8efaa0"
+    },
+    {
+      "bytes": 28434,
+      "path": "02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/TASK_MAP.md",
+      "sha256": "8b1b0dc3108c513c02512fbbec565d8fad3d5e40ebf913d727bfab605d821e3d"
+    },
+    {
+      "bytes": 20285,
+      "path": "02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/HEAT_TRANSFER.md",
+      "sha256": "21b87878c32ec9786338831a3d1ea4aeec4efbdf84e22e446e8ded629acba8c6"
+    },
+    {
+      "bytes": 9457,
+      "path": "02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/CHECK_RESULT.json",
+      "sha256": "2c42e2bb5403bbc950d66f9e17843b127a8dd1bef6fa571af5382ff35b9be654"
+    },
+    {
+      "bytes": 26195,
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_quantum_balance_2026-10-22/RAW_PARTITION_APPLICATION.md",
+      "sha256": "aa1f1ca9c91f3a5c7ef36920357aeb417227365d1e22b3176c7d7ef90fd73574"
+    },
+    {
+      "bytes": 14746,
+      "path": "02_REGISTRY/research/A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md",
+      "sha256": "4e6a9b41bd5cd0bd19d9946a77a2418d1844574b79fad9d0ed540577dc8bcb46"
+    },
+    {
+      "bytes": 14469,
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md",
+      "sha256": "ff99eeb9bf87d691317c80df3c2258cb4e21e338e142aeecd82de6abc08f86b3"
+    },
+    {
+      "bytes": 17879,
+      "path": "02_REGISTRY/research/A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md",
+      "sha256": "5607d7fe34d5309e7db5705bb68fcfce8ae9a2406f8d7ca829c937216f69aebf"
+    }
+  ],
+  "status": "PASS",
+  "strict_gap_proof": "mu>0 and 0<p6<v2<1/2, h(v1)=h(p6); binary entropy increases on (0,1/2)"
+}

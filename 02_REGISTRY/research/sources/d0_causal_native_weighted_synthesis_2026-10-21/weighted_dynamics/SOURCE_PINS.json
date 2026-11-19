@@ -1,0 +1,37 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "commit": "086fab99d8aaed7f712e9a3d2858c516b61901fc",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_density_rigidity_2026-10-21/PROOF.md",
+      "sha256": "23794bfbfbbe8c3524f370461ccc616d2c7653318e4a578250354db378fa26a2",
+      "git_blob": "afb1844803e1ea01fc7195e2d3d97f4b3b49df39"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-21/constitutive/CONSTITUTIVE_COMPOSITION.md",
+      "sha256": "d5fbe513d22bb130092b1ce64a69bb84bc7d72be7215462b3704b71a2ae168a7",
+      "git_blob": "60f2a9c0b614541847e28b3a183a90c9731fcc0e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "sha256": "62aa5b45923e6e9d51e2075507cd114d42c5f7d1f5107a99e1b08be053e3c034",
+      "git_blob": "deff5f8879cec7d8c3989f941553b4a873c3c39c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/ONE_STAGE_COMPLETE_SPATIAL_WEIGHT_THEOREM.md",
+      "sha256": "960f2d1edc4f151607f9c4ecc76e1522d5dee08922319a3700c0cc3fc96458d1",
+      "git_blob": "58762641a26e0f6a7c22275b325e4a4016642a09"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_PRICE_NONVACUUM_STATIONARY_NORMAL_FORM_2026_10_21.md",
+      "sha256": "5ad9461c6f1b8d964f0764697a38120d19d320714bc66d99a42898171e3a01a0",
+      "git_blob": "25b2253436419ec0f0f63c36d40d5d728103a40c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CONDITIONAL_NON_NULL_BIANCHI_COMPLETE_PRICE_2026_10_21.md",
+      "sha256": "cc856a24ded799d1c17e1ec645991f8206f187b49c61ab1debbc5e4c321a87f5",
+      "git_blob": "98ca6dc3566831cd6ae2bbf5d4115e28c315f519"
+    }
+  ],
+  "scope": "Existing #334 bounded weighted-density composition; repo unchanged."
+}

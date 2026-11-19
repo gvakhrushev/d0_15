@@ -1,0 +1,159 @@
+{
+  "status": "PASS",
+  "models": [
+    {
+      "d": 2,
+      "m": 2,
+      "pointer": [
+        0,
+        0
+      ],
+      "D": 10,
+      "reference_spectrum": [
+        "3/10",
+        "3/10",
+        "3/10",
+        "1/10"
+      ],
+      "word_costs": [
+        5,
+        4,
+        4,
+        7
+      ],
+      "cases": [
+        {
+          "binary_entropy_mark": 0.35416666666666663,
+          "support": 3,
+          "entropy_input_block": -0.0,
+          "entropy_after_measuring_code": 1.0397207708399179,
+          "expected_charge_nats": 2.045150256503314,
+          "absolute_mass": 0.3819660112501053
+        },
+        {
+          "binary_entropy_mark": 0.4159259259259259,
+          "support": 4,
+          "entropy_input_block": 1.10137157657912,
+          "entropy_after_measuring_code": 1.265788943778517,
+          "expected_charge_nats": 2.4017816868530426,
+          "absolute_mass": 0.4164078649987384
+        },
+        {
+          "binary_entropy_mark": 0.41666666666666663,
+          "support": 4,
+          "entropy_input_block": 1.3862943611198906,
+          "entropy_after_measuring_code": 1.3862943611198906,
+          "expected_charge_nats": 2.406059125298017,
+          "absolute_mass": 0.4164078649987384
+        }
+      ]
+    },
+    {
+      "d": 2,
+      "m": 3,
+      "pointer": [
+        0,
+        1
+      ],
+      "D": 20,
+      "reference_spectrum": [
+        "1/5",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/5"
+      ],
+      "word_costs": [
+        6,
+        7,
+        7,
+        7,
+        7,
+        7,
+        8,
+        5
+      ],
+      "cases": [
+        {
+          "binary_entropy_mark": 0.42857142857142855,
+          "support": 1,
+          "entropy_input_block": -0.0,
+          "entropy_after_measuring_code": -0.0,
+          "expected_charge_nats": 2.88727095035762,
+          "absolute_mass": 0.055728090000841245
+        },
+        {
+          "binary_entropy_mark": 0.47883597883597884,
+          "support": 8,
+          "entropy_input_block": 1.9095425048844383,
+          "entropy_after_measuring_code": 1.9095425048844383,
+          "expected_charge_nats": 3.2259014939180815,
+          "absolute_mass": 0.33939353874568895
+        }
+      ]
+    },
+    {
+      "d": 3,
+      "m": 2,
+      "pointer": [
+        0,
+        0,
+        1
+      ],
+      "D": 45,
+      "reference_spectrum": [
+        "2/15",
+        "2/15",
+        "2/15",
+        "1/15",
+        "1/10",
+        "1/10",
+        "1/10",
+        "1/10",
+        "2/15"
+      ],
+      "word_costs": [
+        7,
+        6,
+        6,
+        8,
+        8,
+        7,
+        7,
+        8,
+        7
+      ],
+      "cases": [
+        {
+          "binary_entropy_mark": 0.390625,
+          "support": 3,
+          "entropy_input_block": -0.0,
+          "entropy_after_measuring_code": 1.0397207708399179,
+          "expected_charge_nats": 3.007573906622521,
+          "absolute_mass": 0.14589803375031554
+        },
+        {
+          "binary_entropy_mark": 0.4501388888888889,
+          "support": 9,
+          "entropy_input_block": 1.9369801494094507,
+          "entropy_after_measuring_code": 2.0209986812119265,
+          "expected_charge_nats": 3.465794500040388,
+          "absolute_mass": 0.31308230375283935
+        },
+        {
+          "binary_entropy_mark": 0.44444444444444436,
+          "support": 9,
+          "entropy_input_block": 2.197224577336219,
+          "entropy_after_measuring_code": 2.1972245773362196,
+          "expected_charge_nats": 3.421950755979401,
+          "absolute_mass": 0.31308230375283935
+        }
+      ]
+    }
+  ],
+  "field_independent_code": true,
+  "microscopic_Book03_charge_selected": false
+}

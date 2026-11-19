@@ -1,0 +1,63 @@
+{
+  "existing_pr": 334,
+  "formalization_pr": 402,
+  "inputs": [
+    {
+      "commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "git_blob": "3a1202ab4e992efedf2228b3c03afac7238b1178",
+      "path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_OPERATOR_VARIATION_BOUNDARY.md",
+      "sha256": "d184ff7758b2ae4cc32d1bfdb6b07bb827d5e194a0e77a1030061df2e2cdf8ac"
+    },
+    {
+      "commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "git_blob": "a2e0d3ed877985c98b5fe7f1ef29bbe95d9422f4",
+      "path": "02_REGISTRY/research/A4D_ROOT_BOOTSTRAP_MOVING_CUT_SOURCE_2026_10_28.md",
+      "sha256": "88522b7ef53104d9798aa2337ccb11f2ef2cb878f851b9a53f97d1e9e58efb87"
+    },
+    {
+      "commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "git_blob": "9f8bf5574179073c297eb8ecbd3616984e5c56a8",
+      "path": "02_REGISTRY/research/A4D_ROOT_CUT_TO_REFOLIATION_CLOSURE_2026_10_28.md",
+      "sha256": "d0af048a5ebaf91b02a98cbf27d8faee69592908f7669c446963cbf712fe2125"
+    },
+    {
+      "commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "git_blob": "03ad9147c46411099667658871f847e9f3bee883",
+      "path": "02_REGISTRY/research/sources/d0_refoliation_closure_2026-10-28/PROOF_RU.md",
+      "sha256": "6155eb31068ffeeb72439dcb9860bd3b82dbd3072fbc2b75a1fe91276d2be71a"
+    },
+    {
+      "commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "git_blob": "17d65cf5d4aec2b88a10857ea1f1b33b5df87668",
+      "path": "02_REGISTRY/research/A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md",
+      "sha256": "887840b4cf2b341c72b49e5f53d395923ee60a2fc605dc1274f073b544290e46"
+    },
+    {
+      "commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+      "git_blob": "ea3bd443d384f9584e1e3f17014db7218fe9cd38",
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "sha256": "6d2e05ee5b203159366e42d1ebde9e34b82a4c3c3bb48ddc4257db13a9caeee7"
+    },
+    {
+      "commit": "5007f1707932629613d4b846482b8cd8cae9a4a3",
+      "git_blob": "0c816d04b4575ce03623a85a1ce9a33c17b2b57e",
+      "path": "03_FORMALIZATION/D0/Algebra/MovingProjectorTransport.lean",
+      "scope": "source read through connected GitHub, no new Lean build or physical admission inference"
+    },
+    {
+      "commit": "5007f1707932629613d4b846482b8cd8cae9a4a3",
+      "git_blob": "0fda2962ae5cefb4c0b1ec316f916e7aa2689e0f",
+      "path": "03_FORMALIZATION/D0/Geometry/ArchiveGradedRefinementComposedReadout.lean",
+      "scope": "source read through connected GitHub; exact fixed-component probe, no universal refinement no-go"
+    }
+  ],
+  "main_at_intake": "8b94198c8dfbdf5983ad0b350b058fb30bb68a54",
+  "repository": "gvakhrushev/d0_15",
+  "scientific_base": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a"
+}

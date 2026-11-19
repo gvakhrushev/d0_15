@@ -1,0 +1,81 @@
+{
+  "status": "conditional logical seed and representative normalized cuts; not microscopic factory simulation",
+  "seed_tests": [
+    {
+      "N": 2,
+      "logical_operations_with_k_as_target": 0,
+      "program_0_t1": 0.38196601125010526,
+      "program_1_t1": 0.618033988749895,
+      "output_trace_program_coherence_factor": 0.7639320225002106,
+      "program_output_entanglement_bits_for_plus_input": 0.5236830981227817,
+      "gram_min_eigenvalue": 0.23606797749978936
+    },
+    {
+      "N": 3,
+      "logical_operations_with_k_as_target": 0,
+      "program_0_t1": 0.3819660112501054,
+      "program_1_t1": 0.5278640450004208,
+      "output_trace_program_coherence_factor": 0.8541019662496849,
+      "program_output_entanglement_bits_for_plus_input": 0.3768336643397061,
+      "gram_min_eigenvalue": 0.14589803375031513
+    },
+    {
+      "N": 4,
+      "logical_operations_with_k_as_target": 0,
+      "program_0_t1": 0.3819660112501055,
+      "program_1_t1": 0.4721359549995798,
+      "output_trace_program_coherence_factor": 0.9098300562505264,
+      "program_output_entanglement_bits_for_plus_input": 0.2651394266779312,
+      "gram_min_eigenvalue": 0.09016994374947357
+    },
+    {
+      "N": 5,
+      "logical_operations_with_k_as_target": 0,
+      "program_0_t1": 0.3819660112501055,
+      "program_1_t1": 0.4376941012509468,
+      "output_trace_program_coherence_factor": 0.9442719099991594,
+      "program_output_entanglement_bits_for_plus_input": 0.18356435872077836,
+      "gram_min_eigenvalue": 0.0557280900008405
+    },
+    {
+      "N": 6,
+      "logical_operations_with_k_as_target": 0,
+      "program_0_t1": 0.38196601125010554,
+      "program_1_t1": 0.4164078649987386,
+      "output_trace_program_coherence_factor": 0.9655581462513674,
+      "program_output_entanglement_bits_for_plus_input": 0.12553873554774525,
+      "gram_min_eigenvalue": 0.03444185374863257
+    },
+    {
+      "N": 7,
+      "logical_operations_with_k_as_target": 0,
+      "program_0_t1": 0.38196601125010554,
+      "program_1_t1": 0.4032522475023138,
+      "output_trace_program_coherence_factor": 0.9787137637477917,
+      "program_output_entanglement_bits_for_plus_input": 0.08502707864940295,
+      "gram_min_eigenvalue": 0.021286236252208324
+    },
+    {
+      "N": 8,
+      "logical_operations_with_k_as_target": 0,
+      "program_0_t1": 0.3819660112501056,
+      "program_1_t1": 0.3951216287465304,
+      "output_trace_program_coherence_factor": 0.9868443825035755,
+      "program_output_entanglement_bits_for_plus_input": 0.05713561599284213,
+      "gram_min_eigenvalue": 0.013155617496424465
+    }
+  ],
+  "tested_normalized_factory_cuts": [
+    "resource_1_failure",
+    "resource_2_failure",
+    "h1_cz_failure",
+    "h1_x_failure",
+    "ccz_failure",
+    "h2_cz_failure",
+    "h2_x_failure",
+    "success"
+  ],
+  "source_scalar_effect_required_for_every_thin_record": true,
+  "complete_seed_plus_factory_expansion_or_Book03_verified": false,
+  "GR_closed": false
+}

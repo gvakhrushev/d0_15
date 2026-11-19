@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "inputs": {
+    "input_ref": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+    "verified_files": 5
+  },
+  "exact_golden_identities": {
+    "p_squared": [
+      1,
+      -1
+    ],
+    "relative_weight": [
+      -1,
+      2
+    ]
+  },
+  "native_dictionary": {
+    "shape": [
+      4096,
+      128
+    ],
+    "selected_sites": [
+      [
+        1,
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        2,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        2,
+        1
+      ]
+    ],
+    "nu": 0.0003522263427713839,
+    "maximum_angle_b_tangent_error": 1.3552527156068805e-20,
+    "replayed_native_kraus_leaves": false
+  },
+  "entropy_fixture": {
+    "declared_scope": "four-dimensional two-leaf fixture only",
+    "off_shell_anchor_source": 0.00619974849236371,
+    "exact_formula_anchor_source": 0.0061997484251389585,
+    "balanced_source_finite_difference": 0.0,
+    "off_shell_anchor_minimizer": -0.0010321445595680128,
+    "off_shell_value_drop": -3.000455682133918e-06,
+    "nonzero_stationary_fixture": [
+      0.03,
+      -0.0406,
+      0.0324364197807131
+    ],
+    "fixture_log_coefficient": 0.18738098164859576,
+    "expected_fixture_log_coefficient": 0.18738098079428064,
+    "native_critical_set_proved_by_fixture": false
+  },
+  "checks": [
+    "input hash 02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+    "input hash 02_REGISTRY/research/sources/d0_native_logarithmic_source_reduction_2026-10-21/PROOF.md",
+    "input hash 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md",
+    "input hash 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md",
+    "input hash 02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+    "exact selector weights sum to one",
+    "exact balanced first density derivative vanishes",
+    "exact relative second central weight is p^3",
+    "hostile equal-weight mean does not cancel Golden density source",
+    "literal original complete Fourier constructor pinned",
+    "only original Fourier constructor imported",
+    "complete64 original real Fourier pairs exist",
+    "all128 Fourier reference columns orthonormal",
+    "all128 reference columns have exact constant local diagonal",
+    "all actuated sites are free interior sites",
+    "full original 4096 by128 preparation has RIGHT Gram I/128",
+    "literal complete local generator has rank eight",
+    "complete local generator is skew",
+    "complete four-plane rotation is orthogonal at site 90",
+    "complete four-plane rotation is orthogonal at site 102",
+    "complete four-plane rotation is orthogonal at site 153",
+    "exact dictionary shift U(a)C(c,theta)=C(c,theta+a), numerical residual",
+    "moving every selected arm preserves complete RIGHT Gram",
+    "actual angle tangent is d_w times original b_w tangent",
+    "balanced old amplitude derivative vanishes in complete native matrix",
+    "wrong equal-weight mean gives nonzero full tangent",
+    "native disjoint-site Q is p^5 I/256 after inherited parity/completeness",
+    "complete native vacuum preparation is odd CAR parity",
+    "actual new preparation tangent is even CAR parity at 90",
+    "actual new preparation tangent is even CAR parity at 102",
+    "actual new preparation tangent is even CAR parity at 153",
+    "small two-leaf fixture is a complete positive instrument",
+    "off-shell fixed-anchor source equals p^2 d times b Euler source",
+    "off-shell balanced relative source vanishes despite nonzero anchor source",
+    "fixture balanced coincidence beats every tested relative displacement",
+    "off-shell fixed-anchor minimizer is nonzero in fixture",
+    "off-shell fixed-anchor reduction genuinely lowers fixture value",
+    "fixture has explicit nonzero coincident full stationary material point",
+    "all fixture geometric and material coincident Euler rows vanish",
+    "relative preparation also stationary at nonzero full fixture root",
+    "zero anchor preparation is locally preferred at nonzero full fixture root",
+    "fixture rank-birth entropy has predicted positive logarithmic coefficient",
+    "hostile independent angle cost and anchor-only material cost break balance",
+    "independent angle cost retains exact upstream residual U_a-p^2 d U_b"
+  ],
+  "check_count": 44,
+  "GR_closed": false
+}

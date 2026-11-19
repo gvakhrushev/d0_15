@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "query": "full 8D U, rank-2 true cut",
+  "binary_history_depth": 6,
+  "settings": [
+    {
+      "histories": 64,
+      "P_on_uniform_input": 0.22748052996517557
+    },
+    {
+      "histories": 64,
+      "P_on_uniform_input": 0.22503768490011192
+    },
+    {
+      "histories": 64,
+      "P_on_uniform_input": 0.18120261840140084
+    }
+  ],
+  "fair_ticket_width": 108,
+  "sampling_factor": "15/16",
+  "two_true_derivative_errors": [
+    "3.600938219e-44",
+    "5.026999542e-43"
+  ],
+  "ordered_root_pivots": "exact, 3 non-diagonal modes",
+  "scope": "Observable realization on the admitted query/flags. Physical valuation and GR remain open."
+}

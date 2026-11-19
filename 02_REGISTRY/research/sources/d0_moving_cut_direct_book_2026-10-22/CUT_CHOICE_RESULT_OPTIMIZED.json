@@ -1,0 +1,30 @@
+{
+  "F_first": "diag(4*t^2/(1+t^2)^2,0,0)",
+  "F_second": "0",
+  "J_first": "-log(1-4*z*t^2/(1+t^2)^2)",
+  "J_second": "0",
+  "check_count": 10,
+  "checks": [
+    "same fixed finite carrier",
+    "same retained and traced ranks",
+    "both are orthogonal complementary splits",
+    "same tick is orthogonal",
+    "first split has nonzero return",
+    "second split has zero return",
+    "first full determinant",
+    "second full determinant",
+    "first source exact",
+    "strictly positive rational control"
+  ],
+  "dJ_first_dt": "8*z*t*(1-t^2)/((1+t^2)^3*(1-4*z*t^2/(1+t^2)^2))",
+  "dJ_first_dt_at_t=z=1/2": "96/85",
+  "dJ_second_dt": "0",
+  "same_split_dimensions": {
+    "carrier": 3,
+    "retained": 2,
+    "traced": 1
+  },
+  "same_tick": "orthogonal rotation in the (e1,e3) plane",
+  "scope": "abstract finite retained/traced interface only; no physical D0 cut selected",
+  "status": "PASS"
+}

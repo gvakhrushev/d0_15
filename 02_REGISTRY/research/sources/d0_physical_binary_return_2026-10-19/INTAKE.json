@@ -1,0 +1,60 @@
+{
+  "intake": "source PR #384 integrated into the existing #334 execution",
+  "source_pr": "https://github.com/gvakhrushev/d0_15/pull/384",
+  "source_head": "8d78b094efb217af8e8bebc3cea733777b93077e",
+  "source_base_at_intake": "8f327fcaf38d2579515c94276c6431dbc3f5ce76",
+  "target_pr": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "target_head_before_intake": "9b567cc1dc4732438616c07e4b29c3a7d14b1e44",
+  "transfer": "All listed files are byte-identical to source PR #384.",
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_GLOBAL_MODAL_HISTORY_MDLCLOCK_AND_SOURCE_2026_10_19.md",
+      "sha256": "0ff7f65c59d8c341afd954b9d383754b312cd94bcba44976d7108ac3cefea728"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_J23_PORT_SOURCE_SPLIT_AND_PHYSICAL_COARSE_READOUT_2026_10_19.md",
+      "sha256": "b3c1290ce63bd6f700dc8dbdb8c3051a5ba7a67bb426bf6c7126b7c1c6c0c33a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PHYSICAL_BINARY_RETURN_BOOK_PRICE_AND_EINSTEIN_SOURCE_GATE_2026_10_19.md",
+      "sha256": "8c02f6bd280dceb7323e7b590496a43e8950589664ee0358af2659ce8e725f0b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PHYSICAL_FULL_HISTORY_COHERENCE_SOURCE_AND_BINARY_COMPRESSION_GATE_2026_10_19.md",
+      "sha256": "87e44b774107e714c3cc6f1cc0419bf9e78028f56117ed0a0d4b75da2244c0fd"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md",
+      "sha256": "a9fa5d31145aba5e02156f872c2ceaa53f684a11e1742e433f4c8000a0dac8de"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_binary_native_price_source.py",
+      "sha256": "d9b71f9f82d8ea5f60ea5764476e3883def01072d0ec26a763099e76947e0b8f"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_d0_physical_golden_preparation_pressure.py",
+      "sha256": "172ec9090de93ec80fe4f41d570aa9738e24084f384e3c701f94cf5cadae0e96"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full128_global_map_native_history.py",
+      "sha256": "7cbe15c11182cfec2ba35546d9e35cabca3fd47073e2328b952c91056afcfb83"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_full_history_binary_information_loss.py",
+      "sha256": "d6a93b00a65eb7ed140f093341ee57e2e001481878c6cd1b7ac84aa7b27af0f0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_native_golden_port_hidden_source.py",
+      "sha256": "645676c5c32902d3c6926a2643e6e503c8dfe0e06add189dc96a504527b82448"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_original_full128_J23_port_decomposition.py",
+      "sha256": "a8b14c9fad5209b33a1b092f5f3675d505ad44b2ef1d18966c0d9aeea6a79590"
+    }
+  ],
+  "validation": {
+    "mode": "normal",
+    "result": "All six checkers passed at source PR #384 head and again after transfer.",
+    "scope": "Research-only finite source controls; no Book action selection, physical admission, task acceptance, or GR closure."
+  }
+}

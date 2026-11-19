@@ -1,0 +1,4 @@
+'D0.Research.AffineRayRefinement.doubled_ray_path_multiplicative_trivial' does not depend on any axioms
+D0.Research.AffineRayRefinement.doubled_ray_path_multiplicative_trivial.{u_1, u_2} {V : Type u_1} {G : Type u_2}
+  [AddCommGroup V] [Group G] (f : V → G) (h_ray : D0.Research.AffineRayRefinement.DoubledRayInvariant f)
+  (h_path : D0.Research.AffineRayRefinement.PathMultiplicative f) (v : V) : f v = 1

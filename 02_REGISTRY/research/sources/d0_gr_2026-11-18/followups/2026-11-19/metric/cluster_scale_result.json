@@ -1,0 +1,23 @@
+{
+  "independent_probe_dimensions": [
+    4,
+    3
+  ],
+  "anchor_gain": "7/3",
+  "universal_volume_price": "-5/8",
+  "homothety": "3/2",
+  "ratios": [
+    "-1025/168",
+    "-4325/672"
+  ],
+  "golden_step_ratio_difference_in_basis_1_phi": [
+    "0",
+    "-15/56"
+  ],
+  "beta_over_alpha": "-15/56",
+  "target_chi_at_paid_stationarity": "15/56",
+  "perturbed_estimate_error": "2018761/22226820",
+  "perturbed_estimate_error_bound": "73750547/600124140",
+  "compensated_derivative_for_separate_V_squared": "-8",
+  "scope": "algebraic test of source transport; cluster and scale admission on physical H.1 open"
+}

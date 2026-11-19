@@ -1,0 +1,55 @@
+{
+  "EH_mismatch_germ": "theta=pi/8, theta_second=0: history source=(1-exp(-beta/s^2))*(theta_prime)^2/(96*s^2), EH source=0",
+  "carrier": {
+    "Fock": 16,
+    "golden_ports": "both",
+    "occupied_momenta": 8,
+    "reference": 128,
+    "retained_labels": [
+      16,
+      8,
+      24
+    ]
+  },
+  "checks": [
+    "source_pin_check_principal.py",
+    "source_pin_check_retained_history.py",
+    "source_pin_a4d_native_curved_soldered_heat.py",
+    "actual_ACDB_all16_creator_order",
+    "owned_all_angle_matrix_assignment_identity",
+    "owned_all_angle_forward_Cartan_identity",
+    "same_coherent_projector_extracts_four_J0_all_angles",
+    "independent_full16_all_angle_J0_norm",
+    "same_coherent_readout_all_angle_potential_norm",
+    "actual_clock_gives_nonlinear_density_not_fitted_weight",
+    "exact_action_discrepancy_is_negative_square_not_boundary",
+    "first_discrepancy_is_quartic",
+    "periodic_cosine_quartic_mean_exact_one_eighth",
+    "full_nonlinear_Euler_includes_weight_derivative",
+    "flat_principal_matches_previous_three_field_result",
+    "constant_pi_over_four_cone_has_half_principal_coefficient",
+    "same_coherent_readout_has_nonzero_source_at_linear_theta_germ",
+    "exact_single_cone_EH_source_vanishes_at_that_germ",
+    "no_automatic_nonlinear_EH_promotion_of_principal_comparison"
+  ],
+  "cone": "e=s O01(theta(y)), y=x2; same true LC links and fixed positive G=s^2 I",
+  "detector_unchanged": "(|16>+|8>+|24>)(<16|+<8|+<24|)/3",
+  "exact_checks": 19,
+  "nonlinear_Euler": "-(1-exp(-beta/s^2))/(96*s^2) * [(1+cos(2theta)^2)*theta_second-sin(4theta)*(theta_prime)^2]",
+  "nonlinear_readout_contrast": "(1-exp(-beta/s^2))/(192*s^2) * mean((1+cos(2theta)^2)*(theta_prime)^2)",
+  "principal_coefficient_ratio_pi_over_four_vs_zero": "1/2",
+  "scope": {
+    "all_detectors_or_native_actions_excluded": false,
+    "new_field_dependent_detector_or_price_selected": false,
+    "old_run_entrypoints_executed": false,
+    "physical_detector_or_preparation_admission_proved": false,
+    "prior_principal_results_modified": false,
+    "same_fixed_coherent_detector_is_full_nonlinear_EH": false
+  },
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_retained_causal_principal_2026-10-17/check_principal.py": "7f57f6e325defd8fda3e85667cf040f061ef8dba6a0897a127385ed8de49380d",
+    "02_REGISTRY/research/sources/d0_retained_history_causal_source_2026-10-16/check_retained_history.py": "6be5d31fc2b5a2d2f75b54071720b03c6bbebc30356260b5c823c3ef8ef88d92"
+  },
+  "status": "PASS"
+}

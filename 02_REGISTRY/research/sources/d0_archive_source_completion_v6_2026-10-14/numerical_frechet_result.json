@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "FLOATING_POINT_DIAGNOSTICS_NOT_INTERVAL_OR_UNIVERSAL_PROOF",
+  "rows": [
+    {
+      "retained_dimension": 2,
+      "archive_dimension": 2,
+      "source_identity_error": 1.3877787807814457e-17,
+      "thermal_identity_error": 2.3426564686985875e-16,
+      "scalar_shift_error": 4.719035194956849e-16,
+      "finite_difference_remainder_errors": [
+        3.69250796605769e-10,
+        1.6754993226175685e-11,
+        4.708283762866472e-11
+      ],
+      "finite_difference_operator_errors": [
+        6.476257231619408e-11,
+        2.978127130448406e-11,
+        2.8053191690746615e-11
+      ]
+    },
+    {
+      "retained_dimension": 2,
+      "archive_dimension": 3,
+      "source_identity_error": 5.551115123125783e-17,
+      "thermal_identity_error": 5.296410583105741e-16,
+      "scalar_shift_error": 1.1166620992582628e-15,
+      "finite_difference_remainder_errors": [
+        5.181746559612677e-10,
+        1.1912956732196278e-11,
+        7.852633820970567e-11
+      ],
+      "finite_difference_operator_errors": [
+        2.9606835720085646e-11,
+        1.3219823237674925e-11,
+        8.049022760956645e-11
+      ]
+    },
+    {
+      "retained_dimension": 3,
+      "archive_dimension": 2,
+      "source_identity_error": 2.636779683484747e-16,
+      "thermal_identity_error": 6.479451183232381e-16,
+      "scalar_shift_error": 2.041241581876627e-15,
+      "finite_difference_remainder_errors": [
+        1.1262760168939678e-10,
+        7.156414350006912e-12,
+        3.945815896244653e-12
+      ],
+      "finite_difference_operator_errors": [
+        5.8663527322364e-11,
+        3.422221568260429e-11,
+        1.5617500319008237e-10
+      ]
+    }
+  ]
+}

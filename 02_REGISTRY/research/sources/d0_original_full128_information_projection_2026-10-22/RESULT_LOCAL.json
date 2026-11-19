@@ -1,0 +1,55 @@
+{
+  "status": "PASS_LOCAL_UNCHANGED_ORIGINAL_FORMULA_TRANSCRIPTION",
+  "original_upstream_Git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "new_Git_pinned_checker": "02_REGISTRY/research/sources/d0_original_full128_information_projection_2026-10-22/check_native_kraft_gibbs_holevo.py",
+  "actual_new_Git_checker_executed_from_full_repo_checkout": false,
+  "mathematical_scope": "ONE original CAR16 full128 normalized Kraus instrument, moving rho*=Delta^-1/trace, beta=2 p^2, true Golden 0/10 port reference, full 128 fine outcomes including dark, oldRIGHT spectator initial product",
+  "original_proper_boost": "1/9",
+  "original_nu": "3/5",
+  "original_native_CAR16_dimension": 16,
+  "oldRIGHT_spectator_modes": 128,
+  "golden_p": "(sqrt(5)-1)/2",
+  "native_full128_128_Kraus_original_complete": true,
+  "native_stationarity_rho_Delta_inv_verified": true,
+  "conditional_PORT_genuine_all_row_probabilities": {
+    "q_nonblank": 0.02078572435089781,
+    "q_00": 0.9790342879365351,
+    "q_01": 0.00017998771256661506
+  },
+  "full_conditional_port_KL_nats": 0.4719291756662669,
+  "full_conditional_port_KL_Golden_units": 0.9807098477012972,
+  "original_nonblank_Golden_code_component_nats": 0.002361231312436339,
+  "original_blank_orphan_Golden_code_component_nats": 0.4695679443538306,
+  "true_beta_original_CAR_Gibbs_relative_entropy": 0.0007881723374589811,
+  "native_fine_history_Holevo_information": 0.00016955914078575773,
+  "native_row_only_Holevo_information": 0.00016896705117064315,
+  "native_blank_port_only_Holevo_information": 5.920896151145882e-7,
+  "same_run_no_fit_unique_Kraft_Gibbs_Holevo_projection": 0.47288690714451165,
+  "direct_quantum_cq_projection": 0.4728869071445116,
+  "controlled_native_Golden_X_before_readout": {
+    "K0_identical": true,
+    "CP_channel_identical": true,
+    "registered_support_identical": true,
+    "native_full_fine_Shannon_identical": true,
+    "native_prepared_and_next_Book_incidence_Hodge_identical": true,
+    "Golden_PORT_KL_after_swap_nats": 0.4695679443538306,
+    "original_minus_swap_Golden_conditional_price_units": 0.004906843908384576,
+    "original_minus_swap_proper_Lorentz_source_Golden_units": -0.0007130815017834955,
+    "actual_coherent_native_controlled_X_physical_cost_selected": false
+  },
+  "strict_independent_75d_mpmath_iv": {
+    "full_port_KL_jet_nats": "(0.00149446500172038, 0.00149446500172039)",
+    "full_port_price_jet_Golden": "(0.00310562817431861, 0.00310562817431862)",
+    "native_same_Delta_Gibbs_D": "(0.00078817233745897,0.00078817233745898)",
+    "native_same_Delta_Gibbs_jet_nats": "(0.01504610155394310,0.01504610155394312)"
+  },
+  "native_full128_numerical_derivative_r1over9_h3e_minus5": {
+    "conditional_port_KL_nat": 0.001494465004526,
+    "Gibbs_D_nat": 0.015046101660883,
+    "Holevo_nat": 0.000423429202812,
+    "total_projection_nat": 0.01696399586822
+  },
+  "full_physical_Book03_active_P_scene_Delta_Info_selected": false,
+  "same_initial_state_full42_Einstein_CAR_source_closed": false,
+  "GR_closed": false
+}

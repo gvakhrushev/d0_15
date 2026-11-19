@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "through_control": "a^M*P0+(2p²)^M*P1; a=sqrt(p)",
+  "Q_event_cuts": [
+    "p²",
+    "2p³"
+  ],
+  "registered_probability_difference": "p^8",
+  "per_copy_registered_mean_difference": "p^11",
+  "mode_clock_dimension_M12": 6800365052,
+  "NPS2_prefix_stage_dimension": 572,
+  "prefix_trace_norm": [
+    "110.851251684408146",
+    "110.851251684408147"
+  ],
+  "two_bank_M12_feedback_difference": [
+    "0.00000000035107462556",
+    "0.00000000035107462557"
+  ],
+  "two_bank_M12_full_heat_difference_absolute_bound": [
+    "0.00000000027243642729",
+    "0.00000000027243642730"
+  ],
+  "M12_full_master_difference_interval": [
+    "0.00000000007863819826",
+    "0.00000000062351105286"
+  ],
+  "M13_feedback_geometric_lower": [
+    "0.00000000013207584571",
+    "0.00000000013207584572"
+  ],
+  "M13_heat_geometric_upper": [
+    "0.00000000006810910849",
+    "0.00000000006810910850"
+  ],
+  "all_M_greater_equal_12_strictly_positive": true,
+  "scope": "Exact NPS2 contrast with common initial cut, rank four, native CQ records on the retained wires; full H.1 microscopic valuation open."
+}

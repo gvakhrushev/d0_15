@@ -1,0 +1,31 @@
+{
+  "all8_momentum_density_normalization_preserved": true,
+  "artifact_pins": {
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/amplitude_first_jet.py": "0f0a4f2aa79f3a741d6117ea4aea789d73c24f6024f83e7125d380e70fc1f0b1"
+  },
+  "commands": [
+    "python3 02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/amplitude_first_jet.py",
+    "python3 -O 02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/amplitude_first_jet.py"
+  ],
+  "entire_plane_both_q2_edges_full16_outputs_checked": true,
+  "entire_vacuum_top_plane_unrelated_fourier_forcing_checked": true,
+  "full_reference_dimension": 128,
+  "joint_field_Euler_rows_solved": false,
+  "native_preparation_balance": "separate preparation_domain owner premise, not derived here",
+  "new_exact_check_count": 677,
+  "normal_and_optimized_byte_identical": true,
+  "old_run_or_eigenspectrum_called": false,
+  "runtime": {
+    "python": "3.9.6",
+    "sympy": "1.14.0"
+  },
+  "scientific_output_sha256": "595933fef34e0cabb4463e80188149465005dc0ecce8db85f40d678637872fc5",
+  "scope": "same theta=y exact-LC cone, common normalized plane sigma, real controlled output-field firstjets; amplitude only",
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_cone_matter_corrector_2026-10-16/check_cone_matter_corrector.py": "7bbf1589f3a32af381036df64f76d720ce14a9f2e502b3a1a6f43f5b5e776d58",
+    "02_REGISTRY/research/sources/d0_cone_source_balanced_preparation_2026-10-16/check_cone_source_balanced_preparation.py": "1a84b5dbfa86c03d55dfe3db41330272e4937d2a47f30c3e0929d584996859c3"
+  },
+  "source_ref": "caa90af1f67a06dab46704c80031ad98a2de699b",
+  "status": "PASS_EXACT_PARAMETER_IDENTITIES"
+}

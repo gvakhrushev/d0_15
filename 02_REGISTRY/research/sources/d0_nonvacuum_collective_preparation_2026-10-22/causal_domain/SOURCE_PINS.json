@@ -1,0 +1,48 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "ref": "fcfc52064737815c75bef96f7696b473ee304061",
+  "files": [
+    {
+      "path": "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+      "blob_sha": "ce8f2c2a86837493e91fc0fad74b4a1e52b014f3"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+      "blob_sha": "01b02ebbe81a62464e81d5c397c101fd60fff4f9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_moment_writer_native_selection_2026-10-21/state_lift/RETAINED_CODE_LIFT_AND_APPARATUS_ELIMINATION.md",
+      "blob_sha": "aaffe11489d5d31c26d983b5830212b4fac33be8"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "blob_sha": "eeda7c0d227eb430165b315bfe6a9186ea8b9fe5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_global_native_gr_closure_2026-10-22/ACTUAL_PREPARATION_NORMAL_EULER.md",
+      "blob_sha": "417bf11542e748868cdb199b82367cf93a26f027"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "blob_sha": "9a0fee16a835e0bdc3c4c1221c048fbd413b7490"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "blob_sha": "1c624843ab6cbab5173f47c80962cef9ae57e5bd"
+    }
+  ],
+  "attached_originals": [
+    {
+      "path": "project_sources/05-d0_tome_1_logic_of_distinguishability.md",
+      "sha256": "eebf4585fbe1fe1f7741e88cda0e3ef44ee73d0688d081a5ec7c5c5e0ff5fbde"
+    },
+    {
+      "path": "project_sources/02-d0_tome_5_methodology_faq_fundamental.md",
+      "sha256": "cc1ced5782ccfd0b01c145d75f2b626a894cecf2d7a1fd96e592c2336c92a477"
+    },
+    {
+      "path": "project_sources/01-d0_tome_3_geometry_phi_graph_qft_qg.md",
+      "sha256": "7c99c0d79ad1a7cf365b065472374cac29d25818f33b3ffd18ca2d1d9e4c3d88"
+    }
+  ]
+}

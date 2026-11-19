@@ -1,0 +1,70 @@
+{
+  "scientific_calculation_input_ref": "441bdef5a02bef09a74ebe48dcf4d5527ba18988",
+  "preserved_parent_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+  "analytically_consumed_concurrent_sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_MOMENT_WRITER_NATIVE_SELECTION_TEST_2026_10_21.md",
+      "input_ref": "c28187555ef973b7bdb80e48655a2ac5ae8c85b0",
+      "git_blob": "9ef041e939a0e531b3debdc6cf4e63040eaa311f",
+      "sha256": "d48975137d7b2cbe97b927355f8cc482d15363179c6c717c785b45f8dfe85b00",
+      "handling": "Read and analytically integrated; existing scientific receipts not replayed or relabelled"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+      "input_ref": "2961dc6ee4abcda0a0fb2aa36dc6ecd7e62a6535",
+      "git_blob": "3c41616d2f4f5fa7c0b5085188eae2e505f9f403",
+      "sha256": "9fae8225a0d59b3255935a78e2c0a737889990d358810dba8d8f2e24cb8cddd8",
+      "handling": "Read and analytically integrated; existing scientific receipts not replayed or relabelled"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PAID_COST_HERALD_2026_10_21.md",
+      "input_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+      "git_blob": "30c53eedcdb939db4c975946593a2f9aaa01e169",
+      "sha256": "1be2441a2f6de42f271349e4b504c61cfd67318f3c609f7a9f19c75c4b22ed49",
+      "handling": "Read and analytically integrated; concurrent author suites not rerun, old calculation inputs not relabelled"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_TWO_LETTER_GOLDEN_COST_HERALD_SOURCE_2026_10_21.md",
+      "input_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+      "git_blob": "6de06942c976776306ded66d610e7e73b2fbdac8",
+      "sha256": "d2fbf6e2daec763dc8aaf1a32a1b654e51156e16fc8daf272ea9f49990cfc907",
+      "handling": "Read and analytically integrated; concurrent author suites not rerun, old calculation inputs not relabelled"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_GOLDEN_WRITER_PROJECTIVE_FIELD_OBSTRUCTION_2026_10_21.md",
+      "input_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+      "git_blob": "99d3ec3e3a3644008a83019b71d05863b64b0d19",
+      "sha256": "1517c01fee16bc7938c45a9efbcadb7bf312ec4132df040962d13ac272c250c9",
+      "handling": "Read and analytically integrated; concurrent author suites not rerun, old calculation inputs not relabelled"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GOLDEN_ARCHIVE_TIMESTAMP_PRICE_DEFECT_2026_10_21.md",
+      "input_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+      "git_blob": "9b38166d0a2817b3e8afaac94beb1ba16eb40663",
+      "sha256": "f139dda45ee98948e57fafd5daff5e099decd8566b5d8b848e5e580ddcf7edbe",
+      "handling": "Read and analytically integrated; concurrent author suites not rerun, old calculation inputs not relabelled"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ABSOLUTE_LOOP_ANCHOR_AND_GR_ERROR_BUDGET_2026_10_21.md",
+      "input_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+      "git_blob": "6c754be92b628967c22fdddff28a5657aa3950c9",
+      "sha256": "62f12a83b82192684bd2cc432e7ebbe17bce1a8121388b64c4247508876743cf",
+      "handling": "Read and analytically integrated; concurrent author suites not rerun, old calculation inputs not relabelled"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_SIGNED_VACUUM_REFERENCE_CURVATURE_COST_SOURCE_2026_10_21.md",
+      "input_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+      "git_blob": "217ff4c3d2fa199477a7a4a8c4ba952dc72ce270",
+      "sha256": "6b3cfc2975a10a7a271642d333c0a365171ccc01341fac78d4e73c5cfca650aa",
+      "handling": "Read and analytically integrated; concurrent author suites not rerun, old calculation inputs not relabelled"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.md",
+      "input_ref": "fb0f45b7af61dbc9836a69fb0ce2f4c31e94e826",
+      "git_blob": "63ddd1ce0c2811c807584c83b33a7b7cc97dc006",
+      "sha256": "6f98ef21a7764237b072d343abbc2c2c852cb611457fdd7af8d062b742228a9d",
+      "handling": "Read and analytically integrated; concurrent author suites not rerun, old calculation inputs not relabelled"
+    }
+  ],
+  "separate_late_application_inputs": "LATE_SOURCE_PINS.json at c7e0c3d2; original SOURCE_PINS.json and original receipts remain unchanged"
+}

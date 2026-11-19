@@ -1,0 +1,42 @@
+{
+  "schema": "d0-star-conformal-action-gate/1",
+  "date": "2026-10-17",
+  "published_checker_blob": "2bfaf4dafd06d99c9439a78f744707734e3ae200",
+  "independently_executed_local_script": "/mnt/data/check_weighted_star_conformal_failure.py",
+  "local_script_sha256": "837d5984867522064b24acd01cf9ca81edec678bc77fd0a83a7ab082d43e6597",
+  "local_sympy_controls": 31,
+  "local_normal_exit_code": 0,
+  "local_python_optimized_exit_code": 0,
+  "local_normal_optimized_stdout_identical": true,
+  "published_checker_run_status": "GitHub source published and read back; no separately verified run of exact remote blob, no remote CI",
+  "exact_result": {
+    "metric": "g=a(t)^2 diag(1,-1,-1,-1)",
+    "weighted_native_site_ratio": "omega(x)/omega(y)=a(x)/a(y)",
+    "regular_observer": "(205,-144,-96,-72)/83",
+    "periodic_integer_observer_phase": [
+      205,
+      144,
+      96,
+      72
+    ],
+    "restricted_continuum_star_curvature": "0",
+    "restricted_continuum_star_stationarity": true,
+    "original_observer_parallel_so3_link_sources_zero": 3,
+    "excluded_Lorentz_boost_link_sources_nonzero_when_aprime": 3,
+    "einstein_tensor_00": "3(a'/a)^2",
+    "full_eh_action_for_a_1_plus_u_sin_t": "6*pi*u^2 per unit transverse volume",
+    "flat_EH_hessian": "12*pi",
+    "original_restricted_star_flat_conformal_hessian": "0",
+    "observer_three_event_candidate": "Qobs=(2Pcoh-Porth)/eps^2=6(a'/a^2)^2",
+    "exact_observer_eh_identity": "Integral R_g dV_g = Integral Qobs dV_G (periodic boundary)",
+    "canon_site_weight_is_volume": false,
+    "exact_local_born_shannon_equals_eh": false
+  },
+  "scope": {
+    "no_original_finite_h_joint_root": true,
+    "no_physical_selection_of_observer_projector": true,
+    "no_physical_full_native_Cost_Info_equal_to_EH": true,
+    "no_original_hminus2_comparator": true,
+    "no_remote_ci": true
+  }
+}

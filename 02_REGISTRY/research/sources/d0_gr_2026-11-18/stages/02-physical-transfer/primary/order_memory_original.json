@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Constructive finite apparatus conditional on supplied local routing and initial record. Not M1 physical-realization closure.",
+  "checks_passed": 88,
+  "exact_relations": [
+    "a^2=p",
+    "p^2+p=1"
+  ],
+  "positive_embedding": {
+    "p": "phi^-1",
+    "a": "sqrt(p)"
+  },
+  "resources": {
+    "forward_comparison_operations": 14,
+    "record_operations": 1,
+    "clock_labels": 16,
+    "arm_labels": 2,
+    "spin_coordinates": 4,
+    "record_labels": 2,
+    "fixed_program_real_dimension": 256,
+    "stored_program_labels": 2,
+    "two_program_real_dimension": 512
+  },
+  "uncontrolled_negative_control": "Both record weights are 4*p^3; contrast is zero."
+}

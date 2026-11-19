@@ -1,0 +1,16 @@
+{
+  "schema": "a4d-y-full-boost-product-rigidity-v1",
+  "terminal": "A4D-Y-FULL-TEMPORAL-BOOST-PRODUCT-RIGIDITY",
+  "background": "z=1 product-plane solder S_f=I+(f-1)P_perp",
+  "temporal_link": "C_Y(1) C_V with V=u1*K1+u2*K2+u3*K3",
+  "role0_boost_combination": "P1*E_K1+P2*E_K2+P3*E_K3=((r2+4)*(s^2*r2+64)/(r2-4))*(3*f0^2-f1^2-f2^2-f3^2)",
+  "definitions": "r2=u1^2+u2^2+u3^2; s=u1+u2+u3",
+  "real_multiplier": "strictly nonzero on the real boost Cayley chart r2!=4 because r2+4>0 and s^2*r2+64>=64",
+  "conclusion": "every real temporal boost Cayley correction at z=1 forces the product profile f to be spatially constant on a connected periodic carrier",
+  "scope_fence": [
+    "temporal pure-boost correction only; simultaneous noncommuting boost+rotation factor not classified here",
+    "arbitrary transverse corrections on spatial links remain open",
+    "no uniform nonlinear full-joint inverse is proved",
+    "no task-level response terminal is claimed"
+  ]
+}

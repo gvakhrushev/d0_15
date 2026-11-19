@@ -1,0 +1,102 @@
+{
+  "schema": "a4d-y-curved-joint-ratio-firstslow-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-DIAGONAL-RATIO-FIRSTSLOW-INJECTIVE",
+  "background": "z=1 exact Y vacuum; zone-folded full joint symbol",
+  "ratio_coordinates": "rho0=1; rho1,rho2,rho3 transverse to common Bloch phase",
+  "interior_rows": "all 24 connection + 10 metric rows in phases 1 and 2",
+  "interior_shape": [
+    68,
+    96
+  ],
+  "rank_at_diagonal_ratio": 65,
+  "right_kernel_dimension": 31,
+  "left_cokernel_dimension": 3,
+  "firstslow_map_shape": [
+    3,
+    31
+  ],
+  "axis_ranks": [
+    3,
+    3,
+    3
+  ],
+  "projective_cover": [
+    {
+      "chart": "x1=1",
+      "minor_column_triples": [
+        [
+          20,
+          24,
+          30
+        ],
+        [
+          21,
+          24,
+          30
+        ],
+        [
+          17,
+          18,
+          19
+        ]
+      ],
+      "groebner_basis": [
+        "1"
+      ]
+    },
+    {
+      "chart": "x2=1",
+      "minor_column_triples": [
+        [
+          17,
+          21,
+          24
+        ],
+        [
+          17,
+          21,
+          30
+        ],
+        [
+          18,
+          20,
+          21
+        ]
+      ],
+      "groebner_basis": [
+        "1"
+      ]
+    },
+    {
+      "chart": "x3=1",
+      "minor_column_triples": [
+        [
+          17,
+          21,
+          24
+        ],
+        [
+          17,
+          21,
+          30
+        ],
+        [
+          18,
+          20,
+          21
+        ]
+      ],
+      "groebner_basis": [
+        "1"
+      ]
+    }
+  ],
+  "conclusion": "L^T (sum_a x_a D_a) N has row rank 3 for every nonzero complex transverse ratio direction x",
+  "implication": "rho=(1,1,1) is first-order isolated as an interior-rank-drop ratio; any nearby off-diagonal ratio removes the three extra interior cokernel directions linearly",
+  "scope_fence": [
+    "first-order local statement near the diagonal ratio only",
+    "does not prove global rank 68 of the interior operator on the full ratio torus",
+    "does not solve the phase-0/phase-3 boundary equations or common Floquet phase",
+    "does not prove the all-Bloch joint zero locus or task-level response terminal"
+  ]
+}

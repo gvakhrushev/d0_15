@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "input_ref": "90fc38d972cc8538ce6fff2912906a496733c097",
+  "CAR_dimension": 16,
+  "full_flag_output_dimension": 32,
+  "grades_retained": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "Julia_good_probability": "1/4",
+  "coherent_three_ray_phase_coefficient": "w/4",
+  "dephased_two_density_Z": "(5/8)*(1-w)*(1-w/10+(w/10)*exp(i*t))",
+  "dephased_three_density_phase_coefficient": "w/28",
+  "complete_BAD_BAD_contribution": "(9/16)*(1-w)",
+  "two_copy_Hermitian_readout": "PASS on full 32x32 factors, matched flag score",
+  "unconditional_CAR_tomography": "PASS",
+  "full_source_mixed_partial_difference": "0",
+  "small_face_scaled_source": "d(w*theta/10)+O_C1(h^4)",
+  "six_phase_visibility": [
+    "5/12",
+    "5/12",
+    "5/16",
+    "5/16",
+    "5/12",
+    "5/16"
+  ],
+  "six_phase_Jacobian_times_240": [
+    [
+      "0",
+      "7",
+      "0",
+      "5",
+      "4",
+      "0"
+    ],
+    [
+      "0",
+      "-2",
+      "0",
+      "2",
+      "-2",
+      "0"
+    ],
+    [
+      "2",
+      "0",
+      "6",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-4",
+      "0",
+      "4",
+      "0",
+      "0",
+      "8"
+    ],
+    [
+      "0",
+      "5",
+      "0",
+      "7",
+      "4",
+      "0"
+    ],
+    [
+      "-6",
+      "0",
+      "-2",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "six_phase_integer_determinant": "12288",
+  "six_phase_determinant": "1/15552000000",
+  "latest_integration_ref": "d533539ba87aaddb567efa84beba765f608af296",
+  "general_flag_phase_determinant": "g^9*(1-2*g)^3/(124416*(g^2+(1-g)^2)^6)",
+  "balanced_flag_phase_rank": 3,
+  "balanced_full_density_information_claim": "No loss from full density asserted",
+  "native_Golden_pair_phase_determinant": "p^9/15552000",
+  "native_Golden_compact_phase_coefficient": "(5-sqrt(5))/10",
+  "native_Golden_small_face_source": "d(kappa*w*theta)+O_C1(h^4)",
+  "arbitrary_moving_embedding_weight_source_control": "PASS",
+  "fixed_Cost_different_embedding_price_control": "difference=y^2; simultaneous relabeling difference=0",
+  "original_null_word_mixed_phase": "w/10",
+  "geometric_plaquette_mixed_phase_given_owned_jet": "h^2*Omega*w/40",
+  "whole_history_relative_phase_coherence_required": false,
+  "native_readout_and_price_selected": false,
+  "GR_closed": false,
+  "raw216_closed": false
+}

@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "checks": 166,
+  "exact_scope": "Fraction addressed occupation/capped source",
+  "native_n20": {
+    "a": 0.3416407870701554,
+    "K": 100000000,
+    "max_site_count": 78,
+    "N": 10946,
+    "rare_q_max": 4.5068333491302966e-9,
+    "lower_bound_expected_trials_missing": 163.1213020754861,
+    "rigorous_rational_lower": 160
+  },
+  "native_mesh_thresholds": [
+    {
+      "L": 4,
+      "W": 256,
+      "n": 320,
+      "a": 0.34164078649987384,
+      "K_mean_clock_logW_threshold": 2244517902.1502876,
+      "K_C1_sufficient_with_loglog_plus5": 4961705695.827108
+    },
+    {
+      "L": 8,
+      "W": 4096,
+      "n": 448,
+      "a": 0.34164078649987384,
+      "K_mean_clock_logW_threshold": 53868429651.606895,
+      "K_C1_sufficient_with_loglog_plus5": 99969351960.3465
+    },
+    {
+      "L": 16,
+      "W": 65536,
+      "n": 512,
+      "a": 0.34164078649987384,
+      "K_mean_clock_logW_threshold": 1149193165900.9473,
+      "K_C1_sufficient_with_loglog_plus5": 1916617813951.0225
+    },
+    {
+      "L": 32,
+      "W": 1048576,
+      "n": 640,
+      "a": 0.34164078649987384,
+      "K_mean_clock_logW_threshold": 22983863318018.945,
+      "K_C1_sufficient_with_loglog_plus5": 35632615253376.22
+    }
+  ],
+  "physical_Book03_selected": false,
+  "GR_closed": false
+}

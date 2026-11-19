@@ -1,0 +1,90 @@
+{
+  "schema": "a4d-y-curved-joint-center-gradient-module-v1",
+  "terminal": "A4D-Y-FOLDED-CENTER-GRADIENT-LOCAL-MODULE-CERTIFIED",
+  "joint_shape": [
+    136,
+    96
+  ],
+  "target_shape": [
+    106,
+    96
+  ],
+  "holomorphic_reduced_jacobian_determinant": "-62976744635716940958283670688/206230323499945683191645561081",
+  "folded_target_ranks": [
+    95,
+    95,
+    95,
+    95
+  ],
+  "prime": 1000000007,
+  "denominator_clearing": 14,
+  "short_inverse_obstructions": [
+    {
+      "template": "axes",
+      "alpha_count": 9,
+      "beta_count": 89,
+      "checked_matrix_shape": [
+        8366,
+        1224
+      ],
+      "rank_mod_prime": 1224,
+      "augmented_rank_mod_prime": 1318,
+      "checked_phase_sectors": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "template": "stencil",
+      "alpha_count": 21,
+      "beta_count": 131,
+      "checked_matrix_shape": [
+        12314,
+        2856
+      ],
+      "rank_mod_prime": 2856,
+      "augmented_rank_mod_prime": 2950,
+      "checked_phase_sectors": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "template": "degree2",
+      "alpha_count": 41,
+      "beta_count": 251,
+      "checked_matrix_shape": [
+        23594,
+        5576
+      ],
+      "rank_mod_prime": 5576,
+      "augmented_rank_mod_prime": 5670,
+      "checked_phase_sectors": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "template": "degree3_phase0",
+      "alpha_count": 129,
+      "beta_count": 569,
+      "checked_matrix_shape": [
+        13431,
+        4386
+      ],
+      "rank_mod_prime": 4386,
+      "augmented_rank_mod_prime": 4409,
+      "checked_phase_sectors": [
+        0
+      ]
+    }
+  ],
+  "open_premise": "full joint rank on the physical torus outside the four folded characters",
+  "scope": "local division unconditional; all-torus norm estimate and flat nonlinear rigidity conditional; curved response terminal open"
+}

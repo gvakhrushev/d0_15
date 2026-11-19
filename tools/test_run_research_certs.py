@@ -138,7 +138,9 @@ class ReplayTests(unittest.TestCase):
                   historical.REPORT_SNAPSHOT, historical.REPORT_TARGET}
                  | set(manifest["entrypoints"]) | set(manifest["receipts"])
                  | set(manifest["compatibility_capsules"]) | historical.REPORT_RECEIPTS
-                 | historical.REPORT_ENTRYPOINTS)
+                 | historical.REPORT_ENTRYPOINTS | {historical.SUPPORT_MANIFEST}
+                 | set(historical.SUPPORT_INPUTS)
+                 | {item["snapshot_path"] for item in historical.SUPPORT_INPUTS.values()})
         for name in paths:
             target = self.repo / name
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -285,6 +287,103 @@ class ReplayTests(unittest.TestCase):
         result, _ = self.run_one(name, body)
         self.assertEqual(result["status"], "PASS", result)
         self.assertNotIn("report_input", result["historical_input"])
+
+    def historical_support_fixture(self, name: str, tail: str = "") -> str:
+        self.historical_fixture(self.historical_body())
+        entry = historical.CERT + name
+        body = ("from pathlib import Path\nimport hashlib\n"
+                f"assert hashlib.sha256(Path({historical.TARGET!r}).read_bytes()).hexdigest() == {historical.SOURCE_SHA256!r}\n")
+        for target, binding in historical.SUPPORT_INPUTS.items():
+            expected = (binding["snapshot_sha256"] if target in historical.SUPPORT_BINDINGS.get(entry, [])
+                        else historical.sha((self.repo / target).read_bytes()))
+            body += f"assert hashlib.sha256(Path({target!r}).read_bytes()).hexdigest() == {expected!r}\n"
+        body += "print('checked scoped support inputs')\n" + tail
+        manifest = json.loads((self.repo / historical.MANIFEST).read_text())
+        manifest["entrypoints"][entry]["sha256"] = historical.sha(body.encode())
+        if entry in historical.REPORT_ENTRYPOINTS:
+            manifest["report_input"]["entrypoint_sha256"][entry] = historical.sha(body.encode())
+        (self.repo / historical.MANIFEST).write_text(json.dumps(manifest))
+        return body
+
+    def test_support_overlay_is_scoped_to_exactly_three_consumers(self) -> None:
+        entries = sorted(historical.SUPPORT_ENTRYPOINTS) + [historical.CERT + "a4d_native_history_action_check.py"]
+        self.assertEqual(len(historical.SUPPORT_ENTRYPOINTS), 3)
+        for entry in entries:
+            with self.subTest(entry=entry):
+                name = Path(entry).name
+                body = self.historical_support_fixture(name)
+                maintained = {p: (self.repo / p).read_bytes() for p in historical.SUPPORT_INPUTS}
+                result, logs = self.run_one(name, body)
+                self.assertEqual(result["status"], "PASS", result)
+                evidence = json.loads((logs / "historical-input.json").read_text())
+                inputs = evidence.get("support_inputs", [])
+                self.assertEqual([x["target_path"] for x in inputs], historical.SUPPORT_BINDINGS.get(entry, []))
+                for target, before in maintained.items():
+                    self.assertEqual((self.repo / target).read_bytes(), before)
+                for item in inputs:
+                    self.assertEqual(item["source_head"], historical.SUPPORT_SOURCE_HEAD)
+                    self.assertEqual(item["maintained_sha256"], historical.sha(maintained[item["target_path"]]))
+                self.assertFalse(result["historical_input_mutation"])
+
+    def test_support_overlay_recursive_mutation_is_exposed_and_not_overwritten(self) -> None:
+        name = "a4d_native_prepared_action_check.py"
+        targets = historical.SUPPORT_BINDINGS[historical.CERT + name]
+        tail = "".join(f"Path({target!r}).write_text('mutated support {index}\\n')\n"
+                       for index, target in enumerate(targets))
+        body = self.historical_support_fixture(name, tail)
+        maintained = {p: (self.repo / p).read_bytes() for p in targets}
+        result, logs = self.run_one(name, body)
+        self.assertEqual(result["status"], "MUTATION", result)
+        self.assertTrue(result["historical_input_mutation"])
+        patch = (logs / "tracked.patch").read_bytes()
+        for index, target in enumerate(targets):
+            self.assertIn(f"mutated support {index}".encode(), patch)
+            self.assertEqual((self.repo / target).read_bytes(), maintained[target])
+        self.assertNotIn(historical.TARGET.encode(), patch)
+
+    def test_support_snapshot_and_reinterpreted_entrypoint_are_rejected(self) -> None:
+        self.historical_fixture(self.historical_body())
+        manifest_path = self.repo / historical.SUPPORT_MANIFEST
+        original_manifest = manifest_path.read_bytes()
+        for entry_change in (False, True):
+            with self.subTest(entry_change=entry_change):
+                if entry_change:
+                    data = json.loads(original_manifest)
+                    data["entrypoints"][historical.CERT + "a4d_native_history_action_check.py"] = []
+                    manifest_path.write_text(json.dumps(data))
+                    with self.assertRaisesRegex(ValueError, "source, paths or entrypoint set"):
+                        historical.validate(self.repo)
+                    manifest_path.write_bytes(original_manifest)
+                else:
+                    snapshot = self.repo / next(iter(historical.SUPPORT_INPUTS.values()))["snapshot_path"]
+                    original = snapshot.read_bytes()
+                    snapshot.write_bytes(original + b"\n")
+                    with self.assertRaisesRegex(ValueError, "support snapshot hash mismatch"):
+                        historical.validate(self.repo)
+                    snapshot.write_bytes(original)
+
+    def test_support_binding_change_selects_exactly_three_consumers(self) -> None:
+        import research_input_closure as closure
+        self.historical_fixture(self.historical_body())
+        base = self.commit()
+        snapshot = self.repo / next(iter(historical.SUPPORT_INPUTS.values()))["snapshot_path"]
+        snapshot.write_bytes(snapshot.read_bytes() + b"\n")
+        report = closure.select(self.repo, self.commit(), base)
+        bound = {row["certificate"] for row in report["selected"]
+                 if "historical-support-input-binding" in row["reasons"]}
+        self.assertEqual(bound, historical.SUPPORT_ENTRYPOINTS)
+
+    def test_pre_support_main_snapshot_requires_exact_original_inputs(self) -> None:
+        self.historical_fixture(self.historical_body())
+        (self.repo / historical.SUPPORT_MANIFEST).unlink()
+        with self.assertRaisesRegex(ValueError, "support manifest required"):
+            historical.validate(self.repo)
+        for target, binding in historical.SUPPORT_INPUTS.items():
+            (self.repo / target).write_bytes((self.repo / binding["snapshot_path"]).read_bytes())
+        historical.validate(self.repo)
+        overlay = historical.apply(self.repo, historical.CERT + "a4d_native_prepared_action_check.py")
+        self.assertNotIn("support_inputs", overlay.provenance)
+        self.assertFalse(overlay.restore())
 
     def historical_report_only_fixture(self, tail: str = "") -> tuple[str, str]:
         real = Path(__file__).resolve().parents[1]

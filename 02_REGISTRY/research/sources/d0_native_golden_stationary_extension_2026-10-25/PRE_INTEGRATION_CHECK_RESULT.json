@@ -1,0 +1,213 @@
+{
+  "check_names": [
+    "characteristic2 quotient has NONZERO squarezero t",
+    "odd controlledG has nonuniform row sums; native evenpower passes",
+    "native source-I signed permutation preserves residue ones",
+    "actual3stage coin-writer is full16-column unitary and respects ring invariant",
+    "actual coin and typed000/101 containers have exactly p,p2 probabilities",
+    "actual full-input original0/10 length effect isIpluscoin1",
+    "real code corner is sqrtp; all container columns stay in the carrier",
+    "full parity sectors give phases0,pi,plus/minustheta withmultiplicity4",
+    "tensor word transports EVERY old protected corner by sqrtp",
+    "actual parent plus3stage extension keeps true135clock8192carrier rank4",
+    "the actual parent satisfies the compact input needed for the new source bound",
+    "independent coin Book source is its ACTUAL weight over1minusu",
+    "original field source keeps its report coefficient with NEW weight",
+    "Golden code price and first source vanish by EXACT Kraft identities",
+    "actual generator row has a strict configured allmode heat remainder bound",
+    "logical TARGET recipe is full64-column orthogonal with7Toffoli1CCZ6X",
+    "GOOD and controlledJ are correct on ALL16 initialized scratch/input columns",
+    "COMPLETE raw X-cycle alphabet includes failed and zero branches",
+    "all GOOD/X outcomes together have EXACT full logical GramI4",
+    "successful raw-X transfer is2p4CG with retained plus resources",
+    "FULL remaining GOOD/X failure effect is1minus4p8, not discarded",
+    "a nonready record has control-dependent effect despite scalar success",
+    "successful herald factor is annihilated in integral mod2 quotient",
+    "separately evaluated Golden entropy equals declared code charge"
+  ],
+  "checks": 24,
+  "code_info_increment_noninterval": "0.66501838644400357013260574237266427605724748278878923070628779210970814969413948",
+  "code_length_increment_noninterval": "1.3819660112501051517954131656343618822796908201942371378645513772947395371810976",
+  "coin_native": {
+    "cut_rank": 4,
+    "full_columns": 16,
+    "paired_modes": 2211840,
+    "phase_multiplicities": {
+      "+theta": 4,
+      "-theta": 4,
+      "0": 4,
+      "pi": 4
+    },
+    "stages": 3,
+    "whole_parent_dimension": 8192,
+    "whole_parent_stages": 135
+  },
+  "generated_utc": "2026-10-25T08:20:14.686571+00:00",
+  "heralded": {
+    "Gamma_Bool": "(2p^3)^14 (4p^3)^28 (16p^9)^8",
+    "gamma_total_noninterval": "0.0000000000018016302183484672058383642976003585307619188957985749098047832272",
+    "initialized_truth_columns": 16,
+    "logical_columns": 64,
+    "logical_counts": {
+      "CCX": 7,
+      "CCZ": 1,
+      "X": 6
+    },
+    "logical_input_rank": 4,
+    "nonready_effect_noninterval": [
+      "0.408489264086955630392397977858263654323538120883077434223988",
+      "0.27164104665007992315147716439944034352312605262421970830108"
+    ],
+    "raw_X_success_scalar": "2p^4",
+    "raw_boolean_recipe_inventory": {
+      "CX": 686,
+      "G": 274,
+      "stages": 960
+    },
+    "scope": "logical Boolean TARGET plus complete raw-X instrument conditioned on BooleanREADY;960-stage counts are analytic recipes, no full raw word emitted or matrix-replayed",
+    "success_probability": "4p^8 Gamma_Bool"
+  },
+  "ring": {
+    "modulus": "x4+x2+1=(x2+x+1)^2",
+    "nilpotent_t": 7,
+    "one_plus_t": 6,
+    "scope": "integral reduction of actual finite words; clean all-input gate obstruction only"
+  },
+  "scope": [
+    "actual16-column native coin-writer and full-input length effect",
+    "parent13-qubit word validated/counted; no8192 matrix/clock simulation",
+    "logical64 Boolean target and complete raw-X outcomes conditional on BooleanREADY",
+    "herald success doesnot give clean native gate or full raw Book corner",
+    "code component neutral; independent Book controller row retained; no fullCost/GR promotion"
+  ],
+  "section_pins": [
+    {
+      "bytes": 12662,
+      "heading": "## 7j.",
+      "sha256": "d072b9d1fa81bd46d8a95dca5fefd35d63d6fa53cc5817a112ec29208f3dd837"
+    },
+    {
+      "bytes": 8472,
+      "heading": "## 7y.",
+      "sha256": "c9aea257583a111ec49f5113e0ac318b585037501dd223c79a8a5c719e5fdc37"
+    },
+    {
+      "bytes": 8847,
+      "heading": "## 7ai.",
+      "sha256": "b85894771aefa1b9a72829a82d6d05e10d4a5d1c5571ed3ad7b2648ebe7f2022"
+    },
+    {
+      "bytes": 9239,
+      "heading": "## 7aj.",
+      "sha256": "7ce0153406c8d6b163e059eae5046da4d0a750da9558d8b10ab9e1be6f0d48be"
+    },
+    {
+      "bytes": 10616,
+      "heading": "## 7ak.",
+      "sha256": "fbd5dfbb3c632c621dea184acf324342616648b900a1046026f21bf224a575cd"
+    },
+    {
+      "bytes": 10289,
+      "heading": "## 7al.",
+      "sha256": "8596e4606479ef097f2b6ab39fc0a6eb4971356a9c67ed3d5fc660a13fcfc65a"
+    }
+  ],
+  "source_pins": [
+    {
+      "bytes": 14448,
+      "path": "02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/check_golden_extension.py",
+      "sha256": "2aba91f177eaf35be1f2eaf0a16a455526d45f349e8816d3033ca98ea04bf3b2"
+    },
+    {
+      "bytes": 13208,
+      "path": "02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/CLEAN_BOUNDARY.md",
+      "sha256": "6114c19600f5d8aaee788f94bac4e806a6d7b58d17748663da761c605a9c9758"
+    },
+    {
+      "bytes": 16750,
+      "path": "02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/HERALDED_CONTROL.md",
+      "sha256": "8d478d915264340ae65522777225227293feb6c94e90812e3f2ec2bc2bb7bd60"
+    },
+    {
+      "bytes": 17917,
+      "path": "02_REGISTRY/research/sources/d0_native_golden_stationary_extension_2026-10-25/ALL_BRANCHES.md",
+      "sha256": "45e37487700f95b8cacaa6ad37e7bed43642d081f5caef725b4ca048f20850b8"
+    },
+    {
+      "bytes": 17833,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "bytes": 9896,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/book_price.py",
+      "sha256": "7c325fe6322298e13c2380522e9645cc228d8d5db2d7741368310690b80b095c"
+    },
+    {
+      "bytes": 5316,
+      "path": "02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/helper.py",
+      "sha256": "d24bf83a39e58865bb8733b5b40195ac7a31e2bcca6dc3aee56b36eb445400c6"
+    },
+    {
+      "bytes": 21754,
+      "path": "02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/CQ_SOURCE.md",
+      "sha256": "bf1c2065c956cced649007128152158e03171c76da04a05c89b899c76988b4e5"
+    },
+    {
+      "bytes": 23168,
+      "path": "02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/COMPLETION_MAP.md",
+      "sha256": "f26b7f7dd179643638ea57b521b9fbc742b7fdbca9e168583d5c419d0a08bfe0"
+    },
+    {
+      "bytes": 11806,
+      "path": "02_REGISTRY/research/sources/d0_known_port_complete_record_price_2026-10-25/CHECK_RESULT.json",
+      "sha256": "ef6010bbd047e257e5f7ccca29b576426bb8a316d32695a9fdb4052160d4b633"
+    },
+    {
+      "bytes": 28434,
+      "path": "02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/TASK_MAP.md",
+      "sha256": "8b1b0dc3108c513c02512fbbec565d8fad3d5e40ebf913d727bfab605d821e3d"
+    },
+    {
+      "bytes": 20285,
+      "path": "02_REGISTRY/research/sources/d0_known_port_task_source_2026-10-25/HEAT_TRANSFER.md",
+      "sha256": "21b87878c32ec9786338831a3d1ea4aeec4efbdf84e22e446e8ded629acba8c6"
+    },
+    {
+      "bytes": 16828,
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "bytes": 13833,
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/DETERMINANT_PREPARATION_BANK.md",
+      "sha256": "6cc9fc85ef8e238635ef24b78ddb3936f07d1a3f915558172eee8ff1c3602705"
+    },
+    {
+      "bytes": 18142,
+      "path": "02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md",
+      "sha256": "9c513067559c9cd89ac4c911d01a21e06c9b4d2cd962d5d568b51459ae3d0866"
+    },
+    {
+      "bytes": 26168,
+      "path": "02_REGISTRY/research/sources/d0_known_port_native_cofield_2026-10-25/SOURCE_TRANSFER.md",
+      "sha256": "b30663e5365ccdebf2b21e35820f39f063671e246d69f29abad891ac18285e19"
+    },
+    {
+      "bytes": 26868,
+      "path": "02_REGISTRY/research/sources/d0_native_price_cofield_forks_2026-10-25/COFIELD_THEOREM.md",
+      "sha256": "41b8f08cbffc3de99df1ec92c589f652ee9bc1dca2139a1f5834650a721ccd11"
+    },
+    {
+      "bytes": 14746,
+      "path": "02_REGISTRY/research/A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md",
+      "sha256": "4e6a9b41bd5cd0bd19d9946a77a2418d1844574b79fad9d0ed540577dc8bcb46"
+    },
+    {
+      "bytes": 240407,
+      "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "sha256": "10fe4ed60c0796ccd5bd46a2ca2438aaef8be01e0980b39979d77563c8ff5f05"
+    }
+  ],
+  "status": "PASS"
+}

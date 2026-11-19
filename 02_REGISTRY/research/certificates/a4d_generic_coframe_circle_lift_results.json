@@ -1,0 +1,239 @@
+{
+  "schema": "a4d-generic-coframe-flat-circle-lift-v1",
+  "coframe": [
+    [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1/2",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1/2",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "physical_placement_control": "literal Hessian and Gram rows equal (A.T;C) on each line coefficientwise",
+  "determinant_formula": "det[(den*a)*H_S(a,a,i,i)] = a^14*(a-i)^8*P(a)",
+  "negative_circle_controls": "on role-1 circle, single shear and diagonal warp retain rank 22; two-shear witness lifts",
+  "records": [
+    {
+      "spatial_role": 1,
+      "clearing_denominator": 4,
+      "determinant_degree": 34,
+      "determinant_quotient_coefficients": [
+        [
+          "-509020733440",
+          "0"
+        ],
+        [
+          "0",
+          "-1867102814208"
+        ],
+        [
+          "5468030238720",
+          "0"
+        ],
+        [
+          "0",
+          "13109783691264"
+        ],
+        [
+          "-22719655575552",
+          "0"
+        ],
+        [
+          "0",
+          "-32470758064128"
+        ],
+        [
+          "37570595520512",
+          "0"
+        ],
+        [
+          "0",
+          "32470758064128"
+        ],
+        [
+          "-22719655575552",
+          "0"
+        ],
+        [
+          "0",
+          "-13109783691264"
+        ],
+        [
+          "5468030238720",
+          "0"
+        ],
+        [
+          "0",
+          "1867102814208"
+        ],
+        [
+          "-509020733440",
+          "0"
+        ]
+      ],
+      "quotient_factor_degrees": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "each_factor_coprime_to_reverse_conjugate": true,
+      "connection_rank_at_quarter": 16,
+      "joint_rank_at_quarter": 20,
+      "rank_at_held_out_unit_character": 24
+    },
+    {
+      "spatial_role": 2,
+      "clearing_denominator": 8,
+      "determinant_degree": 34,
+      "determinant_quotient_coefficients": [
+        [
+          "-2035011305059909632",
+          "0"
+        ],
+        [
+          "0",
+          "-7531637058079555584"
+        ],
+        [
+          "-23973188582074482688",
+          "0"
+        ],
+        [
+          "0",
+          "-118365646100132528128"
+        ],
+        [
+          "-136057175219141345280",
+          "0"
+        ],
+        [
+          "0",
+          "-81131643599637708800"
+        ],
+        [
+          "588221832361557360640",
+          "0"
+        ],
+        [
+          "0",
+          "81131643599637708800"
+        ],
+        [
+          "-136057175219141345280",
+          "0"
+        ],
+        [
+          "0",
+          "118365646100132528128"
+        ],
+        [
+          "-23973188582074482688",
+          "0"
+        ],
+        [
+          "0",
+          "7531637058079555584"
+        ],
+        [
+          "-2035011305059909632",
+          "0"
+        ]
+      ],
+      "quotient_factor_degrees": [
+        6,
+        6
+      ],
+      "each_factor_coprime_to_reverse_conjugate": true,
+      "connection_rank_at_quarter": 16,
+      "joint_rank_at_quarter": 20,
+      "rank_at_held_out_unit_character": 24
+    },
+    {
+      "spatial_role": 3,
+      "clearing_denominator": 8,
+      "determinant_degree": 34,
+      "determinant_quotient_coefficients": [
+        [
+          "-18447869973616394240",
+          "0"
+        ],
+        [
+          "0",
+          "6293780479250268160"
+        ],
+        [
+          "76916133610930569216",
+          "0"
+        ],
+        [
+          "0",
+          "-187642478474391715840"
+        ],
+        [
+          "-167831143713588903936",
+          "0"
+        ],
+        [
+          "0",
+          "237733765329820057600"
+        ],
+        [
+          "369488261278404182016",
+          "0"
+        ],
+        [
+          "0",
+          "-237733765329820057600"
+        ],
+        [
+          "-167831143713588903936",
+          "0"
+        ],
+        [
+          "0",
+          "187642478474391715840"
+        ],
+        [
+          "76916133610930569216",
+          "0"
+        ],
+        [
+          "0",
+          "-6293780479250268160"
+        ],
+        [
+          "-18447869973616394240",
+          "0"
+        ]
+      ],
+      "quotient_factor_degrees": [
+        6,
+        6
+      ],
+      "each_factor_coprime_to_reverse_conjugate": true,
+      "connection_rank_at_quarter": 16,
+      "joint_rank_at_quarter": 20,
+      "rank_at_held_out_unit_character": 24
+    }
+  ],
+  "conclusion": "All three old flat plus-i circles and real conjugates have full connection rank except at the diagonal quarter points for this fixed nonorthogonal coframe.",
+  "scope": "frozen lines only; no all-torus or varying-coframe uniform inverse; no task terminal"
+}

@@ -1,0 +1,2 @@
+# Archive members are byte-verified against the published reconstruction manifest.
+stages/** -text -whitespace

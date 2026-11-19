@@ -1,0 +1,172 @@
+{
+  "schema": "d0.native-prefix-cx/1",
+  "status": "PASS",
+  "ring_basis": [
+    "1",
+    "a",
+    "a^2",
+    "a^3"
+  ],
+  "relation": "a^4=1-a^2; a>0",
+  "true_z": "2^-20",
+  "original_native_word_length": 8,
+  "six_wire_order": [
+    "Spin0",
+    "Spin1",
+    "e",
+    "b",
+    "r",
+    "t"
+  ],
+  "true_born_rank": 4,
+  "full_square_columns": 64,
+  "short_spectator_comparison": {
+    "expanded_slot_length": 5,
+    "copy_tick_within_slot_one_based": 2,
+    "exact_cold_before_after_W": [
+      [
+        -12,
+        0,
+        21,
+        0
+      ],
+      [
+        -5,
+        24,
+        9,
+        -38
+      ]
+    ],
+    "exact_cold_before_after_W_reverse": [
+      [
+        -5,
+        3,
+        9,
+        -4
+      ],
+      [
+        -10,
+        8,
+        17,
+        -12
+      ]
+    ],
+    "delta_J_W": [
+      "0.0000000873516053178418",
+      "0.0000000873516053178419"
+    ],
+    "delta_J_W_reverse": [
+      "0.0000000883154600058095",
+      "0.0000000883154600058096"
+    ],
+    "difference_W_minus_W_reverse": [
+      "-0.0000000009638546879678",
+      "-0.0000000009638546879677"
+    ]
+  },
+  "one_tail_source": {
+    "ordinary_cold_before_after": [
+      [
+        0,
+        -2,
+        1,
+        4
+      ],
+      [
+        -5,
+        3,
+        9,
+        -4
+      ]
+    ],
+    "expanded_per_cell": 18,
+    "slot_length_at_N": "36*N+1",
+    "address_multiplicities_per_cell": {
+      "G_t": 2,
+      "CX(e,t)": 8,
+      "CX(t,e)": 4,
+      "SourceI_e": 4
+    },
+    "full_endpoint_tested_n_at_N2": [
+      0,
+      1,
+      2
+    ],
+    "direct_CX_slot_tick_at_N2_one_based": 37,
+    "ordinary_J_increment": [
+      "0.0000000893990139349615",
+      "0.0000000893990139349616"
+    ],
+    "J_increment_at_single_rotated_pair_x_equals_p6": [
+      "0.0000000049820406321034",
+      "0.0000000049820406321035"
+    ],
+    "certified_global_derivative_enclosure": [
+      "0.0000000893989258475080",
+      "0.0000000893990963626710"
+    ],
+    "native_secant_slope_between_1_and_p6": [
+      "0.0000000893990093414229",
+      "0.0000000893990093414230"
+    ]
+  },
+  "literal_512_rotation_with_paid_loader_uncompute": {
+    "required_interface": "current fresh canonical bank; R_load uncomputes on accessible bank wires and fixes e,r,t at its completed boundary; exact 512 acceptance rotation",
+    "comparator": "R_load* before CX and R_load after CX, plus the balanced tail cells",
+    "cos512": [
+      "-0.2491345465620200323898",
+      "-0.2491345465620200323897"
+    ],
+    "sin512": [
+      "0.9684688831910587887329",
+      "0.9684688831910587887330"
+    ],
+    "Q0_equals_4_lambda_p7": [
+      "0.1292164640097244226950",
+      "0.1292164640097244226951"
+    ],
+    "q0_report_equals_p2_plus_p3_Q0": [
+      "0.4124698805685551619070",
+      "0.4124698805685551619071"
+    ],
+    "cold_before_after_at_PC13": [
+      [
+        "0.7333227875118158675775",
+        "0.7333227875118158675776"
+      ],
+      [
+        "0.7309921763949211129099",
+        "0.7309921763949211129100"
+      ]
+    ],
+    "linear_in_Q_slope_before": [
+      "-0.4088379189948403614725",
+      "-0.4088379189948403614724"
+    ],
+    "linear_in_Q_slope_after": [
+      "-0.4268744063322384831296",
+      "-0.4268744063322384831295"
+    ],
+    "positive_floor_for_dQ_of_J_jump_contrast_Q_zero_to_half": [
+      "0.0000000478558206260227",
+      "0.0000000478558206260228"
+    ],
+    "dQ_of_J_jump_contrast_at_PC13": [
+      "0.0000000881198581416844",
+      "0.0000000881198581416845"
+    ],
+    "old_independent_prefix_order_crossing_X_before_equals_X_after_1": [
+      "0.9936537971038265098610",
+      "0.9936537971038265098611"
+    ],
+    "old_independent_recovered_Q": [
+      "0.1292164640097244226950",
+      "0.1292164640097244226951"
+    ],
+    "same_execution_field_row": "multiply d/dQ by the actual D_Y Q, with all genuine gain/right-lift restrictions; it may vanish at a stationary field"
+  },
+  "bounds_scope": "closed feedback action of each truncated prefix regarded as a complete circuit; endpoint equality compares histories of the same fixed padded length",
+  "intermediate_marks_equal": false,
+  "microscopic_edge_cost_identified": false,
+  "einstein_source_identified": false
+}

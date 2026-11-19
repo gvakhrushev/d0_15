@@ -1,0 +1,96 @@
+{
+  "head": "2c592f9b9437cd302fcd39352b85212341bff968",
+  "scope": "Read-only exact composition; original source and source-support conditions retained. No graph/rank replay or new apparatus.",
+  "inputs": [
+    {
+      "path": "03_FORMALIZATION/D0/Core/BornFinite.lean",
+      "sha256": "5fe9a40a3d0bc5528ba146192dbca72c782d502a83233e7430630ea648f75332"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Core/BornFiniteEffects.lean",
+      "sha256": "0d4fdcb7b7233191b19eb07ccab61ff1901eb26bff4147fccc4a03ab13cdf66f"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Core/BornQuadraticOrigin.lean",
+      "sha256": "8f32214f018417c6e8f3e701a381256093dd612f770277cfcb7babe1a2ac95c0"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Core/BornQuadraticResponse.lean",
+      "sha256": "d5e9785c6dad2fa928d27ad1791ed7ee63148a1890a99af8b5a38b40b2ca8d83"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+      "sha256": "15143b63f2bf1cc51493e3efb36c9da57c203d7e680e2f1370cf2311eb2e9ef1"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/FutureExecutionCompleteness.lean",
+      "sha256": "d202822470539f777e0f54df97d8bf9aaa983e032291195e9748036d7f00ec8c"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+      "sha256": "382b2b506e17c6422623b6a2581756468e157def9ea783445f0943bd124a19d7"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "sha256": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md",
+      "sha256": "cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md",
+      "sha256": "a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_ALL_PATHS_FLOW_PRESSURE_ACTION_AND_EXACT_HISTORY_SCHUR_2026_10_19.md",
+      "sha256": "21300f0d518581bf32f2bfb82e4eece9724f84d454b17db474daa3bc1d4ed778"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK_FLOW_HESSIAN_EQUALS_ORIGINAL_ARCHIVE_METRIC_AND_FUTURE_SOURCE_SELECTOR_2026_10_19.md",
+      "sha256": "fb22e6afbf20b471e71e80b1f8bc2c9425106eed7cd72b428d9ac3ef14318a7c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GLOBAL_327_BOOK_FISHER_CAR16_MAGNETIC_WICK_AND_DARK_REVIVAL_2026_10_20.md",
+      "sha256": "6ead804f5e220ec918345e61538fd1d9ae85e34370caa0d92d217814f5702b05"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ONE_8440_BOOK_CLOCK_AND_143480_GOLDEN_SOURCE_GLOBAL_INVERSE_2026_10_19.md",
+      "sha256": "81fe97379affc1055156acab61a9f96a90f4217f8cef6f656995933edeaf78d6"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ONE_8440_BOOK_CLOCK_ACCEPTANCE_GAUGE_AND_PAID_SOURCE_NONSELECTION_2026_10_20.md",
+      "sha256": "401c360042dc93ba6e5c91b16671723c50b1a133cd17e00a50d0409ba4020455"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+      "sha256": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+      "sha256": "aa593fa464a4d7e067d0a1ba763121fd229192b6d5c79d6f9b20d06469cb1d25"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "EXACT_DOOB_BINDING_CRITERION.md",
+      "sha256": "f4faa541795b02be1478da158fb1d52bc38cbf91e008bf912cc532771f016225"
+    },
+    {
+      "path": "FOUNDATIONAL_WEIGHT_BRIDGES.md",
+      "sha256": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f"
+    },
+    {
+      "path": "REVIEW_BOOK_INFO_ARCHIVE.md",
+      "sha256": "d3a7643523f4d96afb36613ccf42672b2097ac3ecbfbcc29b93fb1b90ddd1753"
+    }
+  ]
+}

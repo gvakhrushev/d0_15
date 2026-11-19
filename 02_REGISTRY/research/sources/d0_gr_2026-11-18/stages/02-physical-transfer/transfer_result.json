@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "exact_recurrences_checked": 12,
+  "horizon_observation_and_derivative": "exact, including all common varying charges",
+  "minimum_polynomial_of_return_probability": "5*t**2-5*t+1",
+  "heat_bound_L52": 2.2503570718975317e-57,
+  "feedback_contrast_per_rank": 9.00528273745536e-07,
+  "first_even_amplification_examples": [
+    {
+      "m": 12,
+      "square_calls": 1130,
+      "column_error": 0.0884071545269625
+    },
+    {
+      "m": 70,
+      "square_calls": 6466,
+      "column_error": 0.003875948584286128
+    },
+    {
+      "m": 7282,
+      "square_calls": 669970,
+      "column_error": 0.0006768886192533386
+    },
+    {
+      "m": 8916,
+      "square_calls": 820298,
+      "column_error": 3.401411855453556e-05
+    }
+  ],
+  "physical_C_closed": false,
+  "GR_closed": false
+}

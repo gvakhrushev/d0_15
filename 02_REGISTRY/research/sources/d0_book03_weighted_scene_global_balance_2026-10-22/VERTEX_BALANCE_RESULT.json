@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "independent_vertex_parameters": 30,
+  "common_scale_parameter": 1,
+  "stationary_manifold_dimension": 31,
+  "Hessian_kernel_lower_bound_at_least": 31,
+  "edge_count": 359,
+  "trials": [
+    {
+      "complete_scene_price": 3.597161242154769,
+      "full359_grad_max": 2.371692252312041e-19,
+      "full359_exact_formula_cancellation": "0"
+    },
+    {
+      "complete_scene_price": 3.597161242154768,
+      "full359_grad_max": 1.4992483166401116e-19,
+      "full359_exact_formula_cancellation": "0"
+    },
+    {
+      "complete_scene_price": 3.597161242154768,
+      "full359_grad_max": 2.0667603913004928e-19,
+      "full359_exact_formula_cancellation": "0"
+    }
+  ],
+  "scope": "exact full359 source cancellation on weighted scene manifold; no proof of global 359-edge price minimum; binary passport not admitted"
+}

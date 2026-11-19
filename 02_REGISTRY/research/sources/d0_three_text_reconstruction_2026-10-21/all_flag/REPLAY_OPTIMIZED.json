@@ -1,0 +1,65 @@
+{
+  "status": "PASS_RECONSTRUCTED_ORIGINAL_FULL_FLAG",
+  "historical_bytes_recovered": false,
+  "symbolic_engine": "1.14.0",
+  "partitions": [
+    {
+      "partition": [
+        "1"
+      ],
+      "s2": "1",
+      "rotation_fisher": "1/24",
+      "boost_fisher": "1/18"
+    },
+    {
+      "partition": [
+        "1/2",
+        "1/2"
+      ],
+      "s2": "1/2",
+      "rotation_fisher": "5/192",
+      "boost_fisher": "1/36"
+    },
+    {
+      "partition": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "s2": "1/3",
+      "rotation_fisher": "1/48",
+      "boost_fisher": "1/54"
+    },
+    {
+      "partition": [
+        "1/10",
+        "1/5",
+        "3/10",
+        "2/5"
+      ],
+      "s2": "3/10",
+      "rotation_fisher": "19/960",
+      "boost_fisher": "1/60"
+    },
+    {
+      "partition": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "s2": "1/6",
+      "rotation_fisher": "1/64",
+      "boost_fisher": "1/108"
+    }
+  ],
+  "score_coefficient": "sqrt(2)",
+  "FQ_equals_12_FI": true,
+  "source_shape_third_jets": [
+    -24,
+    8
+  ],
+  "scope": "local fixed preparation/output; no selected Book price or GR closure"
+}

@@ -1,0 +1,18 @@
+{
+  "absolute_CQ_source_code_slope_27_range": [
+    "0.561483589527",
+    "0.578340178785"
+  ],
+  "actual_native_born_and_dephased_gap_nats": "0.02657517936862",
+  "actual_noisy_CX_hidden_entropy_nats": "0.02812879411594",
+  "actual_noisy_CX_old_compression_dimension": 8,
+  "certified_quadratic_majorant_nats": "1.528744119708297E-11",
+  "full_physical_Cost_minus_Info": false,
+  "generated_bank_all_180_plus_16_resources_replayed": false,
+  "native_table_max": "1.858708200400872416E-6",
+  "native_table_min": "1.843692133621598642E-6",
+  "sign_words_each_orientation": 1024,
+  "status": "PASS",
+  "sufficient_report_increment_for_positive_ledger": "5.657980429587018E-11",
+  "universal_capacity_nats_numeric": "1.522548750754660E-11"
+}

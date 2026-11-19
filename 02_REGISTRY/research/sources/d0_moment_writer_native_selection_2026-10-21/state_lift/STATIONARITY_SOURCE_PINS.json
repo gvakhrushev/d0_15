@@ -1,0 +1,51 @@
+{
+  "source_ref": "f64d4c3389b507c7e7fb66ace9480ed6191c463d",
+  "sources": [
+    {
+      "bytes": 15959,
+      "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "sha256": "4ec6622ae2ff4f75d615bbd2b207a071a154df56e59d74f0eb76fab6c9f95d82"
+    },
+    {
+      "bytes": 31515,
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "sha256": "e95f0486456c53cf0ce40023bab08ac744fd6189b397d29a8773446c168244a0"
+    },
+    {
+      "bytes": 12080,
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/check_paid_code_and_moment_writer.py",
+      "sha256": "6d2985960398735785f6c417c1482e5ca9276bac7f857c3a596bf0fc561b524e"
+    },
+    {
+      "bytes": 28827,
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "sha256": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15"
+    },
+    {
+      "bytes": 15857,
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md",
+      "sha256": "711c9129230643f65228962a9835dd5faa59882d1803556fa90ca769016b6ec1"
+    },
+    {
+      "bytes": 14545,
+      "path": "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md",
+      "sha256": "3a13f82d4b1ef149328da05b62bd0485d1970db3ed4fb38aff044e98f2b6df1a"
+    },
+    {
+      "bytes": 19366,
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/PROSPECTIVE_FIELD_REALIZATION_BRIDGE.md",
+      "sha256": "26c9efbe6b6ffe3db57d0a7f43911cc4fa9defd387a11bb541d59cb4b0faffb1"
+    },
+    {
+      "bytes": 23131,
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/BALANCED_NATIVE_PREPARATION.md",
+      "sha256": "7b9d3afe684f34695a4dfd6d89a8db457ba9cf47002733c65e9a2dc5c5751d68"
+    },
+    {
+      "bytes": 36722,
+      "path": "02_REGISTRY/research/A4D_BOOK_GOLDEN_PROJECTIVE_RADIAL_EINSTEIN_SCALE_WARD_DOUBLE_SCHUR_2026_10_20.md",
+      "sha256": "037db04112ed743238bdf8e0febd675bf14249f38fe2f734f041a7df694578e1"
+    }
+  ],
+  "verification": "Historical git show; no old scientific suite or receipt regenerated."
+}

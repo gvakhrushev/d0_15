@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "normal_command": "python3 check_temporal_comparison_source.py --repo /workspace/scratch/75286bd77d4e/d0_15",
+  "optimized_command": "python3 -O check_temporal_comparison_source.py --repo /workspace/scratch/75286bd77d4e/d0_15",
+  "normal_optimized_byte_identical": true,
+  "checks": 27,
+  "result_sha256": "c3afdc9b11622d669738b62813a39399aff2bd6d01f37824d4e09fcf04615645",
+  "new_source_infinite_interval": [
+    "-10.0254747519778455291831243549318642814917116",
+    "-10.0220762462314434907922666098418176240251834"
+  ],
+  "all_caps_ge_320_source_interval": [
+    "-10.0273109407467093266009161307674311078764663",
+    "-10.0202400574625796933744748340062507976404288"
+  ],
+  "old_suites_replayed": false,
+  "remote_CI_claimed": false,
+  "GR_closed": false
+}

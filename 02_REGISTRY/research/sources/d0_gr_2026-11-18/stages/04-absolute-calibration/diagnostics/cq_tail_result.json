@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EXACT_POSITIVE_STOPPED_CQ_SOURCE",
+  "nonquiet_nonzero_labels": 20,
+  "one_round_derivative": 0.01593656411809416,
+  "normalized_bright_stinespring_gram_row_bound": "9109/5679",
+  "amplitude_jet_norm_strict_upper": "13/10",
+  "q": 0.013278823734363173,
+  "bright_continuation_after_quiet_loops": 0.013094535463496704,
+  "exact_one_bright_contribution_numerical": 0.015730819684452363,
+  "one_bright_term_rigorous_lower": 0.015729001923397514,
+  "all_k_ge_2_absolute_upper": 0.011016526849450793,
+  "signed_sum_lower": 0.004712475073946721,
+  "signed_sum_upper": 0.026750742471578257,
+  "genuine_time_cap_derivative_error_upper": {
+    "1": 0.014259875640791604,
+    "2": 0.000451183214157733,
+    "3": 1.1020174539969107e-05,
+    "4": 2.3374542210141293e-07,
+    "6": 8.296893298544506e-11
+  },
+  "direct_one_round_minus_time_error_lower": 0.0016749356643263671,
+  "certified_lower_rational": "> 45/10000",
+  "natural_logs": true,
+  "physical_Book_Info_selected": false
+}

@@ -1,0 +1,52 @@
+{
+  "baseline": {
+    "cost": 16.499999999999993,
+    "entropy": 10.43600559918284,
+    "final_click": 0.4999999999999998,
+    "price": 6.063994400817153
+  },
+  "check_count": 6269,
+  "commutators": [
+    {
+      "commutator": "J",
+      "expected": 0.0009765625,
+      "mixed": {
+        "cost": 0.000976562830601324,
+        "entropy": 0.0,
+        "final_click": 0.0009765624697788411,
+        "price": 0.000976562830601324
+      }
+    },
+    {
+      "commutator": "B",
+      "expected": 0.0009765625,
+      "mixed": {
+        "cost": 0.0009765681596718423,
+        "entropy": -8.881784197001252e-09,
+        "final_click": 0.0009765624697788411,
+        "price": 0.0009765770414560393
+      }
+    }
+  ],
+  "first_six": [
+    0.00012207031119260137,
+    0.00012207031119260137,
+    0.00012207031119260137,
+    0.00012207031119260137,
+    0.00012207029165267613,
+    0.00012207033428524028
+  ],
+  "scope": {
+    "16_julia_flag_histories": true,
+    "Book03_Info_selected": false,
+    "GR_closed": false,
+    "all_eight_selector_labels": true,
+    "fine_flags_reported": true,
+    "full16_CAR_exterior": true,
+    "full_native_CAR_writer": false,
+    "old_RIGHT128_native_Riesz_preparation": false,
+    "old_RIGHT_reference4_pure_seed": true,
+    "status_charge": "fixed prescribed per-stage flag price; not complete Book03"
+  },
+  "status": "PASS_FINE_JULIA_FLAG_COST_CQ_ORIENTED_FIRST_AND_MIXED"
+}

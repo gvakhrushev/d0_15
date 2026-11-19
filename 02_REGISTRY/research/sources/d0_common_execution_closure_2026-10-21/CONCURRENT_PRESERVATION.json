@@ -1,0 +1,381 @@
+{
+  "all_concurrent_bytes_preserved": true,
+  "append_splices": [
+    {
+      "historical_bytes": 246635,
+      "historical_sha256": "86f3f38a442e7f541ef781ecf2e904097afc6122cf23ffee7f94e53ec577f776",
+      "integrated_sha256": "0f744771403ad17c3960bbf93bfebd8c344d8d12981a9446646ed38268e44dcd",
+      "own_append_bytes": 4323,
+      "own_append_sha256": "9d9a94d3bc906f32f533b433e990b27d053f386f5b847ec49059017c5560d710",
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "remote_bytes": 253257,
+      "remote_prefix_preserved": true,
+      "remote_sha256": "5d9a71dcc61652557fea1be9c430562023e8ce049c74bf445a895ad9db3021f2"
+    },
+    {
+      "historical_bytes": 27255,
+      "historical_sha256": "59ef4e5926246fe4c4b12d48d39c4ad9668e155a4fba67131bee06dd829342c4",
+      "integrated_sha256": "9ee6456abe166bb1de0f51a846c8d3792ab1c892e0518e419401eb71f02cd459",
+      "own_append_bytes": 1423,
+      "own_append_sha256": "28f36334903b213f8807a26726d9c1efc196b01c5b35b133d5c44eac58921ef5",
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "remote_bytes": 29595,
+      "remote_prefix_preserved": true,
+      "remote_sha256": "c1ac47ecbdcb3f3d76dc1dbd8927befc800048d4957ce877fda05305379a06f1"
+    }
+  ],
+  "concurrent_files": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "preservation": "exact_prefix",
+      "remote_sha256": "b08bb511f209420c344166d2b73203646e6d90a060eaf8598058c001ee278cc8"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "a5a46c56586f0f9c75ffd8b70c2daeff8ad7ac844f6939c6c2902249ed275420"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "4ce898d50bff53de17cc6d4b3fe98fa8f9af564d0fa5d6a50fdb78591ff059c0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "aafd78fa16bdd4bde01ebddc5be0f8d902c0c992729207e8b918d0fb60b488d3"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "a8ff9d1b2b0d316b5cfc516fd00f02c87ac168636924c3f48f57564a27ac07c1"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "06e9f270c405e81df034b262eccc77b85e281fa7071eb6b4c95344e2b89653c5"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_FULL_HJR_FORWARD_CLOCK_TRANSPORT_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "ae908e66b058d1bc30e09a81ab650db2343108cdb29584dc0dac84d3ee8e7e4a"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_CLOSURE_GATE_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "ca8cdc370b77169496238cebb8c50709f0144b1e9f596883845ed69db5183b58"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "cf8d893fd7435dd29dc4c93aa8291e965d765e5014aaeb9d82c63d23d84ebbf7"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "preservation": "exact_prefix",
+      "remote_sha256": "c1ac47ecbdcb3f3d76dc1dbd8927befc800048d4957ce877fda05305379a06f1"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_WEIGHTED_CQ_DENSITY_RIGIDITY_2026_10_21.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "0e52d1dc1dc52ee20407050adad5dab67ca5cdc74a8503d65eadf011daf10c3c"
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "613d6e2c8baf35228d0b41488cfb71367495c75ba42ef73466e21ccb6529544b"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_full_hjr_forward_clock_check.py",
+      "preservation": "byte_identical",
+      "remote_sha256": "8a4770618c4a13314b5d2ccd0d04bd189157b2d425128ef8743891c98c9b89ef"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/INTEGRATION_REVIEW.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "08d2b7c7ea4e112865fe6ff47921c08f72b23da67c1a912c8037eac4f5d8457d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/CONTINUUM_TO_FINITE_WARD.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "0785169950fff139cad211c9e89e7131082b5b01a96de904c9f36624495ca07f"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/DISCRETE_MATERIAL_RESULT.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "fcbd03c0d835daf81b263127b985fde56f0d68b3d3380e9bafcefae058dd3086"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/FULL_WARD_RESULT.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "ed829999b22ad920d290b1bb77862b1a0851cb5e29808c4750afc8c51a289c82"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/README.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "5683e4bf0c9806f217d23ffa19bccbd01b426fa1097d9c5f60e10bc269df7adf"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WARD_SOURCE_PINS.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "b459ceb5b0a1e2a23c9eea4078585aa56414c3c7d2fa4484109c1c5b9e271ca6"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WEIGHTED_WARD_AND_DUST.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "1fc035084dcd0971efe35ceac7827e1589a83f81788de0571e23828ec7ea28c1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/check_discrete_material_ward.py",
+      "preservation": "byte_identical",
+      "remote_sha256": "76e1f3834f14b4618efcb30b8e0e914804dde4562cfe77150e09d3d634251779"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/check_full_star_ward.py",
+      "preservation": "byte_identical",
+      "remote_sha256": "907c4e590657536661a1bc4e1407a4855667e4ce8b807b1c038b5f68a9915163"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/handoff/IMPORT_NOTE.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "16c2ecb8ead053b0140a6aeee7b4f6f524684cb34b7cdd08a7dc923eb8afd29b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/handoff/USER_SYNTHESIS_2026-10-21.txt",
+      "preservation": "byte_identical",
+      "remote_sha256": "439a49e8ab9ae7f6da06b6fe5c77bfe3f9501aad91c10f4eb86f6334a45c017b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/IMPORT_NOTE.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "b63ef1e96ea40462158241eef91e9fa5e0ba4805eb018786e75ecf0b3bb56fb9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/PROOF.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "f8a766af9e747e9500266ddc8f3773645667fc0ca312088845547d5f6f418148"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/PUBLICATION.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "4be4f439005e711bbc54ef6ddd5d4d858e6302ac12ce6f023e8d4999be467f5d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/README.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "ae823093a1214c6870d49a4ebbd89b710efe93bd96e6b269ba35480352aa93a9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/README_RU.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "cf857d99cbae5e60368b873c9063afcea5f84227d97d5d5ef9a7188805c48a43"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/RESULT.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/SHA256SUMS.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "62bd02b7a6558d0655a3e4374cc3112a78e45131e4d156d09c03ed22423dc003"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/run.log",
+      "preservation": "byte_identical",
+      "remote_sha256": "787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_price_ward_2026-10-21/run.optimized.log",
+      "preservation": "byte_identical",
+      "remote_sha256": "787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/ARTIFACT_HASHES.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "ce5737ec2fc28a93a2761897a2802b949af0b00e371f311ca291b2f0020e41c5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/CROSSING_STREAMS.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "c2cc72d1bcacbee21271c99549d70f86ee708439502211a1555d027e68b83326"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/CROSSING_STREAMS_RESULT.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "3306f985cb66153a984485b55a80c3ecc0e914d9a4414f121fcf22eef9c14525"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/PROOF.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "e7a71e11ac1f8d6fd8fc49101aa231ccea4c5c23352f913a041d33995ebeccb2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/README.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "b5d524764a8b824440211c32f8e2ebb510fa8a60b020d673dbc97f03a69322b8"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/RESULT.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "8cf8f99835f57688f750f2d9b6571f945446c1010ef276ef58ef9ae8f6e828f6"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/REVIEW_ADDENDUM.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "e22705fd431dc1fc1e666added9e9fdfe6ac93812a5dc6729d7276c796f6d31c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/REVISION_REVIEW.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "7db449f2d52b7dbccd38c7669ca6a8a7a0241c355dfedf1f0a63780f9e1602f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/SOURCE_PINS.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "042c79562175d09beba4b49fa4eb9edc7ec7aaecce8cbf3b0879398340b88e3d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/WEIGHTED_NULL_COROLLARY.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "2da99539e99187c5246dd0f08d796ffca787a00f875633eed0d2cd1c8b17c79e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/check_covariant_multiscalar.py",
+      "preservation": "byte_identical",
+      "remote_sha256": "53819ac7419791d34e37732edd8fdbcad4aba49792b42adf6d975d42ceefec97"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/examples_crossing_streams.py",
+      "preservation": "byte_identical",
+      "remote_sha256": "18d5ecc868bf452934c7e770d089d5851b3a79f0caaa6628a88a95ea1cfe457c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_finite_native_source_reconstruction_2026-10-21/CONCURRENT_FOUR_RESULT.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "97289b6344a7a4d78e11ce4f629cf045536b099065075d0d282b5170b526a1c9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_finite_native_source_reconstruction_2026-10-21/INDEPENDENT_REVIEW.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "b7f53a3c0f10621d47de560a9bf86f37be96a2ef5e7fc2b4394c9597a5700075"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_finite_native_source_reconstruction_2026-10-21/PROOF.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "8c96b986b9c106ea41c4362ef8989a333f89dfff0f337de0181100fe9a1e34a7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_finite_native_source_reconstruction_2026-10-21/RESULT.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "5b40ef29c640b79f6a46121f862b5a4f00538f03f759a7d9f32ef017dcbf42dc"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_finite_native_source_reconstruction_2026-10-21/SOURCE_PINS.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "e1299cc294d0b5787da9e408918b3759c2bcdf99ac4c24a77134cdf323d267a1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_finite_native_source_reconstruction_2026-10-21/VALIDATION.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "24e33a0fca298bc4243747e239c9049f304f11b7cfad689ccd703a25a336c855"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_finite_native_source_reconstruction_2026-10-21/check_finite_native_source.py",
+      "preservation": "byte_identical",
+      "remote_sha256": "536b96d6ae7e4d4f162cfe3e582e4d307fc897c3855ab2e7ab69b8aaebc21cfc"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/LOCAL_VALIDATION.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "b669af85c35674b05687ec3f773fafeddb4dbdb26ff691f8683a5483dcd8ddc5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/PROOF.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "a93f271f5503349429ad27c7d9854c65c350476d46692f810d2932b5e2165508"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/README.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "7730898b82d9878a2c2c8b0029fb85acaa3ecdaa34e7194d251ad2acfa6b06a3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/RESULT.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "ca54d4f00067bcbff1dd8e5a8a89e6d03702eba6f048e5443309770c0b67cc5d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/SHA256SUMS.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "34830df78052f0ca820c621cf3a57cbc503a567439caa8c7f43f220a8aee9fc5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/SOURCES.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "b1286bc25c2e508e7c382ee037f7bbf06b5bc2fef9e4a90eb29d9a0b584d64bf"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/check_full_hjr_clock.py",
+      "preservation": "byte_identical",
+      "remote_sha256": "ef60b02220cf9b6b01c2166eecec1595336de59522ce5a9a1201c98f577b3a39"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/handoff/IMPORT_NOTE.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "f8c8bc0b51442d1b1b8911153f6ca02bb6b56a97c440a6ff0ba5e281530d6387"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/handoff/INTEGRATION_STATUS.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "5425759e55dd12b0d3649ab27cf1045d6841f3b2cbca6e7515589d8bb4e75452"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/handoff/PACKAGE_SHA256SUMS.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "be644e1adb20dddf9f0f89136b9a82bcb5926742ae3f1da0cbc5613a8e103f0a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/handoff/README_RU.md",
+      "preservation": "byte_identical",
+      "remote_sha256": "e7978a89fc9f70642d032877f2a68772672fd399fa64a8125fc6a3ba98044dfb"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/handoff/VALIDATION.json",
+      "preservation": "byte_identical",
+      "remote_sha256": "7dd8fccd142dce791b9c7b6d81002805f41dc1ec08b6679fe005972ed6a94a7d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/handoff/additions.patch",
+      "preservation": "byte_identical",
+      "remote_sha256": "78fa720aa1e81473be44a3e84124194fa5f9369d28c3a03ff64d2bd43340d79b"
+    }
+  ],
+  "concurrent_parent": "977ea92437b720162186a3dc220b2bec374e0d22",
+  "initial_integration_parent": "8223d58f9b96d12749c451a551fb54b420abe1f0",
+  "late_append_splices": {
+    "files": [
+      {
+        "base_sha256": "5d9a71dcc61652557fea1be9c430562023e8ce049c74bf445a895ad9db3021f2",
+        "method": "retain complete new remote document including its body edits, then append the unchanged own appendix",
+        "own_append_sha256": "9d9a94d3bc906f32f533b433e990b27d053f386f5b847ec49059017c5560d710",
+        "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+        "remote_prefix_preserved_in_result": true,
+        "remote_preserves_old_prefix": false,
+        "remote_sha256": "b08bb511f209420c344166d2b73203646e6d90a060eaf8598058c001ee278cc8"
+      },
+      {
+        "base_sha256": "c1ac47ecbdcb3f3d76dc1dbd8927befc800048d4957ce877fda05305379a06f1",
+        "method": "retain complete new remote document including its body edits, then append the unchanged own appendix",
+        "own_append_sha256": "28f36334903b213f8807a26726d9c1efc196b01c5b35b133d5c44eac58921ef5",
+        "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+        "remote_prefix_preserved_in_result": true,
+        "remote_preserves_old_prefix": true,
+        "remote_sha256": "c1ac47ecbdcb3f3d76dc1dbd8927befc800048d4957ce877fda05305379a06f1"
+      }
+    ],
+    "from": "8223d58f9b96d12749c451a551fb54b420abe1f0",
+    "to": "977ea92437b720162186a3dc220b2bec374e0d22"
+  },
+  "scientific_input": "b1870ff3ecedd02e09388bc8b6fd8df4da54b990"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "full_CAR_components": 16,
+  "nonconstant_sites": 2,
+  "all_four_roles": true,
+  "exact_moving_adjoint_whitening": true,
+  "noncommuting_Lorentz_full_D_covariance": true,
+  "fixed_RIGHT_Gram_gauge_invariant": true,
+  "canonical_observer_directions": 6,
+  "K_zero_before_preparation_Euler": true,
+  "observer_control_R": "1/8",
+  "observer_partial_derivative": "1/4",
+  "compensating_coframe_derivative": "-1/4",
+  "scope": "Exact observer/Ward redundancy of declared Lorentz-covariant full HJR; not joint root, native admission or GR."
+}

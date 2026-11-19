@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "native_owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "actual_full_word": "NPS14",
+  "six_wire_reader_descriptor": "{\"op\":\"CX\",\"wires\":[2,4]}",
+  "reader_descriptor_bytes": 25,
+  "full_shortest_json_bytes": 388,
+  "longer_whitespace_synonym_bytes": 389,
+  "decoded_field_omission_checks": {
+    "schema": "rejected",
+    "qubits": "rejected",
+    "blank_wires": "rejected",
+    "old_right": "rejected",
+    "gates": "rejected",
+    "profile": "rejected",
+    "source_port": "rejected",
+    "source_spin": "rejected",
+    "report_bits": "different execution"
+  },
+  "native_instructions": 8,
+  "native_square_columns": 64,
+  "operated_pointer": {
+    "original_event": "2p^3",
+    "original_report_one": "p^2+2p^6",
+    "added_mean_terminal_golden_units": "2p^6"
+  },
+  "physical_delta_scope": "all tests factoring through decoded stages and fixed input; byte inspection can distinguish",
+  "padding_rows": [
+    {
+      "n_pairs": 1,
+      "flat_bytes": 244,
+      "run_description_bytes": 226
+    },
+    {
+      "n_pairs": 2,
+      "flat_bytes": 296,
+      "run_description_bytes": 226
+    },
+    {
+      "n_pairs": 3,
+      "flat_bytes": 348,
+      "run_description_bytes": 226
+    },
+    {
+      "n_pairs": 4,
+      "flat_bytes": 400,
+      "run_description_bytes": 226
+    },
+    {
+      "n_pairs": 5,
+      "flat_bytes": 452,
+      "run_description_bytes": 227
+    },
+    {
+      "n_pairs": 12,
+      "flat_bytes": 816,
+      "run_description_bytes": 227
+    }
+  ],
+  "flat_increment_for_two_extra_CX": 52,
+  "maximal_run_increment_for_two_extra_CX": 0,
+  "physical_traversal_price_identified": false
+}

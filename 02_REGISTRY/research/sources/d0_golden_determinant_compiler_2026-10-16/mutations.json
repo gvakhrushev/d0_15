@@ -1,0 +1,35 @@
+{
+  "mutations": [
+    {
+      "failed_check": "all_four_word_mass",
+      "mutation": "lost_RR_history",
+      "verdict": "REJECTED"
+    },
+    {
+      "failed_check": "success_is_determinant",
+      "mutation": "amplitude_as_probability",
+      "verdict": "REJECTED"
+    },
+    {
+      "failed_check": "full_eight_mode_unitarity",
+      "mutation": "false_unitary_sign",
+      "verdict": "REJECTED"
+    },
+    {
+      "failed_check": "complete_calibrated_source_value",
+      "mutation": "frozen_raw_blank",
+      "verdict": "REJECTED"
+    },
+    {
+      "failed_check": "complete_calibrated_source_value",
+      "mutation": "frozen_event_calibration",
+      "verdict": "REJECTED"
+    },
+    {
+      "failed_check": "complete_calibrated_source_value",
+      "mutation": "frozen_probe_scale",
+      "verdict": "REJECTED"
+    }
+  ],
+  "scope": "six actually changed programs; no scientific status promotion"
+}

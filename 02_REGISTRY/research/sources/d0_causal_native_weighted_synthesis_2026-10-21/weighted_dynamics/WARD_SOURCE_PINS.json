@@ -1,0 +1,82 @@
+{
+  "input_ref": "401eafb2958e9d9626db833a25f02b35b3871c16",
+  "parent_pr": 334,
+  "consumer": "WEIGHTED_WARD_AND_DUST.md section9, exact finite-source defects",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/WEIGHTED_WARD_AND_DUST.md",
+      "git_blob": "b72f96ec4e2e3d1413934532f5c018a68db93747",
+      "role": "CONSUMED weighted theorem and requested finite Ward step"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/check_weighted_ward.py",
+      "git_blob": "41e65a04e6dc57573f6438cdce068a5bb5dd134e",
+      "role": "CONSUMED original Golden polynomial/convention; new independent master replay"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "git_blob": "deff5f8879cec7d8c3989f941553b4a873c3c39c",
+      "role": "ACTUAL scalar/coframe/forward-difference dictionary"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_star_density_variation_pressure_check.py",
+      "git_blob": "2bd6c99b77bb29234d7dabd55757e94d61aea5a4",
+      "role": "CONSUMED unchanged six-face G2/STAR/Lorentz based plaquette definitions"
+    }
+  ],
+  "new_artifacts": [
+    {
+      "path": "CONTINUUM_TO_FINITE_WARD.md",
+      "bytes": 15987,
+      "git_blob": "aa582149715c968e1032aa0086f69636dba92d47",
+      "sha256": "0785169950fff139cad211c9e89e7131082b5b01a96de904c9f36624495ca07f"
+    },
+    {
+      "path": "DISCRETE_MATERIAL_RESULT.json",
+      "bytes": 6246,
+      "git_blob": "1051daafa60d9dec857b1af09387ae10753a61d2",
+      "sha256": "fcbd03c0d835daf81b263127b985fde56f0d68b3d3380e9bafcefae058dd3086"
+    },
+    {
+      "path": "FULL_WARD_RESULT.json",
+      "bytes": 4097,
+      "git_blob": "1bc730f6e1b5a689f311a2f21408ecd711e477bb",
+      "sha256": "ed829999b22ad920d290b1bb77862b1a0851cb5e29808c4750afc8c51a289c82"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2160,
+      "git_blob": "e7847da40fce8859bf8986fe3f915a0cb89bcbb4",
+      "sha256": "5683e4bf0c9806f217d23ffa19bccbd01b426fa1097d9c5f60e10bc269df7adf"
+    },
+    {
+      "path": "check_discrete_material_ward.py",
+      "bytes": 15800,
+      "git_blob": "0c9f859c7f8cf8e72ca6e915e0edadf91942e6da",
+      "sha256": "76e1f3834f14b4618efcb30b8e0e914804dde4562cfe77150e09d3d634251779"
+    },
+    {
+      "path": "check_full_star_ward.py",
+      "bytes": 10381,
+      "git_blob": "dfa0622579186533c3b460ff6adaa09127f5c5b6",
+      "sha256": "907c4e590657536661a1bc4e1407a4855667e4ce8b807b1c038b5f68a9915163"
+    }
+  ],
+  "actual_validation": {
+    "normal_and_optimized_stdout_identical": true,
+    "new_material_checks": 29,
+    "new_complete_source_checks": 19,
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "source_field_status": "diagnostic smooth fields, not actual roots",
+    "earlier_65_check_receipt_recovered": false,
+    "remote_CI_claimed": false,
+    "new_Lean_build_claimed": false,
+    "independent_review_claimed": false,
+    "remote_blobs_matched_local_executed_files": true,
+    "verified_publication_snapshot": "88ff2c521179e5c9b976600235d76362a033514b"
+  }
+}

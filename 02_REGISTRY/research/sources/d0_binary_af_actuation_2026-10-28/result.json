@@ -1,0 +1,108 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "Spin_bits": 2,
+  "actual_centre": {
+    "C": "0.94737725962797031119550830717",
+    "Gamma": "0.00000239210246420517356747444216504",
+    "c": "0.618031419629779474516191901903",
+    "lambda": "0.174668163808349646654855415145"
+  },
+  "additional_modes": 32088,
+  "all_column_errors": {
+    "canonical_16_columns": 7.771561172376096e-16,
+    "native_512_columns": 4.3298697960381105e-15
+  },
+  "all_intermediate_future_tests_identified": false,
+  "binary_modes": 65536,
+  "checker_sha256": "07c40e179d0446c52650e7a148c82ef33cd03d0349b0875b5b6af5acd7d9f3a5",
+  "checks": 12202,
+  "common_inventory": {
+    "CX": 1154,
+    "G": 107529216,
+    "SourceI": 132
+  },
+  "common_real_clock_stages": 107530502,
+  "each_repeated_primitive_iterated": false,
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.13.5"
+  },
+  "exact_native_pair": {
+    "interval_Gamma_lower": "0.00000239210246420517356747444216504",
+    "interval_certified_absolute_normalized_error_less_than": "0.0002",
+    "no_separate_endpoint_compiler_error_for_decoded_pair": true,
+    "normalized_contrast": "0.99984250672116607925549376739",
+    "rigorous_Taylor_bound_formula_evaluated": "0.000199276801193860427474347975752",
+    "step": "0.0156210068607494342652031218336",
+    "whole_heat_absolute_normalized_bound": "10^(-N+8), N=107530502"
+  },
+  "finite_source": {
+    "actual_error": "0.000255440137204595375293941694006",
+    "compiled_normalized_contrast": "0.999586986058255850597938965563",
+    "full_heat_contrast_log10_bound": "-107530494.572599804462013172315",
+    "generic_budget_without_GNS_factor": "0.00652071360090374784087951927106",
+    "ideal_difference_from_derivative_numeric": "-0.000157573804539554026767092743135",
+    "ideal_normalized_contrast": "0.999842426195460445973232907257",
+    "rigorous_endpoint_error_budget": "0.000277602900483648699288200964103"
+  },
+  "full_source_all_raw_gate_faults_proved": false,
+  "huge_clock_matrix_materialized": false,
+  "input_commit": "48500384e9a25b25a6a0f54911f5af50c2bc1625",
+  "input_isometry_constructed": true,
+  "input_rank": 16,
+  "left_address_bits": 7,
+  "native_addressed_binary_grammar_used": true,
+  "oldRIGHT_bits_untouched": 1,
+  "original_AF_physical_actuation_proved": false,
+  "original_regular_modes": 33448,
+  "physical_binary_interface_admission_proved": false,
+  "physical_input_preparation_executed": false,
+  "planes": [
+    [
+      0,
+      2
+    ],
+    [
+      56,
+      59
+    ]
+  ],
+  "right_bits_untouched": 6,
+  "schedule_controls": [
+    {
+      "canonical_corner": "0.94737725962797031119550830717",
+      "certified_endpoint_operator_error_upper": "0.00000653593414164521389535386213371",
+      "paid_common_stages": 107530502,
+      "positive_G_run": 491360,
+      "return_price": "0.00000156366474834067289657269605361",
+      "rle_instruction_records": 1350,
+      "selective_angle": "1.8091203245389043851020655483",
+      "side": 0,
+      "unpadded_native_stages": 62895362
+    },
+    {
+      "canonical_corner": "0.948674409749697020549253492877",
+      "certified_endpoint_operator_error_upper": "0.00000798627850111024584424207830717",
+      "paid_common_stages": 107530502,
+      "positive_G_run": 840072,
+      "return_price": "0.00000152613630761786326985353727729",
+      "rle_instruction_records": 1347,
+      "selective_angle": "1.77787831081740551657165930463",
+      "side": -1,
+      "unpadded_native_stages": 107530498
+    },
+    {
+      "canonical_corner": "0.946089918407202801656703133944",
+      "certified_endpoint_operator_error_upper": "0.00000798627850111024584424207830717",
+      "paid_common_stages": 107530502,
+      "positive_G_run": 142648,
+      "return_price": "0.00000160085863550965627909379801196",
+      "rle_instruction_records": 1350,
+      "selective_angle": "1.84036233826040325363247179197",
+      "side": 1,
+      "unpadded_native_stages": 18260226
+    }
+  ],
+  "status": "PASS_BINARY_AF_ENDPOINT_AND_FINITE_SOURCE"
+}

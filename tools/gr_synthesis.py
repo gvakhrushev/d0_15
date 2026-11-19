@@ -125,8 +125,8 @@ def validate_navigation(contract: dict, intake: dict) -> None:
 
 def read(root: Path, query: str = "") -> dict:
     directory = root / DIRECTORY
-    contract = json.loads((directory / "contract.json").read_text())
-    intake = json.loads((directory / "applications.json").read_text())
+    contract = json.loads((directory / "contract.json").read_text(encoding="utf-8"))
+    intake = json.loads((directory / "applications.json").read_text(encoding="utf-8"))
     require(contract.get("schema") == "d0-gr-assembly/1", "unsupported assembly schema")
     require(intake.get("schema") == "d0-gr-applications/1", "unsupported applications schema")
     validate_navigation(contract, intake)

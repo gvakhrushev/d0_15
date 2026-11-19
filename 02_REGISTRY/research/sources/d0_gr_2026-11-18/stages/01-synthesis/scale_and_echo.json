@@ -1,0 +1,25 @@
+{
+  "kinetic_minor_X2": "-C2*d*(rho - 1)/(4*rho)",
+  "single_J2": [
+    {
+      "orientation": -1,
+      "C2_over_c_at_unit_t": "-1478.957987152163",
+      "nonzero_cone_coefficient_at_unit_t": "126.3180984873494"
+    },
+    {
+      "orientation": 1,
+      "C2_over_c_at_unit_t": "-1478.957987152163",
+      "nonzero_cone_coefficient_at_unit_t": "126.3180984873494"
+    }
+  ],
+  "mark_derivative": "d(q_tilt-q) = -(1-q-q_tilt) d[-log(1-z+zq)]",
+  "native_echo_ET3_ET5": {
+    "q": "0.108350559986540570",
+    "echo_probability_loss_at_least": "9.21351806363528199e-8",
+    "rational_enclosure": [
+      "921/10^10",
+      "922/10^10"
+    ]
+  },
+  "retained_label": "posterior odds / prior odds = n1/n0"
+}

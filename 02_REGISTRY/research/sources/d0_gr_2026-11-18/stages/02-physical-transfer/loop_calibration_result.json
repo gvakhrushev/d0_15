@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source": "literal forward CX/SourceI graph",
+  "vertices": 14,
+  "addressed_generators": 6,
+  "edge_slots": 84,
+  "native_comparison_loops": 84,
+  "max_native_loop_length": 13,
+  "native_dark_loops_by_sign": {
+    "-1": 4,
+    "1": 80
+  },
+  "rational_test_rank": 71,
+  "free_vertex_gauge_dimension": 13,
+  "calibration_loops_sensitive_to_active_SourceI_toll": 46,
+  "scope": "Identifiability conditional on positive monomial transfer, common endpoint calibration and native odds. No absolute physical path price inferred."
+}

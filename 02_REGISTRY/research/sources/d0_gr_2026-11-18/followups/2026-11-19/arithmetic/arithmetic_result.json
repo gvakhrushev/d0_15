@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact integers in Z[p], with p^2+p=1 and p>0",
+  "q_interval": [
+    "p^2",
+    "1/2"
+  ],
+  "q_interval_open": true,
+  "modulus": 13,
+  "T512_basis_1_p": [
+    10,
+    11
+  ],
+  "q_basis_1_p": [
+    1,
+    6
+  ],
+  "norm_q": 11,
+  "norm_one_minus_q": 3,
+  "norm_odds": 5,
+  "entropy_slope_interval_open": [
+    "2/3",
+    "3/4"
+  ],
+  "physical_price_selected": false
+}

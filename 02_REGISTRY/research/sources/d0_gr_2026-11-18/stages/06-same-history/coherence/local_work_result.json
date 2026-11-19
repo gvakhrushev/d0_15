@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "exact_spectral_sources_per_Dq": {
+    "CX_event_pointer": "delta_e*(1-2*a*p)/(2*p^3)",
+    "NC1_first_CX": "delta_1*(1-2*a*p)/2",
+    "NC1_G": "0",
+    "NC1_last_CX": "delta_2/2"
+  },
+  "common_delta_coefficient": "0.5739946897217569196997",
+  "guaranteed_common_delta_magnitude_using_one_quarter": "0.4355440990598486751315",
+  "scope": "Exact gold-field local operator pullbacks and arbitrary block future; no physical claim that Book prescribes spectral tariffs."
+}

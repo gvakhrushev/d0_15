@@ -1,0 +1,141 @@
+{
+  "pinned_git_commit": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "origin_repository": "https://github.com/gvakhrushev/d0_15",
+  "original_attachment": {
+    "file": "original/D0_Projective_Einstein_Rigidity_2026-11-18.zip",
+    "bytes": 160355,
+    "sha256": "7390dc06b71682aff215e799f77e324e93758818a2f3f7e7e453da0176f4060b",
+    "verified_archive_crc": true,
+    "internal_sha256_checks": 12,
+    "members_sha256": {
+      "D0_Projective_Einstein_Rigidity_2026-11-18.pdf": "5fd40bde7a4c6a67a8f3a41ce48ff4ac5e4c3ca1f8276acd2324ab8c18bf90ca",
+      "D0_Projective_Einstein_Rigidity_2026-11-18.tex": "3a210142c91f02a2f1489810f55e67adf6c23b68b9643c9a221251a70a37ca37",
+      "README_RU.txt": "b37fbafc257d2ac6d0906aaed71141f879f73d29abc308914f588e47b3eda8a5",
+      "SHA256SUMS.json": "ded6828cf58ab0df8bfc969ba99a2a1f249fd3be4ca974cbedd7dd68e6f133dc",
+      "check_projective_rigidity.py": "d5b6cf90484b354c5322da5af09a58558774a1a4c5040e9880958a8c6c530e0b",
+      "doob_actual_mark.json": "683987af5a358cc48b110af320c24597350c1fa17353c7019c3cfb09b4d4e211",
+      "doob_actual_mark.py": "9bb9d372af89c750ad167dc403bcd5307163b160ad3e096b15dbb15a98433931",
+      "doob_analysis_en.txt": "931df7c12648a4a55c1a096d132ddf08949ea45b3662c65b5f86a03b675c9cde",
+      "independent_review.txt": "558ee9af8c3d4d66026de048f8bf2af01ff7b5fa5a64177584262e0c88cd4356",
+      "projective_rigidity_controls.json": "25d7da5921828e841aa40ff416718e29295914c3e799a9b6197dc9a78aec008f",
+      "proof_en.txt": "b968859221700497ead1e05e71400bdbf78eb112b78fc5a4dcb1df2dbd2efdab",
+      "provenance.json": "97b1f2e50af98c93ef943d66d94299dfeb83569e137adc9ff7d4a7335a5d768c",
+      "requirements.txt": "a9029fbebed80d5530d9a770340843cfd032aac6af297d237cc24b758537ea81"
+    }
+  },
+  "source_files": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "git_blob_sha1": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "lines": 1293,
+      "bytes": 86193
+    },
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": {
+      "git_blob_sha1": "d0c488143fbbad22d81486f566de60a79ff8772b",
+      "sha256": "8e6bf36e80e4ef1693790e6702b204461ec768eaa2a86505e7e368ecaddff672",
+      "lines": 193894,
+      "bytes": 7821551
+    }
+  },
+  "verbatim_excerpts": [
+    {
+      "file": "pinned/book03_03_25.md",
+      "material": "§03.25. Определение полного статистического действия",
+      "source": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "first_line": 1127,
+      "last_line": 1138,
+      "sha256": "dddbc8be76d4f0d5e4b6f82c3f891bd5ba64251fffa551ab4bec9e5d27dcbfc7",
+      "bytes": 529
+    },
+    {
+      "file": "pinned/7fu_gr_criterion.md",
+      "material": "§7fu. Критерий вывода, область теоремы и открытый физический перенос",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 156244,
+      "last_line": 156382,
+      "sha256": "07bfce6f5c0ae43ba31a81d55012bc221e0b5b9a2768cb218eb3d4ff16f6ad59",
+      "bytes": 7915
+    },
+    {
+      "file": "pinned/7fh_A_literal_NT3.md",
+      "material": "§7fh.A. Первичный 128-канальный инструмент и буквальная плата NT2–NT3",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 137272,
+      "last_line": 137319,
+      "sha256": "46ae041de66f3b2e8b4458d64240a3e7f3b7aa52189b38afe5571767d0d795a5",
+      "bytes": 2188
+    },
+    {
+      "file": "pinned/7fx_f0.md",
+      "material": "§7fx. Нативная условная запись, f(0)=1 и f(p²)=0",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 157768,
+      "last_line": 157827,
+      "sha256": "47d29f58b3f93a4cae6de3ccdc7f8b9ed72f170c289ff8c6c42e009b596a71f4",
+      "bytes": 3507
+    },
+    {
+      "file": "pinned/7fm_A_writer.md",
+      "material": "§7fm.A. Рождение и трёхвентильная запись кода 0/10",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 142391,
+      "last_line": 142438,
+      "sha256": "3888cb3494331d58f8f3d8b87b2dd0aad08a7293fbd73cc0a08b78bb385f0969",
+      "bytes": 2053
+    },
+    {
+      "file": "pinned/7gc_retained_reference.md",
+      "material": "§7gc. Источник полного сохранённого регистра",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 192160,
+      "last_line": 192428,
+      "sha256": "0b3b514c9ec42ca5c33a9d05eb2c35388b844218566294733062e0320ae17e44",
+      "bytes": 10624
+    },
+    {
+      "file": "pinned/7gd_port_law.md",
+      "material": "§7gd. Полная плата за порты и адресное чтение",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 192429,
+      "last_line": 192629,
+      "sha256": "17a97b5239121fbc295a231d75d7794d7f8578b6f649793bbe3157f65bc39c20",
+      "bytes": 11709
+    },
+    {
+      "file": "pinned/7ge_coherent_normalization.md",
+      "material": "§7ge. Когерентная нормировка и фактический тест",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 192630,
+      "last_line": 192694,
+      "sha256": "e17ad5670dd5cb25cfd4a7e4ac5c85147c826f74ac4ec5faeed12d7f8527bc15",
+      "bytes": 5307
+    },
+    {
+      "file": "pinned/7gf_composition_replay.md",
+      "material": "§7gf. Композиция, независимая проверка и встроенные материалы воспроизведения",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 192695,
+      "last_line": 193894,
+      "sha256": "f3f3d80991b67bd8702627319327d9b5aca7fd56982eb781a55332b52dfd7baa",
+      "bytes": 51265
+    },
+    {
+      "file": "pinned/book03_history_weights.md",
+      "material": "§03.3.0–03.3.0a. Сумма историй, память и цена Cost−Info",
+      "source": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "first_line": 142,
+      "last_line": 178,
+      "sha256": "58be29e88b7a73896de7b6b6d7bd173c8f844782e7c76eab442e63752e032ffc",
+      "bytes": 4233
+    },
+    {
+      "file": "pinned/7fq_cd13.md",
+      "material": "§7fq. Фактический выигрыш, независимые вариации и остаток CD13",
+      "source": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "first_line": 151810,
+      "last_line": 151899,
+      "sha256": "1110d660aef725681ccb7ba238c4fc76065c8236c00af72a1a82cc81325077e4",
+      "bytes": 4501
+    }
+  ]
+}

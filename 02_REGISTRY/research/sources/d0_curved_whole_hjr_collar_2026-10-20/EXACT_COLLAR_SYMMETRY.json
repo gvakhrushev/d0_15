@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "full_spatial_S3_elements": 6,
+  "invariant_interior_coframe_dimension": 5,
+  "invariant_outgoing_proper_link_family_dimension": 4,
+  "invariant_incoming_u_link_dimension": 1,
+  "total_restricted_unknowns": 10,
+  "spatial_translations_and_fixed_t1_Ui_imply": "P_0i(t0)=Ui(t0)^-1 exactly",
+  "noncommuting_finite_proper_link_control": true,
+  "scope": "symmetry and graph-domain reduction only; nonsingular Riesz-reduced Hessian is separate"
+}

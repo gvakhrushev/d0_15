@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "true_Audit_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "births_in_audit": 64,
+  "last_birth_to_closure_L_lower": 3,
+  "entropy_error_cap_phi": "0.000000284880159",
+  "true_log_phi_Z_N_lower": "252.776210407823",
+  "abs_secant_log_phi_Z_N_upper": "1e-39",
+  "tests": {
+    "1": {
+      "root_lower_for_true_absolute_Z_N": "323.553067927340",
+      "extra_mean_work_secant_for_equal_sources": {
+        "paid_reports": [
+          "0.184079147532",
+          "0.184079717293"
+        ],
+        "full_computational_refinement": [
+          "0.240731340782",
+          "0.240731910543"
+        ]
+      },
+      "formal_tree_root": {
+        "unit": "41/10",
+        "3": "-1",
+        "2": "-9/10"
+      }
+    },
+    "2": {
+      "root_lower_for_true_absolute_Z_N": "227.358622793074",
+      "extra_mean_work_secant_for_equal_sources": {
+        "paid_reports": [
+          "0.137124230098",
+          "0.137124514979"
+        ],
+        "full_computational_refinement": [
+          "0.179613375035",
+          "0.179613659917"
+        ]
+      },
+      "formal_tree_root": {
+        "unit": "41/10",
+        "5": "-1/4",
+        "3": "-7/20",
+        "2": "-17/20"
+      }
+    }
+  },
+  "economic_local_rule_forced_on_the_full_native_histories": false
+}

@@ -1,0 +1,73 @@
+{
+  "checks": {
+    "closed_two_step_invariance": 11488,
+    "edge_additivity": 62832,
+    "edge_boundary_identity": 11488,
+    "hostile_controls": 2,
+    "literal_junction_defect": 15708,
+    "open_endpoint_difference": 251328
+  },
+  "compiled_propositions": 4,
+  "directed_edges": 718,
+  "input_head": "a18606f1c9cdcb2aa47dd3619fe4aa657077c47e",
+  "inputs_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_COST_INFO_BOUNDARY.md": "993078385389c10fa4f9da38e5e5912f331384d896e78f43713e2fd39ba48246",
+    "02_REGISTRY/research/A4D_NATIVE_HISTORY_ACTION_BOUNDARY.md": "3ec95e7fb46b0852bccdf8ab64db322a3faef2b87fa64eacfae01ac161f6c2b7",
+    "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary.lean": "003e648673a1bc7e6e5150be444776687316621923d678099a5eda95e9a2a416",
+    "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_check.py": "58428a30a60a8211b31b818659b12ff33de38c41fd9fe53e4f533f66404e1971",
+    "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_output.txt": "7d035a0785d036f402141308b26d1819dad661c35e8d3f5b7a09f6e133fbc127",
+    "02_REGISTRY/research/certificates/a4d_native_cost_info_boundary_results.json": "286742d3e0201970147ece4ae771f7dc9ea74f0054dbd1b55df5e3e828c2f1ab",
+    "03_FORMALIZATION/lake-manifest.json": "4ed211000f753c64c6b1fc155970f6b28c9500763f1ad520d8762ae165ac24fa",
+    "03_FORMALIZATION/lean-toolchain": "54727eec5cba149c18842e6deb5c41b369d66455c93ce135d7d5347c782b2325"
+  },
+  "lean_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": {
+    "Book_endpoint_convention_derived": false,
+    "literal_all_vertex_Info_additivity_forces_zero": true,
+    "new_action_or_selector_installed": false,
+    "physical_Cost_Info_map_selected": false,
+    "physical_source_or_GR_closure": false,
+    "theta_change_is_endpoint_coboundary": true,
+    "transition_event_allocation_additive_for_all_theta": true
+  },
+  "status": "PASS_SCOPED_COST_INFO_BOUNDARY",
+  "toolchain": "leanprover/lean4:v4.30.0",
+  "transitive_d0_pins": 22,
+  "transitive_d0_source_sha256": {
+    "03_FORMALIZATION/D0/Claims/Signature31Split.lean": "2963905269d09c3fd88a79e4a1e082558403b3b2433899e54e8c95b2c186990c",
+    "03_FORMALIZATION/D0/Combinatorics/CliqueComplex.lean": "1acb945b02648062b7b353678bce3eca5621136b2789aef6dc6b4c7c62c155e7",
+    "03_FORMALIZATION/D0/Combinatorics/CompleteTripartite.lean": "e6e7fd4870d32b18c10ae29f88c235dc0d636f28a7beaad0b6fc13397c3a75fb",
+    "03_FORMALIZATION/D0/Combinatorics/EulerPhi.lean": "83d9af2ead6462e454de1219cd1523d913221e5731114a5459982d25c0ff455a",
+    "03_FORMALIZATION/D0/Combinatorics/ForcedReturnWindows.lean": "bcc743c895708e845e34c12d801925c5b9ac9d72dd3fa3d5e501fdcd6ff17ae2",
+    "03_FORMALIZATION/D0/Combinatorics/PhaseUnfolding.lean": "4753d815c41f8df990ba45d7ab038d75decaa775dbfd72e5c4e61c0783ce1f66",
+    "03_FORMALIZATION/D0/Combinatorics/Tripartite.lean": "87e2bc5078a48fc5c94be236f4220f08f9b63c8eefa94bebe72a9fd5744b70ba",
+    "03_FORMALIZATION/D0/Core/DyadABCD.lean": "9aa50c746c830a9c81270cecd773b7c5f00ba6b8d19451abeb4aeda4d1c9c358",
+    "03_FORMALIZATION/D0/Core/FiniteTypes.lean": "ced19b6714c8c9d1f687812c4bf9a19b572c02b689c5bf0881035b4f6bfc1108",
+    "03_FORMALIZATION/D0/Dynamics/ToralAutomorphism.lean": "c54784e5be5c24c2472fd3df3dbe37e3f7317e57a722ea22534639af693190cf",
+    "03_FORMALIZATION/D0/Phase.lean": "dd710cf7f37874ac5f06a1a57ca19fa2d9544de6e1bfcf35fed7806ea2b56559",
+    "03_FORMALIZATION/D0/SelfReading/RawSceneGraph.lean": "b5a63c4ec1e7e50dcc8d2a0e5cdd937ce77303457d6daec744daf73ffd5179d1",
+    "03_FORMALIZATION/D0/SelfReading/TypedCapacityRawScene.lean": "510457eb9aef3bd98a5726a0164b59f3d13a7abc1c809515c5c270f67af21733",
+    "03_FORMALIZATION/D0/SelfReading/TypedIncidenceCarriers.lean": "3fa2e57b6200195a2b19e45768b813e3c11e1942ca991b17b30599d92ef68c5c",
+    "03_FORMALIZATION/D0/Synthesis/SceneAnisotropyCapacityWeld.lean": "b074743cca70c095fdf771c8e75b0c70f308965b9ade6f2e4e2a2f499976e43c",
+    "03_FORMALIZATION/D0/Synthesis/SceneInvariantReconstruction.lean": "e88dabbebd5afee1c78c7bd0eb3d07a5c3238c0b92149efd57e3df4e022e94dc",
+    "03_FORMALIZATION/D0/Topology/NoThreeSimplices.lean": "5537181e0a471e2dab2293b3bac7ec64409f96f60fd579a09734d2594a86a224",
+    "03_FORMALIZATION/D0/VNext2/Rank3CubicSymmetricFunctions.lean": "9f5bacb342273a84f12dd2f067e718bd7e4123364780a45f105b30e04580e9b7",
+    "03_FORMALIZATION/D0/VNext2/Rank3MetricSignature.lean": "466e52bfa918587ab6cdb73bc8e971e0a3b00f349b57fdb0faa5e785085f9e00",
+    "03_FORMALIZATION/D0/VNext2/SceneNativeRefinementClassification.lean": "d6789d23dab9b9117e4303f30385656d9a2f3ec7ac3d10814febc38b59fa8466",
+    "03_FORMALIZATION/D0/VNext2/ScenePathHistoryCanonicity.lean": "2ed1da971417e0949b9f225ad768d80314fbafe0f930b0fcb8c0a662e0de66e0",
+    "03_FORMALIZATION/D0/VNext2/SceneSpectralFingerprint.lean": "2046c78140404b90ccf81f98addc2e4120f4082ec16d6dc373e31ecd883f8d68"
+  },
+  "two_step_paths": 15708,
+  "validation": {
+    "finite_checker_passed": true,
+    "lean_certificate_compiled": true,
+    "physical_D0_execution_claimed": false,
+    "standard_Lean_axioms_only": true
+  },
+  "vertices": 33
+}

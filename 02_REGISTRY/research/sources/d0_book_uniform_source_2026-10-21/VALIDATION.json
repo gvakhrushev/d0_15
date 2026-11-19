@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "date": "2026-10-21",
+  "scientific_input_commit": "b60a111b43f723a841d253b1d5bd9650c46b2cf8",
+  "checks": 115,
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python check_uniform_book_source.py --output RESULT.json > stdout.json",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -O check_uniform_book_source.py > stdout_optimized.json",
+    "cmp stdout.json stdout_optimized.json"
+  ],
+  "normal_and_optimized_stdout_byte_identical": true,
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "sha256": {
+    "PROOF.md": "09d7c1cebffcb70df03b8e9f3ea274cc554f8ad4e26dfaa87ad0eacdde822be3",
+    "check_uniform_book_source.py": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+    "RESULT.json": "dcd6fc5f049166e98f0704b682ae210c90f21631b518c1a78305e44bebdb1219",
+    "stdout.json": "dcd6fc5f049166e98f0704b682ae210c90f21631b518c1a78305e44bebdb1219",
+    "stdout_optimized.json": "dcd6fc5f049166e98f0704b682ae210c90f21631b518c1a78305e44bebdb1219"
+  },
+  "test_scope": {
+    "exact_symbolic_source_identities": true,
+    "direct_original_two_round_histories": 16384,
+    "native_noncommuting_horizons": [2, 3, 8, 32],
+    "native_one_round_commuting_control": true,
+    "first_shell_L": [4, 8, 16, 32, 64, 128],
+    "large_horizon_formula_evaluations_not_simulated_runs": true,
+    "all_horizon_and_C1_limit_claims": "analytical proof, not finite numerical extrapolation",
+    "independent_agent_review": false,
+    "new_Lean_build": false,
+    "repository_wide_CI": false,
+    "full_spatial_42_direction_validation": false,
+    "physical_Info_selected": false,
+    "native_padding_factory_constructed": false,
+    "GR_closed": false
+  },
+  "development_correction": "The initial test incorrectly required normalizer/corner noncommutation already at n=1. The exact one-round matrices commute. The final suite keeps this commuting control and checks noncommutation at n=2,3,8,32; no tolerance was relaxed."
+}

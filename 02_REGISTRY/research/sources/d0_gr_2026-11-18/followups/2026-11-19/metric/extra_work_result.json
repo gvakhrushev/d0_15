@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "scope": "specified restored two-stage profiles and optional real reports; no identification of all physical Cost-Info",
+  "literal_q_star": [
+    "0.41246988056855",
+    "0.41246988056856"
+  ],
+  "literal_P_prime": [
+    "0.26484698194530",
+    "0.26484698194531"
+  ],
+  "P_prime_whole_interval": [
+    "0.264725854",
+    "0.264970147"
+  ],
+  "interval": [
+    "0.41246",
+    "0.41248"
+  ],
+  "infima": {
+    "separate_at_q_star": [
+      "1.889140823102",
+      "1.889140823103"
+    ],
+    "shared_at_q_star": [
+      "1.904676956384",
+      "1.904676956385"
+    ],
+    "exact_general_basis": "Jensen product and symmetric concavity; test grid is supplementary"
+  },
+  "linear_branch_gap_calibration": {
+    "registered": {
+      "branch_gap": [
+        "0.175060238862",
+        "0.175060238863"
+      ],
+      "frozen_alpha": [
+        "5.712319407853",
+        "5.712319407854"
+      ],
+      "additive_P_plus_alpha_E_derivative": [
+        "2.264846981945",
+        "2.264846981946"
+      ],
+      "substitute_alpha_E_minus_entropy_derivative": [
+        "1.264846981945",
+        "1.264846981946"
+      ]
+    },
+    "coherent": {
+      "branch_gap": [
+        "0.090969723134",
+        "0.090969723135"
+      ],
+      "frozen_alpha": [
+        "10.992668390570",
+        "10.992668390571"
+      ],
+      "additive_P_plus_alpha_E_derivative": [
+        "4.167982262928",
+        "4.167982262929"
+      ],
+      "substitute_alpha_E_minus_entropy_derivative": [
+        "3.167982262928",
+        "3.167982262929"
+      ]
+    }
+  },
+  "convex_power_counterexamples": {
+    "16": {
+      "uncalibrated_net_whole_collar": [
+        "-3719.638139",
+        "-3717.956360"
+      ],
+      "same_branch_gap_frozen_alpha": [
+        "0.000726417711336",
+        "0.000726417711337"
+      ],
+      "matched_net_whole_collar": [
+        "-2.437477471",
+        "-2.436011683"
+      ]
+    },
+    "32": {
+      "uncalibrated_net_whole_collar": [
+        "-18605166.410355",
+        "-18596127.934252"
+      ],
+      "same_branch_gap_frozen_alpha": [
+        "0.000000386678130",
+        "0.000000386678131"
+      ],
+      "matched_net_whole_collar": [
+        "-6.929485207",
+        "-6.925745933"
+      ]
+    }
+  },
+  "approximate_swap": {
+    "conditional_slope_bound": "c1-c0 >= -(epsilon+eta)/(1-2q)",
+    "literal_positive_slope_budget": [
+      "0.04636417592146",
+      "0.04636417592147"
+    ],
+    "sharp_affine_witness": true,
+    "source_scope": "fixed tariffs or active affine slopes; a moving family has its own source"
+  },
+  "two_restored_reports_fee_2": {
+    "match": {
+      "one_independent_row": [
+        "-0.085273495781",
+        "-0.085273495780"
+      ],
+      "equal_q_diagonal": [
+        "-0.170546991561",
+        "-0.170546991560"
+      ],
+      "one_row_whole_collar": [
+        "-0.085434146",
+        "-0.085109853"
+      ]
+    },
+    "mismatch": {
+      "one_independent_row": [
+        "0.614967459671",
+        "0.614967459672"
+      ],
+      "equal_q_diagonal": [
+        "1.229934919342",
+        "1.229934919343"
+      ],
+      "one_row_whole_collar": [
+        "0.614805854",
+        "0.615130147"
+      ]
+    }
+  },
+  "GR_closed": false
+}

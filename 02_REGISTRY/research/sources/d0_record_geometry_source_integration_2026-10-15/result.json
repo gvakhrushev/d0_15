@@ -1,0 +1,36 @@
+{
+  "consumed_owner_blob": "06f465874f07fae82111ee9453f4b5ca0b963267",
+  "full_GR_closed": false,
+  "homogeneous": {
+    "base_inverse_infinity_norm": "14/p^3",
+    "controlled_internal_slots": 2,
+    "controlled_metric_slots": 10,
+    "fixed_minor": "s**16/10030613004288",
+    "normal_constraints": 4,
+    "rank": 16,
+    "remaining_normal_directions": 8,
+    "uniform_inverse_bound": "28/p^3 if ||F_selected-F0_selected||_infty <= p^3/28"
+  },
+  "inhomogeneous": {
+    "amplitude_gradient_directions": 4,
+    "certified_golden_tube": true,
+    "internal_variation_tests": 2,
+    "metric_variation_tests": 10,
+    "nonuniform_minor_nonzero": true,
+    "normal_complement_dimension": 8,
+    "phase_source_required": true,
+    "rational_germ_w": "13/34"
+  },
+  "native_admission_derived": false,
+  "new_Lean_compilation": false,
+  "overlap": {
+    "local_price_hessian": "diag(z/(2*v), 2*z*v) per channel",
+    "metric": "Hess_y J_z(x,y)|y=x /(2*m*z)",
+    "mismatch": "w+u-2*w*u-2*sqrt(w*(1-w)*u*(1-u))*cos(theta_y-theta_x)",
+    "same_gate_twice": "W(w,theta+pi)^dagger W(w,theta)=W(w,theta)^2",
+    "zeros_retained": 12
+  },
+  "physical_Info_selected": false,
+  "schema": "d0-phase-metric-source/1",
+  "scope": "finite-dimensional exact kinematics and smooth-field first variation; no native law or dynamical all-mesh inverse"
+}

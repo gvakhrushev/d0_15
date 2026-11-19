@@ -324,7 +324,7 @@
       "-1/w**2"
     ]
   ],
-  "lean_capsule_receipt_sha256": "d86ff07cea805a6bebff2996379de9ecc077490d8eda171d6e442edc742c6fe5",
+  "lean_capsule_receipt_sha256": "4452ac0e63cb3c43abd49850ab2a8f0036eafb0d3439e4e6236378609f9e1ebf",
   "owner_action_density": "-3*q*w*(s + 1)",
   "packed_metric_slots": 10,
   "periodic_action": "pi**2*(3*s + 3)/50",

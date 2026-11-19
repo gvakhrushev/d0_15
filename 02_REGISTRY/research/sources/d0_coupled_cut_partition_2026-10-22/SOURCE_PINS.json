@@ -1,0 +1,113 @@
+{
+  "published_input": "4d14df50b2d0ae4cf80b7d944f4c68a5f9ef1eef",
+  "published_input_tree": "6000c037528e82608e5c2ba95fda1d126e994a0a",
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "git_blob": "63756ecca6af023aec1245a37c9437969b8055de",
+      "sha256": "acc7fb1c474c37cce4652b0c390b661ad0eec74b4666dc889e36177bef5aeabe"
+    },
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "git_blob": "ede6f2024ad46c1d697767f8e699f38c44c85f19",
+      "sha256": "d3ee7f3eb0b81564b976860334dc022ed171b4062ce722dc049ad7a22ec89a70"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+      "git_blob": "c1f0d59441b526443952aa8f6ac6dd222ce191c5",
+      "sha256": "7cfa6336c8159c90d0c136798b6970b985e21a82ccc9b9403366920e86d10d69"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COHERENT_BOOK_FULL42_BRIDGE_2026_10_22.md",
+      "git_blob": "35134d3a536450442267cda276028ec780329544",
+      "sha256": "c1274c2ad60049b5ab4bc50bd83a31da87f8b47470657472a083e8cf9cae5b2b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_FUTURE_THREE_ATOM_BOOK_SOURCE_AND_FINE_LIMIT_2026_10_22.md",
+      "git_blob": "820455aa095a70280836578fb4661e0d0e45a7cb",
+      "sha256": "4371aeb86e8c4daba4605df65b56dffe1d9df1e87a0702bec8ab41493e5fc50c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_PF_DISCRETE_C2_REGULARITY_2026_10_22.md",
+      "git_blob": "59f1dd791bcdbc25dac439b3b8b22ee5d2852850",
+      "sha256": "bdac4cbfcbc15d386731ede81f614081b4203f0c1753a43cc1e3e3155fee30ba"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_BOOK_THERMAL_WARD_OBSTRUCTION_2026_10_22.md",
+      "git_blob": "c334bf987f704302d24a4e24b0e0c90494f631f5",
+      "sha256": "1243a9bf9958443a5fc64efea3a4addb882b7b1a11e3a3ad57600f53df27af2c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK03_FINITE_ALGEBRAIC_FULL_SOURCE_PUISEUX_GATE_2026_10_22.md",
+      "git_blob": "df8aebd7976ce7dcffaef7e1421ca3bf23a5246d",
+      "sha256": "43e55da1b0721018d922a7e06f07b87a2e4bb6e9293e5783e55cc127f2c29b03"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_generated_thermal_source_2026-10-22/ACTUAL_CUT_APPLICATION.md",
+      "git_blob": "04bd07f4699ef2190aae7f74dfee9238decd8bf4",
+      "sha256": "d72e52973c1853e8abe44c8cf012ae865d0795683fe28d615d4b5f1d75397011"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_generated_thermal_source_2026-10-22/PRICE_AND_CAUSAL_PULLBACK.md",
+      "git_blob": "8c0aa6eda6f4300efb69d5e99746e664e326db65",
+      "sha256": "96a77c80442f89a9f3f866f6d003bf5cc3c62385be736451816dfdfdd62b53d7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_generated_thermal_source_2026-10-22/HODGE_AND_RENEWAL_TYPE_MAP.md",
+      "git_blob": "52e72e17c65856cc6ca9a59af01ca9c8a79648ba",
+      "sha256": "5cba3f4a7e4c0ce831c82ee5afc9d2bd5b9afbf467e917f5e5c09751c054b23e"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md",
+      "git_blob": "4841ee18c6d48093bd9f065e0d8a21afcb10ff23",
+      "sha256": "711c9129230643f65228962a9835dd5faa59882d1803556fa90ca769016b6ec1"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "git_blob": "ba78731a8c55de18ad88a3fe7f65e071ffea0b65",
+      "sha256": "4ec6622ae2ff4f75d615bbd2b207a071a154df56e59d74f0eb76fab6c9f95d82"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/execution/SAME_EXECUTION_FULL_SOURCE.md",
+      "git_blob": "e5ced5acb82a63434d1236620fb21eee3c86801d",
+      "sha256": "287e123f75ea6f5754d2ccd63b48cb567e90901781b8a63ca130eb8cf41513f5"
+    }
+  ],
+  "source_reuse": "Prior exact source/field/count owners consumed; no unchanged root, full128, PF census or Lean suite replayed.",
+  "concurrent_intake": {
+    "published_commit": "3c3dc0b2ac5310a9851b26dc58f31b5f77fe6eb8",
+    "mode": "read-only typed consumption; no suite replay",
+    "inputs": [
+      {
+        "path": "02_REGISTRY/research/A4D_EXACT_FULL42_OPEN_PF_COLLAR_BRANCH_AND_CONTINUOUS_BOOK_RESIDUAL_2026_10_22.md",
+        "git_blob": "a1908dcb8c57aef4133f503e47550bc65b3ee292",
+        "sha256": "aa91614a0c19650e7388e26b4841455de6394cd4a35876fd8db6630a96d13ced"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_BOOK03_STAGE_CLOCK_INTERNAL_CUT_NECESSITY_2026_10_22.md",
+        "git_blob": "7ed483d072d88efaca1b768a12ecf0704070ce66",
+        "sha256": "2bc227f8406a75a57dc2075a3de8d1a986157adaf052974a7bba2c1438306f81"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_GOLDEN_COST_CUT_CLOCK_MARKED_PROSPECTIVE_GATE_2026_10_22.md",
+        "git_blob": "190c2eeba25bd2cc81ff8464c3c3d08433924e80",
+        "sha256": "f2e4509e95bf598653430af17c41f56752e0ad7d743598f7e6e66b1bd07d07dc"
+      },
+      {
+        "path": "02_REGISTRY/research/A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md",
+        "git_blob": "1747a5380bd40de95b5b80e8800c316acc78784c",
+        "sha256": "888535c6e8862b8bc289c5322fada1ff95cf34d6e8af110be676a4ff23f69216"
+      },
+      {
+        "path": "02_REGISTRY/research/sources/d0_native_preparation_entropic_poisson_2026-10-22/check_native_entropy_poisson.mjs",
+        "git_blob": "f1dbf86e89f71a59590b1f7eedddd30a85e2ff08",
+        "sha256": "e3edbb07ec0580519fae9f812ba38f7d700cf9ec22e2447c51795fcc181d193d"
+      }
+    ]
+  }
+}

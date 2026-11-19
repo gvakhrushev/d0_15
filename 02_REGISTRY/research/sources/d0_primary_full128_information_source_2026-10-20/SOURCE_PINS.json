@@ -1,0 +1,65 @@
+{
+  "schema": "d0-primary-full128-source-pins/1",
+  "integration_base": "3bcb88ffbe3c4d68e1230524ea7fabb069215585",
+  "primary_application_commit": "1e850b0f15897ba8a826106bcff681b11eccfefa",
+  "owned_inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be",
+      "source_ref": "3bcb88ffbe3c4d68e1230524ea7fabb069215585"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf",
+      "source_ref": "3bcb88ffbe3c4d68e1230524ea7fabb069215585"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/PRIMARY_DOMAIN_SOURCE.json",
+      "sha256": "a026a48901a8a4e40f04927b9b10ed7d836e97c24ccd77a1edbf686d48c750bd",
+      "source_ref": "3bcb88ffbe3c4d68e1230524ea7fabb069215585"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py",
+      "sha256": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+      "source_ref": "3bcb88ffbe3c4d68e1230524ea7fabb069215585"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "source_ref": "3bcb88ffbe3c4d68e1230524ea7fabb069215585"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_history_price_composition_2026-10-20/paid_port_history.md",
+      "sha256": "ef69c2052237fbe8e916acf16691f9b14b4c1c2465a7837e838db2baeb95449d",
+      "source_ref": "3bcb88ffbe3c4d68e1230524ea7fabb069215585"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_full128_order_readout_2026-10-19/check_two_round_complete_shannon_order_source.py",
+      "sha256": "72ade8304bd29471115ebb9961df5225307229004c07ddc35d7f31221e566bf4",
+      "source_ref": "3bcb88ffbe3c4d68e1230524ea7fabb069215585"
+    }
+  ],
+  "frozen_artifacts": [
+    {
+      "path": "02_REGISTRY/research/A4D_PRIMARY_FULL128_COMMON_RECORD_INFORMATION_SOURCE_2026_10_20.md",
+      "sha256": "149d5c9dc1afa6fe1f5b966206b56d1df82becf6e78dfce40f7aa9396b682fd3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md",
+      "sha256": "9a441405c455adda9651f88c21fcda4d9383673a3718e88a93aeb50467133e71"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/primary_full128_helper.py",
+      "sha256": "c8f24203ab93c853641a83270170650cb02b41c48a66e942c322ce33a09257ea"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/check_primary_full128_information_source.py",
+      "sha256": "4c125e6ee478f08d74d89e7b0e4621e95dc0395e08b27f9d3e5521a68b61f22c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/PRIMARY_FULL128_INFORMATION.json",
+      "sha256": "e460680c08c1addfa7e6c9b519dde396bd73ff51441095904b250acf0176e305"
+    }
+  ],
+  "scope": "Exact full128 reconstruction and scoped floating information-source application; no full physical Info/payment/GR closure."
+}

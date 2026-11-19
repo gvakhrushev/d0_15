@@ -1,0 +1,13 @@
+{
+  "compact_matrix_shape": [
+    4,
+    4
+  ],
+  "deep_cost": 1001.4222873900794,
+  "deep_entropy_jet": 0.013174172058678532,
+  "deep_entropy_nats": 2.0217298121740424,
+  "deep_level": 1000,
+  "full_defining_carrier_decimal_digits": 210,
+  "label": "FLOATING_POINT_DIAGNOSTICS_NOT_INTERVAL_PROOF",
+  "max_finite_difference_error": 2.2658219744897679e-10
+}

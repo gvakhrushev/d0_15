@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "scope": "specified normalized tilted input B and proper P/R instruments; implementation of B and full Book-price binding are separate",
+  "exact_tests": {
+    "exact_fixture_m": "3/5",
+    "first_failure": "3/725",
+    "two_test_cycle_success": "12/25",
+    "mean_additional_rounds": "1/116"
+  },
+  "native_deterministic_field": {
+    "degree": 4,
+    "only_quadratic_subfield": "Q(sqrt(5))",
+    "sqrt_one_minus_z": "5 sqrt(41943)/1024",
+    "positive_offblock_fixture": "38685589334190981287772160/103161473175307246003814403",
+    "actual_eight_call_interior_eigenvalues_by_input_rank": {
+      "4": 4,
+      "16": 16
+    }
+  },
+  "single_recovered_block_at_original_q": {
+    "report_q": [
+      "0.41246988056855",
+      "0.41246988056856"
+    ],
+    "return_m": [
+      "0.836552100561013",
+      "0.836552100561014"
+    ],
+    "optimal_LC10_operator_norm_error": [
+      "0.000000176321956930653",
+      "0.000000176321956930654"
+    ],
+    "finite_representative_stability_radius": [
+      "0.000000088160915407651",
+      "0.000000088160915407652"
+    ],
+    "residual_lower_bound_at_epsilon_8_8e_minus_8": [
+      "0.000000000321831045493",
+      "0.000000000321831045494"
+    ],
+    "forbidden_only_amplitude_bound": [
+      "0.000000166587129554593",
+      "0.000000166587129554594"
+    ],
+    "first_range_failure_probability": [
+      "0.0000000000000310894324958549",
+      "0.0000000000000310894324958550"
+    ],
+    "retry_cycle_success_probability": [
+      "0.273465367215938",
+      "0.273465367215939"
+    ],
+    "mean_additional_rounds": [
+      "0.0000000000001136869096528249",
+      "0.0000000000001136869096528250"
+    ],
+    "closed_form_feedback_logged_count": "-ln(h)/ln(phi)=[ln E(L)-ln((t-s)^2/2)]/ln(phi)"
+  },
+  "all_prior_and_service_records_retained": true,
+  "original_cost_info_identified": false,
+  "GR_closed": false
+}

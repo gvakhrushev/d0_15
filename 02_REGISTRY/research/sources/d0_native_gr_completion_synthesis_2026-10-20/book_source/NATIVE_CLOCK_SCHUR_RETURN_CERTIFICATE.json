@@ -1,0 +1,407 @@
+{
+  "clock_Schur_elimination": {
+    "Schur_I_minus_tW": "I16-t^16*M",
+    "Schur_complement_at_t1_is_still_defined": true,
+    "active_cut": "clock0 tensor FULL apparatus16",
+    "archive_D_nilpotency_index": 15,
+    "archive_cut": "clocks1..15 tensor FULL apparatus16",
+    "archive_det_I_minus_tD": "1",
+    "archive_inverse": "sum_(k=0)^14 t^k D^k; valid for every t, including1",
+    "complete_return_ticks_including_idle": 16,
+    "full_det_I_minus_tW": "det(I16-q*M), q=t^16",
+    "full_resolvent_at_t1": false,
+    "full_resolvent_for0_lt_t_lt1": true,
+    "monodromy_order": "M=U15*U14*...*U0",
+    "nonzero_B_Dk_C_exponent": 14
+  },
+  "field": "Q(a), a^4+a^2-1=0, p=a^2, positive Golden embedding",
+  "field_coefficient_order": [
+    "1",
+    "a",
+    "a^2",
+    "a^3"
+  ],
+  "full_apparatus_clock0_feedback": {
+    "F_for_W16": "0",
+    "F_for_one_W": "I16"
+  },
+  "full_monodromy_determinants": {
+    "additional_clock_multiplicity": false,
+    "identity": "(1-q)^12*(1+q)^4",
+    "order": "(1-q)^4*(1+q)^4*(1-2*p^3*q+q^2)^4",
+    "order_over_identity": "[1+4*p^2*q/(1-q)^2]^4",
+    "raw_negative_logdet_order_minus_identity": "-4*log(1+4*p^2*q/(1-q)^2)<0 for0<q<1",
+    "spin_multiplicity": 4
+  },
+  "programmes": {
+    "identity": {
+      "full_characteristic_coefficients_in_q": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-8",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "24",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-24",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-36",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "120",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-88",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-88",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "198",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-88",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-88",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "120",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-36",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-24",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "24",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-8",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "prepared_j_star_M_j": "I4",
+      "record_X_minus_arm_sector": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "record_X_plus_arm_sector": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ]
+    },
+    "order": {
+      "full_characteristic_coefficients_in_q": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "8",
+          "0",
+          "-16",
+          "0"
+        ],
+        [
+          "120",
+          "0",
+          "-192",
+          "0"
+        ],
+        [
+          "664",
+          "0",
+          "-1072",
+          "0"
+        ],
+        [
+          "1180",
+          "0",
+          "-1920",
+          "0"
+        ],
+        [
+          "-2040",
+          "0",
+          "3312",
+          "0"
+        ],
+        [
+          "-5816",
+          "0",
+          "9408",
+          "0"
+        ],
+        [
+          "1368",
+          "0",
+          "-2224",
+          "0"
+        ],
+        [
+          "9030",
+          "0",
+          "-14592",
+          "0"
+        ],
+        [
+          "1368",
+          "0",
+          "-2224",
+          "0"
+        ],
+        [
+          "-5816",
+          "0",
+          "9408",
+          "0"
+        ],
+        [
+          "-2040",
+          "0",
+          "3312",
+          "0"
+        ],
+        [
+          "1180",
+          "0",
+          "-1920",
+          "0"
+        ],
+        [
+          "664",
+          "0",
+          "-1072",
+          "0"
+        ],
+        [
+          "120",
+          "0",
+          "-192",
+          "0"
+        ],
+        [
+          "8",
+          "0",
+          "-16",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "prepared_j_star_M_j": "p^3 I4",
+      "record_X_minus_arm_sector": [
+        [
+          [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-2"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "2"
+          ],
+          [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ]
+        ]
+      ],
+      "record_X_plus_arm_sector": [
+        [
+          [
+            "-1",
+            "0",
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-2"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "-2"
+          ],
+          [
+            "1",
+            "0",
+            "-2",
+            "0"
+          ]
+        ]
+      ]
+    }
+  },
+  "record_X_normalization": "Jplus^*Jplus=Jminus^*Jminus=2I8; compression includes1/2",
+  "scope": {
+    "closed_extension": "sixteen transitions includes owned idle wrap, original record reused",
+    "dependency_publication": "stage packet pending co-publication; not claimed as remote input",
+    "fresh_IID_record_reset": false,
+    "large_clock_matrix_built": false,
+    "old_certificate_main_executed": false,
+    "original_primary_cap2_controller_supplied": false,
+    "original_reported_trial": "seed0 first15 transitions, before idle wrap",
+    "pending_co_publication_inputs": [
+      "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_stage_clock_cut.py",
+      "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_STAGE_CLOCK_AND_POINTED_DESCENT.md"
+    ],
+    "physical_Book_U_N_or_elapsed_clock_binding_proved": false,
+    "physical_heat_graph_or_GR_source_selected": false,
+    "q_is_physical_Book_z_or_selected_weight": false,
+    "return_loop_determinant_is_Book_feedback": false
+  },
+  "source_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+    "02_REGISTRY/research/A4D_CONDENSED_HISTORY_SOURCE_OBSTRUCTION.md": "5698a416d80f32b865c53af72809a4638207ca5b1470736cf719520a6262138b",
+    "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+    "02_REGISTRY/research/A4D_NATIVE_FULL128_RELATIVE_TRANSFER_AND_CONDENSED_DESCENT.md": "577cbc909f766468fbef8ab38a5986ae761d348b075c2f38b2e1a88b704d4b3e",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md": "d0cf0e29b79123410daae93e23899e824dc4746548d3c6af6da431fa1a15d04c",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_STAGE_CLOCK_AND_POINTED_DESCENT.md": "e970dda60699b7236599c9618445fe17cb8cbb0b9bb8c8de8808a190c4c00848",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_car_actuated_metric.py": "72b2743f2f4c9408ceafe29dc691786c5011c4d1133d5fa6ebdb671a230bc3fa",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_stage_clock_cut.py": "4476d246a698e2c3e2518c39a23e12811375d95f545c4569eaeafe6b265c7474",
+    "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc",
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+    "03_FORMALIZATION/D0/Representation/OrderMemoryControl.lean": "2f36d015408ddac279515bde6d52dde5c8d347a8572be73c95d0046beef849dc",
+    "03_FORMALIZATION/D0/Representation/OrderMemoryReadout.lean": "c350ead450996bfb7da20a987454b57da94dc098d17efeafc85a56b751664aa4",
+    "04_CERTIFICATES/order_memory_control_verify.py": "bb72fe40326dc2d65d55f4f6d73564b7faef8f247774bf51771e3110f04e0c1a"
+  },
+  "status": "PASS"
+}

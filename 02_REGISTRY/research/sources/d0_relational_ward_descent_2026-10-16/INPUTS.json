@@ -1,0 +1,20 @@
+{
+  "concurrent_source_pin": "c33b2e65650533dac0d4f42b7c74d4ce72932886",
+  "execution_pr": 334,
+  "external_primary_context": [
+    "https://arxiv.org/abs/gr-qc/9403028",
+    "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.75.044018"
+  ],
+  "owners": [
+    "02_REGISTRY/research/A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md",
+    "02_REGISTRY/research/A4D_RAW_LINK_COTANGENT_JET.md",
+    "02_REGISTRY/research/A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md",
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+    "02_REGISTRY/research/sources/d0_native_action_selection_2026-10-16/RESULT_RU.md",
+    "02_REGISTRY/research/A4D_CONE_FULL_SHELL_FIRST_JET_NO_GO.md"
+  ],
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-full-experiment-ward-inputs/1",
+  "scope": "Documentary inputs read through live GitHub; prior computations not replayed. New symbolic formulas execute locally.",
+  "source_pin": "d105e22ea91649047e48bb2587552e84f4547a41"
+}

@@ -1,0 +1,83 @@
+{
+  "GR_closed": false,
+  "actual_factory_law_recomputed": false,
+  "checker_sha256": "0a078a9af6187bf29cb73f5f5f03cc97ee11fc83e32db4e701e506678044f2e2",
+  "checks_count": 75,
+  "finite_price_gap": {
+    "D_exact": "(3/64)*log_phi(27/16)",
+    "controls": [
+      {
+        "candidate_minus_root_infimum_over_D": "-1",
+        "full_price_correction_over_D": "0",
+        "implementation_slack_over_D": "0"
+      },
+      {
+        "candidate_minus_root_infimum_over_D": "-1/4",
+        "full_price_correction_over_D": "1/4",
+        "implementation_slack_over_D": "1/2"
+      },
+      {
+        "candidate_minus_root_infimum_over_D": "0",
+        "full_price_correction_over_D": "1/2",
+        "implementation_slack_over_D": "1/2"
+      },
+      {
+        "candidate_minus_root_infimum_over_D": "1/2",
+        "full_price_correction_over_D": "0",
+        "implementation_slack_over_D": "3/2"
+      }
+    ],
+    "finite_comparison": "U(w1)-U(w0) >= D-Delta0 is necessary",
+    "physical_geometry_claim_from_fixture": false,
+    "reports": [
+      "3/4",
+      "1/2"
+    ]
+  },
+  "historical_sources_verified": 9,
+  "original_physical_price_identified": false,
+  "proof_sha256": "5fa698adace52918ac940d9ab7fba9bbaf14c19c5d6d7e6022015f75c88c1108",
+  "retained_code": {
+    "a_pre": "1/4",
+    "fixtures": [
+      {
+        "complete_CQ_trace_distance": "1/4",
+        "complete_vector_terms_each": 64,
+        "conditional_active_pair_trace_distance": "1/4",
+        "labels_per_row": 4,
+        "moments": [
+          "-1/2",
+          "0"
+        ]
+      },
+      {
+        "complete_CQ_trace_distance": "1/4",
+        "complete_vector_terms_each": 256,
+        "conditional_active_pair_trace_distance": "1/8",
+        "labels_per_row": 8,
+        "moments": [
+          "0",
+          "1/4"
+        ]
+      },
+      {
+        "complete_CQ_trace_distance": "1/4",
+        "complete_vector_terms_each": 4096,
+        "conditional_active_pair_trace_distance": "1/32",
+        "labels_per_row": 32,
+        "moments": [
+          "0",
+          "1/16"
+        ]
+      }
+    ],
+    "full_controller_bound": "D_trace >= a_pre; equality needs common early sector",
+    "gamma": "3/16",
+    "retained_late_abort": "1/16",
+    "scope": "owned rational structural tape; actual-law statement is analytic"
+  },
+  "scientific_input": "f64d4c3389b507c7e7fb66ace9480ed6191c463d",
+  "smooth_complete_state_writer_proved": false,
+  "source_pins_sha256": "aacdc9459b64af1f0cea57caa435b1cb792eccb85e55649d558b19326e2562ea",
+  "status": "PASS"
+}

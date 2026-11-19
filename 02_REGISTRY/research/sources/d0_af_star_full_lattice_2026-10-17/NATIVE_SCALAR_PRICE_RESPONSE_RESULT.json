@@ -1,0 +1,211 @@
+{
+  "status": "PASS",
+  "symbol_kernel": {
+    "status": "PASS",
+    "creator_AST_sha256": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "CAR_dimension": 16,
+    "scope": "continuum isotropic U=sqrt(d)eta; full heat+feedback+fixedRIGHT Riesz objective; not finiteh exactkernel",
+    "link_operator_rank": 4,
+    "link_Gram_div_d": [
+      [
+        "24",
+        "0",
+        "0",
+        "24"
+      ],
+      [
+        "0",
+        "48",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "24",
+        "0"
+      ],
+      [
+        "24",
+        "0",
+        "0",
+        "72"
+      ]
+    ],
+    "normal_order": [
+      "coframeBsum",
+      "scalarlink1",
+      "scalarlink2",
+      "scalarlink3",
+      "scalarlink4"
+    ],
+    "normal_kernel": "z=(1,-iQ,0,0,0),Q=physicalq0;Q=2pi forfirsttorusmode",
+    "commutator_identity": "Vz=Tq Dk-Dl Tq;Tq=(2sum_spatial ki/Q)I-Gamma(R);R=sum_i(E0i-Ei0)",
+    "Delta_identity": "Qz=(Ek-El)Tq (allenergiesincludecommonfactor d)",
+    "constant_CAR_identity": "gamma0 Gamma(R)+sum_i I_i+Vlink1/sqrt(d)=0",
+    "native_zero_order_image_rank": 24,
+    "mixed_closure_controls": 9,
+    "mixed_metric_compatibility": "H(z,x)=0 forall4metriccolumns atfull homogeneous coframe/linkroot,usingfullproperDabrootmomentcancellation",
+    "mixed_proof": "term1+divideddifference=2sum_k wk tr Dk [Tq*Vx(k)-Vx(k-q)Tq*];bracketisownedhomogeneouscoframejet+native24zeroorderjet;theirfirstsourcesvanish",
+    "quotient": "chooseboostcoefficient0 by subtractingmultipleofz;solve4linkblock B onlyifnonsingular;kernelcompatibility z*mix=0required",
+    "Schur": "ifnormalN=[[a,c*],[c,B]],c=iQ B e1 anda=Q^2 B11;mixboost=-iQ mixlink1;reducedmetric=Kgg-KgL B^-1 KLg",
+    "not_original_Lorentz_gauge": "coordinatevolume-preservingspatialshearplusEuclideanCARframerotation;all16andreference128retained",
+    "finite_h_claimed": false,
+    "normal_quotient_nonsingularity_claimed": false
+  },
+  "CAR_traces": {
+    "status": "PASS",
+    "creator_AST_sha256": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "CAR_dimension": 16,
+    "price_scope": "continuum limit of actual S8 heat+feedback+fixedRIGHT rank128 Riesz price, full spectral weights; no new action",
+    "parameters": "U=c eta,d=c^2;l0=x+omega;q=(omega,0,0,0);x,y physicalFouriermomenta",
+    "Qp": "d[2x(x+omega) I+omega^2 N0]",
+    "Qn": "i d[omega Nsp(2N0-I)+sum_i yi hatgamma_i hatgamma_0]",
+    "traces": {
+      "Vp_norm2": "8*c**2*(omega**2 + 2*omega*x + 2*x**2)",
+      "Qp_norm2": "8*c**4*(omega**4 + 4*omega**3*x + 12*omega**2*x**2 + 16*omega*x**3 + 8*x**4)",
+      "Vp_Vn": "12*I*c**2*omega",
+      "Qp_Qn": "12*I*c**4*omega**3",
+      "Vn_norm2": "48*c**2",
+      "Qn_norm2": "16*c**4*(3*omega**2 + y1**2 + y2**2 + y3**2)"
+    },
+    "other_normal_crosses": {
+      "coframeboost": {
+        "Vp_V": "-8*c**2*(omega + 2*x)*(y1 + y2 + y3)",
+        "Qp_Q": "-16*c**4*(omega + 2*x)**3*(y1 + y2 + y3)",
+        "independent_spatial_sign_even_projection": [
+          0,
+          0
+        ]
+      },
+      "link1": {
+        "Vp_V": "0",
+        "Qp_Q": "0",
+        "independent_spatial_sign_even_projection": [
+          0,
+          0
+        ]
+      },
+      "link3": {
+        "Vp_V": "0",
+        "Qp_Q": "0",
+        "independent_spatial_sign_even_projection": [
+          0,
+          0
+        ]
+      },
+      "link4": {
+        "Vp_V": "0",
+        "Qp_Q": "0",
+        "independent_spatial_sign_even_projection": [
+          0,
+          0
+        ]
+      }
+    },
+    "decoupling_assumptions": "full signed spatial momentum sum; spectral and Riesz weights even in every yi; properDab weightedtrace cancelled by owned jointrootmoments",
+    "one_normal_lapse_Schur": "C_lapse=A-|B|^2/Cnormal ifCnormal!=0; no inverse of singular5normalmatrix",
+    "remaining_metric_warning": "I_spatial isalsoinvariant scalar: lapse-to-I_spatial metriccoupling isnotforbidden bysignsymmetry",
+    "native_finite_h_warning": "spatialreflection symmetry here usescontinuum ik symbols; no exactfiniteforward-stencil symmetry or finiteSchur limit proved",
+    "interval_certificate_claimed": false,
+    "native_finite_root_GR_claimed": false
+  },
+  "interval_source": {
+    "status": "PASS_INTERVAL",
+    "schema": "d0-full-price-lapse-source/1",
+    "checks": 18,
+    "source": "fixed beta=2p^2, M128, z2^-20, actual continuum v8 root, fullCAR16/reference128",
+    "a_root_interval": [
+      "1.807402105276820465785568102490966746380435406812535655887327979709036",
+      "1.807402105276820465785568102492966746380435406812535655887327979709036"
+    ],
+    "a_root_interval_radius": "1e-30",
+    "root_evidence": "F lower positive, upper negative with infinite theta/feedback remainder; owned uniqueness in [1.80,1.82]",
+    "sum_rectangle": {
+      "time": [
+        -8,
+        7
+      ],
+      "space": [
+        -7,
+        7
+      ]
+    },
+    "grouped_spatial_shells": 88,
+    "matrix_tail_bound": "1e-25",
+    "coefficients_enclosed": {
+      "A": [
+        "0.0054788",
+        "0.0054789"
+      ],
+      "B": [
+        "0.0026159",
+        "0.0026160"
+      ],
+      "C": [
+        "-0.0280215",
+        "-0.0280214"
+      ],
+      "reduced": [
+        "0.0057230",
+        "0.0057231"
+      ]
+    },
+    "matrix_convention": "K(lapse,normal)=[[A,iB],[-iB,C]], base positive Fourier coefficient1; physical coscos Hessian reduced/2",
+    "linear_normal_reduction": "C<0, choose normal=-K_normal,lapse/C; all other normal irreps decouple by spatial signed permutations",
+    "claim": "continuum full-price lapse reduced Hessian strictly positive; not Einstein vacuum gauge Hessian",
+    "limitations": [
+      "not limit of finite Schur without soft-channel rate",
+      "not physical action/admission theorem",
+      "not full nonlinear curved root or complete D0 GR theorem"
+    ],
+    "check_names": [
+      "uniform_theta_bound_for_feedback_tail",
+      "uniform_moment_bound_for_feedback_tail",
+      "theta_j12_tail",
+      "moment_j12_tail",
+      "feedback_series_n10_tail",
+      "actual_root_lower_sign",
+      "actual_root_upper_sign",
+      "actual_root_inside_owned_interval",
+      "coframe_V_uniform_op_bound",
+      "link_V_uniform_op_bound",
+      "matrix_gaussian_tail_ratio",
+      "matrix_uniform_infinite_tail",
+      "lapse_A_positive",
+      "scalar_connection_row_invertible_negative",
+      "A_rational_enclosure",
+      "B_rational_enclosure",
+      "C_rational_enclosure",
+      "reduced_rational_enclosure"
+    ],
+    "check_names_sha256": "1eadc790c375cd978bb1e170d3430ad63a9c3a4f9699af4711044a9a897f5802"
+  },
+  "time_pullback_ward": {
+    "status": "PASS",
+    "creator_AST_sha256": "801b33d7ef3e41f6425be16153c82b1402215f6be757ea275ff06a69010f58e4",
+    "CAR_dimension": 16,
+    "family": "orientation-preserving time diffeo F_eps(t)=t+eps xi(t),J=F_eps_prime>0,onperiodictorus",
+    "coframe": "e_eps=c^-1 diag(J,1,1,1);U_eps=c diag(J^-1,-1,-1,-1)",
+    "measure": "omega_eps=det(e_eps)/det(e0)=J, genuine physical operator measure; notjustrepresentationchange",
+    "connection": "Omega=0 exactly: all coframe1formsclosed,Cartan torsion0; noOmega correction needed",
+    "observer": "internaln=e0;physicalclockoneforma=J dt/c ispulledback,notfrozen",
+    "raw_D": "c J^-1 gamma0 partial0-c sum_i gamma_i partial_i,adjointinL2(Jdx)",
+    "whitened_D": "c gamma0 J^-1/2 partial0 J^-1/2-c sum_i gamma_i partial_i",
+    "unitary": "(U_F psi)(t,x)=sqrt(J(t)) psi(F(t),x) onALL16components;U_F^*U_F=I",
+    "full_operator_identity": "Dhat_eps=U_F D0 U_F^-1;Delta_eps=U_F Delta0 U_F^-1",
+    "prep": "rho_eps=U_F rho0 U_F^-1;Pcluster_eps=U_F Pcluster0 U_F^-1;Psi_eps=(U_F tensorI128)Psi0;RIGHTandallSchmidtweightsunchanged",
+    "whole_conditional_price": "Rconstant,Zconstant,andfeedbackspectraltracesconstantunderunitary;S_eps=S0 withsamefixedglobalcalibrations",
+    "feedback_trace_scope": "finitepositiveB spectralpricewhenrealizedonacovariantfinitecarrier;continuumusesheatK=exp(-betaDelta)andrelative logdet withfieldindependentinfiniteconstantremoved",
+    "generator": "Kxi=xi partial0+xi_prime/2,skew;Dhat_prime=[Kxi,D0]",
+    "Fourier_lapse": "a=-xi_prime,genuinef=delta logomega=xi_prime=-a;xi_q=i a/Q",
+    "all16_firstjet_identity": "aVp+Vmeasure(f=-a)=i c a(x+Q/2)gamma0=Kq Dk-Dl Kq",
+    "measure_source": "owned k_x=Re trCAR([d,{D,W}]xx),DSmeasure=sum_x f_x k_x;independentphysicaldensityvariationisneeded",
+    "passive_vs_active": "simultaneouschangeofHilbertframemovesDandrhoandcancelswithoutaddinganynewphysicalrow;varyingactualomegaatfixedrawframechangesadjoint/instrumentandhasownedkrow",
+    "minimal_native_input": "sameexecutedprogramme mustsupplylocaldensity/timeembeddinglaw withDlogomega=-trS onthisfamily,anditsownsource/preparationtransport;notanassignednewaction",
+    "finite_stencil_warning": "fixedgridforwardstencilisnotassertedexactlydiffeocovariant;ownedfinitewholeexperimentidentityalsomovesembeddingX;finitehSchurlimitstillrequiresproof",
+    "Einstein_warning": "restoringwholeexperimentWarddoesnotselectEinsteinsourceorprovefullphysicalCostInfoforcing",
+    "native_measure_admission_claimed": false,
+    "finite_h_Schur_limit_claimed": false
+  }
+}

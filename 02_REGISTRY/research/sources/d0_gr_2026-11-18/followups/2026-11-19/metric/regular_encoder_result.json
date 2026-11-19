@@ -1,0 +1,34 @@
+{
+  "M12": {
+    "conditional_invalid_coefficient": [
+      "0.4855830581675",
+      "0.4855830581676"
+    ],
+    "equal_formal_mass": [
+      "2837.1844414669891",
+      "2837.1844414669892"
+    ],
+    "full_book_master_gap": [
+      "0.00000000007863819826",
+      "0.00000000062351105286"
+    ],
+    "word0_invalid_probability": [
+      "0.2292612208995",
+      "0.2292612208996"
+    ],
+    "word1_invalid_probability": [
+      "0.2395974565957",
+      "0.2395974565958"
+    ]
+  },
+  "even_sector_NC1_norm_squared": "1+4p^3",
+  "formal_total_for_both": "(1+(1+4p^3)^(M+1))/2",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "odd_sector_raw_invalid": "zero",
+  "physical_full_price_identified": false,
+  "role_assignment_required_by_book": false,
+  "status": "PASS",
+  "suffix_cuts": "full native isometry on the canonical two births, both old pointer projections",
+  "termwise_positive_lift": "pair sectors of central sign in the faithful real regular representation",
+  "two_matched_words_and_two_unknown_spin_bits": "all protected columns checked"
+}

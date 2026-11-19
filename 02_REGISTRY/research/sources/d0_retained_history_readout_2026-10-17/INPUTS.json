@@ -1,0 +1,77 @@
+{
+  "scientific_input_ref": "efa3f8f3b329e606e0bd6df7cdd0f72a51edb458",
+  "integration_parent": "3f443e120d843c02c409aee6b5618847edc0ba91",
+  "consumer": "Same complete native history/readout/cut/raw-weight source, then intrinsic Einstein comparison",
+  "inputs": {
+    "03_FORMALIZATION/D0/Representation/GoldenOrderInterferometer.lean": {
+      "sha256": "76c7082b4f600f7b178579b8a2a859d6f692c96ce5a769920fb3ff427532292c",
+      "git_blob": "7b59090312c610e1e19f426d7ed8f4a982ebf296"
+    },
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": {
+      "sha256": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+      "git_blob": "a3860d148f86bcda52882459468089303cd5be5c"
+    },
+    "03_FORMALIZATION/D0/Representation/FiniteProtocolClock.lean": {
+      "sha256": "955bcffc5b927faf039cb15aae13e250b71c5e7b26fa811c30c61df423c005cc",
+      "git_blob": "14e5e8404fc729eac4035ea1e708fc6ccdfea566"
+    },
+    "03_FORMALIZATION/D0/CondensedAnchor/DetectorSupportGoldenWeight.lean": {
+      "sha256": "643d0a1ec2c71e15bc3254211e3e24cf6b99fdf48f6ddd43a38848cd28c23307",
+      "git_blob": "d7f7f170815cc3ad2052ad48280ae5919652b314"
+    },
+    "03_FORMALIZATION/D0/Core/BornFiniteEffects.lean": {
+      "sha256": "0d4fdcb7b7233191b19eb07ccab61ff1901eb26bff4147fccc4a03ab13cdf66f",
+      "git_blob": "80acd67fe5ee15a4f59f0fd2f4d6cff814df5fc5"
+    },
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_RETAINED_RECORD_ADMISSION.md": {
+      "sha256": "05c50904b149fcffcc93d8d52ffa66da260654cf9bfc47b80354d59fef4fe336",
+      "git_blob": "d8a618ff5d439f8b21735a372f0602b51361e677"
+    },
+    "02_REGISTRY/research/A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md": {
+      "sha256": "6a14686fcaab0b48b78b8ff4f784d989ea3ead1edf0ee28d48b7c20f76c4a7ed",
+      "git_blob": "7b6cdacf4c923526593be2aa0eb20b3274da0a9c"
+    },
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md": {
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md": {
+      "sha256": "44578338d793d96fbd8d575d182cf4087c721e3010c69a77163da0f40bef4715",
+      "git_blob": "8fe8059b98c60425fb570a10cb8d06c8adb13073"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md": {
+      "sha256": "e934b157a7bb34c11a9ad377b32bb8838a6e342da31ab716bf0f14c4c913787f",
+      "git_blob": "1fda19f9e4d0d559ee134e69a863e14af8e78a09"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md": {
+      "sha256": "bacfeb70e261f600cd4d1e305612eaf3ab6fe6f71bd384aab2f04fd588493d93",
+      "git_blob": "d60afe6ffc619a6464a7c40080cba14ce05c708f"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md": {
+      "sha256": "4b69c188dcb3571429f4b45eddb1713621014de260c6e8b2095cc2907d9e4730",
+      "git_blob": "22f74569f1659e4c60ab38637e09ac4059a49611"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": {
+      "sha256": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
+      "git_blob": "2e8a4b791e1d7adb472acf24c729d42583874a68"
+    },
+    "02_REGISTRY/research/sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md": {
+      "sha256": "f7ea30d997a58fa4e608d4403acae5f5e3d7e5da45116f9a7c3f62be5e99115c",
+      "git_blob": "e5b08043d3156fb30248a482e3c72342ff13add9"
+    },
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": {
+      "sha256": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9",
+      "git_blob": "1b3ab5605d323364ec83dac110f294b0edd37996"
+    },
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt": {
+      "sha256": "ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61",
+      "git_blob": "82cd7400cbe67439b0b2d0aa5b3161c6032d6af2"
+    }
+  },
+  "duplicate_user_input_alias": "/Users/grigorijvahrusev/.codex/attachments/1a6be941-3ea8-4a66-b9fc-dff36e053c49/Вставленный текст.txt",
+  "old_scientific_replay": false
+}

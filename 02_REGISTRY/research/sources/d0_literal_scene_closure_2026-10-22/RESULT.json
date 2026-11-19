@@ -1,0 +1,123 @@
+{
+  "status": "PASS_LITERAL_SCENE_HEAT_AND_CONDITIONAL_SOURCE_DESCENT",
+  "upstream_read_commit": "5a9764b20c2b7b481ec90d06a711ce3739f4e773",
+  "scene_vertices": 33,
+  "scene_edges": 359,
+  "retained_oriented_histories": 718,
+  "parameters": {
+    "beta": "2 phi^-2",
+    "zeta": "2^-20"
+  },
+  "literal_scene": {
+    "heat": 3.5972284689387997,
+    "feedback": 3.0028834189055368e-05,
+    "kappa": "39/160",
+    "heat_kappa_source": -0.01556695799293721,
+    "feedback_kappa_source": 1.907349076190847e-06,
+    "source_dominance_abs_ratio": 8161.567374979868,
+    "all359_source_max_error": 9.98228328339193e-19,
+    "replica_diagnostic": [
+      {
+        "copies": 1,
+        "normalized_full_kappa_source": -0.015565050643861019,
+        "normalized_heat_part": -0.01556695799293721
+      },
+      {
+        "copies": 16,
+        "normalized_full_kappa_source": -0.0009710275254823848,
+        "normalized_heat_part": -0.0009729348745585756
+      },
+      {
+        "copies": 256,
+        "normalized_full_kappa_source": -5.890108058372013e-05,
+        "normalized_heat_part": -6.0808429659910973e-05
+      },
+      {
+        "copies": 4096,
+        "normalized_full_kappa_source": -1.8931777775535887e-06,
+        "normalized_heat_part": -3.800526853744436e-06
+      },
+      {
+        "copies": 8192,
+        "normalized_full_kappa_source": 7.085649318629269e-09,
+        "normalized_heat_part": -1.900263426872218e-06
+      },
+      {
+        "copies": 65536,
+        "normalized_full_kappa_source": 1.66981614783182e-06,
+        "normalized_heat_part": -2.3753292835902724e-07
+      }
+    ]
+  },
+  "noncommuting_field_tests": {
+    "max_first_bound_ratio": 0.0035043479602519033,
+    "max_second_bound_ratio": 0.002555263510785368,
+    "max_first_fd_error": 5.956057240290302e-11,
+    "max_second_fd_error": 3.4902916543066986e-08,
+    "max_noncommutator_frobenius": 0.5299345452467965,
+    "dimension_only_counterexample_source": -5.08132883292205e-06
+  },
+  "original_two_band_expansion": {
+    "j_x_origin": "0.000000019168867179777071980355710068396056",
+    "lambda_minus": "-23.416406751884074972895582064895253",
+    "affine_first_source": "-0.06708203375942037486447791",
+    "affine_second_source": "-0.3983281350376814994579116",
+    "diagnostic_two_cell_ratios": [
+      {
+        "L": 8,
+        "first_error": "0.00336281275857549",
+        "second_error": "0.00781732763791202",
+        "first_error_div_tau": "0.215220016548831",
+        "second_error_div_tau": "0.500308968826369",
+        "thermal_first_bound_for_log_edge_jet_one": "3087.5901797184"
+      },
+      {
+        "L": 16,
+        "first_error": "0.000843952090832528",
+        "second_error": "0.00195651761938036",
+        "first_error_div_tau": "0.216051735253127",
+        "second_error_div_tau": "0.500868510561372",
+        "thermal_first_bound_for_log_edge_jet_one": "771.8975449296"
+      },
+      {
+        "L": 32,
+        "first_error": "0.000211191309216179",
+        "second_error": "0.000489266000767342",
+        "first_error_div_tau": "0.216259900637368",
+        "second_error_div_tau": "0.501008384785758",
+        "thermal_first_bound_for_log_edge_jet_one": "192.9743862324"
+      },
+      {
+        "L": 64,
+        "first_error": "5.2810536306036e-5",
+        "second_error": "0.000122325037268559",
+        "first_error_div_tau": "0.216311956709524",
+        "second_error_div_tau": "0.501043352652018",
+        "thermal_first_bound_for_log_edge_jet_one": "48.2435965581"
+      },
+      {
+        "L": 128,
+        "first_error": "1.32034284453037e-5",
+        "second_error": "3.05817928818137e-5",
+        "first_error_div_tau": "0.216324971647855",
+        "second_error_div_tau": "0.501052094575636",
+        "thermal_first_bound_for_log_edge_jet_one": "12.060899139525"
+      },
+      {
+        "L": 256,
+        "first_error": "3.30090676025322e-6",
+        "second_error": "7.64548156820464e-6",
+        "first_error_div_tau": "0.216328225439955",
+        "second_error_div_tau": "0.501054280053859",
+        "thermal_first_bound_for_log_edge_jet_one": "3.01522478488125"
+      }
+    ],
+    "scope": "Scalar operand derivatives, NOT a newly executed all42 geometry or common physical program."
+  },
+  "checks": 897,
+  "validation_kind": "Floating matrix diagnostics plus high precision scalar differentiation; proof bounds are analytical, no interval/full-Lean claim.",
+  "full42_constructor_replayed": false,
+  "actual_writer_scale_window_proved": false,
+  "full_independent_internal_Euler_solved": false,
+  "GR_closed": false
+}

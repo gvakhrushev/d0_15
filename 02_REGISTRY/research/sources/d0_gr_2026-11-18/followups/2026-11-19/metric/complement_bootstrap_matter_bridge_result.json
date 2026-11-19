@@ -1,0 +1,42 @@
+{
+  "status": "PASS: conditional exact local bootstrap vs independent 2-copy CAR algebra",
+  "local_raw_J_secant_per_descriptor": 0,
+  "matter_actual_factor": "2*A_star^2; original uncalibrated divide by a_star",
+  "A_star": 0.011133130166785386,
+  "matter_secant": 0.0001239465873105868,
+  "independent_matter_copies_required": 2,
+  "target_real_gain_sign_and_normalization_selected": false,
+  "complete_same_history_matters_compiled": false,
+  "full_combined_bootstrap_computed": false,
+  "full_Hodge_continuation_requires_paid_padding": true,
+  "GR_closed": false,
+  "finite_checks": [
+    {
+      "q": 19,
+      "turn": 2,
+      "delta_s": 0.17813356384252588,
+      "qphysical_plus": -5.2900279686430596e-05,
+      "qphysical_minus": -7.497932701018422e-05,
+      "qphysical_secant_per_descriptor": 0.0001239465873105868,
+      "claimed_target_gain_is_physically_selected": false
+    },
+    {
+      "q": 66,
+      "turn": 7,
+      "delta_s": -0.020394486304287945,
+      "qphysical_plus": -6.326298401031268e-05,
+      "qphysical_minus": -6.0735157032943676e-05,
+      "qphysical_secant_per_descriptor": 0.00012394658731058723,
+      "claimed_target_gain_is_physically_selected": false
+    },
+    {
+      "q": 613,
+      "turn": 65,
+      "delta_s": -0.004417205185984658,
+      "qphysical_plus": -6.22482516138365e-05,
+      "qphysical_minus": -6.170075410558307e-05,
+      "qphysical_secant_per_descriptor": 0.00012394658731058864,
+      "claimed_target_gain_is_physically_selected": false
+    }
+  ]
+}

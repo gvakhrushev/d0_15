@@ -1,0 +1,114 @@
+{
+  "schema": "d0-native-source-endpoint-metric/1",
+  "status": "PASS",
+  "input_source_head": "f1270f63cffa5fcfc27b469ff2517d8398d5362a",
+  "input_sha256": {
+    "a4d_native_reference_memory_preparation.py": "67e416c75cc213efca6040cea8cb796efbcff78037e09b31fb6a83acdcfd0e3a",
+    "a4d_native_correlated_current_transition.py": "e659733a8ab4fea30f46de56663dc344249420c7e0a3ea65b2aa1a2091b76e0d",
+    "a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
+    "a4d_native_fock_record_binding_check.py": "42e83e6f93b48ce4d4420f829d8e79c993a215d7b1a4c6a2f812bd45fd914078"
+  },
+  "checks": [
+    "actual_full_blank_projector",
+    "unit_norm_blank_state",
+    "literal_gate_isometry_at_initial_pairing",
+    "blank_correlated_current_is_rest",
+    "one_literal_tick_gives_owned_source_current",
+    "source_current_timelike_norm_is_p6",
+    "source_pairing_exact_full_matrix",
+    "initial_pairing_is_identity",
+    "source_pairing_is_positive",
+    "initial_full_exterior_gram_is_identity",
+    "literal_gate_scalar_column",
+    "exact_endpoint_norm_defect_is_8_over_p",
+    "defect_is_strictly_positive",
+    "full_endpoint_isometry_fails",
+    "frozen_pairing_control_has_zero_defect",
+    "opposite_current_has_same_positive_scalar_defect",
+    "source_pairing_has_unit_determinant",
+    "source_pairing_has_oriented_endpoint_frame",
+    "endpoint_owner_realizes_current_exterior_pairing",
+    "current_endpoint_frame_is_full16_isometry",
+    "moving_frame_gate_restores_endpoint_isometry",
+    "two_tick_moving_frame_transport_telescopes",
+    "frame_repair_retains_original_two_tick_price",
+    "c0_chronology_input_is_actual_whole_blank",
+    "c0_initial_first_grade_selects_rest",
+    "c0_initial_full_car_current_is_same_rest_observer",
+    "c0_chronology_gate_is_the_same_owned_full_car_gate",
+    "c0_first_tick_chronological_grade_is_exact",
+    "c0_first_tick_updates_metric_to_lorentz_q1",
+    "c0_first_tick_full_car_current_is_exact",
+    "c0_updated_metric_current_norm_is_minus_p_squared",
+    "c0_updated_current_observer_pairing_is_not_positive",
+    "positive_golden_root_is_inside_rational_p_interval",
+    "positive_golden_square_root_is_inside_rational_a_interval",
+    "feedback_derivative_is_negative_at_left_bracket",
+    "feedback_derivative_is_positive_at_right_bracket",
+    "whole_blank_chronology_family_retained_for_stationary_bracket",
+    "all_angle_full_car_current_on_chronology_family",
+    "chronology_metric_current_norm_exact_all_angle_formula",
+    "stationary_bracket_current_norm_numerator_is_negative",
+    "stationary_bracket_current_norm_denominator_is_positive"
+  ],
+  "exact_controls": 41,
+  "witness": {
+    "initial_current": "(1,0,0,0)",
+    "one_tick_current": "(1,2*a*p,0,0)",
+    "current_norm_squared": "p^6",
+    "source_pairing_00": "2/p^6-1",
+    "scalar_column_endpoint_norm_defect": "8/p=8*(1+p)>0",
+    "diagnostic_chronology_stationary_point": {
+      "fugacity": "1/2",
+      "angle_bracket": [
+        "-33/100",
+        "-32/100"
+      ],
+      "p_interval": [
+        "309/500",
+        "6181/10000"
+      ],
+      "a_interval": [
+        "7861/10000",
+        "3931/5000"
+      ],
+      "feedback_numerator_at_left": [
+        "-163031747514261460441727377393918174512418807766819560347569331554837/20000000000000000000000000000000000000000000000000000000000000000000000",
+        "-111190471816682633734827210314122779168055833256533265335106176007249/20000000000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "feedback_numerator_at_right": [
+        "273578045143803768851836967961398074862784602525726974350682309/38146972656250000000000000000000000000000000000000000000000000000",
+        "5911960584042595090421733057459943005110214305825276287977765333/610351562500000000000000000000000000000000000000000000000000000000"
+      ],
+      "CAR_current_norm_numerator_on_bracket": [
+        "-19903938641343/9765625000000",
+        "-76193106422793/39062500000000"
+      ],
+      "CAR_current_norm_denominator_on_bracket": [
+        "1529670321/976562500",
+        "396551056729/250000000000"
+      ],
+      "interior_feedback_only_stationary_point": true,
+      "physical_admission_or_full_action_root": false
+    }
+  },
+  "scope": "fixed rest frame, literal owned full-CAR gate, current-defined positive observer pairing, existing pure endpoint-frame transport, the c=0 chronology witness, and a diagnostic feedback-only stationary interval",
+  "pure_endpoint_frame_transport_repairs_isometry": true,
+  "pure_endpoint_frame_transport_changes_two_tick_price": false,
+  "c0_chronology_and_full_car_observers_agree_initially": true,
+  "c0_full_car_current_remains_timelike_after_chronology_metric_update": false,
+  "diagnostic_chronology_stationary_mismatch": {
+    "fugacity": "1/2_NOT_A_PHYSICAL_RULE",
+    "angle_interval": "[-33/100,-32/100]",
+    "feedback_derivative_signs": "NEGATIVE_AT_LEFT_POSITIVE_AT_RIGHT",
+    "full_car_current_norm_in_updated_metric": "STRICTLY_NEGATIVE_ON_INTERVAL",
+    "interior_feedback_only_stationary_point_exists": true,
+    "physical_admission_or_full_action_stationarity": false
+  },
+  "other_joint_link_or_gate_updates_classified": false,
+  "physical_admission": false,
+  "full_native_q_D_b_m_transition": false,
+  "source_Ward_stationarity_GR_closed": false,
+  "new_Lean_compilation": false,
+  "checker_sha256": "5588812836128e17757688bf37d4a571ca84af06c42d7af782c24b9a7f4074ce"
+}

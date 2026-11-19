@@ -1,0 +1,66 @@
+{
+  "generated_utc": "2026-10-20T19:29:37.421964+00:00",
+  "research_input_commit": "972ce692a84b5b23bdf91e93a047b1882ad582d4",
+  "integration_base_commit": "dec8b42af5b2f3afa9d0d537ac011041a51cb6c3",
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "sympy": "1.14.0",
+  "scope": "Five narrow final-input checks. Universal statements and their hypotheses are proved analytically, not by finite scans. No physical GR closure certified; prior source_selection/VALIDATION.json unchanged.",
+  "results": [
+    {
+      "script": "check_stopped_field_saddle.py",
+      "sha256": "1c90de602aec91fb4b3af46e9e9e26b5fa6cfec1ef03ae3f86d56aef1e3d8df1",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "check_stopped_field_saddle.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.725,
+      "output": "stopped_field_saddle.stdout.txt"
+    },
+    {
+      "script": "check_stopped_information_normalization.py",
+      "sha256": "02da75a2d0b4f47d9396fd9d479695cbb5b0a07d2be649300e046daf8398a96d",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "check_stopped_information_normalization.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.6,
+      "output": "stopped_information_normalization.stdout.txt"
+    },
+    {
+      "script": "check_future_algebra_and_stopped_normalization.py",
+      "sha256": "8114c91d2cebe1f83fbf7af0eb3af8937fe191284399d0a683df6d71b3ec877d",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "check_future_algebra_and_stopped_normalization.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.254,
+      "output": "future_algebra_and_stopped_normalization.stdout.txt"
+    },
+    {
+      "script": "check_forced_record_future_test.py",
+      "sha256": "6157544de87d11e376e21da583d10a2ddc460baedefbbe395dce8873d9589da2",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "check_forced_record_future_test.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.027,
+      "output": "forced_record_future_test.stdout.txt"
+    },
+    {
+      "script": "check_correction_second_jet.py",
+      "sha256": "0d675802aa796fd4d0c3e457946bccb55a40663402b55942959e13767e6bf59c",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "check_correction_second_jet.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.451,
+      "output": "correction_second_jet.stdout.txt"
+    }
+  ],
+  "all_passed": true
+}

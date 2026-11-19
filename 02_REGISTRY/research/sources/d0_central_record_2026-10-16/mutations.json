@@ -1,0 +1,30 @@
+{
+  "expected_files_changed": false,
+  "mutations": [
+    {
+      "failed_at": "both_interference_outcomes",
+      "mutation": "lose_golden_weight",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_at": "whole_signed_star_equals_overlap_accumulator",
+      "mutation": "drop_Lorentz_pairing",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_at": "full_source_x",
+      "mutation": "price_before_aggregation",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_at": "block_weight_convex_coefficient",
+      "mutation": "freeze_one_central_sector",
+      "status": "REJECTED_BY_MATHEMATICS"
+    },
+    {
+      "failed_at": "retained_geometry_metric",
+      "mutation": "make_terminal_flag_local",
+      "status": "REJECTED_BY_MATHEMATICS"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "actual_centres": {
+    "sharp": {
+      "q": 0.12921646400972442,
+      "log_phi_odds": 3.9647911988364037,
+      "three_success_cost_net_slope": -2.9147005151228744
+    },
+    "noisy": {
+      "q": 0.41246988056855516,
+      "log_phi_odds": 0.7351530180546977,
+      "three_success_cost_net_slope": 0.7752411890740166
+    }
+  },
+  "independent_exact_rows": 16,
+  "exact_Q_coordinates_digit_counts": [
+    473,
+    474
+  ]
+}
+PASS: cost bound has 393 digits; both conjugates exceed 10^473.
+PASS: exact two-state eliminant and the 256-power weight threshold.
+PASS: four multi-state height bounds; identically repeated and constant roots removed.

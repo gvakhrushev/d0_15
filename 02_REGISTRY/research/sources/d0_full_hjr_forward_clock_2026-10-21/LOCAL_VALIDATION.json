@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "repository": "gvakhrushev/d0_15",
+  "pull_request": 334,
+  "base_commit": "b1870ff3ecedd02e09388bc8b6fd8df4da54b990",
+  "source_archive_sha256": "1fce3a47eaa54c367392e2aa5cb12e0ff4d187307ee55eb1a6f22c2ca79cb23a",
+  "authored_result_sha256": "ca54d4f00067bcbff1dd8e5a8a89e6d03702eba6f048e5443309770c0b67cc5d",
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "scipy": "1.13.1",
+    "platform": "macOS-26.5.1-arm64-arm-64bit"
+  },
+  "replay": {
+    "GR_closed": false,
+    "authored_conditions": 100,
+    "floating_point_tolerance": {
+      "abs_tol": 2e-15,
+      "comparisons": 15,
+      "max_absolute_difference": 1.4210854715202004e-13,
+      "rel_tol": 2e-15
+    },
+    "independent_review": false,
+    "inputs_unchanged": true,
+    "normal_optimized_output_equal": true,
+    "pinned_result_structure_and_exact_fields_match": true,
+    "status": "PASS",
+    "upstream_root_existence_reproved": false
+  },
+  "scope": {
+    "independent_review": false,
+    "upstream_root_existence_reproved": false,
+    "physical_clock_selected": false,
+    "GR_closed": false
+  }
+}

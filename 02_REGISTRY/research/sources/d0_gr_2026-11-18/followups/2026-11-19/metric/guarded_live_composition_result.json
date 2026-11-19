@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "old_input_columns": 32,
+  "live_square_gates": 28,
+  "unguarded_control_H_gate": [
+    3,
+    7
+  ],
+  "wire_occurrences_routed": 53,
+  "dummy_wires": 3,
+  "live_births": 9,
+  "logical_Toffoli": 106,
+  "logical_CX": 549,
+  "logical_G": 5,
+  "logical_SourceI": 4,
+  "logical_total_stages": 673,
+  "H1_max_column_error": 0.0,
+  "H0_old_and_dummy_factorized": true,
+  "first_route_work_mark_max_error": 2.220446049250313e-15,
+  "work_mark_probability": "p*pi+p^4 (fresh H with P(H=0)=p)",
+  "work_mark_source": "plus or minus lambda*p*Dpi",
+  "work_mark_normalized_to_guarded_live_signal": "plus or minus lambda/p",
+  "unguarded_LIVE_H0_code_CQ": "3+2*p^2+(1+2*p^3)*pi",
+  "unguarded_LIVE_H1_code_CQ": "4+pi",
+  "random_H_unguarded_slope": "8 - 3*sqrt(5)",
+  "guarded_LIVE_conditional_code_CQ": "p^2*(4+pi), with H registered and per-branch code actually issued",
+  "conditional_248_factories_success": "0.9999331147901769710669093",
+  "conditional_signal_factor_p2_times_248_success": "0.3819404633732974230823473",
+  "all_failure_fine_logs_and_route_work_physically_bound": false,
+  "actual_CostInfo_lift_and_GR_closed": false
+}

@@ -1,0 +1,40 @@
+{
+  "absolute_first_moments": {
+    "geometry": 255,
+    "matter": 255
+  },
+  "actual_noiseless_NC1_copy": {
+    "CX": 9,
+    "G": 2,
+    "SourceI": 4,
+    "calls": 15,
+    "fresh_born": 2,
+    "native_matrix_dimension": 32
+  },
+  "complete_ledger_coefficients_0_26_27_copies": [
+    "-6739.315188826880",
+    "-109.315188826880",
+    "145.684811173120"
+  ],
+  "fixed_n_actual_SC5_report_probabilities": [
+    "1.88714985558694E-6",
+    "2.37704934718429E-6"
+  ],
+  "fixed_n_common_SC5_L": 19766,
+  "fixed_n_entropy_secant_in_code_units": "27.141082392468",
+  "fixed_n_positive_27_copies": true,
+  "full_geometric_Cost_Info_proved": false,
+  "geometric_l1_optimum": "1793/56",
+  "leading_slope_SC2_27_copies_at_h_1_256": "1.016271327449E-10",
+  "old_unbalanced_absolute_first_moments": [
+    "11/5",
+    "255"
+  ],
+  "report_entropy_slope_at_SC1": "27.430026782799803",
+  "selector_42_class_repetitions": [
+    4808,
+    2971
+  ],
+  "selector_active": "9.998078181528E-1",
+  "status": "PASS"
+}

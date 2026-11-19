@@ -1,0 +1,136 @@
+{
+  "GR_closed": false,
+  "consumed_equations": "7cu:831,835",
+  "consumed_native_source_commit": "172876cdf38bfce6f87fdd4a059d524b60c10eb9",
+  "full_matrix_controls": [
+    {
+      "Hessian_s_t": [
+        [
+          -0.33416399667734675,
+          0.33416399667734686
+        ],
+        [
+          0.33416399667734686,
+          -0.33416399667734686
+        ]
+      ],
+      "active_rank": 2,
+      "ambient_dimension": 6,
+      "c_squared_twist_threshold": 0.46153846153846156,
+      "checks": [
+        {
+          "Hessian_error": 1.1102230246251565e-16,
+          "gradient_error": 0.0,
+          "point": [
+            0.0,
+            0.0
+          ],
+          "value_error": 0.0
+        },
+        {
+          "Hessian_error": 4.440892098500626e-16,
+          "gradient_error": 1.1102230246251565e-16,
+          "point": [
+            0.17,
+            -0.23
+          ],
+          "value_error": 1.491862189340054e-16
+        },
+        {
+          "Hessian_error": 2.4424906541753444e-15,
+          "gradient_error": 1.3877787807814457e-16,
+          "point": [
+            -0.31,
+            0.12
+          ],
+          "value_error": 4.440892098500626e-16
+        },
+        {
+          "Hessian_error": 4.996003610813204e-16,
+          "gradient_error": 3.3306690738754696e-16,
+          "point": [
+            0.24,
+            0.24
+          ],
+          "value_error": 3.3306690738754696e-16
+        }
+      ],
+      "first_source_s_t": [
+        -0.4830188679245283,
+        0.4830188679245283
+      ],
+      "zeta": 0.14285714285714285
+    },
+    {
+      "Hessian_s_t": [
+        [
+          -2.7343723773914106e-06,
+          2.7343723773914115e-06
+        ],
+        [
+          2.7343723773914115e-06,
+          -2.7343723773914106e-06
+        ]
+      ],
+      "active_rank": 2,
+      "ambient_dimension": 6,
+      "c_squared_twist_threshold": 0.4999997615813072,
+      "checks": [
+        {
+          "Hessian_error": 4.235164736271502e-22,
+          "gradient_error": 0.0,
+          "point": [
+            0.0,
+            0.0
+          ],
+          "value_error": 0.0
+        },
+        {
+          "Hessian_error": 3.3881317890172014e-21,
+          "gradient_error": 1.0587911840678754e-21,
+          "point": [
+            0.17,
+            -0.23
+          ],
+          "value_error": 1.0441798657277387e-17
+        },
+        {
+          "Hessian_error": 1.0164395367051604e-20,
+          "gradient_error": 2.117582368135751e-22,
+          "point": [
+            -0.31,
+            0.12
+          ],
+          "value_error": 4.734490658677912e-18
+        },
+        {
+          "Hessian_error": 1.6940658945086007e-21,
+          "gradient_error": 2.541098841762901e-21,
+          "point": [
+            0.24,
+            0.24
+          ],
+          "value_error": 5.916355729981837e-17
+        }
+      ],
+      "first_source_s_t": [
+        -2.9296892881404344e-06,
+        2.9296892881404344e-06
+      ],
+      "zeta": 9.5367431640625e-07
+    }
+  ],
+  "heat_second_variation_set_to_zero": false,
+  "original_26_stage_replayed": false,
+  "original_unpadded42_carrier_identified_with_common_null": false,
+  "physical_temporal_boundary_identified": false,
+  "status": "PASS_SAME_QUERY_CUT_RELATIVE_ORBIT_JET",
+  "symbolic": {
+    "arbitrary_original_c_symbolic_identity": true,
+    "canonical_shear": "-8427/2816",
+    "first_source_at_rational_fixture": "128/265",
+    "rank_loss_condition": "c^2=(1-z)/(2-z)",
+    "rank_of_two_angle_hessian": 1,
+    "second_source_at_rational_fixture": "-2816/8427"
+  }
+}

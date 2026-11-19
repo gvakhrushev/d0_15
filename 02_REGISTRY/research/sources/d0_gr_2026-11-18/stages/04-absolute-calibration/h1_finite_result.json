@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "proof": "symbolic identities, rational-power monotonicity on [0,1] in the accompanying proof",
+  "leaves": 5,
+  "two_refinement_mass_exact": "45 - 20*sqrt(5)",
+  "single_refinement_zero": 0.3454915028125263,
+  "strict_uniform_lower_at_r4_z2m20": 718.0251784938225,
+  "minimum_on_25_diagnostic_points": 8129.761285441934,
+  "microscopic_interface_verified": false,
+  "GR_closed": false
+}

@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "coherent_reflection": 69,
+    "forward_bell": 243,
+    "total": 312
+  },
+  "files_sha256": {
+    "FORWARD_BELL.md": "9b5417d25649e28e12bd05713505a95849c82654597c9bf99c6fb26ba4b6f5b9",
+    "PROOF.md": "05c2774366496df42b6524df7d3f938572e719a3fafdbfe3a7afbca4b210dc8a",
+    "RESULT.json": "d2c6db90ae72248ae5f691844872ba67a19dd717587f26a54dee96a3285d1992",
+    "RESULT_BELL.json": "6ffa299619b6d4829f5ddd8cb7b42e340f6b8ebedfee30a44aae93d0d5106b8c",
+    "RESULT_BELL_OPTIMIZED.json": "6ffa299619b6d4829f5ddd8cb7b42e340f6b8ebedfee30a44aae93d0d5106b8c",
+    "RESULT_OPTIMIZED.json": "d2c6db90ae72248ae5f691844872ba67a19dd717587f26a54dee96a3285d1992",
+    "check_forward_bell.py": "665d2d23906f37cacd4e56e778bc43ea0c7d88e01aef0e2eaf19e4cc5f6f1c94",
+    "check_reflection.py": "92558d6fc9703517a2ece7fa36f869f4a8a33830d55dedd0fb77400f4a17e198"
+  },
+  "replay": {
+    "coherent_normal_equals_optimized": true,
+    "forward_normal_equals_optimized": true
+  },
+  "scope": {
+    "GR_closed": false,
+    "controller_Info_clock_stationary": false,
+    "full_one_initial_physical_execution": false,
+    "route_B_unrestricted_independent_U_stationary": false,
+    "true_Book03_complement": "finite exact conditional source"
+  },
+  "status": "PASS",
+  "refinement_attenuation": {
+    "covered_site_copy_bound": "W>=nu*528*L^4>=528*L^4 when all L^4 Role sites are covered",
+    "full_work_dimension": "D>=W for the retained or purified uniform-address selector in the complete report unitary",
+    "exact_gain": "2*z*(sqrt(p)-p)*m0/(D*W*gamma_m*h_phi_prime(r0)*(1-z+z*m0^2/D))",
+    "gain_upper": "C0/(528^2*gamma_m)*h^8",
+    "paid_readiness": "gamma_m>=1/2 for the declared finite moment-writer caps; any added selector readiness is not included without a new source derivation",
+    "absolute_recovery": "O(h*abs(a_J_h)*g_h) is sufficient under the owned recovery hypotheses; h^9 envelope when abs(a_J_h)=Theta(1)",
+    "scope": "conditional Route B source bound; exact selector physical admission and uniform gain lower bound remain open"
+  }
+}

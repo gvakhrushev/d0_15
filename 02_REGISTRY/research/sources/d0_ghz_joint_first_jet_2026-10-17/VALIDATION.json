@@ -1,0 +1,36 @@
+{
+  "GR_closed": false,
+  "independent_CONTROL_acceptance": false,
+  "mpmath": "1.3.0",
+  "new_exact_checks": {
+    "amplitude": 677,
+    "causal_source": 34,
+    "preparation_domain": 62
+  },
+  "normal_optimized_outputs_identical": true,
+  "old_root_spectrum_heat_or_Lean_replayed": false,
+  "original_fixed_source_raw_terminal_closed": false,
+  "physical_native_action_selected": false,
+  "python": "3.9.6",
+  "scale": "directed interval evaluation with explicit Gaussian and cycle tails; bracket/uniqueness at unchanged beta/z/M",
+  "schema": "d0-joint-cone-first-corrector-validation/1",
+  "sha256": {
+    "02_REGISTRY/research/A4D_GHZ_CONE_JOINT_FIRST_CORRECTOR.md": "58182d54c399fa85932e5f60dc05c0157285c804afc2623fec97872a345295dd",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/AMPLITUDE_RESULTS.json": "595933fef34e0cabb4463e80188149465005dc0ecce8db85f40d678637872fc5",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/AMPLITUDE_VALIDATION.json": "44b81993c20dc6efb6ed1c37385df445d2f3bbcfc8260ee04a02773ba0cdb6ee",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/CAUSAL_RESULTS.json": "82fcd6a1e9102d93bbaa08705f319aadd0d5b46ed3df2b45ba0fa794ff1b1175",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/CAUSAL_VALIDATION.json": "d8157a10b505d345aeaf1b36e8c55f4f44dc0c537bc44034f53027f00b3398ac",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/INPUTS.json": "d0fdd8350df379d8a233d10a3aac3c52272b88b315c594f5a4f37aa747cb8bd8",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/PREPARATION_DOMAIN.md": "4f2f16f5fd602272e876c42040122e08317189570b098a7568bbe806ba1cf15f",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/PREPARATION_DOMAIN_RESULTS.json": "4f32e6c1800dfd0146e35a8fc5555900a725279d3f2edd47aa3fd21fab761c7a",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/PREPARATION_DOMAIN_VALIDATION.json": "1e0e0d39329a7432b631634b37514a2e334831c3363611b1bb514cf0f52536ff",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/README.md": "2e5bf966b162bf4c63c8fdb0e3350fb334e0983cb5d09006f9d2a9f5090b77cf",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/SCALE_RESULTS.json": "d32d0e5b9bb0757e03e64f1168aed027b35cef8fb7f5f0f0555b2b7e37859397",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/amplitude_first_jet.py": "0f0a4f2aa79f3a741d6117ea4aea789d73c24f6024f83e7125d380e70fc1f0b1",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/causal_first_source.py": "7a4284a6ebf33ac643d266ffcdca887089a3c322f3323f2327f88cbec3117992",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/preparation_domain.py": "3d11fc62d97c3a2eaa59a7bae308286f002072a2ee313ae3ddb15c2009439f00",
+    "02_REGISTRY/research/sources/d0_ghz_joint_first_jet_2026-10-17/scale_balance.py": "746c1b9a961977ceac1931fa26024e0e7856132d16590fdb674de5b568409447"
+  },
+  "source_ref": "caa90af1f67a06dab46704c80031ad98a2de699b",
+  "sympy": "1.14.0"
+}

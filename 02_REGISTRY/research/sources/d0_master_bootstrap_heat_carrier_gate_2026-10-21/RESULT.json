@@ -1,0 +1,22 @@
+{
+  "check_count": 8,
+  "conditional_capstone": {
+    "all42_configured_roots_are_full_bootstrap_roots": true,
+    "assumption": "Book03 heat carrier = fixed archive Laplacian on GR execution",
+    "full_field_source": "D B_N = D J_loc = C_* D S_h"
+  },
+  "heat_source_H01": {
+    "core_archive_fixed_level": "0",
+    "difference": "128/9",
+    "moving_soldered": "128/9"
+  },
+  "moving_hodge_gate": {
+    "required_feedback_source_H01": "-128/9"
+  },
+  "scope": {
+    "GR_closed": false,
+    "book03_heat_carrier_identified_on_GR_execution": false,
+    "physical_common_execution_admitted": false
+  },
+  "status": "PASS"
+}

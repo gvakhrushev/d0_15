@@ -1,0 +1,1813 @@
+{
+  "schema": "d0-gr-self-contained-ai-handoff/1",
+  "research_not_certification": true,
+  "repo": "gvakhrushev/d0_15",
+  "source_commit": "7bfd569c151470d2a17e8a2b6d2707ec708d7803",
+  "source_pr": 334,
+  "source_branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "origin_tree_nodes": 7446,
+  "origin_blob_count": 6662,
+  "origin_primary_research_md_count": 865,
+  "inclusion_policy": "ALL Oct22 top-level results + 105 ranked high-leverage older primary results + 10 full original BOOKS + original complete Julia CAR16, unpadded42, Book uniform, next-tick, Poisson, Q8/scenes and selected exact checkers + integrator spine; exact original paths and blob SHAs retained",
+  "counts": {
+    "all_2026_10_22_docs": 79,
+    "ranked_older_docs": 105,
+    "full_books": 10,
+    "proof_source_scripts_and_certificates": 56,
+    "integrator_and_route": 6,
+    "unique_source_blobs": 255,
+    "primary_bytes": 6630051
+  },
+  "files": [
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ACTUAL_GOLDEN_ADDRESS_FISHER_VS_FULL_BOOK_SOURCE_DILUTION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ACTUAL_GOLDEN_ADDRESS_FISHER_VS_FULL_BOOK_SOURCE_DILUTION_2026_10_22.md",
+      "git_blob_sha": "c8cf01e77b273134a8be5a31fe992f33e15d0cb3",
+      "size_bytes": 29953,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ACTUAL_INTEGER_AF_PF_SPATIAL_LIFT_OF_CERTIFIED_H4_SOURCE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ACTUAL_INTEGER_AF_PF_SPATIAL_LIFT_OF_CERTIFIED_H4_SOURCE_2026_10_22.md",
+      "git_blob_sha": "2ad97b482d60c7c23ee75bdcbcd90bcbb76a9f33",
+      "size_bytes": 14769,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ADDRESS_EXTENSIVE_FORWARD_BOOK_CONTROLLER_SYNTHESIS_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ADDRESS_EXTENSIVE_FORWARD_BOOK_CONTROLLER_SYNTHESIS_2026_10_22.md",
+      "git_blob_sha": "e484184ad8bf98de6eaf8ca3a4dbff0b1b9dbadf",
+      "size_bytes": 22376,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_ALL42_SOURCE_DESCENT_AND_COHERENT_SADDLE_SYNTHESIS_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_ALL42_SOURCE_DESCENT_AND_COHERENT_SADDLE_SYNTHESIS_2026_10_22.md",
+      "git_blob_sha": "ad989cc2fffb987fc2094a3f1290b28b22976cb2",
+      "size_bytes": 18674,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_FINITE_ALGEBRAIC_FULL_SOURCE_PUISEUX_GATE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_FINITE_ALGEBRAIC_FULL_SOURCE_PUISEUX_GATE_2026_10_22.md",
+      "git_blob_sha": "df8aebd7976ce7dcffaef7e1421ca3bf23a5246d",
+      "size_bytes": 12640,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_FULL_HEAT_MONODROMY_AND_GOLDEN_RARE_CAP_SOURCE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_FULL_HEAT_MONODROMY_AND_GOLDEN_RARE_CAP_SOURCE_2026_10_22.md",
+      "git_blob_sha": "cc929b4e4c9255e9e4baba4ea0a6609d7e0487c8",
+      "size_bytes": 15767,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_GLOBAL_WEIGHTED_SCENE_BALANCE_AND_REPORT_BRIDGE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_GLOBAL_WEIGHTED_SCENE_BALANCE_AND_REPORT_BRIDGE_2026_10_22.md",
+      "git_blob_sha": "b9353a6545ec96e77fe19eb6892136f30cf5a253",
+      "size_bytes": 20202,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_STAGE_CLOCK_INTERNAL_CUT_NECESSITY_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_STAGE_CLOCK_INTERNAL_CUT_NECESSITY_2026_10_22.md",
+      "git_blob_sha": "7ed483d072d88efaca1b768a12ecf0704070ce66",
+      "size_bytes": 14330,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_COMPLETE_NATIVE_FIRST_MATCH_ENTROPIC_POISSON_PREPARATION_AND_HESSIAN_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_COMPLETE_NATIVE_FIRST_MATCH_ENTROPIC_POISSON_PREPARATION_AND_HESSIAN_2026_10_22.md",
+      "git_blob_sha": "789e495d670ac2c5e8d880652a8924d2bf399877",
+      "size_bytes": 27133,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_CONCURRENT_BOOK_SOURCE_HANDOFF_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_CONCURRENT_BOOK_SOURCE_HANDOFF_2026_10_22.md",
+      "git_blob_sha": "85b12de5b5f64a7300b57edbe15c4e63e85593d4",
+      "size_bytes": 9674,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_DMIN_SADDLE_VERIFICATION_CLOSURE_FORK_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_DMIN_SADDLE_VERIFICATION_CLOSURE_FORK_2026_10_22.md",
+      "git_blob_sha": "85c4de5abcad717f4af041369ba3dd1fe6430cc2",
+      "size_bytes": 10601,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXACT_FULL42_OPEN_PF_COLLAR_BRANCH_AND_CONTINUOUS_BOOK_RESIDUAL_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXACT_FULL42_OPEN_PF_COLLAR_BRANCH_AND_CONTINUOUS_BOOK_RESIDUAL_2026_10_22.md",
+      "git_blob_sha": "a1908dcb8c57aef4133f503e47550bc65b3ee292",
+      "size_bytes": 15693,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXACT_UNPADDED_NATIVE_GOLDEN_ALL42_NONFLAT_ROOT_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXACT_UNPADDED_NATIVE_GOLDEN_ALL42_NONFLAT_ROOT_2026_10_22.md",
+      "git_blob_sha": "2ea43990e397d26c4875f4ded377ace7cdc7a118",
+      "size_bytes": 13469,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXPLICIT_K100M_FINITE_RENEWAL_HJR_FULL42_ROOT_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXPLICIT_K100M_FINITE_RENEWAL_HJR_FULL42_ROOT_2026_10_22.md",
+      "git_blob_sha": "62ceff2f769703b84d473cd50dad36d7ea4ed6bc",
+      "size_bytes": 15914,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FIRST_MATCH_GOAL_CLOCK_TWO_ARCHIVES_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_FIRST_MATCH_GOAL_CLOCK_TWO_ARCHIVES_2026_10_22.md",
+      "git_blob_sha": "5997d34aee352ba7a6a8e18d00366b44e66be9cf",
+      "size_bytes": 18567,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FIRST_MATCH_WALD_NATIVE_INFORMATION_FULL_SOURCE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_FIRST_MATCH_WALD_NATIVE_INFORMATION_FULL_SOURCE_2026_10_22.md",
+      "git_blob_sha": "024f08ae4b28fe4c5bc5eef536aa9fb8c5e9d515",
+      "size_bytes": 50225,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FIXED_CYCLIC_TESTS_PREPARED_BOOK_SOURCE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_FIXED_CYCLIC_TESTS_PREPARED_BOOK_SOURCE_2026_10_22.md",
+      "git_blob_sha": "8941a48b3a5b342a3249fdd92b13777734fb7237",
+      "size_bytes": 19814,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FULL42_RIGOROUS_INTERVAL_NONFLAT_N1_ROOT_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_FULL42_RIGOROUS_INTERVAL_NONFLAT_N1_ROOT_2026_10_22.md",
+      "git_blob_sha": "b2346f3dc010178853960d21b7bc337ce0afbd60",
+      "size_bytes": 17464,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FULL_N1_NATIVE_TEMPORAL_GAUGE_QUOTIENT_MULTISLAB_ROOTS_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_FULL_N1_NATIVE_TEMPORAL_GAUGE_QUOTIENT_MULTISLAB_ROOTS_2026_10_22.md",
+      "git_blob_sha": "b5cd403ab40634cd301b0e6a347db1e349c52bd3",
+      "size_bytes": 19549,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FUTURE_ALGEBRA_CANONICAL_PINCHING_OFFNULL_CQ_SOURCE_WELD_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_FUTURE_ALGEBRA_CANONICAL_PINCHING_OFFNULL_CQ_SOURCE_WELD_2026_10_22.md",
+      "git_blob_sha": "8dc9daea0d95292c46c0753739bb8a746834a85f",
+      "size_bytes": 22175,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FUTURE_THREE_ATOM_ARCHIVE_MUTUAL_INFORMATION_GR_SYNTHESIS_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_FUTURE_THREE_ATOM_ARCHIVE_MUTUAL_INFORMATION_GR_SYNTHESIS_2026_10_22.md",
+      "git_blob_sha": "03472271ec03654caf5ca5927ca2b02705d6619c",
+      "size_bytes": 28465,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_ADDRESSED_RARE_CLOCK_SHARP_C1_THRESHOLD_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_ADDRESSED_RARE_CLOCK_SHARP_C1_THRESHOLD_2026_10_22.md",
+      "git_blob_sha": "11b12fcfb1927525bf89f1419c23ca8610b4d0c2",
+      "size_bytes": 10539,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_BOOK_RENEWAL_UNIFICATION_AND_RANK_FLOOR_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_BOOK_RENEWAL_UNIFICATION_AND_RANK_FLOOR_2026_10_22.md",
+      "git_blob_sha": "b2f07b1dfa86a421b105badad4ff1d2fd035401f",
+      "size_bytes": 19514,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_COST_CUT_CLOCK_MARKED_PROSPECTIVE_GATE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_COST_CUT_CLOCK_MARKED_PROSPECTIVE_GATE_2026_10_22.md",
+      "git_blob_sha": "190c2eeba25bd2cc81ff8464c3c3d08433924e80",
+      "size_bytes": 27585,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_MAXENT_LEGENDRE_MICROSELECTION_AND_STRICT_BOOK42_REACTION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_MAXENT_LEGENDRE_MICROSELECTION_AND_STRICT_BOOK42_REACTION_2026_10_22.md",
+      "git_blob_sha": "b995b283993c978805a0fd207f147888eb875d6f",
+      "size_bytes": 20813,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_HARMONIC_FIRSTMATCH_NATIVE_BOOK_INFO_SOURCE_SYNTHESIS_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_HARMONIC_FIRSTMATCH_NATIVE_BOOK_INFO_SOURCE_SYNTHESIS_2026_10_22.md",
+      "git_blob_sha": "59f9ac1e9c2077f13a8dfab1b1f75ec90acb780f",
+      "size_bytes": 13781,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_JONES34_GOLDEN_PAID_PRECISION_AND_INPUT_SCREENING_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_JONES34_GOLDEN_PAID_PRECISION_AND_INPUT_SCREENING_2026_10_22.md",
+      "git_blob_sha": "3a5d10b7d4b7458a8e6bebfe299c0f1f6522d289",
+      "size_bytes": 22958,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_K585M_FINITE_RENEWAL_HJR_ROOT_EFFICIENT_ALL42_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_K585M_FINITE_RENEWAL_HJR_ROOT_EFFICIENT_ALL42_2026_10_22.md",
+      "git_blob_sha": "c1115252e2edbbc1f2f3dc3ce795f25c677dca5b",
+      "size_bytes": 12250,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_MARKED_HISTORY_SOURCE_AND_BOOK_SELECTION_GATE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_MARKED_HISTORY_SOURCE_AND_BOOK_SELECTION_GATE_2026_10_22.md",
+      "git_blob_sha": "d775cc704ee483c549c437244385478377994722",
+      "size_bytes": 12367,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_MOVING_PREPARED_CUT_GOLDEN_BOOK_SOURCE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_MOVING_PREPARED_CUT_GOLDEN_BOOK_SOURCE_2026_10_22.md",
+      "git_blob_sha": "94384a1cdb07b3c88e3736f62e5a5df258835e3a",
+      "size_bytes": 23854,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md",
+      "git_blob_sha": "84bf80e94c3d4fc672bd11b1f3322da9c1e9116f",
+      "size_bytes": 14741,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_CORRELATED_RETURN_MODULAR_HEAT_COMPATIBILITY_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_CORRELATED_RETURN_MODULAR_HEAT_COMPATIBILITY_2026_10_22.md",
+      "git_blob_sha": "232eb65452134a51fd07263c9e9b46263bb23234",
+      "size_bytes": 39686,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_FULL128_GOLDEN_POLYNOMIAL_HERALDED_FORWARD_ECHO_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_FULL128_GOLDEN_POLYNOMIAL_HERALDED_FORWARD_ECHO_2026_10_22.md",
+      "git_blob_sha": "670b9e204c25a32b2b1f5d8039e00b7c17c4733b",
+      "size_bytes": 23556,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_FULL128_NEXT_TICK_THREE_MODE_BOOK_HODGE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_FULL128_NEXT_TICK_THREE_MODE_BOOK_HODGE_2026_10_22.md",
+      "git_blob_sha": "094fb5ca2b2a4abea9549ae4802c403958327680",
+      "size_bytes": 18867,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md",
+      "git_blob_sha": "3a17ab2819b180d63197d7591a95b20e45354a2b",
+      "size_bytes": 14718,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_FUTURE_KRYLOV_BOOK_INNOVATION_AND_GOLDEN_CYLINDER_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_FUTURE_KRYLOV_BOOK_INNOVATION_AND_GOLDEN_CYLINDER_2026_10_22.md",
+      "git_blob_sha": "27186c570448c2cd2ee959456bde7e3078a1c126",
+      "size_bytes": 18974,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHOI_QUANTUM_MEMORY_TEN_TWENTY_CAR130_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHOI_QUANTUM_MEMORY_TEN_TWENTY_CAR130_2026_10_22.md",
+      "git_blob_sha": "5c5ed7f2d9b75512ed805082a538b13734c59c2f",
+      "size_bytes": 28496,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_MINIMAL_QUERY_C2_OFFNULL_PALATINI_FISHER_CRITICAL4_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_MINIMAL_QUERY_C2_OFFNULL_PALATINI_FISHER_CRITICAL4_2026_10_22.md",
+      "git_blob_sha": "13102b27983e66131983872e58838b78f414da61",
+      "size_bytes": 19259,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_PF_C2_TWO_CAR_SLAB_SCHUR_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PF_C2_TWO_CAR_SLAB_SCHUR_2026_10_22.md",
+      "git_blob_sha": "2cc3bd572473c6cb77f034c930592c82dbd1425c",
+      "size_bytes": 14245,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_MINIMAL_REFLECTION_TWO_TICK_INFORMATION_WARD_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_MINIMAL_REFLECTION_TWO_TICK_INFORMATION_WARD_2026_10_22.md",
+      "git_blob_sha": "fa686e01f1a93cedfd6d6b8a778f203fe013bb05",
+      "size_bytes": 18326,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_N1_ORIGINAL_GOLDEN_MATERIAL_FLUX_DIRICHLET_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_N1_ORIGINAL_GOLDEN_MATERIAL_FLUX_DIRICHLET_2026_10_22.md",
+      "git_blob_sha": "e0ffdb826e09550db19a40a7715a8032e85e47e8",
+      "size_bytes": 12710,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_N1_TWO_CAR_RANK2_BORDER_GEOMETRIC_SCHUR_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_N1_TWO_CAR_RANK2_BORDER_GEOMETRIC_SCHUR_2026_10_22.md",
+      "git_blob_sha": "a4a77ea01f9f9146458174902228c07e1424a486",
+      "size_bytes": 13337,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_POINTER_JOIN_AND_MEASURED_READY_BOOK_GATE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_POINTER_JOIN_AND_MEASURED_READY_BOOK_GATE_2026_10_22.md",
+      "git_blob_sha": "bcedd8215995bc9bfce01006c44805ea47d533fb",
+      "size_bytes": 10829,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_SELECTION_FORK_Q8_FUTURE_CUT_AND_MINIMAL_GOLDEN_REPORT_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_SELECTION_FORK_Q8_FUTURE_CUT_AND_MINIMAL_GOLDEN_REPORT_2026_10_22.md",
+      "git_blob_sha": "be6ff5416c59b0fd5e5f2719a9d1ecdfb09580af",
+      "size_bytes": 17325,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md",
+      "git_blob_sha": "5ff1307e3fe37eb2aa855516c452e89b8f790b5a",
+      "size_bytes": 17879,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_TEMPORAL_GAUSS_PROPAGATION_AND_WILSON_COLLAR_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_TEMPORAL_GAUSS_PROPAGATION_AND_WILSON_COLLAR_2026_10_22.md",
+      "git_blob_sha": "f14dd12a9f7a74189867b94b3128d83ff503254f",
+      "size_bytes": 14914,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_TWO_CAR_FLUX_ROUTH_FINITE_REDUCTION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_TWO_CAR_FLUX_ROUTH_FINITE_REDUCTION_2026_10_22.md",
+      "git_blob_sha": "6de31c9354d94d8b57de6ff30098e9d3dfda1f34",
+      "size_bytes": 20765,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NONCOMMUTING_TEMPORAL_HOLONOMY_SLAB_EXACT_COKERNEL_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_NONCOMMUTING_TEMPORAL_HOLONOMY_SLAB_EXACT_COKERNEL_2026_10_22.md",
+      "git_blob_sha": "bec44dffddd0994226c32c79545ab647f9717258",
+      "size_bytes": 9122,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_OFF_NULL_FISHER_RANK1_SECOND_JET_41D_GEOMETRIC_HESSIAN_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_OFF_NULL_FISHER_RANK1_SECOND_JET_41D_GEOMETRIC_HESSIAN_2026_10_22.md",
+      "git_blob_sha": "a6deb5240f23b127d3f4a269ac03bd6c77e62fb1",
+      "size_bytes": 8501,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_OFF_NULL_TWO_CHANNEL_BOOK_SOURCE_RIGIDITY_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_OFF_NULL_TWO_CHANNEL_BOOK_SOURCE_RIGIDITY_2026_10_22.md",
+      "git_blob_sha": "6dc23be26cd1ad24810a4a1678a18559b55a6908",
+      "size_bytes": 8095,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_BOOK_THERMAL_WARD_OBSTRUCTION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_BOOK_THERMAL_WARD_OBSTRUCTION_2026_10_22.md",
+      "git_blob_sha": "c334bf987f704302d24a4e24b0e0c90494f631f5",
+      "size_bytes": 23070,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_CANONICAL_HOUSEHOLDER_AND_MEASURED_COHERENCE_WALL_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_CANONICAL_HOUSEHOLDER_AND_MEASURED_COHERENCE_WALL_2026_10_22.md",
+      "git_blob_sha": "bfcd06511eab6544b58ea428c61425428dc48d50",
+      "size_bytes": 32524,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_COHERENT_VS_REGISTERED_CHOI_INFORMATION_SOURCE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_COHERENT_VS_REGISTERED_CHOI_INFORMATION_SOURCE_2026_10_22.md",
+      "git_blob_sha": "6a5abd6d5d0c9558600846ae043b66ab59f672c1",
+      "size_bytes": 16996,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_FORWARD_ONLY_FIXED_INPUT_HODGE_CLOCK_THEOREM_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_FORWARD_ONLY_FIXED_INPUT_HODGE_CLOCK_THEOREM_2026_10_22.md",
+      "git_blob_sha": "c5ad7e9aae75c602c11915b95c63bfab24ee55c8",
+      "size_bytes": 17108,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_POINTER_SUPPORT_BOOK_COMPLETION_SELECTION_THEOREM_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_POINTER_SUPPORT_BOOK_COMPLETION_SELECTION_THEOREM_2026_10_22.md",
+      "git_blob_sha": "573b2c7ad4f6631462088a995cfd9dff5b9635cc",
+      "size_bytes": 18857,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_QSVT_BOUNDED_ECHO_AND_SOURCE_CANCELLATION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_QSVT_BOUNDED_ECHO_AND_SOURCE_CANCELLATION_2026_10_22.md",
+      "git_blob_sha": "be8779f9e09b4cdbd24f7ccc650e30ce2f0f17fa",
+      "size_bytes": 25176,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_SINGLE_BOOST_HERALDED_JULIA_AND_GALOIS_COMPILER_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_SINGLE_BOOST_HERALDED_JULIA_AND_GALOIS_COMPILER_2026_10_22.md",
+      "git_blob_sha": "500ddc8b3abd072a30eca890402cc1174efc39d8",
+      "size_bytes": 25912,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md",
+      "git_blob_sha": "07d5262e53d5bd7588febe0603f2023d0788d11b",
+      "size_bytes": 19527,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_TWO_BLANK_RECURSION_COMPLETE_BOOK_HODGE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_TWO_BLANK_RECURSION_COMPLETE_BOOK_HODGE_2026_10_22.md",
+      "git_blob_sha": "60bfd44df9e67d26031979e14e93acf7cb45938d",
+      "size_bytes": 24502,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_FUTURE_THREE_ATOM_BOOK_SOURCE_AND_FINE_LIMIT_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_FUTURE_THREE_ATOM_BOOK_SOURCE_AND_FINE_LIMIT_2026_10_22.md",
+      "git_blob_sha": "820455aa095a70280836578fb4661e0d0e45a7cb",
+      "size_bytes": 20758,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_PF_ALL_ORDER_SUPERALGEBRAIC_FINITE_EINSTEIN_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_PF_ALL_ORDER_SUPERALGEBRAIC_FINITE_EINSTEIN_2026_10_22.md",
+      "git_blob_sha": "2d5198b501159595d8099ffbd87247ea7395ede3",
+      "size_bytes": 12455,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_PF_DISCRETE_C2_REGULARITY_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_PF_DISCRETE_C2_REGULARITY_2026_10_22.md",
+      "git_blob_sha": "59f1dd791bcdbc25dac439b3b8b22ee5d2852850",
+      "size_bytes": 4669,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COHERENT_BOOK_FULL42_BRIDGE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COHERENT_BOOK_FULL42_BRIDGE_2026_10_22.md",
+      "git_blob_sha": "35134d3a536450442267cda276028ec780329544",
+      "size_bytes": 19485,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_OLDRIGHT_ARCHIVE_FREDHOLM_INFORMATION_AND_TWO_STAGE_GATE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_OLDRIGHT_ARCHIVE_FREDHOLM_INFORMATION_AND_TWO_STAGE_GATE_2026_10_22.md",
+      "git_blob_sha": "c2e897caa3416694c71bc6ddf1c3942f76e856ff",
+      "size_bytes": 29761,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_0_10_FULL42_SOURCE_ROBUSTNESS_2026_10_22.md",
+      "git_blob_sha": "5c3062a9ce151d754b81b7bad01ea69600d269f3",
+      "size_bytes": 6734,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_N1_J2_ALL42_BRINKMANN_WELD_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_UNPADDED_N1_J2_ALL42_BRINKMANN_WELD_2026_10_22.md",
+      "git_blob_sha": "3750cc13e7a82b75bd6a65c15994b96b38476182",
+      "size_bytes": 19945,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PAID_GOLDEN_EQUAL_TIME_MEASURED_CQ_SOURCE_AND_FIRST_MATCH_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_PAID_GOLDEN_EQUAL_TIME_MEASURED_CQ_SOURCE_AND_FIRST_MATCH_2026_10_22.md",
+      "git_blob_sha": "7be46154c02553aad6acad9de71d34a9b7450cb6",
+      "size_bytes": 25029,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_Q8_COHERENT_PROGRAM_NATIVE_BOOK42_SOURCE_FORK_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_Q8_COHERENT_PROGRAM_NATIVE_BOOK42_SOURCE_FORK_2026_10_22.md",
+      "git_blob_sha": "807747c83694302082a107117c67f0191295d3a2",
+      "size_bytes": 15673,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_Q8_PAID_ECHO_ARCHIVE_QND_SELECTION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_Q8_PAID_ECHO_ARCHIVE_QND_SELECTION_2026_10_22.md",
+      "git_blob_sha": "617f61d34487a21be5cd5ed6422bce5a5172f759",
+      "size_bytes": 15805,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_Q8_RETAINED_WORK_COHERENCE_TEST_ALGEBRA_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_Q8_RETAINED_WORK_COHERENCE_TEST_ALGEBRA_2026_10_22.md",
+      "git_blob_sha": "a3b35d5ac320c3c3c936ad8491feb449978a0eb4",
+      "size_bytes": 10202,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_RENEWAL_GIBBS_HEAT_AND_NATIVE_NONLINEAR_ENTROPY_BRIDGE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_RENEWAL_GIBBS_HEAT_AND_NATIVE_NONLINEAR_ENTROPY_BRIDGE_2026_10_22.md",
+      "git_blob_sha": "d88ac633a8b1d8ac94cf94e5204e8cd7477180ed",
+      "size_bytes": 30004,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_SINGLE_MEAN_REPORT_CRITICAL_MANIFOLD_NO_GO_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_SINGLE_MEAN_REPORT_CRITICAL_MANIFOLD_NO_GO_2026_10_22.md",
+      "git_blob_sha": "e948baefc7868d6af13411cff9a023e60871fec6",
+      "size_bytes": 11869,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_STRATEGIC_BOOK_OBSERVABILITY_VS_SELECTION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_STRATEGIC_BOOK_OBSERVABILITY_VS_SELECTION_2026_10_22.md",
+      "git_blob_sha": "d2fc28624a935aa49ae459a1f579a54ea11e2c2c",
+      "size_bytes": 22067,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_TENSOR_PAIRED_BOOK_COMMON_CONTROLLER_STATIONARITY_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_TENSOR_PAIRED_BOOK_COMMON_CONTROLLER_STATIONARITY_2026_10_22.md",
+      "git_blob_sha": "c6370aa567760bf263c351050ebe0e70ee990cdc",
+      "size_bytes": 14480,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_TWO_BAND_NATIVE_REPORT_SPECTRAL_SOURCE_INTERPOLATION_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_TWO_BAND_NATIVE_REPORT_SPECTRAL_SOURCE_INTERPOLATION_2026_10_22.md",
+      "git_blob_sha": "e7e242f9ed995f8910bfa88e22ac6c03da468621",
+      "size_bytes": 12501,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_TWO_REPORT_MEAN_COLLISION_SUFFICIENCY_AND_NATIVE_COST_WALL_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_TWO_REPORT_MEAN_COLLISION_SUFFICIENCY_AND_NATIVE_COST_WALL_2026_10_22.md",
+      "git_blob_sha": "1d381b8ba6b53d81c93db303b03138471298b7e1",
+      "size_bytes": 10256,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_UNPADDED_GOLDEN_N1_CONSTITUTIVE_LEGENDRE_COMPLETE_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_UNPADDED_GOLDEN_N1_CONSTITUTIVE_LEGENDRE_COMPLETE_2026_10_22.md",
+      "git_blob_sha": "4f081ff7925b6fa2c3625ae78966929444aeff10",
+      "size_bytes": 19529,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_UNPADDED_N1_TWO_SECTOR_EINSTEIN_PF_UNIVERSALITY_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_UNPADDED_N1_TWO_SECTOR_EINSTEIN_PF_UNIVERSALITY_2026_10_22.md",
+      "git_blob_sha": "2e7d93abb6a8f77c85299a27e63f5182a5dedf17",
+      "size_bytes": 16336,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_WHOLE_HISTORY_MARKED_PRESSURE_RENEWAL_GR_SYNTHESIS_2026_10_22.md",
+      "origin_path": "02_REGISTRY/research/A4D_WHOLE_HISTORY_MARKED_PRESSURE_RENEWAL_GR_SYNTHESIS_2026_10_22.md",
+      "git_blob_sha": "011dd2c12b30b7a1317f93672d069114e4371e49",
+      "size_bytes": 16935,
+      "role": "recent_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_LITERAL_GOLDEN_M1_FUTURE_MDL_Q8_ORDER_PORT_TYPED_BRIDGE_2026_10_20.md",
+      "git_blob_sha": "43695d1f0d05f66fd0125fd283cbd6292c913909",
+      "size_bytes": 24294,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_PF_DISCRETE_C2_REGULARITY_AND_RANK2_MATERIAL_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_PF_DISCRETE_C2_REGULARITY_AND_RANK2_MATERIAL_SOURCE_2026_10_21.md",
+      "git_blob_sha": "28dc837c770a6e4cfe1e6475df52167c0b3fb099",
+      "size_bytes": 15032,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md",
+      "git_blob_sha": "54f73a2fb041a647b015d17ea07cccf153f385a8",
+      "size_bytes": 14469,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md",
+      "git_blob_sha": "c1a67ea58313a78ded234b69216b23c5c17c986e",
+      "size_bytes": 18676,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+      "git_blob_sha": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+      "size_bytes": 59540,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PF_C2_AND_MATERIAL_FLUX_2026_10_21.md",
+      "git_blob_sha": "d7663f3a6e153b771090bbb42d38af057263d00c",
+      "size_bytes": 23554,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_REALIZATION_CLOSURE.md",
+      "git_blob_sha": "85c5f0c0f64fc433edae6629c9fde9d2c183f106",
+      "size_bytes": 95067,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_CONDITIONAL_BOOK_GOLDEN_INFO_Q8_SPIN_SHEET_SOURCE_SELECTOR_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_CONDITIONAL_BOOK_GOLDEN_INFO_Q8_SPIN_SHEET_SOURCE_SELECTOR_2026_10_20.md",
+      "git_blob_sha": "9bf83fcc63a295aa81a5c08ac62ee4edf8a76f30",
+      "size_bytes": 10479,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_PAID_COST_HERALD_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PAID_COST_HERALD_2026_10_21.md",
+      "git_blob_sha": "30c53eedcdb939db4c975946593a2f9aaa01e169",
+      "size_bytes": 12158,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK_Z3_GOLDEN_AF_EXACT_WEYL_COMPENSATOR_AND_ONSHELL_GR_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK_Z3_GOLDEN_AF_EXACT_WEYL_COMPENSATOR_AND_ONSHELL_GR_SOURCE_2026_10_20.md",
+      "git_blob_sha": "343f82c721d4bdae0bd861c605ddc9465372c38b",
+      "size_bytes": 24679,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_CAR16_REAL_SPIN13_Q8_GOLDEN_COHERENT_SHEET_BRIDGE_2026_10_20.md",
+      "git_blob_sha": "4f3f6bb3ee9515d3ef33b1d1b9c2f9c26c34c9c5",
+      "size_bytes": 25753,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_COMPOSED_FEEDBACK_DYNAMICS.md",
+      "git_blob_sha": "e7f23335c12e804edd016b9094798bba26d208a6",
+      "size_bytes": 73676,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_M1_MINIMAL_GENERATOR_FUTURE_CONTEXT_ARCHIVE_Q8_SPIN_UNIVERSALITY_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_M1_MINIMAL_GENERATOR_FUTURE_CONTEXT_ARCHIVE_Q8_SPIN_UNIVERSALITY_2026_10_20.md",
+      "git_blob_sha": "63de39db4b8cd3f569db2849757ece56c20c562c",
+      "size_bytes": 17567,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_M1_NATIVE_Q8_ORDER_MDL_COST_FINITE_POPPERIAN_SPIN_ASSAY_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_M1_NATIVE_Q8_ORDER_MDL_COST_FINITE_POPPERIAN_SPIN_ASSAY_2026_10_20.md",
+      "git_blob_sha": "88e20b70864c52ee531a956c92b523b09217d837",
+      "size_bytes": 18438,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_M1_PROSPECTIVE_VERIFIABILITY_FORCES_SPIN_TEST_GAUGE_MINIMAL_Q8_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_M1_PROSPECTIVE_VERIFIABILITY_FORCES_SPIN_TEST_GAUGE_MINIMAL_Q8_2026_10_20.md",
+      "git_blob_sha": "ca6002100935281d3ce3895902614137411438b7",
+      "size_bytes": 17800,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_M1_Q8_FULL_HISTORY_VS_MINIMAL_ENDPOINT_PROGRAM_AND_PRICE_JET_NOGO_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_M1_Q8_FULL_HISTORY_VS_MINIMAL_ENDPOINT_PROGRAM_AND_PRICE_JET_NOGO_2026_10_20.md",
+      "git_blob_sha": "e36b3029c01b5ac52a728e5fc4968d1e260b11c1",
+      "size_bytes": 14954,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_CANONICAL_CONSTITUTIVE_GERM_SYNTHESIS.md",
+      "origin_path": "02_REGISTRY/research/A4D_CANONICAL_CONSTITUTIVE_GERM_SYNTHESIS.md",
+      "git_blob_sha": "a9dbb0dc864df6f429caecaddc06264efca5a773",
+      "size_bytes": 30069,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_M1_PHYSICAL_SELECTOR_GOLDEN17_FULL8440_ROLE384_COST_INFO_CODE_ENVELOPE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_M1_PHYSICAL_SELECTOR_GOLDEN17_FULL8440_ROLE384_COST_INFO_CODE_ENVELOPE_2026_10_20.md",
+      "git_blob_sha": "3068996e73e5bd3d451006e2d5b0577e445cff7b",
+      "size_bytes": 20906,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+      "origin_path": "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md",
+      "git_blob_sha": "3c41616d2f4f5fa7c0b5085188eae2e505f9f403",
+      "size_bytes": 27595,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_REVERSE_SOURCE_AND_PAID_PREPARATION_SYNTHESIS_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_REVERSE_SOURCE_AND_PAID_PREPARATION_SYNTHESIS_2026_10_21.md",
+      "git_blob_sha": "c376e8262fea9bbf543e089d195f2949580f4b0f",
+      "size_bytes": 39071,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_FULL_SOURCE_SELECTION_SYNTHESIS_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_FULL_SOURCE_SELECTION_SYNTHESIS_2026_10_20.md",
+      "git_blob_sha": "64529afb078d38895de6b0cf4c13c19fa6aa4396",
+      "size_bytes": 60301,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+      "origin_path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+      "git_blob_sha": "1c8d59e5533b443d9a015dc4512cfbc160ae7e62",
+      "size_bytes": 806835,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_FIRST_SOURCE_UNDERDETERMINATION_THEOREM_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_FIRST_SOURCE_UNDERDETERMINATION_THEOREM_2026_10_21.md",
+      "git_blob_sha": "ae4702e20fc57056213375b1e51f453abcf959a7",
+      "size_bytes": 11829,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_REAL_J23_SCENE_CAR_CONTROLLER_GATE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_REAL_J23_SCENE_CAR_CONTROLLER_GATE_2026_10_21.md",
+      "git_blob_sha": "804b57aa58ca3e467eba756dc8332304f7f51345",
+      "size_bytes": 10985,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_Q8_AF_SPINOR_RECORD_SEED.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_Q8_AF_SPINOR_RECORD_SEED.md",
+      "git_blob_sha": "23f95d61478f97113085cad36c154dbb8313cf0b",
+      "size_bytes": 14092,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PAID_RATIONAL_WRITER_DIAGONAL_FULL_CQ_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_PAID_RATIONAL_WRITER_DIAGONAL_FULL_CQ_SOURCE_2026_10_21.md",
+      "git_blob_sha": "d9390376a495302fbf5a2d19ca4b786676fd1a07",
+      "size_bytes": 18970,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_Q8_REAL_BOOK_SOURCE_INTERFACE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_Q8_REAL_BOOK_SOURCE_INTERFACE_2026_10_21.md",
+      "git_blob_sha": "cdcba021caff890d74f6931f2d04f02c3690d50e",
+      "size_bytes": 16887,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_Q8_SIGNED_MEMORY_PRESSURE_AND_GRAM_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_Q8_SIGNED_MEMORY_PRESSURE_AND_GRAM_SOURCE_2026_10_21.md",
+      "git_blob_sha": "6f0e3a368c1f073fdc2baa731132dd726794d39b",
+      "size_bytes": 12474,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_Q8_TEMPORAL_PHASE_COMPLETE_RETURN_INFO_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_Q8_TEMPORAL_PHASE_COMPLETE_RETURN_INFO_SOURCE_2026_10_21.md",
+      "git_blob_sha": "68e43f0020af71e499e7440c7e2a47de5b9f2291",
+      "size_bytes": 14586,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_TWO_LETTER_GOLDEN_COST_HERALD_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_TWO_LETTER_GOLDEN_COST_HERALD_SOURCE_2026_10_21.md",
+      "git_blob_sha": "6de06942c976776306ded66d610e7e73b2fbdac8",
+      "size_bytes": 17278,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_DERIVED_SCENE_J2_SOURCE_TRANSMISSION_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_DERIVED_SCENE_J2_SOURCE_TRANSMISSION_2026_10_21.md",
+      "git_blob_sha": "d6057607e3f328d5e0158f7fa9b22a3d2c60442f",
+      "size_bytes": 7861,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md",
+      "git_blob_sha": "ca270692ac312d369e6f6d17a9825cc30dac46cb",
+      "size_bytes": 3046,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md",
+      "git_blob_sha": "07fbeed5cb4a81bd6c5bcbcb640db5f9fc7b77db",
+      "size_bytes": 5328,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_FULL128_RECORD_QGT_AND_POLAR_TRANSPORT.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_FULL128_RECORD_QGT_AND_POLAR_TRANSPORT.md",
+      "git_blob_sha": "3b92deb81b24a6568ae84c717e9614b245569e2d",
+      "size_bytes": 25567,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_PREPARATION_AND_GOLDEN_OFFSHELL_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_PREPARATION_AND_GOLDEN_OFFSHELL_SOURCE_2026_10_21.md",
+      "git_blob_sha": "39b72b67a99a05ee570085f79fa1d3d225053bad",
+      "size_bytes": 4421,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+      "git_blob_sha": "a5b44f49ab429c543734b994f594d4ab7fab9679",
+      "size_bytes": 130628,
+      "role": "integrator"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md",
+      "git_blob_sha": "1eb92875e745bed2b72319ea9de64a3c41a9cc46",
+      "size_bytes": 24624,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md",
+      "git_blob_sha": "209ef1e9184b8aaf2b897e327b0f922ecb73eb9d",
+      "size_bytes": 9125,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_AF_GNS_LIVE_LEFT_GOLDEN_PREFIX_2026_10_19.md",
+      "origin_path": "02_REGISTRY/research/A4D_AF_GNS_LIVE_LEFT_GOLDEN_PREFIX_2026_10_19.md",
+      "git_blob_sha": "1fea93a51703d193b2755e9c96c3c7c67d8148ab",
+      "size_bytes": 13261,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXACT_GOLDEN_WRITER_PROJECTIVE_FIELD_OBSTRUCTION_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXACT_GOLDEN_WRITER_PROJECTIVE_FIELD_OBSTRUCTION_2026_10_21.md",
+      "git_blob_sha": "99d3ec3e3a3644008a83019b71d05863b64b0d19",
+      "size_bytes": 12086,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GLOBAL_GOLDEN_AF_VOLUME_FREE_CURVATURE_2026_10_17.md",
+      "origin_path": "02_REGISTRY/research/A4D_GLOBAL_GOLDEN_AF_VOLUME_FREE_CURVATURE_2026_10_17.md",
+      "git_blob_sha": "46371ffe8a31ba33e5a7d365cef430daf27c47e9",
+      "size_bytes": 16761,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_ARCHIVE_TIMESTAMP_PRICE_DEFECT_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_ARCHIVE_TIMESTAMP_PRICE_DEFECT_2026_10_21.md",
+      "git_blob_sha": "9b38166d0a2817b3e8afaac94beb1ba16eb40663",
+      "size_bytes": 13594,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_MINIMAL_GOLDEN_MODAL_PF_RETURN_AND_BOOK_AGGREGATION_SEAM_2026_10_19.md",
+      "origin_path": "02_REGISTRY/research/A4D_MINIMAL_GOLDEN_MODAL_PF_RETURN_AND_BOOK_AGGREGATION_SEAM_2026_10_19.md",
+      "git_blob_sha": "4f49bdc6d7b05a07a063dc4788d51452d578b826",
+      "size_bytes": 19930,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_BOOK03_CLOSURE_GATE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_CLOSURE_GATE_2026_10_21.md",
+      "git_blob_sha": "c1983781acdafdcbfb8339b3eed60ea43babcb6c",
+      "size_bytes": 14336,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_RECTANGULAR_CFL_AND_CAUSAL_TWO_SCALAR_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_RECTANGULAR_CFL_AND_CAUSAL_TWO_SCALAR_2026_10_21.md",
+      "git_blob_sha": "2c65a0cf74ee8c2802c71dfc331a672d4cc9bda7",
+      "size_bytes": 13539,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PAID_HISTORY_GIBBS_CYCLE_ACTION_BRIDGE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_PAID_HISTORY_GIBBS_CYCLE_ACTION_BRIDGE_2026_10_21.md",
+      "git_blob_sha": "6fc36bc162faa2ae79f536b1914c08e88f3ab225",
+      "size_bytes": 16736,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "git_blob_sha": "ba78731a8c55de18ad88a3fe7f65e071ffea0b65",
+      "size_bytes": 15959,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PROSPECTIVE_DMIN_Q8_SIX_GATE_AND_FIRST_BOOK_THREE_TICK_SPIN_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_PROSPECTIVE_DMIN_Q8_SIX_GATE_AND_FIRST_BOOK_THREE_TICK_SPIN_SOURCE_2026_10_20.md",
+      "git_blob_sha": "89fea249574f5cdc0de92d5ef3973f12e8760376",
+      "size_bytes": 12390,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.md",
+      "git_blob_sha": "63ddd1ce0c2811c807584c83b33a7b7cc97dc006",
+      "size_bytes": 16426,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_ALL_MESH_NONVACUUM_GR_RECOVERY_CAPSTONE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_ALL_MESH_NONVACUUM_GR_RECOVERY_CAPSTONE_2026_10_21.md",
+      "git_blob_sha": "109637ea668492d3afc7f556538f60253d0a571a",
+      "size_bytes": 4246,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_BORN_HALF_ENTROPY_AGGREGATION_GATE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_BORN_HALF_ENTROPY_AGGREGATION_GATE_2026_10_21.md",
+      "git_blob_sha": "b28856a6698a1ef66462f4110e9ffe610208e9a7",
+      "size_bytes": 5815,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK03_DERIVED_SCENE_NONLINEAR_CRITICAL_SET_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK03_DERIVED_SCENE_NONLINEAR_CRITICAL_SET_2026_10_21.md",
+      "git_blob_sha": "41f339d83d69fe68eec962a4582c3a3680ddb990",
+      "size_bytes": 4008,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_COMPLETE_BOOK_GOLDEN_SELF_CODE_STATIONARY_ENVELOPE_AND_ODD_GEOMETRY_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_COMPLETE_BOOK_GOLDEN_SELF_CODE_STATIONARY_ENVELOPE_AND_ODD_GEOMETRY_2026_10_20.md",
+      "git_blob_sha": "c2eb7bd59b16fe9871580fd7002110d80f9275fa",
+      "size_bytes": 21827,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md",
+      "git_blob_sha": "abc2ae09b0d9ca32b95b859eb0908034ecff4682",
+      "size_bytes": 2796,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_MEAN_INFO_FIBRE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_MEAN_INFO_FIBRE_2026_10_21.md",
+      "git_blob_sha": "f016ec7d951bed59bab74447e3944a68eb8aac2d",
+      "size_bytes": 5900,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_REPORT_TO_BOOK_FEEDBACK_ALL42_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_REPORT_TO_BOOK_FEEDBACK_ALL42_2026_10_21.md",
+      "git_blob_sha": "48f5b8925b22f43b8eb9c58a50773b3a9198d5f7",
+      "size_bytes": 5286,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ONE_8440_BOOK_CLOCK_ACCEPTANCE_GAUGE_AND_PAID_SOURCE_NONSELECTION_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_ONE_8440_BOOK_CLOCK_ACCEPTANCE_GAUGE_AND_PAID_SOURCE_NONSELECTION_2026_10_20.md",
+      "git_blob_sha": "5c4d7830580c99e0bfc7f7a31129885d32be898c",
+      "size_bytes": 20863,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_4D_STAR_FLAT_GOLDEN17_VERTICAL_MEMORY_OBSTRUCTION_AND_SOURCE_GATE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_4D_STAR_FLAT_GOLDEN17_VERTICAL_MEMORY_OBSTRUCTION_AND_SOURCE_GATE_2026_10_20.md",
+      "git_blob_sha": "861fb5d3ddf1528d3a2e9c58dfc9ccbbc45fdfbf",
+      "size_bytes": 22938,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PROSPECTIVE_STOPPED_GOLDEN_MINIMUM_SOURCE_REVERSAL_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_PROSPECTIVE_STOPPED_GOLDEN_MINIMUM_SOURCE_REVERSAL_2026_10_20.md",
+      "git_blob_sha": "b3acbdc5bb9e9dc4e4d27504d97fafbad5279642",
+      "size_bytes": 24199,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ACTION_QUANTUM_FLOOR_CP_SOURCE_GATE_AND_FULL128_INFO_ESCAPE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_ACTION_QUANTUM_FLOOR_CP_SOURCE_GATE_AND_FULL128_INFO_ESCAPE_2026_10_20.md",
+      "git_blob_sha": "b3a5111f1fcf91941622a25925187cd6a0d4e026",
+      "size_bytes": 17541,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BOOK_GOLDEN_PROJECTIVE_RADIAL_EINSTEIN_SCALE_WARD_DOUBLE_SCHUR_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_BOOK_GOLDEN_PROJECTIVE_RADIAL_EINSTEIN_SCALE_WARD_DOUBLE_SCHUR_2026_10_20.md",
+      "git_blob_sha": "f34dc4851515f963ed7abd94f1b318841ed2da58",
+      "size_bytes": 36722,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_COMPLETE_327_NONABELIAN_TRIANGLE_INVERSE_AND_2648_BOOK_GOLDEN_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_COMPLETE_327_NONABELIAN_TRIANGLE_INVERSE_AND_2648_BOOK_GOLDEN_SOURCE_2026_10_20.md",
+      "git_blob_sha": "fbab5a26696c08a9ca85ae51a4e57a5be96b2957",
+      "size_bytes": 12571,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXACT_GOLDEN_POSITIVE_BOOK_SCORE_ALL40_ORIGINAL_STAR_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXACT_GOLDEN_POSITIVE_BOOK_SCORE_ALL40_ORIGINAL_STAR_SOURCE_2026_10_20.md",
+      "git_blob_sha": "1a7271e03931529c6379a4ef46a7fc47dd0bc628",
+      "size_bytes": 12913,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FULL_ROLE_BIANCHI_WILSON_GOLDEN10_TRIANGLE_SOURCE_COMPLETENESS_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_FULL_ROLE_BIANCHI_WILSON_GOLDEN10_TRIANGLE_SOURCE_COMPLETENESS_2026_10_20.md",
+      "git_blob_sha": "7ba4fc64bcf11bf12de9ea7d805fc32d1dd2d55d",
+      "size_bytes": 11814,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GLOBAL_CHIRAL_GOLDEN_IR_EINSTEIN_HOLST_UNIVERSALITY_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_GLOBAL_CHIRAL_GOLDEN_IR_EINSTEIN_HOLST_UNIVERSALITY_2026_10_20.md",
+      "git_blob_sha": "5bc34aa525e2637e8d7dabfc93256bb6f0c415f6",
+      "size_bytes": 30246,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN17_COST_FLOOR_DOUBLE_WARD_NOGO_ON_REAL_ROLE4_BOOK8440_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN17_COST_FLOOR_DOUBLE_WARD_NOGO_ON_REAL_ROLE4_BOOK8440_2026_10_20.md",
+      "git_blob_sha": "74d88848a94747dc9dc90cde0835d75b5432963b",
+      "size_bytes": 18405,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_FULL128_PORT_SCREEN_THREE_HISTORY_PALATINI_MIXED_SOURCE_TEST_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_FULL128_PORT_SCREEN_THREE_HISTORY_PALATINI_MIXED_SOURCE_TEST_2026_10_20.md",
+      "git_blob_sha": "94b4ffe47f65db09506c0989fffa57444593abd3",
+      "size_bytes": 12026,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_COMPLEMENTARY_STOPPING_AND_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COMPLEMENTARY_STOPPING_AND_SOURCE_2026_10_20.md",
+      "git_blob_sha": "cf11b1068b3d1d1c61b9b3858f313148f9292f3d",
+      "size_bytes": 17981,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_PORT_DARK_METRIC_INFORMATION_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PORT_DARK_METRIC_INFORMATION_SOURCE_2026_10_20.md",
+      "git_blob_sha": "ea422a635eaa271390c9b079f123406bf1d46d00",
+      "size_bytes": 14044,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md",
+      "git_blob_sha": "ef9d9e5ed1287faaee67e1f69da820cdefc1581d",
+      "size_bytes": 15755,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "git_blob_sha": "f14cca26e8a2e3a937b489a66d5e4881938706f6",
+      "size_bytes": 18724,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PROSPECTIVE_DMIN_REVERSAL_SYMMETRY_CHIRAL_EULER_SOURCE_AND_GOLDEN17_INFORMATION_COST_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_PROSPECTIVE_DMIN_REVERSAL_SYMMETRY_CHIRAL_EULER_SOURCE_AND_GOLDEN17_INFORMATION_COST_2026_10_20.md",
+      "git_blob_sha": "fad4f7b2eecce2826eebfd99052cbe0787bc9584",
+      "size_bytes": 15100,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_Q8_SPIN_SHEET_327_TRIANGLE_INVERSE_AND_960_COHERENCE_GATES_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_Q8_SPIN_SHEET_327_TRIANGLE_INVERSE_AND_960_COHERENCE_GATES_2026_10_20.md",
+      "git_blob_sha": "8710f3b72cb6e75350be6ab10119a48a6bf59759",
+      "size_bytes": 18308,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md",
+      "git_blob_sha": "80446a3f19d91de3f0cca4bdec4794309aa74397",
+      "size_bytes": 46849,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FULL128_PORT_PRICE_SCREENED_METRIC_RECORD_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_FULL128_PORT_PRICE_SCREENED_METRIC_RECORD_SOURCE_2026_10_20.md",
+      "git_blob_sha": "5cf5701554fd4b22c95925380aacb3d5023072ee",
+      "size_bytes": 5652,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GLOBAL_327_GOLDEN17_SO2_HOLONOMY_INVERSE_FULLCAR528_FEEDBACK_Z2_BLINDNESS_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_GLOBAL_327_GOLDEN17_SO2_HOLONOMY_INVERSE_FULLCAR528_FEEDBACK_Z2_BLINDNESS_2026_10_20.md",
+      "git_blob_sha": "436c759171c32edc8b1ab4a146ef3df97e73ad58",
+      "size_bytes": 25938,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_DISCRETE_BLOWUP_CONDENSED_GR_2026_10_20.md",
+      "git_blob_sha": "bae5a11d0c14d6730d8b7a6191f828f1cace603d",
+      "size_bytes": 22726,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN17_COMPLETE_REVERSAL_Z2_SOURCE_SELECTOR_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN17_COMPLETE_REVERSAL_Z2_SOURCE_SELECTOR_2026_10_20.md",
+      "git_blob_sha": "ed5ad01cec75785aaba3301d030213b6d094bb2b",
+      "size_bytes": 7898,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_GOLDEN_COHERENT_BELL64_EXACT_P18_PROGRAMME_AND_BOOK_WORK_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COHERENT_BELL64_EXACT_P18_PROGRAMME_AND_BOOK_WORK_2026_10_20.md",
+      "git_blob_sha": "2c9db85f5b3ec66df10d888ab13bc088d2d949cf",
+      "size_bytes": 25876,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_FOUR_ARM_MIXED_COST_INFO_PALATINI_GATE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_FOUR_ARM_MIXED_COST_INFO_PALATINI_GATE_2026_10_20.md",
+      "git_blob_sha": "1ac9b12d85c02212e591f25f9bd8528b2eff1e77",
+      "size_bytes": 23628,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PRIMARY_FULL128_COMMON_RECORD_INFORMATION_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_PRIMARY_FULL128_COMMON_RECORD_INFORMATION_SOURCE_2026_10_20.md",
+      "git_blob_sha": "1cfa3d376c5c43d857a81925af900a428350bd05",
+      "size_bytes": 6139,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PRIMARY_PREPARED_CUT_PAID_FEEDBACK_SOURCE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_PRIMARY_PREPARED_CUT_PAID_FEEDBACK_SOURCE_2026_10_20.md",
+      "git_blob_sha": "4ec0cdbfbf468793d40ddd454a9743740f3fae7d",
+      "size_bytes": 3292,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "git_blob_sha": "de8341a8b33d53bd4b26e044a1560c47c51e2745",
+      "size_bytes": 26033,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md",
+      "origin_path": "02_REGISTRY/research/A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md",
+      "git_blob_sha": "f3e88a736869a0cc53ce69e31f42ff04781b2568",
+      "size_bytes": 36044,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md",
+      "origin_path": "02_REGISTRY/research/A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md",
+      "git_blob_sha": "8451737c146934efe6abf5c3c431bda55397f5a7",
+      "size_bytes": 32681,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md",
+      "git_blob_sha": "4bf62c58884fe06d9ff4f95d524a9e3471dde520",
+      "size_bytes": 18289,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_CURVED_REFERENCE128_FULL_HJR_PROTECTED_SOURCE_AND_PREPARATION_SADDLE_GATE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_CURVED_REFERENCE128_FULL_HJR_PROTECTED_SOURCE_AND_PREPARATION_SADDLE_GATE_2026_10_20.md",
+      "git_blob_sha": "78978a90da9db425fe3d8e19255372317d1cdfa7",
+      "size_bytes": 32199,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md",
+      "git_blob_sha": "596ea8c2c130bb8e0423b1cd17fb336ac651c989",
+      "size_bytes": 32847,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md",
+      "git_blob_sha": "91ecd208b346665f38f268d2e39d7dd16b57cab6",
+      "size_bytes": 38774,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN_CHOI_PROGRAMMED_JULIA_HERALDED_FULL_HISTORY_SOURCE_2026_10_19.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN_CHOI_PROGRAMMED_JULIA_HERALDED_FULL_HISTORY_SOURCE_2026_10_19.md",
+      "git_blob_sha": "31ffc38ea88d2054f392186569765e4a7ba771d9",
+      "size_bytes": 31270,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_GOLDEN17_CHERNOFF_PALATINI_DUALITY_AND_BOOK_CODE_GAIN_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_GOLDEN17_CHERNOFF_PALATINI_DUALITY_AND_BOOK_CODE_GAIN_2026_10_20.md",
+      "git_blob_sha": "4d4c7f47bc4972ccf2e3771cfc08aefc69b8ecc7",
+      "size_bytes": 11892,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_NATIVE_JONES_CAR16_TOP_GOLDEN_RELATIVE_PALATINI_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_NATIVE_JONES_CAR16_TOP_GOLDEN_RELATIVE_PALATINI_2026_10_20.md",
+      "git_blob_sha": "45cc0b3e6990f0b1504a9f8e29b8b785cad42018",
+      "size_bytes": 14386,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_ORIGINAL_FULL128_COMMON_METRIC10_LINK24_JONES_TOMOGRAPHY_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_ORIGINAL_FULL128_COMMON_METRIC10_LINK24_JONES_TOMOGRAPHY_2026_10_20.md",
+      "git_blob_sha": "7760b9c5a27b9fded536cbcdce3556121bf6d560",
+      "size_bytes": 11298,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_PROSPECTIVE_DMIN_PHYSICAL_SELECTION_BEFORE_EXECUTION_AND_Q8_MINIMAL_3_GATE_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_PROSPECTIVE_DMIN_PHYSICAL_SELECTION_BEFORE_EXECUTION_AND_Q8_MINIMAL_3_GATE_2026_10_20.md",
+      "git_blob_sha": "22cfb8a883e3105f040b8b64a9feb7087543191e",
+      "size_bytes": 19712,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_RANK2_PUREBOOST_NO_GO_AND_FULL_SOURCE_EXTENSION_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_RANK2_PUREBOOST_NO_GO_AND_FULL_SOURCE_EXTENSION_2026_10_21.md",
+      "git_blob_sha": "62184c8eb6536a1246ce0ca4ae965ab375f36446",
+      "size_bytes": 13641,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_RAW_JULIA_BLANK_SHARP_LEAF_POSTPROCESS_NOGO_2026_10_18.md",
+      "origin_path": "02_REGISTRY/research/A4D_RAW_JULIA_BLANK_SHARP_LEAF_POSTPROCESS_NOGO_2026_10_18.md",
+      "git_blob_sha": "b25f8d9acbe5650e713d4ba8b09969fb49ab8f98",
+      "size_bytes": 35849,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_VARIATIONAL_SELECTION_AND_NATIVE_CLOCK_SYNTHESIS_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_VARIATIONAL_SELECTION_AND_NATIVE_CLOCK_SYNTHESIS_2026_10_21.md",
+      "git_blob_sha": "8f8ff0fba64f5c8459c2d7a2085c4e5f28727cd0",
+      "size_bytes": 51028,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_AF_ACTUATOR_ELIMINATION_EINSTEIN_SOURCE_NO_GO_2026_10_17.md",
+      "origin_path": "02_REGISTRY/research/A4D_AF_ACTUATOR_ELIMINATION_EINSTEIN_SOURCE_NO_GO_2026_10_17.md",
+      "git_blob_sha": "9ca6336836748856f1a04f190e32299d77218767",
+      "size_bytes": 7255,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md",
+      "origin_path": "02_REGISTRY/research/A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md",
+      "git_blob_sha": "d3d3c08ef88c57d7c9fc75eb34e6d756516bdde3",
+      "size_bytes": 27974,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md",
+      "git_blob_sha": "734e21ae6bc04ff3446ad15858936d417fdd2e55",
+      "size_bytes": 26535,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md",
+      "git_blob_sha": "15a630f2a7b011c11e455cf9c65dbd37e7782741",
+      "size_bytes": 23013,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md",
+      "origin_path": "02_REGISTRY/research/A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md",
+      "git_blob_sha": "ca6ac14a98269936eecfaea46d64e6b7bf83ba64",
+      "size_bytes": 40209,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md",
+      "git_blob_sha": "562ccfa715ad814faec55f6b0641ee226dda2d88",
+      "size_bytes": 23639,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md",
+      "git_blob_sha": "407a143b3d91042da590e184537dd362ecb671f9",
+      "size_bytes": 27201,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/A4D_JOINT_PREPARATION_COMPILER_CLOCK_SYNTHESIS_2026_10_21.md",
+      "origin_path": "02_REGISTRY/research/A4D_JOINT_PREPARATION_COMPILER_CLOCK_SYNTHESIS_2026_10_21.md",
+      "git_blob_sha": "cf874e0874fe34820e059a45ba43521b98c89301",
+      "size_bytes": 42960,
+      "role": "historic_primary_proof"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "origin_path": "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md",
+      "git_blob_sha": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+      "size_bytes": 75761,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "origin_path": "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md",
+      "git_blob_sha": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
+      "size_bytes": 191652,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "origin_path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "git_blob_sha": "79ad345ddef6bb06c638f41721db1a84843e4a9b",
+      "size_bytes": 195678,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "origin_path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob_sha": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "size_bytes": 86193,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "origin_path": "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "git_blob_sha": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
+      "size_bytes": 186317,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "origin_path": "01_BOOKS/BOOK_05_VERIFICATION_STATUS_AND_CERTIFICATE_DISCIPLINE.md",
+      "git_blob_sha": "a3df94113827a7910f099c339438dc06418df810",
+      "size_bytes": 124442,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "origin_path": "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md",
+      "git_blob_sha": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "size_bytes": 141578,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "origin_path": "01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md",
+      "git_blob_sha": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
+      "size_bytes": 136051,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
+      "origin_path": "01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md",
+      "git_blob_sha": "86213324b651a5717b293308ba37a7555b9e6742",
+      "size_bytes": 103296,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/01_BOOKS/BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md",
+      "origin_path": "01_BOOKS/BOOK_09_GRAVITATIONAL_WAVES_AND_QUANTUM_INTERFEROMETRY.md",
+      "git_blob_sha": "0fa62a9c4b77901cd99e54143617b5656e5516aa",
+      "size_bytes": 10728,
+      "role": "foundation_book"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/PROOF.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/PROOF.md",
+      "git_blob_sha": "faac1bc80e25cfbcaba951f46b22b3ba1d9f3b84",
+      "size_bytes": 18991,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/README.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/README.md",
+      "git_blob_sha": "42cb6d695cb07d936b3b9bdcf3e1651d1aaadf48",
+      "size_bytes": 1150,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/RESULT.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/RESULT.json",
+      "git_blob_sha": "a8edb90ff3694aef77d251055b3fd446e6818752",
+      "size_bytes": 12170,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/SOURCE_PINS.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/SOURCE_PINS.json",
+      "git_blob_sha": "a2d2bfd3363e0317fd2f733bd52cd13c0d9079a6",
+      "size_bytes": 1264,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/VALIDATION.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/VALIDATION.json",
+      "git_blob_sha": "6925378adfa63f163de8600fd0efab28f5d899da",
+      "size_bytes": 2032,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+      "git_blob_sha": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+      "size_bytes": 18050,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/README.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/README.md",
+      "git_blob_sha": "ed1328fba3ae882044c94f32fdfba41fce4d3136",
+      "size_bytes": 3981,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/RESULT.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/RESULT.json",
+      "git_blob_sha": "323c50788a3602e4fa15b60d88dc1a2c76ebd3ba",
+      "size_bytes": 2729,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/certified_model.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/certified_model.py",
+      "git_blob_sha": "6d5b41ce11a941fde95e722e708ebb02d689985c",
+      "size_bytes": 6583,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/check_interval42.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/check_interval42.py",
+      "git_blob_sha": "dff552df3aeae034c73f9b7943a1927bf9d4cfcb",
+      "size_bytes": 11195,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/check_open_family_and_all42_source_budget.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/check_open_family_and_all42_source_budget.py",
+      "git_blob_sha": "92423068bda0dd3fdd7e50d5464286d1d480f21e",
+      "size_bytes": 7836,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/inputs.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_full42_interval_banach_2026-10-22/inputs.py",
+      "git_blob_sha": "2c12d84fb3454dbf3cda6d71852d0cd4e57e1f65",
+      "size_bytes": 5495,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_jones34_native_price_capacity_2026-10-22/check_native34_price_capacity.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_jones34_native_price_capacity_2026-10-22/check_native34_price_capacity.py",
+      "git_blob_sha": "135ba46729bbbb2d2b38366984a8ac161069aace",
+      "size_bytes": 4791,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_future_krylov_2026-10-22/RESULT.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_future_krylov_2026-10-22/RESULT.json",
+      "git_blob_sha": "7a8eed3695a0bff16328d3d92d45d4a6f15d6795",
+      "size_bytes": 1085,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_future_krylov_2026-10-22/check_native_future_krylov.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_future_krylov_2026-10-22/check_native_future_krylov.py",
+      "git_blob_sha": "a968859b81802ed85bca3cab241dc58ac8d5bcb8",
+      "size_bytes": 5300,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_julia_seven_clifford_heralded_2026-10-22/check_complete_native_reflection_compiler.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_julia_seven_clifford_heralded_2026-10-22/check_complete_native_reflection_compiler.py",
+      "git_blob_sha": "fd84c57b1b7f267579346dd048d05dbbce0158a9",
+      "size_bytes": 9642,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_julia_seven_clifford_heralded_2026-10-22/check_seven_julia_heralded_galois.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_julia_seven_clifford_heralded_2026-10-22/check_seven_julia_heralded_galois.mjs",
+      "git_blob_sha": "41411d3bf0f04ffe4cfd9d7cc8ca82e73d963393",
+      "size_bytes": 8779,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_next_tick_three_mode_2026-10-22/check_generic_original_support.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_next_tick_three_mode_2026-10-22/check_generic_original_support.py",
+      "git_blob_sha": "5b4801d1464ed232882c2ad03e61550a4167eb9e",
+      "size_bytes": 5774,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_next_tick_three_mode_2026-10-22/check_original_next_tick_hodge.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_next_tick_three_mode_2026-10-22/check_original_next_tick_hodge.py",
+      "git_blob_sha": "fbe0d8d095154785365d873edc1b310a8053a3b5",
+      "size_bytes": 11350,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md",
+      "git_blob_sha": "2dde923ce481a00db4928a9467819ccdb73cae5a",
+      "size_bytes": 22232,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/README.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/README.md",
+      "git_blob_sha": "7b1356b4169a207aeb1235efddcfdc65892d1dba",
+      "size_bytes": 1017,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/RESULT.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/RESULT.json",
+      "git_blob_sha": "b0b183ad1a719e6f33727a8f2afc893d7ec7ded5",
+      "size_bytes": 7418,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/RESULT_OPTIMIZED.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/RESULT_OPTIMIZED.json",
+      "git_blob_sha": "b0b183ad1a719e6f33727a8f2afc893d7ec7ded5",
+      "size_bytes": 7418,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/SOURCE_PINS.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/SOURCE_PINS.json",
+      "git_blob_sha": "127b963acae366af999f4e01ecc143750ba46b4f",
+      "size_bytes": 1345,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/VALIDATION.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/VALIDATION.json",
+      "git_blob_sha": "7330967beecbdc234facd800797bf27d25cdd0f8",
+      "size_bytes": 2724,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/check_native_preparation.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/check_native_preparation.py",
+      "git_blob_sha": "dd44ed87b561de2a34190fbc03f6390c2f0003f0",
+      "size_bytes": 20166,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/inputs/native_input.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/inputs/native_input.py",
+      "git_blob_sha": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+      "size_bytes": 18050,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/validate_packet.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/validate_packet.py",
+      "git_blob_sha": "b3cf89ad69297adc09ef942c78fd9aed2f210c5e",
+      "size_bytes": 2498,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_full128_canonical_householder_2026-10-22/RESULT.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_full128_canonical_householder_2026-10-22/RESULT.json",
+      "git_blob_sha": "e7c31a0915540657ad4c50aeaec2d37dd54b0fb9",
+      "size_bytes": 3137,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_full128_canonical_householder_2026-10-22/check_canonical_stinespring_completion.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_full128_canonical_householder_2026-10-22/check_canonical_stinespring_completion.mjs",
+      "git_blob_sha": "2bc3767dd94a65a771ca291487a734a7772d6c55",
+      "size_bytes": 12948,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_full128_canonical_householder_2026-10-22/check_measured_record_fidelity_wall.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_full128_canonical_householder_2026-10-22/check_measured_record_fidelity_wall.mjs",
+      "git_blob_sha": "eb6977757e920efd6c3f47a3afc804f70b4b65df",
+      "size_bytes": 8941,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_full128_native_julia_reflection_2026-10-22/check_native18_choi_rank_prime.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_full128_native_julia_reflection_2026-10-22/check_native18_choi_rank_prime.mjs",
+      "git_blob_sha": "c351af4bd3986a989e6071064d38e505eb921841",
+      "size_bytes": 7405,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_full128_native_julia_reflection_2026-10-22/check_original_julia_exact_car_algebra.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_full128_native_julia_reflection_2026-10-22/check_original_julia_exact_car_algebra.mjs",
+      "git_blob_sha": "2f3310fd3b9eaf31d8ca86bb6f0718021930e662",
+      "size_bytes": 7258,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_full128_native_julia_reflection_2026-10-22/check_original_julia_walsh_one_reflection.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_full128_native_julia_reflection_2026-10-22/check_original_julia_walsh_one_reflection.py",
+      "git_blob_sha": "7a7a7414cdac4ec78682ed2a644d6f3ae9c04e9f",
+      "size_bytes": 15678,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/README.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/README.md",
+      "git_blob_sha": "403f7ede74f3641884b2058dd299a5b95b15ba56",
+      "size_bytes": 3798,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/RESULT.json",
+      "git_blob_sha": "0ac76b58522d84f5bcc787fb6b6da0c99e1211cd",
+      "size_bytes": 3260,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/center_new.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/center_new.json",
+      "git_blob_sha": "6b520fbd6218444601d90d7e30b738f8c828bd22",
+      "size_bytes": 3589,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/certified_unpadded.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/certified_unpadded.py",
+      "git_blob_sha": "a8bcb1a32be09d1b45b8626278e014e7288bce2f",
+      "size_bytes": 1656,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/check_unpadded42.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/check_unpadded42.py",
+      "git_blob_sha": "2d441ee3bc656a6872c8865f5846ef90c4d58038",
+      "size_bytes": 7512,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/check_unpadded42_full_source_robustness.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_original_unpadded42_2026-10-22/check_unpadded42_full_source_robustness.py",
+      "git_blob_sha": "df5d971a3d50ef05c81cff85c6251bd27e075634",
+      "size_bytes": 7263,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/README.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/README.md",
+      "git_blob_sha": "8be3d1a0d25fe23fa453adf10651210f410106d8",
+      "size_bytes": 5304,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/RESULT.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/RESULT.json",
+      "git_blob_sha": "4b2f86b25c79d8fdad68b9281d22758b7ae79506",
+      "size_bytes": 5240,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_explicit_k100m_root_bound.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_explicit_k100m_root_bound.mjs",
+      "git_blob_sha": "b53a9d6d316b4f592a66d04cd0a9dc17012664b9",
+      "size_bytes": 5204,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_k585m_exact_root_bound.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_k585m_exact_root_bound.py",
+      "git_blob_sha": "ea017c4a72934196bcd9ba652fdd53224f1e3c4f",
+      "size_bytes": 7568,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_native_algebraic_gibbs_obstruction.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_native_algebraic_gibbs_obstruction.mjs",
+      "git_blob_sha": "ac077b7382b7f78d114e7893b884db5f90cb4e10",
+      "size_bytes": 3694,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_renewal_gibbs.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_renewal_gibbs.mjs",
+      "git_blob_sha": "1766ff1b9153693c6ea2a3f3be9df04d4923b58c",
+      "size_bytes": 7119,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_tensor_thermal_native_golden_hjr.mjs",
+      "origin_path": "02_REGISTRY/research/sources/d0_renewal_gibbs_bridge_2026-10-22/check_tensor_thermal_native_golden_hjr.mjs",
+      "git_blob_sha": "4b3480583399ea1ba73c4d07b8f306765118a076",
+      "size_bytes": 4960,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_source_descent_phase_2026-10-22/check_exact_golden_phase_orbit.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_source_descent_phase_2026-10-22/check_exact_golden_phase_orbit.py",
+      "git_blob_sha": "bfc86a48f22f3047d99d6c40185803bf350a6142",
+      "size_bytes": 1909,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_source_descent_phase_2026-10-22/check_full42_horizontal_source_descent.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_source_descent_phase_2026-10-22/check_full42_horizontal_source_descent.py",
+      "git_blob_sha": "cecdb71a977e83fd52bc24c602a64c787160f974",
+      "size_bytes": 2960,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_source_descent_phase_2026-10-22/check_golden_42_saddle_phase.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_source_descent_phase_2026-10-22/check_golden_42_saddle_phase.py",
+      "git_blob_sha": "aa92364f0047410ade522efca00145ea0e593882",
+      "size_bytes": 1825,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_unpadded_constitutive_legendre_2026-10-22/RESULT.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_unpadded_constitutive_legendre_2026-10-22/RESULT.json",
+      "git_blob_sha": "f0c0bb28c854f78618a291f708777ca6e7d3334a",
+      "size_bytes": 4072,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_unpadded_constitutive_legendre_2026-10-22/RESULT_GOLDEN_MINIMAL_QUERY_C2_FISHER.json",
+      "origin_path": "02_REGISTRY/research/sources/d0_unpadded_constitutive_legendre_2026-10-22/RESULT_GOLDEN_MINIMAL_QUERY_C2_FISHER.json",
+      "git_blob_sha": "a10bbf0a7d0e7668e702593f9f98cf194c36c920",
+      "size_bytes": 3778,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_unpadded_constitutive_legendre_2026-10-22/check_golden_minimal_depth_c2_fisher.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_unpadded_constitutive_legendre_2026-10-22/check_golden_minimal_depth_c2_fisher.py",
+      "git_blob_sha": "87200f648fc9b7001e2b0fd60c8877c519fd37c4",
+      "size_bytes": 6161,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_unpadded_constitutive_legendre_2026-10-22/check_unpadded_constitutive_legendre.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_unpadded_constitutive_legendre_2026-10-22/check_unpadded_constitutive_legendre.py",
+      "git_blob_sha": "d4733a62f92c76410d786d86882fa4eb5acc8c11",
+      "size_bytes": 7368,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/inputs/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md",
+      "origin_path": "02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/inputs/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md",
+      "git_blob_sha": "2dde923ce481a00db4928a9467819ccdb73cae5a",
+      "size_bytes": 22232,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/inputs/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/inputs/native_input.py",
+      "origin_path": "02_REGISTRY/research/sources/d0_variational_selection_synthesis_2026-10-21/inputs/02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/inputs/native_input.py",
+      "git_blob_sha": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+      "size_bytes": 18050,
+      "role": "proof_code_or_result"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/RESEARCH_LEDGER.md",
+      "origin_path": "02_REGISTRY/RESEARCH_LEDGER.md",
+      "git_blob_sha": "2c066995cf7af67d9583f0d8936642c78dc91cc5",
+      "size_bytes": 110010,
+      "role": "integrator"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/gr_assembly/SYNTHESIS.md",
+      "origin_path": "02_REGISTRY/gr_assembly/SYNTHESIS.md",
+      "git_blob_sha": "fedcd094e05ce67fd223159430ae591bd1050f66",
+      "size_bytes": 69153,
+      "role": "integrator"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "origin_path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "git_blob_sha": "30e5f517aa496cdd339d89e4ee01e01bbe5c3575",
+      "size_bytes": 126990,
+      "role": "integrator"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/AGENTS.md",
+      "origin_path": "AGENTS.md",
+      "git_blob_sha": "ae4ea5a7af484f0df9001640a90665e11e185d20",
+      "size_bytes": 38617,
+      "role": "integrator"
+    },
+    {
+      "archive_path": "SOURCE_LIBRARY/README.md",
+      "origin_path": "README.md",
+      "git_blob_sha": "c78ba3db2d46ea77b915200937325602f03af97a",
+      "size_bytes": 52619,
+      "role": "integrator"
+    }
+  ],
+  "other_indexed_but_not_bundled_research_md": 681,
+  "other_primary_docs_list_in": "06_ALL_RESEARCH_RESULTS_INDEX.md",
+  "full_git_tree_inventory_in_zip": "07_FULL_REPOSITORY_TREE_INDEX.tsv",
+  "scientific_claim_status": "original mathematical theorem scopes, not full native Book03 or GR closure",
+  "GR_closed": false
+}

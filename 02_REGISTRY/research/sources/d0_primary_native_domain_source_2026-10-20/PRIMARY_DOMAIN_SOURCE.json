@@ -1,0 +1,135 @@
+{
+  "carrier": {
+    "CAR_grades": 16,
+    "Dirac_roles": 4,
+    "adjoint": "actual shifted positive adjoint",
+    "grid": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "normalizer": 1,
+    "original_exterior_order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "reference_columns": 128,
+    "sites": 256
+  },
+  "density": {
+    "cell_routing": "exact Q(p), integer sign of A+B*sqrt(5)",
+    "counts_sha256": "fbca167a01fcca76356153586a1006ad1144b612f97740b7611f163f5a3164e9",
+    "inverse_PF": "exact Fraction equality with actual counts",
+    "literal_FR_words": 10946,
+    "max_count": 78,
+    "max_rho": 1.824228028503563,
+    "min_count": 29,
+    "min_rho": 0.678238625982094,
+    "native_cost_depth": 20
+  },
+  "exact_symbolic": {
+    "fixed_query_first_source_factor": "s^-2",
+    "full_link_gram": "I4/8",
+    "link_vector_norm_squared": "1/8",
+    "off_shell_configured_query_transport": "t'=s*t"
+  },
+  "link_hessian": "s^2*rho_z*(1-|Psi_s,z|^2)/(4*S*ell^2)",
+  "max_H_independence_error": 7.589415207398531e-19,
+  "max_direct_gradient_error": 1.6851971207376693e-14,
+  "max_direct_hessian_error": 2.065581863539001e-12,
+  "minimum_link_hessian": 0.0005905704989983719,
+  "predicted_source_difference": -3.541150514129605e-06,
+  "scale": {
+    "alpha_unchanged": 0.00018650684143071543,
+    "blank_lower_bound": 0.708203932499369,
+    "ell_unchanged": 0.25,
+    "epsilon_unchanged": 0.00037301368286143087,
+    "fixed_chart_bound": 2.310268058447768,
+    "p_exponent": 3,
+    "s": 0.23606797749978975,
+    "scaled_bound": 0.5453803080401307,
+    "strict_margin": 0.6180339887498949
+  },
+  "scope": {
+    "A_variation_is_not_an_admissible_global_cost_comparison": true,
+    "GR_closed": false,
+    "complete_physical_Cost_minus_Info_selected": false,
+    "full128_recycling_propagation_proved": false,
+    "interior_fixed_collar_tangent": true,
+    "native_generator_admission_proved": false,
+    "new_stationary_root_search": false,
+    "owned_all40_reduction_consumed": true,
+    "primitive_port_cost_or_Info_evaluated": false
+  },
+  "source_difference": -3.5411505141305904e-06,
+  "status": "PASS",
+  "two_primary_representatives": [
+    {
+      "K": [
+        -0.004460202374394725,
+        0.004457151971209255
+      ],
+      "R": 6.856693063465755,
+      "configured_trace_residual": 8.494724021423927e-17,
+      "free_edge": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "max_Julia_input_norm": 0.45091184006353224,
+      "source": [
+        {
+          "analytic_hessian": 0.0007942154986529829,
+          "direct_finite_gradient": -0.00010163710196309239,
+          "direct_finite_hessian": 0.0007942154988995753,
+          "gradient": -0.00010163710195159139,
+          "polarization": 0
+        },
+        {
+          "analytic_hessian": 0.0007942154986529829,
+          "direct_finite_gradient": -0.00016843231864527297,
+          "direct_finite_hessian": 0.0007942154988995753,
+          "gradient": -0.00016843231864458006,
+          "polarization": 1
+        }
+      ],
+      "wave_amplitude": 0.125
+    },
+    {
+      "K": [
+        -0.008918879547196716,
+        0.008915829144011244
+      ],
+      "R": 6.856953892798041,
+      "configured_trace_residual": 1.4381941818020216e-16,
+      "free_edge": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "max_Julia_input_norm": 0.45091184006353224,
+      "source": [
+        {
+          "analytic_hessian": 0.0007942154986529829,
+          "direct_finite_gradient": -0.00010517825248257395,
+          "direct_finite_hessian": 0.0007942154988995753,
+          "gradient": -0.00010517825246572198,
+          "polarization": 0
+        },
+        {
+          "analytic_hessian": 0.0007942154986529829,
+          "direct_finite_gradient": -0.00016489116814000226,
+          "direct_finite_hessian": 0.0007942155007185647,
+          "gradient": -0.00016489116813045006,
+          "polarization": 1
+        }
+      ],
+      "wave_amplitude": 0.25
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "Fock_dimension": 16,
+  "candidate_t_float": 0.4303625349714099,
+  "diagnostic_used_by_exact_certificate": false,
+  "fibre_obstruction_HS_norm_float": 7.409579277096699,
+  "frequency": [
+    3,
+    3,
+    0,
+    0
+  ],
+  "new_curved_native_root_proved": false,
+  "new_gauge_residual_float": 2.3203492250317263e-13,
+  "old_gauge_residual_float": 1.0342407743396162e-13,
+  "operator_HS_norm_float": 29.006332861947655,
+  "preparation": "(1-t)I16/16+t|whitened_seed><whitened_seed|",
+  "reference_dimension": 128,
+  "schema": "d0-memory-fibre-flow-diagnostic/1",
+  "scope": "Floating exploration, no interval inertia, exact root or bifurcating solution certified",
+  "thermal_modes": 4096,
+  "transverse_slope_float": -0.9034798474196138,
+  "zero_eigen_residual_float": 3.31553581248959e-13
+}

@@ -1,0 +1,70 @@
+{
+  "all_14_Toffoli_success": "[0.9999962241028773550436448698253984587539014367865738010373742481, 0.99999622410287735504364486982539845875390143678657380103738194909]",
+  "blank_reflection_compiled": false,
+  "cases": [
+    {
+      "CX": 70,
+      "SourceI": 2,
+      "Toffoli": 14,
+      "negative_phase_pairs": 256,
+      "neighbor": "zero",
+      "port_basis_values": 2,
+      "site_y_pairs": 65536
+    },
+    {
+      "CX": 74,
+      "SourceI": 2,
+      "Toffoli": 14,
+      "negative_phase_pairs": 256,
+      "neighbor": "e0",
+      "port_basis_values": 2,
+      "site_y_pairs": 65536
+    },
+    {
+      "CX": 74,
+      "SourceI": 2,
+      "Toffoli": 14,
+      "negative_phase_pairs": 256,
+      "neighbor": "e1",
+      "port_basis_values": 2,
+      "site_y_pairs": 65536
+    },
+    {
+      "CX": 74,
+      "SourceI": 2,
+      "Toffoli": 14,
+      "negative_phase_pairs": 256,
+      "neighbor": "e2",
+      "port_basis_values": 2,
+      "site_y_pairs": 65536
+    },
+    {
+      "CX": 74,
+      "SourceI": 2,
+      "Toffoli": 14,
+      "negative_phase_pairs": 256,
+      "neighbor": "e3",
+      "port_basis_values": 2,
+      "site_y_pairs": 65536
+    }
+  ],
+  "failure_log": "first failure at each of 14 Toffolis or known-one failure; no assumption of input restoration on failure",
+  "fourier_960_equality_oracles_independent_known_one_success": "[0.99637751368552778000826189099516552294889844868442570109027846237, 0.99637751368552778000826189099516552294889844868442570109779353119]",
+  "fourier_960_equality_oracles_shared_known_one_success": "[0.99638168946760531532307732325861956125512306301238290998651425834, 0.99638168946760531532307732325861956125512306301238290999380630986]",
+  "fourier_960_scope": "80 Fourier copies times 12 equalities; excludes 1260 Choi projectors and all other devices",
+  "fresh_zero_bits": 23,
+  "full_source_ready_and_book03_cost_proved": false,
+  "full_sourcei_and_spin_matrix_columns": 16,
+  "inverse_returns_all_scratch_and_data": true,
+  "known_one_and_14_Toffoli_success": "[0.9999962197327635170251507048578991878990620578355056027004683034, 0.99999621973276351702515070485789918789906205783550560270047615995]",
+  "known_one_bits": 1,
+  "max_listed_births": 23427,
+  "oldRIGHT_identity_by_tensor_extension": true,
+  "ready_and_address_oracle_compiled": false,
+  "scratch_preparation": {
+    "CX": 46,
+    "G": 23
+  },
+  "single_Toffoli_success": "[0.99999973029258984516139810735685970968464232610216157210659524163, 0.99999973029258984516139810735685970968464232610216157210659578614]",
+  "status": "PASS"
+}

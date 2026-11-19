@@ -1,0 +1,55 @@
+{
+  "status": "PASS_SCOPED_FIVE_POINT_NUMERICAL_NOT_EXACT",
+  "evidence_class": "locally executed double precision source and full42 numeric Jacobian",
+  "original_price": "same N1 complete local CQ sigma-minus in retyped canonical star coordinate",
+  "time_intervals": 2,
+  "free_time_nodes": 1,
+  "h": 0.18380152465817923,
+  "tau": 0.05,
+  "PF_fixed_in_space": true,
+  "tests": [
+    {
+      "rho_time_ratio": 1,
+      "full42_source_inf": 3.91975561736501e-15,
+      "full42_J_min_singular": 0.04471695902869334,
+      "max_abs_native_fstar": 0.027411602591570827,
+      "max_abs_native_qCAR": 0.00032338331940638676
+    },
+    {
+      "rho_time_ratio": 1.25,
+      "full42_source_inf": 3.9194135497548596e-15,
+      "full42_J_min_singular": 0.04470405134917064,
+      "max_abs_native_fstar": 0.027438952546421147,
+      "max_abs_native_qCAR": 0.00032465748484182023
+    },
+    {
+      "rho_time_ratio": 1.5,
+      "full42_source_inf": 5.223953526700007e-15,
+      "full42_J_min_singular": 0.044695271799271324,
+      "max_abs_native_fstar": 0.02745752882824204,
+      "max_abs_native_qCAR": 0.000325522833298373
+    },
+    {
+      "rho_time_ratio": 1.75,
+      "full42_source_inf": 1.3059883816750018e-14,
+      "full42_J_min_singular": 0.04468891224957394,
+      "max_abs_native_fstar": 0.02747096968751095,
+      "max_abs_native_qCAR": 0.0003261489185788745
+    },
+    {
+      "rho_time_ratio": 2,
+      "full42_source_inf": 6.529941908375009e-15,
+      "full42_J_min_singular": 0.04468409384375533,
+      "max_abs_native_fstar": 0.02748114605513996,
+      "max_abs_native_qCAR": 0.000326622920648131
+    }
+  ],
+  "limitations": {
+    "exact_interval_existence": false,
+    "physical_Book03_selection": false,
+    "all_native_4d_AF_weights": false,
+    "uniform_h_refinement": false,
+    "full_n3_source_root": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "all_stopped_prefixes_classified_twice": true,
+  "cyclic_settings_per_bank": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "full_native_clock_replayed": false,
+  "full_physical_price_identified": false,
+  "independent_bank_rows_exact": true,
+  "mark_gain_relative_to_first_selector": "8*p^5",
+  "settings": {
+    "active_counts": [
+      6720,
+      11760,
+      15680,
+      14700,
+      9408,
+      3920,
+      960,
+      105
+    ],
+    "cut": 24,
+    "inactive_at_cut": 11772,
+    "overshoot": 46368,
+    "reduced_boolean_nodes": 305
+  },
+  "shifts": {
+    "active_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "cut": 5,
+    "inactive_at_cut": 0,
+    "overshoot": 5,
+    "reduced_boolean_nodes": 19
+  },
+  "signed_integer_weights": [
+    6720,
+    -11760,
+    15680,
+    -14700,
+    9408,
+    -3920,
+    960,
+    -105
+  ],
+  "status": "PASS",
+  "stochastic_dispatch_test": {
+    "bounded_nonzero_directional_error": true,
+    "eta_squared": "1/1369",
+    "input_masses": "rational synthetic challenge vector",
+    "tv": "79493/259780071",
+    "wrong_live_to_live_allowed": true
+  },
+  "unbalanced_diagonal_rejected": true
+}

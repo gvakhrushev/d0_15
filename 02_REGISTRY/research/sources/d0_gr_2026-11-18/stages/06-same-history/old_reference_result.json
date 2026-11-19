@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "source": "native controlled L_i, canonical birth",
+  "analytic_hidden_work_gap": "h((1-p^(3M))/2)",
+  "data": {
+    "1": {
+      "hidden_work_reference_gap": 0.66501838644,
+      "full_read_reference_gap": 0.0
+    },
+    "2": {
+      "hidden_work_reference_gap": 0.69159356581,
+      "full_read_reference_gap": 0.0
+    },
+    "3": {
+      "hidden_work_reference_gap": 0.69306064293,
+      "full_read_reference_gap": 0.0
+    },
+    "4": {
+      "hidden_work_reference_gap": 0.69314235811,
+      "full_read_reference_gap": 0.0
+    },
+    "5": {
+      "hidden_work_reference_gap": 0.69314691181,
+      "full_read_reference_gap": 0.0
+    },
+    "6": {
+      "hidden_work_reference_gap": 0.69314716558,
+      "full_read_reference_gap": 0.0
+    }
+  },
+  "proves_full_physical_binding": false
+}

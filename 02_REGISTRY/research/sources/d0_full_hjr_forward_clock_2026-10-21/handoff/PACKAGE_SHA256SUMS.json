@@ -1,0 +1,18 @@
+{
+  "files": {
+    "INTEGRATION_STATUS.json": "5425759e55dd12b0d3649ab27cf1045d6841f3b2cbca6e7515589d8bb4e75452",
+    "PROOF.md": "a93f271f5503349429ad27c7d9854c65c350476d46692f810d2932b5e2165508",
+    "README_RU.md": "e7978a89fc9f70642d032877f2a68772672fd399fa64a8125fc6a3ba98044dfb",
+    "RESULT.json": "ca54d4f00067bcbff1dd8e5a8a89e6d03702eba6f048e5443309770c0b67cc5d",
+    "VALIDATION.json": "7dd8fccd142dce791b9c7b6d81002805f41dc1ec08b6679fe005972ed6a94a7d",
+    "additions.patch": "78fa720aa1e81473be44a3e84124194fa5f9369d28c3a03ff64d2bd43340d79b",
+    "repo/02_REGISTRY/research/A4D_FULL_HJR_FORWARD_CLOCK_TRANSPORT_2026_10_21.md": "ae908e66b058d1bc30e09a81ab650db2343108cdb29584dc0dac84d3ee8e7e4a",
+    "repo/02_REGISTRY/research/certificates/a4d_full_hjr_forward_clock_check.py": "e672b3552735026130f5c26056bb3c4e64363313011c1a7cee75552386671c61",
+    "repo/02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/PROOF.md": "a93f271f5503349429ad27c7d9854c65c350476d46692f810d2932b5e2165508",
+    "repo/02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/README.md": "029be3240173da4847e490a11ae730b5fa705ed9117d6687936d2a294b25aaec",
+    "repo/02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/RESULT.json": "ca54d4f00067bcbff1dd8e5a8a89e6d03702eba6f048e5443309770c0b67cc5d",
+    "repo/02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/SHA256SUMS.json": "d29fad17292d22bc7f5db9dcff9459a8d60af406d48836424529a63aaf30dde2",
+    "repo/02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/SOURCES.json": "b1286bc25c2e508e7c382ee037f7bbf06b5bc2fef9e4a90eb29d9a0b584d64bf",
+    "repo/02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/check_full_hjr_clock.py": "ef60b02220cf9b6b01c2166eecec1595336de59522ce5a9a1201c98f577b3a39"
+  }
+}

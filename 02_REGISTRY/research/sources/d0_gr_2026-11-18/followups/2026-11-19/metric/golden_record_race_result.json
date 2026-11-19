@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "unsigned_Stirling_counts_n_0_to_8": [
+    [
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      3,
+      1
+    ],
+    [
+      0,
+      6,
+      11,
+      6,
+      1
+    ],
+    [
+      0,
+      24,
+      50,
+      35,
+      10,
+      1
+    ],
+    [
+      0,
+      120,
+      274,
+      225,
+      85,
+      15,
+      1
+    ],
+    [
+      0,
+      720,
+      1764,
+      1624,
+      735,
+      175,
+      21,
+      1
+    ],
+    [
+      0,
+      5040,
+      13068,
+      13132,
+      6769,
+      1960,
+      322,
+      28,
+      1
+    ]
+  ],
+  "record_law": "P sum_n (1-P)^n (u)_n/n! = P^(1-u)",
+  "thinning_zero": "P^beta",
+  "closed_golden_transcript": {
+    "plus_probability": "p",
+    "minus_probability": "p^2",
+    "examples": [
+      {
+        "bits": "010",
+        "sign": "+",
+        "equal_pair_rejections": 0,
+        "losing_rounds": 0,
+        "paid_golden_length": 4
+      },
+      {
+        "bits": "101",
+        "sign": "-",
+        "equal_pair_rejections": 0,
+        "losing_rounds": 0,
+        "paid_golden_length": 5
+      },
+      {
+        "bits": "0001111101",
+        "sign": "-",
+        "equal_pair_rejections": 2,
+        "losing_rounds": 1,
+        "paid_golden_length": 16
+      },
+      {
+        "bits": "1110000010",
+        "sign": "+",
+        "equal_pair_rejections": 2,
+        "losing_rounds": 1,
+        "paid_golden_length": 14
+      }
+    ],
+    "basis": "1,p",
+    "fair_selector_mean_paid_length": [
+      "4",
+      "3"
+    ],
+    "conditional_mean_paid_length_plus_minus": [
+      [
+        "11",
+        "5"
+      ],
+      [
+        "12",
+        "5"
+      ]
+    ],
+    "conditional_entropy_over_log_phi_both_signs": [
+      "10",
+      "5"
+    ],
+    "conditional_net_golden_units_plus_minus": [
+      1,
+      2
+    ],
+    "scope": "fully golden deterministic witness; its two test coins differ from the H.1 heat and determinant oracles"
+  },
+  "actual_parameters": {
+    "rank": 4,
+    "z": "1/1048576",
+    "beta": "2*p^2; the disjoint golden decisions 1 or 00 give beta",
+    "LC4_example_decimal": {
+      "q": "0.4124698805685552",
+      "m_LC4": "0.8365521005610139",
+      "h_D": "0.9999993764958907",
+      "h_D_power_beta": "0.9999995236852097"
+    },
+    "uniform_P_plus_lower": "359/784",
+    "uniform_P_minus_lower": "1208921207935207812890625/2417847027549836987596801",
+    "uniform_per_round_accept_lower": "947795882614115194198032809/1027586946672434798500249600",
+    "uniform_signed_independent_Poisson_variance_upper": "1085173708/6399453225",
+    "variance_identity": "-log(P_H)-beta*log(h_D)",
+    "scope": "conditional heat and cold-test laws; full H.1 heat value and original physical path valuation not inferred"
+  },
+  "physical_Cost_Info_identified": false
+}

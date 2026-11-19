@@ -1,0 +1,6 @@
+PASS all six Hodge coframe faces from true inverse legs and all 96 first jets
+PASS full CAR16 bilinear numerator, actual determinant word and scalar centralization
+PASS fixed integer-coefficient reciprocal polynomial and signed determinant branch
+PASS exact conjugated quarter-turn differs from canonical Julia reference only at order sigma^3
+PASS identical flat feedback and first reference-price defect at sigma^3 times holonomy
+FIREWALL: continuous onsite Julia calls and actual work/cut pricing remain physical premises

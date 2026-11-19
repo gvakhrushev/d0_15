@@ -1,0 +1,41 @@
+{
+  "scope": "one exact ambient coframe Euler asymptotic on the original projected double-zero sheet",
+  "input_commit": "c7e0c3d2f6bcfbcc8bd43034ff72da85b8cdd18a",
+  "source_sha256": {
+    "02_REGISTRY/research/A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.md": "dcfc4ed42147d047fae32c11b10c25a9d77df6a2dc3009ab6ad0c7d16da2af31",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_exact_null_sheet_unimodular.py": "098d11cd21c4bfc07f24ba32b23f9abe08eecb527bff451a1278bd8ffcdbbf05",
+    "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_star_rank2_seam.py": "666b921e53fba8de2332a88c89a572f5ab14d8c03348744494e06b381f2f18b8",
+    "02_REGISTRY/research/sources/d0_weighted_two_field_rank2_2026-10-21/native_master.py": "23752ce9f4780c7713bbb7fe0d339d8952fe2e422e5541df736e8e08e754e60d"
+  },
+  "checks": [
+    "source pin 02_REGISTRY/research/A4D_RANK2_EXACT_FINITE_DOUBLE_ZERO_UNIMODULAR_PF_SYNTHESIS_2026_10_21.md",
+    "source pin 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_exact_null_sheet_unimodular.py",
+    "source pin 02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_star_rank2_seam.py",
+    "source pin 02_REGISTRY/research/sources/d0_weighted_two_field_rank2_2026-10-21/native_master.py",
+    "original star leading term vanishes at v=1",
+    "original star first h coefficient retained",
+    "original shear derivative has positive leading value 2 A squared",
+    "owned projected-root first coefficient recovered",
+    "same projected point has exact two-field q=0",
+    "fixed-matter shear derivative is minus four epsilon squared A squared v",
+    "original epsilon squared equals one over two kappa fixes matter source",
+    "ambient coframe shear is exactly volume preserving",
+    "continuum leading shear Euler coefficient cancels",
+    "exact first finite shear Euler coefficient",
+    "at r=1 ambient row equals minus two h over e plus O(h squared)",
+    "rank-two interval lies strictly below fourth-root three",
+    "uniform absolute coefficient bound 193 over 432 times exp minus 36 over 25"
+  ],
+  "passed": 17,
+  "exact_ambient_row": "(L_h-R_h/v_star^2)/h^2-2*A(r)^2*v_star",
+  "h_coefficient": "(3*r^2+1)*(r^4-3)*exp(-r^2)/(4*r^4)",
+  "at_r_1": "-2/exp(1)",
+  "uniform_negative_coefficient_on_1_to_6_over_5": true,
+  "fixed_matter_before_differentiation": true,
+  "restricted_Sigma_action_would_be_constant": true,
+  "new_double_zero_theorem_preserved": true,
+  "this_projected_representative_all42_stationary": false,
+  "other_corrected_representatives_excluded": false,
+  "full_native_preparation_price_stationarity": false,
+  "GR_closed": false
+}

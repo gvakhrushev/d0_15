@@ -1,0 +1,87 @@
+{
+  "input_commit": "c49ebdb12244943d1ec45ef6d148a0432481141e",
+  "worktree": "/Users/grigorijvahrusev/.codex/worktrees/same-execution-spatial-source/d0_15",
+  "method": "Read-only source substitution; no scientific replay or new execution.",
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "sha256": "88e3b77b08603da9b7b4e24372ff126c3370764d03a36171456df60f72a17248",
+      "git_blob": "275d6a7c1d2fb6bc7cb10f6c1cd7b358070b405a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md",
+      "sha256": "46c08c8295401cb42531ec3b974709638ec5f913dbd1b64c0210efa3b99953ba",
+      "git_blob": "b378006fa38617ab7ec8e1cda4431336a0388a68"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/stationary_information/STATIONARY_EXECUTION_BRIDGE.md",
+      "sha256": "7ff34c816018907410c8bd5854cfde6cfbb89de8880823120d981f0a53f0942f",
+      "git_blob": "15d24f331ccf4328c3a48bba52fc825fa00588dd"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_global_result_composition_2026-10-20/FULL_PRICE_COMPOSITION.md",
+      "sha256": "dde1aab20b306afd0f515f4ccbd13d47f74cdf1e293ae6409175615332f708fb",
+      "git_blob": "b0d4483c42e4ac8281603b1459c1f2464da1fff9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "git_blob": "bce112de77a694809e0a9a7fa769731296148ca2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+      "sha256": "66108133dc615593e50e634274005a5d904b533f3a2f3fd7861a57b2557b8b50",
+      "git_blob": "829c2fafcf390f6d2d6246b46fb22cc8655756f2"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md",
+      "sha256": "d0cf0e29b79123410daae93e23899e824dc4746548d3c6af6da431fa1a15d04c",
+      "git_blob": "db279db445bcc013827773bdede3488a9461fcea"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PAID_RETURN_PRICE.md",
+      "sha256": "2fdf545aa33e3c85f9ef81398fe604a4770c0af76ee872845beefd4f365cfcc1",
+      "git_blob": "3bc7e048c4c45fe65d6553688314f804de010b52"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md",
+      "sha256": "2e906213861d0c4d1812e1ec8608aec571aeb18230fce8f791fb4cce6b4c2c1b",
+      "git_blob": "e5841990c5becf562928115012a4dcafd25f6a87"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/COMPLETE_COMPILER_COFRAME_EQUIVALENCE.md",
+      "sha256": "65b23f3b2f9e821a574b90102b1a6d60f8d8f26447971fcd073ae53ff628534b",
+      "git_blob": "4a75e7666560602ce0b13b9ec33a6864dbff84ef"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PERRON_COMPLETE_MARKED_SOURCE.md",
+      "sha256": "2f463857471f2939c04b4d5080715f21378e390cdb0a91607dbd431227705042",
+      "git_blob": "1848efc909140d7babdd8dc8a849d25eb609c1f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COMPILER_INFO_AND_ABORT_SOURCE.md",
+      "sha256": "b57c2d1a652ee057fa77a55026f29b5880506dadacfa31994120b4168cf59396",
+      "git_blob": "9bbade75dcddc44bf5fc8edf0020aec59a12beb3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "sha256": "491ea21c32b9bf6eeba4202fbd592eea8832dc981a043601526e2438bc2b06cc",
+      "git_blob": "daa07a1c4bd7d5e07bd6cb67ba0a894b0b438e7b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/DETERMINANT_PREPARATION_BANK.md",
+      "sha256": "6cc9fc85ef8e238635ef24b78ddb3936f07d1a3f915558172eee8ff1c3602705",
+      "git_blob": "e7b92fae0d6f3dc3e60499f0dd041c18003da872"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "basis": "1,p; p²=1−p; field is y=Pr(second probe=1)",
+  "actual_raw_bits_per_round": 5,
+  "maximum_rounds": 2,
+  "completed_prefixes": 30,
+  "native_hazards_sorted_power_basis": [
+    [
+      "-11",
+      "18"
+    ],
+    [
+      "18",
+      "-29"
+    ],
+    [
+      "7",
+      "-11"
+    ]
+  ],
+  "golden_terminal_plus_minus_timeout": [
+    [
+      "193",
+      "-312"
+    ],
+    [
+      "505",
+      "-817"
+    ],
+    [
+      "-697",
+      "1129"
+    ]
+  ],
+  "terminal_sign_odds_minus_over_plus": "y",
+  "prefix_law_and_old_price_identical": "polynomial identities, hence all jets at 0<y<1",
+  "complete_current_contrast_polynomial_ascending": [
+    [
+      "-4",
+      "5"
+    ],
+    [
+      "9",
+      "-5"
+    ],
+    [
+      "-5",
+      "0"
+    ]
+  ],
+  "native_completed_canonical_work_minus_plus": [
+    "0",
+    "1"
+  ],
+  "declared_moving_work_jets_native": [
+    [
+      "0",
+      "1"
+    ],
+    [
+      "-1",
+      "5"
+    ],
+    [
+      "-10",
+      "0"
+    ]
+  ],
+  "entropy_chain_rule_checked_positive_terminal_cells": 138,
+  "native_conditional_entropy_minus_plus_in_golden_units": [
+    "-2",
+    "1"
+  ],
+  "native_net_work_minus_entropy_diff_in_golden_units": 2,
+  "selector_orientation_extra_fee_example_delta": "-1",
+  "scope": "canonical five-bit golden cylinders at y=p²; variable y and added price jets are declared comparisons; H.1 microscopic work not identified"
+}

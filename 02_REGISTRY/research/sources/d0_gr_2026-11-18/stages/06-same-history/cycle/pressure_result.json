@@ -1,0 +1,64 @@
+{
+  "status": "PASS_GOLDEN_NT3_COUNTER_PRESSURE_CERTIFIED",
+  "rank": 255,
+  "actual_commuting_labels": [
+    4,
+    8,
+    9,
+    12,
+    13,
+    16,
+    24
+  ],
+  "period_coefficient_by_popcount": [
+    "0",
+    "27/2000",
+    "-27/2000",
+    "27/2000",
+    "-27/2000",
+    "0",
+    "0"
+  ],
+  "rho_bright": [
+    "399252011/500000000",
+    "798504223/1000000000"
+  ],
+  "D_rho_bright": [
+    "-9099557/1000000000",
+    "-1807753/200000000"
+  ],
+  "right": {
+    "inverse_defect_strict_upper": "1/100",
+    "coordinate_radius": "1/10000000",
+    "self_map_ratio_strict_upper": "1/10"
+  },
+  "left": {
+    "inverse_defect_strict_upper": "1/100",
+    "coordinate_radius": "1/10000000",
+    "self_map_ratio_strict_upper": "1/10"
+  },
+  "actual_adjoint_verified": true,
+  "period0_by_popcount": [
+    "0",
+    "81/20000",
+    "81/20000",
+    "81/4000",
+    "81/40000",
+    "0",
+    "0"
+  ],
+  "physical_log_pressure_derivative": [
+    "-14849289/100000000000",
+    "-2950017/20000000000"
+  ],
+  "physical_log_pressure_sign": -1,
+  "closed_one_period_jet_sign": 1,
+  "log_closed_jet": [
+    "427511/40000000000",
+    "333993/31250000000"
+  ],
+  "gauge_invariant_jet": [
+    "15818863/100000000000",
+    "15918067/100000000000"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "FLOATING_POINT_DIAGNOSTIC_NOT_INTERVAL_PROOF",
+  "dimension_complete_program": 96,
+  "tests": [
+    {
+      "moving_matter": false,
+      "unitarity_error": 2.4427196284493646e-15,
+      "energy_commutator_error": 1.6658112350902336e-15,
+      "matter_reading_error": 0.0,
+      "compression_error": 2.2204545195636298e-16,
+      "finite_difference": 0.3776085762297043,
+      "analytic_trace_formula": 0.37760858053921076,
+      "error": 4.3095064738984945e-09
+    },
+    {
+      "moving_matter": true,
+      "unitarity_error": 2.4427196284493646e-15,
+      "energy_commutator_error": 1.6658112350902336e-15,
+      "matter_reading_error": 2.220446049250313e-16,
+      "compression_error": 2.2204545195636298e-16,
+      "finite_difference": 0.28938995768612585,
+      "analytic_trace_formula": 0.28938996231446185,
+      "error": 4.628335992240551e-09
+    }
+  ]
+}

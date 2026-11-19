@@ -1,0 +1,41 @@
+{
+  "schema": "d0_relative_subspace_alternating_moments_exact_v1",
+  "verifier": "check_alternating_projection_moments.mjs",
+  "verifier_git_blob_sha": "8e3c5aec75cc6ec6065ed207f8d2ce1110e52911",
+  "execution": "published source evaluated verbatim as ECMAScript in V8 with console output redirected to response",
+  "status": "PASS",
+  "exact_controls": 18,
+  "ambient_dimension": 6,
+  "input_dimension": 3,
+  "isometries_and_first_jets": true,
+  "genuine_noncommuting_source": true,
+  "tested_prefix_lengths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "moments": [
+    "254944/316875",
+    "22145614336/33469921875",
+    "1960333340483584/3535260498046875",
+    "176284521854690000896/373411890106201171875",
+    "16057265434548089047220224/39441630892467498779296875",
+    "1477724119929509022772605485056/4166022263016879558563232421875"
+  ],
+  "moving_source_derivatives": [
+    "837904/39271375",
+    "2757304832/165921559375",
+    "1603596398592/701018588359375",
+    "-40202654050942976/2961803535818359375",
+    "-68562732378437451776/2502723987766513671875",
+    "-2006293716091769217613824/52870044241567601318359375"
+  ],
+  "mathematical_scope": "exact rational finite subspace projector and full first-source control; general theorem in memo",
+  "native_gate_admission": false,
+  "same_native_Cost_Info_selected": false,
+  "original_GR_hm2_terminal_closed": false,
+  "remote_CI_claimed": false
+}

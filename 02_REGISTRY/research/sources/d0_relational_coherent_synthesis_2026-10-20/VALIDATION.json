@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-20",
+  "execution": "https://github.com/gvakhrushev/d0_15/pull/334",
+  "input_head": "0e4c9d6ca8b44574100338b04c27204cde7062dc",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "inputs": [
+    {
+      "ref": "0e4c9d6ca8b44574100338b04c27204cde7062dc",
+      "path": "02_REGISTRY/research/A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md",
+      "sha256": "801dd75dfdca1e11faa4ebb3db88da6c35aba53a971ee6733ac016f1bd82af20"
+    },
+    {
+      "ref": "0e4c9d6ca8b44574100338b04c27204cde7062dc",
+      "path": "02_REGISTRY/research/A4D_PROSPECTIVE_DMIN_REVERSAL_SYMMETRY_CHIRAL_EULER_SOURCE_AND_GOLDEN17_INFORMATION_COST_2026_10_20.md",
+      "sha256": "b569289296afc812f7bab5cb31f0de43674cc98700c4a2dfede7dd9a5bd26164"
+    },
+    {
+      "ref": "0e4c9d6ca8b44574100338b04c27204cde7062dc",
+      "path": "02_REGISTRY/research/A4D_VACUUM_EINSTEIN_SQUARED_IDEAL_UNIVERSALITY_WITH_VERTICAL_HISTORY_2026_10_20.md",
+      "sha256": "b95e93f187019d076d648eca48ab36afebc1508e5a5debbcf301d86fb5730d53"
+    },
+    {
+      "ref": "0e4c9d6ca8b44574100338b04c27204cde7062dc",
+      "path": "02_REGISTRY/research/A4D_GLOBAL_CHIRAL_GOLDEN_IR_EINSTEIN_HOLST_UNIVERSALITY_2026_10_20.md",
+      "sha256": "1f531924f34e3cbf81b07e76b03ca9061f1db16ec05efc595b1d826550499828"
+    },
+    {
+      "ref": "0e4c9d6ca8b44574100338b04c27204cde7062dc",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CAR16_TRACE_CLOSED_NONLINEAR_SPIN_TO_PALATINI_ALL40_2026_10_20.md",
+      "sha256": "e4d46802a6da25b581c78629659ab0538c3cee7da4228c0c1e7b3d53c4d12ea5"
+    },
+    {
+      "ref": "0e4c9d6ca8b44574100338b04c27204cde7062dc",
+      "path": "02_REGISTRY/research/A4D_COMPLETE_BOOK_GOLDEN_SELF_CODE_STATIONARY_ENVELOPE_AND_ODD_GEOMETRY_2026_10_20.md",
+      "sha256": "273eca40559d625eb9cfdc202b2959e2777585ff1b3659b9ed4ea9a6049220f5"
+    },
+    {
+      "ref": "9ff766bfe9be5bf67ec1fb22b8ff2419a0d7fe4d",
+      "path": "02_REGISTRY/research/D0_FOUNDATION_THEORY_TRANSFER_COMPOSITION_2026_10_20.md",
+      "sha256": "ea220267a9ddf3926420a7a798be9908bcfcd63af63c384d202ed751b3741d10"
+    }
+  ],
+  "packet_sha256": {
+    "02_REGISTRY/research/A4D_RELATIONAL_COMPACT_EXECUTION_AND_EXACT_SOURCE_SYNTHESIS_2026_10_20.md": "e9aa39f1b4fa4660b0cd149a728e455ee2318b537745f96dc8a5f957df815e67",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/check_coframe_equivalence.py": "be409a7489b16c5c48a99a5c7d398754453b47216fdcc24059d559323759a261",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/check_coherent_execution.py": "f6f17ab63227b64074bcddeeea68d2dfd6059f05e593cbc1200b3dcd7eba7fd6",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/check_fixed_readout.py": "97a74e9aab7c5700afdee3c4dbc624248adbc8a728ea2eca24bd613c4c8c1d4f",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/check_relational_source.py": "90e3e9810a233e2234b9844191100337874c3baa03ffb272ba664901dbdbce02",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/coframe_equivalence.md": "0abfd279c122d24fc887b88dd8b40ca59e19f852eae7c4b002f5d69461206e02",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/coherent_execution.md": "14f9b909779146eeff099029039d15137eea3761e9972b31ef63cfeec9ab8287",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/fixed_readout.md": "60793e84ce625d826724af39d7e62da5b787ed3c19f098c0274d48fad867572d",
+    "02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/relational_source.md": "1e864fdf7ec32e9f58679d4fc8128110f28ac3daf277f29103e0fa4def4d65eb"
+  },
+  "checks": [
+    {
+      "name": "relational_source",
+      "command": "python 02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/check_relational_source.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"exact_six_shared_face_density\": \"-98913/160000\",\n  \"coframe_directions\": 16,\n  \"proper_shared_link_directions\": 24,\n  \"independently_reoriented_faces\": [\n    0,\n    2,\n    5\n  ],\n  \"orientation_and_proper_frame_pulled_back_source_equal\": true,\n  \"fixed_coframe_active_face_inversion_changes_density_sign\": true,\n  \"proper_frame_J23_component_flip\": true,\n  \"nonzero_relational_J23_pairing\": \"4/5\",\n  \"paired_opposite_orientation_density\": \"8/5\",\n  \"Golden_signed_pair_swap_and_coframe_sign_cancel\": true,\n  \"physical_Book_action_selection_claimed\": false,\n  \"scope\": \"Exact rational one-site four-shared-link regression of universal orientation/gauge identities; no finite lattice refinement claim.\"\n}\n"
+    },
+    {
+      "name": "coframe_equivalence",
+      "command": "python 02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/check_coframe_equivalence.py",
+      "exit_code": 0,
+      "stdout": "PASS exact symbolic all-order action identity with nonfactorable H\nPASS complete first source including moving matter/history coframe pullbacks\nPASS EXACT singular-Dt root, nilpotent unit-det Jacobian, full Hessian with degenerate B\nPASS hostile shell term; PASS positive-radicand/global-Jacobian distinction\n{\n  \"action_error\": 5.421010862427522e-19,\n  \"full_source_error\": 4.0245584642661925e-16,\n  \"root_hessian_identity\": \"exact rational\",\n  \"root_density_rank\": 1,\n  \"root_internal_B_hessian\": 0,\n  \"coframe_before\": [\n    2.03,\n    1.01\n  ],\n  \"coframe_after\": [\n    2.008762761474612,\n    1.0085965177901866\n  ],\n  \"matter_pullback\": [\n    2.8480950139724284,\n    0.18648016629199496\n  ],\n  \"history_pullback\": [\n    0.02061994621363852,\n    -0.000745903716109153\n  ],\n  \"native_price_selected\": false\n}\n"
+    },
+    {
+      "name": "coherent_execution",
+      "command": "python 02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/check_coherent_execution.py",
+      "exit_code": 0,
+      "stdout": "PASS actual CAR16 compact noncommuting ordered letters are orthogonal\nPASS nontrivial entangled reference has full rank three Gram\nPASS all 126 actual flag words for n=1..6: complete probability and exact branchwise oldRIGHT Gram\nPASS finite-cap all terminated/failed words obey exact binomial completion and expected clock\nPASS finite-cap expected executed steps is bounded by m/p²\nPASS native compact first jet preserves the complete oldRIGHT Gram\nPASS all retained words have exact ordered power first jets, not only equal probabilities\nPASS complete chronological flags × all17 outputs reproduce exact finite overlap formula\nPASS exact binomial second moment gives I_n=4κ[n²g²+ng(1-g)] and gain 1+(n-1)g\nREFINEMENT_TABLE L,n,block_overlap_loss,n²h4_factor,iid_necessary_records_at_error_0.1\n4 4 3.76802978537e-08 0.0625 44113342\n8 16 2.96684423005e-08 0.0625 704952281\n16 64 2.7656301263e-08 0.0625 11278375987\n32 256 2.7152627634e-08 0.0625 180453155324\n64 1024 2.70266683055e-08 0.0625 2887249624712\n128 4096 2.69951758993e-08 0.0625 46195993134928\nlimiting complete block overlap loss 2.69846782021512e-08\nPASS fixed-confidence coherent complete blocks use n=Theta(h^-2); iid primitive readouts need Omega(h^-4)\nPASS proper boost is Lorentz but failure is not scalar identity in the observer Hilbert metric\nPASS hostile positive-chart boost changes conditional oldRIGHT Gram; compact theorem cannot be exported\nSCOPE: compact Golden-Julia interface theorem. Actual charged G0 admission, noncompact physical source and GR remain separate.\nCHANNEL_LIMIT_TABLE L,n,max_mode_error,error_over_h2,retained_Stinespring_error\n4 12 0.0219010777412 0.350417243859 0.105055333806\n8 48 0.00551776838761 0.353137176807 0.052578823004\n16 192 0.00138225779726 0.353857996099 0.0262961252499\n32 768 0.000345742968414 0.354040799656 0.0131489118502\n64 3072 8.64469392857e-05 0.354086663314 0.00657456238827\n128 12288 2.16124342195e-05 0.354098122252 0.00328729432848\nPASS actual CAR16 channel has O(h²) deterministic coherent limit; entire retained Stinespring map has O(h) error\nPASS bounded real stopping time retains exact Wald code/clock budget E K=g E T\nCAP_COUNT 64 completion 0.5402865250609881 attempts 6.080119946268192 code 8.402519110066455\n"
+    },
+    {
+      "name": "fixed_readout",
+      "command": "python 02_REGISTRY/research/sources/d0_relational_coherent_synthesis_2026-10-20/check_fixed_readout.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"effects\": 17,\n  \"fixed_readout_dimension\": 16,\n  \"marked_directions\": 6,\n  \"GGrest_exact_eigenvalues_over_kappa\": {\n    \"12\": 1,\n    \"22\": 6,\n    \"24\": 9\n  },\n  \"compact_noncommuting_powers_checked\": [\n    0,\n    1,\n    2,\n    3\n  ],\n  \"common_reference_Gram\": \"I4/4\",\n  \"flat_fisher\": \"4*kappa\",\n  \"full_flag_fisher_n4\": \"4*kappa*(16*g^2+4*g*(1-g))\",\n  \"moving_P_power_programme_used\": false,\n  \"full_CAR16_joint_dimension\": 256,\n  \"full_CAR16_Gram\": \"I16/16\",\n  \"full_CAR16_GGrest_nonzero_eigenvalues_over_kappa\": {\n    \"48\": 1,\n    \"88\": 6,\n    \"96\": 9\n  },\n  \"all_grades_retained_full_CAR16_probabilities_equal\": true,\n  \"native_fixed_POVM_payment_derived\": false,\n  \"arbitrary_RIGHT128_preparation_claimed\": false\n}\n"
+    }
+  ],
+  "gates": [
+    {
+      "command": "python tools/validate_repo.py",
+      "exit_code": 0,
+      "stdout": "claims=889 assumptions=31 aliases=58 formal_support=170 lean_closure=905\nPASS warnings=0\n"
+    },
+    {
+      "command": "python tools/validate_work.py",
+      "exit_code": 0,
+      "stdout": "PASS work_validation: active work plane clean and enforced\n"
+    },
+    {
+      "command": "python tools/validate_agent_protocol.py",
+      "exit_code": 0,
+      "stdout": "PASS agent_protocol: cold-start task metadata enforced\n"
+    },
+    {
+      "command": "python tools/gr_assembly.py check",
+      "exit_code": 0,
+      "stdout": "{\n  \"discharged\": 1,\n  \"obligations\": 18,\n  \"results\": 49,\n  \"scientific_promotion\": false,\n  \"valid\": true\n}\n"
+    }
+  ],
+  "additional_checks": {
+    "script_syntax": "PASS",
+    "packet_relative_links": "PASS",
+    "packet_whitespace": "PASS",
+    "primary_append_only": "PASS"
+  },
+  "independent_reviews": [
+    {
+      "reviewer": "source_equivalence",
+      "scope": "compact scalar-failure execution, complete retained-law source errors and fixed readout",
+      "outcome": "PASS after explicit readout construction"
+    },
+    {
+      "reviewer": "structural_synthesis",
+      "scope": "explicit nonlinear coframe map, full CAR16 fixed readout, final composition/source scaling",
+      "outcome": "PASS with positive-root-chart and small-step derivative hypotheses incorporated"
+    }
+  ],
+  "scope": "Analytic finite-dimensional theorems with exact symbolic/rational regressions and separately identified numerical refinement checks. No new Lean proof, accepted assembly application, native price selection or GR closure is claimed. Unchanged expensive suites were not rerun."
+}

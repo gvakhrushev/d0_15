@@ -1,0 +1,37 @@
+{
+  "birth_count_excludes": "raw Fourier source, physical routing, actual unused programme/circuit ancillas and other source factories",
+  "cleaned_scratch_bits": 112,
+  "eighty_independent_W_ready_probability": "[0.990208970059558764564522743067911249518208735272254008375521634651089845191, 0.990208970059558764564522743067911249518208735272254008375521634653381384782]",
+  "exact_Spin_identity_all_four_columns": true,
+  "exact_full_input_columns": 32768,
+  "exact_real_fourier_components_checked": 16384,
+  "exact_refinement_readiness_exponent": 1040,
+  "exact_routed_sourceI_square_all_port_scratch_spin_columns": 16,
+  "fixed_kappa_lookup_BDD_nodes": 105,
+  "full_cost_info_and_GR_closed": false,
+  "full_uncompute_on_every_bitstring": true,
+  "ideal_conditional_source_upper_exponent": 2082,
+  "kappa_table_output_bits": 8,
+  "literal_CX_count_excluding_scratch_preparation": 225,
+  "literal_SourceI_count_excluding_routes": 2,
+  "literal_logical_toffoli_count": 456,
+  "max_listed_births_per_W": 759888,
+  "operation_order": "W_y on original Y, then controlled subtraction and equality filter",
+  "original_fourier_kappa_pairs": 64,
+  "original_reference_L4": 256,
+  "per_copy_heralded_W_ready_probability": "[0.999877016597332606982585897466637287654488982335160551384792230683716804687, 0.999877016597332606982585897466637287654488982335160551384792230683745728526]",
+  "physical_fresh_purifier_access_proved": false,
+  "preserves": "site-Y, pair-index j, full unspecified oldRIGHT; type becomes 0 only on the declared Fourier subfamily",
+  "refinement_identity_dyadic_levels_checked": [
+    4,
+    8,
+    16
+  ],
+  "scratch_preparation_known_one_conditional": {
+    "CX": 224,
+    "golden_G": 112
+  },
+  "selector_reads_only_low_site_bits": 8,
+  "status": "PASS",
+  "true_original_global_field_writer_cost_computed": false
+}

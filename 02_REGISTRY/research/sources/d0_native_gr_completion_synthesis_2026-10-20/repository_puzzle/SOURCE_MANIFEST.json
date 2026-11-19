@@ -1,0 +1,312 @@
+{
+  "scope": "Historical exact inputs; no current-branch equality or physical price binding inferred.",
+  "integration_head": "d99d965fcc87a15a1b90b74af525e383331b3928",
+  "sources": [
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "git_blob": "79ad345ddef6bb06c638f41721db1a84843e4a9b",
+      "sha256": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md",
+      "git_blob": "7691ddd6f62205fdf1a3da20795c80bfcea59392",
+      "sha256": "541f0635ca266df9d99fce79358b8b7e5800e650cde9cb53a86147d2e7374767"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/claims.csv",
+      "git_blob": "fc24227434bc917fa40ec880e9caff9b6b6b07b4",
+      "sha256": "9c7a38e9016061dd76ac999f1039686c2c1d08a7e30355c70a635a1433e9358f"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_BOOK_FLOW_HESSIAN_EQUALS_ORIGINAL_ARCHIVE_METRIC_AND_FUTURE_SOURCE_SELECTOR_2026_10_19.md",
+      "git_blob": "baa8c037515a391a525900becb8aec87e8262d19",
+      "sha256": "fb22e6afbf20b471e71e80b1f8bc2c9425106eed7cd72b428d9ac3ef14318a7c"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md",
+      "git_blob": "17d65cf5d4aec2b88a10857ea1f1b33b5df87668",
+      "sha256": "887840b4cf2b341c72b49e5f53d395923ee60a2fc605dc1274f073b544290e46"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "git_blob": "282350ba238c2a21039002bc22020223d4a90eef",
+      "sha256": "1ada4c749360869f32407fc9f0516a645180b4cc3e179b5d7af1bd3961c7dcf9"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_GLOBAL_327_BOOK_FISHER_CAR16_MAGNETIC_WICK_AND_DARK_REVIVAL_2026_10_20.md",
+      "git_blob": "c44191f44e57e78a73fe96609ef8b3759e9508d2",
+      "sha256": "6ead804f5e220ec918345e61538fd1d9ae85e34370caa0d92d217814f5702b05"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+      "git_blob": "b1923f70df7495d06f68b96e1e2179648bc8e629",
+      "sha256": "aa593fa464a4d7e067d0a1ba763121fd229192b6d5c79d6f9b20d06469cb1d25"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_NATIVE_BRANCH_INFORMATION_COCYCLE.md",
+      "git_blob": "841795793134245e2beb67ea2b59b0e2a1bd730e",
+      "sha256": "cf77a70da503c0a58725e1470ed9b73a493ee01a82293058d49dfd6758ae735a"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_NATIVE_PARTITION_CORRECTED_BRANCH_INFORMATION.md",
+      "git_blob": "dd325fed87dc1284dd8ee64e86e34587be31e7d3",
+      "sha256": "a4e8c15de4d736366e85f0bd19a2a394f6372295426b830d8a21bd25fbb3190c"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+      "git_blob": "9ebd9b691d25ef6144e6aa4fe1851f7b026cc24e",
+      "sha256": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_NATIVE_RELATIVE_OBSERVER_JOINT_LIFT.md",
+      "git_blob": "1184fd16c915ac1e39d95e79e3c7ea1ad660ec16",
+      "sha256": "3d3b0be9aeace97afea91ef9ca6b18cbb495c58999c1d16280b17ba6336d97ef"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_ONE_8440_BOOK_CLOCK_ACCEPTANCE_GAUGE_AND_PAID_SOURCE_NONSELECTION_2026_10_20.md",
+      "git_blob": "5c4d7830580c99e0bfc7f7a31129885d32be898c",
+      "sha256": "401c360042dc93ba6e5c91b16671723c50b1a133cd17e00a50d0409ba4020455"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_ONE_8440_BOOK_CLOCK_AND_143480_GOLDEN_SOURCE_GLOBAL_INVERSE_2026_10_19.md",
+      "git_blob": "7628bbd25d53ffa2b3ccdca22afbd60168f61d73",
+      "sha256": "81fe97379affc1055156acab61a9f96a90f4217f8cef6f656995933edeaf78d6"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_ALL_PATHS_FLOW_PRESSURE_ACTION_AND_EXACT_HISTORY_SCHUR_2026_10_19.md",
+      "git_blob": "6ee47a9bc73a75a10873495ab68aa1a03e213a46",
+      "sha256": "21300f0d518581bf32f2bfb82e4eece9724f84d454b17db474daa3bc1d4ed778"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "git_blob": "de8341a8b33d53bd4b26e044a1560c47c51e2745",
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+      "git_blob": "038061d0ae52323bd655dc07943b5b175536f61f",
+      "sha256": "d2afefcc9470052b0e21bd730c80fa799dd6d67e32a3e8e88836110ff0f99b01"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md",
+      "git_blob": "b378006fa38617ab7ec8e1cda4431336a0388a68",
+      "sha256": "46c08c8295401cb42531ec3b974709638ec5f913dbd1b64c0210efa3b99953ba"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/source_selection/records/STOPPED_ADAPTIVE_EXTENSION.md",
+      "git_blob": "b9f2776e280a75e1e66aa70c608e5090a720575c",
+      "sha256": "b63198714ca89df194ff0effe7b821ce402c886a4def2fb0342ffe7d4ab17d9e"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/stationary_information/EQUATION_EQUIVALENCE_AND_RECORD_TEST.md",
+      "git_blob": "3b19a0c6c57907bce92c284cb75ebe105a03ac56",
+      "sha256": "45cfe4eb454a11433a08168fd20797ff861dca67ce9147dbf7f3a8c341d6de77"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md",
+      "git_blob": "21031109172282833a938a79cef2ff7dec889266",
+      "sha256": "75845813d20ecf7b585fb7b7a7bef8b8170a711e94a56bb0df0cc3546622a036"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Claims/GluingAnomalyTime.lean",
+      "git_blob": "93a37aa0282feecac7b1b08797a41a209c6794f7",
+      "sha256": "c4bd74e8d23272690320434d9b22fe1cbfac8a259bbe4f9ef2fd4056aaef4625"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Core/BornFinite.lean",
+      "git_blob": "3435f611ccc4d8504f5f9ff85410fe4bfde2eaa3",
+      "sha256": "5fe9a40a3d0bc5528ba146192dbca72c782d502a83233e7430630ea648f75332"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Core/BornFiniteEffects.lean",
+      "git_blob": "80acd67fe5ee15a4f59f0fd2f4d6cff814df5fc5",
+      "sha256": "0d4fdcb7b7233191b19eb07ccab61ff1901eb26bff4147fccc4a03ab13cdf66f"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Core/BornQuadraticOrigin.lean",
+      "git_blob": "b49136acaf833a10049720924dbb808111561112",
+      "sha256": "8f32214f018417c6e8f3e701a381256093dd612f770277cfcb7babe1a2ac95c0"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Core/BornQuadraticResponse.lean",
+      "git_blob": "b72d178a999ffd9c82ff4925ff60963422642041",
+      "sha256": "d5e9785c6dad2fa928d27ad1791ed7ee63148a1890a99af8b5a38b40b2ca8d83"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Core/Delta.lean",
+      "git_blob": "5c22d1ea748ddf805c4aeb4ad95d3ef72372af91",
+      "sha256": "c6132d9a2042b1bb06ec57664da1247fed8f528569c639c5cac5bbe17f792332"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Defect/Pi0BranchDefect.lean",
+      "git_blob": "b44a8aee0be0a5ed7eed8134e859c22ab3b958ac",
+      "sha256": "6caa49af8726d1071325dfd043def0e191ba9035520a435fcaf003933fbdb776"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Defect/ProjectiveGeneration.lean",
+      "git_blob": "8e5bc5e7ab4dac161524973d75bb0d53f3ecbd6a",
+      "sha256": "f649c52cdc314c912a6cb22bc7fb6ec43779f08811f6cb3616698c175e1ac9f5"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "git_blob": "bf3699925e35a290e54536c47b5a916832deecfc",
+      "sha256": "2e06975acfff731956536189715a7d4427a75fdfbcf7ed94b6454fd336929578"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+      "git_blob": "c0cbf1d446f428e166ae30f90f9caba1ce60c091",
+      "sha256": "15143b63f2bf1cc51493e3efb36c9da57c203d7e680e2f1370cf2311eb2e9ef1"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Foundation/FutureExecutionCompleteness.lean",
+      "git_blob": "693617f452342f9b3cb8324f124a912e0a4561e6",
+      "sha256": "d202822470539f777e0f54df97d8bf9aaa983e032291195e9748036d7f00ec8c"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "git_blob": "5bf153f4c74325366c8c57ce404dcdcb4fc87dc5",
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Foundation/TheoryTransfer.lean",
+      "git_blob": "a882f38aa1caf4d619c6e1f84c73ebe97e4b127a",
+      "sha256": "c164818dc50de94afad690946d4c209309350340b5cb1586ddc9f91f74bcb203"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Foundation/VerificationCore.lean",
+      "git_blob": "01b02ebbe81a62464e81d5c397c101fd60fff4f9",
+      "sha256": "382b2b506e17c6422623b6a2581756468e157def9ea783445f0943bd124a19d7"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean",
+      "git_blob": "c4014d2dcf54f67fe9fbadaa25ff281beb1d289d",
+      "sha256": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Geometry/Pi0DiscreteAngle.lean",
+      "git_blob": "be10e6470f8a1fcf2ed1d5ebab8f09d302453ba0",
+      "sha256": "4a4c8eb00100daa0c6f998e220087c13b803f9d816cf7b3ee0185019b9a20112"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Research/SchurStationaryTransfer.lean",
+      "git_blob": "e88a0c5e4da3e456ab3a0700a8cf65284d9a1f48",
+      "sha256": "334c4593018a243f4924beeac058b0e9529cdc0baa507a68deff2e66aa7d1784"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectral/AlphaFeshbachDixmierOwner.lean",
+      "git_blob": "53a234334f72059f32c05c82d6ce54368215182f",
+      "sha256": "1bc0d97f05cf9a22478d8f4debbe47884feb856c79a91fff45bd23c438f2a5db"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectral/AlphaLogCesaroMeasurability.lean",
+      "git_blob": "e8e8e00ba1865efacd55d324084b0f961438d497",
+      "sha256": "a0aa8384d37d1fc4cf8979ceac403270369cda7dd4f04805f7f3d2089f1a478d"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectral/AlphaPresentCoreMaximalityNoGo.lean",
+      "git_blob": "1b3a1cc5e16848ba6fbe1fe53b3a0dc1af598da1",
+      "sha256": "f28f12fd4e53650246ff7b13adfd4226ffdc3158d2fd012168e2316f1a347aeb"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectral/AlphaProfiniteSpectralTower.lean",
+      "git_blob": "69329ce1c3c09503033c25a389d0401ab8130b36",
+      "sha256": "309f9774eabd4a7229da530862a04f9ae756c6dafe6c582b530c6e3e961b2730"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectral/DeltaAlphaExact.lean",
+      "git_blob": "d37d159263a5ffeebafaf16ba3561dccb4f79fbe",
+      "sha256": "d52161683cee50cd8b39a290873c4e9ca3a8eca7a07612d687670c422bf77f21"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectral/DeltaAlphaMoment.lean",
+      "git_blob": "4a963d0b27763d1304d2e40b35ba54e09548a497",
+      "sha256": "fd63b140bcf79bcb061b710691ae07ee5ac02b5568286c38a242979ddef7e787"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectral/DeltaAlphaNormalizationNoGo.lean",
+      "git_blob": "723faab6d1e711e2219cb58b3024dc5052d79527",
+      "sha256": "bef2b8cd80d0af0565b264628d8c6ed54a2524f1b6e82c5c402a2c1c6ed1c6a1"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectrum/BranchDefectProjectiveGeneration.lean",
+      "git_blob": "80cdd2bb6647a974555c1385318b860650cde618",
+      "sha256": "31c58f349fc4c239111718f7bb198634d1079df5ec5a2cb400cbbfd351323360"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectrum/NO_GO_PI0_BRANCH_DEFECT_GENERATION.md",
+      "git_blob": "2e6c42d07655963f7c94ffab81280dc6ee66a9c4",
+      "sha256": "d7672dfbe1ceeba3ece72da3b8586d2c8f7bfc2a5c17e10513a46792b518976d"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/Spectrum/Pi0BranchDefectGeneration.lean",
+      "git_blob": "72bf0f4076cd2864b4a830de70c0e8896081a798",
+      "sha256": "8ad406aee9884a98a48d8117892d6aa78618544bec4bbef14cbc550e2aa722b8"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "03_FORMALIZATION/D0/VNext2/ScenePathHistoryCanonicity.lean",
+      "git_blob": "300c39b1d22bf63fd41bd202335057b4d6282e69",
+      "sha256": "2ed1da971417e0949b9f225ad768d80314fbafe0f930b0fcb8c0a662e0de66e0"
+    },
+    {
+      "commit": "2c592f9b9437cd302fcd39352b85212341bff968",
+      "path": "04_CERTIFICATES/vp_alpha_feshbach_residue_finite_sum.py",
+      "git_blob": "87cb699f4d6d357ae045a1c1c5b89b92c3330e7a",
+      "sha256": "db19a683b5f3316c4cc625c16b549fe9f983870816b4218ecf21461ab048da0a"
+    },
+    {
+      "commit": "d99d965fcc87a15a1b90b74af525e383331b3928",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/D0_ONE_SOURCE_BREAKTHROUGH_SYNTHESIS.md",
+      "git_blob": "6366d1bbd3b2947b00f5b07b85feb6dafe47bf31",
+      "sha256": "ea5e70fdd317c50df685cc5e510a2876ad2fc3bc3a8ab4ded53785b727bde67b"
+    }
+  ]
+}

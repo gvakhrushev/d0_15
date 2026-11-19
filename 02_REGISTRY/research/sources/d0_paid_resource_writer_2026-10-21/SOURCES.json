@@ -1,0 +1,33 @@
+{
+  "input_ref": "b60a111b43f723a841d253b1d5bd9650c46b2cf8",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md",
+      "blob": "91ecd208b346665f38f268d2e39d7dd16b57cab6"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "blob": "92b9003d783c24b1883a2a21f8b30625078afff7"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+      "blob": "c5f4471d91e28fc1483a22c55f2cf1f1bb62192a"
+    },
+    {
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "blob": "99d35958a4cd46646e151b0c25b8f042f73e6f78"
+    }
+  ],
+  "external_background": {
+    "arxiv": "1807.03206",
+    "doi": "10.1103/PhysRevLett.122.020502",
+    "used_as": "prior-art attribution, construction proved directly"
+  },
+  "supplied_prior_packet": {
+    "path": "D0_native_absolute_completion_2026-10-21/PROOF.md",
+    "sha256": "b760e5f82c6df44687403c2d9543ba20b730a4aad99fe1393a6709b3f99736fe"
+  },
+  "source_owner_results_consumed_not_replayed": true,
+  "independent_review": false,
+  "GR_closed": false
+}

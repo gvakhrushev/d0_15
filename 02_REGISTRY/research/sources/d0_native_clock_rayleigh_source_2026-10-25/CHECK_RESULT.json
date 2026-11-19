@@ -1,0 +1,112 @@
+{
+  "Book03_25_selects_this_R": false,
+  "GR_closed": false,
+  "all_native_stationarity_or_admission_proved": false,
+  "all_unoptimized_finite_R_gaps_claimed": false,
+  "checks": [
+    "generic N5 d2 complete unitary clock is Hermitian and normalized occupation commutes",
+    "every stationary eigenvector Rayleigh source obeys endpoint speed divided by N",
+    "full spectral-diagonal normalized occupation obeys the same source bound",
+    "all small-clock eigenvalues equal every endpoint phase root with no mode removed",
+    "minimum over all small-clock roots equals the principal-phase ground formula",
+    "moving fixed-spectrum occupation commutator contributes zero at stationarity",
+    "ordered minimizing fixed-spectrum envelope finite source obeys endpoint speed divided by N",
+    "constant endpoint prefix-gauge derivative is the actual full clock commutator",
+    "stationary clock and fixed-spectrum moving-gauge source vanish despite large full derivative",
+    "negative control nonstationary preparation detects a large constant-endpoint source",
+    "negative control commuting variable occupations have an unconstrained source",
+    "literal clock stage0 compression is exactly I_d and its derivative block is zero",
+    "stage0 preparation has exactly R=1 and DR=0 for any normalized moving internal density",
+    "the consumed complete native writer receipt is the frozen PASS42 7y application",
+    "exact Q(p) finite native features give u67-u1 greater than 1/50",
+    "exact Q(p) finite native features give u1-u1161 greater than 1/100",
+    "exact squared norm bound gives a less than 1/13000 on the whole u interval",
+    "full H plus stationary-or-optimized fixed-spectrum R leaves S-prime greater than 3/65000",
+    "both optimized full-source finite gaps exceed 4e-7 for every fixed occupation spectrum",
+    "native n1 keeps the genuine fixed-parameter J source above 1/5000",
+    "native n1 ground clock energy obeys the whole paired spectral lower-mode formula",
+    "native n67 keeps the genuine fixed-parameter J source above 1/5000",
+    "native n67 ground clock energy obeys the whole paired spectral lower-mode formula",
+    "native n1161 keeps the genuine fixed-parameter J source above 1/5000",
+    "native n1161 ground clock energy obeys the whole paired spectral lower-mode formula",
+    "ground-energy optimized example preserves both actual native full-source contrasts"
+  ],
+  "checks_passed": 26,
+  "inputs_sha256": {
+    "d0_native_clock_rayleigh_source_2026-10-25/check_clock_rayleigh_source.py": "98e75b76fa0b62d718aae8b90e38065bb747215b16456e6aae0000fa879316cf",
+    "d0_native_execution_domain_2026-10-24/check_native_execution_domain.py": "6da9769a550fd9918dcb6cd3b5795aaf66cfdc21db285fb963c198d99f949190",
+    "d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "d0_native_recorded_info_source_2026-10-25/recorded_info.py": "57b346d768c7242c114f351876a5f187f3d1b0bc431171cd7417d26080496682",
+    "d0_native_terminal_code_writer_2026-10-25/BOOK_PROOF.md": "d99017cac96509a460fa78720c3c7b279d98262f5755be5fd1a81c3e9cfef67c",
+    "d0_native_terminal_code_writer_2026-10-25/CHECK_RESULT.json": "784f804c728f388807a78aae18225dd4e6545c3f4fe4d734eb316495d30960f9",
+    "d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md": "9c513067559c9cd89ac4c911d01a21e06c9b4d2cd962d5d568b51459ae3d0866",
+    "d0_native_terminal_code_writer_2026-10-25/terminal_code_writer.py": "d3a2b0edabf58fd96bded3492fa1a481eabe83859f85a9901740ff828e28658b"
+  },
+  "long_heat_replayed": false,
+  "matrix_scope": "generic N5 d2 full10 clock only; no native512 or long clock matrix replay",
+  "numeric_arithmetic": "70-digit mpmath, non-interval; exact Q(p)/Fraction certificates separate",
+  "oldRIGHT_subset_preparation_admission_proved": false,
+  "old_PASS42_replayed": false,
+  "original_spatial_R_identified_with_clock_R": false,
+  "primary_proof": {
+    "bytes": 9138,
+    "section": "7z",
+    "sha256": "2fa5d80f67afbedac07e486da9e7e1e423abd4ae35a7ab0d92d41d20ba57c46f"
+  },
+  "rows": [
+    {
+      "B_plus_ground_R": "0.401901569071818680002335939163",
+      "D_J": "0.000300925146588830904481941384501",
+      "feature_Qp_sha256": "71696f850c345971b274deabd3e881d426ca23f96ea939adde8ea5b7ab4e3cc6",
+      "ground_clock_energy": "1.05170868485239163084925406334e-13",
+      "n": 1,
+      "old_B_full_writer": "0.4019015690717135091338507",
+      "u": "0.236067977499789696409173668731"
+    },
+    {
+      "B_plus_ground_R": "0.401907690629165348677373563516",
+      "D_J": "0.000300924258383194104636104448844",
+      "feature_Qp_sha256": "01b0f55b0f4545b48e110a4faa6fbdb9fa248d6bbfe640d77de63ff2b05136f4",
+      "ground_clock_energy": "9.95852258078635161212678782617e-14",
+      "n": 67,
+      "old_B_full_writer": "0.4019076906290657634515657",
+      "u": "0.256410466193488080005267485529"
+    },
+    {
+      "B_plus_ground_R": "0.401898084963951501305934356154",
+      "D_J": "0.000300925652111172964057102439679",
+      "feature_Qp_sha256": "4794fc2f968faf6828f6588965f91313bda30051c33facb46bb37de7fe0216cc",
+      "ground_clock_energy": "1.08363180679156154174907712035e-13",
+      "n": 1161,
+      "old_B_full_writer": "0.4018980849638431381252552",
+      "u": "0.224489998767439658929238285145"
+    }
+  ],
+  "runtime": {
+    "mpmath": "1.3.0",
+    "python": "3.9.6"
+  },
+  "schema": "d0.native-clock-rayleigh-source-check/1",
+  "small_clock": {
+    "N": 5,
+    "d": 2,
+    "endpoint_speed_over_N": "0.224434003155976557143514404007",
+    "matrix_dimension": 10,
+    "nonstationary_source": "26.1629509039022584028312413979",
+    "prefix_gauge_full_DDelta_norm": "26.1629509039022584028312413979",
+    "stationary_R_source": "-0.0137868024250720138555457055546",
+    "variable_occupation_source": "-93.6669475048709630377129865738"
+  },
+  "status": "PASS",
+  "uniform_bounds": {
+    "J_source_strict_lower": "1/5000",
+    "S_source_strict_lower": "3/65000",
+    "a_squared": "25/4549912731",
+    "a_strict_upper": "1/13000",
+    "optimized_gap_strict_lower": "4e-7",
+    "u_interval": [
+      "1/5",
+      "3/10"
+    ]
+  }
+}

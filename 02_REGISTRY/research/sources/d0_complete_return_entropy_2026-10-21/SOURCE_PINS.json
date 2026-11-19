@@ -1,0 +1,35 @@
+{
+  "input_commit": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_WORK_RETURN_SOURCE_SYNTHESIS_2026_10_21.md",
+      "sha256": "7184e3cd94ff501e5ac213f6d632dbf6c465ea70d3eb363b5eadd91b30761ad5",
+      "git_blob": "1a660bc859e536137bbc6fc7f38ab4c7cfa39d26",
+      "use": "immutable existing owner; no unchanged suite replay"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_nested_return_source_2026-10-21/check_native_nested_return.py",
+      "sha256": "727e4ae3e113f1195e0fb9c330dadeb7a01154424c80c0b2816a11b740b14cb7",
+      "git_blob": "81232f53b7fdf76067a35cfdd508a8fe924e2730",
+      "use": "immutable existing owner; no unchanged suite replay"
+    },
+    {
+      "path": "04_CERTIFICATES/order_memory_control_verify.py",
+      "sha256": "bb72fe40326dc2d65d55f4f6d73564b7faef8f247774bf51771e3110f04e0c1a",
+      "git_blob": "ba02280e475b0124395622bfd99257c2820ae026",
+      "use": "immutable existing owner; no unchanged suite replay"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_STOPPED_RECORD_INFORMATION_SOURCE_2026_10_21.md",
+      "sha256": "c6f85eba8205db743f3f5b11115af5f48bb6ef36923129fbf07dab6d7cd72b27",
+      "git_blob": "798cfe26f6f9b58a7ae2102d1d82ad4b421a78a1",
+      "use": "immutable existing owner; no unchanged suite replay"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CLOCK_SCHUR_RETURN.md",
+      "sha256": "0ea93feafeab40582807e4dcc21ce7e6c5f8852a898c23fa9c49d3fe565bd8e3",
+      "git_blob": "c9501fa1ae11f0c30ef1ccb190c9ff7b812b5444",
+      "use": "immutable existing owner; no unchanged suite replay"
+    }
+  ]
+}

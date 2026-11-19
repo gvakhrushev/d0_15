@@ -1,0 +1,9 @@
+{
+  "prefixes": 5,
+  "exact_moments_per_prefix": 160,
+  "carrier_before_last_birth": 16,
+  "last_birth_age": 4,
+  "winding_delta_n4": -64,
+  "winding_delta_n8": 0,
+  "CT7_relative_tail_upper": "2/53"
+}

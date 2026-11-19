@@ -1,0 +1,43 @@
+{
+  "schema": "d0-primary-full128-source-validation/1",
+  "date": "2026-10-20",
+  "mathematical_snapshot": "cf8957fd2382153e3c7746bd86322feefdf50126",
+  "snapshot_is_local_verification_not_publication": true,
+  "integration_base": "3bcb88ffbe3c4d68e1230524ea7fabb069215585",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.2.6",
+    "sympy": "1.12.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "isolated_replay": {
+    "worktree": "C:\\Users\\kmeze\\.codex\\worktrees\\primary-full128-verify\\d0_15",
+    "head": "cf8957fd2382153e3c7746bd86322feefdf50126",
+    "clean_before": true,
+    "command": "python -B -W error 02_REGISTRY/research/certificates/a4d_primary_full128_information_source_check.py",
+    "exit_code": 0,
+    "stdout": [
+      "PASS original full128 record, fixed33-vector isometry and actual primary preparation",
+      "PASS true-adjoint Julia jets, paid-port source and explicit regularized entropy jets",
+      "PASS frozen input provenance and carrier/scope interface",
+      "SCOPE: one-round information-source candidates; full physical price and GR remain open."
+    ],
+    "clean_after": true
+  },
+  "repository_gates": {
+    "git_diff_cached_check": "PASS",
+    "validate_repo": "PASS warnings=0",
+    "validate_work": "PASS work_validation: active work plane clean and enforced",
+    "validate_agent_protocol": "BASELINE_FAILURE: gravity assembly: attempt question digest does not match its scope/assumptions",
+    "task_dispatch_and_assembly_template": "Same pre-existing digest failure; no assembly/lifecycle mutation"
+  },
+  "review": "REVIEW.md binds independent acceptance to proof, summary, helper, checker, receipt, pins and wrapper SHA256 values",
+  "validation_budget": "Changed full128 application and ordinary repository gates only; unchanged all40, prior Rayleigh proof, Lean and unrelated heavy certificates not replayed.",
+  "scope": {
+    "exact_compression_and_regularization_theorem": true,
+    "numerical_source_signs_interval_certified": false,
+    "physical_Book_Info_identified": false,
+    "complete_physical_payment": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "patch_applied_in_clean_repository": true,
+  "copied_files": 8,
+  "all_repository_bytes_equal": true,
+  "clean_replay": {
+    "GR_closed": false,
+    "authored_conditions": 100,
+    "independent_review": false,
+    "inputs_unchanged": true,
+    "status": "PASS",
+    "upstream_root_existence_reproved": false
+  },
+  "clean_replay_matches_original": true,
+  "hostile_integrity_checks": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/PROOF.md",
+      "mutation": "appended newline",
+      "rejected": true
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full_hjr_forward_clock_2026-10-21/RESULT.json",
+      "mutation": "appended newline",
+      "rejected": true
+    }
+  ],
+  "all_repository_bytes_equal_after_hostile_restoration": true,
+  "status": "PASS",
+  "scientific_authored_conditions": 100,
+  "checker_normal_equals_optimized": true,
+  "wrapper_normal_equals_optimized": true,
+  "independent_review": false,
+  "upstream_root_existence_reproved": false,
+  "remote_publication_performed": false,
+  "remote_CI_run": false,
+  "main_changed": false,
+  "GR_closed": false
+}

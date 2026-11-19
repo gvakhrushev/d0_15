@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "commit": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_columns": 32,
+  "work_addresses": [
+    0,
+    3,
+    4
+  ],
+  "tested_pairs": 10,
+  "word_lengths": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    6,
+    18,
+    18
+  ],
+  "named_gate_count": 10,
+  "relation_rank": 9,
+  "kernel_generator": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "scope": "Fixed numerical addressed gate charges conditional on equal-length same-operator price descent; no assumed or fitted physical charges."
+}

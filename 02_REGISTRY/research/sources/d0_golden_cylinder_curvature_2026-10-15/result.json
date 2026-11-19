@@ -1,0 +1,37 @@
+{
+  "GR_closed": false,
+  "all_mesh_physical_refinement": false,
+  "cost_cuts_tested": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "curvature": "[phi^4*(M_t-M_0)-(M_(phi*t)-M_0)]/t^2",
+  "exact_AF_intertwining_for_fixed_geometric_inputs": true,
+  "exact_checks": 120,
+  "general_calibration": "2*p^3/[a*t^2] times the even scale contrast, a=Tr(rho E_mixed)>0",
+  "golden_histories": {
+    "FF": "p^2",
+    "FR": "p^3",
+    "RF": "p^3",
+    "RR": "p^4"
+  },
+  "mass": "D+p^3*t^2*R+2*p^3*t^4*sum_j(det A_j)",
+  "native_full_action_binding": false,
+  "new_Lean_compilation": false,
+  "noncommuting_fixture_R": "70",
+  "noncommuting_fixture_quartic": "36",
+  "raw_mass_and_blank_jets_retained": true,
+  "requires_rotational_fourth_moment": false,
+  "rotated_quartic": "-9876/625",
+  "schema": "d0-golden-cylinder-curvature/1",
+  "scope": "finite calibrated readout of existing shape Jacobians on actual golden cylinders; not admission of geometric operator or physical action",
+  "source_base": "51b1d1a1546305814f8751b9cf9800531d721400",
+  "uses_topological_cancellation": false
+}

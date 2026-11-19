@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "GR_closed": false,
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "parent_guarded_live_all_32_columns_replayed": true,
+  "logical_clock_dimension_if_all_nine_births_first": 10895328,
+  "two_degree_modes": 4630514400,
+  "stage_mark_eigenvalues": [
+    "1",
+    "phi"
+  ],
+  "stage_marks_have_equal_trace_and_spectrum": true,
+  "mark_plus_mean": "1+p*(p*pi+p^4)",
+  "mark_minus_mean": "1+p*(1-p*pi-p^4)",
+  "declared_guarded_CQ_code_source": "p^2*Dpi",
+  "unit_step_ledger_extra_source_required_for_zero_graph_row": "-p^2*Dpi",
+  "plus_model_total_source": "2*p^2*Dpi",
+  "minus_model_total_source": "0",
+  "fixed_ideal_clock_graph_source_wrt_input_pi": "0",
+  "only_with_exact_graph_binding_minus_model_passes_this_row": true,
+  "actual_D0_tariff_selected": false,
+  "actual_full_terminal_factory_and_failure_clock_constructed": false,
+  "physical_source_bridge_and_perturbative_bound_proved": false
+}

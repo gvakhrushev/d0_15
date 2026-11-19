@@ -1,0 +1,47 @@
+{
+  "schema": "d0-direct-forcing-mutants/1",
+  "status": "PASS",
+  "results": [
+    {
+      "name": "erase_alternative",
+      "rejected": true,
+      "last_error": "AssertionError: positive_difference_factor"
+    },
+    {
+      "name": "wrong_third_moment",
+      "rejected": true,
+      "last_error": "AssertionError: actual_count_readout_polynomial"
+    },
+    {
+      "name": "wrong_radial_direction",
+      "rejected": true,
+      "last_error": "AssertionError: complete_radial_difference"
+    },
+    {
+      "name": "drop_h_minus2",
+      "rejected": true,
+      "last_error": "AssertionError: normalized_exact_formula"
+    },
+    {
+      "name": "lose_new_cutoff",
+      "rejected": true,
+      "last_error": "AssertionError: exact_all_old_and_new_refinement"
+    },
+    {
+      "name": "wrong_native_reference",
+      "rejected": true,
+      "last_error": "AssertionError: operator_likelihood_refinement_0"
+    },
+    {
+      "name": "erase_return_zero",
+      "rejected": true,
+      "last_error": "ValueError: outside native forbid-11 prefix code"
+    },
+    {
+      "name": "false_full_action_claim",
+      "rejected": true,
+      "last_error": "IMMUTABLE_RECEIPT_MISMATCH"
+    }
+  ],
+  "source_sha256": "d5660e27d0fe2a6f46472084de30ef197fb7a187ff27c269574032a1dd189491"
+}

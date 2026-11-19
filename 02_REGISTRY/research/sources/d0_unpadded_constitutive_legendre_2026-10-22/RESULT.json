@@ -1,0 +1,83 @@
+{
+  "status": "PASS_LOCAL_STRICT_ORIGINAL_UNPADDED_GOLDEN_N1_CONSTITUTIVE_2D_PLUS_FULL42",
+  "date": "2026-10-22",
+  "owner": "Existing scientific Draft PR #334 / constitutive native-programme-v1",
+  "original_native_inputs": {
+    "literal_F_R_report": "F=0 cost1; R=10 cost2; actual code-minus-measured-Shannon net price",
+    "p": "(sqrt(5)-1)/2",
+    "fugacity": "2^-20",
+    "cap": 1,
+    "sigma": "minus",
+    "geometric": "unchanged original 6 based G2STAR plaquettes, 16 coframe and 24 proper SO+(1,3) link directions",
+    "material": "two original real CAR/Clifford scalar currents",
+    "nonnull_root": "existing independently strict h0 unpadded 42-Euler Banach certificate, two cells, radius 1e-24",
+    "physical_full_Book03_compulsory_selection": false
+  },
+  "original_operand_chart": {
+    "x": "original tau*f_B/rho=-tau*f_canonical/rho",
+    "y": "original tau*q/rho",
+    "domain": "|x|<=0.01 and |y|<=0.01",
+    "certified_outward": "mpmath.iv 100 decimal digits, literal exact Golden polynomial and analytic derivative intervals",
+    "click_lower": ">1.8042e-6",
+    "click_upper": "<1.8990e-6",
+    "hxx_lower": ">1.0788e-6",
+    "hyy_lower": ">3.8792e-5",
+    "determinant_hessian_lower": ">2.2479e-11",
+    "trace_hessian_upper": "<5e-5",
+    "eigen_min_lower": ">4.48e-7",
+    "conclusion": "Uniform strictly convex local code price; analytic injective two-response map"
+  },
+  "nonlinear_original_cost_and_dual": {
+    "c": "[r-h_phi(r)]-[r0-h_phi(r0)]",
+    "response_a": "partial_x c",
+    "response_b": "partial_y c",
+    "potential": "V(a,b)=a*x(a,b)+b*y(a,b)-c(x(a,b),y(a,b))",
+    "conjugate_hessian": "D2 V=(D2 c)^-1 positive definite",
+    "exact_action": "S_N1(Y) = kappa sup_(a,b) {tau sum_s(a_s f_B,s+b_s q_s) - sum_s rho_s V(a_s,b_s)}",
+    "kappa": "-original normalized N1 scalar coefficient (positive)",
+    "independent_aux_Euler": "tau f_B,s=rho_s V_a; tau q_s=rho_s V_b",
+    "exact_moving_PF_first_source": "-kappa sum_s V(a_s,b_s) D rho_s",
+    "null_PF_potential": "V(a0,b0)=0",
+    "direct_original_all42_Euler_equivalence": true
+  },
+  "native_running_response": {
+    "null": "lambda_-=-23.41640675188407497289558...",
+    "exact_all_order": "lambda_eff(x,y)=b/a=r_y/r_x=j2_y/j2_x on native positive chart",
+    "lambda_x_at_origin": "-67.77708361270995028894067",
+    "lambda_y_at_origin": "108.1377711795100164267967",
+    "h0_original_exact_root_2_cells": [
+      {
+        "site": 0,
+        "x_approx": 0.001370578581747874,
+        "y_approx": -0.00001616909385713098,
+        "lambda_eff_approx": -23.51149442107379,
+        "legendre_V_approx": 1.6351746241944412e-12
+      },
+      {
+        "site": 1,
+        "x_approx": -0.00012766508490823182,
+        "y_approx": 0.000005454102084650292,
+        "lambda_eff_approx": -23.407168206023314,
+        "legendre_V_approx": 1.67941462988318e-14
+      }
+    ],
+    "two_lambda_intervals_disjoint": "STRICT OUTWARD: site0 <-23.51; site1 >-23.41"
+  },
+  "original_42_stationary_lift": {
+    "added_auxiliary_algebraic_response_variables": 4,
+    "original_fields": 42,
+    "total_stationarity_equations": 46,
+    "exact_root_existence": "Analytic lift from independently certified exact 42-Banach root and unique native convex response, not a fresh numeric 46-root",
+    "hessian_invertible": "By 4x4 strictly negative response Hessian and already certified invertible 42x42 Schur complement",
+    "numerical_direct_gradient_comparison_all42": "max|D S_original - D S_dual| = 1.03800209003e-53 at same pinned rational-decimal centre, 72-digit mpmath",
+    "local_python": "original local source and full42 replay executed; python -O stdout byte-identical, py_compile PASS",
+    "github_entrypoint_fresh_remote_CI": "NOT_CLAIMED",
+    "original_high_cost_1764_Hessian_rerun": "NOT_CLAIMED"
+  },
+  "physical_scope": {
+    "compulsory_Book03_HJR_info_active_cut_selected": false,
+    "full_same_initial_G0_field_writer_constructed": false,
+    "oldRIGHT_and_thermal_clock_controller_independent_Euler_completed": false,
+    "universal_raw216_and_GR_closed": false
+  }
+}

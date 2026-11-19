@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-21",
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr": 334,
+  "source_snapshot": "dda8f5d8ce5950cce4278b1f5b7d63f826b2e8f2",
+  "status": "AUTHOR_TESTED_EXACT_POSITIVE_REPORT_AND_ORIGINAL_CAR_CHOI_MOMENTS",
+  "source_blobs": {
+    "theorem": "da954a84aa52ce1dca87bee11c46c58095f5e132",
+    "golden_exact_checker": "199eb069db7b4d9603a379d7c18e30b4f5f0169c",
+    "original_CAR16_moment_checker": "cbb0955e39311d42aa80258cb92676b82fa1bc89"
+  },
+  "checks": {
+    "golden_ring": "Q(p), p^2+p=1, strict BigInt rational root bracketing",
+    "complete_sigma_cases": 2,
+    "actual_fully_checked_sign_branches_each": 1024,
+    "native_monomials": 27,
+    "Bernoulli_source_degrees": [
+      2,
+      8
+    ],
+    "copy_degree_minimal_in_declared_access": true,
+    "native_weights_in_Z_p_half": true,
+    "all_positive": true,
+    "base_r": 0.0000018512395784882028,
+    "nonconstant_coeff_l1": 7.547444866604433e-9,
+    "certified_min_branch_lower": 0.0000018436921336215983,
+    "certified_max_branch_upper": 0.0000018587870233548074,
+    "native_finite_z_matter_geometry_ratio_minus": -23.416406751884075,
+    "moment_checks": [
+      "actual null SO commutator plaquette and SO inverse",
+      "full 16x16 exterior functor",
+      "CAR16 order (0,2,3,1) vacuum-to-one-form entries",
+      "original coframe inverse metric",
+      "Choi identity anchor matrix moment",
+      "proper-Lorentz normal retraction R2 at identity",
+      "native CAR16 signed geometric trace"
+    ]
+  },
+  "experiment_scope": {
+    "mathematically_fixed_finite_channel_from_supplied_full_resource_bank": true,
+    "no_moving_8d_angle_required_in_output": true,
+    "all42_first_source_from_owned_geometric_and_matter_jet": true,
+    "full_finite_compiler_on_positive_prefix_table": true,
+    "logical_factory_cost_input_independent_conditional_on_declared_pure_resource_bank": true,
+    "resource_writer_from_single_common_native_blank": false,
+    "absolute_Book03_Info_selected": false,
+    "real_independent_upstream_Euler_solved": false,
+    "physical_compulsory_execution_selected": false,
+    "complete_native_HJR_price_selected": false,
+    "fresh_Lean_or_remote_CI": false,
+    "physical_GR_closed": false
+  },
+  "provenance_note": "BigInt sign/full report checker executed in a clean V8 isolate; CAR16/exterior numeric checker executed in a separate V8 isolate. Geometric all40/matter2 original jet identity is consumed from pinned owners, not newly run."
+}

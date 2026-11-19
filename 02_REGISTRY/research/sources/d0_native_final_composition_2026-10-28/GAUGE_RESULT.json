@@ -1,0 +1,49 @@
+{
+  "control_count": 23,
+  "controls": [
+    "rational_native_rotation_unitary",
+    "second_endpoint_is_projector",
+    "exact_moment_matrix",
+    "exact_common_angle_moment",
+    "original_return_first_angle_source",
+    "original_return_second_angle_source",
+    "vertical_contraction_nonzero",
+    "price_covariance_is_not_basicness",
+    "pair_form_nondegenerate",
+    "invariant_coordinate_bracket_zero",
+    "full_original_moment_balance",
+    "three_dimensional_total_moment_balance",
+    "separate_retained_sectors_nonzero",
+    "terminal_gradient_graph_lagrangian",
+    "commuting_zero_moment_same",
+    "commuting_zero_moment_orthogonal",
+    "transverse_pair_nonzero_moment",
+    "lapse_smearing_exterior_derivative",
+    "uniform_weight_integrable_control",
+    "full_heat_cross_source",
+    "heat_independent_smearing_not_closed",
+    "original_return_mixed_source",
+    "return_independent_smearing_not_closed"
+  ],
+  "full_cotangent_3D_sector_sources": {
+    "P": "14/277",
+    "U": "-14/277",
+    "sum": "0"
+  },
+  "lapse_smearing_cross_sources": {
+    "criterion": "d alpha_N = (N_b-N_a) B_ab dy_a wedge dy_b",
+    "heat": "-2/9",
+    "return": "-1850/8281"
+  },
+  "rational_original_pair": {
+    "c": "4/5",
+    "f_second": "1850/8281",
+    "mu_common_angle": "-24/91",
+    "mu_matrix_coefficient": "12/91",
+    "s": "3/5",
+    "z": "1/4"
+  },
+  "scope": "Exact original-return structural controls. No native physical boundary, total reduction, local lapse, HDA, full42 or GR closure.",
+  "source_sha256": "9b1759d91b6d48eced6929cb08222ccf678a488ae94bff517e7c6418396fb12b",
+  "status": "PASS_EXACT_BOUNDARY_MOMENT_CONTROLS"
+}

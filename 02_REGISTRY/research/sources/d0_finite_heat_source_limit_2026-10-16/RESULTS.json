@@ -1,0 +1,52 @@
+{
+  "check_groups": {
+    "CAR_exact": 33,
+    "hostile_exact": 7,
+    "hostile_highprecision": 4,
+    "lattice_exact": 14,
+    "scalar_exact": 44,
+    "source": 1,
+    "source_exact": 2,
+    "source_highprecision": 12
+  },
+  "exact_checks": 101,
+  "highprecision_checks": 16,
+  "lattice": {
+    "exterior_dimension": 16,
+    "matrix_dimension": 64,
+    "sites": 4,
+    "square_terms": "Ta*Ta + CaIb[Ta,Tb*] + CaCb[Ta,Tb] + IaIb[Ta*,Tb*]"
+  },
+  "scalar": {
+    "exponential_enclosure_terms": 100,
+    "includes_zero_and_B_equals_b0": true,
+    "rational_fixtures": 8
+  },
+  "scope": {
+    "all16_exterior_components": true,
+    "continuum_heat_or_source_limit_is_proved": false,
+    "full_observer_operator_graph_bound_from_C0_is_claimed": false,
+    "highprecision_source_is_a_fixture_not_interval_certificate": true,
+    "native_preparation_or_physical_admission_is_proved": false,
+    "no_commuting_variation_assumption": true,
+    "predecessor_check_entrypoints_executed": false,
+    "rational_scalar_fixtures_are_not_all_t_proof": true,
+    "same_finite_Delta_only": true
+  },
+  "source_fixture": {
+    "b0": "1/10",
+    "beta": "3/5",
+    "finite_difference_step": "1e-18",
+    "m": 7,
+    "matrix_dimension": 16,
+    "moving_Lorentz_observer_pairing": true,
+    "noncommuting_Delta_jet": true,
+    "precision_decimal_digits": 80,
+    "reference_fixture": "all16 raw amplitudes retained"
+  },
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da"
+  },
+  "status": "PASS",
+  "total_checks": 117
+}

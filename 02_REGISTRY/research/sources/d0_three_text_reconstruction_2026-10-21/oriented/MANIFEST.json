@@ -1,0 +1,41 @@
+{
+  "created": "2026-10-21",
+  "kind": "new_reconstruction_not_historical_archive",
+  "files": [
+    {
+      "path": "ORIENTED_COMPLETE_PRICE_RECONSTRUCTION.md",
+      "sha256": "977854fedc570c88c1e29714463dfed18109add94bafaf738158c3ab243ba626",
+      "bytes": 18684
+    },
+    {
+      "path": "README.md",
+      "sha256": "902fc2ce034a57a2b2c576f049ee0bda39e268a876ca977cee79a3a70a88233c",
+      "bytes": 8413
+    },
+    {
+      "path": "SOURCE_AND_RANK34.md",
+      "sha256": "125dc37a40b02f1091a98d61065833d5062ed8196c988edc46b00126f032f022",
+      "bytes": 13062
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "2e91f93403d9b70d505dbeb990501e8dbf054106dbeaf743d8d58a3c97d147bd",
+      "bytes": 4072
+    },
+    {
+      "path": "USER_TEXT_ORIGINAL.txt",
+      "sha256": "e7e02b0a1efa2458b6756e0faaf694d333492c65d74fa3a67d364d8a0162b9b4",
+      "bytes": 32611
+    },
+    {
+      "path": "check_oriented_complete_price.py",
+      "sha256": "fe6b278f81ccf5cc24be1dc7815d333ed2cc01c4325b8749a2db1e3370fc9d4a",
+      "bytes": 13686
+    },
+    {
+      "path": "verification_results.json",
+      "sha256": "1f9e678f26dc03ac4391b770efc2a3100f27d4ed5fffd5ce86fd99477d78cfdd",
+      "bytes": 13349
+    }
+  ]
+}

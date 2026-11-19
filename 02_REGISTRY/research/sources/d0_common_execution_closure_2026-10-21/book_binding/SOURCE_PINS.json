@@ -1,0 +1,107 @@
+{
+  "source_commit": "b1870ff3ecedd02e09388bc8b6fd8df4da54b990",
+  "scope": "existing #334; literal Book source on the new fixed complete-record processor",
+  "repository_inputs": [
+    {
+      "name": "book02",
+      "path": "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md",
+      "git_blob": "79ad345ddef6bb06c638f41721db1a84843e4a9b",
+      "bytes": 195678,
+      "sha256": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03"
+    },
+    {
+      "name": "book03",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "bytes": 86193,
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+    },
+    {
+      "name": "literal_book_source",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92",
+      "bytes": 21593,
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea"
+    },
+    {
+      "name": "prior_cap1_book_binding",
+      "path": "02_REGISTRY/research/sources/d0_physical_cap1_execution_composition_2026-10-21/book_binding/PROOF.md",
+      "git_blob": "c56ec23c0f3ea46e02afbad5483c357e5367a935",
+      "bytes": 15808,
+      "sha256": "47df6a17dee97b1da3a39d34bbd56b7f27f42831bfe20d9b0c0befc6d3f95d17"
+    },
+    {
+      "name": "info_contract_audit",
+      "path": "02_REGISTRY/research/A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md",
+      "git_blob": "cab908a86d441f0c12fd69e2b3fe30e88ee867cf",
+      "bytes": 9888,
+      "sha256": "ad5b738a962a804ac7a9bc0225f5729b28b10916ae9ac8ab1098e7c2112822e0"
+    },
+    {
+      "name": "prospective_finite_law",
+      "path": "02_REGISTRY/research/A4D_PROSPECTIVE_BOOK_FINITE_FUTURE_LAW_Q8_VERIFICATION_2026_10_20.md",
+      "git_blob": "de8341a8b33d53bd4b26e044a1560c47c51e2745",
+      "bytes": 26033,
+      "sha256": "bd3f1ab51599b0efe17af03e40c59a606200cd1912f801e4bd57e0eb77a6b014"
+    },
+    {
+      "name": "prospective_formal",
+      "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "git_blob": "5bf153f4c74325366c8c57ce404dcdcb4fc87dc5",
+      "bytes": 12448,
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4"
+    },
+    {
+      "name": "future_execution_formal",
+      "path": "03_FORMALIZATION/D0/Foundation/FutureExecution.lean",
+      "git_blob": "c0cbf1d446f428e166ae30f90f9caba1ce60c091",
+      "bytes": 12331,
+      "sha256": "15143b63f2bf1cc51493e3efb36c9da57c203d7e680e2f1370cf2311eb2e9ef1"
+    },
+    {
+      "name": "native_polynomial",
+      "path": "02_REGISTRY/research/sources/d0_causal_native_weighted_synthesis_2026-10-21/native_source/NATIVE_POLYNOMIAL_FIRST_JET.md",
+      "git_blob": "1c624843ab6cbab5173f47c80962cef9ae57e5bd",
+      "bytes": 35006,
+      "sha256": "4d098d1e6ad8cb7daf477b498f808b7b962d6432f3da78ae573e321dbbcb915d"
+    },
+    {
+      "name": "exact_paid_golden_factories",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md",
+      "git_blob": "92b9003d783c24b1883a2a21f8b30625078afff7",
+      "bytes": 16828,
+      "sha256": "d33c9c2cb2322e381723f481eb1fcf58058fd05ad88eda92c5597c026d02eb77"
+    },
+    {
+      "name": "same_execution_spatial_source",
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "git_blob": "14867b53a1bbb006eafe2cbf90d62be03560e5a0",
+      "bytes": 20156,
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1"
+    },
+    {
+      "name": "primary_all42_owner",
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "git_blob": "15d43131ba37e3cf24b83648ade49a27030c38b5",
+      "bytes": 27255,
+      "sha256": "59ef4e5926246fe4c4b12d48d39c4ad9668e155a4fba67131bee06dd829342c4"
+    }
+  ],
+  "peer_packets": [
+    {
+      "name": "fixed_processor",
+      "scratch_relative_path": "closure_native/FIXED_PROCESSOR_PROGRAM_SOURCE.md",
+      "bytes": 31035,
+      "sha256": "4a879a3bb986aca43f06cec760f882cec4e7c6446efd46d5add8a2f199e9381b",
+      "verification": "frozen peer proof; read by this author; independent review owned separately"
+    },
+    {
+      "name": "paid_transitive_banks",
+      "scratch_relative_path": "closure_prep/TRANSITIVE_RESOURCE_PREPARATION.md",
+      "bytes": 25972,
+      "sha256": "8348922c3a093b06b91ad52249177238e8abab89057bdaf002deac0fd1ced1d7",
+      "verification": "frozen peer proof; read by this author; independent review owned separately"
+    }
+  ],
+  "pin_policy": "Repository inputs verified with git show at source_commit, including append-only routing documents; peer proof hashes name the consumed frozen bytes."
+}

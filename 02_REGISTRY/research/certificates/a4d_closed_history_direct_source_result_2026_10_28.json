@@ -1,0 +1,44 @@
+{
+  "GR_closed": false,
+  "checker_sha256": "b044b4939b8577a7289b0f8ef1c146bcead29a8c02274406ab20026e7d50361c",
+  "checks": [
+    "owned quadratic identity at original fixture",
+    "owned multiplicity trace at original fixture",
+    "full feedback pencil reduction",
+    "resolvent without state inverse",
+    "short noncommutative source numerator",
+    "full completion feedback",
+    "two-root determinant identity",
+    "full noncommutative source equals direct a jet: r",
+    "direct source equals scalar determinant derivative: r",
+    "moving q and rho recover same direct source: r",
+    "full noncommutative source equals direct a jet: nu",
+    "direct source equals scalar determinant derivative: nu",
+    "moving q and rho recover same direct source: nu",
+    "endogenous rho has no native scale derivative",
+    "q carries entire original scale source",
+    "freezing q incorrectly loses a nonzero scale source",
+    "singular-source zero-price pencil",
+    "singular-source zero first derivative",
+    "singular-source exact nonzero second derivative",
+    "positive second source without inverse A"
+  ],
+  "consumed_car_owner_sha256": "1e2def81f5128876298b591f22388c8a01ca8b6d1e804aeb75b52d7e38034976",
+  "direct_sources_diagnostic": {
+    "nu": "0.0000010624053526015610447286178238859966",
+    "r": "-0.000000037083005259825710853475975055650328"
+  },
+  "input_commit": "e120d891985e473e7e9e0e8a9da92b6d1fab7218",
+  "native_fixture": {
+    "data_dimension": 16,
+    "nu": "3/5",
+    "r": "1/9",
+    "z": "2^-20"
+  },
+  "native_noncommuting_tangents": [
+    "r"
+  ],
+  "scope": "Exact algebra and original CAR16 jets; consumes complete U proof; no new full2048 replay or all42/native-admission theorem.",
+  "singular_second_source_diagnostic": "0.0000017895959803053447876500160625391612",
+  "status": "PASS"
+}

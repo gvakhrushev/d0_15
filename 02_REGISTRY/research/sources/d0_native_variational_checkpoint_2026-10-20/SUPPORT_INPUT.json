@@ -1,0 +1,29 @@
+{
+  "schema": "d0-native-historical-support-input/1",
+  "scope": "HISTORICAL_COMPILED_INPUT_REPLAY_NOT_CURRENT_SOURCE_PROOF",
+  "source_head": "b6a339c303451b18a3ff8c6c42113290fe98307c",
+  "inputs": {
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean": {
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/ArchiveAffineExteriorLink.lean",
+      "snapshot_sha256": "be8f2a58cc7c055b6db13b4846437e89d5cc5bc979cc2ebb9429bdf82f45b1a1",
+      "source_blob": "12cbe924b12fc756fe5a7009db01c59f02539a83"
+    },
+    "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_certificate.json": {
+      "snapshot_path": "02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/a4d_native_joint_field_quotient_certificate.json",
+      "snapshot_sha256": "8807a418e67a4b2ac89495b7f80ab7e2924349067dea3f1aab5b8addf5b29f89",
+      "source_blob": "f27f8e182c1ae0d76f1b899cba99cba69dcf09d7"
+    }
+  },
+  "entrypoints": {
+    "02_REGISTRY/research/certificates/a4d_native_history_field_coupling_check.py": [
+      "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean"
+    ],
+    "02_REGISTRY/research/certificates/a4d_native_prepared_action_check.py": [
+      "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean",
+      "02_REGISTRY/research/certificates/a4d_native_joint_field_quotient_certificate.json"
+    ],
+    "02_REGISTRY/research/certificates/a4d_native_scene_payload_action_check.py": [
+      "03_FORMALIZATION/D0/Geometry/ArchiveAffineExteriorLink.lean"
+    ]
+  }
+}

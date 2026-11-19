@@ -1,0 +1,102 @@
+{
+  "carrier": {
+    "CAR_grades": 16,
+    "Schmidt_image_rank": 128,
+    "actual_FR_cost_depth": 20,
+    "actual_FR_words": 10946,
+    "data_dimension": 4096,
+    "ell": 0.25,
+    "epsilon": 0.00037301368286143087,
+    "exact_zero_rows_per_port_retained": [
+      32,
+      32
+    ],
+    "fixed_Golden_scale": 0.23606797749978975,
+    "genuine_cut_counting_dimension": 16384,
+    "literal_rows_per_port": [
+      64,
+      64
+    ],
+    "maximum_density": 1.824228028503563,
+    "minimum_density": 0.678238625982094,
+    "oldRIGHT_dimension": 128,
+    "original_exterior_order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "retained_record_outcomes": 128,
+    "sites": 256,
+    "z": 9.5367431640625e-07
+  },
+  "complete_complement": {
+    "compressing_whole_DATA_feedback_control_nonzero": true,
+    "literal_operator_normalization_max_error": 1.1102230246251565e-15,
+    "literal_return_operator_max_error": 2.168404344971009e-18,
+    "literal_true_feedback_max_error": 1.1102230246251565e-15,
+    "minimum_work_complement_eigenvalue": 5.593401277405751e-06,
+    "omitted_marker_zero_complement_control_nonzero": true,
+    "outside_E_preparation_leakage_operator_norm": 1.1954644961809468e-08,
+    "outside_E_preparation_leakage_trace": 1.51838911387672e-07,
+    "work_complement_trace": 0.005707816236109553
+  },
+  "elapsed_seconds": 4.394972100009909,
+  "inputs": {
+    "definition_import_does_not_run_prior_checkers": true,
+    "frozen_helper_sha256": "c8f24203ab93c853641a83270170650cb02b41c48a66e942c322ce33a09257ea",
+    "prior_primary_checker_sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf",
+    "published_full128_receipt_sha256": "e460680c08c1addfa7e6c9b519dde396bd73ff51441095904b250acf0176e305"
+  },
+  "primary_flat": {
+    "Cost_port": 1.001580684371823,
+    "Cost_port_jet": -0.0031613687436458492,
+    "J_feedback_phi": 0.020056968089334784,
+    "J_feedback_phi_jet": 2.1341961225549546e-05,
+    "Rayleigh": 6.856587724813784,
+    "Rayleigh_jet": -13.713175449627569,
+    "exact_analytic_ratio_upper_bound": "1/4",
+    "maximum_feedback_eigenvalue": 0.6179928545208963,
+    "maximum_return_effect_eigenvalue": 0.0032004396923584646,
+    "minimum_feedback_eigenvalue": 0.6173686334152589,
+    "minimum_log_argument": 0.9999994106360869,
+    "minimum_return_effect_eigenvalue": 0.00019794141827661471,
+    "required_other_price_source_for_balance": 0.0031400267824202997,
+    "source_ratio_to_minus_Cost_port_jet": 0.006750861084599997
+  },
+  "scope": {
+    "E_and_density_fixed_during_scale_variation": true,
+    "GR_closed": false,
+    "all_oldRIGHT_counting_multiplicities_retained": true,
+    "complete_physical_Cost_Info_bound": false,
+    "fixed_exterior_collar_claimed": false,
+    "flat_scale_is_global_periodic": true,
+    "float_verification_not_interval_certificate": true,
+    "physical_echo_admission_proved": false,
+    "rank_one_cut_used": false
+  },
+  "status": "PASS",
+  "verification": {
+    "E_adjoint_E_max_error": 4.145989107584569e-16,
+    "R_E_prime_plus_2R_E_max_error": 0.0,
+    "finite_difference": {
+      "J_phi": {
+        "absolute_error": 1.496879267130595e-13,
+        "centered_derivative": 2.1341961375237473e-05,
+        "float_verification_tolerance": 2e-10
+      },
+      "cost_port": {
+        "absolute_error": 2.2012574055207956e-11,
+        "centered_derivative": -0.0031613687656584233,
+        "float_verification_tolerance": 2e-10
+      }
+    },
+    "finite_difference_step": 0.0001,
+    "full_RIGHT_counting_action_difference": 0.0,
+    "full_RIGHT_counting_source_difference": 0.0,
+    "full_return_operator_FD_max_error": 3.973006819368852e-11,
+    "literal_port_cost_difference": 4.440892098500626e-16,
+    "published_port_source_difference": 6.5052130349130266e-18,
+    "published_port_value_difference": 1.3322676295501878e-15
+  }
+}

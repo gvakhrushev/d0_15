@@ -1,0 +1,127 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "input_ref": "441bdef5a02bef09a74ebe48dcf4d5527ba18988",
+  "layout": "inputs/<original repository path>; immutable scientific input, not a replacement owner",
+  "sources": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "bytes": 86193,
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "bytes": 42834,
+      "sha256": "2128009802edff3e111a26961f050320fd878d7412ed93bfad5d5c9e4219db79",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md",
+      "bytes": 28993,
+      "sha256": "a33e364caed023d74cc70cfdc38380581bbb4f47af96e1c23ad7d3490e9da169",
+      "git_blob": "404c4c288eb3d46aa774f5d2e6b874f0743a33d7"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md",
+      "bytes": 14469,
+      "sha256": "ff99eeb9bf87d691317c80df3c2258cb4e21e338e142aeecd82de6abc08f86b3",
+      "git_blob": "54f73a2fb041a647b015d17ea07cccf153f385a8"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md",
+      "bytes": 15959,
+      "sha256": "4ec6622ae2ff4f75d615bbd2b207a071a154df56e59d74f0eb76fab6c9f95d82",
+      "git_blob": "ba78731a8c55de18ad88a3fe7f65e071ffea0b65"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_RANK2_FULL_N1_CQ_42_SOURCE_FINITE_CONSISTENCY_2026_10_21.md",
+      "bytes": 15438,
+      "sha256": "422065cda266616b1daa2c72ee7fbe79dd60b907c0281a971c65263bbd2214a4",
+      "git_blob": "8ff76a65bf8c5477bbeb103fccd31eed3539125b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "bytes": 20156,
+      "sha256": "42c9b9745f3c9ee78b868e991485bbaf8b77810f4261204d913fc87fc44377a1",
+      "git_blob": "14867b53a1bbb006eafe2cbf90d62be03560e5a0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "bytes": 15858,
+      "sha256": "42f96fc4cdb4f47878c4d260a003dd2819741c6b4e233581e184f28e9792ebcc",
+      "git_blob": "eeae605705b5ee29a098ab9e14c4882034c73795"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_golden_ready_cq_source_2026-10-21/check_ready_prefix_source.mjs",
+      "bytes": 4974,
+      "sha256": "11f70e6d51f28a26093b6bcb8eeef1b9d927c737f1da14aed2b027a3ccae489a",
+      "git_blob": "e9ac095f3b1936afd74a9854d901ed3234060dbf"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md",
+      "bytes": 21593,
+      "sha256": "2b26bf2f4c1b128731ccf14a17437ba654c046e82b5e42e55113a8b6053494ea",
+      "git_blob": "0fc40d94bf6db0d0be49c783c902274821af5b92"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_joint_field_minimum_2026-10-20/JOINT_FIELD_MINIMUM_OBSTRUCTION.md",
+      "bytes": 27060,
+      "sha256": "d14d72318229ac6102d38aa25f84e3617116257dea6a40fb4d3a6d1d3fe1fb54",
+      "git_blob": "aaaa7acdfb997eb0c530e13f974a1ae40ed9c98d"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/PROOF.md",
+      "bytes": 22232,
+      "sha256": "4001c3adb8b5c7bbcea95b1795d6d847e4386191e9129e43e5c611994b64a99f",
+      "git_blob": "2dde923ce481a00db4928a9467819ccdb73cae5a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_preparation_closure_2026-10-21/inputs/native_input.py",
+      "bytes": 18050,
+      "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9",
+      "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/book/COMPLETE_CODE_WRITER_BOOK_PRICE.md",
+      "bytes": 15857,
+      "sha256": "711c9129230643f65228962a9835dd5faa59882d1803556fa90ca769016b6ec1",
+      "git_blob": "4841ee18c6d48093bd9f065e0d8a21afcb10ff23"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/code/PAID_CODE_AND_MOMENT_WRITER.md",
+      "bytes": 31515,
+      "sha256": "e95f0486456c53cf0ce40023bab08ac744fd6189b397d29a8773446c168244a0",
+      "git_blob": "9a0fee16a835e0bdc3c4c1221c048fbd413b7490"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_paid_moment_field_writer_2026-10-21/moments/EXACT_MOMENT_SOURCE_CONSTRUCTION.md",
+      "bytes": 28827,
+      "sha256": "8c4c3cf03ebf637de6917776f13533d8b9f20cd0e8790025cf64a092915aef15",
+      "git_blob": "eeda7c0d227eb430165b315bfe6a9186ea8b9fe5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_retained_entropy_input_euler_2026-10-21/PROOF.md",
+      "bytes": 20931,
+      "sha256": "0842064ccb7a4b3192ccea00e7e411d8bea7454a83d53cf7145b6be7c8d76ffa",
+      "git_blob": "cc0010752a2236fd9e504dc95d8469d82633c191"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_global_star_pf_jump.py",
+      "bytes": 4658,
+      "sha256": "8f47b84046bd8f4c2979cb3fdafa0ecb8df73dcb67ff5cc773048c30fd3d5390",
+      "git_blob": "edb4dd3ed61a8f8476609dce2bd4932aeab1b12a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_star_rank2_seam_2026-10-21/check_star_rank2_seam.py",
+      "bytes": 6933,
+      "sha256": "666b921e53fba8de2332a88c89a572f5ab14d8c03348744494e06b381f2f18b8",
+      "git_blob": "a57f0e3e845290923c2ac88d39ba5c08af4f6fd6"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_weighted_two_field_rank2_2026-10-21/native_master.py",
+      "bytes": 2468,
+      "sha256": "23752ce9f4780c7713bbb7fe0d339d8952fe2e422e5541df736e8e08e754e60d",
+      "git_blob": "525b257ec671500bd02c4791f9579dbde2439f21"
+    }
+  ]
+}

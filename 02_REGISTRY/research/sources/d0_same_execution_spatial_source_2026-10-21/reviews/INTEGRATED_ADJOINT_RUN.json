@@ -1,0 +1,26 @@
+{
+  "status": "PASS_N1_COMPLETE_ENTROPY_ADJOINT",
+  "checks": [
+    "complete original query/efficiency/OR norm",
+    "literal two-band determinant at primary",
+    "all complete prefix/abort/report probability",
+    "complete finite leaf price equals retained ledger",
+    "full entropy terminal gradient",
+    "backward projection/query adjoint",
+    "direct full price finite difference",
+    "full query preparation leakage norm",
+    "generated retained input has no false free tangent",
+    "independent full8D prep source is nonzero if admitted"
+  ],
+  "precision_digits": 80,
+  "complete_classical_terminal_labels": 7,
+  "coherent_query_work_components": 256,
+  "full_price": "48.056347220397701640479786535323345",
+  "gamma1": "-12.444292681318665714064696483876718",
+  "source": "0.0000010149312414533592507833689699038186",
+  "max_source_discrepancy": "6.75197882164048e-41",
+  "conditional_independent_preparation_source": "-0.000000073484911723931864610518503264448857",
+  "scope": "New source/adjoint control with literal native8D queries and actual alpha/beta; finite prefix refinement/costs are diagnostic, not historical native retry receipts; no native admission or Book03 selection.",
+  "elapsed_seconds": 0.016808875,
+  "checker_sha256": "f20a91c1a7d6f486eb49284e16b4350af5222a89d64b9aff06de28c2c3217eb0"
+}

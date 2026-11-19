@@ -1,0 +1,323 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-22T17:11:11.209039+00:00",
+  "finished_utc": "2026-10-22T17:11:15.094461+00:00",
+  "python": "3.12.14",
+  "python_optimization": 0,
+  "scope": "Final frozen four-checker replay for the new collective-preparation source application",
+  "runs": [
+    {
+      "script": "check_native_attenuation_gain.py",
+      "script_sha256": "6420da489deabb18f57f68bf3b04b86592cc2995acca3e3622868e7fd93365de",
+      "exit_code": 0,
+      "elapsed_seconds": 3.870658,
+      "stderr": "",
+      "receipt": "RESULT_NATIVE_ATTENUATION_GAIN.json",
+      "result": {
+        "status": "PASS",
+        "exact_arithmetic": "Q(p), p^2+p-1=0",
+        "exact_checks": 2070,
+        "actual_sign_columns": 1024,
+        "depth": 12,
+        "Lambda_u": 1,
+        "Lambda_v": 2,
+        "r0": {
+          "a": "-3014703/34359738368",
+          "b": "1245203/8589934592"
+        },
+        "r_x0": {
+          "a": "-14418153/68719476736",
+          "b": "23331193/68719476736"
+        },
+        "r_y0": {
+          "a": "-24642311/34359738368",
+          "b": "19923571/17179869184"
+        },
+        "report_range_diagnostic": [
+          1.8391646497971201e-06,
+          1.8632889134784232e-06
+        ],
+        "actual_centered_norm_diagnostic": 1.2074928691082873e-08,
+        "linear_bound_diagnostic": 6.823872103583185e-06,
+        "actual_signal_ratio_bound": 114626.99762408042,
+        "floating_diagnostics_are_not_certificates": true,
+        "complete_Book_source_selected": false,
+        "GR_closed": false
+      }
+    },
+    {
+      "script": "global_audit/check_nonvacuum_whole_tape.py",
+      "script_sha256": "7812bcf2901cbe70970f192334ca4ee769206e094d04222ad9b8681461ede3b3",
+      "exit_code": 0,
+      "elapsed_seconds": 0.498923,
+      "stderr": "",
+      "receipt": "global_audit/RESULT_NONVACUUM_WHOLE_TAPE.json",
+      "result": {
+        "status": "PASS",
+        "exact_rational_checks": 103,
+        "new_scope": "nonzero-mean whole-tape global source cancellation and joint normal control",
+        "base_mean": "1/3",
+        "kernel_slots": 3,
+        "reports": 2,
+        "norm_bound_B": "8/9",
+        "normal_variance": [
+          {
+            "N": 3,
+            "variance": "16/243",
+            "bound": "64/27"
+          },
+          {
+            "N": 4,
+            "variance": "8/243",
+            "bound": "32/27"
+          },
+          {
+            "N": 5,
+            "variance": "8/405",
+            "bound": "32/45"
+          },
+          {
+            "N": 6,
+            "variance": "16/1215",
+            "bound": "64/135"
+          },
+          {
+            "N": 7,
+            "variance": "16/1701",
+            "bound": "64/189"
+          },
+          {
+            "N": 8,
+            "variance": "4/567",
+            "bound": "16/63"
+          }
+        ],
+        "noncritical_control": [
+          {
+            "N": 3,
+            "N_times_variance": "16/27",
+            "field_norm_squared": "32/81"
+          },
+          {
+            "N": 4,
+            "N_times_variance": "128/243",
+            "field_norm_squared": "32/81"
+          },
+          {
+            "N": 5,
+            "N_times_variance": "40/81",
+            "field_norm_squared": "32/81"
+          },
+          {
+            "N": 6,
+            "N_times_variance": "64/135",
+            "field_norm_squared": "32/81"
+          },
+          {
+            "N": 7,
+            "N_times_variance": "112/243",
+            "field_norm_squared": "32/81"
+          },
+          {
+            "N": 8,
+            "N_times_variance": "256/567",
+            "field_norm_squared": "32/81"
+          }
+        ],
+        "off_iid_report_covariance": "1/27648",
+        "same_mean_type_pair": "-1/3",
+        "iid_pair": "1/9",
+        "original_full42_replayed": false,
+        "golden_compiler_replayed": false,
+        "physical_Book_Info_selected": false,
+        "density_cone_stationarity_claimed": false,
+        "GR_closed": false
+      }
+    },
+    {
+      "script": "joint_source/check_paid_coherent_injection.py",
+      "script_sha256": "5740321ef224691c187e1159c2cd9c78bdaf9a7c1a1d283c2315795f9ee075e6",
+      "exit_code": 0,
+      "elapsed_seconds": 1.861609,
+      "stderr": "",
+      "receipt": "joint_source/RESULT_PAID_COHERENT_INJECTION.json",
+      "result": {
+        "status": "PASS",
+        "scope": "new finite coherent injection and complete-tape price identities",
+        "assertions": {
+          "exact": 2992,
+          "floating": 67
+        },
+        "groups": {
+          "coherent_partial_fisher_yates": {
+            "checks": {
+              "exact": 303,
+              "floating": 0
+            },
+            "uniform_label_cap_example": 16
+          },
+          "whole_instrument_and_iid_law": {
+            "checks": {
+              "exact": 1652,
+              "floating": 0
+            },
+            "isometry_input_dimension": 8,
+            "isometry_retained_output_dimension": 48
+          },
+          "paid_complete_tape_entropy_and_source": {
+            "checks": {
+              "exact": 6,
+              "floating": 67
+            },
+            "true_completion_probability": "11/15",
+            "correlated_minus_false_additive_price": 0.00793435312636448,
+            "fixed_marginal_correlation_price_source": 0.7952305364171486,
+            "maximum_additive_iid_score_error": 4.440892098500626e-16
+          },
+          "attenuation_gain_mixture": {
+            "checks": {
+              "exact": 1027,
+              "floating": 0
+            },
+            "exact_nonempty_flag_mass": "264919831/268435456",
+            "bound_uses_no_inverse_tau": true
+          },
+          "independent_original_report_differentiation": {
+            "checks": {
+              "exact": 4,
+              "floating": 0
+            },
+            "arithmetic": "Q[p,x,y,z] differentiation, then p^2+p-1 recurrence",
+            "root_checker_imported": false
+          }
+        },
+        "original_full128_replayed": false,
+        "golden_gate_factory_proofs_replayed": false,
+        "many_copy_degeneracy_theorem_reproved": false,
+        "full_D0_price_selected": false,
+        "GR_closed": false
+      }
+    },
+    {
+      "script": "causal_domain/check_paid_joint_normal.py",
+      "script_sha256": "e87517dd11d40e330d85e1d99e38ede9c3e3c1b30a799a862bba5434c4057467",
+      "exit_code": 0,
+      "elapsed_seconds": 0.268351,
+      "stderr": "",
+      "receipt": "causal_domain/RESULT.json",
+      "result": {
+        "status": "PASS",
+        "arithmetic": "exact Q(p), p^2=1-p; rational shell checks; 90-digit log diagnostic",
+        "exact_flag_depths": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "flag_return_and_every_failure_law": true,
+        "unchanged_decoded_zero_mean_exact": true,
+        "all_one_resource_first_jets_zero": true,
+        "matched_complete_counted_CQ_baseline": "analytic composition with pinned paid compiler; not a compiler replay",
+        "normal_target": "-7.81773513790959528294222635892e-12",
+        "finite_price_secants": [
+          {
+            "m": 2,
+            "flag_readiness": "0.5278640450004206071817",
+            "epsilon": "0.6180339887498948482046",
+            "actual_ledger_contrast_over_common_readiness": "-5.385145805308634526493e-13",
+            "normalized_secant": "-5.656966288800252469968e-12",
+            "relative_error_to_owned_normal": "0.276393202250021"
+          },
+          {
+            "m": 4,
+            "flag_readiness": "0.7507764050037854646349",
+            "epsilon": "0.1708203932499369089228",
+            "actual_ledger_contrast_over_common_readiness": "-2.842624847707263322090e-13",
+            "normalized_secant": "-7.596084382779785428671e-12",
+            "relative_error_to_owned_normal": "0.0283522978483865"
+          },
+          {
+            "m": 8,
+            "flag_readiness": "0.9583337352031532687382",
+            "epsilon": "0.02174919474995092916214",
+            "actual_ledger_contrast_over_common_readiness": "-4.752421600549737626640e-14",
+            "normalized_secant": "-7.814038882848611805447e-12",
+            "relative_error_to_owned_normal": "0.000472803823073984"
+          },
+          {
+            "m": 16,
+            "flag_readiness": "0.9990942028986349851693",
+            "epsilon": "0.0004533092499529320534817",
+            "actual_ledger_contrast_over_common_readiness": "-1.033145095014184023449e-15",
+            "normalized_secant": "-7.817733531449191218337e-12",
+            "relative_error_to_owned_normal": "2.05489233867056e-7"
+          },
+          {
+            "m": 32,
+            "flag_readiness": "0.9999995893938796694128",
+            "epsilon": "2.053031444640298932408e-7",
+            "actual_ledger_contrast_over_common_readiness": "-4.683341319629605291264e-19",
+            "normalized_secant": "-7.817735137909265770244e-12",
+            "relative_error_to_owned_normal": "4.21493811268166e-14"
+          },
+          {
+            "m": 64,
+            "flag_readiness": "0.9999999999999157012724",
+            "epsilon": "4.214936382002446938110e-14",
+            "actual_ledger_contrast_over_common_readiness": "-9.615046995182367275222e-26",
+            "normalized_secant": "-7.817735137909595282942e-12",
+            "relative_error_to_owned_normal": "1.77656887043279e-27"
+          }
+        ],
+        "cyclic_shells_checked": 34,
+        "native_autonomous_same_controller_selection": false,
+        "complete_Book_price_selected": false,
+        "GR_closed": false
+      }
+    }
+  ],
+  "artifact_sha256": {
+    "README.md": "e04c9fdd1f0eba81108864a5b3424cae934c2722cc9a8ea290b69d35893c3dc0",
+    "RESULT_NATIVE_ATTENUATION_GAIN.json": "bca097b8c0bbf46089400aa6e85fd64b2c447e06c9474eee15c543b3f9094c6e",
+    "SOURCE_PINS.json": "4b8feeeab402a14e4639efabfb1a76bfff139afa40f949d35d6cef763a9914cf",
+    "causal_domain/PAID_JOINT_NORMAL_AND_NATIVE_TASK_FIBRE.md": "aaae01ea6ccb9b3db6104b60f5b031c9217f1ac437cb9358168de5923dbec568",
+    "causal_domain/REVIEW_COLLECTIVE_SOURCE.md": "2f993179908662760a943474940e070a739224fe83eaba23bd6ee187d570a6c6",
+    "causal_domain/SOURCE_PINS.json": "fc56e3e5e51c0085f6a3fe59e176472fe3a7e78a3509aefd12f90bf72bd34d19",
+    "causal_domain/check_paid_joint_normal.py": "e87517dd11d40e330d85e1d99e38ede9c3e3c1b30a799a862bba5434c4057467",
+    "check_native_attenuation_gain.py": "6420da489deabb18f57f68bf3b04b86592cc2995acca3e3622868e7fd93365de",
+    "global_audit/NONVACUUM_WHOLE_TAPE_U_STATISTIC.md": "069e3e0b3ff2047467e7fa6f57d14a796732869ce6ded1b7add7100ccdd96309",
+    "global_audit/RESULT_NONVACUUM_WHOLE_TAPE.json": "e6055f47aa46ba60da73162d8b78bf85ee967b57cd8cfbb66d7065ecbda99616",
+    "global_audit/REVIEW_INTEGRATED_SOURCE.md": "704020aeda4faa68ececd3851fa097554f4fdd76c2aaac1faacc7ff1ba3d6110",
+    "global_audit/check_nonvacuum_whole_tape.py": "7812bcf2901cbe70970f192334ca4ee769206e094d04222ad9b8681461ede3b3",
+    "joint_source/PAID_COHERENT_INJECTION_AND_WHOLE_TAPE_SOURCE.md": "53af6bfbe99d90fc43f2f02bd024eb0d75321a3c4dc8f208b5b97c001fdd935c",
+    "joint_source/RESULT_PAID_COHERENT_INJECTION.json": "0bd81b2277a14346b4724f60978f126bb658b4427c6b7ed7a59221a226c4a30e",
+    "joint_source/REVIEW_SOURCE_COMPOSITION.md": "60704e4153b466ea5443e693c66c4e09519685cb16d34589e0b618406467f42d",
+    "joint_source/check_paid_coherent_injection.py": "5740321ef224691c187e1159c2cd9c78bdaf9a7c1a1d283c2315795f9ee075e6",
+    "run_checks.py": "db9fcbdef03f44c07c27e8b8a7d9d68319d740052983aeb9ee97dcce0228d087",
+    "causal_domain/RESULT.json": "284c506d4fbabd011f0718d60504239545d4cf4a68004e5f1128f30ff19d8784",
+    "../../A4D_NONVACUUM_COLLECTIVE_PREPARATION_SOURCE_EQUIVALENCE_2026_10_22.md": "cc4c7ad0803800b52779974ef65a2b7faad309f41437d0b7a78831d1f533c263"
+  },
+  "enumerated_exact_assertions": 5165,
+  "floating_assertions": 67,
+  "paid_normal_depths_and_shells_in_addition": true,
+  "source_proof_reviewed_independently": true,
+  "historical_full42_replayed": false,
+  "historical_full128_replayed": false,
+  "historical_compiler_replayed": false,
+  "Lean_rerun": false,
+  "CI_run_claimed": false,
+  "full_D0_price_selected": false,
+  "GR_closed": false
+}

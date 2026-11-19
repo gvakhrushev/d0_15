@@ -1,0 +1,65 @@
+{
+  "GR_closed": false,
+  "check_count": 23,
+  "checks": [
+    "exact original native spectral-splitting brackets",
+    "exact original nonscalar regular harmonic-energy chart",
+    "native mean energy equals full16 harmonic moment",
+    "generated constraint multiplier equals owned two-band secant",
+    "native invariant preparation is exact marginal maximum entropy",
+    "native marginal entropy gain vanishes",
+    "dual multiplier lies between true reciprocal energy levels",
+    "generated dual multiplier is not actual Golden inverse temperature",
+    "original fixed-temperature Gibbs mismatch preserved",
+    "complete native preparation derivative has zero trace",
+    "direct native entropy derivative equals moving-test envelope",
+    "freezing actual port observable loses a nonzero first source",
+    "original proper-boost entropy source retained",
+    "fixed measured port mean still has moving-test entropy source",
+    "three-band entropy gap equals exact relative-entropy identity",
+    "three distinct energies have strictly positive marginal gain",
+    "three-band logarithmic secants disagree",
+    "transverse split retains moving-constraint KL identity",
+    "genuine native eightfold-band splitting creates positive gain",
+    "transverse first marginal-gain source is zero",
+    "positive transverse Hessian equals analytical block formula",
+    "scalar state equals the unconstrained entropy maximizer",
+    "scalar degeneracy does not claim a unique multiplier"
+  ],
+  "full_history_replaced_by_DATA_marginal": false,
+  "input_checkpoint": "cd7595b0808e47c38147f25e2cabe476ecb508f8",
+  "native": {
+    "actual_temperature_trace_norm_gap": "0.03969776485485423038858897522370416891542730661949875516",
+    "all_smooth_first_gain_sources": "0 (analytical; nonscalar regular point)",
+    "beta_Golden_actual": "0.7639320225002103035908263312687237645593816403884742757",
+    "beta_dual": "72.41198827751809083172750248932483980572025969784238479",
+    "d_h": "-20040939/9885993640",
+    "d_mu": "-328779/204800000",
+    "dimension": 16,
+    "entropy": "2.771783648276693364379863928914687160525934750339963174",
+    "h": "69399/5030720",
+    "marginal_gain": "0 (analytical)",
+    "mu": "141489/10240000",
+    "multiplicities": [
+      8,
+      8
+    ],
+    "one_port_neutral_entropy_source": "-0.01536666760108270540134139005429753988495155785956084396",
+    "proper_boost_entropy_source": "-0.01536666760108270540134139005429753988495155785956084396",
+    "transverse_gain_hessian": "1.159395639690205454270391875879531624660718726921384540",
+    "transverse_hessian_numeric_error": "2.408548944517987902726389486114234846369011257326884784e-19",
+    "wrong_frozen_test_source": "-0.1467939685968132111558904605982436446045712381895298959"
+  },
+  "physical_Book03_Info_selected": false,
+  "scope": "Analytical theorem with 80-digit Decimal finite controls; no interval claim",
+  "status": "PASS",
+  "three_band_control": {
+    "beta_dual": "0.4822601747256546346555581759307447040057096678774945554",
+    "energies": [
+      1,
+      2,
+      4
+    ],
+    "strict_entropy_gain": "0.005422773489446712240802934819160969694317858059398307526"
+  }
+}

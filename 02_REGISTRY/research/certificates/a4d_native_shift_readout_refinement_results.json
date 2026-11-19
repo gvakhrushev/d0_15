@@ -1,0 +1,55 @@
+{
+  "candidate": {
+    "actual_return": "D0 full-CAR record(G=I,n=e0)",
+    "affine_refinement": "(I,b) (I,b) = (I,2b)",
+    "exact_difference_entry_0_1": "-2*a*p + p",
+    "nontrivial": true,
+    "readout": "record(G, b/sqrt(b^T G b))",
+    "same_ray_return_under_merge": "U",
+    "sequential_refinement_return": "U^2",
+    "unitary": true
+  },
+  "checker_sha256": "0005690ad7ca20485032f2e53ffd635895a529bf7527a5fee80a59a402e03e03",
+  "checks": [
+    "OWNED_AFFINE_COMPOSITION_HAS_SEMIDIRECT_SHIFT",
+    "CANDIDATE_IS_EXPLICITLY_POSITIVE_SAME_RAY",
+    "POSITIVE_RAY_FORGETS_TRANSLATION_MAGNITUDE",
+    "OWNED_AFFINE_SUBDIVISION_GIVES_DOUBLE_SHIFT",
+    "MERGED_RAY_RETURN_EQUALS_SINGLE_EDGE_RETURN",
+    "ACTUAL_CAR_RETURN_IS_ORTHOGONAL",
+    "ACTUAL_GOLDEN_BLOCK_IS_REDUCING_AND_LITERAL",
+    "ACTUAL_CAR_RETURN_IS_NONIDENTITY",
+    "ACTUAL_RETURN_BREAKS_SUBDIVISION_MULTIPLICATIVITY",
+    "EXACT_BLOCK_WITNESS_IS_NONZERO",
+    "GOLDEN_RELATIONS_AND_NONZERO_WITNESS",
+    "IDENTITY_READOUT_IS_THE_TRIVIAL_COMPATIBLE_CONTROL",
+    "MAGNITUDE_SENSITIVE_MAP_ESCAPES_THE_RAY_HYPOTHESIS",
+    "STATEFUL_REFINEMENT_IS_OUTSIDE_THE_FIXED_GROUP_VALUED_HYPOTHESES",
+    "GENERIC_LEAN_SUBDIVISION_THEOREM_COMPILES",
+    "LEAN_THEOREM_AXIOM_FREE"
+  ],
+  "exact_control_count": 16,
+  "inputs_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_GOLDEN_CHANNEL_ENDOGENOUS_PREPARATION.md": "73187cd2a77d3350b01a29f780d939a0a86b2e65c4622b85dc6b18ca283f7df9",
+    "02_REGISTRY/research/A4D_NATIVE_JOINT_FIELD_QUOTIENT.md": "991b42eac645bb7e5e4df55f9be439f8e873b9403b4ff2a6dc1061a49dfe3e2e",
+    "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
+    "02_REGISTRY/research/A4D_NATIVE_SHIFT_READOUT_REFINEMENT_NO_GO.md": "240eee7db7cc135abd2ced67e9a9fc1101f3f1a0c28f0c69aad53e766048f1e2",
+    "02_REGISTRY/research/certificates/a4d_native_golden_channel_endogenous_preparation_check.py": "d78de07609370a307f30d1daeec9d45dd81de1eb7558654105ef32dc51ba89dd",
+    "02_REGISTRY/research/certificates/a4d_native_record_metric_chronology_check.py": "16929d026206ee69e126484ed2ac7b1dfd2537c1e50c0fc4c4293408caf58527",
+    "02_REGISTRY/research/certificates/a4d_native_shift_readout_refinement.lean": "e75d27a4ae5f5e53a25ae83429c4b034546070868bcdcd9e7f920dee66f1de2c",
+    "02_REGISTRY/research/certificates/a4d_native_shift_readout_refinement_check.py": "0005690ad7ca20485032f2e53ffd635895a529bf7527a5fee80a59a402e03e03",
+    "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1",
+    "03_FORMALIZATION/D0/Geometry/ArchiveAffineCartanConnection.lean": "9a342468ef9c04f28c68b59acb32263e141ed184f2bf49a085869632930c1549"
+  },
+  "lean_output_sha256": "877a8e145c127acc8e742c2856509e936e9501c8f19c124d22f012323f3cb1c8",
+  "schema": "d0-native-shift-readout-refinement/1",
+  "scope": {
+    "all_native_affine_instruments_classified": false,
+    "generic_group_valued_Lean_theorem": true,
+    "level_changing_refinements_excluded": false,
+    "physical_admission_or_GR_claimed": false,
+    "positive_ray_fixed_carrier_path_multiplicative_candidate_rejected": true,
+    "stateful_history_actions_excluded": false
+  },
+  "status": "PASS_SCOPED_POSITIVE_RAY_REFINEMENT_NO_GO"
+}

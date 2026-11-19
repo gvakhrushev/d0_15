@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-18",
+  "scope": "conditional research synthesis and exact checks; original physical source equivalence unresolved",
+  "GR_closed": false,
+  "physical_Book03_binding_proved": false,
+  "scientific_ref": "dc411daf01f697ec85dd22f28bfe124171796645",
+  "source_owner_sha256": "2521595d31ab1ef1532e1a398529138d167dd415cecc8f888b5bbac002fda48b",
+  "native_execution_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "input_sha256": "7390dc06b71682aff215e799f77e324e93758818a2f3f7e7e453da0176f4060b",
+  "python": "3.9.6",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0",
+  "checks": {
+    "check_pressure.py": "pressure_result.json",
+    "check_rate.py": "rate_result.json",
+    "check_gold_native.py": "gold_native_result.json",
+    "check_restoration.py": "restoration_result.json",
+    "check_mark.py": "mark_result.json",
+    "check_forward.py": "forward_result.json",
+    "check_visibility.py": "visibility_result.json",
+    "check_h1_codec.py": "h1_codec.json",
+    "check_h1_memory.py": "memory_result.txt",
+    "check_scale.py": "scale_result.txt",
+    "check_identifiability.py": "identifiability_result.txt",
+    "golden_review_check.py": "golden_review_check.txt"
+  },
+  "external_peer_review": false
+}

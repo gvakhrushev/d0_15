@@ -1,0 +1,129 @@
+{
+  "scope": "exact rational spectral/remainder audit; original native spectral data consumed, no new full128 replay or physical Book03 identification",
+  "pass_count": 29,
+  "checks": [
+    {
+      "name": "original positive two-band discriminant",
+      "passed": true
+    },
+    {
+      "name": "exact Golden thermal interval .76<t<.8",
+      "passed": true
+    },
+    {
+      "name": "lambda_min>.01325",
+      "passed": true
+    },
+    {
+      "name": "lambda_max<.01456",
+      "passed": true
+    },
+    {
+      "name": "native harmonic mean h<.0138",
+      "passed": true
+    },
+    {
+      "name": "native one-port-null mu derivative positive and <.00044",
+      "passed": true
+    },
+    {
+      "name": "native t lambda_max below q=.012",
+      "passed": true
+    },
+    {
+      "name": "exact Taylor coefficient a1",
+      "passed": true
+    },
+    {
+      "name": "exact Taylor coefficient a2",
+      "passed": true
+    },
+    {
+      "name": "exact Taylor coefficient a3",
+      "passed": true
+    },
+    {
+      "name": "exact Taylor coefficient a4",
+      "passed": true
+    },
+    {
+      "name": "entire differentiated Taylor tail positive",
+      "passed": true
+    },
+    {
+      "name": "negative quadratic source dominates all later terms",
+      "passed": true
+    },
+    {
+      "name": "rigorous native entropy-source magnitude below 1.8e-7",
+      "passed": true
+    },
+    {
+      "name": "proper_boost: sum absolute band-weight jets <1",
+      "passed": true
+    },
+    {
+      "name": "proper_boost minus: .97<s<.98",
+      "passed": true
+    },
+    {
+      "name": "proper_boost minus: absolute age-probability jet <.02",
+      "passed": true
+    },
+    {
+      "name": "proper_boost plus: .97<s<.98",
+      "passed": true
+    },
+    {
+      "name": "proper_boost plus: absolute age-probability jet <.02",
+      "passed": true
+    },
+    {
+      "name": "one_port_null: sum absolute band-weight jets <1",
+      "passed": true
+    },
+    {
+      "name": "one_port_null minus: .97<s<.98",
+      "passed": true
+    },
+    {
+      "name": "one_port_null minus: absolute age-probability jet <.02",
+      "passed": true
+    },
+    {
+      "name": "one_port_null plus: .97<s<.98",
+      "passed": true
+    },
+    {
+      "name": "one_port_null plus: absolute age-probability jet <.02",
+      "passed": true
+    },
+    {
+      "name": "log50<4 via exact positive exp4 partial sum",
+      "passed": true
+    },
+    {
+      "name": "geometric entropy derivative bound below100",
+      "passed": true
+    },
+    {
+      "name": "finite cap4096 entropy tail below7e-36",
+      "passed": true
+    },
+    {
+      "name": "finite cap4096 source tail below6e-34",
+      "passed": true
+    },
+    {
+      "name": "finite logarithmic Gibbs tail is positive",
+      "passed": true
+    }
+  ],
+  "exact_source_upper": "514584568553/2943207617187500000",
+  "display_only": {
+    "source_upper": 1.7483801195266405e-07,
+    "differentiated_tail_factor": 0.0013241755065938037,
+    "finite_cap_entropy_tail_bound": 6.920815741862039e-36,
+    "finite_cap_source_tail_bound": 5.877514538871135e-34
+  }
+}

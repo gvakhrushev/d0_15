@@ -1,0 +1,26 @@
+{
+  "L4_factory_failure_union_upper": "9.868638548727E-10",
+  "L4_preflight_plus_factories": 4096,
+  "SC7_clock_gain_and_reference_are_separate": true,
+  "direct_SC1_gap_at_test_epsilon_1_64": "0.00000000132586003",
+  "dyadic_four_dimensional_site_counts": [
+    16,
+    256
+  ],
+  "early_criterion_complete_joint_tables_checked": 81,
+  "full_eight_site_words_tested": 2048,
+  "identical_marginals_early_copy_TV": "0.47213595499957939",
+  "physical_forward_material_moments": [
+    "1/16",
+    "1/16",
+    "1/4",
+    "1/4"
+  ],
+  "physical_large_geometric_body_replayed": false,
+  "stable_all_outcome_full_economy_identification": false,
+  "status": "PASS",
+  "two_status_bits_sort_Fredkins": [
+    64,
+    2048
+  ]
+}

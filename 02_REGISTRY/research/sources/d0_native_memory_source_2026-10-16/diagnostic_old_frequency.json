@@ -1,0 +1,33 @@
+{
+  "eigenvalues_float": [
+    -0.2205892829139233,
+    -3.3901176246027367e-15,
+    3.701300929855761e-15,
+    2.3894339500745897e-14,
+    0.08077327162665347,
+    0.09806363062605154,
+    0.16743795032275516,
+    0.5900019028109702,
+    0.6770505243623136,
+    0.8285241440931014,
+    1.2639786918172948,
+    1.5442065669589897,
+    3.8188101145734294,
+    5.7634101846055685,
+    819.0936491626654,
+    1203.5261513049588
+  ],
+  "exact_field_matrix_or_new_root_proved": false,
+  "fixed_positive_frame_matrix_dimension": 16,
+  "frequency": [
+    3,
+    3,
+    0,
+    0
+  ],
+  "full_thermal_modes": 4096,
+  "gauge_residual_float": 1.0342407743396162e-13,
+  "observer_representation_directions_not_numerically_assembled": 3,
+  "scope": "Floating diagnostic only; old full128-rank preparation, no certified inertia/root/nonflat branch",
+  "source_ref": "0ff0a93f199a9411fbdf2470d557c6fd6c2ccc02"
+}

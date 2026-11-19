@@ -1,0 +1,63 @@
+{
+  "schema": "d0-stored-null-admission-wave-and-clock/1",
+  "research_date": "2026-10-17",
+  "branch": "exp/a4d-joint-response-continuation-2026-10-16",
+  "consumed_owner": "A4D_STORED_METRIC_PROJECTION_AND_SOURCE_COMPLETION.md",
+  "original_terminal": "original independent smooth g/tau; 10 packed raw h^-2 versus #216 stays OPEN",
+  "published_source_blobs": {
+    "regular_null_and_bianchi": "569a685a052a3a640e8031c120c739e963e54bd5",
+    "vacuum_polarization": "a08b300b6b51687c30e3d14feb40595678c723fb",
+    "one_scalar_clock": "86b973777661ee7a4e9f5692b7c9b06ec2a1bcc6"
+  },
+  "source_reproducibility": "GitHub blobs retrieved and checked by paths; exact symbolic statements separately executed on local scripts, ordinary/-O JSON byte identical. Remote CI has NOT been run and source-byte identity of first two local/published copies is not claimed.",
+  "local_checks": [
+    {
+      "name": "stored_null_ward",
+      "exact_controls": 59,
+      "normal": "PASS",
+      "python_optimized": "PASS",
+      "stdout_sha256": "3fc7440934515e1e2ff76a6daf7030c43ab833ba7f078d70570b8d19e1481659",
+      "native_tangent_dim": 5,
+      "exact_nonlin_bprime": "-2/3",
+      "exact_nonlin_bsecond": "-2665/1296",
+      "bianchi_null_residual": "209448/6889",
+      "exceptional_completion_missing": true
+    },
+    {
+      "name": "stored_polarization",
+      "exact_controls": 22,
+      "normal": "PASS",
+      "python_optimized": "PASS",
+      "stdout_sha256": "7dda70f54565e650e3713e45ae3894a4c354e371f08fbdfbbd0d3adf3105c361",
+      "null_k": [
+        13,
+        3,
+        4,
+        12
+      ],
+      "GR_physical_polarizations": 2,
+      "stored_admitted_polarizations": 1,
+      "missing_H0_lambda_H0_lambda": "-543024/89557"
+    },
+    {
+      "name": "one_scalar_clock",
+      "exact_controls": 14,
+      "normal": "PASS",
+      "python_optimized": "PASS",
+      "stdout_sha256": "e341ef7ee846ebb0de22c4d6d9f320318d17c4704c573407d28e76888bc4a7b8",
+      "exact_clock_gamma": "-271512/89557",
+      "actual_stored_edge_law_violated": true
+    }
+  ],
+  "rejected_inferences": [
+    "nine algebraic null probe variations are automatically in physical stored-adjoint tangent",
+    "QGT full ten flat-positive symbol rank implies ten native Einstein Euler directions",
+    "Bianchi plus five real stored metric rows forces all nine Ricci-null rows",
+    "single generic offdiagonal Poff fixes exceptional modes",
+    "diffeomorphism gauge can repair excluded second GW polarization in fixed full-support stored class",
+    "scalar clock normalization is already an admitted native update"
+  ],
+  "status": "RESEARCH / exact finite algebra and conditional observer extension, no full GR claim",
+  "remote_ci_claimed": false,
+  "scientific_acceptance_claimed": false
+}

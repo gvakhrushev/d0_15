@@ -1,0 +1,123 @@
+{
+  "input_ref": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "integrated_concurrent_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+  "paths_relative_to": "repository root",
+  "excluded_self": "ARTIFACT_HASHES.json",
+  "files": [
+    {
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "sha256": "4d511fc0409c4a1676341931d5629edb0ba6c32793ff747f78cb44ecc0a4c77d",
+      "bytes": 236385
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_JOINT_PREPARATION_COMPILER_CLOCK_SYNTHESIS_2026_10_21.md",
+      "sha256": "2b2c1fa459b2926b71fc3b002ca80bb91d36a84e7bcc4bb2e25bbac0114a90c9",
+      "bytes": 42960
+    },
+    {
+      "path": "02_REGISTRY/research/MEMO_A4D_JOINT_RESPONSE_DECOUPLING_MICROSTRUCTURE.md",
+      "sha256": "e993fc640600663da33ceebe8e6bcf1cc54c6868afccabd721bfeb9bd7dc41e0",
+      "bytes": 710201
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/COMPOSITION_THEOREM.md",
+      "sha256": "382dc8c93612e0edd5237d096c64f7938713e0702c14e282e1613c24558cedac",
+      "bytes": 10765
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/INTEGRATION_RESULT.json",
+      "sha256": "3a1cef462b3dbd92066fce39faae1a608d56740a1213936fcabe3fa382d8fa13",
+      "bytes": 3852
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/README.md",
+      "sha256": "0c7d00a6738fe9f27709b10e283c96ca045802924901717b3120e605aedc77fa",
+      "bytes": 8072
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/SOURCE_PINS.json",
+      "sha256": "136106415df7e5d7ac175dd03996d90b38707006ccd621bbddb9497bda289eff",
+      "bytes": 10171
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/BALANCED_NATIVE_PREPARATION.md",
+      "sha256": "7b9d3afe684f34695a4dfd6d89a8db457ba9cf47002733c65e9a2dc5c5751d68",
+      "bytes": 23131
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/CHECK_RESULT.json",
+      "sha256": "4133366b05ab68e33238804dc8b80aa046b267131446f62babfb3da3003a2a18",
+      "bytes": 4552
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/SOURCE_PINS.json",
+      "sha256": "050516fe7b75b6c7c35e3c90d1fc8e98bad02e5f87c01d0c56f723565f195d8c",
+      "bytes": 1532
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/balanced_preparation/check_balanced_preparation.py",
+      "sha256": "9c47c832b820997c056a607074128ed0b9b77faec482d3d54272acd8b01c9ce3",
+      "bytes": 14301
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/compiler/CHECK_RESULT.json",
+      "sha256": "1487c939af6c236e5bd0456f8ca52090ce55e6bf4fce2b74d0f35e360cdb5ff2",
+      "bytes": 6027
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/compiler/MONOTONE_COMPILER_ENVELOPE.md",
+      "sha256": "af681cc76e2cdeec936a5e70645f4d76200c6ae0a69672fc034b424512227344",
+      "bytes": 23629
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/compiler/SOURCE_PINS.json",
+      "sha256": "db64ab97706f748cdc56eb61145e6dea0a76e7dd34fe630c46d19eedbd84e080",
+      "bytes": 3524
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/compiler/check_monotone_compiler_envelope.py",
+      "sha256": "280b5daca6d81f6b97cbbda9859ca78066e7b610dbdc8afd1ae09ab62fbf6e88",
+      "bytes": 11351
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/monitored_return/COMPLETE_MONITORED_CQ_RESULT.json",
+      "sha256": "67ccfdb933bc6de306919ed8218ff9aa8283c324ac853d0aa5d9326dadb65e57",
+      "bytes": 5544
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/monitored_return/COMPLETE_MONITORED_CQ_SOURCE.md",
+      "sha256": "88ae2feab137fdb9f4365fa4a42d3ab91c43e6b77173c5b80da0aec78c46e4c5",
+      "bytes": 11801
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/monitored_return/check_complete_monitored_cq_source.py",
+      "sha256": "6858ff2bb4488b91196b6b3300cf6aa30187670a2c56233184895459bcc6f39e",
+      "bytes": 11643
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/BALANCED_CHECKER_INDEPENDENT_REVIEW.md",
+      "sha256": "8df7700cee9961e9a6303bab7eb13325bda37c1d5fae483e16d4fdf6b9eb7059",
+      "bytes": 14210
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/BALANCED_PREPARATION_INDEPENDENT_REVIEW.md",
+      "sha256": "8c2e7b747f3a04f6a728c8dea7955e211c8a70051194d45032c7f7bdd122ffc5",
+      "bytes": 4781
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/COMPILER_ENVELOPE_INDEPENDENT_REVIEW.md",
+      "sha256": "3962a7ae14fbcc5cf980949866e7ccbfa9e6f0146b6f63b271353cfc4f39b4a9",
+      "bytes": 8888
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/INTEGRATION_REVIEW.md",
+      "sha256": "f179f6d8a2b933911060089406a858b9441cdc96d71ddf1eabe063e7ab510dd0",
+      "bytes": 12246
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_joint_preparation_compiler_clock_2026-10-21/reviews/MONITORED_RETURN_INDEPENDENT_REVIEW.md",
+      "sha256": "696910fb2dbb0ad37a703758580fe9b5008769e9ec461d83e7ca4a9e9a77505b",
+      "bytes": 6231
+    }
+  ]
+}

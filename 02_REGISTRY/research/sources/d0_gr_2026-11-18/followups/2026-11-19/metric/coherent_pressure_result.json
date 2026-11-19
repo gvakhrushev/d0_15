@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "one_bit_preserved_mark": {
+    "Z": "1",
+    "rows": [
+      {
+        "q": "25/61",
+        "weak_j": "-155/61",
+        "observed_m": "25/61",
+        "d_log_Z_d_q": "-61/5",
+        "double_commutator_over_2Z": "-180/61"
+      }
+    ],
+    "first_layer": "36",
+    "relative_variance": "36",
+    "orthogonal_remainder": "0",
+    "Z_for_contractive_A_over_7": "1/49"
+  },
+  "two_bit_mixed_matrix": {
+    "Z": "553400983/204490000",
+    "rows": [
+      {
+        "q": "16/25",
+        "weak_j": "385813864/553400983",
+        "observed_m": "1954825009/2767004915",
+        "d_log_Z_d_q": "274628775/1106801966",
+        "double_commutator_over_2Z": "-25755689/2767004915"
+      },
+      {
+        "q": "144/169",
+        "weak_j": "449980308/553400983",
+        "observed_m": "442391210/553400983",
+        "d_log_Z_d_q": "-684087495/2213603932",
+        "double_commutator_over_2Z": "7589098/553400983"
+      }
+    ],
+    "first_layer": "8030901802471461/306252647985366289",
+    "relative_variance": "17929263706699086/306252647985366289",
+    "orthogonal_remainder": "582256582601625/18014861646198017"
+  },
+  "operator_vs_scalar": {
+    "original_mark": "16/25",
+    "normalized_sandwich_mark": "40/49",
+    "operator_Doob_mark": "1384/1825",
+    "input": "maximally mixed protected spin"
+  },
+  "four_settings_theorem": {
+    "odds_sqrt_nodes": [
+      "4/5",
+      "5/6",
+      "7/8",
+      "9/10"
+    ],
+    "corresponding_probabilities": [
+      "16/41",
+      "25/61",
+      "49/113",
+      "81/181"
+    ],
+    "monic_constant": "21/40",
+    "monic_leading": "1",
+    "three_root_witness_coefficients_ascending": [
+      "1",
+      "-4",
+      "0",
+      "4",
+      "-1"
+    ],
+    "three_positive_sqrt_odds": [
+      "2-sqrt(3)",
+      "1",
+      "2+sqrt(3)"
+    ],
+    "center_test_size_M_bits": "1+3*M when the central setting is shared",
+    "premises": "same terminal weight, input and parallel conditional branch frames along each axis",
+    "narrow_collar_minimality_claimed": false
+  },
+  "physical_full_price_selected": false
+}

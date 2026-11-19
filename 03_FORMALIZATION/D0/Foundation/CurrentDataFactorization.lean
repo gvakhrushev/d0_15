@@ -4,48 +4,30 @@ import Mathlib.Tactic
 /-!
 # Current-data quotient factorization
 
-`D0.Foundation.DetectionCapabilityBoundary` proves that history/order is a
-third primitive capability unless detector comparisons ignore the history
-coordinate.  The remaining structural seam is therefore a factorization
-question:
+This module solves a quotient question for a declared product observation
+Current x History: when does a Boolean comparison descend through the
+projection that forgets History? With inhabited history the answer is
+exactly invariance under changing either history coordinate, with a unique
+descended comparison. The empty-history boundary, explicit descent and
+concrete positive/negative controls are retained below.
 
-> When does a comparison on full observations descend to the current
-> membership/value quotient?
+This theorem concerns that SPECIFIC forgetting projection. It does not
+require a physical D0 comparison to ignore memory. In a closed system the
+retained consequences of previous interactions belong to its CURRENT complete
+state; an internal readout of those consequences can use the original
+comparison without adding a fundamental history-comparison primitive.
+Consequently the three-coordinate model in DetectionCapabilityBoundary
+proves an access/representation boundary, not a third D0 detector operation.
 
-This module answers that question in full, rather than only in the concrete
-Boolean example.  For arbitrary current-data and history types:
-
-* a full observation is `Current × History`;
-* a comparison is a Boolean predicate on two full observations;
-* `HistoryInvariant` means changing either history coordinate while keeping
-  current data fixed cannot change the result;
-* `liftCurrent` lifts a current-data comparison to full observations.
-
-The central theorem proves:
-
-`HistoryInvariant cmp ↔ ∃! base, liftCurrent base = cmp`.
-
-So history invariance is exactly the necessary-and-sufficient condition for a
-unique factorization through current data.  Both arguments are handled; this is
-stronger than the one-sided `FactorsThroughCurrentData` used in the boundary
-module.  No nonempty/history-default assumption is needed for the abstract
-equivalence: the factorization uses a quotient-style choice-independent
-definition and proves uniqueness extensionally.  A convenient explicit
-`descendAt` construction is also supplied when a reference history exists.
-
-Boundary/negative controls:
-
-* the lifted equality comparison factors and is invariant;
-* history equality is not invariant and therefore has no factorization;
-* the empty-history case is covered: full comparisons are extensionally unique
-  and the theorem still applies;
-* uniqueness is explicit — two base comparisons with the same lift are equal.
-
-Finally the concrete D0 observation is connected to the abstract theorem:
-membership and value comparisons descend uniquely, while history comparison
-cannot.  This closes the quotient mathematics.  Honest residual: proving that
-every primitive M1-admissible **detector-layer** comparison is history-invariant
-remains the typed stratification obligation; it is not assumed here.
+The concrete map named currentData below keeps only (member, value).
+It is not asserted to be the full current physical observation when the
+history bit is retained and accessible. The actual memory-minimal quotient
+is instead the already-owned complete-future profile in FutureExecution:
+it forgets only distinctions invisible to every admitted future interaction
+and internal readout. Its physical realization and the classification of
+primitive D0 comparisons remain separate proof obligations. History
+invariance under this coarse projection is not imposed as a replacement for
+them. No theorem statement or proof below is changed by this clarification.
 -/
 
 namespace D0.Foundation.CurrentDataFactorization

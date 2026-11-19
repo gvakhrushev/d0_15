@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "native_owner": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "live_blocks": 16,
+  "new_readers": 64,
+  "added_births": 64,
+  "added_square_letters": 192,
+  "positive_fine_cells_per_H_T_one_block": {
+    "00": 105,
+    "01": 60,
+    "10": 90,
+    "11": 60
+  },
+  "old_entropy_upper_phi": "8.81673392390153",
+  "paid_lengths_one_block": [
+    "11.87996009738874",
+    "11.87996009738875"
+  ],
+  "all_new_work_entropy_one_block_phi": [
+    "3.22316162065684",
+    "3.22316162065685"
+  ],
+  "all_new_tails_binary_entropy_phi": [
+    "0.44688781005247",
+    "0.44688781005248"
+  ],
+  "fine_entropy_delta_including_additional_detectors": [
+    "0.122236216372737",
+    "0.122236216372739"
+  ],
+  "paid_token_length_delta": [
+    "0.003740807083067",
+    "0.003740807083068"
+  ],
+  "conditional_budgets": {
+    "1": {
+      "certified_deficit_lower_bound": "70.77685780439738",
+      "min_extra_entropy_as_bits_lower_bound": "24.568130601443",
+      "min_if_additional_Kraft_paid_as_bits_lower_bound": "49.136261202886",
+      "required_delta_extra_work_if_no_extra_labels": [
+        "0.240731625662407",
+        "0.240731625662409"
+      ],
+      "min_deficit_increment_per_further_NC1": "0.106224379895055"
+    },
+    "2": {
+      "certified_deficit_lower_bound": "100.97051773160293",
+      "min_extra_entropy_as_bits_lower_bound": "46.731976966841",
+      "min_if_additional_Kraft_paid_as_bits_lower_bound": "140.195930900524",
+      "required_delta_extra_work_if_no_extra_labels": [
+        "0.179613517476038",
+        "0.179613517476040"
+      ],
+      "min_deficit_increment_per_further_NC1": "0.329668284921291"
+    }
+  },
+  "verified_bounds_in_units_1e-48": {
+    "minus_delta_J_lower": "68368572.973390",
+    "abs_delta_heat_upper": "64.405083",
+    "minus_delta_full_RAW_lower": "68368508.568307"
+  },
+  "physical_Book_absolute_work_equals_native_TP_inferred": false
+}

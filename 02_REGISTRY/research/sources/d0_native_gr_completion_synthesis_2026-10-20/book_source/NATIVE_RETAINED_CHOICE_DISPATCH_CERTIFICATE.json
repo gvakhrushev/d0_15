@@ -1,0 +1,55 @@
+{
+  "classical_controller_admission_proved": false,
+  "coherent_flag_bound_inferred": false,
+  "cq_chain": {
+    "common_preexisting_flag_cancels": true,
+    "fresh_flag_entropy_phi": "2-p",
+    "identity": "H(P,Y|R)=H(P)+sum pi_f H(Y|R,P=f)",
+    "noncommuting_RIGHT_fixture": true
+  },
+  "literal_fixed_clock_bank": {
+    "entropy_lower_strict": "42NK",
+    "generic_baseline_capN_upper_strict": "3N",
+    "increment_lower_strict": "(42K-3)N",
+    "independent_actual_trials": "mK=42NK",
+    "parity_success": "2p^3=4p-2",
+    "sequential_early_abort_bank_included": false
+  },
+  "physical_Info_or_work_selected": false,
+  "postselected_branch_is_complete_alternative": false,
+  "primary_baseline": {
+    "actual_cap2_entropy_upper_strict": "2/15",
+    "conditional_blank_margins": [
+      "7427626687073/878201927337246720",
+      "11377088184457/1167943406869159830"
+    ],
+    "fresh_Golden_flag_entropy_lower_strict": "4/3",
+    "fresh_flag_entropy_increment_lower_strict": "6/5",
+    "literal_pad_vs_L_dispatch_increment_lower_strict": "53/40",
+    "log_bound_integer_inequality": "390^390*127*5^26 <389^389*8^26",
+    "scope": "flat primary baseline; persists on a nonempty small-t neighborhood by continuity"
+  },
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FIXED_CLOCK_PREPARATION_BANK.md": "a922a3aeaabe8dfb68dc28e4d788c708b496a1081a3a0ab8cf241fd91fbaf88e",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CAR_ACTUATED_METRIC.md": "b9dd63f0888a062941c1744d800120e47d20777f429f892f5a98c504a3c0a4be",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PAID_RANDOM_CHOICE_MINIMUM.md": "30fe9fe6e48f6a978b6f5b7762bced2824ca3342043a566fc4e94723ae6d8df3",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_CAR_PAID_RETURN_PRICE.md": "2fdf545aa33e3c85f9ef81398fe604a4770c0af76ee872845beefd4f365cfcc1",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_RIGHT_COMPLETE_CODE_SOURCE.md": "7a38155f37b98fabdd358271be52ad4919a0b28963a5fb952d91da049eba4424",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE_CERTIFICATE.json": "9c910c2e28d02af5fd3a8642d98d01b8c58aeb0a9a55ccf3612a5bc80e397785",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/check_native_car_actuated_metric.py": "72b2743f2f4c9408ceafe29dc691786c5011c4d1133d5fa6ebdb671a230bc3fa"
+  },
+  "status": "PASS",
+  "word": {
+    "actual_padding_complement": "c1:I; c0:G_N^2",
+    "all_c_f_complements_checked": true,
+    "coherent_flag_entropy": 0,
+    "conditional_slot_count_each_branch": 6,
+    "each_branch_primitive_multiset": "2K+2C_cN+2G_N",
+    "full_controller_CAR_dimension": 64,
+    "retained_choice_dimension": 2,
+    "retained_probabilities": [
+      "p",
+      "p^2"
+    ]
+  }
+}

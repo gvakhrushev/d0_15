@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-03",
+  "scientific_input": "e63ef7a3073f4854a2fc8fd4c69bf004bc42d544",
+  "scope": "Bounded new return/record algebra and source-domain application; no physical closure or full historical chain acceptance.",
+  "files_sha256": {
+    "02_REGISTRY/research/A4D_SCOPED_NATIVE_KAPPA_CONTRACT_2026_11_03.md": "57b56fdcf04498c9fa4940e3e5a846576b47bad4309badc0537ea780a79db469",
+    "02_REGISTRY/research/A4D_NATIVE_RETURN_RECORD_SOURCE_GATE_2026_11_03.md": "665fcbc48d64e4e6fc4bf5fcc764845d86012a42683f5d3188b47158cda5a2b9",
+    "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/check_return_record_gate.py": "a73d0cbc3ecf38b47b22c6ace9f9c44638827c9db977ba1e995a9b80f5cad1e6",
+    "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/result.json": "3d9587f897d12cb4c21c19fcbe7ec22098e363df6a87b01cc8cbf98a06ea4ef1",
+    "02_REGISTRY/research/sources/d0_native_return_record_gate_2026-11-03/REVIEW.md": "b3088a447813c1277b544de53bf5ebf75c67d46f0f7498bb8849519d17788d70"
+  },
+  "observed_local_checks": [
+    {
+      "name": "exact-source-replay",
+      "exit_code": 0,
+      "stdout": "{\n  \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\",\n  \"status\": \"PASS\",\n  \"check_count\": 28,\n  \"replays\": [\n    {\n      \"options\": [],\n      \"exit_code\": 0,\n      \"stdout_sha256\": \"3d9587f897d12cb4c21c19fcbe7ec22098e363df6a87b01cc8cbf98a06ea4ef1\"\n    },\n    {\n      \"options\": [\n        \"-O\",\n        \"-W\",\n        \"error\"\n      ],\n      \"exit_code\": 0,\n      \"stdout_sha256\": \"3d9587f897d12cb4c21c19fcbe7ec22098e363df6a87b01cc8cbf98a06ea4ef1\"\n    }\n  ]\n}\n"
+    },
+    {
+      "name": "work",
+      "exit_code": 0,
+      "stdout": "PASS work_validation: active work plane clean and enforced\n"
+    },
+    {
+      "name": "agent-protocol",
+      "exit_code": 0,
+      "stdout": "PASS agent_protocol: cold-start task metadata enforced\n"
+    },
+    {
+      "name": "assembly",
+      "exit_code": 0,
+      "stdout": "{\n  \"active_result_limit\": 54,\n  \"active_results\": 54,\n  \"discharged\": 5,\n  \"obligations\": 22,\n  \"results\": 98,\n  \"scientific_promotion\": false,\n  \"valid\": true\n}\n"
+    },
+    {
+      "name": "changed-links-whitespace-preservation",
+      "exit_code": 0,
+      "stdout": "{\"links\": \"PASS\", \"prior_owner_and_brief_bytes\": \"UNCHANGED_PREFIX\", \"git_diff_check\": \"PASS\"}\n"
+    },
+    {
+      "name": "validate_repo.py",
+      "exit_code": 0,
+      "stdout": "claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918\nPASS warnings=0\n"
+    }
+  ],
+  "mathematical_review": {
+    "reviewer": "source_criterion",
+    "verdict": "Scoped approval after carrier and right-lift corrections",
+    "scope": "New equations, fixed-chart versus centre application, transport requirements and bounded formula-code review; no admission or GR closure."
+  },
+  "domain_review": {
+    "reviewer": "history_admission",
+    "path": "REVIEW.md",
+    "verdict": "PASS within source/domain/claim scope"
+  },
+  "preserved": {
+    "prior_owner_and_brief": "all existing bytes at scientific_input retained as prefix",
+    "claims": "unchanged",
+    "assembly": "unchanged; 98 results / 22 obligations / 5 discharged",
+    "raw216": "unchanged",
+    "GR_closed": false
+  },
+  "not_replayed": [
+    "Historical native-word/heat/full128/GR suites",
+    "Lean"
+  ],
+  "remote_CI": "Not part of this local validation receipt."
+}

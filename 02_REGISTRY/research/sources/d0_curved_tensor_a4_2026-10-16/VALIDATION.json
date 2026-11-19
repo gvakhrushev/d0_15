@@ -1,0 +1,22 @@
+{
+  "exact_conditions": 427,
+  "independent_scientific_acceptance": false,
+  "mathematical_mutations_rejected": 4,
+  "native_action_or_GR_closed": false,
+  "new_Lean_compilation": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "parent_suites_replayed": false,
+  "python": "3.13.5",
+  "schema": "d0-curved-tensor-validation/1",
+  "sha256": {
+    "A4D_CURVED_TENSOR_A4_SOURCE_AND_ELLIPTICITY.md": "b7f71bb40a0cba8468ff81eb69f48694e01aa8f53fd95c3d9440b3079276a8a9",
+    "INPUTS.json": "7c0af598db1b78431233b7d264475b6e5c563d20e3dcff2db07870dc4cdcb2c6",
+    "README.md": "498231ac88cd0075e59a55eb132ed1e33feb9e6b465700b0463923b643ab0bb5",
+    "check_curved_tensor.py": "51be3d4746ae212ab589eac5b9a58aad5f20c3e559a21777efe74d3d444a4e67",
+    "mutations.json": "992bb17586cffc06fa79a370eebe144d0bd0eda638adb481bc95063109b244a4",
+    "result.json": "8565e3dd3411918613b946cd8b398e63cf6595c823d5f1162afeb3fc807ff8bc",
+    "test_mutations.py": "8c6ee024c034a1c23d4d97921b587e4b0b811afe6755a27602e05acf015757e6"
+  },
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "d0-moving-innovation-source/1",
+  "source_git_blob_sha": "6a1e30d6d7d948ee513c0116ba6c209b3235ba2c",
+  "normal_exit_code": 0,
+  "optimized_exit_code": 0,
+  "stdout_byte_identical": true,
+  "result": {
+    "exact_controls": 24,
+    "frozen_log_score": "71/1725",
+    "innovations_actual_frozen_projector": [
+      ["0","0","0"], ["-41/1530","-1/170","-16/765"],
+      ["-165/25921","1/161","-326/25921"]
+    ],
+    "native_projector_admitted": false,
+    "original_GR_closed": false,
+    "q": ["17/64", "23/204", "75/1127"],
+    "status": "PASS",
+    "true_log_score": "-1/3"
+  },
+  "physical_boundary": "projectors from existing comparison vectors are defined mathematically; native actuation and full original Cost-Info remain open"
+}

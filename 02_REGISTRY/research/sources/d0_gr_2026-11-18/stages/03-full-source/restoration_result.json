@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "owner_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "native_gate": "controlled actual 4x4 quaternion L_i (8x8 SourceI); physical inverse uses 3 SourceI calls",
+  "all_spin_input_columns": 4,
+  "entangled_reference_extension": "all-column scalar Gram and scalar success Kraus",
+  "caps": [
+    {
+      "cap": 0,
+      "full_leaves": 4,
+      "failure": 0.4984471899924291,
+      "expected_forward_calls": 1.0,
+      "entropy_nats": 1.3831871316252524
+    },
+    {
+      "cap": 1,
+      "full_leaves": 10,
+      "failure": 0.2499975887810804,
+      "expected_forward_calls": 1.498447189992429,
+      "entropy_nats": 2.0726328706175474
+    },
+    {
+      "cap": 2,
+      "full_leaves": 22,
+      "failure": 0.12538699314826807,
+      "expected_forward_calls": 1.7484447787735093,
+      "entropy_nats": 2.4184263183568793
+    },
+    {
+      "cap": 3,
+      "full_leaves": 46,
+      "failure": 0.06288819875191388,
+      "expected_forward_calls": 1.8738317719217776,
+      "entropy_nats": 2.5918599937527476
+    },
+    {
+      "cap": 4,
+      "full_leaves": 94,
+      "failure": 0.031541752800337025,
+      "expected_forward_calls": 1.9367199706736913,
+      "entropy_nats": 2.678846140997486
+    }
+  ],
+  "coherent_double_coin_collar_and_occupation_matrices": "PASS",
+  "physical_C_established": false
+}

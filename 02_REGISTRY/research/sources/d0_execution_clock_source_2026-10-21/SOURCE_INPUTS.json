@@ -1,0 +1,59 @@
+{
+  "input_ref": "d8f5901b32024bef0abd2d219f8f7228be4993e9",
+  "scientific_owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr": 334,
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "git_blob": "14867b53a1bbb006eafe2cbf90d62be03560e5a0",
+      "use": "CONSUMED complete N=1 CQ all42 source; not re-proved by the clock test"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_normal_source_recovery_2026-10-21/constitutive/CONSTITUTIVE_COMPOSITION.md",
+      "git_blob": "60f2a9c0b614541847e28b3a183a90c9731fcc0e",
+      "use": "CONSUMED same-CQ nonlinear stationary form; not identified with raw full128"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md",
+      "git_blob": "db279db445bcc013827773bdede3488a9461fcea",
+      "use": "CONSUMED actual complementary cut and abstract R_clock; supplied concrete forward-window application"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_minimality_closure_2026-10-20/prospective/STOPPED_CLOCK_SOURCE.md",
+      "git_blob": "21031109172282833a938a79cef2ff7dec889266",
+      "use": "CONSUMED literal all128 reporting code, fixed-round versus stopped task distinction"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py",
+      "git_blob": "1b3ab5605d323364ec83dac110f294b0edd37996",
+      "use": "Literal duplicated Walsh rows, ACDB all16 CAR and two Golden physical ports"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+      "git_blob": "35808430f66f86233789680e5b385f6f47165fd6",
+      "use": "Shared parent: distinguish observation, actual execution, full price, writer and recovery"
+    }
+  ],
+  "actual_local_validation": {
+    "checker_git_blob": "37664433f06f14ceb263c3d931757c5740c27d8a",
+    "checker_sha256": "7d817e7bc7db6c56addc4a4c8fe06e316571af1ffd20f9f12bae9f30a6a6d0ed",
+    "result_git_blob": "6fd47b3e36f8c71025d4dc791164c48930edf8f5",
+    "result_sha256": "02ae17867a1f5f3971d6a16d0014b48cadbc959c4d1d1b999086a6629798f524",
+    "normal_and_python_O_stdout_equal": true,
+    "environment_variable": "OPENBLAS_NUM_THREADS=1",
+    "remote_replay_claimed": false,
+    "new_Lean_build_claimed": false,
+    "independent_scientific_acceptance_claimed": false
+  },
+  "parent_substitution": {
+    "abstract_clock_corner": "R_clock = T_clock* T_clock",
+    "concrete_application": "R_clock = projector onto clock starts staying inside a supplied forward window",
+    "rank": "max(M-d,0)",
+    "source": "D J_window = max(M-d,0) D J_data at fixed clock/cut/fugacity",
+    "retained_boundary": "-d_RIGHT min(d,M) dim(DATA) log(1-z)",
+    "compulsory_clock_cut_selected": false,
+    "full_primitive_durations_derived": false,
+    "physical_Info_work_selected": false,
+    "GR_closed": false
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "source_ref": "61a0b66f2e9512c7e3e64b2d9a0599231b0919fa",
+  "integration_ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801",
+  "primary_case_main_ref": "0bf309b6260cf5b63e54d6ccabdcdae6734b950a",
+  "owner": "existing Draft #334",
+  "phase": "native realization; primary-family domain/source application",
+  "owned_inputs": [
+    {
+      "path": "02_REGISTRY/gr_assembly/sources/d0_double_null_quadratic_cartan_2026-10-19/arbitrary_brinkmann_all40.md",
+      "sha256": "8dbca8ff9a4567a2baf216357b5d3ffa2d217281ced4e5d0e535257db2f5e83e",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md",
+      "sha256": "bcbaeae0b771beb2e03dccff0cb5718154a0dcab089c7da19424d82f3f1cbf17",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md",
+      "sha256": "748f723516dead3a713f31dd5a49dcbde7805ef0a15e7450f3026790abefa5e2",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md",
+      "sha256": "a33e364caed023d74cc70cfdc38380581bbb4f47af96e1c23ad7d3490e9da169",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md",
+      "sha256": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+      "sha256": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md",
+      "sha256": "1318f8a3719bffd11c8d319a04beede4bd2c872365fc87960a1110c01a2274a7",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py",
+      "sha256": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+      "ref": "25bea5bddd54988e32363c1968cdec8f6e4b7801"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/inputs/primary_recovery.md",
+      "sha256": "16850557ba85a3cf648a3a425a4b41ac9c9658982bb1ac55336e3939b1b1f896",
+      "ref": "61a0b66f2e9512c7e3e64b2d9a0599231b0919fa",
+      "source_path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+      "snapshot_scope": "Exact consumed original source; later active-owner extensions are not replay prerequisites."
+    }
+  ],
+  "frozen_artifacts": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "sha256": "290772fb869cfa73ed0cc419d3182048d80ea9b02312be0b9d56ad558f5c47be"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/check_primary_domain_source.py",
+      "sha256": "c67285c7469db49ff61f3e52597d0bcc6aad991ec1f7af025d6daeb065a43edf"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/PRIMARY_DOMAIN_SOURCE.json",
+      "sha256": "a026a48901a8a4e40f04927b9b10ed7d836e97c24ccd77a1edbf686d48c750bd"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_PRIMARY_CONFIGURED_SOURCE_STRICT_JULIA_AND_RAYLEIGH_GATE_2026_10_20.md",
+      "sha256": "43bbf77001e74d22c6fde7ae8025f970a7dfe5105d1c6dfdf98accfce431f348"
+    }
+  ],
+  "scope": "Conditional strict-domain/source application. No admission, complete price, accepted assembly or GR closure."
+}

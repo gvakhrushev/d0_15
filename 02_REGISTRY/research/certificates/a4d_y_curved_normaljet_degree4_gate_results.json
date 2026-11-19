@@ -1,0 +1,29 @@
+{
+  "schema": "a4d-y-curved-normaljet-degree4-gate-v1",
+  "terminal": "A4D-Y-NORMALJET-DEGREE4-COCYCLE-ABSENT",
+  "scope": "only the homogeneous degree-four part of the delta^2 normal-jet Euler forcing",
+  "first_connection_tangent_degree": 1,
+  "metric_gram_series": {
+    "S_delta": "-T/2",
+    "S_delta2": "3*r^2*T/40",
+    "Q_delta": "T",
+    "Q_delta2": "-2*r^2*T/5"
+  },
+  "joint_dimensions": {
+    "connection_hessian_rank": 94,
+    "fixed_metric_joint_rank": 95,
+    "joint_rows": 136,
+    "common_source_augmented_rank": 105,
+    "left_cokernel_after_common_source": 31
+  },
+  "degree_four": {
+    "homogeneous_monomial_count": 35,
+    "nonzero_forcing_entries": 0,
+    "exact_augmented_rank_with_all_forcing_columns": 105,
+    "cokernel_obstruction_rank": 0
+  },
+  "nonclaims": [
+    "this certificate checks only the homogeneous degree-four slice and does not itself analyze lower-degree compatibility",
+    "the degree-four gate alone does not prove a nonlinear curved stationary branch or refinement-uniform remainder"
+  ]
+}

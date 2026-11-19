@@ -1,0 +1,254 @@
+{
+  "physical_GR_closed": false,
+  "source_revision": "15f5b786ed912a0e91d660e337bf60a7c15c7cfa",
+  "archive_entrypoints": [
+    {
+      "entry": "00-projective/check_projective_rigidity.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "00-projective/doob_actual_mark.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "01-synthesis/check_brackets.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "01-synthesis/check_feedback.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "01-synthesis/check_scale_and_echo.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_amplification_independent.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_cq_rewinding.py",
+      "result": "PASS",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_loop_calibration.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_orbit.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_orbit_active_tariff.py",
+      "result": "PASS",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_repeat_probe.py",
+      "result": "PASS",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_rewind.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_symmetry.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_transfer.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "02-physical-transfer/check_work_diamond.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_forward.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_gold_native.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_h1_codec.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_h1_memory.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_identifiability.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_mark.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_pressure.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_rate.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_restoration.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_scale.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/check_visibility.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "03-full-source/golden_review_check.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "04-absolute-calibration/check_h1_finite.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "04-absolute-calibration/check_quantum_record.py",
+      "result": "PASS float tolerance",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "04-absolute-calibration/check_renewal.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "04-absolute-calibration/diagnostics/check_cq_bright_terms.py",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "04-absolute-calibration/diagnostics/check_postpvm.py",
+      "result": "PASS",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "04-absolute-calibration/diagnostics/replay.py",
+      "result": "PASS",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "05-clock-price/replay.py",
+      "result": "PASS",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "06-same-history/axiom/check_constraints.py_with_repo",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "06-same-history/axiom/check_tariff.py_with_repo",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "06-same-history/coherence/check_coherence.py_with_repo",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "06-same-history/coherence/check_local_work.py_with_repo",
+      "result": "PASS exact bytes",
+      "stderr_bytes": 0
+    },
+    {
+      "entry": "06-same-history/replay.py",
+      "result": "PASS",
+      "stderr_bytes": 0
+    }
+  ],
+  "finite_precision": {
+    "absolute_calibration_maximum_observed_difference_less_than": 4.45e-16
+  },
+  "nested_suites": {
+    "04-absolute-calibration": {
+      "passed": 19,
+      "total": 19
+    },
+    "05-clock-price": {
+      "passed": 15,
+      "total": 15
+    },
+    "06-same-history": {
+      "passed": 12,
+      "total": 12
+    }
+  },
+  "current_entrypoints": [
+    {
+      "entry": "check_return_interval.py",
+      "result": "PASS parsed JSON matches tracked result"
+    },
+    {
+      "entry": "gate_relations/check_native_relations.py",
+      "result": "PASS parsed JSON matches tracked result"
+    },
+    {
+      "entry": "work_cocycle/check_gate.py",
+      "result": "PASS parsed JSON matches tracked result"
+    },
+    {
+      "entry": "geometry/check_geometric_response.py",
+      "result": "PASS parsed JSON matches tracked result"
+    },
+    {
+      "entry": "check_coherent_work.py",
+      "result": "PASS parsed JSON matches tracked result"
+    }
+  ],
+  "repo_checks": [
+    "validate_repo",
+    "validate_work",
+    "validate_agent_protocol",
+    "render_work_status --check",
+    "gr_assembly check",
+    "validate_pr_contract on the synchronized draft metadata"
+  ],
+  "assembly": {
+    "scientific_promotion": false,
+    "obligations": 22,
+    "discharged": 5,
+    "registered_results": 98
+  }
+}

@@ -1,0 +1,54 @@
+# A concrete full-coherent quantum Doob candidate and its actual task test
+
+18 November 2026; independent attempt on PR334 dc411daf01f697ec85dd22f28bfe124171796645. C has been reopened by the user. All objects below keep the full quantum output, without pinching or an imposed Gibbs sampler.
+
+## Positive construction
+
+Let V:H0→H1 be the actual complete initialized native isometry, including all canonical births, work, retained records and oldRIGHT. Let E>0 be a supplied complete terminal weight. Put H=V* E V>0 and
+
+    B=E^(1/2) V H^(−1/2).
+
+Then B*B=I exactly. This is a finite coherent isometry, not a classical law. It extends to a unitary on an enlarged carrier and therefore lies within the established universal native approximation theorem, with its actual implementation cost still to be included. The construction itself does not supply that cost or physical Info.
+
+For a whole clock-expanded coherent sequence W_j, define H_N=E and H_j=W_j* H_(j+1)W_j, with all H_j positive on the true input supports. Then
+
+    B_j=H_(j+1)^(1/2) W_j H_j^(−1/2),
+    B_(N−1)...B_0=E^(1/2)(W_(N−1)...W_0)H_0^(−1/2).
+
+The interior matrix square roots telescope without commutation assumptions. For recorded branches keep the full retained isometry sum_b |b>W_jb and use its complete terminal matrix including offdiagonal Gram blocks. A diagonal CP branch sum is justified only for actual diagonal future tests.
+
+For a positive initial density ρ, the absolute weighted mass is Z=Tr(ρH_0), and its complete source is
+
+    d log Z=[Tr((dρ)H_0)+Tr(ρ dH_0)]/Z.
+
+Backward differentiation retains all W_j, terminal, clock and initial derivatives. Native normalization therefore generates a concrete operator-valued boundary cocycle rather than deleting the pressure source. If the actual physical weighted W_j were supplied and these B_j matched the admitted primitive/mark graph, this would be an exact C map with no separate scalar Gibbs selector.
+
+## Necessary and sufficient preservation test for one actual native isometry
+
+For W=V and E>0, B=V holds iff the range of V is invariant under E, equivalently [E,VV*]=0. Proof: B=V implies E^(1/2)V=VH^(1/2), hence E^(1/2) preserves ran V; E self-adjoint makes that range reducing. Conversely range invariance permits functional calculus E^(1/2)V=V(V*EV)^(1/2), giving B=V. For prescribed marked effects, equality of B and V is stronger than needed, but the individual effect equalities B*P_bB=V*P_bV must still be checked. A stage gauge is allowed only if it preserves the actual marks or transports their actual paid readers.
+
+## Apply the ORIGINAL feedback terminal
+
+Let P be the original born-return projector, z the original fixed feedback constant and a=1−z. The original determinant uses
+
+    E=a I+zP,
+    H=a I+z C*C, C=j_return*V.
+
+On the already owned scalar section C=tI, q=t², 0<q<1,
+
+    H=(a+zq)I,
+    B*P B=[q/(a+zq)]I.
+
+The proposed native Doob history therefore changes the exact informative return mark by
+
+    q_Doob−q=z q(1−q)/(a+zq)>0.
+
+It is an implementable different history, not a weight identification of the same H.1 word. In the two-sector representation V=(√q,√(1−q))ᵀ and E=diag(1,a), the offdiagonal commutator [E,VV*] is z√(q(1−q)); the range is nonreducing throughout the informative collar. All nonreturn amplitude remains explicitly present. This mismatch disappears only at trivial q=0,1 or z=0; those are not the required nonzero-gain informative family.
+
+Its boundary source −d log(a+zq) is precisely the known feedback scalar source. Recovering that formula does not identify the actual Book Cost−Info history weights: it has used the feedback terminal as its supplied operand. Physically implementing B followed by a recovery to restore V would add a different paid word and reintroduce its full C test. Postselecting B or discarding its normalization would change the task.
+
+## Decision
+
+The matrix Doob route gives a positive finite construction and a short decisive test. It does not close C on the present informative graph. The task failure is exact and is not fixed by keeping coherent Gram terms more carefully; those are already retained. No universal no-go for a different native weighted-history map follows. The missing map remains a supplied physical weighting that passes all original marked-effect tests, including this terminal normalization, with its actual work source.
+
+Reproduction: python agent_synthesis/doob_actual_mark.py. This small symbolic diagnostic checks the scalar algebra only; no full native compiler, Einstein geometry, physical price or Lean closure is claimed.

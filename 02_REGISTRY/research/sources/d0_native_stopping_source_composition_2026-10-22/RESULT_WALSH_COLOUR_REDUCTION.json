@@ -1,0 +1,253 @@
+{
+  "scope": "new native seven/four Walsh colour refinement with full first-jet substitution; no finite filter claim",
+  "original_native_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+  "owned_entropy_blob": "c133c6aec28e2a4068b36a6d9646bc8fb04fc2a4",
+  "colour_SELECT_groups": {
+    "seven": [
+      1,
+      17,
+      25,
+      33,
+      41,
+      49,
+      57
+    ],
+    "four": [
+      5,
+      21,
+      37,
+      53
+    ]
+  },
+  "merged_label_groups": {
+    "seven": [
+      2,
+      18,
+      26,
+      34,
+      42,
+      50,
+      58
+    ],
+    "four": [
+      6,
+      22,
+      38,
+      54
+    ]
+  },
+  "signs": {
+    "seven": [
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "four": [
+      1,
+      -1,
+      1,
+      -1
+    ]
+  },
+  "physical_original_slots": 128,
+  "physical_port_merged_slots": 65,
+  "readout_classes_including_dark": 56,
+  "live_computational_branches": 24,
+  "exact_formal_Walsh_identities": true,
+  "arbitrary_retained_reference": true,
+  "cases": {
+    "r": [
+      {
+        "K": 1,
+        "merged_CQ": 2.8947816880917157,
+        "compressed_CQ": 2.894779647987622,
+        "colour_difference": 2.0401040936590675e-06,
+        "merged_source": -0.028250208698274996,
+        "compressed_source": -0.028295952590467646,
+        "colour_source": 4.574389219265049e-05,
+        "operator_counter": 2.0401040956228075e-06,
+        "operator_source": 4.574389219266401e-05,
+        "smoothing_source_bound": 5.177823212758564e-10
+      },
+      {
+        "K": 2,
+        "merged_CQ": 3.0177797318376007,
+        "compressed_CQ": 3.0177756516294,
+        "colour_difference": 4.080208200640811e-06,
+        "merged_source": -0.041133668598371184,
+        "compressed_source": -0.041225156382756714,
+        "colour_source": 9.148778438552996e-05,
+        "operator_counter": 4.080208191245615e-06,
+        "operator_source": 9.148778438532803e-05,
+        "smoothing_source_bound": 4.30076749047534e-09
+      }
+    ],
+    "v_one_port_null": [
+      {
+        "K": 1,
+        "merged_CQ": 2.8947816880917157,
+        "compressed_CQ": 2.894779647987622,
+        "colour_difference": 2.0401040936590675e-06,
+        "merged_source": -0.010670151348414572,
+        "compressed_source": -0.010716896243174191,
+        "colour_source": 4.674489475961843e-05,
+        "operator_counter": 2.0401040956228075e-06,
+        "operator_source": 4.674489475961614e-05,
+        "smoothing_source_bound": 5.177602017523521e-10
+      },
+      {
+        "K": 2,
+        "merged_CQ": 3.0177797318376007,
+        "compressed_CQ": 3.0177756516294,
+        "colour_difference": 4.080208200640811e-06,
+        "merged_source": -0.005973551264134577,
+        "compressed_source": -0.006067041053653732,
+        "colour_source": 9.348978951915533e-05,
+        "operator_counter": 4.080208191245615e-06,
+        "operator_source": 9.348978951923228e-05,
+        "smoothing_source_bound": 4.300444811008181e-09
+      }
+    ],
+    "ambient_TP_plus_preparation": [
+      {
+        "K": 1,
+        "merged_CQ": 2.8947816880917157,
+        "compressed_CQ": 2.894779647987622,
+        "colour_difference": 2.0401040936590675e-06,
+        "merged_source": -4.825804604557746e-05,
+        "compressed_source": -4.827676851652332e-05,
+        "colour_source": 1.8722470945860422e-08,
+        "operator_counter": 2.0401040956228075e-06,
+        "operator_source": 1.8722470945836917e-08,
+        "smoothing_source_bound": 2.606031936933e-10
+      },
+      {
+        "K": 2,
+        "merged_CQ": 3.0177797318376007,
+        "compressed_CQ": 3.0177756516294,
+        "colour_difference": 4.080208200640811e-06,
+        "merged_source": -4.5117064684541484e-05,
+        "compressed_source": -4.515388286997869e-05,
+        "colour_source": 3.6818185437204965e-08,
+        "operator_counter": 4.080208191245615e-06,
+        "operator_source": 3.6818185437975765e-08,
+        "smoothing_source_bound": 2.8410111948530013e-09
+      }
+    ]
+  },
+  "stationary_per_tick": {
+    "r": {
+      "colour_entropy": 2.0401040956228075e-06,
+      "colour_source": 4.574389219266401e-05
+    },
+    "v_one_port_null": {
+      "colour_entropy": 2.0401040956228075e-06,
+      "colour_source": 4.674489475961614e-05
+    },
+    "ambient_TP_plus_preparation": {
+      "colour_entropy": 2.0401040956228075e-06,
+      "colour_source": 1.8722470945836917e-08
+    }
+  },
+  "closed_two_mode_Julia_scalar": {
+    "r": {
+      "single_colour_probability": 1.0644086998315186e-07,
+      "single_colour_probability_source": 2.3866525692730633e-06,
+      "entropy_per_tick": 2.040104095622801e-06,
+      "source_per_tick": 4.574389219266394e-05
+    },
+    "v_one_port_null": {
+      "single_colour_probability": 1.0644086998315186e-07,
+      "single_colour_probability_source": 2.438879112178575e-06,
+      "entropy_per_tick": 2.040104095622801e-06,
+      "source_per_tick": 4.674489475961608e-05
+    }
+  },
+  "stationary_K4096_colour": {
+    "r": {
+      "colour_entropy": 0.00835626637567102,
+      "colour_source": 0.1873669824211518
+    },
+    "v_one_port_null": {
+      "colour_entropy": 0.00835626637567102,
+      "colour_source": 0.19146708893538772
+    }
+  },
+  "blank_predictions": [
+    0.9790342879365356,
+    0.9790350041614364,
+    0.9790357203360933,
+    0.9790371525304992,
+    0.979040016270459,
+    0.9790457409214954
+  ],
+  "preparation_score": "F_K=sum_{n=0}^{K-1}(Phi*)^n [ln7 C7+ln4 C4]",
+  "physical_field_writer_selected": false,
+  "finite_filter_closure": false,
+  "arbitrary_jet_transport_order": 1,
+  "C2_rank_birth_claim": false,
+  "checks_passed": 56,
+  "checks": [
+    "unchanged actual original native constructor",
+    "unchanged owned complete-CQ entropy checker",
+    "exact open-chart seven-colour Walsh row 1",
+    "exact open-chart seven-colour Walsh row 17",
+    "exact open-chart seven-colour Walsh row 25",
+    "exact open-chart seven-colour Walsh row 33",
+    "exact open-chart seven-colour Walsh row 41",
+    "exact open-chart seven-colour Walsh row 49",
+    "exact open-chart seven-colour Walsh row 57",
+    "exact open-chart four-colour Walsh row 5",
+    "exact open-chart four-colour Walsh row 21",
+    "exact open-chart four-colour Walsh row 37",
+    "exact open-chart four-colour Walsh row 53",
+    "all 32 physical dark rows are exact duplicate-word cancellations",
+    "exact representative N1=Dplus/16",
+    "exact representative N5=Dminus/16",
+    "actual unchanged native matrices and proper boost jet",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "actual Kraus scalar-colour identity",
+    "both actual colour source identities",
+    "128 original slots,65 merged slots,56 readout classes,24 live computational branches",
+    "compressed CP channel is complete at the native anchor",
+    "hostile output-unitary amplitude jet is trace preserving",
+    "hostile ambient jet truly breaks the seven-colour proportionality",
+    "actual grouped CP first jet equals averaged Kraus jet r",
+    "actual K1 colour entropy and full first-source counter r",
+    "actual K2 colour entropy and full first-source counter r",
+    "actual grouped CP first jet equals averaged Kraus jet v_one_port_null",
+    "actual K1 colour entropy and full first-source counter v_one_port_null",
+    "actual K2 colour entropy and full first-source counter v_one_port_null",
+    "actual grouped CP first jet equals averaged Kraus jet ambient_TP_plus_preparation",
+    "actual K1 colour entropy and full first-source counter ambient_TP_plus_preparation",
+    "actual K2 colour entropy and full first-source counter ambient_TP_plus_preparation",
+    "closed two-mode Julia scalar value and source r",
+    "closed two-mode Julia scalar value and source v_one_port_null",
+    "native blank has two different positive strict survival eigenvalues",
+    "actual blank-conditioned filters have distinct next-blank predictions"
+  ],
+  "GR_closed": false
+}

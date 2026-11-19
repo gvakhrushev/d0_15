@@ -1,0 +1,30 @@
+{
+  "physical_GR_closed": false,
+  "results": [
+    {
+      "mutation": "lose_right_multiplicity",
+      "rejected_by": "full_trace_conservation_0"
+    },
+    {
+      "mutation": "one_Bratteli_pass",
+      "rejected_by": "two_sided_multiplicity_0_1"
+    },
+    {
+      "mutation": "erase_native_complement",
+      "rejected_by": "native_mismatch_full_Gibbs_factor_0"
+    },
+    {
+      "mutation": "wrong_archive_source_sign",
+      "rejected_by": "full_price_restored_by_archive_source"
+    },
+    {
+      "mutation": "wrong_PF_rate",
+      "rejected_by": "exact_PF_trace_error_0_1"
+    },
+    {
+      "mutation": "false_GR_receipt",
+      "rejected_by": "IMMUTABLE_RECEIPT_MISMATCH"
+    }
+  ],
+  "status": "PASS_EXECUTED_MUTANTS"
+}

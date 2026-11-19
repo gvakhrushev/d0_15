@@ -1,0 +1,19 @@
+{
+  "creator_definition": {
+    "blob": "d76dd3775e90a982eb1cde4ce935cadb1c3ab671",
+    "path": "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py",
+    "scope": "Exact finite creator algorithm reimplemented with the same order; no old source module executed."
+  },
+  "execution_pr": 334,
+  "owners": [
+    "02_REGISTRY/research/A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md",
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md",
+    "02_REGISTRY/research/A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md"
+  ],
+  "parent_proofs_independently_replayed": false,
+  "primary_external_formula": "Vassilevich hep-th/0306138v3 formula (4.28), viewed PDF page40",
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-curved-tensor-inputs/1",
+  "source": "a1ca6f547b9b6876c4e31801665573a1734aa65f"
+}

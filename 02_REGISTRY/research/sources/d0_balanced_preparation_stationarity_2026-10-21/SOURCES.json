@@ -1,0 +1,76 @@
+{
+  "owner_pr": 334,
+  "inspected_head": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+  "inputs": [
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_logarithmic_source_reduction_2026-10-21/PROOF.md",
+      "commit": "8b42069993f813b1978d37b40a98b32d264ef2e1",
+      "git_blob": "c00e533a56050bab649d987d85b8695c33ce4f5e",
+      "sha256": "4b2ab4a0d80aa75dca4cd952b25e03827630cf6796e36cf6fb521aabe2eccb94",
+      "use": "full native chart, old support, relative mass and fixed-first-arm envelope; local uploaded bytes matched git blob"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_CHOICE_SOURCE.md",
+      "commit": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+      "git_blob": "e5841990c5becf562928115012a4dcafd25f6a87",
+      "use": "literal full coherent selector/RIGHT cut and inherited preparation-source interval"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_PORT_PRICE_AND_PREPARATION_EULER.md",
+      "commit": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+      "git_blob": "829c2fafcf390f6d2d6246b46fb22cc8655756f2",
+      "use": "actual-port minus complete central gain; retains full reference residual"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_native_domain_source_2026-10-20/RESULT.md",
+      "commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+      "git_blob": "ed00d6609c6f9f88391c7ff076abc65a3524dbd1",
+      "use": "original scalar/top/slack and RIGHT128 dictionary with fixed calibration"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/PRIMARY_STOPPED_RIGHT_CONDITIONAL_SOURCE.md",
+      "commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+      "git_blob": "6afab2c3d5c8361639f2c58bddeffdfce91b3098",
+      "use": "all255 leaves, active old-Gram support premise; not independently rerun"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_primary_full128_information_source_2026-10-20/RESULT.md",
+      "commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+      "git_blob": "dc22cc51ecea386ecfb8cb8f39c83541f4299750",
+      "use": "parity-definite literal Kraus dictionary and amplitude C1 entropy bound"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+      "git_blob": "4d637bae96f94ab0b18c9509bcf64e8609d47375",
+      "use": "interface comparison only; different N=1 execution not silently identified"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOCK_WORK_RETURN_SOURCE_SYNTHESIS_2026_10_21.md",
+      "commit": "dfc0275eea67ebc21ffe539de9b6ea96713863a5",
+      "git_blob": "1a660bc859e536137bbc6fc7f38ab4c7cfa39d26",
+      "use": "preserved parallel clock/work result; different carrier not imported"
+    }
+  ],
+  "external_context": [
+    {
+      "author": "A. S. Lewis",
+      "title": "The Convex Analysis of Unitarily Invariant Matrix Functions",
+      "year": 1995,
+      "url": "https://journalofconvexanalysis.com/articles/jca02012/",
+      "use": "context for predecessor convexity argument; new radial critical-set proof is given directly"
+    }
+  ],
+  "status": {
+    "author_checked": true,
+    "independent_review": false,
+    "native_support_replayed": false,
+    "Book_selected": false,
+    "GR_closed": false
+  },
+  "environment": {
+    "mpmath": "1.3.0",
+    "precision_digits": 100
+  },
+  "development_note": "Before freezing, two illustrative nonzero cutoffs were corrected to match their purpose: the old-Gram commutator squared norm is 7.437906e-11 (not >1e-10), and the nonzero force is 8.558653e-6 (not >1e-5). Inputs and mathematical assertions were not changed. The final committed predicates test noncommutativity/nonzero source far above arithmetic uncertainty. A fixture state was also made consistent across the port/gain comparison. Final evidence was produced only after these checker repairs."
+}

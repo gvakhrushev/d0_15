@@ -1,0 +1,28 @@
+{
+  "GR_closed": false,
+  "actual_mutants_rejected": 4,
+  "concurrent_source_consumed": "cea62e743610ccbf70a8c7de55ecb1f2475d22c7",
+  "exact_checks": 82,
+  "independent_scientific_acceptance": false,
+  "initial_source": "3f368179627acc9f2c3e9616df729ac2280a77a0",
+  "latest_concurrent_source_consumed": "a455e1130cda30ca3dc5a4e07c5e34fe001509cc",
+  "new_Lean_compilation": false,
+  "new_source_is_unqualified_original_raw_source_limit": false,
+  "nonempty_joint_refinement_proved": false,
+  "old_v8_redefined": false,
+  "optimized": "PASS_BYTE_IDENTICAL",
+  "ordinary": "PASS",
+  "parent_replay": false,
+  "physical_comparison_or_Info_selected": false,
+  "python": "3.13.5",
+  "schema": "d0-two-sided-spatial-record-validation/1",
+  "sha256": {
+    "A4D_TWO_SIDED_SPATIAL_RECORD_EINSTEIN_SOURCE.md": "614d100888c5defdf80a23b659f96a0c2924a73445f07b007a38799b0cf5656c",
+    "README.md": "1759075d23558a3e31c60edec3265f825b33b249711b70964bb3b2bd850471de",
+    "check_two_sided.py": "fee5a627e9dfde4f76c6224adf09f598291039c9f30c7e58e09bf754972f94fc",
+    "mutations.json": "67125d367f82f8d432cea3d3a927b3b483c262d5eaadad5e39e5f2622c88a43b",
+    "result.json": "19721d6e0c34fe9fbc33bf7679de39fb3423e4b69e13bada036826558b72f47d",
+    "test_mutations.py": "a9b9a16718061ade34fc6e83f6136dd66358981157edb4edb15118ea5ba036eb"
+  },
+  "sympy": "1.14.0"
+}

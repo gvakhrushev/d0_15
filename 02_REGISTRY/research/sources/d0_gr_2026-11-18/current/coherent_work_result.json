@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "same_section_slope": "symbolic",
+  "one_probability_false_positive": true,
+  "complex_midpoint_attains_optimum": true,
+  "full_physical_price_identified": false
+}

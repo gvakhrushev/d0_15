@@ -1,0 +1,2 @@
+negative orientation, finite K(y), K(y/rho), K derivative: ['-23.4844168651189684', '-23.4423292246481884', '-67.7770836127099503']
+actual P second eigenvalue, finite trace mismatch: ['-0.0550671347790220845', '0.012409061677972357']

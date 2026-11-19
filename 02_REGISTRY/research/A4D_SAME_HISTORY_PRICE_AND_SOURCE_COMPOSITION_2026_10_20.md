@@ -340,3 +340,43 @@ mapping between scene ticks and port rounds. Neither fixed CAR dimension
 nor the word "two ticks" identifies those executions. This is the parent
 use of the present composition; more unrelated root or rank calculations
 would not supply this source identity.
+
+## 8. Actual paired Book application: exact finite source substitution fails
+
+The previously proposed [inverse-paired feedback](sources/d0_native_price_source_synthesis_2026-10-20/paired_feedback.md#9-exact-application-to-the-sourced-brinkmann-family-the-finite-source-is-different)
+has now been evaluated on the PRIMARY exact sourced family itself. This
+uses its original full CAR16,32-dimensional Julia operation, complete
+64-dimensional return and128-dimensional outer Golden word. It is not
+the earlier protected8 Fourier fixture of section4.
+
+On the already owned quadratic member
+H=(c+A)x^2+(c-A)y^2, c=-lambda_-|Psi'|^2>0 and0<|A|<c,
+both Ricci and Weyl are nonzero. The actual curved faces have
+B_ua=-N_a and P_ua=exp(-t_a N_a), t_(x,y)=(c+/-A)h^2>0.
+A local independent coframe dilation e->sqrt(rho)e has zero configured
+Palatini AND null-matter source, but the literal paired Book determinant
+has a strictly positive derivative at rho=1 for all sufficiently small
+nonzero t_a. The proof keeps its exact finite trace and its entire
+resolvent source. It is uniform under positive reference weakening,
+including the actual edge-area convention alpha_h=sigma_h h^2.
+Fixed positive factors in B stay in the face strength; external positive
+scene/counting weights multiply the entire price and source explicitly.
+All identity faces have zero dilation source; the two curved sources add.
+
+**Parent route change.** This outer paired Book term cannot be inserted
+as the EXACT right side of (15) on the unchanged finite representatives.
+Appending only the configured null material term leaves the displayed
+row nonzero. The result does not establish the sign of any total native
+price: in particular the separately charged reference term already has
+an opposite source, and its actual inclusion/accounting is unresolved.
+The conditional continuum estimates of that owner remain valid. A
+different joint stationary family with controlled recovery could still
+supply a bridge, but cannot be inferred from the vanishing of a normalized
+error alone.
+
+The exact missing application remains one complete admitted programme:
+its actual Cost-Info and internal preparation/observer/clock/work Euler,
+followed by either the exact source identity (15) or a proved transport
+of its stationary solutions. No new action, counterterm or readout is
+selected here; physical GR is not closed. The focused executable is
+[check_original_paired_book_source.py](sources/d0_native_price_source_synthesis_2026-10-20/check_original_paired_book_source.py).

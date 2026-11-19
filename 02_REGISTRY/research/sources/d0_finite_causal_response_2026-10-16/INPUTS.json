@@ -1,0 +1,21 @@
+{
+  "calibrations_changed": false,
+  "execution_pr": 334,
+  "historical_suites_replayed": false,
+  "owners": [
+    {
+      "blob": "773d3350179596d71600b2e23c87d6010f6f6d6d",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md",
+      "use": "actual full16 coordinate operator, proper-link h² candidate and complete calibration/matter boundary"
+    },
+    {
+      "blob": "69928e861d1018e72dbe40dcd2eb61efd4bcd6fb",
+      "path": "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md",
+      "use": "same-matter P1 timelike chart; not silently extended to general reference128"
+    }
+  ],
+  "repository": "gvakhrushev/d0_15",
+  "schema": "d0-finite-causal-inputs/1",
+  "source_pin": "a4f4d4e86ae63336841337e1a93cd5296eb43792",
+  "theorem_scope": "one rescaled second jet; not the full original fixed-source comparator"
+}

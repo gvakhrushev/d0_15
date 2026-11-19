@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "checks": 1212,
+  "exact_field": "Q(p), p^2+p-1=0",
+  "source_commit": "3fcabfa0688f581fbbe54c70a342c8a49b9ca5fb",
+  "scope": [
+    "all SR matrix units through coherent attenuation; no diagonal-input assumption",
+    "10 independent sign slots and exact original ordered tables",
+    "correlated Bell tangent and shared-prefix negative control",
+    "native Golden norm-aware aperture factorization",
+    "quantitative positive-partition integer norm, Perron prefix and actual herald bound",
+    "complete abort/report CQ entropy and 0/10 price source"
+  ],
+  "limitations": [
+    "native table and measured-factory constructions consumed from pinned owners, not re-proved by this checker",
+    "entropy evaluations use floating logarithms; all channel, probability, report and aperture identities use exact rational arithmetic in Q(p)",
+    "no paid arbitrary continuous input-state writer, joint-bank preparation Euler, Book03 selection or GR closure is asserted"
+  ],
+  "diagnostics": {
+    "partition_height": "25836912640",
+    "partition_prefix_depth": 53,
+    "partition_label_bits": 60,
+    "partition_actual_herald": 3.637978807091713e-12,
+    "gamma_coherent_toffoli": 0.0023314906057201015,
+    "tau": 0.003105620015141858,
+    "attenuation_f": 0.2981395214536184,
+    "attenuation_q": 0.34782944169588814,
+    "report": 0.0000018520853499358782,
+    "naive_branch_average": 0.0000018508809874711569,
+    "complete_entropy_phi": 0.03420650233638449,
+    "factorized_entropy_phi": 0.03420650233638448,
+    "depth_examples": [
+      {
+        "L": 4,
+        "norm_power": 0,
+        "m": 9,
+        "tau": 0.013155617496424838
+      },
+      {
+        "L": 4,
+        "norm_power": 2,
+        "m": 15,
+        "tau": 0.0007331374358574048
+      },
+      {
+        "L": 4,
+        "norm_power": 4,
+        "m": 21,
+        "tau": 0.0000408563490084474
+      },
+      {
+        "L": 8,
+        "norm_power": 0,
+        "m": 9,
+        "tau": 0.013155617496424838
+      },
+      {
+        "L": 8,
+        "norm_power": 2,
+        "m": 18,
+        "tau": 0.00017307027171223935
+      },
+      {
+        "L": 8,
+        "norm_power": 4,
+        "m": 26,
+        "tau": 0.0000036840146919005902
+      },
+      {
+        "L": 16,
+        "norm_power": 0,
+        "m": 12,
+        "tau": 0.003105620015141858
+      },
+      {
+        "L": 16,
+        "norm_power": 2,
+        "m": 21,
+        "tau": 0.0000408563490084474
+      },
+      {
+        "L": 16,
+        "norm_power": 4,
+        "m": 32,
+        "tau": 2.053031023146574e-7
+      },
+      {
+        "L": 32,
+        "norm_power": 0,
+        "m": 15,
+        "tau": 0.0007331374358574048
+      },
+      {
+        "L": 32,
+        "norm_power": 2,
+        "m": 24,
+        "tau": 0.000009644875678449718
+      },
+      {
+        "L": 32,
+        "norm_power": 4,
+        "m": 38,
+        "tau": 1.144114976324314e-8
+      },
+      {
+        "L": 64,
+        "norm_power": 0,
+        "m": 18,
+        "tau": 0.00017307027171223935
+      },
+      {
+        "L": 64,
+        "norm_power": 2,
+        "m": 26,
+        "tau": 0.0000036840146919005902
+      },
+      {
+        "L": 64,
+        "norm_power": 4,
+        "m": 44,
+        "tau": 6.375934237191168e-10
+      }
+    ]
+  },
+  "runtime_ms": 234
+}

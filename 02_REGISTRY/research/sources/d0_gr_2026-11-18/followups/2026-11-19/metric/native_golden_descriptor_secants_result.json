@@ -1,0 +1,71 @@
+{
+  "GR_closed": false,
+  "asymptotic_cap": "smallest L with (4/5)^L <= 1/(28*32*(2N+1))",
+  "conditional_oldRIGHT_identity_by_tensor_extension": true,
+  "example_32_seed_base_births_upper_excluding_factories": 656,
+  "example_N": 8,
+  "example_Toffoli_per_seed": 17,
+  "example_delta_interval": "[0.0131556174964248389559523684316960024905121133959373126052531719788557358426832900450449424392986744801842, 0.0131556174964248389559523684316960024905121133959373126052531719788557358426832900450449424392986744830863]",
+  "example_factory_cap": 44,
+  "example_success_32_seeds_conditional": "[0.983565702009061576303329535328603177361098725880361179695035254568705693808470875917905036206166927177105, 0.983565702009061576303329535328603177361098725880361179695035254568705693808470875917905036206166969246185]",
+  "example_success_four_seeds_conditional": "[0.997930785071074349429989739972654018199760225170115779004041051949774142330338756639773333468092048456388, 0.997930785071074349429989739972654018199760225170115779004041051949774142330338756639773333468092053814142]",
+  "field_tangent_gram_determinant_over_A4": "11-16p",
+  "finite_delta": "p^(N+1)",
+  "finite_p0": "p^2",
+  "finite_p1": "p^2+p^(N+1)",
+  "general_field_rank_or_full_Book03_source_identified": false,
+  "independent_seed_modules_per_report": 32,
+  "logical_word_preserves_selector_and_all_coins": true,
+  "matter_copies_per_ten_sign_report": 16,
+  "metric_signature": "+---",
+  "physical_flags_and_codes_accounted_by_later_clock": false,
+  "program_columns_checked": {
+    "2": {
+      "CX": 6,
+      "T": 5,
+      "complete_logical_columns": 32
+    },
+    "3": {
+      "CX": 8,
+      "T": 7,
+      "complete_logical_columns": 64
+    },
+    "4": {
+      "CX": 10,
+      "T": 9,
+      "complete_logical_columns": 128
+    },
+    "5": {
+      "CX": 12,
+      "T": 11,
+      "complete_logical_columns": 256
+    },
+    "6": {
+      "CX": 14,
+      "T": 13,
+      "complete_logical_columns": 512
+    },
+    "7": {
+      "CX": 16,
+      "T": 15,
+      "complete_logical_columns": 1024
+    },
+    "8": {
+      "CX": 18,
+      "T": 17,
+      "complete_logical_columns": 2048
+    }
+  },
+  "secant_s_example_interval": "[0.710576415078653542969047894502687945208733505289379122684430216465173811460967619009011266335429160994826, 0.710576415078653542969047894502687945208733505289379122684430216465173811460967619009011266335429161687762]",
+  "secant_s_over_2A2delta": "40p-24+(10p-7)delta",
+  "secant_t_example_interval": "[-0.239906734950788959746638483118639093104696149097019479389955426061896599246346462972971560635052343100905, -0.239906734950788959746638483118639093104696149097019479389955426061896599246346462972971560635052342636566]",
+  "secant_t_over_2A2delta": "32p-20+(6p-5)delta",
+  "seed_fresh_canonical_coins_formula": "N+1",
+  "seed_initial_clean_ancilla_formula": "N+1, including U",
+  "seed_word_CX_formula": "2N+2",
+  "seed_word_T_formula": "2N+1",
+  "status": "PASS",
+  "uniform_32_seed_success_lower_bound": "3(1-p^40)/4 > 1/2",
+  "uniform_lift_or_complete_Book_cost_proved": false,
+  "uniform_metric_Q_at_base": "40p-25"
+}

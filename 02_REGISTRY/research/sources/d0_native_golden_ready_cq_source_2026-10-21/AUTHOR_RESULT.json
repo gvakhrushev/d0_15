@@ -1,0 +1,65 @@
+{
+  "status": "AUTHOR_PASSED_EXACT_GOLDEN_READY_FULL_CODE_CQ_PF_AND_FRACTION_HERALD",
+  "as_of": "2026-10-21",
+  "owner": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE",
+  "pr": 334,
+  "source_owners": [
+    "02_REGISTRY/gr_assembly/sources/d0_original_golden_moving_mean_j2_2026-10-19/theorem.md",
+    "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+    "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md",
+    "02_REGISTRY/research/A4D_EXACT_RESOURCE_WRITER_OBSTRUCTION_2026_10_21.md"
+  ],
+  "evidence_blobs": {
+    "theorem": "731616363ec6ea47e9057e43ff4f7d7db23841c6",
+    "golden_ready_exact": "e9ac095f3b1936afd74a9854d901ed3234060dbf",
+    "golden_fraction_herald": "71af6453c827e06c57758c867ead218ece737782"
+  },
+  "true_original_n20_L4": {
+    "exact_cost_words": 10946,
+    "overshoot_words": 6765,
+    "each_F_R_word_probability": "p^native_cost",
+    "fine_READY_suffixes": [
+      "FR",
+      "RF"
+    ],
+    "all_extra_suffixes_retained": [
+      "FF",
+      "RR"
+    ],
+    "all_native_overshoots_retained": true,
+    "sites": 256,
+    "smallest_true_count": 29,
+    "largest_true_count": 78,
+    "P_exact": 0.7236067989578533,
+    "P_overshoot": 0.2763932010421467,
+    "P_ready": 0.34164078707015466,
+    "native_prefix_entropy_equals_expected_native_code_cost": true,
+    "source_coefficient": "P_ready/256 * [1-h_phi_prime(r0)] * eta_h²",
+    "source_geometric_to_matter_ratio": -23.41640675188407
+  },
+  "heralded_density": {
+    "actual_site_39_density": "384/421",
+    "nine_fair_coin_partition": [
+      "384/512",
+      "37/512",
+      "91/512"
+    ],
+    "uniform_reciprocal_coin": "1/(2rho_z)=10946/(512 n_z)",
+    "common_denominator_bits": 118,
+    "common_ready_probability": 0.6325604126668234,
+    "raw_stored_Dirac_weighted_edge_cancellation": false
+  },
+  "scope": {
+    "code_price_is_measured_CQ_not_Book03_path_Info": true,
+    "original_ACTUAL_site_counts_reused_no_new_census": true,
+    "same_site_marginal_not_full_AF_RIGHT_state": true,
+    "positive_Golden_site_and_coefficient_writer_mathematically_explicit": true,
+    "actual_full_CAR_moving_input_writer": false,
+    "original_full_HJR_Info_selected": false,
+    "independent_input_clock_work_Euler_solved": false,
+    "GR_closed": false,
+    "independent_agent_review": false,
+    "new_Lean_build_or_remote_CI": false
+  }
+}

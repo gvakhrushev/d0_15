@@ -1,0 +1,12 @@
+{
+  "scope": "author numerical and finite exact checks, no original full42/HJR/Book03 claim",
+  "new_diagonal_checks": 83,
+  "retained_full_CQ_rank_birth_checks": 112,
+  "consumed_writer_checks": 124,
+  "writer_replay_byte_identical": true,
+  "diagonal_normal_O_identical": true,
+  "rankbirth_normal_O_identical": true,
+  "code_published_to_GitHub": true,
+  "independent_review": false,
+  "GR_closed": false
+}

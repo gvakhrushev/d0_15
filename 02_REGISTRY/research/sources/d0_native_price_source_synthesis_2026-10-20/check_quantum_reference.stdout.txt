@@ -1,0 +1,4 @@
+PASS full coherent output and constant spectrum; no dephasing
+PASS exact fixed block-diagonal Umegaki price and C2 quadratic field source
+PASS original Golden cost1/2 prior formula
+PASS faithful off-block reference creates a genuine O(sigma) hostile source

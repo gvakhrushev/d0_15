@@ -1,0 +1,17 @@
+{
+  "LIFT_RESULT.json": "747ede13da7aa64fda6a4d6d6547051b8b545b578ae164bc84044e50db5ab853",
+  "PREVIOUS_DELIVERY.json": "9a171203515d35e5b42260b7a0c01f8a82217e0ba023c9915ad2da88c26c4e51",
+  "README.md": "42070b3cab3c79a30d37e232867376ac2199298e679b60d0847232a8b0d8d071",
+  "RESULT.json": "59b2b2bf5b8b1b750124f909349235fc5cde25eef51388c7895f910c289ec2b5",
+  "THEOREM.md": "40076df0ee3b5a128e6eb1cc39640e114f6721fbe80d508bbd5c10dc89bfbdf9",
+  "VALIDATION.md": "03b20260f48778c88fba7885b305bb0795a6f48993f2568ade3850e56f5ee5cd",
+  "check_lift47.py": "2ba59fb4dc93c884b0c635d737b231de58b93a2322a103843705bf4edaa067c1",
+  "check_spectral42.py": "1b3eb6056a0a2d815b4bfaa1ed680d484a307062a2a07a43d343ac746f452e55",
+  "inputs/__init__.py": "bd106d57145d6ed0f3934d4942338b602bf98a96b9394dcd2186eba4b0c6b970",
+  "inputs/center_new.json": "d2c824b170b9aba1fd4d7195c231ce034e0d54f7ccd3bb2d9a7df7c40e283f39",
+  "inputs/rational_collar.json": "b86d94a59f5b0ecfec55af3a6c0db80eec257d41b09f3a03c59e367f56093fa1",
+  "native_spectral.py": "d04522048035bc49b842c2a8873165cb83223f5e9a1819f93e61ff151e95fd59",
+  "original_model.py": "d617f2de4ffff8566705045091495e52d72d7df715113338c2234355a0e19ca6",
+  "spectral_center.json": "b3ca83579cee0d25862026e0a8f7adcdfb3870f63726e82d7320bd7e1da18131",
+  "spectral_model.py": "42c5cbf07226df47a079da7859f2ea9cf3e21a56a291718ac6aa162a20c549f3"
+}

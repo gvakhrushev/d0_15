@@ -1,0 +1,40 @@
+{
+  "LEFT_instrument": {
+    "LEFT_effects": "exact on full GNS, including E01 and E10",
+    "RIGHT_algebra": "all five matrix-unit generators commute",
+    "actual_GNS_dimension": 5,
+    "complete_dimension": 20,
+    "invalid_codes": "retained; zero on legal blank input",
+    "not_inferred": "faithful-density birth derivatives or C2 boundary regularity",
+    "offblank_pure_first_sources": "zero by initial-Y block orthogonality",
+    "record_bits": 2
+  },
+  "exact_gate_boundary": {
+    "LEFT_copy": "not excluded: it is a permutation with all sums one",
+    "all_word_invariant": "all row and column sums are b^N modulo two",
+    "approximation": "not obstructed; mod-two reduction is not norm continuous",
+    "clean_READY_PENDING": "impossible in finite golden/permutation palette",
+    "dirty_coarse_refinement_source": "h(p^2) DPr(PENDING)/log(phi)"
+  },
+  "full_operator_compiler": {
+    "all_n_proof": "commuting Walsh exponentials, Gray routing, Givens QR",
+    "control_patterns_checked": 16,
+    "det_minus_one": "one fixed spectator suffices",
+    "operator_approximation": "full carrier; M rotations each at eta/M suffice",
+    "physical_limits": "requires coherent addressed wires and supplied field queries",
+    "precision_dependent_extra_registers": 0,
+    "two_level_routes_checked": 34
+  },
+  "schema": "d0-left-record-full-operator-compiler/1",
+  "status": "PASS_SCOPED_LEFT_INSTRUMENT_AND_COMPILER",
+  "zero_outcome_source": {
+    "all_outcome_C1_bound": "64*K*L*epsilon*(1+abs(log(epsilon)))/log(phi)",
+    "bound_proof": "analytic radial modulus in the owner; no probability floor",
+    "first_source_at_zero": 0,
+    "full_two_outcome_law": [
+      "x^2",
+      "1-x^2"
+    ],
+    "second_source_at_zero": "+infinity"
+  }
+}

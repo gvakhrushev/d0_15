@@ -1,0 +1,61 @@
+{
+  "input_ref": "5db315a35bff4bbc4efe6297a993942bb2fa9b60",
+  "initial_question_ref": "94c5848daddc3d17cc9314a980ad4f278a8f5d66",
+  "consumer": "EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE / native-programme-v1 / constitutive",
+  "command": "python 02_REGISTRY/research/sources/d0_native_price_screening_2026-10-20/check_native_price_screening.py",
+  "environment": {
+    "python": "3.12.14",
+    "sympy": "1.14.0"
+  },
+  "result": {
+    "status": "PASS",
+    "groups": 26,
+    "stdout": "02_REGISTRY/research/sources/d0_native_price_screening_2026-10-20/RESULT.json"
+  },
+  "input_sha256": {
+    "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+    "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean": "692f2b5929b001361a2f22d7dc224fba46a80738036f26a1ff7bdd5175fc80c4",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "02_REGISTRY/research/A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md": "7b2121fdaa2ebd4f98be494d6062034577971d334b00bddf9ef9da8969f8f817",
+    "02_REGISTRY/research/A4D_PHYSICAL_GOLDEN_PREPARATION_PRESSURE_AND_BOOK_SOURCE_BOUNDARY_2026_10_19.md": "a9fa5d31145aba5e02156f872c2ceaa53f684a11e1742e433f4c8000a0dac8de",
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_BOOK_Z3_GOLDEN_AF_EXACT_WEYL_COMPENSATOR_AND_ONSHELL_GR_SOURCE_2026_10_20.md": "b30702bf7767836b02a9952d24b223c7cc6c24f97d34646d8505041b46bcf764",
+    "02_REGISTRY/research/sources/d0_book_weyl_compensator_2026-10-20/check_original_book_z3_af_weyl_ward.mjs": "29a6d79477375f3c9892e491c567a985bb34f775d4db37f93182e72e04cea757"
+  },
+  "artifact_sha256": {
+    "02_REGISTRY/research/A4D_NATIVE_PRICE_ENCODER_SCREENING_AND_CLOCK_COMPLETION_TEST_2026_10_20.md": "9a28a42cabd6abb1a2ad53f5aba074f141fd8a2e969c88502552ea0f87e347c8",
+    "02_REGISTRY/research/sources/d0_native_price_screening_2026-10-20/check_native_price_screening.py": "9f5c8a941f652b5da4b4549f010b0e74b66538aec231f9a1cdd416e05a485677",
+    "02_REGISTRY/research/sources/d0_native_price_screening_2026-10-20/RESULT.json": "4cd9d5e7abab8d342e8fcac87263524669dd0657c5c881aa92fb641e2d42763e",
+    "02_REGISTRY/research/sources/d0_native_price_screening_2026-10-20/README.md": "601ada59e45eddbb4a92e4082778ca5edebf14ec20d8a6b297aa8421597b0b9f"
+  },
+  "independent_review": [
+    {
+      "reviewer": "encoding_preparation_source_review",
+      "mode": "bounded read-only; independent derivation and saved checker replay",
+      "accepted": "pure fixed-jointRIGHT tangent lift; all-order source screening; original Golden coherent prefix and zero stationary Schur",
+      "corrections_applied": [
+        "stationary, not physical, Schur terminology",
+        "clarify same fixed-Gram encoder tangent; correct numerical zone test label"
+      ]
+    },
+    {
+      "reviewer": "complete_price_hypothesis_review",
+      "mode": "bounded read-only; independent exact original tripartite derivation and saved checker replay",
+      "accepted": "rooted nine-Info no-root; full-clock global maximum and Hessian; Book/ActionProtocol scope",
+      "added_exact_check": "pairwise aggregate gradient identity; original checker extended from25 to26 groups"
+    }
+  ],
+  "not_executed": [
+    "original full128 Kraus replay",
+    "all40 Cartan replay",
+    "heat replay",
+    "Lean build",
+    "refining physical exact-root recovery"
+  ],
+  "scope": {
+    "full_D0_price_selected": false,
+    "admission_of_all_LEFT_preparation_tangents": false,
+    "GR_closed": false,
+    "raw216_closed": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "counts": {
+    "full16_trace_link_rows": 48,
+    "quartet_link_rows": 96,
+    "quartet_offdiagonals": 288,
+    "coframe_cancellation_rows": 32,
+    "balanced_link_cancellations": 24,
+    "low_only_nonzero_controls": 10
+  },
+  "native_z_bound_exact": "1/131072 + sqrt(5)/262144",
+  "native_z_bound_float": 1.6159316930770072e-05,
+  "reference128_Lu33_A": "33/16",
+  "strict_seed_obstruction": true,
+  "improved_A_bound_exact": "4/1048575",
+  "improved_A_bound_float": 3.8147009036072765e-06,
+  "global_scale_bound": "beta R <= c_m z/(1-z) <= z/(1-z), c_m=(1-1/m)^(m-1) for m>1",
+  "rational_bound_checks": 168,
+  "scope": "exact homogeneous coframe-to-link reduction and necessary source bound; formal substituted moment is not a physically selected spectral root"
+}

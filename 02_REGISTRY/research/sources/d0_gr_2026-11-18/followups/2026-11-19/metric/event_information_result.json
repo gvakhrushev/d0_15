@@ -1,0 +1,119 @@
+{
+  "scope": "registered H.1 report and the indicated prediction targets at the literal PC13 centre",
+  "predicate_prior": [
+    "0.137767414994",
+    "0.137767414995"
+  ],
+  "port_probability": [
+    "0.129216464009",
+    "0.129216464010"
+  ],
+  "report_given_rejected_predicate": [
+    "0.381966011250",
+    "0.381966011251"
+  ],
+  "report_given_accepted_predicate": [
+    "0.603381716260",
+    "0.603381716261"
+  ],
+  "mutual_information_nats": {
+    "port": [
+      "0.012726509811",
+      "0.012726509812"
+    ],
+    "predicate": [
+      "0.011817483898",
+      "0.011817483899"
+    ],
+    "whole_coherent_bank_after_CX": [
+      "0.038255732858",
+      "0.038255732859"
+    ]
+  },
+  "net_price_source_per_dq": {
+    "port_prediction": [
+      "0.264846981945",
+      "0.264846981946"
+    ],
+    "predicate_or_resolving_classical_bank": [
+      "0.326774694830",
+      "0.326774694831"
+    ],
+    "unchanged_protected_reference": 1,
+    "whole_coherent_bank_after_CX": [
+      "-0.864027564146",
+      "-0.864027564145"
+    ]
+  },
+  "fixed_conditional_quantum_hypothesis": {
+    "full_prior_range_lower_bound": [
+      "0.061927712884",
+      "0.061927712885"
+    ],
+    "true_centre_lower_bound": [
+      "0.198140665187",
+      "0.198140665188"
+    ],
+    "true_centre_upper_bound": [
+      "1.131844978706",
+      "1.131844978707"
+    ],
+    "trace_norm_constants_per_conditional_state_before_prior_weight": [
+      [
+        "0.466304719826",
+        "0.466304719827"
+      ],
+      [
+        "0.469444875617",
+        "0.469444875618"
+      ]
+    ]
+  },
+  "literal_complement_after_lc4": {
+    "accessible_posterior_error": [
+      "0.183414176414",
+      "0.183414176415"
+    ],
+    "net_price_per_dq": [
+      "0.795137618383",
+      "0.795137618384"
+    ],
+    "fixed_effect_angle_source_per_radian": [
+      "-1.154210428263",
+      "-1.154210428262"
+    ],
+    "feedback_fixed_effect_angle_source": 0
+  },
+  "conditional_golden_likelihood_gain": {
+    "marginal_report_gain": [
+      "0.004057075725",
+      "0.004057075726"
+    ],
+    "gain_with_resolving_predicate": [
+      "0.028614834457",
+      "0.028614834458"
+    ],
+    "optimal_net_without_tail": [
+      "1.381966011250",
+      "1.381966011251"
+    ],
+    "optimal_net_with_tail": [
+      "0.147151057231",
+      "0.147151057232"
+    ],
+    "both_net_field_sources": 0
+  },
+  "three_reference_sources_at_original_optimum": {
+    "same_field_fresh_report": [
+      "0.264846981945",
+      "0.264846981946"
+    ],
+    "golden_two_outcomes": 0,
+    "canonical_three_sectors": -1,
+    "fine_minus_coarse_gain_at_centre": [
+      "0.412469880568",
+      "0.412469880569"
+    ]
+  },
+  "complete_physical_price_derived": false
+}

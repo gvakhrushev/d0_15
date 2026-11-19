@@ -1,0 +1,88 @@
+{
+  "groups": {
+    "absolute_operator_normalizer": {
+      "commutator_with_blank": 1.8234426383139662e-11,
+      "commutator_with_field_jet": 1.9734655079648918e-07,
+      "n": 3,
+      "operator_field_jet_norm": 0.0116748940795421,
+      "spectrum_max": 0.9851808010071001,
+      "spectrum_min": 0.9847629179076364,
+      "spread": 0.00041788309946377833,
+      "t": 0.48121182505960336
+    },
+    "literal_Golden_success_failure_completion": {
+      "all_blank_amplitude_factor": "p^(n/2)",
+      "every_failure_retained": true,
+      "extra_Golden_calls_per_history": "C_port(history)",
+      "full_completeness_error": 6.389334515496436e-15,
+      "gate_control_and_clock_admission_not_claimed": true,
+      "polar_complement_field_source": -7.818806189513998e-06,
+      "retained_one_round_outcomes": 384,
+      "true_complement_field_source": -2.3769132711552095e-06,
+      "true_complement_value": 0.001520779945122404,
+      "unchanged_reduced_data_channel_error": 3.5662774390282705e-12
+    },
+    "literal_native_interface": {
+      "CAR_dimension": 16,
+      "completeness_error": 3.300942657140661e-15,
+      "completeness_jet_error": 7.534029667009938e-18,
+      "kraus_derivative_error": 1.4161029915253914e-11,
+      "port_effect_error": 4.3618745407631354e-17,
+      "rows": 128
+    },
+    "negative_controls": {
+      "common_phase_complement_source": "EXACT_CANCELLATION_CHECKED",
+      "multiply_feedback_instead_of_return_corner": "REJECTED",
+      "omit_normalizer_logdet_source": "REJECTED",
+      "retained_filter_failure_probability": 0.7674765412760246,
+      "scalar_normalizer_replacement": "REJECTED_BY_NONSCALAR_SPECTRUM",
+      "unchanged_input_after_operator_normalization": "REJECTED",
+      "unpaid_common_scalar_on_complete_tape": "REJECTED"
+    },
+    "normalized_channel_and_input": {
+      "all_word_statement": "proved by telescoping",
+      "max_step_completeness_error": 1.2630219501425095e-14,
+      "preparation_shift_norm": 0.00010606029683286222,
+      "sampled_word_identity_error": 6.47365746904543e-16,
+      "sampled_word_state_error": 3.0354191184365397e-16,
+      "words_checked": 12
+    },
+    "same_cut_complement_and_conditional_HJR": {
+      "H": 19777.225083103127,
+      "J": 9.373668645190413e-05,
+      "R": 57.124472018543656,
+      "dH": 3.7577191120936484,
+      "dJ": -7.818806189513998e-06,
+      "dR": -5.455305713353634,
+      "dS": -1.6975944200661752,
+      "determinant_ratio_error": 2.4164215550390167e-13,
+      "feedback_field_source": -7.818806189513998e-06,
+      "feedback_value": 9.373668645190413e-05,
+      "raw_absolute_weight_norm": 0.23252345872397542,
+      "raw_log_norm_source": 0.0014475299143577212,
+      "scope": "conditional HJR evaluated on the normalized marked channel; not the original execution at t!=0",
+      "source_if_logdet_normalizer_omitted": -2.6386719500785407,
+      "source_ratio_error": 3.502464296237587e-16,
+      "whole_HJR_fd_error": 1.8563734127674536e-07
+    },
+    "zero_marker_exact_source": {
+      "fd_error": 3.576079590870279e-14,
+      "marker_feedback_source": -7.241988622404761e-05,
+      "port1_occupation_trace": 0.6326875689204496
+    }
+  },
+  "input_ref": "5edac80c86c17014fc83e0aa608e192f43c1fdba",
+  "scope": {
+    "Doob_transform_admitted_native_gate": false,
+    "GR_closed": false,
+    "all42_Einstein_source": false,
+    "all_histories_contracted_not_enumerated": true,
+    "full_spatial_primary_replay": false,
+    "independent_review": false,
+    "native_full128_Fourier_fixture": true,
+    "normalized_tilt_may_change_RIGHT_marginal": true,
+    "oldRIGHT128_tensor_action_identity": true,
+    "physical_Info_derived": false
+  },
+  "status": "PASS"
+}

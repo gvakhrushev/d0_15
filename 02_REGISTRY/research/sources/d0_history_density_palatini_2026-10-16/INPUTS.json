@@ -1,0 +1,15 @@
+{
+  "schema": "d0-history-density-inputs/1",
+  "repository": "gvakhrushev/d0_15",
+  "source_ref": "4c9de03cce23893aa0fbd439122a4dfcef593bd8",
+  "scope": "Documentary theorem/formula inputs. The new exact checker does not execute old suites, restore capsules, compile Lean or independently certify native admission.",
+  "owners": [
+    {"path":"02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md","git_blob":"573e2d70c1d7cbefd35670431b1ab9b87624dbdd","use":"literal F/R weights, pending-return cost cut; the new child-clock law is explicit rather than claimed already native"},
+    {"path":"02_REGISTRY/research/A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md","git_blob":"84705f7515d9bf8f09aaaf804e31cad40f408cbb","use":"full KL/coherence/readout source, actual full Lorentz transport and strict-inheritance atom bound"},
+    {"path":"02_REGISTRY/research/A4D_FULL4D_VERIFIED_INTAKE.md","git_blob":"fbfa0ddc861e9a963d51f614973e8afe3ae95510","use":"literal quadratic-anchor naked-star sector, not full native action"},
+    {"path":"02_REGISTRY/research/A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md","git_blob":"6a9f95483fdaa5737c9235d25b4413c37a9c0858","use":"positive-record curvature is not Lorentz Palatini; the leading observer term is retained"},
+    {"path":"02_REGISTRY/research/A4D_NATIVE_PREPARATION_FACTOR_SHEAR.md","git_blob":"81eb5bdbb74e150544fbddeaa1e3d4c91130b66f","use":"unchanged zero AF-source/nonzero heat counterexample to the shortened action"}
+  ],
+  "external_context": ["https://arxiv.org/abs/gr-qc/9611046","https://arxiv.org/abs/gr-qc/9702058"],
+  "external_context_is_not_a_native_axiom": true
+}

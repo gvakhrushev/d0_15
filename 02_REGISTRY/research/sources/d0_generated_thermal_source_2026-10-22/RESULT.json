@@ -1,0 +1,119 @@
+{
+  "GR_closed": false,
+  "actual_cut_complex": {
+    "active_rank": 2,
+    "ambient_dimension": 6,
+    "complete_source": -0.7501901636872923,
+    "exact_scope": "rational U,P and all moving-cut/operator identities",
+    "feedback_source": 2.269590921826572e-06,
+    "heat_source": -0.7501924332782142,
+    "heat_trace": 5.305408230769151,
+    "identification_with_selected_Book03_incidence": false,
+    "incorrect_dropped_harmonic_source": -1.2041083371188677,
+    "oldRIGHT_control": 3,
+    "status": "PASS",
+    "trace_source_scope": "floating finite exponentials; no interval claim"
+  },
+  "checks": 103,
+  "hodge": {
+    "native_incidence_admission": false,
+    "source_pairing": "11968/513",
+    "spectrum_function": "f(lambda)=lambda+lambda^2",
+    "status": "EXACT_PASS",
+    "trace": "3764/81"
+  },
+  "native": {
+    "actual_port_cost": 4.05272395336085,
+    "actual_port_source": -0.004475873254009804,
+    "constructor_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+    "five_point_errors": [
+      7.926964640248002e-12,
+      1.012141238876385e-11,
+      5.088236398857076e-10,
+      4.886957027336889e-10
+    ],
+    "frozen_preparation_source": -3.399074457549022e-05,
+    "full_retained_report_labels": 16384,
+    "inverse_square_full_source": -6.857994484532094e-05,
+    "native_survival_superoperator_eigenvalue": -0.0147256075546698,
+    "numpy": "2.3.5",
+    "original_blank_cut": {
+      "actual_native_coupling": "F=epsilon Delta-epsilon^2 Delta^2/4; g(F)=2/epsilon (I-sqrt(I-F))",
+      "base_active_rank": 16,
+      "base_full_dimension": 2048,
+      "canonical_recovered_heat_source": 1.4825764517490157e-05,
+      "cut_complex_source": 2.406239316050403e-05,
+      "feedback_source": -3.498938077330104e-06,
+      "oldRIGHT": 128,
+      "paired_heat_trace_without_oldRIGHT": 2047.4855971221048,
+      "retained_harmonic_complement": 2016,
+      "selected_Book03_incidence": false
+    },
+    "partial_thermal_gradient_norm": 0.95742903951938,
+    "prewarm_rounds": 2,
+    "prewarm_source": -1.9294323905530647e-06,
+    "report_rounds": 2,
+    "scipy": "1.17.0",
+    "scope": "one original Fourier/role-1-boost consumer; no spatial all42, interval or physical-admission claim",
+    "thermal_polynomial_cap": 7,
+    "thermal_source": -0.0158292114270209,
+    "thermal_value": 9.503170112717381,
+    "theta": 0.08
+  },
+  "old_suites_replayed": false,
+  "physical_Book03_identification": false,
+  "rational_decimal": {
+    "cases": [
+      {
+        "clock": "2",
+        "comparison_cap": 1,
+        "complete_CQ_price": "-4.654156472329679963358055669269842668600163255592832410846314147281259106418587917506",
+        "complete_CQ_source": "0.1368430748991998867720377718432905788327454045974841193452748054309981252914933730684",
+        "complete_baseline_source": "0.1094636036897821889273193797664319426836153928081788888981136051404406694893271758198",
+        "complete_input_reaction": "0.1595893110159205922869402018017472912195646684993435076995503062809784232379593080783",
+        "conditional_quantum_work_entropy": "0.493362032920179138889532747578418794892763043769995418188744016453588845933315519360",
+        "fine_baseline_source": "-0.5362703933645004042144292864900200120434962154496944836518021221153487725224779189539",
+        "full_retained_preparation_leaf_count": 81,
+        "input_reaction": "0.0183240438171451600931312095194980319040045333336746864395107984509898642223718465315",
+        "leaf_count": 9,
+        "prewarm_reaction": "0.1687305992724062062031891812801466785155704919314597247880287252521222142791197175560",
+        "thermal_source": "0.1931881150040161432135318065679218858152576325085150184109866396923460440530966975654"
+      },
+      {
+        "clock": "1047967884815645488506/406311967037158203125",
+        "comparison_cap": 2,
+        "complete_CQ_price": "-5.157699263397113615459211092498202211342560610865805458317986327681979055177739530963",
+        "complete_CQ_source": "-0.4093652652376941952527093142386366301795143981783156867050410566753506091606010386803",
+        "complete_baseline_source": "-0.4367447364471118930974277063154952663286444099676209171522022569659080649627672359289",
+        "complete_input_reaction": "0.1081651856241035874657450422794110971962660208526849156804225528571635409468106946692",
+        "conditional_quantum_work_entropy": "0.475891881745749572715346526617262651822005628956394325919383613546687933778272058356",
+        "fine_baseline_source": "-1.113325205356662668385582285817070362814259578203309090641637020396947420227425669467",
+        "full_retained_preparation_leaf_count": 189,
+        "input_reaction": "0.0444796954413900287651467597877174272351745418253418819635960641937220072300453220369",
+        "leaf_count": 21,
+        "prewarm_reaction": "0.2849890481455929942635344749262229369198750014965858662897770279061326134856914929958",
+        "thermal_source": "0.4683375703577606864187242449434284684121871394523911527406700564732163616751579672063"
+      },
+      {
+        "clock": "126761364877761745467793146/42916701518299835205078125",
+        "comparison_cap": 3,
+        "complete_CQ_price": "-5.488096504635532609633250072648671146770993038803990728747933091219094346204577596938",
+        "complete_CQ_source": "-0.8339937435412045469942797811231282843579801355254738343159178223049604566320100097575",
+        "complete_baseline_source": "-0.8613732147506222448389981731999869205071101473147790647630790225955179124341762070065",
+        "complete_input_reaction": "0.073947481965219622979883508129172102079790467399390836515620559395793289493544972376",
+        "conditional_quantum_work_entropy": "0.465616998996357794474954331301687237156464056904591421962794343017481839822295973897",
+        "fine_baseline_source": "-1.540234856070747663233091042431657903195150400321449877452760821603635398174769106863",
+        "full_retained_preparation_leaf_count": 405,
+        "input_reaction": "0.0455022430994739648993248980352649071971921582143975199638728042021195208651055735457",
+        "leaf_count": 45,
+        "prewarm_reaction": "0.2966347187769258673592825946156017230848851200371066063528569694176443455849190631995",
+        "thermal_source": "0.4984156475924056837934068058664036016345119150235515661167439940478677587932506488805"
+      }
+    ],
+    "independent_heat_direction_source": "0.001455736107456422790008180091751565507960482862585459049021386086927322476934624981912",
+    "rational_scope": "exact probabilities, jets, clock and charge identities",
+    "status": "PASS",
+    "transcendental_scope": "85-digit Decimal checks, not interval certificates"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,9 @@
+PASS all 36 Lorentz source pairings on complete CAR16, including boosts
+PASS actual strict Julia derivative with native a^2=p, p+p^2=1
+PASS exact rational CAR16+flags quarter-turn and all six full feedback jets
+PASS coframe mixed derivatives are retained; no fixed-reference substitution
+PASS whole Golden leakage determinant has the claimed signed jet and fixed baseline
+PASS original cost1/2 minus binary Info has nonzero fixed-prior relative source
+PASS hostile unpaired curvature Hessian and EXACT inverse-paired whole-word cancellation
+PASS doubled all-six CAR16 paired source and exact nonzero-reference determinant
+FIREWALL: coframe reference admission/payment, complete H+J+R selection and refinement remain open

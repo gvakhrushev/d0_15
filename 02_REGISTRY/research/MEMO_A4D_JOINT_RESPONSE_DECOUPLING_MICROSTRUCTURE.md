@@ -1,5 +1,150 @@
 # A4D joint response on fixed smooth sources: PARTIAL / OPEN
 
+## 22 October 2026 — exact original addressed J2 root and independent N1 preparation lift
+
+[Actual full42 J2 continuation and preparation application](A4D_ORIGINAL_J2_FULL42_AND_N1_PREPARATION_JOINT_ROOT_2026_10_22.md) closes two concrete premises of the global existence programme. On the original unpadded h≈0.183801524658 carrier, the entire literal feedback source was evaluated. Its mismatch at the old N1 root exceeds the earlier tiny sufficient budget. A new all42 continuation instead reaches a distinct exact nonflat root of J2=-528 sum_j log(1-r_j), retaining both original eigenbands and all six Lorentz faces. The new outward interval Banach certificate encloses all 1764 Hessian entries, gives q<0.000143094791 in the radius-1e-30 cube, and rigorously protects nonflat holonomy and both matter gradients. Literal J2 has inertia 26 negative/16 positive. The comparison normalization is constant and changes no root.
+
+Separately, the constant original query eigeninputs solve all eight independent fixed-P preparation rows for the ORIGINAL unpadded N1 price. Their mixed field/preparation block vanishes identically, and the new interval preparation Hessian has four positive and four negative eigenvalues of modulus>100 over the old certified field ball. This gives an exact 50-variable joint root on that stated interface (46 for real inputs), with the omitted 48 real normal reactions explicitly retained. Physical admission of that interface and its actual preparer cost remain explicit. Its Born-score Hessian is not silently attached to the literal operator determinant.
+
+The [reviewed packet](sources/d0_j2_joint_preparation_application_2026-10-22/README.md) contains exact rational proposals, outward matrix endpoints, reproducible consumers and independent literal-two-factor verification. The full physical remainder is now written at the new endpoint as -Tr(sigma_beta dDelta_N)+dJ_extra+dP_rest, with corresponding independent upstream equations. Same-execution heat/cut/Info/writer identification and uniform refinement remain open. The concurrent paid collective preparation theorem is preserved at its own carrier scope. No original receipt, action selection, minimum, GR/raw216 or lifecycle acceptance is promoted.
+
+The subsequently published whole-word Boolean Book/recorded-price construction and original full128 primitive DATA/Holevo-rate owners are acknowledged at head `6eb96ce95cdafbc5c1f5ab2f014f8e99d9176441`. Their actual fixed-cut processor and long-run channel sources remain distinct from this addressed J2/N1 execution; the review records the precise compatibility and retains their genuine new results.
+
+## 22 October 2026 — original stopped futures remove the two-band marginal premise
+
+[Native stopped-future entropy composition](sources/d0_native_blank_future_entropy_2026-10-22/README.md)
+applies the existing inverse-square preparation and entropy/Poisson source
+to the original full128 first-anchor/first-match tape. Its actual fine
+outcomes are `K_0=B=I-2p^2 Delta>0` and `K_1=-2p sqrt(p) Delta`.
+The full-label comparator retains the port bit, so `(1,0^n)` contains
+only mismatches and is a genuine retained prefix for every `n<=K`.
+Summing its complete later match and cap-abort leaves gives the actual
+unconditioned effect `F_n=4p^3 Delta^2 B^(2n)`.
+
+For the declared cap `K>=d-1`, these probabilities determine all spectral
+block weights. The exact polynomial identity `log rho_* in span{F_n}`
+proves `S(rho_*)-S(sigma)=D(sigma||rho_*)` for every equal-test state,
+where `rho_*=Delta^-1/Tr(Delta^-1)`. Thus this same native invariant state
+is the unique maximum-entropy representative for **every positive native
+spectrum**, without the previous one-port/two-band restriction. A richer
+retained family has the same maximizer at this input. For CAR16, a fixed
+cap `K=15` suffices and pays for at most sixteen rounds; increasing a
+previously smaller cap remains a paid change. No stopped episode is
+continued after its actual stop.
+
+The consumed source premise is precise: for this declared marginal
+forgetting problem, `I_F(rho_*(y),y)=0` identically, all total section jets
+vanish, and the independent DATA first cotangent and its primitive-DATA
+Poisson adjoint vanish. For finite preparation the honest bound is
+`0<=I_F(rho_L,y)<=D(rho_L||rho_*(y))`; it is not a bound on every source
+derivative. Normal off-section Hessians need not vanish. The original
+one-port theorem keeps its distinct and correct scope.
+
+The actual stopped charge, full history CQ information, finite preparation
+records and independent oldRIGHT equations remain in the complete source.
+The theorem selects neither compulsory Book03 Info nor a cut/heat law,
+and supplies no unproved full42 or mesh-uniform transport. Its proof and
+new bounded checks consume the existing instrument and stopped recursion;
+they do not repeat the old geometric or 173-check suites. This is a
+removed marginal-source premise in existing #334, with physical GR open.
+
+## 22 October 2026 — the paid moment writer supplies actual joint phase access
+
+[Paid logical echo and complete report source](sources/d0_paid_writer_echo_source_2026-10-22/PROOF.md)
+composes the existing common moment bank, fixed all-column processor and
+native Golden/H/Toffoli factories. On every successful fine factory history,
+the logical gate factors from its retained spent work. The known inverse
+logical word can therefore be executed with fresh paid factories while all
+old measured factory records remain. The row-preparation isometry and
+already measured original 72,441-history archive are not reversed.
+
+For the literal two-row CAR masks 0/1 consumer, the code-controlled SWAP
+has orthogonal conditional work and zero code-only phase visibility.
+Its actual paid inverse followed by the existing complete Golden X
+instrument gives a strictly positive unconditional phase contrast
+`Gamma/2`, with the readiness of the whole preparation/forward/reverse/
+readout execution included. This supplies the previously missing joint
+code/work future test on the declared addressed writer interface.
+
+The same primitives have a source consumer. For the writer's fixed report
+word `A` and its true report probability `r_k`, execute
+`A; CZ(probe,click); fresh A^dagger; Golden X(probe)`. Its complete
+fixed-code counted-CQ price is `S_new(k)=B_new-Gamma h_phi(r_k)`, with all
+fine failures, aborts and conditional quantum work retained. Its full
+source is `dB_new-h_phi(r) dGamma-Gamma h'_phi(r) dr`.
+The owned common-catalogue construction makes both the prefix price and
+readiness constant across actual code secants, so exactly
+`Delta S_new=(Gamma/gamma_old) Delta S_old`. The existing full42 moment
+source/second-jet consumer retains its real gain and stated convergence
+bounds; no derivative of a finite rounded code map is invented.
+
+The uniform coherent controller has its own complete price. If its code
+is read only after a fully completed phase report, the additional entropy
+is `Gamma[log_phi M+mean_k h_phi(r_k)]`; aborted codes remain retained
+quantum work. If the code remains unmeasured and only the probe is read,
+it is `Gamma h_phi(mean_k r_k)`. Reading codes on aborted episodes would
+require their additional entropy and charges. These protocols do not
+substitute the fixed-code price for an unconditional uniform execution.
+
+This removes an operational phase-access premise for the actual paid
+writer and transports its declared complete source. Its addressed gates,
+initial/reference assumptions, actual cap costs and retained algebra
+remain explicit. Compulsory Book03 Info, active cut/heat selection and
+independent field/upstream stationarity still need their same-execution
+application; this result does not identify the alternative writer with
+the original measured full128/72,441 instrument or close physical GR.
+
+## 22 October 2026 — complete actual-cut source and original retained quantum history
+
+[Complete native source reduction](A4D_NATIVE_COMPLETE_SOURCE_REDUCTION_2026_10_22.md)
+and its [frozen proof/check packet](sources/d0_native_complete_cq_source_2026-10-22/README.md)
+consume the generated-thermal source in the existing Draft #334. On the
+owned rank-one READY apparatus, **every admitted fixed-calibration source**
+obeys `d(H_C+J)=R dJ`, with `34165/50549 <= R < 1`. This includes moving
+preparation/controller/cut directions and preserves the complete critical
+Hessian kernel/inertia. The old common-null all42 inheritance is retained;
+the theorem does not identify this apparatus with the distinct configured
+off-null CQ action or eliminate a genuine independent input reaction.
+
+For the original CAR16/full128 stationary marginal, maximum entropy under
+the actual one-port moment is solved: the native two-band inverse-square
+state is its unique maximizer and its marginal forgetting-gain first source
+is zero on every smooth tangent. The **full history** is different. The
+new calculation retains conditional DATA, all preparation derivatives and
+all outcome slots. For a specified full history-diagonal work algebra,
+the actual pinching is the unique maximum-entropy state and
+`I_gain=S(Gamma)-S(rho_initial)=D(Omega || E Omega)`. On the original
+one-round proper-boost fixture, pointer, complete-CQ and gain sources are
+approximately `-0.01446891`, `-0.03025900` and `-0.01489234` respectively.
+The two-round application and exact finite stopped-tree source are included.
+
+The [concurrent-source intake](sources/d0_native_complete_cq_source_2026-10-22/CONCURRENT_INTAKE.md)
+composes this with the separately published two-Kraus stopped-price/Poisson
+preparation result, retaining the exact CQ-to-gain input-cotangent correction.
+It also preserves the original stage-clock cut-blindness theorem: an entropy
+conditional expectation is not a selected Book active projector. Actual
+Book03 heat/cut/Info, paid preparation, field writer and independent upstream
+equations must still be identified on one execution. The new finite full42
+continuous-source budget is a distinct downstream consumer; no transport or
+bound of the present Fourier-fixture source in its coordinates is asserted.
+The packet has 173 scoped checks and independent frozen-input reviews;
+no physical GR, raw216, assembly or lifecycle status is promoted.
+
+Related same-owner source-selection inputs remain the
+[marked-history pressure and Book selection gate](A4D_MARKED_HISTORY_SOURCE_AND_BOOK_SELECTION_GATE_2026_10_22.md),
+[original stationary full128 two-port memory and native atlas](A4D_ORIGINAL_FULL128_STATIONARY_PORT_CORRELATION_SOURCE_2026_10_22.md),
+and the later [complete stopped-history KL/Holevo source with preparation defect](A4D_NATIVE_FULL128_STOPPED_KL_QUANTUM_MEMORY_BUDGET_2026_10_22.md).
+The last theorem preserves the full fine-history pointer source without
+an iid reset; its original numerical stopped control uses binary ports.
+The conditional quantum-work source in this packet and the later
+[complete preparation-Poisson/Hessian map](A4D_COMPLETE_NATIVE_FIRST_MATCH_ENTROPIC_POISSON_PREPARATION_AND_HESSIAN_2026_10_22.md)
+are complementary consumers, with the actual retained algebra and the
+stationary-state constraint still stated explicitly.
+The [later stopped-source intake](sources/d0_native_complete_cq_source_2026-10-22/LATER_STOPPED_SOURCE_INTAKE.md)
+gives the exact terminal-quantum-work/gain substitution and clarifies that
+the stationary-base-point reference-gradient cancellation holds even on
+an off-stationary tangent; the genuine extra price source is the separately
+retained preparation-defect term.
 
 **Stopped minimality/source extension, 20 October 2026:**
 [every fixed T >= 5 and ell >= 1](A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md)
@@ -20,11 +165,1823 @@ for a supplied binary task. The earlier clock/pressure/price packet is
 recovered unchanged. Complete physical Info/task/work selection and the
 same nonuniform all40+2 source remain the next application; the historical
 results below keep their original scopes.
-Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`, Draft PR #310.
-Lifecycle: `IN_PROGRESS`. The parent NO-GO/retirement announced at `530a5132`
-is withdrawn: it closed a weaker source convention, not the theory target.
 
-Current execution follows the [constrained-price plan in CONTROL](https://github.com/gvakhrushev/d0_15/pull/322).
+Current same-programme composition: [whole-family CAR first source, causal
+state elimination and complete Book-price binding](A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md).
+It supplies the exact geometric reporting component on the entire original
+common-null family, including full-address/fixed-oldRIGHT preparation and
+paid repetition multiplicity. The generated-state adjoint equations are
+composed with all40 §5.1; complete absolute Info/work valuation, primitive
+admission and genuinely independent upstream preparation remain explicit.
+The original amplitude/likelihood distinction and exact all128 paid return
+prevent a normalized readout or an additional statistical weight from being
+mistaken for that full physical price. The concurrent reference cocycle is
+consumed with its actual source-preservation and moving-reference boundary.
+No new action, fitted residual, task retirement or GR closure is asserted.
+
+Latest composed continuation: [same-history paid source, clock reduction and
+full connection response](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md).
+It corrects the former positive-sign LC interpretation in the paid-gradient
+owner before coupling that actual source to geometry. Historical numerical
+fixtures keep their literal operators; the original full-action/GR terminal
+remains open.
+
+## 19 October 2026 — REAL SCENE PHYSICS: 718-edge complete instrument plus absolute Cost−Info pressure from ONE retained history
+
+**New positive direct physical-source consumers on the SAME #334:** [A4D_NATIVE_SCENE_718_EDGE_COMPLETE_REGISTER_DETERMINANT_BOOK_2026_10_19.md](A4D_NATIVE_SCENE_718_EDGE_COMPLETE_REGISTER_DETERMINANT_BOOK_2026_10_19.md) with [independently executed full edge checker](sources/d0_scene_edge_complete_book_2026-10-19/check_scene_edge_register.py); and [A4D_ONE_HISTORY_SCENE_ABSOLUTE_PRESSURE_FEEDBACK_COMPLETENESS_2026_10_19.md](A4D_ONE_HISTORY_SCENE_ABSOLUTE_PRESSURE_FEEDBACK_COMPLETENESS_2026_10_19.md) with [one actual 220k-original-transition-history source test](sources/d0_one_scene_history_absolute_pressure_2026-10-19/check_one_history_pressure.py). These COMPATIBLY strengthen the existing [one-real-Perron-history feedback readout](A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md) rather than claiming it is a mandatory coherent measurement.
+
+On ALL original 718 directed K(9,11,13) edges, the two explicit complete positive registrations \(S_{uv,u}=\sqrt{P_{uv}}\) and \(R_{uv,v}=\sqrt{\pi_uP_{uv}/\pi_v}\) use the real endogenous Perron stationary \(\pi P=\pi\). Their true Gram SᵀS=RᵀR=I, overlap \(T=SᵀR=D_\pi^{1/2}PD_\pi^{-1/2}\), and full retained good/fail edge projection give
+\[
+\boxed{F=R^T(I-SS^T)R=I-T^TT,\quad0\le F\le I,\quad\ker F=\mathbb R\sqrt\pi,\ \mathrm{rank}F=32.}
+\]
+No separate guessed \(\sqrt F\) oracle or deleted failure branch. A true idle/test selector at the EXISTING z=2⁻²⁰ gives complete three-label good effect G=I−zF and failure zF. To realize the ENTIRE Book03 scalar determinant as ONE explicitly registered event, take the ORIGINAL 33×33 G Cholesky, all33 pivots \(d_i\in[1-z,1]\) and 33 fresh COMPLETE binary flags, retaining all 2³³ possible records; then
+\(\Pr(\mathrm{all\ good})=\prod_i d_i=\det(I-zF)\), and its true \(-\log\) surprisal is \(J=-\operatorname{Tr}\log(I-zF)\), with exact first source \(DJ=z\,\mathrm{Tr}[(I-zF)^{-1}DF]\). This is a constructive complete POSSIBLE instrument in the owned generous addressed active class, NOT proof that literal foundational D0 executes the 718-edge coherent amplitudes, 33 conditional coin angles or their resource costs. In particular the stationary input \(\sqrt\pi\) itself has ZERO F-failure, so a single stationary ket MUST NOT be falsely equated to the determinant event; the already-owned one-actual-classical-history empirical 718-edge counts are a distinct cheaper CLASSICAL readout of the same F/J candidate.
+
+At the REAL original unit-edge-Cost/zero-Info profile the two edge embeddings reduce to \(T=A/\rho\) for the LITERAL symmetric 33-scene adjacency, giving
+\[
+\operatorname{spec}F=\{0(1),1(30),1-(\lambda_1/\rho)^2,1-(\lambda_2/\rho)^2\},
+\quad\det(\xi I-A)=\xi^{30}(\xi^3-359\xi-2574).
+\]
+This is the exact previously LEAN-owned ORIGINAL stationary1/archive30/active2 scene decomposition, now with an independent FULL-POSITIVE outcome-register interpretation, not an identification with the different ordinary row-normalized random walk.
+
+**The missing ABSOLUTE physical Cost source is exactly ONE per-tick spectral pressure, not inferable from F alone.** For every TRUE original primitive Book edge \(s_{uv}=C_{uv}-\theta I_u-(1-\theta)I_v\), with K_uv=φ^(−s), the actual positive Perron/Doob P has the exact *all-edge cohomology*
+\[
+\boxed{s_{uv}=-\log_\varphi P_{uv}-\log_\varphi\lambda
++\log_\varphi r_v-\log_\varphi r_u,\quad
+\log_\varphi\lambda=h_\varphi(\pi,P)-\mathbb E_{\pi P}s.}
+\]
+On the original Lean-owned one-sided Perron start r/Σr, ONE long actual fully retained path with true edge counts and true paid edge Cost measures BOTH (i) the endogenous F/J by the preceding innovation-count owner and (ii) the missing \(\log_\varphi\lambda\) by empirical \(\hat h-\hat{\bar s}\). Independent ORIGINAL-graph seeded N=220000 control estimates5.674971 vs actual5.678455, and reconstructs all718 individual edge prices from P/λ/r to ~10⁻¹⁵. A uniform ADDITIVE physical cost shift leaves P/π/F/J unchanged yet shifts \(\log_\varphi\lambda\) exactly, proving why feedback alone is insufficient for WHOLE Book action/Einstein source. The true moving pressure field source is \(D\log_\varphi\lambda=\sum_v\pi_v DI_v-\sum_{uv}\pi_uP_{uv}DC_{uv}\); recorded integer histograms do NOT carry that derivative unless their true changing probability law and terminal score are differentiated.
+
+**Authoritative real registry remains OPEN:** GR/constitutive/native_sector/matter_source_ward/joint_nonlinear_solve/raw216; CONTROL #375 proves ActionProtocol does not uniquely select the primitive Cost. The new proofs narrow the PHYSICAL forcing to ONE original whole scene native Cost/Info-to-Julia/Lorentz/CAR field-source and one compulsory fully paid state/circuit/cut selector. The 33-flag detector is executable mathematically and successful/failure COMPLETE, not compulsory foundational physics. Its field source is NOT called Einstein until the original 16+24+matter response agrees with the independently proved original Palatini/CAR owner on the SAME actual full D0 action.
+
+
+
+## 19 October 2026 — ONE ORIGINAL HISTORY identifies full Book-feedback and its own Cost−Info source
+
+**New positive one-history statistical readout in SAME executing PR #334:** [A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md](A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md), with TWO executed controls: [one actual simulated Perron history](sources/d0_one_native_history_book_feedback_2026-10-19/check_one_history_book_feedback.mjs) and [all 15,708 genuine two-edge histories](sources/d0_one_native_history_book_feedback_2026-10-19/check_one_sided_original_score.mjs). It consumes the formalized ORIGINAL one-sided all-walks law and the already-owned unique 718×718 minimal reflection to the canonical Book candidate \(F=I-P_\pi^\dagger P\), WITHOUT postulating two independent futures or a stationarity reset.
+
+Given ONE complete native recorded path \(Y_0,\ldots,Y_N\) with its ORIGINAL \(\mu_0\propto r\), keep all 718 original directed transition counts \(N_{uv}\) and 33 original state counts \(N_u\). With \(\widehat P_{uv}=N_{uv}/N_u,\ \widehat\pi_u=N_u/N\), define the actual **one-history predictor-error** vector \(\widehat\epsilon_{t,i}=[1_{Y_{t+1}=i}-\widehat P_{Y_ti}]/\sqrt{\widehat\pi_i}\) and its ONE empirical Gram \(\widehat F_N=N^{-1}\sum_t\widehat\epsilon_t\widehat\epsilon_t^T\). It is positive for EVERY finite N and \(\widehat F_N\sqrt{\widehat\pi}=0\) exactly; its genuine one-sided ergodic limit is the SAME original positive conditional-variance feedback \(F=I-(D_\pi^{1/2}PD_\pi^{-1/2})^T(D_\pi^{1/2}PD_\pi^{-1/2})\). On ANY strictly positive 718-edge K(9,11,13) Markov law, this operator has EXACT rank32 (all neighboring zone supports overlap, so only the constant observable has zero future uncertainty).
+
+Thus at original Book fugacity \(z=2^{-20}\), a SINGLE genuine recorded path identifies the FULL scalar native return price
+\[
+\boxed{-\log\det(I-z\widehat F_N)\xrightarrow{a.s.}
+J_{\rm native}=0.000030035369315208\ldots .}
+\]
+There is NO re-preparation of an independently stationary π and NO quantum clone. The actual one-sided mixing parameter q=0.5531386166 implies O(N^-1) covariance mean-square error for an oracle-normalized source on the ORIGINAL chart and almost-sure consistency of its fully data-derived version. Executed deterministic one-path tests of length50,000 and300,000 yield feedback absolute errors2.1133494e-8 and3.1475966e-9. Native Perron and the WRONG row-degree random walk can be distinguished from ONE registered stream: exact asymptotic edge log-likelihood-ratio drift0.000920198932409216 nats, not a fitted probability.
+
+**Direct SAME-history physical first-source identity:** for the ORIGINAL one-sided Perron cylinder with true Cost−Info edge weights \(K_y=\varphi^{-s_y}\), the full complete depth-N recorded path law is
+\[
+\mathbb P_y(\gamma)=\rho_y^{-N}r_y(v_N)\prod_{e\in\gamma}K_y(e),\qquad
+\boxed{D\log\mathbb P_y
+=-\log\varphi\sum_{e\in\gamma}Ds_y(e)-N D\log\rho_y+D\log r_y(v_N).}
+\]
+Every allowed endpoint/failure/clock information source and the Perron normalizer are retained; moving transition probabilities are NOT frozen. For ANY fixed complete one-history observable O_N, the full statistical field source is the exact score covariance
+\(D E O_N=E[(O_N-E O_N)D\log\mathbb P_N]\). Over all 15,708 original depth-two histories for a varying 9–11 edge-cost orbit, analytic Perron differentiation and an independently assembled product-rule derivative both give the nonzero source \(0.0252599823924456\ldots\), agreeing within \(4\times10^{-18}\). A central difference at step \(10^{-4}\) is within \(4.9\times10^{-11}\). Omitting either the Perron pressure or terminal-record derivative materially changes the answer. The original candidate J's independently computed symmetric-orbit cost first jet agrees with matrix finite difference to \(6.65\times10^{-14}\).
+
+**Physics/registry:** this closes the mathematical and observable need for chosen F, unpriced independent future copies, imposed stationary initial data, or an unknown 718×718 unitary just to READ the complete positive feedback. It still DOES NOT demonstrate that mandatory Book03 physically prices this reconstructed J, that the original quantum Golden/Julia gate executes its F, or that its actual complete field source equals the independent original 16+24+CAR Einstein/Palatini source. One measured history never by itself makes its own statistical observable the physical action. The real gr_assembly register still has constitutive, native_sector, matter_source_ward and GR OPEN. Keep this accepted-as-research, not a claims.csv/BOOK/CORE promotion.
+
+The independent [quarter-wave Fredholm/shear control](A4D_Y_QUARTERWAVE_FREDHOLM_SHEAR_EINSTEIN_FACTOR_2026_10_19.md) closes another false positive: the two formal diagonal shears have zero quadratic Einstein action when the action is restricted to their plane, but the full Euler operator has rank two on that plane. They are therefore not stationary graviton modes. This is an exact one-symbol algebraic control; it says nothing about finite lattice gauge quotient or physical source admission.
+
+## 19 October 2026 — canonical ORIGINAL 718-edge reflection: exact history-to-Book operator without arbitrary extension
+
+**NEW strictly positive concrete native-history synthesis, same executing #334:** [A4D_NATIVE_PERRON_HISTORY_CANONICAL_MINIMAL_REFLECTION_2026_10_19.md](A4D_NATIVE_PERRON_HISTORY_CANONICAL_MINIMAL_REFLECTION_2026_10_19.md) and [genuinely executed independent 718-edge original-scene checker](sources/d0_perron_history_canonical_reflection_2026-10-19/check_canonical_reflection.mjs). This consumes the original formal owner D0.VNext2.SceneHistoryPerronTrace and the existing full718 conditional-variance positive-effect owner, eliminating the previously **ARBITRARY choice of full orthogonal extension U_E**. It is **NOT** a new physical selected Book03 action or CORE claim; claims.csv and gr_assembly/VIEW correctly keep full GR, constitutive, native_sector and matter source OPEN.
+
+The ORIGINAL scene has 33 vertices, 718 directed edges, \(\det(xI-A)=x^{30}(x^3-359x-2574)\), positive Perron rho and original one-sided history r, with its DERIVED stationary bulk π=r² (not the false A/deg random walk). The two complete edge-provenance coordinate isometries J0,J1 satisfy \(J0^\dagger J1=T=A/\rho\). Put \(D=J0-J1,k=2574/\rho³\), and the original-graph degree-two polynomial \(B(T)=I+(2T+T²)/(2+k)\). The TRUE cubic identity gives \((I-T)B=I-\Pi_{r}\), whence
+\[
+\boxed{U_{\min}=I_{718}-D B(T) D^\dagger,\quad
+U_{\min}^2=U_{\min}^\dagger U_{\min}=I,\quad U_{\min}J0=J1.}
+\]
+THIS IS THE WHOLE EXPLICIT ORIGINAL 718×718 unitary, with no arbitrary 685-dimensional extension, no extra Hilbert carrier and no inverse. Exactly32 of718 original edge directions are reflected, the other686 are unchanged. Every OTHER orthogonal native-edge map accomplishing the same J0→J1 must change at least32 directions. The original full Book03-type \(J0^\dagger U_{\min}^\dagger(I-J0J0^\dagger)U_{\min}J0\) is NOW THE ACTUAL \(F_{\rm native}=I-A²/\rho²\), positive rank32. It is the **LITERAL ORIGINAL TWO-STEP native full-history count operator**: original depth2 row counts502/476/458, 15708 total; \(\mathrm{Tr}A²=718\). Its quadratic source equals BOTH a genuine old/future conditional variance and the complete positive comparison of two independently continued recorded successors at fixed past vertex.
+
+The exact 30+2+1 feedback spectrum is \(\{1\}^{30},\{0\},\{0.800314904000112,0.694037670857683\}\); this is NOT the separately Lean-owned A/deg active eigenvalues. The COMPLETE candidate original Book feedback at z=2^-20 has algebraic determinant \((1-z)^{30}[1-(1+2k)z+(2k+k²)z²]\), \(J_{\rm native}=3.00353693152\cdot10^{-5}\). For ANY true symmetric moving original edge costs K(y), the SAME canonically determined minimal reflection remains smooth, \(F=I-(K/\rho)^2\), and the full true first source is \(DJ=-2z\operatorname{Tr}[((1-z)I+zT²)^{-1}T(DK/\rho-T D\rho/\rho)]\). At equal-cost original graph its three genuine undirected edge-orbit derivatives are **nonzero**, approximately \((-1.63882971138\cdot10^{-10},-1.78929298513\cdot10^{-11},+1.28097111436\cdot10^{-10})\); the exact uniform-price Ward \(99J'_{9,11}+117J'_{9,13}+143J'_{11,13}=0\) holds, so only two relative fully orbit-invariant cost responses survive.
+
+**VERIFIED in this execution:** the ACTUAL saved JS checker ran and passed all718 complete edge/33 column identities; polynomial residual6.3×10⁻17, UJ0→J1 residual1.1×10⁻16, U² residual5.6×10⁻16, full pairwise recorded-history conditional variance vs operator covariance residual~10⁻15, determinant polynomial residual2×10⁻17 and price-scale Ward ~5×10⁻22. No fresh remote CI/Lean claim was made.
+
+**Exact physical next interface, not another curvature fit:** the entire 718-edge feedback is NOW FIXED by the genuine recorded history, but original compulsory D0 must (i) execute and price this rank-minimal full orthogonal memory transition or derive its selected native alternative, (ii) carry original full historical Cost−Info/clock/work/RIGHT/observer preparation, and (iii) show the ACTUAL site/Lorentz/CAR pulled-back edge-price first source agrees with the independently owned full16+24+matter \(\star+\)CAR covector. The pure scene-orbit symmetric cost family by itself has just two relative scalar shape responses and must NOT be renamed the full local Einstein tensor. This proof removes the *free U extension* from the positive scene-to-feedback construction, not the final full physical D0⇒GR cost and source selection.
+
+
+## 19 October 2026 — ENDPOINT INFO QUOTIENT: original Book allocation does NOT change full nonlinear closed GR holonomies
+
+**New original-Book03 EXACT positive reduction in SAME scientific #334:** [A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md](A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md); [complete-path/real-crossed-null bounded control](sources/d0_book_info_bulk_gravity_quotient_2026-10-19/check_bulk_endpoint_quotient.mjs). Consumes previous exact finite scene graph and action owner [A4D_NATIVE_COST_INFO_BOUNDARY.md](A4D_NATIVE_COST_INFO_BOUNDARY.md), the ORIGINAL 16+24 Palatini based loops, and newly constructed **genuine noncommuting opposite-null** Lorentz pair \(N_2,\bar N_3\) from §7.52–7.58. It does NOT change the original Book03 Cost−Info law or declare full historical D0 physics closed.
+
+For TRUE original transition-edge Book allocation
+\(s_\theta(u,v)=C(u,v)-\theta I(u)-(1-\theta)I(v)\),
+where ALL field-dependent full time/observer/material information jets remain, any complete original finite history a→b has
+\[
+\boxed{S_\theta(\gamma)-S_\eta(\gamma)
+=(\theta-\eta)[I(b)-I(a)]}
+\]
+OFF SHELL and at every derivative order. This is already an owned exact endpoint coboundary; the NEW physical consumer is the FULL complete endpoint-conditioned observed law: for EVERY recorded path γ with the SAME retained (a,b), its true native positive Book history weight is multiplied by ONE common positive factor, so **every normalized conditional path probability and all its source jets are IDENTICAL for θ,η**, including full conditional Shannon, MAP and Fisher geometry. No failure path is thrown away and mathematical conditioning is NOT declared free physical postselection.
+
+For the ORIGINAL closed based Lorentz plaquettes, if the accounting weight dresses each actual edge transfer as a CENTRAL scalar, the two θ choices are related by vertex scalar conjugation. ALL intermediate endpoint weights telescope on EVERY closed loop, so **the entire NONCOMMUTING holonomy matrix, odd curvature (P−P⁻¹)/2, all 16+24 geometric source jets and all higher nonlinear crossed-null terms are EXACTLY θ-INDEPENDENT**. Concrete native \([N_2,\bar N_3]=E_{23}-E_{32}\ne0\) and crossed four-link group commutator have nontrivial Weyl-type rotation. Independent JS direct check found closed 4×4 θ holonomy error <6×10⁻17 and source derivative error <6×10⁻12 for four different θ with moving node Info, while the nonflat original commutator contrast is0.0221. This does not claim that scalar-weighted individual links are themselves proper-Lorentz Kraus operations; real physical edge-field map and whole output completeness are distinct.
+
+**SHARP remaining FULL unconditional Book endpoint source, not handwaving:** for actual positive endpoint pair weights, \(Z_\theta=\sum_e Z_\eta^e e^{-(\theta-\eta)\ell\Delta I_e}\), \(\ell=\log\varphi\), hence
+\[
+\boxed{\partial_\theta\log Z_\theta=-\ell E_\theta[\Delta I],
+\quad \partial_\theta^2\log Z_\theta=\ell²\mathrm{Var}_{P_\theta(e)}(\Delta I)\ge0 .}
+\]
+Normalized complete endpoint distribution is θ-independent **iff all actual endpoint info jumps \(\Delta I_e\) are equal on positive support**. Full source of the UNNORMALIZED partition is θ-independent only if that common jump also has ZERO genuine field derivative (e.g. fixed original endpoint records); otherwise it retains exactly the boundary source. A genuinely measured native endpoint-difference variance is thus a finite discriminator of what part of the original complete history price still depends on the convention; no invented source or hidden physical gauge. A direct moving-info JS check gives variance0.043838779960645 and log-partition second θ source0.01015151921591, with independent centered finite-difference residual <5×10⁻9.
+
+**New route to GR:** the elementary allocation ambiguity \(\theta\) of vertex Info is eliminated from the FULL geometric closed-loop source, from ALL conditional interior histories, and (under fixed actual endpoint information) from the complete bulk discrete Euler/canonical symplectic structure. This is an **all-order information/cohomology quotient** that remains valid in the noncommuting two-null 4×4 setting instead of only the previously solved Brinkmann/constant-pp sector. The original full 718-edge additive-action fiber is much BIGGER than this θ family; Book03 does not yet select the genuine Info event, numerical cost, native Lorentz-link readout or compulsory detector and the true open-history endpoint sector. Therefore this theorem REMOVES exactly one physical allocation ambiguity **conditional on the same complete Cost−Info event binding**, not all constitutive/native selection, full H+J+R/clock/preparation, finite crossed-null roots or raw fixed-g/tau #216. A proper Lorentz physical source still must be derived from the true selected full action, not from a postulated GL scalar dressing.
+
+
+## 19 October 2026 — MAIN positive synthesis: ORIGINAL golden boxes, inverse-PF and moving quantile SAME finite roots / general Einstein source
+
+**Direct consuming theorem IN THIS original #334:** [A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md](A4D_ORIGINAL_GOLDEN_BOX_INVERSE_PF_MOVING_QUANTILE_EINSTEIN_BRIDGE_2026_10_19.md); **REPRODUCED AND EXECUTED** [exact native original-F/R and moving-volume full two-tick JS checker](sources/d0_original_golden_inverse_pf_quantile_2026-10-19/check_original_inverse_pf_quantile.mjs). This is stronger than the earlier optional [integer-divisible Fib rank LEFT decoder](A4D_EXACT_BALANCED_GOLDEN_LEFT_QUANTILE_COMMON_EINSTEIN_SOURCE_2026_10_19.md): **NO RELOCATING the original old 4D golden boxes; NO new rank decoder; NO exact Fibonacci divisibility; NO excessive n=3L⁴/4**. It closes the expressly OPEN **finite rooted local J₂ → correct off-null general moving-volume mean J₂ first-SOURCE** in owned full-source §6.48, by composing TWO already-owned kinematic maps, not inventing a new curvature price.
+
+On the ORIGINAL golden nested 4D boxes, exact-cost READY native words w have equal TRUE old AF PF/regular type weight ω; their actual original cell counts \(N_{n,x}\) are generally UNEQUAL. Set \(w_x=\omega N_{n,x}\), \(\bar w=M^{-1}\sum_x w_x\), \(\rho^{AF}_x=w_x/\bar w=MN_{n,x}/F_{n+1}\). On the owned original source-compatible CAR/Einstein metric \(\widehat e_x=\sqrt{\rho^{AF}_x}e_x\) define \(\widehat f_{h,x}=h^{-4}P_{\star,h}(\widehat e,U)\), \(\widehat q_{h,x}=\widehat g^{-1}(D_h\Psi,D_h\Psi)\). The SAME original full two-tick Book03 J₂ LEFT query (528 scene returns+22448 full complement, all old RIGHT/ref128) is now supplied with BOTH the original inverse-PF factor and the original physical-volume quantile:
+\[
+r_w(y)=(\rho_x^{AF})^{-1}
+ \bigl[(\mathcal I_h\widehat f_h)/J_y\bigr](T_{J_y/V_y}(u_x)),\qquad
+q_w(y)=(\rho_x^{AF})^{-1}
+ \bigl[\mathcal I_h\widehat q_h\bigr](T_{J_y/V_y}(u_x)),\quad x=j_{\rm native}(w).
+\]
+Here T is the already PROVED triangular inverse quantile with full Reynolds/observer/clock jet, \(\mathcal I_h\) the fixed nodal moving-query interpolation of full-source §6.52. This is a newly specified **QUERY OPERAND** of the EXISTING unmodified ordinary two-scene-tick \(J_2=-\operatorname{Tr}\log(I-zF)\) price law, not the original old v8 full physical programme automatically executing it.
+
+**Exact finite two-way source bridge:** On EVERY nonflat arbitrary-time Brinkmann+true CAR scalar/top null solution of prior full40→3→1, \(J_y=1,\ T=\mathrm{id},\widehat f=\widehat q=0\) at EVERY original cell. Therefore chain-rule \(\nabla f\cdot DT\) and \(-f DJ/J²\) vanish EXACTLY on these roots for arbitrary real coframe/observer/shear/matter variations (even though DT and DJ may be nonzero). The genuine source of this VOLUME programme on ALL 16 coframe+24 link+2 scalar Euler agrees EXACTLY with the already solved native-local inverse-PF programme:
+\[
+\boxed{\frac{DJ_2^{\rm volume}}{\nu K}
+=\frac{DJ_2^{\rm local}}{\nu K}
+=\bar w C_\star D\sum_x[\widehat f_{h,x}+\lambda_-\widehat q_{h,x}],\quad
+\lambda_-(2^{-20})=-23.416406751884\dots}
+\]
+with \(\sum_w\omega(\rho^{AF}_{j(w)})^{-1}DG_{j(w)}
+=\bar w\sum_xDG_x\) for ACTUAL unequal original counts, NO fake uniform Born probabilities. Hence the SAME **new volume-quantile J₂ macro query** inherits the PREVIOUS exact finite nonvacuum arbitrary-u Brinkmann 16+24+2 roots with time-varying CAR E(u) and ANY transverse discrete harmonic W_h, AT EVERY MESH, not just weak/approximate convergence. The TRUE scene effect is \(B=4b(1-b)\) (not withdrawn one-tick b), all failure/old archives retained.
+
+**General non-null source ON THE SAME programme:** at arbitrary nonzero curvature/matter on the bounded chart, the LINEAR t² coefficient is EXACTLY \(\frac1M\sum_x[(\widehat f/J)+\lambda\widehat q](T_{J/V}u_x)\) by the SAME inverse-PF source cancellation. Owner's genuine smooth-C² quantile/Julia compilation limit therefore gives \(\Gamma=V^{-1}\int(P_\star+\lambda Jq)\), with \(P_\star=\gamma_\star JR\), \(\gamma_\star=-\mathrm{sgn}\det(e)/2\) independently fixed on all36 coframe curvature coefficients. Its own Cartan/metric/scalar Euler are ALL TEN nonlinear Einstein–scalar rows plus TRUE \(\Gamma g/2\) volume pressure. At genuinely free full scale, its own radial Euler forces \(\Gamma=0\); fixed scale/collar retains the term. The two formerly different sources now belong to ONE source-matched volume programme on the same original spatial address and CAR carrier.
+
+**NEW mathematically controlled resource theorem for real original natural spatial boxes:** no equal Fib counts needed. Exact-cost renewal + raw k-prefix boxes yields
+\(\sup_x|\rho^{AF}_{n,x}-1|
+ \le a_n^{-1}[L^4p^{2(n-2k)+1}/\sqrt5+128L\delta_k+|a_n-a_\infty|]\),
+\(k=\lfloor n/4\rfloor,\delta_k=2p^{\lfloor k/4\rfloor}\), whenever \(\delta_k\le1/(2L)\).
+Therefore ANY \(n(L)\ge(16+\gamma)\log_\varphi L+C_\gamma\) has UNIFORMLY \(\rho^{AF}_{n,x}\to1\) and \(\rho^{-1}\le2\) eventually on ALL original native cells; genuine bounded inverse ratios suffice for the full weak t²/C² source on changing grids. This is a log-depth REAL native source schedule rather than the prior O(L⁴) exact-rank construction, not a claim of cheap whole-gate work/query signal/clock.
+
+**Direct full-source checks really EXECUTED in JS:** Original cost20/L4 enumerates10946 native words, all256 cells, unequal N=29..78 and \(\rho=[0.6782,1.8242]\); cost24/L8 has75025 words, all4096 cells, N=4..43. On L4 genuine nonconstant-volume perturbation \(J_\epsilon=1+\epsilon(2x_0-1)\), **nonzero** inverse quantile \(DT_\epsilon(.25)=.1875\), arbitrary nonzero metric/matter source test, ORIGINAL inverse-PF full double-tick normal source is \(-1.210438851307872\cdot10^{-6}\). Exact weighted sum equals this number to displayed precision; the actually evaluated ENTIRE return logdet centered difference yields \(-1.2104388620983245\cdot10^{-6}\), relative source error \(8.9145\cdot10^{-9}\). New checker was RUN through V8 and PASS; prior optional integer-rank script also RUN and PASS. The exact all40 arbitrary Brinkmann matrix source was independently tested on three nontrivial fixtures with max residual <1.1×10⁻17 from genuine six based Lorentz faces. No fresh Lean/CI promotion claimed.
+
+**Original physical frontier, still OPEN:** this is one **explicitly specified** new allowed-matrix/query realization of a full mathematically retained J₂, not compulsory foundational D0 selection of that operand, PREP/Julia/clock/volume decoder with its full physical cost; true old-v8 H+J+R/earlier histories/RIGHT/matter spin source; global physical boundary/scale and original distinct fixed-g/tau/full periodic all-ten raw h⁻² #216. The breakthrough is the **same original spatial-address finite exact-root ↔ general non-null Einstein–scalar first-source bridge**, not a hidden relabeling of physical laws.
+
+
+## 19 October 2026 — NATIVE BALANCED GOLDEN SEAM: exact finite ROOTS for physical-volume mean J2
+
+
+**Further exact selection-quotient theorem (same owner §1.2, no new gate/action).** At the same native level all true cost-n original word pairs have identical original AF terminal type, actual PF weight and regular defining multiplicity. For ANY two selections of exactly k≤m ORIGINAL words inside each original cell, a within-cell old-LEFT permutation conjugates the COMPLETE two-ticked AF×scene RETURN pencil while leaving old RIGHT/reference and ALL untouched/pending outcomes present. Consequently the **ENTIRE full ordinary logdet J₂**, not merely its Einstein first jet, is IDENTICAL off shell for any selections of the SAME k; every Hessian and higher field vertex of this constructed return price is the same. For different balanced k the true signal scales k, but after dividing by its actual selected macro mass σ=kL⁴ω the complete return-price difference is IDENTICAL, hence the Euler zero set and genuine matter-to-gravity ratio are independent of k. The **MAXIMAL** k=m (unique number) retains as many originally distinguishable geometric records as possible subject to EXACT native equal site masses and has a nonvanishing source in the diagonal refining family. None of this identifies different historical code/controller execution prices or their full Book valuation.
+
+**Genuine quantitative moving-volume source:** the EXACT regular trace of k ORIGINAL labels per Role cell equals the ordinary 4D midpoint average \(\sigma^{-1}\sum_{\rm selected}\omega F(T(c_w))=L^{-4}\sum_xF(T(c_x))\). For true physical \((T_{J/V})_*(du)=Jdy/V\), the FULL first derivative of this expression—including \(DT,DJ,DV\)—approximates \(D[(1/V)\int JF]\) with **O(h²)** sampling error on smoothly bounded C² field/transport charts (separate from O(h) original star finite stencil and genuine compiler costs). A non-null 4D Rosenblatt one-coordinate control with J=1+0.3εcos(2πy), F=y² has source errors 3.139e−4,7.801e−5,1.947e−5,4.866e−6 for L=8,16,32,64, approaching factor4 per refinement. At the null/star Einstein root the stronger EXACT finite first-source equality survives: no weak-limit argument is needed for its 16+24+2 zero rows.
+
+
+
+**New POSITIVE action/source identification on SAME #334:** [A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md](A4D_BALANCED_NATIVE_GOLDEN_EXACT_SOURCE_SEAM_LOCAL_TO_VOLUME_MEAN_2026_10_19.md); [bounded TRUE F/R + moving-volume first-jet test](sources/d0_balanced_native_quantile_einstein_2026-10-19/check_balanced_native_source.py). This closes the precisely named mathematical interface still left open in [full-source §6.48](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md): the previous local inverse-PF twice-Golden-ticked J2 had EXACT nonflat finite 16+24+2 Einstein–null matter roots, while the distinct moving physical-volume-quantile J2 had the general nonlinear Einstein–scalar mean \(\Gamma=A/V\) in a conditional smooth C² source limit, but no common exact finite Euler root/source match.
+
+**Genuinely native equalization WITHOUT making up any uniform probabilities or readdressing a single original word:** take ALL original exact-cost n F/R words with their genuine 4D nested centres \(X_w\), canonical Role cells C_x and counts N_(n,x). Choose \(m=\min_x N_(n,x)>0\) actual words WITHIN EACH ORIGINAL CELL (e.g. deterministic lex first m). Activate only their two owned READY suffixes \(Q_w=1_{wFR}+1_{wRF}\); EVERY other original ready/pending history remains in the complete AF/RIGHT archive at its field-independent golden baseline, not postselected/erased. Each equal-cost pair has exact PF trace2p^(n+3) and the SAME exact finite REGULAR LEFT type0 multiplicity \(\omega_{n,N}>0\), hence on all L⁴ original physical Role sites
+\[
+\boxed{w_x^{PF}=2m p^{n+3},\quad w_x^{reg}=m\omega_{n,N},
+\quad \rho_x=w_x/\bar w=1,\quad \widehat e_x=e_x,\quad\widehat g_x=g_x}
+\]
+for THIS selected full AF source-compatible metric, even though the original **unselected** counts N_(n,x) are violently unequal. Golden renewal shows m>0 for fixedL large n, and by taking n≫logL, \(m L⁴ p^n\to\varphi/\sqrt5\) so the **genuine active PF source mass** tends to \(2p³\varphi/\sqrt5=0.341640786...\), NOT zero. Current finite fixture (n20,L4) has10946 actual words/min29/max78, exactly7424 activated; (n28,L8) has514229/min45/max232, exactly184320 activated; every discarded-from-ACTIVATION word is still present in FULL original archive.
+
+**Full 4D moving quantile bridge EXACT at EACH FINITE field source:** for every selected original w retain its original X_w but query the **canonical representative** \(c_{x(w)}\) of its OWN macrocell (a coarse cell observable, not a new position). Use true smooth cardinal interpolation I_h of original Role data and the already-owned real positive full-volume Rosenblatt quantile \(T_\vartheta=T_{J_\vartheta/V_\vartheta}\), with \(T_0=\mathrm{Id}\) for the Brinkmann physical volume \(J_0=1\). The quantile programme uses original owner's \(r_w=(I_h f_\vartheta)/(I_hJ_\vartheta)\big(T_\vartheta c_w\big),\ q_w=(I_hq_\vartheta)(T_\vartheta c_w)\), where f=h^-4 * ORIGINAL six-based-plaquette star and q=original full16 Hodge/Clifford null kinetic. The local programme uses \((f_{x(w)},q_{x(w)})\). At EVERY previously constructed nonflat arbitrary-u Brinkmann Einstein–CAR source solution, f_x=q_x=0 FOR ALL sites although their true first variations are not0. Therefore, for ANY independent native solder16/link24/matter2 tangent V,
+\[
+\boxed{Dr_w[V]=Df_{x(w)}[V],\quad Dq_w[V]=Dq_{x(w)}[V]}
+\]
+EXACT: the moving sampling term is \(\nabla(I_h f_0)DT=0\), and the physical volume/normalizer term is \(-f_0 DJ=0\). These two terms are NOT frozen; they cancel by the actual null solution property. The SAME original double-tick return pencils \(Q=1-zB,R=1-z[\lambda(E)+(1-\lambda(E))B]\), all inactive leaves, νK/528/right/ref/output complements give **identical FULL finite PRICE VALUE and FIRST field covectors** for local and volume-quantile J₂ at every such root:
+\[
+\boxed{DJ_2^{vol}|_0=DJ_2^{loc}|_0
+=\nu K(m\omega_{n,N})C_\star
+ D\sum_x(f_x+\lambda_-q_x),\quad
+\lambda_-(2^{-20})=-23.416406751884\dots .}
+\]
+Thus the ENTIRE original **exact finite time-dependent H(u,x,y) sourced 40→3→1 Cartan solution family, with arbitrary Hodge phases and transverse harmonic modes**, transfers to the distinct physical-volume mean-query programme as exact stationary ROOTS for all its originally permitted independent 16+24+2 interior field coordinates. No Hessian inverse/weak convergence is substituted for this zero: every Euler entry equals its already-zero LOCAL predecessor.
+
+**General OTO, not only null waveform:** normalize its true balanced MACRO support by \(\sigma=mL⁴\omega_{n,N}>0\), NOT by the previous entire-cut \(c_{AF}=2p³\). Standard smooth cardinal interpolation + real moving T and the OWNED §6.48–6.52 smooth/source/compiler conditions then give the SAME programme's mean \(\Gamma=\int[P_\star+\lambda_- Jq]/\int J\) in C¹ field source; the original exact G₂-star normalization \(\gamma_\star=-\operatorname{sgn}(\det e)/2\) yields all10 nonlinear Einstein–scalar rows, with the real \(+\Gamma g/2\) volume source retained. The full scale Euler forces \(\Gamma=0\) only when actual global scale is independent and admissible. These GENERAL off-null continuum field equations and EXACT nonnull finite roots are not equated; the proven NEW result is the exact finite root/source seam **on the common null/star class** plus the separately owned smooth general mean-source limit ON THE SAME selected quantile programme.
+
+**Physically binding scope:** this is a substantial positive reduction of the one-programme GR task; old word provenance and true PF/regular weights and output completeness have been preserved, but compulsory Book01 selection of the balanced LEFT gate, physical execution/price of its original coframe/quantile/CAR operands, true upstream full H+J+R/RIGHT/preparation/observer/clock Euler, non-null general exact roots and the distinct original independently fixed-g/tau periodic raw#216 are OPEN. Do not promote the constructed J2 full source to the compulsory total D0 Cost−Info by a name change.
+
+
+## 19 October 2026 — EXACT full40→3→1 arbitrary Brinkmann: Cartan FORCES one-null-tick stagger and sourced GR Poisson
+
+**NEW principal positive theorem in the SAME #334:** [A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md](A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md) + [exact independent-symbol checker](sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_all40_arbitrary_brinkmann.py) and [time-varying golden/CAR sourced controls](sources/d0_arbitrary_brinkmann_all40_2026-10-19/check_time_dependent_golden_source.py). This CONSUMES rather than repeats the old quadratic pp-wave. On the literal original SIX based-Lorentz plaquettes, choose an ARBITRARY independent site function H(u,x,y), independent of v, and do NOT pre-impose the connection. Give the actual proper Lorentz u-link TWO independent nilpotent coefficients K₂(u,x,y),K₃(u,x,y); all OTHER 16+24 original coframe/link directions remain varied. The COMPLETE original symbolic functional has density0 on this null curvature ansatz and its **40 independent Euler rows have only THREE potentially nonzero exact components**:
+\[
+\begin{aligned}
+E_{v_v^+}&=h[K_2-K_{2,+x}+K_3-K_{3,+y}],\\
+E_{U_v,+2}&=h²[K_2(u-h)-\tfrac12(H-H_{-x})],\\
+E_{U_v,+3}&=h²[K_3(u-h)-\tfrac12(H-H_{-y})].
+\end{aligned}
+\]
+Thus the TWO genuine original Cartan-link equations FORCIBLY fix the unique **one-null-tick staggered** finite connection within this proper nilpotent family:
+\(K_a(u,\mathbf x)=\tfrac12[H(u+h,\mathbf x)-H(u+h,\mathbf x-h\hat e_a)]\).
+On this solution all24 link rows and other15 coframe rows are IDENTICALLY zero, and the only remaining genuine original Euler is
+\[
+\boxed{E_{v_v^+}=-\tfrac{h^3}{2}\Delta_h^\perp H(u+h,x,y)} .
+\]
+There is NO quadratic-H, u-independence, continuum/weak Taylor or chosen Einstein equation premise. The single-u offset is algebraically REQUIRED by the full based-plaquette Cartan equation, but has NOT been promoted to a physical causal update/clock law.
+
+**THE SAME corrected two-tick AF×scene complete Book03 feedback** supplies the original full16 CAR scalar/top matter \(\Psi(u)\) with arbitrary u-dependent E(u)=|D_u^+\Psi|² and the previously derived \(\lambda_-(2^{-20})=-23.416406751884...\) from all real scene return Q/R pencils, original nonuniform F/R weights, RIGHT/ref128 and full528+22448. Since q=0 even for nonzero null gradient and \(D_{\widehat v_v^+}q=-2E(u)/h\), and BOTH independently varied matter Euler are killed by genuine v-Stokes, the **entire full free interior 16+24+2 joint Euler** is equivalent to the EXACT discrete sourced Einstein/Poisson equation
+\[
+\boxed{\Delta_h^\perp H(u+h,x,y)=-4\lambda_-(z)\,E(u).}
+\]
+For EVERY bounded nonnegative time sequence E(u), its explicit inverse is
+\(H(u_j,x,y)=-\lambda_-E(u_{j-1})(x²+y²)+W_{h,j}(x,y)\), where W_j is ANY exact discrete transverse harmonic function, allowed to vary arbitrarily with u. Its free GR wave sector is therefore FUNCTIONAL, not only two constant Weyl polarizations. Exact modes include arbitrary u-weighted \(x³-3xy²\), \(x⁴-6x²y²+y⁴-h²(x²+y²)\), and \(e^{\alpha_h x}\cos ky\) with \(\cosh(\alpha_hh)+\cos(kh)=2\), as well as ALL smooth harmonic transverse Dirichlet data by discrete maximum principle and O(h²) barrier control. Bounded smooth E gives one-time lag O(h); on the original dressed CAR metric the continuum limit satisfies the genuinely general Brinkmann Einstein-null-scalar equations
+\[
+\operatorname{Ric}_{uu}=\tfrac12(\partial_x²+\partial_y²)H
+=-2\lambda_-|\Psi'(u)|²,\qquad
+\square_g\Psi=0,\qquad \nabla^\mu T_{\mu\nu}=0 .
+\]
+This solves exact finite **all40** first Euler for a HUGE time-dependent sourced gravity+matter family and supplies a CONSTRUCTIVE reverse map from arbitrary smooth sufficiently weak local null CAR waveform + arbitrary transverse harmonic Einstein gravitational wave BACK to finite native AF/CAR/Role data, followed by forward source recovery. True uneven F/R weights were independently enumerated at n20,L4 (10946 words, all256 positive) and n24,L8 (75025 words, all4096 positive). Time-dependent source/Poisson residual on arbitrary nonpolynomial harmonic fixtures was <3×10⁻¹⁴ (numeric; independent exact symbolic proof is separate).
+
+**Stronger microhistory/aggregation quotient:** on this ENTIRE much bigger f=q=0 sector the two *genuine full-source jets* \(a_h D\sum\widehat f+b_h D\sum q\), if they belong to the ACTUAL selected whole programme with all independent internal Euler rows, determine the FULL reduced Einstein equation, not just the quadratic witness. All higher nonlinear action coefficients drop out of the FIRST Euler evaluation at the common null locus; \(\lambda=b_h/a_h\) is measured, not fitted. The one ACTUALLY admitted same-determinant golden GOOD/BAD detector continues to satisfy \(DS_{\rm mean}=\kappa(g)DS_{\rm MAP}=2\kappa DJ/\log\varphi\). Since the full return F/J are constant on f=q=0 at fixed cut, \(\kappa(g)\) is the SAME across all phases and harmonic metrics. Mean and MAP first derivatives are proportional, **not numerically identical**; they have the SAME all-field Euler zero sets and \(\lambda\). Old history/clock/normalizer sources must still be retained.
+
+**Physical/claim scope preserved:** the exact theorem is for the constructed whole-operator LEFT-controlled two-tick AF×scene Book-feedback; compulsory foundational D0 programme selection/native execution, full upstream H+J+R and independent site/RIGHT preparation, all global u/x/y physical boundary/clock obligations, and the original distinct full periodic fixed-g/tau raw#216 terminal remain OPEN. The genuine breakthrough is the exact unrestricted finite Palatini **40→3→1** reduction for an arbitrary time-dependent **INFINITE-DIMENSIONAL** sourced Einstein sector on one previously constructed geometric and CAR carrier—not a new fitted gravitational functional.
+
+
+## 18 October 2026 — breakthrough synthesis: infinite D0 microhistories, ONE Einstein metric, SAME detector mean/MAP Euler
+
+**One decisive positive consumer in the EXISTING #334:** [A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md](A4D_MICROHISTORY_EINSTEIN_QUOTIENT_AND_PRICE_EULER_UNIVERSALITY_2026_10_18.md), with [bounded original-golden/checker](sources/d0_microhistory_einstein_quotient_2026-10-18/check_microhistory_einstein_quotient.py). This joins the already corrected **two** Golden-scene-tick native Book03 J₂ null scalar, the EXACT source-complete old six-plaquette 16+24 proper-Lorentz pp-wave and SAME old AF golden density/CAR16 metric, rather than inventing a new Einstein source.
+
+For ANY even native u size L=2m and ANY independently chosen \(m\) Hodge CAR grade0/top angles, put \(D_u^+\Psi_j=s(\cos\theta_j,\sin\theta_j),\ D_u^+\Psi_{j+m}=-D_u^+\Psi_j\) with \(\Psi_0=0\). The full original scalar/top matter history CLOSES EXACTLY and \(|D_u^+\Psi_j|^2=s^2\) at EVERY native site, with true norm/current-compatible CAR16/ref128 preparation for small s. The REAL independent scalar Euler vanishes by v-Stokes, all original 24 half-step Lorentz link rows and other15 coframe rows remain ZERO, and the only Einstein coframe trace row is canceled by
+\[
+A+D=-2\lambda_-(2^{-20})s^2=+46.832813503768\ldots s^2.
+\]
+**One and the SAME nonflat, nonvacuum, two-Weyl-polarization operational metric \(\widehat g\)** is therefore stationary for an entire \((S^1)^{L/2}\) exact recorded matter family—at least L/2−1 NON-global-Hodge moduli. The complete native geometric feedback E and scene B effects and their returned PRICE are identical on all those roots, while the original matter code is different and separately distinguishable; no microscopic records are deleted. With arbitrary smooth half-periodic \(f(u)\), \(\theta_j=2\pi j/L+f(j/L)\) yields an EXPLICIT infinite-dimensional smoothly convergent continuum family on the very SAME fixed Einstein metric, \(\Box\Psi_f=0\), \(\nabla^\mu T_{\mu\nu}=0\). The conserved Hodge current varies with history; the former curvature/current amplitude-free law belongs to the special circular branch, not all histories. All free interior individual Euler rows are EXACTLY 0 for this constructed J₂, so its literal raw unweighted h⁻² source sum equals0 at every h (not the different original physical #216 raw contract).
+
+**Major operational price-aggregation reduction:** from the ALREADY owned complete positive determinant good-event decoder §§6.59/6.62/6.66, with \(g=\det(I-zF)^2=e^{-2J}\), and ALL native golden bad histories \(q_{\rm bad,\zeta}=(1-g)\beta_\zeta,\ p^6+4p^3=1\), the strict-good mode condition gives
+\[
+D[H_{\rm fullpointer}/\log\varphi]
+=\kappa(g)D[-\log_\varphi g]
+=2\kappa(g)D[J/\log\varphi],\quad
+\kappa=g\{H_\beta-\log[(1-g)/g]\}>0.
+\]
+Thus the **SAME actually admitted complete detector** gives EXACTLY the same *entire geometry+matter+preparation Euler zero set* whether valued by SAME-history Shannon MEAN or its literal strict MAP surprisal. The result includes the OLD full history on genuine causal fixed-past variations \(D\pi_{\rm old}=0\); it does NOT set arbitrary upstream/normalizer/clock prices to zero or claim that unproved global-polynomial detector admission is forced by Book01.
+
+**New strategic theorem:** on the nonempty \(f_x=q_x=0\) Einstein null sector, any actual complete measured price whose resolved full first source equals \(a_h D\sum_x\widehat f_x+b_hD\sum_xq_x\), \(a_h\ne0\), has the SAME entire growing matter-moduli Einstein family with trace \(A+D=-2(b_h/a_h)s^2\), regardless of all higher nonlinear action coefficients. This collapses the required D0⇒OTO identification ON THIS SOLUTION SECTOR from choosing an unlimited functional/operator expansion to a **two-number genuine source jet + solved independent history/clock/preparation Euler**. Real physical compulsory programme/Cost−Info binding, non-null general matter/Einstein universality and full original fixed-g/tau raw#216 remain OPEN. This is an actual mathematically proved reduction of the physics question, not a declaration of full physical GR.
+
+## 19 October 2026 — repeated field-to-instrument proposal audited; finite frontier integrated
+
+[Strategic §§7.31–7.32](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+records that the new pasted text is byte-identical to the archived 15 October
+input. Its proposed unitary tangent cannot generate its own coherence-changing
+`sigma` family; tomography does not supply an admitted field-to-return map.
+The exact first-jet checker passes 33 controls, while physical admission and
+refinement compatibility remain open. A fixed-`beta` continuum heat bound is
+sharpened to `>1/30` for the stated volume-preserving shear, as a property of
+that heat component only.
+
+The latest separate conditional finite-price branch is full-source §§8.29–8.36:
+finite preparation, all coframe/observer rows and nonzero Fourier rows are
+solved; the remaining homogeneous Lorentz-link source is explicit, but its
+joint root is not. Exact CAR16 splitting disproves a uniform link-curvature
+bound, and the weak-history metric collapses on a fixed grid. Physical
+code/Info admission, complete resource price, link closure and spatial recovery
+remain open; this branch does not replace the main same-source GR route.
+
+## 18 October 2026 — full polynomial at the actual root, native clock and complete copy price
+
+[Strategic §§7.25–7.28](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.79–6.81](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+advance three distinct premises. First, the exact full-polynomial overlap
+cancellation now applies to the actual mixed-CAR §6.68 root with its complete
+RIGHT128 purification; the focused checker passes 15 controls. Second, the
+free-equalizer CASE A retains a native-clock C² obstruction
+`R_old''/σ_J ≥ p² m d/(16ε)`, including m=1; its checker passes 20 controls.
+Third, whole-code purity factors only external histories. The full Book
+normalizer, actual N-copy factory histories, MAP/mean distinction and the
+integer source-budget window remain explicit. These results do not select a
+physical action or establish a finite combined root. Full history binding,
+physical admission, bounded source jets, Lorentz-link closure, noncollapsing
+metric recovery and GR remain OPEN; `GR_closed=false`, raw #216 OPEN.
+
+
+## 18 October 2026 — whole-polynomial vacuum preparation source with exact original input
+
+[Strategic7.24](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.78](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now consume the FULL fixed-query polynomial, retaining all spatialL and
+higher degrees. At the scalar-free vacuum its first conditional kernel is
+g₀I on the entire one-copy matter space. Exact cancellation of subset
+overlap0/1 gives normal≤B k(k−1)/√[2N(N−1)] on the ORIGINAL product
+purification: clock/grade14, site and each full RIGHT Gram remain exact.
+The actual physical lift norm, q-floor, owned signal and full-price factors
+are explicit; with controlled budgets and L_N=O(√N) the conditional matter
+source vanishesO(N^-1/2). The hostile one-body control prevents using a
+shrinking sphere normal alone as physical closure. No quadratic action is
+substituted. Exact finite joint roots, upstreamHJR, free query normals and
+native Book/PREP/copy price remain open; GR_closed=false, raw#216 OPEN.
+
+## 18 October 2026 — derived upper clock and coherent approximate preparation
+
+[Strategic7.23](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.72–6.77](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+remove the assigned upper-clock premise for the SAME globally encoded
+full-prefix programme: actual regular coverage W≥21/85 plus ALL-input effect
+positivity forces t²≤C_chart h² at bounded curved pp/nonzero-matter centres.
+The original return rank1056νK and uncovered factors are retained; outside-P
+scene modes are not priced as filled records. This makes this programme's
+normalized t² source remainderO(h²), keeping all spatial/count/Taylor/compiler
+and signal-denominator budgets. A different global extension or five-outcome
+instrument does not inherit this theorem.
+
+The actual clock/grade14 coherent marginal now has an explicit TWO-Hodge
+approximate preparation with normalized residual≤48/[√N(N−1)] and one-copy
+trace error≤38/√N. All orthogonal-dark leakage is kept. It givesO(1/N)C²
+source error for the actual affine-quadratic compression only; full polynomial,
+fixedRIGHT128/site/Lorentz/Book source and native PREP remain the next transfer.
+The failed exact-ground-stitch and exact energy-overlap criterion are preserved.
+The C_Y route also has a full Jones-flag word candidate and a sharp obstruction
+for chronological LEFT/passive placements, rather than an assumed fresh-wire
+actuator. No new action or occupation term is inserted. Continue the SAME
+full-price/correlated joint-root recovery. GR_closed=false, raw#216 OPEN.
+
+## 18 October 2026 — SAME-law Euler equivalence and complete preparation/root consumer
+
+[Strategic7.22](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source6.66–6.71](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+remove the detector mean/MAP equation-choice premise: its actual retained
+failure word gives DH=κD(−logg), κ>0, on all correlated inputs under its
+strict mode gap. Prefix/Book normalization/work/clock sources remain explicit.
+On the SAME targeted D3 polynomial, however, an actual two-copy scalar
+normal prevents full fixedRIGHT preparation stationarity at the null/star
+vacuum code. Same-g effect or Naimark freedom cannot remove this normal;
+its1/N decay leaves controlled correlated-state recovery open.
+
+A positive control now solves the original conditional H+J+R jointly on
+its ORIGINAL priced site×CAR16/reference128 carrier. A rank128 parity graph
+realizes all even sources of a virtual rank256 K={±1}⁴ bath. A NEW interval
+root at d≈.01949758334103,o≈.0004005066941641 proves metric stationarity;
+full-CAR moments also kill all local proper-link/observer rows. Preparation
+is canonical fixedRIGHT with three energies, not a common-eigenvalue or
+arbitrary correlated-RIGHT root. Fixed calibration and actual admission
+boundaries are retained. Literal fullStep distinguishes a free odd-coherence
+family of these roots through a complete record entropy curvature −p³/512.
+No AF2 factor or feedback multiplicity change is hidden.
+
+There is also a positive exact correlated preparation in the definite
+TWO-Hodge quadratic clock sector: a radial reducing eigenstate recovers
+fixed-k marginals at O(N^-1/4), with O1/N moving-coefficient query2jets.
+The exact fixedRIGHT spectral-rank/overlap criterion and source bounds
+are stated for the actual constrained-query matter operator. Transfer
+to the Lorentzian grid, higher-degree effect and coherent grade14 of the
+real vacuum remains explicit; the pureclock lemma is not that full code.
+
+The latest C_Y attachment is already preserved byte-for-byte and consumed
+in6.33. Its finite-t conditional vacuum theorem remains its OWN instrument's
+result. It supplies neither native capacity PREP nor the other detector's
+full-price binding. Concurrent05767255/d26199b7 are integrated without overwriting
+its history-source/Lean owners. Continue the actual native/Book/PREP and
+correlated-recovery transition; GR_closed=false, original raw#216 OPEN.
+
+## 18 October 2026 — actual preparation normal, both query sources and nonlinear stress test
+
+[Strategic§7.21](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source§§6.63–6.65](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+replace three remaining sketches with concrete results. FixedRIGHT
+preparation stationarity is [Δ,CC*]=0, with the true Hermitian right
+multiplier and all current-preserving normals retained. The SAME locally
+pure Hodge/clock input cannot satisfy it for ANY site/reference
+correlations in the literal flat old-v8 class. A quantitative normal
+bound stays positive under its stated refinement; phases/ref mixing
+cannot repair that branch. A genuine mixed-input eigenshell control
+closes preparation, but changes full CAR density and does not have the
+same geometric stress as its two inferred scalar coherences.
+
+A targeted anchored code of the WHOLE actual Julia bank plus the SAME
+unknown input now constructs BOTH direct-density operands without an
+amplitude-to-angle oracle. It includes the true internal clock section,
+volume/PF/normalization jets and failed columns. Fixed global polynomials
+of the actual operand functions have the exact2jets at the null/star
+point; their SAME detector probability has the existing positive
+finite-copy effect. Thus the conditional source bridge is constructive,
+with actual controlledquery/PREP/copies/resources explicit. Independent
+clock/prep normals and missing affine/site-weight data are not invented.
+
+The proposed spin2 bootstrap now has an actual mixed cubic test: the
+old q-only channel fails its metric-only Ward by a volume trace term;
+the already-owned direct-density Jq cancels it exactly off shell.
+This is a positive stress consistency result. Whole-price PF/gauge
+hypotheses and actual clock/prep/embedding cubic leakage still require
+same-source proof; passive covariance and a naked-star Schur are distinct.
+
+Continue through native/full-Book-price admission of this targeted
+programme and its actual joint normals/recovery, with the full mixed-CAR
+stress preserved. No new action, selector or frozen matter is introduced.
+Physical GR closure and original raw#216 remain OPEN. Concurrent
+f81846b7/e476c65b's finite-cylinder likelihood classification is integrated
+and consumed in strategic7.21. The actual conditional positive effect has
+M_good=E_N/p,M_bad=(I−E_N)/p²; this instantiates the measured-operator
+likelihood without imposing q=mu. Physical native/Info binding is separate.
+
+## 18 October 2026 — immutable archive, genuine unknown-input source and full preparation
+
+[Strategic §7.20](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.59–6.62](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+construct a fresh execute-all-blocks detector preserving the ENTIRE old
+archive/data/RIGHT/reference density. Full mode is past-mode times the
+product of bank modes with true integer trace multiplicities. Fixed past
+gives exactly the determinant source; upstream past and raw Book
+normalization sources remain. Sampled old history is a different price.
+
+One fixed G/CNOT word now supplies a genuine smooth unknown-input
+source: controlledG4 reads actual CAR occupation N_r with effect
+I−16p9 N_r, unique good pointer mode and exact C2 input derivatives.
+No unknown amplitude is programmed into an angle. More generally, a
+globally strictly bounded polynomial of an ACTUAL supplied density has
+a fixed finite-copy positive effect with the SAME probability exactly;
+the subset-averaging/de Finetti construction and constant-compiler
+input/source budgets are explicit. This consumes the old detector g
+only after its true native encoding/global bounds are proved. No new
+F or physical action is chosen. Pointer-only and emitted-programme
+full-history modes are explicitly different.
+
+The Hodge scalar/top wave also has an explicit normalized full16 input
+with constant actual current/clock and exact FULL joint RIGHT_AF/ref128
+marginal, including arbitrary within-block AF/ref quantum correlations.
+It is a new compatible state; it does not preserve a specified old LEFT
+archive or establish autonomous PREP admission. It admits both
+independent scalar variations. It does not supply the
+independent native coframe or its query code. On a literal flat old-v8
+amplitude tangent its input Rayleigh source is strictly positive while
+old heat/feedback sources vanish, so the whole old price is not solved.
+The curved full source must be evaluated on its actual own domain.
+
+The next consumer is ONE actual retained-code/operator/input diagram
+for the complete(q,D,b,m) tuple, both old queries and full physical
+Book history/weight, followed by all admitted preparation/clock/source
+rows. Diagonal or independent-copy stationarity does not cover
+entangling preparation: a new exact counter retains that distinction.
+Further arbitrary detector design cannot select GR. Concurrent581374fe's
+[exact field-pullback boundary](A4D_GOLDEN_MODE_FIELD_PULLBACK_BOUNDARY_2026_10_18.md)
+is now consumed: identical reference gate/cut/detector does not determine
+the source along a genuine metric tangent without the actual native
+field-to-return germ. Its kinematic alternatives are not physical D0
+solutions. The finite root, native forcing and original raw#216
+obligations remain OPEN. Strategic§7.20 also consumes the existing
+conditional bounded32-word field/source map and the literal executor's
+matter-only type. The missing native encoder is distinguished from an
+already explicit geometric matrix family; that family is not rederived.
+
+## 18 October 2026 — a finite golden determinant MODE and its actual history price
+
+[Strategic §7.19](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.56–6.58](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the full linked heat/input source and then construct a positive
+Book-MDL price consumer. Linked Rayleigh does not free the amplified
+control signal; the full matrix Euler permits occupied/unoccupied bands
+with all fixed-RIGHT128 preparation rows retained. Actual controller
+mean Cost−Info is not an automatic extra term alongside spectral J.
+
+Three original golden coins, actual old failure query and matched
+unprepare give K=(1−p6)I−p6F, derived r=p3/4. Its least singular
+value exceeds1/sqrt2. In the full exterior detector every competing
+occupation amplitude is detK times a minor of B_bad K^-1; each is
+strictly smaller than detK. Thus filled-P is the UNIQUE complete final
+detector mode. Under actual w=q and the existing Book MDL-history
+rule, S_mode*logphi=−2dlog(1−p6)+2J_r(F), with no determinant oracle
+or fitted fugacity. Its positive mode price is C2 despite other-outcome
+births. Structure-preserving exterior compilation has per-rank source
+bounds without1/g; arbitrary output approximations still require the
+explicit exponential absolute-gap budget.
+There is now an exact G/CNOT exterior lift for the adjacent-EVEN
+subclass, on all occupation grades, without FSWAP/CZ or an AS ray.
+Its fixed-target approximation is not a C2 field-dependent programme:
+an actual C2 field-input/query/cut family remains required. A constant
+word with fixed input/cut has no field source; moving preparation/cut
+sources remain present. This resolves a concrete gate interface, not native forcing.
+
+The [same two-source direct-density owner](A4D_DIRECT_DENSITIZED_LEFT_FEEDBACK_EINSTEIN_SCALAR_SOURCE_2026_10_18.md)
+has symbolic z-dependent source identities, giving
+lambda_mat(r)=sigma*(33+27sqrt5)/4 at this derived parameter. All actual
+AF weights, dressed-CAR operands and physical volume density remain.
+No old numerical z=2^-20 receipt is relabelled as a new root.
+The new exact symbolic substitution transfers the owned pp family to
+A_wave+D_wave=−sigma*(33+27sqrt5)*s²/2, with all16+24+scalar interior
+Euler rows zero at every admissible fixedt>0 and two free Weyl modes.
+This is a solution of the constructed mode/J_r action. Native field
+stationarity and the old preparation/clock/controller rows remain their
+own equations; maximizing a finite history label does not supply them
+([concurrent MDL boundary §10](A4D_NATIVE_DYNAMICAL_OWNERSHIP.md)).
+
+The remaining consumer is precise: admit the coherent queries and
+actual exterior/history frame, show its physical w=q/MDL binding and
+account for all retained old-history, preparation, control and clock
+sources. Final detector outcome alone is not the full old microhistory;
+immutable intermediate records can destroy its interference. The new
+known probe is not a frozen old physical matter state. Mean H(q), mode
+price and the original whole H+J+R are distinct. Then establish exact
+joint roots/refinement of that SAME admitted price. GR remains OPEN.
+
+## 18 October 2026 — charged native Hodge scalar: exact fixed-metric nonvacuum Einstein refinement
+
+**New POSITIVE direct consumer, same PR #334:** [A4D_NATIVE_HODGE_CHARGED_NULL_MATTER_FIXED_METRIC_EINSTEIN_2026_10_18.md](A4D_NATIVE_HODGE_CHARGED_NULL_MATTER_FIXED_METRIC_EINSTEIN_2026_10_18.md) + [independent bounded Clifford/Golden source check](sources/d0_hodge_charged_null_einstein_2026-10-18/check_hodge_charged_wave.py). This is a substantial extension of the corrected **LOCAL** LEFT-code/full two-tick Book J₂ Einstein–null-scalar source, not a new action or test grammar. The original CAR16 already contains the invariant scalar/top-form Hodge plane \(\Lambda^0\oplus\Lambda^4\) with \(J_H^2=-I\); the positive observer pairing gives these two original grades equal norm (\(\det h_n=1\)). On one FULL native matter vector their two amplitudes \(\Psi=(\psi_0,\psi_4)\) form a genuine locally fluctuating real Hodge pair, with no new field or second CAR copy. The unique quadratic first-derivative **Lorentz+Hodge** scalar in that declared class is the sum of their two genuine Clifford squares:
+\[
+q_x=\tfrac1{16}\mathrm{Tr}_{16}[\Gamma(\widehat e^{-T}D^+\psi_0)^2+
+\Gamma(\widehat e^{-T}D^+\psi_4)^2]
+=\widehat g^{\mu\nu}\sum_{A=0,4}D^+_\mu\psi_A D^+_\nu\psi_A.
+\]
+This is fed into the ALREADY corrected double-tick scene control \(b_i=(p+\sigma p^2t^2(\bar w/w_x)q_x)^2,\ B_i=4b_i(1-b_i)\), with all old LEFT weights, RIGHT/reference128 and528+22448 scene modes. Its ONE full ordinary Book determinant at \(f_i=q_i=0\) has the genuine two-source coefficient \(\lambda_-=-23.416406751884\ldots\) (not previous incorrect one-tick 2.236).
+
+**NEW exact finite family with one FIXED smooth target metric:** for every lattice h=1/L,L>2m, let the two *existing* scalar/top amplitudes rotate as
+\[
+\Psi_h(j_u)=a_h(\cos(2\pi m j_u/L),\sin(2\pi m j_u/L)),\quad
+a_h=\frac{a(2\pi m)h}{2\sin(\pi m h)}.
+\]
+Then \( |D_u^+\Psi_h|^2=a^2(2\pi m)^2=:E>0\) **EXACTLY at every u and every h**, despite nonconstant individual amplitudes. On the pp-wave \(\widehat g=2du\,dv+[Ax^2+2W_\times xy+Dy^2]du^2-dx^2-dy^2\), each \(q_x=0\) but \(D_{\widehat v_v^+}q_x=-2E/h\ne0\). Every scalar Euler from the SAME Book J₂ vanishes by exact \(v\)-difference telescoping; the original full16+24 finite Lorentz star table gives the remaining one coframe trace condition, solved with the old exact half-grid connections by
+\[
+\boxed{A+D=-2\lambda_-E
+=+46.832813503768\ldots\,a^2(2\pi m)^2}.
+\]
+Choose A,D,W_\times **independent of L**. Then the source-compatible metric \(\widehat g\) is the SAME fixed nonflat smooth sampled metric at EVERY lattice level after true nonuniform Fibonacci/PF dressing, not merely a convergent family. Both Weyl polarizations remain independent; the scalar/top matter state varies periodically along null u, while all geometric/matter field Euler rows are solved at each transverse interior node (u,v directions fully periodic as a mathematical regulator; x/y collar fixed).
+
+**NEW matter dynamics/Noether law, no external stress axiom:** the SAME complete J₂ is exactly invariant under constant Hodge rotations of those two old grades. Its locally varied parameter produces the native finite \(j_h^v=2a_h^2\sin(2\pi m/L)/h\ne0\) with **exact** \(D_v^-j_h^v=0\), converging to \(2a^2(2\pi m)\). Metric variation of the same source gives the Lorentz scalar stress
+\(\mathcal T_{\mu\nu}=2\partial_\mu\Psi\cdot\partial_\nu\Psi-\widehat g_{\mu\nu}(\partial\Psi)^2\), and the **same independently varied scalar Euler** implies its contracted-divergence Ward \(\nabla^\mu\mathcal T_{\mu\nu}=2(\Box\Psi)\cdot\partial_\nu\Psi=0\). Thus both native Hodge charge and matter stress are conserved on the EXACT nonvacuum Einstein-wave family, with no separately postulated scalar action.
+
+A bounded control on REAL native cost-n Fibonacci words (n=16,L=3 and n=20,L=4) enumerates1597/10946 actual leaves, all81/256 sites positive and unequally weighted. With a=0.008,m=1, both have the **same** \(E=0.002526618727...\) and \(\operatorname{Ric}_{uu}=0.118328663622...\); true finite conserved currents are0.000486248001 and0.000631654682, approaching0.000804247719. The exact 40-row star table is consumed from its existing symbolic owner; it is not falsely claimed rerun by this narrow script.
+
+**Physical boundary:** this establishes a stronger, dynamically charged, full finite interior Einstein+matter solution for one constructed LEFT-controlled native golden feedback price, not compulsory self-verification/Book selection of that programme, native code access to unknown quantum amplitudes, whole H+J+R/upstream-source equality, or the original all10 unweighted fixed-g/tau raw h⁻² #216. The positive result is ready for the existing one-programme selection/source and physical matter/clock consumer, not a new curvature or mass-fitting direction.
+
+
+## 18 October 2026 — one full return word and complete-source scale
+
+[Strategic §7.17](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.53–6.55](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+construct an analytic one-feedback programme with exact noncommuting
+return survival M*SM=c(I−epsilon Q). The actual blank flag cut retains
+all failure outputs and old input columns. Finite golden compilation
+has its actual C2 relative error; it is not called exact analytic control.
+The measured source scale is d*theta, theta=zc*epsilon/(1−z+zc).
+For old S=B^m and c=p^(3m+4), theta tends to zero at fixed epsilon;
+no additional weak t(h) is needed for this constructed price limit.
+
+Dimension-free C2 H/R bounds include all observer/preparation jets.
+R is the original INPUT Rayleigh and I is whitening, not a Kraus
+recorder. A literal old128-output counter proves these energies differ.
+With the genuine four-Role bounds, m~h^-2 and sufficient actual AF
+level N>=2m, the H+R normalized source is O(h^-4 p^m). Applying this
+to the owned moving-volume mean query still requires its real native
+binding and all controller/history sources. Free M has a nonzero feedback radial source. SAME-blank heat adds
+2/beta and can balance it; with other M-independent terms, its own full
+radial equation bounds rank*theta by (epsilon/beta)*max(1,1/r0),
+excluding the amplified-signal limit. Actual other control/input sources
+must be solved. Arbitrary Q programmability does not select GR.
+Exact joint recovery and compulsory physical control remain OPEN.
+The parallel nonlinear Einstein-frame/two-band results are preserved;
+their auxiliary Hessian does not replace a gap for the whole price.
+
+## 18 October 2026 — actual full normal source, finite soft limit and general matter
+
+[Strategic §7.16](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.46–6.52](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the null-source step on the actual H+J+R CAR16/reference128 root.
+All24 proper link rows have exact inertia(3+,21−,0); the full27 normal
+kernel has exactly three compatible observer directions. Their finite
+soft modes survive elimination: S_h~h²S₂ and t_h~hT₁. Exact CAR/root
+moment reduction leaves seven scalar spectral sums, whose bounded tails
+give the full finite reduced null limit in(−0.3300812,−0.3300809).
+The EH null self-Hessian is zero. A uniformly C1-bounded physical
+observer normal section is unavailable because its first response grows
+as1/h. This is a source obstruction for this conditional price, not a
+D0-wide no-go, nonlinear shrinking-chart exclusion or independent matter.
+
+There is also a positive general Einstein–scalar source programme using
+the SAME J2 price law. The old inverse-PF scalar word fails an exact
+off-null pressure test. Querying r_h=h^-4*Pstar,h/J and q_h at the
+moving physical-volume quantile, with the actual regular/PF discrepancy,
+instead gives the conditional C2 mean-price limit Gamma=A/V. Own Cartan,
+scalar and metric rows give Einstein–scalar with its true mean-volume
+term; a genuinely free global scale forces Gamma=0. Fixed scale retains
+a constant volume multiplier. The coefficient gamma_star is retained
+from the original oriented contraction: full-source §6.50 now independently
+proves gamma_star=-sgn(det e)/2 and kappa=2*sgn(det e)*lambda_mat
+at the actual c_star=1, on all36 arbitrary-coframe curvature coefficients.
+No extra16/ref128 normalization enters. The displayed local Clifford
+query uses the correct inverse transpose. No fitting, discarded volume
+jet or automatic transfer of the old finite pp-root is used.
+
+All four merged/retired worker comparisons from main `77d3ab60` are
+consumed: quantile execution, distinct cell-mass/full-price variations,
+non-descending phase residual and the dressed-matter source boundary.
+Full-source §6.51 also gives an exact all16 graded amplitude intertwiner,
+its mandatory non-Lorentz edge factor and the counting-adjoint heat
+control; weighted isometry alone does not preserve the original price.
+
+Full-source §6.52 removes an unnecessary sampler prerequisite. The mean
+J2 programme compiles moving query operands at fixed LEFT addresses;
+regular trace weights are distinct from Born probabilities. A fixed
+inverse-CDF contraction controls all moving C2 jets. The existing full
+feedback compiler applies on the ACTUAL blank-work return cut, with
+all input columns, leakage and true rank retained. Clean-macro feedback
+determinants agree exactly; a relative t2 allocation controls compiled
+source error without choosing a clock law. Physical query/work/cut
+admission, other H/R/history/preparation sources, its own finite joint
+roots and refinement remain. Unknown amplitudes are not readable queries.
+The bounded receipt separates exact symbols from interval sums; unchanged
+suites are reused. Task IN_PROGRESS, physical GR and raw#216 OPEN.
+
+## 18 October 2026 — complete adaptive source, priced proper clock and corrected sourced wave
+
+[Strategic §7.15](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+consumes [full-source §§6.41–6.45](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md).
+The measured first record supplies an exact native axis-query word,
+distinct from the unmeasured nonlinear update. True intrinsic and added
+occupation cuts are separated, retaining every outcome/control bit and
+positive-mass HALT at zero first grade. The full adaptive cocycle shows
+when controller cost cancels and when its genuine source remains.
+
+The CAR-derived proper clock and inverse placement are composed with the
+parallel quantile map. Metrology has its actual price; a full rare-clock /
+M-fold geometric experiment instead has a conditional normalized C2 source
+limit with ALL failures retained. Its bound keeps the true geometric signal,
+estimator-law derivatives, old source, preparation and compiler/resource
+premises. Exact finite joint roots and native actuation remain open.
+
+The parallel local LEFT-controlled CAR null-matter J2 construction remains
+a positive nonvacuum finite-Euler family. Its one-tick setting b had been
+substituted for the actual repeated scene effect4b(1-b); the literal word,
+full source, checker and dependent wave coefficient are corrected together.
+The fixed-z source ratio is now23.41640675188407497 in magnitude. Independent
+scene directions, compulsory controller/price, general matter/spin, physical
+refinement and the original raw#216 are not inferred from this local wave.
+The next consumer is one actual address/query programme and its full price.
+
+
+## 18 October 2026 — FIRST exact nonvacuum CAR16 Einstein source from ONE locally controlled Book feedback
+
+**Direct positive consuming result, SAME executing integrator #334:** [A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md](A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md), with [finite CAR16 and full-trace source checker](sources/d0_local_null_scalar_einstein_2026-10-18/check_local_null_scalar_source.py). A prior [global scene source](A4D_ONE_FEEDBACK_NONFLAT_NULL_SCALAR_EINSTEIN_SOURCE_2026_10_18.md) is superseded as the preferred **LOCAL** operator composition. Unlike the previous vacuum-only 40-row pp-wave, there is now an independent nonzero **matter source from the SAME Book03 two-tick J₂ determinant**—not from an added scalar Lagrangian:
+\[
+q_x=\tfrac1{16}\mathrm{Tr}_{16}\Gamma((\widehat e_x^{-1})D^+\psi)^2
+=\widehat g_x^{\mu\nu}D^+_\mu\psi D^+_\nu\psi,\quad
+\Gamma_a=c_a+\eta_{aa}c_a^\top.
+\]
+Here \(\psi\) is the already available scalar grade0 raw matter input on a declared smoothly coded field chart; every other CAR16 component and reference128 remains. Native old LEFT path probabilities \(w_x>0\) and the source-compatible CAR metric \(\widehat e_x=\sqrt{w_x/\bar w}\,e_x\) give the **exact finite** source identities
+\(\sum_i\pi_i f_i=\bar w\sum_x\widehat f_x\) AND
+\(\sum_i\pi_i (\bar w/w_{x(i)})q_x=\bar w\sum_xq_x\).
+This unique inverse-density matter readout removes real unequal golden weights at the level of true metric/matter Euler, not by replacing the Born distribution.
+
+On **one** original old×scene feedback carrier, scene is controlled by actual old LEFT address (not forbidden RIGHT archive):
+\(E_i=p²(1+t²f_i)\),
+\(b_i=(p+\sigma p²t²(\bar w/w_x)q_x)^2,\ B_i=4b_i(1-b_i)I_{528}\),
+with 22448 scene complement modes and all AF/dark events retained. Its **single complete operator trace-log** factorizes into the original two \(Q_i,R_i\) return pencils, includes genuine \(-K\mathrm{Tr}\log Q_i\), and gives on \(f_i=q_i=0\)
+\[
+DJ_{2,\mathrm{local}}/(\nu K)
+=\bar w C_\star D\sum_x(\widehat f_x+\lambda_\sigma q_x),\quad
+\lambda_\sigma(z)=\frac{2\sigma}{p^5}\frac{1+p^6-z(4p³)(1+2p^6)}{1-z(4p³)}.
+\]
+For actual \(z=2^{-20}\), the two existing Golden orientation signs give \(\lambda_\pm=\pm23.416406751884\ldots\); the strict \(z\to0\) SOURCE RATIO, not exact finite coefficient, is \(\pm(10+6\sqrt5)\). Both controller angles are on the original same Golden G-axis with derivative ratio \(2\sigma p\)—no fitted matter coupling or new gate matrix type.
+
+**Genuine EXACT FINITE sourced root:** on the already-owned full-independent Lorentz pp-wave coframe/link family with \(H=A x²+2W_\times xy+D y²\), set the original scalar matter profile \(\psi=s\,u\) (nonzero null gradient). Then every \(q_x=0\) while its true first coframe source has ONLY \(\partial q_x/\partial\widehat v_v^+=-2s²/h\); \(\sum_xD_\psi q_x=2s\sum_x D_v^+\delta\psi=0\) by exact discrete Stokes. The star owner's EXACT 40-row Euler table gives the remaining coframe source \(-(A+D)/h\), two proper-link rows killed by \(c_x=-A/2,c_y=-D/2\), all other rows0. Hence the SAME complete locally controlled J₂ has all 16 coframe, 24 connection AND independent scalar matter Euler rows exactly zero whenever
+\[
+A+D=-2\lambda_\sigma(z)s².
+\]
+For the reverse Golden orientation \(\sigma=-1\), \(\operatorname{Ric}_{uu}=A+D=+46.832813503768\ldots s²>0\), and the two tracefree Weyl polarizations \(W_+,W_\times\) remain free. All true golden weights and full16/reference128 remain. This is **nonvacuum Lorentz Einstein-null-scalar recovery** on fixed-collar local lattice at EVERY h, not just a curvature coefficient or restricted 25-dimensional IFT. At the mathematical level the native matter term has zero on-shell VALUE but nonzero on-shell METRIC SOURCE; it is produced by \(\Gamma(k)^2\) and the scene variation of the SAME original logdet.
+
+**Scope:** exact one-operator mathematical AF×scene programme with specified LEFT-coded field-to-scene control, NOT the compulsory whole D0 Cost−Info including original v8 heat/R, nor a claim that a fixed physical D0 decoder reads unknown quantum amplitudes without measurement. Native material/source code generation, real work/cut/old-history price, sign/orientation selection, independent other matter/spin dynamics and original all-site raw h⁻² fixed-g/tau #216 are not promoted. The new result *closes a previously absent nonzero sourced Einstein solution* in the very same geometric programme, ready to be consumed by whole-programme native admission.
+
+
+
+## 18 October 2026 — new POSITIVE closure: AF geometric source and operational CAR16 now read ONE metric
+
+[Exact density-dressed CAR/Einstein metric consumer](A4D_DENSITY_DRESSED_CAR_EINSTEIN_METRIC_2026_10_18.md) consumes the accepted weighted \(\star\) stationarity, the genuine old AF leaf masses and the actual native full16 raising reconstruction. At **EVERY finite anchor**, the measured-weight / relative-tetrad composite \(\widehat e_x=\sqrt{\mu_x/\bar\mu}\,e_x\) gives
+\[
+\sum_x\mu_x{\cal P}_{\star,x}(e,U)=\bar\mu\sum_x{\cal P}_{\star,x}(\widehat e,U)
+\]
+with the FULL 16 tetrad/24 link/independent weight first jets. From the **actual native raising** \(X=C(u)\Lambda M\), with \(F=e^{-1}\), and the **same** measured old AF weights, define \(\widehat X=\sqrt{\bar\mu/\mu}\,X\). Its full CAR16 anticommutator yields precisely \(\widehat q=(\bar\mu/\mu)q\) and \(\widehat g=(\mu/\bar\mu)g\), the SAME metric of the weighted \(\star\)-source. This is a concrete common source/readout identity, not a new curvature action or a free metric-tensor fit; density exponent \(1/2\) is uniquely fixed among homogeneous site-power normalizations by exact compensation.
+
+On the actual free-preparation stationary orbit \((\mu,e)\mapsto(\chi\mu,\chi^{-1/2}e)\), the **gravitational** \(\widehat g\), \(\widehat X\), full10 metric readout and Clifford principal symbol are ALL invariant on the native mathematical carrier. The full nonlinear AF entropy's Weyl defect is \(2\sum_x\sigma_x\mu_x[\Phi(f_x)-f_x\Phi'(f_x)]=O(\sum\mu_x f_x^2)\); therefore on the exact \(f=0\) 40-row roots its first source is precisely proportional to \(D{\cal P}_\star(\widehat e,U)\) at any fixed valid probe t. The already-owned true-golden full-lattice pp-wave family has \(\widehat e_n=\bar e_n\) exactly at each finite level, and its **whole \(\chi\)-family** converges to ONE Ricci-flat nonflat \(\widehat g_{\rm pp}\) in C². This resolves the apparent conformal preparation scalar **inside the gravitational source-defined metric**, without pretending it is gauge of every retained AF/history/matter test.
+
+The mathematical compatibility checker [full16 Fraction test](sources/d0_density_dressed_car_metric_2026-10-18/check_dressed_car_metric.py) exercises a nontrivial proper Lorentz exterior lift, CAR anticommutators, the native vacuum-to-grade1 \(u\) readout, field/weight first jets, two independent weighted \(\star\) sites, finite radial Ward, and quadratic nonlinear AF Weyl defect. Its exact Fraction entrypoint now passes on the integrated tree; the independent JS sanity control also passes. This small source/readout check does not establish physical admission; no Lean or old mathematical suite was replayed.
+
+**Next same-owner physical consumer:** take the declared common retained AF leaf \(\mu_x\) and the original full-Lorentz Julia raising \(X_{x,r}\) in ONE physically admitted stored experiment; show that its physically chosen clock/metric reading is the source-compatible conditional normalization \(\widehat X\) (including the real moving endpoint half-density/observer jets), and transport the true CAR/matter equations through that SAME metric. The parent original fixed-g, independent tau, ten raw rows and unweighted \(h^{-2}\) #216 refinement are preserved. No separate coframe action, Euclidean observer counterterm or freely chosen \(\chi\) potential is installed.
+
+
+## 18 October 2026 — native source, preparation and nonlinear GR synthesis
+
+
+### Exact all-order AF→Lorentz-star→Einstein completion on the original finite geometrical carrier (18 October)
+
+**New direct consumer:** [A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md](A4D_EXACT_AF_RADIAL_COFRAME_EQUIVALENCE_NONLINEAR_SPIN2_2026_10_18.md). The preceding AF–star Palatini construction and exact all-interior pp-wave roots now have ONE finite **identity of entire functionals**:
+\[
+{\cal A}_{AF}(e,U)-B=\sum_x w_x\Phi(f_x(e,U))
+=c\sum_x w_x f_x(\widetilde e,U),\quad
+\widetilde e_x=\sqrt{\Phi(f_x)/(cf_x)}e_x,\quad c=\Phi'(0)\ne0.
+\]
+On the honest 16 relative-solder coordinates at each site the dressing Jacobian is \(\chi_x^7\Phi'(f_x)/c>0\), with an explicit scalar inverse. Thus ALL independent finite coframe/link Euler equations, full gauge-transported Hessian and all-order graviton self-interaction vertices are those of the already-selected Lorentz-star action under a locally invertible field change. On vacuum critical points with independent radial rows \(f_x=0\), dressing is identity: \(g=\widetilde g\) in the original operational metric.
+
+This applies to BOTH the conditional complete Book \(w=q\) entropy **and the independently owned literal Book03 two-tick AF×scene determinant \(J_2\)**, whose actual \(g'_B(p^2)>0\); no Shannon-vs-feedback ambiguity changes the vacuum Einstein equations of this scalar star-sensitive sector. Moving scene, original v8 H+J+R and other whole-history prices keep their actual sources. Existing full-CAR reconstruction and coherent Julia/G/CNOT query plus the genuine whole-work \(C^3\) feedback estimate give a compiled **cubic** source transfer. This is an all-order positive completion for the constructed geometry-sensitive AF programme, NOT a claim that this programme is already compulsory physical full D0.
+
+On the already-owned exactly curved full-interior lattice roots, both wave polarizations are read at every finite h from literal proper-Lorentz plaquettes: the h⁻² normalized tidal holonomy matrix is exactly \(\left(\begin{smallmatrix}A&B\\B&-A\end{smallmatrix}\right)\), Ricci=0 and nonzero Weyl. Thus the same roots have a physical proper-link transport signal, not merely zero scalar action. Independent matter/observer/scene, compulsory full-programme selection and fixed-g/tau raw #216 remain separate.
+
+
+
+The parallel `ca86e31c` density/CAR and radial-equivalence results above
+are preserved. Their integration in full-source §6.40 retains the h^-4
+source and h^-1 coframe normalizations and separates the composite
+principal metric from physical operator-measure and full-price dynamics.
+
+**Consumed full scalar-source test, input `8b331ce8`:**
+[Strategic §7.14](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+and [full-source §§6.36–6.40](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+evaluate the actual full-price consumer. The scalar normal space must
+retain the observer-relative boost coframe direction in addition to four
+links and both Fourier phases. Its continuum kernel/mixed compatibility
+are exact. The fixed-beta infinite-spectrum reduced lapse coefficient is
+strictly positive in (0.0057230,0.0057231); bounded internal compensation
+does not produce the Einstein vacuum gauge source. This is a continuum
+conditional-price result, not a finite native Schur limit or D0 no-go.
+The exact time-pullback plus genuine operator measure restores the whole
+conditional Ward. Its native sampling/embedding law, determinant jet and
+own complete source are the remaining geometric execution consumer.
+
+The original noncollinear chronology now executes on known Golden code
+with all16 coefficients and the existing codec. A separate exact all-input
+compilation test excludes its updated query in the G/CNOT palette with
+returned integral workspace; an explicit controlled-G word is sufficient.
+A supplied creator-Julia query realizes that word on all32 inputs and
+returns the existing coefficient bit exactly; its native generation and
+controller price remain unproved. Classical computation on known code
+is distinct from an unknown-input quantum update. The same word transfers a nonzero
+material first jet if its Julia operand actually varies with retained code.
+This supplied family is not an autonomous unknown-amplitude update.
+The parent route now continues through the two native execution laws, followed
+by the same full reduced source and joint recovery. The finite float64
+explorations are explicitly separate; no new price/measure/stress or GR
+closure is asserted. Two bounded entrypoints check the new exact/interval
+consumers without old root/heat/Lean replay.
+
+**Previous actual-root reduction, input `bf74b2b9`:**
+[Full-source §§6.34–6.35](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the already proved full rank128 shell gap. The exact fixed-RIGHT
+Riesz preparation section exists on the actual faithful joint root;
+internal energies may split. Its response combines with the full spectral
+divided differences. Root moments cancel the weighted proper second-link
+jet; nonzero Fourier grading cancels the normalizer Hessian term there.
+The remaining scalar consumer at puretime q needs one explicit4x4 block,
+by the actual S3 decomposition of all24 link directions. Its basis/Gram
+are checked without root or lattice replay; invertibility is not asserted.
+Pure-link gauge deletion at fixed coframe is forbidden by the actual
+joint gauge equations. The independent chronology source also has a
+concrete next native operation: requery the tuple updated by the first
+retained record. A fixed initial-query word/cut does not generate that
+normal material jet merely by changing the input state. Full curved
+joint recovery and physical admission remain open.
+
+**Actual connection/normal consumer, input `af0a6d07`:**
+[Strategic §7.13](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+proves that the leading density source really cancels after the trace-torsion
+lift. The full24 nonzero-frequency A2+A4 normal Gram, its exact resonances,
+tensor16 ellipticity and independent-density Schur coefficient are now
+computed. This is a coefficient truncation; no fixed-beta domination over
+R or the heat remainder is assumed. Instead the exact finite-B H+J+R
+normal Hessian is derived, including the global normalizer, proper second
+link jets and the genuine fixed-RIGHT preparation Schur term. Its consumer
+is the existing full-price joint root, with actual spectral projection/gaps,
+followed by the reduced metric/current equation and curved recovery.
+
+The full weak O(h) source and spectral-compactness result also extends
+to multi-energy fixed-RIGHT stationary preparations: [rho,Delta]=0 plus
+the actual scale row and uniform positive minimum Schmidt weight gives
+a uniform occupied-energy cutoff. Common energy is unnecessary. All24
+actual link rows of the earlier resolved partial counter are now explicit;
+its finite preparation-lift obstruction is O(h), not a continuum no-go.
+The supplied C_Y/capacity synthesis is preserved and mapped to its existing
+owners; it does not provide a new native preparation or independent matter.
+Two new bounded calculations test these exact consumers; older suites
+are reused. Physical/native GR closure is not claimed.
+
+**Full spectral quotient consumer, input `61737b24`:**
+[Strategic §7.12](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+proves an O(h) weak metric-family source bound for the actual finite-B
+conditional programme on a globally smooth elliptic chart, IF its
+geometric measure is independently supplied. All thermal modes and
+reference components remain. The actual measure costate is now explicit;
+fixed word-to-cell/PF counts do not generate its determinant jet.
+Leading torsion equations cancel one a2 square, not the full density
+operator. The next consuming step is the genuine sampling/embedding
+variation and its equation, rather than another abstract Ward or a new
+siteweight. This is not the raw h^-2 terminal or a physical GR closure.
+An exact rank128 fixed-RIGHT preparation satisfies every independent
+preparation/observer row while retaining a nonzero metric current source
+in a bounded-energy C-infinity refinement. This rules out that narrower
+matter/observer implication; full coframe/link roots and P1 admission
+are explicitly not claimed.
+
+**Actual metric-source consumer, input `bd646b76`:**
+[Strategic §7.11](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+computes the true inverse-coframe Dirac jet on the star metric family.
+A nonzero resonant spectral pinch survives resolved scaling in the
+fixed-counting programme; an explicit full-reference128 eigenpreparation
+has zero thermal/feedback trace source but nonzero Rayleigh source.
+This excludes automatic transfer of all star roots by eigenprep/Ward,
+not other joint roots. An independently supplied geometric siteweight
+reduces that resonant block to O(h); its physical measure binding and
+uniform source limit are still required. The original two-record CAR16
+chronology also has an actual nonisospectral normal material jet,
+including two born feedback channels. Its weak contribution is a local
+quadratic potential, which does not alone produce on-shell matter.
+Retained8 chronology is not identified with the intrinsic scene528;
+no rest-price or native gate is added. The next parent step is the
+actual measure/sampling and matter/rest source of ONE programme.
+The subsequent disjoint0a949bf3 scalar-current input is consumed by an
+exact identity for the actual full-CAR conditional price: its metric
+family source equals the discrete divergence of a current built from
+{D,dS/dDelta}. The remaining conservation equation is now explicit;
+eigenpreparation alone does not enforce it.
+One new bounded source check covers these rows and rational query
+reconstruction; older mathematical suites are reused unchanged.
+
+**Exact critical-family consumer, input `c5d7662e`:**
+[Full-source §§6.23–6.25](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+proves zero ordinary-trace scene source for the actual intrinsic word and
+its genuine whole-tuple frame transport. A new exact SAME-collar null
+translation preserves all40 star Euler rows at finite amplitude while
+changing the metric; Lorentz gauge-fixing alone cannot invert this Hessian.
+Its smooth limit is a coordinate diffeomorphism, not independent matter.
+A constructive completed-control compiler preserves exact internal
+Lorentz Ward at every finite accuracy while converging in C3. The
+forward-only gate palette requires a retained scalar c=1 and its actual
+return cut; off-code heat is not transported by this theorem. Invariant
+moving-frame contractions replace CAR-basis tomography. Their scalar
+target acts on all16 inputs without physical vacuum preparation or CAR
+parking. Controlled queries themselves have a scalar-echo/skew-log
+construction from the supplied uncontrolled Julia queries, with all
+scalar return/leakage resources retained. The next consumer is the
+actual metric-family reduced source and full heat/matter first-jet bridge
+of the SAME programme, with work/resource costs retained. One new
+bounded calculation checks symbolic mixed rows, the nonzero forward
+control, whole-Gram source and all16 scalarization. No old suite replay.
+Disjoint source372237e7 is preserved and consumed in strategic §7.10:
+the same-feedback weak scene jet has a fixed relative coefficient, but
+the actual intrinsic scene has no independent material jet. It does not
+replace the whole-price first-jet or critical-family equations.
+
+**Direct Book-feedback consumer, input `423836c7`:**
+[full-source §§6.18–6.22](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consumes the ALREADY owned feedback price/source of17 October. The
+full two-tick AF/scene determinant supplies the monotone star source
+without any Shannon-mean identification or physical input probabilities.
+Regular multiplicities give exact doubled-depth LEFT trace weights
+without a RIGHT-copy; all528 retained scene modes and22448 ambient
+complement directions are correctly kept. A new clean-return estimate
+transfers the feedback price in C3 through zero modes. After the actual
+normalization its first-source error is independent of AF/reference
+dimension, with the true t^-2 and spatial reconstruction budget retained.
+This requires an ACTUAL work-return cut and all-data clean-domain
+operator estimates, not one prepared input or discarded offblank work.
+The whole-stack remainder is explicitly nu*H_B:DB+D S_rest; moving
+scene, clock and other native prices are not silently removed. The old
+fixed-scene seed has a conserved charge preventing bhalf within its
+own word, while full Julia primitives break that charge. It is a real
+preparation/resource gate, not an independent stress theorem. Physical
+geometric SELECT and the remaining full source are now the consumer;
+do not repeat another entropy selection or the old one-tick calculation.
+The honest spectator bound controls H/R but does not suppress the old
+feedback: its full AF trace multiplies J_v8 by F_(2N+15)=O(K).
+A flat scaling family distinguishes the named v8 and AF-star feedbacks;
+shared primitives do not identify their whole programme. The disjoint
+paired-GNS shift-seed preparation at742840ab is consumed with its own
+pointer/source boundary, without mixing its price into the operator-J route.
+The exact finite-word shortcut is excluded on an explicit open full-field
+patch: native query source is O(s^3), while the star source is a nonzero
+constant in s. This preserves compact C3 approximation but requires an
+actual critical-family argument for exact compiled roots.
+
+**Fixed-past/raw-matter bridge, input `ce063b4d`:**
+[full-source §§6.15–6.17](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now gives a different exact stationary preparation section which preserves
+the genuine old RIGHT⊗reference state. Its r_i are the actual fixed PF
+weights; no free leaf simplex or entropy-maximum selection is assumed.
+The full POVM gradient is right-conormal at the matched section, so ALL
+allowed preparation first equations vanish, including entangling directions.
+Γ_PF=[H(μ)+Σμ_i logZ_i]/logφ has an invertible radial source map to the
+PF-weighted star at finite t. Actual six-step AF multiplicities provide
+enough room for reference128 together with a PURE raw-CAR16 factor with
+timelike P1, nonzero top and balance b=1/2; the old imΠ_s seed did not.
+A real RIGHT-commutant frame extension realizes the ideal preparation
+without altering the joint archive/reference. Coupled moving-observer and
+all16 matter sources vanish on this vacuum branch; independent stress
+is not obtained by naming a capacity defect. The true native Book binding
+now has an explicit leaf-response shape test and a sharp gain/Kraft
+sufficiency criterion, neither asserted as proved by the copy. Physical
+valuation/mean selection, operation/resource admission, retained upstream
+price, chronological branch updates and independent matter remain open.
+See strategic §7.8; the new supplied synthesis is preserved byte-for-byte.
+
+**Constructed LEFT instrument, input `919a7d11`:**
+[full-source §§6.13–6.14](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+now gives an exact n-CNOT recording word for the fixed-level active LEFT
+path address. It realizes the inherited PVM on full GNS, preserves RIGHT
+and reference128, composes to the actual POVM of (13n), and solves the
+additional pure offblank-Y first equations. No clean READY refinement is
+needed. Under SAME Book binding actual code overhead cancels pathwise.
+A fixed-width FULL real-operator compiler removes the prepared-subspace
+and precision-growing-ancilla restriction for constant controls. A new
+C1 first-source estimate includes ALL zero outcomes without a floor;
+it transfers vanishing normalized Euler residuals on the configured real
+root family, with the same reference128. This is not ambient C2 entropy,
+exact finite compiled roots or an unknown Ψ(g) oracle. See strategic §7.7.
+Physical LEFT address/resource admission, complete actual Book binding
+and field/matter preparation constraints remain before this bridge.
+
+**Actual execution gate, input `afab5f09`:**
+[full-source §§6.11–6.12](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+construct the raw-leaf/AF diagonal-code isometry and prove exact complete
+stopping valuation H(q)/log(phi), with no extra normalizer under SAME
+pathwise Book w=q. But literal SAME-active-qubit fullStep has a different
+Markov law and variation image. Its positive stopped-entropy root is
+solved explicitly; a fixed pair of equal-cost READY prefixes proves a
+persistent TV gap from the uniform fine-AF profile, also after refinement.
+Therefore this concrete raw shortcut cannot supply the bridge below.
+An algebraic-integer theorem excludes exact uniform profiles from finite
+basis G/CNOT preparation; it does not exclude approximation or real field
+inputs. A quantitative C3 full-word/C2 source transfer criterion retains
+all coherent work and its preparation defect, with explicit whole-carrier
+and growing-width requirements. The next consumer is the actual controlled
+LEFT stopping instrument/preparation image or a full-source refining query
+programme, not another selected readout. See strategic §7.6. Physical GR,
+matter/controller and global closure remain open.
+
+**New positive bridge, input `4baad450`:** [full-source §§6.7–6.10](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+derive the missing weight equation and an explicit OFF-SHELL stationary
+profile for the complete inherited-fine-history plus five-cut law. Its
+full POVM gradient is scalar; Γ=logΣ_i[1+2exp h(e_i)]/logφ solves all
+preparation tangents on the balanced scene submersion branch, with the
+same reference128. An exact invertible radial source map makes its
+full geometric vacuum equations equivalent to the existing star equations.
+Fixed-t root recovery and the all10 IR Schur seed now have a SAME-price
+consumer; no EH vertex or τ prior is inserted. The required remaining
+execution premise is actual inherited LEFT fine-leaf/effect/price binding.
+Coarse prefixes or a preserved right marginal do not establish it. If
+that binding fails, the retained scalar has the explicit weighted-Palatini
+metric/scalar equations and matter trace condition T=2w j_w. See the
+[integrated §7.5](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md).
+This is conditional nonlinear vacuum closure of the specified complete
+cut, not physical D0→GR, a classification of eigen-preparation branches,
+or elimination of whole-work/matter/global sources.
+
+**Latest same-price consumer, input `0e7ad4d9`:** the user's AF–Palatini
+limit has been consumed beyond its sufficient t²=h schedule. Exact vacuum
+Euler equivalence needs only fixed t>0. The [full-lattice §5.2](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
+now proves C² recovery and Einstein residual O(p^(2n/67)) for the same
+complete40-row family with actual golden counts. The [labelled §§6.4–6.6](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+also compute its same-section quadratic/cubic jets, then exhibit an exact
+free-AF preparation compensator preserving all joint five-cut Euler rows
+and the fixed boundary while allowing non-Einstein conformal metrics.
+The actual mixed weight/geometry source survives; its conditional-weight
+block is singular. Therefore t(h) is not the sole missing physical step,
+and metric-only spin-2 uniqueness cannot discard this scalar sector.
+An inherited full-history/effect/source law must remove it by its own
+equations. This is not a D0-wide no-go or a new selected action.
+
+**Current priority, user synthesis of 18 October:** nonlinear spin-2
+bootstrap of the SAME native source. The [strategic synthesis §§7.1–7.3](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+verifies the complete10×10 Lorentz Schur/linear-Einstein seed and derives
+the exact next cubic Ward gate. That seed belongs to the selected naked
+star action; it is not yet the free Hessian of the full native price.
+True retained elimination gives the cubic jet directly from the full
+third differential and linear stationary lifts. The remaining cubic
+Noether defect equals an explicit mixed detector/embedding jet; current
+relabeling covariance does not prove it zero. C¹ entropy control does
+not supply the required C³ germ, and cubic success still needs quartic
+consistency and actual nonlinear gauge closure. This route takes priority
+over another restricted link search.
+
+The user’s fixed-β Λ is retained with its full polylog ratio. Its formal
+vacuum has |βR|≥24, so it is not a controlled vacuum of the large-radius
+truncation and cannot serve as a stationary Minkowski bootstrap background.
+No volume subtraction, new price or metric rescaling is introduced.
+
+**Latest finite input, `838b452e`:** §§8.34–8.36 of the
+[full-source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+put the partial roots in a true full-Lorentz V₄ orientation, prove a
+uniform normalized Gram-shape gap, and give an exact native kernel control
+against an unjustified six-link saddle lift. Actual metric scale still
+collapses as ν²~1/n; this history limit is not spatial GR recovery.
+All six invariant link equations remain in the finite continuation.
+
+**Latest consumed transition, input `ba3902b3`:** §§8.31–8.33 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+prove exact finite solutions of ALL preparation, strength, coframe and
+observer equations for a supplied finite additive full code with β>0.
+A compact minimum over the actual unit-coframe Gram tetrahedron cannot
+have singular geometry: an explicit original-label null history acquires
+a positive entropy birth that dominates every finite code variation.
+Phase-only V₄ covariance transfers the solved angles/scale to all16
+coframe rows without assuming an isotropic code. Reference128, external
+amplitude directions and every nonzero-Fourier field row remain solved.
+
+The first weak correction selects G1=1 but retains two physical shear
+directions; an exact finite source shows why arbitrary label costs do not
+force the Bell/isotropic point. The finite existence theorem allows the
+true preparation and geometry to move instead. It gives no uniform lower
+bound on det G as history length grows.
+
+The remaining homogeneous Lorentz-link source is now explicit:
+`2J_r(Ω_r)=−B_r(Ω_r u_r)`, with ν included in the forward-only probe B.
+Twelve stabilizer directions vanish. On the canonical circulant embedding,
+all24 link equations are equivalent to four costate-number conditions;
+the source owner gives their exact sum of squares and finite recursion.
+Their vanishing is not inferred from coframe stationarity. This is the
+next geometric consumer, allowing genuine physical link continuation if
+needed. Physical code/Info binding, resource/controller sources, independent
+matter and spatial/global GR recovery remain open. No full joint Einstein
+solution or new physical price is declared.
+
+**Prior consumed transition, input `36ad880c`:** §§8.27–8.28 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+prove C¹ convergence of the complete coherent-memory entropy and source
+on fixed data, even through preparation and spectral rank births. Uniform
+C² native-channel jets supply the missing small-eigenvalue control. The
+actual return probability and its full moving-preparation source are also
+explicit. Entropy alone has every single-eigenvalue preparation as a
+critical point, including nonzero energy; its full first source is zero.
+
+The consuming full-code calculation gives a positive result. For a fixed
+supplied additive code, the already defined relative-entropy price has
+limit `βT TrρA²−S(R_T)/logφ`, with β derived from the two actual leading
+exit labels. For any β>0, a balanced ±λ preparation solves ALL operator,
+preparation and clock first equations when
+`logφ β=4p² r log((1+r)/(1−r))`, `r=exp(−8p²Tλ²)`.
+The equation has a unique r∈(0,1). The original flat-shell Bell state
+with reference128 realizes the preparation, and transverse variations
+are included. This is a nonzero limiting joint root of a declared full
+conditional price, not merely a scalar stationary point. Physical
+code/Info binding, extra controller sources and a finite native stationary
+continuation remain the next inputs; singular rank-birth second derivatives
+prevent an automatic IFT lift. Physical GR and the raw terminal remain open.
+
+**Prior consumed transition, input `420f6545`:** §8.26 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+tests the literal Book03 minimal-code reading separately from the mean.
+On the complete tagged golden law, one central bypass is the unique MAP
+coordinate for every geometry/preparation, with a gap of at least one
+φ-unit of surprisal. Its source is zero. Raw conditional MAP keeps its
+moving normalizer, which cancels in the raw-event action; its central
+source is already zero before that cancellation. A retained classical
+prefix keeps its own source.
+
+For the original native long history, the unique MAP is blank. Its full
+C¹ limit is `−log Tr(ρ exp(−4p²T A_0²))/log φ`, including noncommuting
+field and preparation jets; its fixed-integer-n scale source is positive
+at every nonblank input. Yet the combined nonblank probability remains
+positive while each individual competing history tends to zero. Thus
+largest-word dominance does not establish the classical concentration
+needed by a geometric MDL reading. Mean, MAP and scalar partition are
+computed on the SAME complete law and have different sources. The next
+consumer is the actual history-to-memory-class/geometry map, its full
+multiplicity and coherent readout, and source-preserving identification
+with the native stack. No new aggregation or physical law is selected.
+
+**Prior consumed transition, input `2bfb8974`:** §§8.22–8.25 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consume the positive tagged-exit producer #363 at `33911def`. An explicit
+CNOT history-copy word replaces the new exit oracle, preserving every
+native outcome and reference128. For its complete unfiltered golden
+comparison, the entire probability law and entropy source are derived.
+Its endpoint strength derivative is positive in the owned weak window;
+the selected normalized logdet has a strictly negative derivative on
+that same variation. The central survival contribution also has the
+positive common-scale sign. With fixed coins/controllers, a joint root
+in that window must lie in the common blank kernel. The fixed-data
+long-history source is an explicit positive weighted count/Rayleigh term.
+
+Thus actual execution and the positive conditional curvature ratio are
+preserved, but direct complete-mean/logdet source binding is excluded for
+this readout. A filtered readout changes the law and requires its own
+complete calculation. Full raw normalization and clock rows do not select
+m=2n; the retained IR volume source still needs its actual compensator.
+The next consumer is the native valuation/constraint and its own source,
+including execution/preparation resources. No new Info or action is
+assigned. Physical GR, independent matter and global recovery remain open.
+The literal Book01/cocycle consumer fixes B=0 under complete w=q binding.
+A real conditional event can have a negative normalizer source, but
+restoring and weighting its complement gives the original full entropy;
+it does not provide an independent compensating B. The tagged success
+cut's own normalizer instead has a positive endpoint source.
+
+**Prior consumed transition, input `4838004d`:** §§8.19–8.20 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+prove a preparation-uniform source obstruction for the actual complete
+Julia/golden record mean. For every nonblank preparation on the full
+data⊗reference128 carrier, its strength derivative is strictly positive
+when νR≤1/64, including all zero outcomes and moving defect roots. Every
+fixed finite number of retained rounds has the same property in its own
+uniform weak-strength window. If strength is an independently admitted
+variation, the joint critical set is exactly the blank preparations,
+whose full first source is zero. A separate exact vacuum rotation makes
+every positive stationary preparation a saddle when blank dominates;
+the critical-set theorem uses the scale sign, not that saddle alone.
+
+This removes a whole preparation/finite-history search from the GR route.
+A genuinely complete price H/ℓ+B must supply B_ν=−H_ν/ℓ<0 at a nonblank
+joint root; internal stationary elimination cannot manufacture it. The
+actual code/Born binding defect and normalizer source are written exactly.
+Book03 square blocks on their zero sheets do not compensate; the defined
+negative v8 heat source is not thereby identified with this B. No new
+action, Info law or constraint is added. Physical scale admission, the
+native price binding, other strengths and joint long-history/refinement
+limits remain explicit. Operational verifiability alone does not supply
+the missing nonzero source.
+
+Section8.21 separately resolves the long-history source on a fixed data
+carrier: for δ=ν², nδ bounded, the COMPLETE128^n pointer entropy is
+`H_n=4p²(nδ)Tr(ρ A_0²)log(1/δ)+O_C¹(1)`. The proof uses the actual
+exit count and a full-tape Fisher/remainder bound, preserving the growing
+record space. Its leading source is Rayleigh/count; the scale derivative
+at each fixed integer n remains positive along nδ→T>0 when a≥a_0>0.
+No integer schedule is differentiated and no divergence is subtracted.
+This is stronger than a value or first-exit estimate, but does not prove
+uniform positivity as a→0 or a spatial/data-carrier refinement theorem.
+
+**Prior consumed transition, input `e989bc01`:** §§8.16–8.18 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+resolve the finite GR comparison without an all-frequency kernel census.
+For any C¹ full-internal stationary section through the SAME faithful or
+real-even root, `L A+B=0` fixes the total constant-metric Hessian to7+/3zero.
+The homogeneous rank27 and exact full-amplitude translation action also
+give `DR|ker L=0`, retaining every neutral mode and rank birth. Two exact
+constant-metric probes then exclude `DΓ=c_EH DI_EH+Lambda DVol+DR_same`.
+Thus a different nonlinear internal section cannot supply the missing
+finite Einstein source at these roots. A source-controlled limit, other
+root or physically derived price requires its own argument.
+
+The complex-rank escape at fixed Reρ is eliminated by an exact O(256)
+amplitude symmetry. Real coherences in the fixed eight-mode χ carrier
+are also fixed by the coframe source. A genuinely different time-sign
+preparation has an exact first lift, but its actual full-source diagnostic
+still has a second-order residual. These are consumed tests, not a new
+preparation catalogue. Together with the existing controlled small-heat
+bound `M z c<beta`, the next strategic consumer is the complete actual
+history/price and native calibration law, or a proved admissible source
+limit. No new action, counterterm or matter defined as a residual is added.
+The immediate calibration test is also consumed: making feedback z a
+free interior variable would give `S_z=M Tr[E(I-zE)^-1]>0`, so it cannot
+determine a stationary calibration of this same price. Native freedom of
+z is not assumed. An actual constraint/controller must supply its own
+source, and any derived z(fields) contributes `S_z Dz` to geometry.
+
+**Prior positive first lift, input `7966c217`:** §§8.13–8.15 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+replace the fixed faithful preparation by its existing balanced stationary
+fibre. Independent momentum preparations give104 real parameters; the
+real vacuum-plus-top state provides a full first preparation lift of all
+ten metric components on every Fourier mode at the owned gapped root.
+The mixed-mode right inverse is exact for all a>b>0 on the128 shell;
+the external amplitude lift separately uses the owned spectral gap.
+At the actual root, a new rank27 amplitude theorem also solves all
+homogeneous internal source equations through this rank8 state.
+
+The spatial source now has an explicit consumer:13 genuine internal
+directions on a mixed mode and19 on an axial mode. Its full Hessian keeps
+matrix-valued matter, the second Dirac jet and the signed full-shell
+resolvent. The q1100 diagnostic solves the13 linear internal equations
+at the owned root center, then finds a nonzero second-order preparation
+residual. This is a numerical fixed-frequency result, not an all-branch
+no-go or a proved nonlinear metric section. Its nonlinear existence
+problem remains open, but the later section-independence theorem removes
+it as a prerequisite of the finite GR comparison. Physical price/preparation selection, independent
+matter, refinement and the original raw #216 closure remain open.
+
+**Prior faithful-branch transition, input `8c3a615c`:** the same source owner's
+§§8.10–8.12 solve a real full-Lorentz homogeneous reduction: rank27 pairs
+observer3 and links24 with dual preparation coordinates, preserving all128
+reference columns and2020 free shell-density parameters. All ten constant
+metric components lift; the exact reduced price retains its flat-shape
+source and metric Hessian7+/3zero. A separate exact polynomial identity
+prevents a faithful preparation lift of an off-diagonal metric wave at
+Q=e0+e1, so this section does not extend to arbitrary spatial metric fields.
+On Q=2e1 an explicit Cartan inverse instead lifts all ten physical metric
+slots, with five internal kernel directions still requiring their own
+source equations. This replaces an assumed stationary reduction by its
+actual positive sector and failed extension. It does not select the native
+price, classify all preparation branches or close physical GR/raw #216.
+
+**Consumed source comparison, input `6c78c60e`:** §§8.8–8.9 of the
+[same source owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+derive the coherent amplitude/Gram event source and test the actual complete
+finite H+J+R against the existing Palatini stencil. Its matched mixed
+coframe/link derivative is exactly zero, whereas the star derivative is
+nonzero. All finite-B, global heat-normalizer, feedback and fixed full
+matter/reference terms are retained. This excludes direct bare-star source
+identification, not a source-preserving stationary reduction or all D0.
+The same investigation distinguishes real Book03 penalty functions from
+the still unspecified parts of its named stack. An undefined full scalar
+function cannot supply the missing coefficient by naming its blocks.
+The next consuming map is a justified stationary reduction of a specified
+price, or the complete intrinsic geometry-history amplitude/price binding
+with interference, preparation and normalization. No new action is selected.
+
+**Consumed execution transition, input `3447a184`:** §§8.4–8.6 of the owner
+below reconstruct u and full Lorentz transport from the actual raising
+operator, including the active pp-wave null direction and every transverse
+jet. Principal whitening fixes eta while retaining observer jets in X.
+A coherent polynomial/word construction then implements the star/golden
+query from supplied Julia operations, with explicit full work handling.
+The full finite Shannon first-source bound includes every failure label;
+it closes the configured source-transfer step in that addressed oracle
+class. Physical admission, preparation resources, compulsory chiral
+selection, old-history source and exact joint/global recovery remain.
+This improves the execution statement below without identifying a compiled
+configured experiment with the physically selected D0 law.
+Section8.7 also consumes the existing canonical Role/site selector rather
+than rediscovering chirality: the same-type nonzero source must be star.
+Its membership/nonzero weight in the full physical price remains the next
+forcing premise. Recover F=e^-1 first, then invert to the original coframe
+before using the existing solder legs; the operational metric is unchanged.
+
+The [labelled golden-record theorem](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md)
+consumes the actual CAR/clock metric, same-history event-price identity,
+native AF corner and the full local weighted-star family. Its complete
+five-outcome law retains failure and both successful pointers. The free
+prefix equation fixes `s_*=logistic(h(p²)+log2)`, rather than the
+nonstationary canonical p^6. A full POVM calculation gives a scalar input
+entropy gradient on the whole AF/scene/reference carrier, proving every
+normalized preparation row zero, including entangling/rank directions.
+The scene construction keeps all528 modes and a full reference128 marginal.
+
+At f=0 its exact complete first source is `s_* p²t² Σ μ_y Df_y`,
+with no Einstein-frame change of the CAR/clock-read metric. The SAME
+periodic extension used in the prior local lattice theorem has scalar
+f=0 globally: its three potentially curved plaquettes and complementary
+solder legs lie in one three-dimensional null-frame subspace, so every
+epsilon contraction vanishes. This supplies the scalar AF effect on the
+entire carrier and transfers the curved interior family to the full
+configured price. Exterior coframe/link rows remain fixed and may be
+nonzero; global free geometric recovery is not inferred.
+
+The new 17–18 October inputs now have explicit consumers. The
+[actual same-history mean](sources/d0_cost_info_event_source_2026-10-17/RESULT_RU.md)
+is different from literal H+J+R and from a single-event surprisal. On the
+open Julia D-vacuum its source is identically zero. The
+[full spectral tensor signature](A4D_FULL_SPECTRAL_TENSOR_SIGNATURE_2026_10_17.md)
+prevents converting the positive spectral metric into Lorentz g by
+relabelling. The [regular natural source → Cartan classifier](A4D_REGULAR_NATURAL_SOURCE_TO_CARTAN_2026_10_17.md)
+closes a nonzero integrable, purely natural source regular also at
+degenerate coframes, once those native hypotheses are established. The
+[stationary-fibre source descent](sources/d0_structural_source_closure_2026-10-17/RESULT_RU.md)
+does not require a unique internal state, but does require the actual
+regular fibres, full kernel compatibility and locality estimates.
+
+The physical interface still requires native selection/execution of the
+geometry-controlled programme, old history and execution sources,
+independent matter/spin and global physical recovery. Appending this block
+after old labels w leaves the exact `DH(w)/log φ` source; its own terminal
+equations cannot cancel that term. This is a solved full source for the
+declared configured experiment, not a claim that every native history has
+that source. The original fixed-g/tau/all-ten raw h^-2 terminal remains OPEN.
+
+The actual native-interface continuation in the same owner, §§7.1–8.3,
+now prevents two invalid compositions. The scene cut528 sits inside the
+full22976 scene-history/CAR carrier; two genuine v8 outcomes rule out
+independent b_y=1/2 balancing under a CAR-preserving pure-time gluing.
+The full retained-history operator Euler must be solved instead.
+The geometric star query has an exact eight-word full16 CAR expression,
+with a required trace readout and algebraic inverse. A nonflat pp-wave
+loop is unipotent and cannot preserve any positive pairing, so it cannot
+enter the old stored-unitary domain. Its remaining execution/source
+consumer is the existing full-Lorentz positive-adjoint/Julia interface,
+including every defect/failure outcome.
+
+The same continuation also solves the actual full128 pure-time
+preparation equation: I16/16 gives a scalar entropy gradient, retaining
+all outcomes and reference128 (marginal rank16). The complete ν-source
+is strictly positive for every density on this one Fourier block.
+Consequently no free-ν joint root is hidden in a different preparation
+of that block. Other supports, constraints and the continuum are outside
+this finite UV statement; full GR is not inferred or excluded.
+
+## 17 October 2026 — whole-source synthesis beyond vacuum equivalence
+
+The [full AF source normal form](A4D_AF_FULL_SOURCE_EINSTEIN_NORMAL_FORM_2026_10_17.md)
+consumes the actual AF/scene source at `360b28b6`, exact logdet unfolding
+and the owned quadratic density/coframe map. It proves an off-shell action
+identity and a bijection of complete stationary sets on the declared
+positive domain, without imposing f=0, a fixed scene spectrum or a wave
+ansatz. A geometry-dependent scene is retained through its actual graph
+constraint, with every original source. No global joint root is inferred
+from this bijection.
+
+An exact control shows why the old radial row transport cannot by itself
+define an independent matter action: a transported exact one-form can have
+nonzero curl. The new full-action construction resolves that integrability
+problem. Its graph source can nevertheless exactly compensate the separated
+star source, and its Einstein-frame metric can differ from the operational
+metric by a moving scalar even as t tends to zero. Physical GR is therefore
+not closed by the normal form. For a full leading price, the next reduced
+equation acts on its actual stationary manifold; full metric lifts there
+must be established. Native execution/complete Cost-Info, physical reading,
+classical selection, full joint recovery and the original fixed-g/tau/raw
+terminal remain OPEN. The previous positive local lattice family is retained.
+
+## 17 October 2026 — exact full local lattice vacuum recovery for the AF-star experiment
+
+[New full local stationary-family theorem](A4D_AF_STAR_FULL_LATTICE_STATIONARY_FAMILY_2026_10_17.md)
+consumes the user's exact radial reduction and the selected six-plaquette
+star action. It constructs a nonflat two-polarization pp-wave family solving
+**every independent 16 coframe and 24 Lorentz-link Euler row at each interior
+site**, with a fixed boundary collar. The link is the exact nilpotent
+exponential of backward half-gradients of H; sampling the continuum link
+without the half-step correction fails two rows.
+
+The actual golden counts remain nonuniform. An invertible local coframe
+rescaling transports their weighted star action exactly. A prefix-cylinder
+estimate proves positive coverage of every cell and C^j-small weight
+corrections for each fixed j along L_n=n. Local radial homogeneity then
+transfers the exact stationary family to the **full nonlinear AF Book price**
+at finite t, with no entropy remainder. The limit has Ricci=0 and nonzero
+Riemann. This replaces the 25m limitation for this **local fixed-boundary
+geometric vacuum recovery**; it is not a global periodic full-field root.
+
+The complete independent-source transformation is retained in equations
+(2.6)–(2.7) of the new owner. Native physical execution/price, independent
+matter and observer/preparation stationarity, boundary closure and the
+original fixed-g/tau/#216 raw terminal remain OPEN. No physical variable
+or source has been removed to promote this mathematical family to full D0.
+
+## 17 October 2026 — foundations-to-GR strategic composition
+
+[Current strategic synthesis](A4D_STRATEGIC_SYNTHESIS_FOUNDATIONS_TO_GR_2026_10_17.md)
+consumes Books 00–03/06/07, actual foundation theorem owners and the recent
+positive/negative results in this same Draft. The positive AF-star theorem
+below is the available geometric consumer. The remaining proof is the
+complete native first-source map into its selected nonzero Lorentz-star
+type, physical classical selection, and nonempty recovery with all
+admissible field variations. No new agent wave is launched for this step.
+
+Three analytic distinctions now control the composition: conditional
+record probabilities versus the joint geometry/history law; smooth
+nonzero first-response universality versus literal equality of two
+microscopic instruments; and macroscopic source convergence versus the
+original stronger fixed-g/tau unweighted raw comparison. In the original
+`I_h=h² A_h` convention, the dual norm of the integrated source difference
+is exactly `h⁴` times the original raw norm when all bounded lattice probes
+are allowed. This does not prove either actual source estimate, supply a
+joint root, or change the original terminal below. Full physical GR and
+this fixed-source task both remain OPEN for their stated reasons.
+
+
+
+## 17 October 2026 — direct POSITIVE A4D→OTO composition: one global AF Book record → Lorentz Palatini → Einstein
+
+**Main consuming theorem (NEW; mathematical composite, full physical admission still OPEN):**
+[A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md](A4D_AF_STAR_PALATINI_NONLINEAR_EINSTEIN_COMPOSITION_2026_10_17.md).
+Do not return to alternate Euclidean-to-Lorentz curvature coefficient searches: the existing SELECTED finite \(\star\)-plaquette is already Lorentzian. It is fed (as ACTUAL star/coframe/holonomy matrix data, not as an assumed Ricci tensor) to ONE field-dependent complete AF effect on the original exact-cost golden address prefixes. The *same second ACTIVE AF record*, with a fixed full positive pointer and the existing Book \(w=q\) path-information cocycle, has an EXACT finite first/second field source and one field-independent baseline. Its endogenous nonzero golden coefficient is
+\(\kappa_{\rm AF}=2\varphi^{-5}(\varphi/\sqrt5)H'_0(\varphi^{-2})=-0.114397462641780\ldots\).
+
+On bounded smooth coframe/connection source charts, the **constructed AF Book price**, normalized only by field-independent \(t^{-2}\), converges in **C²**, with error \(O(t²+h+\varphi^{-n/16})\), to the already selected \(\star\) scalar's Lorentz Palatini functional \(c_{\rm AF}\frac12\int\epsilon_{abcd}e^ae^bF^{cd}\). The independent 24 connection Euler rows give **torsion zero**, followed by the 16 coframe rows/6 exact finite local Lorentz Ward identities giving **all ten nonlinear vacuum Einstein equations**, with lapse and shift intact. This has a DIRECT, not a positive-Riemannian-reflection, curvature source and **no repeated-cell vacuum baseline**. No new metric/gravity action or fitted counterterm is inserted into the finite mathematical experiment.
+
+**Nonempty curved result of that SAME finite AF experiment:** a classical Ricci-flat **nonflat pp-wave** with its LC connection is a nondegenerate 25-parameter Palatini critical point after gauge-compatible conformal+all24 Cartan restriction. The genuine Lorentz24 quadratic Hessian is explicitly integer **rank24 and determinant \(2^{32}\)**. C² perturbation/IFT supplies **exact finite AF stationary roots in all 25 selected genuine coframe/link directions**, converging to the pp-wave at \(O(h)\). On disjoint pp-wave patches this extends by diagonal refinement to an **unbounded** number \(25m(n)\to\infty\) of exactly solved joint Euler tests of the same single global action. This is a CONSTRUCTIVE nonflat restricted joint stationary family, not an original unrestricted all-lattice root.
+
+**Original full D0 physical status unchanged:** the AF \(W_E\) operation lies in the owned finite AF algebra and the pointer is executable in the supplied generous active class; the native physical transition, its complete v8+AF programme price/clock/reference, and actual active gate selection from geometric fields have **not** been proved. The literal old v8 full128 single step cannot simply be renamed AF (zero-mode event control). Full original #216 fixed-smooth-g, independent matter tau, all-ten unweighted raw \(h^{-2}\) and unrestricted finite joint roots remain unproved. Main next research should consume the **positive composite formula above** and bridge its ONE physical programme/action admission and full-norm refinement—not restart coefficient matching, obstruction catalogues or another artificial curvature functional.
+
+**Independent bounded checker:** [sources/d0_af_star_full_gr_2026-10-17/check_af_star_full_gr.py](sources/d0_af_star_full_gr_2026-10-17/check_af_star_full_gr.py) tests the actual AF five-path C² probabilities, exact golden quadrature, exact integer Cartan determinant and nonflat pp-wave Ricci control. The source was published; there is no claim that a fresh remote CI/Lean/actual-v8 physical execution was run.
+
+
+## 17 October 2026 — actual fixed-beta v8 infrared feedback: curvature and conditional connection selection
+
+[New original-feedback IR theorem](A4D_NATIVE_FEEDBACK_IR_EINSTEIN_TORSION_SELECTION_2026_10_17.md) uses the **unchanged** native H+J+R feedback log series, not a newly selected three-depth spectral action. On the full16 true-adjoint positive Laplace-type carrier with the existing beta=2phi^-2, M=128, z=2^-20, the large *physical* coframe scaling e_s=s e yields a two-scale expansion with nonzero derived curvature coefficient c_R=M[-Li_2(-z/(1-z))]/(12pi² beta)≈1.3491948053e-6 and simultaneously a field-dependent extensive volume term. Same action, full16 and original multiplicities. Positive metric only: the owned reflection identity introduces an observer/aether source at the SAME order; the merged #360 pp-wave covector mismatch is retained. Fixed-beta arbitrary-q nonlocality and the original fixed-g raw h^-2/#216 terminal are not claimed resolved. [Scalar/full16 diagnostic](sources/d0_native_feedback_ir_2026_10_17/check_feedback_ir_polylog.py) and [exact CAR tensor-witness/numeric cross-check](sources/d0_native_feedback_ir_2026_10_17/check_tensor_ir_full16.py) are bounded checks, not stationary certificates.
+
+A further exact continuum **nonempty connection-stationary slice** uses the full16 spatial inversion: for flat constant 24-component Cartan connection, U D(T) U^-1=-D(-T), so the complete H+J+R is connection-even when the actual 128-shell preparation is inversion-invariant. Every one of the 24 connection Euler rows vanishes at T=0. This is not a finite-h or joint metric/matter stationary root. [Full16 all24 parity and one-sided-preparation negative control](sources/d0_native_feedback_ir_2026_10_17/check_flat_connection_parity.py) has a direct exact CAR check. On the already-owned full-CAR current with flat Lorentz g, the independent observer-source test computes the obligatory leading positive-feedback matter Euler -192c_R s²/125≈-2.07236322099e-6 s²; EH on that matter-only family is zero. Any native Lorentz-GR claim must identify the actual compensating observer/archive/matter equation or prove the CAR preparation is inadmissible. No counter-source is added or fitted; see theorem §§7–9.
+
+A new quantitative **conditional native connection** consumer uses the already-owned A2 4+4+16 decomposition and the genuine A4 tensor quartic. For any bounded *flat constant* 24-component connection-stationary branch whose actual normalized preparation first source is O(s^-2), the unchanged native v8 Euler rows force trace+threeform torsion O(s^-2) and tensor16 torsion O(s^-2/3). This is a stationarity-to-Levi-Civita constraint on this declared sector, NOT existence of a joint root or minimizer stability: the quartic feedback coefficient is negative and additional physically selected preparation may change minima. Do not insert torsion-free as a separate equation.
+
+**Parent route change:** compare the actual full Info/record/cut law with this fixed-beta feedback source before new synthetic action construction; derive/solve its Lorentz observer and independent matter/spin sources, and construct a nonempty curved joint refined family on the original 10-row raw norm. The existing full-pointer selected birth and matched-clock comparative KL findings remain separate observables until physically identified. This result narrows the positive-metric and constant-torsion gates but does not promote GR or retire #334.
+
+
+Task: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`.
+Current execution: **[Draft #334](https://github.com/gvakhrushev/d0_15/pull/334) / IN_PROGRESS**,
+branch `exp/a4d-joint-response-continuation-2026-10-16`, from accepted main
+`add17919b344f0e46115619aa53d2173ecdcf219`. This is the same obligation.
+Historical #310 remains **CLOSED without merge** (2026-10-16T10:11:24Z,
+last PR head `713edc1a`). Its complete later scientific SOURCE
+[`4d19564d`](https://github.com/gvakhrushev/d0_15/tree/4d19564d2226496eeeda1f43d84e4b57a4f2e817/02_REGISTRY/research)
+is preserved here: 1218 additional research files, 313 pre-existing common paths (byte-identical
+at intake) and all five research files unique to the continuation baseline.
+The old queue/README snapshot was not restored; retired workers stay retired.
+This import is publication and composition of research, not task retirement
+or acceptance of the original physical/continuum terminal.
+
+Mathematical status remains OPEN. The parent NO-GO/retirement announced at
+`530a5132` is withdrawn: it closed a weaker source convention, not the theory target.
+
+## Current synthesis and the original terminal (2026-10-16)
+
+The original target is still
+`h^-2 ||E_Q(Q_h,K_h)-E_Q(Q_h,K_h^sm)||_(raw,1) -> 0`, or an admitted
+exact joint-critical counterexample, on one fixed smooth nonconstant metric
+and one independently fixed smooth source. E_Q has ten packed metric rows
+at each of L^4 sites, h=1/L; the raw norm is the unweighted sum of their
+absolute values, with the designated #216 comparator. None of the native
+record results below is substituted for that terminal. The historical
+[response convention](#inputs-and-response-convention) is retained.
+
+| Constructive result | Current owner and remaining physical obligation |
+| --- | --- |
+| On the SAME likelihood-bound complete history, code and all code jets cancel from Cost-Info. The actual full128 pointer entropy and smooth first covectors have derived leading scale log(1/epsilon) times total exit count/source, with bounded remainders. The coherent alternative has a real positive h² log(1/h) Schmidt-birth term on the faithful LC cone, including arbitrary first preparation/field correctors and the original winding. | [Complete history information/scale](A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md), [full coherent normal birth](A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md). Select the actual history/test cut, raw normalizer and complete action/clock scale. Fixed finite code cannot cancel the coherent logarithm; a new code under likelihood binding cancels pointwise instead. The subleading source is distributional on controlled parameter charts, not the original raw norm; no physical Info, all-rank leading preparation, joint root or universal GR no-go is inferred. |
+| Existing golden/registration words give all real-symmetric tape matrix units and an explicit source left inverse, conditional on old-bit placement. Raw prefix projectivity is exactly the local gain equation, and the actual open effect-tree normalizer differs from a return cut on that same process. Full pointer finite part and fixed-clock smooth source now have a waiting-path proof. | [Coherence test](A4D_RETAINED_HISTORY_COHERENCE_TEST.md), [normalizer binding](A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md), [finite part/source](A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md). No arbitrary complex POVMs, free old-bit access, physical Info, subtraction, or Book-to-open-cut identification is assumed. The original raw h^-2 terminal is unchanged. |
+| Every test word in the supplied one-way class gives a translation-covariant joint pointer POVM. For a central-reference tilted qubit its gain deficit is at least min(x²,z²)/4 nats, even with active complex phases. The exact real-covariant optimum/source is a compact scalar envelope; its second directional coefficient max(x²,z²) has no Frechet Hessian at the mixed state. | [Feasible native gain/source](A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md). This forbids importing the complete-POVM entropy law from informational completeness alone. The record fixture is not asserted native-reachable; the full physical test/reference/price must be derived. A universal full-D route needs a memory operation/cut outside this commutant; active quadrature alone does not suffice. |
+| Actual port-dominated positive-relative code cost derives spatial preparation coercivity. With all16 forms and the true reference128, a minimum exists, actual grid minima converge with minimizing optimizer cluster points, and every preparation row has a weak Euler equation. On the exact-LC cone, each limiting labelled jump and the entire code/coherent objective are invariant; its full spatial minimum therefore cannot restore the nonzero intrinsic Lorentz Einstein source. | [Spatial preparation and Lorentz-source consumer](A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md). This removes assumed optimizer energy/compactness without extending the shell's unique Hessian or selecting physical code/Info. General optimizer field-source regularity and physical admission remain open. The real h² history signal is preserved; its native price/clock/scale is the consuming bridge, not a further unscaled preparation fit. |
+| Every actual retained128-outcome round gives an exact CP matter channel and total-count tilt. Its original port1 observable is `p epsilon Delta`; original golden0/10 code fixes the flat port-cost `n+p beta_h R0`. Flat full16 relaxation, full fixed algebra and strong trace-class continuum process follow without resetting records. Pointer and coherent record information have separate exact source diagrams. | [Complete retained channel/native cost](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md). Consume actual evolution, preparation derivatives and original code weights in the full price bridge. Stationary momentum weights are not Gibbs; finite faithful system stationarity does not give a reference128 purification. Complete code/Info selection, native primitive admission and Einstein/refinement equality remain open. |
+| The two stored-adjoint forms force parallel transport of a timelike observer on every edge and loop, independently of preparation rank. With a controlled smooth limit and identification of this transport with the full Levi–Civita connection, its Ricci-flat sector is locally flat. | [Observer/holonomy boundary](A4D_OBSERVER_HOLONOMY_CLOSURE_SYNTHESIS.md). This narrows the programme's GR interface: derive the full native Lorentz/observer-comparison source or an explicit reconstruction of the full connection, retaining the separate own-leg condition. It does not exclude all curved matter roots or alternative reconstructions. |
+| A fixed-forward positive-adjoint completion now has an explicit local full-Lorentz matrix instrument, the same tested v8 scalar price and all transverse sources. The faithful seed remains critical; the old pure seed fails the new boost rows. Two derived occupation balances characterize stationary homogeneous E0 preparations, with an explicit balanced rank8 root on the same geometry. | [Full Lorentz source](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md). The original native primitives must generate its onsite matrix gates, adjoints, preparations and outcomes with their full retained-history cost. This does not select a physical extension or transfer the stored-sector kernel to the new state/domain. |
+| The full coframe defect uniquely reconstructs all24 Levi–Civita connection components under metricity/torsion-free assumptions. Its exact curvature/torsion transgression gives the intrinsic nonlinear Einstein covector. A local regular pp-wave vacuum metric satisfies both stored-adjoint kinematic conditions. | [Coframe/GR reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md). The full native price/source has not been equated with this intrinsic reading. The example is neither a periodic v8 stationary solution nor a refinement theorem; unrestricted geometric metric variations must still match the native variation image. |
+| The reconstructed +omega_LC enters the existing native raising channel as the full exterior differential after the exact raised-form intertwiner. The actual traced a2 is `-4R_G/3+2|h|^2-4|v-dlog w|^2`; its24 link rows leave tensor16. Their flat a4 source is computed, and no nonzero constant tensor is critical for that coefficient. | [Native coframe/source bridge](A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md). This resolves the differential operator/source mismatch rather than assigning a Hodge operator or torsion action. Full H+J+R coefficients and actual matter/observer sources still govern its use; the fixed-time finite-source theorem below supplies a controlled analytic bridge, while small-time and physical calibration remain open; scalar endpoint jets do not equal contorsion. |
+| The actual variable-field full16 true-adjoint stencil has a fixed-positive-time finite-B/continuum bridge: exact record-error bounds, uniform full-grid Gårding, norm-resolvent consistency and strong raw-sum independent coframe/link/observer sources. At exact full-amplitude joint roots, scale-bounded matter eigenshells give the actual R-source limit without fixing rank. | [Finite heat/source limit](A4D_NATIVE_FINITE_HEAT_SOURCE_LIMIT.md). This closes the fixed-time analytical premise, not physical admission, LC pullback, small-time source coefficients or the original h^-2 comparator. Compare the complete limiting native source with Einstein using the derived clock/measure/variation image. |
+| The complete continuum full16 operator/price factors through positive G, coordinate torsion, measure and form matter, leaving three causal-cone directions if observer and preparation are independent. The existing same-matter P1 map recovers all ten Lorentz metric slots and gives an explicit actual R-source. A retained boost readout sees the cone; all h² clock/normalizer/preparation coefficient terms are identified. | [Causal metric/source bridge](A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md). Derive the observer/reference128 readout and its complete source from the same process; do not substitute a4-vector for a matrix purification. The boost readout is diagnostic-only. The [second-order proof](A4D_SECOND_ORDER_HEAT_REMAINDER.md) gives O(h^(9/4)) for controlled fixed-beta H+J independent raw sources, retaining the actual finite-clock gradient; actual R correctors and a joint branch remain required. The [reference128 boundary](A4D_REFERENCE128_OBSERVER_READING_BOUNDARY.md) shows why correlation alignment and norm centering do not supply the missing native law; continuum blindness is not an original h^-2 no-go. |
+| Exact proper-path cotangent conversion retains endpoint derivatives, moving density and the inverse coefficient1/12. On the exact-LC winding cone the full128 first shell has trace-zero but nonscalar A1, with squared norm52/s^4; unchanged faithful matter has minimum first-equation residual13/(32s^4). | [Link cotangent jet](A4D_RAW_LINK_COTANGENT_JET.md), [actual preparation corrector](A4D_CONE_PREPARATION_FIRST_CORRECTOR.md). The [complete source-balanced test](A4D_CONE_SOURCE_BALANCED_PREPARATION.md) now excludes every preparation rank on that unchanged first jet; a real field-image witness also excludes faithful full-shell continuation with arbitrary real smooth field jets. Partial rank with actual adjusted field jets still requires its full equations. |
+| A genuine permanent first-exit event in the same32-label/golden program retains a causal h² source. For the faithful full shell, its h^-2 readout is `(1-exp(-beta/s²))[1+2<theta_prime²>]/(256s²)`, with a controlled smooth source limit. Its cone-dependent part is an exact fixed-s multiple of intrinsic EH on this family. | [Retained-history causal source](A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md). The existing cut uses both ports and no reset or new reference operation. This is not a new price, physical admission, stationary preparation, all10 Einstein equations or the original E_Q comparator. Derive its complete native price binding with actual prepared/field jets. |
+| The complete retained-history calculation covers all three causal fields. The unique positive three-label coherent direction has quadratic reading `-(1-exp(-beta/s^2)) I_EH^[2]/(192s^4)`; diagonal probabilities fail. Its exact nonlinear angular factor and source then exclude every fixed positive detector on those three labels as universal nonlinear EH. | [Complete causal principal and nonlinear source](A4D_RETAINED_HISTORY_CAUSAL_PRINCIPAL_SOURCE.md). The entire specified detector class is exhausted, not the complete history price. Derive the physical detector/Cost−Info law beyond that class with its actual source; no new gate, weighting or price is installed. Full first-jet tomography is unnecessary for the principal response quotient. |
+| The full rare first-exit analysis includes all18 nonblank zero-N0 rows,36 corresponding ports and the separate blank-label/port1 exit. Genuine metric gauge probes span all24 torsion-free leading connection coefficients; their complete onsite Julia/Sylvester map is pointwise and background-independent. Positivity therefore rules out every fixed detector on that rare-output sector as a universal nonzero EH reading across causal backgrounds. | [Full rare-history gauge-span boundary](A4D_FULL_RARE_HISTORY_GAUGE_SPAN_BOUNDARY.md). This exhausts constant positive rare-event weighting, with no extra reference operation or discarded grades. The13 nonzero-N0 outputs need actual second stencil/clock jets and non-PSD source terms; moving/nonlocal detectors, other preparations and full signed/nonlinear Cost−Info remain outside this theorem. The original fixed-g/tau/raw terminal is unchanged. |
+| The complete retained first-exit operator E=I-B^(2n), actual clock and normalized matter determine the unchanged v8 price. The positive-root inverse and its unique Hermitian operator covector preserve noncommuting matter; ordinary/rare first and second sources balance exactly. The full field-dependent h² price coefficient is explicit, including clock, ordered Delta_1 pairs and actual Delta_2. | [Complete exit/action and second source](A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md). The inverse is uniformly controlled on a fixed energy block but not across UV modes. A literal full16 flat example has rare probability at least nu²/512 on uniform preparation, versus O(h²) on a fixed smooth shell. Combine finite effects before trace/source limits. This is the mathematical given-action quotient, not physical tomography, native Cost−Info selection or full field-map injectivity. |
+| The full regular stored metric image has an exact nonlinear criterion: line-constant own tau_r,Q_rr and tau^TQ^-1tau=1, with constructive Gram/link recovery and arbitrary moving observer. Its generic Bianchi residual and a fixed off-diagonal separator are explicit. | [Stored metric projection/source completion](A4D_STORED_METRIC_PROJECTION_AND_SOURCE_COMPLETION.md). The separator is forbidden by the stored tangent, and exceptional Qk components retain diagonal residuals. This is a precise physical source-completion obligation, not a frozen-link artefact or an extra admitted equation. |
+| The complete fixed-beta h² price contains a nonrational transverse Stieltjes form factor. Its superexponential moment tail survives all local seagulls and actual normalized first-shell amplitude elimination, including moving preparation/reference and finite coherent exceptions. | [Full-price causal form factor](A4D_FULL_PRICE_CAUSAL_FORMFACTOR.md). The actual full16 vertex is checked symbolically; nonrationality is analytic. A direct local EH interpretation of this coefficient is excluded on the stated LC/first-shell class. No full finite-h C2 theorem, joint root, other retained section or universal D0 no-go is inferred. |
+| The existing constant-control compiler has explicit C2 full-price trace/normalizer budgets under refinement. A finite computational-blank integral grammar cannot realize the exact target B; the actual normalized seed has a conditional two-CNOT fair-bit decoder and a necessary five-copy resource count for uniform32. | [Native compiler/source/resource boundary](A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md). The original v5 proof is now byte-identical readable Git text. Pointwise finite-word universality does not create field jets; seed copies, address/cut/preparation/reflection, code complements and physical Cost−Info remain inputs. |
+| The actual full finite H+J second source has a strictly positive h^-2 limit on one longitudinal cone germ whose all10 linearized Einstein rows vanish. The same actual R cancels in the proposed identity. | [Finite causal-response/Einstein test](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md), source d3f9c3e7. This rules out an unqualified identification of that scalar-price coefficient with pure EH+Lambda+sameR; it is not a joint-critical or original fixed-g/tau counterexample. The coherent principal observable above is not a change to that price. |
+| The same v8 price has an exact survival/blank event form. A conditional full-occupation Slater construction produces the logdet, multiplicity M and cycle coefficient1/j together. | [Action selection](sources/d0_native_action_selection_2026-10-16/RESULT_RU.md), [blank dilation](sources/d0_native_feedback_blank_dilation_2026-10-16/RESULT_RU.md), through9ece9146. The filled many-body carrier and z coin are additional admission hypotheses, not the original exterior16 carrier. Native price/ensemble selection remains the next named morphism; full normalized outcome probabilities alone sum to1. |
+| The full finite experiment is exactly natural under simultaneous field/path/detector pullback. Its first/second Ward identities preserve the old fixed-detector response; Schur descent requires actual retained equations, not coordinate relabeling. | [Full-experiment Ward/descent](A4D_FULL_EXPERIMENT_WARD_AND_METRIC_DESCENT.md), source7bc607df. The linear/nonlinear Einstein selector is conditional on metric-only locality and derivative order; it does not select the native price. |
+| A real retained section now exists for all10 constant physical metrics near the faithful stored root: observer3/link4 and seven density coefficients solve their own equations. The reduced metric Hessian has7 positive and3 zero directions. A flat constant-volume/same-R curve still has positive response. | [Actual homogeneous metric reduction](A4D_HOMOGENEOUS_PHYSICAL_METRIC_REDUCTION.md). All2040 density/frame6 neutral parameters and reference128 remain. This closes a concrete zero-mode Schur consumer and excludes pure EH+Lambda+sameR there even after retained elimination. It is not a general inhomogeneous or full-Lorentz theorem. |
+| At the unchanged v8 parameters the full16 leading scale equation has a unique root in [2.4,2.5]. The complete common vacuum/top first-corrector problem is then resolved: its full causal field source forces equal populations, whereas every balanced density has amplitude residual squared at least1/(8s^4), regardless of rank/phase or real field corrections. | [Joint cone preparation/source](A4D_GHZ_CONE_JOINT_FIRST_CORRECTOR.md). This also exhausts common REAL coordinate-form E0 via the earlier support projection. Explicit unbalanced amplitude counterjets were derived and rejected by the actual field row. Other leading states/geometries, momentum dependence/coherence and non-C1 scaling remain open; the original raw terminal is unchanged. |
+| The complete curved tensor a4 retains the initial Hodge curvature and its cross term. Its tensor16 symbol has positive energy eigenvalues4/3 and4/9; T=0 is locally isolated among all small variable critical tensors on the flat torus. On positive Einstein G, both its T=0 tensor source and geometric a4 metric pullback vanish. | [Curved tensor source/ellipticity](A4D_CURVED_TENSOR_A4_SOURCE_AND_ELLIPTICITY.md), consumed at `00471421`. This supplies the missing coefficient-level variable-field block, not C4 selection, actual full-price stationarity or Lorentz Einstein identification. |
+| A genuine homogeneous family through the finite v8 root keeps EH, volume and its actual shell R constant, while the same full price has strictly positive second variation. The fixed-beta limit is a torus shape potential; conditional short-time suppression does not choose its native schedule. | [Flat-modulus/observer packet](sources/d0_native_flatmoduli_action_2026-10-16/RESULT_RU.md), consumed at `00471421`. No pure EH+Lambda+that-R action identity exists on this conditional family. Its zero-shift, twist-free scalar identity is a geometric input; an actual native comparison/observer price and original h^-2 estimate remain required. |
+| The literal stored metric-image ranks are10/9/8/7/5. With full-support momentum, Bianchi leaves one undetected source; an ordinary conformal row completes a regular fixture but fails an exact exceptional smooth momentum. | [Stored source-image packet](sources/d0_native_gr_source_image_2026-10-16/RESULT_RU.md), consumed at `bb6a704d`. Its helpers and both exact JSONs are now tracked; reported normal/optimized results are preserved without replay. A derived physical source row or admitted larger domain is required, not a scalar-weight similarity. |
+| The complete coframe scale source requires `M z beta Z<1`. A finite minmax bound gives `Z>=c/beta^2` on uniformly controlled full16 coefficient families, without a heat-limit assumption. Fixed positive Mz therefore excludes stationary beta->0 at any record-depth schedule in that class. | [Full source, Section7](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement). The native clock/record/feedback/measure law and its complete derivatives must pass this test. Fixed-beta v8 refinement remains valid; uncontrolled microstructure, extra native costs and the original fixed-source terminal are not decided. |
+| The complete faithful finite joint kernel and local critical locus are classified: all Fourier blocks are solved, and every nearby solution lies in the exact flat family with the density and three extra Lorentz-Gram moduli retained. | [Full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md), Section11. Small nonflat continuation from this same full-rank root is excluded. The next input is rank-free native preparation/joint dynamics; physical admission and refinement remain open. |
+| The actual closed-record orbit lies in the SO3-fixed preparation sector of the full16 carrier. A smooth amplitude path reaches rank8 at unchanged reference128; a rank-free positive source-image criterion retains every field row. | [Native memory/source fibre](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md). Conditional flat-price result: native versus packet link-axis signs must be converted. Faithful-shell numerical inertia is not inherited at the rank boundary; CAR probe admission and history/preparation cost remain open. |
+| The three homogeneous connection-source components have an exact attainable-set support function at the fixed root; a pure preparation explicitly realizes an ellipsoid inside it. Rank-aware equations retain every preparation Euler row. | [Source capacity and nonlinear selection](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md). Consume at the rank8 boundary or preparation-distant stationary points after the faithful local classification. This is not a full field source inverse; a frozen-preparation spectral crossing is not a coupled branch. |
+| The actual rank8 preparation is now locally classified on the full amplitude domain: all40806 normal field directions are nonzero, with inertia33954+/6852-. Every nearby joint root belongs to the exact57195-dimensional flat family, including rank births. The preparation path from the faithful endpoint must nevertheless contain extra joint linearized kernels. | [Complete pure-memory result](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_NORMAL_FIELD_RESULT.md), [joint owner, Section14](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md). The pure nearby search is exhausted. Section14 now consumes a certified unique q3300 interior crossing and nonzero memory-source pairing; the mixed-memory proof excludes the pure q/−q field crossing even with arbitrary first velocity along that memory fibre. Additional field modes and general nonlinear branches remain open, together with physical admission/refinement. |
+| The coordinated q3300 packet localizes one unique legacy Schur crossing to `[0.43032,0.430405]` and encloses the grade-four source-neutral pairing in `[0.3110574666,0.8594475318]`, strictly positive. | [Legacy crossing witness](sources/d0_q3300_mixed_crossing_witness_2026-10-16/README.md), source `5ff922083b5481682a82488c2f984a030162eeb4`. It excludes that particular four-source fibre test, not a full-Lorentz branch. The mixed old-pure path already fails the extra boost equations. Fixed inputs/checker/output match the source receipt; its reported normal/optimized runs are preserved without replay. |
+| The actual stored Dirac on the entire bounded exact adjoint class has a full16 positive representation with unitary returns. The same literal v8 instrument, heat/feedback/matter price and all observer/preparation source jets intertwine on every admitted curve. A genuinely curved native row-rotation has an explicit full128 matter second lift, but its complete directional Hessian lies strictly between0.089 and0.091. | [Unified source, Sections 0.3 and 3.3–3.5](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [v8 root owner](sources/d0_record_generated_heat_v8_2026-10-14/RESULT.md). The operator/program arrow is established for the declared conditional v8 price; physical primitive/price admission and native refinement remain. The native wave's first velocity is excluded from the joint critical kernel, not all curved roots. |
+| One retained AF process represents the literal engine beyond its previous fifth-step mismatch. Compatible positive preparations and64 equal-weight settings at n=11 are explicit. | [Adaptive engine](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md), [supported preparations](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md), [inherited settings](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md). Full16 sectors and labels remain; this is not a moving-geometry law or admission of smooth variations by the Z[a] executor. |
+| The complete second AF price has an exact coherent preparation minimum, noncommuting Hessian and Schur elimination. Its density-block inverse satisfies `norm(M_T^-1)<=log(phi)/p^6` uniformly in level and dimension. A coherent compiler preserves the selected price up to constant code cost. | [Preparation theorem](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md), [full second source and uniform inverse, Section 5.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [coherent compilation](A4D_COHERENT_COMPILATION_COST_DESCENT.md). This is the actual output-channel metric, not a replacement Gibbs action or full field/amplitude inverse. Admission and physical action selection remain separate. |
+| A common comparator/native-metric family is explicit, including all10 metric tests. Its actual ten raw metric and six frame costates are zero off shell. A different chart point belongs to the literal raw engine ring and matches its positive pairing, but its next output cannot return to the same probability chart through any frame at fixed native metric. | [Matter-clock binding](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md), [complete field source, Sections 0–3.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). The finite theory requires joint stationarity. The full-class binding above does not yet select the physical preparation, complete action or aggregation source; a metric update per engine tick is not a primitive requirement. |
+| The full observer sector has the same order as the Einstein term. A given Lorentz link has retained polar factors and full16 Gram trace `16 c_pair²`. The basic geometric constraint now has an exact nonlinear chart and complete first/mixed-second link jets. | [Lorentz/source identity](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md), [complete field source, Sections 4–4.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md). The Hessian retains its link-acceleration term. The boost diagnostic is not a newly selected action, temporal update or automatic contribution to stored positive heat. |
+| Actual preparation has KL-mass and noncommuting readout sources. Child-dependent golden clocks give a nonatomic limit. The concurrent central-program theorem now transfers all Euler rows of a given Lorentz action exactly, and its actual minimizing preparation has the same address limit with rate `O(p^(2c/17))`. Density/coframe transport has the explicit stored-operator remainder `[M_(chi^-1/2),D]`. | [Complete source, Sections 5–6.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md), [central variational transfer](A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md), [history/density owner](A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md). Central programmability is not forcing of the physical action. The scalar Gram repair is derived but not selected; geometric volume and address measure remain distinct. |
+
+The [foundation-led primitive reduction](A4D_FOUNDATION_FORCING_NOT_CATALOGUE_SEARCH.md)
+is now consumed: representation equalities are proved on primitive families
+and propagated to all finite ordered words, with actual first/second jets.
+This avoids a catalogue of arbitrary actions. The remaining native
+operational admission and full Cost−Info price diagrams are not replaced
+by programmability of a desired Q.
+
+The coordinated observer/holonomy synthesis supplies a more basic boundary
+than a further memory scan. The existing chart already preserves n along
+all stored links. Under its stated four-dimensional smooth/torsion-free
+Levi–Civita identification, that gives an ultrastatic vacuum and local
+flatness. The owned nonflat vacuum pp-wave fails this parallel-timelike
+condition; it remains a control from the separate conditional Palatini
+sector. This is rank-independent and does not rule out curved matter
+solutions, torsionful sectors or a separately reconstructed full connection.
+The main programme therefore needs the native full Lorentz comparison
+and its missing transverse source, or a derived reconstruction of that
+connection with the full price/source map. Path/observer-fibre isometry
+is an algebraic interface, not admission of a new physical process; the
+own-leg adjoint condition remains an additional boundary. Its narrow
+65-check packet is preserved by source identity without replay here.
+
+The [new positive-adjoint construction](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md)
+now resolves the explicit matrix/source part of the first route for a fixed
+forward operator. Local Julia dilations use the same32 labels, coefficient
+qubit, golden port and retained128 outcomes; no global square root of Delta
+or new calibration is required. The complete v8 scalar function and all
+observer/matter/normalizer derivatives are retained. This supplies a
+specific generator/adjoint/outcome/price diagram for native admission;
+that diagram is not established by matrix constructibility alone.
+
+The new source also changes which preparations are roots. At the same
+homogeneous geometry, every full Lorentz boost row vanishes in the
+product E0 class exactly when time occupation and each spatial occupation
+are both1/2. These are derived Euler equations. The old chi=(mask1+mask15)/sqrt2
+fails them; chi_bal=(mask0+mask1+mask14+mask15)/2 satisfies them and is a
+rank8 joint root of this declared matrix interface with reference128.
+The earlier old-chi classification and interior-kernel theorem remain
+results of the stored sector. They do not classify the new full-Lorentz
+domain or prove a native preparation law for chi_bal. The immediate
+programme obligation is the actual native generation and full retained
+price of the explicit onsite comparison gates.
+
+The coordinated [coframe/torsion reconstruction](A4D_COFRAME_TORSION_INTRINSIC_GR_RECONSTRUCTION.md)
+also resolves the algebraic reconstruction part of the second route.
+For a nondegenerate coframe, metricity and torsion-free reconstruction
+determine all24 connection components; the exact transgression recovers
+the intrinsic Einstein covector including its boundary and moving-scale
+terms. A local regular nonflat vacuum pp-wave fits the original stored
+kinematics with A=I. Thus the locked connection itself need not be the
+full physical connection, and its parallel-observer theorem does not
+exclude curvature encoded in the coframe. The packet's source identities
+and reported211 checks/four mutations are preserved without replay here.
+
+This geometric result does not establish the physical source bridge.
+The remaining equation is the actual native price/source, pulled back
+through its admitted variations, versus the intrinsic geometric source
+plus independently derived matter/observer/archive terms and a controlled
+refinement remainder. Those terms cannot be defined as the residual to
+Einstein. The new positive-adjoint instrument supplies an explicit tested
+matrix source on its stated domain; the reconstruction supplies a full
+geometric covector. Their equality, native generation and the original
+fixed-g/fixed-tau/raw terminal remain obligations.
+
+The [complete scale test](A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md#7-полный-масштабный-баланс-и-препятствие-small-heat-refinement)
+now supplies a necessary constraint on that bridge. With fixed calibrations
+and an admissible joint coframe dilation, the same full H+J+R price gives
+`S_dot/2=-T1/Z+M z beta T2+R`, with `T2>T1>0`.
+Every critical point therefore requires `M z beta Z<1`, retaining the
+full thermal trace and reference multiplicity. On any one uniformly
+controlled whitened frame, finite minmax gives `Z>=c/beta^2` at small beta,
+for arbitrary integer depth schedules. A stationary beta->0 route with
+fixed positive Mz is excluded under those bounds. This uses the full
+feedback term, not only the earlier fixed-temperature heat diagnostic.
+The existing v8 family has constant beta and remains a valid input.
+The consumer must derive the actual record/clock/feedback/measure law,
+including moving-calibration or extra native-price sources if present;
+choosing a convenient running z does not establish that law. Neither
+uncontrolled ultraviolet links nor the original fixed-g problem is closed
+by this test.
+
+The coordinated [legacy q3300 witness](sources/d0_q3300_mixed_crossing_witness_2026-10-16/README.md)
+is now preserved byte-for-byte from `5ff92208` in this same PR. Its fixed
+13-dimensional Schur calculation gives a unique crossing on the stated
+bracket and a strictly positive grade-four pairing with the actual
+second-order operator, including occupied/predecessor nodes and the mixed
+chart jet. The four legacy source constraints are the certified fibre;
+do not silently substitute full-Lorentz rows or infer an all-q theorem.
+The recorded Python3.9.6 normal/optimized output and fixed input hashes
+were checked for identity, without another mathematical run. This closes
+the request to preserve that local result and prevents another search at
+the same legacy crossing. The next native-process/source proof retains
+the enlarged domain and its derived preparation balances.
+
+The concurrent [memory-fibre transversality packet](A4D_MEMORY_FIBRE_CROSSING_TRANSVERSALITY.md)
+at `d2d6fc60` supplies a second cokernel test on that old stored preparation
+segment. The actual source-neutral delta_sigma gives pairing below-0.8441
+at the unique q3300 crossing in(0.42,0.44). It excludes the pure q,-q
+field velocity with zero first-order memory velocity. The additive
+[quotient-jet proof](A4D_MEMORY_FIBRE_MIXED_MEMORY_VELOCITY.md) now shows that
+an arbitrary first-order tangent along this smooth stationary memory fibre
+does not change the cokernel pairing. Thus the q-only crossing velocity has
+no second-order stationary jet even when its first-order memory component is
+nonzero. Velocities containing additional field modes remain open. This is
+consumed in the original stored interface, whose old pure endpoint fails the
+enlarged Lorentz boost rows; it does not transfer to the full-Lorentz domain.
+The separate exact grade-four witness for the legacy four-source interface
+remains a second source-neutral obstruction, not an all-mode theorem. The
+checkers/current input hashes and the separate `a6ee61ef` document-only
+receipt repair are preserved without repeating the interval calculation.
+
+The next common-process statement must satisfy these obligations on the
+same admitted fields. Its remainder cannot be defined as the difference
+from a desired Einstein source. The derivations below remain a durable
+history; the table is the entry point to the current scientific route.
+The [five-file intake](A4D_NATIVE_RECORD_SECOND_JET_SOURCE_CLOSURE.md),
+its corrected heat/second-jet interface and byte-preserved original inputs
+remain part of this synthesis.
+
+The [native coframe/source calculation](A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md)
+now goes beyond the algebraic geometric reconstruction. Correctly evaluating
+the existing full Lorentz forward channel on +omega_LC gives exterior d on
+all16 grades. For a general link connection the full positive heat source
+has eight leading trace/cyclic equations and16 actual tensor operator
+directions invisible to a2. Their a4 is an explicit projected curvature
+source; its only constant tensor critical point is zero. A curved exact
+witness gives a2=0 but a4=4lambda^4/3. The supplied scalar-weight matching
+claim is disproved on the same pp-wave: its weight jets and Lorentz L_T
+vanish while the actual positive heat difference is2|grad H|^2.
+The owner also derives the complete normalizer/feedback coefficients
+multiplying dA0,dA2,dA4 and retains dR. Thus no YM/torsion term or stress is
+inserted by hand. The next consumer is the uniform finite-B trace/source
+estimate and the actual native calibration/preparation law; an a2 or a4
+stationary equation alone is not the full price equation.
+
+
+## Backward Einstein composition: central pointer and complete source basis — 2026-10-17
+
+The new [source-completion memo](A4D_BACKWARD_EINSTEIN_SOURCE_COMPLETION.md)
+consumes this same continuation at scientific source
+`3f368179627acc9f2c3e9616df729ac2280a77a0`; it adds no physical price or
+independent task. The bounded packet is
+[sources/d0_backward_einstein_2026-10-17/](sources/d0_backward_einstein_2026-10-17/).
+
+For the existing central compiler, full block-preserving pointer output
+factorizes as `q_alpha,k=q_alpha P_jk(z)`, with the corresponding complete
+reference. Exact classical KL chain rule gives the same geometric
+`lambda a dQ` as the quantum terminal price, for every old preparation.
+The true pointer optimum is the already derived quantum faithful envelope,
+while its minimizing preparations form an entire convex fibre of fixed
+measured masses. This removes universal quantum gain and unique full
+preparation from this particular first-source route. It preserves actual
+test admission, preparation reachability, additional original costs and
+the distinction from SAME-history likelihood price.
+
+The memo also constructs nine finite nilpotent coframe shears
+`hat_e_epsilon=(I-epsilon ell ell_flat/2)hat_e`, with exact
+`g_epsilon^-1=g^-1+epsilon k tensor k` and unchanged determinant.
+Together with full scale they form an explicitly invertible basis for
+all10 symmetric source rows. The fixed-mass density dressing is an
+involution; scale is available without violating normalized masses.
+The reconstruction has internal-frame packed10 raw-l1 inverse bound5/2 for the nine null
+rows and1 for trace (full16:17/4 and1). After the explicitly bounded original frame/packing conversion C_T, one
+common cell sum and the original h^-2 normalization are preserved. A restricted native chart is
+not extended by this geometric algebra, and no invisible connection mode
+is declared gauge.
+
+This is an equivalent complete testing interface for the original
+`E_Q(Q_h,K_h)-E_Q(Q_h,K_h^sm)` gap, NOT the tautology from comparing two
+identical prescribed-source equations. Actual Lorentz descent and the
+common bounded frame conversion remain required. The next central
+consumer is the same complete native output/reference/cost source splice
+`dA_native=lambda_h a_h dcalQ_h+r_h`, including the independently specified
+matter/source in the SAME calQ. Exact splice preserves roots even when
+lambda_h decreases; approximate splice needs
+`||r_h||=o(lambda_h h^2)`. The equation residual and the designated comparator residual are explicitly
+separated in memo(37a); the source splice only controls the former. Native
+programme/price selection and the non-tautological joint-refinement terminal
+remain open. No status or
+claim promotion follows from the bounded algebra.
+
+## Accepted support at the continuation baseline
+
+The accepted baseline includes three bounded outputs that now have named
+consumers in this synthesis. Their original result/checker bytes are retained.
+
+| Input | Substitution in the common argument | Remaining hypothesis |
+| --- | --- | --- |
+| [#330: preparation second variation](sources/d0_medium_preparation_second_variation_2026-10-16/RESULT_RU.md) | The noncommuting divided-difference formula, coincident-eigenvalue limit and moving-normalizer term supply the prepared-price block in the Schur reduction of complete-source Section 5. It is compatible with the already derived noncommuting preparation Hessian; the two are not separate action terms. | Faithful coarse output, the stated `I_safe` and the same channel are required. It does not admit the amplitude lift, cross rank birth or invert the full joint field Hessian. |
+| [#332: normal shape/measure covector](sources/d0_medium_anisotropic_normal_source_2026-10-16/RESULT_RU.md) | Retain `delta Q2 = <delta Sigma,S>/2 + sum tr(L_C delta A_C)` when differentiating a genuinely admitted normal-volume readout. This keeps the measure and frame contributions visible. | This normal carrier is not the CAR density, the positive metric or a new matter action. The pure `c delta R/2` reduction requires a fixed-`c` isotropic **family**, including `delta c=0` and `delta Sigma_TF=0`, rather than isotropy at one point. |
+| [#333: finite source reflection](sources/d0_medium_lean_source_reflection_2026-10-16/RESULT_RU.md) | For an actual right inverse `L W=I`, use `e=W*(a-r)` and its `l1` bound in the M05 ten-row source lift. Keep every direct/internal covector and the factor two on packed off-diagonal metric entries. | Existence, norm and physical admission of this same `W` are still inputs. The Lean theorem supplies no continuum or native right inverse. |
+
+A boundary needed when consuming #332 is explicit: pointwise `Sigma=cI`,
+`delta c=0` and a fixed frame do not force `delta Sigma_TF=0`. On its
+owned two-normal fixture `S11=70`, `S22=4`, the admissible positive curve
+`Sigma(t)=5I+t diag(1,-1)`, `delta A=0`, has `delta Q2=33` and `delta R=0`.
+Thus this synthesis uses the full covector, and uses the cited record-Theorem-B
+stress formula only for its fixed isotropic measure family. The packet's
+pointwise label alone is insufficient; no physical stress is inferred from it.
+
+The concurrent [same-price unfolding](A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md)
+from `3a3c9dda89f84dcf2d2ffd3ee83ffe6126b70548` is preserved as nine
+additional files in this same Draft. It supplies exact auxiliary profiles
+`sigma=K/Tr K`, `X=[(1-z)I+zK]^-1`, their full source derivatives and
+Schur elimination for the existing v8 action. These are mathematical
+auxiliaries, not a new physical preparation or a second AF price. For the
+fixed positive calibrations of that action, their inverse bounds and finite
+history/source residual estimates remove those auxiliary inversion premises.
+They do not invert the physical field block or admit its primitive program.
+The variable-calibration derivative remains the full equation (7); the
+source-error estimate (12) is consumed here only at fixed `beta,M`; the
+Delta-based bounds (13)–(15) also retain fixed `alpha,m,z`.
+
+The [full joint system](A4D_NATIVE_FULL_JOINT_KERNEL_AND_MATTER_REDUCTION.md)
+now classifies the complete local faithful v8 critical locus. The exact
+nonlinear elimination of all16,744,448 real Q-amplitudes retains the full
+reference, moving normalization and signed complement resolvent. Every
+shell-transfer block and q0 is solved. A single shared Clifford/moment
+validator covers the remaining483 frequency classes on the entire original
+root rectangle, with maximum signature distance below0.001184. The
+canonical field-only inverse has an exact integer bound1094698 at fixed L8;
+this is not a refinement-uniform or raw-response estimate.
+
+The complete real reduced density/field Hessian has inertia
+(39615 positive,1493 negative,40811 zero) on81919 variables. Its kernel
+integrates to an exact family: local Lorentz/observer representations,
+three additional constant SO4/SO3 Lorentz-Gram directions and16232 real
+positive-density source annihilators. Those density directions are retained
+and are not purification gauge. A genuine reduced functional
+`Phi=F_price+epsilon_hat`, with `Tr(sigma E)=0` and moving Gram normalization,
+makes normal IFT applicable. It proves that **all** nearby faithful joint
+critical points lie in this family. Their Lorentz Gram is constant and
+linear-link holonomies are identity: nearby nonflat roots of this finite
+regular full-rank problem are excluded.
+
+The [nonlinear proof](sources/d0_native_joint_kernel_2026-10-16/LOCAL_CRITICAL_LOCUS_CONSUMER.md)
+and [complete spectral result](sources/d0_native_joint_kernel_2026-10-16/FIELD_INVERSE_RESULTS.json)
+therefore change the next consumer. Stop trying to obtain curvature by a
+small continuation of this same faithful root. Consume the actual native
+memory/source rank-free branch, keeping `E C0=0` and every remaining
+preparation/field Euler row. A frozen-sigma Hessian zero alone does not
+establish joint bifurcation. The physical native joint transition/action and
+controlled refinement are still required; the independently fixed smooth
+metric/source and original unweighted raw terminal remain OPEN.
+
+The concurrent [rank-aware memory continuation](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md)
+is consumed at that boundary or at a preparation-distant stationary point.
+Its exact source capacity concerns three homogeneous connection expectations
+for `rho=P_Omega/8 tensor sigma` on the full internal C16 carrier, at the
+fixed root. Its pure-state ellipsoid is a feasibility witness inside that
+capacity, not an arbitrary prescribed field source. The equations
+`E C0=0`, `E2 C0+2 E1 C1=0` and the `M_v` neutrality test retain the
+preparation equations. The midpoint frozen-preparation crossing supplies
+no coupled branch: its floating location and neutrality residual are
+diagnostic only.
+Use the owned packet-to-native basis conversion and source sign.
+The [golden memory/source alignment](A4D_GOLDEN_MEMORY_SOURCE_ALIGNMENT.md)
+identifies `Q(1)=p^3` as a rotation coordinate and source ratio. The actual
+return remains isometric with a bounded recurrent orbit; this identity
+does not supply volume growth, refinement or physical preparation cost.
+
+The full rank8 normal operator is now solved, retaining its actual second
+chart jet and signed Q. All488 new outward blocks passed on the unchanged
+root rectangle; the largest signature-distance bound is
+`0.007301662519523286<1`. Its40806-dimensional real normal field inertia is
+`(33954 positive,6852 negative,0 zero)`. Source rank151 and the smooth
+32616-dimensional amplitude fibre retain every rank birth. Normal IFT
+therefore exhausts nearby rank8 roots by the exact57195-dimensional flat
+family. The full normalized-amplitude inertia is
+`(16774457 positive,11099 negative,57195 zero)` on16842751 variables.
+See the [complete proof and bounds](sources/d0_native_joint_kernel_2026-10-16/PURE_MEMORY_NORMAL_FIELD_RESULT.md).
+
+This changes the consumer again: stop a nearby curved search at this pure
+endpoint. On the exact flat critical path
+`rho_t=(1-t)P/128+t Pi_chi/8`, the normal form is affine in t. Its negative
+index increases by5510 real directions between the endpoints, so interior
+normal degeneracies are forced. Already q3300 changes from12+/1- to11+/2-;
+because it is outside Omega-Omega, its zero lifts to the full joint
+linearization with every preparation row retained. This proves existence
+of an interior kernel, without certifying the floating location near
+0.43036 or a nonlinear branch. Within this finite sector the next consumer is strict
+localization and the actual `E2 C+2E1 C1=0` / source-neutral `M_v` test,
+alongside native physical transition/action admission. Neither endpoint
+classification excludes other preparations, distant roots or a controlled
+refinement family.
+
+The concurrently published [memory-preserving source code](A4D_MEMORY_PRESERVING_SOURCE_CODE.md)
+adds a full16 unitary syndrome/memory decomposition. One encoder preserves
+the entire four-dimensional memory code while its source is independent
+of the logical state on the balanced engine family; the logical `Z` term
+is retained for other states. For one **fixed** native field velocity,
+four actual even-orbit states decide its necessary memory second-order
+condition and five decide every first field row along that same orbit.
+Use these finite tests only after obtaining the actual native `M_v` and
+kernel velocity, with the packet-to-native bridge. They do not supply
+that velocity, a joint root, physical encoding cost or transition law.
+The coordinated [finite detector/orbit proof](A4D_MEMORY_FINITE_DETECTOR_AND_ORBIT_OBSTRUCTION.md)
+now reduces the infinite even-orbit memory test for one common actual v
+to one nonnegative SOS `D3(M_v)` on a mixture of three real histories.
+Its zero is equivalent to those memory projections on the entire orbit;
+a positive value excludes that v as a common continuation of the orbit,
+with an explicit uniform residual bound. This orbit consumer retains the
+five-state first-field test and all other stationary equations. It does
+not replace the direct source-neutral test at the interior mixed root.
+The separate
+three-context tomography concerns real logical4 densities, retaining the
+full16 complement. The imported slim checker and the author's larger
+local diagnostic were not rerun here; neither observable algebra nor SOS
+derives physical detector admission.
+The incoming six-file package and its original execution receipts are
+preserved without replaying its unchanged calculation.
+
+The actual whole-blank engine orbit itself extends, with the same fixed
+SO3-fixed E0 sigma_j and reference128, along all three extra Lorentz-Gram
+directions: its stabilizer link jets annihilate E0. This rank8 existence
+statement retains every full16 operator component. It neither selects the
+Lorentz Gram nor extends the faithful local completeness/inertia theorem
+to the rank boundary. The declared v8 price is still conditional; no new
+physical admission follows from this finite classification.
+
+The concurrent [affine endpoint/CAR order obstruction](A4D_NATIVE_AFFINE_TRANSLATION_CAR_ORDER.md)
+now narrows the physical readout interface independently of the Fourier work.
+Pure affine translations e0,e1 commute and have one endpoint, while the
+specified full16 reference returns have exact commutator entry
+`2p−2=sqrt(5)−3 !=0`. Therefore an endpoint-only path homomorphism or
+anti-homomorphism matching those four reference returns is impossible.
+This matching hypothesis is explicit; no law that physically forces a
+translation to select those records is inferred. A stateful/history- or
+link-dependent native transition remains open. The companion's20 exact
+normal/optimized controls are consumed after source/result and transitive
+input hash verification, without replay or a new task/process.
+
+The [actual-seed matter-memory companion](A4D_NATIVE_AFFINE_PATH_MATTER_MEMORY.md)
+at `0ff0a93f` shows where one order distinction can already live: on masks1
+and15 of the existing whole-blank seed, the externally selected reference
+words01/10 differ in masks2/12 by `2−2p` / `2p−2`, with squared distance
+`16−24p>0`. Mask1 is the role0 one-form; it is not the scalar vacuum.
+This preserves all16 components without a new register. These externally
+chosen words are not declared autonomous engine trajectories: after U0 that
+engine again selects U0 from its current first grade.
+
+The [non-Bogoliubov companion](A4D_NATIVE_RECORD_NOT_A_BOGOLIUBOV_LINK.md)
+at `e198daca` excludes another specific identification: the actual first
+autonomous record has `U0 c0 U0^T` outside the eight-dimensional CAR-mode
+span, certified by minor `−a*p !=0`. A separate native link or nonlinear
+joint state law remains possible; the record is not thereby an exterior
+lift of an affine frame map. These26/53-control results are consumed from
+their exact sources and input pins without replay or a new Lean declaration.
+
+The adaptive owners already give a stateful cocycle of their actual defined
+trajectories, `K_(n+k)(m)=K_n(T^k m)K_k(m)`, and its full AF/CAR selected-word
+intertwiner. The affine linear part separately has `Lambda(D_path)`.
+The missing arrow is native edge/state to the existing record/controller,
+then joint `(q,D,b,m)` evolution with its actual pairing, full trace and
+refinement. An isometric reducing AF89/CAR16 sector map alone is insufficient:
+its actual feedback multiplicities are5 versus4. No extra scalar channel is
+silently discarded to claim equality of those full prices.
+
+The [fixed-record finite-resolution bound](A4D_NATIVE_CLOSED_RECORD_FINITE_RESOLUTION_LIMIT.md)
+as clarified at `22ae725d` adds a specific constraint on that transition. The actual
+closed seed orbit has distinct states with separations tending to zero;
+each fixed finite isometric inheritance preserves those distances and stays
+in its proper inherited subspace. No uniformly positive current-state readout
+margin follows for a fixed Lipschitz detector. A native state-dependent
+refinement could excite child-complement directions, but its action/readout
+law is still required. This is a fixed-carrier consequence of the already
+owned infinite-order rotation, not a global obstruction to refinement.
+
+The [constrained-price CONTROL intake](https://github.com/gvakhrushev/d0_15/pull/322)
+remains a separately scoped, frozen review input; #334 owns this continuation.
 The [AF trace/preparation boundary](A4D_NATIVE_AF_TRACE_PREPARATION.md)
 now proves that all-level nonnegative compatibility forces the existing
 golden trace; no Perron eigenprofile or ratio is assumed. Finite-horizon
@@ -1262,6 +3219,102 @@ for exact joint-critical sequences, with the #216 smooth branch evaluated on the
 
 The exact #232 period-four Y family is a curved nongauge joint vacuum at the flat metric. It rules out a universal claim that every zero-residual connection lies in one smooth/LC-like fiber. The response question is whether its stationary center can remain compatible with a genuinely curved metric background.
 
+#### Exact warped-lapse control for the uncorrected #232 field
+
+The exact local control `certificates/a4d_y232_warped_lapse_residual_check.py`
+replays the pinned #232 Cayley field on the fixed smooth metric samples
+`S_n=diag(N_n,1,1,1)` while keeping all four fast phases at one slow
+transverse site. With the flat #232 links left unchanged, all 16 solder
+Euler rows vanish, but the only nonzero connection rows are exactly
+
+\[
+E_{\omega_{2},J_{12}}=E_{\omega_{3},J_{13}}=N_{n-1}-N_n.
+\]
+
+The constant-lapse hostile control returns the exact #232 joint vacuum. For
+`N_n=N(hn)` on a smooth nonconstant positive lapse, the residual is
+`-h N'(hn)+O(h^2)` and is nonzero on an open set for generic curved profiles.
+This rejects the uncorrected flat-link substitution on a curved `Q_h`; it
+does not rule out a joint range/center correction, establish a response gap,
+or close either task terminal. The remaining finite-amplitude question is
+the nonlinear curved-background continuation of the #232 center with the
+uniform response comparison to #216.
+
+The same helper computes the exact first regular slow-order compatibility
+test at the flat-solder #232 point. Let `A0,Q0` be the period-four connection
+and metric blocks from the pinned `z=1` rational stencil, `A1,Q1` their first
+shift moments in the lapse direction, `T=(tY,tD)` the two exact connection
+center tangents, and `Dph` the 30 phase-difference rows of the metric output.
+The first-order unknowns are an arbitrary 96-component fast-cell range
+correction and both slow center slopes. For a phase-common prescribed source,
+the exact rational ranks are
+
+\[
+\operatorname{rank}\begin{pmatrix}A_0\\D_{ph}Q_0\end{pmatrix}=95,
+\quad
+\operatorname{rank}\left[\begin{pmatrix}A_0\\D_{ph}Q_0\end{pmatrix},
+\begin{pmatrix}A_1T\\D_{ph}Q_1T\end{pmatrix}\right]=97,
+\quad
+\operatorname{rank}[\cdots\mid b_{\rm lapse}]=98.
+\]
+
+An exact left-null row witness pairs with the normalized lapse forcing as
+`-220912187/1561479`. Thus no regular first-order phase-common lift cancels
+the mixed `epsilon*h*N'` forcing, even after both center slopes and every
+fast-cell range correction are allowed. This is a local perturbative
+compatibility obstruction, not an exact finite-lattice no-go: it assumes the
+regular first-order expansion and phase-common source at this order. It
+leaves nonregular exact roots, phase-dependent source jets, and any resulting
+normalized response gap open.
+
+The helper also checks actual nonzero Bloch frequencies without a slow Taylor
+truncation. For the sampled smooth lapse mode `N_n=1+epsilon*cos(2*pi*n/L)`,
+the exact first-variation system at each displayed root of unity has
+`rank(J_L)=96` and `rank([J_L|b_L])=97`, where `J_L` contains all connection
+equations and the 30 phase-difference metric equations. Reduction modulo the
+good prime `1000033`, with denominator `14` cleared and a root of exact order
+`L`, certifies this characteristic-zero inconsistency for
+`L=4,8,12,16,24,32,44,48,88,96,132,176,264,352,528,1056`; the conjugate Fourier
+mode has the same rank. The all-order certificate below removes the finite-list
+limitation for this same one-coordinate lapse family.
+
+An exact cyclotomic argument now covers every nonconstant periodic lapse mode
+in that coordinate. After clearing denominator `14` and multiplying rows by
+nonzero Laurent monomials, the augmented first-variation system is an integer
+polynomial matrix. The fixed minor on rows `0..96` has degree at most `141` and
+is nonzero; if it vanished at a primitive root of order `n`, then
+`phi(n)<=141`. The bound `phi(n)^2>=n/2` leaves only `268` candidate orders,
+with maximum `510`. A second fixed minor, on rows `0..94,96,97`, covers the
+orders where the first modular reduction is inconclusive. For each candidate
+order, a prime field containing a primitive `n`th root gives a nonzero
+determinant for at least one minor; the two inconclusive sets are respectively
+`{183,336}` and `{16,42,106}`, with no uncovered order. Since a characteristic-
+zero cyclotomic zero would reduce to zero in every such field, this certifies
+rank `96` for the correction system and augmented rank `97` for the source at
+every nonconstant root of unity. Thus no differentiable phase-common-source
+root branch passes through the flat #232 field for any periodic refinement in
+this one-coordinate lapse family. It still does not exclude disconnected or
+nonanalytic finite-amplitude roots, other lapse directions or phase-dependent
+source jets, and it supplies no normalized response gap; the #334 terminal
+remains open. Replay the [exact certificate](certificates/a4d_y232_warped_lapse_residual_check.py)
+with `python3 02_REGISTRY/research/certificates/a4d_y232_warped_lapse_residual_check.py`.
+
+The same literal finite-lattice evaluator now checks the entire real
+one-parameter Cayley orbit generated by `Y=J_12-J_13+J_23`, rather than only
+its pinned amplitude. For independent neighboring lapse samples, at each of
+the four fast phases and for all 16 solder variations, the solder Euler rows
+vanish identically in the amplitude. The complete 24-row connection variation
+has exactly
+\[
+E_{\omega_2,J_{12}}=E_{\omega_3,J_{13}}=N_{-1}-N_0,
+\]
+with no amplitude dependence. Thus when the adjacent lapse samples differ,
+retuning the amplitude anywhere on this uncorrected Y orbit cannot restore a
+joint root. This excludes only that amplitude-retuning route with the flat
+links fixed; off-orbit connection corrections, disconnected or nonanalytic
+roots, and a normalized response gap remain open. The exact certificate
+replays all four phase checks as part of the command above.
+
 The [quantitative pure-Y transport theorem](A4D_Y_PURE_CENTER_QUANTITATIVE_TRANSPORT.md)
 now derives a nonlinear gradient estimate directly from two literal boost
 Euler rows on each graph edge. It also reconstructs all 136 joint Euler rows
@@ -1299,6 +3352,38 @@ on a fixed small chart, in the actual specified norm. No separate
 inverse loss acts on the center gradient. The numerical mixed fields
 fail the necessary equations and are not joint witnesses.
 Neither task terminal follows.
+
+#### Exact diagonal #232 local jet update (19 October)
+
+The [diagonal microstructure slow-lift certificate](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md)
+now tests the formerly connection-only \(h^2z^2\) correction against the
+complete constant-solder vacuum source. The identity-link control has zero
+metric Euler rows on this cell-constant metric; the full discrete #216
+comparator is not rebuilt in this coefficient calculation. Stacking all 96
+connection rows with all 40 metric rows gives a 136-by-96 rational system
+with matrix and augmented ranks 88; one correction supported on role 0 at
+phases 0 and 2 makes every row zero. Thus this coefficient also supplies no
+local joint obstruction.
+
+The same certificate records the first-amplitude slope lift through
+\(h^3zx_0\): the 388-by-288 system has rank 264 on both sides, leaving 24
+directions, and its ten metric coefficients at \(h^2x_0\) and \(h^3x_0\)
+are identically zero over the full affine solution family. These are exact
+finite-cell Taylor facts only. The solder is constant over the cell; there
+is no neighbor-dependent smooth curvature, finite-periodic root, prescribed
+same-source comparison, or raw \(h^{-2}\) refinement estimate. The continuum
+Einstein source is zero on this flat probe, but the designated discrete #216
+branch has not been recomputed in that cell-constant coefficient calculation.
+The first actual curved-profile comparison is now owned by
+[a4d_y232_designated_warp_same_source_firstslow_check.py](certificates/a4d_y232_designated_warp_same_source_firstslow_check.py).
+For f(y)=1+sin(2*pi*y)/(100*pi) at y=0, it includes the true #216 first
+smooth coefficient and imposes all 96 connection plus all 40 same-source
+metric rows, allowing all 96 local link corrections and both flat-center
+slopes. The exact matrix/augmented ranks are 97/98, with left-null pairing
+4105021481/2353113600. Thus the pinned finite #232 leading carrier has no
+regular first-slow same-source lift on this curved profile. This does not
+exclude nonregular branches, an order-one retuning of the leading carrier,
+or exact finite-mesh roots, so neither #310 nor #334 is closed.
 
 ## Subsequence response law for small link-log deviations
 
@@ -1892,6 +3977,17 @@ reduced center/compatibility equations for a genuinely curved sampled metric,
 with estimates uniform under refinement.  Only after those steps can the
 owner-topology `o(h^2)` response statement, or an admissible response-gap
 counterexample, be promoted to a task-level terminal.
+
+One exact slice of the interior part of that spectral route is now closed:
+at `rho=(1,x,y,-1)`, the four selected 68-by-68 minors have no common zero
+on `(C*)^2`, so the phase-1/2 interior block has row rank 68 throughout this
+fiber. The proof reconstructs the minors by bounded CRT and gives the exact
+resultant gcd `x^230`; see
+[`A4D_THREE_RATIO_FIBER_REDUCTION.md`](A4D_THREE_RATIO_FIBER_REDUCTION.md)
+and its linked certificate. This slice result leaves the 28-dimensional
+interior right kernel, the remaining boundary rows, the generic three-ratio
+locus, full-symbol compact-complement rank, and the nonlinear response gate
+open. It is not a task-level application or H_TORUS proof.
 
 The exact [designated-germ normalization and tower audit](A4D_DESIGNATED_GERM_SCHUR_NORMALIZATION_AUDIT.md)
 contracts #273's independent Schur/Einstein symbol with the **same** normal
@@ -4501,9 +6597,4748 @@ not yet provide a single dynamics that both records the seed history and
 generates that source. It is a scoped decoupling result, not a core NO-GO;
 other native price terms and already-owned interactions remain possible.
 
-The next critical proof is an existing-owner transition coupling the engine's
-retained record into the current-active sector, with its own allowed
-variations, or a proof that the specific route is closed. No blending map or
-new physical selector is introduced. Native admission, source/Ward,
-stationarity, refinement, curved roots, soundness/recovery, GR and the
-original #310/#202/#317 terminals remain open.
+The autonomous scene word built around the engine is also exact-sector
+preserving on its full 64-coordinate local carrier and all 718 histories:
+its prepared seed stays in `R^{ {c,f} } tensor span{e_0,e_1,e_14,e_15}`.
+The positive-current curve has zero spatial CAR self-current on both this
+sector and its complement; its entire `r_1=2ap` response is the mixed term
+between them, with derivative `4p^3`. The currently owned engine and scene
+word never create that cross-sector coherence from their seed. This rules
+out one concrete memory-growth-alone route while leaving other action terms
+and native preparations open.
+
+The next critical proof is an existing-owner transition that creates this
+required cross-sector response, with its own admitted operation and joint
+variations, or a proof that the specific route is closed. No new physical
+selector is introduced. The supplied four-level/golden notes point to an
+existing construction that sharpens this target.
+
+## Exact base-level weld to Fibonacci record activation (2026-10-14)
+
+The existing `A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION` proves that three AF
+inclusions are the minimum for a covariant four-copy GNS representation. Its
+four apparatus coordinates carry the same literal `fullStep`, price cut and
+whole-blank projection as the CAR preparation. At `n=0`, `H_0=C⊕C` has two
+orthonormal matrix-unit vectors `e_X,e_Y`; the actual AF working module has
+dimension eight and embeds into the eight-mask invariant CAR sector.
+
+Let `V_AF` be the committed AF frame and `K` the owned CAR basis change
+restricted to spectator labels 0 and 1. The exact partial isometry
+`Xi_0=K V_AF^T` satisfies the fullStep, price-cut and blank-projector
+intertwining equations on the entire AF working module. Its kernel is the
+AF identity complement; the 34-dimensional AF carrier is not identified
+with the 16-dimensional full CAR carrier. The embedded eight-mask space is
+not reducing for all CAR current operators: its exact spatial leakage ranks
+are `(0,8,8)`. The source current is checked on the prepared orbit in the
+full CAR representation, but the full current algebra has not been lifted
+through refinement.
+
+The actual AF blank vector
+`V_AF(a e_0⊗e_X+p e_2⊗e_Y)` maps to the already owned CAR whole-blank
+state `B(a,p)`. One AF record step maps exactly to `U_CAR B(a,p)`, whose
+current is `e_0+2ap e_1`. Its Lorentz norm is `p^6`; the AF two-tick
+feedback eigenvalue and the genuine CAR current jet both equal `4p^3`.
+In working coordinates, the exact AF feedback matrix has rank two and
+satisfies `G_2^2=4p^3 G_2`; the CAR feedback intertwines through the same
+eight-dimensional isometry. The AF identity complement stays present and
+has zero feedback because the owned price cut does not select it.
+The shared normalization is exact:
+`delta_0=p^3/2`, `L_AF=8 delta_0`,
+`tau_6(e)=p^6=4 delta_0^2`, and `L_AF+p^6=1`.
+
+This closes the finite base-level representation weld and produces the
+cross-sector source from the actual Fibonacci recording operation on that
+working module. It does not admit the preparation as physical evolution or
+extend the weld to later AF levels, the AF complement, the full sixteen-state
+CAR carrier, or curved metric/link/matter variations. The next calculation
+is an all-level frame, not another local coefficient calculation. Under the
+actual PF-weighted AF bonds, the passive column is natural but the canonical
+three detail columns have exact defect ranks `6,15,39=3d_n` at `n=0,1,2`.
+This rejects reuse of those displayed frames, not the AF owner's allowed
+gauge-related choices. The next AF working module already has dimension 20,
+so an injective weld of all working directions cannot fit in the fixed
+sixteen-state CAR carrier. The remaining task is to test whether the existing
+commutant freedom yields a coherent growing CAR/AF weld and to pull it back to
+the joint `(q,D,b,m)` tangent. The supplied `ABCD` identities are one
+quadratic object, not four independent constraints; the Lean dimension ladder
+already proves `Q(D)=phi^(D-4)`, while a physical-dimension interpretation
+remains separate.
+
+## Original-observer chronological feedback descent (14 October 2026)
+
+The separate [chronological stationary-descent owner](A4D_NATIVE_CHRONOLOGICAL_STATIONARY_DESCENT.md)
+keeps the original first-grade observer and retained cut, rather than the
+alternative CAR-current readout above. Its all-angle whole-blank preparation
+has two uniformly regular corrected record steps, and its exact full16
+feedback pencil is `A(c)^2 B(c)^2 C(c)`. In the full regular joint chart, one
+actual scalar matter equation controls the complete differential of this
+feedback term: if that direction is physically admitted and its Euler
+component vanishes, then the entire feedback covector vanishes. For the
+owned homogeneous Hodge heat, the same scalar direction has zero heat jet;
+therefore `H+J` matter stationarity cannot use this feedback term to cancel
+the remaining heat source. This is conditional on physical admission and
+does not prove total-action stationarity, a ten-component physical source,
+Ward identity, curved root or GR. The original-observer chronology and the
+AF/CAR-current weld have not yet been identified on one common joint
+variation domain.
+
+The standalone checker passed 98 exact controls and 10 negative controls.
+It pins selected executed declarations from the original operator owners;
+that scoped AST provenance is not a full SOURCE or Lean-closure audit. The
+next critical join is one refinement-compatible, physically admitted
+preparation carrying the original chronology, the AF record and the full CAR
+current, followed by its actual joint tangent and all ten metric components.
+Until that join is built, the matched golden coefficients remain a finite
+representation bridge, not an Einstein source.
+
+## Test of the proposed two-tick stress projection (2026-10-15)
+
+The requested projection is now evaluated for the existing flat factor probe,
+with one fixed calibration and the complete packed metric convention. The
+positive Hodge covector is computed on all ten uniform metric directions; the
+actual joint solder lift then pulls it back to the Lorentz `q` directions. At
+`L=4`, `beta=log(2)`, and `Q=diag(4,1/4,1,1)`, put
+
+```text
+E0 = 16/257,   E1 = 256/(2^128+1),
+E2 = E3 = 64/(2^32+1).
+```
+
+In packed order `(00,01,02,03,11,12,13,22,23,33)`, the exact heat covector
+on the specified genuine `q`-lifts is
+
+```text
+( E0/4, 0, 0, 0, -4 E1, -E1 E2/32, -E1 E3/32,
+  -E2, -E2 E3/32, -E3 ).
+```
+
+The flat finite-probe Einstein covector is zero in these ten slots. Therefore,
+if the only available cancellation were the recorded-golden remainder
+`C_phi sigma`, its required pullback would be exactly minus this vector divided
+by the same positive `C_phi`; it is nonzero on seven diagonal/spatial-mixed slots
+and zero on the three time-space slots for this specified lift. The
+volume-preserving direction `V_q=diag(8,1/2,0,0)` contracts this requirement
+to `sigma[V_q]=-2(E0-E1)/C_phi`. The `E0,E1` labels here are zero-based axes.
+These are necessary target values, not a derived source law. The zero
+time-space slots belong to this solder/observer lift; they do not
+remove those three physical equations.
+
+The two already owned candidate mechanisms do not supply this target on the
+factor probe. For the complete fixed-golden operator class, frame/readout
+motion gives `sigma=0`. The actual normalized moving-record reference
+contributes `-4 E0 E3/(a p L^2)` (the one-based `E_1,E_4` in the
+factor-imbalance note), but the complete heat-plus-reference derivative still
+exceeds `1/10000` for every `L>=2`.
+Separately, for the actual two-successive full-CAR chronology, `J=J(c)` and
+`dJ=j(c) dc`. Its admitted scalar matter variation has `dc/dt=kappa>0`; when
+no other term acts on that scalar equation, feedback stationarity forces
+`j(c)=0` and hence `dJ=0` on the entire constrained `(q,D,b,m)` tangent.
+Thus the chronology's off-shell response cannot be re-labelled as on-shell
+gravitational stress.
+
+The smallest live problem is now sharper: identify an already owned
+non-feedback term in the *same* admitted preparation whose scalar matter
+derivative and full ten-slot pullback satisfy the required source comparison.
+The moving-preparation formula gives a candidate source only for its separately
+specified instrument; it has not been joined to the chronology price and the
+common `(q,D,b,m)` action. If that join is impossible in the fully described
+class, it will be a scoped obstruction for this action/preparation class,
+not a NO-GO for the whole D0 core. The exact ten-slot and chronology controls
+are `a4d_native_factor_imbalance_remainder_check.py` (1114 controls, 18
+mathematical mutations) and `a4d_native_chronological_stationary_descent_check.py`
+(98 controls, 10 negative controls); both passed on this source tree.
+
+## Full prepared-source pullback and joint source compatibility (2026-10-15)
+
+The next interface has been made executable rather than replaced by a
+tomographic assumption. The [analytic synthesis](A4D_NATIVE_RECORD_SOURCE_JOINT_CONTINUATION.md)
+derives the genuine count-instrument pullback, including the moving initial
+state, the event normalizer and noncommuting Kraus jets. An exact reverse
+recursion produces source-visible generator covectors from one base tape;
+the base tape and costates can be reused for different physical field probes.
+The formula is equivalent to independent full Kraus-word differentiation for
+the declared count-event observable. It is not an archive-erasure theorem.
+
+For the specified prepared term `R_A=Tr(rho_A Delta)`, the complete derivative
+of the already declared candidate `H_beta+J+R_A` is
+
+```text
+Tr[(rho_A-rho_beta) dDelta]
+ + Tr[(Delta-R_A I) dW_A]/Tr(W_A)
+ + z Tr[(I-zF)^-1 dF].
+```
+
+A full-archive remainder is retained whenever the separately owned tensor
+decomposition requires it. No equality of this candidate with native Cost-Info
+is assumed. The supplied coherent-state proposal's radial entropy tangent is
+not a unitary commutator tangent; the corrected instrument derivative supplies
+the legitimate tangent class. Physical response descent needs vertical
+stationarity and equality across preparation branches, not an injective
+tomographic readout.
+
+The same synthesis gives a concrete geometric consumer. At the literal
+physical L4 phase `(1,1,i,i)`, the full 24+10 Hermitian geometric Hessian has
+six independent source compatibility equations. All six link/metric rows are
+retained; reducing to five metric-only equations is valid only with proven
+zero link forcing. Actual joint image sources show that deleting the link
+reaction can falsely reject a compatible source. This is one finite reference,
+not a new all-phase rank census or a statement about an unknown complete
+native Hessian. The native coupling may change that Hessian and must be derived.
+
+This consumes the current source-interface and exact geometric owners without
+changing their actions, norms or terminals. The remaining owner input is one
+admitted common preparation defining its actual operators and field jets;
+its full covector can now be evaluated and tested on the joint equations.
+Refinement-uniform joint inversion, the native source/Ward, actual curved
+metric/matter solutions and the original fixed-source/raw-owner terminal
+remain open. Reproduce the single focused calculation with
+`python 02_REGISTRY/research/certificates/a4d_native_record_source_pullback_check.py`.
+
+## Finite tower ambiguity and the actual refinement mode (2026-10-15)
+
+The [tower/heat/source synthesis](A4D_TOWER_TRACE_HEAT_SOURCE_SYNTHESIS.md)
+consumes the supplied HTML without making its proposed five-return instrument
+or temperature match a new prerequisite. For the specified Fibonacci AF tower,
+the exact base-weight width is `1/(F_(N+1) F_(N+2))`. A genuine affine source
+observable with a uniform covector bound converts this width to a response
+error. On unnormalized Xi slots, the original four-dimensional raw norm costs
+`h^-6`; on an already normalized `tau=h^-2 Xi` it costs `h^-4`. The resulting
+logarithmic depth condition is explicit, but the native source map, its field
+jets and the uniform bound must still be derived. Convergence of trace values
+alone does not imply convergence of their field derivatives.
+
+For the declared full factor heat probe, the same synthesis proves the joint
+path `beta_L=c/L` has response limit `15/(32c^2)>0`, despite `beta_L->0`.
+Thus an actual temperature/refinement law is needed for the source interface;
+the golden tower or an exchange of iterated limits does not supply it.
+The corrected classical pullback loses the coherence covector by an error a
+in the stated input norm, and a normalized event calculation consumes the
+previous source recursion on that fibre. These results sharpen the existing
+joint source/refinement obligation. They neither produce an admitted exact
+fixed-source family nor replace the original #216 comparator/raw terminal.
+
+## Actual AF archive occupation and its complete source (2026-10-15)
+
+The [archive-occupation synthesis](A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md)
+now substitutes the actual recorded A9 state into the native AF heat-transfer
+reference, retaining its full 10,946-dimensional GNS trace. The six-step
+inclusion A3 to A9 has rank 34; it is distinct from the left Jones corner
+of rank 610. The exact archive occupation is
+`q_full=1-p^6(1-q_left)=0.98492609877889318...`.
+At the original fixed reference `beta=log2, nu=1`, the complete gap-source
+is `q_full-2728/2745 < -1/160`, rather than a source inferred from visible
+trace weights or a substituted Gibbs preparation.
+
+The actual v7 reduced source is only `-4/81435`; its archive remainder supplies
+`-0.0088317039677...` and restores the complete value exactly. Along the
+explicit full-vector lift by the already owned Jones isometries, the same
+occupation persists at every level N>=9, and the fixed-gap source stays below
+`-1/160`, tending to a value below `-1/80`. This is not uniqueness of the
+full GNS lift from its AF marginal. It shows which real source term the
+earlier trace-depth estimate does not control on this actual preparation.
+
+For this reference family the complete first variation factors through
+the actual occupation and its first jet:
+`dS=(q-p_thermal)dnu+nu*dq`, with both state and inclusion motion retained.
+If the gap is an admitted independent variable, its positive scalar stationary
+value is explicit; the remaining envelope source is still `nu_*dq`.
+No physical gap law or native Cost-Info identity is installed. This consumes
+the recorded preparation and archive/source owners and identifies precisely
+which additional source readout their join needs. The physical field-to-price
+map, other coupled terms, full stationarity and the refinement-uniform original
+terminal remain open.
+
+## Actual pullback of the new AF Lorentz carrier (2026-10-15)
+
+Sections 7–8 of the [same archive synthesis](A4D_NATIVE_ARCHIVE_OCCUPATION_SOURCE.md)
+now consume #322's published `ce255de8` AF–Lorentz–CAR bridge. On the actual
+recorded X9, congruence by the old A1 M2 block has a four-dimensional orbit
+span whose normalized full GNS Gram is I4. Applying the six actual PF
+conditional expectations gives the compressed Gram `(1-q_full) I4`.
+Consequently the normalized archive occupation is exactly constant for every
+old SL(2,C) congruence, despite the changing fixed-PF norm. Its complete
+reference-price pullback is `nu dq_archive=0` at fixed nu, beta and J.
+This does not erase the nonzero independent nu-source, the archive, other
+observables, other preparations or other terms of the complete action.
+
+The same synthesis checks the type of a proposed next identification. The
+valid #322 map intertwines the fixed gate, price cut and blank. Extending it
+as spectator-only Pauli congruence would give four vector representations,
+not the full exterior Lorentz representation: at `A=diag(-2i,i/2)` their
+characters are exactly 9 and 0. Thus that extra geometric intertwiner cannot
+be assumed. No defect in the stated fixed-tuple bridge is inferred.
+
+This resolves one actual field-to-price candidate instead of declaring its
+unknown derivative nonzero. A genuine coupled operation must supply the
+remaining physical metric/link/matter jets and any motion of the price's
+other arguments; neither an old Lorentz frame change nor a fitted gap law
+provides them. The full native source, common stationarity and the original
+fixed-source/raw-owner terminal remain open. The existing focused archive
+entrypoint checks both new exact identities without replaying older suites.
+
+## First source through rank changes and a gap-free amplitude budget (2026-10-15)
+
+The [amplitude-source continuation](A4D_NATIVE_AMPLITUDE_SOURCE_REGULARITY.md)
+consumes the already owned compact AF entropy/cost recurrence; it does not
+claim that recurrence as new. The previous constant-rank restriction can now
+be removed for the first source when the actual Kraus amplitudes and a
+fixed-width purification are C1. A uniform-gradient regularization proves
+that `-Tr(FF*)log(FF*)` is C1 in F even at rank births. This does not hold for
+an arbitrary C1 density and does not supply a bounded entropy Hessian.
+
+Additional fixed-size W/Z recursions compute the exact norm eta of the
+normalized amplitude jet, retaining the raw mass derivative, both Kraus
+tangents, the moving preparation and the pending branch. The complete old
+operator-entropy Cost-Info source satisfies
+`|dA| <= [1+2 C_(2dR)/log(phi)] sqrt(eta)`, where
+`C_m <= sqrt((log m)^2+2log m+2)`. There is no inverse minimum-eigenvalue
+factor. Normalization cancels the common code cost N+1; the remaining sector
+mass derivative has sharp bound `|db|<=sqrt(eta)`.
+
+For the repeated complete instrument, the all-depth isometry argument gives
+`sqrt(eta_N)<=||d(L/||L||)||+(N+1)gamma`, with gamma the actual stacked
+Kraus-jet operator norm. These are analytic bounds, not extrapolated samples.
+The narrow consumer independently checks full-word W/Z and normalization on
+small noncommuting cuts, including a genuine rank birth. A physical uniform
+bound still needs the owned field-to-amplitude differential and its scale
+control. No information contract, common physical action, full GNS heat
+reduction, refined stationary family or original raw-owner terminal is added.
+
+There is now also a direct actual-state consumer, independent of choosing
+the unknown field jet. For the recorded defining-AF state at A9, both declared
+spectral action preparation covectors vanish on every C1 amplitude germ,
+including rank births. The owned Jones state extension gives
+`h_N=mu_N^-1 sigma_N=p^-10 P_N` on each finite N>=9. Hence the old relative-
+entropy action has zero preparation source on ALL fine-level amplitude
+tangents through these actual extended states. For the maximal-gain net
+action the complete covector at those points is instead just `db_N`, the
+fine central-mass jet. It vanishes along transported seed germs, but a real
+A10 fine-mass tangent has derivative one. The two contracts therefore remain
+distinct. Their actual tower values and support spectra are explicit; no
+infinite-level finite-entropy action, physical Info selection or vanishing of
+other joint-action terms is inferred.
+
+## Canonical trace preparation and the second active record source (2026-10-15)
+
+The [canonical trace-record synthesis](A4D_NATIVE_CANONICAL_TRACE_RECORD_SOURCE.md)
+now consumes the whole A1 trace seed, including its scalar component, through
+the actual AF/CAR bridge. The owned right-module path decomposition proves a
+general identity for normalized GNS seed vectors: the complete three-step
+record operator state has the seed's nonzero spectrum, with code cost shifted
+by six. Thus `A_old,operator=A_old,seed+6` and
+`A_gain,operator=H_seed/log(phi)`, including their first sources. This does
+not assert a left/right entropy identity for arbitrary mixed GNS densities.
+
+The first record's complete operator algebra is A7=M34+M21, represented on
+the working H4 of dimension89. Its actual spectrum is `(p²,p²,p³)` with52
+zero modes, old action6 and zero old preparation covector. The coarse A4
+left readout instead has13 positive eigenvalues. A real norm-preserving
+full-blank matter rotation gives its old source in
+`(0.43415444592488,0.43415444592489)`. The actual PF archive relative entropy
+has the opposite derivative, so this coarse value is not the complete first
+operator source. All16 matter,4 scalar and69 complement coordinates remain.
+
+The positive next consumer is the **second active native record**
+`x7=W4 J4 x4`. Its complete operator algebra A10=M144+M89 now inherits the
+coarse A4 spectrum. The same exact source is therefore a complete second-
+record operator source; its gain-contract source lies in
+`(-0.65076653214095,-0.65076653214094)`. Native n=4 frame isometries and their
+Gram jets establish this without a large ambient spectral calculation.
+Passive extension and active recording have different source laws.
+
+The synthesis also corrects the regular-carrier reference: the first
+operator state has full regular GNS dimension1597, where its prepared vector
+is `W1 e/p³`. The canonical A1 GNS inclusion has rank5 and yields
+`q=1-p7,dq=4ap9`; left multiplication by the corner has rank89 and yields
+`q=p²,dq=4ap³`. Their separately declared heat generators must not be
+interchanged or equated with Cost-Info. Actual six-copy trace-adjoint
+calculation verifies the canonical result.
+
+This supplies an existing complete active process with a concrete nonzero
+spectral source. Binding it to native Info(v), physical preparation and the
+full constrained metric/link/matter action is still required before a joint
+stationary solution or Einstein source is claimed. The fixed-source/raw-owner
+terminal and the separate parent obligations remain open. Reproduce only the
+new focused entrypoint `a4d_native_canonical_trace_record_source_check.py`;
+older suites and Lean builds are not replayed for this continuation.
+
+## Integrated supplied second-jet/readout package (2026-10-15)
+
+The [second-jet intake](A4D_NATIVE_RECORD_SECOND_JET_SOURCE_CLOSURE.md)
+preserves all five supplied files byte-for-byte and separates their proposals
+from the user instruction to integrate them. The
+[corrected geometric interface](A4D_NATIVE_GEOMETRIC_READING_INTERFACE.md)
+consumes the concrete Pauli-product U(4) germ. Its projector metric is
+`q(0)=p³I4`; its scalar curvature at the origin is `-6/p³`. With a consistent
+normalized trace and declared normal-field variations, the packed ten-slot
+metric map is `delta q=-2p³ f`. This is a local kinematic surjectivity result,
+conditional on the stated variation class, not physical admission or a
+derived Einstein covector. The linear-only control concerns its declared
+normal directions; it does not erase every ambient normal source.
+
+All nine supplied heat values are reproducible without the script's original
+absolute output-writing path. Their beta=1/L limit15/32 specializes the
+already owned theorem `15/(32c²)` at beta=c/L; it does not derive beta from
+the Fibonacci trace band. The new fixture and the actual complete second-
+record AF source provide complementary inputs. A common preparation,
+projector and native price/field differential joining them remains unproved.
+The proposed additive price and cubic coefficient transfer are not assumed.
+
+The focused entrypoint
+`a4d_native_record_second_jet_intake_check.py` checks the immutable inputs,
+the finite kinematic conventions and heat reproduction. The earlier
+analytic heat-limit proof, source recursion and Lean owners are reused.
+Native action/source closure, joint solutions, refinement and the original
+fixed-source/raw-owner terminal remain open.
+
+The same intake also consumes the parallel published
+[price-metric source lift](A4D_RECORD_PRICE_METRIC_SOURCE_INTEGRATION.md),
+[normal-volume source](A4D_RECORD_NORMAL_VOLUME_SOURCE.md) and
+[finite golden-cylinder curvature readout](A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md).
+The last construction already has an exact calibrated scalar-curvature
+reading and its Einstein-Hilbert covector; that conditional geometric step
+is not reopened. Its selection and primitive implementation by the complete
+native AF/CAR action remain distinct from its algebraic existence. The
+actual retained-source observable is preserved independently, rather than
+defined by subtracting a desired Einstein term.
+
+## One complete AF price controlled by the geometric Jacobian (2026-10-16)
+
+The [controlled-record continuation](A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md)
+now joins an actual complete spectral source to the existing even Jacobian
+effect. Replacing the golden scalar roots by `sqrt(I-E),sqrt(E)` in the
+literal four-copy AF gate gives an actual old-right-module unitary, with
+both outcomes and the whole identity complement. At `E=p²I` it is exactly
+the owned golden record. This is an algebraic implementation, not yet
+primitive admission of the geometry-dependent control.
+
+For the whole canonical A3 trace seed and its actual mixed-cylinder
+projector, `E(u)=p²(I+u Q_mix)` has zero first complete A9 gate source. Its
+next literal active record has complete A12 old source strictly between
+`0.18788044202330` and `0.18788044202331`; gain source and moving central
+cost are independently retained. The native central-cost derivative is
+`-6p10`, whereas the branch-code diagnostic would give `+2p5`. Those
+observables cannot be substituted for one another.
+
+A single controlled program can address the entire normal family without
+assuming additivity of independent prices: choose equal-cost native setting
+cylinders and retain every inactive leaf at the blank effect. For64 settings,
+64 of70 length8 words with4 returns give128 ready mixed suffixes at cut15;
+the complete987+610-leaf parser is preserved. The actual left spectrum then
+gives one second-record price
+`B_n+sum_i G(u_i)`, with `G'(0)=2p17 f0'(p²)>0`. The baseline is one B_n,
+not64 independent copies. Native cost recurrence gives positive bounded
+source coefficients at further cuts, with explicit alternating convergence;
+the fresh active programs are not asserted to have cut-invariant spectra.
+
+For `u_i=t² e2(A_i)+t4 det(A_i)` and the full normal Parseval family,
+Gauss implies the actual spectral-price expansion
+`B_n+(alpha t²/2) R+Rem`. Value and first-variation remainder bounds are
+explicit. The geometry-controlled price is the dilation of the averaged
+effect, not an average of two spectral prices. No signed price contrast,
+fitted stress or difference-defined remainder action supplies the result.
+
+The absolute blank remains: a separately admitted geometric volume measure
+adds `(B_n/2)q^-1` to the metric source alongside the leading Einstein term.
+Moving preparation, calibration and scale contribute their own jets. C1
+shape-source bounds do not by themselves imply the original discrete
+Euler/raw estimate. Primitive control, physical Info/action selection,
+volume binding, coupled solutions and the original terminal remain open.
+
+The new focused entrypoint is
+`a4d_native_jacobian_controlled_record_check.py`. It consumes the pinned
+AF/cylinder definitions, actual states and jets, and finite address parser;
+older suites, generated receipts and Lean builds are not replayed.
+
+## AF/CAR role-orbit Lorentzian Gram (2026-10-16)
+
+The exact [role-orbit certificate](A4D_NATIVE_AF_ROLE_ORBIT_CAR_GEOMETRY_2026-10-16.md)
+composes the existing level-1 AF record gate on its actual full-16 `M_2`
+sector with the existing CAR current and two proper spatial three-cycles.
+From one active state, the current, its next fixed-gate current, and the two
+rotated currents form a nondegenerate four-frame with Gram determinant
+`-256/729` and signature `(1,3)`. The complete Gram is exact and stays fixed
+for 128 gate ticks, although the full state does not return after two ticks.
+The same certificate composes the actual `A_1` AF trace seed with `activate`:
+its `M_2` component starts in the owned fresh-blank plane and the full AF
+operation matches the CAR gate. Yet its current stays `e0` for 128 ticks, and
+the corresponding four-role frame remains rank one. Thus this existing AF
+startup does not itself generate the spatial frame under the current readout;
+the positive frame's active seed is outside the blank plane. The checker
+verifies 1,829 exact controls and pins 12 existing source files.
+
+This is a finite kinematic carrier result: the Gram is measured with the CAR
+owner's Lorentz form `eta`, which the construction does not derive; the active
+state is outside AF's fresh-blank plane, and this gate orbit is not the AF
+growth/refinement map. The induced Gram is not yet native `q`; no connection
+field, curvature, common action or source/Ward identity, stationarity,
+physical admission, soundness/recovery, or Einstein equation is obtained. The
+real-amplitude derivative is only an algebraic extension of the readout, not
+an engine-admitted variation. Thus the result identifies a concrete
+candidate state-to-frame map and its first nondegeneracy boundary, while
+leaving the native metric-transfer obligation open. It does not change any
+parent terminal or the fixed-source/raw-owner status.
+
+## The Lorentz reflection retains a leading observer/matter source (2026-10-16)
+
+The [complete reflection-source continuation](A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md)
+now differentiates the existing native positive pairing rather than merely
+changing its pointwise signature. In covariant notation
+`h=-g+2(gJ)(gJ)^T/g(J,J)`, where the native quotient slot is
+`q_native=g^-1`. The volume densities agree, but their scalar curvatures obey
+the exact general identity
+
+```text
+R_h=-R_g+2(theta²-K²-Omega²)-4div_h(theta u),
+u=J/sqrt(g(J,J)),  Omega²=Omega_ab Omega^ab.
+```
+
+Here K is the spatial symmetric derivative and Omega the spatial
+antisymmetric derivative, with both index orders in its norm. The proof
+uses the full connection difference and its contractions, not a finite
+example. With moving coefficient c the integrated source also retains
+`4theta u(c)` and the explicit boundary flux. Thus the preceding actual
+price `B+c R_h+Rem` contains the observer term at the **same order** as
+`-c R_g`. Small t cannot hide it in the O(t4) remainder; B and its volume
+source remain as well.
+
+On the already owned full16 CAR family with
+`J=(1,-2s²/(1+2s²),0,0)` and transverse `s=1+y`, the Lorentz metric is
+exactly flat while `R_h=-2chi_y²`,
+`chi=-(1/2)log(1+4s²)`. At s=1 the true projected matter Euler derivative
+after integration by parts, per unit constant curvature coefficient, is
+`-192/125`; the pointwise partial would give
+the opposite sign. The whole varied family has det h=1, so no volume
+derivative or boundary convention supplies this difference. Its nonzero
+force comes from the observer sector and must enter the joint action.
+
+The full source pullback retains all10 symmetric metric and all16 matter
+columns, the current normalizer, frame/pairing/operator motion and direct
+terms. The CAR Clifford Gram gives a constructive norm-tangent lift of all
+three observer directions on the timelike sector. It also allows every
+metric jet to hold the current **line** fixed by a compensating full-matter
+jet; it does not impose an engine evolution or remove invisible matter
+directions. Curvature-sector stationarity cannot therefore be renamed the
+pure Lorentz Einstein equation by the invertibility of reflection.
+
+There is also an explicit full native kinematic lift of any prescribed
+positive record metric h. If m0 is arbitrary timelike-current rest matter
+and `H(r)=-eta+2(eta j)(eta j)^T/(1-|r|²)`, then
+`F=h^-1/2 O H(r)^1/2`, `m=rho(F)m0` gives exactly h as the actual native
+observer pairing. The inverse is explicit. All10 positive-metric, all16
+rest-matter and6 reference-frame coordinates remain; no normalization or
+gauge quotient is imposed. This removes an algebraic realizability question,
+but does not prove that the same record instrument on the lifted fields
+produces its prescribed h, complete history and physical action.
+
+The parallel [matrix-return compiler](A4D_GOLDEN_DETERMINANT_COMPILER.md)
+is consumed here with its exact positive coefficient rescaling
+`c=gamma alpha t²/2`, `gamma=2p6`. Its effect composition and the canonical
+W_E price remain distinct from a cost-preserving native instrument
+compilation. That premise is not reopened or silently promoted to admission.
+
+The new focused entrypoint is
+`a4d_native_lorentz_reflection_source_check.py`. Existing proofs and unchanged
+suites are reused. The same-program projector/native metric binding, physical action
+selection, full coupled solutions, refinement and original fixed-source/
+raw-owner terminal remain open; this continuation makes their required
+observer/matter source explicit rather than fitting a compensating action.
+
+## Actual preparation minimum and a common matter-clock record family (2026-10-16)
+
+The [preparation continuation](A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md)
+now varies the inherited SECOND complete AF price on all complex square-GNS
+input amplitudes. The literal frame gives a flagged CP map Phi_E, retaining
+all within-block coherences, both central sectors and right-unitary fibers.
+Its unique globally minimizing defining density is
+`sigma*_j=mu_j exp[-log(phi) f_j(E_j)]/Z`. For ANY coherent input the exact
+identity is
+
+```text
+A_E(sigma)=6-log(Z)/log(phi)
+              +D(Phi_E sigma || Phi_E sigma*)/log(phi).
+```
+
+This is the actual operator's relative-entropy gap, not a difference-defined
+Einstein remainder. The noncommuting effect source at the minimum is
+`sum_j Tr[sigma*_j f_j'(E_j) delta E_j]`. One addressed program has one
+global log-normalizer, a derived modified curvature coefficient and nonzero
+mixed-setting Hessian; its source remainder is bounded explicitly.
+Canonical PF preparation is not generally stationary, even at the blank.
+
+Faithful density-minimum uniqueness does not classify all amplitude-critical
+points. Proper spectral-support preparations have zero complete first
+amplitude source and strict rank-birth descent proportional to t² log(t²).
+These unstable branches are retained. The optimized terminal price does
+not include an unproved sum of stage prices or preparation-generation cost.
+Native admission of every GNS variation is not assumed.
+
+The [matter-clock construction](A4D_NATIVE_MATTER_CLOCK_RECORD_BINDING.md)
+provides an explicit smooth equality family for the existing12-channel
+comparator and the actual native CAR pairing. All16 rest-matter amplitudes
+control12 probabilities and4 scalar clocks; the same record outputs q[Z].
+The native fields `F=q[Z]^-1/2 O H(r)^1/2`, `m=rho(F)m0` reconstruct the
+same rest matter on read-back, hence give `h_native=q_record` throughout a
+neighbourhood, including all spatial/variation jets. A real curved germ
+and a full16-coordinate normal inverse give all10 metric and2 internal
+tests. The full graph source includes Dq's differential adjoint and direct
+matter/frame/controller terms. The equality family has22 field coordinates
+inside raw32; ten transverse equations remain untested by graph stationarity.
+
+This comparator is not silently identified with canonical AF W_E. Equal
+effects can have different history jets and different projector metrics.
+The full256-mode compiler also exceeds the present regular AF module's
+old-right multiplicities. Preserving its full domain requires at least
+operator-depth12 instead of6, with first absolute price12 for the same
+canonical seed/pure auxiliary input. A prepared polar isometry alone does
+not preserve the coarse-left density used by the second active price.
+The actual finite AF-to-engine preparation boundary is also preserved.
+
+The single focused entrypoint
+`a4d_native_preparation_and_clock_binding_check.py` passes122 exact conditions
+(42 preparation,80 binding) with byte-identical normal/optimized output.
+Unchanged old suites, receipts and Lean builds are reused. This closes the
+stated finite minimization and smooth comparator/native matching problems;
+it does not close native operation/action selection, full coupled roots,
+physical refinement, GR or the original fixed-source/raw-owner terminal.
+
+An exact cross-owner check now tests that price optimizer against the named
+AF-to-CAR engine support. For the preparation fixture with `M2` effect
+spectrum `(9/25,16/25)`, the two owner costs differ and the optimizer's
+GNS-amplitude singular-value ratio is `1.015715...`. The verified engine
+preimage instead requires the `M2` amplitude to be scalar, so no right-unitary
+representative of this optimizer enters that support. This excludes the
+specific candidate preparation/interface pair; the fixture is not physically
+selected and the result is not a global native no-go. See the
+[cross-owner result](A4D_NATIVE_PREPARATION_ENGINE_ADMISSION.md) and
+[`a4d_native_preparation_engine_admission_check.py`](certificates/a4d_native_preparation_engine_admission_check.py).
+The newly added retained-controller completion has an expanded carrier and
+remains a separate engine-support and primitive-admission question.
+
+## Adaptive AF engine and preparation-compatible settings (2026-10-16)
+
+The current [adaptive representation](A4D_NATIVE_ADAPTIVE_AF_RECORD_ENGINE.md)
+repairs a specific common-process failure. Let P be the owned AF price cut,
+D=2P-I, and W+ the actual golden gate on the complete H4 carrier. Then
+`W-=D W+ D` intertwines the literal full16 `U-`, just as W+ intertwines U+.
+The sign is read from the current first-grade matter coefficient m1 by the
+existing engine. On its domain this is one state-dependent retained process,
+with the scalar AF sector and all69 complementary coordinates still present.
+It is not one globally linear quantum channel. On the canonical activated
+input its low pair enters an exact two-state recurrence after the first
+sign reversal; its higher-grade pair continues to carry the changing history.
+The engine and AF representation therefore agree at every subsequent tick,
+without a fresh blank, reset or external tick input. A finite number of real
+coordinates does not imply bounded bit capacity for their Z[a] coefficients.
+
+There is an important source consequence. On this same fixed working carrier,
+each selected branch is in the actual old-right-module algebra. For the
+canonical activated seed, the complete A7 nonzero spectrum remains p²,p²,p³
+for every retained word. Its old
+relative-entropy price is exactly6. This is not the second ACTIVE record
+whose nonzero inherited source was derived previously. The chronological
+counting determinant also remains distinct: for any sign word its two possible
+nonzero eigenvalues are `sin²(theta sum s_j)` and
+`sin²(theta sum (-1)^(j-1)s_j)`, cos(theta)=a, sin(theta)=p. Each has
+multiplicity4 on CAR16 and5 on the full AF frame. On a fixed strict sign
+chamber this determinant has no matter-amplitude derivative. Neither price
+therefore supplies a new smooth matter force merely by iterating this engine.
+
+The [preparation/source classification](A4D_NATIVE_ENGINE_SUPPORTED_PREPARATION_SOURCE.md)
+uses the actual controlled activation, not just the earlier fixed-interface
+fixture. Its six guard rows vanish exactly when
+`sqrt(I-E2) C2=t I2` and `sqrt(E2) C2=s I2`. For a nonzero visible input
+and 0<E2<I this forces E2 scalar. This classifies that direct A1 interface;
+it does not restrict all future native matter to this sector. On the scalar
+branch, the positive lift C2=I2 has a golden CAR projection accepted by the
+literal ring engine and realizes the derived normalized density optimum after
+the retained scalar AF amplitude is chosen. Preparation of that scalar
+amplitude is a separate obligation. Negative c is not a harmless engine phase:
+at the golden setting the next first grade vanishes. The full preparation
+derivative keeps both sector weights, their moving normalizer, and both effect
+derivatives. Continuous
+effect/source calculations and preparation of the scalar amplitude remain
+separate from admission by the fixed golden Z[a] executor.
+
+The [higher-AF construction](A4D_NATIVE_INHERITED_PATH_RECORD_SETTINGS.md)
+avoids treating that one-block obstruction as a global no-go. Actual inherited
+M2 copies provide orthogonal full16 sectors, each with its own scalar setting.
+Sixty-four equal-PF-weight copies fit in block0 first at n=11, with weight
+2p12 per copy. The same controlled conditional-price law gives coefficient
+`2p14 f0'(p²)>0`; full preparation relaxation uses one global partition
+function and its derived envelope coefficient. This improves localization of
+the settings relative to the earlier n=14 addresses. It does not remove the
+separate code cost of the corrected compiler. The entire direct sum, remaining
+paths and scalar coordinates are retained. Only at each golden setting does
+the controlled gate coincide with the literal fixed golden engine; the trace
+preparation has rest CAR current, and does not yet provide the full moving
+matter-clock family.
+
+The concurrently published [coherent compilation theorem](A4D_COHERENT_COMPILATION_COST_DESCENT.md)
+is consumed as a stronger input than historical effect equality: after its
+additional full coherent finishing operation, it preserves the canonical
+instrument, comparator and selected terminal price up to an explicit constant
+AF code cost k. Its primitive admission and native spatial aggregation are
+still hypotheses. This continuation neither discards that controller nor
+identifies it with a scalar setting by matching probabilities alone.
+
+The single focused entrypoint
+`a4d_native_adaptive_engine_synthesis_check.py` passes 200 exact conditions
+(93 adaptive engine, 39 supported preparation, 68 inherited settings), with
+byte-identical ordinary and optimized output. The measured runs take 64.341 s
+and 66.384 s. No old suite, generated receipt or Lean build is replayed.
+At n=11 the consumer uses actual path counts, offsets and PF weights;
+only n=2,3 frames are instantiated for the inherited-sector checks.
+
+The next missing common-process statement is now precise: an admitted update
+of the moving fields and full matter must preserve the ten comparator/native
+matching equations and yield the complete differentiated native action,
+including the observer, preparation, controller and aggregation sources.
+The fixed-geometry collinear executor proves neither statement. The original
+fixed smooth source, all10 raw metric rows and exact-root/refinement terminal
+at the top of this memo remain unchanged and OPEN.
+
+The [flat factor-shear composition test](A4D_NATIVE_PREPARATION_FACTOR_SHEAR.md)
+now checks the coherent AF price against the same flat heat probe. On the
+actual golden flat carrier, all 12 active normal shapes are rank one and the
+other 560 are zero. Their compiled even effects and first jets therefore stay
+at `p^2 I`, so the optimized AF preparation source is zero. Its minimizing
+`M2` direction lies on the engine-support trace line, although coefficient-
+level engine admission remains open. The owned heat response is still
+`2*(E1-E2)>1/10000`, the fixed-golden feedback remainder is zero, and
+`rho0=0` on all ten flat metric slots. Thus this corrected fixed-gate price
+route cannot supply the missing stress on this probe. The conclusion is
+first-order and scoped; it leaves other native action terms and the raw
+compiler archive action unclassified. The follow-up now constructs 572 actual
+equal-cost AF addresses (from 715 candidates) and checks the full addressed
+effect, retaining all 10,946 ready and 6,765 pending leaves. Every setting
+maps to one of the 572 normal shapes and remains blank through first order.
+This closes the finite effect-level address-count gap; primitive admission of
+the complete program remains open. The exact certificate is reproducible in
+ordinary and optimized Python modes; a one-setting nonzero hostile control
+changes exactly its two addressed ready leaves and leaves the rest untouched.
+
+## Fixed-branch common-process rigidity (2026-10-16)
+
+The next strategic check identifies a rigidity for any proposed common
+process that applies the actual adaptive AF update to the complete
+comparison family. At every finite horizon where the current first-grade
+selector stays nonzero, the selected branch word is constant on a
+neighborhood of the initial fields. Applying that same word to every
+comparison state is one fixed full-carrier unitary, so pairwise overlaps,
+complete logdet price, and the projector-metric Hessian are exactly
+invariant. The coherent refinement owner separately proves the same overlap
+identity for its field-independent isometric code embedding; its added code
+cost is a constant. If a common process intertwines those two maps, their
+composition also adds no geometric resolution in this comparator. The
+cross-level intertwining itself remains unproved.
+
+This is a scoped exclusion of the route “one common unitary history update
+plus one common isometric embedding alone generates expansion.” It leaves a
+precise requirement for any surviving common process: its moving
+frame/readout must change the comparator through an explicitly admitted
+field-dependent map, and the full derivative (including its connection
+terms) must enter the native action. The result does not forbid other
+internal refinement laws or close the ten transverse equations, native
+source, exact-root, or GR tasks.
+Proof and source pins: [fixed-branch rigidity note](A4D_NATIVE_ISOMETRIC_COMMON_PROCESS_METRIC_RIGIDITY.md).
+
+## Raw AF lattice and fixed-lift chart obstructions (2026-10-16)
+
+A 93-check cross-owner certificate now records four scoped interface results.
+First, at the unshifted center of the genuinely curved
+`lambda=1` chart, the native lift is `F=sqrt(2/p^3) O H^(1/2)` for every
+`O in O(4)`. The raw CAR state's grade-one squared norm is exactly
+`26 p^3/5`, independent of O. Its trace from `Q(a)` to `Q` is `-208/5`,
+so it is not an algebraic integer and the full raw vector cannot lie in the
+engine's exact `Z[a]^16` storage. The current literal raw engine therefore
+has no input at this named chart base under the direct identification of its
+CAR state with native `m=rho(F)m0`.
+
+Second, if the gate is instead applied directly to the rest-coordinate vector
+`m0`, the 37 exact controls from the same certificate show that the candidate
+update `m0 -> U_+m0` makes a reused channel weight less than `-7/40` after one
+step on a curved germ. This conditional test preserves a timelike chart
+current and nonzero top grade, but does not prove that the physical transition
+acts on `m0`.
+
+Third, at one proper future-preserving coframe, extending the raw gate by
+scalars beyond the literal engine ring and reading back with that same lift
+also makes an effect negative. This is an algebraic extension test, not an
+admitted raw engine step: its input is excluded by the first result.
+
+The fixed-lift failure persists for exact engine-ring inputs near this base.
+`Z[a]` is dense in `R`; the six guard coordinates can stay exactly zero. The
+first fixed-lift effect is affine with row `(a,-p,0,...,0)`, l1 norm below
+2, and base negative margin above `2/25`. Therefore any raw perturbation of
+sup norm below `1/50` still yields an effect below `-1/25`. Both selectors
+are positive and the engine preserves its ring/guard sector, so arbitrarily
+nearby literal engine states execute the actual step. By openness they can
+start inside a nearby curved probability chart. This local result does not
+put the perturbed state on the ten-row matching graph.
+
+These scoped obstructions do not exclude another chart point or a coupled
+native update. The AF/CAR engine acts on raw `m`, whereas the chart uses
+`m0=rho(F)^-1m`; its next state must be computed as
+`m'=U_s m`, `m0'=rho(F')^-1m'` with the actual field law for F'. The
+[domain note](A4D_NATIVE_COMMON_PROCESS_DOMAIN_OBSTRUCTION.md) and its
+[93-check consumer](certificates/a4d_native_common_process_domain_check.py)
+retain the exact input and fixed-lift scopes. The different ring-compatible
+point in [Section 3.1 of the unified result](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+below supplies a literal raw transition; it does not contradict the
+arithmetic exclusion at the named unshifted base. Primitive AF admission,
+all ten transverse equations, the full action derivative, exact roots and
+GR remain open.
+
+## Complete raw record source, Lorentz-link transport and measure (2026-10-16)
+
+The [unified field-source result](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+now computes the normal covector of the actual matter-clock program on the
+whole raw chart. Its dependence is exactly through `m0=rho(F)^-1 m`.
+For the complete rest-source e0 this gives
+`E_m=rho(F)^-T e0`, `E_F=-R_F*E_m`, hence all ten h and six O costates
+are zero off shell. This closes that normal-covector question for the owned
+finite price sector. It does not impose matching or solve the other native
+field equations. The same matching family has flat `h=cI`, unchanged full
+record program, and `g=c O eta O^T`; with an existing free rotation
+`O(kx0)`, `G_g(0)=diag(0,0,2k²,2k²)`. Thus metric matching alone cannot
+turn this program into a Lorentz Einstein action.
+
+There is now a constructive intersection with the literal raw engine at a
+different point of this same chart. Take
+`m_dagger=-2ap e_mask0+p^3 e_mask1+e_mask12+e_mask13+e_mask14+e_mask15`.
+Its raw coefficients lie in Z[a], all engine guards hold, and its full CAR
+norm is 5 with current e0. The unchanged wiring has all twelve weights p²;
+the given clock derivative `DX=sqrt(2/p^3) I` gives `q_record=I`. At F=I,
+the native metric is eta and both the retained reference and positive
+pairing equal I. These are pointwise identities. The smooth matching germ
+has a moving reference, so it is not identified with a fixed-reference
+engine germ. Raw amplitudes are not rescaled and AF preparation admission
+is not inferred.
+
+The actual positive engine step is defined and gives grade-one output
+`t e0`, `t=a(4p-3)`. Every next frame with the same native metric satisfies
+`F' eta F'^T=eta`, hence `|(F'^-1 t e0)^0|>=|t|`. The original weight w1
+instead requires this rest component to lie in
+`(3p-2,3p-3/2)`, whose endpoint magnitudes are strictly smaller than |t|:
+`t²-(3p-3/2)²=83p-205/4>0`. The exact rational bound is
+`p>205/332`. Thus no Lorentz frame, including either time orientation,
+repairs this literal raw output at fixed eta. This closes the variable-frame
+escape for this actual ring-compatible input, not for arbitrary changing
+q'. Closure of that particular engine/readout adapter would require an
+additional owned law, and q' is not fitted to restore the probabilities.
+This is not a requirement that the full variational theory evolve its
+metric on each engine tick. Proof, the curved
+comparator germ with `R_record(0)=-kappa/3`, and focused controls are in
+[Section 3.1](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md).
+
+The actual constrained spatial Lorentz link retains a complementary
+operator contribution. Its unique positive polar part B and pairing
+isometry R satisfy `D=R B`, preserving all factors and all16 exterior
+grades. Their full Gram trace is `16 c_pair²`, or `16 zeta c_pair²`
+when the endpoint density ratio is included. The complete source retains
+all ten metrics at both ends, six link slots, all16 matter columns and
+their normalizers. Replacing D by its unitary part drops this observer
+boost information. This diagnostic is not added to the action and its
+pairing observer is not identified with the engine's first-grade axis.
+
+The same preparation owner gives the exact internal-address decomposition
+`A=6+sum(w f)+D(w||r)/log(phi)+C_out/log(phi)`.
+Its full mass/reference source differs from a normalized mean. A given
+readout at the faithful minimum has the full Kubo–Mori source, including
+noncommuting effect variations and moving observables. The actual n1
+off-diagonal fixture has a nonzero readout source even when the terminal
+price source and effect eigenvalue jets vanish. All coherences remain.
+Internal AF addresses, spatial archive points and material clock values
+are not silently identified. Strictly inherited clocks push every compatible
+measure onto the same at-most16 base atoms; actual new fine clock data and
+their kernel source are needed for a richer spatial limit.
+
+The single new entrypoint `a4d_native_complete_field_source_check.py`
+passes 543 exact conditions (111 raw record, 56 link transport, 376 measure)
+with identical ordinary/optimized output, in 8.930 s and 7.996 s. The 32
+new raw-record conditions check the literal matched input and fixed-q
+all-frame obstruction; the earlier 79 conditions remain.
+It consumes existing definitions and finite exact source identities;
+old suites, generated receipts and Lean builds are reused.
+
+The next common-program identity must carry the full spatial link and a
+derived address/site/clock readout with its actual measure. If that measure
+is to be normalized geometric volume, its complete test-function source
+must agree with the derived operator/pushforward source, including sampling,
+normalizer and boundary terms. This is a specified comparison to prove,
+not an action or measure chosen to force the answer. The native task is
+the joint stationary pullback of the selected full action to all admitted
+fields, not the invention of a metric update at every record tick.
+A frame change at fixed q cannot close the particular adapter above.
+Temporal field evolution,
+all other native equations, exact roots/refinement and the original
+fixed-source/raw-owner terminal remain OPEN.
+
+## Joint stationary second source and uniform preparation inverse (2026-10-16)
+
+The [common variational interface](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+now gives the next constructive step for finite joint stationary equations.
+The basic geometric carrier has the exact local chart
+`q_a(V)=q_a+V_a`, `A_a=(I+V_a q_a^-1)^(1/2)`,
+`D(V,K)=A_s exp(K q_s^-1) D A_t^-1`, with every metric slot and six
+skew link parameters. Its noncommuting mixed link acceleration Z_ij is
+explicit. The actual second source is
+`H_chart=H_ambient+sum_e <B_e,Z_eij>`; the second term is essential for
+off-constraint-extension independence. A nonzero ambient Hessian of a
+zero-on-carrier conormal term cancels exactly in the full pullback. Additional
+stored-adjoint, observer and preparation constraints remain to be imposed.
+
+For the same actual terminal second-record price, the faithful preparation
+minimum has `H*=-(<L_vw>+Cov_BKM(L_v,L_w))/ell`, including direct program,
+noncommuting preparation, reference and global-normalizer terms. The exact
+coherent relative-entropy gap gives its preparation Schur block
+`M_T=P_T Phi* Dlog_Y Phi|T/ell` on total-trace-zero defining densities.
+The two actual plus Kraus paths satisfy `A_j+>=w_j I`, and `Tr Y=1` gives
+`Dlog_Y>=I` as an HS quadratic form. Therefore
+`M_T >= (p^6/ell)I_T` and `norm(M_T^-1)<=ell/p^6`, at every AF level and
+dimension, retaining all allowed coherences and central mass directions.
+This bounds the density-block inverse, not the full condition number,
+mixed field jets or the GNS amplitude Hessian. Right-unitary fibers and
+the moving raw norm remain. Independent preparation admission is not inferred.
+
+The corresponding linearized equations eliminate the preparation residual
+exactly as `S=Jv+M_T^-1 r_sigma`, `H*v=r_E+J* r_sigma`.
+No physical source is chosen in this factorization. For the actual n1
+effect family `E0=[[9/25+x,y],[y,16/25]], E1=9/25`, rigorous rational
+log bounds give `A*_x>237/1600` and `A*_yy<-93/112`. The latter is a
+nonzero second source with zero first eigenvalue jets. Its cancellation
+on an isospectral curve with the same first tangent verifies why the actual
+second program jet cannot be dropped. It is not a positive metric theorem
+or an admitted direct engine/geometry family.
+
+The remaining binding is precise: the selected same native fields and
+preparation must produce the Delta, feedback, observer/reference and other
+terms of one full S, on jointly admissible curves. For the literal stored
+Dirac, adjointness enforces parallel observer pairing and role legs; its
+positive Lorentz-link class has polar boost B=I. A general adjoint completion
+is a separate interface, so the retained boost diagnostic is not silently
+added to that stored heat. These new second-source formulas do not replace
+this missing native map, prove a full field inverse, or close the original
+fixed-source/raw-owner, exact-root, continuum or GR obligations.
+
+The existing combined entrypoint passes all 543 exact conditions in normal
+and optimized modes with byte-identical output (8.930 s / 7.996 s).
+Only the changed source consumers were extended; old suites, receipt
+generators and Lean builds were not replayed.
+
+
+## Same-operator native root and the first curved continuation (2026-10-16)
+
+The [unified source, Sections 0.1–0.2 and 3.2](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+now connects results that were previously separate in the route map. The v8
+record already constructs heat and program feedback from the same positive
+return `B=I-alpha Delta`; the heat generator is `-log(B)/alpha`, while the
+quadratic matter observable remains the actual `Delta=D^2`. Its certified
+homogeneous full-carrier joint root is represented by the literal stored
+native operator using constant frame `F=sqrt(G_*)`, observer e0 and identity
+internal links. Native Lorentz q is `F eta F^T`, not the positive symbol
+G_*. All16 grades, the entire128 occupied shell, purifying reference and
+workspace multiplicities remain. The new small-block consumer uses pinned
+creator definitions and the existing v8 proof/receipt; it does not replay
+its old root solve.
+
+For any full-Schmidt-rank occupied-shell critical continuation the actual
+matter equation requires `P Delta' P=epsilon' P` and
+`P(Delta''-2 Delta' R_Q Delta')P=epsilon'' P`, with the owned reduced
+resolvent bound `norm(R_Q)<=2`. The nonzero Fourier conformal family
+`G(t,x)=exp(t cos(2pi(3,3,0,0).x/8))G_*` supplies actual first and second
+operator jets of the v8 true-adjoint coefficient map. Its off-shell matter
+response is constructive and nonzero. Its second response has unequal
+occupied-mode traces for every `d>o>0`. More strongly, its full16 block has
+`(E2_e0)_00-Tr(E2_e0)/16=8sqrt(2)(d-o)>0` throughout the actual root
+window. Every additional local coefficient-only second acceleration at fixed
+returns contributes a scalar to that diagonal Fourier block, and cannot
+cancel the defect. Thus the given first jet cannot have a critical C2
+coefficient-only continuation. This does not exclude jointly moving links,
+other native operator/observer jets, a different first jet or all curved roots. The full thermal/feedback second source
+is derived with all4096 modes; only the matter calculation uses small16
+blocks. A rational nonroot fixture is explicitly distinguished from the
+previously certified root window.
+
+From a given selfadjoint old-left D there is also an explicit signed AF
+completion `R=I-alpha D^2`, `S=sqrt(alpha)D sqrt(2I-alpha D^2)`. It keeps the
+same survival B and is smooth through D=0, unlike principal |D|. The actual
+full coherent channel changes, so equality of its unminimized price is not
+claimed. The faithful scalar envelope is the same, and neutral retained
+paths alone give the uniform signed density inverse bound `ell/p^18`.
+Left-algebra membership, active complement modes and the full GNS trace
+with its right multiplicities remain; AF inclusion does not by itself
+preserve a root, select preparation or identify AF-price with v8 action.
+
+For the full density/coframe lift, actual stored heat changes as `D_a=M_aD`
+and has old-Gram defect `[M_a,D]`. Its unique scalar-site Gram repair on a
+connected carrier is `omega*a=constant`. The similar selfadjoint matrix
+`sqrt(M_a)D sqrt(M_a)` proves a real spectrum without selecting that new
+physical measure. An exact all-even-L vacuum witness gives derivative
+norm at least L in the parent's raw sup norm. Full16 matter grades and
+normalizers remain, and the directly derived Gibbs-density source is
+retained. This is a computed remainder, not a fitted Einstein cancellation.
+
+The concurrent [central-program result](A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md),
+received at `358ecbb181aadac3b092b3be6f0b1776eea3d8c1`, is preserved and
+consumed without replay. Its complete terminal AF-price has a positive
+common multiplier of all Euler rows of a given Q, on all nonzero preparation
+rank strata. The real faithful optimum has ready/pending type tilt; its
+coarse marginals and first normalizer/source jets converge to the
+child-clock address measure at `O(p^(2c/17))`. This strengthens the previous
+conditional density/coframe sector. It proves a constructive variational
+compiler for Q, not why native physics selects that Q or that terminal
+price over other costs. It therefore complements the explicit stored-heat
+remainder without erasing it.
+
+The next common construction must solve the actual shell compatibility
+with allowed field acceleration/link/observer jets and native refinement,
+and bind the central aggregation, preparation, clocks and shifts to one
+admitted action. These are specific missing equations. The original fixed
+smooth source, exact-root/raw-owner terminal and physical GR remain OPEN.
+
+
+The existing focused entrypoint now passes **781** exact conditions
+(119 raw/density,56 Lorentz-link,376 preparation/measure,230 record-heat),
+with byte-identical ordinary/optimized output; parallel elapsed times were
+14.578 s and14.556 s. All prior543 conditions remain. New input-definition
+pins, full16 Fourier calculations and general small-CAR/four-vector proofs
+are used; the old v8 root suite, concurrent central/history suites, receipt
+generators and Lean builds are reused without replay. The same five supplied
+files remain byte-identical. This is SOURCE progress, Draft/IN_PROGRESS;
+no original terminal, claim or physical acceptance is promoted.
+
+
+## Complete stored-native program diagram and a curved second lift (2026-10-16)
+
+The [unified source, Section 0.3](A4D_NATIVE_COMPLETE_FIELD_SOURCE_AND_TRANSPORT.md)
+removes a genuine missing premise rather than proposing another action.
+For every counting-weight stored-adjoint field with
+`A_xy^T h_x A_xy=h_y`, `A_xy v_r(y)=v_r(x)`, put `L_x=sqrt(h_x)` and
+`I_x=Lambda(L_x)` on the full16 fibre. Then `u_r=L_x v_r`,
+`O_xy=L_x A_xy L_y^-1` give unitary actual returns and exactly
+`I D_stored I^-1=d'+d'^dagger`. On the bounded v8 coefficient domain all
+label/coefficient/golden primitive blocks intertwine in their actual order,
+so the entire program, retained outcomes, positive survival, heat generator
+and feedback do too. The same normalized matter and full trace give exact
+H+J_program+R value, source and second-source equality. Moving I, observer
+Gram and normalizers are differentiated; no frozen frame or new source is
+inserted. Physical LCU/controller/pi0 admission, the full native price,
+AF/site refinement and geometric volume remain separate diagrams. This
+uses the foundation result at302e6d0b, which is preserved in this branch.
+
+The previous conformal wave is outside that native class already because
+`G_rr(x+r)=G_rr(x)`. A full24 real-isometric link range calculation also
+obstructs its complete second CAR correction; it is not a statement that
+arbitrary64 GL rows are native. The next explicit curve instead rotates
+only leg2 in spatial23 by `t*cos(2pi(3x0+3x1)/8)`, leaving original observer
+and links unchanged. Since it is independent of its own x2, all actual
+stored-adjoint constraints hold exactly. It has nonzero first Lorentz
+metric curvature on the actual root branch and is nongauge.
+
+Its complete128 occupied matter blocks have `PXP=0`,
+`E2_(+/-e2)=-gamma I16` and zero on the other six momenta. A homogeneous
+length factor `sqrt(1+gamma*t^2/(2*lambda1*d))` is an allowed actual field
+acceleration that repairs every second matter row. This retains all16
+components/reference and the first preparation response; all other
+stationarity obligations remain in force.
+However, evaluating the complete same v8 price gives
+`0.08996033839979331495<S''<0.08996033878441452448`.
+All4096 thermal modes,16 Fock multiplicity,128 reference, feedback and
+normalizer remain. The direct source cancels by the exact root equations;
+8192 scalar edges grouped into1061 exact feature classes give the outward
+interval. This is a new directional source calculation on the existing
+root rectangle, not a repeated root solve. Positive S'' excludes this first
+joint velocity even after matter second repair. It does not exclude
+nonzero first link/observer velocities, other native curves or physical GR.
+The next relevant operator is the complete joint linearized Euler kernel,
+not a second acceleration picked to cancel one scalar price derivative.
+
+Accepted main was integrated at `f27423a20096619180cf0a60d33642420e177afe`,
+including the single workflow and completed parallel results. The merged
+transverse-matching result gives the general conormal
+`(lambda,-Dq*lambda,0)`; the actual m0-only source here has E_h=0 by its
+own raw law, so no contradiction or discarded metric equation follows.
+The flat-shear same-source result prevents attaching unrelated chronology/
+observer terms; it does not cover the new rotational wave. The PF transport
+bound consumes a given readout and does not select one; strict inherited
+partition conditions do not erase changing child-clock data. The dependency
+selector is tooling and is not treated as mathematical closure or a
+mandatory replay. These owners are consumed in their original scopes.
+
+Only the new stored_rotational_wave consumer ran this iteration:14 groups,
+ordinary1.520s and optimized1.461s, with byte-identical scientific JSON.
+The unchanged781-condition result is reused after verifying all four
+source hashes and14 input-definition pins. Old root/certificate suites
+and Lean builds were not replayed. The execution was found CLOSED without merge during publication verification;
+this is preserved branch evidence, not an active Draft. No replacement PR
+was opened or old PR reopened. Original fixed-source/raw-owner, exact
+refinement, full native Cost−Info and physical GR obligations remain OPEN.
+
+## Собственная память, полный source связи и lower-rank ветвь (2026-10-16)
+
+Новый пакет [A4D_NATIVE_MEMORY_SOURCE_FIBRE.md](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md)
+закреплён на SOURCE `0ff0a93f199a9411fbdf2470d557c6fd6c2ccc02` и потребляет
+тот же однородный v8-корень, полный stored-adjoint source и фактический
+16-компонентный closed-record engine. Для условного действия он классифицирует
+точный stationary слой preparation density: собственный four-dimensional
+fixed-SO(3) sector памяти лежит в слое, а явная гладкая purification ведёт от
+старого Schmidt-rank 128 к собственному rank 8 при неизменном reference 128.
+Это снимает полнопространственное требование `E=0` на нижнем rank, не удаляя
+ни тепловые моды, ни компоненты, ни reference.
+
+Два действительных упорядоченных full-CAR пути имеют один affine endpoint и
+одинаковое значение того же действия в корне, но их полный link-covector
+различается ровно множителем `p^3`. Для всей чётной собственной memory-орбиты
+одна и та же последующая пространственная проба даёт источник
+`-K p T_(k+1)(2p-1) v0` и точную характеристическую рекурсию; это полное
+source-чтение, а не только расстояние между двумя 16-векторами. Нелинейная
+rank-free редукция сохраняет `E C0=0`, moving-normalizer и все полевые строки;
+оставшийся source реализуем тогда и только тогда, когда заданный target лежит
+в образе положительных нормированных плотностей на `ker E`, с точным dual
+разделителем по `lambda_min/max`.
+
+Пакет проходит 171 exact controls в обычном и optimized режимах с одинаковым
+JSON; все четыре математические мутации отвергнуты. Это условный результат
+на flat v8 root: physical admission CAR-порядка, полная история-preparation
+cost, affine-to-CAR map, nonflat joint root и GR не доказаны. N06/N07 сохраняют
+свой rank-128 интерфейс; rank-8 уравнения и допустимый tangent space являются
+отдельной ветвью и не наследуют full-rank вывод `E=0`.
+
+Перед подстановкой packet link-covector в native unscaled theta basis
+применяется явный интерфейс: `T=basis_phase*exterior(eta)`,
+`sigma_native=T sigma_packet T*`, `f_native=−f_packet`.
+Здесь basis_phase — диагональная mask-sign map из
+`certificates/a4d_native_curved_soldered_heat.py`,
+`P_mm=(-1)^[bit1(m)(bit2(m)+bit3(m))]`, а не перестановка масок.
+Минус следует из `w_native=−w_packet`, `theta_native=−theta_packet`.
+Обе sign maps сохраняют E0, basis_phase тождественна на E0; stationary
+fibre и SO4-coframe consumer выше потому не меняются. Результат171/4
+потреблён по совпавшим input hashes и static review в исходном declared
+Python3.13.5, без повторного запуска на default Python3.9.
+
+Следующий решающий расчёт на том же pinned v8 owner: найти nonflat
+`(x,epsilon)`, где весь target `b(v)` лежит в положительном source image на
+`ker E`, и решить все оставшиеся native field equations; если условие не
+выполнено, предъявить точный separating field direction. Полная проверка
+фиксированного source/raw-owner terminal и физический допуск остаются
+самостоятельными обязательствами.
+
+## Source-ёмкость памяти и нелинейный rank-aware тест (2026-10-16)
+
+Продолжение [source-фибры памяти](A4D_NATIVE_MEMORY_SOURCE_FIBRE.md) вынесено
+в [A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md](A4D_MEMORY_SOURCE_CAPACITY_AND_NONLINEAR_SELECTION.md).
+На том же условном v8-носителе оно вычисляет точную support function трёх
+однородных connection-source операторов и даёт явную pure-preparation
+реализацию всей source-области `yᵀΓ⁻¹y ≤ 1`. Вся ранее полученная история
+лежит внутри неё с запасом не менее `p⁶`. Это доказывает доступность источников
+в заданном классе подготовок, но не закон выбора, стоимость или физический
+механизм их приготовления.
+
+Для нижнего ранга сохраняются полный shell `r=128`, reference `128` и все
+тепловые моды. При occupied rank `k=8` размер образа двухсторонних density
+вариаций равен `1983`; условие shell-материи задаётся `T_k(v)=0`, а не
+полноранговым `E=0`. Второй шаг обязан удовлетворять одновременно
+`E₂ C₀ + 2 E₁ C₁ = 0` и второй производной нормировки. Стационарная сама по себе
+фибра памяти добавляет тест для полного оператора `M_v`: на faithful-фибре
+необходимо `M_v ∈ span_R{I,B₁,B₂,B₃}`, а на pure rank-8 конце необходимо
+вещественное условие `M_v χ = λχ + Σ βᵣ Bᵣχ`. Эти условия ограничивают
+предполагаемую скорость ветви; они ещё не проверены для одного
+сертифицированного nonflat native root. Плавающий crossing из диагностики
+оставлен только разведкой, не свидетельством решения.
+
+Новый exact checker проходит 72 проверки в обычном и optimized режимах с
+совпадающим результатом; пять математических мутаций отклоняются. Это
+проверяет конечные формулы пакета, не существование сходящейся нелинейной
+ветви. Следующий содержательный шаг — получить фактическую field-kernel
+скорость и `M_v` на одной сертифицированной совместной точке и проверить
+ранговое условие памяти вместе с полными полевыми уравнениями. Кривое native
+решение, физический закон подготовки, предел уточнения и вывод ОТО остаются
+открытыми.
+
+## Full-Lorentz q3300 balanced-path continuation
+
+The earlier q3300 crossing is now separated from the actual full-Lorentz
+domain: its old pure state has occupation counts `(1,1/2,1/2,1/2)` and fails
+the exact boost Euler rows. For the balanced witness
+`chi_bal=(mask0+mask1+mask14+mask15)/2`, the full16 CAR source is balanced.
+The direct `q=(3,3,0,0)` interval checker evaluates the inherited
+13-coordinate stored-field restriction on this full-Lorentz-stationary
+preparation path and proves that the affine segment from `I16/16` to
+`|chi_bal><chi_bal|` has inertia `12+/1-` over the complete owned `(d,o)`
+box. A fixed midpoint-selected basis has a strictly negative scalar form and
+a positive 12D complement at both endpoints; affine interpolation and the
+Schur complement exclude a crossing of this tested13D restriction. The detailed
+proof and replay are in
+[A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md](A4D_FULL_LORENTZ_BALANCED_MEMORY_PATH.md).
+
+This excludes the inherited13D crossing on that balanced preparation
+path. It does not certify the Hessian on the extra independent Lorentz
+boost/link directions: the checker reuses the old `17-2*support(q)`
+field section, and no full transverse Schur elimination is supplied. The old state remains a valid scoped result in its smaller
+stored-source domain. Other q modes, coupled nonlinear kernels, native gate
+admission, refinement, and Einstein dynamics remain open; do not transfer
+either branch's result across the preparation boundary.
+
+## Интеграционный вывод 17 октября: критический путь теперь — вывод полного действия
+
+### Конечный продольный тест останавливает подгонку текущей цены под EH
+
+[Точный finite-response пакет](A4D_FINITE_CAUSAL_RESPONSE_AND_CLOSURE_TEST.md)
+вычислил полный proper-link второй джет прежней `H+J`-цены для одной
+периодической продольной конусной деформации. Во всех десяти метриках
+линейный Einstein-ковектор равен нулю, и `EH+Lambda*V` имеет нулевой второй
+джет вдоль этой pure-gauge скорости. Однако полный конечный `H+J` source,
+с восприимчивостью, clock и normalizer, после `h^-2` имеет строго
+положительный предел `L`; его аналитическая нижняя оценка доказывает знак
+всего бесконечного модового ряда. Значение `L≈2.9107527106` — численный
+диагностический вывод; положительность не опирается на округлённое число.
+
+Это исключает равенство именно этого коэффициента текущей цены с чистым EH,
+постоянным volume-term и той же самой материей. Это не no-go ОТО или всего
+D0: полная история, physical admission и дополнительный source для retained
+clock/observer не закрыты. Но продолжать подбирать коэффициенты этой же
+scalar-price под EH на тех же тестах теперь бессмысленно: сначала нужно
+вывести из ядра, почему физически реализуется именно эта цена и какой полный
+источник принадлежит сохранённым событиям.
+
+### Что текущая математика не выбирает
+
+[Проверка native action selection](sources/d0_native_action_selection_2026-10-16/RESULT_RU.md)
+даёт точное условное представление полной `H+J+R`-цены через survival/blank
+события и все её fixed-calibration первые источники. Но математическая
+идентичность цены с событием не доказывает, что native process именно так
+готовит `I/n`, сохраняет все исходы и читает обе вероятности. Более того,
+на том же `F,z,M` циклическая сумма с весом `1/j` и сумма повторов без этого
+веса обе сохраняют проверенные базовые симметрии и одношаговый член, но имеют
+разные точные значения и source. Поэтому ни M1, ни аддитивность, ни
+аналитичность сами по себе не выбирают коэффициенты всех циклов.
+
+Критический следующий объект — существующее отображение полного native
+retained-history в `v8`-программу: один и тот же outcome-labelled прибор и
+подготовка; derived survival/blank readouts; выведенная нормировка повторных
+возвратов, включая именно `1/j`; и равенство `Cost-Info` полной цене с
+полными moving-field sources. Это доказательство уже имеющихся примитивов,
+не новый action или физический постулат. Если отображение невозможно на
+текущем ядре, нужен конкретный source-level separator, а не новый ряд
+подгоняемых лагранжианов.
+
+### Узкий first-jet no-go для текущего полного memory-shell
+
+Дополнительный [точный спектр первого shell](A4D_CONE_FULL_SHELL_FIRST_JET_NO_GO.md)
+на той же exact-LC cone показывает, что при фиксированных первых
+геометрических/link-джетах ни один собственный сектор резонансного оператора
+не занимает все четыре momentum-axis пары. Следовательно текущая память
+`(P_Omega/8) tensor sigma` не может решить первый projected amplitude Euler
+на этом искривлённом носителе при любом внутреннем ранге `sigma`.
+Этот локальный запрет усиливает необходимость вывести допустимые counterjets
+из их собственных полевых уравнений; он не исключает другие native ветви.
+
+### Повтор проверки на live #334
+
+На live head `d105e22` finite-response пакет повторён в обычном и
+оптимизированном режимах: 41 exact algebraic group и четыре отклонённые
+мутации совпали по математическому результату; сохранённый exact-раздел
+JSON совпал. Несколько независимых floating diagnostics отличаются от
+Python 3.13 receipt только на уровне округления (не более `2e-15`). Action
+selection дал побайтно тот же `RESULT.json`: 41 check, 65,536 full modes,
+но сам физический выбор полной цены остался OPEN. Новый first-shell checker
+проходит 23 exact checks в обоих режимах с идентичным JSON.
+
+Ни один из этих сертификатов не является native admission, общим `C1`
+remainder, Lean-проверкой или ОТО-closure.
+
+
+## Complete retained operator/action source — 17 October 2026
+
+The [complete exit owner](A4D_COMPLETE_EXIT_ACTION_AND_SECOND_SOURCE.md)
+consumes the remaining ordinary-output interface after the full rare-output
+boundary. It proves the exact partition, full ordered second-source balance,
+positive operator reconstruction and noncommuting full-price covector.
+Thus searching the13 ordinary rows independently cannot add a term to the
+same price: their aggregate source is the exact complement. Its displayed
+field-dependent h² coefficient consumes the actual second stencil and
+normalized matter coefficients; workspace and calibration terms remain.
+
+The uniform full-carrier UV countercontrol prevents a false next step:
+the smooth rare effect must not be traced as if it were the auxiliary heat
+preparation. The preparation regimes are quantitatively different even on
+the flat actual stencil. Use the combined finite K and the existing controlled
+heat/source estimate. The exact same-price map does not derive physical
+code costs or an ensemble law for the entire retained tape. Native admission,
+the full source equality with intrinsic Einstein geometry and a nonempty
+compatible joint refinement remain substantive obligations. The original
+fixed-g/tau, all10 packed, unweighted raw h⁻²/#216 terminal remains open.
+
+
+## Complete source: nonlinear metric image, form factor and compiler interface
+
+At the e397a0af complete-exit checkpoint the given action/source arrow is
+explicit. Its new consumers above remove three hidden substitutions:
+ambient operator invertibility is not ten admitted metric rows; a single
+EH-like mode is not a local full coefficient; pointwise universal gates
+are not a differentiable native field-to-instrument map. Each now has a
+structural theorem, explicit source/form-factor formula and a bounded
+consumer rather than a new census. No new action, source row, state copy,
+clock law or full-Lorentz admission is installed. The remaining constructive
+programme must derive these physical interfaces in the same process.
+The original fixed-g/tau, all10 raw h^-2/#216 terminal remains open.
+
+## Actual retained dynamics and original code-cost source — 17 October 2026
+
+The [complete retained-channel owner](A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md)
+now derives the full marginal process from the existing128 outcomes:
+`Phi_h=Id+epsilon[T_h(D_h rho D_h)-{Delta_h,rho}/2]`.
+Old records remain in the global state and never reinteract. This supplies
+the actual matter evolution, complete repeated-exit generating map and
+all moving preparation/field sources, beyond the first-exit observable.
+No imaginary-time preparation or physical reset is used.
+
+The existing golden port1 measures `p epsilon Tr(rho Delta_h)`. Original
+port0/direct0 and port1/return10 costs1/2 therefore fix the port-cost
+component exactly; on flat geometry it is `n+p beta_h R0`.
+The nonblank conditional port distribution `(p²,p)` has information p³
+relative to the original reference `(p,p²)`. Reversing that reference
+would change the code. These are derived coefficients of the actual tape,
+not a free normalization of an independently selected R term.
+
+The full flat16 recycling map has sharp traceless norm
+`(3+sqrt(1-nu²))/4`. Its complete stationary system algebra is arbitrary
+M16 at zero momentum and one scalar I16 at every positive momentum;
+reference128 remains a tensor spectator with all correlations retained.
+Invariant Fourier windows give a strong CP continuum process for fixed
+trace-class inputs. The normalized Fourier compression of a fixed
+finite-energy input gives the limiting total counts without a second
+energy moment. Momentum weights remain arbitrary rather than Gibbs.
+
+Finally the complete pointer entropy has an exact conditional chain and
+first-shell C1 logarithmic source. The coherent record entropy equals
+the final system/reference entropy instead. A given complete code prior
+has an exact operator-information/costate source on that same finite
+process. The consumer is now the actual complete code/Info binding and
+its physical field source; the port-cost component alone does not close
+it. Native primitive admission, equality with intrinsic Einstein sources,
+compatible joint refinement and the original terminal remain open.
+
+The same owner's Sections8–10 now compute a missing matter source rather
+than leave it as a choice of entropy. At all eight first-shell momenta,
+`rho(t)=I128/128+tX` stays faithful, retains the full reference and obeys
+the unchanged Rayleigh preparation equation with constant R. Actual
+Walsh label6/coefficient1 has full-tape first-exit-mark probability
+`C_h(1+t)`, where `C_h->(1-exp(-beta lambda0))(1-b)^2/16>0`.
+The complete pointer/coherent information Hessians therefore have
+opposite nonzero signs and a uniform Jensen gap, whereas the supplied
+v8 preparation price is constant. Arbitrary fixed full-code lengths,
+geometry-only subtractions and the existing heat partition do not
+repair this mismatch. The exact nonlinear information/preparation
+equations are supplied as the consuming source. Physical Info and
+admission, all field equations and the original terminal are not thereby
+selected or closed.
+
+The same complete-record owner's Sections11–13 now discharge the regular
+coherent entropy/source premise on the actual eight-momentum window.
+Jump words of length<=22 generate exactly directsum8 M16; finite n>=22
+and every positive continuum record time have a faithful Choi matrix on
+its2048-dimensional span. An exact positive Gram compression retains
+the complete coherent-record spectrum with reference128 and gives the
+ordered Sylvester field/preparation source. Its C1 error includes the
+actual clock and preparation errors. The explicit homogeneous coframe/
+observer/proper-link chart supplies the generator limit; a neighbouring
+window need not remain an energy shell. The exact response quotient reads
+all eight full16 marginal densities, not intermomentum coherences.
+This removes an exponential-record calculation and an assumed fixed
+support from the constructive source route. Physical tests/Info, full code
+cost, inhomogeneous/rank-birth limits and Einstein equality remain open.
+
+## Variable-field record evolution — 17 October 2026
+
+The [variable-field channel owner](A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md)
+removes a further analytic premise: the actual limiting generator has a
+unique conservative minimal QDS on the full smooth torus and a strongly
+continuous CPTP predual on its entire trace class. All 16 form components
+and reference 128 remain; neither a Fourier window nor a fixed
+preparation rank defines the state space.
+
+This uses a native structure, not the formal identity L*(I)=0 alone.
+The actual Julia/Walsh rows have spatially fixed adjoint phases, making
+the cubic energy defect internally traceless. Their full CAR mixing gap
+inverts the principal cell equation. Its explicit order-one correction
+cancels the defect in an auxiliary Lyapunov estimate. The actual proper
+boost control has a nonzero signed cubic defect and rejects the opposite
+correction sign. The original operator, energy, action and physical
+process are unchanged. The common H2 graph core verifies every hypothesis
+of the cited conservation criterion.
+
+The actual finite-h marginal trajectories also converge for every
+converging trace-class preparation. The exact blank/nonblank CP split
+retains all 127 literal nonblank slots. Its first-jump integrated norm
+identity gives strong Hilbert-map convergence; finite compositions on
+the waiting-time cube give every fixed jump layer, with adjacent jumps
+included. Lattice trace preservation and continuum conservation control
+all positive tails. Neither a trace-class generator-core assumption nor
+a high-energy input moment is needed.
+
+The consumer is now the full spatial process and its actual discrete
+approximation in the native source argument. Uniform entropy/source and
+rank-birth estimates, physical clock/code/Info/admission and the equality
+with intrinsic Einstein sources remain separate. No quantitative h^-2
+source bound follows from qualitative trajectory convergence. The
+original fixed nonconstant g, independent tau, all 10 packed rows,
+unweighted raw h^-2/#216 terminal remains OPEN.
+
+The parallel [native-cycle morphism intake](sources/d0_native_cycle_morphism_2026-10-17/RESULT_RU.md)
+is preserved from 03ccb728 without rerunning its producer's 81 exact
+checks. It supplies finite determinant/source arithmetic on the actual
+recorded scene and the full moving-(P,U) five-term derivative, without
+an additional Fock carrier. Its negative effective-F triangle lifts
+to primitive six-step scene paths; it is not a negative probability
+for a primitive event. Physical signed-cycle valuation, cyclic-origin
+future-test equivalence, the scene-to-v8 map and full Cost-Info selection
+remain open. This consumes the algebra while leaving the physical
+morphism with the coordinated owner.
+
+## Whole-lattice coherent entropy and code values — 17 October 2026
+
+The [whole-lattice entropy/code owner](A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md)
+now removes the uniform-integrability premise for declared moment
+classes of actual preparations. The exact global Hermitian Julia Kraus
+formula gives a trace-free double-commutator defect at every frequency.
+Finite-grid Fourier composition, with its controlled alias remainders,
+constructs periodic first- and third-order analytic correctors. They
+prove uniform Lyapunov estimates for I+Delta_h and its square on the
+entire Brillouin cube, retaining all 16 forms, proper links, moving
+observer/density and reference 128. No physical energy, action, state
+or source is replaced.
+
+A uniform initial first moment therefore gives coherent-record entropy
+value convergence for actual pure system/reference preparations on the
+full spatial carrier. Uniform second moment additionally controls the
+Rayleigh tails, actual total exit count and original port-code limit
+n+p integral Tr Delta rho(t)dt+o(1). The value of every supplied fixed
+per-round code has the analogous limit, with its blank baseline kept
+explicit. A full faithful reference-128 UV preparation shows why mere
+trace convergence would miss a finite entropy defect.
+
+These are actual process/value results rather than a new selected
+physical price. Their source consumer still needs field/preparation/
+clock derivative convergence and rank-birth logarithmic control, plus
+the native full-history/ensemble/workspace and test/Info laws. Einstein
+source equality and the original fixed nonconstant g, independent tau,
+all 10 packed raw h^-2/#216 terminal remain OPEN.
+
+## Full spatial first sources and retained preparation — 17 October 2026
+
+The [first-source owner](A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md)
+now consumes the variable process and energy estimates to prove actual
+smooth field/preparation derivatives. All integer moments have the same
+periodic-symbol correction. Weighted trace-class propagation and the
+exact discrete Duhamel formula give state C1 convergence under a third
+initial moment and locally uniform normalized initial tangent convergence.
+The real 128-output isometry has a skew connection plus orthogonal
+innovation; its repeated derivative is bounded by first/second energies.
+This supplies a uniform actual purification-jet norm, without requiring
+its convergence or a common varying tape embedding.
+
+A first-energy Renyi bound controls the logarithm regularization tail.
+Together with the state-source limit it proves convergence of the
+complete coherent entropy first source even at rank birth. A fourth
+initial moment gives the original port and every supplied fixed-round
+code source. All coframe/link/observer/density/preparation jets remain;
+clock jets come only from a given smooth programme at locally fixed n.
+These are controlled M'_h=O(h) smooth-field covectors, not rough raw-link
+uniformity or the h^-2 comparator criterion.
+
+The parallel [preparation descent](A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md)
+is preserved from 9366f3e8, with producer-reported 483 exact checks and
+four executed mutations, without replay. It solves the observable
+coherent-code preparation equation on the full eight-momentum shell,
+with quantitative recovery/Hessian, a unique interior extremum, exact
+gap and true envelope/Schur source. Invisible coherences remain, and
+fixed momentum masses require their own multipliers. This removes the
+assumed invertibility of that declared preparation block, not the other
+retained equations or native physical code/Info selection. Its finite
+shell bound does not prove spatial variational compactness.
+
+The next source equality must use the actual admitted full price and
+retained preparation, including history/ensemble/workspace/clock terms,
+then compare with the intrinsic nonlinear Einstein covector. No source
+or counterterm is fitted here. Physical selection, nonempty joint
+refinement and the original fixed nonconstant g, independent tau,
+all 10 packed raw h^-2/#216 terminal remain OPEN.
+
+## Actual spatial preparation and the missing Lorentz source — 17 October 2026
+
+The [new variational owner](A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md)
+consumes the full process/energy/source owners and the parallel shell
+preparation theorem. The absolute corrected-energy estimate propagates
+energy in both directions. Hence the original port cost, with any supplied
+nonnegative extra relative branch code, controls INITIAL energy over every
+fixed positive record interval. Entropy grows only logarithmically. This
+derives compactness of unknown optimal spatial preparations on the actual
+reference128 amplitude domain; no arbitrary trace-class purifier is used.
+
+The full domain now has an attained minimum, a Gamma limit with converging
+grid minima and minimizing optimizer cluster points, and the weak all-column equation
+`K_T C+eta B_C=F(C)C`, with the actual entropy logarithm vector in L2.
+Positive OUTPUT cutoffs prove cost liminf; input compression is not ordered.
+Rank births remain. Neither faithful rank, uniqueness nor moment3/4 source
+regularity follows; these are not smuggled into the geometric envelope.
+
+There is a direct geometric consumer that needs no such bootstrap. On the
+owned LC cone family e=s O01(theta(y)), the coordinate-form isometry makes
+both D and EVERY limiting labelled Julia row constant. Thus the full
+continuous-jump record, fixed per-round code and coherent entropy are
+independent of theta for every coordinate-form preparation. Their full
+spatial minimum is independent too, while
+`I_EH=-2s^2 integral(theta_prime^2)` has nonzero source. Including the actual
+positive Rayleigh term in the SAME objective preserves this invariance;
+its own preparation equation must then be used. Optimizing preparation
+therefore cannot supply this missing Lorentz source in the unscaled
+continuum candidate.
+
+This strengthens the older spectral-only cone boundary, without deleting
+the actual order-h^2 retained-history signal. It makes the route decision
+concrete: the physical native price and its clock/scale must bind that
+retained comparison/history information; further unscaled coherent
+preparation regularity cannot manufacture the absent row. No independent
+stress is defined by the Einstein residual. All ten metric tests and the
+restricted stored versus larger positive-adjoint domain remain distinct.
+
+The user's reattached coframe/weighted-edge text is SHA-identical to the
+already preserved input. Its scalar-jet matching claims remain disproved
+by the existing operator/source bridge; no duplicate reconstruction or
+old scientific replay was run. The new results are analytically reviewed
+and pinned in the existing checkpoint intake. Physical price selection,
+compatible joint refinement and the original fixed-g/independent-tau,
+all-ten raw h^-2/#216 terminal remain OPEN.
+
+## Complete information law and the actual history scales — 17 October 2026
+
+The [full-history source owner](A4D_COMPLETE_HISTORY_INFORMATION_SCALE.md)
+removes a false freedom in the physical-price search. If Book raw weights,
+Born-normalized q, code and Info are bound on the SAME complete history,
+then pointwise Cost-Info=(-log q-log N)/log(phi). A change of code changes
+Cost and Info equally, including moving-code and all-field derivatives.
+The actual forcing target is history/test cut, raw normalizer and action
+scale. It is not necessary to force a unique syntactic decoder in this
+likelihood contract. The normalizer's source is not fixed by q alone.
+
+The entire native128-outcome pointer tape now has a quantitative source
+law. Conditional log-likelihood increments have a bounded L2 sum by
+unconditional fourth moments. The actual tape purification tangent bounds
+classical Fisher information, so BOTH full entropy and every smooth first
+source equal log(1/epsilon) times total-exit count/source plus O(1).
+Thus their normalized limits are the actual integral Tr Delta rho and
+its complete covector. Clock terms cancel exactly at fixed integer depth;
+there is no formal differentiation of an entropy value limit. This applies
+to the stated initial moment/jet class, without history enumeration or a
+positive floor on individual outcomes. Native physical binding is separate.
+
+The [coherent normal-birth owner](A4D_COMPLETE_RECORD_NORMAL_BIRTH_SCALE.md)
+then closes a different analytic premise at the next history scale. An
+actual one-step weighted residual proves the second output expansion,
+including the Euler clock correction. Inverting only the previously proved
+positive2048 leading support gives its true Schur birth operator. Its trace
+b contributes +2b h^2 log(1/h) to the complete coherent record entropy.
+It is not the old squared matter-corrector norm or a rare probability.
+
+Six literal rare outputs (three role characters and BOTH golden ports)
+form a positive sector of the real retained history. Their event map,
+with the two-mark error O(h^4), proves
+`b >= T/(128s^4) [2 Var(theta_prime)+<theta_prime^2 cos^2(2theta)>]`.
+It survives every normalized prep firstjet and h-order field corrector.
+For theta=y the bound is T/(256s^4): the other two characters resolve
+the single-character winding exception. All8 momenta/full16/reference128
+remain. The stated H24/link-Taylor assumptions are analytic, not newly
+proved physical admission or a claim about every leading preparation rank.
+
+A fixed finite per-round code has a regular power expansion and cannot
+cancel this coherent logarithm. On canonical sampling b is zero at a
+constant cone and positive on every nonconstant one. The locally uniform
+value expansion therefore supplies a distributional parameter source and
+rules out a uniformly finite log-free h^-2 source on that whole declared
+family without a separately derived cancellation. No pointwise C1 remainder
+or rough raw-source norm follows merely by differentiating the value.
+
+The route now uses both concrete laws: likelihood Info cancels code and
+leaves pointer entropy minus the real raw normalizer; the declared coherent
+Cost-S candidate retains a genuine logarithmic birth contribution. Maximal
+operational gain has its own central-reference/test hypotheses and is not
+an arbitrary sign change between them. The physical morphism must select
+its actual cut/reference/weights/scale with all equations, then its source
+must match the intrinsic Einstein covector. No desired stress or action
+term is inserted. Compatible joint refinement and the original fixed-g,
+independent-tau/all-ten raw h^-2/#216 terminal remain OPEN.
+
+
+## Constructive history reading and the remaining price law — 17 October 2026
+
+The user's coframe/weighted-edge text is byte-identical to the already
+preserved input (SHA256 ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61).
+Its scalar-contorsion assertion was disproved in the existing coframe/source
+bridge; its full-work request does not call for another reconstruction.
+The current continuation instead supplies three missing consumers of the
+complete native history argument.
+
+First, the [golden/CNOT construction](A4D_RETAINED_HISTORY_COHERENCE_TEST.md)
+uses two actual G gates and active-to-old-bit registrations. For the flip
+X_t it gives K0=pI-p²X_t and K1=ap(I+X_t). The joint pointer effect is
+p³(P_i+P_j+|i><j|+|j><i|). Together with old diagonals these effects
+reconstruct every REAL coherence and its genuine normalized derivative.
+The generic matrix-unit proof covers the full128^n tape; it is not a
+rank census or arbitrary-POVM assertion. All outcomes remain. Literal v8
+uses fresh workspaces and does not derive this old-target placement; the
+costed admissible placement and complex quadratures are explicit remaining
+premises. The conserved old-translation charge can be read by this word,
+so its preparation invariant does not imply pointer-only feasible tests.
+
+Second, the [raw-weight law](A4D_RETAINED_HISTORY_READOUT_AND_NORMALIZER.md)
+reduces normalization to an exact local target. For w_child=w_parent
+mu_child phi^I_child, prefix projectivity holds iff sum mu_child phi^I_child=1.
+Its actual field derivative must also vanish. A telescoping debt formula
+retains violations and their covector at every prefix. The actual open
+Julia effect-tree satisfies projectivity with normalized preparation.
+But the SAME channel on faithful shell/reference128 has return-cut
+normalizer F_e(I/128,Phi^n), with one-round value1-epsilon gamma,
+gamma>0 by a literal non-scalar Walsh row. Empty normalization therefore
+does not identify Book geometry/cyclic sums with the open cut. Choosing
+that binding is the remaining physical proof, not a numerical convention.
+
+Third, the [pointer finite-part theorem](A4D_POINTER_HISTORY_FINITE_PART_SOURCE.md)
+places all waiting paths and marks in one finite analytical measure.
+The actual path-amplitude convergence and log-tail control give
+H_h-log(1/epsilon_h) E N_h -> -integral f log f. Under the stated stronger
+moment/preparation-jet bounds, actual differentiated path products and the
+uniform tape-innovation bound give weak path-jet convergence. Pairing with
+the strongly convergent amplitude-log vector proves the full fixed-clock
+first covector, including rank births, without differentiating a value limit.
+The common measure is analytical; it neither chooses a physical code nor
+authorizes the leading subtraction as an action counterterm. Moving clock
+cells need the actual programme's transport terms.
+
+Thus the history argument now has explicit tests, a local raw-normalizer
+criterion, and the complete pointer finite-part/source consumer. They are
+substituted in E S=(H-log N)/log(phi) only under the SAME physical likelihood
+binding. Full source equality to intrinsic Einstein still requires that
+native binding and a compatible nonempty joint refinement; the original
+fixed-g/independent-tau/all-ten unweighted raw h^-2/#216 target remains open.
+No old certificate or Lean replay is used by this continuation.
+
+
+## Feasible gain and the full-source interface — 17 October 2026
+
+The [new all-word test/source theorem](A4D_NATIVE_FEASIBLE_GAIN_AND_ACTION_SOURCE.md)
+changes the physical Info consumer of the previous tomography result. Every
+supplied active operation and one-way C_f commutes with old translations.
+Consequently its complete joint pointer POVM is translation-covariant on
+the entire old tape. This includes all word lengths, active extensions and
+an independently supplied active complex quadrature. Tomographic matrix
+span is not maximal relative-entropy gain in one allowed experiment.
+
+For a faithful real qubit response sigma=(I+xX+zZ)/2, mu=I/2, the elementary
+convexity of t log t-t²/4 and orbit covariance give a uniform measured-gain
+loss at least min(x²,z²)/4. The x=z=1/2 fixture gives a strict1/16-nat loss.
+It can be tensored with the unchanged full carrier for an algebraic response
+test; no actual native preparation or central PF block identification is
+asserted. Thus this is a necessary operational test of a proposed universal
+full-D law, not an all-ten geometric source or a D0 no-go.
+
+The new theorem goes beyond that obstruction: the optimum over real covariant
+POVMs is an exact compact one-variable moment problem, with at most two
+orbit seeds and an explicit supplied-class two-rotation/two-registration
+implementation. Danskin gives its genuine one-sided all-state source.
+A uniform Taylor estimate over every test yields the second directional
+coefficient max(x²,z²), whereas quantum relative entropy gives x²+z².
+The former violates the parallelogram identity and cannot be replaced by a
+smooth quantum-entropy Hessian. State-dependent physical test preparation,
+clock, code/reference and programme cost still carry their own sources.
+
+The quarter-turn owners were inspected at their exact types. A commuting
+right-i complex reading and a controlled left-i spin action do not supply
+scalar active diag(1,i) on full16/reference128 for free. Even granting that
+phase gives imaginary tomography while preserving the same gain bound.
+The needed universal-complete-gain route must prove an operation/measurement
+outside the old-translation commutant, or derive and use its actual restricted
+gain law. It cannot be repaired by another phase test in the same class.
+
+The existing scene-Perron tower supplies a true projective normalized
+history law. Its fixed-scene logarithm is length plus an endpoint boundary,
+with no interior field source at fixed endpoints. Binding its surprisal
+to Book action/Info and mapping that scene to Julia remain separate.
+The correct positive binding is amplitude-word map PLUS a complete admitted
+outcome cut: effects compose as K_omega* E_alpha K_omega, not E_omega E_alpha.
+For all faithful preparations, scalar projectivity is equivalent to this
+operator identity; then N=1 and all normalization jets follow. Literal
+signed cycle components cannot individually be that positive event cut.
+
+README now gives the small set of current consuming interfaces; detailed
+prior results remain here and in the current route. No source, action,
+phase, old-memory placement or physical information law is installed.
+Full Einstein equality, nonempty compatible joint refinement and the original
+fixed-g/independent-tau/all-ten raw h^-2/#216 terminal remain OPEN.
+
+
+The companion [pointer-birth continuation](sources/d0_feasible_gain_source_2026-10-17/POINTER_BIRTH_CONTINUATION.md)
+also removes a false equality at the next history scale. For the three literal
+coefficient0 role contrasts and BOTH ports, the event of at least one such
+mark has probability h² r2+O(h³), with
+`r2=T[3+4<theta_prime²>+2<theta_prime² cos²(2theta)>]/(256s⁴)`.
+The actual first-rare path map and weighted log tails give its contribution
+`2 r2 h² log(1/h)+h² J_R+o(h²)` to the full pointer finite part, with a
+locally distributional parameter source2 dr2 and its actual state/adjoint
+coefficient source. This is not the coherent Schur birth. At theta=y it
+retains the kinetic baseline and gives r2=T/(32s⁴).
+
+It is not the entire pointer birth coefficient. Four ordinary nonzero
+coefficient1 rows have a zero four-letter word by the full16 Hadamard
+occupation/parity identity, so zero-leading histories extend beyond those
+six rare marks. A complete raw h^-2/log-source comparison must include all
+such births, the actual count correction m2 and the SAME -log N. Matched-time
+boundary/collision strips are not automatically logarithmic births; nor
+can normalizer logs be excluded without a nonvanishing leading N0>0.
+This identifies the next whole-history consumer without replacing the
+full information functional by a selected positive event.
+
+The four-row ordinary subalphabet is now classified at every depth. For a
+word of labels $(j₁,…,j_m)$, the leading product is nonzero exactly when at
+least one of $(j₁,j₃,…)$ and $(j₂,j₄,…)$ is constant; for $m≥4$, zero
+words therefore number $4^m-4^{\lfloor m/2\rfloor+1}-4^{\lceil m/2\rceil+1}+16$. The exact
+support checker verifies all 87,380 words of lengths 1–8 on every Fock grade,
+shell axis and momentum sign. See
+[the zero-word result and its scope](sources/d0_feasible_gain_source_2026-10-17/POINTER_ZERO_WORD_LANGUAGE_2026_10_18.md).
+This closes the combinatorial language for those four leading rows, while
+their first-jet weights and the complete pointer $h^2 log$ source, count
+correction, strips and raw normalizer remain open.
+
+## 19 October 2026 — two-null crossing: curvature normalization and native-readout boundary
+
+The double-null route has a consistent finite-curvature normalization, with
+one factor that must be made explicit. Let
+\(C_h^{\rm log}\) be the raw coefficient matrix in the oriented plaquette
+logarithms,
+\((C_h^{\rm log})_{ab}=K_b(z)-K_b(z+\hat a)\), and define the
+area-normalized matrix by \(\mathcal C_h=hC_h^{\rm log}\). For the existing
+backward links \(K_2=(H-H_{-x})/(2h)\),
+\(K_3=(H-H_{-y})/(2h)\), exact stencil algebra gives
+
+\[
+\operatorname{tr}C_h^{\rm log}=-\frac h2\Delta_h^\perp H,
+\qquad
+\operatorname{tr}\mathcal C_h=-\frac{h^2}{2}\Delta_h^\perp H,
+\qquad
+E_{v_v^+}=h\operatorname{tr}\mathcal C_h.
+\]
+
+Thus the attachment's equations for \(E_{v_v^+}\), the \(h^{-2}\) curvature
+limit, the cubic harmonic matrix, and the summed boundary flux all use
+\(\mathcal C_h=hC_h^{\rm log}\). The plaquette logarithm itself contains
+\(C_h^{\rm log}\); the scale factor belongs in the definition of the
+curvature matrix. With \(\Delta_h\) the standard \(h^{-2}\)-normalized
+central Laplacian, \(W=x^3-3xy^2\) gives
+
+\[
+\mathcal C_h=h^2\begin{pmatrix}
+-3x&3y-\tfrac32h\\
+3y+\tfrac32h&3x
+\end{pmatrix},\qquad
+\operatorname{tr}\mathcal C_h=0,\quad \mathcal C_h\ne0.
+\]
+
+Consequently \(\sum_D\operatorname{tr}\mathcal C_h
+=2\lambda E(u)\,h^2\#D\) on the sourced root, matching
+\(2\lambda E(u)\operatorname{Area}_h(D)\) for
+\(\operatorname{Area}_h(D)=h^2\#D\). The raw logarithmic coefficient matrix
+would instead require an extra factor \(h\) in that flux. The exact check is
+[here](sources/d0_two_null_crossing_2026-10-19/check_discrete_curvature_scaling.py).
+For a smooth profile, \(\mathcal C_h/h^2=C_h^{\rm log}/h\to
+-\tfrac12\nabla_\perp^2H\); its trace-free part retains the two Weyl
+polarizations while its trace supplies the Ricci source.
+
+The updated [two-null Cartan 2-jet check](sources/d0_two_null_crossing_2026-10-19/check_two_null_cartan.mjs)
+exactly verifies the four opposite-null commutators and a rank-six pivot
+minor; it also passes its bounded torsion and crossed Ricci/Weyl fixtures.
+It verifies the continuum local coframe calculation; its own scope excludes
+the original finite 40-row action, physical D0 admission, and global GR.
+The companion [crossing Ricci/Weyl note](A4D_DOUBLE_NULL_CARTAN_CROSSING_RICCI_WEYL_SPLIT_2026_10_19.md)
+records the exact continuum Cartan normal form and the local curvature
+invariants, with the same finite-root and native-selection boundaries.
+
+The [finite plaquette trial check](sources/d0_two_null_crossing_2026-10-19/check_finite_all40_two_null.mjs)
+then varies the original six-based star through all 16 solder and 24 link
+directions on that crossed affine coframe, using continuum Levi-Civita links
+as a trial. Each one-sided affine pp branch has zero finite rows, but the
+orthogonally crossed trial does not: at \(h=1/8\), its largest solder and
+link residuals are \(7.5713\times10^{-5}\) and \(6.0785\times10^{-5}\);
+halving \(h\) reduces them by approximately 8 and 16. This bounded numerical
+check rejects that link lift as an exact finite root; it does not exclude
+other two-sided roots or prove a no-go.
+
+The latest finite diagnostic separates the source orders at the origin.
+For orthogonal gradients, it reports a maximum solder residual of
+\(7.6294\times10^{-6}\),
+\(J_{u,\mathrm{rot}}=+6.1035\times10^{-5}\), and
+\(J_{v,\mathrm{rot}}=-6.1035\times10^{-5}\) at \(h=1/8\); halving \(h\)
+reduces the solder residual by 16 and the rotation rows by 16. With parallel
+gradients the rotation rows vanish to numeric tolerance and the maximum
+solder residual divided by \(h^3\) is \(1/4\). These are
+bounded numeric diagnostics, consistent with separating a Ricci-type
+\(h^3\) solder source from a crossed rotation defect, not an exact formula
+for a solved two-sided root.
+
+The separate [opposite-null Julia order-memory result](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md)
+now constructs the abstract readout step: one fixed complete 13-effect POVM
+on the original CAR16 grade-1 sector and a fresh four-dimensional test
+reference has an invertible six-generator response; two fresh Julia flags
+give the correct ordered product, while reuse has an explicit composition
+defect. Its finite order test distinguishes rotation and boost commutators,
+and a fully retained original Golden split yields a nonzero same-history
+Shannon source under the stated coarse-cut price hypothesis. The live
+[bounded checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py)
+passes these controls. This closes the
+positive order-readout construction only in the declared generous
+active-orthogonal / one-way fresh-registration class; the extra test
+preparation, actuation and Golden branch still need their actual native
+program and cost. The latest continuation also proves a local analytic
+inverse from those six contrasts and reconstructs the existing Palatini star
+as the same function on its rest chart, so the chart-level Euler follows by
+chain rule. Gauge transport of the calibrated test and compulsory physical
+Cost--Info selection remain separate. The inverse is local to the declared
+rest chart; it does not itself force the original programme to execute or
+price that reconstruction.
+
+The same owner now gives a hard second-source control for this candidate:
+the six independent one-face Golden refinements match the flat Palatini
+first jet after a common scale, but the complete four-gate crossed-null
+Julia/Shannon record produces exactly \(-h^2/8\) where the original face
+produces \(-h^2\). The factor-eight mismatch rejects this specified complete
+mean-Shannon price at the crossed-null \(C^2\) source. It is a scoped
+candidate rejection, not a no-go for the compulsory D0 Cost-Info law.
+The all-failure, positive-outcome control is in
+[`check_four_gate_commutator_c2.py`](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_four_gate_commutator_c2.py).
+
+Thus the first remaining physical bridge is no longer an abstract detector
+formula: the same compulsory D0 program must generate and price this full
+fresh-flag record, with its complete retained Book history and actual
+Cost--Info law. On the geometry side, the crossed continuum-LC trial is not
+an exact finite root; constructing or excluding a genuine sourced two-sided
+root remains open. Neither conditional result selects a physical source or
+closes general GR.
+
+## 19 October: competitive complete descriptions and a full-source root criterion
+
+New disjoint consumer of strategic §7.43:
+[complete code-class first-source universality](A4D_COMPLETE_CODE_CLASS_SOURCE_UNIVERSALITY_2026_10_19.md).
+The existing single-code C1 result now extends to every fixed competitive
+injective description in the same cost language. A finite code-mass bound
+and an exponential negative-redundancy tail give the exact source estimate
+`C_N sqrt(I_N(V))/N`; golden word counts remove the prefix-free hypothesis.
+The estimate keeps the entire moving record law, admits an actual correlated
+history score bound, and has no separate probability-floor parameter.
+
+The next minimal D_min bridge is one same-object admitted decoder with a
+competitive cost bound and the actual description-language growth rate.
+Exact computation or implementation of the minimizing encoder is unnecessary.
+An explicit literal-history comparison interface demonstrates that
+canonicity alone does not prove this bridge. Nor can a fixed description's
+constant Boltzmann weights select the moving native detector law; the
+complete Book normalizer, work, clock and preparation sources remain.
+
+The owner also proves a conditional exact-root transfer using uniform first
+sources and Brouwer on a genuine full-system stationary chart. It avoids
+demanding C2 convergence of arbitrary code choices, which a complete
+one-extra-F binomial control explicitly disproves. It does not furnish the
+missing full inverse/physical preparation for the all-40 geometric roots.
+The source estimate and its finite standard-library checker are integrated
+in strategic §7.60; internal independent analytical review is recorded in
+the packet. No BOOK/claim/assembly acceptance or lifecycle status changes.
+Physical D0=>GR and the original fixed-source raw-216 terminal stay open.
+
+## The existing full128 pointer reads an opposite-null order jet (2026-10-19)
+
+The proposed native-readout step now has a positive exact finite result.
+Using the original retained-history operator and full golden128 instrument,
+the port-0/blank-label probability responds to the order of
+\(N_2,\bar N_3\) links on the \(L=4\) first Fourier shell. With
+\(h=1/4\), coframe weight \(3/5\), a fixed CAR16 marginal \(I_{16}/16\),
+and the untouched reference128 factor, its mixed order jet is exactly
+\[
+\left.\partial_a\partial_b(q_{00}(AB)-q_{00}(BA))\right|_0
+=\frac{42633-14157\sqrt5}{5120000}>0.
+\]
+This is an existing outcome of the complete instrument, not the separate
+13-effect test. The zero-momentum control has zero first source. Exact
+derivation, source pins, and the hostile control are in the
+[full128 order-readout packet](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md);
+its expanded 326-check certificate passes, as does the existing 60-check
+[complete-record channel replay](sources/d0_complete_record_channel_2026-10-17/check_record_channel.py).
+
+This establishes endpoint-link distinguishability in the mathematical
+full128 program on the declared finite carrier. The configuration is the
+already-composed link \(AB\) or \(BA\); this result does not show that D0
+executes those two links as sequential memory words, that their Julia
+dilations compose, or that the selected pointer probability is the
+compulsory physical Cost--Info source. The current Julia word dilates
+\(P_r=C_rM_r\,\mathrm{shift}_r\), not \(M_r\) itself; a physical composition
+defect needs an admitted per-increment fresh-record operation on the same
+carrier before comparing sequential flags. It does not discharge this
+task's normalized metric-response terminal, nor promote physical D0-to-GR
+closure.
+
+As a controlled algebraic test of the naive single-flag map, the same packet
+also defines \(V(M)=\mathcal J(P(I))^*\mathcal J(P(M))\) on the original
+32-dimensional system-plus-Julia-flag carrier. Its Lorentz Lie defect
+\([D V(N_2),D V(\bar N_3)]-D V(J_{23})\) has rank 10 and exact squared
+Frobenius norm \(1789/500\); the reversed-order Lie defect has the same
+nonzero norm. Thus neither the homomorphic nor anti-homomorphic convention
+works for this relative one-flag Julia map. This rejects only that map; it
+does not exclude a separately admitted fresh-record sequence in the
+complete D0 program.
+
+### Follow-up: a selected two-round full128 history reads assigned increment order
+
+The exact test now re-applies the original 128-outcome instrument at two
+assigned links, with a fresh existing controller/output record in each round
+and both outputs retained. From \(I_{16}/16\), the history `0` in round 1
+(blank label/coefficient 0/port 0) followed by `19` in round 2 (label 4,
+coefficient 1/port 1) has
+\[
+\partial_a\partial_b(q_{A\to B}(0,19)-q_{B\to A}(0,19))\big|_0
+=\frac{12640131-5746707\sqrt5}{3276800000000}
+\approx-6.405532799495970\times10^{-8}\ne0.
+\]
+The complete 128 Kraus family is checked for normalization in the exact
+replay. This establishes order readout for that chosen finite repeated
+matrix instrument, beyond the endpoint-link result above. It still does not
+establish a physical D0 rule that admits each Lorentz increment as an
+executable fresh-record step, the native cost of that step, or a GR
+derivation. The updated packet checker passes 326 exact checks; the existing
+complete-record replay remains at 60 checks.
+
+### Follow-up: the fixed full128 probability vector sees only six of 24 link jets
+
+The packet now constructs the exact \(128\times24\) first-response matrix of
+all complete-instrument outcome probabilities, varying each of the four
+link roles independently along all six proper-Lorentz generators. On the
+same \(L=4\) background with phases \((1,1,1,i)\) and fixed marginal
+\(I_{16}/16\), its exact rank over \(\mathbb Q(\sqrt5)\) is 6, leaving 18 infinitesimal
+link combinations invisible to this probability readout. All 24 columns
+preserve total probability, and the already certified (J_{23}) pointer
+derivative is recovered as a control.
+
+This narrows the previous positive order-readout claim: the selected pointer
+can detect one opposite-null commutator, while the complete classical
+probability vector on this single background is not an injective readout of
+the full 24-link tangent space. The result concerns only these classical
+probabilities and this preparation/background; it does not rule out retained
+quantum-state information, other physical probes, or a different full native
+Cost--Info price.
+
+### Follow-up: retained conditional output states read all 24 link jets
+
+The exact branch-state response is richer than the 128 scalar probabilities.
+Keeping the unnormalized CAR16 output state for each labelled outcome gives a
+32768-coordinate real first-response matrix. A floating QR selects 24
+candidate coordinates, and the checker verifies the corresponding 24x24
+minor exactly over Q(sqrt(5)); its rank is 24. Hence the full
+outcome-labelled output-state family is locally injective on the four-link,
+24-dimensional Lorentz tangent at this finite background and preparation.
+The exact selected coordinate rows are included in the checker output.
+
+This establishes distinguishability in the mathematical full128 instrument
+when its conditional quantum states are retained. It does not establish
+native D0 access to those state observables or make this state response the
+compulsory Cost-Info price. Physical admission, per-increment execution, and
+full-price selection remain open.
+
+### Follow-up: two rounds of the full128 record expose at least seven link directions
+
+The same original 128-outcome instrument is now applied twice with a fresh
+record each round, and all 16,384 ordered history probabilities are retained.
+Each of the 24 link tangents is shared by the two rounds. Floating QR selects
+24 history rows; the corresponding 24x24 minor has exact rank 7 over
+\(\mathbb Q(\sqrt5)\). Thus the full two-round classical probability
+Jacobian has rank at least 7, one more direction than the exact rank-6
+one-round probability Jacobian. The numerical full-matrix rank diagnostic is
+7, but no exact upper-rank certificate is claimed. The selected history rows
+and exact-minor replay are in the existing
+[full128 order-readout packet](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md);
+the checker now passes 326 exact checks.
+
+This result narrows the gap between retaining conditional states (exact
+rank 24) and observing only one-round classical outcomes (exact rank 6): a
+two-round complete classical record recovers at least seven combinations on
+the same finite background. The remaining directions are not certified as
+classically readable here. Physical admission of repeated per-increment
+execution and selection by the compulsory full Cost-Info price remain open;
+this does not close the #334 normalized metric-response terminal or GR.
+
+## Same-profile #216 comparator for the #232 \(h^2zx_0,h^3zx_0\) jet
+
+The prescribed local comparison is now complete. The slow solder profile
+\(S_h=I+hA+h^2x_0B\) fixes a sampled Gram metric independent of the #232 fast
+amplitude \(z\). The designated #216 smooth sheet depends on that metric and
+its derivatives, so its response has no positive \(z\)-degree. The exact
+#232 joint jet has zero in all ten metric slots at \(h^2zx_0\) and
+\(h^3zx_0\), for each of its 24 free directions. The same-profile response
+difference therefore vanishes at those bidegrees; this jet is not a response-
+gap witness.
+
+The adjacent curvature coefficient \(h^2z^2\) is also jointly compatible on
+the same full phase × role × generator carrier. The explicit two-phase
+\(J_{12}\) connection correction cancels all 96 connection coefficients,
+and its 40 metric Euler coefficients vanish exactly; the stacked joint
+system has rank 88 with an eight-dimensional kernel. This is still a local
+formal coefficient, not a finite periodic root or a refinement-uniform
+response result.
+
+The companion check computes the continuum \(G[g_h]\) for the local extension
+\(X=hx_0\). It is curved at finite \(h\), with its first displayed terms at
+order \(h^2\), and tends to the flat metric. This does not give the fixed
+nonconstant refinement sequence, an exact periodic root, or the owner-sum
+response terminal. See the [slow-lift owner](A4D_DIAGONAL_MICROSTRUCTURE_CONNECTION_STATIONARY_SLOW_LIFT.md)
+and [same-profile comparator check](certificates/a4d_diagonal_microstructure_same_profile_comparator_check.py).
+
+## Complete full128 pointer Shannon source along the opposite-null commutator (2026-10-19)
+
+The original (L=4), first-shell full128 instrument has a nonzero first
+source for its **complete 128-outcome Shannon term** along the same role-2
+Lorentz generator (J_{23}=[N_2,\bar N_3]) whose finite pointer already reads
+the opposite-null commutator. With the fixed (I_{16}/16) system marginal,
+the exact grouped-log derivative is enclosed by rational interval arithmetic
+as follows:
+
+\[
+D_{J_{23}}H_\varphi(q)\in[-0.031546784312485733440439,
+-0.031546784312485733440438].
+\]
+
+All 128 outcomes are retained; 86 have zero base probability and zero Kraus
+operator, so they add no first entropy jet. The original port code's known
+length-(1/2) contribution has derivative
+\(9/800-9\sqrt5/1600=-0.00132788237\ldots\), different from this complete
+pointer Shannon source. The difference is only a port-code partial
+Cost-minus-Info comparison: costs for the other record labels, controller,
+work and normalization are not supplied here.
+
+Because of the zero-probability branches, this certifies a first source but
+does **not** certify a (C^2) Shannon readout or its mixed order jet. The
+result narrows the detector/source gap while leaving the full Book
+Cost-Info selection, physical admission, metric source and refinement open.
+See the [full128 source result](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md)
+and its [exact checker](sources/d0_native_full128_order_readout_2026-10-19/check_complete_shannon_order_source.py).
+
+## Full-history Golden source audit: binary coarse-graining is not the physical price (2026-10-19)
+
+The reviewed physical-source packet from source PR #384 is now integrated into
+this same #334 execution. Its five research owners and six small checkers are
+listed with SHA-256 provenance in
+[the intake record](sources/d0_physical_binary_return_2026-10-19/INTAKE.json).
+The copied files are byte-identical to source head
+8d78b094efb217af8e8bebc3cea733777b93077e. All six checkers passed both before
+and after transfer.
+
+The intake separates several objects that had been tempting to collapse:
+
+* On the original full128 flat-shell instrument, the unique 1024-step modal
+  history and the complete pointer-Shannon mean have different J23 first
+  sources (-4.581893845... versus -0.0315467843...). The measured tape has
+  hidden-port and blank-port source pieces; the full128, reduced-label, and
+  hidden-port derivatives are not interchangeable.
+* A binary good/failure statistic does not determine the full retained-history
+  price. Exact KL chain rules leave a conditional fine-code source, and the
+  coherent retained-record correction has its own nonzero source. The
+  four-label controls are counterexamples to an inference from fixed binary
+  probabilities to zero fine or coherent source; they do not constitute a
+  full-instrument physical no-go.
+* For the distinct native filled-return binary event, three explicitly
+  defined conditional readouts have proportional geometric/CAR first
+  covectors on the stated fixed-oldRIGHT, common-probability, eligible source
+  directions. This is conditional source equivalence, not equality of their
+  actions. The complete Book normalizer, preparation, clock, work, and other
+  full-source rows remain unaccounted for.
+* On the unrestricted matched AF preparation fibre, a bounded-norm whole-
+  sector transfer has a nonzero entropy source. The exact Gibbs/KL code
+  pressure selects the canonical preparation mathematically, but its identity
+  with the compulsory physical Book action is not established. For the same
+  complete Born instrument, trace normalization gives N=1 and hence no source
+  from log N; the source cannot be attributed to that normalizer while also
+  identifying it with the complete Born trace.
+
+These are results for named Golden/full128 and filled-return programs. No map
+has yet identified their complete physical action with the newly fixed
+full718 Perron reflection U_min. The actual physical history algebra, same-run
+Book Cost-Info binding, full preparation/clock source, and pullback to the
+40+matter Lorentz equations still need one owner on one programme.
+
+The current same-branch preparation boundary sharpens the next step:
+[the full Golden record owner](A4D_LABELLED_GOLDEN_RECORD_FULL_SOURCE_2026_10_18.md),
+§6.70, proves that C_Y address-copy and the declared fineRIGHT-preserving
+class supply at most 13p^6 success, strictly below the required s_* profile.
+This excludes that class for the target preparation, not all native D0
+operations. The next constructive question is a physical actuator that
+changes fresh fineRIGHT descendant supply on the actual K_j wires while
+preserving the whole old jointRIGHT/reference and carrying its complete
+history and price. This integration does not discharge the task's #216/#232
+normalized response terminal, select a physical action, or close GR.
+
+## 19 October: phase-to-action integrability after the full source update
+
+The new [CAR16 phase/source owner](A4D_TWO_HISTORY_PHASE_HELMHOLTZ_AND_NATIVE_ACTION_GATE_2026_10_19.md)
+supplies a missing type check between the two-history/Weyl reading and the
+same-action double Schur. On three actual compact proper-Lorentz directions
+of the unchanged full exterior16 representation, the diagonal one-arm
+phase has contact coefficient `alpha wedge d alpha=1`. Its two-coordinate
+source Jacobian is `[[0,-1],[0,0]]`, whereas the actual fixed-reference
+scalar phase has symmetric Hessian `[[0,-1/2],[-1/2,0]]`.
+Consequently that isolated moving-reference covector, even with a nonzero
+scalar multiplier and ordinary gradient costs, is not the source of one
+scalar action on this full chart. The doubled echo and path-action options
+remain correctly typed alternatives requiring their physical programme.
+
+The same proof preserves the viable weak-face route: fixed preparation and
+unitary `U_h=I+h²R+O_C2(h³)` give an integrable leading normalized phase.
+It also identifies a leading-order failure of freezing preparation: the
+exact original J23 family has `alpha_h=h²w dtheta`, so its h^-2-normalized
+curvature `dw wedge dtheta` does not shrink. A real independent archive
+factor cannot cancel it. The physical consuming identity is vanishing
+pullback curvature of the full retained reference/preparation/history
+source on the actual stationary section, or the actual doubled variational
+principle. The result is integrated in strategic §7.87 with an exact
+SymPy checker and scoped independent analytical review. Full physical GR
+and original raw-216 remain open.
+
+## Follow-up: the canonical AF GNS already carries Golden live-left / old-right addresses (2026-10-19)
+
+The new [AF GNS live-prefix owner](A4D_AF_GNS_LIVE_LEFT_GOLDEN_PREFIX_2026_10_19.md) identifies the exact cost-n Golden F/R words with the type-A path rows of the existing level-(n-1) Fibonacci algebra. Its normalized GNS matrix units are `|u>_LIVE |v>_RIGHT`, and the canonical cyclic vector is the diagonal correlated sum with the already owned `p^n` and `p^(n+1)` cylinder weights. Therefore an active-row-controlled complete query commutes with every old-right matrix unit; a column-controlled hostile query fails. The exact AF complement can carry the baseline complete query without removing any modes. The pinned replay checks the complete cost cut through n=20, all tested right matrix units through n=6, and the existing balanced n=20,L=4 masses: 7424 selected prefixes, 3522 other exact-cost words retained, and READY-pair mass 0.2317139780019033.
+
+This closes the representation-level need to posit an extra live prefix register within the canonical AF GNS. The latest full 718×16 owner independently proves that the complete normalized joint record is blind to the common original Info shift even though the absolute Book pressure changes, so the AF GNS vector does not supply that absolute cost/clock channel. Nor does it identify the vector with the physically prepared G0 state or show that literal `fullStep` executes the 4D addressed CAR/scene query or pays its full Book/preparation/clock/work source. The same one-face, one-run physical comparison remains the consuming GR gate; `GR_closed=false`.
+
+The current PR head now sharpens both sides of this boundary. The exact decoder in the updated full-718 owner proves that `(mu, lambda_abs)` recovers all 33 Info variables globally, and differentiating its edge formula gives `delta S_uv = delta I_u + delta I_v`; the ABC triangle is an explicit left inverse on the Info tangent. Separately, literal Golden+CNOT active gates are dense in `SO(2^k)`. Therefore the fixed finite AF cyclic vector is approximately preparable at any cut from a blank padded carrier, conditional on active placement: at `n=20`, its complex carrier dimension is 165,580,141 and its padded width is 28 registers. For a fixed preparation word, its probability, first-source, and second-source errors against the ideal AF vector are bounded by `2 epsilon` times the corresponding effect norm. This shows that abstract gate expressivity and finite-state controllability are not the remaining mathematical obstacle.
+
+The physical gap is now more sharply located: active placement and complete paid preparation; the same-run map from `(q,D,b,m)` into the 39 decoded Info/CAR coordinates; physical acquisition and payment of `lambda_abs`; and equality of the resulting complete `H+J+R` source with the independent Palatini/CAR covector. At `L=4`, the full declared field quotient has dimension 16,896. Any one-run output consisting only of the normalized 718×16 law plus one scalar has tangent dimension at most 11,488, so its differential has kernel dimension at least 5,408. The particular decoded product chart factors through only 39 parameters and has kernel at least 16,857 if used on the full field quotient. This is not an action no-go: it yields the necessary test `dS|ker(DGamma)=0` (or a proof that physical admission restricts the tangent). The consuming step is to evaluate that test on the actual same-run admitted source, not to demand impossible full tomography from this one-run interface.
+
+Two independently owned source probes should now be evaluated on that same execution and price. Along the uniform vertex-Info shift, the normalized full law has zero derivative while the absolute source obeys `d(-log_phi lambda)[1] = -1`; this tests whether the compulsory recorder pays the missing scalar. Along the existing volume-preserving metric shear, the full heat-plus-chronology candidate has `dJ_chron=0`, `dVol=0`, and `dH=2(E1-E2)>1/10000` at every native `L>=2`; a constraint multiplier also vanishes on that tangent. Thus passing the absolute-Info test cannot close the independent trace-free geometric source. If the same complete admitted action is `H+J+R`, its own derived `R` must supply `dR=-dH` on this shear. Neither derivative may be fitted or assigned to a separate postulated term. These two source slots give a compact next test for the one-face, one-run comparison.
+
+The latest PR head adds two hostile controls to that same test. First, for arbitrary heterogeneous Info the original 718×718 canonical-Cost transfer has exact rank three and its absolute Perron scalar is the largest root of a cubic in the three existing zone sums. The dedicated [same-law second-source owner](A4D_ABSOLUTE_BOOK_COST_SECOND_JET_NONSELECTION_WITH_FULL_GOLDEN_GATE_2026_10_19.md) proves that two still-permitted ActionProtocol primitive-cost families have identical normalized fixed-depth histories and the same value and first pressure source at the vacuum while their absolute-pressure second derivatives differ (`0` versus `2`). So a compact formula for `lambda` is not a selection law: the actual primitive Cost and the physical payment of its absolute pressure must be fixed by the same admitted programme. Second, the [full16 signed-Shannon/face owner](A4D_NATIVE_GOLDEN_FULL16_SIGNED_SHANNON_HESSIAN_AND_PRETRACE_FACE_NOGO_2026_10_19.md) shows that the complete 718×16 pointer Shannon has a signed `(3+,3-)` flat link Hessian but loses the first oriented `[ab]` face source; the positive pretrace `J23` marker retains it. The raw ordered marks and failure branches therefore remain necessary inputs to the physical source comparison. This rules out replacing the full ordered record price by its one-run Shannon scalar, without ruling out every other complete native action.
+
+## 20 October: generic-amplitude first-slow obstruction on the designated #232 warp
+
+The exact same-source first-slow system has now been extended from the pinned
+Cayley amplitude `t=1` to the full real Cayley parameter. It retains the fixed
+curved profile `f(y)=1+sin(2*pi*y)/(100*pi)`, the same-profile #216 comparator,
+all 96 phase/role/generator link corrections, both allowed flat-center slopes,
+and all 136 connection and metric rows. The center-amplitude tangent is
+`(4/(4+3*t^2))*Y`; using `Y` as its column only rescales one unknown by a factor
+that is nonzero for every real `t`.
+
+Writing `D=4+3*t^2`, each row coefficient has denominator dividing `D^4` and
+numerator degree at most eight, because each local plaquette expression has at
+most four Cayley-link factors. Nine exact rational evaluations therefore
+reconstruct the polynomial system after row scaling by `D^4`; an independent
+tenth evaluation at `t=9` replays both the full matrix and the prescribed
+source. Exact rank over `QQ(t)` is 97 for the 136×98 correction matrix and 98
+after adjoining the source. Thus a regular first-slow lift is impossible for
+all real amplitudes outside a finite algebraic exceptional set. Exact
+specializations give ranks 90/90 at `t=0` (the zero-carrier compatible point)
+and 97/98 at `t=1` and `t=2`.
+
+The exceptional set is now classified exactly. A 98×98 augmented minor
+selected at `t=1` factors, up to a nonzero integer constant, as
+`t^24*(3*t^2+4)^348*F_26(t)`, where
+
+`F_26(t) = 6377292*t^26 + 107351082*t^24 + 398935044*t^22 - 82574559*t^20 - 3595282200*t^18 - 2239488*t^17 - 8560584792*t^16 - 15614208*t^15 - 6051278880*t^14 - 40421376*t^13 + 8954889984*t^12 - 51904512*t^11 + 25823442432*t^10 - 36716544*t^9 + 29726969856*t^8 - 14352384*t^7 + 20294336512*t^6 - 2359296*t^5 + 8667824128*t^4 + 2204368896*t^2 + 264241152`.
+
+The degree-26 factor is irreducible over `Q` and has exactly four real roots,
+isolated in
+`(-28707/16781,-24160/14123)`,
+`(-7507/5873,-76508/59855)`,
+`(12201/9557,15362/12033)`, and
+`(50362/29425,50451/29477)`. Exact Gaussian elimination over
+`Q[t]/(F_26)` gives ranks 97 and 98 after adjoining the source. Since the
+four roots are conjugate, the augmented rank is 98 at each; none is compatible.
+The factor `3*t^2+4` has no real roots. At `t=0`, the microstructure vanishes,
+the source is zero, and both ranks are 90. Therefore `t=0` is the only real
+amplitude compatible with this first-slow system; no nonzero amplitude on the
+designated #232 Cayley orbit admits the regular same-source first-slow lift.
+The exact factorization and field-rank replay is
+[`a4d_y232_amplitude_exception_root_check.py`](certificates/a4d_y232_amplitude_exception_root_check.py)
+(`python-flint==0.6.0`); the SymPy-only generic-rank replay remains in
+[`a4d_y232_designated_warp_amplitude_generic_check.py`](certificates/a4d_y232_designated_warp_amplitude_generic_check.py).
+
+## 20 October: native two-record source, balanced-flag loss and the shortest six-face consumer
+
+The [positive two-record synthesis](A4D_TWO_RECORD_PHASE_ATLAS_AND_AUTOMATIC_PREPARATION_SOURCE_2026_10_19.md)
+consumes the newer Golden-p three-density theorem, native six-triangle
+all40 source and orbit/Bianchi controls at `d533539b`. Its new variant
+uses two dephased full Julia densities and six fixed CAR effects:
+`det DS_g=g^9(1-2g)^3/[124416(g²+(1-g)²)^6]`.
+At the original `g=p²`, determinant `p^9/15552000` is nonzero; at
+balanced `g=1/2`, all three boost phase derivatives cancel and rank drops
+to3. The full density does not lose those boost directions. A calibration
+failure of this scalar phase statistic cannot reject the whole carrier.
+
+The native compact preparation example gives the complete source
+`h^-2 d arg Z2=d(kappa w theta)+O_C1(h⁴)`,
+`kappa=(5-sqrt5)/10`, without inserting a preparation counterterm.
+The old1/4-scale controls remain explicitly separate from primitive p.
+Unconditional flag/CAR tomography or two-copy Hermitian readout suffices;
+no coherent whole-history comparison or third prepared density is needed.
+The prior nonclosed one-arm connection is a different source object.
+
+The same synthesis sharpens the current all40 consumer: any moving
+normalized distribution of pointwise equivalent geometric embeddings
+has exactly the same source as F_star; physical uniform gauge-orbit
+preparation is unnecessary for this descent. Full-scene gauge requires
+all Cost/Info and records to be relabeled, and actual controller/label
+prices are retained. Scene face matrices must remain functions of shared
+Role links, as the newest Bianchi/Wilson guard proves. Exact full32
+checker and independent formula reviews pass; strategic §7.100 consumes
+the result. Actual full Book selection, independent internal stationarity,
+same-action recovery and the distinct raw216 terminal remain open.
+
+## 20 October: exact joint reduction of the newly identified Book triangle factor
+
+The [common-pressure reduction](A4D_BOOK_TRIANGLE_PRESSURE_JOINT_EULER_COFRAME_REDUCTION_2026_10_20.md)
+consumes the latest `W=Tr(K³)/7722` six-face marked observable and positive
+Golden17 all40 source reconstruction. Offshell `d(WP)=W dP+P dW` is
+correct, but its second term need not survive the FULL geometric Euler.
+For an actually derived action `A(r)+W(r)P(y)` on the stated independent
+radial coframe chart, quadratic homogeneity forces P=0 at geometric
+stationarity. Thus the joint critical set factorizes in original fields,
+and the history/geometric Hessian mixed block is zero exactly. No W^-1
+term, constant-W assumption or erased source is needed in this class.
+
+The all-order coordinate identity `E=sqrt W e` and the real densitized
+massless-matter extension follow from the same existing degree2 owner.
+Higher effective original-coordinate vertices, local W_x metric changes,
+forbidden radial boundary directions and actual geometry-dependent
+remaining prices are explicitly retained. Strategic §7.101 states the
+consumer: test true native full-price membership and an actual internal
+root before judging a pressure cross-source. This is a positive exact
+composition theorem with independent review, not selection of the full
+Book action, a new root, or GR/raw216 closure.
+
+Latest `f236d61f` preserves site-conditioned K_x/W_x, so the common-K
+zero-Schur theorem is only a stated subcase. For local weights the exact
+full block pullback and a nonzero fixed-original-coframe Schur control
+are retained. The physical source must specify whether the observed
+metric is e or the derived E; coordinate equivalence alone cannot change
+the raw fixed-metric question.
+
+This excludes only this candidate's regular first-slow lift. It is not a
+nonlinear no-go for #232, not a response-gap sequence, and not the task's
+`A4D-JOINT-MICROSTRUCTURE-METRIC-RESPONSE-NOGO` terminal. Higher-order or
+nonregular continuations and the normalized response terminal remain open.
+
+
+## 20 October: a fixed-word input source can disappear under its own preparation equation
+
+Input `94c5848d`; latest clock/Weyl carrier results retained. The new
+[encoder/price source theorem](A4D_NATIVE_PRICE_ENCODER_SCREENING_AND_CLOCK_COMPLETION_TEST_2026_10_20.md)
+changes the actual compiler-to-constitutive parent step, rather than adding
+another readout atlas. For a pure preparation with fixed COMPLETE jointRIGHT
+Gram, every smooth encoded tangent has an explicit skew LEFT lift, including
+singular support. If those tangents are physically free and geometry enters
+ONE fixed full programme only through this input, genuine prep stationarity
+forces `D_g S=D_g A-D_p A B`, where A is its independently charged native
+preparation/work/actuation price. Setting A constant gives ZERO reduced
+geometric source, at all orders on a regular preparation chart. A nonzero
+fixed-prep Palatini pullback therefore cannot be declared the full dynamics.
+
+The original literal Golden fullStep gives an exact strict-minimum witness:
+full retained Cost-minus-pointer-Info Hessian is `4[[1,1],[1,1]]` in natural
+units; the same preparation Schur is zero and the exact branch u=-x preserves
+EVERY coherent output coordinate. The complete RIGHT Gram is unchanged;
+a faithful reference128 extension exists algebraically. Real added prep work
+restores a response determined by its own price, as an explicitly unselected
+hostile control demonstrates. This is not a no-go for structural actual
+field-dependent SELECT/cut operators, nor proof the whole LEFT orbit is
+physically free. Approximate normals retain `||r_h|| ||B_h V|| / signal_h`.
+
+The fresh rooted two/three-depth Book clock cancels one uniform pressure
+cocycle but leaves NINE exact Info sources `-pi_j<0` for the root's original
+zone in the tempting pressure-plus-clock completion. There is no interior
+Info root of that truncated candidate; a zero-action Palatini product does
+not repair it. The all-root clock alternative has stationary aggregate
+shapes only at a=b=c, which are maxima, not unconstrained MDL minima. This
+consumes, rather than contradicts, the upstream statement that clock odds
+are an observable and have not been selected as an action term.
+
+Smallest parent substitution: calculate the ACTUAL admitted encoder lift
+and native covector `D_g A-D_p A B`, plus any explicit structural-channel
+source, on the SAME programme; check every clock/Info row. FixedRIGHT,
+compilation accuracy and a uniform scale Ward alone do not supply these
+sources. Exact saved checker PASS26 groups and two bounded independent
+reviews. No selected full D0 price, physical tangent admission, geometric
+root/refinement or raw216 conclusion is promoted; GR_closed=false.
+
+## 20 October: exact coframe pullback for a nonseparable history pressure
+
+The new [analytic result](sources/d0_native_gr_universality_2026-10-20/RESULT.md)
+removes separability as a necessary condition for a Palatini-equivalent
+vacuum geometric price. If the full history action factors through the
+original sitewise six-face densities \(f_i(e,U)\), is \(C^2\), and has
+nonzero site derivatives \(w_i=\partial_iF(0)\), the line-homotopy
+coefficients \(a_i(f)=\int_0^1\partial_iF(tf)dt\) give an exact local
+coframe change \(\tilde e_i=\sqrt{a_i/w_i}\,e_i\). This makes the
+whole off-shell scalar action exactly \(\sum_iw_i f_i(\tilde e,U)\),
+including arbitrary cross-site second derivatives. A determinant identity
+proves the full coframe/link chart is locally invertible. In the local
+vacuum chart both stationary sets coincide pointwise and their Hessians
+are congruent. A site-radial Euler contraction gives the stronger exact
+statement that their kernels coincide in the same original coframe/link
+coordinates; the Hessian matrices themselves need not coincide.
+
+The adjacent checker supplies a constructed hostile witness on the original
+718-transition/8440-history support with nonseparable pressure and nonzero,
+equal flat site slopes. Its finite differences and line quadrature are
+floating-point evidence for that fixture; the universal theorem is the
+analytic proof in `RESULT.md`. This advances only the conditional
+`constitutive` route: actual G0 must still derive that its compulsory whole
+H+J+R/Book/preparation/clock/work source factors through these \(f_i\),
+with a common correctly signed coefficient, on a nonempty admitted chart.
+The fixture does not supply that selector, a matter source, refinement,
+Ward identity or physical recovery. `GR_closed=false`.
+
+
+## 20 October: exact curved original-Dirac fixedRIGHT128 preparation, actual source and native link square
+
+Inpute15c19f; latestf6fd07136 context consumed without changing the original
+spatial full-Lorentz interface. The new
+[exact curved native preparation theorem](A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md)
+closes a real positive part of the SAME whole-price problem. On the pp-wave
+coframe, original proper links fixing the null vector q=e_- and the TRUE
+shifted positive adjoint give an exact reducing block
+`span{1,q,i_q Omega,Omega} tensor ell2(u)`, inside the FULL CAR16/site carrier.
+It is two copies of the actual1D difference Dirac, at EVERY finite spacing,
+independent of the curved H(u,x,y) profile. No continuum surrogate, new
+spectral action or survival-reconstructed spatial operator is introduced.
+
+Combine this with the ALREADY owned fixedRIGHT Euler `[Delta,rho]=0`:
+several occupied energies are allowed. Explicit Schmidt pairing supplies
+ANY prescribed Gram of rank<=4Lu. The real16 cos/sin pairs×fourgrades give
+faithful reference128; real32pairs×onlygrades0,1 also give reference128 and
+zero first R force in ALL24 independent proper-link directions. Fixed
+finite modes have uniformly bounded energy under ell=h refinement and
+zero preparation residual exactly. This is a curved fixedRIGHT section of
+the original conditional H+J+R, not just a flat seed or approximate normal.
+Additional LEFT current/clock-grade14 constraints are not silently included.
+
+The actual Rayleigh term itself has a constructive nonlinear transport
+property: for a fixed lower grade1 plane state, R=lambda+the norm square
+of `sum_r z_r v_r wedge(U_r q-q)/ell`. Thus the curved null-parallel links
+minimize this original R over all proper links at fixed preparation; the
+fixed-prep link Hessian is nonnegative. No penalty is added, timelike
+parallel transport is not imposed, and nonzero pp curvature is retained.
+This does not assert uniqueLC or positivity after preparation Schur.
+
+All16 leg/24link/3observer first sources are computed on the entire
+quartet. Lower grades give only an explicit u-leg covector; high grades
+have generally nonzero link forces. Uniform observer boost gives exact
+R(t)=exp(2t)R, so the remaining observer equation is NOT omitted. Equally
+weighted real pairs match plane-mode densities; unequal weights need their
+cross-momentum entries. These exact sources now replace an unknown R term
+in the parent's actual H/J + matter field equations.
+
+Decisive checks:3072 exact full16 component identities on48sites; strict
+full16 forward Frobenius square6152/15625<1; actual nonidentity based face;
+48 exact low-grade link zeros and a positive nonlinear addition97/14055360;
+129 independent local full-source probes, rank128 Gram and low-energy real
+modes atLu65/129, including actual moving-observer whitening. Both bounded
+independent reviews passed with scope corrections applied. No H/J field,
+whole native action selection, full geometric root or raw216 closure.
+
+
+## 20 October: reverse-synthesis audit, exact order jet and curvature normalization
+
+For a \(C^2\) scalar readout \(\mathcal O\) on the Lorentz group, the proposed mixed-order identity is exact when both paths use the same base preparation and readout:
+\[
+\left.\partial_a\partial_b\{\mathcal O(e^{aN_2}e^{b\bar N_3})-
+\mathcal O(e^{b\bar N_3}e^{aN_2})\}\right|_{0}
+=D\mathcal O_I([N_2,\bar N_3])=D\mathcal O_I(J).
+\]
+The readout Hessians cancel; this identity by itself does not prove that a native D0 history realizes either product or that its compulsory price selects this readout.
+
+The proposed finite experiment is already present in this PR. The [Lorentz-order checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_lorentz_order_memory.py) passes the six-generator Lorentz algebra, all-grade exterior unipotent trace, and a specified positive full-support tester with nonzero rotation/boost order contrasts and a nonzero Golden-refined Shannon source. The companion [four-gate C2 checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_four_gate_commutator_c2.py) separately checks the exact mixed jet on a grade-one Choi probe with all 16 fresh-flag histories and all 13 pointer outcomes retained; it reports a nonzero Golden-refined source. It also measures a nonzero direct-versus-sequential Julia composition defect: the all-success probability defect has value \(3/16\) at the flat point, and the four-edge defect has value \(63/256\). The [strict-margin checker](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_full_tester_positive_margin.py) confirms positivity on its stated local chart. These are existence and regularity results for the named mathematical instruments, not a physical D0 selection theorem; in particular the checker does not promote the grade-one probe to an admitted full-CAR16 native readout.
+
+There is a factor-of-\(h\) mismatch in the proposed curvature notation. If
+\[
+(C_{\rm raw})_{ab}=K_b(z)-K_b(z+\hat a),
+\]
+then the exact stencil identity is
+\[
+\operatorname{tr}C_{\rm raw}=-\frac h2\Delta_h H,\qquad
+E_{v_v^+}=h^2\operatorname{tr}C_{\rm raw}=-\frac{h^3}{2}\Delta_h H.
+\]
+The area-normalized matrix is \(C_{\rm area}=hC_{\rm raw}\). In that convention,
+\[
+E_{v_v^+}=h\operatorname{tr}C_{\rm area},\qquad
+-\frac{\operatorname{tr}C_{\rm area}}{h^2}=\frac12\Delta_h H,
+\]
+and the finite Weyl limit and the summed boundary-flux formula use \(C_{\rm area}\). Thus the formulas in the proposal become consistent by defining its \(\mathcal C_h\) to be \(C_{\rm area}\). If it retains the displayed raw definition, the Euler row must use \(h^2\operatorname{tr}C_{\rm raw}\), while the Ricci, Weyl and flux formulas must use \(hC_{\rm raw}\). The exact [curvature-scaling checker](sources/d0_two_null_crossing_2026-10-19/check_discrete_curvature_scaling.py) passes the raw trace, area normalization, cubic Weyl witness and sourced flux identities.
+
+There is also a one-step index shift in the proposed inverse for a time-dependent source. The finite equation is \(\Delta_h H(u+h,x,y)=-4\lambda E(u)\), and \(\Delta_h(x^2+y^2)=4\). Hence the exact quadratic source profile is
+\[
+H(u,x,y)=-\lambda E(u-h)(x^2+y^2)+W_h(u,x,y),\qquad \Delta_h W_h(u,\cdot)=0.
+\]
+Equivalently, the target slice satisfies \(H(u+h)=-\lambda E(u)(x^2+y^2)+W_h(u+h)\). Using \(E(u)\) in the unshifted formula for \(H(u)\) instead leaves the exact residual \(-4\lambda(E(u+h)-E(u))\); it solves the stated equation only for a time-constant source (or zero coupling). The curvature-scaling checker replays both identities exactly. This is an indexing correction to the reverse map, not a change to the forward finite field equation.
+
+The four-harmonic uniqueness argument is valid only after assuming a translation-local linear five-point operator. Under that hypothesis, annihilating \(1,x,y,x^2-y^2\) fixes the stencil to a scalar multiple of \(h^2\Delta_h\); those tests do not establish that the compulsory full D0 source belongs to this operator class. The existing arbitrary-profile 40-to-3-to-1 certificate is the direct geometric result and does not need to be repeated with more profiles.
+
+One qualification to the four-profile argument is needed if “local five-point” permits site-dependent coefficients. Write `L_h H(z) = c0(z) H(z) + c+x(z) H(z+h e_x) + c-x(z) H(z-h e_x) + c+y(z) H(z+h e_y) + c-y(z) H(z-h e_y)`. The four annihilation tests imply only `c+x(z)=c-x(z)=c+y(z)=c-y(z)=alpha(z)` and `c0(z)=-4 alpha(z)`, hence `L_h H(z)=alpha(z) h^2 Delta_h H(z)`. A nonconstant positive example such as `alpha(x,y)=2+x^2` still annihilates all four profiles exactly, but is not one constant multiple of the Laplacian. A global constant follows only after site-independence is separately proved or assumed; the vacuum profiles alone do not supply it.
+
+The next parent substitution is therefore the physical one: derive, on one admitted common preparation, the actual full Cost–Info/Book/preparation/clock/work source and its LEFT/RIGHT/reference order jet, and compute the same-run composition defect on its observable quotient. It must either be paid and controlled by the selected native instrument or rule out that candidate. Then the same action still has to satisfy its matter source, internal Euler rows, Ward transfer and refinement/recovery obligations. GR_closed=false.
+
+## 20 October: relational compact execution and explicit exact source equivalence
+
+The [composed synthesis](A4D_RELATIONAL_COMPACT_EXECUTION_AND_EXACT_SOURCE_SYNTHESIS_2026_10_20.md)
+consumes this execution at `0e4c9d6ca8b44574100338b04c27204cde7062dc`
+and the updated foundation/transfer owner #386 at
+`9ff766bfe9be5bf67ec1fb22b8ff2419a0d7fe4d`. It replaces three unnecessary
+demands in the native-sector/constitutive/contrast-refinement route.
+
+1. The original Palatini source is relational: passive face reversal changes
+   both its holonomy and its coframe insertion. The density and all 16+24
+   original shared-field source rows are invariant. A time arrow, an odd
+   total price or a unique microscopic curvature-component sign is therefore
+   not a prerequisite of this coupling. Active reversal at a fixed reference
+   remains distinct; no future-distinguishable history is identified.
+2. The specified compact CAR16 Golden-Julia failure is a scalar identity.
+   A finite controller retains every failed flag while repeating each desired
+   ordered letter until success. At cap `ceil(2m/p²)`, failure mass is at most
+   `exp(-m/4)`; all completed branches implement the exact ordered word and
+   retain their supplied oldRIGHT Gram. For weak compact letters with bounded
+   C2 field jets, the entire flagged-channel source error is exponentially
+   small at the actual success-count clock, with real attempt-clock/work
+   records still charged. A fixed complete 17-outcome POVM is constructed
+   both on grade-one Choi states and on the full CAR16 Choi state retaining
+   every grade. It gives `O(h^-2)` coherent-query discrimination in the stated
+   separated compact regime, compared with the existing independent-readout
+   `Omega(h^-4)` law. Actual preparation, controller and gate admission/price
+   remain inputs; a genuine noncompact boost is an explicit failed control.
+3. For the already-owned smooth full action
+   `S=B(z)+w(z)·t(q)+t(q)^T H(q,z)t(q)`, independently degree-two radial site
+   densities and nonzero weights give the explicit local map
+   `e_i -> sqrt(1+(Ht)_i/w_i) e_i`. Exactly `S=S0∘Theta` and
+   `dS=DTheta^T(dS0∘Theta)`, including all matter/history/clock derivatives.
+   On `t=0`, `DTheta=I+N`, `N²=0`, `det DTheta=1`. Singular density maps and
+   degenerate internal Hessians are allowed. This strengthens the squared-ideal
+   owner's critical-set result to exact nonlinear full-source equivalence;
+   neither higher-history coefficient matching nor a preparation Schur inverse
+   is required once the actual squared-ideal membership has been proved.
+
+These are concrete parent substitutions, not acceptance of an unsupplied
+native price. The next calculation is the actual admitted full price's value
+and first jet on the density-zero shell, with smooth ideal membership checked
+where that shell is singular. A real shell-dependent extra term survives.
+The compact instrument supplies an exact enlarged flagged process and a
+quantitative map to the ideal evolution, not a false exact `Interpretation`
+that drops cap failures. This respects #386's common-sector and extra-native-test
+boundary. The four bounded checkers and independent mathematical reviews are
+recorded in the synthesis packet. No original terminal, accepted assembly
+application, task lifecycle or GR closure is changed.
+
+
+## 20 October: exact nonflat WHOLE-HJR interior roots, not only preparation
+
+The [fixed-collar whole-source theorem](A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md)
+now supplies an exact finite curved family of the SAME original conditional
+full-Lorentz positive-adjoint H+J+R. Starting from the OWNED all-role v8
+root, it uses its actual full128 Riesz preparation, including the genuine
+preparation Schur, and prescribes an independent small boundary Isp coframe
+change. All65536 site/CAR modes, the feedback multiplicity, retained
+workspace and global normalizer remain. No price term or fitted stress is
+added.
+
+On the L8 carrier, the interior is the full t=0 spatial slice. The invariant
+problem has five coframe and four outgoing-link variables PLUS the incoming
+time link at t=-1. All links incident to the interior are therefore varied.
+Spatial-translation/S3 averaging proves that ten vanishing restricted Euler
+rows give ALL16 interior coframe and all incident proper-link source rows;
+this is stronger than stationarity within a chosen profile alone. Exact
+observer whitening gives a K=0 Lorentz lift, so every interior observer
+source follows from those rows without being frozen. Reference128 Gram
+I128/128 and every preparation tangent are solved by the whole moving
+spectral projector.
+
+Independent Arb128 evaluation over the original certified1e-12 root box
+proves the actual Riesz-reduced interior Jacobian invertible, using a
+rational preconditioner with EVERY Neumann row <1/10^4. A transverse
+rotation-link response satisfies .0809<x8'(0)<.0811. Analytic IFT gives an
+eta>0 and an exact analytic solution for every |epsilon|<eta. The based
+face is EXACTLY Ui(0)^-1, hence nonidentity for every sufficiently small
+nonzero epsilon. This closes a positive finite INTERIOR joint-existence
+premise, not a numerical scout or a conditional heat-coefficient argument.
+
+A separately built nonlinear full D/Riesz replay corroborates the branch:
+epsilon1e-4 reaches10source residual1.35e-12, unchanged RIGHT Gram to3.1e-16,
+prep commutator4.2e-17 and a genuinely MOVING projector. These numbers are
+diagnostics; the proof uses interval nonsingularity and analytic IFT.
+
+The earlier u-only protected preparation is retained, but full-price
+balance rules it out as the proposed Lu33 homogeneous seed: energy-weighted
+Hodge balance is required, and A<=4z/(1-z) conflicts with A=33/16. This is
+why the successful continuation uses the existing all-role faithful seed.
+Its global-scale seed bounds are not imposed on the fixed-collar branch.
+
+Explicit limits: no supplied nonlinear radius; no exterior Euler or global
+periodic stationarity, no original clock/current marginal preservation,
+physical full-price/primitive/preparation-work selection, LC/Einstein
+source identification, uniform refinement or raw216. GR_closed=false.
+
+
+### Same whole-HJR theorem strengthened to a seven-slice bulk interior
+
+The same [owner, section10](A4D_EXACT_CURVED_WHOLE_HJR_FIXED_COLLAR_ROOT_2026_10_20.md)
+now treats3584 of4096 sites as interior, with only t=7 fixed. All14848
+incident proper edges vary, including both boundary crossing time links;
+all interior coframes/observers and globalreference128 preparation solve
+their actual fullHJR Euler equations. The invariant interior Jacobian is64
+by64. Reusing the SAVED rigorous fullK9 balls, every Neumann row is
+<3/1000 and the boundary response error is<1/100. Three boundary-adjacent
+transverse-link responses exclude0, and the based face is exactly Ui^-1.
+Analytic IFT therefore gives a true nonflat BULK conditional-HJR family
+for every sufficiently small nonzero independent boundary parameter.
+No repeated thermal/root search, changedprice or fittedstress. Exterior
+Euler, native admission and uniformrefinement/Einstein/raw216 remainopen.
+
+
+### Uniform preparation-radius premise now proved in the controlled first-order chart
+
+The same owner section11 resolves the earlier full-source6.34 warning
+that a uniform shell gap alone does not give a uniform FIELD radius.
+On an explicit discreteC1/O(h)-proper-link ball, the ACTUAL original
+full16 operator obeys ||(D-D0)psi||<=a delta||D0psi||+b delta||psi||,
+with a,b independentofh and the genuine shifted-adjoint commutator retained.
+Uniform ±sqrt(shellenergy) contours then give exact rank128 stationary
+preparations with the SAME RIGHT Gram and dimension-free C2 frame/Rayleigh
+action bounds. Finite-rank derivative bounds avoid a growing full-trace
+factor; no complementary mode is deleted. Movingobserver whitening is
+included. The exact alternating-coefficient hostile control gives
+||deltaD psi_consttop||=2epsilon/h, proving why Linf-only control fails.
+
+This removes the uniform PREPARATION neighborhood premise, not the full
+joint-HJR inverse or the raw216 norm. The coefficient norm is explicit;
+thin collar jumps of fixedepsilon have C1 sizeepsilon/h. A smooth physical
+collar and an actual uniformly controlled joint source branch remain to
+be constructed. Native price/preparation/clock/current and Einstein source
+selection remainopen.
+
+## 20 October: complete coherent flag source and the precise native minimum test
+
+The [new source/minimum packet](A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md)
+consumes the 07f2f2b native checkpoint and leaves both candidates on their
+actual carriers. For the specified compact finite-cap Julia execution,
+the complete flag Gram has rank at most256 independently of the number
+of histories and oldRIGHT size. All successful and failed chronological
+leaves retain their exact original weights p^(T+K), paid code T+K and
+attempt clock. A full-amplitude proof, with actual moving preparation and
+observer-fiber jet budgets, gives coherent flag entropy FIRST source
+O(B epsilon log(255/epsilon)) without a probability/spectral floor. The
+existing cap epsilon<=exp(-m/4), m~h^-2, now supplies the previously
+missing quantitative coherent-flag source bound after h^-2 normalization
+and the stated conservative raw summed norm. This is a proved component
+estimate if that relative-code component is in the selected price; full
+Book03 identification and all other native charges are not assumed.
+
+The SAME CAR16 J23 Choi example has a rank birth lambda_-~c theta^2:
+its entropy is C1 but not C2. Therefore this result cannot silently supply
+the smooth squared-ideal hypothesis of the previous exact coframe dressing.
+The nonzero code value remains when prospective alternatives change their
+programme or cap; zero field derivative at fixed clock does not mean free
+execution.
+
+Separately, the actual whole-HJR fixed-collar Hessian A/8 has the allowed
+nongauge direction v=(-1,-2,-1,0,-2,-1,0,0,0,1) with exact second variation
+in [-2372501681/32000000000,-2372493199/32000000000]. The path varies the
+interior coframe and BOTH incident time links, retaining all exterior data
+and the full reference128 Riesz section. Thus the exact stationary branch
+is a saddle on that declared family, also at sufficiently small nonzero
+curvature. To use it for strict prospective minimization, the actual
+native constraints or the actual missing full-price second source must
+resolve this named direction. An invertible source dressing preserves its
+negative inertia. This changes that proposed substitution, not the
+existing stationary-existence theorem or every possible native law.
+
+The subsequent seven-slice bulk extension retains exactly this path:
+the old incoming time link maps to index63 on the same periodic L8 grid.
+The 10-to-64 coordinate injection preserves the complete action, full
+Riesz section and normalization, hence the same negative interval and
+its continuation to small curved bulk roots. This is a fixed-L8 result;
+the slice-localized coframe tangent has C1_h size of order 1/h and does
+not contradict the new uniform preparation theorem on bounded C1_h balls.
+
+The remaining physical calculation is the same-programme full source and
+admission map, including final measurement, preparation/controller/work
+and clock. Compact flags are now quantitatively controlled; the full128
+and noncompact source cannot inherit that control without their own map.
+No new price, fitted correction, accepted goal or original raw216 terminal
+is introduced. Independent analytical review and two bounded checkers are
+pinned in the packet. GR_closed=false.
+
+
+### 20 October: complete finite-B HJR source is uniformly controlled on the first-order chart
+
+The exactcurvedwholeHJR owner section12 now consumes its section11 graph
+ball to prove UNIFORM FIRST SOURCE AND HESSIAN for the ENTIRE unchanged
+conditional H+J+R action. Full-band minmax gives explicit thermal moment
+bounds and a16-mode positive Z floor; genuine two-endpoint divided
+differences and row/column operator-norm estimates prevent a growing
+Hilbert-dimension factor. All thermal/CAR16/complement modes, global
+-Z_i Z_j/Z^2, proper link jets and moving fullreference128 preparation stay.
+The actual field-independent n_h log(1-z) offset is explicitly retained;
+only the field-dependent value is bounded. T14 gives a uniform Lipschitz
+source comparison in the ACTUAL discreteC1 dual norm, with no replacement
+of raw216 or of individual unscaled site Euler slots. This removes an
+uncontrolled whole-price source-budget premise before any genuine joint
+field inverse, rather than presuming that inverse. A new exact256-dimensional
+noncommuting actual four-role/CAR16 control compares direct power/Jacobi
+with spectral mixed jets and detects normalizer/proper-jet deletion. Its
+small depth3 is an identity check; the analytic theorem handles native
+m=256L^2. Independent bounded reviews accept the mathematical composition.
+The existing soft normal obstruction and physicalprice/clock/work/matter
+admission remain; no uniformjointroot, Einstein identity or GR closure.
+
+
+Concurrent input7efec3733 is consumed without replay: the complete compact
+flag archive has a controlled C1 source, but its rank-birth entropy need
+not be C2. The same update proves a strict negative HJR field direction,
+including its seven-slice bulk embedding. Section12's positive uniform
+regularity does not turn those stationary roots into prospective minima
+or extend C2 to the additional physical flag action. The exact native
+minimum test in `A4D_COMPLETE_FLAG_SOURCE_AND_NATIVE_MINIMUM_GATE_2026_10_20.md`
+remains binding: derive the actual remaining price/admission on the SAME
+execution and its named direction, rather than seeking another conditional
+root as a substitute for physical selection.
+
+## 20 October: one native completion price faces separate flat and curved tests
+
+The [combined source result](sources/d0_hjr_flat_density_zero_2026-10-20/RESULT.md)
+now gives two independent necessary tests for the missing physical price,
+without identifying either conditional carrier with the compulsory D0 action.
+On the positive flat-holonomy coframe family, every Palatini face density is
+zero, while the one-sided analytic limit of the unchanged full H+J+R source
+is \(dS_{HJR}/du\to744-256\sqrt5-4\sqrt2>162\). The endpoint \(u=0\) is
+only a computational limit, not an admitted coframe. Therefore a claim that
+the *whole completed action itself* depends only on those densities requires
+its derived extra price to obey \(E'(u)=-S'_{HJR}(u)\) on the positive chart
+(and the corresponding limit if it exists). This condition does not apply
+to a different physical target or to an equation-level transported
+equivalence.
+
+Separately, at the common HOMOGENEOUS base \(q_0\) of the fixed-collar
+branch, the full-Riesz calculation gives a nongauge bulk direction with
+\(D_x^2S_{HJR}(q_0)[v,v]\le-c\), where
+\(c=2372493199/32000000000\). At sufficiently nearby curved stationary
+points, continuity supplies the conservative bound \(-c/2\), with no
+explicit radius or exact base enclosure away from \(q_0\). If the SAME
+point remains a critical point and local minimum of \(S_{HJR}+E\) on the
+SAME physically admitted fixed-collar chart, with C2 pullback, then
+\(d_xE=0\) and \(D_x^2E[v,v]\ge c\) at \(q_0\), or at least \(c/2\)
+at those nearby curved points. If only the v-path is admitted, only its
+directional first derivative must vanish; the second-direction bounds
+still apply on that path. The actual carrier/source map and C2 hypotheses
+are required; the compact-FLAG C1 estimate does not supply them. The rational replay
+[`check_collar_minimum.py`](sources/d0_native_flag_source_minimum_2026-10-20/check_collar_minimum.py)
+and full-spectrum flat-source replay pass. These tests are at different
+configurations and under different hypotheses; together they constrain the
+same *derived* native price, but do not define or fit one. The consuming
+`constitutive` step remains to derive its preparation/controller/clock/
+history/work source and admission from one execution, then evaluate the
+appropriate tests. `GR_closed=false`.
+
+
+## 20 October: the all-six CAR16 weld is a representation, not native price selection
+
+The dedicated [observer-covariant CAR16 weld](A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md)
+now gives a finite positive representation of the literal original
+Palatini-star face density. On the full 16-state exterior carrier, the exact
+CAR trace pairs all six proper-Lorentz generators with signature
+`(3+,3-)`; all 36 bivector/generator identities reproduce the original
+`G2/STAR` convention. A complete three-outcome Julia/Choi test retains the
+failure arms and has the moving observer-positive form. The original star
+face is exactly its mixed marked-event log jet, with no fitted gravitational
+coefficient. The already-owned Golden two-density six-phase chart has
+`det D Phi(I)=p^9/15552000 != 0`, so it locally recovers the full plaquette;
+the six signed marked gradients also recover the nonlinear Cayley curvature
+on the stated open chart. These results close finite representation and
+local observability questions for their declared instruments.
+The pinned local replays are the [all-six trace](sources/d0_book_geometry_double_schur_2026-10-19/check_car16_lorentz_area_trace.py),
+[literal star identity](sources/d0_book_geometry_double_schur_2026-10-19/check_car16_literal_star_density.py),
+[complete signed Julia event](sources/d0_book_geometry_double_schur_2026-10-19/check_car16_full_julia_choi_palatinisign.py),
+[moving-observer covariance](sources/d0_book_geometry_double_schur_2026-10-19/check_car16_observer_covariant_julia_choi.py),
+and [Golden curvature reconstruction](sources/d0_book_geometry_double_schur_2026-10-19/check_native_golden_six_phase_curvature_reconstruction.py).
+
+The Book boundary remains separate. The scalar marked event has nonzero
+identity code mass, is even under `P -> P^{-1}`, and is not multiplicative
+under serial holonomy composition. Products of independent comparison
+probabilities therefore do not establish the primitive additive cost of an
+ordered Book history. The operator-valued memory must compose first; the
+complete retained record and its actual Cost--Info price must then be derived
+on the same admitted run. See the [serial marked-event selection gate](A4D_REAL_PLAQUETTE_CAYLEY_BOOK_MARKED_EVENT_SELECTION_GATE_2026_10_20.md)
+for the exact controls.
+
+The next physical substitution is still one common full128/oldRIGHT/ref128,
+observer, Golden/CAR, controller, clock and work execution: derive its entire
+ordered-memory source, including return and failure terms, and compare it
+with the original geometric and matter sources on the same tangent while
+checking the remaining internal Euler and Ward rows. No new action or
+selector is introduced here. The existing GR assembly graph remains the
+route index; this representation does not fill `positive_gr` or promote
+`GR_closed`.
+
+**Full-stencil hostile source control.** The new
+[direct plaquette C2 replay](sources/d0_opposite_null_julia_order_memory_2026-10-19/check_direct_plaquette_full_c2.py)
+tests one explicit complete per-face Julia/Golden price across every affected
+original based face. A common scale matches both opposite-null commutator
+mixed jets, but the same calibrated price has a nonzero mixed jet on the
+adjacent commuting (+J,-J) control, whose full geometric jet is zero. This
+rules out that specific candidate readout as a universal geometric source
+map; it is not a no-go for the compulsory native D0 price. The exact result
+and hypotheses are recorded in
+[the candidate result note](sources/d0_opposite_null_julia_order_memory_2026-10-19/RESULT_DIRECT_PLAQUETTE_C2.md)
+and §7 of the [opposite-null memory report](A4D_OPPOSITE_NULL_LIE_COMPLETE_JULIA_ORDER_MEMORY_BOOK_SOURCE_2026_10_19.md).
+The physical target remains the same admitted full-price pullback and its
+internal/matter/Ward/refinement equations.
+
+**Original full128 order-source control.** On the same CAR16/full128
+two-round history instrument used for the noncommuting \(J\) source, the
+complete mixed Shannon source difference is exactly zero for commuting
+\(+J,-J\). The checker retains all \(16{,}384\) histories per order and proves
+the zero-support mixed terms vanish; its exact replay and receipt are in
+[the full128 result](sources/d0_native_full128_order_readout_2026-10-19/RESULT.md).
+This validates the commutator-specific order contrast for that assigned
+instrument at this second jet. Sequential physical admission and selection
+of this price by unchanged D0 remain open.
+
+
+## 20 October: all-refinements flat HJR source and minimum six-record information
+
+Two further bounded source/readout results are now published **inside this
+existing EXP execution**; neither changes the original raw216 or physical
+GR terminal. They make the next *one-programme* source test quantitative
+without selecting or fitting a missing action.
+
+1. **The original conditional full H+J+R has a uniform non-Palatini
+   flat-holonomy source on every integer L>=11.** On the actual full
+   CAR16 periodic carrier, U=I, invertible spatially constant coframes
+   v_r=s e_r/4 and the exact moving rank128 fixed-right Riesz
+   preparation, ALL original six-face Palatini densities are ZERO.
+   Nevertheless at s=1/4 the unchanged full scalar H/J/R action satisfies
+   dS/d(s²)>=lambda_first,L>=1, and dS/ds>=1/2, in every refining
+   L>=11. This uses an **all-L analytic** normalizer bound with an
+   exact-rational Taylor-11 Gaussian comparison; it is not a selected
+   root, numerical extrapolation, discarded thermal complement or
+   changed spectrum. In the original unscaled coefficient C1 dual the
+   source has norm >=2. Any claimed same-action off-shell
+   Palatini/source equivalence with o(1) error on this smooth family must
+   therefore derive an additional native first source of the required
+   nonzero size or restrict the actual physical admissible sector by
+   proved independent premises. The original fair Golden compact
+   all-identity flag code has expected code cost exactly equal to its
+   Shannon information and its complete flag marginal source zero,
+   including moving supplied data preparation; pure flag-only
+   Cost-Info cannot screen the HJR source on this configuration.
+   [Analytic theorem](sources/d0_hjr_flat_density_zero_2026-10-20/REFINING_UNIFORM_SOURCE.md),
+   [rational all-L checker](sources/d0_hjr_flat_density_zero_2026-10-20/check_refining_uniform_source.py).
+
+2. **The already-owned native Golden-p TWO-density six-phase atlas is
+   the minimal smooth full-Lorentz local readout.** From the actual
+   original CAR16 GOOD/BAD source differential its 6-by-6 Jacobian has
+   explicit exact inverse over Q(sqrt5), determinant p^9/15552000, and
+   ||A^-1||_infinity=90+42sqrt5<185. No smooth local inverse for ALL
+   six native Lorentz directions exists from fewer than six smooth
+   independent scalar statistics; this original atlas saturates that
+   minimum. On P_h=exp(h² F), its calibrated inverse yields uniform
+   curvature-estimation error <=370*phase_error/h² on a declared small
+   smooth chart. For a six-dimensional finite hypothesis grid with
+   curvature accuracy delta, complete future-distinguishing retained
+   records require 6log2(1/delta)+O(1) ideal bits (Kraft/packing; Fano
+   with noise). With an *independently established* at-most-b-ary actual
+   primitive output and paid nonidentity transitions, this becomes a
+   conditional execution-cost lower bound. The exact encoded-statistic
+   size does NOT equate to shot complexity, actual action/Info, native
+   readout admission or prospective optimality.
+   [Proof and native scope](sources/d0_lorentz_record_minimum_2026-10-20/RESULT.md),
+   [Q(sqrt5) exact checker](sources/d0_lorentz_record_minimum_2026-10-20/check_native_golden_minimal_readout.py).
+
+**Consumed next physical premise:** compute one actual fully paid
+preparation/controller/clock/history/measurement/observer programme with
+its real geometric and matter source. It must account for the NONVANISHING
+smooth flat-HJR source where that carrier is admitted, the independent
+curved HJR negative-minimum direction and wide-collar traction, while
+preserving original full16+24 variations and independent Ward/refinement
+requirements. Six readable phase coordinates and an information floor
+supply required distinctions; they do **not** select the compulsory Book
+Cost-Info or cause Einstein equations. The PR remains Draft/IN_PROGRESS.
+`GR_closed=false`.
+
+
+## 20 October: actual paid gradient source and inverse-paired feedback synthesis
+
+The [native paid-source synthesis](A4D_NATIVE_PAID_SOURCE_AND_PAIRED_FEEDBACK_SYNTHESIS_2026_10_20.md)
+starts from `ccd230bd5765b47d82bd1a4d83e9472c77fa590d` and consumes the
+subsequent whole-HJR fixed-collar theorem at
+`07f2f2b15b7050a612d0075aa73db8dc46087a95`. The latter already owns the
+curved conditional joint branch and the homogeneous u-only seed exclusion;
+this packet does not repeat or promote them. Phase: native realization and
+source composition, before applying the previous squared-density equivalence.
+
+The ORIGINAL full128 expected primitive port cost is exactly
+`n+p epsilon sum_r Tr[rho (Phi*)^r Delta]`. Its next finite native-clock
+coefficient is `p(beta²-beta epsilon) Gamma_h/2`. On the actual pp/null-link
+family, full-CAR computation gives
+`Gamma=lambda nu²/8 int[A(H)Hprime²+C(H)Hprime K+L(H)K²]`, with `L>0`.
+The independent link source selects `K*=-C Hprime/(2L)` and leaves the
+strict bound `G_eff=A-C²/(4L)>=nu²/8`. Thus real link variation does not
+erase this component's gradient pressure. It also does not select LC by
+itself: at H=0 its stationary link is `-Hprime/4`, compared with LC's
+`+Hprime/2`. The actual complete action must supply the other source terms.
+
+Scalar weights on the entire protected8 cluster permit an actual fixedRIGHT
+preparation repair for the stated finite cost/code combination. Its value
+correction begins at fourth clock order. The SAME link-stationary family has
+exact complementary splitting `-nu²k²a² P_bad/32`, so the gap hypothesis is
+nonempty; this is an excited stationary branch, not a minimum claim.
+The next uniform-clock estimate has a real internal obstruction: uncorrected
+energy has a cubic UV symbol. The exact CAR Dirichlet gap
+`delta=nu² sigma_min(B_H)²/8` closes its finite matrix Poisson corrector,
+cancelling that cubic term. Uniform native difference-operator propagation
+at fixed positive beta remains required; two rounds are not that limit.
+
+For the specified relational comparison, the ACTUAL original whole-word
+feedback on `V(P) direct-sum V(P)^T` with a coframe quarter-turn reference
+has leakage `F=2p³I` at zero reference strength for EVERY holonomy. This
+exactly removes the one-arm curvature-only noise. Its full six-direction
+CAR16/coframe first source is
+`c_pair df`, `c_pair=-32 sigma z p^5/(1-2zp³)`, with controlled physical
+small-face remainder `O_C²(sigma h⁴+sigma²h⁴)`. A separately charged natural-cut
+reference has `O(sigma²)` code/feedback source; pointer Shannon adds a log.
+For a fixed faithful block-diagonal quantum reference, the complete coherent
+relative-price source is EXACTLY quadratic and C2. A faithful off-block
+reference gives a genuine linear hostile source, so the accounting
+hypothesis is retained. At `h=p^k,sigma=p^(3k)`, the stated reference terms
+are small relative to the actual paired signal, with real clocks and
+constant flat prices still charged.
+
+The coframe-reference map is also explicit on the owned coherent Julia
+interface: `B_rs=(u_r wedge u_s)eta/det V`, with its full inverse-determinant
+source. Full-CAR bilinears and the actual four-creator determinant amplitude
+supply a fixed polynomial approximation; the already-owned skew compiler
+then acts on the declared clean scalar-work cut. The exact conjugated
+quarter turn with `sinh S,cosh S` replaces a matrix-root oracle and changes
+the paired source only by `O_C1(sigma³ h²)`. All six faces and 96 coframe
+first jets are checked. Coherent primitive admission, direct-face versus
+sequential-edge transport and full work/complement payment remain explicit.
+
+These are supporting results for the original native price/source map,
+with a constructive repair to the comparison route. The full compulsory
+Cost-Info/work action, actual operation admission and fixed-clock/refinement
+map still have to be supplied before either the exact source-equivalence
+or the existing curved conditional root can be promoted to physical GR.
+The packet retains all outputs, complete preparations and the specified
+operational cuts. No accepted assembly result, task lifecycle, BOOK/CORE
+claim or original raw-response terminal is changed. `GR_closed=false`.
+
+## Maintained foundation and native interface extensions — 20 October 2026
+
+Main's accepted verification and generic theory-transfer owners are used
+without redefinition. The newer native future-completeness, binary-verification,
+reversal, Golden-Bloch and Q8-center lemmas now live in separate importing
+modules. The [additional action-interface arguments](A4D_NATIVE_ACTION_INTERFACE_EXTENSIONS_2026_10_20.md)
+and [29-declaration history-action snapshot](sources/d0_native_history_action_extension_2026-10-20/README.md)
+retain their exact original scopes. Canonical historical receipt inputs remain
+unchanged. For Book03 feedback use the complement-preserving operator owner,
+not an independent `P,Q` variation. None of this changes native action selection,
+the original raw-response terminal or physical GR status.
+
+## 20 October: composed same-history price/source and corrected geometric application
+
+Consume the [complete derivation and reproducible packet](A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md)
+on the unchanged original128-outcome chronological process. This advances
+its actual source composition; it does not dispatch a new execution or repeat
+the owned verification, HJR or Einstein/Holst proofs.
+
+The literal costs `1+b` derive one marked map
+`Phi_t(X)=x[X+epsilon((p²+px)T(DXD)-{Delta,X}/2)]`, `x=exp(-t)`.
+The full retained-history transform is exactly `Z_n=Tr Phi_t^n(rho)`.
+Its full field/preparation source and cost moments follow by differentiation
+of this same map. Joint open-history/closed-loop Schur elimination retains
+both boundary maps, the direct term and every clock derivative: a unit
+internal determinant cannot erase an actually paid acyclic execution.
+
+The actual prepared-input feedback for a declared price-marker test is
+`F_in=G+L`, where `G=V*EV` and
+`L=V*sqrt(I-E)(I-VV*)sqrt(I-E)V>=0`. Its first source is not generally G's
+source. For the original Golden round the correction is exactly
+`(sqrt(p)-p)²(R-R²)`, `R=p epsilon Delta`. On the specified uniform strict
+chart the repeated actual isometries give a controlled absolute source
+transport `O(n³p^n)` after the stated `p^-n` comparison normalization.
+Physical compilation/payment and nonzero geometric signal remain required.
+
+The same two-round paid value contains
+`p epsilon² Gamma_h`, `Gamma_h=Tr rho L*Delta`. The actual finite jet now
+feeds all24 connection components of a fixed protected8 Fourier family.
+Independent composition review found a real old-interface error: positive
+spatial native legs and `V=eta e^(-T)` force negative spatial coframe legs;
+true LC is `K=-H'/2`. The old Gamma(H,K) algebra remains valid, but its
+positive-sign LC label and dependent interpretation have been corrected.
+At the true LC point the native source has
+`j_1=-729/500000`, `j_9=-81/500000`. Both components enter the genuine
+Palatini inverse form. Its contraction is
+`-59049/250000000000`, whereas a one-link restriction gives zero.
+The exact coupled quadratic system satisfies all24 rows, and its reduced
+coefficient per paid weight exceeds `1/2000` for every real coefficient
+ratio. This is a conditional binding of two identified components,
+stationarity on the specified Fourier jet, and a finite-jet limit. It is
+not full connection/preparation/observer stationarity at fixed positive
+clock, a native minimum, or the complete Book action.
+
+Parent substitution: original history -> actual marked cost -> complete
+clock/source reduction -> native Gamma covector -> exact geometric response.
+The remaining compulsory physical map is the complete Book03 Cost-Info and
+admission of this same process, followed by its same-action source/refinement
+comparison. The memory-algebra amplitude law cannot be replaced by the Born
+cost transform or a chosen entropy without proof. The sourced connection
+also prevents importing a vacuum LC/Holst conclusion into a matter sector
+without its actual torsion equation. No new fitted stress, acceptance row,
+CORE claim or GR/raw216 closure is introduced.
+
+The concurrent main #389 exact nonvacuum midpoint case is now the concrete
+geometric consumer. Its original all40 §5.1 first-source identity is
+`DS_full,h|_(f=q=0)=a_h D(sum fhat)+b_h D(sum q)` after genuine internal
+stationarity. The same-history packet §7 and pinned application review give
+the exact S/nu coframe-link map and retained preparation/normalization/clock
+obligations. Our Fourier Gamma witness is not one of that family's midpoint
+representatives; its nonzero link source excludes only a naive general
+Gamma=q identification, not the complete native realization. Continue by
+applying the complete admitted price to those actual representatives.
+
+## 20 October: terminal readout preserves the controlled stopped-source limit
+
+The [complete terminal-source packet](A4D_STOPPED_TERMINAL_READOUT_COMPLETE_SOURCE_2026_10_20.md)
+continues the owned compact stopped Golden/CAR16 execution through its
+fixed final Golden17 test. The complete joint classical law has terminal
+entropy-source error at most `8 epsilon B sqrt(17)/e`; its coherent
+flags-plus-pointer archive has complementary density
+`(1-epsilon)C(tau_m)+sum_failed w_s C(tau_Ks)` and a no-floor source
+error `O(B sqrt(d) epsilon^(1/3))`, with d=256 on the declared full-CAR16
+Choi square-root instrument. All failure words, terminal labels and CAR
+grades remain. Exact fixed-code and coherent relative-code identities
+retain the nonzero full Golden flag-code value. Moving observer/instrument
+isometry jets enter B when supplied on the actual trivialized fibers.
+
+The existing exponential cap suppresses these terminal rare-failure errors
+under the declared polynomial source budgets and normalization. This
+removes the separately uncontrolled final-readout cap component from the
+compact source calculation. It does not remove the ideal successful
+terminal source: pointer Shannon, coherent reduced entropy and original
+fixed-code price generally differ. The compulsory Info/price/instrument
+map, actual paid work/preparation/controller/clock, different full128 and
+noncompact carrier, physical selection and joint nonlinear refinement
+remain open. This component application does not identify the compact
+protocol with the whole-HJR root or alter its minimum gate. `GR_closed=false`.
+
+## 20 October: arbitrary smooth sourced GR recovery and a finite action equivalence
+
+The [continued midpoint theorem](A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md)
+consumes the unchanged full 40-to-3-to-1 Brinkmann reduction at
+`441fac23c1da2d51d524ba96e8a18f2a1d5dc98f`. It now solves the exact finite
+Dirichlet problem for arbitrary sufficiently smooth transverse harmonic data,
+with the original midpoint CAR16 record and Cartan links. On fixed compact
+interiors, the actual finite records have a C^r metric/matter reconstruction
+and C^(r-2) curvature recovery with error O(h^2), r>=2. The finite solution is
+unique inside this ansatz at fixed matter and boundary data, is uniformly
+stable, and has convergent first/second DATA derivatives. These derivatives
+are of the solution map, not the action Hessian. A convergent-data converse
+supplies soundness on the same configured sector. This replaces the former
+finite spectral / C0-only restriction in that mathematical application;
+it does not supply the full native physical recovery map.
+
+The maximal fixed-profile exact-sampling class has eight transverse basis
+functions, including the additional curved mode xy(x^2-y^2). Smooth matter
+with positive CAR slack admits all sufficiently fine midpoint meshes;
+admission on every coarse mesh requires the separate bound in the proof.
+The matter and coframe time grids remain distinct. The new finite-record
+interpolation respects both, without sampling an unknown continuum target
+between time nodes.
+
+There is also an exact finite first-source identity for the explicitly
+defined uniform curvature-square functional Q_h on the SAME six based
+plaquettes. All independent sixteen coframe and twenty-four proper-link
+rows vanish on the sourced Brinkmann family: its only possible link rows
+are 2h^2 Delta_h K_a, which the original Cartan and transverse source
+equations annul. Thus S_configured+beta_h Q_h preserves those exact roots
+for every scalar beta_h. The variation support must have an expanded
+sourced collar. Nonuniform transverse weights and an incompatible collar
+have explicit nonzero controls. This is equality of first covectors on the
+exhibited family, not equality of off-shell operators, Hessians or all roots.
+
+The parent substitution is configured-sector recovery/soundness and this
+specific on-solution first-source equivalence. The constitutive/native-sector
+application still needs the complete admitted Cost-Info/H+J+R source,
+internal stationary elimination, actual weight transport, paid
+preparation/work/clock and physical-time readout on the same family.
+The accompanying continuum curvature-polynomial theorem does not assert
+that the whole native price belongs to its class. Independent mathematical
+review and the [targeted replay record](sources/d0_midpoint_brinkmann_c2_2026-10-20/CONTINUATION_VALIDATION.json)
+bind the analytical statement and its controls; no assembly acceptance,
+lifecycle, raw-216 or global GR status is changed. `GR_closed=false`.
+
+
+### 20 October: primary configured family has a strict native map and a nonzero original R source
+
+The [new application](A4D_PRIMARY_CONFIGURED_SOURCE_STRICT_JULIA_AND_RAYLEIGH_GATE_2026_10_20.md)
+consumes the primary all40+2 sourced family in main, with its same exact
+finite representatives, proper links, rest-clock CAR preparation and full
+reference128 Gram. The literal unit-transverse inverse legs reach/exceed
+the original Julia boundary. On a declared bounded chart, one fixed Golden
+power s repairs that domain through (e,Psi)->(e/s,Psi/s^2). Sampling star
+and inverse CAR legs remain distinct. Configured field zero rows transport;
+query t->s t preserves the full configured feedback exactly. The declared
+metric/matter decoder recovers the original finite fields, and retains the
+owned midpoint convergence. The null owner's epsilon orientation is
+transported explicitly through detT=-1; canonical rest epsilon is not
+silently substituted. This supplies a conditional matrix/source map, not
+physical generation or free preparation/work.
+
+On the actual supplied m(Psi/s^2)+Fourier128 state, fullCAR algebra and the
+true positive shifted adjoint give the ORIGINAL R link source
+
+    partial_(K_a,z) R=A_z K_a,z+b_a,z,
+    A_z=s^2 rho_z(1-|Psi_z/s^2|^2)/(4 S ell^2)>0.
+
+The complete b is retained and independent of H. At a free interior link,
+two primary harmonic-wave amplitudes have source difference A_z delta K.
+Thus at least one configured root has nonzero R source. In the actual
+L4/n20 unequal-count check the difference is -3.54115051413e-6; independent
+direct price derivatives agree with the analytic gradient/Hessian. The
+polynomial seam belongs to a fixed collar; the Euler tangent has interior
+support. Comparing wave/boundary data is not a comparison of prices from
+one initial state.
+
+Parent substitution: `constitutive`/`native_sector` now has the explicit
+strict-domain/source transport on a nonempty small-matter primary chart.
+The actual remaining complete-price source must cancel or transport this
+specified R covector; it cannot be erased by f=q=0 or the earlier terminal
+cap-error estimate. New Julia defects and the full supplied preparation
+must be used in the paid recycling law. Full physical admission, oldRIGHT/
+AF binding, preparation/observer/clock/work/Info source, stationary internal
+elimination and the original refinement/comparator remain open. The prior
+bareHJR flat coframe test has a different Riesz preparation; its coefficient
+is not transplanted here. No assembly or lifecycle promotion. `GR_closed=false`.
+
+
+## 20 October: exact primary-family application of the paired Book price
+
+Phase: native realization / same-source composition, existing #334.
+The same-history owner section8 now consumes paired_feedback.md section9
+on the original exact sourced Brinkmann representatives, with simultaneous
+Ricci and Weyl. The literal complete outer Golden/Julia Book determinant
+has a strictly positive local coframe-dilation source for sufficiently
+fine nonzero faces, uniformly under positive native reference weakening.
+The configured Palatini and null-matter source is zero on that same
+independent variation. All six faces and their actual area scales are kept.
+
+Route change: remove direct EXACT finite-source substitution of this
+paired outer term into the configured all40+2 theorem. Its earlier
+conditional continuum estimate remains valid, but needs a true joint
+stationary-solution transport. Other actual native price terms, including
+the separately charged reference with opposite source, are not excluded
+or declared absent. Their physical accounting and internal Euler remain
+unproved. This result does not replace Cost-Info by a trace statistic,
+introduce a compensating action, or close physical GR/raw216.
+
+The proof and focused fullCAR/Julia/return/Golden replay are in the EXISTING
+sources/d0_native_price_source_synthesis_2026-10-20/ owner; the application
+is A4D_SAME_HISTORY_PRICE_AND_SOURCE_COMPOSITION_2026_10_20.md section8.
+Independent review checks the frozen application and uniform-weakening
+argument. No unchanged geometric/Lean proof is replayed. GR_closed=false.
+
+
+### 20 October: actual full128 common-record information source on the same primary preparation
+
+The [full128 application](A4D_PRIMARY_FULL128_COMMON_RECORD_INFORMATION_SOURCE_2026_10_20.md)
+derives an exact field-independent128-by33 isometry for the original
+duplicated Walsh SELECT and both Golden ports. The complete pointer
+probabilities and coherent record spectrum follow from33 amplitude
+vectors; all original labels, CAR16 and oldRIGHT128 remain. This supplies
+the missing computation map for these two specific information observables
+on the previous strict inverse-leg primary preparation and actual unequal
+n20 F/R density. It reuses the existing all40+2 geometry.
+
+The source test retains true shifted positive adjoints, both Julia defects
+and their Sylvester jets. Direct literal128 Kraus probabilities check the
+compression and the independently known paid-port source
+`dCost_port=p epsilon dR` at fixed clock. Explicit eta regularization has
+an analytic source error at most `4 sqrt(d eta)||V'||_HS`; floating
+arithmetic remains a numerical diagnostic, not interval certification.
+
+The flat whole-periodic coframe scale and the two previously owned
+nonvacuum interior-link tangents supply the same-process candidate
+Cost-minus-information comparison. The sources of Shannon pointer
+entropy and coherent record entropy are nonzero and distinct; their
+reported simple port-price residuals do not cancel on these tests.
+They replace an assertion that common-record information is absent by
+an actual source computation. They do not establish which information
+algebra is compulsory Book03 Info.
+
+Parent use: `constitutive` / `native_sector` must now supply the actual
+remaining physical contribution
+`d(Cost_extra-Info_extra)=-d(Cost_port-I_candidate)` if it selects either
+candidate. This is a necessary interface, not a fitted source subtraction.
+Complete physical payment, admission, internal preparation/observer/
+controller stationarity, execution clock and refining source equivalence
+remain open. One round does not close finite-time or GR obligations.
+The sampling-leg bareHJR coefficients remain on their own carrier.
+No task, lifecycle, assembly or public-claim promotion. `GR_closed=false`.
+
+
+### 20 October: actual primary prepared-cut feedback source with full oldRIGHT
+
+The [prepared-cut application](A4D_PRIMARY_PREPARED_CUT_PAID_FEEDBACK_SOURCE_2026_10_20.md)
+consumes the existing price-feedback theorem on the same primary
+Fourier128/n20/CAR16 preparation and original complete128 instrument.
+Its supplied cut EE* tensor I_oldRIGHT has counting rank16384. The
+entire marker-zero work complement and nonzero leakage outside E are
+retained; simply compressing the older full-DATA feedback loses the
+latter source. This echo's physical admission/payment is still open.
+
+For R_E=p epsilon (DE)*(DE), the exact full-RIGHT Book component is
+J_phi=-(128/log(phi)) Tr log(I-2^-20 F_E),
+F_E=pI-2p(sqrt(p)-p)R_E-(sqrt(p)-p)^2 R_E^2.
+On the global periodic coframe scale with fixed actual preparation,
+R_E'=-2R_E. Actual transverse Fourier characters prove R_E nonzero.
+The exact operator inequality gives 0<J_phi'/(-Cost_port')<1/4.
+The finite diagnostic ratio is0.00675086108; for the plus-sign sum,
+the remaining opposite source is approximately+0.00314002678242.
+Neither sign of this particular feedback alone cancels the port source.
+
+Parent substitution: consume BOOK_SOURCE_BINDING Theorem2 and the
+whole-family CAR/Book/causal synthesis at d333307d. This component must
+be retained in its actual residual if physically admitted. The bound
+removes its proposed standalone sufficiency; it does not obstruct the
+distinct whole-address geometric reporter or replace the residual with
+a fitted counterterm. The complete effect/scalarity/first-jet test,
+explicit upstream preparation terms, absolute Book amplitude and actual
+Info/work valuation remain. The supplied image cut is also distinct
+from the original closed full-history return I-B^(2n).
+
+The owned scalar-likelihood binding gives (H_pointer'-dlogNormalizer)/
+log(phi), not Cost_port'-H_pointer'/log(phi). Its raw-weight hypothesis
+is explicit; no Info is inferred merely from normalized probabilities.
+Proof, complete128 operator comparison, both omitted-complement
+controls, exact input pins and independent review live in the new
+packet. Existing all40+2, causal-state and geometric maps are reused.
+No new task, lifecycle/assembly promotion or GR closure. GR_closed=false.
+
+## 20 October: minimal Golden terminal readout preserves the WHOLE original J2 source
+
+Phase: native realization/source composition, existing #334. The
+[complete construction](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md) supplies the missing terminal-work
+first-source calculation in the causal Book synthesis, on its stated
+coherent-query interface. It anchors the full original constant null
+operator F*, including scene/matter and all regular multiplicities.
+The fixed coefficient C=zR0 P_minus+zQ0 P_plus is realized with original
+p,z coins; fresh complete-probe trace scalarization gives
+Dt=(Q0 R0/(2N_h)) DJ2. No separately fitted matter coefficient is used.
+
+A complete reversible three-query computation has non-clean probability
+exactly4t^4(1-t^2). Hence differently priced fixed terminal failures give
+zero first source, and both full coherent-record and fine-pointer
+entropy corrections are controlled through rank birth. Actual final
+G^2 and the original0/10 reporter give D(C-I)=positive_constant DJ2 for
+either specified terminal Info reading. The same42 equations, old
+lambda_minus(2^-20), fixedRIGHT logical preparation rows and owned
+midpoint family are preserved. Generated causal rows use the existing
+adjoint theorem; extra genuine query-dependent internal sources survive.
+
+The minimum proved is k=2 within G^k, k>=0: k0 has no linear signal,
+k1 has exact Cost-minus-pointer-entropy cancellation. This is not
+global D_min selection or a minimum theorem for the Einstein roots.
+The physical clock remains forward and paid even during computational
+inverse queries. Actual native query/primitive admission, compulsory
+Book information/aggregation/absolute normalization, and any independent
+upstream/intermediate prices remain open.
+
+Parent substitution: compute the complete TERMINAL work/Info residual for
+these two admitted-interface contracts, instead of a mark-only source
+with uncomputed work. This is a new constructive application of the
+existing same-family proof, not a replacement action asserted compulsory.
+Independent analytical reviews and the adjacent exact rational/Golden
+matrix-jet checker are pinned in MINIMAL_GOLDEN_REVIEW.md. No unchanged
+geometry/continuum/Lean suite was replayed, no new task was opened,
+and no physical GR or assembly acceptance was promoted.
+
+### 20 October: actual Golden terminal minimization rejects the source-preserving readout
+
+User steering about minimality was applied to the actual complete prices,
+not only to the least number of gates retaining a nonzero source.
+[The full proof, section5.1](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md)
+solves every integer k>=0 on the SAME supplied query/cleanup/initial
+task. With T_k=T_0+k and common retained-information baseline,
+S_coh,k=T_0+k+1+sin^2(k theta), so k0 is the unique minimum.
+S_ptr,k=T_0+k+D_phi(q^(k)||(p,p²)), so exactly k0 and k1 minimize it.
+All k>=2 have a positive cost gap. A Golden implementation taking
+more than one primitive tick leaves only k0 as the pointer minimum.
+
+Every selected minimum has zero field first source on the whole
+f=q=0 stratum, including non-Einstein points. G2 strictly loses to G1
+for either terminal reading and every fixed nonnegative Info multiplier.
+G1 itself retains a nonzero signed probability derivative, so merely
+requiring distinguishability does not exclude that cheaper competitor.
+
+Parent route change: keep the exact whole-J2 source realization, but
+reject its selection by these unconstrained terminal prices when both
+competitors are task-admissible. Physical minimality must derive the
+actual compulsory future task/decoder and complete continuation price
+that changes this comparison, or select a different programme. A
+nonzero-source constraint cannot be fitted in as the physical task.
+This is an exact scoped selection theorem, not a no-go for D0 or the
+positive Einstein sector. Independent review accepted the final proof
+SHA256 f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330.
+No new numerical check or unchanged suite was needed.
+
+
+### 20 October: complete native history first jets and explicit marked completion
+
+The [marked-history application](A4D_NATIVE_RELATIVE_HISTORY_FIRST_JET_AND_MARKED_LIMIT_2026_10_20.md)
+executes the user's condensed-mathematics lead on the already owned
+isotropic CAR16/eight-first-shell full128 programme. The exact real
+scalar cross gives zero coherent connection and V_n'^*V_n'=n q_h I,
+with q_h=O(h^2). At the original n_h=128/h^2 horizon this supplies the
+missing absolute cylinder first-jet bound. It is distinct from the
+newer aggregate smooth-bulk heat/history estimate.
+
+An explicit parameter-independent isometry embeds the COMPLETE retained
+tape into marked ordered time cells; all original labels, work, phases
+and oldRIGHT correlations remain. Summable event-sector and derivative
+bounds prove C1 operator convergence to the full finite-time marked
+amplitude, with no trace or probability compression. Golden port-time
+shifts have a separately controlled weak first-source limit on[0,2T],
+while all return marks and unscaled costs remain recorded.
+
+Consumer substitution: BOOK_SOURCE_BINDING section2 can now use this
+common complete history first-jet carrier on the declared shell, for
+supplied bounded-operator C1-convergent memory/price/readout maps and
+a controlled positive denominator. General coherent cross terms and
+raw normalizer derivatives are retained. The construction does not
+supply those physical maps, a hidden field-dependent normalization,
+or their continuation law. Transfer to the actual unequal-density
+nonvacuum primary carrier and original all10 h^-2 raw source remains
+open; this supporting completion result does not narrow that target.
+Proof, focused original-matrix calibration, phase negative control,
+pins and independent review are kept in the source packet. No new
+task, action, lifecycle/assembly acceptance or GR closure.
+
+Physical-scale integration consumes the concurrent sharp low-shell
+clock atbe5e5bd0: nu_h=h a has a trivial complete C1 tape on the
+old h^-2 horizon. The same proof separately yields a full coherent
+marked C1 limit at R_h=128/h^4, with tau_h=epsilon_h h^2. Its cross is
+exp[-2pi^2 T(a-b)^2]I and its tangent metric tends to8pi^2 p^2.
+This extends the owned any-nonblank pointer limit at kappa128; it
+retains the paid h^-4 baseline and divergent original epsilon-time.
+It does not establish a physical clock-selection rule. The new
+minimal Golden reporter's conditional complete finite price/source
+is also retained; the present history theorem supplies its distinct
+potential completion interface, not a replacement information law.
+
+The subsequent exact terminal-price minimum atc16531e3 rejects selection
+of that G^2 reporter on its admitted same task: the minimizing alternatives
+have zero first source on Sigma. The history theorem retains this scoped
+negative. Its only relevant extension would use a derived future task
+and actual continuation price that changes the comparison, or a different
+programme; a nonzero-source requirement cannot choose G^2 by definition.
+
+
+### 20 October: full finite-future price, true integer implementation minimum, and the Beatty input test
+
+The [same-owner synthesis](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/FINITE_FUTURE_DETERMINANT_MINIMUM.md) constructs an explicit no-click experiment for the original finite-z determinant. The fixed 8D native units retain their rank2 return cut, both bands and every actual multiplicity. Complete monitored two-attempt price is a+bq-(1+q)h_phi(q), including unresolved output and all conditional quantum work.
+
+A nonempty class of uniform implementations with nonnegative integer setup/first-stage and continuation costs has an attained, locally constant minimizing cost pair at the original irrational q0. Thus the derivative of the actual minimized value is c DJ2. Exact rational inequalities prove |c|>0.39 for EVERY integer winning continuation price; the common-attempt version holds for every finite N>=2, including different integer setup costs. This remains uniform under growth of lattice multiplicity. The collective variant has an independent all-N algebraic-conjugation/Gelfond-Schneider noncancellation proof.
+
+The original complete 16+24+2 source, lambda_minus and exact nonvacuum midpoint family are consumed unchanged. This is a true implementation minimum for a specified complete future experiment. The earlier G^k terminal obstruction is preserved. The physical admission of the original query/exterior operation, actual terminal-CQ versus Book03 Info binding, compulsory choice of task and independently charged upstream sources remain open. No field stability or full action equivalence is inferred.
+
+The user's proposed finite Beatty average was checked on head4867b6d4. In the canonical K913 law p^N cancels exactly; the actual native Golden cost-cut contains positive000 whereas the Sturmian tower forbids it. The true R is an effect built from a supplied record-price function xi, whereas C_h is a matched-reference scalar price difference. Conditional averaging over any complete partition preserves Tr(rho R) and its full derivative. No owner currently supplies the proposed common averaging map and complete physical table; no value for that absent average is reported.
+
+The parent now consumes the proved finite complete-price/minimum source identity and seeks the actual valued future task and full native binding. Normalized future probabilities alone omit the scalar determinant valuation; the finite Schur/current universal property makes this precise without importing a Gaussian physical model. Independent final acceptance and one exact changed-calculation replay are pinned in the adjacent review. No new task, certificate census, lifecycle change or GR closure.
+
+### 21 October: arbitrary Brinkmann profiles, stopped orientation information, and the remaining Book selection
+
+The [arbitrary time-dependent Brinkmann source](https://github.com/gvakhrushev/d0_15/blob/9cd16820d020aed107b6db6215c44cfe3b7ea6f2/02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md) already carries the geometric result in the supplied synthesis: the original 40 Euler rows reduce to the staggered discrete Poisson equation for arbitrary site values of \(H(u,x,y)\), and the source includes exact discrete-harmonic profiles plus discrete Dirichlet lifts of smooth transverse harmonic data. This is a constructed two-tick Golden-J2 family, not compulsory full-D0 selection. Further pp-wave/profile expansion is not the remaining GR bridge.
+
+The 21 October continuation sharpens the information boundary:
+
+- [Native17 stopped orientation theorem](A4D_NATIVE17_OPTIMAL_STOPPED_ORIENTATION_AND_INFO_2026_10_21.md) gives an exact automatically stopped, work-minimal test for its declared pair of orientation hypotheses, retaining all 17 outcomes and failures. Its task-relevant sufficient-record information is \(I_\varphi(H;\Gamma)=\log_\varphi 2-h_\varphi(\epsilon_m)\). This is not the full apparatus entropy, a globally compulsory task, or the complete \(\mathrm{Cost}-\mathrm{Info}\) selected by Book03. The [unknown-strength stopped-price result](A4D_NATIVE17_CATALOG_FREE_STOP_AND_COMPLETE_PRICE_2026_10_21.md) likewise retains the full stopped charge while leaving the physical Info algebra and programme selection open.
+- The [stopped all128 source integration](sources/d0_stopped_record_information_2026-10-21/INTEGRATION.md) now consumes the actual primary \(L=4\), 256-site, CAR16, RIGHT128 one-round experiment as cap \(N=1\). Its certified pointer-entropy source coefficient is \(h_1\in(-6.337357805749941,-6.337357805528254)\times10^{-7}\); the separately declared port-cost-minus-entropy-Info coefficient is \(a_{\rm ent}\in(6.062739696543018,6.062739696765868)\times10^{-7}\). The signs differ because these are distinct supplied readings of Info/price. The primary coherent-flag source, absolute Book amplitude binding, and common preparation/work/clock source are still not selected.
+- [Book source binding §3.4](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/BOOK_SOURCE_BINDING.md) shows the original nonblank port pair requires relative Info gains \(3/2\) under absolute amplitude binding, \(2\) under scalar-probability binding, and \(1\) for an extra factor on the existing Kraus vector. The mismatch is relative, so a common normalizer cannot identify these prices.
+- The [latest coherent-complement application](sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_COHERENT_BOOK_COMPLEMENT.md) is conditional on one same, fixed, factorizing clock compression. With its new common recombiner it derives a positive quadratic feedback change \(-128\log\det(I-zgK_c)\); its first preparation derivative is zero. It is a useful control on that candidate execution, not a physical clock/cut identification or a cancellation of the candidate's odd linear source.
+
+The remaining physical bridge is now stated narrowly: derive from the actual compulsory M1/Book03 execution why its complete \(K(e)Z_{\rm future}(e)\), Info, and charged controller/observer/clock/work/preparation/oldRIGHT select the orientation-graded **pretrace** CAR/Role source, and derive the corresponding field writer or an independent native stationarity law on that same process. The repeated fixed-accuracy sign-measurement cost cannot substitute for this source: it scales as \(\xi^{-2}\) near the null flat point, while the target pretrace amplitude has a nonzero smooth linear jet and task-only binary information stays bounded. After this binding, consume the existing 16+24+2 equations, Ward identity and refinement on the same witnesses. No new task, action, selector, or GR-closure claim is introduced.
+
+### 21 October: opposite-null order memory is already constructed
+
+The proposed mixed-order experiment is already an exact finite result in the [full16 opposite-null Julia theorem](https://github.com/gvakhrushev/d0_15/blob/567133c1f1ad29e5dabf8bd9c43ca64e4fec6c8f/02_REGISTRY/gr_assembly/sources/d0_opposite_null_julia_order_memory_2026-10-19/theorem.md). It uses two fresh retained Julia flags; reusing one flag adds an exact 3I/4 defect at the flat point. A fixed complete 13-outcome POVM on CAR16 × R4 has diagonal six-generator response δ_ab/(24√2), and the two opposite-null orders have the nonzero same-history Shannon mixed source h₂(p)/(192√2 log φ) = 0.0050895705100… . I reran its pinned standard-library checker: it passes the full Lorentz algebra, all 16 grades, positive complete POVM, order readout, Golden split, and facewise flat first-jet controls.
+
+This closes the proposed *mathematical detector construction* in the declared active-orthogonal/fresh-record class. It does not show that literal GoldenCoherentMemory.fullStep or the compulsory full Book03 Cost−Info selects or pays this probe. The facewise Palatini comparison is only a flat first-jet match with a candidate κ_h ∝ h²; its face-to-pointer assignment, absolute scale, transported preparation price, and nonlinear/full-source equality are still open. The existing positive-case route therefore consumes this result as a candidate readout and keeps the physical same-execution source test as the gate.
+
+The normalization in the supplied profile/flux formulas must follow the original 40→3→1 owner: its dimensionless link is K_a(z) = ½[H(z+û) − H(z+û−â)], with K_a/h → ½∂_aH. For C_h formed from the unscaled differences K_b(z) − K_b(z+â), the exact identities are tr C_h = −h²Δ_hH/2 and E_vv = h tr C_h = −h³Δ_hH/2. Thus Δ_hH = −4λE gives tr C_h = 2λh²E and the stated telescoping boundary flux. The alternative K_a = [H(z) − H(z−â)]/(2h) is a different link convention; it cannot be combined with these C_h and E_vv identities without changing their powers of h and rederiving the source normalization.
+
+The next consumer remains the one already identified in the [primary GR case](D0_GR_PRIMARY_POSITIVE_CASE.md) and [TRIZ/φ handoff](D0_TRIZ_PHI_AGENT_HANDOFF_2026_10_20.md): evaluate the actual selected, fully paid Book03 history effect and its Info, work, controller, clock, observer, preparation, oldRIGHT, and internal Euler sources on the same 42-variable witnesses. No further detector or profile family supplies that selection.
+
+### 21 October: the compactified nonzero-amplitude endpoint
+
+The exact finite-amplitude owner classifies every real nonzero Cayley amplitude on the designated #232 orbit as incompatible with a regular first-slow same-source lift. I checked the remaining projective endpoint \(t=\infty\), using the regular coordinate \(s=1/t\). The limiting link is
+\[
+U_\infty=I+\frac23Y^2,\qquad Y=J_{12}-J_{13}+J_{23}.
+\]
+At this endpoint the connection block has rank 72, while the complete 136-row joint flat system has rank 79 and therefore a 17-dimensional center kernel. I included all 17 directions in the slow drift, without quotienting or labelling any response-invisible direction as gauge. The resulting exact rational first-slow matrix has shape \(136\times113\), rank 96; after adjoining the prescribed curved #216 source its rank is 97. Thus no first-slow correction vector solves the same-source equations at the endpoint, even after granting every center direction.
+
+Replay with [a4d_y232_infinite_amplitude_firstslow_check.py](certificates/a4d_y232_infinite_amplitude_firstslow_check.py). Together with the finite-amplitude classification, this excludes regular first-slow continuations whose leading amplitude tends to a finite nonzero value or to the compactified endpoint with \(s=O(h)\). It does not exclude \(t_h\to0\), intermediate nonregular scales such as \(s_h\gg h\), unbounded expansion coefficients, disconnected exact roots outside this Cayley orbit, or the required normalized-response gap. The #334 terminal remains open.
+
+### 21 October: bounded-pole first-slow obstruction at \(t=0\)
+
+The exact polynomial first-slow system from the preceding amplitude result has
+also been expanded at the zero-carrier point. Write it as \(M(t)x(t)=b(t)\),
+with all 96 link corrections and both center slopes retained. A Laurent
+correction with pole order at most two has the form
+\(x(t)=t^{-2}x_{-2}+t^{-1}x_{-1}+x_0+t x_1+\cdots\).
+The exact rational convolution system matching coefficients through \(t^0\)
+has shape \(408\times294\) and ranks \((282,282)\). Adding the \(t^1\)
+equations gives shape \(544\times392\) and ranks \((379,380)\). Thus the
+first-slow source is compatible through \(t^0\), but no correction with a
+Laurent pole of order at most two satisfies it through \(t^1\); lower pole
+orders are included by zero-padding.
+
+Replay with
+[a4d_y232_firstslow_laurent_scale_check.py](certificates/a4d_y232_firstslow_laurent_scale_check.py).
+This is a formal-amplitude obstruction for the designated first-slow system.
+The truncated convolution calculation by itself tests only pole order at
+most two. Combined with the already owned exact generic-amplitude calculation,
+a stronger formal consequence follows: after clearing the denominator
+\(D(t)^4\), the full polynomial system has
+\(\operatorname{rank}_{\mathbb Q(t)}M(t)=97\) and
+\(\operatorname{rank}_{\mathbb Q(t)}[M(t)\mid b(t)]=98\). These ranks are
+unchanged over \(\mathbb C((t))\) and every Puiseux extension
+\(\mathbb C((t^{1/n}))\): polynomial minors that vanish over \(\mathbb Q(t)\)
+are identically zero, while a nonzero minor remains a nonzero formal series.
+Therefore no finite-pole Laurent or Puiseux correction solves the complete
+first-slow system, regardless of pole order. The denominator is a unit at
+\(t=0\), since \(D(0)=4\).
+
+This still does not control non-series \(h\)-dependent corrections, terms
+beyond the first-slow system, or the nonlinear finite-\(h\) Euler remainder.
+It supplies neither a task-level no-go nor a normalized response gap. The
+first remaining estimate is uniform finite-\(h\) control of the center
+correction as \(t_h\to0\), or an exact finite-\(h\) reduced equation that
+handles such non-series sequences.
+
+## 21 October — explicit complete-price branch and full nonnull continuum realization
+
+The [new continuation](sources/d0_complete_price_explicit_dynamics_2026-10-21/README.md)
+turns the current two-density stationary normal form into an explicit
+quadratic trace branch, an all-order K_N with a common finite-cap chart,
+and true partial radial minima in their stated sign sectors. Its strongest
+new consumer is a common nonnull Bianchi I family solving all 16+24+2
+ambient continuum equations, including lapse, of the precisely declared
+fixed-measure action. Both queries are nonzero and spacetime constant;
+the complete price derivative factors without dropping ambient variations.
+Ricci and Weyl are nonzero. Native dictionary/weight/internal-root and
+finite-lattice binding remain open, so this is conditional supporting
+composition, not a new native all40 acceptance.
+
+The same derived matter response has a uniform normalized sign and exact
+unitary transport of linear disturbances on reduced Brinkmann geometry,
+including rotating noncommuting internal profiles. Remaining original
+geometric rows and spectator sources are retained. The full-field minimum
+exclusion on the primary carrier is unchanged.
+
+[Live source binding](sources/d0_complete_price_explicit_dynamics_2026-10-21/SOURCE_BINDING.md)
+consumes the actual finite lambda and unit-charge kappa>266/5 owners and
+attributes the Gibbs/Doob/cycle reformulation to its earlier owners.
+The previously unavailable original long normal-form proof/checker/reviews
+are restored as immutable source evidence without replacing the current
+reconstruction. Exact and numerical checks are distinguished; independent
+reviews bind the final proofs. Existing #334/native-programme-v1 continues;
+no new task, claimed compulsory action or GR_closed promotion.
+
+## 21 October — exact joint preparation and forced complete-price densities
+
+The [joint-source synthesis](A4D_JOINT_CLOSURE_SOURCE_SYNTHESIS_2026_10_21.md)
+removes three specific remaining hypotheses on the inspected dfc0275e inputs.
+On the original coherent cap2/CAR16/RIGHT128 price, the literal material-angle
+identity and the weighted centre of the two arms give an exactly zero relative
+preparation source. The inherited logarithmic normal makes a=0 the unique
+nearby relative stationary section. All joint critical points, and those of
+the prior fixed-material reduction, are therefore exactly the diagonal-price
+critical points. The true central port/counting ledger is included. The mixed
+matrix at the matter-free base is M=p^3 P_b H_m; a material-Hessian null
+vector cannot acquire the
+formerly conceivable independent logarithmic instability. This closes the
+selected k preparation equations of this SAME action, not arbitrary Stiefel
+preparation, extra physical work or the distinct N=1 CQ price.
+
+For the precisely declared fixed-measure continuum two-density action, full
+stationarity itself now implies constant x,y. The induced-coordinate identity
+d(F-xF_x)=0 and the radial branch x=tau(y), with 9<P'_N/a_N<44, prove this
+without an assumed symmetry or homogeneous ansatz. All finite caps have the
+same complete stationary set and, with a fixed collar, the same full Jacobi
+kernel. An explicit inverse mass-coordinate construction lifts ANY local
+smooth positive irrotational Einstein dust solution in the one-real-scalar
+sector; a null-dust construction is included. Off-shell Hessians and minima
+are not identified. Native finite-lattice dictionary/admission remain open.
+
+The original monitored return apparatus now has a complete C1 entropy/source
+limit, including unresolved records, with explicit O(N^2(961/1024)^N) tail.
+At its literal c=sqrt(5)-2, interval arithmetic proves 10.61<H'_infinity<10.62,
+while mean return equals four. Thus an independently admitted c cannot be
+stationary for this specified price when both setup and compatible cycle-cost
+derivatives vanish. Any additional full-price term keeps its own derivative.
+The actual missing internal-price balance is explicit. This source cannot
+be cancelled by changing to a coherent flag information cut.
+
+The three executions are not added together. The next consumer is the full
+independent internal source on ONE selected, fully paid execution of the
+existing field root. Exact preparation elimination reduces that system;
+density rigidity specifies the continuum target; the return theorem retains
+an otherwise lost source. New proof packets have frozen input hashes,
+focused replays and independent reviews. No task/lifecycle or physical-GR
+promotion is made.
+## 21 October — exact joint preparation and internal-source synthesis
+
+The [joint preparation/compiler/clock synthesis](A4D_JOINT_PREPARATION_COMPILER_CLOCK_SYNTHESIS_2026_10_21.md)
+consumes the original cap2 logarithmic minimum, cap1 complete spatial
+price and native monitored-return owners at dfc0275e. Its strongest new
+result is exact stationary-set equivalence after the selected native
+preparation is eliminated: D_aA(y,0)=p^2 d_w partial_b_w A0, and
+Crit(min_a A)=Crit(A0) on the same free material chart. The complete
+field Hessian agrees at every nearby source-zero point, not only vacuum.
+The balanced mean-map argument also preserves degenerate local types.
+
+Separately, the full N=1 implementation envelope preserves its actual
+report field roots and selects K9,L18 in the stated nested paid class.
+The true monitored-return CQ source has a rigorous nonzero limit and a
+uniform complete first-source cap bound including abort. All three real
+information cuts remain distinct. The [package and independent reviews](sources/d0_joint_preparation_compiler_clock_2026-10-21/README.md)
+state the exact common-action composition condition and the remaining
+Book/input/query/time binding. No physical GR, raw216, task lifecycle or
+CORE claim is promoted.
+
+## 21 October — fixed-measure Ward rigidity and package reconciliation
+
+The new [on-shell density-rigidity result](A4D_COMPLETE_PRICE_ONSHELL_DENSITY_RIGIDITY_2026_10_21.md)
+consumes the existing fixed-measure two-density continuum action. Its local
+coframe trace gives `T=x F_x-y F_y=0`; the Lie variation of all dynamical
+fields with the external measure held fixed gives `d(F-x F_x)=0`. Wherever
+the density map is regular, these equations force `x,y` to be spacetime
+constant on each connected chart. For the declared finite-cap detector,
+the inherited radial branch and `|d_y log|V_N' r_x||<202` make the Ward
+slope strictly nonzero throughout the owned interval. All finite caps
+therefore have the same complete local field critical set, and the same
+local Jacobi kernel under the common boundary class, as the bare `r` action.
+
+After the already-owned stationary reduction, the aligned timelike sector is
+Einstein–irrotational dust with its volume/current relation fixed by the
+actual source ratio. The arbitrary-function LTB witness is non-VSI and the
+new checker verifies the full coframe source, torsion-free Lorentz connection
+and fixed-measure scalar equations. This supplies a narrower possible
+constitutive target: an admitted same-process D0 source may suffice if it is
+shown to induce this regular fixed-measure two-density class, or an equivalent
+field source, without selecting a unique microscopic price. The result does
+not derive that native map. Moving-query admission, complete Book03
+Cost/Info and upstream price, nonuniform-weight source transport, the
+original finite-lattice lift and physical selection remain open;
+`GR_closed=false`.
+
+The supplied packages were reconciled against this current PR tree rather
+than overlaid wholesale. The native-clock handoff archive
+(`d0_15-native-clock-handoff-2026-10-21.zip`, SHA-256
+`7d075d21fb3de9862ebe4fe7cfd98c7d2035b61a87acaf6d6b6f639258eceba1`)
+matches all nine manifest-listed repository files byte-for-byte; its patch
+passes a reverse-application check, confirming those files are already
+integrated. The explicit-dynamics ZIP and standalone patch have SHA-256
+`ab5539cdce4a478e2941bf463291efc513b3a92a1263167e65943ac9f3bbc09d` and
+`0293ffb3a617322b571f45172fc55cfbf57acf8328f57f2aef34bc0b3882dfa5`;
+the embedded patch has the same hash as the standalone file. Nineteen of its
+21 overlay files match the live tree byte-for-byte. The task brief and parent
+memo are newer integrated versions; the memo also replaces an older
+first-slow limitation with the later rank-97/98 formal obstruction. Applying
+the snapshot patch or copying its two large files over the live versions
+would discard newer research, so no duplicate overlay was performed.
+
+The recovered odds-price ZIP (SHA-256
+`1306dd79a5a6a4266d2f59fce6896aeb6d81f9457bbc8de1f18a07cb063661ac`)
+identifies itself as reconstructed material and says the original commit
+and 233 native checks are unavailable. Its Fisher/resource formulas,
+third-jet Born–Book counterexample and stopped-clock normalization are
+already represented in the existing
+[three-text reconstruction](sources/d0_three_text_reconstruction_2026-10-21/README.md),
+the [all-flag source](sources/d0_three_text_reconstruction_2026-10-21/all_flag/RESTORED_ALL_FLAG_PRICE.md)
+and [complete-record/odds synthesis](A4D_COMPLETE_RECORD_ODDS_PRICE_SYNTHESIS_2026_10_21.md).
+It adds no recoverable original matrices or historical receipt, so it is
+recorded as a mapped duplicate rather than copied as a second proof.
+
+The bounded density/Ward checker passed 200 controls under both normal and
+optimized Python; outputs were byte-identical (SHA-256
+`787087e22940790ee67a09cb1aea83367cbc1b113ff82c9a77283ea0522a6da0`).
+This is the recorded author checker replay, not an independent review or a
+physical acceptance.
+
+### Finite source bridge after the actual weighted-continuum result
+
+The existing complete CQ owner writes each site term as
+`S_z=M rho_z F(xi_z,eta_z)`, where
+`xi_z=tau fhat_z/rho_z` and `eta_z=tau qhat_z/rho_z`, with
+`F(0,0)=0`. For an allowed variation holding the price function `F` and
+`M,tau` fixed, direct differentiation gives
+
+`D S_z = M tau [F_xi D fhat_z + F_eta D qhat_z]`
+`        + M [F-xi F_xi-eta F_eta] D rho_z`.                (20)
+
+This identifies why its complete first source can remain exact on the
+common-null stratum even when the operational weights move: there
+`xi=eta=F=0`, so the explicit `D rho_z` term vanishes. Moving `M` or `tau`
+adds their actual chain-rule terms; the two terms attached to this local
+factor also vanish at `fhat=qhat=0`, while the independently retained
+baseline and upstream ledger still require their own equations. A variation
+of the price function itself contributes its explicit `M rho_z D_F F`
+term and must be checked against the declared variation class.
+
+The new weighted-continuum result applies to the actual prescribed positive
+PF profile `rho`, including inhomogeneous profiles. It proves the full
+weighted Ward identity
+`d(F-x F_x)+y F_y dlog(rho)=0` and the invariant
+`d(rho y/F_x)=0`, constructs a local dust representative for every such
+smooth positive `rho`, and retains the original/reduced metric distinction.
+Its finite-source section gives an exact substitution and names both finite
+Ward defects without assuming they vanish. The independent review passes in
+the declared local continuum domain; the checker is a narrow Decimal
+diagnostic, not an interval proof.
+
+Equation (20) therefore identifies the remaining transition more precisely.
+Away from the finite common-null stratum the weight source generally
+survives. One still needs the typed refinement map from the actual
+`rho_z,fhat_z,qhat_z` to continuum `rho,x,y`, quantitative control of the two
+finite Ward defects under refinement, and convergence of the full field
+source and its weight, preparation, clock and internal derivatives. The
+actual source owner proves the 42-direction identity on its declared finite
+common-null carrier; the weighted-continuum theorem does not itself provide
+this finite/refinement estimate or make CQ entropy the compulsory Book03
+price. Native admission, complete upstream price and physical selection
+remain open, without adding a new selector.
+
+### 21 October continuation: native second jets, causal feedback, and actual PF weights
+
+The [causal/native/weighted synthesis](A4D_CAUSAL_NATIVE_SOURCE_AND_WEIGHTED_DYNAMICS_2026_10_21.md)
+adds three scoped consumers to the same #334 owner. The native packet
+constructs a paid finite coherent report from the original Julia/CAR
+operations and matches the original report through the full ambient two-jet
+on its primary family; transfer of the all-42 roots and Hessian inertia is
+conditional on the actual input/call baseline having the stated
+field-independent jets. The proof does not extend the new circuit to the
+whole off-null `K` functional, supply the original moving Julia access or
+independent material copies for free, or select the native field writer.
+
+The causal packet realizes the original full128 feedback determinant by a
+strictly forward complete archive return. It retains the compulsory first
+clock tick and proves the finite feedback/source jets, including dark-rank
+birth and moving-`z` boundary terms. This is equality of the specified
+feedback component; routing, preparation and the rest of the absolute
+Cost−Info/work ledger are still those of the chosen execution and are not
+identified with fresh measured128 rounds.
+
+The weighted packet applies the existing full CQ constitutive law with the
+actual prescribed inhomogeneous positive PF profile. Its continuum Ward
+identity is `d(F-x F_x)+y F_y dlog(rho)=0`, giving
+`d(rho y/F_x)=0`; it constructs a local positive irrotational dust
+representative for every such smooth `rho`, retains the original/reduced
+metric and nonnull torsion distinction, and proves the coupled fixed-collar
+Jacobi-kernel comparison. The finite section gives an exact source
+substitution and displays both Ward defects; it does not prove they vanish
+for finite roots or under refinement. The independent weighted review passes
+in its local continuum domain, and its Decimal checker passes 42 controls;
+the replayed receipt is byte-identical, with diagnostic arithmetic rather
+than an interval enclosure.
+
+The native checker passes on the frozen 13-source input snapshot at
+`ea0ea3bed801b3a5f6bb147e803c75794214577b`; its output is byte-identical to
+`native_source/CHECK_RESULT.json` (SHA-256
+`155f821709c876cea31fa67daac7c46dd15947bdb3b36e664cb99109061aed2f`).
+The live PR tree has since appended the independent exact four-setting
+source evaluation to `A4D_PAID_GOLDEN_WORD_QUERY_SOURCE_LIMIT_2026_10_21.md`
+in commits `08eac073` and `908eaa7e`, so the frozen native checker correctly
+rejects that one live-path byte mismatch. Replaying it against its recorded
+immutable input snapshot passes; the later source extension is retained and
+not copied backward or silently substituted for the reviewed input.
+
+The causal checker passes all 68 named controls under Python 3.12.14,
+NumPy 2.3.5, and SciPy 1.17.0. The locally generated JSON SHA-256 is
+`7eb615235cdd870426d08416a3b60f1e47d9883c8357e81ed12c981641e88d24`,
+while the frozen receipt is `38d40ba3ada024c1dcfceac823b7e7c0e67919e97525e1c9d49b973468a91df9`;
+field-by-field comparison finds differences only in floating-point
+diagnostic entries, with every named predicate and scope field unchanged.
+The finite-source and second-source finite-difference diagnostics
+remain below the checker's bounds. The source reviews likewise classify
+these matrix diagnostics as numerical rather than interval certificates.
+
+The exact next bridge is therefore the finite-to-continuum transport of
+`rho_z,fhat_z,qhat_z` to the weighted continuum `rho,x,y`, with quantitative
+control of both finite Ward defects and convergence of the complete field,
+preparation, clock, internal and baseline source. Physical writer/query
+admission, compulsory same-process Book valuation, upstream stationarity,
+finite refinement and physical selection remain separate obligations.
+Neither the new native two-jet nor the weighted continuum theorem closes
+those gaps; `GR_closed=false`.
+
+### Native Book03 closure gate and weighted density note
+
+The new [native Book03 gate](A4D_NATIVE_BOOK03_CLOSURE_GATE_2026_10_21.md)
+composes the existing N=1 terminal-pair obstruction with the paid-history
+Gibbs identity and the exact finite compiler cycle criterion. It gives four
+necessary tests to run on one specified, fully admitted execution:
+final-pair value and first jet; absolute normalizer and its source;
+pathwise/cycle consistency for every complete history; and the complete
+same-process Book03 source against the geometric and matter source. The
+source owners remain distinct until a same-execution map identifies them;
+in particular this gate does not identify the N=1 CQ compiler with the
+original full128 tape. Its literal candidate `I_omega=-log_phi(q)`
+requires the actual final-leaf cost gap
+`delta c=(1+theta)log_phi((1-r)/r)`. The owned N=1 query has
+`partial_x r>0` at its base point, so a field-independent leaf-cost gap
+fails the source condition on that query chart. This is a physical-field
+obstruction only if the admitted physical map realizes a direction with
+`D r != 0`; that map is still missing. The aggregate normalizer and every
+branch's actual cost/information remain independently tested, not assigned
+to fit the target. The gate does not identify Book03 Info with Shannon
+information or exclude other Info laws.
+
+The [weighted density note](D0_WEIGHTED_CQ_DENSITY_RIGIDITY_2026_10_21.md)
+is a compact statement of the continuum consequence for the actual
+inhomogeneous positive PF-weighted CQ price: on its regular branch,
+`d(rho*y/F_x)=0` yields constant transformed material contraction and the
+declared bidirectional Einstein-matter dictionary; the primary-zero Jacobi
+statement is under that same stationary map. It does not create the finite
+source transport or choose the physical price. I cross-checked the terminal
+pair and normalizer equations against the cited `book_binding/PROOF.md` and
+the Gibbs/cycle owner. These two new notes contain no independent executable
+receipt; they are analytic compositions of those owners, and the parent
+memo preserves their conditions and limits rather than counting them as new
+replays. `GR_closed=false`.
+
+### Exact CQ-channel source and covariant two-field consumer
+
+The [new synthesis](A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md)
+adds two complementary consumers. On the original two-query detector, one
+Golden rotation slot obeys the exact channel identity
+`partial_theta Phi=(Phi[3 theta]-Phi[-theta])/sin(4 theta)`. Applying it to
+the eight original slots uses 16 equal-inventory forward programmes and
+reconstructs the whole retained 256-output CQ channel derivative, including
+the OR blocks' work coherences. Each query block uses 24 Golden gates and
+52 CNOTs; one launch of all 16 settings has 1,216 unit query ticks if each
+block is reached, before the real bank, preparation, abort, routing and
+repetition costs. An earlier abort may prevent a query block from running.
+The identity is for an unconditional rotation occurrence with the supplied
+known-one controller, not an arbitrary coherently bypassed control. Its
+output is the declared terminal work/OR channel with the inherited fixed
+compiler/abort instrument, not an archive of every primitive's intermediate
+state. The price source at the original common-null point is then obtained
+from the original entropy chain rule; the exact finite-z `S_y/S_x` ratio remains
+`-23.416406751884...`. This is a bounded algebraic source test, not a
+derivative of one fixed finite word, an exact finite-sample estimator, or the
+physical price of running all 16 programmes. The 4-setting evaluator remains
+the distinct shorter consumer for the known probability-price derivative.
+Each execution's query, factory, preparation, abort, routing and repetition
+ledger remains separate.
+
+For the specified continuum price, the full regular two-real-scalar
+stationary solution set is locally equivalent, sector by sector, to a
+covariant positive-multiplier Einstein/constrained-scalar system in a
+derived volume gauge, with the reverse realization and fixed-sector Jacobi
+equations. A generic regular two-density price has the same covariant
+solution class at a selected shared kinetic sector when its derivative
+ratio is positive; its fixed-volume coordinate representative can change.
+This does not imply identical fixed-coordinate critical sets or equal
+off-shell actions, sources or Hessians.
+
+The explicit rank-two witness has total kinetic norm and scalar curvature
+zero while both scalar gradients are active; its Ricci-square and Weyl-square
+invariants are positive. The same witness solves the configured continuum
+price for every fixed admitted cap. At this zero-operand point the actual
+positive PF weight cancels from the full first covector, provided `M`, `tau`
+and the nonzero first coefficients are spatially fixed and the baseline has
+no field source. This strengthens the continuum matter class and its
+weighted realization; it does not provide an exact finite-lattice root or
+the finite-to-continuum source transport.
+
+All three new bounded replays passed and reproduced their adjacent receipts:
+the covariant checker (28 controls, SHA-256
+`8cf8f99835f57688f750f2d9b6571f945446c1010ef276ef58ef9ae8f6e828f6`), the
+crossing-stream metric checker (26 controls, SHA-256
+`3306f985cb66153a984485b55a80c3ecc0e914d9a4414f121fcf22eef9c14525`), and
+the finite source checker (4,096 exact work-amplitude identities, 2,048
+outcome jets, SHA-256
+`5b40ef29c640b79f6a46121f862b5a4f00538f03f759a7d9f32ef017dcbf42dc`).
+The independent reviews bind the covariant equations and local volume map,
+derive the Bianchi-I/Weyl witness separately, and verify the finite channel
+proof's fixed archive and price boundaries. These replays do not repeat the
+historical all40, full128, Lean, raw216 or physical-experiment suites.
+
+The remaining physical bridge is now specific: admit the moving Julia/input
+interface and the same-execution writer; pull the exact query derivative
+back through actual finite coframe/link directions; include that programme's
+complete absolute Book03, clock, preparation, copy and upstream sources; and
+control the finite Ward defects under refinement. The new channel source and
+rank-two continuum witness do not supply those maps or select the physical
+Info/price. `GR_closed=false`.
+
+
+### Full128 port-gain rigidity across the marker family
+
+The new [port-gain result](A4D_FULL128_PORT_GAIN_MARKER_RIGIDITY_2026_10_21.md)
+starts from the original nonblank full128 Kraus pair
+\(K_{0,k}=pL_k,\ K_{1,k}=\sqrt pL_k\), \(p=\varphi^{-1}\), with charges
+\(C_0=1,C_1=2\) and the supplied analytic marker
+\(q_t(0|k)=p/(p+e^{-t})\), \(q_t(1|k)=e^{-t}/(p+e^{-t})\). This is
+consistent with the existing full128 no-identification control: the old
+pair has the same data map on both ports and frozen base probabilities
+\((p^2,p)\); the marker varies the weights analytically, but does not make
+the separate constructed Golden apparatus the same field-dependent
+instrument.
+
+Directly equating the Book branch ratio
+\(\varphi^{-1+\Delta I(t)}\) with the claimed target ratio gives three
+different necessary laws:
+\[
+\Delta I_{\rm amp}=\frac32-\frac{t}{2\ln\varphi},\qquad
+\Delta I_{\rm prob}=2-\frac{t}{\ln\varphi},\qquad
+\Delta I_{\rm extra}=1.
+\]
+Their derivatives are respectively \(-1/(2\ln\varphi)\),
+\(-1/\ln\varphi\), and \(0\). All three equal 1 at \(t=\ln\varphi\);
+at \(t=2\ln\varphi\) they are \(1/2,0,1\). Thus one-point calibration
+does not identify a binding across the family, and a common absolute
+normalizer cancels from this relative-port test.
+
+The companion note also differentiates the complete closed-loop
+determinant with a moving common factor \(a(t)\). Its derivative contains
+both \(a\,D_tF\) and \(F\,D_ta\); absorbing the second term by changing the
+physical feedback fugacity would change the calibration. This is a finite
+exact algebraic compatibility test, not a new physical marker operation.
+It does not choose the Book03 map, establish its native common factor, or
+identify the full128 carrier with the separate N=1 CQ compiler. The
+original full128 port-pair facts were cross-checked against the explicit
+no-identification statement in
+A4D_OBSERVER_COMPLETE_CAR16_JULIA_CHOI_STAR_DENSITY_WELD_2026_10_20.md.
+The derivation is analytic and exact; the new note has no independent
+executable receipt. Physical admission of the t-family and evaluation of
+the full source on a single actual execution remain open. GR_closed=false.
+
+
+### Finite weighted Ward continuation: both defects and the smooth-regime bound
+
+The [finite-to-continuum continuation](sources/d0_causal_native_weighted_synthesis_2026-10-21/weighted_dynamics/CONTINUUM_TO_FINITE_WARD.md)
+consumes the existing weighted continuum proof and computes, on the original
+six-face action and forward scalar stencil, both the material product/inverse
+defect and the gravitational Lie-pullback defect. Its exact source identity is
+\[
+L_h^*E_h=(a/b)W_{\rm geom}
++\bigl[K'(\tau q/\rho)/b\bigr]D_h^+q+W_{\rm mat}.
+\]
+The pullback contains every one of the 16 coframe, 24 proper-link, and 2
+material source rows. The defects are explicit, generally nonzero finite
+arrays; this does not postulate a lattice diffeomorphism symmetry.
+
+The accompanying conditional estimate is materially stronger than the
+previously open “compute the finite defects” step. With uniformly \(C^4\)
+sampled fields, bounded inverse coframes, \(U_r=\exp(h\Omega_r)\), a
+uniformly \(C^1\) actual source slope, and complete compatible collars, the
+displayed product/inverse identities give \(W_{\rm mat}=O(h)\), while
+expansion of the original plaquette and its actual first variation gives
+\(W_{\rm geom}=O(h)\). Hence existing smooth-regime full finite roots with
+\(k\ge k_{\min}>0\) and the kinetic collar condition satisfy
+\(q_h=q_*+O(h)\). For approximate roots, the actual projected residual in
+the stated norm must also tend to zero. This is not a construction of roots,
+a rough-field estimate, or a physical compactness/refinement theorem.
+
+I reran both new checkers with Python 3.9.6, NumPy 2.0.2, SciPy 1.13.1,
+SymPy 1.14.0 and mpmath 1.3.0, directing outputs to temporary files so the
+pinned receipts were preserved. The discrete material replay passed all 29
+checks; the full-source replay passed all 19. Their local output hashes are
+df2cf87aec28d9b6fccd7a1061c026174ba588e54ca430bf6aa2c265853d825b and
+510de4c408128da774b42e4afcbbeecbbebabf5d6de506d18be0893d42768457.
+Against the recorded outputs, the check names, statuses, scope flags, and all
+non-floating values match exactly. Only 13 and 20 floating diagnostic fields
+respectively differ at low numerical precision; therefore the local files are
+not byte-identical to the pinned Python 3.13.5 receipts. The diagnostic grids
+are not stationary roots, do not prove actual PF refinement regularity, and
+do not establish the field writer or Book selection. The exact algebra is
+carried by the displayed identities; the scripts numerically replay their
+declared controls rather than provide interval enclosures.
+
+### Book03 scalar-weight identifiability and one common admitted map
+
+The [corrected source-identifiability theorem](A4D_BOOK03_SOURCE_IDENTIFIABILITY_THEOREM_2026_10_21.md)
+retains the finite graph result after a scalar branch-weight map is specified:
+consistent relative ratios on connected positive support determine the scalar
+weights up to one common factor. Ratio jets and actual charge jets determine
+relative scalar gains; the absolute value of that factor and its first jet
+identify the scalar weight representation. They do not, by themselves,
+determine the complete physical Book source or its memory, active-cut, heat,
+preparation and work maps.
+
+The [executed full128 normalization/source calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+withdraws the earlier blanket claim that this scalar common mode necessarily
+contributes to the actual fixed-z complementary determinant. For the true
+normalized complement, the full operator normalizer is retained and a common
+right factor (W\mapsto WL), including a field-dependent scalar, leaves both
+the determinant and its first source invariant. The complete actual price and
+its other derivatives still require the same admitted execution; this result
+does not identify the Book03 Info law or close its preparation/clock/work
+terms.
+
+The companion [common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md)
+states the smallest remaining scientific task: one differentiable,
+same-execution map from the original 42 field directions and admitted inputs
+to the complete report instrument, every outcome, retained work/archive,
+primitive ledger, clock and absolute Book03 valuation. It must satisfy
+operator/source identity, complete price/source recovery, and every
+independent-input equation on the same boundary. The cap-one N=1 CQ compiler,
+full128 tape, causal archive and continuum constitutive model remain separate
+until that map identifies and transports their complete sources.
+
+The finite Ward replay supersedes the earlier claim that those defects had
+not yet been computed. The separate full128 calculation corrects the
+scalar-normalizer inference above. Neither result closes general rough
+refinement, constructs smooth joint roots, proves physical input admission,
+or establishes GR_closed=true.
+
+
+### Normalized coherent records and the true full128 complement
+
+The [normalized-vector lemma](A4D_ABSOLUTE_BOOK_SOURCE_NONIDENTIFIABILITY_2026_10_21.md)
+remains valid for a scalar amplitude representation: requiring only a
+normalized record \(V=\sum_\omega\sqrt{q_\omega}\,|\omega\rangle u_\omega\)
+forces \(w_\omega=a(y)\sqrt{q_\omega}\), equivalently
+\(I_\omega=C_\omega+\tfrac12\log_\varphi q_\omega+J(y)\). It does not imply
+that this factor is an independent physical degree of freedom in the native
+complement.
+
+The full128 calculation above derives the actual normalized determinant
+using \(N=W^*W\), \(A=i^*W\), and
+\(J=-128\log\det((1-z)N+zA^*A)+128\log\det N\). A common scalar factor
+cancels from its value and complete first source. The earlier formula for
+\(D[-\log\det(I-zaF)]\) remains algebraically valid for a separately
+defined family \(aF\), but such a family was not derived by scaling the
+native amplitudes in the original complement \(F=I-A^*A\). A real physical
+attenuation changes the complement and must retain and price its failure
+histories.
+
+Thus normalized-record data alone still do not identify the complete native
+Book ledger, but the missing full source cannot be reduced to a freely chosen
+scalar normalizer. The unchanged primary HJR preparation source remains
+nonzero, so a normalization-only repair fails on that tested configuration;
+other jointly solved native executions remain open. The full Book03
+memory-algebra sum, complete feedback and actual clock/work valuation must
+still be evaluated on one admitted full128 execution. This carrier remains
+distinct from the cap-one N=1 CQ compiler.
+
+
+### 21 October: causal-cut minimum, evaluated normalization and source rigidity
+
+The [causal clock-minimum synthesis](A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md)
+proves that every feedback-minimizing cut in its retained-initial-epoch,
+no-return class has the same feedback value and field source. For a
+phase-dependent complete word, selection by the full price requires the
+actual remaining-price inequality. The literal Book03 one-tick application
+has the same first-gate compression in both programmes, so this minimization
+does not supply their completed-word contrast. The result is conditional on
+admission of that causal comparison class and does not solve upstream
+preparation or full Book03 valuation.
+
+The [operator-Doob application](A4D_NATIVE_ABSOLUTE_NORMALIZATION_AND_FULL_SOURCE_2026_10_21.md)
+evaluates the finite normalizer, its required input transformation, the true
+complementary determinant and the inherited HJR source. The same-initial
+RIGHT-marginal criterion fails on the tested L4 primary preparation, and the
+normalized return has a nonzero radial source at the original L8 HJR root.
+The separate [full128 complement calculation](A4D_FULL128_NORMALIZATION_AND_TRUE_BOOK_SOURCE_2026_10_21.md)
+proves that an invertible right-coordinate change, including a common scalar,
+cancels from the true normalized determinant and its first source. These
+results address different transformations: the evaluated Doob map changes
+the operator and generally the input, while a common scalar coordinate factor
+is not an independent physical correction. Retained-failure attenuation is
+a distinct paid tape with its own clock and gate charges. Physical Book03
+selection remains open.
+
+The [two-witness price-source rigidity result](A4D_TWO_WITNESS_PRICE_SOURCE_RIGIDITY_2026_10_21.md)
+computes the complete Ricci-square Euler source on the crossing witness and
+uses exact anisotropic representatives of the owned two-scalar continuum
+class. It excludes the stated f(R)+beta Ricci^2 correction class when the
+same solutions and matter normalization are preserved, modulo the Euler
+boundary term. The higher-curvature det(G^mu_nu)^2 control remains invisible
+on the entire rank-two solution class; arbitrary action uniqueness and
+Book03 selection remain open. These three results narrow candidate bridges,
+but their carriers and physical hypotheses are not yet bound into one
+admitted complete execution. The current
+[common-map gate](A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md) marks
+the common-initial-history field writer UNDEFINED in the specified Book03
+route; its current downstream operators take a live query or Choi bank as
+input. The missing object is therefore a paid finite history that supplies
+preparation, address control, failures, clock/work and absolute Book03
+valuation on one process. This is a scoped route boundary and the immediate
+physical blocker. GR_closed=false.
+
+### 21 October: causal clock minima and source descent after internal stationarity
+
+The [causal clock and stationary descent synthesis](A4D_CAUSAL_CLOCK_MINIMUM_AND_STATIONARY_SOURCE_DESCENT_2026_10_21.md)
+strengthens the paired-epoch conditional source transport. With a retained
+initial epoch, no active return into it, one complete factorizing word and
+the stated spectator heat/preparation/normalizer interface, every actual
+clock-cut minimum has the same full feedback value and physical first source as
+the data programme plus its retained clock offset. The clock basis need
+not be uniquely selected. For diagonal retained epochs the feedback
+preference also holds for phase-dependent words; the exact remaining-price
+test is K_endpoint-K_dark<=128 logdet(I+z A_0* A_0/(1-z)).
+
+The same composition permits metric source descent on the selected smooth
+internal critical object, rather than all paid histories. A physical
+Golden lift whose full action defect has zero first jet there transports
+the reduced source; a derived squared internal-Euler defect is sufficient.
+The existing Golden rigidity theorem then applies at its original metric,
+Diff, flat-regularity and Ward hypotheses. Pure clock stationarity alone
+does not suffice: two cuts of one complete finite unitary have different
+field sources. Actual full Book valuation, admission of the causal
+comparison class, other internal roots and native field stationarity
+remain the physical application. The original Einstein saddle, all40+2
+recovery and raw216 scope are preserved; GR_closed remains false.
+
+
+### Native READY measured-prefix source and exact rational PF coefficient admission — 21 October
+
+[Original full proof](A4D_ORIGINAL_GOLDEN_READY_COMPLETE_CQ_COST_INFO_PF_SOURCE_2026_10_21.md) and [two exact checkers](sources/d0_native_golden_ready_cq_source_2026-10-21/AUTHOR_RESULT.json) consume the old cost-n Golden F/R prefix rather than importing a separately prepared site-rank selector. At n=20,L=4 all 10946 true exact-cost native words have probability p^20; the FULL stopped tree also retains 6765 cost21 overshoots and EVERY two-symbol FF,FR,RF,RR suffix. The original READY [wFR] and [wRF] events have total unconditional probability 2 F21 p^23 >0 and exactly the previously owned nonuniform site marginal n_z/F21. This is equality of original SITE MARGINALS, not an identification of the full coherent original AF/oldRIGHT histories or their absolute Book valuation.
+
+On the declared fully measured prefix + actual original 0/10 binary report, the native Golden prefix entropy is IDENTICALLY its true expected code length for ALL complete leaves, including failures. Therefore its paid measured-CQ Code−Info source is exactly
+S_code=2p^23 sum_z n_z[1+r_z-h_phi(r_z)], with all factory/controller/field-input extra prices still chargeable. On the common-null physical family, the old inverse-PF dictionary f_w=fhat_z/rho_z, q_w=qhat_z/rho_z and rho_z=256n_z/F21 yield
+D_42 S_code=(P_READY/256)(1-h_phi'(r0)) eta_h² [r_f D_42 sum fhat_z+sigma r_q D_42 sum qhat_z].
+This is a NONZERO complete first source with the old finite lambda_minus(2^-20), ALL42 ambient variations and genuinely nonuniform actual site counts. Its own overall factor is NOT the separate cap-one/fixed-processor gamma.
+
+The exact pure full32 Choi writer no-go at the original rho_w=384/421 is respected. A nine-fair-draw positive three-way READY partition (384,37,91)/512 reproduces rho_w=384/421 only as a COARSE conditional probability, without preparing forbidden sqrt(rho_w) amplitudes. The uniform 118-bit positive herald realizes every original rational site 1/(2rho_z) with common readiness, and the already-owned Golden-prefix compiler extends finite such Q(p) selectors. This discharges the unnecessary PURE-amplitude requirement for the source COEFFICIENT/ADDRESS part, not the native field-dependent operator-input writer. Based closed plaquette endpoint square roots telescope; individual OPEN stored-Dirac endpoint weight jets do not and remain paid/source-bearing.
+
+**Exact consumed slot:** physical reproduction of native spatial READY/PF and its complete measured prefix price on one positive Golden execution, without new spatial decoder or inserted measure. **Next SAME-CARRIER parent gate remains** to attach truly admitted CAR/coframe/link effects and their full independent writer/clock/oldRIGHT to this actual prefix, derive the literal Book03 branch Info/memory+feedback absolute action instead of naming CQ Shannon, and check the real all42 plus upstream root. The document also provides the explicit complete native code-reference branch likelihood-gain formula as a TEST; no compulsory Book Info is inferred. Original pure-Choi negative scope, physical self-initiation, uniform all-mesh refinement and GR/raw216 remain open. No lifecycle promotion.
+
+### 22 October: fixed-carrier partition choice and original sequential first-label return
+
+This continuation consumes the existing Book03 master and the owned exact
+all-mesh nonvacuum 16+24+2 recovery. It closes specific comparison and execution
+premises within Draft #334; it does not replace the master scalar or start
+another geometric root search. The three constructions below keep their
+different preparations, event alphabets and complete sources.
+
+**1. The active partition now has an exact same-hardware price comparison.**
+Sections 6–8 of the
+[original Golden three-atom owner](A4D_ORIGINAL_GOLDEN_FUTURE_THREE_ATOM_BOOK_SOURCE_AND_FINE_LIMIT_2026_10_22.md)
+put all 72,441 original fine labels on one padded carrier, with the same
+active rank, oldRIGHT128 and retained fine WORK. Dormant comparator blocks
+are identity blocks. On the explicitly identical fixed-scene heat branch,
+merging positive atoms strictly lowers the literal feedback. The three
+atoms determined by the original READY and READY_AND_CLICK predicates are
+therefore the unique minimum among partitions preserving those tests,
+modulo zero atoms and label permutations. The original n20 gap is
+approximately 0.0002686181807940742, and the all-depth gap is rigorously
+greater than 0.00006726908. This removes the old unproved discrete comparison
+inside that programme class. It neither erases fine future tests nor proves
+equal native moving heat or full paid marking price. The field-source
+difference is nonzero and its field Hessian need not be positive.
+
+**2. The iid full-ledger comparison now permits unequal real prices.**
+Sections 11–14 of the
+[first-match owner](A4D_FIRST_MATCH_WALD_NATIVE_INFORMATION_FULL_SOURCE_2026_10_22.md)
+prove exact cell occupation \(\mathbb E N_{ab}=q_b\). Thus a supplied
+conditional net-price matrix contributes
+\(\sum_bq_b\sum_a\kappa_{ab}\), retaining all moving-price derivatives.
+For a fixed price matrix on the entire probability simplex, constant column
+sums are necessary and sufficient for probability-source neutrality; equal
+individual comparison prices are unnecessary. Complete capped laws,
+conditional factory records, aborts and joint information/cost marks are
+included. The deterministic 1/2 status encoding is a declared component,
+not a newly admitted Golden primitive. The corresponding real Boolean
+comparison skeleton is supplied, with its logical gate inventory distinct
+from physical factory price. This application still requires genuinely
+independent complete trials for its full CQ information identity.
+
+The n20 prefix probability \(a\approx0.3416407870701547\) in item 1 and the
+separate capped N1 preparation \(\gamma\approx0.4536749386818590\) in item 2
+are different actual READY constructions. Neither probabilities nor source
+gains are transferred by equating these names.
+
+**3. The original full128 stopped map is now calculated without a reset.**
+The [sequential first-label return](sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_FULL128_BOOK_RETURN.md)
+uses the unchanged original Kraus constructor
+`ee8de4635d24c668949ac9a0186616ab7d59f2ed`. For each anchor it propagates the
+actual mismatch CP map, retains every matched and capped-abort leaf, and
+computes the complete marked operator normalizer \(N_K\) with its ordered
+field derivative. At zero mark \(N_K=I\) exactly for every finite cap.
+Positive marking is a charge-generating calculation; its polar-normalized
+Book diagnostic is not called an unchanged physical gate execution.
+
+A fully reversible seven-bit comparison has 28 CNOT, 15 X and 11 Toffoli
+gates, leaves its scratch clean, and records MATCH as zero. Under its
+explicit clean factory/stage interface the unique blank stopped word is
+00, with actual corner \(A=e^{-tC_{00}/2}B^2\). The full open clock is
+retained, so only its overlap enters the complementary corner; truncating
+the whole output would be a different, incomplete map. The full normalized
+determinant and its noncommuting source follow from this actual corner and
+\(N_K\), with a cap-uniform positive normalization bound. At zero mark the
+feedback is the original two-round \(B^4\) feedback, independently of cap.
+At the declared original-block diagnostic \(\theta=0.08,t=0.02,K=2\), its
+full field source is approximately \(-2.41582055\cdot10^{-6}\); suppressing
+the real normalization derivative would give
+\(-7.04592309\cdot10^{-6}\). This is a bounded Fourier-block source test,
+not an all42 or physical-price certificate.
+
+The [stationary occupation application](sources/d0_first_match_wald_2026-10-22/SEQUENTIAL_STATIONARY_OCCUPATION.md)
+then supplies a constructive alternative to iid reset for additive charges.
+For \(\Phi=\sum_a\mathcal I_a\), \(T_a=\Phi-\mathcal I_a\), actual stationary
+\(\rho_*\) and transient \(T_a\),
+
+\[
+\sum_{j\ge0}T_a^j\mathcal I_a(\rho_*)=\rho_*,
+\qquad \mathbb E N_{ab}=\operatorname{Tr}\mathcal I_b(\rho_*)=q_b.
+\]
+
+The original inverse-square invariant state, uniqueness and recycling-gap
+input are consumed from the existing
+[native preparation owner](A4D_NATIVE_PREPARATION_AND_GOLDEN_OFFSHELL_SOURCE_2026_10_21.md),
+not rediscovered or replaced by a supplied fresh state. For a general input,
+the exact correction is
+\(X_a=\rho+(I-T_a)^{-1}\delta\), \(\delta=(\Phi-I)\rho\). Its first derivative
+at a stationary base retains \((I-T_a)^{-1}D\delta\); stationarity at one
+point does not justify freezing an independent input source. Finite caps
+and a finite forward preparation retain their corresponding defects and
+actual prefix cost.
+
+The new [active-alphabet proof](sources/d0_first_match_wald_2026-10-22/NATIVE_ACTIVE_LABEL_SUPPORT.md)
+computes the count required by that occupation theorem, using the literal
+Walsh cancellations: 42 active outcomes at the original flat point, and
+64 on the specified nonzero admissible one-boost branch. Hence the exact
+stationary uncapped mean trial counts are 43 and 65, respectively. This is
+a support-birth/nonuniform-cap boundary, not a differentiable multiplier
+across the flat point. The finite capped operator source remains the correct
+object there. Occupation does not factor the correlated whole-record
+Shannon entropy or identify it with Book03 Info.
+
+**Same-execution consumer.** A retained finite preparation of length L at
+the original blank cut changes the clean return to \(B^{L+2}\), even as its
+reduced DATA approaches \(\rho_*\). The actual prefix, stage decoder,
+factories, clock and independent input derivatives therefore remain in the
+native master. The next binding is the literal field/preparation map into
+the SAME \(\Delta_N(V)\) and \(F_N(V)\), with its complete first source and
+all independent Euler rows. The present results supply partition ordering,
+actual comparison-ledger criteria, and the stopped original operator/source;
+they do not select heat, cut or Info by naming them. No full-GR, raw216,
+`positive_gr`, BOOK or lifecycle promotion is made. `GR_closed=false`.
+
+**Concurrent intake through `e608554`.** The new
+[archive-information synthesis](A4D_FUTURE_THREE_ATOM_ARCHIVE_MUTUAL_INFORMATION_GR_SYNTHESIS_2026_10_22.md)
+already derives the full measured fine-code source as the three-atom code
+source plus the retained address/report conditional mutual information,
+with moving address/fine-history KL terms when their laws change. It also
+consumes the existing universal Golden code's first-source convergence.
+The present strict comparator-partition ordering is compatible with keeping
+that archive; it does not remove the archive source, identify the two READY
+preparations, or permit a coherent inverse of a classically protected record.
+
+The concurrent
+[renewal Gibbs/heat synthesis](A4D_RENEWAL_GIBBS_HEAT_AND_NATIVE_NONLINEAR_ENTROPY_BRIDGE_2026_10_22.md)
+supplies an explicit single-carrier tensor HJR-type mathematical action.
+Its infinite-renewal scalar is a nonzero constant multiple of the complete
+N1 CQ action; the owned nondegenerate 42-field root consequently persists
+at sufficiently large finite cap by C² convergence. Thus an entropy/heat
+mathematical bridge and configured finite nonflat roots already exist. What
+remains is their physical identification with the compulsory Book03 heat,
+actual energy term, selected active cut and paid preparation on the same
+execution. The finite-cap result is a field-root theorem, not an assertion
+that its freely varied thermal rows already have exact Gibbs matching.
+
+The new no-reset occupation theorem does not remove the **iid** hypothesis
+of that owner's harmonic-energy construction. A concrete exact control is
+
+\[
+K_0=\begin{pmatrix}3/5&4/5\\0&0\end{pmatrix},\qquad
+K_1=\begin{pmatrix}0&0\\4/5&-3/5\end{pmatrix},\qquad \rho_*=I/2.
+\]
+
+This complete instrument has a unique faithful stationary state, both
+label probabilities 1/2, and mean first-label trial count 3. Nevertheless,
+conditional on either anchor, its mismatch count satisfies
+\(\Pr(N\ge k\mid a)=(16/25)(9/25)^{k-1}\), so
+\(\mathbb E H_N=-(16/9)\log(16/25)\ne\log2\).
+Equality would imply \(5^{32}=2^{73}\), which is impossible. This is a
+general correlated-instrument control, not a claim about the original
+full128 harmonic spectrum. It prevents transporting the configured iid
+renewal heat to the sequential original instrument using occupation alone.
+The exact finite CP recurrence and the actual iid harmonic construction
+retain their respective execution hypotheses.
+
+### 22 October: generated thermal cotangent, complete paid source and actual cut heat
+
+The [generated-source composition](sources/d0_generated_thermal_source_2026-10-22/README.md)
+continues the same native realization at published input `5ed0281`, with
+concurrent results through `e9abd30` preserved. The literal Book03 master
+varies `Delta_N(V)` and `F_N(V)` through the actual admitted execution.
+It does not require a thermal matrix generated by that execution to be
+independently freely variable. The new composition therefore removes a
+spurious application premise and supplies the full real source instead.
+
+**Generated variables carry a pullback, not a new free Euler row.** For
+the already configured finite renewal polynomial
+`f_K(q)=sum_(n=1)^K (1-q)^n/n` and
+`sigma_a=exp(-f_K(q_a))/sum_b exp(-f_K(q_b))`, the exact source is
+
+\[
+DT_K=\sum_a\frac{f_K(q_a)+(q_a-\sigma_a)f'_K(q_a)}\beta\,Dq_a
+-\frac{T_K}\beta D\beta.
+\]
+
+All genuine gate, preparation, initial-boundary and clock dependences enter
+`Dq`. The causal adjoints solve every internal generated-state row and
+propagate its reaction to these real controls. They do not impose
+`rho=sigma` on an unavailable independent heat direction or remove a truly
+independent upstream input. At finite K the polynomial and its cotangent
+extend to dark labels, which remain in the trace; entropy derivatives at
+a support boundary use the actual smooth amplitude map, not an arbitrary
+linearly opening mass.
+
+**The complete price is retained in the same source.** For the specified
+CQ ledger, including fine records and conditional quantum work, put
+`B=E Cost-sum_a q_a H(eta_a)/log(phi)` and let
+`I_tot=sum_j H(q_j)-H(q_joint)`. For the existing configured
+`A_K=G+sum_j T_j`, the exact relation is
+
+\[
+DS_{\rm CQ}=-\frac\beta{\log\varphi}DA_K+\mathcal E_K,
+\]
+\[
+\mathcal E_K=DB+\frac\beta{\log\varphi}DG
+-\frac{A_K-G}{\log\varphi}D\beta
++\frac1{\log\varphi}D\left[\sum_jD_{\rm KL}(q_j\Vert\sigma_{j,K})+I_{\rm tot}\right].
+\]
+
+This is a computed covector of the actual ledger, not a counterterm.
+An executed repetition pays its additional trials/comparisons, and a
+no-reset execution keeps its conditional-prefix information. The mean
+price is not thereby identified with the literal Book bootstrap; that
+aggregation and the chosen information cut require their same-execution
+identification.
+
+The unchanged original native port effect supplies a genuine energy
+component. With all live pre-round marginals, including paid preparation,
+`Omega=sum_w sigma_w`, `t=Tr Omega` and
+`R_occ=Tr(Delta_nat Omega)/t`, it is exactly
+
+\[
+\mathbb E C_{\rm port,total}=t+p\epsilon\operatorname{Tr}(\Delta_{\rm nat}\Omega)
+=t(1+p\epsilon R_{\rm occ}).
+\]
+
+Its entire source includes occupation, stopping, calibration and
+preparation derivatives. The coefficient `p epsilon t` is forced; the
+native operator and this energy are not the logarithmic renewal operator
+and its configured energy by renaming them. For the generated stationary
+`rho_*=Delta^-1/Z`, the complete unit-coefficient thermal cotangent is
+`d Delta^-2/Z^2-sigma_Delta`, rather than the fixed-preparation partial
+`rho_*-sigma_Delta`. Finite prewarming uses its actual finite graph instead.
+
+**The existing all42 root has a precise application and a decisive control.**
+The [native-tangent proof](sources/d0_generated_thermal_source_2026-10-22/NATIVE_TANGENT_APPLICATION.md)
+consumes the owned `K=100000000` root without another optimizer: its 42
+field equations and the backward multipliers solve the configured
+generated-graph KKT equations. The full CQ residual at that point is
+exactly `E_K`. It also proves that deleting the energy while retaining
+the same configured heat and constant `F=p^2 P` loses that root.
+The strict inequality `(b'_K/a'_K)'>0`, together with the already certified
+`r_0<r_1` and `D_29 r_0!=0` throughout the same cube, gives a nonzero
+bare-master source on a real field direction. No freely variable heat
+matrix is used in this rejection. A different actual native map is tested
+by the explicit full covector difference and its stated root-transport
+budget, including all independently admitted upstream rows.
+
+**A common heat/feedback candidate now comes directly from the executing cut.**
+The [Hodge/source proof](sources/d0_generated_thermal_source_2026-10-22/HODGE_AND_RENEWAL_TYPE_MAP.md)
+sets `C=(I-P)UP` on the original finite carrier. It satisfies `C^2=0`,
+and `L_C=C* C+C C*` has active block exactly `F`. With
+`M=dim H`, `r=rank P`,
+
+\[
+Z_C=M-2r+2\operatorname{Tr}_{P\mathcal H}e^{-\beta F},\qquad
+D\mathcal B_C=\operatorname{Tr}_{P\mathcal H}
+\left[\left\{z(I-zF)^{-1}-\frac{2e^{-\beta F}}{Z_C}\right\}D_cF\right].
+\]
+
+`D_cF` retains the moving cut and frame connection. Every harmonic
+archive/work direction remains in the denominator. A true oldRIGHT128
+spectator multiplies feedback by 128; its factor cancels only from the
+normalized heat derivative and remains in the absolute heat value.
+The proof also gives an explicit same-incidence metric realization of
+`f(L)` for genuine complexes, with all metric/adjoint jets. The actual
+CAR raising operator and the CP nonmatch map cannot simply be substituted
+for that nilpotent differential or a positive Hilbert heat contraction;
+their concrete type controls are included.
+
+The [actual-cut application](sources/d0_generated_thermal_source_2026-10-22/ACTUAL_CUT_APPLICATION.md)
+tests the construction rather than leaving it as an abstract candidate.
+On the literal Golden active/archive splitter it gives `L_C=p^2 I` and
+zero field source, so that map alone supplies no geometric dynamics.
+At the original one-round blank cut, however,
+
+\[
+F=\epsilon\Delta_{\rm nat}-\frac{\epsilon^2}{4}\Delta_{\rm nat}^2,
+\qquad
+\Delta_{\rm nat}=\frac2\epsilon\left(I-\sqrt{I-F}\right)
+\]
+
+on its actual positive-blank branch. This is a derived common operator
+map, with its noncommuting source, rather than an independently selected
+thermal spectrum. Its paired extension still retains the full original
+harmonic complement; it is not declared identical to the separately
+defined Book scene incidence heat.
+
+There is also a positive full42 application on the original cost20 READY
+reflection, with its actual 50,549 retained prefix labels and oldRIGHT128.
+The derived cut heat preserves the complete common-null 16+24+2 source
+with ratio to its owned feedback covector at least
+`1-16384/50549>2/3`, for every positive beta. Thus the existing exact
+nonvacuum family and finite matter ratio survive this coupled mathematical
+heat/return choice; this is equality on all ambient field directions at
+that family, not just on its tangent. It does not cover the distinct
+unequal-report off-null entropy root or independent upstream equations.
+The native identification is tested decisively: the unchanged default
+`L913 tensor I` has owned eigenvalues greater than one, while `L_C<=I`.
+The root-vertex READY embedding also has a different exact harmonic
+kernel. The coupled construction therefore cannot be silently substituted
+for that literal default physical heat.
+
+**Verification uses the complete histories.** The new narrow consumer keeps
+both preparation labels, all future stopping/abort labels and quantum DATA
+on exact rational trees with 81, 189 and 405 leaves. The full CQ cost/source
+agrees with an independent backward pass; preparation is paid exactly once.
+Rational matrix/occupation identities are exact, while logarithms use
+85-digit Decimal. A separate original CAR16/full128 fixture keeps all
+128^2 future slots and pays four rounds. Its port, thermal and actual
+blank-cut sources agree with independent directional controls. These are
+bounded consumers, not new all42 roots, interval certificates or a replay
+of the old suites. Independent review corrected a future-only entropy
+interpretation before the full retained-CQ calculation was integrated.
+
+The packet also consumes the concurrent original full128 predictive
+information and paid binary equalizer. At finite cap the measured price
+retains both its actual `Dn_K` clock term and the full derivative of
+`sum_b (n_b-n_K q_b)(c_b+log(q_b)/log(phi))`; the infinite stationary
+source law is not used without these finite corrections. A positive
+two-port mutual-information lower bound is not a lower bound on the
+derivative of the whole predictive information. The admitted READY0
+padding contributes the actual positive cost `gamma(1-r)` and its whole
+source, but is strictly dominated without an independent equal-duration
+task requirement. Three first-match completed binary trials correspond
+to a source factor `3/gamma` relative to one launched bank at common fixed
+readiness. These distinctions preserve the original complete-price units
+and leave no hidden iid, clock-normalization or free-padding substitution.
+
+The constructive gain is the complete real cotangent and an explicit
+native heat/return coupling. The compulsory Book03 incidence, aggregation
+and admissible field/preparation/clock identification remain substantive
+physical inputs. No new action is inserted and no BOOK, raw216, lifecycle,
+`positive_gr` or full-GR acceptance is promoted. `GR_closed=false`.
+
+## 2026-10-22 — Complete coupled cut heat: actual partition choice, all42 source and stationary-section application
+
+**Exact new substitution.** The preceding cut-heat application left the
+fine-versus-three-status comparison open because the new Hodge heat moves
+with the comparator. The existing feedback-only partition theorem assumed
+a common heat. The [complete coupled proof](sources/d0_coupled_cut_partition_2026-10-22/COUPLED_PARTITION_PROOF.md)
+now removes that common-heat premise for the actual derived
+`C=(I-P)UP`, while keeping the SAME padded selector, full native WORK,
+active rank and the explicitly declared spectator oldRIGHT128. The
+three-status READY/CLICK future algebra remains the unique cheapest
+partition of this complete **cut-heat plus feedback candidate** at the
+existing fixed Golden calibration `beta0=2p^2`. This is not an assertion
+that Book03 independently selects that incidence, temperature or task.
+
+For `M` selector slots and full non-RIGHT work dimension `W`, put
+`D=M W`, `f(q)=4q(1-q)` and pad dormant cells by their actual `q=0`.
+The ordinary full heat trace and bootstrap are exactly
+
+\[
+Z=D-2M+2\sum_j e^{-\beta f(q_j)},\qquad
+\mathcal B_C=\beta^{-1}\log(128Z)
+-128\sum_j\log[1-zf(q_j)],\quad z=2^{-20}.
+\]
+
+No harmonic mode is removed or trace divided by dimension. A positive
+merge `(a,b)->(a+b,0)` increases heat by `G_H` and decreases feedback by
+`G_J`. With the true `Z_min=M(W-2)`, the proved estimates are
+
+\[
+0<G_H\le\frac{16(1+2\beta)ab}{Z_{\min}},\qquad
+G_J\ge1024z(1-2z)ab.
+\]
+
+The original n20 complete counts give `M=72441`, `W>=50549` and
+`Z_min>=3661675227`. Therefore
+
+\[
+\eta=\frac{1+2\beta_0}{64z(1-2z)Z_{\min}}<\frac1{80000},
+\qquad
+\mathcal B_{C,\rm fine}-\mathcal B_{C,\rm merge}
+\ge(1-\eta)G_J>0.
+\]
+
+Every partition preserving both actual predicates READY and
+READY_AND_CLICK refines their three Boolean atoms. Repeated application
+gives a strict minimum at those atoms, up to empty cells and relabelling,
+with every original fine record still in WORK. The original uniform
+feedback gap has a new complete-action consumer:
+`B_C,FINE-B_C,3>0.00006726823` at every depth `n>=20`.
+These are values in the declared bootstrap units, not primitive gate
+prices. Full marking, preparation and Info ledgers still require their
+actual compatible comparison.
+
+**The whole source is checked separately from price ordering.** With
+`j(q)=-log[1-zf(q)]`, `E(q)=exp(-beta f(q))` and the action's OWN actual Z,
+
+\[
+D\mathcal B_C=\sum_jc_{\beta,Z}(q_j)Dq_j,
+\qquad c_{\beta,Z}(q)=128j'(q)-2E(q)f'(q)/Z.
+\]
+
+The fixed-Z difference between two entries satisfies
+
+\[
+(1-\eta)128[j'(u)-j'(v)]
+\le c_{\beta,Z}(u)-c_{\beta,Z}(v)
+<128[j'(u)-j'(v)]\quad(u<v).
+\]
+
+This is proved from the actual derivatives, not by differentiating a
+value bound. For the entire vector the full Hessian additionally contains
+`-4 beta vv^T/Z^2`, `v_j=E(q_j)f'(q_j)`. Its sign helps strict concavity
+in the probability coordinates; the nonlinear field pullback still has
+its `sum c_j D²q_j` term. No field minimum is inferred.
+
+On the original common-null family, the real source relation
+`n_z/rho_z=N/L^4` eliminates the nonuniform PF address counts at the
+first source. Fine and three-status actions have their respective complete
+heat traces, yet each has the SAME whole 16+24+2 source direction
+
+\[
+\Xi_{42}=r_fD_{42}\sum_z\widehat f_z
+           +\sigma r_qD_{42}\sum_zq_z,\quad\sigma=-1.
+\]
+
+Their new gains lie strictly between `1-1/80000` and 1 times their own
+previous feedback gains. Thus the already proved exact nonvacuum
+Einstein–CAR family solves the field equations of this complete coupled
+candidate, with unchanged `lambda_minus=-r_q/r_f=-23.416406751884...`.
+All ambient field directions are included; this is not merely a tangent
+calculation inside the solution family. The different off-null
+unequal-report CQ root, independently variable controls and complete
+physical action are not supplied by this substitution.
+
+**Refinement uses the actual prefix, not a smooth replacement.** The owned
+counts `M_n=F_n+6F_(n+1)`, `W_n>=F_n+4F_(n+1)` imply
+`Z_min,n>=18p^(2-2n)`. At the independently owned true PF depth
+`n(L)=64 ceil(log_phi L)+128`,
+
+\[
+\eta_{n(L)}\le
+\frac{1+2\beta_0}{1152z(1-2z)p^2}\,p^{256}L^{-128}.
+\]
+
+The original fine-source suppression `O(L^-64)` remains, while the full
+three-status response stays above `0.56649` of the click-feedback
+reference. The growing absolute `log(128Z)/beta` is retained. Rank,
+temperature and actual clock changes are separate sources; for moving
+beta the proof keeps both the absolute logarithm and the energy-weighted
+heat term. A derived `beta=n epsilon` cannot use the fixed-beta theorem
+without that contribution.
+
+The temperature hypothesis is essential. On a fixed finite carrier,
+equal sufficiently small cells `a=b` and `beta=1/a` give a positive heat
+increase exceeding the feedback decrease. The exact condition is
+`a<7(1-z)^2/(4096zD)`, with `a<=1/4`. This does not infer an unknown
+actual work dimension or a global range of the primary local report;
+it is a bounded negative control against an all-temperature claim.
+
+**A stationary section replaces unnecessary operator equality, but not
+the actual source calculation.** The [section and writer application](sources/d0_coupled_cut_partition_2026-10-22/STATIONARY_SECTION_AND_WRITER.md)
+uses the same-action constrained envelope. For an actually selected
+physical section `sigma`, the required reduced source equality is
+`sigma* d(S_phys-B_C)=0` on the admitted field tangents. Its full
+Info/work/preparation/clock contribution cannot be erased by internal
+stationarity of a different scalar. Pointwise partition ordering survives
+infima over a common feasible internal set with the stated complete-price
+comparison; arbitrary stationary branches need not have the same order.
+
+For the original positive blank's canonical inverse, the actual full
+paired heat has trace `s(a+2Z)`, where `a=M0-2d` is its harmonic complement
+and `Z=Tr exp(-beta Delta)`. Against an actually supplied tensor heat with
+trace `cZ`, its entire fixed-beta thermal source defect is
+
+\[
+D(H_g-H_0)=-\frac{a}{\beta Z(a+2Z)}DZ.
+\]
+
+At `a>0`, heat-source equality on the true stationary section therefore
+reduces exactly to `D(Z circ sigma)=0` in its admitted directions.
+Neither equal operators nor a constant spectrum at every temperature is
+necessary. Internal stationarity does not itself prove this one-temperature
+trace condition. Moving beta/epsilon, the actual nonoverlapping-clock levels
+and all full traces are retained in the explicit formula.
+
+There is also a concrete positive application to the existing paid moment
+writer. Its actual per-factory Gram intertwiner fixes the common input,
+sends `V_k` to `V_l`, and preserves the complete charged record blocks.
+Consequently `C_l=R C_k R†`, and both `L_C` and the common transformed
+`g(L_C)` satisfy the heat-covariance IF left open by that writer owner.
+Their full bootstrap code contrast is zero, including all harmonic work.
+This does not make the different records interchangeable: for the retained
+measured-CQ code outputs their trace distance is exactly
+`2 P(reach code)>0`. The actual ordered-memory/scene incidence and future
+continuation map need not intertwine with R. The code writer's complete
+CQ report price and its separately scoped field source remain distinct.
+
+**Bounded verification and next consumer.** The new checker passed 75
+controls, including complete finite unitary/Hodge matrices, genuinely moving
+prepared input, exact rational count/bounds, the full Hessian normalizer,
+absolute temperature derivative and the large-beta reversal. Direct matrix
+and pulled-back sources agree within `5e-16` on the reported fixtures;
+freezing the input changes a source sign. The Hessian difference is below
+`2.1e-12`. These are structural controls, not a replay of the original
+full128, PF census, all42 root, interval or Lean owners. Independent review
+checked the analytical all42/refinement substitution and its physical scope.
+
+The concurrent intake through `3c3dc0b` is preserved. Its exact off-null
+two-cell continuation theorem accepts an actual full42 continuous source
+of sup norm at most `3e-22` on its radius-`2e-20` cube, with uniqueness
+under Lipschitz bound `1e-3`. Our relative common-null heat bound is not
+that absolute residual estimate and does not silently apply to that other
+carrier. The new stage-clock theorem strengthens the actual cut boundary:
+initialized-stage and stage-only masks have constant zero/one feedback
+spectra, hence constant spectra of these two cut heats at fixed calibration.
+The nonzero READY response requires the stated internal prepared cut.
+The new measured no-reset full128 stopped-KL/quantum-memory and Poisson
+preparation source likewise enters the genuine extra ledger; its value
+bound is not a bound on the information derivative or full42 residual.
+These concurrent sources are consumed without replaying their suites or
+identifying their distinct measured/coherent programmes.
+
+The exact remaining parent calculation is the actual full physical
+source of `S_phys-B_C` on its own admitted internal section, with the
+same incidence, active task, temperature, work, Info and variation map.
+The packet supplies a new coupled price budget and two concrete source
+maps for that calculation. No residual is fitted to Einstein, no BOOK is
+edited and no assembly/lifecycle or physical GR state is promoted.
+`GR_closed=false`.
+
+## 22 October: complete stopped quantum price and preparation-exact source
+
+The [new source composition](A4D_NATIVE_STOPPED_QUANTUM_PRICE_AND_SOURCE_2026_10_22.md)
+consumes the existing complete CQ-history telescope, actual stationary
+first-return occupation and native Poisson preparation interface. The missing
+terminal quantum DATA term now has an exact operator reduction:
+\[
+ \rho_T=\rho_*,\qquad X_z^{\rm last}=\mathcal I_z\rho_*,\qquad
+ \mathfrak D=\mathcal M+\chi_T=(m+1)\chi_1-\mathcal L.
+\]
+Every fine record is retained. For actual additive fine charges and
+\(\ell=\ln\varphi\), the complete gain price is
+\[
+ S=(m+1)[C_1-H(q)/\ell]+\mathfrak D/\ell,\qquad
+ \chi_1+I(Z_0;Z_1)\le\mathfrak D\le(m+1)\chi_1-\mathcal L_{\rm first}.
+\]
+Here \(\mathcal L\) is the summed channel-relative-entropy contraction loss;
+the owned first-two-round gain gives
+\(\mathcal L_{\rm first}=I_2-2I_1\). These are complete quantum formulas,
+not pointer-only replacements or derivative inequalities.
+
+The stopping predicate is part of the physical input. On the actual
+nonzero boost chart, literal full-label equality has64 active anchors,
+mean65 rounds, and price \(65S_1+\mathfrak D_{\rm label}/\ell\).
+The separately declared port-return execution has2 anchors and mean3
+rounds, while still retaining the complete fine archive. The new native
+numerical diagnostics apply to that latter stopping rule. Their upper
+bound \(3\chi_1\) is not transferred to the literal full-label task.
+The generic theorem supplies the actual full-label bound
+\(65\chi_1-\mathcal L_{\rm first}\). The existing support-jump and
+finite-preparation obligations remain.
+
+A separate local C1 theorem controls the entire entropy/source sum.
+The stacked amplitude derivative has a polynomial-times-geometric shell
+bound, including the logarithmic small-eigenvalue factors. Original binary
+effects give explicit one-step contraction; owned full-label transience
+gives a common-power contraction on its fixed active chart. Thus the
+whole first derivative is defined locally for both declared executions.
+This is not a uniform refinement bound or C2 at a rank birth.
+
+For independently varied DATA, the exact omitted price is
+\(\operatorname{Tr}B(\Phi-I)\rho\), where \(B\) is a derived finite
+noncommuting resolvent cotangent. At comparison cap \(K\), the whole price
+is \(S_K=\mathscr R_K+\operatorname{Tr}\widehat B_K(\Phi-I)\rho\),
+with the required terminal correction
+\(-\operatorname{Tr}(GV_K)\) already included in \(\mathscr R_K\).
+These identities give the actual parent substitution:
+\[
+ Y_{\rm full}=Y_{\rm red}-B_\#
+                  +\operatorname{Tr}(\rho_*B_\#)I,\qquad
+ f_{\rm full}+\operatorname{Tr}Y_{\rm full}(d\Phi)\rho_*
+ =f_{\rm red}+\operatorname{Tr}Y_{\rm red}(d\Phi)\rho_* .
+\]
+The generated stationary source can therefore use the reduced complete
+price with this shifted adjoint. Independent preparation rows, finite paid
+preparation and all other actual ledger sources remain.
+
+The same packet applies the exact scalar Gibbs identity and the already
+owned stopped cost-marked CP normalizer to this complete quantum price.
+Full Born trace, blank survival, scalar code partition and marked Born
+operator are distinct. The reporting-only fine-code scalar partition
+diverges uncapped on the original native multiplicities; the normalized
+same-language reference and genuine marked Born operator remain valid.
+A raw scalar factor cannot be chosen to erase the whole source.
+
+The bounded native223 controls check terminal/last-label/cap identities
+and actual analytic jets. A separate rational168-control calculation
+checks full CQ prices, arbitrary faithful preparation, a nonconstant
+Gibbs normalizer and corrected Poisson transport. Direct finite prices
+agree within \(1.70\,10^{-15}\); the independent stationary source agrees
+within \(7.2\,10^{-12}\), while a stale adjoint misses by0.1390779634.
+The proofs and both implementations have independent scoped review.
+No historical geometry/full128/173-check/Lean suite is replayed.
+
+Concurrent intake through `f3a2bf2` is preserved. Its enlarged full-label
+stopped-future family makes the **marginal** retained-test entropy gain
+zero on \(\rho_*\); this does not set the complete history gain or
+\(\mathfrak D\) to zero. A fixed independent oldRIGHT spectator and an
+actually retained pure preparation reference also remain distinct carriers.
+
+The remaining next calculation is the complete \(d\mathfrak D\) on the
+chosen actual stopping language, composed by the displayed Poisson map
+with paid preparation/clock/controller and compulsory Book03 sources.
+Its comparison with the existing nonlinear GR solution still requires
+the same physical field map, true source gain/norm and independent
+internal equations. Native parameter derivatives do not supply the
+original all42 residual budget. `GR_closed=false`.
+
+The concurrent heat-monodromy and canonical pinching/source handoffs are
+[preserved verbatim in a maintained research note](A4D_CONCURRENT_BOOK_SOURCE_HANDOFF_2026_10_22.md).
+This relocates their manual tail from the generated assembly synthesis;
+the canonical view, source papers and scientific acceptance state remain
+separate, with no result or obligation promotion.
+
+
+## 22 October: coherent operand refinement and the full preparation source
+
+The [whole-native closure attempt](A4D_COHERENT_OPERAND_REFINEMENT_AND_FULL_PREPARATION_SOURCE_2026_10_22.md)
+continues the same source-composition route from the exact nonvacuum
+Einstein--CAR consumer. It replaces a named physical implementation premise,
+then tests the independent equations on the resulting processor.
+
+**Actual constructive substitution.** A paid coherent conditional swap
+attenuates the sign observable exactly by alpha, including external
+entanglement. Ten independent Golden-prefix gadgets act on the two geometry
+and eight material probes BEFORE the positive report tables, so the actual
+product-bank output is r(tau*u_N,tau*v). Reusing one prefix or measuring
+these prefixes would change that law or its entropy. No majority amplifier,
+probability estimator or moving scalar rotation is introduced. The actual
+norm bounds require alpha_j=64*Lambda_j*tau<=1; if Lambda grows, the
+Golden depth grows as well.
+
+The entire measured retry/abort/clock transcript and pure conditional work
+give the complete counted CQ price B+Gamma[r-h_phi(r)], with the REAL
+terminal 0/10 charges 1 and 2. B includes the real code/factory/preparation
+baseline. Its constancy on one finite code catalogue does not make it
+constant on independent preparation directions. Growing Neumann degrees
+control the actual inverse/Cayley C2 remainder on a declared strict compact
+chart. The new algebraic-norm/Perron proof supplies an actual coefficient-row
+herald >1/(22H), so structured polynomial-height component catalogues
+admit a polynomial paid finite-cap budget under bounded per-letter costs.
+The table example's very small acceptance is reported, not normalized away.
+
+This consumes the previous shrinking-aperture C2 field theorem where its
+true density dictionary and uniform norms are supplied. Operand error enters
+as epsilon_h, not epsilon_h/tau; extra Golden depth can compensate growing
+jet constants. No raw216 bound, moving PF loader, smooth map into discrete
+words or autonomous same-initial code selection is thereby proved.
+
+**Full preparation test.** The exact physical-input source on this processor
+is Gamma[1-h_phi'(r)]Tr(R_tau dOmega). On the genuine q dictionary,
+an entangling perturbation of two separately prepared component resources
+has zero one-resource density jets and hence zero decoded 42-field jet,
+but changes their pair moment. At the owned nonvacuum fixture it gives
+
+\[
+ Dq_z=-\frac52p^6B_D^2\,2^{-20}/\rho_z,\qquad
+ \frac{D(S-B_{\rm prep})}{w\Gamma\tau}
+ =4\sigma\zeta R_0p^4[1-h_\phi'(r_0)]Dq_z\ne0 .
+\]
+
+This is an exact normal on the free joint-bank fixed-RIGHT mathematical
+domain. A compulsory native admissibility law for that domain remains
+separate. The actually constructed finite product catalogue cannot silently
+be promoted to it. If the extra preparation cost is flat, the actual
+commuting full-support subbank has no interior stationary preparation.
+An independently derived opposing preparation source or lawful restriction
+is required; the formula does not license a counterterm.
+Any C1 completion depending only on decoded fields and separate one-copy
+marginals also has zero derivative on this normal. Its cancellation must
+therefore see joint preparation information or follow a genuine constraint.
+Product symmetrization supplies a positive independent-copy theorem only
+within the product domain. Mutual information has zero first derivative
+at this product point and does not cancel the displayed normal.
+
+**Why the complete coherent history still needs its price.** The same
+original U and one original CNOT, ordered before versus after U, give
+identical across-field full coherent Grams, complete channel and initialized
+cut return. The specified fine pinching preserves full CQ entropy. The
+named 0/10 charge changes by p^3 Tr(rho E_J), with
+E_J=4p^2 a^dagger(sum_{j odd}N_jN_j^dagger)a.
+The exact proper-boost witness has derivative
+-653413779*p^5/204800000000. Its declared Choi16 RIGHT marginal has rank16;
+this number is not claimed on the original full-rank RIGHT128 input.
+General operator identities hold for every common preparation. Intermediate
+scene/Info/controller terms retain their own source. The physically marked
+operator W_-^dagger C W_+ and genuine history occupation recover the
+missing price data without a phase oracle.
+
+The concurrent normalized-scene 359-Euler elimination, actual
+Kraft/Gibbs/Holevo decomposition and same-law stopped-verification source
+are retained at their original interfaces. In particular a fixed price
+marker is outside the unmarked-history obstruction, while a same-law
+constraint still needs its genuine upstream reaction. The supporting fixed
+Golden word for the COMBINATORIAL K(9,11,13) scene is saved separately;
+it is not identified with the normalized scene or a moving field writer.
+
+Four narrow portable JavaScript calculations and exact receipts accompany
+the proofs in [the packet](sources/d0_global_native_gr_closure_2026-10-22/README.md).
+Source pins, corrected normalization/reference scope and analytical review
+are included. No unavailable shell, Python guard, historical root/full128
+suite, Lean build or CI run is claimed. The mathematical full42 positives
+are consumed rather than replayed.
+
+The full parent remains equation (1) in the synthesis: both the entire
+normal preparation source and the pulled-back field source must match on
+one admitted physical domain with its actual gain and norm. This checkpoint
+constructs the shrinking operand and exposes one exact surviving normal;
+it does not select compulsory Book03 H+J+R/Info or close GR.
+GR_closed=false; full_D0_price_selected=false.
+
+
+### 22 October: paid nonvacuum collective source theorem and exact field retention
+
+The [new integrated proof](A4D_NONVACUUM_COLLECTIVE_PREPARATION_SOURCE_EQUIVALENCE_2026_10_22.md)
+and [reproducible packet](sources/d0_nonvacuum_collective_preparation_2026-10-22/README.md)
+continue the same #334 native-programme-v1 / constitutive argument.
+Scientific inputs are pinned at fcfc52064737815c75bef96f7696b473ee304061;
+the concurrent joint-index and information-only nonselection results are
+preserved at their actual conditional scope.
+
+The former coherent operand preserved field equations but left a real
+joint-bank preparation source. The changed execution uses an actual paid,
+coherent, uniform injection of all polynomial operand slots into N
+independently prepared complete banks. The full logical law is EXACTLY
+the original law on product inputs for every finite N; its field source,
+material coefficient and original all-mesh nonvacuum root are unchanged.
+Every factory, cap, retry, unused bank and RIGHT reference remains paid.
+
+For the actual compressed kind-input alphabet and one coordinate query per
+slot, the WHOLE-history score satisfies
+A_1=aI+(1/k)sum_j (partial_j F)(Z_j-t_j I). Hence the full globally varied
+nonvacuum field root cancels the first conditional operator. Reusing the
+owned section-6.78 overlap lemma and proving the exact one-excitation
+projection yields the two-sided result
+
+E_h <= Q_h,N <= sqrt(E_h^2+C_h^2/(N-1)),
+Q_h,N=sqrt(N)||d_prep S||/(2 Gamma_h,N tau_h |gamma_h|).
+
+E_h is the actual weighted field covector norm, with its coframe, link
+and material Jacobians stated explicitly. This lower bound retains a
+nonzero field source off shell. At the exact field root the normalized
+full pure-preparation source is O(N^(-1/2)); an explicit diagonal N_h
+matches the owned O(h^2) material/geometric recovery. The true ten-flag
+operator estimate is linear in tau, so readiness and signal normalization
+are accounted for once, not suppressed by a false factorial success cost.
+
+The full price is B_N+Gamma_N[sum q_omega c_omega-H_phi(q_N)].
+Crucial scheduling correction: all logical reports and actual 0/10
+emitters wait until global logical success; earlier logical outputs stay
+coherent on a late abort. This proves the constant measured prefix law
+on the specified nonadaptive free-input interface. Correlated input
+entropy is joint, never replaced by a sum of binary marginals.
+
+The finite paid-normal companion also realizes the earlier Bell tangent
+by real Golden word pairs with equal decoded fields, matched complete
+preparation/failure laws and nonzero counted price secants. The new
+construction addresses that residual rather than forbidding it or
+inserting a counterterm. Mixed-density and fixed-count controls preserve
+the distinction between pure-source recovery and physical minimum/selection.
+
+Final frozen new-check replay: 5,165 enumerated exact assertions, 67
+floating-log checks, and additional complete-flag depths 1..16 / 34
+count-shell checks. Three bounded independent reviews cover the full price,
+normalization and decoder Jacobians. Exact receipts and file hashes are
+saved; historical geometric/compiler/Lean evidence is consumed without
+a fresh replay claim.
+
+Parent substitution: complete counted-CQ PURE preparation source now
+converges, in a nondegenerate declared norm, to the already owned full
+field source on this actual encoded chart. Remaining parent premise:
+compulsory physical Book03/Info/clock/preparer/controller selection and its
+other independent same-execution sources. No density-cone minimum, exact
+finite joint zero, universal physical GR or native autonomous C1 writer
+follows. GR_closed=false; full_D0_price_selected=false.
+
+
+Concurrent preservation at publication: the later
+[thermal Schur/Ward source-limit packet](A4D_GLOBAL_THERMAL_SCHUR_WARD_AND_SCENE_SOURCE_LIMIT_2026_10_22.md)
+and [native65 archival intake](A4D_LOCAL_SPECTRAL_PACKETS_REMOTE_INTAKE_2026_10_22.md)
+at af6e7eb8952564d86ddbfe910eb5f41d4a1b4e4b were read and retained.
+Their regular spectral equations and scene-source bounds need the actual
+common field/preparation map, normalization and independent apparatus
+equations before substitution here. The measured native65 execution is
+not identified with this coherent selector. Their distinct positive
+results do not silently discharge dS_other in the present source theorem.
+
+
+## 22 October continuation — original Book count, complete retained-clock price and entire vacuum equation class
+
+The integrated analytic continuation [Original Book action, retained clocks and the whole vacuum Einstein equation class](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md) consumes the existing native positive report table, full-field geometric equations and current original full128 future/self-preparation continuations. It adds no root scan or numerical certificate.
+
+For a deterministic admitted Golden Boolean word, the WHOLE original feedback is exactly J=m[-ln(1-4 zeta p^3)] n(c). Its full autonomous L+1-stage controller contributes one return block and no L+1 factor; real archive/counter and successful-ready work ranks remain. The actual uniform-address factory can be included in the same word because it commutes with the port/clean-comparator cut. All failure modes and fine records are retained. With the address actually measured and the original 0/10 reporter paid, complete Cost-minus-recorded-CQ information is B+Gamma[4p^3-h_phi(4p^3)] n(c)/D; the bracket is >3/16. Thus complete finite code-price differences have an exact positive source proportionality, with Gamma occurring once and distinct from the Book rank gain.
+
+Fixed-table threshold compilation supplies controlled all-coordinate finite source secants, with actual normalization and mesh/test norms retained. The resulting Palatini two-operand continuum class has an exact whole-vacuum theorem: unrestricted coframe dilation gives x F_x=0; on the nonvanishing branch this forces x=0, torsion-free connection and Ric=0, and every Ricci-flat metric satisfies the field equations. For the original report the explicit vacuum regular interval is -1<x<p/2. The regular nonvacuum consumer remains two constrained scalar sectors. No finite grid root, minimum, arbitrary matter theory or physical source selection is inferred from source consistency.
+
+The integrated proof computes the remaining global distinction explicitly: the current-history cut gives J(P_c)=m j n(c), whereas the unconditioned controller gives J(P_all)=m j sum_c n(c); its unconditional CQ price likewise averages over actual code probabilities and includes the code entropy. An executable conditional processor is not a native law selecting that history/cut. Generated work and clocks obey their actual causal adjoint; stationarity is tested on genuinely admitted control tangents, without freezing independent preparers or inventing independent Euler equations for generated states. The new Boolean processor is not the entire original CAR16/RIGHT instrument merely because a scalar table matches. Original future equivalence, actual native valuation/selection, independent rank/apparatus sources and exact dynamical recovery retain their stated obligations. GR_closed=false; no Book, claim, admission or assembly-acceptance promotion.
+
+
+## 22 October continuation — whole-history variation, retained-output echo and strong initial-preparation source
+
+Phase: native realization and final composition, in the existing constitutive/native-programme-v1 owner. Sections 9-12 of [the existing integrated proof](A4D_ORIGINAL_BOOK_BOOLEAN_TRACE_CLOCK_AND_GLOBAL_EINSTEIN_2026_10_22.md#9-whole-history-stationarity-can-localize-without-a-new-conditional-valuation) append the new argument while preserving sections 1-8. No new research task, root scan, checker or acceptance promotion.
+
+The actual full recorded CQ price obeys S_whole=S_prefix+sum_h pi_h S_h, including arbitrary mixed oldRIGHT and every future outcome. An admitted variation strictly after accessible prefix h has D S_whole[iota_h v]=pi_h D S_h[v]. Thus whole stationarity yields the conditional continuation Euler equation without selecting a separate conditional action value. Upstream D pi_h and D sigma_h remain. A shared control or an already recorded field code does not supply the required independent continuation tangent. The complete Book source likewise localizes, with its true Z_h/sum Z heat weight.
+
+An actual whole-word U / fixed SWAP / actual U-dagger echo moves the entire original output and its quantum correlations into a protected bank. The full cyclic transported-cut feedback is J_echo=2 rank(P0) J(U,P0); its chronological connection Hodge is exactly isospectral. Applying that neutrality to complete Book heat requires whole-operator conjugacy or proved factorization, not substitution for a spatial scene Hodge. The supplied-bank CQ information is preserved exactly; a real bank factory keeps its own Cost-minus-CQ gain, all failures, success probability and upstream source. A reconstructed Kraus column does not provide the required native inverse.
+
+The unchanged original primitive full128 terminal component now has a strong initial-preparation covector bound. With V_n=S_n(full retained CQ)/n, uniform value error a_n=O(log(n)/n), and initial Omega>=a I, |D V_n[H]|<=4 a_n ||H||_infinity/a+||H||_1/(2 n ln(phi)). For pure full retained inputs only the DATA marginal must be uniformly faithful. The proof uses convexity of the actual linear instrument output and an explicit entropy remainder; it consumes the concurrent native rate/Holevo results instead of repeating their certificates. This removes the regular initial-preparation first-source premise for that fixed-channel intensive component, not its partial channel/field source or full physical price.
+
+The global consumer retains the actual lift norm and nonzero source gain: D A_N[iota v]=g_N D I[v]+E_N[v], with ||E_N||/|g_N| tending to zero, and the same requirement on the pulled-back stationarity residual. Section 6 then supplies the entire regular vacuum Ricci-flat equation class when d psi_A=0; nonvacuum matter remains the stated constrained two-scalar class. One selected native scene, actual field/control maps, complete remaining price and strong source/refinement must still satisfy this identity together. Boolean, echo and original128 specializations are not identified by relabeling. GR_closed=false; no claim, Book, primitive admission, lifecycle or assembly acceptance changed.
+
+Bounded independent analytical review checked the spectral and entropy identities and corrected bank-factory accounting, mixed clock coupling, vacuum d psi_A, and the actual residual lift norm. No unchanged numerical or Lean suites were rerun.
+
+## 22 October integrator checkpoint: one native reflection, two physical cuts and the already complete GR consumer
+
+Phase: native realization and final composition, existing constitutive / native-programme-v1 owner #334. Input: published `f090c0124c389e95e163611624a0f88b921a892a`; current main is merged without discarding the scientific branch. The common parent application is [sections 6–7 of the original Boolean/full128 weld](A4D_BOOK_BOOLEAN_TO_ORIGINAL_FULL128_CAUSAL_WELD_GATE_2026_10_22.md#6-compose-the-owned-full-native-reflection-before-asking-for-another-intertwiner).
+
+The owned Julia/Walsh reflection already retains every original full128 Kraus/poststate and its real nonblank source. A two-outcome invariant code is still excluded, while a source-bearing work-retaining reflection exists mathematically. On that SAME full unitary the port-only Book cut has feedback `4p^3 Pi` and constant rank-count source, whereas the initialized PRE cut has `4p^2 Delta(I-p^2 Delta)` and its complete noncommuting first source. Moving observer terms remain explicit. Neither diagonalization nor the reflection identity physically compiles the missing moving Julia operand or selects the Book cut.
+
+The full native65 causal ledger and original three-tick primitivity now feed the existing complete-price Poisson adjoint on this operator family. This consumes the proven DATA uniqueness/inverse premise and retains its nonzero preparation reaction; independently selectable RIGHT/preparer/controller and complete prefix/clock sources remain. No terminal CQ component is added twice to the separately defined spectral action.
+
+The GR consumer is already the published all-mesh paired-spectral nonvacuum construction, its fixed-metric midpoint recovery, and the global thermal Schur/Ward/actual-scene-source limit. Do not rerun that construction or confuse its thermal Gibbs auxiliary with native DATA. The next physical substitution is the actual admitted cut/field-Julia map and complete Book valuation on this same execution, including independent inputs, followed by the existing exact source identity or normalized source-limit estimate. No actual source bound, smooth all42 writer, physical refinement, assembly acceptance, task retirement or GR closure has been inferred. `GR_closed=false`; the original raw terminal remains open.

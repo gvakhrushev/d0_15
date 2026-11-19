@@ -1,0 +1,69 @@
+{
+  "status": "PASS_GLOBAL_COMPOSITION_FOR_DECLARED_PAIRED_INCIDENCE_MODEL",
+  "source_baseline": "ff98f8cf5eea6b989945349b5d2ffd313c5db8ff",
+  "original_parameters": {
+    "p": "(sqrt(5)-1)/2",
+    "zeta": "2^-20",
+    "beta": "2p^2"
+  },
+  "lambda_feedback_limit": "-23.416406751884074972895582064895253",
+  "analytic_sign_gate": "W*zeta>1",
+  "nonuniform_scalar_source_max_error": "3.337869374e-85",
+  "illustrative_minimal_paired_carrier_table": [
+    {
+      "L": 8,
+      "W_lower_model": 2162688,
+      "W_zeta": "2.0625",
+      "lambda_minimal_paired_carrier": "-23.13294036648118372678942958",
+      "lambda_defect": "0.283466385402891246",
+      "h4_scaled_defect": "1161.07831461024254"
+    },
+    {
+      "L": 16,
+      "W_lower_model": 34603008,
+      "W_zeta": "33.0",
+      "lambda_minimal_paired_carrier": "-23.40269515118513578970552131",
+      "lambda_defect": "0.0137116006989391832",
+      "h4_scaled_defect": "898.60346340567831"
+    },
+    {
+      "L": 32,
+      "W_lower_model": 553648128,
+      "W_zeta": "528.0",
+      "lambda_minimal_paired_carrier": "-23.41556171620588796835687588",
+      "lambda_defect": "0.000845035678187004539",
+      "h4_scaled_defect": "886.084131290616471"
+    },
+    {
+      "L": 64,
+      "W_lower_model": 8858370048,
+      "W_zeta": "8448.0",
+      "lambda_minimal_paired_carrier": "-23.41635398310256317713185572",
+      "lambda_defect": "0.0000527687815117957637",
+      "h4_scaled_defect": "885.313245480204076"
+    },
+    {
+      "L": 128,
+      "W_lower_model": 141733920768,
+      "W_zeta": "135168.0",
+      "lambda_minimal_paired_carrier": "-23.41640345401455042346944953",
+      "lambda_defect": "3.29786952454942613e-6",
+      "h4_scaled_defect": "885.265109650928398"
+    },
+    {
+      "L": 256,
+      "W_lower_model": 2267742732288,
+      "W_zeta": "2162688.0",
+      "lambda_minimal_paired_carrier": "-23.41640654576793011659776751",
+      "lambda_defect": "2.06116144856297815e-7",
+      "h4_scaled_defect": "885.262101335397733"
+    }
+  ],
+  "exact_symbolic_poisson_identity": true,
+  "old_all40_plus_two_material_geometric_proof_reexecuted": false,
+  "physical_Book03_scene_equals_paired_incidence": false,
+  "physical_independent_inputs_solved": false,
+  "universal_GR_proved": false,
+  "precision_kind": "80-digit diagnostic and listed exact symbolic identities; no outward-interval/full-Lean claim",
+  "check_count": 88
+}

@@ -1,0 +1,10 @@
+{
+  "CI_REVIEW.md": "c8b6ef19c805f9875e85b2805d72e4b3c1754433c15d55a41037085d5dc9649a",
+  "RESULT.md": "428bdda31e27ea6e7bf18ac93528fa4bc21c28677026341af2e86a36ac67ff52",
+  "audit_pins.py": "ffceb6393a6b08363d70c8b44b860f6fd1cd46a0155c07de3eace2bdf775e853",
+  "hostile.py": "26d4f003f89f8bc14dac14e1a4af1e0fd616ec24a2ea705e6933fbbe6cd0d685",
+  "hostile_receipt.json": "dba566cc3e3255defd9af8db586272c488ae14267045e2608d75167957ba8fb6",
+  "numeric_result.json": "95320dbb026996dcd077f897194d5a1ea903792a718d3a6f660abb5a4d8d0244",
+  "receipt.json": "31ff9bd7d0547929bedea34e36beec680155ad1e7ac23e0ae8e879860edf5501",
+  "verify.py": "81a7b75b84ea23b8915eebaa054a08dbbc0573f0959a0c26661dcb775aeb4736"
+}

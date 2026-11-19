@@ -1,0 +1,53 @@
+{
+  "input_commit": "2b5bd2af3348d5c49937413580878ed046a460cb",
+  "owner": "02_REGISTRY/research/A4D_SPATIAL_PREPARATION_VARIATIONAL_LIMIT.md",
+  "inputs": {
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md": {
+      "sha256": "44578338d793d96fbd8d575d182cf4087c721e3010c69a77163da0f40bef4715",
+      "git_blob": "8fe8059b98c60425fb570a10cb8d06c8adb13073"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_ENTROPY_AND_CODE_LIMIT.md": {
+      "sha256": "e934b157a7bb34c11a9ad377b32bb8838a6e342da31ab716bf0f14c4c913787f",
+      "git_blob": "1fda19f9e4d0d559ee134e69a863e14af8e78a09"
+    },
+    "02_REGISTRY/research/A4D_VARIABLE_RECORD_FIRST_SOURCE_LIMIT.md": {
+      "sha256": "bacfeb70e261f600cd4d1e305612eaf3ab6fe6f71bd384aab2f04fd588493d93",
+      "git_blob": "d60afe6ffc619a6464a7c40080cba14ce05c708f"
+    },
+    "02_REGISTRY/research/A4D_COMPLETE_RECORD_PREPARATION_DESCENT.md": {
+      "sha256": "6450740a9916bc6b3334528c94c110bacee2940b63be568ff0c8f6820f1e6916",
+      "git_blob": "722d7f3c069819424356ef0bb3f36b885624b63f"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_COFRAME_HEAT_SOURCE_BRIDGE.md": {
+      "sha256": "f54810cf9cc16f2282eb602fa606381cdd9622c7f877fef5211e978c55e4956c",
+      "git_blob": "2e8a4b791e1d7adb472acf24c729d42583874a68"
+    },
+    "02_REGISTRY/research/A4D_NATIVE_CAUSAL_METRIC_SOURCE_BRIDGE.md": {
+      "sha256": "1c719378dac0baa8230366456f66ddb5315d8577afbae91521d60fef65bb9a16",
+      "git_blob": "36a87088bab15f582a7cc0dab958465b58e4f8cc"
+    },
+    "02_REGISTRY/research/A4D_RETAINED_HISTORY_CAUSAL_SOURCE.md": {
+      "sha256": "d7f8498e30e788af43edeb2bfd6e763d429e221cea76b622198687bbf4af21db",
+      "git_blob": "ead1fc7ba78eeac7c7ac232ee59535f977fa24af"
+    },
+    "02_REGISTRY/research/A4D_CONE_PREPARATION_FIRST_CORRECTOR.md": {
+      "sha256": "3ca2619d7965a1090345608e2eab91020c7a4ccafd3f7253fd3576fa73e25077",
+      "git_blob": "8f00ea5a3808025f287c326ea7984c0e8c8ea0f4"
+    },
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_record_channel.py": {
+      "sha256": "dee7ada5cf04bf961701206f65b216e1ab9c6f45ef9f9ed3258e70bed9cb13a2",
+      "git_blob": "c2434f3b566ebf40ec18866e6a1783276af7b9c0"
+    },
+    "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt": {
+      "sha256": "ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61",
+      "git_blob": "82cd7400cbe67439b0b2d0aa5b3161c6032d6af2"
+    }
+  },
+  "reattached_source_alias": {
+    "repository_path": "02_REGISTRY/research/sources/d0_coframe_heat_source_2026-10-16/USER_INPUT_RU.txt",
+    "sha256": "ee36bd15a6c57cd393d297918086f07faf0c0dbd8dedcdc989c0536d55d38c61",
+    "byte_identical_verified": true
+  },
+  "old_scientific_execution": false,
+  "new_scientific_helper": null
+}

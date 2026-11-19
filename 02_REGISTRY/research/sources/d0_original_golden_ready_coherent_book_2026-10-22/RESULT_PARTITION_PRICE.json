@@ -1,0 +1,32 @@
+{
+  "GR_closed": false,
+  "decimal_evaluation_not_interval_certificate": {
+    "J3_n20": "0.00021965104711570147740494286386044096557124727308920042718765732696",
+    "J_FINE_n20": "0.00048826922790977567974582547303378674802347173632977424513306910532",
+    "g3": "4.4524364022267144030475185974379995552612889206022857646485153016e-7",
+    "g_FINE": "2.0338158601538156159210141599573847463828682648675973685018529687e-11",
+    "gap_n20": "0.00026861818079407420234088260917334578245222446324057381794541177836",
+    "uniform_symbolic_log_bound": "0.000067269099620596200625122767278177538923236729019575506053581465062"
+  },
+  "exact_checks": {
+    "all_fixture_partitions": 203,
+    "coarse_to_fine_determinant_ratio": "2654208/2654207",
+    "common_9d_carrier_all_columns_and_full_determinants": true,
+    "dark_birth_second_source": true,
+    "field_hessian_indefinite": true,
+    "first_and_mixed_source_chain_rule": true,
+    "merge_polynomial_and_source_derivative": true,
+    "native_mass_and_gain_order_in_Qp": true,
+    "task_preserving_partitions": 8,
+    "uniform_gap_strict_rational_lower": "1681727/25000000000",
+    "unique_task_preserving_minimum": true
+  },
+  "retained_open_conditions": [
+    "native task and active cut",
+    "actual marking programme valuation",
+    "complete Info and clock/work",
+    "independent input equations",
+    "full source and refinement"
+  ],
+  "scope": "exact finite same-carrier partition comparison; conditional physical application"
+}

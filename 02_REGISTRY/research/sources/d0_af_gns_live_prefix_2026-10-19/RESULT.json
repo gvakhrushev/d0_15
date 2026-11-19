@@ -1,0 +1,51 @@
+{
+  "pins": {
+    "base_head": "69f9a3f161182b13765220d30157c09288499623",
+    "inputs": {
+      "02_REGISTRY/research/A4D_ABSOLUTE_BOOK_COST_SECOND_JET_NONSELECTION_WITH_FULL_GOLDEN_GATE_2026_10_19.md": "e52170005230c5e6baf37d1a6bffefb0989d3c808f339ba1683d97220b32f60b",
+      "02_REGISTRY/research/A4D_FULL718_GOLDEN16_ABSOLUTE_BOOK_SOURCE_BLIND_MODE_2026_10_19.md": "b9210d70e322a34d1ddabcd5b64774ad3aa81453aff60bffe33502368f6d1897",
+      "02_REGISTRY/research/A4D_LITERAL_GOLDEN_CNOT_ACTIVE_LIE_COMPLETENESS_AND_C2_SOURCE_2026_10_19.md": "4e6a9b41bd5cd0bd19d9946a77a2418d1844574b79fad9d0ed540577dc8bcb46",
+      "02_REGISTRY/research/A4D_NATIVE_GOLDEN_FULL16_SIGNED_SHANNON_HESSIAN_AND_PRETRACE_FACE_NOGO_2026_10_19.md": "8a2a1e1613671366d16a3227affa9fc416f504344644c9faa063bd899fa314e7",
+      "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md": "9971253d0ba13b9b66ff28a6bedf166b9de265821a9380b969ba6e23ec9ee0f3",
+      "02_REGISTRY/research/A4D_NATIVE_FIBONACCI_RECORD_ACTIVATION.md": "012455bdd3845e1d95f5270bbdcf105c753013d6e0b2339e2c001332e1fe4ee6",
+      "02_REGISTRY/research/A4D_GOLDEN_LEFT_LIVE_PREFIX_BEFORE_OLD_RIGHT_G0_ACTUATION_2026_10_19.md": "018510bd16d5a22e32146c310cb18ddf065a0a475f8a022ad1370123b477df6f",
+      "03_FORMALIZATION/D0/Representation/GoldenCoherentMemory.lean": "6ea993e22c8b7d0b8a93b9537d51893cb4aff45af858d82ec7f9005ead96e2d7",
+      "02_REGISTRY/research/certificates/a4d_native_fibonacci_record_activation_results.json": "875200fb8337d1f4d9f1361bbc3f73c22c43b039c584371ea11be1a1710aea9c",
+      "02_REGISTRY/research/A4D_NATIVE_FIELD_TO_INSTRUMENT_JET_BOUNDARY.md": "21e281f713b1be64a35b4f1c432a9335a7584c202b056f66ceeb11dd9811ecf8",
+      "02_REGISTRY/research/A4D_NATIVE_RECORD_METRIC_CHRONOLOGY.md": "601e5bb9203789a66ad2a945aad30da92b6233ac40417d54c6b47c95dc43536b",
+      "02_REGISTRY/research/sources/d0_physical_binary_return_2026-10-19/check_absolute_book_one_scalar_reconstruction.py": "104f4ee5b5e70dc4a76356df8b34b8212a8d8fb8c81951d7cddd10e1b2b7f6bf",
+      "02_REGISTRY/research/sources/d0_native_golden_gate_span_2026-10-19/check_literal_golden_cnot_so_generators.mjs": "5426d8ab7a8f096757e992d91cee0ee858e2669085320fdc622105d518d27e2a",
+      "02_REGISTRY/research/sources/d0_native_golden_gate_span_2026-10-19/check_fixed_word_source_stability.mjs": "35b12e3b7772b632098b09840644a1ec61722497c42126942677d53ed3fc4525",
+      "02_REGISTRY/research/sources/d0_native_golden_gate_span_2026-10-19/check_full_native_absolute_pressure_second_jet.mjs": "cb67b87119b7f994e8ef872cb43b41c895ba8905027412387b00ceea10330e69",
+      "02_REGISTRY/research/sources/d0_native_book_nonlinear_nonabelian_2026-10-19/check_one_run_718x16_signed_shannon_source.mjs": "838b87897bfaec94879095b132d26c97e4ef2a2437d263ccf5f3ae69f2cf677f",
+      "02_REGISTRY/research/sources/d0_native_book_nonlinear_nonabelian_2026-10-19/check_original_full16_golden_shannon_lorentz_hessian.mjs": "9d78aa96dcd9fbffd00260fbb528c4bff9bea5c3aaf9bb22aacaf8831d03f633"
+    }
+  },
+  "cost_cut": {
+    "n": 20,
+    "type_A_exact_cost_words": 10946,
+    "type_B_pending_return_words": 6765,
+    "full_prefix_labels": 17711,
+    "exact_source_mass": 0.7236067989578545,
+    "pending_source_mass": 0.2763932010421472,
+    "total_source_mass_exact_Zp_pair": [
+      1,
+      0
+    ]
+  },
+  "commutant": {
+    "exact_right_matrix_unit_intertwinings": 76400,
+    "oldRIGHT_read_control_rejected": 1
+  },
+  "balanced_fixture": {
+    "n": 20,
+    "L": 4,
+    "words_per_role_cell": 29,
+    "selected_original_cost_n_words": 7424,
+    "unselected_original_cost_n_words_retained": 3522,
+    "selected_prefix_mass": 0.4907780810764765,
+    "ready_pair_mass": 0.2317139780019033,
+    "full_gns_complex_dimension": 165580141,
+    "binary_registers_for_padded_gns_vector": 28
+  }
+}

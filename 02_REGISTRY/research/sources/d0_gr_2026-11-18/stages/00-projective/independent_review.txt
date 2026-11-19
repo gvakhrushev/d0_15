@@ -1,0 +1,133 @@
+INDEPENDENT ANALYTICAL REVIEW
+Date: 2026-11-18
+Reviewer: alternative_global_route agent (independent of theorem author)
+
+Inspected proof:
+/workspace/scratch/3cdc5df053a7/agent_rigidity/projective_rigidity.md
+SHA-256:
+b968859221700497ead1e05e71400bdbf78eb112b78fc5a4dcb1df2dbd2efdab
+
+Inspected Russian report source (mathematical correspondence only):
+/workspace/scratch/3cdc5df053a7/output/pdf/D0_Projective_Einstein_Rigidity_2026-11-18.tex
+SHA-256:
+c0edd86a0f2fe44407caea0964d07d79fc3e84ca1b9370796579493cf856673e
+
+Historical scientific input:
+gvakhrushev/d0_15, PR #334,
+head dc411daf01f697ec85dd22f28bfe124171796645.
+Read the matched-source synthesis at primary.md 177762-178077,
+the global valuation cone at 187621-188056, and physical correction 7fu.
+
+VERDICT
+
+Theorems P and Z are analytically valid under their stated assumptions.
+I found no counterexample satisfying all of them. This is an independent internal
+mathematical review. It is not a formal Lean proof, an external peer review,
+a literature-priority determination, or a physical validation of D0.
+
+EXACT SCOPE OF THE POSITIVE RESULT
+
+A metric-only germ-local natural smooth symmetric covariant two-tensor E,
+continuous on the admitted smooth metric domain and differentiable at flat
+metrics, with E(flat)=0, off-shell gravitational Ward identity, nonzero
+Einstein quadratic flat coefficient a, and preservation of its pointwise
+tensor line under one fixed metric scaling lambda^2, equals a times the
+Einstein tensor throughout the declared off-shell domain. The domain must
+admit the normal contractions and local cutoff perturbations in the proof.
+The scale multiplier may initially depend on the metric and point and need
+not have a known sign or magnitude. Where the Einstein tensor is nonzero,
+the conclusion forces this multiplier to equal one.
+
+PROOF CHECK
+
+1. Repeated projective covariance and naturality put every rescaled source
+   at the origin in one fixed finite-dimensional tensor line. The nonzero
+   quadratic flat limit fixes that line to the Einstein line. No bound or
+   convergence assumption on the scale-factor product was used.
+2. The Ward identity gives spatial constancy of the proportionality factor
+   on the invertible-Einstein locus. This step alone does not prove that
+   the factor is independent of the metric.
+3. The cutoff metric agrees with adjacent normal contractions near two
+   distinct points. At each fixed positive contraction scale, a sufficiently
+   small change preserves Lorentz signature and invertibility of G on a
+   compact connected bridge. Germ locality and spatial constancy equate
+   the two factors. Local constancy along the contraction interval and the
+   flat limit fix the coefficient to a. This is the key additional step.
+4. Arbitrarily small compactly supported quadratic jet perturbations make
+   G invertible at the chosen point because Ricci jets are freely adjustable
+   and trace reversal is invertible in dimension d>=3. Smooth continuity
+   then extends the identity to singular G and Ricci-flat points.
+5. The supplemental scale-defect formula has the correct sign and scale
+   power: the finite weighted sum telescopes to E(lambda^(2N)g)-E(g).
+   Absolute summability bounds deviations but does not force them to zero.
+
+LATEST CHANGES RECHECKED
+
+- Theorem Z correctly removes the full Ward identity for the vacuum
+  zero-set conclusion only. It keeps the Einstein quadratic flat germ
+  and its nonzero coefficient as an explicit assumption. Step 1 gives
+  G!=0 implies E!=0 and E in span(G). At G=0, keep the metric value and
+  first jet fixed and choose compactly supported quadratic perturbations
+  with G(g_epsilon)(p)=epsilon A exactly. Curvature and G are affine in
+  this second jet. Continuity puts E(g)(p) in span(A). Repeating with
+  a nonparallel symmetric tensor B makes E(g)(p)=0. This proof requires
+  neither the Ward identity nor gluing along a continuous scale path.
+  It does not calibrate matter coupling, prove full source equality,
+  or establish dynamics/stability from a zero-set comparison.
+- The flat Ward classification now uses the difference under translation
+  of a cubic polynomial perturbation. Constant and linear pure-gauge
+  contributions vanish; a constant third-order contribution cancels.
+  No parity/orientation assumption is required for that argument.
+- The improved nonlocal counterexample is genuinely variational. On a
+  compact four-dimensional spacetime, I[g]=integral R dVol and
+  E[g]=(1+I[g]^2)G[g] arise from I+I^3/3 up to the conventional overall
+  metric-variation sign. Flat coefficient a=1, Ward and projective scaling
+  hold; germ locality and restriction compatibility fail. The scale ratio
+  (1+rho^2 I^2)/(1+I^2) is correct.
+- The Brinkmann nonzero-coefficient witness explicitly assumes its boost
+  family belongs to the common domain. Its boost-weight argument is valid.
+
+RUSSIAN REPORT CORRESPONDENCE CHECK
+
+The Russian LaTeX report preserves the hypotheses and conclusions of P
+and Z, the two distinct uses of Ward, the genuinely local cutoff argument,
+the extension to degenerate G, and the scope boundaries concerning matter,
+dynamics and physical C. The explicit common-domain qualification for the
+Brinkmann witness and its boost family has been inserted and checked.
+
+The displayed nonlocal Euler counterexample and scale-defect reconstruction
+agree with the English proof. The report's Doob algebra was checked
+independently: B=E^(1/2)V(V^*EV)^(-1/2) is an isometry; the multi-step
+normalizations telescope; for E=(1-z)I+zP and V^*PV=qI its mark becomes
+q/(1-z+zq), with positive difference z q(1-q)/(1-z+zq). The criterion
+B=V iff [E,VV^*]=0 is correct for positive E and an isometry V. This is
+a scoped failure of that proposed same-process transport, not a general
+impossibility theorem or a proof of physical C.
+
+This correspondence check did not inspect PDF typography or page layout.
+It does not independently reproduce the reported symbolic test receipts.
+
+ESSENTIAL LIMITS
+
+The theorem does not derive any of its physical-source hypotheses merely
+from closedness of a system. In particular a global history multiplier
+Gamma[g]G is not generally germ-local. A total metric-plus-matter Ward
+identity contains matter Euler rows; the gravitational off-shell identity
+must be obtained legitimately. The nonzero coefficient must concern the
+quadratic curvature jet, not merely a nonzero higher-derivative flat
+response. R^2 Euler sources show this distinction is necessary. The theorem
+relaxes knowledge of the scale magnitude, but does not by itself establish
+the Cost-Info binding or actual admissible source descent.
+
+C: ACTUAL PHYSICAL MAP REMAINS UNRESOLVED
+
+The existing source already provides the complete operator/statistical
+source and the exact joint Gibbs/relative-entropy variational representation
+(7fs, PS8-PS10); 7fu explicitly withdraws their promotion to the physical
+Cost-Info binding. I did not derive a new primitive Cost-Info-to-source
+intertwiner. Reassigning Info from desired amplitudes, using a generated
+Gibbs optimizer, or identifying the final return with the whole retained
+process would repeat the missing assumption. A positive physical application
+still needs the actual weighted continuation/terminal map or a controlled
+full source residual on the same history, including early readable work,
+preparation, clock, normalization, and all independently admitted rows.

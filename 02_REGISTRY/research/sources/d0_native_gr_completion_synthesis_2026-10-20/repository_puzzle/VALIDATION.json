@@ -1,0 +1,55 @@
+{
+  "scope": "Narrow final integration checks; research substitutions, not physical source selection.",
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "sympy": "1.14.0",
+  "source_pins_verified": 51,
+  "runs": [
+    {
+      "path": "pi_alpha/check_pi_alpha_links.py",
+      "command_mode": "normal",
+      "seconds": 1.367,
+      "exit_code": 0,
+      "stdout": "PASS: exact two-record alpha observable/source, defect distinction, finite divisor and Schur residual controls\n",
+      "stderr": ""
+    },
+    {
+      "path": "book_info/check_book_info_archive.py",
+      "command_mode": "normal",
+      "seconds": 1.076,
+      "exit_code": 0,
+      "stdout": "PASS: all 718 original labels; exact node-Info archive substitution; theta gauge;\n      direct Perron first/mixed/second jets; Poisson form; absolute shift; nonlinear Info.\nstationary localized Info archive norm = 1422692/46268279\n",
+      "stderr": ""
+    },
+    {
+      "path": "check_composition.py",
+      "command_mode": "normal",
+      "seconds": 0.346,
+      "exit_code": 0,
+      "stdout": "PASS: original gluing/Schur/source; normalized KL mixed jet; full502 suffix factor.\n",
+      "provenance": "Earlier exact run in this integration on these unchanged final bytes."
+    }
+  ],
+  "artifact_sha256": {
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/GLUING_SCHUR_APPLICATION.md": "3f17bc8b2b1d7c9a3ccf4d6efcd33af3399fd8ed72aff8149c1c61302e6dbb8a",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/README.md": "3adf2ba7c73a30bcd4af0b2acf8d027dbe3c236227d161696c9325aa256217ea",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/SOURCE_MANIFEST.json": "0e2bcf2815589f086ae5e03c7751a3226a1dec42a90325f488c57c1a6276f8ca",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/book_info/BOOK_INFO_ARCHIVE_STATIONARY_COMPOSITION.md": "1919e0a55e38f3fec4688eb6419c999b096e7ee8481e608d0e93d11a7c2a3f5b",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/book_info/SOURCE_PINS.json": "83db9ada57adae754764e2465fff4b696321ae6f6272111c962358ad6f4e4837",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/book_info/check_book_info_archive.py": "143fe08aac6da6304bddffe1249a57275b896d8613b402c089eff5530fb221e2",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/check_composition.py": "eec08a93bdf4ecabdbeec625e180040f4a654133c818492b65ac70352961b5bd",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/pi_alpha/PI_ALPHA_TO_NATIVE_PRICE.md": "50d8512431712dfa14baa7b4567ffb5ec1b74a550cb5744e43fe8133ee62dabc",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/pi_alpha/SOURCE_PINS.json": "700da435fb534323dabfd6f2fc557a273680cf4f8fc14cfa245747a7a58d92e1",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/pi_alpha/check_pi_alpha_links.py": "6cc8aad82f69292c20e4d4f5ad8f9443d67682c5bb300e180a7036e161588468",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/reviews/REVIEW_BOOK_INFO_ARCHIVE.md": "d3a7643523f4d96afb36613ccf42672b2097ac3ecbfbcc29b93fb1b90ddd1753",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/reviews/REVIEW_GLUING_SCHUR.md": "4b70f19f3f8ae0a9c0ae82461bd8ea1cd59ed70209116b14b47e4aa1a6f397c7",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/reviews/REVIEW_MAIN_COMPOSITION.md": "11870c51827520dbc09c320db22f03997b09da775d43a0bc2953b8da22e5968e",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/reviews/REVIEW_PI_ALPHA_TO_NATIVE_PRICE.md": "79a8f00c0e282b0e6b85ac6e3cb9ad124aef43deab8bf7c06f72873743ae229b",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/reviews/REVIEW_WEIGHT_BINDING.md": "e9c8485c8f95ae4dac49cfea69db19947a20142fc008baf38bb80a96571c710f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/EXACT_DOOB_BINDING_CRITERION.md": "f4faa541795b02be1478da158fb1d52bc38cbf91e008bf912cc532771f016225",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/FOUNDATIONAL_WEIGHT_BRIDGES.md": "b8ff0a2f47cb582fb607f66b97e0048fa2cdbfd392ad153d9d46630ee0cf000f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/repository_puzzle/weights/INPUTS.json": "9aa4faadc37628f3993aa24bdbc6c91b1d6e4b6df897fb9dac832385401820d7",
+    "02_REGISTRY/research/A4D_EXISTING_PARTS_TO_FULL_PRICE_SYNTHESIS_2026_10_20.md": "d1d5fb4e3c3008b94356c5cd74d2714494593dbb69b03beb53759ecfa1597b13"
+  },
+  "independent_reviews": "Five receipts in reviews; main target d1d5fb4e3c3008b94356c5cd74d2714494593dbb69b03beb53759ecfa1597b13",
+  "not_run": "No old rank census, old research replay or Lean build; no Lean/claims change."
+}

@@ -1,0 +1,152 @@
+{
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "arbitrary_RawZone_scene_covered": false,
+  "checks": 261,
+  "continuous_native_gate_admission_asserted": false,
+  "full_scene_control": {
+    "H0_modes": 198,
+    "full_H0_H1_modes": 2550,
+    "full_heat": 10.155813260837649,
+    "harmonic_complement": 2154,
+    "spectral_identity_error": 0.0,
+    "vertices": 33
+  },
+  "native": {
+    "active_rank": 8,
+    "all_column_replay": true,
+    "fibre_dimension": 32,
+    "full_QUERY_source_at_native_zeta": "0.000006802751487498107707938953504127771808315",
+    "generated_cut_and_gate_sources_exact_equal_positive_halves": true,
+    "modified_H0_H1_scene_modes": 530400,
+    "modified_inventory": {
+      "CX": 25,
+      "G": 4,
+      "SourceI": 10
+    },
+    "modified_word_stages": 39,
+    "modified_words_are_nonreflective": true,
+    "native_definition_blob": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "original_inventory": {
+      "CX": 24,
+      "G": 4,
+      "SourceI": 10
+    },
+    "original_word_stages": 38,
+    "same_output_pair": {
+      "different_full_32_column_operators": true,
+      "first_tail": "CX(0,1)",
+      "same_all_8_input_columns": true,
+      "same_inventory_claimed": false,
+      "second_inventory": {
+        "CX": 24,
+        "G": 4,
+        "SourceI": 11
+      },
+      "second_tail": "SourceI(0,2,3)"
+    },
+    "source_commit": "5fe5203da2439d325dc9ef70f52c1111822fc22b"
+  },
+  "native_nonreflection_comparison": {
+    "N": 39,
+    "feedback_gap": "0.0000055983156898609674441213342240744",
+    "full_large_heat_diagonalization_executed": false,
+    "full_price_gap_is_strictly_positive": true,
+    "heat_gap_proof": "positive first winding dominates bounded remaining windings",
+    "heat_gap_upper": "3.5355968020448107706189790988869e-103",
+    "same_input_output_pair_C_E": {
+      "feedback_difference_exact": "0",
+      "heat_gap_same_positive_lower_bound": "2.287806516224506535800617497669e-106",
+      "heat_gap_same_upper_bound": "3.5355968020448107706189790988869e-103",
+      "proof": "first trace gap 16*s_A is larger; identical remaining-tail bound"
+    },
+    "sharper_algebraic_lower_numeric": "1.1735411924593679549332489551818e-105",
+    "strict_heat_gap_lower": "2.287806516224506535800617497669e-106",
+    "strict_positive_sign_certified_in_exact_rationals": true,
+    "trace_W_C_minus_W_D": "8.2071165205384512960580092124766"
+  },
+  "original_full42_replayed": false,
+  "physical_action_selection_proved": false,
+  "scope": "same declared paired-clock or homogeneous INTERNAL scene; fixed dimensions/beta/scene",
+  "source_bounds": [
+    {
+      "N": 8,
+      "bare_C1_endpoint": "0.00000025799950448176563258333095665402",
+      "bounds_computed_as_exact_rationals": true,
+      "scene_C1_endpoint": "3.7222950850879410005684402788558e-17",
+      "scene_C1_gate_max": "2.9778360680703528004547522230847e-16",
+      "scene_C2_cross_only": "6.7533705309462503002613540970997e-33"
+    },
+    {
+      "N": 26,
+      "bare_C1_endpoint": "1.7725569535061066913466345563325e-36",
+      "bounds_computed_as_exact_rationals": true,
+      "scene_C1_endpoint": "4.5996396237057757173154538232706e-65",
+      "scene_C1_gate_max": "1.1959063021635016865020179940503e-63",
+      "scene_C2_cross_only": "1.0312087603305369857348706630618e-128"
+    },
+    {
+      "N": 38,
+      "bare_C1_endpoint": "2.2930770681808890090037411717693e-59",
+      "bounds_computed_as_exact_rationals": true,
+      "scene_C1_endpoint": "1.8959637850965297757444275417781e-100",
+      "scene_C1_gate_max": "7.2046623833668131478288246587567e-99",
+      "scene_C2_cross_only": "1.7521006706807512727111550644573e-199"
+    },
+    {
+      "N": 39,
+      "bare_C1_endpoint": "2.3518739160829630861576832530967e-61",
+      "bounds_computed_as_exact_rationals": true,
+      "scene_C1_endpoint": "1.7677984010224053853094895494434e-103",
+      "scene_C1_gate_max": "6.8944137639873810027070092428294e-102",
+      "scene_C2_cross_only": "1.5232263860168125778157302465927e-205"
+    },
+    {
+      "N": 128,
+      "bare_C1_endpoint": "4.7662656795948815377938098884338e-266",
+      "bounds_computed_as_exact_rationals": true,
+      "scene_C1_endpoint": "7.4173362809423272709332873753346e-401",
+      "scene_C1_gate_max": "9.4941904396061789067946078404283e-399",
+      "scene_C2_cross_only": "2.6816056929120735691876578531539e-800"
+    }
+  ],
+  "status": "PASS_FULL_CLOCK_WINDING_SOURCE",
+  "structural_phase_controls": [
+    {
+      "C1_bound": "0.17298278717477938640237664510955",
+      "C2_unit_phase_bound": "0.20065130995676516796339337897318",
+      "N": 3,
+      "first_source": "-0.0097893697656673970923134361585661",
+      "heat": "2.4566113104202709351055234389732",
+      "relative_jet_error": "8.9793342549258141378618397526151e-137",
+      "second_source": "-0.019336815317791537001678380406137"
+    },
+    {
+      "C1_bound": "0.00000025799950448176563258333095665402",
+      "C2_unit_phase_bound": "0.00000025799956611979272994747858726842",
+      "N": 8,
+      "first_source": "-0.000000011762110820231069201015258782215",
+      "heat": "3.7211444606815773232867131130676",
+      "relative_jet_error": "0.0",
+      "second_source": "-0.000000023155316016328383336366338083917"
+    },
+    {
+      "C1_bound": "1.7725569535061066913466345563325e-36",
+      "C2_unit_phase_bound": "1.7725569535061066913466345563325e-36",
+      "N": 26,
+      "first_source": "-3.4845255796327255839627269895318e-38",
+      "heat": "5.2640238582424174600452560033743",
+      "relative_jet_error": "9.6568022092839413605559671847391e-133",
+      "second_source": "-6.8597628289972767070349142265775e-38"
+    },
+    {
+      "C1_bound": "2.2930770681808890090037411717693e-59",
+      "C2_unit_phase_bound": "2.2930770681808890090037411717693e-59",
+      "N": 38,
+      "first_source": "-2.5871220427357051769887579537329e-61",
+      "heat": "5.7607822222430563439687501808078",
+      "relative_jet_error": "1.3006488971089199777069332082039e-109",
+      "second_source": "-5.093101834743443139001237955334e-61"
+    }
+  ]
+}

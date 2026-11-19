@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "generic_b": "1.0",
+  "generic_c": "0.5",
+  "generic_a": "6.0",
+  "normalized_L2_tail_delta_exponent": "0.5",
+  "generic_cap_examples": [
+    {
+      "N": 8,
+      "M": 318,
+      "a": "6.0",
+      "gain_constant": "1e-6",
+      "caps_L1_L2_L3": [
+        114,
+        22,
+        256
+      ],
+      "log10_epsilon_upper": "-23.43475874932601",
+      "log10_target": "-23.28533257349885",
+      "max_X_cycles": 27984,
+      "max_CZ_attempts": 13992,
+      "max_CCZ_attempts": 81408
+    },
+    {
+      "N": 20,
+      "M": 702,
+      "a": "6.0",
+      "gain_constant": "1e-6",
+      "caps_L1_L2_L3": [
+        186,
+        34,
+        406
+      ],
+      "log10_epsilon_upper": "-38.41856268741988",
+      "log10_target": "-38.33244267149732",
+      "max_X_cycles": 95472,
+      "max_CZ_attempts": 47736,
+      "max_CCZ_attempts": 285012
+    },
+    {
+      "N": 40,
+      "M": 1342,
+      "a": "6.0",
+      "gain_constant": "1e-6",
+      "caps_L1_L2_L3": [
+        306,
+        55,
+        653
+      ],
+      "log10_epsilon_upper": "-63.60655636689588",
+      "log10_target": "-63.41095950149477",
+      "max_X_cycles": 295240,
+      "max_CZ_attempts": 147620,
+      "max_CCZ_attempts": 876326
+    },
+    {
+      "N": 80,
+      "M": 2622,
+      "a": "6.0",
+      "gain_constant": "1e-6",
+      "caps_L1_L2_L3": [
+        546,
+        95,
+        1145
+      ],
+      "log10_epsilon_upper": "-113.7742529566618",
+      "log10_target": "-113.5679931614897",
+      "max_X_cycles": 996360,
+      "max_CZ_attempts": 498180,
+      "max_CCZ_attempts": 3002190
+    }
+  ],
+  "conditional_tiny_gain_illustration": {
+    "N": 8,
+    "M": 318,
+    "a": "4.0",
+    "gain_constant": "9e-1716",
+    "caps_L1_L2_L3": [
+      16452,
+      2745,
+      33521
+    ],
+    "log10_epsilon_upper": "-3437.854124596724",
+    "log10_target": "-3437.615070030121",
+    "max_X_cycles": 3491640,
+    "max_CZ_attempts": 1745820,
+    "max_CCZ_attempts": 10659678
+  },
+  "illustration_gain_is_physical_full_apparatus_lower_bound": false,
+  "full_gain_lift_and_clock_established": false,
+  "GR_closed": false
+}

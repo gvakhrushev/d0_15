@@ -1,0 +1,167 @@
+{
+  "files": [
+    {
+      "bytes": 19067,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/CONCURRENT_PRESERVATION.json",
+      "sha256": "e09e5c5390026a1740422251d59db5c2d8dc162b286ef9a57de99bf0b4e1fd10"
+    },
+    {
+      "bytes": 10129,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/INTEGRATION.md",
+      "sha256": "bdbe66732c04dace57a58812bbba365eb9f672887d3a45ba479465fb88bfb1d2"
+    },
+    {
+      "bytes": 3114,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/INTEGRATION_CHECKS.json",
+      "sha256": "243d676baf1455e3ec4e6df9c206159c82d7291273ea2a2217a173881f0293f6"
+    },
+    {
+      "bytes": 5352,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/README.md",
+      "sha256": "dcaaca9e17f10388c5c8bb69a725e33ed13b0efff95d9a3b317682c4c99281a7"
+    },
+    {
+      "bytes": 363,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/REVIEW_FORMATTING.json",
+      "sha256": "c86f6d96684d0aab6a37c30f8897e7519cb3fbef11173e2666f49cf6d680d4b5"
+    },
+    {
+      "bytes": 25948,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/book_binding/BOOK_BINDING_ON_FIXED_PROCESSOR.md",
+      "sha256": "37edd1a914d181f819cb0da5b75c43a52cc1161257a6040ac211c90cfad33ff3"
+    },
+    {
+      "bytes": 3178,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/book_binding/INDEPENDENT_RESULT.json",
+      "sha256": "4ab11822084ee7746fed5411b246069debc0580b42f60a19fe8ddee6f8fdb043"
+    },
+    {
+      "bytes": 5263,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/book_binding/INDEPENDENT_REVIEW.md",
+      "sha256": "35b6e55cc1ea2424a29a24d256bfc57aaa4d8c21d7a94eeb84c38a8aab1ddfb1"
+    },
+    {
+      "bytes": 3178,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/book_binding/RESULT.json",
+      "sha256": "4ab11822084ee7746fed5411b246069debc0580b42f60a19fe8ddee6f8fdb043"
+    },
+    {
+      "bytes": 4839,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/book_binding/SOURCE_PINS.json",
+      "sha256": "438401f4a496a0e541bea8c7099506b36003e586e7c91c7ef97c52c71230927d"
+    },
+    {
+      "bytes": 11798,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/book_binding/check_book_binding_fixed_processor.py",
+      "sha256": "456418a4567c0acae119d5769f70b227bfdbcaf45f50a49234616c7045c6b033"
+    },
+    {
+      "bytes": 2225,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/CHECK_RESULT.json",
+      "sha256": "cc3c7e422eb1167d432ff3fb7cdbb17898194234846ba887c8d183a1e22b1e36"
+    },
+    {
+      "bytes": 31035,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/FIXED_PROCESSOR_PROGRAM_SOURCE.md",
+      "sha256": "4a879a3bb986aca43f06cec760f882cec4e7c6446efd46d5add8a2f199e9381b"
+    },
+    {
+      "bytes": 2225,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/INDEPENDENT_RESULT.json",
+      "sha256": "cc3c7e422eb1167d432ff3fb7cdbb17898194234846ba887c8d183a1e22b1e36"
+    },
+    {
+      "bytes": 14670,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/INDEPENDENT_REVIEW.md",
+      "sha256": "d9e806ad9d1b6f65e48c701d19fef944a1390f9239615f0e936ef0bb2c257e44"
+    },
+    {
+      "bytes": 2611,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/SOURCE_PINS.json",
+      "sha256": "f84d1303ad056dbc9950e2fbc545bf427e8999a90ff049aeeabf680156e39594"
+    },
+    {
+      "bytes": 14738,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/native_processor/check_fixed_processor_program_source.py",
+      "sha256": "76fa1e6cebc6e98f28b6718d86b4adba0fe0e6fa101024343ec103ac10bea171"
+    },
+    {
+      "bytes": 1734,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/record_source/INDEPENDENT_RESULT.json",
+      "sha256": "9223e264716ee13936f210973ba151b3d295aaa7b331980022a66d1cce5463f8"
+    },
+    {
+      "bytes": 6708,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/record_source/INDEPENDENT_REVIEW.md",
+      "sha256": "7db0bb944c65befe48fa129db4e3400b674c467b516f61db9744a5c5c25e0bd4"
+    },
+    {
+      "bytes": 1734,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/record_source/RESULT.json",
+      "sha256": "9223e264716ee13936f210973ba151b3d295aaa7b331980022a66d1cce5463f8"
+    },
+    {
+      "bytes": 1340,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/record_source/SOURCE_PINS.json",
+      "sha256": "9b04de9385df8f6711d22b316f880c3f33473c96729270b4e5b2f506c2573910"
+    },
+    {
+      "bytes": 13638,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/record_source/UNIFORM_RECORD_SOURCE_UNIVERSALITY.md",
+      "sha256": "a8c17dc2975078071b8644a42a270ef695aaab4671d73f0901b0cfcb0060f5b1"
+    },
+    {
+      "bytes": 6672,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/record_source/check_uniform_record_source.py",
+      "sha256": "53b1fdb8ad989eeb9425401b44e6e10af2424949be8f983ed140486f71ea4a13"
+    },
+    {
+      "bytes": 2786,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/transitive_preparation/CHECK_RESULT.json",
+      "sha256": "57cfa237df6024a612f91cee755f199f2da86f8a14a1c5d11a8a279fa7d86fcf"
+    },
+    {
+      "bytes": 2786,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/transitive_preparation/INDEPENDENT_RESULT.json",
+      "sha256": "57cfa237df6024a612f91cee755f199f2da86f8a14a1c5d11a8a279fa7d86fcf"
+    },
+    {
+      "bytes": 8316,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/transitive_preparation/INDEPENDENT_REVIEW.md",
+      "sha256": "0161214be5a89946b04ad78b068dcebe4168d6d05f42e1bfde57c9c4e8007e01"
+    },
+    {
+      "bytes": 2865,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/transitive_preparation/SOURCE_PINS.json",
+      "sha256": "4bf0d2415930563a585a058d3cd11d15a885bafa083f2759cb9e20eb5264ff15"
+    },
+    {
+      "bytes": 25972,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/transitive_preparation/TRANSITIVE_RESOURCE_PREPARATION.md",
+      "sha256": "8348922c3a093b06b91ad52249177238e8abab89057bdaf002deac0fd1ced1d7"
+    },
+    {
+      "bytes": 13931,
+      "path": "02_REGISTRY/research/sources/d0_common_execution_closure_2026-10-21/transitive_preparation/check_transitive_resource_preparation.py",
+      "sha256": "cebff48a5672696565812ba3c2801b847bee38626e2b6233d372a74dc02020be"
+    },
+    {
+      "bytes": 38233,
+      "path": "02_REGISTRY/research/A4D_FIXED_PROCESSOR_JOINT_RESOURCE_SOURCE_2026_10_21.md",
+      "sha256": "5c2b75febea205cc577ecd76e9db0b0ba4660991e6b605d55a55225267266b58"
+    },
+    {
+      "bytes": 265018,
+      "path": "00_WORK/tasks/EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.md",
+      "sha256": "b4a32defe21f6ccf0b7fa4508ee463c8d97b0af83b92212c252e78f9d28ed560"
+    },
+    {
+      "bytes": 31018,
+      "path": "02_REGISTRY/research/D0_GR_PRIMARY_POSITIVE_CASE.md",
+      "sha256": "9ee6456abe166bb1de0f51a846c8d3792ab1c892e0518e419401eb71f02cd459"
+    }
+  ],
+  "integrated_parent": "977ea92437b720162186a3dc220b2bec374e0d22",
+  "note": "All packet files except this self-referential manifest, plus main synthesis and two current route files. Frozen proof/checker/result bytes unchanged; review-only EOF normalization is recorded.",
+  "scientific_input": "b1870ff3ecedd02e09388bc8b6fd8df4da54b990"
+}

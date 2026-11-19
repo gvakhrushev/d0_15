@@ -1,7 +1,7 @@
 # D0→GR: ONE GOLDEN SCALE + SMOOTH BLOW-UP FORCES EINSTEIN; CONDENSED DESCENT IDENTIFIES THE TRUE NATIVE GATE
 
 **20 October 2026. Existing Draft #334, EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE.**
-Class: exact NEW mathematical rigidity theorem, exact native HJR scale-source countercontrol, and conditional condensed/sheaf application. **NOT full physical D0→GR, no new independent task, native action or claim/BOOK/positive_gr promotion.**
+Class: exact NEW mathematical rigidity theorem, exact shrinking-native-leg HJR source control, and conditional condensed/sheaf application. **NOT full physical D0→GR, no new independent task, native action or claim/BOOK/positive_gr promotion.**
 Original carrier/physical target: [main primary exact 16+24+2 nonvacuum Einstein–CAR family](D0_GR_PRIMARY_POSITIVE_CASE.md).
 Inputs: main [VSI/Lovelock two-witness theorem](A4D_VSI_LOVELOVK_TWO_WITNESS_UNIVERSAL_GR_SYNTHESIS_2026_10_20.md), [original conditional HJR/null shear source](A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md), existing [condensed archive price/naturality boundary](A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md), [complete future-profile response descent](A4D_NATIVE_HISTORY_RESPONSE_DESCENT.md).
 
@@ -192,9 +192,9 @@ This is a concrete quantitative **sufficient** source bridge
 for any already admitted refinement, not a chosen microscopic
 rescaling/temperature/clock or a new task.
 
-## 2. Three hard negative controls — exactly why each theorem hypothesis matters
+## 2. Three source and hypothesis controls
 
-**(A) Bare whole-HJR fails the actual Golden physical scaling test.** The [same ORIGINAL flat null-Brinkmann shear](A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md) has all Palatini Euler rows zero but a full-CAR16/whole-thermal/feedback/true-Z HJR directional source. Retain its physical coframe \(v=h\sqrt\rho\,e_H\), with \(\rho>0\), H=2t. Its complete per-site null-shear FIRST derivative has the continuum limit
+**(A) Raw shrinking-native-leg source contrast; corrected physical scope, 23 October.** The [corrected original null-shear/cocycle owner](A4D_BRINKMANN_REFERENCE_COCYCLE_GR_BREAKTHROUGH_SYNTHESIS_2026_10_20.md) retains the full-CAR16/whole-thermal/feedback/true-Z source on the explicit native creation-leg family \(v=h\sqrt\rho\,e_H\), with \(\rho>0\), H=2t. These are inverse-frame coefficients, not the primary Palatini edge coframe \(w_h=hE_{\rm phys}\). The actual normalization is retained in [paidwriter §12.1](A4D_PAID_MOMENT_FIELD_WRITER_2026_10_21.md#121-one-field-to-operator-map-with-the-actual-density-and-matter). Scaling these native legs by \(\sqrt\rho\) scales their inverse-Gram covariant metric by \(\rho^{-1}\); at fixed rho that metric also carries \(h^{-2}\). Thus the former identification of this comparison with the SAME fixed physical Brinkmann refinement and its physical Golden-law test is withdrawn. The following complete per-site shear source and its arithmetic remain valid on the stated shrinking-leg chart:
 \[
 \mathcal P(\rho)
 =4096\zeta\beta\,\rho
@@ -209,12 +209,12 @@ with \(\zeta=2^{-20}\), \(\beta=2\varphi^{-2}\),
 \(d\bar\theta=\prod_jd\theta_j/(2\pi)\).
 The original rank128 Riesz first shear contribution is ZERO at every \(\rho\), but its full preparation remains in the price. This formula includes 128×16 positive feedback and the actual global thermal normalizer (the latter is O(1)/L⁴ and therefore vanishes ONLY in this displayed limit). No thermal/CAR complement was removed.
 
-An Einstein–Hilbert or metric weight-zero Euler response in FOUR dimensions has the necessary first-variation action scaling
+Separately, an Einstein–Hilbert or metric weight-zero Euler response in FOUR dimensions has the necessary first-variation action scaling, with physical metric scale \(\lambda>0\),
 \[
-D_t S[\rho g_H]\big|_0=\rho D_t S[g_H]\big|_0
+D_t S[\lambda g_H]\big|_0=\lambda D_t S[g_H]\big|_0
 \tag{G13}
 \]
-for the corresponding local geometric action, modulo truly field-independent and boundary terms. But the EXACT HJR limit obeys
+for the corresponding local geometric action, modulo truly field-independent and boundary terms. This physical lambda is not the raw rho in (G12). The EXACT shrinking-leg HJR limit obeys
 \[
 \boxed{\frac{d}{d\rho}\left(\frac{\mathcal P(\rho)}\rho\right)
 =-4096\zeta\beta^2(1-\zeta)
@@ -232,7 +232,7 @@ For the ORIGINAL \(\varphi^2=(3+\sqrt5)/2\), this gives
 \end{aligned}
 \tag{G15}
 \]
-The inequality follows from the positive integral (G14), not from those decimals. This is a strict GOLDEN scale-defect of the BARE conditional full-HJR candidate on the SAME flat Einstein member, not a physical no-go for a genuinely selected and compensated complete Cost−Info law. It is also distinct from arbitrary coframe dilation at fixed mesh versus a true **metric weight-zero** transformation of a selected physical tensor. The exact physical clock/reference transport must be supplied before claiming (G2).
+The inequality follows from the positive integral (G14), not from those decimals. It is a strict raw-rho contrast of the BARE conditional full-HJR on its shrinking-native-leg family. Comparing \(\mathcal P(\varphi^2)\) with \(\varphi^2\mathcal P(1)\) does not test (G13): the corresponding covariant metric scales by \(\varphi^{-2}\), and a fixed-metric refinement requires a different h-dependent leg map. No physical Golden-law counterexample or fixed-primary no-go follows from (G14)–(G15). Such an application requires the actual inverse-coframe, tangent, clock/reference and complete-price transport before claiming or rejecting (G2). Theorem G is unchanged.
 
 **(B) A higher-curvature tensor is killed by the Golden scale.** In four dimensions, under \(g\mapsto\rho g\),
 \[
@@ -340,11 +340,12 @@ inverse-limit points with differential-geometric tangent vectors.
 The exact Q-complement counterexample in the owned condensed
 packet explains WHY (G20), native Golden weight-zero covariance,
 smoothness, and Ward cannot be silently inferred from matching
-archive levels. The strict bare-HJR scale defect (G14)
-is a concrete physical-facing failure of one candidate's
-corresponding metric scale property. An actually selected new
-history law must have its compensating source derived from its
-REAL paid record/work/clock, not appended as a chosen counterterm.
+archive levels. The strict raw-rho HJR contrast (G14) stays scoped
+to its shrinking-native-leg family; its former physical metric-scale
+application is withdrawn as explained in §2(A). A selected history law
+must derive its own complete source from its REAL paid record/work/clock.
+Neither a compensating source nor a physical Golden-weight defect is
+inferred from this raw comparison.
 
 ## 4. One genuine proof completion replaces 1000 coefficient checks
 

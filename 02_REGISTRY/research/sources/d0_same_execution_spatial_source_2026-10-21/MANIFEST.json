@@ -1,0 +1,136 @@
+{
+  "status": "NEW_SAME_EXECUTION_APPLICATION",
+  "repository_input_head": "c49ebdb12244943d1ec45ef6d148a0432481141e",
+  "exclusions": [
+    "this root MANIFEST.json",
+    "REPLAY_RESULT.json",
+    "VALIDATION.json"
+  ],
+  "artifacts": [
+    {
+      "path": "02_REGISTRY/research/A4D_SAME_EXECUTION_SPATIAL_WEIGHTS_AND_COMPLETE_SOURCE_2026_10_21.md",
+      "bytes": 18886,
+      "sha256": "b13ef78db2ef108ce0435bc3b678822b4518d6e0eaa4d8610f4672cd5798eafd"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/README.md",
+      "bytes": 4626,
+      "sha256": "7edf190ef8d5cc8b63d6c39bd9680b2c3410787766d947109076e9b5c4983d4a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/SOURCE_PINS.json",
+      "bytes": 1781,
+      "sha256": "4d111e68d7178364b46e1395d32d900888f683fe0c9babfaa4cb6b263c81adc0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/check_n1_entropy_adjoint.py",
+      "bytes": 8420,
+      "sha256": "f20a91c1a7d6f486eb49284e16b4350af5222a89d64b9aff06de28c2c3217eb0"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/execution/N1_CONSTRAINED_CAUSAL_COMPLETION.md",
+      "bytes": 7999,
+      "sha256": "5c1b0c7eaaa7d4542025aab77b1a7648dcbccf78a8bf79cfa890ea3175709ae9"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/execution/SAME_EXECUTION_FULL_SOURCE.md",
+      "bytes": 12311,
+      "sha256": "287e123f75ea6f5754d2ccd63b48cb567e90901781b8a63ca130eb8cf41513f5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/execution/SOURCE_PINS.json",
+      "bytes": 4918,
+      "sha256": "52c50048a195cc3a62ee5e04571712d59074ac042bc77bf173ab63a06fdea67b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/CHECK_RESULTS.json",
+      "bytes": 1476,
+      "sha256": "dd2ee21e529f8c107be4716fe23f982121898a5bbd4902c187ae0eba019ec992"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SAME_EXECUTION_LOCAL_HOMOGENEITY_AND_WEIGHT_SOURCE.md",
+      "bytes": 15606,
+      "sha256": "62aa5b45923e6e9d51e2075507cd114d42c5f7d1f5107a99e1b08be053e3c034"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/SOURCE_PINS.json",
+      "bytes": 2347,
+      "sha256": "ccbbc5bdf7a66e156aa0545faf94cf085c2b459a7c47feae0f55c3b3fcedf149"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/geometry/check_spatial_source.py",
+      "bytes": 7716,
+      "sha256": "75feeeee89aa0db6069205f8116d27e89f08b1d3a595897071ec62054200235a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/replay.py",
+      "bytes": 4012,
+      "sha256": "f0ab644c2f9a18a9b109fda7f66033f65756c5828f01546f6c61afb100b3180c"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/reviews/INDEPENDENT_SPATIAL_CHECK.json",
+      "bytes": 1476,
+      "sha256": "d23d39a274fa3a324268ebdd5b5f520e313d73cb0222bd083d5ce9814d38d076"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/reviews/INTEGRATED_ADJOINT_RUN.json",
+      "bytes": 1327,
+      "sha256": "7d38c3dd492e8d2ca9339e8dfb4bcc532b48b26b719931d885da1278aa3eda11"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/reviews/REVIEW_FULL_SOURCE_PREPARATION.md",
+      "bytes": 1429,
+      "sha256": "57d1953690064599a330547af4f52c97ec1f19e701114d9e9be6039e7b4a3576"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/reviews/REVIEW_INTEGRATED_SOURCE.md",
+      "bytes": 4868,
+      "sha256": "280bce03f410319df99261d3b80bb47df97c1c29a8b1c541996f15fe90a6a7d5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/reviews/REVIEW_LOCAL_HOMOGENEITY.md",
+      "bytes": 3333,
+      "sha256": "ba91c2258fce3b600ff97616e36a98bf03736eb5fedef7bdc7ad6cbab33478ca"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/reviews/REVIEW_N1_CAUSAL_COMPLETION.md",
+      "bytes": 5683,
+      "sha256": "2685bfdd5dd592a0c53a381cf5fc4f7634c2fa5036170ef0253112765a8a3f44"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/reviews/REVIEW_ONE_STAGE_SPATIAL_WEIGHTS.md",
+      "bytes": 2982,
+      "sha256": "de8e9574377498e35929377437d7c0c3505b85b9fce99afdf30b28b432d6a4c3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/MANIFEST.json",
+      "bytes": 908,
+      "sha256": "ba695c4145a7e548ce420629a82d760b1deb5f663fb51a6860744b1c80d0c8b5"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/ONE_STAGE_COMPLETE_SPATIAL_WEIGHT_THEOREM.md",
+      "bytes": 18782,
+      "sha256": "960f2d1edc4f151607f9c4ecc76e1522d5dee08922319a3700c0cc3fc96458d1"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/README.md",
+      "bytes": 3213,
+      "sha256": "ad7c85286801c66f8f761d4c67809f1329ffbd23ef8dd4aa8a92c7186d55e523"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/SOURCE_PINS.json",
+      "bytes": 4313,
+      "sha256": "345ac5af0a2001ce4e1864245e4f27773b59512de962683a0baa423371f1f062"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/check_same_execution_spatial_weights.py",
+      "bytes": 5338,
+      "sha256": "8ba3f1c4ed3cfb274d9c94ed950994a3a1e357281d26769cf4dd3e8b283cc0f3"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_same_execution_spatial_source_2026-10-21/weights/verification_results.json",
+      "bytes": 2891,
+      "sha256": "ca64fc6860027167dd91530b66e95831ee320a2857cb6ca72682db3ea449aaf4"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "three_outcomes": [
+    0.4721359549995795,
+    0.4721359549995795,
+    0.055728090000841
+  ],
+  "H6_nats": 5.217402664620663,
+  "q": 0.013278823734363173,
+  "infinite": {
+    "C_slope": 57.51738454501557,
+    "I_nats_slope": 9.797457235233084,
+    "I_base_phi_slope": 20.359967741897368
+  },
+  "cap2": {
+    "C_slope": 56.02655764746873,
+    "I_nats_slope": 9.653403484340235,
+    "I_base_phi_slope": 20.06061152621209
+  },
+  "scope": "Coherent accessible j and fresh blank E before compulsory readout; declared uniform gate count."
+}

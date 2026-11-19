@@ -1,0 +1,161 @@
+{
+  "local_sources": {
+    "quartet_eigen_error": 2.6645352591003756e-16,
+    "source_probes": 129,
+    "full_leg_link_observer_and_quartet_offdiagonal_error": 4.440892098500626e-16,
+    "plane_eigenvalue": 5.76,
+    "observer_boost_derivative": 11.52,
+    "low_grades_link_source": "zero for all24 directions",
+    "high_grades_link_source": "nonzero generally; all4 roles included"
+  },
+  "quartet_fixed_RIGHT": {
+    "Lu": 32,
+    "grades": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "rank": 128,
+    "full_carrier_dimension": 4096,
+    "basis_orthogonality_error": 1.1102230246251565e-16,
+    "D_reducing_subspace_error": 1.6653345369377348e-16,
+    "Delta_reducing_subspace_error": 8.881784197001252e-16,
+    "RIGHT_Gram": "I_rank/rank",
+    "random_LEFT_tangent_Gram_error": 5.082197683525802e-21,
+    "fixed_RIGHT_first_R_source": -1.0164395367051604e-20,
+    "strict_forward_C_LambdaU_operator_norm": 0.36504220690306866,
+    "unrestricted_sphere_residual_not_claimed_zero": 2.0364675298172563,
+    "R": 2.8799999999999986
+  },
+  "low_two_grade_fixed_RIGHT": {
+    "Lu": 64,
+    "grades": [
+      0,
+      1
+    ],
+    "rank": 128,
+    "full_carrier_dimension": 8192,
+    "basis_orthogonality_error": 1.1102230246251565e-16,
+    "D_reducing_subspace_error": 1.6653345369377348e-16,
+    "Delta_reducing_subspace_error": 8.881784197001252e-16,
+    "RIGHT_Gram": "I_rank/rank",
+    "random_LEFT_tangent_Gram_error": 2.541098841762901e-21,
+    "fixed_RIGHT_first_R_source": -5.929230630780102e-21,
+    "strict_forward_C_LambdaU_operator_norm": 0.36504220690306866,
+    "unrestricted_sphere_residual_not_claimed_zero": 2.036467529817256,
+    "R": 2.879999999999998
+  },
+  "quartet_real_low_modes": {
+    "Lu": 65,
+    "physical_u_length": 1,
+    "h": 0.015384615384615385,
+    "actual_transverse_diagnostic_sizes": [
+      2,
+      2,
+      2
+    ],
+    "quartet_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "cos_sin_modes": [
+      1,
+      16
+    ],
+    "rank": 128,
+    "RIGHT_Gram": "I128/128",
+    "basis_Gram_error": 2.157996004115148e-15,
+    "D_reducing_subspace_error": 2.19824158875781e-14,
+    "original_Delta_eigenbasis_error": 3.552713678800501e-13,
+    "R": 292.50359126395836,
+    "expected_R": 292.50359126395836,
+    "highest_eigenvalue": 742.1234717479213,
+    "uniform_continuum_energy_upper_bound": 909.5827416043952,
+    "strict_forward_C_LambdaU_operator_norm": 0.30335622624235026,
+    "uniform_observer_boost": 0.17,
+    "boosted_original_Delta_error": 5.009326287108706e-13,
+    "R_boosted_minus_exp2t_R": 5.684341886080802e-14,
+    "all_fixed_RIGHT_preparation_rows": "zero by [Delta,P_modes]=0",
+    "all_proper_link_R_rows": "generally nonzero",
+    "all4D_refinement_replayed": false
+  },
+  "low_two_real_modes_Lu65": {
+    "Lu": 65,
+    "physical_u_length": 1,
+    "h": 0.015384615384615385,
+    "actual_transverse_diagnostic_sizes": [
+      2,
+      2,
+      2
+    ],
+    "quartet_indices": [
+      0,
+      1
+    ],
+    "cos_sin_modes": [
+      1,
+      32
+    ],
+    "rank": 128,
+    "RIGHT_Gram": "I128/128",
+    "basis_Gram_error": 4.728856195512776e-15,
+    "D_reducing_subspace_error": 7.302491944471967e-14,
+    "original_Delta_eigenbasis_error": 1.3287149158713873e-12,
+    "R": 772.3828124999998,
+    "expected_R": 772.3828124999999,
+    "highest_eigenvalue": 1520.111908505984,
+    "uniform_continuum_energy_upper_bound": 3638.330966417581,
+    "strict_forward_C_LambdaU_operator_norm": 0.30335622624235026,
+    "uniform_observer_boost": 0.17,
+    "boosted_original_Delta_error": 1.8705037518884637e-12,
+    "R_boosted_minus_exp2t_R": 0.0,
+    "all_fixed_RIGHT_preparation_rows": "zero by [Delta,P_modes]=0",
+    "all_proper_link_R_rows": "zero",
+    "all4D_refinement_replayed": false
+  },
+  "low_two_real_modes_Lu129": {
+    "Lu": 129,
+    "physical_u_length": 1,
+    "h": 0.007751937984496124,
+    "actual_transverse_diagnostic_sizes": [
+      2,
+      2,
+      2
+    ],
+    "quartet_indices": [
+      0,
+      1
+    ],
+    "cos_sin_modes": [
+      1,
+      32
+    ],
+    "rank": 128,
+    "RIGHT_Gram": "I128/128",
+    "basis_Gram_error": 4.5900783174346316e-15,
+    "D_reducing_subspace_error": 7.860379014346108e-14,
+    "original_Delta_eigenbasis_error": 3.083755473198835e-12,
+    "R": 1120.3193879588935,
+    "expected_R": 1120.3193879588932,
+    "highest_eigenvalue": 2958.9070106303916,
+    "uniform_continuum_energy_upper_bound": 3638.330966417581,
+    "strict_forward_C_LambdaU_operator_norm": 0.30335622624235026,
+    "uniform_observer_boost": 0.17,
+    "boosted_original_Delta_error": 4.320099833421409e-12,
+    "R_boosted_minus_exp2t_R": 0.0,
+    "all_fixed_RIGHT_preparation_rows": "zero by [Delta,P_modes]=0",
+    "all_proper_link_R_rows": "zero",
+    "all4D_refinement_replayed": false
+  },
+  "scope": {
+    "original_D_not_survival_reconstruction": true,
+    "H_J_sources_replayed": false,
+    "clock_grade14_marginal_preserved": false,
+    "native_preparation_admission_proved": false,
+    "GR_closed": false
+  },
+  "status": "PASS"
+}

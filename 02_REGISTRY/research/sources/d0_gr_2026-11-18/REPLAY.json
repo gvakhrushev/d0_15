@@ -1,0 +1,137 @@
+{
+  "scope": "Independent extraction, byte comparison, reconstruction and ZIP integrity. Scientific replay is described in the individual releases.",
+  "historical_unpacked_entries_checked": 299,
+  "public_unpacked_entries_checked": 299,
+  "public_content_differences": 2,
+  "historical_content_differences": 0,
+  "historical_archive_streams_identical": 7,
+  "public_archive_streams_identical_to_historical": 6,
+  "all_portable_inventories_intact": true,
+  "canonical_files_unique_by_sha256": 235,
+  "pdfs_scanned_for_personal_paths": 8,
+  "archive_payloads_stored": 0,
+  "stages": [
+    {
+      "stage": "00-projective",
+      "reconstructions": [
+        {
+          "mode": "public",
+          "names": 13,
+          "historical_byte_differences": [],
+          "zip_sha256": "7390dc06b71682aff215e799f77e324e93758818a2f3f7e7e453da0176f4060b"
+        },
+        {
+          "mode": "historical",
+          "names": 13,
+          "historical_byte_differences": [],
+          "zip_sha256": "7390dc06b71682aff215e799f77e324e93758818a2f3f7e7e453da0176f4060b"
+        }
+      ]
+    },
+    {
+      "stage": "01-synthesis",
+      "reconstructions": [
+        {
+          "mode": "public",
+          "names": 10,
+          "historical_byte_differences": [],
+          "zip_sha256": "718275a9043ccd30feb69d3d8641a994f110512a6db0299c192b7a8fd6337355"
+        },
+        {
+          "mode": "historical",
+          "names": 10,
+          "historical_byte_differences": [],
+          "zip_sha256": "718275a9043ccd30feb69d3d8641a994f110512a6db0299c192b7a8fd6337355"
+        }
+      ]
+    },
+    {
+      "stage": "02-physical-transfer",
+      "reconstructions": [
+        {
+          "mode": "public",
+          "names": 46,
+          "historical_byte_differences": [],
+          "zip_sha256": "6f1b4ac9bd1b4a750122cf0f2d88b2fcaa807209b0f41c3975deed5eedbbb80a"
+        },
+        {
+          "mode": "historical",
+          "names": 46,
+          "historical_byte_differences": [],
+          "zip_sha256": "6f1b4ac9bd1b4a750122cf0f2d88b2fcaa807209b0f41c3975deed5eedbbb80a"
+        }
+      ]
+    },
+    {
+      "stage": "03-full-source",
+      "reconstructions": [
+        {
+          "mode": "public",
+          "names": 50,
+          "historical_byte_differences": [],
+          "zip_sha256": "20281958d18cc7ba52f8d2457a22325f5a96b0b62667d73779fc5314d6ff9daa"
+        },
+        {
+          "mode": "historical",
+          "names": 50,
+          "historical_byte_differences": [],
+          "zip_sha256": "20281958d18cc7ba52f8d2457a22325f5a96b0b62667d73779fc5314d6ff9daa"
+        }
+      ]
+    },
+    {
+      "stage": "04-absolute-calibration",
+      "reconstructions": [
+        {
+          "mode": "public",
+          "names": 75,
+          "historical_byte_differences": [
+            "SHA256SUMS.json",
+            "diagnostics/TESTS.json"
+          ],
+          "zip_sha256": "3b3b6e9cbaedebe5e9f595b45a20c0c4eebe61fa82bfc093d709bd141b2fab0b"
+        },
+        {
+          "mode": "historical",
+          "names": 75,
+          "historical_byte_differences": [],
+          "zip_sha256": "ce25eaba0e0267f3da9dad7bcf48f1e6d103fb4c2e2f7916e093ca59d264351b"
+        }
+      ]
+    },
+    {
+      "stage": "05-clock-price",
+      "reconstructions": [
+        {
+          "mode": "public",
+          "names": 61,
+          "historical_byte_differences": [],
+          "zip_sha256": "dbe25f804cd1d4fce3e1abc55dab8d7c3bcab7fb4eb36833552dbb85b5147311"
+        },
+        {
+          "mode": "historical",
+          "names": 61,
+          "historical_byte_differences": [],
+          "zip_sha256": "dbe25f804cd1d4fce3e1abc55dab8d7c3bcab7fb4eb36833552dbb85b5147311"
+        }
+      ]
+    },
+    {
+      "stage": "06-same-history",
+      "reconstructions": [
+        {
+          "mode": "public",
+          "names": 44,
+          "historical_byte_differences": [],
+          "zip_sha256": "5b5db08ae9abf2287e1ad20d26f5962120ff91c1a8c3ea249e0561c8fa21ae06"
+        },
+        {
+          "mode": "historical",
+          "names": 44,
+          "historical_byte_differences": [],
+          "zip_sha256": "5b5db08ae9abf2287e1ad20d26f5962120ff91c1a8c3ea249e0561c8fa21ae06"
+        }
+      ]
+    }
+  ]
+}

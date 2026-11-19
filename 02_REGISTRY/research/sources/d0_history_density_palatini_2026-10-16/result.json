@@ -1,0 +1,59 @@
+{
+  "check_names_sha256": "91fe98ab2a6dcf090a1fcfeae8ac6e2624687095cfdbb952070466c8cd351053",
+  "complete_native_GR_closed": false,
+  "curved_control": {
+    "H": "(s^2/(4c)+a)x^2+(s^2/(4c)-a)y^2",
+    "conditional_equation": "2c G=T",
+    "density_reference": "1+epsilon(2x-1)",
+    "metric": "2 du dv+H du^2-dx^2-dy^2",
+    "physical_native_solution": false,
+    "scalar": "s u"
+  },
+  "cut_rows": [
+    {
+      "cost_cut": 1,
+      "leaf_count": 2
+    },
+    {
+      "cost_cut": 2,
+      "leaf_count": 3
+    },
+    {
+      "cost_cut": 3,
+      "leaf_count": 5
+    },
+    {
+      "cost_cut": 4,
+      "leaf_count": 8
+    },
+    {
+      "cost_cut": 5,
+      "leaf_count": 13
+    },
+    {
+      "cost_cut": 6,
+      "leaf_count": 21
+    },
+    {
+      "cost_cut": 7,
+      "leaf_count": 34
+    },
+    {
+      "cost_cut": 8,
+      "leaf_count": 55
+    },
+    {
+      "cost_cut": 9,
+      "leaf_count": 89
+    }
+  ],
+  "exact_checks": 925,
+  "finite_identity": "sum chi_x P_x(e,U)=sum P_x(sqrt(chi_x)e,U)",
+  "golden_clock_rule": "child-dependent four-role interval code; chart construction, not unique admitted clock law",
+  "measure_equation": "at complete geometric stationarity w=r for the declared KL-augmented homogeneous sector",
+  "native_action_selected": false,
+  "native_measure_admission": false,
+  "old_positive_curvature_replaced": false,
+  "schema": "d0-history-density-palatini/1",
+  "scope_note": "most conditions are individual golden-cut child and moment identities; no independent scientific review"
+}

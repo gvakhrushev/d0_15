@@ -1,0 +1,38 @@
+{
+  "schema": "d0.carry-compensated-local-geometry/1",
+  "status": "PASS",
+  "L": 16,
+  "site_slice_points": 256,
+  "all_carries_and_wrap_checked": true,
+  "F_H_exact": "1098448633856000/10973866257225729",
+  "phase_run_lengths": [
+    12624688,
+    -4421679
+  ],
+  "phase_error_intervals": [
+    "[-0.000000000898127069076264501986303178002027312426041464532385179606515782073931323562, -0.000000000898127069076264501986303178002027312426041464532385165021323724586880447443]",
+    "[0.0000000314202070815049229695584332824496483912653399053299629999665531597103803214, 0.0000000314202070815049229695584332824496483912653399053299630048282838455393972801]"
+  ],
+  "eta_upper": 3.2318334150581195e-08,
+  "xi_upper": 1.6247524445560572e-07,
+  "actual_max_relative_edge_error": 1.6247524393336827e-07,
+  "actual_max_relative_dy_error": 1.6247524393336814e-07,
+  "reference_derivative_interval": "[0.000000446792840416999853191848328746575062711182609425375275593280140987654083656, 0.000000450938589031422446857206622545084144979657574289083857908746496116988685391]",
+  "sample_w_min": 0.9999998465551474,
+  "sample_w_max": 1.000000162475244,
+  "sF_min": 7.5255263265932415,
+  "sF_max": 7.525527515325831,
+  "normalized_eight_point_identity_error": 4.0102137533037397e-97,
+  "identity_residual_is_100_digit_numerical_test": true,
+  "one_loader_factory_success": "0.9528118489810554215374470286898514499826940103824798904510354343129108434870508859598762184471659372",
+  "skeleton_G_calls_before_factories_and_routing": 272742591,
+  "skeleton_CX_calls_before_factories_and_routing": 272742023,
+  "long_run_lengths_counted_not_replayed": true,
+  "native_Toffoli": 79,
+  "native_CCZ": 3,
+  "site_dependent_coframe_compiled": false,
+  "full_geometry_loader_compiled": false,
+  "independent_source_rows_bound_physically": false,
+  "Book_cost_info_derived": false,
+  "GR_closed": false
+}

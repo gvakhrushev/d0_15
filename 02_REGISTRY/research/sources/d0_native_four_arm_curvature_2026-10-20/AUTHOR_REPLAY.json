@@ -1,0 +1,225 @@
+{
+  "status": "AUTHOR_LOCAL_ALGEBRAIC_AND_REAL_CHECKS_PASS_NOT_INDEPENDENT_ACCEPTANCE",
+  "project": "D0",
+  "date": "2026-10-20",
+  "pr": 334,
+  "carrier": "original full128 two-tick Jones+ L=4 Fourier z=(i,i,-1,-i), CAR16 32 Walsh words, 2 Golden ports, both Julia roots",
+  "proof_note": "02_REGISTRY/research/A4D_ORIGINAL_GOLDEN_FOUR_ARM_MIXED_COST_INFO_PALATINI_GATE_2026_10_20.md",
+  "source_blobs": {
+    "research_note": "9fc1a5f6580e7b86927a8a249bcb6d8cbd8cedd1",
+    "exact_native_reproducer": "77f51def0b7fdbc47a90e3c97ec929ffaf3272b2",
+    "golden_info_reproducer": "3c87d8e4b1186e54015713d533f4841517275945"
+  },
+  "reproduction": [
+    "OPENBLAS_NUM_THREADS=1 python3 02_REGISTRY/research/sources/d0_native_four_arm_curvature_2026-10-20/check_native_four_arm_exact.py",
+    "python3 02_REGISTRY/research/sources/d0_native_four_arm_curvature_2026-10-20/check_golden_four_arm_info.py"
+  ],
+  "cost_blind_metric_basis": {
+    "v1": [
+      -1,
+      1,
+      0,
+      0
+    ],
+    "v2": [
+      1,
+      0,
+      -1,
+      1
+    ],
+    "ell": [
+      0,
+      1,
+      -1,
+      1
+    ],
+    "Q": [
+      "v1v1^T",
+      "v1v2^T+v2v1^T",
+      "ell ell^T"
+    ],
+    "original_complex_fourier_k": [
+      "-1+i",
+      "-1+i",
+      "-2",
+      "-1-i"
+    ]
+  },
+  "native_link_axes": [
+    [
+      0,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      3,
+      0,
+      3
+    ]
+  ],
+  "genuine_event": [
+    0,
+    17
+  ],
+  "prime_results": [
+    {
+      "q": 101,
+      "a": 27,
+      "i": 10,
+      "M": [
+        [
+          12,
+          35,
+          0
+        ],
+        [
+          86,
+          40,
+          38
+        ],
+        [
+          19,
+          82,
+          16
+        ]
+      ],
+      "detM": 19,
+      "detOdds": 71,
+      "detFourLeafCode": 24,
+      "p6": 31,
+      "baselineFinalFlag": 62,
+      "detFourArmMix": 25
+    },
+    {
+      "q": 181,
+      "a": 23,
+      "i": 19,
+      "M": [
+        [
+          75,
+          98,
+          0
+        ],
+        [
+          29,
+          5,
+          11
+        ],
+        [
+          71,
+          110,
+          44
+        ]
+      ],
+      "detM": 139,
+      "detOdds": 103,
+      "detFourLeafCode": 145,
+      "p6": 117,
+      "baselineFinalFlag": 53,
+      "detFourArmMix": 180
+    },
+    {
+      "q": 1009,
+      "a": 226,
+      "i": 469,
+      "M": [
+        [
+          394,
+          372,
+          0
+        ],
+        [
+          363,
+          19,
+          44
+        ],
+        [
+          603,
+          406,
+          198
+        ]
+      ],
+      "detM": 604,
+      "detOdds": 550,
+      "detFourLeafCode": 55,
+      "p6": 42,
+      "baselineFinalFlag": 84,
+      "detFourArmMix": 2
+    },
+    {
+      "q": 4001,
+      "a": 842,
+      "i": 899,
+      "M": [
+        [
+          255,
+          3637,
+          0
+        ],
+        [
+          2764,
+          3526,
+          2927
+        ],
+        [
+          666,
+          3335,
+          1279
+        ]
+      ],
+      "detM": 1480,
+      "detOdds": 3818,
+      "detFourLeafCode": 2521,
+      "p6": 1711,
+      "baselineFinalFlag": 3422,
+      "detFourArmMix": 3377
+    }
+  ],
+  "real_checks": {
+    "mixed_probability_M": [
+      [
+        0.0000256057688,
+        -0.0000511553221,
+        0
+      ],
+      [
+        -0.0000928635558,
+        0.0000859611953,
+        0.000011303855
+      ],
+      [
+        -0.0000109256919,
+        0.0000109256921,
+        -0.0000450282395
+      ]
+    ],
+    "detM_approx": 1.179487425e-13,
+    "p6": 0.055728090000841245,
+    "baseline_Q": 0.11145618000168249,
+    "pointer_KL_at_baseline": 0.3850628829833379,
+    "kappa": -3.314009648478966,
+    "kappa_times_p6": -0.18468342795409207,
+    "Hessian_6D_inertia": [
+      3,
+      3,
+      0
+    ],
+    "Hessian_6D_eigenvalue_pairs_magnitude": [
+      0.0000255988044,
+      0.00000851661049,
+      0.00000340792971
+    ],
+    "actual_rare_event_q": 0.00010964575862622912,
+    "Q3_logscore": -1.3333333333333333,
+    "full_classically_measured_coin_and_flag_metric_source_Q3": -0.0003087485906324407
+  },
+  "positive_theorem": "Single physically conditional four-arm randomized reporter has flat diagonal Q=2 p^6 on either reference axis, mixed rank3, nonnegative native final binary code Cost-Info and indefinite six-field Hessian.",
+  "critical_scope": "This is only the final-flag reporter's source; all recorded Golden coin/Walsh work Info, 2-round query cost, actual full Book03 selection, oldRIGHT/reference, observer, matter and future task admission remain unproved. No Palatini tensor identification or GR closure.",
+  "independent_review": false,
+  "physical_GR_closed": false
+}

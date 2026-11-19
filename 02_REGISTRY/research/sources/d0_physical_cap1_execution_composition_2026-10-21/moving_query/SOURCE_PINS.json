@@ -1,0 +1,101 @@
+{
+  "input_commit": "92c00ccbf39e6e21e4383f7a7b573ab7c7c6f1be",
+  "worktree": "/Users/grigorijvahrusev/.codex/worktrees/same-execution-spatial-source/d0_15",
+  "files": [
+    {
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md",
+      "sha256": "d33ab69bfe3cfc184205e490e28aa6d933047deaccf74893ca622d63be672887",
+      "git_blob": "bb3af85fa08bdb5f70a3cd837283a842c6038706"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_LOCAL_LEFT_CODED_CAR_NULL_MATTER_EINSTEIN_2026_10_18.md",
+      "sha256": "828cba545e2c734741e7acf1509248c441de4451f9099cebee8d10c00230e35b",
+      "git_blob": "75c40d133a23973a36ba5b95d34b4eb36ca96663"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_PROGRAM_COMPILATION.md",
+      "sha256": "f09c24bb7b8ef5f512555257dcd9a335571c052b452482d2c31a3b8e586efdc5",
+      "git_blob": "9de7100f8a3a97aa4b3a46fccc02ef95824cc2c5"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPILER_SOURCE_AND_RESOURCE_BOUNDARY.md",
+      "sha256": "7b2121fdaa2ebd4f98be494d6062034577971d334b00bddf9ef9da8969f8f817",
+      "git_blob": "7e36683f9427fcf2e3574db45d41f7a7aca3d63b"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_AF_GNS_LIVE_LEFT_GOLDEN_PREFIX_2026_10_19.md",
+      "sha256": "da2e1e8640ce5b605b2b95268ea2135ec7069a554278164fc1bb81e2215ceedb",
+      "git_blob": "1fea93a51703d193b2755e9c96c3c7c67d8148ab"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_GOLDEN_LEFT_LIVE_PREFIX_BEFORE_OLD_RIGHT_G0_ACTUATION_2026_10_19.md",
+      "sha256": "018510bd16d5a22e32146c310cb18ddf065a0a475f8a022ad1370123b477df6f",
+      "git_blob": "1c1ada30cbb7d9d340fb074f016933111cb16df0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_EXACT_CURVED_NATIVE_DIRAC_FIXED_RIGHT_PREPARATION_AND_SOURCE_2026_10_20.md",
+      "sha256": "fcd8e5b637e58ed0f57dcb78cc8853a9483399eec4f2df6df9a568d69b143ee0",
+      "git_blob": "115a47ddff494c51fbae62075c135c3c7d48a511"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_CLOSED_RECORD_ENGINE.md",
+      "sha256": "36eaeb8617630acaeace297fa64e7b8c33b92fc4824133a2b8e3515c4c79520a",
+      "git_blob": "e3101fe88797778f076c14b772dbaffaabe387d6"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_MATTER_OBSERVER_PAIRING.md",
+      "sha256": "badfe4177ddcd90f9b138419b84afa8f828574c7b7d191df5fec8f266f1130f9",
+      "git_blob": "69928e861d1018e72dbe40dcd2eb61efd4bcd6fb"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_SCENE_PAYLOAD_ACTION_BOUNDARY.md",
+      "sha256": "7e410ef5ffefcf986a14e9880c0a63c3f22e3f53bf573fc069e926da5c3ebc7e",
+      "git_blob": "afea6c49dadd77ac5bb6093ebbf33c5df4adc373"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "sha256": "0ea9a175e630e0cb547aff4d25ab355b60125282645e776f23d3a98c0e7d4851",
+      "git_blob": "63b381ca8b0abd9f03ebee2495de904c379f0736"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FIELD_WRITER_BRIDGE.md",
+      "sha256": "89406be7d000892ba4ac062f19bb03dd86d8c9d3f04bc8a7b8de39dd07b66a2a",
+      "git_blob": "fa59e9f59e061e6bcda0f05f29abed1e641f8ebb"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md",
+      "sha256": "ce8d2e88d8a5669a3ef9de1a849a5e21ec0a55b3fdb253d4b990656b0062427a",
+      "git_blob": "a0a1419e4c733b0cb68b875e276851908088d320"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_STAGE_CLOCK_AND_POINTED_DESCENT.md",
+      "sha256": "e970dda60699b7236599c9618445fe17cb8cbb0b9bb8c8de8808a190c4c00848",
+      "git_blob": "0f24c6e0149a84b584130a1206cec605ed078858"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_CLOCK_SCHUR_RETURN.md",
+      "sha256": "0ea93feafeab40582807e4dcc21ce7e6c5f8852a898c23fa9c49d3fe565bd8e3",
+      "git_blob": "c9501fa1ae11f0c30ef1ccb190c9ff7b812b5444"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Research/PrimitiveJetComposition.lean",
+      "sha256": "4e93661bd8d4f4a8402b9f177fbe0e1e2f8e635adb9622f541ad84abe1499731",
+      "git_blob": "8fd7c8c1560c2a0018d6e4a7401a9549bb35d99c"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Geometry/ArchiveCARFockCarrier.lean",
+      "sha256": "5dc96be9c2ee5c874a617f3ebe80f0da9803973c1656112fe24f31e90c2f5eb1",
+      "git_blob": "1acfaec4d7a41b50f50dd55cced7613b80852514"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Representation/TypedRoleSceneAction.lean",
+      "sha256": "47f97b4f98f85b0f95c1adc861ceb94895a92e4bc0bdfb4c6da8e352de07ac29",
+      "git_blob": "252dfaee07e12d2067a6f25fef32b26590696296"
+    }
+  ]
+}

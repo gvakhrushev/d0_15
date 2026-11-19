@@ -1,0 +1,34 @@
+{
+  "scientific_input_commit": "dda8f5d8ce5950cce4278b1f5b7d63f826b2e8f2",
+  "concurrent_integrated_through": "95bab26d4e6fc0f78de8e119cd2bb34ac508c1c5",
+  "owner_pr": 334,
+  "native_code": {
+    "path": "02_REGISTRY/research/sources/d0_book_uniform_source_2026-10-21/check_uniform_book_source.py",
+    "git_blob": "ee8de4635d24c668949ac9a0186616ab7d59f2ed",
+    "sha256": "1c501d5609dda3e14a3da95aad0c77ea04ef48bf94921793a403fb058a805fe9"
+  },
+  "proof_inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_COMPLETE_RECORD_CHANNEL_AND_NATIVE_COST_SOURCE.md",
+      "git_blob": "df8611c7fa37fa71e883831b3f01f434532d99ce"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_VARIABLE_RECORD_CHANNEL_CONSERVATIVITY.md",
+      "git_blob": "8fe8059b98c60425fb570a10cb8d06c8adb13073"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_full128_normalization_closure_2026-10-21/PROOF.md",
+      "git_blob": "eeae605705b5ee29a098ab9e14c4882034c73795"
+    }
+  ],
+  "concurrent_scope_inputs": [
+    {
+      "path": "02_REGISTRY/research/A4D_PAID_RATIONAL_RESOURCE_WRITER_2026_10_21.md",
+      "git_blob": "209ef1e9184b8aaf2b897e327b0f922ecb73eb9d"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_STAR_CONTINUUM_FACTOR_TWO_AND_RANK2_ORIENTATION_GATE_2026_10_21.md",
+      "git_blob": "4e1db859b6d8ba9357017834ca8c03dc6d8c1f01"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "a4d-y-curved-joint-symmetry-v1",
+  "terminal": "A4D-Y-CURVED-JOINT-DISCRETE-SYMMETRIES-CERTIFIED",
+  "operator_shape": [
+    136,
+    96
+  ],
+  "laurent_coefficient_count": 2988,
+  "symmetries": {
+    "common_quarter": {
+      "action": "lambda -> zeta lambda, zeta^4=1",
+      "operator": "Q(zeta lambda)=D_out(zeta) Q(lambda) D_in(zeta)"
+    },
+    "spatial_S3": {
+      "even_generator": "cycle 1->2->3->1",
+      "odd_generator": "swap 2<->3 plus fast-phase p->p+2",
+      "note": "odd generator sends Y to -Y before the phase-2 restoration"
+    },
+    "physical_inversion": {
+      "action": "theta -> -theta",
+      "reason": "all Laurent coefficient matrices are rational-real, so on |lambda|=1 Q(lambda^-1)=conjugate(Q(lambda))"
+    }
+  },
+  "generic_physical_orbit_size": 48,
+  "cover_use": "a physical unit-torus rank/gap cover may be reduced by these exact orbit symmetries before certification",
+  "scope_fence": [
+    "exact stencil covariance only",
+    "no explicit fundamental-domain tiling is certified here",
+    "no all-Bloch rank or positive-gap theorem",
+    "no nonlinear response terminal"
+  ]
+}

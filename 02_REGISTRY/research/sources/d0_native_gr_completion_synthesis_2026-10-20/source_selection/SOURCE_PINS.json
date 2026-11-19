@@ -1,0 +1,138 @@
+{
+  "schema": "d0-source-selection-inputs/1",
+  "inputs": [
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "02_REGISTRY/research/A4D_CAUSAL_BOOK_SOURCE_TO_EXACT_GR_SYNTHESIS_2026_10_20.md",
+      "sha256": "7e3718777af0ef3efb13be3e148d085956e4b75ad97f643c9299c9cc2c3e7058",
+      "bytes": 25231
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "02_REGISTRY/research/A4D_ONE_RECORDED_SCENE_HISTORY_CONSTRUCTS_BOOK_FEEDBACK_2026_10_19.md",
+      "sha256": "81e33cfd31a64c522628b5d60cf2a5e50572d0b07e445d788c8566c11fbfe992",
+      "bytes": 18908
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+      "sha256": "45c8ebbaea8d8044829f959a2dc9dbd58a9aadeb0d36524852ba87e7ae8435e0",
+      "bytes": 18724
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CONDENSED_PRICE_NATURALITY.md",
+      "sha256": "4d90266d5f471ba3cac621e3ea3a32545b4622a16d7c0227bc771694ad851a08",
+      "bytes": 17942
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "02_REGISTRY/research/A4D_NATIVE_JONES_RECORD_TRANSPORT.md",
+      "sha256": "d51e9af89b1505cdb3696dc544568ca5ec7f4da1cea1e313ff93d553195740cb",
+      "bytes": 12360
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md",
+      "sha256": "71497086dfad667831c77d69201aea3890909d0cf772791f7df32b8b8c3c07d4",
+      "bytes": 59540
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/MINIMAL_GOLDEN_COMPLETE_SOURCE.md",
+      "sha256": "f6a5724e087c58b4294020a59532b7117f55247013181bcd4fd30d069a649330",
+      "bytes": 26294
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean",
+      "sha256": "99db926c47864c53ecf8d43caf2518f86b96e42cdffccaaf26f6c93205155ed4",
+      "bytes": 12448
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean",
+      "sha256": "5ca12d6190aca5f75a898e1e7a5c1296a71ed1ff04b963bd3df32f34e8569e94",
+      "bytes": 11219
+    },
+    {
+      "commit": "4867b6d43b262da7e0e08b9b14a7a7a20d9a2ac4",
+      "path": "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "bytes": 86193
+    },
+    {
+      "commit": "f22c1864bd85e097166abd75dc048164d8d63c65",
+      "path": "02_REGISTRY/research/A4D_PROSPECTIVE_STOPPED_GOLDEN_MINIMUM_SOURCE_REVERSAL_2026_10_20.md",
+      "sha256": "1e2815efc4daab717a7b84069607e287330360093d5a6eaedcfb55c080f9681a",
+      "bytes": 19949
+    },
+    {
+      "commit": "f22c1864bd85e097166abd75dc048164d8d63c65",
+      "path": "02_REGISTRY/research/sources/d0_native_triz_reference_2026-10-20/PHI_BEATTY_OWNED_RESIDUAL_KILL_FIRST.md",
+      "sha256": "159e4ce09bf7e8fea5fd633472e25724353fa2cfa6578b56f1b4bae6eaf37dee",
+      "bytes": 11741
+    },
+    {
+      "commit": "f22c1864bd85e097166abd75dc048164d8d63c65",
+      "path": "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py",
+      "sha256": "e022977c672f9c64c9c3ee27d652b009508a2b584b46232ec88c270ff61bbe70",
+      "bytes": 3894
+    },
+    {
+      "commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "path": "02_REGISTRY/research/A4D_NATIVE_STOPPED_MINIMUM_TO_J2_SOURCE_2026_10_20.md",
+      "sha256": "6e73ece4f1d4312e241e91860871019689bf28017088ef6431893a3286978b0b",
+      "bytes": 9548
+    },
+    {
+      "commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "path": "02_REGISTRY/research/sources/d0_native_stopped_all_cost_source_2026-10-20/STOPPED_ALL_COST_SOURCE.md",
+      "sha256": "ba7513a46fd7796ce6f5ae6d1ad389d66e51bbcaff3ca8866c0087dc41539eb3",
+      "bytes": 15392
+    },
+    {
+      "commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "path": "02_REGISTRY/research/certificates/a4d_native_stopped_all_cost_source_check.py",
+      "sha256": "5a5baccd4c59d0fe9f7e10a5b7e6407db1cd688707fb341a9b139b2049222bb1",
+      "bytes": 11446
+    },
+    {
+      "commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "path": "02_REGISTRY/research/sources/d0_prospective_stopped_golden_2026-10-20/check_stopped_source_minimum.py",
+      "sha256": "a8997f58d3af738a2cf70f4a1d20dd6c9c509274c8e9b2393157a50038e2729d",
+      "bytes": 6982
+    },
+    {
+      "commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "path": "02_REGISTRY/research/A4D_NATIVE_COMPLETE_RECORD_INFO_PRICE_SELECTION_2026_10_20.md",
+      "sha256": "93d530eaa84df942bafb174006210047adb6588ec017d14d22bfa91ce800eaeb",
+      "bytes": 13631
+    },
+    {
+      "commit": "45372df30740f4e75c8b58013652a7665bf833cd",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "sha256": "207417664dbda9478085e30a55999b0fc0f899518a992d894dc30ef08f373e24",
+      "bytes": 11802
+    },
+    {
+      "commit": "946ff6e5bef6658656794fc12aefa3139764569b",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/TWO_NATIVE_8D_DETERMINANT_SOURCE.md",
+      "sha256": "46ded57da4d442992e753adb5b1f4f49ffb5eb1bda5b64eeda429ea379639490",
+      "bytes": 16971
+    },
+    {
+      "commit": "946ff6e5bef6658656794fc12aefa3139764569b",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/DETERMINANT_PREPARATION_BANK.md",
+      "sha256": "6cc9fc85ef8e238635ef24b78ddb3936f07d1a3f915558172eee8ff1c3602705",
+      "bytes": 13833
+    },
+    {
+      "commit": "946ff6e5bef6658656794fc12aefa3139764569b",
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/DETERMINANT_PREPARATION_BANK_REVIEW.md",
+      "sha256": "8b066d016d565d75e0cc930f5078ce2d2296a429ead2ae09e3f0f73e5ca65cf2",
+      "bytes": 5730
+    }
+  ],
+  "scope": "Original input pins, not physical acceptance"
+}

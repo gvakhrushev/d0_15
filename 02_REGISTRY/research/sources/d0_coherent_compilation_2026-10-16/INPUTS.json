@@ -1,0 +1,43 @@
+{
+  "concurrent_minimum_input": "9989b64de9f0d88e1823b4fcbe129acc681ab163",
+  "owners": [
+    {
+      "git_blob": "2b45f37068a72cb6ada362363ff5c3e3ac79de22",
+      "path": "02_REGISTRY/research/A4D_GOLDEN_DETERMINANT_COMPILER.md",
+      "used": "actual nondemolition determinant controller and E_eff"
+    },
+    {
+      "git_blob": "bb3af85fa08bdb5f70a3cd837283a842c6038706",
+      "path": "02_REGISTRY/research/A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md",
+      "used": "canonical full AF price B_n+sum G"
+    },
+    {
+      "git_blob": "a75aff6e586ac743cdabbf2d293cb6c6f84833b6",
+      "path": "02_REGISTRY/research/A4D_NATIVE_CANONICAL_TRACE_RECORD_SOURCE.md",
+      "used": "full left/operator distinction and six-level source transfer"
+    },
+    {
+      "git_blob": "573e2d70c1d7cbefd35670431b1ab9b87624dbdd",
+      "path": "02_REGISTRY/research/A4D_NATIVE_GOLDEN_COST_REFINEMENT.md",
+      "used": "literal inclusion and PF weights; finite checker spells out the index recursion"
+    },
+    {
+      "git_blob": "373f8e38910923613c2ad536d037da48790b6e18",
+      "path": "02_REGISTRY/research/A4D_RECORD_PRICE_METRIC_SOURCE_INTEGRATION.md",
+      "used": "same two-point comparator, metric and lift"
+    },
+    {
+      "git_blob": "6a9f95483fdaa5737c9235d25b4413c37a9c0858",
+      "path": "02_REGISTRY/research/A4D_NATIVE_LORENTZ_REFLECTION_SOURCE.md",
+      "used": "retain the leading observer source and signed coefficient"
+    },
+    {
+      "git_blob": "e2475112b9e8a66e3558c828c15615d7238e1025",
+      "path": "02_REGISTRY/research/A4D_NATIVE_PREPARATION_STATIONARY_SOURCE.md",
+      "used": "exact full coherent preparation minimum, actual relative-entropy remainder; no old-suite replay"
+    }
+  ],
+  "schema": "d0-coherent-compilation-inputs/1",
+  "scope": "Documentary parents pinned, no old checker executed or Lean recompiled. Source-bound certificate not run locally without the complete repository.",
+  "source_base": "8d6f73012c3740d3b4113ef43ab71cb4986b9782"
+}

@@ -1,0 +1,57 @@
+{
+  "D0_native_causal_boundary_identified": false,
+  "D0_native_lapse_generators_constructed": false,
+  "GR_closed": false,
+  "Lean_or_CI_run": false,
+  "boundary": {
+    "Schur_vs_reduced_derivative_error": 9.37993931658665e-13,
+    "boundary_mixed_Hessian": -0.00035061382193592096,
+    "implicit_map_Jacobian_error": 7.385733624687418e-08,
+    "implicit_map_Jacobian_relative_error": 2.5895402939522985e-11,
+    "incorrect_frozen_interior_Hessian_error": 0.00016239138389519554,
+    "internal_Hessian": -0.004516035783126287,
+    "internal_residual": 7.620226030854906e-18,
+    "reduced_Hessian": [
+      [
+        -0.0001345755400073619,
+        -0.00035061382193592096
+      ],
+      [
+        -0.0003506138219359203,
+        -0.0013015071585309455
+      ]
+    ],
+    "stationary_internal_coordinate": 0.5561978589492217,
+    "symplectic_error": 2.2579070821799777e-13
+  },
+  "exact": {
+    "canonical_map_requires_mixed_rank": true,
+    "naive_seam_derivative": "2*x*c^2/(a*d-x^2*c^2)",
+    "symbolic_sewing": true
+  },
+  "hessian_controls": [
+    {
+      "analytic_vs_AD": 6.288372600415926e-18,
+      "finite_difference_error": 8.738576539896875e-13,
+      "first_source_error": 1.3444106938820255e-17,
+      "fugacity": 9.5367431640625e-07,
+      "incorrect_commuting_covariance_error": 0.0007409873808304067
+    },
+    {
+      "analytic_vs_AD": 1.1796119636642288e-16,
+      "finite_difference_error": 1.1096595864401593e-11,
+      "first_source_error": 4.163336342344337e-17,
+      "fugacity": 0.19,
+      "incorrect_commuting_covariance_error": 0.0007288101826866712
+    }
+  ],
+  "original_all42_replayed": false,
+  "scope": "full spectral formula; structural matrix charts, not original D0 causal boundary",
+  "sewing": {
+    "full_source_error": 1.3877787807814457e-17,
+    "source_error_if_internal_determinant_erased": 0.0777633546361431,
+    "value_error": 1.3877787807814457e-17
+  },
+  "source_commit": "c4a92cb0f2326bf7ae2a8127c49f5b65ea71ce5a",
+  "status": "PASS_ROOT_HESSIAN_AND_CONDITIONAL_BOUNDARY_REDUCTION"
+}

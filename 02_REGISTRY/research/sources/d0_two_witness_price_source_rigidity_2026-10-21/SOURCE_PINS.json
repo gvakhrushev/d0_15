@@ -1,0 +1,31 @@
+{
+  "repository": "gvakhrushev/d0_15",
+  "input_commit": "5edac80c86c17014fc83e0aa608e192f43c1fdba",
+  "sources": [
+    {
+      "path": "02_REGISTRY/research/A4D_FINITE_SOURCE_AND_COVARIANT_TWO_FIELD_SYNTHESIS_2026_10_21.md",
+      "sha256": "a8ff9d1b2b0d316b5cfc516fd00f02c87ac168636924c3f48f57564a27ac07c1",
+      "git_blob": "69744bc8fe5085da9c84ecf87086a2ff476bc5cf"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/CROSSING_STREAMS.md",
+      "sha256": "c2cc72d1bcacbee21271c99549d70f86ee708439502211a1555d027e68b83326",
+      "git_blob": "45329a4c9f556fcdf5321e90b2fc438bd2209a4a"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_covariant_multiscalar_price_2026-10-21/REVIEW_ADDENDUM.md",
+      "sha256": "e22705fd431dc1fc1e666added9e9fdfe6ac93812a5dc6729d7276c796f6d31c",
+      "git_blob": "e6f76796fe95434df182ebb79f963e6cb34a4c92"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_BOOK03_CLOSURE_GATE_2026_10_21.md",
+      "git_blob": "c53acfd669480c607a4dbce1e84951aa9946041d",
+      "checked": "GitHub connector, complete content"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NEXT_COMMON_MAP_CONSTRUCTION_GATE_2026_10_21.md",
+      "git_blob": "985c98f075109f89f207c58eef6602705fc9a85f",
+      "checked": "GitHub connector, complete content"
+    }
+  ]
+}

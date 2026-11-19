@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "finite_ledger_leaves_checked": 1098,
+  "caps": "0 through 5",
+  "probability_powers": [
+    1,
+    2,
+    3
+  ],
+  "schur_identity": "exact",
+  "uniform_source_lower_bound_for_nu_1_to_2": "p^10*(1-t_max)^2 for natural negative log after dilution",
+  "unbounded_expected_forward_and_reverse_calls_each": 2,
+  "same_as_compulsory_Book03_net_price": false
+}

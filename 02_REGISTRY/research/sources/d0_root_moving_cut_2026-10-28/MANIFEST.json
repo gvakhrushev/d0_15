@@ -1,0 +1,13 @@
+{
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "source_base_commit": "063f643d7a760e9203c3f74cba870b256b36fcc3",
+  "normal_and_optimized_equal": true,
+  "files": {
+    "result_optimized.json": "b361bcba014c0a68f545a0167ae1a4be20ccc1386fe754bd389c472bd361dc8b",
+    "PROOF_RU.md": "fd2210be3ff120390be9359d877b957b845de27705d7c896fd1f44e5795677a0",
+    "check_root_moving_cut.py": "da4df4d9c075b9b6cc01a4c74503ea1bb379d062bdbb74e5ddb02703f2f85d2c",
+    "result.json": "b361bcba014c0a68f545a0167ae1a4be20ccc1386fe754bd389c472bd361dc8b"
+  }
+}

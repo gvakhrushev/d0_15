@@ -1,0 +1,12 @@
+{
+  "status": "VERIFIED_ALREADY_PUBLISHED_EXACT29",
+  "checked_remote_commit": "4f5eec1632b0d1308d192ab7ae428f7532e2153b",
+  "local_archive": "D0_global_spectral_closure_2026-10-22.zip",
+  "files": 29,
+  "global_packet_tree": "ce21ef8c137292eb5ecdcc1389350392bbaf572d",
+  "global_packet_blob_count": 18,
+  "native65_packet_tree": "510d44802962d7ed72b484d5dd101b73d5af3bcf",
+  "native65_packet_blob_count": 10,
+  "routing_blob": "cfcc0673a26d1679c67b40e3478c822d7ca9ae1e",
+  "comparison": "Both trees and routing blob match independent git hashes of all 29 local ZIP files. No prior-upload authorship is claimed."
+}

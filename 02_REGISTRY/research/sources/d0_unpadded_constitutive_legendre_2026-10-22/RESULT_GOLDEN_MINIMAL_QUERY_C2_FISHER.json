@@ -1,0 +1,73 @@
+{
+  "status": "PASS_ANALYTIC_NATIVE_GOLDEN_N1_MINIMAL_COST_QUERY_FULL_OFFNULL_C2_AND_CRITICAL_DIM4",
+  "date": "2026-10-22",
+  "scope": "Original mathematical N1 F/R 0/10 Cost-minus-measured-Shannon action; not selected compulsory physical Book03 H+J+R or actual weak-query hardware",
+  "original": {
+    "p": "(sqrt(5)-1)/2",
+    "zeta": "2^-20",
+    "sigma": "minus",
+    "code": "F=0 charge1, R=10 charge2",
+    "operands": "Original canonical-sign-retyped six G2STAR based-plaquette f_B and actual two-real-CAR signed Clifford q",
+    "source_unit": "K0=1/(h_phi_prime(r0)*r_x(0,0))",
+    "reference": "Original complete N1 event r(x,y) in certified_model.CQ",
+    "independent_fields": 42
+  },
+  "exact_minimal_cost_schedule": {
+    "m_L": "ceil(2 log_phi L)",
+    "tau_L": "p^m_L",
+    "verified_bounds": "p/L^2 < tau_L <= 1/L^2",
+    "relation_to_prior": "m_L <= 2ceil(log_phi L) <= m_L+1",
+    "native_primitive_weak_query_writer_physically_derived": false
+  },
+  "interval_certificate": {
+    "domain": "Whole box |x|,|y|<=0.01",
+    "evaluator": "mpmath.iv 100 digits, exact original Golden polynomial",
+    "c_Hessian_strict_positive": true,
+    "absolute_Hessian_operator_norm_upper": "<5e-5",
+    "smallest_eigen_lower": ">4.48e-7",
+    "hessian_det_lower": ">2.24e-11"
+  },
+  "full_original_field_source": {
+    "dimension": 42,
+    "moving_density_included": true,
+    "formulas": "Analytic exact perspective Cost−Info first/second derivatives on unrestricted original field tangents, including D rho and D2 rho",
+    "per_site_norm_bound": "O(tau_L)=O(L^-2) for price, source and Hessian whenever original f/q/rho and their field-jet norms remain uniformly bounded",
+    "raw216_universal_norm_proved": false,
+    "gamma": "-0.963543601035524426699190686632...",
+    "lambda_minus": "-23.41640675188407497289558..."
+  },
+  "exact_quadratic_coefficients_for_tau_over_rho": {
+    "f_squared": "1.5594385265652892334261876114048047",
+    "f_times_q": "-7.7267184733468075333267407128385721",
+    "q_squared": "38.368262589462482471730309798437105",
+    "strictly_positive_definite": true,
+    "action_decomposition": "S_tau=gamma*sum(f+lambda q)+ K0/tau *sum rho* Bregman_c(tau(f,q)/rho,0), EXACT at all finite h within box",
+    "Bregman_lower": "K0*4.48e-7*tau/2 * sum[(f²+q²)/rho]",
+    "Bregman_upper": "K0*5e-5*tau/2 * sum[(f²+q²)/rho]",
+    "density_partial": "partial_rho S_site=-(K0/tau) (z dot grad c(z)-c(z))<=0 at fixed f,q"
+  },
+  "complete_binary_information": {
+    "hypothesis": "One FULL independent Bernoulli N1 record per each true 4D native site, same sourced query, independent fresh preparation",
+    "probability_ref": "r0=1.8512395784882e-6",
+    "signal_slope": "d0=r_x(0)*(fA-fB)+r_y(0)*(qA-qB)",
+    "Bernoulli_KL_per_copy": "tau²*d0²/(2*r0*(1-r0)*rho²)+O(tau³)",
+    "original_4D_native_information_window": "p² < L^4*tau_L² <= 1",
+    "additional_physical_L4_copy_factory_selected": false,
+    "fixed_Bayes_error_fresh_copy_requirement": "Theta(L^4) for d0!=0 with protocol-dependent positive constants",
+    "golden_discrete_scale_factor": "Logarithmic ceiling causes subsequential modulation between limiting p² and1"
+  },
+  "independent_replay": {
+    "checker": "check_golden_minimal_depth_c2_fisher.py",
+    "checker_git_blob": "87200f648fc9b7001e2b0fd60c8877c519fd37c4",
+    "same_as_locally_executed_source": true,
+    "normal_and_python_O_stdout_byte_identical": true,
+    "python_py_compile": "PASS",
+    "original_n16_to_n256_moving_PF_C0_C1_C2_tests": "PASS",
+    "original_4D_L16_to_L1024_complete_Bernoulli_KL": "PASS",
+    "exact_full42_interval_root_rerun": "NOT_CLAIMED",
+    "official_remote_CI": "NOT_CLAIMED"
+  },
+  "all_physical_GR_claims_closed": false,
+  "GR_closed": false,
+  "raw216_closed": false
+}

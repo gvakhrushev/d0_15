@@ -1,0 +1,49 @@
+{
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "frozen_late_source_files": 4,
+  "frozen_source_files": 20,
+  "lanes": {
+    "book_binding/check_binding.py": {
+      "expected_sha256": "8f79c4627784a65beb8692a73b74c679e34adc92afe5d05fa04a67c09bcbc200",
+      "replay": "PASS"
+    },
+    "clock_bracket/check_clock_bracket.py": {
+      "expected_sha256": "e25b95adb19ac042fbf8f0e8562db8acb2c270417575c8111ca0eceddbd03844",
+      "replay": "PASS"
+    },
+    "clock_bracket/check_frame_compensation.py": {
+      "expected_sha256": "93f409b0309bdeca571b9d7b8587452e58a80f1298742e40b86d5e9d480c1b06",
+      "replay": "PASS"
+    },
+    "input_price/check_input_obstruction.py": {
+      "expected_sha256": "0350d3348f25a945a4289ec9b20a4e2e9a8c1f5cf5cfa9d948b2261f02e7cc1e",
+      "replay": "PASS"
+    },
+    "late_application/check_coframe_residual.py": {
+      "expected_sha256": "ad62a373d66a5df6b9b71627ca1b6f533db171e71492a713e14e9400f866635d",
+      "replay": "PASS"
+    },
+    "paid_source/check_saddle_and_weak_source.py": {
+      "expected_sha256": "947bedc7b10aaaf9106b18c690c8f09a7e802de8135772870c8f99a964a83c7f",
+      "replay": "PASS"
+    }
+  },
+  "late_application_input_ref": "c7e0c3d2f6bcfbcc8bd43034ff72da85b8cdd18a",
+  "receipt_rule": "Exact types, keys, integers, strings and Decimal/rational strings; binary float diagnostics rel5e-12 abs5e-13",
+  "reviewed_artifacts_checked": 35,
+  "scientific_input_ref": "441bdef5a02bef09a74ebe48dcf4d5527ba18988",
+  "scope": {
+    "GR_closed": false,
+    "analytical_proofs_replaced_by_fixtures": false,
+    "complete_native_controller_selection_proved": false,
+    "finite_all42_roots_for_full_nonlinear_price_proved": false,
+    "physical_Book_selection_proved": false,
+    "physical_clock_and_canonical_constraint_algebra_proved": false
+  },
+  "status": "PASS_BOUNDED_VARIATIONAL_SELECTION_AND_NATIVE_CLOCK_SYNTHESIS"
+}

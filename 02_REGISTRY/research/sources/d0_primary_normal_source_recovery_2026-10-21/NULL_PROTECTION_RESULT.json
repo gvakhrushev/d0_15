@@ -1,0 +1,146 @@
+{
+  "status": "PASS_PRIMARY_NULL_SOURCE_PROTECTION_AND_FILTERED_RECOVERY",
+  "input_ref": "c49ebdb12244943d1ec45ef6d148a0432481141e",
+  "geometry": {
+    "ricci_uu": "Derivative(H(u, x, y), (x, 2))/2 + Derivative(H(u, x, y), (y, 2))/2",
+    "box_Ricci_uu": "-Derivative(H(u, x, y), (x, 4))/2 - Derivative(H(u, x, y), (y, 4))/2 - Derivative(H(u, x, y), (x, 2), (y, 2))",
+    "primary_Ricci_uu": "-2*lambda*j(u)",
+    "primary_box_Ricci": "0",
+    "parallel_null_covector": true,
+    "material_wave_equation": "0",
+    "normal_source_divergence": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "VSI_alone_counterexample_box_Ricci_uu": "-12",
+    "scalar_dependent_coupling_counterexample": "-Derivative(F(u), (u, 2))"
+  },
+  "discrete": {
+    "original_stencil_protection": "EXACT_FOR_ALL_h",
+    "arbitrary_order_proof": "L_h Ric_h=0 implies L_h^k Ric_h=0 for k>=1, on complete stencil collars",
+    "verified_symbolic_orders": 6,
+    "negative_quartic_boxRicci": "-12",
+    "quartic_harmonic_finite_error": "4*h**2",
+    "Dirichlet_constant_boundary_control": true,
+    "rational_large_filter_green_norm": "716672324423091/780332047185148915072",
+    "uniform_bound": "1/8",
+    "negative_filter_resonance": true
+  },
+  "filter_checks": [
+    {
+      "intervals": 8,
+      "sites": 49,
+      "unfiltered_green_norm_inf": 0.07278262867647056,
+      "resolvent_filters": [
+        {
+          "strengths": [
+            0.0
+          ],
+          "green_norm_inf": 0.07278262867647056
+        },
+        {
+          "strengths": [
+            0.3
+          ],
+          "green_norm_inf": 0.011503917356243752
+        },
+        {
+          "strengths": [
+            0.3,
+            10.0
+          ],
+          "green_norm_inf": 6.0048649272481053e-05
+        },
+        {
+          "strengths": [
+            10.0,
+            100.0
+          ],
+          "green_norm_inf": 2.1101217332774302e-07
+        }
+      ],
+      "heat_filter_green_norm_inf": 0.053187926655430755
+    },
+    {
+      "intervals": 16,
+      "sites": 225,
+      "unfiltered_green_norm_inf": 0.07344576657891967,
+      "resolvent_filters": [
+        {
+          "strengths": [
+            0.0
+          ],
+          "green_norm_inf": 0.07344576657891967
+        },
+        {
+          "strengths": [
+            0.3
+          ],
+          "green_norm_inf": 0.011537857070951132
+        },
+        {
+          "strengths": [
+            0.3,
+            10.0
+          ],
+          "green_norm_inf": 5.96128733229432e-05
+        },
+        {
+          "strengths": [
+            10.0,
+            100.0
+          ],
+          "green_norm_inf": 2.0917231432110872e-07
+        }
+      ],
+      "heat_filter_green_norm_inf": 0.05369180489705218
+    },
+    {
+      "intervals": 32,
+      "sites": 961,
+      "unfiltered_green_norm_inf": 0.07361473735452399,
+      "resolvent_filters": [
+        {
+          "strengths": [
+            0.0
+          ],
+          "green_norm_inf": 0.07361473735452399
+        },
+        {
+          "strengths": [
+            0.3
+          ],
+          "green_norm_inf": 0.011546167323904523
+        },
+        {
+          "strengths": [
+            0.3,
+            10.0
+          ],
+          "green_norm_inf": 5.9502114205757895e-05
+        },
+        {
+          "strengths": [
+            10.0,
+            100.0
+          ],
+          "green_norm_inf": 2.0870722430128066e-07
+        }
+      ],
+      "heat_filter_green_norm_inf": 0.053819276504745404
+    }
+  ],
+  "scope": {
+    "pp_wave_tensor_reduction": "CONSUMED_KNOWN_THEOREM_1407.5301_SECT_II",
+    "D0_primary_application": true,
+    "finite_filter_law_is_actual_Book_source": false,
+    "native_metric_only_covariant_descent_proved": false,
+    "independent_24_link_and_internal_Euler_elimination_proved": false,
+    "new_matter_law": false,
+    "native_price_selection_proved": false,
+    "stationary_solution_is_minimum": false,
+    "generic_GR_or_raw216_closed": false
+  }
+}

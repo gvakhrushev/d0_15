@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact Q(p) BigInt fractions and exact rational Golden enclosure",
+  "assertions": 55,
+  "checks": [
+    "strict rational enclosure of the positive Golden root",
+    "p+p^2=1",
+    "normalized Bell tangent has zero trace",
+    "first single-resource reduced density derivative 0,0",
+    "second single-resource reduced density derivative 0,0",
+    "first single-resource reduced density derivative 0,1",
+    "second single-resource reduced density derivative 0,1",
+    "first single-resource reduced density derivative 1,0",
+    "second single-resource reduced density derivative 1,0",
+    "first single-resource reduced density derivative 1,1",
+    "second single-resource reduced density derivative 1,1",
+    "actual pair observable first derivative is 2",
+    "actual nonvacuum q-source coefficient -(5/2)*p^6*2^-20",
+    "actual q-source is strictly nonzero, before any report",
+    "r0 is positive",
+    "r0<2*zeta",
+    "2*zeta<p^2",
+    "R0 is positive",
+    "ordered table keeps the actual base report m=0 sigma=-1",
+    "ordered first-slot actual source m=0 sigma=-1",
+    "exact normalized source independent of Golden attenuation m=0 sigma=-1",
+    "ordered table keeps the actual base report m=0 sigma=1",
+    "ordered first-slot actual source m=0 sigma=1",
+    "exact normalized source independent of Golden attenuation m=0 sigma=1",
+    "ordered table keeps the actual base report m=1 sigma=-1",
+    "ordered first-slot actual source m=1 sigma=-1",
+    "exact normalized source independent of Golden attenuation m=1 sigma=-1",
+    "ordered table keeps the actual base report m=1 sigma=1",
+    "ordered first-slot actual source m=1 sigma=1",
+    "exact normalized source independent of Golden attenuation m=1 sigma=1",
+    "ordered table keeps the actual base report m=2 sigma=-1",
+    "ordered first-slot actual source m=2 sigma=-1",
+    "exact normalized source independent of Golden attenuation m=2 sigma=-1",
+    "ordered table keeps the actual base report m=2 sigma=1",
+    "ordered first-slot actual source m=2 sigma=1",
+    "exact normalized source independent of Golden attenuation m=2 sigma=1",
+    "ordered table keeps the actual base report m=5 sigma=-1",
+    "ordered first-slot actual source m=5 sigma=-1",
+    "exact normalized source independent of Golden attenuation m=5 sigma=-1",
+    "ordered table keeps the actual base report m=5 sigma=1",
+    "ordered first-slot actual source m=5 sigma=1",
+    "exact normalized source independent of Golden attenuation m=5 sigma=1",
+    "ordered table keeps the actual base report m=11 sigma=-1",
+    "ordered first-slot actual source m=11 sigma=-1",
+    "exact normalized source independent of Golden attenuation m=11 sigma=-1",
+    "ordered table keeps the actual base report m=11 sigma=1",
+    "ordered first-slot actual source m=11 sigma=1",
+    "exact normalized source independent of Golden attenuation m=11 sigma=1",
+    "ordered table keeps the actual base report m=29 sigma=-1",
+    "ordered first-slot actual source m=29 sigma=-1",
+    "exact normalized source independent of Golden attenuation m=29 sigma=-1",
+    "ordered table keeps the actual base report m=29 sigma=1",
+    "ordered first-slot actual source m=29 sigma=1",
+    "exact normalized source independent of Golden attenuation m=29 sigma=1",
+    "actual sigma=-1 report normal derivative is positive"
+  ],
+  "exact": {
+    "dq_divided_by_BD2_over_rho": {
+      "a": "-25",
+      "b": "40",
+      "denominator": "2097152"
+    },
+    "r0": {
+      "a": "-3014703",
+      "b": "4980812",
+      "denominator": "34359738368"
+    },
+    "Dr_divided_by_tau_BD2_over_rho": {
+      "a": "22289060",
+      "b": "-36055835",
+      "denominator": "72057594037927936"
+    }
+  },
+  "diagnostic_only": {
+    "r0": 0.0000018512395784882035,
+    "qNormalCoefficient": -1.3286612034044563e-7,
+    "normalizedPriceNormalCoefficient": -1.9544337844774012e-12
+  },
+  "analytic_entropy_sign": "r0<p^2; h_phi'(r) strictly decreasing; h_phi'(p^2)=1; therefore 1-h_phi'(r0)<0",
+  "scope": {
+    "moment_bank": "actual polynomial q, actual primary material psi=2^-10*(u,u/2), s=p^3, h=1/4",
+    "variation_domain": "arbitrary joint bank purifications with untouched original RIGHT; no new finite Golden smooth writer claimed",
+    "upstream_preparation_price": "not set to zero; exact opposite derivative is required for full stationarity",
+    "full_D0_price_selected": false,
+    "GR_closed": false
+  }
+}

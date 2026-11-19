@@ -1,0 +1,85 @@
+{
+  "CX_for_80_localizers_including_NC1": 6816,
+  "GR_closed": false,
+  "SITE_shift_bijection_cases": 65536,
+  "Toffoli_for_80_localizers": 1760,
+  "choi_hq_final_report_full_factory_and_clock_compiled": false,
+  "correlation": {
+    "conditional_sign_effect_toy_k": 0.5,
+    "fine_shift_conditional_effect_not_scalar": true,
+    "fresh_independent_shifts_correlation": 0.0,
+    "local_F_histogram": {
+      "-1": 64,
+      "0": 128,
+      "1": 64
+    },
+    "measuring_shift_and_sign_reveals_site_mutual_information_nats": 0.0654060179705685,
+    "one_sign_marginal_over_uniform_shift": 0.5,
+    "shared_shift_example_assumes_QND_Site_and_same_shift": true,
+    "shared_shift_two_sign_correlation": 0.125
+  },
+  "eight_signs_independent_shift_bits": 64,
+  "fixed_Rule_Book03_cost_information_proved": false,
+  "fresh_L4_fourier_resources_still_needed": 80,
+  "full_X_tau_Y_truth_table_proved_by_factorization": 16777216,
+  "literal_shift_and_equality": {
+    "e0": {
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "compute_uncompute_CX": 84,
+      "compute_uncompute_Toffoli": 22,
+      "sampled_columns": 65536
+    },
+    "e1": {
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "compute_uncompute_CX": 84,
+      "compute_uncompute_Toffoli": 22,
+      "sampled_columns": 65536
+    },
+    "e2": {
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "compute_uncompute_CX": 84,
+      "compute_uncompute_Toffoli": 22,
+      "sampled_columns": 65536
+    },
+    "e3": {
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "compute_uncompute_CX": 84,
+      "compute_uncompute_Toffoli": 22,
+      "sampled_columns": 65536
+    },
+    "zero": {
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "compute_uncompute_CX": 80,
+      "compute_uncompute_Toffoli": 22,
+      "sampled_columns": 65536
+    }
+  },
+  "numerics": {
+    "beta_to_1760": "0.9995254275392649472749511374337258",
+    "illustrative_Lambda_one_not_certified": true,
+    "shared_h_64_plus_1760_Toffoli_conditional_ready": "0.9995254231712085516026817450320141",
+    "shared_h_64_plus_ready": "0.99999999562986966081893253781269837",
+    "true_report_local_shared_minus_independent_shift": "-5.6936968622469848146882908855004777e-18"
+  },
+  "status": "PASS"
+}

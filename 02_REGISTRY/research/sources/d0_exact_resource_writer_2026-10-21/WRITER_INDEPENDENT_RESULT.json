@@ -1,0 +1,489 @@
+{
+  "checker_sha256": "9db3e6226d1e16b23295e2643931b62650db96c6924bf58ca41e8517b3cf3ac8",
+  "field": {
+    "classification_evidence": "analytic proof sections2-4; not numerical sampling",
+    "p": "(sqrt(5)-1)/2",
+    "palette": "Q(sqrt(p),sqrt(2),i)",
+    "rational_squareclasses": [
+      1,
+      2,
+      5,
+      10
+    ],
+    "relative_norm_p": -1
+  },
+  "fourier_reference": {
+    "each_site_norm_squared": "1/256",
+    "integer_reference_sha256": "b771febd10092c010fbe1928149faa3d1b5f0e3835234273e2a8a9b698687166",
+    "nonzero_amplitude": "+/-1/128",
+    "nonzero_entries": 16384,
+    "pair_list": [
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        1
+      ],
+      [
+        0,
+        1,
+        2,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        3,
+        0
+      ],
+      [
+        0,
+        1,
+        3,
+        1
+      ],
+      [
+        0,
+        1,
+        3,
+        2
+      ],
+      [
+        0,
+        1,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        2,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        0,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        3,
+        2
+      ],
+      [
+        1,
+        0,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        1,
+        0,
+        3
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        1,
+        2,
+        2
+      ],
+      [
+        1,
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        1,
+        3,
+        0
+      ],
+      [
+        1,
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        1,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        0,
+        3
+      ]
+    ],
+    "right_columns": 128,
+    "right_gram": "I128/128",
+    "sites": 256,
+    "uniform_input_bits": 14
+  },
+  "historical_sources_verified": 15,
+  "kernel": {
+    "creation_on_top": 0,
+    "creation_on_vacuum_coefficient": 1,
+    "creation_role": 2,
+    "exterior_order": [
+      0,
+      2,
+      3,
+      1
+    ],
+    "fixed_kernel_probe_mean": "-p^k*sqrt(rho_z)",
+    "julia_bad_top_good_top": 1,
+    "same_address_programme_ratio": "-p^k*sqrt(rho_z)",
+    "top_mask": 15,
+    "vacuum_output_mask": 4
+  },
+  "original_count_function_sha256": "962e2e7ccdd84582de78ee21ed367506f10abd2ffce7318dc745241c034dec1b",
+  "pf": {
+    "counts_sha256": "1411f37734cf63763cac10aedf1012a1b0e1762a5daed2674c81a99c9b3f72e5",
+    "denominator_factorization": [
+      2,
+      13,
+      421
+    ],
+    "histogram": {
+      "29": 1,
+      "33": 3,
+      "34": 37,
+      "35": 13,
+      "36": 8,
+      "37": 2,
+      "38": 25,
+      "39": 8,
+      "40": 10,
+      "41": 9,
+      "42": 40,
+      "43": 13,
+      "44": 11,
+      "46": 6,
+      "47": 1,
+      "48": 9,
+      "49": 3,
+      "50": 17,
+      "51": 6,
+      "52": 14,
+      "53": 1,
+      "56": 4,
+      "57": 1,
+      "58": 1,
+      "59": 1,
+      "60": 5,
+      "61": 3,
+      "63": 1,
+      "64": 2,
+      "78": 1
+    },
+    "maximum": 78,
+    "minimum": 29,
+    "rho": "128*n_z/(13*421)",
+    "sites": 256,
+    "total": 10946,
+    "valuation421_every_site": -1
+  },
+  "physical_writer_or_GR_closed": false,
+  "proof_sha256": "672524e7a56e25675fda6cf295acc258877729f1a4d69bf0a52d4e1425884dcc",
+  "retained_scope": {
+    "Book03_valuation_identified": false,
+    "fixed_vacuum_prefix": "actual256sites x128RIGHT, within declared addressed interface",
+    "mixed_mean_no_go": "finite execution only",
+    "nonvacuum_writer": false,
+    "pure_target_no_go": "every finite accepted leaf, including a.s.-finite retry",
+    "refinement_limit_excluded": false
+  },
+  "scientific_input": "b60a111b43f723a841d253b1d5bd9650c46b2cf8",
+  "scope": "actual primary point writer obstruction; fixed vacuum reference prefix",
+  "source_pins_sha256": "08f1b362bae8d0cf11fa4ff21d02ef349b25139504eac71b4b8a6ce258c38ad7",
+  "status": "PASS"
+}

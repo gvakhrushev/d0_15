@@ -1,0 +1,193 @@
+{
+  "check_names": [
+    "actual gain includes c_quad once and recovers the common physical test source",
+    "omitting actual quadrature produces a different source, not a harmless convention",
+    "new source helper rejects fake continuous/floating or negative gain metadata",
+    "all variable report rows differentiate the actual product determinant with one rank factor",
+    "cumulative price has a genuine mixed derivative and is not sum of standalone prices",
+    "actual heterogeneous gains retain their exact bounded-positive source-error mean",
+    "each compact Gram is at least one half, slopes stay positive and spin rank is counted once",
+    "the common physical product lift is sqrt(sum n_j ell_j squared) on horizontal packets",
+    "packet number alone is not the physical lift when mesh norms differ",
+    "physical pullback certificate retains factor4; older /(2Gamma) convention is exactly half",
+    "constant SO transport certifies the same comparison lift through an actual native base without being executed",
+    "integer slow envelopes dominate report order squared, physical lift squared and inverse physical gain",
+    "cofinal threshold transitions are exact integer comparisons with no floating root",
+    "only a finite initial envelope exception is used, with no retroactive old catalogue upgrade",
+    "actual cohort integer is the minimal fourth-root ceiling j1 k1",
+    "summable overlap variance obeys its true k-dependent count budget j1 k1",
+    "actual cohort integer is the minimal fourth-root ceiling j2 k2",
+    "summable overlap variance obeys its true k-dependent count budget j2 k2",
+    "actual cohort integer is the minimal fourth-root ceiling j17 k3",
+    "summable overlap variance obeys its true k-dependent count budget j17 k3",
+    "actual cohort integer is the minimal fourth-root ceiling j997 k9",
+    "summable overlap variance obeys its true k-dependent count budget j997 k9",
+    "actual cohort integer is the minimal fourth-root ceiling j23169162752708970943114627382699355445603465075569066753527132965271355336698663689946873706000418561 k4",
+    "summable overlap variance obeys its true k-dependent count budget j23169162752708970943114627382699355445603465075569066753527132965271355336698663689946873706000418561 k4",
+    "physical all-prefix exponents retain both lift factors and the inverse quadrature gain",
+    "variance tail has an explicit summable majorant rather than a finite-prefix convergence assertion",
+    "too-fast cofinal physical gains 2^-j are summable and do not yield the vanishing source bound",
+    "fresh native prefix has disjoint private work and one immutable oldRIGHT M2",
+    "actual private-prefix raw inventory includes every owned echo and one shared helper/spin M2",
+    "later macros never touch earlier sealed private registers M2",
+    "fresh native prefix has disjoint private work and one immutable oldRIGHT M3",
+    "actual private-prefix raw inventory includes every owned echo and one shared helper/spin M3",
+    "later macros never touch earlier sealed private registers M3",
+    "additional immutable oldRIGHT input rank is counted once, not once per new macro",
+    "new keyed star adapter equals its ALL-column chosen-sector rotation and exact off-sector identity d1 q1",
+    "every request is exactly read-only and raw helper/spin is returned d1 q1",
+    "known-key and arbitrary-key Book cuts have different actual ranks with the same full thermal carrier d1 q1",
+    "new keyed star adapter equals its ALL-column chosen-sector rotation and exact off-sector identity d2 q0",
+    "every request is exactly read-only and raw helper/spin is returned d2 q0",
+    "known-key and arbitrary-key Book cuts have different actual ranks with the same full thermal carrier d2 q0",
+    "new keyed star adapter equals its ALL-column chosen-sector rotation and exact off-sector identity d2 q3",
+    "every request is exactly read-only and raw helper/spin is returned d2 q3",
+    "known-key and arbitrary-key Book cuts have different actual ranks with the same full thermal carrier d2 q3",
+    "generic native star-plane Q_b construction fixes every other work column with a retained request",
+    "new adapter rejects oldRIGHT and individually addressed source-spin keys",
+    "sharp pure-key preparation has zero first corner and feedback source without adding a native angle primitive",
+    "the same sharp-key first-source cancellation includes entangled off-key/work tangent normals"
+  ],
+  "checks": 47,
+  "cofinal_exponents": {
+    "b": "3/4",
+    "epsilon": "1/64",
+    "lift_squared": "57/32",
+    "packet_count": "113/64",
+    "physical_gain_sum": "63/64",
+    "source_rate": "-3/32"
+  },
+  "exact_arithmetic": "Fraction and selected Golden algebraic field",
+  "generated_utc": "2026-10-25T04:29:22.867379+00:00",
+  "native_prefixes": [
+    {
+      "CX": 52,
+      "G": 10,
+      "SourceI": 28,
+      "cohorts": 2,
+      "cut_rank": 32,
+      "full_dimension": 256,
+      "paired_clock_modes": 46080,
+      "scope": "inventory/protection only; old all-column echo identities consumed",
+      "stages": 90
+    },
+    {
+      "CX": 78,
+      "G": 15,
+      "SourceI": 42,
+      "cohorts": 3,
+      "cut_rank": 64,
+      "full_dimension": 1024,
+      "paired_clock_modes": 276480,
+      "scope": "inventory/protection only; old all-column echo identities consumed",
+      "stages": 135
+    }
+  ],
+  "native_request_adapter": [
+    {
+      "CX": 8,
+      "G": 2,
+      "SourceI": 4,
+      "all_columns": 32,
+      "arbitrary_key_rank": 16,
+      "chosen_key": 1,
+      "key_bits": 1,
+      "known_blank_key_rank": 8,
+      "stages": 14
+    },
+    {
+      "CX": 8,
+      "G": 4,
+      "SourceI": 0,
+      "all_columns": 64,
+      "arbitrary_key_rank": 32,
+      "chosen_key": 0,
+      "key_bits": 2,
+      "known_blank_key_rank": 8,
+      "stages": 12
+    },
+    {
+      "CX": 20,
+      "G": 4,
+      "SourceI": 8,
+      "all_columns": 64,
+      "arbitrary_key_rank": 32,
+      "chosen_key": 3,
+      "key_bits": 2,
+      "known_blank_key_rank": 8,
+      "stages": 32
+    }
+  ],
+  "scopes": [
+    "actual old native echo identity consumed; inventory/protection only",
+    "new keyed star word checked on all32/64 columns",
+    "no long amplified/factory/Cartan/native bank replay",
+    "rational source/lift models are diagnostics, not new native gates",
+    "no native C1 selector, source birth, geometric static operator refinement or GR closure"
+  ],
+  "section_pins": [
+    {
+      "bytes": 11559,
+      "heading": "## 7af.",
+      "sha256": "9c05f47ec0feee99204aa6cdfab418e8eba7b9ec27fd6307ffa9c037005d6aea"
+    },
+    {
+      "bytes": 12595,
+      "heading": "## 7ag.",
+      "sha256": "1ee4711d957ccc8e4edc9e978f933c3b449230b0dbb96386e396355962b5e464"
+    }
+  ],
+  "source_pins": [
+    {
+      "bytes": 10935,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/cofinal_source.py",
+      "sha256": "54a810b813cc380bac97f5a67265706b7bbabf171f56e62b5ce8800c91f3ac4c"
+    },
+    {
+      "bytes": 18048,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/check_cofinal_source.py",
+      "sha256": "bda698d6f7c15b7330eb3b9c13b02593e9a5b88936fa6ef9876dc243d928a936"
+    },
+    {
+      "bytes": 9947,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/NATIVE_REQUEST.md",
+      "sha256": "fc2532c5ac9704f6df2126558949a78eadeab3f37f317e0c5d9eb79a552fa087"
+    },
+    {
+      "bytes": 19464,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/GEOMETRIC_MAP.md",
+      "sha256": "09d5d67b16ef54a36cdfc27688178ce3ec3b0e44d9b909ed4a411380c22a37ce"
+    },
+    {
+      "bytes": 29783,
+      "path": "02_REGISTRY/research/sources/d0_native_cofinal_reflected_source_2026-10-25/COFINAL_THEOREM.md",
+      "sha256": "805df65ba3eb7802d132609ef533763ef3f007c78168c6306ad91b1e455d9722"
+    },
+    {
+      "bytes": 8246,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/reflected_report.py",
+      "sha256": "b248c31f3fd3bcf377a5bb4548507d7c62f8c8d28dca0626285a8a9cec9112b7"
+    },
+    {
+      "bytes": 21592,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/PROOF.md",
+      "sha256": "627be34a64654c6a407bf5a542295f89d156c158feb584961a5e1870e3bbb3a7"
+    },
+    {
+      "bytes": 25854,
+      "path": "02_REGISTRY/research/sources/d0_exact_report_reflected_cohorts_2026-10-25/COHORT_THEOREM.md",
+      "sha256": "c90e41bd4c97e63427e38e849c8a96a842c8abc2615f1770e6669a917c8efaa0"
+    },
+    {
+      "bytes": 17833,
+      "path": "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c"
+    },
+    {
+      "bytes": 19194,
+      "path": "02_REGISTRY/research/sources/d0_native_matrix_collective_return_2026-10-25/PROOF.md",
+      "sha256": "0c626bcb01f335d864f986a6783ba9e5ce04a5a9e015cae96cd4c9f45359da29"
+    }
+  ],
+  "status": "PASS"
+}

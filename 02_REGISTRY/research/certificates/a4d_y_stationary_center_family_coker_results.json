@@ -1,0 +1,13 @@
+{
+  "schema": "a4d-y-stationary-center-amplitude-family-coker-v2",
+  "first_order_y_center_parameter": "s",
+  "curvature_amplitude_parameter": "kappa",
+  "stationary_connection_coker_C2": [
+    "351402359*kappa**2/2108160",
+    "21506403637*kappa**2/154949760"
+  ],
+  "joint_phase_common_xi3_squared_witness_pairing": "-22209*kappa**2",
+  "exact_parameter_dependence": "both outputs are kappa^2 times the pinned values and independent of s",
+  "scope": "normalized surviving Y-curvature germ at z=1; exact order-delta^2 normal jet; phase-common metric readout and arbitrary degree-three center corrections",
+  "nonclaim": "does not rule out spatially varying higher center corrections, other curvature germs, h-dependent nonanalytic branches, or establish the global response theorem"
+}

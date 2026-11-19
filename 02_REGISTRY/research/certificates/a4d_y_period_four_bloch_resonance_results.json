@@ -1,0 +1,721 @@
+{
+  "schema": "a4d-y-period-four-bloch-resonance-v1",
+  "carrier": "original six-based-plaquette connection Hessian; 4^4 periodic grid",
+  "background": "flat solder; exact period-four Y wave; Cayley amplitude z=1; dual center d=0",
+  "bloch_representatives": "k=(0,m1,m2,m3), mj in Z/4; quotient by k~k+(1,1,1,1)",
+  "zero_sector": {
+    "representative": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "exact_QQ_rank": 94,
+    "kernel_dimension": 2,
+    "kernel_equals_owned_center": true
+  },
+  "nonzero_sectors": [
+    {
+      "representative": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        2,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        2,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        3,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        3,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        3,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        0,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        1,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        1,
+        3,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        0,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        1,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        2,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        2,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        2,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        3,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        3,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        2,
+        3,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        0,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        0,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        0,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        0,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        1,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        1,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        1,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        2,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        2,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        2,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        3,
+        0
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        3,
+        1
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    },
+    {
+      "representative": [
+        0,
+        3,
+        3,
+        3
+      ],
+      "rank_mod_prime": 96,
+      "prime": 1009,
+      "sqrt_minus_one": 469
+    }
+  ],
+  "all_64_blocks_hermitian": true,
+  "all_nonzero_sectors_exactly_nonsingular": true,
+  "exactness": "rank 96 modulo the split prime 1009 implies nonzero determinant over Q(i); all rational denominators are checked invertible before reduction",
+  "scope_fence": [
+    "finite L=4 Bloch spectrum only",
+    "connection Hessian at fixed flat solder, not the full joint metric-link Hessian",
+    "does not control larger refinement lattices or near-resonant modes",
+    "does not prove nonlinear continuation, source matching, or normalized response"
+  ]
+}

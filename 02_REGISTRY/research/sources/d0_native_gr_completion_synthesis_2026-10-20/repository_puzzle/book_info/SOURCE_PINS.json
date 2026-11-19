@@ -1,0 +1,49 @@
+{
+  "repository_head": "2c592f9b9437cd302fcd39352b85212341bff968",
+  "files": [
+    {
+      "path": "02_REGISTRY/research/A4D_GLOBAL_RESULT_COMPOSITION_2026_10_20.md",
+      "sha256": "aa593fa464a4d7e067d0a1ba763121fd229192b6d5c79d6f9b20d06469cb1d25"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK_FLOW_HESSIAN_EQUALS_ORIGINAL_ARCHIVE_METRIC_AND_FUTURE_SOURCE_SELECTOR_2026_10_19.md",
+      "sha256": "fb22e6afbf20b471e71e80b1f8bc2c9425106eed7cd72b428d9ac3ef14318a7c"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_ORIGINAL_BOOK_ALL_PATHS_FLOW_PRESSURE_ACTION_AND_EXACT_HISTORY_SCHUR_2026_10_19.md",
+      "sha256": "21300f0d518581bf32f2bfb82e4eece9724f84d454b17db474daa3bc1d4ed778"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_BOOK_INFO_ENDPOINT_COHOMOLOGY_FULL_GRAVITY_QUOTIENT_2026_10_19.md",
+      "sha256": "887840b4cf2b341c72b49e5f53d395923ee60a2fc605dc1274f073b544290e46"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Research/SchurStationaryTransfer.lean",
+      "sha256": "334c4593018a243f4924beeac058b0e9529cdc0baa507a68deff2e66aa7d1784"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Evolution/FeshbachSchurTimeDelayOwner.lean",
+      "sha256": "2e06975acfff731956536189715a7d4427a75fdfbcf7ed94b6454fd336929578"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/VNext2/ScenePathHistoryCanonicity.lean",
+      "sha256": "2ed1da971417e0949b9f225ad768d80314fbafe0f930b0fcb8c0a662e0de66e0"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_PRICE_EXACT_VARIATIONAL_UNFOLDING.md",
+      "sha256": "d92aabf2d46d9ac7d8d9aa3bf5ed66a58f25bb83ca4460d66d25648c62f7e10b"
+    },
+    {
+      "path": "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/causal_boundary_completion.md",
+      "sha256": "46c08c8295401cb42531ec3b974709638ec5f913dbd1b64c0210efa3b99953ba"
+    },
+    {
+      "path": "03_FORMALIZATION/D0/Geometry/A4DObserverPositiveExterior.lean",
+      "sha256": "3b6cc6b4d726af1ab33967d090b663ce1ae0236ba2953f43bd438c9a274a12b1"
+    },
+    {
+      "path": "02_REGISTRY/research/A4D_NATIVE_RELATIVE_OBSERVER_JOINT_LIFT.md",
+      "sha256": "3d3b0be9aeace97afea91ef9ca6b18cbb495c58999c1d16280b17ba6336d97ef"
+    }
+  ]
+}

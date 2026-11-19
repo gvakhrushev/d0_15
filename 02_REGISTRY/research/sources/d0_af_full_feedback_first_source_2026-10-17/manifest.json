@@ -1,0 +1,27 @@
+{
+  "source_ref": "cb513f74b3b9ae74d5f2dc02c126d21c9dfbefa7",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "files": {
+    "RESULT_RU.md": {
+      "sha256": "4b3b78274de1cc700dbdae605bb8fe0047e121ef55b611034162e41cea338086",
+      "git_blob_sha": "ae4b985bc7bf59ad707f6046e19bff8b10e607c1"
+    },
+    "check_feedback_source.py": {
+      "sha256": "1a665162fe2a582da28d5d5be4b9cf4b7d029015ba53712e7de663dab81099a6",
+      "git_blob_sha": "f1b0ec855b438348485c81303edcbee6fbb9c2cc"
+    },
+    "receipt.json": {
+      "sha256": "5e114c232b75143651e04432dab659428f85cc53b3ccd2c6bb6b1bd976743f79",
+      "git_blob_sha": "ff53f18440bbad97dd3ab60b81fb7d0c923bc411"
+    },
+    "check_joint_extension.py": {
+      "sha256": "e7a4b506c3486bd38496adc1d2937dbe33329b6c74be3b7623571e2f41f53ade",
+      "git_blob_sha": "63b03e1023198f828c43b9942a5d6dbf6f20f745"
+    },
+    "joint_receipt.json": {
+      "sha256": "a33d79eef14429475cc1206ed9f90ac5bdb8a7ce0182b0a39e581d32191ec6a0",
+      "git_blob_sha": "b18b42291c15cb8a417cf43202bdc6d555a85c25"
+    }
+  }
+}

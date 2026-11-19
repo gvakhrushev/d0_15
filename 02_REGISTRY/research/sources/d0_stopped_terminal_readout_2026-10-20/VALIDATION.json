@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-20",
+  "owner": "Draft #334; compact terminal source application",
+  "owned_source_ref": "6e86ccbe2d0df83b920bc9307b5f82cb686b5010",
+  "integration_base": "441fac23c1da2d51d524ba96e8a18f2a1d5dc98f",
+  "isolated_replay_ref": "7dcca59659e9c6c261d2b3b01a34cda20f9f82a6",
+  "concurrent_disjoint_input": "6b5fdc323b2109e7955d55dcc6f209b76835f0f4",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows",
+    "numpy": "2.2.6",
+    "sympy": "1.12.1"
+  },
+  "checks": [
+    {
+      "command": "python -B -W error 02_REGISTRY/research/sources/d0_stopped_terminal_readout_2026-10-20/check_terminal_readout.py",
+      "exit_code": 0,
+      "result": "PASS; no stderr; parsed output equals frozen receipt in authoring environment"
+    },
+    {
+      "command": "python -B -W error 02_REGISTRY/research/certificates/a4d_stopped_terminal_readout_check.py",
+      "exit_code": 0,
+      "result": "PASS in primary checkout and isolated managed worktree at isolated_replay_ref; clean before and after; all frozen pins unchanged"
+    },
+    {
+      "command": "python tools/validate_repo.py",
+      "exit_code": 0,
+      "result": "PASS warnings=0; claims889 assumptions31 aliases58 formal_support183 lean_closure918"
+    },
+    {
+      "command": "python tools/validate_work.py",
+      "exit_code": 0,
+      "result": "PASS active work plane clean and enforced"
+    },
+    {
+      "command": "python tools/validate_agent_protocol.py",
+      "exit_code": 1,
+      "result": "FAIL_AGENT_PROTOCOL: gravity assembly: attempt question digest does not match its scope/assumptions",
+      "baseline": true
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "result": "PASS"
+    }
+  ],
+  "baseline_failure_scope": "Assembly/agent failure was observed on unchanged HEAD441fac23 before this packet. No contract.json, applications.json, assembly/tooling code, expected evidence, lifecycle or claim registry is edited by this application. The later concurrent input changes only two independent source files; all owned mathematical inputs retain their source pins.",
+  "scope": "Analytic conditional terminal cap-error first-source estimate and finite exact/numerical controls. No full research replay or fresh Lean build: formal source unchanged; parent remains Draft with original scientific terminal open.",
+  "frozen_artifacts": {
+    "RESULT.md": "84826e6ad1951513e3c9fed93db8d4b47ce3d23f135a4efe48fcddd43803984a",
+    "check_terminal_readout.py": "96656ced0f60a5f05943dfc7c71c1d7153bf7c3334e69e7ae5aa7d95f662ef5d",
+    "TERMINAL_READOUT.json": "0dd8fd7811ee046d22288b8cedc0709992a9675d9cf63289c730a426cb577d11",
+    "SOURCE_PINS.json": "670bd1174f451c1c393a92a2fc9f08be8dfb042cf528ba6c989f12d123509c43",
+    "REVIEW.md": "6099a3c7c1e5de6fbc0d8d7e002a39bfc9e10e3885534f738090414900f4910d"
+  },
+  "entrypoint_sha256": "e5754c0ea96b538d4e7737af0885384262ff5f57d3b470af198b2749574fb1bd",
+  "isolated_replay_ref_scope": "Local committed verification snapshot; reviewed scientific artifact bytes are pinned by SHA256 and replicated unchanged in the published checkpoint. This local commit is not asserted to be a published ref."
+}

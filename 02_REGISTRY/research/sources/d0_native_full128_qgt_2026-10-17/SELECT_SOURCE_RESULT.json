@@ -1,0 +1,23 @@
+{
+  "schema": "native-select-reflector-source/1",
+  "source_git_blob": "b35b1e40983878ce0e09f58bfc213c133a6dd70d",
+  "stdout_sha256": "36bad27769d64d99a2f7dd269480a5f9d75860821e9abaa5881b239bd4f07d76",
+  "normal_exit_code": 0,
+  "optimized_exit_code": 0,
+  "stdout_byte_identical": true,
+  "status": "PASS",
+  "exact_controls": 16,
+  "source_equation": "dM=-2(dN A+N dA)",
+  "full_native_qgt": "Q=4p^2 Z^*Z-4p^4(M^*Z)^*(M^*Z)",
+  "rational_fixture": {
+    "SELECT_A": "diag(3/5,5/13)",
+    "SELECT_B": "diag(4/5,12/13)",
+    "dA": "[[0,1/7],[1/7,0]]",
+    "M_star_dM": "[[0,256/3185],[-256/3185,0]]",
+    "tr_Q": "(2786048-884992 sqrt(5))/10144225",
+    "tr_dM2": "512/2401"
+  },
+  "boundary": "2-label exact algebra of native identities, not independently reproduced literal 64 Walsh labels or full16 rank10",
+  "physical_action_selected": false,
+  "original_GR_terminal_closed": false
+}

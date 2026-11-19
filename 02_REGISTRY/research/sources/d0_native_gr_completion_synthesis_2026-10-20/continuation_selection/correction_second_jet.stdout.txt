@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "source_preserving_padding_determinant": "-(kappa*g)^2",
+  "general_correction_determinant": "Kaa*(Kuu-2*kappa*g*D)-(Kau-kappa*g)^2",
+  "zero_Kaa_requires": "Kau=kappa*g",
+  "J2_multiplier_mixed_entry": "-mu*g/gamma_h",
+  "controls": "Exact algebra only; no admitted correction or physical closure claimed."
+}

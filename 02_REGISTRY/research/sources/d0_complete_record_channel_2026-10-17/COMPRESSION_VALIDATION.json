@@ -1,0 +1,27 @@
+{
+  "analytical_review": "Root and independent read-only peer: global22 word span (not blockwise Kraus rotations), Choi support, complex Gram transpose, ordered Sylvester source, homogeneous proper-link C1 limit, actual preparation error and operational-gain interface. Period1 Taylor coefficient2pi corrected.",
+  "base": "96041dac11b79ab528acd498c7cd326431b3e01c",
+  "bounded_fixture_scope": "Actual full8x16 central projectors/Walsh jump identities; small noncommuting complex Gram/Sylvester controls are not a full Choi or entropy computation.",
+  "consumed_owner_pins": {
+    "02_REGISTRY/research/A4D_NATIVE_FULL_LORENTZ_ADJOINT_SOURCE.md": "a0a8a0b7389c7a6120ebbe402d111bf55cd2a00730403a00ffceca73548e7915",
+    "02_REGISTRY/research/A4D_NATIVE_RETAINED_RECORD_ADMISSION.md": "05c50904b149fcffcc93d8d52ffa66da260654cf9bfc47b80354d59fef4fe336",
+    "02_REGISTRY/research/sources/d0_coherent_af_cost_info_2026-10-14/RESULT.md": "bb918a2f27548632de3a42114ab4ed4ed3e8ade5637b853d1928e678a228a05a",
+    "02_REGISTRY/research/sources/d0_operational_gain_2026-10-15/RESULT.md": "428bdda31e27ea6e7bf18ac93528fa4bc21c28677026341af2e86a36ac67ff52"
+  },
+  "date": "2026-10-17",
+  "exact_checks": 40,
+  "helper_sha256": "d75d1079efc68bebc156ffae393addfdc9d114eccc6690d92fdc6900a73d0150",
+  "normal_optimized_byte_identical": true,
+  "old_scientific_replay": false,
+  "output_sha256": "ceecf31863d2fccbda01c7a3b6a5544723a4ef2438eb56d745feabcb790b06ef",
+  "physical_Info_fullcode_or_GR_selected": false,
+  "python": "3.9.6",
+  "rank_spectrum_or_record_history_census": false,
+  "remote_CI_or_independent_acceptance_claimed": false,
+  "source_pins": {
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat.py": "bf13f57c902da0005634ae6834c0b4e3ffd2df1aa196a61ebc0ff3dc0351c7da",
+    "02_REGISTRY/research/sources/d0_complete_record_channel_2026-10-17/check_flat_relaxation.py": "0dcb79f0959ecd4f4484a500ef1c0e53e47d95b4a95feb874d16840f56cc9ec9"
+  },
+  "status": "PASS_NEW_BOUNDED_COMPRESSION_SOURCE",
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,25 @@
+{
+  "GR_closed": false,
+  "all_mesh_physical_refinement": false,
+  "exact_checks": 120,
+  "executed_mathematical_mutants_rejected": 6,
+  "file_sha256": {
+    "02_REGISTRY/research/A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md": "6612a35e7a4e7e69277571375a4d9dc575b88dabaa016516b6af57a30840580a",
+    "02_REGISTRY/research/sources/d0_golden_cylinder_curvature_2026-10-15/INPUTS.json": "864dc486e03a7987b13c2b7640ab8d471f01122db2d13392ca417ace0508773c",
+    "02_REGISTRY/research/sources/d0_golden_cylinder_curvature_2026-10-15/check_golden_curvature.py": "2cf15a9dcffe6c24bd609d88db9825b999ec3201b0ea724ab29f11008372ed3a",
+    "02_REGISTRY/research/sources/d0_golden_cylinder_curvature_2026-10-15/mutations.json": "cf8063e793225a8da7a0304958ecb0d4c4c3a59fb0f24764c79fdedb3a52cb97",
+    "02_REGISTRY/research/sources/d0_golden_cylinder_curvature_2026-10-15/result.json": "795856aa11682a919d11de37b710b1650198bc675b8f5edefff59bec6fdc8762",
+    "02_REGISTRY/research/sources/d0_golden_cylinder_curvature_2026-10-15/test_mutations.py": "13b43f02f20d4b90fe412a9aff770d0f0690947cd7c9bb6c317a74b44ba39af4"
+  },
+  "full_repository_replay": false,
+  "independent_scientific_acceptance": false,
+  "native_full_action_binding": false,
+  "new_Lean_compilation": false,
+  "old_normal_volume_suite_repeated": false,
+  "optimized": "PASS_IDENTICAL_JSON",
+  "ordinary": "PASS",
+  "python": "3.13.5",
+  "schema": "d0-golden-curvature-validation/1",
+  "source_base": "51b1d1a1546305814f8751b9cf9800531d721400",
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "input_sha256": "36a091aff2dc826aeabfac0c60a453a80c5bbfc23ecdaf0fd554b17cd8dd1bf3",
+  "scope": "All original128 rows, cap2; rank16 Fourier purification/16 RIGHT columns of owned fixture, not primary full-site RIGHT128 evaluation.",
+  "full_leaf_count": 255,
+  "normalization": 0.9999999999999998,
+  "entropy_phi": {
+    "pointer": 0.11373854416626998,
+    "coherent_flag": 0.09105620519738364,
+    "coherence": 0.022682338968886342
+  },
+  "first_source_link_and_preparation": {
+    "pointer": 0.028978102003871794,
+    "coherent_flag": 0.023410417994998267,
+    "coherence": 0.005567684008873527,
+    "coherent_frozen_preparation": 0.01723779226809846,
+    "code_test_cost": -0.00799479417388665
+  },
+  "adjoint_regularization_errors": [
+    1.7248992151101816e-06,
+    2.142643427266444e-08,
+    4.4277206207032904e-10
+  ],
+  "finite_difference_errors": [
+    [
+      1.0968170816028078e-11,
+      4.2560236584998634e-11
+    ],
+    [
+      2.5626722965910176e-12,
+      1.1396092403082037e-13
+    ]
+  ],
+  "noncentral_reference_control": {
+    "original_nonblank_controller_label": 1,
+    "commutator_entry_abs": 2.5368336656607634e-10
+  },
+  "reference": "Test product reference uniform64 x native Golden(p,p^2); not selected physical full label/controller prices.",
+  "physical_Info_selection_or_GR_closure": false,
+  "validation_seconds": 2.052,
+  "runtime": "Python 3.12.14; NumPy 2.3.5; SymPy 1.14.0",
+  "runtime_note": "Bundled Python/NumPy; pure-Python SymPy/mpmath from existing user site appended after NumPy import. No packages installed; no runtime changed.",
+  "stderr": "",
+  "checker_sha256": "ae1cf6e60cfe6bf94893e91ac777dfc52f2afcccc0f4e72516338b82de59a3d8"
+}

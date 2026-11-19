@@ -1,0 +1,47 @@
+{
+  "status": "PASS: exact branch-exchange RAW cancellation for stated coherent cut",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "old_input_rank": 16,
+  "conditional_clean_h": true,
+  "success_centre_return_scalar": 0.4216531432556579,
+  "success_centre_return_formula": "p^3*(1+sqrt(p))",
+  "raw_J_second_derivative_per_q": 2.8318071318377027e-06,
+  "conditional_terminal_CQ_second_derivative_per_q": 8.312347684940109,
+  "retained_records": "all H/Q outcomes; both NC1 dark 11 sectors checked",
+  "actual_finite_word_checks": [
+    {
+      "q": 19,
+      "turn": 2,
+      "epsilon": 0.09217860299861691,
+      "recorded_delta": 0.17813356384252593,
+      "success_return_diag_0": 0.42450988801305695,
+      "success_return_diag_1": 0.4152161922069166,
+      "success_feedback_abs_difference": 1.0164395367051604e-20,
+      "all_branch_dilation_retains_success_and_failure": true
+    },
+    {
+      "q": 66,
+      "turn": 7,
+      "epsilon": -0.010494605751098618,
+      "recorded_delta": -0.02039448630428817,
+      "success_return_diag_0": 0.4211001362338953,
+      "success_return_diag_1": 0.42215971119687323,
+      "success_feedback_abs_difference": 0.0,
+      "all_branch_dilation_retains_success_and_failure": true
+    },
+    {
+      "q": 613,
+      "turn": 65,
+      "epsilon": -0.002272848761208479,
+      "recorded_delta": -0.004417205185865831,
+      "success_return_diag_0": 0.421537314462134,
+      "success_return_diag_1": 0.42176679385683014,
+      "success_feedback_abs_difference": 0.0,
+      "all_branch_dilation_retains_success_and_failure": true
+    }
+  ],
+  "bounded_real_abort_controller_physically_compiled": false,
+  "actual_CQ_cut_and_full_Book03_Info_selected": false,
+  "original_full_Geo_Fourier_clock_compiled": false,
+  "GR_closed": false
+}

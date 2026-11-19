@@ -1,0 +1,74 @@
+# Golden matrix-return compiler -> existing cylinder curvature source
+
+Read [the proof and actual consumer](../../A4D_GOLDEN_DETERMINANT_COMPILER.md).
+This continues the [already-owned cylinder reading](../../A4D_GOLDEN_CYLINDER_CURVATURE_READOUT.md),
+not the discovery of that three-setting formula again.
+
+Input: a four-dimensional self-adjoint shape matrix A and a small scale u.
+The positive transmission D=p(I-uA) has the literal golden block at u=0.
+Its full unitary dilation and exterior-power return produce the Jacobian
+probability p^4 det(I-uA), without programming a scalar determinant into an effect.
+The same block has exactly the logdet feedback price -log of this return
+probability at the declared z=1. All histories, outcomes and source jets remain.
+
+```sh
+python 02_REGISTRY/research/certificates/a4d_golden_determinant_compiler_check.py
+python -O 02_REGISTRY/research/certificates/a4d_golden_determinant_compiler_check.py
+python 02_REGISTRY/research/sources/d0_golden_determinant_compiler_2026-10-16/test_mutations.py
+```
+
+[Inputs](INPUTS.json), [exact output](result.json), [executed mutations](mutations.json),
+[local validation](VALIDATION.json). Python and SymPy only; no downloads or archives.
+No old checker is executed by this narrow consumer. Parent declaration hashes
+are checked independently of the new mathematical identities.
+
+The auxiliary full exterior space has dimension 256, not the native 16-state CAR
+carrier. A physical implementation by the actual AF/CAR primitives, matrix field
+binding, choice of this signed contrast by the full action, and joint/refinement
+GR closure remain open. The pre-existing actual second AF-record source is not
+replaced by the geometric reading. This packet changes no scientific claim status.
+
+The concurrent [complete AF price](../../A4D_NATIVE_JACOBIAN_CONTROLLED_RECORD_SOURCE.md)
+is consumed by the explicit effect substitution gamma=2p^6. It preserves the
+golden blank and gives B_n+sum G(gamma u_i), with the old positive curvature
+coefficient multiplied by gamma. This is coefficient-level composition, not
+a proof that an auxiliary controller has no physical or archive cost.
+
+## Full-state and code-price continuation
+
+The [coherent compilation theorem](../../A4D_COHERENT_COMPILATION_COST_DESCENT.md)
+now constructs an additional reversible controller completion. Its corrected
+state, comparator metric and first sources agree with the canonical AF program
+on a reference-compatible same-type path encoding; the complete code price
+has the explicit constant overhead k. The original uncompleted controller is
+not retroactively declared equivalent, and unchanged classical pointer
+preservation or primitive admission is not assumed.
+
+The [preparation synthesis](../d0_coherent_compilation_2026-10-16/PREPARATION_SYNTHESIS.md)
+consumes the actual preparation-stationary owner and gives the exact price
+k+6-log Z/log(phi)+D(Phi sigma||Phi sigma_star)/log(phi), including all coherent
+preparations in that owner's domain. Normalized spatial aggregation is a
+separate conditional synthesis, not a selected native measure or GR closure.
+
+## History density and the independent-connection route
+
+The [history-density synthesis](../../A4D_HISTORY_DENSITY_PALATINI_SYNTHESIS.md)
+constructs child-dependent golden clocks and preserves the full KL-weight price.
+It proves an exact density/coframe identity of the existing Lorentz star sector,
+then carries all coframe/link/measure equations to a nonflat conditional
+Einstein–scalar control. This is not a substitution of Lorentz Palatini for
+the compiler's actual positive-record curvature price. Native full action,
+clock/update admission, observer terms and the flat-shear boundary remain open.
+
+## Coherent aggregation before the complete central price
+
+The [central-record theorem](../../A4D_CENTRAL_RECORD_VARIATIONAL_EQUIVALENCE.md)
+constructs a different final program: actual signed Lorentz path overlaps feed
+one effect on both whole AF blocks. The literal full terminal price then has
+all geometric Euler rows equal to one strictly positive multiple of the given
+star-action rows, exactly rather than through a curvature expansion. It keeps
+all preparation ranks, the geometric record spectator and its code cost. Its
+faithful preparation has a computed tail tilt; both spatial reading and its
+first source converge under the child-clock construction. This is realizability
+and exact source equivalence, not proof that D0 physically selects this global
+program or that the original native GR/refinement terminal is closed.

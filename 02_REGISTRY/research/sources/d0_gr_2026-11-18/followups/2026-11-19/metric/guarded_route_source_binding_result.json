@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "actual_ideal_fredkin_prefix_h0_max_error": 5.551115123125783e-17,
+  "actual_ideal_fredkin_prefix_h1_max_error": 2.7755575615628914e-17,
+  "both_h_outcomes_retained": true,
+  "h0_probability": 0.6180339887498949,
+  "h1_probability": 0.3819660112501052,
+  "h0_W_equals_independent_v_on_all_old_inputs": true,
+  "h1_W_equals_original_writer_with_old_P_in_D": true,
+  "full_logical_word_inventory": {
+    "births": 8,
+    "G": "2q+4",
+    "CX": 43,
+    "SourceI": 8,
+    "ideal_Toffoli": 4
+  },
+  "route_basis_count": 896,
+  "conditional_delta_to_unconditional_success_delta": 0.3819660112501052,
+  "guarded_route_map_rank": 38,
+  "guarded_traceless_source_rank": 37,
+  "guarded_independent_programme_source_rank": 19,
+  "exact_rank_proof": "prior 38 modular minor and invertible block [[1,p],[0,p²]]/p²",
+  "first_CX_positive_mark": "I+X_W X_port",
+  "first_CX_limit_normalized_by_unconditional_signal": "(a/4) I + (a p/4) Z_P",
+  "first_CX_independent_P_slope": -0.24293413587832285,
+  "declared_complementary_CQ_independent_P_slope": 1.9622791062588716,
+  "full_guarded_writer_raw_parity_all_h_outcomes": [
+    {
+      "q": 19,
+      "turn": 2,
+      "full_feedback_plus": 1.3176221461931375e-05,
+      "full_feedback_minus": 1.3176221461931373e-05,
+      "full_feedback_delta": 1.6940658945086007e-21,
+      "unconditional_success_field_delta": 0.13377592834702895,
+      "full_h_H_Q_code_CQ_independent_P_source": 1.9112783538079121
+    },
+    {
+      "q": 66,
+      "turn": 7,
+      "full_feedback_plus": 1.3104874111218956e-05,
+      "full_feedback_minus": 1.3104874111218957e-05,
+      "full_feedback_delta": -1.6940658945086007e-21,
+      "unconditional_success_field_delta": -0.015576569434893444,
+      "full_h_H_Q_code_CQ_independent_P_source": 1.9616382968041424
+    },
+    {
+      "q": 613,
+      "turn": 65,
+      "full_feedback_plus": 1.3103970927863018e-05,
+      "full_feedback_minus": 1.3103970927863018e-05,
+      "full_feedback_delta": 0.0,
+      "unconditional_success_field_delta": -0.0033744096278062073,
+      "full_h_H_Q_code_CQ_independent_P_source": 1.9622490613606722
+    }
+  ],
+  "all_route_finite_branch_checks": [
+    {
+      "q": 19,
+      "turn": 2,
+      "epsilon": 0.09217860299861691,
+      "conditional_field_delta": 0.35022992728909225,
+      "unconditional_success_delta": 0.13377592834702895,
+      "max_all_896_dummy_branch_error": 0.0,
+      "first_CX_XX_witness_error": 3.0531133177191805e-16
+    },
+    {
+      "q": 66,
+      "turn": 7,
+      "epsilon": -0.010494605751098618,
+      "conditional_field_delta": -0.040779988208673776,
+      "unconditional_success_delta": -0.015576569434893444,
+      "max_all_896_dummy_branch_error": 0.0,
+      "first_CX_XX_witness_error": 2.1649348980190553e-15
+    },
+    {
+      "q": 613,
+      "turn": 65,
+      "epsilon": -0.002272848761208479,
+      "conditional_field_delta": -0.008834319097561532,
+      "unconditional_success_delta": -0.0033744096278062073,
+      "max_all_896_dummy_branch_error": 0.0,
+      "first_CX_XX_witness_error": 4.85722573273506e-14
+    }
+  ],
+  "ideal_Toffoli_factories_and_extra_failure_branches_compiled": false,
+  "Book03_cost_info_chosen": false,
+  "full_guard_euler_and_GR_closed": false
+}
