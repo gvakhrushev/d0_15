@@ -1,0 +1,113 @@
+{
+  "all_column_householder": {
+    "common_coefficient_denominator": 124992,
+    "coherent_label_bits": 25,
+    "M_terms_per_lookup": [
+      4155984,
+      3853424,
+      4098528,
+      3853424
+    ],
+    "logical_Kraus_scale": "a^3 * 124992/33554432",
+    "old_CAR_columns_each_SITE": 16
+  },
+  "clean_car_preparation": {
+    "common_coefficient_denominator": 64,
+    "coherent_label_bits": 8,
+    "M_terms_per_lookup": [
+      224,
+      206,
+      220,
+      206
+    ],
+    "logical_Kraus_scale": "a^3 * 64/256",
+    "old_CAR_columns_each_SITE": 1
+  },
+  "declared_near_car_preparation": {
+    "common_coefficient_denominator": 768,
+    "coherent_label_bits": 13,
+    "M_terms_per_lookup": [
+      2208,
+      2120,
+      2108,
+      2122
+    ],
+    "logical_Kraus_scale": "a^3 * 768/8192",
+    "old_CAR_columns_each_SITE": 1
+  },
+  "near_completion_bounds": [
+    {
+      "D": 48,
+      "state_error_bound": 0.16060681744320102
+    },
+    {
+      "D": 768,
+      "state_error_bound": 0.040652147836134474
+    },
+    {
+      "D": 384,
+      "state_error_bound": 0.05711445207703958
+    },
+    {
+      "D": 768,
+      "state_error_bound": 0.040652147836134474
+    }
+  ],
+  "three_canonical_birth_flags": {
+    "births": 3,
+    "successful_flag": "000",
+    "amplitudes": [
+      "a^3",
+      "a^4",
+      "a^5",
+      "a^6"
+    ]
+  },
+  "literal_phase_meter": {
+    "retained_heads": 2,
+    "CX": 7,
+    "G": 3,
+    "additional_births": 2,
+    "click_difference_at_filling_plus_vs_minus": "p^5"
+  },
+  "literal_parity_filler_rotation": {
+    "stages": 26,
+    "all_old_columns": 128,
+    "pairs": [
+      [
+        2,
+        14
+      ],
+      [
+        6,
+        10
+      ]
+    ],
+    "cosine": "9-16p",
+    "sine": "8a-12ap"
+  },
+  "two_real_filler_local_obstructions": [
+    {
+      "M": 32,
+      "prime": 211,
+      "a_residue": 38,
+      "valuation": 1
+    },
+    {
+      "M": 64,
+      "prime": 139,
+      "a_residue": 52,
+      "valuation": 1
+    }
+  ],
+  "A89_intermediate_work_contrast": {
+    "ready": "p^2",
+    "changed_CAR_lsb_mass": "at least (p^3/4)^2",
+    "work_contrast_per_moved_mass_interval": [
+      "-.745945",
+      "-.745944"
+    ]
+  },
+  "full_original_Cost_Info_equivalence_proved": false,
+  "GR_closed": false
+}
