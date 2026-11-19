@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "primary": "a03c0e1f0",
+  "actual_selector": {
+    "exact_and_overshoot_words": [
+      24157817,
+      14930352
+    ],
+    "existing_setting_counts": [
+      5644800,
+      4939200,
+      4390400,
+      3087000,
+      1580544,
+      548800,
+      115200,
+      11025
+    ],
+    "active_uniform_leaf_fraction": "20316969/39088169",
+    "active_born_interval": [
+      ".6085",
+      ".6087"
+    ],
+    "matched_sector_priors_with_one_overshoot_echo_nu_1": 9,
+    "positive_integer_price_even_power_obstruction": true
+  },
+  "exact_fixed_tariff_model_checks": [
+    {
+      "nu": 1,
+      "mixed_affine_slice_strict": true,
+      "visible_bit_derivative_negative": true
+    },
+    {
+      "nu": 2,
+      "mixed_affine_slice_strict": true,
+      "visible_bit_derivative_negative": true
+    }
+  ],
+  "field_independent_tail_probe_fixture": {
+    "moment_determinant": "144/1225",
+    "recovered_economic_share": "4/13",
+    "share_error_multiplier_upper_bound": "7.12"
+  },
+  "original_book03_price_derived": false,
+  "GR_closed": false
+}

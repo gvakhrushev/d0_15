@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "old_spin_port_columns_per_field_arm": 8,
+  "physical_diagnostic_all_columns": 2048,
+  "field_arms": [
+    "minus",
+    "vacuum",
+    "plus"
+  ],
+  "addressed_field_calls_per_arm": 1044,
+  "addressed_diagnostic_calls_per_arm": 12,
+  "phase_index": 28,
+  "centered_angle_interval": [
+    "0.0479273",
+    "0.0479274"
+  ],
+  "finite_motion_gap_squared_interval": [
+    "0.004",
+    "0.005"
+  ],
+  "GR_closed": false,
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round82/device/check_prepaid_report.py": "d7bb38033ccfade7f29b76195928b18ec507c82cc633ab7e3e67f6d1a57bc99f",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "c9b764111a88d440cb76d6215de1f687713ae6c1a336768ce2bd37898fcfc98d",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d"
+  }
+}

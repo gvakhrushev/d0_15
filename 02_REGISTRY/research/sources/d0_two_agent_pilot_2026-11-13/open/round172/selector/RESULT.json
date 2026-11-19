@@ -1,0 +1,374 @@
+{
+  "GR_closed": false,
+  "address_probabilities_by_index_interval": [
+    [
+      "0.391439347434",
+      "0.391439347435"
+    ],
+    [
+      "0.169080494812",
+      "0.169080494813"
+    ],
+    [
+      "0.147945432960",
+      "0.147945432961"
+    ],
+    [
+      "0.131507051520",
+      "0.131507051521"
+    ],
+    [
+      "0.092465895600",
+      "0.092465895601"
+    ],
+    [
+      "0.047342538547",
+      "0.047342538548"
+    ],
+    [
+      "0.016438381440",
+      "0.016438381441"
+    ],
+    [
+      "0.003450622343",
+      "0.003450622344"
+    ],
+    [
+      "0.000330235341",
+      "0.000330235342"
+    ]
+  ],
+  "classical_dispatch_physical_tariff_proved": false,
+  "contiguous_intervals": {
+    "best_expected_at_minimum_maximum_depth": {
+      "expected_Golden_tape_cost_interval": [
+        "5.316051901545",
+        "5.316051901546"
+      ],
+      "expected_LC1_births_with_one_tail_per_read_interval": [
+        "7.693462586300",
+        "7.693462586301"
+      ],
+      "expected_birth_reads_Qp": [
+        -361104311877978,
+        584279050102717
+      ],
+      "expected_birth_reads_interval": [
+        "3.846731293150",
+        "3.846731293151"
+      ],
+      "maximum_Golden_cost": 71,
+      "maximum_birth_reads": 49,
+      "minimum_Golden_cost": 2,
+      "minimum_birth_reads": 1,
+      "order": [
+        5,
+        2,
+        6,
+        8,
+        7,
+        4,
+        1,
+        3,
+        0
+      ],
+      "raw_leaf_count": 349,
+      "raw_leaf_count_by_reads": {
+        "1": 1,
+        "4": 3,
+        "5": 4,
+        "6": 6,
+        "7": 5,
+        "8": 7,
+        "9": 7,
+        "10": 7,
+        "11": 7,
+        "12": 7,
+        "13": 6,
+        "14": 8,
+        "15": 8,
+        "16": 8,
+        "17": 8,
+        "18": 8,
+        "19": 8,
+        "20": 8,
+        "21": 8,
+        "22": 8,
+        "23": 8,
+        "24": 8,
+        "25": 8,
+        "26": 8,
+        "27": 8,
+        "28": 8,
+        "29": 8,
+        "30": 8,
+        "31": 8,
+        "32": 8,
+        "33": 8,
+        "34": 8,
+        "35": 8,
+        "36": 8,
+        "37": 8,
+        "38": 8,
+        "39": 8,
+        "40": 8,
+        "41": 8,
+        "42": 8,
+        "43": 8,
+        "44": 8,
+        "45": 8,
+        "46": 10,
+        "47": 6,
+        "48": 7,
+        "49": 10
+      }
+    },
+    "best_expected_over_all_orders": {
+      "expected_Golden_tape_cost_interval": [
+        "4.723566744463",
+        "4.723566744464"
+      ],
+      "expected_LC1_births_with_one_tail_per_read_interval": [
+        "6.836010011838",
+        "6.836010011839"
+      ],
+      "expected_birth_reads_Qp": [
+        159419314093389,
+        -257945868666293
+      ],
+      "expected_birth_reads_interval": [
+        "3.418005005919",
+        "3.418005005920"
+      ],
+      "maximum_Golden_cost": 72,
+      "maximum_birth_reads": 56,
+      "minimum_Golden_cost": 2,
+      "minimum_birth_reads": 2,
+      "order": [
+        0,
+        3,
+        8,
+        4,
+        1,
+        5,
+        6,
+        7,
+        2
+      ],
+      "raw_leaf_count": 376,
+      "raw_leaf_count_by_reads": {
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "5": 4,
+        "6": 5,
+        "7": 7,
+        "8": 7,
+        "9": 7,
+        "10": 7,
+        "11": 7,
+        "12": 6,
+        "13": 8,
+        "14": 8,
+        "15": 8,
+        "16": 8,
+        "17": 8,
+        "18": 8,
+        "19": 8,
+        "20": 8,
+        "21": 8,
+        "22": 8,
+        "23": 8,
+        "24": 8,
+        "25": 8,
+        "26": 8,
+        "27": 8,
+        "28": 8,
+        "29": 8,
+        "30": 8,
+        "31": 8,
+        "32": 8,
+        "33": 8,
+        "34": 8,
+        "35": 8,
+        "36": 8,
+        "37": 8,
+        "38": 8,
+        "39": 8,
+        "40": 8,
+        "41": 8,
+        "42": 8,
+        "43": 8,
+        "44": 8,
+        "45": 9,
+        "46": 7,
+        "47": 8,
+        "48": 7,
+        "49": 6,
+        "50": 4,
+        "51": 4,
+        "52": 4,
+        "53": 4,
+        "54": 5,
+        "55": 4,
+        "56": 4
+      }
+    },
+    "largest_maximum_reads_over_orders": 58,
+    "minimum_possible_maximum_reads": 49,
+    "original_colour_order": {
+      "expected_Golden_tape_cost_interval": [
+        "5.050720890880",
+        "5.050720890881"
+      ],
+      "expected_LC1_births_with_one_tail_per_read_interval": [
+        "7.309471940357",
+        "7.309471940358"
+      ],
+      "expected_birth_reads_Qp": [
+        -660146502747824,
+        1068139479000361
+      ],
+      "expected_birth_reads_interval": [
+        "3.654735970178",
+        "3.654735970179"
+      ],
+      "maximum_Golden_cost": 71,
+      "maximum_birth_reads": 53,
+      "minimum_Golden_cost": 2,
+      "minimum_birth_reads": 1,
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "raw_leaf_count": 360,
+      "raw_leaf_count_by_reads": {
+        "1": 1,
+        "4": 3,
+        "5": 4,
+        "6": 5,
+        "7": 7,
+        "8": 7,
+        "9": 7,
+        "10": 7,
+        "11": 6,
+        "12": 8,
+        "13": 8,
+        "14": 8,
+        "15": 8,
+        "16": 8,
+        "17": 8,
+        "18": 8,
+        "19": 8,
+        "20": 8,
+        "21": 8,
+        "22": 8,
+        "23": 8,
+        "24": 8,
+        "25": 8,
+        "26": 8,
+        "27": 8,
+        "28": 8,
+        "29": 8,
+        "30": 8,
+        "31": 8,
+        "32": 8,
+        "33": 8,
+        "34": 8,
+        "35": 8,
+        "36": 8,
+        "37": 8,
+        "38": 8,
+        "39": 8,
+        "40": 8,
+        "41": 8,
+        "42": 8,
+        "43": 8,
+        "44": 8,
+        "45": 8,
+        "46": 9,
+        "47": 8,
+        "48": 7,
+        "49": 6,
+        "50": 7,
+        "51": 1,
+        "52": 1,
+        "53": 2
+      }
+    },
+    "subset_boundaries_tested": 512
+  },
+  "counterfactual": {
+    "mandatory_36_reads": {
+      "LC1_births_with_tails": 72,
+      "expected_Golden_tape_cost_interval": [
+        "49.750776405003",
+        "49.750776405004"
+      ],
+      "positive_raw_leaves": 68719476736,
+      "reads": 36
+    },
+    "original_cost_cut_36": {
+      "expected_Golden_tape_cost_interval": [
+        "36.276393202250",
+        "36.276393202251"
+      ],
+      "expected_reads_interval": [
+        "26.249844718999",
+        "26.249844719000"
+      ],
+      "maximum_reads": 36,
+      "positive_raw_leaves": 39088169
+    }
+  },
+  "hybrid": {
+    "early_stopped_leaves": 22,
+    "expected_Golden_tape_cost_interval": [
+      "7.719226244649",
+      "7.719226244650"
+    ],
+    "expected_LC1_births_with_one_tail_per_read_interval": [
+      "11.171369167996",
+      "11.171369167997"
+    ],
+    "expected_birth_reads_Qp": [
+      1466,
+      -2363
+    ],
+    "expected_birth_reads_interval": [
+      "5.585684583998",
+      "5.585684583999"
+    ],
+    "maximum_Golden_cost": 50,
+    "maximum_birth_reads": 25,
+    "minimum_Golden_cost": 2,
+    "minimum_birth_reads": 2,
+    "probability_of_reaching_cap_interval": [
+      "0.093275563764",
+      "0.093275563765"
+    ],
+    "rank_boundary_checks": 112,
+    "raw_leaf_count": 5767190,
+    "raw_leaf_count_by_reads": {
+      "2": 1,
+      "4": 6,
+      "5": 3,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "25": 5767168
+    },
+    "universal_minimum_maximum_reads": 25
+  },
+  "same_nine_address_probabilities": true,
+  "same_raw_archive_or_clock_proved": false,
+  "source_pins": 2,
+  "status": "PASS"
+}

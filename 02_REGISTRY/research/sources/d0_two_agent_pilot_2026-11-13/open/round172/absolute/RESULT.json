@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "B171_commit": "c3e3eb04e",
+  "fixed_word": {
+    "CX": 14,
+    "G": 5,
+    "fresh_golden_births": 9,
+    "physical_LC1_readings": 5
+  },
+  "exact_raw_columns": 1024,
+  "positive_conditional_marks_each_old_T": [
+    16,
+    16
+  ],
+  "deterministic_copy_literal_lengths": [
+    1,
+    2
+  ],
+  "extra_conditional_event_drop_and_CQ_information": [
+    0,
+    0,
+    0
+  ],
+  "rare_minus_common_confirmation_registered_coherent_jump": [
+    0.2360679774997897,
+    0.12307047038933229,
+    0.16811738900752843
+  ],
+  "upper_sector_ratios_nu_1_2": {
+    "1": 0.7725424859373685,
+    "2": 0.8594235253127366
+  },
+  "zero_rate_ratios_event_and_drop": {
+    "1": [
+      0.6180339887498949,
+      0.6180339887498949
+    ],
+    "2": [
+      0.38196601125010515,
+      0.38196601125010515
+    ]
+  },
+  "maximum_leaf_weight_ratio_with_D_only_registered_meter": {
+    "1": 1.618033988749895,
+    "2": 2.618033988749895
+  },
+  "maximum_leaf_weight_ratio_at_common_meter_tie": 1,
+  "arbitrary_inverted_D_price_ratio_counterexample": 1.2599748136255466,
+  "absolute_old_input_mass_assumed_as_separate_condition": true,
+  "full_physical_Cost_minus_Info_identified": false,
+  "GR_closed": false
+}
