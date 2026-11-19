@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "clock_operator_lower": 0.6539856607641742,
+  "central_plus_state_first_stage_vector_difference": 1.3470021656419606,
+  "matched_word_extra_G": "2q",
+  "matched_word_extra_CX": 24,
+  "matched_word_extra_SourceI": 8,
+  "central_word": "W+;W- = I",
+  "two_arms": "W+;W+ = R(2 epsilon), W-;W- = R(-2 epsilon)",
+  "one_copy_exact_norm_over_step": 2.058171027271492,
+  "sixteen_copy_norm_over_step_upper": 8.232684109085968,
+  "recorded_CQ_cost_secant_16": 16,
+  "old_rank16_Jprime": "0.000002163307893925534227326716",
+  "hypothetical_plus_compressed_rank8_Jprime": "0.000001097384168772656215563599",
+  "plus_to_minus_return_amplitude": "0.01560004675270295889785698",
+  "plus_program_cut_invariant_under_full_return": false,
+  "rank8_with_actual_plus_preparer_full_clock_rebuilt": false,
+  "marked_clock_normalized_operator_bound_diverges": true,
+  "complete_General_Relativity_closed": false,
+  "examples": [
+    {
+      "q": 19,
+      "turns": 2,
+      "epsilon": 0.09217860299861691,
+      "descriptor_step": 0.35022992728909225,
+      "retained_one_copy_norm_over_step": 2.0581710272715155,
+      "sixteen_copy_bound": 5.393595792987909,
+      "labelled_clock_norm_lower_over_step": 1.8673037619208115
+    },
+    {
+      "q": 66,
+      "turns": 7,
+      "epsilon": -0.010494605751098618,
+      "descriptor_step": -0.040779988208673776,
+      "retained_one_copy_norm_over_step": 2.0581710272707494,
+      "sixteen_copy_bound": 8.178579322011185,
+      "labelled_clock_norm_lower_over_step": 16.03692618589511
+    },
+    {
+      "q": 613,
+      "turns": 65,
+      "epsilon": -0.002272848761208479,
+      "descriptor_step": -0.008834319097561532,
+      "retained_one_copy_norm_over_step": 2.0581710272957694,
+      "sixteen_copy_bound": 8.230133043591731,
+      "labelled_clock_norm_lower_over_step": 74.02785133091794
+    }
+  ]
+}

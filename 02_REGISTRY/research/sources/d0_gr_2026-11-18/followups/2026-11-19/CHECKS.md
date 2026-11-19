@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Центральный нативный мост:** `python3 -B metric/check_central_native_bootstrap_bridge.py` проверяет слова, квитанции, следовые нормы и сравнение cut; [результат](metric/central_native_bootstrap_bridge_result.json) и [границы](metric/CENTRAL_NATIVE_BOOTSTRAP_BRIDGE_RU.md).
+
 **Один программируемый bootstrap:** `python3 -B -W error metric/check_single_programmable_bootstrap.py` проверяет 32 входные колонки, полный общий и секторные срезы; [вывод](metric/SINGLE_PROGRAMMABLE_BOOTSTRAP_RU.md).
 
 **Прямой descriptor и Fourier:** `python3 -B metric/check_direct_writer_fourier_effect.py` проверяет совместные эффекты, состояния RIGHT и пример сцены; [результат](metric/direct_writer_fourier_effect_result.json) и [условия](metric/DIRECT_WRITER_FOURIER_EFFECT_RU.md).
