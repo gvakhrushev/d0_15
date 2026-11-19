@@ -1,0 +1,33 @@
+{
+  "GR_closed": false,
+  "common_volume_row": 1.1459833235,
+  "explicit_full_work_entropy": 1.3782266853,
+  "julia_full_error_ratios_at_halved_steps": [
+    [
+      3.99726,
+      3.9988
+    ],
+    [
+      3.99929,
+      3.99982
+    ],
+    [
+      4.00049,
+      4.00042
+    ],
+    [
+      4.0014,
+      4.00087
+    ]
+  ],
+  "off_cartan_curvature": [
+    0.64,
+    -0.48
+  ],
+  "physical_full_book_selection_proved": false,
+  "protected_native_example_sin_2320theta": 0.011897535754,
+  "two_uncentred_volume_rows": [
+    0.9686611078,
+    0.1773222157
+  ]
+}
