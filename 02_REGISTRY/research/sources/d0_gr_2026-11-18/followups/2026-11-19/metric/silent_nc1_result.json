@@ -1,0 +1,54 @@
+{
+  "all_intermediate_gauges_and_generated_cuts": true,
+  "alternative_controls": [
+    [
+      "x",
+      "r"
+    ],
+    [
+      "y",
+      "r"
+    ]
+  ],
+  "calibration_conditional_controls": [
+    "already registered T",
+    "known zero"
+  ],
+  "clock_dimension": 186,
+  "closing_on_all_terminal_columns": 32,
+  "cold_factor_for_two_suffixes_per_arm": "p",
+  "conditional_entropy_if_control_zero_nats": "0.2150476986722395753402121209107492223647901590162030",
+  "exact": true,
+  "fixture_common_word": [
+    "birth_x",
+    "G_x",
+    "birth_y",
+    "CX_x_y"
+  ],
+  "full_CD13": false,
+  "full_unitaries_checked": 2,
+  "golden_basis": "1,a,a^2,a^3; a^4+a^2=1",
+  "invalid_probability": "0",
+  "lambda_probe": "0.9442719099991587856366946749251049417624734384461026",
+  "old_input_dimension": 2,
+  "parsed_price_gain": "0.4973840999466865272578380608234448325538849608450400",
+  "stage_dimensions": [
+    2,
+    4,
+    4,
+    8,
+    8,
+    16,
+    16,
+    16,
+    16,
+    32,
+    32,
+    32
+  ],
+  "suffix_per_arm": {
+    "CX": 4,
+    "G": 2,
+    "births": 2
+  }
+}

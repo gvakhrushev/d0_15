@@ -39,6 +39,9 @@ python3 -B "$d/metric/check_live_parser.py"
 python3 -B "$d/metric/check_guarded_purity.py"
 python3 -B "$d/metric/check_clock_coherence.py"
 python3 -B "$d/metric/check_late_site.py"
+python3 -B "$d/metric/check_local_gibbs_records.py"
+python3 -B "$d/metric/check_paid_tail_audit.py"
+python3 -B "$d/metric/check_silent_nc1.py"
 python3 -B "$d/metric/check_live_gain_tree.py"
 python3 -B "$d/metric/check_full_site_sort.py"
 python3 -B "$d/metric/check_counted_separator.py"
@@ -78,6 +81,9 @@ python3 -B "$d/realization/check_realization.py"
 | Геометрический допуск восьми настроек | Проверка исходной опоры F2–F6, однородности преобразованных полей и полного конечного селектора. [Результат](metric/eight_geometric_audit_result.json) |
 | Независимые прямые и обратные ноги | Все четыре настоящих исполнения на исходных защищённых столбцах и тепловая граница, с разграничением арены компилятора. [Результат](metric/crossed_repeat_result.json) |
 | Когерентность и тепловой граф | Настоящий растущий clock, внутренний срез, контроль термического члена и условная стоимость четырёх записей. [Результат](metric/clock_coherence_result.json) |
+| Графовые веса записей | Полное тепло двух степеней, локальный Gibbs-оператор, старый RIGHT и три конечные схемы. [Результат](metric/local_gibbs_records_result.json) |
+| Платный аудит хвостов | Новые регистрации, конечный Shannon-бюджет, полный clock и исходные две программы. [Результат](metric/paid_tail_audit_result.json) |
+| Спектрально равные считыватели | Все стадии двух часов и замыкания, LC1 и точный коэффициент кодовой цены. [Результат](metric/silent_nc1_result.json) |
 | Поздняя запись SITE | Полный общий журнал, смешанный старый SITE, конечный нативный пример и запись восьми адресных битов. [Результат](metric/late_site_result.json) |
 | Выигрыш живого дерева | Конечные Born-законы, кодовые веса, Shannon и относительный выигрыш на нативных секущих. [Результат](metric/live_gain_tree_result.json) |
 | Полная память перед шумным отчётом | Нативный тест обратного возврата и интервальные границы для истинных состояний и отмеченных ветвей. [Результат](metric/guarded_purity_result.json) |
