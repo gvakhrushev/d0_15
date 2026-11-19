@@ -1,0 +1,292 @@
+{
+  "round": "A85",
+  "base_shared": "419b0ca40844082c6dc9b3f753630571ef6a3027",
+  "claims_shared": [
+    "b706d63a2ef1d7668b3e8fbd878999cfcd0df309"
+  ],
+  "primary_pr334": "2350117b469890c04b8ff5d8987b224a863e844a",
+  "reviewed_pr334": "7307221c7d35db9a56a2856859ed916c5fae824b",
+  "direct_regression_commit": "fc5787cf65b9811c747582249cfc522299c25a18",
+  "related_open_commits": {
+    "B174": "419b0ca40844082c6dc9b3f753630571ef6a3027",
+    "B175": "bf860cce768e0a47b01f10ee111b0f52e9f5c269",
+    "B176": "0980d7ffb0ae3816c9f2787864abca669fb53eae"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "7a00729985493b7615319c51d6b71e865a93d3a1",
+    "01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "562ccfa715ad814faec55f6b0641ee226dda2d88",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md": "15c7a93949cae297b28f5da0e19ade92e63dfa1f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md": "a0a1419e4c733b0cb68b875e276851908088d320",
+    "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213"
+  },
+  "upstream_checks": [
+    {
+      "id": "pr334_selector24_native",
+      "commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_selector24_native.py",
+      "receipt": "selector24_native_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_selector24_native.py",
+        "check_selector36_compilation.py",
+        "selector24_native_result.json"
+      ]
+    },
+    {
+      "id": "pr334_composed_geometric_instrument",
+      "commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_composed_geometric_instrument.py",
+      "receipt": "composed_geometric_instrument_result.json",
+      "files": [
+        "check_balanced_controller_source.py",
+        "check_boundary_experiment.py",
+        "check_composed_geometric_instrument.py",
+        "check_eight_readers.py",
+        "check_extra_work.py",
+        "check_paid_predictor.py",
+        "check_prefix_cx.py",
+        "check_shared_site_union.py",
+        "composed_geometric_instrument_result.json",
+        "paid_predictor_result.json"
+      ]
+    },
+    {
+      "id": "pr334_smooth_twofield_reference",
+      "commit": "2350117b469890c04b8ff5d8987b224a863e844a",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_smooth_twofield_reference.py",
+      "receipt": "smooth_twofield_reference_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_shared_site_union.py",
+        "check_smooth_twofield_reference.py",
+        "smooth_twofield_reference_result.json"
+      ]
+    },
+    {
+      "id": "pr334_bandlimit_joint_hq",
+      "commit": "908e70a3c86be2c99809f1faa830c92993b117ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_bandlimit_joint_hq.py",
+      "receipt": "bandlimit_joint_hq_result.json",
+      "files": [
+        "bandlimit_joint_hq_result.json",
+        "check_bandlimit_joint_hq.py",
+        "check_boundary_experiment.py",
+        "check_shared_site_union.py"
+      ]
+    },
+    {
+      "id": "pr334_dyadic_car_loader",
+      "commit": "908e70a3c86be2c99809f1faa830c92993b117ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_dyadic_car_loader.py",
+      "receipt": "dyadic_car_loader_result.json",
+      "files": [
+        "check_dyadic_car_loader.py",
+        "dyadic_car_loader_result.json"
+      ]
+    },
+    {
+      "id": "pr334_native_adaptive_clock",
+      "commit": "908e70a3c86be2c99809f1faa830c92993b117ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_native_adaptive_clock.py",
+      "receipt": "native_adaptive_clock_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_native_adaptive_clock.py",
+        "check_shared_site_union.py",
+        "check_source_price.py",
+        "native_adaptive_clock_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_common_native_calibration",
+      "commit": "7307221c7d35db9a56a2856859ed916c5fae824b",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_common_native_calibration.py",
+      "receipt": "common_native_calibration_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_common_native_calibration.py",
+        "check_dyadic_car_loader.py",
+        "check_eight_readers.py",
+        "check_shared_site_union.py",
+        "common_native_calibration_result.json"
+      ]
+    },
+    {
+      "id": "pr334_local_geometric_source",
+      "commit": "7307221c7d35db9a56a2856859ed916c5fae824b",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_local_geometric_source.py",
+      "receipt": "local_geometric_source_result.json",
+      "files": [
+        "check_bandlimit_joint_hq.py",
+        "check_boundary_experiment.py",
+        "check_local_geometric_source.py",
+        "check_shared_site_union.py",
+        "local_geometric_source_result.json"
+      ]
+    },
+    {
+      "id": "pr334_dyadic_phase_field",
+      "commit": "7307221c7d35db9a56a2856859ed916c5fae824b",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_dyadic_phase_field.py",
+      "receipt": "dyadic_phase_field_result.json",
+      "files": [
+        "check_dyadic_phase_field.py",
+        "check_source_price.py",
+        "dyadic_phase_field_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "A84_actual_fixed_port",
+      "commit": "fc5787cf65b9811c747582249cfc522299c25a18",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round84/assembly",
+      "entrypoint": "check_cyclic_query.py",
+      "receipt": "cyclic_query_result.json",
+      "files": [
+        "check_cyclic_query.py",
+        "cyclic_query_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round84/assembly/check_retained_replicas.py",
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+        "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py"
+      ]
+    },
+    {
+      "id": "A84_two_rail_paid_key",
+      "commit": "fc5787cf65b9811c747582249cfc522299c25a18",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round84/assembly",
+      "entrypoint": "check_paid_key.py",
+      "receipt": "paid_key_result.json",
+      "files": [
+        "check_paid_key.py",
+        "paid_key_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+        "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py"
+      ]
+    },
+    {
+      "id": "B174_earliest_record_moments",
+      "commit": "419b0ca40844082c6dc9b3f753630571ef6a3027",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round174/refinement",
+      "entrypoint": "check_early_refinement.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "check_early_refinement.py",
+        "RESULT.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round173/FIRST_DIGIT_SOURCE_RESULT.json"
+      ]
+    },
+    {
+      "id": "B174_constant_action_preparation_work",
+      "commit": "419b0ca40844082c6dc9b3f753630571ef6a3027",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round174/work",
+      "entrypoint": "check_constant_action_work.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "check_constant_action_work.py",
+        "RESULT.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_phase_work.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round82/device/check_prepaid_report.py",
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+        "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py"
+      ]
+    },
+    {
+      "id": "B175_absolute_second_jet",
+      "commit": "bf860cce768e0a47b01f10ee111b0f52e9f5c269",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round175/jet",
+      "entrypoint": "check_absolute_second_jet.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "check_absolute_second_jet.py",
+        "RESULT.json"
+      ]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "A85_weak_marker_recovery",
+      "check": "direct/round85/recovery/check_projected_marker.py",
+      "stdout_matches": "direct/round85/recovery/projected_marker_result.json",
+      "evidence": {
+        "direct/round84/prepare/check_curvature_variance.py": "2e1d17c0fd2b0e86e2fb36f699516864549d4614f9af17fd23f5537aba0a6ef3",
+        "direct/round85/recovery/PROJECTED_MARKER_RU.md": "193dd8c0bf2eb79bc9100392a728283710b55ae8481b6fd845e788edb81eeb73",
+        "direct/round85/recovery/check_projected_marker.py": "e54970fbe7e428c6bc91436042787752544a4d874385a8569211eaf9f101b99a",
+        "direct/round85/recovery/projected_marker_result.json": "baab6cbc4ace1510ec0fd13a3c656c7cf74cdfd7b38e1532b0f4138003913d2c"
+      }
+    },
+    {
+      "id": "A85_cycle_port_feedback",
+      "check": "direct/round85/clock/check_cycle_feedback.py",
+      "evidence": {
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round84/assembly/check_retained_replicas.py": "fd98b697deb9ef0d6974319fb7817df5c1e23f5700a01c4f7aa29d9b52bd860e",
+        "direct/round85/clock/FIXED_PORT_FEEDBACK_RU.md": "1154b9a552ca29521ffb9a10db4e103329f54e650e105d96adf334b077af4368",
+        "direct/round85/clock/check_cycle_feedback.py": "e03fcf2a070118727a61373f03666883db3c447f05a1fe8dbbd5ddb6b92c77ad"
+      }
+    },
+    {
+      "id": "A85_geometric_key",
+      "check": "direct/round85/input/check_geometric_key.py",
+      "evidence": {
+        "direct/round85/input/GEOMETRIC_KEY_RU.md": "a8e95e1df3a477fb783675fc1e8cac97a2dd9cd3e1385bfa48e480f339b41af4",
+        "direct/round85/input/check_geometric_key.py": "f1f42fac62a5bf669e3eb9c1edad47871687cb6ad70115c4cbb83745aeacb397"
+      }
+    },
+    {
+      "id": "A85_single_input_paired_source",
+      "check": "direct/round85/assembly/check_paired_source.py",
+      "stdout_matches": "direct/round85/assembly/paired_source_result.json",
+      "evidence": {
+        "direct/round85/assembly/PAIRED_SOURCE_RU.md": "b799553fe5fda15e3464809b5bcffb1040acda4ea6b428b60d43bff8dcc13c4a",
+        "direct/round85/assembly/check_paired_source.py": "5ad6f40af93c4959f88d0c04e4657d25a39f8924c050b99e75c829d7b91787d2",
+        "direct/round85/assembly/paired_source_result.json": "885c344daa5f0bbebd2608676ad416f7a62c6a48e77f7e46b6f46ba13a265afd"
+      }
+    },
+    {
+      "id": "A85_returned_site",
+      "check": "direct/round85/assembly/check_returned_site.py",
+      "stdout_matches": "direct/round85/assembly/returned_site_result.json",
+      "evidence": {
+        "direct/round85/assembly/RETURNED_SITE_RU.md": "eae27640b51231680def12d9d5b14274e6dfb9a90fea9f77a28499f3896fea0e",
+        "direct/round85/assembly/check_returned_site.py": "61677750dd99081b13ed4c6da767b98c3ca2fb098035d491b986be89a8290d1f",
+        "direct/round85/assembly/returned_site_result.json": "76036e8511dfbaf9a26116a8f79e851ec281b36b8eb10114fff39e90ce9e852c"
+      }
+    }
+  ]
+}

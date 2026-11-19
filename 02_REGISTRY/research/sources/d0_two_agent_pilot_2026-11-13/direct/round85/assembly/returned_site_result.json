@@ -1,0 +1,20 @@
+{
+  "full_old_site": 256,
+  "pair_multiplicity": [
+    64,
+    64
+  ],
+  "recalibrated_writer_G_block_count": 712,
+  "amplitude": "0.011133130166807",
+  "endpoint_tap_probabilities": [
+    0,
+    "0.0001170392807381"
+  ],
+  "trace_effect_per_old_site": "0.47213595499958",
+  "endpoint_return_log_difference": "9.2918387894184e-10",
+  "center_return_log_derivative": "9.2918386959465e-10",
+  "relative_bound_on_overlap_derivative_correction": "0.00032460172755",
+  "old_right_spectator": true,
+  "whole_writer_tape_priced": false,
+  "GR_closed": false
+}

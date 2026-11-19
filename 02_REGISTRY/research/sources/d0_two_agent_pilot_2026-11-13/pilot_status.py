@@ -91,6 +91,19 @@ def latest_reports(readme, files):
     return {lane: path for lane, (_, path) in best.items()}
 
 
+def partial_reports(key, files):
+    lane = "direct" if key.startswith("A") else "open"
+    folder = f"{lane}/round{key[1:]}/"
+    groups = {}
+    # Research notes in the lanes use *_RU.md. Files under inputs/ are
+    # copies of earlier sources; input/ is a research lane in its own right.
+    for path in sorted(path for path in files if path.startswith(folder)):
+        parts = path[len(folder):].split("/")
+        if len(parts) > 1 and parts[-1].endswith("_RU.md") and "inputs" not in parts[:-1]:
+            groups.setdefault(parts[0], []).append(path)
+    return groups
+
+
 def main(revision):
     if revision is None:
         git("fetch", "--no-tags", "--no-recurse-submodules", "--no-write-fetch-head",
@@ -110,8 +123,15 @@ def main(revision):
         print("В этом снимке таблица назначений ещё отсутствует.")
     if has_table and not active:
         print("Открытых вопросов в таблице нет.")
-    for label, question, owner, base in active.values():
+    for key, (label, question, owner, base) in active.items():
         print(f"• {label} — {question}\n  Владелец: {owner}" + (f". База: {base}" if base else ""))
+        for group, paths in partial_reports(key, files).items():
+            print(f"  Материалы в Git · {group}")
+            for path in paths:
+                note = git("show", f"{commit}:{prefix}{path}")
+                title = re.search(r"^# (.+)$", note, re.M)
+                print(f"    {plain(title[1]) if title else posixpath.basename(path)}\n"
+                      f"    {base_url}{quote(path)}")
     print("\nПоследние доступные отчёты")
     for lane, mode in (("direct", "A · Directed"), ("open", "B · Open")):
         if lane in reports:
