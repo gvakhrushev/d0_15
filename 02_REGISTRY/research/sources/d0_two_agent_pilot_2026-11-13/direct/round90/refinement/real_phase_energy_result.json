@@ -1,0 +1,83 @@
+{
+  "frame_survivors": [
+    [
+      1,
+      1,
+      2,
+      2
+    ],
+    [
+      3,
+      3,
+      2,
+      2
+    ]
+  ],
+  "factor": "1/64",
+  "native_Ramsey_branches_checked": 32,
+  "weighted_native_walk": {
+    "L": 8,
+    "real_permutation_dimension": 128,
+    "Ramsey_histories_length_5": 32,
+    "nearest_weighted_energy": 0.362167,
+    "actual_prefix_mean_coverage": 0.759375,
+    "excess_literal_length_with_aborts": 0.001074299084,
+    "second_moment_four_counts": 0.246652083691,
+    "second_moment_upper_bound": 0.3535796875,
+    "ordered_entropy_conditional_on_stop_nats": 0.003991899751,
+    "count_only_entropy_conditional_on_stop_nats": 0.001590215993
+  },
+  "genuine_single_mode_tangent": {
+    "noncommuting_ordered_leaf_differential": -0.372432257521,
+    "one_frequency_complemented_gain": [
+      {
+        "L": 16,
+        "ratio_to_positive_asymptotic_gain": 0.62420133
+      },
+      {
+        "L": 256,
+        "ratio_to_positive_asymptotic_gain": 0.8126706
+      },
+      {
+        "L": 4096,
+        "ratio_to_positive_asymptotic_gain": 0.87511524
+      },
+      {
+        "L": 1048576,
+        "ratio_to_positive_asymptotic_gain": 0.92506915
+      }
+    ]
+  },
+  "finite_grid_confusion_9": [
+    {
+      "L": 8,
+      "worst_misclassification": 0.0050597799,
+      "nearest_energy": 0.9751528513,
+      "exact_calibrated_mean_including_abort": 0.9751528513,
+      "raw_decoder_bias": 0.0131351799,
+      "second_moment_corrected_score_at_readiness_0.72": 7146.1341551
+    },
+    {
+      "L": 16,
+      "worst_misclassification": 0.0050685825,
+      "nearest_energy": 1.0870978813,
+      "exact_calibrated_mean_including_abort": 1.0870978813,
+      "raw_decoder_bias": 0.0575569916,
+      "second_moment_corrected_score_at_readiness_0.72": 13622.0744903
+    },
+    {
+      "L": 32,
+      "worst_misclassification": 0.005467013,
+      "nearest_energy": 1.1189607244,
+      "exact_calibrated_mean_including_abort": 1.1189607244,
+      "raw_decoder_bias": 0.1405518845,
+      "second_moment_corrected_score_at_readiness_0.72": 40065.0226734
+    }
+  ],
+  "arbitrary_transverse": {
+    "full_energy": 1.1090815436,
+    "folded_nearest": 1.096608113,
+    "upper_bound_on_deficit": 0.3226213755
+  },
+  "full_Book_price_identified": false
+}
