@@ -105,8 +105,43 @@ def edge_filter():
                 G712_quarter_and_half_probabilities_divided_by_Astar_squared_L16=[str(x) for x in physical])
 
 
+def macroscopic_edge():
+    frame = original_frame()
+    ratios = []
+    for size in (32,64,128,256):
+        stride = size//8
+        shift = (stride,0,0,0)
+        require(all(character(k,shift)==1 for k in frame), 'old RIGHT at the two endpoints')
+        high = [j for j in range(size) if j//(size//4)==1]
+        early = [j for j in high if j & stride == 0]
+        require(all((j^stride)==j+stride and j+stride in high for j in early), 'native bit pairs')
+        pair_count = len(early)*len(high)**3
+        probability_scale = F(pair_count,2*size**4)
+        energy_scale = probability_scale*F(stride,size)**2
+        require(probability_scale==F(1,1024) and energy_scale==F(1,65536), 'mesh-independent gain')
+        ratios.append(str(energy_scale))
+    # A non-homogeneous transverse profile: compare the actual one-bit-H projection
+    # on every Fourier column with the two-site CAR difference on each of 64 patches.
+    total, direct = 0, 0
+    for s in product(range(4), repeat=3):
+        real0 = (s[0]-s[1], s[1]+s[2])
+        real1 = (s[2]+1, s[0]-2*s[1])
+        direct += sum((b-a)**2 for a,b in zip(real0,real1))
+        for k in frame:
+            lo,hi = character(k,(8,*s)),character(k,(12,*s))
+            for a,b in zip(real0,real1):
+                value = lo*a-hi*b
+                total += int(value.real)**2+int(value.imag)**2
+    require(total==128*direct, 'no transverse assumption in the long real difference')
+    return dict(mesh_L=[32,64,128,256], gain_to_affine_energy=[str(x) for x in ratios],
+                affine_event_probabilities=[str(F(1,65536)*x*x) for x in (F(1,16),F(1,8))],
+                native_quarter_half_probabilities_divided_by_Astar_squared=[str(F(1,512)),str(F(1,256))],
+                fixed_nonzero_separation='1/8', paired_fraction_of_all_sites='1/512')
+
+
 def main():
     out=edge_filter()
+    out['macroscopic_left_measurement']=macroscopic_edge()
     p=(math.sqrt(5)-1)/2
     amp=p*math.sin(712*math.asin(p))
     require(0<amp<p,'nonzero native carrier (analytic certificate is in the cited SC1 owner)')

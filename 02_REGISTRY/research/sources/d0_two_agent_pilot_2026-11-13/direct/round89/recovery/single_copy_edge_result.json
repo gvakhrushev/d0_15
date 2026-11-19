@@ -13,6 +13,30 @@
   "frequencies": 128,
   "full_collar_exterior_block_preserved_on_supply": true,
   "local_edge_mass_times_S": "3/2 times squared difference",
+  "macroscopic_left_measurement": {
+    "affine_event_probabilities": [
+      "1/16777216",
+      "1/4194304"
+    ],
+    "fixed_nonzero_separation": "1/8",
+    "gain_to_affine_energy": [
+      "1/65536",
+      "1/65536",
+      "1/65536",
+      "1/65536"
+    ],
+    "mesh_L": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "native_quarter_half_probabilities_divided_by_Astar_squared": [
+      "1/512",
+      "1/256"
+    ],
+    "paired_fraction_of_all_sites": "1/512"
+  },
   "old_RIGHT_acted_on": false,
   "physical_ratio": 2,
   "singletons_b_then_k0": [
