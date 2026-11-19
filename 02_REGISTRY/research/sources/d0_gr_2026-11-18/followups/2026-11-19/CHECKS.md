@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Комплементарный writer и материальный Hq:** `python3 -B -W error metric/check_complemented_actual_hq_report.py` проверяет 256 ячеек, 16 пар, спектр и корреляцию записей; [результат](metric/complemented_actual_hq_report_result.json) и [условия](metric/COMPLEMENTED_ACTUAL_HQ_REPORT_RU.md).
+
 **Чётность комплементарного bootstrap:** `python3 -B -W error metric/check_complement_bootstrap_cancellation.py` проверяет буквальное слово, полный исходный срез и модель сохранённых отказов; [результат](metric/complement_bootstrap_cancellation_result.json) и [условия](metric/COMPLEMENT_BOOTSTRAP_PARITY_RU.md).
 
 **Промежуточная работа G:** `python3 -B -O -W error metric/check_native_rotation_work_secant.py` проверяет нативный SourceI, маршруты и все G-префиксы; [результат](metric/native_rotation_work_secant_result.json) и [область](metric/NATIVE_ROTATION_WORK_SECANT_RU.md).
