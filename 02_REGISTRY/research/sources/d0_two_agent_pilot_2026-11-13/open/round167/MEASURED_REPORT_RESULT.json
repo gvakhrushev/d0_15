@@ -1,0 +1,32 @@
+{
+  "GR_closed": false,
+  "early_protected_site": {
+    "joint_record_lower_per_b_h": 1119,
+    "one_setting_lower_per_j_squared_b_h": 207,
+    "two_site_exact_return_fixture": "9/10"
+  },
+  "eight_setting": {
+    "active_prefixes": 20316969,
+    "allocations": [
+      5644800,
+      4939200,
+      4390400,
+      3087000,
+      1580544,
+      548800,
+      115200,
+      11025
+    ],
+    "inactive_prefixes": 18771200
+  },
+  "exact_matched_stopping_trees": 18,
+  "full_physical_cost_minus_info_proved": false,
+  "joint_H1_device_replayed": false,
+  "saturation": {
+    "independent_forward_axes": 60,
+    "nonzero_backward_axes": 20,
+    "strict_finite_defects": 4
+  },
+  "source_pins": 4,
+  "status": "PASS"
+}

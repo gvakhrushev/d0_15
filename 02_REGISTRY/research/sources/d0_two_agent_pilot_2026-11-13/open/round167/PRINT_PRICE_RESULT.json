@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "exact_journal_configurations": 54,
+  "physical_raw_marks_include_dark_11": true,
+  "test_mark_passive_exponents_after_base_printing": {
+    "00": 8,
+    "10": 11,
+    "01": 11
+  },
+  "extra_initial_copies": {
+    "EC-H": 6,
+    "EC-2H": 9
+  },
+  "uniform_derivative_lower_bounds_after_printing": {
+    "EC-H": "2",
+    "EC-2H": "0.109"
+  },
+  "GR_closed": false
+}

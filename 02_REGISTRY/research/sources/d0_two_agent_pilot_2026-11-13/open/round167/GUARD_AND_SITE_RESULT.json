@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "exact_guarded_and_attenuated_trees": 72,
+  "initial_REPORT_printer_copies_in_cases": [
+    0,
+    6,
+    9
+  ],
+  "native_guard": {
+    "positive_G_power_including_birth": 2096,
+    "strict_Born_H_zero_bracket": [
+      "7.056e-9",
+      "7.073e-9"
+    ],
+    "passive_H_zero": "p"
+  },
+  "all_old_SITE_values_per_exact_fixture": [
+    2,
+    4,
+    8
+  ],
+  "unknown_SITE_constant_effect_factor": "eta_flag*p^(3*d)",
+  "full_physical_Cost_minus_Info": false,
+  "GR_closed": false
+}
