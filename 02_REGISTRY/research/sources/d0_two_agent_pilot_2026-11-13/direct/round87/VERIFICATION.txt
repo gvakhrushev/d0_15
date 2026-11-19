@@ -1,0 +1,88 @@
+A87 · общий проверяемый снимок двух режимов
+Ветка codex/d0-pilot-shared-20261118
+Научный снимок ee902c0f32101c432ac5a25b4edd7aa3b579d2d3
+База пилота 0bbad12fbc376c167862be8aa5832c77ab9bd494, предварительная заявка 8a1be8a56b345a16dbfb0ad79df0fffd504103c7
+Промежуточные публикации отдельных участников 0e772546d, 9fcfec9ba, f186b2777, ec859c066, 7e265c9b3
+Независимые уточнения области применимости 3dcf7d6dd и 523bcb8f4
+Сверены первичный PR #334 a08e9c72f8eae5210333958eaf0f25082f20fb39, B179 4d48e2e71b0c6a5b8a960bf840862c56d3ef8c54, B180 4919717083db875bacb768951c8d58c28b86101e
+
+Команда из каталога пилота
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot ee902c0f32101c432ac5a25b4edd7aa3b579d2d3 direct/round87/portfolio.json
+
+Git snapshot ee902c0f32101c432ac5a25b4edd7aa3b579d2d3, 31 committed files
+UPSTREAM  pr334_common_native_calibration at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  pr334_balanced_factory at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_site_coframe_julia at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_fourier_fresh_localization at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_native_fourier_uncompute at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_native_neighbor_phase_oracle at 1cee4e60342feb9c472a60b92884d3a5075dccff
+UPSTREAM  pr334_raw_fourier_vacuum_inverse at 1cee4e60342feb9c472a60b92884d3a5075dccff
+UPSTREAM  pr334_typed_abort_pair at 1cee4e60342feb9c472a60b92884d3a5075dccff
+UPSTREAM  pr334_site_eight_catalogue at 1cee4e60342feb9c472a60b92884d3a5075dccff
+UPSTREAM  pr334_complete_work_source at a1d77e3a57497e5b1dcf9345ed9a139e973603a2
+UPSTREAM  pr334_dyadic_reference_source at a1d77e3a57497e5b1dcf9345ed9a139e973603a2
+UPSTREAM  pr334_amplifier_record_source at 8ac844e009745280e35d5eb1c2aadc2d651fb235
+UPSTREAM  pr334_fourier_reference_bdd_synthesis at 8ac844e009745280e35d5eb1c2aadc2d651fb235
+UPSTREAM  pr334_fredkin_guarded_pair at 8ac844e009745280e35d5eb1c2aadc2d651fb235
+UPSTREAM  pr334_native_birth_reflection at 8ac844e009745280e35d5eb1c2aadc2d651fb235
+UPSTREAM  A86_single_input_geometry at 0bbad12fbc376c167862be8aa5832c77ab9bd494
+UPSTREAM  A86_single_input_material at 0bbad12fbc376c167862be8aa5832c77ab9bd494
+UPSTREAM  A86_true_forward_writer at 0bbad12fbc376c167862be8aa5832c77ab9bd494
+UPSTREAM  A86_full_fourier_clock at 0bbad12fbc376c167862be8aa5832c77ab9bd494
+UPSTREAM  B179_early_and_late_sources at 4d48e2e71b0c6a5b8a960bf840862c56d3ef8c54
+UPSTREAM  pr334_guarded_live_binding at a08e9c72f8eae5210333958eaf0f25082f20fb39
+UPSTREAM  B180_matched_ready_and_fixed_service at 4919717083db875bacb768951c8d58c28b86101e
+PASS  A87_protected_future_cost
+PASS  A87_julia_approximation
+PASS  A87_signed_face_clock
+PASS  A87_signed_face_meter
+PASS  A87_native_dyadic_writer
+
+Контрольный повтор A86 тем же механизмом
+Git snapshot c4d28ab523b8358a1d6b0fa28e19fbd32f7a8009, 35 committed files
+UPSTREAM  pr334_composed_geometric_instrument at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_dyadic_car_loader at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_common_native_calibration at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  pr334_balanced_factory at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_carry_compensated_geometry at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_site_coframe_julia at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_fourier_fresh_localization at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_native_fourier_uncompute at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_reversible_error_code at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_error_code_signal at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_signal_routed_clock at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  pr334_terminal_recoding_classes at 4ba981c8c79afe95893495abf98e99d87728e928
+UPSTREAM  A85_occupied_returned_site at 3e813eb2ee0f7f22b44ced93c78e0bce7e16ed6c
+UPSTREAM  B176_occupied_Book03_clock at 0980d7ffb0ae3816c9f2787864abca669fb53eae
+UPSTREAM  B177_preparer_multiplicity at 8ed5e2568bf992f4ecd50d262a424e8ad9c56232
+UPSTREAM  pr334_native_balanced_pair_clock at 43712cbe08b6f1e6dffd524df9e7b7fb1b1138da
+UPSTREAM  B178_whole_history_normalization at 8165c420b0dc6fbe8dad8540cd328dd17da77f1d
+PASS  A86_registered_writer_history
+PASS  A86_heralded_return
+PASS  A86_forward_writer
+PASS  A86_material_slice
+PASS  A86_record_window
+PASS  A86_order_selection
+PASS  A86_true_fourier_return
+PASS  A86_null_single_choi
+
+Реестры и исследовательские контракты
+claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918
+PASS warnings=0
+PASS work_validation: active work plane clean and enforced
+PASS agent_protocol: cold-start task metadata enforced
+{
+  "active_result_limit": 54,
+  "active_results": 54,
+  "discharged": 5,
+  "obligations": 22,
+  "results": 98,
+  "scientific_promotion": false,
+  "valid": true
+}
+
+Сверка полноты публикации. Удалённые прежние ветви Directed 1ec90ca27b653950058ead9309b3eb801080ce57 и Open 78d0c499bca970d36813a3a0aea58de016b246a6 входят в историю общей ветки. В прежнем рабочем дереве Directed дополнительных материалов нет. Единственная локальная научная правка прежнего Open касалась двух формулировок B142. Её содержание (Git blob fc2cdebf0fb1aae8b2622fcdf6dacfc887179471) и отдельная проверка перенесены в общую ветку коммитом 73c6987073ef4490e2402ce9223ab67b73fbf70d. Остальная локальная папка .deps содержит установленную библиотеку gmpy2. Исходное рабочее дерево сохранено.
+
+Поиск предыдущих результатов. На 67ed86b756bba2aeebd5d98be51596c1a6edbfb5 проверены поиск по русскому регистронезависимому запросу в обеих линиях, указатели на реальные строки снимка, пустой запрос и отсутствие совпадения. Поиск текстовый; смысловую эквивалентность вопросов уточняют владельцы.
+
+Область проверки. Программы воспроизводят математические тождества и конечные примеры; схемы общего размера доказаны формулами. Цель совпадения обязательной первичной Cost−Info и полного полевого источника для исходного допуска остаётся открытой. GR_closed=false.

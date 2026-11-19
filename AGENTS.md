@@ -7,6 +7,13 @@ Default base: `main`
 This file is the cold-start contract for any new AI agent, researcher, worker, or
 automation process entering the repository without prior chat context.
 
+**Parallel D0 → GR pilot.** Before claiming a Directed or Open investigation, read the
+[shared assignments and results](02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/README.md)
+and [agent instructions](02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/AGENT_START_RU.md).
+The pilot publishes reservations, partial results, negative results, and replayable checks in
+`codex/d0-pilot-shared-20261118`. From the pilot directory, `python3 -B pilot_status.py --find "search terms"`
+reads the published branch and links related results at one Git revision.
+
 **Current scientific focus (22 October):** read and apply
 [source composition first: backward search and forward proof](02_REGISTRY/research/MEMO_A4D_RESOLVED_AFFINE_PROGRAM.md#source-composition-first-backward-search-and-forward-proof).
 Start from the owned nonlinear GR solution; identify the one physical
