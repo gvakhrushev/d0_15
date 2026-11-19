@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "owner_checksums": {
+    "direct/round85/clock/check_cycle_feedback.py": "e03fcf2a070118727a61373f03666883db3c447f05a1fe8dbbd5ddb6b92c77ad",
+    "direct/round86/recovery/check_writer_history.py": "5c9b8c58b8cb502dc64965a51cba1c89965e85e4a0a6306dc056a16488dc2376"
+  },
+  "matched_slot_spectral_obstruction": {
+    "router": {
+      "CX_per_slot": 14,
+      "all_raw_columns_per_setting": 64
+    },
+    "unchanged_reporter": "A85 fixed-port mark",
+    "index_settings": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "even_terminal_CX_tail": 16,
+    "max_error_in_full_cross_log_from_heat": "2.067e-32",
+    "names": [
+      {
+        "name": 0,
+        "cold_cross_log": [
+          "-5.294e-10",
+          "-5.293e-10"
+        ],
+        "cold_first_log_increment": [
+          "5.306e-10",
+          "5.307e-10"
+        ],
+        "cold_last_log_increment": [
+          "1.258e-12",
+          "1.259e-12"
+        ],
+        "all_count_flags_included_cold_cross_log": [
+          "-1.645e-12",
+          "-1.643e-12"
+        ],
+        "all_count_flags_included_first_increment": [
+          "2.668e-12",
+          "2.670e-12"
+        ],
+        "full_spectral_vs_independent_tariff_sup_log_error_lower_bound": "1.323e-10"
+      },
+      {
+        "name": 1,
+        "cold_cross_log": [
+          "-1.258e-11",
+          "-1.257e-11"
+        ],
+        "cold_first_log_increment": [
+          "1.291e-11",
+          "1.292e-11"
+        ],
+        "cold_last_log_increment": [
+          "3.366e-13",
+          "3.367e-13"
+        ],
+        "all_count_flags_included_cold_cross_log": [
+          "-3.906e-14",
+          "-3.904e-14"
+        ],
+        "all_count_flags_included_first_increment": [
+          "6.552e-14",
+          "6.553e-14"
+        ],
+        "full_spectral_vs_independent_tariff_sup_log_error_lower_bound": "3.142e-12"
+      }
+    ],
+    "composite_clock_executed": false
+  },
+  "written_service_prices": {
+    "normalization_at_fixed_zero_click_in_report": {
+      "ready_fraction_after_817_real_failure_zeros": [
+        ".461",
+        ".462"
+      ],
+      "ready_fraction_after_818_real_failure_zeros": [
+        ".580",
+        ".581"
+      ],
+      "first_padding_for_half_ready_weight": 818,
+      "first_padding_for_99_percent_ready_weight": 827,
+      "log_price_difference_with_827_zeros": [
+        "9.20e-5",
+        "9.24e-5"
+      ],
+      "service_record_width_for_equal_padding": 11408,
+      "equal_width_log_price_difference": [
+        "9.04262e-5",
+        "9.04264e-5"
+      ]
+    },
+    "printed_Kraft": {
+      "Kraft_tree_upper_bound": [
+        ".77296210504772",
+        ".77296210504774"
+      ],
+      "two_flag_X_retry_Kraft": [
+        ".76393202250021",
+        ".76393202250023"
+      ],
+      "F6_minus_F5_support_Kraft": [
+        "3.21952e-11",
+        "3.21953e-11"
+      ],
+      "alternative_ternary_words": [
+        "0",
+        "100",
+        "1010"
+      ]
+    },
+    "price_of_added_record_devices_is_included_in_known_ledger": false,
+    "padded_composite_executed": false
+  },
+  "ready_material_anchor": {
+    "logical_car_head_columns": 64,
+    "marked_car_basis_labels": [
+      0,
+      1,
+      14,
+      15
+    ],
+    "occupied_anchor": "e1 at mark 01",
+    "conditional_ready_anchor_probability": "p",
+    "material_moment_reads_only": [
+      "00",
+      "11"
+    ],
+    "markers_given_known_positive_bit": {
+      "births": 4,
+      "G": 4,
+      "CX": 10
+    },
+    "composite_executed": false
+  },
+  "full_book03_valuation_identified": false,
+  "GR_closed": false
+}
