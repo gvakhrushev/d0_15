@@ -13,6 +13,19 @@ Assembly: `EXP-A4D-JOINT-RESPONSE-DECOUPLING-MICROSTRUCTURE`
 Assembly-Carrier: `native-programme-v1`
 Assembly-Slot: `constitutive`
 
+## 19 November 2026 — consume the actual reference error in one full binding budget
+
+Same #334 / native-programme-v1 / constitutive, native realization and final composition. The [actual dyadic reference source](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/DYADIC_REFERENCE_SOURCE_RU.md) removes the generic probability-error/gain estimate for the existing loader's common radial error. The original eight settings give actual gain τg and matter coefficient k₀/τ; the existing L=4 word has |δk|<9.59e-5 before multiplying the real material covector norm. General dyadic phases retain a degree-ten interpolation term and its independent PF source, with no new readout programme. No complete physical price or terminal is inferred.
+
+The [single same-history source composition](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/SAME_HISTORY_BINDING_RU.md) consumes this structured error together with the full native-stage work below. SB6–SB8 retain the complete dual norm, right lift, internal kernel rows, actual calibration derivatives and every remaining outside price. The open parent substitution is one physically derived full valuation with controlled residual; it need not be an additive local-mean law, and 604 arbitrary tariff values are not made a universal prerequisite. Primary section 7hh records this composition. Keep C and physical GR open until that substitution and the existing realization/refinement premises are proved.
+
+## 19 November 2026 — consume the complete native-stage work source
+
+Same #334 / native-programme-v1 / constitutive, native realization and final composition. The [complete 34-stage work calculation](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/COMPLETE_WORK_SOURCE_RU.md) uses the exact LIVE_PARSER word from a439872, retaining all six births, 28 square calls, full old input and deferred joint terminal check. It supplies every local Hermitian work insertion and the complete input/gate/mark derivative formula. The classical-T work operator has a 20-dimensional image, including real old Spin and port sources. This is a computed substitution for a supplied additive local-mean work law, not a proof that original Cost−Info chooses it.
+
+The parent consumer is CD10–CD13 / LC15–LC16: evaluate the actual stage marks (or prove the required valuation transport), keep their independent derivatives and all external costs, then apply CW14 with the actual geometric gain and right-lift norm. Use global prefixes for repeated copies; early changes can affect later resource charges. Three fully positive fixed 34-stage models give +Dπ, zero and −Dπ, including the current first-source check on the declared fixed-effect fibre. Thus mere positive payment of every operation cannot replace that physical-law input. Canonical fixed noise does not itself require the added noisy-actuator arena. Primary section 7hg integrates this result; no physical premise is marked discharged, no terminal or lifecycle promotion.
+
+
 ## 19 November 2026 - the cost of confirming the original reader outcome
 
 The [same-history feedback result](../../02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/GROWING_CLOCK_DOOB_RU.md) extracts the actual final clock block from EOQ1 and preserves every normalized operator of the native history, its determinant and its source. See primary section 7gi and the shared index for the remaining absolute valuation and complete physical residual.
