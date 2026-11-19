@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "B180_reference_sha256": "525cedee1064673aacff9a7ea6c19aba6bc1e834433272680d4775b9775c2407",
+  "fixed_word_cold_balance": {
+    "loaded_old_parity_RIGHT_columns": 4,
+    "word_square_inventory": {
+      "CX": 20,
+      "G": 5
+    },
+    "births": 5,
+    "additional_measurements": 0,
+    "basis_moves_after_common_clear": 6,
+    "total_primitive_pure_state_movement": "11+5p+5p^3",
+    "held_active_and_filler_passive_squares": [
+      "p^9",
+      "p^5"
+    ],
+    "after_their_old_marker": [
+      "p^11",
+      "p^11"
+    ]
+  },
+  "exact_positive_signed_reader": {
+    "literal_three_published_codes": [
+      {
+        "signed_score": -1,
+        "printed_length": 3,
+        "cold_exponent": 6,
+        "trace_cost_extra_above_zero_shape": "-p^3"
+      },
+      {
+        "signed_score": 0,
+        "printed_length": 4,
+        "cold_exponent": 7,
+        "trace_cost_extra_above_zero_shape": "0"
+      },
+      {
+        "signed_score": 1,
+        "printed_length": 6,
+        "cold_exponent": 9,
+        "trace_cost_extra_above_zero_shape": "4+2p^3"
+      }
+    ],
+    "fixed_square_movement_version": [
+      {
+        "signed_score": -1,
+        "printed_length": 3,
+        "cold_exponent": 15
+      },
+      {
+        "signed_score": 0,
+        "printed_length": 4,
+        "cold_exponent": 15
+      },
+      {
+        "signed_score": 1,
+        "printed_length": 6,
+        "cold_exponent": 15
+      }
+    ],
+    "balanced_inventory_before_actual_projective_calls": {
+      "births": 12,
+      "G": 12,
+      "CX": 39
+    },
+    "balanced_pure_state_square_movement": "18+12p+9p^3",
+    "new_conditional_Info_of_codes_given_old_score": 0,
+    "actual_tail_inspections_and_dispatch_to_be_budgeted": true
+  },
+  "native_guard_z": {
+    "raw_columns_including_RIGHT": 32,
+    "SourceI": 5,
+    "CX": 8,
+    "targeted_spin_gate_admissible": false
+  },
+  "full_positive_composition": {
+    "all_reached_ratio": "u (1-p m)",
+    "with_early_stops_ratio": "1-r+u r(1-p m)",
+    "adapted_factor_derivative_at_zero_score": "-p u r Dm + (u-1) Dr + r Du",
+    "dimensionless_gain_for_all_reached_at_m_0": "p/log(phi)"
+  },
+  "full_A87_B180_Book03_word_executed": false,
+  "full_book03_valuation_identified": false,
+  "GR_closed": false
+}
