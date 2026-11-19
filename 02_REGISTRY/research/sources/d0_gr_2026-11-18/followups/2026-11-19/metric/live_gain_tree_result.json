@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "native_owner": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "live_blocks": 16,
+  "golden_u": [
+    "0.381966011250105",
+    "0.381966011250106"
+  ],
+  "first_noise_v": [
+    "0.206227706049255",
+    "0.206227706049256"
+  ],
+  "odds_10_vs_01_minus": [
+    "0.420376776000605",
+    "0.420376776000606"
+  ],
+  "odds_10_vs_01_plus": 1,
+  "true_10_given_mismatch_minus": [
+    "0.295961454103939",
+    "0.295961454103940"
+  ],
+  "true_joint_H1_and_10_minus": [
+    "0.048683757471468",
+    "0.048683757471469"
+  ],
+  "true_joint_H1_and_01_minus": [
+    "0.115809816932890",
+    "0.115809816932891"
+  ],
+  "sharp_minimax_TV_surp_with_fixed_ratio": [
+    "0.204038545896060",
+    "0.204038545896061"
+  ],
+  "required_residual_minus_minus_plus_gold_units": [
+    "3.601756395003650",
+    "3.601756395003651"
+  ],
+  "plus_minus_delta_mean_report_length": [
+    "0.067126059461421",
+    "0.067126059461422"
+  ],
+  "plus_minus_delta_full_report_Shannon_phi": [
+    "0.123907937457918",
+    "0.123907937457919"
+  ],
+  "plus_minus_delta_scalar_Bellman_negative_log_pressure": [
+    "-0.180689815454416",
+    "-0.180689815454415"
+  ],
+  "plus_minus_delta_likelihood_negative_log_pressure_fixed_code_support": 0,
+  "plus_minus_delta_complete_RAW_for_comparison": [
+    "-0.000000000000000000000000002810120308",
+    "-0.000000000000000000000000000433992154"
+  ],
+  "variable_tree_exact_leaf_masses": {
+    "stop": "11/64",
+    "pass": "33/160",
+    "fail": "99/320"
+  },
+  "full_history_economic_binding_established": false
+}

@@ -1,0 +1,32 @@
+{
+  "additional_zero_minus_one_mean_work_needed_at_M4": [
+    "0.8502635876346",
+    "0.8502635876347"
+  ],
+  "beta_p_over_22": [
+    "0.021460725227253",
+    "0.021460725227254"
+  ],
+  "complete_clock_dimension": 38,
+  "live_I0_M3": [
+    "0.061761760125084",
+    "0.061761760125085"
+  ],
+  "live_I0_M4": [
+    "-0.350708120443471",
+    "-0.350708120443470"
+  ],
+  "live_I0_M4_at_q_p_squared": "-p^4",
+  "local_hamiltonian_check": "numeric full clock with all complements; analytic proof in note",
+  "pc13_q": [
+    "0.412469880568555",
+    "0.412469880568556"
+  ],
+  "price_binding": "single cut variational deficit only; no physical edge-value assignment",
+  "primary_native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "status": "PASS",
+  "two_stage_thermal_source_separation": [
+    "0.069448365681837",
+    "0.069448365681838"
+  ]
+}

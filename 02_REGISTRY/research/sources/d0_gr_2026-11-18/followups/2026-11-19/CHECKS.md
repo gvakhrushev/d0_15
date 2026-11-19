@@ -37,6 +37,9 @@ python3 -B "$d/metric/check_weighted_recovery.py"
 python3 -B "$d/metric/check_guarded_noise.py"
 python3 -B "$d/metric/check_live_parser.py"
 python3 -B "$d/metric/check_guarded_purity.py"
+python3 -B "$d/metric/check_clock_coherence.py"
+python3 -B "$d/metric/check_late_site.py"
+python3 -B "$d/metric/check_live_gain_tree.py"
 python3 -B "$d/metric/check_full_site_sort.py"
 python3 -B "$d/metric/check_counted_separator.py"
 python3 -B "$d/metric/check_absolute_site_pair.py"
@@ -74,6 +77,9 @@ python3 -B "$d/realization/check_realization.py"
 | Когерентные веса порта | Шесть штатных слов на всех столбцах Spin и порта, настоящий код 0/10 и три независимые символические вариации. [Результат](metric/golden_work_gauge_result.json) |
 | Геометрический допуск восьми настроек | Проверка исходной опоры F2–F6, однородности преобразованных полей и полного конечного селектора. [Результат](metric/eight_geometric_audit_result.json) |
 | Независимые прямые и обратные ноги | Все четыре настоящих исполнения на исходных защищённых столбцах и тепловая граница, с разграничением арены компилятора. [Результат](metric/crossed_repeat_result.json) |
+| Когерентность и тепловой граф | Настоящий растущий clock, внутренний срез, контроль термического члена и условная стоимость четырёх записей. [Результат](metric/clock_coherence_result.json) |
+| Поздняя запись SITE | Полный общий журнал, смешанный старый SITE, конечный нативный пример и запись восьми адресных битов. [Результат](metric/late_site_result.json) |
+| Выигрыш живого дерева | Конечные Born-законы, кодовые веса, Shannon и относительный выигрыш на нативных секущих. [Результат](metric/live_gain_tree_result.json) |
 | Полная память перед шумным отчётом | Нативный тест обратного возврата и интервальные границы для истинных состояний и отмеченных ветвей. [Результат](metric/guarded_purity_result.json) |
 | Все ячейки SITE и ранние отметки | Физическая сортировка и критерий скалярности ранних записей по полным конечным таблицам. [Результат](metric/full_site_sort_result.json) |
 | Полный спектр и условная сумма путей | Два нативных фронта, все ветви, интервалы детерминанта и полного тепла при K=15. [Результат](metric/counted_separator_result.json) |
