@@ -6,9 +6,12 @@
   ],
   "primary_pr334": "44ed019e18d08e00bc23e46201e84b4d661490ae",
   "reviewed_pr334": "a4398729c8ac8406d3d1ba9d4dd28320a9ddd84d",
+  "comparison_pr334": "65753c972b4ad1e528a29b0343e30c3ecc9b9670",
   "related_open_commits": {
     "B162": "1d47593adde9f4a472ad9c7c151d74160e317f82",
-    "B163": "1f3814a84081c958ceb5190e8982407f5c65aafd"
+    "B163": "1f3814a84081c958ceb5190e8982407f5c65aafd",
+    "B164": "22875d30c8f32646f583ba0199d434430bfb1172",
+    "B165_claim": "d6c9be50cbc067fb62439c5879607f2337ce9a0e"
   },
   "GR_closed": false,
   "physical_C_closed": false,
@@ -115,6 +118,26 @@
       "repository_files": [
         "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
       ]
+    },
+    {
+      "id": "owner_counted_separator",
+      "commit": "65753c972b4ad1e528a29b0343e30c3ecc9b9670",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_counted_separator.py",
+      "receipt": "counted_separator_result.json",
+      "files": [
+        "check_counted_separator.py",
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_reference_pf_path.py",
+        "check_repeat_clock.py",
+        "check_source_price.py",
+        "counted_separator_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
     }
   ],
   "lanes": [
@@ -126,7 +149,7 @@
       "evidence": {
         "direct/round68/equations/BINARY_POINTER_RU.md": "67f4fb741f539e125e7e038de1b3a665d57527feba6d0c325ed0d2d1d07aa27d",
         "direct/round78/selection/H1_EQUATIONS_RU.md": "8d95e35baa5c0e48c761dc952007fc81b44b5e5dc59f28b8e1efb95cd27c8a98",
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
         "direct/round80/assembly/check_restored_clock.py": "bc604be6e0b14e022b9225369f189215693fa440164738141267be35e5fb1f96"
       }
@@ -137,7 +160,7 @@
       "result": "При общей двухсекторной склейке два направления возврата фиксируют обе самопетли и полный обход; скрытая условная энтропия имеет отдельный источник.",
       "open": "Исходные веса Книги III для трёх замкнутых путей и склейка при сохранении часов.",
       "evidence": {
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/assembly/CYCLE_PRICE_RU.md": "d6f3926c04292eaa98dc05455a210ad452ae6aafe0360f7285ce7750ff9ad78d",
         "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
         "direct/round80/assembly/check_cycle_price.py": "111fb5c99226877651ad8fbd22ef5fbc62df83dd67e2d01305cf91ccb6c95fed"
@@ -153,7 +176,7 @@
         "direct/round79/heat/COLLECTOR_HEAT_RU.md": "f095c1b643c1b242e56e2fc47473e152fa594596c6ad14f22898206634286001",
         "direct/round79/writer/SHARP_HISTORY_WRITER_RU.md": "3db90d4ee89a1329453a1a210a7866483eefa427e36564bca158d23497a52b5f",
         "direct/round79/writer/check_sharp_history_writer.py": "2714e8dd7b4452af2e9518bd88af9708a13a8a33dac49a0aa077788314c7c818",
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/native/GLOBAL_PHASE_RU.md": "b6dfbe0dfa1e2c1934ea67fdeb2e90e8720361d7d2039576dad999c6acc0ca4b",
         "direct/round80/native/check_phase_pair.py": "337f34d9d72297b87d8b13e88709f59d2700c34ee212add8a6db32d27609abdc"
       }
@@ -166,7 +189,7 @@
       "evidence": {
         "direct/round68/equations/BINARY_POINTER_RU.md": "67f4fb741f539e125e7e038de1b3a665d57527feba6d0c325ed0d2d1d07aa27d",
         "direct/round79/memory/check_cold_compensation.py": "9cf72d9118e7eb7e4e6b1f46f38aadee2ca0953054a3a93806f54741d63e33b9",
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
         "direct/round80/native/check_return_work.py": "fdc0d988a48073b862f92dbe1e3f945f529c32fb3e907421c2f611dbcdea739c"
       }
@@ -178,7 +201,7 @@
       "open": "Доступ ко всей фазовой памяти, цена подготовки и контроллера.",
       "evidence": {
         "direct/round79/memory/TOMOGRAPHY_RU.md": "260b74179d93445dd02d44f1e6633114dd5a812c0855b1741a0bf7352d2a7a0f",
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/memory/PHASE_MEMORY_RU.md": "1a0fec8a25a68f35ffc0f3af257058e03180bea74ba9e5b2c81f92354ff0e162",
         "direct/round80/memory/check_phase_memory.py": "923144e6aa3c8b28a49ea360c5a7c2857da4ce692d74035e4d032533c8289163"
       }
@@ -191,7 +214,7 @@
       "evidence": {
         "direct/round79/memory/TOMOGRAPHY_RU.md": "260b74179d93445dd02d44f1e6633114dd5a812c0855b1741a0bf7352d2a7a0f",
         "direct/round79/memory/check_cold_compensation.py": "9cf72d9118e7eb7e4e6b1f46f38aadee2ca0953054a3a93806f54741d63e33b9",
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/memory/FIELD_SQUARE_RU.md": "0f5e9dfc4106ae4ae18c0498a74f12ec8bf0f862731eeebe496cbbe5c7a0d3c0",
         "direct/round80/memory/PHASE_MEMORY_RU.md": "1a0fec8a25a68f35ffc0f3af257058e03180bea74ba9e5b2c81f92354ff0e162",
         "direct/round80/memory/check_field_square.py": "6c3f3c1bede7627e2fcc8fa3422f7d17b77bb01f3b4c2be8358ef23681dced84",
@@ -206,7 +229,7 @@
       "evidence": {
         "direct/round70/absolute/check_threshold_price.py": "e61e8b708e240303b5afd5ec440929cc203bca2ff4fbb491c0c8c025fedd020f",
         "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/price/PARITY_PRICE_RU.md": "16a578fb8953f41bc1ccb917761782e0a8719ec233fe162a19baa563fc153f47",
         "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9"
       }
@@ -219,7 +242,7 @@
       "evidence": {
         "direct/round79/heat/RETURN_MOMENTS_RU.md": "844f817751a952227a6fc528bed4d32f52653f58390aaa5c2c654849c02930a5",
         "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/price/OPERATOR_RETURN_RU.md": "5f57bab5819c9cb5fd8c14a39ec153bddaae6b58824694e5326a09d99c88ea9f",
         "direct/round80/price/PARITY_PRICE_RU.md": "16a578fb8953f41bc1ccb917761782e0a8719ec233fe162a19baa563fc153f47",
         "direct/round80/price/check_operator_return.py": "af16a46dc1d5137642778428b8e0a63819ebe189d47d72a18184a0283a496150",
@@ -233,7 +256,7 @@
       "open": "Допуск H.1 и абсолютная работа внутренних стадий, которая может зависеть от поля.",
       "evidence": {
         "direct/round79/writer/check_sharp_history_writer.py": "2714e8dd7b4452af2e9518bd88af9708a13a8a33dac49a0aa077788314c7c818",
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
         "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
         "direct/round80/native/SWITCH_LOG_RU.md": "403013c3df7406c0007f26eebc750fb93e592ee369cf45eab1ad45b232ff3f52",
@@ -246,13 +269,27 @@
       "result": "Различимость соседних полей и двухреферентный контраст восстанавливают направление действия на регуляторе.",
       "open": "Отождествление наблюдаемой различимости с исходной оплатой и выбор сохраняемой информации.",
       "evidence": {
-        "direct/round80/READOUT_RU.md": "2f999321b36c7a16ea9f1258c4edaa2582f0672c91ba51481f4427cb5b344e77",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
         "direct/round80/assembly/CYCLE_PRICE_RU.md": "d6f3926c04292eaa98dc05455a210ad452ae6aafe0360f7285ce7750ff9ad78d",
         "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
         "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
         "direct/round80/price/FIELD_INFORMATION_RU.md": "0f9b1fa432a3a799fde34e25325dbc1f18c029797974af3406be2a22ccd88983",
         "direct/round80/price/OPERATOR_RETURN_RU.md": "5f57bab5819c9cb5fd8c14a39ec153bddaae6b58824694e5326a09d99c88ea9f",
         "direct/round80/price/check_field_information.py": "818b8b656c1fc1c568296b0e821c3d3067dc2b8d66b6ba51bb4d12a04d422651"
+      }
+    },
+    {
+      "id": "old_memory_channel_with_two_physical_caps",
+      "check": "direct/round80/comparison/check_comparison.py",
+      "result": "Вычислен канал старого входа с обоими конечными ограничениями и всеми служебными отказами.",
+      "open": "Допустимость прибора на H.1 и стоимость фактического восстановления на заданных проводах.",
+      "evidence": {
+        "direct/round79/memory/check_cold_compensation.py": "9cf72d9118e7eb7e4e6b1f46f38aadee2ca0953054a3a93806f54741d63e33b9",
+        "direct/round80/READOUT_RU.md": "84873c50d6fe2a05045c7b8735fcd7086e85450cbae8f95d288b7b89144e9fb4",
+        "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
+        "direct/round80/comparison/COMPARISON_RU.md": "4885e107a16a2c20b6c873c406bd74e22ba66e82931920b178c6a2b9031bb6f6",
+        "direct/round80/comparison/check_comparison.py": "32379fc5a0c39883dd2487436c9735e1b7fb283eaf876cbdbf98330b560cdadf",
+        "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2"
       }
     }
   ]
