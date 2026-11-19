@@ -328,5 +328,13 @@
         "direct/round78/h1_right/check_fine_reference.py": "dd11139ce7c808d1f914a75db91f8a5613ceca164447437f7de606e30599acbf"
       }
     }
-  ]
+  ],
+  "verification": {
+    "snapshot": "c5b27c72da8bd1b2ba0ae7378dc6b180328a1fed",
+    "committed_snapshot_files": 87,
+    "local_checks_passed": 16,
+    "pinned_upstream_receipts_matched": 3,
+    "prior_A62_A77_checks_passed": 107,
+    "assembly_scientific_promotion": false
+  }
 }
