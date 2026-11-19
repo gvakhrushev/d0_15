@@ -258,3 +258,5 @@ python3 -B "$d/realization/check_realization.py"
 **Центральность золотого seed:** `python3 -B metric/check_seed_program_centrality.py` проверяет семена N=2…8 и семь представительных срезов отказной фабрики; см. [результат](metric/seed_program_centrality_result.json) и [условный вывод](metric/GOLDEN_SEED_CENTRALITY_RU.md).
 
 **Bellman и конечная секущая:** `python3 -B metric/check_bellman_fresh_secant.py` проверяет буквальный считыватель на 16 столбцах, seed при N=8 и интервальные границы секущих; см. [условное тождество и полный остаток](metric/BELLMAN_FRESH_SECANT_RU.md).
+
+**Нативный NC1 и редкие отказы:** `python3 -B metric/check_native_union_nc1_caps.py` проверяет NC1 на произвольных комплексных входах с RIGHT, реальные ветви и точные пределы попыток; см. [результат](metric/native_union_nc1_caps_result.json) и [условия](metric/NATIVE_UNION_NC1_CAPS_RU.md).
