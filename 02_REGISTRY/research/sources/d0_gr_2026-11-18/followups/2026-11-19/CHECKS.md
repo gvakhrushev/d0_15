@@ -40,6 +40,9 @@ python3 -B "$d/metric/check_guarded_purity.py"
 python3 -B "$d/metric/check_clock_coherence.py"
 python3 -B "$d/metric/check_late_site.py"
 python3 -B "$d/metric/check_local_gibbs_records.py"
+python3 -B "$d/metric/check_spectral_tree_balance.py"
+python3 -B "$d/metric/check_gibbs_root_ledger.py"
+python3 -B "$d/metric/check_paired_readers.py"
 python3 -B "$d/metric/check_paid_tail_audit.py"
 python3 -B "$d/metric/check_silent_nc1.py"
 python3 -B "$d/metric/check_live_gain_tree.py"
@@ -81,6 +84,9 @@ python3 -B "$d/realization/check_realization.py"
 | Геометрический допуск восьми настроек | Проверка исходной опоры F2–F6, однородности преобразованных полей и полного конечного селектора. [Результат](metric/eight_geometric_audit_result.json) |
 | Независимые прямые и обратные ноги | Все четыре настоящих исполнения на исходных защищённых столбцах и тепловая граница, с разграничением арены компилятора. [Результат](metric/crossed_repeat_result.json) |
 | Когерентность и тепловой граф | Настоящий растущий clock, внутренний срез, контроль термического члена и условная стоимость четырёх записей. [Результат](metric/clock_coherence_result.json) |
+| Полный баланс спектрального дерева | Условные средние по вершинам, веса листьев, корневой остаток, контроль редких исходов и платные нативные секущие. [Результат](metric/spectral_tree_balance_result.json) |
+| Два нативных считывателя | Совместные квитанции, локальные состояния и чувствительность к цене двух записей. [Результат](metric/paired_readers_result.json) |
+| Цена корня Gibbs и журнал | Полный clock с oldRIGHT, нативный шумный прибор и двухсекторные пределы зарегистрированной сметы. [Результат](metric/gibbs_root_ledger_result.json) |
 | Графовые веса записей | Полное тепло двух степеней, локальный Gibbs-оператор, старый RIGHT и три конечные схемы. [Результат](metric/local_gibbs_records_result.json) |
 | Платный аудит хвостов | Новые регистрации, конечный Shannon-бюджет, полный clock и исходные две программы. [Результат](metric/paid_tail_audit_result.json) |
 | Спектрально равные считыватели | Все стадии двух часов и замыкания, LC1 и точный коэффициент кодовой цены. [Результат](metric/silent_nc1_result.json) |

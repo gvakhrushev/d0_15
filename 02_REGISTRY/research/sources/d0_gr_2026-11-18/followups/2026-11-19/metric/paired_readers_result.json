@@ -1,0 +1,40 @@
+{
+  "arithmetic": "exact Z[a], a^4+a^2=1 on all amplitudes and marginals",
+  "controls": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "dimensions": {
+    "full_new_output": 256,
+    "new_wires": 8
+  },
+  "exact_all_conditional_output_laws_and_invalid_zero": true,
+  "exact_local_density_checks_per_reader_per_program": 9,
+  "extra_both_one_over_one_minus_q": "0.0469207958948739070700136345121158008703796169725",
+  "extra_four_mismatch_net_over_one_minus_q": "-0.011747676537936940918998364800674930345647280996",
+  "full_CD13": false,
+  "independent_pair_T0": [
+    "0.897524184375997117914301039604092951613173203397",
+    "0.0498533456383035262618894866691230384247783430325",
+    "0.0498533456383035262618894866691230384247783430325",
+    "0.00276912434739582956191998705766097153727011053893"
+  ],
+  "intrinsic_unknown_two_reader_work_unbounded": true,
+  "lambda_report": "0.944271909999158785636694674925104941762473438460",
+  "mutual_information_nats": "0.174977613739540858189420782740681083452692755654",
+  "no_shadow_offdiagonal_retention": "p^3",
+  "old_registered_T_values": [
+    0,
+    1
+  ],
+  "price_gain_over_one_minus_q": "0.363618690621054315641110711296251476617389654784",
+  "shadow_test": "unread purifications retained; registering both removes all contrasts in conditional entropy",
+  "shared_pair_T0": [
+    "0.944444980270871024984314674116208752483552820368",
+    "0.0029325497434296191918758521570072375543987260599",
+    "0.0029325497434296191918758521570072375543987260599",
+    "0.0496899202422697366319336215697767724076497275115"
+  ]
+}

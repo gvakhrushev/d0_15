@@ -1,0 +1,66 @@
+{
+  "live_check": {
+    "absolute_pressure_ledger_physical_selection_verified": false,
+    "both_grade_log_phi_partition_corridor_rank4": [
+      "0.269427918480733",
+      "0.269427918480734"
+    ],
+    "first_M_excluded_by_this_universal_bound_for_stated_ledger": 10,
+    "native_bank_difference": [
+      "0.021286236252208",
+      "0.021286236252209"
+    ],
+    "old_two_state_report_only_bellman_secant": [
+      "-0.015188808721210",
+      "-0.015188808721209"
+    ],
+    "required_negative_per_copy_magnitude_all_H": [
+      "0.027497476282491",
+      "0.027497476282492"
+    ],
+    "thresholds": [
+      {
+        "additional_gap_beyond_actual_codes": [
+          "6.0567212211111",
+          "6.0567212211112"
+        ],
+        "effective_price_gap": [
+          "7.0567212211111",
+          "7.0567212211112"
+        ],
+        "error_reference": [
+          "0.0324276829699111",
+          "0.0324276829699113"
+        ]
+      },
+      {
+        "additional_gap_beyond_actual_codes": [
+          "-5.0178836206872",
+          "-5.0178836206871"
+        ],
+        "effective_price_gap": [
+          "-4.0178836206872",
+          "-4.0178836206871"
+        ],
+        "error_reference": [
+          "0.8736311345495272",
+          "0.8736311345495275"
+        ]
+      }
+    ]
+  },
+  "root_check": {
+    "absolute_raw_root": 0.472041317,
+    "both_degree_modes": 16150,
+    "leaf_probabilities": [
+      0.5,
+      0.5,
+      0.0
+    ],
+    "native_clock_D": 38,
+    "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "root_charge_gold_units": 1.5599964966,
+    "root_charge_includes_separate_layout_scale": false
+  },
+  "status": "PASS"
+}
