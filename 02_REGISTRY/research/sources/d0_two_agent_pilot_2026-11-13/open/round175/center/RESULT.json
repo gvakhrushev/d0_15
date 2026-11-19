@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "B174_material_trace": "open/round174/material/RESULT.json",
+  "PR334_current_pin": "908e70a3c86be2c99809f1faa830c92993b117ae",
+  "L": 8,
+  "t0": 0.5,
+  "half_secant_step": 0.125,
+  "same_full_closing_output": true,
+  "B174_diagnostics_all_columns": 8192,
+  "reference_and_live_address_inventory": {
+    "CX": 38,
+    "G": 15868,
+    "SourceI": 12
+  },
+  "verified_single_G_inverse_calls": 11,
+  "actual_G_power_on_one_fresh_target": 7932,
+  "native_t_endpoint_Q_minus": [
+    0.3816759877092011,
+    0.3816257019637248
+  ],
+  "native_t_endpoint_Q_plus": [
+    0.5000929027246003,
+    0.5001361361999432
+  ],
+  "native_unattenuated_secants": [
+    -0.0003165187377942344,
+    0.00019962589466231807
+  ],
+  "native_target_attenuation": 0.2137784860749846,
+  "native_compensated_secant_enclosure": [
+    "-1.6e-8",
+    "-1.5e-8"
+  ],
+  "meter_and_external_prefactor_excluded_from_receipt": true,
+  "full_Book03_cost_cancellation_derived": false,
+  "GR_closed": false
+}

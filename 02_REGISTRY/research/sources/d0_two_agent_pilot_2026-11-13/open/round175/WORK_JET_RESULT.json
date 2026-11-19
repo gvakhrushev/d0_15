@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "diagonal_trace_curvature_certified": true,
+  "fixed_absolute_log_sum_covariance_identity": true,
+  "center_compensation": {
+    "uniform_a_interval": [
+      "1/2560",
+      "1/1024"
+    ],
+    "jensen_gap_lower_per_unit_rate": "2.38e-9",
+    "positive_extra_slope_range_in_units_of_a": [
+      "0",
+      ".01"
+    ],
+    "positive_interference_curvature_per_interference_slope_lower": ".9",
+    "two_continuous_target_dials_cancel_first_and_second_conditional_work_jets": true,
+    "native_dials_only_approximate_the_calibrated_values": true
+  },
+  "native_target_example_on_ideal_field": {
+    "material_lattice": 8,
+    "fixed_native_target_powers": [
+      72434,
+      85468
+    ],
+    "conditional_first_and_second_remainders_each_below": "3e-9",
+    "normalized_geometric_gain_precision_attained": false
+  },
+  "complete_microscopic_price_derived": false,
+  "GR_closed": false
+}
