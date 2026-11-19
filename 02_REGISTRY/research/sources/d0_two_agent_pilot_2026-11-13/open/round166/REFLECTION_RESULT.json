@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "exact_nonscalar_generator_checks": 15,
+  "exact_native_passive_monitor_cases": 20,
+  "two_visit_attenuator_identity": "h_matched=p^2 I+p^5 C^2",
+  "single_shared_inverse_both_active_arm_weights": "p^5",
+  "free_reverse_bisectors_and_reference_transport": true,
+  "exact_odd_native_identity_for_synchronization": true,
+  "full_physical_Cost_minus_Info": false,
+  "GR_closed": false
+}
