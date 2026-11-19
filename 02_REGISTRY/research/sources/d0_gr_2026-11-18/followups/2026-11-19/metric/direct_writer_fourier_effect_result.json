@@ -1,0 +1,31 @@
+{
+  "status": "PASS; complete physical word interfaces, conditional marked hardware",
+  "protected_SITE_P_RIGHT_dimension_tested": 8,
+  "joint_physical_equality_gram_error": 1.5612511283791264e-17,
+  "equality_and_writer_effects": [
+    "q E_H0",
+    "q E_H1"
+  ],
+  "localization_outcome_weights_only_effect": "lambda I",
+  "both_writer_and_localizer_FQ_effect": "lambda (z0 P0 + z1 P1)",
+  "q_equal": 0.00390625,
+  "lambda_both_localizer_outcomes": 0.9985079452685542,
+  "general_H_weight_effect_gap": "(a0-a1)*p^3",
+  "conditional_FQ_log_weight_slope_at_t_half": 0.23161562995231338,
+  "both_effect_eigenvalues_without_hardware": [
+    0.8528275993698048,
+    0.7627921941115361
+  ],
+  "eigenvalue_gap_before_lambda": 0.09016994374947429,
+  "exact_gap": "p^5",
+  "actual_unchanged_input_P_pure_offdiag": 0.5,
+  "after_normalized_equality_unweighted_offdiag": 0.4858682717566457,
+  "after_normalized_equality_H_FQ_weighted_offdiag": 0.4858682717566457,
+  "same_input_coherence_multiplier": 0.9717365435132914,
+  "correlated_scene_P_witness_relative_leading_shift": 3.52804864156564e-05,
+  "correlated_scene_P_witness_log_leading_shift": 3.527986407393317e-05,
+  "spatial_scene_P_state_physical_admission_proved": false,
+  "FQ_weights_selected_by_complete_Book03": false,
+  "full_geometric_bank_or_joint_clock_compiled": false,
+  "GR_closed": false
+}
