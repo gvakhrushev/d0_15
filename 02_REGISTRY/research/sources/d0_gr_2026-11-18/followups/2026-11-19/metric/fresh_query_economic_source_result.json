@@ -1,0 +1,241 @@
+{
+  "anisotropy_negative_control": {
+    "center_q": 0.42,
+    "finite_difference_error": "6.438e-11",
+    "independent_trace_source": "-0.02265661052326",
+    "scalar_effect_family_required": true,
+    "thermal_error": 0
+  },
+  "conditional_parent_result": "one full absolute graph root; positive fresh-query source; no old-memory independence or inverse rare-product penalty",
+  "exact_raw_live": {
+    "arithmetic": "exact Q(a), a^4+a^2-1=0",
+    "births": 6,
+    "cold_decimal": "0.260595973995225",
+    "cold_exact": "2+2*a-3*a^2-3*a^3",
+    "cold_squared": "0.0679102616625202",
+    "input_columns": 16,
+    "native_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "output_dimension": 2048,
+    "square_stages": 28
+  },
+  "feedback_matrix_controls": [
+    {
+      "M": 1,
+      "actual_matrix_derivative": "-9.0732618842e-09",
+      "full_tangent_upper": "1.6159704159e-07",
+      "structured_upper": "1.9246680447e-07"
+    },
+    {
+      "M": 2,
+      "actual_matrix_derivative": "-6.1616761015e-10",
+      "full_tangent_upper": "1.0974097378e-08",
+      "structured_upper": "1.3070471053e-08"
+    },
+    {
+      "M": 4,
+      "actual_matrix_derivative": "-2.8416440339e-12",
+      "full_tangent_upper": "5.0610382224e-11",
+      "structured_upper": "6.0278445967e-11"
+    },
+    {
+      "M": 8,
+      "actual_matrix_derivative": "-6.0438167686e-17",
+      "full_tangent_upper": "1.0764186967e-15",
+      "structured_upper": "1.2820461612e-15"
+    }
+  ],
+  "fresh_guard_35_stage_composition": {
+    "all_branch_owner": "check_fresh_guard_reader.py",
+    "conditional_factors_Qp": [
+      {
+        "p": "7",
+        "rational": "-4"
+      },
+      {
+        "p": "10",
+        "rational": "-6"
+      }
+    ],
+    "fine_tilted_state_negative_control": {
+      "arithmetic": "exact Q(p)",
+      "operator": "(I+P_H1)/2",
+      "required_map": "sum over actual t,h,e Kraus branches with each p^s; preserve original unweighted Gamma and full Z_N",
+      "rows": [
+        {
+          "T": 0,
+          "actual_tilted_H1": {
+            "p": "2/5",
+            "rational": "1/5"
+          },
+          "original_H1": {
+            "p": "-1",
+            "rational": "1"
+          },
+          "positive_K_difference": {
+            "p": "-21/2",
+            "rational": "13/2"
+          }
+        },
+        {
+          "T": 1,
+          "actual_tilted_H1": {
+            "p": "0",
+            "rational": "1/2"
+          },
+          "original_H1": {
+            "p": "-1",
+            "rational": "1"
+          },
+          "positive_K_difference": {
+            "p": "-21/2",
+            "rational": "13/2"
+          }
+        }
+      ]
+    },
+    "kappa": "1/sqrt(5)",
+    "known_H1_not_required": true,
+    "nonscalar_interleaving_controls": [
+      {
+        "M": 1,
+        "actual_norm": "0.26996483498",
+        "upper_c0_power": "0.26996483498"
+      },
+      {
+        "M": 2,
+        "actual_norm": "0.072707082725",
+        "upper_c0_power": "0.072881012126"
+      },
+      {
+        "M": 4,
+        "actual_norm": "0.0051961739009",
+        "upper_c0_power": "0.0053116419285"
+      },
+      {
+        "M": 8,
+        "actual_norm": "2.4717315376e-05",
+        "upper_c0_power": "2.8213539977e-05"
+      }
+    ],
+    "positive_per_query_minimum_gain": "0.929348723807",
+    "query_cancellation_control": {
+      "interleaved_derivative_norm": "0.002529263009857",
+      "query_only_derivative_norm": 0,
+      "required_norm": "sum of actual query-insertion derivative norms"
+    },
+    "raw_c0": "0.269964834980543",
+    "raw_c1": "0.260595973995225",
+    "raw_cold_not_scalar": true,
+    "remaining_scope": "economic weighting is conditional; full 35-stage thermal graph must be built for its actual geometry"
+  },
+  "fresh_scalar_product_arithmetic": [
+    {
+      "M": 1,
+      "born_weighted_mass": "0.8395742753",
+      "positive_code_gain_on_diagonal": "0.945429839516"
+    },
+    {
+      "M": 8,
+      "born_weighted_mass": "0.246872654",
+      "positive_code_gain_on_diagonal": "7.56343871613"
+    },
+    {
+      "M": 64,
+      "born_weighted_mass": "1.379697533e-05",
+      "positive_code_gain_on_diagonal": "60.507509729"
+    },
+    {
+      "M": 256,
+      "born_weighted_mass": "3.62356078e-20",
+      "positive_code_gain_on_diagonal": "242.030038916"
+    }
+  ],
+  "native_entangled_cp_and_thermal_fixture": {
+    "actual_report_probabilities": [
+      "0.94427190999916",
+      "0.82779073125683"
+    ],
+    "actual_root_partition": "73352.79042498",
+    "births": 2,
+    "clock_dimension": 188,
+    "full_source_identity_error": "7.728e-11",
+    "full_two_grade_modes": 79900,
+    "input_Spin_dimension": 4,
+    "local_tilted_normalized_mass": "0.47204095758746",
+    "local_unweighted_mass": "0.47204095758746",
+    "product_weight": "0.43717489043581",
+    "scope": "literal two-query native graph, not the full query-plus-LIVE clock; smooth matrix derivative is a mathematical diagnostic, not an admission theorem",
+    "untouched_RIGHT_dimension": 4,
+    "word": [
+      [
+        "G",
+        2
+      ],
+      [
+        "SourceI",
+        2,
+        0,
+        1
+      ],
+      [
+        "G",
+        3
+      ],
+      [
+        "G",
+        3
+      ],
+      [
+        "CX",
+        2,
+        3
+      ],
+      [
+        "CX",
+        3,
+        2
+      ],
+      [
+        "CX",
+        2,
+        3
+      ],
+      [
+        "SourceI",
+        2,
+        0,
+        1
+      ],
+      [
+        "CX",
+        2,
+        3
+      ],
+      [
+        "CX",
+        3,
+        2
+      ],
+      [
+        "CX",
+        2,
+        3
+      ]
+    ]
+  },
+  "remaining_physical_operand": "true same-history economic weights, field-bank admission, and actual full source/gain/lift budgets",
+  "scientific_status": {
+    "GR_closed": false,
+    "obligation_C_discharged": false,
+    "physical_economic_weight_selected": false,
+    "whole_Einstein_bank_built": false
+  },
+  "source_sha256": {
+    "check_complete_work_source.py": "09e5ba5610f87c73ae361e1df1b8ee999e2ef84914a0c65e5f056d5c85fe636a",
+    "check_fresh_guard_reader.py": "ffa9c866e7bdd29458c874a5be40595e630c3d7c65c95fa18a28ebb7e59e8698",
+    "check_fresh_query_economic_source.py": "2aa0e046fbea631c65e8df444866c48fa7b8bc2cc278e584a48804ee59a80edf",
+    "check_live_parser.py": "20ec31a25b632d781c36d860c276e95d879f9044c41e921ac8c14e769cffa3c7",
+    "check_local_gibbs_records.py": "67080ad0a7858988d7ce3894d1b5918e3e8e892755b9f0d262e785a68c653855"
+  },
+  "status": "PASS"
+}
