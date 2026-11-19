@@ -45,6 +45,10 @@ python3 -B "$d/metric/check_gibbs_root_ledger.py"
 python3 -B "$d/metric/check_paired_readers.py"
 python3 -B "$d/metric/check_complement_price.py"
 python3 -B "$d/metric/check_memory_recurrence.py"
+python3 -B "$d/metric/check_program_memory_nohiding.py"
+python3 -B "$d/metric/check_unmatched_weight_bridge.py"
+python3 -B "$d/metric/check_balanced_controller_source.py"
+python3 -B "$d/metric/check_controller_stability_bound.py"
 python3 -B "$d/metric/check_refinement_mass.py"
 python3 -B "$d/metric/check_event_gain_selection.py"
 python3 -B "$d/metric/check_paid_tail_audit.py"
@@ -81,6 +85,10 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Устойчивость контроллера | Совместная дополнительная цена, внутренние реакции, Fisher-оценка и полная производная на двух секторах. [Результат](metric/controller_stability_bound_result.json) |
+| Сбалансированный контроллер | Один зарегистрированный T, два повторных NC1, полные 32 листа и реакции подготовки по сохранённой истории. [Результат](metric/balanced_controller_source_result.json) |
+| Полная память программы | Шесть слов, ветвь совпадающего рабочего выхода, диагональное хранение метки и оплаченная условная запись. [Результат](metric/program_memory_nohiding_result.json) |
+| Перенос при несовпадающих весах | Точное тождество источников, редкие исходы и конечный полный clock с oldRIGHT. [Результат](metric/unmatched_weight_bridge_result.json) |
 | Рекурсия полной памяти | 24 программы, полная рабочая плотность на 17 срезах и интервальный информационный остаток. [Результат](metric/memory_recurrence_result.json) |
 | Геометрия полного следа | Проверка объёмной проекции в 168 измерениях, 167 независимых проб, настоящих степеней в объёмной модели, ошибок метки и невидимой на ядре цены. [Результат](metric/projective_quotient_result.json) |
 | Конечный масштаб материи | Рациональные интервалы подтверждают противоположные знаки масштабных сдвигов на подлинных материальных полях SC1. [Результат](metric/finite_scale_slip_result.json) |

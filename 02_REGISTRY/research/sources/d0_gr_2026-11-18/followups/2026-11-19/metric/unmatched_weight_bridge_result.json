@@ -1,0 +1,30 @@
+{
+  "example_source_abs": 0.111656624116,
+  "example_source_bound": 0.152039753918,
+  "identity_abs_error": 0.0,
+  "native_acceptance": 0.4720409576,
+  "native_clock_dimension": 38,
+  "native_feedback_J": 7.61389e-07,
+  "native_full_amplitude_fisher_upper": 4.0,
+  "native_graph_fisher": 0.222912359934,
+  "native_heat_rank_both_grades": 16150,
+  "native_kept_probabilities": [
+    0.500000000019,
+    0.499999999981,
+    0.0
+  ],
+  "native_live_two_endpoint_diagnostic": {
+    "defect_is_physical_book_price": false,
+    "log_secant": 0.017205658484,
+    "minus_v": 0.206227706049,
+    "plus_u": 0.38196601125,
+    "upper_bound": 0.019493301015
+  },
+  "native_normalized_source_score": 0.981139553,
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "note": "the actual Cost-Info and admissibility of the input-variation row remain open",
+  "rare_amplitude_fisher_upper": 1.0,
+  "rare_fisher": 1.0,
+  "rare_probability": "2.500000000000e-17",
+  "status": "PASS"
+}

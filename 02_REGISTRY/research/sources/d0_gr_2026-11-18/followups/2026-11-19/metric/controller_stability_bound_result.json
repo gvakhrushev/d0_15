@@ -1,0 +1,25 @@
+{
+  "schema": "d0.controller-stability-bound/1",
+  "status": "PASS",
+  "tested_recorded_sectors": 2,
+  "stationary_u": [
+    0.37899641375997833,
+    0.38434806693927726
+  ],
+  "gradient_L2": 0.009213034245024818,
+  "displacement_L2": 0.0027382284191802635,
+  "displacement_bound": 0.0029017117314150795,
+  "score_bound": 2.380952380952381,
+  "registered_entropy_source_error": 5.308572082278093e-06,
+  "registered_entropy_source_bound": 8.840466121268975e-05,
+  "fisher_information_for_pi": 4.105090311986864,
+  "fourth_moment_of_weighted_controller_gradient": 7.520320000000002e-09,
+  "fisher_source_bound_without_min_probability": 2.7669486719364437e-05,
+  "bounded_score_source_bound_without_compact_u": 3.182567803656831e-05,
+  "retained_amplitude_derivative_norm": 1.0130511230913848,
+  "direct_physical_tariff_source": 1.0639529387892367e-05,
+  "source_baseline": 0.11145618000168249,
+  "full_reduced_source": 0.1114615109589881,
+  "physical_tariff_is_illustrative_only": true,
+  "GR_closed": false
+}
