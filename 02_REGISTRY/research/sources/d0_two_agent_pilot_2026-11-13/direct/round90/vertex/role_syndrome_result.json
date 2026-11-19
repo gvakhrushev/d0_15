@@ -1,0 +1,42 @@
+{
+  "tested_role_and_predecessor_combinations": 4096,
+  "full_old_gram_zero_for_native_head": true,
+  "all_wrong_law_lower_bounds": [
+    {
+      "displacement": -1,
+      "minimum_dark_probability": [
+        ".01492",
+        ".01494"
+      ]
+    },
+    {
+      "displacement": 0,
+      "minimum_dark_probability": [
+        ".01263",
+        ".01265"
+      ]
+    },
+    {
+      "displacement": 1,
+      "minimum_dark_probability": [
+        ".01046",
+        ".01048"
+      ]
+    }
+  ],
+  "opposite_central_share_needed": [
+    ".10692",
+    ".10693"
+  ],
+  "strict_record_mark_dark_probability": [
+    ".47213",
+    ".47214"
+  ],
+  "single_filter_accepted_mass": "p^2+p^4",
+  "two_filter_accepted_mass": "p^3",
+  "first_filter": "p I + p^2 X",
+  "matching_success_effect_on_head": "diag(p,sqrt(p))",
+  "positive_Q8_augmentation_fixed_by_spin": false,
+  "full_economic_vertex_determined": false,
+  "GR_closed": false
+}
