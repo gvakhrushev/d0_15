@@ -1,0 +1,105 @@
+{
+  "CX_80_relative_localizers_with_NC1": 7456,
+  "GR_closed": false,
+  "Hf_Hq_sign_and_180_Choi_compiled": false,
+  "Toffoli_80_relative_fourier_localizers": 2080,
+  "canonical_relative_comparator": {
+    "e0": {
+      "CX_before_NC1": 92,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "Toffoli": 26,
+      "columns": 65536
+    },
+    "e1": {
+      "CX_before_NC1": 92,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "Toffoli": 26,
+      "columns": 65536
+    },
+    "e2": {
+      "CX_before_NC1": 92,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "Toffoli": 26,
+      "columns": 65536
+    },
+    "e3": {
+      "CX_before_NC1": 92,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "Toffoli": 26,
+      "columns": 65536
+    },
+    "zero": {
+      "CX_before_NC1": 88,
+      "NC1_extra_birth_G_CX": [
+        1,
+        1,
+        2
+      ],
+      "Toffoli": 26,
+      "columns": 65536
+    }
+  },
+  "global_weight_fine_tau_or_field_controlled_info_proved": false,
+  "ordinary_mu_must_be_uniform_to_match_uniform_twirl": true,
+  "selected_h_and_shift_and_factory": {
+    "all_listed_first_fail_and_success_total_error": "7.1436712e-102",
+    "complete_first_fail_mass_error": "7.1436712e-102",
+    "eight_plus_first_failure_mass": "4.4857609826321592669e-80",
+    "eighty_comparator_and_shared_tau_ready": "0.99943916146985102123798854684711338",
+    "first_fail_post_count": 15,
+    "first_fail_pre_count": 11,
+    "full_scalar_factory_success_assumed": true,
+    "illustrative_Lambda_1_not_physical_norm_certificate": true,
+    "independent_minus_common_shift_local_report": "5.6936968622469848146882908855004777e-18",
+    "independent_shift_report_probability": "0.0000018512395784882030762843950549834037",
+    "known_one_first_failure": "4.3701303391810674622e-9",
+    "loc_failure_probability_conditional_ready": "255/256",
+    "loc_success_probability_conditional_ready": "1/256",
+    "one_comparator_conditional_ready": "0.99999298326087740727741100796737391",
+    "tau_and_h_ready": "0.99999999562986966081893253781269837",
+    "true_local_single_shift_probability": "0.0000018512395784825093794221480701687154"
+  },
+  "shared_shift_bits": 8,
+  "status": "PASS",
+  "twirl_and_steering": {
+    "effects_are_toy_PSD_counterexample_not_physical_hq": true,
+    "full_transcript_tau_independent_weight_max_error": 8.673617379884035e-19,
+    "non_scalar_P_effect_bell_X_marginal_after": [
+      0.75,
+      0.25
+    ],
+    "non_scalar_P_effect_bell_X_marginal_before": [
+      0.5,
+      0.5
+    ],
+    "site_sector_count": 256,
+    "steering_unnormalized_trace_norm_difference": 0.5,
+    "tau_dependent_weight_breaks_scalar_SITE": true,
+    "twirled_report_effect_on_P": [
+      [
+        0.75,
+        -1.0842021724855044e-19
+      ],
+      [
+        -1.0842021724855044e-19,
+        0.25
+      ]
+    ]
+  }
+}

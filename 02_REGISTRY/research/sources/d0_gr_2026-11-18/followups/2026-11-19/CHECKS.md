@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Общий сдвиг локального отчёта:** `python3 -B -W error metric/check_common_shift_local_report.py` проверяет адресное слово, усреднённые эффекты, steering и отказные вероятности; [результат](metric/common_shift_local_report_result.json) и [условия](metric/COMMON_SHIFT_LOCAL_REPORT_RU.md).
+
 **Граница локального Jensen-остатка:** `python3 -B -W error metric/check_shared_site_jensen_bound.py` проверяет рациональную кривизну и SITE-свидетель; [результат](metric/shared_site_jensen_bound_result.json) и [область](metric/SHARED_SITE_JENSEN_BOUND_RU.md).
 
 **Независимые сдвиги общего SITE:** `python3 -B -W error metric/check_independent_shift_shared_site.py` проверяет адреса, условные эффекты, корреляции и нелинейный контраст; [результат](metric/independent_shift_shared_site_result.json) и [предпосылки](metric/INDEPENDENT_SHIFT_SHARED_SITE_RU.md).
