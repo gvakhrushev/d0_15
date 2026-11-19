@@ -1,0 +1,29 @@
+{
+  "GR_closed": false,
+  "actual_book_cost_info_selected": false,
+  "actual_growing_clock_and_intermediate_prices_computed": false,
+  "compiled_all_columns": 32,
+  "compiler_inventory": {
+    "CX": 8,
+    "G": 2,
+    "SourceI": 4,
+    "total": 14
+  },
+  "diagnostic_finite_difference_error": 1.9703377818203194e-11,
+  "diagnostic_full_field_derivative": 0.125335110187,
+  "diagnostic_optimal_u": [
+    0.360915939057,
+    0.390017592333
+  ],
+  "diagnostic_pi": 0.42,
+  "final_swap_max_branch_vector_error": 1.811772976745538e-16,
+  "full_retained_wires": 13,
+  "input_old_right_arbitrary_by_tensor_identity": true,
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "status": "PASS",
+  "symmetric_but_T_dependent_slope": -0.270509831248,
+  "symmetric_cost_recovers_u": 0.38196601125,
+  "tail_probability_one_after_both": 0.0,
+  "tail_probability_one_before_n0": 0.944271909999,
+  "tail_probability_one_before_n1": 0.0
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "d0.balanced-native-factory/1",
+  "status": "PASS",
+  "phase_CZ": {
+    "G": 6,
+    "CX": 14,
+    "success_probability": 0.9442719099991587
+  },
+  "phase_CCZ": {
+    "G": 12,
+    "CX": 30,
+    "success_probability": 0.21048987994279736
+  },
+  "toffoli_all_eight_columns": true,
+  "oldRIGHT_tensor_identity": true,
+  "second_abort_before_either_report_is_measured": true,
+  "full_service_and_failure_journal_checked": true,
+  "exhaustive_capped_transcript_L2_count": 187,
+  "exhaustive_transcript_cost": 4.068443647712498,
+  "example": {
+    "L0": 16,
+    "L": 32,
+    "resource_success": 0.9998546585052706,
+    "single_toffoli_success": 0.9994806663787555,
+    "joint_report_success": 0.9988164118924417,
+    "resource_attempts_mean": 8.471366345452259,
+    "successful_resource_and_known_one_slots_mean": 4.999600302307161,
+    "service_code_minus_CQ": 12.788444451774948,
+    "conditional_constant_after_controller_stationarity": 12.878507671451342,
+    "gain_wrt_recorded_pi": 0.291450701145305,
+    "counts_before_unknown_N_prep_or_routing": {
+      "birth": 87.79497933066945,
+      "G": 208.63376532509983,
+      "CX": 511.21791001654344,
+      "PVM": 35.66118610708428
+    },
+    "maximum_counts_before_unknown_N_prep_or_routing": {
+      "birth": 1106,
+      "G": 2760,
+      "CX": 5751,
+      "PVM": 517
+    }
+  },
+  "unknown_N_preparation_routing_clock_and_Book_cost": true,
+  "GR_closed": false
+}

@@ -49,6 +49,9 @@ python3 -B "$d/metric/check_program_memory_nohiding.py"
 python3 -B "$d/metric/check_unmatched_weight_bridge.py"
 python3 -B "$d/metric/check_balanced_controller_source.py"
 python3 -B "$d/metric/check_controller_stability_bound.py"
+python3 -B "$d/metric/check_balanced_tail_envelope.py"
+python3 -B "$d/metric/check_balanced_factory.py"
+python3 -B "$d/metric/check_selector36_compilation.py"
 python3 -B "$d/metric/check_refinement_mass.py"
 python3 -B "$d/metric/check_event_gain_selection.py"
 python3 -B "$d/metric/check_paid_tail_audit.py"
@@ -85,6 +88,9 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Обратимый селектор 36 | Точные массы всех 2³⁶ лент, общие логические узлы и проверенный инвентарь конечных фабрик. [Результат](metric/selector36_compilation_result.json) |
+| Фабрика двух выборов | Родные CZ/CCZ, Toffoli, успешные и отказные инструменты, зарегистрированная цена. [Результат](metric/balanced_factory_result.json) |
+| Хвост и огибающая контроллера | 14 нативных букв, все 32 входных столбца, сохранённые конечные состояния и полная условная производная. [Результат](metric/balanced_tail_envelope_result.json) |
 | Устойчивость контроллера | Совместная дополнительная цена, внутренние реакции, Fisher-оценка и полная производная на двух секторах. [Результат](metric/controller_stability_bound_result.json) |
 | Сбалансированный контроллер | Один зарегистрированный T, два повторных NC1, полные 32 листа и реакции подготовки по сохранённой истории. [Результат](metric/balanced_controller_source_result.json) |
 | Полная память программы | Шесть слов, ветвь совпадающего рабочего выхода, диагональное хранение метки и оплаченная условная запись. [Результат](metric/program_memory_nohiding_result.json) |
