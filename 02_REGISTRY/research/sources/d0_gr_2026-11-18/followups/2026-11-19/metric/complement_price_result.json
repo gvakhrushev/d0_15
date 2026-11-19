@@ -1,0 +1,17 @@
+{
+  "conditional_old_T_values": [
+    0,
+    1
+  ],
+  "exact_joint_receiver_state_cancellation": true,
+  "full_CD13": false,
+  "gain": "0.20449008403901587813860359674791140859990071770942",
+  "large_prior_gain": "0.15912860658203843750250711454834006801748893711494",
+  "methods": 8,
+  "outside": "new hidden sources and shadows, protocol-selector access, nonlinear state tariffs, unverified routes",
+  "price_can_include": "both receiver instruments and old reference for an affine common valuation",
+  "small_prior_gain": "0.36361869062105431564111071129625147661738965482436",
+  "snapshot_count": 17,
+  "two_native_unequal_herald_mass": "0.47213595499957939281834733746255247088123671922302",
+  "unconditioned_gain_if_this_herald_is_needed": "0.096547121115705008887209664937360166991489704610861"
+}

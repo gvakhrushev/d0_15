@@ -43,6 +43,10 @@ python3 -B "$d/metric/check_local_gibbs_records.py"
 python3 -B "$d/metric/check_spectral_tree_balance.py"
 python3 -B "$d/metric/check_gibbs_root_ledger.py"
 python3 -B "$d/metric/check_paired_readers.py"
+python3 -B "$d/metric/check_complement_price.py"
+python3 -B "$d/metric/check_memory_recurrence.py"
+python3 -B "$d/metric/check_refinement_mass.py"
+python3 -B "$d/metric/check_event_gain_selection.py"
 python3 -B "$d/metric/check_paid_tail_audit.py"
 python3 -B "$d/metric/check_silent_nc1.py"
 python3 -B "$d/metric/check_live_gain_tree.py"
@@ -77,6 +81,7 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Рекурсия полной памяти | 24 программы, полная рабочая плотность на 17 срезах и интервальный информационный остаток. [Результат](metric/memory_recurrence_result.json) |
 | Геометрия полного следа | Проверка объёмной проекции в 168 измерениях, 167 независимых проб, настоящих степеней в объёмной модели, ошибок метки и невидимой на ядре цены. [Результат](metric/projective_quotient_result.json) |
 | Конечный масштаб материи | Рациональные интервалы подтверждают противоположные знаки масштабных сдвигов на подлинных материальных полях SC1. [Результат](metric/finite_scale_slip_result.json) |
 | Две геометрические части с общим SITE | Полный конечный CAR след, вещественные лоренцевы связи и точный остаток исходной метки при одинаковых цели и объёме. [Результат](metric/shared_site_union_result.json) |
@@ -85,6 +90,9 @@ python3 -B "$d/realization/check_realization.py"
 | Независимые прямые и обратные ноги | Все четыре настоящих исполнения на исходных защищённых столбцах и тепловая граница, с разграничением арены компилятора. [Результат](metric/crossed_repeat_result.json) |
 | Когерентность и тепловой граф | Настоящий растущий clock, внутренний срез, контроль термического члена и условная стоимость четырёх записей. [Результат](metric/clock_coherence_result.json) |
 | Полный баланс спектрального дерева | Условные средние по вершинам, веса листьев, корневой остаток, контроль редких исходов и платные нативные секущие. [Результат](metric/spectral_tree_balance_result.json) |
+| Комплементарные считыватели | Восемь программ, 17 промежуточных срезов, совместные матрицы и полные условные энтропии. [Результат](metric/complement_price_result.json) |
+| Выбор операнда информации | Два условных выигрыша, нативные истории и тепловая поправка. [Результат](metric/event_gain_selection_result.json) |
+| Полные золотые уточнения | Сохранение эталонной массы конечного префиксного дерева и интервальные пороги неполноты. [Результат](metric/refinement_mass_result.json) |
 | Два нативных считывателя | Совместные квитанции, локальные состояния и чувствительность к цене двух записей. [Результат](metric/paired_readers_result.json) |
 | Цена корня Gibbs и журнал | Полный clock с oldRIGHT, нативный шумный прибор и двухсекторные пределы зарегистрированной сметы. [Результат](metric/gibbs_root_ledger_result.json) |
 | Графовые веса записей | Полное тепло двух степеней, локальный Gibbs-оператор, старый RIGHT и три конечные схемы. [Результат](metric/local_gibbs_records_result.json) |

@@ -1,0 +1,49 @@
+{
+  "branch_thresholds": [
+    {
+      "bounded_ratio": "tau_error/tau_success",
+      "missing_reference_mass_fraction_minimum": [
+        "0.9457724324081",
+        "0.9457724324082"
+      ],
+      "ratio_threshold": [
+        "0.0542275675918",
+        "0.0542275675919"
+      ]
+    },
+    {
+      "bounded_ratio": "tau_success/tau_error",
+      "missing_reference_mass_fraction_minimum": [
+        "0.9106027121979",
+        "0.9106027121980"
+      ],
+      "ratio_threshold": [
+        "0.0893972878020",
+        "0.0893972878021"
+      ]
+    }
+  ],
+  "complete_trees": 10,
+  "exact_conditional_error_reference_in_basis_1_p": [
+    "1",
+    "-1"
+  ],
+  "minimal_integer_extra_error_minus_success_gaps": [
+    -6,
+    7
+  ],
+  "number_of_tip_cylinders": [
+    73,
+    92,
+    178,
+    42,
+    105,
+    191,
+    60,
+    118,
+    106,
+    63
+  ],
+  "physical_identification_of_all_hidden_traversal_prices": false,
+  "status": "PASS"
+}

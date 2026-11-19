@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "native_primitive_hash": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "u": [
+    "0.3819660112501051",
+    "0.3819660112501052"
+  ],
+  "v": [
+    "0.2062277060492559",
+    "0.2062277060492560"
+  ],
+  "odds_minus": [
+    "0.4203767760006050",
+    "0.4203767760006051"
+  ],
+  "golden_log_odds_gap": [
+    "1.800878197501825",
+    "1.800878197501826"
+  ],
+  "required_Born_contrasts_minus_relative_to_plus": {
+    "1": {
+      "posterior_entropy_drop_required_cost_contrast": [
+        "1.80087819750182",
+        "1.80087819750183"
+      ],
+      "event_surprisal_required_cost_contrast": [
+        "3.60175639500365",
+        "3.60175639500366"
+      ]
+    },
+    "2": {
+      "posterior_entropy_drop_required_cost_contrast": [
+        "0.90043909875091",
+        "0.90043909875092"
+      ],
+      "event_surprisal_required_cost_contrast": [
+        "2.70131729625273",
+        "2.70131729625274"
+      ]
+    }
+  },
+  "absolute_change_from_using_genuine_Gibbs_odds_bound": "2e-60/nu",
+  "n": 256,
+  "integer_monotone_golden_comparisons": {
+    "first_noise_minus": [
+      "839/256",
+      "105/32"
+    ],
+    "first_noise_plus": [
+      "2",
+      "513/256"
+    ]
+  },
+  "all_success_conditional_upper_error": [
+    "0.008117527036",
+    "0.008117527037"
+  ],
+  "all_success_conditional_lower_error_for_v": [
+    "0.031244434514",
+    "0.031244434515"
+  ],
+  "event_price_monotonicity_derived_in_Book": false
+}
