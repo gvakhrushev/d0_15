@@ -1,0 +1,119 @@
+{
+  "only_complement": {
+    "fields": [
+      {
+        "signs": [
+          -1,
+          -1
+        ],
+        "q": 0.722912360003,
+        "N": 0.552622469986,
+        "h": 0.358388022604,
+        "complete_square_work": 39.96424718,
+        "odd_square_interval": 71
+      },
+      {
+        "signs": [
+          -1,
+          1
+        ],
+        "q": 0.277087639997,
+        "N": 0.447377530014,
+        "h": 0.358388022604,
+        "complete_square_work": 37.855560106,
+        "odd_square_interval": 71
+      },
+      {
+        "signs": [
+          1,
+          -1
+        ],
+        "q": 0.277087639997,
+        "N": 0.447377530014,
+        "h": 0.358388022604,
+        "complete_square_work": 36.477156966,
+        "odd_square_interval": 71
+      },
+      {
+        "signs": [
+          1,
+          1
+        ],
+        "q": 0.722912360003,
+        "N": 0.552622469986,
+        "h": 0.358388022604,
+        "complete_square_work": 34.961775072,
+        "odd_square_interval": 71
+      }
+    ],
+    "complete_registered_code_CQ_contrast": 0.049689920243,
+    "full_RC3_same_sign_minus_opposite": -0.0,
+    "rigorous_equal_signal_work_hundredths": [
+      -501,
+      -500
+    ],
+    "equal_signal_work_plusplus_minus_minusminus": -5.002472108
+  },
+  "also_true_T": {
+    "fields": [
+      {
+        "signs": [
+          -1,
+          -1
+        ],
+        "q": 0.722912360003,
+        "N": 0.552622469986,
+        "h": 0.340459271026,
+        "complete_square_work": 44.280090672,
+        "odd_square_interval": 75
+      },
+      {
+        "signs": [
+          -1,
+          1
+        ],
+        "q": 0.277087639997,
+        "N": 0.447377530014,
+        "h": 0.343804823726,
+        "complete_square_work": 41.668124271,
+        "odd_square_interval": 75
+      },
+      {
+        "signs": [
+          1,
+          -1
+        ],
+        "q": 0.277087639997,
+        "N": 0.447377530014,
+        "h": 0.343804823726,
+        "complete_square_work": 40.779388886,
+        "odd_square_interval": 75
+      },
+      {
+        "signs": [
+          1,
+          1
+        ],
+        "q": 0.722912360003,
+        "N": 0.552622469986,
+        "h": 0.340459271026,
+        "complete_square_work": 38.85459241,
+        "odd_square_interval": 75
+      }
+    ],
+    "complete_registered_code_CQ_contrast": 0.049689920243,
+    "full_RC3_same_sign_minus_opposite": 2.552455749e-08,
+    "rigorous_equal_signal_work_hundredths": [
+      -543,
+      -542
+    ],
+    "equal_signal_work_plusplus_minus_minusminus": -5.425498262
+  },
+  "growing_clock_slope_per_face_no_T": 0,
+  "growing_clock_slope_per_face_with_T": 4.555415627738482e-07,
+  "genuinely_registered_code_CQ_slope_per_face": 0.8916494400134598,
+  "trace_calibration": "one moving q, common fieldname interface",
+  "old_rank": 8,
+  "independently_recorded_full_initializer_work": false,
+  "GR_closed": false
+}
