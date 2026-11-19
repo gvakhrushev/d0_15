@@ -20,7 +20,8 @@
   "related_open_commits": {
     "B180": "4919717083db875bacb768951c8d58c28b86101e",
     "B181": "d0b6a73e9562a6168878b534851f4951f4395857",
-    "B182": "c6a6a55b46b7c37b66b962eba9d86ca5871673ca"
+    "B182": "c6a6a55b46b7c37b66b962eba9d86ca5871673ca",
+    "B183": "efc581d351ab97f993ce1875a284d567d4ac65cd"
   },
   "GR_closed": false,
   "physical_C_closed": false,
@@ -315,6 +316,27 @@
       ],
       "documentation": "https://github.com/gvakhrushev/d0_15/blob/e3b2a464a8509186be06aea134d81c2d74b89708/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/COMMON_NATIVE_CALIBRATION_RU.md",
       "verifies": "Common physical SC1 amplitude calibration underlying the two registered material directions."
+    },
+    {
+      "id": "B183_registered_union_anchor",
+      "commit": "efc581d351ab97f993ce1875a284d567d4ac65cd",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round183",
+      "entrypoint": "check_registered_anchor.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "check_registered_anchor.py",
+        "RESULT.json",
+        "B183_REGISTERED_UNION_ANCHOR_RU.md"
+      ],
+      "verifies": "Actual rare registration and full fine entropy; the positive finite supplier still has a preceding physical cost.",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round181/check_fixed_positive_reader.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/check_book03_identity_pair.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ],
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/efc581d351ab97f993ce1875a284d567d4ac65cd/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round183/B183_REGISTERED_UNION_ANCHOR_RU.md"
     }
   ],
   "lanes": [
@@ -427,13 +449,13 @@
     },
     {
       "id": "A88_h1_price_residual",
-      "commit": "09cfd6efae81c9ef707f2be9817d14e310b88bb8",
+      "commit": "69d42d826bb5a3dd41f67f1679cec2fd1c85f87e",
       "check": "direct/round88/assembly/check_h1_price_residual.py",
       "stdout_matches": "direct/round88/assembly/h1_price_residual_result.json",
       "evidence": {
-        "direct/round88/assembly/H1_PRICE_RESIDUAL_RU.md": "2efc308ea762a1c381d8f6697cfe2beab79afe8fe59f9327ea548c4ecf94e14b",
-        "direct/round88/assembly/check_h1_price_residual.py": "d774e80307722b89565cd0983a1792891fae731198447acc604368792210c9a3",
-        "direct/round88/assembly/h1_price_residual_result.json": "117c5b06bdf6e2191075f47b6b343a0c00278ffd2261d4537b86ee829465e3e9"
+        "direct/round88/assembly/H1_PRICE_RESIDUAL_RU.md": "e5ebafb6c75a82c05c977e394c5c0331b60f5f22f579c93abf756149009e9a17",
+        "direct/round88/assembly/check_h1_price_residual.py": "be9129fdc6c5a929b42f2242d4d7b4be756128adc3bb07da1789559875983896",
+        "direct/round88/assembly/h1_price_residual_result.json": "fb3014d0e719f1b193882be9aa4cc47c78384d4881cc309eb76916909a0abf3c"
       }
     },
     {
