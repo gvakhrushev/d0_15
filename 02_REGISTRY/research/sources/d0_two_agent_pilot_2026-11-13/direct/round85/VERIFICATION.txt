@@ -1,0 +1,112 @@
+A85 · воспроизведение опубликованных результатов
+
+Научный снимок 8ccfa5246a6558e4f9ac162e69d88344330fb6a5
+Общая ветка codex/d0-pilot-shared-20261118
+Проверенная версия основного исследования #334 7307221c7d35db9a56a2856859ed916c5fae824b
+Заявка A85 b706d63a2ef1d7668b3e8fbd878999cfcd0df309
+Результаты четырёх участников отправлены в общую историю в 7d5203b8e, b78d07d49 и 8ccfa5246a6558e4f9ac162e69d88344330fb6a5.
+
+Команда из каталога пилота
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot 8ccfa5246a6558e4f9ac162e69d88344330fb6a5 direct/round85/portfolio.json
+
+Git snapshot 8ccfa5246a6558e4f9ac162e69d88344330fb6a5, 28 committed files
+UPSTREAM  pr334_selector24_native at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_composed_geometric_instrument at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_smooth_twofield_reference at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_bandlimit_joint_hq at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_dyadic_car_loader at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_native_adaptive_clock at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_common_native_calibration at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  pr334_local_geometric_source at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  pr334_dyadic_phase_field at 7307221c7d35db9a56a2856859ed916c5fae824b
+UPSTREAM  A84_actual_fixed_port at fc5787cf65b9811c747582249cfc522299c25a18
+UPSTREAM  A84_two_rail_paid_key at fc5787cf65b9811c747582249cfc522299c25a18
+UPSTREAM  B174_earliest_record_moments at 419b0ca40844082c6dc9b3f753630571ef6a3027
+UPSTREAM  B174_constant_action_preparation_work at 419b0ca40844082c6dc9b3f753630571ef6a3027
+UPSTREAM  B175_absolute_second_jet at bf860cce768e0a47b01f10ee111b0f52e9f5c269
+PASS  A85_geometric_key
+PASS  A85_returned_site
+PASS  A85_single_input_paired_source
+PASS  A85_weak_marker_recovery
+PASS  A85_cycle_port_feedback
+
+Дополнительная полная регрессия предыдущего Directed
+Git snapshot bf6fac1a3a700967bafba2b88704ae0720818316, 28 committed files
+UPSTREAM  pr334_selector24_native at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_composed_geometric_instrument at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_corrector_full_clock at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_smooth_twofield_reference at 2350117b469890c04b8ff5d8987b224a863e844a
+UPSTREAM  pr334_bandlimit_joint_hq at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_dyadic_car_loader at 908e70a3c86be2c99809f1faa830c92993b117ae
+UPSTREAM  pr334_native_adaptive_clock at 908e70a3c86be2c99809f1faa830c92993b117ae
+PASS  physical_preparation_and_curvature_variance
+PASS  paid_address_source
+PASS  same_task_address_deadline
+PASS  fixed_cyclic_query_address
+PASS  retained_field_replicas
+PASS  paid_two_rail_geometric_key
+PASS  one_site_composed_clock
+
+Повтор четырёх независимых проверок B175, по два запуска каждой, на опубликованном коммите. Хеши обозначают неизменённые байты источников и результатов.
+D0 A85 independent four-by-two byte replay of Open B175
+commit=bf860cce768e0a47b01f10ee111b0f52e9f5c269
+cwd_for_all=02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round175
+python=/Library/Developer/CommandLineTools/usr/bin/python3 3.9.6
+numpy=2.0.2 sympy=1.14.0 mpmath=1.3.0
+archive_command=git archive bf860cce768e0a47b01f10ee111b0f52e9f5c269 -- 02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round175 02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round174/material/RESULT.json 02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round174/work/check_constant_action_work.py 02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round82/device 02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price 02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat 02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24 02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24
+archive_sha256=9b1c483b4333b0784d4b1b33e3906a42d3a1a29141b7a28243dec3b2eca61730
+uses only extracted committed source files and installed Python packages
+byte comparison is stdout == committed receipt without parsing, trimming or rewriting
+PYTHONPATH and PYTHONOPTIMIZE removed, PYTHONDONTWRITEBYTECODE=1 PYTHONHASHSEED=0
+normal /Library/Developer/CommandLineTools/usr/bin/python3 check_work_jet_compensation.py
+  expected=WORK_JET_RESULT.json bytes=912 sha256=5f64889facadbf229039dca5871c877104094761623dd8883c7a76137b081993
+  stdout=normal_check_work_jet_compensation.py.stdout bytes=912 sha256=5f64889facadbf229039dca5871c877104094761623dd8883c7a76137b081993
+  exit=0 exact_raw_bytes=True stderr_bytes=0 seconds=0.498
+normal /Library/Developer/CommandLineTools/usr/bin/python3 center/check_centered_motion.py
+  expected=center/RESULT.json bytes=991 sha256=9dabebe1f69e6d9d48d18a5d1a11c23c9ab207091a201edcb74437c618df8487
+  stdout=normal_center_check_centered_motion.py.stdout bytes=991 sha256=9dabebe1f69e6d9d48d18a5d1a11c23c9ab207091a201edcb74437c618df8487
+  exit=0 exact_raw_bytes=True stderr_bytes=0 seconds=0.374
+normal /Library/Developer/CommandLineTools/usr/bin/python3 interference/check_interference_echo.py
+  expected=interference/RESULT.json bytes=518 sha256=e6b1afee1d96d707f16b75fd1d71f2a5dfd569588e28ee8ee9f36578d19d0429
+  stdout=normal_interference_check_interference_echo.py.stdout bytes=518 sha256=e6b1afee1d96d707f16b75fd1d71f2a5dfd569588e28ee8ee9f36578d19d0429
+  exit=0 exact_raw_bytes=True stderr_bytes=0 seconds=0.479
+normal /Library/Developer/CommandLineTools/usr/bin/python3 jet/check_absolute_second_jet.py
+  expected=jet/RESULT.json bytes=940 sha256=221ca3adbe5190e9138ad02d85ae5bd1b31526a6633d5cced8452bb36e85e1c6
+  stdout=normal_jet_check_absolute_second_jet.py.stdout bytes=940 sha256=221ca3adbe5190e9138ad02d85ae5bd1b31526a6633d5cced8452bb36e85e1c6
+  exit=0 exact_raw_bytes=True stderr_bytes=0 seconds=0.020
+optimized /Library/Developer/CommandLineTools/usr/bin/python3 -O check_work_jet_compensation.py
+  expected=WORK_JET_RESULT.json bytes=912 sha256=5f64889facadbf229039dca5871c877104094761623dd8883c7a76137b081993
+  stdout=optimized_check_work_jet_compensation.py.stdout bytes=912 sha256=5f64889facadbf229039dca5871c877104094761623dd8883c7a76137b081993
+  exit=0 exact_raw_bytes=True stderr_bytes=0 seconds=0.510
+optimized /Library/Developer/CommandLineTools/usr/bin/python3 -O center/check_centered_motion.py
+  expected=center/RESULT.json bytes=991 sha256=9dabebe1f69e6d9d48d18a5d1a11c23c9ab207091a201edcb74437c618df8487
+  stdout=optimized_center_check_centered_motion.py.stdout bytes=991 sha256=9dabebe1f69e6d9d48d18a5d1a11c23c9ab207091a201edcb74437c618df8487
+  exit=0 exact_raw_bytes=True stderr_bytes=0 seconds=0.346
+optimized /Library/Developer/CommandLineTools/usr/bin/python3 -O interference/check_interference_echo.py
+  expected=interference/RESULT.json bytes=518 sha256=e6b1afee1d96d707f16b75fd1d71f2a5dfd569588e28ee8ee9f36578d19d0429
+  stdout=optimized_interference_check_interference_echo.py.stdout bytes=518 sha256=e6b1afee1d96d707f16b75fd1d71f2a5dfd569588e28ee8ee9f36578d19d0429
+  exit=0 exact_raw_bytes=True stderr_bytes=0 seconds=0.428
+optimized /Library/Developer/CommandLineTools/usr/bin/python3 -O jet/check_absolute_second_jet.py
+  expected=jet/RESULT.json bytes=940 sha256=221ca3adbe5190e9138ad02d85ae5bd1b31526a6633d5cced8452bb36e85e1c6
+  stdout=optimized_jet_check_absolute_second_jet.py.stdout bytes=940 sha256=221ca3adbe5190e9138ad02d85ae5bd1b31526a6633d5cced8452bb36e85e1c6
+  exit=0 exact_raw_bytes=True stderr_bytes=0 seconds=0.022
+exactly_matched=8/8
+
+Проверки репозитория
+claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918
+PASS warnings=0
+PASS work_validation: active work plane clean and enforced
+PASS agent_protocol: cold-start task metadata enforced
+{
+  "active_result_limit": 54,
+  "active_results": 54,
+  "discharged": 5,
+  "obligations": 22,
+  "results": 98,
+  "scientific_promotion": false,
+  "valid": true
+}
+
+Обнаружение частичных результатов. На опубликованном промежуточном снимке 7d5203b8e8d09f0a8b5df2c925aa2d00b3ae8e18 новый pilot_status.py нашёл две записки A85: clock/FIXED_PORT_FEEDBACK_RU.md и recovery/PROJECTED_MARKER_RU.md. Вывод содержит ссылки на этот SHA. Общая таблица текущей ветки показывает занятые вопросы.
+
+Научный статус. Проверены фиксированные исходные измерения, конечные поля и спектральная формула согласованного возврата. Оплата подготовки и обратного прохождения с настоящими отказами, независимые строки и общий геометрический предел остаются открытыми. GR_closed=false.
