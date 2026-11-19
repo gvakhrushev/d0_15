@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "actual_detector_calls": 194,
+  "old_columns_per_defect": 32,
+  "exact_cycle_caps_and_sectors": 12,
+  "leading_sector_moment_difference": "-399847363302522492 + 646966624135508796 p",
+  "leading_difference_enclosure": [
+    "0.0004898",
+    "0.0004899"
+  ],
+  "strict_sector_heat_difference": "> 0.00047 f_363",
+  "H1_marginal_derivative_minus_one": "> 0.000094 f_363 (fixed apparatus)",
+  "full_normalization_cancels_local_unmatched_score": true,
+  "GR_closed": false,
+  "source_sha256": {
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round170/thermal/check_paired_pointer_gibbs.py": "8c132df110913ca31f161e620e31a235a5963fd7fc06ab1a6320cb1641ac3b36",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round170/thermal/PAIRED_POINTER_GIBBS_RU.md": "d961ee4b1437706b06fc3e464ef3cea2f9714e157e3155101ed2c93622c71bf3"
+  }
+}

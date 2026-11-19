@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "full retained XOR bank, gate-motion coefficient one in numerical fixture",
+  "formal_event_gap": "A0(1-u^2)",
+  "one_pair_ratio_bounds_in_millionths": {
+    "1": {
+      "event": [
+        893939,
+        893940
+      ],
+      "drop": [
+        870859,
+        870860
+      ]
+    },
+    "2": {
+      "event": [
+        818088,
+        818089
+      ],
+      "drop": [
+        727465,
+        727466
+      ]
+    }
+  },
+  "physical_universal_price_selected": false,
+  "GR_closed": false
+}

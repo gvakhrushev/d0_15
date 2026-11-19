@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "full_stopped_tree": {
+    "positive_terminal_addresses": [
+      "00",
+      "01",
+      "100",
+      "101",
+      "11"
+    ],
+    "edge_score_terms": [
+      [
+        "",
+        "35/782"
+      ],
+      [
+        "0",
+        "14/391"
+      ],
+      [
+        "1",
+        "-21/391"
+      ],
+      [
+        "10",
+        "42/391"
+      ]
+    ],
+    "full_tilted_score": "105/782",
+    "full_graph_fisher": "189/1058"
+  },
+  "actual_B170_archives_under_declared_conditional_price": [
+    {
+      "cycles": 1,
+      "selected_price_times_log_base_source_gap": "-4/15",
+      "full_defect_range_in_units_log_phi_at_least": 14
+    },
+    {
+      "cycles": 2,
+      "selected_price_times_log_base_source_gap": "-88/213",
+      "full_defect_range_in_units_log_phi_at_least": 28
+    },
+    {
+      "cycles": 3,
+      "selected_price_times_log_base_source_gap": "-1468/2931",
+      "full_defect_range_in_units_log_phi_at_least": 42
+    },
+    {
+      "cycles": 17,
+      "selected_price_times_log_base_source_gap": "-8633738737681671364/12967285288222173615",
+      "full_defect_range_in_units_log_phi_at_least": 238
+    }
+  ],
+  "physical_price_identified": false,
+  "GR_closed": false
+}

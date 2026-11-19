@@ -1,0 +1,28 @@
+{
+  "GR_closed": false,
+  "b170": {
+    "discrepancy_per_Dq_times_nu": [
+      "0.16965",
+      "0.17176"
+    ],
+    "hidden_single_leaf_ratio": 1000000000,
+    "ratio_interval": [
+      "0.91986643",
+      "0.91986645"
+    ]
+  },
+  "eight_setting": {
+    "nonuniform_PF_distinct_determinant_monomials": 40320,
+    "normalized_inverse_inf_upper": "9.011e57",
+    "setting_matter_rank_when_admitted": 8
+  },
+  "full_book_price_selected": false,
+  "grouped_identity": {
+    "conditional_rank_fixture": 1,
+    "full_tangent_rank": 3,
+    "right_lift_lower_singular_value": "1/2"
+  },
+  "physical_field_writer_admitted": false,
+  "source_pins": 3,
+  "status": "PASS"
+}

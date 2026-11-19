@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "PR334_source_pin": "a3ef80fffd9bd5c4786e033e7233c8fd638e07c7",
+  "fixed_native_gates": {
+    "CX": 12,
+    "G": 4
+  },
+  "fresh_golden_births": 8,
+  "physical_NC1_reads": 4,
+  "raw_word_columns_checked": 512,
+  "positive_new_retained_marks_per_T": 16,
+  "conditional_registered_price": "2*p^5 + 2*p^6*T",
+  "same_field_source_as_PR334": "2*p^6 DPr(T=1)",
+  "strict_NC1_movement_contrast": 0.17757465545656542,
+  "strict_mean_native_gate_movement_source_coefficient": 0.5559753345372862,
+  "symmetric_confirmation_source_coefficients": [
+    0,
+    0
+  ],
+  "original_mux_Born_field_square": [
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "original_mux_nonlinear_mixed_difference_F4": 1,
+  "implements_original_full_mux_tree": false,
+  "full_physical_Cost_minus_Info_identified": false,
+  "GR_closed": false
+}
