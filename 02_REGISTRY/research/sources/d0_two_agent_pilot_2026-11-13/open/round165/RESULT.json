@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "A80_commit": "2b59138c88987a2159474b3f167ab755f83ddb74",
+  "PR334_commit": "65753c972b4ad1e528a29b0343e30c3ecc9b9670",
+  "A80_detector_sha256": "fdc0d988a48073b862f92dbe1e3f945f529c32fb3e907421c2f611dbcdea739c",
+  "native_gate_inventory": {
+    "SourceI": 88,
+    "G": 58,
+    "CX": 254
+  },
+  "exact_native_input_columns": 64,
+  "exact_native_output_rows": 256,
+  "peak_exact_integer_gate_coefficient": 429926751115523,
+  "exact_stopped_trees": 40,
+  "exact_nonscalar_tangent_directions": 21,
+  "enumeration_q_samples": [
+    "4/13",
+    "9/25"
+  ],
+  "native_service_failure_ratio_to_p_squared": 0.2841907859432398,
+  "native_service_failure_ratio_rounded_enclosure": [
+    0.28419,
+    0.2842
+  ],
+  "graph_history_APPLICABILITY": "fixed old root, actual retained pointer marks, fixed closure and heat budget",
+  "microscopic_path_Cost_minus_Info_identified": false,
+  "GR_closed": false
+}
