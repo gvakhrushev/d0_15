@@ -1,0 +1,239 @@
+{
+  "round": "A90",
+  "base_shared": "edcbfbdfd7b505330bc910eb6c4946a8c6f3e688",
+  "claims_shared": [
+    "f24408f7210c1ef4a1c0c06202ffd125a3c96ce5"
+  ],
+  "primary_pr334": "01f52b73daf39c122a1ecf553a549b8f07d9e5b0",
+  "direct_regression_commit": "f27767b133a6e0cf4b86b71b8372cbbe7b3f0f11",
+  "registry_claim": {
+    "commit": "f24408f7210c1ef4a1c0c06202ffd125a3c96ce5",
+    "path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/README.md",
+    "round": "A90"
+  },
+  "related_open_commits": {
+    "B149": "82cbb04f212bfa414e8d7c954c808a700897e276",
+    "B187": "8aed7f83f22f1dba48bd5e4d8ba8ae30222c54b0"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md": "96d696ec1b66a3881f1350aaa32df5fe8c9938a4",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md": "92b9003d783c24b1883a2a21f8b30625078afff7",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/PHASE_COMPILER.md": "e5201a3d061b6155af52080757f0e77c8cd20248",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/writer/check_bell_parity.py": "5f2d509ff4a0171ae220359a4133fc6c24ea3f9b",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/assembly/check_masked_price.py": "9f23f85b5b1033d8ce0af3fbd593fc6f48283dec"
+  },
+  "upstream_checks": [
+    {
+      "id": "A89_fine_archive_amplitude_price",
+      "commit": "93056225a498051346bd331c55d779f865ad1146",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round89/assembly",
+      "entrypoint": "check_amplitude_price.py",
+      "receipt": "amplitude_price_result.json",
+      "files": [
+        "AMPLITUDE_PRICE_RU.md",
+        "check_amplitude_price.py",
+        "amplitude_price_result.json"
+      ],
+      "verifies": "Original signed terminal roles and two physical material rows.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/93056225a498051346bd331c55d779f865ad1146/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round89/assembly/AMPLITUDE_PRICE_RU.md"
+    },
+    {
+      "id": "A89_uniform_energy_bound",
+      "commit": "c70d876c4ce377f861110061e67d2d743ab05ebf",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round89/recovery",
+      "entrypoint": "check_uniform_energy_bound.py",
+      "receipt": "uniform_energy_bound_result.json",
+      "files": [
+        "UNIFORM_ENERGY_BOUND_RU.md",
+        "check_uniform_energy_bound.py",
+        "uniform_energy_bound_result.json"
+      ],
+      "verifies": "Fourier128 nearest-neighbor operator and single-supply coercivity bound on the declared smooth family.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/c70d876c4ce377f861110061e67d2d743ab05ebf/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round89/recovery/UNIFORM_ENERGY_BOUND_RU.md"
+    },
+    {
+      "id": "B149_native_memory_return",
+      "commit": "82cbb04f212bfa414e8d7c954c808a700897e276",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round149",
+      "entrypoint": "check_full_book_memory_return.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "B149_FULL_BOOK_MEMORY_RETURN_RU.md",
+        "check_full_book_memory_return.py",
+        "RESULT.json"
+      ],
+      "verifies": "Full eight-class memory including central sign, native Golden coherent filter and retained failure.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/82cbb04f212bfa414e8d7c954c808a700897e276/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round149/B149_FULL_BOOK_MEMORY_RETURN_RU.md",
+      "repository_files": [
+        "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round148/RESULT.json",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round75/history/ORDERED_PRICE_RU.md",
+        "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md"
+      ]
+    },
+    {
+      "id": "B187_balanced_bell_parity",
+      "commit": "8aed7f83f22f1dba48bd5e4d8ba8ae30222c54b0",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round187",
+      "entrypoint": "check_balanced_bell_parity.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "B187_BALANCED_BELL_PARITY_RU.md",
+        "check_balanced_bell_parity.py",
+        "RESULT.json"
+      ],
+      "verifies": "Physical Bell preparation and equal cold rails, two geometric signs and a separately priced phase-XOR record.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/8aed7f83f22f1dba48bd5e4d8ba8ae30222c54b0/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round187/B187_BALANCED_BELL_PARITY_RU.md",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round181/check_fixed_positive_reader.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "PR334_matched_clock_bootstrap_equivalence",
+      "commit": "01f52b73daf39c122a1ecf553a549b8f07d9e5b0",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_matched_clock_bootstrap_equivalence.py",
+      "receipt": "matched_clock_bootstrap_equivalence_result.json",
+      "files": [
+        "MATCHED_CLOCK_BOOTSTRAP_EQUIVALENCE_RU.md",
+        "check_matched_clock_bootstrap_equivalence.py",
+        "matched_clock_bootstrap_equivalence_result.json",
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_shared_site_union.py",
+        "check_source_price.py"
+      ],
+      "verifies": "Full 16-column matched paid execution and interval bounds for both Hodge heat degrees.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/01f52b73daf39c122a1ecf553a549b8f07d9e5b0/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/MATCHED_CLOCK_BOOTSTRAP_EQUIVALENCE_RU.md",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "PR334_complement_bootstrap_matter_bridge",
+      "commit": "43ccdd43216968919b24e620e4ed61009189dc36",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_complement_bootstrap_matter_bridge.py",
+      "receipt": "complement_bootstrap_matter_bridge_result.json",
+      "files": [
+        "COMPLEMENT_BOOTSTRAP_MATTER_BRIDGE_RU.md",
+        "check_complement_bootstrap_matter_bridge.py",
+        "complement_bootstrap_matter_bridge_result.json",
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_complement_bootstrap_cancellation.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_shared_site_union.py",
+        "check_source_price.py"
+      ],
+      "verifies": "Actual rank-16 complementary writer on the full cut versus the independently supplied two-copy moment, including mismatch from nonconstant gain.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/43ccdd43216968919b24e620e4ed61009189dc36/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/COMPLEMENT_BOOTSTRAP_MATTER_BRIDGE_RU.md",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "A90_vertex",
+      "commit": "7de2036abb6e187764bdc2772f10d5ddb6b08259",
+      "check": "direct/round90/vertex/check_role_syndrome.py",
+      "stdout_matches": "direct/round90/vertex/role_syndrome_result.json",
+      "evidence": {
+        "direct/round90/vertex/ROLE_SYNDROME_RU.md": "75694f7d403dc7fcd27a00d4152480aa0cd2eb2a86642f24a7b73b634db4bd84",
+        "direct/round90/vertex/check_role_syndrome.py": "e1aedcb48f13f0a944bc812f8bbd9243f39ca5a9129bca18b3063146fdf7f011",
+        "direct/round90/vertex/role_syndrome_result.json": "9933d9288d5ae36934bf9d3292e7cad2213545f397e3045074f69db4b96f71be"
+      }
+    },
+    {
+      "id": "A90_geometry",
+      "commit": "d032840c1f65e02b7cb6ea0cb44874b1fbcbd3f6",
+      "check": "direct/round90/geometry/check_name_free_geometry.py",
+      "stdout_matches": "direct/round90/geometry/name_free_geometry_result.json",
+      "evidence": {
+        "direct/round90/geometry/NAME_FREE_GEOMETRY_RU.md": "f0cf06384dfd84811d85d1ab450e5baacb90c20809f376e38a963c27cf0a5e89",
+        "direct/round90/geometry/check_name_free_geometry.py": "5fdc54393c89d4caf0afb3e7612c0d14851f248480f98dddc57814e5155dd9a1",
+        "direct/round90/geometry/name_free_geometry_result.json": "5f24806107560ad00d36a2472fd47333ded81d7ce6dc15a68b0dc974b6773c1c"
+      }
+    },
+    {
+      "id": "A90_role_path_price",
+      "commit": "22895004405520de142b113260df1e4450ab53f0",
+      "check": "direct/round90/assembly/check_role_path_price.py",
+      "stdout_matches": "direct/round90/assembly/role_path_price_result.json",
+      "evidence": {
+        "direct/round90/assembly/ROLE_PATH_PRICE_RU.md": "24697447f5b7068f75acb2c7271daf71f312aff68a60a08ab4c6527d4a1ef7c0",
+        "direct/round90/assembly/check_role_path_price.py": "936e245199715b2830f23692982767f26aa20e311ecd17371956dc4ba32229a3",
+        "direct/round90/assembly/role_path_price_result.json": "3f262fafd7324c693157cf789fa53559c8b880d5ea29bc724d7f1ec7eef63417"
+      }
+    },
+    {
+      "id": "A90_real_phase_energy",
+      "commit": "71bb52531029dd4b045a75f1ad7159e0e4a713c5",
+      "check": "direct/round90/refinement/check_real_phase_energy.py",
+      "stdout_matches": "direct/round90/refinement/real_phase_energy_result.json",
+      "evidence": {
+        "direct/round90/refinement/REAL_PHASE_ENERGY_RU.md": "3b3a37fed482b295d3b97965ff0bf414f03aa4bea257f85c13535becaf0baa31",
+        "direct/round90/refinement/check_real_phase_energy.py": "d0c04c4cf53e41a8b97b652ed727e392f3375f71da0503ad292f224637e97ffd",
+        "direct/round90/refinement/real_phase_energy_result.json": "3aa4b13c7325795d383cc948fb19e7b6193f33b9eed37b932298167294a33b5c"
+      }
+    },
+    {
+      "id": "A90_central_memory_lift",
+      "commit": "06abaa891075858cab011a7e7ca1b0ec79763c13",
+      "check": "direct/round90/assembly/check_central_memory_lift.py",
+      "stdout_matches": "direct/round90/assembly/central_memory_lift_result.json",
+      "evidence": {
+        "direct/round90/assembly/CENTRAL_MEMORY_LIFT_RU.md": "23ab2cc3816e7902681b2abe38ae4db138549d0e35a980ac6ce94a64264fe14f",
+        "direct/round90/assembly/check_central_memory_lift.py": "f257555011b77bb6322fe909b6337e3ded19b9b55968e3eb27e6a74a4dbce811",
+        "direct/round90/assembly/central_memory_lift_result.json": "0281496bffcc08807b6db05054059c93b7f9a3ac03cb8be649706c72d0d6d32e"
+      }
+    }
+  ],
+  "primary_pr334_scope": {
+    "commit": "01f52b73daf39c122a1ecf553a549b8f07d9e5b0",
+    "documents": [
+      {
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/01f52b73daf39c122a1ecf553a549b8f07d9e5b0/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/CENTRAL_WRITER_FULLCUT_SYNTHESIS_RU.md",
+        "sha256": "55cf22065113a4351705f7ec850db99fee685d254af1128fb04a6f2eb33d86b1",
+        "scope": "Common full-cut source with retained selector, separation of the conditional tilted charge from the native full clock."
+      },
+      {
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/01f52b73daf39c122a1ecf553a549b8f07d9e5b0/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/MATCHED_CLOCK_BOOTSTRAP_EQUIVALENCE_RU.md",
+        "sha256": "33d175f4cdd78757a87d8430337ca7b2ac11c374d73beb658238d6bbc634ce91",
+        "scope": "Two matched paid words on the full 16-column cut with nonzero signed H+J bootstrap."
+      },
+      {
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/01f52b73daf39c122a1ecf553a549b8f07d9e5b0/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/COMPLEMENTED_DIRECT_FOURIER_RU.md",
+        "sha256": "44898f3ca103bc1b17e33028008c7791cd508f0596ebd1224de99c53155568b2",
+        "scope": "Complemented material Fourier reader with its registered factory interface."
+      },
+      {
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/01f52b73daf39c122a1ecf553a549b8f07d9e5b0/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/FOURIER_REFERENCE_BDD_SYNTHESIS_RU.md",
+        "sha256": "bb1b0040c2e53786989ca768988f222f929fa63154dcff64265164579e1832f1",
+        "scope": "Paid controlled phase on the fresh direct Fourier preparation, including retained reference."
+      }
+    ],
+    "central_writer_stdout_diagnostic": {
+      "entrypoint": "https://github.com/gvakhrushev/d0_15/blob/01f52b73daf39c122a1ecf553a549b8f07d9e5b0/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/check_central_writer_fullcut_synthesis.py",
+      "source_sha256": "d6da05b09b92a511309631af1a4750ef6f46af5a756811733bf0a281f98a9187",
+      "scope": "The separate clean replay uses the primary native source and the published Fourier effect. The upstream script has no committed stdout receipt.",
+      "common_rank32_bootstrap_source": 0,
+      "candidate_response_open_interval": [
+        "0.98",
+        "0.99"
+      ]
+    }
+  },
+  "additional_primary_pr334": "43ccdd43216968919b24e620e4ed61009189dc36"
+}
