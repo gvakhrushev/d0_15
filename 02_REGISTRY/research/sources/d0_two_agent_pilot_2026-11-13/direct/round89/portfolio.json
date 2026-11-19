@@ -1,0 +1,225 @@
+{
+  "round": "A89",
+  "base_shared": "1ea967f92764c41f46845e3a17368f6f6a483c75",
+  "claims_shared": [
+    "5c4ab21cc528018a522a59fde71fafd9d6fe7336"
+  ],
+  "primary_pr334": "850d40882242ad02a62ebe555e9a13d5ee46906f",
+  "direct_regression_commit": "d9632b7c80b988717e194c9833637f1fe0f8f49d",
+  "registry_claim": {
+    "commit": "5c4ab21cc528018a522a59fde71fafd9d6fe7336",
+    "path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/README.md",
+    "round": "A89"
+  },
+  "related_open_commits": {
+    "B184": "1ea967f92764c41f46845e3a17368f6f6a483c75",
+    "B185": "56c259e75bb69da31aa0179349b415f08469a44b"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/A4D_ARBITRARY_BRINKMANN_ALL40_CARTAN_DISCRETE_EINSTEIN_2026_10_19.md": "3c41616d2f4f5fa7c0b5085188eae2e505f9f403",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md": "a0a1419e4c733b0cb68b875e276851908088d320",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "370e8fb572e85fedeebe2e72531c01d5b68b0a91",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round184/ECONOMIC_ANCHOR_RU.md": "1e7b8e7873173f68e079af4e776af2becb1c76e6"
+  },
+  "upstream_checks": [
+    {
+      "id": "A88_h1_price_residual",
+      "commit": "d9632b7c80b988717e194c9833637f1fe0f8f49d",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/assembly",
+      "entrypoint": "check_h1_price_residual.py",
+      "receipt": "h1_price_residual_result.json",
+      "files": [
+        "H1_PRICE_RESIDUAL_RU.md",
+        "check_h1_price_residual.py",
+        "h1_price_residual_result.json"
+      ],
+      "verifies": "Signed two-profile H.1 residual, stationary rectangle and the common registered-prefix bound.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/d9632b7c80b988717e194c9833637f1fe0f8f49d/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/assembly/H1_PRICE_RESIDUAL_RU.md"
+    },
+    {
+      "id": "A88_masked_price",
+      "commit": "d9632b7c80b988717e194c9833637f1fe0f8f49d",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/assembly",
+      "entrypoint": "check_masked_price.py",
+      "receipt": "masked_price_result.json",
+      "files": [
+        "MASKED_PRICE_RU.md",
+        "check_masked_price.py",
+        "masked_price_result.json"
+      ],
+      "verifies": "Tagged CQ entropy and the address-mask and clock conditions on the paid comparator.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/d9632b7c80b988717e194c9833637f1fe0f8f49d/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/assembly/MASKED_PRICE_RU.md"
+    },
+    {
+      "id": "A88_returned_source",
+      "commit": "d9632b7c80b988717e194c9833637f1fe0f8f49d",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/assembly",
+      "entrypoint": "check_returned_source.py",
+      "receipt": "returned_source_result.json",
+      "files": [
+        "RETURNED_SOURCE_RU.md",
+        "check_returned_source.py",
+        "returned_source_result.json"
+      ],
+      "verifies": "All-column returned arithmetic, exact rotated endpoint and Hodge/feedback estimates on the original A88 comparator.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/d9632b7c80b988717e194c9833637f1fe0f8f49d/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/assembly/RETURNED_SOURCE_RU.md"
+    },
+    {
+      "id": "B185_sparse_matching_meter",
+      "commit": "56c259e75bb69da31aa0179349b415f08469a44b",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round185",
+      "entrypoint": "check_native_matching_meter.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "B185_H1_MATCHING_READOUT_RU.md",
+        "check_native_matching_meter.py",
+        "RESULT.json"
+      ],
+      "verifies": "Compiled matching readout, exact six-face finite secants and reciprocal support on supplied amplitudes.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/56c259e75bb69da31aa0179349b415f08469a44b/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round185/B185_H1_MATCHING_READOUT_RU.md",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round88/assembly/check_h1_price_residual.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round181/check_fixed_positive_reader.py",
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "PR334_independent_program_euler_rows",
+      "commit": "850d40882242ad02a62ebe555e9a13d5ee46906f",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_independent_program_euler_rows.py",
+      "receipt": "independent_program_euler_rows_result.json",
+      "files": [
+        "INDEPENDENT_PROGRAM_EULER_ROWS_RU.md",
+        "check_independent_program_euler_rows.py",
+        "independent_program_euler_rows_result.json"
+      ],
+      "verifies": "All 65536 recorded strings, independent versus diagonal preparation derivatives, and the KL minimum.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/850d40882242ad02a62ebe555e9a13d5ee46906f/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/INDEPENDENT_PROGRAM_EULER_ROWS_RU.md"
+    },
+    {
+      "id": "PR334_spatial_FQ_covariance",
+      "commit": "850d40882242ad02a62ebe555e9a13d5ee46906f",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_spatial_fq_covariance.py",
+      "receipt": "spatial_fq_covariance_result.json",
+      "files": [
+        "SPATIAL_FQ_COVARIANCE_RU.md",
+        "check_spatial_fq_covariance.py",
+        "spatial_fq_covariance_result.json",
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_shared_site_union.py",
+        "check_source_price.py"
+      ],
+      "verifies": "Spectral covariance identity and numerical bounds on the actual 33-vertex scene, with a site-dependent instrument.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/850d40882242ad02a62ebe555e9a13d5ee46906f/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/SPATIAL_FQ_COVARIANCE_RU.md"
+    }
+  ],
+  "lanes": [
+    {
+      "id": "A89_material",
+      "commit": "88318febb3164af1a0b92bbf7d9e39bc20c72484",
+      "check": "direct/round89/material/check_null_wave_energy.py",
+      "stdout_matches": "direct/round89/material/null_wave_energy_result.json",
+      "evidence": {
+        "direct/round89/material/NULL_WAVE_ENERGY_RU.md": "c695e33e3f2c5cb6be0798ebd775842961015258522104d4b5d75dcbee383972",
+        "direct/round89/material/check_null_wave_energy.py": "8b7a549452f0790837011a488cb936b199ac52356f2cbbcc7269e709c4117670",
+        "direct/round89/material/null_wave_energy_result.json": "e649e11aec4a27cd543ac68b06fac1d334d45699069abaf94d3bb6eab9efebef"
+      }
+    },
+    {
+      "id": "A89_price",
+      "commit": "2e582991d4f1433ffd8de37374afd5f110228351",
+      "check": "direct/round89/price/check_joint_bootstrap.py",
+      "stdout_matches": "direct/round89/price/joint_bootstrap_result.json",
+      "evidence": {
+        "direct/round89/price/JOINT_BOOTSTRAP_RU.md": "ced9a7a35456946696bb702264cea924dac99b4ee24b4a4e3ba190abc33ccb01",
+        "direct/round89/price/check_joint_bootstrap.py": "e3ad268cf7a8d51325171ece045c72d613fc30e63cce2bf1f220e4192bbb79e6",
+        "direct/round89/price/joint_bootstrap_result.json": "ec096a234b457a3f0ec7c9666ef9a80c908a4ca3e6626ea34d9685d5409f6997"
+      }
+    },
+    {
+      "id": "A89_recovery",
+      "commit": "018e6cdb446634c038a0814117164bc272860beb",
+      "check": "direct/round89/recovery/check_single_copy_edge.py",
+      "stdout_matches": "direct/round89/recovery/single_copy_edge_result.json",
+      "evidence": {
+        "direct/round89/recovery/SINGLE_COPY_EDGE_RU.md": "29a697c946086b3b2c34da2e93b4332c76bdf3c25a449126a19068f57c6b6410",
+        "direct/round89/recovery/check_single_copy_edge.py": "fb94429afaf9cc7240b4ca295c51cfb51ec6c78bdfb3936c2cbf7d51b1482e3b",
+        "direct/round89/recovery/single_copy_edge_result.json": "f68939b471f784da00ba22c370781bf5cd41ad74526f6f83066f30dc9cbba7ed"
+      }
+    },
+    {
+      "id": "A89_assembly",
+      "commit": "b2b273f1377e298a280dc8aa6e6b00547f33cfa1",
+      "check": "direct/round89/assembly/check_coupled_source.py",
+      "stdout_matches": "direct/round89/assembly/coupled_source_result.json",
+      "evidence": {
+        "direct/round89/assembly/TWO_EDGES_ONE_WAVE_RU.md": "612701c33c9321f733969f4098bd701b4209441780afc6239d0b54195963e681",
+        "direct/round89/assembly/ABSOLUTE_FISHER_RU.md": "5d8a77937dae10015a5605a77613fffc47db45e87c41054cd80918e6231f4d80",
+        "direct/round89/assembly/check_coupled_source.py": "b29fd12db575a96fb63483cc27be000826def623caee530bcd55960f6caa40e7",
+        "direct/round89/assembly/coupled_source_result.json": "6eb42fa502ee495dcb9e86f8ba76771fb64ef1eb13dca2aac78d2d03dc06fb9b"
+      }
+    },
+    {
+      "id": "A89_uniform_energy_bound",
+      "commit": "c70d876c4ce377f861110061e67d2d743ab05ebf",
+      "check": "direct/round89/recovery/check_uniform_energy_bound.py",
+      "stdout_matches": "direct/round89/recovery/uniform_energy_bound_result.json",
+      "evidence": {
+        "direct/round89/recovery/UNIFORM_ENERGY_BOUND_RU.md": "67f2785eeb5f2d245d12de444dca475caae450b4aec69b7ff05e87c73df65cf6",
+        "direct/round89/recovery/check_uniform_energy_bound.py": "12168a2602b71ac2c049dfa97a976019210bf75e5db3dd6202cbf596c69b9e72",
+        "direct/round89/recovery/uniform_energy_bound_result.json": "b6a13c94f5c5c95e4aeb16e994d4218739e9ee83df7b8699ddfaf31deaf346b1"
+      }
+    },
+    {
+      "id": "A89_amplitude_price",
+      "commit": "93056225a498051346bd331c55d779f865ad1146",
+      "check": "direct/round89/assembly/check_amplitude_price.py",
+      "stdout_matches": "direct/round89/assembly/amplitude_price_result.json",
+      "evidence": {
+        "direct/round89/assembly/AMPLITUDE_PRICE_RU.md": "9f7b31ebf8e46a9a20660b2cd3d52dd9b130e8212dab06fd689c1617b66aad2c",
+        "direct/round89/assembly/check_amplitude_price.py": "12ddccebef1ef7a30e10d5482579fe17fd041009c38e6dc0f2747b18e515aa1c",
+        "direct/round89/assembly/amplitude_price_result.json": "a6e1dd6c49d29f690da52c73d58b2ee2c6c52f044aa0d4bc49c95c8e90b46a1c"
+      }
+    }
+  ],
+  "primary_pr334_scope": {
+    "commit": "850d40882242ad02a62ebe555e9a13d5ee46906f",
+    "documents": [
+      {
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/850d40882242ad02a62ebe555e9a13d5ee46906f/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/SPATIAL_FQ_COVARIANCE_RU.md",
+        "sha256": "678e3a25e651355e902839375313827968c9dbacbbe674eb09189ecfe6686494",
+        "scope": "Exact covariance identity on a fixed scene with a local positive map, with explicit bounds. The full geometric bank and the physical economic weights remain unselected."
+      },
+      {
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/850d40882242ad02a62ebe555e9a13d5ee46906f/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/INDEPENDENT_PROGRAM_EULER_ROWS_RU.md",
+        "sha256": "8054d6327388848e7ebb3bd643be166d581fcc2db339523f9fe39c5d459e095f",
+        "scope": "Independent preparation rows can survive a zero diagonal derivative; the partial code/CQ and its independent minimum are verified below."
+      },
+      {
+        "documentation": "https://github.com/gvakhrushev/d0_15/blob/850d40882242ad02a62ebe555e9a13d5ee46906f/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/SEED_FIELD_BOOTSTRAP_SECANT_RU.md",
+        "sha256": "51fc4acfc89608235ee61d81f677dd65293fc5426c5088884c695a4e3203dc8c",
+        "scope": "Signed Book III bootstrap on individual programmed cuts and zero secant on the full unchanged cut. It does not identify the complete material price."
+      }
+    ],
+    "bootstrap_stdout_diagnostic": {
+      "entrypoint": "https://github.com/gvakhrushev/d0_15/blob/850d40882242ad02a62ebe555e9a13d5ee46906f/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/check_seed_field_bootstrap_secant.py",
+      "source_sha256": "cf146f80dff53f38dedbc0ee903a610617920fc650a8e46fecfddab3b8ffc6bb",
+      "scope": "Independent clean replay of the upstream script. It checks 19 native stages and both full Hodge grades; it has no committed byte-for-byte JSON receipt.",
+      "separate_sector_secant_interval": [
+        "2.6277066482799964e-7",
+        "2.6277066482799971e-7"
+      ],
+      "unchanged_common_rank16_cut_secant": 0
+    }
+  }
+}
