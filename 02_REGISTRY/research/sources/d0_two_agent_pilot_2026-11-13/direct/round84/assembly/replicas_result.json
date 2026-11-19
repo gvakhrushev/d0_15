@@ -1,0 +1,21 @@
+{
+  "native": {
+    "gates_per_native_word": 228,
+    "all_native_columns": 64,
+    "two_run_joint_weights_checked": 8,
+    "probabilities": [
+      0.310772414249,
+      0.383996291069
+    ],
+    "single_specimen_affinity": 0.786151377757,
+    "iid_two_read_affinity": 0.61803398875
+  },
+  "full_record": {
+    "histories_per_evaluation": 192,
+    "interacting_costs": true,
+    "rigorous_negative_slope_per_copy": ">.18 in magnitude",
+    "old_source_may_be_transverse": true
+  },
+  "full_geometry_loader_executed": false,
+  "GR_closed": false
+}

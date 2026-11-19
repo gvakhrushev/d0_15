@@ -1,0 +1,22 @@
+{
+  "source": "2350117b469890c04b8ff5d8987b224a863e844a",
+  "grid": "4^4",
+  "F_H": "16517734400/162621047169",
+  "strict_negative_each_of_8_raw_slopes": true,
+  "raw_head_slopes_divided_by_p3_vis_alpha2": [
+    "-1.350953413931E-37",
+    "-1.080762731145E-36",
+    "-3.647574217614E-36",
+    "-8.646101849159E-36",
+    "-1.688691767414E-35",
+    "-2.918059374091E-35",
+    "-4.633770209784E-35",
+    "-6.916881479328E-35"
+  ],
+  "signed_T_slope_exact": "0",
+  "CX_B_work_slope_divided_by_physical_T_gain": "-3.183942184851E-8",
+  "leading_small_h_slope_divided_by_gain": "-3.183942184851E-8",
+  "relative_difference_to_leading": "-1.861367462817E-15",
+  "old_right_arbitrary_after_retained_B": true,
+  "complete_compiled_geometry_and_Book_price": false
+}

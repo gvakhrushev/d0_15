@@ -1,0 +1,15 @@
+{
+  "source": "NC1 on a fully purified live head",
+  "native_high_probability_heads": [
+    0.6647355615378564,
+    0.748483707550088
+  ],
+  "extra_zero_prints": 8,
+  "base_gap": 7,
+  "echo_CX_pairs": 5,
+  "selective_and_nonselective_reading_covered_at_common_rate": true,
+  "own_positive_logsum_slope_lower": ".18",
+  "finite_checks": 144,
+  "complete_address_tariff_derived": false,
+  "GR_closed": false
+}
