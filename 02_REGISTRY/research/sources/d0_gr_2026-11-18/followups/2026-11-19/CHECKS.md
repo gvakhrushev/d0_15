@@ -4,6 +4,9 @@
 
 ~~~sh
 d=02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19
+python3 -B "$d/metric/check_coherent_localization_amplification.py"
+python3 -B "$d/metric/check_site_eight_catalogue.py"
+python3 -B "$d/metric/check_native_balanced_pair_clock.py"
 python3 -B "$d/metric/check_site_coframe_julia.py"
 python3 -B "$d/metric/check_signal_routed_clock.py"
 python3 -B "$d/metric/check_terminal_recoding_classes.py"
@@ -107,6 +110,9 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Когерентное усиление локализации | Точные двухмерные амплитуды, условные вероятности всех входов и полный защищённый SITE на модельной изометрии. [Результат](metric/coherent_localization_amplification_result.json) |
+| SITE-каталог восьми настроек | Все настройки, циклический Gray и Julia32 для фиксированного поля; длинные серии не исполнялись побуквенно. [Результат](metric/site_eight_catalogue_result.json) |
+| Единый clock сбалансированной пары | Все четыре зарегистрированные PVM-ветви, настоящий SourceI, условный CQ-расчёт и полный временной контур. [Результат](metric/native_balanced_pair_clock_result.json) |
 | SITE-кофрейм Julia32 | Все 32 столбца, направления и SITE-классы для двух фиксированных входов; огромные целые степени не исполнялись побуквенно. [Результат](metric/site_coframe_julia_result.json) |
 | Перенаправленный signal clock | Два полных 102-стадийных слова, feedback и аналитическая граница полного тепла. [Результат](metric/signal_routed_clock_result.json) |
 | Перекодировки терминального регистра | Точная классификация всех 16 булевых функций, два способа учёта кодов и когерентный контрпример. [Результат](metric/terminal_recoding_classes_result.json) |
