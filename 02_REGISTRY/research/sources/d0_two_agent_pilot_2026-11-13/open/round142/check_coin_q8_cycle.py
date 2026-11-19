@@ -47,6 +47,15 @@ def check_coin():
         require(sp.simplify(derivative - q*(1-q)*p**3*expected) == 0,
                 "Wrong source at saturation")
 
+    delta = sp.Symbol("delta", real=True)
+    defect = q*(1-q)*(x**2 + y**2 - 2*x*y*sp.cos(delta))
+    for variable in (x, y, q, delta):
+        require(sp.diff(defect, variable).subs({y: x, delta: 0}) == 0,
+                "The squared reference defect must be stationary at phase saturation")
+    require(sp.simplify(sp.diff(defect, delta).subs({y: x, delta: sp.pi/2})
+                        - 2*q*(1-q)*x**2) == 0,
+            "Equal magnitudes alone must not force the defect source to vanish")
+
     isometry = sp.Matrix([[a, 0], [0, a], [p, 0], [0, p]])
     require(sp.simplify(isometry.T * isometry - sp.eye(2)) == sp.zeros(2),
             "The two-sector example must be an isometry on its input")
@@ -98,8 +107,33 @@ def check_translators():
         require(j_output == multiply(2 * control, encoded), "Wrong controlled j address")
 
 
+def check_regular_algebra():
+    def translation(h, right=False):
+        matrix = sp.zeros(8)
+        for g in range(8):
+            row = multiply(g, h) if right else multiply(h, g)
+            matrix[row, g] = 1
+        return matrix
+
+    c4 = (0, 1, 4, 5)
+    basis = [translation(h) for h in c4]
+    rj = translation(2, right=True)
+    require(rj*rj == translation(4), "Right j squared must be the common central minus")
+    for a in basis:
+        require(rj*a == a*rj, "Left and right regular actions must commute")
+    for parity, a, b in product((0, 1), basis, basis):
+        left, right = a*rj**parity, b*rj**parity
+        require(left*right.T == a*b.T and a*b.T in basis,
+                "Same-parity block products must lie in the C4 group algebra")
+    # The identity column of every even block has no support on j C4;
+    # every odd block has the opposite support. A controlled j needs both.
+    for g in c4:
+        require(multiply(g, 2) not in c4, "The other coset must stay distinct")
+
+
 def check_cycle():
     check_translators()
+    check_regular_algebra()
     edges = edges_for((0, 1, 2))
     sizes, neighbors = components(edges)
     require(sizes == [16] and len(set(edges)) == 24, "Wrong full graph")
