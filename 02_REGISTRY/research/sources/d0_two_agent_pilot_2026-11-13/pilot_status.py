@@ -1,5 +1,6 @@
 """Показать назначения и отчёты пилота D0 из одного опубликованного снимка Git."""
 import argparse
+from io import BytesIO
 from pathlib import Path
 import posixpath
 import re
@@ -104,7 +105,40 @@ def partial_reports(key, files):
     return groups
 
 
-def main(revision):
+def search_reports(commit, prefix, files, query, base_url):
+    words = set(query.casefold().split())
+    if not words:
+        raise ValueError("Введите хотя бы одно слово для поиска.")
+    paths = sorted(p for p in files if re.match(r"^(direct|open)/round\d+/", p)
+                   and p.endswith(".md") and "inputs" not in p.split("/")[:-1])
+    requests = b"".join(f"{commit}:{prefix}{path}\0".encode() for path in paths)
+    objects = BytesIO(subprocess.check_output(
+        ["git", "-C", str(PILOT), "cat-file", "--batch", "-z"], input=requests))
+    hits = {"direct": [], "open": []}
+    for path in paths:
+        header = objects.readline().split()
+        if len(header) != 3 or header[1] != b"blob":
+            raise ValueError(f"В Git отсутствует текст {path}")
+        body = objects.read(int(header[2])).decode("utf-8")
+        if objects.read(1) != b"\n":
+            raise ValueError(f"Ошибка чтения {path}")
+        lines = [plain(line) for line in body.splitlines()]
+        normalized = "\n".join(lines).casefold()
+        if not all(word in normalized for word in words):
+            continue
+        title = next((line[2:] for line in lines if line.startswith("# ")), Path(path).name)
+        counts = [sum(word in line.casefold() for word in words) for line in lines]
+        best = counts.index(max(counts))
+        lane, round_id = path.split("/")[:2]
+        rank = (sum(word in title.casefold() for word in words), counts[best], int(round_id[5:]))
+        hits[lane].append((rank, path, title, best + 1))
+    for lane, found in hits.items():
+        print(f"\n{lane} · совпадений в отчётах: {len(found)}")
+        for _, path, title, line in sorted(found, reverse=True)[:8]:
+            print(f"• {title}\n  {base_url}{quote(path)}#L{line}")
+
+
+def main(revision, query=None):
     if revision is None:
         git("fetch", "--no-tags", "--no-recurse-submodules", "--no-write-fetch-head",
             "--refmap=", "origin", f"+refs/heads/{BRANCH}:{REMOTE_REF}")
@@ -138,12 +172,16 @@ def main(revision):
             print(f"• {mode} — {base_url}{quote(reports[lane])}")
         else:
             print(f"• {mode} — в этом снимке отчёт не найден.")
+    if query is not None:
+        search_reports(commit, prefix, files, query, base_url)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--revision", metavar="REV", help="прочитать локальный Git-снимок без сети")
+    parser.add_argument("--find", metavar="СЛОВА", help="найти все слова в тексте отчёта обоих режимов")
     try:
-        main(parser.parse_args().revision)
+        args = parser.parse_args()
+        main(args.revision, args.find)
     except (OSError, ValueError, subprocess.CalledProcessError) as exc:
         sys.exit(f"Не удалось прочитать статус пилота. {exc}")
