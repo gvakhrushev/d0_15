@@ -1,0 +1,21 @@
+{
+  "full_old_site": 256,
+  "full_CAR_masks": 16,
+  "true_Fourier_dimension": 128,
+  "sharp_fraction_of_old_shift_contrast_remaining": "0.236067977499789696",
+  "native_probe_old_data_gates": 1,
+  "reachable_mean_equals_reachable_worst_case": true,
+  "minimum_old_motion_F5": "0.381219253915615188",
+  "minimum_old_motion_F6": "0.381219624464211268",
+  "F6_minus_F5_strict_interval": [
+    "0.0000003705485960806374",
+    "0.0000003705485960806375"
+  ],
+  "real_future_contrast_F5": 0,
+  "real_future_contrast_F6_before": "0.00425247732254357997",
+  "real_future_contrast_F6_after": "0.00100387372089658377",
+  "one_old_address_tag_secant": 0,
+  "canonical_tag_suppression_per_bit_upper_factor": "0.944271909999158786",
+  "full_generated_writer_and_clock_valued": false,
+  "GR_closed": false
+}
