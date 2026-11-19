@@ -1,0 +1,250 @@
+{
+  "round": "A81",
+  "base_shared": "8026572396190c6ead092dadf143575e5d423a5e",
+  "claims_shared": [
+    "4665882a9f05f4fa8c6cbd19f9fcad8f237b557b"
+  ],
+  "primary_pr334": "65753c972b4ad1e528a29b0343e30c3ecc9b9670",
+  "reviewed_pr334": "68b1074b376952c729018ace1aef21e124d1d9ae",
+  "related_open_commits": {
+    "B165": "c1fb65623b12fbb4fecc854d191570169cdf915b",
+    "B166": "b1b8a209ccbd0e4d6f0f05cce08b17ae57047695",
+    "B167_claim": "644a259e1d9a4fbf7905873208cba24563da9f4a"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/A4D_NATIVE_INFO_CONTRACT_SOURCE_AUDIT.md": "cab908a86d441f0c12fd69e2b3fe30e88ee867cf",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/PHASE_COMPILER.md": "e5201a3d061b6155af52080757f0e77c8cd20248",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "7a00729985493b7615319c51d6b71e865a93d3a1",
+    "02_REGISTRY/research/sources/d0_native_terminal_code_writer_2026-10-25/WRITER_PROOF.md": "50ac57b6c34a2e48f5b27f5e95da9a3d578c193c"
+  },
+  "upstream_checks": [
+    {
+      "id": "owner_eight_readers",
+      "commit": "04931a7a26a9741bba0584c8e1413613ff7a28d5",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_eight_readers.py",
+      "receipt": "eight_readers_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_eight_readers.py",
+        "check_shared_site_union.py",
+        "eight_readers_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_local_gibbs_records",
+      "commit": "68b1074b376952c729018ace1aef21e124d1d9ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_local_gibbs_records.py",
+      "receipt": "local_gibbs_records_result.json",
+      "files": [
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_shared_site_union.py",
+        "check_source_price.py",
+        "local_gibbs_records_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_live_gain_tree",
+      "commit": "77821350ae32ad4a82aca5f853bfb0e193e9c144",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_live_gain_tree.py",
+      "receipt": "live_gain_tree_result.json",
+      "files": [
+        "check_counted_separator.py",
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_gain_tree.py",
+        "check_live_parser.py",
+        "check_reference_pf_path.py",
+        "check_repeat_clock.py",
+        "check_source_price.py",
+        "live_gain_tree_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_paid_tail_audit",
+      "commit": "68b1074b376952c729018ace1aef21e124d1d9ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_paid_tail_audit.py",
+      "receipt": "paid_tail_audit_result.json",
+      "files": [
+        "check_counted_separator.py",
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_paid_tail_audit.py",
+        "check_reference_pf_path.py",
+        "check_repeat_clock.py",
+        "check_source_price.py",
+        "paid_tail_audit_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "owner_silent_nc1",
+      "commit": "68b1074b376952c729018ace1aef21e124d1d9ae",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_silent_nc1.py",
+      "receipt": "silent_nc1_result.json",
+      "files": [
+        "check_heat_history.py",
+        "check_silent_nc1.py",
+        "silent_nc1_result.json"
+      ],
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    }
+  ],
+  "lanes": [
+    {
+      "id": "return_weights_with_hidden_memory",
+      "check": "direct/round81/assembly/check_hidden_cycle.py",
+      "result": "Конечный тест геометрического хвоста для скрытой памяти и первая вариация взаимной границы.",
+      "open": "Физический перенос положительных весов на действительном носителе.",
+      "evidence": {
+        "direct/round80/assembly/CYCLE_PRICE_RU.md": "d6f3926c04292eaa98dc05455a210ad452ae6aafe0360f7285ce7750ff9ad78d",
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/assembly/HIDDEN_CYCLE_RU.md": "61ecb1f70d942697127527fa0e33dea63350310bc5de947ae6d43111f7717b94",
+        "direct/round81/assembly/check_hidden_cycle.py": "af6c57036b7dc16cb9aadde2ecc8097453e87559ae19ccf5bb8765c675bdbc39"
+      }
+    },
+    {
+      "id": "positive_class_of_the_native_field_law",
+      "check": "direct/round81/assembly/check_positive_field.py",
+      "result": "Два настоящих отчёта дают те же уравнения на независимых полях; конечный положительный класс приближает исходный закон с контролем производной.",
+      "open": "Экономические веса корня и стоимость исполнения контроллера.",
+      "evidence": {
+        "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
+        "direct/round80/native/SWITCH_LOG_RU.md": "403013c3df7406c0007f26eebc750fb93e592ee369cf45eab1ad45b232ff3f52",
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/assembly/POSITIVE_FIELD_CLASSES_RU.md": "498e3fefb7d1cec9d6aa2aa3bda6aaf0905c285394ebb042f26c7443ed06dec6",
+        "direct/round81/assembly/check_positive_field.py": "e17ccbfe52d418e65168d3a3c22df9b391e1cd0893d939c7ce4b80b601281b56"
+      }
+    },
+    {
+      "id": "field_source_of_the_maximum_complete_history",
+      "check": "direct/round81/assembly/check_modal_field.py",
+      "result": "Предел настоящего максимума по полным группированным записям с контролем всех односторонних источников.",
+      "open": "Полный физический вес указателей, регистра и первоначальных путей.",
+      "evidence": {
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/assembly/MODAL_FIELD_RU.md": "43e602260c2669ab01646874255fb61f7413dea200761da11f43cc2501e36195",
+        "direct/round81/assembly/check_modal_field.py": "e63c728ca99f05f40499c492413b653e645d5d6af0bf405972e9e4d781ec0b79",
+        "direct/round81/native/MICRO_MODAL_RU.md": "d31b133cf81a7cc7489535872e091cf1abfc528bb07655ba65a27922e8ddc68b"
+      }
+    },
+    {
+      "id": "thermal_maxima_of_a_single_field_experiment",
+      "check": "direct/round81/assembly/check_thermal_mode.py",
+      "result": "Отношение двух максимальных тепловых вкладов одного графа имеет тот же предельный источник на фиксированной сцене.",
+      "open": "Общая абсолютная нормировка, допуск среза и предел регулятора.",
+      "evidence": {
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/assembly/MODAL_FIELD_RU.md": "43e602260c2669ab01646874255fb61f7413dea200761da11f43cc2501e36195",
+        "direct/round81/assembly/THERMAL_MODE_RU.md": "1d901067a746d3115d318731201320add293569c8a3fa5d043995f79571f495a",
+        "direct/round81/assembly/check_modal_field.py": "e63c728ca99f05f40499c492413b653e645d5d6af0bf405972e9e4d781ec0b79",
+        "direct/round81/assembly/check_thermal_mode.py": "67832bbfd66306550adda780be1da1afba37af194ace37406f1221eed1cfa65a"
+      }
+    },
+    {
+      "id": "absolute_golden_reference_of_three_native_cycles",
+      "check": "direct/round81/native/check_absolute_cycles.py",
+      "result": "Положительный эталон для двух NPS2 и конечное требование к истинной совместной цене перехода.",
+      "open": "Принцип пересчёта всей исходной истории, а не независимого эталона.",
+      "evidence": {
+        "direct/round79/memory/check_cold_compensation.py": "9cf72d9118e7eb7e4e6b1f46f38aadee2ca0953054a3a93806f54741d63e33b9",
+        "direct/round79/writer/check_sharp_history_writer.py": "2714e8dd7b4452af2e9518bd88af9708a13a8a33dac49a0aa077788314c7c818",
+        "direct/round80/assembly/CYCLE_PRICE_RU.md": "d6f3926c04292eaa98dc05455a210ad452ae6aafe0360f7285ce7750ff9ad78d",
+        "direct/round80/comparison/COMPARISON_RU.md": "4885e107a16a2c20b6c873c406bd74e22ba66e82931920b178c6a2b9031bb6f6",
+        "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
+        "direct/round80/native/SWITCH_LOG_RU.md": "403013c3df7406c0007f26eebc750fb93e592ee369cf45eab1ad45b232ff3f52",
+        "direct/round80/native/check_return_work.py": "fdc0d988a48073b862f92dbe1e3f945f529c32fb3e907421c2f611dbcdea739c",
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/native/ABSOLUTE_CYCLES_RU.md": "74ef64d084bbf415f4d263a31608249afe242658898fe7e389177022368c8b59",
+        "direct/round81/native/check_absolute_cycles.py": "a71427d7470515fb65f539c16a0f547d308a903be0ef24403e001d36fdbf06d4",
+        "open/round165/B165_SERVICE_ABORT_RC3_RU.md": "55ebd2f164e55ea9297257ae44aa914e60fb354e2d83f27d5c3ae0292d9222ad"
+      }
+    },
+    {
+      "id": "actual_field_independent_modal_eight_prefix",
+      "check": "direct/round81/native/check_micro_modal.py",
+      "result": "Точный наиболее вероятный неменяющийся класс исходного EIGHT и три независимые маркировки подлинного Golden эталона.",
+      "open": "Дополнительные скрытые внутренние записи и их оплата.",
+      "evidence": {
+        "direct/round78/h1_clock/DIRECT_TERMINAL_RU.md": "6d635334363d502dfcc624d073b7df251648b30747ab7cbbbe34089d44ed3d7e",
+        "direct/round79/memory/check_cold_compensation.py": "9cf72d9118e7eb7e4e6b1f46f38aadee2ca0953054a3a93806f54741d63e33b9",
+        "direct/round79/writer/check_sharp_history_writer.py": "2714e8dd7b4452af2e9518bd88af9708a13a8a33dac49a0aa077788314c7c818",
+        "direct/round80/native/check_return_work.py": "fdc0d988a48073b862f92dbe1e3f945f529c32fb3e907421c2f611dbcdea739c",
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/native/ABSOLUTE_CYCLES_RU.md": "74ef64d084bbf415f4d263a31608249afe242658898fe7e389177022368c8b59",
+        "direct/round81/native/MICRO_MODAL_RU.md": "d31b133cf81a7cc7489535872e091cf1abfc528bb07655ba65a27922e8ddc68b",
+        "direct/round81/native/check_absolute_cycles.py": "a71427d7470515fb65f539c16a0f547d308a903be0ef24403e001d36fdbf06d4",
+        "direct/round81/native/check_micro_modal.py": "e23cd029b280654a1ccb143d995b49917966cb6dcb89bfd7dd526dd8b403d069"
+      }
+    },
+    {
+      "id": "full_native_raw_entropy_with_paid_preparation",
+      "check": "direct/round81/price/check_hidden_service.py",
+      "result": "Для положительной эффективности полный конечный регистр с оплаченной подготовкой B сохраняет полевую стационарность.",
+      "open": "Фрикция этапов, допуск настоящего P и их поля.",
+      "evidence": {
+        "direct/round79/heat/check_return_moments.py": "0b7f40836475acae9045c897b4e90da1b00560e34eba9716761de239719bb2e7",
+        "direct/round80/assembly/RESTORED_CLOCK_RU.md": "f353a3ba1bb17c8528382c943f567d24ee77934a5337889d5e70505b94ca2b91",
+        "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
+        "direct/round80/native/SWITCH_LOG_RU.md": "403013c3df7406c0007f26eebc750fb93e592ee369cf45eab1ad45b232ff3f52",
+        "direct/round80/price/check_parity_price.py": "96fedc8af7557f23002c739c0e566d91189aa9852f842b48ec524408603532c9",
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/price/HIDDEN_SERVICE_RU.md": "b7a15ba3a1e9fe709b947ad8b32cf9db5d6b65cb49dd5845fd18f7e430442765",
+        "direct/round81/price/check_hidden_service.py": "8b216086c80e1b7ba05c81d2dc692d3ae1c5feab7570613b7fea684e9b1111e1",
+        "open/round165/B165_SERVICE_ABORT_RC3_RU.md": "55ebd2f164e55ea9297257ae44aa914e60fb354e2d83f27d5c3ae0292d9222ad"
+      }
+    },
+    {
+      "id": "dominant_paid_b_cycle_with_all_service_histories",
+      "check": "direct/round81/price/check_modal_history.py",
+      "result": "Точный острый порог доминирования BPB и одинаковая по часам пара с отношением шансов на полном приборе.",
+      "open": "Реальные терминальные цены и соотношение Book/вероятностей.",
+      "evidence": {
+        "direct/round78/h1_clock/DIRECT_TERMINAL_RU.md": "6d635334363d502dfcc624d073b7df251648b30747ab7cbbbe34089d44ed3d7e",
+        "direct/round80/native/RETURN_WORK_RU.md": "db09728ef49fcf9e804b032a2a530a4605b9c9cf4f6e4a22bbc9f546064e9fe2",
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/price/HIDDEN_SERVICE_RU.md": "b7a15ba3a1e9fe709b947ad8b32cf9db5d6b65cb49dd5845fd18f7e430442765",
+        "direct/round81/price/MODAL_HISTORY_RU.md": "5bc962017ae2d7fe5566e7da0ac9a154ad5886b06d31ac020e61dedd5ea07635",
+        "direct/round81/price/check_modal_history.py": "4fb3f1021cbd847b081a010f29258a791e57897519994259d140b25de21cad34"
+      }
+    },
+    {
+      "id": "separate_field_variations_at_each_cycle",
+      "check": "direct/round81/field/check_independent_fields.py",
+      "result": "Усреднение на ненулевых адресах снимает взаимный перекос разных регенерируемых полей в холодном функционале.",
+      "open": "Допустимый сектор во всём H.1, удерживаемое будущее и реальная стоимость масок.",
+      "evidence": {
+        "direct/round80/memory/FIELD_SQUARE_RU.md": "0f5e9dfc4106ae4ae18c0498a74f12ec8bf0f862731eeebe496cbbe5c7a0d3c0",
+        "direct/round81/READOUT_RU.md": "87f91f5856b626a57453a24bdee71d998e775e67f219d625a82c24605f45b8ef",
+        "direct/round81/field/INDEPENDENT_FIELDS_RU.md": "def0c03f66248a08eb0ca092e517017b6235196f80359e40bba8ce7b31448955",
+        "direct/round81/field/check_independent_fields.py": "dec89396e31a2727c785fc8332a3b3c87f4c3e5bb946e26e4cf3fa411af56fb0",
+        "open/round165/B165_SERVICE_ABORT_RC3_RU.md": "55ebd2f164e55ea9297257ae44aa914e60fb354e2d83f27d5c3ae0292d9222ad"
+      }
+    }
+  ]
+}
