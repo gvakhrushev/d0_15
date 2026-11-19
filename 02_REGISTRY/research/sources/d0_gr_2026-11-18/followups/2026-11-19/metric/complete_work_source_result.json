@@ -1,0 +1,4019 @@
+{
+  "status": "PASS",
+  "statement": "complete 34-stage local-work pullback on the literal guarded native word",
+  "scientific_status": {
+    "native_physical_price_identified": false,
+    "obligation_C_discharged": false,
+    "GR_closed": false,
+    "model": "declared additive field-independent Hermitian local marks"
+  },
+  "source_sha256": {
+    "native_execution.py": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "check_live_parser.py": "20ec31a25b632d781c36d860c276e95d879f9044c41e921ac8c14e769cffa3c7",
+    "check_source_price.py": "df4658f8633aaf1f945009def9f63a05f0a5e01c922656422d7244fe3abd3b91"
+  },
+  "exact_field": {
+    "basis": [
+      "1",
+      "a",
+      "a^2",
+      "a^3"
+    ],
+    "relation": "a^4+a^2-1=0",
+    "embedding": "a>0, p=a^2=(sqrt(5)-1)/2"
+  },
+  "input": {
+    "H": 1,
+    "old_input_order": [
+      "Spin0",
+      "Spin1",
+      "dirty_port",
+      "T"
+    ],
+    "old_input_dimension": 16,
+    "full_output_dimension": 2048,
+    "classical_scope": "T dephased, with arbitrary conditional Spin-port states and arbitrary external references",
+    "no_spectator_state_substitution": true,
+    "conditional_extrema_scope": "vary T=0/1 with the same arbitrary fixed spectator state; its source is separately retained"
+  },
+  "history_variant": {
+    "terminal_check": "one deferred joint terminal check, with the four original slot projectors transported to the end",
+    "intermediate_physical_dephasing": false,
+    "work_marks_are_additional_instruments": false,
+    "other_variant": "actual early measurements require their own Kraus-propagated prefix work maps; this table does not silently identify the two histories"
+  },
+  "work_convention": "post-stage W_s on the listed actual operation wires; all six births and all 28 square calls charged",
+  "pre_gate_equivalence": "W_pre corresponds to U_s W_pre U_s^dagger post-stage; both full basis maps are recorded",
+  "Pauli_convention": "label order equals listed wire order, Y=[[0,-i],[i,0]]; W=sum_P Tr(PW)/2^k P; missing coefficients are exactly zero",
+  "global_basis": [
+    "I",
+    "S.IX",
+    "S.IY",
+    "S.IZ",
+    "S.XI",
+    "S.XX",
+    "S.XY",
+    "S.XZ",
+    "S.YI",
+    "S.YX",
+    "S.YY",
+    "S.YZ",
+    "S.ZI",
+    "S.ZX",
+    "S.ZY",
+    "S.ZZ",
+    "P.X",
+    "P.Y",
+    "P.Z",
+    "T.X",
+    "T.Y",
+    "T.Z"
+  ],
+  "complete_maps": [
+    {
+      "stage": 1,
+      "operation": "birth(v)",
+      "wires_in_original_order": [
+        5
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "checked_exactly": "Z_T V_s = V_s Z_T and each conditional old-T column remains in its own T sector",
+        "implication": "the full prefix state commutes with P_T for every classically correlated Spin-port-reference input",
+        "arbitrary_tangent_source": 0,
+        "argument": "unitary tangent: Tr(rho [P_T,X])=0; isometric birth tangent: X=J^dagger dJ is anti-Hermitian and PJ=JP"
+      },
+      "pre_work_convention": "new wire does not exist before birth; use the displayed rectangular post compression"
+    },
+    {
+      "stage": 2,
+      "operation": "birth(v)",
+      "wires_in_original_order": [
+        6
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "checked_exactly": "Z_T V_s = V_s Z_T and each conditional old-T column remains in its own T sector",
+        "implication": "the full prefix state commutes with P_T for every classically correlated Spin-port-reference input",
+        "arbitrary_tangent_source": 0,
+        "argument": "unitary tangent: Tr(rho [P_T,X])=0; isometric birth tangent: X=J^dagger dJ is anti-Hermitian and PJ=JP"
+      },
+      "pre_work_convention": "new wire does not exist before birth; use the displayed rectangular post compression"
+    },
+    {
+      "stage": 3,
+      "operation": "birth(v)",
+      "wires_in_original_order": [
+        7
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "checked_exactly": "Z_T V_s = V_s Z_T and each conditional old-T column remains in its own T sector",
+        "implication": "the full prefix state commutes with P_T for every classically correlated Spin-port-reference input",
+        "arbitrary_tangent_source": 0,
+        "argument": "unitary tangent: Tr(rho [P_T,X])=0; isometric birth tangent: X=J^dagger dJ is anti-Hermitian and PJ=JP"
+      },
+      "pre_work_convention": "new wire does not exist before birth; use the displayed rectangular post compression"
+    },
+    {
+      "stage": 4,
+      "operation": "birth(v)",
+      "wires_in_original_order": [
+        8
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "checked_exactly": "Z_T V_s = V_s Z_T and each conditional old-T column remains in its own T sector",
+        "implication": "the full prefix state commutes with P_T for every classically correlated Spin-port-reference input",
+        "arbitrary_tangent_source": 0,
+        "argument": "unitary tangent: Tr(rho [P_T,X])=0; isometric birth tangent: X=J^dagger dJ is anti-Hermitian and PJ=JP"
+      },
+      "pre_work_convention": "new wire does not exist before birth; use the displayed rectangular post compression"
+    },
+    {
+      "stage": 5,
+      "operation": "birth(v)",
+      "wires_in_original_order": [
+        9
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "checked_exactly": "Z_T V_s = V_s Z_T and each conditional old-T column remains in its own T sector",
+        "implication": "the full prefix state commutes with P_T for every classically correlated Spin-port-reference input",
+        "arbitrary_tangent_source": 0,
+        "argument": "unitary tangent: Tr(rho [P_T,X])=0; isometric birth tangent: X=J^dagger dJ is anti-Hermitian and PJ=JP"
+      },
+      "pre_work_convention": "new wire does not exist before birth; use the displayed rectangular post compression"
+    },
+    {
+      "stage": 6,
+      "operation": "birth(v)",
+      "wires_in_original_order": [
+        10
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "checked_exactly": "Z_T V_s = V_s Z_T and each conditional old-T column remains in its own T sector",
+        "implication": "the full prefix state commutes with P_T for every classically correlated Spin-port-reference input",
+        "arbitrary_tangent_source": 0,
+        "argument": "unitary tangent: Tr(rho [P_T,X])=0; isometric birth tangent: X=J^dagger dJ is anti-Hermitian and PJ=JP"
+      },
+      "pre_work_convention": "new wire does not exist before birth; use the displayed rectangular post compression"
+    },
+    {
+      "stage": 7,
+      "operation": "CX",
+      "wires_in_original_order": [
+        4,
+        5
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "T.Z": "-1+2*a^2"
+        },
+        "XI": {
+          "T.X": "2*a^3"
+        },
+        "XX": {
+          "T.X": "1"
+        },
+        "XY": {
+          "T.Y": "-1+2*a^2"
+        },
+        "XZ": {},
+        "YI": {
+          "T.Y": "2*a^3"
+        },
+        "YX": {
+          "T.Y": "1"
+        },
+        "YY": {
+          "T.X": "1-2*a^2"
+        },
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {
+          "T.Z": "2*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IZ": "2-4*a^2",
+        "ZI": "-2",
+        "ZX": "-4*a^3"
+      },
+      "max_effect_T_source_exact": "1",
+      "max_effect_T_source_decimal": "1",
+      "spectral_witness": {
+        "type": "orthogonal_T_sectors",
+        "positive_projector": "P(T=1) on the operation support",
+        "positivity_proof": "two genuine partial states on orthogonal T sectors"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "checked_exactly": "Z_T V_s = V_s Z_T and each conditional old-T column remains in its own T sector",
+        "implication": "the full prefix state commutes with P_T for every classically correlated Spin-port-reference input",
+        "arbitrary_tangent_source": 0,
+        "argument": "unitary tangent: Tr(rho [P_T,X])=0; isometric birth tangent: X=J^dagger dJ is anti-Hermitian and PJ=JP"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {
+          "T.X": "1"
+        },
+        "XX": {
+          "T.X": "2*a^3"
+        },
+        "XY": {},
+        "XZ": {
+          "T.X": "-1+2*a^2"
+        },
+        "YI": {
+          "T.Y": "1"
+        },
+        "YX": {
+          "T.Y": "2*a^3"
+        },
+        "YY": {},
+        "YZ": {
+          "T.Y": "-1+2*a^2"
+        },
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {
+          "T.Z": "2*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "T.Z": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 8,
+      "operation": "CX",
+      "wires_in_original_order": [
+        5,
+        6
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "T.Z": "5-8*a^2"
+        },
+        "XI": {
+          "I": "-4+8*a^2"
+        },
+        "XX": {
+          "I": "2*a^3"
+        },
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {
+          "I": "-4*a+6*a^3"
+        },
+        "YZ": {},
+        "ZI": {
+          "T.Z": "-1+2*a^2"
+        },
+        "ZX": {
+          "T.Z": "4*a-6*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IZ": "-10+16*a^2",
+        "ZI": "2-4*a^2",
+        "ZX": "-8*a+12*a^3"
+      },
+      "max_effect_T_source_exact": "-1+2*a^2",
+      "max_effect_T_source_decimal": "0.2360679774997896",
+      "spectral_witness": {
+        "type": "two_nonzero_eigenvalues",
+        "positive_eigenvalue": "p^3",
+        "negative_eigenvalue": "-p^3",
+        "positive_projector": "(delta^2/p^(2k)+delta/p^k)/2, k=3",
+        "verified": "Hermitian idempotence, rank one, and delta Pi_+=p^k Pi_+ exactly"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {
+          "I": "2*a^3"
+        },
+        "XX": {
+          "I": "-4+8*a^2"
+        },
+        "XY": {},
+        "XZ": {
+          "I": "4*a-6*a^3"
+        },
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "-1+2*a^2"
+        },
+        "ZX": {
+          "T.Z": "4*a-6*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "T.Z": "5-8*a^2"
+        }
+      }
+    },
+    {
+      "stage": 9,
+      "operation": "G",
+      "wires_in_original_order": [
+        6
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "4*a-6*a^3",
+          "T.Z": "-16*a+26*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "4-8*a^2",
+          "T.Z": "-21+34*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "X": "32*a-52*a^3",
+        "Z": "42-68*a^2"
+      },
+      "max_effect_T_source_exact": "5-8*a^2",
+      "max_effect_T_source_decimal": "0.05572809000084167",
+      "spectral_witness": {
+        "type": "two_nonzero_eigenvalues",
+        "positive_eigenvalue": "p^6",
+        "negative_eigenvalue": "-p^6",
+        "positive_projector": "(delta^2/p^(2k)+delta/p^k)/2, k=6",
+        "verified": "Hermitian idempotence, rank one, and delta Pi_+=p^k Pi_+ exactly"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "T.Z": "5-8*a^2"
+        }
+      }
+    },
+    {
+      "stage": 10,
+      "operation": "CX",
+      "wires_in_original_order": [
+        5,
+        6
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "-16*a+26*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "5-8*a^2",
+          "T.Z": "-20+32*a^2"
+        },
+        "XI": {
+          "I": "4*a-6*a^3"
+        },
+        "XX": {
+          "I": "-4+8*a^2"
+        },
+        "XY": {},
+        "XZ": {
+          "I": "4*a-6*a^3"
+        },
+        "YI": {},
+        "YX": {},
+        "YY": {
+          "I": "-4+8*a^2"
+        },
+        "YZ": {},
+        "ZI": {
+          "T.Z": "-1+2*a^2"
+        },
+        "ZX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "-16*a+26*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "4-8*a^2",
+          "T.Z": "-21+34*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IX": "32*a-52*a^3",
+        "IZ": "40-64*a^2",
+        "ZI": "2-4*a^2",
+        "ZX": "32*a-52*a^3",
+        "ZZ": "42-68*a^2"
+      },
+      "max_effect_T_source_exact": "-1+2*a^2",
+      "max_effect_T_source_decimal": "0.2360679774997896",
+      "spectral_witness": {
+        "type": "two_nonzero_eigenvalues",
+        "positive_eigenvalue": "p^3",
+        "negative_eigenvalue": "-p^3",
+        "positive_projector": "(delta^2/p^(2k)+delta/p^k)/2, k=3",
+        "verified": "Hermitian idempotence, rank one, and delta Pi_+=p^k Pi_+ exactly"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "-16*a+26*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "4-8*a^2",
+          "T.Z": "-21+34*a^2"
+        },
+        "XI": {
+          "I": "-4+8*a^2"
+        },
+        "XX": {
+          "I": "4*a-6*a^3"
+        },
+        "XY": {},
+        "XZ": {
+          "I": "4-8*a^2"
+        },
+        "YI": {},
+        "YX": {},
+        "YY": {
+          "I": "-4*a+6*a^3"
+        },
+        "YZ": {},
+        "ZI": {
+          "T.Z": "-1+2*a^2"
+        },
+        "ZX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "-16*a+26*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "5-8*a^2",
+          "T.Z": "-20+32*a^2"
+        }
+      }
+    },
+    {
+      "stage": 11,
+      "operation": "CX",
+      "wires_in_original_order": [
+        2,
+        7
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "P.Z": "-1+2*a^2"
+        },
+        "XI": {
+          "P.X": "2*a^3"
+        },
+        "XX": {
+          "P.X": "1"
+        },
+        "XY": {
+          "P.Y": "-1+2*a^2"
+        },
+        "XZ": {},
+        "YI": {
+          "P.Y": "2*a^3"
+        },
+        "YX": {
+          "P.Y": "1"
+        },
+        "YY": {
+          "P.X": "1-2*a^2"
+        },
+        "YZ": {},
+        "ZI": {
+          "P.Z": "1"
+        },
+        "ZX": {
+          "P.Z": "2*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {
+          "P.X": "1"
+        },
+        "XX": {
+          "P.X": "2*a^3"
+        },
+        "XY": {},
+        "XZ": {
+          "P.X": "-1+2*a^2"
+        },
+        "YI": {
+          "P.Y": "1"
+        },
+        "YX": {
+          "P.Y": "2*a^3"
+        },
+        "YY": {},
+        "YZ": {
+          "P.Y": "-1+2*a^2"
+        },
+        "ZI": {
+          "P.Z": "1"
+        },
+        "ZX": {
+          "P.Z": "2*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "P.Z": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 12,
+      "operation": "CX",
+      "wires_in_original_order": [
+        7,
+        2
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "P.X": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {
+          "P.X": "1"
+        },
+        "XX": {
+          "I": "2*a^3"
+        },
+        "XY": {},
+        "XZ": {
+          "P.X": "-1+2*a^2"
+        },
+        "YI": {
+          "P.Y": "-1+2*a^2"
+        },
+        "YX": {},
+        "YY": {
+          "P.Z": "-2*a^3"
+        },
+        "YZ": {
+          "P.Y": "1"
+        },
+        "ZI": {
+          "P.Z": "-1+2*a^2"
+        },
+        "ZX": {},
+        "ZY": {
+          "P.Y": "2*a^3"
+        },
+        "ZZ": {
+          "P.Z": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "P.X": "2*a^3"
+        },
+        "IY": {
+          "P.Y": "2*a^3"
+        },
+        "IZ": {
+          "P.Z": "1"
+        },
+        "XI": {
+          "I": "2*a^3"
+        },
+        "XX": {
+          "P.X": "1"
+        },
+        "XY": {
+          "P.Y": "1"
+        },
+        "XZ": {
+          "P.Z": "2*a^3"
+        },
+        "YI": {},
+        "YX": {
+          "P.Y": "-1+2*a^2"
+        },
+        "YY": {
+          "P.X": "1-2*a^2"
+        },
+        "YZ": {},
+        "ZI": {
+          "P.Z": "-1+2*a^2"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 13,
+      "operation": "CX",
+      "wires_in_original_order": [
+        2,
+        7
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "P.X": "1"
+        },
+        "IY": {
+          "P.Y": "1"
+        },
+        "IZ": {
+          "P.Z": "1"
+        },
+        "XI": {
+          "I": "2*a^3"
+        },
+        "XX": {
+          "P.X": "2*a^3"
+        },
+        "XY": {
+          "P.Y": "2*a^3"
+        },
+        "XZ": {
+          "P.Z": "2*a^3"
+        },
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "-1+2*a^2"
+        },
+        "ZX": {
+          "P.X": "-1+2*a^2"
+        },
+        "ZY": {
+          "P.Y": "-1+2*a^2"
+        },
+        "ZZ": {
+          "P.Z": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "P.X": "1"
+        },
+        "IY": {
+          "P.Y": "-1+2*a^2"
+        },
+        "IZ": {
+          "P.Z": "-1+2*a^2"
+        },
+        "XI": {
+          "P.X": "2*a^3"
+        },
+        "XX": {
+          "I": "2*a^3"
+        },
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {
+          "P.Z": "-2*a^3"
+        },
+        "YZ": {
+          "P.Y": "2*a^3"
+        },
+        "ZI": {
+          "I": "-1+2*a^2"
+        },
+        "ZX": {
+          "P.X": "-1+2*a^2"
+        },
+        "ZY": {
+          "P.Y": "1"
+        },
+        "ZZ": {
+          "P.Z": "1"
+        }
+      }
+    },
+    {
+      "stage": 14,
+      "operation": "SourceI",
+      "wires_in_original_order": [
+        2,
+        0,
+        1
+      ],
+      "local_Hermitian_basis_size": 64,
+      "post_work_pullback": {
+        "III": {
+          "I": "1"
+        },
+        "IIX": {
+          "S.IX": "-1+2*a^2"
+        },
+        "IIY": {
+          "S.IY": "1"
+        },
+        "IIZ": {
+          "S.IZ": "-1+2*a^2"
+        },
+        "IXI": {
+          "S.XI": "1"
+        },
+        "IXX": {
+          "S.XX": "-1+2*a^2"
+        },
+        "IXY": {
+          "S.XY": "1"
+        },
+        "IXZ": {
+          "S.XZ": "-1+2*a^2"
+        },
+        "IYI": {
+          "S.YI": "1"
+        },
+        "IYX": {
+          "S.YX": "-1+2*a^2"
+        },
+        "IYY": {
+          "S.YY": "1"
+        },
+        "IYZ": {
+          "S.YZ": "-1+2*a^2"
+        },
+        "IZI": {
+          "S.ZI": "1"
+        },
+        "IZX": {
+          "S.ZX": "-1+2*a^2"
+        },
+        "IZY": {
+          "S.ZY": "1"
+        },
+        "IZZ": {
+          "S.ZZ": "-1+2*a^2"
+        },
+        "XII": {},
+        "XIX": {
+          "S.IZ": "2*a^3"
+        },
+        "XIY": {},
+        "XIZ": {
+          "S.IX": "-2*a^3"
+        },
+        "XXI": {},
+        "XXX": {
+          "S.XZ": "2*a^3"
+        },
+        "XXY": {},
+        "XXZ": {
+          "S.XX": "-2*a^3"
+        },
+        "XYI": {},
+        "XYX": {
+          "S.YZ": "2*a^3"
+        },
+        "XYY": {},
+        "XYZ": {
+          "S.YX": "-2*a^3"
+        },
+        "XZI": {},
+        "XZX": {
+          "S.ZZ": "2*a^3"
+        },
+        "XZY": {},
+        "XZZ": {
+          "S.ZX": "-2*a^3"
+        },
+        "YII": {
+          "S.IY": "-2*a^3"
+        },
+        "YIX": {},
+        "YIY": {
+          "I": "-2*a^3"
+        },
+        "YIZ": {},
+        "YXI": {
+          "S.XY": "-2*a^3"
+        },
+        "YXX": {},
+        "YXY": {
+          "S.XI": "-2*a^3"
+        },
+        "YXZ": {},
+        "YYI": {
+          "S.YY": "-2*a^3"
+        },
+        "YYX": {},
+        "YYY": {
+          "S.YI": "-2*a^3"
+        },
+        "YYZ": {},
+        "YZI": {
+          "S.ZY": "-2*a^3"
+        },
+        "YZX": {},
+        "YZY": {
+          "S.ZI": "-2*a^3"
+        },
+        "YZZ": {},
+        "ZII": {
+          "I": "-1+2*a^2"
+        },
+        "ZIX": {
+          "S.IX": "1"
+        },
+        "ZIY": {
+          "S.IY": "-1+2*a^2"
+        },
+        "ZIZ": {
+          "S.IZ": "1"
+        },
+        "ZXI": {
+          "S.XI": "-1+2*a^2"
+        },
+        "ZXX": {
+          "S.XX": "1"
+        },
+        "ZXY": {
+          "S.XY": "-1+2*a^2"
+        },
+        "ZXZ": {
+          "S.XZ": "1"
+        },
+        "ZYI": {
+          "S.YI": "-1+2*a^2"
+        },
+        "ZYX": {
+          "S.YX": "1"
+        },
+        "ZYY": {
+          "S.YY": "-1+2*a^2"
+        },
+        "ZYZ": {
+          "S.YZ": "1"
+        },
+        "ZZI": {
+          "S.ZI": "-1+2*a^2"
+        },
+        "ZZX": {
+          "S.ZX": "1"
+        },
+        "ZZY": {
+          "S.ZY": "-1+2*a^2"
+        },
+        "ZZZ": {
+          "S.ZZ": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "III": {
+          "I": "1"
+        },
+        "IIX": {
+          "S.IX": "1"
+        },
+        "IIY": {
+          "S.IY": "1"
+        },
+        "IIZ": {
+          "S.IZ": "1"
+        },
+        "IXI": {
+          "S.XI": "1"
+        },
+        "IXX": {
+          "S.XX": "1"
+        },
+        "IXY": {
+          "S.XY": "1"
+        },
+        "IXZ": {
+          "S.XZ": "1"
+        },
+        "IYI": {
+          "S.YI": "1"
+        },
+        "IYX": {
+          "S.YX": "1"
+        },
+        "IYY": {
+          "S.YY": "1"
+        },
+        "IYZ": {
+          "S.YZ": "1"
+        },
+        "IZI": {
+          "S.ZI": "1"
+        },
+        "IZX": {
+          "S.ZX": "1"
+        },
+        "IZY": {
+          "S.ZY": "1"
+        },
+        "IZZ": {
+          "S.ZZ": "1"
+        },
+        "XII": {
+          "I": "2*a^3"
+        },
+        "XIX": {
+          "S.IX": "2*a^3"
+        },
+        "XIY": {
+          "S.IY": "2*a^3"
+        },
+        "XIZ": {
+          "S.IZ": "2*a^3"
+        },
+        "XXI": {
+          "S.XI": "2*a^3"
+        },
+        "XXX": {
+          "S.XX": "2*a^3"
+        },
+        "XXY": {
+          "S.XY": "2*a^3"
+        },
+        "XXZ": {
+          "S.XZ": "2*a^3"
+        },
+        "XYI": {
+          "S.YI": "2*a^3"
+        },
+        "XYX": {
+          "S.YX": "2*a^3"
+        },
+        "XYY": {
+          "S.YY": "2*a^3"
+        },
+        "XYZ": {
+          "S.YZ": "2*a^3"
+        },
+        "XZI": {
+          "S.ZI": "2*a^3"
+        },
+        "XZX": {
+          "S.ZX": "2*a^3"
+        },
+        "XZY": {
+          "S.ZY": "2*a^3"
+        },
+        "XZZ": {
+          "S.ZZ": "2*a^3"
+        },
+        "YII": {},
+        "YIX": {},
+        "YIY": {},
+        "YIZ": {},
+        "YXI": {},
+        "YXX": {},
+        "YXY": {},
+        "YXZ": {},
+        "YYI": {},
+        "YYX": {},
+        "YYY": {},
+        "YYZ": {},
+        "YZI": {},
+        "YZX": {},
+        "YZY": {},
+        "YZZ": {},
+        "ZII": {
+          "I": "-1+2*a^2"
+        },
+        "ZIX": {
+          "S.IX": "-1+2*a^2"
+        },
+        "ZIY": {
+          "S.IY": "-1+2*a^2"
+        },
+        "ZIZ": {
+          "S.IZ": "-1+2*a^2"
+        },
+        "ZXI": {
+          "S.XI": "-1+2*a^2"
+        },
+        "ZXX": {
+          "S.XX": "-1+2*a^2"
+        },
+        "ZXY": {
+          "S.XY": "-1+2*a^2"
+        },
+        "ZXZ": {
+          "S.XZ": "-1+2*a^2"
+        },
+        "ZYI": {
+          "S.YI": "-1+2*a^2"
+        },
+        "ZYX": {
+          "S.YX": "-1+2*a^2"
+        },
+        "ZYY": {
+          "S.YY": "-1+2*a^2"
+        },
+        "ZYZ": {
+          "S.YZ": "-1+2*a^2"
+        },
+        "ZZI": {
+          "S.ZI": "-1+2*a^2"
+        },
+        "ZZX": {
+          "S.ZX": "-1+2*a^2"
+        },
+        "ZZY": {
+          "S.ZY": "-1+2*a^2"
+        },
+        "ZZZ": {
+          "S.ZZ": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 15,
+      "operation": "SourceI",
+      "wires_in_original_order": [
+        2,
+        0,
+        1
+      ],
+      "local_Hermitian_basis_size": 64,
+      "post_work_pullback": {
+        "III": {
+          "I": "1"
+        },
+        "IIX": {
+          "S.IX": "1"
+        },
+        "IIY": {
+          "S.IY": "1"
+        },
+        "IIZ": {
+          "S.IZ": "1"
+        },
+        "IXI": {
+          "S.XI": "1"
+        },
+        "IXX": {
+          "S.XX": "1"
+        },
+        "IXY": {
+          "S.XY": "1"
+        },
+        "IXZ": {
+          "S.XZ": "1"
+        },
+        "IYI": {
+          "S.YI": "1"
+        },
+        "IYX": {
+          "S.YX": "1"
+        },
+        "IYY": {
+          "S.YY": "1"
+        },
+        "IYZ": {
+          "S.YZ": "1"
+        },
+        "IZI": {
+          "S.ZI": "1"
+        },
+        "IZX": {
+          "S.ZX": "1"
+        },
+        "IZY": {
+          "S.ZY": "1"
+        },
+        "IZZ": {
+          "S.ZZ": "1"
+        },
+        "XII": {
+          "I": "-2*a^3"
+        },
+        "XIX": {
+          "S.IX": "-2*a^3"
+        },
+        "XIY": {
+          "S.IY": "-2*a^3"
+        },
+        "XIZ": {
+          "S.IZ": "-2*a^3"
+        },
+        "XXI": {
+          "S.XI": "-2*a^3"
+        },
+        "XXX": {
+          "S.XX": "-2*a^3"
+        },
+        "XXY": {
+          "S.XY": "-2*a^3"
+        },
+        "XXZ": {
+          "S.XZ": "-2*a^3"
+        },
+        "XYI": {
+          "S.YI": "-2*a^3"
+        },
+        "XYX": {
+          "S.YX": "-2*a^3"
+        },
+        "XYY": {
+          "S.YY": "-2*a^3"
+        },
+        "XYZ": {
+          "S.YZ": "-2*a^3"
+        },
+        "XZI": {
+          "S.ZI": "-2*a^3"
+        },
+        "XZX": {
+          "S.ZX": "-2*a^3"
+        },
+        "XZY": {
+          "S.ZY": "-2*a^3"
+        },
+        "XZZ": {
+          "S.ZZ": "-2*a^3"
+        },
+        "YII": {},
+        "YIX": {},
+        "YIY": {},
+        "YIZ": {},
+        "YXI": {},
+        "YXX": {},
+        "YXY": {},
+        "YXZ": {},
+        "YYI": {},
+        "YYX": {},
+        "YYY": {},
+        "YYZ": {},
+        "YZI": {},
+        "YZX": {},
+        "YZY": {},
+        "YZZ": {},
+        "ZII": {
+          "I": "-1+2*a^2"
+        },
+        "ZIX": {
+          "S.IX": "-1+2*a^2"
+        },
+        "ZIY": {
+          "S.IY": "-1+2*a^2"
+        },
+        "ZIZ": {
+          "S.IZ": "-1+2*a^2"
+        },
+        "ZXI": {
+          "S.XI": "-1+2*a^2"
+        },
+        "ZXX": {
+          "S.XX": "-1+2*a^2"
+        },
+        "ZXY": {
+          "S.XY": "-1+2*a^2"
+        },
+        "ZXZ": {
+          "S.XZ": "-1+2*a^2"
+        },
+        "ZYI": {
+          "S.YI": "-1+2*a^2"
+        },
+        "ZYX": {
+          "S.YX": "-1+2*a^2"
+        },
+        "ZYY": {
+          "S.YY": "-1+2*a^2"
+        },
+        "ZYZ": {
+          "S.YZ": "-1+2*a^2"
+        },
+        "ZZI": {
+          "S.ZI": "-1+2*a^2"
+        },
+        "ZZX": {
+          "S.ZX": "-1+2*a^2"
+        },
+        "ZZY": {
+          "S.ZY": "-1+2*a^2"
+        },
+        "ZZZ": {
+          "S.ZZ": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "III": {
+          "I": "1"
+        },
+        "IIX": {
+          "S.IX": "-1+2*a^2"
+        },
+        "IIY": {
+          "S.IY": "1"
+        },
+        "IIZ": {
+          "S.IZ": "-1+2*a^2"
+        },
+        "IXI": {
+          "S.XI": "1"
+        },
+        "IXX": {
+          "S.XX": "-1+2*a^2"
+        },
+        "IXY": {
+          "S.XY": "1"
+        },
+        "IXZ": {
+          "S.XZ": "-1+2*a^2"
+        },
+        "IYI": {
+          "S.YI": "1"
+        },
+        "IYX": {
+          "S.YX": "-1+2*a^2"
+        },
+        "IYY": {
+          "S.YY": "1"
+        },
+        "IYZ": {
+          "S.YZ": "-1+2*a^2"
+        },
+        "IZI": {
+          "S.ZI": "1"
+        },
+        "IZX": {
+          "S.ZX": "-1+2*a^2"
+        },
+        "IZY": {
+          "S.ZY": "1"
+        },
+        "IZZ": {
+          "S.ZZ": "-1+2*a^2"
+        },
+        "XII": {},
+        "XIX": {
+          "S.IZ": "2*a^3"
+        },
+        "XIY": {},
+        "XIZ": {
+          "S.IX": "-2*a^3"
+        },
+        "XXI": {},
+        "XXX": {
+          "S.XZ": "2*a^3"
+        },
+        "XXY": {},
+        "XXZ": {
+          "S.XX": "-2*a^3"
+        },
+        "XYI": {},
+        "XYX": {
+          "S.YZ": "2*a^3"
+        },
+        "XYY": {},
+        "XYZ": {
+          "S.YX": "-2*a^3"
+        },
+        "XZI": {},
+        "XZX": {
+          "S.ZZ": "2*a^3"
+        },
+        "XZY": {},
+        "XZZ": {
+          "S.ZX": "-2*a^3"
+        },
+        "YII": {
+          "S.IY": "-2*a^3"
+        },
+        "YIX": {},
+        "YIY": {
+          "I": "-2*a^3"
+        },
+        "YIZ": {},
+        "YXI": {
+          "S.XY": "-2*a^3"
+        },
+        "YXX": {},
+        "YXY": {
+          "S.XI": "-2*a^3"
+        },
+        "YXZ": {},
+        "YYI": {
+          "S.YY": "-2*a^3"
+        },
+        "YYX": {},
+        "YYY": {
+          "S.YI": "-2*a^3"
+        },
+        "YYZ": {},
+        "YZI": {
+          "S.ZY": "-2*a^3"
+        },
+        "YZX": {},
+        "YZY": {
+          "S.ZI": "-2*a^3"
+        },
+        "YZZ": {},
+        "ZII": {
+          "I": "-1+2*a^2"
+        },
+        "ZIX": {
+          "S.IX": "1"
+        },
+        "ZIY": {
+          "S.IY": "-1+2*a^2"
+        },
+        "ZIZ": {
+          "S.IZ": "1"
+        },
+        "ZXI": {
+          "S.XI": "-1+2*a^2"
+        },
+        "ZXX": {
+          "S.XX": "1"
+        },
+        "ZXY": {
+          "S.XY": "-1+2*a^2"
+        },
+        "ZXZ": {
+          "S.XZ": "1"
+        },
+        "ZYI": {
+          "S.YI": "-1+2*a^2"
+        },
+        "ZYX": {
+          "S.YX": "1"
+        },
+        "ZYY": {
+          "S.YY": "-1+2*a^2"
+        },
+        "ZYZ": {
+          "S.YZ": "1"
+        },
+        "ZZI": {
+          "S.ZI": "-1+2*a^2"
+        },
+        "ZZX": {
+          "S.ZX": "1"
+        },
+        "ZZY": {
+          "S.ZY": "-1+2*a^2"
+        },
+        "ZZZ": {
+          "S.ZZ": "1"
+        }
+      }
+    },
+    {
+      "stage": 16,
+      "operation": "G",
+      "wires_in_original_order": [
+        2
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {},
+        "Y": {},
+        "Z": {
+          "I": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "-2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 17,
+      "operation": "SourceI",
+      "wires_in_original_order": [
+        2,
+        0,
+        1
+      ],
+      "local_Hermitian_basis_size": 64,
+      "post_work_pullback": {
+        "III": {
+          "I": "1"
+        },
+        "IIX": {
+          "S.IX": "1"
+        },
+        "IIY": {
+          "S.IY": "1"
+        },
+        "IIZ": {
+          "S.IZ": "1"
+        },
+        "IXI": {
+          "S.XI": "1"
+        },
+        "IXX": {
+          "S.XX": "1"
+        },
+        "IXY": {
+          "S.XY": "1"
+        },
+        "IXZ": {
+          "S.XZ": "1"
+        },
+        "IYI": {
+          "S.YI": "1"
+        },
+        "IYX": {
+          "S.YX": "1"
+        },
+        "IYY": {
+          "S.YY": "1"
+        },
+        "IYZ": {
+          "S.YZ": "1"
+        },
+        "IZI": {
+          "S.ZI": "1"
+        },
+        "IZX": {
+          "S.ZX": "1"
+        },
+        "IZY": {
+          "S.ZY": "1"
+        },
+        "IZZ": {
+          "S.ZZ": "1"
+        },
+        "XII": {},
+        "XIX": {},
+        "XIY": {},
+        "XIZ": {},
+        "XXI": {},
+        "XXX": {},
+        "XXY": {},
+        "XXZ": {},
+        "XYI": {},
+        "XYX": {},
+        "XYY": {},
+        "XYZ": {},
+        "XZI": {},
+        "XZX": {},
+        "XZY": {},
+        "XZZ": {},
+        "YII": {},
+        "YIX": {},
+        "YIY": {},
+        "YIZ": {},
+        "YXI": {},
+        "YXX": {},
+        "YXY": {},
+        "YXZ": {},
+        "YYI": {},
+        "YYX": {},
+        "YYY": {},
+        "YYZ": {},
+        "YZI": {},
+        "YZX": {},
+        "YZY": {},
+        "YZZ": {},
+        "ZII": {
+          "I": "1"
+        },
+        "ZIX": {
+          "S.IX": "1"
+        },
+        "ZIY": {
+          "S.IY": "1"
+        },
+        "ZIZ": {
+          "S.IZ": "1"
+        },
+        "ZXI": {
+          "S.XI": "1"
+        },
+        "ZXX": {
+          "S.XX": "1"
+        },
+        "ZXY": {
+          "S.XY": "1"
+        },
+        "ZXZ": {
+          "S.XZ": "1"
+        },
+        "ZYI": {
+          "S.YI": "1"
+        },
+        "ZYX": {
+          "S.YX": "1"
+        },
+        "ZYY": {
+          "S.YY": "1"
+        },
+        "ZYZ": {
+          "S.YZ": "1"
+        },
+        "ZZI": {
+          "S.ZI": "1"
+        },
+        "ZZX": {
+          "S.ZX": "1"
+        },
+        "ZZY": {
+          "S.ZY": "1"
+        },
+        "ZZZ": {
+          "S.ZZ": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "III": {
+          "I": "1"
+        },
+        "IIX": {
+          "S.IX": "1"
+        },
+        "IIY": {
+          "S.IY": "1"
+        },
+        "IIZ": {
+          "S.IZ": "1"
+        },
+        "IXI": {
+          "S.XI": "1"
+        },
+        "IXX": {
+          "S.XX": "1"
+        },
+        "IXY": {
+          "S.XY": "1"
+        },
+        "IXZ": {
+          "S.XZ": "1"
+        },
+        "IYI": {
+          "S.YI": "1"
+        },
+        "IYX": {
+          "S.YX": "1"
+        },
+        "IYY": {
+          "S.YY": "1"
+        },
+        "IYZ": {
+          "S.YZ": "1"
+        },
+        "IZI": {
+          "S.ZI": "1"
+        },
+        "IZX": {
+          "S.ZX": "1"
+        },
+        "IZY": {
+          "S.ZY": "1"
+        },
+        "IZZ": {
+          "S.ZZ": "1"
+        },
+        "XII": {},
+        "XIX": {},
+        "XIY": {},
+        "XIZ": {},
+        "XXI": {},
+        "XXX": {},
+        "XXY": {},
+        "XXZ": {},
+        "XYI": {},
+        "XYX": {},
+        "XYY": {},
+        "XYZ": {},
+        "XZI": {},
+        "XZX": {},
+        "XZY": {},
+        "XZZ": {},
+        "YII": {},
+        "YIX": {},
+        "YIY": {},
+        "YIZ": {},
+        "YXI": {},
+        "YXX": {},
+        "YXY": {},
+        "YXZ": {},
+        "YYI": {},
+        "YYX": {},
+        "YYY": {},
+        "YYZ": {},
+        "YZI": {},
+        "YZX": {},
+        "YZY": {},
+        "YZZ": {},
+        "ZII": {
+          "I": "1"
+        },
+        "ZIX": {
+          "S.IX": "1"
+        },
+        "ZIY": {
+          "S.IY": "1"
+        },
+        "ZIZ": {
+          "S.IZ": "1"
+        },
+        "ZXI": {
+          "S.XI": "1"
+        },
+        "ZXX": {
+          "S.XX": "1"
+        },
+        "ZXY": {
+          "S.XY": "1"
+        },
+        "ZXZ": {
+          "S.XZ": "1"
+        },
+        "ZYI": {
+          "S.YI": "1"
+        },
+        "ZYX": {
+          "S.YX": "1"
+        },
+        "ZYY": {
+          "S.YY": "1"
+        },
+        "ZYZ": {
+          "S.YZ": "1"
+        },
+        "ZZI": {
+          "S.ZI": "1"
+        },
+        "ZZX": {
+          "S.ZX": "1"
+        },
+        "ZZY": {
+          "S.ZY": "1"
+        },
+        "ZZZ": {
+          "S.ZZ": "1"
+        }
+      }
+    },
+    {
+      "stage": 18,
+      "operation": "SourceI",
+      "wires_in_original_order": [
+        2,
+        0,
+        1
+      ],
+      "local_Hermitian_basis_size": 64,
+      "post_work_pullback": {
+        "III": {
+          "I": "1"
+        },
+        "IIX": {
+          "S.IX": "1"
+        },
+        "IIY": {
+          "S.IY": "1"
+        },
+        "IIZ": {
+          "S.IZ": "1"
+        },
+        "IXI": {
+          "S.XI": "1"
+        },
+        "IXX": {
+          "S.XX": "1"
+        },
+        "IXY": {
+          "S.XY": "1"
+        },
+        "IXZ": {
+          "S.XZ": "1"
+        },
+        "IYI": {
+          "S.YI": "1"
+        },
+        "IYX": {
+          "S.YX": "1"
+        },
+        "IYY": {
+          "S.YY": "1"
+        },
+        "IYZ": {
+          "S.YZ": "1"
+        },
+        "IZI": {
+          "S.ZI": "1"
+        },
+        "IZX": {
+          "S.ZX": "1"
+        },
+        "IZY": {
+          "S.ZY": "1"
+        },
+        "IZZ": {
+          "S.ZZ": "1"
+        },
+        "XII": {},
+        "XIX": {},
+        "XIY": {},
+        "XIZ": {},
+        "XXI": {},
+        "XXX": {},
+        "XXY": {},
+        "XXZ": {},
+        "XYI": {},
+        "XYX": {},
+        "XYY": {},
+        "XYZ": {},
+        "XZI": {},
+        "XZX": {},
+        "XZY": {},
+        "XZZ": {},
+        "YII": {},
+        "YIX": {},
+        "YIY": {},
+        "YIZ": {},
+        "YXI": {},
+        "YXX": {},
+        "YXY": {},
+        "YXZ": {},
+        "YYI": {},
+        "YYX": {},
+        "YYY": {},
+        "YYZ": {},
+        "YZI": {},
+        "YZX": {},
+        "YZY": {},
+        "YZZ": {},
+        "ZII": {
+          "I": "1"
+        },
+        "ZIX": {
+          "S.IX": "1"
+        },
+        "ZIY": {
+          "S.IY": "1"
+        },
+        "ZIZ": {
+          "S.IZ": "1"
+        },
+        "ZXI": {
+          "S.XI": "1"
+        },
+        "ZXX": {
+          "S.XX": "1"
+        },
+        "ZXY": {
+          "S.XY": "1"
+        },
+        "ZXZ": {
+          "S.XZ": "1"
+        },
+        "ZYI": {
+          "S.YI": "1"
+        },
+        "ZYX": {
+          "S.YX": "1"
+        },
+        "ZYY": {
+          "S.YY": "1"
+        },
+        "ZYZ": {
+          "S.YZ": "1"
+        },
+        "ZZI": {
+          "S.ZI": "1"
+        },
+        "ZZX": {
+          "S.ZX": "1"
+        },
+        "ZZY": {
+          "S.ZY": "1"
+        },
+        "ZZZ": {
+          "S.ZZ": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "III": {
+          "I": "1"
+        },
+        "IIX": {
+          "S.IX": "1"
+        },
+        "IIY": {
+          "S.IY": "1"
+        },
+        "IIZ": {
+          "S.IZ": "1"
+        },
+        "IXI": {
+          "S.XI": "1"
+        },
+        "IXX": {
+          "S.XX": "1"
+        },
+        "IXY": {
+          "S.XY": "1"
+        },
+        "IXZ": {
+          "S.XZ": "1"
+        },
+        "IYI": {
+          "S.YI": "1"
+        },
+        "IYX": {
+          "S.YX": "1"
+        },
+        "IYY": {
+          "S.YY": "1"
+        },
+        "IYZ": {
+          "S.YZ": "1"
+        },
+        "IZI": {
+          "S.ZI": "1"
+        },
+        "IZX": {
+          "S.ZX": "1"
+        },
+        "IZY": {
+          "S.ZY": "1"
+        },
+        "IZZ": {
+          "S.ZZ": "1"
+        },
+        "XII": {},
+        "XIX": {},
+        "XIY": {},
+        "XIZ": {},
+        "XXI": {},
+        "XXX": {},
+        "XXY": {},
+        "XXZ": {},
+        "XYI": {},
+        "XYX": {},
+        "XYY": {},
+        "XYZ": {},
+        "XZI": {},
+        "XZX": {},
+        "XZY": {},
+        "XZZ": {},
+        "YII": {},
+        "YIX": {},
+        "YIY": {},
+        "YIZ": {},
+        "YXI": {},
+        "YXX": {},
+        "YXY": {},
+        "YXZ": {},
+        "YYI": {},
+        "YYX": {},
+        "YYY": {},
+        "YYZ": {},
+        "YZI": {},
+        "YZX": {},
+        "YZY": {},
+        "YZZ": {},
+        "ZII": {
+          "I": "1"
+        },
+        "ZIX": {
+          "S.IX": "1"
+        },
+        "ZIY": {
+          "S.IY": "1"
+        },
+        "ZIZ": {
+          "S.IZ": "1"
+        },
+        "ZXI": {
+          "S.XI": "1"
+        },
+        "ZXX": {
+          "S.XX": "1"
+        },
+        "ZXY": {
+          "S.XY": "1"
+        },
+        "ZXZ": {
+          "S.XZ": "1"
+        },
+        "ZYI": {
+          "S.YI": "1"
+        },
+        "ZYX": {
+          "S.YX": "1"
+        },
+        "ZYY": {
+          "S.YY": "1"
+        },
+        "ZYZ": {
+          "S.YZ": "1"
+        },
+        "ZZI": {
+          "S.ZI": "1"
+        },
+        "ZZX": {
+          "S.ZX": "1"
+        },
+        "ZZY": {
+          "S.ZY": "1"
+        },
+        "ZZZ": {
+          "S.ZZ": "1"
+        }
+      }
+    },
+    {
+      "stage": 19,
+      "operation": "CX",
+      "wires_in_original_order": [
+        2,
+        7
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "P.X": "1"
+        },
+        "IY": {
+          "P.Y": "1"
+        },
+        "IZ": {
+          "P.Z": "1"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "1"
+        },
+        "ZX": {
+          "P.X": "1"
+        },
+        "ZY": {
+          "P.Y": "1"
+        },
+        "ZZ": {
+          "P.Z": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "P.X": "1"
+        },
+        "IY": {
+          "P.Y": "1"
+        },
+        "IZ": {
+          "P.Z": "1"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "1"
+        },
+        "ZX": {
+          "P.X": "1"
+        },
+        "ZY": {
+          "P.Y": "1"
+        },
+        "ZZ": {
+          "P.Z": "1"
+        }
+      }
+    },
+    {
+      "stage": 20,
+      "operation": "CX",
+      "wires_in_original_order": [
+        7,
+        2
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "P.Z": "1"
+        },
+        "XI": {},
+        "XX": {
+          "P.X": "1"
+        },
+        "XY": {
+          "P.Y": "1"
+        },
+        "XZ": {},
+        "YI": {},
+        "YX": {
+          "P.Y": "1"
+        },
+        "YY": {
+          "P.X": "-1"
+        },
+        "YZ": {},
+        "ZI": {
+          "P.Z": "1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "I": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "I": "1"
+        },
+        "XI": {
+          "P.X": "1"
+        },
+        "XX": {},
+        "XY": {},
+        "XZ": {
+          "P.X": "1"
+        },
+        "YI": {
+          "P.Y": "1"
+        },
+        "YX": {},
+        "YY": {},
+        "YZ": {
+          "P.Y": "1"
+        },
+        "ZI": {
+          "P.Z": "1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "P.Z": "1"
+        }
+      }
+    },
+    {
+      "stage": 21,
+      "operation": "CX",
+      "wires_in_original_order": [
+        2,
+        7
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "I": "1"
+        },
+        "XI": {
+          "P.X": "1"
+        },
+        "XX": {},
+        "XY": {},
+        "XZ": {
+          "P.X": "1"
+        },
+        "YI": {
+          "P.Y": "1"
+        },
+        "YX": {},
+        "YY": {},
+        "YZ": {
+          "P.Y": "1"
+        },
+        "ZI": {
+          "P.Z": "1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "P.Z": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero_T_contrast_for_every_common_spectator_state",
+        "reason": "this actual blank prefix acts only on Spin, dirty port and independent C"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "P.Z": "1"
+        },
+        "XI": {},
+        "XX": {
+          "P.X": "1"
+        },
+        "XY": {
+          "P.Y": "1"
+        },
+        "XZ": {},
+        "YI": {},
+        "YX": {
+          "P.Y": "1"
+        },
+        "YY": {
+          "P.X": "-1"
+        },
+        "YZ": {},
+        "ZI": {
+          "P.Z": "1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "I": "1"
+        }
+      }
+    },
+    {
+      "stage": 22,
+      "operation": "CX",
+      "wires_in_original_order": [
+        3,
+        7
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "I": "-1"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "-1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "I": "1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "I": "1"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "-1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "I": "-1"
+        }
+      }
+    },
+    {
+      "stage": 23,
+      "operation": "CX",
+      "wires_in_original_order": [
+        5,
+        7
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "T.Z": "1-2*a^2"
+        },
+        "XI": {},
+        "XX": {
+          "I": "4*a-6*a^3"
+        },
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {
+          "I": "4*a-6*a^3"
+        },
+        "YZ": {},
+        "ZI": {
+          "T.Z": "-1+2*a^2"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "I": "-1"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IZ": "-2+4*a^2",
+        "ZI": "2-4*a^2"
+      },
+      "max_effect_T_source_exact": "-1+2*a^2",
+      "max_effect_T_source_decimal": "0.2360679774997896",
+      "spectral_witness": {
+        "type": "two_nonzero_eigenvalues",
+        "positive_eigenvalue": "p^3",
+        "negative_eigenvalue": "-p^3",
+        "positive_projector": "(delta^2/p^(2k)+delta/p^k)/2, k=3",
+        "verified": "Hermitian idempotence, rank one, and delta Pi_+=p^k Pi_+ exactly"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "I": "-1"
+        },
+        "XI": {
+          "I": "4*a-6*a^3"
+        },
+        "XX": {},
+        "XY": {},
+        "XZ": {
+          "I": "-4*a+6*a^3"
+        },
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "-1+2*a^2"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "T.Z": "1-2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 24,
+      "operation": "CX",
+      "wires_in_original_order": [
+        7,
+        8
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "T.Z": "-5+8*a^2"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1-2*a^2"
+        },
+        "ZX": {
+          "T.Z": "-4*a+6*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IZ": "10-16*a^2",
+        "ZI": "-2+4*a^2",
+        "ZX": "8*a-12*a^3"
+      },
+      "max_effect_T_source_exact": "-1+2*a^2",
+      "max_effect_T_source_decimal": "0.2360679774997896",
+      "spectral_witness": {
+        "type": "two_nonzero_eigenvalues",
+        "positive_eigenvalue": "p^3",
+        "negative_eigenvalue": "-p^3",
+        "positive_projector": "(delta^2/p^(2k)+delta/p^k)/2, k=3",
+        "verified": "Hermitian idempotence, rank one, and delta Pi_+=p^k Pi_+ exactly"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1-2*a^2"
+        },
+        "ZX": {
+          "T.Z": "-4*a+6*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "T.Z": "-5+8*a^2"
+        }
+      }
+    },
+    {
+      "stage": 25,
+      "operation": "G",
+      "wires_in_original_order": [
+        8
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "4*a-6*a^3",
+          "T.Z": "16*a-26*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "4-8*a^2",
+          "T.Z": "21-34*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "X": "-32*a+52*a^3",
+        "Z": "-42+68*a^2"
+      },
+      "max_effect_T_source_exact": "5-8*a^2",
+      "max_effect_T_source_decimal": "0.05572809000084167",
+      "spectral_witness": {
+        "type": "two_nonzero_eigenvalues",
+        "positive_eigenvalue": "p^6",
+        "negative_eigenvalue": "-p^6",
+        "positive_projector": "(delta^2/p^(2k)+delta/p^k)/2, k=6",
+        "verified": "Hermitian idempotence, rank one, and delta Pi_+=p^k Pi_+ exactly"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "T.Z": "-5+8*a^2"
+        }
+      }
+    },
+    {
+      "stage": 26,
+      "operation": "CX",
+      "wires_in_original_order": [
+        7,
+        8
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "16*a-26*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "5-8*a^2",
+          "T.Z": "20-32*a^2"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1-2*a^2"
+        },
+        "ZX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "16*a-26*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "4-8*a^2",
+          "T.Z": "21-34*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IX": "-32*a+52*a^3",
+        "IZ": "-40+64*a^2",
+        "ZI": "-2+4*a^2",
+        "ZX": "-32*a+52*a^3",
+        "ZZ": "-42+68*a^2"
+      },
+      "max_effect_T_source_exact": "-1+2*a^2",
+      "max_effect_T_source_decimal": "0.2360679774997896",
+      "spectral_witness": {
+        "type": "two_nonzero_eigenvalues",
+        "positive_eigenvalue": "p^3",
+        "negative_eigenvalue": "-p^3",
+        "positive_projector": "(delta^2/p^(2k)+delta/p^k)/2, k=3",
+        "verified": "Hermitian idempotence, rank one, and delta Pi_+=p^k Pi_+ exactly"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "16*a-26*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "4-8*a^2",
+          "T.Z": "21-34*a^2"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1-2*a^2"
+        },
+        "ZX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "16*a-26*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "5-8*a^2",
+          "T.Z": "20-32*a^2"
+        }
+      }
+    },
+    {
+      "stage": 27,
+      "operation": "CX",
+      "wires_in_original_order": [
+        4,
+        5
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {},
+        "XX": {
+          "T.X": "2*a^3"
+        },
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {
+          "T.Y": "2*a^3"
+        },
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "T.Z": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "ZI": "-2",
+        "ZZ": "2-4*a^2"
+      },
+      "max_effect_T_source_exact": "1",
+      "max_effect_T_source_decimal": "1",
+      "spectral_witness": {
+        "type": "orthogonal_T_sectors",
+        "positive_projector": "P(T=1) on the operation support",
+        "positivity_proof": "two genuine partial states on orthogonal T sectors"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "T.Z": "-1+2*a^2"
+        },
+        "XI": {
+          "T.X": "2*a^3"
+        },
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {
+          "T.Y": "2*a^3"
+        },
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 28,
+      "operation": "CX",
+      "wires_in_original_order": [
+        5,
+        9
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "5-8*a^2"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "-1+2*a^2"
+        },
+        "ZX": {
+          "I": "4*a-6*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "-1+2*a^2"
+        },
+        "ZX": {
+          "I": "4*a-6*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "5-8*a^2"
+        }
+      }
+    },
+    {
+      "stage": 29,
+      "operation": "G",
+      "wires_in_original_order": [
+        9
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "-12*a+20*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "-17+26*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "5-8*a^2"
+        }
+      }
+    },
+    {
+      "stage": 30,
+      "operation": "CX",
+      "wires_in_original_order": [
+        5,
+        9
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "-12*a+20*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-15+24*a^2"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "-1+2*a^2"
+        },
+        "ZX": {
+          "I": "-12*a+20*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "-17+26*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {},
+      "max_effect_T_source_exact": "0",
+      "max_effect_T_source_decimal": "0",
+      "spectral_witness": {
+        "type": "zero",
+        "positive_projector": "0"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "-12*a+20*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-17+26*a^2"
+        },
+        "XI": {},
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "I": "-1+2*a^2"
+        },
+        "ZX": {
+          "I": "-12*a+20*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "-15+24*a^2"
+        }
+      }
+    },
+    {
+      "stage": 31,
+      "operation": "CX",
+      "wires_in_original_order": [
+        4,
+        5
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "T.Z": "-1+2*a^2"
+        },
+        "XI": {
+          "T.X": "4*a-6*a^3"
+        },
+        "XX": {},
+        "XY": {},
+        "XZ": {},
+        "YI": {
+          "T.Y": "4*a-6*a^3"
+        },
+        "YX": {},
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IZ": "2-4*a^2",
+        "ZI": "-2"
+      },
+      "max_effect_T_source_exact": "1",
+      "max_effect_T_source_decimal": "1",
+      "spectral_witness": {
+        "type": "orthogonal_T_sectors",
+        "positive_projector": "P(T=1) on the operation support",
+        "positivity_proof": "two genuine partial states on orthogonal T sectors"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {},
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {},
+        "XX": {
+          "T.X": "4*a-6*a^3"
+        },
+        "XY": {},
+        "XZ": {},
+        "YI": {},
+        "YX": {
+          "T.Y": "4*a-6*a^3"
+        },
+        "YY": {},
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {},
+        "ZY": {},
+        "ZZ": {
+          "T.Z": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 32,
+      "operation": "CX",
+      "wires_in_original_order": [
+        4,
+        10
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "T.Z": "-1+2*a^2"
+        },
+        "XI": {
+          "T.X": "20-32*a^2"
+        },
+        "XX": {
+          "T.X": "4*a-6*a^3"
+        },
+        "XY": {
+          "T.Y": "-16*a+26*a^3"
+        },
+        "XZ": {},
+        "YI": {
+          "T.Y": "20-32*a^2"
+        },
+        "YX": {
+          "T.Y": "4*a-6*a^3"
+        },
+        "YY": {
+          "T.X": "16*a-26*a^3"
+        },
+        "YZ": {},
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {
+          "T.Z": "2*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "-1+2*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IZ": "2-4*a^2",
+        "ZI": "-2",
+        "ZX": "-4*a^3"
+      },
+      "max_effect_T_source_exact": "1",
+      "max_effect_T_source_decimal": "1",
+      "spectral_witness": {
+        "type": "orthogonal_T_sectors",
+        "positive_projector": "P(T=1) on the operation support",
+        "positivity_proof": "two genuine partial states on orthogonal T sectors"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "2*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "-1+2*a^2"
+        },
+        "XI": {
+          "T.X": "4*a-6*a^3"
+        },
+        "XX": {
+          "T.X": "20-32*a^2"
+        },
+        "XY": {},
+        "XZ": {
+          "T.X": "-16*a+26*a^3"
+        },
+        "YI": {
+          "T.Y": "4*a-6*a^3"
+        },
+        "YX": {
+          "T.Y": "20-32*a^2"
+        },
+        "YY": {},
+        "YZ": {
+          "T.Y": "-16*a+26*a^3"
+        },
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {
+          "T.Z": "2*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "T.Z": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 33,
+      "operation": "G",
+      "wires_in_original_order": [
+        10
+      ],
+      "local_Hermitian_basis_size": 4,
+      "post_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "4*a-6*a^3",
+          "T.Z": "4*a-6*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "I": "4-8*a^2",
+          "T.Z": "5-8*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "X": "-8*a+12*a^3",
+        "Z": "-10+16*a^2"
+      },
+      "max_effect_T_source_exact": "-1+2*a^2",
+      "max_effect_T_source_decimal": "0.2360679774997896",
+      "spectral_witness": {
+        "type": "two_nonzero_eigenvalues",
+        "positive_eigenvalue": "p^3",
+        "negative_eigenvalue": "-p^3",
+        "positive_projector": "(delta^2/p^(2k)+delta/p^k)/2, k=3",
+        "verified": "Hermitian idempotence, rank one, and delta Pi_+=p^k Pi_+ exactly"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "I": {
+          "I": "1"
+        },
+        "X": {
+          "I": "2*a^3"
+        },
+        "Y": {},
+        "Z": {
+          "T.Z": "-1+2*a^2"
+        }
+      }
+    },
+    {
+      "stage": 34,
+      "operation": "CX",
+      "wires_in_original_order": [
+        4,
+        10
+      ],
+      "local_Hermitian_basis_size": 16,
+      "post_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "4*a-6*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "5-8*a^2",
+          "T.Z": "4-8*a^2"
+        },
+        "XI": {
+          "T.X": "-16*a+26*a^3"
+        },
+        "XX": {
+          "T.X": "20-32*a^2"
+        },
+        "XY": {
+          "T.Y": "-20+32*a^2"
+        },
+        "XZ": {
+          "T.X": "-16*a+26*a^3"
+        },
+        "YI": {
+          "T.Y": "-16*a+26*a^3"
+        },
+        "YX": {
+          "T.Y": "20-32*a^2"
+        },
+        "YY": {
+          "T.X": "20-32*a^2"
+        },
+        "YZ": {
+          "T.Y": "-16*a+26*a^3"
+        },
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "4*a-6*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "4-8*a^2",
+          "T.Z": "5-8*a^2"
+        }
+      },
+      "T1_minus_T0_nonzero_Pauli_coefficients": {
+        "IX": "-8*a+12*a^3",
+        "IZ": "-8+16*a^2",
+        "ZI": "-2",
+        "ZX": "-8*a+12*a^3",
+        "ZZ": "-10+16*a^2"
+      },
+      "max_effect_T_source_exact": "1",
+      "max_effect_T_source_decimal": "1",
+      "spectral_witness": {
+        "type": "orthogonal_T_sectors",
+        "positive_projector": "P(T=1) on the operation support",
+        "positivity_proof": "two genuine partial states on orthogonal T sectors"
+      },
+      "positive_ledger_current_tangent_witness": {
+        "arbitrary_tangent_source": 0,
+        "argument": "stage-7 marked charge has already been paid; each other stage is the identity mark and all subsequent maps preserve trace"
+      },
+      "pre_work_pullback": {
+        "II": {
+          "I": "1"
+        },
+        "IX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "4*a-6*a^3"
+        },
+        "IY": {},
+        "IZ": {
+          "I": "4-8*a^2",
+          "T.Z": "5-8*a^2"
+        },
+        "XI": {
+          "T.X": "20-32*a^2"
+        },
+        "XX": {
+          "T.X": "-16*a+26*a^3"
+        },
+        "XY": {
+          "T.Y": "-16*a+26*a^3"
+        },
+        "XZ": {
+          "T.X": "-20+32*a^2"
+        },
+        "YI": {
+          "T.Y": "20-32*a^2"
+        },
+        "YX": {
+          "T.Y": "-16*a+26*a^3"
+        },
+        "YY": {
+          "T.X": "16*a-26*a^3"
+        },
+        "YZ": {
+          "T.Y": "-20+32*a^2"
+        },
+        "ZI": {
+          "T.Z": "1"
+        },
+        "ZX": {
+          "I": "4*a-6*a^3",
+          "T.Z": "4*a-6*a^3"
+        },
+        "ZY": {},
+        "ZZ": {
+          "I": "5-8*a^2",
+          "T.Z": "4-8*a^2"
+        }
+      }
+    }
+  ],
+  "image": {
+    "form": "K_full = B_Spin tensor I_port,T + I_Spin tensor B_port tensor I_T + I_Spin,port tensor A_T",
+    "classical_form": "K_full = B_old + d P(T=1), B_old=B_Spin+B_port+c I",
+    "coherent_exact_dimension": 22,
+    "classical_exact_dimension": 20,
+    "coherent_rank_certificate": {
+      "rank": 22,
+      "prime": 101,
+      "a_mod_prime": 27,
+      "pivots": [
+        {
+          "column": "I",
+          "original_row": 0,
+          "witness": {
+            "stage": 1,
+            "local_Pauli": "I"
+          }
+        },
+        {
+          "column": "S.IX",
+          "original_row": 125,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IIX"
+          }
+        },
+        {
+          "column": "S.IY",
+          "original_row": 126,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IIY"
+          }
+        },
+        {
+          "column": "S.IZ",
+          "original_row": 127,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IIZ"
+          }
+        },
+        {
+          "column": "S.XI",
+          "original_row": 128,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IXI"
+          }
+        },
+        {
+          "column": "S.XX",
+          "original_row": 129,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IXX"
+          }
+        },
+        {
+          "column": "S.XY",
+          "original_row": 130,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IXY"
+          }
+        },
+        {
+          "column": "S.XZ",
+          "original_row": 131,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IXZ"
+          }
+        },
+        {
+          "column": "S.YI",
+          "original_row": 132,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IYI"
+          }
+        },
+        {
+          "column": "S.YX",
+          "original_row": 133,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IYX"
+          }
+        },
+        {
+          "column": "S.YY",
+          "original_row": 134,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IYY"
+          }
+        },
+        {
+          "column": "S.YZ",
+          "original_row": 135,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IYZ"
+          }
+        },
+        {
+          "column": "S.ZI",
+          "original_row": 136,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IZI"
+          }
+        },
+        {
+          "column": "S.ZX",
+          "original_row": 137,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IZX"
+          }
+        },
+        {
+          "column": "S.ZY",
+          "original_row": 138,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IZY"
+          }
+        },
+        {
+          "column": "S.ZZ",
+          "original_row": 139,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IZZ"
+          }
+        },
+        {
+          "column": "P.X",
+          "original_row": 80,
+          "witness": {
+            "stage": 11,
+            "local_Pauli": "XI"
+          }
+        },
+        {
+          "column": "P.Y",
+          "original_row": 82,
+          "witness": {
+            "stage": 11,
+            "local_Pauli": "XY"
+          }
+        },
+        {
+          "column": "P.Z",
+          "original_row": 79,
+          "witness": {
+            "stage": 11,
+            "local_Pauli": "IZ"
+          }
+        },
+        {
+          "column": "T.X",
+          "original_row": 28,
+          "witness": {
+            "stage": 7,
+            "local_Pauli": "XI"
+          }
+        },
+        {
+          "column": "T.Y",
+          "original_row": 30,
+          "witness": {
+            "stage": 7,
+            "local_Pauli": "XY"
+          }
+        },
+        {
+          "column": "T.Z",
+          "original_row": 27,
+          "witness": {
+            "stage": 7,
+            "local_Pauli": "IZ"
+          }
+        }
+      ]
+    },
+    "classical_rank_certificate": {
+      "rank": 20,
+      "prime": 101,
+      "a_mod_prime": 27,
+      "pivots": [
+        {
+          "column": "I",
+          "original_row": 0,
+          "witness": {
+            "stage": 1,
+            "local_Pauli": "I"
+          }
+        },
+        {
+          "column": "S.IX",
+          "original_row": 125,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IIX"
+          }
+        },
+        {
+          "column": "S.IY",
+          "original_row": 126,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IIY"
+          }
+        },
+        {
+          "column": "S.IZ",
+          "original_row": 127,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IIZ"
+          }
+        },
+        {
+          "column": "S.XI",
+          "original_row": 128,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IXI"
+          }
+        },
+        {
+          "column": "S.XX",
+          "original_row": 129,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IXX"
+          }
+        },
+        {
+          "column": "S.XY",
+          "original_row": 130,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IXY"
+          }
+        },
+        {
+          "column": "S.XZ",
+          "original_row": 131,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IXZ"
+          }
+        },
+        {
+          "column": "S.YI",
+          "original_row": 132,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IYI"
+          }
+        },
+        {
+          "column": "S.YX",
+          "original_row": 133,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IYX"
+          }
+        },
+        {
+          "column": "S.YY",
+          "original_row": 134,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IYY"
+          }
+        },
+        {
+          "column": "S.YZ",
+          "original_row": 135,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IYZ"
+          }
+        },
+        {
+          "column": "S.ZI",
+          "original_row": 136,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IZI"
+          }
+        },
+        {
+          "column": "S.ZX",
+          "original_row": 137,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IZX"
+          }
+        },
+        {
+          "column": "S.ZY",
+          "original_row": 138,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IZY"
+          }
+        },
+        {
+          "column": "S.ZZ",
+          "original_row": 139,
+          "witness": {
+            "stage": 14,
+            "local_Pauli": "IZZ"
+          }
+        },
+        {
+          "column": "P.X",
+          "original_row": 80,
+          "witness": {
+            "stage": 11,
+            "local_Pauli": "XI"
+          }
+        },
+        {
+          "column": "P.Y",
+          "original_row": 82,
+          "witness": {
+            "stage": 11,
+            "local_Pauli": "XY"
+          }
+        },
+        {
+          "column": "P.Z",
+          "original_row": 79,
+          "witness": {
+            "stage": 11,
+            "local_Pauli": "IZ"
+          }
+        },
+        {
+          "column": "T.Z",
+          "original_row": 27,
+          "witness": {
+            "stage": 7,
+            "local_Pauli": "IZ"
+          }
+        }
+      ]
+    },
+    "source": "D E(work)=Tr(B_Spin D rho_Spin)+Tr(B_port D rho_port)+d D pi for fixed marks on the canonical word",
+    "repetition": "repeating the same suffix adds M times each spectator marginal source as well as M d D pi; no 1/M suppression of new work",
+    "moving_marks_or_words": "additional derivatives of the maps, marks and independently varied gate/birth occurrences remain; this fixed-word table does not solve them"
+  },
+  "sharp_effect_budget": {
+    "each_mark_constraint": "0<=W_s<=I independently, no negative price required",
+    "T_source_range": [
+      "-(9-4p)",
+      "9-4p"
+    ],
+    "radius_exact": "9-4*a^2",
+    "radius_decimal": "6.52786404500042",
+    "attainment": "sum the verified positive (or negative) spectral effects in the 34 rows"
+  },
+  "complete_positive_ledgers": [
+    {
+      "lambda": 0,
+      "nonparsed_work_operator": "34 I + 0 P(T=0)",
+      "nonparsed_mean": "34 - 0 pi",
+      "parsed_CQ_mean": "4 + pi",
+      "total_declared_mean": "38 + (1) pi",
+      "pi_source": 1,
+      "nonparsed_current_unitary_tangent_source": 0,
+      "current_work_tangent_proof": "dephased-T commutator through stage 7; isometric birth derivatives; later marks already paid",
+      "local_stage_charge_spectra": "[1,1+lambda] at stage 7; {1} at every other stage"
+    },
+    {
+      "lambda": 1,
+      "nonparsed_work_operator": "34 I + 1 P(T=0)",
+      "nonparsed_mean": "35 - 1 pi",
+      "parsed_CQ_mean": "4 + pi",
+      "total_declared_mean": "39 + (0) pi",
+      "pi_source": 0,
+      "nonparsed_current_unitary_tangent_source": 0,
+      "current_work_tangent_proof": "dephased-T commutator through stage 7; isometric birth derivatives; later marks already paid",
+      "local_stage_charge_spectra": "[1,1+lambda] at stage 7; {1} at every other stage"
+    },
+    {
+      "lambda": 2,
+      "nonparsed_work_operator": "34 I + 2 P(T=0)",
+      "nonparsed_mean": "36 - 2 pi",
+      "parsed_CQ_mean": "4 + pi",
+      "total_declared_mean": "40 + (-1) pi",
+      "pi_source": -1,
+      "nonparsed_current_unitary_tangent_source": 0,
+      "current_work_tangent_proof": "dephased-T commutator through stage 7; isometric birth derivatives; later marks already paid",
+      "local_stage_charge_spectra": "[1,1+lambda] at stage 7; {1} at every other stage"
+    }
+  ],
+  "actual_readout_work_witnesses": [
+    {
+      "stage": 7,
+      "extra_local_mark": "P(D=1)=(II-IZ)/2 on (T,D)",
+      "complete_work_operator": "34 I + p^2 I + p^3 P(T=1)",
+      "old_classical_T_source": "p^3 Dpi",
+      "all_other_stage_marks": "I; the indicated effect is added to the identity mark at stage 7"
+    },
+    {
+      "stage": 7,
+      "extra_local_mark": "P(T=1)=(II-ZI)/2 on (T,D)",
+      "complete_work_operator": "34 I + P(T=1)",
+      "old_classical_T_source": "Dpi",
+      "all_other_stage_marks": "I; the indicated effect is added to the identity mark at stage 7"
+    }
+  ],
+  "spectator_positive_ledgers": [
+    {
+      "marked_stage": 14,
+      "extra_local_mark": "P(Spin0=0) = (III+IZI)/2 on (port,Spin0,Spin1)",
+      "other_stage_marks": "I at all 34 stages, with the displayed projector added at stage 14",
+      "complete_work_operator": "34 I + P(Spin0=0)",
+      "repeated_work_source": "M D Pr(Spin0=0), for M copies with this retained old marginal"
+    },
+    {
+      "marked_stage": 11,
+      "extra_local_mark": "P(port=0) = (II+ZI)/2 on (port,C)",
+      "other_stage_marks": "I at all 34 stages, with the displayed projector added at stage 11",
+      "complete_work_operator": "34 I + P(old dirty port=0)",
+      "repeated_work_source": "M D Pr(old dirty port=0), for M copies with this retained old marginal"
+    }
+  ],
+  "known_terminal_ledger": {
+    "mean_lengths_T0_T1": [
+      "6-a^2",
+      "7-a^2"
+    ],
+    "CQ_entropy_increment_phi": "1+p^2",
+    "full_registered_net": "4+pi",
+    "old_hypothesis_info": "zero incremental information conditional on retained T; its difference from CQ is constant on fixed canonical-noise pi variations",
+    "separation": "all stage marks are additional nonparsed work, so the terminal charge is counted exactly once"
+  },
+  "verification": "pinned native matrices; all 604 local Hermitian basis insertions; exact pre/post pullbacks and reconstruction; all input columns; verified sharp spectral projectors; modular nonzero minors plus exact support upper bounds"
+}
