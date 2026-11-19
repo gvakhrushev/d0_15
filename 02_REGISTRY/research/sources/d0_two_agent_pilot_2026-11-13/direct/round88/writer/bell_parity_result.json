@@ -1,0 +1,21 @@
+{
+  "GR_closed": false,
+  "a88": "Bell parity decoder",
+  "actual_q_below": "2/25",
+  "controlled_quarter_turn_basis_columns": 32,
+  "dirty_query_address_gauge_cases": 6144,
+  "local_work": {
+    "angles_checked": 7,
+    "stages": 11,
+    "sufficient_q_below": "1/(1+phi^5)",
+    "universal_upper_price_slope": 5,
+    "varying_stage_numbers": [
+      4,
+      9,
+      10,
+      11
+    ]
+  },
+  "original_K_reset_on_two_records": true,
+  "pair_herald": "2*p^3"
+}
