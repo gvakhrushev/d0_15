@@ -1,0 +1,68 @@
+{
+  "status": "PASS: all h branches on explicitly guarded logical word; ideal Toffoli conditional",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "old_input_rank_with_dirty_port_spin": 16,
+  "h_success_probability": 0.3819660112501052,
+  "h_failure_probability": 0.6180339887498949,
+  "h_failure_overlap_coefficient_alpha0": 0.24917907811770426,
+  "h_failure_overlap_formula": "alpha0*cos(t)",
+  "h_failure_alpha0_exact": "p*a*(p*a*p^2*(1+f1)+p^4*(p+f1)); f1=a*(2*p^2+p^4)",
+  "h_success_multiplier": 0.3002831060007777,
+  "literal_gate_inventory_excluding_four_Toffoli_factories": {
+    "births": 8,
+    "G": "q+4",
+    "CX": 31,
+    "SourceI": 4,
+    "ideal_Toffoli": 4
+  },
+  "first_success_more_than_one_attempt_compiled": false,
+  "four_Toffoli_factories_and_failures_compiled": false,
+  "separate_known_one_for_Toffoli_factories_available": false,
+  "full_CQ_printing_and_clock_compiled": false,
+  "Book03_Info_or_cost_derived": false,
+  "GR_closed": false,
+  "checks": [
+    {
+      "q": 19,
+      "turn": 2,
+      "t": 0.09217860299861691,
+      "h0_failure_return": 0.24812120327742715,
+      "h0_dummy_report_delta": -0.11009259699183166,
+      "h0_dummy_report_delta_over_unconditional_success_signal": -1.618033988749914,
+      "h0_full_failure_trace_distance": 0.22658939344565546,
+      "h1_success_return_diag": [
+        0.12747314770060308,
+        0.12468240785770887
+      ],
+      "full_rank16_feedback_abs_difference": 0.0
+    },
+    {
+      "q": 66,
+      "turn": 7,
+      "t": -0.010494605751098618,
+      "h0_failure_return": 0.24916535635674447,
+      "h0_dummy_report_delta": 0.01260448571914019,
+      "h0_dummy_report_delta_over_unconditional_success_signal": -1.6180339887493647,
+      "h0_full_failure_trace_distance": 0.025942187320633827,
+      "h1_success_return_diag": [
+        0.1264492568456648,
+        0.12676742930658846
+      ],
+      "full_rank16_feedback_abs_difference": 0.0
+    },
+    {
+      "q": 613,
+      "turn": 65,
+      "t": -0.002272848761208479,
+      "h0_failure_return": 0.24917843450817476,
+      "h0_dummy_report_delta": 0.0027299829401827846,
+      "h0_dummy_report_delta_over_unconditional_success_signal": -1.6180339887708783,
+      "h0_full_failure_trace_distance": 0.005618771783964469,
+      "h1_success_return_diag": [
+        0.12658053408191616,
+        0.1266494428673187
+      ],
+      "full_rank16_feedback_abs_difference": 0.0
+    }
+  ]
+}

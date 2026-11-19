@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Guarded writer и первая попытка h:** `python3 -BO -W error metric/check_guarded_complement_full_branch.py` проверяет обе сохранённые ветви и полный логический RAW; [результат](metric/guarded_complement_full_branch_result.json) и [условия](metric/GUARDED_COMPLEMENT_FULL_BRANCH_RU.md).
+
 **Локальная работа маршрутов:** `python3 -BO -W error metric/check_native_complement_route_work.py` проверяет 1032 вставки, старый вход и точный модульный минор; [результат](metric/native_complement_route_work_result.json) и [условия](metric/NATIVE_COMPLEMENT_ROUTE_WORK_RU.md).
 
 **Записанные Hq и общий SITE:** `python3 -B -W error metric/check_recorded_hq_complete_cq.py` проверяет условную сумму по 6561 категории; `python3 -B -W error metric/check_complemented_actual_hq_report.py` дополнительно проверяет контрпример факторизации общего SITE. [Полная условная CQ-строка](metric/RECORDED_HQ_COMPLETE_CQ_RU.md) · [исправленная область и свидетель](metric/COMPLEMENTED_ACTUAL_HQ_REPORT_RU.md).
