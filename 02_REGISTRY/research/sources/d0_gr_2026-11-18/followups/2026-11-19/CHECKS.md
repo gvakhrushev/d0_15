@@ -249,6 +249,10 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Прямой bootstrap seed:** `python3 -B -W error metric/check_seed_field_bootstrap_secant.py` проверяет полный возврат, обе степени Hodge, секторные интервалы и общий cut; [условия](metric/SEED_FIELD_BOOTSTRAP_SECANT_RU.md).
+
+**Норма программного подъёма:** `python3 -B metric/check_program_input_lift_lower_bound.py` проверяет границы на k⊗RIGHT и две материальные координаты; [результат](metric/program_input_lift_lower_bound_result.json) и [область](metric/PROGRAM_INPUT_LIFT_LOWER_BOUND_RU.md).
+
 **Seed и материальный канал:** `python3 -B -W error metric/check_seed_fourier_channel.py` проверяет 1 048 576 логических столбцов, Fourier BDD и запутанную память; [область результата](metric/SEED_FOURIER_CHANNEL_RU.md).
 
 **Тепло после платного суффикса:** `python3 -B metric/check_secant_padded_heat_raw.py` проверяет малые часы, пространственные корреляции и границы; [результат](metric/secant_padded_heat_raw_result.json) и [условия](metric/SECANT_PADDED_HEAT_RAW_RU.md).

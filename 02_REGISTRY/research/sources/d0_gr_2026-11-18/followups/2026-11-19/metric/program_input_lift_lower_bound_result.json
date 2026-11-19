@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "full_RIGHT_random_traceless_tests": 300,
+  "max_sample_inequality_ratio": 0.518083541531424,
+  "input_effect": "r I + delta P_1",
+  "selector_only_min_trace_norm_for_Dq_one": "2/delta",
+  "one_copy_two_parameter_operator_norm_exact": "2/delta",
+  "m_independent_pure_programs_per_parameter_midpoint_norm": "2 sqrt(m)/delta",
+  "m16_product_program_norm": "8/delta",
+  "mathematical_material_field_trace_lift_lower": "(2/A_star/delta)*sqrt(2B(z)/(1+2(2z-1)^2)), z=r+delta/2",
+  "field_lift_lower_coefficient_before_1_over_delta": 175.53726918963756,
+  "pure_selector_endpoints_two_sided_Dq": 0,
+  "independent_product_outputs_verified_m3": true,
+  "examples": [
+    {
+      "N": 2,
+      "delta": "0.23606797749978969641",
+      "selector_only_lift_lower": "8.4721359549995793928",
+      "fresh_pure_program_product_m16_lift_norm": "33.888543819998317571"
+    },
+    {
+      "N": 8,
+      "delta": "0.013155617496424838956",
+      "selector_only_lift_lower": "152.02631123499284968",
+      "fresh_pure_program_product_m16_lift_norm": "608.10524493997139871"
+    },
+    {
+      "N": 20,
+      "delta": "0.000040856349008447407489",
+      "selector_only_lift_lower": "48952.000081712698017",
+      "fresh_pure_program_product_m16_lift_norm": "195808.00032685079207"
+    },
+    {
+      "N": 40,
+      "delta": "2.7008890848810060051e-9",
+      "selector_only_lift_lower": "740496902.0000000054",
+      "fresh_pure_program_product_m16_lift_norm": "2961987608.0000000216"
+    }
+  ],
+  "continuous_native_program_preparation_admitted_or_paid": false,
+  "other_seed_or_geometry_variations_covered": false,
+  "GR_closed": false
+}
