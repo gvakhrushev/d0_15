@@ -1,0 +1,69 @@
+{
+  "B155_crossing_margin_lower_for_compiled_literal_price": 0.001045547497343697,
+  "B155_source_error_upper": 1.526808922702853e-13,
+  "GR_closed": false,
+  "book_direct_clock_source_and_class_bound": false,
+  "example_fixed_plan_mask_one_six": [
+    [
+      1,
+      39417678700,
+      66264501175
+    ],
+    [
+      2,
+      40641373508,
+      68321637192
+    ],
+    [
+      3,
+      27870064872,
+      46851971198
+    ],
+    [
+      4,
+      43180911409,
+      72590818382
+    ],
+    [
+      5,
+      25330526971,
+      42582790008
+    ],
+    [
+      6,
+      34357132052,
+      57757287907
+    ],
+    [
+      7,
+      25330526971,
+      42582790008
+    ]
+  ],
+  "full_199_bit_convergent_denominator_bit_length": 233,
+  "full_199_bit_program_expanded": false,
+  "info_on_every_new_bank_symbol_lower": [
+    0.14589803375028684,
+    0.5146402528435473
+  ],
+  "old_surprisal_lower_for_any_deterministic_serialization": 5.672765025621061e-10,
+  "per_complete_old_and_B155_path_relative_tariff_error": "1/10000000000",
+  "pinned_source_hashes": {
+    "open/round152/RESULT.json": "eaf0ff8edfa931b7a672b270c813870d26db91b96263506035d79342fc468fb2",
+    "open/round153/check_positive_gain_site_bound.py": "5c5f1257327de26ae0022e683441596858aa90ff77deef45db9583b57ae48d0c",
+    "open/round155/RESULT.json": "fba45d4f8752cfb2a651856cde7b728db96d7c750d912562524394eba6447c36"
+  },
+  "pointer_one_probability": [
+    [
+      0.3819660112501043,
+      0.3819660112501058
+    ],
+    [
+      0.5702129460084224,
+      0.5702129460084523
+    ]
+  ],
+  "raw_A76_moving_probability_l1_upper": 0.0015268089227028524,
+  "round": "B156",
+  "truth_table_example_bank_count": 633080010353
+}
