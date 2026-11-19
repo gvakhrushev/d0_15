@@ -1,0 +1,83 @@
+{
+  "native_secant_full_limit": 9.925077937722004e-07,
+  "verified_m_relative_cold_errors": [
+    [
+      7,
+      1.8227900152599254e-12
+    ],
+    [
+      33,
+      2.1216735535094908e-14
+    ],
+    [
+      903,
+      4.756076491178169e-16
+    ],
+    [
+      2096,
+      5.4393858824937136e-18
+    ]
+  ],
+  "all_old_PORT_Spin_columns": 8,
+  "real_primitives_per_prefix": 22,
+  "even_square_stages": 17,
+  "odd_square_stages": 145,
+  "field_scenes": [
+    {
+      "left": -1,
+      "right": -1,
+      "geometric_face": 0.027864045,
+      "retained_probability": 0.722912360003,
+      "full_RC3_h": 0.340024764845,
+      "honest_square_work_old_PORT_Spin_zero": 46.6119500773,
+      "rigorous_work_interval_hundredths": [
+        4661,
+        4662
+      ]
+    },
+    {
+      "left": -1,
+      "right": 1,
+      "geometric_face": -0.027864045,
+      "retained_probability": 0.277087639997,
+      "full_RC3_h": 0.347274426505,
+      "honest_square_work_old_PORT_Spin_zero": 45.3638931877,
+      "rigorous_work_interval_hundredths": [
+        4536,
+        4537
+      ]
+    },
+    {
+      "left": 1,
+      "right": -1,
+      "geometric_face": -0.027864045,
+      "retained_probability": 0.277087639997,
+      "full_RC3_h": 0.347274426505,
+      "honest_square_work_old_PORT_Spin_zero": 49.7689092065,
+      "rigorous_work_interval_hundredths": [
+        4976,
+        4977
+      ]
+    },
+    {
+      "left": 1,
+      "right": 1,
+      "geometric_face": 0.027864045,
+      "retained_probability": 0.722912360003,
+      "full_RC3_h": 0.340024764845,
+      "honest_square_work_old_PORT_Spin_zero": 51.0335984406,
+      "rigorous_work_interval_hundredths": [
+        5103,
+        5104
+      ]
+    }
+  ],
+  "RC3_contrast_per_old_column": 6.913820456e-09,
+  "RC3_full_rank8_contrast": 5.5310563648e-08,
+  "DeltaJ_per_column_above_2pow": -29,
+  "abs_Delta_thermal_below_2pow": -200,
+  "extra_terminal_delay": 0,
+  "supplied_full_Julia_bank": false,
+  "full_Book_Cost_Info": false,
+  "GR_closed": false
+}
