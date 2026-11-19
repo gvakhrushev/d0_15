@@ -1,0 +1,13 @@
+{
+  "conditional_side_record_mutual_information_nats": "1.7682555142284e-20",
+  "field_tangent_remainder_bound_dimension_independent": true,
+  "full_book_cost_and_GR_closed": false,
+  "native_side_mark_leaves_all_spin_columns": 4,
+  "noncommuting_positive_effect_secant_per_probability": "0.5668279164758077",
+  "status": "PASS",
+  "true_CX_noncommuting_prefix_counter_wrong_probability": "0.472135954999579",
+  "uniform_cost_gradient_range": [
+    "0.561483589527482",
+    "0.578340178784628"
+  ]
+}

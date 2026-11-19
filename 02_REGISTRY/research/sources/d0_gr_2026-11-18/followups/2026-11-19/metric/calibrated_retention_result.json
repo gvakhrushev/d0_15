@@ -1,0 +1,23 @@
+{
+  "binary_tree_leaves": {
+    "1": 2,
+    "2": 4,
+    "3": 8,
+    "4": 16,
+    "5": 32
+  },
+  "clock_growth_per_retention": [
+    "3.416407864998738",
+    "3.416407864998739"
+  ],
+  "optimal_probability": [
+    "0.276393202250021",
+    "0.276393202250022"
+  ],
+  "scope": "global cold optimum at fixed initial label law; exact all-conditional probability tangents; native finite compiler and complete physical cost remain open",
+  "status": "PASS",
+  "valid_reference_mass": [
+    "0.854101966249684",
+    "0.854101966249685"
+  ]
+}
