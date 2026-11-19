@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "one_copy_exact_normalized_channel": "B/(2ap)",
+  "B": "M([J,V (.) V*])",
+  "B_diamond_upper": 2,
+  "A_diamond_upper": 2,
+  "m_copy_diamond_remainder": "[2m(m-1)sin^2(2eps)+sum_{odd k>=3} C(m,k)|sin(4eps)|^(k-1)]/(ap)",
+  "one_copy_source_old_RIGHT_identity_error": 1.830557270143937e-12,
+  "actual_mixed_2copy_error_is_below_analytic_diamond_bound": true,
+  "matched_physical_cut": "same seed old input and complete terminal NC1 CQ output",
+  "full_marked_clock_preparation_gate_prices_included": false,
+  "actual_total_Gamma_and_GR_source_derived": false,
+  "GR_closed": false,
+  "examples": [
+    {
+      "q": 19,
+      "epsilon": 0.09217860299861691,
+      "delta_q": 0.35022992728909225,
+      "m16_diamond_bound": 393.26965402998593,
+      "matrix_unit_max_error": 1.4432899320127035e-14,
+      "two_copy_actual_error_trace": 0.049419650899365654,
+      "two_copy_diamond_bound": 0.2766533252426697
+    },
+    {
+      "q": 66,
+      "epsilon": -0.010494605751098618,
+      "delta_q": -0.040779988208673776,
+      "m16_diamond_bound": 2.4930377025550694,
+      "matrix_unit_max_error": 3.8613556796462944e-13,
+      "two_copy_actual_error_trace": 0.0004989368526437489,
+      "two_copy_diamond_bound": 0.0036263517089118566
+    },
+    {
+      "q": 613,
+      "epsilon": -0.002272848761208479,
+      "delta_q": -0.008834319097561532,
+      "m16_diamond_bound": 0.11573683729604337,
+      "matrix_unit_max_error": 1.2118972492203284e-11,
+      "two_copy_actual_error_trace": 2.9081346465783243e-05,
+      "two_copy_diamond_bound": 0.0001701137929101211
+    }
+  ]
+}
