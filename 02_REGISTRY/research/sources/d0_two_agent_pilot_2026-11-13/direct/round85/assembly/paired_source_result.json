@@ -1,0 +1,55 @@
+{
+  "aggregate_addresses_fixture": 8,
+  "choi_dimension_per_address": 32,
+  "faces_compared": 6,
+  "six_slot_witness": {
+    "link_planes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "integer_trace": 4,
+    "mixed_derivative_with_half_coframes": -0.125
+  },
+  "constant_determinant_cube": {
+    "corners": 64,
+    "coframe_shift": 0.03125,
+    "mixed_difference": 0.00390625
+  },
+  "reference_numerators": [
+    20,
+    10,
+    10,
+    9,
+    8,
+    8,
+    6,
+    9,
+    5,
+    5
+  ],
+  "matter_direct": -0.101133072,
+  "matter_paired": -0.101133072,
+  "matter_without_correction": -0.047786454,
+  "orthogonal_guard_mixed_difference": 0.39979008,
+  "sharp_generic_geometry_copies": 3,
+  "joint_input": {
+    "choi": 3,
+    "fourier_car": 1
+  },
+  "whole_price_derived": false,
+  "GR_closed": false
+}
