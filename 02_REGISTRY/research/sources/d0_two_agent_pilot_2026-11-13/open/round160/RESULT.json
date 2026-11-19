@@ -1,0 +1,64 @@
+{
+  "GR_closed": false,
+  "cold_retained_RC3": {
+    "Born_CP_return_minus_coherent": [
+      0.003311028391089419,
+      0.013324400825493143
+    ],
+    "Cold_DJ_over_root_rank_z_Dq": [
+      0.045953031309940336,
+      0.11407174189705309
+    ],
+    "H_Range_first_derivative": [
+      -0.11407163637430952,
+      -0.04595298767065662
+    ],
+    "H_Range_overlap": [
+      0.004204667983575678,
+      0.030050638000332593
+    ],
+    "H_Range_second_derivative": [
+      0.1923089973382543,
+      0.24498013106793834
+    ]
+  },
+  "exact_full_column_range_and_derivative_checks": true,
+  "fixed_q_range": [
+    "1/16",
+    "19/50"
+  ],
+  "full_macro_catalogue_physically_closed": false,
+  "full_native_clock_cost_selected": false,
+  "paid_two_copy_record": {
+    "BORN_GAIN_literal_two_copies_derivative_over_Dq": [
+      0.060891697859916306,
+      0.36084126750269824
+    ],
+    "new_report_probability": [
+      0.39672025984384124,
+      0.47167184270002604
+    ],
+    "raw_realized_Info_lower_by_work": {
+      "coherent": 0.5904686752807927,
+      "coherent_sqrt22": 0.5390864012733968,
+      "literal": 0.6043918420325665,
+      "registered": 0.577599605773054,
+      "registered_sqrt22": 0.4787251148400366
+    }
+  },
+  "physical_requirements": [
+    "single computed flag accessible before echo inverse",
+    "one true retained marker after inverse",
+    "fixed passive root and scalar compressed effect",
+    "two paid 0/10 containers with retained copies",
+    "constant z and applicable RC3 graph"
+  ],
+  "pinned_inputs": {
+    "direct/round70/coding/REPEATED_WRITER_RU.md": "d1d096c08db4dceba68eb944a4cc34f2ecba93f80980296b3153fb24bc90ef1e",
+    "direct/round78/clock/BLANK_CONFIRMATION_RU.md": "65e37fff5ff3433139e18ced7c6ceda8b58a0c31e9aab2563e14fb4bdc896a77",
+    "direct/round78/selection/H1_EQUATIONS_RU.md": "8d95e35baa5c0e48c761dc952007fc81b44b5e5dc59f28b8e1efb95cd27c8a98"
+  },
+  "primary_PR334_snapshot": "b75efdf2e4e1cdd3a2cc78106886919bbda72a57",
+  "record_containers": 2,
+  "round": "B160"
+}
