@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Независимые сдвиги общего SITE:** `python3 -B -W error metric/check_independent_shift_shared_site.py` проверяет адреса, условные эффекты, корреляции и нелинейный контраст; [результат](metric/independent_shift_shared_site_result.json) и [предпосылки](metric/INDEPENDENT_SHIFT_SHARED_SITE_RU.md).
+
 **Guarded writer и первая попытка h:** `python3 -BO -W error metric/check_guarded_complement_full_branch.py` проверяет обе сохранённые ветви и полный логический RAW; [результат](metric/guarded_complement_full_branch_result.json) и [условия](metric/GUARDED_COMPLEMENT_FULL_BRANCH_RU.md).
 
 **Локальная работа маршрутов:** `python3 -BO -W error metric/check_native_complement_route_work.py` проверяет 1032 вставки, старый вход и точный модульный минор; [результат](metric/native_complement_route_work_result.json) и [условия](metric/NATIVE_COMPLEMENT_ROUTE_WORK_RU.md).
