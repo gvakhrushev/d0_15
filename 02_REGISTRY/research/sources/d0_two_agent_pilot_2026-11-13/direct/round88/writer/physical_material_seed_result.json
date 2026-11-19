@@ -1,0 +1,30 @@
+{
+  "GR_closed": false,
+  "N": 8,
+  "exact_SC1_calibration": true,
+  "order_ks_kt": [
+    "00",
+    "01",
+    "10",
+    "11"
+  ],
+  "physical_CW1_cost_proved": false,
+  "quadratures": 8,
+  "same_site_coordinate_source": false,
+  "seed_secant_s_in_Qp": [
+    463,
+    -748
+  ],
+  "seed_secant_t_in_Qp": [
+    289,
+    -468
+  ],
+  "sharp_q_over_2A2": [
+    -1,
+    -2,
+    0,
+    -1
+  ],
+  "sites_per_quadrature": 256,
+  "status": "PASS"
+}
