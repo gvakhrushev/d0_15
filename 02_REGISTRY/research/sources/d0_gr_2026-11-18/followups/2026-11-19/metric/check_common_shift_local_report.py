@@ -101,12 +101,26 @@ def twirl_and_steering():
     # A scalar-in-X but non-scalar-in-P postselected effect can steer Bell X-P.
     pre=np.array([.5,.5]);post=np.array([.75,.25]);trace_norm=float(np.abs(pre-post).sum())
     need(abs(trace_norm-.5)<1e-15,'steering trace distance')
+    # A scalar effect I does not fix the output X state: a QND controlled copy
+    # of X to a fresh environment decoheres |+>_X. K is a full isometry.
+    K=np.array([[1.,0.],[0.,0.],[0.,0.],[0.,1.]])
+    need(np.array_equal(K.T@K,I),'copy instrument has identity effect')
+    plus=np.array([1.,1.])/np.sqrt(2.)
+    rho_in=np.outer(plus,plus);psi_out=K@plus
+    rho_out=np.outer(psi_out,psi_out).reshape(2,2,2,2)
+    rho_x=np.trace(rho_out,axis1=1,axis2=3)
+    need(np.allclose(rho_x,.5*I),'copy instrument dephases X')
+    dephase_norm=float(np.abs(np.linalg.eigvalsh(rho_x-rho_in)).sum())
+    need(abs(dephase_norm-1.)<1e-14,'X full marginal trace norm change')
     return {'site_sector_count':256,'twirled_report_effect_on_P':means[0].tolist(),
       'full_transcript_tau_independent_weight_max_error':float(np.max(np.abs(wm-wm[0]))),
       'tau_dependent_weight_breaks_scalar_SITE':True,
       'non_scalar_P_effect_bell_X_marginal_before':[.5,.5],
       'non_scalar_P_effect_bell_X_marginal_after':[.75,.25],
       'steering_unnormalized_trace_norm_difference':trace_norm,
+      'scalar_effect_copy_QND_X_marginal_before':rho_in.tolist(),
+      'scalar_effect_copy_QND_X_marginal_after':rho_x.tolist(),
+      'scalar_effect_copy_QND_X_marginal_trace_norm_difference':dephase_norm,
       'effects_are_toy_PSD_counterexample_not_physical_hq':True}
 
 

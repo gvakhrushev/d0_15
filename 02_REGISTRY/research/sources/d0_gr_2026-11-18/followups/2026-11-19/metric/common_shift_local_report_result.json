@@ -88,6 +88,27 @@
       0.5,
       0.5
     ],
+    "scalar_effect_copy_QND_X_marginal_after": [
+      [
+        0.4999999999999999,
+        0.0
+      ],
+      [
+        0.0,
+        0.4999999999999999
+      ]
+    ],
+    "scalar_effect_copy_QND_X_marginal_before": [
+      [
+        0.4999999999999999,
+        0.4999999999999999
+      ],
+      [
+        0.4999999999999999,
+        0.4999999999999999
+      ]
+    ],
+    "scalar_effect_copy_QND_X_marginal_trace_norm_difference": 0.9999999999999998,
     "site_sector_count": 256,
     "steering_unnormalized_trace_norm_difference": 0.5,
     "tau_dependent_weight_breaks_scalar_SITE": true,
