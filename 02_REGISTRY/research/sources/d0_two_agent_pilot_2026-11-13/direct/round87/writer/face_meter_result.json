@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "L": 4,
+  "active_global_addresses": 2049,
+  "Choi_normalization_D": 65568,
+  "paid_address_examples": [
+    1,
+    1041
+  ],
+  "visible_pair": [
+    37,
+    33314
+  ],
+  "hidden_reference_dimension": 32,
+  "elementary_XOR_shear_CX": 4,
+  "XOR_controls_and_targets": [
+    15,
+    [
+      0,
+      1,
+      2,
+      9
+    ]
+  ],
+  "positive_G_after_shear": 1,
+  "exhaustive_live_NC1_readers": 17,
+  "quantum_reference_rows_tested_against_identity_anchor": 8192,
+  "normalized_true_face": "nu*s*t",
+  "mixed_response_rectangle_D_times": 0.0151833834924,
+  "two_independent_locally_purified_dephased_inputs_checked": 4,
+  "labelled_addresses_and_inaccessible_reference_give_constant_state_for_all_copies": true,
+  "same_pure_input_returned": false,
+  "full_geometry_supplier_native": false,
+  "GR_closed": false
+}
