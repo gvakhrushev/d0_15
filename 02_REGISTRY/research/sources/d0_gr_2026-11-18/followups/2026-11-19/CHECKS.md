@@ -4,6 +4,10 @@
 
 ~~~sh
 d=02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19
+python3 -B "$d/metric/check_fredkin_guarded_pair.py"
+python3 -B "$d/metric/check_fourier_reference_bdd_synthesis.py"
+python3 -B "$d/metric/check_native_birth_reflection.py"
+python3 -B "$d/metric/check_amplifier_record_source.py"
 python3 -B "$d/metric/check_native_neighbor_phase_oracle.py"
 python3 -B "$d/metric/check_raw_fourier_vacuum_inverse.py"
 python3 -B "$d/metric/check_typed_abort_pair.py"
@@ -113,6 +117,10 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Общее слово для двух ветвей | Все старые входы, три эффекта, запись N и clock с идеальными Toffoli; полный factory-clock не воспроизведён. [Результат](metric/fredkin_guarded_pair_result.json) |
+| Две исходные Fourier128-опоры | Инволюция W, полные CAR-столбцы и Gram; фабричная когерентная дилатация остаётся условием. [Результат](metric/fourier_reference_bdd_synthesis_result.json) |
+| Отражение канонических рождений | Полный оператор на тестовых размерах, очиcтка scratch и условная фабричная готовность. [Результат](metric/native_birth_reflection_result.json) |
+| Источник флага усилителя | Отдельные архитектуры полного продолжения и первого отказа, чувствительность к raw-готовности. [Результат](metric/amplifier_record_source_result.json) |
 | Фазовый оракул адреса | Полное логическое слово на всех парах адресов, пяти смещениях и полном SourceI/Spin. [Результат](metric/native_neighbor_phase_oracle_result.json) |
 | Исходный Fourier-вакуум и обратная буква | Декодер частот, полный target/port/Spin и условная цена одного профиля без воспроизведения фабрик. [Результат](metric/raw_fourier_vacuum_inverse_result.json) |
 | Ранний останов пары | Три prefix-free исхода, полный математический инструмент и аналитическое сравнение двух заданных clock-программ. [Результат](metric/typed_abort_pair_result.json) |

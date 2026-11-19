@@ -1,0 +1,42 @@
+{
+  "basis_words": 124,
+  "examples": [
+    {
+      "CX": 82,
+      "G": 38,
+      "SourceI": 2,
+      "conditional_success": "[0.99999028620897389285259448850837303140300182422730740051642642215, 0.99999028620897389285259448850837303140300182422730740051644625801]",
+      "extra_zero_wires": 18,
+      "marked_toffoli": 36,
+      "n": 19,
+      "scratch_preparation_CX": 36,
+      "scratch_preparation_G": 18
+    },
+    {
+      "CX": 94,
+      "G": 44,
+      "SourceI": 2,
+      "conditional_success": "[0.99998866798132337265859041350593692038855899240742765298640624982, 0.99998866798132337265859041350593692038855899240742765298642935277]",
+      "extra_zero_wires": 21,
+      "marked_toffoli": 42,
+      "n": 22,
+      "scratch_preparation_CX": 42,
+      "scratch_preparation_G": 21
+    }
+  ],
+  "full_raw_source_flags_and_physical_birth_schedule_compiled": false,
+  "logical_counts_include_shared_known_one_precondition": true,
+  "max_dense_error_by_n": {
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 1e-15,
+    "6": 1e-15
+  },
+  "oldRIGHT_and_descriptor": "identity factor; control h=1 independently heralded",
+  "operation": "I - 2 |v>^n <v|^n on the fresh n-wire carrier",
+  "status": "PASS",
+  "success_and_failure_histories_physically_priced": false,
+  "total_Book03_and_GR_closed": false,
+  "zero_reflection_requires_clean_scratch": true
+}
