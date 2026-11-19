@@ -11,6 +11,10 @@ def need(x,msg):
     if not x: raise AssertionError(msg)
 
 
+def mm(A,B):
+    return np.einsum('ik,kj->ij',A,B,optimize=False)
+
+
 def clock(isometries):
     dims=[isometries[0].shape[1]]+[v.shape[0] for v in isometries]
     offsets=np.cumsum([0]+dims);D=sum(dims)
@@ -23,17 +27,17 @@ def clock(isometries):
     blocks=[]
     q=np.eye(dims[0])
     for t,V in enumerate(isometries):
-        q=V@q
+        q=mm(V,q)
     blocks.append((q,0,np.eye(dims[0])))
     for t,V in enumerate(isometries):
         full=np.linalg.svd(V.T,full_matrices=True)[2].T
         K=full[:,V.shape[1]:]
         if K.shape[1]==0:continue
         q=K
-        for W in isometries[t+1:]:q=W@q
+        for W in isometries[t+1:]:q=mm(W,q)
         blocks.append((q,t+1,K))
     for q,target,K in blocks:
-        T[offsets[target]:offsets[target+1],offsets[-2]:offsets[-1]]+=K@q.T
+        T[offsets[target]:offsets[target+1],offsets[-2]:offsets[-1]]+=mm(K,q.T)
     need(np.max(np.abs(np.einsum('ki,kj->ij',T,T,optimize=False)-np.eye(D)))<1e-12,'clock isometry')
     need(np.max(np.abs(np.einsum('ik,jk->ij',T,T,optimize=False)-np.eye(D)))<1e-12,'clock coisometry')
     return T,dims
@@ -77,16 +81,16 @@ def main():
     instrument=np.vstack([c*I8,-s*CZ8])
     after=np.block([[I8,np.zeros((8,8))],[np.zeros((8,8)),np.kron(CNOT,np.eye(2))]])
     stages=[B,CNOT,NG,CNOT,record,instrument,after]
-    need(all(np.max(np.abs(V.T@V-np.eye(V.shape[1])))<1e-12 for V in stages),'all stage isometries')
+    need(all(np.max(np.abs(mm(V.T,V)-np.eye(V.shape[1])))<1e-12 for V in stages),'all stage isometries')
     T,dims=clock(stages)
     # Passive cut replaces each physical square op by identity, while retaining
     # the same birth and a blank outcome flag for this demonstration.
     V=np.eye(2);E=np.eye(2)
     for i,stage in enumerate(stages):
-        V=stage@V
+        V=mm(stage,V)
         passive = B if i==0 else (blank if i==4 else (np.vstack([I8,np.zeros((8,8))]) if i==5 else np.eye(stage.shape[0])))
-        E=passive@E
-    C=E.T@V;F=np.eye(2)-C.T@C
+        E=mm(passive,E)
+    C=mm(E.T,V);F=np.eye(2)-mm(C.T,C)
     lam=np.linalg.eigvalsh(F);z=2**-20
     need(lam.min()>-1e-12 and lam.max()<1+1e-12,'full feedback positive contraction')
     J=-np.linalg.slogdet(np.eye(2)-z*F)[1]
