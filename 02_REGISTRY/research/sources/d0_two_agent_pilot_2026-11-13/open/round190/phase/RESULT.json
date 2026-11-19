@@ -1,0 +1,14 @@
+{
+  "exact_ring": "Z[a], a^4+a^2=1",
+  "actual_A89_pulse_steps": 2320,
+  "literal_two_CX_H_and_final_G": true,
+  "both_A90_central_signs": true,
+  "both_retained_H_records_fair": true,
+  "conditional_r0_reproduces_untagged": true,
+  "two_arm_positive_mass_even": true,
+  "all_tagged_A89_amplitude_secants_zero": true,
+  "untagged_A89_first_sign": "negative",
+  "untagged_A89_second_sign": "positive",
+  "Book03_micro_weights_identified": false,
+  "GR_closed": false
+}

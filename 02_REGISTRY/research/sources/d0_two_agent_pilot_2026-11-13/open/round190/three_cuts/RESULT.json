@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "one_ancillary_lcu": {
+    "common_coefficient_denominator": 2,
+    "coherent_label_bits": 3,
+    "M_terms_per_lookup": [
+      6
+    ],
+    "logical_Kraus_scale": "a^3 * 2/8",
+    "old_CAR_columns_each_SITE": 1
+  },
+  "one_ancillary_ideal_success": "p^3/16",
+  "old_Born_marginal_identical_on_each_cut": true,
+  "cosine_refinement_factor": "a^-n",
+  "odd_angular_coefficients": [
+    "a-p",
+    "0",
+    "a-1"
+  ],
+  "Book03_full_Cost_minus_Info_identified": false,
+  "GR_closed": false
+}

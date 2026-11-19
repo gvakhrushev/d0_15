@@ -50,9 +50,14 @@ def clock_and_work():
     delta = contrasts[1] - contrasts[0]
     require(contrasts[0] == p*p and delta == 44*one - 72*p and delta != 0,
             "Wrong first-tick occupancy contrast")
+    cross = 2*a*p
+    positive_v = (a + cross*p, p + cross*a)
+    norm2 = sum(x*x for x in positive_v)
+    require(norm2 == one + 12*p*p*p, "Wrong positive-sector squared norm")
     return {"same_work_input_trace_distance": "p",
             "minimum_history_tag_distance_for_output_error_epsilon": "max(0,p-2 epsilon)",
-            "same_inventory_first_tick_double_difference": "44-72p"}
+            "same_inventory_first_tick_double_difference": "44-72p",
+            "matched_lift_ready_upper_bound_on_v": "1/(1+12p^3)"}
 
 
 def coherent_roles():

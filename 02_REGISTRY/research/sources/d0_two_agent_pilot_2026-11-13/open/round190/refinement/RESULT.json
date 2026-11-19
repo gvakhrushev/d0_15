@@ -1,0 +1,74 @@
+{
+  "native_suffix": {
+    "old_columns_including_dirty_port_and_spin": 32,
+    "fresh_Golden_births": 4,
+    "actual_NC1_record": 1,
+    "native_stages_excluding_births_and_readout": 49,
+    "gate_inventory": {
+      "CX": 27,
+      "SourceI": 12,
+      "G": 10
+    },
+    "G4_cos_coefficients_in_Qa": [
+      9,
+      0,
+      -16,
+      0
+    ],
+    "G4_sin_coefficients_in_Qa": [
+      0,
+      8,
+      0,
+      -12
+    ],
+    "orthogonal_dilation_on_all_old_columns": true
+  },
+  "static_projection": {
+    "exact_lower_bound_a_times_refinement_factor": "66123/62500",
+    "static_fine_Born_masses": [
+      "p",
+      "p^3",
+      "p^4"
+    ],
+    "static_coarse_Born_masses": [
+      "p",
+      "p^2"
+    ],
+    "static_linearly_pushed_amplitude_weights": [
+      "sqrt(p)",
+      "p(sqrt(p)+p)"
+    ],
+    "static_candidate_coarse_Born_probability_of_second_branch": "0.54926534322799781",
+    "static_correct_Born_probability_of_second_branch": "0.38196601125010515",
+    "static_positive_pushforward_reverses_MDL_order": true
+  },
+  "A89": {
+    "original_A89_factory_examples": [
+      {
+        "coarse_price_differences": [
+          "-1.6222132944871412e-6",
+          "1.6222132944871412e-6"
+        ],
+        "fine_price_differences": [
+          "3.9268399640644192e-7",
+          "-3.9268399640644192e-7"
+        ]
+      },
+      {
+        "coarse_price_differences": [
+          "-1.6306923157664673e-6",
+          "1.6306923157664673e-6"
+        ],
+        "fine_price_differences": [
+          "3.944772608833664e-7",
+          "-3.944772608833664e-7"
+        ]
+      }
+    ],
+    "conditional_cosine_square_root_multiplier": "1.3473355809779557",
+    "all_coarse_masses_and_early_stops_preserved": true,
+    "two_fine_amplitude_signs_reversed": true
+  },
+  "physical_tariff_or_Info_selected": false,
+  "GR_closed": false
+}

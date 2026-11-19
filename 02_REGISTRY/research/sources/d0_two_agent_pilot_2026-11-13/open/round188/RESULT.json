@@ -3,7 +3,8 @@
   "clock": {
     "same_work_input_trace_distance": "p",
     "minimum_history_tag_distance_for_output_error_epsilon": "max(0,p-2 epsilon)",
-    "same_inventory_first_tick_double_difference": "44-72p"
+    "same_inventory_first_tick_double_difference": "44-72p",
+    "matched_lift_ready_upper_bound_on_v": "1/(1+12p^3)"
   },
   "coherent_preparation": {
     "native_bright_port_weights_I": [

@@ -1,0 +1,10 @@
+{
+  "quadratic_mass_recovered": "11/20",
+  "launch_confounds_are_not_identified": true,
+  "strict_sign_for_all_nu_in_(0,1]": true,
+  "checked_fine_categories_at_nu_1": 6561,
+  "display_fine_expectation_difference_at_nu_1": "7.76282699871e-08",
+  "shared_site_second_moment": "1/2",
+  "original_physical_Book_binding_proved": false,
+  "GR_closed": false
+}
