@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+    "04_CERTIFICATES/order_memory_control_verify.py": "bb72fe40326dc2d65d55f4f6d73564b7faef8f247774bf51771e3110f04e0c1a",
+    "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/check_book03_identity_pair.py": "78f94decaf1ed6c54201e1e83032b9311ac708c077b79065398422c1141b66f9"
+  },
+  "B121_occupied_test": {
+    "occupied_spin_dimension": 4,
+    "clock_address_collision": [
+      1,
+      17
+    ],
+    "gram_before": "p I4",
+    "gram_after": "sqrt(p) I4",
+    "canonical_fibre_prefix_error_lower_bound": "2 sin((acos(p)-acos(sqrt(p)))/6)",
+    "canonical_fibre_prefix_error_lower_bound_approx": "0.07941826778962102",
+    "clean_unchanged_lap_tags_must_be_orthogonal": true,
+    "changed_lap_tags_squared_overlap_ratio": "p (output / input)",
+    "literal_reload_port_one_probability": "p^2",
+    "required_port_one_probability": "0"
+  },
+  "original_X_Y_marked_cycle": {
+    "executed_stages_before_terminal": 15,
+    "formal_idle_wrap_stage": 16,
+    "marked_trace_of_W_power_16": [
+      "128",
+      "128 p^3"
+    ],
+    "marked_monodromy_characteristic_polynomials": [
+      "(lambda-1)^12 (lambda+1)^4",
+      "(lambda-1)^4 (lambda+1)^4 (lambda^2-2 p^3 lambda+1)^4"
+    ]
+  },
+  "absolute_book_preparation_response_determined_by_exchange": false,
+  "GR_closed": false
+}
