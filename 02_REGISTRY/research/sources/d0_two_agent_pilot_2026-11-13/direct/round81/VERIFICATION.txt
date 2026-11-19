@@ -1,0 +1,27 @@
+Git snapshot 928ddeda18ab587e7df7b0a5dcb7f963265d10d1, 40 committed files
+UPSTREAM  owner_eight_readers at 04931a7a26a9741bba0584c8e1413613ff7a28d5
+UPSTREAM  owner_local_gibbs_records at 68b1074b376952c729018ace1aef21e124d1d9ae
+UPSTREAM  owner_live_gain_tree at 77821350ae32ad4a82aca5f853bfb0e193e9c144
+UPSTREAM  owner_paid_tail_audit at 68b1074b376952c729018ace1aef21e124d1d9ae
+UPSTREAM  owner_silent_nc1 at 68b1074b376952c729018ace1aef21e124d1d9ae
+PASS  field_source_of_the_maximum_complete_history
+PASS  thermal_maxima_of_a_single_field_experiment
+PASS  positive_class_of_the_native_field_law
+PASS  return_weights_with_hidden_memory
+PASS  actual_field_independent_modal_eight_prefix
+PASS  dominant_paid_b_cycle_with_all_service_histories
+PASS  separate_field_variations_at_each_cycle
+PASS  full_native_raw_entropy_with_paid_preparation
+PASS  absolute_golden_reference_of_three_native_cycles
+
+Open B166 published receipts (byte-for-byte)
+PASS DETECTOR_AXES_RESULT b1b8a209ccbd0e4d6f0f05cce08b17ae57047695 sha256 f2308204db4cd253bf1d85e44dc2f6fcc6161396e84d24e33adcf4252619c39a
+PASS REFLECTION_RESULT b1b8a209ccbd0e4d6f0f05cce08b17ae57047695 sha256 eaff36993ff92cd56fdcc765b41eeb529c95a8727b4152f4e172a7e147d2b72d
+
+A80 regression: 11 research checks passed, 7 upstream receipts matched.
+claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918
+PASS warnings=0
+PASS work_validation: active work plane clean and enforced
+PASS agent_protocol: cold-start task metadata enforced
+{"active_result_limit": 54, "active_results": 54, "discharged": 5, "obligations": 22, "results": 98, "scientific_promotion": false, "valid": true}
+GR_closed=false
