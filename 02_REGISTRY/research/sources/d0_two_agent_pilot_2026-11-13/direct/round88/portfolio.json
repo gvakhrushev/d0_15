@@ -1,0 +1,397 @@
+{
+  "round": "A88",
+  "base_shared": "adedb4ac903ed21ae434f618a81b68ca049fdb7a",
+  "claims_shared": [
+    "9ace069c486bf36720d88e663e5009e339a2d1e6"
+  ],
+  "primary_pr334": "d7782b0138cbd5418d68a825acc3f9ec1afe54a1",
+  "reviewed_pr334": "c6ee5faa6bc0078d78b025499d0724d3add13616",
+  "related_pr334_snapshots": [
+    "892ec030c4d844e6ccda4908d2425cd521f457b4",
+    "c6ee5faa6bc0078d78b025499d0724d3add13616"
+  ],
+  "direct_regression_commit": "adedb4ac903ed21ae434f618a81b68ca049fdb7a",
+  "registry_claim": {
+    "commit": "9ace069c486bf36720d88e663e5009e339a2d1e6",
+    "path": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/README.md",
+    "round": "A88"
+  },
+  "related_open_commits": {
+    "B180": "4919717083db875bacb768951c8d58c28b86101e",
+    "B181": "d0b6a73e9562a6168878b534851f4951f4395857"
+  },
+  "GR_closed": false,
+  "physical_C_closed": false,
+  "primary_passage": {
+    "path": "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "section": "7eh.C.5",
+    "commit": "d7782b0138cbd5418d68a825acc3f9ec1afe54a1",
+    "first_line": 170617,
+    "last_line": 170645,
+    "sha256": "9c6a712327317615376e268e03409d9455a96a7bc702b5fb2f5e6627b339018d"
+  },
+  "primary_git_blobs_on_shared": {
+    "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+    "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py": "9a32a3fa2e594c087d24b9d5dec497c4c5e03f44",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/native_phase.py": "7a00729985493b7615319c51d6b71e865a93d3a1",
+    "01_BOOKS/BOOK_07_GRAVITY_LIMIT_AND_FINITE_GEOMETRY.md": "a5a0d800d906c3cd02713bab42ab80722fd799a8",
+    "02_REGISTRY/research/A4D_FULL_TWO_BAND_FIXED_TEN_SIGN_CAR_CHOI_SOURCE_2026_10_21.md": "562ccfa715ad814faec55f6b0641ee226dda2d88",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/geometric_source/proof.md": "15c7a93949cae297b28f5da0e19ade92e63dfa1f",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/NATIVE_FOUR_COPY_MATTER_RESPONSE.md": "a0a1419e4c733b0cb68b875e276851908088d320",
+    "02_REGISTRY/research/A4D_EXACT_NONVACUUM_GR_MIDPOINT_C2_RECOVERY_2026_10_20.md": "67531a343a0ae707ff0a3830c0e2c9cf2bbc8213",
+    "02_REGISTRY/research/sources/d0_native_gr_completion_synthesis_2026-10-20/book_source/GOLDEN_EXACT_DETECTOR.md": "92b9003d783c24b1883a2a21f8b30625078afff7",
+    "02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md": "d0c488143fbbad22d81486f566de60a79ff8772b",
+    "02_REGISTRY/research/sources/d0_retained_response_concentration_2026-10-28/GROWING_CLOCK_RU.md": "370e8fb572e85fedeebe2e72531c01d5b68b0a91",
+    "02_REGISTRY/research/sources/d0_native_readiness_amplification_2026-10-24/PHASE_COMPILER.md": "e5201a3d061b6155af52080757f0e77c8cd20248"
+  },
+  "upstream_checks": [
+    {
+      "id": "pr334_fresh_guard_reader",
+      "commit": "d7782b0138cbd5418d68a825acc3f9ec1afe54a1",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_fresh_guard_reader.py",
+      "receipt": "fresh_guard_reader_result.json",
+      "files": [
+        "FRESH_GUARD_READER_RU.md",
+        "check_complete_work_source.py",
+        "check_extra_work.py",
+        "check_fresh_guard_reader.py",
+        "check_golden_record_race.py",
+        "check_live_parser.py",
+        "check_source_price.py",
+        "fresh_guard_reader_result.json"
+      ],
+      "verifies": "Both genuine guard branches, old input columns and settled code/CQ versus branch counting.",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ],
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/d7782b0138cbd5418d68a825acc3f9ec1afe54a1/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/FRESH_GUARD_READER_RU.md"
+    },
+    {
+      "id": "pr334_economic_repeat_source",
+      "commit": "d7782b0138cbd5418d68a825acc3f9ec1afe54a1",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_economic_repeat_source.py",
+      "receipt": "economic_repeat_source_result.json",
+      "files": [
+        "COMPLETE_WORK_SOURCE_RU.md",
+        "ECONOMIC_REPEAT_SOURCE_RU.md",
+        "GUARDED_NOISE_RU.md",
+        "LIVE_PARSER_RU.md",
+        "SAME_HISTORY_BINDING_RU.md",
+        "check_economic_repeat_source.py",
+        "check_live_parser.py",
+        "economic_repeat_source_result.json",
+        "live_parser_result.json"
+      ],
+      "verifies": "Test complete positive path mixtures, fresh versus retained truth and independent service variations.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/d7782b0138cbd5418d68a825acc3f9ec1afe54a1/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/ECONOMIC_REPEAT_SOURCE_RU.md"
+    },
+    {
+      "id": "pr334_local_gibbs_records",
+      "commit": "d7782b0138cbd5418d68a825acc3f9ec1afe54a1",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_local_gibbs_records.py",
+      "receipt": "local_gibbs_records_result.json",
+      "files": [
+        "LOCAL_GIBBS_RECORDS_RU.md",
+        "check_boundary_experiment.py",
+        "check_clock_coherence.py",
+        "check_extra_work.py",
+        "check_local_gibbs_records.py",
+        "check_shared_site_union.py",
+        "check_source_price.py",
+        "local_gibbs_records_result.json"
+      ],
+      "verifies": "Physical output heat, all modes, last gate and the common projected scene.",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ],
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/d7782b0138cbd5418d68a825acc3f9ec1afe54a1/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/LOCAL_GIBBS_RECORDS_RU.md"
+    },
+    {
+      "id": "pr334_raw_fourier_vacuum_inverse",
+      "commit": "d7782b0138cbd5418d68a825acc3f9ec1afe54a1",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_raw_fourier_vacuum_inverse.py",
+      "receipt": "raw_fourier_vacuum_inverse_result.json",
+      "files": [
+        "RAW_FOURIER_VACUUM_INVERSE_RU.md",
+        "check_fourier_fresh_localization.py",
+        "check_raw_fourier_vacuum_inverse.py",
+        "raw_fourier_vacuum_inverse_result.json"
+      ],
+      "verifies": "Full Fourier/CAR source and scope of storing versus inverting an unknown input.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/d7782b0138cbd5418d68a825acc3f9ec1afe54a1/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/RAW_FOURIER_VACUUM_INVERSE_RU.md"
+    },
+    {
+      "id": "pr334_guarded_golden_work_binding",
+      "commit": "892ec030c4d844e6ccda4908d2425cd521f457b4",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_guarded_golden_work_binding.py",
+      "receipt": "guarded_golden_work_binding_result.json",
+      "files": [
+        "GUARDED_GOLDEN_WORK_BINDING_RU.md",
+        "check_extra_work.py",
+        "check_golden_record_race.py",
+        "check_guarded_golden_work_binding.py",
+        "check_guarded_live_composition.py",
+        "check_live_parser.py",
+        "check_source_price.py",
+        "guarded_golden_work_binding_result.json",
+        "guarded_live_composition_result.json"
+      ],
+      "verifies": "Same-spectrum local stages on the actual guarded word distinguish independent work sources.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/892ec030c4d844e6ccda4908d2425cd521f457b4/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/GUARDED_GOLDEN_WORK_BINDING_RU.md",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "pr334_two_parameter_fourier_catalogue",
+      "commit": "892ec030c4d844e6ccda4908d2425cd521f457b4",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_two_parameter_fourier_catalogue.py",
+      "receipt": "two_parameter_fourier_catalogue_result.json",
+      "files": [
+        "TWO_PARAMETER_FOURIER_CATALOGUE_RU.md",
+        "check_dyadic_car_loader.py",
+        "check_fourier_fresh_localization.py",
+        "check_native_fourier_uncompute.py",
+        "check_two_parameter_fourier_catalogue.py",
+        "two_parameter_fourier_catalogue_result.json"
+      ],
+      "verifies": "Fixed retained descriptor on the Fourier/CAR material catalogue and its preparation requirements.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/892ec030c4d844e6ccda4908d2425cd521f457b4/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/TWO_PARAMETER_FOURIER_CATALOGUE_RU.md"
+    },
+    {
+      "id": "pr334_native_golden_descriptor_secants",
+      "commit": "c6ee5faa6bc0078d78b025499d0724d3add13616",
+      "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+      "entrypoint": "check_native_golden_descriptor_secants.py",
+      "receipt": "native_golden_descriptor_secants_result.json",
+      "files": [
+        "NATIVE_GOLDEN_DESCRIPTOR_SECANTS_RU.md",
+        "check_native_golden_descriptor_secants.py",
+        "native_golden_descriptor_secants_result.json"
+      ],
+      "verifies": "Two finite Golden descriptor levels and independent registered material secants; no continuous field admission.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/c6ee5faa6bc0078d78b025499d0724d3add13616/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/NATIVE_GOLDEN_DESCRIPTOR_SECANTS_RU.md"
+    },
+    {
+      "id": "A87_protected_future_cost",
+      "commit": "adedb4ac903ed21ae434f618a81b68ca049fdb7a",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/recovery",
+      "entrypoint": "check_future_service.py",
+      "receipt": "future_service_result.json",
+      "files": [
+        "FUTURE_SERVICE_RU.md",
+        "check_future_service.py",
+        "future_service_result.json"
+      ],
+      "verifies": "Protected future tests and their conditioning.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/adedb4ac903ed21ae434f618a81b68ca049fdb7a/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/recovery/FUTURE_SERVICE_RU.md"
+    },
+    {
+      "id": "A87_signed_face_meter",
+      "commit": "adedb4ac903ed21ae434f618a81b68ca049fdb7a",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/writer",
+      "entrypoint": "check_face_meter.py",
+      "receipt": "face_meter_result.json",
+      "files": [
+        "FACE_METER_RU.md",
+        "check_face_meter.py",
+        "face_meter_result.json"
+      ],
+      "verifies": "Native signed face meter.",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round24/TORUS_CHOI_ADDRESSES.jsonl"
+      ],
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/adedb4ac903ed21ae434f618a81b68ca049fdb7a/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/writer/FACE_METER_RU.md"
+    },
+    {
+      "id": "A87_signed_face_clock",
+      "commit": "adedb4ac903ed21ae434f618a81b68ca049fdb7a",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/clock",
+      "entrypoint": "check_signed_face.py",
+      "receipt": "signed_face_result.json",
+      "files": [
+        "SIGNED_FACE_RU.md",
+        "check_signed_face.py",
+        "signed_face_result.json"
+      ],
+      "verifies": "All retained source and thermal stages for the signed face.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/adedb4ac903ed21ae434f618a81b68ca049fdb7a/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/clock/SIGNED_FACE_RU.md"
+    },
+    {
+      "id": "A87_native_dyadic_writer",
+      "commit": "adedb4ac903ed21ae434f618a81b68ca049fdb7a",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/assembly",
+      "entrypoint": "check_dyadic_writer.py",
+      "receipt": "dyadic_writer_result.json",
+      "files": [
+        "DYADIC_WRITER_RU.md",
+        "check_dyadic_writer.py",
+        "dyadic_writer_result.json"
+      ],
+      "verifies": "Actual central finite differences on the dyadic geometric/material chart.",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round85/assembly/check_paired_source.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round86/assembly/check_null_single_choi.py"
+      ],
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/adedb4ac903ed21ae434f618a81b68ca049fdb7a/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/assembly/DYADIC_WRITER_RU.md"
+    },
+    {
+      "id": "A87_julia_approximation",
+      "commit": "adedb4ac903ed21ae434f618a81b68ca049fdb7a",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/clock",
+      "entrypoint": "check_julia_approx.py",
+      "receipt": "julia_approx_result.json",
+      "files": [
+        "JULIA_APPROX_RU.md",
+        "check_julia_approx.py",
+        "julia_approx_result.json"
+      ],
+      "verifies": "Conditional preparation of the approximate full Julia/Fourier input.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/adedb4ac903ed21ae434f618a81b68ca049fdb7a/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/clock/JULIA_APPROX_RU.md"
+    },
+    {
+      "id": "B180_matched_ready_and_fixed_service",
+      "commit": "4919717083db875bacb768951c8d58c28b86101e",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round180",
+      "entrypoint": "check_matched_readiness.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "B180_MATCHED_READY_AND_FIXED_SERVICE_RU.md",
+        "RESULT.json",
+        "check_matched_readiness.py"
+      ],
+      "verifies": "Joint comparison at matched readiness, with residual fixed-service costs.",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round179/RESULT.json"
+      ],
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/4919717083db875bacb768951c8d58c28b86101e/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round180/B180_MATCHED_READY_AND_FIXED_SERVICE_RU.md"
+    },
+    {
+      "id": "B181_fixed_history_signed_price",
+      "commit": "d0b6a73e9562a6168878b534851f4951f4395857",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round181",
+      "entrypoint": "check_fixed_positive_reader.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "B181_FIXED_HISTORY_SIGNED_PRICE_RU.md",
+        "RESULT.json",
+        "check_fixed_positive_reader.py"
+      ],
+      "verifies": "Fixed-history cold return matching and opposite finite expected-price sensitivities for explicitly selected operands.",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round180/RESULT.json"
+      ],
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/d0b6a73e9562a6168878b534851f4951f4395857/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round181/B181_FIXED_HISTORY_SIGNED_PRICE_RU.md"
+    }
+  ],
+  "lanes": [
+    {
+      "id": "A88_returned_predicate",
+      "commit": "cc31033bdce5b9a2f20cb236c41dcb0c674629ff",
+      "check": "direct/round88/writer/check_returned_predicate.py",
+      "stdout_matches": "direct/round88/writer/returned_predicate_result.json",
+      "evidence": {
+        "direct/round88/writer/RETURNED_PREDICATE_RU.md": "500493f06eaf6fa2f3ffe38d7ed7bbdf9864b9cbae77f4e8daf32b24b1804530",
+        "direct/round88/writer/check_returned_predicate.py": "45c35cdfead03f7ee31eae16d526c41e78c7ef2ce10b160f4f37d10506e429a5",
+        "direct/round88/writer/returned_predicate_result.json": "f6567b98e9d4051fa339c3730994e125aa9f399ad6a0a946dcba8cfccbbdfd1e"
+      }
+    },
+    {
+      "id": "A88_returned_register",
+      "commit": "7a071093b474486959d756ff3361bb953be44f12",
+      "check": "direct/round88/clock/check_returned_register.py",
+      "stdout_matches": "direct/round88/clock/returned_register_result.json",
+      "evidence": {
+        "direct/round88/clock/RETURNED_REGISTER_RU.md": "af05af87b7ee82819bda6f254b693122c50e8d81073fc9e361ed5ebc1849c4ab",
+        "direct/round88/clock/check_returned_register.py": "820361301686e89f075dec28de3b7e56fe35314b36b9aeee83817e067f344bf2",
+        "direct/round88/clock/returned_register_result.json": "37b2ba9bec68c9ff2c78fbfe7c9a08f749eb031a012bae641c49e72c01098abb"
+      }
+    },
+    {
+      "id": "A88_toric_return",
+      "commit": "cc895adad007a9ebbcd389640fa01fa986bf1c01",
+      "check": "direct/round88/recovery/check_toric_return.py",
+      "stdout_matches": "direct/round88/recovery/toric_return_result.json",
+      "evidence": {
+        "direct/round88/recovery/TORIC_RETURN_RU.md": "e643bd476ec66d39cd3ba230b0406d1ac01ca749604f5bb1810794e05cc7804d",
+        "direct/round88/recovery/check_toric_return.py": "a849e92cc9f60db8b48382e182d1354e76bd1deb6375ef9264177f0f1769e839",
+        "direct/round88/recovery/toric_return_result.json": "ce3609f4c1ea4f31c525326a01cc966b16f85b1fbb78da3a46811af643fad9e7"
+      }
+    },
+    {
+      "id": "A88_returned_source",
+      "commit": "a64e61fd30d11aa350c071335e7ef5643b312c85",
+      "check": "direct/round88/assembly/check_returned_source.py",
+      "stdout_matches": "direct/round88/assembly/returned_source_result.json",
+      "evidence": {
+        "direct/round88/assembly/RETURNED_SOURCE_RU.md": "4078e0dd9c71729ebe1162700a0f944d9c4f3f822601e31d6e3a2f50c15202a2",
+        "direct/round88/assembly/check_returned_source.py": "8d09bb6877bc01c4e566b55d6e59675baba8ba6927b2ea5981bcfac0d1221ce1",
+        "direct/round88/assembly/returned_source_result.json": "505ed3dbc15188ebba060196cefae0d7670a250a041ec1e5e06f7e512ab71131"
+      }
+    },
+    {
+      "id": "A88_replay_primary_fresh_query",
+      "check": "direct/round88/replay/check_fresh_query_receipt.py",
+      "stdout_matches": "direct/round88/replay/fresh_query_replay_result.json",
+      "evidence": {
+        "direct/round88/replay/check_fresh_query_receipt.py": "334de6498be9ea65cc255386002f42bfd1e2491d034e24fc8a8f7a96abb77b35",
+        "direct/round88/replay/fresh_query_replay_result.json": "e6263f174a7eb22d3a117dd6221ece97eb03d5938b6ce677c821b6593d6fafa0"
+      }
+    }
+  ],
+  "upstream_numerical_diagnostic": {
+    "id": "pr334_fresh_query_economic_source",
+    "commit": "d7782b0138cbd5418d68a825acc3f9ec1afe54a1",
+    "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+    "entrypoint": "check_fresh_query_economic_source.py",
+    "receipt": "fresh_query_economic_source_result.json",
+    "files": [
+      "FRESH_QUERY_ECONOMIC_SOURCE_RU.md",
+      "check_boundary_experiment.py",
+      "check_clock_coherence.py",
+      "check_complete_work_source.py",
+      "check_extra_work.py",
+      "check_fresh_guard_reader.py",
+      "check_fresh_query_economic_source.py",
+      "check_golden_record_race.py",
+      "check_live_parser.py",
+      "check_local_gibbs_records.py",
+      "check_shared_site_union.py",
+      "check_source_price.py",
+      "fresh_query_economic_source_result.json"
+    ],
+    "verifies": "FQ5–FQ7: one absolute partition, genuine output states and the thermal ratio for a specified positive transfer.",
+    "repository_files": [
+      "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+    ],
+    "documentation": "https://github.com/gvakhrushev/d0_15/blob/d7782b0138cbd5418d68a825acc3f9ec1afe54a1/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/FRESH_QUERY_ECONOMIC_SOURCE_RU.md",
+    "reviewed_stdout_variants": [
+      {
+        "sha256": "8806ce04ec29ab4b407ef1b8a276a77bc36aff8c13ab36573169195ad34a4262",
+        "archived_sha256": "821d5ec984362db6a42b228cefed20793e1b172d5ebc23f80d7a8b578181a28d",
+        "field": "native_entangled_cp_and_thermal_fixture.full_source_identity_error",
+        "archived": "7.728e-11",
+        "reproduced": "8.413e-11",
+        "source_bound": "4e-9",
+        "source": "check_fresh_query_economic_source.py:345",
+        "reason": "The original check passes. The two receipts differ only in this printed finite-difference residual."
+      }
+    ],
+    "mode": "isolated_supplemental_check",
+    "original_receipt": "fresh_query_economic_source_result.json",
+    "adapter": "direct/round88/replay/check_fresh_query_receipt.py"
+  }
+}
