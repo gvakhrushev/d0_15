@@ -268,3 +268,5 @@ python3 -B "$d/realization/check_realization.py"
 **Опись объединённого clock и RAW:** `python3 -B metric/check_union_clock_inventory.py` проверяет счёт букв, полное унитарное замыкание небольшого ветвящегося примера и границу RAW; см. [результат](metric/union_clock_inventory_result.json) и [область](metric/UNION_CLOCK_INVENTORY_RAW_RU.md).
 
 **Gain и двумерный материальный lift:** `python3 -B metric/check_secant_gain_lift_composition.py` проверяет скалярную композицию, контрпример маргиналов и правый обратный на 256 SITE; см. [результат](metric/secant_gain_lift_composition_result.json) и [условия](metric/SECANT_GAIN_AND_MATERIAL_LIFT_RU.md).
+
+**Адаптивные пределы с учётом gain:** `python3 -B metric/check_gain_adaptive_caps.py` проверяет минимальные cap и оценки в логарифмической арифметике; см. [результат](metric/gain_adaptive_caps_result.json) и [условия](metric/GAIN_ADAPTIVE_FAILURE_CAP_RU.md).
