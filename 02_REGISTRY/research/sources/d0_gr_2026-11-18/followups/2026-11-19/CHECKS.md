@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Нативные секущие bootstrap:** `python3 -B -W error metric/check_native_seed_bootstrap_secants.py` проверяет полные слова на всех 16 входах и интервалы трёх конечных сравнений; [доказательство предела и условия](metric/NATIVE_SEED_BOOTSTRAP_SECANTS_RU.md).
+
 **Прямой золотой descriptor:** `python3 -B metric/check_direct_golden_descriptor_writer.py` проверяет полный инструмент, RIGHT и материальные направления; [результат](metric/direct_golden_descriptor_writer_result.json).
 
 **Fourier/SITE и NC1:** `python3 -B metric/check_fourier_site_nc1_effect.py` проверяет адреса, эффекты, квитанции и условные отказы; [результат](metric/fourier_site_nc1_effect_result.json).
