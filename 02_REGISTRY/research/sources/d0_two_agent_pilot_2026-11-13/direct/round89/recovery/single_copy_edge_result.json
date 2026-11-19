@@ -1,0 +1,64 @@
+{
+  "G712_quarter_and_half_probabilities_divided_by_Astar_squared_L16": [
+    "3/65536",
+    "3/32768"
+  ],
+  "GR_closed": false,
+  "active_real_projector_rank_per_CAR_mask": 6,
+  "affine_probabilities_L16": [
+    "3/8589934592",
+    "3/2147483648"
+  ],
+  "complete_global_H1_native_task_selected": false,
+  "frequencies": 128,
+  "full_collar_exterior_block_preserved_on_supply": true,
+  "local_edge_mass_times_S": "3/2 times squared difference",
+  "old_RIGHT_acted_on": false,
+  "physical_ratio": 2,
+  "singletons_b_then_k0": [
+    [
+      1,
+      2,
+      2,
+      1
+    ],
+    [
+      2,
+      1,
+      2,
+      1
+    ],
+    [
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      3,
+      3
+    ],
+    [
+      2,
+      3,
+      2,
+      3
+    ],
+    [
+      3,
+      2,
+      2,
+      3
+    ]
+  ],
+  "transverse_multiplicities": {
+    "0": 9,
+    "1": 6,
+    "2": 29,
+    "3": 16,
+    "4": 4
+  },
+  "whole_joint_return_for_both_inputs": false
+}
