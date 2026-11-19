@@ -1,0 +1,343 @@
+{
+  "scope": "Signed native prefixes, fixed program bit, no new live clock state.",
+  "book03_sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+  "serial_B121": {
+    "W0_W1": {
+      "occupied_collision_calls": [
+        3,
+        19
+      ],
+      "outgoing_overlap": "sqrt(p) I4",
+      "phase_optimized_prefix_error_lower_bound": 0.1663673942681685,
+      "literal_periods_up_to_36": [
+        35,
+        36
+      ],
+      "periods_without_pairwise_Gram_magnitude_obstruction_up_to_36": [
+        35,
+        36
+      ],
+      "period_gram_obstruction_first_call_pair": {
+        "1": [
+          1,
+          19
+        ],
+        "2": [
+          1,
+          19
+        ],
+        "3": [
+          1,
+          19
+        ],
+        "4": [
+          1,
+          21
+        ],
+        "5": [
+          1,
+          21
+        ],
+        "6": [
+          1,
+          19
+        ],
+        "7": [
+          2,
+          30
+        ],
+        "8": [
+          25,
+          33
+        ],
+        "9": [
+          1,
+          19
+        ],
+        "10": [
+          1,
+          21
+        ],
+        "11": [
+          23,
+          34
+        ],
+        "12": [
+          2,
+          26
+        ],
+        "13": [
+          2,
+          28
+        ],
+        "14": [
+          2,
+          30
+        ],
+        "15": [
+          4,
+          19
+        ],
+        "16": [
+          3,
+          19
+        ],
+        "17": [
+          1,
+          35
+        ],
+        "18": [
+          1,
+          19
+        ],
+        "19": [
+          2,
+          21
+        ],
+        "20": [
+          1,
+          21
+        ],
+        "21": [
+          5,
+          26
+        ],
+        "22": [
+          4,
+          26
+        ],
+        "23": [
+          3,
+          26
+        ],
+        "24": [
+          2,
+          26
+        ],
+        "25": [
+          1,
+          26
+        ],
+        "26": [
+          2,
+          28
+        ],
+        "27": [
+          1,
+          28
+        ],
+        "28": [
+          2,
+          30
+        ],
+        "29": [
+          1,
+          30
+        ],
+        "30": [
+          5,
+          35
+        ],
+        "31": [
+          4,
+          35
+        ],
+        "32": [
+          3,
+          35
+        ],
+        "33": [
+          2,
+          35
+        ],
+        "34": [
+          1,
+          35
+        ]
+      }
+    },
+    "W1_W0": {
+      "occupied_collision_calls": [
+        1,
+        33
+      ],
+      "outgoing_overlap": "sqrt(p) I4",
+      "phase_optimized_prefix_error_lower_bound": 0.22162372324506793,
+      "literal_periods_up_to_36": [
+        36
+      ],
+      "periods_without_pairwise_Gram_magnitude_obstruction_up_to_36": [
+        36
+      ],
+      "period_gram_obstruction_first_call_pair": {
+        "1": [
+          1,
+          2
+        ],
+        "2": [
+          1,
+          3
+        ],
+        "3": [
+          1,
+          4
+        ],
+        "4": [
+          1,
+          5
+        ],
+        "5": [
+          1,
+          6
+        ],
+        "6": [
+          1,
+          7
+        ],
+        "7": [
+          1,
+          8
+        ],
+        "8": [
+          1,
+          9
+        ],
+        "9": [
+          1,
+          19
+        ],
+        "10": [
+          1,
+          11
+        ],
+        "11": [
+          1,
+          12
+        ],
+        "12": [
+          1,
+          13
+        ],
+        "13": [
+          1,
+          14
+        ],
+        "14": [
+          1,
+          15
+        ],
+        "15": [
+          1,
+          16
+        ],
+        "16": [
+          1,
+          17
+        ],
+        "17": [
+          1,
+          18
+        ],
+        "18": [
+          1,
+          19
+        ],
+        "19": [
+          1,
+          20
+        ],
+        "20": [
+          1,
+          21
+        ],
+        "21": [
+          1,
+          22
+        ],
+        "22": [
+          1,
+          23
+        ],
+        "23": [
+          1,
+          24
+        ],
+        "24": [
+          1,
+          25
+        ],
+        "25": [
+          1,
+          26
+        ],
+        "26": [
+          1,
+          27
+        ],
+        "27": [
+          1,
+          28
+        ],
+        "28": [
+          1,
+          29
+        ],
+        "29": [
+          1,
+          30
+        ],
+        "30": [
+          1,
+          31
+        ],
+        "31": [
+          1,
+          32
+        ],
+        "32": [
+          1,
+          33
+        ],
+        "33": [
+          1,
+          34
+        ],
+        "34": [
+          1,
+          35
+        ],
+        "35": [
+          1,
+          36
+        ]
+      }
+    }
+  },
+  "clean_native_switch_B121": {
+    "cuts_with_distinct_column_sums_mod_2": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "fixed_program_input_columns": 8,
+    "requires_clean_integral_auxiliary_return": true
+  },
+  "serial_primary_1121": {
+    "occupied_collision_calls": [
+      4,
+      20
+    ],
+    "midpoint_rotation_F16_one_probability": "4 p^3",
+    "fixed_trace_movement_difference_formula": "6 [sqrt(1-p^12) + f((4-5p)^2) - sqrt(p)]",
+    "trace_movement_difference_BA_minus_AB": 7.1841299557436225,
+    "modified_I18_equal_length_commutator_norm_on_blank": "4 p^(3/2)",
+    "trace_movement_tariff_identified_with_full_Cost_Info": false
+  },
+  "GR_closed": false
+}
