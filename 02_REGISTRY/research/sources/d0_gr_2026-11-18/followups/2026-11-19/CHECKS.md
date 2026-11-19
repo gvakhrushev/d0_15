@@ -59,6 +59,10 @@ python3 -B "$d/metric/check_corrector_full_clock.py"
 python3 -B "$d/metric/check_native_adaptive_clock.py"
 python3 -B "$d/metric/check_bandlimit_joint_hq.py"
 python3 -B "$d/metric/check_dyadic_car_loader.py"
+python3 -B "$d/metric/check_local_geometric_source.py"
+python3 -B "$d/metric/check_common_native_calibration.py"
+python3 -B "$d/metric/check_exact_recalibrated_reference.py"
+python3 -B "$d/metric/check_dyadic_phase_field.py"
 python3 -B "$d/metric/check_refinement_mass.py"
 python3 -B "$d/metric/check_event_gain_selection.py"
 python3 -B "$d/metric/check_paid_tail_audit.py"
@@ -95,6 +99,10 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Общая нативная калибровка | Буквальные 712 G, точная SC1-интерполяция и раздельные архитектуры готовности. [Результат](metric/common_native_calibration_result.json) |
+| Независимое золотое возведение | Точное G^712 на всех столбцах и независимая калибровка. [Результат](metric/exact_recalibrated_reference_result.json) |
+| Поле допустимых SITE-фаз | Точное поле вентилей, условное ограничение при L≥16 и ошибка на периодических рёбрах. [Результат](metric/dyadic_phase_field_result.json) |
+| Локальный геометрический банк | Полный CAR16, локальные соседи, два знака и условная полнопространственная норма новой архитектуры. [Результат](metric/local_geometric_source_result.json) |
 | Двоичный загрузчик CAR | Полные SITE/CAR-столбцы, точные знаки, целое Gray-слово и интервальная ошибка; длинное слово не исполнялось побуквенно. [Результат](metric/dyadic_car_loader_result.json) |
 | Совместный band-limited Hq | Каждый локальный q_x, полный CAR filler, общий SITE и точный CAR16-свидетель геометрической границы. [Результат](metric/bandlimit_joint_hq_result.json) |
 | Единый clock ветвления | 57 стадий, исходы NC1 и их сохранённая среда, реальный cut и обе степени полного тепла. [Результат](metric/native_adaptive_clock_result.json) |
