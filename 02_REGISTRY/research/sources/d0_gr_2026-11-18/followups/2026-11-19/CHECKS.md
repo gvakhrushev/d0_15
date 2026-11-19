@@ -256,3 +256,5 @@ python3 -B "$d/realization/check_realization.py"
 **Редкая регистрация материальных секущих:** `python3 -B metric/check_rare_event_secant_registration.py` проверяет полные логические столбцы, конечные квантовые матрицы и OR-цепь; см. [результат](metric/rare_event_secant_registration_result.json) и [границы](metric/RARE_EVENT_SECANT_REGISTRATION_RU.md).
 
 **Центральность золотого seed:** `python3 -B metric/check_seed_program_centrality.py` проверяет семена N=2…8 и семь представительных срезов отказной фабрики; см. [результат](metric/seed_program_centrality_result.json) и [условный вывод](metric/GOLDEN_SEED_CENTRALITY_RU.md).
+
+**Bellman и конечная секущая:** `python3 -B metric/check_bellman_fresh_secant.py` проверяет буквальный считыватель на 16 столбцах, seed при N=8 и интервальные границы секущих; см. [условное тождество и полный остаток](metric/BELLMAN_FRESH_SECANT_RU.md).
