@@ -1,0 +1,62 @@
+{
+  "primary_revision": "216c1e7d0f9bf309b3a07415436e56893126a17c",
+  "primary_receipt_sha256": "2e0c9e190ed587e66c6e562e6cc23a0696191a0de04b723b64ce3d57d94b265a",
+  "clock": {
+    "B121": {
+      "clock_labels": 16,
+      "contradictory_ticks": [
+        1,
+        17
+      ],
+      "conflicting_operations": [
+        "G",
+        "CX"
+      ],
+      "both_full_endpoints": "I_16",
+      "target_zero_after_first_tick_on_golden_input": [
+        "p",
+        "p^6"
+      ],
+      "least_command_period_without_distinct_cuts": 9,
+      "orthogonal_gate_error_lower_bound": "sqrt(2)",
+      "all_prefix_operator_error_lower_bound": "1"
+    },
+    "7dx_identity_collision_ticks": [
+      [
+        1,
+        17
+      ],
+      [
+        2,
+        18
+      ]
+    ],
+    "7dx_rotation_collision_ticks": [
+      [
+        1,
+        17
+      ],
+      [
+        2,
+        18
+      ]
+    ],
+    "7dx_rotation_least_command_period": 18,
+    "7dx_rotation_port_one_on_fresh_port_and_witness_all_Spin": {
+      "literal": "0",
+      "wrapped": "4*p^3"
+    }
+  },
+  "return_defect": {
+    "visible_and_kernel_rotation_exact_tests": true,
+    "leakage_squared_for_literal_rotation": "8*c^2*(1-c^2), c=p^3",
+    "gram_first_jet": "zero for the literal 18 supports; commutator for general R-preserving prep",
+    "strict_actual_H_plus_J_gap_primary_enclosure": [
+      "0.0000004014779563458752156140831879299337158163",
+      "0.0000004014779563458752156140831879299337158166"
+    ]
+  },
+  "absolute_pathwise_Cost_minus_Info_cancellation_proved": false,
+  "GR_closed": false,
+  "status": "PASS"
+}
