@@ -1,0 +1,47 @@
+{
+  "GR_closed": false,
+  "a88_midpoint": "5/512",
+  "a89": "owned H.1 null wave energy",
+  "adjacent_fourier_inner_product": "20/64",
+  "common_temporal_boundary_slices": [
+    0,
+    3
+  ],
+  "direct_registered_probabilities": [
+    [
+      "0.324625825834",
+      "0.324658182606"
+    ],
+    [
+      "0.324658182606",
+      "0.324625825834"
+    ]
+  ],
+  "golden_G_rotations": 448,
+  "h1_microscopic_total_price_derived": false,
+  "native_energy_high_interval": [
+    "0.01403550",
+    "0.01403551"
+  ],
+  "native_energy_low_interval": [
+    "0.00701775",
+    "0.00701776"
+  ],
+  "original_fourier_column_gram": "I128/128 after physical 1/128 scale",
+  "quadratic_energy_tests": 15,
+  "universal_fixed_transverse_material_collar": false,
+  "wave_phases_quarter_turns": [
+    [
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      0
+    ]
+  ]
+}
