@@ -1,6 +1,6 @@
 """Native old prefixes, a positive reciprocal-square-root clock and its source."""
 from fractions import Fraction as F
-from math import comb, log, sqrt
+from math import comb, sqrt
 
 import numpy as np
 
