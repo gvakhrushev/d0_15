@@ -1,0 +1,83 @@
+A89. Проверка общего неизменяемого снимка
+Резервирование в общей ветке 5c4ab21cc528018a522a59fde71fafd9d6fe7336
+Научные данные f7d74f4465d4ea5e87b4287a301f56e209e05e45
+Команда из каталога пилота
+git fetch origin exp/a4d-joint-response-continuation-2026-10-16
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot f7d74f4465d4ea5e87b4287a301f56e209e05e45 direct/round89/portfolio.json
+Код выхода 0. Шесть научных пакетов A89 и шесть проверок исходных работ. Все шесть новых квитанций также проверены с предупреждениями как ошибками и Python -OB.
+
+Git snapshot f7d74f4465d4ea5e87b4287a301f56e209e05e45, 26 committed files
+UPSTREAM  A88_h1_price_residual at d9632b7c80b988717e194c9833637f1fe0f8f49d
+UPSTREAM  A88_masked_price at d9632b7c80b988717e194c9833637f1fe0f8f49d
+UPSTREAM  A88_returned_source at d9632b7c80b988717e194c9833637f1fe0f8f49d
+UPSTREAM  B185_sparse_matching_meter at 56c259e75bb69da31aa0179349b415f08469a44b
+UPSTREAM  PR334_independent_program_euler_rows at 850d40882242ad02a62ebe555e9a13d5ee46906f
+UPSTREAM  PR334_spatial_FQ_covariance at 850d40882242ad02a62ebe555e9a13d5ee46906f
+PASS  A89_assembly
+PASS  A89_price
+PASS  A89_amplitude_price
+PASS  A89_uniform_energy_bound
+PASS  A89_recovery
+PASS  A89_material
+
+
+Контрольный повтор A88 из неизменяемого снимка, код выхода 0
+OPENBLAS_NUM_THREADS=1 python3 -B verify_portfolio.py --git-snapshot 838bce4134e80dbc6328000e8f8db603fb385111 direct/round88/portfolio.json
+Для отличия первичного численного поля FQ и особенностей thin-amplitude см. протокол A88.
+
+
+Git snapshot 838bce4134e80dbc6328000e8f8db603fb385111, 50 committed files
+UPSTREAM  pr334_fresh_guard_reader at d7782b0138cbd5418d68a825acc3f9ec1afe54a1
+UPSTREAM  pr334_economic_repeat_source at d7782b0138cbd5418d68a825acc3f9ec1afe54a1
+UPSTREAM  pr334_local_gibbs_records at d7782b0138cbd5418d68a825acc3f9ec1afe54a1
+UPSTREAM  pr334_raw_fourier_vacuum_inverse at d7782b0138cbd5418d68a825acc3f9ec1afe54a1
+UPSTREAM  pr334_guarded_golden_work_binding at 892ec030c4d844e6ccda4908d2425cd521f457b4
+UPSTREAM  pr334_two_parameter_fourier_catalogue at 892ec030c4d844e6ccda4908d2425cd521f457b4
+UPSTREAM  pr334_native_golden_descriptor_secants at c6ee5faa6bc0078d78b025499d0724d3add13616
+UPSTREAM  A87_protected_future_cost at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  A87_signed_face_meter at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  A87_signed_face_clock at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  A87_native_dyadic_writer at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  A87_julia_approximation at adedb4ac903ed21ae434f618a81b68ca049fdb7a
+UPSTREAM  B180_matched_ready_and_fixed_service at 4919717083db875bacb768951c8d58c28b86101e
+UPSTREAM  B181_fixed_history_signed_price at d0b6a73e9562a6168878b534851f4951f4395857
+UPSTREAM  pr334_common_native_calibration at e3b2a464a8509186be06aea134d81c2d74b89708
+UPSTREAM  B183_registered_union_anchor at efc581d351ab97f993ce1875a284d567d4ac65cd
+PASS  A88_returned_source
+PASS  A88_toric_return
+PASS  A88_masked_price
+PASS  A88_returned_register
+PASS  A88_bell_parity
+PASS  A88_returned_predicate
+PASS  A88_balanced_key
+PASS  A88_h1_price_residual
+PASS  A88_single_supplier
+PASS  A88_physical_material_seed
+PASS  A88_replay_primary_fresh_query
+PASS  A88_extended_owner_regressions
+
+
+Проверки рабочего дерева, в каждом случае код выхода 0.
+
+claims=889 assumptions=31 aliases=58 formal_support=183 lean_closure=918
+PASS warnings=0
+
+
+PASS agent_protocol: cold-start task metadata enforced
+
+
+PASS work_validation: active work plane clean and enforced
+
+
+{
+  "active_result_limit": 54,
+  "active_results": 54,
+  "discharged": 5,
+  "obligations": 22,
+  "results": 98,
+  "scientific_promotion": false,
+  "valid": true
+}
+
+
+У первичного теста bootstrap §03.25 из 850d40882 нет сохранённого JSON-эталона; его дополнительный численный повтор не входит в шесть первичных байтовых сверок. Дополнительно прочтены Open B186 и первичный cd0216680, в это число они также не включены. Ни вывод из произвольной исходной Book03-цены, ни полный физический κ-предел из прохождения этих проверок не следуют. GR_closed=false.
