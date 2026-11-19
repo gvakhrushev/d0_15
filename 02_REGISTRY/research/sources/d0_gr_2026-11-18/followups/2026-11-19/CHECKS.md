@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Guarded маршрут и уравнения источника:** `python3 -BO -W error metric/check_guarded_route_source_binding.py` проверяет 896 маршрутных эффектов, обе ветви и полный RAW; [результат](metric/guarded_route_source_binding_result.json) и [физические предпосылки](metric/GUARDED_ROUTE_BOOK_SOURCE_EQUATIONS_RU.md).
+
 **Общий сдвиг локального отчёта:** `python3 -B -W error metric/check_common_shift_local_report.py` проверяет адресное слово, усреднённые эффекты, steering и отказные вероятности; [результат](metric/common_shift_local_report_result.json) и [условия](metric/COMMON_SHIFT_LOCAL_REPORT_RU.md).
 
 **Граница локального Jensen-остатка:** `python3 -B -W error metric/check_shared_site_jensen_bound.py` проверяет рациональную кривизну и SITE-свидетель; [результат](metric/shared_site_jensen_bound_result.json) и [область](metric/SHARED_SITE_JENSEN_BOUND_RU.md).
