@@ -1,0 +1,30 @@
+{
+  "F_grid": "16517734400/162621047169",
+  "b_geometric": "2.711024792234E-4",
+  "delta_for_material_map": "6.618712871665E-8",
+  "fixed_reference_selector": {
+    "active_Born_mass": "6.100673212890E-1",
+    "bins": [
+      6720,
+      11760,
+      15680,
+      14700,
+      9408,
+      3920,
+      960,
+      105
+    ],
+    "price_cut": 24,
+    "word_count": 63253
+  },
+  "full_clock_replayed": false,
+  "lambda_minus_one": "-5.414887164557E-15",
+  "legal_input_formulas_checked": "original source moment identities; full hardware norm not computed",
+  "physical_ledger_identified": false,
+  "published_scalar_b": "2.135255017125E-2",
+  "reference_mesh": "1/4",
+  "s_ref": "4",
+  "status": "PASS",
+  "two_exact_interpolations": "two-step linear reference and unchanged reference with field map",
+  "uncorrected_material_coefficient_rejected": true
+}

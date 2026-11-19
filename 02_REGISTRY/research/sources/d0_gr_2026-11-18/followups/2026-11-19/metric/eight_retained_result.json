@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "golden_basis": "a+b*p, p²=1-p",
+  "eight_settings": {
+    "true_q_star": [
+      "0.412469880568555",
+      "0.412469880568556"
+    ],
+    "dP_dq": [
+      "0.264846981945302",
+      "0.264846981945303"
+    ],
+    "signed_second_moment": "1",
+    "unsigned_second_moment": "255",
+    "complete_registered_leading_gain": [
+      "68.535980396052065",
+      "68.535980396052066"
+    ]
+  },
+  "actual_reader": {
+    "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+    "raw_calls_per_copy": [
+      "CX(T,r)",
+      "CX(r,t)",
+      "G(t)",
+      "CX(r,t)"
+    ],
+    "conditional_true_probability_code_10": [
+      [
+        "1",
+        "-1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ]
+  },
+  "all_histories": {
+    "all_transcripts_checked_through": 8,
+    "conditional_mean_in_golden_digits": "n*p^3*T",
+    "conditional_variance": "4*n*p^3*T",
+    "Born_mean_phi_to_minus_net": "1"
+  },
+  "scope": "Registered mean Cost-Info; no microscopic valuation or compiler of the selector assumed."
+}

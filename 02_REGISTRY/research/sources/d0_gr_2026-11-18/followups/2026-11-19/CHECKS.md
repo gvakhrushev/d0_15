@@ -29,6 +29,10 @@ python3 -B "$d/metric/check_projective_quotient.py"
 python3 -B "$d/metric/check_cluster_scale.py"
 python3 -B "$d/metric/check_scale_witness.py"
 python3 -B "$d/metric/check_eight_readers.py"
+python3 -B "$d/metric/check_eight_geometric_audit.py"
+python3 -B "$d/metric/check_eight_retained.py"
+python3 -B "$d/metric/check_fixed_reference.py"
+python3 -B "$d/metric/check_address_readers.py"
 python3 -B "$d/metric/check_golden_work_gauge.py"
 python3 -B "$d/metric/check_finite_scale_slip.py"
 python3 -B "$d/metric/check_shared_site_union.py"
@@ -52,6 +56,10 @@ python3 -B "$d/realization/check_realization.py"
 | Конечный масштаб материи | Рациональные интервалы подтверждают противоположные знаки масштабных сдвигов на подлинных материальных полях SC1. [Результат](metric/finite_scale_slip_result.json) |
 | Две геометрические части с общим SITE | Полный конечный CAR след, вещественные лоренцевы связи и точный остаток исходной метки при одинаковых цели и объёме. [Результат](metric/shared_site_union_result.json) |
 | Когерентные веса порта | Шесть штатных слов на всех столбцах Spin и порта, настоящий код 0/10 и три независимые символические вариации. [Результат](metric/golden_work_gauge_result.json) |
+| Геометрический допуск восьми настроек | Проверка исходной опоры F2–F6, однородности преобразованных полей и полного конечного селектора. [Результат](metric/eight_geometric_audit_result.json) |
+| Восемь настроек с удержанным журналом | Нормированные интервалы ведущего коэффициента, точная цена повторных шумных отчётов и сохранение всех коротких историй. [Результат](metric/eight_retained_result.json) |
+| Фиксированная опора | Точное восстановление цели, рациональные интервалы допустимости четырёх опорных SC1 входов и все исходы конечного селектора. [Результат](metric/fixed_reference_result.json) |
+| Прямые адресные чтения | Точные полиномиальные коэффициенты, золотой селектор, границы управления и вероятностей. [Результат](metric/address_readers_result.json) |
 | Восемь настроек исходного считывателя | Точная полиномиальная интерполяция геометрии и материи, случай неравного SITE и конечный селектор со всеми исходами. [Результат](metric/eight_readers_result.json) |
 | Свидетель ошибки физического источника | Точная проверка двух направлений, нижней оценки ошибки, скалярной метки и контрпримера при изменяющемся усилении. [Результат](metric/scale_witness_result.json) |
 | Независимые компоненты и масштаб | Точная проверка выделения общего коэффициента объёма, двух относительных показаний, знака космологического члена и оценки ошибки. [Результат](metric/cluster_scale_result.json) |

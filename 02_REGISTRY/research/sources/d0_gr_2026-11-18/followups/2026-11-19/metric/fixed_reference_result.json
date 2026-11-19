@@ -1,0 +1,23 @@
+{
+  "complete_Cost_Info_proved": false,
+  "conditional_on_physical_material_calibration": true,
+  "fixed_reference_d": "3.125000000000E-2",
+  "material_input_adjustment": "9.987929024398E-1",
+  "physical_controller_compiled": false,
+  "positive_mark_gain_SC2": "1.512994430053E-23",
+  "selector_active_paths": 63253,
+  "selector_active_probability": "6.100673212890E-1",
+  "selector_allocations": [
+    6720,
+    11760,
+    15680,
+    14700,
+    9408,
+    3920,
+    960,
+    105
+  ],
+  "selector_exact_cut_paths": 75025,
+  "selector_price_cut": 24,
+  "status": "PASS"
+}

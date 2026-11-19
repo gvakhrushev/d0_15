@@ -1,0 +1,42 @@
+{
+  "active_mass": "9.999122700306E-1",
+  "allocations_f3_f8_then_m1_to_m8": [
+    448,
+    63,
+    6720,
+    11760,
+    15680,
+    14700,
+    9408,
+    3920,
+    960,
+    105
+  ],
+  "baseline_direct_composite": "4.790371010625E-1",
+  "bounded_services_failure_union_bound": "2.066108802057E-7",
+  "class_repetitions": [
+    6798,
+    4201
+  ],
+  "example_logical_Toffoli_upper_bound": 2714,
+  "fixed_schedule_fallback_SC_bodies": 10,
+  "full_geometric_program_replayed": false,
+  "gain_direct_SC2": "3.369698334387E-13",
+  "improvement_factor": "3.194786013937E+12",
+  "legacy_classes": [
+    1002,
+    619
+  ],
+  "legacy_gain_SC2": "1.054749307054E-25",
+  "legacy_report_two_front_50_active": "9.995157440340E-1",
+  "legacy_selection_only_factor": "1.642425845017E+0",
+  "max_fixed_selector_birth_reads": 42,
+  "normalizing_l1": "15941/210",
+  "paid_full_Cost_minus_Info_selected": false,
+  "positive_address_rows": 10,
+  "selector_cost_front": 42,
+  "settings": 8,
+  "shared_SITE_exact_cases": 4,
+  "signed_l1_selector_ceiling_ratio": "9.999122700306E-1",
+  "status": "PASS"
+}
