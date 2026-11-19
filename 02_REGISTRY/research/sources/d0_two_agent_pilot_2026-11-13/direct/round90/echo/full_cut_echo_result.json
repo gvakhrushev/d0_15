@@ -1,0 +1,28 @@
+{
+  "A90_ray_mismatch_per_step_on_8_or_16_sites": [
+    0.25,
+    0.3535533906
+  ],
+  "GR_closed": false,
+  "birth_inside_echo": {
+    "actual_CX_clock_dimension": 24,
+    "both_degrees_H_difference": 2.7385509e-05,
+    "trace_square_gap": 6
+  },
+  "deferred_physical_teleporter": {
+    "conditional_meter_probabilities": [
+      0.6048783713,
+      0.3819660113
+    ],
+    "success_given_offline_resource": 0.055728090001,
+    "unconditioned_bell_label_masses": 0.0625
+  },
+  "early_and_late_births": {
+    "archive_probabilities": [
+      0.472135955,
+      0.527864045
+    ],
+    "full_clock_dimension": 52,
+    "prepared_rank_one_J_difference": -5.793866e-08
+  }
+}
