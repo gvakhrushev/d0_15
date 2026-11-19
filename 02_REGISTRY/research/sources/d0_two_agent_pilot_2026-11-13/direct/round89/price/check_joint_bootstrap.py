@@ -59,7 +59,14 @@ def native_waves():
         perm = [i ^ int(bool((i//2)&mask)) for i in range(32)]
         cx_parity = mat(np.eye(32)[:,perm],cx_parity)
     result = {}
+    zz = np.diag([1 if not i%2 else -1 for i in range(16)])
     for j in (283,1759):
+        for signed in (j,-j):
+            n = 1759
+            r = (n+signed)//2
+            need(2*r-n == signed and 0<=r<=n,"common writer inventory")
+            word = mat(zz,temporal(n-r),zz,temporal(r))
+            need(np.max(abs(word-temporal(signed)))<2e-12,"two real Z slots")
         V = mat(cx(2,1),temporal(-j),cx(2,1),temporal(j),prep,clear)
         state = mat(V,raw)
         want = np.zeros(16); want[1]=a_f
