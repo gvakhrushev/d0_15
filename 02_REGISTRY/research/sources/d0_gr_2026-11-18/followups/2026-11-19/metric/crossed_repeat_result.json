@@ -1,0 +1,40 @@
+{
+  "all_mode_heat": "full G14-G16 trace inequality; not diagonalized",
+  "crossed_protected_feedback_contrast": "exactly zero for every M",
+  "explicit_certificate": {
+    "20": {
+      "absolute_cross_heat_and_master_upper": "0.0000000000000041570501",
+      "best_possible_relative_fitting_error_lower": "0.99817229822530",
+      "clock_dimension": 445668713125372,
+      "matched_full_master_lower": "0.0000000000045447799115",
+      "relative_cross_to_matched_upper": "0.00091468677467"
+    },
+    "24": {
+      "absolute_cross_heat_and_master_upper": "0.0000000000000000162385",
+      "best_possible_relative_fitting_error_lower": "0.99995106541278",
+      "clock_dimension": 114091190560052732,
+      "matched_full_master_lower": "0.0000000000006636647198",
+      "relative_cross_to_matched_upper": "0.00002446789228"
+    },
+    "32": {
+      "absolute_cross_heat_and_master_upper": "0.0000000000000000000003",
+      "best_possible_relative_fitting_error_lower": "0.99999996492181",
+      "clock_dimension": 7477080264543604921852,
+      "matched_full_master_lower": "0.0000000000000141272694",
+      "relative_cross_to_matched_upper": "0.00000001753910"
+    },
+    "40": {
+      "absolute_cross_heat_and_master_upper": "0.0000000000000000000001",
+      "best_possible_relative_fitting_error_lower": "0.99999999997485",
+      "clock_dimension": 490017932217129692147570172,
+      "matched_full_master_lower": "0.0000000000000003007163",
+      "relative_cross_to_matched_upper": "0.00000000001258"
+    }
+  },
+  "matched_and_crossed_registered_delta": "p^8 in the same orientation",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "per_copy_registered_net_contrast": "p^11",
+  "physical_full_C_identified": false,
+  "status": "PASS",
+  "words": "both direct and reverse legs are literal CX addresses"
+}

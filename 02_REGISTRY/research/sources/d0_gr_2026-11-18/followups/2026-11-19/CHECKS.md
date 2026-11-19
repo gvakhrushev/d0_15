@@ -32,6 +32,9 @@ python3 -B "$d/metric/check_eight_readers.py"
 python3 -B "$d/metric/check_eight_geometric_audit.py"
 python3 -B "$d/metric/check_eight_retained.py"
 python3 -B "$d/metric/check_repeat_clock.py"
+python3 -B "$d/metric/check_crossed_repeat.py"
+python3 -B "$d/metric/check_weighted_recovery.py"
+python3 -B "$d/metric/check_ei14_fine.py"
 python3 -B "$d/metric/check_cyclic_catalogue.py"
 python3 -B "$d/metric/check_balanced_fine.py"
 python3 -B "$d/metric/check_fixed_reference.py"
@@ -60,6 +63,9 @@ python3 -B "$d/realization/check_realization.py"
 | Две геометрические части с общим SITE | Полный конечный CAR след, вещественные лоренцевы связи и точный остаток исходной метки при одинаковых цели и объёме. [Результат](metric/shared_site_union_result.json) |
 | Когерентные веса порта | Шесть штатных слов на всех столбцах Spin и порта, настоящий код 0/10 и три независимые символические вариации. [Результат](metric/golden_work_gauge_result.json) |
 | Геометрический допуск восьми настроек | Проверка исходной опоры F2–F6, однородности преобразованных полей и полного конечного селектора. [Результат](metric/eight_geometric_audit_result.json) |
+| Независимые прямые и обратные ноги | Все четыре настоящих исполнения на исходных защищённых столбцах и тепловая граница, с разграничением арены компилятора. [Результат](metric/crossed_repeat_result.json) |
+| Условное восстановление полного отчёта | Операторный максимум совместных исходов, архивная норма, коэффициенты и контролируемая тепловая поправка. [Результат](metric/weighted_recovery_result.json) |
+| CQ-журнал EI14c | Таблица 1024 исходов, рациональный коридор эффекта, безразмерная информационная оценка и нативный контроль границы среза. [Результат](metric/ei14_fine_result.json) |
 | Повторные считывания и часы | Полная конечная матрица реальных слов, ранг исходного среза, рациональные интервалы спектральной разности и пограничная оценка всех тепловых мод. [Результат](metric/repeat_clock_result.json) |
 | Циклические независимые поля | Все 64 комбинации параметров и банков, настоящий золотой выбор, ошибки адреса и полевые производные. [Результат](metric/cyclic_catalogue_result.json) |
 | Сбалансированный тонкий журнал | Exact SC3, все исходы READY/REPORT, минимальное число повторов в рассмотренном классе и конечные исходные слова. [Результат](metric/balanced_fine_result.json) |
