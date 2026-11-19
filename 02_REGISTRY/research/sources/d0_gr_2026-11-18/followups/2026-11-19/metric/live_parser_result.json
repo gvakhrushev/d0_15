@@ -1,0 +1,196 @@
+{
+  "status": "PASS",
+  "source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "births": 6,
+  "primitive_square_calls": 28,
+  "square_word": [
+    [
+      "CX",
+      4,
+      5
+    ],
+    [
+      "CX",
+      5,
+      6
+    ],
+    [
+      "G",
+      6
+    ],
+    [
+      "CX",
+      5,
+      6
+    ],
+    [
+      "CX",
+      2,
+      7
+    ],
+    [
+      "CX",
+      7,
+      2
+    ],
+    [
+      "CX",
+      2,
+      7
+    ],
+    [
+      "SourceI",
+      2,
+      0,
+      1
+    ],
+    [
+      "SourceI",
+      2,
+      0,
+      1
+    ],
+    [
+      "G",
+      2
+    ],
+    [
+      "SourceI",
+      2,
+      0,
+      1
+    ],
+    [
+      "SourceI",
+      2,
+      0,
+      1
+    ],
+    [
+      "CX",
+      2,
+      7
+    ],
+    [
+      "CX",
+      7,
+      2
+    ],
+    [
+      "CX",
+      2,
+      7
+    ],
+    [
+      "CX",
+      3,
+      7
+    ],
+    [
+      "CX",
+      5,
+      7
+    ],
+    [
+      "CX",
+      7,
+      8
+    ],
+    [
+      "G",
+      8
+    ],
+    [
+      "CX",
+      7,
+      8
+    ],
+    [
+      "CX",
+      4,
+      5
+    ],
+    [
+      "CX",
+      5,
+      9
+    ],
+    [
+      "G",
+      9
+    ],
+    [
+      "CX",
+      5,
+      9
+    ],
+    [
+      "CX",
+      4,
+      5
+    ],
+    [
+      "CX",
+      4,
+      10
+    ],
+    [
+      "G",
+      10
+    ],
+    [
+      "CX",
+      4,
+      10
+    ]
+  ],
+  "raw_stages": 34,
+  "register_at_raw_ticks": [
+    10,
+    26,
+    30,
+    34
+  ],
+  "wire_order": [
+    "Spin0",
+    "Spin1",
+    "port",
+    "H",
+    "T",
+    "D",
+    "tail_D",
+    "C",
+    "tail_C",
+    "tail_X",
+    "tail_T"
+  ],
+  "all_input_space_dimension": 2048,
+  "verified_by": "native validation; factorization on all columns; exhaustive final joint sector enumeration",
+  "distinct_dark_invalid_rows_summed_across_H_T": 62,
+  "raw_guard_cold_on_all_heads": "p I",
+  "conditional_raw_whole_cold_H1": "a^5 p (a+p) I",
+  "raw_whole_cold_at_H1": [
+    "0.26059597399522",
+    "0.26059597399523"
+  ],
+  "64_times_squared_cold": [
+    "4.34625674640127",
+    "4.34625674640128"
+  ],
+  "per_sector_natural_pressure_slope_in_phi_units": [
+    [
+      "1.03904346061751",
+      "1.03904346061752"
+    ],
+    [
+      "-1.03904346061752",
+      "-1.03904346061751"
+    ]
+  ],
+  "shared_pointer_slope": [
+    "1.03904346061751",
+    "1.03904346061752"
+  ],
+  "paired_net_mean_per_copy": "4+T",
+  "native_cost_info_selection_proved": false
+}

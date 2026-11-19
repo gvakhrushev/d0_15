@@ -35,6 +35,9 @@ python3 -B "$d/metric/check_repeat_clock.py"
 python3 -B "$d/metric/check_crossed_repeat.py"
 python3 -B "$d/metric/check_weighted_recovery.py"
 python3 -B "$d/metric/check_guarded_noise.py"
+python3 -B "$d/metric/check_live_parser.py"
+python3 -B "$d/metric/check_absolute_site_pair.py"
+python3 -B "$d/metric/check_guarded_information.py"
 python3 -B "$d/metric/check_marked_splice.py"
 python3 -B "$d/metric/check_calibrated_retention.py"
 python3 -B "$d/metric/check_regular_encoder.py"
@@ -68,6 +71,9 @@ python3 -B "$d/realization/check_realization.py"
 | Когерентные веса порта | Шесть штатных слов на всех столбцах Spin и порта, настоящий код 0/10 и три независимые символические вариации. [Результат](metric/golden_work_gauge_result.json) |
 | Геометрический допуск восьми настроек | Проверка исходной опоры F2–F6, однородности преобразованных полей и полного конечного селектора. [Результат](metric/eight_geometric_audit_result.json) |
 | Независимые прямые и обратные ноги | Все четыре настоящих исполнения на исходных защищённых столбцах и тепловая граница, с разграничением арены компилятора. [Результат](metric/crossed_repeat_result.json) |
+| Нативный парсер полного кода | Все шесть рождений, 28 квадратных вызовов, реальные проекторы, зарегистрированные ошибки и условная сумма весов. [Результат](metric/live_parser_result.json) |
+| Полный двухадресный журнал | Реальные сжатия CX и NC1 на всех исходах и точная симметрия полного адресного журнала. [Результат](metric/absolute_site_pair_result.json) |
+| Два физических смысла Info | Конечные нативные шумовые настройки с одинаковым оплачиваемым расписанием и относительные источники. [Результат](metric/guarded_information_result.json) |
 | Условный код шумного считывателя | Золотые массы и длины, операторная CQ-относительная энтропия, управляющие операции и сохранение отказов. [Результат](metric/guarded_noise_result.json) |
 | CQ после промежуточных отметок | Недиагональные плотности и положительные эффекты, нулевой адрес и нативные тесты влияния измерения. [Результат](metric/marked_splice_result.json) |
 | Стационарные удерживающие метки | Условные направления двоичного дерева до 32 листьев и золотые интервалы. [Результат](metric/calibrated_retention_result.json) |
