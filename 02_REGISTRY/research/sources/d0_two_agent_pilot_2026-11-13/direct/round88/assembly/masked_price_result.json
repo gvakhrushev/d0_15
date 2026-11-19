@@ -1,0 +1,34 @@
+{
+  "paid_input_pair_success": "2*p^3",
+  "mixed_core_and_reference": true,
+  "phase_outcomes": 2,
+  "quantum_decoder_marginals_per_phase": 5,
+  "uniform_record_probability": 0.5,
+  "conditional_entropy_in_phi_units": [
+    [
+      0.3,
+      0.08733219254516085,
+      0.615782139716042
+    ],
+    [
+      0.35,
+      0.1175789063577558,
+      0.7524196108552785
+    ],
+    [
+      0.4,
+      0.15164664532641733,
+      0.8843397795434735
+    ],
+    [
+      0.45,
+      0.1891950158646678,
+      1.0079835878347947
+    ]
+  ],
+  "all_normalized_leaf_ranges_fixed": true,
+  "example_sufficient_even_final_service": 2,
+  "full_fine_record_needed": true,
+  "per_history_nonlinear_weight_selected": false,
+  "GR_closed": false
+}
