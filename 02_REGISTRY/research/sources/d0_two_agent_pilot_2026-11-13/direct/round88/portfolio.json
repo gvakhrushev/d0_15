@@ -5,10 +5,11 @@
     "9ace069c486bf36720d88e663e5009e339a2d1e6"
   ],
   "primary_pr334": "d7782b0138cbd5418d68a825acc3f9ec1afe54a1",
-  "reviewed_pr334": "c6ee5faa6bc0078d78b025499d0724d3add13616",
+  "reviewed_pr334": "e3b2a464a8509186be06aea134d81c2d74b89708",
   "related_pr334_snapshots": [
     "892ec030c4d844e6ccda4908d2425cd521f457b4",
-    "c6ee5faa6bc0078d78b025499d0724d3add13616"
+    "c6ee5faa6bc0078d78b025499d0724d3add13616",
+    "e3b2a464a8509186be06aea134d81c2d74b89708"
   ],
   "direct_regression_commit": "adedb4ac903ed21ae434f618a81b68ca049fdb7a",
   "registry_claim": {
@@ -18,7 +19,8 @@
   },
   "related_open_commits": {
     "B180": "4919717083db875bacb768951c8d58c28b86101e",
-    "B181": "d0b6a73e9562a6168878b534851f4951f4395857"
+    "B181": "d0b6a73e9562a6168878b534851f4951f4395857",
+    "B182": "c6a6a55b46b7c37b66b962eba9d86ca5871673ca"
   },
   "GR_closed": false,
   "physical_C_closed": false,
@@ -350,6 +352,49 @@
         "direct/round88/replay/check_fresh_query_receipt.py": "334de6498be9ea65cc255386002f42bfd1e2491d034e24fc8a8f7a96abb77b35",
         "direct/round88/replay/fresh_query_replay_result.json": "e6263f174a7eb22d3a117dd6221ece97eb03d5938b6ce677c821b6593d6fafa0"
       }
+    },
+    {
+      "id": "A88_masked_price",
+      "commit": "3849df677badd65b4c5ea48abf88d819463535d0",
+      "check": "direct/round88/assembly/check_masked_price.py",
+      "stdout_matches": "direct/round88/assembly/masked_price_result.json",
+      "evidence": {
+        "direct/round88/assembly/MASKED_PRICE_RU.md": "096ef3ed971330c7180f555a05002de9bd908583198d5b0e1dbf4a62c7b09489",
+        "direct/round88/assembly/check_masked_price.py": "dd0ed0816090000e529ea2764acc5617945aa72b98b8580ad48d8b4b9ff6a8c6",
+        "direct/round88/assembly/masked_price_result.json": "b212dcd6c384459b74697ea470d07a679dccc961f6b8a8a1611ed4aa78fb51f4"
+      }
+    },
+    {
+      "id": "A88_bell_parity",
+      "commit": "828ece46697ba2736b149f87058231b71de84a04",
+      "check": "direct/round88/writer/check_bell_parity.py",
+      "stdout_matches": "direct/round88/writer/bell_parity_result.json",
+      "evidence": {
+        "direct/round88/writer/BELL_PARITY_RU.md": "94ef45a4b77c633a4a0763a718b3778ee55e61102c6330c44cde8708e9e21146",
+        "direct/round88/writer/check_bell_parity.py": "12e77b6526e8578fa3a13c4a656c066b16ebaa2f02fb5cd5c888633664a4bbbc",
+        "direct/round88/writer/bell_parity_result.json": "afa298ea6ed628c83add972c795ddedc9e9f87b7cca8c695dcd115e312785202"
+      }
+    },
+    {
+      "id": "A88_balanced_key",
+      "commit": "b7fd85fa1beeb7b07dbc43033f8422e499f28b3d",
+      "check": "direct/round88/clock/check_balanced_key.py",
+      "stdout_matches": "direct/round88/clock/balanced_key_result.json",
+      "evidence": {
+        "direct/round88/clock/BALANCED_KEY_RU.md": "48a07e8feec212baf275c9fe64ae5b838efffddbdaba316d19e3bd00ffa7d971",
+        "direct/round88/clock/check_balanced_key.py": "7e28940124e250bf041502211a5f38ddceb45346f99da56b8777cb0299515160",
+        "direct/round88/clock/balanced_key_result.json": "39187fbb6e310b4808c1e8e94eac20b416c6c0c9b937449473de01fe9d3b9459"
+      }
+    },
+    {
+      "id": "A88_extended_owner_regressions",
+      "check": "direct/round88/replay/check_extended_sources.py",
+      "stdout_matches": "direct/round88/replay/extended_sources_result.json",
+      "evidence": {
+        "direct/round88/replay/check_extended_sources.py": "9f46172262901393e82701b87b7b8d184dcfedd0d65897ba2dcda51968e74cd9",
+        "direct/round88/replay/extended_sources_result.json": "9bd966467fd1f999b8b769cf6450d1710c2a57eebc252466e2e3a5e19268ad7b",
+        "direct/round88/replay/extended_sources.json": "8a3371b699246afd09780b47ea059b0c6692024cab338156d7fa544cfc564ec3"
+      }
     }
   ],
   "upstream_numerical_diagnostic": {
@@ -393,5 +438,17 @@
     "mode": "isolated_supplemental_check",
     "original_receipt": "fresh_query_economic_source_result.json",
     "adapter": "direct/round88/replay/check_fresh_query_receipt.py"
+  },
+  "upstream_extension": {
+    "configuration": "direct/round88/replay/extended_sources.json",
+    "committed_numeric_receipts_compared_before_execution": true,
+    "thin_record_amplitude_transcript_origin": "A88 independent reproduction; original owner prints six text lines",
+    "upstream_checks": [
+      "pr334_seed_program_centrality",
+      "pr334_program_central_fresh_query",
+      "pr334_rare_event_secant_registration",
+      "pr334_thin_record_amplitude_audit",
+      "B182_serial_book03_preparation"
+    ]
   }
 }

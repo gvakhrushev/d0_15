@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pr334_seed_program_centrality",
+    "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+    "reference": "original Git receipt",
+    "stdout_sha256": "6d7b8790be312ec99708d303bc59d03af6011634394bd705acf9e7ade5b73693"
+  },
+  {
+    "id": "pr334_program_central_fresh_query",
+    "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+    "reference": "original Git receipt",
+    "stdout_sha256": "906e57350275ff0a0954f695d2fa8143eed491cea225e37993a60ab49fb70f8a"
+  },
+  {
+    "id": "pr334_rare_event_secant_registration",
+    "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+    "reference": "original Git receipt",
+    "stdout_sha256": "11ac3913be67d88f887d167d9703bf20c439703d0c46513ae8b12d352db81984"
+  },
+  {
+    "id": "pr334_thin_record_amplitude_audit",
+    "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+    "reference": "A88 replay transcript (upstream printed stdout only)",
+    "stdout_sha256": "7049a5806585d06f6621644deb2c9bd75bfe919692e0cd17105c0a6ed691e9ae"
+  },
+  {
+    "id": "B182_serial_book03_preparation",
+    "commit": "c6a6a55b46b7c37b66b962eba9d86ca5871673ca",
+    "reference": "original Git receipt",
+    "stdout_sha256": "7199a11a1587f16d9f5efe0ebeb83be27c7c396b5ca6e7112c2c8fa223928256"
+  }
+]

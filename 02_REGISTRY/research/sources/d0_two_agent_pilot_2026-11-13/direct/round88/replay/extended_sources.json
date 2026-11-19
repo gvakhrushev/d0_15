@@ -1,0 +1,93 @@
+[
+  {
+    "id": "pr334_seed_program_centrality",
+    "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+    "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+    "entrypoint": "check_seed_program_centrality.py",
+    "files": [
+      "check_native_golden_descriptor_secants.py",
+      "check_seed_program_centrality.py"
+    ],
+    "documentation": "https://github.com/gvakhrushev/d0_15/blob/e3b2a464a8509186be06aea134d81c2d74b89708/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/GOLDEN_SEED_CENTRALITY_RU.md",
+    "verifies": "Native logical Golden seed effect on fixed programme sectors; no full factory clock.",
+    "archive_receipt": "seed_program_centrality_result.json",
+    "expected_sha256": "6d7b8790be312ec99708d303bc59d03af6011634394bd705acf9e7ade5b73693"
+  },
+  {
+    "id": "pr334_program_central_fresh_query",
+    "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+    "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+    "entrypoint": "check_program_central_fresh_query.py",
+    "files": [
+      "check_program_central_fresh_query.py"
+    ],
+    "documentation": "https://github.com/gvakhrushev/d0_15/blob/e3b2a464a8509186be06aea134d81c2d74b89708/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/PROGRAM_CENTRAL_FRESH_QUERY_RU.md",
+    "verifies": "Conditional central-instrument algebra on a retained programme and its coherence in a quantitative toy example.",
+    "archive_receipt": "program_central_fresh_query_result.json",
+    "expected_sha256": "906e57350275ff0a0954f695d2fa8143eed491cea225e37993a60ab49fb70f8a"
+  },
+  {
+    "id": "pr334_rare_event_secant_registration",
+    "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+    "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+    "entrypoint": "check_rare_event_secant_registration.py",
+    "files": [
+      "check_rare_event_secant_registration.py"
+    ],
+    "documentation": "https://github.com/gvakhrushev/d0_15/blob/e3b2a464a8509186be06aea134d81c2d74b89708/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/RARE_EVENT_SECANT_REGISTRATION_RU.md",
+    "verifies": "Finite Boolean union word and the coherent versus registered trace-norm bounds.",
+    "archive_receipt": "rare_event_secant_registration_result.json",
+    "expected_sha256": "11ac3913be67d88f887d167d9703bf20c439703d0c46513ae8b12d352db81984"
+  },
+  {
+    "id": "pr334_thin_record_amplitude_audit",
+    "commit": "e3b2a464a8509186be06aea134d81c2d74b89708",
+    "directory": "02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric",
+    "entrypoint": "check_thin_record_amplitude_audit.py",
+    "files": [
+      "check_complete_work_source.py",
+      "check_extra_work.py",
+      "check_fresh_guard_reader.py",
+      "check_golden_record_race.py",
+      "check_live_parser.py",
+      "check_source_price.py",
+      "check_thin_record_amplitude_audit.py"
+    ],
+    "documentation": "https://github.com/gvakhrushev/d0_15/blob/e3b2a464a8509186be06aea134d81c2d74b89708/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/THIN_RECORD_AMPLITUDE_AUDIT_RU.md",
+    "verifies": "Independent replay of the 35-stage reader and the strict obstruction to identifying each positive component directly with a Born amplitude.",
+    "repository_files": [
+      "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+    ],
+    "expected_lines": [
+      "Native reader: 35 stages, all 16 old input columns verified",
+      "Two declared prices: s_000 = s_010 = 2",
+      "Born ratio = p; positive amplitude ratio = sqrt(p)",
+      "Conservative thermal ratio upper bound = 47/41",
+      "Positive branch-price gap > 0.216184166944 phi-units",
+      "Status: direct component identification excluded under stated conditions; GR open"
+    ],
+    "expected_sha256": "7049a5806585d06f6621644deb2c9bd75bfe919692e0cd17105c0a6ed691e9ae"
+  },
+  {
+    "id": "B182_serial_book03_preparation",
+    "commit": "c6a6a55b46b7c37b66b962eba9d86ca5871673ca",
+    "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round182",
+    "entrypoint": "check_serial_book03.py",
+    "files": [
+      "check_serial_book03.py"
+    ],
+    "repository_files": [
+      "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/check_book03_identity_pair.py",
+      "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+      "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+      "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py",
+      "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+    ],
+    "needs_git_objects": true,
+    "historical_object_read": "c6ee5faa6bc0078d78b025499d0724d3add13616:02_REGISTRY/research/A4D_NONVACUUM_SAME_REPRESENTATIVE_PAID_SOURCE_RESIDUAL_2026_10_20.md",
+    "documentation": "https://github.com/gvakhrushev/d0_15/blob/c6a6a55b46b7c37b66b962eba9d86ca5871673ca/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round182/B182_SERIAL_BOOK03_PREPARATION_RU.md",
+    "verifies": "Occupied serial-order constraints and an explicit change of motion under a matched-length change to real gates.",
+    "archive_receipt": "RESULT.json",
+    "expected_sha256": "7199a11a1587f16d9f5efe0ebeb83be27c7c396b5ca6e7112c2c8fa223928256"
+  }
+]
