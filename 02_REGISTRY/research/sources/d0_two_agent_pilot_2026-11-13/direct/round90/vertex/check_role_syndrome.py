@@ -26,6 +26,39 @@ def rot(t):
     return np.array([[np.cos(t),-np.sin(t)],[np.sin(t),np.cos(t)]])
 
 
+def bell_audit(alpha, pre, g):
+    # Wire order T, fresh retained Bell reference, new syndrome flag.
+    eye=np.eye(2); plus=np.array([1.,1.])/np.sqrt(2)
+    phi=np.array([1.,0.,0.,1.])/np.sqrt(2)
+    parity=np.eye(4)[:,[0,3,2,1]]
+    cz=np.diag([1.,1.,1.,-1.])
+    times=lambda a,b: np.einsum('ij,j...->i...',a,b)
+    actual=times(parity,times(np.kron(rot(alpha),eye),phi))
+    pure=times(cz,actual)
+    need(np.max(abs(pure-np.kron(pre[:,0],plus)))<2e-14,"coherent Bell decoder")
+    clean=np.kron(actual,[1.,0.])
+    cx_tf=np.eye(8)[:,[0,1,2,3,5,4,7,6]]
+    for op in (np.kron(cz,eye),np.kron(pre.T,np.eye(4)),cx_tf,
+               np.kron(pre,np.eye(4)),np.kron(cz,eye)):
+        clean=times(op,clean)
+    need(np.max(abs(clean-np.kron(actual,[1.,0.])))<3e-14,"full Bell return before NC1")
+    # Work in T, R, original NC1 tail, condition on each original T result.
+    def nc1(span):
+        state=np.kron(span,g[:,0])
+        for op in (cx_tf,np.kron(np.eye(4),g),cx_tf):
+            state=times(op,state)
+        return state.reshape(2,4)
+    original=nc1(actual)
+    retained=nc1(clean.reshape(4,2)[:,0])
+    for b in (0,1):
+        need(np.max(abs(retained[b]-original[b]))<4e-14,"old NC1 ket changed")
+        need(abs(np.dot(original[b],original[b])-pre[b,0]**2)<3e-14,"old Born mass")
+    # Directly verify that skipping CZ would give leakage on this entangled input.
+    wrong=times(np.kron(pre.T,eye),actual).reshape(2,2)[1]
+    need(abs(np.dot(wrong,wrong)-2*np.sin(alpha)**2*np.cos(alpha)**2)<2e-14,
+         "parity-only test must show which-arm leakage")
+
+
 def suite():
     eye=np.eye(4)
     li=np.array([[0,-1,0,0],[1,0,0,0],[0,0,0,-1],[0,0,1,0]])
@@ -44,6 +77,7 @@ def suite():
         delta=sg*float(tau.mid) if j^s==k else 0.
         alpha=float(theta.mid)+(-1)**(s+m)*delta+phase*np.pi/2
         U=rot(alpha-float(theta.mid)); pre=U@g
+        bell_audit(alpha,pre,g)
         head=pre[:,0]; dark=np.array([-np.sin(alpha),np.cos(alpha)])
         state=np.kron(head,[1.,0.])
         # Inverse preparation, CX into real zero, then the original preparation.
@@ -103,6 +137,8 @@ if __name__=="__main__":
         bounds={-1:(".01492",".01494"),0:(".01263",".01265"),1:(".01046",".01048")}[sign]
         rows.append({"displacement":sign,"minimum_dark_probability":interval(floor,*bounds)})
     print(json.dumps({"tested_role_and_predecessor_combinations":suite(),
+       "old_bell_residuals_coherently_aligned_and_restored":True,
+       "actual_both_old_NC1_conditional_kets_verified":True,
        "full_old_gram_zero_for_native_head":True, "all_wrong_law_lower_bounds":rows,
        "opposite_central_share_needed":interval((1-a)/2,".10692",".10693"),
        "strict_record_mark_dark_probability":interval(2*p**3,".47213",".47214"),

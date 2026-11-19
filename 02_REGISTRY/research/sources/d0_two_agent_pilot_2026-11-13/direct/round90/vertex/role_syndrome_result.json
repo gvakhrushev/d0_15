@@ -1,5 +1,7 @@
 {
   "tested_role_and_predecessor_combinations": 4096,
+  "old_bell_residuals_coherently_aligned_and_restored": true,
+  "actual_both_old_NC1_conditional_kets_verified": true,
   "full_old_gram_zero_for_native_head": true,
   "all_wrong_law_lower_bounds": [
     {
