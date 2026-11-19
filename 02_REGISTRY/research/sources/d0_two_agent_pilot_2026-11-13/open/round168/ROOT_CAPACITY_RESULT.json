@@ -1,0 +1,20 @@
+{
+  "GR_closed": false,
+  "KL_upper_nats": "0.282800170",
+  "field_constancy_established": false,
+  "full_physical_cost_minus_info_proved": false,
+  "nu_times_root_residual_lower": {
+    "Darc_per_D_1_rank_1": "11.7196640",
+    "Darc_per_D_1_rank_4": "14.6005042",
+    "Darc_per_D_425_rank_2": "0.58331676",
+    "Darc_per_D_425_rank_4": "2.02373685"
+  },
+  "rank_one_mode_redundancy_times_nu_lower": "0.05348920",
+  "required_Darc_per_D_per_rank_lower": "281.361667",
+  "source_pins": 3,
+  "status": "PASS",
+  "verified_root_exponent_conventions": [
+    1,
+    2
+  ]
+}

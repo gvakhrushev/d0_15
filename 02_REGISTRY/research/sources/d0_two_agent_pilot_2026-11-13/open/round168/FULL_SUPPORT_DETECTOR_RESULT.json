@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "A80_commit": "2b59138c88987a2159474b3f167ab755f83ddb74",
+  "B167_commit": "82e2486f6",
+  "native_gate_inventory": {
+    "SourceI": 88,
+    "G": 60,
+    "CX": 258
+  },
+  "native_exact_old_columns": 64,
+  "native_exact_output_rows": 256,
+  "peak_exact_integer_coefficient": 429926751115523,
+  "two_added_G_stages": [
+    402,
+    404
+  ],
+  "independent_angles": "even=theta1+theta2; odd=theta1-theta2",
+  "born_transparent_total": "cos(beta)^2",
+  "unprinted_transparent_passive_sum": "p^2+p^4",
+  "printed_transparent_passive_sum": "p^8+p^14",
+  "exact_guarded_stopped_trees": 18,
+  "largest_explicit_terminal_count": 9496,
+  "GR_closed": false
+}

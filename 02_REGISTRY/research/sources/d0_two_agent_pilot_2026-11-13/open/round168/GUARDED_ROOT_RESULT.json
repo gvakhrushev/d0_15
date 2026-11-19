@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "exact_complete_printed_and_guarded_journals": 54,
+  "native_arithmetic_bounds": {
+    "strict_guard_ledger_addition": [
+      0,
+      2
+    ],
+    "strict_service_ledger_addition": [
+      0,
+      0.25
+    ],
+    "literal_codes_derivative_floor_on_q_arc": "0.109"
+  },
+  "physical_NPS2_comparison": {
+    "same_layout_two_cycle_native_fields": true,
+    "q_ends": [
+      "(1-p^6)/2",
+      "(1-p^9)/2"
+    ],
+    "cold_secant_strictly_positive": true,
+    "required_extra_cost_secant_enclosures_nu_1_then_2": [
+      [
+        "-.186265",
+        "-.186261"
+      ],
+      [
+        "-.192707",
+        "-.192705"
+      ]
+    ]
+  },
+  "energy_ledger_binding_proved": false,
+  "GR_closed": false
+}
