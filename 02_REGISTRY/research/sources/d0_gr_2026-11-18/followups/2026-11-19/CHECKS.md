@@ -4,6 +4,9 @@
 
 ~~~sh
 d=02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19
+python3 -B "$d/metric/check_site_coframe_julia.py"
+python3 -B "$d/metric/check_signal_routed_clock.py"
+python3 -B "$d/metric/check_terminal_recoding_classes.py"
 python3 -B "$d/metric/check_error_code_signal.py"
 python3 -B "$d/metric/check_native_fourier_uncompute.py"
 python3 -B "$d/metric/check_carry_compensated_geometry.py"
@@ -104,6 +107,9 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| SITE-кофрейм Julia32 | Все 32 столбца, направления и SITE-классы для двух фиксированных входов; огромные целые степени не исполнялись побуквенно. [Результат](metric/site_coframe_julia_result.json) |
+| Перенаправленный signal clock | Два полных 102-стадийных слова, feedback и аналитическая граница полного тепла. [Результат](metric/signal_routed_clock_result.json) |
+| Перекодировки терминального регистра | Точная классификация всех 16 булевых функций, два способа учёта кодов и когерентный контрпример. [Результат](metric/terminal_recoding_classes_result.json) |
 | Сигнал после обратимого кода | Полные эффекты E и N, совместный закон и отсутствие двойного начисления энтропии. [Результат](metric/error_code_signal_result.json) |
 | Нативное Fourier-декодирование | Все 32768 столбцов адреса, пары и типа, полная 16-колоночная проверка маршрута SourceI и условная опись фабрик. [Результат](metric/native_fourier_uncompute_result.json) |
 | Компенсация SITE-фаз | Все переносы и wrap при L=16, локальные коэффициенты, полиномиальная интерполяция и число операций без побуквенного повтора. [Результат](metric/carry_compensated_geometry_result.json) |

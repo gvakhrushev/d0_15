@@ -1,0 +1,141 @@
+{
+  "all_16_rows": [
+    {
+      "both_codes_source": "-2 + sqrt(5)",
+      "conditional_r0": "0",
+      "conditional_r1": "0",
+      "partial_source": "0",
+      "truth": "0000"
+    },
+    {
+      "both_codes_source": "-5/2 + 3*sqrt(5)/2",
+      "conditional_r0": "0",
+      "conditional_r1": "p",
+      "partial_source": "p",
+      "truth": "0001"
+    },
+    {
+      "both_codes_source": "p",
+      "conditional_r0": "0",
+      "conditional_r1": "p^2",
+      "partial_source": "p^2",
+      "truth": "0010"
+    },
+    {
+      "both_codes_source": "-1 + sqrt(5)",
+      "conditional_r0": "0",
+      "conditional_r1": "1",
+      "partial_source": "1",
+      "truth": "0011"
+    },
+    {
+      "both_codes_source": "-7/2 + 3*sqrt(5)/2",
+      "conditional_r0": "p^2",
+      "conditional_r1": "0",
+      "partial_source": "-p^2",
+      "truth": "0100"
+    },
+    {
+      "both_codes_source": "-4 + 2*sqrt(5)",
+      "conditional_r0": "p^2",
+      "conditional_r1": "p",
+      "partial_source": "p^3",
+      "truth": "0101"
+    },
+    {
+      "both_codes_source": "-2 + sqrt(5)",
+      "conditional_r0": "p^2",
+      "conditional_r1": "p^2",
+      "partial_source": "0",
+      "truth": "0110"
+    },
+    {
+      "both_codes_source": "-5/2 + 3*sqrt(5)/2",
+      "conditional_r0": "p^2",
+      "conditional_r1": "1",
+      "partial_source": "p",
+      "truth": "0111"
+    },
+    {
+      "both_codes_source": "-p^2",
+      "conditional_r0": "p",
+      "conditional_r1": "0",
+      "partial_source": "-p",
+      "truth": "1000"
+    },
+    {
+      "both_codes_source": "-2 + sqrt(5)",
+      "conditional_r0": "p",
+      "conditional_r1": "p",
+      "partial_source": "0",
+      "truth": "1001"
+    },
+    {
+      "both_codes_source": "0",
+      "conditional_r0": "p",
+      "conditional_r1": "p^2",
+      "partial_source": "-p^3",
+      "truth": "1010"
+    },
+    {
+      "both_codes_source": "p",
+      "conditional_r0": "p",
+      "conditional_r1": "1",
+      "partial_source": "p^2",
+      "truth": "1011"
+    },
+    {
+      "both_codes_source": "-3 + sqrt(5)",
+      "conditional_r0": "1",
+      "conditional_r1": "0",
+      "partial_source": "-1",
+      "truth": "1100"
+    },
+    {
+      "both_codes_source": "-7/2 + 3*sqrt(5)/2",
+      "conditional_r0": "1",
+      "conditional_r1": "p",
+      "partial_source": "-p^2",
+      "truth": "1101"
+    },
+    {
+      "both_codes_source": "-p^2",
+      "conditional_r0": "1",
+      "conditional_r1": "p^2",
+      "partial_source": "-p",
+      "truth": "1110"
+    },
+    {
+      "both_codes_source": "-2 + sqrt(5)",
+      "conditional_r0": "1",
+      "conditional_r1": "1",
+      "partial_source": "0",
+      "truth": "1111"
+    }
+  ],
+  "class_counts": {
+    "-1": 1,
+    "-p": 2,
+    "-p^2": 2,
+    "-p^3": 1,
+    "0": 4,
+    "1": 1,
+    "p": 2,
+    "p^2": 2,
+    "p^3": 1
+  },
+  "coherent_counterexample": "O=T, N retained coherently and unread: entropy increment 0 rather than 1+p^2",
+  "conditional_CQ_entropy_increment": "1+p^2, if N is recorded and the actual instrument is conditional scalar-isometric",
+  "full_cost_info_and_GR_closed": false,
+  "law": "P(N=1|T=0)=p^2, P(N=1|T=1)=p",
+  "scope": "registered-output code-CQ only; physical compilation and full Cost-Info not inferred",
+  "single_output_zero_signal_truths": [
+    "0000",
+    "0110",
+    "1001",
+    "1111"
+  ],
+  "status": "PASS",
+  "truth_order": "(T,N)=(00,01,10,11)",
+  "unique_two_code_source_canceller": "1010 = 1-N"
+}
