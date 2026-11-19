@@ -249,6 +249,8 @@ python3 -B "$d/realization/check_realization.py"
 
 Базовая научная ревизия и проверяемые исходники указаны в программах и исследовательских заметках. Проверки воспроизводят расчёты в установленной области. Физический выбор полной цены остаётся открытым.
 
+**Пространственный ведущий член:** `python3 -B metric/check_spatial_seed_site_fq.py` проверяет локальный seed/SITE-инструмент и рациональные интервалы сцены; [результат](metric/spatial_seed_site_fq_result.json) и [условия](metric/SPATIAL_SEED_SITE_FQ_RU.md).
+
 **Прямой bootstrap seed:** `python3 -B -W error metric/check_seed_field_bootstrap_secant.py` проверяет полный возврат, обе степени Hodge, секторные интервалы и общий cut; [условия](metric/SEED_FIELD_BOOTSTRAP_SECANT_RU.md).
 
 **Норма программного подъёма:** `python3 -B metric/check_program_input_lift_lower_bound.py` проверяет границы на k⊗RIGHT и две материальные координаты; [результат](metric/program_input_lift_lower_bound_result.json) и [область](metric/PROGRAM_INPUT_LIFT_LOWER_BOUND_RU.md).

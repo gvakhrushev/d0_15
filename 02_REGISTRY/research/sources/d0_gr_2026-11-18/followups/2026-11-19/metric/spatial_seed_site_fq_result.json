@@ -1,0 +1,42 @@
+{
+  "status": "PASS; exact rational scene-gap interval; local witness only",
+  "scene_T0_interval": [
+    "1.01461442689280084488531113418722641362762124",
+    "1.01461442689280084488531113426645854070405690"
+  ],
+  "scene_T2_interval": [
+    "1.01333057011755916608036005514085627945873383",
+    "1.01333057011755916608036005522008428826179864"
+  ],
+  "T_g_definition": "exp(beta) times actual S_infinity diagonal",
+  "scene_tail_upper": "7.91906412421804613308270715422857097332390004E-29",
+  "normalized_leading_coefficient_interval": [
+    "-0.0000705603851627114918055826784006516224756551924",
+    "-0.0000705603851627114918055826696840805278364557378"
+  ],
+  "native_CX_NC1_effect_error": 1.1102230246251565e-16,
+  "canonical_FQ_effect_applied": true,
+  "same_unweighted_scene_marginal": true,
+  "weighted_scene_marginal_changes": true,
+  "seed_finite_checks": {
+    "2": {
+      "delta": 0.23606797749978975,
+      "leading_log_contrast_over_delta": -7.056097283307811e-05
+    },
+    "3": {
+      "delta": 0.14589803375031551,
+      "leading_log_contrast_over_delta": -7.056074836143166e-05
+    },
+    "4": {
+      "delta": 0.09016994374947428,
+      "leading_log_contrast_over_delta": -7.056060963127679e-05
+    },
+    "8": {
+      "delta": 0.013155617496424849,
+      "leading_log_contrast_over_delta": -7.056041791211515e-05
+    }
+  },
+  "physical_scene_SITE_state_admitted_by_full_D0": false,
+  "original_full_geometric_bank_identified": false,
+  "GR_closed": false
+}
