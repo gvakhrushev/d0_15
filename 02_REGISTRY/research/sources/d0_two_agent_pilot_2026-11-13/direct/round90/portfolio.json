@@ -2,7 +2,8 @@
   "round": "A90",
   "base_shared": "edcbfbdfd7b505330bc910eb6c4946a8c6f3e688",
   "claims_shared": [
-    "f24408f7210c1ef4a1c0c06202ffd125a3c96ce5"
+    "f24408f7210c1ef4a1c0c06202ffd125a3c96ce5",
+    "aec0552d80aa163dd3243123f20feacb9f3384cd"
   ],
   "primary_pr334": "01f52b73daf39c122a1ecf553a549b8f07d9e5b0",
   "direct_regression_commit": "f27767b133a6e0cf4b86b71b8372cbbe7b3f0f11",
@@ -13,7 +14,8 @@
   },
   "related_open_commits": {
     "B149": "82cbb04f212bfa414e8d7c954c808a700897e276",
-    "B187": "8aed7f83f22f1dba48bd5e4d8ba8ae30222c54b0"
+    "B187": "8aed7f83f22f1dba48bd5e4d8ba8ae30222c54b0",
+    "B188": "fad7d0465a3321fb8ee76be2b41df117b5d52987"
   },
   "GR_closed": false,
   "physical_C_closed": false,
@@ -90,6 +92,41 @@
       "documentation": "https://github.com/gvakhrushev/d0_15/blob/8aed7f83f22f1dba48bd5e4d8ba8ae30222c54b0/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round187/B187_BALANCED_BELL_PARITY_RU.md",
       "repository_files": [
         "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round181/check_fixed_positive_reader.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
+        "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
+      ]
+    },
+    {
+      "id": "A87_full_julia_approximation",
+      "commit": "7e265c9b3d7fe5033c4e0fa351047e166f0ed952",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/clock",
+      "entrypoint": "check_julia_approx.py",
+      "receipt": "julia_approx_result.json",
+      "files": [
+        "JULIA_APPROX_RU.md",
+        "check_julia_approx.py",
+        "julia_approx_result.json"
+      ],
+      "verifies": "Rounded real-coordinate preparation, four-square normalization, measured error and the boundary for an arbitrary old input.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/7e265c9b3d7fe5033c4e0fa351047e166f0ed952/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round87/clock/JULIA_APPROX_RU.md"
+    },
+    {
+      "id": "B188_literal_switch_absolute_preparation",
+      "commit": "fad7d0465a3321fb8ee76be2b41df117b5d52987",
+      "directory": "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round188",
+      "entrypoint": "check_preparation_response.py",
+      "receipt": "RESULT.json",
+      "files": [
+        "B188_LITERAL_SWITCH_ABSOLUTE_PREPARATION_RU.md",
+        "check_preparation_response.py",
+        "RESULT.json"
+      ],
+      "verifies": "Full matched clock collision, literal signed preparation coefficient and the shared SITE residual.",
+      "documentation": "https://github.com/gvakhrushev/d0_15/blob/fad7d0465a3321fb8ee76be2b41df117b5d52987/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round188/B188_LITERAL_SWITCH_ABSOLUTE_PREPARATION_RU.md",
+      "repository_files": [
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round182/check_serial_book03.py",
+        "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/open/round121/check_book03_identity_pair.py",
         "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round80/price/check_parity_price.py",
         "02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round79/heat/check_return_moments.py",
         "02_REGISTRY/research/sources/d0_native_execution_domain_2026-10-24/native_execution.py"
@@ -197,6 +234,28 @@
         "direct/round90/assembly/CENTRAL_MEMORY_LIFT_RU.md": "23ab2cc3816e7902681b2abe38ae4db138549d0e35a980ac6ce94a64264fe14f",
         "direct/round90/assembly/check_central_memory_lift.py": "f257555011b77bb6322fe909b6337e3ded19b9b55968e3eb27e6a74a4dbce811",
         "direct/round90/assembly/central_memory_lift_result.json": "0281496bffcc08807b6db05054059c93b7f9a3ac03cb8be649706c72d0d6d32e"
+      }
+    },
+    {
+      "id": "A90_full_cut_echo",
+      "commit": "e7a32aef7e8aaa3295f0f8f8c7f323c2d0e42ab4",
+      "check": "direct/round90/echo/check_full_cut_echo.py",
+      "stdout_matches": "direct/round90/echo/full_cut_echo_result.json",
+      "evidence": {
+        "direct/round90/echo/FULL_CUT_ECHO_RU.md": "fac4673085b205f049ee2b2f670996363fea2d4d09a8238d28ef13936854f11d",
+        "direct/round90/echo/check_full_cut_echo.py": "0d52133b8c6f3ed9a746f5dcd3519cab5472581031b7817508eed250e2e4bd39",
+        "direct/round90/echo/full_cut_echo_result.json": "f6f769a53ae0ddcaf75bf51d4559cfcae9de93577659df880e7df65043141a2c"
+      }
+    },
+    {
+      "id": "A90_common_julia_preparation",
+      "commit": "cd4aced8f293471adf2f4d0f09c2be4d65c0d952",
+      "check": "direct/round90/preparation/check_common_julia_preparation.py",
+      "stdout_matches": "direct/round90/preparation/common_julia_preparation_result.json",
+      "evidence": {
+        "direct/round90/preparation/COMMON_JULIA_PREPARATION_RU.md": "b2160ad4bfb161619f300db8271e1c1fd4efba95d94b3a71bb1d73bbfe55c998",
+        "direct/round90/preparation/check_common_julia_preparation.py": "6d0ae67181a5cdae9a5461a99b338232994a0a87d0f2c3028331dfd1dbdc403b",
+        "direct/round90/preparation/common_julia_preparation_result.json": "3fa6d6a3553e445f49d43b50571caef126544430f1a22212f5882fc74f7e4fee"
       }
     }
   ],
