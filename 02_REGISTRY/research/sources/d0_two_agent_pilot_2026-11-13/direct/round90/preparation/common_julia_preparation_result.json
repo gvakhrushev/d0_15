@@ -1,0 +1,77 @@
+{
+  "actual_old_port": {
+    "all_outcome_pairs_checked": 512,
+    "dimension_per_role": 32,
+    "external_dimension": 3,
+    "general_work_and_old_input_zero_probability": "(1/4096,1/1024]",
+    "roles_in_complete_check": 2,
+    "success_probability": "25/65536"
+  },
+  "canonical_geometric_Choi_obtainable_exactly_from_canonical_raw": false,
+  "compulsory_Book03_price_identified": false,
+  "dyadic_stencils": {
+    "R": [
+      "0.5",
+      "-0.375"
+    ],
+    "recovered_rows": [
+      "0.828661107838",
+      "0.282322215675"
+    ],
+    "sum": "1.11098332351"
+  },
+  "full_rational_table_preparation": {
+    "address_count_physical": 2097152,
+    "available_untouched_dark_slots": 499712,
+    "denominator": 1638400,
+    "distinct_Julia_blocks": 23,
+    "four_square_witness": [
+      22760,
+      88,
+      0,
+      0
+    ],
+    "squared_padding_norm": "4047073/20971520000",
+    "work_zero_mass_given_other_resources": "625/32768"
+  },
+  "generic_common_preparation_actual_and_bound": [
+    [
+      0.0078125,
+      0.033202152,
+      0.0556285633
+    ],
+    [
+      0.00097656,
+      0.0336883056,
+      0.0533700271
+    ],
+    [
+      0.00012207,
+      0.0336956334,
+      0.0533355304
+    ]
+  ],
+  "native_positive_step": {
+    "coefficient": 158,
+    "d": "0.000810895363744",
+    "pattern_controls": 20
+  },
+  "original_decimal_stencils": {
+    "R": [
+      "0.64",
+      "-0.48"
+    ],
+    "recovered_rows": [
+      "0.968661107838",
+      "0.177322215675"
+    ],
+    "sum": "1.14598332351"
+  },
+  "rolewise_orthogonal_witness": {
+    "exactly_corrected_columns": 2,
+    "full_link_Frobenius_error_numerical": 1.34841e-05,
+    "preparation_work_zero_bound": "(1/128,1/32]",
+    "rational_reflections": 35,
+    "tested_block_dimension": 32
+  }
+}
