@@ -260,3 +260,5 @@ python3 -B "$d/realization/check_realization.py"
 **Bellman и конечная секущая:** `python3 -B metric/check_bellman_fresh_secant.py` проверяет буквальный считыватель на 16 столбцах, seed при N=8 и интервальные границы секущих; см. [условное тождество и полный остаток](metric/BELLMAN_FRESH_SECANT_RU.md).
 
 **Нативный NC1 и редкие отказы:** `python3 -B metric/check_native_union_nc1_caps.py` проверяет NC1 на произвольных комплексных входах с RIGHT, реальные ветви и точные пределы попыток; см. [результат](metric/native_union_nc1_caps_result.json) и [условия](metric/NATIVE_UNION_NC1_CAPS_RU.md).
+
+**Первый источник отказов:** `python3 -B metric/check_secant_failure_first_source.py` проверяет усиленный cap, массы первого отказа и CQ-тождество в изометрической модели; см. [результат](metric/secant_failure_first_source_result.json) и [условия переноса](metric/SECANT_FAILURE_FIRST_SOURCE_RU.md).
