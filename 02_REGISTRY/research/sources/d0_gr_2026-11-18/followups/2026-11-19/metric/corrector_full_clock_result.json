@@ -1,0 +1,47 @@
+{
+  "GR_closed": false,
+  "both_growing_clock_degrees": true,
+  "clock_dimension": 448,
+  "clock_spectrum_max_error": 7.993605777301127e-15,
+  "clock_stages": 14,
+  "clock_two_grade_modes": 190400,
+  "conditional_record_gain_wrt_old_T_probability": 0.2360679775,
+  "conditional_record_probabilities": [
+    [
+      0.6180339887498948,
+      0.3819660112501052,
+      3.0814879110195774e-33
+    ],
+    [
+      0.38196601125010526,
+      0.618033988749895,
+      0.0
+    ]
+  ],
+  "factory_failure_flags_in_this_14_stage_clock": false,
+  "full_physical_cost_info_identified": false,
+  "heat_trace": 174797.5834303,
+  "incoming_NC1_measurement_in_this_14_stage_clock": false,
+  "local_thermal_difference_lower": "3.025195025745e-32",
+  "local_thermal_difference_upper": "2.798565427043e-27",
+  "native_source_sha256": "222eafaffa4b30f175919a32c940534b82f3a2b9af89c7897d318dd004a2007c",
+  "record_gain_finite_difference_error": 4.796163466380676e-13,
+  "status": "PASS",
+  "true_cut_feedback_J": 7.20422619e-06,
+  "true_cut_feedback_eigenvalues": [
+    0,
+    0.944271909999
+  ],
+  "true_cut_rank": 16,
+  "true_cut_return_eigenvalues": [
+    1,
+    0.2360679775
+  ],
+  "unrestricted_32_cut_feedback_J": 0,
+  "word_inventory": {
+    "CX": 8,
+    "G": 2,
+    "SourceI": 4,
+    "total": 14
+  }
+}

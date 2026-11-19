@@ -52,6 +52,10 @@ python3 -B "$d/metric/check_controller_stability_bound.py"
 python3 -B "$d/metric/check_balanced_tail_envelope.py"
 python3 -B "$d/metric/check_balanced_factory.py"
 python3 -B "$d/metric/check_selector36_compilation.py"
+python3 -B "$d/metric/check_selector24_native.py"
+python3 -B "$d/metric/check_smooth_twofield_reference.py"
+python3 -B "$d/metric/check_composed_geometric_instrument.py"
+python3 -B "$d/metric/check_corrector_full_clock.py"
 python3 -B "$d/metric/check_refinement_mass.py"
 python3 -B "$d/metric/check_event_gain_selection.py"
 python3 -B "$d/metric/check_paid_tail_audit.py"
@@ -88,6 +92,10 @@ python3 -B "$d/realization/check_realization.py"
 
 | Проверка | Воспроизводимый результат |
 | --- | --- |
+| Гладкая двухкомпонентная CAR-опора | Полный CAR16, решётки и все направленные рёбра, material reserve и нормовый свидетель. [Результат](metric/smooth_twofield_reference_result.json) |
+| Составной геометрический прибор | SourceI на всех входах, нескалярный SITE с RIGHT и условный геометрический gain. [Результат](metric/composed_geometric_instrument_result.json) |
+| Полный clock корректора | 448 временных мод, обе степени Hodge, действительный cut и зарегистрированный источник. [Результат](metric/corrector_full_clock_result.json) |
+| Компактный селектор 24 | Точное дерево на 2²⁴ лентах, обратимая схема, интервалы готовности и сравнение gain на заявленных опорах. [Результат](metric/selector24_native_result.json) |
 | Обратимый селектор 36 | Точные массы всех 2³⁶ лент, общие логические узлы и проверенный инвентарь конечных фабрик. [Результат](metric/selector36_compilation_result.json) |
 | Фабрика двух выборов | Родные CZ/CCZ, Toffoli, успешные и отказные инструменты, зарегистрированная цена. [Результат](metric/balanced_factory_result.json) |
 | Хвост и огибающая контроллера | 14 нативных букв, все 32 входных столбца, сохранённые конечные состояния и полная условная производная. [Результат](metric/balanced_tail_envelope_result.json) |

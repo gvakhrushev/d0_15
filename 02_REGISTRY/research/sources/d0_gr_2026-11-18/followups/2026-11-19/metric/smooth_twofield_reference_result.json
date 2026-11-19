@@ -1,0 +1,42 @@
+{
+  "SC2_conditional_gain_with_geometric_b_and_selector_beta": "[1.33822573600961876975549590792728244252648869826961198e-27, 1.338225736009618769755495907927282442526488698305262084e-27]",
+  "SC2_gain_note": "nominal scalar h=1/256 and scalar readiness: arithmetic ONLY; h violates the full H_q norm contract for H=1/4",
+  "amplitude_L4_interval": "[0.01164264744857043695697958278856136714504873484082499591, 0.01164264744857043695697958278856136714504873484082718841]",
+  "check": "PASS",
+  "complete_physical_cost_info_closed": false,
+  "creator_norm_upper_with_s_ge_4nu_sqrt_rho": "1/4",
+  "exact_16d_target_builder_checked": true,
+  "exact_lorentz_and_all_minors_checked_per_lattice": [
+    4,
+    6,
+    8,
+    12
+  ],
+  "exact_normalized_gain_constant_C0": "[4.515191935644400907410181108241536267225261876466518761e-25, 4.515191935644400907410181108241536267225261876585827775e-25]",
+  "exact_normalized_gain_formula": "C0 * alpha_H^2 * F_H / (s_ref^2 * Lambda_H^2), for variable-attenuation 36-selector with t=1/(512 Lambda_H)",
+  "exact_other_lattices_trig_phases_checked": 26,
+  "finite_full_car_16_traces_all_six_faces_and_two_reference_signs": true,
+  "full_norm_contract_L4_Lambda_lower_bound": "1",
+  "full_norm_contract_L4_max_8_setting_step": "1/512",
+  "full_norm_contract_L4_physical_gain_ceiling_alpha_le_1": "[2.866354880577430387320446509019773187250004056312247506e-27, 2.866354880577430387320446509019773187250004056388003976e-27]",
+  "geometric_b_L4_s4_interval": "[0.0002711024792234074109343436980091711519009177105736129693, 0.0002711024792234074109343436980091711519009177105737108489]",
+  "julia_defect_squared_lower": "15/16",
+  "k0_interval": "[23.41640675188407497289558206489525274426317851398562309, 23.41640675188407497289558206489525274426317851399400489]",
+  "lorentz_link_half_julia_defect_squared_lower": "11/36",
+  "one_four_lattice_two_material_fields_forward_edges_checked": 2048,
+  "original_full_operator_norms_computed": false,
+  "original_native_field_preparation_word_replayed": false,
+  "rational_F_values": {
+    "12": "21977225109504/219394497666125",
+    "4": "16517734400/162621047169",
+    "6": "427025779200/4240893591649",
+    "8": "855671701504/8523622669005"
+  },
+  "smooth_limit_amplitude_interval": "[0.0104006385792734947671727636492211029317158414045584565, 0.01040063857927349476717276364922110293171584140456041931]",
+  "uniform_F_bounds": [
+    "160/1601",
+    "1/8"
+  ],
+  "uniform_material_amplitude_squared_upper": "1/2560",
+  "uniform_material_slack_lower": "959/2560"
+}

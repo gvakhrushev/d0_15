@@ -1,0 +1,38 @@
+{
+  "schema": "d0.composed-geometric-instrument/1",
+  "status": "PASS",
+  "sourcei_paid_zero": {
+    "old_Spin_columns": 4,
+    "old_source_columns": 2,
+    "target_columns": 2,
+    "SourceI": 4,
+    "CX": 12,
+    "G": 1,
+    "birth": 1
+  },
+  "selector_T_all_failure_cases_checked": true,
+  "F_grid": "16517734400/162621047169",
+  "exact_SC1_two_geometric_reference_cases": true,
+  "same_SITE_and_oldRIGHT_test": {
+    "shared_SITE_reference_dimension": 4,
+    "suffix_positive_outcomes_tested": 128,
+    "bank_effects_are_scalar": false,
+    "suffix_effect_scalar_on_oldRIGHT": true,
+    "full_physical_geo_bank_replayed": false
+  },
+  "conditional_gain_intervals": {
+    "b_ref_geometric": "[0.00027110247922340741093434369800917115190091771057365532252827359646, 0.00027110247922340741093434369800917115190091771057365532252827936977]",
+    "geometry_h": "[0.000030517578125, 0.000030517578125]",
+    "selector_success": "[0.99930115823220915246130754186740375531854691563829386840522220025, 0.99930115823220915246130754186740375531854691563829386840663288003]",
+    "balanced_factory_success": "[0.99881641189244173173846277115185518782630003671568185921282168264, 0.99881641189244173173846277115185518782630003671568185921282331618]",
+    "raw_selector_gain_per_alpha_h_squared": "[7.0028305906692652909490885312691058065051930263482163946572585854e-31, 7.0028305906692652909490885312691058065051930263482163946581986768e-31]",
+    "suffix_gain_per_alpha_h_squared": "[2.0395535636610321391420155194305124328316070383227711964873663941e-31, 2.0395535636610321391420155194305124328316070383227711964905257026e-31]",
+    "t_print_plus_suffix_gain_per_alpha_h_squared": "[9.0374902838207742956860743793420680657661872540995610931186938639e-31, 9.0374902838207742956860743793420680657661872540995610931326725075e-31]"
+  },
+  "geometry_compiled": false,
+  "geometry_norm_certified": false,
+  "actual_alpha_h_value_known": false,
+  "full_adaptive_clock_constructed": false,
+  "Book_cost_info_identified": false,
+  "GR_closed": false
+}
