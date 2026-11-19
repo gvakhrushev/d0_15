@@ -116,7 +116,43 @@ def complete_positive_examples():
             "separable_slope_on_both_histories": "-8/5"}
 
 
+def stationary_rectangle_and_anchor():
+    # A common five-point Dirichlet stencil, with all incident links free.
+    lap = sp.Matrix([[-4,1,1,0], [1,-4,0,1], [1,0,-4,1], [0,1,1,-4]])
+    h = sp.Rational(1,3)
+    unit = sp.ones(4,1)
+    potential = lap.inv()*unit*h**2
+    lam = sp.Symbol("lambda", nonzero=True)
+    energies = (sp.Rational(1,256), sp.Rational(4,256))
+    matrix = []
+    for eg in energies:
+        grav = -lap*(-4*lam*eg*potential)/(2*h**2)
+        row = []
+        for em in energies:
+            source = grav-2*lam*em*unit
+            require(source == 2*lam*(eg-em)*unit, "common Dirichlet source")
+            row.append(str(source[0]))
+        matrix.append(row)
+    x0,x1 = sp.Rational(3,4), sp.Rational(-5,8)
+    gain0,gain1 = sp.Rational(2,5), sp.Rational(7,3)
+    d0,d1 = -sp.Rational(3,256), sp.Rational(3,256)
+    center0,center1 = gain0*d0-x0, gain1*d1-x1
+    minimizer = (gain1*center0+gain0*center1)/(gain0+gain1)
+    errors = [abs((minimizer+x)/g-d) for x,g,d in ((x0,gain0,d0),(x1,gain1,d1))]
+    optimum = abs((x1-x0)-(gain1*d1-gain0*d0))/(gain0+gain1)
+    require(errors == [optimum,optimum], "optimal common prefix bound is attained")
+    t = sp.Symbol("t", real=True)
+    weight = 3*sp.exp(-2*t)
+    prices = (weight+2*sp.exp(4*t), weight+7*sp.exp(-t))
+    shares = [weight/z for z in prices]
+    logdiff = lambda z: sp.diff(z,t)/z
+    require(sp.simplify(logdiff(shares[1]/shares[0])-logdiff(prices[0]/prices[1])) == 0,
+            "early economic share ratio cancels the physical prefix derivative")
+    return {"stationary_rectangle":matrix, "minimax_example":str(optimum),
+            "economic_anchor_ratio_identity": True}
+
+
 if __name__ == "__main__":
     print(json.dumps({"all40_test": trace_test(), "positive_history_sum": complete_positive_examples(),
-                      "original_Book03_covector_measured": False, "GR_closed": False},
+                      "stationary_set_and_prefix": stationary_rectangle_and_anchor(),\n                      "original_Book03_covector_measured": False, "GR_closed": False},
                      indent=2, ensure_ascii=False))
