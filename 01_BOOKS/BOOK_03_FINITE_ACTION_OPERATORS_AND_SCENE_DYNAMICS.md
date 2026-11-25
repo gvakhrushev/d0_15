@@ -109,7 +109,7 @@ The boundary rule is:
 ```math
 S_{D0}^\varphi\ \text{and the response theorem} \in Books 01--02,
 \qquad
-S_{gate},J_{scene},\Lambda_{act},S_\partial\in\text{Book 03},
+S_{finite variational test functional},J_{finite incidence/clique complex},\Lambda_{act},S_\partial\in\text{Book 03},
 ```
 
 ```math
@@ -125,7 +125,7 @@ Thus this book is a bridge from invariant finite registration to finite dynamics
 Once a finite incidence/clique complex has been constructed, D0 does not introduce a continuum Lagrangian and then regulate it. The action is a finite admissible stack of operators, projectors, spectra, boundary terms and quadratic responses:
 
 ```math
-\mathcal S_{stack}=J_{scene}+S_{coeff}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}.
+\mathcal S_{stack}=J_{finite incidence/clique complex}+S_{coeff}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}.
 ```
 
 The order is not cosmetic. Scene selection comes first; finite variational test functional coefficients follow; the full-cycle action section fixes the single dimensional dictionary; the boundary block fixes the non-diagonal curvature residual; heat depth controls the length map; terminal terms record the final charged or leaking shell.
@@ -244,7 +244,7 @@ The finite incidence/clique complex is not background spacetime. It is the finit
 ```math
 K(9,11,13)
 \to
-S_{gate},J_{scene}
+S_{finite variational test functional},J_{finite incidence/clique complex}
 \to
 \mathcal G_{spec}
 \to
@@ -389,7 +389,7 @@ Book 04 may use this cell in hadron or coefficient comparison protocols, but Boo
 The D0 equation of motion is not a continuum Euler-Lagrange equation at fundamental level. It is a finite stationarity condition on the finite incidence/clique complex variables:
 
 ```math
-\nabla_{x\in\mathcal X_N}\left(J_{scene}+S_{gate}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}\right)=0.
+\nabla_{x\in\mathcal X_N}\left(J_{finite incidence/clique complex}+S_{finite variational test functional}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}\right)=0.
 ```
 
 After the halt quotient and forgetting map, continuum equations may appear as limits or bridge dictionaries. They are not the primitive input.
