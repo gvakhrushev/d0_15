@@ -56,7 +56,7 @@ The diagonal source remains closed; no new orbit search is undertaken.
 | Diagonal nonlinear rescue | Existing `certificates/a4d_j2_smooth_resonance_closure_check.py`; rational nondegenerate root for the declared sourced reduction and resulting cubic Puiseux branch |
 | Entire constant-solder zero-phase block and canonical gap | New `certificates/a4d_j2_fixed_realization_ir_check.py`; symbolic identity for all 16 solder entries, exact Laurent coefficient bounds |
 | Sampling/reconstruction | `ATORUS_TYPED_RESPONSE_RECONSTRUCTION.md`; actual framed sampler, not a finite sampler on an ordinary 2-jet |
-| Corrected parabolic control | Live #202 full-transverse certificate `a4d_resolved_curved_stationary_e2_enlarged12_full_transverse_check.py`: the stored `e2_closed` matrices are Cayley transforms of `span{M2,M3,-J23}` with true complement `{K1,N2,N3}`. On `e2=(0,0,j,0,0,j,gamma,delta,0,delta,-gamma,0)` the full 24 Lorentz-link derivatives force `j=gamma=delta=0`; the older restricted `8+6` family is superseded as a full-stationarity claim. |
+| Corrected parabolic control | The [full-transverse certificate from PR #202](certificates/a4d_resolved_curved_stationary_e2_enlarged12_full_transverse_check.py) checks that the stored `e2_closed` matrices are Cayley transforms of `span{M2,M3,-J23}` with true complement `{K1,N2,N3}`. On `e2=(0,0,j,0,0,j,gamma,delta,0,delta,-gamma,0)` the full 24 Lorentz-link derivatives force `j=gamma=delta=0`. This replaces the full-stationarity interpretation of the older restricted `8+6` family. |
 
 The old diagonal certificate freezes the reduced quartic polynomial and verifies
 its sourced rational Newton contraction; it does not independently reconstruct

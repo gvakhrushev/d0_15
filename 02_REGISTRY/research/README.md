@@ -53,13 +53,16 @@ recorded physical price binding remains open, with `GR_closed=false`.
 | [Pilot A91, prepared cold return](https://github.com/gvakhrushev/d0_15/blob/56d097dbae19d5dd9798150f5dd1ba3715dd33f6/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round91/clock/PREPARED_COLD_RU.md). Both determinant polarities recover the two H.1 fixture rows on the specified prepared cut. | [Checker](sources/d0_two_agent_pilot_2026-11-13/direct/round91/clock/check_prepared_cold.py) · [Published and reproduced JSON](sources/d0_two_agent_pilot_2026-11-13/direct/round91/clock/prepared_cold_result.json) |
 | [PR #334, guarded dummy reading](https://github.com/gvakhrushev/d0_15/blob/fdb4565363c57cd23b0ee22e9bafdd7f5f3e973e/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/GUARDED_DUMMY_CQ_READER_RU.md). The declared recorded CQ slope and coherent RAW parity are checked on their two specified cuts. | [Checker and its input directory](sources/d0_gr_2026-11-18/followups/2026-11-19/metric/check_guarded_dummy_cq_reader.py) · [Published JSON](sources/d0_gr_2026-11-18/followups/2026-11-19/metric/guarded_dummy_cq_reader_result.json) |
 | [PR #402, fixed-support Parry comparison](https://github.com/gvakhrushev/d0_15/blob/e9a3a87dd0ce46e74e4a41fcfad26e98e7e0fe39/02_REGISTRY/research/sources/d0_validated_parry_price_2026-11-06/README.md). The symbolic check gives a constant scalar moment and a separate mean-price source on the three declared outcomes. | [Checker](sources/d0_validated_parry_price_2026-11-06/check.py) |
+| [PR #202, corrected E2 transverse Euler check](https://github.com/gvakhrushev/d0_15/blob/cd3e3a3a43892f23b83c1bf7f1c6a4aae918e779/02_REGISTRY/research/MEMO_A4D_RESOLVED_CURVED_STATIONARY_CLOSURE.md#0a-corrective-full-euler-audit-2026-09-26). On the specified enlarged parabolic family the true complement derivatives force `j = gamma = delta = 0` at a full stationary point. The curved stationary search remains open. | [Checker](certificates/a4d_resolved_curved_stationary_e2_enlarged12_full_transverse_check.py) |
 
-The replay used CPython 3.13.5, NumPy 2.5.5, mpmath 1.3.0, and SymPy 1.14.0.
-Run each checker with `python -BO -W error`. The Parry check also gave the same
-output in normal mode. A91 reproduced its JSON exactly. The guarded dummy
-checker passed all built-in checks. Two `full_CQ_direct_difference` fields
+The first three replays used CPython 3.13.5, NumPy 2.5.5, mpmath 1.3.0, and
+SymPy 1.14.0. Run each checker with `python -BO -W error`. The Parry check also
+gave the same output in normal mode. A91 reproduced its JSON exactly. The
+guarded dummy checker passed all built-in checks. Two `full_CQ_direct_difference` fields
 differed from the archived output by `8.881784197e-16` in absolute value,
 within the existing `2e-12` direct-CQ check. The archived output is preserved.
+The E2 check ran in both modes with CPython 3.9.6 and SymPy 1.14.0 and matched the source SHA-256
+`118bb147c929791a5c208f30bc6e829e0d596ad15deece9ecbe57e6aa336d432`.
 
 ## Pending control intake
 
