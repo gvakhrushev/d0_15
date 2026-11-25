@@ -11,6 +11,7 @@ import subprocess
 import sys
 
 REPO = "gvakhrushev/d0_15"
+MERGE_STATES = {"behind", "blocked", "clean", "dirty", "unstable", "unknown"}
 
 
 def metadata(text: str, name: str) -> list[str]:
@@ -67,6 +68,43 @@ def open_prs(root: pathlib.Path) -> list[dict]:
         return prs
     except (TypeError, ValueError) as exc:
         raise ValueError(f"Invalid GitHub PR response; no launch authorized: {exc}") from exc
+
+
+def refresh_merge_state(root: pathlib.Path, pr: dict) -> dict:
+    """Fetch computed merge state for one registered PR; list responses may leave it null."""
+    state = pr.get("mergeable_state")
+    if isinstance(state, str) and state in MERGE_STATES and state != "unknown":
+        return pr
+    number = pr.get("number")
+    if not isinstance(number, int):
+        raise ValueError("cannot refresh merge state without a PR number; no launch authorized")
+    try:
+        result = subprocess.run(
+            ["gh", "api", "--hostname", "github.com", f"repos/{REPO}/pulls/{number}"],
+            cwd=root, capture_output=True, text=True, check=True, timeout=30,
+        )
+    except (OSError, subprocess.SubprocessError) as exc:
+        detail = str(exc)
+        if isinstance(exc, subprocess.CalledProcessError) and exc.stderr:
+            detail = exc.stderr.strip().splitlines()[0]
+        raise ValueError(
+            f"GitHub merge-state lookup for PR #{number} unavailable: {detail[:200]}. "
+            "No resume or launch authorized."
+        ) from exc
+    try:
+        detail = json.loads(result.stdout)
+        if (not isinstance(detail, dict) or detail.get("number") != number
+                or detail.get("state") != "open"):
+            raise ValueError("expected the same open PR")
+        state = detail.get("mergeable_state")
+        if state is None:
+            state = "unknown"
+        if not isinstance(state, str) or state not in MERGE_STATES:
+            raise ValueError(f"unexpected mergeable_state {state!r}")
+        pr["mergeable_state"] = state
+        return pr
+    except (TypeError, json.JSONDecodeError) as exc:
+        raise ValueError(f"Invalid GitHub merge-state response for PR #{number}: {exc}") from exc
 
 
 def commit_path_blobs(root: pathlib.Path, sha: str, paths: list[str]) -> dict[str, str | None]:
@@ -146,11 +184,17 @@ def existing_execution(prs: list[dict], task_id: str, branch: str | None) -> tup
 def print_execution(pr: dict, matched_by: str) -> None:
     lifecycle = metadata(pr.get("body") or "", "Lifecycle")
     lifecycle = lifecycle[0] if len(lifecycle) == 1 else "UNKNOWN"
+    merge_state = pr.get("mergeable_state", "unknown")
     print(f"PR: #{pr['number']} {pr['html_url']}")
     print(f"Status: {'DRAFT' if pr['draft'] else 'READY'}; Lifecycle: {lifecycle}")
+    print(f"Merge state: {str(merge_state).upper()}")
     print(f"Head: {pr['head']['ref']} @ {pr['head']['sha']}")
     print(f"Resolved by: {matched_by}")
-    if pr["draft"] and lifecycle == "IN_PROGRESS":
+    if merge_state in {"dirty", "behind"}:
+        print("Action: Update this PR against its base and resolve the merge state before resuming; do not create a new execution.")
+    elif merge_state not in MERGE_STATES or merge_state == "unknown":
+        print("Action: Recheck this PR's merge state before resuming; do not create a new execution.")
+    elif pr["draft"] and lifecycle == "IN_PROGRESS":
         print("Action: Resume this PR at its current head; do not create a new branch or PR.")
     elif pr["draft"] and lifecycle == "BLOCKED":
         print("Action: Resolve the blocker in this PR before resuming; do not create a new execution.")
@@ -205,6 +249,7 @@ def main(argv: list[str] | None = None) -> int:
             prs = open_prs(root)
             pr, matched_by = existing_execution(prs, args.task_id, branch)
             if pr:
+                pr = refresh_merge_state(root, pr)
                 print(f"Repository: {REPO}\nTask: {args.task_id}")
                 print_execution(pr, matched_by)
                 print_programme_focus()

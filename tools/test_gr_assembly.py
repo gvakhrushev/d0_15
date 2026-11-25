@@ -132,11 +132,11 @@ class AssemblyTests(unittest.TestCase):
     def git(self, *args):
         return subprocess.check_output(["git", *args], cwd=self.root, stderr=subprocess.PIPE, text=True)
 
-    def pr(self, task=TASK, number=12, draft=True, lifecycle="IN_PROGRESS", *,
+    def pr(self, task=TASK, number=12, draft=True, lifecycle="IN_PROGRESS", *, mergeable_state="clean",
            branch=None, base_branch="main", head_sha="a" * 40, base_sha="b" * 40,
            head_repo="gvakhrushev/d0_15", base_repo="gvakhrushev/d0_15"):
         branch = branch or "wrk/" + task.lower()
-        return {"number": number, "state": "open", "draft": draft,
+        return {"number": number, "state": "open", "draft": draft, "mergeable_state": mergeable_state,
                 "html_url": f"https://github.com/gvakhrushev/d0_15/pull/{number}",
                 "head": {"ref": branch, "sha": head_sha, "repo": {"full_name": head_repo}},
                 "base": {"ref": base_branch, "sha": base_sha, "repo": {"full_name": base_repo}},
@@ -547,6 +547,21 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual(row["action"], "resume")
         self.assertIn("#12", row["reasons"][0])
         self.assertEqual(row["live_executions"][0]["url"], "https://github.com/gvakhrushev/d0_15/pull/12")
+
+    def test_live_next_blocks_resume_until_dirty_or_behind_pr_base_is_reconciled(self):
+        for state in ("dirty", "behind"):
+            actions = gr.next_actions(self.model(), [self.pr(mergeable_state=state)])
+            row = next(a for a in actions if a["task"] == TASK)
+            self.assertEqual(row["action"], "reconcile-pr-base")
+            self.assertTrue(any(f"mergeable_state={state}" in reason for reason in row["reasons"]))
+            ready = next(item for item in gr.ready_obligations(self.model(), actions)
+                         if item["obligation"] == "A")
+            self.assertEqual(ready["next_step"], "update-pr-base-before-resuming")
+
+    def test_live_next_fails_closed_when_pr_merge_state_is_unknown(self):
+        actions = gr.next_actions(self.model(), [self.pr(mergeable_state="unknown")])
+        row = next(a for a in actions if a["task"] == TASK)
+        self.assertEqual(row["action"], "verify-pr-merge-state")
 
     def test_ready_obligations_report_unlock_and_current_registered_owner(self):
         model = self.model()
