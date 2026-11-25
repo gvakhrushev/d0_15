@@ -513,7 +513,9 @@ static finite scene -> self-readout -> [J,Y] != 0 -> ordered registration
 
 **[Reheating energy pointer].** The heat-trace time parameter `u` also owns the finite reheating energy functional used in BOOK_08: `E(u) = −∂_u log H(u)` (`D0-REHEATING-ENERGY-BUDGET-OWNER-001`). This is phase-time heat energy over the discrete archive tick, not SI time or an external clock.
 
-**[Cosmology handoff].** The heat-trace time `u` and the reheating energy `E(u)=−∂_u log H(u)` hand off to the cosmology chain in BOOK_08 §08.COSMOLOGY-CLOSURE: the post-threshold phason initial covariance `C_φ(u)` is the normalized heat-kernel covariance on the nonzero connected modes, with energy `ρ_φ(u) ∈ [λ₂, λ_max] = [20,33]` sourced by the same heat trace (`D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001`). Phase-time heat energy, not SI time.## 06.9 Phase transport and quantum emergence
+**[Cosmology handoff].** The heat-trace time `u` and the reheating energy `E(u)=−∂_u log H(u)` hand off to the cosmology chain in BOOK_08 §08.COSMOLOGY-CLOSURE: the post-threshold phason initial covariance `C_φ(u)` is the normalized heat-kernel covariance on the nonzero connected modes, with energy `ρ_φ(u) ∈ [λ₂, λ_max] = [20,33]` sourced by the same heat trace (`D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001`). Phase-time heat energy, not SI time.
+
+## 06.9 Phase transport and quantum emergence
 
 Quantum evolution appears when the finite active record is transported without being immediately forced into a commuting classical quotient.  The finite-stage transport has the standard unitary-looking form
 
@@ -974,7 +976,7 @@ The terminal and electroweak return windows reached by this ordered-evolution qu
 By the Phase-Unfolding Theorem (D0.Geometry.PhaseUnfoldingQuasicrystal):
 
 ```text
-toral_ordered finite evolution_supplies_quasicrystal_order;
+toral_runtime_supplies_quasicrystal_order;
 quasicrystal_order_not_periodic_lattice.
 ```
 
@@ -1088,7 +1090,9 @@ Space (graph spectrum) and time (torus automorphism) are different objects, so r
 
 **[Toral Markov: Outcome B].** The internal Lucas-Voronoi symbolic construction is closed-negative at the canonical-partition step: a 3-point periodic seed does not canonically determine a Markov partition (Adler-Weiss partitions are non-unique), and the integral conjugate `-M_phi` (negative entry, `!= M_phi`) is not the symbolic SSE (`D0-TORAL-CANONICAL-MARKOV-PARTITION-NOGO-001`, NO-GO). The Markov-rectangle, coding, boundary-quotient, and Williams-SSE owners stay PROOF-TARGET; the exact missing artifact is a canonical seed-determined Markov partition whose nonnegative adjacency matrix is SSE-equivalent to `M_phi`. External Adler-Weiss remains the cited bridge owner, never a core import; ordinary shift equivalence is not sufficient for conjugacy. See `02_REGISTRY/frontier/toral_markov_frontier.csv`.
 
-**[Toral seed-Markov maximality].** The forced dynamical invariants (spectrum, entropy log phi, trace, det) do not determine the Markov partition: distinct admissible nonnegative-integer adjacencies carry the golden Perron data phi -- a 2-rectangle `Mphi=!![1,1;1,0]` (`Mphi^2=Mphi+I`) and a 3-rectangle `A3=!![1,1,0;1,0,0;0,1,0]` (`A3^3=A3^2+A3`, charpoly `x(x^2-x-1)`), plus a same-size relabel `M2!=Mphi` with identical invariants (`D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001`, Lean `D0.Geometry.ToralSeedMarkovMaximalityNoGo`). The rectangle count and adjacency are not forced by the seed; a canonical partition requires an external Adler-Weiss/Williams choice (`D0-ADLER-WEISS-PARTITION-OWNER-001`, passport), not a present-core theorem.## 06.31 φ-discrete RG as a typed forgetting step
+**[Toral seed-Markov maximality].** The forced dynamical invariants (spectrum, entropy log phi, trace, det) do not determine the Markov partition: distinct admissible nonnegative-integer adjacencies carry the golden Perron data phi -- a 2-rectangle `Mphi=!![1,1;1,0]` (`Mphi^2=Mphi+I`) and a 3-rectangle `A3=!![1,1,0;1,0,0;0,1,0]` (`A3^3=A3^2+A3`, charpoly `x(x^2-x-1)`), plus a same-size relabel `M2!=Mphi` with identical invariants (`D0-TORAL-SEED-MARKOV-MAXIMALITY-NOGO-001`, Lean `D0.Geometry.ToralSeedMarkovMaximalityNoGo`). The rectangle count and adjacency are not forced by the seed; a canonical partition requires an external Adler-Weiss/Williams choice (`D0-ADLER-WEISS-PARTITION-OWNER-001`, passport), not a present-core theorem.
+
+## 06.31 φ-discrete RG as a typed forgetting step
 
 The renormalization bridge is a typed forgetting map over the D0 scale ladder. At level `k`, the comparison scale is
 

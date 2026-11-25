@@ -109,7 +109,7 @@ The boundary rule is:
 ```math
 S_{D0}^\varphi\ \text{and the response theorem} \in Books 01--02,
 \qquad
-S_{finite variational test functional},J_{finite incidence/clique complex},\Lambda_{act},S_\partial\in\text{Book 03},
+S_{gate},J_{scene},\Lambda_{act},S_\partial\in\text{Book 03},
 ```
 
 ```math
@@ -125,7 +125,7 @@ Thus this book is a bridge from invariant finite registration to finite dynamics
 Once a finite incidence/clique complex has been constructed, D0 does not introduce a continuum Lagrangian and then regulate it. The action is a finite admissible stack of operators, projectors, spectra, boundary terms and quadratic responses:
 
 ```math
-\mathcal S_{stack}=J_{finite incidence/clique complex}+S_{coeff}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}.
+\mathcal S_{stack}=J_{scene}+S_{coeff}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}.
 ```
 
 The order is not cosmetic. Scene selection comes first; finite variational test functional coefficients follow; the full-cycle action section fixes the single dimensional dictionary; the boundary block fixes the non-diagonal curvature residual; heat depth controls the length map; terminal terms record the final charged or leaking shell.
@@ -235,14 +235,16 @@ The log/Neumann expansion is allowed only under `|z|\rho(F_N)<1`; the resolvent 
 
 **[Static-to-dynamics pointer].** The finite log-det / action calculus scores histories over an ALREADY-FORCED tick: static self-readout produces the ordered archive-delay index `k` (BOOK_06 §06.8.S, `D0-STATIC-TO-DYNAMICS-OWNER-001`), so the action functional ranges over that forced discrete tick, not over a primitive background time.
 
-**[Constrained Hamiltonian embedding bridge].** The D0 feedback/action calculus has a standard formalism bridge to constrained Hamiltonian embeddings of non-reciprocal systems: in that language the enlarged finite space carries the Hamiltonian/symplectic structure (a symplectic `J` with `J²=−I`), while the effective active-sector dynamics appears on a constraint submanifold after auxiliary degrees are eliminated. This is a FORMALISM bridge, not a new D0 axiom (`D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001`, PASSPORT-CLOSED; Nature Physics 2026 `s41567-026-03317-0`).## 03.4 Scene/finite variational test functional backbone
+**[Constrained Hamiltonian embedding bridge].** The D0 feedback/action calculus has a standard formalism bridge to constrained Hamiltonian embeddings of non-reciprocal systems: in that language the enlarged finite space carries the Hamiltonian/symplectic structure (a symplectic `J` with `J²=−I`), while the effective active-sector dynamics appears on a constraint submanifold after auxiliary degrees are eliminated. This is a FORMALISM bridge, not a new D0 axiom (`D0-NONRECIPROCAL-ACTIVE-DYNAMICS-FORMALISM-BRIDGE-001`, PASSPORT-CLOSED; Nature Physics 2026 `s41567-026-03317-0`).
+
+## 03.4 Scene/finite variational test functional backbone
 
 The finite incidence/clique complex is not background spacetime. It is the finite register on which action can be evaluated. The active action spine is:
 
 ```math
 K(9,11,13)
 \to
-S_{finite variational test functional},J_{finite incidence/clique complex}
+S_{gate},J_{scene}
 \to
 \mathcal G_{spec}
 \to
@@ -387,7 +389,7 @@ Book 04 may use this cell in hadron or coefficient comparison protocols, but Boo
 The D0 equation of motion is not a continuum Euler-Lagrange equation at fundamental level. It is a finite stationarity condition on the finite incidence/clique complex variables:
 
 ```math
-\nabla_{x\in\mathcal X_N}\left(J_{finite incidence/clique complex}+S_{finite variational test functional}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}\right)=0.
+\nabla_{x\in\mathcal X_N}\left(J_{scene}+S_{gate}+S_\Lambda+S_\partial+S_{heat}+S_{terminal}\right)=0.
 ```
 
 After the halt quotient and forgetting map, continuum equations may appear as limits or bridge dictionaries. They are not the primitive input.
@@ -534,9 +536,9 @@ Book 03 rejects the following moves:
 
 | Claim | Status | Canonical placement | Name | Forbidden shortcut | Falsification hook |
 |---|---|---|---|---|---|
-| `D0-SCENE-002` | CORE-ACTION | BOOK_03 | J_finite incidence/clique complex selects K(9,11,13) | Do not read J_finite incidence/clique complex as fitted polynomial for later constants. | Different admissible zero of the same typed obligations or wrong graph invariants. |
+| `D0-SCENE-002` | CORE-ACTION | BOOK_03 | J_scene selects K(9,11,13) | Do not read J_scene as fitted polynomial for later constants. | Different admissible zero of the same typed obligations or wrong graph invariants. |
 | `D0-MATH-001` | D0-RESOLUTION-EXACT | BOOK_03 | Finite phi-runtime and stop ideal | Do not add infinite correction layers below I12. | A physical scalar claim requires distinguishing below I12 inside D0 grammar. |
-| `D0-ACTION-001` | CORE-ACTION | BOOK_03 | S_finite variational test functional/J_finite incidence/clique complex backbone | Do not close Born, entropy, leptons, or dynamics by unrelated formulas. | Mismatch between books or failure of Boundary Residual Eigenvalue r_∂ / I_B / action-spine consistency. |
+| `D0-ACTION-001` | CORE-ACTION | BOOK_03 | S_gate/J_scene backbone | Do not close Born, entropy, leptons, or dynamics by unrelated formulas. | Mismatch between books or failure of Boundary Residual Eigenvalue r_∂ / I_B / action-spine consistency. |
 | `D0-METRO-002` | SINGLE-SECTION-OUTPUT | BOOK_03 | Lambda_act single action section | No proton, W/Z, Planck, G_N, H0, or dark anchor as second scale. | Any closed prediction requiring an independent sector scale. |
 | `D0-BOUND-001` | D0-RESOLUTION-EXACT | BOOK_03 | Boundary Residual Eigenvalue r_∂ and boundary curvature residual | Do not fit q_res with arbitrary scalar factor or reopen an infinite residual spiral. | Boundary residual cannot be produced below I12 by admissible cell. |
 | `D0-QM-001` | CORE-MEASUREMENT | BOOK_02/BOOK_03 | Born/Hilbert finite trace ratio | Do not postulate continuum Hilbert space before finite trace. | Negative or unnormalized probabilities from finite Hessian readout. |
@@ -567,7 +569,7 @@ The integrated calibration DAG is
 ```text
 finite verification algebra
   -> delta0, Omega8, K(9,11,13), rank/nullity data
-  -> S_finite variational test functional / J_finite incidence/clique complex
+  -> S_gate / J_scene
   -> spectral and boundary invariants
   -> single action section Lambda_act
   -> matter, weak-rate, gravity, entropy, dynamics and survey readouts.
@@ -873,7 +875,9 @@ In `D0.Condensed.SolidPhi`, the condensed mathematics of Clausen–Scholze and E
 
 **[vNext: the CANONICAL scale is `φ^N` — Outcome C localized (`D0-VNEXT-MARTINGALE-DIRAC-CANONICAL-SCALE-OWNER-001`).** The underdetermination above is exactly Christensen–Ivan's freedom: for a *generic* AF algebra, once a Dirac exists its eigenvalues may be scaled up arbitrarily, so `λ_N = φ^N` and `λ_N = 2^N` are equally admissible by the axioms alone. But this tower is not generic — it carries the already-Lean-proved Perron scale flow (`D0-PERRON-SCALE-FLOW-OWNER-001`: *every* internally-defined refinement scale of the golden Bratteli tower has step ratio exactly `φ`, the same "golden carrier, Perron `φ`" that fixes the multiplicity growth in the maximality no-go above). An *internally sourced* martingale-Dirac scale (ratio inherited from the tower's own refinement flow) therefore satisfies `λ_{N+1}/λ_N = φ` at every level, which pins `λ_N = λ_0·φ^N` — unique up to the free dimensionless base `λ_0` that is the standard overall-scale freedom of any spectral triple. The rival `2^N` is admissible-but-**external**: `2` is not a unit in `ℤ[φ]` (`N(2)=4`, while `N(φ^k)=(-1)^k` is always a unit), so `2` is not any power of `φ` and its ratio `2 ≠ φ` cannot be sourced from the tower. Moreover `φ^{kN}=(φ^N)^k`, so the whole `φ`-ladder consists of operator *powers* `D_1^k` of the fundamental Dirac — the standard "which power is the Dirac" freedom, not a fresh D0 primitive. So Outcome C does not say "the scale is a free internal degree of freedom"; it says, correctly, that *external* scale-import survives the axioms — and once the internal Perron flow is imposed, the residual freedom collapses to the dimensionless base. Lean `D0.VNext.CanonicalMartingaleDiracScale` (`canonical_martingale_dirac_scale_owner`, compiles against Mathlib, rc=0); failable cert `vp_vnext_canonical_dirac_scale_owner.py`.
 
-**[vNext+1: AF martingale Dirac stays FORMALISM].** The anchored scene comparison fails (no canonical Xi; scale-independent spectral mismatch), so the AF martingale Dirac and its finite log-det action remain FORMALISM, not D0 physical dynamics. The two interfaces remain independent primitives (`D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001`). No physical sector is opened.## 03.21a Gap labels do not create new action sections
+**[vNext+1: AF martingale Dirac stays FORMALISM].** The anchored scene comparison fails (no canonical Xi; scale-independent spectral mismatch), so the AF martingale Dirac and its finite log-det action remain FORMALISM, not D0 physical dynamics. The two interfaces remain independent primitives (`D0-VNEXT-JOINT-DIRAC-ANCHOR-NOGO-001`). No physical sector is opened.
+
+## 03.21a Gap labels do not create new action sections
 
 The topological gap labels assigned to spectral gaps do not introduce new action sections or ad-hoc scalar field parameters. They serve as discrete indices of existing sectors on the tiling hull rather than defining new energy anchors. All calculations remain strictly constrained by the single metrological section $\Lambda_{act} = 38 m_e c^2$. The Lean owner records that gap labeling requires a frozen operator, and the integration is checked by the final bridge index.
 

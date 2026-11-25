@@ -128,7 +128,9 @@ The CORE-compatible language of finiteness is therefore the localized spectral p
 
 **[Final-claim reading rule].** A claim may be cited as *closed* only if it names a theorem / certificate / no-go / passport owner of record (never status prose alone); the continuation guard `vp_continuation_no_status_only_diff.py` enforces this. The static-to-dynamics chain (static scene -> `[J,Y]≠0` order obstruction -> Feshbach archive-delay tick -> `φ⁻¹` weight -> semigroup envelope) is closed at the mechanism level (`D0-STATIC-TO-DYNAMICS-OWNER-001`, BOOK_06 §06.8.S); global closure is NOT asserted — the named open front is `02_REGISTRY/frontier/continuation_frontier.csv`.
 
-**[Closure-campaign rule].** Major closure campaigns must follow `02_REGISTRY/frontier/verification_protocol.md` before promoting proof-targets: a grounded verification scout checks the mathematical route first, and a proof-target is closed only with a real owner (Lean theorem / finite cert / no-go / passport), reachable negative controls, and a green gate -- never by status migration (`D0-VERIFIED-CLOSURE-PROTOCOL-001`).## 00.2 Primitive thesis
+**[Closure-campaign rule].** Major closure campaigns must follow `02_REGISTRY/frontier/verification_protocol.md` before promoting proof-targets: a grounded verification scout checks the mathematical route first, and a proof-target is closed only with a real owner (Lean theorem / finite cert / no-go / passport), reachable negative controls, and a green gate -- never by status migration (`D0-VERIFIED-CLOSURE-PROTOCOL-001`).
+
+## 00.2 Primitive thesis
 
 D0 is a finite-observability framework over a condensed/profinite φ-quasicrystalline tiling hull.
 
