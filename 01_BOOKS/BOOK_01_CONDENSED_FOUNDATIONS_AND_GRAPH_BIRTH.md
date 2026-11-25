@@ -2317,6 +2317,8 @@ Hurwitz extremality (§01.21.1), the Pisot/Sturmian symbolic dynamics (§01.21.2
 icosian→`E_8` embedding (BOOK_02 §02.18), `\varphi` is forced through four independent
 channels — the "`\varphi`-network".
 
+The independence wording above is a historical convergence reading. The audit in `02_REGISTRY/forcing_routes.json` records the Jones index as external corroboration of the already selected value; its selection of the five-slot uses the same golden input. The index-series theorem retains its stated external assumption.
+
 ### 01.21.4 `I_f = \log\varphi`: the categorical↔toral information rate [THE]
 
 The toral symbolic dynamics of §01.21.2 fixes the information rate `I_f = h_{KS} = \log\varphi`

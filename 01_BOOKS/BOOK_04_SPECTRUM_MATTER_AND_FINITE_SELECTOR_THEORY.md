@@ -614,11 +614,15 @@ This is the `3 angles + 1 phase` structure of CKM read off the scene topology, w
 
 **NO-GO on a 4th generation via M1 [^b04-30].** Suppose a 4th generation. A 4th generation is a 4th interface, which requires a 4th zone, which is a 4th structural necessity, hence a new distinguishing role, hence an entry in an external catalog to label that role — forbidden by M1. ⊥. The generation count is therefore closed at three not by tuning but by the catalog-freeness of the scene. **[^b04-24].**
 
+The preceding fourth-generation argument uses the chain from a further generation to a new zone and a new necessity-type as a premise. The full no-fourth-zone owner `D0-TOWER-STOP-NOEXT-001` remains PROOF-TARGET: its new-type branch requires a semantic exhaustivity theorem. The typed three-generation carriers keep their own stated scope.
+
 The static reading is separately ruled out: the bare interface-connectivity operator `M_ij = shared/√(cap_i·cap_j)` gives near-flat angle ratios `~1 : 1.09 : 0.90`, against the observed `1 : 0.19 : 0.017`. Hierarchy is therefore not static — M1 forces dynamical mass-dressing of the holonomy (GOLDEN D0-THEORY-DOSSIER THE IV.2). **[^b04-25].**
 
 ### 04.4.5 CKM K-class and oriented CP area
 
 The CP phase is the oriented noncommutative area of this holonomy, classifying the CKM K-class. By 04.4.4 the cycle rank of the interface triangle is `1`, so this oriented area carries exactly one irreducible phase — the single CKM CP phase, not a free parameter.
+
+This cycle-rank reading requires a bridge from the interface holonomy to the physical mixing phase. The finite cyclic-shift witness and the open basis-completion boundary are recorded in §04.10.
 
 ### 04.4.6 CKM↔PMNS hierarchy inversion from rank-nullity
 
@@ -628,6 +632,8 @@ The CP phase is the oriented noncommutative area of this holonomy, classifying t
 - **Neutrinos** live in the 30-fold degenerate kernel (the Sterile Archive). Degeneracy means no preferred basis, so rotation is unobstructed ⇒ **PMNS mixing is large**.
 
 So the long-standing Standard-Model puzzle — why quark mixing is tiny while lepton mixing is order-one — is read off `rank 3` vs `nullity 30` of one fixed scene, with **zero free parameters**. The kernel further inherits the three-zone split `30 = 8 ⊕ 10 ⊕ 12` (intra-zone difference vectors), so the zeroth-order PMNS pattern is zone democracy — the tri-bimaximal/trimaximal pattern is pulled into place rather than fitted (GOLDEN D0-THEORY-DOSSIER THE IV.4). **[^b04-26].**
+
+The preceding rank/nullity interpretation is qualitative. The finite Davis–Kahan bound `D0-CKM-DAVIS-KAHAN-GAP-BOUND-001` additionally requires a source mismatch and a spectral gap; the present-core basis completion is underdetermined by `D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001`. Section §04.10 records the remaining Higgs/Yukawa selector and the status of the angle calculation.
 
 ### 04.4.7 Window-sector fractional charges
 
@@ -925,6 +931,8 @@ The matter facts of this book (fractional charge, three generations, the spin-1/
 **[THE 04.6.M1.charge] Fractional charge `{−1/3,+2/3}` from `A₂` projection [^b04-68]. [^b04-49].** Charge `Q` is the linear functional projection on the weight lattice of the fundamental `SU(3)` representation (root system `A₂`).  A baryon is a closed 3-knot simplex carrying one unit phase winding; indistinguishable nodes split it as `1/3`, and projecting the equilateral-triangle vertices on the scene's center↔shell symmetry axis yields exactly `+2/3,−1/3,−1/3`.  Any other value (e.g. `0.5`) distorts the triangle and needs a deformation catalog — forbidden by M1.  This is the GOLDEN `A₂` weight-lattice forcing; it is *distinct from* and complementary to the cut-and-project quasicrystal window weights of 04.4.6/04.4.7, which reach the same `±2/3,−1/3` numbers by a different route.
 
 **[THE 04.6.M1.gen] Three boundary types ⇒ three generations [^b04-69]. [^b04-50].** The generation index is the zone label `9/11/13` of the minimal scene.  A fermion is a boundary resonance, and the 3D projection of the scene has exactly three boundary types: center/point `→ e`, torus/cycle `→ μ`, shell/sphere `→ τ`.  No fourth boundary type exists in 3D, so a fourth generation needs a fourth dimension or a hand-inserted boundary-type index — a catalog forbidden by M1.  This is the GOLDEN 3-boundary-type completeness argument; it is the structural complement to the `F₂` branch-defect generation index of BOOK_01 §01.23.
+
+The zone-to-lepton assignment in the preceding paragraph is a boundary-type reading. The canonical reconciliation of three geometric lines with the two nontrivial lepton orbits remains open in §04.10; the fourth-zone exhaustivity obligation remains `D0-TOWER-STOP-NOEXT-001` (PROOF-TARGET).
 
 **[THE 04.6.M1.grav] Gravity weakness as area-vs-volume holonomy [^b04-70]. [^b04-51].** Interaction strength scales as `1/N` with the number of interaction partners.  Local gauge forces act on the lightcone surface ("now"), `N∼R²`; gravity is a holonomic/memory force acting over the whole 4D history volume, `N∼R⁴`.  Hence the CORE ratio
 
