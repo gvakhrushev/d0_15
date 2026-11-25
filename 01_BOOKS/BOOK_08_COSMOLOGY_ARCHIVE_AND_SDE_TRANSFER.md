@@ -117,7 +117,7 @@ statements are:
 
 ```text
 internal_archive_shape_independent_of_empirical_parameters
-survey_external comparison protocol_preserves_internal_archive_shape
+survey_passport_preserves_internal_archive_shape
 survey_comparison_requires_nonempty_manifest
 survey_likelihood_cannot_promote_to_core_cosmology
 frozen_archive_cosmology_core_shape_closed
@@ -1351,7 +1351,9 @@ For any one-mode Lorentzian denominator the squared-scale tilt is
 \[
 -\frac{2q}{q+\lambda}.
 \]
-Hence the prescription $q_*=\lambda$ gives $-1$ for **every** nonzero $\lambda$; the value does not use the special graph eigenvalue $20$.  Lean now records this universal identity in `D0.Cosmology.FiedlerTiltTautologyNoGo`.  At fixed $\lambda=20$, $q=20$ gives $-1$ while $q=40$ gives $-4/3$, so scale dependence remains after the projection.  The honest conclusion is therefore: the Fiedler projector removes an overall weighting ambiguity, but the CMB tilt selector remains underdetermined until an independently forced scale/pivot rule is supplied.## 08.50 Orbit-averaged trace expansion
+Hence the prescription $q_*=\lambda$ gives $-1$ for **every** nonzero $\lambda$; the value does not use the special graph eigenvalue $20$.  Lean now records this universal identity in `D0.Cosmology.FiedlerTiltTautologyNoGo`.  At fixed $\lambda=20$, $q=20$ gives $-1$ while $q=40$ gives $-4/3$, so scale dependence remains after the projection.  The honest conclusion is therefore: the Fiedler projector removes an overall weighting ambiguity, but the CMB tilt selector remains underdetermined until an independently forced scale/pivot rule is supplied.
+
+## 08.50 Orbit-averaged trace expansion
 
 Cosmological expansion is the macroscopic orbit-average of completed terminal trace emissions. With
 

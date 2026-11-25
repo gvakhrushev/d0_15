@@ -315,18 +315,20 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 ### BOOK 04: Spectrum, Matter, and Finite Selector Theory
 - **Matter as Resonant Modes:** Particles are terminally projected near-critical feedback modes ($F_N \psi_j = r_j \psi_j$ with $|z r_j| \approx 1$ and $P_\mathrm{term} \psi_j = \psi_j$).
 - **SM-Facing Gauge Ledger (frozen boundary):** `SMGaugeDecomposition.lean` freezes the factor labels $[\mathrm{SU}(3),\mathrm{SU}(2),\mathrm{U}(1)]$, the one-generation Weyl ledger, and exact rational anomaly cancellations. `AlbertSMProjection.lean` proves dimension/charge alignment only; the repository does **not yet own** an explicit commutant/automorphism theorem deriving the Standard Model gauge group from the finite carrier.
-- **Hypercharge Quantization:** Anomaly cancellation sums on the discrete lattice force hypercharge denominators to be quantized in multiples of $1/6$ (`SMCharges.lean`, `AnomalySums.lean`, `HyperchargeMinimalDenominator.lean`).
-- **Mass Hierarchy via Puiseux Series:** Lepton and quark mass eigenvalues expand in Puiseux series in deformation parameter $\varepsilon = \varphi^{-n}$ on Riemann–Hurwitz branched coverings (`LeptonRiemannHurwitzBranchIndex.lean`, `LeptonGreenPuiseuxOwner.lean`), removing arbitrary Yukawa couplings.
-- **CKM & PMNS Phason Holonomies:** Flavour mixing matrices are computed as topological holonomies of phason displacement waves around scene boundary singularities (`CKMPhasonHolonomy.lean`, `PMNSSeamTopology.lean`).
+- **Hypercharge quantization:** The anomaly equations select the five-field row up to normalization and the up/down exchange on its nondegenerate branch. The minimal denominator 6 follows separately from integer baryon charge with the declared doublet charges and color-singlet triples (`SMHyperchargeRowOwner.lean`, `HyperchargeMinimalDenominator.lean`).
+- **Clifford/CAR and the typed generation bridge:** Lean owns the finite Clifford relations, monomial traces and Witt CAR. The numerical rank checks at 24 and 48 are partial support. Explicit independent source families, the common gauge action and the typed map to the D0 generation carrier remain `PROOF-TARGET` in [BOOK_04 §04.8](01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#048-charged-leptons-as-a-concrete-finite-variational-selector-family).
+- **Majorana charge condition:** Uncompensated bilinear neutrality implies `b = 0` in the six-field charge family. A charged scalar allows cancellation with `qφ = -2b`. The [conditional algebra in §04.8](01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#majorana-albert-charge) and the [fixed-carrier obstruction in §04.11](01_BOOKS/BOOK_04_SPECTRUM_MATTER_AND_FINITE_SELECTOR_THEORY.md#majorana-frozen-scene) address these premises at their respective scopes.
+- **Lepton branch data:** Riemann–Hurwitz and the finite Green/Puiseux model constrain the internal branch indices. The physical coefficient row and EFT/IR mass matching are separate obligations (`LeptonRiemannHurwitzBranchIndex.lean`, `LeptonGreenPuiseuxOwner.lean`).
+- **CKM and PMNS:** The finite CKM transport constrains the relative basis geometry (`CKMPhasonHolonomy.lean`). `PMNSSeamTopology.lean` checks the angle directions of the declared seam ansatz. Numerical mixing comparisons use the sector passports.
 
 ### BOOK 05: Verification Status and Certificate Discipline
-- **Status Classification:** Rigorous stratification of all claims into `CORE-FORMALIZED` (Lean 4, zero axioms), `OPERATOR-SCAFFOLD-CERTIFIED`, `PASSPORT-CLOSED`, and `PROOF-TARGET`.
+- **Status classification:** Claim records distinguish proof evidence, declared assumptions and release status. Read `CORE-FORMALIZED`, operator scaffolds, passports and proof targets at the scope given in [claims.csv](02_REGISTRY/claims.csv).
 - **Centralized No-Go Ledger:** Complete catalog of forbidden shortcuts (`D0_NOGO_LEDGER`) — forbidding flat tensors, non-topological selectors, non-quadratic measures, and ad-hoc continuum field substitutions.
 - **Phase-Unfolding Theorem:** Proof that irrational $\varphi^{-2}$ phase rotation on discrete lattices generates the exact return modulus $q_T = 44$ and electroweak modulus $q_\mathrm{EW} = 710$ (`PhaseUnfoldingQuasicrystal.lean`).
 
 ### BOOK 06: Evolution, Forgetting, and Time
-- **The Arrow of Time as a CPTP Channel:** Time direction is the ordering induced by normalized Markovian coarse-graining channels $\hat{\Phi}_N(\rho) = \Phi_N(\rho)/\mathrm{Tr}\Phi_N(\rho)$.
-- **Entropy Monotonicity:** Monotone information loss and entropy growth are proved on the finite carrier, providing an irreversible thermodynamic arrow from terminal readout.
+- **Finite evolution and conditional normalization:** The ordering uses the declared coarse-grained feedback map $\hat{\Phi}_N(\rho) = \Phi_N(\rho)/\mathrm{Tr}\Phi_N(\rho)$ when the trace is positive. Linearity and trace preservation belong to the chosen channel before any state-dependent normalization.
+- **Entropy monotonicity:** The finite inequalities apply to the designated normalized coarse-grained dynamics under the entropy-monotonicity hypotheses of BOOK_06.
 - **Seam Fluctuation Relaxation:** Renormalization-group flow and dissipation of boundary defect noise across coarse-graining scales.
 
 ### BOOK 07: Gravity Limit and Finite Geometry
@@ -337,8 +339,8 @@ The research corpus is structured into 10 sequential books (`01_BOOKS/BOOK_00` .
 
 ### BOOK 08: Cosmology, Archive, and SDE Transfer
 - **Conditional dark-EOS exclusion of $w=-1$:** `LambdaCDMExcluded.lean` proves $w=-1$ is absent **inside the adopted discrete EOS family** $w=-\varphi+s/30$ (and companion role-assignment models give a separate arithmetic exclusion). The role-to-pressure/energy interpretation and weighted-mean EOS are modelling premises; this is not a theorem that every open graph with unitary archive dissipation excludes $\Lambda\mathrm{CDM}$.
-- **Cosmological SDE & $w(z)$ Drift:** Vacuum energy evolution obeys a stochastic differential equation (SDE) of phason-archive interaction, predicting a thawing/freezing deviation from $w=-1$ tested against DESI BAO and Planck CMB data (`DarkArchiveTransfer.lean`, `vp_phason_thawing.py`).
-- **Sandage–Loeb Redshift Drift:** Cosmic acceleration drift $\dot{v} = c \frac{\dot{z}}{1+z} + \Delta_\mathrm{phason}(z)$ derived from the desynchronization rate between detector and source discrete ticks (`RedshiftExpansionArchiveCoupling.lean`).
+- **Finite `S_DE` transfer:** The normalized active scene has a two-mode representation. A physical $w(z)$ profile requires a pressure/energy and redshift map. The internal phason envelope and the magnitude nonuniqueness are recorded separately in BOOK_08.
+- **Redshift drift:** The finite depth relation fixes changes in the internal redshift variable. The SI conversion requires a clock map. The direct drift test and the coupled constant-rate FLRW test have their own outcomes in [05_EXPERIMENTS](05_EXPERIMENTS/reports/).
 
 ### BOOK 09: Gravitational Waves and Quantum Interferometry
 - **Apple/Spindle Torus Horizon Geometry:** Binary merger boundary modeled as a finite toroidal readout geometry with two axial release lobes and an equatorial capacity belt.
@@ -486,7 +488,7 @@ tools/              Repository validator, Lean view generator, and test runners
 
 Choose checks by the changed surface using the
 [validation budget](00_WORK/README.md#validation-budget). The commands below
-are reference commands, not a checklist to repeat after every edit.
+use the CI baseline Python 3.11. Run them from the repository root.
 
 ```bash
 # Validate CSV registry integrity, imports, and lack of orphan Lean modules
@@ -542,7 +544,7 @@ scientific obligations; relabelling them as an interface problem does not close 
 1. **Alpha Dixmier Trace (`AlphaProfiniteTowerNoGo`):** Rather than seeking external Feshbach regulators to force continuous integration on profinite sets, the tower is resolved as an inductive limit of Fibonacci $AF$-algebras (`D0/VNext/FibonacciAFAlgebra.lean`, `PerronGNSTower.lean`), whose unique tracial state normalizes the Cesàro residue endogenously via Perron–Frobenius powers $\varphi^{-k}$.
 2. **Action threshold and remaining price (`EndogenousActionQuantum`):** The abstract `ActionProtocol` has the unit lower bound $S_{\mathrm{min}}=1$ for nonidentity transitions. Its exact excess-profile classification leaves independent nonnegative excess costs; attainment and relative prices are not fixed by that floor. The [formal owner](03_FORMALIZATION/D0/Foundation/EndogenousActionQuantum.lean) and [prospective owner](03_FORMALIZATION/D0/Foundation/ProspectiveExecution.lean) supply the reusable boundaries. The native full Cost-Info, field interpretation and continuation law remain the current physical bridge.
 3. **Finite-to-continuum quantum-metric boundary:** The internal Lean result is deliberately narrower than a quantum-propinquity theorem: a geometric stage-step bound $d(x_k,x_{k+1})\le C\delta_0^k$ implies Cauchyness in any pseudometric space, and convergence in a complete one. The repository does **not** currently construct Rieffel compact quantum metric spaces, tunnels/bridges, or a quantum Gromov–Hausdorff/propinquity distance for the D0 stages. Those objects and their convergence remain the explicit external bridge `ASSUMP-RIEFFEL-GHP` (`D0/Bridge/RieffelGHPBridge.lean`).
-4. **Cosmological SDE Smoothing (`CMBNsSmoothingUndeterminedNoGo`):** Spatial convolution with arbitrary continuous Gaussian kernels $\sigma$ is replaced by the canonical discrete spectral projector of the Hodge Laplacian onto the lowest non-trivial Fiedler eigenspace (`CMBFiedlerFreezeout.lean`), fixing $n_s$ through combinatorial projector ranks.
+4. **CMB smoothing (`CMBNsSmoothingUndeterminedNoGo`):** The finite Fiedler projector fixes a weight in the declared spectral model. The smoothing coordinate and scale still affect the tilt $n_s$. BOOK_08 records a separate control for the apparently universal value obtained by setting the smoothing scale to the eigenvalue.
 
 For full technical specifications, advanced mathematical integrations, and Lean formalization roadmaps, see:
 - [02_REGISTRY/frontier/FRONTIER_STRATEGY.md](02_REGISTRY/frontier/FRONTIER_STRATEGY.md) — Historical exploration of possible frontier routes; not the active definition of done.

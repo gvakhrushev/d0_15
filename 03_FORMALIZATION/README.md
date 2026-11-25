@@ -5,72 +5,44 @@ release core is theorem-bearing Lean code; bridge files expose assumptions
 explicitly instead of promoting external physics or empirical pipelines into
 core theorems.
 
-Required checks:
+## Check a change
+
+Use the Lean toolchain and Lake manifest checked into this directory. The Python
+checks below use the CI baseline, Python 3.11. From the repository root:
 
 ```bash
-../tools/lean_dev.ps1 build
-../tools/lean_dev.ps1 build D0
-../tools/lean_dev.ps1 build D0.All
-python tools/check_no_sorry_in_core.py
-python tools/check_claim_map_coverage.py
+python 03_FORMALIZATION/tools/check_no_sorry_in_core.py --all
+python 03_FORMALIZATION/tools/check_claim_map_coverage.py
+python tools/generate_lean_views.py --check
 ```
 
-Optional acceleration:
+On Unix, use the project's build helper to serialize access to the Lake cache:
 
 ```bash
-../tools/lean_dev.ps1 exe cache get
+python tools/lean_task_build.py narrow D0.Algebra.AlbertJordan
+python tools/lean_task_build.py final
+```
+
+For a direct Lake invocation, including native Windows:
+
+```bash
+cd 03_FORMALIZATION
+lake exe cache get  # optional Mathlib cache
+lake build D0.All
 ```
 
 ## Build-cache policy
 
-Normal development and worker verification should preserve the Lake/Mathlib cache.
+For a proof edit, build the affected module while iterating. Run the incremental
+`D0.All` build once after narrow checks pass. GitHub's D0 Lean workflow supplies
+the independent integration build when the formalization changes. The
+[validation budget](../00_WORK/README.md#validation-budget) defines the checks
+for other surfaces.
 
-Use:
-
-1. a narrow target build while iterating;
-2. one incremental \`lake build D0.All\` before PR/REVIEW;
-3. the GitHub \`D0 Lean build\` check as the independent integration build.
-
-Do **not** run \`lake clean\`, remove \`.lake\`, or delete the global Mathlib cache merely to obtain "clean evidence". A forced cold rebuild is reserved for toolchain/dependency changes, confirmed cache corruption, or an explicit CONTROL/release request.
-
-The "Rebuild from a clean checkout" recipe below is recovery/bootstrap documentation, not a per-worker Definition of Done.
-
-Known Windows cache issue: `lake exe cache get` may fail when the global
-mathlib cache under `~/.cache/mathlib` is inconsistent.  This is a
-precompiled-cache download/decompression issue, not a D0 proof-checking
-failure, if `lake build`, `lake build D0`, and `lake build D0.All` pass.
-Recommended repair is to remove the global mathlib cache, run `lake update`,
-run `lake exe cache get`, then run `lake build`.
-# Local Lake Storage
-
-This project keeps heavy Lake dependency and build artifacts outside the
-repository by default. Lake manages its cache (usually under `~/.lake` or a
-location controlled by the `LAKE_HOME` / `LAKE_CACHE_DIR` environment variables).
-
-The committed files are: sources, `lean-toolchain`, `lakefile.lean`, and
-`lake-manifest.json`.  A small `.lake/config` directory may appear during
-configuration; the full `.lake/` tree is git-ignored and disposable.
-
-Rebuild from a clean checkout:
-
-```bash
-cd 03_FORMALIZATION
-../tools/lean_dev.ps1 update
-../tools/lean_dev.ps1 exe cache get   # optional, speeds up mathlib
-../tools/lean_dev.ps1 build
-../tools/lean_dev.ps1 build D0
-../tools/lean_dev.ps1 build D0.All
-```
-
-Do not commit `.lake/` or generated cert result files. On Windows, the repo
-runner keeps `.lake` as a junction to an external cache root:
-`$HOME/.d0_lean_cache/D0_v14/03_FORMALIZATION/.lake`. Set
-`D0_LEAN_CACHE_ROOT` to override that location.
-
-If you previously used a custom absolute path in `lakefile.lean`, remove it
-before sharing or cloning on another machine. The portable default is strongly
-recommended.
-
+Keep the pinned manifest and reuse the Lake and Mathlib caches. A fresh build
+is useful when toolchain or dependency inputs change or cache corruption has
+been confirmed. Keep generated Lake artifacts and certificate outputs outside
+version control.
 
 ## v12.17 Branch-Defect Projective Generation
 
