@@ -2,7 +2,7 @@
 
 This directory contains CONTROL-curated research packets that materially affect D0 roadmap decisions but are not yet proof owners.
 
-Latest same-carrier route correction:
+Earlier same-carrier route correction:
 [the original joint-field-minimum exclusion](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md).
 The configured full source and Einstein/CAR stationary family are preserved,
 but the source-preserving stopped price has a strict same-boundary descent.
@@ -41,6 +41,25 @@ Current gravity packets:
 - `A4D_RESONANCE_DIVISOR_RANK_LAW.md` — exact counterexample to the proposed phase-count nullity law, with the full character determinant still a nonempty proper divisor.
 - `A4D_ORTH3_NONFLAT_T3H_RESPONSE.md` — full #275 Orth3 (t^3h) source has a Fredholm obstruction; the direct nonflat-solder metric coefficient is nonzero but is not a stationary-sheet residue.
 - `MEMO_A4D_WARD_DIVISOR_SMITH_POLE.md` — exact diagonal local Smith exponents `(1,1,1,1,2,2,2,2)`; finite coordinate-column pole fits are separated from invariant factors, and stationary response remains open.
+
+## Published research checkpoints reproduced for main
+
+These replays preserve the source checkers and their declared finite scope.
+The original proof owners remain the pilot and their respective PRs. The
+recorded physical price binding remains open, with `GR_closed=false`.
+
+| Source and scope | Local executable evidence |
+|---|---|
+| [Pilot A91, prepared cold return](https://github.com/gvakhrushev/d0_15/blob/56d097dbae19d5dd9798150f5dd1ba3715dd33f6/02_REGISTRY/research/sources/d0_two_agent_pilot_2026-11-13/direct/round91/clock/PREPARED_COLD_RU.md). Both determinant polarities recover the two H.1 fixture rows on the specified prepared cut. | [Checker](sources/d0_two_agent_pilot_2026-11-13/direct/round91/clock/check_prepared_cold.py) · [Published and reproduced JSON](sources/d0_two_agent_pilot_2026-11-13/direct/round91/clock/prepared_cold_result.json) |
+| [PR #334, guarded dummy reading](https://github.com/gvakhrushev/d0_15/blob/fdb4565363c57cd23b0ee22e9bafdd7f5f3e973e/02_REGISTRY/research/sources/d0_gr_2026-11-18/followups/2026-11-19/metric/GUARDED_DUMMY_CQ_READER_RU.md). The declared recorded CQ slope and coherent RAW parity are checked on their two specified cuts. | [Checker and its input directory](sources/d0_gr_2026-11-18/followups/2026-11-19/metric/check_guarded_dummy_cq_reader.py) · [Published JSON](sources/d0_gr_2026-11-18/followups/2026-11-19/metric/guarded_dummy_cq_reader_result.json) |
+| [PR #402, fixed-support Parry comparison](https://github.com/gvakhrushev/d0_15/blob/e9a3a87dd0ce46e74e4a41fcfad26e98e7e0fe39/02_REGISTRY/research/sources/d0_validated_parry_price_2026-11-06/README.md). The symbolic check gives a constant scalar moment and a separate mean-price source on the three declared outcomes. | [Checker](sources/d0_validated_parry_price_2026-11-06/check.py) |
+
+The replay used CPython 3.13.5, NumPy 2.5.5, mpmath 1.3.0, and SymPy 1.14.0.
+Run each checker with `python -BO -W error`. The Parry check also gave the same
+output in normal mode. A91 reproduced its JSON exactly. The guarded dummy
+checker passed all built-in checks. Two `full_CQ_direct_difference` fields
+differed from the archived output by `8.881784197e-16` in absolute value,
+within the existing `2e-12` direct-CQ check. The archived output is preserved.
 
 ## Pending control intake
 

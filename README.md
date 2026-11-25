@@ -477,6 +477,7 @@ tools/              Repository validator, Lean view generator, and test runners
 - **Public prose cannot outrun its owner.** README/BOOK/monograph statements must preserve the theorem's actual quantifiers, candidate class, and BRIDGE/NO-GO conditions. A later NO-GO or scope repair overrides older narrative wording; stale stronger prose is a repository defect, not an alternative interpretation.
 - **Lean ownership is explicit.** `D0.All` and `ClaimMap.lean` are machine-generated from registered claims and audited in CI. Hand edits are rejected.
 - **Certificates are reachable evidence.** Every python certificate in `04_CERTIFICATES` must be referenced by an active claim in `claims.csv`.
+- **Research input pins apply to the recorded bytes.** Some replays hash entire book files. A change to a pinned book needs a compatible source snapshot and an explicit check of applicability to the edited text.
 - **The release tree is immutable under verification.** Executing certificates writes only to temporary `.build/cert_outputs/`; the git working tree remains clean.
 - **Empirical results never silently promote a core theorem.** External data comparisons stay in `05_EXPERIMENTS/` as `PASSPORT-CLOSED` or `PROOF-TARGET`.
 

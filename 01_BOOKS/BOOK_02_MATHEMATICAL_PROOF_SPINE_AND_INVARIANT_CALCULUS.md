@@ -299,10 +299,10 @@ The protected sources are:
 
 | quantity | active exponent/source |
 |---|---:|
-| gravity length-depth | `99=\|V_9\|\|V_{11}\|` |
-| weak-unlock depth | `19=2γ-1`, `γ=(\|V\|-Rank)/Rank=10` |
+| gravity length-depth | `99=|V_9||V_{11}|` |
+| weak-unlock depth | `19=2γ-1`, `γ=(|V|-Rank)/Rank=10` |
 | action section | `38=2(2γ-1)` |
-| electroweak radial depth | `35=\|V\|+Rank-1=33+3-1` |
+| electroweak radial depth | `35=|V|+Rank-1=33+3-1` |
 | EM residual exponent | `5/8+δ_0/384`; `5/8=(ABCD+1)/Ω_8`; `384=Ω_8·ABCD·dim(g_light)` |
 
 If any listed source is absent from the active book section, the corresponding result must be labelled `STIFFNESS-PROOF-CELL-MISSING`, not promoted as a closed theorem.
@@ -1253,9 +1253,7 @@ which is manifestly positive semidefinite, since `P_N-Π_lab≥0` factors as `K^
 
 **[Iter22 eight-front]** **D0-DIXMIER-FESHBACH-FINITE-HEATTRACE-001 (finite NO-GO, CERT-CLOSED).** The Feshbach–Schur archive block is a *finite* multiset of eigenvalues (dim 30), so its heat trace `Θ(s) = Σ_i exp(-s·λ_i)` is entire and its Maclaurin expansion is a power series indexed by `k ≥ 0` only, with `a_k = (Σ_i (-λ_i)^k)/k!`. Three decidable/`ring` facts are owned (Lean `D0.Spectral.DixmierFeshbachFiniteHeatTrace`, cert `vp_dixmier_feshbach_finite_heattrace.py`): (i) there is **no `1/s` pole** — the residue-slot coefficient `a_{-1}` is structurally `0` (a ℕ-indexed series has no negative index), equivalently `s·Θ(s) = O(s) → 0`; (ii) the value at `s = 0` is the **dimension**, `Θ(0) = a_0 = card = 30` (and emphatically *not* the depth-2 archive moment `μ₂ = 12288/5`); (iii) the **contrast that forces an infinite spectrum**: the truncated tower `Σ_{k<N} x^k = (1−x^N)/(1−x)` stays finite as `x→1` with value exactly `N` (telescoping identity proved at `N=30`), whereas the `1/s` pole with residue `c_{-1}=1` is the *infinite* geometric tower `Σ_{k≥1} e^{-sk}` — absent from every finite truncation. This is an anti-numerology guard: it CANNOT and does not close the Dixmier/Wodzicki residue on the genuinely infinite spectral object, nor the residue→`Δ_α` normalization, which remain the external owner edge `D0-DIXMIER-RESIDUE-OWNER-001` (`ASSUMP-DIXMIER-TRACE`). No measured/CODATA `α` enters.
 
-**[Static-to-dynamics pointer].** The same retained/traced Feshbach–Schur complement used here for the pole / effective-transfer coefficient owners is also the finite time-delay owner: in BOOK_06 §06.8 the Neumann index `k` of the archive resolvent `(I - Q U Q)^{-1}=Σ_k (Q U Q)^k` is cert-closed as the discrete time tick (`D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001`, combined `D0-STATIC-TO-DYNAMICS-OWNER-001`).
-
-## 02.14 Carrier, coefficient and gravity proof blocks
+**[Static-to-dynamics pointer].** The same retained/traced Feshbach–Schur complement used here for the pole / effective-transfer coefficient owners is also the finite time-delay owner: in BOOK_06 §06.8 the Neumann index `k` of the archive resolvent `(I - Q U Q)^{-1}=Σ_k (Q U Q)^k` is cert-closed as the discrete time tick (`D0-FESHBACH-SCHUR-TIME-DELAY-OWNER-001`, combined `D0-STATIC-TO-DYNAMICS-OWNER-001`).## 02.14 Carrier, coefficient and gravity proof blocks
 
 Carrier claims are not independent metaphysics. They are downstream carriers of the finite detector grammar. The light gauge carrier, Lorentz/EH carrier and F-theory admissible carrier are therefore classified as carrier/support bridges.
 
@@ -1301,9 +1299,7 @@ The **sixth** owner, `D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001`, was initia
 
 **[vNext+1: 34-to-33 is a tested quotient, not an identity].** `dim A_3 = 5^2+3^2 = 34` is the dimension of the matrix algebra `M_5(+)M_3` (block sizes = Fibonacci path counts 5,3), NOT `33+1` vertices; `34-1=33` is forbidden as a quotient proof. The spectral/Feshbach matching hierarchy fails: the unique trace=cyclic line gives a 33-dim reduction `su(5)(+)su(3)(+)u(1)=(24,8,1)` that does not match the tripartite scene `(9,11,13)` (`D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001`, Outcome D), and the AF martingale Dirac^2 multiplicities `{1,3,8,21}` differ from the scene Laplacian's `{1,2,8,10,12}` for ANY scale (`D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001`, scale-independent). So `PRIM-CANONICAL-33-SCENE-ANCHOR` does not exist (`D0-VNEXT-33-SCENE-ANCHOR-NOGO-001`); the scale and Xi primitives stay independent.
 
-**[vNext+2: scene-native conditional-expectation hierarchy].** Refining directly from K(9,11,13) (history/path tower, endpoint conditional expectation) the comparison-map question is tested without the AF route. The intertwining hierarchy is typed exactly: scene compression (`C_n L J_n = L_scene`) < spectral equality < heat-semigroup equality (`C_n e^{-uL} J_n = e^{-uL_scene}`) < Feshbach equality -- a weaker level never implies a stronger one. Result: no UNIQUE scene-native refinement rule is forced -- all-walks, non-backtracking, and directed-edge families satisfy M1 but are inequivalent (depth-2 carriers 15708 != 14990; transfer dims 33 != 718), so `Xi` is not canonical (`D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`, Outcome D). New upstream primitive `PRIM-SCENE-HISTORY-REFINEMENT-RULE`; `PRIM-COMPARISON-MAP-XI-N` and `PRIM-DIRAC-SCALE-SELECTION` remain independent. The scene fingerprint (mults {1,2,8,10,12}, trace 718, structural R(3)+K(8,10,12)) is owned (`D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001`, CERT).
-
-## 02.16 Archive/cosmology proof cells
+**[vNext+2: scene-native conditional-expectation hierarchy].** Refining directly from K(9,11,13) (history/path tower, endpoint conditional expectation) the comparison-map question is tested without the AF route. The intertwining hierarchy is typed exactly: scene compression (`C_n L J_n = L_scene`) < spectral equality < heat-semigroup equality (`C_n e^{-uL} J_n = e^{-uL_scene}`) < Feshbach equality -- a weaker level never implies a stronger one. Result: no UNIQUE scene-native refinement rule is forced -- all-walks, non-backtracking, and directed-edge families satisfy M1 but are inequivalent (depth-2 carriers 15708 != 14990; transfer dims 33 != 718), so `Xi` is not canonical (`D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`, Outcome D). New upstream primitive `PRIM-SCENE-HISTORY-REFINEMENT-RULE`; `PRIM-COMPARISON-MAP-XI-N` and `PRIM-DIRAC-SCALE-SELECTION` remain independent. The scene fingerprint (mults {1,2,8,10,12}, trace 718, structural R(3)+K(8,10,12)) is owned (`D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001`, CERT).## 02.16 Archive/cosmology proof cells
 
 ### 02.16.1 Static archive-pressure coefficient closure
 

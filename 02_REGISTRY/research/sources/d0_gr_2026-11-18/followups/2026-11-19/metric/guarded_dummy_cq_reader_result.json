@@ -1,0 +1,45 @@
+{
+  "status": "PASS: actual added W NC1, full input cut and declared full classical receipt",
+  "native_parent_guarded_word_replayed": true,
+  "old_input_rank_including_dirty_port_spin": 16,
+  "both_h_branches_and_all_h_H_Q_W_CQ_receipts_counted": true,
+  "W_NC1_added_births": 1,
+  "W_NC1_added_CX": 2,
+  "W_NC1_added_G": 1,
+  "coherent_passive_RAW_return_multiplicative_factor": 0.7861513777574233,
+  "declared_code_CQ_secant_over_unconditional_success_signal_limit": 0,
+  "rate_limit_per_t_squared": "1.12080509004496672277012204759626594277444261784669114727635846962639631253977078170210738",
+  "printed_CQ_cut_identified_with_coherent_RAW_cut": false,
+  "four_Toffoli_factory_failures_expanded": false,
+  "Book03_cost_and_Info_selected": false,
+  "GR_closed": false,
+  "checks": [
+    {
+      "q": 19,
+      "turn": 2,
+      "t": "0.092178602998616893126",
+      "all_record_code_minus_CQ_secant": "0.0095959509260313863219",
+      "secant_divided_by_t_squared": "1.1293479670581434109",
+      "RAW_J_plus_minus_abs_difference": 0.0,
+      "full_CQ_direct_difference": 0.0006529177788605622
+    },
+    {
+      "q": 66,
+      "turn": 7,
+      "t": "-0.010494605751098501613",
+      "all_record_code_minus_CQ_secant": "0.00012345393473657246701",
+      "secant_divided_by_t_squared": "1.1209149977748752937",
+      "RAW_J_plus_minus_abs_difference": 0.0,
+      "full_CQ_direct_difference": -9.617062231015439e-07
+    },
+    {
+      "q": 613,
+      "turn": 65,
+      "t": "-0.0022728487612696213886",
+      "all_record_code_minus_CQ_secant": "5.7899280661021810118e-6",
+      "secant_divided_by_t_squared": "1.120810244664213652",
+      "RAW_J_plus_minus_abs_difference": 0.0,
+      "full_CQ_direct_difference": -9.768895026240898e-09
+    }
+  ]
+}
