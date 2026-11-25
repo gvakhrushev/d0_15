@@ -1,0 +1,1657 @@
+# BOOK 08 — Cosmology, Archive, and Observable Transfer
+
+> **[Standard Physics Isomorphism].** D0's coined terms in this book read, in mainstream physics, as:
+>
+> - archive → integrated-out environment / environment bath (open-system trace-out)
+> - forgetting map / coarse-graining → Wilsonian coarse-graining / CPTP decoherence channel
+> - archive pressure → trace anomaly / entropic backreaction
+> - phason → Goldstone mode of broken translation symmetry
+> - readout → measurement outcome (POVM effect)
+>
+> Genuinely-D0 (kept, defined in-text against the standard notion): the scene `K(9,11,13)`, the M1 admissibility axiom (no obligatory external catalogue), `δ₀`, `φ`, and *forcing* (= reductio ad absurdum against M1). Full crosswalk: the language-normalization Rosetta (`02_REGISTRY/VOCABULARY.md`).
+
+
+> Scope: Archive pressure, S_DE transfer, empirical survey discipline, and external-passport guardrails.
+> Claim discipline: Cosmology transfer closure and survey comparison are separate status layers.
+> External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
+
+
+## 08.0 Active cosmology/empirical transfer law
+
+Book 08 treats `S_DE` as a two-mode feedback-pressure transfer. Internal transfer closure and survey comparison are separate objects.
+
+```text
+F_N^(partial) = F_N^(2) + eta_N partial_V F_N
+eta_N = partial_V Tr(F_N^2) / partial_V Tr(F_N)
+```
+
+Exceptional-point diagnostic:
+
+```text
+M(eta) = [[lambda_c, eta],[-eta, lambda_r]]
+eta_EP = sqrt(10)/40
+```
+
+This closes the internal transfer mechanism. Survey comparison remains an empirical passport.
+
+Cosmological acceleration/entropy flow uses the archive entropy layer through its entropic archive interface; it does not import continuum GR as primitive.
+
+High-energy neutrino decoherence is a falsification hook carried by the neutrino phason-decoherence passport.
+
+**[Iter22 eight-front]** Reusing the connectivity-onset finite object (the complete-tripartite K(9,11,13) graph Laplacian, spectrum {0:1, 20:12, 22:10, 24:8, 33:2}, total multiplicity 33, algebraic connectivity lambda_2 = 20), the CMB scalar-spectrum front F8 closes its honest scope as D0-CMB-NS-LAPLACIAN-IDS-OWNER-001 (CERT-CLOSED). Three finite facts are proved exactly (Lean D0.Cosmology.CMBLaplacianIDS, cert `vp_cmb_ns_laplacian_ids.py`): (i) the integrated density of states (IDS) staircase N(lambda) = (cumulative multiplicity)/33 takes the exact rationals [1/33, 13/33, 23/33, 31/33, 1] at the jump points 0 < 20 < 22 < 24 < 33 (a genuine probability staircase, strictly increasing to 1); (ii) the dimensionless power proxy P(k) = sum_i mult_i/(k^2 + lambda_i) is the exact rational P(1) = 163196/68425, P(2) = 19857/13468; and (iii) a finite NO-GO -- the discrete tilt proxy n_s - 1 := (k/P)dP/dk takes two genuinely different exact rationals at k = 1 (-29795504237/33500058900) and k = 2 (-119488232/200575557), so the bare Laplacian spectrum ALONE does not determine a single scalar n_s. No n_s value is invented and no Planck datum or inflaton enters (the cert's negative controls reject 'n_s determined by spectrum alone', 'Planck n_s = 0.965 as input', and 'inflaton inserted'). What remains open and is minted as PROOF-TARGET (D0-CMB-IDS-SMOOTHING-OWNER-001) is the exact missing artifact: a canonical, internally-forced smoothing functional / evaluation rule fixing the pair (k, u) so that the tilt proxy collapses to one determined value -- this is absent. The separate spectral-map gap n_s = f({lambda_i}) remains PROOF-TARGET as before (D0-CMB-PHASON-SPECTRUM-OWNER-001, unchanged).
+**[Root R2 — archive/phason transfer no-go].** On the archive sector `K_scene=ker A_scene` the spectrum is the degrees `{24,22,20}`, all `> 1 > φ⁻¹`, so the contraction `QUQ=ψ·V` (`|ψ|=φ⁻¹`) is unwitnessable without an external rescale; and the S_DE active window `{3/2±√10/40}` (product `359/160`) gives `w_A≠w_B` — `D0-ARCHIVE-CONTRACTION-NOGO-001` (Lean `D0.Cosmology.ArchiveContractionCriterion`), missing `PRIM-PHASON-PRESSURE-ENERGY-ROLE-ASSIGNMENT`; sharpens `D0-PHASON-WZ-KERNEL-ONLY-NOGO-001`.
+**[Post-core E3 extension].** No common archive sector exists (integer `L_archive {24,22,20}` incommensurate with the irrational `S_DE` window); even adopting `S_DE`, role `×` coordinate-cocycle give 4 admissible `w_E(z)` (`w_A≠w_B` and `φ−1≠1`) — `D0-POSTCORE-PHASON-EXTENSION-MAXIMALITY-NOGO-001` (Lean `D0.Extensions.ArchiveCoordinateExtension`); the physical map stays an external passport.
+**[Five-primitive: phason P1/P2].** No typed common pressure-energy sector exists (integer `L_archive` vs irrational `S_DE`, no canonical intertwiner) — `D0-PHASON-PRESSURE-ENERGY-MAXIMALITY-NOGO-001` (P1-C); the coordinate functor is therefore external-passport-only (`D0-PHASON-COORDINATE-FUNCTOR-OWNER-001`, P2-E), and the physical `w_DE(z)` stays a maximality no-go.
+**[D0-X5 phason contracts].** The PhasonPressureEnergy contract postulates the `S_DE` common sector (`359/160`; `D0-X5-PHASON-PE-CONTRACT-001`) and the PhasonCoordinate contract the φ-tick cocycle (`D0-X5-PHASON-COORDINATE-CONTRACT-001`, P2-E external redshift passport); one construction edge `P1→P2`. No physical `w_DE(z)` without both contracts and the passport.
+## 08.7a Dark matter as archive phason glass
+
+The phason coordinate reuse does not identify archive dark strain with baryon S3 transfer; that identification is barred by the baryon phason-strain owner. The dark sector is the archive Galois branch; expansion is determinant balance, not a fitted missing component.
+
+By the Phase-Unfolding Theorem, smoothness is the coarse-grained shadow of a finite information quasicrystal (terminal/electroweak return quotients q_T=44, q_EW=710).
+
+## 08.1 Standard reading of cosmological transfer language
+
+D0 cosmological terminology is translated as follows: effective boundary response of the traced-out complement (D0: archive sector) is the source term generated by unresolved environment; S_DE is a finite-window spectral transfer function; survey comparison protocol is an empirical likelihood comparison protocol with explicit data and transfer assumptions.
+
+## 08.2 Role of this book
+
+Book 08 is the final transfer/comparison protocol book of the canonical ordering. It is placed after finite detector foundations, mathematical proof spine, action operators, matter selector/readout protocols, verification discipline, runtime/forgetting theory and finite geometry. Its task is not to introduce a new cosmological substance. Its task is to state the internal traced-out-complement (D0: archive) entropy object first and only then state how that frozen object becomes a finite survey observable.
+
+The canonical cosmology chain is
+
+```math
+\boxed{
+\text{finite archive/boundary operator}
+\rightarrow
+\text{finite runtime window}
+\rightarrow
+S_{DE}(u)
+\rightarrow
+\mathcal T_{survey}^{D0}
+\rightarrow
+\text{survey comparison protocol}
+}
+```
+
+The book makes a strict distinction between three levels:
+
+1. **internal traced-out sector closure** — finite operators, entropy/floor dynamics and S_DE shape defined before data;
+2. **frozen internal spectral-transfer object** — the object that survey data cannot mutate;
+3. **typed dynamic transfer** — heat-trace windows, observable kernels and response projections;
+4. **empirical comparison protocol** — comparison to BAO/survey data with external data dependencies declared.
+
+## 08.3 Cosmology is finite survey readout, not bare continuum ontology
+
+A cosmological observable is a stable large-scale quotient of finite registrations. D0 therefore rejects the starting point
+
+```text
+bare continuum parameter → cosmological fit → inferred ontology.
+```
+
+The allowed starting point is
+
+```text
+finite support / traced-out quotient / boundary operator
+→ typed survey transfer
+→ external comparison protocol.
+```
+
+This places cosmology downstream of Books 01--07. Book 08 may use the finite detector support, action section, entropy/forgetting and gravity boundary already defined there; it may not redefine them from survey residuals.
+
+
+## 08.3.1 Frozen archive cosmology before survey likelihood
+
+The active reading of cosmology is theorem-first. Book 08 has two
+objects, not one:
+
+```text
+InternalArchiveCosmologyObject
+  = core parameters + finite archive/runtime window + entropy/S_DE transfer shape
+
+SurveyLikelihoodPassport
+  = frozen internal object + empirical parameters + external survey data + likelihood value
+```
+
+The Lean owner is the survey-reproducibility-split module.  Its central
+statements are:
+
+```text
+internal_archive_shape_independent_of_empirical_parameters
+survey_external comparison protocol_preserves_internal_archive_shape
+survey_comparison_requires_nonempty_manifest
+survey_likelihood_cannot_promote_to_core_cosmology
+frozen_archive_cosmology_core_shape_closed
+```
+
+BAO, DESI, SDE, Hubble and covariance language cannot choose the D0 cosmology object. They can only compare a frozen internal object against an external manifest.
+
+The positive order is therefore:
+
+```text
+finite archive theorem
+→ frozen entropy/S_DE transfer shape
+→ typed survey external comparison protocol
+→ external data manifest and likelihood
+→ falsification or comparison result.
+```
+
+The forbidden order is:
+
+```text
+survey residual
+→ tune H0/Omega_m/r_d/window centers/amplitudes
+→ declare a new D0 cosmology primitive.
+```
+
+A missing data manifest is not a theoretical failure of the internal archive
+object.  It is a reproducibility failure of the external comparison row.
+
+## 08.4 Archive sector as boundary complement
+
+Definition. The archive/null sector is the complement of active finite readout after the detector has halted and forgotten unavailable address metadata. The structural statement is
+
+```math
+\mathcal H_{total}
+=\mathcal H_{active}\oplus\mathcal H_{archive}.
+```
+
+The active sector gives registered observables; the traced-out complement sector gives boundary pressure, missing active support and finite-window transfer effects. In cosmology this becomes visible because surveys probe very large boundary and history windows.
+
+## 08.5 Cosmological readout discipline
+
+The finite survey record is a quadratic measurement outcome (D0: readout). A cosmological claim must declare
+
+```text
+support → probe/operator → response/readout → runtime/window → comparison protocol.
+```
+
+In formula form the general response discipline is inherited from the detector stack:
+
+```math
+R_N=D_N^\dagger D_N,
+\qquad
+P_N(a)=\frac{\operatorname{Tr}(\Pi_aR_N)}{\operatorname{Tr}(R_N)}.
+```
+
+Book 08 uses this not to model every telescope, but to require that every cosmological observable has a finite survey-readout comparison protocol.
+
+## 08.6 Archive-pressure operator
+
+The internal effective-pressure operator from the traced-out sector (D0: archive-pressure) is the first Book 08 object:
+
+```math
+\mathsf P_{archive}^{D0}=-\frac{\delta_0^8}{30}\Pi_N.
+```
+
+The normalized finite trace is
+
+```math
+\operatorname{Tr}_N\mathsf P_{archive}^{D0}=-\delta_0^8.
+```
+
+This operator is fixed before comparison with survey data. Its function is to connect finite boundary response of the traced-out environment (D0: archive sector) to survey transfer. It is not an adjustable dark-energy term. (`δ0 = (sqrt5 - 2)/2 = 1/(2 phi^3)`, `Π_N` the retained projector, nullity 30 of the K(9,11,13) scene — all owned by BOOK_01; not re-derived here.)
+
+### 08.6.1 The forced sign: information pressure cannot be negative
+
+Status: CORE-FORCING [^b08-2].
+
+The downstream FACT above states the operator and its trace. The *why the sign is forced* — the M1 root of the non-negative information pressure — is stated here, alongside the weak pressure bridge that sits under §08.42's log-det theorem:
+
+Forcing chain. M1 forbids the deletion of information: distinguishability cannot be retracted without an external catalog, so no operation of the scene can shrink what has already been distinguished. The archive `M_arch` is the traced-out complement produced by D0 forgetting (conditional expectation / partial trace / Wilsonian coarse-graining — that Definition and the monotone arrow `H'(u) ≤ 0` are OWNED by BOOK_06 §06.1, cited not re-derived). Three forced links:
+
+1. **M1 ⇒ no deletion.** A deletion would erase an already-distinguished mode, i.e. retract distinguishability — forbidden by M1 (forcing-by-contradiction, DEF-0.2.2).
+2. **no deletion ⇒ `M_arch` monotone.** Every refinement step appends to the traced-out complement and removes nothing; `M_arch` is non-decreasing along phase time. (This is the archive-side reading of BOOK_06's heat-trace monotonicity `H'(u) ≤ 0`, `I(u)` non-decreasing — same arrow, traced-out side.)
+3. **`M_arch` monotone ⇒ Λ ≥ 0 on average.** The memory-pressure BRIDGE-parameter `Λ(M_arch)`, *defined* as a monotone function of the archive, inherits non-negativity of its average increment from the monotone growth of its argument. A negative average pressure would require `M_arch` to decrease — i.e. information to be deleted — contradicting link 1.
+
+This is exactly what the operator sign encodes. The minus sign in `\operatorname{Tr}_N\mathsf P_{archive}^{D0}=-\delta_0^8` is not a tuning choice: it records that the traced-out archive exerts a **non-negative** information pressure on the retained sector (sign convention: pressure read on the retained projector `Π_N` is the negative of the archive's monotone push). The magnitude `δ0^8` is fixed by the spine (`δ0`, nullity 30); the *sign* is fixed by M1. The term is therefore falsifiable, not adjustable: any survey-layer fit that drove the average pressure negative would falsify the M1 → no-deletion → monotone-`M_arch` chain, not merely retune a constant.
+
+Falsification criterion. CHK 61.5 is the GOLDEN obligation: a finite check that the monotone-archive law forces `Δ⟨Λ⟩ ≥ 0`. [^b08-1] for the M1 → `Λ ≥ 0` average-non-negativity statement at this generality.
+
+### 08.6.2 What is already discharged vs. what remains open
+
+The non-negativity already carries finite certs in their *concrete* forms, owned downstream and cited here (not duplicated):
+
+- Strong form (primary, §08.42): the global trace/log-det loop contribution `∂_V[-log det(I - z F_N(V))]` is positive on the resolvent domain — an internal dimensionless pressure-response theorem, carried by the finite log-det pressure-coupling certificate. `F_N` is BOOK_01's feedback operator.
+- Weak form (relative): `R_n = B_n/A_n` accelerates with positive discrete second difference `Δ²R_n > 0`, giving `ΔP_rel > 0` for fixed internal `c_R > 0`, carried by the relative-acceleration pressure-coupling certificate.
+
+These discharge the pressure-response *sign* in the relative-acceleration and log-det channels. What stays open as PROOF-TARGET is the upstream identity: that the *operator-level* average `⟨Λ⟩ ≥ 0` is the same non-negativity forced by M1 (link 3 above), i.e. the bridge from the abstract monotone-`M_arch` law to these two computable witnesses. No survey data and no `H_0` claim enters at this layer; comparison with surveys remains passport-layer.
+## 08.7 Dark sector as archive complement
+
+The sharper rule is: Galois-conjugate unresolved branch corresponds to Galois-conjugate unresolved branch. The unresolved branch is the conjugate eigen-branch of the finite time automorphism, coarse-grained phase-stable readout cancels alternating sign, and expansion is determinant balance, not a fitted missing component.
+
+The dark-sector interpretation is typed as unresolved complement:
+
+```math
+\Omega_{dark}^{D0}
+\quad\text{means}
+\quad
+\text{unregistered active support expressed through archive/boundary readout}.
+```
+
+The forbidden reading is
+
+```text
+archive sector = primitive dark particle species.
+```
+
+A particle hypothesis may be studied externally, but it is not the D0 core claim. D0 core says that survey records may contain archive-pressure and finite-window transfer signatures.
+
+### 08.7.0 Why the complement is sized 10, not fitted (DarkRatio)
+
+The qualitative "unresolved complement" above hides a forced number. The complement is not free: its size is fixed by the rank/nullity split of the scene, and the dark/visible ratio is a *lift* of that split, not a tuned cosmological parameter.
+
+CORE (cited, not re-derived — owned by BOOK_01 §01.8 / §01.20, replayed in BOOK_03 §03.18). The scene `K(9,11,13)` has
+
+```math
+|V|=33,\qquad \operatorname{rank}(A)=3,\qquad \operatorname{nullity}(A)=30,\qquad
+\gamma=\frac{\operatorname{nullity}(A)}{\operatorname{rank}(A)}=\frac{30}{3}=10.
+```
+
+The rank-3 image is the transport (between-part) channel; the 30-dimensional kernel is the archive/dark memory. This same integer is the echo-depth `γ` that feeds the action coefficient `38 = 2(2γ−1)` (BOOK_03 §03.20); here it carries its cosmological reading.
+
+BRIDGE-lift [^b08-5]. The lift is conditional and typed: *if* the "dark" sector is read by a functional that sees **all** graph modes (a heat-trace observable, which weights kernel + image alike) while the "visible" sector is read only through the **transport** modes (the rank), then the two abundances inherit the rank/nullity split:
+
+```math
+\frac{\Omega_{dark}}{\Omega_{vis}}\ \longrightarrow\ \frac{\operatorname{nullity}(A)}{\operatorname{rank}(A)}=10
+```
+
+inside the tolerance of a declared transfer protocol Π. The arrow is forced by *which functional reads which sector* (heat-trace = all modes vs. Rank = transport), not by fitting a missing-mass component. This is the quantitative form of "archive complement": the dark sector is the kernel seen by a mode-blind readout, the visible sector is the image seen by a transport readout, and `10` is their ratio by construction.
+
+[^b08-3] — the CORE rank/nullity arithmetic is cert-backed at its BOOK_01 owner; the BRIDGE identification `Ω_dark/Ω_vis → γ` under (heat-trace, Rank) readout carries a transfer-protocol Π obligation and is not yet discharged by a registered `vp_*` cert in this book.
+
+### 08.7.0.1 Consistency-ratio ceiling
+
+The same split forces a ceiling on the observable transport fraction, independent of the ratio statement.
+
+BRIDGE-MECH-LIMIT [^b08-6]. Under true engagement of the nullity (kernel) régime, the fraction of activity visible through transport modes cannot exceed the transport share of the total mode budget:
+
+```math
+\eta_{obs}\ \le\ \frac{\operatorname{rank}(A)}{\operatorname{rank}(A)+\operatorname{nullity}(A)}
+=\frac{3}{33}=\frac{1}{11}.
+```
+
+Equivalently: at most `1/11` of the scene's modes are transport (visible), the complementary `10/11` are archive (dark). This is the same `γ=10` content read as a ceiling (`1/(γ+1)`) rather than as a ratio (`γ`), and it is consistent with the `Ω_dark/Ω_vis → 10` statement above by `10 = (1-\eta)/\eta` at `η = 1/11`.
+
+[^b08-4] — ceiling inherits the same Π transfer obligation as the DarkRatio lift; no separate `vp_*` cert is registered here.
+
+### 08.7.1 Boundary dark survey-driver kernel
+
+The boundary dark row is not a particle claim.  Its typed kernel is an inverse-return boundary family
+
+```math
+A(c)={1\over1+\delta_0/c}.
+```
+
+The same boundary-return family co-derives
+
+```math
+\lambda_{B,terminal}=0.012648624753253252,
+```
+
+and
+
+```math
+A(\varphi)=0.9320107332894405.
+```
+
+These are boundary-return spectral-shape readouts.  They become survey hypotheses only through a declared survey transfer and external-data comparison protocol.  They may not be reinterpreted as a dark-particle mass, abundance or cross-section without a separate particle operator.
+
+## 08.7b Dark matter as phason-strain disorder
+
+Dark matter phenomenology is modeled as localized phason-strain disorder in the internal/Galois branch. It has zero terminal EM coupling because it lives in the unresolved branch. It gravitates because heat/metric response sees total strain energy.
+
+The Lean owners are the tiling-hull and K-theory gap-labeling modules, and the result is carried by the tiling-hull gap-labeling certificate.
+
+Boundary against dark atoms: phason-strain disorder is not a second particle periodic table. A dark-atom claim would require a separate finite bound-state operator, terminal coupling rule and external comparison protocol. Strain by itself supplies gravitational/heat response, not hidden electromagnetic chemistry.
+
+## 08.8 Single-section discipline in cosmology
+
+Cosmology does not receive a second metrological anchor. The action and length sections have already been fixed:
+
+```math
+\Lambda_{act}=38m_ec^2,
+\qquad
+\ell_0=\frac{h}{38m_ec}.
+```
+
+The gravity bridge has already fixed the length-depth ordering:
+
+```math
+D_L\rightarrow \ell_P^{D0}\rightarrow G_N^{D0}.
+```
+
+Therefore Book 08 cannot tune `H_0`, `r_d`, `G_N`, `\Omega_m`, or a new dark scale to repair a survey residual. Cosmological transfer must use fixed internal quantities plus declared external-data comparison.
+
+## 08.9 Scalar survey amplitude comparison protocol
+
+The active scalar amplitude comparison protocol uses the fixed normalization
+
+```math
+A_s^{D0}={(1+\delta_0/4)I_B\over 2|V||V_{13}|}.
+```
+
+The denominator is not a fit parameter. It is the terminal full-cycle survey normalization. Direct comparison of the unnormalized numerator to survey data is rejected because it has the wrong typed scale.
+
+The corresponding rule is
+
+```text
+normalize by the finite survey cycle before external comparison.
+```
+
+## 08.10 Static coefficient versus dynamic transfer
+
+Book 08 keeps static closure and dynamic transfer separate.
+
+A static coefficient has the form
+
+```math
+C_{static}^{D0}
+=F(\delta_0,\varphi,\Omega_8,V_9,K(9,11,13),\Lambda_{act},D_L,\ldots).
+```
+
+A dynamic survey observable has the form
+
+```math
+\mathcal O_{survey}^{D0}
+=\mathcal T_{survey}^{D0}\big(C_{static}^{D0},S_{DE}(u),W(u)\big).
+```
+
+The second line cannot be replaced by a direct fit. The finite spectrum and window must be declared before the external comparison.
+
+## 08.11 S_DE finite-window transfer
+
+The dynamic archive-pressure transfer is encoded by a finite-window spectral density/entropy function
+
+```math
+S_{DE}(u)=uD'(u).
+```
+
+The survey kernel uses this as a typed transfer window, not as a post-hoc smoothing function. The allowed direction is
+
+```text
+closed archive coefficient → finite spectrum/window → S_DE transfer → survey shape.
+```
+
+The forbidden direction is
+
+```text
+survey residual → choose S_DE window → claim internal derivation.
+```
+
+## 08.12 BAO archive-transfer comparison protocol
+
+The BAO/S_DE result is the strongest empirical comparison protocol of the cosmology book. In the canonical form the expansion readout is written
+
+```math
+H_{D0}(z)=H_{\Lambda CDM}(z)\exp\Theta_{D0}(z).
+```
+
+The shape parameters are not free cosmological fit knobs. They must be obtained from the finite spectrum, archive window and sector typing before comparison:
+
+```math
+(z_c,z_r,\sigma_c,\sigma_r,A_c,A_r)
+=\mathcal F_{SDE}(K(9,11,13),\Delta D,\epsilon^2,\mu_{release},\ldots).
+```
+
+External survey files are allowed at the comparison protocol stage, but not inside the operator definition.
+
+### 08.12.1 BAO/S_DE finite-window transfer
+
+The finite-window transfer is fixed by the spectral shape before external comparison.  The logarithmic kernel is
+
+```math
+G_{log}(z;z_0,\sigma)=\exp\left[-{1\over2}\left({\log(1+z)-\log(1+z_0)\over\sigma}\right)^2\right].
+```
+
+The frozen S_DE roots and transfer are evaluated against pinned DESI DR2 BAO measurements. No refit of roots, windows, H0, Ωm or rd is performed (see the passport results and the corresponding certificate for exact failure diagnostics: LOW_Z, MID_Z, AMPLITUDE_TOO_LOW).
+
+The internal cosmological response is grounded in finite heat-trace objects. Cosmology = feedback pressure transfer; S_DE = two-mode feedback pressure reduction. External BAO/S_DE comparisons remain survey-transfer protocols and do not mutate the finite Hodge core.
+
+Closed vacuum feedback equation of state: `mathsf P_fb = beta^{-1} partial_V log Z_N`; finite PVT is a downstream equation-of-state readout, not the definition of projection notation. Accelerated expansion is `kappa (mathsf P_fb - mathsf P_cap)`; S_DE roots are a two-mode feedback-pressure sector (no root/window refit; boundary derivative required).
+
+For operator notation, this means `mathsf P_fb=beta^{-1}partial_V log Z_N` with
+`Z_N=Tr exp(-beta Delta_N(V)) det(I-zF_N(V))^{-1}`. The pressure split is
+`mathsf P_fb=mathsf P_heat+mathsf P_loop`; `P_N` remains projection/readout notation and is not
+feedback pressure.
+
+Effective S_DE exceptional-point algebra is allowed only as a two-mode transfer
+proof target. With
+
+```math
+\lambda_c={3\over2}-{\sqrt{10}\over40},\qquad
+\lambda_r={3\over2}+{\sqrt{10}\over40},\qquad
+M(\eta)=\begin{pmatrix}\lambda_c&\eta\\-\eta&\lambda_r\end{pmatrix},
+```
+
+the threshold is `eta_EP=(lambda_r-lambda_c)/2=sqrt(10)/40`. This is not a DESI
+pass, not an H0 theorem, not cosmology closure, and it authorizes no root,
+window, H0, Omega_m or rd refit.
+
+The transfer is
+
+```math
+\Theta_{D0}(z)=A_cG_{log}(z;z_c,\sigma_c)-A_rG_{log}(z;z_r,\sigma_r)-\theta_0\exp[-(z/\xi_5)^2].
+```
+
+The closed finite-window values are
+
+```math
+\lambda_c=1.420943058495791,
+\qquad
+\lambda_r=1.5790569415042093,
+```
+
+```math
+z_c=\varphi(\lambda_c-1),
+\qquad
+z_r=\varphi(\lambda_r-1),
+```
+
+```math
+\sigma_c=\Delta D_{SDE}+\epsilon^2=\delta_0,
+\qquad
+\sigma_r=\sigma_c/\sqrt\varphi,
+```
+
+```math
+A_c=\sigma_c/\sqrt5,
+\qquad
+A_r=A_c(\lambda_r-1).
+```
+
+The proof-cell order is therefore:
+
+```text
+closed static tuple -> finite spectrum/window -> S_DE transfer -> external BAO comparison.
+```
+
+The reverse order is forbidden.
+
+### 08.12.2 Archive-window eigenvalue equation for `λ_c,λ_r`
+
+The window centers are not free BAO fit parameters.  They are the two eigenvalues of the normalized finite archive-window polynomial
+
+```math
+P_{archive}(\lambda)=\lambda^2-3\lambda+{359\over160}.
+```
+
+Equivalently,
+
+```math
+160\lambda^2-480\lambda+359=0.
+```
+
+The trace and determinant are fixed before survey comparison:
+
+```math
+\lambda_c+\lambda_r=3,
+\qquad
+\lambda_c\lambda_r={359\over160}.
+```
+
+Here `359` is the finite line/carrier numerator already used in the topological electromagnetic normalization, while
+
+```math
+160=2\,\Omega_8\,\gamma=2\cdot8\cdot10
+```
+
+is the two-sided signed-octet window count with `γ=10` the reduced terminal echo depth.  Hence
+
+```math
+\lambda_{c,r}={3\over2}\mp {\sqrt{10}\over40},
+```
+
+so
+
+```math
+\lambda_c=1.4209430584957905,
+\qquad
+\lambda_r=1.5790569415042095.
+```
+
+This cell is the analytic source of the pair used in the BAO/S_DE comparison protocol.  External survey data may test the resulting transfer, but cannot choose these two roots.
+
+### 08.12.3 S_DE as gap-labeled phason-flip spectrum
+
+The polynomial $160\lambda^2 - 480\lambda + 359$ (or 160λ² − 480λ + 359) is the finite transfer polynomial of archive phason flips. Its roots are relaxation modes. The corresponding spectral gaps must carry D0 hull/K0 labels.
+
+The Lean owner is the phason-flip-entropy module, and the result is carried by the phason-flip-entropy S_DE certificate.
+
+The S_DE chain is:
+
+```text
+archive phason flip
+-> finite entropy transfer matrix
+-> characteristic polynomial
+-> two relaxation roots
+-> K0/gap-labeled spectrum
+-> BAO/S_DE observable-transfer external comparison protocol
+```
+
+External survey data may test the transfer shape; they cannot choose the roots or relabel the phason-flip spectrum.
+
+### 08.12.4 The cubic-vs-quadratic window fork is spectrally closed
+
+The quadratic above and the **vacuum cubic**
+
+```math
+\lambda^3 = 359\,\lambda + 2574,
+\qquad (e_1,e_2,e_3) = (0,\ -359,\ 2\cdot 1287),
+```
+
+are both internally owned, but they are not two forms of one transfer.  Write
+
+```math
+P(x)=160x^2-480x+359,\qquad
+Q(x)=x^3-359x-2574.
+```
+
+They satisfy the exact integral Bézout identity
+
+```text
+(-9017440 x² + 66066720 x + 3455694001) P(x)
++ (1442790400 x - 14899046400) Q(x)
+= 39590739579959,
+```
+
+so their resultant is nonzero.  More strongly, the identity lifts to rational
+endomorphism rings: if \(P(T_2)=0\), \(Q(T_3)=0\), and
+\(F T_2=T_3F\), then \(F=0\).
+The concrete Lean capstone checks these annihilation identities for the actual
+two-mode phason-flip matrix
+
+```math
+T_2=\begin{pmatrix}3/2&1/16\\1/10&3/2\end{pmatrix}
+```
+
+and the actual rank-three zone quotient
+
+```math
+T_3=\begin{pmatrix}0&11&13\\9&0&13\\9&11&0\end{pmatrix},
+```
+
+then proves that every rational linear intertwiner between them is zero
+(`D0-SDE-CUBIC-SPECTRAL-DISJOINTNESS-001`, Lean
+`D0.Synthesis.SDECubicSpectralDisjointness.concrete_owned_intertwiner_is_zero`).
+
+Therefore DESI cannot decide *which operator the internal theory meant*:
+that would be reverse selection, and the two objects are not spectrally
+equivalent in the first place.  The type-correct present state is:
+
+- the quadratic remains the two-mode `S_DE` phason-pressure transfer;
+- the cubic remains the rank-three scene/gravity/metric operator;
+- the cubic can re-enter an `S_DE` comparison only after a new cross-sector
+  transfer is constructed and frozen before looking at survey data.
+
+External surveys may still test separately pre-registered outputs of either
+model.  They may not turn the absent intertwiner into an internal identity.
+
+### 08.12.5 The positive bridge is the normalized active scene operator
+
+The cubic no-go above identifies the wrong operator; it does not say that the
+quadratic window is detached from the scene.  The unnormalized quotient
+
+\[
+A_W=\begin{pmatrix}0&11&13\\9&0&13\\9&11&0\end{pmatrix}
+\]
+
+and the row-stochastic scene transport
+
+\[
+M=D_W^{-1}A_W,\qquad D_W=\operatorname{diag}(24,22,20),
+\]
+
+are different operators.  The latter is now proved to descend from the
+literal \(33\times33\) adjacency through the actual zone-indicator lift; it is
+not a separately fitted matrix
+(`D0-SCENE-NORMALIZED-QUOTIENT-DESCENT-001`).
+
+For the stationary degree weight
+
+\[
+\pi=(216,242,260)
+\]
+
+the hyperplane \(\ker\pi\) is invariant under \(L=I-M\).  With the owned
+phason-flip transfer
+
+\[
+T_2=\begin{pmatrix}3/2&1/16\\1/10&3/2\end{pmatrix}
+\]
+
+and the explicit embedding
+
+\[
+X=\begin{pmatrix}-132&55\\-24&-120\\132&66\end{pmatrix},
+\]
+
+Lean constructs a rational retraction \(Y\) and proves
+
+\[
+LX=XT_2,\qquad YX=I_2,\qquad
+XT_2Y=L,\qquad YLX=T_2,\qquad
+\operatorname{im}X=\ker\pi.
+\]
+
+The associated active projector is intrinsic:
+
+\[
+P_{\mathrm{act}}
+=I-\frac1{718}\mathbf1\pi
+=I-\frac{160M^2+160M+39I}{359}.
+\]
+
+Therefore the two S_DE relaxation modes are not merely roots of a polynomial
+that happens to match the scene.  They are the exact similarity class of the
+normalized scene Laplacian on its canonical active two-dimensional summand
+(`D0-PHASON-ACTIVE-SCENE-CONJUGACY-001`).
+
+The coordinate matrix \(X\) is not unique; rescaling it gives a distinct
+intertwiner with the same active image.  What is canonical is the active
+subspace, its projector, and the restricted operator up to change of basis.
+This closes the finite algebraic provenance of the S_DE quadratic.  It does
+not identify this active sector with the separate integer archive Laplacian,
+log-det pressure, a physical equation of state, redshift, or DESI data, and it
+does not weaken the no-intertwiner theorem for the unnormalized cubic
+quotient.
+
+The conjugacy now lifts all the way back to the literal \(33\)-vertex
+operator.  Degree-spectral fibre projectors construct a representative-free
+indicator \(C\) and averaging restriction \(R\) satisfying
+\(RC=I_3\) and \(CR=P_{\rm Reynolds}\)
+(`D0-INTRINSIC-QUOTIENT-RECONSTRUCTION-001`).  Together with the stationary
+line and the active embedding \(X\), they produce three exact
+pairwise-annihilating projectors of traces \(30,1,2\):
+
+\[
+\mathbb Q^{33}=A_{30}\oplus S_1\oplus D_2,
+\qquad
+L_{\rm full}\simeq I_{30}\oplus0\oplus T_2.
+\]
+
+Equivalently, for an explicit full active retraction \(Y_{\rm full}\),
+
+\[
+L_{\rm full}
+ =P_{\rm archive}+X_{\rm full}T_2Y_{\rm full}.
+\]
+
+The archive is an exact eigenvalue-one block, the stationary line an exact
+zero block, and the active block the owned \(S_{DE}\) similarity class
+(`D0-AUTOMORPHISM-HODGE-SDE-DECOMPOSITION-001`).  Top-Hodge data force its
+constant characteristic coefficient \(359/160\).  Here “archive” means the
+within-zone complement of the Reynolds image; it is not an identification
+with the separately typed integer archive Laplacian.  This closes the finite
+operator provenance of the two-mode sector, not its downstream interpretation
+as pressure, redshift or an empirical BAO law.
+
+### 08.12.6 The quadratic is forced already by the top-Hodge spectrum
+
+The explicit conjugacy above is scene-specific, but its polynomial origin is
+now generic.  For any positive complete-tripartite \(K(a,b,c)\), set
+
+\[
+V=a+b+c,\qquad E=ab+ac+bc,\qquad T=abc.
+\]
+
+If \(L=I-M\) is the normalized three-zone quotient Laplacian, then the actual
+matrix determinant satisfies
+
+\[
+\det(xI-L)
+ =x\left(x^2-3x+\frac{2VE}{VE-T}\right),
+\qquad
+VE-T=(a+b)(a+c)(b+c)>0.
+\]
+
+The upper-Hodge spectral coordinates
+
+\[
+D=\dim C_2,\qquad H=\dim\ker\Delta_2,\qquad
+M_2=\sum_\lambda\operatorname{mult}(\lambda)\lambda^2
+\]
+
+recover \(T=D\), \(V=M_2/D-6\), and \(E=T+V-1-H\).  They therefore determine
+the normalized active factor before any cosmological reading is introduced.
+At the source values this gives
+
+\[
+x^2-3x+\frac{359}{160},
+\]
+
+which Lean proves identical to the characteristic polynomial of the owned
+two-mode phason-flip transfer
+(`D0-TOP-HODGE-NORMALIZED-QUOTIENT-SPECTRUM-001`).  This explains the entire
+quadratic from the finite Hodge scene.  It still does not turn the resulting
+finite relaxation operator into log-det pressure, an equation of state,
+redshift, or survey data; those remain separately typed downstream layers.
+
+The product identity behind this coefficient is also exact.  If
+\(d_a=b+c,d_b=a+c,d_c=a+b\) and
+\(S=ad_a+bd_b+cd_c=2E\), then
+
+\[
+\delta=e_2(L)=\det T_2
+\]
+
+at the source scene, while the high positive sector of the actual top-Hodge
+pseudodeterminant is
+
+\[
+K_{\rm high}
+ =(a+b+c)d_a^{a-1}d_b^{b-1}d_c^{c-1}
+ =\delta\,\frac{d_a^a d_b^b d_c^c}{S}.
+\]
+
+Lean proves both the generic identity and its descent from the literal
+\(33\times33\) graph
+(`D0-TOP-HODGE-KIRCHHOFF-STATIONARY-BRIDGE-001`).  Therefore \(359/160\)
+is the scale-free active remnant of a larger Hodge/degree product, while
+\(S\) and the full degree volume retain the scale erased by normalization.
+The determinant side is now literal as well: Lean constructs the actual
+deleted-vertex cofactor of the complete-tripartite `SimpleGraph` Laplacian and
+proves
+
+\[
+\det\widehat L_{K(a,b,c)}=K_{\rm high}
+\]
+
+by diagonal-plus-rank-three reduction
+(`D0-COMPLETE-TRIPARTITE-LAPLACIAN-COFACTOR-BRIDGE-001`).  The exact remaining
+gap is combinatorial: the present Lean corpus still has no theorem identifying
+that cofactor with the cardinality of spanning trees.  Accordingly the
+operator determinant is CORE-FORMALIZED, while the spanning-tree count is not
+claimed.
+## 08.13 Hubble and structure tensions
+
+Hubble and structure tensions are not primitive D0 inputs. They may be read as diagnostics of whether finite archive/runtime transfer is missing from a conventional comparison model. The allowed status is
+
+```text
+diagnostic / downstream row
+```
+
+unless a claim explicitly declares its operator, window, external data and falsification hook.
+
+**External anchor (passport target, not core).** The relative-archive acceleration `R_n = φⁿ − 1` has a strictly convex second difference `Δ²R_n = φⁿ(φ−1)² > 0`, which reads as an *evolving* (dynamical) dark-energy equation of state — `w ≠ const −1`. This is confirmed against real data: DESI DR2 BAO rejects ΛCDM in favour of evolving `w` (Δχ²≈4.7, BAO-only; test in `05_EXPERIMENTS/DESI`). **Scope correction — the specific corner is not forced.** Whether the evolution sits in DESI's *thawing* corner (`w₀ > −1`, `wₐ < 0`) depends on the unwritten phason→`w(z)` map; an explicit enumeration of the natural maps (source ∈ {R, R′, R″} × direction `N = ±ln a`, 6 cases) lands **0/6** in the thawing corner — all give `wₐ > 0` (the opposite sign) or a phantom `w₀ < −1`. So convexity forces *evolving* DE, **not** the thawing corner; the corner sign is map-dependent and stays HYP. The Hubble tension and the `w₀wₐ` anomaly are still read as **one** phenomenon (an effective `H₀` that declines with redshift), registered as an empirical-passport target against DESI DR2/DR3 with an internal falsifier — a measured `H₀` that *rises* with `z` while `S₈` stays at the Planck value would reject it. It is a diagnostic, never a core observable; only the convexity `Δ²R_n > 0` is forced.
+
+## 08.14 QCD archive scale and cosmological guardrail
+
+Primordial black-hole formation (if modeled inside D0) must pass through a
+critical echo-lattice / capacity-threshold operator rather than a purely smooth
+density-threshold scalar. See Book 07 §07.49 for the horizon
+birth dynamics bridge and §07.50 for the finite A/4 capacity witness.
+
+PBH must combine:
+- DSS echo-lattice critical birth
+- Finite A2 Einstein-response class
+- Finite A/4 horizon capacity witness.
+
+The QCD archive/confinement scale is a matter/runtime object inherited from Books 04 and 06. It may provide an analogy and a guardrail for archive thinking, but it is not a hidden cosmological dark scale.
+
+The forbidden shortcut is
+
+```text
+QCD archive scale → dark-energy scale by dimensional coincidence.
+```
+
+The allowed use is
+
+```text
+QCD shows how active confinement/archive complement can appear in finite readout; cosmology requires its own typed survey operator.
+```
+
+## 08.15 Boundary geometry cross-reference from Book 07
+
+Book 07 supplies the finite geometry and boundary conditions:
+
+```math
+\text{finite line covariance}
+\rightarrow
+\text{heat trace}
+\rightarrow
+D_L
+\rightarrow
+\ell_P^{D0}
+\rightarrow
+G_N^{D0}.
+```
+
+Book 08 uses that boundary structure only after it has been fixed. Survey data cannot choose the gravity boundary operator.
+
+## 08.16 Observable-transfer discipline and falsification summary
+
+Book 08 separates internal archive cosmology from survey comparison.
+
+Internal side:
+
+```text
+finite archive operator
+-> entropy/floor dynamics
+-> heat-trace or S_DE finite window
+-> frozen internal transfer shape
+```
+
+External side:
+
+```text
+SurveyLikelihoodPassport
+-> external manifest and hashes
+-> covariance convention
+-> likelihood runner
+-> negative controls / falsification
+```
+
+Falsification rules for cosmology claims:
+
+1. A survey residual may not select a new D0 primitive.
+2. `S_DE` parameters may not be derived after seeing BAO data.
+3. `H0`, `Omega_m`, redshift centers, covariance choices and likelihood cuts are external comparison coordinates.
+4. A missing manifest is a reproducibility dependency, not an internal theorem failure.
+5. Archive pressure is not a dark-particle insertion unless a separate particle operator and external comparison protocol are declared.
+
+The cross-book boundary is:
+
+| dependency | owner role |
+|---|---|
+| finite support and response | Books 01--02 |
+| single action section | Book 03 |
+| matter-sector external comparison protocols | Book 04 |
+| certificate and negative-control discipline | Book 05 |
+| time, forgetting and finite runtime | Book 06 |
+| heat-capacity gravity and boundary saturation | Book 07 |
+| effective boundary response of the traced-out sector, S_DE and survey transfer | Book 08 |
+
+The BAO/S_DE pipeline is an observable-transfer claim. If a data file is missing from the clean archive, that is a reproducibility dependency, not an internal theorem failure.
+## 08.31.1 Smooth macro-geometry and archive covariance
+
+Cosmological comparison protocols use a smooth likelihood language only after the finite covariance bridge is fixed. The admissible chain is
+
+```text
+finite phase branches
+→ covariance family G_N
+→ heat-trace stabilization
+→ smooth macro-geometry
+→ survey likelihood comparison protocol.
+```
+
+The phase-unfolding and Hurwitz-rigidity results supply the non-resonant branch mechanism. The covariance/heat-trace theorem supplies the condition under which those branches can be averaged into a smooth macroscopic geometry. A survey likelihood cannot be used as evidence for the bridge unless the data manifest, covariance, hash and negative-control windows are declared.
+
+Smoothness is the coarse-grained shadow of a finite information quasicrystal.  The unresolved branch order is non-resonant because
+`alpha_D0=phi^-2` is irrational; the visible branch arms are finite residue
+classes selected by the return quotients `q_T=44` and `q_EW=710`.  A smooth
+macro-geometry is admissible only after this aperiodic finite order is averaged
+through covariance and heat trace.  It is not an upstream lattice or continuum
+background.
+
+## 08.32 Phase-canonical Laplacian in heat trace and spectral action
+
+The dynamic survey transfer, Weyl dimension scaling, and spectral action stability certificates use the phase-canonical Laplacian operator derived from the cyclic phase-distance metric. This canonical Laplacian ensures that all macro-geometric shadows are built from translation-invariant local cycle geometry rather than an ambient pullback.
+
+## 08.33 RG operator source for macro transfer
+
+The cosmology-side heat-trace and spectral-action certificates report the RG operator source explicitly:
+
+```text
+archive_phase_canonical_laplacian
+archive_laplacian_rg_flow / projected_effective_laplacian = B^T L_{n+1} B
+```
+
+This keeps survey transfer downstream of the finite archive RG layer. Cosmological fits may use the heat-trace or spectral-action shadows only after the operator source has passed the phase projection, scale fit, residual check, and negative controls. The survey layer does not choose the Laplacian and does not repair a nonzero RG residual.
+
+## 08.34 Seam curvature source in spectral-action transfer
+
+The spectral-action certificates report the curvature source explicitly:
+
+```text
+curvature_source: seam_commutator_density
+rg_operator_source: archive_laplacian_rg_flow
+operator_source: archive_phase_canonical_laplacian
+```
+
+The seam cert verifies the finite rank/support/density data before any macro transfer is read. Negative controls remove the curvature source, randomize the seam, or break rank `2`; these fail the certificate discipline. Thus cosmological spectral-action language is downstream of the internal seam-curvature action, not a replacement for it.
+
+## 08.35 Variational source in spectral-action transfer
+
+The spectral-action certificates also report the variational origin of the curvature slot:
+
+```text
+curvature_source: seam_commutator_density
+action_source: archive_curvature_action
+field_equation_source: seam_action_variation
+conservation_source: archive_bianchi_identity
+```
+
+Thus the macro transfer is not allowed to use a curvature density without the
+finite action and field-equation layer that produced it.  The negative controls
+include removal of the field-equation source, nonconserved sources, and random
+seam curvature.
+
+## 08.36 Weak-field Poisson cert and spectral-action cert chain
+
+The cosmological spectral-action and survey transfer models are downstream of the weak-field Poisson equation and the canonical stress representative:
+```text
+curvature_source: seam_commutator_density
+action_source: archive_curvature_action
+field_equation_source: seam_action_variation
+stress_source: canonical_variation_dual_representative
+weak_field_source: archive_poisson_equation
+```
+The archive weak-field Poisson certificate validates the cycle Laplacian, neutral point-pair source, and zero-mean gauge fixing. The spectral-action certificates for the EH coefficient and for expansion stability assert this complete source chain. Their negative controls verify that removing the stress representative, using a non-neutral source, omitting zero-mode gauge fixing, or using a wrong Laplacian fails the certificate discipline.
+
+## 08.37 Final bridge index and spectral-cosmology status
+
+The final bridge index separates internal cosmology theorems, certificate-backed transfer, empirical comparison protocols and explicit boundary/no-go rows.
+
+The constructive closure chain is:
+
+```text
+entropy archive flow
+-> density-floor projection
+-> core-shape observable-transfer boundary
+-> heat-trace A0/A2 ladder
+-> higher-curvature floor-bounded absolute control
+-> S_DE / survey transfer certificate
+-> empirical comparison protocol with external-data status.
+```
+
+Machine ownership:
+
+| statement | status | owner |
+|---|---|---|
+| homogeneous entropy-flow fixed point | `CORE-CLOSED` | `D0.Cosmology.homogeneous_fixed_point` |
+| zero-mean modes contain underdense regions | `CORE-CLOSED` | `D0.Cosmology.zero_mean_mode_has_underdense_region` |
+| underdense geometric mode gives transient acceleration | `CORE-CLOSED` | `D0.Cosmology.underdense_geometric_mode_generates_positive_acceleration` |
+| softmax flow preserves mass | `CORE-CLOSED` | `D0.Cosmology.softmax_flow_mass_preserving` |
+| floor projection preserves mass and floor | `CORE-CLOSED` | `D0.Cosmology.projection_preserves_mass` |
+| core shape is independent of empirical parameters | `CORE-CLOSED` | `D0.Cosmology.core_shape_independent_of_empirical_parameters` |
+| empirical comparison protocol cannot promote to core closure | `CORE-CLOSED` | `D0.Traceability.external_likelihood_cannot_promote_to_core_closed` |
+| heat-trace A2 decomposition / EH proxy | `CORE-CLOSED` | `D0.Geometry.HeatTraceA2Decomposition.heat_trace_sq_exact_decomposition` |
+| spectral action A0/A2 ladder and higher-power bounds | `CORE-CLOSED` | `D0.Geometry.SpectralActionLadder.a0_is_volume_proxy`; `D0.Geometry.SpectralActionLadder.a2_is_eh_proxy`; `D0.Geometry.SpectralActionLadder.higher_powers_floor_bounded` |
+| internal S_DE / entropy-flow shape | `CORE-CLOSED` / `CERT-CLOSED` | `vp_cosmology_entropy_flow_likelihood.py`; `vp_spectral_action_eh_coefficient.py` |
+| BAO/S_DE and likelihood comparison with unpackaged external files | `EXTERNAL-DATA-REQUIRED` | external survey manifest / release data bundle |
+| external survey files and covariance hashes | `EXTERNAL-DATA-REQUIRED` | certificate manifest / release data bundle |
+
+The continuum GR and survey-likelihood statements therefore have a precise status: finite spectral/entropy operators are core-closed or cert-closed; smooth cosmology and observational likelihoods are bridge/comparison protocol layers with declared external-data requirements.
+
+The `a0/a2` trace ratio is a dimensionless `CORE-CLOSED` spectral shape.  Any
+`c0/c2` SI coefficient ratio requires `ExternalSICalibration`; `H0`, `G_N` and
+`Lambda` are not `DimensionlessCoreTraces` outputs.
+
+## 08.38 Likelihood certificate classification audit
+
+No cosmology likelihood script is allowed to promote `H0`, `Omega_m`, redshift centers or survey amplitudes to core D0 observables. The active classification is:
+
+| script | status | role |
+|---|---|---|
+| `04_CERTIFICATES/vp_cosmology_entropy_flow_likelihood.py` | `EMPIRICAL-PASSPORT` | verifies locked core-shape guardrails while external bridge parameters cannot mutate core parameters |
+| `04_CERTIFICATES/vp_spectral_action_eh_coefficient.py` | `CERT-CLOSED` | checks heat-trace A0/A2 proxy and higher-curvature report artifacts |
+| `04_CERTIFICATES/vp_spectral_action_expansion_stability.py` | `CERT-CLOSED` | checks finite spectral-action stability and negative controls |
+| `04_CERTIFICATES/vp_v1133_bao_sde_reproducible_passport.py` | `EMPIRICAL-PASSPORT` | BAO/SDE reproducibility comparison protocol, not core parameter derivation |
+| `04_CERTIFICATES/D0-COSMO-004/run_cosmological_full_likelihood.py` | `EMPIRICAL-PASSPORT` / `EXTERNAL-DATA-REQUIRED` | ported full-likelihood comparison with external survey data |
+| `04_CERTIFICATES/D0-COSMO-005/run_bao_sde_shape_parameter_derivation.py` | `CERT-CLOSED` | internal SDE window-shape derivation |
+| `04_CERTIFICATES/D0-COSMO-005/run_bao_sde_kernel_archive_transfer.py` | `CERT-CLOSED` | finite bridge kernel construction before survey comparison |
+| `04_CERTIFICATES/D0-COSMO-005/run_bao_dynamic_archive_pressure.py` | `EMPIRICAL-PASSPORT` | dynamic archive-pressure comparison protocol layer |
+
+Thus redshift variables `z`, `z_c` and `z_r` are transfer coordinates, and `H0` / `Omega_m` are external comparison coordinates. They are fixed for a comparison protocol run only after the finite D0 source and bridge schema are declared.
+
+## 08.39 Typed SI calibration closure
+
+The SI bridge is a typed object boundary.  The SI-calibration-closure module
+defines `DimensionlessCoreTraces` for core `a0`, `a2` and `Delta^2 V` shapes,
+and `ExternalSICalibration` for macroscopic SI declarations such as `H0`, `GN`
+and `Lambda`.
+
+The Lean owner keeps the D0 output in `DimensionlessCore` status and enforces
+the guardrail: calibration changes only action scaling, it changes units but
+not the core shape, no SI observable exists without external calibration, and
+`H0`, `GN` and `Lambda` are not core observables.  D0 core computes
+dimensionless shapes and ratios only.  SI observables require an explicit
+`ExternalSICalibration` object.
+
+
+## 08.40 Observable-transfer boundary
+
+Cosmology is the sector where external data can most easily masquerade as internal theory. The boundary is therefore stated explicitly.  A cosmological D0 statement is core only when it concerns the finite archive operator, entropy flow, heat-trace window, convex response or no-go bound.  A statement about BAO, S_DE likelihoods, HST tension, survey covariance or external parameter tables is an observable-transfer statement.
+
+The rule is:
+
+```text
+finite archive theorem first;
+observable transfer second;
+external survey comparison last;
+no survey residual may select a new D0 primitive.
+```
+
+This is parallel to the Book 04 selector rule.  External cosmological data may falsify a declared transfer, but they may not choose the traced-out complement operator after the fact.
+
+
+## 08.41 Reproducibility split closure
+
+The active cosmology closure is split exactly at the point where a
+hostile reviewer would otherwise conflate theory with survey fitting.
+
+Internal core/cert side:
+
+```text
+archive entropy flow
+→ density floor / volume bound
+→ finite S_DE transfer shape
+→ InternalArchiveCosmologyObject
+```
+
+External comparison side:
+
+```text
+SurveyLikelihoodPassport
+→ external manifest
+→ covariance convention
+→ likelihood runner
+→ negative controls / falsification.
+```
+
+The Lean owner proves that empirical parameters do not mutate the internal
+archive shape; that an unpackaged external survey comparison cannot be
+advertised as reproducible without a nonempty manifest; and that a survey
+likelihood cannot promote to core cosmology — blocking the strongest overclaim,
+that a likelihood agreement is a new D0 core theorem.
+
+Book 08 is therefore a split between frozen finite cosmology and external reproducibility protocol, not a list of cosmological external comparison protocols.
+
+Cosmological acceleration/entropy flow uses the archive entropy layer.  It must
+go through the entropic archive interface, not import continuum GR as primitive.
+Survey likelihoods remain external comparison protocols after the finite archive macro-interface
+has been frozen.
+
+## 08.42 IceCube neutrino phason decoherence passport
+
+Dark/archive branch remains the Galois completion required for integer finite time readout.
+
+D0 core proves internal relative archive acceleration and its positive log-det loop-pressure response. The finite relative observable \(R(V)=e^{\kappa V}-1\) induces \(r(V)=1-e^{-\kappa V}\) in the normalized feedback trace. Therefore the loop contribution \(\partial_V[-\log\det(I-zF_N(V))]\) is positive on the resolvent domain. This is an internal dimensionless pressure-response theorem. Survey comparison remains passport-layer.
+
+\[
+R(V)=e^{\kappa V}-1, \qquad r(V)=1-e^{-\kappa V},
+\]
+
+\[
+\partial_V[-d_\tau\log(1-zr(V))]
+= d_\tau\frac{z\kappa e^{-\kappa V}}{1-z(1-e^{-\kappa V})}>0.
+\]
+
+The log-det loop pressure term has positive first derivative and negative second derivative in the safe resolvent domain \(0<z<1\). Thus the finite feedback response is positive but bounded and saturating: \(L(V)\to -d_\tau\log(1-z)\) and \(L'(V)\to0\). This does not contradict internal relative archive acceleration, because \(R(V)=e^{\kappa V}-1\) has \(R''(V)>0\). D0 core therefore separates accelerating relative geometry from bounded feedback response. Survey comparison remains passport-layer.
+
+The absolute archive increment decreases monotonically, while total archive trace increases monotonically. Any relative acceleration statement must specify the normalized observable. The strong log-det derivation is the primary internal statement; the weak pressure bridge is the secondary, relative-pressure support.
+
+Determinant Expansion Mode: global trace/log-det contribution to \(\mathsf P_{fb}\); source of cosmological pressure transfer.
+
+Archive Strain Mode: localized phason/defect strain; source of galaxy-scale effective potential.
+
+Global archive pressure and localized archive strain are distinct operator regimes.
+
+Active contraction and archive expansion are the stable and unstable eigen-branches of one determinant-balanced time automorphism, not two independent fitted forces.
+
+```text
+active localization x archive expansion = 1
+expansion = determinant-balance compensation
+black-hole-like regions = finite boundary-capacity saturation events
+```
+
+Any survey comparison of this mechanism is an external comparison protocol after the fixed finite trace-heat object is declared.
+
+## 08.43 CMB phason-flip entropy spectrum passport
+
+Core-13 particle-shell diagnostics and cosmological survey external comparison protocols are separate validation layers. PDG/Core-13 may validate frozen matter/geometry embeddings through the PDG passport; BAO/SDE/HST survey external comparison protocols validate frozen cosmology transfer shapes. Neither external comparison protocol layer can create a D0 primitive.
+
+Nuclear shell-contact SRC passport boundary: the Nuclear SRC passport is a matter-sector external-data boundary, not a cosmology input. The frozen D0 object is the nuclear shell-contact SRC owner; Nature source-data workbooks may test the shell-contact ranking only after manifest/hash pinning. Without pinned source data the required result is `SKIP_NATURE2026_SOURCE_DATA_REQUIRED`.
+
+Core-13 Passport Boundary: the Core-13 shell-geometry passport is the
+external geometry comparison protocol pointer for the finite shell geometry row.
+The PDG/Core-13 passport validates the three-orbit shell geometry as an external shadow of the internal V_shell carrier. It does not choose the baryon spin-flavour projectors.
+
+## 08.44 Archive phason halo / lensing passport
+
+Dark matter and dark energy are separate readout regimes of the traced-out complement branch:
+
+```text
+dark matter = localized archive phason strain
+dark energy = determinant-balance/archive expansion
+```
+
+The dark-matter side is owned by the archive phason dark-matter module and carried by its finite certificate: the traced-out complement coordinate is killed by the active EM projection, while finite heat/metric readout sees the positive phason strain energy. The dark-energy side remains the determinant-balance/archive expansion branch supplied by the toral active/archive split.
+
+The archive dark-strain module and the baryon S3 phason module reuse the same finite phason coordinate vocabulary, but they do not identify the same transfer. The owner for the baryon side is the baryon phason-strain-generations module; the owner for the traced-out complement dark side remains the archive phason dark-matter module.
+
+## 08.45 IceCube neutrino phason decoherence external comparison protocol
+
+Frozen D0 object:
+
+```text
+neutral bulk phason-wave kernel with finite decoherence window
+```
+
+External manifest:
+
+```text
+event id; energy proxy; direction; topology; detector response; exposure; data hash
+```
+
+Prediction:
+
+```text
+high-energy neutrino decoherence follows the frozen phason-window kernel.
+```
+
+High-energy neutrino decoherence is a falsification hook for the frozen neutral
+bulk phason-wave kernel, not a license to retune the kernel from IceCube data.
+
+Forbidden retuning:
+
+```text
+no energy-window retuning after event selection;
+no detector-response tuning inside the D0 kernel;
+no IceCube residual may select a new neutrino operator.
+```
+
+Result semantics:
+
+```text
+PASS / FAIL / SKIP_NEUTRINO_PHASON_DECOHERENCE_EXTERNAL_DATA_REQUIRED
+```
+
+The owner is the IceCube phason-decoherence passport; the default certificate is the neutrino phason-decoherence external-comparison certificate.
+
+See the IceCube HESE certificate and the passport results for the baseline comparison protocol (events used, damping values, delta_loglik / delta_chi2 diagnostics). The internal phason-decoherence law is the primary statement; external comparison is a separate passport protocol.
+
+## 08.46 CMB phason-flip entropy spectrum external comparison protocol
+
+Frozen D0 object:
+
+```text
+S_DE phason-flip entropy transfer roots and gap-labeled relaxation spectrum
+```
+
+External manifest:
+
+```text
+CMB map release; mask; multipole range; covariance; foreground convention; data hash
+```
+
+Prediction:
+
+```text
+large-angle residual structure is compared against the frozen phason-flip entropy spectrum.
+```
+
+Forbidden retuning:
+
+```text
+no post-hoc root selection;
+no mask/covariance switch after residual inspection;
+no CMB anomaly may relabel the K0 spectrum.
+```
+
+Result semantics:
+
+```text
+PASS / FAIL / SKIP_CMB_PHASON_FLIP_EXTERNAL_DATA_REQUIRED
+```
+
+Current external-data runner result:
+
+```text
+SKIP_CMB_PHASON_FLIP_EXTERNAL_DATA_REQUIRED
+```
+
+## 08.47 Archive phason halo / lensing external comparison protocol
+
+Frozen D0 object:
+
+```text
+localized archive phason strain with zero active EM coupling and finite heat/metric response
+```
+
+External manifest:
+
+```text
+galaxy/cluster/lensing catalog; redshift convention; mass-map pipeline; covariance; data hash
+```
+
+Prediction:
+
+```text
+halo/lensing residuals compare to the frozen archive phason strain metric response.
+```
+
+Forbidden retuning:
+
+```text
+no hidden dark-particle catalogue;
+no halo profile fitted back into the D0 archive operator;
+no lensing residual may choose the phason strain kernel.
+```
+
+Result semantics:
+
+```text
+PASS / FAIL / SKIP_ARCHIVE_PHASON_HALO_EXTERNAL_DATA_REQUIRED
+```
+
+Current external-data runner result:
+
+See the SPARC certificate and the passport results for the data-ingest and kernel diagnostics. The internal archive phason strain law is independent of any particular survey catalog.
+
+SPARC rejects the first simple archive-response kernels (shape-only and one-global-scale). Hull-boundary response (global gamma on outer/gas-disk boundary proxy) is also insufficient.
+
+This constrains the next allowed dark-sector response operator. External survey comparisons remain passport protocols and do not authorize root/window/arbitrary-kernel or per-galaxy refits. The theorem-grade admitted refinement is the boundary derivative of the feedback-return operator:
+
+```text
+F_N = P_N U_N^dagger Q_N U_N P_N
+eta_N = d_V Tr(F_N^2) / d_V Tr(F_N)
+F_N^(partial) = F_N^(2) + eta_N d_V F_N
+```
+
+Here `d_V` must be a finite-difference deformation or a smooth finite matrix
+family derivative fixed before comparison. IceCube dynamic feedback remains an
+external passport candidate unless the event manifest, response model and frozen
+operator are pinned.
+
+The Lean owner is the S_DE feedback-reduction module: the DESI/SPARC failure
+forces a boundary-derivative feedback, and an arbitrary-kernel repair is not
+theorem-grade. The passport records are the DESI and SPARC feedback-refinement
+constraint files.
+
+## 08.48 DESI BAO/S_DE phason-flip external comparison protocol
+
+Frozen D0 object:
+
+```text
+S_DE archive transfer fixed by the phason-flip entropy roots
+```
+
+External manifest:
+
+```text
+DESI BAO compressed measurements or chains; covariance; release/version hash
+```
+
+Forbidden retuning:
+
+```text
+no post-DESI refit of lambda_c or lambda_r;
+no post-data choice of z_c or z_r;
+no CPL baseline promoted into the D0 core.
+```
+
+Result semantics:
+
+```text
+PASS / FAIL / SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED
+```
+
+Current external-data runner result:
+
+```text
+SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED
+```
+
+
+
+## 08.49 Expansion as retained-rank evolution
+
+D0 represents cosmological expansion internally as the rank evolution of the retained sector:
+\[
+V_N=\operatorname{rank}(P_N),
+\qquad
+\partial_VF_N=F_{N+1}-F_N.
+\]
+The feedback-pressure component is
+\[
+\mathsf P_{fb}
+=
+\beta^{-1}\operatorname{Tr}[(I-zF_N)^{-1}z\,\partial_VF_N].
+\]
+Acceleration is the sign and spectral response of \(\mathsf P_{fb}-\mathsf P_{cap}\) under boundary-rank deformation. Survey likelihoods test this transfer law as external passports; they do not define the discrete volume derivative.
+
+### t=0 is a connectivity threshold, not a singularity
+
+The retained-rank picture forces a discrete replacement for the initial singularity. The expansion variable is depth \(u\) on the scene graph; the retained sector \(P_N\) is only well-posed once the graph distinguishes points, i.e. once it is **connected**. Below a connectivity (percolation) threshold the graph is disconnected: distinct components carry no mutual transport, so \(\operatorname{rank}(P_N)\) cannot register a single coherent volume and the rank-evolution law \(\partial_VF_N\) has no connected sector to evolve.
+
+Forcing argument: if at depth \(u<\varepsilon^2\) the scene graph is disconnected, then the "beginning of time" is the **onset of graph connectivity (the percolation threshold \(u^\*\))**, not a singular point. There is no \(t=0\) singularity to reach — only the depth at which the largest component first spans the scene and a retained rank becomes definable. A pointwise singularity would require an external label pinning a "true first instant" off-graph, an external catalog that M1 forbids; the connectivity threshold, by contrast, is internally readable from the graph alone (forcing: GOLDEN THE 61.4 — Percolation as \(t=0\)). This reframes cosmic onset as a phase transition of the retained sector rather than a divergence of curvature. [^b08-7]; GOLDEN flags a toy check CHK 61.6 (PercolationToy: threshold \(u^\*\)).
+
+Consequence for the transfer law: \(\partial_VF_N\) and the feedback pressure \(\mathsf P_{fb}\) are defined only on the connected (post-threshold) regime. The "expansion history" is the rank evolution of the retained sector **after** percolation; the pre-threshold regime is not an earlier expanding universe but a disconnected scene where the volume derivative is simply undefined. Survey reconstructions of an early-time singularity are therefore external passports of the post-threshold law, not evidence of an off-graph \(t=0\) point.
+
+**Internal connectivity-threshold owner; the inflaton replacement (`D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001`).** The percolation reframing above is now machine-certified: the complete tripartite scene `K(9,11,13)` (33 vertices, 359 cross-zone edges) is connected (a BFS reaches all 33), while the sub-threshold stage — the intra-zone edges of a complete tripartite graph, of which there are **none** — is 33 isolated vertices, hence disconnected. So the transition `before.connected = false → after.connected = true` is real (Lean `D0.Cosmology.ReheatingPercolationOwner`, cert `vp_connectivity_threshold_owner.py`; CERT-CLOSED). The connectivity transition stands in for the inflaton (`D0-REHEATING-PERCOLATION-OWNER-001`, the transition structure owned). **Honest residuals (PROOF-TARGET):** the reheating energy budget + rate from the discrete rank evolution `∂_V F_N` (`D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001`); and the scalar spectral index `n_s` as a function of the archive Laplacian spectrum (`D0-CMB-PHASON-SPECTRUM-OWNER-001`) — the Laplacian source is internal (`D0-ARCHIVE-LAPLACIAN-001`), but the `n_s` formula is not yet derived and no Planck datum enters (the CMB comparison stays passport-only).
+
+**Deep-stitch closure (Iteration 22): the reheating heat-trace jump at the connectivity threshold.** Crossing the connectivity threshold, the `K(9,11,13)` Laplacian spectrum `{0:1,20:12,22:10,24:8,33:2}` replaces the edgeless sub-threshold spectrum `{0:33}`: the zero-eigenvalue multiplicity (= `dim ker L` = number of components = the `u→∞` heat-trace limit) jumps `33→1` while total multiplicity 33 is conserved and `λ₂=20>0`. This is the finite spectral content behind inflaton-free reheating; the scalar tilt `n_s` from the Laplacian spectrum stays PROOF-TARGET (`D0-CMB-PHASON-SPECTRUM-OWNER-001`). Owner: `D0-REHEATING-HEAT-TRACE-JUMP-001` (CERT-CLOSED), Lean `D0.Cosmology.ReheatingHeatTraceJump`, cert `vp_reheating_heat_trace_jump.py`.
+
+### Reheating energy budget from heat-trace jump
+
+The finite reheating budget is the heat-energy functional associated with connectivity onset. For the connected `K(9,11,13)` scene the graph-Laplacian heat trace is
+
+`H(u) = 1 + 12 e^{-20u} + 10 e^{-22u} + 8 e^{-24u} + 2 e^{-33u}`
+
+(spectrum `{0:1, 20:12, 22:10, 24:8, 33:2}`, total multiplicity 33, nonzero spectral weight `Σ mult_k λ_k = 718`), and the heat-energy functional is `E_reheat(u) = −∂_u log H(u)` — the heat-weighted mean eigenvalue. The pre-threshold disconnected baseline has constant `H_pre = 33`, hence `E_pre = 0`, so `E_reheat = E_connected`. For `u > 0` this is strictly positive and bounded above by the maximal scene eigenvalue `λ_max = 33`, with early limit `E(0⁺) = 718/33` and late limit `0`. This closes the internal inflationless threshold-energy owner: the positive heat-energy release at connectivity onset is fixed by the finite spectrum alone — no inflaton potential, Planck scalar index, or survey datum enters (`D0-REHEATING-ENERGY-BUDGET-OWNER-001`, `D0-REHEATING-HEATTRACE-ENERGY-FUNCTIONAL-001`, `D0-INFLATIONLESS-THRESHOLD-ENERGY-OWNER-001`, `D0-REHEATING-NO-INFLATON-NOGO-001`; Lean `D0.Cosmology.ReheatingEnergyBudgetOwner`, cert `vp_reheating_energy_budget_owner.py`). The CMB `n_s` smoothing remains a separate open blocker (`D0-CMB-PHASON-SPECTRUM-OWNER-001`); no `n_s` closure is claimed here.
+
+## 08.COSMOLOGY-CLOSURE Internal cosmology chain (reheating → phason → CMB)
+
+The internal cosmology chain is machine-owned where closed, with every remaining gap named exactly in `02_REGISTRY/frontier/cosmology_frontier.csv`. **No external survey datum retunes any internal window, and global cosmology closure is not claimed.** The chain:
+
+`reheating energy E(u)` → `phason initial covariance C_φ(u)` → `two-mode pressure–energy window` → `continuum EOS w_D0(u)` → `physical branch w_DE(z)` → `archive-capacity redshift` → `IDS smoothing` → `CMB transfer / n_s` → `passports`.
+
+**Closed this campaign (finite owners).** The post-threshold phason initial state is the normalized heat-kernel covariance on the nonzero connected modes, with energy `ρ_φ(u)` the heat-weighted mean eigenvalue in `[λ₂, λ_max] = [20, 33]`, strictly positive and sourced by the reheating heat trace with no inflaton amplitude (`D0-REHEATING-PHASON-INITIAL-DATA-OWNER-001`, `D0-PHASON-INITIAL-COVARIANCE-OWNER-001`, Lean `D0.Cosmology.PhasonInitialCovariance`). The freeze-out scale is the Fiedler value `k_*² = λ₂ = 20`, the minimum nonzero eigenvalue (`D0-CMB-FIEDLER-FREEZEOUT-OWNER-001`, Lean `D0.Cosmology.CMBFiedlerFreezeout`). The dark/transport accounting is rank-3/nullity-30 with `γ = 10`, visible share `1/11`, dark share `10/11`, the archive phason sector EM-dark and metric-active, and the internal transfer composes over five compatible stages (`D0-DARK-RATIO-TRANSFER-OWNER-001`, `D0-ARCHIVE-PHASON-METRIC-TRANSFER-OWNER-001`, `D0-COSMOLOGY-INTERNAL-TRANSFER-COMPOSITION-001`, Lean `D0.Cosmology.DarkArchiveTransfer`).
+
+**Named open links (PROOF-TARGET, exact artifacts).** The two load-bearing gaps that keep the umbrella `D0-COSMOLOGY-REHEATING-TO-CMB-CLOSURE-001` open: (1) a canonical internally-FORCED `(k,u)` smoothing rule for `n_s` — the discrete tilt `n_eff−1 = d log P/d log k` takes different values at different `(k,u)`, so the bare spectrum plus an unforced window does NOT determine `n_s` (`D0-CMB-IDS-SMOOTHING-OWNER-001`); (2) the physical `w_DE(z)` MAGNITUDE map — the negative SIGN is owned by the Galois conjugate `σ(φ⁻¹) = −φ` (`D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`), but the magnitude on the observational window is not (`D0-PHASON-WDE-Z-MAP-OWNER-001`). The two-mode window and the curvature transfer are scratch-verified closable and carried as named Lean-owner PROOF-TARGETs. No Planck `n_s`, DESI/CPL parameter, or inflaton scalar enters any internal owner.
+
+**n_s undetermined no-go (Iteration 22, `D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001`, NO-GO).** The discrete spectral tilt `n_eff − 1 = (k/P)·P'(k)` of the heat-smoothed phason power proxy `P(k) = Σ_i w_i/(k² + λ_i)` over the nonzero `K(9,11,13)` modes is now PROVEN non-constant on the `(k, positive-smoothing)` domain: it differs at `k=1` vs `k=2`, and at fixed `k=1` between the `u=0` weighting and a low-`λ`-emphasising admissible smoothing (exact `ℚ`, Lean `D0.Cosmology.CMBNsSmoothingUndeterminedNoGo`, cert `vp_cmb_ns_smoothing_undetermined_nogo.py`). So the bare spectrum plus an *unforced* `(k,u)` does **not** determine a single `n_s` — this closes the obstruction question negatively. The forced canonical `(k,u)` selection remains the exact missing artifact (`D0-CMB-IDS-SMOOTHING-OWNER-001`, PROOF-TARGET); no Planck `n_s` is used.
+
+**[CMB smoothing maximality].** Not just one smoothing window: the heat-smoothed tilt n_eff-1=(k/P)P'(k) over modes {20,22,24,33} is non-constant across the admissible-smoothing family -- three legitimate positive weightings (flat-mult, low-lambda, high-lambda) give three distinct n_s, and it varies with k (`D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001`, Lean `D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo`). No canonical (k,u) is forced by present-core; the n_s value requires an external Planck-comparison passport. The internal forcing question is closed-negative.
+
+**[Fiedler projection audit: weight invariance is real; scale closure is not (`D0-FIEDLER-HODGE-PROJECTION-001`, FORMALISM; `D0-FIEDLER-TILT-TAUTOLOGY-NOGO-001`, NO-GO)].**
+`D0.Cosmology.FiedlerHodgeProjection` correctly isolates the lowest connected mode $\lambda_2=20$ (multiplicity 12) and proves that an overall nonzero kernel prefactor cancels from the logarithmic tilt.  What it does **not** do is select the evaluation scale.
+For any one-mode Lorentzian denominator the squared-scale tilt is
+\[
+-\frac{2q}{q+\lambda}.
+\]
+Hence the prescription $q_*=\lambda$ gives $-1$ for **every** nonzero $\lambda$; the value does not use the special graph eigenvalue $20$.  Lean now records this universal identity in `D0.Cosmology.FiedlerTiltTautologyNoGo`.  At fixed $\lambda=20$, $q=20$ gives $-1$ while $q=40$ gives $-4/3$, so scale dependence remains after the projection.  The honest conclusion is therefore: the Fiedler projector removes an overall weighting ambiguity, but the CMB tilt selector remains underdetermined until an independently forced scale/pivot rule is supplied.## 08.50 Orbit-averaged trace expansion
+
+Cosmological expansion is the macroscopic orbit-average of completed terminal trace emissions. With
+
+\[
+\Omega_8=ABCD\times\{+,-\},
+\]
+
+the shell-emission operator is
+
+\[
+\mathcal E_{\Omega}=\frac18\sum_{\omega\in\Omega_8}P_\omega F_NP_\omega^\dagger.
+\]
+
+Its invariance under the terminal role symmetries supplies the internal source of isotropic archive growth. In the fractal tick envelope, archive accumulation is
+
+\[
+B(s)=B_0+A_0(1-e^{-s\log\varphi}).
+\]
+
+----
+
+## Tabletop bridge guardrail
+
+**Publication note on external bridge limits.** Tabletop plasma behaviour is admitted here only as an external active-medium bridge. It is not a cosmological proof and does not bypass survey/passport discipline.
+
+
+Status: `LAB-BRIDGE / TABLETOP-PASSPORT-SEED`.
+
+The dusty-plasma bridge is useful for Book 08 because it demonstrates how an active medium can deform the observed channel. This supports a conservative interpretation of negative fixed-ratio detector-frame searches: a raw external observable may fail even when the underlying active/archive mechanism remains meaningful, because the detector medium participates in the transfer.
+
+No cosmological conclusion is promoted from this laboratory analogy. The bridge forbids the claims `TABLETOP-QG-PROVED`, `ISOMORPHISM-CLOSED`, and `CORE-CLOSED`. A tabletop experiment may become an empirical passport only after a frozen protocol, off-source/negative controls, and non-retuned prediction targets.
+## 08.51 The archive phason: a forced gapless dark mode
+
+The word *phason* (gapless quasicrystal mode / K₀ gap-label degree of freedom, standard in condensed-matter and operator-K-theory) runs throughout the matter and cosmology sectors — phason strain, phason flips, phason domain walls, phason holonomy. This section is its **owner**: it derives the phason from the forced carrier, so the term is a consequence, not borrowed vocabulary. Every downstream use cites here.
+
+**Forcing (DEF-0.2.2).** The carrier is a cut-and-project quasicrystal — this is already forced, with slope `φ⁻²`, in BOOK_01 §01.19a [^b08-8]. A cut-and-project structure embeds a higher-dimensional periodic lattice and keeps only the slice that falls in an acceptance window. Projecting from the embedding dimension `D` onto the physical line `d_∥ = 1` therefore leaves
+
+```math
+d_\perp = D - d_\parallel
+```
+
+**perpendicular** coordinates. For the golden carrier the embedding is the `ℤ²` of the time operator `T = [[0,1],[1,-1]]`, so `D = 2` and there is exactly **one** perpendicular degree of freedom. That degree of freedom is the **phason**: a uniform shift of the acceptance-window intercept in perpendicular space.
+
+**Why it is gapless.** A phason shift does not deform the physical metric; it relabels which embedding points fall inside the window. For an aperiodic slope the shifted tiling is *locally isomorphic* to the original — it contains exactly the same finite patches. Concretely, the slope-`φ⁻²` cut words for different intercepts share an identical set of finite subwords (the Sturmian factor set is intercept-independent). No patch changes type, so the energy-density cost of a phason shift vanishes in the ideal tiling: the phason is a **gapless Goldstone mode** of the broken `D`-dimensional translation symmetry. (A phonon, by contrast, is an in-plane acoustic displacement and is the separate gapped/elastic channel.)
+
+**Why it is dark.** Because a phason flip is a *geometric relabelling* of archive support rather than a charge oscillation, it carries no electromagnetic coupling and does not radiate. A gapless, non-radiating hydrodynamic mode of the carrier is exactly a dark, collisionless channel — the "archive phason glass" that the cosmology comparisons (§08.44–§08.48: halo lensing, CMB flip entropy, BAO/S_DE) read against survey data. Those remain external-comparison passports; what is forced *here* is only that such a gapless dark mode must exist once the carrier is cut-and-project.
+
+**Status.** This is the forcing owner of the phason concept (a finite certificate verifies the perpendicular-DOF count, the intercept-invariance of the factor set, and the density-preserving relabelling, with a rational-slope negative control). It does **not** promote the downstream spectral-triple / K-theory phason-holonomy constructions, which retain their explicit external gap (the relevant K-theory is not yet in the formal kernel). The language debt is closed: the phason is a forced gapless dark mode of the carrier, and every later use inherits that derivation. [^b08-8]
+
+**Named external owner of "gapless mode".** The masslessness is owned by **Goldstone's theorem** (J. Goldstone, A. Salam, S. Weinberg, *Broken Symmetries*, Phys. Rev. **127**, 965, 1962): spontaneous breaking of a continuous symmetry forces a zero-mass mode, one per broken generator. The phason is precisely the Goldstone mode of the broken perpendicular-space translation symmetry of the cut-and-project carrier, and its *diffusive* (rather than propagating) character at long wavelength is owned by the quasicrystal-phason effective field theory (M. Baggioli, M. Landry, *Effective Field Theory for Quasicrystals and Phasons Dynamics*, SciPost Phys. **9**, 062, 2020; arXiv:2008.05339): the internal phason shifts are symmetries with no associated Noether currents. D0 forces *that a gapless dark mode exists*; Goldstone is the cited classical owner of *why it is massless*.
+
+**Dark-energy connection (HYP, not BRIDGE).** If the archive phason carries a slow-rolling pressure, it reads as an evolving dark-energy equation of state `w(z)`. The DESI DR2 analysis prefers a CPL evolving `w` over `ΛCDM` at `~3.1σ` (K. Lodha et al., arXiv:2503.14743). This is *suggestive* of "evolving `w` = archive pressure", **but the mechanism is not derived**: no numerical `w(z)` has been computed from the phason model (the 30-dimensional kernel → `w(z)` map is unwritten). Status **HYP, not BRIDGE**, pending a phason-derived `w(z)`.
+
+**Update (Iteration 22 dual-frontier strike).** The `30-dim kernel → w(z)` map is now owned at three levels: (i) the **kernel-only no-go** `D0-PHASON-WZ-KERNEL-ONLY-NOGO-001` (NO-GO) — the 30-dim kernel alone does *not* determine `w(z)` (two pressure-energy pairs over the same kernel give different `w_D0`; a finite pressure-energy operator is required; Lean `D0.Cosmology.PhasonWZTransfer.kernel_dim_alone_does_not_determine_w`); (ii) the **EOS-form scaffold** `D0-PHASON-PRESSURE-EOS-SCAFFOLD-001` (CERT-CLOSED) — `w_D0 = p/ρ` is well-defined on the nonzero-energy domain, `ρ` from the archive relative-acceleration energy (`D0-IM-COSMO-001`) and `p` from the log-det loop-pressure response; (iii) the **explicit `w_D0(u)` owner** `D0-PHASON-WZ-TRANSFER-OWNER-001` (PROOF-TARGET) — the closed `u`-dependent formula / finite `w_N` is the named missing artifact. Status stays **HYP-with-mechanism-scaffold, not BRIDGE**: the DESI CPL comparison remains an empirical passport (survey data may compare, never define `w_D0`; `vp_phason_wz_no_survey_tuning.py`).
+
+**Update (Iteration 22 explicit-function strike).** The finite `w_N` artifact named in level (iii) is now **constructed and certified** as `D0-PHASON-WZ-FINITE-SEQUENCE-SCAFFOLD-001` (CERT-CLOSED). On the common archive window `n`, the energy is `ρ_N = R_n = φⁿ − 1` (`D0-IM-COSMO-001`) and the relative pressure is `ΔR_n = φ^{n-1}` (`D0-IM-COSMO-002`, `relative_pressure_bridge_law`), so the internal equation-of-state RATIO is the exact ℚ(φ) sequence
+
+```math
+w_N \;=\; \frac{p_N}{\rho_N} \;=\; \frac{\Delta R_n}{R_n} \;=\; \frac{\varphi^{\,n-1}}{\varphi^{\,n}-1}
+\qquad (n\ge 1),
+```
+
+a monotonically *decreasing* sequence `[φ, 1, φ⁻¹·…] → +φ⁻¹` (cert `vp_phason_wz_explicit_function.py`; controls: energy-only / pressure-only / kernel-dimension-only / CPL-tuned are each rejected; compatibility `vp_phason_energy_pressure_compatibility.py`). **This sharpens, but does not close, the explicit-function owner** `D0-PHASON-WZ-EXPLICIT-FUNCTION-001` (PROOF-TARGET). Two analytic steps remain, and they are now *exactly* named: (a) the **continuum interpolation** `w_N → w_D0(u)` (the envelope function over the windows, not just the discrete ladder); and (b) the **sign/normalization map** — `w_N` is a *positive* internal archive ratio (`→ +φ⁻¹`), whereas a physical dark-energy equation of state is *negative* (`w_DE(z) < 0`); the map from the positive internal object to the negative physical observable is unwritten. Until both close, no `w(z)` numeric is read as physical, and the DESI/CPL comparison stays passport-only (`vp_phason_wz_passport_boundary.py` forbids any redshift/CPL term from *defining* `w_D0`).
+
+**Update (Iteration 22 five-front strike — the sign is Galois-forced).** Step (b) above is now resolved **at the sign level**. The positive internal archive ratio (`w_N → +φ⁻¹`) and the negative physical `w_DE` are related by the **Galois conjugation** `σ : φ ↦ ψ` of `ℚ(φ)/ℚ`: the archive and retained sectors are the two Galois-conjugate sectors (`D0.Dynamics.GaloisConjugateBalance`; `φ·ψ = −1`, `ψ < 0`). Applying `σ` to the positive ratio gives `σ(φ⁻¹) = ψ⁻¹ = −φ < 0` — the negative sign is **forced by the field automorphism, not inserted by hand**, and it is the specific conjugate value `−φ`, provably distinct from the naive negation `−φ⁻¹` (Lean `D0.Cosmology.PhasonWDESignNormalization`, cert `vp_phason_wde_sign_normalization_owner.py`; `D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`, CERT-CLOSED on the sign). What stays open: the **magnitude/normalization** `|w_DE|` (`D0-PHASON-WZ-EXPLICIT-FUNCTION-001`, PROOF-TARGET) and the explicit log-det window roots `λ_c, λ_r` which are not yet internally owned (`D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001`, PROOF-TARGET). The CPL `(w₀, w_a)` reading is a downstream passport (`D0-PHASON-WZ-CPL-PASSPORT-001`, PASSPORT-CLOSED): a survey may compare, never define `w_D0`.
+
+**[Iter22 eight-front]** Front F4 (phason EOS, archive-capacity redshift) now carries a narrow CERT-CLOSED finite-window owner. The redshift map 1+z=phi^n is proved a strict monotone bijection on the integer/rational samples (phi>1), and the integer-window archive ratio w_N=phi^(n-1)/(phi^n-1) is shown well-defined on n>=1 (energy phi^n-1>0; n=0 is the excluded division pole), strictly DECREASING in n, with exact Z[phi] values w_N(1)=phi, w_N(2)=1 (cert verifies n=1..8 symbolically). The load-bearing honesty correction is recorded as a theorem: the limit phi^-1 is the n->inf (z->inf, EARLY-time) limit, sitting strictly BELOW the small-z window edge w_N(1)=phi; it is explicitly NOT the late-time z->0 dark-energy value (w_N diverges as z->0). No survey datum (DESI/CPL/H0) enters; the construction is internal Z[phi]. The physical dark-energy reading remains open as the new PROOF-TARGET D0-PHASON-WDE-Z-MAP-OWNER-001, whose two missing artifacts are named: a proven continuum interpolation w_N -> w_D0(u), plus the magnitude/sign normalization onto physical negative w_DE on the late-time window. Lean: D0.Cosmology.PhasonArchiveCapacityRedshift (theorem phason_archive_capacity_redshift); cert: `vp_phason_archive_capacity_redshift.py`.
+
+**[Phason magnitude maximality].** The dark-energy sign is Galois-forced negative (retained reading -phi, `D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`), but the magnitude map z->w_DE(z) is NOT present-core forced: two admissible maps (w1=-phi-z, w2=-phi-2z) respect every owned invariant (negative, anchor -phi at z=0) yet differ at z=1 (`D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001`, Lean `D0.Cosmology.PhasonMagnitudeMaximalityNoGo`). The magnitude needs an external physical-branch passport (DESI/CPL); the sign owner is untouched.
+
+**[Phason continuum envelope (internal)].** The closed phi-semigroup forces the continuum interpolation of the discrete EOS ratio: `w_D0(s)=1/[phi(1-exp(-s log phi))]`, restricting to `w_N=phi^(N-1)/(phi^N-1)` at integer N, monotone decreasing to `phi^-1` (`D0-PHASON-CONTINUUM-ENVELOPE-OWNER-001`, CERT, Lean `D0.Cosmology.PhasonContinuumEnvelope`). This closes only the INTERNAL positive envelope; the physical magnitude/redshift map `|w_DE(z)|` stays underdetermined (`D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001`). No DESI/CPL/FLRW.
+
+**[Self-unfolding observable elimination, internal].**
+`D0-SELF-UNFOLDING-OBSERVABLE-RELATIONS-001` now joins three formerly adjacent uses of the depth
+index. For the internal registered comparison `1+z_D0(o,e)=phi^(o-e)`, a repeat observation at
+`o+1` forces `Delta z_D0=(phi-1)(1+z_D0)`. At origin depth,
+`z_D0(n,0)=archiveGrowth(n)=phi^n-1`, and the redshift-drift, metric-scale, and relative-archive
+increments coincide. The active time ladder contracts by the inverse generator `phi^-1` in the
+same step. Thus time, expansion, and relative archive growth lose an independent internal knob.
+The result does **not** turn the fixed rank/nullity split `3/30` into a dynamic dark measure and does
+not identify `z_D0` with astronomical redshift; the physical light/detector realization remains the
+registered external owner.
+
+The associated dynamical-measure theorem
+`D0-DYNAMIC-ARCHIVE-MEASURE-REDSHIFT-RELATION-001` makes the bookkeeping distinction exact:
+`f_arch(n)=1-phi^(-n)=z_D0/(1+z_D0)`, while the fixed dimension share remains `30/33=10/11`.
+The first-step golden share `phi^-2=2-phi` is proved unequal to `10/11`. Hence the corpus now has a
+specific internal dark-growth/expansion relation without claiming that nullity count, tick measure,
+or observed cosmological matter fraction are the same object.
+
+**[Physical redshift detector passport and its deletion control].** The formerly open
+light/detector edge is now closed conditionally by
+`D0-PHYSICAL-REDSHIFT-DETECTION-PASSPORT-001`. A positive preregistered frequency protocol uses one
+constant contracting multiplier satisfying the same self-return equation `p+p²=1`; the positive
+root is Lean-forced to `p=phi^-1`. Hence `nu(n)=nu(0)phi^-n`, absolute calibration cancels between
+the typed emission/observation records, and `nu_em/nu_obs=phi^(o-e)=1+z_D0`. The physical drift law
+is inherited from the same generator. The theorem is a representation passport, not a claim that an
+arbitrary survey pipeline already implements this readout.
+
+Its load-bearing deletion control is `D0-RAW-DOUBLE-DETECTION-REDSHIFT-NOGO-001`: two arbitrary
+positive readouts at fixed depths can realize every positive ratio. More generally every raw result
+factors exactly as `(nu_em/nu_obs)=(C_em/C_obs)phi^(o-e)`, with `C_n=nu(n)/phi^-n`. Thus a rival under
+the same depth protocol necessarily carries `C_em!=C_obs`, an additional relative-calibration datum.
+The forcing is structural and universal; no list of rival cosmologies is scanned.
+
+**[Finite phase-cycle realization and its structural reductio].**
+`D0-FINITE-PHASE-CYCLE-FREQUENCY-REALIZATION-001` now realizes the preceding abstract frequency
+passport inside the finite theory. The owned rational phase action is a quarter turn: Lean proves
+`J⁴(v)=v` for every phase quadrature, rejects three turns as a full cycle, and proves that every
+finite count of four-turn blocks is a return. A protocol freezes one positive cycle count `N` and
+one positive base window `W` before observation; with `Delta t_n=W phi^n` and
+`nu_n=N/Delta t_n`, Lean derives `nu_{n+1}=nu_n phi^-1` and constructs the preregistered
+self-return frequency protocol. Hence the redshift ratio and drift laws are inherited without a
+new fitted parameter.
+
+The paired NO-GO `D0-RAW-CYCLE-WINDOW-REDSHIFT-NOGO-001` is universal. For arbitrary positive raw
+registrations it proves
+`nu_em/nu_obs=(N_em/N_obs)(Wbar_obs/Wbar_em)phi^(o-e)`, where
+`Wbar_n=W_n/phi^n`. Therefore a rival ratio at the same registered depths implies, by contradiction,
+that either the completed-cycle counts differ or the normalized windows differ. Raw registrations
+remain ratio-surjective, so the result is not obtained by enumerating cosmologies or by treating any
+two detector numbers as frequencies. The remaining physical obligation is narrow: a laboratory
+pipeline must represent its fringe return and clock gate by this finite counter. Certificate:
+`vp_phase_cycle_frequency_realization.py`.
+
+**[Iter23 — log-det window scales now VALUE-OWNED, with a `ℚ(φ)` NO-GO].** The two window scales `λ_c, λ_r` (`D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001`) are no longer representative domain-check numbers: they are owned **exactly** as the two nontrivial eigenvalues of the **normalized graph Laplacian** `L̂ = I − D^{−1/2} A D^{−1/2}` of the scene `K(9,11,13)` (BOOK_01), verified at the full `33×33` level. Explicitly `λ_{c,r} = 3/2 ∓ √10/40`, the roots of `160λ² − 480λ + 359`, with the two symmetric functions **forced by the scene**: `λ_c + λ_r = 3 = Z` (the zone count, a trace identity) and `λ_c·λ_r = 359/160 = |E|/160` (`|E| = 359` edges). The normalizer is itself an intrinsic scene invariant, `160 = (∏ zone-degrees)/(2V) = 10560/66` — a single graph quantity, not the `2·Ω₈·γ = 2·8·10` octet factorization used in §08.12.2. Nothing is inserted: `A, D, Z, |E|, V` are all owned by BOOK_01, so the scales are FORCED (cert `vp_logdet_window_scale_owner.py`, failable). **NO-GO refinement** (sharpening the former "`EXACT-MISSING: exact ℚ(φ) roots"): the roots lie in `ℚ(√10)` and `√10 ∉ ℚ(φ)=ℚ(√5)` (`√10 = a+b√5` forces `a²+5b²=10, 2ab=0`, which has no rational solution). So an exact `ℚ(φ)` closed form for `λ_c, λ_r` is **provably unreachable** — the correct owned field is `ℚ(√10)`. What remains PROOF-TARGET is narrowed to **formula-ownership**: proving the log-det kernel `d_V[−logdet(I − z F_N(V))]` spectrally *reproduces* these Laplacian scales (the values and their field are now owned). The physical `w_DE(z)` magnitude stays external passport (`D0-PHASON-WZ-CPL-PASSPORT-001`); no survey datum enters.
+
+**[Iter25 — the splitting has an exact forced closed form, and `√10` is a size-fingerprint (`D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001`, Lean `D0.VNext2.WindowScaleDiscriminant`, cert `vp_window_scale_discriminant_forced.py`).** For a general `+2` zone progression `{m, m+2, m+4}` the discriminant of the window pair is exactly `D(m) = (λ_r − λ_c)² = 9 − 4·(λ_cλ_r) = 3/((m+1)(m+3))` — and since the degrees are `2(m+3), 2(m+2), 2(m+1)`, the denominator is the product of the smallest and largest *degree-halves*, so `D(m) = Z/(h_min·h_max)` with `Z = 3`. At the scene `m = 9` this is `3/(10·12) = 1/40`, whence `λ = 3/2 ± √(1/40)/2 = 3/2 ± √10/40` — the corpus `η_EP = √10/40` is now a closed-form consequence, not a readout. Two honest riders. (i) `D(m) > 0` for every `m`, so the two scales are *always* real and distinct: reading "orientation = sign of the discriminant" (§01) here gives a **constant** `+`, never a `ℤ₂` flip — `√10` is **not** an orientation bit, and that tempting reading is rejected. (ii) The field `ℚ(√(sqfree(3(m+1)(m+3))))` is a **size-fingerprint**: the golden field `ℚ(√5)` occurs at `m = 29` (zones `29,31,33`), *not* the scene, and `m = 5` gives rational scales (`3·6·8 = 144 = 12²`). So the scene's `√10` is the fingerprint of the specific sizes `9,11,13` and carries no forced "departure from golden" meaning — which *explains* (does not weaken) the `√10 ∉ ℚ(φ)` NO-GO above: it is generic, not a near-miss.
+
+
+**[2026-08-31 — PHI-P_DESI_01 real-data verdict].** The recovered phenomenological draft has now
+been separated into two hash-pinned external passports and run without fitting phi, the phase
+origin, levels, or redshift bins. The object-level claim `z_n=phi^n-1` was tested by an equal-width
+local core/sideband statistic at the frozen levels `n=1,2,3` and `delta=0.01` in
+`log_phi(1+z)`. On 1,497,382 unique DESI DR1 MAIN/DARK quasars the pooled result is
+`29,083/28,549`, one-sided `p=0.0132016`, above the frozen `p<0.001` threshold
+(`D0-PHI-QSO-LEVEL-EXCESS-DESI-001`). The identical statistic on 750,414 SDSS DR16Q quasars gives
+`14,662/14,629`, `p=0.42584`: no independent replication
+(`D0-PHI-QSO-LEVEL-REPLICATION-SDSS-001`). A QuasarNet-only control is formally stronger but has a
+level-1 deficit and is absent from final DESI `Z`, Redrock, and SDSS, so it is classified as
+estimator/selection structure rather than double detection.
+
+The direct physical reading
+`H(z)=H0 phi^-floor(log_phi(1+z))` was tested separately against the six official DESI DR2 radial
+BAO measurements because `DH/rd=c/[H(z)rd]`. With only one fitted positive normalization, the
+frozen step assignment `[0,1,1,1,1,2]` gives `chi2=7631.137391` for 5 dof and
+`p=1.4738e-1652`: `REJECT_DIRECT_PHYSICAL_STEP_H`
+(`D0-PHI-STEP-H-DESI-DR2-001`). This rejects only the old identification of the symbol `H` with
+the conventional Hubble rate. It does not alter the internal depth/frequency cocycle or its
+conditional detector representation. Protocol, manifests, executable certificates, and full
+scope report: `05_EXPERIMENTS/DESI/PHI_P_DESI_01_PROTOCOL.md` and
+`05_EXPERIMENTS/reports/phi_redshift_real_data.md`.
+
+**[2026-09-03 — D0-RD-01 direct redshift-drift verdict].** The next red point was tested on
+repeated observations of the same absorbers rather than reconstructed from `H(z)`: ten digital
+GBT H I systems at `0.09<=z<=0.69` and the independent three-epoch ESPRESSO Lyman-alpha sightline
+at mean `z=3.57`. The literal physical reading of the Lean one-tick law
+`Delta z=(phi-1)(1+z)` is rejected on every registered baseline; even the weakest
+`minimum jump / (|observed change|+5 sigma)` ratio is `5.1023e4`. This does **not** reject the
+internal theorem, which contains no SI tick duration; it rejects assigning a nonzero refinement
+tick to those astronomical intervals.
+
+The separately typed minimal continuous bridge
+`1+z(t)=(1+z0)phi^(rho t)`, `rho>=0`, eliminates `z` and predicts the common observable
+`c dot(z)/(1+z)=c rho log(phi)`. Fitting its one amplitude to the independent GBT+ESPRESSO blocks
+gives `-4.9321+/-1.8889 m/s/yr`; no positive signal is detected, while the nonnegative family has
+boundary `p=0.004513`, above the frozen `alpha=0.001` rejection threshold. The 99.9% upper limit is
+`rho<6.2742e-9 tick/yr` (more than `1.5938e8 yr` per phi tick under this interpolation). The second
+ESPRESSO analysis is a correlated control and is not double-counted. Status
+`D0-DIRECT-REDSHIFT-DRIFT-PASSPORT-001 = EMPIRICAL-PASSPORT`; full protocol and scope:
+`05_EXPERIMENTS/REDSHIFT_DRIFT/D0_RD_01_PROTOCOL.md` and
+`05_EXPERIMENTS/reports/redshift_drift_direct.md`. The values were public before this
+protocol was written, so the result is retrospective and is not advertised as a prospective
+discovery.
+
+**[2026-09-03 — D0-RDEC-01 coupled redshift-drift / expansion verdict].** The continuous
+constant-rate bridge has now been tested against a second observable rather than given another
+amplitude. Combining `dot z=rho log(phi)(1+z)` with the explicit FLRW bridge
+`dot z=(1+z)H0-H(z)` eliminates `rho` from the redshift shape and forces
+
+```math
+\frac{H(z)}{1+z}=\mathrm{constant},\qquad
+\frac{D_H(z)}{r_d}=\frac{C}{1+z}.
+```
+
+On the six hash-pinned DESI DR2 radial-BAO measurements, one-normalization GLS gives
+`C=31.78441+/-0.19922`, `chi2=132.01316/5`, `p=8.8978e-27`. Thus
+`D0-REDSHIFT-DRIFT-EXPANSION-COUPLED-PASSPORT-001` rejects the constant-rate D0+FLRW physical
+bridge at `alpha=0.001`. Phi cancels from this test: it is a coupled-generator falsification, not a
+phi-peak search. A free power-law exponent improves the fit by `Delta chi2=106.013` but still fails
+absolute goodness-of-fit (`p=3.16e-5`). The first five galaxy-tracer points alone do not reject;
+their prediction misses the `z=2.33` DESI Lyman-alpha point by `-11.21 sigma`, and removing that
+point removes the primary rejection. This dependence is part of the verdict, not hidden.
+
+The paired Lean theorem
+`D0-REDSHIFT-SI-TICK-CALIBRATION-NOGO-001` proves that the internal dimensionless protocol cannot
+select an SI `rho`: positive clock rescalings preserve every internal comparison and change the SI
+rate. The repository's existing candidate `tau_e=h/(38m_ec^2)` also cannot be identified directly
+with the cosmological tick: the D0-RD-01 limit requires a dimensionless separation greater than
+`2.3616e37`. This rejects only the cross-scale identification, not the action-section coefficient.
+
+Finally, the internal archive law would conditionally give
+`DH/rd=C(1-f_archive)` for `f_archive=z/(1+z)`. Lean exposes the missing external object as a
+`MeasuredDarkResponseRepresentation`. No independent dark-response dataset instantiates it in this
+run, so that leg remains `NOT_TESTED_NO_INDEPENDENT_DARK_RESPONSE_REPRESENTATION`; BAO residuals are
+not relabelled as dark energy and the phason-magnitude NO-GO remains intact. Full protocol and
+controls: `05_EXPERIMENTS/COUPLED_REDSHIFT_EXPANSION/D0_RDEC_01_PROTOCOL.md` and
+`05_EXPERIMENTS/reports/redshift_drift_expansion_coupled.md`.
+
+**[2026-09-03 — local pressure/capacity dynamics and the density-bound firewall].** The global
+phrase "expansion is determinant balance" is now sharpened to a local signed law. For every site,
+the internal one-step acceleration readout is
+
+```math
+\Delta\theta(x)=\kappa\,[P_{fb}(x)-P_{cap}(x)],\qquad \kappa>0.
+```
+
+Exact balance gives zero *acceleration* and therefore preserves an already existing expansion rate;
+it does not force `theta=0`. Feedback excess accelerates, capacity excess brakes, and a capacity
+excess larger than the current positive rate reverses the next-step motion. Unequal local
+imbalances force unequal local accelerations, so no homogeneity premise is smuggled into the law.
+This is the finite internal content of `D0-LOCAL-PRESSURE-CAPACITY-DYNAMICS-001`; identifying
+`P_fb` with a measured dark response or `P_cap` with a physical matter-density source remains a
+separate representation obligation.
+
+The paired `D0-PACKING-LIMIT-HOMOGENEITY-NOGO-001` closes a tempting but invalid black-hole step.
+A pointwise ceiling `rho(x)<=rho_max` does not imply a homogeneous density field; Lean supplies one
+parametric two-site countermodel. Homogeneity follows only from the strictly stronger premise
+`rho(x)=rho_max` at every bulk site. The current D0 black-hole predicate is saturation of
+heat content against **boundary capacity**, which forces boundary encoding but does not assert
+everywhere-saturated bulk density. Therefore black-hole homogeneity is not derived and cannot be
+inserted by renaming boundary saturation as a local packing law.
+
+**[2026-09-03 — local Raychaudhuri representation and two-readout theorem].** The formerly verbal
+matter/dark interpretation now has a typed conditional owner. A
+`LocalRaychaudhuriRepresentation` supplies three independently checkable equalities:
+
+```math
+\kappa P_{cap}=\theta^2/3+\sigma^2+F_{matter},\qquad
+\kappa P_{fb}=\omega^2+D_{archive},\qquad
+a_{measured}=\kappa(P_{fb}-P_{cap}).
+```
+
+Lean eliminates `P_fb,P_cap` and proves
+`a_measured=(omega^2+D_archive)-(theta^2/3+sigma^2+F_matter)`. Adding positive matter focusing
+lowers acceleration by the same amount; adding positive dark/archive drive raises it by the same
+amount. Exact equality gives zero acceleration, focusing dominance brakes, and sufficient
+overcompensation reverses the next-step expansion rate. This is
+`D0-LOCAL-RAYCHAUDHURI-REPRESENTATION-001 = BRIDGE-ASSUMPTIONS-EXPLICIT`; no physical inhabitant is
+asserted.
+
+The companion `D0-NET-RESPONSE-DARK-DECOMPOSITION-NOGO-001` is unconditional. A lone net
+acceleration `D-F` is unchanged by `(D,F)->(D+g,F+g)` for every local function `g`. Lean therefore
+proves that no universal net-only algorithm can identify `D`. The second independently registered
+focusing field is not optional information: it removes the gauge and gives the unique recovery
+`D=net+F`. Hence a future empirical passport must pair a local acceleration/divergence observable
+with an independently obtained focusing map (matter plus kinematic terms); BAO or expansion data
+alone cannot be recycled as its own dark-sector confirmation.
+## 08.v15 Active standard-language contract
+
+_This section is the active standard-language layer of BOOK_08 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._
+
+_Standard-language reading of the terms this book uses:_
+
+| D0 term | Standard object (standard-language reading) |
+|---|---|
+| archive (archive complement, archive-pressure operator, archive covariance, archive phason halo) | traced-out complement / environment sector (partial-trace quotient); its effective boundary response; its covariance readout; its phason-strain halo profile |
+| dark sector | Galois-conjugate unresolved branch (the traced-out complement read by an external survey functional) |
+| phason glass | phason-strain disorder in the internal/Galois branch |
+| readout (survey readout) | positive measurement outcome (POVM/instrument response functional); survey readout is the external likelihood-transfer instance |
+| ladder (heat-trace A0/A2 ladder) | φ-graded discrete filtration: an indexed family of finite levels/scales of one finite operator family; the word names the index family, never an extra dynamical object |
+| lift (conditional typed lift) | typed extension of a finite operator along an inclusion of finite carriers; the lifted object is derived, not primitive |
+| bridge (tabletop bridge guardrail, final bridge index) | typed transfer / calibration map from an internal finite object to an external model object |
+| D0 cosmology | finite survey readout and transfer/comparison protocols |
+| terminal | absorbing rank-reducing measurement channel; the four terminal roles form the finite instrument alphabet |
+
+
+## Apparatus — sources & open obligations
+
+_Traceability for the integrated forcing arguments and the open proof obligations. The body above reads as the monograph; these endnotes carry the GOLDEN/v17 provenance and cert/Lean status so nothing is lost._
+
+[^b08-1]: open obligation — cert obligation open
+[^b08-2]: forcing: GOLDEN THE 61.3, criterion CHK 61.5
+[^b08-3]: open obligation — cert obligation open
+[^b08-4]: open obligation — cert obligation open
+[^b08-5]: forcing: GOLDEN THE 61.1, DarkRatio, CORE→BRIDGE
+[^b08-6]: forcing: GOLDEN BRIDGE-LEM 61.1.B
+[^b08-7]: open obligation — cert obligation open
+[^b08-8]: forcing: the phason is the forced perpendicular-space (cut-and-project) mode of the carrier; cert vp_phason_forcing.py (perp DOF=D-d_par=1; intercept-invariant Sturmian factor set => gapless Goldstone; density-preserving relabel => dark, radiation-free); claim D0-PHASON-FORCING-001. Downstream K-theory/spectral-triple phason-holonomy (D0-QUASI007/008/009) stay cert-closed EXTERNAL-GAP.
+
+## 08.V16-REMNANT-LIFETIME-GUARDRAIL
+
+Keep the internal thermodynamic pair together:
+[
+A_n=A_0\varphi^{-n},qquad B_n=A_0(1-\varphi^{-n}),qquad R_n=\varphi^n-1,
+]
+with (\Delta B_n>0), (\Delta^2B_n<0), and (\Delta^2R_n>0). For the owned log-det chart (0<z<1), (L'(V)>0) and (L''(V)<0). A long external metastable remnant envelope does not change these internal signs.
+
+The internal depth
+[
+n_*=\frac{\log(1+R_*)}{\log\varphi},qquad \tau_*=n_*h/\Lambda_{\rm act}
+]
+is not an astrophysical lifetime until a typed section to ((M_0,\tau_C)) exists. Fitting (n_*) to the universe age, PBH masses, H0/DESI, or any remnant lifetime is forbidden. Remnant longevity remains `REMNANT-LIFETIME-PASSPORT-TARGET`.

@@ -1,0 +1,64 @@
+{
+  "books": {
+    "01_BOOKS/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md": {
+      "git_blob": "7437ab593c0e5d96c5841897d44fc56bbd51a0c9",
+      "sha256": "2823c5bf4517b77044029b06cade0b30cb817ace50a1b0e5dba62de479e25c5c",
+      "snapshot": "02_REGISTRY/research/sources/d0_editorial_book_inputs_2026-11-25/BOOK_00_ENTRY_CONTRACT_AND_ADMISSIBILITY.md"
+    },
+    "01_BOOKS/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md": {
+      "git_blob": "87f3dbd0e5e760d46a577a275aabc16623d3f09e",
+      "sha256": "668fc904b0585cc7fd5175babead5225c22051422c9c64e197d7b0d42d225342",
+      "snapshot": "02_REGISTRY/research/sources/d0_editorial_book_inputs_2026-11-25/BOOK_01_CONDENSED_FOUNDATIONS_AND_GRAPH_BIRTH.md"
+    },
+    "01_BOOKS/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md": {
+      "git_blob": "79ad345ddef6bb06c638f41721db1a84843e4a9b",
+      "sha256": "90d493492834c36900baddc57c987aa5e9910ee560993a793f6d178b4d827f03",
+      "snapshot": "02_REGISTRY/research/sources/d0_editorial_book_inputs_2026-11-25/BOOK_02_MATHEMATICAL_PROOF_SPINE_AND_INVARIANT_CALCULUS.md"
+    },
+    "01_BOOKS/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md": {
+      "git_blob": "ecdd31abb52c94e9f2a157a80c7c49a6f5ac31aa",
+      "sha256": "dfa47d91c4994fa8eea64cda67115590056d8aaf48605daf61a1750aaaf0646d",
+      "snapshot": "02_REGISTRY/research/sources/d0_editorial_book_inputs_2026-11-25/BOOK_03_FINITE_ACTION_OPERATORS_AND_SCENE_DYNAMICS.md"
+    },
+    "01_BOOKS/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md": {
+      "git_blob": "99721fb50de66688564638f5f2b449a38675d7bd",
+      "sha256": "592bbbb1dae9cc599df2eef9cabf117b19f8566d755ad072b77beb04624271d7",
+      "snapshot": "02_REGISTRY/research/sources/d0_editorial_book_inputs_2026-11-25/BOOK_06_EVOLUTION_FORGETTING_AND_TIME.md"
+    },
+    "01_BOOKS/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md": {
+      "git_blob": "86213324b651a5717b293308ba37a7555b9e6742",
+      "sha256": "022d2b3718c3e41066b85130adb8b87c684e49a9f4280043047416c6a637f214",
+      "snapshot": "02_REGISTRY/research/sources/d0_editorial_book_inputs_2026-11-25/BOOK_08_COSMOLOGY_ARCHIVE_AND_SDE_TRANSFER.md"
+    }
+  },
+  "entrypoints_sha256": {
+    "02_REGISTRY/research/certificates/a4d_book03_feedback_variation_check.py": "4a801ee871d6a446bb382c10220e171f34e39b23df085e3abdc2afe10b0af952",
+    "02_REGISTRY/research/certificates/a4d_native_addressed_third_role_check.py": "4a1a62d713455ec055f1fe3f7a829be38861676a7e0d231e3748f9104ffbb72c",
+    "02_REGISTRY/research/certificates/a4d_native_af_hodge_expansion_boundary_check.py": "789bc6a52ac77c4c3fbf1fc30f663e9561cb0e2eef319636717b826f18c00276",
+    "02_REGISTRY/research/certificates/a4d_native_af_trace_preparation_check.py": "ee58d2d46c0ae0a46f4646e6d83c75f9bc33e16a688026abb329a1aa0eacd8a2",
+    "02_REGISTRY/research/certificates/a4d_native_archive_apparatus_realization_check.py": "2c6db908249c1b4bf055501df11f7974564303a88fb9deb39cf559c867daf827",
+    "02_REGISTRY/research/certificates/a4d_native_code_price_resolution_check.py": "7040f2f9b892e772f3f7bb240ddd44aa251a5834cb797be4c0923deff76cf809",
+    "02_REGISTRY/research/certificates/a4d_native_composed_feedback_dynamics_check.py": "4fe026c66efa509b75c85bcccc8640b986f1c3ea0948ed732ecad3575476b4b8",
+    "02_REGISTRY/research/certificates/a4d_native_condensed_price_naturality_check.py": "74d0c2c3746029ecf8982b36fc4f49171ad580411e3de4618e666e38c59b0ba2",
+    "02_REGISTRY/research/certificates/a4d_native_curved_soldered_heat_check.py": "1bcc0a716bcf95924ab5936c723148089b7cd6cbb33f71bff7d94434fe3089d9",
+    "02_REGISTRY/research/certificates/a4d_native_cyclic_history_price_check.py": "1e090d2412bd796dd07f188e6039daa1956f0151345d79d0662611f46c3bef3a",
+    "02_REGISTRY/research/certificates/a4d_native_cyclic_memory_minimum_check.py": "3c98b2d215a073b8488816d81f6002c7cfeab2f53d2ac1bca1d95bb0ce11a3f8",
+    "02_REGISTRY/research/certificates/a4d_native_engine_correlated_current_extension_check.py": "41799c23b455cf79e5641cc5ce61012c4fb821a9a1b54ed052a979d6d63beac2",
+    "02_REGISTRY/research/certificates/a4d_native_full_preparation_fiber_check.py": "aa0eb065d863f7d6e457b841591675b9dcbc148aef022e68a8c95b8392cd9a26",
+    "02_REGISTRY/research/certificates/a4d_native_golden_hodge_state_separation_check.py": "93a114fbec086b8cf8ac31dd3979e4b7513bc594b796e3af60a2994c7c8b8a36",
+    "02_REGISTRY/research/certificates/a4d_native_history_spectral_completion_check.py": "a60ec6edeff0ff585028b7bf2f590773de5e33ccc6a7195d756607cc8e194447",
+    "02_REGISTRY/research/certificates/a4d_native_hodge_connes_metric_check.py": "2426fdaa24e19fd69aed9feb66507b32d6c52c433945b427ee3978f5bcc4ba23",
+    "02_REGISTRY/research/certificates/a4d_native_joint_adjoint_source_check.py": "74096dfe1684d682d292001b5ab535aec6e917df5732905cf05cc2a54308a651",
+    "02_REGISTRY/research/certificates/a4d_native_modular_preparation_boundary_check.py": "d377eefc0e27dca110cb7d8cb3824950ec26b0c2c67143eef93ff150ca79611f",
+    "02_REGISTRY/research/certificates/a4d_native_positive_heat_radial_balance_check.py": "59b9c56cd95e29a0924e12e11fa56f109461d7ae8c89bc6d9c8442ba8eaef7c6",
+    "02_REGISTRY/research/certificates/a4d_native_scene_af_metric_refinement_check.py": "7a87a4fa38ae01dad6c3d5a94c6e1468b4016f67db6a08c659b5cfb4af11c13d",
+    "02_REGISTRY/research/certificates/a4d_native_scene_history_feedback_check.py": "f91c27197e89aa972c5df5df1bf5d96df12fbe8ab507aff5e8f71170e6b504bd",
+    "02_REGISTRY/research/certificates/a4d_native_soldered_heat_source_check.py": "d2d05b09242f3934bfb15e36990290f80e8374b038bbf2d7d2e654b8382f59f6",
+    "02_REGISTRY/research/certificates/a4d_native_strict_observable_descent_check.py": "bcb60ed36118335f0c77d2425e2c105cec690f7a65c96c7e58f2ff76c174ac9d",
+    "02_REGISTRY/research/certificates/a4d_native_uniform_memory_actuation_check.py": "a55d36eb4e1555bb0413e5995409cbd9a4986043d8fbe1c1abbbef4dee3dc85d",
+    "02_REGISTRY/research/certificates/a4d_native_verified_archive_actuation_check.py": "8580449540c77d4ac4edc1f7f275b47c5397705d8642a32aef624e361a725f98"
+  },
+  "schema": "historical-editorial-book-inputs/1",
+  "scope": "HISTORICAL_REPLAY_INPUTS_NOT_CURRENT_BOOK_VALIDATION",
+  "source_commit": "2270d3eb238e0c078c7696548ee3968106adf272"
+}
