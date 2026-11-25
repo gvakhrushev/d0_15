@@ -135,7 +135,7 @@ Where the mass scale lives. The passage from `P_asym` to a neutrino mass scale (
 Cert status: the closure-defect statistics `P_asym = 1 - Z_closed/Z_all` under projection π and the `Theta(Delta_alpha^2)` symmetry-forcing are [^b06-2]; the seam numbers `alpha_top^-1` and the neutrino readout carry their own certs under BOOK_02/BOOK_03/BOOK_04 ownership and are not duplicated here.
 ## 06.2 Role of this book
 
-Book 06 is the ordered finite evolution book of D0.  Books 01--02 define the condensed/profinite detector support and the finite proof calculus.  Book 03 defines the action gate and scene dynamics.  Book 04 defines matter and particle-sector finite readouts.  Book 05 defines the verification grammar.  Book 06 explains how a sequence of completed finite registrations becomes time, evolution, phase transport, entropy, classicality and ordered finite evolution transfer.
+BOOK_06 is the ordered finite evolution book of D0.  Books 01--02 define the condensed/profinite detector support and the finite proof calculus.  BOOK_03 defines the action gate and scene dynamics.  BOOK_04 defines matter and particle-sector finite readouts.  BOOK_05 defines the verification grammar.  BOOK_06 explains how a sequence of completed finite registrations becomes time, evolution, phase transport, entropy, classicality and ordered finite evolution transfer.
 
 The central rule is:
 
@@ -260,7 +260,7 @@ The classical limit is therefore not a primitive assumption.  It is the regime i
 
 ## 06.6 Finite phi-ordered finite evolution and depth contraction
 
-The foundational split `p+p^2=1` is proved in Books 01--02.  Book 06 uses it as an ordered finite evolution contraction.  If a route or comparison chain has depth `N`, the finite continuation weight takes the form
+The foundational split `p+p^2=1` is proved in Books 01--02.  BOOK_06 uses it as an ordered finite evolution contraction.  If a route or comparison chain has depth `N`, the finite continuation weight takes the form
 
 ```math
 Q_N=Q_0\varphi^{-N}.
@@ -379,7 +379,7 @@ The physical export of the discrete evolution step convention is handled by the 
 \tau_0=\frac{h}{38m_ec^2},
 ```
 
-enters Book 06 only as a cross-reference: the coefficient `38` (the action cycle `Lambda_act`) belongs to the terminal matter/readout analysis (BOOK_03-owned) and the SI-length/Newton shadow belongs to Book 07.
+enters BOOK_06 only as a cross-reference: the coefficient `38` (the action cycle `Lambda_act`) belongs to the terminal matter/readout analysis (BOOK_03-owned) and the SI-length/Newton shadow belongs to BOOK_07.
 
 ### The arrow is forced, not assumed
 
@@ -555,13 +555,13 @@ Uncertainty is not imported as an independent metaphysical postulate.  It is the
 \Delta_J\Delta_\partial\ge 1.
 ```
 
-Here `J` denotes action/scene resolution and `partial` denotes boundary/derivative resolution.  Book 06 reads this as a protocol inequality: increasing precision in one finite channel consumes the detector window available to the conjugate channel.
+Here `J` denotes action/scene resolution and `partial` denotes boundary/derivative resolution.  BOOK_06 reads this as a protocol inequality: increasing precision in one finite channel consumes the detector window available to the conjugate channel.
 
 ## 06.11 Evolution of scales: selection, not new knobs
 
 Evolution may change which quotient is active, which transfer window is used, and which sector bridge is allowed.  It may not introduce a new scale by convenience.
 
-The active scale discipline is inherited from Book 03:
+The active scale discipline is inherited from BOOK_03:
 
 ```math
 \Lambda_{act}
@@ -579,7 +579,7 @@ This rule is essential.  Without it, evolution would become a place to hide fitt
 
 ## 06.12 Runtime coefficient readout sequence
 
-Several ordered finite evolution coefficient shadows are not independent derivations inside Book 06; they are read as a sequence of typed readouts from already-defined books:
+Several ordered finite evolution coefficient shadows are not independent derivations inside BOOK_06; they are read as a sequence of typed readouts from already-defined books:
 
 ```math
 \pi_0\text{-holonomy}\to G_N,
@@ -601,11 +601,11 @@ V_9\text{ two-way color holonomy}\to\alpha_s,
 \Lambda_{act}\varphi^5q_{mass}^{-(d_9+2Rank)}\to\Lambda_{QCD}.
 ```
 
-The proof locations are Books 02--04 and the metrological export is Book 07.  Book 06 keeps the ordering principle: coefficients become observed through ordered finite evolution quotients and transfer windows, not through free empirical anchoring.
+The proof locations are Books 02--04 and the metrological export is BOOK_07.  BOOK_06 keeps the ordering principle: coefficients become observed through ordered finite evolution quotients and transfer windows, not through free empirical anchoring.
 
 ## 06.13 Tick-to-scattering comparison protocol
 
-Scattering is the experimental form of finite ordered finite evolution.  The Book 06 contract is
+Scattering is the experimental form of finite ordered finite evolution.  The BOOK_06 contract is
 
 ```math
 \text{finite support}\to T_{discrete evolution step}^{D0}\to\mathcal U_\gamma^{D0}\to P(b|a,\gamma)\to\sigma_{exp}.
@@ -634,7 +634,7 @@ and the detector cut may be written schematically as
 \mathcal C_{det}=\delta_0^8I.
 ```
 
-The archive-pressure operator belongs to Book 06 as an ordered finite evolution kernel, but its cosmological empirical use belongs to Book 08.  This prevents a common error: using survey likelihoods to define the traced-out complement operator.
+The archive-pressure operator belongs to BOOK_06 as an ordered finite evolution kernel, but its cosmological empirical use belongs to BOOK_08.  This prevents a common error: using survey likelihoods to define the traced-out complement operator.
 
 The allowed direction is
 
@@ -656,7 +656,7 @@ The forbidden direction is
 
 ## 06.15 Saturation, horizons and the gravity cross-reference
 
-Finite ordered finite evolution can saturate, in horizon language and Einstein-side heat-trace language. Book 06 records the ordered finite evolution principle:
+Finite ordered finite evolution can saturate, in horizon language and Einstein-side heat-trace language. BOOK_06 records the ordered finite evolution principle:
 
 ```math
 \sigma(R)\to1
@@ -664,7 +664,7 @@ Finite ordered finite evolution can saturate, in horizon language and Einstein-s
 \text{saturated finite readout}.
 ```
 
-Detailed gravity statements, including the length-depth theorem, Newton/Planck shadows, Einstein heat trace and horizon archive interpretation, are assigned to Book 07.  Book 06 only fixes the ordered finite evolution boundary: saturation is a finite detector condition before it is a spacetime interpretation.
+Detailed gravity statements, including the length-depth theorem, Newton/Planck shadows, Einstein heat trace and horizon archive interpretation, are assigned to BOOK_07.  BOOK_06 only fixes the ordered finite evolution boundary: saturation is a finite detector condition before it is a spacetime interpretation.
 
 ## 06.16 Falsification rules for evolution claims
 
@@ -675,7 +675,7 @@ An evolution claim fails if any of the following occurs:
 3. it hides a fitted coefficient in an ordered finite evolution window;
 4. it uses cosmological, scattering or matter data to define the operator that is later claimed to predict them;
 5. it erases the distinction between active state and archive quotient;
-6. it moves a gravity or cosmology result into Book 06 to avoid its sector comparison protocol.
+6. it moves a gravity or cosmology result into BOOK_06 to avoid its sector comparison protocol.
 
 The positive test is:
 
@@ -686,9 +686,9 @@ The positive test is:
 
 ## 06.17 Claims inherited from the theorem database
 
-**Canonical source: the claim registry** `02_REGISTRY/claims.csv` is the single source of truth for claim IDs and `release_status`. This table is the **Book 06 sector view** — the `Book 06 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel gravity-sector view is §07.16.
+**Canonical source: the claim registry** `02_REGISTRY/claims.csv` is the single source of truth for claim IDs and `release_status`. This table is the **BOOK_06 sector view** — the `Book 06 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel gravity-sector view is §07.16.
 
-| Claim ID | Domain | Status | Claim | Book 06 role |
+| Claim ID | Domain | Status | Claim | BOOK_06 role |
 |---|---|---|---|---|
 | `D0-FOUND-002` | Foundation | `CORE-FOUNDATION` | Minimal addressable record split | foundation/metrology reference |
 | `D0-FOUND-003` | Continuum Measurement | `CORE-FOUNDATION` | Minimal continuum-measurement skeleton | foundation/metrology reference |
@@ -712,15 +712,15 @@ The positive test is:
 
 ## 06.18 Cross-book boundary summary
 
-| Topic | Book 06 treatment | Final proof/comparison protocol location |
+| Topic | BOOK_06 treatment | Final proof/comparison protocol location |
 |---|---|---|
 | `p+p^2=1`, `delta0`, `ABCD` | ordered finite evolution use only | Books 01--02 |
-| `S_gate`, `J_scene`, `Lambda_act` | ordering and scale discipline | Book 03 |
-| photon/electron/neutrino/QCD coefficients | evolution consequences | Book 04 |
-| verification and promotion statuses | referenced | Book 05 |
-| discrete evolution step, forgetting, entropy, phase transport | normative | Book 06 |
-| `pi0`, SI length, Newton/Planck, Einstein heat trace | boundary cross-reference | Book 07 |
-| boundary response of the traced-out sector in BAO and survey likelihood | ordered finite evolution kernel only | Book 08 |
+| `S_gate`, `J_scene`, `Lambda_act` | ordering and scale discipline | BOOK_03 |
+| photon/electron/neutrino/QCD coefficients | evolution consequences | BOOK_04 |
+| verification and promotion statuses | referenced | BOOK_05 |
+| discrete evolution step, forgetting, entropy, phase transport | normative | BOOK_06 |
+| `pi0`, SI length, Newton/Planck, Einstein heat trace | boundary cross-reference | BOOK_07 |
+| boundary response of the traced-out sector in BAO and survey likelihood | ordered finite evolution kernel only | BOOK_08 |
 
 ## 06.19 Integrated causal-information invariants
 
@@ -748,7 +748,7 @@ Forgetting is a quotient on this history, not destruction of the finite event:
 \Delta(\rho_N)=\sum_a \Pi_a\rho_N\Pi_a,
 ```
 
-with the discarded off-diagonal data entering the traced-out complement sector. This block is the evolution-side counterpart of Book 01's condensed detector halt.
+with the discarded off-diagonal data entering the traced-out complement sector. This block is the evolution-side counterpart of BOOK_01's condensed detector halt.
 
 ## 06.20 Wilsonian RG as a typed forgetting map
 
@@ -1072,7 +1072,7 @@ Space (graph spectrum) and time (torus automorphism) are different objects, so r
 
 **Named external owner of "modular flow".** The word *modular* here is not borrowed loosely: its classical owner is **Tomita–Takesaki modular theory** (Tomita 1967; Takesaki, LNM 128, 1970), under which a von Neumann algebra with a cyclic–separating vector carries a *canonical* one-parameter modular automorphism group, unique up to inner automorphism (Connes' Radon–Nikodym cocycle) — the "thermal time" of Connes–Rovelli. That time is fixed by the (algebra, state) pair, **not** read from an external clock-catalogue — exactly the M1-compatible content D0 needs. This is recorded as the forcing-owner edge `D0-TIME-MODULAR-FLOW-OWNER-001` (assumption `ASSUMP-TOMITA-TAKESAKI`, Lean `D0.Bridge.TomitaTakesakiBridge`). Honest scope: D0 proves only the *Pisot/symbolic* structure of the single time flow above; identifying that flow with the Tomita–Takesaki modular automorphism is the named external owner, cited not re-derived (BOOK_05 §05.8.R).
 
-**Time and flavor share the SL(2,ℤ) modular group [LEM].** There is a second, *distinct* sense in which time is "modular" — and it links time to **flavor**. The D0 flavor group `A_5 = 2I/\{\pm1\}` (from the icosians → `E_8`, BOOK_02 §02.18) is exactly the **level-5 finite modular group**: `\overline{\Gamma}_5 = \mathrm{PSL}(2,\mathbb{Z})/\Gamma(5) = \mathrm{PSL}(2,5) \cong A_5` (the modular flavor symmetry of Feruglio; Ding–Everett–Stuart, *Nucl. Phys. B* **857**, 219; arXiv:1110.1688). The toral time generator `T=\begin{psmallmatrix}0&1\\1&-1\end{psmallmatrix}` is a golden/hyperbolic element of `\mathrm{GL}(2,\mathbb{Z})` (det `-1`, `h_{KS}=\log\varphi`). So **time (a `GL(2,ℤ)` element) and flavor (the level-5 quotient `A_5`) both live in the `SL(2,ℤ)` modular-group structure** (claim `D0-MODULAR-TIME-FLAVOR-001`, cert `vp_modular_time_flavor.py`). This also fixes the solar mixing: `\sin^2\theta_{12} = \tfrac13 - 2\delta_0^2 = 0.3055`, closest to NuFIT 6.0 (`0.307`) and beating the classical golden-ratio predictions GRA (`0.276`) and GRB (`0.346`). **Crucial distinction (mechanism filter):** this `SL(2,ℤ)` *modular group* is **NOT** the Tomita–Takesaki *modular automorphism* of the previous paragraph — the word "modular" carries two different mathematical meanings, and they are kept apart here, not conflated. **Status MECH-LIMIT** (time↔flavor identification): the real shared structure is the modular group; the full identification "the golden time element and the `A_5` level-5 quotient are one modular object" is the named open gap. The rate `h_{KS}=\log\varphi` here is *exactly* the closure-holonomy stretch per monodromy turn (§02.13.h, `D0-SEAM-HOLONOMY-001`); and `\sin^2\theta_{12}=\tfrac13-2\delta_0^2` is the **closed-loop (`δ₀²`) member** of the *derived* seam-topology rule (`D0-PMNS-SEAM-TOPOLOGY-001`, §04.5): the angle is derived (rule THE / value CHK, <0.5σ vs JUNO-2026); only the time↔flavor modular identification stays the named gap.
+**Time and flavor share the SL(2,ℤ) modular group [LEM].** There is a second, *distinct* sense in which time is "modular" — and it links time to **flavor**. The D0 flavor group `A_5 = 2I/\{\pm1\}` (from the icosians → `E_8`, BOOK_02 §02.18) is exactly the **level-5 finite modular group**: `\overline{\Gamma}_5 = \mathrm{PSL}(2,\mathbb{Z})/\Gamma(5) = \mathrm{PSL}(2,5) \cong A_5` (the modular flavor symmetry of Feruglio; Ding–Everett–Stuart, *Nucl. Phys. B* **857**, 219; arXiv:1110.1688). The toral time generator `T=\begin{psmallmatrix}0&1\\1&-1\end{psmallmatrix}` is a golden/hyperbolic element of `\mathrm{GL}(2,\mathbb{Z})` (det `-1`, `h_{KS}=\log\varphi`). The `GL(2,ℤ)` time element has determinant `-1`; its orientation-preserving square lies in `SL(2,ℤ)`, whose level-5 quotient supplies the flavor `A_5` structure (claim `D0-MODULAR-TIME-FLAVOR-001`, cert `vp_modular_time_flavor.py`). This also fixes the solar mixing: `\sin^2\theta_{12} = \tfrac13 - 2\delta_0^2 = 0.3055`, closest to NuFIT 6.0 (`0.307`) and beating the classical golden-ratio predictions GRA (`0.276`) and GRB (`0.346`). **Crucial distinction (mechanism filter):** this `SL(2,ℤ)` *modular group* is **NOT** the Tomita–Takesaki *modular automorphism* of the previous paragraph — the word "modular" carries two different mathematical meanings, and they are kept apart here, not conflated. **Status MECH-LIMIT** (time↔flavor identification): the real shared structure is the modular group; the full identification "the golden time element and the `A_5` level-5 quotient are one modular object" is the named open gap. The rate `h_{KS}=\log\varphi` here is *exactly* the closure-holonomy stretch per monodromy turn (§02.13.h, `D0-SEAM-HOLONOMY-001`); and `\sin^2\theta_{12}=\tfrac13-2\delta_0^2` is the **closed-loop (`δ₀²`) member** of the *derived* seam-topology rule (`D0-PMNS-SEAM-TOPOLOGY-001`, §04.5): the angle is derived (rule THE / value CHK, <0.5σ vs JUNO-2026); only the time↔flavor modular identification stays the named gap.
 
 **CKM ↔ PMNS: not mutual inverses, but complementary.** A proposed relation `V_{CKM} U_{PMNS}^{T} = I_3` is **false** (claim `D0-CKM-PMNS-COMPLEMENTARITY-001`, cert `vp_ckm_pmns_orthogonality.py`): `V_{CKM} U_{PMNS}^{T}=I` would force `V_{CKM}=U_{PMNS}` (i.e. CKM `=` PMNS), but CKM angles are **small** and PMNS **large** — in the 1–2 sector `R(\theta_C)R(\theta_{12})^{T}=R(\theta_C-\theta_{12})\approx R(-20.6^\circ)\neq I`. The salvaged, experimentally real content is **quark–lepton complementarity**: `\theta_C + \theta_{12} \approx 13.04^\circ + 33.6^\circ = 46.6^\circ \approx 45^\circ` (a `\sim1.6^\circ` near-coincidence). Status **HYP** — an approximate relation, not an exact identity; the strong orthogonality is rejected, the weaker complementarity kept.
 
@@ -1332,9 +1332,9 @@ c_D0 = 1 discrete evolution step gauge
 eta4 terminal signature
 ```
 
-DSS echoing (critical gravitational collapse) is the log-time recurrence counterpart of finite ordered finite evolution recurrence at a capacity boundary. It is not ordinary smooth evolution; it is discrete self-similar log-periodic readout at the horizon threshold (see Book 07 07.49).
+DSS echoing (critical gravitational collapse) is the log-time recurrence counterpart of finite ordered finite evolution recurrence at a capacity boundary. It is not ordinary smooth evolution; it is discrete self-similar log-periodic readout at the horizon threshold (see BOOK_07 07.49).
 
-Finite horizon capacity saturation is an ordered finite evolution halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref Book 07 07.50).
+Finite horizon capacity saturation is an ordered finite evolution halt: Cost_R(∂) → ∞ for external active extension. The archive quotient renders information inaccessible without deletion (cross-ref BOOK_07 07.50).
 
 δ₀ finite readout cut: heat trace scale is internal, not SI time.
 ## 06.37 φ⁵ torus invariant and ordered finite evolution quasicrystal geometry (Phi^5 Torus Invariant)
@@ -1454,7 +1454,7 @@ when \(B_0=0\). The retained component never vanishes in finite time. The contin
 
 ### The tick fraction is inherited, not postulated
 
-The retained fraction \(p=\varphi^{-1}\) is **not** a free parameter of the time layer. It is forced by the Book 01 detector asymmetry: the positive self-return condition \(p+p^2=1\) has the unique admissible root \(p=\varphi^{-1}\), so the per-tick decay law \(A_{t+1}=\varphi^{-1}A_t\) is the temporal image of that primitive. The tick envelope is inherited from the primitive detector, not declared here. Status: FORCED (owner BOOK_01 — \(p+p^2=1\), \(\varphi\)-from-detector; cited, not re-derived). [^b06-49]
+The retained fraction \(p=\varphi^{-1}\) is **not** a free parameter of the time layer. It is forced by the BOOK_01 detector asymmetry: the positive self-return condition \(p+p^2=1\) has the unique admissible root \(p=\varphi^{-1}\), so the per-tick decay law \(A_{t+1}=\varphi^{-1}A_t\) is the temporal image of that primitive. The tick envelope is inherited from the primitive detector, not declared here. Status: FORCED (owner BOOK_01 — \(p+p^2=1\), \(\varphi\)-from-detector; cited, not re-derived). [^b06-49]
 
 Equivalently the per-tick archive increment is \(B_{t+1}=B_t+(1-\varphi^{-1})A_t=B_t+\varphi^{-2}A_t\), which is why the increment coefficient above is exactly \(p^2=\varphi^{-2}\): the two retained-asymmetry channels of \(p+p^2=1\) are the retained share \(p\) and the archived share \(p^2\). Nothing in the time layer is tuned.
 
@@ -1472,7 +1472,7 @@ In a continuum envelope parameter \(s\) (the logarithmic tick coordinate) this i
 R''(s)=(\log\varphi)^2\,e^{s\log\varphi}>0 .
 \]
 
-The active component decays exponentially in finite tick depth; the *relative* archive ratio **accelerates**, because its denominator is the shrinking retained component, not because anything is added externally. This strictly positive second derivative is the time-layer origin of the internal cosmological mechanism that Book 08 carries to the continuum — Book 08 inherits this convexity, it does not re-postulate an acceleration. Status: FORCED (convexity is algebraic in \(\varphi\)); the archive-measure convex-order domination underpinning the Book 08 transfer is discharged by the finite convex-order-domination certificate.
+The active component decays exponentially in finite tick depth; the *relative* archive ratio **accelerates**, because its denominator is the shrinking retained component, not because anything is added externally. This strictly positive second derivative is the time-layer origin of the internal cosmological mechanism that BOOK_08 carries to the continuum — BOOK_08 inherits this convexity, it does not re-postulate an acceleration. Status: FORCED (convexity is algebraic in \(\varphi\)); the archive-measure convex-order domination underpinning the BOOK_08 transfer is discharged by the finite convex-order-domination certificate.
 
 ### Elimination of the shared refinement depth
 
@@ -1691,7 +1691,7 @@ the Galois-balanced trace with sign. One time step reverses orientation, \(\det 
 h_{\mathrm{KS}}=\log|\lambda_{\max}|=\log\varphi .
 \]
 
-Status: FORCED / certified by the finite toral-automorphism Galois-balance certificate; the address defect \(\xi_5=\varphi^{-5}\) of this torus is separately discharged by the finite ξ5 torus-defect certificate. [^b06-52] The entropy comb \(I_f=\log\varphi=h_{\mathrm{KS}}(T)\) is the owner of the Book 09 GW passport target; that ownership is recorded there, not re-derived here.
+Status: FORCED / certified by the finite toral-automorphism Galois-balance certificate; the address defect \(\xi_5=\varphi^{-5}\) of this torus is separately discharged by the finite ξ5 torus-defect certificate. [^b06-52] The entropy comb \(I_f=\log\varphi=h_{\mathrm{KS}}(T)\) is the owner of the BOOK_09 GW passport target; that ownership is recorded there, not re-derived here.
 
 ### Apparent running of constants is a finite-resolution projection artefact
 
@@ -1715,9 +1715,9 @@ where the \(O(\varphi^{-k})\) coefficients are computed from the projection/spec
 
 Status: `LAB-BRIDGE / TABLETOP-PASSPORT-SEED`.
 
-Electron-beam dusty-plasma experiments are admitted as an external bridge for the Book 06 claim that a finite readout medium is active rather than passive. In the bridge dictionary, the electron beam is a directed readout, dust grains are archive-capacity sinks, and the measured plasma channel is co-produced by beam propagation and archive loading. The laboratory fact that dust loading changes beam deposition, density profiles, and plasma-cloud geometry supports the finite-readout principle at the level of an external analogue.
+Electron-beam dusty-plasma experiments are admitted as an external bridge for the BOOK_06 claim that a finite readout medium is active rather than passive. In the bridge dictionary, the electron beam is a directed readout, dust grains are archive-capacity sinks, and the measured plasma channel is co-produced by beam propagation and archive loading. The laboratory fact that dust loading changes beam deposition, density profiles, and plasma-cloud geometry supports the finite-readout principle at the level of an external analogue.
 
-This bridge does not close a core theorem. In particular, the golden mass-loss and acoustic log-φ proposals remain external experimental targets, not Book 06 proofs.
+This bridge does not close a core theorem. In particular, the golden mass-loss and acoustic log-φ proposals remain external experimental targets, not BOOK_06 proofs.
 ## 06.v15 Active standard-language contract
 
 _This section is the active standard-language layer of BOOK_06 and its first-use glossary. Every D0 mnemonic and every compressed metaphor used in this book is a typed abbreviation of the standard object listed below; the only admissible reading direction is the compression rule standard object -> finite D0 operator -> theorem/sector law -> bridge/passport boundary. The corpus-wide crosswalk is the standard-language Rosetta, `02_REGISTRY/VOCABULARY.md`._

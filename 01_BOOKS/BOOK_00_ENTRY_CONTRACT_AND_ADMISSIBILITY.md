@@ -46,7 +46,7 @@ Forbidden:
 D0 slogan -> metaphor -> status row
 ```
 
-Book 00 fixes the public contract: finite support is prior to dynamics; the retained/traced split produces `P_N` and `Q_N`; `R_N = D_N^dagger D_N` is positive readout/Born response; `F_N = P_N U_N^dagger Q_N U_N P_N` is feedback return / unitarity defect; `U_eff = P_N U_N P_N` is compressed nonunitary pole dynamics; `mathsf P_fb = beta^(-1) partial_V log Z_N` is feedback pressure; external comparison is a bridge/passport layer.
+BOOK_00 fixes the public contract: finite support is prior to dynamics; the retained/traced split produces `P_N` and `Q_N`; `R_N = D_N^dagger D_N` is positive readout/Born response; `F_N = P_N U_N^dagger Q_N U_N P_N` is feedback return / unitarity defect; `U_eff = P_N U_N P_N` is compressed nonunitary pole dynamics; `mathsf P_fb = beta^(-1) partial_V log Z_N` is feedback pressure; external comparison is a bridge/passport layer.
 
 D0-core closes at the **finite/profinite admissible** level; external smooth-manifold / C\*-algebra / empirical structures are **passports**, not blockers. A bridge over a frozen internal object is packaging, closed as `PASSPORT-CLOSED` (never `CORE-THE`) under the seven conditions of `D0-BRIDGE-COMPRESSION-001` (BOOK_05 §05.6); a bridge with no internal owner stays `PROOF-TARGET`, and one with no frozen object or PASS/FAIL protocol is `INACTIVE-BRIDGE`.
 
@@ -82,11 +82,11 @@ the spectral GR ladder, SM-facing finite gauge decomposition, typed SI calibrati
 foundation entry: major claims must cite one of a Lean theorem, a finite
 certificate, an explicit no-go, or a bridge/comparison protocol/external-data status cell.
 
-The closure count is generated from `HARD_CLOSURE_TARGETS.csv` and the hard-closure runner. Book 00 deliberately does not treat counts as a proof object: the active requirement is that each major claim names its theorem/cert/no-go/bridge owner and that obsolete prose cannot return through the synchronization guards.
+The closure count is generated from `HARD_CLOSURE_TARGETS.csv` and the hard-closure runner. BOOK_00 deliberately does not treat counts as a proof object: the active requirement is that each major claim names its theorem/cert/no-go/bridge owner and that obsolete prose cannot return through the synchronization guards.
 
-Book 00 is not a physical sector of D0.  It is the entrance contract for the corpus: it states what counts as a D0 claim, how finite measurement is admitted, how later bridge languages are read, and how the books prevent numerical coincidence from being promoted into theory.
+BOOK_00 is not a physical sector of D0.  It is the entrance contract for the corpus: it states what counts as a D0 claim, how finite measurement is admitted, how later bridge languages are read, and how the books prevent numerical coincidence from being promoted into theory.
 
-The active theoretical books are Books 01--08.  Book 00 does not replace their proofs.  It fixes the reading order and the admissibility rules under which those proofs are to be interpreted.
+The active theoretical books are Books 01--08.  BOOK_00 does not replace their proofs.  It fixes the reading order and the admissibility rules under which those proofs are to be interpreted.
 
 D0 detector/vacuum support is a finite information quasicrystal.  The finite
 information quasicrystal owner includes `quasicrystal_order_not_periodic_lattice`.
@@ -246,7 +246,7 @@ The detector asymmetry quantum is fixed, not fitted:
 \delta_0=\frac{\varphi^{-1}-\varphi^{-2}}{2}=\frac{\sqrt5-2}{2}.
 ```
 
-Book 00 uses this as a gateway theorem.  Book 01 constructs the finite support and scene; Book 05 owns the proof and uniqueness audits.
+BOOK_00 uses this as a gateway theorem.  BOOK_01 constructs the finite support and scene; BOOK_05 owns the proof and uniqueness audits.
 
 ### 00.3a Exact verification forces orthogonal registration supports
 
@@ -373,7 +373,7 @@ V_9\rightarrow V_{11}\rightarrow V_{13},
 K(9,11,13).
 ```
 
-Book 00 states this chain only as the entrance map.  Book 01 constructs it; Book 05 proves the finite-operator spine; Book 02 turns it into action/runtime operators.
+BOOK_00 states this chain only as the entrance map.  BOOK_01 constructs it; BOOK_05 proves the finite-operator spine; BOOK_02 turns it into action/runtime operators.
 
 ## 00.6 The scientific reading order
 
@@ -480,7 +480,7 @@ An active theorem requires both a proof of admissibility (forced by the protocol
 
 A certificate sits at one link only: it discharges the *calculation* obligation (arithmetic, finite matrices, dependency graphs, tolerances).  It never discharges the *selection* obligation — that is owned by the DEF-0.2.2 / THE-0.4.5 forcing schemata above.  A forcing claim still lacking its calculation cert is flagged as an open obligation; it is never backed by a fabricated cert token.
 
-Mapped Book 00 claims are:
+Mapped BOOK_00 claims are:
 
 | Claim ID | Status | Claim | Certificates / ledgers |
 |---|---|---|---|
@@ -742,7 +742,7 @@ A pure change of status vocabulary is not theory improvement.  A claim improves
 only when a proof owner, no-go, executable certificate or external passport
 removes a concrete ambiguity.
 
-Book 04 carries named finite selectors for the charged-lepton electron terminal, the electroweak depth, the proton measurement outcome (D0: readout), the neutron traced-out sibling (D0: archive sibling) and the beta-unlock depth.  Such selectors named as abstract labels are not enough: each
+BOOK_04 carries named finite selectors for the charged-lepton electron terminal, the electroweak depth, the proton measurement outcome (D0: readout), the neutron traced-out sibling (D0: archive sibling) and the beta-unlock depth.  Such selectors named as abstract labels are not enough: each
 must discharge a concrete ambiguity through its proof owner or certificate.
 
 CKM basis origin: the finite basis-origin selectors establish that the candidate

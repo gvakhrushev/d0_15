@@ -20,7 +20,7 @@
 
 ## 07.0 Active gravity/QG sector law
 
-Book 07 synthesizes finite spectral geometry, heat trace, feedback pressure, boundary capacity, rank localization, and UV tail cut.
+BOOK_07 synthesizes finite spectral geometry, heat trace, feedback pressure, boundary capacity, rank localization, and UV tail cut.
 
 **Horizon Emission Law (closed).**
 A nonzero \( QUP \) transition defines a local measurement seam. A macroscopic horizon is capacity-saturated seam aggregation. Horizon emission is archive-to-retained boundary leakage under capacity saturation. The conjugate archive-to-retained operator \( F_Q^{emit} = Q U^\dagger P U Q \) is positive semidefinite. Greybody candidates are certified at the finite operator level (HORIZON-EMISSION-LAW).
@@ -83,7 +83,7 @@ D0 gravitational language is read as finite spectral geometry. `Line covariance`
 
 ## 07.2 Role of this book
 
-Book 07 is the finite-geometry book of D0. It follows the detector foundation, mathematical proof spine, action stack, matter selector/readout protocols, verification discipline and runtime/forgetting theory. It therefore does not introduce gravity as a primitive smooth field. It constructs the gravitational shadow of finite readout.
+BOOK_07 is the finite-geometry book of D0. It follows the detector foundation, mathematical proof spine, action stack, matter selector/readout protocols, verification discipline and runtime/forgetting theory. It therefore does not introduce gravity as a primitive smooth field. It constructs the gravitational shadow of finite readout.
 
 The canonical chain is
 
@@ -227,7 +227,7 @@ The UV feedback-tail cut uses a = |z| rho(F) < 1 and the Neumann bound. δ_0^{12
 |T_M(z(L), F_N(L))| < δ_0^{12} means smooth heat-trace / macroscopic interface valid.
 |T_M(z(L), F_N(L))| >= δ_0^{12} means finite feedback algebra regime (readout tolerance forces the finite description).
 
-Only the first two are normative Book 07 material. Survey-level archive pressure and BAO/S_DE remain Book 08 material.
+Only the first two are normative BOOK_07 material. Survey-level archive pressure and BAO/S_DE remain BOOK_08 material.
 ## 07.3 Gravity as downstream geometry, not a primitive continuum
 
 D0 starts from finite registration, not from a differentiable manifold. Geometry becomes available only after the detector has produced a stable line covariance. The metric is therefore a coarse-grained shadow of covariance among finite line probes:
@@ -311,7 +311,7 @@ is **computable** [^b07-15]. Coupled with `K ∼ ϱ` (curvature
 proportional to closure density, with `f(0)=0` forced by the vacuum/flat boundary condition), this is
 the CORE statement whose covariant smooth shadow is the Einstein tensor; the numeric coefficient
 `a_unit` is a unit choice fixed only at the BRIDGE step, never a new dimensionless physical constant
-[^b07-16]. Book 07 keeps this as the *reason* the dimensionless
+[^b07-16]. BOOK_07 keeps this as the *reason* the dimensionless
 scale-separation invariant exported below is well-defined, not as a re-derivation of the field
 equation (that smooth-limit bridge is owned downstream).
 
@@ -324,7 +324,7 @@ The SI export of this section uses the terminal matter/readout bridge:
 \ell_0=c\tau_0=\frac{h}{38m_ec}.
 ```
 
-Book 07 uses this only as metrology. It is forbidden to use the electron terminal scale as a hidden
+BOOK_07 uses this only as metrology. It is forbidden to use the electron terminal scale as a hidden
 adjustable gravity parameter — by the topological-defect forcing above, that scale is a counted
 closure period in SI clothing, so promoting it to a free dial would smuggle in exactly the external
 substance catalog M1 forbids. The single-section discipline is
@@ -333,7 +333,7 @@ substance catalog M1 forbids. The single-section discipline is
 \Lambda_{act}=\frac{h}{\tau_0}=38m_ec^2,
 ```
 
-with action-scale closure assigned to Book 03/04 (`Λ_act=38`) and dimensionless spectral
+with action-scale closure assigned to BOOK_03/04 (`Λ_act=38`) and dimensionless spectral
 scale-separation invariant export assigned here.
 
 Type safety: `D_L` is the dimensionless finite spectral scale-separation invariant.  The
@@ -494,7 +494,7 @@ The horizon statement is therefore a finite-readout statement before it becomes 
 Y:\mathcal H_R(R)\to\mathcal H_N(R)
 ```
 
-sends inaccessible active boundary information into the traced-out complement/null sector. Book 07 uses Book 06 forgetting theory here: loss of active readout is not deletion of total mathematical information. The correct statement is
+sends inaccessible active boundary information into the traced-out complement/null sector. BOOK_07 uses BOOK_06 forgetting theory here: loss of active readout is not deletion of total mathematical information. The correct statement is
 
 ```math
 \text{loss of active readout}\neq\text{loss of total information}.
@@ -661,7 +661,7 @@ q_{mass}=(1+\delta_0^3)^{-1},
 q_{exact}=q_{mass}q_{res}.
 ```
 
-Here `q_mass` is the closure-density identity above, re-marked in `δ_0` units; it carries no freedom beyond `ρ`. The interpretation belongs to the matter/EW boundary layer in Book 04 and to the residual cut discipline in Book 05/07. It is forbidden to use `q_res` as a scalar-curvature fit parameter.
+Here `q_mass` is the closure-density identity above, re-marked in `δ_0` units; it carries no freedom beyond `ρ`. The interpretation belongs to the matter/EW boundary layer in BOOK_04 and to the residual cut discipline in BOOK_05/07. It is forbidden to use `q_res` as a scalar-curvature fit parameter.
 
 The canonical gravity equation must remain typed:
 
@@ -694,7 +694,7 @@ This is a bridge theorem, not a claim that D0 begins with a smooth pseudo-Rieman
 
 ## 07.14 Cosmology and archive pressure cross-reference
 
-Book 07 defines the geometric and boundary conditions that make an archive-pressure interpretation meaningful. It does not perform survey fitting and does not derive BAO parameters.
+BOOK_07 defines the geometric and boundary conditions that make an archive-pressure interpretation meaningful. It does not perform survey fitting and does not derive BAO parameters.
 
 The archive-pressure operator preserved from the source gravity file is
 
@@ -708,7 +708,7 @@ with trace
 \operatorname{Tr}_N\mathsf P_{archive}^{D0}=-\delta_0^8.
 ```
 
-Its cosmological use is handed to Book 08, where the allowed direction is
+Its cosmological use is handed to BOOK_08, where the allowed direction is
 
 ```math
 \text{finite archive/boundary operator}
@@ -750,37 +750,37 @@ The positive gravity chain is
 
 ## 07.16 Claims inherited from the theorem database
 
-**Canonical source: the claim registry** `02_REGISTRY/claims.csv` is the single source of truth for claim IDs and `release_status`. This table is the **Book 07 sector view** — the `Book 07 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel evolution-sector view is §06.17.
+**Canonical source: the claim registry** `02_REGISTRY/claims.csv` is the single source of truth for claim IDs and `release_status`. This table is the **BOOK_07 sector view** — the `Book 07 role` column is its only sector-specific content; the statuses mirror the registry and are not edited here independently. The parallel evolution-sector view is §06.17.
 
-| Claim ID | Status | Stage | Claim | Book 07 role |
+| Claim ID | Status | Stage | Claim | BOOK_07 role |
 |---|---|---|---|---|
 | `D0-FOUND-003` | `CORE-FOUNDATION` | Foundation | Minimal continuum-measurement skeleton | reference to Books 01-04; used in gravity bridge |
 | `D0-MATH-001` | `D0-RESOLUTION-EXACT` | Quotient/Resolution | Finite phi-runtime and stop ideal | reference to Books 01-04; used in gravity bridge |
 | `D0-METRO-001` | `CORE-FOUNDATION` | Bridge/Dictionary | Single causal line/tick invariant | reference to Books 01-04; used in gravity bridge |
 | `D0-METRO-002` | `SINGLE-SECTION-OUTPUT` | Single Section | Lambda_act single action section | reference to Books 01-04; used in gravity bridge |
 | `D0-BOUND-001` | `D0-RESOLUTION-EXACT` | Quotient/Resolution | Boundary Residual Eigenvalue r_∂ and boundary curvature residual | reference to Books 01-04; used in gravity bridge |
-| `D0-THERMO-001` | `CORE-MEASUREMENT` | Quadratic Readout | Finite-window entropy from archive forgetting | Book 06 runtime reference; boundary thermodynamics use |
+| `D0-THERMO-001` | `CORE-MEASUREMENT` | Quadratic Readout | Finite-window entropy from archive forgetting | BOOK_06 runtime reference; boundary thermodynamics use |
 | `D0-CARRIER-002` | `CORE-SUPPORT` | Finite Support | Lorentz and Einstein-Hilbert carrier | BOOK_07 normative |
 | `D0-GRAV-001` | `SINGLE-SECTION-OUTPUT` | Bridge/Dictionary | Length-depth theorem and Planck/Newton shadow | BOOK_07 normative |
 | `D0-GRAV-002` | `SINGLE-SECTION-OUTPUT` | Bridge/Dictionary | Newton coefficient finite-cycle holonomy closure | BOOK_07 normative |
 | `D0-GRAV-003` | `D0-RESOLUTION-EXACT` | Quotient/Resolution | Higher-curvature finite cut rule | BOOK_07 normative |
-| `D0-COSMO-001` | `CORE-MEASUREMENT` | Quadratic Readout | Archive-pressure operator | Book 08 cross-reference; gravity boundary only |
-| `D0-COSMO-003` | `ACTIVE-PASSPORT` | External Comparison Protocol | Boundary dark survey-driver kernel | Book 08 cross-reference; gravity boundary only |
-| `D0-COSMO-004` | `SINGLE-SECTION-OUTPUT` | Single Section | Cosmological archive-pressure coefficient closure | Book 08 cross-reference; gravity boundary only |
-| `D0-COSMO-005` | `EMPIRICAL-PASSPORT` | External Comparison Protocol | S_DE finite-window BAO archive-transfer shape | Book 08 cross-reference; gravity boundary only |
+| `D0-COSMO-001` | `CORE-MEASUREMENT` | Quadratic Readout | Archive-pressure operator | BOOK_08 cross-reference; gravity boundary only |
+| `D0-COSMO-003` | `ACTIVE-PASSPORT` | External Comparison Protocol | Boundary dark survey-driver kernel | BOOK_08 cross-reference; gravity boundary only |
+| `D0-COSMO-004` | `SINGLE-SECTION-OUTPUT` | Single Section | Cosmological archive-pressure coefficient closure | BOOK_08 cross-reference; gravity boundary only |
+| `D0-COSMO-005` | `EMPIRICAL-PASSPORT` | External Comparison Protocol | S_DE finite-window BAO archive-transfer shape | BOOK_08 cross-reference; gravity boundary only |
 | `D0-PI0-001` | `CORE-FOUNDATION` | Quotient/Resolution | pi0 finite-cycle versus pi continuum generator | BOOK_07 normative |
 
 ## 07.17 Cross-book boundary summary
 
-| Topic | Book 07 treatment | Final proof/comparison protocol location |
+| Topic | BOOK_07 treatment | Final proof/comparison protocol location |
 |---|---|---|
 | condensed support, `p+p^2`, `delta0`, ABCD | reference only | Books 01--02 |
-| `Lambda_act`, action scale | metrological input discipline | Book 03 |
-| electron terminal section, q-mass, EW residual | matter/metrology cross-reference | Book 04 |
-| promotion, forbidden shortcuts, cert status | referenced | Book 05 |
-| forgetting, entropy, active/archive quotient | boundary use | Book 06 |
-| line covariance, heat trace, `D_L`, `G_N`, Einstein limit | normative | Book 07 |
-| archive pressure as BAO/S_DE survey transfer | cross-reference | Book 08 |
+| `Lambda_act`, action scale | metrological input discipline | BOOK_03 |
+| electron terminal section, q-mass, EW residual | matter/metrology cross-reference | BOOK_04 |
+| promotion, forbidden shortcuts, cert status | referenced | BOOK_05 |
+| forgetting, entropy, active/archive quotient | boundary use | BOOK_06 |
+| line covariance, heat trace, `D_L`, `G_N`, Einstein limit | normative | BOOK_07 |
+| archive pressure as BAO/S_DE survey transfer | cross-reference | BOOK_08 |
 
 ## 07.18 Integrated continuum-division boundary-memory theorem and QG cut rule
 
@@ -1499,7 +1499,7 @@ is forced gapped. The continuum GR / Clay readings remain bridge calibrations,
 not core smooth-manifold theorems.
 ## 07.34 Cosmology boundary audit
 
-Book 07 does not compute Hubble, matter-density, survey-redshift-center or BAO-amplitude values as internal gravity constants. It supplies the finite geometry side of the bridge:
+BOOK_07 does not compute Hubble, matter-density, survey-redshift-center or BAO-amplitude values as internal gravity constants. It supplies the finite geometry side of the bridge:
 
 ```text
 line covariance
@@ -1518,7 +1518,7 @@ The status boundary is:
 | smooth Einstein-Hilbert language | `BRIDGE-CALIBRATION` |
 | survey likelihood and cosmological parameter comparison | `EMPIRICAL-PASSPORT` / `EXTERNAL-DATA-REQUIRED` |
 
-Any text that treats a survey value as a Book 07 internal theorem violates the final bridge index.
+Any text that treats a survey value as a BOOK_07 internal theorem violates the final bridge index.
 
 
 ## 07.35 Finite spin-2 derivation theorem
@@ -1582,7 +1582,7 @@ Longitudinal/gauge response can couple to conserved stress as physical spin-2.
 Einstein--Hilbert action is a core smooth-manifold theorem without the spectral bridge.
 ```
 
-Book 07 therefore has a sharper boundary: the finite theorem closes the D0
+BOOK_07 therefore has a sharper boundary: the finite theorem closes the D0
 carrier; the continuum Einstein language remains the declared smooth/spectral
 bridge.
 
@@ -1873,9 +1873,9 @@ Typed owners:
 The A/4 witness is backed by a finite certificate and an external passport.
 
 Cross-book:
-- Book 06: saturation as runtime halt / active-archive quotient.
-- Book 05: D0-BH-CAP-NOGO-001 (singularity-as-information-deletion rejected).
-- Book 08: PBH formation must combine DSS echo-lattice birth + this finite A/4 capacity witness.
+- BOOK_06: saturation as runtime halt / active-archive quotient.
+- BOOK_05: D0-BH-CAP-NOGO-001 (singularity-as-information-deletion rejected).
+- BOOK_08: PBH formation must combine DSS echo-lattice birth + this finite A/4 capacity witness.
 
 **Finite-rank Page curve and information unitarity (`D0-PAGE-CURVE-FINITE-RANK-OWNER-001`).** The static `A/4` capacity witness extends to a dynamic, continuum-free Page curve. With a finite split `H = H_active ⊕ H_env` (ranks `n_A`, `n_E`, total `D = n_A + n_E`), the active-sector entropy is bounded by the finite-rank Page quantity `S_page = min(n_A, n_E)/D`: it is `0 ≤ S_page ≤ 1`, vanishes for a pure state (`n_E = 0`), and reaches its symmetric maximum `1/2` at the Page turn `n_A = n_E`, rising then falling (Lean `D0.Gravity.PageCurveFiniteRankOwner.page_curve_finite_rank_owner`, cert `vp_page_curve_finite_rank_owner.py`). A global unitary conserves the total rank (`D = n_A + n_E` invariant), so information is transferred, never deleted (`D0-BLACK-HOLE-INFORMATION-UNITARITY-OWNER-001`, `information_unitarity_owner`, cert `vp_black_hole_information_unitarity_owner.py`). The finite radiation channel is the active↔archive Feshbach coupling block `B` (`B ≠ 0`, norm-bounded; `D0-HORIZON-FESHBACH-RADIATION-OWNER-001`, cert `vp_horizon_feshbach_radiation_owner.py`). **Honest residuals:** the analytic von Neumann entropy `S(ρ) = −Tr(ρ log ρ)`, the Hawking emission SPECTRUM / temperature `T = κ/2π` (`ASSUMP-HAWKING-SPECTRUM`), and the island formula stay EXTERNAL (continuum QFT); only the finite-rank bound and the rank-conservation mechanism are owned. No black-hole datum enters; the dimensionful Bekenstein `S = A/4` stays the owner-edge.
 

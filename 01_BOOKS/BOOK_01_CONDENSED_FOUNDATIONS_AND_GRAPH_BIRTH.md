@@ -19,7 +19,7 @@
 
 ## 01.0 Active support/foundation layer
 
-Book 01 is support and foundation only. It does not prove matter, gravity or cosmology claims. It supplies the finite/profinite carrier on which later books build operators.
+BOOK_01 is support and foundation only. It does not prove matter, gravity or cosmology claims. It supplies the finite/profinite carrier on which later books build operators.
 
 ```text
 finite/profinite support -> graph birth -> retained/traced split -> P_N,Q_N -> finite tick U_N -> Book 02 feedback operator
@@ -33,7 +33,7 @@ P_N + Q_N = I,
 P_N Q_N = 0.
 ```
 
-`P_N` is the retained/readout projection. `Q_N` is the traced/archive projection. `U_N` is the finite tick. The handoff to Book 02 is:
+`P_N` is the retained/readout projection. `Q_N` is the traced/archive projection. `U_N` is the finite tick. The handoff to BOOK_02 is:
 
 ```text
 F_N = P_N U_N^dagger Q_N U_N P_N.
@@ -156,7 +156,7 @@ For any operational theory to exist, M1 forces, via the binary fork:
 The condensed/profinite support and the `A,B,C,D` / `Ω8` finite-instrument language of this book are the standard-language reading of exactly this forced skeleton; the dynamics of transitions and the derivation of `φ` are built on it downstream.
 ## 01.2 Role of this book
 
-Book 01 is the first construction book. Book 00 states the entry contract; Book 01 constructs the first mathematical object to which that contract applies. The construction is deliberately before particle ontology, smooth geometry, continuum fields and SI calibration.
+BOOK_01 is the first construction book. BOOK_00 states the entry contract; BOOK_01 constructs the first mathematical object to which that contract applies. The construction is deliberately before particle ontology, smooth geometry, continuum fields and SI calibration.
 
 Definition. The primitive object is a finite-verifiable registration system. In mathematical language, D0 starts from a profinite/condensed support equipped with a restricted class of admissible morphisms and finite detector operators. In physical language, this is the minimal structure required for a completed measurement record.
 
@@ -182,7 +182,7 @@ from the positive response operator `R_N = D_N^dagger D_N`:
 F_N = P_N U_N^dagger Q_N U_N P_N
 ```
 
-ABCD determines what can be terminally registered; `F_N` determines what returns from the non-registered complement, with the internal feedback resolvent forced by the retained/traced split. Book 01 only hands this retained/traced split to downstream operator books; it does not import matter masses, electroweak constants, baryon data, cosmological surveys or neutrino passports.
+ABCD determines what can be terminally registered; `F_N` determines what returns from the non-registered complement, with the internal feedback resolvent forced by the retained/traced split. BOOK_01 only hands this retained/traced split to downstream operator books; it does not import matter masses, electroweak constants, baryon data, cosmological surveys or neutrino passports.
 
 ### What "mass/energy" is allowed to mean before calibration
 
@@ -593,7 +593,7 @@ The two THE derivations meet: the MDL-optimal irrational (Route B) is exactly th
 - **Hurwitz + `M1^+` canonization** (`D0-PHI-HURWITZ-CLASS-CANONIZATION-001`). Hurwitz, over *all* reals, selects the noble class; `M1^+` then selects its representative by minimal description. Within the period-one continued fractions `[n;n,n,\dots]` — roots of `x^2 - n x - 1`, discriminant `n^2+4` — minimal description selects `n = 1` uniquely, giving discriminant `5` and `(1+\sqrt5)/2`. At `n = 1` the equation `x^2 - x - 1 = 0` is the conclusion. Negative control: `n = 2` gives discriminant `8` and `1+\sqrt2`, so the canonization step can fail.
 - **Jones slot selection** (`D0-JONES-SLOT-SELECTOR-001`). Jones (1983) forces the subfactor index below `4` into `\{4\cos^2(\pi/n)\}`; finite depth gives `index < 4`; the owned M1 rational-capture clause (§01.21.1) gives irrationality; and by Niven the slots at `n = 3,4,6` are the rationals `1,2,3`, so the least irrational slot is `n = 5`, with value `(3+\sqrt5)/2 = \varphi^2`. Again `\varphi` is the output.
 
-The rigidity argument of §01.14 ("four unrelated failures at once") must be read on this repaired pair, not on four faces of one equation. Full verdict and evidence: `02_REGISTRY/forcing_routes.json`.
+The rigidity argument of §01.14 ("four unrelated failures at once") must be read on this repaired pair, not on four faces of one equation. Full verdict and evidence: `02_REGISTRY/forcing_routes.json`. The revised Hurwitz route uses the stated M1⁺ canonization, and the revised Jones route uses the stated finite-depth, irrationality and least-slot conditions. The audit's rejection of the earlier pair does not establish those additional premises.
 
 ### 01.6.1b Gleason-2D loophole and the Fibonacci fusion route [^b01-28]
 
@@ -1106,7 +1106,7 @@ and the shell degrees
 d_9=24,\qquad d_{11}=22,\qquad d_{13}=20.
 \]
 
-Book 01 stops at construction of the finite incidence graph. The action, boundary, matter, gravity and cosmology books may use this scene, but they may not refit it.
+BOOK_01 stops at construction of the finite incidence graph. The action, boundary, matter, gravity and cosmology books may use this scene, but they may not refit it.
 
 ### 01.8.1 Homology reads the quotient scene, not a preferred label
 
@@ -1501,21 +1501,21 @@ The neutrino is a neutral return without electromagnetic charge. Both appear onl
 
 ## 01.10 Boundary, mass forgetting and cross-book placement
 
-Book 01 does not use downstream bridge formulas to define the foundation. It keeps only the handoff map needed by later books.
+BOOK_01 does not use downstream bridge formulas to define the foundation. It keeps only the handoff map needed by later books.
 
-| object | Book 01 role | owner book |
+| object | BOOK_01 role | owner book |
 |---|---|---|
 | Boundary Residual Eigenvalue r_∂ | handed off as boundary-response data | Books 03, 04, 07 |
 | baryon-boundary information coefficient `I_B` | handed off as boundary-response data | Books 03, 04 |
 | residual smallness order `I_12` | kept as a finite-cycle audit scale | Books 03, 05 |
 | electron terminal coefficient `C_e=1/38` | section dictionary, not a foundation axiom | Books 03, 04 |
-| non-reduced Compton section and `Λ_act` | single-section metrology bridge | Book 03 |
+| non-reduced Compton section and `Λ_act` | single-section metrology bridge | BOOK_03 |
 | finite circle audit `π_0` | phase-closure audit, not continuum replacement | Books 02, 05 |
 
-The foundation rule is simple: Book 01 constructs support, response and construction of the finite incidence graph. It does not import mass, baryon, electroweak or cosmological bridges back into the primitive layer.
+The foundation rule is simple: BOOK_01 constructs support, response and construction of the finite incidence graph. It does not import mass, baryon, electroweak or cosmological bridges back into the primitive layer.
 ## 01.11 Contradiction theorems
 
-Book 01 closes by rejecting three common false starts.
+BOOK_01 closes by rejecting three common false starts.
 
 ### 01.11.1 No interaction without information
 
@@ -1527,7 +1527,7 @@ A bare information line is not a physical event. It becomes physical only throug
 
 ### 01.11.3 Particles are not the bottom layer
 
-Particles are stable re-detection classes over finite detector records. They are not primitive objects of Book 01.
+Particles are stable re-detection classes over finite detector records. They are not primitive objects of BOOK_01.
 
 ## 01.12 Active guardrails
 
@@ -2032,7 +2032,7 @@ The bridge is an exact symbolic identity, checked letter-by-letter, not an analo
 - The time operator `T` has golden-slope eigendirections, namely `φ⁻¹` and `−φ` (the conjugate pair of the response equation `x²+x−1=0` re-used by the time layer).
 - The Fibonacci **substitution** word generated by `a→ab, b→a` and the Sturmian **cut-and-project** word of slope `φ⁻²` coincide **letter-by-letter**, now verified *exactly* to 4000 symbols by an executable certificate using exact integer floors `⌊kφ⌋=(k+⌊√(5k²)⌋)//2` (no floating point), under the canonical tile↔letter relabelling, with the rare-letter frequency equal to `φ⁻²` and a rational-slope negative control. The conjugate `ψ=−1/φ` is Pisot, `|ψ|=φ⁻¹<1` — the contracting direction that gives time its arrow.
 
-Therefore the phase unfolding of Book 01 — the irrational `φ⁻²` phase opening into residue branches — *is* exactly the symbolic dynamics of the golden foliation of the time torus:
+Therefore the phase unfolding of BOOK_01 — the irrational `φ⁻²` phase opening into residue branches — *is* exactly the symbolic dynamics of the golden foliation of the time torus:
 
 ```text
 quasicrystal carrier (space, seen statically)
@@ -2047,6 +2047,8 @@ The same `φ⁻²` rotation is also the address-defect of the memory torus on it
 **[Iter25 — the centre is forced, and now certified (`D0-SCENE-CENTER-SPACETIME-CONVERGENCE-001`, Lean `D0.VNext2.SceneCenterSpacetimeConvergence`, cert `vp_scene_center_spacetime_convergence.py`).** The coincidence above is upgraded from a remark to a forced two-channel convergence. Five quantities land on `11`: the spatial capacity `|V₁₁|`, the Lucas `L₅`, `round(φ⁵)`, the temporal return `|Tr(T⁵)|`, and `|det(T⁵−I)| = #Fix₅`. The two channels are independent — `T = [[0,1],[1,-1]]` is the time operator (pinned as the *orientation-twisted* golden companion, `trace = −1`, `det = −1`, distinct from the plain Fibonacci matrix `M_φ = [[0,1],[1,1]]` with `trace = +1`), while `|V₁₁|` is a spatial capacity count — so their agreement is not circular. The centre is *forced* as the unique intersection `{Lucas returns Lₙ} ∩ [9,13] = {11}` (`L₃ = 4` too small, `L₇ = 29` too large), at the forced level `5` (the smallest odd return with `Lₙ > Ω₈ = 8`, and the `L5 = Access` closure of the maturity levels). Since the `±2` half-width is the already-owned orientation step, the whole triple `{9,11,13} = {L₅−2, L₅, L₅+2}` has *both* centre and width forced — zero free integers. This does not re-derive `|V₉|, |V₁₃|` (owned separately); it certifies *why the centre is 11*, in the same multi-channel forcing style as the four channels to `rank = 3`.
 
 **The uniqueness capstone (`D0-SCENE-TRIPLE-UNIQUE-001`, Lean `D0.VNext2.SceneTripleUnique.scene_triple_unique`, cert `vp_scene_triple_unique.py`).** The four forcing legs above — exactly three zones (`CarrierForcing.admissible_unique`), the `+2` address ladder (`address_ladder`), the centre `L₅ = 11`, and the odd-return parity — were, until now, *distinct* theorems a reader had to compose by hand. The capstone states and proves the composition as a *single* statement: **any** triple `(z₀,z₁,z₂)` that is a `+2` ladder whose centre `z₁` is a Lucas number in the window `[9,13]` is *uniquely* `(9,11,13)`. Its genuinely new content is the **Lucas-window uniqueness lemma** (`unique_lucas_in_window`): among *all* Lucas numbers, only `L₅ = 11` lies in `[9,13]` — `L₄ = 7 < 9`, `L₆ = 18 > 13`, and `Lₙ` is monotone so every higher return exceeds `13`. The theorem is proved non-vacuous (`scene_triple_realized`: the real scene at level `n = 5` satisfies every hypothesis), `rc = 0`, `0 sorry`. This is the theory's root-selection statement in one line: the scene is not chosen, it is the unique fixed point of its own admissibility window.
+
+The uniqueness theorem in the capstone takes the ladder and Lucas-window conditions as hypotheses. `D0-WINDOW-9-13-DISSOLVE-001` records the unconsumed ownership and remaining witness and extension-completeness joints for deriving that window. The independence of the time and capacity readings is subject to the shared-premise audit in `02_REGISTRY/forcing_routes.json`.
 
 ### 01.19a.3 Declared gap
 

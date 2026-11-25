@@ -20,7 +20,7 @@
 
 ## 03.0 Active action/variation layer
 
-Book 03 supplies the finite action and variation language for the feedback operator. It does not make empirical claims.
+BOOK_03 supplies the finite action and variation language for the feedback operator. It does not make empirical claims.
 
 ```text
 S_fb = -log det(I - z F_N)
@@ -39,7 +39,7 @@ The universal feedback source is:
 Pi_fb = z(I - z F_N)^(-1)
 ```
 
-Book 03 supplies the response source used by matter, gravity and cosmology sector reductions. Physical meaning is assigned only after sector projection and bridge/passport boundary.
+BOOK_03 supplies the response source used by matter, gravity and cosmology sector reductions. Physical meaning is assigned only after sector projection and bridge/passport boundary.
 
 ## 03.1 Standard reading of action and finite incidence/clique complex terminology
 
@@ -102,7 +102,7 @@ There is a constructive replacement on this terminal quotient. Rational left mul
 The finite proofs are in `D0/Representation/OrderMemoryReadout.lean` and `D0/Representation/GoldenOrderInterferometer.lean`; the derivation and exact controls are in `04_CERTIFICATES/order_memory_verify.py`. Both modules are built as standalone owners; this addition does not promote a claim to full quantum reconstruction or empirical closure. The quadratic-response step uses the existing Born owner, with its quadratic-family and calibration assumptions explicit. The CKM phason holonomy (BOOK_04 §04.4.4) remains a distinct downstream construct.
 ## 03.2 Role and boundary of this book
 
-Book 03 contains the finite action mechanism. It does not re-prove the condensed/profinite detector object, and it does not complete the particle, gravity or cosmology comparison protocols. Those are adjacent books.
+BOOK_03 contains the finite action mechanism. It does not re-prove the condensed/profinite detector object, and it does not complete the particle, gravity or cosmology comparison protocols. Those are adjacent books.
 
 The boundary rule is:
 
@@ -382,7 +382,7 @@ The interaction-information cell used later is
 I_B=\frac{\Delta_\lambda^2\delta_0^3}{24}.
 ```
 
-Book 04 may use this cell in hadron or coefficient comparison protocols, but Book 03 owns the variational reason that the cell is non-diagonal and finite.
+BOOK_04 may use this cell in hadron or coefficient comparison protocols, but BOOK_03 owns the variational reason that the cell is non-diagonal and finite.
 
 ## 03.8 Finite equations of motion
 
@@ -404,7 +404,7 @@ Q^\dagger Q
 {\operatorname{Tr}(\Pi_aQ^\dagger Q)}\over{\operatorname{Tr}(Q^\dagger Q)}.
 ```
 
-The proof of the trace law is in Book 02; Book 03 uses it as the admissible dynamics-to-readout finite variational test functional.
+The proof of the trace law is in BOOK_02; BOOK_03 uses it as the admissible dynamics-to-readout finite variational test functional.
 
 ## 03.9 Runtime, forgetting and witness transport
 
@@ -416,7 +416,7 @@ The normalized witness transport is schematically
 \text{tick}\rightarrow\text{witness transport}\rightarrow\text{active/archive split}\rightarrow\text{quadratic readout}.
 ```
 
-Finite-window entropy and dynamic witness transport are proof-referenced to Book 02. Book 03 uses them to control when an action block is a real ordered finite evolution (D0: runtime) mechanism and when it is only a formal expression.
+Finite-window entropy and dynamic witness transport are proof-referenced to BOOK_02. BOOK_03 uses them to control when an action block is a real ordered finite evolution (D0: runtime) mechanism and when it is only a formal expression.
 
 ## 03.10 Vertex registry and finite scattering discipline
 
@@ -428,7 +428,7 @@ The vertex registry belongs here as action infrastructure. The finite S-matrix i
 P(i\to f)=|\langle f|\mathcal S_{finite}|i\rangle|^2
 ```
 
-provided the states are finite detector states and the bridge to external kinematics is typed. Collider and scattering comparison protocols are handed to Book 04.
+provided the states are finite detector states and the bridge to external kinematics is typed. Collider and scattering comparison protocols are handed to BOOK_04.
 
 ### Why the registry is finite, and why amplitudes (not probabilities) populate it
 
@@ -475,24 +475,24 @@ Any *dynamical* collapse (GRW-style wave-packet contraction) imports a free "com
 
 with `\(A(G,J)\)` the assembly cost (minimal code length of the geometry). Status: FORCED [^b03-40]. Caveat for cross-references: this `\(\mathcal Z_k\)` is the *diagram/geometry* sum — it is **not** the same object as the feedback partition `\(Z_N=\mathrm{Tr}\,e^{-\beta\Delta}\det(I-zF)^{-1}\)` used elsewhere in the action machinery; do not conflate them.
 
-**Net.** Clauses (a)–(f) discharge, one by one, every external-catalog escape a scattering registry could smuggle in: finiteness of the vertex table (a), fixed binary `\(\varphi\)`-weighted vertex alphabet (b), amplitude-valued (not probability-valued) entries (c), forced conditioning readout (d), the forced `\(|\cdot|^2\)` translation (e), and a dynamical-graph carrier (f). The "finite S-matrix registry" stated at the top is therefore the *only* M1-admissible transition object; the collider/kinematic comparison that consumes it is handed to Book 04.
+**Net.** Clauses (a)–(f) discharge, one by one, every external-catalog escape a scattering registry could smuggle in: finiteness of the vertex table (a), fixed binary `\(\varphi\)`-weighted vertex alphabet (b), amplitude-valued (not probability-valued) entries (c), forced conditioning readout (d), the forced `\(|\cdot|^2\)` translation (e), and a dynamical-graph carrier (f). The "finite S-matrix registry" stated at the top is therefore the *only* M1-admissible transition object; the collider/kinematic comparison that consumes it is handed to BOOK_04.
 ## 03.11 Electroweak and photon channels as action layers
 
-The electroweak material is retained as an action-layer owner block. Book 03 owns the action layer:
+The electroweak material is retained as an action-layer owner block. BOOK_03 owns the action layer:
 
 ```math
 \text{EW channel}=\text{single dimensional calibration section action layer}+\text{finite radial depth}+\text{typed weak unlock}.
 ```
 
-Particle masses, charged-lepton generation, CKM orientation and gauge coefficient normalization are Book 04 matters. Book 03 only states the admissibility rule: the electroweak formulas must use the single action section and may not import an independent `M_Z`, `M_W`, proton or collider anchor.
+Particle masses, charged-lepton generation, CKM orientation and gauge coefficient normalization are BOOK_04 matters. BOOK_03 only states the admissibility rule: the electroweak formulas must use the single action section and may not import an independent `M_Z`, `M_W`, proton or collider anchor.
 
 The photon channel is the straight transit/phase channel of the terminal section. It is admissible as a benchmark action channel only because it preserves the invariant causal section and does not introduce a rest-return mass section.
 
 ## 03.12 Proton, neutron and beta/archive blocks as action mechanisms
 
-The proton terminal-destructive readout and neutron beta/archive split blocks are not full hadron theory. They are action mechanisms handed to Book 04.
+The proton terminal-destructive readout and neutron beta/archive split blocks are not full hadron theory. They are action mechanisms handed to BOOK_04.
 
-Book 03 keeps only the generic operator form:
+BOOK_03 keeps only the generic operator form:
 
 ```math
 \text{terminal destructive readout}:
@@ -512,25 +512,25 @@ The exact proton/neutron numerical comparison protocols remain in the matter boo
 
 ## 03.13 Gravity and cosmology cross-reference
 
-The finite variational operator stack supplies one-section metrology and length-depth action. Gravity receives this in Book 07. Cosmology receives the finite-window archive-transfer mechanism in Book 08.
+The finite variational operator stack supplies one-section metrology and length-depth action. Gravity receives this in BOOK_07. Cosmology receives the finite-window archive-transfer mechanism in BOOK_08.
 
-The S_DE insertion is therefore not a cosmology derivation inside Book 03. It is the action-side rule:
+The S_DE insertion is therefore not a cosmology derivation inside BOOK_03. It is the action-side rule:
 
 ```math
 \text{closed static coefficient}\rightarrow\text{finite spectrum}\rightarrow\text{finite window}\rightarrow\text{typed transfer}.
 ```
 
-The actual BAO/archive pressure derivation belongs to Book 08.
+The actual BAO/archive pressure derivation belongs to BOOK_08.
 
 ## 03.14 Guardrails
 
-Book 03 rejects the following moves:
+BOOK_03 rejects the following moves:
 
 1. adding a second dimensional anchor after `Lambda_act`;
 2. reading a support eigenvalue directly as a particle mass without terminal/runtime transfer;
 3. using a continuum action as primitive input before the finite halt quotient;
 4. fitting bridge coefficients after seeing target data;
-5. moving sector formulas from Book 04/07/08 back into the action book as if they were action proofs.
+5. moving sector formulas from BOOK_04/07/08 back into the action book as if they were action proofs.
 
 ## 03.15 Claims covered or handed off
 
@@ -924,7 +924,7 @@ The dimensionless torus aspect is frozen as
 (R+r)/(R-r) = phi^5
 ```
 
-with the algebraic core owner being the torus-core geometry origin.  Book 03
+with the algebraic core owner being the torus-core geometry origin.  BOOK_03
 does not use PDG data to create this geometry; PDG Core-13 is an external
 embedding passport (a PDG diagnostic, not the forcing certificate).
 

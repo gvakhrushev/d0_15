@@ -13,7 +13,7 @@
 
 ## 09.00 Scope and claim discipline
 
-Book 09 collects the gravitational-wave and interferometric material that should not be hidden inside Book 07.  The core gravity operators remain in Book 07.  This book states the bridge grammar, passport targets, negative controls, and future residual-observable programme for gravitational-wave data.
+BOOK_09 collects the gravitational-wave and interferometric material that should not be hidden inside BOOK_07.  The core gravity operators remain in BOOK_07.  This book states the bridge grammar, passport targets, negative controls, and future residual-observable programme for gravitational-wave data.
 
 Allowed verbs: `defines`, `models`, `predicts as a target`, `tests`, `rejects as current evidence`.
 
@@ -41,7 +41,7 @@ with the bridge normalization
 \operatorname{Tr}(2\Pi_{axis}-\Pi_{transverse})=0.
 \]
 
-This is the finite readout expression of volume-preserving quadrupole deformation: axial extension and transverse compression balance at trace level.  The spin-2 interpretation is a bridge target: the TT gravitational-wave carrier in Book 07 is the core finite spin-2 operator, while `Q_2` is the macroscopic interferometric picture.
+This is the finite readout expression of volume-preserving quadrupole deformation: axial extension and transverse compression balance at trace level.  The spin-2 interpretation is a bridge target: the TT gravitational-wave carrier in BOOK_07 is the core finite spin-2 operator, while `Q_2` is the macroscopic interferometric picture.
 
 ## 09.03 Horizon hum theorem-target
 
@@ -90,9 +90,9 @@ Z(event,\alpha)=\frac{S(event,\alpha)-\operatorname{median}_\alpha S(event,\alph
 
 or a stricter waveform-residual observable after external GR template subtraction.  Publication language must say `target`, `protocol`, or `negative-control`, not `discovery` or `confirmation`.
 
-## 09.08 Relation to Book 07
+## 09.08 Relation to BOOK_07
 
-Book 07 owns the finite gravity operators: horizon capacity, seam emission, TT spin-2 sector, and jet/channel observables.  Book 09 owns the gravitational-wave and interferometric bridge material.  If a future residual observable survives negative controls, it may be promoted to an empirical passport, not to a core theorem.
+BOOK_07 owns the finite gravity operators: horizon capacity, seam emission, TT spin-2 sector, and jet/channel observables.  BOOK_09 owns the gravitational-wave and interferometric bridge material.  If a future residual observable survives negative controls, it may be promoted to an empirical passport, not to a core theorem.
 ## 09.09 Horizonless ringdown: a second falsifier
 
 Beyond the `I_f = log φ` horizon-hum target of §09.05, the arrested-collapse picture of BOOK_07 §07.51 supplies an independent, sharper gravitational-wave falsifier. It is stated here strictly as a *prediction-as-target*, in the discipline of §09.00: it is not confirmed, not fitted, and never core.

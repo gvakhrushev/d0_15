@@ -20,7 +20,7 @@
 
 ## 02.0 Active mathematical spine
 
-Book 02 is the theorem spine for the feedback construction. It receives `P_N`, `Q_N` and `U_N` from Book 01 and proves the finite operator identities used by the sector books.
+BOOK_02 is the theorem spine for the feedback construction. It receives `P_N`, `Q_N` and `U_N` from BOOK_01 and proves the finite operator identities used by the sector books.
 
 ### Feedback construction
 
@@ -84,7 +84,7 @@ mathsf P_fb = beta^(-1) partial_V log Z_N
 
 Gravity proof-spine anchors: Entropic archive gravity interface, Finite spin-2 wave operator, Higher-curvature finite cut, Spectral A2 / EH bridge, Macro Einstein interface.
 
-Book 04 operator-boundary anchor: `02.36.3b Book 04 operator-boundary closure`, `D0.Matter.book04_operator_boundaries_closed`, `nucleon_line_cannot_promote_full_baryon_multiplet`, `lower_hodge_400_cannot_promote_meson_masses`, `missing_scalar_projector_cannot_promote_higgs_yukawa_core`.
+BOOK_04 operator-boundary anchor: `02.36.3b Book 04 operator-boundary closure`, `D0.Matter.book04_operator_boundaries_closed`, `nucleon_line_cannot_promote_full_baryon_multiplet`, `lower_hodge_400_cannot_promote_meson_masses`, `missing_scalar_projector_cannot_promote_higgs_yukawa_core`.
 
 **[Root R5 — alpha log-Cesàro no-go].** At the critical rate `a=3` the ordinary log-Cesàro/Dixmier limit of the forced singular values is `1/(3·log φ)`, transcendental (`ASSUMP-LINDEMANN-LNPHI`) and so never the rational moment `μ₂=12288/5` — `D0-ALPHA-LOG-CESARO-MEASURABILITY-NOGO-001` (Lean `D0.Spectral.AlphaLogCesaroMeasurability`, reusing `D0-CVFT-F1`); positive realization stays the external `D0-EXTERNAL-DIXMIER-WODZICKI-PASSPORT-001`.
 **[Post-core E5 extension].** Two admissible analytic functionals on the same `a=3` operator diverge — the internal ordinary log-Cesàro residue `1/(3 log φ)` (transcendental) `≠` rational `μ₂`, while the external Wodzicki reading targets `μ₂` — so the residue realization is the external Dixmier/Wodzicki passport `D0-POSTCORE-DIXMIER-WODZICKI-PASSPORT-001` (Lean `D0.Extensions.AlphaResidueExtension`), never internal CORE.
@@ -115,7 +115,7 @@ Hence the proof-language convention may invoke no external catalog: every cell m
 **[COR 20.1.2] Actual infinity is undefinable without M1 [^b02-3].** Defining an *actual* infinity requires an external criterion of identity/boundary — which elements are included, what counts as "all" — i.e. an external catalog, forbidden by M1. Therefore CORE admits only *potential* infinity, realized as a pro-system of refinements (the inverse-system / varprojlim construction operated by BOOK_01 §01.4/§01.15). The convention's `support object -> ... -> invariant` chain is thus always a finite cell over a pro-system, never a completed infinite totality.
 ## 02.2 Role of this book
 
-Book 02 is the mathematical reference for the corpus. Book 01 constructs the finite detector object and graph-birth lift; Book 02 records the proof calculus that later sector books use when they state action, matter, gravity, or cosmological transfer claims. Sector books may state physical comparison protocols and sector-specific lemmas, but proof-level reductions point back here unless the proof is intrinsically sector-specific.
+BOOK_02 is the mathematical reference for the corpus. BOOK_01 constructs the finite detector object and graph-birth lift; BOOK_02 records the proof calculus that later sector books use when they state action, matter, gravity, or cosmological transfer claims. Sector books may state physical comparison protocols and sector-specific lemmas, but proof-level reductions point back here unless the proof is intrinsically sector-specific.
 
 ## 02.3 Proof ownership rule
 
@@ -307,9 +307,9 @@ The protected sources are:
 
 If any listed source is absent from the active book section, the corresponding result must be labelled `STIFFNESS-PROOF-CELL-MISSING`, not promoted as a closed theorem.
 
-## 02.5 The theorem chain inherited from Book 01
+## 02.5 The theorem chain inherited from BOOK_01
 
-Book 02 does not reintroduce D0 foundations rhetorically; it formalizes the proof calculus used after them.
+BOOK_02 does not reintroduce D0 foundations rhetorically; it formalizes the proof calculus used after them.
 
 ```math
 x^2=x+\mathfrak q,
@@ -323,15 +323,15 @@ p+p^2=1,
 \delta_0={\sqrt5-2\over2}={1\over2\varphi^3}.
 ```
 
-The role of these identities in Book 02 is operational. They define the finite terminal quotient ideal and admissible runtime calculus. A sector formula may use a φ lift, echo, boundary correction or archive leakage only if the use is typed by the finite operator grammar.
+The role of these identities in BOOK_02 is operational. They define the finite terminal quotient ideal and admissible runtime calculus. A sector formula may use a φ lift, echo, boundary correction or archive leakage only if the use is typed by the finite operator grammar.
 
 ### 02.5.0 Two independent forcings of `φ`
 
-Book 01 owns the φ derivation; Book 02 inherits it but records *that the same constant is forced twice by independent routes*, because the proof calculus below treats every φ-typed operator as over-determined, not chosen. The two routes are:
+BOOK_01 owns the φ derivation; BOOK_02 inherits it but records *that the same constant is forced twice by independent routes*, because the proof calculus below treats every φ-typed operator as over-determined, not chosen. The two routes are:
 
-**Route 1 — positive-response quadratic (return branch).** `p+p^2=1` with `p=\varphi^{-1}` (canonical owner BOOK_01 §01.6); this is the route Book 02 uses operationally above.
+**Route 1 — positive-response quadratic (return branch).** `p+p^2=1` with `p=\varphi^{-1}` (canonical owner BOOK_01 §01.6); this is the route BOOK_02 uses operationally above.
 
-**Route 2 — self-similarity of refinement (no step-catalog).** This is a *second, structurally independent* forcing and it is the one Book 02's descent calculus actually instantiates.
+**Route 2 — self-similarity of refinement (no step-catalog).** This is a *second, structurally independent* forcing and it is the one BOOK_02's descent calculus actually instantiates.
 
 [LEM 2.5.0.S1] [^b02-6]. Run the two-step mediator scheme `S,T\mapsto P=S\oplus T`, then `T,P\mapsto Q=T\oplus P`. Let
 
@@ -585,7 +585,7 @@ S_{gate},\qquad J_{scene},\qquad \mathcal G_{spec},\qquad W_A.
 
 The scene functional is a constraint certificate. It selects finite scene structure under addressability, non-monopoly verification and finite response. The graph scene `K(9,11,13)` is therefore not an arbitrary postulate; it is the selected carrier for the finite detector grammar after the `ABCD × {±} -> Omega8 -> V9` lift.
 
-Book 03 will own the action/operator dynamics as a sector of construction. Book 02 owns the proof form and the guardrails: no continuous polynomial fitting, no untyped scene variation, and no external table as an input to `J_scene`.
+BOOK_03 will own the action/operator dynamics as a sector of construction. BOOK_02 owns the proof form and the guardrails: no continuous polynomial fitting, no untyped scene variation, and no external table as an input to `J_scene`.
 
 ### 02.7A The Holographic Self-Reading Principle as single root
 
@@ -631,7 +631,7 @@ The general positive measurement outcome grammar is (D0: readout):
 
 ## 02.9 Minimal positive-response theorem for the base equation
 
-The base equation used in Book 01 is not a free scalar axiom. It is the normalized scalar shadow of the minimal finite positive-response detector.
+The base equation used in BOOK_01 is not a free scalar axiom. It is the normalized scalar shadow of the minimal finite positive-response detector.
 
 **Definition.** A primitive D0 detector audit is a finite-stage two-branch system `(L,R)` with a direct branch `L`, a return branch `R`, one halt quotient, and a positive response functional. Let `p\in(0,1)` be the direct branch contraction. Since the return branch is the first completed positive response of the same registered channel, its primitive scalar weight is the finite composition weight
 
@@ -674,7 +674,7 @@ Thus the equation is derived relative to the D0 primitive detector obligations. 
 
 ## 02.9A The holographic commutator [J,Y] and the symplectic origin of ħ
 
-The same finite-detector discipline that forces the base equation also forces the *non-commutativity* that downstream books call quantum. Book 02 keeps the proof; BOOK_01 owns the K(9,11,13) scene that supplies the rigidity input (see BOOK_01 §01.8, the `ABCD × {±} -> Omega8 -> V9` lift).
+The same finite-detector discipline that forces the base equation also forces the *non-commutativity* that downstream books call quantum. BOOK_02 keeps the proof; BOOK_01 owns the K(9,11,13) scene that supplies the rigidity input (see BOOK_01 §01.8, the `ABCD × {±} -> Omega8 -> V9` lift).
 
 **[DEF] Bulk/Boundary instruments.** Let `J` (Puncture / Localization) be the operator that instantiates a topological defect inside the retained Archive Bulk, and let `Y` (Closure / Compactification) be the trace-out operator projecting the Bulk onto the Active Boundary. `J` localizes a state in the bulk; `Y` reads its boundary projection. Both are admissible finite instruments in the role alphabet, not exogenous postulates.
 
@@ -702,10 +702,10 @@ is then the macroscopic shadow of the topological incompatibility between locali
 
 **[MECH-LIMIT — status of the `ħ` identification, `D0-HBAR-SYMPLECTIC-CAPACITY-MECH-LIMIT-001`].** What is closed (THE) is the *obstruction*: `[J,Y] ≠ 0` is rigidity-forced. The finite **symplectic-capacity mechanism** is identified — `ħ` reads as the symplectic capacity `c_symp([J,Y])` of that obstruction — but the full **normalization** from the finite capacity class to the *dimensionful physical* `ħ` remains a mechanism-limit / bridge owner, not a closed CORE theorem. Accordingly `ħ` is **not** used as a core primitive; the physical `ħ` stays a bridge/metrological quantity unless and until the finite-capacity-to-physical normalization owner is closed. The Newton bridge `G\sim \ell_P^2 c^3/\hbar` *uses* `ħ` only at that bridge layer. Guard: `vp_hbar_symplectic_capacity_status.py`.
 
-Owner: Book 02. Downstream books cite [THE 2.9A] for the forced commutator obstruction `[J,Y] ≠ 0`; they may **not** cite a closed CORE derivation of physical `ħ` (it is MECH-LIMIT), and may not reintroduce `ħ` as a free core input.
+Owner: BOOK_02. Downstream books cite [THE 2.9A] for the forced commutator obstruction `[J,Y] ≠ 0`; they may **not** cite a closed CORE derivation of physical `ħ` (it is MECH-LIMIT), and may not reintroduce `ħ` as a free core input.
 ## 02.10 Runtime, entropy and finite S-matrix
 
-For evolution and scattering, Book 02 fixes the algebraic forms; Books 06--08 own the sector interpretations.
+For evolution and scattering, BOOK_02 fixes the algebraic forms; Books 06--08 own the sector interpretations.
 
 Entropy is archive forgetting or finite dephasing, not an independent thermodynamic postulate:
 
@@ -800,7 +800,7 @@ with $L$ the CORE-fixed symmetric graph Laplacian and $u=\varepsilon^2 t$ the ca
 **Falsification hook.**  If a search admissible in the corpus exhibits genuine exponential branching with the holonomy channel open ($D\ge6$, $\Delta_k\ge\Delta>0$), or if some $V_k$ fails monotone descent without an exogenous parameter being introduced, the $\mathbf{NP}_{D0}\subseteq\mathbf{P}_{D0}$ cell is demoted before any external comparison.
 ## 02.11 Matter, baryon, meson and hadron proof blocks
 
-Book 02 records the proof grammar for matter-sector support. It does not claim full empirical completion of all hadron multiplets. The current theorem status is:
+BOOK_02 records the proof grammar for matter-sector support. It does not claim full empirical completion of all hadron multiplets. The current theorem status is:
 
 - baryon exact Hodge support: core support;
 - Schur-complement nucleon line: core measurement;
@@ -1203,7 +1203,7 @@ where
 \dim\mathfrak g_{light}=\dim\mathfrak{su}(3)+\dim\mathfrak{su}(2)+\dim\mathfrak u(1)=8+3+1=12.
 ```
 
-Thus the exponent used in Book 04 is
+Thus the exponent used in BOOK_04 is
 
 ```math
 \eta_{EM}={5\over8}+{\delta_0\over384}.
@@ -1217,7 +1217,7 @@ The clock-sector golden floor is a SECTOR assumption, not a global law.
 
 [HYP] Clock-Sector Hypothesis 2.13A.  In the clock sector the fundamental feedback-return operator satisfies `F_N=φ^-2 P_N` exactly.  This is the minimal additional condition that promotes the universal PSD lower bound to the golden floor.  It is explicitly declared and may be relaxed in other sectors; it does not violate the single-action-section rule, being a sector-specific choice inside the existing framework.
 
-Book 02 also owns the general finite-projector inequality used by the metrology and bridge layers.
+BOOK_02 also owns the general finite-projector inequality used by the metrology and bridge layers.
 
 [LEM] Laboratory Projector Bound 2.19 [^b02-38].  Let `Π_lab≤P_N` be the laboratory projector and split the environment as
 
@@ -1295,11 +1295,11 @@ The scene Laplacian `L(K(9,11,13))` carries 5 distinct eigenvalues (`{0,20,22,24
 
 **[Iter25 — the dimension itself DOES lift, and it is *forced* (`vp_scene_dim_even_fibonacci_forcing.py`, Lean `D0.VNext2.SceneDimEvenFibonacci`, `D0-SCENE-DIM-EVEN-FIBONACCI-FORCING-001`).** The obstruction above is to *spectral* transport; the *dimensional* transport is not obstructed — it is a forced convergence the corpus had not recorded. The scene dimension is `|V| = 9+11+13 = 33`, and the AF Dirac² eigenspace multiplicities are the even-indexed Fibonacci numbers `{F₂,F₄,F₆,F₈} = {1,3,8,21}` on the even powers `{φ⁰,φ²,φ⁴,φ⁶}`. These sum to the *same* 33, because `∑_{k=1}^{4} F_{2k} = F₉ − 1 = 33` (the classical even-index partial-sum identity at `n=4`). This is not a coincidence of integers: the zone ladder steps by `+2` (a `+1` step would import an external `ℤ₂` orientation bit, `⊥`M1, §01), and the Dirac² ladder steps by `+2` in the exponent (even powers) — one shared `+2` root, so both are `+2`-graded partitions of 33. The whole scene Laplacian spectrum is itself forced by that same `+2`: it is the classical complete-multipartite closed form `0¹, (N−nᵢ)^{nᵢ−1}, N^{k−1}` = `0¹,24⁸,22¹⁰,20¹²,33²`, proved by explicit eigenvectors (`D0-SCENE-LAPLACIAN-SPECTRUM-FORCED-001`, Lean `D0.VNext2.SceneLaplacianSpectrumForced`, cert `vp_scene_laplacian_spectrum_forced.py`) — so the "5 distinct eigenvalues", the spectral bunching, and the whole shape of the transport obstruction are *downstream* consequences of the single zone forcing, not independent inputs. The grammar of each side is fixed by M1 *independently and before* the identity is read off, exactly the multi-channel forcing the corpus already uses for `rank = 3` (Frobenius `ℍ`, tripartite rank, icosahedral slice, tower-stop). **Honest scope:** this lifts *dimension and grading*, not spectrum — the mass profiles differ (`{1,12,10,8,2}` over 5 bands vs `{1,3,8,21}` over 4), and refining the coarse scene band into the fine AF ladder is the separate refinement-rule NO-GO. It is orthogonal to the refuted *algebra* anchor (`D0-VNEXT-33-SCENE-ANCHOR-NOGO-001`): the AF matrix-algebra dimension is `5²+3² = 34 = F₉ = 33+1`, one more than the eigenspace dimension — the `+1` is the kernel mode.
 
-The **sixth** owner, `D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001`, was initially swept into the same NO-GO — and that was an **over-scoped error, now retracted**. A Feshbach compression needs only a keep/trace *projection split*, not a unitary `Ξ`. Against the scene's own `Aut`-invariant zone/archive split (bulk zones 1,2 = `9+11 = 20` vertices; traced boundary zone 3 = `13` vertices), the boundary block is `D_tt = 20·I₁₃` **exactly** (zone 3 is edge-free, each boundary vertex has degree `33−13 = 20`), so the Schur complement `W_eff = A_bb − (1/20)·B·Bᵀ` is exact and `z`-independent. Its eigenvalues are `{0,22,24,33}` with multiplicities `{1,10,8,1}` on the 20-dimensional bulk — **4** distinct eigenvalues. So the canonical compression *performs exactly the `5→4` distinct-eigenvalue reduction a unitary cannot* (the boundary trace removes the eigenvalue `20`, which is the boundary block's own value). This closes the compression owner **PROOF-TARGET → CERT-CLOSED**. Honest bound: the compressed spectrum `{0,22,24,33}` is *not* the geometric `φ`-ladder, so the compression does **not** prove scene↔AF spectral *congruence* — the lift/covariance owners stay NO-GO, correctly scoped to that stronger claim. A further **positive** counterpoint: the AF-side *trace-preserving conditional expectation itself* exists and is unique (finite-dimensional Takesaki). The aspirational pair `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` keeps its existing NO-GO twin and is unchanged.
+The **sixth** owner, `D0-VNEXT-AF-D0-FESHBACH-COMPRESSION-OWNER-001`, was initially swept into the same NO-GO — and that was an **over-scoped error, now retracted**. A Feshbach compression needs only a keep/trace *projection split*, not a unitary `Ξ`. Against the scene's own `Aut`-invariant zone/archive split (bulk zones 1,2 = `9+11 = 20` vertices; traced boundary zone 3 = `13` vertices), the boundary block is `D_tt = 20·I₁₃` **exactly** (zone 3 is edge-free, each boundary vertex has degree `33−13 = 20`), so the Schur complement `W_eff = A_bb − (1/20)·B·Bᵀ` is exact and `z`-independent. Its eigenvalues are `{0,22,24,33}` with multiplicities `{1,10,8,1}` on the 20-dimensional bulk — **4** distinct eigenvalues. So the canonical compression *performs exactly the `5→4` distinct-eigenvalue reduction a unitary cannot* (the boundary trace removes the eigenvalue `20`, which is the boundary block's own value). This closes the compression owner **PROOF-TARGET → CERT-CLOSED**. Honest bound: the compressed spectrum `{0,22,24,33}` is *not* the geometric `φ`-ladder, so the compression does **not** prove scene↔AF spectral *congruence* — the lift and tower-compatibility owners stay NO-GO, correctly scoped to that stronger claim. The separate Dirac covariance owner is CERT-CLOSED as recorded above. A further **positive** counterpoint: the AF-side *trace-preserving conditional expectation itself* exists and is unique (finite-dimensional Takesaki). The aspirational pair `D0-VNEXT-ISOMETRIC-DIRAC-TOWER-OWNER-001` keeps its existing NO-GO twin and is unchanged.
 
-**[AF/GNS isometric tower].** Distinct from the INVERSE D0 support tower (downward projections), the vNext INDUCTIVE Fibonacci AF/GNS tower has trace-preserving Bratteli inclusions whose Perron-trace compatibility (`1+phi^-1=phi`) induces genuine isometries `J_N` (`D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001`, CERT, Lean `D0.VNext.PerronGNSTower`). In `D0.Algebra.FibonacciAFTower` (`D0-FIBONACCI-AF-TOWER-OWNER-001`), this inductive limit is permanently integrated into the core algebra library: the Bratteli diagram with incidence matrix $M_\varphi = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$ defines $C^*$-algebras of strictly growing dimensions $\{2, 5, 13, 34, 89, \dots\}$ with an exact inductive trace state automatically weighing levels by $\varphi^{-k}$, providing the algebraic substrate for regularizing the Dixmier trace without ad-hoc Feshbach cutoffs. The Dirac/Laplacian defect test then FAILS canonically: the Dirac scale is underdetermined (`D0-VNEXT-MARTINGALE-DIRAC-OWNER-001`, NO-GO) and there is no comparison map `Xi_N` to the fixed 33-dim D0 Laplacian (`D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001`, NO-GO; AF dims skip 33). The candidate primitive `PRIM-ISOMETRIC-DIRAC-J_N` splits into +2 (scale + comparison map).
+**[AF/GNS isometric tower].** Distinct from the INVERSE D0 support tower (downward projections), the vNext INDUCTIVE Fibonacci AF/GNS tower has trace-preserving Bratteli inclusions whose Perron-trace compatibility (`1+phi^-1=phi`) induces genuine isometries `J_N` (`D0-VNEXT-AF-GNS-ISOMETRY-OWNER-001`, CERT, Lean `D0.VNext.PerronGNSTower`). In `D0.Algebra.FibonacciAFTower` (`D0-FIBONACCI-AF-TOWER-OWNER-001`), this inductive limit is permanently integrated into the core algebra library: the Bratteli diagram with incidence matrix $M_\varphi = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix}$ defines $C^*$-algebras of strictly growing dimensions $\{2, 5, 13, 34, 89, \dots\}$ with an exact inductive trace state automatically weighing levels by $\varphi^{-k}$, providing the algebraic substrate for regularizing the Dixmier trace without ad-hoc Feshbach cutoffs. The Dirac/Laplacian defect test then FAILS canonically: the earlier Dirac scale test is underdetermined (`D0-VNEXT-MARTINGALE-DIRAC-OWNER-001`, NO-GO); the separate canonical scale result is recorded above and there is no comparison map `Xi_N` to the fixed 33-dim D0 Laplacian (`D0-VNEXT-DIRAC-LAPLACIAN-COMPATIBILITY-OWNER-001`, NO-GO; AF dims skip 33). The candidate primitive `PRIM-ISOMETRIC-DIRAC-J_N` splits into +2 (scale + comparison map).
 
-**[34-to-33 quotient boundary].** `dim A_3 = 5^2+3^2 = 34` is the dimension of the matrix algebra `M_5(+)M_3` (block sizes = Fibonacci path counts 5,3), NOT `33+1` vertices; `34-1=33` is forbidden as a quotient proof. The spectral/Feshbach matching hierarchy fails: the unique trace=cyclic line gives a 33-dim reduction `su(5)(+)su(3)(+)u(1)=(24,8,1)` that does not match the tripartite scene `(9,11,13)` (`D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001`, Outcome D), and the AF martingale Dirac^2 multiplicities `{1,3,8,21}` differ from the scene Laplacian's `{1,2,8,10,12}` for ANY scale (`D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001`, scale-independent). So `PRIM-CANONICAL-33-SCENE-ANCHOR` does not exist (`D0-VNEXT-33-SCENE-ANCHOR-NOGO-001`); the scale and Xi primitives stay independent.
+**[34-to-33 quotient boundary].** `dim A_3 = 5^2+3^2 = 34` is the dimension of the matrix algebra `M_5(+)M_3` (block sizes = Fibonacci path counts 5,3), NOT `33+1` vertices; `34-1=33` is forbidden as a quotient proof. The spectral/Feshbach matching hierarchy fails: the unique trace=cyclic line gives a 33-dim reduction `su(5)(+)su(3)(+)u(1)=(24,8,1)` that does not match the tripartite scene `(9,11,13)` (`D0-VNEXT-AF-ONE-DIMENSIONAL-REDUCTION-CLASSIFICATION-001`, Outcome D), and the AF martingale Dirac^2 multiplicities `{1,3,8,21}` differ from the scene Laplacian's `{1,2,8,10,12}` for ANY scale (`D0-VNEXT-AF-D0-SPECTRAL-COMPRESSION-OWNER-001`, scale-independent). So `PRIM-CANONICAL-33-SCENE-ANCHOR` does not exist (`D0-VNEXT-33-SCENE-ANCHOR-NOGO-001`); the scale and Xi primitives are distinct; the separate canonical scale result is recorded above.
 
 **[Scene-native conditional-expectation hierarchy].** Refining directly from K(9,11,13) (history/path tower, endpoint conditional expectation) the comparison-map question is tested without the AF route. The intertwining hierarchy is typed exactly: scene compression (`C_n L J_n = L_scene`) < spectral equality < heat-semigroup equality (`C_n e^{-uL} J_n = e^{-uL_scene}`) < Feshbach equality -- a weaker level never implies a stronger one. Result: no UNIQUE scene-native refinement rule is forced -- all-walks, non-backtracking, and directed-edge families satisfy M1 but are inequivalent (depth-2 carriers 15708 != 14990; transfer dims 33 != 718), so `Xi` is not canonical (`D0-VNEXT2-SCENE-NATIVE-REFINEMENT-NOGO-001`, Outcome D). New upstream primitive `PRIM-SCENE-HISTORY-REFINEMENT-RULE`; `PRIM-COMPARISON-MAP-XI-N` and `PRIM-DIRAC-SCALE-SELECTION` remain independent. The scene fingerprint (mults {1,2,8,10,12}, trace 718, structural R(3)+K(8,10,12)) is owned (`D0-VNEXT2-SCENE-FINGERPRINT-OWNER-001`, CERT).
 
@@ -1670,7 +1670,7 @@ The alternatives fail by type:
 - `33` counts the full carrier, not a line-depth map;
 - rank/nullity counts internal gauge bookkeeping, not length-depth covariance.
 
-Thus `99` is the unique admissible bidegree for the finite length-depth map in Book 07.
+Thus `99` is the unique admissible bidegree for the finite length-depth map in BOOK_07.
 
 ### 02.19.4 Electromagnetic residual exponent
 
@@ -1698,13 +1698,13 @@ The depth/exponent uniqueness above fixes *magnitudes*; it does not yet say *why
 
 **[THE 02.19B] Homological unification 0-1-2 — gravity, EM and QM are the three skeleton traces, not three postulates [^b02-44]. [^b02-42].** Let `R` be the feedback-return operator `F_N` of this book restricted to the carrier `K(9,11,13)`.  The carrier carries exactly three orthogonal homological strata — points, lines, areas — and `R` evaluated on each yields one phenomenological force:
 
-1. **0-skeleton (vertices, `|V|=33`).** `Tr_0(R)` is the global node-closure density.  This is macroscopic gravity `G_N`: a vertex-trace counts only end-point closure, with no transport and no area, so it carries length-depth covariance but no gauge phase — the same length-depth object that supplies `D_L=9·11=99` in §02.19.3 and the Book 07 limit.
+1. **0-skeleton (vertices, `|V|=33`).** `Tr_0(R)` is the global node-closure density.  This is macroscopic gravity `G_N`: a vertex-trace counts only end-point closure, with no transport and no area, so it carries length-depth covariance but no gauge phase — the same length-depth object that supplies `D_L=9·11=99` in §02.19.3 and the BOOK_07 limit.
 2. **1-skeleton (edges, `|E|=359`).** `Tr_1(R)` is the inter-nodal transport capacity.  This is electromagnetism: the edge-trace accumulates one complex phase per edge, and the fine-structure constant is the reciprocal edge count `α^{-1}\propto 359` already forced in §02.13 (`α_{top}^{-1}=359/\varphi^2-\varphi^{-5}`).
 3. **2-skeleton (plaquettes/faces).** `Tr_2(R)` is the symplectic area obstruction `[J,Y]`.  This is quantum mechanics: the face-trace is exactly the irresolvable symplectic capacity that sources `\hbar` in [THE 2.9A], `\hbar=c_{symp}([J,Y])`.
 
 Forcing (⊥): suppose two of the three forces were a single continuous hyper-field rather than orthogonal strata.  Then a point-trace, a line-trace and a face-trace would share information across dimensions of the chain complex, i.e. some 0-cell datum would be recoverable from 1-cell or 2-cell data on the rigid carrier.  But the simplicial boundary maps of `K(9,11,13)` are exact (rank 3 / nullity 30 with the standard grading), so points, lines and areas are mutually orthogonal as homology classes; recovering one stratum from another would require an exogenous catalog labelling the coincidence — forbidden by M1.  ⊥.  Hence the three forces are *segregated by the strict orthogonality of points, lines and areas in discrete homology*, not by a choice of gauge group.  The same orthogonality is why §02.19.1–.4 can fix gravity-depth, EM-residual and action-section independently without cross-contamination.
 
-Owner: Book 02.  This theorem ties the magnitude cells of §02.19 to the `[J,Y]` commutator of [THE 2.9A] and the `K(9,11,13)` scene owned by BOOK_01 (see BOOK_01 §01.8, the `ABCD × {±} -> Omega8 -> V9` lift).
+Owner: BOOK_02.  This theorem ties the magnitude cells of §02.19 to the `[J,Y]` commutator of [THE 2.9A] and the `K(9,11,13)` scene owned by BOOK_01 (see BOOK_01 §01.8, the `ABCD × {±} -> Omega8 -> V9` lift).
 
 ### 02.19C Electroweak from quaternions and gravity from Hurwitz archive pressure
 
@@ -1721,7 +1721,7 @@ Forcing (⊥): suppose the electroweak group were any group other than `Sp(1)×U
 
 **Gravity as Hurwitz archive pressure [^b02-47].**  Gravity (the 0-skeleton trace of §02.19B) is *not* a gauge force.  It is the macroscopic consequence of Archive pressure stabilizing the 24-cell Hurwitz boundary lattice: the 24 unit Hurwitz quaternions are the rigid boundary packing, and Archive back-pressure (BOOK_08) forces the closed `24 -> 38` cycle transition.  The endpoint `38` is the same action-section coefficient `N_{act}=2(2\gamma-1)=38` derived in §02.19.2; under the Hurwitz reading it decomposes as `38=24+14`, the 24 Hurwitz-lattice units plus the 14-dimensional automorphism closure that rigidifies them, consistent with the Hurwitz-rigid phase generator `2\pi/\varphi^2` of §02.32.  The two decompositions `2(2\gamma-1)` and `24+14` agree because the action section and the boundary packing close the same forward/return cycle; neither replaces the other, and the electron mass still only sets the MeV scale of the single section.
 
-Owner: Book 02.  Downstream books cite [THE 02.19C] for the algebraic origin of `SU(2)×U(1)` and the Hurwitz-pressure origin of gravity; they may not reintroduce the electroweak group as a free input.
+Owner: BOOK_02.  Downstream books cite [THE 02.19C] for the algebraic origin of `SU(2)×U(1)` and the Hurwitz-pressure origin of gravity; they may not reintroduce the electroweak group as a free input.
 ## 02.20 Convex-response coupling theorem
 
 ### 02.20.1 Theorem: D0 bridge closure by response coupling
@@ -2477,7 +2477,7 @@ The proof owners for the following components are:
 
 ## 02.36 Theorem spine for the matter, gauge, gravity and cosmology sectors
 
-Selector uniqueness and concrete Book 04 instances: `chargedLeptonElectronTerminalClaim`,
+Selector uniqueness and concrete BOOK_04 instances: `chargedLeptonElectronTerminalClaim`,
 `electroweakDepth35Claim`, `protonReadout306Claim`,
 `neutronArchiveSiblingClaim`, `betaUnlockDepth19Claim`.
 
@@ -2498,7 +2498,7 @@ The active proof spine maps directly onto the proof owners below.
   - `charged_lepton_coefficient_table_forced`
   - `changed ratio row, exponent row or bridge-factor row is impossible`
 
-- **Book 04 Operator-boundary**:
+- **BOOK_04 Operator-boundary**:
   - `02.36.3b Book 04 operator-boundary closure`
   - `D0.Matter.book04_operator_boundaries_closed`
   - `nucleon_line_cannot_promote_full_baryon_multiplet`

@@ -18,7 +18,7 @@
 
 ## 08.0 Active cosmology/empirical transfer law
 
-Book 08 treats `S_DE` as a two-mode feedback-pressure transfer. Internal transfer closure and survey comparison are separate objects.
+BOOK_08 treats `S_DE` as a two-mode feedback-pressure transfer. Internal transfer closure and survey comparison are separate objects.
 
 ```text
 F_N^(partial) = F_N^(2) + eta_N partial_V F_N
@@ -55,7 +55,7 @@ D0 cosmological terminology is translated as follows: effective boundary respons
 
 ## 08.2 Role of this book
 
-Book 08 is the final transfer/comparison protocol book of the canonical ordering. It is placed after finite detector foundations, mathematical proof spine, action operators, matter selector/readout protocols, verification discipline, runtime/forgetting theory and finite geometry. Its task is not to introduce a new cosmological substance. Its task is to state the internal traced-out-complement (D0: archive) entropy object first and only then state how that frozen object becomes a finite survey observable.
+BOOK_08 is the final transfer/comparison protocol book of the canonical ordering. It is placed after finite detector foundations, mathematical proof spine, action operators, matter selector/readout protocols, verification discipline, runtime/forgetting theory and finite geometry. Its task is not to introduce a new cosmological substance. Its task is to state the internal traced-out-complement (D0: archive) entropy object first and only then state how that frozen object becomes a finite survey observable.
 
 The canonical cosmology chain is
 
@@ -96,12 +96,12 @@ finite support / traced-out quotient / boundary operator
 → external comparison protocol.
 ```
 
-This places cosmology downstream of Books 01--07. Book 08 may use the finite detector support, action section, entropy/forgetting and gravity boundary already defined there; it may not redefine them from survey residuals.
+This places cosmology downstream of Books 01--07. BOOK_08 may use the finite detector support, action section, entropy/forgetting and gravity boundary already defined there; it may not redefine them from survey residuals.
 
 
 ## 08.3.1 Frozen archive cosmology before survey likelihood
 
-The active reading of cosmology is theorem-first. Book 08 has two
+The active reading of cosmology is theorem-first. BOOK_08 has two
 objects, not one:
 
 ```text
@@ -173,11 +173,11 @@ R_N=D_N^\dagger D_N,
 P_N(a)=\frac{\operatorname{Tr}(\Pi_aR_N)}{\operatorname{Tr}(R_N)}.
 ```
 
-Book 08 uses this not to model every telescope, but to require that every cosmological observable has a finite survey-readout comparison protocol.
+BOOK_08 uses this not to model every telescope, but to require that every cosmological observable has a finite survey-readout comparison protocol.
 
 ## 08.6 Archive-pressure operator
 
-The internal effective-pressure operator from the traced-out sector (D0: archive-pressure) is the first Book 08 object:
+The internal effective-pressure operator from the traced-out sector (D0: archive-pressure) is the first BOOK_08 object:
 
 ```math
 \mathsf P_{archive}^{D0}=-\frac{\delta_0^8}{30}\Pi_N.
@@ -320,7 +320,7 @@ The gravity bridge has already fixed the length-depth ordering:
 D_L\rightarrow \ell_P^{D0}\rightarrow G_N^{D0}.
 ```
 
-Therefore Book 08 cannot tune `H_0`, `r_d`, `G_N`, `\Omega_m`, or a new dark scale to repair a survey residual. Cosmological transfer must use fixed internal quantities plus declared external-data comparison.
+Therefore BOOK_08 cannot tune `H_0`, `r_d`, `G_N`, `\Omega_m`, or a new dark scale to repair a survey residual. Cosmological transfer must use fixed internal quantities plus declared external-data comparison.
 
 ## 08.9 Scalar survey amplitude comparison protocol
 
@@ -340,7 +340,7 @@ normalize by the finite survey cycle before external comparison.
 
 ## 08.10 Static coefficient versus dynamic transfer
 
-Book 08 keeps static closure and dynamic transfer separate.
+BOOK_08 keeps static closure and dynamic transfer separate.
 
 A static coefficient has the form
 
@@ -778,7 +778,7 @@ unless a claim explicitly declares its operator, window, external data and falsi
 
 Primordial black-hole formation (if modeled inside D0) must pass through a
 critical echo-lattice / capacity-threshold operator rather than a purely smooth
-density-threshold scalar. See Book 07 §07.49 for the horizon
+density-threshold scalar. See BOOK_07 §07.49 for the horizon
 birth dynamics bridge and §07.50 for the finite A/4 capacity witness.
 
 PBH must combine:
@@ -800,9 +800,9 @@ The allowed use is
 QCD shows how active confinement/archive complement can appear in finite readout; cosmology requires its own typed survey operator.
 ```
 
-## 08.15 Boundary geometry cross-reference from Book 07
+## 08.15 Boundary geometry cross-reference from BOOK_07
 
-Book 07 supplies the finite geometry and boundary conditions:
+BOOK_07 supplies the finite geometry and boundary conditions:
 
 ```math
 \text{finite line covariance}
@@ -816,11 +816,11 @@ D_L
 G_N^{D0}.
 ```
 
-Book 08 uses that boundary structure only after it has been fixed. Survey data cannot choose the gravity boundary operator.
+BOOK_08 uses that boundary structure only after it has been fixed. Survey data cannot choose the gravity boundary operator.
 
 ## 08.16 Observable-transfer discipline and falsification summary
 
-Book 08 separates internal archive cosmology from survey comparison.
+BOOK_08 separates internal archive cosmology from survey comparison.
 
 Internal side:
 
@@ -854,12 +854,12 @@ The cross-book boundary is:
 | dependency | owner role |
 |---|---|
 | finite support and response | Books 01--02 |
-| single action section | Book 03 |
-| matter-sector external comparison protocols | Book 04 |
-| certificate and negative-control discipline | Book 05 |
-| time, forgetting and finite runtime | Book 06 |
-| heat-capacity gravity and boundary saturation | Book 07 |
-| effective boundary response of the traced-out sector, S_DE and survey transfer | Book 08 |
+| single action section | BOOK_03 |
+| matter-sector external comparison protocols | BOOK_04 |
+| certificate and negative-control discipline | BOOK_05 |
+| time, forgetting and finite runtime | BOOK_06 |
+| heat-capacity gravity and boundary saturation | BOOK_07 |
+| effective boundary response of the traced-out sector, S_DE and survey transfer | BOOK_08 |
 
 The BAO/S_DE pipeline is an observable-transfer claim. If a data file is missing from the clean archive, that is a reproducibility dependency, not an internal theorem failure.
 ## 08.31.1 Smooth macro-geometry and archive covariance
@@ -1022,7 +1022,7 @@ external survey comparison last;
 no survey residual may select a new D0 primitive.
 ```
 
-This is parallel to the Book 04 selector rule.  External cosmological data may falsify a declared transfer, but they may not choose the traced-out complement operator after the fact.
+This is parallel to the BOOK_04 selector rule.  External cosmological data may falsify a declared transfer, but they may not choose the traced-out complement operator after the fact.
 
 
 ## 08.41 Reproducibility split closure
@@ -1055,7 +1055,7 @@ advertised as reproducible without a nonempty manifest; and that a survey
 likelihood cannot promote to core cosmology — blocking the strongest overclaim,
 that a likelihood agreement is a new D0 core theorem.
 
-Book 08 is therefore a split between frozen finite cosmology and external reproducibility protocol, not a list of cosmological external comparison protocols.
+BOOK_08 is therefore a split between frozen finite cosmology and external reproducibility protocol, not a list of cosmological external comparison protocols.
 
 Cosmological acceleration/entropy flow uses the archive entropy layer.  It must
 go through the entropic archive interface, not import continuum GR as primitive.
@@ -1382,7 +1382,7 @@ B(s)=B_0+A_0(1-e^{-s\log\varphi}).
 
 Status: `LAB-BRIDGE / TABLETOP-PASSPORT-SEED`.
 
-The dusty-plasma bridge is useful for Book 08 because it demonstrates how an active medium can deform the observed channel. This supports a conservative interpretation of negative fixed-ratio detector-frame searches: a raw external observable may fail even when the underlying active/archive mechanism remains meaningful, because the detector medium participates in the transfer.
+The dusty-plasma bridge is useful for BOOK_08 because it demonstrates how an active medium can deform the observed channel. This supports a conservative interpretation of negative fixed-ratio detector-frame searches: a raw external observable may fail even when the underlying active/archive mechanism remains meaningful, because the detector medium participates in the transfer.
 
 No cosmological conclusion is promoted from this laboratory analogy. The bridge forbids the claims `TABLETOP-QG-PROVED`, `ISOMORPHISM-CLOSED`, and `CORE-CLOSED`. A tabletop experiment may become an empirical passport only after a frozen protocol, off-source/negative controls, and non-retuned prediction targets.
 ## 08.51 The archive phason: a forced gapless dark mode
@@ -1420,7 +1420,7 @@ a monotonically *decreasing* sequence `[φ, 1, φ⁻¹·…] → +φ⁻¹` (cert
 
 **Update (Iteration 22 five-front strike — the sign is Galois-forced).** Step (b) above is now resolved **at the sign level**. The positive internal archive ratio (`w_N → +φ⁻¹`) and the negative physical `w_DE` are related by the **Galois conjugation** `σ : φ ↦ ψ` of `ℚ(φ)/ℚ`: the archive and retained sectors are the two Galois-conjugate sectors (`D0.Dynamics.GaloisConjugateBalance`; `φ·ψ = −1`, `ψ < 0`). Applying `σ` to the positive ratio gives `σ(φ⁻¹) = ψ⁻¹ = −φ < 0` — the negative sign is **forced by the field automorphism, not inserted by hand**, and it is the specific conjugate value `−φ`, provably distinct from the naive negation `−φ⁻¹` (Lean `D0.Cosmology.PhasonWDESignNormalization`, cert `vp_phason_wde_sign_normalization_owner.py`; `D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`, CERT-CLOSED on the sign). What stays open: the **magnitude/normalization** `|w_DE|` (`D0-PHASON-WZ-EXPLICIT-FUNCTION-001`, PROOF-TARGET) and, at the time of this sign result, the explicit log-det window roots `λ_c, λ_r` (`D0-PHASON-WZ-LOGDET-WINDOW-OWNER-001`, PROOF-TARGET). The later log-det window result is recorded below. The CPL `(w₀, w_a)` reading is a downstream passport (`D0-PHASON-WZ-CPL-PASSPORT-001`, PASSPORT-CLOSED): a survey may compare, never define `w_D0`.
 
-**[Iter22 eight-front]** Front F4 (phason EOS, archive-capacity redshift) now carries a narrow CERT-CLOSED finite-window owner. The redshift map 1+z=phi^n is proved a strict monotone bijection on the integer/rational samples (phi>1), and the integer-window archive ratio w_N=phi^(n-1)/(phi^n-1) is shown well-defined on n>=1 (energy phi^n-1>0; n=0 is the excluded division pole), strictly DECREASING in n, with exact Z[phi] values w_N(1)=phi, w_N(2)=1 (cert verifies n=1..8 symbolically). The load-bearing honesty correction is recorded as a theorem: the limit phi^-1 is the n->inf (z->inf, EARLY-time) limit, sitting strictly BELOW the small-z window edge w_N(1)=phi; it is explicitly NOT the late-time z->0 dark-energy value (w_N diverges as z->0). No survey datum (DESI/CPL/H0) enters; the construction is internal Z[phi]. The physical dark-energy reading remains open as the new PROOF-TARGET D0-PHASON-WDE-Z-MAP-OWNER-001, whose two missing artifacts are named: a proven continuum interpolation w_N -> w_D0(u), plus the magnitude/sign normalization onto physical negative w_DE on the late-time window. Lean: D0.Cosmology.PhasonArchiveCapacityRedshift (theorem phason_archive_capacity_redshift); cert: `vp_phason_archive_capacity_redshift.py`.
+**[Iter22 eight-front]** Front F4 (phason EOS, archive-capacity redshift) now carries a narrow CERT-CLOSED finite-window owner. The redshift map 1+z=phi^n is proved a strict monotone bijection on the integer/rational samples (phi>1), and the integer-window archive ratio w_N=phi^(n-1)/(phi^n-1) is shown well-defined on n>=1 (energy phi^n-1>0; n=0 is the excluded division pole), strictly DECREASING in n, with exact Z[phi] values w_N(1)=phi, w_N(2)=1 (cert verifies n=1..8 symbolically). The load-bearing honesty correction is recorded as a theorem: the limit phi^-1 is the n->inf (z->inf, EARLY-time) limit, sitting strictly BELOW the small-z window edge w_N(1)=phi; it is explicitly NOT the late-time z->0 dark-energy value (w_N diverges as z->0). No survey datum (DESI/CPL/H0) enters; the construction is internal Z[phi]. At this stage the physical dark-energy reading was a PROOF-TARGET, D0-PHASON-WDE-Z-MAP-OWNER-001, with two missing artifacts named: a proven continuum interpolation w_N -> w_D0(u), plus the magnitude/sign normalization onto physical negative w_DE on the late-time window. Lean: D0.Cosmology.PhasonArchiveCapacityRedshift (theorem phason_archive_capacity_redshift); cert: `vp_phason_archive_capacity_redshift.py`. The current registered status of the physical z-map is NO-GO with an external passport: the positive internal continuum and sign are settled, while the physical magnitude profile is not forced.
 
 **[Phason magnitude maximality].** The dark-energy sign is Galois-forced negative (retained reading -phi, `D0-PHASON-WDE-SIGN-NORMALIZATION-OWNER-001`), but the magnitude map z->w_DE(z) is NOT present-core forced: two admissible maps (w1=-phi-z, w2=-phi-2z) respect every owned invariant (negative, anchor -phi at z=0) yet differ at z=1 (`D0-PHASON-MAGNITUDE-MAXIMALITY-NOGO-001`, Lean `D0.Cosmology.PhasonMagnitudeMaximalityNoGo`). The magnitude needs an external physical-branch passport (DESI/CPL); the sign owner is untouched.
 

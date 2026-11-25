@@ -17,7 +17,7 @@
 
 ## 04.0 Active matter sector law
 
-Book 04 is a sector law, not a list of disconnected particle claims. A D0 matter candidate is a terminally projected near-critical feedback mode:
+BOOK_04 is a sector law, not a list of disconnected particle claims. A D0 matter candidate is a terminally projected near-critical feedback mode:
 
 ```text
 F_N psi_j = r_j psi_j
@@ -104,7 +104,7 @@ D0.Matter.ChargeQuantizationH1Forcing
 
 ### Integer projection forces the Lucas trace selector
 
-Book 04 scales live in `Q(phi)`; every scale is a power `phi^k`, which is irrational. Interaction ("exchange of portions") requires a *whole* number of portions. The integer-projection problem [^b04-10]: how to extract an integer `N` from `phi^k` without an arbitrary `Round()` threshold — a `Round()` would import an external rounding catalog, forbidden by M1.
+BOOK_04 scales live in `Q(phi)`; every scale is a power `phi^k`, which is irrational. Interaction ("exchange of portions") requires a *whole* number of portions. The integer-projection problem [^b04-10]: how to extract an integer `N` from `phi^k` without an arbitrary `Round()` threshold — a `Round()` would import an external rounding catalog, forbidden by M1.
 
 The unique catalog-free answer is the algebraic trace [^b04-11]:
 
@@ -151,7 +151,7 @@ The S3 carrier/symmetrizer scaffold is certified. Physical spin/flavour/mass ass
 
 ### Selector support origin
 
-Book 04 support sizes must come from finite combinatorics, not detached fixtures:
+BOOK_04 support sizes must come from finite combinatorics, not detached fixtures:
 
 ```text
 combinatorial origin of the supports
@@ -200,7 +200,7 @@ The three boundaries are machine-checked no-gos in `D0.Matter.Book04OperatorBoun
 
 ## 04.1 Role of the matter book
 
-Book 04 is the first place where the finite D0 construction is read as matter.  The detector, condensed support, graph birth, action gate and proof calculus are already fixed in Books 01--03.  Therefore the matter book is not allowed to introduce new primitive scales, new post-hoc labels or a fitted particle table.
+BOOK_04 is the first place where the finite D0 construction is read as matter.  The detector, condensed support, graph birth, action gate and proof calculus are already fixed in Books 01--03.  Therefore the matter book is not allowed to introduce new primitive scales, new post-hoc labels or a fitted particle table.
 
 The canonical matter chain is:
 
@@ -457,19 +457,19 @@ PDG names, GeV conversion, physical mass assignment and decay widths remain pass
 
 The active matter claims use the following proof owners.
 
-| Function in Book 04 | Owner |
+| Function in BOOK_04 | Owner |
 |---|---|
 | normalized finite readout | `D0.finite_born_readout_unique_on_finite_outcomes` |
 | no alternative response readout | `D0.finite_born_no_alternative_readout` |
 | strict finite variational selector uniqueness | `D0.Matter.StrictSelectorCertificate`; `D0.Matter.strict_selected_unique` |
 | finite variational selector cannot change without score deformation | `D0.Matter.different_selection_requires_score_change` |
-| Book 04 sector finite variational selector contract | `D0.Matter.Book04SelectorClaim`; `D0.Matter.book04_selector_claim_no_free_alternative` |
+| BOOK_04 sector finite variational selector contract | `D0.Matter.Book04SelectorClaim`; `D0.Matter.book04_selector_claim_no_free_alternative` |
 | concrete charged terminal finite variational selector | `D0.Matter.chargedLeptonElectronTerminalClaim`; `D0.Matter.charged_lepton_terminal_no_free_alternative` |
 | full-support electroweak depth finite variational selector | `D0.Matter.electroweakDepth35FullSupportClaim`; `D0.Matter.electroweak_depth35_full_support_no_free_alternative` |
 | full-support proton readout finite variational selector | `D0.Matter.protonReadout306FullSupportClaim`; `D0.Matter.proton_readout306_full_support_no_free_alternative` |
 | concrete neutron/archive finite variational selector | `D0.Matter.neutronArchiveSiblingClaim`; `D0.Matter.neutron_archive_sibling_no_free_alternative` |
 | full-support beta unlock finite variational selector | `D0.Matter.betaUnlockDepth19FullSupportClaim`; `D0.Matter.beta_unlock_depth19_full_support_no_free_alternative` |
-| Book 04 operator boundary no-go | `D0.Matter.Book04OperatorBoundaryClosed`; `D0.Matter.book04_operator_boundaries_closed` |
+| BOOK_04 operator boundary no-go | `D0.Matter.Book04OperatorBoundaryClosed`; `D0.Matter.book04_operator_boundaries_closed` |
 | CKM matrix unique after bases fixed | `D0.Matter.ckm_no_free_matrix_at_fixed_bases` |
 | CKM basis-origin finite variational selector theorem | `D0.Matter.ckm_origin_candidate_matrix_unique`; `D0.Matter.ckm_no_free_matrix_at_fixed_basis_origin`; `D0.Matter.concreteCKMBasisOrigin` |
 | generation overlap response origin | `D0.Geometry.TorusCore13GeometryOrigin`; `D0.Matter.GenerationSelectorOrigin`; `D0.Matter.GenerationOverlapResponseOrigin`; `D0.Matter.torus_geometry_forces_generation_selector_noncommute`; `D0.Matter.torus_shell_noncommutativity_forces_nonpermutation_overlap_source` |
@@ -511,11 +511,11 @@ The `30`‑fold degeneracy is *why* the archive sector reads as a single undisti
 
 **[DEF] Canonical φ‑rescaling of scene eigenvalues [^b04-22].** The only dimensionless scale already forced (BOOK_01/BOOK_02, from `p + p² = 1`) is `φ`. Canonically reduce any scene eigenvalue by `tilde‑λ := λ / φ`, equivalently read the rescaled operator `G := φ^(−1) L_sym`. No new normalization parameter is introduced — `φ` is the sole admissible scale inside `ℚ(φ)`. Under this rescaling the bulk band sits at `tilde‑λ = 1/φ ≈ 0.6180339887` (×30), and the two active modes at `(3/2 − √10/40)/φ ≈ 0.878184…` (scalar) and `(3/2 + √10/40)/φ ≈ 0.975910…` (vector). The two `L_part` eigenvalues are now pinned to **exact closed form**: `3/2 ± √10/40`, the roots of `160λ² − 480λ + 359` — forced because the reduced off‑diagonal operator `S` (zero diagonal) has `det(S) = 2·(9·11·13)/√(528·440·480) = 2574/10560 = 39/160` (with `√(528·440·480) = 10560` exact), so `λ₁+λ₂ = 3` (trace) and `λ₁λ₂ = 2 + det(S) = 359/160`. This is a theorem (claim `D0-SCENE-ACTIVE-EIGENVALUES-001`, cert `vp_scene_active_eigenvalues_exact.py`, Lean `D0.Geometry.SceneActiveEigenvalues`). Correction: the earlier numerical readouts `1.420838…` / `1.579158…` were slightly inaccurate — they summed to `2.999997… ≠ 3`, whereas the exact eigenvalues `1.42094306…` / `1.57905694…` sum to `3`.
 
-This spectral split is the object the rest of Book 04 reads matter off of: the active pair drives the visible (transport) sector, the 30‑fold band is the archive the selector charges against, and the φ‑rescaling is what lets later sections compare a scene eigenvalue to a forced constant without smuggling in an external unit.
+This spectral split is the object the rest of BOOK_04 reads matter off of: the active pair drives the visible (transport) sector, the 30‑fold band is the archive the selector charges against, and the φ‑rescaling is what lets later sections compare a scene eigenvalue to a forced constant without smuggling in an external unit.
 
 ## 04.3 Matter objects are selectors, not passports
 
-Book 04 separates three different things: internal finite objects, dressed Standard-Model comparison values and external data checks. A matter object is admitted only through one of the following forms:
+BOOK_04 separates three different things: internal finite objects, dressed Standard-Model comparison values and external data checks. A matter object is admitted only through one of the following forms:
 
 1. **Finite support theorem.**  The carrier/support object is proved inside the finite D0 formalism.
 2. **Finite response theorem.**  A positive or quadratic response is normalized by the finite Born/readout theorem.
@@ -697,6 +697,8 @@ which BOOK_01 owns as the scene 1-skeleton edge count (cite, not re-derived here
 
 [^b04-33] — the primality→rigidity→discrete-defect chain is stated as a forcing argument; the executable certificate that checks "359 prime ⇒ no continuous internal gauge orbit on the edge carrier" is not yet present and must not be cited until it exists.
 
+The preceding rigidity argument is a forcing reading whose proposed certificate is still absent, as the note states. Separately, `D0-EDGE359-SCENE-SELECTION-NOGO-001` proves that the edge count alone does not select this scene; that finite result does not prove the primality-to-rigidity step.
+
 ### 04.5.2 The 359 ceiling is a distinguishability limit, not a normalization
 
 Elsewhere `359` appears as the count feeding `alpha_top` normalization. The sharper forcing reading is what makes `359` a *limit* rather than a tally:
@@ -704,6 +706,8 @@ Elsewhere `359` appears as the count feeding `alpha_top` normalization. The shar
 > The coherent-channel address space has cardinality exactly `359`. Injectively encoding more than `359` independent phase trajectories in one coherent cluster is impossible: addresses collide, and address collision is decoherence.
 
 This is a hard distinguishability ceiling in the sense of M1 — beyond `359` the cluster can no longer distinguish its own channels without an external catalog, which M1 forbids, so the encoding collapses. The edge count is therefore simultaneously the geometric 1-skeleton size and the coherent-address capacity; the two coincide because both are the same finite distinguishability budget. [^b04-38]
+
+The ceiling argument takes the stated coherent-channel address model and the identification of address collision with decoherence as premises. The edge count alone supplies the finite cardinality.
 
 ### 04.5.3 Companion embedding: the leakage/branching exponents are intrinsic
 
@@ -804,7 +808,7 @@ nonnegative detector state R(s);
 raw responses r_i = Σ_s E_i(s)R(s).
 ```
 
-Only then may Book 04 write
+Only then may BOOK_04 write
 
 ```math
 P(i)=\frac{r_i}{\sum_jr_j}.
@@ -826,7 +830,7 @@ This changes how matter claims are allowed to be written.  A particle table cann
 P_q(i)=\frac{r_i^q}{\sum_jr_j^q}
 ```
 
-is not a second D0 law.  At fixed response, it must collapse to the Born weight or fail the response-recovery equation.  Therefore Book 04 can no longer hide weak particle claims behind alternative weighting conventions.
+is not a second D0 law.  At fixed response, it must collapse to the Born weight or fail the response-recovery equation.  Therefore BOOK_04 can no longer hide weak particle claims behind alternative weighting conventions.
 
 ### 04.6.π The structural angle `π_0` is forced, not measured
 
@@ -951,9 +955,9 @@ with `R` the dimensionless history scale (nodes/layers in the observer window). 
 **[THE 04.6.M1.time] Heat-trace monotonicity ⇒ time arrow [^b04-74]. [^b04-52].** A merge `A+B→C` is information-irreversible; reversing it requires knowing which `A,B` produced `C`, which must be stored in an external backup of the past.  The universe is autonomous (no external disk), so by M1 the past information is erased into heat/gravity and the chosen functional (heat-trace / diffusion entropy) is monotone under admissible dynamics.  Any model where this functional is non-monotone without external pumping is excluded as non-reproducible.  (`Tr(Tⁿ)=(−1)ⁿL_n` and the heat-trace channel are owned by BOOK_06; the matter-book contribution here is the no-external-backup forcing.)
 ## 04.7 Electroweak radial depth as a concrete finite variational selector
 
-The matter sector inherits the single action section from Book 03.  Electroweak quantities are therefore read as finite radial depths and comparison outputs, not as independent primitive constants.
+The matter sector inherits the single action section from BOOK_03.  Electroweak quantities are therefore read as finite radial depths and comparison outputs, not as independent primitive constants.
 
-The depth-35 reading has an explicit Book 04 finite variational selector owner:
+The depth-35 reading has an explicit BOOK_04 finite variational selector owner:
 
 ```text
 D0.Matter.electroweakDepth35FullSupportClaim
@@ -1299,6 +1303,8 @@ Status: NO-GO (by contradiction, DEF 0.2.2). Four generations are forbidden: the
 
 This is an *arity* closure only: it fixes how many angles and phases exist and forbids a fourth generation. It does NOT pin the numerical angles, the CP phase value, or RG-dressed passport entries — those remain downstream of the external convention/RG/readout layer (see the closing scope note).
 
+The fourth-generation chain above uses the extra-interface and new-necessity-type steps as premises. The full no-fourth-zone owner `D0-TOWER-STOP-NOEXT-001` remains PROOF-TARGET until the new-type semantic exhaustivity joint is proved.
+
 ### CKM <-> PMNS hierarchy inversion is rank-nullity, zero parameters
 
 The same scene that fixes the arity also explains, with zero free parameters, one of the standing unexplained facts of the Standard Model: why quarks mix *weakly* and leptons mix *strongly*. The split is rank-nullity of the scene adjacency operator A (rank(A)=3, nullity=30; the bare rank/nullity bookkeeping is owned by BOOK_01 and BOOK_03 — here it is the load-bearing flavor statement, not gauge bookkeeping):
@@ -1312,6 +1318,8 @@ neutrinos       -> sterile traced-out complement (D0: archive): kernel 30-fold d
 ```
 
 Status: THE (zero-parameter). Strong lepton mixing vs. weak quark mixing is a consequence of the rank-3 / nullity-30 split of the scene, with no fitted parameter: a non-degenerate spectrum forces a hierarchical (Fadeev-N / FN-style) basis whose overlaps are small, while a 30-fold degenerate kernel is rotation-invariant, so its diagonalizing basis is unconstrained and the overlap is generically large [^b04-102]. The CKM-side reading: CKM is small *because* the up/down bases below sit in the non-degenerate active sector — smallness is inherited from the spectrum, not imposed.
+
+The preceding hierarchy reading is qualitative. `D0-CKM-DAVIS-KAHAN-GAP-BOUND-001` bounds mixing given a source mismatch and an isolated gap, while `D0-CKM-OVERLAP-UNDERDETERMINATION-NOGO-001` records the missing canonical basis completion.
 
 ### The two-step finite object
 
@@ -1376,6 +1384,8 @@ phase/permutation quotient.
 ```
 
 It is not an internal free parameter and it is no longer merely a matrix theorem after hand-picked bases.  What remains open is narrower: the physical CKM passport must evaluate the frozen origin object without post-hoc permutation, with concrete physical score terms declared before comparison, and any comparison to observed CKM entries must still pass through the external convention/RG/readout layer.
+
+The preceding statement is conditional on the specified fixed origin and basis data. The basis-completion no-go below retains the additional internal selector obligation.
 
 **Deep-stitch status (Iteration 22): CKM class-5 parity exclusion is an honest PROOF-TARGET (parity alone is insufficient).** Finite arithmetic on `(ℤ/44)*` gives `|·|=φ(44)=20`, subgroup orders `{1,2,4,5,10,20}`, class-5 odd, shell step `+2` even, `det(T)=−1`. But the Lean lemma `parity_only_does_not_witness_obligation` **proves** that parity alone cannot separate class 5 from class 1 (same parity fibre), so the proposed parity/orientation exclusion is **not** a rigorous contradiction. The exact missing artifact is a formal orientation-parity selector `sel(order,step,det)` landing class 5 (not 20/1) in a forbidden coset; class-20 stays allowed and no measured CKM angle is used. Owner: `D0-CKM-CLASS5-PARITY-EXCLUSION-001` (PROOF-TARGET), Lean `D0.Matter.CKMClass5ParityExclusion`, cert `vp_ckm_class5_parity_exclusion.py`.
 
@@ -1844,7 +1854,7 @@ external carrier data
 
 The internal D0 target is a finite orientation/generation index.  The external construction is useful only if it realizes the D0 admissibility filter without adding hidden scales or fitted flux choices.  It cannot choose D0 signs, multiplicities or mass readouts.
 
-## 04.19 Claim classification for the active matter book
+## 04.19 Bare invariants and dressed comparison values
 
 The D0 matter sector distinguishes a bare finite invariant from a dressed comparison value.
 
@@ -1878,7 +1888,7 @@ New particles, hidden thresholds, hidden dark-sector fields or fitted beta-funct
 
 ## 04.20 Claim classification for the active matter book
 
-Book 04 uses the following classification.
+BOOK_04 uses the following classification.
 
 | Sector | Active reading |
 |---|---|
@@ -1897,7 +1907,7 @@ Book 04 uses the following classification.
 
 ## 04.21 Falsification rules
 
-A Book 04 claim fails if any of the following occurs:
+A BOOK_04 claim fails if any of the following occurs:
 
 1. a mass/mixing number is obtained by direct support reading without a transfer operator;
 2. a finite variational selector output changes without a declared score deformation;
@@ -1911,7 +1921,7 @@ A Book 04 claim fails if any of the following occurs:
 
 ## 04.22 Remaining matter operator frontiers
 
-All internal carriers, projectors, and typed operators for baryon 40/56 + anonymous poles, meson transfer, Higgs scalar projector, and Yukawa section are closed at the finite level (see closure classes in Book 05).
+All internal carriers, projectors, and typed operators for baryon 40/56 + anonymous poles, meson transfer, Higgs scalar projector, and Yukawa section are closed at the finite level (see closure classes in BOOK_05).
 
 Remaining work is exclusively external numerical spectroscopy / Yukawa / PDG comparison (passport-layer only).
 
