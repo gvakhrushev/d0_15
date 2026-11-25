@@ -520,13 +520,13 @@ Book 04 separates three different things: internal finite objects, dressed Stand
 1. **Finite support theorem.**  The carrier/support object is proved inside the finite D0 formalism.
 2. **Finite response theorem.**  A positive or quadratic response is normalized by the finite Born/readout theorem.
 3. **Strict finite variational selector certificate.**  A finite candidate family and score function select a unique internal object.
-4. **Basis-origin theorem.**  The up/down operator bases must themselves be outputs of finite basis finite variational selectors.  After those finite variational selectors are fixed, the mismatch matrix is unique up to declared quotient symmetries.
+4. **Basis-origin theorem.**  The up/down operator bases must themselves be outputs of finite-basis variational selectors.  After those finite variational selectors are fixed, the mismatch matrix is unique up to declared quotient symmetries.
 5. **Observable-transfer protocol.**  A frozen D0 object is compared to an external convention through a declared bridge.
 6. **No-go.**  The frozen operator family is insufficient to promote a claim.
 
 The word `finite variational selector` is therefore not a stylistic label.  It means a finite candidate set, a score functional and a strict minimizer/maximizer whose uniqueness is protected by the finite variational selector theorems.  Changing the selected object means changing the score functional, not changing a status table.
 
-The quasicrystal matter ontology used later in this book is summarized in 04.4: matter is read as defects, domain walls, holonomies, window weights and K0 gap-labeled spectra over the φ-quasicrystalline tiling hull. This ontology organizes the sector owners; it does not bypass the finite variational selector/readout/passport rules above.
+The quasicrystal matter ontology used later in this book is summarized in 04.4: matter is read as defects, domain walls, holonomies, window weights and K0 gap-labeled spectra over the φ-quasicrystalline tiling hull. This ontology organizes the sector owners; it does not bypass the variational selector, readout and passport rules above.
 
 ## 04.4 Matter as defects and gap-labeled spectra over the φ-quasicrystalline hull
 
@@ -1149,7 +1149,7 @@ The active candidate family is the three terminal charged branches
 \mathcal G_\ell=\{e,\mu,\tau\}.
 ```
 
-The finite variational selector/action data are no longer an unowned coefficient table. The active charged-lepton coefficient owner is
+The variational selector and action data are no longer an unowned coefficient table. The active charged-lepton coefficient owner is
 
 ```text
 D0.Matter.ChargedLeptonCoefficientOrigin
@@ -1875,7 +1875,7 @@ Book 04 uses the following classification.
 | Sector | Active reading |
 |---|---|
 | photon | massless line carrier; core readout |
-| charged leptons | finite variational selector/action family; external mass comparison after electron section |
+| charged leptons | variational selector and action family; external mass comparison after electron section |
 | neutrinos | neutral leakage support; one-anchor oscillation bridge only |
 | CKM | finite up/down basis-origin finite variational selectors; D0 ordinal/adjacency generation finite variational selectors force noncommuting overlap origin; no free matrix at fixed origin; numerical passport remains downstream |
 | generation multiplicity | finite three-generation theorem |
@@ -1931,9 +1931,9 @@ The CKM block is more than "basis finite variational selectors determine a matri
 
 Positive Higgs/Yukawa promotion has only one admissible form: `D0.Matter.HiggsYukawaCorePromotion`, carrying `D0.Matter.HiggsScalarProjectorCertificate`. A constructive scalar projector closure is mathematically required.
 
-## 04.24 Final finite variational selector-origin closures
+## 04.24 Final variational selector-origin closures
 
-The finite variational selector-origin layer is locked. The active closures and certificates are:
+The variational selector-origin layer is locked. The active closures and certificates are:
 
 - **Charged-Lepton Coefficient**:
   - `D0.Matter.ChargedLeptonCoefficientOrigin`

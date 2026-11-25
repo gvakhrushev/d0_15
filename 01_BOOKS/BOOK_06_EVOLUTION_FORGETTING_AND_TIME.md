@@ -371,7 +371,7 @@ The D0 internal units may be represented by the normalized section
 \ell_0^{D0}=1,\qquad \tau_0^{D0}=1,\qquad c_{D0}=\frac{\ell_0^{D0}}{\tau_0^{D0}}=1.
 ```
 
-This is not a claim that laboratory SI units are trivial.  It is the internal statement that one line-step and one discrete evolution step-step form a single causal section before external metrology is attached.  The Lean owner records the internal cone speed as a dimensionless invariant of the normalized kinematic gauge.  SI light speed is therefore a metrological export, not a fitted D0 core parameter.
+This is not a claim that laboratory SI units are trivial.  It is the internal statement that one line-step and one discrete evolution step form a single causal section before external metrology is attached.  The Lean owner records the internal cone speed as a dimensionless invariant of the normalized kinematic gauge.  SI light speed is therefore a metrological export, not a fitted D0 core parameter.
 
 The physical export of the discrete evolution step convention is handled by the matter/metrology books. The terminal relation
 
@@ -383,7 +383,7 @@ enters Book 06 only as a cross-reference: the coefficient `38` (the action cycle
 
 ### The arrow is forced, not assumed
 
-The causal section above orders registrations but does not yet say *why* the order has a preferred direction. In D0 the arrow of time is not a phenomenological postulate added on top of the section; it is forced. Three independent routes converge on the same direction, and the convergence is the point — no single one is fitted. Audited bound: the route ledger counts two load-bearing routes, not three. `02_REGISTRY/forcing_routes.json` records a shared premise for the golden-quadratic pair.
+The causal section above orders registrations but does not yet say *why* the order has a preferred direction. In D0 the arrow of time is not a phenomenological postulate added on top of the section; it is forced. The discussion below presents three routes toward the same direction. The audited route ledger counts two load-bearing routes, with a shared premise for the golden-quadratic pair recorded in `02_REGISTRY/forcing_routes.json`.
 
 **Route 1 — unique reproducible assembly order [^b06-15].** The observable scene is assembled from two non-commuting role operators: `Y` (compactification / shell-fold of the outer scene into the effective 4D projection) and `J` (defect localization). The composites differ. Applying `Y` then `J` localizes the defect *inside* an already-fixed boundary structure, so the observer gets reproducible "objects": `Y∘J` is a repeatable assembly procedure. Applying `J` then `Y` localizes "out of boundary context" and the subsequent fold turns the result into noise: `J∘Y` is not reproducible.
 
