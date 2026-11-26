@@ -865,11 +865,13 @@ In `D0-PERRON-PHI3-STRUCTURAL-CRITICALITY-001` (`D0.Spectral.PerronPhi3Carrier`)
 
 The former normalization-owner wording is withdrawn.  The definition `c2 := μ2 * log alpha` already contains the target moment, so `logCesaroPhi3_c2_tendsto_mu2` is a correct **calibration identity**, not a derivation of $\mu_2$.  Lean now records this explicitly as `perron_phi3_calibration_is_normalized`.  The one remaining internal question is `D0-PERRON-PHI3-NORMALIZATION-ORIGIN-001`: derive $c$ from frozen D0 data without inserting $\mu_2$; otherwise the residue normalization stays at the existing external Dixmier/Wodzicki passport boundary.
 
-**[Solid $\mathbb{Z}[\varphi]^\blacksquare$ modules and cyclotomic trace representation (`D0-SOLID-PHI-CYCLOTOMIC-TRACE-001`)].**
-In `D0.Condensed.SolidPhi`, the condensed mathematics of Clausen–Scholze and Efimov's large categories are applied to bypass the classical $\mathcal{L}^{1,\infty}$ divergence dilemma altogether:
+**[Historical solid $\mathbb{Z}[\varphi]^\blacksquare$ and cyclotomic trace proposal (`D0-SOLID-PHI-CYCLOTOMIC-TRACE-001`, DEPRECATED)].**
+The former proposal described the following construction in `D0.Condensed.SolidPhi`, using condensed mathematics of Clausen–Scholze and Efimov's large categories to address the classical $\mathcal{L}^{1,\infty}$ divergence dilemma:
 1. Over the solid condensed ring $\mathbb{Z}[\varphi]^\blacksquare$, the projective limit of spectral layers $\varprojlim S_N$ is exact and preserves nuclearity.
 2. The cyclotomic trace $\mathrm{trc} : K(\mathbb{Z}[\varphi]) \to TC(\mathbb{Z}[\varphi])$ computes topological cyclic residues directly over the sphere spectrum $\mathbb{S}$.
-3. The rational moment $\mu_2 = 12288/5$ is proved to be a well-defined topological rational invariant without requiring singular logarithmic divergence of operator traces in Banach spaces.
+3. The rational moment $\mu_2 = 12288/5$ is a topological rational invariant without requiring singular logarithmic divergence of operator traces in Banach spaces.
+
+These three items describe the withdrawn proposal and are not established by the cited Lean module. Its current `D0-ZPHI-ARITHMETIC-OWNER-001` owner proves real-interpretation identities for integer pairs and the positivity and definitional value of the rational constant. The legacy theorem `D0.Condensed.SolidPhi.solid_phi_cyclotomic_trace_owner` packages multiplication compatibility and the constant properties. A cyclotomic-trace realization remains `D0-CYCLOTOMIC-MU2-REALIZATION-001` (PROOF-TARGET); no solid-category construction or TC/THH realization is supplied by this module.
 
 ### AF martingale Dirac tower and scene comparison
 

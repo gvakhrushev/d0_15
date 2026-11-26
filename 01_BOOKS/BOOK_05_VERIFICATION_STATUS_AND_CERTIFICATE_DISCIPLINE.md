@@ -14,6 +14,14 @@
 > Scope: Claim classification, proof ownership, certificate discipline, no-go ledger, and promotion rules.
 > Claim discipline: This book decides status; it does not add physical content.
 > External bridges, laboratory analogues, LIGO/GWOSC searches and survey comparisons are not promoted to core closure unless a named theorem/certificate/passport owner is stated.
+
+The generated [book-claim coverage index](../02_REGISTRY/book_claim_coverage.csv)
+lists every registry claim with its release and Lean statuses, declared book,
+Lean module and the books that mention its exact ID. An empty mention field
+indicates that the ID was not found in the book text; it does not classify
+the underlying mathematics or establish whether a result is discussed under
+another name. The registry remains the source of claim status.
+
 ## 05.0 Active closure law and centralized no-go ledger
 BOOK_05 classifies every active claim as core theorem, sector theorem, operator scaffold, bridge law, empirical passport, or no-go theorem; completion means a finite operator plus falsification boundary. `OPERATOR-SCAFFOLD-CERTIFIED` is positive internal carrier closure but not an external physical spectrum; `SPIN-FLAVOUR-CARRIER-CERTIFIED` means a finite spin-flavour carrier and its inclusion/decomposition algebra are certified before external physical labels. `SPIN-FLAVOUR-TRANSFER-CERTIFIED` certifies the spin-flavour transfer layer at the carrier level. `SCALAR-PROJECTOR-CERT-CLOSED`, `YUKAWA-SECTION-CERT-CLOSED` and `MESON-TYPED-TRANSFER-CERT-CLOSED` close the corresponding BOOK_04 operator boundaries at the finite projector/typed-operator level (no second mass anchor, flavour defect only via liftGen, K0 gap labels after freeze).
 

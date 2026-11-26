@@ -60,6 +60,7 @@ jobs:
         run: |
           python tools/test_claim_map_coverage.py
           python 03_FORMALIZATION/tools/check_claim_map_coverage.py
+          python tools/book_claim_coverage.py --check
 
       - name: No proof shortcuts in core, bridges or support modules
         run: python 03_FORMALIZATION/tools/check_no_sorry_in_core.py --all
