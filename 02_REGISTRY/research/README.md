@@ -6,6 +6,12 @@ The [research index](RESEARCH_INDEX.md) maps open interfaces, research owners
 and the provenance of retained packets. The [prioritized synthesis queue](RESEARCH_PRIORITY_2026_11_26.md)
 records the checked snapshot, dependencies and proposed falsification tests.
 
+The [CMB heat-window control](sources/d0_cmb_heat_window_2026_11_26/RESULT_RU.md)
+compares two positive times in the declared heat-weight family at fixed
+`k²=20`. Its exact rational arithmetic is Lean-checked. The exponential
+identification and general monotonicity are recorded as separate analytic
+arguments, and the observable transfer and scale selection remain open.
+
 Earlier same-carrier route correction:
 [the original joint-field-minimum exclusion](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md).
 The configured full source and Einstein/CAR stationary family are preserved,

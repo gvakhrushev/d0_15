@@ -6,6 +6,8 @@ The [prioritized synthesis queue](RESEARCH_PRIORITY_2026_11_26.md) records
 dependencies and falsification tests for the current research snapshot. The
 [certificate inventory](../CERTIFICATE_INVENTORY.md) traces scripts that are
 not named directly in books or claim rows to their known consumers.
+The [CMB heat-window control](sources/d0_cmb_heat_window_2026_11_26/RESULT_RU.md)
+provides an exact two-time check for the declared thermal family.
 
 ## Open interfaces
 
