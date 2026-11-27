@@ -183,6 +183,7 @@ Discrete scene structure, registration channels, and (conditionally) continuum l
 - [7. How to Read (Short Paths)](#7-how-to-read-short-paths)
 - [8. Canonical Repository Layout & Sources of Truth](#8-canonical-repository-layout--sources-of-truth)
   - [Source-of-Truth Rules](#source-of-truth-rules)
+  - [Audit and research navigation](#audit-and-research-navigation)
 - [9. Local Verification & Reproducibility](#9-local-verification--reproducibility)
 - [10. Epistemic Guardrails & Frontier Resolution Strategy](#10-epistemic-guardrails--frontier-resolution-strategy)
 - [Citation & Status](#citation--status)
@@ -466,7 +467,7 @@ Path C: Phenomenology & Stress-Tests (Only after A/B)
 01_BOOKS/           Narrative derivation (read BOOK_00 -> BOOK_09)
 02_REGISTRY/        Single canonical source of truth for all claims, assumptions, and proofs
 03_FORMALIZATION/   Machine-checked Lean 4 library (0 sorry in core)
-04_CERTIFICATES/    Self-contained, executable numerical/combinatorial certificates
+04_CERTIFICATES/    Executable numerical/combinatorial controls and shared helpers
 05_EXPERIMENTS/     Empirical observational passports, pinned survey data, and likelihoods
 tools/              Repository validator, Lean view generator, and test runners
 ```
@@ -476,10 +477,17 @@ tools/              Repository validator, Lean view generator, and test runners
 - **Books explain; they do not define release status.** Formal claim status and proof ownership are governed strictly by `02_REGISTRY/claims.csv`.
 - **Public prose cannot outrun its owner.** README/BOOK/monograph statements must preserve the theorem's actual quantifiers, candidate class, and BRIDGE/NO-GO conditions. A later NO-GO or scope repair overrides older narrative wording; stale stronger prose is a repository defect, not an alternative interpretation.
 - **Lean ownership is explicit.** `D0.All` and `ClaimMap.lean` are machine-generated from registered claims and audited in CI. Hand edits are rejected.
-- **Certificates are reachable evidence.** Every python certificate in `04_CERTIFICATES` must be referenced by an active claim in `claims.csv`.
-- **Research input pins apply to the recorded bytes.** Some replays hash entire book files. A change to a pinned book needs a compatible source snapshot and an explicit check of applicability to the edited text.
+- **Certificate evidence needs a stated owner and scope.** Registered certificates are linked from `claims.csv`. Some other scripts are shared helpers, are consumed by aggregators, or remain standalone controls; their inventory records the distinction. A standalone PASS does not promote a claim.
+- **Research input pins apply to the recorded bytes.** Some replays hash entire book files. Historical book snapshots are supplied to applicable replays in isolated worktrees, with both historical and maintained hashes recorded. Such a replay checks its pinned input, not the current book; the maintained text needs its own validation.
 - **The release tree is immutable under verification.** Executing certificates writes only to temporary `.build/cert_outputs/`; the git working tree remains clean.
 - **Empirical results never silently promote a core theorem.** External data comparisons stay in `05_EXPERIMENTS/` as `PASSPORT-CLOSED` or `PROOF-TARGET`.
+
+### Audit and research navigation
+
+- [Book–claim coverage](02_REGISTRY/book_claim_coverage.csv) maps each registered claim to its declared book and exact ID mentions. An absent ID is a navigation finding, not proof that the underlying content is absent.
+- [Lean reference audit](02_REGISTRY/LEAN_REFERENCE_AUDIT.md) records checked statement scopes and two unresolved declaration names. The automated scan is a non-growth screen, not a namespace or theorem-type proof.
+- [Certificate inventory](02_REGISTRY/CERTIFICATE_INVENTORY.md) and [archive review](02_REGISTRY/ARCHIVE_CERTIFICATE_REVIEW.md) distinguish dependencies, finite checks and unresolved ownership.
+- [Research index](02_REGISTRY/research/RESEARCH_INDEX.md) and [synthesis priorities](02_REGISTRY/research/RESEARCH_PRIORITY_2026_11_26.md) link active interfaces to their evidence and remaining premises.
 
 ---
 
@@ -498,9 +506,17 @@ python tools/validate_repo.py
 # Verify machine-generated Lean views are up to date
 python tools/generate_lean_views.py --check
 
+# Check the book coverage index and the documented Lean-reference baseline
+python tools/book_claim_coverage.py --check
+python tools/audit_lean_claim_references.py
+
 # Syntax check all certificate scripts
 python -m compileall -q tools 04_CERTIFICATES
 ```
+
+The Lean-reference scan reports the two documented unresolved names. Its
+optional `--strict` mode fails until those references are reconciled with
+statements of the required scope.
 
 ### Running Executable Certificates
 
