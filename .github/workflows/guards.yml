@@ -98,6 +98,8 @@ jobs:
           python tools/test_toral_sft_certificate.py
           python tools/test_audit_lean_claim_references.py
           python tools/audit_lean_claim_references.py
+          python -B -O 02_REGISTRY/research/sources/d0_weighted_leakage_2026_11_27/check.py
+          python -B -O 02_REGISTRY/research/sources/d0_s3_action_comparison_2026_11_27/check.py
           python tools/test_research_input_closure.py
           python tools/test_ci_replay_reuse.py
 

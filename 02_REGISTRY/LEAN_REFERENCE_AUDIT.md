@@ -28,6 +28,11 @@ now proves a concrete non-nilpotent example and an unweighted control.
 It does not prove the full weighted-leakage description or resolve the
 missing registry reference.
 
+A [finite S3 action comparison](research/sources/d0_s3_action_comparison_2026_11_27/RESULT_RU.md)
+shows that two actions of the same six-element group can have no injective
+intertwiner. It does not construct Spin(8) triality or the sedenion action,
+and the original triality reference remains unresolved.
+
 `python tools/audit_lean_claim_references.py` scans registry names against
 source declarations with comments and strings excluded. CI checks that the
 documented unresolved set does not grow or silently change. The optional

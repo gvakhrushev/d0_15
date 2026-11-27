@@ -16,6 +16,10 @@ The [weighted differential witness](sources/d0_weighted_leakage_2026_11_27/RESUL
 proves a finite counterexample to universal nilpotency and the unweighted
 control. Its scope is the displayed four-point construction.
 
+The [S3 action comparison](sources/d0_s3_action_comparison_2026_11_27/RESULT_RU.md)
+gives a finite obstruction to inferring equivalence from group identity alone.
+It leaves the concrete Spin(8) triality interface open.
+
 Earlier same-carrier route correction:
 [the original joint-field-minimum exclusion](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md).
 The configured full source and Einstein/CAR stationary family are preserved,
