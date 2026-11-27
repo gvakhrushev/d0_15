@@ -96,6 +96,8 @@ jobs:
           python tools/test_historical_book_inputs.py
           python tools/test_tensor_seam_certificate.py
           python tools/test_toral_sft_certificate.py
+          python tools/test_audit_lean_claim_references.py
+          python tools/audit_lean_claim_references.py
           python tools/test_research_input_closure.py
           python tools/test_ci_replay_reuse.py
 

@@ -22,3 +22,10 @@ cover six of those names across five rows. The remaining two names concern the
 triality and weighted-leakage NO-GO rows, where the available finite statements
 do not establish the original full descriptions. Claim statuses are
 unchanged. [Archive certificate review](ARCHIVE_CERTIFICATE_REVIEW.md)
+
+`python tools/audit_lean_claim_references.py` scans registry names against
+source declarations with comments and strings excluded. CI checks that the
+documented unresolved set does not grow or silently change. The optional
+`--strict` mode exits with a failure while any unresolved reference remains.
+Both modes report the unresolved names. A textual match is a screening result,
+not a check of namespace, theorem type, or proof.
