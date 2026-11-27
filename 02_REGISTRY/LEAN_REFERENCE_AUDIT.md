@@ -23,6 +23,11 @@ triality and weighted-leakage NO-GO rows, where the available finite statements
 do not establish the original full descriptions. Claim statuses are
 unchanged. [Archive certificate review](ARCHIVE_CERTIFICATE_REVIEW.md)
 
+A [finite weighted-differential witness](research/sources/d0_weighted_leakage_2026_11_27/RESULT_RU.md)
+now proves a concrete non-nilpotent example and an unweighted control.
+It does not prove the full weighted-leakage description or resolve the
+missing registry reference.
+
 `python tools/audit_lean_claim_references.py` scans registry names against
 source declarations with comments and strings excluded. CI checks that the
 documented unresolved set does not grow or silently change. The optional

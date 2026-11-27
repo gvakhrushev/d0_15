@@ -12,6 +12,10 @@ compares two positive times in the declared heat-weight family at fixed
 identification and general monotonicity are recorded as separate analytic
 arguments, and the observable transfer and scale selection remain open.
 
+The [weighted differential witness](sources/d0_weighted_leakage_2026_11_27/RESULT_RU.md)
+proves a finite counterexample to universal nilpotency and the unweighted
+control. Its scope is the displayed four-point construction.
+
 Earlier same-carrier route correction:
 [the original joint-field-minimum exclusion](A4D_NATIVE_JOINT_FIELD_MINIMUM_EXCLUSION_2026_10_20.md).
 The configured full source and Einstein/CAR stationary family are preserved,
