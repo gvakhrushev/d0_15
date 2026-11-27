@@ -16,9 +16,12 @@ def main() -> int:
     T = ((0, 1), (1, -1))
     N_tau = ((0, 1), (1, 1))
 
-    assert trace2(T) == -1
-    assert trace2(N_tau) == 1
-    assert trace2(T) != trace2(N_tau)
+    if trace2(T) != -1:
+        raise AssertionError("Unexpected trace for the toral matrix")
+    if trace2(N_tau) != 1:
+        raise AssertionError("Unexpected trace for the golden SFT matrix")
+    if trace2(T) == trace2(N_tau):
+        raise AssertionError("The toral and golden SFT traces must differ")
 
     # The positive replacement is a factor/semiconjugacy or boundary quotient,
     # not a homeomorphism Torus2 ~= raw SFT.
