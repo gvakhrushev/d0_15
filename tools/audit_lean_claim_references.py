@@ -26,8 +26,9 @@ KNOWN_UNRESOLVED = {
 }
 DECLARATION = re.compile(
     r"\b(?:theorem|lemma|def|abbrev|structure|inductive|class|axiom|opaque)"
-    r"\s+([A-Za-z_][A-Za-z0-9_']*)(?![A-Za-z0-9_'])"
+    r"\s+([^\W\d][\w'?!]*(?:\.[^\W\d][\w'?!]*)*)"
 )
+CHARACTER = re.compile(r"'(?:\\(?:u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8}|.)|[^'\\\n])'")
 
 
 def erase_comments_and_strings(source: str) -> str:
@@ -73,6 +74,13 @@ def erase_comments_and_strings(source: str) -> str:
                 break
             result.append(" " * (end - position))
             position = end
+        elif current == "'" and (
+            position == 0
+            or not (source[position - 1].isalnum() or source[position - 1] in "_'")
+        ) and (character := CHARACTER.match(source, position)) is not None:
+            length = character.end() - position
+            result.append(" " * length)
+            position = character.end()
         elif current == '"':
             in_string = True
             result.append(" ")
@@ -89,7 +97,10 @@ def find_unresolved(root: Path) -> tuple[set[tuple[str, str]], int]:
     declarations: set[str] = set()
     for path in (root / "03_FORMALIZATION" / "D0").rglob("*.lean"):
         source = path.read_text(encoding="utf-8")
-        declarations.update(DECLARATION.findall(erase_comments_and_strings(source)))
+        declarations.update(
+            name.rsplit(".", 1)[-1]
+            for name in DECLARATION.findall(erase_comments_and_strings(source))
+        )
 
     unresolved: set[tuple[str, str]] = set()
     checked = 0
