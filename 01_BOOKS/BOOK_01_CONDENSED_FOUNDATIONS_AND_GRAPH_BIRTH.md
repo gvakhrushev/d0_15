@@ -570,9 +570,9 @@ The equation is not selected because it is pretty. It is selected because all co
 
 Thus the primitive assumptions of D0 are the finite detector obligations. The scalar branch equation is the first theorem of those obligations.
 
-### 01.6.1a Two independent forcings of `\varphi` [^b01-27]
+### 01.6.1a Routes to `\varphi` and their shared premises [^b01-27]
 
-The golden ratio is forced from M1 by **two independent routes**, and they agree. Either alone fixes `\varphi`; the agreement is what removes the last suspicion of numerology.
+The original presentation described the following two routes to `\varphi` as independent. The audit below identifies their shared dependence; the later Hurwitz and Jones variants have additional selection premises that must be checked at their stated scope.
 
 **Route A — channel balance (the route above).** Memory of depth 1 admits exactly two channels: direct registration of weight `p`, and the first self-return of weight `p^2`. Exhausting the unit section, `p+p^2=1`, gives `p=\varphi^{-1}`. This is the detector-skeleton derivation of §01.6.
 
@@ -584,16 +584,16 @@ The golden ratio is forced from M1 by **two independent routes**, and they agree
 
 the largest such constant — and this resistance holds at *every* finite truncation depth, so `\varphi` is compatible with the inverse limit of the carrier. A support whose scale ratio were captured by any rational `p/q` would, at some finite stage, be indistinguishable from a periodic catalog entry; only `\varphi` evades capture at all depths.
 
-The two THE derivations meet: the MDL-optimal irrational (Route B) is exactly the fixed point of the depth-1 self-return audit (Route A). The same `\varphi` underwrites the phase generator used later (Hurwitz extremality reappears in §01.21), but here it is forced *from M1 directly*, not assumed for the phase.
+The original account joined the two derivations as follows: the MDL-optimal irrational (Route B) is exactly the fixed point of the depth-1 self-return audit (Route A). The same `\varphi` underwrites the phase generator used later (Hurwitz extremality reappears in §01.21), but here it is forced *from M1 directly*, not assumed for the phase.
 
 **[Route-audit correction, 2026-07 — the independence claimed above did not hold, and has been repaired.]** As stated, Routes A and B are *not* independent, for two reasons found by the route audit and both checkable. First, the sentence immediately above concedes the collapse: Route B's object "is exactly the fixed point of" Route A's audit — `[1;1,1,1,\dots]` is by definition the fixed point of `x = 1 + 1/x`, which is `x^2 - x - 1 = 0` multiplied through by `x`. Second, and decisively, the *formal* owner made the dependency literal: `D0.NumberTheory.HurwitzMinimaxPhi` quantifies over `D0PhaseGeneratorAdmissible \alpha := \exists x, D0ResponseRoot x \wedge \alpha = x^2` with `D0ResponseRoot x := 0 < x \wedge x + x^2 = 1` — it maximises *inside Route A's own equation family*, so the "second route" imported the first route's conclusion as a hypothesis. Two further facts sharpen this: Hurwitz extremality selects the whole `GL(2,\mathbb Z)` **noble class**, not a number (`\varphi`, `1/\varphi`, `2+\varphi`, `(\varphi+1)/(\varphi+2)` all attain `1/\sqrt5`), and for a quadratic irrational `\liminf q^2|\alpha - p/q| = 1/\sqrt{\mathrm{disc}}`, so the extremality carries no information beyond the minimal polynomial.
 
-**The repaired pair.** Two routes now reach `\varphi` with the golden quadratic as the *output* rather than a hypothesis, and they share no load-bearing premise:
+**Conditional variants.** In the displayed finite arithmetic for `\varphi`, the golden quadratic is an *output* rather than a hypothesis. Whether the two routes are independent in the complete D0 argument depends on their additional selection premises:
 
 - **Hurwitz + `M1^+` canonization** (`D0-PHI-HURWITZ-CLASS-CANONIZATION-001`). Hurwitz, over *all* reals, selects the noble class; `M1^+` then selects its representative by minimal description. Within the period-one continued fractions `[n;n,n,\dots]` — roots of `x^2 - n x - 1`, discriminant `n^2+4` — minimal description selects `n = 1` uniquely, giving discriminant `5` and `(1+\sqrt5)/2`. At `n = 1` the equation `x^2 - x - 1 = 0` is the conclusion. Negative control: `n = 2` gives discriminant `8` and `1+\sqrt2`, so the canonization step can fail.
 - **Jones slot selection** (`D0-JONES-SLOT-SELECTOR-001`). Jones (1983) forces the subfactor index below `4` into `\{4\cos^2(\pi/n)\}`; finite depth gives `index < 4`; the owned M1 rational-capture clause (§01.21.1) gives irrationality; and by Niven the slots at `n = 3,4,6` are the rationals `1,2,3`, so the least irrational slot is `n = 5`, with value `(3+\sqrt5)/2 = \varphi^2`. Again `\varphi` is the output.
 
-The rigidity argument of §01.14 ("four unrelated failures at once") must be read on this repaired pair, not on four faces of one equation. Full verdict and evidence: `02_REGISTRY/forcing_routes.json`. The revised Hurwitz route uses the stated M1⁺ canonization, and the revised Jones route uses the stated finite-depth, irrationality and least-slot conditions. The audit's rejection of the earlier pair does not establish those additional premises.
+The rigidity argument of §01.14 ("four unrelated failures at once") is subject to the shared-premise audit and the assumptions of these variants. Full verdict and evidence: `02_REGISTRY/forcing_routes.json`. The revised Hurwitz route uses the stated M1⁺ canonization, and the revised Jones route uses the stated finite-depth, irrationality and least-slot conditions. The audit's rejection of the earlier pair does not establish those additional premises.
 
 ### 01.6.1b Gleason-2D loophole and the Fibonacci fusion route [^b01-28]
 
@@ -2056,7 +2056,9 @@ The letter-by-letter coincidence is closed by an **exact, executable** certifica
 
 The carrier side is verified by finite certificates covering φ-phase non-periodicity with finite return branches and the operator origin of the quasicrystal phenomenology; the time-side address identity is closed by its own finite certificate. The Lean owner packages the carrier.
 
-### 01.19a.4 The quasicrystal carrier is FORCED, not a convenience [FORCING]
+### 01.19a.4 Quasicrystal carrier argument and finite-check boundary [FORCING]
+
+The registry records `D0-QUASICRYSTAL-CARRIER-FORCING-001` as `CERT-CLOSED` and its finiteness edge `D0-LATTICE-FINITENESS-BRIDGE-001` as `BRIDGE-ASSUMPTIONS-EXPLICIT`. Their certificates check finite Fibonacci inflation and numerical identities; the first also encodes the periodic-lattice exclusion as declared Boolean values. These checks do not establish that rigorous non-perturbative gauge theory is possible only on finite lattices or that M1 excludes every other carrier. In particular, the open continuum mass-gap problem alone does not imply either statement. The following paragraphs preserve the registered historical argument and its named owners within that boundary.
 
 The cut-and-project carrier above is not one admissible choice among many — it is forced, and the lattice "bridge" is thereby upgraded to a forcing (claim `D0-QUASICRYSTAL-CARRIER-FORCING-001`). The chain: (i) **finite is rigorous-only** — non-perturbative gauge theory is defined with full mathematical rigour *only* on a finite lattice (Wilson 1974; the continuum Yang–Mills mass gap is an open Clay problem), so a finite carrier is the only one carrying rigorous meaning; (ii) **no preferred step** — a periodic lattice carries an arbitrary spacing `a` and needs the limit `a→0`, whereas a quasicrystal is self-similar by `φ` (inflation `[[1,1],[1,0]]`, Perron eigenvalue `φ`, `A/B→φ`) with no distinguished unit and no `a→0` limit; (iii) **M1** forbids the hand-chosen `a` as exogenous, so the carrier *must* be aperiodic-self-similar; (iv) aperiodic order + long-range order + 5-fold symmetry **⇒ `φ`** (Penrose / de Bruijn cut-and-project, `2cos(π/5)=φ`; Shechtman, Nobel 2011). So `φ` is forced from non-perturbative rigour + M1, not postulated — a new external channel to `φ` alongside Hurwitz extremality, the Jones index, KAM, and the quadratic Pisot property. (cert `vp_quasicrystal_carrier_forcing.py`.)
 
