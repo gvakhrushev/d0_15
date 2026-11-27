@@ -39,26 +39,31 @@ def test_metric_measure():
     L = 3
     D = 4
     all_points = list(itertools.product(range(L), repeat=D))
-    assert len(all_points) == L**D
+    if len(all_points) != L**D:
+        raise AssertionError("The lattice does not contain L**D points")
 
     conductance_values = set()
 
     for x in all_points:
         mu_x = mu(x)
-        assert 1 <= mu_x <= 16
+        if not 1 <= mu_x <= 16:
+            raise AssertionError(f"Density outside the expected range at x={x}")
 
         for r in range(D):
             c_r = conductance(r, x)
             conductance_values.add(c_r)
             # Check c_r(x) = mu(x) / m(x_r)
-            assert c_r * m(x[r]) == mu_x, f"Relation failed at x={x}, r={r}"
+            if c_r * m(x[r]) != mu_x:
+                raise AssertionError(f"Relation failed at x={x}, r={r}")
 
             # Check g_rr(x) = mu(x) / c_r(x) = m(x_r)
             g_rr = mu_x // c_r
-            assert g_rr == m(x[r]), f"g_rr mismatch at x={x}, r={r}"
+            if g_rr != m(x[r]):
+                raise AssertionError(f"g_rr mismatch at x={x}, r={r}")
 
     # In 4D, c_r must take values in {1, 2, 4, 8}
-    assert conductance_values == {1, 2, 4, 8}, f"Unexpected conductances: {conductance_values}"
+    if conductance_values != {1, 2, 4, 8}:
+        raise AssertionError(f"Unexpected conductances: {conductance_values}")
 
     # Mutation control: corrupted conductance violates g_rr == m(x_r)
     corrupted_found = False
@@ -67,7 +72,8 @@ def test_metric_measure():
         if c_mut * m(x[0]) != mu(x):
             corrupted_found = True
             break
-    assert corrupted_found, "Mutation control failed: corruption was not detected"
+    if not corrupted_found:
+        raise AssertionError("Mutation control failed: corruption was not detected")
 
 if __name__ == "__main__":
     test_metric_measure()
