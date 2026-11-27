@@ -2,7 +2,7 @@
 """Weighted Hodge Dirac and Degree Preservation Certificate.
 
 Pure standard-library implementation.
-Verifies:
+Declared identities and controls:
   1. Frozen topology: d^2 = 0.
   2. Weighted adjoint: d_W^dagger = W^(-1) d* W satisfies (d_W^dagger)^2 = 0.
   3. Weighted Hodge Dirac D_W = d + d_W^dagger.
@@ -13,6 +13,10 @@ Verifies:
   6. Reachable mutation control:
        Naive weight insertion d_w = sqrt(w) d generates non-zero d_w^2 != 0
        producing cross-degree leakage between 0-forms and 2-forms.
+
+Scope: one numerical 0/1-form complex on a two-site circle. The mutation
+checks the square of a 2x2 weighted block; this script does not construct a
+2D graded differential or establish its 0-to-2-form leakage.
 """
 
 from __future__ import annotations
@@ -46,7 +50,8 @@ def test_weighted_hodge_dirac_small():
 
     # Check d^2 = 0
     d2 = mat_mul(d, d)
-    assert all(abs(d2[i][j]) < 1e-12 for i in range(4) for j in range(4)), "d^2 != 0"
+    if not (all(abs(d2[i][j]) < 1e-12 for i in range(4) for j in range(4))):
+        raise AssertionError("d^2 != 0")
 
     # Positive weights W = diag(w0, w1, w_e0, w_e1)
     weights = [2.0, 1.0, 3.0, 1.5]
@@ -58,7 +63,8 @@ def test_weighted_hodge_dirac_small():
 
     # Check (d_W^dagger)^2 = 0
     dadj2 = mat_mul(d_adj, d_adj)
-    assert all(abs(dadj2[i][j]) < 1e-12 for i in range(4) for j in range(4)), "(d_W^dagger)^2 != 0"
+    if not (all(abs(dadj2[i][j]) < 1e-12 for i in range(4) for j in range(4))):
+        raise AssertionError("(d_W^dagger)^2 != 0")
 
     # D_W = d + d_W^dagger
     D_W = [[d[i][j] + d_adj[i][j] for j in range(4)] for i in range(4)]
@@ -70,8 +76,10 @@ def test_weighted_hodge_dirac_small():
     # Block (0, 1) and (1, 0) must be identically zero
     leakage_0_to_1 = [DW2[2 + i][j] for i in range(2) for j in range(2)]
     leakage_1_to_0 = [DW2[i][2 + j] for i in range(2) for j in range(2)]
-    assert all(abs(x) < 1e-12 for x in leakage_0_to_1), "Leakage 0 -> 1 detected"
-    assert all(abs(x) < 1e-12 for x in leakage_1_to_0), "Leakage 1 -> 0 detected"
+    if not (all(abs(x) < 1e-12 for x in leakage_0_to_1)):
+        raise AssertionError("Leakage 0 -> 1 detected")
+    if not (all(abs(x) < 1e-12 for x in leakage_1_to_0)):
+        raise AssertionError("Leakage 1 -> 0 detected")
 
     # Symmetrized representative: D_hat = W^(1/2) D_W W^(-1/2)
     W_sqrt = [[weights[i]**0.5 if i == j else 0.0 for j in range(4)] for i in range(4)]
@@ -80,18 +88,17 @@ def test_weighted_hodge_dirac_small():
 
     # Verify D_hat is self-adjoint: D_hat^T = D_hat
     D_hat_T = mat_transpose(D_hat)
-    assert all(abs(D_hat[i][j] - D_hat_T[i][j]) < 1e-12 for i in range(4) for j in range(4)), "D_hat not self-adjoint"
+    if not (all(abs(D_hat[i][j] - D_hat_T[i][j]) < 1e-12 for i in range(4) for j in range(4))):
+        raise AssertionError("D_hat not self-adjoint")
 
-    # Mutation control: naive variable-frame differential d_w = sqrt(w) d
-    # Breaks nilpotency: d_w^2 != 0 on 2-form or multi-directional grids
+    # Mutation proxy: a weighted 2x2 block, not a graded 2D differential.
     w_vec = [2.0, 1.0]
     dw0 = [[(w_vec[i]**0.5) * d0[i][j] for j in range(2)] for i in range(2)]
-    # In 2D, naive variable frames fail nilpotency:
-    # d_w1 d_w0 != 0 when weights vary transversely
-    # Check that dw0 does not preserve orthogonality
+    # Check only the matrix square of this weighted 2x2 block.
     dw0_sq = mat_mul(dw0, dw0)
-    # On 1D circle, d0^2 = 0 is scalar, but with non-constant weights d_w * d_w != 0:
-    assert any(abs(dw0_sq[i][j]) > 1e-6 for i in range(2) for j in range(2)), "Mutation control failed"
+    # This block square is not the square of a graded 2D differential.
+    if not (any(abs(dw0_sq[i][j]) > 1e-6 for i in range(2) for j in range(2))):
+        raise AssertionError("Mutation control failed")
 
 if __name__ == "__main__":
     test_weighted_hodge_dirac_small()

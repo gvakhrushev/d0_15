@@ -2,7 +2,7 @@
 """Hodge Weight Owner and Trace Law Certificate.
 
 Pure standard-library implementation.
-Verifies:
+Declared identities and controls:
   1. Graded Hodge mass matrices W_S = B_S^T B_S = (x)_(r notin S) M.
   2. Grade traces in 4D:
        k=0: Tr = 81
@@ -13,6 +13,9 @@ Verifies:
        Total sum = 256 = (3 + 1)^4.
   3. Single-sector trace law: Tr(W_S) = 3^(4 - |S|).
   4. Reachable mutation control: altering one mass entry breaks the total trace.
+
+Scope: numerical trace identities at L=2 and a changed scalar trace factor.
+The script does not construct the asserted Gram matrices or mutate a matrix entry.
 """
 
 from __future__ import annotations
@@ -38,19 +41,26 @@ def test_hodge_weights():
         total_grade_trace = num_sectors * single_trace
         grade_traces[k] = (single_trace, total_grade_trace)
 
-    assert grade_traces[0] == (81, 81), f"k=0 mismatch: {grade_traces[0]}"
-    assert grade_traces[1] == (27, 108), f"k=1 mismatch: {grade_traces[1]}"
-    assert grade_traces[2] == (9, 54), f"k=2 mismatch: {grade_traces[2]}"
-    assert grade_traces[3] == (3, 12), f"k=3 mismatch: {grade_traces[3]}"
-    assert grade_traces[4] == (1, 1), f"k=4 mismatch: {grade_traces[4]}"
+    if not (grade_traces[0] == (81, 81)):
+        raise AssertionError(f"k=0 mismatch: {grade_traces[0]}")
+    if not (grade_traces[1] == (27, 108)):
+        raise AssertionError(f"k=1 mismatch: {grade_traces[1]}")
+    if not (grade_traces[2] == (9, 54)):
+        raise AssertionError(f"k=2 mismatch: {grade_traces[2]}")
+    if not (grade_traces[3] == (3, 12)):
+        raise AssertionError(f"k=3 mismatch: {grade_traces[3]}")
+    if not (grade_traces[4] == (1, 1)):
+        raise AssertionError(f"k=4 mismatch: {grade_traces[4]}")
 
     total_sum = sum(t[1] for t in grade_traces.values())
-    assert total_sum == 256, f"Total trace sum must be 256, got {total_sum}"
+    if not (total_sum == 256):
+        raise AssertionError(f"Total trace sum must be 256, got {total_sum}")
 
     # Mutation control: mutate mass factor to 4
     tr_M_mut = trace_1d_mass(2, mutate=True)
     mut_total = sum(math.comb(D, k) * (tr_M_mut ** (D - k)) for k in range(D + 1))
-    assert mut_total != 256, "Mutation control failed: mutated total trace equaled 256"
+    if not (mut_total != 256):
+        raise AssertionError("Mutation control failed: mutated total trace equaled 256")
 
 if __name__ == "__main__":
     test_hodge_weights()

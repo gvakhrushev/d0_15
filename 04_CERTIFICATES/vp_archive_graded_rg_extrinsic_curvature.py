@@ -2,7 +2,7 @@
 """Graded RG Extrinsic Curvature and Trace Law Certificate.
 
 Pure standard-library implementation.
-Verifies:
+Declared identities and controls:
   1. The fundamental identity of the second fundamental form:
        R_RG = J* D_f^2 J - (J* D_f J)^2 = J* D_f (I - J J*) D_f J = T* T >= 0.
   2. 1D frozen seam unscaled invariants:
@@ -14,6 +14,10 @@ Verifies:
        Tr R_RG^(4) / (16 L^4) = 2 / L.
   5. Reachable mutation control:
        Non-isometric J (violating J* J = I) breaks the Gram identity R_RG == T* T.
+
+Scope: one rational 2-to-3 embedding, its trace and a non-isometric control.
+The 4D trace and density are arithmetic checks for five declared L values;
+the script does not construct the 4D operator or calculate the 1D rank.
 """
 
 from __future__ import annotations
@@ -50,13 +54,15 @@ def test_rg_extrinsic_curvature_algebra():
          [fractions.Fraction(0), fractions.Fraction(0)]]
     JT = mat_transpose(J)
     I2 = make_eye(2)
-    assert mat_mul(JT, J) == I2, "J* J != I"
+    if not (mat_mul(JT, J) == I2):
+        raise AssertionError("J* J != I")
 
     # Symmetric fine Dirac D_f (3x3)
     Df = [[fractions.Fraction(0), fractions.Fraction(1), fractions.Fraction(1)],
           [fractions.Fraction(1), fractions.Fraction(0), fractions.Fraction(0)],
           [fractions.Fraction(1), fractions.Fraction(0), fractions.Fraction(0)]]
-    assert mat_transpose(Df) == Df, "D_f not symmetric"
+    if not (mat_transpose(Df) == Df):
+        raise AssertionError("D_f not symmetric")
 
     # R_RG = J* Df^2 J - (J* Df J)^2
     Df2 = mat_mul(Df, Df)
@@ -72,11 +78,13 @@ def test_rg_extrinsic_curvature_algebra():
     TT_T = mat_mul(mat_transpose(T), T)
 
     # Fundamental identity check
-    assert R_RG == TT_T, "Fundamental identity R_RG == T* T failed"
+    if not (R_RG == TT_T):
+        raise AssertionError("Fundamental identity R_RG == T* T failed")
 
     # Invariants for this 1D seam block:
     tr = mat_trace(R_RG)
-    assert tr == fractions.Fraction(1), f"Expected trace 1, got {tr}"
+    if not (tr == fractions.Fraction(1)):
+        raise AssertionError(f"Expected trace 1, got {tr}")
 
     # Mutation control: corrupt J so J* J != I
     J_mut = [[fractions.Fraction(2), fractions.Fraction(0)],
@@ -87,17 +95,20 @@ def test_rg_extrinsic_curvature_algebra():
     R_RG_mut = mat_sub(mat_mul(JT_mut, mat_mul(Df2, J_mut)), mat_mul(Dc_mut, Dc_mut))
     T_mut = mat_mul(mat_sub(I3, mat_mul(J_mut, JT_mut)), mat_mul(Df, J_mut))
     TT_T_mut = mat_mul(mat_transpose(T_mut), T_mut)
-    assert R_RG_mut != TT_T_mut, "Mutation control failed: non-isometry was not detected"
+    if not (R_RG_mut != TT_T_mut):
+        raise AssertionError("Mutation control failed: non-isometry was not detected")
 
 def test_product_trace_law():
     for L in [2, 3, 4, 5, 10]:
         # Product trace law in 4D: 32 L^3
         tr_4d = 4 * (2**3) * (L**3)
-        assert tr_4d == 32 * (L**3)
+        if not (tr_4d == 32 * (L**3)):
+            raise AssertionError
         # Density on 16 L^4 cochain carrier
         density = fractions.Fraction(tr_4d, 16 * (L**4))
         expected_density = fractions.Fraction(2, L)
-        assert density == expected_density, f"Density mismatch at L={L}"
+        if not (density == expected_density):
+            raise AssertionError(f"Density mismatch at L={L}")
 
 if __name__ == "__main__":
     test_rg_extrinsic_curvature_algebra()

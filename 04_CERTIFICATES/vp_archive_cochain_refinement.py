@@ -2,7 +2,7 @@
 """Cochain Refinement and Intertwining Chain Map Certificate.
 
 Pure standard-library implementation (no external dependencies).
-Verifies:
+Declared identities and controls:
   1. 1D vertex and edge refinement:
        B0 : R^L -> R^(L+1), B0^T B0 = diag(2, 1, ..., 1)
        B1 : R^L_edges -> R^(L+1)_edges, B1^T B1 = I_L
@@ -11,6 +11,9 @@ Verifies:
   3. Reachable mutation controls:
        - Corrupting B1 breaks d_(L+1) B0 = B1 d_L.
        - Corrupting B0 breaks B0^T B0 = M.
+
+Scope: exact checks at L=3,4,5,6 and one 2D product case at L=3.
+The script does not establish all tensor degrees or arbitrary refinement sizes.
 """
 
 from __future__ import annotations
@@ -73,25 +76,30 @@ def test_1d_refinement():
         M0 = mat_mul(mat_transpose(B0), B0)
         expected_M0 = [[1 if i == j else 0 for j in range(L)] for i in range(L)]
         expected_M0[0][0] = 2
-        assert M0 == expected_M0, f"B0^T B0 failed at L={L}"
+        if not (M0 == expected_M0):
+            raise AssertionError(f"B0^T B0 failed at L={L}")
 
         # 2. B1^T B1 = I_L
         M1 = mat_mul(mat_transpose(B1), B1)
         expected_I = [[1 if i == j else 0 for j in range(L)] for i in range(L)]
-        assert M1 == expected_I, f"B1^T B1 failed at L={L}"
+        if not (M1 == expected_I):
+            raise AssertionError(f"B1^T B1 failed at L={L}")
 
         # 3. Exact chain map intertwining: d_(L+1) B0 = B1 d_L
         left = mat_mul(dL1, B0)
         right = mat_mul(B1, dL)
-        assert left == right, f"Chain map failed at L={L}"
+        if not (left == right):
+            raise AssertionError(f"Chain map failed at L={L}")
 
         # 4. Mutation control: corrupting B1 must fail chain map
         B1_mut = build_b1(L, mutate=True)
-        assert mat_mul(dL1, B0) != mat_mul(B1_mut, dL), "Mutation control failed to catch error"
+        if not (mat_mul(dL1, B0) != mat_mul(B1_mut, dL)):
+            raise AssertionError("Mutation control failed to catch error")
 
         # 5. Mutation control: corrupting B0 must fail mass matrix
         B0_mut = build_b0(L, mutate=True)
-        assert mat_mul(mat_transpose(B0_mut), B0_mut) != expected_M0, "Mutation control failed on B0"
+        if not (mat_mul(mat_transpose(B0_mut), B0_mut) != expected_M0):
+            raise AssertionError("Mutation control failed on B0")
 
 def test_2d_tensor_chain_map():
     L = 3
@@ -110,7 +118,8 @@ def test_2d_tensor_chain_map():
 
     left = mat_mul(d0_fine, B_0form)
     right = mat_mul(B_1form_0, d0_coarse)
-    assert left == right, "2D product chain map failed"
+    if not (left == right):
+        raise AssertionError("2D product chain map failed")
 
 if __name__ == "__main__":
     test_1d_refinement()
