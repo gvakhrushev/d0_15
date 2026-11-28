@@ -485,8 +485,10 @@ tools/              Repository validator, Lean view generator, and test runners
 ### Audit and research navigation
 
 - [Book–claim coverage](02_REGISTRY/book_claim_coverage.csv) maps each registered claim to its declared book and exact ID mentions. An absent ID is a navigation finding, not proof that the underlying content is absent.
-- [Lean reference audit](02_REGISTRY/LEAN_REFERENCE_AUDIT.md) records checked statement scopes and two unresolved declaration names. The automated scan is a non-growth screen, not a namespace or theorem-type proof.
+- [Lean reference audit](02_REGISTRY/LEAN_REFERENCE_AUDIT.md) records checked statement scopes and the remaining unresolved declaration name. The automated scan is a non-growth screen, not a namespace or theorem-type proof.
+- [Statement and certificate scope audit](02_REGISTRY/CLAIM_SCOPE_AUDIT_2026_11_28.md) compares selected owner statements, executable checks and unresolved transport or representation steps.
 - [Certificate inventory](02_REGISTRY/CERTIFICATE_INVENTORY.md) and [archive review](02_REGISTRY/ARCHIVE_CERTIFICATE_REVIEW.md) distinguish dependencies, finite checks and unresolved ownership.
+- [Certificate consumer audit](02_REGISTRY/CERTIFICATE_CONSUMER_AUDIT_2026_11_28.md) records what the 19 previously unindexed files actually check, including historical and unresolved limitations.
 - [Research index](02_REGISTRY/research/RESEARCH_INDEX.md) and [synthesis priorities](02_REGISTRY/research/RESEARCH_PRIORITY_2026_11_26.md) link active interfaces to their evidence and remaining premises.
 
 ---
@@ -514,7 +516,7 @@ python tools/audit_lean_claim_references.py
 python -m compileall -q tools 04_CERTIFICATES
 ```
 
-The Lean-reference scan reports the two documented unresolved names. Its
+The Lean-reference scan reports the documented unresolved name. Its
 optional `--strict` mode fails until those references are reconciled with
 statements of the required scope.
 

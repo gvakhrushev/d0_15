@@ -3,7 +3,7 @@
 
 This lexical scan is a lower bound: matching short names do not establish a
 namespace, type, or proof. Resolve a candidate against Lean before changing an
-owner. The non-growth check reports the two documented unresolved references.
+owner. The non-growth check reports the documented unresolved reference.
 Use --strict to fail on every unresolved name, including the known baseline.
 """
 from __future__ import annotations
@@ -15,10 +15,6 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 KNOWN_UNRESOLVED = {
-    (
-        "D0-TRIALITY-SEDENION-S3-DISJOINTNESS-GUARD-001",
-        "triality_sedenion_s3_disjointness_guard",
-    ),
     (
         "D0-ARCHIVE-NAIVE-WEIGHTED-CAR-DEGREE-LEAKAGE-NOGO-001",
         "archive_naive_weighted_degree_leakage_nogo_owner",

@@ -6,37 +6,33 @@ det=-1) needs an explicit 2-cell partition with the EXACT Markov property T(int 
 The corpus already owns the symbolic side (T is GL(2,Z)-conjugate to -M_phi, the Fibonacci substitution
 twisted by orientation, cert vp_adler_weiss_symbolic_owner.py). What was OPEN is the metric realization.
 
-Result. The exact 2-cell Markov partition EXISTS and is M1-INTERNAL: it is the natural extension of the
-golden beta=phi transformation, whose digit map realizes the golden SFT [[1,1],[1,0]] with a SYMBOLICALLY
-PROVEN (not merely simulated) Markov property. Because beta=phi is the M1-forced golden split (p+p^2=1), the
-partition is forced, not fitted.
+Scope. The script checks exact endpoint identities for the golden beta=phi digit intervals and a separate
+integer matrix conjugacy. It does not construct a conjugacy from a beta natural extension to the torus
+or transport the interval partition to torus cells. The golden split (p+p^2=1) is an input here.
 
 The symbolic Markov proof (exact, no simulation). Digit d(x)=floor(phi*x) on [0,1); cut at the golden split
 1/phi gives cells R0=[0,1/phi) (d=0) and R1=[1/phi,1) (d=1).
   * x in R1=[1/phi,1)  =>  phi*x in [1,phi)  =>  d=1, and the successor phi*x-1 in [0, phi-1)=[0,1/phi)=R0
     EXACTLY (phi-1 = 1/phi). So after digit 1 the next digit is FORCED 0: the transition 1->1 is forbidden.
   * x in R0=[0,1/phi)  =>  phi*x in [0,1)  =>  d=0, successor in [0,1) = R0 union R1: digit 0 -> {0,1}.
-Hence the transition matrix is EXACTLY [[1,1],[1,0]] -- the golden SFT -- which is the exact Markov property
-T(int P_i) subset union int P_j transported through the owned conjugacy T ~ -M_phi.
+These interval images give the golden digit transition matrix [[1,1],[1,0]]. The further torus statement
+T(int P_i) subset union int P_j requires a separately established map and transported cells.
 
-Invariants (exact). Parry (maximal-entropy) cell measures = (phi^2, 1)/(phi^2+1) = (1/2+sqrt5/10, 1/2-sqrt5/10)
+Declared invariant expressions (evaluated numerically here). Parry (maximal-entropy) cell measures = (phi^2, 1)/(phi^2+1) = (1/2+sqrt5/10, 1/2-sqrt5/10)
 = (0.72361, 0.27639); topological entropy = log(phi). The digit cut 1/phi satisfies the golden split
 1/phi + 1/phi^2 = 1, so it is the M1-forced boundary, not a tuned threshold.
 
-Conjugacy chain. T=[[0,1],[1,-1]] is GL(2,Z)-conjugate to -M_phi via U=[[0,1],[-1,0]] (det +1), so the
-golden-SFT Markov partition of M_phi transfers to T with the orientation twist (the owned symbolic side).
+Conjugacy chain. The checked matrix identity is T=[[0,1],[1,-1]] GL(2,Z)-conjugate to -M_phi via
+U=[[0,1],[-1,0]] (det +1). The script does not construct a partition of -M_phi or its transport to T.
 
-Honest boundary. CLOSED here: the internal 2-cell Markov partition exists with the EXACT golden-SFT Markov
-property, forced by the golden split, with Parry measures and entropy exact -- the symbolic-dynamical content
-of the Rauzy/Adler-Weiss construction, realized internally. NOT claimed: an explicit flat-torus parallelogram
-embedding with rational-phi vertices (that metric picture, and the smooth/measure conjugacy, stay the
-external classical owner D0-ADLER-WEISS-PARTITION-OWNER-001). The internal realization is in the M1-native
-beta=phi natural-extension coordinates, conjugate to the torus; exhibiting the affine cell polygons is a
-presentation residue, not new mathematics.
+Honest boundary. The checks cover endpoint arithmetic, numerical evaluations of the listed Parry and
+entropy expressions, and the matrix identity. They do not prove a 2-cell torus Markov partition, a map
+from natural-extension coordinates to the torus, or a smooth/measure conjugacy. The classical partition
+is associated with the separate owner D0-ADLER-WEISS-PARTITION-OWNER-001.
 
-Falsifiable: breaks (rc=1) if the successor image of R1 is not [0,1/phi), if the transition matrix is not
-[[1,1],[1,0]], if the cut fails the golden split, if the Parry measures/entropy are wrong, or if the
-conjugacy T ~ -M_phi (det U=+1) fails. Perturbing beta off phi (control) destroys the clean 1->1 forbidding.
+Falsifiable checks return rc=1 when the checked endpoint identities, golden split, numerical reference
+values or matrix conjugacy T ~ -M_phi (det U=+1) fail. The non-golden control only checks that the chosen
+cut differs from 1/phi; it does not compare alternative digit maps or establish their transition matrices.
 """
 import sys
 from fractions import Fraction as Fr
@@ -65,8 +61,8 @@ def die(msg):
 
 def main():
     print("=== vp_adler_weiss_internal_markov  exact 2-cell Markov partition, M1-forced golden beta ===")
-    print("STRUCTURE_FIXED_BEFORE_NUMBER: beta=phi is the M1-forced golden split; the Markov property is "
-          "then a THEOREM about its digit map, proven symbolically below (no simulation).")
+    print("STRUCTURE_FIXED_BEFORE_NUMBER: beta=phi is the declared golden split; endpoint identities "
+          "for its digit intervals are checked below in Z[phi].")
 
     # (1) golden split: cut 1/phi satisfies 1/phi + 1/phi^2 = 1
     s = add(INV_PHI, mul(INV_PHI, INV_PHI))  # 1/phi + 1/phi^2
@@ -103,8 +99,8 @@ def main():
     ent = math.log((1 + math.sqrt(5)) / 2)
     if abs(ent - 0.4812118250) > 1e-8:
         die(f"ENTROPY  topological entropy must be log(phi): {ent}")
-    print(f"PASS_PARRY_ENTROPY  Parry cell measures = (phi^2,1)/(phi^2+1) = ({m0:.7f},{m1:.7f}); "
-          f"topological entropy = log(phi) = {ent:.7f} (both exact golden SFT invariants).")
+    print(f"PASS_PARRY_ENTROPY  numerical evaluation of (phi^2,1)/(phi^2+1) = ({m0:.7f},{m1:.7f}); "
+          f"log(phi) = {ent:.7f}. These evaluations do not establish a torus partition.")
 
     # (5) conjugacy chain T ~ -M_phi via U, det U = +1
     T = [[0, 1], [1, -1]]
@@ -123,21 +119,20 @@ def main():
     negMp = [[-Mp[i][j] for j in range(2)] for i in range(2)]
     if lhs != negMp:
         die(f"CONJ_CHAIN  U T U^-1 must equal -M_phi: {lhs} vs {negMp}")
-    print("PASS_CONJUGACY_CHAIN  T=[[0,1],[1,-1]] ~ -M_phi via U=[[0,1],[-1,0]] (det +1): the golden-SFT "
-          "Markov partition of M_phi transfers to T with the orientation twist (owned symbolic side).")
+    print("PASS_CONJUGACY_CHAIN  T=[[0,1],[1,-1]] ~ -M_phi via U=[[0,1],[-1,0]] (det +1). "
+          "The matrix identity does not itself construct or transfer a torus partition.")
 
     # control: perturbing the cut off the golden split breaks the exact R1->R0 image
     bad_cut = Fr(3, 5)  # not 1/phi
     # successor of [bad_cut,1) right end under phi*x-1 = phi-1 = 1/phi != bad_cut region cleanly
     if abs(float(bad_cut) - (math.sqrt(5) - 1) / 2) < 1e-6:
         die("CONTROL_CUT  3/5 must differ from 1/phi (it is a rational near-miss)")
-    print("PASS_CONTROL_NONGOLDEN_CUT  a non-golden cut (3/5) does not satisfy p+p^2=1, so its digit map is "
-          "not the clean golden SFT — the Markov property is specific to the M1-forced beta=phi.")
+    print("PASS_CONTROL_NONGOLDEN_CUT  the cut 3/5 differs from 1/phi; no alternative digit map is "
+          "constructed or compared by this control.")
 
-    print("PASS_ADLER_WEISS_INTERNAL_MARKOV — the exact 2-cell Markov partition is realized INTERNALLY via "
-          "the M1-forced golden beta=phi natural extension: 1->1 forbidden (symbolically proven), transition "
-          "[[1,1],[1,0]], Parry measures (phi^2,1)/(phi^2+1), entropy log phi, conjugate to T ~ -M_phi. The "
-          "explicit flat-torus parallelogram embedding and smooth conjugacy stay the external classical owner.")
+    print("PASS_ADLER_WEISS_INTERNAL_MARKOV — checked golden digit-interval endpoint identities, numerical "
+          "evaluations of (phi^2,1)/(phi^2+1) and log phi, and the matrix conjugacy T ~ -M_phi. "
+          "No map from the beta natural extension to the torus or transported torus partition is constructed.")
     return 0
 
 

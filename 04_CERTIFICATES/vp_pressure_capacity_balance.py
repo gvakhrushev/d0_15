@@ -20,9 +20,12 @@ def regime(p_fb: float, p_cap: float) -> str:
 
 
 def main() -> int:
-    assert regime(3, 2) == "expansion"
-    assert regime(2, 2) == "stationary_horizon"
-    assert regime(1, 2) == "collapse"
+    if not (regime(3, 2) == "expansion"):
+        raise AssertionError
+    if not (regime(2, 2) == "stationary_horizon"):
+        raise AssertionError
+    if not (regime(1, 2) == "collapse"):
+        raise AssertionError
     result = {
         "status": "PASS_PRESSURE_CAPACITY_BALANCE",
         "tokens": [

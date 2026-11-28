@@ -14,8 +14,10 @@ PASSPORT = ROOT / "05_EXPERIMENTS" / "VacuumFeedback"
 def main() -> int:
     mode = {"eigenmode": True, "near_critical": True, "terminal_projected": True}
     arbitrary = {"eigenmode": True, "near_critical": True, "terminal_projected": False}
-    assert all(mode.values())
-    assert not all(arbitrary.values())
+    if not (all(mode.values())):
+        raise AssertionError
+    if not (not all(arbitrary.values())):
+        raise AssertionError
     result = {
         "status": "PASS_TERMINAL_FEEDBACK_MODES",
         "tokens": [

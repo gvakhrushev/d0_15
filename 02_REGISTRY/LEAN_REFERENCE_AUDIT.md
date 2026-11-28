@@ -1,6 +1,6 @@
 # Lean reference and statement audit
 
-Snapshot: the sources and registry at `e96eb6a732f86203b4a921239334de82f99197a1`, checked on 26 November 2026. Seven claim rows have since had their missing references replaced with declarations that occur in their owning modules, with notes scoped to their actual statements. Their statuses remain unchanged. The triality and weighted-leakage NO-GO rows still need statement-level reconciliation.
+Snapshot: the sources and registry at `e96eb6a732f86203b4a921239334de82f99197a1`, checked on 26 November 2026. Seven claim rows have since had their missing references replaced with declarations that occur in their owning modules, with notes scoped to their actual statements. Their statuses remain unchanged. The later triality guard and remaining weighted-leakage boundary are described after the historical findings.
 
 | Claim | Finding on checked source |
 |---|---|
@@ -18,20 +18,24 @@ The eight names identified after the first two row repairs were also checked
 with Lean 4.30.0 after importing their declared modules and using their source
 namespaces. Lean reported each checked qualified identifier as unknown. The
 source files matched the locally compiled module inputs. Subsequent repairs
-cover six of those names across five rows. The remaining two names concern the
-triality and weighted-leakage NO-GO rows, where the available finite statements
-do not establish the original full descriptions. Claim statuses are
-unchanged. [Archive certificate review](ARCHIVE_CERTIFICATE_REVIEW.md)
+cover six of those names across five rows. At that snapshot the remaining two
+names concerned the triality and weighted-leakage NO-GO rows. Claim statuses
+are unchanged. [Archive certificate review](ARCHIVE_CERTIFICATE_REVIEW.md)
 
 A [finite weighted-differential witness](research/sources/d0_weighted_leakage_2026_11_27/RESULT_RU.md)
 now proves a concrete non-nilpotent example and an unweighted control.
 It does not prove the full weighted-leakage description or resolve the
 missing registry reference.
 
-A [finite S3 action comparison](research/sources/d0_s3_action_comparison_2026_11_27/RESULT_RU.md)
-shows that two actions of the same six-element group can have no injective
-intertwiner. It does not construct Spin(8) triality or the sedenion action,
-and the original triality reference remains unresolved.
+The named `triality_sedenion_s3_disjointness_guard` now exists in its registered
+module. It constructs two actions of the same six-element permutation group,
+proves the natural action has a bijective self-intertwiner and that there is no
+injective intertwiner from that action to the trivial one. This establishes
+the originally stated logical boundary that equal group order alone does not
+identify actions. The proof does not construct Spin(8) triality or the Brown
+sedenion action and does not decide whether those particular actions admit an
+intertwiner. The [independent finite comparison](research/sources/d0_s3_action_comparison_2026_11_27/RESULT_RU.md)
+is consistent with this scope.
 
 `python tools/audit_lean_claim_references.py` scans registry names against
 source declarations with comments and strings excluded. CI checks that the

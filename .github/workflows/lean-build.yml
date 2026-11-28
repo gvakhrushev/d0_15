@@ -9,6 +9,7 @@ on:
       - "tools/check_native_checkpoint_compatibility.py"
       - "02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/**"
       - "02_REGISTRY/research/certificates/*.lean"
+      - "02_REGISTRY/research/sources/d0_weighted_leakage_2026_11_27/Structural.lean"
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
@@ -17,6 +18,7 @@ on:
       - "tools/check_native_checkpoint_compatibility.py"
       - "02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/**"
       - "02_REGISTRY/research/certificates/*.lean"
+      - "02_REGISTRY/research/sources/d0_weighted_leakage_2026_11_27/Structural.lean"
       - ".github/workflows/lean-build.yml"
   workflow_dispatch:
 
@@ -41,7 +43,8 @@ jobs:
           set -euo pipefail
           inputs=(03_FORMALIZATION .github/workflows/lean-build.yml
             tools/native_checkpoint_inputs.py tools/check_native_checkpoint_compatibility.py
-            02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20)
+            02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20
+            02_REGISTRY/research/sources/d0_weighted_leakage_2026_11_27/Structural.lean)
           for name in addressed_third_role archive_apparatus_realization code_price_resolution dynamical_ownership history_action history_field_coupling prepared_action scene_payload_action uniform_memory_actuation verified_archive_actuation; do
             inputs+=("02_REGISTRY/research/certificates/a4d_native_${name}.lean")
           done
@@ -103,6 +106,11 @@ jobs:
           use-github-cache: "true"
           test: "false"
           lint: "false"
+
+      - name: Check weighted CAR structural witness
+        if: steps.d0-formalization.outputs.changed == 'true'
+        working-directory: 03_FORMALIZATION
+        run: lake env lean ../02_REGISTRY/research/sources/d0_weighted_leakage_2026_11_27/Structural.lean
 
       - name: Compile native checkpoint capsules against maintained sources
         if: steps.d0-formalization.outputs.changed == 'true' && hashFiles('02_REGISTRY/research/sources/d0_native_variational_checkpoint_2026-10-20/HISTORICAL_INPUT.json') != ''

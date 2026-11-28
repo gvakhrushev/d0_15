@@ -2,6 +2,7 @@
 from __future__ import annotations
 from pathlib import Path
 import csv, re, sys, collections, os
+from csv_integrity import record_width_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 REG = ROOT / '02_REGISTRY'
@@ -24,6 +25,13 @@ def read_csv(path, required):
     if not rows:
         err(f'{path.relative_to(ROOT)}: empty')
         return []
+    for index, message in record_width_errors(rows):
+        err(f'{path.relative_to(ROOT)}: CSV record {index}: {message}')
+    # Continue other diagnostics even when a short malformed row is present.
+    for row in rows:
+        for key, value in row.items():
+            if key is not None and value is None:
+                row[key] = ''
     missing=[x for x in required if x not in rows[0]]
     if missing: err(f'{path.relative_to(ROOT)}: missing columns {missing}')
     return rows

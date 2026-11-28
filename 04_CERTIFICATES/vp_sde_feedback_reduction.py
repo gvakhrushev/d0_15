@@ -18,8 +18,10 @@ def sde_poly(lam: float) -> float:
 
 
 def main() -> int:
-    assert sde_poly(0) == 359
-    assert sde_poly(1) == 39
+    if not (sde_poly(0) == 359):
+        raise AssertionError
+    if not (sde_poly(1) == 39):
+        raise AssertionError
     evidence = {
         "desi_failure": True,
         "sparc_failure": True,
@@ -29,7 +31,8 @@ def main() -> int:
         "boundary_trace_derivative_nonzero": True,
         "arbitrary_kernel_rejected": True,
     }
-    assert all(evidence.values())
+    if not (all(evidence.values())):
+        raise AssertionError
     missing_term = "boundary_derivative_feedback"
     result = {
         "status": "PASS_SDE_FEEDBACK_REDUCTION",

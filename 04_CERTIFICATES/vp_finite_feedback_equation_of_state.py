@@ -18,7 +18,8 @@ def main() -> int:
     pressure = (1.0 / beta) * dlogz_dv
     t_eff = 1.0 / beta
     response_index = volume * dlogz_dv
-    assert abs(pressure * volume - t_eff * response_index) < 1e-12
+    if not (abs(pressure * volume - t_eff * response_index) < 1e-12):
+        raise AssertionError
     PASSPORT.mkdir(parents=True, exist_ok=True)
     result = {
         "status": "PASS_FINITE_FEEDBACK_EQUATION_OF_STATE",

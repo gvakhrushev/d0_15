@@ -1287,11 +1287,13 @@ Result semantics:
 PASS / FAIL / SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED
 ```
 
-Current external-data runner result:
+When verified external data are unavailable, the external-data runner result is:
 
 ```text
 SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED
 ```
+
+**Historical evidence boundary.** The saved `05_EXPERIMENTS/DESI/desi_bao_sde_real_data_summary.json` and `05_EXPERIMENTS/DESI/desi_bao_sde_real_data_summary.md` report a physical FAIL from a runner that could create a synthetic input while recording it as real. Those saved outputs do not establish a DESI result and are retained as historical artifacts. A physical PASS or FAIL requires independently verified release data, covariance, provenance and the frozen comparison protocol.
 
 
 
@@ -1311,15 +1313,17 @@ The feedback-pressure component is
 \]
 Acceleration is the sign and spectral response of \(\mathsf P_{fb}-\mathsf P_{cap}\) under boundary-rank deformation. Survey likelihoods test this transfer law as external passports; they do not define the discrete volume derivative.
 
-### t=0 is a connectivity threshold, not a singularity
+### Connectivity threshold as a finite onset model
 
-The retained-rank picture forces a discrete replacement for the initial singularity. The expansion variable is depth \(u\) on the scene graph; the retained sector \(P_N\) is only well-posed once the graph distinguishes points, i.e. once it is **connected**. Below a connectivity (percolation) threshold the graph is disconnected: distinct components carry no mutual transport, so \(\operatorname{rank}(P_N)\) cannot register a single coherent volume and the rank-evolution law \(\partial_VF_N\) has no connected sector to evolve.
+The registry records `D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001` as `CERT-CLOSED`. Its named Lean theorem returns the disconnected-before and connected-after Boolean fields already assumed by a `PercolationTransition`. The certificate checks two selected finite graph configurations. Neither establishes a physical onset time or excludes a spacetime curvature singularity.
 
-Forcing argument: if at depth \(u<\varepsilon^2\) the scene graph is disconnected, then the "beginning of time" is the **onset of graph connectivity (the percolation threshold \(u^\*\))**, not a singular point. There is no \(t=0\) singularity to reach — only the depth at which the largest component first spans the scene and a retained rank becomes definable. A pointwise singularity would require an external label pinning a "true first instant" off-graph, an external catalog that M1 forbids; the connectivity threshold, by contrast, is internally readable from the graph alone (forcing: GOLDEN THE 61.4 — Percolation as \(t=0\)). This reframes cosmic onset as a phase transition of the retained sector rather than a divergence of curvature. [^b08-7]; GOLDEN flags a toy check CHK 61.6 (PercolationToy: threshold \(u^\*\)).
+The retained-rank picture proposes a discrete connectivity model for cosmic onset. The expansion variable is depth \(u\) on the scene graph; the retained sector \(P_N\) is only well-posed once the graph distinguishes points, i.e. once it is **connected**. Below a connectivity (percolation) threshold the graph is disconnected: distinct components carry no mutual transport, so \(\operatorname{rank}(P_N)\) cannot register a single coherent volume and the rank-evolution law \(\partial_VF_N\) has no connected sector to evolve.
+
+Forcing argument: if at depth \(u<\varepsilon^2\) the scene graph is disconnected, then the "beginning of time" is the **onset of graph connectivity (the percolation threshold \(u^\*\))**, not a singular point. In this model the relevant depth is where the largest component first spans the scene and a retained rank becomes definable; the finite construction does not settle a physical \(t=0\) curvature singularity. The corpus proposes that a pointwise singularity would require an external label pinning a "true first instant" off-graph, an external catalog that M1 forbids; the connectivity threshold, by contrast, is internally readable from the graph alone (forcing: GOLDEN THE 61.4 — Percolation as \(t=0\)). The finite connectivity test does not establish that physical implication. This reframes cosmic onset as a phase transition of the retained sector rather than a divergence of curvature. [^b08-7]; GOLDEN flags a toy check CHK 61.6 (PercolationToy: threshold \(u^\*\)).
 
 Consequence for the transfer law: \(\partial_VF_N\) and the feedback pressure \(\mathsf P_{fb}\) are defined only on the connected (post-threshold) regime. The "expansion history" is the rank evolution of the retained sector **after** percolation; the pre-threshold regime is not an earlier expanding universe but a disconnected scene where the volume derivative is simply undefined. Survey reconstructions of an early-time singularity are therefore external passports of the post-threshold law, not evidence of an off-graph \(t=0\) point.
 
-**Internal connectivity-threshold owner; the inflaton replacement (`D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001`).** The percolation reframing above is now machine-certified: the complete tripartite scene `K(9,11,13)` (33 vertices, 359 cross-zone edges) is connected (a BFS reaches all 33), while the sub-threshold stage — the intra-zone edges of a complete tripartite graph, of which there are **none** — is 33 isolated vertices, hence disconnected. So the transition `before.connected = false → after.connected = true` is real (Lean `D0.Cosmology.ReheatingPercolationOwner`, cert `vp_connectivity_threshold_owner.py`; CERT-CLOSED). The connectivity transition stands in for the inflaton (`D0-REHEATING-PERCOLATION-OWNER-001`, the transition structure owned). **Honest residuals (PROOF-TARGET):** the reheating energy budget + rate from the discrete rank evolution `∂_V F_N` (`D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001`); and the scalar spectral index `n_s` as a function of the archive Laplacian spectrum (`D0-CMB-PHASON-SPECTRUM-OWNER-001`) — the Laplacian source is internal (`D0-ARCHIVE-LAPLACIAN-001`), but the `n_s` formula is not yet derived and no Planck datum enters (the CMB comparison stays passport-only).
+**Internal connectivity-threshold owner; the inflaton replacement (`D0-COSMOLOGY-CONNECTIVITY-THRESHOLD-OWNER-001`).** The finite comparison underlying the percolation model is machine-checked: the complete tripartite scene `K(9,11,13)` (33 vertices, 359 cross-zone edges) is connected (a BFS reaches all 33), while the sub-threshold stage — the intra-zone edges of a complete tripartite graph, of which there are **none** — is 33 isolated vertices, hence disconnected. So the transition `before.connected = false → after.connected = true` is real (Lean `D0.Cosmology.ReheatingPercolationOwner`, cert `vp_connectivity_threshold_owner.py`; CERT-CLOSED). The connectivity transition is proposed as an inflaton-free model (`D0-REHEATING-PERCOLATION-OWNER-001`, the transition structure owned); the physical realization is a separate question. **Honest residuals (PROOF-TARGET):** the reheating energy budget + rate from the discrete rank evolution `∂_V F_N` (`D0-INFLATIONLESS-EARLY-UNIVERSE-OWNER-001`); and the scalar spectral index `n_s` as a function of the archive Laplacian spectrum (`D0-CMB-PHASON-SPECTRUM-OWNER-001`) — the Laplacian source is internal (`D0-ARCHIVE-LAPLACIAN-001`), but the `n_s` formula is not yet derived and no Planck datum enters (the CMB comparison stays passport-only).
 
 **Deep-stitch closure (Iteration 22): the reheating heat-trace jump at the connectivity threshold.** Crossing the connectivity threshold, the `K(9,11,13)` Laplacian spectrum `{0:1,20:12,22:10,24:8,33:2}` replaces the edgeless sub-threshold spectrum `{0:33}`: the zero-eigenvalue multiplicity (= `dim ker L` = number of components = the `u→∞` heat-trace limit) jumps `33→1` while total multiplicity 33 is conserved and `λ₂=20>0`. This is the finite spectral content behind inflaton-free reheating; the scalar tilt `n_s` from the Laplacian spectrum stays PROOF-TARGET (`D0-CMB-PHASON-SPECTRUM-OWNER-001`). Owner: `D0-REHEATING-HEAT-TRACE-JUMP-001` (CERT-CLOSED), Lean `D0.Cosmology.ReheatingHeatTraceJump`, cert `vp_reheating_heat_trace_jump.py`.
 
@@ -1343,7 +1347,7 @@ The internal cosmology chain is machine-owned where closed, with every remaining
 
 **n_s undetermined no-go (Iteration 22, `D0-CMB-NS-SMOOTHING-UNDETERMINED-NOGO-001`, NO-GO).** The discrete spectral tilt `n_eff − 1 = (k/P)·P'(k)` of the heat-smoothed phason power proxy `P(k) = Σ_i w_i/(k² + λ_i)` over the nonzero `K(9,11,13)` modes is now PROVEN non-constant on the `(k, positive-smoothing)` domain: it differs at `k=1` vs `k=2`, and at fixed `k=1` between the `u=0` weighting and a low-`λ`-emphasising admissible smoothing (exact `ℚ`, Lean `D0.Cosmology.CMBNsSmoothingUndeterminedNoGo`, cert `vp_cmb_ns_smoothing_undetermined_nogo.py`). So the bare spectrum plus an *unforced* `(k,u)` does **not** determine a single `n_s` — this closes the obstruction question negatively. The forced canonical `(k,u)` selection remains the exact missing artifact (`D0-CMB-IDS-SMOOTHING-OWNER-001`, PROOF-TARGET); no Planck `n_s` is used.
 
-**[CMB smoothing maximality].** Not just one smoothing window: the heat-smoothed tilt n_eff-1=(k/P)P'(k) over modes {20,22,24,33} is non-constant across the admissible-smoothing family -- three legitimate positive weightings (flat-mult, low-lambda, high-lambda) give three distinct n_s, and it varies with k (`D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001`, Lean `D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo`). No canonical (k,u) is forced by present-core; the n_s value requires an external Planck-comparison passport. The internal forcing question is closed-negative.
+**[CMB smoothing maximality].** The heat-smoothed tilt n_eff-1=(k/P)P'(k) over modes {20,22,24,33} is non-constant across the admissible-smoothing family: three positive weightings (flat-mult, low-lambda, high-lambda) give distinct n_s, and it varies with k (`D0-CMB-CANONICAL-SMOOTHING-MAXIMALITY-NOGO-001`, Lean `D0.Cosmology.CMBCanonicalSmoothingMaximalityNoGo`, NO-GO). These finite controls exclude a unique value from the mode list with an unspecified weighting and scale; they do not rule out every independently derived internal selection rule. The selection owner `D0-CMB-IDS-SMOOTHING-OWNER-001` remains `PROOF-TARGET`, and an external Planck-comparison passport is a separate route. A [fixed-pivot heat-family control](../02_REGISTRY/research/sources/d0_cmb_heat_window_2026_11_26/RESULT_RU.md) exhibits distinct tilts at two positive heat times while holding the pivot fixed.
 
 **[Fiedler projection audit: weight invariance is real; scale closure is not (`D0-FIEDLER-HODGE-PROJECTION-001`, FORMALISM; `D0-FIEDLER-TILT-TAUTOLOGY-NOGO-001`, NO-GO)].**
 `D0.Cosmology.FiedlerHodgeProjection` correctly isolates the lowest connected mode $\lambda_2=20$ (multiplicity 12) and proves that an overall nonzero kernel prefactor cancels from the logarithmic tilt.  What it does **not** do is select the evaluation scale.
@@ -1484,7 +1488,8 @@ pipeline must represent its fringe return and clock gate by this finite counter.
 **[Iter25 — the splitting has an exact forced closed form, and `√10` is a size-fingerprint (`D0-WINDOW-SCALE-DISCRIMINANT-FORCED-001`, Lean `D0.VNext2.WindowScaleDiscriminant`, cert `vp_window_scale_discriminant_forced.py`).** For a general `+2` zone progression `{m, m+2, m+4}` the discriminant of the window pair is exactly `D(m) = (λ_r − λ_c)² = 9 − 4·(λ_cλ_r) = 3/((m+1)(m+3))` — and since the degrees are `2(m+3), 2(m+2), 2(m+1)`, the denominator is the product of the smallest and largest *degree-halves*, so `D(m) = Z/(h_min·h_max)` with `Z = 3`. At the scene `m = 9` this is `3/(10·12) = 1/40`, whence `λ = 3/2 ± √(1/40)/2 = 3/2 ± √10/40` — the corpus `η_EP = √10/40` is now a closed-form consequence, not a readout. Two honest riders. (i) `D(m) > 0` for every `m`, so the two scales are *always* real and distinct: reading "orientation = sign of the discriminant" (§01) here gives a **constant** `+`, never a `ℤ₂` flip — `√10` is **not** an orientation bit, and that tempting reading is rejected. (ii) The field `ℚ(√(sqfree(3(m+1)(m+3))))` is a **size-fingerprint**: the golden field `ℚ(√5)` occurs at `m = 29` (zones `29,31,33`), *not* the scene, and `m = 5` gives rational scales (`3·6·8 = 144 = 12²`). So the scene's `√10` is the fingerprint of the specific sizes `9,11,13` and carries no forced "departure from golden" meaning — which *explains* (does not weaken) the `√10 ∉ ℚ(φ)` NO-GO above: it is generic, not a near-miss.
 
 
-**[2026-08-31 — PHI-P_DESI_01 real-data verdict].** The recovered phenomenological draft has now
+### 08.51.1 PHI-P_DESI_01 real-data verdict (2026-08-31)
+ The recovered phenomenological draft has now
 been separated into two hash-pinned external passports and run without fitting phi, the phase
 origin, levels, or redshift bins. The object-level claim `z_n=phi^n-1` was tested by an equal-width
 local core/sideband statistic at the frozen levels `n=1,2,3` and `delta=0.01` in
@@ -1507,7 +1512,8 @@ conditional detector representation. Protocol, manifests, executable certificate
 scope report: `05_EXPERIMENTS/DESI/PHI_P_DESI_01_PROTOCOL.md` and
 `05_EXPERIMENTS/reports/phi_redshift_real_data.md`.
 
-**[2026-09-03 — D0-RD-01 direct redshift-drift verdict].** The next red point was tested on
+### 08.51.2 D0-RD-01 direct redshift-drift verdict (2026-09-03)
+ The next red point was tested on
 repeated observations of the same absorbers rather than reconstructed from `H(z)`: ten digital
 GBT H I systems at `0.09<=z<=0.69` and the independent three-epoch ESPRESSO Lyman-alpha sightline
 at mean `z=3.57`. The literal physical reading of the Lean one-tick law
@@ -1529,7 +1535,8 @@ ESPRESSO analysis is a correlated control and is not double-counted. Status
 protocol was written, so the result is retrospective and is not advertised as a prospective
 discovery.
 
-**[2026-09-03 — D0-RDEC-01 coupled redshift-drift / expansion verdict].** The continuous
+### 08.51.3 D0-RDEC-01 redshift drift and expansion (2026-09-03)
+ The continuous
 constant-rate bridge has now been tested against a second observable rather than given another
 amplitude. Combining `dot z=rho log(phi)(1+z)` with the explicit FLRW bridge
 `dot z=(1+z)H0-H(z)` eliminates `rho` from the redshift shape and forces
@@ -1563,7 +1570,8 @@ not relabelled as dark energy and the phason-magnitude NO-GO remains intact. Ful
 controls: `05_EXPERIMENTS/COUPLED_REDSHIFT_EXPANSION/D0_RDEC_01_PROTOCOL.md` and
 `05_EXPERIMENTS/reports/redshift_drift_expansion_coupled.md`.
 
-**[2026-09-03 — local pressure/capacity dynamics and the density-bound firewall].** The global
+### 08.51.4 Local pressure, capacity and the density bound (2026-09-03)
+ The global
 phrase "expansion is determinant balance" is now sharpened to a local signed law. For every site,
 the internal one-step acceleration readout is
 
@@ -1587,7 +1595,8 @@ heat content against **boundary capacity**, which forces boundary encoding but d
 everywhere-saturated bulk density. Therefore black-hole homogeneity is not derived and cannot be
 inserted by renaming boundary saturation as a local packing law.
 
-**[2026-09-03 — local Raychaudhuri representation and two-readout theorem].** The formerly verbal
+### 08.51.5 Local Raychaudhuri representation and two-readout theorem (2026-09-03)
+ The formerly verbal
 matter/dark interpretation now has a typed conditional owner. A
 `LocalRaychaudhuriRepresentation` supplies three independently checkable equalities:
 

@@ -30,7 +30,8 @@ def main() -> int:
     log_z = math.log(heat) - math.log(det)
     cycle_sum = sum((z**m / m) * trace_power_2x2(r, m) for m in range(1, 16))
     det_log = -math.log(det)
-    assert abs(cycle_sum - det_log) < 0.01
+    if not (abs(cycle_sum - det_log) < 0.01):
+        raise AssertionError
     PASSPORT.mkdir(parents=True, exist_ok=True)
     result = {
         "status": "PASS_FINITE_FEEDBACK_PARTITION_FUNCTION",

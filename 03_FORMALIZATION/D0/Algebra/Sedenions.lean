@@ -148,4 +148,51 @@ theorem branch_label_s3_scaffold :
     leftProduct ≠ rightProduct := by
   exact ⟨octonion_branch_card, s3_action_transitive, leftProduct_ne_rightProduct⟩
 
+/-! ## Guard against identifying actions from their group order -/
+
+/-- An action of the permutation group on the legacy branch-label set. -/
+structure BranchPermutationAction where
+  act : Equiv.Perm OctonionBranch → OctonionBranch → OctonionBranch
+  one_act : ∀ x, act 1 x = x
+  mul_act : ∀ σ τ x, act (σ * τ) x = act σ (act τ x)
+
+/-- The action by label permutations. -/
+def naturalBranchAction : BranchPermutationAction where
+  act := fun σ x => σ x
+  one_act := by intro x; rfl
+  mul_act := by intro σ τ x; rfl
+
+/-- A second genuine action of the same group, fixing every label. -/
+def trivialBranchAction : BranchPermutationAction where
+  act := fun _ x => x
+  one_act := by intro x; rfl
+  mul_act := by intro σ τ x; rfl
+
+/-- A map that respects every group element's action. -/
+def BranchActionIntertwiner (A B : BranchPermutationAction)
+    (f : OctonionBranch → OctonionBranch) : Prop :=
+  ∀ (σ : Equiv.Perm OctonionBranch) x, f (A.act σ x) = B.act σ (f x)
+
+/-- A finite countermodel to deriving an intertwiner from group order six.
+The natural and trivial actions are actions of the *same* six-element group,
+but have no injective intertwiner. The natural action is equivalent to itself.
+This is a general insufficiency guard: it does not construct or compare the
+actual Brown sedenion and Spin(8) triality actions, and it does not assert that
+those particular actions lack an intertwiner. -/
+theorem triality_sedenion_s3_disjointness_guard :
+    Fintype.card (Equiv.Perm OctonionBranch) = 6 ∧
+    (∃ f : OctonionBranch → OctonionBranch,
+      Function.Bijective f ∧ BranchActionIntertwiner naturalBranchAction naturalBranchAction f) ∧
+    ¬ ∃ f : OctonionBranch → OctonionBranch,
+      Function.Injective f ∧ BranchActionIntertwiner naturalBranchAction trivialBranchAction f := by
+  refine ⟨by decide, ⟨id, Function.bijective_id, ?_⟩, ?_⟩
+  · intro σ x
+    rfl
+  · rintro ⟨f, hinjective, hequiv⟩
+    have h : f O2 = f O1 := by
+      simpa [BranchActionIntertwiner, naturalBranchAction, trivialBranchAction] using
+        hequiv (Equiv.swap O1 O2) O1
+    have h01 : O2 = O1 := hinjective h
+    cases h01
+
 end D0.Algebra.Sedenions

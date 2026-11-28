@@ -41,15 +41,19 @@ def main() -> int:
           "359=|E|, no refit of roots/windows/H0/Ωm/rd -- fixed before any survey datum")
 
     # ---- FORM (can-FAIL on a refit/typo; needs NO external data) ----
-    assert (POLY_A, POLY_B, POLY_C) == (160, -480, 359), "frozen S_DE polynomial coefficients must not be refit"
-    assert POLY_C == EDGE_COUNT, "constant term must be the scene edge count |E|=359 (forced, not fitted)"
+    if (POLY_A, POLY_B, POLY_C) != (160, -480, 359):
+        raise AssertionError("frozen S_DE polynomial coefficients must not be refit")
+    if POLY_C != EDGE_COUNT:
+        raise AssertionError("constant term must be the scene edge count |E|=359 (forced, not fitted)")
     disc = POLY_B * POLY_B - 4 * POLY_A * POLY_C
-    assert disc == 640 and disc > 0, f"discriminant must be 640>0 (two real relaxation modes): {disc}"
+    if not (disc == 640 and disc > 0):
+        raise AssertionError(f"discriminant must be 640>0 (two real relaxation modes): {disc}")
     print(f"PASS_SDE_FORM_FROZEN  160λ²−480λ+359, 359=|E|, disc={disc}>0 (two relaxation modes) -- FORM verified")
 
     # negative control: a refit of the constant term degenerates the two-real-mode structure
     disc_refit = POLY_B * POLY_B - 4 * POLY_A * (POLY_C + 1)
-    assert disc_refit <= 0, f"control: a refit constant {POLY_C + 1} must lose the two-real-mode structure: {disc_refit}"
+    if not (disc_refit <= 0):
+        raise AssertionError(f"control: a refit constant {POLY_C + 1} must lose the two-real-mode structure: {disc_refit}")
     print(f"FAIL_REFIT_BREAKS_TWO_MODES  a refit constant {POLY_C + 1} gives disc={disc_refit}<=0 "
           "(degenerate/no two modes); 359=|E| is forced, not fitted")
 
@@ -58,16 +62,15 @@ def main() -> int:
     if MANIFEST.exists():
         m = json.loads(MANIFEST.read_text(encoding="utf-8"))
         local = ROOT / m.get("local_path", "")
-        if (not m.get("sample_data", True)) and m.get("status") == "READY" and local.exists():
+        if (not m.get("sample_data", True)) and m.get("status") == "READY" and local.is_file():
             want = (m.get("sha256") or "").lower()
             got = hashlib.sha256(local.read_bytes()).hexdigest()
             cache_present = bool(want) and want == got
 
     if cache_present:
-        # data present + hash-verified: the pinned VALUE confrontation is owned by the real-data runner
-        value_status = "DATA_PRESENT_RUN_REAL_DATA_RUNNER"
-        print("DATA_PRESENT  a hash-verified DESI DR2 table is present -- run vp_desi_bao_sde_real_data.py "
-              "for the pinned VALUE confrontation (frozen roots vs measurement + covariance)")
+        value_status = "SKIP_BAO_SDE_VALIDATED_VALUE_PIPELINE_REQUIRED"
+        print("DATA_PRESENT  a hash-verified file is present, but a validated data, covariance and baseline "
+              "pipeline is still required; no observational PASS/FAIL is asserted.")
     else:
         value_status = "SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED"
         print("SKIP_BAO_SDE_EXTERNAL_DATA_REQUIRED  no present, hash-verified DESI DR2 BAO table -- the VALUE "
